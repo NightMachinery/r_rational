@@ -32,3 +32,21 @@ ugc 'japanese horror'
 #+end_example
 
 [[file:readme.org_imgs/20210531_174125_jXIQ5n.png]]
+
+=ugrep= also supports an interactive, incremental search mode:
+#+begin_example zsh
+function ugci {
+    local r="${@[-1]}" opts=("${@[1,-2]}")
+
+    ugrep --heading --color=always --pretty --context=3 --recursive --bool --smart-case '--sort=best' --no-confirm --perl-regexp --hidden '--binary-files=without-match' "$opts[@]" --query=1 --regexp="$r"
+}
+#+end_example
+
+#+begin_example zsh
+ugci 'japanese horror'
+#+end_example
+
+* How was this repo made?
+This repo was created using this [[https://github.com/NightMachinary/.shells/tree/master/scripts/python/reddit][script]], which needs some refactoring to be decoupled from my environment.
+
+I plan to keep the repo up-to-date as new posts are added to the subreddit.
