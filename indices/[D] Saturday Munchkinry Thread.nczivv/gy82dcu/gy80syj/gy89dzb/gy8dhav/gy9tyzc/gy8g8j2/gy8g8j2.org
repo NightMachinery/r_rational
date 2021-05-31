@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: scruiser
+:Score: 2
+:DateUnix: 1621099407.0
+:DateShort: 2021-May-15
+:END:
+
+I am assuming the magic of the stones lets you cheat the problem RadicalTurnip and fish312 point out by magically knowing what information you are looking for?
+
+In that case... you could make multiple sets of information with the same 32 bytes and use the magic stones information selection mechanism to have it pick out the information you want. With a big enough rainbow table, this could mean the stones spit out all kinds of useful stuff... maybe even divination of the future if the magical selection mechanism is strong enough. If the magical stone is limited to current knowledge... I still think that can be leveraged to unlimited present knowledge to the limit of the selection mechanism.
+
+Edit: I looked at hwc's stackoverflow link... it looks like has collision are really unlikely with 32 bytes, so it comes down to figuring at how to induce hash collisions intentionally to really leverage the magic.

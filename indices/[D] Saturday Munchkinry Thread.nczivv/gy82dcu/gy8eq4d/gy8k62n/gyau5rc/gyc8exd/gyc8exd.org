@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: scruiser
+:Score: 2
+:DateUnix: 1621182846.0
+:DateShort: 2021-May-16
+:END:
+
+You can encode very short messages into blockchains, even some of the ones that aren't intended to allow this feature. It can take awhile and/or cost transaction fees, but once it is written onto the blockchain, every single miner will maintain and perform verification (bitcoin uses double SHA-256) on that short message indefinitely. So if you know to check a blockchain for a particular message, you can do so even if the Wizards cast some ridiculously powerful charm to alter/erase the message in every single computer in the country, or even the entire continent, and even altering erasing the message in the entire world might break the verification (at which point I don't know what would happen to the cryptocurrency you wrote it on... I think muggles would perceive that as the cryptocurrency being hacked which might crash the currencies prices as people lose faith in it)?
+
+You could do the same using distributed cloud computing with databases on servers around the world cross-referencing each other and performing cryptographic verification on each other.

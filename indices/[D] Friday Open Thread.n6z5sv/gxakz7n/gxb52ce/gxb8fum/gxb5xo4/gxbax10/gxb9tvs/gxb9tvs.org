@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: TridentTine
+:Score: 1
+:DateUnix: 1620418148.0
+:DateShort: 2021-May-08
+:END:
+
+I think to understand "mechanically" you'd need to actually understand the quantum physical background, at least a little.
+
+The point (on that page) is that there is nothing Alice can do locally, given only a pre-prepared entangled state, that Bob can detect.
+
+The calculation at the end of the "Formulation" section on that wikipedia page is essentially showing this - from Bob's perspective, what he can observe of the system is unchanged by any action (P(..)) Alice may take. (The final line: tr(P(sigma)) = tr(sigma) from bob's perspective.)

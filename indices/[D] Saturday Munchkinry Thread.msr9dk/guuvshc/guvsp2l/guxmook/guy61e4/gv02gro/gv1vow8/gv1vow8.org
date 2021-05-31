@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1618811537.0
+:DateShort: 2021-Apr-19
+:END:
+
+I could. I really, really could.
+
+--------------
+
+Some points for consideration: The maximum transmission of information occurs when the odds of the next bit being zero or one are closest to 50%. Therefore, a good compression algorithm will give you a bit string where (aside perhaps from the headers) each bit has very close to a 50% chance of being a 1.
+
+This means that I can use this to extract the bitstream of a compressed file from the future, with the proviso that (a) the information in the file must be randomly selected, and (b) there's a 40% chance of getting each individual bit wrong.
+
+There are ways to get around (b). If there was a 50% chance of getting the bit wrong, then we wouldn't be able to decode the bitstream in the present - the error rate would be too high, we'd get zero bits of information. With a /60%/ chance of getting it right, though, we can decode a smidge over one bit of Real Data for every two bits guessed.
+
+So. In the future, we take out bitstream of random data and feed it through a forward error correcting code. (The simplest forward error correcting code is just to send the entire message three times in a row; but there are better options to choose). In this way, we can bring arbitrary data into the present.
+
+As long as that data is random, and as long as it fits into very few bits (since we're going to have to guess it, bit-by-bit, on this end).
+
+Lottery numbers are an example of data that fits these criteria. With a bit of information theory, I can encode a string of lottery numbers by some algorithm, and then pick up that string of numbers six months before the lottery (on the 17th of March next year, on the sheet of paper that I print with this printer, the first block will be... /white./)
+
+It's not limited to lottery numbers, of course. I can also send back very short arbitrary text messages, as long as those messages rely on information unknown in the time I'm sending it to.

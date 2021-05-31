@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: Gurkenglas_
+:Score: 2
+:DateUnix: 1618875091.0
+:DateShort: 2021-Apr-20
+:END:
+
+If I flip a coin, guess what it is, then look at it, presumably I guess correctly 60% of the time.
+
+Suppose I prepare two urns, one with two white balls and three black, one with three white balls and two black. My assistant flips a coin to decide which to hand me. I predict what color of ball I will draw. I draw a ball, put it back, then look in the urn. What % of the time does my prediction match the majority color?
+
+The most straightforward way to model this would be to erase a random third of the rounds where my intuition was wrong from time. In that case, my prediction would match the majority color 52% of the time. I'll run with that model.
+
+Have my assistant write the result of a coin throw on each card of a 52-card deck. Have him draw a card (not telling me which), ask my guess about the coin result, then write it on the card as well. (Presumably about 60% of my predictions match the result, and whenever he asked me twice for the same card I made the same prediction.) Have him ask my guess about what prediction is written on a card, and presumably I will perform as well as in the previous sentence.
+
+Suppose I guess the next 100 bits my assistant will write down, then tell my assistant to copy that sequence, flipping a random 40% of bits. My power might find that it can predict whatever it pleases; the predictions may well spell out "bewareparadox".
+
+A bitcoin nonce is a 256-bit binary number, of which about one in 2^{76} mine a bitcoin. I could guess each bit of the next bitcoin block's nonce, but I dare not risk paradox. Roll a random binary string foo of length 170. Call a nonce that starts with foo a foo-nonce. Call the first winning nonce in some pseudorandom order of all foo-nonces the cool nonce. Guess each bit of the cool nonce. Have a mining program try all foo-nonces in increasing order of edit distance from my guess. Presumably I find the cool nonce within about 2^{86*0.4} tries, so at a trillion-fold speedup over your usual miner. Be careful with that, people might ask how you managed to mine with no real hardware.
+
+Throw 101 coins. For each coin but the first, guess whether it shows the same result as the first. Look at all but the first. If ~60% of the 100 guesses are right, I can deduce what the first coin shows. What now?

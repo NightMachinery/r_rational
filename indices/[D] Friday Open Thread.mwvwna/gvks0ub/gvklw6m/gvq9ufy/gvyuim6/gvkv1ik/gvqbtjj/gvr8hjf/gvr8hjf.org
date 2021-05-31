@@ -1,0 +1,15 @@
+:PROPERTIES:
+:Author: Dragongeek
+:Score: 3
+:DateUnix: 1619302701.0
+:DateShort: 2021-Apr-25
+:END:
+
+I've tried a couple approaches but nothing really satisfies. Current tech can generate audio that is basically indistinguishable from something a human could theoretically produce, but it can't create what I'd call "narration" without a ton of extra effort. Notably:
+
+- Punctuation, flow, and timing are still very difficult
+- Speech inflection is extremely complex. The best models can pronounce question-marked or exclamatory sentences, but that's mostly it
+
+Any current publicly available classical TTS or AI-TTS read provided text like a dry user manual. This is fine if you're having it read wikipedia pages aloud, but falls apart when story, particularly dialogue in any form, is present. My guess is that we're between two and five years away from 99%+ automated story narration.
+
+Right now the cutting edge can do it, but it requires extensive work and tuning. You need to manually go in and tell the computer to pronounce a specific sentence [angrily] or indicate exactly when it should pause.

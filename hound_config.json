@@ -1,0 +1,16 @@
+{
+    "max-concurrent-indexers" : 2,
+    "dbpath" : "hound.db",
+    "title" : "Hound",
+    "health-check-uri" : "/healthz",
+    "vcs-config" : {
+        "git": {
+            "detect-ref" : true
+        }
+    },
+    "repos" : {
+        "LocalFolder" : {
+            "url" : "file:///home/zii/Downloads/rational"
+        }
+    }
+}

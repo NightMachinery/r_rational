@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: fish312
+:Score: 2
+:DateUnix: 1621742864.0
+:DateShort: 2021-May-23
+:END:
+
+Really dumb idea: Use this for cheaply launching micro satellites. There are a lot of problems with this idea, but I think you can still make it work.
+
+Existing velocity relative to earth cancels out every time you teleport, so assuming you teleport vertically upwards once every 3 seconds, gravity only lowers you by 44.1m, so you can cover 1000-44.1=955.9m per teleport at a consistent pace.
+
+But wait, orbiting also requires going very fast, in a direction orthogonal to the planet. Well true, but the propellant required would be significantly lower, since you don't have to waste a huge amount fighting drag forces in atmosphere. So bring your sat-rocket up vertically some distance above low earth orbit, release it and teleport away, then allow it to start a burn and accelerate horizontally into a circular orbit.
+
+Make sure you bring a spacesuit and a parachute.
