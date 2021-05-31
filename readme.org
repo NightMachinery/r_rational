@@ -12,7 +12,8 @@ Github renders org headings as HTML headers, which doesn't work at all for these
 
 [[file:readme.org_imgs/20210531_054821_vKtPi3.png]]
 
-* searching via =ugrep=
+* Usage
+** Searching via =ugrep=
 
 Install [[https://github.com/Genivia/ugrep][GitHub - Genivia/ugrep: 🔍NEW ugrep v3.3: ultra fast grep with interactive que...]] by, e.g.,
 #+begin_example zsh
@@ -27,6 +28,10 @@ ugc () {
 #+end_example
 
 Now you can do:
+#+begin_example zsh
+git clone --recursive https://github.com/NightMachinary/r_rational
+cd r_rational
+#+end_example
 #+begin_example zsh
 ugc 'japanese horror'
 #+end_example
