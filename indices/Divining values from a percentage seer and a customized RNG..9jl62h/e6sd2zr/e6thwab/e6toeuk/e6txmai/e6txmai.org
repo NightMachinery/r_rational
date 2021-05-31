@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: MereInterest
+:Score: 3
+:DateUnix: 1538183959.0
+:DateShort: 2018-Sep-29
+:END:
+
+Depending on how your probabilities are defined, you most certainly can have a finite percentage of an infinite state space. For example, I can have a distribution that returns a uniform random value between 0 and 1. There are uncountably infinite possible values for this random value to take. However, if I calculate the probably that the random value will be between 0.25 and 0.75, I get a 50% probability. I have a finite percentage of an infinite state space.
+
+The trick is that you must specify ranges, rather than specifying equality. If I ask what the probability is of getting /exactly/ 0.25, then the probably will be 0%.

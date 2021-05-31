@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: jtolmar
+:Score: 3
+:DateUnix: 1580628593.0
+:DateShort: 2020-Feb-02
+:END:
+
+Actions aren't reversible! For example, take two jungle planets with "Hunt" four hops apart, with range three, missing the last unit of organics. Add a new planet with organics, upgrading their ranges to four. Now naively undo that last planet - the two original planets are able to keep eachother upgraded, even though they weren't before. (This is also why I don't have any tier 2 or 3 planet transformations, btw.)
+
+My options for implementing undo, then:
+
+- Compile a patch of changes made each turn. This is far fiddlier than it sounds, unless you're able to snapshot the entire gamestate, then you can automatically compute the patch.
+
+- Construct a replay with the initial random seed and the list of clicks, then replay from the start to the previous turn. I expect this would be really slow unless I can snapshot every several turns - the initial generation process is fairly slow, and the individual turn calculations are enough that multiplying them by a few hundred would hurt.
+
+- Save a snapshot each turn in a big old array.
+
+As you can see, all of these need the ability to save the game state, even if I'm not storing them in a big ol' array.

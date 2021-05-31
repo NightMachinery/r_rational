@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: BSaito
+:Score: 3
+:DateUnix: 1562295358.0
+:DateShort: 2019-Jul-05
+:END:
+
+Shouldn't that difference only result in a difference in 1 RPM more before the loop terminates? Whether you use < or <=, once RPMs exceeds the target value the loop should terminate.

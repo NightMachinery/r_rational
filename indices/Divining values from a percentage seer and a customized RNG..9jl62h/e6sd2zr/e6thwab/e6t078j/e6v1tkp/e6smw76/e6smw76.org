@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: ajuc
+:Score: 1
+:DateUnix: 1538141582.0
+:DateShort: 2018-Sep-28
+:END:
+
+I don't know how to abuse it, but I know how to workaorund the 10 bits per day restriction.
+
+We get back a real number of possibly infinite precision. So, if we can manipulate the probability to pass information from the potential futures - we can pass as much information as we want with 1 question).
+
+So, we can assign bits in the final result to subgroups of people, and commit to lighting a particular light if X happens.
+
+The algorithm is: - assign n first bits in output to n subgroups. - make a computer that generates random number from 1 to n with probabilities 2^{-k} for k in 1..n - commit to testing fact number k depending on which number k you see on the screen, and lighting a bulb if the fact k is true - check the light (that's the observation)
+
+The first n bits of the final probability that the light is enabled gives you n facts about the future (unless I made an error in the math, but it can be fixed anyway).

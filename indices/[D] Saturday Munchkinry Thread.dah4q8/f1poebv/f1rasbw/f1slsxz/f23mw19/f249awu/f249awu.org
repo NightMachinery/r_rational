@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: red_adair
+:Score: 3
+:DateUnix: 1569947262.0
+:DateShort: 2019-Oct-01
+:END:
+
+Why are NP maths "above" numerical operations?
+
+For example, consider the problem "Solve =md5sum(n) = 00000000000000000000000000000000= for =n=." It takes a lot of time to solve on a normal computer, because you have to brute-force it, but verifying the result is trivially easy. The [[https://en.wikipedia.org/wiki/MD5#Pseudocode][md5 algorithm is just math]]. Taking "near instantaneous" and "any", it's possible to do the math.
+
+Or do you think some of the [[https://en.wikipedia.org/wiki/Model_of_computation][mathematical models of computation]] aren't numerical operations?
+
+#+begin_quote
+  I'm not convinced even with the time you'd save with the input you would offset the processing power of a real computer.
+#+end_quote
+
+Classical computers won't solve the md5sum problem given above quickly. The chip, as you've described it, provides "near instantaneous, subconscious results to any numerical operations", and since the md5sum problem is representable as numerical operations, a user of the chip should receive a near-instantanous result, right?
+
+Thus, my munchkinning.

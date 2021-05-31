@@ -1,0 +1,31 @@
+:PROPERTIES:
+:Author: Norseman2
+:Score: 1
+:DateUnix: 1604518707.0
+:DateShort: 2020-Nov-04
+:END:
+
+The crystals apparently aren't precisely "antigravity", or else they would have been shot off into space by the planet's gravity. Since you're talking about island interactions resembling plate tectonics, it would suggest interactions mostly occurring along the surface of an imaginary sphere. This would suggest that you might have two mass-proportional forces in opposition to each other, with ordinary gravity plus a more rapidly diminishing force with a repulsive effect.
+
+Regular gravity is the product of the masses divided by the square of the distance, times the gravitational constant, /G/. For the mass-proportional repulsion effect, let's say that the force diminishes with the cube of the distance.
+
+Suppose that 'naked' crystals without islands normally rest at an altitude of 58,000 km above the planet's center, somewhere in its upper atmosphere. The planet has a mass of 5.0×10^{26} kg, similar to Saturn. At 58,000 km, the exerted downward force on a 1 kg mass would be a gentle 9.9 N. The upward force would also have to be about 9.9 N at this altitude, though in the opposite direction, so our anti-/G/ (/!G/) will be -/G/ × 5.8×10^{7} m, and the equation for the force would be F = /!G/ (mass1 × mass2)/distance^{3} .
+
+Of course, there's actually a second mass-proportional force to consider, which causes everything near the crystals to clump up. Presumably, this diminishes even more rapidly with distance than the other force, so perhaps it diminishes with the fourth power of the distance (though this will be dangerous to get close to).
+
+Let's say that a 1,000 kg sphere of the crystal can exert enough force to overcome gravity at an altitude of 58,000 km at a distance of 200 m. For a 1 kg object to experience 9.9 N at 200 m from that, our new /G/ (let's call it /Gᵦ/) would have to be equal to 1.584×10^{7} m^{5} ⋅ kg^{-1} ⋅ s^{-2} , and our new formula would be F = /Gᵦ/ × (mass1 × mass2)/distance^{4} , which, when we apply it to a 1 kg crystal at 58,000 km from the planet's center, works out to about 4.67 × 10^{-8} newtons, which is thankfully negligible.
+
+So, if we join these formulae together, we get F = (/G/ × (mass1 × mass2)/distance^{2} ) + (/!G/ × (mass1 × mass2)/distance^{3} ) + (Gᵦ × (mass1 × mass2)/distance^{4} ). If you'd prefer some Python code to mess around with:
+
+#+begin_example
+  G1 = 6.6743e-11
+  G2 = -G1 * 5.8 * 10**7
+  G3 = 15840000.0
+  def f (mass1, mass2, distance):
+      m2 = mass1 * mass2
+  return  G1*m2/distance**2 + G2*m2/distance**3 + G3*m2/distance**4
+#+end_example
+
+Messing around with this, I see that if I were just under 200 m below a 1,000 kg crystal, I'd start falling upward. If I were 170 m below a 1,000 kg crystal, I'd be in a zone where the upward force counters the downward force sufficiently to create close to 1 g of upward acceleration. By 155 m, that goes up to 2 g. At 145 m, it's an uncomfortable 3 g. Getting much closer than that would quickly become deadly. Don't get too close to large naked crystals.
+
+As for smaller crystals, let's say I want to approach a 1 g crystal floating in the air. At 10 m, it only exerts 0.15 N per kg of my body mass. If there's an equal and opposite force, the crystal would be drawn to me with about 12 N of force. At 5 m, it's exerting 2.5 N per kg of my body mass, close to ¼ g on me, and absurdly rapid acceleration for it. At 1 cm from my skin, it's exerting 158 billion N of force per kg of my body mass. I'm instantly ripped apart, liquefied by absurd tidal forces comparable to a black hole. These crystals are nippy little bastards - make sure they have a decently-sized shell around them to make them safe to handle!

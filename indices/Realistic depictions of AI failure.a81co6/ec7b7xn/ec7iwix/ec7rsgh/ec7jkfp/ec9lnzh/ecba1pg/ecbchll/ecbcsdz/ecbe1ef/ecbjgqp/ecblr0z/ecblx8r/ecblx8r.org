@@ -1,0 +1,28 @@
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 5
+:DateUnix: 1545490013.0
+:DateShort: 2018-Dec-22
+:END:
+
+#+begin_quote
+  That seems a bit optimistic about digital storage, no copy is ever 100% perfect, but it'd still be lots better than biological matter.
+#+end_quote
+
+So this part isn't true. It's possible to attach enough redundancy data and checksum hash data (like md5, crc, etc) to digital files that the probability that bit flips are both undetected and unrecoverable is so low it is not expected to ever happen if you converted all matter in the universe to file storage devices and ran them until the heat death.
+
+​
+
+That is, you can't make the probability zero but it can be arbitrarily small and the chances drop very rapidly. For instance, going from CRC-16 to CRC-32, which uses twice the data, reduces the probability of an undetected error by a factor of billions.
+
+​
+
+As for the teleporter paradox, it turns out that there's some promising ways to handle merges. So it turns out that in actual small scale neural network experiments, it helps to randomize the order that experiences are reflected on and used to update network weights. And scientists have noted that human dreaming also seems to perform a similar function, with past experiences brought back into the sensorium in randomized order.
+
+​
+
+Anyways this implies a way to merge back with your teleported clone. By having the event log of everything the clone experienced fed to you either through a dream or by storing them in your hippocampus directly (once we figure out how to do this) and vice versa, and then somehow handling the merge conflicts.
+
+​
+
+See, if you experience event A, and then B, versus B and then A, the resulting neural network is /usually/ the same weights, within a small floating point delta. But it doesn't have to be, sometimes the exact order pushes the network into a more stable local minima.

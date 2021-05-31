@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: grekhaus
+:Score: 1
+:DateUnix: 1588673590.0
+:DateShort: 2020-May-05
+:END:
+
+I figure that applies to magical research.
+
+Consider a toy model where Original Blue figures she has a 30% chance of figuring out Passion Magic, a 20% chance for Air Magic, a 15% chance for Wood Magic and a 10% chance for Flower Magic. She also figures she has a 25% chance of improving her situation if she tries to get a Void Rifle and sets up as a bandit instead. For the sake of simplicity, we're assuming that any of these five advantages are approximately equal in value - figuring out Passion Magic is just as good as figuring out Flower Magic is just as good as owning a Void Rifle. We're also assuming she only has enough supplies to try up to two options - if she runs out after that, she won't have enough resource security to keep doing long term planning and will have to try getting more with whatever she still has.
+
+If she decides to go it alone, the obvious answer is to keep trying Passion Magic until she either figures it out or hits a dead end, with banditry as the fallback option. 30% chance of figuring the magic, 70%*25%=17.5% chance of having to abandon the research but successfully stealing a Void Rifle afterwards. Total expected value of 0.475 Life Improvements.
+
+If she decides to split, Passion Blue still has the same chance of figuring out Passion Magic, but her fallback is much better - if any of her other clones manages their project, she'll notice and can flip to working on that instead. And only has to do the potentially deadly Void Rifle heist if none of the clones find anything. Total expected value of 0.8571 Life Improvements - nearly twice as good!
+
+You might think that Flower Blue would be tempted to covertly start working on Passion Magic instead (since it is more likely to work), but she actually has no incentive to do so - there's already a Blue working on Passion Magic, so all of the Blues involved are going to find out if Passion Magic can be re-derived using their current resources regardless of whether they personally are the ones working on that topic. If she sabotages the other Blues or refuses to put in any effort toward her own project, she is only /reducing/ the odds that she gets something out of this scheme.

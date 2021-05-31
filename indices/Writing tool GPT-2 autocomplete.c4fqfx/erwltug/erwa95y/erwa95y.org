@@ -1,0 +1,31 @@
+:PROPERTIES:
+:Author: PresentCompanyExcl
+:Score: 9
+:DateUnix: 1561337695.0
+:DateShort: 2019-Jun-24
+:END:
+
+This is a writing tool made by hugging face, it autocompletes your writing. Behind the scenes is the OpenAI GPT-2 model that's been in the news recently (the public medium size version).
+
+It's a glimpse of some of the writing tools that will be produced by the latest wave of machine learning + text advances, which are quickly exceeding human performance (see the [[https://gluebenchmark.com/leaderboard][GLUE/SUPERGLUE leaderboard]]).
+
+Some more features we are likely to see in future are
+
+- completions trained on a certain style, e.g. "complete this as JK Rowling". Similar to Gwerns poetry generation.
+- rewriting/editing (see [[https://arxiv.org/abs/1905.11006][Levenstein transformers paper]]),
+- better grammar checkers (Grammarly have published quite a bit),
+- and eventually style tansfer is likely (this is a more challanging application thant text generaiton, and it's early days yet but see [[https://arxiv.org/abs/1803.06535][grammerly's paper with informal=>formal translation]]).
+
+If you're interested in this kind of thing keep an eye on huggingface, they are making some really great NLP tools using the latest techniques (I'm not affiliated in any way).
+
+Be aware that the site may not be up forever since it takes them [[https://twitter.com/julien_c/status/1139208397579051009][$24/hour to run on a AWS p3.16xlarge instance]]. It may also suffer from the hug of death since it's not auto-scaling.
+
+More:
+
+- [[https://www.producthunt.com/posts/write-with-artificial-intelligence][Producthunt page]]
+- [[https://twitter.com/julien_c/status/1139166340684681216][Creators twitter thread with slider explanation]]
+- [[https://old.reddit.com/r/MachinesWrite][subreddit with similar tools /r/MachinesWrite]]
+
+Personally, I do machine learning freelancing for companies, and also look at my own startup ideas (currently comment moderation applications). So I'm interested in people's thoughts on this as a writing tool, especially from those amazing people who actually write (unlike me who just consumes other peoples' writing).
+
+Hopefully writing tools are on-topic for this subreddit, otherwise, I'll move this to a weekly thread.

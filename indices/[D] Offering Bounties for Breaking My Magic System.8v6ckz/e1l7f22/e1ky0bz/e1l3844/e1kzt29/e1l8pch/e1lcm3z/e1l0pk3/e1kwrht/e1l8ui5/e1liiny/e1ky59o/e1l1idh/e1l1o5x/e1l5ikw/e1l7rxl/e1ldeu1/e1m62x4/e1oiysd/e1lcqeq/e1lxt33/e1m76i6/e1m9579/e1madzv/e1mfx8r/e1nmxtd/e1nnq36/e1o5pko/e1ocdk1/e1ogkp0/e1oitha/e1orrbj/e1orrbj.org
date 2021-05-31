@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: Kuratius
+:Score: 1
+:DateUnix: 1530574901.0
+:DateShort: 2018-Jul-03
+:END:
+
+#+begin_quote
+  I think you have this the wrong way around; the latter implies the former, not vice-versa. If you have energy conservation, you are dealing with a scalar function that tells you which energy you have at which position, up to a constant.
+#+end_quote
+
+curl grad (scalar function)=0 is a vector identity that applies to any differentiable scalar function. They are equivalent.
+
+#+begin_quote
+  Proof? Assume "humans" only have to be humanlike at humanlike scales.
+#+end_quote
+
+You have to assume that you can measure position and time to satisfiable precision. Then it follows from the difference quotient being a satisfactory approximation of a derivative. The true position function doesn't even have to be strictly differentiable for this to be a useful approximation, as you will be dealing with finite time intervals. Or are you trying to get at the role of mass here?
+
+#+begin_quote
+  Proof? It honestly feels like you're just being difficult here. Do you seriously think that our universe is the only possible universe with conservation of energy? Do you really think that any violation of conservation of energy implies boundary conditions are reachable?
+#+end_quote
+
+For vector fields? Yes. If you lose energy in one direction, you gain it by moving in the other. I can write down an example if you want. Any loop that violates conservation of energy means you can move backwards and gain infinite energy.
+
+As for the proof of the thermodynmic equilibrium situation see Frederick Reif:Fundamentals of Thermodynamics and Statistic page 382. He drew a setup where you need absorption and emission coefficients to be the same if you want to keep thermodynamic equilibrium and energy conservation.
+
+#+begin_quote
+  Because no renderers have ever modelled refraction without time-discretized models of light...
+#+end_quote
+
+As soon as you use snell's law, you have basically already lost because you used the assumption of different speeds implicitly. All known derivations require a finite speed of propagation. I don't think you can derive snells law without that assumption, regardless of whether you use fermat's principle or huygens principle or anything else.

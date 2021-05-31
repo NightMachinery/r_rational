@@ -1,0 +1,60 @@
+:PROPERTIES:
+:Author: Veedrac
+:Score: 2
+:DateUnix: 1537015776.0
+:DateShort: 2018-Sep-15
+:END:
+
+/Epistemic status: Not confident about any of this, mostly published it because it was requested, still think it has value, found it clarifying to write. I suggest being sceptical when reading./
+
+I was asked to clarify point 5. some more, in response to the fairly stable way markets seem to have responded to algorithmic trading. Presumably this request also extends to any other places where it seems like computers would act as a destabilizing force, and could subsume questions like why the lack of jobs being lost to robots doesn't much change my predictions. You could also suggest that my arguments would suggest we'd see large-scale issues with mass exploits of insecure computer systems, but more on this later.
+
+The first thing I need to make clear is that trading in general is not a topic I have any particular expertise in. The topic obviously has a lot of depth I have no understanding of, and I gave myself a recap of algorithmic trading by looking at the Wikipedia page. /Nonetheless/, I think I have a few things to say to frame this which I think are plausibly true.
+
+There was a good talk I'd watched some time back on the nitty-gritty of HFT from a software design perspective by Carl Cook, [[https://www.youtube.com/watch?v=ulOLGX3HNCI][The Speed Game: Automated Trading Systems in C++]], which I do have as context. He said a few things which shape most of my opinions; here's a major one:
+
+#+begin_quote
+  There's a bit of a misconception that the trading algorithms are super-complicated, and that's where the intellectual property of the company is, and maybe there is to a degree, but it's not hard. There are textbooks which tell you how to price options, and that's typically what companies use, as far as I can tell. Again, seriously, it's not that complicated; the source code is in the back of most of the textbooks anyway.
+#+end_quote
+
+Wikipedia says also,
+
+#+begin_quote
+  Many practical algorithms are in fact quite simple arbitrages which could previously have been performed at lower frequency---competition tends to occur through who can execute them the fastest rather than who can create new breakthrough algorithms.
+#+end_quote
+
+It's worth noting that these are hardly the only things algorithms can do on the stock market, but it does seem to be their most successful application. We're talking mostly about situations where algorithms have a few hundred nanoseconds to check a few fairly simple arbitrage opportunities, and that profit is gained by first-come-first-serve competitions over who can get there first. We are not talking about AI-led exploits, or niche hyperintelligence in the same vein as I was: ML techniques are not used here, algorithms are refined =if= statements plus hardcoded math, reasoning is principally simple.
+
+Ultimately that's why I think things have been fairly stable: algorithmic trading is adding a few new market rules (certain kinds of arbitrage get resolved very quickly), not acting as an adversary or agent. Yet this isn't evidence that the markets are actually robust! The 2010 Flash Crash Wikipedia page does not give me confidence; for example it says
+
+#+begin_quote
+  The Commodity Futures Trading Commission (CFTC) investigation concluded that Sarao "was at least significantly responsible for the order imbalances"
+#+end_quote
+
+Given Sarao was "a 36-year-old small-time trader who worked from his parents' modest stucco house", and the flash crash was $1tn deep. Overall I think this means you'd struggle to use algorithmic trading to argue that society is robust to niche hyperintelligence. Robust systems normally require larger perturbations to fail.
+
+So where's the ML, and why isn't /that/ breaking things? We know why it struggles with HFT (it's not fast enough), but the question still applies to longer-term opportunities. Under my model this boils back down to the issue of generality. Being able to predict arbitrary stocks requires a fairly competent kind of oracle. Stock prices vary for complex reasons based off of estimates of future performance from sparse unformatted data. To beat to stock market you need to be better than the average investor at figuring out how humans will react to other humans doing human-like things from information provided in vague roadmaps and abstract claims (New Coke is liked by the taste testers, so it'll sell more). There's a much bigger generality cost there than there is for, say, mere recursive-self-improvement
+
+You can see this same sort of argument applying elsewhere. You can't just let an AI loose to brute-force a problem; we can't even solve Montezuma's Revenge yet, never mind economics. Jobs also aren't generally being lost to machines, but to humans using computers as tools. Humans using computers as tools is mostly as safe as it is because finding weaknesses requires intentful exploration of the space of attacks; most people are pretty bad at this.
+
+(The Montezuma's Revenge comment might lead you into thinking that AI is going to be exceptionally difficult to crack. I don't think this is an accurate response. The game itself is fundamentally simple once ML techniques abstract away the raw complexity of the pixel data. There seems to be little reason to expect beating this game will need major architectural wins or rethinks, and the scaling computers get means we'd expect that to quickly result in recursive wins in larger problems. Rather, it seems worth noting that you can do language translation or beat the world's best Go players /without/ these skills, which says something about your intuitions on how complex these tasks are: people probably overestimate complexity when they can't see the solution.)
+
+Right now ML isn't a workable adversary because it struggles to explore /strategies/. There are definitely places where applying computer-speed tooling is destabilizing, but these require slow effort from the small fraction of people that are spending time on it (as opposed to spending time preventing it). Three young adults with the right motivation (making money off of Minecraft) got a botnet that at its peak was 600,000 nodes large and took down the internet across significant areas of the US.
+
+#+begin_quote
+  “These kids are super smart, but they didn't do anything high level---they just had a good idea,” the FBI's Walton says. “It's the most successful IoT botnet we've ever seen---and a sign that computer crime isn't just about desktops anymore.”
+#+end_quote
+
+#+begin_quote
+  “DDOS at a certain scale poses an existential threat to the internet,” Peterson says. “Mirai was the first botnet I've seen that hit that existential level.”
+#+end_quote
+
+#+begin_quote
+  “Someone has been probing the defenses of the companies that run critical pieces of the internet. These probes take the form of precisely calibrated attacks designed to determine exactly how well these companies can defend themselves, and what would be required to take them down,” wrote security expert Bruce Schneier in September 2016. “We don't know who is doing this, but it feels like a large nation-state. China or Russia would be my first guesses.”
+#+end_quote
+
+[[https://www.wired.com/story/mirai-botnet-minecraft-scam-brought-down-the-internet/]]
+
+The idea I'm trying to point at here is that the missing piece is not that these attacks are hard to make─three people does not a nation-state make─but that they're hard to /find/. But once you've found them they're not that hard to verify.
+
+Now note: this is a big ask! I'm not trying to say that getting AI capable of exploring high-quality strategies is going to come very soon, or that current research looks /directly/ promising. Rather, I'm saying that "human-ish level AIs" are beyond the point needed to fulfil this constraint, and that a comparatively small amount of hyperintelligent (eg. fast and scalable) exploration suffices to break a lot of things. Keeping in mind the weaknesses seen, and remembering to "respect the unknown unknowns", we should predict that these examples are not the only ones, and that their seeming scarcity may well just be because humans aren't very good at looking for them.

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: edwardkmett
+:Score: 1
+:DateUnix: 1546380512.0
+:DateShort: 2019-Jan-02
+:END:
+
+Pretty much that. Not sure how you'd fix it and make it favor winning 'by a large margin' without screwing up the accuracy of the way it evaluates the board. e.g. having it optimize for a game search tree where the opponent has a small chance of getting two moves would have it favor a larger margin, but probably would make it fail to solve small down-to-the-wire decision probems in turn.

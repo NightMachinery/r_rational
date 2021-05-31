@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: Joern314
+:Score: 1
+:DateUnix: 1541431630.0
+:DateShort: 2018-Nov-05
+:END:
+
+Removing the parts of any wavefunction in the area of the cube is not the same as replacing the matter. It's more like "measuring the position of all particles and noticing they aren't in that area anyway".
+
+Example: consider an electron in two possible positions (0 if empty) and a qbit that shows L/R if the electron is left/right. Possible state of the experiment: 1/sqrt(2)(|L10>+|R01>)
+
+Removing any basis vector with the electron in the right position yields 1/sqrt(2)(|L10>) Afterwards you add your metal cube, but that won't change the qbit.
+
+So you'll never get the result "I had an electron in the right position put it was replaced with a metal cube". The electron will always have been left.
+
+Not sure if that's what you meant, though, when you said "removing basis vectors".

@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: chillanous
+:Score: 2
+:DateUnix: 1597966040.0
+:DateShort: 2020-Aug-21
+:END:
+
+If my memory of the series is correct, sunstones are grown in Aenir like seeds before being brought back. Their size(?) determines their power--that suggests some kind of distribution based on power, likely a normal distribution. Socially this may get a little weird as there would be relatively few ultra-weak stones (given to children/used as lamps) and a big chunk of the population would have sunstones of a similar power. If you're looking for a smoothly functioning society this would still probably be okay, I cant remember whether the high-population servant class is allowed sunstones per lore. If not, this would be perfect: you'd have a big, disenfranchised lower class, a healthy middle class with ready access to standard-power sunstones, and an elite class with stones 3 or more standard deviations from the mean.
+
+However, an exponential distribution could be fun as it would guarantee a huge amount of near-worthless stones only good for generating white light, and quickly diminishing numbers of stones available powerful enough to advance people through the social heirarchy. It would also make the society a lot more hero friendly: one person with a violet-level stone might be able to put out the same energy as 100 or more people wielding mid-tier stones. It would also be super dystopian, as there would be a huge amount of incentive to advance in the ranks using any means possible ( in our world one level of promotion within a company may have a 10-20% pay rise; in this one a single level could square or cube your net "power") and it would also give those in power the means to really clamp down on those beneath them. The ruling elite wouldn't need a standing army or even much of an honor guard since they would be heavy hitters worth a small army themselves.
+
+Personally I'd go the route of the exponential distribution since it basically tailor makes a hero's tale and also allows for serious power progression as the plot advances.
+
+a big premise is that creatures can be taken back from Aenir using binding rituals and then become "shadows" in the world proper. These are sort of a great equalizer in terms of personal power, as there doesn't appear to be any real advantage to a stronger stone when binding a creature. You just survive long enough to finish the incantation, and boom. Powerful servant.
+
+In terms of the actual power mechanics? It seems to just be power output + technique + cleverness, sort of like programming on the fly. People use common forms for common stuff (like the Red Ray of Destruction) but talented people can put their own twist on the weavings or make their own entirely. If you wanted to be very exact you could specify a power output of a red-level stone (idk, say 5W, enough to lift 0.5 kg) And then an orange stone would be 5^{2} = 25W (enough to lift 2.5 kg). So on until you get to a violet-level stone, 7 iterations out (using a gamma of 1.5, these stones would be found at a rate of about 1 in 30000) you would be able to do the work of 5^{7} = 78175 W or 78 kW--according to Google, enough to power nearly 30 homes.
+
+Note that this plays well with the red ray of destruction as even a few joules of power concentrated narrowly enough could project a cutting edge--but someone countering with higher level light or wearing light armor would shrug it off just fine.
+
+Sunstones also need to be recharged, but the oldest, biggest stones seem to be able to maintain a near-indefinite level of power. I'd probably just give an exponential distribution to their capacity as well, say 3 months of maximum output at each level.
+
+As an aside, you'll notice that the wattage seems low compared to light bulbs. That's because incandescent bulbs are super inefficient--LEDs are able to use a fraction of the wattage to make the same light. A perfectly efficient stone would only require 1/683 W to put out 1 lumen--stones as small as half a watt can reasonably act as light bulbs. Heating would obviously require bigger or more numerous stones.

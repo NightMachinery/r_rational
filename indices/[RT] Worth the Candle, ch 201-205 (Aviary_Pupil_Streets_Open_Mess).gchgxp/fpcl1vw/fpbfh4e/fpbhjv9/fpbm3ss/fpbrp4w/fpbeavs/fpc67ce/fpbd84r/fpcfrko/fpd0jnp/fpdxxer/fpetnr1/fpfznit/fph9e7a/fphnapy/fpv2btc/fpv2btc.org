@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: googolplexbyte
+:Score: 2
+:DateUnix: 1588932342.0
+:DateShort: 2020-May-08
+:END:
+
+You don't need 100 clones.
+
+Doris 1 has 1 Elf bone makes clone Doris 2 with 1 Elf bone.
+
+Doris 2 takes Doris 1's elf bone has 2 Elf bones, makes clone Doris 3 with 2 Elf bones.
+
+Doris 3 takes Doris 2's elf bones has 4 Elf bones, makes clone Doris 4 with 4 Elf bones.
+
+Doris 4 takes Doris 3's elf bones has 8 Elf bones, makes clone Doris 5 with 8 Elf bones.
+
+Doris 5 takes Doris 4's elf bones has 16 Elf bones, makes clone Doris 6 with 16 Elf bones.
+
+And so on forever (or until you hit carry capacity)
+
+So the number of Elf bones is 2 to the power of the number of clones less 1.
+
+21 clones would mean 2^{21-1} or 1 million bones

@@ -1,0 +1,37 @@
+:PROPERTIES:
+:Author: googolplexbyte
+:Score: 1
+:DateUnix: 1613236453.0
+:DateShort: 2021-Feb-13
+:END:
+
+Not sure if this is the best place for this but it's muchkinry, I'm looking for.
+
+I was considering that there aren't many good gift options in Minecraft multiplayer between players so I was trying to think of mods that would suit. Most players on SMP have a lot of the same stuff so gifts usually come down to creativity, but the creativity usually costs one of the few limited resources, Land. And to put it in a place the receiver can have it usually means using their land which can make things awkward.
+
+So I thought an IOU system would be a good gift idea and want to run it through some munckins first.
+
+The IOU would work like this;
+
+1). A player sticks a paper or stack of (2-64) papers in their head slot.\\
+2). The player performs some action or series of actions.\\
+3). The player removes the paper from their head slot and it's named <<PlayerName>>'s IOU <<EnterActionsName>>\\
+4). This IOU (or stack of IOUs) can be placed by the creator or another player, and the creator will teleport to the IOUs' placement to perform the action automatically up to 64 times.
+
+If the action uses up items or durability, then the IOU does too.
+
+The action goes by item/inventory slot and overworld position, so if the action requires a tool or item to be in a specific item/inventory slot or overworld location relative to the creator and they aren't present then the action won't complete properly. Though I'd probably add some convenience features around this (e.g. Gold equipment doesn't lose durability while an IOU is in progress, or a warning if the slots to be used don't contain the same item types as when the IOU was created)
+
+The IOU displays a red/amber/green icon warning the user whether the creator is active, serving an IOU, or inactive currently, so the user will know if they're interrupting the creator.
+
+Basically, it's a macro recorder.
+
+I think it'd make a good gift idea, as it's personal, allows for creativity, can offer a lot of utility, doesn't impose on the receiver much at all, possesses a lot of value in terms of scarcity, signals an amount of trust between the giver and receiver as it has grief potential on the creator and requires coordination for maximum utility.
+
+I mostly see the use of the IOU as an AFK miner, Auto-construction system, or just fun thing where another player would do some surprising action on loop for you.
+
+Is there some crazy broken potential here I'm missing?
+
+I think it's fairly safe against recursion. You couldn't have "record an IOU" as the action the IOU is performing, since your head slot would already be occupied with the IOU currently being recorded.
+
+An IOU action could be placing an IOU, but the recursion there is limited by the number of IOUs that can be created, and by the fact that the IOU is teleporting the creator in to perform the action, not creating a copy of the creator to perform the action.

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: adgnatum
+:Score: 8
+:DateUnix: 1531881088.0
+:DateShort: 2018-Jul-18
+:END:
+
+Sure. Imagine dividing a square into 9 smaller squares and writing down the first nine letters in each. To specify a square, you need to know if it's left/center/right and if it's top/middle/bottom. If you know those two things, that's a letter. To get 26 letters you imagine stacking these squares in groups of three, so that you also have front-inside-back. (9*3 = 27 > 26, so there is an extra square; don't worry about it.)
+
+Now to turn movies into any of those three dimensions. A made up movie title is (let's arbitrarily say) left/top/front, a movie that they never watched but discussed is center/middle/inside, and a movie they saw is right/bottom/back. So if you agree that the first movie is the left-right axis, the second movie is the top-bottom axis, and the third movie is the front-back axis, you can uniquely specify one letter with three movies.
+
+Now imagine you're Masters, and by tampering with the protocol you make someone rotate their imaginary square (so that the first movie is front-back, let's say). They'll get different letters from the same movie titles. They won't get words; they'll get garbage. But at least now they know there's an illusion.

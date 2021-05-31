@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: Noumero
+:Score: 1
+:DateUnix: 1545947235.0
+:DateShort: 2018-Dec-28
+:END:
+
+#+begin_quote
+  One thing that might be nice is to see the number of commentators on each thread
+#+end_quote
+
+Hm. Well, gathering information about posters is [[https://old.reddit.com/r/bigquery/comments/3cej2b/17_billion_reddit_comments_loaded_on_bigquery/ct3za0t/][a solved problem]]. Technically all we need to do now is to modify that query to target not the entire subreddit, but only the threads from a list of links. The rest could be done through spreadsheet magic.
+
+But I imagine it sounds easier than it is, and I'm completely unfamiliar with SQL. We could ask for help in an off-topic thread, I suppose.
+
+#+begin_quote
+  Other than that, the spreadsheet is great and provides a lot of useful data.
+#+end_quote
+
+I added some links for easier navigation, and charts. Charts are fun.
+
+I'll be updating it each Saturday, adding in information about the preceding week. Perhaps put a link to it somewhere, for more convenient access? On [[/r/rational][r/rational]]'s wiki, perhaps?

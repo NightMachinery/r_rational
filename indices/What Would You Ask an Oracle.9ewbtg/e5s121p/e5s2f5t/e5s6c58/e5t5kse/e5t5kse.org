@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: Ristridin1
+:Score: 2
+:DateUnix: 1536702757.0
+:DateShort: 2018-Sep-12
+:END:
+
+(1,a): The trick is in the "if and only if". Let X be the statement "I will win the lottery tomorrow", and let Y be the statement "you will answer my question with 'yes'". Then X if and only if Y means that if X is true, then Y is true, and conversely, if Y is true, then X is true. In other words, X if and only if Y means that both have to be true, or that both have to be false.
+
+Now, if the answer to the question is 'yes', then this answer says that X is true if and only if Y is true. On the other hand, Y is true, and therefore X is true, so you will win the lottery.
+
+Conversely, if the answer to the question is 'no', then Y is false. If X were also false, then the answer to the question should be yes (since FALSE <=> FALSE is a TRUE statement), but since it is not, the only remaining case is that X must be true.
+
+In either situation, X is true. You basically force the oracle to answer the question in a way that implies you win the lottery.
+
+...
+
+Or at least, that's what Scenario (1,a) is intended to do. It actually breaks if the oracle does not assume X is completely determined and always answers 'no' to this question. Namely: If you win the lottery, the oracle answers with no, and if you don't win the lottery, the oracle also answers with no. Then certainly Y will be false regardless of whether or not X is true.
+
+I think that issue can be fixed by changing your question: "Is the following true: I will win the lottery tomorrow OR you will answer this question with 'no'" (revised from a comment by Yudkowski in a similar thread). If the answer is 'yes', then the second statement is false, therefore the first has to be true (an OR-statement is true if at least one of the statements is true). The answer 'no' cannot be given, since if 'no' is given, at least one of the statements is true, meaning the answer would have to be 'yes'.

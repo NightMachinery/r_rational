@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: JohnKeel
+:Score: 23
+:DateUnix: 1613425388.0
+:DateShort: 2021-Feb-16
+:END:
+
+This is kinda neat as a fake Wikipedia article, but it doesn't really tell much of a story. Once you remove the purely factual background material on hash functions, there's only a few paragraphs that boil down to "either someone has a megaultrasupercomputer, or SHA-256 has been broken."
+
+Also, speaking as a cryptographer: hash functions being broken is generally surprising, but not the sort of thing that shatters your view of the field. Hash functions in general are usually not based on hard computational assumptions in the way RSA depends on factoring.

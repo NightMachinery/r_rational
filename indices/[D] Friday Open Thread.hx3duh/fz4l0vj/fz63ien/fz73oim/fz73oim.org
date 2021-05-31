@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: Veedrac
+:Score: 4
+:DateUnix: 1595685910.0
+:DateShort: 2020-Jul-25
+:END:
+
+I'm largely uninterested in the fine details of exactly where GPT-3 is, since those are mostly irrelevant over even fairly short time periods. GPT-2 was from 2019, the original GPT was from 2018. Naturally one would expect GPT-4, or something like it, in 2021. I expect we'll see a quadrillion parameter model within five years, or maybe like a 10 quadrillion parameter mixture of experts model, contingent on only fairly modest amounts of funding.
+
+In particular, consistency is almost irrelevant; if it can solve a problem sometimes, a larger, fine-tuned model will solve that problem reliably. We saw this with GPT-2, where people argued that it was super important how much cherry-picking was taking place in the examples (often as high as something like 1-in-25), and I thought the whole debate was missing the point entirely. If that matters so much just wait for the next version! The key point is that it can do the thing that nothing else could do. A few bits of entropy is nothing. Lo and behold, GPT-3 comes out a year later and does exactly that.
+
+So the key for me is not what specifically GPT-3 can do to or for humanity, it's that GPT-3 is showing that these models can learn things that seemed out of bounds for models of this sort to learn, like multi-step reasoning (see [[https://pbs.twimg.com/media/EdHuMgsWsAEk-29?format=png&name=large][math questions]]), zero-shot learning ([[https://i.imgur.com/KQSwHnn.png][‘invent a new word and give its meaning'; ‘use the word tana in a sentence']]), and text-encoded logical operations ([[https://pbs.twimg.com/media/EdHdZT4UMAASHpN?format=png&name=large][‘If a question is "normal" the AI answers it. If the question is "nonsense" the AI says "yo be real"']]). I already knew GPT-2 could do weak world modelling, so [[https://www.lesswrong.com/posts/L5JSMZQvkBAx9MD5A/to-what-extent-is-gpt-3-capable-of-reasoning][GPT-3's better modelling]] doesn't surprise me too much (though it's still uncomfortable), but it /should/ surprise the AI skeptics. Lots of people were holding that up as an important limitation. One by one the arguments fall.
+
+Getting it to apply these consistently is a matter of scale. Filtering out the unwanted parts of the corpus is a matter of fine-turning. Losing track should be handled with longer contexts, once that algorithmic problem is fixed.
+
+Note that AI Dungeon probably doesn't send your input directly to GPT-3, so some of the issues might be down to GPT-3 fighting the format.

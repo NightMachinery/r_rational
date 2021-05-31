@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: BoojumG
+:Score: 2
+:DateUnix: 1544337996.0
+:DateShort: 2018-Dec-09
+:END:
+
+Thanks for explaining what you meant, too!
+
+#+begin_quote
+  If every possible future is represented, at the end you are looking at a distribution where, at every coin flip, there are six times as many heads results as tails results, because every combination of heads and a number is among possible futures. If you rolled tails and didn't scry, only one future appears. If you rolled heads, six futures appear--one for every result.
+#+end_quote
+
+I disagree with how you've handled the counting of possible futures.
+
+This universe is probabilistic at a fundamental level, and all possible futures are equally likely to be scried. Rolling a die does not create more futures than not rolling it, it just leads you to think about those futures more separately. The approach I'm using to think of this is the way that statistical thermodynamics produces macrostate probabilities by counting the microstates that constitute them. A gas in a box is unlikely to spontaneously experience large pressure or density fluctuations (like all of the gas atoms briefly being located solely within the left half of the box) not because there's anything physically preventing it, but because the number of microstates belonging to those macrostates are much fewer than those producing equilibrium (equal density and pressure throughout the box). The most likely outcome/macrostate is the one covering the most microstates, each of which is equally likely to occur a priori.
+
+Note that there is no apparent connection between scrying and your reasoning about possibilities, so I think we can drop the crystal entirely, as in this specific case it was only a mechanism for sampling futures. We can /already/ sample futures by running repeated trials of the same experiment.
+
+You're setting up a system where flipping heads will cause a dice roll, and flipping tails will not. The question is what's the probability of flipping heads. You counted all the head + die results (H1, H2, H3, H4, H5, H6) and the tails result (T) as all having /equal/ probability, but that's not right. Those aren't microstates. They're macrostates. The possible futures are not characterized /just/ by these properties, and rolling a die did not increase the entropy (the number of microstates) of the universe either.
+
+If this isn't convincing by itself, you can try flipping coins and rolling dice yourself and recording the results. But when it's phrased /that/ way, I think you already know what the results will be. How would adding the crystal or the supposition that the universe is probabilistic change that?

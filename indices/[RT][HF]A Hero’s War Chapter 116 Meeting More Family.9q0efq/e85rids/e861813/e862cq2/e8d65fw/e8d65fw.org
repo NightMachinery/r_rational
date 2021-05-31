@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: redstonerodent
+:Score: 1
+:DateUnix: 1540397051.0
+:DateShort: 2018-Oct-24
+:END:
+
+#+begin_quote
+  To do subtraction in base 2 arithmetic, you swap the values of all the bits of one number, and then add them together normally.
+#+end_quote
+
+You also have to add 1 (which is often accomplished by passing a "carry" bit to the hardware that adds rightmost digit).

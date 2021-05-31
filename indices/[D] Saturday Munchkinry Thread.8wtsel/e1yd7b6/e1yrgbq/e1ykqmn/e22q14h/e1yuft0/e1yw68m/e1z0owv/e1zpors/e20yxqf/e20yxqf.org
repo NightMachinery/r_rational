@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 1
+:DateUnix: 1531090556.0
+:DateShort: 2018-Jul-09
+:END:
+
+That's the cipher I understood you to mean.
+
+The letter distribution being non-uniform indeed doesn't construct an attack. It's just a red flag that information-theoretical security has been lost.
+
+For example, we could guess that Bob says "Alice" somewhere, see what the key at any given length-5 substring would be if the message were Alice, and remember the positions where that key could be a valid substring of English text. Repeat the same with lots of long words they might be transmitting - long to reduce the false positive rate. If possible message-key stretches end up next to each other and the keys fit, that reinforces both stretches. Once you have a lot of guesses, you might find that a majority of the hypothesized key strings use the same sort of dialect and style - reinforce those and weaken the others. And so on.

@@ -1,0 +1,31 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 11
+:DateUnix: 1548621682.0
+:DateShort: 2019-Jan-28
+:END:
+
+I received an "indefinite suspension pending review" in that same thread for what I presume was posting the following code snippet, which downloads the bbcode for each post.
+
+#+begin_example
+  import requests, lxml
+  from lxml.etree import tostring
+  import lxml.html
+  import html2text
+
+  bbUrl = "https://forums.sufficientvelocity.com/posts/{postId}/quote"
+
+  session = requests.Session()
+  session.headers.update({'User-Agent': 'WithThisRing downloader'})
+
+  for i in range(1,90):
+      source=f"https://forums.sufficientvelocity.com/threads/with-this-ring-young-justice-si-story-only.25076/page-{i}"
+      print("--------- starting page",i)
+      root = lxml.html.document_fromstring(session.get(source).text)
+      for a in root.xpath("//ol[@id='messageList']/li"):
+          postId = a.get('id').lstrip('post-')
+          response = session.post(bbUrl.format(postId=postId),data={'_xfResponseType':"json"})
+  open(f'story/{postId}.bbcode','w+').write(response.json()['quote'])
+#+end_example
+
+It's in appeals right now.

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: tjhance
+:Score: 18
+:DateUnix: 1529202143.0
+:DateShort: 2018-Jun-17
+:END:
+
+I think being able to copy origami is probably OP. I took a [[https://courses.csail.mit.edu/6.849/spring17/lectures/][computational origami class]] in college, and there were a bunch of NP-hardness results. If "copy origami from sight" somehow lets you solve one of those, then you can solve NP-complete problems and then you win everything.
+
+The thing is that all the results I can find are stuff like "given this crease pattern of a certain form, determine if it can be folded is an NP-hard problem" but with the origami superpower, the person gets to see the finished result... on the other hand if the origami design is made with opaque paper, and you can't see the folds inside it, then maybe you can use that... I'm betting there's something NP-hard here but I'm not sure exactly what it is.
+
+We might need to formally specify what the origami person can do. For example, maybe I give you a folded square and tell you it was folded from a certain crease pattern, and /you have to replicate it from that same crease pattern,/ does your power let you do that? If so, you can solve a NP-hard problem. But it sort of feels like cheating; your power might not be that flexible.
+
+(A bit more mundanely, this power is probably OP because you could become a world-famous origami artist or something.)

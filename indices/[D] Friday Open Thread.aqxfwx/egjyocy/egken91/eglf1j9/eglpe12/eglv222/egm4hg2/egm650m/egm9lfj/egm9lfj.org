@@ -1,0 +1,29 @@
+:PROPERTIES:
+:Author: blobbythebobby
+:Score: 2
+:DateUnix: 1550349331.0
+:DateShort: 2019-Feb-17
+:END:
+
+To be more detailed about my guessing, I stuck the equations into a matrix as well but I didn't quite know how to algorithmically solve it like you did. I did however end up with this form:
+
+#+begin_example
+  x1 x2 x3 x4
+  -4  0  14  17 |  21
+#+end_example
+
+Since I then knew that the sum of x3 and x4 is 3 or less, and that 14x3 + 17x4 = 21 + 4x1, I simply wrote a table of 21 + 4x1, like
+
+21
+
+25
+
+29
+
+...
+
+45
+
+and all I had to do was test 14x3 + 17x4 against my newly made table for a maximum of 5 times to find the answer.
+
+I do think that these kinds of solutions are pretty unclean though. The elegancy of math is lost when you start guessing your way forward. It's like solving an algebraic exercise with a graphing calculator. You might get the answer, but your dignity takes some damage.

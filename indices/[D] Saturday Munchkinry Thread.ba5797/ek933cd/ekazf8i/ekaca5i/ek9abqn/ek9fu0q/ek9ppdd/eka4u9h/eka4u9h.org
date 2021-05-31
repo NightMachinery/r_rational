@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: SpeakKindly
+:Score: 2
+:DateUnix: 1554595271.0
+:DateShort: 2019-Apr-07
+:END:
+
+Finding a "path to making optimal moves based solely on board state" doesn't seem sufficient. If the optimal move is (speaking broadly) to attack where your opponent is not defending, then you need to predict your opponent to do that.
+
+As the game goes on, you can get better at countering Imagine Breaker by asking for a path to defeat some model of them, of course. On the other hand, as the game goes on, other people can piggyback on Imagine Breaker to counter Path to Victory; if my strategy depends on Imagine Breaker's decision, then you shouldn't be able to predict my strategy, either.
+
+(At the very least, I can make random decisions that Path to Victory can't predict by deciding "I will ally with France next turn if this unpredictable player blinks an odd number of times.")

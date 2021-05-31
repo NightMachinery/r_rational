@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: Mason-B
+:Score: 2
+:DateUnix: 1543917666.0
+:DateShort: 2018-Dec-04
+:END:
+
+#+begin_quote
+  It needs the ability to make the things that make more air, food, water, power. And to make space suits. And mining equipment. And metal tools.
+#+end_quote
+
+You focused mostly on the first item in this list. I'm focusing more on the last ones.
+
+Even just the significantly easier problem of having a self sufficient colony of people on Earth (who aren't at a primitive technology level) hasn't been solved yet. Just the sub-problem of having a set of tools capable of making "modern civilization" as well as the same set of tools hasn't been solved yet.
+
+Even on earth this is at least 60 things just for the core self sufficient loop, some related tasks (like making buildings), and not-strictly-necessary fundamental tools (like transportation, earth movers, generalized computers, and farming extensions). And that's not including the catalog of every /very useful/ item we use every day, things like washers, dryers, refrigerators, elevators, most infrastructure (road equipment, power substations, telecommunications dishes, pumps). Let alone all the shared parts between them because we want modular maintenance. Let alone all the variants involving different design constraints (local materials, local environmental concerns, specialized tasks, older designs, reusing external parts, etc).
+
+A self sustaining colony would then need to add a bunch of extra things on top of this, the moon would require exotic stuff, stuff that we would almost never need to build on earth, and hence would not be well tested at first, but that's not even the problem. The real problem is that the recovery rate for recycling will need to be much higher without any sort of industrial extraction processes from the Moon (or perhaps asteroids due to the easily escaped gravity well?). So now we need to build exotic stuff with low error tolerances (vacuum seals, cosmic ray resistant computers) and good recovery rates.
+
+I think [[https://www.opensourceecology.org/][open source ecology]] is a project anyone can support in some way that will eventually reach this sub-problem of a related problem. We would need a (probably open source) catalog of items that form cyclic self-sufficient maintenance and manufacturing cycles, including resource extraction and recovery. As well as the catalog of all the stuff one can make with the tools.
+
+The technology simply doesn't exist to manage this even in our most forgiving environment. We don't have a way to track designs, related parts, variants, lifetime maintenance information, let alone do computation over any of this, like planning, scheduling, supply chain management, design changes, regression tests, maintenance alerts, etc. Open source ecology basically just uses a giant wiki, which works well at 60 items, it might even work well for a thousand given enough manpower, but better tools will be the first step towards this.

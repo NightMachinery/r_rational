@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 4
+:DateUnix: 1529125408.0
+:DateShort: 2018-Jun-16
+:END:
+
+#+begin_quote
+  As a refresher, unlike most voxel-based worlds, this one is going to be bounded and wrap back on itself, to put an absolute cap on the total world size, permit us to optimize accordingly, and also permit free movement without invisible walls. The fallback option has always been to have a world shaped like a torus--you move far enough to the right and you teleport to the left, and you move far enough up and you teleport to the bottom. However, it's always seemed like having a more sphere-like setup, where you can go over actual poles, would be more appealing, and so we set out to find a world shape that supports this.
+#+end_quote
+
+This reminds me, what is the world going to look like?
+
+You often mention how it's made of hexes, with heightmaps (I think) and wrap-around, but what about visually? What will the terrain look like? What will towns, caves, and arenas look like? Do you have something like concert art, or an idea in mind of how your basic "Walking in the NPC town" scene is going to present?

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: Frommerman
+:Score: 1
+:DateUnix: 1593809079.0
+:DateShort: 2020-Jul-04
+:END:
+
+If you use a physical token (embedded in an ID card, for instance) to distribute unique virtual objects which unlock voting, you could use existing technology and infrastructure to build a secure online voting system. You log in by swiping your card near any device with both bluetooth (I'm not sure if bluetooth is the best way to do this, but any similar short-range physical object scanning tech would work) and internet connectivity, and the only way to "steal" your token is by stealing your ID card. Laws prohibiting any other system from using the physical token to verify identity would minimize the economic risks of identity theft through such a system, as all you would lose is your votes (which could be handled through existing anti-voter fraud mechanisms). It wouldn't be worth it to try such fraud en-masse because you would need to steal so many physical tokens to make it happen. Someone could hypothetically hijack the physical token production facility, but if that happens your democracy has far deeper problems anyway.
+
+Blockchain is used as an example of a system which is self-auditing and creates unique digital objects which cannot be cracked even with NSA-level computing power (assuming they don't have any quantum computers, which I think is unlikely). The addition of physical tokens means there is exactly one object in the world which can unlock any given voter account, which must be physically stolen in order to steal the vote. I think that covers most of the major concerns with online voting.

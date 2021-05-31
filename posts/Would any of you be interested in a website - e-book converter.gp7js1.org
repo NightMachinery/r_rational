@@ -3,8 +3,9 @@
 * Would any of you be interested in a website -> e-book converter?
 :PROPERTIES:
 :Author: wederer42
-:Score: 43
+:Score: 47
 :DateUnix: 1590250304.0
+:DateShort: 2020-May-23
 :END:
 I dislike reading in a web browser on my phone and prefer reading on a kindle While searching online I could not find a good service to create ebooks from a website such as fanfiction.net. So i wrote myself a small script that scrapes the websites and outputs a format which I can read on my kindle.
 
@@ -32,15 +33,17 @@ I got to go now, so sorry if my edit seems rushed. Thanks again for the discussi
 ** Calibre + fanficfare is what I generally use. It works for a wide variety of sites, including ffnet and ao3. Very convenient.
 :PROPERTIES:
 :Author: Asviloka
-:Score: 23
+:Score: 24
 :DateUnix: 1590251366.0
+:DateShort: 2020-May-23
 :END:
 
 *** I just took a closer look at fanficfare. It would probably be a good base for the website.
 :PROPERTIES:
 :Author: wederer42
-:Score: 5
+:Score: 7
 :DateUnix: 1590254036.0
+:DateShort: 2020-May-23
 :END:
 
 
@@ -69,6 +72,7 @@ If you like to use these, open an issue on my github repoes, and I'll help. The 
 :Author: whats-a-monad
 :Score: 17
 :DateUnix: 1590259457.0
+:DateShort: 2020-May-23
 :END:
 
 *** Do your scripts work with wordpress? That's the only website that I can't find a scraper for.
@@ -76,6 +80,7 @@ If you like to use these, open an issue on my github repoes, and I'll help. The 
 :Author: CaramilkThief
 :Score: 2
 :DateUnix: 1590268947.0
+:DateShort: 2020-May-24
 :END:
 
 **** There are two parts to scraping Wordpress; One is to convert a set of Wordpress links into epub (which my scripts handle well enough) and another is extracting links from Wordpress that form a coherent whole (for examples, the chapters of a story). My scripts don't support the second case out of the box, but I have a function “getlinks-c” that supports getting links that match a regex from a webpage, and I can do this: =web2epub “my title” “${(@f)$(getlinks-c -e “regex that matches the desired links” “wordpress link here”)}”=. (Alternatively, I have ways of selecting links via selectors, but I don't understand selectors as well as simple regexes, so I try not to use them.)
@@ -91,6 +96,7 @@ PPS: Basically, most of the value is already captured by the general scraper; Al
 :Author: whats-a-monad
 :Score: 1
 :DateUnix: 1590274837.0
+:DateShort: 2020-May-24
 :END:
 
 
@@ -103,6 +109,7 @@ I looked into ff2ebook and ficsave, but both of them sometimes failed with gener
 :Author: wederer42
 :Score: 1
 :DateUnix: 1590304714.0
+:DateShort: 2020-May-24
 :END:
 
 
@@ -113,6 +120,7 @@ I am trying to download [[https://archiveofourown.org/works/11478249/chapters/25
 :Author: Hypervisor
 :Score: 1
 :DateUnix: 1590331850.0
+:DateShort: 2020-May-24
 :END:
 
 **** I tried a lot of things to get that table decent on epub, but none of them worked well. Here is one that you might prefer to ao3's mobi: [[http://82.102.11.148:8080//tmp/worth%20the%20candle%20%28v2%20ok%20tables%20till%20ch205%29%20-%20night.mobi][file]]. My only other suggestion is to try printing the webpages to an A7-sized PDF via your browser. That might work better. Ebook formats generally suck for anything but plain Western text. Blame the consumers.
@@ -120,6 +128,7 @@ I am trying to download [[https://archiveofourown.org/works/11478249/chapters/25
 :Author: whats-a-monad
 :Score: 2
 :DateUnix: 1590343803.0
+:DateShort: 2020-May-24
 :END:
 
 ***** I tried all I could but nothing seemed to work. But thanks anyway you saved me much time that I would have spend researching the problem. I think I'll just read on my phone whenever a table comes up.
@@ -127,6 +136,7 @@ I am trying to download [[https://archiveofourown.org/works/11478249/chapters/25
 :Author: Hypervisor
 :Score: 1
 :DateUnix: 1590351744.0
+:DateShort: 2020-May-25
 :END:
 
 ****** You know, I just tried the ebook fanficfare generates on my Kindle Oasis 1, and the tables show pretty well. I just set the zoom to the lowest level, and the table is as good as the web version, pretty much. Try moving the mobi file using USB?
@@ -134,6 +144,7 @@ I am trying to download [[https://archiveofourown.org/works/11478249/chapters/25
 :Author: whats-a-monad
 :Score: 1
 :DateUnix: 1590403768.0
+:DateShort: 2020-May-25
 :END:
 
 ******* I tried using fanficfare but it doesn't work either. Maybe it's the fault of the kindle model I have rather than the conversion process to .mobi format.
@@ -141,6 +152,7 @@ I am trying to download [[https://archiveofourown.org/works/11478249/chapters/25
 :Author: Hypervisor
 :Score: 1
 :DateUnix: 1590432006.0
+:DateShort: 2020-May-25
 :END:
 
 
@@ -153,6 +165,7 @@ Amusingly, in leech's example on how to configure a job for its "custom" plugin,
 :Author: derefr
 :Score: 7
 :DateUnix: 1590270705.0
+:DateShort: 2020-May-24
 :END:
 
 *** I'd second leech. I use it quite a bit, and it cleans up web text nicely to more traditional book style (indented paragraphs instead of line breaks for example.)
@@ -164,6 +177,7 @@ Updating existing ebooks is pretty fast, but does take a few minutes (I keep my 
 :Author: ConnorF42
 :Score: 2
 :DateUnix: 1590280639.0
+:DateShort: 2020-May-24
 :END:
 
 
@@ -172,6 +186,7 @@ Updating existing ebooks is pretty fast, but does take a few minutes (I keep my 
 :Author: wederer42
 :Score: 1
 :DateUnix: 1590304098.0
+:DateShort: 2020-May-24
 :END:
 
 
@@ -180,6 +195,7 @@ Updating existing ebooks is pretty fast, but does take a few minutes (I keep my 
 :Author: ahasuerus_isfdb
 :Score: 7
 :DateUnix: 1590251309.0
+:DateShort: 2020-May-23
 :END:
 
 *** Similar to WebToEpub, but with support for custom sites. I would give the user a way to parse e.g. forums such as sufficientvelocity.com or wordpress sites.
@@ -187,6 +203,7 @@ Updating existing ebooks is pretty fast, but does take a few minutes (I keep my 
 :Author: wederer42
 :Score: 3
 :DateUnix: 1590252027.0
+:DateShort: 2020-May-23
 :END:
 
 **** In this case, it would be more useful to work on adding to FanFicFare's functionality, rather than building a competing product.
@@ -198,8 +215,9 @@ If it's a webservice you need, FFF also supports that. The dev [[https://github.
 What FFF lacks is [[https://github.com/JimmXinu/FanFicFare/wiki/FAQs#why-doesnt-fanficfare-support-livejournal-and-many-other-popular-fan-fiction-websites][adapters for custom sites]] that don't integrate semantic clues or metadata in their pages, which obviously makes parsing them a scripting nightmare. If you have the will and skills to do that kind of work and resolve that difficulty, please consider contributing code to FFF.
 :PROPERTIES:
 :Author: rdalex
-:Score: 15
+:Score: 16
 :DateUnix: 1590255254.0
+:DateShort: 2020-May-23
 :END:
 
 ***** I absolutely agree after taking a closer look. I will edit my post with a more updated idea.
@@ -207,6 +225,7 @@ What FFF lacks is [[https://github.com/JimmXinu/FanFicFare/wiki/FAQs#why-doesnt-
 :Author: wederer42
 :Score: 1
 :DateUnix: 1590304769.0
+:DateShort: 2020-May-24
 :END:
 
 
@@ -215,8 +234,9 @@ What FFF lacks is [[https://github.com/JimmXinu/FanFicFare/wiki/FAQs#why-doesnt-
 Am I missing the core of your proposal or is it supposed to be more user friendly or something along those lines?
 :PROPERTIES:
 :Author: Areign
-:Score: 5
+:Score: 3
 :DateUnix: 1590261511.0
+:DateShort: 2020-May-23
 :END:
 
 
@@ -225,6 +245,7 @@ Am I missing the core of your proposal or is it supposed to be more user friendl
 :Author: callmesalticidae
 :Score: 2
 :DateUnix: 1590253336.0
+:DateShort: 2020-May-23
 :END:
 
 
@@ -233,6 +254,7 @@ Am I missing the core of your proposal or is it supposed to be more user friendl
 :Author: thomas_m_k
 :Score: 3
 :DateUnix: 1590274519.0
+:DateShort: 2020-May-24
 :END:
 
 *** Thanks for the input!
@@ -240,6 +262,7 @@ Am I missing the core of your proposal or is it supposed to be more user friendl
 :Author: wederer42
 :Score: 1
 :DateUnix: 1590304347.0
+:DateShort: 2020-May-24
 :END:
 
 
@@ -252,6 +275,7 @@ That's my two cents. WebToEpub stopped being useful when I no longer had access 
 :Author: xland44
 :Score: 2
 :DateUnix: 1590262347.0
+:DateShort: 2020-May-24
 :END:
 
 *** WebToEpub works just fine on Firefox for Android.
@@ -259,6 +283,7 @@ That's my two cents. WebToEpub stopped being useful when I no longer had access 
 :Author: zajhein
 :Score: 1
 :DateUnix: 1590271755.0
+:DateShort: 2020-May-24
 :END:
 
 
@@ -267,6 +292,7 @@ That's my two cents. WebToEpub stopped being useful when I no longer had access 
 :Author: wederer42
 :Score: 1
 :DateUnix: 1590305851.0
+:DateShort: 2020-May-24
 :END:
 
 
@@ -277,6 +303,7 @@ What I'd pay money for is a service that keeps an up-to-date ebook of a web seri
 :Author: uwu-bob
 :Score: 2
 :DateUnix: 1590268706.0
+:DateShort: 2020-May-24
 :END:
 
 *** What would be the best way to "keep ebook synced up with kindle"? I know that you can send ebooks to a kind e-mail adress, but is kindle smart enough to update an ebook instead of add one when the metadata is the same?
@@ -284,6 +311,7 @@ What I'd pay money for is a service that keeps an up-to-date ebook of a web seri
 :Author: wederer42
 :Score: 1
 :DateUnix: 1590304213.0
+:DateShort: 2020-May-24
 :END:
 
 
@@ -294,6 +322,7 @@ Plus, I guess, you could always add additional functionality like the creation o
 :Author: Geminii27
 :Score: 2
 :DateUnix: 1590270050.0
+:DateShort: 2020-May-24
 :END:
 
 
@@ -302,6 +331,7 @@ Plus, I guess, you could always add additional functionality like the creation o
 :Author: Toastybob42
 :Score: 2
 :DateUnix: 1590277143.0
+:DateShort: 2020-May-24
 :END:
 
 
@@ -310,6 +340,7 @@ Plus, I guess, you could always add additional functionality like the creation o
 :Author: waylandertheslayer
 :Score: 2
 :DateUnix: 1590344628.0
+:DateShort: 2020-May-24
 :END:
 
 
@@ -326,6 +357,7 @@ Plus, I guess, you could always add additional functionality like the creation o
 :Author: ahasuerus_isfdb
 :Score: 2
 :DateUnix: 1590356176.0
+:DateShort: 2020-May-25
 :END:
 
 
@@ -334,6 +366,7 @@ Plus, I guess, you could always add additional functionality like the creation o
 :Author: rapdmt
 :Score: 1
 :DateUnix: 1590342974.0
+:DateShort: 2020-May-24
 :END:
 
 
@@ -344,4 +377,5 @@ Plus, I guess, you could always add additional functionality like the creation o
 :Author: PreFollower
 :Score: 1
 :DateUnix: 1590405175.0
+:DateShort: 2020-May-25
 :END:

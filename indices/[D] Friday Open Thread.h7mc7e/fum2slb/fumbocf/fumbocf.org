@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: jtolmar
+:Score: 17
+:DateUnix: 1591983457.0
+:DateShort: 2020-Jun-12
+:END:
+
+Itch.io has put together the [[https://itch.io/b/520/bundle-for-racial-justice-and-equality][largest games bundle in history]] in support of racial justice and equality.
+
+I felt bad about not being able to participate because Space Trains is too new for me to comfortably give it away, but a friend suggested I should submit a game from back when I won Java4k. That was deeply tied to applets, which nobody can run easily anymore, so I spent three hours last night porting that to javascript.
+
+So now I have the weirdest damn source code I've ever made. A combination of all the tricks you use to make a game compile small in Java (notably writing everything in one giant function), plus some absolutely filthy shims to use Java's file and graphics APIs in JS.
+
+Also I had to disable the heat shimmer effect because sometime around 2012-2013 it started being painfully slow on all computers.

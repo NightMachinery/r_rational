@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: Veedrac
+:Score: 2
+:DateUnix: 1595696292.0
+:DateShort: 2020-Jul-25
+:END:
+
+#+begin_quote
+  GPT-3 is terrible at rhymes, with no improvement over GPT-2,
+#+end_quote
+
+But this is because the encoding hides letters from GPT, plus it doesn't hear words, so it has no reference point. I couldn't rhyme if I was deaf and used GPT's alphabet and nobody explained the arbitrary mapping. I don't think this says much about the intelligence of this sort of model, just that we've made its job really difficult in this one instance. The fact it can list words starting with /f/ is already impressive.
+
+#+begin_quote
+  This is a case in which cherry-picking can make it look much more capable than it actually is, and where increasing the parameters, the fine-tuning, etc. might not actually help it.
+#+end_quote
+
+These (emotions, choosing names) are things that seem analogous to some of the synthetic benchmarks, and there's a fairly clear trend where larger models do much better and fine-tuned models also do much better. GPT-3 does much better than chance; occasional failures in difficult cases don't imply it can't learn.
+
+I continue to think it's important to remember that the model has a thousandth the parameters of a human brain and is being trained on the entire breadth of human text. It makes sense that it first learns the shape and statistics of all human and computer languages before it figures out theory of mind. In particular, perplexity is going down on a consistent slope, so it's clearly continuing to learn fine, even if it's not prioritizing specifically those tasks that you'd most like it to do. At some point on this line it figures out the things you're asking, almost by definition; all you've argued is that we haven't passed that point yet.
+
+Isn't this what one would expect success to look like for a model this small tackling such a difficult task? Asking it to be perfect is basically equivalent to asking for the problem to already be solved. A gorilla's cognitive abilities are also extremely primitive in the measures you're looking at, and yet its brain is an evolutionary neighbour of ours. Surely if we made a model that perfectly emulated a gorilla, we'd want to be very concerned that intelligence is potentially almost solved, even if said gorilla can't rhyme. So it seems to me we should be thinking much more about how an architecture is capable of learning and scaling than about specific tasks it hasn't yet learned.

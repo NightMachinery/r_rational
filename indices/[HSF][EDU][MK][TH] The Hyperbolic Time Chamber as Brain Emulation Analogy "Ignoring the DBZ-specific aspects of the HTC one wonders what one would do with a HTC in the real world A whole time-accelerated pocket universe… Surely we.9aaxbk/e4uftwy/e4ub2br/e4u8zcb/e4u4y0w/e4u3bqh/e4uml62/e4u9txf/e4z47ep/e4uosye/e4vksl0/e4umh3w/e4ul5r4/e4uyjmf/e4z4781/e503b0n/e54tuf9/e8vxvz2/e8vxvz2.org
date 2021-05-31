@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: gwern
+:Score: 1
+:DateUnix: 1541122161.0
+:DateShort: 2018-Nov-02
+:END:
+
+Training neural networks works in parallel pretty well. AlphaZero, for example, was, what, a day to superhuman and a few days wallclock total? And training a near-SOTA ImageNet is down to 4 minutes; if you're a stickler for accuracy, maybe it's 8 or 11 minutes, I don't follow it that closely. In any case, it's quite quick. OA5 is ginormously parallel and it's hard to say how fast wallclock it would be if OA started from scratch rather than constantly using transfer learning whenever they make a tweak, but given all the cleanups and the original training curve, probably on the order of weeks. Even GANs parallelize well, as BigGAN demonstrates with TPUs. The limiting factor is more money (capital/electricity). But if you can't afford to spend 10 GPU-years, it doesn't make much of a difference if that's 0.1 years on 100 GPUs or 10 years on 1 GPU, you can't afford it either way.

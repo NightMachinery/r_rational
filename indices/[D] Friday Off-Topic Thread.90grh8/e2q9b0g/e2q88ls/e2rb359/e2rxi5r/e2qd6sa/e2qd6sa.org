@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: phylogenik
+:Score: 6
+:DateUnix: 1532103969.0
+:DateShort: 2018-Jul-20
+:END:
+
+I'm helping my partner out with some analyses she's doing for one of her projects, using Stan to fit some GLMMs* to a medical dataset she's collected, and am reminded of an amusing tension (paradox? inconsistency?) I've noticed before wrt Bayesian inference -- one of the big selling points people tout is that Bayes lets you encode your prior beliefs, but I almost never see people doing that!
+
+Sometimes that's just because one's actual prior beliefs regarding the components of some complicated model are hard to coherently or exhaustively specify (my own work is frequently like this), but I also think it's because if you're honestly quite confident that (e.g.) some effect is large and positive and specify that belief in the joint prior, and then get a large and positive (or otherwise informative/meaningful) distribution in that parameter's marginal posterior, your reviewers will (perhaps inappropriately) call your results into question (related: I've heard it repeated that if you want to “lie” with stats, lying with the prior is way too transparent -- better to just cook the likelihood (or the data))! Obviously you can examine nuanced shifts in corresponding distributions or look at kl divergence or w/e, but those are often hard to appreciate, especially if your reviewers are domain-experts more than they are methods people.
+
+So instead people always specify conservative or vague/"uninformative" priors (e.g. expected effect = 0), even when there's good reason to expect something else (and then rightfully do some prior sensitivity analysis). So there goes that selling point! Am I mistaken in my expression here? Is it just the papers I read that do this? I do see “weakly informative” priors on focal parameters every so often but not nearly as often as one might expect.
+
+*(w/ 100k+ nominal parameters for the most complicated model -- her PI amusingly expected results on his desk within an hour, which I feel happens often? I guess b/c people are used to just used to just running chi-squared tests on contingency tables or w/e -- which is what they were doing before -- and that takes some fraction of a second. So when I'm like -- it'll take me a week or two to specify/implement these models, fit them, run mcmc diagnostics, do model comparison/averaging, and visualize the results, they get impatient. Never mind that it took months and $100s of k to collect the actual data, the analysis is just a minor afterthought! even though they'll not be publishing the dataset itself anyway! /rant/ he also wants a figure representing the model(s) so I'm gonna send him some plate diagrams lol)

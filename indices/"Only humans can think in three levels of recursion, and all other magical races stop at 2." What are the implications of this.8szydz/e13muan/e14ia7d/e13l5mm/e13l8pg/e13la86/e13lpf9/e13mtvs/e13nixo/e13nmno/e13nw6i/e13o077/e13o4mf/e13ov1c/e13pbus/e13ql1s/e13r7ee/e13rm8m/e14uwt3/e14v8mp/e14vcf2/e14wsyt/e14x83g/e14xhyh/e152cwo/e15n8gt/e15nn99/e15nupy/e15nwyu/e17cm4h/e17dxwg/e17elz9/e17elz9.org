@@ -1,0 +1,28 @@
+:PROPERTIES:
+:Author: MrCogmor
+:Score: 3
+:DateUnix: 1529838021.0
+:DateShort: 2018-Jun-24
+:END:
+
+Then you are talking nonsense since there is no such thing as recursion that isn't functionally equivalent to simple iteration. I will give an example in pseudo code.
+
+A simple transformation
+
+#+begin_example
+   SumNumbersUpToN(n): // Recursive
+        if (n>0) {
+             return n + SumNumbersUpToN(n-1) 
+        else {
+             return 0
+        }
+  }
+
+   SumNumbersUpToN(n) { // Iterative
+        sum=0
+        for each integer i in range(0,n) {
+               sum = sum + i
+       }
+       return sum
+  }
+#+end_example

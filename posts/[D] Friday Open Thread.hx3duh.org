@@ -5,6 +5,7 @@
 :Author: AutoModerator
 :Score: 18
 :DateUnix: 1595603149.0
+:DateShort: 2020-Jul-24
 :END:
 Welcome to the Friday Open Thread! Is there something that you want to talk about with [[/r/rational]], but which isn't rational fiction, or doesn't otherwise belong as a top-level post? This is the place to post it. The idea is that while reddit is a large place, with lots of special little niches, sometimes you just want to talk with a certain group of people about certain sorts of things that aren't related to why you're all here. It's totally understandable that you might want to talk about Japanese game shows with [[/r/rational]] instead of going over to [[/r/japanesegameshows]], but it's hopefully also understandable that this isn't really the place for that sort of thing.
 
@@ -18,6 +19,7 @@ Please note that this thread has been merged with the Monday General Rationality
 :Author: Veedrac
 :Score: 4
 :DateUnix: 1595621758.0
+:DateShort: 2020-Jul-25
 :END:
 
 *** I've been playing with it. It's pretty good. It'll get better with a bigger context window, which is a serious limiter right now, but there are always going to be things that it will have problems with, at least until someone comes along and builds a framework that it can fit inside in order to address some of its issues.
@@ -31,6 +33,7 @@ There are definitely some use cases for it, but a lot of what people are saying 
 :Author: alexanderwales
 :Score: 6
 :DateUnix: 1595653163.0
+:DateShort: 2020-Jul-25
 :END:
 
 **** I'm largely uninterested in the fine details of exactly where GPT-3 is, since those are mostly irrelevant over even fairly short time periods. GPT-2 was from 2019, the original GPT was from 2018. Naturally one would expect GPT-4, or something like it, in 2021. I expect we'll see a quadrillion parameter model within five years, or maybe like a 10 quadrillion parameter mixture of experts model, contingent on only fairly modest amounts of funding.
@@ -44,8 +47,9 @@ Getting it to apply these consistently is a matter of scale. Filtering out the u
 Note that AI Dungeon probably doesn't send your input directly to GPT-3, so some of the issues might be down to GPT-3 fighting the format.
 :PROPERTIES:
 :Author: Veedrac
-:Score: 5
+:Score: 4
 :DateUnix: 1595685910.0
+:DateShort: 2020-Jul-25
 :END:
 
 ***** I don't personally believe that this is true. Some of the problems will be fixed with larger context windows, or with a better corpus, but some of the problems are fundamental to the approach. Part of the reason for looking at where GPT-3 is at is because it will help you predict the deficiencies that GPT-4 will have, some of which are simply a result of the approach used to build it. Especially with being able to compare GPT-2 and GPT-3, we can see areas where it hasn't shown almost any improvement, and which we would expect there to be not much improvement in scaling up.
@@ -59,9 +63,11 @@ Edit: In [[https://arxiv.org/abs/2005.14165][the paper]] there's a whole section
 :Author: alexanderwales
 :Score: 9
 :DateUnix: 1595689182.0
+:DateShort: 2020-Jul-25
 :END:
 
-****** #+begin_quote
+****** u/Veedrac:
+#+begin_quote
   The question of cherry-picking is a crucial one and can't be swept away, because if the AI answers a true/false question right only half the time (no better than chance), then cherry-picking can make it seem like it's far more capable than it actually is.
 #+end_quote
 
@@ -72,6 +78,7 @@ It's true the quality of GPT-3 specifically depends on how much cherry picking i
 :Author: Veedrac
 :Score: 3
 :DateUnix: 1595691038.0
+:DateShort: 2020-Jul-25
 :END:
 
 ******* It really depends on the specifics. GPT-3 is terrible at rhymes, with no improvement over GPT-2, and my prediction is that GPT-4 won't show any improvement if the primary difference is more parameters, a better corpus, or anything like that. You /could/ build a framework around the text output, and select the most-probable word that actually /does/ rhyme when you want it to, and thus force GPT-3 into doing end rhymes, which is one of the things I mean by creating frameworks. (Gwern's GPT-3 page [[https://www.gwern.net/GPT-3#rhyming][has a long section on attempting to get GPT-3 to rhyme]], including a lot of tricks that attempt to induce it.)
@@ -83,11 +90,13 @@ Similarly, there are cases where GPT-3 will provide a completion that falls with
 Generally speaking, I've noticed it having quite a few issues with applying adjectives that are correct for the noun they're applied to, but wrong in the context of the scene or what's been previously established about that object (places where the whole text is in the context window, so that's not the issue). Similarly, it doesn't handle negations well (e.g. if you say that someone is not greedy, the model latches onto 'greedy' and disregards the 'not', similarly, it will sometimes include its own negations that don't make sense). These are other places where I'm skeptical that increasing the parameters will be very helpful, since they were definitely problems in GPT-2 as well. They're /also/ places where cherry-picking can erase the problems.
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 4
+:Score: 3
 :DateUnix: 1595693837.0
+:DateShort: 2020-Jul-25
 :END:
 
-******** #+begin_quote
+******** u/Veedrac:
+#+begin_quote
   GPT-3 is terrible at rhymes, with no improvement over GPT-2,
 #+end_quote
 
@@ -106,6 +115,7 @@ Isn't this what one would expect success to look like for a model this small tac
 :Author: Veedrac
 :Score: 2
 :DateUnix: 1595696292.0
+:DateShort: 2020-Jul-25
 :END:
 
 
@@ -118,6 +128,7 @@ The primary relationship is between a text and its reader, not its author. Fuck 
 :Author: MagicWeasel
 :Score: 5
 :DateUnix: 1595634554.0
+:DateShort: 2020-Jul-25
 :END:
 
 
@@ -130,8 +141,9 @@ I argued back saying that it separated love from money and having a pre-nup does
 Anyway, I'm curious what people here think of it and whether it should be the default with marriages or not?
 :PROPERTIES:
 :Author: xamueljones
-:Score: 4
+:Score: 5
 :DateUnix: 1595826984.0
+:DateShort: 2020-Jul-27
 :END:
 
 *** Regardless of having a prenup or not, the act of asking for one should be beneficial. If they say no, that should give valuable information for understanding where your partner's head is at. In my case, asking for one (but not following through, as I wasn't particularly motivated to do so) opened a conversation about fairness, alimony, child support, financial responsibility, and so on that leads me to trust my wife more.
@@ -139,6 +151,7 @@ Anyway, I'm curious what people here think of it and whether it should be the de
 Avoiding the relationship being tainted by money is a naive way of putting it, I think. Money influences everything, and relationships especially. Marriage is a financial arrangement in addition to everything else it is. Avoiding it being tainted by miscommunications about money is definitely desirable though.
 :PROPERTIES:
 :Author: lsparrish
-:Score: 7
+:Score: 8
 :DateUnix: 1595853811.0
+:DateShort: 2020-Jul-27
 :END:

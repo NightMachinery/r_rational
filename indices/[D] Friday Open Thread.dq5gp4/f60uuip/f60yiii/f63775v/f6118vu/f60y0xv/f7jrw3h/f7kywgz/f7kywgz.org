@@ -1,0 +1,42 @@
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1573829439.0
+:DateShort: 2019-Nov-15
+:END:
+
+Sure. So, the default situation which I expect to continue is pretty much Drexler's AI Services model or Christiano's prosaic AI (which pretty much describe the same situation to me.) In my estimate I'm conditioning on no globally catastrophic outcomes like war, asteroid strike and so on.
+
+The inside view argument has to do with the rate of building tooling vs the rate of building capability (or, current level of capability). I view "intelligence" itself as best understood "like" a rate, call it a learning rate or what you will. It can be measured, but is difficult to do so. See eg Chollet's recent paper [[https://arxiv.org/pdf/1911.01547.pdf][The Measure of Intelligence]] My view on intelligence is a little more nuanced than what Chollet writes, but I will re-express it more simply:
+
+Intelligence can be understood by seeing that there's at least two types.
+
+1. Accumulated skill and knowledge, from which your "instrumental rationality" ie, the thing which is most often /measured/ by people seeking to measure the value of a system.
+2. The efficiency and speed at which you acquire this knowledge, /taking into account resource usage/.
+
+Chollet gives something like these two definitions. However, my view is that they are not unrelated. As a musician and gamer it is clear to me from personal experience that what you know (point 1) influences what you can learn, and how you learn (point 2). And the reverse is also true in an obvious way.
+
+Note: This is not the same thing as the "crystallised vs fluid" intelligence model. Both parts are fluid and changing in this case.
+
+Towards further understanding, it helps to make the observation from music that although there "appears" to be such a thing which many would describe as "repetition," in reality, when the context is taken into account, the best model for the situation is no longer "it is a repeat." This is due to the different /contexts/ provided; there is a different before and after. Even when a pianist repeats one singular note, each individual note can be uniquely interesting in its own way.
+
+I believe humans are very powerful optimisation processes. Currently, we can on average be roughly quantified by our language-processing capacity when speaking out loud to each other. Recent research shows we have about 38 bits of "optimisation power" in this task (roughly corresponding to the Turing test). (Sorry, I can't find the page I had in mind for this, I believe I would have found it from Hacker News. Perhaps google?)
+
+This (~38 bits) was found across all languages studied - more information-dense languages tended to be said more slowly and less dense languages said more quickly, so the information transfer speed remained roughly constant.
+
+What this means is that the optimisation power of a machine able to pass the Turing test in full generality only need be about 2^{39,} (549 Gigabit); ie, it can choose a unique response during the timeframe of a conversation out of a 549 gigabit database (68 GB), where much of the database may be updated or not when the context (by which I mean conversation history and expected future conversation continuation) changes. We already have plentiful hardware capable of doing this. The engineering problem is only the specific algorithm which chooses the response appropriate to the context.
+
+Now, you may argue, but doesn't a human draw on a much larger pool of semantic concepts in order to generate this response out of (apparently) 2^{38} ish possible responses within a few milliseconds, or even before the opposing speaker has finished? Well, yes, but we are not trying to solve /literally everything a human could do in one go/ using AI. There's no reason to expect a single algorithm to generalise to a "full, FOOM superintelligence" when you design that algorithm for a specific purpose that doesn't include that.
+
+This is basically why I think most of the currently defined tests will be passed by automated systems roughly within a decade. It is BOTH the case that current tests are inadequate to capture what we really /mean/ when we're talking about "artificial general intelligence," and so are relatively easy to pass by methods other than creating artificial general intelligence, AND that the default, prosaic continuation of current trends will predictably result in these tests being passed by 2030.
+
+My best estimation of the current situation is that everyone is pretty much following their microeconomic incentives. Therefore due to somewhat Molochian reasoning, I don't expect the situation to change drastically. Hence my prediction.
+
+Since nothing has to change in order for our capability (indeed, we already have it) to become able to pass many of the current "general AI" tests, the problem then becomes only a question of writing the necessary tooling and software to chain the various sub-solutionary programs into a working system. This is done at a slower rate, and mostly by smart hobbyists, so I expect this to be the bottleneck. However, smart hobbyists are smart, and 10 years is a long time. I feel confident in my prediction based on this.
+
+As a recent example, [[https://www.facebook.com/100006735798590/posts/2547632585471243/][John Carmack announced he is working on general AI]]. This is the kind of thing which is expected by my model of the world in which this prediction was generated - as the problem becomes tractable in engineering terms, engineers will recognise this and focus on creating the tooling to solve it, purely because it is obviously an important problem.
+
+Because creating tooling "looks like" from the outside, "no progress," we may not see anything significant until 2025 or later. Nevertheless, that does not mean no progress is being made.
+
+What I also expect to happen however is for people like Francois Chollet to design better tests of intelligence which more fully capture what we really mean when we say the vague word. Of those expected, but unknown, future tests, I cannot guess at the likelihood of us developing systems to pass them, except if, somewhere during this process an actual general AI is developed which can do all intellectual tasks humans can do including AI research and program development. In which case, all bets are off. However, my prediction would still have come true.
+
+All of this has large implications for safety. If MIRI, FHI, OpenAI, etc do not work with and substantially solve many of the safety issues surrounding dissemination of such technology, we will end up in a world where "fake news" is /more common/ than real news, and easier to produce. It will be easier to talk to a machine than to a human - real humans will not be able to tell the difference. Is this xkcd's "Mission Fucking Accomplished," or is this a horrifying dystopia? I don't have the answer to that question.

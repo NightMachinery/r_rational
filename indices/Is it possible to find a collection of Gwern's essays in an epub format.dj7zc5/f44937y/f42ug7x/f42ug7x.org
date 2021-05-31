@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 8
+:DateUnix: 1571335667.0
+:DateShort: 2019-Oct-17
+:END:
+
+Sure: [[https://drive.google.com/file/d/1lFpQz8bDtDP-TL1N9fTtCWoEA5fJ1L36/view?usp=sharing]]
+
+Converted with =: foreach *.html |> pandoc --toc -s "%f" -o "%o" |> %B.epub= and tup. Hopefully that works for you. Comes in to about 66M.

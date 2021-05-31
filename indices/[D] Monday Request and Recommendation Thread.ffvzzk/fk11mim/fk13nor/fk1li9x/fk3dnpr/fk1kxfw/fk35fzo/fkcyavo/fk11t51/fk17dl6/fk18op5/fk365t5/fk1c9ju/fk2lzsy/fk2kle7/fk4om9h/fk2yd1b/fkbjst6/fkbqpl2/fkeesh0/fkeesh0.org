@@ -1,0 +1,40 @@
+:PROPERTIES:
+:Author: rdalex
+:Score: 3
+:DateUnix: 1584111671.0
+:DateShort: 2020-Mar-13
+:END:
+
+If you're interested in this method (and use Calibre and FanFicFare), this is my custom column. It will display the number of missed deadlines, followed by the number of days since the first missed deadline and the average number of days between normal releases.
+
+It relies on a column named "#updated", filled by FanFicFare, but obviously you can change the name.
+
+#+begin_example
+  program:
+  # Days since the last update
+  days_since_last=days_between(today(), raw_field('#updated'));
+
+  # The first chapter doesn't count in the average; nor do books with no chapters (since they generate a divide by zero error)
+  chapters=cmp(raw_field('#chapters'), 2, 1, subtract(raw_field('#chapters'), 1), subtract(raw_field('#chapters'), 1));
+
+  # Days between chapters, in average.  If the average is less than one day, we up to one day.
+  # This is so incomplete multi-chapters uploaded in one go don't get crazy values.
+  pub_length=days_between(raw_field('#updated'), raw_field('pubdate'));
+  avg=divide(cmp(pub_length, 0, 1, 1, pub_length), chapters);
+  avg=cmp(avg, 1, 1, 1, avg);
+  # Number of days an update should have come up, based on average
+  days_delayed=subtract(days_since_last, avg);
+
+  # Number of 'deadlines' missed.
+  deadlines=divide(days_since_last, avg);
+
+  # We only display a value for books with a Last Updated value. Among those, we dismiss completed books.
+  # You'd think a date column with an undefined value would be considered empty by ifempty(), but nope.  It's a column with a 'None' value.
+  contains( raw_field('#updated'), 'None', '',
+      str_in_list(field('tags'), ",", "Completed", "",
+          cmp( deadlines, 2,
+          "", "", finish_formatting( deadlines, "0.0f", "x" , finish_formatting(days_delayed, "0.0f", " (", finish_formatting(avg, "0.0f", ", avg ", ")")))
+          )
+      )
+  )
+#+end_example

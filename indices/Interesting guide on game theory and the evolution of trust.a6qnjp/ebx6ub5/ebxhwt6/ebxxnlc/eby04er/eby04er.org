@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: GeneralExtension
+:Score: 1
+:DateUnix: 1545004048.0
+:DateShort: 2018-Dec-17
+:END:
+
+One way is to extend the decisions that are already available. Replace "cheat"/defect and "cooperate" with a number in the set [0, 2] or between those two numbers. This number represents how much you give, and also determines how much you keep. If you "give" 2, they receive 2, and you keep 0. If you "give" 0, they receive 0, but you gain 1. Both player's score is a function *f*, of *a* and *b*, what player 1 and 2 play, which returns *x* and *y*, which is what player 1 and 2 receive, respectively. This gives people the option to give 1 point to the other player, and keep 1/2 for themselves.
+
+f(a, b) = x, y = a/2+b, b/2+a.
+
+You could also add a "quit" option, which ends play. This affects what phenomena can be modeled using the game because it's harder for countries to just move to have different neighbors, than to declare war or negotiate peace, but it might make it resemble interactions between people more - people can usually leave a conversation.

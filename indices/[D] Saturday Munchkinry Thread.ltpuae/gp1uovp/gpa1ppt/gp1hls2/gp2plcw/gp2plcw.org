@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: Dragongeek
+:Score: 11
+:DateUnix: 1614458319.0
+:DateShort: 2021-Feb-28
+:END:
+
+*This power would be nearly completely useless* (with the limitations).
+
+I know this because I've done this. Or more specifically, I've programmed a 12DOF robotic arm with raw G-code written manually and composed of line by line motor-move commands without the inverse kinematics. /It was an absolute nightmare/ and was used as an object lesson on why programing the robot joint by joint is stupid and why it's much easier to just create an IK solver and then program with cartesians.
+
+For this power to be usable, you need a better UI/software. At minimum, an IK solver and preferably pre-programmed macros for the hand (like "grip" or "pinch") because otherwise controlling the dozens of joints in the hand would be superbly tedious. One step further would be to allow the user to "capture" poses and positions and then interpolate between them.
+
+As for applications, well they're very limited. Since theres no control loop, scripted walking or standing is right out and you're limited to scripting tasks that you do while seated. Even then, you wouldn't be able to use this in an assembly-line setting because there would be too much variance that your script wouldn't be able to adjust to.
+
+The best application is probably music where maybe you could play the drums really well or become a human MIDI machine and play pre-programmed piano music

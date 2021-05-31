@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: Mason-B
+:Score: 10
+:DateUnix: 1554514867.0
+:DateShort: 2019-Apr-06
+:END:
+
+I recently found a mature hierarchical task network (HTN) library in [[https://github.com/shop-planner/shop3][SHOP3]]. I think it might let me finally make (atleas as a proof of concept of) a game idea I have had for a while. It's loosely based off of the Azkaban scene in HPMOR in specific (and in general on the rational trope of "alternate voices arguing in your head" or "thinking from someone else's perspective").
+
+Primarily a planner can be used to simulate a perspective on a problem domain. Each planner can assign different costs to different plan structures, and order considerations of alternatives in different ways. And then through game play upgrade mechanics one can influence how a "voice" thinks, and what it provides you. Some of the things it provides you can be purely game mechanical of course, but the cool part is that others can be the emergent through the result of the planning system on the state of the simulation.
+
+For example the "Slytherin" voice of personal gain. Do you upgrade it towards economic value, cunning and efficiency or towards brutality, fear, and evil? Perhaps you make a clone of it and do both? Perhaps only certain actions can be taken if this voice thinks of it? Perhaps only it can discover economic hacks? Perhaps it can make fear based actions available to other planners?
+
+The main difficulty is the detail of the simulation required for the planners to demonstrate emergent behavior. However it would make an interesting mix of puzzle and simulation, the planners would come up with similar viewpoints even though in the face of a continuous system. It could also be used to simulate adversaries, by giving them more powerful actions, and the player more viewpoints.

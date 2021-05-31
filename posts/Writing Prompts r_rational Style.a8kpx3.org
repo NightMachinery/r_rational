@@ -3,8 +3,9 @@
 * Writing Prompts r/rational Style!
 :PROPERTIES:
 :Author: xamueljones
-:Score: 23
+:Score: 22
 :DateUnix: 1545484369.0
+:DateShort: 2018-Dec-22
 :END:
 People here have a lot of interesting ideas that never make the jump from a writing prompt to a story.
 
@@ -15,7 +16,8 @@ Let's post our ideas here and hope that someone picks them up.
 The only rule is that all writing prompts must be a top-level comment.
 
 
-** #+begin_quote
+** u/xamueljones:
+#+begin_quote
   There are three topics which no gentleman will raise in polite company: religion, politics, and time. Much blood has been spilled on their account, alone or in combination, and many a conversation has transformed into a shouting match upon their arrival.
 
   The account which I am about to relay to you has to do with all three.
@@ -26,6 +28,7 @@ This [[https://www.reddit.com/r/rational/comments/a8atr6/d_friday_offtopic_threa
 :Author: xamueljones
 :Score: 5
 :DateUnix: 1545484696.0
+:DateShort: 2018-Dec-22
 :END:
 
 *** Sounds like the intersection of a "I am my own grandparent" gambit, a religious culture that frowns on inbreeding and cousin marriage, and someone who leaves too many assets to their future self, thereby putting their future self in a position of wealth, power, and /scrutiny/.
@@ -33,6 +36,7 @@ This [[https://www.reddit.com/r/rational/comments/a8atr6/d_friday_offtopic_threa
 :Author: boomfarmer
 :Score: 1
 :DateUnix: 1545522245.0
+:DateShort: 2018-Dec-23
 :END:
 
 
@@ -40,6 +44,7 @@ This [[https://www.reddit.com/r/rational/comments/a8atr6/d_friday_offtopic_threa
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1545537248.0
+:DateShort: 2018-Dec-23
 :END:
 
 
@@ -48,6 +53,7 @@ This [[https://www.reddit.com/r/rational/comments/a8atr6/d_friday_offtopic_threa
 :Author: SimoneNonvelodico
 :Score: 1
 :DateUnix: 1545783553.0
+:DateShort: 2018-Dec-26
 :END:
 
 
@@ -56,8 +62,9 @@ This [[https://www.reddit.com/r/rational/comments/a8atr6/d_friday_offtopic_threa
 Aibo: Acquiring Resources. Processing.
 :PROPERTIES:
 :Author: edwardkmett
-:Score: 5
+:Score: 8
 :DateUnix: 1545540742.0
+:DateShort: 2018-Dec-23
 :END:
 
 
@@ -72,9 +79,11 @@ On the other and given could be leveraged by plucky protagonists acting in a suf
 :Author: edwardkmett
 :Score: 4
 :DateUnix: 1546153607.0
+:DateShort: 2018-Dec-30
 :END:
 
-*** #+begin_quote
+*** u/xamueljones:
+#+begin_quote
   When AlphaZero detects that they are winning, it effectively starts producing garbage moves, just to hold its advantage.
 #+end_quote
 
@@ -83,6 +92,7 @@ Why does it do that? I don't play Go so I wouldn't know if it's something specif
 :Author: xamueljones
 :Score: 1
 :DateUnix: 1546183994.0
+:DateShort: 2018-Dec-30
 :END:
 
 **** It is more that a 'win is a win' so once it is winning, as long as it can't see any way that it'll lose, it doesn't really have any notion of 'doing better or worse' to distinguish between its options. There isn't anything specific to Go here, it'll do the same when playing Chess.
@@ -90,6 +100,7 @@ Why does it do that? I don't play Go so I wouldn't know if it's something specif
 :Author: edwardkmett
 :Score: 1
 :DateUnix: 1546221168.0
+:DateShort: 2018-Dec-31
 :END:
 
 ***** Then why is it designed to act that way once it is winning? Or is it because it can only decide which move to play based on whether or not it will lead to a win or a loss, and therefore it can not evaluate based on margin of victory?
@@ -97,6 +108,7 @@ Why does it do that? I don't play Go so I wouldn't know if it's something specif
 :Author: xamueljones
 :Score: 1
 :DateUnix: 1546259857.0
+:DateShort: 2018-Dec-31
 :END:
 
 ****** Pretty much that. Not sure how you'd fix it and make it favor winning 'by a large margin' without screwing up the accuracy of the way it evaluates the board. e.g. having it optimize for a game search tree where the opponent has a small chance of getting two moves would have it favor a larger margin, but probably would make it fail to solve small down-to-the-wire decision probems in turn.
@@ -104,6 +116,7 @@ Why does it do that? I don't play Go so I wouldn't know if it's something specif
 :Author: edwardkmett
 :Score: 1
 :DateUnix: 1546380512.0
+:DateShort: 2019-Jan-02
 :END:
 
 ******* You might try training a weaker net to try and tell from its move whether it thinks it will win, and then have it try to fool the weaker net.
@@ -111,6 +124,7 @@ Why does it do that? I don't play Go so I wouldn't know if it's something specif
 :Author: Gurkenglas
 :Score: 1
 :DateUnix: 1546686870.0
+:DateShort: 2019-Jan-05
 :END:
 
 ******** Not sure. I think the main takeaway of the AlphaZero approach is that as you start ripping out all these special purpose hacks, you can often get simpler systems that outperform laboriously hand-tuned tricks like that.
@@ -118,6 +132,7 @@ Why does it do that? I don't play Go so I wouldn't know if it's something specif
 :Author: edwardkmett
 :Score: 1
 :DateUnix: 1546761836.0
+:DateShort: 2019-Jan-06
 :END:
 
 
@@ -126,6 +141,7 @@ Why does it do that? I don't play Go so I wouldn't know if it's something specif
 :Author: boomfarmer
 :Score: 3
 :DateUnix: 1545522377.0
+:DateShort: 2018-Dec-23
 :END:
 
 *** OFFTOPIC:
@@ -133,15 +149,17 @@ Why does it do that? I don't play Go so I wouldn't know if it's something specif
 Are coffeeshop AUs A Thing, or is there a coincidence that my friend suggested we do a coffeeshop AU of something. She also suggested a "small sourthern town AU" - is that also A Thing? Am I just completely out of the fanfic community loop?
 :PROPERTIES:
 :Author: MagicWeasel
-:Score: 7
+:Score: 6
 :DateUnix: 1545532913.0
+:DateShort: 2018-Dec-23
 :END:
 
 **** Coffeeshop AUs are a thing, and so I assume that Small Southern Town AUs are also a thing.
 :PROPERTIES:
 :Author: boomfarmer
-:Score: 7
+:Score: 9
 :DateUnix: 1545536451.0
+:DateShort: 2018-Dec-23
 :END:
 
 ***** This news has made me thrilled.
@@ -149,6 +167,7 @@ Are coffeeshop AUs A Thing, or is there a coincidence that my friend suggested w
 :Author: MagicWeasel
 :Score: 6
 :DateUnix: 1545541322.0
+:DateShort: 2018-Dec-23
 :END:
 
 
@@ -173,8 +192,9 @@ Minnie's lips were twitching harder now. "Practice."
 Minnie blinked. "That's the first time I've ever been called /that/."
 :PROPERTIES:
 :Author: awesomeideas
-:Score: 6
+:Score: 7
 :DateUnix: 1545676529.0
+:DateShort: 2018-Dec-24
 :END:
 
 
@@ -188,9 +208,11 @@ Minnie blinked. "That's the first time I've ever been called /that/."
 :Author: Sailor_Vulcan
 :Score: 3
 :DateUnix: 1545583531.0
+:DateShort: 2018-Dec-23
 :END:
 
-*** #+begin_quote
+*** u/sickening_sprawl:
+#+begin_quote
   All pokemon are sentient after all, and you have been transported to the world of pokemon in Ghetsis's body.
 #+end_quote
 
@@ -201,10 +223,12 @@ The problem with nearly all "serious" pokemon stories is that you have to overha
 :Author: sickening_sprawl
 :Score: 1
 :DateUnix: 1545594421.0
+:DateShort: 2018-Dec-23
 :END:
 
 
-*** #+begin_quote
+*** u/SimoneNonvelodico:
+#+begin_quote
   HJPEV gets transported to the world of Yugioh, without his magic. What will he do?
 #+end_quote
 
@@ -215,6 +239,7 @@ If someone has enough knowledge of the game and patience to undertake that work,
 :Author: SimoneNonvelodico
 :Score: 1
 :DateUnix: 1545780196.0
+:DateShort: 2018-Dec-26
 :END:
 
 **** Yeah. Agreed. Part of the reason that I haven't written one myself is because trading card games are too complicated to depict realistically if you're not familiar with them. And if you don't like the game, then trying to write matches can be a huge pain. Which is sad because I had some good ideas for yugioh fic. I mean, I suppose you could replace duel monsters with magic the gathering or something. But then that messes with the ancient egyptian world building, I think. A large part of the premise of yugioh is that the pharaoh has lost his memories and is playing a cursed/enchanted trading card game that reenacts/mimics the battles of his past, after a fashion. And if you use magic the gathering you would need to explain why they are battling using cards instead of fighting like normal planeswalkers. Maybe in the story it could be a cursed game, but it reenacts battles of the past which are integral to the culture of the plane it takes place on, but which has been lost to time. Not sure how that would work.
@@ -224,6 +249,7 @@ Although to be fair, too many of the duel monsters in season 1 are medieval fant
 :Author: Sailor_Vulcan
 :Score: 1
 :DateUnix: 1545928976.0
+:DateShort: 2018-Dec-27
 :END:
 
 ***** The way it's supposed to work, I think, is that the monsters were 'bound' to the cards by the Pharaoh and his priests, whereas they used to exist and roam freely. So in a way if you play, say, Blue Eyes White Dragon what you're really doing is tapping a fraction of the power of the /real/ BEWD who lies trapped beyond space and time or whatever. As such the games are themselves pale reflections of the summoners battles of old, with the non insignificant benefit that they don't destroy the world any more. However they remain magically binding, which is why you can wager your soul on them, or use them to force an opponent to do what you want. In the so-called 'season 0' part of the story (before the card game gets even introduced) we see that the Pharaoh inside Yugi's body does this multiple times: he challenges someone at a game, /any/ game, and establishes an ante. If they break their part of the deal after losing, then the penalty kicks in, and that's usually them losing their mind or soul. The Pharaoh is quite hardcore and doesn't fuck around.
@@ -233,6 +259,7 @@ I think there is potentially a really interesting setting in there. You could ev
 :Author: SimoneNonvelodico
 :Score: 1
 :DateUnix: 1545931446.0
+:DateShort: 2018-Dec-27
 :END:
 
 
@@ -251,6 +278,7 @@ Or alternatively, since YGO was and always has been a broken mess of a game (par
 :Author: SecondTriggerEvent
 :Score: 1
 :DateUnix: 1546595779.0
+:DateShort: 2019-Jan-04
 :END:
 
 
@@ -261,8 +289,9 @@ Rin summons caster-class HJPEV using her family's invisibility cloak heirloom, c
 (admittedly, I'm not sure how this would work without Kotomine & Quirrell winning in like 5 minutes)
 :PROPERTIES:
 :Author: tjhance
-:Score: 4
+:Score: 6
 :DateUnix: 1545502145.0
+:DateShort: 2018-Dec-22
 :END:
 
 *** EY said that LV easily beats HJPEV in a straight fight unless HJPEV has some game-breaking advantage. So either give him one, or how about...
@@ -270,8 +299,9 @@ Rin summons caster-class HJPEV using her family's invisibility cloak heirloom, c
 Kirei summons Draco instead? Malfoy heir with 10 years to learn and prepare looks like an interesting and very tough opponent, who is nevertheless not unbeatable by rational!Harry.
 :PROPERTIES:
 :Author: Coushi
-:Score: 5
+:Score: 3
 :DateUnix: 1545519984.0
+:DateShort: 2018-Dec-23
 :END:
 
 **** Not 11 year old Harry, 110 year old Harry outfitted with all the magitech enhancements he can think of with 100 years to think about it and access to the philosopher's stone, as well as time to learn all the spells a normal wizard might. 10 years might not be enough to make it last longer than 5 minutes the other way.
@@ -279,6 +309,7 @@ Kirei summons Draco instead? Malfoy heir with 10 years to learn and prepare look
 :Author: chlorinecrown
 :Score: 2
 :DateUnix: 1545569764.0
+:DateShort: 2018-Dec-23
 :END:
 
 ***** That one sounds difficult on account of the need to be at least as intelligent as the characters you write. I don't think anyone could even come close to being able to write hjpev with a century of prep. Maybe if it was crowd sourced ideas you could make up for the time thing but...tough
@@ -286,6 +317,7 @@ Kirei summons Draco instead? Malfoy heir with 10 years to learn and prepare look
 :Author: Croktopus
 :Score: 3
 :DateUnix: 1545607823.0
+:DateShort: 2018-Dec-24
 :END:
 
 
@@ -294,20 +326,23 @@ Kirei summons Draco instead? Malfoy heir with 10 years to learn and prepare look
 :Author: kaukamieli
 :Score: 2
 :DateUnix: 1545509677.0
+:DateShort: 2018-Dec-22
 :END:
 
 **** the story would probably be better if it lasted for longer than 5 minutes
 :PROPERTIES:
 :Author: tjhance
-:Score: 8
+:Score: 11
 :DateUnix: 1545512576.0
+:DateShort: 2018-Dec-23
 :END:
 
 ***** The bane of every author who wants a terrifyingly intelligent villain: wanting the main character to live for longer than five minutes without breaking realism.
 :PROPERTIES:
 :Author: XxChronOblivionxX
-:Score: 9
+:Score: 7
 :DateUnix: 1545516943.0
+:DateShort: 2018-Dec-23
 :END:
 
 
@@ -316,8 +351,9 @@ Kirei summons Draco instead? Malfoy heir with 10 years to learn and prepare look
 It's not like movies and series don't cheat with time. Whenever they show a bomb with a timer, you can bet they stick in far more material than what the timer says.
 :PROPERTIES:
 :Author: kaukamieli
-:Score: 9
+:Score: 8
 :DateUnix: 1545542119.0
+:DateShort: 2018-Dec-23
 :END:
 
 
@@ -326,6 +362,7 @@ It's not like movies and series don't cheat with time. Whenever they show a bomb
 :Author: XxChronOblivionxX
 :Score: 1
 :DateUnix: 1545517380.0
+:DateShort: 2018-Dec-23
 :END:
 
 **** Yeah, this is another obvious problem. I imagine to start with, we'd buff kirei's intellect to be on par with quirrell so that (i) they can tolerate each other and (ii) kirei uses a well worded command spell or his knowledge of how servant contracts work to avoid dying immediately and (iii) they can come to be allies of some sort. I think it could work if you have kirei as a quirrell-level master of fate/stay night-lore (which quirrell himself is a novice in).
@@ -333,8 +370,9 @@ It's not like movies and series don't cheat with time. Whenever they show a bomb
 Of course, ultimately the motivation is "I think this pairing is cute"
 :PROPERTIES:
 :Author: tjhance
-:Score: 4
+:Score: 5
 :DateUnix: 1545519019.0
+:DateShort: 2018-Dec-23
 :END:
 
 
@@ -343,6 +381,7 @@ Of course, ultimately the motivation is "I think this pairing is cute"
 :Author: Coushi
 :Score: 1
 :DateUnix: 1545520357.0
+:DateShort: 2018-Dec-23
 :END:
 
 
@@ -351,8 +390,9 @@ Of course, ultimately the motivation is "I think this pairing is cute"
 He still gets discovered by a satellite operator, but what makes rescue problematic is that he's washed up in disputed territory in the middle of a regional conflict. (Pick whatever makes sense for an orbital launch abort.)
 :PROPERTIES:
 :Author: boomfarmer
-:Score: 4
+:Score: 6
 :DateUnix: 1545522735.0
+:DateShort: 2018-Dec-23
 :END:
 
 *** First world countries remove citizens from warzones/unstable territory fairly often, nevermind if they're a high ranking military employee in our space program. The answer is either "unmarked black helicopter picks them up" or "mercenary squad which no one looks too far into picks them up". US department of state even [[https://travel.state.gov/content/travel/en/international-travel/emergencies/what-state-dept-can-cant-do-crisis.html][says]] that they "provide departure assistance" if there is no commercial means of leaving dangerous territory, including "U.S. military or other U.S. government assets" in exceptional situations. Somewhere like North Korea, where we aren't able to do covert rescue ops due to China backing them and have to do prisoner exchanges, isn't the norm.
@@ -362,6 +402,7 @@ You could still write a story about an astronaut being held captive by a militia
 :Author: sickening_sprawl
 :Score: 2
 :DateUnix: 1545590460.0
+:DateShort: 2018-Dec-23
 :END:
 
 **** So it's a short novel, once they find him.
@@ -369,6 +410,7 @@ You could still write a story about an astronaut being held captive by a militia
 :Author: boomfarmer
 :Score: 2
 :DateUnix: 1545591816.0
+:DateShort: 2018-Dec-23
 :END:
 
 
@@ -381,6 +423,7 @@ The goal is to survive to the end with your mind intact.
 :Author: xamueljones
 :Score: 4
 :DateUnix: 1545485153.0
+:DateShort: 2018-Dec-22
 :END:
 
 
@@ -391,6 +434,7 @@ Harry is Kamina, Draco is Simon, Hermione is Nia, The Defense Professor is the f
 :Author: boomfarmer
 :Score: 2
 :DateUnix: 1545521691.0
+:DateShort: 2018-Dec-23
 :END:
 
 *** Are you willing to take stuff from Significant Digits too? If you are, the big bads from SD would make an excellent Anti-Spiral.
@@ -398,6 +442,7 @@ Harry is Kamina, Draco is Simon, Hermione is Nia, The Defense Professor is the f
 :Author: Sarkavonsy
 :Score: 3
 :DateUnix: 1545541072.0
+:DateShort: 2018-Dec-23
 :END:
 
 
@@ -406,6 +451,7 @@ Harry is Kamina, Draco is Simon, Hermione is Nia, The Defense Professor is the f
 :Author: boomfarmer
 :Score: 1
 :DateUnix: 1545536539.0
+:DateShort: 2018-Dec-23
 :END:
 
 
@@ -414,6 +460,7 @@ Harry is Kamina, Draco is Simon, Hermione is Nia, The Defense Professor is the f
 :Author: boomfarmer
 :Score: 2
 :DateUnix: 1545521873.0
+:DateShort: 2018-Dec-23
 :END:
 
 
@@ -422,6 +469,7 @@ Harry is Kamina, Draco is Simon, Hermione is Nia, The Defense Professor is the f
 :Author: boomfarmer
 :Score: 2
 :DateUnix: 1545536397.0
+:DateShort: 2018-Dec-23
 :END:
 
 
@@ -432,6 +480,7 @@ Some years later, a local wizard receives an artifact captured from a group of b
 :Author: farsan13
 :Score: 2
 :DateUnix: 1545578592.0
+:DateShort: 2018-Dec-23
 :END:
 
 
@@ -440,6 +489,7 @@ Some years later, a local wizard receives an artifact captured from a group of b
 :Author: boomfarmer
 :Score: 2
 :DateUnix: 1545606605.0
+:DateShort: 2018-Dec-24
 :END:
 
 
@@ -452,6 +502,7 @@ Someone steals one of our planets "because we weren't using it".
 :Author: LopeLopez
 :Score: 2
 :DateUnix: 1545649422.0
+:DateShort: 2018-Dec-24
 :END:
 
 
@@ -460,6 +511,7 @@ Someone steals one of our planets "because we weren't using it".
 :Author: megazver
 :Score: 2
 :DateUnix: 1545653341.0
+:DateShort: 2018-Dec-24
 :END:
 
 *** If their ethics are deontological, it's really boring: they never use those powers.
@@ -471,6 +523,7 @@ If their ethics are utilitarian, then it's going to turn into Death Note very qu
 :Author: SimoneNonvelodico
 :Score: 3
 :DateUnix: 1545780324.0
+:DateShort: 2018-Dec-26
 :END:
 
 
@@ -479,6 +532,7 @@ If their ethics are utilitarian, then it's going to turn into Death Note very qu
 :Author: boomfarmer
 :Score: 1
 :DateUnix: 1545522001.0
+:DateShort: 2018-Dec-23
 :END:
 
 
@@ -491,4 +545,5 @@ After a series of aventures that "just happen" to convince the ROB to give his p
 :Author: crivtox
 :Score: 1
 :DateUnix: 1545827175.0
+:DateShort: 2018-Dec-26
 :END:

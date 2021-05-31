@@ -1,0 +1,50 @@
+:PROPERTIES:
+:Author: adgnatum
+:Score: 2
+:DateUnix: 1531975849.0
+:DateShort: 2018-Jul-19
+:END:
+
+There /is/ one other thing: Timing. ...I'm still assuming linear time, because time travel makes a real mess for this. (Unicorns, though. The exercise of waiting a few minutes at the right times is left to the reader.)
+
+#+begin_quote
+  I need to make sure that everyone is who they say they are.
+#+end_quote
+
+The most damaging thing an attacker could do is impersonate /everyone/ to everyone else, such that no two parties actually communicated but trusted that they had.
+
+There are other attacks. Another is to impersonate absent parties well enough to fool to all present and give no hint that the illusion persists.
+
+A /slightly/ less damaging variant on either attack is to fool some fraction of the group and leave the others aware of the ongoing illusion.
+
+#+begin_quote
+  Solace, you should have enough, given movie nights. Some small amount of repetition is allowable
+#+end_quote
+
+Repetitions carry risk, but they're nearly unavoidable for Solace's use.
+
+An attacker could manipulate when everyone started their messages so that rather than sequentially communicate and avoid duplicates, they all communicate at once without hearing each other. Now the attacker has several encrypted phrases with presumably standard frequency distributions on the letters /and/ no one thinks they should have heard anything yet.
+
+Everyone just gave a message and expects a response, so the attacker has very little time. All an illusion needs to do is stall. Maybe their new associates interrupt with a question; a delay from outside the system is dangerous.
+
+If the delays vary, the attacker now has a few guesses in order to fool at least one person. Wrong guesses alert that person, but no one else knows a message has even been transmitted. However:
+
+#+begin_quote
+  Grak began.
+#+end_quote
+
+This helps the defenders because everyone wants to know if they can trust what they heard about the wards they're in. It's a mostly non-arbitrary choice who should go first. Imagine everyone being told they should go first. (If you're in a /hurry/ you can skip imagining Grak, since he didn't need to be prompted in the chapter. I won't tell him if you won't.)
+
+Arguably, having common knowledge of being in the ward is an unqualified victory for the defenders, but only arguably, so let's keep going!
+
+The attacker can also try changing the sender/recipient of a message.
+
+Keep in mind that everyone in the party expects an encrypted message, even if the attacker changes it. In some cases the unencrypted message may be a known-unknown. (Does Fenn think she knows whether Mary and Grak watched /Fight Clown/?)
+
+If the message seems suspect to the recipient and they react overtly with any of: facial expressions, shouts, or cleartext the discrepancy may be from the meaning or the non-common movies. Because movies were primarily watched in pairs, this seems like a strength of the system, but a watched movie is probably not also a fake movie in another context. It's still weak information to the attacker. Concerns along these lines probably led Amaryllis to say this:
+
+#+begin_quote
+  I want one short, coherent message from everyone, ideally something personal. If there's any doubt, we can ask questions and give responses to each other.
+#+end_quote
+
+The protocol wasn't fully specified by the text, but presumably if anyone encountered an /in/coherent message, they wouldn't overtly react to it, but would send a garbage message that will definitely seem like another protocol failure no matter what an attacker does with it (and it won't have the right letter distribution).

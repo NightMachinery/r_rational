@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: causalchain
+:Score: 3
+:DateUnix: 1538870991.0
+:DateShort: 2018-Oct-07
+:END:
+
+You don't want to put it on a trebuchet. When you apply it to an object and square the mass, the moment of inertia will increase not the angular velocity. This will make your trebuchet /harder/ to turn and won't speed it up.
+
+It is very useful for things that you want to keep spinning such as a thrown spinning weapon (shuriken or frisbee), or things you don't want spinning such as you. You could apply it to your opponent's weapon as they are trying to swing, and watch as their practised motions utterly fail them.
+
+It would be prudent to set a 'unit' for your mass so that we can accurately see how the scale of the object affects the moment. Angular momentum is measured in kg m^2 s^-1, and we can't change that even in fantasy. So if we multiply the mass onto it then we need to convert it to a dimensionless number by dividing it by a "one mass" constant. This also implies that if the object is below one mass then its angular momentum will decrease instead.

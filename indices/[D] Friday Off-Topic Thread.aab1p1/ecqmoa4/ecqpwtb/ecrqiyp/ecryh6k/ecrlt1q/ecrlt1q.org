@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: hh26
+:Score: 4
+:DateUnix: 1546040095.0
+:DateShort: 2018-Dec-29
+:END:
+
+I've seen basically this game before, though typically it's flipped where the lowest positive integer untied wins, which allows for an unbounded number of players and potential winning numbers. Actually, it may have been played on this very subreddit, though I don't recall what they called it or when that was.
+
+For a fixed number of players, there is definitely a unique mixed strategy equilibrium, where the most winningest number (5, in your version) is played with the highest probability, and some sort of decaying probability on the next few, which if you put forth the effort could probably be solved explicitly using standard Game Theory techniques, but will take a bit of effort, and would be different for each number of players.

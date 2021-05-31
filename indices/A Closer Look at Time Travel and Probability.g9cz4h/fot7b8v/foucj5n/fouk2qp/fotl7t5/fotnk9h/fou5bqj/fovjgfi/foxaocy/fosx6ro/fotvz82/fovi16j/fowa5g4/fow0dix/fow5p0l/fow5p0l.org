@@ -1,0 +1,34 @@
+:PROPERTIES:
+:Author: endlessmoth
+:Score: 3
+:DateUnix: 1588113488.0
+:DateShort: 2020-Apr-29
+:END:
+
+#+begin_quote
+  At this point the text seems to assume that when splinting there is a chance of 1/2 for either red or blue.
+#+end_quote
+
+Yes. I find this imminently reasonable and alternatives unparsimonious (and it affect the core reasoning much at all.)
+
+#+begin_quote
+  Even more confusing to me, wouldn't outputting nothing also be a valid reality when you splint? You say you will press the button for whichever light turns on but when no light turns on you press no button so there is no paradox.
+
+  Again, another valid outcome seems to be that when you commit to crashing no light turns on. This way you cannot crash, you just disable the device because any further output would lead to a crash.
+#+end_quote
+
+This is a sloppiness in my post. However, this objection has been raised on the discord, and on more careful analysis I find that it's mostly a technical issue. First of all, the device never, ever flashing again requires the device to always pick one option from a set of three every time for the rest of time, and the probability of this happening converges to 0, making it impossible in certain models (e.g., WBR; the spf goes to 1). In models where it's still possible, you can hack in (as I did in the Alice & Bob example) a special button which forces one of the lights to come on regardless.
+
+#+begin_quote
+  Even with my best intentions of splinting there would be a small chance in the spur of the moment that I would decide to crash thus there cannot be any output.
+#+end_quote
+
+I'm not sure the reasoning works even if we don't hack in a special button. Why does the device care about such small probabilities?
+
+Either the universe is assumed to be deterministic or nondeterministic. If it's deterministic, great: it's a fact of the matter whether you will crash or not in a counterfactual world. If it's not deterministic, then just as there's a chance you might crash, there's an opposite chance you /won't/ crash.
+
+Like, flip your reasoning around:
+
+#+begin_quote
+  Furthermore, I suspect that if I (or really any human) had the device then after understanding how it worked it would always output something again either because I simply could not with absolut certainty commit myself to crash. Even with my best intentions of crashing there would be a small chance in the spur of the moment that I would decide to splint thus there must be some output.
+#+end_quote

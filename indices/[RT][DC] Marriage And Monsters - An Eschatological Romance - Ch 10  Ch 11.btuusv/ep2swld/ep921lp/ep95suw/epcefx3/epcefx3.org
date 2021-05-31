@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1559153290.0
+:DateShort: 2019-May-29
+:END:
+
+I /think/ that the problem is caused by AO3's auto-formatting, which will render italics like this:
+
+#+begin_example
+  He had</span>
+   <span><em>malicious intent</em></span>
+   <span>, that
+#+end_example
+
+And the interpreter sees those spaces that it put in there before the =<span>= there and thinks "oh, there's a space between those words and that comma. To fix this, you can collapse the HTML down, like so:
+
+#+begin_example
+  He had</span><span><em>malicious intent</em></span><span>, that
+#+end_example
+
+Which usually fixes the problem, as there's no longer a space there.

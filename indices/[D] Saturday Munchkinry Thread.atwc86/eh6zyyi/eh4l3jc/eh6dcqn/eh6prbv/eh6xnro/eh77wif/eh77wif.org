@@ -1,0 +1,31 @@
+:PROPERTIES:
+:Author: Palmolive3x90g
+:Score: 1
+:DateUnix: 1551043131.0
+:DateShort: 2019-Feb-25
+:END:
+
+#+begin_quote
+  What counts as an object?
+#+end_quote
+
+A object is anything you mentally consider a single item or being that is completely inside your area. So if you would normaly perceive a wallet and the money it contains as all one item the it is only a single object but if you think they are separate each bit on mony would be it's own object.
+
+I know that definion is a little vague but it is mainly there to stop people makeing a small object intangible to it self.
+
+#+begin_quote
+  How specific is this list of objects?
+#+end_quote
+
+The only info you get is the location. The list would look like this.
+
+| Object | coordinates (x,y,z) |
+|--------+---------------------|
+| 0001   | (1,2,0)             |
+| 0002   | (2,2,0)             |
+| 0003   | (1,2,1)             |
+| 0004   | (1,2,2)             |
+| 0005   | (2,2,2)             |
+| 0006   | (5,3,3)             |
+
+An object being destroyed or leaveing the area casues it to be deleated from the list and object being create or entering in the area are apended to the list.

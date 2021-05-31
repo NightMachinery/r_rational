@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: crispin1
+:Score: 1
+:DateUnix: 1592771475.0
+:DateShort: 2020-Jun-22
+:END:
+
+Sorry reading your post again ... The library call that put the leaves in the water invalidated the pointer. Once she tried to discard the object referenced by the invalid pointer, nothing means what it's supposed to any more, so there's no point in trying to figure out whether she put a teaspoon of miniature cups into the water, or whether she just thought she did, and what that would even mean in any case... it's undefined behaviour.
+
+I hope that's a vaguely satisfying explanation?

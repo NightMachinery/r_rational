@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: Lugnut1206
+:Score: 2
+:DateUnix: 1592769330.0
+:DateShort: 2020-Jun-22
+:END:
+
+What specifically went wrong with the little tea cups?
+
+I've read the scene several times and I'm trying to figure out how she /overwrote/ the old tea leaves with tea cups.
+
+Is it because =tea= was referring to unused leaves, used leaves, and the actual drink (contained in the cup) and so the latest assignment to =tea= was the drink... and then "the value stored at =tea=" was used to overwrite the leaves?
+
+This all sounds good to me, I'm just not clear why she tried to /write/ =tea= to the leaves, nor how she decided to choose some... what, library call(?)... that would overwrite the existence of the leaves (rewrite their molecular makeup?) with =tea= rather than... just physically moving the leaves to the trash similar to the toy game (which I'm realizing now has a simplified interface) or the apples?
+
+On top of that, the reference to the old tea leaves was destroyed by updating =tea=, right? how would it know to write the /new/ value of =tea= to the old object /referred to/ by =tea=? Race condition?
+
+I think the main error you were trying to call attention to was referring to many things by the same name, as well as demonstrate the existence of the... exception handler watchdog (can you interact with it to learn more details about the error? or do different colors refer to different kinds of thrown errors, blue=bad memory access, red=undefined behavior, etc)
+
+I have a background in this field, so if you feel like answering, feel free to use a more technical answer, thanks

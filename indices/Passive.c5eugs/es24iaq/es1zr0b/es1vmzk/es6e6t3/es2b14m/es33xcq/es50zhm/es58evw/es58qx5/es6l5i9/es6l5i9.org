@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: sykomantis2099
+:Score: 2
+:DateUnix: 1561651773.0
+:DateShort: 2019-Jun-27
+:END:
+
+Well you're half right. AIs do need a lot of data... the first time. Unfortunately, it was recently [[https://www.psychologytoday.com/us/blog/the-future-brain/201905/new-ai-method-cuts-deep-learning-training-69-percent?amp][discovered]] that an AI, that has already been initialized, trained, and pruned, can be easily and quickly trained on a new dataset for a new purpose, just by taking the nodes from the final version and training them on the new dataset using the corresponding starting weights from when it was trained the first time, and you'll get a newly repurposed AI with roughly the same level of accuracy as the original in a fraction of the time.
+
+The scary thing about this is that the AI performs at the same level of accuracy /regardless/ of the type of data used for the initialization: as long as the number of inputs in the input layer remains the same, you can train the AI on something incredibly easy, then repurpose it for something incredibly hard and still get the same level of accuracy as on the easy thing!
+
+So, all you would need is an accurate autoencoder to translate an input of arbitrary size into an input of the correct size and you could apply such an AI to practically anything, including human thought processes, as long as you have some way of encoding it, because you can use the same process outlined above to *train the autoencoder*.
+
+Okay, I'm glad I'm arguing with you because this line of thinking is giving me all kinds of insights and I'm going to stop now because otherwise I'll never stop typing and I have a lot to think about now so thanks!

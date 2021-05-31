@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: GeneralExtension
+:Score: 1
+:DateUnix: 1555558295.0
+:DateShort: 2019-Apr-18
+:END:
+
+#+begin_quote
+  What aspect(s) make a game Turing Complete?
+#+end_quote
+
+You can implement a computer/turing machine inside the game.
+
+For an example in a card game there's [[https://www.toothycat.net/%7Ehologram/Turing/HowItWorks.html][Magic the Gathering]]:
+
+One may set up circumstances such that if the rules are followed, a computation will be carried out, and gameplay (involving player choices) may resume after the computation is complete. (They didn't end up making this work without additional constraints like "if a card says you may do something then do it".)
+
+How is this Turing complete? I imagine this wouldn't have been possible if there wasn't a way to produce arbitrarily large armies. (For the turing machine's infinite tape.)

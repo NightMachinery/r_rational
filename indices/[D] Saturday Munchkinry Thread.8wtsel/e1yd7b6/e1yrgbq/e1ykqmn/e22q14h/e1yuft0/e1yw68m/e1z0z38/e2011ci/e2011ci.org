@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: CCC_037
+:Score: 0
+:DateUnix: 1531054997.0
+:DateShort: 2018-Jul-08
+:END:
+
+One of the big problems for our talkers here is that they /do not know/ what resources the Eavesdropper has - anything they say, and code they transmit, might fall victim to a magic item whose purpose is to decrypt all encryptions (or that can be munchkinned to that use). Sure, the odds are low - but they are non-zero.
+
+So, there are two axes along which information can be measured. The first axis is how important it is for Friend to obtain the information you wish to share; and the second is how vital it is that Eavesdropper not know that information. Information that it is important for your friend to share but not vital for Eavesdropper not to hear must be sent; information that it is unimportant for your friend to know but vital that Eavesdropper not hear must not be sent. Information that is important for your friend to know immediately but also vital for Eavesdropper not to hear is where it gets tricky; one has to balance those axes against each other and against the odds of the information being decryptable.
+
+But the decryption is only half the problem. You /also/ want to be sure that the information that you send to Friend is correctly received, and not modified by man-in-the-middle attacks. Now, there are ways to handle this situation; and fortunately, both people trying to communicate already have a key (in the form of that memorised table) so Diffie-Helman isn't really going to give them anything more (it basically allows you, with much calculation, to add an extra row or two to that table - and can fail if any of the communication is altered midway). But, personally, I'd ignore the table. Rather, relate everything to things that happened in the character's shared pasts; if you want the other person to take some action, then describe rather the circumstances in which that action took place in the past without describing the action itself. Either the information goes through unmodified, or it gets changed - and if it gets changed by someone unfamiliar with your shared past, then it will get changed to something garbled, generic, and/or nonsensical. For added mystification, the communication need not refer to things that happened in the real world; a scene that took place in a fictional world know to both speakers but not to Eavesdropper (like, say, the /Harry Potter/ series) will also serve the purpose.

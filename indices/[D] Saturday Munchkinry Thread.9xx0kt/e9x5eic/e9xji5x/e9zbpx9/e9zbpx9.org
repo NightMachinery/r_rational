@@ -1,0 +1,38 @@
+:PROPERTIES:
+:Author: chlorinecrown
+:Score: 3
+:DateUnix: 1542564448.0
+:DateShort: 2018-Nov-18
+:END:
+
+Draw a circle, creates hemisphere of antigravity within. Topologically speaking, so you can draw arbitrary shapes. Height determined by two nearest neighbors.
+
+EDIT: [[https://www.youtube.com/watch?v=AmgkSdhK4K8&feature=youtu.be&t=232]]
+
+Kinda like this, but just don't draw the "z" point if the midpoint between the two points lies outside the shape.
+
+If on a slope, the height above the ground for any given point is at a right angle to the shortest line that connects two points.
+
+The pen required draws 5cm, if any 5cm point is touching three places, the whole thing fails, ie, no overlapping, no pinching off. If the maximum distance between any two points >3m, the whole thing fails.
+
+"Fails" means no change on gravity, it's just normal ink on the ground. It gets pretty easy to rub off when it gets wet
+
+If there is one hole, the zone instead gets 2x gravity, but inside the hole is normal gravity. Another hole inside that hole will cause normal gravity in the one outside and the hole becomes the new exterior boundary.
+
+If there are two holes, 2x antigravity. Odd numbers, gravity goes down, positive it goes up.
+
+| Holes | Multiple of Gravity |
+|-------+---------------------|
+| 0     | -1                  |
+| 1     | 2                   |
+| 2     | -2                  |
+| 3     | 3                   |
+| 4     | -3                  |
+
+etc
+
+1) You find a marker with this power. You don't know the rules. How might you discover them?
+
+2) These become really easy to find, and there are plenty of guides for how to use them. Say you can summon them by drawing some pretty simple shape that takes 3 minutes to complete if you get fast at it, ie, they're extremely difficult to create by accident, but also extremely difficult to prevent someone who wants one from getting it. What happens?
+
+3) Same as 2) but this happens in 2000 BCE. How does society evolve?

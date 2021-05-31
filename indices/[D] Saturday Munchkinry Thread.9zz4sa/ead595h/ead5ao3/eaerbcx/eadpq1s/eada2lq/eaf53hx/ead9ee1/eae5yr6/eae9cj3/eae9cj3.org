@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: bacontime
+:Score: 1
+:DateUnix: 1543103449.0
+:DateShort: 2018-Nov-25
+:END:
+
+You'd need to completely overhaul the magic system for that patch to work. In addition to what silverswift mentions:
+
+- The weight you can tap is a function of both /how much/ you are tapping and /how long/ you are tapping. So if your descent path takes less time than your ascent path, you can overcome whatever potential-energy based limiters are put in place.
+
+- Gravity is not the only source of potential energy. Suppose that the feruchemist is hooked up both to some sort of counterweight, +and to a large vertical spring+. The proposed patch only prevents pumping energy out of the counterweight. +You can still pump energy out of the spring.+ (Edit: NVM. I can't get the math to create extra energy with a spring that isn't just equivalent to gravitational potential. But there are definitely ways of pulling energy out by increasing speed in motion, so the general point stands.)
+
+So it's not as simple as simply imposing an energy cost as a function of height. The magic would have to look into the future, calculate your path, and impose a cost based on every energy gradient you will encounter.

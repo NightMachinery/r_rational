@@ -1,0 +1,126 @@
+:PROPERTIES:
+:Author: SevereCircle
+:Score: 2
+:DateUnix: 1588101661.0
+:DateShort: 2020-Apr-28
+:END:
+
+I'm still reading, but while I'm reading, this example comes to mind:
+
+Turn the dial on the device so it is configured to send information back one second in the past. Flip a coin. Wait ten seconds. If it was heads, clap your hands three times. If it was tails, crash. In which of your models does this force the coin to come up heads*?
+
+*except with the probability that you somehow fail to crash because your hand slips or something: let's just call that probability epsilon if it becomes necessary to consider
+
+I'll try to answer myself if I finish reading the post before you get read and answer this comment.
+
+--------------
+
+edit 1:
+
+I follow Path Realism. It leads to bizarre things but I understand the definition, I think.
+
+Local Branch Realism:
+
+#+begin_quote
+  The intermediate is more interesting: if you, as in the original experiment, splint and then splint again and crash if both splints come out red, then half the time the first splint will come out red, but if the first splint comes out blue, the next one always comes out red. In numbers, the possibilities are p(red,red) = p(red,blue) = 1/4, and p(blue,red) = 1/2.
+#+end_quote
+
+I would understand if it said "if the first splint comes out red, the next splint always comes out blue" but as written I don't understand what you mean.
+
+--------------
+
+edit 2:
+
+Weighted Branch Realism
+
+Do static paradox fraction and intrinsic probability correspond to the prior and posterior probability distributions in TimTravel's post, respectively or the other way around (other way around: spf = posterior and ip = prior)? Or do they not correspond at all?
+
+--------------
+
+edit 2b: No, they don't correspond. +Reroll realism is equivalent to TimTravel's system though. Pretty sure.+ (later edits: it's not)
+
+--------------
+
+edit 3:
+
+Alice and Bob: I assume Bob also consults his device to see where he should look and crashes if he looks in the wrong place. Is that the case?
+
+--------------
+
+edit 4:
+
+Surely the "time force" effectively works differently under the different models?
+
+#+begin_quote
+  An obvious corollary to all this is that TIME FORCE is almost never relevant. If you had a bigger device that spat out 32 red/blue pairs at a time, you could predict the lottery without worrying about time force.
+#+end_quote
+
+Under +reroll realism+ TimTravel's system, if Old Man Wek has a policy to crash unless he win the lottery, and he has a 1% chance of death on the day he buys the ticket (he is very sickly in this hypothetical) then he will almost certainly die. See [[http://www.scp-wiki.net/scp-988]] for a similar thought experiment.
+
+#+begin_quote
+  That said, it's in some models the case that the most probable timelines are the ones in which time machines are never invented. In Local Branch Realism, this is not true (unless some bad actor arises in every single timeline and causes paradox. Time Beast, anyone?). In Path Realism, this is again never true without positing a Time Beast. However in WBR and RR, it's more or less true. In general, timelines with fewer instances of retrocausation are more likely, only because instances of retrocausation are a proxy for instances of paradox. Now, if paradox are rare, this argument would be weak. (But to be fair, most meaningful uses of time travel require copious paradox; it's the oil in the engine.)
+#+end_quote
+
+I agree. This is consistent with what I said on the r/r Discord about TimTravel's system, which is (roughly?) equivalent to reroll realism. (later edits: it seems not to be)
+
+--------------
+
+edit 5:
+
+#+begin_quote
+  But from that, it follows that the odds of TIME FORCE acting over an interval of time is proportional to the length of that interval. (It's at least linear. It might be super-linear.)
+#+end_quote
+
+I think it tends to increase with the duration of the interval but it depends on how many cosmic coins are simulated in the simulation of the universe during those intervals. In practice under most fictional settings I think it would increase monotonically (but not linearly) with the duration of the interval. It /can't/ increase linearly, otherwise eventually the probability it affects the interval would be greater than one.
+
+I only understand what "time force" means in TimTravel's system. I'm not sure what it would mean in the other models.
+
+#+begin_quote
+  One common confusion which leads people to overstate the importance of TIME FORCE is the fact that parallel universes and timelines aren't necessarily the same thing.
+#+end_quote
+
+Interesting. I will end this edit now and continue reading.
+
+--------------
+
+edit 6:
+
+#+begin_quote
+  when it comes up heads, you take the strange device and force blue splints a million times
+#+end_quote
+
+If you mean "force blue a million times" I follow. I don't know what "force blue splints" means if not that.
+
+--------------
+
+edit 7:
+
+#+begin_quote
+  Viz. if you do a quantum coin flip and, when it comes up heads, you take the strange device and force blue splints a million times, or, when if the q-coin comes up tails, you force red only once, the odds of seeing blue/red could be 50/50. I.e., by default, half the time there's 50% chance of a 100% chance of seeing blue, and a 50% chance of a 100% chance to see red.
+#+end_quote
+
+I don't follow where the parentheses go on this case. Can you rephrase?
+
+#+begin_quote
+  The story is only necessarily different if instead of a quantum coin, you flip a time coin; i.e., cause a splinterpoint. When you do this, it's the... the exact same story in Path Realism and Local Branch Realism, but in Global Branch Realism and Restart Realism, the blue branch has a vastly smaller probability.
+#+end_quote
+
+(I assume restart realism = reroll realism.)
+
+If this is true, then reroll realism is NOT equivalent to TimTravel's system, because in TimTravel's system flipping a coin and flipping a "time coin" are equivalent. Therefore if this is true then I do not understand what reroll realism is.
+
+--------------
+
+edit 8:
+
+#+begin_quote
+  She's getting impatient, and yanks out her user manual. The culprit's there: it's said the devices exhibit a phenomena called "paradox aversion"; where if the chance of paradox is too high, it's just vastly more likely for no prediction to happen. But there's a special override button at the back, pressable with a needle, which forces the device to yield a prediction, paradox be damned. Alice decides to try to press it.
+#+end_quote
+
+This is a different version of the device than the original, and it is unclear to me how to define the probability of a paradox in each of your models. I would appreciate clarification. Suppose you're in TimTravel's system and you have the device and you intend to straight-up always crash. Something will stop you. If the initial configuration of the universe is one where you already have the device and have that intention, your finger will slip and you'll push the wrong button, or your brain will randomly decide to break your original intention and you'll push the right one. Or somebody else will push the right one by coincidence. If the initial configuration of the universe is not one where you already have the device, you'll probably never get your hands on one. This is for the original device, without the paradox prevention feature (and I repeat that I don't know how that would work).
+
+--------------
+
+edit 9: I am not sure whether I agree or disagree with your section on Bound Time Travel and Free Time Travel, because of the issues above.
+
+I am now done with my first pass through the post. Knowing myself, within a few minutes I will probably think of another issue to bring up in another edit, but I've at least read it all now.

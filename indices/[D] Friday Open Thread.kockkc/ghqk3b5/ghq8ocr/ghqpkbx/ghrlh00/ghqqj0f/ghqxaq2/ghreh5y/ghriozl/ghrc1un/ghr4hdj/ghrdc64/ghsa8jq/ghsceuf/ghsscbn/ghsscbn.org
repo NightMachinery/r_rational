@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: LongjumpingHurry
+:Score: 3
+:DateUnix: 1609563473.0
+:DateShort: 2021-Jan-02
+:END:
+
+#+begin_quote
+  "100% of the 28 studies to date report positive effects" raises some red flags. For p=0.05 there's only a 23.8% chance of all of them being positive, even if all factors were the same throughout.
+#+end_quote
+
+23.8% seems like the probability of getting 28 true negatives out of 28 true null hypotheses (with a 76.2% chance of at least one false positive).
+
+For what you're trying to calculate you need the true positive rate of the tests (the "statistical power"). (Power is often lower than the significance level, so it could reflect even more poorly on the matter.)

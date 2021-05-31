@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: phylogenik
+:Score: 1
+:DateUnix: 1529985770.0
+:DateShort: 2018-Jun-26
+:END:
+
+Just caught up on Westworld! Pretty fun stuff, though I think I liked S01 more. Some quick, snarky, spoiler-y speculation:
+
+When trying to estimate the eleven thousand lines of parameter values of whatever for the behavioral models of each of the guests, they really shouldn't have bothered with perfect retrodiction in silico -- I think this is why James-Delos-bot bugged out so quickly in the physical world (/test set), because the fitted model was trying to make predictions out of sample (either because of the complexity of the real world, or b/c by construction model was never trained on his fancy designed-by-apple hotel suite), which when overfit af it's gonna have trouble with. I think they even confirmed this with their "human sanity occupies a narrow band, most possible consciousnesses are batshit" line. They should have tried fitting a multilevel model to all the guests, to adaptively regularize a prior distribution describing the range of plausible human personality (i.e. estimate the hyperparameters describing human behavior as a whole, or at least the cross section of rich people able to visit the park). Maybe then they could have avoided the seemingly inevitable breakdown.
+
+Of course, if they're making basic Stats 101 mistakes like that, their model probably sucked to begin with. I guess it worked well enough for the non-inferred hosts, though? Maybe "good" parameter values were just selected by hand for those, or else they were running on an entirely different model (they did have differently shaped positronic brains, right? The white tennis-ball-sized thing vs the shiny dark marble? Although I guess the former might have just been a casing for the latter).

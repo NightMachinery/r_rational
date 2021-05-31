@@ -1,0 +1,33 @@
+:PROPERTIES:
+:Author: suyjuris
+:Score: 13
+:DateUnix: 1582485646.0
+:DateShort: 2020-Feb-23
+:END:
+
+Thanks for the analysis! Back then I was thinking that one could use standard machine learning loss functions to score the predictions, which I just did:
+
+#+begin_example
+     Name            All      All(adj) MoL      MoL(adj)
+   1 sparkc             12.08     9.97     6.14     4.03
+   2 Hakurei06          14.73    12.37     7.29     4.92
+   3 bpgbcg             14.41    13.54     7.42     6.55
+   4 RANDOM             16.64    14.27     9.01     6.64
+   5 tjhance            16.03    15.12     9.22     8.31
+   6 Shemetz            17.98    15.62    10.37     8.00
+   7 suyjuris           18.04    15.84    10.11     7.92
+   8 OldIronEyes        17.03    16.07     9.40     8.44
+   9 quapmo             17.78    16.47    10.40     9.09
+  10 Makin              18.52    17.06    11.95    10.48
+  11 Calsem             20.01    18.87    10.08     8.95
+  12 hallo_friendos     20.04    19.44    12.42    11.81
+     /r/rational        12.91    11.93     6.97     5.99
+#+end_example
+
+Overall, [[/u/sparkc]] is the clear winner, regardless of the details of scoring. Also, I added RANDOM, which just picks an outcome at random. (The metaphorical “monkey with a typewriter”.) So, congratulations to [[/u/Hakurei06]] and [[/u/bpgbcg]] as well, for being better than randomness.
+
+Details for the interested: This is using cross-entropy loss, so lower values are better. I used random guessing for predictions that have not been made. The MoL columns only include Mother of Learning related predictions. All predictions are based on binary classification (i.e. yes/no predictions), except for the (adj) scores, where the red robe predictions are multiclass classification (i.e. red robe is Veyers/Jornak/.../Fortov).
+
+EDIT: I should mention that I did this just now, so there may be bugs and the numbers might be all wrong.
+
+EDIT2: Added [[/r/rational]], which is the average of all predictions. Only second place!

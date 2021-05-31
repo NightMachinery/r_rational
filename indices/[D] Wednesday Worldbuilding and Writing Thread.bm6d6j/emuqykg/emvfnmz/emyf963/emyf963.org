@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1557435625.0
+:DateShort: 2019-May-10
+:END:
+
+I actually think that I might just go =mass * volume=, given in gram milliliters (gmL), or larger, kilogram liters (kgL). A gallon of water would be 14.3 kgL, for example. Cost for "personal" inventory goes up by the square of the kgL capacity (plus some base static cost), and input/extract time is a function of how much the item takes up the kgL capacity.
+
+(We can imagine that volume is accounted for by a wrapping effect, an aether equivalent to a water displacement test to find volume.)
+
+So, just to pin some numbers on it, a personal inventory with 15 kgL capacity costs $100+$10, and if you're completely filling it, it has an input/extract time of 10 seconds, or an input/extract time of 5 seconds if you're half filling it. Going up to 30 kgL capacity costs $1000+$10, while going down to 7.5 kgL capacity would cost $10+$10.
+
+There are a few things I don't quite like about this formulation:
+
+1. It would probably be better for time to be sloped, so that less than a tenth of capacity is effectively instant, and almost at capacity is somewhat time consuming. That makes for better drama in a few ways.
+2. The slope might be a little bit too harsh in terms of cost. Right now, incentive is to have a bunch of these things, and anything you want to carry broken into parts as much as possible.
+3. Calculations are pretty much a pain in the butt and not very intuitive. It's /interesting/ that you have incentive to make things as dense and light as possible, but if I would probably want to do a bunch of pre-computing for common objects if I were ever going to use this system to write with.

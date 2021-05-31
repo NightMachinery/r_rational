@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: Norseman2
+:Score: 1
+:DateUnix: 1560067698.0
+:DateShort: 2019-Jun-09
+:END:
+
+For reference, the actual volume within that shell would be about 10.2 billion cubic kilometers, so you'd have about 1.02 × 10^{25} nanometer-cube-sized spaces within the shell. Each cube would need to specify a position to nanometer precision, plus a list of elements by percentages (to what precision?), and the combined mass of the contents of the cube in grams (to what precision?). Without specified precision it's hard to say exactly how large this would be, but the upper limit should be an exact specification of the number of atoms of each element. For that, we'd be looking at something like less than 100 bytes for each cube depending on how many different elements are present. That leaves us with 1.02 × 10^{27} bytes of data. So, that's maybe a billion times more than the combined data storage capacity of all devices on Earth at present.
+
+You could exploit the data fairly effectively for mining if you just ask for millions or billions of nanometer-sized areas scattered around the world at positions that would place them underground in a location that you would be able to buy mining rights in. That gives you little samplers of the exact geological composition so you could easily locate ore deposits, precious gems, groundwater, oil reserves, etc. Basically, use a stochastic search. You could also, conceivably, build your own hierarchical summary based upon stochastically-collected data to help you analyze the best locations for setting up mines.

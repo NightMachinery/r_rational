@@ -1,0 +1,31 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1538241577.0
+:DateShort: 2018-Sep-29
+:END:
+
+Let us assume that the RNG is indeed random.
+
+Major issue: there is no such thing as a perfect unbiased RNG. And even a /tiny/ amount of error in the RNG, or in the display, or in the stack, etc, makes your results wrong.
+
+Let's take your example:
+
+Phone displays all 10-digit numbers - 0000000000 through 9999999999. Or 10^{10} total. To assign each unique probabilities adding up to 100% as far away from each other as possible, you assign the first 1/N, the second 2/N, ... 10^{10}/N. N here is 1+2+...+10^{10}, or ~5*10^{19}. (Not quite true, but close enough.)
+
+So we need to be exact within 2 parts in 10^{20}. For comparison, this is like measuring the diameter of the moon's orbit down to the size of a hydrogen atom.
+
+We don't have RNGs this good. Even if we did, there's enough random noise that you won't be able to measure it accurately enough.
+
+(Consider for instance if the chance of a cosmic ray causing a bitflip was different turning a 1->0 then a 0->1...)
+
+--------------
+
+#+begin_quote
+  What is the chance that this computer will show the number I will eventually know is the killer's phone number?
+#+end_quote
+
+Is the chances of you knowing - falsely or truly - that a certain phone number was the correct one dependent on the phone number?
+
+--------------
+
+You can certainly squeeze out a fair number of bits of entropy from it. But not to this level.

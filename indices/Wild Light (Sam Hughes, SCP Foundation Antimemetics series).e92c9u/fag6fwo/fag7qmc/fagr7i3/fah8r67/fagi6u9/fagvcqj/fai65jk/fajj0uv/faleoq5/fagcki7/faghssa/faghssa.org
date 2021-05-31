@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: Norseman2
+:Score: 8
+:DateUnix: 1576055633.0
+:DateShort: 2019-Dec-11
+:END:
+
+I'm not sure how viable any of that would be with biological neural networks, but it definitely seems extremely challenging. Furthermore, the time required to grow, test and debug such approaches would likely be centuries at least, even if you set aside the ethical concerns regarding such experimentation.
+
+A better approach might be to have an extremely high-density FPGA-based artificial neural network serving as a brain emulator. [[https://www.frontiersin.org/articles/10.3389/fnins.2018.00213/full][This study]] was able to model 2.6B neurons in real-time on a Stratix V FPGA. A cluster of 32 of those would just about get you to the number of neurons in a human brain, and a cluster of 64 would just about double the number of neurons. While it seems possible to emulate human brains with current technology, it's definitely too pricey to implement on a wide scale at present (~$6K/Stratix V), but within the next two to four decades at current rates of development we will probably have affordable FPGAs with enough programmable logic blocks to emulate human brains. From there, theoretically all you'd need to do is learn to reliably install neural interfaces and then use the data from volunteers to train the neural networks to act as brain emulators, taking the same sensory inputs and learning to produce the same motor outputs.
+
+Once you have viable brain emulators, it should be fairly easy to add a secure backup/revert system, and challenging but probably feasible to add monitoring systems to identify certain conditions which would require a revert and then carry it out automatically, as well as the possibility of emulating drug effects or carrying out specific brain modifications. For one easy example, this kind of setup could conceivably enable the detection of a seizure within milliseconds and then revert to the last backup from 5 seconds ago while adding the effect of an anti-epileptic medication as if it were immediately administered prior to resuming brain function. You'd then get a little popup in your visual field indicating that you just recovered from a seizure and lost 5 seconds of memory, but at least you're not dead or injured.
+
+In the hypothetical scenario of overwhelmingly potent and rapidly-acting mind-subversion memes, the sudden and drastic changes in the mental model between backups should make it relatively easy to identify and trigger an automatic revert. Slower and insidious changes would still be a threat, as they always have been with cultural memetics, so that's a far harder problem to address in a reasonable manner.

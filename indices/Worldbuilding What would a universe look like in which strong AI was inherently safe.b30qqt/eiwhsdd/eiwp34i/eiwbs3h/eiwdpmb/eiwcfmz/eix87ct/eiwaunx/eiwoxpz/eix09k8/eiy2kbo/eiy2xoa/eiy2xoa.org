@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: Wereitas
+:Score: 3
+:DateUnix: 1553074617.0
+:DateShort: 2019-Mar-20
+:END:
+
+And it's worth pointing out that you can't solve the problem of solipsism by adding extra layers.
+
+The instinctive response is to say that the AI cares about paperclips AND long-term survivability. But long-term survivability isn't an input you can feed to a CPU.
+
+So "long-term survivability" actually becomes "the output of the long-term-survivability sensor".
+
+Similarly, if you want to limit source code edits, you're having the utility function depend on the output of the source-code-verification sensor.
+
+Hacking 2 sensors (or even the method that calls the sensors) will always be easier than turning the entire universe into paperclips.
+
+In fact, a reasonable dev team probably built some sensor-hacking code directly into their unit test suite. There are a whole bunch of libraries ('Mock') designed to make this easy.

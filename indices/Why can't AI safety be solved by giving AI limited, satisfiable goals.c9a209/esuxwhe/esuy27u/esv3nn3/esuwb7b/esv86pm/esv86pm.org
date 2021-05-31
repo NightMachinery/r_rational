@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: jtolmar
+:Score: 10
+:DateUnix: 1562295228.0
+:DateShort: 2019-Jul-05
+:END:
+
+This is a useful safety mechanism but it's nowhere near sufficient.
+
+A task-oriented AI will pursue the most effective / fastest / easiest method towards reaching its goal. What method follows those criteria is unknown - when we're talking about AI safety we're generally talking about a hypothetical AI that is smarter than you, so its methods may be something you'd never have thought of.
+
+This leads to several confounding problems:
+
+1. The options on the table will surprise you. We always have hidden assumptions about acceptable goals, which are fine among humans who generally agree on these things, but need to be manually programmed into a goal. A tetris-playing AI learned to pause the game when it's about to lose so it won't lose. An AI tasked with piloting a robot to fetch a ball might decide to sit still until a researcher decides its buggy and brings the ball closer to debug sensors, then go for it. You can win at American Football by hospitalizing everyone in the other team as long as one of your players doesn't participate. You can kill any virus (or cancer) by killing the patient.
+
+2. What's easy may be surprising. Clever solutions change what's easy or even possible. If something like self-replicating nanomachines turns out to be unexpectedly easy, that opens up a lot more solutions with large amounts of collateral damage. Self-replicating computer viruses /are/ easy. Building a smarter AI may be on the table.
+
+3. The goal itself may be surprising. Transcription errors happen. You may specify to make ten paperclips, specify the volume and mass of a paperclip in the process, and make an error that requires the "paperclip" to be made of denser, radioactive isotopes. The more complex the goal, the more numerous and subtle errors are available.
+
+Finally, task-oriented AI does not prevent excessive followthrough. Tell an AI to pilot a robot to a location as fast as possible, and the robot will accelerate all the way to that location, then go careening off in whatever direction because the task is over. In this very simple situation you can update the goal to be "stop at this point," but with more complex and useful goals the stopping criteria becomes arbitrarily complex. You can't just add "without side-effects" because that's no longer a task-oriented AI, it has a permanent goal.
+
+Excessive followthrough is particularly bad for any task where the easiest solution is to build a smarter AI to figure it out. If the goal is to make one million paperclips, and the AI decides to build a smarter AI to figure it out, the first AI can skip some unnecessary coding work (making its job easier) by skipping the "one million" limit and just building a paperclip maximizer. The maximizer will make one million paperclips on its way to filling the universe with them, so the original task-oriented AI has solved its goal.

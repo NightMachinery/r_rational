@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 6
+:DateUnix: 1561599045.0
+:DateShort: 2019-Jun-27
+:END:
+
+This assumes something like this can exist. It assumes severe enough security flaws in human minds exist, and that they are universal enough or it is possible to find out which flaws a particular human have. This might not be correct.
+
+​
+
+For a toy system analogy, imagine a very simple system that will not give up information unless a particular binary number is sent to it. All it is doing is a simple while(1) get_incoming; if incoming.code.valid() break;
+
+​
+
+Something like that can't be cracked remotely even by a "sufficiently advanced super-hacker", assuming the length of the required code number is long enough to be un-guessable.

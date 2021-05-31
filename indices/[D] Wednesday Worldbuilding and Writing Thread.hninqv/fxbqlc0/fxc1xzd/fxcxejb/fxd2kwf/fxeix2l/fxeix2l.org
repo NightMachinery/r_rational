@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: jtolmar
+:Score: 2
+:DateUnix: 1594282375.0
+:DateShort: 2020-Jul-09
+:END:
+
+What kind of map are you trying to get out of it? If you just want a mostly-reasonable looking heightmap / coastline, most terrain generation programs are just adding up a bunch of octaves of Perlin noise, which you can actually do in Gimp.
+
+Take the image, cut out the part you want, transform it to mostly get rid of the bending, scale up a bunch, recolor it to a greyscale heightmap (use select by color and paint bucket whole selection), blur it, render simplex noise to a new layer (you may want to do this multiple times and merge them for more detail), set layer to add and lower the opacity, merge (probably do this on copies), posterize back down, maybe recolor back.
+
+[[https://i.imgur.com/xqsbNMy.png][Here's what that looks like]]. You'll get different results, and tweaking it yourself will let you get more of what you want.
+
+If I were to spend more time on it, I'd do something about the grid lines (probably painting over them by hand earlier in the process), and try to make more of the land detail limited to the coastlines (starting with using a bigger blur in that step).

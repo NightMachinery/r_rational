@@ -1,0 +1,34 @@
+:PROPERTIES:
+:Author: Nimelennar
+:Score: 2
+:DateUnix: 1588468674.0
+:DateShort: 2020-May-03
+:END:
+
+I am now going to go into a rant about why "IQ" is garbage, beyond its narrow definition of "intelligence." Let's start with some statistical theory.
+
+There's a phenomenon in statistics called the "central limit theorem." The basic idea is that if you take a lot of random samples of a particular data point (let's say, the height of a person), in such a way that one data point doesn't affect another data point, you'll end up with a normal (or Gaussian) distribution. So, your height data will probably show that the mean height is very close the the median height, that most people are close to being the mean height, and that the further you go from the mean height, the fewer data points you'll find.
+
+Normal distributions are very useful in statistics. For example, there was a poll done last year, that I think was right before the November US State elections. A pollster released one poll that was way out of tune with every other poll they'd done, they said, "Whoops," re-did the poll, and it came up as normal. But the first, outlier poll is exactly what you'd expect: every once in a while, you're going to get a statistical sample from that outlying region that is going to be much different than the others. That's just how statistics works. The outlying poll was a good sign that they were properly getting random samples, because any large-enough set of random samples should have outlying data.
+
+Why is any of this important to the IQ test? Because the IQ test is cheating.
+
+Good, random data, for a large enough sample should follow a normal distribution, and the designers of IQ tests know this. Therefore, they /design/ their tests to have a normal distribution (the mean and median are both 100, and the standard distribution is 15 points).
+
+"But, surely, this is good," you say. "That means that it's measuring something real!" That's... not how statistics works.
+
+If you rolled 10 dice, summed them up, and then repeated that a thousand times, [[https://www.wolframalpha.com/input/?i=10+dice+rolls][the results would follow a normal distribution]], clustered around the mean/median of 35, and tapering off to a minimum of 10 and a maximum of 60, and a standard deviation of about 5.4. That is, about 700 of the 1000 rolls would fall between 29 and 41. That's what you'd expect. It follows a normal distribution.
+
+But let's say you're only rolling one die, 1000 times. That probability distribution [[https://www.wolframalpha.com/input/?i=role+one+dice][looks different]]. It's not a normal distribution; every number has the same probability of being rolled. But let's say that someone /wanted/ the distribution to look random. Well, they could say, let's create a value called the Dice Quotient (DQ), and say that it is equal to (8 minus the square of (3.5 minus the die roll)). Suddenly, your 3s and 4s are worth 7.75, your 2s and 5s are worth 5.75, and your 1s and 6s are worth 1.25. Instant normal distribution!
+
+"But that's stupid!" you say. "You're not measuring what's really being rolled; you're just changing the numbers to make your results look like they fit a normal distribution!"
+
+That's what the IQ test does. It wasn't able to find a natural normal distribution, indicating an actual random process at work, so it /normalizes/ the process to make it look like it's found something inherent and randomly distributed (like height is).
+
+This, of course, brings us to the second problem with IQ, which is that the scoring for the test needs to be constantly updated. If more than 50% people are scoring more than 100 on a test, that means that the test needs to be re-normalized. If 50% of people score above 100, but more than 19% score more than 115 (or below 85), then the test needs to be renormalized. So far, this has happened to the WISC test [[https://en.wikipedia.org/wiki/Flynn_effect][multiple times]], with un-normalized IQ scores rising about 3 points per decade. So, in addition to not representing something random and inherent (but being manipulated to make it look like it does), your IQ score doesn't even represent anything inherent about you, it only has meaning in comparison to the rest of the population.
+
+Which should be obvious: if IQ is related to something genetic, then I wonder what kind of natural selection could possibly have occurred to raise the US national average IQ from 80 to 100 points in 65 years, from 1932 to 1997 (based on the 1997 test). Once again, a score of 85 is mandated by the test creation parameters to be the point that only 19% of the population will fall below, and this is 5 points /below/ that, and half of Americans wouldn't have made that bar in 1932. Was WWII really, really good at disproportionately killing stupid Americans, to the point that almost none of them were left to have grandchildren? No, of course not (and war didn't kill nearly enough Americans in that period to account for the discrepancy anyway).
+
+IQ is just a really, really, stupid, meaningless number. Really, if you took the test in 2003, time travelled to 2014, and took it again, you'd get a lower score, despite having /exactly the same intelligence/. That's how meaningless the number is.
+
+So, if I seem to be dismissive of using it as a metric to create a perfect leader, that's probably a large part of it.

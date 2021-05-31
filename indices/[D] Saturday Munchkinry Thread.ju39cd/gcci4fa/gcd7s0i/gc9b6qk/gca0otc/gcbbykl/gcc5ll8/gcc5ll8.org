@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: ErekKing
+:Score: 1
+:DateUnix: 1605413627.0
+:DateShort: 2020-Nov-15
+:END:
+
+The robot's hardware apparently is custom-built but if you have circa 80GB of RAM laying around, you could run a copy on that. It's possible to hook up cameras etc if you can get the drivers to interact with the camera you get - if it works on most Linux systems, you may need to jump through a few hoops as far as the custom software installed on the robot goes but it is achievable. More computing power beyond its basic requirements doesn't make it smarter, and you will need to improve the software if increased intelligence is the goal.
+
+The source code of all the programming is readable - output of the programs varies, such that e.g. you can loop what it sees with its eyes to a computer monitor but reading its thoughts of the “I think I'd like a hamburger for dinner” type will require careful study and interpretation of the logs.

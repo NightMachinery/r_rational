@@ -1,0 +1,40 @@
+:PROPERTIES:
+:Author: -Vecht-
+:Score: 1
+:DateUnix: 1530474317.0
+:DateShort: 2018-Jul-02
+:END:
+
+#+begin_quote
+  Transformation permits mass changes. Given a system of gravity that resembles human-observed behaviour, this can be used to generate arbitrary amounts of energy, because it's no more expensive to change mass from greater heights.
+
+  For a worked example, a magic-to-rotation engine design would be a vertical conveyor belt with a set of baskets attached. In each basket, we place one mouse. At the top of the belt stands a magician, who transforms mice into cows as they pass. At the bottom of the belt stands another magician, who transforms cows into mice. The weight of the cows turns the belt and carries the mice back to the top. The energy produced is proportional to the height of the belt, so you can make an arbitrarily large amount of energy from a fixed amount of MP.
+
+  If you don't want this class of exploits to be possible, you're going to need conservation of mass.
+#+end_quote
+
+#+begin_example
+  Cow: 600 kg, 2000 L 
+  Rat: 3 kg, 2 L
+  Delta kg: 587
+  Delta L: 1998
+  MP to transform: proportional to 2585 (not giving exact numbers but very expensive)
+  Time to transform: 2585 minutes (43 hours)
+#+end_example
+
+This is prohibitively expensive.
+
+#+begin_example
+  Cow: 600 kg, 2000 L 
+  Smaller Cow: 500 kg, 1700 L
+  Delta kg: 100
+  Delta L: 300
+  MP to transform: proportional to 400
+  Time to transform: 400 minutes (~7 hours)
+#+end_example
+
+Doable but also very expensive. Probably would require a lot of practice to get time cost down to more usable levels.
+
+At a height of 10m, the large cow has a potential energy of 60kJ. Lets say we can harvest 95% of that, so 57kJ. We then have to change the cow to a smaller cow (some amount proportional to 400 MP), and then hoist it back up, which will cost 49kJ. The energy gained is about 8kJ. Even with 400 MP, you could use Energy Burst to get 40kJ directly.
+
+Conclusion: Nope, sorry. :)

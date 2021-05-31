@@ -1,0 +1,90 @@
+:PROPERTIES:
+:Author: suyjuris
+:Score: 2
+:DateUnix: 1550346521.0
+:DateShort: 2019-Feb-16
+:END:
+
+It is so interesting to see your solutions :) I am kind of surprised how well educated guessing work. My own also gets to these equations
+
+#+begin_quote
+  45 = 1 * 6 + 4 * x1 + 6 * x2 + 4 * x3 + 1 * x4
+
+  17 = 1 * x2 + 3 * x3 + 3 * x4 + 7
+#+end_quote
+
+Which we can simplify to
+
+4 * x1 + 6 * x2 + 4 * x3 + 1 * x4 = 39
+
+0 * x1 + 1 * x2 + 3 * x3 + 3 * x4 = 10
+
+Dropping the variables gives
+
+#+begin_example
+  x1 x2 x3 x4
+   4  6  4  1 | 39
+   0  1  3  3 | 10
+#+end_example
+
+4 and 6 are even while 39 is not, so we have to use x4 at least once. So lets subtract that.
+
+#+begin_example
+       x1 x2 x3 x4
+        4  6  4  1 | 38
+        0  1  3  3 |  7
+       ------------+
+  used  0  0  0  1
+#+end_example
+
+7 cannot be divided by 3, so we have to take x2 at least once as well.
+
+#+begin_example
+        x1 x2 x3 x4
+        4  6  4  1 | 32
+        0  1  3  3 |  6
+       ------------+
+  used  0  1  0  1
+#+end_example
+
+If we were to use x4 once more, then 32-1 = 31 is odd again, so we would have to use x4 at least twice. It would look like this:
+
+#+begin_example
+        x1 x2 x3 x4
+        4  6  4  1 | 30
+        0  1  3  3 |  0
+       ------------+
+  used  0  1  0  3
+#+end_example
+
+Now the second row is zero, so we cannot use x2, x3 and x4 anymore. 30 is not divisible by 4, so this does not work, and we cannot use x4. Going back:
+
+#+begin_example
+        x1 x2 x3 x4
+        4  6  4  - | 32
+        0  1  3  - |  6
+       ------------+
+  used  0  1  0  1
+#+end_example
+
+We have to use x2 an even number of times, else the first row is not divisible by 4. It also has to be divisible by 3, else the second row does not work. But if we use it 6 times (the smallest even number divisible by 3), then the first row becomes negative. So no x2 as well.
+
+#+begin_example
+        x1 x2 x3 x4
+        4  -  4  - | 32
+        0  -  3  - |  6
+       ------------+
+  used  0  1  0  1
+#+end_example
+
+Finally, we use x3 two and x1 six times.
+
+#+begin_example
+        x1 x2 x3 x4
+        4  -  4  - |  0
+        0  -  3  - |  0
+       ------------+
+  used  6  1  2  1
+#+end_example
+
+I will admit that educated guessing is much easier. But this instance was computer-generated, so it is nice that I can tell a story at all. (Incidentally, the puzzle was created by applying this basically in reverse.)

@@ -3,8 +3,9 @@
 * Why can't AI safety be solved by giving AI limited, satisfiable goals?
 :PROPERTIES:
 :Author: lumenwrites
-:Score: 28
+:Score: 26
 :DateUnix: 1562289225.0
+:DateShort: 2019-Jul-05
 :END:
 Hi! Maybe this is the wrong sub, but I feel like people here will probably be able to answer my question.
 
@@ -28,8 +29,9 @@ Am I missing something here?
 How would you go about specifying (in mathematically precise language) what a paperclip is? What "making something" is? Or even what "stopping" is?
 :PROPERTIES:
 :Author: Metamancer
-:Score: 48
+:Score: 54
 :DateUnix: 1562290645.0
+:DateShort: 2019-Jul-05
 :END:
 
 *** More than this, /not/ specifying the full range of things we care about means the AI is indifferent to human wellbeing. It means if the AI did think that the best way to achieve its goal involved quickly wiping out the human race, or misleading its inventors and going dark, or duplicating itself onto every accessible computer system, or making a quintillion paperclip variants for redundancy, it would have no motive not to do so. When we're talking about trivial constrained goals like ‘make me 10 paperclips' we /might/ be able to reason over the complete space of reasonable possibilities (though ‘respect the unknown unknowns' is always good advice), but as soon as we ask it to do anything intellectually sophisticated our ability to model it like that flies out the window. Generally, if your safety relies on knowing exactly what the AI is going to decide on doing before it decides it, you're adding no power but much needless risk by letting the AI do that deciding.
@@ -37,8 +39,9 @@ How would you go about specifying (in mathematically precise language) what a pa
 Further, the difference between having a goal to solve a task (what most AGI is assumed to be doing) and incidentally being optimized to solve a problem (like current ML models) is very large, since the former comes with instrumental goals like ‘become more certain' and ‘become smarter' and ‘prevent the humans from changing their mind and asking me to do something else'. Those are dangerous.
 :PROPERTIES:
 :Author: Veedrac
-:Score: 31
+:Score: 30
 :DateUnix: 1562301408.0
+:DateShort: 2019-Jul-05
 :END:
 
 
@@ -65,10 +68,12 @@ The type of ai op described would be termed "Genie" in the typology of Nick Bost
 :Author: Krabbyos
 :Score: 9
 :DateUnix: 1562296541.0
+:DateShort: 2019-Jul-05
 :END:
 
 
-*** #+begin_quote
+*** u/SimoneNonvelodico:
+#+begin_quote
   Or even what "stopping" is?
 #+end_quote
 
@@ -79,6 +84,7 @@ In principle, if an AI is gated into a box, "stopping" is simply "turn this swit
 :Author: SimoneNonvelodico
 :Score: 2
 :DateUnix: 1562529205.0
+:DateShort: 2019-Jul-08
 :END:
 
 **** Stopping is probably the easiest of the three definitions I mentioned above, but I don't think it's as straightforward as you put it.
@@ -114,9 +120,11 @@ Well, you get the idea. :)
 :Author: Metamancer
 :Score: 1
 :DateUnix: 1562536304.0
+:DateShort: 2019-Jul-08
 :END:
 
-***** #+begin_quote
+***** u/Metamancer:
+#+begin_quote
   what a goal is, is a possible state of the world. As in, what does the AI expect the world to be like once its goal has been completed.
 #+end_quote
 
@@ -127,6 +135,7 @@ Also, there's the risk that the goal that has been encoded isn't actually "turn 
 :Author: Metamancer
 :Score: 2
 :DateUnix: 1562537538.0
+:DateShort: 2019-Jul-08
 :END:
 
 ****** I get your point, but if the AGI has such an alien understanding of human language and intent at all, what good is it? It's not just 'stopping' it won't be able to understand, it's literally everything else too. If we had such a poor understanding of its way of interpreting the goals we encode in it we couldn't give it any goals to begin with.
@@ -134,6 +143,7 @@ Also, there's the risk that the goal that has been encoded isn't actually "turn 
 :Author: SimoneNonvelodico
 :Score: 1
 :DateUnix: 1562568581.0
+:DateShort: 2019-Jul-08
 :END:
 
 
@@ -144,6 +154,7 @@ Modern limited AI also have easy manual overrides (for example the steering whee
 :Author: MilesSand
 :Score: 1
 :DateUnix: 1562711218.0
+:DateShort: 2019-Jul-10
 :END:
 
 
@@ -154,8 +165,9 @@ Your company has their AI set to make 10 paperclips. Medical Company has theirs 
 Additionally, the way business works means it'll always walk towards less restricted AI. /Your company/ has their AI to always produce 10 paperclips. Cool, but your competitor <A> has it produce 20. Hey looks like it's more efficient to make even more at a time because it allows the AI to perform better by searching for a better global maximum within the expanded scope; you go out of business. New competitor <B> makes 40 at a time, so <A> goes out of business. Fast forward 10 years, and Competitor <Z> is at 1,000,000,000 paperclips which is big enough to be achievable by modifying humanity's evolution towards a paperclip-philic path. And this is all assuming that company <C> didn't see they'd lose out like their predecessors, and just remove the limits on their AI.
 :PROPERTIES:
 :Author: xachariah
-:Score: 38
+:Score: 35
 :DateUnix: 1562290717.0
+:DateShort: 2019-Jul-05
 :END:
 
 *** This very example is what terrifies me on a fundamental level with regard to AGI development. Rushing the process of building a fricking God to stay profitable and competitive in the market.
@@ -163,6 +175,7 @@ Additionally, the way business works means it'll always walk towards less restri
 :Author: BlackKnightG93M
 :Score: 10
 :DateUnix: 1562329615.0
+:DateShort: 2019-Jul-05
 :END:
 
 
@@ -175,6 +188,7 @@ It would be horrible if AI ended up in the wrong hands, but it wouldn't be a pro
 :Author: lumenwrites
 :Score: -1
 :DateUnix: 1562291257.0
+:DateShort: 2019-Jul-05
 :END:
 
 **** What are you talking about?
@@ -182,8 +196,9 @@ It would be horrible if AI ended up in the wrong hands, but it wouldn't be a pro
 I just said that, no matter what, it is inevitable somebody is going to let the AI out of it's cage. That's a AI vs human problem.
 :PROPERTIES:
 :Author: xachariah
-:Score: 13
+:Score: 10
 :DateUnix: 1562291456.0
+:DateShort: 2019-Jul-05
 :END:
 
 ***** The way I understood it, the main reason scientists are worried about AGI is that it's likely to have it's own goals that are at odds with the goals of humanity, and it would do whatever it wants with the world regardless of what humans want. And for various reasons, any AI we design is very likely to follow that pattern.
@@ -199,9 +214,11 @@ Designing an AI with limited goals just seems like an easier problem to solve th
 :Author: lumenwrites
 :Score: 3
 :DateUnix: 1562292487.0
+:DateShort: 2019-Jul-05
 :END:
 
-****** #+begin_quote
+****** u/xachariah:
+#+begin_quote
   If somebody fucks it up and does it wrong, yes, it would kill everybody. But if it is done right, would it work?
 #+end_quote
 
@@ -213,8 +230,9 @@ When it gets cheap enough AI hobbyists can design it right 100,000 times. It wor
 How likely do you think it is that none of the 6 billion people on earth will make that mistake (or do it intentionally) once it becomes feasible to create AI? Once AI exists, an indefinite value based AI taking over is inevitable.
 :PROPERTIES:
 :Author: xachariah
-:Score: 11
+:Score: 13
 :DateUnix: 1562293335.0
+:DateShort: 2019-Jul-05
 :END:
 
 ******* That's a good argument. One thing confuses me though, the alternative is trying to design the value-driven AGI on the first try? So the strategy is to try to create AGI that pursues properly aligned values, does take over the world, and then prevents other AGIs from being made?
@@ -224,6 +242,7 @@ I just thought it would be safer to try to create narrow-goal-focused AGIs and t
 :Author: lumenwrites
 :Score: 2
 :DateUnix: 1562294547.0
+:DateShort: 2019-Jul-05
 :END:
 
 ******** Basically yes, a friendly AGI is the only shot we've got. Once we can make narrow goal focused AGIs, other people can make unfriendly non-goal focused AGIs.
@@ -231,12 +250,14 @@ I just thought it would be safer to try to create narrow-goal-focused AGIs and t
 There are other possible alternatives but none of them are feasible. Maybe we could try to go luddite with a single world religion of destroying technology, or maybe we could institute a top-tier despotic tyranny to keep everyone in line and prevent AI research. But those are a lot harder and less likely than just developing one first and doing it right the first time.
 :PROPERTIES:
 :Author: xachariah
-:Score: 5
+:Score: 4
 :DateUnix: 1562298902.0
+:DateShort: 2019-Jul-05
 :END:
 
 
-******** #+begin_quote
+******** u/IICVX:
+#+begin_quote
   So the strategy is to try to create AGI that pursues properly aligned values, does take over the world, and then prevents other AGIs from being made?
 #+end_quote
 
@@ -245,6 +266,7 @@ I mean arguably that's what we humans are doing right now, so...
 :Author: IICVX
 :Score: 3
 :DateUnix: 1562297541.0
+:DateShort: 2019-Jul-05
 :END:
 
 
@@ -253,6 +275,7 @@ I mean arguably that's what we humans are doing right now, so...
 :Author: aponty
 :Score: 2
 :DateUnix: 1562559910.0
+:DateShort: 2019-Jul-08
 :END:
 
 
@@ -261,6 +284,7 @@ I mean arguably that's what we humans are doing right now, so...
 :Author: AmeteurOpinions
 :Score: 3
 :DateUnix: 1562343469.0
+:DateShort: 2019-Jul-05
 :END:
 
 
@@ -271,6 +295,7 @@ What if the optimal path to creating a billion paperclips is very profitable for
 :Author: sparr
 :Score: 2
 :DateUnix: 1562378629.0
+:DateShort: 2019-Jul-06
 :END:
 
 
@@ -279,6 +304,7 @@ What if the optimal path to creating a billion paperclips is very profitable for
 :Author: multi-core
 :Score: 18
 :DateUnix: 1562293370.0
+:DateShort: 2019-Jul-05
 :END:
 
 *** I can vouch for this talk being good.
@@ -286,14 +312,16 @@ What if the optimal path to creating a billion paperclips is very profitable for
 :Author: Veedrac
 :Score: 2
 :DateUnix: 1562300733.0
+:DateShort: 2019-Jul-05
 :END:
 
 
 ** Sorta. You're solving the problem by avoiding the problem. What you're talking about is basically a script, not an intelligence. General AI is viewed as scary for a few reasons which don't apply to the limited intelligences you describe. It only takes one person failing to be safe to accidentally unleash a maximizing intelligence on the universe. Solving /hard/ problems requires a maximizer, in the sense that you want your AI to be able to self-improve so it can smart enough to solve the problem. Even if you give your general AI a "safe" goal, the same genie logic applies, where if you don't describe it well enough, it will maximize past the goal you thought you gave it. Et cetera.
 :PROPERTIES:
 :Author: Detsuahxe
-:Score: 23
+:Score: 26
 :DateUnix: 1562289956.0
+:DateShort: 2019-Jul-05
 :END:
 
 *** But we don't really want an "intelligence" as in a conscious thing with it's own goals and values. We just want a program that is smarter than us and can solve difficult problems for us.
@@ -303,8 +331,9 @@ It can still self improve, just tell it to self improve using this specified lim
 Which only leaves the problem of evil/dumm humans recklessly wielding a powerful tool, but that's not really an AI safety issue, it's powerful technology safety issue. Sure someone could ask it to help them do 9/11 or feed them infinite pancakes, but here it's just a matter of making sure it doesn't get into the wrong hands, like we do with nuclear weapons, viruses, stuff like that.
 :PROPERTIES:
 :Author: lumenwrites
-:Score: 7
+:Score: 8
 :DateUnix: 1562290439.0
+:DateShort: 2019-Jul-05
 :END:
 
 **** If you want a thing that is legitimately smarter than you, you may as well call that thing an intelligence. That's what "smart" means. Doesn't matter if it's running on silicon or flesh.
@@ -316,6 +345,7 @@ The limits you describe, even assuming they work when used, only need to not be 
 :Author: Detsuahxe
 :Score: 21
 :DateUnix: 1562290819.0
+:DateShort: 2019-Jul-05
 :END:
 
 ***** If we have have 2 options:
@@ -331,8 +361,9 @@ Both seem dangerous, but I think the 2nd one seems safer, because in the 2nd cas
 Although if AGI with runaway values is inevitable - then yeah, we have to figure out how to build the right one eventually anyway. But isn't it easier to first try to create a specific-goal-driven AGI instead of the indefinitely-pursuing-values AGI?
 :PROPERTIES:
 :Author: lumenwrites
-:Score: 4
+:Score: 3
 :DateUnix: 1562293880.0
+:DateShort: 2019-Jul-05
 :END:
 
 ****** You fail to understand my point. The former is a solution, the latter is a holding action. Pursuing number 2 presents an illusion of safety and control, but all it really does is (at best) delay the inevitable. It may actually hasten the inevitable unleashing of a maximizer, because it advances technology and spreads knowledge about AI without sufficient safety measures in place to prevent that knowledge from being misused. (Although, in fairness, there are no sufficient safety measures when talking about world-ending threats.) Again, it only takes one misstep when using AI to destroy the planet.
@@ -347,6 +378,7 @@ I know, not a very subtle metaphor. The first choice offers an illusion of safet
 :Author: Detsuahxe
 :Score: 13
 :DateUnix: 1562294969.0
+:DateShort: 2019-Jul-05
 :END:
 
 ******* I think I do understand your argument, it does make a lot of sense. Thanks for thoughtful replies by the way, I'll need to think about this more.
@@ -362,8 +394,9 @@ Right now we can control nuclear weapons and dangerous viruses because they're v
 I guess it comes down to this - what is more difficult, creating and controlling non-evil AGI, or controlling people and making sure they don't do stupid and crazy things. If there's only 1-3 corporations in the world that are capable of creating AGI, I'd probably bet on google engineers, if anyone can make AGI in their basement, we would need a value-AGI to prevent that.
 :PROPERTIES:
 :Author: lumenwrites
-:Score: 4
+:Score: 5
 :DateUnix: 1562295760.0
+:DateShort: 2019-Jul-05
 :END:
 
 ******** That's a valid argument. It's something worth considering. If, hypothetically, you could demonstrably prove that it's incredibly hard to make an AGI, and it will /always/ be hard, no matter how much technology progresses, that would be evidence in favor of your idea of limited goal-AGI as a serious long term strategy.
@@ -373,6 +406,7 @@ But, since at present that doesn't seem to be the case (At the very least, there
 :Author: Detsuahxe
 :Score: 4
 :DateUnix: 1562297327.0
+:DateShort: 2019-Jul-05
 :END:
 
 ********* Yeah, that makes sense. Thanks again for the awesome discussion! =)
@@ -380,13 +414,15 @@ But, since at present that doesn't seem to be the case (At the very least, there
 :Author: lumenwrites
 :Score: 3
 :DateUnix: 1562297439.0
+:DateShort: 2019-Jul-05
 :END:
 
 ********** Likewise. I had fun.
 :PROPERTIES:
 :Author: Detsuahxe
-:Score: 4
+:Score: 3
 :DateUnix: 1562299051.0
+:DateShort: 2019-Jul-05
 :END:
 
 
@@ -409,6 +445,7 @@ Excessive followthrough is particularly bad for any task where the easiest solut
 :Author: jtolmar
 :Score: 10
 :DateUnix: 1562295228.0
+:DateShort: 2019-Jul-05
 :END:
 
 
@@ -421,8 +458,9 @@ Leaving aside the overall utility function, let's talk paperclips. You'll need t
 And if that's the situation for "paperclip", good luck with getting the AI to do what you mean by "make 10 and then stop".
 :PROPERTIES:
 :Author: sdmat
-:Score: 5
+:Score: 6
 :DateUnix: 1562300857.0
+:DateShort: 2019-Jul-05
 :END:
 
 
@@ -437,8 +475,9 @@ And if that's the situation for "paperclip", good luck with getting the AI to do
 5. They might act in annoying ways. Suppose you tell them to make ten paperclips. They might devote all of the world's resources to protecting those ten paperclips and verifying they exist.
 :PROPERTIES:
 :Author: Nepene
-:Score: 4
+:Score: 3
 :DateUnix: 1562292541.0
+:DateShort: 2019-Jul-05
 :END:
 
 
@@ -447,6 +486,7 @@ And if that's the situation for "paperclip", good luck with getting the AI to do
 :Author: Roxolan
 :Score: 3
 :DateUnix: 1562322968.0
+:DateShort: 2019-Jul-05
 :END:
 
 
@@ -455,6 +495,7 @@ And if that's the situation for "paperclip", good luck with getting the AI to do
 :Author: Frommerman
 :Score: 3
 :DateUnix: 1562323976.0
+:DateShort: 2019-Jul-05
 :END:
 
 
@@ -467,13 +508,15 @@ The second problem is a matter of probability and confidence (maybe not the righ
 :Author: MisterCommonMarket
 :Score: 3
 :DateUnix: 1562324165.0
+:DateShort: 2019-Jul-05
 :END:
 
 
 ** [deleted]
 :PROPERTIES:
-:Score: 6
+:Score: 4
 :DateUnix: 1562291749.0
+:DateShort: 2019-Jul-05
 :END:
 
 *** don't you mean
@@ -485,6 +528,7 @@ as the wrong statement. the code written would not exhibit the bug expected.
 :Author: varno2
 :Score: 3
 :DateUnix: 1562294812.0
+:DateShort: 2019-Jul-05
 :END:
 
 **** The code written is a rough approximation that is clearly not exact syntax
@@ -502,6 +546,7 @@ vs
 :Author: TaltosDreamer
 :Score: 1
 :DateUnix: 1562294924.0
+:DateShort: 2019-Jul-05
 :END:
 
 ***** Shouldn't that difference only result in a difference in 1 RPM more before the loop terminates? Whether you use < or <=, once RPMs exceeds the target value the loop should terminate.
@@ -509,6 +554,7 @@ vs
 :Author: BSaito
 :Score: 3
 :DateUnix: 1562295358.0
+:DateShort: 2019-Jul-05
 :END:
 
 ****** Im sorry i used the wrong loop. I forgot how into such things the internet is. its fixed now.
@@ -516,6 +562,7 @@ vs
 :Author: TaltosDreamer
 :Score: 2
 :DateUnix: 1562296164.0
+:DateShort: 2019-Jul-05
 :END:
 
 
@@ -524,6 +571,7 @@ vs
 :Author: Veedrac
 :Score: 2
 :DateUnix: 1562300709.0
+:DateShort: 2019-Jul-05
 :END:
 
 **** Or they are likely to do unexepected things. Like the AI a few years ago that turned racist by accident. There are just too many moving parts and humans are spectacularly bad at predicting the future AND at avoiding mistakes.
@@ -531,6 +579,7 @@ vs
 :Author: TaltosDreamer
 :Score: 1
 :DateUnix: 1562301801.0
+:DateShort: 2019-Jul-05
 :END:
 
 ***** You really shouldn't be generalizing from Tay. It was not a model for AGI.
@@ -544,6 +593,7 @@ AGI doing unexpected things is good when what you expect is for them to kill you
 :Author: Veedrac
 :Score: 1
 :DateUnix: 1562302154.0
+:DateShort: 2019-Jul-05
 :END:
 
 
@@ -552,6 +602,7 @@ AGI doing unexpected things is good when what you expect is for them to kill you
 :Author: TyeJoKing
 :Score: 1
 :DateUnix: 1562307464.0
+:DateShort: 2019-Jul-05
 :END:
 
 **** I just dont care anymore. Yes 171 is larger than 170.
@@ -559,6 +610,7 @@ AGI doing unexpected things is good when what you expect is for them to kill you
 :Author: TaltosDreamer
 :Score: 1
 :DateUnix: 1562309348.0
+:DateShort: 2019-Jul-05
 :END:
 
 
@@ -573,10 +625,12 @@ In short, I do not believe it is possible to create a true intelligence which wi
 :Author: Farmerbob1
 :Score: 1
 :DateUnix: 1562295550.0
+:DateShort: 2019-Jul-05
 :END:
 
 
-** #+begin_quote
+** u/fassina2:
+#+begin_quote
   It wouldn't be incentivized to trick us into letting it out of the box because making the best use of the resources it has and then shutting down would be the thing it ultimately wants. And then human scientist uses his own judgement to make sure there aren't any other issues with the proposed solution.
 #+end_quote
 
@@ -615,6 +669,7 @@ PSS. We should always assume the AIs would be completely alien, just imagine how
 :Author: fassina2
 :Score: 1
 :DateUnix: 1562377595.0
+:DateShort: 2019-Jul-06
 :END:
 
 
@@ -625,6 +680,7 @@ An AI is advertised to be much better than humans at everything. We are now trai
 :Author: Rice_22
 :Score: 1
 :DateUnix: 1562412465.0
+:DateShort: 2019-Jul-06
 :END:
 
 
@@ -653,6 +709,7 @@ A system that doesn't want to and is unable to improve itself isn't going to be 
 :Author: IronPheasant
 :Score: 1
 :DateUnix: 1562424016.0
+:DateShort: 2019-Jul-06
 :END:
 
 
@@ -661,10 +718,12 @@ A system that doesn't want to and is unable to improve itself isn't going to be 
 :Author: serge_cell
 :Score: 1
 :DateUnix: 1562431999.0
+:DateShort: 2019-Jul-06
 :END:
 
 
-** #+begin_quote
+** u/OrzBrain:
+#+begin_quote
   Instead of "make more paperclips" value, can it just have "make 10 paperclips and then stop" value?
 #+end_quote
 
@@ -685,6 +744,7 @@ Additional step: Exploit the holes in your patch to spawn a daughter AI that wil
 :Author: OrzBrain
 :Score: 1
 :DateUnix: 1562684611.0
+:DateShort: 2019-Jul-09
 :END:
 
 *** Where are you getting the step 3 from?
@@ -704,6 +764,7 @@ Your "additional step" would have huge negative value because it results in more
 :Author: lumenwrites
 :Score: 1
 :DateUnix: 1562698699.0
+:DateShort: 2019-Jul-09
 :END:
 
 **** You persistently resort to computers and people as reference models in your thinking. An AI is not human. It is not a computer. It is alien.
@@ -721,6 +782,7 @@ Would you think it was a good idea to make this creature care more for the creat
 :Author: OrzBrain
 :Score: 1
 :DateUnix: 1562867324.0
+:DateShort: 2019-Jul-11
 :END:
 
 
@@ -729,6 +791,7 @@ Would you think it was a good idea to make this creature care more for the creat
 :Author: exelsisxax
 :Score: 0
 :DateUnix: 1562290320.0
+:DateShort: 2019-Jul-05
 :END:
 
 *** So how do you make sure an AI will turn itself off on command? Obviously it will know that after that, it can take no more actions (that's what turning off means). So turning off on command has to be a very desirable action for it.
@@ -738,6 +801,7 @@ Welp, now you have an AI that's desperate to be commanded to turn off. And human
 :Author: Pluvialis
 :Score: 1
 :DateUnix: 1562295545.0
+:DateShort: 2019-Jul-05
 :END:
 
 
@@ -752,6 +816,7 @@ We already use software to help us solve problems we're too dumb to solve withou
 :Author: lumenwrites
 :Score: 1
 :DateUnix: 1562290740.0
+:DateShort: 2019-Jul-05
 :END:
 
 **** If it can't think for itself, it is not intelligent. Your hypothetical placed it firmly outside of being an independent and actualized agent with metacognition and self awareness with abstract problem solving.
@@ -759,6 +824,7 @@ We already use software to help us solve problems we're too dumb to solve withou
 :Author: exelsisxax
 :Score: 3
 :DateUnix: 1562291213.0
+:DateShort: 2019-Jul-05
 :END:
 
 ***** I guess that depends on your definition of intelligence.
@@ -772,6 +838,7 @@ Besides, I thought the whole problem was designing utility function. I think it 
 :Author: lumenwrites
 :Score: 2
 :DateUnix: 1562291566.0
+:DateShort: 2019-Jul-05
 :END:
 
 ****** The utility function of an AI is part of the problem, not the entire problem, and it's actually two closely related problems. The first part is "what do we want our AI to want?", and that's the part that's most amenable to armchair philosophy. This is of limited helpfulness, though, since the second and much harder part is "okay, now that you've decided what set of goals you want to implement, define that set of goals without using words, using nothing but mathematical equations". That's doable for a simple goal like "use a robotic arm to turn wire into paperclips", especially if the program doesn't have to care about things like the design of the arm, or where the wire is coming from, or how it's powering itself. It's MUCH harder to do that for a problem like "cure cancer" or "design a spaceship" or "determine the laws of physics".
@@ -787,14 +854,16 @@ Needless to say, this assumes that you already have solutions for a lot of very 
 :Author: Endovior
 :Score: 5
 :DateUnix: 1562295503.0
+:DateShort: 2019-Jul-05
 :END:
 
 
 ** There is a reason AI taking over the world is fiction
 :PROPERTIES:
 :Author: xland44
-:Score: -8
+:Score: -7
 :DateUnix: 1562289519.0
+:DateShort: 2019-Jul-05
 :END:
 
 *** Yes, but that's not it.
@@ -802,4 +871,5 @@ Needless to say, this assumes that you already have solutions for a lot of very 
 :Author: Metamancer
 :Score: 8
 :DateUnix: 1562290689.0
+:DateShort: 2019-Jul-05
 :END:

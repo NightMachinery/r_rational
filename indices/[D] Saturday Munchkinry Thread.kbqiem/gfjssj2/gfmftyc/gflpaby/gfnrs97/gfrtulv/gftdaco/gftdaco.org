@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: scruiser
+:Score: 1
+:DateUnix: 1607957399.0
+:DateShort: 2020-Dec-14
+:END:
+
+That should partly work... you are using the power by imagining an alternative course of action you could take. If you just naively had the RNG generate a number corresponding to a choice, your choice isn't the number the RNG generated, but rather the choice is to follow the RNG in the first place. You could still make your idea work with some tweaking... you would need to Seed the RNG using your choices. You wouldn't know how your choices contributed to the resulting random number which would make the visualization step tricky, but as a mentioned in the bullet points, "Events of which you aren't sure about the exact choice lead to them, but plausibly within your control can be rewritten but with added difficulty" so you could still retroactively change the RNG is you seeded using your choices.

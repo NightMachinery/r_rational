@@ -1,0 +1,25 @@
+:PROPERTIES:
+:Author: xamueljones
+:Score: 5
+:DateUnix: 1550332803.0
+:DateShort: 2019-Feb-16
+:END:
+
+I got the exact same answer as you did. I basically brute forced it sorta since the entire pyramid is completely determined by the bottom row.
+
+The entire comment that follows is all about how to solve the problem through intelligent brute-forcing without any knowledge of advanced math!
+
+First I made a smaller pyramid with only 17 at the top and 7 at the bottom right corner of a row with only 4 numbers. First I tested to see how fast the top number would grow if the bottom layer goes from <1, 1, 1, 7> to <2, 2, 2, 7> so I could estimate what triple would reach 17. Funnily enough, <1, 1, 1, 7> gave 14 while <2, 2, 2, 7> gave 21 which mean the real answer was in between the two. <1, 2, 1, 7> and <1, 1, 2, 7> both worked to generate 17 as the top number. So I then moved on to the second pyramid to test while (for now) assuming the first row to be <1, 1, 2, 7>
+
+The second pyramid I made was simply a pyramid with 45 at the top, 6 at the bottom left corner, and whatever numbers <1, 1, 2> generates by being at the bottom right corner.
+
+<45>
+
+<?, ?>
+
+<?, ?, 5>\\
+<?, ?, 2, 3>\\
+<6, ?, 1, 1, 2>\\
+Since the number 45 was a lot higher than 17 and there was only one more row compared to the pyramid above, I knew that the number next to 6 had to be a lot higher than 1, so I decided to test by filling it in as 6 and if the top number was higher or lower than 45, I would try again with 5 or 7. <6, 6, 1, 1, 2> generated 42 and <6, 7, 1, 1, 2> generated 46.\\
+Since getting 45 as the top number was clearly impossible, I knew that the answer for the first pyramid then had to be <1, 2, 1, 7>, and that the bottom row had to be <6, 7, 1, 2, 1> which resulted in 45.\\
+By combining the two pyramid's bottom rows, the final answer was <6, 7, 1, 2, 1, 7> which generates 78!

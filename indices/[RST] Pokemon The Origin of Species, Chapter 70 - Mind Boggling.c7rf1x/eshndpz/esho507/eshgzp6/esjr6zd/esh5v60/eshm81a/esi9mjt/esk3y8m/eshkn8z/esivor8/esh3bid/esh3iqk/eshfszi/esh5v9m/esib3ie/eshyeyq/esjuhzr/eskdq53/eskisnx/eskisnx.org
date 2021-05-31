@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: thrawnca
+:Score: 2
+:DateUnix: 1562065792.0
+:DateShort: 2019-Jul-02
+:END:
+
+If we assume that the planet is a sphere, some simple trigonometry will give an approximate distance to the horizon, with the triangle defined by your viewpoint, the horizon, and the centre of the planet. Not sure offhand of the exact equations when both the viewer and viewed are elevated, but I imagine they're not too bad.
+
+Edit: Yeah, it's not too hard. At the limit of your vision, your line of sight skims the planet at the horizon and then continues on until it touches the elevated point you're looking at. So, you simply have to calculate the distance from that point to its horizon, calculate the distance from your viewpoint to your horizon, and add the two.

@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: jtolmar
+:Score: 3
+:DateUnix: 1582220424.0
+:DateShort: 2020-Feb-20
+:END:
+
+When I'm designing RPG systems, the (combat) things I'm wary of are:
+
+- Stun (and action denial in general)
+
+- Knockback (and forced movement in general)
+
+- Kiting (especially from non-standard movement like flight, burrow, and teleport)
+
+- Haste (and other action generation)
+
+- Summons (mostly as a form of action generation; you covered shunting costs off onto summons but that's a separate concern)
+
+These all have some broken extremes that are easy to accidentally allow. Stunlocking, perfect kiting, chain-hasting yourself for infinite actions, and chain summoning. But even without hitting the breakpoint, they all stack multiplicatively with regular damage. Hasting for double actions then attacking does double damage in a way that ignores any systems you have in place to make damage scaling linear.
+
+The other tricky bit here is that all of these mechanics deal with action creation and denial, some in non-obvious ways, so they actually stack with each other despite sounding unrelated. For example, say you can't /quite/ run fast enough to kite an opponent, but you can attach a knockback effect to your arrows, which increases the distance they have to run to hit you, which combined with how fast you're running away beats their ability to catch up. If that's not quite enough, and you out-range your opponent, a stun (or just root) chance can let you outspeed them on average. If that's not quite enough, you can increase your stun/knockback/running output by getting hasted. If any of this can be performed in parallel by summons, that's the same as haste.
+
+If you want to design this sort of exploit into your system, some things I'd note: Stun/knockback are thematically separated from ranged attacks in general so you usually need a weird build to combine them. Range enhancements are useful enough that people might know how to stack them to create sniper builds, but not actually broken outside of this sort of shenanigans. Summoning things that have ranged knockback is more convoluted, which is probably good for your purposes, especially if they only have ranged knockback because of shared buffs to summons type mechanics, but you can also achieve this by summoning something with more common melee knockback if you have a long range summon.

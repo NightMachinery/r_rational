@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: whats-a-monad
+:Score: 1
+:DateUnix: 1590274837.0
+:DateShort: 2020-May-24
+:END:
+
+There are two parts to scraping Wordpress; One is to convert a set of Wordpress links into epub (which my scripts handle well enough) and another is extracting links from Wordpress that form a coherent whole (for examples, the chapters of a story). My scripts don't support the second case out of the box, but I have a function “getlinks-c” that supports getting links that match a regex from a webpage, and I can do this: =web2epub “my title” “${(@f)$(getlinks-c -e “regex that matches the desired links” “wordpress link here”)}”=. (Alternatively, I have ways of selecting links via selectors, but I don't understand selectors as well as simple regexes, so I try not to use them.)
+
+The reason this can't get automated is that the regex needed to filter the URLs is unique to each Wordpress page and its way of organizing content. In fact, the above code assumes there is a single table of contents page on that site; If not, the code will get more complicated.
+
+Truth to tell, I have not needed to scrape Wordpress stories much, and there might be patterns that allow automated link retrieval after all.
+
+PS: Another easy solution is to use a browser extension that lets you copy the URLs of links in your selection, and then just paste them after the general scraper: =web2epub “title” “paste the urls copied from browser here”=. This method works quite well with all stories. I recently used this to make an epub of Overlord v14 whose links were on a private Discord channel and quite hard to scrape otherwise.
+
+PPS: Basically, most of the value is already captured by the general scraper; All other wrappers are mere conveniences.

@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: rtsynk
+:Score: 4
+:DateUnix: 1529430561.0
+:DateShort: 2018-Jun-19
+:END:
+
+just reattach the marker with the appropriate count
+
+if (soulCurrent.marker == null || soulCurrent.marker.count < 1)
+
+{soulNew = soulOriginal;}
+
+else if (soulCurrent.marker.count < 7)
+
+{ soulNew = soulOriginal;
+
+soulNew.marker = soulCurrent.marker;
+
+soulNew.marker.count--;}
+
+else
+
+{soulNew = soulCurrent;
+
+soulNew.marker.count--}

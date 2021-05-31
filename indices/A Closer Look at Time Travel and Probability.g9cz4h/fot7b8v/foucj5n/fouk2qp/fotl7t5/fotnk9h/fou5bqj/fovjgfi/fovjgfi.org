@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: destravous
+:Score: 3
+:DateUnix: 1588102351.0
+:DateShort: 2020-Apr-29
+:END:
+
+This is strikingly similar to how the wavefunction collapse procedural generation algorithim works: [[https://github.com/mxgmn/WaveFunctionCollapse/blob/master/README.md]]
+
+Specifically this part:
+
+#+begin_quote
+  "It may happen that during propagation all the coefficients for a certain pixel become zero. That means that the algorithm has run into a contradiction and can not continue. The problem of determining whether a certain bitmap allows other nontrivial bitmaps satisfying condition (C1) is NP-hard, so it's impossible to create a fast solution that always finishes. In practice, however, the algorithm runs into contradictions surprisingly rarely."
+#+end_quote
+
+It appears preventing a paradox in a universe with stable time loop based time travel is equivalent to solving an NP-hard problem every time the paradox would occur.

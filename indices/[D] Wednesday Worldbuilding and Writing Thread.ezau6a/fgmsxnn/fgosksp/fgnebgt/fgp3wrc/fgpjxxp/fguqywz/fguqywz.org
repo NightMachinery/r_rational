@@ -1,0 +1,38 @@
+:PROPERTIES:
+:Author: pldl
+:Score: 1
+:DateUnix: 1581127402.0
+:DateShort: 2020-Feb-08
+:END:
+
+Given your examples, it seems you are aiming for a loop of greater than a month.
+
+The amount of work required to think about all the variables will kill you.
+
+You should aim for creating a simulacrum of a complex society. Determine what groups/individuals matter, and represent their closeness to others with a bunch of circles and lines. Roughly represent their strength with a number and their relationships with multipliers. When players do a significant action, you should translate it into an increase or decrease in strength in the graph. If one increases by "3" strength due to the players, then groups they are allied with will increase, while groups they are adversarial towards will decrease. Unless a strength level changes massively, don't bother dealing with the ripple effect too much. Just estimate.
+
+Create some strength gates. When a group reaches or drops to a certain strength, an event will always occur as soon as reasonable. For the most part, don't think too hard on these. Keep these events small/slight. If the players really start focusing on a plan of action that would heavily affect a group, then you can consider what "event" should occur and the greater impact on the graph.
+
+Example:
+
+Guards (10) Merchants (7) Monster Group (7) Bandits (10)
+
+When Guards increase by 1, Merchants increase by 1, Monster Group and Bandits drop by 1.
+
+(Merchant profits go up, they cull the monsters and bandits a bit better)
+
+When Merchants increase by 1, Bandits drop by 1, Guards increase by 1.
+
+(Bandits get fewer supplies, guards get better supplies)
+
+When Bandits increase by 1, all other groups decrease by 1
+
+(Bandits start attacking more brazenly, but their expansion also affect the monsters)
+
+When Monster Group decreases by 1, all other groups increase by 1.
+
+(Fewer monster attacks helps everyone)
+
+When Guards hit 12 or are 5 above the Monsters, they will always attempt an attack on the Monsters. When Guards hit 15 or are 5 above the Bandits, they will always attempt an attack on the bandit group. When Bandits hit 12, they will always attempt an attack on the town during the night. When Monster Group drops to 3, they stop attacking during the day. When Bandits drops below 3, they disband and the remnants join a bandit group elsewhere. When Merchants are higher than both the Monster Group and Bandits, they start selling low-end magical consumables. When Merchants have a sum greater than the remnants of the Monster Group and Bandits, they start selling low-end magical items. If they drop below 3, the Guards will attempt to attack the higher of the Monster Group/Bandits.
+
+Hide the numbers, but be obvious about the effects groups have on each other. Spell out that groups are behaving differently or that events are happening because of what the players did.

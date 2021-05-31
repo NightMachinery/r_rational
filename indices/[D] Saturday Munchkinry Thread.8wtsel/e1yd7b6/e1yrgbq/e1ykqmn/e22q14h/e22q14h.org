@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: ceegheim
+:Score: 2
+:DateUnix: 1531162142.0
+:DateShort: 2018-Jul-09
+:END:
+
+As others said, Alice and Bob don't need no modern asymmetric crypto. They already have exchanged key material.
+
+If they had access to calculator, they could now go on using e.g. AES-GCM. The problem is: They don't have this.
+
+[[http://burtleburtle.net/bob/rand/smallprng.html][Small PRNG]] was a good naive suggestion for a RNG that can be abused as a cipher (you XOR the output-stream with the cleartext). Authentication needs a hash function, not just a simple checksum; something like Murmurhash could work. (you don't want to be susceptible to bitflip attacks)
+
+[[https://en.wikipedia.org/wiki/Solitaire_(cipher%29][Bruce Schneier does not need a computer]] to do his crypto. Extra relevant because the cipher was designed as a prop of the Cryptonomicon. More modern, one could look at [[https://eprint.iacr.org/2017/339.pdf][LC4]], which is also authenticated and looks significantly faster to me; I really recommend at least skimming that paper and looking at the pictures at the end. Also, it is funny:
+
+#+begin_quote
+  I made a simple appliance to help a human perform the LC4 encryption and decryption algorithms by hand. The appliance consists of 36 wooden tiles plus a small plastic game marker, which I carry around in a bag (Figure 2). Each tile is marked at the top with one of the characters of the alphabet; at the right, the value (c mod 6); and at the bottom, the value (c / 6), where c is the character's integer value. The bag also is used to generate a random key: put all the tiles in the bag, shake it well, and draw tiles one by one
+#+end_quote
+
+Apart from this, I would think hard about other assets and priority: Is it really the case that both directions are completely insecure? And I would put more emphasis on authentication / MAC than on confidentiality, at least in Joon's situation, whatever it is. My take on it was [[https://www.reddit.com/r/rational/comments/8vkomq/rt_worth_the_candle_ch_108109_dreamveil/e1pp3gn/?context=3][here]].
+
+edit: Because that stuff is fascinating, apparently even almost trivial ciphers like [[https://en.wikipedia.org/wiki/VIC_cipher][VIC]] survived shockingly long, due to good OPSEC. But all this does not really matter, because Joon failed to properly prepare, as far as I can tell.

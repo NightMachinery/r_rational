@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 3
+:DateUnix: 1536758045.0
+:DateShort: 2018-Sep-12
+:END:
+
+The wavefunction may be continuous, but states are discrete. Possibly infinite, but discrete. And no, I don't mean there are philosophical zombies.
+
+Take it this way: there's your typical Schroedinger cat system, in a superimposed state |alive> + |dead> (I'll omit the normalization factors for convenience). Your brain is still in the |doesn't know> state. You then open the box. Unitary quantum evolution would then have the total wavefunction of the box + your brain to evolve into:
+
+|alive>|knows it to be alive> + |dead>|knows it to be dead>
+
+At this point, the Copenhaghen interpretation mumbles "something something abracadabra measurement and collapse" and says we're only left with either |alive>|knows it to be alive> or |dead>|knows it to be dead>, and the system keeps evolving from there. This, IMHO, is not very satisfactory. However the way I see it is, this is only puzzling if we assume that our brain in the entangled state should see somehow the cat both alive /and/ dead. That is not what the wavefunction describes, though. The wavefunction describes a state where one one side we have a brain /absolutely, positively sure the cat is alive/ and on the other one that is /absolutely, positively sure the cat is dead/. Either brain has /only seen one state/, and would have to wonder where did the other even go! And so, how do we decide which brain should feel like "me", and which one shouldn't? The answer is, we can't. They both are "me". They just are "me who saw the cat alive" and "me who saw the cat dead". They both exist, in configuration space. They both are 100% sure they saw a single, classical outcome from the experiment. They both think the wavefunction mysteriously /collapsed/ - only, in different ways.
+
+There's some additional stuff necessary to justify of course "why those two specific states" and "why is the cat's density matrix diagonal in them" but honestly I feel like that's well justified by decoherence theory. Put together, these two things form a complete explanation of quantum weirdness, if a somehow underwhelming one. It's not something I alone came up with, BTW, it's one possible "soft" interpretation of Many Worlds, in which said worlds are subjective. It's mentioned for example in [[https://arxiv.org/abs/quant-ph/0312059][this paper]] as the "many minds" interpretation.

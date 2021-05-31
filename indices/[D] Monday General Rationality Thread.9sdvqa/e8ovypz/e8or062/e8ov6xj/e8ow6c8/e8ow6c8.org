@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: suyjuris
+:Score: 3
+:DateUnix: 1540852228.0
+:DateShort: 2018-Oct-30
+:END:
+
+Disclaimer: I have not read that work, so I can only comment on how things work in reality. Also, my knowledge is limited. With that said, you might find the Wikipedia article on [[https://en.wikipedia.org/wiki/Radio_telescope][Radio Telescopes]] interesting, which is what I would first think of when I hear the term array telescope.
+
+#+begin_quote
+  The angular resolution of a dish antenna is determined by the ratio of the diameter of the dish to the wavelength of the radio waves being observed
+#+end_quote
+
+So, by building a larger dish you have a higher angular resolution, which determines how small the details that you observe can be. (A separate issue is how sensitive your instrument is, i.e. how intense the detail has to be for you to observe it.)
+
+Interestingly, what you can do for radio telescopes is building multiple ones and combining their signals, such that the resulting telescope array has angular resolution as though it were a single large telescope. (One that would be much too large to built as single dish.) So that's great. But I guess Taylor is not especially interested in only detecting radio waves, as that would only tell her the location of the nearest radio station.
+
+For optical signals building an array is much more complicated, as you cannot measure them using electronics and have to do the 'combining' (interferometry) directly on the optical waves. As I do not see Taylor connecting her bugs via optical fiber and installing interferometers, at which point you could also just dispense with the bugs, I do not think that doing this using interferometry is feasible.
+
+(Also, the information biological eyes collect is not enough anyway.)
+
+So, let's leave astrophysics and consider approaches more suited to optical instruments. Once again, [[https://en.wikipedia.org/wiki/Super-resolution_imaging][Wikipedia]] has us covered.
+
+#+begin_quote
+  Multiple-frame [Superresolution] uses the sub-pixel shifts between multiple low resolution images of the same scene. It creates an improved resolution image fusing information from all low resolution images, and the created higher resolution images are better descriptions of the scene.
+#+end_quote
+
+Basically, if you collect more data you can resolve more detail, it is only a matter of how you combine the data. If your perspective moves slightly, and you know how much it moves, you can reconstruct a higher quality image. (Also the motion can be detected from the image.) You could even do this using multiple cameras at different positions, like a swarm of insects, though that is more difficult as you need to correct for perspective. In conclusion, there is no fundamental obstacle to obtaining telescope-like vision by combining information from a multitude of sources. However, this would already work using only a single camera (say, Taylor's own eyes) and the fact that information is captured over time. While our brain is good at a lot of things, high resolution computations are not one of them, so there is lots of room to improve.
+
+Still, it would require Taylor to do an extraordinary amount of computation.
+
+Given recent research on extracting unintended information out of an image based on indirect light effects (e.g. [[http://people.csail.mit.edu/billf/publications/Accidental_Pinhole.pdf][looking out of windows which are not visible]] or [[https://people.csail.mit.edu/klbouman/pw/papers_and_presentations/cornercam_iccv2017.pdf][seeing around corners]] or even [[https://news.stanford.edu/2018/03/05/technique-can-see-objects-hidden-around-corners/][seeing around corners WITH LASERS]]) I'd guess that, given this much computational power, Taylor would do better to focus on indirect information. You do not need a lot of bug cameras running around for that, though it would probably help.

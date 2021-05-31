@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: Terkala
+:Score: 1
+:DateUnix: 1531030422.0
+:DateShort: 2018-Jul-08
+:END:
+
+To give a specific example, let's say we picked a bible page with the words "the" as the first word on the page. That gives a shift key of 20,8, 5. So you shift the first letter of your message 20 places, then 8, then 5. If you need a longer message than 3 characters, you just take more characters from the same page. Just so we're both talking about the same encryption method.
+
+#+begin_quote
+  Using a book as a random pad should make your letter distribution the self-convolution of the english letter distribution, that doesn't sound secure
+#+end_quote
+
+The frequency of using common english letters doesn't make the cipher more breakable. Just because your encrypted text is AEIOU, doesn't mean that at the specific place when you used A, it actually maps to Z, and I could also map to Z, since you're changing your letter-mapping every character.
+
+Letter distribution analysis only works if you have a large body of text to work from. To break a Cesarean cipher you need at least ~5 letters of a word using the same shift cipher. So you'd have to repeat the same shift-cipher at least that much to have reasonable chance to decode it. Which is probably at least several pages of dense text. And that assumes your antagonist knows exactly which method you were using. So while you might eventually repeat a pattern in a breakable way if you're encoding War and Peace, it'll stand up for a lot of usage before that.

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: abcd_z
+:Score: 2
+:DateUnix: 1548886109.0
+:DateShort: 2019-Jan-31
+:END:
+
+Got a dead link there. Reddit thinks the last ) is the end of the markdown and terminates the link early.
+
+Use the escape character \ to fix it.
+
+So the markdown text should look [like this](thing.com/thing(also_this*\))*

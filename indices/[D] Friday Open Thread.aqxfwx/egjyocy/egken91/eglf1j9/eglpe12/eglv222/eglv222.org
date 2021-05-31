@@ -1,0 +1,30 @@
+:PROPERTIES:
+:Author: blobbythebobby
+:Score: 3
+:DateUnix: 1550337582.0
+:DateShort: 2019-Feb-16
+:END:
+
+Yeah I, too, divided it into 2 pyramids. I formulated an equation each for the 2 pyramids, assuming the big pyramid's bottom looks like this:
+
+<6, x1, x2, x3, x4, 7>
+
+Inner pyramids' equations:
+
+45 = 1 * 6 + 4 * x1 + 6 * x2 + 4 * x3 + 1 * x4
+
+17 = 1 * x2 + 3 * x3 + 3 * x4 + 7
+
+(Combinatoric details: these coefficients come from the amount of paths a number can take to reach the top of their respective pyramid, and is calculated by C(layers to climb, left steps required), so for the leftmost object up to 45 it'd be C(4, 0), which is 1 because there is only 1 path that the 6 can take to reach 45: Right, right, right, right. This reasoning might seem far-fetched but it's very close to the reasoning used when relating [[https://en.wikipedia.org/wiki/Pascal%27s_triangle][pascal's triangle]] to combinatorics, which is why I came up with it.)
+
+After that it got really hard for me to continue the calculation purely formally for me though, as it's very hard to inject the info "The answer has to be a non-negative integer" into a normal equation, something a diophantine equation can do (I think, I never properly learned them. Especially not working with more than 2 variables in them).
+
+So I personally explored the small pyramid's equation with this information in mind myself and managed to narrow it down to
+
+<x2, x3, x4, 7>
+
+where x2 = 10 - 3*(x3 + x4) and x3 + x4 <= 3 and x2, x3, x4 >= 0
+
+Then came the brute force method, where I inserted a few of the possible small pyramids into the large pyramid's equation until one stuck, and there I had my answer.
+
+Generally our solutions are quite close. I feel that my knowledge of combinatorics would've been more helpful if you scaled the exercise by a few levels, but it did help me quickly assess the relation between numbers in different levels.

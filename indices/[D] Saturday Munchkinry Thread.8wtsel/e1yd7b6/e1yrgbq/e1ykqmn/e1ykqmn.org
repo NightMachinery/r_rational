@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Joern314
+:Score: 2
+:DateUnix: 1530985828.0
+:DateShort: 2018-Jul-07
+:END:
+
+Just to clarify: using the authentication system you can communicate arbitrary amounts of independent bits the third party doesn't know?
+
+Then you just need more bits than your secret message contains. Using the table as well, of course. [[https://en.m.wikipedia.org/wiki/One-time_pad]]
+
+There are some weaknesses humans will cause, i.e. timing attacks (counting how long you need to encrypt something) or changing one bit the two friends exchange, just to see if the message becomes unreadable, etc. Latter might count as blocking communication, though.

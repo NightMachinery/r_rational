@@ -1,0 +1,17 @@
+:PROPERTIES:
+:Author: nicholaslaux
+:Score: 2
+:DateUnix: 1556633109.0
+:DateShort: 2019-Apr-30
+:END:
+
+100% minor typo, but it looks like one of the hazard alert notice IDs is missing a value:
+
+#+begin_quote
+  #+begin_example
+      Subsystem hazard alert notice 008153867929:  Action–defer.
+      Subsystem maintenance alert notice 0081538627930:  Action–defer.
+  #+end_example
+#+end_quote
+
+The first has one less digit than all of the others, looks like it should be 00815386*2*7929 rather than 008153867929

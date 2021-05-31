@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: meterion
+:Score: 3
+:DateUnix: 1577729976.0
+:DateShort: 2019-Dec-30
+:END:
+
+It seems fairly doable to me. All you need is a small display, (either digital or [[https://previews.123rf.com/images/avectors/avectors1808/avectors180800072/112204151-flip-countdown-clock-counter-vector-hours-minutes-and-seconds-flip-numbers-on-board-display-on-trans.jpg][analog flip]]) a way to insert, edit, or delete numbers at any slot on the display, (also trivial digitally or analog with buttons for digits, mode switch, and slot indicator) and a view slider to scroll through the display with tuning knob.
+
+The key is you use the tuning knob to adjust the /relative/ step of the scroll rather than absolute. So like by default, the view slider jumps 100% of the display: from the beginning of the floor number to the end. One step finer jumps 10% of the display, then 1%, and so on. This would make it so you would only need to adjust the display a total of N times for a desired floor number 10^{N+1} digits long, and review/edit any floor choices fairly easily. Thoughts?

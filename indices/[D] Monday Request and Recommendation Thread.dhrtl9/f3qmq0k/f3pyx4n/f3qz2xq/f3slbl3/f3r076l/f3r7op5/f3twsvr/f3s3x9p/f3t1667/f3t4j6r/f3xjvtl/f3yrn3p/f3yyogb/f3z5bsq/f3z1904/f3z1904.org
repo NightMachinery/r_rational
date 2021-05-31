@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: mateon1
+:Score: 1
+:DateUnix: 1571261795.0
+:DateShort: 2019-Oct-17
+:END:
+
+Just after I posted the above I realized I missed the obvious.
+
+Spoiler - Flooded surface gravity: I realized that you can model the dense core as an additional point mass (with mass reduced equivalent to density lowered by 1), which adds a force proportional to 1/R^{2,} to the pull of a sphere of radius R, which at the surface is proportional to R. This is much simpler to reason about, if we plug in a density of 3.39, then by flooding the planet with water we will LOWER gravity until we reach a radius 1.6845192 larger than the original. After that the gravity will start increasing again. Gravity will only surpass the original surface gravity when you increase the radius to 3.14898 of the original

@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: bpgbcg
+:Score: 13
+:DateUnix: 1597342368.0
+:DateShort: 2020-Aug-13
+:END:
+
+Believe it or not, this extremely specific thing has been brought up enough times that it's addressed in the [[https://www.patreon.com/posts/worth-candle-faq-26938299?utm_medium=post_notification_email&utm_source=post_link&utm_campaign=patron_engagement][FAQ]].
+
+To quote:
+
+#+begin_quote
+  But doesn't it work equally well to map Aerb as an infinitely tiling offset grid of rectangles with ratio 3/2:√3?
+
+  Yes. And yes, this is easier to fit on a conventional rectangular map without wasted space. However, there are two considerations here. The first is that if you make a map that just shows a rectangle, the offset means that your map needs additional information about where you end up if you go north, south, etc. Going north on the right half of the map means that you end up in the south of the left half of the map, but going north on the left half of the map means that you end up in the south of the right hand of the map. You could maybe make up for this with color-coding the edges, but it's kind of ugly, and doesn't result in good distance calculations. Second (and this is long-standing Word of God, canonized in "A Brief Description of Aerb"), Aerb fits more neatly into a hexagonal shape than a rectangular one. In other words, you can fit all the major and minor landmasses in a hexagonal shape without cutting anything off, but you can't do the same with a rectangular map.
+#+end_quote

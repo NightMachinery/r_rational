@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: AndHisHorse
+:Score: 3
+:DateUnix: 1595128971.0
+:DateShort: 2020-Jul-19
+:END:
+
+If it triggers roughly 10/day, there's an expected value of (10 leaps in 86400 seconds/day + 10 leaps/day * 300 seconds/leap = 0.000112 leaps/second); multiply this by 300 seconds/leap to get 0.0336 "extra" leaps per leap - the expected value of getting a second leap before the first is over. This will happen roughly once every (1 extra leap / 0.0336 extra leaps per leap = 29.8 leaps per extra leap; 29.8 leaps per extra leap / 10 leaps/day = 2.98 days per extra leap). However, this is equally likely to be a leap on second 1 or second 299 of the initial leap; if we restrict to, say, the first 30 seconds of the initial leap, we take our math above to get 1/10th as many useful events, so we get a second leap within 30 seconds of the first - a total jump back of between 570 and 600 seconds - about every 30 days (one in 300 leaps). If we want a third, we'd get that once in every 300 _second_ leaps, which would be about 50 years; let's not count on that.
+
+All this is to say, we can reliably count on going back slightly further in time, with which we can build in all sorts of slightly more complex behaviors. This is a modification to all of the other suggestions on this comment, not competitor to them.

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: imyourfoot
+:Score: 1
+:DateUnix: 1537493501.0
+:DateShort: 2018-Sep-21
+:END:
+
+I meant 'Until proven otherwise' on a case by case basis. You're right that that strategy will identify correct predictions as incorrect until the poster reveals the unhashed prediction. On the other hand anyone who's posting precommitment hashes is clearly interested in having people know they made a correct prediction, and if a lot of people followed this strategy it would give the precommitters a strong incentive to include a deadline, circumventing the problem.
+
+I suppose malicious precommitters could give unnecessarily long deadlines and hope people forget the precommitment by the time it comes around. One strategy against that would be to discount the value of any prediction posted with an excessively long deadline, as compared to the content of the prediction.
+
+Any decent encryption function will have the following properties (and these are insufficient to qualify as 'decent' by themselves):
+
+1) You can't predict anything (except the length) about the output of the function given a particular input without actually running the function.
+
+2) You can't recover the input from the output, nor can you recover any information (except the length) about the input.
+
+3) If you know a given input X and a given output f(X), there is no way to modify X to produce Y that will give you any information about f(Y) without actually executing the function. Equivalently, flipping any non-zero number of bits in an input will statistically result in 50% of the output bits also being flipped.
+
+The combination of those means that there's no way to generate messages with equal hashes besides brute force, which is completely inysfeasible given the size of the keyspace.

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: varno2
+:Score: 3
+:DateUnix: 1562294812.0
+:DateShort: 2019-Jul-05
+:END:
+
+don't you mean
+
+DO [ RPMs++; ] WHILE [RPMs != X] //relevant difference is <
+
+as the wrong statement. the code written would not exhibit the bug expected.

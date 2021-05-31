@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: Izeinwinter
+:Score: 2
+:DateUnix: 1595541219.0
+:DateShort: 2020-Jul-24
+:END:
+
+Way too complicated, especially since both writing and decryption of one time pad messages can be made blindingly fast. If you use a binary pad, the only step from "Mathematically unbreakable ciphered message" to "Clean Morse" is xor against the book, which you can do as fast as you receive or send the message.

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: causalchain
+:Score: 1
+:DateUnix: 1560071193.0
+:DateShort: 2019-Jun-09
+:END:
+
+The owner has created an interface, so I'll assume that the program can query a number of points and manipulate the data. Assuming the height parameter is easy to use, query lines across the earth and do some statistical analysis to smooth out the bumps; you should get regions of water and not-water. Repeating this for many lines should begin to form approximations for land masses, which can be matched up to a map. Once the general position and orientation is found, we need more precision, and we can do that with a series of (elementally) distinct things with progressively smaller sizes.

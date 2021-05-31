@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: sambelulek
+:Score: 1
+:DateUnix: 1529389205.0
+:DateShort: 2018-Jun-19
+:END:
+
+Now that you mentioned it, it's definitely a plot hole. Not that it can't be easily resolved. Simply have the crown record 3 values into Gate mechanism for each marked souls: ID of soul to be pulled back, countdown until that soul stop being pulled back, and countdown until this record erased from Gate mechanism (so that new record can be made without any conflict).
+
+This require the Gate to have an instruction layer to be executed before each start of a loop. But this is already present as Gate already have record of controller ID, what's inside the orb, what souls' ID to not be recreated, so on and so forth.

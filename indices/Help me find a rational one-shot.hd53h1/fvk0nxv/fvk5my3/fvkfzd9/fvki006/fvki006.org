@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: crispin1
+:Score: 3
+:DateUnix: 1592770447.0
+:DateShort: 2020-Jun-22
+:END:
+
+It's inspired by undefined behaviour in c++... anything can happen, but it's usually both surprising and useless. Obviously in the story we don't have a formal language spec, but I guess you could view her error as calling a class destructor from a pointer that either references the wrong data type, or points to deallocated memory.
+
+The orb thing is the os killing the process after it's stumbled on a bit from erratic behaviour into an illegal memory access. Or an exception handler if you have exceptions switched on, yeah.
+
+Edit: maybe a method call not a destructor as in the real world she's only moving the object to the bin not making it disappear altogether.

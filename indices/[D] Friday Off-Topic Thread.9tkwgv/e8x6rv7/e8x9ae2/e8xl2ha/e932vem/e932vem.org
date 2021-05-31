@@ -1,0 +1,23 @@
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1541405594.0
+:DateShort: 2018-Nov-05
+:END:
+
+That takes a lot of computing power per mind, though, and may very well not be fully accurate. A much simpler solution to the problem of simulating minds that were worth simulating is to go for a more all-inclusive approach.
+
+Consider this:
+
+- Any human mind fits inside a chunk of computational hardware the size of a human head.
+- A finite number of bits worth of information can be encoded in a finite volume of space. Therefore, there are a finite - albeit extremely large - number of possible human minds.
+- A simulation will not want to simulate /all possible/ human minds, because a person who is currently being subjected to the most terrible tortures for no reason is also a human mind. Therefore, there are minds that it is desirable to simulate, and minds that it is not desirable to simulate.
+- Desirability of simulation is not a binary on/off state, but rather a continuous spectrum - minds can be more or less desirable than each other to simulate.
+
+Therefore, consider this potential simulator.
+
+- First, a mathematical expression is calculated that assigns a number to how desirable a given mind is to simulate.
+- Second, hat expression is used to generate minds, in order, from the most desirable mind to simulate towards the least. (Naturally, the program never completes due to the heat death of the universe - the least desirable minds are thus never simulated).
+- Each mind is simulated for exactly one clock tick per possible sensory input - cycling over all possible sensory inputs. (It is not necessary to simulate a mind for more than a single clock tick, since the following clock tick it will be a similar but slightly different mind - which will in turn be simulated during its turn in the sequence of simulations).
+
+In this manner, those historical, or fictional, or even non-existent people which are most desirable to simulate can be simulated for exactly as long as they remain desirable to simulate.

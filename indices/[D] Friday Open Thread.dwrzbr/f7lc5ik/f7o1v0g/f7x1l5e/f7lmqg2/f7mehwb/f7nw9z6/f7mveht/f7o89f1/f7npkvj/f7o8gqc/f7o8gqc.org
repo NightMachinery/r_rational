@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: jtolmar
+:Score: 3
+:DateUnix: 1573922881.0
+:DateShort: 2019-Nov-16
+:END:
+
+Along those lines, [[https://www.youtube.com/watch?v=ayPqjPekn7g&feature=emb_logo][NVidia research published some really neat stuff in AI-generated graphics last year]]. They performed image segmentation on a real scene of driving to turn it into a blocky, mono-colored image, and trained a neural net (I think some sort of GAN?) to do style transfer back to the real images. Then they set a game engine to just render single colors for what type of object it's showing, and had the neural net turn that into new video.

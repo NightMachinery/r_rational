@@ -1,0 +1,112 @@
+:PROPERTIES:
+:Author: MrCogmor
+:Score: 3
+:DateUnix: 1529848813.0
+:DateShort: 2018-Jun-24
+:END:
+
+I feel like you are failing to grasp mine. The brain itself doesn't directly implement recursion. It uses a stochastic neural network which when given proper input can emulate recursion but isn't actually a recursive system. If elves can't directly recursion then they can model it fairly easily using iteration. This is actually what humans generally do. If they can't model procedures that could be implemented recursively then they can't model anything because you can implement any loop as nested recursion.
+
+The basic way recursive functions are actually solved by humans and computers is iterative (though humans and compiler optimisations may actually skip the process in some process by using mathematical reasoning the answer must be a certain value) using a stack as I posted earlier.
+
+E.g Let's say have the definition
+
+#+begin_example
+  EvenOrOdd(n):
+
+      if n == 1: return odd
+
+
+      if n == 2:  return even
+
+      if EvenOrOdd(n−1) is odd {
+           return even
+      else
+           return odd
+#+end_example
+
+And you are calculating EvenOrOdd(5) using the above algorithm (without skipping).
+
+Your stack at start would be something like [
+
+EvenOrOdd(5) At (START)
+
+]
+
+Then you would get to part with if EvenOrOdd(n−1) is odd and that would go on the stack
+
+[
+
+EvenOrOdd(4) At (START)
+
+EvenOrOdd(5) At ( if EvenOrOdd(n−1) is odd {)
+
+]
+
+Again
+
+[
+
+EvenOrOdd(3) At (START)
+
+EvenOrOdd(4) At ( if EvenOrOdd(n−1) is odd {)
+
+EvenOrOdd(5) At ( if EvenOrOdd(n−1) is odd {)
+
+]
+
+Again except this time it is different
+
+[ EvenOrOdd(2) At (if n == 2: return even)
+
+EvenOrOdd(3) At ( if EvenOrOdd(n−1) is odd {)
+
+EvenOrOdd(4) At ( if EvenOrOdd(n−1) is odd {)
+
+EvenOrOdd(5) At ( if EvenOrOdd(n−1) is odd {)
+
+]
+
+There is a return value so
+
+[
+
+even
+
+EvenOrOdd(3) At ( if EvenOrOdd(n−1) is odd {)
+
+EvenOrOdd(4) At ( if EvenOrOdd(n−1) is odd {)
+
+EvenOrOdd(5) At ( if EvenOrOdd(n−1) is odd {)
+
+]
+
+The value of the function is sent back to the function that called it. That in turn calculates its new value
+
+[
+
+odd
+
+EvenOrOdd(4) At ( if EvenOrOdd(n−1) is odd {)
+
+EvenOrOdd(5) At ( if EvenOrOdd(n−1) is odd {)
+
+]
+
+again
+
+[
+
+even
+
+EvenOrOdd(5) At ( if EvenOrOdd(n−1) is odd {)
+
+]
+
+[
+
+odd
+
+]
+
+Your answer is odd

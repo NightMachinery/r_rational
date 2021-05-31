@@ -5,6 +5,7 @@
 :Author: blacklemon67
 :Score: 56
 :DateUnix: 1613416109.0
+:DateShort: 2021-Feb-15
 :END:
 
 ** This is kinda neat as a fake Wikipedia article, but it doesn't really tell much of a story. Once you remove the purely factual background material on hash functions, there's only a few paragraphs that boil down to "either someone has a megaultrasupercomputer, or SHA-256 has been broken."
@@ -14,13 +15,15 @@ Also, speaking as a cryptographer: hash functions being broken is generally surp
 :Author: JohnKeel
 :Score: 23
 :DateUnix: 1613425388.0
+:DateShort: 2021-Feb-16
 :END:
 
 *** I think you're skipping over the interesting parts of the story. Someone found a vulnerability in SHA-256: sure, but that's just the setup. They announced this with a huge data dump of reversals for /double-/SHA-256, which were all of a particular string format with no explanation why. It was distributed via torrent and 75% went missing, and no one is sure why. The unknown method is mildly interesting; the unknown /motive/ is fascinating.
 :PROPERTIES:
 :Author: Auroch-
-:Score: 5
+:Score: 6
 :DateUnix: 1613499939.0
+:DateShort: 2021-Feb-16
 :END:
 
 **** My problem is that the motive has no evidence towards any particular solution. I think that the article is neat - but I wouldn't call it a story, because the only thing there is a mystery box.
@@ -28,6 +31,7 @@ Also, speaking as a cryptographer: hash functions being broken is generally surp
 :Author: JohnKeel
 :Score: 2
 :DateUnix: 1613516763.0
+:DateShort: 2021-Feb-17
 :END:
 
 ***** A mystery box is a specific thing and there is no indication this is that thing. The fact that there is no clear explanation does not make it a mystery box; a mystery box is when no clear explanation exists or even could exist. This is a story in the tradition of [[https://en.wikipedia.org/wiki/Thiotimoline][Thiotimoline]].
@@ -35,6 +39,7 @@ Also, speaking as a cryptographer: hash functions being broken is generally surp
 :Author: Auroch-
 :Score: 1
 :DateUnix: 1613535701.0
+:DateShort: 2021-Feb-17
 :END:
 
 
@@ -43,16 +48,19 @@ Also, speaking as a cryptographer: hash functions being broken is generally surp
 :Author: Galap
 :Score: 2
 :DateUnix: 1613517121.0
+:DateShort: 2021-Feb-17
 :END:
 
 **** There are a bunch of heuristics used when creating hash functions, most of which boil down to “we're pretty sure this defeats a known method of attacking hash functions.” In today's commonly-used hashes (the ones that are practical to use), they're also accepted as probably secure because a lot of skilled cryptanalysts have failed to show weaknesses, rather than because of formal proofs.
 :PROPERTIES:
 :Author: JohnKeel
-:Score: 6
+:Score: 7
 :DateUnix: 1613570560.0
+:DateShort: 2021-Feb-17
 :END:
 
-***** #+begin_quote
+***** u/PeridexisErrant:
+#+begin_quote
   a lot of skilled cryptanalysts have failed to show weaknesses
 #+end_quote
 
@@ -63,10 +71,12 @@ Or have at any rate failed to publicise weaknesses, which we all pretend is basi
 :Author: PeridexisErrant
 :Score: 3
 :DateUnix: 1613891254.0
+:DateShort: 2021-Feb-21
 :END:
 
 
-*** #+begin_quote
+*** u/jivow:
+#+begin_quote
   Hash functions in general are usually not based on hard computational assumptions in the way RSA depends on factoring.
 #+end_quote
 
@@ -77,13 +87,15 @@ If someone was able to generate long partial inversions easily on a modern hash 
 :Author: jivow
 :Score: 1
 :DateUnix: 1613527485.0
+:DateShort: 2021-Feb-17
 :END:
 
 **** Author here. A collection of partial hash inversions described in the story would only prove that doubled SHA-256 is broken, it wouldn't really say much about other hash functions. JohnKeel is right to say that hash functions aren't based on mathematically hard problems like RSA is, and there have been countless hash functions that have been broken from careful mathematical analysis. I won't to go into detail of why I wrote it this way; I want to preserve the "mystery box" of this situation.
 :PROPERTIES:
 :Author: blacklemon67
-:Score: 5
+:Score: 7
 :DateUnix: 1613535294.0
+:DateShort: 2021-Feb-17
 :END:
 
 ***** Oh, I hadn't realized! I really appreciate that you actually went ahead and generated a few partial inversions- it's a fun detail.
@@ -91,6 +103,7 @@ If someone was able to generate long partial inversions easily on a modern hash 
 :Author: JohnKeel
 :Score: 1
 :DateUnix: 1613571879.0
+:DateShort: 2021-Feb-17
 :END:
 
 ****** thanks! I had to write my own "miner" to find them so I could use the accelerated sha256 functions on my cpu
@@ -98,6 +111,7 @@ If someone was able to generate long partial inversions easily on a modern hash 
 :Author: blacklemon67
 :Score: 1
 :DateUnix: 1613584878.0
+:DateShort: 2021-Feb-17
 :END:
 
 
@@ -110,6 +124,7 @@ So, easy factoring suddenly means that all cryptosystems depending on hard facto
 :Author: JohnKeel
 :Score: 6
 :DateUnix: 1613571522.0
+:DateShort: 2021-Feb-17
 :END:
 
 
@@ -122,6 +137,7 @@ So, easy factoring suddenly means that all cryptosystems depending on hard facto
 :Author: GlimmervoidG
 :Score: 9
 :DateUnix: 1613417889.0
+:DateShort: 2021-Feb-15
 :END:
 
 
@@ -132,6 +148,7 @@ rip to bitcoin tho
 :Author: basiliskgf
 :Score: 6
 :DateUnix: 1613430732.0
+:DateShort: 2021-Feb-16
 :END:
 
 *** The resulting Bitcoin Next would appear to survive, although only time would tell if the damage from Basilisk would kill the trust and hype long-term.
@@ -139,6 +156,7 @@ rip to bitcoin tho
 :Author: fljared
 :Score: 2
 :DateUnix: 1613536138.0
+:DateShort: 2021-Feb-17
 :END:
 
 
@@ -147,6 +165,7 @@ rip to bitcoin tho
 :Author: everything-narrative
 :Score: 4
 :DateUnix: 1613424272.0
+:DateShort: 2021-Feb-16
 :END:
 
 *** Yeah, or the better SCP articles-=. Not in being supernatural, but in telling a story without a clear answer, and only seeing the results on the outside. Very few articles that go that route do it well, but this one does.
@@ -154,14 +173,16 @@ rip to bitcoin tho
 :Author: fljared
 :Score: 2
 :DateUnix: 1613536198.0
+:DateShort: 2021-Feb-17
 :END:
 
 
 ** Mathematical cosmic horror.
 :PROPERTIES:
 :Author: serge_cell
-:Score: 3
+:Score: 4
 :DateUnix: 1613462774.0
+:DateShort: 2021-Feb-16
 :END:
 
 
@@ -170,6 +191,7 @@ rip to bitcoin tho
 :Author: barnett9
 :Score: 1
 :DateUnix: 1613435486.0
+:DateShort: 2021-Feb-16
 :END:
 
 
@@ -178,6 +200,7 @@ rip to bitcoin tho
 :Author: Xadith
 :Score: 1
 :DateUnix: 1613621075.0
+:DateShort: 2021-Feb-18
 :END:
 
 
@@ -186,6 +209,7 @@ rip to bitcoin tho
 :Author: Kimundi
 :Score: 1
 :DateUnix: 1614034175.0
+:DateShort: 2021-Feb-23
 :END:
 
 
@@ -194,4 +218,5 @@ rip to bitcoin tho
 :Author: ShareDVI
 :Score: 1
 :DateUnix: 1613423839.0
+:DateShort: 2021-Feb-16
 :END:

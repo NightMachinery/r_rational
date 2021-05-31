@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: JohnKeel
+:Score: 6
+:DateUnix: 1613571522.0
+:DateShort: 2021-Feb-17
+:END:
+
+Preimage resistance is a security property that any particular hash function might (hopefully) have. The preimage resistance of SHA-256 does not have some mathematical assumption that it depends on such that we can prove SHA-256 is preimage resistant so long as a certain problem (factoring, discrete Diffie-Hellman, lattice operations are common) is hard to solve.
+
+This is in contrast to RSA. There are simple proofs that, so long as a large number is hard to factor, messages cannot be signed or decrypted without the corresponding private key (and in fact, if numbers are easy to factor, then also RSA is easy to break).
+
+So, easy factoring suddenly means that all cryptosystems depending on hard factoring may have simple attacks; but a discovery that SHA-256 does not have preimage resistance does not formally translate to other hashes not having preimage resistance, except insofar as similar cryptanalysis may be applied.

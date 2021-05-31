@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: Kinoite
+:Score: 1
+:DateUnix: 1530995481.0
+:DateShort: 2018-Jul-08
+:END:
+
+(I'm assuming that I can't just use a one time pad or overt crypto)
+
+If I could prepare in advance, I might create some kind of 'check digit' style check for consistency of the message.
+
+The last number on your credit card doesn't convey information, it just tells you that the rest of the numbers were typed correctly and not altered or switched.
+
+The problem is that you'd want to convey information even if the opponent made small alterations, and a check didgit tends to be valid or invalid.
+
+So, if I had a bunch of time, I'd do the following:
+
+Break the message into chunks based on punctuation. Calculate a check digit for each part.
+
+A part is "valid" if the check didgit is 0. Expect me to put in "invalid" parts as padding. When I initially write my message, the invalid parts will have check diget that follow some simple pattern (1. 2, 3, 4, 5, ...)
+
+Recover the message by just reading the valid parts. Use the invalid parts to detect meddling from the opposition and figure out what messages they think are important.
+
+If I had pen and paper, I'd map letters to numbers and use the luhn algorithm.
+
+If I had to do it in my head, I'd just calculate my check didgit based on words and their memorized word to number map. Luhn scores would be pretty easy to calculate for short phrases.

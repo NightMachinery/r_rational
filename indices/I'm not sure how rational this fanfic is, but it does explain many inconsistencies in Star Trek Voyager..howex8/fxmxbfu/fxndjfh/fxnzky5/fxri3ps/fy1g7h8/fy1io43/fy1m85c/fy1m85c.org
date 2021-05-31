@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: derefr
+:Score: 1
+:DateUnix: 1594740573.0
+:DateShort: 2020-Jul-14
+:END:
+
+I think the idea was more that they couldn't have predicted that CPU power would increase so quickly that it'd affect Windows 95 /before/ it was EOLed in late 2000.
+
+The heuristic for CPU power in the 90s was, effectively, Moore's law. Microsoft and other software authors felt comfortable writing software that assumed the hardware might get, say, 10x faster, given that it looked like it would end up with 10x more transistors.
+
+And the transistor count of CPUs /did/ fit to Moore's law /incredibly/ well throughout the 90s. But CPUs were /also/ being optimized in other ways at the same time:
+
+- Decreasing the number of clock cycles required for any given instruction to execute.
+- Instruction pipelining, allowing the CPU to do other work while waiting for memory fetches et al to complete.
+- Getting more cores, meaning that suddenly a lot more "bulk work" could get done per core per preemption period, since things like interrupts could happen on the more-idle core.
+- Decoupling memory bus speed from CPU clock speed, and widening the memory bus beyond the word-size, allowing pipelined memory fetches to happen with far less of a pipeline stall.
+- Replacing a passive-cooling paradigm in consumer PCs with an active-cooling paradigm, allowing TDP to greatly increase, allowing CPUs to be scaled up to run at voltages/frequencies previously considered ridiculous outside of data centers.
+
+So, where the 10-year period saw a 10x increase in transistor count per CPU die, it saw a /far greater/ than 10x increase in CPU speed. Nobody could have predicted that the home computer market---pretty stagnant paradigmatically throughout the 70s-90s---would suddenly see /all/ of these multiplicative changes in performance, all at once.

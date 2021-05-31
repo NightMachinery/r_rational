@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: sickening_sprawl
+:Score: 2
+:DateUnix: 1544576582.0
+:DateShort: 2018-Dec-12
+:END:
+
+#+begin_quote
+  allomancer burning tin to keep an eye out for distant enemies
+#+end_quote
+
+and
+
+#+begin_quote
+  For sight, it means the feruchemist is able to 'zoom in' on distant things.
+#+end_quote
+
+This potentially breaks physics. Electromagnetic radiation has a property called [[https://en.wikipedia.org/wiki/Etendue][conservation of étendue]], which is a consequence of the second law of thermodynamics. Lenses, and the path photons take through space, have to be time reversible - this is why you can't [[https://what-if.xkcd.com/145/][set a fire from moonlight]]. If your eye is able to pull out more information from a source despite your cornea having the same refractive index, then you have free energy due to more photons hitting your optic nerve than have left the object via black body radiation. With massively invasive eye surgery, give someone massive "eyes" which are actually just lenses pointed at a solar panel, and then have them constantly use tin. Free power.
+
+Not entirely sure all the consequences of photons no longer being time invariant, but I think it'd be pretty bad. I saw some thought experiment for using vampires being unable to be viewed in mirrors to do time travel, but not sure if that's applicable - it was something like due to photon time symmetry you can detect if a photon will be emitted and hit a vampire off a mirror in the future, even if the vampire is outside your light cone, but if you're already breaking photon time symmetry that probably doesn't hold. There's also something in there about U(1) gauge symmetry.
+
+(If tin only increases your /sensitivity/ then there's a hard limit on how far you can see, since your optic nerve being able to identify single photons doesn't help if you don't have enough rods and cones in the first place, and you'd start running into problems with light inference if it fixed that too.)
+
+Seeing through the threads in a blindfold should also be impossible: You can't see through a blindfold because light is being reflected by the fabric, and light has to be able to /hit/ your eye for you to be able to see. I'm not sure why anyone in-universe wouldn't just use thicker bandages if they know x% of the population is able to see through them. [[https://sci-hub.tw/10.1016/s0257-8972(01][This]]01055-6) says that the average distance between cotton threads in a light woven pattern is 100 microns - which is half the average wavelength of visible light - and that's not including the other layer of threads interlacing with it. I'm not sure /any/ rational school of magic would let you see a full picture through that sort of mesh without breaking physics.
+
+#+begin_quote
+  Tapping hearing makes a feruchemist able to pick out individual components of the sounds they are hearing
+#+end_quote
+
+Hearing anything is based off a Fourier transformation, which is done via tiny hairs in the ear that activate based off different resonant frequencies of sound. For magic to be able to give you a higher range of frequencies, it'd have to stimulate your cochlear nerve directly, since you don't have a physical means of picking up only those new frequencies. Hearing lose in the elderly or by going to too many rock concerts is mediated by damage to those hairs, so using tin should give you your entire hearing range back - even if you're deaf, in fact, since it's the same mechanism Cochlear implants use (direct nerve stimulation).
+
+"Follow a conversation taking place on the other side of a busy room" is a bit weird, since in most cases that's physically impossible - the sound layers up with constructive and destructive interference, so by the time the sound reaches your ears there's no method of recovery no matter how precise your ears are. Depending on how tin magic does this, it might be breaking information theory entropy bounds: Fast Fourier transform is O(n log n) time, which has been the bane of a few "infinite compression breakthroughs" or solving NP problems. If magic is able to give you the FFT of a signal in O(1) time with infinite precision, then you could factor RSA public keys since the main speedup in Shor's algorithm is due to the quantum Fourier transformation of time O(log log n). (I think not really, because you can't physically represent an RSA public key within the universe and would still need O(n log n) inverse Fourier transform to sample from the nerve signals, but it's the thought that counts).

@@ -3,8 +3,9 @@
 * [D] Saturday Munchkinry Thread
 :PROPERTIES:
 :Author: AutoModerator
-:Score: 5
+:Score: 6
 :DateUnix: 1530975999.0
+:DateShort: 2018-Jul-07
 :END:
 Welcome to the Saturday Munchkinry and Problem Solving Thread! This thread is designed to be a place for us to abuse fictional powers and to solve fictional puzzles. Feel free to bounce ideas off each other and to let out your inner evil mastermind!
 
@@ -37,8 +38,9 @@ I've been looking at [[https://security.stackexchange.com/questions/45963/diffie
 (Note that the pre-existing authentication system /can/ be used to transmit bits, because you can say to your friend "fail the next part of the authentication for 1, pass it for 0", and whatever your friend says, the third party won't know if you're going to interpret it as 1 or 0. But the table is probably more effective.)
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 9
+:Score: 8
 :DateUnix: 1530978361.0
+:DateShort: 2018-Jul-07
 :END:
 
 *** Usually for cryptography, we call the two users Alice and Bob, but in this scenario, I think I'll call them Val and Joon...just random names I came up with ;-)
@@ -71,6 +73,7 @@ If you are patient and want an even simpler system, just write down a bunch of f
 :Author: munkeegutz
 :Score: 4
 :DateUnix: 1530992561.0
+:DateShort: 2018-Jul-08
 :END:
 
 
@@ -83,6 +86,7 @@ There are some weaknesses humans will cause, i.e. timing attacks (counting how l
 :Author: Joern314
 :Score: 2
 :DateUnix: 1530985828.0
+:DateShort: 2018-Jul-07
 :END:
 
 **** Non-Mobile link: [[https://en.wikipedia.org/wiki/One-time_pad]]
@@ -94,6 +98,7 @@ There are some weaknesses humans will cause, i.e. timing attacks (counting how l
 :Author: HelperBot_
 :Score: 1
 :DateUnix: 1530985838.0
+:DateShort: 2018-Jul-07
 :END:
 
 
@@ -116,6 +121,7 @@ edit: Because that stuff is fascinating, apparently even almost trivial ciphers 
 :Author: ceegheim
 :Score: 2
 :DateUnix: 1531162142.0
+:DateShort: 2018-Jul-09
 :END:
 
 **** It seems that your comment contains 1 or more links that are hard to tap for mobile users. I will extend those so they're easier for our sausage fingers to click!
@@ -129,6 +135,7 @@ edit: Because that stuff is fascinating, apparently even almost trivial ciphers 
 :Author: FatFingerHelperBot
 :Score: 1
 :DateUnix: 1531162153.0
+:DateShort: 2018-Jul-09
 :END:
 
 
@@ -155,6 +162,7 @@ If I had to do it in my head, I'd just calculate my check didgit based on words 
 :Author: Kinoite
 :Score: 1
 :DateUnix: 1530995481.0
+:DateShort: 2018-Jul-08
 :END:
 
 
@@ -169,6 +177,7 @@ Unless your captor is a genius, they won't know what a phrase like that one sing
 :Author: Terkala
 :Score: 1
 :DateUnix: 1530997152.0
+:DateShort: 2018-Jul-08
 :END:
 
 **** It's a one time pad, don't revert. Using a book as a random pad should make your letter distribution the self-convolution of the english letter distribution, that doesn't sound secure. There's no need to mention the bible to the attacker if you can prearrange that you're talking about the bible. There's no need to transmit page numbers, just use all page numbers in sequence.
@@ -176,6 +185,7 @@ Unless your captor is a genius, they won't know what a phrase like that one sing
 :Author: Gurkenglas
 :Score: 1
 :DateUnix: 1531001728.0
+:DateShort: 2018-Jul-08
 :END:
 
 ***** To give a specific example, let's say we picked a bible page with the words "the" as the first word on the page. That gives a shift key of 20,8, 5. So you shift the first letter of your message 20 places, then 8, then 5. If you need a longer message than 3 characters, you just take more characters from the same page. Just so we're both talking about the same encryption method.
@@ -191,6 +201,7 @@ Letter distribution analysis only works if you have a large body of text to work
 :Author: Terkala
 :Score: 1
 :DateUnix: 1531030422.0
+:DateShort: 2018-Jul-08
 :END:
 
 ****** That's the cipher I understood you to mean.
@@ -202,6 +213,7 @@ For example, we could guess that Bob says "Alice" somewhere, see what the key at
 :Author: Gurkenglas
 :Score: 1
 :DateUnix: 1531090556.0
+:DateShort: 2018-Jul-09
 :END:
 
 
@@ -216,6 +228,7 @@ Then it's easy, albeit with a significant constant factor slowdown. Bethel shoul
 :Author: Veedrac
 :Score: 1
 :DateUnix: 1531002020.0
+:DateShort: 2018-Jul-08
 :END:
 
 
@@ -228,6 +241,7 @@ But the decryption is only half the problem. You /also/ want to be sure that the
 :Author: CCC_037
 :Score: 0
 :DateUnix: 1531054997.0
+:DateShort: 2018-Jul-08
 :END:
 
 **** Eavesdropper could take a guess at what sort of action you would recommend in that context, change "do what Harry did to Riddle's diary" to something generic, and swap it back in at an inconvenient point.
@@ -235,6 +249,7 @@ But the decryption is only half the problem. You /also/ want to be sure that the
 :Author: Gurkenglas
 :Score: 2
 :DateUnix: 1531091257.0
+:DateShort: 2018-Jul-09
 :END:
 
 ***** Hmmm. Dangerous, on Eavesdropper's part. If Talker suggests anything that Eavesdropper is /not/ expecting, then Eavesdropper can accidentally trigger all sorts of disaster.
@@ -242,10 +257,12 @@ But the decryption is only half the problem. You /also/ want to be sure that the
 :Author: CCC_037
 :Score: 1
 :DateUnix: 1531121171.0
+:DateShort: 2018-Jul-09
 :END:
 
 
-**** #+begin_quote
+**** u/fish312:
+#+begin_quote
   Magic item whose purpose is to decrypt all encryptions
 #+end_quote
 
@@ -254,6 +271,7 @@ At which point any further conjecture is pointless. Might as well say there's a 
 :Author: fish312
 :Score: 1
 :DateUnix: 1531125262.0
+:DateShort: 2018-Jul-09
 :END:
 
 ***** It still remains sensible to refuse to mention Secrets that it is not Very Important to tell Friend about - because that is a minor change to behaviour, with little to no short-term cost, that can potentially avoid an unlikely negative scenario.
@@ -261,6 +279,7 @@ At which point any further conjecture is pointless. Might as well say there's a 
 :Author: CCC_037
 :Score: 1
 :DateUnix: 1531125844.0
+:DateShort: 2018-Jul-09
 :END:
 
 
@@ -271,8 +290,9 @@ At which point any further conjecture is pointless. Might as well say there's a 
 (it has english subtitles)
 :PROPERTIES:
 :Author: JesradSeraph
-:Score: 8
+:Score: 9
 :DateUnix: 1531052493.0
+:DateShort: 2018-Jul-08
 :END:
 
 *** This reminds me of TFS' DBZA. Especially the bit with the Dragon.
@@ -280,6 +300,7 @@ At which point any further conjecture is pointless. Might as well say there's a 
 :Author: 1337_w0n
 :Score: 1
 :DateUnix: 1531092771.0
+:DateShort: 2018-Jul-09
 :END:
 
 
@@ -288,17 +309,20 @@ At which point any further conjecture is pointless. Might as well say there's a 
 :Author: lars_uf3
 :Score: 3
 :DateUnix: 1531018761.0
+:DateShort: 2018-Jul-08
 :END:
 
-*** #+begin_quote
+*** u/Veedrac:
+#+begin_quote
   Superpowers come in all shapes and sizes, it could be anything you could imagine, god like power, or something insignificant.
 #+end_quote
 
 Then somebody is going to win, and you have no idea who. Spend all your efforts finding that person, and finding people who can find that person, before you lose. Your plan of action depends drastically on who you can get working for you. You will probably still fail though.
 :PROPERTIES:
 :Author: Veedrac
-:Score: 5
+:Score: 6
 :DateUnix: 1531055642.0
+:DateShort: 2018-Jul-08
 :END:
 
 
@@ -307,8 +331,9 @@ Then somebody is going to win, and you have no idea who. Spend all your efforts 
 Hire suitable Supers where possible, especially in law enforcement. Bear in mind that most people don't want to destabilise society, and try to sort out the ones who do. Sharply discourage vigilanteism, but encourage flashy, visible power use amongst registered law enforcement individuals.
 :PROPERTIES:
 :Author: CCC_037
-:Score: 4
+:Score: 3
 :DateUnix: 1531055414.0
+:DateShort: 2018-Jul-08
 :END:
 
 
@@ -323,9 +348,11 @@ That all assumes most superpowers lean towards the popular depictions of powers,
 :Author: CreationBlues
 :Score: 1
 :DateUnix: 1531024936.0
+:DateShort: 2018-Jul-08
 :END:
 
-**** #+begin_quote
+**** u/vimefer:
+#+begin_quote
   If it's "anything you can imagine" as the limits... you're basically guaranteeing anarchy.
 #+end_quote
 
@@ -344,6 +371,7 @@ To put it another way: what is guaranteed by the setting here, is not war but di
 :Author: vimefer
 :Score: 1
 :DateUnix: 1531127570.0
+:DateShort: 2018-Jul-09
 :END:
 
 ***** Anarchy: a state of disorder due to absence or nonrecognition of authority. Unfortunately, "nonrecognition of authority" is fundamental to not only the superhero archetype but also how individuals granted overwhelming power actually play out. Furthermore, regression to the mean doesn't play out in humanities favor, as the "mean" is whatever food we can scavenge out of the ground until the ripe old age of died in childbirth.
@@ -353,9 +381,11 @@ To put it another way: what is guaranteed by the setting here, is not war but di
 :Author: CreationBlues
 :Score: 1
 :DateUnix: 1531205840.0
+:DateShort: 2018-Jul-10
 :END:
 
-****** #+begin_quote
+****** u/vimefer:
+#+begin_quote
   Anarchy: a state of disorder due to absence or nonrecognition of authority
 #+end_quote
 
@@ -366,6 +396,7 @@ But yeah my point is that it is not necessarily a bad thing, which does not auto
 :Author: vimefer
 :Score: 1
 :DateUnix: 1531216043.0
+:DateShort: 2018-Jul-10
 :END:
 
 
@@ -381,6 +412,7 @@ But yeah my point is that it is not necessarily a bad thing, which does not auto
 :Author: turtleswamp
 :Score: 1
 :DateUnix: 1531159448.0
+:DateShort: 2018-Jul-09
 :END:
 
 **** Point 4 should only be done, if there is a need for it.
@@ -390,6 +422,7 @@ It could be enough, if you just make it a sport. And maybe only let military in.
 :Author: norax1
 :Score: 1
 :DateUnix: 1531324105.0
+:DateShort: 2018-Jul-11
 :END:
 
 ***** On #4 the wait and see approach will juts get people killed as the evidence that it's needed will be super-powered people starting fights to try and take over. Best case scenario we get an 9/11 like attack and then take action, worst case scenario "The United States of Dr. Murder-o the merciless; petty and, bad at grammar" is even worse a place to live than it sounds and it's no longer practical to try and institute a pressure valve system.
@@ -401,4 +434,5 @@ For similar reasons open admission is there because turning away somone who want
 :Author: turtleswamp
 :Score: 1
 :DateUnix: 1531340632.0
+:DateShort: 2018-Jul-12
 :END:

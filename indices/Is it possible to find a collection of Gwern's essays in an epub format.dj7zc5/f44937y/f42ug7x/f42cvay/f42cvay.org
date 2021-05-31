@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: Escapement
+:Score: 2
+:DateUnix: 1571330201.0
+:DateShort: 2019-Oct-17
+:END:
+
+If you download e.g. his page on Modafinil and then use Calibre to convert the .html to .epub with entirely default settings with no work whatsoever, the .epub document you get as a result is poorly optimized and looks like actual garbage but is still mostly readable; hilariously the .epub looks better in Moon+ reader than Calibre's built in e-pub viewer. No clue how it would look on whatever software your tablet uses. The embedded equations don't look good at all and may be very difficult to fix though?
+
+You could probably make each essay look a lot better if you put work into configuring things to actually adapt the formatting better. Calibre's [[https://manual.calibre-ebook.com/generated/en/ebook-convert.html][ebook-convert]] has a command-line interface so you could batch download a bunch of his site with e.g. wget and then run them all through a ebook-convert command that you've customized to make Gwern's essays come out better.

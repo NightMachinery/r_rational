@@ -1,0 +1,25 @@
+:PROPERTIES:
+:Author: GeneralExtension
+:Score: 1
+:DateUnix: 1543439029.0
+:DateShort: 2018-Nov-29
+:END:
+
+#+begin_quote
+  and how that affects the rest of the society
+#+end_quote
+
+This view misses out somewhat on how society is more complex - it's a game with more players. For an example where moves are still basically Cooperate or Defect, there's littering.
+
+#+begin_quote
+  normal strategies
+#+end_quote
+
+You could make the strategies more probabilistic. For instance, a program p could cooperate on its first turn, and then use their opponents moves as a set to choose from, and pick one of those to play each turn. This:
+
+1. always cooperates with all_c, tit for tat, spiteful, and soft majority,
+2. after the first turn, always defects against all_d
+3. would end up in a CDCD/DCDC loop against distrustful, and hard majority
+4. Converges to playing C about 50% of the time against random
+
+​

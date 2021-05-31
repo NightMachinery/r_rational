@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: imyourfoot
+:Score: 3
+:DateUnix: 1537044289.0
+:DateShort: 2018-Sep-16
+:END:
+
+The main problem with obfuscated precommitments is that the predictor can simply reveal correct predictions and pretend incorrect ones haven't come to pass yet. Unless the predictor provides a concrete deadline for their prediction to come true, I think the best policy is to simply treat obfuscated predictions as falsified until proven otherwise.
+
+Hash/encryption functions are designed to make finding collisions effectively impossible. If you were able to find a collision like you describe, that would be proof that the function in question was insecure.

@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1535554271.0
+:DateShort: 2018-Aug-29
+:END:
+
+#+begin_quote
+  an inability to adapt on the fly to human strategy once the humans found flaws in the AI's behaviors.
+#+end_quote
+
+This is unfortunately a consequence of the design of the AIs in question. In short (as detailed on OpenAI's page) the AIs can play a game, and /then/ learn from that game; they /can't/ learn on-the-fly. And all those hundreds of years of automated playing-and-learning on all those hundreds of GPUs will be against other versions of the same AI. (No doubt they've mitigated this last point by including in the training matches against their own in-house human players).
+
+Sure, they can start the game with good plans, fallback plans, plans in case the opponent does /this/ or in case the opponent does /that/; but an opponent who finds a weakness in the OpenAI's strategy that genuinely didn't crop up in training is going to be able to exploit that right unto the end of that game.
+
+However, that same weakness won't be there the following year; because if OpenAI is at all sensible, they're recording that game and adding it to the training data. This allows the next version of the AI to exploit the same strategic weaknesses - run that AI against successive versions of itself for a few iterations and you'll end up with an AI that either does not have the same strategic weaknesses, or is able to recover from the exploitation of those weaknesses. It might not be able to adapt on-the-fly, but it most certainly /will/ adapt between games.

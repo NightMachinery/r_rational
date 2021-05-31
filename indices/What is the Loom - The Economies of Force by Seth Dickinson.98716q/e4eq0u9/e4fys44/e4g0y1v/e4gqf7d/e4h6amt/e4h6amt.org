@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 3
+:DateUnix: 1534706670.0
+:DateShort: 2018-Aug-19
+:END:
+
+A Nash equilibrium is /not/ Pareto efficient by definition; that's not anywhere on Wikipedia or any game theory textbook I've ever read, so where'd you get that "definition" from? In fact, the defect-defect state of the Prisoner's Dilemma doesn't even satisfy the Wikipedia definition of Pareto efficiency you yourself quoted:
+
+#+begin_quote
+  Pareto efficiency or Pareto optimality is a state of allocation of resources from which it is impossible to reallocate so as to make any one individual or preference criterion better off without making at least one individual or preference criterion worse off.
+#+end_quote
+
+It is in fact /perfectly/ possible to describe a state of resource allocation where /both/ participants are better off than they are in the defect-defect equilibrium, and that is the state corresponding to the world in which both players cooperate. (If we refer to the players as A and B, then A has more resources in cooperate-world than in defect-world, and so does B; there is no "individual or preference criterion" being made worse off in this case.) I'm really not sure where your confusion lies here, but I'd recommend familiarizing yourself with the definitions a bit more.
+
+*EDIT:* Interestingly enough, not only is the defect-defect equilibrium not Pareto efficient, it's the /only/ possible outcome of the Prisoner's Dilemma that isn't; every other outcome (cooperate-cooperate, cooperate-defect, defect-cooperate) does in fact satisfy the definition of Pareto efficiency. This shows why Pareto efficiency on its own is actually a fairly weak condition; it doesn't distinguish between equilibrium and non-equilibrium states.

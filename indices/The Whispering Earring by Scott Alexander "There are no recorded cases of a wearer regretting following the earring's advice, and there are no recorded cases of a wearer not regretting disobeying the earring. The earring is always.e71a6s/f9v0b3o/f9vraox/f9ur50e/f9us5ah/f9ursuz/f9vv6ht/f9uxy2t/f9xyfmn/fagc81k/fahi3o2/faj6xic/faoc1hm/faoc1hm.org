@@ -1,0 +1,56 @@
+:PROPERTIES:
+:Author: DuskyDay
+:Score: 2
+:DateUnix: 1576261214.0
+:DateShort: 2019-Dec-13
+:END:
+
+Edit: Corrected my first sentence and added a fourth caveat.
+
+Edit3 added.
+
+​
+
+#+begin_quote
+  But there is no isomorphism between the states of the computers as the programs are run
+#+end_quote
+
+There isn't, but that doesn't matter.
+
+Because the output of the computer is determined by the physical state of the computer, there is a subset of the physical properties of the computer that determines that the output of the computer will be the sum of integers from 1 to n.
+
+Those physical properties exist in the computer /right now/ (even though it's in the middle of the calculation), so isomorphism_{DD} can be defined in terms of the current physical state of the computer (and not only in the terms of future output), which makes it a present property of the computer. (Rather than the output being the same in the future mysteriously reaching backwards in time and causing the right qualia in the system in the present moment.)
+
+The question is whether isomorphism_{DD} is enough, or whether we need some other subset of the state (one that has no influence on the output of the computation) to be isomorphic too.
+
+We should be able to bootstrap the intuition to see that isomorphism_{DD} is enough.
+
+Imagine that you have introspective access to the way the computation is performed (rather than your mental state being only determined by that aspect of the computation that determines your outputs). Then you should be able to communicate it to someone, which contradicts the assumption it doesn't influence your outputs.
+
+I can think of four possible caveats:
+
+First: What if something is a part of my mental state without me having introspective access to it?
+
+Possible answer: Then it should at least influence my behavior, or else there's no sense in which it's a part of my mental state, but my behavior is a subset of my outputs (or, depending on how we define behavior, it's equivalent to my outputs).
+
+Second: What if I have introspective access to something, but I'm powerless to let it influence my behavior in any way?
+
+Possible answer: I don't think that can happen. As long as I can communicate in at least some way, I can let it influence my behavior. (A special case are locked-in people, in which case we can look at the brain to find out how their behavior would been influenced if they could move.)
+
+Third: What if an entity with a non-isomorphic computation has /no/ qualia? Then it has no mental state, so this reasoning doesn't apply.
+
+Possible answer: I don't think that's possible either, because then we could arrange [[http://consc.net/papers/qualia.html][fading qualia/suddenly disappearing qualia]] without changing the behavior of the system.
+
+Fourth: What if I have a self-contained simulated world and I calculate, let's say, the state of the world at t = 10 right after t = 1, rather than calculating all states in between. Will the intervening states have had subjective experience?
+
+Possible answer: I don't think computing people like that is possible, even in principle. (Edit: Except for hashing, I guess? Let me know if it's important.) (Edit2: I guess it depends on the circumstances. Did you have anything like that in mind?)
+
+Edit3: The example with the two programs calculating the integers doesn't have any isomorphism of the computational states during the computation, because the two programs aren't conscious.
+
+In any conscious software, the computations will be always isomorphic (not just isomorphic_{DD}) on /some/ level of abstraction, because at every moment, the computation encodes the mental state of the person.
+
+So if we just look at the conscious computation on an arbitrary level of abstraction, there will be no computational isomorphism with the original, but that's because we included even the aspects of the computation that don't influence your qualia.
+
+So if we don't include in our description the superfluous parts of the computation, what we get will be isomorphic to the original.
+
+Are there any cases where this doesn't obviously work?

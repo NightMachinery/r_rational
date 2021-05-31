@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: suyjuris
+:Score: 2
+:DateUnix: 1548326794.0
+:DateShort: 2019-Jan-24
+:END:
+
+Good question! I did not really think about giving a single reasonable probability distribution for a combination of events, just that I minimise the cross-entropy loss on each prediction. (That is the reason there are no 0 or 1s in there.) That said, maybe normalising the probabilities in this case would have been correct, I am not sure how the math works out.

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Veedrac
+:Score: 6
+:DateUnix: 1583757564.0
+:DateShort: 2020-Mar-09
+:END:
+
+The Mana Capacitance Rune allows Rain to give the armour mp. It can store a whole bunch of mp, but it will automatically feed that to its runes. The Enhanced Durability Rune increases the durability limit by about 12k for negligible cost, and the Dark Regeneration Rune can restore durability at 1Hz for 0.8 mp/s (NB: 80 mp/s after losses).
+
+So when there is mana in the Mana Capacitance Rune, it will activate the Enhanced Durability Rune, and then quickly exhaust itself repairing the armour up to the total cap with the Dark Regeneration Rune. When that exhausts the available mana, the Enhanced Durability Rune shuts back off, and the durability cap lowers back to baseline, hence the weirdness of having durability greater than the cap.
+
+Once the total durability hits full (~13k), the DDR doesn't have any work to do, so the armour can keep its charge around, only slowly bleeding it to the other runes at just 65 mp/day. When not in the dark, the DDR also won't run, and so he can store charge and the enhancement runes can run then as well.

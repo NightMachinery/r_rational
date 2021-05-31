@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: phylogenik
+:Score: 1
+:DateUnix: 1532274019.0
+:DateShort: 2018-Jul-22
+:END:
+
+I'm a little... confused by the linked blog post. It's very common to share /marginal/ likelihood ratios for model comparison, but ofc those are often /very/ prior sensitive. The blog is instead suggesting the sharing likelihood ratios of various pairs of points in the model's parameter-space, which maybe makes sequential analyses /slightly/ easier when you have a very simple model with a very simple statespace -- here, they seem to take everyone's favorite toy example (coin flipping) and instead of specifying the usual beta prior (which is extra nice for being conjugate to the binomial likelihood) simplify it even further by loading all the prior density (now prior mass, I guess) onto two points {0.5, 0.75}. If they want to share information it'd be much easier to just share their number of heads and trials, but apparently "they don't have time or memory enough to" remember those two numbers (and if the trials are non-independent so they need to remember their order and not just their sum, they're definitely not specifying their model correctly).
+
+Outside toy examples people will usually have different models with multidimensional, continuous parameter-spaces, which makes any sharing of likelihood ratios way to onerous. You get an even stronger curse of dimensionality than with e.g. grid approximation, because your reported values are now pairwise. So in e.g. the most complicated model I mentioned above, if I have ~100k continuously valued parameters (and a few thousand discrete) and can identify the relevant space for each (since many are defined on the reals) and want, say, 100 points on the grid for each, I'd be sharing 1E200000 choose 2 ish, which is a lot lol.
+
+But maybe I'm just misunderstanding things.

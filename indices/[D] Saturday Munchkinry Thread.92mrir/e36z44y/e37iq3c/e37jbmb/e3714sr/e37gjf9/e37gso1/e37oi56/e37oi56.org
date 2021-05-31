@@ -1,0 +1,38 @@
+:PROPERTIES:
+:Author: bacontime
+:Score: 2
+:DateUnix: 1532824249.0
+:DateShort: 2018-Jul-29
+:END:
+
+Yeah. I'm more thinking about getting around the rocket equation and lifting massive amounts of raw material into space. With assembled goods, it might be tricky to distribute the weight, but sheets of metal would work.
+
+Take a square meter of thin plastic film of negligible weight, coat one side in plastic. This can hold about 10 kg at rest without transferring the weight down through to the other side.
+
+We want to move it around, so let's set the cargo limit at 5 kg per layer. 5 kg of iron spread out over one square meter gives us a sheet .64 mm thick. Is that the right thickness for construction in space? I dunno.
+
+--------------
+
+Aha! I figured out how to safely turn the effect on and off.
+
+Step 1: Build a lightweight rectangular plastic enclosure with the special goo coating an inside surface. This prevents the object from resting on its goo face and shattering.
+
+Step 2: place a thin sheet of metal within the plastic enclosure with small rails sticking out the side.
+
+Step 3: Build a device which manipulates the external rails to lift the metal sheet off of the goo. When the metal is lifted, the weight is transferred through the device into the platform underneath.
+
+I drew a picture: [[https://i.imgur.com/Hwon7o8.png]]
+
+--------------
+
+So what can you do with an adjustable ballast that costs 200000 dollars per kilogram and breaks if you jostle it too much?
+
+You can build a [[https://upload.wikimedia.org/wikipedia/commons/a/aa/Perpetual_Motion_by_Norman_Rockwell.jpg][perpetual motion machine]], obviously. Just have the ballasts on a wheel with them weightless going up and heavy going down. This will be useful in the distant future when all the stars have gone out.
+
+But since the sun still exists, then the question becomes whether this is actually more cost effective than other forms of clean energy. I'm guessing no.
+
+Let's see. With a perfectly efficient generator, raising a 5 kg Antinertium cell 1 meter and then letting it fall back down has the potential to create up to 49 Joules of usable energy. Energy output is higher the faster the wheel spins, but accelerate too fast, and the whole thing shatters.
+
+For fun, let's put some of these on the original [[https://en.wikipedia.org/wiki/Ferris_Wheel][Ferris Wheel]], and replace the motor with a generator. The wheel lifts the cells 80 metres, so each cell generates 3924 Joules per rotation (ignoring friction and whatnot), and the ride takes 9 minutes to complete a rotation. A Watt is a Joule per second, so each cell gives us an ouput of 7.27 Watts. Enough to power a small lightbulb.
+
+For a device that costs a million dollars, that's not great. The lifting cycle could be sped up of course, but I don't think we're going to bring the cost down to anywhere near that of wind turbines ( ~80k dollar for a machine that outputs 10k Watts) according to [[http://www.windustry.org/how_much_do_wind_turbines_cost][this.]]

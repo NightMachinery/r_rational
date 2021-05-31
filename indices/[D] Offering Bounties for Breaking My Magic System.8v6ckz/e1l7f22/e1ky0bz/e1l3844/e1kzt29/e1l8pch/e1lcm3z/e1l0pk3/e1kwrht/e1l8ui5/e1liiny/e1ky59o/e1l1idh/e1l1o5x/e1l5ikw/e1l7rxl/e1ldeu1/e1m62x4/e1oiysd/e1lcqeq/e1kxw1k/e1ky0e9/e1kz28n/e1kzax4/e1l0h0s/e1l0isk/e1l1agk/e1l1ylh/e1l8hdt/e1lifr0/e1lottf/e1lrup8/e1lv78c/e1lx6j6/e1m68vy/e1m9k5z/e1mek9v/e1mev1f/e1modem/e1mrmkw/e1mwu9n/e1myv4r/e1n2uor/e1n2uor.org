@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: Kanddak
+:Score: 1
+:DateUnix: 1530505919.0
+:DateShort: 2018-Jul-02
+:END:
+
+There is some ambiguity in your listed MP amounts for various levels of magician experience. Do more-experienced magicians accumulate MP faster, so that the quoted amounts are /per day/? Or are the quoted amounts caps on how much MP a magician has the capacity to store, as they accumulate MP over a long time at a fixed rate?
+
+If MP accumulation is relatively fast, we can do this:
+
+If 1 in 15 not-elves are magic-sensitive, 10% of these have potential to be useful, and about 1/3 of these are sensitive to red magic, that's about one useful red magician per 450 individuals, so they're common enough that any reasonably-sized settlement should have one.
+
+Every morning, the town's red magician spends one day's worth of MP accumulation to invigorate the strongest man in town. It only lasts for a minute, but he spends that minute pulling on a chain. The chain quickly lifts a very heavy object to a great height, from which it is slowly lowered over the course of the day to drive machinery.
+
+(As many others have suggested, this could be supplemented by using siphon to concentrate MP from the larger number of "not enough potential to be useful" red sensitives)
+
+Proposed fix: Invigorate supplies the target ability with a fixed amount of energy per MP instead of a fixed duration in time, so that it is not acting multiplicatively on how much work you can do in one minute. Perhaps invigorating strength adds an amount proportional to MP spent to your maximum strength, and supplies enough energy to use all of that strength for e.g. 15 seconds; but if you only apply 1/4 as much force above what you could without magic, you can sustain that force for a minute. If you just rest & relax, it all dissipates in maybe half an hour. Probably the maximum strength also tapers off over time if not used.
+
+This would also add a little bit of flexibility to use invigorate when the timing is a little less immediate. One could invigorate a soldier when combat is imminent, leaving them some flexibility to use the enhanced ability at a tactically opportune moment (this might not be desired and might have been your motivation for 1 minute? rescale things as desired).

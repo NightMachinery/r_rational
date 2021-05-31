@@ -1,0 +1,40 @@
+:PROPERTIES:
+:Author: 15_Redstones
+:Score: 1
+:DateUnix: 1598703596.0
+:DateShort: 2020-Aug-29
+:END:
+
+Wouldn't your laser experiment where the laser jumps goes in a loop but arrives a second before it started just result in whoever is setting up the wormholes getting a laser in the face because the laser jumped back as far as it could? In order for infinite energy to occur, you'd have to keep firing the laser indefinitely. In reality it's a finite energy laser pulse that just ends up hitting its target before it gets fired.
+
+Small disclaimer: I know a little of special but almost none of general relativity, so my idea of time travel is pretty much HPMoR's time turner but it sends things continuously back instead of being activated once. Which as far as I know is actually almost exactly how JK Rowling's time turner works in PoA, and matches the theory of closed timelike curves as possible worldlines.
+
+Edit: Laser experiment in detail. For the sake of simplicity, our wormholes are 1ls apart and have a Δt of -2 seconds. The laser is at the OUT hole and aimed at IN and is set to fire 1 minute pulses. If you switch the laser on at t=0, it will reach IN at t=1s and emerge OUT at t=-1s, giving a total displacement per loop of -1s.
+
+Now let's start with the moment our loop is assembled, long before the laser is fired.
+
+t=0: 1 beam 1 exits OUT and misses IN as it's being assembled, hits wall. 1 beam total.
+
+t=1: beam 2 exits out aimed at IN. 2 beams total.
+
+t=2: beam 2 reaches IN and travels to t=0. Beam 3 exits OUT aimed at IN. 3 beams total.
+
+t=59: beam 59 reaches IN and travels to t=57. Beam 60 exits OUT. 60 beams total.
+
+t=60: beam 60 reaches IN. Beam 1 switches direction, no longer aimed at wall, now also aimed at IN. 60 beams total.
+
+At this point we had 60s of beam 1 hitting the wall and ending, and we have 60 1ls long beams between the wormholes which are really just one continuous 60s beam.
+
+t=x+0: we switch on the laser. At the same time one beam coming out of OUT ends. 60 beams total.
+
+t=x+1: beams out of OUT reduces to 58. 59 beams emitted total, but the 60th is still on the way.
+
+t=x+2: OUT 57, laser 1, 58 beams emitted total, 59th still on the way. Beams hitting IN reduces to 59, matching what happened to OUT at t=x+0.
+
+t=x+59: the last beam from OUT ends. Only the beam from the laser is still emitted, beam 2 still on the way.
+
+t=x+60: laser shuts off. Last beam on the way.
+
+t=x+61: end of last laser beam reaches IN, matching what happened to OUT at t=x+59. All beams have traveled into the past.
+
+At this point the laser is off after having fired for 60s, we've had a 60s pulse hit the wall back at t=0, and in between there were always 60ls worth of total laser beams in existence. Never did we have to deal with infinities.

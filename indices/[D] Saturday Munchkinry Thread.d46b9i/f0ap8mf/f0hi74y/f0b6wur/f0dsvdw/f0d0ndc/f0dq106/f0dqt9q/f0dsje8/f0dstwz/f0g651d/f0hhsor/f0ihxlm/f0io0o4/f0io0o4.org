@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1568644503.0
+:DateShort: 2019-Sep-16
+:END:
+
+The thing is, what you're doing here is generating near-instant [[https://en.wikipedia.org/wiki/Evolutionary_computation][evolutionary computation]] - that is to say, it's quite possible to get very similar results in only slightly slower time-scales with properly designed software and suitably beefy hardware. If it were /that/ simple to use this power to create a cure, then you'd be able to define a similar methodology as a computer program and evolve /that/ into a cure - taking maybe in the order of weeks instead of in the order of minutes (and depending on the beefiness of your hardware that might be even further reduced).
+
+The problem there, though, is that in order for evolutionary computing to work, you need a function that tells you how close to the desired solution your current options are, so that you can kill of the ones furthest from a solution and breed with the closest ones, repeating until you're actually close enough. Without that function, though - without some way to tell which creatures are secreting something closer to the cure than others - all you're going to do is kill all the ones not resistant to bullets.
+
+Evolution's not magic. It'll only move towards secreting the cure if a /partial/ step along that path improves its odds of survival. It's kind of like a ball on a surface - it won't seek out the lowest point. It'll only roll down the slope it's on, even if that slope only takes it to a local minima far away from your desired target.

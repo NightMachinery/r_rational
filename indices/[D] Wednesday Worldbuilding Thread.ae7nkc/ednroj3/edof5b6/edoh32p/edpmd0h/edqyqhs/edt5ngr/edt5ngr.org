@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: Norseman2
+:Score: 1
+:DateUnix: 1547218081.0
+:DateShort: 2019-Jan-11
+:END:
+
+So, the source linked by WilyCoyotee states:
+
+#+begin_quote
+  Impulse trajectory I-3 is near the transition between delta V levels for high impulse trajectories and low brachistochrone trajectories (it is a hyperbolic solar escape orbit plus 30 km/s).
+#+end_quote
+
+So, how much delta V is that actually? Solar escape velocity from Earth is 42.1 km/s [[[https://www.quora.com/What-is-the-escape-velocity-from-the-sun-And-from-the-solar-system][Ref]]], but Earth already orbits around the sun at an average speed of 29.7 km/s, leaving only an additional 12.4 km/s to achieve escape velocity. However, Earth's gravity will slow you down a bit as you move away, so you actually need about 16.4 km/s [[[https://www.physicsforums.com/threads/escape-velocity-from-solar-system.662985/#post-4221895][Ref]]]. So, the values for the I-3 column appear to be based on a delta V budget of 16.4 km/s + 30 km/s.
+
+So, how much delta V do we actually have? If you dig into the references I cited for magneto intertial fusion, there's this [[https://s3-us-west-2.amazonaws.com/pnwmsnw/NIAC_PhaseII_FDR.pdf][presentation]]. I assume we're starting from low earth orbit, regardless of how we get there, so I ignore the 12 km/s delta V noted for earth orbit insertion. After that, you've got 16.5 + 7.3 + 13.2 km/s for the round trip. That's 37 km/s of delta V, which is a bit shy of the 46.4 km/s of delta V that we'll need to match up the I-3 column's stated travel times. Of course, if you reduce the mass of the payload a bit, then you can get more delta V out of the design. For expediency, I just took 37/46.4 to get how much I'd need to reduce the mass, which ends up with 79.7%. The ship is listed as 133 MT, so if you took 27 MT off the mass of the payload, you'd have at least 46.4 km/s of delta V to work with (and really, more than that).
+
+For a more accurate calculation, you could take 79.7% off the average mass of the ship during the trip. The propellant is listed as 57 MT, so average mass of the ship during travel should be 104.5 MT, and taking 79.7% off of that reduces the mass by 21.2 MT, which is all you'd really need to take away from the payload to get enough delta V to match the I-3 column.
+
+As to whether it's the best of practicality, efficiency and power? For an authoritative answer on that, you'd want to talk to NASA. Barring that, the best answer I can offer is that on the reference I provided earlier for it, the author cites it at the top of the page as "This is the best fusion-power rocket design to date."

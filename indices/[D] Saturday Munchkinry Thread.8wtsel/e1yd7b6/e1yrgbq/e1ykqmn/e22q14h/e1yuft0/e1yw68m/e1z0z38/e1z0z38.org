@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: Veedrac
+:Score: 1
+:DateUnix: 1531002020.0
+:DateShort: 2018-Jul-08
+:END:
+
+There are two parts to this that you care about:
+
+- Generation of a secure shared random stream; in the simplest case this is a one time pad, but table length is limited. Thus you want a function to extend this entropy; Bob Jenkins's Small PRNG is a good suggestion since it's an economical mix of a few XORs and additions, and should be resistant to anything short of a major brute force attack or effort by experience cryptographers. Tell the other how the PRNG works, get them to seed it with the first N bits of a shared key, and use the output as a one-time pad. Synchronize by sharing (under encryption) the kth output, since this means you can notice if one of your computations has had an error ahead of time, though that does require upfront stream generation.
+
+- Authentication against modifications or replay attacks. This is fairly simple; checksum the message, encrypt the checksum, never reuse outputs from the PRNG, and always respond from a point in the stream later than what you are responding to. Repeat these instructions under encryption and wait for a response, else they can just be dropped.
+
+Then it's easy, albeit with a significant constant factor slowdown. Bethel should be able to do this transformation instantly; doing XOR and addition in hex is something you can pick up fairly quickly with effort. I'll try to think of ways to reduce the cost of calculation; you should be able to make simple mechanical contraptions for key generation, for example, though TBH I'm struggling to think of how to implement a fast mechanical XOR without nontrivial engineering effort.

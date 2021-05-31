@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 1
+:DateUnix: 1546864518.0
+:DateShort: 2019-Jan-07
+:END:
+
+Oh, that looks a lot of work. I can tell you I've tried to make a top view 2D shooter using special relativity and the problem I had with that was deciding how to even /represent/ things - it's paradoxically much easier in 3D, since you can do the subjective view with Terrell rotation, which is a thing. But beware, once you start having accelerations in it relativity becomes a freaking nightmare.
+
+A very simplistic model that IMHO would be fully satisfying is the turn-based roguelike one. You have turn based fights, but each fighter has a 'speed' value that depends on their PL, and that affects how many turns they get. That's the standard way Stone Soup or TOME do it. So if your (player) speed is higher than the enemy, you get to hit 'em multiple times before they can even make a move. If you're slower it's the other way around. The interface can be perfectly minimalistic and you can focus on the technical aspects of the game (the maths of the engine). I'd still play that.

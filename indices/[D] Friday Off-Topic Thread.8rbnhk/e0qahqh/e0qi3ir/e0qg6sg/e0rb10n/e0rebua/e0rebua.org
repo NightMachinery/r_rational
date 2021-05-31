@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 2
+:DateUnix: 1529131185.0
+:DateShort: 2018-Jun-16
+:END:
+
+We have extremely basic conceptual images showing how it will work from a functional perspective, but nothing I would post here (first impressions and all that). Part of the reason for that is because that's the sort of thing I could get lost in for /weeks/ without actually ending up with anything useful in the long term, and partially because I'm hoping we eventually attract an artist and I'd rather defer to someone dedicated to the task.
+
+To paint a slightly clearer picture tho, the hexes themselves will be 3D (as procedurally deforming a mesh is much easier conceptually for me than procedurally altering pixels) with clean textures, almost minimalistic. Units are drawn using sprites (the camera is fixed-angle) on top of the 3d terrain, which is mostly because I will likely start with icon-based sprites and only add animation-capable ones later--I get lost enough in the design as it is and refuse to get sucked into art, which has an even smaller time:result ratio than what I've done so far.
+
+Most terrain-like features (tunnels, trees, etc) are built out of terrain hexes, but in some cases (buildings, trees) we'll hide the hexes and draw sprites over top, leaving the hexes as effectively just collision meshes. Perhaps I'll go over what we have designed for this in next week's post (and maybe try out a prototype since we only know what technical problems we want to solve and haven't actually tested the waters there).

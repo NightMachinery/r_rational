@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: rdalex
+:Score: 16
+:DateUnix: 1590255254.0
+:DateShort: 2020-May-23
+:END:
+
+In this case, it would be more useful to work on adding to FanFicFare's functionality, rather than building a competing product.
+
+FFF already solved this problem for basically all major fiction repositories and a long list of minor ones, and as a bonus integrates well into Calibre, arguably the best ebook management tool at this time. There's no point in reinventing a wheel that's been polished for more than ten years. (Except for the joy of programming it yourself, in which case I understand it completely, go for it!)
+
+If it's a webservice you need, FFF also supports that. The dev [[https://github.com/JimmXinu/FanFicFare/wiki#web-service-version][did maintain one]] for a while before Google (his host at the time) made it too expensive to run.
+
+What FFF lacks is [[https://github.com/JimmXinu/FanFicFare/wiki/FAQs#why-doesnt-fanficfare-support-livejournal-and-many-other-popular-fan-fiction-websites][adapters for custom sites]] that don't integrate semantic clues or metadata in their pages, which obviously makes parsing them a scripting nightmare. If you have the will and skills to do that kind of work and resolve that difficulty, please consider contributing code to FFF.

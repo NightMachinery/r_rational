@@ -1,0 +1,38 @@
+:PROPERTIES:
+:Author: Flipnash
+:Score: 2
+:DateUnix: 1543904385.0
+:DateShort: 2018-Dec-04
+:END:
+
+For the most part Dwarf Fortress is the closest thing in existence to the kind of game described in WtC.
+
+Try making a mod for DF?
+
+Alternatively and more interestingly if you want to try doing something from scratch...Try looking into Entity Component Systems.
+
+Also let's look at some random sentence in WtC.
+
+​
+
+"A few seconds later, a variety of birds landed on the staff, and she tweeted at each of them in turn, causing them to fly off. "
+
+​
+
+From this the game is going to need to understand birds of different varieties, a female (assumed human out of context), staffs, A model for communication. The sentence implies that there exist behaviors like flying, tweeting and landing on various entities. Something would have to be done with adjectives like "on" and "away" There is a need for a model for each of those as well as models for all the concepts they depend on. At the end there is a bunch of entities that interact with each other through closely integrated systems to produce a state of the simulation. (And how that state is displayed to the gamer is a completely separate problem) Over time as entities and systems are added or revised the world will be able to say more complex things.
+
+​
+
+Unlike all those other guys I'm fully convinced you can make a great game based on WtC.
+
+All entad's have this pattern:
+
+an entad is an entity, has activation conditions, an acceptable class of targets and changes the target(s) when activated. Sometimes, it has a duration or temporary effect.
+
+An example entad that fits this framework would be described as "a staff that when tweeted at causes itself to fly away" The more concepts are defined the richer the entad could be.
+
+If you want to have an entad that has effects on emotions or mental attributes you need to create a model of mind and emotion for it to affect. An entad can't affect anything you don't have a model of. the model doesn't need to be perfect. It just needs to be good enough that the player can fill in the gaps with their imagination. (locus?)
+
+​
+
+​

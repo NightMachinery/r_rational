@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: phylogenik
+:Score: 3
+:DateUnix: 1577393500.0
+:DateShort: 2019-Dec-27
+:END:
+
+ohhh gotcha, yah I'd misread. Then indeed, your two posterior probabilities from 5 likes would be 0.5*0.85^{5} / (0.5*0.85^{5} + 0.5*0.15^{5)} and 1 minus that, or 99.98% and 0.02%... but the model's pretty bad there (e.g. the iid likes assumption, the lack of a dislike option, the selection filters, the 0.85 / 0.15 numbers themselves, etc.)

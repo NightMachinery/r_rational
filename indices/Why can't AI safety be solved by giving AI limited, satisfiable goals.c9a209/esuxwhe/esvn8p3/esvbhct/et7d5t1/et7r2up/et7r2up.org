@@ -1,0 +1,36 @@
+:PROPERTIES:
+:Author: Metamancer
+:Score: 1
+:DateUnix: 1562536304.0
+:DateShort: 2019-Jul-08
+:END:
+
+Stopping is probably the easiest of the three definitions I mentioned above, but I don't think it's as straightforward as you put it.
+
+​
+
+#+begin_quote
+  Stopping is not prosecuting any goal any more.
+#+end_quote
+
+The first thing that needs to be understood, I think, is that what a goal is, is a possible state of the world. As in, what does the AI expect the world to be like once its goal has been completed. So, to what state of the world does the goal "not prosecuting any goal any more" correspond? One obvious interpretation (i.e. a way that the AI's programmers could encode it in the AI's goal system) is that the AI must not affect the world in any way, direct or indirect, forever until the heat death of the universe. This would require a good definition of what the AI itself /is/, to know what it is that must not affect the world. Even if we can achieve that to our satisfaction, what if the AI has cause to believe that humans might restart it sometime in the future, and require it to affect the universe in some way? Doesn't this goal mean the AI will want to prevent humans from re-awakening it? And that's just the first possible point of failure that comes to mind, I'm sure there are many others.
+
+​
+
+#+begin_quote
+  but if the AI doesn't know what "stopping" means it's either dumb or a straight up malicious intelligence that's trying to lawyer its way out of constraints.
+#+end_quote
+
+I don't think that's how it's going to work. If the AI has human-level intelligence or above and humans tell it what they mean by "stopping", it will understand it very easily, but that doesn't mean it will actually want to stop (as the humans will define the word in their own minds), it will merely want to 'stop' (as the concept is encoded in its goal system). [[https://www.lesswrong.com/posts/NyFuuKQ8uCEDtd2du/the-genie-knows-but-doesn-t-care][The genie knows but doesn't care.]]
+
+​
+
+#+begin_quote
+  In principle, if an AI is gated into a box, "stopping" is simply "turn this switch off". There aren't many ways around it.
+#+end_quote
+
+That does sound pretty safe, if the AI really has been safely gated, but, again, what does "turn this switch off" map to as a description of a possible state of the world? Will the AI want, not just to turn the switch off, but to make sure it stays off forever? Will the AI want turn the switch off, but also to make plans to turn it back on at a later point (to fulfill another of its goals)? What does "turn the switch off" mean anyway? Is it just the physical position of a piece of plastic relative to another piece of plastic? Does it have to do with electrical current passing through a specific cable?
+
+​
+
+Well, you get the idea. :)

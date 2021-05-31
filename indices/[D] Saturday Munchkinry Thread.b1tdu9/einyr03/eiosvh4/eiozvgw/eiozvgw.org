@@ -1,0 +1,49 @@
+:PROPERTIES:
+:Author: HarmlessHealer
+:Score: 1
+:DateUnix: 1552777692.0
+:DateShort: 2019-Mar-17
+:END:
+
+TL;DR: Magic lets you reshape the world but only according (roughly) to the laws of physics and chemistry. Exploiting this will probably require all the nitty gritty details laid out below though, because a lot of the obvious exploits are infeasible due to the way the rules are set up. For example, you can't just conjure and pawn diamonds because it's really hard to get all the facets right. But you could conjure and sell expensive drugs.
+
+​
+
+​
+
+For the world, you can assume that there's a small number of people with equal or greater power than you. Anything clever that relies on being unique won't work, but anything that requires cooperation from a (small) group would. There's an extensive list of ideas I've already thought of in a comment, some more practical than others. I'm particularly interested in ideas that are efficient, that take very little mana to use, but anything is welcome. If there's any "godhood" type exploits lurking unnoticed, I'd love to hear about that as well. I don't think that's the case since this system doesn't have the flexible automation and raw power that godhood exploits usually require... but maybe I've missed something.
+
+Magic spells are powered by mana, which can be produced by meditation. Everyone is born with a randomized potential channel rate (CR) for mana that determine how much they can refine or use per second. The actual CR starts at (almost) zero and increases through practice, asymptotically approaching your potential hardcap. After ~2000 hours of channelling (both refining and using) you'll have reached 90% of your hard cap. The hard cap can't be increased. Surpassing your safe CR while casting will cause splitting headaches if you do it for less than a second and kill you if you do it for longer. Potential CR varies by person, but it's a bell curve centered around 1000v/s (vhis per second).
+
+Mana also comes in two flavors, vim and nix. Vim is associated with creation, nix is associated with destruction. Refined mana can be placed into caches for use later on, but you have to be touching the cache to withdraw mana. Any material works for a cache, but the storage space scales with the density, mass, and purity of the object. Attempting to force too much mana into a cache will cause it to become unstable and eventually explode. If placed in a non-transition metal, mana has a half-life of several minutes. Transition metals have half-lives of several years. You can only infuse bonded matter with one type of mana, and you must be touching the object to be infused.
+
+Spell mana costs are determined by the base cost of the spell multiplied by the path penalty multiplied by the precision penalty. The base cost is determined by the type of spell (energy, force, or matter). Spell can only be case by humans. Animals don't have magic, and there's no way to get a computer to cast spells for you.
+
+Casting a spell requires a path from the cache to the targets. The path can be any shape (not just a straight line). The formula for the penalty is M = 0.1*L2+0.25, where M is the multiplier and L is the path length in meters. This produces 0.25 when the length is 0, 1 when the length is 2.75, and it increases very fast after that. Paths for vim spells crossing through nix-infused matter have to first spend ten times the nix infusion to remove it, and vice versa. So, for example, if you try to path a nix spell through a 1mm thick sheet of metal with 100v of vim per cubic millimeter, and your path is 1mm wide, then you'll have to pay 1000 vhis of nix before you can start casting the spell.
+
+The precision penalty comes from the size of the target. The formula is M = (1*10-10)/(L3) + 1, where M is the multiplier and L is the diameter of the maximum precision that the spell will use. Behavior beneath the precision is randomized, so if you want to conjure a perfectly smooth sheet of metal, it needs to have a really high precision. But if bumps are okay, you might only need 1mm precision. Precision also affects the size of the target --- for example, if you want to target a single molecule. The precision penalty also applies to the path diameter. Only the worst precision penalty will be used, they don't stack.
+
+​
+
+/Branches of magic:/
+
+*Meta:* Metamagic doesn't contain spells but ways to modify the casting of other spells. You can cast multiple spells at once (as long as their total mana requirements don't exceed your channel rate). You can decide how much mana to put into a spell, or cut off the flow mid-cast (this doesn't cause anything bad to happen). You can assign triggers to spells, but the spell WILL occur when the trigger happens, even if it kills you! Each trigger is lost when you stop holding mana or touching a cache (and you have to recast them next time, they don't persist). Additionally, as you spend more time channelling mana you become attuned to it, gaining various abilities.
+
+- 500 hours: you can see instantly see infusions within 32m. Vim is blue, nix is green, and the brightness corresponds to the infusion level, with a 4% margin of error.
+- 4000 hours: you can instantly sense channellers within 16m, know their direction, and identify them.
+- 7500 hours: you can instantly identify spells that are being cast within 16m, know their targets, and who's casting it.
+- 11000 hours: you can instantly sense people who are holding mana (preparing to cast a spell) within 16m, know their direction, and identify them.
+- 17000 hours: you can instantly sense the potential and current channel rate of people within 3m, with a 4% margin of error.
+- 35000 hours: you can instantly identify spells within 16m, their targets, and their caster as soon as the caster starts thinking about the spell while holding mana.
+
+*Energy:* Energy is the category of spells that allow the manipulation of heat. Vim lets you gather heat from the environment and concentrate it into a target, while nix does the reverse and disperses the heat in an object. Magic does not prevent hot objects from cooling or vice versa, but you can maintain a spell to achieve the same effect (but you'll eventually be unable to make it any hotter because it's losing heat as fast as you pump it in). Each vhi of mana is equal to 24 joules of heat energy concentrated or dispersed. This is enough to boil a 2 liter pot of water in five seconds, or ignite a sheet of paper in 3 milliseconds. It is not enough to melt your way through a solid steel door (the metal will conduct and disperse the heat too fast for you).
+
+*Force:* Force is the category of telekinetic movement spells. A force spell draws energy from the environment and converts it into force, like a muscle except more efficient. To cast a force spell you need two targets, each one will get equal and opposite amounts of force applied to it. You can put the second target anywhere, so if you want to pull a nail out of a board you could put the opposite force against the board or the floor, or yourself. The targets have to be the same size. Each vhi of mana produces 3 newtons of force for one second. This is enough to fly and deflect bullets (handguns, sniper, magic-accelerated) from more than several meters away. It is not enough to pin a healthy, reasonably strong adult against the wall.
+
+*Matter:* Matter is the category of conjuring and vanishing. You can only conjure or vanish homogeneous compounds made from a single molecule. This does include alloys (steel, brass, bronze). Conjured matter can take on any shape, but you have to concentrate or it'll come out messed up. You also need deep understanding of the molecule involved, including the bond length, bond angles, and relative sizes of the atoms, and the crystal lattice it forms. If you don't know anything about chemistry, you won't be able to cast matter spells. Also, simply reading a textbook isn't enough, you have to truly understand it. In other words, matter magic is complicated and requires a lot of study before it's useful for anything. But, it's not impossible, and once you've got the knowledge it's not especially difficult.
+
+The atoms for a matter spell are drawn from the environment around you. The mana required for a matter spell is more complex than the other two categories; it's based on how much energy the old bonds had versus how much energy the new bonds have (but that's an oversimplification). What it means is that you can conjure small things. A kilogram of water will take about three and a half minutes. Vanishing is much more expensive --- to vanish the same amount of water would take twenty minutes.
+
+Conjured matter appears at the target point gradually and will resist motion until the spell is finished. You could lift a car by conjuring metal blocks under its wheels, but if you started a conjuring a foot off the ground and dropped the car on it, the spell would just fail.
+
+​

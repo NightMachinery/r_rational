@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: lalaland11256
+:Score: 2
+:DateUnix: 1536894772.0
+:DateShort: 2018-Sep-14
+:END:
+
+The truly optimal approach is to ask the oracle to generate the bits of a piece of compressed text. For example, a very simple form of compression is dictionary compression where the oracle just outputs the offset of the word within a dictionary. In practice we would probably use one of our more sophisticated text compression methods, which can achieve very low bit per word rates.

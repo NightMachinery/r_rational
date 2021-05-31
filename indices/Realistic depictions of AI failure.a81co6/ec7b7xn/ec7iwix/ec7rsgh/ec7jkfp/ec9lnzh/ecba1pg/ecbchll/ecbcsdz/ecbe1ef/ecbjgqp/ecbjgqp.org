@@ -1,0 +1,28 @@
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 5
+:DateUnix: 1545487467.0
+:DateShort: 2018-Dec-22
+:END:
+
+#+begin_quote
+  The question is, where is all the necessary information encoded? What level of fidelity do we need to reproduce it fully, and what can be discarded?
+#+end_quote
+
+Read up on it more. Think about theories of information, practical limits of biology. Or just listen to this post I guess. As it turns out, the only place where the brain modifies action potentials - /or the only place where theoretically stored information can even be accessed/ - is at the synapses. That's it. Nothing else makes a significant difference. Yeah, there's some signaling molecule hacks, and nature papers breathlessly come out monthly that /theorize/ some other system might matter, but if you think about the physics* of it, the ballgame is in the synapses.
+
+*time. There's no /time/ for anything else to matter in the short term. In the long term, patterns of signaling at a synapse can lead to the host cell making changes, but those changes are...reflected in the synapse eventually.
+
+So current plausible plans to upload the brain just plan to obtain the identities of all the membrane proteins at each synapse, the connectivity graph, and that is theorized to be enough that if you have a deep knowledge of how mathematically the weights are altered and how to calculate the weights from which large molecules are present embedded in the membranes.
+
+As for 100%...that is impossible, of course. The question is, is it good enough to be at the same fidelity a healthy human brain would be if they lived another year? Another week? The brain /itself/ is garbage for retaining it's own fidelity. It's losing substantial amounts of information and past memories constantly. It doesn't need to be a perfect copy for this to be a substantial improvement in human wellbeing.
+
+I mean, for one thing, one a person exists soley in a digital machine, they can be regularly backed up. So no more fidelity loss until the end of the universe. And for another, if you randomly change the weights on a neural network a small amount and run it against a training simulation with the same underlying rules the simulation was using earlier (so different experience tuples but the same rules between them), the network will usually* converge on exactly the same weights it had before.
+
+*it won't always but usually it will because those weights are the local minima on the region of the graph the network is at
+
+​
+
+So if you copy a human network and all the weights are a bit off but only by a small random amount (1%, 10%, something like that), you would expect the resulting being to tend to converge back to the same personality they had originally and similar capabilities. Well, that is, assuming you give them hardware similar to what they originally had.
+
+​

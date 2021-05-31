@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: kristjanl1
+:Score: 5
+:DateUnix: 1599925244.0
+:DateShort: 2020-Sep-12
+:END:
+
+Been using the setup of OneDrive (storage) + CloudPlayer (for android playback and caching) for a few years now. It's not open source, but since I already had 1TB of storage on OneDrive and a folder based hierarchical system for organizing my music, it integrated really easily and I'm pretty happy.
+
+While using OneDrive you can easily access and play individual music files from the web, it's still not really a music player. The android experience is the best and covers 70% of my music needs. Windows desktop experience is also decent. (can use whatever music player you're used to, I use MusicBee or the built in app).
+
+Other desktop OSs suffer a bit in the simplicity of setting it all up, but it looks like you can do it on [[https://github.com/skilion/onedrive][linux]]) altho I haven't bothered to try. No idea about Macs.
+
+I technically also have a plex setup that can stream my music [and a web interface!], but plex android app needed to create a user for their platform to use it with my server, which seemed like a badly transparent way to gather user data (since on desktop they don't really care). And I might be remembering it wrong, but I don't think their android app did any offline caching. The last point killed it for me, since I'm traveling semi occasionally through 4G blindspots.
+
+My biggest problem was that being a decently sized music library (25GB) I didn't really want to transfer all of that to my phone (only have 64GB of storage there; can't have music taking up half of it). CloudPlayer has a setting of how much offline cache they use so I set it to only cache 8GB of the most popular songs.

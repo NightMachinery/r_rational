@@ -1,0 +1,50 @@
+:PROPERTIES:
+:Author: Noumero
+:Score: 73
+:DateUnix: 1541923216.0
+:DateShort: 2018-Nov-11
+:END:
+
+I continue to be amazed by how good /Worth the Candle/ is.
+
+The number of unique magical systems/locations/creations it includes is staggering. Just this update, we had library magic, passion magic, spirit magic and soul/spirit magic interactions, all of which seem pretty unorthodox; the Infinite Library as a concept, messages from the future about both large-scale history and individual lives, speculations about the library's mechanics, hints about more complexity still (Celestar, Void Beast, Outer Reaches, Fel Seed, Thargox), memetic kill agents as used by the Second Empire, a close-up look at one of them, about a dozen new entads, eel-offsprings-beard people, and miraculous.
+
+It feels as though every new paragraph includes information about some new element of worldbuilding, which is exactly what you'd expect from a story about a world made by combining several years' worth of D&D campaigns together. And it's still /coherent/.
+
+On top of that, we have the game layer and the in-universe narrative, which add their own complexities while taking into account/incorporating the above.
+
+Finally, we have upper-level narrative and characterization, which are excellent as well, from Juniper and his companions, to Uther's largely unknown history and the Dungeon Master's largely unknown goals, to relatively minor characters such as Taft. (But Amaryllis is the best of them, this is simply self-evident.)
+
+/Worth the Candle/ integrates a fiendishly complicated world with a meta-plot to tell a compelling story, and it's fascinating.
+
+--------------
+
+That said, let's discuss scary red text.
+
+First three lines seem obvious: they depict the memagent's gradual consumption of Juniper's memory/attention. Last line is clear enough too, it speaks about limiting the memagent's influence and doesn't give us almost any new information except making an opaque reference to "X5R contingency".
+
+Let's focus on these bits, then:
+
+#+begin_quote
+  WARNING: CUSTOM LOGIC PROCESS HAS EXCEEDED 512 CONSECUTIVE FUNCTION CALLS. ESTIMATED TIME TO EXIT LOGIC PROCESS WITHOUT INTERVENTION = 5.8 * 10^{53} PT. ESTIMATED TIME TO MEATSPACE FAILURE WITHOUT INTERVENTION = 5.5 * 10^{48} PT.
+
+  <...> LIMITING CUSTOM LOGIC PROCESS FUNCTION CALLS TO 1 PER 1.8 * 10^{43} PT <...>
+#+end_quote
+
+The most interesting question is, of course, what this "meatspace failure" is.
+
+"PT" clearly measures time in some capacity. (Though I'm not sure what exactly it stands for. Processing times? Peta-ticks?)
+
+From that, we could infer that the memagent would last 10^{10}X, where X = 5.8 * 10^{43} PT, that "meatspace failure" would occur in roughly 10^{5}X, and that restricting the memagent's calls-for-attention to one call per every "~X" is rare enough that Juniper is able to act against it (but presumably not rare enough that it's completely nullified).
+
+Let's assume X = ~1 second. Then "meatspace failure" would occur in ~28 hours, and Juniper's mind would deal with the memagent without the game's interference in 317 years. That seems consistent with the assumption that "meatspace failure" means Juniper's Aerbian death (he would be killed by the librarians just before the shift change).
+
+An alternative interpretation is, of course, that "meatspace failure" refers to the death of Juniper's physical body, with Aerb being the simulation. In this case, either Juniper is almost dead out there in reality, or X = ~2*10^{4} seconds (and the time until the failure is ~60 years). The latter seems implausible, since it would basically freeze the memagent.
+
+Thoughts?
+
+*Edit:* Ah. In retrospect, PT obviously means "[[https://en.wikipedia.org/wiki/Planck_time][Planck times]]".
+
+In this case, 1 PT = 5.39 * 10^{-44} seconds, memagent calls restriction is 0.97 seconds, meatspace failure happens in 82 hours, and memagent effect's duration is 991 years.
+
+My guess was close enough, I suppose.

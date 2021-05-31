@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: jivow
+:Score: 1
+:DateUnix: 1613527485.0
+:DateShort: 2021-Feb-17
+:END:
+
+#+begin_quote
+  Hash functions in general are usually not based on hard computational assumptions in the way RSA depends on factoring.
+#+end_quote
+
+On the contrary. Hash function are entirely based on reversing them (pre-image) and colliding them being a hard problem. Even "breaking" them usually means moving some operation from "not in this universe" to "it can be computed using all the resources of the world".
+
+If someone was able to generate long partial inversions easily on a modern hash function it would mean that the whole premise behind how those functions are designed is broken and the way how they're evaluated it broken. It would be a huge discovery.

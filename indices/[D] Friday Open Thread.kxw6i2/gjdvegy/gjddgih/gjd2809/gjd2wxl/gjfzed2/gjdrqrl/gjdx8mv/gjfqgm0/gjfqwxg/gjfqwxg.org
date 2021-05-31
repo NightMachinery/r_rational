@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 1
+:DateUnix: 1610786973.0
+:DateShort: 2021-Jan-16
+:END:
+
+"Collaborative" doesn't mean the same thing as "live edit" like with google docs. You would edit whatever you're writing locally, and then when you're ready to commit it you open the author-git-gui and it would have you check in your writing into a given branch, etc.
+
+The point of using git to collaborate is that people can submit very targeted edits for review, as well as being able to branch the work just like you can with code ("I don't like this chapter, let's make a rewrite branch, spend a weekend on it...nope, this rewrite is trash. Revert to master, bin the branch, and we're good to go.")

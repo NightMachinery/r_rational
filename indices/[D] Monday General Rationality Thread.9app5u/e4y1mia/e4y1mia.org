@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: nytelios
+:Score: 6
+:DateUnix: 1535412313.0
+:DateShort: 2018-Aug-28
+:END:
+
+I've been following Dota 2's The International (the $25 million MOBA tournament that just ended) and the past two years have seen a surprising effort by OpenAI in developing an AI that can defeat professional players. Last year, the AI demolished a pro in a 1v1, mainly by stint of inhuman precision and mechanics. However after a year of advancing the AI to 5v5s, the AI was capable of defeating a ragtag bunch of 5 former pros/casters (all in the 99.5th percentile of players, though the game had many restrictions). Yet at The International, with some of the restrictions changed, they were unable to eke out a single win despite giving a very competitive showing. Dota analysts noted unusual spell/item usage (seemingly for short term benefits) and an inability to adapt on the fly to human strategy once the humans found flaws in the AI's behaviors.
+
+OpenAI's site describes how they developed the AI's neural network for playing Dota and it seems to mainly revolve around incentives and rewards. The AI started with no knowledge and accrued 180 years of game experience using a huge amount of CPU/GPU's. As a layman with no knowledge of AI development, I find it both impressive and not-so-impressive at the same time. It feels like true AI is still so very far away when this current AI works like a pigeon. Of course, the game is many magnitudes more complex than anything you'd train a pigeon for, but the developers did note an issue with the tradeoff between shortsightedness and incomprehensibility (if the timeframe for determining long-term incentives is set too liberally, i.e. from "making actions which occurred soon before positive reward more likely and those soon before negative reward less likely"). They stated that the AI starts with random parameters and has to learn better parameters over time and that giving it "instructions" can limit it in ways, but I wonder if there's a balance to be achieved; if we want AI to approximate human-ish intelligence, maybe we should borrow from the human learning process where we're taught things or pick up heuristics that are either useful or we can rationally unlearn or improve if it's later insufficient?
+
+(edit: last sentence was a mess)

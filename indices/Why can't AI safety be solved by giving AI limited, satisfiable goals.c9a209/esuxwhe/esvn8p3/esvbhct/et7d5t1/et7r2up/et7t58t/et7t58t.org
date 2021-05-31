@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: Metamancer
+:Score: 2
+:DateUnix: 1562537538.0
+:DateShort: 2019-Jul-08
+:END:
+
+#+begin_quote
+  what a goal is, is a possible state of the world. As in, what does the AI expect the world to be like once its goal has been completed.
+#+end_quote
+
+Replying to myself to add an important detail: Notice how even this apparently simple sentence hides an AGI research problem: How does the AI know that the world is now in a state that corresponds to what is encoded in its goal system? Well, the same way we do, by interpreting sensory data. But, as you know, it's not possible to be 100% certain of anything, so the AI's programmers would have to set a probability threshold that the AI needs to reach to consider its goal accomplished. If this threshold is too low the AI might consider its goal accomplished and be wrong. If the threshold is too high, this might be an incentive for the AI to acquire more resources to upgrade itself in order to acquire sufficient evidence to convince itself that it has reached its goal (of, say, turning a switch off).
+
+Also, there's the risk that the goal that has been encoded isn't actually "turn the switch off" but, "change your beliefs about the world so that you believe the switch has been turned off", which might have two completely different outcomes!

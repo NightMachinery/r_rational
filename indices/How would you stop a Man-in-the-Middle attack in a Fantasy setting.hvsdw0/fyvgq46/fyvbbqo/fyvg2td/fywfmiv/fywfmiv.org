@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: GET_A_LAWYER
+:Score: 8
+:DateUnix: 1595444190.0
+:DateShort: 2020-Jul-22
+:END:
+
+Per Wikipedia, stopping MITM attacks requires encrypting the message, and each recipient having the sender's public key.
+
+If for some reason the attacker can't mute their own transmissions (“sender hears her own voice make a false transmission”), then you can require a three part handshake: Sending party: Code1 plus message. Receiving party: Code2 plus echo message. Sending party: Code3.
+
+If the sending party hears the MITM they don't send the final handshake code, and the recipient knows the message was compromised. This method abstracts out to an arbitrary number of messages where each message echoes the previous message plus it's response.
