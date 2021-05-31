@@ -11,3 +11,24 @@ Github renders org headings as HTML headers, which doesn't work at all for these
 [[file:readme.org_imgs/20210531_054346_t1GssN.png]]
 
 [[file:readme.org_imgs/20210531_054821_vKtPi3.png]]
+
+* searching via =ugrep=
+
+Install [[https://github.com/Genivia/ugrep][GitHub - Genivia/ugrep: 🔍NEW ugrep v3.3: ultra fast grep with interactive que...]] by, e.g.,
+#+begin_example zsh
+brew install ugrep
+#+end_example
+
+Now paste this function into your shell:
+#+begin_example zsh
+ugc () {
+    ugrep --heading --color=always --pretty --context=3 --recursive --bool --smart-case '--sort=best' --no-confirm --perl-regexp --hidden '--binary-files=without-match' "$@" | less -n
+}
+#+end_example
+
+Now you can do:
+#+begin_example zsh
+ugc 'japanese horror'
+#+end_example
+
+[[file:readme.org_imgs/20210531_174125_jXIQ5n.png]]

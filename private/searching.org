@@ -1,0 +1,7 @@
+#+TITLE: searching
+
+This kind of works, but it just shows that searching using general methods sucks. We really need a way to just search each heading without its subheadings.
+
+#+begin_example zsh
+nt-lucene. '"chinese time travel"~100' | el
+#+end_example
