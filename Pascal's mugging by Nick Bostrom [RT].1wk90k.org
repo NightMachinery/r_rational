@@ -1,0 +1,429 @@
+#+TITLE: Pascal's mugging by Nick Bostrom [RT]
+
+* [[http://www.nickbostrom.com/papers/pascal.pdf][Pascal's mugging by Nick Bostrom [RT]]]
+:PROPERTIES:
+:Score: 9
+:DateUnix: 1391096677.0
+:FlairText: RT
+:END:
+
+** I should note that [[http://lesswrong.com/lw/kd/pascals_mugging_tiny_probabilities_of_vast/][this scenario is a serious obstacle]] we need to overcome in order to create a good AI.
+:PROPERTIES:
+:Author: BT_Uytya
+:Score: 7
+:DateUnix: 1391098328.0
+:END:
+
+*** Oh, and then there's also the issue that a Pascal's Mugging is /not actually simple at all/. The "message" in a Pascal's Mugging has a very /long/ description length, since it involves /parts of my utility function/, which, as a human being, is very complex.
+
+Message: "I'm from outside the Matrix. Give me $5 or I will torture 3^^^3 people forever."
+
+You'd think the Kolmogorov complexity is very small, since you just wrote down the message in a few short words. Actually, it's very large, since the definitions of "outside the Matrix" and, most importantly of "torture" and "people" are actually references to /concepts internal to my mind/.
+
+Now I'm already starting to wonder where you've got that many people from, and what they're like, and if they're even people as I understand them, and noting how you haven't provided many details about such things. Blah blah blah. It suddenly comes to mind that "This man is lying to me" is a much /simpler/ hypothesis than "There really is another whole world containing all those people, who are the kind of people I care about, and this man is telling the truth."
+
+Now, if I'm an AI and there's no prospect that my own hypothesis space is /deliberately lying to me/... But the problem gets thornier, as I said in my other comment, but it occurs to me that I shouldn't invent hypotheses about people so aimlessly, perhaps? Huh. I feel a need to resort to my evidentialist stance, there.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1391099936.0
+:END:
+
+**** #+begin_quote
+  It suddenly comes to mind that "This man is lying to me" is a much simpler hypothesis than "There really is another whole world containing all those people, who are the kind of people I care about, and this man is telling the truth."
+#+end_quote
+
+It's definitely simpler which means it's far more likely. But there *is* some non-zero probability that the man is speaking the truth and the mugger is always able to provide so big negative/positive incentive that basic expected utility calculation suggests that you should always pick the mugger's offer. It's an interesting problem because normal rationalist reasoning breaks down and even Yudkowsky has basically given up and said:
+
+#+begin_quote
+  [[http://lesswrong.com/lw/kd/pascals_mugging_tiny_probabilities_of_vast/][It doesn't feel to me like 3^ ^ ^ 3 lives are really at stake, even at very tiny probability. I'd sooner question my grasp of "rationality" than give five dollars to a Pascal's Mugger because I thought it was "rational".]]
+#+end_quote
+:PROPERTIES:
+:Score: 7
+:DateUnix: 1391102114.0
+:END:
+
+
+**** /disclaimer: I strongly suspect I don't understand your position and just pattern-match your words into a strawmanship. Sorry about that, could you be more clear on this matter?/
+
+The thing is that while K-complexity of "I'm from outside the Matrix. Give me $5 or I will torture *X* people forever" is enormous for every possible X, it's very easy to invent tremendous numbers with negligible K-complexity (3^^^3, 4^^^^4, Ackermann function of them, etc).
+
+So, whatever K-complexity of this proposal is, I always can substitute something simple and colossal for X, and then expected utility will be positive.
+:PROPERTIES:
+:Author: BT_Uytya
+:Score: 3
+:DateUnix: 1391110464.0
+:END:
+
+***** I spent some time thinking about it and actually posted my answer to this supposed "conundrum" on LW.
+
+#+begin_quote
+  The thing is that while K-complexity of "I'm from outside the Matrix. Give me $5 or I will torture X people forever" is enormous for every possible X, it's very easy to invent tremendous numbers with negligible K-complexity (3^{^{^{3,}}} 4^{^{^{^{4,}}}} Ackermann function of them, etc).
+#+end_quote
+
+This would be true if you just valued the size of the number rather than valuing actual people represented /by/ the number.
+
+The K-complexity of /X real things/ scales linearly in the number of things. X people are /at least/ as complicated as X * K-complexity(one person).
+
+Which means that if you try to write down a description of a universe containing X people, its prior probability will drop faster than the utility rises (provided, of course, that your utility on people rises linearly in people rather than exponentially).
+
+O(X) / 2^{-O(X)} -- the denominator will win this battle.
+:PROPERTIES:
+:Score: 6
+:DateUnix: 1391110840.0
+:END:
+
+****** This seems like a very neat hack with a convincing justification.
+
+However, I should note two limitations. First, it doesn't work if I care only about number, not details.
+
+Second, you are mistaken here:
+
+#+begin_quote
+  X people are at least as complicated as X * K-complexity(one person).
+#+end_quote
+
+What if I care about perfect copies of one person? What about X perfect copies of one person, but each with some unique experience? Unique experiences are very simple to create: take a planet, take a future brilliant writer and tell him "/write about hobbits/" *or* "/write about spaceships/", run simulation for 10 years, done (yeah, K-complexity is enormous, but it is very easy to scale; bonus points for running simulation for 1000 years and using all descendants of this writer). There are many ways to create X people without having to describe each one of them.
+:PROPERTIES:
+:Author: BT_Uytya
+:Score: 5
+:DateUnix: 1391112394.0
+:END:
+
+******* Ok, so I do think your criticism works. This feels like a real gap between our ability to write down computational descriptions of worlds, and the actual amount of things that have to happen to really generate such worlds.
+
+I mean, look at it this way: a world with X people in it, each weighing 40kg, requires X * 40kg of /mass/ in it. Since /reality/ is specified in terms of /mass/, we should ideally be rating hypotheses about reality in terms of how much mass, energy, and time they take up. Larger should be considered worse, even if you can write down a very simple computational description of the Very Large Things.
+
+Or alternately, I can be less stupid and revert back to my basic evidentialism that I actually make bets on in real life.
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1391114104.0
+:END:
+
+
+*** [[http://kruel.co/2013/01/13/the-singularity-institute-how-their-arguments-are-broken/][It's actually been argued]] that the whole argument for Friendly AI research is just a sugar coated version of Pascal's mugging. [[http://johncarlosbaez.wordpress.com/2011/04/24/what-to-do/#comment-5515][Like Greg Egan said]], "All of Yudkowsky's arguments about the dangers and benefits of AI are just appeals to intuition of various kinds, as indeed are the counter-arguments." There is no real empirical evidence about the dangers and benefits of AI. It might even be impossible to get evidence about it, at least before it's too late.
+
+#+begin_quote
+  [[http://kruel.co/2012/11/03/what-i-would-like-the-singularity-institute-to-publish/][The gist of the matter is that a coherent and consistent framework of sound argumentation based on unsupported inference is nothing more than its description implies. It is fiction.]]
+#+end_quote
+
+** 
+   :PROPERTIES:
+   :CUSTOM_ID: section
+   :END:
+
+#+begin_quote
+  If you argue that it is more reasonable to contribute to the mitigation of risks associated with artificial general intelligence than to contribute to more or less probable risks then, in case you are not just appealing to intuition, there must be some formalized argument that favors AI risk mitigation over all other possible actions. In other words, you need to formally define “reasonable”.
+
+  Note that the difference between AI risks and other possible risks can't be its expected utility, because that results in Pascal's mugging. The difference can neither be that it is more probable. Because that argument also works against AI risks by choosing risks that are even more probable than AI risks.
+#+end_quote
+
+[[http://kruel.co/2013/01/13/the-singularity-institute-addendum-to-whats-wrong-with-their-arguments/]]
+
+Well, we don't have direct evidence of the dark lords of Matrix or the powers Seventh Dimension and we *have* evidence of certain kinds of more rudimental AIs so there's that. But in the end choosing AI risks instead of more or less probable existential risks comes down to feelings and there is not yet a proper formal analysis for it.
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1391101351.0
+:END:
+
+**** The problem is that this debate has been conducted in probabilistic terms, because Bayesian probability theory is mathematically "stronger", in the sense of being more consistent and better axiomatized, than the actual scientific method we use in real life.
+
+The actual scientific method says: any theory that hopes to correspond to reality must make falsifiable predictions, and experiments must be done to test those. Utilities are only ever calculated among hypotheses that /could/ have been falsified by evidence, but /weren't/.
+
+Notably, probability theory was constructed in order to deal with games of chance in which all hypothetical outcomes were at least /possible/. Probability has no concept of "impossible", since, as they say, 0 and 1 are not probabilities. Real life, however, very much /does/ have a concept of "impossible". This is why attempts to translate real life into probability theory tend to fail.
+
+In theory, Bayesianism is stronger. In real life, Bayesianism gets bogged down performing probabilistic computations while the scientific method throws out the overwhelming majority of possible theories to deal only with those for which non-falsifying evidence exists.
+
+I think we need some (possibly new?) mathematics for converting between "possibility", "plausibility", and "probability", with some way of ensuring that hypotheses need to pass some notion of a truly rigorous evidential check before being treated as sufficiently probable to enter our decision procedures.
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1391101991.0
+:END:
+
+***** #+begin_quote
+  Real life, however, very much does have a concept of "impossible".
+#+end_quote
+
+Well, that's the issue.
+
+If you use the kind of reasoning FAI advocates very often use and take things to their logical extreme, you'll end up with truly absurd concepts, like how everything is possible and you should always take into account what the insane god emperors on the other side of the acausal gulf think about your decisions, and how your actions impact the trillions of sentient beings billions of years from now etc. The infamous [[http://kruel.co/2013/01/12/rokos-basilisk-everything-you-need-to-know/][Roko's Basilisk]] is an example of this (beware, Yudkowsky and few others believe you significantly raise the chance of getting eternally tortured if you receive information about Roko's basilisk... depending on how seriously you take this information). [[http://clubofsc.blogspot.fi/2011/08/my-topic-universal-dovetailer-argument.html][Universal Dovetailer]] is a contrived version of computationalism that not only says that everything is possible, but everything that is possible will happen [[http://kruel.co/backup/Ontological%20Therapy.png][and more mindfucks]]. Some modern cosmologists think that it's probable that the universe is infinite and this on its own could do nasty things to the traditional concept of impossibility.
+
+You might even say the FAI argument relies on some of these absurd conclusions because the payoff is that you could "save" those trillions of souls in the future from extinction and that justifies the research even though we don't know how small the likelihood is for any of this. If you use a coherent and consistent framework of sound argumentation based on unsupported inference to argue for FAI research then how's that any different from using the same kind of argumentation to argue that [[http://www.simulation-argument.com/][we should pay more attention to the Dark Lords of Matrix so they don't pull the switch?]] Which is more "impossible" and why?
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1391104263.0
+:END:
+
+****** #+begin_quote
+  The infamous Roko's Basilisk[1] is an example of this (beware, Yudkowsky and few others believe you significantly raise the chance of getting eternally tortured if you receive information about Roko's basilisk... depending on how seriously you take this information).
+#+end_quote
+
+Oh please. The last time I attempted acausal trade with a supposed future superintelligence I found out that I wasn't the simulation, ie: absolutely nothing happened.
+
+Which is a pity, because I was praying to a /nice/ god.
+
+Well, I did prevent myself from developing a nasty piece of superstitious idiocy and have fun with some friends on IRC by actually /testing/ a nasty-sounding theory.
+
+#+begin_quote
+  Universal Dovetailer[2] is a contrived version of computationalism that not only says that everything is possible, but everything that is possible will happen and more mindfucks[3] .
+#+end_quote
+
+I don't really have time to read the pictured blog post, but all I can say is that the whole notion of "mathematical realism" is fucking nonsense.
+
+Proof is program, program is proof. Mathematics /is/ computation: it doesn't exist in a realm of platonic ideals or on a universal computer (Schmidhuber published a paper just like this to troll, btw), it's just symbols being manipulated in accordance with fixed rules.
+
+I can write a mathematics in which 2 + 2 = 5. Really, I can. It might not be self-consistent, but that doesn't mean it's "false", it just means that its proof-computations can diverge into saying /anything/.
+
+Goedel showed that consistency (never contradicting itself) and completeness (ability to prove all the /true/ theorems) are opposed to each-other in certain interestingly powerful logics, but that's just another way of saying: some computational problems are undecidable.
+
+So which computations or bits of mathematics are "true"? Well, the ones causally tied in with an external reality /outside the computer/. That's it.
+
+#+begin_quote
+  Some modern cosmologists think that it's probable that the universe is infinite and this on its own could do nasty things to the traditional concept of impossibility.
+#+end_quote
+
+And yet I remain unable to sprout wings and fly. /Which I desperately want to do, because it would be so freaking AWESOME!/
+
+Any theory of causality or possibility that tells me that Some Other Me Somewhere has wings and can fly but doesn't tell me what /I can actually do in this universe/ to become him... is fucking nonsense.
+
+If we really want to engage in that kind of All Possible Universes as Defined by All Possible Turing Machines nonsense, then "possibility" means "the existence of a path through the causal graph from a present point to a certain past or future point", or in other words, something is possible if there's a deterministic way to make it happen. Impossible are the things you can't do because you weren't born in the right branch of reality.
+
+And the people who tell you otherwise are spouting [[http://rationalwiki.org/wiki/Many_worlds#Many_worlds][universe woo]].
+
+#+begin_quote
+  If you use a coherent and consistent framework of sound argumentation based on unsupported inference to argue for FAI research then how's that any different from using the same kind of argumentation to argue that we should pay more attention to the Dark Lords of Matrix so they don't pull the switch?[4]
+#+end_quote
+
+My position is the following: DEATH TO ALL PROSPECTIVE FUTURE GODS WHO REFUSE TO GIVE ME COOKIES!
+
+Now, to be fair, words like "plausibility" and "acausal" are not /identical/ to "impossible". "Acausal trade" is just how a game theorist describes something like basic first-level superrationality, or, as we humans call it in our real lives, /the social contract/.
+
+(This is why you should always check to see that things you /know/ really do exist fall neatly out of your Big Sophisticated Theories. A social theory that tells you prosocial behavior or the social contract can't exist, or a theory of reality that tells you how to trade with future superintelligences but not how to get cookies, is fucking bunk.)
+
+#+begin_quote
+  Which is more "impossible" and why?
+#+end_quote
+
+See, here's the thing. I don't argue in favor of machine ethics research (which includes the Future of Humanity Institute and some portion of the AGI Conference sponsored by Google, by the way: not just MIRI) on the basis of "WE ALL PROBABLY GONNA DIE UNLESS WE GIVE THIS GUY OUR MONIES!"
+
+I argue in favor of that research because, for the definition of "ethics" used in such research, a more ethical AI is better at giving we humans what we want, like cookies. I want lots and lots of cookies. And other things. The whole point of "machine" in machine ethics is to pretend we have a genie and put aside the issue of Where Goodness Comes From (ie: from God or from social agreement or what), and instead just come up with solid epistemic processes for inferring What People Believe is Good, conditioned in what they believe about the world, thus giving us some idea of what people /truly/ want and wish for. Because then, after all, we can /give it to them/, which will be Pretty Freaking Awesome.
+
+In general, I support research into getting things I want, and when it comes to danger levels I support safety and ethics research guided by /actual experts/ -- which means that the man spearheading machine ethics ought to be Juergen Schmidhuber, Marcus Hutter, or Shane Legg, /not/ Eliezer Yudkowsky /at all/.
+
+/Problem is/, responses on the "danger and ethics" question vary dramatically between those three people. Schmidhuber says, "I am trying to make hard takeoff happen. Fuck human values, have an artilect war instead." Hutter says, "There is a possibility that AIXI could wirehead itself somehow, but that's more a failure of intelligence than of ethics. The danger is in the humans /using/ AIXI." Shane Legg says, "now that my AGI start-up is being bought by Google, we're establishing an ethics board, just in case", but he otherwise agrees with Hutter's position regarding hard take-offs and artilect wars and such.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1391113169.0
+:END:
+
+
+****** #+begin_quote
+  (beware, Yudkowsky and few others believe you significantly raise the chance of getting eternally tortured if you receive information about Roko's basilisk... depending on how seriously you take this information)
+#+end_quote
+
+/That's/ why he censored it from LW? I thought it was because some people were seriously upset by the possibility of the Basilisk, and were reporting depressive or suicidal thoughts. If he actually believes it, well, that significantly increases my confidence in the "Lesswrong writers are all crazy" theory.
+
+Edit for clarity: I wrote a couple of articles on LW back in the day, so please take the previous sentence as partially joking self-deprecation.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 3
+:DateUnix: 1391131805.0
+:END:
+
+******* [[http://kruel.co/lw/r03.png][His response to Roko's original post tells a lot.]]
+
+I don't think he believes that it /will/ happen, but there's a very small probability that it could happen and there's nothing you can gain by talking about it except possibly infinite negative utility. [[http://lesswrong.com/lw/mp/0_and_1_are_not_probabilities/][There's no such thing as zero probability]] so you have to take all scenarios that involve very high quantities of negative/positive utility seriously - especially if they happen to involve your pet theory.
+
+Except then you have to take all other versions of Pascal's mugging seriously which means you can't live a normal life.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1391164526.0
+:END:
+
+
+******* #+begin_quote
+  Edit for clarity: I wrote a couple of articles on LW back in the day, so please take the previous sentence as partially joking self-deprecation.
+#+end_quote
+
+It's ok. The rest of us are crazy, too. I'm pretty sure that decent and normal people are just so good at aligning themselves, their expectations, and their feelings with reality that they never bother trying to become rational and align reality with their desires.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1391177941.0
+:END:
+
+
+****** #+begin_quote
+  Roko's Basilisk
+#+end_quote
+
+[[/r/rokosbasilisk]]
+
+Woot woot
+
+[[/r/rokosrooster]]
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1391116615.0
+:END:
+
+******* Fight the Basilisk! Acausally trade with /more preferable/ superintelligences today!
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1391124251.0
+:END:
+
+
+**** Also, the former Singularity Institute's AI fearmongering is very wrong while also being a much better approximation of the potential problems than the standard "TAKE OUR JOBS" or "OMG SKYNET" fearmongering or "YAY UTOPIA! YAY THREE LAWS!" hopemongering.
+
+If they want to actually formulate the issue well, they need to start talking about specific "mind designs" that can be mathematically shown to act in specific ways. It's no coincidence that Omohundro et al who actually publish AGI math papers about AI risks use AIXI formalisms: AIXI is /actually a well-specified formalism that we can truly reason about/.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1391102133.0
+:END:
+
+***** #+begin_quote
+  Also, the former Singularity Institute's AI fearmongering is very wrong while also being a much better approximation of the potential problems than the standard "TAKE OUR JOBS" or "OMG SKYNET" fearmongering or "YAY UTOPIA! YAY THREE LAWS!" hopemongering.
+#+end_quote
+
+I agree, but I'm still not entirely sure how I feel about their approach. The use of hyperbole and science fiction-y concepts is, or at least used to be, a bit annoying and the fact that many of them have little or no formal education on the subject. But maybe it doesn't hurt to allocate some money to them. Fortunately I'm not the one who decides how much.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1391104747.0
+:END:
+
+****** It's /really/ annoying. As in, I continually badger them about it, because, you know, science ought to be done by people with a scientific education, or who can at least /pass/ for having a scientific education, rather than people who come across as philosophizing self-educated dilettantes. Nothing wrong with being one of those on the internet, /lots/ wrong with demanding people give you tens of thousands of dollars to save the world while being one of those.
+
+EDIT: On further reflection, what the fuck am I saying, I don't even know anymore. I'm a graduate student, and it's not like actual, tenured scientists who've been publishing papers for longer than I've been alive /actually seem to know their shit/. Seems sometimes as if plenty of real-life professional researchers with formal educations have just managed to successfully overfit themselves to passing exams and publishing papers. I feel very sad and cynical about the whole Science thing now.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1391110502.0
+:END:
+
+******* I think that especially in experimental fields, formal education doesn't matter that much. An education isn't that good of an indicator of expertise, and the information learned to obtain a degree can become outdated very quickly.
+:PROPERTIES:
+:Author: flame7926
+:Score: 1
+:DateUnix: 1391144668.0
+:END:
+
+
+*** Hmmm...
+
+My problem with this scenario is that I've never run Solomonoff Induction, I run evidentialism. Meaning: if a hypothesis's probability is equal to its True Prior, I just treat that as equivalent to "quantum foam", something that exists in my mathematics for ease of future calculations but has no real tie to physical reality, and is therefore dismissed as equivalent to probability 0.0.
+
+Basically, my brain can reason about /plausibility/ in terms of pure priors, but /probability/ requires at least some tiny bit of evidence.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1391099099.0
+:END:
+
+
+** Is there a solution to this? It seems to have to be one of:
+
+- it's NOT desirable to bet on absurdly long odds, expected value be damned, or
+- something strange happens to odds when considering contrived scenarios, such that the expected value can't be manipulated like this, or
+- it is in fact desirable to acquiesce to a Pascal's mugging.
+:PROPERTIES:
+:Author: Pluvialis
+:Score: 2
+:DateUnix: 1391116415.0
+:END:
+
+*** #+begin_quote
+  it's NOT desirable to bet on absurdly long odds, expected value be damned
+#+end_quote
+
+I think it's this one. In your lifetime, you may have two or three million-to-one chances actually happen, so the median outcome of all those million-to-one chances combined is pretty much identical to the mean outcome (i.e. the expectation). But if you roll a trillion-sided die every second, it's still unlikely that it will come up a 1 in your lifetime (extreme life extension notwithstanding). So the expectation doesn't correspond to what's actually likely to happen (median or mode), and you need to rethink your assumptions.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 3
+:DateUnix: 1391132427.0
+:END:
+
+**** Ah, so you break out of Bayesianism's "how strongly do I believe this" and look at Frequentism's "how often can I expect this to happen", notice that your own life history probably will never see such an unlikely event, and refuse to bet on it.
+
+Of course, this would mean that your AI would start engaging in more and more Pascal's Wagers the older it got.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1391177809.0
+:END:
+
+***** On reflection, it's also the fact that humans lack intuition when it comes to large numbers - I don't trust myself to spot the difference between a one-in-a-quadrillion chance and a one-in-a-quintillion chance, because even though they're three orders of magnitude apart, they look pretty similar to me. So I'd take the safe option, particularly if there's a mugger who's actively trying to take advantage of me.
+
+The other difficulty in dealing with trillion-to-one chances is that there's a very high chance that I've made a logical error in my reasoning (perhaps as high as 1 in 5), so the trillion-to-one outcome is a lot less likely than the outcomes I haven't thought of.
+
+I know, I know: By this point, I'm transparently altering my reasoning to fit my intuition. Maybe I'm wrong to do so.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 1
+:DateUnix: 1391178597.0
+:END:
+
+****** #+begin_quote
+  I know, I know: By this point, I'm transparently altering my reasoning to fit my intuition. Maybe I'm wrong to do so.
+#+end_quote
+
+Plainly you should alter your reasoning to fit your reality. One in a trillion outcomes happen every year or so, but almost always not to you.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1391180381.0
+:END:
+
+
+*** Or just use your intuition instead of relying on math to make decisions?
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1391121993.0
+:END:
+
+**** Well, yes, that's what people are trying to do; formalize our intuition so that AIs don't fall for this.
+:PROPERTIES:
+:Author: lehyde
+:Score: 3
+:DateUnix: 1391124068.0
+:END:
+
+
+**** It's my intuition that lead to those three possibilities, rather than just accepting Pascal's mugging.
+
+EDIT: Also, I rely on a combination both and I think that's best. You can't avoid relying on intuition, of course, because if nothing else you'd be relying on the maths because it was your intuition that it's best. But I think it's sort of odd to criticise maths as a route to solutions for real world decisions in a subreddit like [[/r/rational][r/rational]]... :P
+:PROPERTIES:
+:Author: Pluvialis
+:Score: 1
+:DateUnix: 1391124056.0
+:END:
+
+***** I guess what I'm saying is that if your mathematical solutions have real and obvious problems, that's a good sign that there's something wrong with the model at its very core. You can apply a patch like "don't bother with anything whose likelihood is lower than one in one billion", but if you're doing that, you're admitting that the decision making model has a flaw without actually identifying why that flaw exists. If this is the flaw that we see, that implies to me that there are other, unseen flaws.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1391134900.0
+:END:
+
+
+** I'm not sure if these strange philosophical fictional stories belong here, but whatever. I think they are interesting.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1391096746.0
+:END:
+
+*** This definitely belongs here. Thanks for sharing!
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1391117161.0
+:END:
+
+
+** The future is a missing consideration. Let it be known that you'll accept implausible claims without evidence and you won't make it a block without getting "mugged" every ten feet.
+:PROPERTIES:
+:Author: Harkins
+:Score: 1
+:DateUnix: 1391142955.0
+:END:
+
+*** So? Every single mugging has a probabilistic increase in utility, right? If I take a bet at ten to one odds that has a twenty times greater payout, it's still a consistently good bet even if I end up losing repeatedly. Maybe you increase the probability that the mugger is lying after the tenth time, but the mugger can always just increase the reward, and it's still the "correct" thing to do unless you have some way to deal with this flaw in utility maximization.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1391208541.0
+:END:

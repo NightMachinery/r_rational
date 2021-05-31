@@ -1,0 +1,188 @@
+#+TITLE: Simverse V
+
+* Simverse V
+:PROPERTIES:
+:Author: krakonfour
+:Score: 11
+:DateUnix: 1406676675.0
+:END:
+This series hasn't garnered as much interest as the Iron Giants setting (because more reading and actual science is involved) but I'll finish it anyways.
+
+Last time, we started designing spaceships.
+
+I've noticed people advocating for relocating the hacking computer and weapon launchers away from the battle, with the spaceships become nothing more than 'portal waypoints' where the deadly stuff is swapped in.
+
+This doesn't work for three reasons:
+
+-If you are shooting ammunition from far away, and swapping it on top of your opponent, you need to know the exact coordinates of the sector that ammunition is contained in. Since it is usually outside of your realtime zone, you cannot read the sectors directly, you would need the information to be transmitted to you. See below.
+
+-You cannot read the coordinates for a sector an ally's ship is contained in remotely: you have to extend your realtime zone to cover it. This means you have to receive information and transmit it back to the ally. See below.
+
+-Both issues above are caused by lightspeed lag. Offloading the calculations is only useful if it can be done faster than inside the realtime zone. There is no use for a computer than has to remain inside the target ally's realtime zone, it has to be further away.
+
+Here's a [[http://i.imgur.com/LJuEt4d.png][scenario]] to help explain the situation.
+
+In that case, we have two possibilities competing to obtain the lowest addition of time consumed for each of these steps:
+
+1)Call for attention + Obtain information + process information A + modify B + re-execute call
+
+2)Call for attention + Obtain information + transmit information + process information C + modify D + receive information + re-execute call
+
+By eliminating the similar steps, we have to arrive at:
+
+transmit information + process C + modify D + receive information < process A + modify B
+
+In all cases, the two additions must be shorter than the delay for a rendering cycle to be completed.
+
+Transmitting both ways is affected by two limits: the speed at which you can code the data from the memory banks and pass it through a transmitter, and the speed of light at which the information travels afterwards. This means that even if the lightspeed lag is insignificant, you'd still have to deal with a transmitter that takes a whole second to deliver 10000GB of data (the shell code mentioned in Simverse II).
+
+In the specific scenario linked above, the external computer is further away than 10,000km. It is the absolute minimum under which it is best to just make a bigger computer on the target ship. This adds a 0.067s delay linked only to lightspeed lag. This might not sound like much, but it represents 6700 cycles around the asteroid belt (10e-5s cycles).
+
+In other words, this configuration is only useful past the Oort cloud (0.1s cycles). There is no practical use for it inside the Solar system.
+
+It would ONLY be useful if you are a commercial ship and do not have enough money to install a computer than can complete a swap within a cycle (a big problem when it start hitting the microsecond) and cannot wait to travel the regular way to the outskirts of the solar system. Most likely, these will be passenger ships.
+
+If you are in deep deep space, the rendering cycles slow down enough for the (2) timeline to be shorter than the (1) timeline. The problem is, to to offload your calculations to an external computer, you'd have to drag a computer all the way out with you. It would be more sensible to simply divide the calculations amongst a fleet of ships and swap the cube together (cube sizes in deep deep space are thousands of km to lightyears wide, so there is more than enough room for a bunch of ships to share information inside the same realtime zone and yet swap only 1 cube for all the ships).
+
+Also, shooting ammunition from far away is only marginally useful after combat begins. Sector coordinates, as I mentioned earlier, change constantly. The simple fact that an observed object is travelling through them at high speed modifies their size, and thus coordinates. The modifications are impossible to predict, so it is necessary to have a continuous reading on the sectors the ammunition travels through. It's simpler to just make a spaceship.
+
+The corollary of the fact that sector coordinates can be influenced by changes in their composition (if they contain more complex matter of more observers, they shrink and the sectors around them shift to fill the gap) is that you can easily follow a spaceship through space, as it leaves a trail of easy-to-spot shrunken sectors. Of course, if your target is itself following a well-trodden path, then this technique is of no use. You'd have to use the traditional method of light-sniffing: when a spaceship swaps into a new position, it releases electromagnetic energy into its surroundings (light, heat, radiations ect). This sphere of radiation expands from the source, feeding information about the emitter until it disappears again. However, the first emissions persist, expanding at lightspeed, until they become too faint to detect. This allows you to track and record the movements of a ship through space. The limitations are time and distance: if the signal is too old, it is unreadable. If it is emitted too far away, you'll have to wait for hours, days or weeks for it to reach your present position. By then, it is much too faint.
+
+Moving on.
+
+You might notice that if the 'shell code' is 800GB, and that to get anywhere near Earth, you need to at minimum read, modify and rewrite the shell code in under 0.00001s, the data transfer rate of your computer must be on the order of 160 petabytes/second.
+
+We've also already determined that spaceship designs are size-limited. A 50m class spaceship is actually very small, and equivalent to the space fighters so prevalent in SF media. It can swap into any cube, up to and including Lunar orbit. A larger spaceship, say, 100m class, has to stay out of Earth's vicinity. It is more useful than the 50m class spaceship away from Earth, since it has twice the size, but is twice as slow as the 50m spaceship near Earth, greatly affecting its usefulness in that area.
+
+Due to the size of near-Earth spaceships, they are frequently divided into specific roles. A laser-equipped spacecraft that tries to swap its weapons face next to the drive of the enemy, a minelayer, a kinetics craft that does nothing but launch projectiles from far away, a kinetics handler that repositions allied munitions into the enemy's path.... as the theater moves away from Earth, spaceships become multiroled to reduce the number of pilots/computers/drives you need for each task. A kinetcs launcher and handler could be fused into one spaceship, for example.
+
+As promised, here's another hack.
+
+It is possible to duplicate sectors. When you read the shell data of a sector, you first have determine the location of the coordinates, then modify them.
+
+The simulation then replaces your sector with the sector determined by the coordinates you just replaced.
+
+It is possible to swap two sectors simultaneously. You call up the simulator's attention, then feed it two lines of modified code, resulting in two simultaneous swaps.
+
+The duplication hack involves rewriting sectors A and B with the same sector C. If all goes well, you'll end up with sectors Ca, Cb and A/B (one of A or B ends up swapped with the original sector C).
+
+As you can imagine, it isn't as simple as that.
+
+First of all, the success rate of a duplication maxxes out at 5%. This is in interstellar space, using sectors at the limit of not being rendered. Secondly, unlike a swap, the contents of the sectors do affect the duplication. Simple, uniform matter has a higher success rate than complex, structured matter. A block of ice, for example, is easier to duplicate than a loaf of bread. Thirdly, the resulting sectors are merged with the target. You do not end up with a perfect duplicate of C, but a fusion of C and A, C and B. Since A and B are most likely empty space, you'll end up with a sector that resembles C but is missing huge chunks of matter. Fourth, duplication cannot happen near an observer. At all. If you try to duplicate yourself or another human, there won't even be a reset. It just fizzles out.
+
+So, just what CAN you do. You can take a solid block of platinum, ship it out to a random spot 10 billion km away from Earth and attempt a duplication. Rendering cycles are measured in months. If all goes well, and you chose two sectors next to each other, you'll end up with two sectors containing a block of platinum with holes in it. 20% of the time, you get less material than you put in. Then, since you've already used that rendering cycle, you'll have to physically move your spaceship hundreds of thousands of kilometers to capture the first block, then the second block, then wait a few months or move to a fresh sector, and swap your way back home.
+
+It's not a universe-breaking hack. It's a gamble, and each gamble takes several years, and you can only duplicate raw materials at best.
+
+You'll find two approaches:
+
+-Long term, slow duplication. The duplication chance approaches the maximum 5%. You enter a sector at high speed. Imagine yourself as a cube inside a bigger cube made up of 27 pieces. You simultaneously swap 25 sectors, ie all sectors except the sector your vector will take you to, and the original sector you want duplicated. If all goes well, you have a 72% chance of at least one sector containing one copy, and a 42% (0.72^{2} *0.8) chance of getting more than you put in. You then drop the information about the location of the sectors with 'something in them' as a beacon that broadcasts a signal.
+
+You swap out using the final unused cube. Months later, after the rendering cycle has refreshed, another ship arrives. It collects the signal and targets the occupied sectors. It swaps them into a line along its path. As it travels into each sector, it collects the duplicated matter. At the end of the 'collection route', it swaps away with the prize.
+
+This process takes months, or even years. It locks up huge volumes of space for a very long time. The return, however, has a good chance of exceeding the input. A strong margin of precious metal could easily cover the cost of the whole operation.
+
+-Short, low return duplication. Closer to Earth, it is still possible to duplicate. Rendering cycles are much shorter, and the sectors much smaller. The advantages are a much shorter wait time between duplication attempts, and a much lower cost per duplication, since your ship only has to linger in space for a few minutes between each collection run. However, there is a cost. The return rate is absolutely dismal. 1% at best, dropping to 0.5% easily. You have a 22% chance of having something duplicated at all, and a 0.038% chance of getting more than you put in. On top of requiring very powerful computers to perform 25 simultaneous swaps in relatively well rendered space, you have to perform at least 20 of such operations to get a similar return to the first method.
+
+I'll explicit how the economy has structured itself around the possibility of duplication in Simverse VI, and then, if I have room, I'll move on to the history and geopolitics of the setting.
+
+
+** I only don't comment on it because it's waaaaaaay above my level of thinking. I understand everything you write, it makes sense but trying to extrapolate from the data you give and come up with something new is really hard for me.
+
+I'll try to comment more and say how much I love it, cause damn this setting is really really cool.
+:PROPERTIES:
+:Author: GrecklePrime
+:Score: 1
+:DateUnix: 1406733286.0
+:END:
+
+*** They just take it slowly :)
+
+Seriously, there is nothing here that requires above-highschool learning.
+:PROPERTIES:
+:Author: krakonfour
+:Score: 1
+:DateUnix: 1406734735.0
+:END:
+
+
+** It seems weird it'd work /that/ badly? Is there a reason other than balance for this?
+
+Also, my suggestion was never that you'd use a remote computer that way, it was that you'd have a ship that jumps back and forth to keep up communications, updating it's info about coordinate in both locations faster than they change. Then, once you have data about what'd going by the battle and coordinates at HQ, you can put the /entire/ kinetics handler there.
+:PROPERTIES:
+:Author: ArmokGoB
+:Score: 1
+:DateUnix: 1406865137.0
+:END:
+
+*** You're not just modifying the shell code, but hoping that the core code will be overwritten. This requires a serious lapse in attention from the verification tool. As you cannot predict or test whether to verification tool is 'looking' or not, you'll just have to repeat multiple times for you to hit the correct time.
+
+The problem with a ship jumping back and forth just relaying information, is that it cannot be faster than the rendering cycles. If the enemy is also swapping at the same frequency, then you have gained nothing, or worse, your 'messenger' ship will reveal the position of the big computer, and it will fall under attack, in which case it will be forces between spending rendering cycles handling kinetics or moving itself out of danger...
+:PROPERTIES:
+:Author: krakonfour
+:Score: 1
+:DateUnix: 1406900272.0
+:END:
+
+**** The point is not to be faster than the rendering cycles; I estimate in the /best/ cases the latency would be 4 of them. But coordinates tend to stay the same for several hundred cycles at a time right? Maybe another example is better; you send a tiny unarmed scout, trailed by a tiny unarmed messenger, and if something happens you can port in hundred of big ships from half a galaxy away, and they don't all need to have independent drives or carry their own realtime zones.
+:PROPERTIES:
+:Author: ArmokGoB
+:Score: 1
+:DateUnix: 1406917512.0
+:END:
+
+***** You are right, the point is not to be faster, but to be able to do more with each cycle. If I have so much more calculating power than you, I can swap two cubes at once, or, if I don't have that much, I can spend more time outwitting your automated random swap program, analyze probabilities and predict your next move with greater accuracy.
+
+But, as you can see, being simply faster is not that much of an advanatge. You are either overwhelmingly faster (two cube swaps for each of yours) or wasting your calculation capacity. The best probability analysis can't beat human strategy, and no AI can help a dumb pilot win the battle.
+
+Coordinates tend to stay the same if nothing changes. A spaceship entering a sector will always modify the coordinates of not only that sector, but also of the sectors surrounding it. Each swap generates a realtime zone... but the realtime zone doesn't simply appear and dissapear. It expands at lightspeed from the moment of 'appearance', expands to maximum size, then is only maintained if the observer is still in the original position.
+
+While travelling, you leave behind a series of bubbles that expand, then burst and dissapear. They mess up the local coordinates, but make you easy to track.
+
+If the target ally is sitting still in lunar orbit, you'll have to wait about 0.33 seconds, or 33,333 cycles, for the coordinates to stabilize. In deep space, you'll have to wait the default 1-day-cycle. However, the smallest error in the coordinate swap can leave you 50-87m distant from your destination in the first case, but 10000-17000km distant from your target in the second case.
+
+If you send an unmanned ship so far away, it will enter un-rendered space and become untouchable by hacks, swaps or whatever. A manned ship swapping will have to have at least two observers, one of which stays behind to stabilize the realtime zone, for an inter-galactic swap to be possible. Furthermore, the fleet waiting for the messenger to arrive must be perfectly still, which is no easy feat. After the first ship swaps, the coordinates at destination will be messed up by the arrival of a new observer in a separate sector. They must swap all at once, which risks a reset and nothing happening.
+:PROPERTIES:
+:Author: krakonfour
+:Score: 2
+:DateUnix: 1406919023.0
+:END:
+
+****** I'm not talking abaut unmanned ships except for ones to be used exclusively as disposable and subservient near a manned ship. The "one stays behind and one swaps" is exactly what I'm describing, although the people are on separate ships they are staying near enough to each other to be be in the same realtime zone. The fleet would indeed stay in the exact same place, probably on an actual planetary surface with stabilizes the position. This is economical because you might have hundreds of scout-messenger pairs all over the galaxy and the chance of even two pairs needing the backup simultaneously is vanishinglly small.
+:PROPERTIES:
+:Author: ArmokGoB
+:Score: 1
+:DateUnix: 1406923559.0
+:END:
+
+******* So yes, backup, if correctly planned, is available from a galaxy away.
+
+Not on the planet's surface though, that's hacking death :)
+
+What you could do is have them orbit a small moon far far away from population centers, and make them swap when they hit the same spot in the orbit.
+:PROPERTIES:
+:Author: krakonfour
+:Score: 2
+:DateUnix: 1406925827.0
+:END:
+
+******** Not /the/ planet, /a/ planet. Or small moon. There might be only a single person n that entire solar system as well.
+:PROPERTIES:
+:Author: ArmokGoB
+:Score: 1
+:DateUnix: 1406927273.0
+:END:
+
+********* That slightly contradicts the 'fleet of pilots waiting to swap in for support' bit...
+:PROPERTIES:
+:Author: krakonfour
+:Score: 1
+:DateUnix: 1406927398.0
+:END:
+
+********** Hmm, ya. Still 100 ppl spread out over an entire planet shouldn't be that bad right? If you have 100 of these planets in an empire that each can send some ships, and there are 10 unmanned ships that can't swap on their own for each maned one...
+:PROPERTIES:
+:Author: ArmokGoB
+:Score: 1
+:DateUnix: 1407005187.0
+:END:

@@ -1,0 +1,558 @@
+#+TITLE: [D] Wednesday Worldbuilding Thread
+
+* [D] Wednesday Worldbuilding Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 10
+:DateUnix: 1469027079.0
+:END:
+Welcome to the Wednesday thread for worldbuilding discussions!
+
+[[/r/rational]] is focussed on rational and rationalist fiction, so we don't usually allow discussion of scenarios or worldbuilding unless there's finished chapters involved (see the sidebar). It /is/ pretty fun to cut loose with a likeminded community though, so this is our regular chance to:
+
+- Plan out a new story
+- Discuss how to escape a supervillian lair... or build a perfect prison
+- Poke holes in a popular setting (without writing fanfic)
+- Test your idea of how to rational-ify /Alice in Wonderland/
+
+Or generally work through the problems of a fictional world.
+
+^{Non-fiction should probably go in the Friday Off-topic thread, or Monday General Rationality}
+
+
+** How do you set up identity confirmation?
+
+Here's the story so far: someone has stolen the emperor's soul, leaving him in a vegetative state. After some hard work, the soul has been recovered. However, because all souls look alike, it's impossible to know whether it's actually the emperor's soul without having some method of identity confirmation. Obviously it would be a disaster if someone else's soul was put into the emperor's body and they began to rule in his stead.
+
+Ideally, this method of identity confirmation would not be possible to circumvent or subvert.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 5
+:DateUnix: 1469032509.0
+:END:
+
+*** Did they consider this possibility in advance? Are there mind-reading spells? If yes and no: plain old spell-out-the-password? (E.g. I say E, you say Q, I say F, you say R, etc.)
+:PROPERTIES:
+:Author: EliezerYudkowsky
+:Score: 7
+:DateUnix: 1469037073.0
+:END:
+
+**** The idea has been considered in advance, and there are no ways of reading minds. (Speaking to a soul itself is impossible; you can only speak to a soul-body pair, as a body without a soul is vegetative, while a soul without a body is inert.)
+
+The problem I have with call-response pairs is that you place a whole lot of power into the hands of the questioner, who can simply say "no, this is not the emperor" to get rid of the emperor, or can give the answers to some third party to take over the emperor's seat (or, if the answers aren't written down anywhere, simply pretend that the correct answers were given). Worse, there's a possibility that the emperor could be coerced into giving up his half of the pair if he's left alone for long enough (because souls can be taken out and put into different bodies, there are quite a few forms of torture available).
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 7
+:DateUnix: 1469038888.0
+:END:
+
+***** The simplest solution would be a password stored in a sealed box kept in a secure enough place. You have the emperor write down his password, then you break the box, and anyone can check whether the emperor gave the right password. Add in a second coercion-specific password just in case, and you have a secure-ish system, especially if the emperor writes and seals the password himself.
+
+Inventive solution, a bit more costly: recover the Emperor's journal. Have a trusted aide read through the journal, and designate a random event of the Emperor's life that he would undoubtedly remember upon prompting, but potential torturers probably wouldn't think to ask. The process should be done in a way that lets everyone confirm that the event does come from the journal, but doesn't let anyone but the aide actually access the rest of the journal. This one is less reliable than it sounds since memory isn't as accurate as we tend to think.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 4
+:DateUnix: 1469040277.0
+:END:
+
+
+***** If everyone is untrusted all of the time, there doesn't seem to be any possible process that "confirms" the Emperor, because everyone could just be like 'lolnope' at the conclusion. Can I have 5 people of whom it is assumed that at most 2 are untrustworthy? Can I have a complex artifact that's stored where it can't be taken out without the Senate knowing about it?
+:PROPERTIES:
+:Author: EliezerYudkowsky
+:Score: 4
+:DateUnix: 1469041968.0
+:END:
+
+****** The solution that I'm currently planning on using is a council of 7 with at least 5 having to agree that it's actually the emperor. Didn't want to poison discussion by saying that outright though, and I think it's got its own problems to be thought through (such as whether you need to confirm the identities of the identity confirmers).
+
+You can have a complex artifact stored securely somewhere, though the technology level I'm using is pre-computers. (If you have a post-computer artifact in mind, I'd still like to hear it.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1469043550.0
+:END:
+
+******* #+begin_quote
+  The solution that I'm currently planning on using is a council of 7 with at least 5 having to agree that it's actually the emperor
+#+end_quote
+
+Wait, wouldn't the emperor just execute the two councilmen who lie about his identity? (it might not be a lie if the verification is through personality tests instead of reciting passwords, but you know what I mean)
+
+#+begin_quote
+  (such as whether you need to confirm the identities of the identity confirmers).
+#+end_quote
+
+If stealing someone's soul and replacing it with another one without anyone noticing is possible, then organized governments would probably have routine identity checks, so the vetters probably have to be vetted as well at some point.
+
+#+begin_quote
+  You can have a complex artifact stored securely somewhere, though the technology level I'm using is pre-computers. (If you have a post-computer artifact in mind, I'd still like to hear it.)
+#+end_quote
+
+What stops them from using written, sealed passwords? As long as the seal is easy to authenticate (for instance, a complex, unmovable, publicly visible piece of masonry inside the palace), no one will doubt the results no matter how untrustworthy the councilmen are.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 6
+:DateUnix: 1469044495.0
+:END:
+
+******** #+begin_quote
+  Wait, wouldn't the emperor just execute the two councilmen who lie about his identity? (it might not be a lie if the verification is through personality tests instead of reciting passwords, but you know what I mean)
+#+end_quote
+
+The emperor would have to be pretty short-sighted to do that. If everyone is going to vote "yes" out of fear of execution, then the verification council doesn't actually work. The council needs to be able to vote what they actually believe to be true.
+
+#+begin_quote
+  If stealing someone's soul and replacing it with another one without anyone noticing is possible, then organized governments would probably have routine identity checks, so the vetters probably have to be vetted as well at some point.
+#+end_quote
+
+I'm sort of on the fence about how often routine identity checks need to be done. Taking over a person's entire life seems like it would be quite difficult, since if you're the imposter, you need to know virtually everything about the person whose life you're taking over. That means a gathering a huge amount of intelligence. So maybe for people high up in the government, but I think it would be kept fairly simple, unless there's a strong insurgency that has a history of trying to take over bodies. There's a trade-off of security and inconvenience, not to mention that a culture of paranoia comes with its own costs (like false positives).
+
+#+begin_quote
+  What stops them from using written, sealed passwords? As long as the seal is easy to authenticate (for instance, a complex, unmovable, publicly visible piece of masonry inside the palace), no one will doubt the results no matter how untrustworthy the councilmen are.
+#+end_quote
+
+Sealed passwords work. There is a fairly significant problem of them only working /once/ though. For example, if the emperor's soul is taken and a soul is recovered that's believed to be his, once the authentication fails, the password is now known to several people and you're back in the same position of needing trust (beyond the trust you need to place in your guards and whoever is doing the verification to ensure that they won't make a new password with a new seal under cover of nightfall). Sending in a sacrificial lamb has a lot of costs for whatever conspiracy you suspect might happen, and you can mitigate the possibility somewhat by sealing in multiple passwords ... I don't know. It depends on how many levels of play and counter-play are expected, and which direction the conspiracy is expected to come from. (You don't just worry about those who would try to replace the emperor, you worry about those who would use an opportunity to get rid of him.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1469076664.0
+:END:
+
+********* #+begin_quote
+  The emperor would have to be pretty short-sighted to do that.
+#+end_quote
+
+If a councilman thinks it's an imposter, he doesn't know that he won't be executed if he says it's an imposter, because the imposter, not the emperor, is the one with executive power.
+
+#+begin_quote
+  There is a fairly significant problem of them only working once though.
+#+end_quote
+
+Keep a [[https://en.wikipedia.org/wiki/Cryptex]] (vinegar-sealed miniature vault containing, say, a signature from each councilman) on the emperor's person. Whoever can destroy the Cryptex can destroy the emperor's body.
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 3
+:DateUnix: 1469102230.0
+:END:
+
+
+********* ... Audience room. If you want to petition the emperor, you must wait there for seven days. No, wait, I have a better one - High-ranking marriages only have legal force if preformed by the emperor. You still get stuck in the room for seven days, tough. All facilities are arranged so that you can tend to bodily needs with a view of the room, and without technically leaving.
+
+This means there is /always/ a crowd of important personages present, and it's effectively impossible to coordinate things so that all of them belong to any particular faction.
+
+A third of the way down the room is a line which only the emperor may cross. 3 meters from the back of the room is a blackboard on a pivot. Before preforming the marriages that have completed the ceremony of waiting the emperor announces what is on the blackboard today, spins it to show the truth of that statement, then erases it, spins it away from the crowd and puts something new there.
+
+For extra hilarity, it is considered very good luck to have your wedding day be one of the occasions where the emperor feels compelled to sweep the inviolate third of the Hall of Marriage because it's just gotten too damn dusty.
+:PROPERTIES:
+:Author: Izeinwinter
+:Score: 1
+:DateUnix: 1469566784.0
+:END:
+
+
+***** If they have advanced enough maths couldn't they use public key cryptography to avoid most of the trust issue?
+:PROPERTIES:
+:Author: IomKg
+:Score: 2
+:DateUnix: 1469095357.0
+:END:
+
+
+*** Further data about that world is needed to know how to confirm a soul. Are souls the vital spark that provides motivation to move? Do they hold memories? Are they an interface between the brain, magic, and the body? Without knowing what they do in your setting we can't know how to identify them.
+:PROPERTIES:
+:Author: MindsEyePsi
+:Score: 3
+:DateUnix: 1469038928.0
+:END:
+
+**** Things you get from your body:
+
+- Physical strength
+
+- Muscle memory
+
+- Looks
+
+- Some amount of attraction (pheromones)
+
+- Some varieties of mental problems
+
+- Most instinctual responses
+
+- Sex
+
+Things you get from your soul:
+
+- Most emotions
+
+- Rational thought
+
+- Memories
+
+- Some amount of attraction (intellectual)
+
+- Some varieties of mental problems
+
+- Gender
+
+Souls by themselves experience nothing (since senses are biological) and cannot communicate (because they cannot experience or move).
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1469039146.0
+:END:
+
+***** If emotions are only partially in the soul, you could implement something like the [[https://en.wikipedia.org/wiki/Blade_Runner#Voight-Kampff_machine][Voight-Kampff test]] to compare autonomic reactions (breathing, heartrate, blood pressure, sweating, eye-movement) to somatic ones (words, gestures, facial expressions). Instead of focusing on empathy to find vat-grown brains, the test would probably include emotional moments from the emperor's life and could be compared to his known soul's previous results on a similar test.
+
+There is some risk a significantly traumatized emperor could fail his own test, so it might be best to include other methods as well.
+:PROPERTIES:
+:Author: Sparkwitch
+:Score: 6
+:DateUnix: 1469046532.0
+:END:
+
+
+*** If you can talk to the souls, you could see if it knows some piece of information that only the emperor would know. But, that assumes nothing could capture the emperor's soul and get that information out of it.
+:PROPERTIES:
+:Author: tadrinth
+:Score: 1
+:DateUnix: 1469037043.0
+:END:
+
+
+*** If the soul carries the memories, just get people to ask the emperor about the details of council sessions, marital life, childhood events, etc, such that no other person would be likely to have those memories. If foul play is suspected, maybe make sure to do this in private, with different "security question people" not able to influence each other.
+:PROPERTIES:
+:Author: Charlie___
+:Score: 1
+:DateUnix: 1469047850.0
+:END:
+
+
+*** Tangentially: Somewhat related concept, [[http://brandonsanderson.com/books/elantris/the-emperors-soul/][The Emperor's Soul]].
+:PROPERTIES:
+:Author: NoYouTryAnother
+:Score: 1
+:DateUnix: 1469114985.0
+:END:
+
+
+*** Use multiple methods for maximum certainty, obviously.
+
+Have the king seal an object in a jar; place the jar in a public place and guard it. He must later predict what will be inside.
+
+The king invents a rule; he provides various nobles throughout the land with examples that fit the rule and writes some down. When he produces the rule, all can test that their example fits.
+
+Have a secret sign that he must make once acknowledged as king, or you'll know it's an imposter and to go looking for the real king. Obviously don't tell anyone.
+
+There are a dozen variations on "the king must know the password" - choose correctly from a bunch of objects, give the right response to a code question, know the way to unlock a code lock etc.
+
+Have the king hold an in-depth conversation with one of five priests, randomly chosen, each day. Pick one of them and have her interview him on the day.
+
+Come up with an amusing story and tell it to the king; make sure he remembers it. The story is intended as another password. Don't tell him this, and tell him multiple such stories, so it's impossible to betray under torture.
+:PROPERTIES:
+:Author: MugaSofer
+:Score: 1
+:DateUnix: 1469132907.0
+:END:
+
+
+** I'm in the process of practicing a lot of futurism for the city of Pittsburgh, PA.
+
+As such I've been digging into the available city planning, exploring the city via street view, poking at blogs about how they hate the city. poking at blogs of people that love the city.
+
+And just spending a lot of time thinking about my own (nearly twenty years out of date) impressions of that part of the country.
+
+Anyone have their own suggestions or resources or anecdotes about Pennsylvania/Pittsburgh that would be useful to build a more accurate projection of the next thirty years of history for that part of the world?
+:PROPERTIES:
+:Author: Nighzmarquls
+:Score: 4
+:DateUnix: 1469056431.0
+:END:
+
+
+** Once again, building on a yet-to-be-revised badly written [[https://github.com/kiba/Writings/blob/master/gaia/plot.md][plot summary]] for a trans-dimensional story...
+
+I am considering options to resolve the sheer coincidence of our protagonist encountering his doppelganger mother.
+
+The best resolution I can think of is that it's actually peculiar to our traveler's method of travel.
+
+When he jumped to that particular reality, he didn't jump into another Earth, but literally a different planet. That means he didn't travel into another universe that happens to just branch five second ago(or really just nanoseconds). That would be 'closest' if we take closest to mean the most similar realities.
+
+Trans-dimensional bullshit handwavium rules doesn't do traveling to branching timeline. That is impossible. In that sense, for all intent and purpose, there is no other 'version' of our protagonist from a different timeline taking a different path resulting in a slightly different outcome.
+
+It is technically possible to travel to an adjacent reality that doesn't branch off from ours, though it is very difficult to do so.
+
+Most realities resembling ours have a difficulty rating of 10 out of 10. You would need extremely advanced capability in order to travel to ours...or there is somehow a process or a unique ability to bypass that restriction.
+
+Our protagonist have that unique one-of-a-kind ability to navigate to worlds. He acquired a trans-d shard that allowed him to travel all the other shards, more importantly understanding the physics of how trans-d work, which allowed him to engineer the trans-d drive to allow him to jump in the first place. It is also one of very few shards that's actually in any working condition. Most shard are broken, sometime even driving their host to madness, or to the point of causing a failure cascade in a particular reality on a fundamental level. (No, there is no maliciousness or any sort of agencies. So you don't have to worry about evil space whales, but there is a need for a story of sort to explain where the shards come from)
+
+Therefore:
+
+- There are many versions of him across realities with basically the same base personality and DNA. The shards fuzzy match all instances of our protagonist.
+- It isn't strange for him to repeatedly encounter his mother across realities as that where the shards are. Details can change, sometime dramatically.
+- Travel will take him to places far and wide across trans-reality, and close to his reality as well as the shards, finite in numbers, are spread across reality.
+
+Other than that, I don't have any concept for the background story of the trans-reality shard, or if different shards has different mechanics. I don't try to dwell too much because my stories tend to be limited to a few worlds at most, but I do feel that should be some kind of background.
+
+One proposal in my mind is that the shard are created by a form of magic by wizard instance of our character as a form of 'fuck you' or a final desperation move. Or maybe he could have done it to gather power, reasoning that instances of individuals like him will eventually meet up and work to build an empire? I guess if the shard are broken, the process for making it is either flawed or rushed.
+
+Anyway, I hope my justification for the sheer coincidence of our protagonist meeting his mother works good enough.
+
+P.S. It appears that it took me thirty minutes to write this post? That's work, I guess.
+:PROPERTIES:
+:Author: hackerkiba
+:Score: 2
+:DateUnix: 1469045104.0
+:END:
+
+*** Okay so to start off, I have only read one of your works none of the summaries for the others interested me it was called [[https://forums.sufficientvelocity.com/threads/two-bodies-one-mind-original.24622/][Two Bodies, One Mind]] I can't put in words how much I loved it. The only problem is that not many others shared my opinion and you abandoned it as a result. So with this story I'm hoping the premise will be similar i.e. it will be a [[http://tvtropes.org/pmwiki/pmwiki.php/Main/OneManIndustrialRevolution][one man industrial revolution]]. Anyways, onto my thoughts of the story. So the biggest thing that stands out to me is that you seemed to have not thought that far ahead. Not saying that you haven't, you may have just wanted to withhold spoilers but I still think it's worth mentioning what direction you intend to give the story instead of focusing on the beginning. Moving on, I don't really understand what connects the realities you said:
+
+#+begin_quote
+  When he jumped to that particular reality, he didn't jump into another Earth, but literally a different planet.
+#+end_quote
+
+From what I can take from this you're saying that realities aren't connected by branching realities but instead you have two different realities and in these realities they started off completely different (maybe branching off when the universe was created). Eventually an instance of the protagonist comes into being and this is what the shard latches onto no matter where and when in the universe it is. whatever the case it'd be best to make this more clear.
+
+There are other things I can say but I want those things clarified first.
+:PROPERTIES:
+:Author: Tomas_Votava
+:Score: 1
+:DateUnix: 1469115274.0
+:END:
+
+**** /Okay so to start off, I have only read one of your works none of the summaries for the others interested me it was called Two Bodies, One Mind I can't put in words how much I loved it. The only problem is that not many others shared my opinion and you abandoned it as a result. So with this story I'm hoping the premise will be similar i.e. it will be a one man industrial revolution. Anyways, onto my thoughts of the story. So the biggest thing that stands out to me is that you seemed to have not thought that far ahead. Not saying that you haven't, you may have just wanted to withhold spoilers but I still think it's worth mentioning what direction you intend to give the story instead of focusing on the beginning. Moving on, I don't really understand what connects the realities you said:/
+
+It feels odd to write about a bubbly female character with social life, with a prince for a boyfriend. I am your sterotypical nerd stuck in his parents' basement, you know? Totally opposite of the rocket scientist girl. So...someone like it? Wow. Anyway, I abandoned that story because I do not feel confident in my understanding of rocketry, space program, and a whole bunch of worldbuilding. It's also abandoned because typical-me never finish a story, though I am now on the verge of completing a really badly written fanfic! Developing a consistent work habit is totally a game changer in how much work I get done.
+
+Anyway, my story will take place in the same setting, with some names changes(Yipang instead of Jipang) and hopefully more developed worldbuilding.
+
+It looked like I have not thought that far was because I am focused on developing only the first arc, worrying about everything else later. If I ever progress beyond the first arc, it won't certainly be a one-man revolution(or rather many-man industrial revolution), because I felt that is not a realistic or rational path. If there's a natural path, the story will write itself. I could hold if off for maybe a year or two before our protagonist caved in from pressures or someone else other than him disclose it.
+
+/From what I can take from this you're saying that realities aren't connected by branching realities but instead you have two different realities and in these realities they started off completely different (maybe branching off when the universe was created). Eventually an instance of the protagonist comes into being and this is what the shard latches onto no matter where and when in the universe it is. whatever the case it'd be best to make this more clear./
+
+I would say that the universe are completely unconnected causally? Universes are coming in and out of existence all the time. I don't have a full grasp on multiversal cosmology.
+
+The whole idea is that given enough universes, enough matter and spacetime, there will be instances of our protagonists. The universe could be three billion years old, an Earth located in a double binary system, and so on. It doesn't matter. The shards all managed to find instances of our protagonists thoughout the multiverse.
+:PROPERTIES:
+:Author: hackerkiba
+:Score: 1
+:DateUnix: 1469117586.0
+:END:
+
+***** When I said I liked the story, really I only meant the premise because of how much I like that trope I mentioned earlier. the romance and gender confusion was just an interesting interaction.
+
+I can definitely understand having trouble writing out a person that's the result of two minds merging and that's not considering creating factually accurate worldbuilding.
+
+As for the importance of thinking beyond the first story arc, I think it's really important for later on. It doesn't have to be anything concrete, just several directions you might want the story to go. I find this important because with my stories I find that if I have a direction that I really want to go I have to go another route to prevent plot holes. However, if you really are just seeing where this will take you that might not be necessary. It however bothers me a bit because you should be able to tell readers what your story is about, 'dimension traveling' is just a mechanic the way I see it what the protagonist will end up doing with it is what the story is about, but then again this thread is just worldbuilding.
+
+Moving on,
+
+#+begin_quote
+  Most realities resembling ours have a difficulty rating of 10 out of 10. You would need extremely advanced capability in order to travel to ours...or there is somehow a process or a unique ability to bypass that restriction.
+#+end_quote
+
+This part needs more elaboration, I don't really understand what you mean by 'difficulty rating of 10 out of 10'.
+
+#+begin_quote
+  It is also one of very few shards that's actually in any working condition. Most shard are broken, sometime even driving their host to madness, or to the point of causing a failure cascade in a particular reality on a fundamental level.
+#+end_quote
+
+as for this part, I thought shards were just anchors to different universes containing alternate selves?
+:PROPERTIES:
+:Author: Tomas_Votava
+:Score: 1
+:DateUnix: 1469121911.0
+:END:
+
+****** /As for the importance of thinking beyond the first story arc, I think it's really important for later on. It doesn't have to be anything concrete, just several directions you might want the story to go. I find this important because with my stories I find that if I have a direction that I really want to go I have to go another route to prevent plot holes./
+
+/However, if you really are just seeing where this will take you that might not be necessary. It however bothers me a bit because you should be able to tell readers what your story is about, 'dimension traveling' is just a mechanic the way I see it what the protagonist will end up doing with it is what the story is about, but then again this thread is just worldbuilding./
+
+What our protagonist will do with it is less important than what other people will do with it. We're talking about nation-state actors getting into the business of trans-dimensional travel.
+
+The way I do storytelling is thinking "what if X happens?" and then thinking "Y will happen because of A and B reasons".
+
+I write stories where the logical conclusion takes me.
+
+If I try to say...force a direction, that will end up with a lot more work for me, because then I have to contrive a scenario where doesn't happen.
+
+/This part needs more elaboration, I don't really understand what you mean by 'difficulty rating of 10 out of 10'./
+
+You normally need sufficiently advanced technology in order to travel there, otherwise trans-dimensional travel is almost impossible. A shard open up that 'region' of the multiverse for easy travel.
+
+/as for this part, I thought shards were just anchors to different universes containing alternate selves?/
+
+Shards don't just provide anchor points, but abilities as well. Our protagonist cannot come up with trans-dimensional travel on his own.
+:PROPERTIES:
+:Author: hackerkiba
+:Score: 1
+:DateUnix: 1469129659.0
+:END:
+
+
+** Anyone have any serious experience with higher dimensional math? I am looking to more formally settle an idea regarding spirits/souls simply being being material in higher dimensional space.
+
+The issue is determining how many degrees of freedom are needed above the three spacial dimensions (and one temporal). Ideally they would be Euclidean as I understand the rules for that but I may have to change that based on how things work out.
+:PROPERTIES:
+:Author: Dragrath
+:Score: 2
+:DateUnix: 1469063701.0
+:END:
+
+*** I'm not entirely sure what you're asking, but dimensions are pretty much synonymous with degrees of freedom. A 3-dimensional space has three degrees of freedom, a 4-dimensional space has four degrees of freedom. A simple way to define the dimension of a space is "how many numbers do I need to find a point in the space?"
+
+Euclidean space has many symmetries and no absolute axes, scale or origin. You can't point in some direction and say "that's the 2nd dimension". Minkowski space (3 space + 1 time) has different symmetries, there is a clear difference between space and time.
+
+If you have a sort of 5D (3 space + 1 time + 1 spirit) spirit world, such that the physical world we see is a 3+1-dimensional cross section of that (technically, probably a submanifold) then you're introducing an asymmetry. Either (A) that asymmetry is a fundamental aspect of how space-time-spirit works, or (B) the asymmetry is simply a consequence of the fact that this physical world submanifold happens to be sitting there. If it's (A) then your space is not going to be Euclidean or Minkowski space, it'll be something fundamentally different because of the new asymmetry.
+
+If it's (B), then you could make things work like simple 4+1 (or higher) Minkowski space if you want to. So at least you'd know how light works in the spirit world. Then you'd just have to figure out the nature of the physical world submanifold. How does matter in the higher space interact with the physical world in such a way that it /seems/ like spirits and souls, and how does all the regular matter stick to the physical world instead of floating away? It'd be really cool to see good answers to those questions.
+:PROPERTIES:
+:Author: Pwrong
+:Score: 8
+:DateUnix: 1469096571.0
+:END:
+
+**** you sir, use a lot of incomprehensible words. I looked up all the words I didn't understand and the explanations are almost impossible for me to understand (damn you, and your long winded explanations Wikipedia!). If it's not too much trouble could you explain some of the terms you use? I find this pretty interesting. Here's the terms/sentences I don't understand:
+
+- so this confused me the most (probably because I can understand it partially while everything else I can't.) for the first part I understand the infinite symmetries for infinite space but not the part about no absolute axes scale or origin, can't you designate an origin? as for the second part not understanding the first part doesn't help:
+
+#+begin_quote
+  Euclidean space has many symmetries and no absolute axes, scale or origin. You can't point in some direction and say "that's the 2nd dimension".
+#+end_quote
+
+- what is the difference between space and time? You state this without saying anything but the symmetries are different (are we talking about symmetries relative to itself or towards other dimensions?).
+- submanifolds (looked this up on wolfram alpha and all i got were more math words.)
+
+Thanks! edit: still figuring out bullet points.
+:PROPERTIES:
+:Author: Tomas_Votava
+:Score: 1
+:DateUnix: 1469113470.0
+:END:
+
+***** The symmetries I'm talking about are space translational symmetry, rotational symmetry, and time translational symmetry. The laws of physics are invariant with respect to translations and rotations. If you do a physics experiment in empty space, then you do the same experiment 10 metres to the left, rotated clockwise, and a week later, you should get the same results.
+
+#+begin_quote
+  can't you designate an origin You can designate an origin if you like, and you can then point in a direction and say "that's the x axis", and so on. But I could do the same thing in a completely different way and there's no way to say that one of us is "correct". That's what I mean by the axes and scale not being "absolute". Of course that doesn't mean that designating an origin isn't still useful.
+#+end_quote
+
+In Euclidean space, we have what's called a "metric", which is basically just the Pythagorean theorem: sqrt(x^{2} + y^{2} + z^{2).} After you choose your axes and I choose my axes, we can define the distance between two points using Pythagoras. Even though we have completely different axes, we will agree on the distance between two points.
+
+Minkowski spacetime has a different metric: sqrt(x^{2} + y^{2} + z^{2} - c t^{2).} This gives us a "spacetime distance" between two events. Even if we have different coordinate systems and reference frames, we will always agree on the spacetime distance between two events. The fact that c t^{2} has a /minus/ sign instead of a plus sign is what makes time different from space in a fundamental way.
+
+A manifold is something like a curve or a surface, or a higher dimensional surface. The basic rule is that the closer you look at it, the more it looks like a line or a plane (or higher dimensional equivalent). A submanifold is just a subset of a manifold that is also a manifold.
+:PROPERTIES:
+:Author: Pwrong
+:Score: 2
+:DateUnix: 1469235519.0
+:END:
+
+****** Thanks! I appreciate you taking the time out of your day to explain these concepts to a non-mathmatician.
+
+I understand a lot more than before (not all, but that just requires more googling on my part), especially in regards to manifolds and submanifolds.
+
+I've always found dimensions interesting ever since I watched [[https://www.youtube.com/watch?v=eyuNrm4VK2w][flatland]] on youtube. Sometimes what mathmaticians do just confounds me.
+
+I remember watching some video explaining a [[https://www.youtube.com/watch?v=R_w4HYXuo9M][problem]] in only three dimensions that I could just not understand how they could possibly come up with a solution, much less several. Though I do know on an intellectual level that they use math to accomplish this there is a dissonance on what I think math can do (basically caused by me extrapolating what math I DO know does.) and what it actually is capable of.
+
+edit: formatting, links.
+:PROPERTIES:
+:Author: Tomas_Votava
+:Score: 2
+:DateUnix: 1469244123.0
+:END:
+
+
+**** Yeah in regards to degrees of freedom I guess the main idea is that the asymmetry would arise from the interaction with the temporal dimension. This idea is that the spacial dimensions are biased by an arrow of time where as there is no such analogue in regards to the "astral dimensions"
+
+The hope is to however ground and alter my idea as necessarily as I lack the viewpoint of a mathematician in regards to the viability of this. My background is a BS in physics so the highest dimensional I have worked with personally is Schwarzschild metric. Where euclidean geometry breaks down as it is too idealistic.
+
+I guess I could say I am looking for a way to handle the complexity of higher dimensions in the simplest way possible. We have 3 spacial degrees of freedom but spirits need to have several unique degrees of freedom (including the ability to oppose the flow of the arrow of time) in exchange for only indirectly affecting the other dimensions.
+
+The description of the physical world as a sub manifold is probably pretty accurate towards what I am trying to do however I don't feel I have a good enough grasp on that class of mathematics hence why I asked for some review from some with more experience.
+
+The latter questions of trying to properly manage the interactions is where I kind of want to go but I don't know how many degrees of freedom I would need as I don't have experience with submanifolds really.
+
+The current idea structure is that the physical world is being dragged temporally so anything moving with respect to those dimensions is dragged along with the flow. Sort of like a plant attached to a flat plane would be dragged along by the motion of the two dimensions of the plane but free to move in the third spacial dimension outside the plane.
+
+My understanding of higher dimensions is relatively limited as in my studies I kind of take 4D spacetime for granted as a matter of math (or once told how to handle problems there I can't say I could accurately extrapolate to higher dimensions as from what research I have done it is not possible to simply extrapolate to higher dimensions mathematically.
+
+My idea wth regards to the physical universe is that the degrees of freedom are only limited in motion sort of liek an atom bound in a molecule. The larger structure limits how it can move yet it can still vibrate in all of the physical dimensions(which is enough to move around and live etc.)
+
+Thus in analogue the physical world would be a object with a vectorial direction moving in higher dimensional space. From the larger universe as a whole it could be treated as a point particle where as in regards to the local(i.e. microscopic) scale the dimensions would have some leeway. I am however not sure if this approach is mathematically viable(as I would not know where exactly to start calculation wise as it is above my mathematical background)
+
+Edit-to give a more precise description of my starting point I have been thinking of local motion as a perturbation to the larger macro scale stationary object(with regards to the three "physical" spacial dimensions) So in this regards I started from applying the method of perturbations from quantum mechanics.
+:PROPERTIES:
+:Author: Dragrath
+:Score: 1
+:DateUnix: 1469132290.0
+:END:
+
+***** #+begin_quote
+  Yeah in regards to degrees of freedom I guess the main idea is that the asymmetry would arise from the interaction with the temporal dimension. This idea is that the spacial dimensions are biased by an arrow of time where as there is no such analogue in regards to the "astral dimensions"
+#+end_quote
+
+OK I think this means you're choosing option (B). So you've got an nD spacetime that is symmetrical and works in a particular way, but then you've got this 3D physical world floating around in it. Matter particles are bound to the physical world by some kind of forces, while other particles (the ones relating to souls or whatever) are not so bound. Maybe you'd say that my soul is close to my brain.
+
+#+begin_quote
+  My understanding of higher dimensions is relatively limited as in my studies I kind of take 4D spacetime for granted as a matter of math (or once told how to handle problems there I can't say I could accurately extrapolate to higher dimensions as from what research I have done it is not possible to simply extrapolate to higher dimensions mathematically.)
+#+end_quote
+
+If you're willing to learn a bunch of new maths to deal with higher dimensions, I'd recommend you refresh your knowledge of linear algebra (matrices, subspaces, linear transformations; you would have done some of this in your physics degree) and maybe follow that up with an introduction to Clifford Algebra. That will get you thinking in such a way that n-dimensional space is not much more complicated than 3-dimensional space. [[https://slehar.wordpress.com/2014/03/18/clifford-algebra-a-visual-introduction/][Here's a quick introduction to Clifford Algebra]] and [[ftp://www.biophysics.uwa.edu.au/pub/Mathematics/Alder/GeometricAlgebra.pdf][here is the course I learned on it]]. The author of the latter was a terrible lecturer but wrote excellent course notes. For manifolds, you could read [[ftp://ftp.physics.uwa.edu.au/pub/Mathematics/Alder/DiffGeom.pdf][these course notes]] by the same guy, especially Remark 2.3.1 about astronauts watching ghost penguins skating on the north pole.
+
+For a less mathematical view on higher dimensions, you could try [[http://hi.gher.space/classic/introduction.htm][this introduction]], which is pretty basic but handy for writing fiction.
+
+If you're interested in the higher dimensions in string theory then I recommend Brian Greene's "The Elegant Universe". It's very good, it's a non-mathematical book but it has occasional footnotes "for the mathematically inclined reader". The idea of branes would be especially helpful for you. Don't bother reading anything mathematical about branes at this point though.
+
+#+begin_quote
+  From the larger universe as a whole it could be treated as a point particle where as in regards to the local(i.e. microscopic) scale the dimensions would have some leeway.
+#+end_quote
+
+I don't think this is an effective way to look at it. You wouldn't look at a line or a plane and say "from the 3D universe as a whole we can treat this plane as a point particle". The physical universe could still be very large compared to a being outside it, despite being a lower dimension. If you died and your soul escaped the physical realm, you and I would measure the same distance between Earth and Jupiter. It might take you less time to get there, but only if you're very fast, or huge, or if space is curved in a very strange way.
+
+#+begin_quote
+  My idea wth regards to the physical universe is that the degrees of freedom are only limited in motion sort of liek an atom bound in a molecule. The larger structure limits how it can move yet it can still vibrate in all of the physical dimensions(which is enough to move around and live etc.)
+#+end_quote
+
+Are you saying that the physical universe is itself a kind of physical object, and all the atoms are bound to it by forces? That seems reasonable to me, and consistent with the "brane" idea in string theory.
+
+#+begin_quote
+  Edit-to give a more precise description of my starting point I have been thinking of local motion as a perturbation to the larger macro scale stationary object(with regards to the three "physical" spacial dimensions) So in this regards I started from applying the method of perturbations from quantum mechanics.
+#+end_quote
+
+That sounds interesting, can you elaborate on that?
+:PROPERTIES:
+:Author: Pwrong
+:Score: 2
+:DateUnix: 1469234672.0
+:END:
+
+****** Ah I guess I should reply to articulate the points a bit more and I have been able to improve it a bit thanks to your help!
+
+basically the three spacial dimensions are identical to three of the astral dimensions however the physical elements are effectively bound to be static with all motion(such as inhabitants moving around). So to an extent the amount of variability allowed for astral particles is so large compared to the physical equivalent that the physical matter can be treated as a effectively static solution with some small perturbation terms added onto the static solution. (So basically starting with the static physical dimension tensor and add on a second perturbation tensor). Thus the distinction between astral and physical has more to do with the forces involved than separate dimensions(I had a bit of confusion on handling this part) The denizens of the world however do not make the distinction behind this separation however they view the astral dimensions as separate as they can not see the "astral particles" only feel their effects.
+
+You do give a good argument why the point particle analogy wasn't the best analogy. and indeed this world would be organized around galaxies galaxy clusters and super clusters. The exact circumstances of the planet's location in the universe (i.e. a galactic merger event) would have drastic effects on the culture and religion of the world in question. (Astrophysics is my personal area of interest.) Basically from the perspective of the physical universe spirits/souls/mana if not interacting with physical matter via mutual forces could be treated as non localized as they are outside the arrow of time and thanks to heavily utilizing "spooky action at a distance" i.e. Quantum entanglement where two particles can interact regardless of the distance. This at this point would be relatively meaningless for the story world outside of several magics.
+
+As for regards to Branes in string theory I do find the idea quite interesting however the so far lack of any, falsifiable predictions does keep it from being more than an interesting thought. It does paint a nice picture of dark matter though but so far it hasn't given any predictions that can really be tested to my knowledge. The similarities to be honest were not consciously linked to Branes however it is a very good analog to the sort of universe that anything in the story would happen in
+:PROPERTIES:
+:Author: Dragrath
+:Score: 1
+:DateUnix: 1469238822.0
+:END:
+
+
+*** My husband's into that sort of higher dimensions stuff. He's a phD pure mathematician, for what it's worth. Not sure if he goes on reddit much these days. Paging [[/u/pwrong]] for you, maybe he'll be able to help!
+
+Quoting OP so he can see it in his inbox:
+
+#+begin_quote
+  Anyone have any serious experience with higher dimensional math? I am looking to more formally settle an idea regarding spirits/souls simply being being material in higher dimensional space.
+
+  The issue is determining how many degrees of freedom are needed above the three spacial dimensions (and one temporal). Ideally they would be Euclidean as I understand the rules for that but I may have to change that based on how things work out.
+#+end_quote
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1469078378.0
+:END:

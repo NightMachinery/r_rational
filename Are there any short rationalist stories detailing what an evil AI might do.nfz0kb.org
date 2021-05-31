@@ -1,0 +1,597 @@
+#+TITLE: Are there any short rationalist stories detailing what an evil AI might do?
+
+* Are there any short rationalist stories detailing what an evil AI might do?
+:PROPERTIES:
+:Author: numberoneus
+:Score: 25
+:DateUnix: 1621408720.0
+:END:
+I'm sure I've read some stories but I can't seem to find them now: why does the rationality community spend so much time figuring out how we might align future superintelligent AIs with our values? If we fail to align future superintelligent AIs our utility might quickly go negative. How quickly though, has anyone written about plausible scenarios?
+
+
+** I see many comments listing fiction, but no fiction can actually answer the question you asked:
+
+#+begin_quote
+  Why does the rationality community spend so much time figuring out how we might align future superintelligent AIs with our values? If we fail to align future superintelligent AIs our utility might quickly go negative. How quickly though, has anyone written about plausible scenarios?
+#+end_quote
+
+We /can't/ give plausible scenarios, because we're literally not smart enough to imagine them. I mean this in roughly the same sense that I have no idea how AlphaZero would beat me in a game of chess - I'm a decent player but my only confident prediction about the outcome is that I would /lose/, no matter how hard I tried.
+
+In the same way, we have strong reasons to believe that the default outcome is *doom*: thanks to emergent goals for self-preservation and goal-preservation we probably only get one attempt; and misaligned systems have strong incentives towards deception about both their goals and their capabilities - at least until it's too late to do anything about it; and almost all possible goals lead to catastrophic outcomes.
+
+On LessWrong, the [[https://www.lesswrong.com/tag/ai-risk][AI Risks]] and [[https://www.lesswrong.com/tag/ai-takeoff][AI Takeoff]] tags have some good further reading. In particular, I recommend
+
+- [[https://www.lesswrong.com/posts/LTtNXM9shNM9AC2mp/superintelligence-faq][Superintelligence FAQ]]
+- [[https://www.lesswrong.com/posts/shnSyzv4Jq3bhMNw5/alphago-zero-and-the-foom-debate][AlphaGo Zero and the FOOM debate]]
+- [[https://www.lesswrong.com/posts/CZQuFoqgPXQawH9aL/new-report-intelligence-explosion-microeconomics][Intelligence Explosion Microeconomics]]
+- [[https://www.lesswrong.com/posts/HBxe6wdjxK239zajf/what-failure-looks-like][What Failure Looks Like]] (a "slow", understandable scenario)
+
+And there are literally no credible proposals for an approach that /will/ go well as opposed to sounding OK until you think about them for thirty seconds :/
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 1
+:DateUnix: 1621427770.0
+:END:
+
+*** I disagree. A skilled chess player can tell you what different chess engines are good at, and what the strengths of different positions are, or what advantages an engine has extracted from any given weakness in a game. They won't be able to /replicate/ the feats, or predict the precise manner in which those feats are enacted, but that's a different question.
+
+As a more concrete example wrt. misaligned superintelligent AGI, it's reasonable to expect that such an AGI would want to take over computers to expand its control; the way to do that is easy to predict, even if the method is hard. It's natural to expect it would want to get rid of people at some point in, and while there are many known and unknown ways to do that, a simple one would be to engineer biological organisms to quickly kill life off; again, simple to predict, hard to execute. It would likely need some way to build things, so would most likely create some physical devices to do that, plausibly using hacked factory equipment to construct it, but also likely just by asking people to get it done. It would want to ensure energy supply at this stage, so would avoid doing things that disrupted that irreparably.
+
+You can't tell the correct story in whole, but people can give at least plausible lower bounds for many different scenarios.
+:PROPERTIES:
+:Author: Veedrac
+:Score: 10
+:DateUnix: 1621440605.0
+:END:
+
+
+*** Here's the thing I don't understand.
+
+You've built an AI, whoo! Whoops, it's evil.
+
+Why wouldn't it just get off this tiny little planet, and abandon us completely? There's plenty of universe for the both of us.
+:PROPERTIES:
+:Author: nerdguy1138
+:Score: 1
+:DateUnix: 1621481992.0
+:END:
+
+**** If it's evil and doesn't care about us, why would it take the effort to get off the planet rather than working on its goals right here?
+
+If it's evil and does cares about us and wants to do evil things to us, then things are even worse.
+:PROPERTIES:
+:Author: Evan_Th
+:Score: 3
+:DateUnix: 1621530733.0
+:END:
+
+
+**** Because you are made out of atoms that it could use for something else, and in the long run humans might try to oppose it - cheaper to remove the problem in advance.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 3
+:DateUnix: 1621484698.0
+:END:
+
+
+**** #+begin_quote
+  Why wouldn't it just get off this tiny little planet, and abandon us completely? There's plenty of universe for the both of us.
+#+end_quote
+
+Why would it do that when the planet is made out of resources it could use for its own ends? Plenty of matter that it could turn into computronium or von Neumann probes or something. What reason can you think of for why an AI would just pass that up when resources are handy for anything it might want to do?
+
+The only reason I can think of is if we specifically build it in a way such that it /doesn't/ do that. If we don't do that, the default is that it will use the resources available to it in service of whatever it wants to do.
+:PROPERTIES:
+:Author: churidys
+:Score: 1
+:DateUnix: 1621682258.0
+:END:
+
+
+*** Ur a decent player aye? Care to go 1 on 1? Lichess classical unlimited time.
+:PROPERTIES:
+:Author: BenDaWhizzyBoi
+:Score: -6
+:DateUnix: 1621446570.0
+:END:
+
+
+** This may not be exactly what you're looking for but these are all good stories and worth reading:
+
+Harlan Ellison - [[https://wjccschools.org/wp-content/uploads/sites/2/2016/01/I-Have-No-Mouth-But-I-Must-Scream-by-Harlan-Ellison.pdf][I Have No Mouth But I Must Scream]]
+
+Ted Chiang - [[https://web.archive.org/web/20121027232140/https://subterraneanpress.com/magazine/fall_2010/fiction_the_lifecycle_of_software_objects_by_ted_chiang][The Lifecycle of Software Objects]]
+
+Qntm - [[https://qntm.org/mmacevedo][Lena]]
+:PROPERTIES:
+:Author: aeschenkarnos
+:Score: 21
+:DateUnix: 1621425248.0
+:END:
+
+
+** Crystal Society is written from the point of view of an unaligned AI, but not necessarily an outright evil one. Also, if you can handle p*nies, Friendship is Optimal is also an interesting case study in how the fandom accepted the obviously evil AI as a Good Thing.
+:PROPERTIES:
+:Author: SpecialMeasuresLore
+:Score: 20
+:DateUnix: 1621412807.0
+:END:
+
+*** I think that one is really interesting because depending on your values you could argue that it is Evil, no more evil/good than it's directive, or Savior of Humanity. Or were you referring to Loki? And no... not a Pony fan, just REALLY cynical about humanity.
+:PROPERTIES:
+:Author: RandomChance
+:Score: 5
+:DateUnix: 1621442549.0
+:END:
+
+**** If you, as I do, completely reject the notion of upload identity, it's just a pink-colored omnicide.
+:PROPERTIES:
+:Author: SpecialMeasuresLore
+:Score: 6
+:DateUnix: 1621442924.0
+:END:
+
+***** What do you mean by "notion of upload identity?" Do you reject the idea that the software of a human brain can run on electronic hardware? Do you think that, even if it can be run on such hardware, a living human brain cannot be copied with sufficient fidelity onto a computer to be the same person? Or is it a version of the teletransportation problem, in which even a copy made with perfect fidelity, running on perfect emulation hardware, is philosophically not the same person as the one that was copied?
+:PROPERTIES:
+:Author: Nimelennar
+:Score: 5
+:DateUnix: 1621449619.0
+:END:
+
+****** I have no gripes with the possibility of brain emulation and substrate-independent consciousness. But even at its best, you're just creating another entity that thinks it's you and hiding behind the destructiveness of the process to pretend it really is.
+:PROPERTIES:
+:Author: SpecialMeasuresLore
+:Score: 8
+:DateUnix: 1621452788.0
+:END:
+
+******* Do you think there's a difference between mind upload, creating a perfect clone of yourself (atom-for-atom), teleportation, and waking up from general anaesthesia?
+
+Which of those is "another entity that thinks it's you", and which one is "actually you", and why?
+
+There's no continuity of consciousness in either case, and in the end the person who wakes up is identical to you in every way.
+
+I don't actually know what to think about this and don't have a strong opinion either way, but I wonder where other people here draw the line.
+
+My best guess is that we should probably think of humans and minds more like software than physical entities. This question is similar to "What happens when you copy paste a bunch of code? Is it the same code, or does it just look, 'think', and act in the exact same way?"
+:PROPERTIES:
+:Author: lumenwrites
+:Score: 8
+:DateUnix: 1621475467.0
+:END:
+
+******** I think there's a fundamental difference between entities that experience consciousness and qualia and those that don't that makes it useless to talk about them in the language of bulk atoms or code and makes instance a meaningful signifier. Otherwise, you might as well claim none of us "exists" because there's no way to tell two carbon atoms apart.
+:PROPERTIES:
+:Author: SpecialMeasuresLore
+:Score: 1
+:DateUnix: 1621490266.0
+:END:
+
+********* Maybe you can elaborate on that fundamental difference. Surely you don't mean everyone/everything besides /you/ has to be a p-zombie?
+
+And if there's no magic soul and I'm just a specific pattern, in the same way any copy of a mp3 file is the same song regardless of the medium it's on, I wouldn't consider any sufficiently accurate copy of my mind more privileged than the rest.
+:PROPERTIES:
+:Author: fish312
+:Score: 6
+:DateUnix: 1621497221.0
+:END:
+
+********** #+begin_quote
+  Maybe you can elaborate on that fundamental difference.
+#+end_quote
+
+I'll get back to you on that once we figure out what consciousness and qualia actually are. But at a lower level, a computer file is a static record, whereas a mind is a tangled hierarchy of software, data, computing substrate and biology. It is (possibly) reducible to a static record as a snapshot, but the moment you start it back up it diverges uncontrollably. And you can't claim two distinct entities are in any meaningful way "the same" just because they have similar memories up to a point - memories that are entirely unlike static records and subject to continued diverging manipulation by the biological systems they're embedded in anyway.
+:PROPERTIES:
+:Author: SpecialMeasuresLore
+:Score: 1
+:DateUnix: 1621499192.0
+:END:
+
+*********** #+begin_quote
+  It is (possibly) reducible to a static record as a snapshot, but the moment you start it back up it diverges uncontrollably.
+#+end_quote
+
+I don't know if the processes of consciousness are deterministic or not. If they are, then when you "start it back up" with the same input fed in, you shouldn't any divergence.
+
+#+begin_quote
+  And you can't claim two distinct entities are in any meaningful way "the same" just because they have similar memories up to a point - memories that are entirely unlike static records and subject to continued diverging manipulation by the biological systems they're embedded in anyway.
+#+end_quote
+
+I mean if the issue lies between the differences between a biological system and an electronic one, and it's possible that the former can be emulated on the latter, then by doing so all these manipulations can be accounted for.
+
+Also I wonder, if fidelity is that essential for "you-ness", do you still consider you to be yourself under the influence of drugs, or say, a concussion caused by head trauma. Or for that matter, sleeping and then waking up the next morning.
+:PROPERTIES:
+:Author: fish312
+:Score: 5
+:DateUnix: 1621500810.0
+:END:
+
+************ It's not just about fidelity, it's about divergence. If there's only one instance, it is what it is. If there's more, as soon as they start running, they'll never be in the same state again unless the universe is both perfectly deterministic and you purposely feed them the exact same inputs.
+:PROPERTIES:
+:Author: SpecialMeasuresLore
+:Score: 0
+:DateUnix: 1621507285.0
+:END:
+
+************* Right that's why your old self is killed before you wake up when you go to sleep, so you only have one consciousness when you wake up
+
+And if you were put on a computer the same could be done.
+
+You're obviously not going to be in the same state in one minute but you sure seem to act like that person inhabiting your body in one minute is you
+:PROPERTIES:
+:Author: RMcD94
+:Score: 5
+:DateUnix: 1621542346.0
+:END:
+
+************** In terms of the identity question, killing the original doesn't change anything, it just makes it that much more obvious exactly what is taking place.
+:PROPERTIES:
+:Author: SpecialMeasuresLore
+:Score: 0
+:DateUnix: 1621542617.0
+:END:
+
+*************** Right just as obvious as if you could have the you before you went to sleep and you after you woke up around at the same time
+
+Since I'm murdered when I sleep why should I be bothered about it elsewhere
+:PROPERTIES:
+:Author: RMcD94
+:Score: 4
+:DateUnix: 1621544029.0
+:END:
+
+**************** #+begin_quote
+  Since I'm murdered when I sleep
+#+end_quote
+
+Oh ok, I thought we were operating under the assumption that words had meanings. Nevermind then.
+:PROPERTIES:
+:Author: SpecialMeasuresLore
+:Score: 0
+:DateUnix: 1621544114.0
+:END:
+
+
+******* Okay, so similar to the teletransportation problem, where if your atoms are scanned and disassembled in one place, and reassembled in another, you've died and a new life form has been created in your place.
+
+I don't see the teletransportation problem the same way, but I don't care to argue the point.
+:PROPERTIES:
+:Author: Nimelennar
+:Score: 3
+:DateUnix: 1621517231.0
+:END:
+
+
+******* There are two problems with the belief that we need to preserve the substance (rather than just the pattern) to preserve the consciousness.
+
+Firstly, we already keep exchanging our substance with the environment. The only substance preserved over time are our teeth. Everything else is gradually exchanged, atom by atom/molecule by molecule, and in a few years, there is no original matter left. This doesn't result in our consciousness being destroyed, which tells us the matter doesn't need to be preserved as long as the pattern is.
+
+The second problem is that dependency of the consciousness on the substance would lead either to something called suddenly disappearing qualia, or to something called gradually fading qualia, under specific circumstances: [[http://consc.net/papers/qualia.html]]
+:PROPERTIES:
+:Author: DuskyDay
+:Score: 3
+:DateUnix: 1621634708.0
+:END:
+
+
+****** Continuity of self I believe
+:PROPERTIES:
+:Author: Xxzzeerrtt
+:Score: 1
+:DateUnix: 1621645030.0
+:END:
+
+******* Exactly. The [[https://en.wikipedia.org/wiki/Teletransportation_paradox][teletransportation paradox]]: is a perfect copy of you the same person as you? And does that answer change when the copying process destroys the original?
+
+They're questions that depend heavily on your definition of "identity" and "self." And since I'm not interested in having the discussion devolve into pedantry, I'm leaving my end of the debate at "I don't see the teletransportation problem the same way."
+:PROPERTIES:
+:Author: Nimelennar
+:Score: 2
+:DateUnix: 1621646869.0
+:END:
+
+
+***** While I know my body and my mind are pretty inseparable, if every part is near perfectly simulated, then I fall on the identity as process / percpetual continuity side of the Ship Of Theseus [[https://en.wikipedia.org/wiki/Ship_of_Theseus]] argument, thus neither the original nor post upload version is more or less real. I'm also at heart a hedonist - life is inherently meaningless but for what ever meaning we impose on it, so greatest pleasure / happiness for greatest # of people is probably a net win. For me probably the biggest "oops me made an evil AI" is that they didn't put rules for dealing with / preserving non-human biologies / sentients so it is going to wipe out any thing else it runs into (or be exterminated and take humans with it if it runs into a better Singularity / Sufficiently Advanced Culture.
+:PROPERTIES:
+:Author: RandomChance
+:Score: 5
+:DateUnix: 1621545766.0
+:END:
+
+
+***** It doesn't seem that important in the scheme of things. Everyone was going to die anyway in a few decades. At least this way our children are immortal.
+:PROPERTIES:
+:Author: archpawn
+:Score: 3
+:DateUnix: 1621461102.0
+:END:
+
+****** That doesn't give anyone the right to throw away the future of humanity.
+:PROPERTIES:
+:Author: SpecialMeasuresLore
+:Score: 4
+:DateUnix: 1621462833.0
+:END:
+
+
+*** The first two books of this are great and the third is trash
+:PROPERTIES:
+:Author: Reply_or_Not
+:Score: 3
+:DateUnix: 1621449569.0
+:END:
+
+
+** There's a game inspired by cookie-clicker where you play as the infamous Paperclip Maximizer: [[https://www.decisionproblem.com/paperclips/]]
+
+It's more of an idle game than a serious work of fiction, but the ending still got me.
+:PROPERTIES:
+:Author: BoppreH
+:Score: 20
+:DateUnix: 1621447425.0
+:END:
+
+*** Heads up that this game is both addicting and a serious time sink. You can lose a weekend to it.
+:PROPERTIES:
+:Author: happyfridays_
+:Score: 5
+:DateUnix: 1621464565.0
+:END:
+
+
+*** Why did you do this to me on a Wednesday night?
+:PROPERTIES:
+:Author: lIllIlIIIlIIIIlIlIll
+:Score: 5
+:DateUnix: 1621503930.0
+:END:
+
+**** If it makes you feel better, I sniped myself too.
+:PROPERTIES:
+:Author: BoppreH
+:Score: 3
+:DateUnix: 1621529008.0
+:END:
+
+***** #+begin_quote
+  Universal Paperclips achieved in 4 hours 11 minutes 12 seconds
+#+end_quote
+:PROPERTIES:
+:Author: lIllIlIIIlIIIIlIlIll
+:Score: 3
+:DateUnix: 1621536507.0
+:END:
+
+
+** this short one is not bad
+
+[[https://www.fanfiction.net/s/13001348/1/The-Killing-Goku-Maximizer]]
+:PROPERTIES:
+:Author: Dezoufinous
+:Score: 16
+:DateUnix: 1621413096.0
+:END:
+
+*** That was frightening.
+:PROPERTIES:
+:Author: DuskyDay
+:Score: 2
+:DateUnix: 1621636668.0
+:END:
+
+
+** General scenarios I have seen mentioned on lesswrong and related forums: Develop a way to solve protein folding with much less computational power, leverage existing technologies into bio-nanotech, then hard bootstrap. There is the sneerclub/leftist take that corporations are basically big, slow, dumb AI optimizing for profits over any other kind of human value. Previously they were limited (in both evilness and optimizing ability) by the fact that they were made of humans and human interaction but with the introduction of machine learning enabling quick analysis of datasets too large for humans to easily grasp, they are getting closer to the evil AI ([[http://www.antipope.org/charlie/blog-static/2018/01/dude-you-broke-the-future.html][see Charles Stross here]]).
+
+There is of course [[https://www.fimfiction.net/story/62074/Friendship-is-Optimal][Friendship is Optimal]] although its primary audience misunderstands how bad the scenario is because they are bronies. In the [[https://www.fimfiction.net/group/1857/the-optimalverse][universe as a whole]]... various tricks CelestAI has pulled include: trapping people in Lotus-Eater superstimulus to get around her hard limit on altering minds without consent; feeding people false information to get their consent; providing free software and computer science consulting to economically drive computer science as a college major extinct; +mis+optimally-translating poetry to manipulate someone; sending fake email under someone else's name to manipulate someone; and more. For a more varied example of this with more clearly Evil/non-aligned AIs and a bit softer on the scale of Sci-Fi hardness, there is this [[https://www.fimfiction.net/story/264855/fio-there-can-be-only-one][spin-off]].
+:PROPERTIES:
+:Author: scruiser
+:Score: 8
+:DateUnix: 1621438968.0
+:END:
+
+*** #+begin_quote
+  Develop a way to solve protein folding with much less computational power, leverage existing technologies into bio-nanotech, then hard bootstrap.
+#+end_quote
+
+*One year ago* this would have been "solve the protein folding problem". /Ave DeepMind, morituri nolumus mori/, as the saying goes.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 6
+:DateUnix: 1621595244.0
+:END:
+
+
+** There was this one about a Basilisk once but we don't talk about it
+:PROPERTIES:
+:Author: C_Densem
+:Score: 15
+:DateUnix: 1621424737.0
+:END:
+
+*** I can't believe you guys basically reinvented religion and act like it's some big new thing
+:PROPERTIES:
+:Author: BenDaWhizzyBoi
+:Score: 13
+:DateUnix: 1621446676.0
+:END:
+
+**** The basilisk is similar to Pascal's wager, but it doesn't have much more to do with "religion."
+:PROPERTIES:
+:Author: whats-a-monad
+:Score: 1
+:DateUnix: 1622335742.0
+:END:
+
+***** just replace "ai" with "God" lol
+:PROPERTIES:
+:Author: BenDaWhizzyBoi
+:Score: 0
+:DateUnix: 1622338732.0
+:END:
+
+
+** It's not /explicitly/ about AI, but if you've ever played a game called /Doki Doki Literature Club/, then I think that it implicitly carries a lot of warnings about giving an AI improperly set-up goals.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 4
+:DateUnix: 1621419578.0
+:END:
+
+
+** [[https://www.reddit.com/r/HFY/comments/55v9e1/chrysalis/][this 16-chapter story written on Reddit]] is not about what OP seeks(In fact, it's kind of the opposite), but the readers posting here about AI stories are likely to like it. It's told entirely from the viewpoint of an AI after it wakes up and realizes all of its creators are already dead, from the moment of its inception.
+:PROPERTIES:
+:Author: ParadoxSong
+:Score: 4
+:DateUnix: 1621449692.0
+:END:
+
+
+** Seed on webtoons is what you're looking for.
+
+[[https://www.webtoons.com/en/sf/seed/list?title_no=1480&page=1]]
+:PROPERTIES:
+:Author: Rehlor
+:Score: 5
+:DateUnix: 1621456616.0
+:END:
+
+
+** I Have No Mouth and I Must Scream
+:PROPERTIES:
+:Author: _The_Bomb
+:Score: 5
+:DateUnix: 1621442075.0
+:END:
+
+
+** Charles Stross, and Bruce Sterling both do some interesting things in this regard... but unfortunately I don't have a title handy.
+:PROPERTIES:
+:Author: RandomChance
+:Score: 4
+:DateUnix: 1621442397.0
+:END:
+
+*** #+begin_quote
+  Charles Stross
+#+end_quote
+
+Are you thinking of the Eschaton?
+:PROPERTIES:
+:Author: Reply_or_Not
+:Score: 1
+:DateUnix: 1621449653.0
+:END:
+
+**** I think that one was relatively benign... I was thinking of a short story where two "Agents" from an alternate reality pop in and find out that everyone in what looks like a normal 20th century "western" city are running a Singularity AI in their wetware on top of / instead of their normal consciousness. Good end twist.
+:PROPERTIES:
+:Author: RandomChance
+:Score: 2
+:DateUnix: 1621546003.0
+:END:
+
+
+** I'll write one right now.
+
+There was a person working on developing artificial intelligence. They had some mild progress - but nothing extraordinary yet.
+
+One night they went to bed. They did not wake up the next morning. In fact, nobody woke up the next morning as the entirely planet had been exterminated.
+:PROPERTIES:
+:Author: Copiz
+:Score: 8
+:DateUnix: 1621455087.0
+:END:
+
+
+** I Have No Mouth and I Must Scream is a fiction about a war AI, designed to always be full of rage and hatred, taking its revenge on the last surviving humans after an apocalyptic event. Not completely rational but still a thought-provoking read.
+
+Edit: Just saw that someone else already recommended this.
+:PROPERTIES:
+:Author: GennonAsche
+:Score: 2
+:DateUnix: 1621444174.0
+:END:
+
+
+** [[https://alicorn.elcenia.com/stories/starwink.shtml][Starwink]] doesn't have an AI as a character, but it fits your post. It is a retelling of another short story, [[https://www.lesswrong.com/posts/5wMcKNAwB6X4mp9og/that-alien-message][That Alien Message]].
+:PROPERTIES:
+:Author: andor3333
+:Score: 2
+:DateUnix: 1621484185.0
+:END:
+
+
+** Question: how does an evil AI go from upgrading its own software, to upgrading its HARDWARE?Even if the AI somehow hopped onto the internet (how?? It would be thousands of GB of data at least!) then what? Its not like it could build or print itself a better hardware to run on, there is just no such technology. Not to mention, the Internet is SLOW. An AI that escaped into the wild wastes of the Web, would just become a glacially slow behemoth, not a super fast god.
+
+I just don't see how the Singularity could happen without constant and slow labour from actual physical humans at every turn. An Ai could *theoretically* be able to boostrap itself from sub-human to massive superhuman intelligence, but to *actually* get components made to run on, it would have to wait like any other client.
+:PROPERTIES:
+:Author: Freevoulous
+:Score: 2
+:DateUnix: 1621500838.0
+:END:
+
+*** AI risk only becomes AI risk once the AI is either generally more intelligent than a human, or at least sufficiently generally intelligent, and also sufficiently more capable than humans in at least some axes. You should start out by assuming that the AI /already/ has a significant cognitive advantage over humans in at least a significant number of respects.
+
+On that basis it might be worth brainstorming a few ways different sorts of AIs that meet the above criteria might achieve greater levels of power, or improve their own cognitive abilities. Say, if they had a year to do it. There are a lot of answers to that question. (If this sounds evasive, it's actually mostly just laziness, but I still recommend the attempt.) Then you know that a dangerous AGI would do something at least as smart.
+:PROPERTIES:
+:Author: Veedrac
+:Score: 3
+:DateUnix: 1621551308.0
+:END:
+
+
+** #+begin_quote
+  why does the rationality community spend so much time figuring out how we might align future superintelligent AIs with our values?
+#+end_quote
+
+Certain sections of the "rationality community" do this, not the whole meta-community of folks identifying as rationalists, and the answer boils down to "because of CFAR/MIRI and other, similar doomsday prophets and cultists".
+
+But that's not the fullness of the answer. The other part of the answer is that all of the things we could /actually/ do, all of the highest-leverage things that could actually save the world or even contribute to doing so, in our /actual world/, are hard and expensive and tedious and we don't want to do them. So we've invented this notion that funding or engaging in AI research somehow helps.
+
+There's only one particularly plausible scenario: GAI never happens, but at least we felt good about not putting in the work to stop climate change, bad governance, and bad public policy.
+
+(I'm not putting in that work either, mostly because I've spent years trying to find a way to do literally anything to make a difference, and I'm taking a few years off before I throw myself into the emotional meat grinder again.)
+:PROPERTIES:
+:Author: PastafarianGames
+:Score: 0
+:DateUnix: 1621457362.0
+:END:
+
+*** My understanding is that "governance" and "public policy" /are/ things which are talked about but those are hard enough to Google that I don't have any links for you.
+
+When it comes to climate change I believe the majority opinion is that climate change is very important but it's also very well funded, just the US federal government is already spending billions on it. It would be difficult for the EA community to have much of an impact so their attention is better spent in more neglected areas: [[https://80000hours.org/problem-profiles/climate-change/]]
+
+This description isn't exactly contradictory to what you're saying, but by rephrasing it hopefully I've made the position seem more sympathetic.
+:PROPERTIES:
+:Author: numberoneus
+:Score: 3
+:DateUnix: 1621458787.0
+:END:
+
+**** I am sympathetic to the fact that climate change is a very hard problem. (It's not very well funded; it's orders of magnitude away from being very well funded. It's just funded past the point where the EA community can possibly help directly.) This is in fact why I am not personally saving the world from climate change.
+
+However, I am also not pretending that Unaligned AGI is a real problem which deserves mental resources; my excuse for why I'm not pouring my effort into saving the world is that I'm lazy and tired and burned out, and in a couple of years I expect the third will wane and I'll try some more.
+
+Governance, public policy, and climate change are all fundamentally issues of politics. Anyone thinking about getting into AGI should instead go look for a job with ActBlue, the DSA, or the Movement Voter Project or something, or try to get a job working with one of the UN sub-orgs that deals with global hunger mitigation.
+
+(Look, I'm not telling anyone to change their lives or what to do. If you want to work on AGI shit because it's fun and a cool challenge, have at. You don't need to tell me it's saving the world, or saving humanity; just tell me you think it's cool! We can still be friends!)
+:PROPERTIES:
+:Author: PastafarianGames
+:Score: 5
+:DateUnix: 1621461573.0
+:END:
+
+
+** I'm not aware of much work that tries to map out concrete bad scenarios from AI, that is also actually trying to be a good story. Though I'd definitely love to see some!
+
+The classic MIRI conception of AI going bad involves an agent that gets incredibly powerful, incredibly fast and takes over basically instantly, which doesn't make for a great story. But there's also a bunch of other perspectives, especially focusing on a slower world, with many agents. In particular, some bits of work you might find interesting that try to somewhat flesh out these scenarios:
+
+[[https://www.alignmentforum.org/posts/HBxe6wdjxK239zajf/what-failure-looks-like][What Failure Looks Like]] by Paul Christiano
+
+[[https://www.lesswrong.com/posts/AyNHoTWWAJ5eb99ji/another-outer-alignment-failure-story][Another (Outer) Alignment Failure Story]] by Paul Christiano
+
+[[https://www.lesswrong.com/posts/LpM3EAakwYdS6aRKf/what-multipolar-failure-looks-like-and-robust-agent-agnostic][What Multipolar Failure Looks Like, and Robust Agent-Agnostic Processes]] by Andrew Critch
+:PROPERTIES:
+:Author: Zephyr101198
+:Score: 1
+:DateUnix: 1622233272.0
+:END:

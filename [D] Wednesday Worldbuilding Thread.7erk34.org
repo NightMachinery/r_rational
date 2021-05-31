@@ -1,0 +1,183 @@
+#+TITLE: [D] Wednesday Worldbuilding Thread
+
+* [D] Wednesday Worldbuilding Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 7
+:DateUnix: 1511363206.0
+:END:
+Welcome to the Wednesday thread for worldbuilding discussions!
+
+[[/r/rational]] is focussed on rational and rationalist fiction, so we don't usually allow discussion of scenarios or worldbuilding unless there's finished chapters involved (see the sidebar). It /is/ pretty fun to cut loose with a likeminded community though, so this is our regular chance to:
+
+- Plan out a new story
+- Discuss how to escape a supervillian lair... or build a perfect prison
+- Poke holes in a popular setting (without writing fanfic)
+- Test your idea of how to rational-ify /Alice in Wonderland/
+
+Or generally work through the problems of a fictional world.
+
+^{Non-fiction should probably go in the Friday Off-topic thread, or Monday General Rationality}
+
+
+** So... time travel paradoxes.
+
+- One of the ways that authors of time travel stories try to avoid paradoxes is with "stable time loops"- time travel where anything you'll do in the past has already happened, and altering the past is impossible. While this avoids the grandfather paradox, I think it necessarily causes a different paradox- it seems to create things out of nothing.
+
+  Suppose you have a stable time loop time machine. You withdraw $100 in cash from your bank, give it to yourself a week ago, and then past-you deposits it. Where did the $100 in your account actually come from? You might be able to do the same thing with a million or a billion dollars, even if you're flat broke before and after the time loop.
+
+  I think this problem exists whenever some chain of causality stretches from the start of the loop, through the end, and back to the start. If causality runs in a loop, then that chain of causality is independent of the rest of the universe.
+
+- Another way authors avoid paradoxes is with multiple timelines- when you "time travel", you're actually entering a parallel universe that for some reason is identical to the past or future. This does a much better job of avoiding paradoxes in general, but I think a variation of the same problem can still crop up.
+
+  Say you travel the future, withdraw $100, return to your own timeline, and deposit it. In this future timeline was an identical version of you who did the same thing- traveling to a timeline where yet another you did the same thing, and so on. Since each timeline would be identical, there would seem to be an infinite number of them, each taking money from another. So, you have a kind of [[https://en.wikipedia.org/wiki/Hilbert's_paradox_of_the_Grand_Hotel][Hilbert's Grand Bank]], with an infinite number of $100 accounts and one $200 account, but, like in the previous example, seemingly no causal origin of the money.
+:PROPERTIES:
+:Author: artifex0
+:Score: 2
+:DateUnix: 1511391601.0
+:END:
+
+*** It gets a good deal worse than that. Have you ever read a short story called "By His Bootstraps"?
+
+In short, a man gets bought to the distant future by a guy with a time machine. After a fair amount of stuff happening, in short, it turns out that the man who operated the time machine to get him there is his own future self - that is, his future self was only there to use the time machine because his younger self had been pulled into the future.
+
+That's not just a matter of the paradox creating something out of nothing. That's the paradox creating /itself/ out of nothing.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 3
+:DateUnix: 1511427291.0
+:END:
+
+
+*** #+begin_quote
+  One of the ways that authors of time travel stories try to avoid paradoxes is with "stable time loops"
+#+end_quote
+
+This is how physics works. That is, if time travel turns out to be possible (which I doubt), it would be within a single stable timeline. Quantum physics ensures this.
+
+#+begin_quote
+  Where did the $100 in your account actually come from?
+#+end_quote
+
+So, if this were an actual hundred dollar bill that you give to yourself in the past, this wouldn't be possible. Each iteration of the loop (from the bill's perspective) would add more wear and tear until it breaks down. It's not stable.
+
+But you're putting it in to a bank, and then withdrawing? Fine. The actual object moved into the past already existed before the timeloop and will exist after. The only complaint is that it simultaneously exists twice within the loop. Of course, the whole premise of time-travel is that a thing moves into its own past, hence simultaneously existing twice.
+
+#+begin_quote
+  If causality runs in a loop, then that chain of causality is independent of the rest of the universe.
+#+end_quote
+
+That's why it's called a [[https://en.wikipedia.org/wiki/Closed_timelike_curve][closed time-like loop]].
+
+If time-travel is possible (in the sense of people being able to travel into their own past), such causal loops are almost certain to arise, if only to prevent an intelligent actor from actually carrying out his plan of killing his own grandfather.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 2
+:DateUnix: 1511393542.0
+:END:
+
+**** #+begin_quote
+  That's why it's called a closed time-like loop
+#+end_quote
+
+Interesting; thanks for pointing that out.
+
+Supposing you have a time machine that creates these closed time-like curves:
+
+- Say you have a battery with a 10% charge. Your future self gives you the same battery, fully charged. You transfer energy from the future battery to the preexisting one, leaving the former with slightly less than 10% charge, and drop off the fully charged one in the past.
+
+  Where does the extra energy come from? You can't use it for anything without breaking the loop, but would it's inexplicable existence violate conservation of energy anyway?
+
+- Say your future self hands you a note. You copy the words on the note to another paper, and give it to your past self. What does the note say?
+:PROPERTIES:
+:Author: artifex0
+:Score: 1
+:DateUnix: 1511401231.0
+:END:
+
+***** #+begin_quote
+  Where does the extra energy come from? You can't use it for anything without breaking the loop, but would it's inexplicable existence violate conservation of energy anyway?
+#+end_quote
+
+Any extra energy that seems to exist contrary to conservation laws comes from the timeline curve itself. Presumably, it will have originally come from the machine that creates the curve in the first place. There is no known physical mechanism for creating such a curve, however: it would have to already exist within spacetime.
+
+#+begin_quote
+  Say your future self hands you a note. You copy the words on the note to another paper, and give it to your past self. What does the note say?
+#+end_quote
+
+It's probably blank. The actual message will depend on a lot of things. Are you the sort of person to follow through on a self-fullfilling prophecy? Is this a loop you're setting up for yourself with intent to generate a paradox? Alternatively, perhaps this causal loop exists in order to prevent someone else from creating a paradox.
+
+Consider the quantum multiverse hypothesis (where each potential action both happens and doesn't happen; a separate universe for each). In the normal "model", there is a separate universe for every combination of outcomes that could occur. Once you allow time travel, only those universes that are consistent could actually exist. However, it also becomes a lot more complicated because there are universes in which all sorts of causal loops spontaneously occur, seemingly of their own volition.
+
+A concrete example: Suppose someone goes back in time to kill his own grandfather. You get a note from yourself telling you that person is attempting murder, so you call the police, who intervene and prevent him from carrying out the deed. Now, I don't think this is the simplest way resolve the paradox (after all, the note just has to get you to interfere; the reason doesn't have to be accurate), and nature would pick the simplest one. Unless you subscribe to the quantum multiverse hypothesis, in which case all solutions happen.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 2
+:DateUnix: 1511408045.0
+:END:
+
+****** About that I have been thinking about time loops recently , and all the dangers of trying to exploit closed time lopps to get what you want( generaly its horrible dangerous and you shouldn't try) , and when its safe to start a loop ( mostly in the cases where you can prepare you plan outside the time loop otherwise everything gets acasual and my brain refuses to continue working on the problem). I have a really long document almost written about it , but haveng gotten to actually finish it and post it here ( or maybe on the off topic thread , I'm not sure where to put that kind of thing ) . In general i asume the case of a randomly selected solution from the solution space ( depending on probability, a truly randomly selected solution makes the universe work in a really crazy way), which is what would happen from an observer's perspective in a many world's universe where "worlds" that don't lead to self consistent loops just fail to exist.
+:PROPERTIES:
+:Author: crivtox
+:Score: 1
+:DateUnix: 1512057198.0
+:END:
+
+******* #+begin_quote
+  In general i asume the case of a randomly selected solution from the solution space ( depending on probability, a truly randomly selected solution makes the universe work in a really crazy way), which is what would happen from an observer's perspective in a many world's universe
+#+end_quote
+
+The situation is actually a whole lot worse than you're imagining. All possible time-loops will actually interfere with each other, to some degree. You can see this by imagining EM waves passing through the time-like curve. Just working with the curve as a boundary condition for the wave equation, you can see this will be much more complicated than the [[https://en.wikipedia.org/wiki/Double-slit_experiment][double-slit experiment]]. That said, it does appear to be intrinsically solvable. I've seen references to work that purports to solve the problem on very small scales.
+
+#+begin_quote
+  or maybe on the off topic thread , I'm not sure where to put that kind of thing
+#+end_quote
+
+Worldbuilding, I think, is appropriate.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 1
+:DateUnix: 1512062082.0
+:END:
+
+******** In the actual thing I used the example of having multiple universes and the ones that aren't consistent being destroyed , since I knew that an actual quantum universe is different from that in ways I don't completely understand yet ,and that probably makes room for other exploits with quantum computing, which makes the whole thing a even worse mess. the choosing a random posibility is good because for the purposes of exploiting its almost identical( assuming you don't cause the loop from inside another loop or itself and that the loop cant affect you when planing it) to actually repeating some events+ some random element(most likely whole quantum randomness) until some condition is fulfilled , which is another common situation in fiction ( and in the Saturday munchkinism thread) and its easier to think about. I'll probably put it in next week's thread ,if I don't get lazy , after making it more coherent and readable. In general I found that trying to exploit time loops for anything minimally complicated(or even something relatively simple like factoring small numbers) even in ideal conditions is a bad idea at best , and suicidal at worst .
+:PROPERTIES:
+:Author: crivtox
+:Score: 1
+:DateUnix: 1512064676.0
+:END:
+
+********* In terms of fiction, self-consistent time-loop stories are [[http://tvtropes.org/pmwiki/pmwiki.php/Main/OlderThanDirt][older than dirt]]. I am using the term loosely here, where I consider prophesy a kind of time travel where only information travels to the past.
+
+However, they broadly classify into two distinct types: [[https://en.wikipedia.org/wiki/Oedipus][self-fulfilling]], and [[https://en.wikipedia.org/wiki/Cassandra][unavoidable]].
+
+In modern day time travel stories, we have two plot structures:
+
+- Person travels to the past; attempts to prevent something; ends up causing it in the first place
+- Person travels to the past; tries to change something; fails to make any change to the historical record
+
+But a great many more stories are possible. I'm hopeful that we'll see more complex stories being told in the future.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 1
+:DateUnix: 1512075333.0
+:END:
+
+
+***** #+begin_quote
+  Say your future self hands you a note. You copy the words on the note to another paper, and give it to your past self. What does the note say?
+#+end_quote
+
+[[http://www.hpmor.com/chapter/17][DO NOT MESS WITH TIME]]
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1511426917.0
+:END:
+
+****** Actually, that's almost certainly not what the note would say.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 2
+:DateUnix: 1511506067.0
+:END:

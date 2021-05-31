@@ -1,0 +1,151 @@
+#+TITLE: [D] Wednesday Worldbuilding Thread
+
+* [D] Wednesday Worldbuilding Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 12
+:DateUnix: 1487171076.0
+:END:
+Welcome to the Wednesday thread for worldbuilding discussions!
+
+[[/r/rational]] is focussed on rational and rationalist fiction, so we don't usually allow discussion of scenarios or worldbuilding unless there's finished chapters involved (see the sidebar). It /is/ pretty fun to cut loose with a likeminded community though, so this is our regular chance to:
+
+- Plan out a new story
+- Discuss how to escape a supervillian lair... or build a perfect prison
+- Poke holes in a popular setting (without writing fanfic)
+- Test your idea of how to rational-ify /Alice in Wonderland/
+
+Or generally work through the problems of a fictional world.
+
+^{Non-fiction should probably go in the Friday Off-topic thread, or Monday General Rationality}
+
+
+** I've been nailing down some of the rules for blood magic in my story. I'm trying to work out values, but they're heavily subject to tweaking if I discover degenerate strategies at this stage.
+
+Brief summary of the [[https://www.reddit.com/r/rational/comments/5rfy1z/d_wednesday_worldbuilding_thread/dd77qvk/][previous comment]]: in a society analogous to early Renaissance Europe, blood rapidly evaporates when exposed to the atmosphere. People on the verge of death by exsanguination sometimes become Blood Mages, compelled by instinct to drain a nearby victim of their blood (sometimes fatally, if blood types don't match). This magic is powered by, and acts upon, blood.
+
+In story I probably won't go into nearly this much detail, except where it is needed to explain why a strategy doesn't work or what research a character is doing. This is mostly for anybody like me who nerds out on hard numbers in magic systems, and to force me to explain it (the "How would I make somebody else understand my intent?" approach is useful for self-correction in general).
+
+You can find the spreadsheet I'm using to get a feel for the numbers [[https://docs.google.com/spreadsheets/d/1GzrhIsCxLpJRLpqELcD0id6LZoH4vvxTZ1p4xeMwUDk/edit?usp=sharing][here]].
+
+1.  The only blood that is subject to or affected by any of these is human blood. Red blood cells are what counts here, but other components will be involved if part of a mixture with red blood cells (i.e. pure plasma is not affected).
+2.  An adult human has about 5 litres of blood, and replenishes about 13 millilitres a day (apparently if you donate 450 mL of blood, it takes 4-6 weeks to replenish the red blood cells).
+3.  Blood magic costs blood from inside your body (uniformly). It doesn't have to be your blood, but you can't expressly target foreign blood. You also can't dilute blood to cheat on the costs; it counts based on red blood cells, which make up 45% +- 7% of blood in men and 42% +- 5% in women.
+4.  A Blood Mage (BM) can exert control upon blood inside their body or in direct contact with blood inside their body (contiguous haemokinesis). Outside the body, this requires a radius of about 1 millimetre per metre of length (i.e. if you want to affect something 10 metres away with a rope of blood, the whole rope needs a minimum radius of 10 mm, which would have a volume of 3.14 litres---about 2/3 of a human's blood capacity). This control costs blood at a rate I haven't decided upon.
+5.  Control resolution gets linearly worse with distance. Same ratio as above; you can't reliably affect an area smaller than 1 mm radius per metre distance from you, except to agglomerate it.
+6.  You /can/ directly affect an enemy's blood, assuming you have blood to blood contact (skin would count due to the proximity of capillaries) and you counter any blood they are spending on defence with your own expenditure. As you can imagine, this costs a lot to do at any non-trivial distance (due to the volume of "rope" required).
+7.  Blood exposed to the atmosphere evaporates quickly, at a rate of 1 centimetre per second per unit surface area. A 10 metre deep swimming pool of blood suddenly uncovered would evaporate in about 16.7 minutes, which would be pretty spectacular.
+8.  The above evaporation can be deferred---but not eliminated---by sacrificing 1 thousandth of the total debt per second. Debt accumulates, so if you keep deferring you'll end up needing to sacrifice a huge amount.
+9.  If you sacrifice a fraction of the needed amount then it suppresses a corresponding fraction of the evaporation. If the unsuppressed fraction is smaller than the maximum sacrifice rate, it makes up the difference from all of your blood regardless of exposure to the atmosphere ("your blood" refers to blood that you are actively controlling, preferentially outside the body). I haven't decided on the rate of this forced sacrifice. If you think that
+10. Note that it's possible to accumulate so much debt that you're pretty much guaranteed to die unless you get your hands on a lot of blood very quickly.
+11. Arbitrarily powerful healing is possible, but it's difficult to more beyond the instinctive BM ability to close external wounds and manipulate the circulatory system. You need knowledge (lacking in the setting) and familiarity (requires dedicated practice).
+12. BMs can sense blood up to a certain distance away, unless it is consciously shielded by another BM. That distance and the information gained from this sense can be increased by practice up to a point (say 100m away for now, and 99% of BMs won't reach even half that). The information starts vague ("I can sense something") and gradually becomes more specific. In rough order (subject to specific direction of training), you gain knowledge of direction, distance, quantity, spatial configuration, relative motion, composition, and blood type (see 13). This is pretty clearly broken as heck against non-BMs.
+13. Blood type sense is more synaesthetic than explicit. Something like sharp [A] vs. blunt [not A], rough [B] vs. smooth [not B], hard [+] vs. soft [not +]. Thus AB+ would be sharp, rough, and hard, while O- would be blunt, smooth, and soft.
+
+I'd be interested to know if (a) anybody read this poorly formatted wall of text, and (b) if you've got any ideas for how to exploit this. So far my best ideas are "Launch projectiles using your own blood" and "Levitation or at least slowfall".
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 3
+:DateUnix: 1487258543.0
+:END:
+
+*** #+begin_quote
+  (b) if you've got any ideas for how to exploit this.
+#+end_quote
+
+Blood Blades: Make a rapier (or similar sword) with a 1mm tube forged in it, running from the handle to the very tip of the sword. This creates both a cheap way of extending "touch" range (as it is a small amount of blood, and not exposed to the air), as well as allowing you to do "impossible" things with it, driven by telekinesis instead of muscle power.
+
+How does dilution interact with the required radiuses? For example, if I put 1 drop of blood (normal radius 3 mm) into a sealed container of water (radius 100 mm), could I control it at 3 m or 100 m? Can you concentrate blood instead of diluting it to get better effects?
+
+Blood ropes are very expensive. The loss rate is 62.8 ml / sec for a 1m rope, and it scales proportional with length^{2.} A 10m rope would cost over 6 liters of blood to maintain for a single second.
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 3
+:DateUnix: 1487288456.0
+:END:
+
+**** The rapier idea is fantastic. I'm definitely going to include that. I like it as a stylistic device too, where finding a hollow rapier (or cane, or spear) might unveil a blood mage that was hiding their status.
+
+If the setting has the technology, you could also make a projectile attached to a hollow tube and use it to launch into targets at range.
+
+I'll look up whether early 1400s Europe had vulcanised rubber or other similar hollow, flexible tube materials. My vague memories say that's too early for even the rubber plant in Europe, but I could always fudge the details a little as a deviation from real history (which has already happened with the cardiopulmonary system, due to secret blood mages publishing research). I'd just need to justify that departure.
+
+I think I'll have to rule that dilution doesn't affect resolution, but does affect power (and vice versa; pure red blood cells would be a little over twice as amenable to blood magic).
+
+It may however require a thicker rope to qualify as connected (and the converse for pure red blood cells). Since the area is proportionate to r^{2} you could dilute it by a factor of 16 and only need it 4 times thicker.
+
+I'll have to tweak the numbers if I want the ropes to be viable then. Changing it to be linear might be too much, but reducing the evaporation rate could work.
+
+Although if there are things like hollow weapons and projectile tubes then it might be okay for open-atmosphere blood manipulation to be too expensive to be viable.
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 2
+:DateUnix: 1487309957.0
+:END:
+
+
+** I've been trying to train myself on tracking meaningful cultural exchanges; basically how multiple cultures interact within a confined space.
+
+Basically, I have an Island and there are four different factions on it. Two of them are extinct and have left behind only relics, while the other two are either declining or stagnant.
+
+The first, and the only "true" natives on the island are the Scaled Folk (lizardmen). Due to "reasons", they are now unable to advance culturally and so can only copy instead of innovating (aside from a few individuals). They're split into five different tribes that resemble their traditional five elements: Shadow, Light, Water, Earth and Air. They're a migratory people, and they circle the island following the next tribe in the chain. Each tribe mainly consumes a different type of resources (like Shadow are the scavengers, Earth are the vegetarians, Water are the hunters, etc) and each has a different philosophical outlook. This affects not only how each tribe views the other tribes, but also how they interact with outsiders and the other faction on the island. Air are largely extinct due to "reasons" (yes, the same reason why they can't advance culturally).
+
+The second faction are the cannibalistic tribes. These three tribes are the remnants of an Island-spanning civilization that was struck by a cataclysm. Unable to handle it, they fractured into three separate tribes and are now slowly declining on the fringes of the Island. The three tribes were once the different castes of the civilization (the priests, the warriors and the farmers), and they each view their culture's "fall" differently; one tribe thinks they overreached, another thinks this is a necessary trial for Ascendance, while a third believes it was due to "Outside Interference". More broadly, each of the tribes has a different outlook; one tribe focuses on the present, another obsesses over the past while a third seeks a better future (no matter the cost).
+
+At the moment, I'm struggling to keep the myriad relationships in check. I have a good understanding of how the internal faction politics work (or don't, if the case may be), but I getting a bit of a headache trying to detail how individual tribes view other tribes. Like how would the Warriors view the Shadow Tribe, and how does that affect their relationship with the Priests, given the Priests view the Shadow with suspicion, etc.
+
+Oh, and I saw Factions, but there's not a lot of cohesive unity. Sure, if the other faction attacks wholesale then they will band together. But there's a lot of competition given the harshness of living on the Island; the Warriors will sometimes even raid the Farmers for food and women.
+:PROPERTIES:
+:Author: eshade94
+:Score: 2
+:DateUnix: 1487182459.0
+:END:
+
+*** If I took a stab at it, I'd set some initial conditions, iterate progressively over the tribes in time steps of a few years, and find some plausible setup. Of course, such a setup would be an incredibly bad approximation, but that's perfectly OK. International relations is very sensitive to intial condtions regardless, so what's more necessary than finding a stable state is having relations plotted to be realistic with reference to previous events.
+
+Imagine if two near-identical polities are contacted, but in a different order across two different timelines. One set of natives have a blue flag, and the other has a red falg. Meanwhile, the contacting civilization is a big fan of yellow. In a ceremonial display, the blue and yellow flags contrast (because there's not much in nature that's blue and red) while the yellow and red flags look very fitting. In timeline #1, that's not a big deal; this is the contacting civilization's first contact with these natives, so they're not inclined to judge. In timeline #2, after seeing how well the red and yellow flags work together, the contacting civilization thinks of the blue natives more poorly.
+
+And from there, you can already see how politics would wildly differ.
+
+Now, I think that in sufficiently complex systems, relatively stable states are fairly likely to be found because so many sub-states are happening that a near-optimal sub-state is found and outcompetes other states (for example, enough strong, centralized governments have popped up to make having a strong, centralized government the only effective way to deal with other strong, centralized governments). But on a smaller scale, equilibrium is more difficult to find because I think international relations would, at best, oscillate between a few states.
+
+(note-- I've been using "state" to mean "state of being" here, not in the sense of a polity.)
+
+tl;dr think of some basic ways the character archetypes would interact, determine which factions are more volatile than others, then try running a short simulation on them.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 2
+:DateUnix: 1487221697.0
+:END:
+
+
+*** If I were you, I would look into real-world examples. There are a lot of surprising but interesting relationships. For now, I think the middle-east is the most useful in that regard. Diplomatic relations there are heavily influenced by culture/religion. (About that, how is religion on your island?) Religion is important in the middle-east but other factors also play in. For example, the rivalry between Iran and saudi-arabia is caused by multiple things, one of the biggest being religion, but there is also a rivalry because Iran is a republic that came after a revolution and Saudi-arabia is the opposite, an absolute, dynastic monarchy. (conservative also).
+:PROPERTIES:
+:Author: Krashnachen
+:Score: 1
+:DateUnix: 1487213092.0
+:END:
+
+**** Religion is an interesting topic because neither of the factions have one. Well, they /had/ some, but again, something happened which ripped all the belief systems out of their culture. However, they still have the underlying base, the philosophies and traditions and such, so I could probably create some tension/drama there.
+
+And yeah, I'll check out the middle-east. Been meaning too for a while actually.
+:PROPERTIES:
+:Author: eshade94
+:Score: 1
+:DateUnix: 1487214356.0
+:END:
+
+
+** Although I imagine that will soon change, this is the first time I've seen one of these weekly threads have more upvotes than comments.
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 2
+:DateUnix: 1487210447.0
+:END:
+
+*** I think that by pulling attention away from the Monday/Friday threads, the Wednesday/Saturday threads have reduced the total interaction between community members. Of course, removing the Wednesday/Saturday threads will lead the Monday/Friday threads to have more off-topic stuff, but once their level of commenters becomes high enough again, we can add back Wednesday and Saturday threads.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 1
+:DateUnix: 1487221882.0
+:END:

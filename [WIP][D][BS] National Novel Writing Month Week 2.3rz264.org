@@ -1,0 +1,332 @@
+#+TITLE: [WIP][D][BS] National Novel Writing Month: Week 2
+
+* [WIP][D][BS] National Novel Writing Month: Week 2
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 8
+:DateUnix: 1446957812.0
+:END:
+This is a general purpose thread for anything you'd like to talk about for National Novel Writing Month, which is currently in progress.
+
+- Want to check in your some progress?
+- Want to talk about what you're writing?
+- Out of ideas and want some help?
+
+Feel free to make posts to the subreddit if you crank out a chapter you want to share, have a meaty question you want some help with, or something like that; this is more a place for things that aren't quite substantial enough to warrant their own posts.
+
+[[https://www.reddit.com/r/rational/comments/3r1yq0/wipdbs_national_novel_writing_month_week_1/][Link to Week 1 discussion.]]
+
+
+** Just cleared 18k last night...and finally hit my first major plot point. The buildup may have been drawn out, but I used it to establish worldbuilding and develop characters/character interactions.
+
+As I progress, I've become a lot more liberal with my use of placeholders, such as #charactername, or #thatthingImentionedduringtheintro, so that I can just keep writing without breaking my flow by going to check whatever it is, or spending time coming up with a name for a side character that just decided to show up. It makes for some pretty interesting scenes upon rereading. "I, #studentname, son of #mothername and #fathername, put forth 75 #standarddenominationsofcurrency towards my prediction of the #scientificnameforsomeflora being dead by the end of next #amIjustusingweeksormakingupsomeconfusingalternative."
+:PROPERTIES:
+:Author: brandalizing
+:Score: 5
+:DateUnix: 1446965782.0
+:END:
+
+*** Congratulations on being ahead of the curve!
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1446966605.0
+:END:
+
+**** Thank you! As I mentioned previously, my goal is less to write a certain number of words in one month, and more to write a certain number of words /every day/, so as to create for myself a habit that will persist, in some fashion, beyond the month of November.
+
+This is the first book I've written that I truly feel I'll be able to publish one day. Progress is awesome.
+:PROPERTIES:
+:Author: brandalizing
+:Score: 4
+:DateUnix: 1446969356.0
+:END:
+
+
+** For myself, I'm caught up on my initial deficit and trying to move the plot forward. After one more minor timeskip (the third) I think everything will be in place for the pieces moving. As always, the most current copy [[http://alexanderwales.com/darkWizardNaNo2015.html][is here.]]
+
+Also, finished up the appendix for /Shadows/, which means that's no longer eating into NaNo time.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1446958479.0
+:END:
+
+*** [[#s][Curiosity-prompted questions (which you can ignore if you want):]]
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 2
+:DateUnix: 1447513402.0
+:END:
+
+**** 1. [[#s][benefits of oathkeeping:]]
+
+2. [[#s][memories:]]
+
+3. [[#s][where dark wizards come from:]]
+
+4. [[#s][what's taken:]]
+
+Hopefully that answers everything. The novel is still very much in flux.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1447525101.0
+:END:
+
+***** Yes; thank you! [[#s][(Introspective musing follows.)]]
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 1
+:DateUnix: 1447535916.0
+:END:
+
+
+*** Just encountered this story, and all I can say is I'm surprised this is the first time I've seen it, because it is really good. I have to say I like this slightly better than Shadows, mostly because I find these magic systems more interesting. More personal preference than anything; your skill as a writer is clear in both stories. Well done.
+
+Rowan... I can't help but admire his determination, cleverness and work ethic. Of course, he's taken some big risks, over and over, and eventually that's going to cost him. But in the mean time, I really hope he becomes king soon, because he makes for a great antagonist, and I'd love to see how he shakes things up.
+:PROPERTIES:
+:Author: desertfudge
+:Score: 2
+:DateUnix: 1447567417.0
+:END:
+
+**** Glad you're enjoying it; it's still in really rough form and there are issues that will need correcting, but I'm pretty happy with how it's turning out so far.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1447625000.0
+:END:
+
+
+*** #+begin_quote
+  There were certain directions that his finger *simple* didn't want to point.
+#+end_quote
+
+Should be "simply".
+
+I could have sworn I'd seen another typo, but it eludes me now.
+:PROPERTIES:
+:Author: AmeteurOpinions
+:Score: 1
+:DateUnix: 1447098378.0
+:END:
+
+
+*** You should consider adding "max-width:960px;" or something similar to the page style.
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1447166740.0
+:END:
+
+**** Yeah, it's not super pretty right now. The problem with adding in more styling is that any styling which isn't done directly by Scrivener when I hit "Compile" needs to be re-added by me every time I put in an update - which right now means once a night. (The other thing that I really want is an HTML table of contents that links to anchors within the text.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1447168190.0
+:END:
+
+***** You have python? I don't really know how scrivener works, but something like this might work.
+
+#+begin_example
+  """
+  Template.html needs to have {body} somewhere in it. 
+  {body} gets replaced with content from scrivener
+  """
+
+  #Define all the file paths
+  template = open("tempalate.html", "r+").read()
+  scriv = open("compiledScriv.html", "r+").read()
+  output = open("out.html", "w+")
+
+  #We'll use markdown to generate a table of contents.
+  #This means that headers need to look like #ChapterTitle
+  #Markdown will convert those to <h1> tags, and ##ChapterTitle into <h2> tags
+
+  #Configure our markdown to use the "table of contents" plugin, and run it over the "scriv" text
+  import markdown
+
+  scriv = markdown.markdown(scriv, extensions=["markdown.extensions.tables","markdown.extensions.smart_strong","https://pythonhosted.org/Markdown/extensions/toc.html","markdown.extensions.footnotes"]
+
+  #Put the newly markdowned text into our template.
+
+  formattedText = template.format(body=scriv)
+  output.write(formattedText)
+#+end_example
+
+This will wrap your scriv html in another html file called "template" and run it through a markdown parser which will pass any existing html through, but will apply markdown formatting like footnotes and headers. It will also generate a table of contents based on markdown headers.
+
+#headers like this
+
+* headers like this
+  :PROPERTIES:
+  :CUSTOM_ID: headers-like-this
+  :END:
+:PROPERTIES:
+:Author: traverseda
+:Score: 2
+:DateUnix: 1447169322.0
+:END:
+
+****** I'll look into it. It's been a few months since I've used any python. Mostly I just want to minimize the steps between finishing my writing for the night and putting the chapter on the web (which I guess means that I could wrap the FTP transfer into that script). I'll try to figure something out tonight to make the process better and more pretty.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1447172056.0
+:END:
+
+******* Cool
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1447172606.0
+:END:
+
+
+*** I'm curious, isn't there supposed to be two appendixes? What happened to the other one?
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1447294394.0
+:END:
+
+**** The other one is going up whenever it's done. That one will be "On the Nature of Fame" (though that title might not stick) and acts as a companion to the one that got put out a few days ago. It focuses more on what's known about standing. I'll be writing it whenever I'm ahead on NaNo, or need a break from that. (And hopefully I'll have the formatting issues figured out then.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1447294945.0
+:END:
+
+
+** Oh, didn't realize it was time for this already. Regardless, I'm about halfway done with act 1 of my rationalist fanfiction, with act 2 pretty much finished. Only 4 more chapters to go and then I can start publishing weekly chapters! I gotta admit, I'm pretty exited.
+:PROPERTIES:
+:Author: Sophronius
+:Score: 3
+:DateUnix: 1447021625.0
+:END:
+
+*** I'm excited rather than exited, but great work!
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 2
+:DateUnix: 1447224163.0
+:END:
+
+
+** Well, schoolwork killed my Nano aspirations. Ah well, I'll at least write 10k words or so. Currently at 4k, results posted to [[/r/rational]]
+:PROPERTIES:
+:Author: avret
+:Score: 3
+:DateUnix: 1447096383.0
+:END:
+
+
+** Well, looks like I am the poster child for the planning fallacy.
+
+I had a great plan: finish /Induction/ in October, write a romance for NaNoWriMo, use December to edit both of those and as much of the two remaining 2YE novels, publish all of it. There was some wiggle in there due to travel for Thanksgiving and Christmas, but it seemed doable.
+
+Nope.
+
+I'm still not finished with Induction, which means I haven't even started the romance -- this is both due to it ending up being longer than expected and to me having some writing days that produced a lot of required backstory (usually "How does this power work"?) but little to no prose.
+
+I will in fact have written ~50,000 words in November, but it won't be on the book it was supposed to be on.
+
+Damn.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 3
+:DateUnix: 1447465392.0
+:END:
+
+
+** Okay, this is ridiculous. I passed 20,000 words today, and am still in the middle of my Inciting Incident, which only even started two thousand words ago. At this point my book is going to need 250,000 words, easy, if I keep up with this pacing.
+
+Am I just writing a whole lot of bloated nothing, or is this normal? I haven't even been adding much description, just making some notes here and there and sticking my placeholder tag so that I can add it all in upon revision. I'd definitely appreciate some other people's wordcount-to-plotpercent comparisons, or some other form of assurance that, yes, sometimes your book is just going to be that long.
+:PROPERTIES:
+:Author: brandalizing
+:Score: 2
+:DateUnix: 1447014806.0
+:END:
+
+*** The advice I've always followed is to start as close to the inciting event as possible. You want to launch into "the plot" as quickly as possible, because that (more than characterization and worldbuilding) is what's going to keep attention. One of the primary things I do when editing something that I've been freewriting is look for bits at the start to lop off.
+
+I would guess that you /do/ have some bloat, since bloat is one of those things that editing is meant to remove and you haven't done much if any editing at this point.
+
+As to the question of plot to wordcount ratio ... that's a little harder to answer, and I'm not sure it's a good metric because I've always been of the belief that it doesn't matter how much plot you cover so long as it's gripping (and plot progression is only one element of what makes a thing gripping). But I can look at what I have and give you that answer:
+
+- Prologue (main characters are babies) covers about 6K words
+- Early childhood (main characters are five years old) covers 20K words
+- Middle childhood (main characters are ten years old) covers 12K words, though this needs to either be expanded or cut entirely
+- Setup to the Main Plot covers another 20K words
+
+I'm not sure that this answers your question though. The weird thing is, plot is fractal. You can take something like:
+
+#+begin_quote
+  Two dark wizards kidnap the princess
+#+end_quote
+
+And then expand that plot point out into a dozen others. That could be the plot of an entire novel, if you wanted it to be. You could easily spend tens of thousands of words on just /preparation/ for the kidnapping, scouting out the location and getting supplies, recruiting people, etc.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1447017975.0
+:END:
+
+**** Yeah, my first 18,000 is preparation - and character interactions ("Meet the Cast!"). Preparation for the inciting incident, that is. I wanted to have a lot of buildup to show how important the event is to the main character, and to have it be meaningful to the reader as well when it goes wrong. May have stretched that out a bit too much, but it really sets the stage for the entire rest of the story...
+
+The world I have is going to be very unfamiliar to people, in terms of...well, everything. Odd geography/meteorology, the different races, flora/fauna, skewed levels of scientific knowledge. I kind of wanted to ease the reader in while at the same time using that intro period for the main character to do his prep, and get that buildup in tension. I'll probably end up slimming down this part a lot during editing.
+
+I'm planning on ramping up the plot-per-word value after this inciting incident has finished, but there's just /so much/ that needs to occur for the main character to be where he needs to be at the resolution. I originally had this novel planned out as a trilogy, but each of the three were too bare plot-wise to really stand on their own, so I turned the trilogy into a three-act plot for one book.
+
+Well. We'll see where I am another 20,000 down the line. Thanks for your advice! (As always!)
+:PROPERTIES:
+:Author: brandalizing
+:Score: 1
+:DateUnix: 1447019950.0
+:END:
+
+***** I wouldn't fret. Personally I couldn't stand not having an explosion in chapter one, but if you have non-plot hooks like an inventive setting and such you'll be just fine (something something sculpting marble).
+:PROPERTIES:
+:Author: AmeteurOpinions
+:Score: 1
+:DateUnix: 1447037859.0
+:END:
+
+****** I think the fact that I've been working with the worldbuilding aspects for so long before I started writing sort of numbed me to the oddness, such that I don't feel like there's much going on in the beginning. From a new reader's perspective, it's probably pretty busy. And yes, there actually is a lot of marble, but it's sculpting /his mind/. Cue scary music.
+:PROPERTIES:
+:Author: brandalizing
+:Score: 2
+:DateUnix: 1447052090.0
+:END:
+
+******* The only rule is whether or not it keeps the reader's interest. If it does, every sin is forgivable. Just write what you want to write and show it to some strangers (us being a good option) -- do it early, as soon as you can. If we're bored, cut. If we're going "MORE!", then keep doing what you're doing.
+
+Take a look at Robert Jordan's Wheel of Time series. It's been a long time since I read it, but I don't remember anything particularly plot-critical in the first half book. (Which means about 300 pages, the size of a normal book.) Despite that, it was really engaging and swept me right along -- well, except for the first 50 pages, which were mind-shatteringly boring. After that, though, all very engaging.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 2
+:DateUnix: 1447465902.0
+:END:
+
+
+** I basically need a double word count day today in order to catch up. This November is turning out to be a really crappy time for NaNo for me for two reasons; I'm working with two different clients that have very tight deadlines and both want to monopolize my time, and I took on an obligation to host a large D&D game in mid-November, which means that I need to finish writing dialogue and descriptions for that (it's Hogwarts themed and should be fun). On top of that, I have two lingering obligations for /Shadows/ that I'm going to have to put off, mostly because the thought of hitting deadlines at work and going home to hit more deadlines is enough to drive me nuts.
+
+Those are my excuses for why I'm 1.5K words behind right now. NaNo isn't really about making excuses. I think I can catch up and get a comfortable lead this weekend, if things go well.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1447352774.0
+:END:
+
+
+** Assuming I wrote two thousand words a day. It would be 16K words.
+
+I actually did and went beyond, but I don't keep count. Some, I do 3K words in one day for just one story.
+
+I am keeping a nBSG and a stargate story going.
+:PROPERTIES:
+:Author: hackerkiba
+:Score: 1
+:DateUnix: 1446967067.0
+:END:

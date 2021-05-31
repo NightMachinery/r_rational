@@ -1,0 +1,700 @@
+#+TITLE: [D] Friday Off-Topic Thread
+
+* [D] Friday Off-Topic Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 14
+:DateUnix: 1506697643.0
+:END:
+Welcome to the Friday Off-Topic Thread! Is there something that you want to talk about with [[/r/rational]], but which isn't rational fiction, or doesn't otherwise belong as a top-level post? This is the place to post it. The idea is that while reddit is a large place, with lots of special little niches, sometimes you just want to talk with a certain group of people about certain sorts of things that aren't related to why you're all here. It's totally understandable that you might want to talk about Japanese game shows with [[/r/rational]] instead of going over to [[/r/japanesegameshows]], but it's hopefully also understandable that this isn't really the place for that sort of thing.
+
+So do you want to talk about how your life has been going? Non-rational and/or non-fictional stuff you've been reading? The recent album from your favourite German pop singer? The politics of Southern India? The sexual preferences of the chairman of the Ukrainian soccer league? Different ways to plot meteorological data? The cost of living in Portugal? Corner cases for siteswap notation? All these things and more could possibly be found in the comments below!
+
+
+** Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+I got the itch to keep working on compiler-related modding stuff, so I kept working on that. The basic idea is to replicate the dynamic parts of Supreme Commander's modding engine while staying firmly within compiler-enforced object-oriented land.
+
+In SupCom, you could mod the core game files (and other mods) by simply indicating that your mod was to load later than the mods in question, and then provide a script that overwrote the particular functions (or classes or variables) that you wanted. The way that this was handled meant that each mod that touched that function would be evaluated in turn: first the core version would be loaded and its version of function =Foo= evaluated, and then ModA would load and perform its modification to =Foo=, all the way down to ModZ that would have the final say on what =Foo= looked like. For something like functions, this whole process was more or less pointless, since the function wasn't actually /used/ until some code later referenced it, so the last version was all that mattered.
+
+In other cases, however, this process turned out to be surprisingly valuable. For instance, a dictionary variable that saves something such as keybindings could be affected by multiple mods during this process. Core would run and populate it with all the base game keybinds, and then ModA could load and add one or two keys, and then ModB would load and add a few more, and so on and so forth. This could be problematic if mods didn't play nice, and this particular case of a keybinding library would probably be better served by a concept such as a registry, but it was so /fascinating/, watching the Rube Goldberg-like cascading of modifications to a particular object.
+
+There was one more feature that I felt was super useful, and that was how function hooks were handled. Hooking into a function is basically a polite way of saying you hijacked it, with the entity calling the function none the wiser that you have usurped authority. In SupCom, since Lua is a dynamic scripting language, you could save the entire function pointer of a function to a variable, then redefine that function, calling the saved original as needed. Like so:
+
+#+begin_example
+  local sneakylocalcopy = ImportantFunction
+
+  function ImportantFunction()
+
+  #I can perform my own code here
+
+      sneakylocalcopy () #calling the original version of the function
+
+      # and here I can do even more of my own stuff
+
+  end
+#+end_example
+
+This was /so powerful/. Yes, you could easily destabilize the game by hooking the wrong functions, but it was /so nice/ to be able to inject code wherever you needed to, if you needed to. I wanted to duplicate this functionality within C#, in XGEF.
+
+The means by which I will do this is to have a series of [Attributes] that functions or classes can be tagged with. As a preprocessing step, XGEF analyzes any given script, finds the attributes that are important to it, and then transforms the code accordingly.
+
+If we have a function Foo in some other mod (or in the core game) that we want to slap a few extra lines on, it can be done like so:
+
+#+begin_example
+  [Append]
+
+  public void Foo()
+
+  {
+
+      DoSomethingSpecial();
+
+  }
+#+end_example
+
+And that's it. XGEF sees the =[Append]= tag, looks up the original version of =Foo()=, copies the whole of it into the file, and then ensures that the modder's latest addition is included. Successive uses of Append can be used by multiple mods, letting everyone get their grubby fingers where they need to.
+
+(As an aside, I'm well aware that probably about 80% of the problems that /could/ be solved this way /shouldn't/ be. XGEF will have extensive support for registries and event handling, which more elegantly solves problems that most of what this code transformation can, but at the end of the day there are some problems that require you to reach down into the pit of the game's source code and tear it apart with your own bare hands. I intend this to be an option to those who need it.)
+
+The total number of tags that I want to include is around 10, ranging from =[Overwrite]= to =[Extend]= to a small number of tags that deal with making event generation boilerplate easy.
+
+So anyway, I spent the better part of this week working on really making Roslyn flex its muscles and getting comfortable analyzing code files. I ended up spending the last two or so days writing an intermediary set of classes, since it turns out that Roslyn can actually be unwieldy for some of the things I need it to do. But as of right now, I have a means of analyzing a C# file, turning it into my intermediary =ScriptFile=, and regenerating the original source file. Now that I have this, I can use it to regenerate the original slightly differently, which is all I really need for the code transformation to work.
+
+This next week I plan on implementing the remaining attributes (one and a half are done already, mostly done before ScriptFile was written). Once those are done (or at least Overwrite and Extend), I can finally collapse the call stack and get back to writing the core mod in the way I wanted to two weeks ago.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit. If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!
+:PROPERTIES:
+:Author: ketura
+:Score: 10
+:DateUnix: 1506716869.0
+:END:
+
+
+** 1. Shouldn't the investigation and practice of 2 or less daily hours of sleep be considered as an example of real-life munchkining? 1.2. Also, if our life was a story, and [[http://www.businessinsider.com/this-guy-has-only-slept-45-hours-per-day-for-two-years-2013-11][~5]] (or [[https://www.polyphasicsociety.com/polyphasic-sleep/overviews/uberman-2/][~1.5)]] hours of healthy daily sleep were a thing in it, woulnd't you criticise that story if these techniques weren't a munchkining solution so obvious that pretty much everybody knew about it and practiced it?
+
+2. Are there types of therapy that use (alternatively, “Which types of therapy use ... ?”) statistics, demographic data, etc as tools for fighting\curing low self esteem, depression, anxiety, prejudice, etc?
+:PROPERTIES:
+:Author: OutOfNiceUsernames
+:Score: 6
+:DateUnix: 1506705157.0
+:END:
+
+*** What's the latest word on the long-term health effects of different sleep schedules? e.g. something more recent than [[https://www.supermemo.com/en/articles/polyphasic2010][this]]? What's the risk of eventually suffering from the effects of chronic sleep deprivaton, or actually dozing off periodically untracked, or whatever? I haven't really looked into polyphasic sleep stuff since highschool but I recall concluding then that it was a "too risky to try" sort of thing.
+:PROPERTIES:
+:Author: phylogenik
+:Score: 8
+:DateUnix: 1506708796.0
+:END:
+
+**** Sleep is still poorly understood. I wouldn't try it. It's better to get more sleep. Sleep apnea patients wake up every few minutes during their sleep because they stop breathing (but aren't aware of it since they go back to sleep almost immediately). The result is that they are tired all the time and their memory and IQ aren't as good as it is after they start getting treatment for their sleep apnea. Polyphasic sleep wouldn't be as bad as that, but I still don't think it's natural. Even if you're getting full REM cycles, it might mess with your body's hormone levels and stuff (i.e. your body releases growth hormones during the night, and starts releasing cortisol (stress hormone) right before you wake up close to around 8 hours of sleep, and the levels slowly go down again throughout the day).
+:PROPERTIES:
+:Author: Timewinders
+:Score: 1
+:DateUnix: 1506892468.0
+:END:
+
+
+*** When you say use statistics and demographic data as "tools" for fighting/curing those things, do you mean brings them into the therapy room and presents them to the client? Or do you mean as part of how they inform their modality and practice?
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 3
+:DateUnix: 1506713836.0
+:END:
+
+**** More like teach them to find and understand such information, and to use it for checking how accurate are those of their perceptions --- about themselves and others --- that drop their quality of life, in one way or another.
+
+E.g. “there's no way I can have a happy life” → define "happy life" + investigate what part of the population lives in a way that more or less meets the definition + compare the average skills and abilities of such people with the client's own relatively objective assessments (e.g. various qualification tests, etc).
+
+May also work for people who have paranoia, androphobia, etc.
+:PROPERTIES:
+:Author: OutOfNiceUsernames
+:Score: 1
+:DateUnix: 1506747450.0
+:END:
+
+***** Cognitive Behavioral Therapy (CBT) works something like this. Its primary goal is to identify the connection between our thoughts, feelings, and behaviors, and then identify irrational thoughts and learn to counter them.
+
+How deep into things it goes will depend on the particular therapist and client. On one end of the spectrum are those who might offer broad counters (like, "Are you actually doomed to failure just because you don't get into this college? Does everyone who doesn't go to their top choice of college have a horrible life?"), while on the other end are those who might look up statistics and data, or instruct their client to do so.
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 2
+:DateUnix: 1506749316.0
+:END:
+
+
+*** #+begin_quote
+  Also, if our life was a story, and ~5 (or ~1.5) hours of healthy daily sleep were a thing in it, woulnd't you criticise that story if these techniques weren't a munchkining solution so obvious that pretty much everybody knew about it and practiced it?
+#+end_quote
+
+This might be very obvious to you, but what works in stories and tabletop RPGs doesn't work in real life.
+
+Most stories emphasize ideas and uniqueness over logistics and comparative advantage. The protagonist doesn't train 10% harder or dabble in a few different skills, he trains 3000% harder and learns The Ultimate Technique of Doing [the goal] Right. I'd argue that in real life, success is way less about good ideas than about good habits.
+
+And personally, when I don't sleep enough I lose all my motivation and I have a way harder time concentrating.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 3
+:DateUnix: 1506765345.0
+:END:
+
+
+** Any advice on how to broach conversation with extremely introverted people? I am in the process of reforming my school's Science Olympiad team and I came across someone who would be a perfect candidate, if only he ever talked to anyone. 1. We had an oral test in my Chinese class, and as he is a native speaker he has no reasonable chance of failing. I jokingly asked him how he fancies his chance of passing, and he proceeded to explain in great detail the recent immigration of his parents and how he was raised on the tongue, etc. 2. I was joking around with a classmate about the age of the Earth being 6000 years, and he turns around and quietly gives not only the correct approximate values for the age of the universe and the earth, and also how they were calculated. I explained that I was being sarcastic, and he responded in a professorial tone that this was not the case, as sarcastic people change their affect to indicate sarcasm. "Meta-sarcasm" was apparently not a sufficient response on my part. When I excitedly brought up him becoming my partner for the Astronomy Science Olympiad event, he thought for a moment and replied equivocally (and very quietly) that, "we shall see." I personally find him very compelling when he deigns to speak, and he does not seem to find social interaction unpleasant, he just lacks the apparent desire to ever really /begin/ a conversation.
+:PROPERTIES:
+:Score: 7
+:DateUnix: 1506737079.0
+:END:
+
+*** First, figure out whether they're actually introverted.
+
+When I say "I'm introverted" I mean that I've got a little "social energy" meter, which gets drained whenever I talk to people. This meter is not very big, so I don't tend to enjoy random conversations with strangers, because they drain an important resource I might need for other things, like talking to a friend. After social interactions, I need some time to be by myself in order to let that meter charge back up. I'm happiest having two to four close friends that I see once or twice a week, because close friends take less social energy and I don't really need that many of them (or that much of them) to meet my small social needs. (My understanding of extroverts is that they're the opposite, where they have an empty "social interaction" meter that they regularly need to fill, and they get distressed when they don't have enough social interaction, a feeling that I get only rarely.)
+
+There are two related concepts:
+
+- Some people don't have friends, or have trouble making friends. This /is/ the case for a lot of introverts, because a lot of introverts don't pick up the skills and habits needed to make friends, but not everyone who doesn't have any friends is an introvert. I've met clear extroverts with no friends, people who talk a lot at work or in class in order to get their required dose of social interaction in, and then go home to no friends, or maybe a house full of children and a romantic partner (and introverts tend not to like extroverts like this). So if you see someone who's alone or doesn't speak much, it might be that they're an extrovert in disguise.
+- Some people don't have social skills. Being awkward is a typical introvert trait, because having less social interactions means that we don't tend to develop social skills, especially those which involve being socially proactive (like starting conversations with strangers, flirting, or making introductions). But just because someone sucks at social skills doesn't mean that they're introverted; maybe they just never learned, because social skills are typically one of those things that aren't properly taught. (I have, again, met extroverts who were socially inept. Learn to read a room, Brenda!)
+
+(I suspect that your particular introvert is an introvert with poor social skills in addition to introversion.)
+
+So once you have found an /actual/ introvert, the first thing you need to be aware of is that a lot of introverts won't want to be your friend. Personally, I've found that with a once-weekly D&D group and an extroverted wife, I only need about one social interaction thing on top of that a week, which I almost invariably get. If someone tried to get me to sign up for something or to be friends, I would internally grimace and then try to be polite about not doing that.
+
+If an introvert /does/ want to be your friend, then you will probably have to be the one who makes the first move, and the second move, and most of the moves after that. Introverts will often get accused of making the other party "do all the work", which can be true, but usually because there's unequal needs in the relationship. (Me not wanting to see a friend more than once a week when he wants to see me three times a week has been the cause of a few friendships ending. They interpret that as me not liking them, or not putting in effort, rather than me just getting socially drained too quickly with no time to recover. For me, seeing them /is/ the work, and I might enjoy our time, but it's still a draining effort on my part.)
+
+If you want casual conversation with an introvert, I personally think it's best to be as gentle and non-committal as possible, so they can choose their own level of engagement. "Tell me about X" obligates the introvert to talk about X, while saying something that allows them to relate their own story or thing /if they want to/ will tend to work a lot better (and again, lack of social skills, which is somewhat common in introverts, complicates this, because the socially unskilled won't always pick up on an open-ended invitation to speak). Similarly, if you're in a group setting, asking the introvert to speak about something seems, to me, like not the right way to go; you want to give them openings, and offer them ways into the conversation, but not directly tax their social batteries. If you do try to make them talk about something, make sure that it's a topic they actually have something for, otherwise it's like trying to give a book report on a book they haven't read. (I've had extroverts try to include me in conversation like this, asking me "what was it like to grow up Mennonite" in a way that was clearly meant to be an olive branch but which I found really taxing.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 9
+:DateUnix: 1506753600.0
+:END:
+
+**** As a rather extreme, albeit rarely successful, extrovert, I would consider that a fair description. People withdrawal is something I regularly go through. I have a few introvert friends, and I wish they had your frankness! Thank you for responding in any case, it is interesting to see that perspective.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1506895123.0
+:END:
+
+
+*** Did he grow up in China? It's possible there's some cultural barriers at work here. Especially with stuff like social skills and sarcasm. I know Japanese people sometimes have difficulty 'getting' sarcasm, but I don't know about Chinese people.
+:PROPERTIES:
+:Author: Timewinders
+:Score: 2
+:DateUnix: 1506892634.0
+:END:
+
+**** No, his parents were recent immigrants when he was born. I would attribute his lack of social skills to be a by-product of lack of English talent, but his register of speech is higher than average (although obviously that presents its own disadvantages). He functions relatively well in the school environment, without that he seems to lack for friends.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1506893850.0
+:END:
+
+
+** Parasyte Maxim - Anime Recommendation!
+
+So I know most anime aren't rational, and I'm not going to say that Parasyte has overarching rational themes (though it sort of does) but I think anime lovers that enjoy the content of this sub would find Parasyte a good watch (though it's quite gory, so it won't fit everyone's appeal)
+
+To put it simply and with only slight spoilers for episode 1: Our protagonist wakes up one day with a titular "Parasite" where his right hand and forearm used to be. The parasite is cold, logical, curious, intelligent and most importantly selfish. He prioritizes his own life above all else and (as his life is tied to the protagonist's) prioritizes the protagonist's life as well. We quickly learn that the parasite is not alone and others of his kind start cropping up and causing trouble.
+
+The parasite and our protagonist often have arguments about topic such as the sanctity of human life vs all life and altruism vs selfishness. Our protagonist is your fairly standard human anime lead, though I will say he's notably more realistic and level headed. While he's still sometimes prone to charging in blindly for emotional reasons, those moments aren't nearly as frequent as they are with other leads.
+
+We also get to see the parasite (both the lead's and the others of his kind) evolve as organisms and characters as the series progresses and time passes. As parasites all have identical beginnings, you would think that they would be stock, cookie cutter characters of each other. And they both are and aren't. It's done in a fairly impressive way that feels somewhat realistic.
+
+People die, a lot. And plot armor isn't really a thing for anyone, even the most important characters.
+
+Overall, it's a very good watch. And a fairly short one, as it's only 24 ~22 minute episodes. And the themes it tackles (such as nature vs nurture, is /life/ intrinsically valuable) are very much up the [[/r/rational][r/rational]] alley in my opinion. I think it's worth a watch :)
+:PROPERTIES:
+:Author: Kishoto
+:Score: 8
+:DateUnix: 1506808708.0
+:END:
+
+*** I liked parasyte. It was kinda miraculous it even got an adaptation since its an old manga. But seeing it revitalised in a modern setting was awesome. I was just slightly feeling blueballed that it was so short and havent discussed the subjects fully.
+
+In terms of anime oh boy oh boy today there was ton of annoucments like Index 3rd season and SAO 3rd season + offspin of season 2...
+
+i kinda like index even tho it has plenty of flaws i really like the characters, character designs and worldbuilding while SAO....oh man......
+:PROPERTIES:
+:Author: IgonnaBe3
+:Score: 3
+:DateUnix: 1506868523.0
+:END:
+
+**** I really enjoyed SAO as well. It's one of my favorite animes and though, like most, I feel the Aincrad arc was the best by far, I'm still invested enough in the characters and the story to be interested in future seasons.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 3
+:DateUnix: 1506872031.0
+:END:
+
+***** ughhh i didnt mean the "oh man" in a good way....but you do you. I found SAO really BS in terms of narrative, BS power of jesus-kun and BS deus ex machina and also the VR didnt make a lot of sense also the implications and themes of VR wasnt explored + we got cockblocked on the 70th floor and also ...yeah i am one of the haters of SAO. Personally i think SAO started or atleast popularized the whole VR and isekai wave of Harem LNs(even tho it technically isnt a harem but come on the club of girls the MC has around him even tho he is OTP with asuna is ridiciolous)
+
+edit. ALso i will probably enjoy all the yt content that will be made from the next season of SAO shitting on it or something. It will be glorious.
+:PROPERTIES:
+:Author: IgonnaBe3
+:Score: 2
+:DateUnix: 1506872631.0
+:END:
+
+****** Haha, that's funny.
+
+SAO is definitely not rational and I can see why a ton of people don't like it. It definitely jumped through more than enough hoops to deserve a few cliche trope labels. But I think I like it because it delivers on a fantasy that's fairly stereotypical but still satisfying: The bad ass nerd who's good at video games gets to be actually badass and land the girl. Unlike in a lot of other animes, Kirito and Asuna's relationship is established in the middle of it, as opposed to in the end like most other series.
+
+I understand that's just my personal bias though and don't ever try to defend SAO as gamebreaking or deep or any of that stuff. It's just fun. And cool. And kinda sappy.
+
+Also I completely agree that the harem-ish thing is completely unnecessary. 100 percent.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 2
+:DateUnix: 1506912589.0
+:END:
+
+
+***** Loved the first season, but the second season was a MASSIVE disappointment. First season's strong female lead in healthy equal relationship with male protagonist turns into damsel in distress to be rescued from idiot lech cardboard cutout villain by the Gary Stu now possessing the male protagonist's body.
+:PROPERTIES:
+:Author: sl236
+:Score: 1
+:DateUnix: 1507071274.0
+:END:
+
+****** Yea, there was really no need for the writers to take away Asuna's agency like that. Her being strong in her own right was such an awesome part of her character. Even after she's freed, she's now relegated to the cliché female healer role as opposed to the rapier wielding speedster she was before.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 1
+:DateUnix: 1507128930.0
+:END:
+
+
+** SlateStarCodex has been talking a lot about Predictive Processing lately (the idea that you brain mostly runs a hierarchy of modules, where each modules receives predictions/guesses/orders from above, data from below, and tries to 'connect' the two with Bayesian-like computations).
+
+Does anyone know if there is a plausible framework / theory out there that uses PP to explain and predict Ego Depletion?
+
+My personal gut feeling is that the two are probably strongly connected (assuming they're both real). I'm guessing that whatever mechanisms we use to take non-obvious decisions is heavily dependent on the Top-Down part of PP, and Ego Depletion happens either when some sort of limited resource powering Top-Down PP runs out, or when the Top-Down part of our brains "overheat".
+
+Obviously, I don't have a strong background in neurology, and I have no idea if what I said even made sense. Has research been done in that direction before?
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 7
+:DateUnix: 1506764382.0
+:END:
+
+*** AFAIK Ego depletion fell victim to the reproduction crisis; some googling seems to support that memory.
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 9
+:DateUnix: 1506803359.0
+:END:
+
+
+** Still looking for a good data compiling/analysis tool that I can use for my [[https://www.reddit.com/r/HPMOR/comments/73a5k0/hjpev_successfailure_reread_chapters_713/][HPMOR Success/Failure Reread]] to plug all these numbers into as I go. I'm not really hip to what new tools are available for this sort of thing, but any kind of spreadsheet or graph format that will allow me to easily observe totals of Success/Failure, Minor/Moderate/Major, and Mental/Social/Action, would be appreciated, as I'm already having to triple check my tallies to avoid mistakes.
+
+Any help finding one would be appreciated!
+
+Edit:
+
+Two people have already made one for me, no more needed, thank you!
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 5
+:DateUnix: 1506713878.0
+:END:
+
+*** Tableau
+:PROPERTIES:
+:Author: Magodo
+:Score: 1
+:DateUnix: 1506745667.0
+:END:
+
+**** Looks good, but sadly the free trial is only 14 days, and I don't expect to be done in that time :)
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 1
+:DateUnix: 1506746669.0
+:END:
+
+
+*** Hmmmm... just thinking of graph formats, I think this could be done as a bar chart (slightly variant). On the X-axis, you have three categories - Mental, Social, Action. Each category has three bars - Minor, Moderate, and Major. Green bar above the line for successes, red bar below the line for failures.
+
+...I'm not nearly as familiar as I should be with the minutiae of Gnuplot, but I imagine it could be used to show this?
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1506891388.0
+:END:
+
+
+** Has anyone else been watching [[https://myanimelist.net/anime/34599/Made_in_Abyss][Made in Abyss]]?
+
+Last episode of the season just came out.
+
+...
+
+HOLY MOTHERFUCKING SHIT
+
+To anyone who hasn't tried it, please, please give it a chance.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 4
+:DateUnix: 1506732841.0
+:END:
+
+*** Really hoping for a good dub of this one. Anyone have the lowdown on that?
+:PROPERTIES:
+:Author: ben_oni
+:Score: 1
+:DateUnix: 1506750173.0
+:END:
+
+**** I think any dub is a while away from happening; Anime Strike has the exclusive rights to it in the US (for now.)
+
+Luckily the original vocals are great, if you're willing to put up with subtitles.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 2
+:DateUnix: 1506751498.0
+:END:
+
+***** I'm really not. I know the arguments for subs, and I find them unpersuasive. Mostly because I don't enjoy watching shows like that. /Made in Abyss/ has been hyped enough that I was willing to give it a shot, but I still found it to be intolerable. (Mind, I don't put up with crappy dubs, either.)
+
+So, why does Anime Strike having the rights preclude a dubbed version? Do they have something against voice actors? I'm just hoping it happens eventually. (Like, within a couple years, maybe?)
+:PROPERTIES:
+:Author: ben_oni
+:Score: 1
+:DateUnix: 1506755003.0
+:END:
+
+****** They're just not known for producing dubs like, say, funimation is.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 1
+:DateUnix: 1506755621.0
+:END:
+
+
+*** I havent really tried it yet but i am tempted. It was highly discussed even before it hit live.
+
+we shall see but i got only so little time when school is in full motion .... and so many series to complete
+:PROPERTIES:
+:Author: IgonnaBe3
+:Score: 1
+:DateUnix: 1506868302.0
+:END:
+
+
+*** Yup, making everyone I know watch it.
+:PROPERTIES:
+:Author: sl236
+:Score: 1
+:DateUnix: 1507071562.0
+:END:
+
+
+** I'm in the middle of exploring my tastes in music, in a project that I'll eventually describe in full here for the benefit of the two or maybe even three people whose idea of "exploring the world of music" involves a spreadsheet and charts.
+
+Right now, I'm interested in song/album/band recommendations for any of the following:
+
+- Art rock
+- Baroque pop
+- Blues rock
+- Comedy songs
+- Electronic rock
+- Folk pop
+- Garage rock
+- Glam rock
+- Pop rock
+- Trip Hop
+
+I've mostly been going by Top 10 lists and such that I've found online, but I've found that the process is more enjoyable (and a tiny bit more successful too) when I'm going off of personal recommendations.
+:PROPERTIES:
+:Author: callmesalticidae
+:Score: 4
+:DateUnix: 1506732976.0
+:END:
+
+*** You're probably already aware, but for comedy no-one has a larger or more varied and skillful library than Weird Al Yankovic. If there's specific genres within that list that you'd like, I could try to make recommendations, but I know very little about music genres (I don't parse the list you posted, for instance).
+:PROPERTIES:
+:Author: ketura
+:Score: 4
+:DateUnix: 1506733675.0
+:END:
+
+**** #+begin_quote
+  Weird Al Yankovic
+#+end_quote
+
+Yes, absolutely. If I were sent to a desert island and could pick only one artist's collection to take with me, I'd pick Weird Al, hands down.
+
+#+begin_quote
+  If there's specific genres within that list that you'd like, I could try to make recommendations
+#+end_quote
+
+Most of the list above is comprised of subgenres of rock music, so I suppose that anything beneath the umbrella of rock music has a decent chance of working out.
+
+Or did you mean "specific artists" rather than "specific genres"?
+:PROPERTIES:
+:Author: callmesalticidae
+:Score: 3
+:DateUnix: 1506734254.0
+:END:
+
+
+*** Random recs in approximate order by your list:
+
+Check out Godspeed You! Black Emperor (I like Lift your skinny fists like antennas to heaven). They're something else.
+
+For bluesy-poppy stuff, Lake St Dive is pretty popular.
+
+My top pun-based song is Wet Dream, by Kip Adotta.
+
+Peal Jam's album Ten is a classic.
+
+You've already listened to a Best of Queen album, right? Good.
+:PROPERTIES:
+:Author: Charlie___
+:Score: 3
+:DateUnix: 1506735583.0
+:END:
+
+**** Sorry about taking so long to get back to you, and thank you for your recommendations.
+
+Godspeed was interesting, and I've added the album to a collection that I listen to while I'm writing.
+
+Lake St. Dive was hard to figure out at times. I listened to one of their songs on repeat for at least an hour, trying to figure out whether I liked it enough to download it. I'm definitely checking out their other albums.
+
+I listened to a couple of Pearl Jam albums, including Ten, but there was something about the music that didn't quite sit right with me. I'm going to take a look at some bands that are similar to Pearl Jam to see if I can figure out what's going on there.
+
+Queen is good, yes.
+
+Thank you again for your recommendations!
+:PROPERTIES:
+:Author: callmesalticidae
+:Score: 1
+:DateUnix: 1507497770.0
+:END:
+
+***** If something didn't sit right about Pearl Jam, a strong possibility is it's that you can't understand what the hell Eddie Vedder is saying the first five times you listen to a track.
+:PROPERTIES:
+:Author: Charlie___
+:Score: 2
+:DateUnix: 1507505077.0
+:END:
+
+****** Haha. That might be it. I'll check out Genius for the lyrics next time.
+:PROPERTIES:
+:Author: callmesalticidae
+:Score: 1
+:DateUnix: 1507514227.0
+:END:
+
+
+** [[/u/alexanderwales]] Hey, where did the automatic 'sorted by: new' go? :(
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 5
+:DateUnix: 1506764418.0
+:END:
+
+*** It was never automatic, I just did it manually whenever the thread went up and forgot this time. I will get to work on setting Automod up to do that now (I left myself instructions on how to do that in a comment somewhere).
+
+Edit: Okay, should be done, if I trust the instructions left by myself from three months ago.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 8
+:DateUnix: 1506779815.0
+:END:
+
+**** Oooh, it's like time travel, only forward and information only.
+
+Did you set it up for all the weekly threads, or only Friday?
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 5
+:DateUnix: 1506781302.0
+:END:
+
+***** Friday only. I think that's the only thread that gets enough traffic for it to make much of a difference, and what analysis we've done on the change shows lukewarm results for Friday anyway. (Monday does, sometimes, I guess, but it mostly doesn't affect the top level comments where it would be doing the most good. We had never changed the sort there though, I think because it was something of a control.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1506781579.0
+:END:
+
+
+** I assembled a new computer recently! Well, two, actually, to help me with some projects I've currently in the works. Took a few hours and still have a few things left to do, but they seem to work well enough (been running @ 100% load for a week+ now with no issues). Some [[https://imgur.com/a/dfqvr][pictures]] and an [[https://gfycat.com/pitifulthoroughgalah][animation]] to look on, and a more [[https://www.reddit.com/r/buildapc/comments/72e8p5/build_complete_ryzen_1700_work_builds/][detailed thread]]* regarding the builds.
+
+I also wrote [[https://nikvetr.wordpress.com/2017/09/26/wrinkled-lips-and-cold-sneers/][another poem]] this week. My level of travel pretentiousness is the maximum allowable level of travel pretentiousness!
+
+*(incidentally, I seem to be having trouble on this account -- and also my previous one -- to get people to engage with OC. That [[/r/buildapc][r/buildapc]] thread got effectively 0 comments or views in the first day before I started linking to it from other places, a lengthy [[/r/fitness][r/fitness]] progress [[https://www.reddit.com/r/Fitness/comments/6qzpy6/fudgearounditis_progress_maintenance_23y61190/][post]] I wrote a while back was downvoted super heavily before being deleted, none of my earthporn [[https://www.reddit.com/r/EarthPorn/comments/6y23ia/a_cloudy_day_at_the_ever_popular_horseshoe_bend/][posts]] seem to be terribly successful, etc. I'm not sure what it is, since 3 or 4 accounts ago -- maybe c. 2008-2011, when I first started using reddit -- I could pretty reliably get e.g. a few hundred comments on pretty similar stuff. It might be that reddit's overall quality has gone up, leaving me in the dust, or my postings have gotten worse, but it doesn't feel like it. I feel kinda silly and whiny for griping about this, but, like, I want attention! Maybe just a bit. Especially when I put time into something. Anyone else experienced similar?)
+:PROPERTIES:
+:Author: phylogenik
+:Score: 7
+:DateUnix: 1506703628.0
+:END:
+
+*** Timing is super important with Reddit posts. Post at a time when few people are voting and you get shafted by the post that's put up later but during peak hours, as Reddit weights the votes made in the first hour more heavily than those of the next several.
+:PROPERTIES:
+:Author: ketura
+:Score: 2
+:DateUnix: 1506717022.0
+:END:
+
+**** The hot ranking is:
+
+#+begin_example
+  Log(abs(Upvotes-Downvotes)) + (age/45000)
+#+end_example
+
+In other words, there's a decreasing impact from each additional upvote, and then "hotness" is also decreasing over time. A new post will beat an old post, all else being equal, but a sufficiently upvoted post can stay ahead of newer posts for quite a while.
+
+Timing is important partly because the "age" factor is one that you can never beat, only stay ahead of for a bit. I think the general rule is that you should actually post /ahead/ of peak hours by a certain margin depending on subreddit, in order to be one of the things that's on the top when peak hours roll around, which will likely get you the additional votes to stay ahead of age. (Same logic for website design and picking what to put "above the fold", because a lot of people will just stop by to look at that and nothing else.)
+
+From recollection, the timing differs somewhat for text and image posts, but 8am or 9am Central (UTC -6) is a good starting place. This is why all the threads on [[/r/rational]] are set up to automatically post around that time; it maximizes how long the posts will stay on top. (Of course, once everyone knows this, then the ideal strategy changes in order to avoid competition.)
+
+Edit: You can see all the python code [[https://github.com/reddit/reddit/blob/master/r2/r2/lib/db/_sorts.pyx][here]], though reddit code is no longer maintained open source, and the actual code they use might have diverged (though I doubt it). Also, shout out to [[/r/TheoryOfReddit]].
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 6
+:DateUnix: 1506718168.0
+:END:
+
+
+*** Nice. I'd like to build a PC too, once I've finally settled down and I don't have to worry about moving it to a new apartment every other semester.
+:PROPERTIES:
+:Author: callmesalticidae
+:Score: 2
+:DateUnix: 1506733060.0
+:END:
+
+**** They're pretty straightforward! Essentiall adult legos. Expensive, fragile adult legos.
+:PROPERTIES:
+:Author: phylogenik
+:Score: 2
+:DateUnix: 1506743457.0
+:END:
+
+
+** Just started watching The Orville. A true modern Star Trek. More rational than most TV shows too.
+:PROPERTIES:
+:Author: iemfi
+:Score: 1
+:DateUnix: 1506710165.0
+:END:
+
+*** I enjoyed the first three episodes and will keep watching, but I think the quality of the show has ranged from decent to just okay. I found the first episode boring, the second had /just enough/ drama to keep me from pulling out my phone, and the third successful pulled off serious social satire so I'm very interested in what they do next. However, I haven't laughed at most of the jokes, I find none of the characters interesting, and I don't think it's rational at all.
+
+As much as I like the third episode, a lot of that is just based on the ideas it tackles rather than the execution. I liked the conflicting values and rationalizations, but the arcs the characters went through were underwhelming. I also thought they made a significant misstep in the debate by never calling out the conservative argument as "do this to her or we will discriminate against her because of the way she was born".
+
+Instead, they just tried to find counterexamples to the opposition's stereotypes as if to prove the /value/ of the child rather than focusing on her /rights/. The fact that they never even mentioned trans and intersex people causes it to come across as "people who aren't minorities talking about the experience of minorities". Their heart is in the right place, but their understanding is unfortunately limited.
+
+I only have these nitpicks because I care so much about the message the show has and completely agree with it, but have spent so long addressing my own failings at comprehending the lives of people who've suffered in ways I never have and never will because of how they were born. I still /really/ like the episode as sci-fi political satire and can't wait to see what topics the show tackles next, but I won't call it "the modern Star Trek" just yet.
+:PROPERTIES:
+:Author: trekie140
+:Score: 7
+:DateUnix: 1506714233.0
+:END:
+
+**** Well, "most TV shows" is not a very high bar. More intelligent than the old Star Treks IMO. A lot of the arguments were terrible, but at least they tried with things like using a 3 legged person as an analogy. Them actually losing the debate is also another plus.
+
+I agree with you on the first and second, but the fourth gets better!
+:PROPERTIES:
+:Author: iemfi
+:Score: 3
+:DateUnix: 1506714947.0
+:END:
+
+
+**** I think the jokes are protection from the fox executives, who love cancelling promising SF dramas. Let the jokes pass over you and through you, and when they are gone, only Trek will remain.
+
+#+begin_quote
+  I also thought they made a significant misstep in the debate by never calling out the conservative argument as "do this to her or we will discriminate against her because of the way she was born".
+#+end_quote
+
+They also never mentioned that since both her parents live on a union ship, she's not going to be raised on their stupid planet anyway.
+:PROPERTIES:
+:Author: buckykat
+:Score: 1
+:DateUnix: 1506719274.0
+:END:
+
+***** As notorious as Fox is for cancelling sci-fi shows, they seem to have thrown an awful lot of money behind this one. I almost think the budget is too big at times, since there are so much CGI effects and cool-looking aliens that I worry they're shoehorning in aesthetic elements of Trek without bothering to integrate them into the story.
+
+I'm actually worried MacFarlane is behind the creative decisions I don't like since the show is basically his brainchild, for which he casted himself as the central character. Not necessarily because I don't like his work, it's possible he may just be out of his element since he's trying to launch a franchise that isn't a crude and rude comedy.
+
+The captain is probably my least favorite character because he's so generic. What was the point of the backstory about his divorce and the admiralty's reservations about promoting him if he's going to be a perfectly capable, responsible, and rational leader who gets along with everyone? Whenever he acts petty, it feels so forced.
+
+Part of me wishes that everyone would be bigger jerks to each other just so there'd be more comedy and personal conflict. I like that the show is trying to be a spiritual successor to Star Trek, but I was also hoping that it would parody elements of it. Wouldn't it be funny to see a Office-style workplace comedy on a spaceship where the crew are crazy/incompetent misfits that have to overcome petty issues between them in order to get anything done?
+:PROPERTIES:
+:Author: trekie140
+:Score: 3
+:DateUnix: 1506721588.0
+:END:
+
+****** I don't really care one way or the other about MacFarlane's previous stuff, except insofar as it might give him more leverage with the previously mentioned bastards in charge of Fox.
+
+#+begin_quote
+  Wouldn't it be funny to see a Office-style workplace comedy on a spaceship where the crew are crazy/incompetent misfits that have to overcome petty issues between them in order to get anything done?
+#+end_quote
+
+No, that would be the worst possible thing. Making it like the Office would kill it harder for purposes of my enjoyment than almost any other possible choice, with the possible exception of making it like BSG. I find the Office just about unwatchable from all the deliberate awkwardness played as if it were humor.
+
+And we've already seen the show, "take a well-loved SF franchise, fill it with incompetent assholes, and make it about their petty bullshit." It was called SG-U.
+:PROPERTIES:
+:Author: buckykat
+:Score: 2
+:DateUnix: 1506722682.0
+:END:
+
+******* ... but SGU was cool! :(
+
+(well, sometimes; there /was/ way too much petty bullshit in this series)
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 1
+:DateUnix: 1506738583.0
+:END:
+
+******** I quit watching when the petty bullshit intersected with the ftl comms and got super rapey
+:PROPERTIES:
+:Author: buckykat
+:Score: 1
+:DateUnix: 1506741810.0
+:END:
+
+********* Oh yeah, there was that. Ew.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 1
+:DateUnix: 1506742155.0
+:END:
+
+
+*** So, I took a glance at the first episode. And... I don't understand what I just saw. Yes, it's Star Trek... mostly. But completely lacking in taste. I get that it's being played for laughs, but juxtaposing the mundane with the wondrous... it's a cheap trick that adds nothing. I'd rather the time were used on actual world-building that adds to the narrative and sense of wonder of the rest of the show.
+
+I don't know what this show is trying to do yet, but the production values don't seem match mine. Contrast this with /Rick and Morty/, where the crass humor of the show adds to what the narrative is doing (or is it the other way around?) and makes it a better show.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 1
+:DateUnix: 1506754416.0
+:END:
+
+
+** Goddammit, Rick and Morty.
+
+This finale is so freaking disappointing. I feel super cheated.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 1
+:DateUnix: 1506926296.0
+:END:
+
+*** Yea, it was fairly wack.
+
+The president storyline was interesting enough. The other one was....not. Or at least its conclusion wasn't.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 1
+:DateUnix: 1507046066.0
+:END:

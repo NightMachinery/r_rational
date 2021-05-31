@@ -1,0 +1,249 @@
+#+TITLE: [D] Friday Off-Topic Thread
+
+* [D] Friday Off-Topic Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 18
+:DateUnix: 1507907242.0
+:END:
+Welcome to the Friday Off-Topic Thread! Is there something that you want to talk about with [[/r/rational]], but which isn't rational fiction, or doesn't otherwise belong as a top-level post? This is the place to post it. The idea is that while reddit is a large place, with lots of special little niches, sometimes you just want to talk with a certain group of people about certain sorts of things that aren't related to why you're all here. It's totally understandable that you might want to talk about Japanese game shows with [[/r/rational]] instead of going over to [[/r/japanesegameshows]], but it's hopefully also understandable that this isn't really the place for that sort of thing.
+
+So do you want to talk about how your life has been going? Non-rational and/or non-fictional stuff you've been reading? The recent album from your favourite German pop singer? The politics of Southern India? The sexual preferences of the chairman of the Ukrainian soccer league? Different ways to plot meteorological data? The cost of living in Portugal? Corner cases for siteswap notation? All these things and more could possibly be found in the comments below!
+
+
+** Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Short update this week.  It's been a busy week at work as we're rolling out the newest version of our product this Sunday, so the vast majority of my available time during the day has been dedicated to that, while my nights have been spent recovering by playing games or vegging.  
+
+Still, there's been a sliiiight amount of progress:
+
+[[https://i.imgur.com/UkrDtMI.gifv]]
+
+At the moment this is mostly separate from XGEF, and that is the first major revision on the to-do list, to get it to have the same functionality while pulling all the information (what species to allow, etc) from XGEF. This requires a fair amount of code to be written yet for it to work; the UnitSystem needs to be in place to define what a Unit is, something like a CombatSystem needs to actually resolve the fight, etc.
+
+Some time ago I put together a list of which pokemon to first represent, and I attempted to make sure that a wide range of types and archetypes were represented. [[https://docs.google.com/spreadsheets/d/1rYG4i_YitDGfOjquUFOxdI3Egt9DjsThsKiThXKnJ4g/edit?usp=sharing][You can view that list here]].  I'll be starting with a Charizard and a Rattata and getting the various systems in place before moving on with this, but every time I add something new it will be from this list.   Anything I missed?
+
+(If the types look off or totally wrong, note that types in Renegade are slightly different from canon; the biggest difference that's likely to throw people off is that Ground is being treated as a “tough Normal”, like a Beast type.  The actual earthy power moves are being moved into Rock.  At least, that was the design when this list was formulated, tho it has shifted even from there. At any rate, all figures are temporary ass-pulls, so don't take them as gospel /just/ yet.)
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  
+:PROPERTIES:
+:Author: ketura
+:Score: 9
+:DateUnix: 1507916268.0
+:END:
+
+*** Looking good!
+:PROPERTIES:
+:Author: callmesalticidae
+:Score: 3
+:DateUnix: 1507937068.0
+:END:
+
+
+** Nanowrimo's coming up. I'm considering doing it, providing I can think of a good enough novel idea. Does anyone who's done it before have any tips? I have some experience writing on a set schedule (the fic in my signature was updated weekly pretty consistently until I finished it) but I'll need to spit out roughly 600% more writing per week.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 8
+:DateUnix: 1507919559.0
+:END:
+
+*** - Write every day.
+
+- Don't stop when you've hit your word goal for the day, stop when you are out of time to write. You need high output days to make up for low output days.
+
+- Editing is for December.
+
+- Research and planning is for October.
+
+- If you are bored while writing, maybe that thing didn't need to be written.
+
+- It can be good to end the chapters on a cliffhanger and then switch point of view, which gives you some time off from that thread to think about things.
+
+- If you don't have time to write, you might still have time to write things out in your head (e.g. during a long commute).
+
+Edit: [[https://www.reddit.com/r/rational/comments/7695ay/dbst_national_novel_writing_month/][See also this post,]] which has completely different advice from me, focused more on planning.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 13
+:DateUnix: 1507921310.0
+:END:
+
+**** #+begin_quote
+  It can be good to end the chapters on a cliffhanger and then switch point of view, which gives you some time off from that thread to think about things.
+#+end_quote
+
+Not commenting on the other points, but I always hated when books did this. It feels like the resolution is being dangled in front of your nose, and by the time you do reach the chapter in which it's being revealed, you often don't even care about the whole thing that much any more.
+
+And that's when this technique is used mildly. When it's downright abused, you just stop caring about the whole story altogether because it'll just exploit your invested interest if you do.
+
+That's my personal experience with that, at least.
+:PROPERTIES:
+:Author: OutOfNiceUsernames
+:Score: 3
+:DateUnix: 1507993843.0
+:END:
+
+***** I generally think it's not a great way to structure a book from an artistic standpoint, but it can make the writing easier, and I would assume that its popularity with pulp authors indicates that it /works/, even if the audience doesn't particularly like it. It's crass manipulation, but sometimes that's enough.
+
+I mostly say it /here/ because I think it can be good for writers who want to focus on output, and leaving yourself obvious hooks to write from can help with that.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1508014625.0
+:END:
+
+
+*** Personally, I work best when I'm working from a detailed outline, but YMMV. If you don't know whether or not it works for you, though, then I suggest that you try it, because you're allowed to outline before Nano starts.
+:PROPERTIES:
+:Author: callmesalticidae
+:Score: 5
+:DateUnix: 1507937019.0
+:END:
+
+
+*** Links to this subreddit's past NaNoWriMo threads are [[https://www.reddit.com/r/rational/wiki/nanowrimo][here]].
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 4
+:DateUnix: 1507930363.0
+:END:
+
+**** That reminds me that I haven't posted a thread like that this year, [[https://www.reddit.com/r/rational/comments/7695ay/dbst_national_novel_writing_month/][which I just did.]]
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1507943485.0
+:END:
+
+
+** I'm curious about your opinions on the mission of MIRI, and what you think about [[/u/EliezerYudkowsky]]. Is making progress on AI friendliness really an important issue? Do you think it's a real problem? Do you donate to MIRI?
+
+I've recently been working through depression and I've managed to reach a point where I can be curious about things again. And... life now seems a bit positive. Although I'm not happy yet, I can see that I can be eventually. And so now, possible existential threats are a relevant concern to me. They sort of /feel scary/, in a way they weren't before, when I didn't feel like life was worth living. I guess now that I have [[http://lesswrong.com/lw/nb/something_to_protect/][something to protect]], I want to learn more about this. If you don't care about MIRI, then you could talk about other things you think might be an existential threat. Let's have a discussion, shall we?
+:PROPERTIES:
+:Score: 6
+:DateUnix: 1507921766.0
+:END:
+
+*** Yudkowsky has his quirks and character flaws, like an apparent inability to realize that /drawing attention to the thing you don't want people to talk about is counterproductive./ (Off the top of my head there's Roko's Basilisk, but more recently there was /Neoreaction A Basilisk/), but I don't think he's a cult leader or even trying to be a cult leader and if he's a little too focused on AI to the expense of everything else, well, Brian Tomasik is probably overly focused on things too, and we're probably better off having a variety of people who are too focused on things, so that we can evaluate their work and, maybe, adjust in that direction.
+
+I do think that AI friendliness is a problem, but I'm not sure how useful MIRI. Preferably, we would have a variety of MIRI-like groups working on the problem so that we could compare them, but at the moment MIRI is, to my knowledge, sort of like a yardstick in a world without anything else: we could conceivably use MIRI to judge whether another organization is better or worse than MIRI, but I'm not aware of any other organizations that would fit in this sector.
+:PROPERTIES:
+:Author: callmesalticidae
+:Score: 14
+:DateUnix: 1507936675.0
+:END:
+
+
+*** I'd like to point out that MIRI, EY, and AI alignment in general are three separate things, and that it's entirely possible to have opinions on (and discussions about) any of the three on their own, independently of each other. I don't think bundling questions about all three into a single Reddit comment is a good way to go about doing that, however.
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 12
+:DateUnix: 1507941435.0
+:END:
+
+
+*** As another commenters said, these are three separate issues with some common points.
+
+Without HPMOR it may have taken me significantly longer to break out of my fundamentalist Christian mindset, so I guess I owe EY one for that (I can elaborate more on this if you are interested). In general... I think EY has done a good job shifting the conversation so that some people are actually taking super intelligent AI seriously. I think EY has over-hyped himself somewhat... for instance, his response to Roko's basilisk and the internet flamewars he has gotten into over his response to it (for instance after XKCD made a joke about it), it is kind of counterproductive, I have a hard time understanding how he can make "learning to lose" a key morale of HPMOR and then waste the effort/reputation on continuing to fight a battle that isn't worth his time.
+
+In general, I don't think the hard-takeoff scenario (recursive self-improvement in an exponential fashion) particularly likely... but it is catastrophic enough to be worth being aware of. However, I also recognize that a strongly super intelligent AI could still be an existential threat even without a hard-takeoff in self-improvement, and even non-super intelligent AI could still be a problem if it had sufficient resources and it wasn't aligned with human values. So I think in general "friendliness"/human-value alignment is a worthwhile problem, however the number of unknown unknowns related to it makes it difficult to properly address right now.
+
+As for MIRI's work... well actually I haven't read any of their papers in the last few years. From the last time I did read through their work... it seemed they were focusing on mathematical formalisms that the think will be relevant to friendly AI. My problem with this was that it is kind of assuming that the first AI capable of self-improvement would fit into the constraints and assumptions of their mathematical formalisms. I wasn't really sure how to evaluate their claims at the time, and their publication rate looked kind of low. Looking at their website now, it seems like they've picked four categories to focus on and explained why the think those categories are meaningful to friendly AI. Their rate of publication also seems better, and they've actually gotten a few things published (besides internal publication and conference papers). So at worse they are at least as productive as academics working on abstract mathematics and/or philosophy. At best, some of their ideas will actually prove relevant to an actual AI.
+:PROPERTIES:
+:Author: scruiser
+:Score: 9
+:DateUnix: 1507957627.0
+:END:
+
+**** Sounds like an overall positive then, even if you might disagree with their methods. I think I pretty much agree with you here.
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1507971455.0
+:END:
+
+
+*** I think MIRI is an organization worth supporting, and have seen nothing from EY that makes me dislike or distrust or consider him unfit for his jobs or hobbies. I've donated to them in the past but don't actively donate on any set schedule.
+
+AI friendliness is a real concern that I am glad people are working on. I don't know if it's the top concern in the world, but it's certainly top 3 for things that are likely to make life not worth living on the planet by our modern standards, and the /only/ concern that might end up wiping out life on earth (or beyond) for good.
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 7
+:DateUnix: 1508023301.0
+:END:
+
+
+*** HPMOR was my introduction to rationality and, by extension, Yudkowsky and AI Theory. As such, I hold the same opinion of Yudkowsky as I do of HJPEV. I believe he is a very intelligent and creative person who I can learn a lot from, particularly about the act of learning and thinking critically about what you think you know. He has occasionally come across as arrogant and I fundamentally disagree with him on many subjects he's spoken about, but I will always admire him for what he's given me and the abilities he has.
+
+I don't know much about MIRI other than its goals, but I do believe that it is pursuing a goal that has value. The only reasons I could find myself disagreeing with its activities are the same reasons I sided with Hanson in his debate with Yudkowsky about the Singularity, all presumptions about how AI will work are speculative since we do not yet understand how intelligence works and Hanson's theory of mind lines up more with my intuition.
+
+I think the debate over AI is basically the same debate as which interpretation of quantum mechanics is correct. We do not yet have the evidence to draw definitive conclusions on how it works, but all adequately explain the evidence we can currently observe so any scientific research into the subject is bound to yield results that everyone will find valuable. I would prefer Yudkowsky didn't talk about the AI Foom or Many-Worlds as if they were the obvious rational conclusions to form, but I don't think that would make any evidence he gathers less useful.
+:PROPERTIES:
+:Author: trekie140
+:Score: 8
+:DateUnix: 1507923834.0
+:END:
+
+**** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1507926087.0
+:END:
+
+***** Ok, are you linking to a thread where things appear to have been deleted and... huh?
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1507937002.0
+:END:
+
+****** ceddit says they've been likely deleted by AutoModerator, but what's your question?
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 3
+:DateUnix: 1507943917.0
+:END:
+
+
+*** Briefly: I think EY is a fraud, MIRI is a scam, and AI friendliness is not an important concern.
+
+If what you really wanted was a discussion about existential threats, I'm afraid I'm fresh out.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 6
+:DateUnix: 1507968465.0
+:END:
+
+
+** I just finished watching the dubbed version of the romcom anime Gamers!, and while I liked it quite a bit I wonder if I missed something. [[https://youtu.be/NNS9UcKMa5U][Mother's Basement gave it a glowing recommendation halfway through the season]] that I finally followed up on last week, and it turned out to be just as funny and surprisingly relatable as he said it would be...until the conclusion of each romantic arc.
+
+I was totally invested up to that point, laughing and (almost) crying at the clever references to nerd culture and ever more absurd misunderstanding and machinations resulting from the characters' insecurities and overthinking, but once the two main couples overcoming the obstacles between them I found myself underwhelmed. Shouldn't I have been more satisfied to see them get together and episodes after that more?
+
+To be clear, I still highly recommend this show as a comedy about both gamers and teenagers in love. The conflict and humor is based around miscommunication, but it's /done right/ in a way I've never seen before. You really do connect with the characters' doubts about whether their crush likes them back and how that fear turns them stupid, while also being really funny to watch. I just want to know if there was something just as good about the last third of the season I failed to notice?
+:PROPERTIES:
+:Author: trekie140
+:Score: 4
+:DateUnix: 1507926270.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1507944887.0
+:END:
+
+*** Are these based on the same polls that gave him a negligible chance of winning? Because 54% to win the primary seems way too low. Given that Trump has kept his administration very closely in line with his campaign promises, I think the sides for and against him haven't shifted very much. The same people who strongly supported him originally and voted for him are happy with what he's been doing and will vote for him again, and the people who strongly opposed him originally and voted against him still oppose him and will vote against him again.
+
+I think a number of moderates will shift in his favor as the media fearmongering loses its grasp and they see he's not Hitler, or racist/sexist/homophobic.
+
+Rather than looking at it in a vacuum, look at it in comparison to the previous election. He had all sorts of opposition from the left and the media and won anyway, nothing has changed to make his position weaker, so whatever forces caused him to win before will carry him again.
+
+The general election is a slightly different story. If the democrats put up someone less awful than Hillary Clinton then they'll have more support, as many Trump voters voted for him as the lesser of two evils rather than that they actually liked him. But as long as no disasters occur during the next three years that can be attributed to Trump, his chances will be higher than they were the first time around.
+:PROPERTIES:
+:Author: hh26
+:Score: 2
+:DateUnix: 1508010096.0
+:END:

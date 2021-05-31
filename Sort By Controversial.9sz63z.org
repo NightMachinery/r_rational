@@ -1,0 +1,752 @@
+#+TITLE: Sort By Controversial
+
+* [[http://slatestarcodex.com/2018/10/30/sort-by-controversial/][Sort By Controversial]]
+:PROPERTIES:
+:Author: wtfbbc
+:Score: 122
+:DateUnix: 1540995684.0
+:END:
+
+** I sort by controversial a lot, and most of what you get is:
+
+- People being really self-righteous
+- Low-effort statements (which I imagine are upvoted by people who are upvote-happy, and downvoted as useless noise)
+- People who were initially upvoted, then downvoted due to shifting opinions with increased views and/or being called out.
+- People with opinions that go against the hivemind for that subreddit
+
+Also, this:
+
+#+begin_quote
+  You can also generate titles that will get maximum downvotes, but this is boring: it will just say things that sound like spam about penis pills.
+#+end_quote
+
+Is wrong. Spam gets downvoted until it's below the threshold for views, then no one sees it or feels compelled to vote on it. The /actual/ most downvoted posts are those that get linked from elsewhere ("brigaded"), driving people to come in specifically to downvote.
+
+For more, visit [[/r/TheoryOfReddit]].
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 82
+:DateUnix: 1541010967.0
+:END:
+
+*** And the most most downvoted posts are when some powerful entity tries to justify something that a lot of people are upset about, like "sense of pride and accomplishment" and whatever the admins say when a new round of major subreddits is banned.
+:PROPERTIES:
+:Score: 29
+:DateUnix: 1541026435.0
+:END:
+
+
+*** #+begin_quote
+  People with opinions that go against the hivemind for that subreddit
+#+end_quote
+
+Also opinions that go against the hivemind of the wider Western civilisation/culture in general. Or even broader than that, against the hivemind of humankind.
+:PROPERTIES:
+:Author: OutOfNiceUsernames
+:Score: 12
+:DateUnix: 1541032417.0
+:END:
+
+**** [[https://en.wikipedia.org/wiki/Overton_window]]
+:PROPERTIES:
+:Author: Rice_22
+:Score: 10
+:DateUnix: 1541036716.0
+:END:
+
+
+**** And that guy on me_irl with the "You may upvote this post, but only if you downvote my comment."
+:PROPERTIES:
+:Author: IntPenDesSwo
+:Score: 5
+:DateUnix: 1541050462.0
+:END:
+
+
+*** Also a lot of bigotry, especially in default subreddits.
+:PROPERTIES:
+:Author: theonewhogroks
+:Score: 3
+:DateUnix: 1541020025.0
+:END:
+
+
+*** The downvote system is just so bullshit, really. The fact that you get automatically flagged for getting too much negative "karma" in a subreddit and have to wait 10 minutes between posts is rather annoying.
+
+Much rather they do away with it entirely and just have an upvote system, or have a downvote system that actually doesn't do anything. That way, all the "unpopular" posts just naturally sink to the bottom by all the upvoted posts. Also have a report system for actual spambots.
+:PROPERTIES:
+:Author: Rice_22
+:Score: -2
+:DateUnix: 1541037253.0
+:END:
+
+**** You want Facebook's thumbs up only system?
+:PROPERTIES:
+:Author: Llihr
+:Score: 9
+:DateUnix: 1541046085.0
+:END:
+
+***** I don't really care if it's similar to Facebook, I just don't like downvotes being an effective "disagree button" that censors unpopular opinions.
+:PROPERTIES:
+:Author: Rice_22
+:Score: 9
+:DateUnix: 1541058207.0
+:END:
+
+****** As I said many times elsewhere, there should be several buttons - one for "I disagree," one for "this is spam," one for "this doesn't contribute," one for "this makes me mad," etc. That way spammers get a cooldown and unpopular opinions can get seen by those who don't like echo chambers.
+:PROPERTIES:
+:Author: appropriate-username
+:Score: 5
+:DateUnix: 1541283783.0
+:END:
+
+******* A certain percentage of people would always choose the type of downvote that harms the account the most.
+
+E.g. if "I disagree" and "this makes me mad" only change the points of a given comment, but "this doesn't contribute" results in the well-known "wait 10 minutes to comment again", they will always choose the latter. And if "this is spam" flags from 5 different accounts result in a 24 hour ban, then they will choose that one.
+
+And those people are also the kind of people who vote the most.
+:PROPERTIES:
+:Author: trilateral1
+:Score: 1
+:DateUnix: 1541872351.0
+:END:
+
+******** Sure but even so, my system is strictly better than the current one because in the current one, that chance is 100%.
+
+You gotta start improving the system somewhere. The perfect is the enemy of the good.
+:PROPERTIES:
+:Author: appropriate-username
+:Score: 1
+:DateUnix: 1541872979.0
+:END:
+
+********* Any "improvement" has to take into account that people will game the system.
+
+#+begin_quote
+  The perfect is the enemy of the good.
+#+end_quote
+
+The road to hell is paved with good intentions.
+:PROPERTIES:
+:Author: trilateral1
+:Score: 1
+:DateUnix: 1541873884.0
+:END:
+
+********** How will the people game the system? Worst case scenario in my system is what already happens currently.
+:PROPERTIES:
+:Author: appropriate-username
+:Score: 1
+:DateUnix: 1541874884.0
+:END:
+
+
+***** Reddit is quite different outside of voting on comment mechanics. I don't think removing down votes would turn reddit into Facebook
+:PROPERTIES:
+:Author: RMcD94
+:Score: 2
+:DateUnix: 1541078169.0
+:END:
+
+
+** #+begin_quote
+  Any predictive network doubles as a generative network. If you teach a neural net to recognize dogs, you can run it in reverse to get dog pictures. If you train a network to predict Reddit upvotes, you can run it in reverse to generate titles it predicts will be highly upvoted. We tried this and it was pretty funny. I don't remember the exact wording, but for [[/r/politics]] it was something like “Donald Trump is no longer the president. All transgender people are the president.” For [[/r/technology][r/technology]] it was about Elon Musk saving Net Neutrality.
+#+end_quote
+
+That would be a fun little time-waster if someone put one of these up on the web with a public interface.
+:PROPERTIES:
+:Author: LLJKCicero
+:Score: 25
+:DateUnix: 1540998274.0
+:END:
+
+*** There's already [[https://www.reddit.com/r/SubredditSimulator/][SubredditSimulator]] - which is a simple Markov chain implementation. Some of it's most upvoted posts tend to be fairly similar to this sort of thing.
+:PROPERTIES:
+:Author: Escapement
+:Score: 24
+:DateUnix: 1541004631.0
+:END:
+
+
+** 4chan is a brute-force Scissor Statement generator.
+:PROPERTIES:
+:Author: btown-begins
+:Score: 20
+:DateUnix: 1541029002.0
+:END:
+
+*** So is the 2016 US Presidential election.
+:PROPERTIES:
+:Author: chris-goodwin
+:Score: 5
+:DateUnix: 1541029625.0
+:END:
+
+
+** Wow. Wow. Wow. That was just... far too plausible for my taste. Delightfully scary story for Halloween.
+:PROPERTIES:
+:Author: TrebarTilonai
+:Score: 12
+:DateUnix: 1541020177.0
+:END:
+
+*** If it helps... It's not really very plausible. If anything, the most plausible part was the comment about it showing past events, but written from the perspective of a non-data scientist who entirely forgot about how their model was definitely overfitting the data.
+:PROPERTIES:
+:Author: nicholaslaux
+:Score: 16
+:DateUnix: 1541075639.0
+:END:
+
+**** I should rephrase. The technical details about how the Scissors function don't make a lot of sense. I don't have a lot of experience with machine learning, but I'm pretty sure you can't just reverse a predictive network to generate content.
+
+That being said, I found this to be an interesting take on the human psychology of controversial statements and how it interacts with society at large. I am a strong believer that most people are fundamentally decent and that most controversial is the result of a differing set of fundamental axioms which, when applied to current events, result in massively differing opinions. The tribal nature of an us-vs-them mentality which can be seen so strongly in modern day politics also comes into play. So the idea that there exist basic statements that seem either fundamentally correct or fundamentally incorrect based on your initial set of axioms makes sense to me, and the idea that that would quickly devolve into escalation based on which side of the fence you fall is plausible.
+:PROPERTIES:
+:Author: TrebarTilonai
+:Score: 7
+:DateUnix: 1541092038.0
+:END:
+
+***** you can, actually. it takes a little bit of tinkering, but this is actually a technique which was developed in order to inspect what was actually happening inside image recognition networks. look up "deep dream" to see examples of images generated by networks originally designed and trained to detect and classify images.
+
+no comment on the rest though, I felt like the effect described in the story was a little too extreme to be realistic. good halloween story overall though.
+:PROPERTIES:
+:Author: silver7017
+:Score: 9
+:DateUnix: 1541146202.0
+:END:
+
+
+** What is your most controversial comment? reddit.com/user/<username>/?sort=controversial
+
+Mine is a post starting "What do you think of the statistical claim that police killings are equivalent for blacks and whites, once you account for police encounter rate?"
+
+Third most controversial is a post saying suicide bombers are not cowardly.
+:PROPERTIES:
+:Author: FeepingCreature
+:Score: 20
+:DateUnix: 1541007924.0
+:END:
+
+*** My most controversial post is me asking people in the subreddit I moderate to act like human beings, which actually doesn't surprise me.
+
+My second most controversial comment is me stating my opinion on Adnan Syed's prison sentence:
+
+#+begin_quote
+  Even if he's guilty, the sentence was far, far too long for the crime in my opinion. I mean yes, a human being is dead, and there are few tragedies that can compare to that, but justice shouldn't be about punishment, it should be about rehabilitation and whether the perpetrator is a threat to the community.
+#+end_quote
+
+Which is apparently a Shiri Scissor because I still 100% stand behind that and can't fathom how someone would think differently!
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 21
+:DateUnix: 1541023652.0
+:END:
+
+**** Crash Course discusses some of the other opinions. [[https://youtu.be/H0CTHVCkm90?list=PL8dPuuaLjXtNgK6MZucdYldNkMybYIHKR&t=400]]
+
+While we consider anger as just an indication that something needs to be changed, others take anger much more literally. People who want Revenge for something that's happened to them won't be satisfied with a gentle rehabilitation.
+:PROPERTIES:
+:Author: causalchain
+:Score: 3
+:DateUnix: 1541057450.0
+:END:
+
+***** I think Penn Jillette said it great:
+
+(paraphrasing) "If someone killed a member of my family, you can bet that I would be furious. I would want to kill them with my bare hands and yell and scream at them for what they did to my loved one. But the point of having a society is that we are better than a mere sum of our parts, that we aren't just angry monkeys murdering each other because we can set rules in our rational moments. So even though I'd want to kill that motherfucker, it makes me very, very happy that society would hold me back from it."
+
+But yeah, I know other people have different opinions. I guess I have trouble relating to vengence, which is weird as I've got a very vengeful/spiteful sort of attitude IRL
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 9
+:DateUnix: 1541068116.0
+:END:
+
+
+**** #+begin_quote
+  Which is apparently a Shiri Scissor because I still 100% stand behind that and can't fathom how someone would think differently!
+#+end_quote
+
+[[/r/changemyview]]
+:PROPERTIES:
+:Author: appropriate-username
+:Score: 1
+:DateUnix: 1541284032.0
+:END:
+
+
+*** #+begin_quote
+  There is an argument that people going through that have a whole lot of shit on their plates, and being reminded of that shit during a game would be jarring and make the game unenjoyable.
+
+  The solution is to remove the cards you don't like from the game.
+#+end_quote
+
+This concerns Cards Against Humanity. I guess I don't generally say controversial shit.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 8
+:DateUnix: 1541008502.0
+:END:
+
+
+*** ... I said good things about DDLC/Undertale crossovers on a post complaining about it.
+
+Yeah, should have expected that.
+:PROPERTIES:
+:Author: PurposefulZephyr
+:Score: 9
+:DateUnix: 1541017424.0
+:END:
+
+
+*** Mine was answering why Last Man Standing was getting a revival when Brooklyn 99 got canned at Fox, that there were plenty of people who "just wanted safe conservative white people humor." with the posted source that "my (soon to be) ex-wife ate it up, alongside crappy reality shows and Angry Birds."
+
+In retrospect, my view may have seemed (been) /slightly/ biased towards my then active frustration and resentment towards said ex-wife.
+:PROPERTIES:
+:Author: Ulmaxes
+:Score: 8
+:DateUnix: 1541014759.0
+:END:
+
+
+*** Use this link to find your own!
+
+[[https://www.reddit.com/user/me/?sort=controversial&t=all]]
+
+--------------
+
+#+begin_quote
+  Speech is violence. You may respond to violence with violence. Therefore, it's okay to punch someone if they're talking.
+#+end_quote
+
+[[https://www.reddit.com/r/pics/comments/6urk3i/boston_today/dlv3sxh/?context=33][1]]
+
+#+begin_quote
+  boy: "I wish I could find a girl with the same fanatical attention to the minutiae of the NFL that myself and my friends have"
+
+  girl: "I enjoy watching the games."
+
+  boy: "That's nice, but not what I'm talking about.
+
+  "/Lots/ of people (both men and women) enjoy watching sports, I'm looking for someone to geek out with over obscure details, get engaged in meaningless debates over trivial history, and debate the long-term narratives that the sports media creates to make "rivalries" and "trends" (that are just [[https://xkcd.com/904/][random numbers]]) with me.
+
+  "So far, I've only found about half a dozen people like this (who are all men), and I'd like to meet a woman who fits seamlessly into that group as an equal."
+#+end_quote
+
+[[https://www.reddit.com/r/gatekeeping/comments/5h643g/my_life_as_a_female_nfl_fan/daxxp7t/?context=3][2]]
+
+#+begin_quote
+
+  #+begin_quote
+    positions of power
+  #+end_quote
+
+  Positions of power /over what/? The ability to shut down an entire department doesn't discriminate based on gender, but the ability to hire one person does.
+#+end_quote
+
+[[https://www.reddit.com/r/science/comments/68znfd/men_in_the_middle_east_slow_to_embrace_gender/dh3dzik/?context=10000][3]]
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 5
+:DateUnix: 1541027760.0
+:END:
+
+
+*** My most controversial comment was telling some people complaining Patrick Rothfuss isn't dedicating 100% of his time to writing the next kkc book to take it down a few notches.
+
+Second most controversial one is me not buying into the idea that 4 dimensionsal creatures are automatically terrifying to those of us stuck in 3 dimensions.
+:PROPERTIES:
+:Author: Silver_Swift
+:Score: 6
+:DateUnix: 1541025995.0
+:END:
+
+
+*** This post:
+
+​
+
+#+begin_quote
+  *Assuming we are in a simulation. Would time travel be possible?*
+
+  Physics tells us that we can't do it. But if we are in a simulation, should it not be possible to at least go back inside it
+
+  (even if it's just to watch events and not change anything).
+
+  Unless the computer is autodeleting the data and just keeping the data from this exact moment, should we not be able to?
+
+  Assuming it isn't against the simulation rules.
+
+  We seem to only be worried about finding out if we are real, but we are not taking into consideration the possibilities such thing would create for us.
+#+end_quote
+
+​
+
+Angry comments about historical combat with people who think movies, games and tv shows are accurate representations of our history..
+
+​
+
+This post:
+
+#+begin_quote
+  *Why did the ancients all around the world prefer not to wear pants?*
+
+  Greece, Rome, Egypt, Minoans, Ancient Israeli, Ancient Chinese, Ancient Indians.
+
+  Even after they knew about pants, they still saw them as uncivilized, barbaric and ridiculous.
+
+  Was it just stubborn tradition?
+
+  Were they just clinging to a sense of uniqueness?
+
+  BTW we have this image of man on the ice age wearing pants, is that actually not true? Were they wearing robes even in the cold?
+
+  If they were wearing pants then, to protect against the cold, shouldn't traditional clothing have been pants all over the world?
+
+  Why would they lose that custom seemingly for no reason and start wearing robes?
+#+end_quote
+
+​
+:PROPERTIES:
+:Author: fassina2
+:Score: 4
+:DateUnix: 1541024110.0
+:END:
+
+**** Edit: removed. :)
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 1
+:DateUnix: 1541036483.0
+:END:
+
+***** #+begin_quote
+  This seems interesting, so I went and found it. First, it's not your most controversial post (though I don't really care about that), and second, saying:
+#+end_quote
+
+I guess I wasn't clear? My bad, anyway, I picked 2 posts and one/a few comments I shortened here for brevity.. That was 1 post, medieval whatever was one or a couple comments (Not related to either of these posts), and the pants thing was another post.
+
+The comment part I talked is actually my most controversial post / comment.
+:PROPERTIES:
+:Author: fassina2
+:Score: 1
+:DateUnix: 1541038459.0
+:END:
+
+****** Then my mistake. I'll get rid of my previous comment.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 1
+:DateUnix: 1541047373.0
+:END:
+
+
+*** Unsurprisingly, all political except for a comment on subredditdrama. Surprisingly, none I'd realized were polarizing, because I didn't have the controversial tag on.
+
+One against the term emotional labor, two defending Jill Stein, one pointing out that Obama didn't call everyone he disliked racist.
+:PROPERTIES:
+:Author: ThatDarnSJDoubleW
+:Score: 2
+:DateUnix: 1541024456.0
+:END:
+
+
+*** A comment on one of the early chapters of EY's /Inadequate Equilibria/:
+
+#+begin_quote
+  Is Inadequate Equilibria an elaborate way for EY to come out as a neoreactionary? Decisionmakers having skin in the game, sovereignty and exit, (meta-)competition, the downsides of majority rule incentives, the inability of current systems to create coordination...the only thing missing is that magical word: "selection". Unless his answer is "FAI will solve all of this", where else could he be going? In any case, can't wait to see where this ends up.
+#+end_quote
+:PROPERTIES:
+:Author: lunaranus
+:Score: 4
+:DateUnix: 1541025595.0
+:END:
+
+
+*** Mine was
+
+#+begin_quote
+  A child lying on the ground after being ran over by something with all of it's insides splattered on the ground.
+#+end_quote
+
+It was in response to a user asking what a certain video was about.
+:PROPERTIES:
+:Author: mp3max
+:Score: 3
+:DateUnix: 1541030665.0
+:END:
+
+
+*** World politics. Enough to get me and dozens of others banned from multiple subreddits for being uncivil.
+
+It was fun.
+:PROPERTIES:
+:Author: Rice_22
+:Score: 5
+:DateUnix: 1541068313.0
+:END:
+
+
+*** #+begin_quote
+  "the best way not to be outsmarted was not to *play the game*"
+
+  ARGH! I just lost the game!
+
+  Ha, ha, ha...I'm just joking, I don't actually play the game, but was that a reference to it?
+#+end_quote
+
+I was reading chapter 19 of /Lighting Up the Dark/ when it was posted here and thought Velorien put in a reference to the game-meme. It turns out that they were referencing the quote "the only winning move is not to play".
+
+I got down-voted for me making other people lose the game. Thanks for bringing up the game, /again/.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 7
+:DateUnix: 1541015993.0
+:END:
+
+
+*** Nothing all that interesting, just jokes that fell flat.
+:PROPERTIES:
+:Author: nipplelightpride
+:Score: 3
+:DateUnix: 1541020141.0
+:END:
+
+
+*** I'm not very controversial. Most of it is in [[/r/NBA]], but I've got a terrible joke in number 1 and a complaint about "The Bucket List" at number 2
+:PROPERTIES:
+:Author: ProfessorPhi
+:Score: 3
+:DateUnix: 1541038602.0
+:END:
+
+
+*** My most controversial posts mostly (seven out of the top eight) come from a single debate on religion, though there is a post denigrating cheating in a mobile game coming in third.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 3
+:DateUnix: 1541062613.0
+:END:
+
+
+*** My most controversial was about how Bernie really wasn't that close to winning the primary and that most democratic voters wanted Hillary, and she didn't win because of a secret cabal or conspiracy, she won because she was the more popular candidate.
+
+My third most controversial comment was saying that men's opinions on whether or not abortion should be legal were as valid as women's opinions. I also pointed out that since men and women have nearly the same proportional views on abortion, believing this doesn't change the national discussion on abortion 1 iota.
+
+If you asked me to guess from a list of which of my comments would be the most controversial, those two would certainly be up there.
+:PROPERTIES:
+:Author: DangerouslyUnstable
+:Score: 6
+:DateUnix: 1541016784.0
+:END:
+
+
+*** Mine was an old political post during the 2016 election pointing out that the media reported on things very differently between the candidates.
+
+"Trump says a mean thing" gets the same coverage as "Hillary violated federal campaign finance laws"
+:PROPERTIES:
+:Author: Terkala
+:Score: 4
+:DateUnix: 1541053227.0
+:END:
+
+
+*** 1st) On a meme on the subreddit for an alternate history mod of a WW2 video game (Kaiserreich), saying that Sir Oswald Mosley makes a better queen for a Kaiserreich themed chess image than Rosa.
+
+3rd) On another Kaiserreich meme, a post which was just the word "WE"
+
+4th) (First non-Kaiserreich example), a post saying small ships in star wars (x-wings and the like) have always been disproportionately good for the presumed resource investment compared to capital ships, so while TLJ made that worse with lightspeed kamikaze it was an expansion on an existing plot hole.
+:PROPERTIES:
+:Author: hailcapital
+:Score: 2
+:DateUnix: 1541104862.0
+:END:
+
+
+*** Mine was complaining about insults and saying that hacking is helpful because it exposes vulnerabilities, basically saying that lulzsec aren't terrible monsters.
+
+[[https://www.reddit.com/r/gaming/comments/hzvuc/please_stop_thinking_that_lulzsec_was_ever_trying/c1zqmsk/]]
+:PROPERTIES:
+:Author: appropriate-username
+:Score: 2
+:DateUnix: 1541284306.0
+:END:
+
+
+*** Post saying Ender Game was trash.
+:PROPERTIES:
+:Author: melmonella
+:Score: 5
+:DateUnix: 1541012988.0
+:END:
+
+**** Shut up and take my downvotes!
+:PROPERTIES:
+:Author: causalchain
+:Score: 6
+:DateUnix: 1541071514.0
+:END:
+
+
+**** The book or the movie?
+:PROPERTIES:
+:Author: DangerouslyUnstable
+:Score: 1
+:DateUnix: 1541197925.0
+:END:
+
+***** Both, to an extent, though movie much more so.
+:PROPERTIES:
+:Author: melmonella
+:Score: 1
+:DateUnix: 1541245679.0
+:END:
+
+****** Movie was trash, I agree there. But while the book was by no means perfect, it's one of the best sci fi novels to come out in a long time. And I actually think it's one that should appeal to most rationalist readers (given a little willingness to buy into conceits of the universe, like the fact that their training station is the best way to train military genius'). None of the bad guys have irrational goals or desires (besides the normal irrationality of hormonal teenagers), people mostly take actions that, within the rules of the universe, help their goals. A lot of the psychology that underpins the novel is sketchy at best, but that's the type of thing I'm willing to give a book as long as it remains relatively consistent within it's own universe. Plus it has an interesting example of orange-blue morality with the buggers not being able to comprehend that individuals are moral beings worthy of consideration
+:PROPERTIES:
+:Author: DangerouslyUnstable
+:Score: 1
+:DateUnix: 1541260450.0
+:END:
+
+******* Book was okay. I can't say it's best sci fi or even great sci fi frankly. I suppose the amount of things they just want you to take on faith was too much for me. If you can stomach that many conceits, like the fact that Ender family somehow birthed not one, not two, but three geniuses that are somehow superhuman in ability then I suppose it would seem better.
+:PROPERTIES:
+:Author: melmonella
+:Score: 1
+:DateUnix: 1541269317.0
+:END:
+
+******** That's one of the least controversial things I think. Intelligence is one of the more inheritable, genetically linked traits we know of. It's something you wouldn't necessarily expect in real life, but there are way more unrealistic things in the book than that.
+:PROPERTIES:
+:Author: DangerouslyUnstable
+:Score: 1
+:DateUnix: 1541269676.0
+:END:
+
+********* To be a genius, let alone a superhuman genius, you need luck in addition to intelligence. Genes can move the mean of the Gaussian to the right, but then you also have to luck into being a couple sigmas to the right of that. Their parents aren't superhuman either.
+
+I dunno, it just seemed that Ender family was better than every other human for entirely plot reasons.
+:PROPERTIES:
+:Author: melmonella
+:Score: 1
+:DateUnix: 1541270005.0
+:END:
+
+
+****** If you thought Ender's Game was trash, what do you think is good?
+:PROPERTIES:
+:Author: GeneralExtension
+:Score: 1
+:DateUnix: 1541262381.0
+:END:
+
+******* Wasn't aware it's some kind of universal maximum of book quality everything else is compared to. I find lots of things good, just not this one.
+:PROPERTIES:
+:Author: melmonella
+:Score: 1
+:DateUnix: 1541269457.0
+:END:
+
+******** It's not universal - I have read better books. But, while it could be a matter of taste, it could also be the result of higher standards. I'm interested because as far as I know there /isn't/ a maximum, so when someone says they don't like a book I like, maybe they've been reading /much/ better books - and I am very interested in reading those.
+:PROPERTIES:
+:Author: GeneralExtension
+:Score: 1
+:DateUnix: 1541292263.0
+:END:
+
+********* Well, the usual stuff from here. Hpmor, Metropolitan Man I'd say. As far as more classical sci fi goes, Asimov is pretty excellent. I dunno why EG fell so flat for me when it's apparently considered good by other people - maybe I just didn't get into the main character.
+:PROPERTIES:
+:Author: melmonella
+:Score: 1
+:DateUnix: 1541294067.0
+:END:
+
+********** I think it's popular because it does some things that aren't done too often. The aliens don't speak English initially/,/ and they're different from humans; the protagonist is young, but things aren't 0% dark (work for your 'happy' ending); and if you're part of an alliance against a common enemy, do you really want to win?
+
+It's also something I read as a kid, and it's possible I wouldn't have liked it as much if I read it later.
+:PROPERTIES:
+:Author: GeneralExtension
+:Score: 1
+:DateUnix: 1541443510.0
+:END:
+
+
+** Almost all of mine are in the SSC sub. Make of that what you will. Personally I think it's emblematic lol.
+:PROPERTIES:
+:Author: HotGrilledSpaec
+:Score: 2
+:DateUnix: 1541029673.0
+:END:
+
+
+** An excellent story!
+
+One possible flaw is that the second list would've been calibrated with the entire country population as its target group, not fine-tuned for one specific person. And there would be plenty of people in that set for whom the statements ranked #1--#3 would've been just irrelevant, even those for whom the entire list would've be irrelevant [[https://tvtropes.org/pmwiki/pmwiki.php/Main/BlueAndOrangeMorality][(e.g.).]] In other words, the network was trained to generate the most controversial statements for that target group, not the most controversial statement for /all/ members of that group.
+
+This is not an outright plot hole for the story, since the narrator could've easily just not been lucky enough to be one of such people, but I think the story should've touched on this at least with a few sentences or a paragraph.
+:PROPERTIES:
+:Author: OutOfNiceUsernames
+:Score: 2
+:DateUnix: 1541032197.0
+:END:
+
+*** You sort of have to take the conceit as it is, without applying any actual understanding of Reddit, what makes people upvote and downvote, and machine learning.
+
+Edit: Also human psychology.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1541037661.0
+:END:
+
+
+** #+begin_quote
+  Any predictive network doubles as a generative network. If you teach a neural net to recognize dogs, you can run it in reverse to get dog pictures.
+#+end_quote
+
+I realize that you were probably just taking creative liberties, but this is not true. If two different dog pictures create the same label "dog", and you tried to run it in reverse, which dog picture would be generated by the label " dog"?
+:PROPERTIES:
+:Author: abcd_z
+:Score: 1
+:DateUnix: 1541047780.0
+:END:
+
+*** He's talking about things like Google deep dream, where you feed a network noise and have it transform it into whatever closely matches the networks idea of an ideal dog.
+
+You don't get an image of any specific dog, you get stuff like [[https://www.google.nl/search?q=google+deep+dream+dog][this]].
+:PROPERTIES:
+:Author: Silver_Swift
+:Score: 4
+:DateUnix: 1541054229.0
+:END:
+
+**** Trust me, he's not. The concepts he describes don't match any existing neural network architecture, because the problem he describes is fundamentally ill-posed. It makes for a decent story, but don't try to map it onto real neural networks.
+:PROPERTIES:
+:Author: abcd_z
+:Score: 1
+:DateUnix: 1541056708.0
+:END:
+
+
+*** Generative networks are /very/ different from classification network. They usually have discriminator loss architecture unlike classification nets. Anyway "run network in reverse" don't even have precise meaning - there several different things which could be dubbed like that - decoder arch, backpropagating gradient into source etc.
+:PROPERTIES:
+:Author: serge_cell
+:Score: 5
+:DateUnix: 1541053975.0
+:END:
+
+**** Bingo. I was just trying to give an example of an ill-posed problem and why it would be considered such.
+:PROPERTIES:
+:Author: abcd_z
+:Score: -1
+:DateUnix: 1541056049.0
+:END:
+
+
+*** Presumably the most dog-like, by whatever measure the algorithm uses to determine dogs in the first place. Or perhaps chronological order of validated input?
+:PROPERTIES:
+:Author: BlazeCell
+:Score: 1
+:DateUnix: 1541055282.0
+:END:

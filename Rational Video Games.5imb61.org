@@ -1,0 +1,741 @@
+#+TITLE: Rational Video Games?
+
+* Rational Video Games?
+:PROPERTIES:
+:Author: RagaTanha
+:Score: 39
+:DateUnix: 1481862070.0
+:END:
+What video games do you guys fit with rationalist fiction?
+
+
+** Perhaps not exactly rational fiction tropes, but I get a lot of kicks out of playing [[http://pokemonshowdown.com/][Pokemon Showdown]] .
+
+It's an online battle simulator against real people.
+
+Pokemon's "rock-paper-scissors" style typing matchup teaches you quickly what it means to try and play "one level higher" than your opponent.
+
+At level zero, you can try and hit your super effective moves so you can knock out your opponent's pokemon easier. This is pretty obvious, yes.
+
+At level one, you start anticipating these attacks from your opponent and switch into something that resists whatever they were going to throw at your original pokemon. Your opponent does the same, and your attacks don't do much damage.
+
+At level two, you start trying to be clever, selecting moves that are super effective against what you /anticipate/ your opponent will switch in. Except, if you overestimate the skill of your opponent, you lose momentum.
+
+At level three, you forget about the clever level two prediction jukes and just select the super effective move towards your opponent's current pokemon. This is good because you signal a willingness to carry through with threats, so your opponent is less likely to try and pull weird double switch shenanigans. And then maybe you can try to pull a juke later on.
+
+I've never gotten to level four.
+
+But the addition of the chat bar can also be interesting. You can look up stats of pokemon through the chat which, for some reason, shows up on both people's screens, making it common knowledge if you just tried to figure out what type their pokemon is weak to.
+
+On one occasion, I pretended I just learned about this feature. Then used it, which made it common knowledge and pretty likely that I was going to act on the info. Then I used that to my advantage to fake out the other person and catch their switch-in.
+
+So, yes, in a nutshell, I think pokemon teaches good object-level game theoretic reasoning, even if it doesn't have good in-universe logic.
+:PROPERTIES:
+:Author: owenshen24
+:Score: 38
+:DateUnix: 1481873122.0
+:END:
+
+*** Just so you know, there are two ways of using commands on Showdown. !command, and /command. ! shows both players what you just looked up, where / doesn't.
+
++1 for your description of what makes competitive Pokemon fun though. I'm not good enough to experience it often yet, but it's so satisfying to turn a match around with a few solid predictions
+:PROPERTIES:
+:Author: DeterminedThrowaway
+:Score: 12
+:DateUnix: 1481877449.0
+:END:
+
+**** Wow, I didn't know about the alternate commands thing. Thanks for filling me in!
+:PROPERTIES:
+:Author: owenshen24
+:Score: 3
+:DateUnix: 1481898575.0
+:END:
+
+
+*** Showdown is fantastic. I was actually on it as we were reading it. I really like the way that you're characterizing predictions, although I feel like you're only bringing in the tactical part of competitive play. You also have to create the team of pokemon you're going to use to fight people with, which involves guessing what people are going to use and having an answer to it before you even encounter them. It's pretty indepth and a really fun game.
+:PROPERTIES:
+:Author: ReekRhymesWithWeak
+:Score: 3
+:DateUnix: 1481901857.0
+:END:
+
+**** I never bother to make a team, I play only random matches. There you have to guess what your opponent has based on their behavior, and learn about your own team as quickly as possible.
+:PROPERTIES:
+:Author: CarVac
+:Score: 3
+:DateUnix: 1481923125.0
+:END:
+
+
+**** Yeah, there's a whole other story about even getting the right team in the first place.
+
+It's a huge amount of variability, and part of the game in choosing your team starts before the match even begins.
+:PROPERTIES:
+:Author: owenshen24
+:Score: 1
+:DateUnix: 1481908454.0
+:END:
+
+
+*** I'm rank 1500 in random doubles, a format which makes it essentially all this sort of rock-paper-scissors. In the end I've found there's a lot less luck and mindgames than people imagine - of course if you're constantly out-predicted you lose, but that's very unlikely if you aren't predictable, e.g. by being semi-random.
+
+Most of the strategy is in picking those weights, mainly by taking into account the risk and reward for each play, the long-term strategy based on which of your Pokemon needs to survive, preparing for the next turn, and only then on modeling your opponent.
+:PROPERTIES:
+:Author: XerxesPraelor
+:Score: 2
+:DateUnix: 1481910037.0
+:END:
+
+**** Yep, I'll defer to your judgment here, as the highest I've gotten in random is ~1400ish. From a lot of the Smogon discussion, it does seem like what you're saying is very valid.
+:PROPERTIES:
+:Author: owenshen24
+:Score: 1
+:DateUnix: 1481923200.0
+:END:
+
+
+** Mentioned in [[/u/ketura]]'s essay, but bears a specific shout-out: my all-time favorite game in category, [[http://www.bay12games.com/dwarves/][Dwarf Fortress]]. Dwarf Fortress is a highly simulationist super fine-grained game where you manage a bunch of dwarves who set out to found a fortress. Before you even begin to play, the game does stuff like creates the world (mountains, tectonic plates, etc, then rainfall/wind shadow / erosion patterns, then growth of plants and animals, biomes, then hundreds or thousands of years of history as gods, dragons, mortals, empires, etc rise and fall, leading to a rich and dense world--all made deterministically). What civilization your group is a part of, who comes to visit you, what monsters exist, etc is all deterministic from the random seed and procedurally generated. But also like, the low level stuff is super important too.
+
+Here, let me explain a bug that recently developed that will illustrate just how fine-grained the physics engine of this game is. There was a new patch, and suddenly any housecats in the fortress started barfing all over the place, constant vomit. What's going on? Well, it's a long story. See, this new patch introduced Taverns as a concept. A place for Dwarves to socialize, feel good, and drink. And part of Taverns code is that in any Tavern where drinking is happening, some booze ends up on the ground. Now, enter the Cat. Cats get dirty over time, as pretty much anything does. For example, a cat that steps in a puddle of blood has blood on it and leaves blood footprints. Or if it steps in booze, it has booze on it and leaves booze footprints. However, they do not bathe or go in water. Instead, they lick themselves to clean themselves. So, for example, a cat might lick its paw to clean it. But, you see, when you lick something, you consume a tiny bit of whatever is on it.
+
+You may be guessing what was going on now. A cat walks into a Tavern, and steps in a puddle of booze. Later, somewhere else, it licks its paw, consuming some beer. But, it turns out, the game doesn't have code for consuming amounts of beer less than one pint or something similar. It assumes (pretty reasonably up to that point) that all beer is consumed in pints. So, the cat drinks a pint of beer. As it turns out, the game code doesn't crash here, because cats, like dwarves, have fully fleshed out drunkenness mechanics, and their drunkenness can be calculated. As it turns out, Cats have like, a pint of body volume anyways, so after licking its paw the Cat's body is now effectively 50% beer (in rough terms) making it possibly more drunk than any creature had ever been before.
+
+So it vomits.
+
+A fun bug to track down! And a good example of just how simulationist this game is.
+:PROPERTIES:
+:Author: blazinghand
+:Score: 69
+:DateUnix: 1481872813.0
+:END:
+
+*** [deleted]
+:PROPERTIES:
+:Score: 31
+:DateUnix: 1481873431.0
+:END:
+
+**** Wait, /weaponized/ catsplosions?
+:PROPERTIES:
+:Author: Kinrany
+:Score: 4
+:DateUnix: 1481880325.0
+:END:
+
+***** I think that's referring to making cat materials a high FIXED_TEMP after the fact, which is basically cheating.
+:PROPERTIES:
+:Author: Putnam3145
+:Score: 3
+:DateUnix: 1481890909.0
+:END:
+
+****** Why would you do this with just cats? Wouldn't it be more convenient to modify another item?
+:PROPERTIES:
+:Author: blazinghand
+:Score: 1
+:DateUnix: 1481891556.0
+:END:
+
+******* Cats like to reproduce a lot.
+:PROPERTIES:
+:Author: Putnam3145
+:Score: 7
+:DateUnix: 1481891630.0
+:END:
+
+******** And also the little fuckers adopt your Dorfs, and then have a tendency to die.
+
+Which can make their Dorf sad.
+
+Who might get mad.
+
+And punch someone. Or smash something. Or kill something. Or all three.
+
+And then you get a tantrum spiral...
+:PROPERTIES:
+:Author: Arizth
+:Score: 5
+:DateUnix: 1481922887.0
+:END:
+
+
+*** #+begin_quote
+  because cats, like dwarves, have fully fleshed out metabolism, and their blood alcohol / drunkenness can be calculated
+#+end_quote
+
+No, it's just an "inebriation" counter that increments based on alcohol consumed. No actual metabolism or blood alcohol simulation is done.
+
+It /is/ based on body size and dwarves do have some resistance to inebriation, but neither of these actually have to do with blood (the [SIZE_DILUTES] token in the inebriation syndrome makes size matter; the [SYNDROME_DILUTION_FACTOR:INEBRIATION:150] token in the dwarf creature raws makes dwarves require 1.5x the alcohol as any other creature of their size to become as drunk).
+
+I would really prefer if people make stuff up less with Dwarf Fortress. I know it's real tempting to extrapolate information as it is in reality, but it's actually simpler under the hood in many ways than might seem.
+:PROPERTIES:
+:Author: Putnam3145
+:Score: 24
+:DateUnix: 1481890753.0
+:END:
+
+**** Ahhh, this is a re telling of a story I heard, and I figured given that this is a game with melting points for fifty kinds of rock it seemed likely enough. I'll edit in fixes,.but it's close enough the overall point is still valid. Volume of blood vs mass of creature etc
+:PROPERTIES:
+:Author: blazinghand
+:Score: 9
+:DateUnix: 1481891418.0
+:END:
+
+***** #+begin_quote
+  Volume of blood vs mass of creature etc
+#+end_quote
+
+It's more volume consumed vs volume of creature. Not entirely sure if mass has anything to do with it, though the two are linearly correlated by the game's own logic regarding how muscle and fat gain based on strength and eating, respectively.
+:PROPERTIES:
+:Author: Putnam3145
+:Score: 5
+:DateUnix: 1481891684.0
+:END:
+
+****** Ok, replaced references to "metabolism" with "drunkenness" and "blood volume" with "body volume". How's it look now?
+:PROPERTIES:
+:Author: blazinghand
+:Score: 3
+:DateUnix: 1481892346.0
+:END:
+
+******* Good, except that cats have ~5 liters of body volume (with minor variation--it can be up to 6.655 liters or down to 3.645 liters, fat and muscle gain nonwithstanding).
+
+I mean, yeah, it's less detail in /some/ places, heh.
+:PROPERTIES:
+:Author: Putnam3145
+:Score: 4
+:DateUnix: 1481892593.0
+:END:
+
+******** I'll make an edit. I also feel like the initial criticism offered is a bit over the top given that it seems when we come down to it it's just wording stuff and like, the number of liters in a cat. I think the story is fundamentally correct, not something made up then, huh?
+:PROPERTIES:
+:Author: blazinghand
+:Score: 5
+:DateUnix: 1481892880.0
+:END:
+
+********* It implies that any sort of metabolism is done, which is incorrect--the game has absolutely no idea of biology. Death can be achieved by destruction of the brain (whether by trauma or state change) or total blood loss--there's no sense of jaundice etc. and organs are just filler (excepting the heart and certain sense organs, which count as a major artery and actually supply senses respectively).
+:PROPERTIES:
+:Author: Putnam3145
+:Score: 2
+:DateUnix: 1481893281.0
+:END:
+
+********** I mean, the game seems to track the amount of alcohol in the bloodstream, makes it have an effect on the creature, which varies based on the creature's volume (a proxy for its blood volume), and also based on a multiplier that is different for dwarves, and (I assume) causes alcohol to be removed from the bloodstream over time until your creature is sober (a sorry state of affairs of a dwarf). It might not literally be a metabolism but it looks and acts like metabolism, and is like, based on simplified versions of things you'd expect metabolism to act like. I'd also note that to come into compliance with your requests I changed like 5 or 6 words, so again the idea that this is a made up story seems, if not completely incorrect, at least a little misleading.
+
+After all, the facts (cat steps on ground, gets beer on foot, licks foot to clean it, and this causes the cat to consume beer, and there are in fact already mechanics in case to deal with cat drunkenness because the game is simulationist, and due to a bug in beer volume consumption, the cat becomes very drunk, because cats are small and minimum beer consumption is large) are in fact all true. This is like, a true story that also conveys the underlying idea: DF is a game with a lot of detail that causes interesting emergent behavior. Unlike the catsplosions or other things, this is a real phenomenon covering real things. If I happened to use the word "metabolism" as shorthand for "equations that determine cat drunkenness based on a bunch of complex factors including cat volume and how long it takes to metabolize--er, i mean, lose--alcohol from the body" I don't think I've committed an error the type of which makes the story invalid, see?
+
+That isn't to say it's not more correct now that it has all this detail, but... hmm. I'm reminded of [[http://chem.tufts.edu/answersinscience/relativityofwrong.htm][Asimov's story about the Earth's roundness]]. As the story goes, Asimov responded to basically every letter sent to him, and in this response he noted that there are tiers of wrongness:
+
+#+begin_quote
+  My answer to him was, "John, when people thought the earth was flat, they were wrong. When people thought the earth was spherical, they were wrong. But if you think that thinking the earth is spherical is just as wrong as thinking the earth is flat, then your view is wronger than both of them put together."
+
+  The basic trouble, you see, is that people think that "right" and "wrong" are absolute; that everything that isn't perfectly and completely right is totally and equally wrong.
+
+  However, I don't think that's so. It seems to me that right and wrong are fuzzy concepts, and I will devote this essay to an explanation of why I think so.
+#+end_quote
+
+In any case I guess like, broadly describing the cat as having a metabolism and a blood volume when instead it has drunkenness and alcohol-removal equations and a body volume is wrong, but only in the sense that saying the Earth is spherical is wrong. The overall shape of the story remains true, even if little fiddly bits needed work. This isn't some example of stuff being made up about DF; cats lick themselves, and this did make them drink and get drunk and they do have drunkenness mechanics, there are Taverns, this was a bug, etc.
+:PROPERTIES:
+:Author: blazinghand
+:Score: 1
+:DateUnix: 1481920772.0
+:END:
+
+*********** #+begin_quote
+  I mean, the game seems to track the amount of alcohol in the bloodstream
+#+end_quote
+
+It seems to, but only if you don't actually know what's going on, which I do, being one of the most experienced active Dwarf Fortress modders around (and I say that with confidence).
+
+#+begin_quote
+  makes it have an effect on the creature, which varies based on the creature's volume (a proxy for its blood volume)
+#+end_quote
+
+Blood volume is actually an integer exactly equal to current body size divided by 10.
+
+#+begin_quote
+  If I happened to use the word "metabolism" as shorthand for "equations that determine cat drunkenness based on a bunch of complex factors including cat volume and how long it takes to metabolize--er, i mean, lose--alcohol from the body" I don't think I've committed an error the type of which makes the story invalid, see?
+#+end_quote
+
+The main problem is that it's not actually alcohol--it's anything with the "inebriation" syndrome attached. Note that I very specifically avoided mentioning alcohol in particular--the only thing that matters is "inebriation". If you use metanbolism to describe inebriation, you might have to use it to describe /werewolf transformations/, which run on the exact same system.
+
+I'm aware of the relativity of wrong, but the problem with this particular wrongness is that it invites the imagination in unpredictable ways--it might make the user think that a dwarf who has a mangled liver might have more difficulty losing inebriation, which is simply not the case.
+:PROPERTIES:
+:Author: Putnam3145
+:Score: 2
+:DateUnix: 1481936709.0
+:END:
+
+************ Ok but like the basic concept of the story is true and the bug itself and overall reasons why are like clearly not made up, right
+:PROPERTIES:
+:Author: blazinghand
+:Score: 1
+:DateUnix: 1482055031.0
+:END:
+
+************* #+begin_quote
+  the basic concept of the story is true
+#+end_quote
+
+Oh, yes. Very popular bug.
+
+#+begin_quote
+  the bug itself and overall reasons why are like clearly not made up, right
+#+end_quote
+
+The bug itself (that being an issue of minimum drink size) and overall reasons why aren't made up, no; in fact, come to think of it, I wouldn't say that anything there is so much /made up/ as extrapolated in ways that dangerously approach falsehood. I don't really like when that happens, it causes weirder things like obviously fake stories or screenshots getting upvoted to the top of [[/r/dwarffortress]], which always bothers me.
+:PROPERTIES:
+:Author: Putnam3145
+:Score: 1
+:DateUnix: 1482057503.0
+:END:
+
+
+*** Come check out [[/r/dwarffortress]] ! It's one of my favourite games too, and the sidebar has some great resources for anyone to get started :)
+
+While [[/u/Putnam3145]] has a bunch of specific nitpicks, I'll just note that this was a thing that really happened in a recent DF version - a later patch made cats ingest only a smaller amount of alcohol.
+
+And instead of vomiting, they generally died of alcohol poisoning!
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 3
+:DateUnix: 1481975619.0
+:END:
+
+**** Primarily because vomiting doesn't actually make inebriation any lesser, yeah.
+:PROPERTIES:
+:Author: Putnam3145
+:Score: 1
+:DateUnix: 1481979345.0
+:END:
+
+
+*** We've been talking about Dwarf Fortress some on the r/r discord server, for reference. [[/u/Dwood15]] has been getting into it.
+:PROPERTIES:
+:Author: Cariyaga
+:Score: 2
+:DateUnix: 1481893082.0
+:END:
+
+
+** Any purely competitive game is, in a deep sense, rational -- particularly if there is no way to interact other than competition. Rocket League, for instance, is essentially RC Cars with rockets playing soccer. Nothing happens solely because the game requires it. The conflict is motivated directly, there aren't 'good' and 'bad'. Players solve their problems and achieve their goals through intelligent application of their knowledge and resources (for something like Rocket League, practice and training play a big role in noticing what resources you have in a given moment, but same with real life, so that seems fine). And the rules are sane and consistent (it's soccer).
+
+Rational/ist/ games are more rare, but if the game is both purely competitive and deterministic, you should be able to use the same techniques as good players to be just as good, and being good at the game means it is possible, in principle, to determine the best next step using the information you get leading up to that event. That's just because it occurs in real life linear time it's super easy to capture what they knew at the time, because it's on the screen.
+
+[EDIT: games like Rocket League also teach the important real life lesson that, while something may be simple /in theory/ it can take tons of practice to get good. Also, practice can be fun. But boy howdy do I not see a lot of staying power in modern culture. If you can jam on practice, you'll crush at almost anything. Important rationalist lesson in there.]
+:PROPERTIES:
+:Author: zhanyin
+:Score: 26
+:DateUnix: 1481864943.0
+:END:
+
+*** For related reading, see the famous David Sirlin article (later expanded into a book) titled [[http://www.sirlin.net/ptw-book/introducingthe-scrub][Play to Win]], which is about discarding notions of how a game "ought to be played" for reasons that generally have no rational justification.
+
+#+begin_quote
+  I once played a scrub who was actually quite good. That is, he knew the rules of the game well, he knew the character matchups well, and he knew what to do in most situations. But his web of mental rules kept him from truly playing to win. He cried cheap as I beat him with “no skill moves” while he performed many difficult dragon punches. He cried cheap when I threw him five times in a row asking, “Is that all you know how to do? Throw?” I gave him the best advice he could ever hear. I told him, “Play to win, not to do ‘difficult moves.'” This was a big moment in that scrub's life. He could either ignore his losses and continue living in his mental prison or analyze why he lost, shed his rules, and reach the next level of play.
+#+end_quote
+
+For those who don't want to read the entire book, [[http://www.sirlin.net/articles/playing-to-win][this summary article]] captures the book's main thesis and the points of many of its introductory chapters.
+:PROPERTIES:
+:Author: Kuiper
+:Score: 25
+:DateUnix: 1481878855.0
+:END:
+
+**** I'm not familiar with this website or author, but... are they being sarcastic here? What's wrong with making up house-rules to optimize for fun or beauty or whatever? Who cares about "winning" in a recreational framework (if you game professionally -- i.e. for money -- it's another question). It's... it's just a game, right? There's no "right" way to play, and "winning" is "meaningless" (hence why activating godmode and setting damage output to ∞ is not as popular). Do non-professional players actually play to win independently of having fun (ignoring the case of "addiction", e.g. grinding endlessly in MMOs at the expense of most everything else).
+
+I can get challenging yourself and thereby finding enjoyment, clawing your way to victory against the odds, etc. but that seems to run counter to "playing to win", since you'll necessarily have to avoid game-breaking exploits. Maybe this article assumes games are perfectly balanced? (but even if they are, if the counter to the "cheap" tactic is not fun, it still seems totally legitimate to occasionally house-rule against boring-ness, else you end up [[http://knowyourmeme.com/memes/no-items-fox-only-final-destination][here]]).
+
+It's hard to read lines like
+
+#+begin_quote
+  Who knows what objective the scrub has, but we know his objective is not truly to win. Yours is. Your objective is good and right and true, and let no one tell you otherwise. You have the power to dispatch those who would tell you otherwise, anyway. Simply beat them.
+#+end_quote
+
+or
+
+#+begin_quote
+  If you block for fifty seconds doing no moves, that's cheap.
+#+end_quote
+
+or
+
+#+begin_quote
+  The first step in becoming a top player is the realization that playing to win means doing whatever most increases your chances of winning.
+#+end_quote
+
+or
+
+#+begin_quote
+  But any close examination will reveal that the experts are having a great deal of this “fun” on a higher level than the scrub can even imagine.
+#+end_quote
+
+or
+
+#+begin_quote
+  You can gain some standing in a gaming community by playing in an innovative way, but that should not be the ultimate goal. Innovation is merely one of many tools that may or may not help you reach victory. The goal is to play as excellently as possible. The goal is to win.
+#+end_quote
+
+seriously. Because, like, WGAF? Blocking for 50-seconds might help you win, but you're not actually "playing" the game. Bribing your opponent to not play (or disconnecting their controller, etc.) also increases your chances of winning, but where's the /fun/ in that? Would [[https://i.imgur.com/ySl1dFj.png][this]] be the author's favorite game? How does the author know who's having more fun? I have a lot more fun in games when executing something tricky or pretty than when I find a quick exploit that ascends me to godhood -- if I do the latter I'll usually get bored really quickly and either re-handicap myself or stop playing altogether. Is the author just making fun of those who get a false sense of fulfillment or power by "beating their opponents"? It's really hard to tell.
+
+Someone mentioned the Pokémon competitive metagame elsewhere in this thread. There are often lengthy banlists there for a reason.
+:PROPERTIES:
+:Author: captainNematode
+:Score: 12
+:DateUnix: 1481900886.0
+:END:
+
+***** The author addresses the topic of changing the rules to support a better play experience in one of the following chapters, [[http://www.sirlin.net/ptw-book/what-should-be-banned][What Should Be Banned]].
+
+#+begin_quote
+  Bribing your opponent to not play (or disconnecting their controller, etc.) also increases your chances of winning, but where's the fun in that?
+#+end_quote
+
+This point is also addressed in one of the chapters immediately following, titled [[http://www.sirlin.net/ptw-book/how-far-should-you-go-to-win][How Far Should You Go to Win?]]. Things like messing with the hardware setup (unplugging your opponent's controller, or engaging in collusion, bribes, or match-fixing) are disallowed in competitive environments, as they clearly lie outside the bounds of the game and are not fair play by any reasonable definition.
+
+In fact, competitive environments are often the places that go to the greatest lengths to oust this kind of behavior. If you're in a recreational environment and say to your friend, "Hey, I'll give you $5 if you let me win here," it's unlikely that anyone will complain, whereas if you make a similar offer in the context of a sanctioned Magic: The Gathering tournament, it's grounds for immediate disqualification.
+
+#+begin_quote
+  Would [[https://i.imgur.com/ySl1dFj.png][this]] be the author's favorite game? How does the author know who's having more fun? I have a lot more fun in games when executing something tricky or pretty than when I find a quick exploit that ascends me to godhood -- if I do the latter I'll usually get bored really quickly and either re-handicap myself or stop playing altogether.
+#+end_quote
+
+Perhaps this excerpt will answer your question:
+
+#+begin_quote
+  Some games don't hold up to high-level play. That's sloppy design in my opinion. A solid game holds up to experts playing it as hard as they can against each other. That way, the game can be fun for beginners and experts.
+
+  When a game doesn't hold up to expert play, it's degenerate in some way. There's only one good move or one good character, or one good strategy, or something like that. The game offers what appears to be a lot of fun options, but you don't actually get to do those fun options against experts, even if you are an expert too. So for this type of game, playing to win really will make it less fun, but that's not a problem with the players who are doing their best; it's a problem with the game.
+#+end_quote
+
+If the game you're playing contains, as you say, "a quick exploit that ascents [you] to godhood," then that points to severe flaws with the game's design. Any game that can be reduced to a single button that says "I win" severely requires modification (possibly through bans) to provide an interactive experience (see the chapter about "What Should Be Banned").
+:PROPERTIES:
+:Author: Kuiper
+:Score: 12
+:DateUnix: 1481934516.0
+:END:
+
+
+***** I'm uninclined to defend the article 100%, but there are two good points to be found there.
+
+First, you point out cases (like a game-breaking bug that instantly wins) where the "cheap move" reduces complexity. But equally often, banning a perceived "cheap move" increases complexity. I'm thinking of cases like "no rush 20" rules in RTS games.
+
+Second, obviously some games end up requiring house rules to function. I suspect that Sirlin would say that (a) those games are bad and just shouldn't be played, and (b) if a game has been played for a long time, and you think it's unbalanced to the point of being broken, then you're probably wrong.
+
+(Also, I think that this article only makes sense if you already have the point of view that /how good you are at a game matters/. If you disagree, then you disagree, and that's that. But being good at a game does matter, and winning does matter, to more people than just professional gamers.)
+:PROPERTIES:
+:Author: SpeakKindly
+:Score: 4
+:DateUnix: 1481903278.0
+:END:
+
+****** #+begin_quote
+  Second, obviously some games end up requiring house rules to function. I suspect that Sirlin would say that (a) those games are bad and just shouldn't be played, and (b) if a game has been played for a long time, and you think it's unbalanced to the point of being broken, then you're probably wrong.
+#+end_quote
+
+I read his book (/Playing to Win/). This was several years ago, so this probably isn't entirely accurate, but: supposedly one of the Street Fighter games had some truly game-breaking characters, in the sense that there were strategies a good player could use to win 100% of the time against excellent players with other characters. These characters were banned in competitive play, and Sirlin endorsed this. He also gave some rules for when bans like that should be imposed, which I don't particularly remember.
+
+(Apparently the way the ban was enforced differed between America and Japan. In America, it was an official rule. In Japan, it was unwritten: the good players just didn't pick those characters, and would politely defeat the players who did.)
+:PROPERTIES:
+:Author: philh
+:Score: 3
+:DateUnix: 1481908277.0
+:END:
+
+******* Okay, I guess I was being a bit uncharitable to Sirlin.
+:PROPERTIES:
+:Author: SpeakKindly
+:Score: 1
+:DateUnix: 1481908447.0
+:END:
+
+
+****** But then is complexity actually what players are trying to maximize? It seems that would favor trying to house-rule such that better play involves executing complicated combos over spanning single game-winning, max-DPS, hard-to-counter moves, which the author rallies against. And in my experience, game-designers might be very clever and eat, breathe, and sleep mechanics, but will still end up quite far off perfect balance (outside simple toy-scenarios -- e.g. rock-paper-scissors). Hence the need for updates to re-balance (and to keep the game fresh, maximize player engagement with content, make more money, etc.). And even then, long-running games with plenty of balancing opportunities can [[https://i.imgur.com/tMfeyjY.png][end up]] pretty boring and [[https://i.imgur.com/AS8vFrH.png][uniform]] at [[http://i.imgur.com/ZqjqbxH.png][the top]] when there are only a handful of viable strategies.
+
+I agree that being good at a game and winning does matter, and that many non-professional gamers feel this way, and that that's a perfectly fine way to play. But in my interactions with gamers the desire to win is conditional on being challenged -- victory is sweeter when it's hard fought, and winning too easily is neither fun nor fulfilling (and so you're not actually "playing to win" at all, beyond superficially). Indeed, why would the author even mention that "the experts are having a great deal of this “fun” on a higher level than the scrub can even imagine" if it's not about fun, it's about winning?
+
+I might also be a wee defensive since I'm firmly in the "casual-moderate gamer" camp (I play maybe ~3hr a week, on average) and go more for graphics, physics, story, etc. than rich or complicated gameplay (so long as it's fun). Games with 100+ hours of learning curve hold little appeal -- sure, I can put in the effort to "master" them (or not), but what little resources I have are, given my values, better allocated elsewhere (and if people would prefer devoting their attentions to games, and no pockets are picked nor legs broken, then more power to them). So the somewhat aggressive tone of the article inspired me to be somewhat aggressive in return. I guess my uncharitable initial impression was that the the author was making fun of people who win at the game but [[http://tvtropes.org/pmwiki/pmwiki.php/Main/StopHavingFunGuys][lose at "life"]].
+:PROPERTIES:
+:Author: captainNematode
+:Score: 3
+:DateUnix: 1481905001.0
+:END:
+
+******* Sirlin's absolutely way too aggressive about this, yeah.
+
+The way I read the article, I don't interpret him as saying "oh, if the optimal strategy is to block fifty times in a row, that's fine". I interpret him as saying "if your strategy can be countered by me blocking fifty times in a row, you should learn to deal with that, rather than house-ruling that you can block at most forty-nine times consecutively".
+
+The objection to
+
+#+begin_quote
+  trying to house-rule such that better play involves executing complicated combos over spamming single game-winning, max-DPS, hard-to-counter moves
+#+end_quote
+
+is that it cheapens the metagame aspect of the fighting game - trying to devise strategies that work, and learning to execute them - if you're rejecting the answer to "what's the best strategy now?" when it's not something you like.
+
+Take chess as an example. It's beautiful when one player sacrifices his queen for a checkmate in ten moves, but it's beautiful /because it follows from the rules of the game/. If we added a house-rule to chess of the form "if one player tries to sacrifices a queen, you can't refuse the sacrifice, even if accepting it means you lose", that is no longer beautiful: it's offensive.
+:PROPERTIES:
+:Author: SpeakKindly
+:Score: 7
+:DateUnix: 1481906613.0
+:END:
+
+
+**** His perspective on games heavily relies on the assumption that the game in question is well-designed, and that all problems that arise in multiplayer situations are intentional.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 2
+:DateUnix: 1481962062.0
+:END:
+
+
+**** Makes me wonder if Blizzard should have put in one hero limit in Overwatch at all. Maybe stacked comps is a way to play to win, and it's on the other team to figure out the counter.
+:PROPERTIES:
+:Author: cheesegoat
+:Score: 1
+:DateUnix: 1481898731.0
+:END:
+
+
+*** One thing that I find interesting in competitive games is how often dominant strategies will be discovered only after they have been theoretically possible (due to balance patches, etc.) for a while.
+
+I'm most familiar with DotA, and it happens all the time there. Some hero will get a minor buff which scarcely affects their actual performance, but this buff prompts people to investigate ways of playing the hero and eventually hit upon an "overpowered" build.
+
+As an example, there's a hero called Tinker whose ultimate ability, Rearm, lets him reset the cooldown on his spells and items at the cost of a lot of mana and a short duration spent standing still while casting. There's an item in the game called Boots of Travel (BoTs), which allows you to teleport to allied non-hero units after.
+
+It took a surprisingly long time for people to realise that you could use the cooldown reset to get ridiculous map mobility with the BoTs, plus free trips to the base area (which heals health and mana quickly). Suddenly there were Tinkers in every game, constantly able to fight and output a huge amount of damage before returning to safety. It led to a succession of nerfs to the hero and the items the build used.
+
+This goes to show that a sufficiently complex system that has been insufficiently analysed (either due to low populations or recent changes) can have powerful yet unutilised strategies, which is obviously relevant for rational fiction (and potentially real life rationality, if you get in on the ground floor of a new technology).
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 17
+:DateUnix: 1481879052.0
+:END:
+
+**** #+begin_quote
+  a hero called Tinker
+#+end_quote
+
+Not a tinker called Hero? :)
+:PROPERTIES:
+:Author: ari_zerner
+:Score: 6
+:DateUnix: 1481905665.0
+:END:
+
+***** No, but there IS a hero called Weaver.
+:PROPERTIES:
+:Author: AtoningUnifex
+:Score: 5
+:DateUnix: 1481909802.0
+:END:
+
+****** Weaver has a skill called "The Swarm", involving summoning a large number of bugs. It fits.
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 6
+:DateUnix: 1481911360.0
+:END:
+
+******* [[https://hydra-media.cursecdn.com/dota2.gamepedia.com/3/3a/Weav_ability_swarm_06.mp3][Skitter Scatter!]] (warning: loud!)
+:PROPERTIES:
+:Author: Escapement
+:Score: 2
+:DateUnix: 1481983485.0
+:END:
+
+
+** I'll offer "[[https://en.wikipedia.org/wiki/Sid_Meier's_Alpha_Centauri][Sid]] [[https://www.gog.com/game/sid_meiers_alpha_centauri][Meier's]] [[https://paeantosmac.wordpress.com/2015/02/17/introduction/][Al]][[http://tvtropes.org/pmwiki/pmwiki.php/VideoGame/SidMeiersAlphaCentauri][pha]] [[http://www.sjgames.com/gurps/books/alphacentauri/][Cen]][[https://en.wikiquote.org/wiki/Sid_Meier's_Alpha_Centauri][tauri]]" as providing one of the better examples of conflict arising from differences in ideology, rather than one side being The Bad Guys because they're Evil. Not to mention the rules of the (reasonably) HSF setting are sane and consistent, and the in-game story about the xenofungus is treated as a puzzle being researched scientifically.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 21
+:DateUnix: 1481877989.0
+:END:
+
+*** Such a good game that it was heartbreaking that the recent Alpha Centauri wasn't just a direct port with updated graphics and UI. Even just that would have been enough for a game way better than what they released.
+
+One of the best games ever in my opinion.
+:PROPERTIES:
+:Author: RMcD94
+:Score: 8
+:DateUnix: 1481897858.0
+:END:
+
+**** STILL the only Civ game to let you insert into the middle of a damn build queue.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 2
+:DateUnix: 1481962406.0
+:END:
+
+
+** Pasting a comment of mine from another thread about an old educational game I played as a kid, as food for thought:
+
+#+begin_quote
+  I'd give you a link and would recommend you to acquire it without skipping a beat, but as it happens it was first launched in 1996 (its first installment in 94), only available through CD-roms, and in Brazilian Portuguese; it doesn't even have a Wiki page. In a rough translation it was called Galactic Ranger 2: Prisoners of the Green Tribe and was about the galactic ranger, who cruised space alongside his robot (the comic relief). They fell in a planet inhabited by walking plant-like superstitious creatures, with primitive technology, and were made prisoners.
+
+  In order to advance through the game the player had to solve scientific problems from the most diverse fields. Those involved concepts such as photosynthesis, greenhouse effect, combustion, air density, etc. The cool part is that those weren't done as if in a quiz popping up on the screen, those tasks were embedded naturally within the game. The robot provided tips when you got stuck but due to a "hardware failure" wasn't very useful. What I spent the most time checking, though, is a "galactic encyclopedia" which you could access from the main menu. In it you could learn about the big bang, galaxies, stars, supernovas, black holes, neutron stars, and so much more, not in a boring, text-like way, but by watching hilarious conversations between the ranger and his robot, accompanied by animations.
+#+end_quote
+:PROPERTIES:
+:Score: 21
+:DateUnix: 1481864291.0
+:END:
+
+*** What's the name of the game in Portuguese? We speak it and would be interested in investigating....
+:PROPERTIES:
+:Author: lasagnaman
+:Score: 8
+:DateUnix: 1481870402.0
+:END:
+
+**** I asked the same question (I'm currently learning Portuguese so looked like a good game to play for me). Here is his answer:
+
+#+begin_quote
+  O Patrulheiro das Galáxias - Prisioneiros da Tribo Verde
+
+  It was the 2nd game in the series and I just found out a 3rd one was launched as well. A member of the > development team listed those as:
+
+  - O Patrulheiro das Galáxias - Falta de Ar em Outro Sistema Solar. 1996.
+  - O Patrulheiro das Galáxias II - Prisioneiros da Tribo Verde. 1997.
+  - O Patrulheiro das Galáxias III - ABC do Sistema Solar. 1998.
+
+  More info (use ctrl+f to easily locate the sections):
+
+  [[http://www2.uol.com.br/tododia/ano98/novembro/dia17/info.htm]]
+
+  [[http://www1.an.com.br/1998/mar/07/0inf.htm]]
+#+end_quote
+
+I haven't had much luck finding the game but if you find anything pm me :)
+:PROPERTIES:
+:Author: tomtan
+:Score: 9
+:DateUnix: 1481890800.0
+:END:
+
+***** Thanks for replying. I also have been unable to locate the cd but I'm pretty sure it's still around here somewhere. If there's any interest the company is still around and I might try calling them to get some information.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1481891075.0
+:END:
+
+****** I definitely would be interested. If you learn anything let me know. Thanks
+:PROPERTIES:
+:Author: tomtan
+:Score: 3
+:DateUnix: 1481896791.0
+:END:
+
+
+*** That's amazing
+:PROPERTIES:
+:Author: JaimeL_
+:Score: 4
+:DateUnix: 1481864383.0
+:END:
+
+
+** You may be interested in [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit][this essay]] on rational games, by [[/u/ketura]], who's currently working on making a rational Pokemon fan-game.
+:PROPERTIES:
+:Author: InfernoVulpix
+:Score: 18
+:DateUnix: 1481862834.0
+:END:
+
+*** Is there any way to follow [[/u/ketura]] 's progress, or is it more of a "When I finish it, then you can find out what I finished" thing?
+:PROPERTIES:
+:Author: Dent7777
+:Score: 6
+:DateUnix: 1481912583.0
+:END:
+
+**** I make a weekly post in the off-topic thread here on [[/r/rational]], tho that only touches on the big stuff and never has enough space to actually go into detail on what we designed that week. These design discussions are [[https://discord.gg/sM99CF3][on the #pokengineering channel of the Discord server]], with logs going back more than two months. At some point (probably soon, now that I think about it) we'll need to set up a subreddit. I'll continue to make weekly posts regardless, to ensure people aren't stuck out of the loop.
+:PROPERTIES:
+:Author: ketura
+:Score: 6
+:DateUnix: 1481913481.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 16
+:DateUnix: 1481868317.0
+:END:
+
+*** Regarding Soulsborne, this is only really true for Dark Souls 1 and Bloodborne.
+
+Dark Souls 2 is infamous for enemies with infinite stamina + auto-tracking in the middle of attacks. In Dark Souls 3, enemies have standard poise, while the player does not.
+
+They are all good games, but only DS1 and BB are even playing fields.
+:PROPERTIES:
+:Author: trobertson
+:Score: 9
+:DateUnix: 1481914697.0
+:END:
+
+
+** If we are going to have a thread about rational games, then we should include a link to the previous [[https://www.reddit.com/r/rational/comments/2ochbd/rationalist_video_games/][one]].
+:PROPERTIES:
+:Author: xamueljones
+:Score: 16
+:DateUnix: 1481894004.0
+:END:
+
+
+** One of my favourite videogames is currently on sale for -85% off - [[https://www.gamersgate.com/DD-DOM4TA-STEAM/]]
+
+Dominions 4 is the Turn Based Strategy equivalent of Dwarf Fortress, in that it's a game where the focus is clearly on depth and detailed simulationism, over things like 'graphics' and 'user interface'. It has a vast and intimidating level of complexity. Basically, the game is a free-for-all war in a magical world where you are a god who wants to conquer everyone and get everyone to believe in you. The game is ludicrously detailed in combat and war, but heavily abstracted in e.g. economics and building things. Featuring a couple thousand different units, over ~70 factions, hundreds of spells and magic items... there's a lot to learn and explore. The factions are based on mythologies and on popular fiction - including Norse myth, the Cthulhu mythos, and Aztec myths. I am currently playing in various games as giants based on Jewish mythology, lizard-people based on Egyptian myth, elves based on Celtic stuff, demonic ogres based on parts of Hindu legend, and blood-sacrficing Phoenicians. A lot of the most classic fantasy tropes are present, from conjuring elementals to blowing things up with fireballs, to epic things like putting out the sun or summoning up dead gods from the pits of Tartarus.
+
+The game's only real problem other than the interface/UI stuff is that the AI doesn't play at a high level. Luckily, the multiplayer community is thriving pretty well. Most people play by e-mail, in longer-term games that take months of real time at rates of one turn a day more or less, but some people play 'blitz' games over the course of several contiguous hours. I am in half a dozen such games at the moment, and they are all interesting/enjoyable.
+:PROPERTIES:
+:Author: Escapement
+:Score: 8
+:DateUnix: 1481910777.0
+:END:
+
+
+** I've heard good things about [[http://store.steampowered.com/app/282140/][SOMA]]'s story and its attempts to explain [[#s][spoilers]] a very rationalist topic, but haven't played it myself yet and heard that the actual gameplay is subpar.
+
+edit: fixed spoiler format
+:PROPERTIES:
+:Author: notgreat
+:Score: 5
+:DateUnix: 1481872429.0
+:END:
+
+*** [deleted]
+:PROPERTIES:
+:Score: 14
+:DateUnix: 1481875126.0
+:END:
+
+**** I got a third into SOMA and stopped, since nothing was really heppening and I when I saw the facility map I got Mario flashbacks. Does the MC really not know he's digital, or is the twist something else? I just kind of assumed he was the brain scan at the start of the game.
+:PROPERTIES:
+:Author: FireHawkDelta
+:Score: 3
+:DateUnix: 1481896088.0
+:END:
+
+***** [deleted]
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1481897427.0
+:END:
+
+****** Is it that the MC's brain scan is already on the ship, and the one you play as created in the 2010s is unknown to the government, not allowed on as an invalid copy? So he's double not real.
+:PROPERTIES:
+:Author: FireHawkDelta
+:Score: 1
+:DateUnix: 1481898207.0
+:END:
+
+
+** If you mean that it's completely self-consistent and makes internal sense, then maybe check out Kingdom Come: Deliverance.
+:PROPERTIES:
+:Author: arathir2
+:Score: 1
+:DateUnix: 1482072501.0
+:END:

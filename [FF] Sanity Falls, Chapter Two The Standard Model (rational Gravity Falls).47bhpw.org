@@ -1,0 +1,252 @@
+#+TITLE: [FF] Sanity Falls, Chapter Two: The Standard Model (rational Gravity Falls)
+
+* [[http://archiveofourown.org/works/6040516/chapters/13977343][[FF] Sanity Falls, Chapter Two: The Standard Model (rational Gravity Falls)]]
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 13
+:DateUnix: 1456300088.0
+:END:
+
+** Much better than the first chapter, I cant wait to read more! I find it pretty funny that Mabel was the voice of reason and Dipper was the one who was hyper and read magic spells without any precautions.
+:PROPERTIES:
+:Author: masterax2000
+:Score: 7
+:DateUnix: 1456301716.0
+:END:
+
+
+** *Puzzle-solving General*
+
+On the second puzzle: From the J, T, L'p, /and/ e, and the dread mm, this is not a (simple) substitution cipher. Too much to ask for on the first go? Ah, but that /was/ the first one, rot13 is substitution no matter how mundane. Unless the fourteen and seventeen-letter words are a hint to ignore spacing...
+
+[[http://rumkin.com/tools/cipher/][A useful resource.]] My first step is to look at Vigenere 3 through 8, starting with all As as there's no better placeholder. If the spaces are skips in the keytext application, hoboy, but complexity. Anyway, I'm starting with the two one-letter words 'a' and 'I', ignoring 'O,' complexity. Fortunately, capitalization is left intact, so I'm assuming 'T', 'J', and 'L' are 'I' and that the two 'e's are 'a'. If the mods and char positions work out (I'll expand the scope of the keytext if needed), I'll look at the end of those contractions next.
+
+I think it's not Vigenere (with my assumption of meaningful whitespace, punctuation, and capitals). I've worked up to 15 keychars, and the constraints fall into contradiction. Maybe it's time to look at the clue more in-depth? I'm assuming it refers to Bill Cipher, but it could be a hint as to the type of cipher. Pythagorean triples, triangular numbers? It shouldn't be elliptical curve crypto since that's kind of actually secure. Going to look at some of the other options on that page.
+
+It's not obviously anything else on the page. I'm out of ideas for tonight. Random note, we see Grunkle Stan's rules 2, 3, 5, 6, 8, and 9 in this chapter (Pythagorean triples might be related but aren't isosceles). The last ciphertext has a very curious structure; the 4-4-5-4-1-4 word could either be a cute hyphenated phrase or a verification key for the puzzle. This twinges my intuition to say the first two words are 'If you', possibly 'If you post the' but I doubt 'post' too much. Just going to say, judging by the frequency analysis, the kappa-plaintext points to neither of the last two ciphertexts being substitution.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 5
+:DateUnix: 1456355000.0
+:END:
+
+*** Applying an additional cipher is a fairly inconvenient way of spoilerizing discussion of cipher-solving. Furthermore, why spoilerize this comment at all? You haven't even said anything other than, "Here's a couple of approaches that didn't work." And the author has [[https://www.reddit.com/r/rational/comments/47pdip/d_friday_offtopic_thread/d0euiyc][already expressed regret]] that the readership isn't caring much about the ciphers; having the only discussion of them occur not in plaintext probably doesn't help.
+:PROPERTIES:
+:Author: thecommexokid
+:Score: 3
+:DateUnix: 1456520164.0
+:END:
+
+**** Good points.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 3
+:DateUnix: 1456521754.0
+:END:
+
+
+**** TBF, Transfuturist is using ROT13, which is pretty basic as these things go.
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 1
+:DateUnix: 1456521592.0
+:END:
+
+***** Any amount of inconvenience generally provides a large drop-off in engagement. I made the decision to rot13 because decoding and encoding is easy for me to do, without considering others. I also seem to have a tendency to spoiler things that don't need spoilers.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 2
+:DateUnix: 1456539722.0
+:END:
+
+
+*** #+begin_quote
+  Maybe it's time to look at the clue more in-depth? I'm assuming it refers to Bill Cipher
+#+end_quote
+
+I dunno. I haven't watched the show, but the depictions I see in a Google image search all seem equilateral, not right isosceles. Also, can we expect that Dipper etc. are going to solve the cipher themselves soon within the story? If so, the solution must depend only on knowledge we can expect them to possess.
+:PROPERTIES:
+:Author: thecommexokid
+:Score: 2
+:DateUnix: 1456533548.0
+:END:
+
+**** The last point is why I have a disjunction between it referring to Bill Cipher and it providing a hint for the code. The former is narratively relevant, the latter is ludically relevant with a dearth of obvious alternatives.
+
+The reference to specific shape makes me feel safe in assuming the latter for now. But I still have no clue how it applies. Pythagorean triples are the only remotely code-relevant things I can think of, and those are all non-isosceles.
+
+Vigenere is still a possibility. I only looked at keys up to 15 characters in length. The first actual cipher shouldn't be too hard, even given the first message (unless this is intended to be unsolvable for a while), and Vigenere does seem like a next step. For longer keys, the only plausible means of remaining solvable is by referring to other referenced texts. That's how Significant Digits did it.
+
+I looked at "Bill Cipher" and "HOOPS" for short keytexts, despite their narrative implausibility. For longer keytexts, Grunkle Stan's rules could certainly apply, but again, they're narratively implausible. I'm going to try "TRUST NO ONE IN GRAVITY FALLS," which is specifically noted to be in all caps and near the beginning, whereas the cipher is on the first page.
+
+Nothing. Rot13 doesn't change it either. This is journal 3, Half Life 3 has been in production for 300 years, and right isosceles triangles have 3 sides. Let's try Grunkle Stan's third rule.
+
+Nothing. Not Rot13ed, either. I'm out of ideas again.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 3
+:DateUnix: 1456541064.0
+:END:
+
+***** Did any of your ideas for keys produce anything promising on the first <length-of-key> letters of the ciphertext? One common variant on Vigenere is the "auto-key" cipher, in which the key is a short phrase followed by the plaintext message itself. [[https://en.wikipedia.org/wiki/Autokey_cipher#Cryptanalysis][Wikipedia]] has some interesting suggestions on analyzing such messages.
+:PROPERTIES:
+:Author: thecommexokid
+:Score: 3
+:DateUnix: 1456543281.0
+:END:
+
+
+***** PS: Be sure, if you haven't, to try all your Vigenere key ideas in reverse, too (i.e., follow the encryption algorithm rather than the decryption algorithm).
+:PROPERTIES:
+:Author: thecommexokid
+:Score: 2
+:DateUnix: 1456543381.0
+:END:
+
+
+** #+begin_quote
+  “I wish homework worked that way,” said Mabel. “It does when you get to college,” said Stan.
+#+end_quote
+
+I wish :/
+
+#+begin_quote
+  She wasn't even certain what her own reaction was; it was as though it were being filtered through Dipper's and diluted out of existence.
+#+end_quote
+
+Sounds ominous. Magic twin stuff?
+
+#+begin_quote
+  No one ever did treat Thompson very well.
+#+end_quote
+
+Oh, you're showing the effect of butt-monkey-ism? Wonder how bad Toby's mental state is.
+:PROPERTIES:
+:Author: ThatDarnSJDoubleW
+:Score: 3
+:DateUnix: 1456386304.0
+:END:
+
+
+** Confused/excited Dipper is a major improvement over know-it-all jerkass Dipper, so that's good to see.
+
+The other characters too... reading in their voices from the show didn't create any jarring moments where it sounded wrong - well done on that front.
+
+I suspect I'm going to be of no use when it comes to solving puzzles/ciphers but I guess that at least the important ones will see an in-universe resolution, and any that don't will probably have someone figure them out here in the comments eventually.
+:PROPERTIES:
+:Author: noggin-scratcher
+:Score: 3
+:DateUnix: 1456748038.0
+:END:
+
+
+** /Waits eagerly for third chapter, because clearly this must be on a weekly update schedule, because clearly one sample forms an incontrovertible trend, and because clearly the determined chapter length means this is all pre-written instead of being estimated./
+
+So. I watched the show, and it was awesome. Bill was actually somewhat horrifying (Discord in MLP should have been like Bill except maybe for scarring the target audience, Bill should have been a next step up). Deer teeth. And Neil deGrasse Tyson as a superintelligent pig was glorious. I love all the characters so very very much, they're all my babies.
+
+I reread the first chapter (writing this before I reread the second), and WOW SO MANY REFERENCES. [[#s][]]
+
+Rereading the first chapter, I'm also not sure if these references Dipper's making to Mabel's comparable intelligence were simply missed on my part by an uncharitable reading, or if you retconned those in. Either way, it's a definite improvement on what I read before. Mystery Twins! [[#s][]]
+
+[[#s][]]
+
+[[#s][]]
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 3
+:DateUnix: 1456959538.0
+:END:
+
+
+** Oh, I'm definitely liking this.
+:PROPERTIES:
+:Author: XxChronOblivionxX
+:Score: 2
+:DateUnix: 1456309379.0
+:END:
+
+
+** I don't have any interest in gravity falls and don't plan to watch it at al...
+
+And yet I gave a try to this fanfiction and I was pleasantly surprised.
+
+I'm looking forward to the next chapters!
+:PROPERTIES:
+:Author: MaddoScientisto
+:Score: 2
+:DateUnix: 1456313449.0
+:END:
+
+
+** Should I watch and puzzle through Gravity Falls before reading and puzzling through this presumable masterpiece of Possession Sue subversion?
+
+Also, should I resolve not to read new chapters until I either solve or give up on the obvious puzzles in the preceding ones?
+
+#+begin_quote
+  [[#s][]]
+#+end_quote
+
+Good, because I have a Chrome extension to do that for me.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 2
+:DateUnix: 1456338997.0
+:END:
+
+*** Absolutely watch Gravity Falls, though the puzzles are more of a background element there, which were solved (consistently very quickly) by the community over the course of its four year run.
+
+The puzzles are more intended as a community effort here, too. If you figure something out, or have a thought towards the solution, absolutely post it here, though spoiler tags would probably be good. I'm not going for a sink-or-swim ethos where everyone has to figure it out on their own.
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 1
+:DateUnix: 1456339291.0
+:END:
+
+
+** I really dislike codes and cyphers in a story being given as a challenge to the reader. Sure, let me go and decipher that, so I can get a (probably) minute hint towards the overarching plot.
+
+Yeah, HPMOR wasn't perfect, far from it, but the riddles (no pun intended) there were at least fun to try and solve. Cyphers just need enough computational power to brute force.
+
+Beyond that, I liked the pace, and the main character, way better than the first. I'm looking forward to the next one
+:PROPERTIES:
+:Author: NemkeKira
+:Score: 1
+:DateUnix: 1456309015.0
+:END:
+
+*** [[https://www.reddit.com/r/ARG][Cryptography and steganography are fun to some people,]] and it's in keeping with the themes and subject matter of Gravity Falls. Don't rain on the parade, just ignore them like you already do.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 6
+:DateUnix: 1456337589.0
+:END:
+
+**** I just stated my opinion, because it's unlikely the author will change his plans for the fic. In case I brought some doubt to his efforts, I apologize, I was just stating my own preferences. I don't actually expect anyone to cater to them
+:PROPERTIES:
+:Author: NemkeKira
+:Score: 1
+:DateUnix: 1456350008.0
+:END:
+
+
+*** Agreed, that's also one of the problems with Significant Digits, the puzzles don't really seem relevant.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1456318281.0
+:END:
+
+
+*** Computation power alone will not break many of the codes in this fic.
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 1
+:DateUnix: 1456333946.0
+:END:
+
+**** Going on the assumption that I possess a piece of equipment specifically for that purpose, unless you invented your own new cyphering method, there's probably an online solution already
+:PROPERTIES:
+:Author: NemkeKira
+:Score: 1
+:DateUnix: 1456350145.0
+:END:

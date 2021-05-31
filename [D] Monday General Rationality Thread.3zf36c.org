@@ -1,0 +1,110 @@
+#+TITLE: [D] Monday General Rationality Thread
+
+* [D] Monday General Rationality Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 14
+:DateUnix: 1451919672.0
+:END:
+Welcome to the Monday thread on general rationality topics! Do you really want to talk about something non-fictional, related to the real world? Have you:
+
+- Seen something interesting on [[/r/science]]?
+- Found a new way to get your shit even-more together?
+- Figured out how to become immortal?
+- Constructed artificial general intelligence?
+- Read a neat nonfiction book?
+- Munchkined your way into total control of your D&D campaign?
+
+
+** Check out [[http://i.imgur.com/KezAIUF.gifv][this image]] (from the front page). I would assume that the design was made by projecting two line images against each other. The only real constraint on doing this with any two images is that height has to be equal. Since it's a wire sculpture, you also have some constraints like having all the wires connect to each other, because wire can't float.
+
+If you wanted to, and you had three images that fit within certain width/height constraints, you could add another image that's visible by rotating your view perpendicular to giraffe and elephant views. This is how Douglas Hofstadter created the wooden cube that's on the cover of Gödel, Escher, Bach, which he calls a trip-let (triple letter). If you want a visual example, [[http://i.imgur.com/XPuDKzG.png][here's one I made with the letters A, W, E]] using [[http://www.wamungo.com/PrintModel/Detail/Trip-let-blocks-like-in-GEB-530613ba89702816c05ed772][this script]].
+
+I'm trying to identify the properties of a set of glyphs such that you can combine any three glyphs (including duplicates) and have the proper projections from only three viewing angles (technically six, since you can project in either direction), as well as no additional projections of any other glyphs in the set. For example, a filled circle fails that test, because you could make a sphere, which projects a circle from the three perpendicular angles, but also from all other angles as well. /Making/ a set of glyphs like that is easy, but figuring out the general principle is hard. The above script allows for easy testing (since it can be modified for any polygon, not just the alphabet) and I already have the set of glyphs that I need, but I thought that the problem was interesting and I still don't really have the general rules figured out.
+
+(In my case I'm extruding through a base object of a cube, which means that all glyphs have to touch all four edges of a square, which makes things simpler.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 17
+:DateUnix: 1451941591.0
+:END:
+
+*** Have you looked through the mathematical literature? I'm sure someone has thought about this before, but I'm uncertain as to where to begin a search.
+
+What do you mean by a glyph? Like letters in the Latin alphabet? Or do you include literally any drawable figure? That feels a little too arbitrary to be solvable.
+:PROPERTIES:
+:Author: Gaboncio
+:Score: 1
+:DateUnix: 1452019276.0
+:END:
+
+**** For my purposes it's things that have been used as letters in various scripts. Currently I'm mostly using curved versions of Celtic runes, all constrained by being a single piece. But I think in the general case I would prefer to know what's true for any drawable figure. Figuring out whether any given set of glyphs follows my rules is probably NP-hard, but I'm not sure that precludes the creation of general rules.
+
+I sort of doubt that there's any mathematical literature on the subject, mostly because there's a combination of having no practical application and a fairly niche field.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1452020167.0
+:END:
+
+***** I don't think it's quite that hard. You just want to rigorously define and study a subset of 2D shapes. For your set of Celtic runes, it would be expensive to identify all of the combinations (basically n choose 3, where n is the number of discrete runes in the alphabet) but you could /probably/ do it in finite time. The problem lies in identifying what are the geometric properties of the glyphs that allow them to be represented together in that way.
+:PROPERTIES:
+:Author: Gaboncio
+:Score: 2
+:DateUnix: 1452021896.0
+:END:
+
+****** Since it's combination with repetition it would take a number of checks equal to [[http://www.wolframalpha.com/input/?i=%28n%2B3-1%29%21%2F%283%21%28n-1%29%21%29][(n+3-1)!/(3!(n-1)!)]]. So yes, you're right, it's easier than I thought.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1452028240.0
+:END:
+
+
+** Remember the site Polyhistor Academy is on? I rather like the way they do the quest by committee thing there, so I started up my own quest today. So... [[https://forum.questionablequesting.com/threads/the-city-of-ruin.2806/][Blatant self promotion.]] The site unfortunately requires an account to view threads, but it's worth it just for Polyhistor.
+
+My quest takes place in the same world as the book I'm writing, and starts where it starts. I do expect it to go off the rails immediately, so it may end very differently than I intend for the book. However, it'll also be useful to me for seeing how other people think characters should react if dumped into that scenario. If you also like the way they do 'quests' there, feel free to join in and try to munchkin things. Character generation for the PC is up and running, but so far no one character design is very far ahead, so you may be able to change the base character as well.
+
+Edit: They seem to be going for a background in forgery.
+:PROPERTIES:
+:Author: Rhamni
+:Score: 4
+:DateUnix: 1451930443.0
+:END:
+
+*** [deleted]
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1451932824.0
+:END:
+
+**** Lawyering up a plausible case: It's all an elaborate ruse to stress test my setting by letting a truckload of anonymous munchkins rule a disposable character by committee.
+
+Sincerely: The same occurred to me, but I tend to just treat both Monday Rationality threads and Friday Off Topic threads as off topic. I didn't feel like it warranted its own post.
+:PROPERTIES:
+:Author: Rhamni
+:Score: 6
+:DateUnix: 1451933195.0
+:END:
+
+
+**** The friday general and monday rationality aren't super distinct, in my opinion. We don't get enough off-topic that it really should be.
+
+I figure it's more of a guideline.
+:PROPERTIES:
+:Author: traverseda
+:Score: 5
+:DateUnix: 1451999770.0
+:END:
+
+***** #+begin_quote
+  The friday general and monday rationality aren't super distinct, in my opinion. We don't get enough off-topic that it really should be. I figure it's more of a guideline.
+#+end_quote
+
+Yeah, we'll go with this unless it becomes a problem.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 3
+:DateUnix: 1452141995.0
+:END:

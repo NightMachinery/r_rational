@@ -1,0 +1,404 @@
+#+TITLE: [D] Saturday Munchkinry Thread
+
+* [D] Saturday Munchkinry Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 5
+:DateUnix: 1530975999.0
+:END:
+Welcome to the Saturday Munchkinry and Problem Solving Thread! This thread is designed to be a place for us to abuse fictional powers and to solve fictional puzzles. Feel free to bounce ideas off each other and to let out your inner evil mastermind!
+
+Guidelines:
+
+- Ideally any power to be munchkined should have /consistent/ and /clearly defined/ rules. It may be original or may be from an already realised story.
+- The power to be munchkined can not be something "broken" like omniscience or absolute control over every living human.
+- Reverse Munchkin scenarios: we find ways to beat someone or something /powerful/.
+- We solve problems posed by other users. Use all your intelligence and creativity, and expect other users to do the same.
+
+Note: All top level comments must be problems to solve and/or powers to munchkin/reverse munchkin.
+
+Good Luck and Have Fun!
+
+
+** Mostly posting here to see whether I've missed a trick. Possible mild spoilers for /Worth the Candle/.
+
+You're sitting in a room with a text terminal in front of you. Text typed into the terminal goes into the next room, where your friend is (and vice versa for their own terminal). The terminal is insecure, and in fact, presumed compromised, such that whatever is transmitted between rooms is captured, whatever appears on the screen might be from your friend or a third party, and whatever you type might be changed en route, if the message isn't denied by the third party entirely.
+
+You need to communicate with your friend without the third party knowing what's communicated. Luckily, the third party that's compromised the system has some incentive to keep you talking to each other, so won't just shut down communication between the two of you, even if you begin transmitting data that it doesn't understand (probably, anyway).
+
+There are two types of information to transmit. The first is information that you're comfortable with the third party knowing, the second is information that you're /not/ comfortable with the third party knowing. *How do you talk to your friend?*
+
+- You and your friend have a pre-arranged authentication system in place, but it won't work in this scenario, because the third party can allow authentication to take place, then proceed as normal with capturing and manipulating the information.
+- You and your friend both previously memorized a fairly substantial table of information, where each number X is associated with either a 0, 1, or 2. The third party has no knowledge of this table, but the table length is limited, and there are obvious risks associated with re-using numbers.
+- You and your friend know each other fairly well, and have a shared history to draw on if you need more information.
+
+I've been looking at [[https://security.stackexchange.com/questions/45963/diffie-hellman-key-exchange-in-plain-english][Diffie-Helman key exchange]] but I'm not quite sure how that would work in practical terms for two people who don't have access to a computer.
+
+(Note that the pre-existing authentication system /can/ be used to transmit bits, because you can say to your friend "fail the next part of the authentication for 1, pass it for 0", and whatever your friend says, the third party won't know if you're going to interpret it as 1 or 0. But the table is probably more effective.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 9
+:DateUnix: 1530978361.0
+:END:
+
+*** Usually for cryptography, we call the two users Alice and Bob, but in this scenario, I think I'll call them Val and Joon...just random names I came up with ;-)
+
+I think that a key exchange is overkill -- the reason we use key exchange in modern society is that you want your computer to talk to Amazon, but you don't have any safe way to get Amazon information in the first place, and Amazon can't get you secure information. Sending that first piece -- the cryptographic key -- securely is the emphasis of key exchange. In this case, that table that Val and Joon arranged fills this need. All they need to do is agree on an algorithm which makes cracking this hidden key impractical for an attacker.
+
+If we were dealing with a computer, I would be worried about cryptographic strength. In this case I'm going to assume the following:
+
+- Both the users and attacker have access to pen-and-paper math but no sophisticated computing devices. The attacker has, say, 100 people working under him (so more resources than the users) though
+- The attacker is content with trying to learn what was said after-the-fact. Otherwise, the encryption becomes trivial, but as soon as it becomes clear that the attacker cannot follow the communication, he would shut down the channel
+- They can't see each other's work
+- The table is known to Joon and Val, not to the attacker, and is of useful length, but substantially shorter than the content of their communication
+
+Even in this scenario, the encryption is pretty trivial. As Joern314 said, a one-time pad is an easy and effective tool.
+
+Treat the table of numbers as an ordered list (from lowest table index to highest). Take each triplet of numbers (each in base-3) and encode them together -- now each grouping of numbers encodes one of 27 values -- enough for the 26 letters plus a space!
+
+Your table is a third as long now, but each letter can be mapped to any other letter -- treat it like a Caesar Cipher, but with a rolling code.
+
+If you made the total length of your communication no longer than the one-time-pad, then you would have a truly unbreakable code. As you get longer messages, this technique becomes imperfect -- you could guess the *length* of the cipher after the message is several times the length of the cipher, after which you would be able to start collecting statistical information about the message. But all of that is pretty computationally intensive and probably beyond the means of a bunch of humans in the five years before the world ends.
+
+With a reasonable-length pad (say, 60 base-3 digits or 20 letters long), you would probably be fine (because Intel does not exist in Worth the Candle)
+
+There are systems which are harder to crack than what I described, but that one works with pen and paper
+
+[[https://en.wikipedia.org/wiki/Caesar_cipher]]
+
+If you are patient and want an even simpler system, just write down a bunch of false (or irrelevant statements), each of which is a sentence long, and then match the true one with correct answers to the table.
+:PROPERTIES:
+:Author: munkeegutz
+:Score: 4
+:DateUnix: 1530992561.0
+:END:
+
+
+*** Just to clarify: using the authentication system you can communicate arbitrary amounts of independent bits the third party doesn't know?
+
+Then you just need more bits than your secret message contains. Using the table as well, of course. [[https://en.m.wikipedia.org/wiki/One-time_pad]]
+
+There are some weaknesses humans will cause, i.e. timing attacks (counting how long you need to encrypt something) or changing one bit the two friends exchange, just to see if the message becomes unreadable, etc. Latter might count as blocking communication, though.
+:PROPERTIES:
+:Author: Joern314
+:Score: 2
+:DateUnix: 1530985828.0
+:END:
+
+**** Non-Mobile link: [[https://en.wikipedia.org/wiki/One-time_pad]]
+
+--------------
+
+^{HelperBot} ^{v1.1} ^{[[/r/HelperBot_]]} ^{I} ^{am} ^{a} ^{bot.} ^{Please} ^{message} ^{[[/u/swim1929]]} ^{with} ^{any} ^{feedback} ^{and/or} ^{hate.} ^{Counter:} ^{198187}
+:PROPERTIES:
+:Author: HelperBot_
+:Score: 1
+:DateUnix: 1530985838.0
+:END:
+
+
+*** As others said, Alice and Bob don't need no modern asymmetric crypto. They already have exchanged key material.
+
+If they had access to calculator, they could now go on using e.g. AES-GCM. The problem is: They don't have this.
+
+[[http://burtleburtle.net/bob/rand/smallprng.html][Small PRNG]] was a good naive suggestion for a RNG that can be abused as a cipher (you XOR the output-stream with the cleartext). Authentication needs a hash function, not just a simple checksum; something like Murmurhash could work. (you don't want to be susceptible to bitflip attacks)
+
+[[https://en.wikipedia.org/wiki/Solitaire_(cipher%29][Bruce Schneier does not need a computer]] to do his crypto. Extra relevant because the cipher was designed as a prop of the Cryptonomicon. More modern, one could look at [[https://eprint.iacr.org/2017/339.pdf][LC4]], which is also authenticated and looks significantly faster to me; I really recommend at least skimming that paper and looking at the pictures at the end. Also, it is funny:
+
+#+begin_quote
+  I made a simple appliance to help a human perform the LC4 encryption and decryption algorithms by hand. The appliance consists of 36 wooden tiles plus a small plastic game marker, which I carry around in a bag (Figure 2). Each tile is marked at the top with one of the characters of the alphabet; at the right, the value (c mod 6); and at the bottom, the value (c / 6), where c is the character's integer value. The bag also is used to generate a random key: put all the tiles in the bag, shake it well, and draw tiles one by one
+#+end_quote
+
+Apart from this, I would think hard about other assets and priority: Is it really the case that both directions are completely insecure? And I would put more emphasis on authentication / MAC than on confidentiality, at least in Joon's situation, whatever it is. My take on it was [[https://www.reddit.com/r/rational/comments/8vkomq/rt_worth_the_candle_ch_108109_dreamveil/e1pp3gn/?context=3][here]].
+
+edit: Because that stuff is fascinating, apparently even almost trivial ciphers like [[https://en.wikipedia.org/wiki/VIC_cipher][VIC]] survived shockingly long, due to good OPSEC. But all this does not really matter, because Joon failed to properly prepare, as far as I can tell.
+:PROPERTIES:
+:Author: ceegheim
+:Score: 2
+:DateUnix: 1531162142.0
+:END:
+
+**** It seems that your comment contains 1 or more links that are hard to tap for mobile users. I will extend those so they're easier for our sausage fingers to click!
+
+[[https://eprint.iacr.org/2017/339.pdf][Here is link number 1]] - Previous text "LC4"
+
+--------------
+
+^{Please} ^{PM} ^{[[/u/eganwall]]} ^{with} ^{issues} ^{or} ^{feedback!} ^{|} ^{[[https://reddit.com/message/compose/?to=FatFingerHelperBot&subject=delete&message=delete%20e22q1ob][Delete]]}
+:PROPERTIES:
+:Author: FatFingerHelperBot
+:Score: 1
+:DateUnix: 1531162153.0
+:END:
+
+
+*** (I'm assuming that I can't just use a one time pad or overt crypto)
+
+If I could prepare in advance, I might create some kind of 'check digit' style check for consistency of the message.
+
+The last number on your credit card doesn't convey information, it just tells you that the rest of the numbers were typed correctly and not altered or switched.
+
+The problem is that you'd want to convey information even if the opponent made small alterations, and a check didgit tends to be valid or invalid.
+
+So, if I had a bunch of time, I'd do the following:
+
+Break the message into chunks based on punctuation. Calculate a check digit for each part.
+
+A part is "valid" if the check didgit is 0. Expect me to put in "invalid" parts as padding. When I initially write my message, the invalid parts will have check diget that follow some simple pattern (1. 2, 3, 4, 5, ...)
+
+Recover the message by just reading the valid parts. Use the invalid parts to detect meddling from the opposition and figure out what messages they think are important.
+
+If I had pen and paper, I'd map letters to numbers and use the luhn algorithm.
+
+If I had to do it in my head, I'd just calculate my check didgit based on words and their memorized word to number map. Luhn scores would be pretty easy to calculate for short phrases.
+:PROPERTIES:
+:Author: Kinoite
+:Score: 1
+:DateUnix: 1530995481.0
+:END:
+
+
+*** I'm going to assume you and the friend both have copies to the same book printed in the same edition. It doesn't matter what book it is.
+
+In your shared history, have already explained to your friend how a one time cipher works. And a pre arranged signal such as "this conversation is being monitored, bible 225."
+
+Then you can encode any message you want to send as the first letter of each word in a sentence. Always end a communication session with a new book or number (encoded). If you or they ever end a message you can't decode, send a new cipher book/page in the last good cipher.
+
+Unless your captor is a genius, they won't know what a phrase like that one single one out of the ordinary means. Any manipulation of your messages will reduce them to jibberish, but your protocol will always make you revert back to the last good cipher if one fails. And you only have to communicate your cipher page in advance once.
+:PROPERTIES:
+:Author: Terkala
+:Score: 1
+:DateUnix: 1530997152.0
+:END:
+
+**** It's a one time pad, don't revert. Using a book as a random pad should make your letter distribution the self-convolution of the english letter distribution, that doesn't sound secure. There's no need to mention the bible to the attacker if you can prearrange that you're talking about the bible. There's no need to transmit page numbers, just use all page numbers in sequence.
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 1
+:DateUnix: 1531001728.0
+:END:
+
+***** To give a specific example, let's say we picked a bible page with the words "the" as the first word on the page. That gives a shift key of 20,8, 5. So you shift the first letter of your message 20 places, then 8, then 5. If you need a longer message than 3 characters, you just take more characters from the same page. Just so we're both talking about the same encryption method.
+
+#+begin_quote
+  Using a book as a random pad should make your letter distribution the self-convolution of the english letter distribution, that doesn't sound secure
+#+end_quote
+
+The frequency of using common english letters doesn't make the cipher more breakable. Just because your encrypted text is AEIOU, doesn't mean that at the specific place when you used A, it actually maps to Z, and I could also map to Z, since you're changing your letter-mapping every character.
+
+Letter distribution analysis only works if you have a large body of text to work from. To break a Cesarean cipher you need at least ~5 letters of a word using the same shift cipher. So you'd have to repeat the same shift-cipher at least that much to have reasonable chance to decode it. Which is probably at least several pages of dense text. And that assumes your antagonist knows exactly which method you were using. So while you might eventually repeat a pattern in a breakable way if you're encoding War and Peace, it'll stand up for a lot of usage before that.
+:PROPERTIES:
+:Author: Terkala
+:Score: 1
+:DateUnix: 1531030422.0
+:END:
+
+****** That's the cipher I understood you to mean.
+
+The letter distribution being non-uniform indeed doesn't construct an attack. It's just a red flag that information-theoretical security has been lost.
+
+For example, we could guess that Bob says "Alice" somewhere, see what the key at any given length-5 substring would be if the message were Alice, and remember the positions where that key could be a valid substring of English text. Repeat the same with lots of long words they might be transmitting - long to reduce the false positive rate. If possible message-key stretches end up next to each other and the keys fit, that reinforces both stretches. Once you have a lot of guesses, you might find that a majority of the hypothesized key strings use the same sort of dialect and style - reinforce those and weaken the others. And so on.
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 1
+:DateUnix: 1531090556.0
+:END:
+
+
+*** There are two parts to this that you care about:
+
+- Generation of a secure shared random stream; in the simplest case this is a one time pad, but table length is limited. Thus you want a function to extend this entropy; Bob Jenkins's Small PRNG is a good suggestion since it's an economical mix of a few XORs and additions, and should be resistant to anything short of a major brute force attack or effort by experience cryptographers. Tell the other how the PRNG works, get them to seed it with the first N bits of a shared key, and use the output as a one-time pad. Synchronize by sharing (under encryption) the kth output, since this means you can notice if one of your computations has had an error ahead of time, though that does require upfront stream generation.
+
+- Authentication against modifications or replay attacks. This is fairly simple; checksum the message, encrypt the checksum, never reuse outputs from the PRNG, and always respond from a point in the stream later than what you are responding to. Repeat these instructions under encryption and wait for a response, else they can just be dropped.
+
+Then it's easy, albeit with a significant constant factor slowdown. Bethel should be able to do this transformation instantly; doing XOR and addition in hex is something you can pick up fairly quickly with effort. I'll try to think of ways to reduce the cost of calculation; you should be able to make simple mechanical contraptions for key generation, for example, though TBH I'm struggling to think of how to implement a fast mechanical XOR without nontrivial engineering effort.
+:PROPERTIES:
+:Author: Veedrac
+:Score: 1
+:DateUnix: 1531002020.0
+:END:
+
+
+*** One of the big problems for our talkers here is that they /do not know/ what resources the Eavesdropper has - anything they say, and code they transmit, might fall victim to a magic item whose purpose is to decrypt all encryptions (or that can be munchkinned to that use). Sure, the odds are low - but they are non-zero.
+
+So, there are two axes along which information can be measured. The first axis is how important it is for Friend to obtain the information you wish to share; and the second is how vital it is that Eavesdropper not know that information. Information that it is important for your friend to share but not vital for Eavesdropper not to hear must be sent; information that it is unimportant for your friend to know but vital that Eavesdropper not hear must not be sent. Information that is important for your friend to know immediately but also vital for Eavesdropper not to hear is where it gets tricky; one has to balance those axes against each other and against the odds of the information being decryptable.
+
+But the decryption is only half the problem. You /also/ want to be sure that the information that you send to Friend is correctly received, and not modified by man-in-the-middle attacks. Now, there are ways to handle this situation; and fortunately, both people trying to communicate already have a key (in the form of that memorised table) so Diffie-Helman isn't really going to give them anything more (it basically allows you, with much calculation, to add an extra row or two to that table - and can fail if any of the communication is altered midway). But, personally, I'd ignore the table. Rather, relate everything to things that happened in the character's shared pasts; if you want the other person to take some action, then describe rather the circumstances in which that action took place in the past without describing the action itself. Either the information goes through unmodified, or it gets changed - and if it gets changed by someone unfamiliar with your shared past, then it will get changed to something garbled, generic, and/or nonsensical. For added mystification, the communication need not refer to things that happened in the real world; a scene that took place in a fictional world know to both speakers but not to Eavesdropper (like, say, the /Harry Potter/ series) will also serve the purpose.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 0
+:DateUnix: 1531054997.0
+:END:
+
+**** Eavesdropper could take a guess at what sort of action you would recommend in that context, change "do what Harry did to Riddle's diary" to something generic, and swap it back in at an inconvenient point.
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 2
+:DateUnix: 1531091257.0
+:END:
+
+***** Hmmm. Dangerous, on Eavesdropper's part. If Talker suggests anything that Eavesdropper is /not/ expecting, then Eavesdropper can accidentally trigger all sorts of disaster.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1531121171.0
+:END:
+
+
+**** #+begin_quote
+  Magic item whose purpose is to decrypt all encryptions
+#+end_quote
+
+At which point any further conjecture is pointless. Might as well say there's a magic camera that reads minds, or a crystal ball TV that shows the future. Assuming your adversary has any arbitrary power makes it impossible to devise any intelligent response.
+:PROPERTIES:
+:Author: fish312
+:Score: 1
+:DateUnix: 1531125262.0
+:END:
+
+***** It still remains sensible to refuse to mention Secrets that it is not Very Important to tell Friend about - because that is a minor change to behaviour, with little to no short-term cost, that can potentially avoid an unlikely negative scenario.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1531125844.0
+:END:
+
+
+** I have to share this short and funny example of munchkinry:
+
+[[https://www.youtube.com/watch?v=LRLt3hkoB2g][Dragonball Z, rational edition]]
+
+(it has english subtitles)
+:PROPERTIES:
+:Author: JesradSeraph
+:Score: 8
+:DateUnix: 1531052493.0
+:END:
+
+*** This reminds me of TFS' DBZA. Especially the bit with the Dragon.
+:PROPERTIES:
+:Author: 1337_w0n
+:Score: 1
+:DateUnix: 1531092771.0
+:END:
+
+
+** You are the leader (president/governer/dictator/whatever) of (insert generic 21st century first world society). Superpowers have begun to manifest in, lets say 25% of the population all over the world. Superpowers come in all shapes and sizes, it could be anything you could imagine, god like power, or something insignificant. Regardless it is sure to cause some distruption to your society. Come up with a plan (new legislation, come up with new taxes, adjust budget spending, new ministries) to maximise the benefit your society gains from its new superpowered population.
+:PROPERTIES:
+:Author: lars_uf3
+:Score: 3
+:DateUnix: 1531018761.0
+:END:
+
+*** #+begin_quote
+  Superpowers come in all shapes and sizes, it could be anything you could imagine, god like power, or something insignificant.
+#+end_quote
+
+Then somebody is going to win, and you have no idea who. Spend all your efforts finding that person, and finding people who can find that person, before you lose. Your plan of action depends drastically on who you can get working for you. You will probably still fail though.
+:PROPERTIES:
+:Author: Veedrac
+:Score: 5
+:DateUnix: 1531055642.0
+:END:
+
+
+*** Propaganda time. Emphasise safety, patriotism. Depict the discovery of new powers as something to be celebrated - and /registered/, so the government knows what's going on.
+
+Hire suitable Supers where possible, especially in law enforcement. Bear in mind that most people don't want to destabilise society, and try to sort out the ones who do. Sharply discourage vigilanteism, but encourage flashy, visible power use amongst registered law enforcement individuals.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 4
+:DateUnix: 1531055414.0
+:END:
+
+
+*** If it's "anything you can imagine" as the limits... you're basically guaranteeing anarchy. Sure, people are going to be chill at first, because they think the old rules still apply, but gradually people will be forced to use their powers to force what they want to happen. Whether that's assassinating world leaders, making a mess, or destabilizing economies, people aren't going to react well to being handed pocket nukes.
+
+The only way to prevent this is an /aggressive/ propaganda campaign emphasizing normalcy, as well as enlisting as many supers as you can into the ranks of law enforcement. I really hope that you had a high approval rating before this happened, because otherwise that's going to increase the assassination attempts 100x.
+
+Of course, third world countries are going to descend into chaos, so you're going to have to figure out how to prevent the economic, refugee, cultural, and superpowered problems from spilling into your country (hello south america, africa, eastern europe, middle east, southeast asia...), which assumes that your country is nice and uniformly gentrified like iceland or the nordic countries. If you're someplace like america, flyover states, inner cities, and dying towns will be hotbeds of superpowered crime.
+
+That all assumes most superpowers lean towards the popular depictions of powers, where the majority are either useless or good for fighting and causing property damage. If your powers skew towards healing, empathy, building, tinkering, etc. the news looks a lot better.
+:PROPERTIES:
+:Author: CreationBlues
+:Score: 1
+:DateUnix: 1531024936.0
+:END:
+
+**** #+begin_quote
+  If it's "anything you can imagine" as the limits... you're basically guaranteeing anarchy.
+#+end_quote
+
+That can prove a good thing. Instead of being at the mercy of nation-states, the world becomes gradually at the mercy of random individuals.
+
+The end result will depend on whether the most hyper-powered individuals are willing to act well or not: instead of trying to maintain the statu quo by emphasizing loyalty, patriotism and fealty to the law in a clumsy attempt to have hyper-individuals continue delegating the important decisions to their ruler(s), the better (and probably only) option is to focus everyone's interest on [[https://en.wikipedia.org/wiki/The_Better_Angels_of_Our_Nature][the four "inner angels"]]: empathy, self-control, ethics and rationality. That also means people currently in power will have to choose between several different ways out:
+
+- they cede power away more-or-less graciously
+
+- they become glaring targets for anyone with a decisive superpower to take down
+
+- they themselves become better examples of the behaviour they are trying to elicit in super-powered individuals
+
+To put it another way: what is guaranteed by the setting here, is not war but disruption. It's no different in nature from very high-tech disruption, really.
+:PROPERTIES:
+:Author: vimefer
+:Score: 1
+:DateUnix: 1531127570.0
+:END:
+
+***** Anarchy: a state of disorder due to absence or nonrecognition of authority. Unfortunately, "nonrecognition of authority" is fundamental to not only the superhero archetype but also how individuals granted overwhelming power actually play out. Furthermore, regression to the mean doesn't play out in humanities favor, as the "mean" is whatever food we can scavenge out of the ground until the ripe old age of died in childbirth.
+
+"Disruption" is sort of good, but cancer is a type of disruption, war is a type of disruption, etc.
+:PROPERTIES:
+:Author: CreationBlues
+:Score: 1
+:DateUnix: 1531205840.0
+:END:
+
+****** #+begin_quote
+  Anarchy: a state of disorder due to absence or nonrecognition of authority
+#+end_quote
+
+Anarchy's not disorder. Whoever offered this definition clearly did not do their research. This subject has been rather well studied academically, by the likes of [[https://www.jstor.org/stable/3146284][Robert Ellickson]], [[https://books.google.ie/books?id=7FhzAwAAQBAJ&pg=PA106&lpg=PA106&dq=anarchy+pirates+caribbean&source=bl&ots=1iSjIIegz_&sig=dUva-tZUpIRlebWPfxbC-8qR87c&hl=en&sa=X&ved=0ahUKEwji4-yLnpTcAhUPrRQKHb5qBVI4ChDoAQgvMAI#v=onepage&q=anarchy%20pirates%20caribbean&f=false][Peter Leeson]], Hernando de Soto (on the emergence of property rights without authority), [[https://archive.org/details/ClastresSocietyAgainstTheStateEssaysInPoliticalAnthropology][Pierre Clastres]], etc.
+
+But yeah my point is that it is not necessarily a bad thing, which does not automatically make it a good thing either. It's just that historically, trying to force-stall disruption with state power does not tend to end well.
+:PROPERTIES:
+:Author: vimefer
+:Score: 1
+:DateUnix: 1531216043.0
+:END:
+
+
+*** Premis: I am somehow able to make arbitrary changes to the U.S. legal code withut all that inconvenient mucking about in Congress or worrying about re-election (possibly this is my super power).
+
+1. Classify super powers as "deadly weapons". (this makes super powered violence count as worse for legal purposes, and as a bonus prohibits Congress from illegalising powers thanks to the 2nd amendment)
+2. Declare people with powers a protected class for the purposes of anti-discrimination law, and violence against people with powers as a "hate crime". (scores easy points with the powered as the ones at risk would be the ones week enough the'd deserve to be protected by existing assault and harassment law anyway, so it doesn very little but looks like doign a lot)
+3. People with registered super powers are tax exempt. Registration is voluntary, but you do have to be able to prove your claims in a double blind study for anything subtle enough to not be trivially demonstrated. (encourages people with less flashy powers to disclose them to the government and also gives an incentive for foreign supers to immigrate which is going to be a major strategic advantage in dealing with foreign powers as the dust settles)
+4. Create a new executive position with the title of "Emperor" the authority to veto any bill passed by Congress and signed by the President, and nominal authority comparable to a cabinet member over matters pertaining to super powers. This position is held by the winner of a grand tournament held every year using Dragon Ball Z World Martial Arts tournament rules. The tournament will be televised and the federal government holds the merchandising rites. (gives a pressure valve of sorts to the might makes right crowd simultaneously given them a way otehr than declaring war to get a ton of power if they want it and are strong enough, while also limiting the destruction they cause, AND calling attention to whoever is the current biggest fish to deter any middling talent from thinking that being able to blow up tanks means being able to defeat the U.S. Government. Also, new revenue source from merch).
+5. Create a grant system similar to the McAurthur "genius grant" that pays people with super-science powers a stipend to do whatever they hell they want. (makes them less likely to turn their super science against the society that's giving them so much support.)
+6. Create a new agency or a branch within an existing agency who's job it is to find any viable ways to give non-powered people powers, or to remove powers from the powered and make both readily available to whatever extent the methods found allow as practical.
+:PROPERTIES:
+:Author: turtleswamp
+:Score: 1
+:DateUnix: 1531159448.0
+:END:
+
+**** Point 4 should only be done, if there is a need for it.
+
+It could be enough, if you just make it a sport. And maybe only let military in.
+:PROPERTIES:
+:Author: norax1
+:Score: 1
+:DateUnix: 1531324105.0
+:END:
+
+***** On #4 the wait and see approach will juts get people killed as the evidence that it's needed will be super-powered people starting fights to try and take over. Best case scenario we get an 9/11 like attack and then take action, worst case scenario "The United States of Dr. Murder-o the merciless; petty and, bad at grammar" is even worse a place to live than it sounds and it's no longer practical to try and institute a pressure valve system.
+
+Besides the president will need a Secretary of Super-Powers, and really an extra veto power floating around isn't THAT big a deal it's just another check and balance in a system designed around the idea of checks and balances.
+
+For similar reasons open admission is there because turning away somone who wants to enter runs too high a risk of them turning up anyway and not obeying the "no killing otehr entrants or the audience" rule for no real gain (well, except the probable ratings spike it'd cause).
+:PROPERTIES:
+:Author: turtleswamp
+:Score: 1
+:DateUnix: 1531340632.0
+:END:

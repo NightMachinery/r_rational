@@ -1,0 +1,326 @@
+#+TITLE: [D] Monday General Rationality Thread
+
+* [D] Monday General Rationality Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 20
+:DateUnix: 1463411049.0
+:END:
+Welcome to the Monday thread on general rationality topics! Do you really want to talk about something non-fictional, related to the real world? Have you:
+
+- Seen something interesting on [[/r/science]]?
+- Found a new way to get your shit even-more together?
+- Figured out how to become immortal?
+- Constructed artificial general intelligence?
+- Read a neat nonfiction book?
+- Munchkined your way into total control of your D&D campaign?
+
+
+** Does anyone have any techniques on how to change large parts of your personality? I have some character traits which are extremely sub-optimal.
+:PROPERTIES:
+:Author: narakhan
+:Score: 8
+:DateUnix: 1463440654.0
+:END:
+
+*** IME, the major thing is to focus on acquiring some positive habit or practice to override the negative "traits". You can't have a "null" personality trait.
+
+Tips from the s.o. are to seek help from an actual behavioral therapist and/or read about those techniques, since we've heard good things about them from friends. And to start training yourself with positive reinforcement to behave & hold attitudes more similar to how you wish you were behaving/thinking - replace negative lines of thought with preferable ones, catch yourself in unwanted behaviors and re-direct to better alternatives, and reward yourself for good days and small goals achieved. :D from "coping with anxiety ALL the time"
+
+Back on my own account now: yeah, Cognitive Behavioral Therapy really ought to be the first and default recommendation.
+:PROPERTIES:
+:Score: 7
+:DateUnix: 1463446823.0
+:END:
+
+**** Any good book recommendations for learning CBT?
+:PROPERTIES:
+:Author: ayrvin
+:Score: 1
+:DateUnix: 1463486945.0
+:END:
+
+***** I haven't read it myself, but /Feeling Good: The New Mood Therapy/ comes highly recommended and essentially popularised CBT in the first place. Ignore the fact that the cover looks like a terrible self-help book.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 2
+:DateUnix: 1463521000.0
+:END:
+
+****** [[/u/ayrvin]], I own /Feeling Good: The New Mood Therapy/ and this is 100% the right answer. I don't know of any other books about CBT, and that's pretty much because I didn't feel that they were necessary after I had read this one.
+
+From what I remember, it can get a little wordy and belabour the point. It also might have much that doesn't apply to you. However, the core technique/s were like a silver bullet for my depression. I was so relieved to find that it's also something that becomes /more/ useful the stronger you get as a rationalist, not less. As a bonus, it's also very cheap to get.
+
+So +1 to that recommendation.
+:PROPERTIES:
+:Author: DeterminedThrowaway
+:Score: 2
+:DateUnix: 1463528872.0
+:END:
+
+******* What specific CBT techniques does he describe?
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 1
+:DateUnix: 1463541662.0
+:END:
+
+
+***** No, you go get an actual therapist.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1463497650.0
+:END:
+
+****** Not always (and everywhere) an option.
+:PROPERTIES:
+:Author: OutOfNiceUsernames
+:Score: 3
+:DateUnix: 1463500347.0
+:END:
+
+
+*** If you are not physically active, you might consider exercise. Being in good physical condition can make a significant difference in your chemical balances and your emotional state. If you are in very poor condition, it may take a lot of work to get to the point where the good aspects of being physically active will be more significant than the sore muscles and tiredness.
+
+In and of itself, exercise won't help you change your personality, but a lot of traits/behaviors that you do not like might be linked to your current chemical balances and physical condition.
+
+If laziness or excessive procrastination is one of the traits you have, this might be a problem.
+:PROPERTIES:
+:Author: Farmerbob1
+:Score: 2
+:DateUnix: 1463579239.0
+:END:
+
+
+** I've read how bayesians describe bayesianism, I've read how bayesians describe frequentism, I've read how frequentists describe frequentism, but I've never read anything about how frequentists describe bayesianism. I feel I can't make an informed decision until I've read a criticism of bayesianism written by an intelligent frequentist or group of frequentists. Where can I find such a thing?
+:PROPERTIES:
+:Author: TimTravel
+:Score: 5
+:DateUnix: 1463436468.0
+:END:
+
+*** #+begin_quote
+  I feel I can't make an informed decision until I've read a criticism of bayesianism written by an intelligent frequentist or group of frequentists.
+#+end_quote
+
+Why make a "decision"? Employ statistical methods as they suit you. It's all sigma-algebras underneath; Boolean propositional combinations are just a discrete special-case that don't need the sophisticated machinery of real measure theory to map its algebra elements onto the real unit interval. (I guess that's a "frequentist" philosophical opinion, even though I like "Bayesian" methods better, though on the other hand, my only actual publication uses Fisherian statistics, though on the gripping hand, the publication I'm working on as a labor of love uses Bayesian probabilistic programming.)
+
+As it is, [[http://meaningness.com/probability-and-logic][here's a critique of Bayesian epistemology on grounds that it's not very good math.]]
+:PROPERTIES:
+:Score: 7
+:DateUnix: 1463446586.0
+:END:
+
+**** #+begin_quote
+  Why make a "decision"?
+#+end_quote
+
+It's something philosophically interesting and I want to know more about when it's appropriate to use each of the two approaches.
+
+I will read your link when I have time.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1463450184.0
+:END:
+
+***** #+begin_quote
+  I will read your link when I have time.
+#+end_quote
+
+About that: it was written without mentioning probabilistic programming, which is a recent development that started around 2002 and has been in full swing since around 2009 or so. We really can "probabilize" much richer structures than before this way, but Chapman's core point about probability theory /not/ generalizing /first-order predicate calculus/ actually remains correct.
+
+Computationally, I'd guess that this is because classical logic has a certain sequent calculus structure (you can turn a forall-sequent inside your proof term into a unique variable in the "environment" by universal instantiation), while probability has something of a conflicting sequent-calculus structure (the parameters to lambda-expressions or pi-types which would normally represent universal generalization instead, in the probability monad, represent /conditioning/ on specific parameter values).
+
+Sorry if that sounds like gibberish. It's somewhat easier to express in symbols. I guess...
+
+TL;DR: We'd like to probabilize "forall x, Predicate(x)" to something that says, "Pr(Predicate holds for all x's)". Unfortunately, the computational way of expressing "forall x. Predicate(x)" is structurally equivalent to the computational way of saying, "Pr(Predicate(X) | X=x)". So probability and universal generalization don't play well with each other.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1463451571.0
+:END:
+
+****** I know this doesn't completely resolve the criticism, but just to check that I understand: does the problem go away if you have a finite number of things you're making "for all" and "there exists" statements about?
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1463453655.0
+:END:
+
+******* Uhhhhh...
+
+So, if you've just got a finite number of objects you're talking about (like chess-pieces on a table), then you don't need the "for all" and "there exist" quantifiers to talk about them. And indeed, in that case, the problem of how to combine probability and logic goes away: you have a finite Boolean algebra, and probability works for those just fine. *TL;DR: If you're interpreting this the way I think you are, you're correct. Finite cases are just fine, but passing to infinite cases causes difficulty in choosing the right formalism.*
+
+On the other side, mathematical formulas with /infinite/ numbers of quantifiers at the front aren't things we usually deal with. When dealing with finite numbers of (potentially) alternating quantifiers, we already run into trouble /just/ trying to find out if the statement is true or false: the computational complexity of the proof procedure can grow exponentially (very common) or become infinite (the statement can be unprovable within our current system of axioms). Trying to probabilize that just runs into the trouble that is the field of probabilistic logic right now.
+
+The place where the two unify again is in hypothetical reasoning, "Given A and B, I can prove C." In logical notation, we could call this, =A & B -> C=. In programming, we'd write it (equivalently) as, =A -> B -> C=. In probability theory, we'd write it as, "Pr(C | A, B)".
+
+The difference is that in classical logic, proving a "given A and B, we can show C" statement for nonspecific A and B /generalizes/ to "for all A and B, we can show C", whereas in probability the same underlying structure gets read out as, "Given /any particular/ A=a and B=b, we model C as having the probability Pr(C | A=a,B=b)."
+:PROPERTIES:
+:Score: 6
+:DateUnix: 1463455440.0
+:END:
+
+******** I've always had a nagging suspicion that for mathematical statements it is incoherent to talk about the probability of them being true, because either it is logically impossible for them to be true or it is logically impossible for them to be false. Is that related?
+
+If the links you sent explain it all it's fine to just tell me to RTFM. I'm just asking because I'm curious.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 2
+:DateUnix: 1463455748.0
+:END:
+
+********* #+begin_quote
+  I've always had a nagging suspicion that for mathematical statements it is incoherent to talk about the probability of them being true, because either it is logically impossible for them to be true or it is logically impossible for them to be false. Is that related?
+#+end_quote
+
+Oh boy, here we go to actually a related but quite different topic. This is some of the stuff that MIRI studies full-time, so I hereby summon [[/u/Transfuturist]], who might have spare time and be willing to explain stuff, and [[/u/EliezerYudkowsky]], who actually wrote those papers and thus probably possesses the best understanding of what's going on here.
+
+"Logical uncertainty" is indeed the attempt to extend normal Bayesian reasoning to purely mathematical statements, and do so coherently. It's related to, but different from, "probabilistic logic". As I understand the papers:
+
+- "Probabilistic logic" is about proof systems which reason about the probability that a certain statement is /true/, defined as a probability measure over models (as in model-theory, Eliezer's subject) of the original axiomatic system. In such a logic, a statement like, "Pr(A) = 0.3" says, very roughly, "30% of the models of my underlying axiom system satisfy the statement A". It can also be a way of reasoning about systems which replace impossible (read: computationally non-finite) reasoning problems (like Loebian reasoning) with some amount of randomness (thus closing infinite loops)... kinda.
+
+- "Logical uncertainty" is about how to use probability to reason well in the absence of the computational power necessary to definitively solve a problem. The standard question to consider is, "What's the trillionth-and-first digit of the geometric constant pi?" Since we can write down very small formulas expressing the full, infinite sequence of digits of pi, the trillionth-and-first is obviously a completely fixed, well-defined thing. In fact, we have some information about what sort of thing: it belongs to the set or type of base-10 digits (or whatever base we use). However, we don't have a /proof/ that all digits occur equally often in pi, so we can't say we've /proven/ Pr(trillionth-and-first-digit of pi = 3) = 0.1. Instead, we try to extend our normal probabilistic-empirical reasoning to the mathematical realm, and formalize a sense in which we can say, "Even without proof, we've /observed/ all the digits with /seemingly roughly/ equal frequency in pi, and 10% per digit is the prior distribution involving the /least/ prior knowledge and the /greatest/ prior uncertainty, so that should be our distribution /until/ we obtain a full computational trace of a pi-digits program run to its trillionth-and-first iteration."
+
+By now we've gone well away from my own field of clear and consistent study, so I'm a lot less clear on what I'm saying.
+:PROPERTIES:
+:Score: 14
+:DateUnix: 1463456727.0
+:END:
+
+********** This reply is basically correct.
+:PROPERTIES:
+:Author: EliezerYudkowsky
+:Score: 4
+:DateUnix: 1463458035.0
+:END:
+
+
+********** Very interesting. Thanks!
+:PROPERTIES:
+:Author: TimTravel
+:Score: 2
+:DateUnix: 1463457949.0
+:END:
+
+
+*** Oh yes, and [[http://bactra.org/weblog/569.html][here's]] the other major critique of "Bayesianism" (Bayesian epistemology, less Bayesian statistical methods) I've read, this time by a professional frequentist statistician. [[http://nostalgebraist.tumblr.com/post/83006103140/what-is-bayesianism-we-i-just-dont-know][And a longer post on rationalist Tumblr track-backed by it.]]
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1463452158.0
+:END:
+
+
+*** [[https://errorstatistics.com/]] has some.
+:PROPERTIES:
+:Author: isitike
+:Score: 3
+:DateUnix: 1463493189.0
+:END:
+
+
+** Came up with an interesting variation on the Prisoner's Dilemma which I think has interesting implications. I call it the Dilemma Of The Magi for reasons I think should be discernible.
+
+Two people are presented with two buttons, and each must choose to press one of them. The Rescue Button always kills whoever presses it. The Rest Button also kills whoever presses it - unless the other person presses the Rescue Button, in which case the Rest Button does nothing at all.
+
+I am not sure what the dominant strategy is here if there is no communication between the people involved. Societies composed entirely of cooperate-bots and societies composed entirely of defect-bots will both go extinct, while random button choosers will survive among their own kind a quarter of the time. A defect-bot introduced into a society of random button choosers will survive half the time, twice as often as the random button choosers, but the advantage disintegrates once the society is taken over by defect-bots.
+
+On the other hand, it seems that if there is communication between the people, altruistic behavior would be forced, as clearly one person dying (which might be you) is preferable to two people dying (one of which is definitely you), at least in the generic case. So the two people would have to argue until they could unanimously decide who should sacrifice themselves - with no decision being made until then. This challenges our intuition that altruistic behavior is extra-rational.
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 10
+:DateUnix: 1463425083.0
+:END:
+
+*** The dominant strategy is to press rest.
+
+Classic game theory assumes sociopaths actors. They wouldn't care about saving someone else. Pressing rest is the only scenario that has an payoff that includes not dying, so it dominates pressing rescue.
+
+Yes, both defect bots and cooperate bots would die, but that has nothing to do with a dominant strategy.
+
+--------------
+
+If they aren't sociopathic, and care about the other person living, then the payoff would be functionally the same as the following matrix (assuming that they care more about themselves than the other person).
+
+| P1 / P2 | Rescue | Rest  |
+|---------+--------+-------|
+| Rest    | (3,2)  | (0,0) |
+| Rescue  | (0,0)  | (2,3) |
+
+(Note how Rescue and Rest are reversed for the other player)
+
+This is /functionally/ the same as [[https://en.wikipedia.org/wiki/Battle_of_the_sexes_(game_theory)][battle of the sexes]] (it doesn't matter that Rescue and Rest are reversed). The best strategy in battle of the sexes is to lock in your answer (of Rest) before your opponent. In effect, forcing them to choose between killing you, or saving you, since that person's death is already assured.
+
+If you can't communicate that you've pressed the button, you could both agree to randomize (which only lets you live 25% of the time).
+
+(Edit: It occurs to me that a better strategy is for one person to randomize, and then the other person to pick the opposite, assuming it could be enforced. This leads to you living 50% of the time)
+
+If you can't communicate at all, (or can't enforce an agreement) then randomize based on payoffs to find the Nash equilibrium (I don't feel like doing the math, but I'm pretty sure that it would end up with you living less than 50% (and maybe even less than 25%) of the time).
+
+If you can't even randomize, then the game collapses into a game where both of you end up dead, regardless of your decision.
+:PROPERTIES:
+:Author: electrace
+:Score: 11
+:DateUnix: 1463430068.0
+:END:
+
+**** What I find particularly interesting in the communication-allowed unenforceable-agreements situation is that you could end up using some shared external factor as a randomizer, to prevent cheating. For example, we agree that I'll live if the test takes place between the new moon and the full moon, and you'll live if it's between the full moon and the new moon.
+
+Once such an agreement exists, neither player has an incentive to violate it before the other, so it's a Nash equilibrium. And that's how you can create a situation where two perfectly rational, perfectly informed actors are making decisions based on astrology.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 6
+:DateUnix: 1463521435.0
+:END:
+
+
+** Can we talk about fanfictions here? I'd like to discuss the direction Power Games (Aleph/Immatrael's "rational" Nanoha fanfiction) is going.
+:PROPERTIES:
+:Author: elevul
+:Score: 3
+:DateUnix: 1463424105.0
+:END:
+
+*** If you're discussing the rational aspects, that probably deserves its own thread - post away!
+
+If it feels 'off-topic', the Friday Off-Topic thread is probably the best place.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 5
+:DateUnix: 1463440149.0
+:END:
+
+
+** Has anyone given any thought into good techniques for brainstorming? I feel like whenever I try to come up with ideas, I'm doing it in a very inefficient way, but I can't for the life of me understand how I would do it any better.
+:PROPERTIES:
+:Author: Tandemmirror
+:Score: 3
+:DateUnix: 1463431570.0
+:END:
+
+*** All I know is you're supposed to filter absolutely nothing, no matter how obviously terrible the idea is. I type out notes in a plain old text file because I have bad working memory and I don't want ideas to slip away a while I'm writing the previous idea. If you're running out of ideas, try drawing a thought web / directed graph of how your ideas relate. Go through each of your ideas and add the opposite / reverse / etc of the idea if that's meaningful, keeping in mind that statements can have multiple opposites (she gives letters to everyone, she takes letters from everyone, she doesn't give letters to everyone, she doesn't give letters to anyone, everyone but her gives letters to everyone, etc). If that's still not enough, try enumerating through each pair of ideas and try to come up with a way to combine them in an interesting way.
+
+When possible, sleep on it and come back later. Don't bother thinking about it until the next day. Sleep does mysterious magical things for brain organization.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 7
+:DateUnix: 1463437196.0
+:END:
+
+
+*** John Cleese (Monty Python) has a [[https://www.youtube.com/watch?v=PQ0lck7oo4A][great video]] where he talks about effective brainstorming. Of course, hes a comedian and an artist, so he doesn't call it any of that, but that's what it is non the less.
+:PROPERTIES:
+:Author: syberdragon
+:Score: 2
+:DateUnix: 1463444425.0
+:END:
+
+
+*** It really depends on what you're trying to brainstorm ideas for. Your process for "new things I could invent and get a patent on" will necessarily look a whole lot different from the process for "stories to write".
+
+Personally, I think "random" buttons are really helpful, whether that's online generators, [[https://en.wikipedia.org/wiki/Special:Random][random Wikipedia articles]], or rolling some dice against a big list. You can also use that with my other favorite brainstorming technique, which is to randomly mash two things together in order to see where their interesting points of contact are.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1463437273.0
+:END:

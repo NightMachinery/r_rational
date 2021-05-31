@@ -1,0 +1,250 @@
+#+TITLE: What tracker do you guys use?
+
+* What tracker do you guys use?
+:PROPERTIES:
+:Author: SkyTroupe
+:Score: 10
+:DateUnix: 1551376175.0
+:END:
+I need something to notify me when the stories I read update. What do you guys use?
+
+Edit: For stories not on Patreon/SB/SV
+
+
+** I often just use [[/r/rational]] to be honest, most of the updates to stories I like come through here.
+:PROPERTIES:
+:Score: 32
+:DateUnix: 1551393871.0
+:END:
+
+
+** I'm gonna be obvious here but: Most webnovel repositories have mail alert features.
+
+For those stories that aren't published on a repo, there may be an RSS feed. If there's no feed, you may try asking for one.
+
+Although to be honest I've long since decided to just /not/ follow webnovels that I can't manage in Calibre (through FanFicFare with mail alerts). There's just too many stories from too many sources and I have to filter them /somehow/ or I'll lose my mind. That means no blogs, no custom sites, no non-threadmarked forums posts.
+:PROPERTIES:
+:Author: rdalex
+:Score: 19
+:DateUnix: 1551378936.0
+:END:
+
+*** Just to add on: when there's a feed but no email list, I personally use blogtrottr.com . Also +tags in my email address so all my updates are easily filtered.
+:PROPERTIES:
+:Author: RiOrius
+:Score: 2
+:DateUnix: 1551392017.0
+:END:
+
+
+*** Ditto, Calibre+ fanficfare is too damn convenient, I'm not going to /manually track/ a story like a savage.
+
+Every few days, I scan over all in-progress stories with fanficfare. 6 hours later, I confirm the updates.
+
+I may have too many ebooks. 30k+.
+:PROPERTIES:
+:Author: nerdguy1138
+:Score: 1
+:DateUnix: 1551587700.0
+:END:
+
+**** What.
+
+No, please don't do that. Please don't just batch-scan all your stories. That's exactly the kind of thing that makes repos throttle their sites to mitigate bot-access abuse, and the exact reason FFF has such a huge timer between FF.net requests.
+
+Please use mail alerts, and use FFF's "Get story URLs from email" feature. Your story updates will be WAY faster!
+
+Sure there'll be some repos with no mail alert; for those you can create a "Manual update check" saved search on those publishers.
+
+You can also create a custom column to evaluate (roughly) whether a chapter is late or not, based on publication date, last update date, and number of chapters. You can then only check those chapters that have a certain number of missed update cycles.
+
+This custom column of mine tells me when an ongoing webfic has more than two missed update cycles, and how many missed days (just copy/paste the whole thing as a custom column template):
+
+#+begin_example
+  program:
+  # Days since the last update
+  days_since_last=days_between(today(), raw_field('#updated'));
+
+  # The first chapter doesn't count in the average; nor do books with no chapters (since they generate a divide by zero error)
+  chapters=cmp(field('#chapters'), 2, 1, subtract(field('#chapters'), 1), subtract(field('#chapters'), 1));
+
+  # Days between chapters, in average.  If the average is less than one day, we up to one day.  This is so incomplete multi-chapters uploaded in one go don't get crazy values.
+  pub_length=days_between(raw_field('#updated'), raw_field('pubdate'));
+  avg=divide(cmp(pub_length, 0, 1, 1, pub_length), chapters);
+  avg=cmp(avg, 1, 1, 1, avg);
+  # Number of days an update should have come up, based on average
+  days_delayed=subtract(days_since_last, avg);
+
+  # Number of 'deadlines' missed.
+  deadlines=divide(days_since_last, avg);
+
+  # We only display a value for books with a Last Updated value. Among those, we dismiss completed books.
+  # You'd think a date column with an undefined value would be considered empty by ifempty(), but nope.  It's a column with a 'None' value.
+  contains( raw_field('#updated'), 'None', '',
+      str_in_list(field('tags'), ",", "Completed", "",
+          cmp( deadlines, 2,
+          "", "", finish_formatting( deadlines, "0.0f", "x" , finish_formatting(days_delayed, "0.0f", " (", finish_formatting(avg, "0.0f", ", avg ", ")")))
+          )
+      )
+  )
+#+end_example
+:PROPERTIES:
+:Author: rdalex
+:Score: 2
+:DateUnix: 1551724765.0
+:END:
+
+
+** This isn't for everyone, but for the stories I really care about (WtC, MoL) I support them on Patreon. For those two at least the authors post when they upload a new chapter.
+
+(I'm sure someone will come along with a better direct answer to your question.)
+:PROPERTIES:
+:Author: 8gigcheckbook
+:Score: 9
+:DateUnix: 1551376708.0
+:END:
+
+*** Oh for those yes. I just meant for stories that aren't updated on Patreon/Spacebattles/SufficientVelocity
+:PROPERTIES:
+:Author: SkyTroupe
+:Score: 4
+:DateUnix: 1551377173.0
+:END:
+
+
+** For anything with an RSS feed, IFTTT + Pocket works great.
+:PROPERTIES:
+:Author: endtime
+:Score: 8
+:DateUnix: 1551377984.0
+:END:
+
+
+** For Practical Guide to Evil, I used to use Feedhuddler until it shut down, and now I use an IFTTT applet. Most stories (eg. all that use Wordpress) have an RSS feed, so that might be worth checking out.
+
+(For me, Pocket makes particular sense because it can sync to an e-reader, but there are other ways to use it as well.)
+:PROPERTIES:
+:Author: Arancaytar
+:Score: 3
+:DateUnix: 1551383372.0
+:END:
+
+
+** I use [[https://www.inoreader.com/][Inoreader]] as an RSS aggregator. In general, if you want to be notified when one of several streams of content updates, RSS feeds are the most straightforward solution that isn't tied to a platform like Facebook/Twitter/whatever. They're emitted by Wordpress blogs, most webcomics, Reddit and even Youtube if you search a little (not Archive of our Own, unfortunately).
+
+Honestly, I'd say any feed aggregator is as good as any other. Inoreader has a good UI, decent features in the free version, no major drawback and mostly does everything you'd expect it to do.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 3
+:DateUnix: 1551378339.0
+:END:
+
+*** Ao3 has the subscription feature for stories, series, and users. Weirdly, not for collections.
+
+I use fanficfare's "grab story URLs from email" option to update ao3 stories and grab new ones.
+:PROPERTIES:
+:Author: nerdguy1138
+:Score: 1
+:DateUnix: 1551587839.0
+:END:
+
+
+** I hit the “subscribe” button, or use an RSS feed when that isn't available.
+:PROPERTIES:
+:Author: callmesalticidae
+:Score: 2
+:DateUnix: 1551379439.0
+:END:
+
+
+** Most sites have an RSS feed.
+:PROPERTIES:
+:Author: EthanCC
+:Score: 2
+:DateUnix: 1551385983.0
+:END:
+
+
+** I've been using mail for stories and anything else where that's an option. I also use feedly.com for RSS feeds.
+:PROPERTIES:
+:Author: archpawn
+:Score: 2
+:DateUnix: 1551392041.0
+:END:
+
+
+** I don't use one. I have 46 tabs open on my phone
+:PROPERTIES:
+:Author: TBestIG
+:Score: 2
+:DateUnix: 1551743964.0
+:END:
+
+*** I relate to this on a spiritual level
+:PROPERTIES:
+:Author: SkyTroupe
+:Score: 3
+:DateUnix: 1551842705.0
+:END:
+
+
+** RSS is the answer. I use Feedly, configured to be like the long-dead Google Reader as much as possible.
+:PROPERTIES:
+:Author: -main
+:Score: 1
+:DateUnix: 1551441879.0
+:END:
+
+
+** Calibre + FanFicFare works pretty well.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1551479693.0
+:END:
+
+*** Mark currently-reading stories as favorite, to track them easier in your ever-growing hoard.
+:PROPERTIES:
+:Author: nerdguy1138
+:Score: 2
+:DateUnix: 1551587517.0
+:END:
+
+**** Excellent advice for people who categorise on that axis!
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1551596971.0
+:END:
+
+
+** Theoldreader
+
+[[https://theoldreader.com][theoldreader.com]]
+
+​
+
+you just have to find the rss link and copy+paste it into the site, and it lets you track which chapters you've read and collects links to chapters automatically.
+
+​
+
+for reddit threads, you can make a link by using the search bar, and once you've come up with a search that will give you the chapters and not too much else, you set it to sort by 'new' and then type ".rss" after the search (before the question mark) in the url, then copy & paste that whole link.
+
+​
+
+Wordpress sites often have a link somewhere on the page, but it's usually just [[https://www.example.com/feed.rss]]
+
+​
+
+archiveofourown doesn't have the feature available, as far as I can tell.
+:PROPERTIES:
+:Author: MilesSand
+:Score: 1
+:DateUnix: 1551486252.0
+:END:
+
+
+** I have a textfile I maintain on my harddrive of the good stories and what chapter I have read up to. I've tried using various websites in the past, but I read too many genres to have everything covered in one area. Also I don't like getting a bunch of notifications for small chapters in email.
+:PROPERTIES:
+:Author: Judah77
+:Score: 1
+:DateUnix: 1551579844.0
+:END:

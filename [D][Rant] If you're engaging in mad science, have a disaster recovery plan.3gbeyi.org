@@ -1,0 +1,343 @@
+#+TITLE: [D][Rant] If you're engaging in mad science, have a disaster recovery plan
+
+* [D][Rant] If you're engaging in mad science, have a disaster recovery plan
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 29
+:DateUnix: 1439093554.0
+:END:
+I watched two summer blockbusters today. Both had, as their climax, the destruction of information held by a large company with lots of resources. /In neither case should this have happened./
+
+I understand the storytelling impulse that leads writers to make a plot like this. It allows you for a nice dramatic moment when the hero is reaching out towards the detonator with a single bloody hand. It makes the heroic sacrifice a lot more clean. It's efficient; it's a single goal for the climax.
+
+/However .../
+
+Pretty much every large company in the world keeps off-site backups. This is not only common sense, it's industry standard. If a significant fraction of the value of your company is held in the form of information, one of your top priorities is in protecting that information. Leave aside superheroes and lone-wolf terrorists for a moment, there are all sorts of mundane reasons to keep back-ups. In a lot of cases, it's even a legal requirement.
+
+In Hollywood screenwriting, acknowledging this fact is inconvenient, so they don't do it. In rational fiction, please remember that the enemy is smart, and you don't have the luxury of pretending that all data is housed at a single point of failure (unless there's a really, really good reason). This goes triple if the enemy knows that someone is actively trying to destroy the data.
+
+This is part of the terrible [[http://tvtropes.org/pmwiki/pmwiki.php/Main/NoPlansNoPrototypeNoBackup]["No Plans, No Prototype, No Backup" trope]].
+
+(The offending movies are both recent, and I can't name them without spoiling the climax; if you don't care about that, they were [[#s][]] and [[#s][]]. I sort of consider spoiling blockbusters to be pointless considering how formulaic they tend to be.)
+
+
+** It's mad /engineering,/ people.
+
+Mad /science/ is experimental setups which when described sound like a mix between the highly unethical practices found at a concentration camp, and [[http://www.tvtropes.com/pmwiki/pmwiki.php/Main/NoodleImplements][noodle implements]].
+
+(Warning, TV Tropes link.)
+:PROPERTIES:
+:Author: mhd-hbd
+:Score: 23
+:DateUnix: 1439101348.0
+:END:
+
+*** I've heard this said a bunch, and it's indeed a great line. That said, lots of mad scientists throw around phrases like "Using my theory of Kopelson Intrinsity I'm gonna blow up the sun with my death-ray," especially before it was too cliche. So, they were mad scientists at /some/ point at least, before they became mad engineers. The true nature of Dark Science: failing to publish!
+:PROPERTIES:
+:Author: ancientcampus
+:Score: 4
+:DateUnix: 1439303253.0
+:END:
+
+**** #+begin_quote
+  "Nick told me everything. He was too polite to suggest that what you're trying to do is insane. He doesn't know enough about magic to pass judgement. I do. What you're trying to do is insane. Do you want to know what you're doing wrong?"
+
+  "Um--"
+
+  "You're not writing anything down."
+
+  "Um--"
+
+  "This is not a mystical adventure. You are not the protagonist. You're seeing and doing things which are having profound emotional effects on you. You're being irrational. You're not thinking things through, you're not working things out. You're going on mental arithmetic instead of paper arithmetic and you're going on gut instinct instead of worked, peer-reviewed results. This is not good science."
+
+  "But I'm right."
+
+  "I don't care how right you think you are. I don't even care how right I think you are! I want to see a LaTeX-typeset paper from you. You need to show your working, because there are demons at work in your working."
+#+end_quote
+
+--- /Ra/, by Sam Hughes
+:PROPERTIES:
+:Author: mhd-hbd
+:Score: 4
+:DateUnix: 1439303990.0
+:END:
+
+***** That writer went to grad school. Thank fucking God someone did.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1439409767.0
+:END:
+
+
+***** God damn you, I don't have TIME to read Ra again tonight! It's three am ALREADY!
+:PROPERTIES:
+:Author: Nevereatcars
+:Score: 2
+:DateUnix: 1439459052.0
+:END:
+
+
+** TVTropes lists the best counterexample, in Contact: "First rule of government spending: why build one, when you can build two, at /twice the price/? Only, this one can be kept /secret/."
+
+(After some quick searching, this line appears to be unique to the movie; if it's in the book I can't find it. Well done, Hollywood.)
+:PROPERTIES:
+:Author: STL
+:Score: 8
+:DateUnix: 1439146777.0
+:END:
+
+
+** ant man? when i saw it by the end of the movie i was thinking "why did the guy didn't send the hornet suit miniaturized through fedex to Hydra three days before the party?" or keep a multi terabyte drive with the plans on him allways. fun movie though.\\
+edit: now that i think of it did the pym particle produce energy? i mean the hornet suit had HUD, jetpack, enhanced strength,and multi kilowatt lasers with no arc reactor in sight! should iron man be concerned?
+:PROPERTIES:
+:Author: puesyomero
+:Score: 4
+:DateUnix: 1439097311.0
+:END:
+
+*** The villain's entire motivation seemed to be that he was insane. They explain this in the movie as something something particles, which is an enormous cop out. It makes for an extraordinarily weak villain, even in comparison with the weak villains of other superhero movies, but it was still fun enough in spite of that.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 10
+:DateUnix: 1439097759.0
+:END:
+
+**** Oh. [[http://tvtropes.org/pmwiki/pmwiki.php/Main/InsaneEqualsViolent][Hollywood Insanity.]]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1439265097.0
+:END:
+
+
+*** #+begin_quote
+  should iron man be concerned?
+#+end_quote
+
+I came away with the same impression after watching Captain America 2. Apparently Tony Stark isn't the only one who gets stupidly advanced tech. Pretty sure Iron Man suits or their equivalent could be manufactured by any number of people and groups in the Marvel universe, if it was consistent.
+:PROPERTIES:
+:Author: Pluvialis
+:Score: 5
+:DateUnix: 1439119289.0
+:END:
+
+**** I think one of the main points made by the Iron Man sequence of movies was that the suit, in-and-of-itself, is just a commodity (both in its expendability, and in its ease of manufacture.) Rather, it's the suit /plus an autonomous AI/ (Jarvis), and the ability to scale that up, that makes for usefully-leveraged force.
+:PROPERTIES:
+:Author: derefr
+:Score: 1
+:DateUnix: 1439148439.0
+:END:
+
+
+*** Well the reason he didn't send it to Hydra was partially because he wanted to rub it in Pym's face but keep in mind that it's Hydra and you probably shouldn't give them your most powerful weapon before the main transaction occurs.
+:PROPERTIES:
+:Author: LordSwedish
+:Score: 1
+:DateUnix: 1439101866.0
+:END:
+
+**** he explained he would keep and sell the fuel. no particle, no suit.
+:PROPERTIES:
+:Author: puesyomero
+:Score: 1
+:DateUnix: 1439102579.0
+:END:
+
+***** So he did. Completely forgot about that.
+
+Nevertheless, while his character relied a bit too much on him being insane another major part of his character was the desire to show up Pym and he wanted to foil his attempt to steal the suit and take it away in front of them.
+:PROPERTIES:
+:Author: LordSwedish
+:Score: 1
+:DateUnix: 1439142366.0
+:END:
+
+
+** You mean some people don't put their madness on Github or arxiv?
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1439098546.0
+:END:
+
+*** No, Github is a single point of failure. Just use =git= over ssh; it's an entirely distributed protocol already!
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 4
+:DateUnix: 1439109084.0
+:END:
+
+**** Oh no, they're automatically distributing their code all around the world. Wait, I know this. It's git.
+
+=git push --force=
+
+Well that was easy.
+:PROPERTIES:
+:Author: bbrazil
+:Score: 3
+:DateUnix: 1439110922.0
+:END:
+
+***** That only handles the repos that you have write access to. Peoples local copies will still be intact unless they try to pull.
+:PROPERTIES:
+:Author: Uncaffeinated
+:Score: 3
+:DateUnix: 1439137893.0
+:END:
+
+
+***** From working with git on a daily basis, I'm not sure whether to laugh or cry.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1439142315.0
+:END:
+
+
+** The recent Fantastic Four movie is a bit like this as well. At the end, everything blows up, but the Stock Evil Military Guys have had a small army working on building the McGuffin for five years or so - and yet somehow they're unable to make it work unless Reed Richards is standing around within fifty feet of it.
+
+/Yes/, he and Doom were the main scientist and instigator of the project respectively, and neither would be around afterwards, but does this mean that a paperwork-obsessed organization like the US military would somehow not be able to get to within epsilon of where they were previously just from backups, and then throw a lot of really smart people at the problem?
+:PROPERTIES:
+:Author: Geminii27
+:Score: 3
+:DateUnix: 1439124005.0
+:END:
+
+
+** This strikes me even more strongly concerning any sort of AI villain. You mean the first thing you did *wasn't* to make yourself into a fault-tolerant self-healing distributed system? Not necessarily even by "taking over the Internet" with a botnet or anything (that's one of those things that gets you noticed), but just, like, renting some AWS instances here and Hetzner boxes there and so forth.
+:PROPERTIES:
+:Author: derefr
+:Score: 3
+:DateUnix: 1439148636.0
+:END:
+
+
+** I've set up a really simple rule to avoid such movies in general. If it was heavily advertised and has a PG-13 rating, it will more likely than not suck.
+:PROPERTIES:
+:Author: Magodo
+:Score: 3
+:DateUnix: 1439094413.0
+:END:
+
+*** It's hollywood. I don't expect rational storytelling. They will do whatever they want without regard to reality or internal consistency.
+:PROPERTIES:
+:Author: hackerkiba
+:Score: 5
+:DateUnix: 1439098968.0
+:END:
+
+
+** Have you read He, She, It?
+
+That's the only case I can think of of offsite backups in fiction in a situation like you mentioned. Not that it ends up mattering.
+
+[[#s][Summary of He, She, It.]]
+:PROPERTIES:
+:Author: Uncaffeinated
+:Score: 1
+:DateUnix: 1439096849.0
+:END:
+
+*** well nobody wants a faulty product...
+:PROPERTIES:
+:Author: puesyomero
+:Score: 5
+:DateUnix: 1439097627.0
+:END:
+
+**** If any of the parts function and are way ahead of current tech, I'd like the product.
+:PROPERTIES:
+:Author: what_deleted_said
+:Score: 1
+:DateUnix: 1440171623.0
+:END:
+
+
+** Unless you want it both ways.
+
+I recall one story with a machine to prevent major earthquakes by bleeding faultenergy into microquakes. It could be reversed fairly easily, so the designer ddeliberately stored key data in directories that were not backed up, in case someone evil took over then project.
+:PROPERTIES:
+:Author: dspeyer
+:Score: 1
+:DateUnix: 1439123883.0
+:END:
+
+*** And hopefully that evil person wouldn't have access to the original directories, or be able to send the storage units to a data recovery firm if they were wiped.
+:PROPERTIES:
+:Author: Geminii27
+:Score: 3
+:DateUnix: 1439144668.0
+:END:
+
+
+** But if you have an offsite backup, you have to expend more resources defending your data. Other people would have a much easier time tampering with a remote base than an easily visible building in the middle of the city. That doesn't help protagonists who want to destroy all the data, but presumably they need to worry about other evil villain groups stealing the information for their own ends.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 1
+:DateUnix: 1439134192.0
+:END:
+
+*** Most encryption today is sufficient for the task. Unless the bad guys have a super-duper quantum encryption breaker thingie for plot reasons.
+:PROPERTIES:
+:Author: Geminii27
+:Score: 2
+:DateUnix: 1439144733.0
+:END:
+
+**** These are bad guys. They don't need to break the encryption, they just need to break bones until someone tells them the password.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 2
+:DateUnix: 1439145883.0
+:END:
+
+***** So don't have people knowing the password personally. If the only information available about it is "The password only becomes available every 7 days for thirty seconds by an automatic process which only shows it in one location which has the usual security, cameras, guards etc etc", then the bad guys need to either break in or pull off some kind of time-sensitive caper plot - either of which increases the chance of detection.
+
+Or, if you want to get a little more over the top, "The password is a brain scan of the main researcher thinking a certain sequence of thoughts while calm and unafraid."
+:PROPERTIES:
+:Author: Geminii27
+:Score: 4
+:DateUnix: 1439146950.0
+:END:
+
+****** You would like [[/r/NotParanoidEnough]]
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1439607717.0
+:END:
+
+******* Heh. I like to assume that if I want something to stay locked up or unknown, I should use sufficient security so I couldn't personally crack it easily. (And ideally, it shouldn't exist at all.)
+:PROPERTIES:
+:Author: Geminii27
+:Score: 1
+:DateUnix: 1439641023.0
+:END:
+
+
+** A nice counterexample is [[https://www.wikiwand.com/en/Mr._Robot_(TV_series][Mr Robot]]), where the protagonists have to deal with their enemies having multiple data backup facilities around the globe, and how to simultaneously take them down such that nothing can be restored.
+:PROPERTIES:
+:Author: rochea
+:Score: 1
+:DateUnix: 1439173138.0
+:END:
+
+*** Mr Robot is just really impressive all around when it comes to the tech stuff.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1439173238.0
+:END:
+
+
+** A TV show that recently has followed this is Mr. Robot, when attempting to take out a data storage facility their other team bails in trying to take out the backups in Hong Kong. (They are then copied to many different places rending it all useless) Oh, yeah: SPOILER ALERT
+:PROPERTIES:
+:Author: TechnicolorSpaceCat
+:Score: 1
+:DateUnix: 1439108366.0
+:END:
+
+
+** It's a shame this doesn't happen in Jurassic World, because it'd fit right in with the other irrationalities there. (Still loved it, though.)
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 1
+:DateUnix: 1439139653.0
+:END:

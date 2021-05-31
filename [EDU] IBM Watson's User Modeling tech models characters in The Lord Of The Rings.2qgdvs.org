@@ -1,0 +1,204 @@
+#+TITLE: [EDU] IBM Watson's User Modeling tech models characters in The Lord Of The Rings
+
+* [[http://vinmisra.github.io/2014/12/19/gollum-is-a-pretty-vulnerable-guy/][[EDU] IBM Watson's User Modeling tech models characters in The Lord Of The Rings]]
+:PROPERTIES:
+:Author: AmeteurOpinions
+:Score: 14
+:DateUnix: 1419612067.0
+:END:
+
+** [[http://i.imgur.com/SgSvKVZ.png][Visualization from my last 474 reddit comments.]] I am quite curious how these numbers were arrived at, since some of it seems off to me - I don't trust a 99% in anything.
+
+*General instructions for doing this yourself*
+
+1. Go to [[http://pastebin.com/j1QxzKiR]] and copy-paste that script into notepad++ then save it as "whatever.py".
+
+2. Download Python 2.x from someplace like [[http://www.python.org/getit/releases/2.7/]] and then install it.
+
+3. Run the python file from the command line (see here: [[http://mail.python.org/pipermail/tutor/2004-July/030634.html]]) and input your username.
+
+4. This will create a file called "username".txt (for example, keltranis.txt or I_RAPE_CATS.txt), but might take some time - just let it run until it's done.
+
+5. Now that your comment history is saved as a .txt file, go into Notepad++ and strip out all of the stuff that is not part of your actual commenting. This is the hard part, because you have to learn a bit of the context stuff. This was of great help: [[http://markantoniou.blogspot.com/2008/06/notepad-how-to-use-regular-expressions.html]]
+
+(I use a somewhat different setup now, but if you have some programming knowledge that should be enough to set you on the right path.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 5
+:DateUnix: 1419615897.0
+:END:
+
+*** #+begin_quote
+  go into Notepad++ and strip out all of the stuff that is not part of your actual commenting.
+#+end_quote
+
+Or, alternatively, use [[http://pastebin.com/6mshkPij][this]] version. Also respects reddits flood rules and won't do more then 30 requests per minute (no more "HTTP Error 429: Too Many Requests").
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1419651650.0
+:END:
+
+**** Yeah, my own script is a little different from what I posted above - that whole chunk is a copy+paste of a process description I wrote nearly three years ago [[http://thingswhichborepeople.blogspot.com/2011/09/data-mining-my-reddit-comment-history.html][here]], and the pastebin itself was something that was posted to [[/r/TheoryOfReddit]] but whose origins are now lost to me.
+
+I believe the script still stops itself at 40 requests either way though, since I don't believe that there's a way to get past the 1000 comment mark for a user (though I might be wrong on that).
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1419654182.0
+:END:
+
+
+** There is no way Bilbo is more neurotic than Gollem!
+:PROPERTIES:
+:Author: PixelDust73
+:Score: 3
+:DateUnix: 1419619322.0
+:END:
+
+
+** Is there any actual use that these numbers can be put to?
+
+For example, say I put the first three books of SI into the machine, and sorted the various categories out by how extreme they were (eg, both 99% and 1% at the top)... what would I actually learn from the results, or be able to do that I couldn't have done before?
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 2
+:DateUnix: 1419618677.0
+:END:
+
+*** I believe that an intended use-case is something like this:
+
+- Gather up a thousand different user profiles.
+- Run them through this program.
+- Find correlations between these models and another data set (say, those users favorite movies - you should have both if you scraped from Facebook).
+- Use those correlations to build a recommendation engine.
+
+For a single user (or a single book), I doubt it's of much use, but assuming that its results have any validity, it would be useful for grouping similar people.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 4
+:DateUnix: 1419619285.0
+:END:
+
+
+*** It doesn't seem very useful for you unless you understand very clearly (on the level of a trained psychologist) the meaning of each personality trait and how they interact. Knowing how your character is being portrayed is a useful thing to know, but how can you actually take advantage of this? The only thing I can think of is to see whose personality is changing in ways you aren't intending, but you seem to be a good enough writer to understand that it's more fun to let your characters do what they want instead of shoehorning them into contrived situations.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 2
+:DateUnix: 1419624870.0
+:END:
+
+
+*** You, the author, probably wouldn't learn all that much. You would have to sort the dialogue and narration by character first, but it might be neat to see how they change across sequels in exact numbers. These obviously won't be very precise.
+
+The tech has a ways to go, but it's scary how it's come already. Imagine running it on a database of presidential quotes -- you could directly compare George Washington to George Bush!
+:PROPERTIES:
+:Author: AmeteurOpinions
+:Score: 1
+:DateUnix: 1419620137.0
+:END:
+
+
+*** Could be used to reconstruct your mind after you're dead ;-).
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1419760546.0
+:END:
+
+
+** I put in two blocks of text I've written,and there wasn't a high level of agreement, but maybe they just weren't large enough.
+
+How did they determine which words were "neurotic" and so on?
+:PROPERTIES:
+:Author: E-o_o-3
+:Score: 2
+:DateUnix: 1419622749.0
+:END:
+
+*** Honestly, I have no clue.
+:PROPERTIES:
+:Author: AmeteurOpinions
+:Score: 1
+:DateUnix: 1419623693.0
+:END:
+
+
+*** I had pretty high agreement between various blocks I wrote.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1419866740.0
+:END:
+
+
+** fascinating, thanks. crossposted over at [[/r/tolkienfans][r/tolkienfans]]
+:PROPERTIES:
+:Author: flagamuffin
+:Score: 2
+:DateUnix: 1419635114.0
+:END:
+
+
+** Running this on yourself and checking whether the results apply to you seems like listening to cold reading.
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 2
+:DateUnix: 1419649476.0
+:END:
+
+*** Running it on just yourself is mostly useless. You want to run it on all of Reddit and /then/ start comparing numbers.
+:PROPERTIES:
+:Author: AmeteurOpinions
+:Score: 2
+:DateUnix: 1419683403.0
+:END:
+
+
+** I'm really not clear on what "self-transcendence" means.
+:PROPERTIES:
+:Author: traverseda
+:Score: 2
+:DateUnix: 1419652087.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1419674893.0
+:END:
+
+*** Messaging you on [[http://www.wolframalpha.com/input/?i=2014-12-27%2018:08:15%20UTC%20To%20Local%20Time][*2014-12-27 18:08:15 UTC*]] to remind you of [[http://www.reddit.com/r/rational/comments/2qgdvs/edu_ibm_watsons_user_modeling_tech_models/cn6hhkp][*this comment.*]]
+
+[[http://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5Bhttp://www.reddit.com/r/rational/comments/2qgdvs/edu_ibm_watsons_user_modeling_tech_models/cn6hhkp%5D%0A%0ARemindMe!%20%208%20hours][*CLICK THIS LINK*]] to send a PM to also be reminded and to reduce spam.
+
+--------------
+
+[[http://www.reddit.com/r/RemindMeBot/comments/24duzp/remindmebot_info/][^{[FAQs]}]] ^{|} [[http://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5BLINK%20INSIDE%20SQUARE%20BRACKETS%20else%20default%20to%20FAQs%5D%0A%0ANOTE:%20Don't%20forget%20to%20add%20the%20time%20options%20after%20the%20command.%0A%0ARemindMe!][^{[Custom Reminder]}]] ^{|} [[http://www.reddit.com/message/compose/?to=RemindMeBotWrangler&subject=Feedback][^{[Feedback]}]] ^{|} [[https://github.com/SIlver--/remindmebot-reddit][^{[Code]}]]
+:PROPERTIES:
+:Author: RemindMeBot
+:Score: 1
+:DateUnix: 1419674903.0
+:END:
+
+
+** This sums it up:
+
+#+begin_quote
+  TLDR: IBM Watson crunches the numbers on LOTR characters. Tells us who is self-conscious, who is neurotic, and whether book Aragorn or movie Aragorn is more alpha. Bonus: Watson breaks down the personality of the average LOTR tweeter.
+#+end_quote
+
+The system just needs samples of text, so dialogue taken from the books or screenplays is perfect for crunching. You can try it yourself [[http://watson-um-demo.mybluemix.net/][here]].
+:PROPERTIES:
+:Author: AmeteurOpinions
+:Score: 1
+:DateUnix: 1419612302.0
+:END:
+
+*** [[https://i.imgur.com/GU7MB2R.jpg][This is you, from your posts over the last week.]] Merry Christmas!
+
+xoxo,\\
+[[/u/seraphnb]]
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1419614358.0
+:END:

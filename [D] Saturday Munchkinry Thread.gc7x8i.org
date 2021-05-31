@@ -1,0 +1,489 @@
+#+TITLE: [D] Saturday Munchkinry Thread
+
+* [D] Saturday Munchkinry Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 15
+:DateUnix: 1588431905.0
+:END:
+Welcome to the Saturday Munchkinry and Problem Solving Thread! This thread is designed to be a place for us to abuse fictional powers and to solve fictional puzzles. Feel free to bounce ideas off each other and to let out your inner evil mastermind!
+
+Guidelines:
+
+- Ideally any power to be munchkined should have /consistent/ and /clearly defined/ rules. It may be original or may be from an already realised story.
+- The power to be munchkined can not be something "broken" like omniscience or absolute control over every living human.
+- Reverse Munchkin scenarios: we find ways to beat someone or something /powerful/.
+- We solve problems posed by other users. Use all your intelligence and creativity, and expect other users to do the same.
+
+Note: All top level comments must be problems to solve and/or powers to munchkin/reverse munchkin.
+
+Good Luck and Have Fun!
+
+
+** You're Superman. Your superpowers are to be able to go at a max speed of 99% the speed of light. You can output at a maximum 10^{21} joules of energy before dying. Safe power outage of let's say 10^{18} Watts. Other powers are pretty much the same. Is there any possible way to move Venus into another orbit over a period of a year at most? He can't physically move the planet as he will go right through it. At most he can push a kilometer wide and thick asteroid. His goal is to move Venus to Earth's Lagrange point on the opposite side of the Sun. Thanks for reading.
+:PROPERTIES:
+:Author: tfon123
+:Score: 4
+:DateUnix: 1588455079.0
+:END:
+
+*** #+begin_quote
+  You can output at a maximum 10^{21} joules of energy before dying.
+#+end_quote
+
+Nope. At least, not if my understanding of physics is anywhere near correct.
+
+Venus masses about 5x10^{24} kg.
+
+Venus is travelling about 30,000 m/s.
+
+One joule is equal to a Newton metre (exerting a force of one Newton over the distance of a metre).
+
+Every second you're applying a force, you're exerting it over a distance of roughly 30 km.
+
+So, the velocity change you can achieve is represented by the equation E= m*d*v*t, where:
+
+- E= 10^{21} J
+- m = 10^{24} kg
+- d = 30,000 m/s x (t)s
+
+So: 10^{21} = ~(5x10^{24)} * ((30,000) * (t)) * (v) / (t)
+
+The time parameters cancel out, leaving: v =~ 10^{21} kg*m*m/s/s / (5x10^{24} kg * 3x10^{4} m/s)
+
+v =~ 7 x 10^{-9} m/s
+
+Congratulations, you've altered the velocity of Venus to speed its orbit up by about 7 micrometres each second, which is far, far less than the rounding errors I've made in its mass and orbital velocity.
+:PROPERTIES:
+:Author: Nimelennar
+:Score: 9
+:DateUnix: 1588458134.0
+:END:
+
+**** Right that's what I figured if he pushed the planet. Thanks for the numbers to verify though. I was thinking he could do something with his speed. I think I'll go with creating a dense object to attract the planet though that might inadvertently create a core in said dense object. Thanks again for the calculations.
+:PROPERTIES:
+:Author: tfon123
+:Score: 3
+:DateUnix: 1588459370.0
+:END:
+
+***** [[http://buildengineer.com/www.paulbirch.net/MoveAPlanet.pdf]]
+
+You can move a planet with far less energy using extremely large tethers to transfer momentum.
+:PROPERTIES:
+:Author: DAL59
+:Score: 5
+:DateUnix: 1588476590.0
+:END:
+
+****** Interesting. This is exactly the kind of solution I was looking for. I'm not sure if it's in the article but what would those tethers be made out of? Would Superman be able to simulate these tethers by moving really fast in this figure 8 scheme around Venus and the Sun?
+:PROPERTIES:
+:Author: tfon123
+:Score: 1
+:DateUnix: 1588495092.0
+:END:
+
+
+***** No problem! Thanks to you, as well! Occasionally, it gets into my head that we should drop Jupiter into the sun as a way to extend our Sun's lifespan as a yellow dwarf, but I don't often have a way to grasp just how ludicrous (and, dare I say, /astronomical/) the forces involved would be. You've helped put the issue to bed in my mind again for a while, so thanks for that.
+:PROPERTIES:
+:Author: Nimelennar
+:Score: 2
+:DateUnix: 1588469687.0
+:END:
+
+
+***** #+begin_quote
+  I was thinking he could do something with his speed.
+#+end_quote
+
+How much of Venus do you need to be left with after the year is done?
+
+I would imagine that converting a fraction of the planet's mass into energy would at some point move the planet.
+
+(are you certain that superman can get to 99% lightspeed with only that amount of energy available?)
+:PROPERTIES:
+:Author: Reply_or_Not
+:Score: 1
+:DateUnix: 1588496950.0
+:END:
+
+
+*** Ok, so, there are a few options that jump to my mind immediately.
+
+Dumb Superman:
+
+I can push a kilometer wide and thick asteroid. Ok. I'll assume it's also a kilometer deep for simplicity's sake. So I can move on cubic kilometer of Venus at Superman speeds.
+
+Google says Venus is 938,000,000,000 cubic kilometers.
+
+Google kind of says it takes between 127 seconds and 870 seconds for light from Venus to reach Earth. Let's round that to 600 seconds, call it ten minutes.
+
+So in twenty minutes I can move a cubic kilometer of venus to the target and be back on Venus ready to go again. So 3 trips per hour, 24 hours in a day means 72 trips a day.
+
+365 days in a year times 72 trips a day means 26280 trips a year.
+
+So the dumb Superman plan (moving Venus one rock at a time) fails.
+
+Factorio Superman:
+
+One thing Superman can do is create Superman robots. A superman Robot can do basically whatever Superman can do, except fight major villains. In particular, they can carry out the Dumb Superman plan.
+
+Superman can make Y Superman Robots (SRs) per day, and the Superman Robots each do the Dumb Superman Plan. It would take 938 billion divided by 26280 (total task divided by how much one Dumb Superman can do) Dumb Supermen to accomplish the task.
+
+So Factorio Superman needs 35,692,545 and change Dumb Supermen Robots to accomplish the task. He has 365 days in a year, so he needs to crank out 97,787 Superman Robots a day. Round it to a hundred thousand bots a day.
+
+Sort of. Only the ones he finishes on the first day will get a whole year's work in. The ones he finishes on the last day will get just one days work in. Averaging the whole crew, we can simplify that each robot only gets a half year's work in (some more, some less, but it works out to about a half year productivity per bot). So he has to make two hundred thousand Superman robots a day.
+
+Beyond that, Superman Robots aren't as good as Superman. Exactly how not as good as Superman they are is more or less up to you, but I feel like we should factor in that they aren't as good as Dumb Superman at the Dumb Superman plan. if you think half, then he needs 400,000 Superman robots a day, a fifth, then it's a million a day. The roundness of that number is a compelling argument.
+
+So Factorio Superman succeeds if he can crank out a million Superman robots in a day, more or less the assumptions baked in above. Lightspeed is super fast, and he is very strong, but is he that fast/strong?
+
+Paperclipper Superman:
+
+Superman Robots, of course, can do more than just carry out Dumb Superman's plan. They can, one expects, carry out Factorio Superman's plan.
+
+The math on this involves so many assumptions that it's almost not worth doing, but basically if there was any way that Factorio Superman could ever have succeeded then Paperclipper Superman crushes it. He builds a million on day one, they each create a million on day two, and then the trillion Superman Robots move Venus on day 3 in the first hour or so.
+
+The recursion is essentially almighty. Even if Superman can't build a million, he can only build a thousand in a day, it very much doesn't matter. If each of those thousand build a hundred, and then each of those a hundred more...you get the picture.
+
+Paperclipper Superman succeeds under almost any values you want to put in for how long they take to do stuff.
+:PROPERTIES:
+:Author: WalterTFD
+:Score: 6
+:DateUnix: 1588461342.0
+:END:
+
+**** #+begin_quote
+  So in twenty minutes I can move a cubic kilometer of venus to the target and be back on Venus ready to go again. So 3 trips per hour, 24 hours in a day means 72 trips a day.
+#+end_quote
+
+he doesn't need to go with the pieces. he can just throw them.
+:PROPERTIES:
+:Author: llllll--llllll
+:Score: 2
+:DateUnix: 1588463191.0
+:END:
+
+***** I was assuming that he had to fly along with them to slow them down and make sure they end up together instead of just colliding like pool balls.
+:PROPERTIES:
+:Author: WalterTFD
+:Score: 2
+:DateUnix: 1588479450.0
+:END:
+
+
+*** Since no one else has considered the fact that he can move at 99% the speed of light yet, I'll do that here.
+
+Accelerating a 1 km^{3} asteroid (of average density 3 g/cm^{3}) to 99% c will result in it having a relativistic mass of 3 g/cm^{3} × 1 km^{3} × 1 / √(1 - 0.99c / c) = 3×10^{13} kg.
+
+We can increase the orbital radius of Venus to Earth's by changing its velocity by Δv = √(GM☉ / [average radius of Earth's orbit]) - √(GM☉ / [average radius of Venus' orbit]) = -5240 m/s.
+
+The most direct method would be to just throw the asteroid straight at Venus opposite to its direction of motion. Plugging in the numbers, we get the change in velocity of Venus to be Δv = ([mass of Venus] × [velocity of Venus] - 3×10^{13} × 0.99c) / [mass of Venus] - [velocity of Venus] = -1.829 mm/s. So, he'd just need to toss about 2.9 million cubic kilometres of asteroid at the planet for it to work. Since there's an estimated 3×10^{21} kg / 3 g/cm^{3} = 1×10^{15} km^{3} of asteroid just in the Asteroid Belt alone, it should be plenty. It's just a matter of how fast he can do it.
+
+As an addendum, let's have a look at what the crater would look like if we threw a 99%-light-speed cubic kilometre of rock into Venus. According to [[http://www.convertalot.com/asteroid_impact_calculator.html][this calculator]] (multiplying density by √(1 - 0.99c / c) to account for the relativistic mass increase, and converting a 1x1x1km cube into a 1.24km-diameter sphere, and impacting at 90° to the horizontal), we get a crater that's about 6400 km wide and 1600 km deep, with a volume of 2.6×10^{10} km^{3.} The diameter of Venus is 12,104 km, and its volume 9.4×10^{11} km^{3.} So, really, in about 36 asteroid throws we've already annihilated Venus, and everything after that would just be adding fuel to the newly-forming asteroid belt.
+
+So, yes. Superman might be able to move Venus into Earth's orbit, but it probably won't be intact enough to be of any use.
+:PROPERTIES:
+:Author: BoxSparrow
+:Score: 3
+:DateUnix: 1588480285.0
+:END:
+
+**** Would he be able to move it if he accelerated the asteroids to .99c and through it near Venus? I know he'd be able to speed up its rotation through this method of gravitational energy exchange but could it be possible to move the planet through this method? Thanks for the calculations.
+:PROPERTIES:
+:Author: tfon123
+:Score: 1
+:DateUnix: 1588495906.0
+:END:
+
+***** No, not really. Well, slingshotting asteroids around Venus /would/ change its angular velocity, though probably orders of magnitude less than throwing them directly at it. The latter would be transferring all its kinetic energy straight into the planet (barring energy lost through heat), while the latter would only transfer enough for the asteroid to just change direction.
+
+Increasing the rotation of a planet wouldn't have much of an effect either - there's nothing for it to rub against to induce "friction", and an orbiting object's mass (and energy) doesn't have an effect on the orbit itself.
+:PROPERTIES:
+:Author: BoxSparrow
+:Score: 2
+:DateUnix: 1588497746.0
+:END:
+
+****** Got it. I guess I'll just have to increase his power. Though I'll probably include the rotating Venus faster using asteroids. Thanks.
+:PROPERTIES:
+:Author: tfon123
+:Score: 1
+:DateUnix: 1588498176.0
+:END:
+
+
+*** I can't really calculate it, but if you can output that much energy, then you can construct anything you'd like, almost instantly. The limitation that you'll go through the planet is easily mitigated by smashing a bunch of asteroids together to make a highly dense object, then pushing that. But then you have another problem: This object is also very dense. Its gravitational pull might be an issue.
+
+You have a second issue to contend with: Earth and Venus cannot be on the same orbit because they have different mass. Of course, you could just add some mass from your asteroid construct, but if we're doing that, why not just destroy Venus and remake it?
+:PROPERTIES:
+:Author: covert_operator100
+:Score: 2
+:DateUnix: 1588457993.0
+:END:
+
+**** I'm not sure why the different mass affects the orbit of the planets, could you explain? As I understand physics at this scale, everything falls at the same rate towards whatever it's orbiting, regardless of mass, so the orbits can be the same as long as the planets are far enough away from one another.
+
+Using my understanding, Venus can be moved to a new, higher orbit through expenditure of lots of energy. Google gives me numbers that tell me Earth is about 18% faster than Venus, and assuming the change of velocity can be applied over long enough that the orbit changes just from that, would take (I think) about 3.4E52 Joules, or just over 10^{27} years at OP's safe power output of a billion billion watts.
+
+I did use the equations for circles and not ellipses, but the eccentricity of the Terran and Venusian orbits are 0.006 and 0.007 respectively, so I feel reasonable in that regard.
+:PROPERTIES:
+:Author: Duck__Quack
+:Score: 3
+:DateUnix: 1588462363.0
+:END:
+
+***** #+begin_quote
+  about 3.4E52 Joules,
+#+end_quote
+
+Daaaamn.
+
+I knew it would take several orders of magnitude more energy than what the OP specified, but I didn't think it would be /that/ many orders of magnitude.
+:PROPERTIES:
+:Author: Nimelennar
+:Score: 1
+:DateUnix: 1588469907.0
+:END:
+
+
+***** I am not highly educated in this, but my thought was that if you wanted an orbit at identical orbital velocity and distance, then you must have identical mass. Your suggestion that everything falls at the same rate is Newtonian physics: it only works on the surface of a planet.
+:PROPERTIES:
+:Author: covert_operator100
+:Score: 0
+:DateUnix: 1588480873.0
+:END:
+
+****** Who said that Newtonian physics only work on the surface of a planet? As I recall, Newton successfully used his models to explain why the planets orbit in ellipses rather than circles, making independent predictions that fit Kepler's conclusions. I think you might be thinking of Aristotelian physics that only work close to a planet, except Aristotelian physics just don't work once you can tell the difference between 2 and 2.3 seconds.
+:PROPERTIES:
+:Author: Duck__Quack
+:Score: 2
+:DateUnix: 1588482525.0
+:END:
+
+******* I guess I used the wrong word for it, sorry. I'll explain it fully.
+
+Mass doesn't matter for physics on the surface of earth, because the mass difference between Earth and a Falling Body is many orders of magnitude.
+
+Mass matters when multiple planets are attracted to one another, because their mass difference is a close thing.
+:PROPERTIES:
+:Author: covert_operator100
+:Score: 1
+:DateUnix: 1588482812.0
+:END:
+
+******** The foundation of non-relativistic physics, especially orbits, is the three laws of motion and Newton's law of gravitational force. The second law is the one that comes into play here, but it says that F=ma, or better said here F/m=a, or the acceleration of an object is equal to the ratio between the net force acting on it and its mass. The law of gravitation is F=Gm1m2/r^{2,} where G is the universal gravitational constant, m1 is the mass of one object, m2 is the mass of the other, and r is the distance between them.
+
+Using the equations together, we get that the acceleration of an object in free fall (that is, gravity is the only force acting on it) is equal to the product of G and the mass of the object it's falling towards, divided by the distance between them squared; the mass of the object itself cancels out.
+
+On your last point, planets aren't really on the same scale as the sun. In terms of mass the earth is to the sun as two regulation FIFA balls are to a blue whale.
+
+Newton's equations work marvelously to describe everything most humans do in their lives. They only really break down when something gets on the level of an atom or something gets close to the speed of light.
+:PROPERTIES:
+:Author: Duck__Quack
+:Score: 2
+:DateUnix: 1588483839.0
+:END:
+
+
+******* Thought experiment: If I have two identical spacecraft docked in orbit around earth and they undock without expending any energy, are they now in a different orbit from before?
+:PROPERTIES:
+:Author: Silver_Swift
+:Score: 1
+:DateUnix: 1588522103.0
+:END:
+
+******** My experience with KSP says no, but that having two things in space that are touching but not secured is a recipe for disaster, and any competent decoupler would give a small impulse to separate the craft, thus adjusting the orbits.
+:PROPERTIES:
+:Author: Duck__Quack
+:Score: 1
+:DateUnix: 1588523761.0
+:END:
+
+
+**** But wouldn't the highly dense object just go through Earth anyway if he's pushing it? I guess making a gravitationally dense object to attract Venus might work. He'd have to condense the object to the size of a kilometer which would introduce new issues but I'd probably be able to work around them. Thanks for the answer!
+:PROPERTIES:
+:Author: tfon123
+:Score: 1
+:DateUnix: 1588458766.0
+:END:
+
+
+*** Unless your Superman either gets /way/ stronger or relies on technology and external sources of energy (which has it's own issues if you want things accomplished in less than centuries) I don't actually think in the scenario presented it's possible.
+
+The problem with trying to use a gravity tractor is that you are greatly limited in how large an object you can use before it can't be physically pushed at a reasonable rate (without going through it), and you're trying to move an entire planet with this. So this can only happen on astronomical timescales. For an explanation of how you'd move a planet using technology (and why it can't happen that quickly) [[https://www.youtube.com/watch?v=oim7VvUURd8][I recommend this video.]]
+
+There's also the issue that the staggering energy cost to move Venus /has to be paid somehow/. Given the total lifetime power output of your Superman can't even noticeably move Venus trying to use a gravity tractor isn't going to change that. Since you still need to be exerting the equal and opposite force needed to keep the massive object in the right constant position relative to Venus, which means you'd still be the one spending the energy to move it albeit indirectly.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 1
+:DateUnix: 1588472404.0
+:END:
+
+**** Yeah I'll probably have to raise the magnitude of his power by 20 magnitudes for him to have any chance of moving it. Thanks for the answer. I'll be sure to include this reasoning.
+:PROPERTIES:
+:Author: tfon123
+:Score: 2
+:DateUnix: 1588495740.0
+:END:
+
+
+** Something for a story that's been bouncing in my head since the other day... what do you think could be a potential vulnerability of a massive AI-controlled structure (think Dyson sphere or something of that scale) that a human opponent could exploit, assuming they had a total advantage of surprise (e.g. the AI has reason to believe they are not coming at all)? I'm thinking stuff like infiltrating a main core and wreaking havoc on memory banks, CPUs, communication devices, and such. Also, normally such an AI wouldn't have a reason to have human-viable environments like pressurised cabins and corridors - but would you think it believable that they did if they were originally built by and for organic beings and thus still carried the need to make those sections as part of their core values?
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 3
+:DateUnix: 1588518810.0
+:END:
+
+*** The structure must obey any commands coming from a legitimate commander, e.g. anyone with the root password. Exactly what form the "root password" will take is of course not going to be advertised; it may include wearing the original IT manager's name badge, or being (more specifically, convincing the AI that you are being) the highest-ranking member of the original organic species that built it; or perhaps being the highest-ranking organic lifeform on the station capable of giving coherent commands to the AI.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 3
+:DateUnix: 1588521789.0
+:END:
+
+**** Makes sense. What about the centrality of control? On one hand, it seems like having a single, central core to handle all main processing is a vulnerability. On the other, on the scale of a whole solar system, lightspeed limit for radio communications is a problem, so preventing goal drift would be an issue if the AI had sufficiently intelligent subsystems - which meant they might want to have some sort of central core that goes "hey, you guys, this is our line, stick to it" now and then to keep everything coherent.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 3
+:DateUnix: 1588523213.0
+:END:
+
+***** Instead of a single central core, perhaps you could have a central /council/, consisting of X central cores, which will repair and/or replace (if necessary) each other if one of them gets damaged, and which take decisions by majority vote. Higher values of X will increase both the robustness and the (original) cost of the system.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 3
+:DateUnix: 1588524229.0
+:END:
+
+****** Ah, good idea. Though it implies a tradeoff between numbers and swiftness of decision. There might even be a loophole ripe for exploitation there if you manage to make some core believe the others have been destroyed and act on its own as an emergency protocol - thus marking it as rogue and targeted for destruction to the others.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 2
+:DateUnix: 1588525324.0
+:END:
+
+******* Yes... but /how/ can you do that?
+
+Cut off communication lines between the cores? That might work for dumb terminals, but these are supposed to be smart machines - if the only thing that one can do near the other one is turn on a light, it will quickly occur to them to turn the light on and off in a binary pattern to re-establish communication.
+
+That intelligence, of course, brings with it its own flaws - they may be smart enough to be vulnerable to /psychological/ attacks...
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1588533264.0
+:END:
+
+******** Well, the idea is that the cores would be spread around space at quite the distance. If two space stations were situated at Lagrange points 4 and 5 of the Earth-Sun system, I doubt simply flashing lights would be enough to communicate, no matter how intelligent their handlers.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 2
+:DateUnix: 1588537004.0
+:END:
+
+********* Depends how good the other AI's telescope is. Of course, they're not limited to visible light...
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1588568623.0
+:END:
+
+********** Also if they have lasers, but at that point, that's a dedicated emergency communication system.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 1
+:DateUnix: 1588573790.0
+:END:
+
+*********** It might have originally been intended as a system for vaporising any asteroids that get too close... but yeah, these cores should be intelligent enough to figure out communications, unless they're totally cut off to the point where nothing that they can do gets noticed by the others.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1588577734.0
+:END:
+
+************ Yeah, it basically all depends however on what resources they have at their disposal. Given prep time of course they could certainly take precautions.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 2
+:DateUnix: 1588578533.0
+:END:
+
+************* And, if the entire system has been abandoned by the original creators for who-knows-how-long, then they have had who-knows-how-long worth of prep time.
+
+Of course, they weren't /expecting/ a human to turn up out of nowhere. But they could have taken any number of precautions against wear and tear, or against unexpected equipment failures.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1588579011.0
+:END:
+
+************** #+begin_quote
+  Of course, they weren't expecting a human to turn up out of nowhere. But they could have taken any number of precautions against wear and tear, or against unexpected equipment failures.
+#+end_quote
+
+Yes, that's the essence of the question. As a practical matter, humans have been a non-issue for millennia, so it's inefficient to spend too much time and resources worrying about something that just can't happen. The reason why it is that... basically something very very /very/ unlikely happened, and that's why the story takes place at all. So the idea is, what would be a reasonable way of cheating around those sort of precautions or exploiting them. Something as trivial as "breaking the antennas" seems only step one, since any kind of space debris would do that, and they'll obviously have contingencies in place.
+
+The story isn't necessarily going to be /too/ strictly rational, I'm leaning towards a slightly different focus. But I'd still like to think it in a way that isn't completely unbelievable either, so I'm trying to think about ways in which this could work. Maybe sabotage the communication /and/ the system used to repair it? Or perhaps exploit the fact that the AI expects that it can not be damaged from the inside without undergoing outside damage first, and start creating /false/ faults by meddling with the sensor system's own outputs? This might fall again under "the humans might have a root password of sorts" idea, something that you can use to both alter the system's functioning, erase the logs of your activity, and exploit the surprise effect to its best.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 2
+:DateUnix: 1588585135.0
+:END:
+
+*************** Hmmmm. A lot of that comes down to exactly what the criteria are that the computer systems have to fulfill, and exactly what the human wants to get from the system.
+
+The computer's criteria might include any of the following:
+
+- To make a safe living area for the species that originally built it;
+- To investigate questions of science and improve its own technology to better fulfill its other aims;
+- To more efficiently use the power output by the star it is orbiting;
+- To hide from some other species of marauders (perhaps also long extinct, or perhaps not);
+- To safeguard and keep alive the culture that originally built the place
+
+And the human invader might want to:
+
+- Find out more about the aliens who built this place
+- Find out more about the place itself
+- Simply stay alive
+- Find a way to get back home with futuristic technology from this place
+- Retroactively change history in some manner
+- Use the resources here to live a life of hedonistic luxury
+
+...and so on. Different aims need different methods to get there; some tricks the human might pull could include:
+
+- Being a live organic creature (only helps for some possible AIs that value organic life)
+- Persuading the AI that you have the equivalent of root access
+- Using psychological attacks (to e.g. try to convince one core that the other cores are plotting against it)
+- Taking advantage of poorly designed systems (likely not many of those around anymore)
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1588592152.0
+:END:
+
+**************** Ok, some of these apply to my setting, some don't, but it's good ideas nevertheless. Psychological attacks might in fact be an interesting avenue, if I can justify a communication channel being established at all.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 2
+:DateUnix: 1588612376.0
+:END:
+
+***************** If the AI can observe the actions of the human in any way, then a form of communication is implicitly established. Possibly a very error-prone and difficult to understand form of communication, but a form nonetheless.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1588612713.0
+:END:
+
+
+**** Note: this could be done in the style of a fantasy story, e.g. "find the lost artifact that's the key to all the magic of the world". Overt sci-fi elements optional.
+
+​
+
+(aside from the setting :P )
+:PROPERTIES:
+:Author: C_Densem
+:Score: 2
+:DateUnix: 1588697967.0
+:END:

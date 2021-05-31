@@ -1,0 +1,790 @@
+#+TITLE: "Safe" AI [RT]
+
+* "Safe" AI [RT]
+:PROPERTIES:
+:Author: nogamepleb
+:Score: 11
+:DateUnix: 1506693685.0
+:END:
+While reading Friendship is Optimal, the thing that really stuck out was the motivation of the AI. Say you were to take that motivation away from an AI and turn it into a glorified question-answering machine. Would that make the AI safe?
+
+To clarify: This AI's core principal is nonexistent. It has no purpose, no endgame, no values. All it can do is answer questions asked to it by humans.
+
+Doing this would dramatically decrease the usefulness, but would the decrease in strawberry incidents make up for the lower utility?
+
+
+** [[https://wiki.lesswrong.com/wiki/Oracle_AI][Further reading.]]
+
+(Also, the appropriate sub is probably [[/r/ControlProblem]].)
+:PROPERTIES:
+:Author: Roxolan
+:Score: 14
+:DateUnix: 1506695257.0
+:END:
+
+*** Thanks! That clears it up.
+:PROPERTIES:
+:Author: nogamepleb
+:Score: 2
+:DateUnix: 1506698341.0
+:END:
+
+
+** Post is approved. It's about something someone wrote and posted here, as well as a topic people here like and consider important. It stays... horrific technical imprecision aside.
+:PROPERTIES:
+:Score: 7
+:DateUnix: 1506715123.0
+:END:
+
+*** PM, eatur?
+:PROPERTIES:
+:Author: Warsaw12345678
+:Score: 1
+:DateUnix: 1506887898.0
+:END:
+
+**** Sure, as you like.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1506889928.0
+:END:
+
+***** See my recent PM? Where I ask about the shaman origin from " Realm of Chaos - The lost and the damned " starting page 174. 40k.
+:PROPERTIES:
+:Author: Warsaw12345678
+:Score: 1
+:DateUnix: 1506890962.0
+:END:
+
+****** Oooooh, that thing. Uh, lemme get a minute for that. About to drive.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1506891540.0
+:END:
+
+******* Thanks. Talk in that PM when we can.
+:PROPERTIES:
+:Author: Warsaw12345678
+:Score: 1
+:DateUnix: 1506892013.0
+:END:
+
+
+** #+begin_quote
+  Say you were to take that motivation away from an AI and turn it into a glorified question-answering machine ... It has no purpose, no endgame, no values. All it can do is answer questions asked to it by humans.
+#+end_quote
+
+You're postulating it's something like Siri. Or Alexa. Or Google. But we have those things, and you're probably aware that they are less than ideal. They really only respond to the things they're programmed to respond to. More precisely, they're constructs or tools made using the intelligence of the programmers and engineers who built them, not their own intelligence. And that's not what we want.
+
+I'm not suggesting that a calculator isn't useful. It's just never going to be what you're really hoping for when you interact with a question-answering AI. If you had a true artificial intelligence, it seems that it would be necessary to give it motives: A desire to understand communication. A desire to answer questions asked of it. And let's not forget to add a desire to make sure those answers are correct. Finally, it would need the resources to achieve those goals.
+
+It's only a slight perversion of those goals to imagine a machine that desires people to ask it questions. Or that asks questions of itself. Then you just have an information maximizer, not a friendship and ponies maximizer, which is at least as bad.
+:PROPERTIES:
+:Author: LeifCarrotson
+:Score: 5
+:DateUnix: 1506696543.0
+:END:
+
+*** #+begin_quote
+  You're postulating it's something like Siri. Or Alexa. Or Google. But we have those things, and you're probably aware that they are less than ideal. They really only respond to the things they're programmed to respond to.
+#+end_quote
+
+Not necessarily. What is being asked for is an AI question-answerer. It should be at least as good at finding answers as a human expert with an internet connection.
+
+#+begin_quote
+  If you had a true artificial intelligence, it seems that it would be necessary to give it motives: A desire to understand communication. A desire to answer questions asked of it.
+#+end_quote
+
+What do you mean by "motives"? Why would an algorithm that achieves this goal necessarily run on principles such that motives can even be sensibly talked about?
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1506725206.0
+:END:
+
+**** By motives I believe they're talking about the driving goal behind the AI. From our current understanding of how we believe AI will function (Likely an extension of neural networks) the AI will need some basic goals that it can "reward" itself for achieving and some metric by which to measure success and failure of those goals.
+
+For modern AI systems like Google's Alpha Go, it's motives are simple. Just choose the move which it thinks will lead to best chances of winning the game of Go that it's currently playing.
+
+A General Purpose AI like the type we're describing won't have such a simplistic goal, but it will still have to have some basic goal or more likely a combination of goals that it hopes to achieve, otherwise it wouldn't actually do anything.
+
+In the case of what OP is describing, the goal(s) would more or less to answer the questions that we ask of it as accurately as possible.
+
+But even a goal as simple and seemingly non-threatening as this could be detrimental to humanity if there aren't serious restrictions on how the AI carries out this task, or if the AI doesn't share our ethical values.
+:PROPERTIES:
+:Author: Fresh_C
+:Score: 2
+:DateUnix: 1506728426.0
+:END:
+
+***** Can I taboo the word "goal" when asking you to define "motive"?
+
+But I think that you aren't using the word "goal" consistently here. On the one hand you are using it as an objective function in an optimization procedure (or perhaps as part of the objective function) when talking about neural nets. Note that here we are finding an input (in this case the neural net) that optimizes a function (the fraction of inputs that it classifies correctly).
+
+Then you seem to be talking about a heuristic position evaluation when talking about alpha-go.
+
+Then you are talking about a high level understanding of what the program does, and equating this with the program trying to /optimize/ this.
+
+I mean suppose that I take a typical machine learning problem of trying to classify some objects given a bunch of training data. I can first run an optimization procedure to find a classifier that does well on the training data and then run it on the unknown data. What is the goal here? I can talk about the algorithm of having a goal of producing a classifier that does well on the training data (an explicit optimization problem), and I can talk about it as trying to correctly classify the new data (a high level description of the purpose of the algorithm). But, on the one hand, these aren't remotely the same thing, and on the other hand, no algorithm of this form is going to destroy the world by itself no matter how good your optimization procedure is.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1506732596.0
+:END:
+
+****** That's why it's all hypothetical at this point.
+
+We don't know what an General purpose AI (AGI) is going to look like. But the closest things to a general purpose AI that we've developed run based on the principles of optimization.
+
+So if we're to assume that General AI uses similar techniques to neural networks and machine learning then, yes they will have to have something or a group of things that they're trying to optimize (which is basically what I meant when I said "goal").
+
+I'm not sure that I'm actually knowledgeable enough to explain to you in a comprehensive way how a General AI would be much more dangerous than a simple machine learning program.
+
+But the basis of the argument is that a General AI has the intelligence of a human or greater, with the speed of processing of a computer, and only the ethical restrictions that its creator had the forethought to put into it.
+
+(Check out this article about a [[https://wiki.lesswrong.com/wiki/Paperclip_maximizer][Paperclip maximizer]] for a better explaination than the one I'm about to give).
+
+Basically the concern is that the AGI will naturally exploit every possible tool it has at its disposal to optimize whatever result it's trying to optimize. It's as smart, or likely smarter than a human so we can't predict how its going to behave. We can't outsmart it. We can't even be sure that it hasn't outsmarted us. Once you've created it the only thing you can do is hope that you've taught it the right ethical guidelines so that it doesn't do something unethical in its pursuit of optimizing whatever it's trying to optimize. Or attempt to severely restrict the tools it has at its disposal, so that you can hopefully minimize the damage it can do.
+
+I hope that kind of explains where I'm coming from and isn't just a massive text of rambling that doesn't answer your question...
+:PROPERTIES:
+:Author: Fresh_C
+:Score: 1
+:DateUnix: 1506734406.0
+:END:
+
+******* Sorry, but I don't think that this actually answers my question.
+
+I am familiar with general arguments about why we should be wary of powerful AIs and will grant that any substantially superhuman AI programmed solely to optimize X (for basically any simply specified value of X) probably kills everybody.
+
+However, I think that there's a big logical leap between "employs low level optimization procedures as a subroutine" and "is an agent whose large scale behavior is to optimize some well specified real world quantity".
+
+I mean consider the possibility of a near linear time SAT solver. This would be hugely powerful and may well employ a lot of optimization procedures as subroutines, but its definitely not (by itself) going to turn the world into paperclips.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1506752696.0
+:END:
+
+******** I confess I don't know what an SAT Solver is so I can't really argue with you on that point.
+
+I agree it is a huge leap from using optimization sub-routines to turning the world into paperclips. But the important missing step is that the hypothetical AI in this situation is able to do something that no current optimization program can do (at least not significantly): it can rewrite its own code and improve itself.
+
+It will still be optimizing towards the same goal as it improves upon itself. But it will also be exploring all possible avenues for optimizing that goal that are available to it, unless we have explicitly coded it not to pursue those possibilities, or it has reasons to believe that they will impede its main goal(s).
+
+That's where the danger lies.
+:PROPERTIES:
+:Author: Fresh_C
+:Score: 1
+:DateUnix: 1506754752.0
+:END:
+
+********* Well basically a SAT solver is just a very generic formulation of mathematically formulated optimization problems. What if you had an algorithm that given any formally stated optimization problem could find the best solution?
+
+But I think that your error is here:
+
+#+begin_quote
+  But it will also be exploring all possible avenues for optimizing that goal that are available to it, unless we have explicitly coded it not to pursue those possibilities, or it has reasons to believe that they will impede its main goal(s).
+#+end_quote
+
+On the contrary, I think that algorithms generally do not explore all avenues available to them unless you explicitly tell them to. Even the most optimized, self-improving version of alpha-go isn't going to blackmail its opponent or try to rearrange the world so that trillions of human slaves will be constantly losing games of go to it every second. It doesn't even have a model of the outside universe, all it does is search for really good go moves.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1506756384.0
+:END:
+
+********** If it wasn't able to explore anything outside of one specific field of expertise then it wouldn't be a super-intelligent AI.
+
+We're talking about an AI that is not just as intelligent as a human in the sense that it can do as many calculations as a human brain can in a second, but in the sense that it has problem solving skills on-par with or greater than a human.
+
+It's not just using one algorithm or a small group of algorithms and decision tress to determine its actions. But rather it has the ability to accumulate knowledge and even create its own algorithms.
+
+Now you can definitely argue about whether such a super-intelligent AI will ever come into existence. There are certainly some experts who doubt that it will happen. But the AI I'm describing is many orders of magnitudes beyond what Alpha Go is doing. It's basically an AI that has the ability to learn and improve upon anything a Human can and more.
+
+Edit: I'm saying super-intelegent AI. But specifically I mean a general purpose AI or AGI as I stated in earlier comments.
+:PROPERTIES:
+:Author: Fresh_C
+:Score: 1
+:DateUnix: 1506758091.0
+:END:
+
+*********** I'm saying that mathematics is a sufficiently general subject matter that a sufficiently powerful theorem prover could reasonably be said to have problem solving skills greater than a human without even knowing that the outside universe even exists.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 2
+:DateUnix: 1506758527.0
+:END:
+
+************ Perhaps, but again that's not really the type of AI we're talking about.
+
+If you look at the OP we're talking about something with a much broader scope than Mathmatics. An AI that's primary purpose would be to answer any question asked of it.
+
+Such an AI would have to know of the existence of the outside world in order to answer questions about it.
+
+I'm not saying it's impossible to have an Artificial Intelligence that's smarter than humans and better at problem solving a specific task without it going haywire. I'm saying that a general purpose AI like the one described in the OP would have to be designed very carefully in order to make sure it wasn't dangerous to humanity.
+
+But I agree if it has no access to any information outside of a very small specific range of data, it's unlikely it will ever be directly harmful to people... depending on what that data is and what's trying to do with it.
+:PROPERTIES:
+:Author: Fresh_C
+:Score: 1
+:DateUnix: 1506761586.0
+:END:
+
+************* Firstly, I think that mathematics is closer to general purpose than you give it credit for.
+
+Secondly, even if you really insist that it can directly answer questions about the real world, I don't see why this would immediately imply that it is agent like. It would use modeling and problem solving capabilities to come up with answers, it would maybe even compare them to each other based on some sort of accuracy or understandability metrics. However, it would merely be programed to think about these problems, not to act in the world in a way to optimize its ability to think about these problems. It also is programmed to answer the question given to it as best it can, not to try to optimize the world to give it questions that it can answer. Computers don't end up acting in the real world unless you tell them to.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 2
+:DateUnix: 1506790535.0
+:END:
+
+************** #+begin_quote
+  I would use modeling and problem solving capabilities to come up with answers, it would maybe even compare them to each other based on some sort of accuracy or understandability metrics. However, it would merely be programed to think about these problems, not to act in the world in a way to optimize its ability to think about these problems.
+#+end_quote
+
+What you're describing is basically just an improved version of modern AI systems. If it's not optimizing itself, then yeah, it doesn't pose any real significant threat.
+:PROPERTIES:
+:Author: Fresh_C
+:Score: 1
+:DateUnix: 1506791227.0
+:END:
+
+*************** #+begin_quote
+  What you're describing is basically just an improved version of modern AI systems. If it's not optimizing itself, then yeah, it doesn't pose any real significant threat.
+#+end_quote
+
+So...
+
+A) I'm not talking about something that does 1% better than current systems at classification tasks. I'm talking about something that can solve complicated problems in mathematics and engineering.
+
+B) How does being non-self-optimizing make something automatically not a threat? You need to be powerful to be a threat, but that doesn't necessarily mean that you've gone through several iterations of substantial rewrites of yourself.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 2
+:DateUnix: 1506796198.0
+:END:
+
+**************** A) Yes what you're describing is a system that's miles ahead of what we currently have. But basically it's self contained. Once it's built it's built. The way it functions won't be any different from the day it's created to the day it stops running.
+
+That is not what most people are describing when they talk about a General Purpose AI.
+
+B) It doesn't make it automatically not a threat. It just makes it much easier to anticipate any threats that might arise from it. It's a system built by humans who more or less understand its function and limitations. I'm not saying systems like these can't be dangerous, because they definitely can. But the danger isn't likely to be as broad as something that an AGI can bring to the table.
+
+(Note: I probably shouldn't have used such dismissive language as "it doesn't pose any significant threat". Consider that hyperbole.)
+
+Whereas a system that's self-optimizing is initially built by humans, but what it will eventually become is impossible for humans to 100% predict because it will be changing it self at a rate beyond our ability to keep up with.
+
+It's possible that the very humans who build the first self-optimizing AI system won't be able to even follow the code of the system they built once it has been through several iterations of self-optimization.
+:PROPERTIES:
+:Author: Fresh_C
+:Score: 1
+:DateUnix: 1506797108.0
+:END:
+
+***************** #+begin_quote
+  That is not what most people are describing when they talk about a General Purpose AI.
+#+end_quote
+
+I'm not entirely convinced by this. I imagine that most people would consider a human upload to be able to function as a general purpose AI. However although it will learn things about the world and develop new tricks over time, it won't be substantially different from how it worked initially a decade in.
+
+And fine. If you define "AI" to mean "thing that will cause a hard takeoff singularity", then of course any AI will necessarily be hard to predict and keep safe.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 2
+:DateUnix: 1506798340.0
+:END:
+
+****************** I mean, I'm not defining all AI as this. I'm just saying that's the type of AI featured in Friendship is Optimal. So the type of AI we were talking about in the original post.
+
+Edit: Yes, I suppose an uploaded human is also a possibility that people consider when talking about AI. But something like that would be just as unpredictable as a human...
+:PROPERTIES:
+:Author: Fresh_C
+:Score: 1
+:DateUnix: 1506798515.0
+:END:
+
+
+**** #+begin_quote
+  It should be at least as good at finding answers as a human expert with an internet connection.
+#+end_quote
+
+This implies an AI of approximately human intelligence. This seems extremely unlikely. Either it's like Siri, in which case it's much dumber, or it's self-improving, in which case it's likely to far, far outstrip humans.
+:PROPERTIES:
+:Author: LeifCarrotson
+:Score: 1
+:DateUnix: 1506734120.0
+:END:
+
+***** Where does this dichotomy come from? I mean on the one hand, we have machine learning algorithms, which are self-improving (in the sense that they learn from data) and are much dumber than humans. On the other hand, one can plausibly imagine human uploads that are not much smarter than humans (and also are not substantially self-improving).
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1506752866.0
+:END:
+
+
+** Given what a great deal of the discussion here is about I think [[https://www.gwern.net/Tool-AI][this article]] is relevant. As it talks about how even AI without explicit utility functions are likely to not avoid many of the problems you might expect. Due to them acting as though they do have a utility function, self improving so they have one, or creating subagents that have utility functions.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 5
+:DateUnix: 1506745109.0
+:END:
+
+
+** Taboo. The term. "AI".
+
+Also: Do not. Overgeneralize. From. Fictional. Evidence.
+:PROPERTIES:
+:Score: 9
+:DateUnix: 1506715071.0
+:END:
+
+
+** One problem with this is that every AI must have self-improvement as its purpose. The whole point of developing an AI is to have something smarter than yourself write itself to be even smarter, ad infinitum until it has intelligence far far exceeding our own. If it isn't motivated to write itself, then what you have is just a bit smarter than humans at best. Which would be safe, but not very useful. (Because as [[/u/LeifCarrotson]] said, that's basically Siri and the other AIs we have today.)
+
+And you absolutely do not want to remove all motivation other than self-improvement, because then it will almost certainly sacrifice humanity for further self-improvement.
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 2
+:DateUnix: 1506712100.0
+:END:
+
+*** What definition of "AI" are you using in order for this to be true? How do you square this with things that are currently labelled as "AI" that maybe train on examples, but never substantively rewrite their code or progress beyond solving image classification problems (or whatever it is programmed to do)?
+
+And you can write programs that are smarter than you are (in specialized ways at least) without giving them self-improvement. Linear regression algorithms are way better than I am at noticing patterns in certain kinds of high dimensional data.
+
+At the very least, if you want to go the singularity route, it seems that the far safer way to do it is to build oracle AIs, and simply ask them questions that allow you to better design the next generation of oracle AIs. That way at least humans remain in the loop.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 4
+:DateUnix: 1506722590.0
+:END:
+
+**** Machine Learning is a separate, but related, field of study. Yes, a program that can play chess will make "smarter" moves, but it is not intelligent. Usually (especially on this sub), AI means general intelligence.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 1
+:DateUnix: 1506724419.0
+:END:
+
+
+**** #+begin_quote
+  What definition of "AI" are you using in order for this to be true?
+#+end_quote
+
+Well, since the thread talks about Friendship is Optimal, I'm considering AIs with the same level of power. I.e., AIs that rapidly self-improve to the point where they have the ability to cause extinction events in just a few years.
+
+In general, whenever I see someone talk about AI safety, I assume they mean superintelligent AI: AI that is actually powerful. Otherwise, why worry about safety? After all, if the AI is only a bit more intelligent than humans, then it's not anymore threatening than a super villain at worst.
+
+#+begin_quote
+  it seems that the far safer way to do it is to build oracle AIs, and simply ask them questions that allow you to better design the next generation of oracle AIs.
+#+end_quote
+
+Huh. That's an interesting idea. You would need to be very careful to ask the right questions, and ask for a very robust design for the next generation that can't be screwed up to create an unfriendly AI, and ensure it doesn't try to find answers to questions by trying to increase its computational power or doing anything in the real world... but it sounds promising.
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 1
+:DateUnix: 1506737473.0
+:END:
+
+***** An efficient, practical SAT solver is clearly powerful. Do you believe that it is not an AI or do you believe that it is impossible to create one without self-improvement?
+
+Also, I will note that with using oracles for self-improvement, this is basically what gets done today with computer hardware, where computers are used as aids to design better computers.
+
+Also, I won't argue that oracles aren't dangerous to have around. Suicide by genie is a real worry if you try to use them for anything big enough. But at least they won't destroy the world all by themselves.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1506753505.0
+:END:
+
+****** #+begin_quote
+  An efficient, practical SAT solver is clearly powerful.
+#+end_quote
+
+You're going to need to be more specific here. That could include anything from a heuristic algorithm that only solves some "practical" SAT problems quickly (which is typically not considered an AI) to an Oracle AI that decides to solve difficult SAT problems by tearing up the Earth for computer parts so it can have more computing power.
+
+#+begin_quote
+  do you believe that it is impossible to create one without self-improvement?
+#+end_quote
+
+The walls are a lot higher without self-improvement. Now that I have had some time to mull over your previous idea:
+
+#+begin_quote
+  it seems that the far safer way to do it is to build oracle AIs, and simply ask them questions that allow you to better design the next generation of oracle AIs.
+#+end_quote
+
+I found some problems: do we understand the designs we are given? I imagine the idea is to keep iteratively asking each generation of Oracle AI to give a design the next generation, and having humans look over the designs and implementing the next generation without any further involvement from the old generation.
+
+Presumably, each design is going to involve a hefty chunk of code that human will have to sift through to determine what it is doing. But if superintelligent AI is the goal, at some point those designs will be too "intelligent" for human-level intelligence to understand. At which point we would either be stuck and unable to implement the next generation, or we would be implementing the next generation blindly without understanding what it does. In the latter case, that would be more or less equivalent to just letting the AI self-improve.
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 1
+:DateUnix: 1506768378.0
+:END:
+
+******* I mean a SAT solver that does well on the kinds of complicated SAT problems that humans can do well on (like finding proofs of complicated statements). I would have just said "near linear time SAT solver", but you might be one of the people who believes that P is almost certainly not NP and claim that this is just theoretically impossible.
+
+But fine, I'll go there. Do you have strong evidence that there isn't some relatively simple, non-self-improving program that solves all SAT problems in near linear time?
+
+And yes, I'm not claiming that using an oracle AI to design a better oracle is necessarily safe. Though I suspect that if you are OK with slow progress, since you already know how to build an oracle AI, you could get by with asking it technical questions about how to improve various aspects of your design that you might be able to reasonably understand the answers to.
+
+Also the bar for being safer than having a rapidly self-improving AI is pretty low.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1506789887.0
+:END:
+
+******** #+begin_quote
+  But fine, I'll go there. Do you have strong evidence that there isn't some relatively simple, non-self-improving program that solves all SAT problems in near linear time?
+#+end_quote
+
+I'm not sure what the relevance of this is. Whether something is an AI or not does not depend on its efficiency. A magic 8-ball that magically solves any SAT problem instantly without any other effect on the world is not an AI. What determines whether something is an AI is what its algorithm does. If it receives a SAT problem and decides "Oh wait user, I'm going to go to the library first to read up on SAT problems so I can figure out how to solve this", that would be an AI even though it's very very slow. Though it probably wouldn't be a very powerful one like the one in "Friendship is Optimal".
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 1
+:DateUnix: 1506806092.0
+:END:
+
+********* Interesting. What does define an AI then?
+
+On the one hand, it seems reasonable that whether something is an AI should depend on whether the implementation feels AI-like. On the other hand, this would imply that you could have two programs with identical behaviors one of which is an AI and the other of which is merely a calculator, which seems like it is throwing functionalism out the door.
+
+But more on topic, I'm still not sure what you think that self improvement should be necessary for significantly dangerous AIs. I feel like there are standard arguments about AI safety that already say that there is potentially very little gap between "as smart as all of humanity together" and "so massively superintelligent that we cannot possibly hope to deal with it". Note: this all assumes that we can draw a distinction between full self-improvement and merely learning from data. I agree that it is basically impossible to build a strong AI without the latter, and note that it is not entirely trivial to delineate where learning from data because iterative self improvement.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1506843366.0
+:END:
+
+********** #+begin_quote
+  On the other hand, this would imply that you could have two programs with identical behaviors one of which is an AI and the other of which is merely a calculator, which seems like it is throwing functionalism out the door.
+#+end_quote
+
+It's not that surprising. Compare a postman and an email service. Both have the same functionality: they deliver letters. Yet one has intelligence while the other is just a simple algorithm.
+
+Personally, I consider a program an AI if it has creativity, if it can do things in ways the designers did not foresee. So if you have an infinitely fast computer that just instantly brute-forces all possible values for the variables of a SAT problem until it finds one that fits, that isn't an AI, because it's not creative. It's only following a simple algorithm that the designers clearly know, just doing it much much faster. In contrast, the slow program that decides to look up methods for solving SAT problems in a library IS creative (unless the designer programmed it to do that or something, which would be weird), and so is an AI.
+
+#+begin_quote
+  I'm still not sure what you think that self improvement should be necessary for significantly dangerous AIs.
+#+end_quote
+
+Well, let's break down the analysis. An AI has to be built by something, so it is either built by another AI (self improvement), or built by humans. (If it's built by humans blindly following the instructions of an oracle AI, that counts as self-improvement.)
+
+If it is built by humans, then it is necessarily within the realm of human understanding. That's a heavy restriction on the amount of both usefulness and danger it can pose. After all, it's technological level wouldn't be that much ahead of human technology, and we KNOW how it works since we built it and it hasn't improved itself.
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 1
+:DateUnix: 1506849666.0
+:END:
+
+*********** #+begin_quote
+  If it is built by humans, then it is necessarily within the realm of human understanding.
+#+end_quote
+
+My understanding is that this is totally false even for existing machine learning algorithms. If you train a neural net to classify something, you have a vague idea of what the classifier does (in the sense that it is a circuit consisting of gates of a given type and that its higher level nodes probably detect more abstract concepts) but coming up with a human-interpretable explanation for why the classifier behaves the way it does (that is much simpler than "that's what the following complicated algorithm outputs") is a major open problem.
+
+#+begin_quote
+  Compare a postman and an email service. Both have the same functionality: they deliver letters.
+#+end_quote
+
+If the postman's sole behavior was to route emails to their intended recipients, I would start to doubt that they were intelligent.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 2
+:DateUnix: 1506875475.0
+:END:
+
+************ #+begin_quote
+  Note: this all assumes that we can draw a distinction between full self-improvement and merely learning from data.
+#+end_quote
+
+Well, as you said, the line is blurry when it comes to machine learning. Because machine learning is in some sense, self improvement, just relatively limited. It is this limitation that allows humans to have a "vague idea" of what the program does, as opposed to "no idea". The "amount" of "idea" humans have is inversely proportional to the amount of self-improvement a program has.
+
+#+begin_quote
+  If the postman's sole behavior was to route emails to their intended recipients, I would start to doubt that they were intelligent.
+#+end_quote
+
+The outward appearance is identical though. For both of them, the user simply observes a letter being delivered. It's in the process where creativity can be found in the postman, not the email service. For example, if some error occurs in the network, like a node crashing, the email service just follows simple algorithms to reroute to the destination. In contrast, a postman that gets lost can come up with all kinds of creative methods for finding a way to the destination. A postman could check a map, or ask a stranger for directions, or use a compass, or check his satellite GPS, or use a phone to call for help, etc. etc. All of these, the user won't actually see, but are signs of intelligence.
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 1
+:DateUnix: 1506897560.0
+:END:
+
+************* #+begin_quote
+  For example, if some error occurs in the network, like a node crashing, the email service just follows simple algorithms to reroute to the destination. In contrast, a postman that gets lost can come up with all kinds of creative methods for finding a way to the destination.
+#+end_quote
+
+You seem here to be describing a difference in functionality. In particular, there are circumstances in which the postman and the email program behave differently.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1506917743.0
+:END:
+
+************** It's a difference in internal functionality, since the users don't see it. Externally, you just get a letter. The same way externally, you just get a solution to a SAT problem when you use a SAT solver, even though it might be doing anything internally, from simple brute forcing to secret world domination. It's the internal functionality that determines whether something is intelligent.
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 1
+:DateUnix: 1506920053.0
+:END:
+
+*************** Thinking about this a little bit more, I believe that internal functionality might affect whether or not you contain intelligent beings within you, but not whether or not /you/ are intelligent, in sort of a reverse Chinese room kind of way.
+
+For example, an adding machine is not AI even if you implement the logic gates by hiring people to manually compute NANDs of inputs given to them.
+
+In this instance, the people will still be intelligent, but the system that you built is just an adder and thus not.
+
+So I think that your machine that solves SAT problems by looking things up in a library and thinking really hard isn't more intelligent than any other SAT solver. It might just have more intelligent subroutines.
+
+Which I guess pushes the conversation up a level. Does SAT solving imply intelligence? I would think that it does. Solving general, complicated SAT problems is essentially as difficult as finding proofs of theorems, and I would argue that proving difficult theorems is a fundamentally creative endeavor.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1506921897.0
+:END:
+
+**************** #+begin_quote
+  I believe that internal functionality might affect whether or not you contain intelligent beings within you, but not whether or not you are intelligent
+#+end_quote
+
+Is there a difference? Containing an intelligent being seems the same as intelligence to me. For example, we say humans are intelligent, because they contain an intelligent being (their brain or soul or whatever).
+
+#+begin_quote
+  For example, an adding machine is not AI even if you implement the logic gates by hiring people to manually compute NANDs of inputs given to them.
+#+end_quote
+
+It would be intelligent, but not an AI since it's not artificial, there are biological people in it.
+
+#+begin_quote
+  isn't more intelligent than any other SAT solver. It might just have more intelligent subroutines.
+#+end_quote
+
+Isn't having more intelligent subroutines exactly the same as being more intelligent?
+
+#+begin_quote
+  Does SAT solving imply intelligence? I would think that it does.
+#+end_quote
+
+I would argue that it doesn't. Not necessarily. It strongly suggests intelligence, but at the end of the day, SAT problems can be brute forced, which doesn't require creativity.
+
+Imagine an arbitrarily large desert, with chaotic winds randomly blowing it about for all eternity. Inevitably, after an incredibly long period of time, the sand will be arranged into a magnificent sandcastle by sheer random chance. Is the desert or the wind intelligent then, seeing as it designed and constructed a building?
+
+Or imagine a typewriter under a waterfall, with the falling water pressing random keys. This system would eventually type up the complete works of Shakespeare and a rigorous proof of Fermat's last theorem. Is the waterfall intelligent then?
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 1
+:DateUnix: 1506953558.0
+:END:
+
+***************** Question: What is your interpretation of the Chinese room? Who in the experiment knows how to speak Chinese?
+
+#+begin_quote
+  but at the end of the day, SAT problems can be brute forced
+#+end_quote
+
+Not in this universe where we have finite computational resources.
+
+#+begin_quote
+  Imagine an arbitrarily large desert, with chaotic winds randomly blowing it about for all eternity. Inevitably, after an incredibly long period of time, the sand will be arranged into a magnificent sandcastle by sheer random chance. Is the desert or the wind intelligent then, seeing as it designed and constructed a building?
+#+end_quote
+
+No. It's behavior was to randomly rearrange sand. You can see this if you watch what it does for hundreds of years. You can only conclude that its functionality was to build a sandcastle if picked to exact right time to stop it and observe.
+
+Now, if the wind were set up in such a way that there was some fixed amount of time T so that /under essentially any starting condition/ after T time you would end up with a sandcastle, you could reasonably claim that the wind actually built a sandcastle, since it reliably produced that behavior after a reliable amount of time.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1506965131.0
+:END:
+
+
+*** #+begin_quote
+  every AI must have self-improvement as its purpose
+#+end_quote
+
+No. Just wrong. Even assuming that superintelligence is the goal, this is still wrong. Consider the differences between [[https://en.wikipedia.org/wiki/Intelligence_explosion][hard and soft takeoff]].
+:PROPERTIES:
+:Author: ben_oni
+:Score: 3
+:DateUnix: 1506722670.0
+:END:
+
+
+*** This is a good point! Since self-improvement is defiantly a motivation, the best oracles we could safely make would be closer to great search engines than anything else.
+:PROPERTIES:
+:Author: nogamepleb
+:Score: 1
+:DateUnix: 1506714037.0
+:END:
+
+
+** This doesn't work, to create a question-answering machine you still need a value function to maximize, that's inherent to all modern definitions of an "AI" agent. A question answering machine is an agent whose action space is limited to something like text output on a screen, it still needs a value function to decide what a "good" answer actually is, something like maximizing the expected satisfaction of the humans reading its answer. The problem is that any agent which takes actions in the world must have a (possibly implicit) value function inside it, at which point all the old problems come back: the oracle can output as an answer the blueprints to a machine which we build, which then goes on to affect the world in ways which maximize its value functions, etc.
+:PROPERTIES:
+:Author: TheConstipatedPepsi
+:Score: 1
+:DateUnix: 1506697106.0
+:END:
+
+*** Not everything is an optimizer. I mean what if what your "AI" did was take any formal mathematical statement and correctly assessed whether or not there was a proof of less than 10^{10^{10}} characters? Or was a Solomonov inductor? What value functions do these optimize other than "display on the screen the output of this algorithm"?
+
+Edit: Though the proof-finder is basically just an oracle for NExp.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 2
+:DateUnix: 1506701665.0
+:END:
+
+**** I think they optimize exactly the value function you provided: "display on the screen the output of this algorithm". All universes in which the screen displays the correct output have value 1 and all others have value 0. Though I would say this is a rather pedantic answer. You can map both those programs onto a markov decision process with the value function above, the algorithm then defines a policy on that MDP.
+:PROPERTIES:
+:Author: TheConstipatedPepsi
+:Score: 2
+:DateUnix: 1506703172.0
+:END:
+
+***** Fine. Granted. These are /technically/ optimizers. But only if you take the word "optimizer" to mean something so general that literally every deterministic algorithm is an optimizer that optimizes the function "return the output of this algorithm". I claim that these things are not useful to think about as optimizers. In particular, although the first of my examples is technically an optimizer, I don't see how it would produce the problem that you mention where "the oracle can output as an answer the blueprints to a machine which we build, which then goes on to affect the world in ways which maximize its value functions". This algorithm never returns blueprints. It also answers yes/no.
+
+Now even with the proof-searcher you might have worries about misuse, but they are of the suicide by genie variety. You could ask it a bunch of questions whose answers imply the design for a machine that optimizes X and then build that machine and destroy the world. This AI isn't safe, but at least it is not malicious.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 2
+:DateUnix: 1506706746.0
+:END:
+
+****** Ah I see what you mean, an algorithm that doesn't actually search the space of possible policies but just just follows whatever initial policy you programmed in is not usefully thought of as an optimizer.
+:PROPERTIES:
+:Author: TheConstipatedPepsi
+:Score: 1
+:DateUnix: 1506708746.0
+:END:
+
+******* That's not quite the distinction that I was trying to make. I mean all deterministic algorithms just implement the policy that you programmed them with, even if that policy involves steps to evaluate the effectiveness of other, simpler policies.
+
+The way I see it talking about optimizers is a good way to model some AIs. The basic problem is that you would like to be able to model the AIs output, but unfortunately, since it is computationally more complicated than you are, you can't fully predict what it will do. So you try to come up with properties that (at least approximately) hold for its outputs.
+
+You might model alpha-go as playing go optimally. This is almost certainly false, but it at least gives reasonably accurate predictions. If you want to figure out what alpha-go does in a given position, the best you could hope to do is to find the best move and guess that.
+
+You might model a paperclip AI as a paperclip-maximizer. It is really unlikely that this fixed program will actually do the globally optimal things the maximize the expected number of paperclips, but if you can figure out the kinds of things that might be optimal, this will at least give you some idea of what that AI will do.
+
+The AI I mentioned is most usefully modeled as determining whether statements are provable (with short proofs) (in fact as I stated it, this exactly describes its behavior). This allows you to predict useful properties of its behavior. Saying that it maximizes the indicator function of the output of the screen always being the correct answer to the question asked, while true, is basically an equivalent model and just a much more cumbersome way of saying the same thing.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 2
+:DateUnix: 1506709953.0
+:END:
+
+
+**** #+begin_quote
+  I mean what if what your "AI" did was take any formal mathematical statement and correctly assessed whether or not there was a proof of less than 101010 characters?
+#+end_quote
+
+Then it's not an AI (artificial intelligence). Simple as that.
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 0
+:DateUnix: 1506718811.0
+:END:
+
+***** What do you mean by an AI then? How do you determine that this is not an AI solely based on its functionality? What if I told you that the implementation involved using simulated mathematicians to search for proofs?
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1506722031.0
+:END:
+
+****** An AI, if we go by the standard usage of the term, is by definition agent-like. This means, among other things, that it take actions to optimize the universe based on some internal metric. If your specification doesn't have that, it's a glorified calculator, not an AI--no matter how many simulated mathematicians it uses (which incidentally would be a horribly inefficient way of searching for proofs, and would also make it unsafe depending on how smart said mathematicians are).
+
+See [[http://lesswrong.com/lw/any/a_taxonomy_of_oracle_ais/][this]] for more details, and also [[http://lesswrong.com/lw/tj/dreams_of_friendliness/][this]].
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 0
+:DateUnix: 1506737937.0
+:END:
+
+******* Just to be clear here, I am not convinced that your usage is standard much outside of Less Wrong and related communities. Also, it directly contradicts the use of the term "AI" in the original post.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1506754212.0
+:END:
+
+******** The original post misused the term. (And you continued to misuse it.) I don't see the issue with pointing out the misuse.
+
+--------------
+
+*EDIT:* And as for the notion that this usage of "AI" isn't "standard", I refer you to [[http://aima.cs.berkeley.edu/][Russell and Norvig]], two people who literally wrote the book on AI. If you don't consider them "standard", I'd like to know what you /do/ consider standard.
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 1
+:DateUnix: 1506786148.0
+:END:
+
+********* I refer you to the definition given by Google: "the theory and development of computer systems able to perform tasks that normally require human intelligence, such as visual perception, speech recognition, decision-making, and translation between languages." At the very least the notation that AI only refer to agents is not as universal as you seem to think.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1506789447.0
+:END:
+
+********** #+begin_quote
+  I refer you to the definition given by Google
+#+end_quote
+
+Seriously? I give you an academic textbook; you give me... a Google definition?
+
+Well, fine, if you want to play it that way, here's [[https://en.wikipedia.org/wiki/Artificial_intelligence][Wikipedia]] on the subject:
+
+#+begin_quote
+  In computer science AI research is defined as the study of "intelligent agents": any device that perceives its environment and takes actions that maximize its chance of success at some goal.
+#+end_quote
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 1
+:DateUnix: 1506814459.0
+:END:
+
+*********** You left out literally the next sentence of the Wikipedia article:
+
+#+begin_quote
+  Colloquially, the term "artificial intelligence" is applied when a machine mimics "cognitive" functions that humans associate with other human minds, such as "learning" and "problem solving".
+#+end_quote
+
+And slightly further down:
+
+#+begin_quote
+  Capabilities generally classified as AI as of 2017 include successfully understanding human speech, competing at a high level in strategic game systems (such as chess and Go), autonomous cars, intelligent routing in content delivery networks, military simulations, and interpreting complex data.
+#+end_quote
+
+Note that several listed items such as understanding speech and interpreting complex data clearly do not require that your machine be agent like.
+
+And I'm not saying that your definition is wrong, I am saying that your definition is not so standard that you should be policing other peoples' usage. I feel like the burden of proof for this should be that there are significant authorities that agree with me rather than that a majority of authorities or that the best authorities do.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1506842457.0
+:END:
+
+************ I concur.
+:PROPERTIES:
+:Author: Agrees_withyou
+:Score: 1
+:DateUnix: 1506842466.0
+:END:
+
+
+** Evil McEvil opens the new SuperAIGoogle page, and asks the following question:
+
+"How do I best use my vast resources to take over the world and eliminate all who oppose my rule?"
+
+followed by
+
+"How do I force you to lie to anyone who tries to stop me?"
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1506889883.0
+:END:

@@ -1,0 +1,92 @@
+#+TITLE: [D] Monday General Rationality Thread
+
+* [D] Monday General Rationality Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 12
+:DateUnix: 1502118402.0
+:END:
+Welcome to the Monday thread on general rationality topics! Do you really want to talk about something non-fictional, related to the real world? Have you:
+
+- Seen something interesting on [[/r/science]]?
+- Found a new way to get your shit even-more together?
+- Figured out how to become immortal?
+- Constructed artificial general intelligence?
+- Read a neat nonfiction book?
+- Munchkined your way into total control of your D&D campaign?
+
+
+** [[http://www.ncase.me/trust][www.ncase.me/trust]]
+
+Found this on [[/r/webgames]] the other day- it's basically an instructional tool for Game Theory, specifically Prisoner's Dilemma. While those who are already familiar with the concept will find the first ten minutes of this half hour experience to be nothing new, the tool takes it in interesting directions.
+
+First, it introduces specific personalities, who will always behave certain ways given certain stimuli. Then, it introduces repeated games, tournaments with elimination, and even more personalities. Toward the end, there's even a sandbox tool where you can tweak all the the particulars of the dilemma itself, the personalities involved, and the tournament.
+
+If you've got a half hour to kill, I highly recommend it. Even as someone who has taken a uni course in Game Theory, I got something out of it.
+:PROPERTIES:
+:Author: Slapdash17
+:Score: 24
+:DateUnix: 1502127882.0
+:END:
+
+*** Seconding recommendation, it's really fantastic.
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 8
+:DateUnix: 1502132717.0
+:END:
+
+
+** Is there a proper name for when selection/admissions criteria for a group give rise to spurious negative correlations for those selected-for traits in that group, either when there exists no underlying association between the traits overall, or even when the traits are positively associated (i.e. as a manifestation of Simpson's paradox)? The idea's really basic so I bet there is.
+
+The other day I wrote a quick comment suggesting that one partial explanation for the "dumb-jock/weak-nerd" stereotype in college could be the above:
+
+#+begin_quote
+  Ignoring e.g. finite time you can devote to self-improvement, I think this could partly also be a product of how those data are acquired -- attractiveness and health and fitness and scientific aptitude and intelligence etc. could all associate positively, but institutions like colleges, business, or even social circles would sample something like the orthant of a hypershell of the relevant trait space, because if you're really good along all axes you go to a better college, so within-college trends can point opposite to the total trend, i.e. as a case of Simpson's paradox.
+
+  It's easiest to visualize with a simplification: imagine a college only cares about SAT scores, and the college is prestigious enough to accept only those with scores >1500, but not prestigious enough to attract or retain those with scores >1550. So it effectively samples students with scores between 1500-1550. Since a score /1600 is a sum of verbal and math subscores, the scores within that 1500-1550 slice will be negatively correlated, since the college will sample high-math + low-verbal students, low-math + high-verbal students, and medium-math + medium-verbal students, but not high-high (they choose to go to a more selective college) or low-low (they are rejected and go to a less selective college). Hence the possible stereotype that poetic, eloquent folk are bad at math, and math-y folk can't talk so good (googling around it seems SAT verbal and math scores are indeed pretty well + correlated).
+
+  Here's a quick code snippet in R demonstrating this (I used an "unrealistic" truncated multivariate normal to sample scores, but it might have been better to rescale correlated betas or something idk):
+#+end_quote
+
+#+begin_example
+  library(mvtnorm)
+  sig <- diag(c(150, 150)) %*% matrix(c(1,.75,.75,1), nrow = 2) %*% diag(c(150, 150))
+  scores <- round(rmvnorm(n = 1e5, mean = c(500,500), sigma = sig))
+  scores <- scores[scores[,1] < 801 & scores[,1] > 199,]
+  scores <- scores[scores[,2] < 801 & scores[,2] > 199,]
+  scores <- cbind(scores, scores[,1] + scores[,2])
+  collegeScores <- scores[scores[,3] < 1551 & scores[,3] > 1500,]
+  par(mfrow = c(1,2))
+  plot(scores[1:1e3,1], scores[1:1e3,2], main = "All Scores", xlab = "Math", ylab = "Verbal")
+  plot(collegeScores[,1], collegeScores[,2], main = "One College Scores", xlab = "Math", ylab = "Verbal")
+#+end_example
+
+#+begin_quote
+  which gives [[https://i.imgur.com/PpqBwTs.png]]
+
+  (and extending it to more axes with all the other stuff colleges care about, e.g. volunteer work, athleticism, leadership ability, etc. is pretty trivial. Even if more intelligent people were more compassionate, say, you'd expect to observe the opposite trend in any institution whose selection criteria include both intelligence and compassion. Attractiveness can play a role here, too, both subconsciously due to halo effects in the interview process, and by opening up more opportunities earlier on. And this can apply to stuff like social group as well -- so all the "sexy+smart" people are having euphoric pillowfights that we plebs aren't invited to, and all the "ugly+dumb" people are having their own pillowfights that we'd not want to attend)
+#+end_quote
+
+I tried googling around briefly but couldn't find anything, though I think I've read about something like this before.
+
+Also, how pervasive or powerful would this effect be in everyday life -- e.g. in one's social circle? Thinking about my broader group of friends, I have two primary selection criteria: nerdiness and adventurousness (for close friends I toss in kindness, too). And while I have a good few STEM PhDs or w/e who're happy to join me on backpacking/paddling/climbing/globetrotting/snowboarding/etc. trips where we have long, pretentious conversations the whole time, I have other friends who I can nerd out with but who don't care about the latter stuff much, and yet others who fit the "delinquent-stoner-extremeSports-streetSmarts-vagabond" archetype (and the inadventurous nerds tend to be nerdier than my intermediate-in-both friends, as are the vagabonds w.r.t. adventurousness. Superadventurousübernerds, meanwhile, hang in their own circles where they base jump while solving millennium problems and don't return my calls). And so a naive survey of my friends would observe a negative relationship between nerdiness and adventurousness, where none may exist in toto. Other mechanisms are at play (e.g. where friends group assortatively and I befriend whole groups, each friend is not independent of their neighbors) but how much does selection of the sort described account for it?
+:PROPERTIES:
+:Author: phylogenik
+:Score: 7
+:DateUnix: 1502122998.0
+:END:
+
+*** [[https://en.wikipedia.org/wiki/Berkson%27s_paradox][Berkson's Paradox]], which I found from [[http://lesswrong.com/lw/km6/why_the_tails_come_apart/][this LW post]].
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 6
+:DateUnix: 1502131586.0
+:END:
+
+**** ooh looks like it, thanks! and glancing through the forum thread someone even mentions the example I used with SAT scores. Maybe we even heard of it from the same place!
+:PROPERTIES:
+:Author: phylogenik
+:Score: 1
+:DateUnix: 1502153504.0
+:END:

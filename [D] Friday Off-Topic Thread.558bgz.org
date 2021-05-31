@@ -1,0 +1,789 @@
+#+TITLE: [D] Friday Off-Topic Thread
+
+* [D] Friday Off-Topic Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 17
+:DateUnix: 1475247887.0
+:END:
+Welcome to the Friday Off-Topic Thread! Is there something that you want to talk about with [[/r/rational]], but which isn't rational fiction, or doesn't otherwise belong as a top-level post? This is the place to post it. The idea is that while reddit is a large place, with lots of special little niches, sometimes you just want to talk with a certain group of people about certain sorts of things that aren't related to why you're all here. It's totally understandable that you might want to talk about Japanese game shows with [[/r/rational]] instead of going over to [[/r/japanesegameshows]], but it's hopefully also understandable that this isn't really the place for that sort of thing.
+
+So do you want to talk about how your life has been going? Non-rational and/or non-fictional stuff you've been reading? The recent album from your favourite German pop singer? The politics of Southern India? The sexual preferences of the chairman of the Ukrainian soccer league? Different ways to plot meteorological data? The cost of living in Portugal? Corner cases for siteswap notation? All these things and more could possibly be found in the comments below!
+
+
+** I have written up my thoughts on how the tenets of rational fiction might be converted to game design. [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=drive_web][You can find that essay here]].
+:PROPERTIES:
+:Author: ketura
+:Score: 26
+:DateUnix: 1475248381.0
+:END:
+
+*** Speaking as someone who finds game design very interesting, that was a spectacular read. I thought making a rational game was a matter of just telling a rational story in a game, but you applied rationality to the very core of the experience and then expanded it to every layer of the experience.
+:PROPERTIES:
+:Author: trekie140
+:Score: 5
+:DateUnix: 1475252305.0
+:END:
+
+**** Thanks! Time will tell if these concepts translate from theory to practice. I'll be sure to keep everyone updated.
+:PROPERTIES:
+:Author: ketura
+:Score: 1
+:DateUnix: 1475253354.0
+:END:
+
+
+*** I recently made the connection between story foreshadowing and a proper learning curve in level design. I remember at the time thinking about how different aspects might also be applicable, but then got distracted by some task or another. Thank you for writing so elaborately on the subject as I do believe there is merit to it.
+:PROPERTIES:
+:Author: veruchai
+:Score: 5
+:DateUnix: 1475269755.0
+:END:
+
+
+*** Well-written, I like your perspective!
+:PROPERTIES:
+:Author: Dwood15
+:Score: 3
+:DateUnix: 1475254414.0
+:END:
+
+**** Thanks!
+:PROPERTIES:
+:Author: ketura
+:Score: 1
+:DateUnix: 1475255340.0
+:END:
+
+
+** I've made a [[http://www.omnibuser.com/][web-based tool]] for downloading fanfiction in a variety of formats. Right now it supports downloading from:
+
+- fanfiction.net
+- fictionpress.com
+- sufficientvelocity
+- spacebattles
+- questionablequesting
+
+This is very much still in beta. I just finished rewriting a bunch of backend stuff today, even. There will definitely be bugs, and features that could use more polish. In particular there are some serious performance issues that I need to sort out.
+
+But I think it's at the point where it should work most of the time for most people, so I'm throwing it out there for anybody who might find it useful, with the above caveats.
+
+If you encounter any bugs or have suggestions for feature improvements, please let me know!
+:PROPERTIES:
+:Author: Omnibuser
+:Score: 13
+:DateUnix: 1475255998.0
+:END:
+
+*** What are the advantages of using this web tool over [[https://fanficfare.appspot.com/][fanficfare]] (which is also available as a [[http://calibre-ebook.com/][calibre]] [[http://www.mobileread.com/forums/showthread.php?t=259221][plugin]])?
+:PROPERTIES:
+:Author: Escapement
+:Score: 6
+:DateUnix: 1475257670.0
+:END:
+
+**** After trying to use the web client for fanficfare to get hpmor from ffn, I can comment on this somewhat.
+
+- fff doesn't seem to export pdfs.
+
+- It seems to take a really long time. 20 minutes later it hasn't finished processing. Omnibuser handles something the size of hpmor in about 5 minutes. Omnibuser also caches stories in a database, so the second (and all subsequent) person to request hpmor will receive the file almost instantly, only waiting for omnibuser to check if new chapters have been posted and create the actual file.
+
+- Omnibuser is prettier and has an /awesomecool!/ progress bar so you know how long things are going to take.
+
+- Omnibuser does not require you to give it your email address.
+:PROPERTIES:
+:Author: Omnibuser
+:Score: 7
+:DateUnix: 1475264930.0
+:END:
+
+
+**** I've never seen fanficfare before, I'll have to check it out. The only similar tool I'm familiar with is [[http://fanfictiondownloader.net/][fanfictiondownloader]].
+:PROPERTIES:
+:Author: Omnibuser
+:Score: 6
+:DateUnix: 1475258520.0
+:END:
+
+
+**** Heh. I'm studying in a coding school, and one of the most common cause for refusing final projects I've seen is "but there's already this thing which does everything you want to do, except better!".
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 3
+:DateUnix: 1475260456.0
+:END:
+
+***** Haha. Luckily the main purpose of this project was to learn Rails. In that sense it's been a success even if nobody ever uses it.
+:PROPERTIES:
+:Author: Omnibuser
+:Score: 7
+:DateUnix: 1475263160.0
+:END:
+
+****** Well, it's a failsafe development cycle :)
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 2
+:DateUnix: 1475265057.0
+:END:
+
+
+*** Don't forget to limit how quickly it gets pages from the site. IIRC, other story-downloading services have been blocked from accessing FanFiction.net due to violating [[https://www.fanfiction.net/tos/][the Terms of Service]]:
+
+#+begin_quote
+  You agree not to use or launch any automated system, including without limitation, "robots," "spiders," or "offline readers," that accesses the Website in a manner that sends more request messages to the FanFiction.Net servers in a given period of time than a human can reasonably produce in the same period by using a conventional on-line web browser.
+#+end_quote
+
+[[http://pastebin.com/M4JQqYp2][The program that I wrote for my own use a few years ago]] is limited to downloading one chapter every five seconds, and I haven't been banned yet.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 5
+:DateUnix: 1475265034.0
+:END:
+
+**** Yeah, I have a built in delay of 1.5 seconds between each page request on a particular domain, with a database backed queue to ensure that delay is respected even when there are concurrent users. Hopefully that's long enough.
+:PROPERTIES:
+:Author: Omnibuser
+:Score: 5
+:DateUnix: 1475265225.0
+:END:
+
+
+*** It would be really awesome if you would support markdown version.
+:PROPERTIES:
+:Author: raymestalez
+:Score: 2
+:DateUnix: 1475262848.0
+:END:
+
+**** Huh, I didn't even think of that. I usually only interact with Markdown for GitHub readmes. It shouldn't be too hard, I'll look into it.
+:PROPERTIES:
+:Author: Omnibuser
+:Score: 2
+:DateUnix: 1475264255.0
+:END:
+
+
+*** I notice you're writing it in ruby. Any particular reason you've chosen to learn that language?
+:PROPERTIES:
+:Author: traverseda
+:Score: 2
+:DateUnix: 1475263225.0
+:END:
+
+**** I love Ruby. It's really fun to write code in for a bunch of reasons. It's pure object oriented... The expression 1 + 2 is literally calling the "+" method on the object "1" of class Integer and passing the object "2" as an argument. It also gives you total freedom to extend or modify standard library classes, for example you can completely redefine that "+" method, which I've never seen allowed in anther language but is sometimes very useful. The syntax is really pleasant too, the docs are good, and the community is great.
+
+Rails is a pretty good web framework, and there's a lot of Rails jobs in my area (Dublin). Neither Ruby or Rails is perfect, but I've been enjoying them so far.
+:PROPERTIES:
+:Author: Omnibuser
+:Score: 4
+:DateUnix: 1475263996.0
+:END:
+
+***** That is called [[https://en.wikipedia.org/wiki/Operator_overloading][Operator overlading]]. On the Wikipedia site are some other languages that can do that.
+:PROPERTIES:
+:Author: DrunkenQuetzalcoatl
+:Score: 3
+:DateUnix: 1475266591.0
+:END:
+
+****** I don't think that's quite the same thing. Ruby doesn't really have operators. + is just a method that's defined on some classes and not others. Not only can I define a + method on my own classes, I can change that method in standard classes... For example change the Integer + method so that instead of adding numbers it converts them to strings and concatenates them. To do this I don't need to alter the Ruby core files, I can easily just reopen the Integer class in my own code and override whatever I want. It's called monkeypatching in the Ruby community.
+:PROPERTIES:
+:Author: Omnibuser
+:Score: 4
+:DateUnix: 1475267301.0
+:END:
+
+******* That describes pythons implementation with magic methods.
+:PROPERTIES:
+:Author: traverseda
+:Score: 3
+:DateUnix: 1475270551.0
+:END:
+
+
+******* Hm. My language of choice is C#. I just looked into that.
+
+It can add methods to existing classes, change/add operators in my own classes which if they inherit could be interchangeable through polymorphism, list methods/parameters through reflection.
+
+But I think modifying existing methods/operators for things like string for example is not possible. Seems very powerful like a part of Aspect oriented programming for cross cutting concerns but also extremely easy to abuse. Almost like goto.
+
+Is that sometimes a problem in the Ruby community?
+:PROPERTIES:
+:Author: DrunkenQuetzalcoatl
+:Score: 2
+:DateUnix: 1475269124.0
+:END:
+
+
+***** Fair enough. Worth noting that you can override python's magic methods, but that generally doing that is antithetical to the zen of python and/or Unix philosophy.
+:PROPERTIES:
+:Author: traverseda
+:Score: 2
+:DateUnix: 1475270257.0
+:END:
+
+
+*** You open to contributions? I'm a (fairly new) Rails and Javascript developer myself, and I've been poking around for open source stuff to try and help with. If nothing else, I'm pretty good with Sass/CSS.
+:PROPERTIES:
+:Author: DiscyD3rp
+:Score: 2
+:DateUnix: 1475267375.0
+:END:
+
+
+** The below comment is a repost from a previous Monday, General Rationality thread. Didn't get much responses (because I posted it days later) so I decided to re-post it here and see what responses I receive:
+
+This comment will contain massive spoilers for the game /Life is Strange/. If you are playing, or want to play the game, then I would heavily suggest you avoid reading this comment. Normally, I'd spoiler-text it but then the entire comment would be pretty much black and I don't want to do that. So I'm giving you fair warning here. Spoilers lie ahead.
+
+Ok so, long story short, Life is Strange is the story of a small town girl, the protaganist, who somehow acquires time reversal powers (think Prince of Persia time rewinding as opposed to /Back to the Future/ type travel) and rewinds time to save her best friend, Chloe, from being shot in an altercation in a school bathroom, which you do in the early stages of the game. It's a game sort of like Heavy Rain, so more of an interactive movie than anything else. The game's heavy on allowing you to make your own choices about things, and will give you stats on how you chose compared to the other players.
+
+As the game progresses, Chloe dies several times (with you rewinding to save her each time) in increasingly far fetched (though nothing straight out supernatural) ways. Think Final Destination. Each time, you have to go further and further to save her, compromising your morals just a bit more in some scenarios. The game's climax is a standard "fate is real" sort of thing. Chloe was meant to die in that bathroom at the beginning of the game. Time does not like you mucking with it. Cue supernatural superstorm coming to wipe out your hometown. The game gives you the choice: Go back in time and let Chloe die in that bathroom or allow the storm to wipe out the town. The implication is that, once the storm wipes out the town, the universe will be satisfied and Chloe's fate will 'reset' so if you save her, she'll actually be saved. No fatalistic trolling. So...what choice do you make?
+
+To me, as I'm sure it is to most rationalists, the choice is clear: *Let Chloe die.* There's simply no way to justify sacrificing hundreds (possibly thousands) of lives for one. However, literally every single person I've asked this question of in my life (3 close friends, 4 coworkers who I'd call acquaintances) said they'd save their friend and let the town die. Once I added the caveat that we would assume everyone you know in town is elsewhere and so left inside it are just thousands of people you don't know, the hesitant no's became resounding yes'. And this perplexed me.
+
+I understand the impulse; from a human stand point, we suck at caring for things that aren't right in front of us. I know this. But I just thought, intellectually speaking, everyone would be able to suck it up and rise above their basic nature. And....I was swiftly proven wrong. And also called a bad friend for not being willing to sacrifice hundreds of innocents for my own selfish desires to keep my friend alive. GG.
+
+I mostly wrote this to see what some of your opinions/insights on this would be. And also what you would choose in the scenario. Actually, any and all discussion that could branch off from this is cool with me. Go nuts!
+:PROPERTIES:
+:Author: Kishoto
+:Score: 7
+:DateUnix: 1475257511.0
+:END:
+
+*** Aren't you forgetting several other reasons to avoid the destruction of the town?\\
+- Dead parents = moving in with relatives or foster care\\
+- Dead teachers and guidance counselors = fewer possible references for college applications\\
+- Destroyed high school = problems with transferring old courses to a new high school
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 7
+:DateUnix: 1475261523.0
+:END:
+
+**** The first thing you mentioned was taken care of by the caveat I added, in which I let the people I asked the question to assume all of the people they know had already left, which somewhat fits with the game as the protagonist is there for boarding school, so most of her close friends/relatives are elsewhere.
+
+The second and third things are vastly outweighed by the cost of human life, to 99 percent of people I'd imagine. Those things are annoyances compared to that. No one's going to care about losing possible references for college applications when they basically let hundreds of people die out of their own selfishness.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 6
+:DateUnix: 1475271251.0
+:END:
+
+
+**** Plus, if the town's destroyed, you'll loose your laptop with the last season of /Orange is the New Black/!
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 3
+:DateUnix: 1475315928.0
+:END:
+
+
+*** LIFE IS STRANGE SPOILERS My thoughts on reaching that ending were basically just "I'm not buying this nonsense. If it was a clear cut choice between Chloe and 1000 people that would be one thing, but I haven't seen any firm evidence that convinces me that killing Chloe would stop this storm." The supernatural events in that story were always quite strange and never closely tied together. The best example of this for me was the moon duplication. That is very clearly a major worldwide event that can't clearly be tied back to you. While there are some signs that you mucking with things was tied to the storm, I didn't feel like the game made a good enough case to kill a close friend based on so little. I can't say for sure, but I think it is quite possible that some of the people you have talked to got the same sort of vibes from those elements of the story even if they didn't articulate them in your discussions.
+:PROPERTIES:
+:Author: kais2
+:Score: 5
+:DateUnix: 1475292253.0
+:END:
+
+**** #+begin_quote
+  some of the people you have talked to got the same sort of vibes from those elements of the story even if they didn't articulate them in your discussions.
+#+end_quote
+
+Nah, they didn't. None of them had ever played the game; I simply presented the scenario just as I worded it in my comment. As far as they were concerned, it was a clear choice and they took the choice that saved their best friend and left an entire town to die.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 1
+:DateUnix: 1475326249.0
+:END:
+
+
+**** #+begin_quote
+  I didn't feel like the game made a good enough case to kill a close friend based on so little.
+#+end_quote
+
+This probably isn't possible in the actual game, but couldn't you let her die, wait and see if the storm comes, and if it arrives on schedule anyway go back and rescue her? You have time travel.
+:PROPERTIES:
+:Author: MugaSofer
+:Score: 1
+:DateUnix: 1475407106.0
+:END:
+
+
+**** That's basically how most people deal with ethical dilemmas. Instead of evaluating the pros and cons, they convince themselves that there is no dilemma.
+
+That's why there are people who believe raising the minimum wage has no drawbacks (or that eliminating it will have no drawbacks).
+
+That's why there are people who believe Big Pharma is greedy and can be forced by governments to produce more medicine at lesser cost (and also people who believe abolishing the FDA will sort everything out with no bad consequences).
+
+It's very difficult for people in real life to bite the bullets, so to speak, but we can at least try not to do that in fiction. [[http://lesswrong.com/lw/bwp/please_dont_fight_the_hypothetical/][Don't fight the hypothetical]].
+:PROPERTIES:
+:Author: sir_pirriplin
+:Score: 1
+:DateUnix: 1475596896.0
+:END:
+
+
+*** My understanding from reading Spacebattles was that most people picked the utilitarian option first, then the "save your friend" option to see what it's like.
+
+But yeah, obvious right choice is obvious. Therefore very difficult to explain or justify.
+
+Maybe with follow-up questions?
+
+- Either your friend dies, or everyone in the town. No one has been evacuated.
+
+- Same choice. Your friends have been evacuated.
+
+- Same choice. Your friends have been evacuated. Their families haven't.
+
+- Same choice. Everyone has been evacuated, except for children under the age of ten. They will die violently, most of them in horrible pain, and none of them will understand what happened or why they have to die.
+
+- Same choice. No one has been evacuated. Not your friends, not their families, not the children.
+
+Also, Chloe is really kind of an awful person. [insert awful natural selection joke here]
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 4
+:DateUnix: 1475260218.0
+:END:
+
+
+*** I'm curious why you consider a value system, which assigns a higher value to certain people based on their familiarity, far-fetched. Valuing different persons' life differently I find quite intuitive, as both the words 'person' and 'life' are arbitrarily chosen points on a continuum (not that there is anything wrong with that). Consider the following problem:
+
+Would you save one person who has 11 years left to live, by killing two with 5 years each? What about two with 6 months? Or a week? A second?
+
+I would, even if I understand many people disagreeing. Going further, what about other species? Should one assign a cow more value than a human? Two cows? A hundred?
+
+With cows there is, of course, the argument of intelligence. Anothing scenario: Would you sacrifice a human to save a member of some species with higher intelligence somewhere in the galaxy? (A hundred humans?)
+
+Again, I don't think it's clear. And if the answer is 'no', then there is already a bias towards those near us. Saving Chloe is just a matter of moving the point on the continuum a bit further.
+:PROPERTIES:
+:Author: suyjuris
+:Score: 3
+:DateUnix: 1475278309.0
+:END:
+
+**** I think saying "Morality is unclear, therefore you can't say this moral system is invalid" is wrong, because it means inferring an uncertain territory from an uncertain map. I tend to think that morality is ultimately subjective, and I have no good answers to aggregation questions (like the "one person with 11 years vs two with 5 years" one). But I still think that the "Kill your friend vs Kill a thousand people" choice, with no other information, has only one acceptable answer that all human beings should choose.
+
+There are several arguments, like the fact that the friend you're saving also has friends and a family you're condemning, or that the only way you can view saving your friend as acceptable is by ignoring the deaths of very nice people you could probably be friends with if you got to know them. But I mostly wanted to make a point about the "uncertain territory" thing.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 2
+:DateUnix: 1475317091.0
+:END:
+
+***** This is an interesting analogy, but I don't think it holds here. There is the implication that there is a 'true' territory, which the map tries to describe. Calling a value system invalid is to me equivalent to calling the statement 'the universe was created a second ago by an orange unicorn' invalid. The latter cannot be disproven, of course, much like one cannot infer the wrongness of a morality from just logic alone. In practice, we consider statements based on whether they are useful. Similarly, I /do/ think that calling moral systems wrong is perfectly valid, but it is always from a certain perspective that defines one's goals. As long as other systems do not hinder my goals (which may include things like the survival of the species) unreasonably /in practice/, I'm fine with that. So, my point is that in theory, the systems differ in just a few constants and not in principle, and in practice, they converge for most probable situations.
+:PROPERTIES:
+:Author: suyjuris
+:Score: 1
+:DateUnix: 1475321634.0
+:END:
+
+
+*** As someone who prefers the "Save Chloe" ending, I think it makes sense. It's easy to make the utilitarian choice when when you don't know any of the people involved. But I would make the choice that satisfies me, not a choice that I think is necessarily "right". I might feel guilty letting innocents die to save someone I care about, but that wouldn't outweigh the fact that on my personal utilitarian scale someone I care about is worth thousands of strangers. I think most people agree, especially when it comes to their kids. At the end of the day morality is something people follow when it doesn't inconvenience them too much
+:PROPERTIES:
+:Author: Timewinders
+:Score: 1
+:DateUnix: 1475268011.0
+:END:
+
+**** #+begin_quote
+  At the end of the day morality is something people follow when it doesn't inconvenience them too much
+#+end_quote
+
+Shit, I wish I could get that on like a mug or t-shirt or something.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 7
+:DateUnix: 1475271302.0
+:END:
+
+***** There's a similar saying I've heard, something like "Morality is a luxury for the fortunate."
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 1
+:DateUnix: 1475301655.0
+:END:
+
+
+**** I strongly disagree with that kind of thinking. There's a line between "morality isn't important to me" and "morality isn't important". Even if the selfish choice is more realistic, or more likely to be picked by most people, I would not be okay with anyone else doing it. I /might/ do it, then I would hate myself for it.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 2
+:DateUnix: 1475316289.0
+:END:
+
+***** I didn't say morality isn't important, just that people value things like their loved ones more than morality. And some people have a value system where they have a duty to their family first before anyone else.
+:PROPERTIES:
+:Author: Timewinders
+:Score: 1
+:DateUnix: 1475320770.0
+:END:
+
+
+** A trolley with ten people in it is hurtling down Main Street, where it will collide with another trolley with ten people in it, killing everyone on-board. You may redirect the trolley down Sidestreet A, where it will run over five people tied to the tracks. Your friend across town, who you have no communication with, may redirect the other trolley down Sidestreet B, where it will run over five people tied to the tracks. If the trolleys don't collide, the people on the trolleys will survive.
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 7
+:DateUnix: 1475268104.0
+:END:
+
+*** From a utilitarian perspective, this translates into a 2 player Game. Assume both you and your friend value the total number of people who survive, and all people have the same value. Then if strategy 1 is "don't pull the lever" and strategy 2 is pull the lever, the payoff matrix is:
+
+10 25
+
+25 20
+
+The pure Nash equilibria are (1,2) and (2,1). Obviously, one of you pulls the lever and the other doesn't, this creates the best situation. 25 out of 30 people will survive. But with no way to communicate it's not clear how decide this. There is also a mixed strategy equilibrium, which has both players pull the lever 3/4 of the time (and not pull 1/4 of the time). This strikes me as the most reasonably achievable solution, and has an average score of 85/4, or 21.25 out of 30 people will survive. Just flip a coin twice, and only pull the lever if both are tails. If your friend does the same, you get this result.
+
+Although if there any any implicit biases that we could exploit to choose a street and only have the person with that street pull their lever. For example, is Sidestreet A literally called Sidestreet A? Does it have a proper name? Pick whichever street shows up first alphabetically, and that person pulls their lever. If everyone follows this strategy, we get the optimum 25 out of 30 survival rate.
+:PROPERTIES:
+:Author: zarraha
+:Score: 13
+:DateUnix: 1475272065.0
+:END:
+
+
+*** Pull the lever. This kills five people, and "kills" another five when my friend reasons likewise. Ten deaths are worth it to save the 20 people in the cars.
+
+(Honestly, I have no actual idea what I'd do in this situation. Freak out, probably.)
+
+To be clear, the two side-streets /don't/ connect, right? This is very similar to a meme version where they connect, and thus both of you pulling the lever would kill /everyone/.
+:PROPERTIES:
+:Author: MugaSofer
+:Score: 2
+:DateUnix: 1475407556.0
+:END:
+
+
+*** Redirect the trolley with probability 3/4.
+:PROPERTIES:
+:Author: Charlie___
+:Score: 1
+:DateUnix: 1475272033.0
+:END:
+
+**** This requires the assumption your friend will reason identically to you. I think assigning fifty fifty odds to their possible choice is more reasonable.
+:PROPERTIES:
+:Author: chaosmosis
+:Score: 1
+:DateUnix: 1475348292.0
+:END:
+
+
+*** I'd pull the lever. or at the very least do my best to force myself into it.
+
+People will find it exceptionally difficult to murder others and considering that I'm not friends with sociopaths (to the best of my knowledge), I can't trust that they will pull the levers. Most people find it easier to chose to do "nothing" even if it leads to more people dying. However, I would consider myself responsible for the deaths even if I didn't pull the lever.
+
+So in summary, my model of general human nature and of my friends' natures tell me that they will be very unlikely to pull the lever, so I should pull the lever myself.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1475293252.0
+:END:
+
+
+** *Seeking help: designing a new poker variant*
+
+I'm trying to work out a novel variation of poker, for potential use in one or more [[https://www.reddit.com/r/rational/][rat-fic]] stories. I have a few general approaches in mind, but I'm having trouble clearing up some details, and could use some help. Anyone here up for a gab on the topic? Or know where else I can ask?
+
+--------------
+
+I've pinned down three vital details, from which the rest of my thoughts flow. First, the game has to be something that might be carried around in the pocket of a post-apocalyptic survivor, and/or an 18th-century hobo. So a fixed deck of cards, dice, maybe a simple board on a piece of cloth; nothing mechanical, let alone electronic. Second, it needs to include at least some aspect that's familiar to the reader, so they have a hook to start understanding it; I'm thinking of poker hands. And third, the whole point of the game, both in-universe and as a narrative tool, is to focus on flows of information: who knows what, and how that affects their behaviour. (I suppose third-and-a-half would be at least some minimal level of good game design. :) )
+
+At the moment, I'm considering an extremely modified version of [[https://en.wikipedia.org/wiki/List_of_poker_variants#Oxford_stud][Oxford stud]]: with community cards, face-up cards, /and/ hole cards, there's a rich selection of info and potential secrets. But I don't want the players to be completely, passively stuck with their shared environment and their individual resources; I want to include at least the occasional possibility of a player having a choice about whether or not to modify them (said decision thus adding a new piece of information for everyone to mull over), as well as the option to share secrets with each other (voluntarily or otherwise). So I'm considering adding some dice labelled with the cards' suits; perhaps each player gets to roll 3 such dice, and if they wish, toss out any cards they can see that matches one of the dice's face-up suits, to be replaced with a freshly-dealt one. I haven't figured out what mechanism would let one player peek at one of the hole cards of another player, though the dice would likely be involved. I also haven't figured out the overall rhythm of the game - ie, which cards are dealt when.
+
+(I'm also thinking of stealing a bit of fluff from another traditional game, and using the [[http://www.ericharshbarger.org/dice/#crown_and_anchor][dice]] from [[https://en.wikipedia.org/wiki/Crown_and_Anchor]["Crown and Anchor"]], which already have the 4 standard suits on them, as well as the titular symbols; and adding those two logos as another two suits of cards, ala the [[https://cf.geekdo-images.com/images/pic311930_md.jpg]["Empire Deck"]] published a few years ago.)
+
+Any thoughts come to mind?
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 6
+:DateUnix: 1475251103.0
+:END:
+
+*** If you really want secrets and info - sharing as game mechanics, I'd take a look at [[http://en.wikipedia.org/wiki/Diplomacy_(game)][Diplomacy]]
+:PROPERTIES:
+:Author: Frommerman
+:Score: 1
+:DateUnix: 1475252004.0
+:END:
+
+**** I want my characters to think and interact, not decide to end their friendships and throttle each other. :)
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 3
+:DateUnix: 1475252239.0
+:END:
+
+
+*** As part of the third-and-a-half rule, I not only want the dice to affect the cards, but the cards should affect the dice. As a simple option, maybe each player has the option each bid to spend one of their cards to roll a die, sacrificing their resources for the possibility of changing the current environment for everyone. (And maybe they even get to keep the spent card if the roll matches its suit.) This seems reasonably likely to make dice-rolling expensive enough that the common cards are at least generally stable, while not being absolutely reliable; but also seems like the sort of thing that would need actual playtesting to find out whether that's the case.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1475253556.0
+:END:
+
+
+*** Have you looked at the rules for [[https://www.boardgamegeek.com/boardgame/140163/pandante][Pandante]]? It's technically a hold'em style game, but at the end you use special powers based on your hidden cards suits. Which you can bluff, but if called you either pay a sidepot and lose the power or reveal the suit (the cards are built to reveal the suit w/o showing rank) to win a sidepot and still use the power.
+
+(And you can call a suit you have and then pay the side pot as a double bluff).
+
+Has other features of interest. You have to claim early on the hand you have (or better) and can never lower your claim, and call also draw and discard to cycle your hole cards, but the cost depends on how high your claim is with respect to the highest claim, and also has a joker that you (sometimes) discard because using the joker costs you money.
+
+Lots of interesting ideas in Pandante.
+:PROPERTIES:
+:Author: TaoGaming
+:Score: 1
+:DateUnix: 1475286529.0
+:END:
+
+**** Whaddaya know; that game seems to hit a lot of the buttons I'm aiming to press. And I can even go over [[https://static1.squarespace.com/static/50f14d35e4b0d70ab5fc4f24/t/53f856f0e4b01f78d1435fbf/1408784112813/pandante_rulebook3-6.pdf][the rules]] on my own time, as well as [[http://www.sirlin.net/articles/designing-pandante][design notes]] such as why he added the 'floosh' and 'rainbow straight' hands.
+
+Thank you for the suggestion. :) (And that's one more notch for the 'ask the hivemind, get an unexpectedly useful answer' column. ;) )
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 2
+:DateUnix: 1475306429.0
+:END:
+
+
+** I just watched the "Zerg Attack" S2:HoTs trailer, that takes place in Paris and Versailles, and I thought... just once, I'd like a movie alien invasion to take place in [[https://en.wikipedia.org/wiki/La_D%C3%A9fense#/media/File:Panorama_La_D%C3%A9fense.jpg][La Défense]], which is the closest thing France has to a New York style skyscraper city.
+
+La Défense is a major business district northwest of Paris, and most notable for the [[https://en.wikipedia.org/wiki/La_D%C3%A9fense#/media/File:Grande_Arche_de_La_D%C3%A9fense_et_fontaine.jpg][Grande Arche]], and its 30 hectares "slab", on which most of the buildings are built, which is a giant construction over which only pedestrians are allowed, while cars circulate in roads built under/inside the slab (it's less cyberpunk-y than it sounds, but not much).
+
+But most movie alien invasions only take place in the USA, and then only in New York or sometimes San Francisco. The rare worldwide alien invasions only occur in Paris, and then only in the immediate area around the Eiffel tower. I want my La Defense urban war!
+
+Edit: One recent movie that broke this mold was /The Edge of Tomorrow/, which mostly took place in France and UK, with the climax taking place in The Louvre (I think there wasn't even a Eiffel Tower shot in the whole movie, which was so fucking refreshing). Actually, this movie was really fun to watch as a french guy. It even had a shot with François flippin Hollande!
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 4
+:DateUnix: 1475412318.0
+:END:
+
+
+** Weekly update on my rational pokemon game, which for now is work on the data creation tool Bill's PC([[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=drive_web][previous threads here]]):
+
+So it looks like I managed to get about 80% of what I planned last week completed. [[https://docs.google.com/document/d/1Co3cS6p_5h6HGs3tzjbJRRbUFd-vI2njVGjYyz8jwE4/edit?usp=drive_web][The documentation is now up]], though it's already somewhat out of synch with Bill's PC itself, which I guess is just the nature of the beast. If you can't run it, the docs still have some useful info like a breakdown of the meaning of stats and a liberal application of screenshots.
+
+The Bahavior and Size sections were added to the species definition tab:
+
+[[http://i.imgur.com/pdZ6WT4l.jpg]]
+
+The height and weight were pulled from the stats and placed here since they're so relevant to how the tile calculation works. Someone on the Discord server pointed out that the behavior toggles would work much better as sliders, and so that change still needs to be implemented.
+
+Speaking of Discord, [[https://discord.gg/sM99CF3][come join us]]! A #pokengineering channel was created that is dedicated to discussion on the game and has become invaluable to me for idea bouncing, but even besides that, it's a great community filled with other denizens of [[/r/rational]]. Special thanks to [[/u/InfernoVulpix]], [[/u/Cariyaga]], [[/u/UltraRedSpectrum]], and Aabcehmu for all their feedback and help so far wrangling the design to something managable.
+
+I'm currently in the middle of redesigning the Respect/Loyalty mechanic, as some awkwardnesses in its design were brought to light. [[http://i.imgur.com/k3x7pLol.jpg][Here is a graph]] showing off some tentative values for the replacement system, with size of the bubble being aggressiveness.
+
+Goals this week are to bring the documentation up to speed, finish hammering out the design issues with RESP/LOYAL, finish polishing off the last few features in these two new sections, /possibly/ add a generator to the graph screen, and then start working on the move tab (finally).
+
+I also finished my rational game essay, which I put in a separate comment for simpler discussion.
+:PROPERTIES:
+:Author: ketura
+:Score: 5
+:DateUnix: 1475248463.0
+:END:
+
+*** This is actually some really incredible work, it feels like the Pokemon equivalent of Dwarf Fortress. I really like the bodypart system, very detailed. I can't wait to see this when it's more complete.
+:PROPERTIES:
+:Author: Colonel_Fedora
+:Score: 4
+:DateUnix: 1475260808.0
+:END:
+
+**** Thanks! DF and Nethack are two of the biggest influences, and it definitely shows. Hopefully just another week or two and I'll be set to start working on the game proper.
+:PROPERTIES:
+:Author: ketura
+:Score: 2
+:DateUnix: 1475263523.0
+:END:
+
+***** #+begin_quote
+  Nethack
+#+end_quote
+
+Oh great. So it'll be another game I never beat.
+
+^{^{^{^{^{^{Stupid}}}}}} ^{^{^{^{^{^{Rodney.}}}}}} ^{^{^{^{^{^{Stupid}}}}}} ^{^{^{^{^{^{Astral}}}}}} ^{^{^{^{^{^{plane.}}}}}} ^{^{^{^{^{^{Stupid}}}}}} ^{^{^{^{^{^{Archons.}}}}}}
+:PROPERTIES:
+:Author: gabbalis
+:Score: 4
+:DateUnix: 1475275288.0
+:END:
+
+****** Go team +Ant+ Rattata!
+:PROPERTIES:
+:Author: ketura
+:Score: 3
+:DateUnix: 1475276504.0
+:END:
+
+
+*** I'm sorry if the answer is in one of your game designs documents, but how exactly do you make a rational video game? Is it a video game with a rational plot, and mechanics which correlate with the story?
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 3
+:DateUnix: 1475260991.0
+:END:
+
+**** I actually just barely finished an essay on that very subject, which [[http://reddit.com/r/rational/comments/558bgz/d_friday_offtopic_thread/d88dbhu][I posted higher up in the thread]].
+
+TL;DR is: build the game around the role you've chosen, make sure rules interact with one another in logical manners, and try to build a metagame, whether it's single or multi player.
+:PROPERTIES:
+:Author: ketura
+:Score: 4
+:DateUnix: 1475262555.0
+:END:
+
+
+** In a Dungeons and Dragons game I'm playing, I'm playing a paranoid wizard who is deathly afraid of mind magic. Among other precautions he has taken, my vision of him has him using a "Post mind affecting magic exposure flowchart", to help determine if his will has been compromised. Obviously this wouldn't work on more complete forms of mind control (Dominate Person), but I feel it would be rather effective against magical diplomacy and charm person.
+
+I've made a mock-up of said chart, but as I'm roleplaying a character both smarter and more motivated than myself, I feel he would have done a much better job with it than I have.
+
+[[http://imgur.com/O97zCq5]]
+
+Are there any obvious improvements/flaws I should add to/remove from this?
+:PROPERTIES:
+:Author: Kylinger
+:Score: 2
+:DateUnix: 1475305240.0
+:END:
+
+*** The flowchart is a bit redudant. The first two items are "did a non-friend cast on you?", then "did a friend cast on you?", which could be condensed. Most of the chart is basically "Did your opinion about something change after the spell was cast, and do you think the change is based on rational reasons?", which is kind of useless.
+
+I'm not sure how to put it, but detecting a bias is harder than just wondering "am I biased about anything at all?". It's more about double-checking every choice you make, asking other peoples for insights and different perspectives, and avoiding rash actions. So, more like a bunch of good habits to keep than a flowchart you can check every so often.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 6
+:DateUnix: 1475315666.0
+:END:
+
+
+** Can someone who's familiar with the Chinese & co. web-published literature shelf give me some pointers?
+
+Recently [[/u/DR_Hero]] mentioned some titles here, and I decided to try out [[http://www.novelupdates.com/series/demons-diary/][Demon's Diary]] first, thinking that maybe it would be from the perspective --- or the eventual perspective --- of a demon writing down how it became what it currently is ([[https://www.reddit.com/r/noveltranslations/comments/4q9b4u/cn_demons_diary_chapter_139/d4r608x?context=3][not the case]]).
+
+In this story there was [[https://www.reddit.com/r/noveltranslations/comments/4mrty0/glossary_of_terms_in_wuxia_xianxia_xuanhuan_novels/][a bunch of tropes]] so deeply ingrained into it that the author often didn't even explain in detail what they were about. It felt like reading a fanfiction, only the origin itself wasn't a singular title, but rather maybe the Chinese wuxia genre and a bastardized version(?) of the Chinese belief system / wordview.
+
+After that I tried starting [[http://www.wuxiaworld.com/cdindex-html/][Coiling Dragon]], but the writing style felt kinda childish and based on [[http://tvtropes.org/pmwiki/pmwiki.php/Literature/CoilingDragon][its tropes page]] it seemed like it would have a bunch of Deus ex machina / major lucky Natural20 moments for the hero.
+
+Anyway, I am looking for translated titles that:
+
+- 1. don't have [[https://imgur.com/a/Sp5Et][any of these highlighted elements]] in them;
+- 2. don't have [[http://tvtropes.org/pmwiki/pmwiki.php/Main/BadWritingIndex][Bad Writing Index]] tropes, [[http://tvtropes.org/pmwiki/pmwiki.php/Main/IdiotBall][idiocy]] [[http://tvtropes.org/pmwiki/pmwiki.php/Main/PoorCommunicationKills][tropes]], etc;
+- 3. don't deal with harem and fanservice, poorly concocted romance and drama;
+- 4. are well-written in general in terms of writing style and plot design (e.g. no filler chapters);
+- 5. hopefully are fully translated.
+
+Also, if you know any such stories please give some details of your own. The summaries that come with the stories are usually not that helpful.
+:PROPERTIES:
+:Author: WaterHoseChasing
+:Score: 1
+:DateUnix: 1475269416.0
+:END:
+
+*** Wow, that list takes out 99.9% of Chinese novels. The Chinese translation scene is fairly new, not including classic Wuxia(Martial Hero) novels. Novels with everything you are looking for are probably not even translated. As for tropes...
+
+[[http://www.novelupdates.com/series/legend-of-the-cultivation-god/][Legend of the Cultivation God]] pretty much walks you through every step of the way, and should do well at introducing you to the wuxia tropes.
+
+[[http://www.novelupdates.com/series/heaven-awakening-path/][Heavens Awaken Path]] is the best I can think of without many tropes. It's... ok, and early in it's translation.
+
+I haven't read much of it, but [[http://www.novelupdates.com/series/chronicles-of-primordial-wars/?pg=3][Chronicles of Primordial Wars]] might be good. Although there is reincarnation to start it off. It's a very common trope. The author cheekily named himself Lazy Cliché.
+
+Coiling Dragon is written by a popular author known as I Eat Tomatoes. There is no plot, only inexplicable power ups.
+
+--------------
+
+Without Trope knowledge, I would just skip Chinese web novels while waiting for the scene to grow and look for some Korean or Japanese ones. The Japanese translation scene has been around longer and has a wider selection, but I'm not too familiar with it.
+
+The Korean web novel [[http://www.novelupdates.com/series/evolution-theory-of-the-hunter/][Evolution Theory of the Hunter]] isn't bad. Although you may be frustrated with the MC not noticing a girls affection. It's so obvious that I'm pretty sure he knows, but doesn't want to change the relationship.
+
+--------------
+
+I wouldn't go in expecting gold, and I may be missing some unknown genius novel out there that I haven't read. I won't claim to have read even half of the translated asian web novels out there. Female targeted historical romance novels are also a big part of the Chinese translation scene, but I haven't read much of them.
+:PROPERTIES:
+:Author: DR_Hero
+:Score: 2
+:DateUnix: 1475288764.0
+:END:
+
+**** It's not just that I'm unfamiliar with the tropes, rather those tropes (the red ones) are something I wouldn't want to see in the stories I am reading.
+
+#+begin_quote
+  that list takes out 99.9% of Chinese novels
+#+end_quote
+
+What if the full-translation bullet point was more of a hope\wish than a requirement, and the trope blacklist can be ignored if the author somehow manages to do them really well, does that change anything?
+
+#+begin_quote
+  The Chinese translation scene is fairly new .. just skip Chinese web novels while waiting for the scene to grow
+#+end_quote
+
+That's what the two titles I've tried left me feeling too, like the genre wasn't old enough to become self-concoius about itself an its use of tropes yet, in contrast with what's happening more and more now with the Western fantasy / sci-fi stuff.
+
+Also, thanks for the reply. I've also picked out /Against the Gods/ and /My Disciple Died Yet Again/ based on earlier references here, so I think I'll try starting these several stories and leave it at that, for the next several years.
+:PROPERTIES:
+:Author: WaterHoseChasing
+:Score: 1
+:DateUnix: 1475321691.0
+:END:
+
+***** Against the Gods will leave you disappointed. The author regularly spends 5+ chapters describing how peerlessy beautiful the newest girl he will eventually bang is, because no girl can resist a main character.
+
+My Disciple Died Yet Again is a bit of a parody. Lots of comedy, and it avoid a lot of the common tropes.
+
+Histories Number One founder is another parody if you find you enjoy those sorts of novels.
+:PROPERTIES:
+:Author: DR_Hero
+:Score: 2
+:DateUnix: 1475341234.0
+:END:
+
+****** #+begin_quote
+  Evolution Theory of the Hunter
+#+end_quote
+
+This one was a fun read, thank you for the recommendation! There was some fanservice and anime-like romance but it wasn't too bad.
+:PROPERTIES:
+:Author: WaterHoseChasing
+:Score: 1
+:DateUnix: 1475411304.0
+:END:
+
+******* No problem, the venn diagram of people who would enjoy rational novels, and people who would enjoy most asian web novels almost consists of two non-overlapping circles.
+
+Korean novels probably are the most like our stories, but the translated novels usually have game-like elements which aren't really my thing.
+:PROPERTIES:
+:Author: DR_Hero
+:Score: 2
+:DateUnix: 1475426493.0
+:END:
+
+
+*** 1. don't have any of these highlighted elements in them
+
+All of these are extremely common tropes. I've been reading xianxia for a while now and can't think of any that didn't include at least some of these.
+:PROPERTIES:
+:Author: All_in_bad_taste
+:Score: 1
+:DateUnix: 1475424366.0
+:END:
+
+
+** This semester in school I need to take (Logic and) Discrete math. This will allow me to reason, (I hope) on a more deep level, as well as codify in a mathematically acceptable form my plans for my rational universe.
+:PROPERTIES:
+:Author: Dwood15
+:Score: 1
+:DateUnix: 1475275870.0
+:END:
+
+*** If you have the time to spare, there are some really nice relevant MOOCs that you could keep your eyes on:
+
+- [[https://www.coursera.org/learn/mathematical-thinking][/Introduction to Mathematical Thinking/]] by Stanford University
+- [[https://www.coursera.org/learn/logic-introduction][/Introduction to Logic by Stanford/]]
+:PROPERTIES:
+:Author: OutOfNiceUsernames
+:Score: 1
+:DateUnix: 1475285146.0
+:END:

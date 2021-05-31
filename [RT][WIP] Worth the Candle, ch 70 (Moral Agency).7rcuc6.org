@@ -1,0 +1,1009 @@
+#+TITLE: [RT][WIP] Worth the Candle, ch 70 (Moral Agency)
+
+* [[https://archiveofourown.org/works/11478249/chapters/30728772][[RT][WIP] Worth the Candle, ch 70 (Moral Agency)]]
+:PROPERTIES:
+:Author: nytelios
+:Score: 117
+:DateUnix: 1516308712.0
+:END:
+
+** Great chapter! I especially liked how the "Good" hero is able to arrive at compromises that involve superior outcomes. Someone forced by magic to be "zero tolerance good" wouldn't be able to ignore, say, an unlawful soul mage in his territory.
+
+Now I'm hoping they encounter the "Evil" hero. Exactly why does he have enough supporters and thus gems to even stay relevant? Who's voting for him and why?
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 32
+:DateUnix: 1516309425.0
+:END:
+
+*** It may be that the "Evil" hero may be able to hypothetically kill baby Hitler, whereas the "Good" hero would not.
+:PROPERTIES:
+:Author: ProperAttorney
+:Score: 14
+:DateUnix: 1516310420.0
+:END:
+
+**** But then if the "Evil" hero gets better outcomes, as measured by a set of terminal values that both the Good and Evil heroes share, doesn't that make the Evil hero more "Good" than the good hero?
+
+That is, ultimately what /matters/ is the expected outcome of a given set of actions. Measured against what you care about - whatever that is - the /best/ choice to make in our reality is that one that results in the best /expected/ outcome. (it may be wrong but you update your model with each actual outcome and always choose the best from what you know about)
+
+"Good" means "I'm not willing to do certain actions, whether or not they result in a better outcome". Which is evil.
+
+If I increase the probability of 1 million people dying from old age because I'm not willing to kill 100 people as test subjects for a treatment for old age, I'm evil.
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 3
+:DateUnix: 1516311006.0
+:END:
+
+***** I think in this case it's a balance of Objective versus Subjective. You can be subjectively evil, but objectively good. Or subjectively good, and objectively evil. (ie Killing an 'evil' baby)
+
+In this case, the evil hero has carte blanche to torture and kill in order to keep his position as demi god. It's not about the city per se. It's about the power associated with helping the city. In the eyes of the townsfolk he's going to be a person that gets things done. As opposed to the good hero to who wasted time and resources to achieve essentially nothing.
+
+I'm kinda interested in what the evil affliction entails. I'd guess it makes corruption, bribes and snitching more likely. Sell your grandmother out style stuff.
+:PROPERTIES:
+:Author: Keshire
+:Score: 5
+:DateUnix: 1516319832.0
+:END:
+
+
+***** Hm or you are evil if you immediately jumped to killing people, without searching for an alternative.
+
+Hell, you don't even need an alternative if you have a 100 people willing to do it, cause they want to save someone or we have 100 people waiting for an execution, cause they done some very heinous acts. In Aerb depending on the soul destruction\hell after death, your experiment might be a mercy to criminals.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 3
+:DateUnix: 1516311575.0
+:END:
+
+****** I assume that you are running a model of what you expect to happen. That model is a neural network that takes as input <present state of world, my action> and gives as output <expected outcome for selected parameters>. It only contains a finite number of network nodes, it is not by any means a complete simulation of the world, just an approximation that generalizes a situation and tells you what it thinks is the result.
+
+You run as big a model as you can afford computing power for.
+
+So you are simply choosing the min(outcome_list[]). You're looking for the least bad option. That means that if it involves killing 100 test subjects, that is factored in to your "badness" calculation.
+
+So in a scenario where the response says the min() says to do that, it /is/ the right thing to do. Assuming an unbiased model that takes into account all data you have the computing power and memory for, etc, it's rational to do the best thing available.
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 1
+:DateUnix: 1516312185.0
+:END:
+
+******* Here lies another problem. The simulation needs to be not unbiased, but heavy biased instead. Last time i checked, there is no such thing as "objective good" or plain "good" in the terms of universal constant.
+
+It's as you said a question of scale and target group. Cause saving millions of *people* may kill another species entirely. It may cause a planet destruction, but all "human" life forms are saved via migration to another planet. Whole planet worth of life forms might be nothing on a cosmic scale. Plus it defaults the worth to "quantity" of humans, individual connections might be worth more than just plain number of people.
+
+It all comes down to a particular situation and actual tools at your disposal. Having a chance to do something, doesn't even mean you will succeed even if you give it everything you've got.
+
+For our story. What if they decided to kill the demon baby, but failed? Would that count as being "bad". I guess it's not evil.
+
+Conclusion of simulation - *Aliment systems suck*
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1516315030.0
+:END:
+
+******** #+begin_quote
+  The simulation needs to be not unbiased, but heavy biased instead. Last time i checked, there is no such thing as "objective good" or plain "good" in the terms of universal constant.
+#+end_quote
+
+You have "terminal values". That's what your goals are, what your intentions are to accomplish overall. You cannot guarantee your goals are accomplished as well as you hope within the laws of physics of this universe, but you can at least compute the action that has the highest probability of success, limited by the data, algorithm architecture, computing power, and memory you have available.
+
+So if your terminal values are "have at least as many people from the generation of your creators live functional, reasonably happy lives for as long as possible," then a cure for aging, even if it does cost you some deaths (you "pay" a cost per death, a bigger cost if it your fault) is worth it.
+
+So no, morality isn't an absolute. But we humans do have a rough idea of what we would rather have, and once we decide on that, given a set of data there is only one optimal course of action that maximizes the expected gain towards our terminal values.
+
+I am aware that our language doesn't have the ability to describe such values, nor can it fit in a few lines of programming code or math. At least, not complex values like "happiness" and "living".
+
+I figure we'll find a reasonable way to describe those things eventually, but first we need to stick to values that are simple. A robot in a test cell, where it's terminal values are "get these red balls into this output hole as fast as possible, with points off for damage to your actuators or impacts"
+
+Or, the terminal values are actually "+x reward/ball". "-y reward for time passing. -z reward for impacts * energy_impact^{2"} . Choose max(reward)
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 1
+:DateUnix: 1516316090.0
+:END:
+
+********* As i said, it all comes down to the scope of the simulation.
+
+Cause time frame can be the problem and simulation can only give result based on data it has. Any new information makes the simulation effectively infinite or it goes into speculation territory.
+
+What if one of those sacrifices would invent a better cure? What if they would traumatize another person so much that the person in question would create something beneficial to humanity so no one would suffer as he did?
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1516316592.0
+:END:
+
+********** First, when you design an AI, you do need to explore. You need a second, meta-algorithm that rewards your agent for exploring, but also computes the cost of exploration, and chooses rewards proportional to the gain.
+
+That is, if you just always pick the best outcome based on your current data, you'll rapidly get stuck on local maxima.
+
+So exploring in a sense is just a way to maximize longer term rewards, which your agent should be designed for. It's still trying to maximize terminal values, it's just willing to pay a short term cost.
+
+It still is rational to make sacrifices.
+
+Second, one critical fact you're missing is that you don't know any of these things, but it is not correct thinking to use hindsight. If you're playing a card game, a game where you have played long enough to derive the exact rules, you cannot rationally change your strategy that is optimal if suddenly you hit a streak of aces. Unless the streak is so long to indicate to you that the rules of the game have changed. It's hindsight thinking to say "well you're getting tons of aces <in the game blackjack>, you need to hit more often".
+
+Similarly, if you fail to take extreme measures to save a patient who is terminal, and they live anyway, it doesn't mean it wasn't the right choice to try extreme measures. I do actually agree that you can limit your sacrifices to people who are highly likely to die anyway, and you can freeze their brains after, reducing the loss. I'm just giving an example of how "evil" actions can result in greater gain towards "good" morality.
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 2
+:DateUnix: 1516316748.0
+:END:
+
+*********** We will be going in circles at this point.
+
+This "rational" is exactly the problem, cause it's determined by someones specific value. The whole situation is a problem since it's hypothetical only.
+
+Every real problem would have a set of parameters to work with and success might not be achievable anyway.
+
+I was talking more from a real world problem solution stance, but it kinda touches the "logical super AI" possibility.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1516317267.0
+:END:
+
+
+***** #+begin_quote
+  as measured by a set of terminal values that both the Good and Evil heroes share
+#+end_quote
+
+If we start from the presumption that discrete acts are the point of evaluation, there's no reason to expect Good and Evil are based on terminal values.
+
+Your line of argument presumes consequentialism, but there might be other ethical systems that comprise a better fit.
+:PROPERTIES:
+:Author: vaegrim
+:Score: 2
+:DateUnix: 1516334694.0
+:END:
+
+****** Specifically, I'm implying that consequentialism is actually the only correct system of morals because to do anything else is not a rational decision.
+
+Really and truly, only outcomes matter, as predicted to the best accuracy possible. Just like real experimental data trumps philosophy and thought experiments.
+
+This is "new", I guess, I understand philosophy and ethics goes back a long way, I'm just saying that all of the other forms of ethics are irrational bullshit. Same as other ways of doing things pre formulation of the scientific method.
+
+And the laws of the universe back me up.
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 2
+:DateUnix: 1516335483.0
+:END:
+
+******* #+begin_quote
+  And the laws of the universe back me up.
+#+end_quote
+
+Wait what? What the 'laws of the universe' are is precisely the question. Given the observation "killing baby Hitler registers as an evil act", you must assume that either your conclusion of the ethical math is missing some variables or that the system evaluating the virtue of the act isn't consequentialist.
+
+*In this specific conversation* 'rational' isn't about evaluating the system the universe 'ought' to use, it's deducing the system the universe is using, given the observations we have.
+:PROPERTIES:
+:Author: vaegrim
+:Score: 4
+:DateUnix: 1516341420.0
+:END:
+
+******** That's just it. The reason the laws of the universe back me up is that consequentialism means using the best cognitive method you have available to determine the probable outcome that the laws of the universe will generate.
+
+You may be wrong, but any prediction can be wrong, you've gone out and systematically tried to make your prediction the best one, and will update it with each outcome.
+
+Other forms of morality, you arbitrarily decide that something is "wrong". Like killing babies. Making that decision without modeling what the /universe/ will probably do as a consequence for your action is by definition acting irrationally, as you're ignoring the actual consequences in favor of feeling good that you haven't killed a baby. (admittedly that's also a consequence, but if you're talking about killing baby Hitler...)
+
+The root cause of this type of morality is the belief that an invisible deity is judging your actions and is going to do something in response to you after your death.
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 4
+:DateUnix: 1516363781.0
+:END:
+
+********* An invisible deity IS judging Joons actions! Are you actually talking about the story at all?
+:PROPERTIES:
+:Author: vaegrim
+:Score: 4
+:DateUnix: 1516377616.0
+:END:
+
+
+********* [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1516568411.0
+:END:
+
+********** Using heuristics is fine. Making a choice where you are very certain of the consequences but can't make the optimal decision because it's "wrong" is not fine.
+
+That was kind of my point. We are very certain, as far as certainty can be, that there is no life after our personal deaths, and thus when we make choices that are suboptimal we are causing the greatest crime in human history*.
+
+Note that when I say this, I don't mean it's an absolute fact that there's no afterlife, nor do I mean that there is no doubt that brain preservation works at least some. Reality may disagree on both points. (umm, what I mean is that it could be in reality that an afterlife exists, it could be in reality that brain preservation preserves absolutely nothing. But the odds are very small that either point is true, at least based on the credible evidence we have collectively been shown as a species so far)
+
+What I mean is based on the /evidence/, the vast overwhelming majority of it, that evidence says there is not an afterlife and that brain preservation is better than doing nothing.
+
+So based on what we think we know, to do anything but preserve the minds of the soon to be dead is a very, very, very poor and suboptimal choice.
+
+So in my book, 99% of humanity are objectively speaking, idiots. And I have actual evidence for this belief.
+
+By the way, this is a case where non-consequentialism forms of ethics fail catastrophically. Specifically, other forms of ethics think that preserving the brain of someone who is about to die is "murder". This is grossly incorrect.
+
+*Let's say we could have preserved the brains of half of everyone who died in the first world over the next century. That's going to be more than a billion people we could have saved. At some future date our species will have proof that it would have worked, and can calculate just how many people were killed as a result. Probably easily north of a billion.
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 1
+:DateUnix: 1516568775.0
+:END:
+
+*********** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1516576852.0
+:END:
+
+************ #+begin_quote
+  It took me about 5 seconds to come up with (A) and thirty seconds to go from realising I should add (B) to writing up arguments. I say this not to boast but to point out how easy it is to come up with counterarguments, even for someone who broadly agrees with you.
+#+end_quote
+
+The trouble is, and you know this as well as I do, it may in fact be trivial to create counter-arguments. The mental flaw is that arguments are not equal just because they take up the same amount of words. Any more than mishandling classified emails is equivalent to a lifelong history as a con man.
+
+Humans who weight the arguments equally, instead of applying weights proportional to the evidence, are stupid and irrational.
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 1
+:DateUnix: 1516577308.0
+:END:
+
+************* [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1516579482.0
+:END:
+
+************** My actual point was that rational thought applies to morality just as much as it does anything else. That's all.
+
+Our current society has "protected" beliefs. Politics, religion, morality, etc. We have somehow decided that we have to "respect" people being irrational. We don't respect irrational rocket scientists or bridge designers or electricians, since their shit blows up, collapses, and sets fires, respectively.
+
+We shouldn't.
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 1
+:DateUnix: 1516583765.0
+:END:
+
+*************** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1516587674.0
+:END:
+
+**************** #+begin_quote
+  I don't think I can do this one more time so I've got to ask, are you perhaps willing to consider that perhaps not everyone who disagrees with you is an idiot?
+#+end_quote
+
+If they disagree because they have an actual leg to stand on based on substantive arguments or facts, then yes, I would agree they are not an idiot.
+
+And I accept there are many limited domain individuals who are reasonably smart in some areas but idiots in others.
+
+I have concluded you're an idiot because you keep arguing back with obvious fallacies like "moving goalposts". Changing one argument is not an argument of incorrectness.
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 1
+:DateUnix: 1516588127.0
+:END:
+
+***************** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1516597520.0
+:END:
+
+****************** The target was that Consequentialist ethics can be practiced as rational thought applied to ethics, making it the only valid standard. Not just /reasonable/, but valid, in the same way that hitting on 20 in blackjack is never a valid strategy unless you have foreknowledge of the next card, assuming your goal is to win.
+
+If your goal is to make good things happen/minimize bad things happening, /whatever/ those things are, taking actions that do not maximize how often those things happen is unethical. Anything but choosing from your "Q table" the action with the highest probability of maximizing your terminal values (which isn't precisely consequentialist ethics) is by definition choosing to lose more often than you have to.
+
+And I just got annoyed that this isn't a formal debate, I am under no obligation to stick to one argument or topic, and claiming I am moving the goalposts, etc, does nothing to diminish the validity or not of my individual statements.
+
+And when I talk about "idiocy", I don't really mean that I think the IQ or ability to reason of people who disagree is low. To be intellectually honest I think even some religious people are clearly able to reason, they are clearly sentient. But they are completely wrong and arguing with them would be like arguing the laws of physics with a 3 year old. They have nothing useful to contribute.
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 1
+:DateUnix: 1516635434.0
+:END:
+
+
+****************** I can't believe I read this whole exchange. [[/u/runeblue360]] you're a saint.
+
+EDIT: Sorry I'm an irrational idiot, saints don't exist. My bad.
+:PROPERTIES:
+:Author: dalitt
+:Score: 1
+:DateUnix: 1516679875.0
+:END:
+
+
+******* "And the laws of the universe back me up."
+
+I feel like you are kind of eliding between consequentialist ethics and the scientific method here.
+
+Like, saying that disagreeing with you is 'not a rational decision', or that 'only outcomes matter' in a discussion about what is rational, and what matters, is using a point to prove itself.
+:PROPERTIES:
+:Author: WalterTFD
+:Score: 3
+:DateUnix: 1516371345.0
+:END:
+
+
+***** I consider it highly unlikely the DM is a strict consequentialist, although they may have consequentialist influences. They'll presumably prefer narrative oriented ethics, which virtue ethics seems best suited for, but with a deconstructivist bent.
+:PROPERTIES:
+:Author: infomaton
+:Score: 2
+:DateUnix: 1516342992.0
+:END:
+
+****** The 'cowardly' affliction from earlier strongly weighs against the notion of the DM as a strict consequentialist.
+:PROPERTIES:
+:Author: WalterTFD
+:Score: 4
+:DateUnix: 1516371485.0
+:END:
+
+
+***** "ultimately what matters is the expected outcome of a given set of actions." You smuggled in consequentialism there. No reason to assume that the world works that way.
+:PROPERTIES:
+:Author: WalterTFD
+:Score: 2
+:DateUnix: 1516371111.0
+:END:
+
+
+***** #+begin_quote
+  But then if the "Evil" hero gets better outcomes, as measured by a set of terminal values that both the Good and Evil heroes share, doesn't that make the Evil hero more "Good" than the good hero?
+#+end_quote
+
+Obvious answer: Evil delivers better outcomes /for specific groups/. The people who vote for 'Evil' vote because it gives /them/ better outcomes, even if in a /universal/ sense, it gives worse outcomes.
+
+And of course, lies would cover why the victims were justified or whatever, to rationalise screwing outsiders and other demographics. That happens all the time in the real world.
+:PROPERTIES:
+:Author: PM_ME_OS_DESIGN
+:Score: 2
+:DateUnix: 1516444200.0
+:END:
+
+****** Like having the government borrow money so it can lower taxes on the rich!
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 1
+:DateUnix: 1516456701.0
+:END:
+
+******* Sort of - that's more of a /shortsighted/ move than a /self-centred/ move. Sooner or later, the rich won't have their benefits. I'm thinking stuff more like "enslaving or screwing over other countries to benefit /this/ country".
+:PROPERTIES:
+:Author: PM_ME_OS_DESIGN
+:Score: 1
+:DateUnix: 1516512172.0
+:END:
+
+
+***** My personal understanding of pen-and-paper RPG alignment systems is that Gᴏᴏᴅ has nothing to do with what /humans/ prefer either way. Gᴏᴏᴅ is, rather, about the terminal values of (a certain subset of) /the gods/. (In this setting, maybe all the gods; metaphysical Eᴠɪʟ seems to be contained exclusively in the Hells.)
+
+The usual "thing" with the Gᴏᴏᴅ gods in RPG settings is: they prefer that people be /rule utilitarians/. They value philosophies and modes of thinking that make people /always/ act in certain simple, predictable ways that shake out---across entire populations---to /statistically/ greater chances of satisfying the gods' preferences over time. (Presumably because, in such populations of simple-to-model actors, it's much easier to predict how any /changes/ you make---such as introducing an empowered champion of Gᴏᴏᴅ---will affect the outcome.)
+
+Come to think of it, legislators, judges and police tend to prefer that people be rule-utilitarians, too. RPG gods, Gᴏᴏᴅ /or/ Eᴠɪʟ, would probably /hate/ the idea of jury nullification.
+:PROPERTIES:
+:Author: derefr
+:Score: 1
+:DateUnix: 1516666106.0
+:END:
+
+
+*** The Median Voter Theorem guarantees that voters will be evenly divided between the Good Party and the Evil Party. You think I'm joking?
+:PROPERTIES:
+:Author: EliezerYudkowsky
+:Score: 6
+:DateUnix: 1516353613.0
+:END:
+
+**** Why does Hotelling's Law of spatial distribuition not cause both parties to move towards the center?
+
+(That is the effect that observes how you can drive for miles and not see a gas station, then come across four at one intersection. That happens because if they were further apart, one could relocate closer to the center, therefore they all end up together).
+
+By extension, if a Good candidate changed to be only mostly good, they would still capture all the good voters (who wouldn't dare vote for the Evil candidate) and might pick up a few evil voters that were nearly centrist. So the Evil candidate would change to be merely mischievous and recapture those votes and maybe a few slightly good votes as well. Eventually, they should both be Neutrals, right?
+:PROPERTIES:
+:Author: LeifCarrotson
+:Score: 6
+:DateUnix: 1516362260.0
+:END:
+
+***** In the case of a gas station, everyone (well, every driver) has to buy gas. In the case of a party/candidate, if you move too far from the extreme then the more extreme voters might not vote at all. The evil candidate might be giving up 20 very-evil voters in order to gain just 5 slightly-good voters, a net loss.
+:PROPERTIES:
+:Author: sparr
+:Score: 1
+:DateUnix: 1516407471.0
+:END:
+
+
+** "Angled Ovoid" is an anagram of "Good and Evil"
+
+I haven't been able stop anagram hunting since "Fallatehr"
+:PROPERTIES:
+:Author: Cifems
+:Score: 27
+:DateUnix: 1516321747.0
+:END:
+
+*** [deleted]
+:PROPERTIES:
+:Score: 18
+:DateUnix: 1516324612.0
+:END:
+
+**** Allfather.
+:PROPERTIES:
+:Author: Noumero
+:Score: 14
+:DateUnix: 1516329393.0
+:END:
+
+
+**** "Half later" is what I can see, not sure if there's more.
+
+Edit: "Fall hater" maybe Joon will lob him off the evil tower or something.
+:PROPERTIES:
+:Author: Vakuza
+:Score: 4
+:DateUnix: 1516325103.0
+:END:
+
+***** All father? Alter half?
+:PROPERTIES:
+:Author: renegadeduck
+:Score: 5
+:DateUnix: 1516328190.0
+:END:
+
+
+**** #+begin_quote
+  Fallatehr
+#+end_quote
+
+Earthfall, which Google says is a 4 person co-op survival game, and an apocalypse movie.
+:PROPERTIES:
+:Author: CopperZirconium
+:Score: 4
+:DateUnix: 1516333126.0
+:END:
+
+***** Also:
+
+half alert, far lethal, heart fall, later half, la hart elf
+:PROPERTIES:
+:Author: CopperZirconium
+:Score: 7
+:DateUnix: 1516333711.0
+:END:
+
+
+*** I prefer "Vag Dildo One".
+:PROPERTIES:
+:Author: eternal-potato
+:Score: 5
+:DateUnix: 1516345774.0
+:END:
+
+
+** A wild reasonable authority figure appears. It uses social fu. it is super effective.
+
+That was fantastic. Okay, so.. level 20 Essentialism lets him rebalance his stats? Respeccing is very in genre so that makes sense.
+:PROPERTIES:
+:Author: Izeinwinter
+:Score: 14
+:DateUnix: 1516315845.0
+:END:
+
+
+** Great chapter, but... the dude yanked twenty skill points and didn't get to put them somewhere else? Didn't even seem to try? That seems strange.
+
+Especially since nothing we've seen about this system would make "reduce a skill to zero" ever a beneficial change (outside of this specific sort of situation). We haven't seen any global skill caps or diminishing returns for one skill based on rank in another, etc.
+:PROPERTIES:
+:Author: RiOrius
+:Score: 15
+:DateUnix: 1516325919.0
+:END:
+
+*** #+begin_quote
+  down to zero, all in a single motion, worried that if I tried to do it in measured steps I would lose the ability to do it at all. When the motion was complete, I found myself back in the real world
+#+end_quote
+
+It doesn't sound like he had the time to try and put them elsewhere, based on that phrasing.
+:PROPERTIES:
+:Author: CantLookUp
+:Score: 8
+:DateUnix: 1516357229.0
+:END:
+
+
+*** Joon conducted an experiment with the number assigned to "Level Up" in his list of values, which began to tick upward after he shifted it down.
+
+He concluded:
+
+#+begin_quote
+  it confirmed something that Fallatehr had said. Changes would revert, given time.
+#+end_quote
+
+So it may simply be a matter of time until his Essentialism returns to 20 on its own.
+:PROPERTIES:
+:Author: arunciblespoon
+:Score: 2
+:DateUnix: 1516634792.0
+:END:
+
+
+*** #+begin_quote
+  We haven't seen any global skill caps or diminishing returns for one skill based on rank in another, etc.
+#+end_quote
+
+Interestingly, Joon has not done any experiments related to a wide variety of possibly-undocumented limitations across skills. For example, maybe there is a limit to how many different skills can increase on a single day? Maybe higher skills reduce the skill gain rate for other skills (maybe only those with same or different primary stat?)? Etc.
+:PROPERTIES:
+:Author: sparr
+:Score: 1
+:DateUnix: 1516407701.0
+:END:
+
+
+** I think that:
+
+-Fallatehr obviously was the cause of all of this. Fortunately, this is mostly because he lacks the understanding of how Joons genius works. Clearly, Joon can simply re-learn essentialism now.
+
+-There have been many cases where Joon has gotten a skill above 20 by simply practicing on his own -- I'm thinking of rifles, bone magic and skin magic at the least. I think that Joon should talk to Fallatehr to learn what's possible, and then go off to train on his own. It is simply amateur training as opposed to actually using the skill in novel contexts which get blocked at 20. If he went off on his own and tried new things / experimented, he could learn without help. Evidence supporting this theory includes the lack of a "(Skill can no longer be increased by amateur training.)" after the essentialism level-up.
+
+The alternative (which would be amateur training) would be, for instance, if Fenn told Joon to move her value assigned to, say, the color green, up and down repeatedly to grind the skill.
+:PROPERTIES:
+:Author: munkeegutz
+:Score: 11
+:DateUnix: 1516326643.0
+:END:
+
+*** I believe all three of the skills you mentioned were leveled past twenty in live combat against the unicorn.
+:PROPERTIES:
+:Author: sparkc
+:Score: 7
+:DateUnix: 1516339854.0
+:END:
+
+**** #+begin_quote
+  Evidence supporting this theory includes the lack of a "(Skill can no longer be increased by amateur training.)" after the essentialism level-up.
+#+end_quote
+
+He had just reached lvl 20, as evidenced by him witnessing the number change. He had not yet have the experience to hit lvl 21, which would have elicited the amateur training cap system message. Though I may admittedly be wrong in inferring this being the condition for the message.
+:PROPERTIES:
+:Author: Laborbuch
+:Score: 2
+:DateUnix: 1516353491.0
+:END:
+
+
+*** I really suspect that, whatever Fallatehr's plan is, it involves a de-powered Joon. The obvious thing is to subvert one or more of his allies without Joon being able to check. In this situation, although Fallatehr's knowledge of Joon's learning rates may not be perfect, it is a known unknown. If Joon has an ace up the hole, it is probably his tame demon.
+:PROPERTIES:
+:Author: NoYouTryAnother
+:Score: 2
+:DateUnix: 1516426553.0
+:END:
+
+
+** This just makes me more interested in seeing the Lawful Evil approach to problem solving and mass appeal. Not only does the other fellow have to be a sort of paragon of Evil, capital E, he also has to somehow win the hearts and minds of the town's population in doing so. He has to be both Evil and somehow working for the town's greater Good, too. Or does he?
+
+Just really interested in seeing the other side of the mirror to the Abswifth, who was great. I've always liked to read about the Paladin figure who isn't constrained by their code. Or even who has a code that empowers them, morally, in pursuit of maximal Good, instead of being "Lawful Stupid." The threshold deontologist Paladin.
+:PROPERTIES:
+:Author: ivory12
+:Score: 10
+:DateUnix: 1516312449.0
+:END:
+
+*** It kind of feels like dungeons and such enter into it. Like "if you ever withdraw your vote for me you will regret it".
+:PROPERTIES:
+:Author: WalterTFD
+:Score: 1
+:DateUnix: 1516371621.0
+:END:
+
+
+*** #+begin_quote
+  a sort of paragon of Evil, capital E, he also has to somehow win the hearts and minds of the town's population in doing so. He has to be both Evil and somehow working for the town's greater Good, too. Or does he?
+#+end_quote
+
+Hypothetical successful Evil platform: supporting the human rights of Evil citizens whose punishment by Good is "too much". Earns you the vote of not only those Evil citizens, but their families, underlings, etc.
+:PROPERTIES:
+:Author: sparr
+:Score: 1
+:DateUnix: 1516407839.0
+:END:
+
+
+** Lawful Evil: What can I do, while keeping to the bounds of some defined system of honor or law, which will have not the greatest utility for everyone collectively but instead the greatest utility for ME?
+
+Well, if the greatest utility for ME is to be continually voted into being superman so that I have great personal and political power, then performing acts which result in the populace deciding to continually vote for me would be best. So...y'know...being a great and effective ruler, almost exactly as if you were 'Good'....just Not out of any sort of idealism.
+
+Though like the earlier chapter examined, there'd probably also be sideline investigations into the whole 'bussing in people whom you convince to vote for you and then murder' as a way of ensuring permanency of being superman.
+:PROPERTIES:
+:Author: SeekingImmortality
+:Score: 9
+:DateUnix: 1516316139.0
+:END:
+
+*** #+begin_quote
+  then performing acts which result in the populace deciding to continually vote for me would be best. So...y'know...being a great and effective ruler
+#+end_quote
+
+Unfortunately, being a great leader and doing stuff to get elected again is not the same. That's why we have the word populism.
+
+This is one of the failure modes of democracy.
+:PROPERTIES:
+:Author: ajuc
+:Score: 1
+:DateUnix: 1516668990.0
+:END:
+
+
+** Thanks to *nohat* saying something in the previous chapter discussion thread, i was able to form a more coherent thought on why the party gives me a strange murderhobos vibe.
+
+This comment of his especially
+
+#+begin_quote
+  The cosmic horror of the game and the narrative are well done, though I'm not really a fan of the sorta intrinsic fourth wall break, and in universe forced narrative structure really puts me off
+#+end_quote
+
+All members are effectively [[http://tvtropes.org/pmwiki/pmwiki.php/Main/ConvenientlyAnOrphan][Conveniently an Orphan]]. Plus I realized that every person the party interacts with ends up dead\betraying them, a "vendor NPC" or a party member. The only exception could be the helpful bone mage, but it falls under the vendor category. Is there any named individual with more than a few sentences to their name that doesn't fall under this pattern? As far as i remember, anyone not dead is an enemy, vendor or at best a quest giver\objective.
+
+I guess this is due to the story and author having roots in being a D&D campaign and dungeon master. The same can be said about the world. Locations are for all intended purposes are separate, autonomous and the world is VAST. It gives room for putting stuff in, but now it feels disjointed and empty for the places that were not mentioned. It just occurred to me when Juniper mentioned the map in this chapter. Teleportation allows to visit different locations, but at the same time it's like jumping from set piece to set piece without knowing how\if they connect.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 16
+:DateUnix: 1516311268.0
+:END:
+
+*** I think it's intenitional, that all non-party characters are NPCs:)
+:PROPERTIES:
+:Author: ajuc
+:Score: 9
+:DateUnix: 1516315166.0
+:END:
+
+**** As i said, it can come with the territory per say.
+
+Pen & paper adventure offers freedom, but at the same time it seems a lot more limited than an average video game nowadays if you only make you characters murder\fight stuff. Plus, you can put only so much talk about morality and intricate plot if in reality it's enemy-kill-rest?-enemy-kill.
+
+Even if Junipers "real world" friends in the respective segments talk about tropes, decisions, freedom of choice and it certainly gives the worlds creative freedom, it limits the Aerb world to a narrow path of D&D adventure of a group that only solves problems one way.
+
+It's easier to feel for the characters and appreciate the world when it feels real and lived in.Otherwise at some point you either don't care about what happens to anyone or see the repeating pattern and stop being invested.
+
+Even the most delicious meal if served every day becomes stale.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 3
+:DateUnix: 1516316256.0
+:END:
+
+***** #+begin_quote
+  It's easier to feel for the characters and appreciate the world when it feels real and lived in.Otherwise at some point you either don't care about what happens to anyone or see the repeating pattern and stop being invested.
+
+  Even the most delicious meal if served every day becomes stale.
+#+end_quote
+
+Which is presumably what happened to his friend Arthur. The rinse and repeat finally got to him.
+:PROPERTIES:
+:Author: Keshire
+:Score: 6
+:DateUnix: 1516319258.0
+:END:
+
+****** This can be true. But from a standpoint of reading\creating a good story it should never be "it was dull\repetitive\uninteresting on purpose". Especially if it's a long written one.
+
+I love this story, but those are things i just notice by reading it.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 5
+:DateUnix: 1516319401.0
+:END:
+
+
+*** All character in the party either: die, are evil, are neutral, or are good/join the party. Gasp! Did you know all integers are either equal to 0 or are not equal to 0?
+:PROPERTIES:
+:Author: xThoth19x
+:Score: 1
+:DateUnix: 1516394137.0
+:END:
+
+**** #+begin_quote
+  every person the party interacts with
+#+end_quote
+
+This is an important distinction. They could have family that didn't try to kill them. Friends from before or new allies that are not party members. Who is exactly this named Neutral person outside of the party that they interacted with and is not a vendor or one time few sentences mention?
+
+Edit:
+
+My point is every member of the party can be effectively removed from the Aerb and no one would grieve about them. It is essentially a D&D party that can drop in and out without consequences to the world. They all were exiles in some way with 0 people being on friendly terms with them. Junipers or anyone else would needs no one to train them, if they need something it's a vendor and new Soul "mentor" is not a connection to be formed, but a nuisance to be killed.
+
+#+begin_quote
+  all integers are either equal to 0 or are not equal to 0
+#+end_quote
+
+Just noticed that, so you give essentially *infinite possibilities* as an example of what i'm saying when my problem is *4 very limited ones* (5 if you limit vendor definition).
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1516429766.0
+:END:
+
+
+** Theory: Fenn gave the tip to incriminate Fallatehr, given her intense hate for the man, her access to the info and the lack of negative consequences beyond making Joon undo some easily recoverable progress.
+
+That said I have no idea how she would have done it, so maybe the theory makes no sense. I'm just not seeing how this would benefit Fallatehr at all.
+:PROPERTIES:
+:Author: Makin-
+:Score: 4
+:DateUnix: 1516315432.0
+:END:
+
+*** That implies that Fenn both knew that Joon could dodge a soul magic test (and how he would do it), and that she was willing to give her own description to the cops. If her goal was to spike Fallatehr, why not just give descriptions of him and his group alone?
+
+The cops were given 4 descriptions (2 were definitely Joon and Fenn), and each party has four members, for 8 people total. Even if it /was/ Fenn, she would have given them at least 1 more description -- Fallatehr and his 2 remaining loyal minions + Joon and Fen make 5 descriptions, not 4.
+
+#+begin_quote
+  “Last night we were anonymously informed that an unregistered soul mage was set to visit Parsmont,” said the Abswifth. “We were given descriptions of four individuals, two of which are a match for the two of you."
+#+end_quote
+
+My best guess is that the remaining 2 descriptions are for Mary and Grak --- which would allow Fallatehr to avoid giving away that Grak is compromised (which would have been a big hint in that direction if the Abswifth had said 3 descriptions, not 4). After all, theoretically Fallatehr doesn't know that they already have a (now) reliable witness to events that first day.
+:PROPERTIES:
+:Author: rlxmx
+:Score: 5
+:DateUnix: 1516348278.0
+:END:
+
+**** Oh, my point is that she just wants Joon to finally agree to killing Fallatehr, so the tip has to be something that would seemingly only benefit him.
+:PROPERTIES:
+:Author: Makin-
+:Score: 2
+:DateUnix: 1516356866.0
+:END:
+
+***** I could sort-of see that, but it still means giving her own description to law enforcement in relation to a serious crime. There's crazy like a fox, and then there's just crazy.
+
+Of course, I also find it stretches even my own suspension of disbelief to assume Fallatehr knew that Joon could get out of it, but in weakened form.
+
+What if the brand new soul mage couldn't kill his own ability? Then Fallatehr maybe gets away free, but he also loses his ability to study Joon, because Joon gets carted away by the authorities, and probably also tells them all about how Fallatehr is out there. (Since he would be incriminated anyway, so why not go all in?)
+:PROPERTIES:
+:Author: rlxmx
+:Score: 1
+:DateUnix: 1518261572.0
+:END:
+
+****** By now we know what really happened! No need to use /logic/.
+:PROPERTIES:
+:Author: Makin-
+:Score: 1
+:DateUnix: 1518261972.0
+:END:
+
+
+** Hmm. Okay, the inescapable conclusion from the perspective of the soul mage that just did that examination is that Joon was powered the heck up using the exclusion zone that excluded skill transfers. Presumably, since he is the bodyguard of a princess and not a moral monster (the soul mage can see his values directly!) with the aid of volunteers found in hospices.
+
+Assuming he is a loyal citizen of Parsmount, this will not blow up in their faces in the short term, but it absolutely is a plot hook that can show up at any arbitrary future point with the official soul-mages showing up and politely inquiring where that exclusion resides.
+:PROPERTIES:
+:Author: Izeinwinter
+:Score: 5
+:DateUnix: 1516354054.0
+:END:
+
+
+** This is my favorite current rational fiction, I look forward to every chapter.
+:PROPERTIES:
+:Author: AStartlingStatement
+:Score: 3
+:DateUnix: 1516314609.0
+:END:
+
+
+** Typos for [[/u/cthulhuraejepsen]]
+:PROPERTIES:
+:Author: nytelios
+:Score: 1
+:DateUnix: 1516317631.0
+:END:
+
+*** Those formatted as this "arbitrary d
+
+efinition of good forced on me by the tower"
+
+I also think this was not fixed yet.
+
+[[https://www.reddit.com/r/rational/comments/7phthu/rtwip_worth_the_candle_ch_6769_handredlol_69/dsj4aa7/]]
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 5
+:DateUnix: 1516317990.0
+:END:
+
+
+*** #+begin_quote
+  only a drop that quickly because (became?) frighteningly far, down to the ground below.
+#+end_quote
+
+also, imagery unclear - wouldn't it be a drop to the top of the 6th floor? I got the impression the tower was hollow except for bottom 6 and the top floor.
+
+#+begin_quote
+  an arbitrary d
+
+  efinition
+#+end_quote
+
+line break
+
+#+begin_quote
+  princess to (extra space here) the wolves,
+
+  Was there are (an) argument to be made
+
+  M(a)y we never meet again
+#+end_quote
+:PROPERTIES:
+:Author: nytelios
+:Score: 2
+:DateUnix: 1516318066.0
+:END:
+
+**** Fixed those, thanks.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 1
+:DateUnix: 1516409295.0
+:END:
+
+
+*** #+begin_quote
+  only a drop that quickly because frighteningly far, down to the ground below
+
+  I watched as he wrote all that down and hoped that the map I'[m] looked at wasn't too out of date
+
+  that means [that] city-state of Parsmont, which will need to interface with the Empire of Common Cause.
+
+  Was there [are] argument to be made that I really
+#+end_quote
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 2
+:DateUnix: 1516321452.0
+:END:
+
+**** Fixed those, thank you.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 1
+:DateUnix: 1516409401.0
+:END:
+
+
+*** #+begin_quote
+  “My we never meet again,” said Fenn with a nod.
+#+end_quote
+
+"My" is probably supposed to be "May".
+:PROPERTIES:
+:Author: Khauvinkh
+:Score: 1
+:DateUnix: 1516318195.0
+:END:
+
+**** Fixed, thanks.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 1
+:DateUnix: 1516409283.0
+:END:
+
+
+*** If the people who gave us that anonymous tip give<S> us another
+
+Also, search through the entire work for "“More amatuer archery gone awry?” she asked with a faint smile."
+
+With "amatuer" being an incorrect spelling
+:PROPERTIES:
+:Author: munkeegutz
+:Score: 1
+:DateUnix: 1516326878.0
+:END:
+
+**** Fixed, thank you.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 1
+:DateUnix: 1516409277.0
+:END:
+
+
+*** “My we never meet again,” → May
+:PROPERTIES:
+:Author: Laborbuch
+:Score: 1
+:DateUnix: 1516352800.0
+:END:
+
+**** Fixed, thanks!
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 1
+:DateUnix: 1516409223.0
+:END:
+
+
+*** #+begin_quote
+  Riemer
+#+end_quote
+
+--------------
+
+Also, from Chapter 66,
+
+#+begin_quote
+  Amarylllis
+#+end_quote
+
+with three Ls. I've put this one forward [[https://www.reddit.com/r/rational/comments/7phthu/rtwip_worth_the_candle_ch_6769_handredlol_69/dshyb12/][three]] [[https://www.reddit.com/r/rational/comments/7lep1h/rtwip_worth_the_candle_ch_66_the_long_night/drm6tyb/][times]] now. If it's still there after this one, I'm gonna have to start coming up with some /theories/.
+:PROPERTIES:
+:Author: GeeJo
+:Score: 1
+:DateUnix: 1516369594.0
+:END:
+
+**** Finally fixed that, thank you, that was just one I was being lazy about.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 3
+:DateUnix: 1516409216.0
+:END:
+
+
+** [[https://i.imgur.com/kZ6vADf.png]]
+
+"vote for this web serial" leads to a page with a broken captcha
+:PROPERTIES:
+:Author: sparr
+:Score: 1
+:DateUnix: 1516325980.0
+:END:
+
+*** It worked for me just now.
+:PROPERTIES:
+:Author: Veedrac
+:Score: 2
+:DateUnix: 1516330534.0
+:END:
+
+
+*** top web fiction hasn't ever had issues for me before, and Ive voted there a lot
+:PROPERTIES:
+:Author: Krossfireo
+:Score: 1
+:DateUnix: 1516743438.0
+:END:
+
+**** Why are you telling me this?
+:PROPERTIES:
+:Author: sparr
+:Score: 0
+:DateUnix: 1516753915.0
+:END:
+
+***** Why did you tell people that it was broken?
+:PROPERTIES:
+:Author: Krossfireo
+:Score: 1
+:DateUnix: 1516758789.0
+:END:
+
+****** Because reporting problems with story post pages is normal here.
+:PROPERTIES:
+:Author: sparr
+:Score: 1
+:DateUnix: 1516760562.0
+:END:

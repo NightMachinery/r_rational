@@ -1,0 +1,1835 @@
+#+TITLE: [D] Friday Off-Topic Thread
+
+* [D] Friday Off-Topic Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 17
+:DateUnix: 1488553466.0
+:END:
+Welcome to the Friday Off-Topic Thread! Is there something that you want to talk about with [[/r/rational]], but which isn't rational fiction, or doesn't otherwise belong as a top-level post? This is the place to post it. The idea is that while reddit is a large place, with lots of special little niches, sometimes you just want to talk with a certain group of people about certain sorts of things that aren't related to why you're all here. It's totally understandable that you might want to talk about Japanese game shows with [[/r/rational]] instead of going over to [[/r/japanesegameshows]], but it's hopefully also understandable that this isn't really the place for that sort of thing.
+
+So do you want to talk about how your life has been going? Non-rational and/or non-fictional stuff you've been reading? The recent album from your favourite German pop singer? The politics of Southern India? The sexual preferences of the chairman of the Ukrainian soccer league? Different ways to plot meteorological data? The cost of living in Portugal? Corner cases for siteswap notation? All these things and more could possibly be found in the comments below!
+
+
+** Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+So I don't have anything to show this week.  A combination of factors led to me getting practically nothing done until last night, where I at least got a chunk object able to spawn hexes in a rhombus shape.
+
+In Unity, sadly.  I think due to my late start, I'm not going to be able to give Xenko a reasonable look, and so I'll leave that for later.  Word is they're releasing in April.
+
+My truncated goals for the voxel prototype are as follows:
+
+- voxels are saved and loaded
+
+- voxels are organized into chunks of a variable size
+
+- chunks are organized into a cylindrical shape, so that the map wraps both horizontally and vertically
+
+And that's it.  Assuming I don't have another progress-less week ahead of me, this ought to be reasonably achievable.
+
+--------------
+
+We had a lot of debate in the #pokengineering channel about types.  
+
+I'm starting to get pushback over having typing be mutually exclusive, i.e. all of your typing has to add up to 100%.  The issue being brought up is, if a 100% Fire type pokemon is the absolute pinnacle of Fire potential, then it's impossible to have full potential for more than one type.
+
+That's a feature, not a bug, says I.
+
+Still, I can see where it might be an issue in some cases, such as Moltres having a smaller and smaller Flying affinity the more Fire we give it.  One would think, at first glance, that giving Moltres 40% Flying and 60% Fire should be good enough, but then we have creatures like Slugma.  If Slugma is 80% Fire due to pretty much just being a lump of sapient lava, does this make sense?  I would indeed expect Slugma to be hurt by a Water move more than Moltres would be, but that would /also/ mean that Slugma's offensive prowess at fire moves is potentially much higher than Moltres' due to the way that one's typing affects STAB.
+
+The system that was proposed to me involved removing the cap and permitting all types to go up to 100%, so Moltres might be 100% Fire 50% Flying, while Slugma would be 80% Fire.  However, I don't like the ramifications that this would have on things such as breeding or HM type manipulation: if you make yourself more Ice, you won't have to exchange some other typing for it.  I prefer the simple 100% total cap, which makes it so any advantage you gain in one area /automatically/ reduces advantage from some other area, without needing to police it constantly.
+
+So if that's off the table, then there must be some other way to address this issue.  After arguing about it for a few days, it was brought up that having typing be both an offensive and a defensive system is perhaps doing too many things.  We haven't fully identified what effect this will have, but we'll probably end up dividing Type into something like Offensive Typing and Defensive Typing.  
+
+Charizard, for instance, would defensively be something like 40% Dragon, 30% Flying, 20% Fire, 10% Normal, while offensively being 40% Fire, 30% Flying, 20% Dragon, 10% Normal.  After all, you'd have to hit it in the mouth or the tail to actually get reasonable mileage out of your Water damage, but it's also a /literal fire-breathing dragon/, so it's got a bit more punch than might be initially obvious.
+
+We're still working through the ramifications of this, so if you have anything to say, please speak up!
+
+----  
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  
+:PROPERTIES:
+:Author: ketura
+:Score: 14
+:DateUnix: 1488562890.0
+:END:
+
+*** I think the breeding ramifications are interesting here. It makes perfect sense for the defensive typing to sum to 1, since there's a corresponding physical effect. If a pokemon was 50% and 50% fire, it could be literally half fire and half ice.
+
+It's the offensive typing where the problem comes in. If you breed a Charizard to have hotter fire, does it also fly worse?
+
+If so, why? After all, if all mutations necessarily came with an equal reduction then organisms couldn't really evolve. There are obviously trade-offs in evolution, but it's not 1:1 and not always sacrificing like for like. Sometimes the downside is just increased energy costs for growing, using, and maintaining the feature.
+
+To put it in reverse, if you surgically removed a Charizard's ability to produce flame, surely it wouldn't become a better dragon by magic.
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 10
+:DateUnix: 1488568536.0
+:END:
+
+**** This is actually a great point. Having the defenses capped and the offenses independent sounds much more reasonable than all or nothing.
+
+Also, the concept you brought up of increased energy costs is intriguing to me (even if you didn't mean it as a mechanical proposal) ...something like, for every point in an offensive type past, say 30%, have a corresponding increase in endurance usage of moves of that type? There feels like there's /something/ there.
+
+Thanks!
+:PROPERTIES:
+:Author: ketura
+:Score: 6
+:DateUnix: 1488571069.0
+:END:
+
+
+*** I definitely prefer either of the two solutions that don't involve removing the 100% cap.
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 3
+:DateUnix: 1488566787.0
+:END:
+
+
+** Today, my father, who is a roofer (he builds roofs), asked me to install Google Earth on his computer, because his is being repaired. I asked him why he wanted Google Earth. He said it helped him check the advancement of his construction sites, take measures, see if the gutters had been placed, etc.
+
+Holy shit, guys. We're in the future.
+
+EDIT: Okay so I asked him to clarify, and he doesn't actually use it for his own projects? More to check the long term advancement and changes to existing buildings. Way less awesome.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 23
+:DateUnix: 1488555268.0
+:END:
+
+*** Does it actually update often enough to be useful? I didn't think it could be used to track daily changes. If so, that is really cool.
+:PROPERTIES:
+:Author: trekie140
+:Score: 11
+:DateUnix: 1488556208.0
+:END:
+
+**** Maybe if they are living right nearby some area of interest, Mountain View or somesuch? In Germany you get aerial pics that are >4 years out of date.
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 17
+:DateUnix: 1488556528.0
+:END:
+
+
+**** Google Earth updates every 1-3 years, but Google /Maps/ updates on a daily basis with a three week delay.
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 10
+:DateUnix: 1488565995.0
+:END:
+
+
+**** I'm a traffic engineer and even having a photo every few months is great. You can see when things were put in, what an intersection looked like around the time of an accident, etc.
+
+And taking measures is a godsend. Seeing sightlines. Without google earth and streetview I don't know /how/ we did this job without going on site visits constantly. I mean, we still go on site and that's still vital, but if we need to know the lane width real quick we can measure it from the desk.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 6
+:DateUnix: 1488589386.0
+:END:
+
+
+*** I supervise a delivery department, and the Google maps version of Earth is my go-to resource for giving directions. Seeing the area in 3D makes my descriptions of where to park the trucks and how to find paths to entryways make a lot more sense to my people when they can see them from the side rather than from above.
+
+Certainly more sense than when they could only see streets and I had to draw any more detailed maps.
+
+Surrogate spatial concepts!
+
+That said, as Svalbard points out, I do live in a part of California that Google pays more attention to than, say, rural Wyoming.
+:PROPERTIES:
+:Author: Sparkwitch
+:Score: 4
+:DateUnix: 1488572938.0
+:END:
+
+
+*** He's got his own Google earth?
+:PROPERTIES:
+:Author: RMcD94
+:Score: 1
+:DateUnix: 1488572096.0
+:END:
+
+**** ... no, his (other) computer is being repaired.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 2
+:DateUnix: 1488582913.0
+:END:
+
+***** I know it was a joke
+:PROPERTIES:
+:Author: RMcD94
+:Score: 1
+:DateUnix: 1488617853.0
+:END:
+
+
+** Is anyone else questioning their belief in traditional democratic values like freedom of speech? I was always of the opinion that "sunlight is the best disinfectant" so that the surest way to stop bad ideas from spreading was for public discourse to prove them wrong. However, lately I have seen many ideas I consider evil gain massive support that rejects alternatives they're made aware of.
+
+The result of this is when I see people critique Bill Maher for even allowing Yiannopoulos a platform to speak or Anti-Fascist groups that openly promote censorship of hate speech, I find I can't disagree with them the way I used to. I've seen hatred become normalized in spite, and sometimes because, of opposition to it so I worry allowing people to share these ideas at all will cause it to spread further no matter what.
+
+At the same time, another part of me hates myself for being so utilitarian that I don't remain committed to the principles I've always held dear. I'm supposed to seek to optimize the values I cherish, not change those values in response to irrational opposition. I don't want to hate evil more than I love good, but the more I see evil win the less I care about being good.
+
+It was so easy to have faith in goodness when I believed good was winning overall, but now that I feel like progress has been halted or reversed I'm considering means that I once considered evil in to reach an end that's even a little more good than today's world. What does that say about me? What does that say about the state of the world?
+:PROPERTIES:
+:Author: trekie140
+:Score: 19
+:DateUnix: 1488556103.0
+:END:
+
+*** Re: Freedom of Speech, Yiannopoulos, and Maher. I haven't watch Bill Maher in a while, but there is a difference between liking freedom of speech and giving ridiculous ideas like fascism screen/mind time. I even think that arguing and debating over them may is some cases contribute to their normalization.
+
+Re: Evil winning vs. good. Maybe I'm too optimistic, but I do still think that the world is generally getting better, and if anything we are just in a temporary downward spike. All this means is that we need to try harder using 'good' methods of optimizing the world.
+
+That's all I have to say now (my first point was my main one), but I may have more later.
+:PROPERTIES:
+:Author: CthulhuIsTheBestGod
+:Score: 15
+:DateUnix: 1488558715.0
+:END:
+
+**** The world is generally getting better. But a lot of the getting-better-ness happens quietly, behind the scenes and out of sight, while a lot of pretty terrible people are standing front and center saying some pretty terrible stuff.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 12
+:DateUnix: 1488566567.0
+:END:
+
+***** My problem isn't that the improvements are quiet, it's that they're so slow due to resistance from bigots, anti-intellectuals, and people who think they aren't members of those group but rationalize supporting them.
+:PROPERTIES:
+:Author: trekie140
+:Score: 4
+:DateUnix: 1488578939.0
+:END:
+
+
+**** Denying free speech just says that you have no rational argument to debate them on.
+
+You're allowed to disagree, or even to ignore or scorn people with differing opinions. But a democracy does not function when one group can mandate that another is not allowed to speak. Especially because that will imply that the silenced party has something so powerful to say that the majority party has no rational argument against it.
+:PROPERTIES:
+:Author: Terkala
+:Score: 11
+:DateUnix: 1488582302.0
+:END:
+
+***** #+begin_quote
+  Denying free speech just says that you have no rational argument to debate them on.
+#+end_quote
+
+Is it? Imagine there was some harmful idea that was extremely persuasive because of quirks of human psychology, but not actually right. Teaching such an idea to vulnerable groups could lead to it being adopted despite the harm it causes.
+
+Obviously if you train people to avoid those quirks, the problem is sufficiently reduced in magnitude that it may as well have disappeared. But the population we have isn't trained. They're eminently susceptible. Even rationalists are, though ideally we'd be able to notice and correct those negative beliefs in ourselves and others.
+
+I don't think it's beyond the realm of possibility that there might be things which should not be given a platform. Unfortunately, I can think of no way to prevent the expression of such ideas without enabling the suppression of whatever ideas the government (or whichever group) doesn't like.
+
+Essentially, my preferences would be (in order):
+
+1. Eliminate the issues with human psychology that lead to people holding irrational beliefs.
+2. Prevent the spread of irrational beliefs without affecting the spread of arational or rational beliefs.
+3. Allow all beliefs to compete freely.
+
+1 and 2 are both, as far as I can see, infeasible. 1 is a massive, multi-generational undertaking in the best case, and 2 might just be impossible. That leaves 3, and theoretically 1 & 3 implies 2 (since these harmful memes only spread because people aren't sufficiently rational).
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 10
+:DateUnix: 1488628797.0
+:END:
+
+
+***** I hear what you're saying here, and I largely agree with it, I /want/ it to be true.
+
+However, that being said, lets look at meme theory. There are clearly certain memes with negative social utility that are extremely good at self-replicating and propagating themselves in our culture. If these sorts of memes are allowed to take hold, then they act like a supervirus and spread rapidly through the population. Yes, this directly implies that the silenced party has something powerful to say, but that's the problem. We know from meme theory that power and ability to spread through a population are /orthogonal/ to the truth-value of a given meme. So you can have these incredibly infectious, powerful memes, that are societally-harmful but very difficult to eradicate, especially since many of these memes foster the creation of ingroups around themselves as defense mechanisms against competing ideas.
+
+Now, trying to fix that quirk of human nature, on the whole, is a very difficult task, but given the existence of these memetic equivalents to biological warfare, maybe we should reconsider giving all memes an equally rich substrate to develop within.
+
+The other problem I see with unrestricted free speech is this, quote is from Slatestarcodex, bolding mine:
+
+#+begin_quote
+  Liberalism is a new form of Hobbesian equilibrium where the government enforces not only a ban on killing and stealing from people you don't like, but also a ban on tyrannizing them out of existence. This is the famous “freedom of religion” and “freedom of speech” and so on, as well as the “freedom of what happens in the bedroom between consenting adults”. The Catholics don't try to ban Protestantism, the Protestants don't try to ban Catholicism, and everyone is happy. *Liberalism only works when it's clear to everyone on all sides that there's a certain neutral principle everyone has to stick to.* The neutral principle can't be the Bible, or Atlas Shrugged, or anything that makes it look like one philosophy is allowed to judge the others. Right now that principle is the Principle of Harm: you can do whatever you like unless it harms other people, in which case stop. We seem to have inelegantly tacked on an “also, we can collect taxes and use them for a social safety net and occasional attempts at social progress”, but it seems to be working pretty okay too.
+#+end_quote
+
+My fear is that a group will claim to adhere to the neutral principle, take power, and then use that power to ban Catholicism anyway. [[https://np.reddit.com/r/AdviceAnimals/comments/5ntjh2/all_this_fake_news/dceozzo/][This post]] covers that playbook pretty well. If everyone involved isn't acting in good faith, it's easy to undermine the principles we hold dear. It's not particularly easy to identify when people aren't acting in good faith all the time, but if we don't make the attempt, then we leave the door open for people to use freedom of speech to destroy freedom of speech, who'll use democracy to destroy democracy, that's definitely a concern of mine.
+:PROPERTIES:
+:Author: Sagebrysh
+:Score: 8
+:DateUnix: 1488603397.0
+:END:
+
+****** I am in the exact position you are.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1488692716.0
+:END:
+
+
+****** You just seriously used the phrase
+
+#+begin_quote
+  I largely agree with it
+#+end_quote
+
+when referring to the concept of free speech. Stating that you have criteria that free speech must fit into for it to be allowed. Which by definition, makes it not free speech.
+
+You can say that you want to supress other's point of view. But please don't try to call it free speech when you're explicitly using it to deny other's right to speak freely.
+
+I am going to now disregard everything you have written, as your opening sentence proved that there is no value in continuing this discussion.
+:PROPERTIES:
+:Author: Terkala
+:Score: -3
+:DateUnix: 1488608613.0
+:END:
+
+******* #+begin_quote
+  You just seriously used the phrase I largely agree with it when referring to the concept of free speech. Stating that you have criteria that free speech must fit into for it to be allowed. Which by definition, makes it not free speech.
+#+end_quote
+
+I think maybe you're misinterpreting me here, or intentionally interpreting it uncharitably. I hope it's the former. I mean that I largely agree that free speech is important and that restricting speech brings about all sorts of bad outcomes. I don't mean that free speech must have criteria to be allowed. I'm not sure where you read that into my post.
+
+I'm just pointing out that free speech /also/ seems to produce some bad outcomes too, and that's worth /considering/ if nothing else. There's been a lot of things going on lately to make me question whether totally free speech is actually healthy for a society or if there's some speech (other then shouting fire in a crowded theater) that should potentially be banned for the memetic hazard they represent, but I'm not sure, I want to have a conversation about that sort of thing, so this sort of thing:
+
+#+begin_quote
+  I am going to now disregard everything you have written, as your opening sentence proved that there is no value in continuing this discussion.
+#+end_quote
+
+Is really just kind of a shitty thing to say even if you disagree with me.
+:PROPERTIES:
+:Author: Sagebrysh
+:Score: 7
+:DateUnix: 1488611566.0
+:END:
+
+
+******* #+begin_quote
+  I am going to now disregard everything you have written, as your opening sentence proved that there is no value in continuing this discussion.
+#+end_quote
+
+lol
+:PROPERTIES:
+:Author: Cariyaga
+:Score: 8
+:DateUnix: 1488609179.0
+:END:
+
+
+***** I agree. Was there something in my comment that you were disagreeing with?
+:PROPERTIES:
+:Author: CthulhuIsTheBestGod
+:Score: 3
+:DateUnix: 1488582748.0
+:END:
+
+****** I misread your comment, I thought you were implying that free speech in this instance was bad.
+:PROPERTIES:
+:Author: Terkala
+:Score: 1
+:DateUnix: 1488586251.0
+:END:
+
+
+***** #+begin_quote
+  Denying free speech just says that you have no rational argument to debate them on.
+#+end_quote
+
+Of course, that's not evidence against your position, nor in favor of theirs. It's mostly just evidence you're a bad persuader.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1488585207.0
+:END:
+
+****** It's at least weak evidence that you have no faith in your argument.
+:PROPERTIES:
+:Author: Iconochasm
+:Score: 3
+:DateUnix: 1488597413.0
+:END:
+
+******* But it is /weak/. If a superintelligence can persuade you of X regardless of its falsity, a relatively unintelligent person, or perhaps merely one utterly untrained in persuasion, might likewise fail to persuade you of X regardless of its truth.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1488637967.0
+:END:
+
+
+*** I think I understand what it must feel like, seeing good ideas fail to prevail and wondering if free speech actually does lead to the success of good ideas, but even if free speech has failure states like this, I'd argue that the alternative is still much worse.
+
+Free speech or no free speech, the marketplace of ideas is symmetric. There's no Idea God to tell us which ideas are actually superior to others, and every proponent of an idea will assert that theirs is the only one that's true among competing ideas. Even when you /know/ your methodologies were superior and yours is the only honest conclusion with the data available, the situations are rarely so straightforward that people can be reliably convinced that their methodology was wrong, even when they're being open-minded. /They/ probably also know their methodologies are the most sound and that theirs is the only honest conclusion, too.
+
+As such, there is no way for advocate for obviously wrong ideas to be suppressed while also being safe from suppression yourself. Even if free speech doesn't get the right ideas propagating, it /keeps the ideas propagating/, which is so incredibly important I can't begin to describe it.
+
+The true failure state here is not that bad ideas gain popularity, even though that is a failure state. The true failure state is when ideas die because others disliked them, because without an Idea God there is no person, group, or ideology fit to dictate whether those ideas for certain deserved to die or not, because after all, they could be your ideas.
+
+tl;dr free speech may not be perfect, but it keeps good ideas alive even if bad ideas never die either. Since we are only human, we have to accept that there's no way to forcibly cull the bad ideas and keep the good ones.
+:PROPERTIES:
+:Author: InfernoVulpix
+:Score: 12
+:DateUnix: 1488589938.0
+:END:
+
+**** #+begin_quote
+  There's no Idea God to tell us which ideas are actually superior to others, and every proponent of an idea will assert that theirs is the only one that's true among competing ideas.
+#+end_quote
+
+Oh my Idea God, this, this, so hard. You get the thing.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 7
+:DateUnix: 1488632644.0
+:END:
+
+
+**** #+begin_quote
+  There's no Idea God to tell us which ideas are actually superior to others, and every proponent of an idea will assert that theirs is the only one that's true among competing ideas.
+#+end_quote
+
+Ok I know this is utterly fucking cliche on [[/r/rational]], but...
+
+#+begin_example
+  p(H|D) = p(D|H) * p(H) / p(D)
+#+end_example
+
+COME ON! [[/ohcomeon][]]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1488643184.0
+:END:
+
+
+*** I think two things:
+
+a) Genocide is not an opinion (this draws a nice, if typically fuzzy line, regarding free speech)
+
+b) Any given system will have a faulting situation. Do not restrict yourself to one; life doesn't.
+
+Let's dive into /b/ a little more: Utility monsters, Pascal's Wager - these are good examples of fault situations for value systems and methodologies. They are rescued by comparing their output to other value systems, including "gut" feeling. Look at Ethereum and the debate about forking it after the "theft".
+
+Think about your own brain and existence: You have a logical system for thinking, and an emotional one. Some people experience existential systems. Your brain uses may different systems (electrical, hormonal) which in turn are not restricted to the brain (the gut has a substantial effect).
+
+All in all - Don't feel conflicted that you have multiple active value systems. When your value systems disagree, that's a sign you should examine the situation in more detail. Maybe one system is in a fault situation, and you can't rely on it; maybe they're legit disagreeing and you need a larger principle to decide between systems (which itself is a system... yay fractals!)
+
+Does that make any kind of sense?
+
+(PS - My "larger principle" is: act to make there be more of what you want in the world.)
+:PROPERTIES:
+:Author: narfanator
+:Score: 7
+:DateUnix: 1488567919.0
+:END:
+
+**** I've always been a pragmatist on some controversies and an idealist on others, it's just that I've never considered taking away rights from people just because I think they don't deserve them. I actually oppose the idea of banning human drivers even though I know it would make the road safer because it feels like compelling someone to sacrifice control over themselves. However, right now, if I knew for sure that censoring hate speech would reduce the prevalence of bigotry then I would support it regardless of my own objections.
+:PROPERTIES:
+:Author: trekie140
+:Score: 2
+:DateUnix: 1488580432.0
+:END:
+
+
+*** #+begin_quote
+  When you tear out a man's tongue, you are not proving him a liar, you're only telling the world that you fear what he might say.
+#+end_quote
+
+George RRMartin
+:PROPERTIES:
+:Author: Polycephal_Lee
+:Score: 4
+:DateUnix: 1488598453.0
+:END:
+
+**** When you tear out someone's tongue, ridicule them on the public stage, and brandish inarguable evidence that the things they claimed are not only lies but dangerous, deadly lies, then you discourage anyone else from holding on to those ideas.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 1
+:DateUnix: 1488663220.0
+:END:
+
+***** Or you create a martyr.
+:PROPERTIES:
+:Author: ketura
+:Score: 3
+:DateUnix: 1488664753.0
+:END:
+
+
+***** All of the other things you mention are how you accomplish your goal, tearing out the tongue is not necessary or effective.
+:PROPERTIES:
+:Author: Polycephal_Lee
+:Score: 1
+:DateUnix: 1488707756.0
+:END:
+
+****** I...don't know that any more.
+
+I used to think you were right, that rhetoric and honest debate were the surest ways of ensuring that the truth rose to the top. But...well...look at the world now. We have a man spouting obvious, easily checked lies in the White House, and a group of honest-to-goodness fascists behind him. Their followers ignore all attempts to engage them honestly, all attempts to try to show them evidence. They abjectly refuse to change their minds on any issue, even when you wave evidence in their faces that they are wrong. You can't embarrass them in a debate because their base knows, at the bottom of their souls, that their champions are correct by virtue of being their champions. You can't remove them from power through argument because the system as it stands has been totally corrupted, and there are enough of them in enough places that they can win elections without even having the majority of the country on their side.
+
+This isn't about honesty, or rational thought, any more. This is about the integrity of the concept of truth itself, a concept which an entire political party and all of its champions have totally abandoned. These people are dangerous, existential threats to the capacity of this planet to support human life, due to their abject denial of climate change. Until they start actually slaughtering innocents, it's not possible to get much worse or more terrifying than that.
+
+So yes, GRRM is right. I do absolutely fear what these people have to say. But I fear it because it is all, 100%, demonstrably, provably, wrong and dangerous, and because it risks my future and the future of every single goddamn human on the planet. Germany has learned this lesson. They learned that there is some rhetoric that cannot be allowed, some words that cannot be said, and some tongues that cannot remain in mouths. Being a nazi, or espousing things which the Nazis espoused, is totally illegal in Germany. The nationalist, blind waving of the flag as an ideal is socially frowned upon, because they know where that leads.
+
+In order to win against these monsters, it is imperative to make them look ridiculous and dangerous on the biggest stage possible, and to make it personally dangerous to follow in their footsteps. In that way, you might be able to get these fools to slink back into the darkness and die before it is too late.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 3
+:DateUnix: 1488734109.0
+:END:
+
+
+*** I'm still in favor of free speech. The real danger right now is people like Trump doing everything they can to suppress and discredit all opposing voices. I do think the education standards of this country needs to be raised so people don't buy into this white supremacist shit that's gaining traction recently. These people have always been there at the fringes of society, the problem is that the backlash to globalism is making them more popular.
+:PROPERTIES:
+:Author: Timewinders
+:Score: 10
+:DateUnix: 1488563360.0
+:END:
+
+**** The thing I'm worried about is that educating these people won't persuade them. Every Trump supporter I've spoken to has rejected all the evidence I present as biased against them or outright false without presenting any evidence of their own that I consider credible. They remain steadfastly committed to their current beliefs and seek out any rationalization they can despite being confronted by demands to think critically.
+:PROPERTIES:
+:Author: trekie140
+:Score: 5
+:DateUnix: 1488581354.0
+:END:
+
+***** Psychology says that you can't just change people's beliefs by showing them /mere/ counterevidence. You have to actually give them an alternative narrative or analysis, then show them how the evidence supports that new possibility.
+:PROPERTIES:
+:Score: 9
+:DateUnix: 1488583039.0
+:END:
+
+****** I doubt it will be any easier for them to accept a narrative that portrays the heroes of their narrative in a bad light.
+:PROPERTIES:
+:Author: trekie140
+:Score: 3
+:DateUnix: 1488585971.0
+:END:
+
+
+***** Of course most people stupid enough to vote for Trump can't be helped. But their children don't have to turn out the same way.
+:PROPERTIES:
+:Author: Timewinders
+:Score: 6
+:DateUnix: 1488581846.0
+:END:
+
+****** I'd rather the world their children inherit be less bad than it is likely to turn out right now. The longer they continue this delusional course of action while denying the negative consequences the harder it will be fix things. Or in the case of climate change, may be pushed past the point of no return.
+:PROPERTIES:
+:Author: trekie140
+:Score: 6
+:DateUnix: 1488582453.0
+:END:
+
+
+**** Is there actually white supremacist stuff gaining traction? Because I have only heard accusations and condemnations of it, not anyone actually supporting it. Although perhaps since I've mostly been on Reddit I'm not in the best position to encounter it. And the accusations I have actually looked into, like the idea that Milo or Trump are themselves white supremacists, are so blatantly false that I hesitate to believe the other claims.
+:PROPERTIES:
+:Author: zarraha
+:Score: 7
+:DateUnix: 1488571208.0
+:END:
+
+***** As an Indian person, I have to say that there have been quite a few attacks on Indian people during Trump's campaign and afterward by people thinking we're Muslim. It's like the days after 9/11 all over again. Trump's rhetoric demonizing and excluding Muslim and Hispanic people and his legitimizing previously fringe far right people like Bannon has emboldened racists across the country. I know many other minorities I know don't feel as safe in America as we used to.
+:PROPERTIES:
+:Author: Timewinders
+:Score: 10
+:DateUnix: 1488572200.0
+:END:
+
+****** This appears to be true, and I can see your point, although I'm not certain that anti-Muslim and white supremacy are the same thing. White supremacists would be anti-Muslim, and anti-Indian, but they would also be anti-everyone-except-whites.
+
+The statistics seem to show a recent increase in anti-Muslim hate crimes, but not a significant increase in other hate crimes. They also show a significant increase in Islamic terrorist attacks in Europe recently, which could easily explain this trend as the cause of the emboldening.
+
+Given that Trump's rhetoric is negative towards Muslims and Illegal immigrants from Mexico, but makes little to no mention of race except occasionally to promote equality rather than oppose it, it would be more accurate to describe it as anti-Islamic, which is a religious category, not a racial one.
+
+The fact that Indians and other people of certain ethnicity are being targeted without their religion being known detracts from this argument, but last time I checked bigots weren't particularly intelligent and probably don't care about the difference.
+:PROPERTIES:
+:Author: zarraha
+:Score: 1
+:DateUnix: 1488575308.0
+:END:
+
+******* Come on. Are you really only going to consider Trump a racist if he is explicitly so? Being explicitly racist would be political suicide, but banning travelers from Muslim countries while giving exceptions for Christians, decrying only Muslim terrorist attacks while ignoring recent hate crimes, making up fake terrorist attacks to attribute to Muslims, etc. all accomplish the same thing as explicitly as a politician can get away with. And the point about mistaking Indian people for Muslims is important because it's not really just about religion and ideology or terrorism, it's also about race. Anyway, I didn't say Trump himself is a white supremacist, but he's certainly currying their support and legitimizing their views. These people like Bannon target anyone they don't consider white, including Hispanic, black, and Jewish people. Maybe it's because I've spent time on 4chan and altright subs but the trend here is pretty obvious.
+:PROPERTIES:
+:Author: Timewinders
+:Score: 10
+:DateUnix: 1488579657.0
+:END:
+
+******** You might want to go reread "You Are Still Crying Wolf".
+:PROPERTIES:
+:Author: Iconochasm
+:Score: -1
+:DateUnix: 1488597752.0
+:END:
+
+********* It must be nice to have the comfort of knowing you and your family aren't in danger whether you're right or not about Trump, but I don't have that luxury. I agree with Scott that it's very unlikely that Trump being elected is going to lead to any actual consequences to people I know, but even a 0.1% chance is worrisome and unprecedented from a U.S. politician. I understand that Trump is socially progressive in some ways such as in supporting LGBT rights and in not being racist towards black people. But conveniently it stops where it comes to anyone who could be considered a foreigner. Conveniently while Trump talks about being socially progressive he removes protections for transgender students because his flip flops on these issues means even his reassurances aren't reassuring. Any Asian person in this country has a right to feel afraid. People like you who will never have to worry about this don't get to invalidate these concerns. We live here in America at the mercy of white people, and it would only take a few major terrorist attacks or a war to get sent to concentration camps like the Japanese did during World War II. If you think I'm going to stop protesting just because some people who would never protect my rights in the first place think I'm crying wolf, think again. These moderates are the same as the ones who complained about black people calling for civil rights during the 60s saying things were already pretty equal and not so bad.
+:PROPERTIES:
+:Author: Timewinders
+:Score: 7
+:DateUnix: 1488599639.0
+:END:
+
+********** A month or two ago, progressives were passing around a Hitler quote (yes, /that/ Hitler), along the lines of, "The only way to stop us was overwhelming violence, right at the beginning". The thing is, that's only half the quote. The other part was "or have done nothing". I don't know if there is a true consensus on who was responsible for the Reichstag Fire, but let's assume it was a pure false flag. That tactic worked because the communists already had a reputation from all the street fighting.
+
+I'm not saying "don't protest" (though I'd suggest making sure the protests are productive; media coddling can only go so far). I'm saying "stop bending over backwards to interpret everything in the absolute worst Literally Hitler possible light, you sound like the guys who were ranting about Obama rounding up conservatives into FEMA camps back in 2009".
+
+And for the record, I have Jewish and black family. I see no particular reason to be more worried about them than I was a year ago (aka: beyond the general baseline). If anything, I'm worried more about white megaprogressive cousins who might have an aneurysm from Trump Derangement Disorder before the next four years are up. One trendy bisexual cousin in particular seemed to think stormtroopers were going to kick in her door November 10th.
+:PROPERTIES:
+:Author: Iconochasm
+:Score: 1
+:DateUnix: 1488600637.0
+:END:
+
+*********** #+begin_quote
+  And for the record, I have Jewish and black family. I see no particular reason to be more worried about them than I was a year ago (aka: beyond the general baseline).
+#+end_quote
+
+You know JCCs are getting bomb threats and black churches have been subject to arsons and mass shootings, right? And that the rates have been rising for the past couple of years or so?
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1488638937.0
+:END:
+
+************ There's been an arrest made in at least some of the bomb threats. [[https://www.theatlantic.com/politics/archive/2017/03/the-fbi-says-its-found-one-of-the-jcc-bomb-threat-culprits/518511/][The suspect]] is a former journalist who I think even you would consider a radical leftist.
+
+The suspect for the arson was a black [[http://www.npr.org/sections/thetwo-way/2016/12/22/506558131/parishioner-arrested-for-november-arson-of-black-church-in-mississippi][parishioner]].
+
+The only mass shooting I'm aware of was Roof, who was a horrific, evil shit. But he seems to have been somewhat motivated by some belief that [[https://www.nytimes.com/2015/06/21/us/dylann-storm-roof-photos-website-charleston-church-shooting.html?_r=0][no one else]] was going to do it, and if there have been any copycat attacks, I haven't heard of them.
+
+#+begin_quote
+  And that the rates have been rising for the past couple of years or so?
+#+end_quote
+
+2012 - [[https://ucr.fbi.gov/hate-crime/2012/tables-and-data-declarations/1tabledatadecpdf/table_1_incidents_offenses_victims_and_known_offenders_by_bias_motivation_2012.xls][5796]]
+
+2013 - [[https://ucr.fbi.gov/hate-crime/2013/tables/1tabledatadecpdf/table_1_incidents_offenses_victims_and_known_offenders_by_bias_motivation_2013.xls][5928]]
+
+2014 - [[https://ucr.fbi.gov/about-us/cjis/ucr/hate-crime/2014/tables/table-1][5479]]
+
+2015 - [[https://ucr.fbi.gov/hate-crime/2015/tables-and-data-declarations/1tabledatadecpdf][5850]]
+
+It doesn't seem like we can take these numbers at face value, however, [[http://reason.com/blog/2016/11/15/facts-about-fbi-hate-crime-data-2015][cite]]
+
+#+begin_quote
+  The 2015 statistics include information from law-enforcement agencies representing some 283,884,034 people, or about 89 percent of the U.S. population. This is actually down from 2014 and 2013 (when 15,494 and 15,016 agencies participated, respectively), but up from 2012, when just 13,022 participated.*
+#+end_quote
+
+And we don't seem to have solid data for 2016 yet.
+
+Do you have a solid argument for why I /should/ be particularly concerned? One that takes the recent rate rise in /hoax/ hate crimes into account?
+:PROPERTIES:
+:Author: Iconochasm
+:Score: 1
+:DateUnix: 1488648586.0
+:END:
+
+************* #+begin_quote
+  There's been an arrest made in at least some of the bomb threats. The suspect is a former journalist who I think even you would consider a radical leftist.
+#+end_quote
+
+An arrest for four to eight of the bomb threats, out of about 190. And yes, I'd call this person a crazy left-wing extremist, to the point of being clearly under Russian ideological influence. Crazy isn't confined to one side of the spectrum.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1488648845.0
+:END:
+
+
+*********** I haven't seen much of that type of overreaction recently, just in the few days after the election. And frankly, it doesn't take much for Trump to come across in a bad light when the words that come straight out of his mouth are frightening enough and when the actions he takes, from appointing Bannon and Sessions to the recent executive order, don't paint a particularly welcoming view of America. That's the difference between him and Obama. I never had to worry about this under Bush, and I wasn't worried about the 2012 election either. So comparing me to the FEMA camp guys or your cousin is a little ridiculous, especially when Trump intentionally used divisive, inflammatory rhetoric throughout his campaign.
+:PROPERTIES:
+:Author: Timewinders
+:Score: 5
+:DateUnix: 1488601446.0
+:END:
+
+
+******* #+begin_quote
+  The statistics seem to show a recent increase in anti-Muslim hate crimes, but not a significant increase in other hate crimes.
+#+end_quote
+
+They also show an increase in anti-Jewish hate crimes. Nu? What have Jews done to justify attacking us?
+:PROPERTIES:
+:Score: 6
+:DateUnix: 1488584086.0
+:END:
+
+
+***** #+begin_quote
+  Is there actually white supremacist stuff gaining traction?
+#+end_quote
+
+Yes. My alma mater has had Identity Europa flyers show up on parked cars.
+:PROPERTIES:
+:Score: 10
+:DateUnix: 1488571618.0
+:END:
+
+****** So you're equating identitarianism with supremacy? And you wonder why people stopped taking this seriously. This is no less absurd than when that creepy gay pedophile jew Milo was denounced as a "white supremacist".
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: -3
+:DateUnix: 1488582276.0
+:END:
+
+******* [[http://lmgtfy.com/?q=identity+europa][Google is widely available, and the first result, the group's own website, shows that Identity Europa markets itself as a white-nationalist militant cadre organization.]]
+:PROPERTIES:
+:Score: 12
+:DateUnix: 1488583600.0
+:END:
+
+******** Yeah, in other words, they're proactive white nationalists. Pretty extreme for /the current year/, but this is what people are being driven to by the excesses of the radical left. I don't, however, see anything about white supremacy other than from politically hostile third parties, and this is even when you search for their name spelt correctly.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: -5
+:DateUnix: 1488583741.0
+:END:
+
+********* That's like saying you're looking at broccoli, and not seeing anything about cabbage other than from politically hostile third parties. The two things are synonymous.
+
+Yes, militant identitarianism is fascist.
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1488583884.0
+:END:
+
+********** Wait, stop the argument, more important issue at hand. [[http://www.medicalnewstoday.com/content/images/articles/266/266765/two-heads-of-broccoli.jpg][Broccoli]] is the same thing as [[https://www.organicfacts.net/wp-content/uploads/2013/05/Cabbage11.jpg][cabbage]]. Sure, they're close, but so is [[https://en.wikipedia.org/wiki/Cauliflower#/media/File:Cauliflower.JPG][cauliflower]].
+:PROPERTIES:
+:Author: Iconochasm
+:Score: 1
+:DateUnix: 1488597960.0
+:END:
+
+*********** Exactly my point. You can't talk separately about broccoli and cabbage. You can't talk separately about white nationalism and fascism.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1488598189.0
+:END:
+
+************ Yeah. You can. They are two different plants with different tastes, textures, and general uses.
+:PROPERTIES:
+:Author: Iconochasm
+:Score: 5
+:DateUnix: 1488599321.0
+:END:
+
+************* What? I thought they were different parts of the same plant.
+
+Ok, I'm being informed that they're the same species (brassica oleracea) in terms of being able to cross-breed, but that the foods are different cultivars within the same species.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1488637168.0
+:END:
+
+************** Ah, I really only know about them as foods. I love broccoli and don't care for cabbage, so I took that one personally. I feared it was "you're been eating onions all along" all over again.
+:PROPERTIES:
+:Author: Iconochasm
+:Score: 1
+:DateUnix: 1488646433.0
+:END:
+
+*************** I like to use cabbage in stir-fries. It gives a nice little crunch and a few extra vitamins.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1488646715.0
+:END:
+
+
+********** I disagree. "Militant identitarianism" is the idea of fighting for a country for your own people, whereas "X supremacy" implies, well, a belief in the supremacy of group X. One is an instrumental strategy, the other is an ontological belief. They categorically can not be synonymous, even if they happen to coincide.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: -2
+:DateUnix: 1488584056.0
+:END:
+
+*********** #+begin_quote
+  "Militant identitarianism" is the idea of fighting for a country for your own people
+#+end_quote
+
+That doesn't make sense in a white-American context, where the country is /already/, de facto, a nation-state.
+:PROPERTIES:
+:Score: 10
+:DateUnix: 1488585112.0
+:END:
+
+************ You're implying the United States is a "white-America". We're about 60% white (non-hispanic). The United States is not a white ethnostate by any stretch of the imagination.
+:PROPERTIES:
+:Author: anuddashoah
+:Score: 0
+:DateUnix: 1488589258.0
+:END:
+
+************* Do you consider only Japan and South Korea to be "ethnostates"? Or is some degree of homogeneity less than 98% allowed to fall under the definition? What /is/ the definition?
+
+Given my own nationality and my own experiences of unpleasant "cultural divergence" in my home country, you ought to be able to make /some/ kind of case to me, but you're coming off more as a utopian than anything else. "Surely, 98% homogeneity will unlock the keys to stability, harmony, prosperity, and happiness! Ethnically cleanse more people!"
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1488594012.0
+:END:
+
+************** Regarding Japan and Korea, they aren't the only ones out there - take Poland for instance. Ethnostate isn't an official term, but I think it's the best description of what I mean, mono-racial, (mostly) mono-cultural nations. You could add something in there about the government existing primarily to benefit their people, since that doesn't happen like it should.
+
+Homogeneous countries may not be utopia, but they're certainly better than multicultural ones. Social trust (if you aren't familiar with the term, it can be generalized as "how much you like and believe in your neighbor") decreases significantly in ethnically diverse areas.
+
+Wikipedia actually has a pretty decent article on this, but I'll link a couple papers for you: [[http://journals.sagepub.com/doi/abs/10.1177/0003122415577989]]
+
+[[http://onlinelibrary.wiley.com/doi/10.1111/j.1467-9477.2007.00176.x/abstract;jsessionid=5D296BD68464E8B2179A5724721DF9E7.f04t01]]
+:PROPERTIES:
+:Author: anuddashoah
+:Score: 1
+:DateUnix: 1488596897.0
+:END:
+
+*************** #+begin_quote
+  Homogeneous countries may not be utopia, but they're certainly better than multicultural ones.
+#+end_quote
+
+Except that, for instance, I have zero desire to move to Japan, Korea, or Poland, while New Zealand, for instance, is much more interesting to me. In fact, Poland is kind of a shithole.
+
+Also, your own link says:
+
+#+begin_quote
+  In the long run, however, successful immigrant societies have overcome such fragmentation by creating new, cross-cutting forms of social solidarity and more encompassing identities. Illustrations of becoming comfortable with diversity are drawn from the US military, religious institutions, and earlier waves of American immigration.
+#+end_quote
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1488598118.0
+:END:
+
+**************** Look at the data in the study, not the commentary.
+
+Also, why would you want to move to an "ethnostate" that isn't made of your people?
+
+I'm going to reply to your other post in this one too, this sub throttles me.
+
+#+begin_quote
+  Further: if the government doesn't primarily benefit the people, the theory is not working
+#+end_quote
+
+There are many governments that don't primarily benefit the people. Ethnic makeup is not the sole contributing factor, it's just a big one.\\
+If you look at the top-5 countries with the highest Human Development Indexes, they average around 80% native, and most of the other 20% is still white European.
+:PROPERTIES:
+:Author: anuddashoah
+:Score: 1
+:DateUnix: 1488600389.0
+:END:
+
+***************** #+begin_quote
+  Also, why would you want to move to an "ethnostate" that isn't made of your people?
+#+end_quote
+
+Well you said that they're ideal places to live.
+
+#+begin_quote
+  If you look at the top-5 countries with the highest Human Development Indexes, they average around 80% native,
+#+end_quote
+
+I'm looking at [[https://en.wikipedia.org/wiki/Human_Development_Index#2015_Human_Development_Report][the HDI]] right now. I'm not aware of Australia being an "ethnostate", and Switzerland, IIRC, has a high percentage of foreign-born residents. Going down further, the USA and Canada, your canonical examples of countries ruined by ethnic diversity, show up at places 8 and 9. South Korea is 17th, and Japan is 20th, despite their both being ethnically homogeneous. Between them, by the way, is Israel, which despite classing about 3/4 of its citizens as Jewish is nonetheless one of the most phenotypically and culturally diverse places on the planet (in terms of things like the number of mother-tongues in common usage, percentage of foreign-born residents or citizens, different skin pigmentations, etc).
+
+Hungary, where a right-wing ethnonationalist "populist" government has been in power for a little while, is in 44th place. Poland, with a similar government more recently, has 36th place.
+
+Care to explain this?
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1488639421.0
+:END:
+
+
+*************** #+begin_quote
+  Ethnostate isn't an official term, but I think it's the best description of what I mean, mono-racial, (mostly) mono-cultural nations. You could add something in there about the government existing primarily to benefit their people, since that doesn't happen like it should.
+#+end_quote
+
+Further: if the government doesn't primarily benefit the people, /the theory is not working/. You've got your mono-racial, mono-ethnic, mono-cultural countries. Some of them work ok, some are kinda shitholes, none are great glorious world-scale powers.
+
+Meanwhile, countries based on a common civic ideal are basically occupying all the top spots on human achievement, comfort, and happiness indexes.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1488598388.0
+:END:
+
+
+*** Honestly, I think it means you and me too are confused about how things are working. Remember, there have been times Communists and fascists fought each-other in the streets, and the fascists won, and the Communists (and liberals, and moderates, etc.) got sent to concentration camps. There have also been times when neo-Nazis tried to march through a largely Jewish village, defended by the ACLU, and yet gained little to no power from it.
+
+The real question is: what's the underlying causal factor that makes Card Carrying Evil win in some circumstances, but not others? Does that factor really match up to /our/ personal instinct, as aspiring fighters against Evil in general, to directly confront and fight people we believe are Evil?
+
+If it does, then we should support tactics which Fight Evil. If the causal factor is something else, we need to work on that. If traditional Deontological Principles of Good are helpful to attaining Good and fighting Evil, we should keep them. If they're detrimental, we can change them: Chesterton's Fence is only helpful if it actually keeps foxes out of the damned henhouse.
+:PROPERTIES:
+:Score: 10
+:DateUnix: 1488571571.0
+:END:
+
+**** I think my internal debate ultimately comes down to whether a preemptive strike against evil is justified in this case. Are they deserving of coercion if they don't resort to coercion before we do or has the war of ideologies already begun and I'm just avoiding fighting it? All I know is that bad things are happening and the people causing them won't listen to me when I explain why they should stop.
+:PROPERTIES:
+:Author: trekie140
+:Score: 3
+:DateUnix: 1488581033.0
+:END:
+
+***** What preemption? They're in government, more or less.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1488582045.0
+:END:
+
+****** Yeah, I find it hilarious how leftists are still calling for a hate speech ban.
+
+You people realise that /ourguys/ would be the ones defining "hate speech" this time around, right?
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: 2
+:DateUnix: 1488582510.0
+:END:
+
+
+*** #+begin_quote
+  I was always of the opinion that "sunlight is the best disinfectant" so that the surest way to stop bad ideas from spreading was for public discourse to prove them wrong.
+#+end_quote
+
+That doesn't work if the authorities in charge of "proving" things (whether [[https://www.google.com/search?q=replication+crisis][scientists]], [[http://www.reddit.com/r/kotakuinaction][journalists]], or [[http://thehill.com/homenews/administration/320320-report-trump-administration-eyes-changes-to-trade-deficit][government recordkeepers]]) have thrown away their credibility--or if the item in question has such long-term effects than /any/ "proof" must be tenuous and disputable.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 10
+:DateUnix: 1488560781.0
+:END:
+
+**** What did they do to lose credibility to the point where opposition to them could be considered more rational than reforming them?
+:PROPERTIES:
+:Author: trekie140
+:Score: 8
+:DateUnix: 1488579200.0
+:END:
+
+***** /I/ never said that it /was./ Many people, however, are not so optimistic.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 4
+:DateUnix: 1488579942.0
+:END:
+
+****** So how do we stop them from dismantling institutions we believe in if they aren't listening to reason?
+:PROPERTIES:
+:Author: trekie140
+:Score: 4
+:DateUnix: 1488582152.0
+:END:
+
+******* Point them toward the trustworthy reformers, I guess--and show evidence of the reformers' past trustworthiness and effectiveness.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 1
+:DateUnix: 1488590218.0
+:END:
+
+******** I have. They don't believe me. They're convinced that everyone they disagree with is lying to them. They don't have any evidence for this that I trust, but they consider it common sense based on the fact that these institutions disagree with them.
+
+I have had to defend the authority of the courts to interpret the law, universities to educate, intellectuals to inform, and major news organizations to be trustworthy. None of my arguments have persuaded anyone because they reject reality as I understand it.
+
+EDIT: I should've said scientists instead of intellectuals.
+:PROPERTIES:
+:Author: trekie140
+:Score: 3
+:DateUnix: 1488640328.0
+:END:
+
+********* #+begin_quote
+  I have had to defend the authority of the courts to interpret the law, universities to educate, intellectuals to inform, and major news organizations to be trustworthy.
+#+end_quote
+
+That's a very broad brush. What I mean is, you should point out (for example):\\
+- Court decisions that are /very clearly/ based on common-sense interpretation of law and precedent rather than on a supposed judicial desire to accumulate authoritarian power and tear down the executive, legislative, and administrative powers beyond what the principle of checks and balances dictates (read the decisions yourself, then check analyses of them as well)\\
+- Universities and news organizations that are /very clearly/ devoted to the acquisition and dissemination of true knowledge rather than to the masking of political opinions as truths and lies as facts (look up ethics scandals and incidents of agenda-pushing)\\
+- (I can't think of anything to defend "the authority of 'intellectuals' to inform". Maybe try describing them as "knowledgeable people" or "dedicated analysts", and show that they've been correct in the past.)
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 1
+:DateUnix: 1488641731.0
+:END:
+
+********** I did all those things. People think the courts shouldn't have struck down the travel ban either because /they believe/ it's constitutional or that the court shouldn't have that power at all. They're convinced universities and news organizations possess an agenda to promote liberal ideas purely because most college students are liberals and certain media organizations are popular among liberals. Most of the ones I've spoken to aren't deliberate anti-science, but they're still skeptical of results related to politically-charged issues because they don't trust results that agree with liberals. I swear this is exactly how every discussion with them goes.
+:PROPERTIES:
+:Author: trekie140
+:Score: 6
+:DateUnix: 1488644194.0
+:END:
+
+*********** #+begin_quote
+  People think the courts shouldn't have struck down the travel ban either because they believe it's constitutional or that the court shouldn't have that power at all.
+#+end_quote
+
+Well, if they can't understand something as simple as checks and balances, and don't realize that a "state of emergency" footing can't be justified, I guess they're hopeless after all...
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 5
+:DateUnix: 1488660585.0
+:END:
+
+
+*** #+begin_quote
+  What does that say about me?
+#+end_quote
+
+By this point I'm pretty sure it means you have some sort of pronounced confirmation bias, where you look for the most exciting, negative, terrifying news you can find and intepret them as deep, coded philosophical messages about life itself.
+
+More developed answer tomorrow when I have some time.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 15
+:DateUnix: 1488556859.0
+:END:
+
+**** It's not bias if the fear is rational. I am afraid of bigotry, authoritarianism, and anti-intellectualism. All of which have gained huge popularity over the past year or so and I see represented at [[/r/AskTrumpSupporters][r/AskTrumpSupporters]] from people who defend words and actions I consider indefensible. I won't pretend that things are okay when they are not and show no sign of getting better.
+
+The question isn't whether I should be afraid that the owner of a white nationalist rag is my President's chief of staff, the only foreign leader the President hasn't criticized is the autocrat ruling Russia, or that millions of people believe a travel ban on Muslims isn't unconstitutional. The question is what do I do to stop things from getting worse?
+:PROPERTIES:
+:Author: trekie140
+:Score: 7
+:DateUnix: 1488579879.0
+:END:
+
+***** I don't think you really understand what "confirmation bias" is. If I (as a rational person trying to help you) think you're being biased and focusing too much on exciting negative things, then you telling me you're really really sure that you're right and citing a bunch of exciting negative things kind of demonstrates my point.
+
+I'm not saying the awfulness doesn't exist, I'm saying STOP STARING AT THE AWFULNESS, and stop persuading yourself it's all there is.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 7
+:DateUnix: 1488583210.0
+:END:
+
+****** I'm not convinced that's all there is, I'm worried there's no way to stop the awfulness accept to do something that I also consider awful and is looking more attractive to me as time passes.
+:PROPERTIES:
+:Author: trekie140
+:Score: 3
+:DateUnix: 1488586110.0
+:END:
+
+
+***** *Here's a sneak peek of [[https://np.reddit.com/r/AskTrumpSupporters][/r/AskTrumpSupporters]] using the [[https://np.reddit.com/r/AskTrumpSupporters/top/?sort=top&t=all][top posts]] of all time!*
+
+#1: [[https://np.reddit.com/r/AskTrumpSupporters/comments/4c67vk/modpost_psa_collection_found_here_muslim/][ModPost: PSA Collection Found Here: Muslim Immigration, The Wall, and Trump Being Pro Women, Pro LGBT, and More]]\\
+#2: [[https://np.reddit.com/r/AskTrumpSupporters/comments/4v1f3m/not_a_trump_supporter_but_im_impressed/][Not a Trump supporter, but I'm impressed]]\\
+#3: [[https://np.reddit.com/r/AskTrumpSupporters/comments/5snu4l/i_didnt_vote_for_hrc_because_of_cronyism_and/][I didn't vote for HRC because of cronyism and pay-to-play. How is DeVos not the epitome of that??]]
+
+--------------
+
+^{^{I'm}} ^{^{a}} ^{^{bot,}} ^{^{beep}} ^{^{boop}} ^{^{|}} ^{^{Downvote}} ^{^{to}} ^{^{remove}} ^{^{|}} [[https://www.reddit.com/message/compose/?to=sneakpeekbot][^{^{Contact}} ^{^{me}}]] ^{^{|}} [[https://np.reddit.com/r/sneakpeekbot/][^{^{Info}}]] ^{^{|}} [[https://np.reddit.com/r/sneakpeekbot/comments/5lveo6/blacklist/][^{^{Opt-out}}]]
+:PROPERTIES:
+:Author: sneakpeekbot
+:Score: 2
+:DateUnix: 1488579887.0
+:END:
+
+
+*** On Truth:
+
+Hate speech, self-righteous falsehood, and proud ignorance are frustrating but- in my opinion -better to suffer them all than to throw the proverbial baby out with the bathwater.
+
+Truths can hurt, every bit as much as fantasies can, but they're true. They may be denied, they may be devalued, they may be undermined, but they can never be destroyed.
+
+When necessary, it must be spoken no matter how much it hurts. That may feel like hate to the person who hears it, it may feel like falsehood, it may feel like ignorance and, indeed, /it may truly be any one of those or all three/. Who's to know? But if it remains unsaid, then the speaker's truth remains unknown... or the speaker's untruth remains uncorrected.
+
+On Evil:
+
+There is so much good in the world that seeing it is as blinding as the sun. Every minute of every day billions of people are gentle, kind, trusting, and giving. Their decisions trend towards health, community, and hope. Were that not true in aggregate, every minute of every day, anything resembling society would have failed before it began.
+
+Evil is so rare that every insignificant bit of it stands out in stark, obvious contrast. When we're crowded together, or when the internet and the media bring us together, evil can grow common and we can feel apathetic. If that starts to hurt too much, shade your squinting eyes with your hand and notice some of the good. It's not easy, but it's worth a look.
+
+To paraphrase a pair of detectives under the stars:
+
+"How do those tiny lights stand up against all that darkness?"
+
+"Used to be nothing but dark. Looks to me like the light is winning."
+:PROPERTIES:
+:Author: Sparkwitch
+:Score: 6
+:DateUnix: 1488572268.0
+:END:
+
+
+*** I see this liberal attitude along with identity politics more and more. Safe spaces need to exist, but unsafe places also need to exist in order to have real discourse.
+
+The alternative to free speech is using violence when people merely talk about something. It's only 1 step away from thoughtcrime or precrime.
+:PROPERTIES:
+:Author: Polycephal_Lee
+:Score: 2
+:DateUnix: 1488584138.0
+:END:
+
+
+*** I agree with you, coming from the opposite end of the spectrum. I'm an openly racist fascist, and in my ideal state there would be no room for anyone having an opinion that disagrees (or is fundamentally opposed) with the government.
+
+Just by existing, Communists try to tear down society and fill in the gap with theirs. I don't want memetic hazards like this to be protected by the government, that's essentially shooting yourself in the foot.
+:PROPERTIES:
+:Author: anuddashoah
+:Score: -5
+:DateUnix: 1488567902.0
+:END:
+
+**** Wow, this guy is a mod at [[/r/uncensorednews]], that explains a lot about that subreddit. Preserving the comment for posterity:
+
+#+begin_quote
+  I agree with you, coming from the opposite end of the spectrum. I'm an openly racist fascist, and in my ideal state there would be no room for anyone having an opinion that disagrees (or is fundamentally opposed) with the government.
+
+  Just by existing, Communists try to tear down society and fill in the gap with theirs. I don't want memetic hazards like this to be protected by the government, that's essentially shooting yourself in the foot.
+#+end_quote
+
+-[[/u/anuddashoah]]
+:PROPERTIES:
+:Author: Norseman2
+:Score: 12
+:DateUnix: 1488577579.0
+:END:
+
+***** So what? That's hardly relevant to the discussion at hand.
+
+Are you implying I'm a hypocrite because I help run a forum for open posting of current events?
+:PROPERTIES:
+:Author: anuddashoah
+:Score: -5
+:DateUnix: 1488579251.0
+:END:
+
+****** It would make me think that the title of the sub is wrong. In the words of one of its mods:
+
+#+begin_quote
+  I don't want ideas being spread if they are directly opposed to my agenda.
+#+end_quote
+:PROPERTIES:
+:Author: CthulhuIsTheBestGod
+:Score: 17
+:DateUnix: 1488579676.0
+:END:
+
+******* Well, as we've seen recently, "alternative X" now often means "fascist X".
+:PROPERTIES:
+:Score: 10
+:DateUnix: 1488583303.0
+:END:
+
+
+******* My actions as a moderator aren't exclusive to pushing my agenda. JFK didn't act as a puppet of the Vatican during his Presidency. Convictions can be separated from actions, that's what makes us rational.
+:PROPERTIES:
+:Author: anuddashoah
+:Score: -3
+:DateUnix: 1488590047.0
+:END:
+
+
+**** A short note to everyone: this user remains on this subreddit -- /for now/. However, I'd certainly like anyone with an opinion to chime in on whether making fun of the Holocaust in a trollacter's username is "pleasant and on-topic". The default is not to ban, warn, or sanction just based on the comment here, but /daaang/ does this kind of Holocaust humor irk me.
+:PROPERTIES:
+:Score: 10
+:DateUnix: 1488583207.0
+:END:
+
+***** I appreciate that. It's not difficult for me to remain civil and polite. I'm not going to be making any holocaust jokes in my comments on this subreddit, regardless of my username.
+
+#+begin_quote
+  trollacter
+#+end_quote
+
+I'm not trolling.
+:PROPERTIES:
+:Author: anuddashoah
+:Score: 1
+:DateUnix: 1488591903.0
+:END:
+
+
+**** The fact that you want to do that to me makes me feel more justified in doing the same to you, but I'm not comfortable with being like you so I feel like I should be the better man and not do that to you. I remain at an impasse, though I am just as determined to fight the ideals you represent. For as long as I can, I will continue to hate you without becoming that which I hate. I can only hope I never have to.
+:PROPERTIES:
+:Author: trekie140
+:Score: 7
+:DateUnix: 1488582027.0
+:END:
+
+***** I think it's reasonable to have a single exception to freedom of speech. Anyone who argues that there should be no freedom of speech should have their freedom of speech revoked so that they can lead by example. For some people, I think they would have to experience being arrested, fined and imprisoned just for saying something before they would truly understand why freedom of speech is important.
+:PROPERTIES:
+:Author: Norseman2
+:Score: 5
+:DateUnix: 1488582796.0
+:END:
+
+
+***** I don't fault you for that. Like I said, allowing dangerous ideas that are fundamentally opposed to your preferred structure is shooting yourself in the foot. However, /if/ censorship eventually does happen, those in charge need to own up to what they're doing, regardless of who is being censored.
+:PROPERTIES:
+:Author: anuddashoah
+:Score: -2
+:DateUnix: 1488591257.0
+:END:
+
+
+**** Re the second sentence of your first paragraph, why? What if you lived in a communist country, would you then agree with communism? If not, my point is that freedom of speech makes it easier to change your country for the 'better'.
+:PROPERTIES:
+:Author: CthulhuIsTheBestGod
+:Score: 6
+:DateUnix: 1488568754.0
+:END:
+
+***** I can't really give you an accurate idea of what my mindset would be under totally different circumstances.
+
+#+begin_quote
+  freedom of speech makes it easier to change your country for the 'better'.
+#+end_quote
+
+True, but 'better' is subjective. I wouldn't want to live in your country, I'm confident you wouldn't like mine. I don't want ideas being spread if they are directly opposed to my agenda. You don't (?) want a platform for alt-right, fascist, or 'hateful' opinions, even if it is never explicitly forbidden, am I right?
+:PROPERTIES:
+:Author: anuddashoah
+:Score: 0
+:DateUnix: 1488572188.0
+:END:
+
+****** I think it is always reasonable to value freedom of speech. How are you supposed to create a 'good' government (whatever you think a good government is) without being able to advocate for it? How are you supposed to correct its imperfections without being able to point them out?
+:PROPERTIES:
+:Author: CthulhuIsTheBestGod
+:Score: 6
+:DateUnix: 1488579273.0
+:END:
+
+
+****** I'm mostly left wing, but I have a strong dislike for many people who want roughly the same end result as I do. If you don't mind, could you elaborate on what you wish the world was like? It is part of my world view that people /generally/ have a better shot at happiness if they have a lot of freedom to pursue what they want in most dimensions of life. Big, complicated things like the rules of commerce, environmental policy etcetera do seem to require a government capable of developing and enforcing laws, but on mot issues I tend to default to personal freedom = good. What, if I may ask, do you see life being like in your preferred society?
+:PROPERTIES:
+:Author: Rhamni
+:Score: 1
+:DateUnix: 1488747079.0
+:END:
+
+
+**** Which Communists are you talking about?
+:PROPERTIES:
+:Author: tomtan
+:Score: 3
+:DateUnix: 1488590960.0
+:END:
+
+***** All of them.
+:PROPERTIES:
+:Author: anuddashoah
+:Score: -1
+:DateUnix: 1488594444.0
+:END:
+
+****** Ok, I meant, where do you see communists? The US certainly doesn't have any party in power that are even remotely Communist. In term of traditionally communist countries, China is not really communist anymore (they're still a dictatorship but they don't follow communist principles)...
+:PROPERTIES:
+:Author: tomtan
+:Score: 7
+:DateUnix: 1488646386.0
+:END:
+
+
+*** My standpoint when dealing with leftists has always been "fuck your rights". In my opinion, abstract notions like rights and individual freedom are completely meaningless if we only get to exercise them in the leftist context of post-nationalism, post-race, post-gender, post-sanity society. That context must be denied completely. The western concept of individual rights must be put in the proper moral context of a homogeneous, high-trust, low time preference society. I see no reason why it would apply outside that. Indeed, it seems to me that leftists don't so much try to apply the right-wing idea of individual rights, as use it as a tool to beat people into submission - ie, you're pathological if you don't accept the people's individual rights to ignore national borders, to parade the rectal insertion of foreign objects, to have their mental delusions validated by the law, etc.
+
+Also for your consideration: when your enemies are in power, you might want to hold off on agitating against freedom of speech - or they might just grant your request.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: -12
+:DateUnix: 1488581491.0
+:END:
+
+**** #+begin_quote
+  you're pathological if you don't accept the people's individual rights to ignore national borders, to parade the rectal insertion of foreign objects, to have their mental delusions validated by the law, etc.
+#+end_quote
+
+Sooo... just saying... you've listed three things here. One is asking the state to avoid negative sanction against an action; the last is asking the state to give positive sanction to something. The second, however, has nothing to do with any preexisting role for the state: it's just listing some personal behavior you don't like, and which you presumably want banned.
+
+Of course, nobody thought you were in favor of personal freedoms, since you're arguing against them, but simply presuming everyone else is a "ban the buttsex" fascist deep down doesn't really help you here.
+
+#+begin_quote
+  The western concept of individual rights must be put in the proper moral context of a homogeneous, high-trust, low time preference society.
+#+end_quote
+
+You've given no reason we should actually prefer a homoegeneous society. Trust and long-term thinking are good, of course, but you've shown no causal connection between homogeneity and either of those two things. You're just counting on half the Slate Star Codex comments section to have done that work for you, when the real world doesn't really work out that way.
+
+#+begin_quote
+  the leftist context of post-nationalism, post-race, post-gender
+#+end_quote
+
+You're not really getting us. We don't want to be "post-race" or "post-gender". We deny that those are causally meaningful variables in the first place. It's like saying you want to be a "post-Magic the Gathering" society: sure, the words refer to /something/, but it's something irrelevant and made-up.
+:PROPERTIES:
+:Score: 13
+:DateUnix: 1488585693.0
+:END:
+
+***** #+begin_quote
+  Of course, nobody thought you were in favor of personal freedoms, since you're arguing against them, but simply presuming everyone else is a "ban the buttsex" fascist deep down doesn't really help you here.
+#+end_quote
+
+I'm presuming no such thing, I'm just pointing out how leftists pervert the meaning of "individual rights" through context substitution attacks. The reason I don't support individual rights is because in a leftist society, we don't have them anyway, the idea is only used as a bludgeon to suppress opposition to radical leftist ideas.
+
+#+begin_quote
+  You're not really getting us. We don't want to be "post-race" or "post-gender". We deny that those are causally meaningful variables in the first place.
+#+end_quote
+
+The two are functionally equivalent though. By denying the meaningfulness of race and gender, you're also denying us their demonstrated discriminative power in improving society.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: -5
+:DateUnix: 1488586267.0
+:END:
+
+****** #+begin_quote
+  I'm presuming no such thing, I'm just pointing out how leftists pervert the meaning of "individual rights" through context substitution attacks. The reason I don't support individual rights is because in a leftist society, we don't have them anyway, the idea is only used as a bludgeon to suppress opposition to radical leftist ideas.
+#+end_quote
+
+You're going to have to explain what you even mean by "leftist", since AFAICT we live under late-stage neoliberal capitalism with a proto-fascist government, none of which is "leftist" as I understand the term.
+
+#+begin_quote
+  The two are functionally equivalent though. By denying the meaningfulness of race and gender, you're also denying us their demonstrated discriminative power in improving society.
+#+end_quote
+
+Demonstrated what now? Come on, what demonstration is this?
+:PROPERTIES:
+:Score: 12
+:DateUnix: 1488588756.0
+:END:
+
+******* #+begin_quote
+  You're going to have to explain what you even mean by "leftist", since AFAICT we live under late-stage neoliberal capitalism with a proto-fascist government, none of which is "leftist" as I understand the term.
+#+end_quote
+
+That's because we don't live in the same country. I'm going to concede that the US is slightly less leftist than the worst excesses of inhumanity in Europe, but the society itself is still being fisted by an iron fist of far-left ideals like heterogeneity, homonormativity, enforced equality and toleration.
+
+#+begin_quote
+  Demonstrated what now? Come on, what demonstration is this?
+#+end_quote
+
+The power of exclusion. The idea that we don't owe anyone inclusion in our institutions. When you deny a society the discriminative power of categories like race and gender, you're forcing it into including people in positions that society has previously never considered them to belong in. Even if you disagree about the long-term effects of such a change (and somehow believe it is beneficial on balance), it should still be resisted by the virtue of its forceful implementation alone. Leftism asserts itself against humane societies through the use of force, and I have no problem defending against it using the same.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: -6
+:DateUnix: 1488615512.0
+:END:
+
+******** #+begin_quote
+  I'm going to concede that the US is slightly less leftist than the worst excesses of inhumanity in Europe, but the society itself is still being fisted by an iron fist of far-left ideals like heterogeneity, homonormativity, enforced equality and toleration.
+#+end_quote
+
+Your language here is rubbish. You're treating the low-entropy/high-precision distribution of things you want as default, and then using "leftist" or "far-left" to refer to the high-entropy/low-precision distribution of /everything else/. You're basically just saying, "Everything I don't like is Stalinist".
+
+Look, I know about the use of framing effects in propaganda too, but that's the issue: most people on this sub are going to recognize a framing effect /that obvious/. Maybe you /actually believe/ that whatever you espouse is the natural, passive state of the world before deliberate action fucks it all up, but you can't expect the rest of us to share that expectation.
+
+It's just /polite/ to talk to other people as though we all share the expectation in common that, conditional on no particular action being taken, tomorrow will be roughly like today, and that continuation of the status quo requires no particular action.
+:PROPERTIES:
+:Score: 8
+:DateUnix: 1488637858.0
+:END:
+
+********* To the contrary, it seems obvious to me that a tremendous effort on the part of global semitism is required to maintain the present state of affairs, including indoctrination, manipulation, and active persecution of all counter-semitic narratives. Without semitism, the horrors of leftism would have been wiped out long ago.
+
+#+begin_quote
+  "Everything I don't like is Stalinist".
+#+end_quote
+
+I wish. While a communist and a pretty horrid one at that, Stalin at least had the foresight to kick semitism to the curb instead of courting it like modern leftists.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: -2
+:DateUnix: 1488640657.0
+:END:
+
+********** #+begin_quote
+  global semitism
+#+end_quote
+
+I'm Jewish and what is this?
+:PROPERTIES:
+:Score: 7
+:DateUnix: 1488642338.0
+:END:
+
+*********** The collective interests of the jewish people being pursued in a loosely-coordinated manner. I'm not alleging some kind of global conspiracy, but it's plainly obvious our terminal values don't align and, in many cases, are diametrically opposed. The same is true for our respective peoples.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: -1
+:DateUnix: 1488643926.0
+:END:
+
+************ #+begin_quote
+  The collective interests of the jewish people
+#+end_quote
+
+Since when did all us Jews agree on what's in our interest, especially if you're claiming it diverges heavily from the interests of all other humans?
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1488644074.0
+:END:
+
+************* Beats me, but the overall direction seems to be ethnonationalism for Israel and far-left indoctrination for everyone else.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: 1
+:DateUnix: 1488644348.0
+:END:
+
+************** #+begin_quote
+  ethnonationalism for Israel
+#+end_quote
+
+LOLOLOLOL you think right-wing government is working out well for Israel? Bloody nonsense. They rant and rave about "Jewish values" this and that, meanwhile, the education system is bad enough the country is stuck relying on aliyah for skilled labor.
+:PROPERTIES:
+:Score: 6
+:DateUnix: 1488644534.0
+:END:
+
+*************** Yeah, but that's still ethnonationalism. I mean, Israel is an explicitly jewish state. Importing the world jewry when it suits them is part of that.
+
+Which I wouldn't mind at all, if they were to import all of it and stop imposing semitism on the rest of us.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: 1
+:DateUnix: 1488644950.0
+:END:
+
+**************** You don't seem to get it, but the definition of an ethnicity is a really fluid thing. We may be Jews against the rest of the world, but inside Israel nobody thinks an Ashkenazi, a Mizrahi, and a Russi have the same ethnicity.
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1488646613.0
+:END:
+
+
+**** Yup. You are a fascist.
+
+I'm not...used to hate. I'm not good at it. It doesn't drive me, it only makes me feel like the world is less for it. It doesn't behoove the human condition.
+
+But despite that, despite the fact that it feels like a betrayal of things I hold dear, I hate you. I. Hate. You. The world would be a better place if you and everyone who holds your opinions didn't exist. If you died tomorrow, I would not shed a single tear. Not that I will do anything to ensure that, you understand, as my hate does not drive me, but it is merely a fact that I recognize.
+
+You just threatened everyone in the board with your last sentence. Openly and without irony, you threatened our rights. I consider you and your ilk to be existential risks to humanity. And hate is the only emotion it is appropriate to feel for such things.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 6
+:DateUnix: 1488663611.0
+:END:
+
+***** #+begin_quote
+  Yup. You are a fascist.
+#+end_quote
+
+I support some policies advocated by Fascists, but Fascism overall is too modern for me, I'm more of a traditionalist, and the traditional political options in my country don't include fascism. I do think Fascism makes sense for traditionalists in e.g. Germany, Italy, Spain, etc, but I'm also strongly opposed to globalism or universalism of any kind, so I'm not going to generalize here.
+
+#+begin_quote
+  You just threatened everyone in the board with your last sentence.
+#+end_quote
+
+The guy I was replying to did the same for me, I just returned the favor without feeling guilty. And, as stated above, my default stance against the far-left is "fuck your rights". You don't actually support individual rights except as a bludgeon to be wielded against everything normal, beautiful and productive.
+
+#+begin_quote
+  I consider you and your ilk to be existential risks to humanity. And hate is the only emotion it is appropriate to feel for such things.
+#+end_quote
+
+The feeling is mutual.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: -1
+:DateUnix: 1488664083.0
+:END:
+
+****** Please explain to me how anything I believe risks humanity on a global scale.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 5
+:DateUnix: 1488667218.0
+:END:
+
+******* To give an example, dominant peoples stuck in heterogeneous societies misruled by leftists are said to be paying the "minority tax" - ie, a significant portion of their life's work is dedicated to maintaining the leftist delusions of toleration, heterogeneity, homonormativity, etc. Given the population trends, it's obvious that if leftism isn't kicked to the curb very soon, such a tax will soon dominate our expenditure and completely eclipse more meaningful pursuits. In other words, at some point we'll be faced with the choice between more rectal insertion of foreign objects and more meaningful technical and societal progress. I don't trust postmodern western leftists to make this choice, and I especially don't trust foreign peoples to make it for us.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: -1
+:DateUnix: 1488667803.0
+:END:
+
+******** Substantiate any of the claims you just made with non-bullshit. Also, stop being a racist fuck.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 3
+:DateUnix: 1488678080.0
+:END:
+
+********* I have, and, no.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: -1
+:DateUnix: 1488701001.0
+:END:
+
+
+** Theoretical question-asking...
+
+An asker of questions always must consider the answers that he wants to glean in formulating his inquiries. For an example, let's take a simple question:
+
+#+begin_quote
+  What's your favorite color?
+#+end_quote
+
+This sentence offers up two very obvious ambiguities for our examination.
+
+First, /what do I mean by =color=?/\\
+- Is =white=, =black=, or =gray= an acceptable response, or must the answer have nonzero saturation?\\
+- Speaking of saturation, in what format should the response be delivered--a simple word, an RGB value (decimal or hexadecimal?), a Pantone CMYK reference, or something else?\\
+- Should the queried person respond with a /specific/ color, like =RGB 0 128 0=, or with a /range/ of color, like =green in general= or =bright, highly-saturated green=?
+
+Second, /what do I mean by =favorite=?/\\
+- Speaking of RGB vs. CMYK, /in what context/ is the queried person expected to be thinking of the color? Is this his favorite color in isolation on a computer screen, or on someone else's car that he sees on the road, or on his own car, or on his casual polo shirts?\\
+- Must the receiver provide a /reason/ for his preference ("I like green because I like forests and tree frogs."), or can he merely say "I like green." and have done?
+
+In this specific case, since all these clarifications change the meaning of the question only slightly, my opinion is that the most economical course of action is merely asking:
+
+#+begin_quote
+  What's your favorite color? Be detailed.
+#+end_quote
+
+However, not all questions can be wrapped up so nicely. I recently had the pleasure of [[http://np.reddit.com/r/CringeAnarchy/comments/5vpocy/neckbeard_doesnt_like_parties/de4f6np][receiving]] the /hilariously/-vague question:
+
+#+begin_quote
+  Who's your perfect girl?
+#+end_quote
+
+I chuckled when I saw it!\\
+- Does =girl= mean =child= (offspring, or subject of babysitting?) or =romantic partner= (or is the asker implying with such a belittling word that the person would be my /vassal/ rather than my /ally/ in the relationship?)?\\
+- By using =is= rather than =would be=, is the enquirer asking me to describe a current /real-life/ object of greed rather than a /hypothetical/ person?
+
+In the past (IIRC), I've posed the inquiry "Describe your ideal long-term romantic partner.", which obviously is /far/ more specific.
+
+--------------
+
+Randomly-placed points are fun. Triangulations are fun. Spheres are fun. [[http://i.imgur.com/dFCNy0h.png][What happens when /all three components/ (plus a few haphazard edges and the Mercator projection, for some /extra/ spice) are /combined?/]]
+
+--------------
+
+[[http://i.imgur.com/ryNr7l7.png][Google Keep is a cute little program.]]
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 8
+:DateUnix: 1488560469.0
+:END:
+
+*** Referring to [[https://i.imgur.com/XqSk7fP.png][this]] thread, I too have little to no social skills and I can count on one hand the number of close friends I have. Tbh I find your capacity to refuse a drink with friends pretty admirable.
+
+I rarely refuse myself in the hope that I might finally find it fun or to explore what "normal" people do in their free time. And so far I always ended up really bored wishing I'd stayed back home. I sometimes feel like I should stop trying to change and just tell people to fuck off like you did. Telling people my opinion on why drinking and parties are stupid is also something I'd never do but would absolutely love to.
+:PROPERTIES:
+:Author: Magodo
+:Score: 3
+:DateUnix: 1488566004.0
+:END:
+
+**** #+begin_quote
+  Telling people my opinion on why drinking and parties are stupid is also something I'd never do but would absolutely love to.
+#+end_quote
+
+I'll bite -- why do you think drinking and parties are stupid? I've encountered the "drinking is dumb" thing in this and adjacent communities a fair bit, but then in my day-to-day life it seems drinking is popular all through the upper reaches of accomplishment/intelligence/scientific aptitude/etc. (maybe not independently of wealth, though -- usually those people are into the expensive craft beer scene, or own a vineyard, or fancy sipping their many-decades-aged scotch in the evenings, or w/e). A love of social events/dinner parties goes pretty hand-in-hand here, too (though with obvious sampling bias, of the sort where you ask "why are so many of my friends more popular than me?").
+
+A short while back I came up with a quick list of reasons why I'll personally consume alcohol, in no particular order:
+
+1.  It's found in a variety of tasty beverages (and occasionally foods, e.g. in sauces). In beverage form it can enhance the taste of certain foods
+2.  In mild-moderate doses it has pleasing psychoactive qualities, i.e. a pleasant buzz
+3.  It can serve as a social lubricant through direct modification of your attitude and personality
+4.  It can serve as a social lubricant by giving you a common ground with which to connect with someone, owing to its immense popularity -- e.g. you can talk about the production or history of wine-making, or what flavors you like and dislike, etc.
+5.  It's historically and culturally important in many places and you can get a deeper appreciation of a place by sampling its drinks (e.g. by going on a tasting tour and exploring the history of wine-making in France or beer in Belgium or something, never mind local scenes)
+6.  Mild consumption might be good for you, or it's at least associated with decreased mortality (a classic "j-shaped curve" is borne out in a lot of studies; e.g. [[https://www.ncbi.nlm.nih.gov/pubmed/17159008]]). Probably confounded, but there are plenty of plausible mechanisms
+7.  It's something to do while bored which will make you less bored (e.g. at a noisy house party it lowers your threshold for entertainment -- flailing around on the dance floor is more fun while tipsy; related to the pleasing psychoactive qualities mentioned above)
+8.  Its consumption is traditionally a symbolic/ritualistic behavior in a lot of circumstances (e.g. celebrations), and there are a lot of benefits to consistent tradition and ritual
+9.  A lot of people like it, and to some you'll stand out -- not necessarily in a good way -- if you don't. There's a social stigma against not drinking, and failing to conform may rob you of some ability to resist social pressure elsewhere
+10. Many activities and games become more challenging while under the influence, so it's a good way to handicap yourself if something's become too easy -- e.g. in drinking games
+11. It can be fun to prepare alcoholic drinks and experiment with different combinations of flavors in the same way that it's fun to cook or draw or make anything else -- it can serve as an outlet for artistic expression
+12. More an absence of a - than a +, but you can easily lessen the unpleasant effects of alcohol consumption (e.g. hangovers) by drinking in moderation, staying well hydrated, not drinking on an empty stomach, getting a full night's sleep, and maybe taking a multivitamin/mineral supplement
+
+As for parties, I've found it /really/ depends on the sort of party you're going to. I attended dozens of house parties in undergrad and soon realized that the sorts of 50+ person parties where you stand around trying to talk over extremely loud music while nursing a beer were not for me, but that I quite enjoyed parties where I could join a smaller group engaged in lengthy discussion, with some quiet sounds serving as a background, with the occasional pre-planned activity (e.g. board games, video games, movies, dinner -- usually potluck style, and so on) to break up the evening.
+:PROPERTIES:
+:Author: captainNematode
+:Score: 6
+:DateUnix: 1488570319.0
+:END:
+
+***** Not the person to whom you replied, but:
+
+#+begin_quote
+  I'll bite -- why do you think drinking and parties are stupid?
+#+end_quote
+
+See my second reply [[http://i.imgur.com/XqSk7fP.png][here]].
+
+#+begin_quote
+  1
+#+end_quote
+
+I doubt that any alcohol-containing food would taste better than my favorite meal, General Tso's chicken.
+
+#+begin_quote
+  2
+#+end_quote
+
+I don't like the idea of making myself stupider on purpose, even if only temporarily.
+
+#+begin_quote
+  3
+#+end_quote
+
+I don't see the point of making myself more social only temporarily.
+
+#+begin_quote
+  4
+#+end_quote
+
+Liking the background of a beverage and liking the beverage itself are two separate items. I like General Tso's chicken, but I /definitely/ wouldn't care if someone came up to me and started rambling about the history of Chinese-USAian recipes.
+
+#+begin_quote
+  5
+#+end_quote
+
+(laughs) I've traveled to enough places to know that I don't enjoy traveling. Being vaguely interested in something that the place contains (and, again, being interested in a drink's background differs immensely from being interested in the drink itself) definitely isn't enough to entice me.
+
+#+begin_quote
+  6
+#+end_quote
+
+(shrugs) Point.
+
+#+begin_quote
+  7
+#+end_quote
+
+If I'm bored, I can think about programming or video games or /Naruto/ fanfiction instead.
+
+#+begin_quote
+  8
+#+end_quote
+
+(shrugs) Point.
+
+#+begin_quote
+  9
+#+end_quote
+
+The only thing worse than being talked about is not being talked about, 'ttebayo.
+
+#+begin_quote
+  10
+#+end_quote
+
+See 2.
+
+#+begin_quote
+  11
+#+end_quote
+
+I already make [[http://i.imgur.com/dFCNy0h.png][art]] through [[https://toakraka.neocities.org/2017-02-27/DelaunayRNGSpherical.pde.txt][programming]] (and [[https://www.fanfiction.net/u/4098737][fanfiction?]]).
+
+#+begin_quote
+  I quite enjoyed parties where I could join a smaller group engaged in lengthy discussion
+#+end_quote
+
+Finding and following an interesting thread on Reddit or the Paradox modding forums is /much/ easier than searching for an interesting conversation IRL.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 2
+:DateUnix: 1488581585.0
+:END:
+
+****** FYI: I notice a pretty huge different in experience between normal beers (budweiser, etc) and "fancy" beers (allagash, three philosophers...).
+
+I generally find one fancy beer to be excellent for thinking, in basically the same way as it's a social lubricant - thoughts slide around real easily, and I don't censor my internal thinking as much / at all. Prior to discovering fancy beers, beer never resulted in a good thinking experience for me. YMMV.
+:PROPERTIES:
+:Author: narfanator
+:Score: 2
+:DateUnix: 1488583131.0
+:END:
+
+
+****** Fair enough! I'd initially written those points in response to someone asking why /anyone/ might want to consume alcohol, so they're certainly particular to my own motivations.
+
+#+begin_quote
+  I doubt that any alcohol-containing food would taste better than my favorite meal, General Tso's chicken.
+#+end_quote
+
+Eh. Foodspace (and drinkspace) is large. I did look it up, though, and [[https://en.wikipedia.org/wiki/General_Tso's_chicken#Recipes][wikipedia]] tells me that /traditional basic ingredients [for Tso's Chicken] include: sauce: soy sauce, rice wine, rice wine vinegar, red pepper flakes/... though all the alcohol might be boiled off by the end. Still, de gustibus non est disputandum and all.
+
+#+begin_quote
+  I don't like the idea of making myself stupider on purpose, even if only temporarily.
+#+end_quote
+
+That's typically incidental to the main effect, though, which to me is more sort of a warm, friendly inner glow which can complement similar feelings from other sources (e.g. after a long day of intense hiking/biking, cuddling up with my partner and dog on the couch watching a movie with a cold beer in hand... the slight buzz only serves to enhance the experience). And your cognitive abilities aren't /that/ impaired at that point (6-12 drinks in, sure, but after 1 you can still hold plenty sophisticated discourse)
+
+#+begin_quote
+  I don't see the point of making myself more social only temporarily.
+#+end_quote
+
+Is it because of the /social/ part or the /temporary/ part? Because of course most everything's temporary, in the end.
+
+#+begin_quote
+  Liking the background of a beverage and liking the beverage itself are two separate items. I like General Tso's chicken, but I definitely wouldn't care if someone came up to me and started rambling about the history of Chinese-USAian recipes.
+#+end_quote
+
+Ah, this'd be another one of the "subject to personal preference" bits. I love knowing the history of a place or a thing, it definitely stimulates my enjoyment of it -- to use a nerdier e.g., I might like a sword because it looks cool and is sharp or w/e, but if you tell me the story of how some poor blacksmith discovered a new forging technique that enabled that sharpness, which revolutionized armed combat because now the sword could puncture previously impenetrable armor, etc. I'd certainly appreciate the sharpness more.
+
+#+begin_quote
+  If I'm bored, I can think about programming or video games or Naruto fanfiction instead.
+#+end_quote
+
+Ah, but social obligation dictates that one has to stay for another two hours and it's too noisy to think about those things! Whatever will one do!
+
+#+begin_quote
+  The only thing worse than being talked about is not being talked about, 'ttebayo.
+#+end_quote
+
+To make an implication a bit more explicit -- being social serves plenty of instrumental goals too, e.g. in closing business deals over drinks, connecting with your coworkers and boss after work (thereby facilitating promotion/career advancement), networking with strangers to open up opportunities down the line, even interviewing for new positions (e.g. in my experience in academia it's common to take applicants out for dinner/drinks after they give their job talk). It doesn't have to just be for the pleasure of others' company and can be thought of as a skill as any other.
+
+#+begin_quote
+  I already make art through programming (and fanfiction?).
+#+end_quote
+
+Neat! I take it there's some algorithm that generated that expanding jaggy soap bubble picture?
+
+As for the response in the email thread, I think it's subject to what sorts of gatherings you're attending.
+:PROPERTIES:
+:Author: captainNematode
+:Score: 2
+:DateUnix: 1488584552.0
+:END:
+
+******* #+begin_quote
+  /traditional basic ingredients [for Tso's Chicken] include: rice wine/
+#+end_quote
+
+I expect that a restaurant would have to ask for my ID before giving an alcohol-containing meal to me.
+
+#+begin_quote
+  Is it because of the /social/ part or the /temporary/ part?
+#+end_quote
+
+The latter. I see little value in temporary camaraderie, as opposed to [[http://pastebin.com/q016vjxE][long-term relationships]].
+
+#+begin_quote
+  being social serves plenty of instrumental goals too
+#+end_quote
+
+[[https://en.wikipedia.org/wiki/Personal_income_in_the_United_States][I feel rich enough for now.]]
+
+#+begin_quote
+  I take it there's some algorithm
+#+end_quote
+
+Primarily, [[https://en.wikipedia.org/wiki/Relative_neighborhood_graph][the relative neighborhood graph]] (which is what =RNG= stands for in [[https://toakraka.neocities.org/2017-02-27/DelaunayRNGSpherical.pde.txt][the linked code]]), in addition to [[https://en.wikipedia.org/wiki/Great-circle_distance][spherical geometry]] and [[https://en.wikipedia.org/wiki/Mercator_projection][the Mercator projection]].
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 2
+:DateUnix: 1488585656.0
+:END:
+
+******** #+begin_quote
+  I expect that a restaurant would have to ask for my ID before giving an alcohol-containing meal to me.
+#+end_quote
+
+Depends on where you are -- I don't think I've been carded for alcohol at a restaurant since I was 18-19 (in the US, too, and for beer/wine/mixed drinks). If you're going to hole-in-the-walls I doubt they care, especially for alcohol in food and not beverage form.
+
+#+begin_quote
+  The latter. I see little value in temporary camaraderie, as opposed to long-term relationships.
+#+end_quote
+
+But long-term relationships have to start somewhere, e.g. you meet over small-talk at a party.
+
+#+begin_quote
+  I feel rich enough for now.
+#+end_quote
+
+Eh, not all promotions are about money (though I feel most anyone could use more of it, at least for future security). You could also negotiate to work fewer hours, take on more interesting projects, etc.
+
+#+begin_quote
+  Primarily, the relative neighborhood graph (which is what RNG stands for in the linked code), in addition to spherical geometry and the Mercator projection.
+#+end_quote
+
+Nice!
+:PROPERTIES:
+:Author: captainNematode
+:Score: 2
+:DateUnix: 1488586368.0
+:END:
+
+
+******** #+begin_quote
+  I expect that a restaurant would have to ask for my ID before giving an alcohol-containing meal to me.
+#+end_quote
+
+I might be wrong, but a brief bit of googling says that food items that don't contain a substantial amount of alcohol are legal to have for anyone, no matter your age.
+:PROPERTIES:
+:Author: gbear605
+:Score: 2
+:DateUnix: 1488678150.0
+:END:
+
+
+**** So, skimmed that thread, and: You're doing it wrong, because: In the same way they're confused that you don't enjoy [ACTIVITY], you're confused that they /do/ enjoy [ACTIVITY]. The "doing it wrong" comes from attacking them over it. Humaning protip: If you find yourself attacking someone, you're doing it wrong.
+
+Better to go "nope, not interested, have fun." and leave it at that. If pressed, sure, explain why YOU don't like it... but don't explain it as if they shouldn't like it either... although on the gripping hand, that thing there one voice of dissent lets other dissent is probably a good thing.
+
+In terms of JUST exploring what "normal" people do... Most of the time it's dull AF. But the act of going out for a drink isn't what makes it boring, it's what the people who're doing it end up talking about. I have had amazingly deep and meaningful conversations in all kinds of "normal" and "crazy" situations.
+
+Which part of the world are you in? I may be able to point you at some people.
+
+A somewhat harder but way more liberating thing to do is to just start doing the thing that interests you, and DGAF when people run away because they're not interested. Want to talk about rationality? Just start talking about it. Want to make something? Start making something.
+
+Note: It's definitely harder to, say, pull out a laptop and start coding at most parties, but still doable, and you may find a kindred soul that way.
+:PROPERTIES:
+:Author: narfanator
+:Score: 4
+:DateUnix: 1488573630.0
+:END:
+
+***** #+begin_quote
+  You're doing it wrong
+#+end_quote
+
+You're replying to the wrong person. I, not Magodo, was the perpetrator of that incident.
+
+#+begin_quote
+  Humaning protip: If you find yourself attacking someone, you're doing it wrong.
+#+end_quote
+
+[[http://starwars.wikia.com/wiki/Yuuzhan_Vong][Yuuzhan-Vong]]ing protip: If you find yourself attacking someone, you're doing it enjoyably and/or cathartically.
+
+#+begin_quote
+  But the act of going out for a drink isn't what makes it boring, it's what the people who're doing it end up talking about.
+#+end_quote
+
+That seems like /far/ too much work when I can just post here and get such (You)s as this.
+
+#+begin_quote
+  Which part of the world are you in?
+#+end_quote
+
+The southwestern edge of [[https://en.wikipedia.org/wiki/New_York_metropolitan_area][the New York Metropolitan Area]].
+
+#+begin_quote
+  A somewhat harder but way more liberating thing to do is to just start doing the thing that interests you, and DGAF when people run away because they're not interested.
+#+end_quote
+
+And [[http://np.reddit.com/r/rational/comments/5xasve/d_friday_offtopic_thread/degqnn2][what]] have [[http://np.reddit.com/r/rational/comments/5vxxz2/d_friday_offtopic_thread/de5vovd][I]] been [[http://np.reddit.com/r/CringeAnarchy/comments/5vpocy][doing]] /here,/ if not that?
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 1
+:DateUnix: 1488580544.0
+:END:
+
+****** I mean, sure - those are all good points! It's working for you. How would you tell if you're in a local maxima?
+
+(My best bet would be job related - I've gotten 3 out of 4 of my jobs socially, and they've all been better than the one I got "normally".)
+
+The point I'm trying to make is that like with everything, the people are more important than the activity - so to @Magodo, it sounds like you just need to go after different people, not different activities with the same people.
+:PROPERTIES:
+:Author: narfanator
+:Score: 2
+:DateUnix: 1488582837.0
+:END:
+
+
+**** #+begin_quote
+  Tbh I find your capacity to refuse a drink with friends pretty admirable.
+#+end_quote
+
+It's easier when you probably will never have to interact with them again (except at the pointless graduation ceremonies that your parents make you attend)! ;-)
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 2
+:DateUnix: 1488580731.0
+:END:
+
+***** FYI: Top regret is not doing the networking thing in college... but I also didn't choose my college for the networking, nor want to stay in the region of the world where I went to college.
+:PROPERTIES:
+:Author: narfanator
+:Score: 1
+:DateUnix: 1488582886.0
+:END:

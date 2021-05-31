@@ -1,0 +1,146 @@
+#+TITLE: Primer boxes as a case study in fictional physics
+
+* Primer boxes as a case study in fictional physics
+:PROPERTIES:
+:Author: want_to_want
+:Score: 13
+:DateUnix: 1428937825.0
+:END:
+If you haven't seen "Primer", watch it. IMO it's the best nerd movie in existence.
+
+The boxes work like this:
+
+- Switch it on at 10am. While it's starting up, go away somewhere.
+
+- Come back to the box at 5pm and switch it off. While it's winding down, get inside it. Don't forget to take an oxygen tank with you.
+
+- Wait inside for 7 hours, then get out of the box. You have travelled back in time to 10am, at a speed of -1 minute per minute.
+
+At first it seems like an exceptionally nice model of time travel. The main advantage over the standard "portals" model is that you don't end up in outer space due to the Earth's orbital motion. You stay on the Earth, because you're just backtracking along with the box, and the box travels with the Earth.
+
+Since the model was a bit underexplored in the movie, I started thinking about writing my own fanfic, with the tentative title "Bob and Brian Build a Box". And then the questions started piling up. I will just dump them all here, both the solved and unsolved ones, in the hope that some of you are better at fictional physics than me. Let's go!
+
+- Are the boxes "editing" a single timeline, or creating new branches? The movie's characters seem to believe the former, but that seems impossible to reconcile with their using two separate boxes to travel together. I can only conclude that we have a branching timeline model, and Aaron actually abandoned his family in multiple timelines :-(
+
+- That said, how does branching work? Let's say I precommit to this strategy: "If I see myself coming out of the box, then climb inside with probability 10%, otherwise climb inside with probability 90%". Then the only consistent outcome is that I see myself coming out with probability 50%. After some thought, I think I've proved a theorem that any such complicated precommitment scheme (with multiple boxes, etc.) allows a unique consistent set of probabilities over the different possible timelines. I won't post the proof here, because the margins are too small.
+
+- In the branching scheme described above, we have a nice property called "conservation of probability". For example, if you come from a timeline in which you saw some horrible disaster, and now you want to prevent that horrible disaster, then the total "probability thickness" of timelines where you succeed can't be larger than the "thickness" of timelines where the disaster occurred in the first place.
+
+- At some point in the movie, Aaron and Abe are trying to figure out if Granger is inside one of their boxes, which is currently running. They debate opening it and checking what's inside, which seems scary at first. But actually I think that we can still have consistent probabilities over outcomes, even if you're allowed to open boxes at any time, both from the outside and from the inside! The reason is that opening a box from the outside is isomorphic to using a box with a shorter timespan, and I think the same holds for opening it from the inside.
+
+That conlcudes the questions that I've figured out so far. What follows is much more tentative.
+
+- Can you figure out if someone is inside the box by putting it on a scale?
+
+- Let's get serious about conservation of mass. Imagine the box weighs 30kg. You switch it on, and a 80kg human climbs out. Does the box weigh -50kg now? Does it float to the ceiling?
+
+- Let's get even more serious about conservation of mass. To avoid the previous problem, let's say the box weighed 100kg when empty. After Bob climbs out, it weighs 20kg. Time passes, we switch the box off, but Bob doesn't climb in! Instead we invite Susan, who weighs 50kg. Now the box weighs 70kg just before switching off, and 100kg immediately after (because it's an empty, inert piece of equipment). It looks like conservation of mass is not salvageable!
+
+- Let's drop conservation of mass, and assume that the box reverts to its empty mass whenever it's closed. But every action has an opposite reaction. While you're lying inside the box, how exactly are you feeling the Earth's gravity? Or are you floating inside? What other effects aren't you feeling? What about temperature?
+
+It looks like abandoning conservation of mass leads to a slippery slope, whose endpoint is the old "portals" model of time travel. That feels unsatisfying. Is there any way to save the model?
+
+
+** [[/u/sam512]], who wrote /Fine Structure/ and /Ra/ among other things, has a fantastic breakdown of [[http://qntm.org/coffin][Time Travel in Primer]] (also, [[http://qntm.org/commentary][a fan commentary]] that's quite good). I believe that Sam's interpretation is the correct one.
+
+There's a bit of fuzziness to the Primer model that I'm not sure that you can easily solve. How outside physics interacts with the box is one big question mark - obviously they still experience gravity, and presumably the flimsy box would be blown apart by the vacuum if they didn't experience outside air pressure, but it's not clear how this actually works from a physics perspective. For the purposes of the story, it's unimportant. If I were writing /Primer/ fanfic, it would probably be played for horror - they don't really understand how the box works, only that it does, but the temptation to go back in time and make millions overwhelms the caution that they should be feeling (which gets compounded with the shaking hands and bleeding noses).
+
+If you allow that the box can be weighed to see what's in it, you're going to run into the "problem" that you don't really need to travel back in time at all; you could just send information in the form of throwing some weights into the thing. (Alternately, they could have built a simple robot that opens up the door at the correct time and outputs stock information at point A that they put in at point B - again, without any danger to themselves aside from the existential questions. From there it just becomes [[http://thingswhichborepeople.blogspot.com/2010/01/exploiting-multi-universe-time-travel.html][exploiting multiple universe time travel]] the old-fashioned way.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 8
+:DateUnix: 1428945845.0
+:END:
+
+*** /"This would not rupture the timeline or anything stupid like that, but it would mean that there are two Aarons in this timeline. Permanently. And only one identity between them."/
+
+I could definitely live with that outcome.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 3
+:DateUnix: 1428947530.0
+:END:
+
+**** It depends. On the one hand - sure, having a friend that you can trust completely, and who shares you expertise and expenses without adding much in the way of costs sounds awesome. But on the other hand, you'd have to start worrying about being found out. You have a time machine, and you have to keep it quiet unless you want to /immediately/ be subject to irregular rendition. Time travel, even the relatively restricted time travel used in the movies, is way too powerful for anyone to know about it, unless you have significant leverage first.
+
+(Living with a double doesn't work for Abe and Aaron, because they're the sort of people who can't self-cooperate.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1428948244.0
+:END:
+
+***** You have a time machine. This gives you near-godlike ability to predict the future by careful use of automated devices and the small primer boxes. You can either use a long-range box as a dead man switch, or a bunch of short-range boxes with automated relays so you can view the data stream at any time.
+
+Sure, you might end up with a bunch of versions of yourself that suffer from bad outcomes, but that happens anyway, even without time machines.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1428949195.0
+:END:
+
+
+*** Yeah, I'm very familiar with Sam's writeup. The first half of my writeup covers most of it, I think, and goes slightly further by specifying probabilities and describing (indirectly) what happens if you open the box midway through the trip.
+
+Your writeup on exploits is also quite good. It looks like we can prevent disasters with near certainty. Also, you could use the device as a sort of generalized "outcome pump". Let's say you're facing a difficult situation where you have to answer 100 yes/no questions correctly. Ordinarily you'd have a 2^{-100} chance of succeeding, but with a time machine you can raise that to near certainty, by doing an exhaustive search (using a 100-digit binary number as a counter) and then looping the right answer. That can help you solve many kinds of problems, like convincing the gatekeeper to let you out of the box :-)
+
+The big problem to me is, indeed, the physical interactions at the boundary. It's hard to imagine that any inventor would be uninterested in such questions.
+:PROPERTIES:
+:Author: want_to_want
+:Score: 1
+:DateUnix: 1428953272.0
+:END:
+
+**** #+begin_quote
+  Ordinarily you'd have a 2^{-100} chance of succeeding, but with a time machine you can raise that to near certainty, by doing an exhaustive search (using a 100-digit binary number as a counter) and then looping the right answer.
+#+end_quote
+
+That only works if there's a less than 2^{-100} chance of failure. Otherwise, your system will fail before reaching the correct answer.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 2
+:DateUnix: 1428994960.0
+:END:
+
+
+** #+begin_quote
+  Can you figure out if someone is inside the box by putting it on a scale?
+#+end_quote
+
+No, and in fact the original motivation for building the box was to invent an anti-gravity device. Anything in the box has no mass and no weight. That's what they thought it was before they realised it could be used as a time machine.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 5
+:DateUnix: 1428964388.0
+:END:
+
+
+** I have yet to see this movie -- I really need to get around to that soon! But I wanted to mention, you may enjoy this writeup on qntm, if you haven't already read it: [[http://qntm.org/primer]]
+:PROPERTIES:
+:Author: wnp
+:Score: 3
+:DateUnix: 1428944626.0
+:END:
+
+*** Oh god, you have to see it.
+:PROPERTIES:
+:Author: mycroftxxx42
+:Score: 2
+:DateUnix: 1429225858.0
+:END:
+
+**** I think it's either on Netflix or on Amazon Instant Video (Prime) now, so I really have no excuse!
+
+I feel like it's the sort of movie I can't multitask during. Need to allocate some time to /just/ be doing that.
+:PROPERTIES:
+:Author: wnp
+:Score: 1
+:DateUnix: 1429282993.0
+:END:
+
+***** You need to allocate some multiple of the length of the film. Watch it once, then watch it again, then finally have a semblance of a clue for the third viewing...
+:PROPERTIES:
+:Author: maaku7
+:Score: 1
+:DateUnix: 1429436581.0
+:END:

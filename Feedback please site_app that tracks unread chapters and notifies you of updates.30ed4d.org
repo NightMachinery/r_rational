@@ -1,0 +1,284 @@
+#+TITLE: Feedback please: site/app that tracks unread chapters and notifies you of updates
+
+* [[https://moqups.com/seanhess@gmail.com/lWdRvm81/p:add02be6d][Feedback please: site/app that tracks unread chapters and notifies you of updates]]
+:PROPERTIES:
+:Author: el-seed
+:Score: 6
+:DateUnix: 1427393787.0
+:END:
+
+** [deleted]
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1427403042.0
+:END:
+
+*** You're the creator of RationalReads? Cool, nice work!
+
+So, for this to work, I think it's important to notify people of new updates without much delay. That rules out crowdsourcing, no matter how we encourage people. The next option would be to pay mechanical turk to do it.
+
+But I'm more programmer than anything else, so I'm leaning towards scraping the books' websites or RSS feeds. Most books I've found are either blogs, plain websites, or a publishing platform of some kind. I should be able to write one scraper /per type/, and re-use it for multiple books. For example, the same one can handle all 3 of wildbow's books. I can write another for anything on fanfiction.
+
+I'll probably have these run every 5 minutes, and maybe make myself a little list of things that changed so I can check for errors once in a while.
+
+Not to worry any potential authors: I'm not planning on scraping the sites /content/, just scanning for new entries and linking to them.
+:PROPERTIES:
+:Author: el-seed
+:Score: 3
+:DateUnix: 1427406226.0
+:END:
+
+**** [deleted]
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1427423298.0
+:END:
+
+***** I will! I'll probably start hacking next week sometime. What are you best at?
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1427478137.0
+:END:
+
+****** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1427501317.0
+:END:
+
+******* Hi Amit,
+
+I finally have the very early first draft up.
+
+Source code is here: [[https://github.com/seanhess/serials]]. It's written in Haskell and React.js. I'd love some help on the front-end, and react isn't that hard (in many ways it is easier than Backbone). I can help you learn if needed too. One simple thing to start would be to make our user-facing side responsive.
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1430069986.0
+:END:
+
+******** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1430692604.0
+:END:
+
+********* Hi Amit, the site is ready for you to use it and give me feedback. PM me your email address and I'll send you a beta invite?
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1433532401.0
+:END:
+
+
+**** I like your idea of only needing to build a data scraper/importer for each author (or platform). I especially like it because that's what I get paid to do right now and that's the approach my company takes.
+
+If any of the following pieces of jargon sound relevant, I'd be delighted to take a stab at helping you out: ASP .NET, MVC, jQuery, PHP, XML, MySQL, SQL Server
+
+Also, you might want to look at the work done by [[https://haveibeenpwned.com/]] and the technical blog posts of how the site runs on a tiny budget while providing real-time alerts based on scraping Twitter, Pastebin, and other sources.
+:PROPERTIES:
+:Author: zian
+:Score: 1
+:DateUnix: 1427611426.0
+:END:
+
+***** Cool thanks! Probably going with a Haskell backend and React front end. I'll post when I have a repo worth sharing
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1428770043.0
+:END:
+
+
+***** Source code: [[https://github.com/seanhess/serials]]
+
+It's written in Haskell and React.JS. If you're interested in learning either of those I'd love the help!
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1430070062.0
+:END:
+
+
+***** Hey zian, would you like a beta invite? I'm ready to invite a few people to try it out. Like 10 ;) PM me your email.
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1433532441.0
+:END:
+
+
+** Just to give you a heads-up, fanfiction.net in particular seems to frown upon people scraping their site. A friend of mine used to have a site that periodically (twice a day) pinged FF.net about a user-selected list of fics and generated an RSS feed of updates. It worked for a while, then they started blocking it.
+:PROPERTIES:
+:Author: turbinicarpus
+:Score: 3
+:DateUnix: 1427710997.0
+:END:
+
+*** Thanks for the heads up. I'll have to figure something out then :(
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1428761589.0
+:END:
+
+
+** NOTE: See the clickable prototype above. Click links to get an idea for how the site might work
+
+So there are lots of great books being published. There are many publishing platforms, but many of the best authors like to control their content. It's super annoying to try to keep up with serial fiction. It would be nice if there were an app you could launch that would show you which books have chapters you can read. Like the podcast app, but for fiction.
+
+The idea is to create a site and mobile app that make it easy to subscribe to books anywhere on the intertubes.
+
+Features:
+
+- keep track of which chapter you are on
+- notify you when new chapters are posted
+- works no matter where the book is published
+- directly links to author's content
+- some kind of discovery of new books (although this isn't the main focus)
+
+My main questions:
+
+- Do you usually read on your computer, tablet or phone?
+- Would this be useful to you?
+- What other ideas does this give you?
+:PROPERTIES:
+:Author: el-seed
+:Score: 2
+:DateUnix: 1427393934.0
+:END:
+
+*** Oh hey---I was thinking about doing just this site/app. Except, with the subscriptions costing money.
+
+To put it another way, it makes sense to have something like [[http://www.amazon.com/b?node=5044445011][Kindle Serials]] as its own app, with an extremely low barrier to entry for indie authors. You go to someone like Wildbow, and say "just publish your new chapters on /this/. It's as easy as posting them to a blog. You can still publish them online for free; just maybe do it a week/month later, if you want a healthy profit margin." (Heck, maybe the app itself lets you make them free-after-some-period and gives you automatic blog-like hosting for those "freed" chapters, too.)
+
+Or, put a third way: webcomics, podcasts, "web-original serial novels", /and/ whatever-the-heck-you-call things like Homestuck could all be making money, from every consumer, every time they update, instead of their producers having to get majorly distracted by running merch stores and doing Kickstarters for compilation books and doing live tours and so forth. All that's standing in the way of it is that there's no app (or no marketplace, rather) for that.
+
+If I had a program on my phone that served as an inbox for new chapters of graphic novels, audio novels, text novels, mini-HTML5-game novels, etc. that program would account for half my phone usage. (Technically, this is what iOS's Newsstand is /supposed/ to be about. Bad marketing and the need to /make an app/ just to show users you content, killed it for the regular indie content-creator, though.)
+
+And you know what'd be the neat-est part? A given serial could actually be /part/ podcast, /part/ text, /part/ graphic novel, etc. And it'd understand exactly where you're bookmarked in the whole mess.
+:PROPERTIES:
+:Author: derefr
+:Score: 1
+:DateUnix: 1427407770.0
+:END:
+
+**** These are fantastic ideas. I totally agree about the need for a marketplace and helping authors get paid more easily. I /love/ the idea of mixed content.
+
+I got onto the above version of the idea after talking to wildbow on the phone. He told me that good authors are extremely skeptical of backing a platform before it's been proven, and it never gets proven without any good content.
+
+So I had the idea to index content no matter where it is. Hopefully this gets people using the experience, and it could transition into being a trusted for-the-people publishing platform. The hardest part is figuring out the pricing model for authors who haven't opted in yet.
+
+We could make all subscriptions cost, and try to hunt down the authors and hand them money, but I have the feeling that Wildbow wouldn't like that. Or they could be free until the author opted in, and we could do the delayed thing. Or any subscription could be free and there could be some other path to helping the authors get paid.
+
+Any thoughts?
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1427408670.0
+:END:
+
+***** #+begin_quote
+  We could make all subscriptions cost, and try to hunt down the authors and hand them money, but I have the feeling that Wildbow wouldn't like that.
+#+end_quote
+
+On the upside, this is the Soundcloud model (take users' money for something the author isn't even aware is happening, then try to get the money to the author), and, surprisingly, it worked out for them.
+
+On the downside, this is also, somewhat, the GetSatisfaction model: pretend to be an official channel for the author to communicate with people (that the author isn't even aware of), let users form opinions of it based on the author's continued lack of engagement, and hold the ability to actually engage with the users hostage until the author signs up for your platform (potentially investing time or even money.) GetSatisfaction got their brand heavily tainted by the negative reactions to this "canonical-source spoofing" effect.
+
+I would suggest something slightly different, and more in line with the Google Books model: take online works and try to figure out their effective licensing. If the license is permissive (e.g. an explicit CC-BY-SA), you can "syndicate" their work for them on your platform wholesale. Otherwise, just do 99% of the work---scrape their data, chew it up into Chapter model-instances, stick their work's logo in the corner---to set up their work, but put the result in a "private" or "pending" mode where only users with the URL can browse it. Then send them an email that:
+
+1. asks them /permission/ to republish their work; and
+
+2. contains a (one-time-token) link which drops them into the management dashboard of their constructed, pending work, creating a temporary user in the process that they can then register to retain the work.
+
+Effectively, if the author reads the email and clicks the link, they should be one big fixed-top-banner "Publish" button-press away from enabling the channel. Or they could delete it all and you'd never bother them again.
+
+You might also want to figure out a way to get the kind of authors you want to target signed up for some sort of drip email campaign that teaches them stuff about self-publishing, and eventually says "and you get all that complex stuff handled for you if you just sign up for [service]." The emails would have to be valuable in-and-of-themselves, of course---teaching things like how to properly batch your updates into consumables so users anticipate them rather than thinking "eh, I'll read it later", etc.
+
+ETA: Also, maybe give users a way to see that a pending work exists in some sort of "[potentially] upcoming works" list, and like/upvote that work in the list. That way, when the author hits the dashboard, they'll get a numerical representation of the interest of people on the platform in consuming their work through the platform.
+:PROPERTIES:
+:Author: derefr
+:Score: 2
+:DateUnix: 1427418186.0
+:END:
+
+
+***** More thoughts: What about pay-what-you-want with a minimum as the default model for subscriptions. If an author hasn't opted in, don't collect any money, but DO let readers offer it. Then you can email an author and say: "If you opt in, you'll get $X".
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1427409671.0
+:END:
+
+****** I don't think you want to encourage pay-what-you-want, because you don't want to encourage authors, or readers, to see the platform as being primarily a mechanism to pay for content that would otherwise be free---effectively, as an alternative to donations/tipping of authors.
+
+Instead, you want the platform to be full of stuff that you can't get outside of that platform; you want people to be told "to get the new updates of this story as they come out, you'll have to download the Serials app and subscribe" or somesuch---you want the exclusivity of the content to funnel people into the app, much as the exclusivity of a video game funnels people into a console.
+
+Effectively, you want to be seen as a bookstore, not a library. People don't value stuff if they get it from a library, even if it's the same stuff they could get from a bookstore. You don't want to be Netflix, carrying the same shows that have been re-run on broadcast television for the last 30 years; you want to be HBO.
+:PROPERTIES:
+:Author: derefr
+:Score: 3
+:DateUnix: 1427418519.0
+:END:
+
+
+**** #+begin_quote
+  Or, put a third way: webcomics, podcasts, "web-original serial novels", and whatever-the-heck-you-call things like Homestuck could all be making money, from every consumer, every time they update
+#+end_quote
+
+You seem to be making an assumption that every consumer who consumes that stuff for free, would've paid if only you had a way to force them.
+
+Now, I'm not an expert on marketing, but I thought it's a general consensus that even token paywalls (like $.05) reduce the following significantly. And it's more cost-effective for such web projects to offer content for free to create as big fanbase as possible, profiting from that small percentage willing to pay through merch and donation (+ ads).
+
+I don't know, maybe you'd be able to squeeze more money out of customers for relatively big names like /Homestuck/ or wildbow, but I'm not sure it's universally advantageous strategy. And in any case I feel like your proposal stinks of RIAA et al.'s rhetorics (lost profits, and all that).
+
+I'm not interested anyway (whether it's paid or not), I use RSS and email notifications, and I'm happy with them, so feel free to disregard my opinion.
+:PROPERTIES:
+:Author: daydev
+:Score: 1
+:DateUnix: 1427443985.0
+:END:
+
+***** This matches my intuition. Serials are a small market, and patronage seems to fit better than sales. I've donated 100x to 1000x what I would have spent on serial content.
+
+I'm really worried that charging up front would kill the whole thing. It's not like an app store, where people just dropped $200 on a phone and are looking for something to buy. A healthy marketplace would benefit everyone, but you can't necessarily will it into being.
+
+Follow up questions, if you have the time: it sounds like you usually read on the computer? Do you read chapters because you got the notification or do you wait and read several things at once?
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1427479047.0
+:END:
+
+****** When I get and update, I export it into epub with the Calibre Fanfiction Dowloader Plugin, and then read on my tablet, usually on the same day, but not immeditely. For custom sites that the plugin doesn't support (e.g. /Worm/, /Ra/) I usually don't bother following them, and just wait until they finish and there's an ebook available (either 'oficial' or not so much).
+
+Edit: Not a typical case at all, in other words.
+:PROPERTIES:
+:Author: daydev
+:Score: 1
+:DateUnix: 1427480895.0
+:END:
+
+
+***** Hey daydev, so I know you said you wouldn't use this because you already have notifications taken care of. But the other major feature is bookmarking. Would you be interested in taking a look and telling me if you would use it for the bookmarks?
+
+For example, if you read through hpmor, it's super long, and the app will keep track of where you are.
+
+If so, PM me your email address and I'll send you an invite.
+
+Thanks!
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1433532841.0
+:END:
+
+
+**** Hey derefr. Would you be willing to take some time to review the early access version? I'd love some feedback from someone who has thought about this. PM me your email?
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1433532581.0
+:END:

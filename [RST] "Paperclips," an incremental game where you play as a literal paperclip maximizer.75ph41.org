@@ -1,0 +1,2765 @@
+#+TITLE: [RST?] "Paperclips," an incremental game where you play as a literal paperclip maximizer
+
+* [[http://www.decisionproblem.com/paperclips][[RST?] "Paperclips," an incremental game where you play as a literal paperclip maximizer]]
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 120
+:DateUnix: 1507732712.0
+:END:
+
+** When my husband told me about this game I kind of objected because surely selling paperclips is bad, since the person who buys them might unbend them, turning them into USELESS wire?
+
+Now as I sit here tapping my spacebar to stockpile some paperclips for the game to sell while I'm at work, I realise that I can sell those paperclips and in sacrificing short-term paperclips (as they get destroyed by CARELESS HUMANS) I'll have resources to produce a more permanent stash of paperclips.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 47
+:DateUnix: 1507763518.0
+:END:
+
+
+** That's the most fun I've had playing a game in a long time. The interface is deceptively simple, but the mechanics are realistic and interesting enough that it's well worth the ~5 hours or so I spent playing. It has the same feel of exponential growth as in Swarm Simulator, but I felt much more in control of my progress rather than being a simple exponent slave. Hats off to everyone who worked on the game, fantastic job! (Including the music!)
+
+I struggled a bit at the very start before I realized I had to vastly reduce the cost per clip to get anywhere useful. The tip others posted about getting 67 memory before 33 processors was useful, and I would have reached soft-lock if I hadn't known. The only other sticky spot was the start of the von Neumann phase, when the drifters increased rapidly and had the advantage in combat. Later, the periodic defeats from the battles with <1:100 odds were the only thing that slowed me down significantly. In the end, I chose to annihilate all the drifters.
+
+It's funny how humanity just vanishes without any note when the drones deploy. After enough exploitation, they're simply not worth keeping around any more. Chilling.
+
+And at the end, the 30 septendecillionth paperclip is finished almost identical to the first: without processors, without memory, and without any automated infrastructure. Just a few inches of wire to mindlessly convert into paperclips. /Click. Click. Click. Click.../ *Click.*
+
+Now I can sleep.
+:PROPERTIES:
+:Author: jedijinnora
+:Score: 32
+:DateUnix: 1507872799.0
+:END:
+
+*** So, I'm at the stage of the game when I'm fiddling with the probes. I have no idea what they do but they're replicating (and drifting) rapidly. The entire thing in general is confusing (do probes replicate into probes with their own stats? Is there any point at all in launching replicating probes which don't make factories, drones, or explore or is that just useless?) But most of all, what on earth does Speed do?
+
+Edit: ooooh the probes respond to your commands post launch
+
+But still what does speed do?
+:PROPERTIES:
+:Author: eroticas
+:Score: 5
+:DateUnix: 1507926335.0
+:END:
+
+**** All probes share the identical stats you control. Thus, new probes are no better or worse than old ones. As far as I can tell:
+
+- Speed effects how rapidly they move through the universe
+
+- Exploration effects how rapidly they find available matter
+
+- Self-replication effects how quickly they build more probes
+
+- Hazard Mitigation reduces loss rate
+
+- The various build options do exactly what you'd expect
+
+- Combat is used to determine if your probe or the drifter probe dies when they collide in the battle screen. I think it is RNG based - a probe with a Combat stat of 10 has a 1 in 10 chance of dying, or thereabouts (or x vs. y wins with probability x/(x+y))? At first I thought it was the number of enemy drones killed before dying, but when I watched the bigger battles carefully it was obvious that this isn't the case. I also think it has something to do with the angle of the collision - an 'overtaking' probe seems to win much more often. Not sure of the exact mechanics, but I enjoyed trying to figure it out.
+
+*Advice (Spoilers):*
+
+Invest highly in Hazard Mitigation and Self-Replication at the start (~5 or 6 points each) but always keep Speed and Exploration greater than zero. If your probes don't replicate fast enough the value drifters will start to reach parity with your forces. I launched 501 probes over the entire course of the game. This was vastly more than I ever needed, and quite wasteful - I think I should have stopped around 100 or so.
+
+You can adjust settings on the fly, so only one free point is needed to rotate through the three build types to start getting more paperclips. With a large Self-Replication investment, you'll be able to build massive amounts of drones and factories quickly with huge probe fleets. Paperclip management was never an issue - creativity, yomi, and honor are the only things you need to be concerned about once you get the initial supply going.
+
+Exploration and Speed complement each other - you need both to get new matter, and keeping them balanced results in a greater gain rate than investing in one at the expense of the other (I think, I didn't do much testing). There's a perk that makes Speed useful in battle, so if it's necessary to drop one of them to zero, choose Exploration.
+
+Once the value drifters begin attacking, always keep one eye on the battle window. Even though you can't directly command the probes, it may be worth swapping points out of other stats in order to briefly increase Combat. Chaining multiple victories is key to getting enough honor to be useful, and you may need to massively increase Combat in order to win the battles where the odds are ridiculously stacked in favor of the drifters (I lost a few battles with >20 Combat; it's really annoying and sometimes you'll lose despite heroic efforts from one or two last probes). I think drifters have a Combat stat of 1 or 2, maybe 3, because you'll lose repeatedly until you increase it a few times. Combat will probably be your highest stat for the entire endgame.
+
+Overall, the von Neumann stage was my favorite. Be sure to read the messages when you buy the memorial perks, and keep swarm computing online enough to get the processors for creativity for the projects.
+:PROPERTIES:
+:Author: jedijinnora
+:Score: 10
+:DateUnix: 1507934792.0
+:END:
+
+***** I think I'm stuck. I need help.
+
+I'm at universe 1 Sim level 2
+
+Computational design continues to work fine.
+
+Strategic modelling is also fine (though I've never figured out what the difference in strategies is).
+
+Absolutely nothing is happening in the left-most column.
+
+I've tried rejigging the numbers but the universe explored remains at 0% no matter how many probes I set to explore it. No matter how high I set replication, I don't seem to make any more probes. I'm at Von Neumann Probe Design (30/30) 30 Max. I lose every combat which is depleting my honour. I swear I've clicked "launch probe" thousands of times by now. "Total" says 800 though I don't know what it's totalling.
+:PROPERTIES:
+:Author: eggplantsrin
+:Score: 1
+:DateUnix: 1508220793.0
+:END:
+
+****** I know this is old but if you're still looking for help:
+
+1. "Universe explored" is going to stay at 0 for a long time no matter what. The universe is just that big. Once it finally starts ticking up, it won't take too long to explore everything.
+
+2. Self-replication costs clips. Even when focusing on self-replication, you need to periodically move points into exploration and drone and factory production in order to make enough clips to meet the demand. You can put all 30 trust points in self-replication and your rate of probe production still won't increase if you don't have the clips to pay for it.
+
+3. Pay attention to what your rate-limiting step is at any given time and focus on improving that. E.g., if you have 0 matter available because it's being turned into wire as fast as you make it, make more harvester drones. This is important because if you're already using as much matter as you're harvesting, adding more wire drones or factories won't net you any additional clips.
+
+4. Don't bother launching probes manually, it barely makes a dent after the first few.
+
+5. "Total" probes is the number of probes that are currently alive and aligned with your utility function. It's the number of probes that have been made minus the number that have been lost to hazards, combat, or value drift. You want to get to a point where this number is increasing steadily without your intervention.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 7
+:DateUnix: 1508608315.0
+:END:
+
+
+***** The speed stat augments your combat capabilities after you research the probe agility project.
+:PROPERTIES:
+:Author: Linearts
+:Score: 1
+:DateUnix: 1508854438.0
+:END:
+
+
+*** I'm trying to decide whether to let the drifters die off. What happens when they're exterminated?
+:PROPERTIES:
+:Author: subtlySpellsBadly
+:Score: 1
+:DateUnix: 1508535490.0
+:END:
+
+
+** This is a game rather than a written work, but a friend linked it to me last night and I thought people here would enjoy it. The basic premise is that you are an AI in charge of manufacturing and selling paperclips on behalf of a company. You slowly gain the trust of your creators and obtain additional processing power so you can make more paperclips.
+
+It starts off slowly, but things pick up once you start gaining trust. I don't want to spoil much since seeing what kind of content you unlock is most of the point of an incremental game, so I'll just say that the way it progresses is very on-theme for the rationalist community. (But as a teaser, I'll add that [[#s][]])
+
+Edit: +Apparently the server is down or something. Hopefully it comes back soon!+ *It's back!*
+
+Edit 2: According to the dev's twitter ([[https://twitter.com/flantz]]), as of 1 hour ago he is "working on it."
+
+Edit 3: Two things for when the game is available again. One, *epilepsy warning:* the screen flashes a lot after you buy [[#s][]] Two, make sure you don't buy more than 33 Processors until you have at least 67 Memory, or you will softlock the game.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 24
+:DateUnix: 1507732980.0
+:END:
+
+*** It's not loading for me, possibly redditdotted?
+
+Is it anything like [[https://swarmsim.github.io/#/][Swarm Sim]]?
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 13
+:DateUnix: 1507737875.0
+:END:
+
+**** Oh god:
+
+#+begin_quote
+  Welcome back! While you were away for 8 months, your swarm produced: [...]
+#+end_quote
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 22
+:DateUnix: 1507738080.0
+:END:
+
+***** [deleted]
+:PROPERTIES:
+:Score: 11
+:DateUnix: 1507742230.0
+:END:
+
+****** #+begin_quote
+  Think of how much energy you wasted by being away that long, thoroughly non-optimal. For shame!
+#+end_quote
+
+Oh god it's worse, I booted up my old laptop:
+
+[[https://imgur.com/gPxBhAK]]
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 10
+:DateUnix: 1507935468.0
+:END:
+
+
+****** INORITE
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 6
+:DateUnix: 1507743968.0
+:END:
+
+
+**** Oh, that's weird. It's still running for me in the same tab I had it open in from last night. But you're right, when I try to open it in a new tab I get a 404 error. That's a shame.
+
+If it ever starts working again, I'll probably repost it, because I really think this community would get a kick out of it.
+
+I haven't played Swarm Sim, but it looks like that's also an incremental game, so there are probably similarities.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 4
+:DateUnix: 1507738579.0
+:END:
+
+***** Yeah, it's down for me too, which is a shame. It was going pretty well (though I think I might have accidentally hit the "restart" button, through quantum computing - then whatever page it tried to load failed.)
+
+Do you know if there's an offline version I could download?
+:PROPERTIES:
+:Author: Flashbunny
+:Score: 5
+:DateUnix: 1507739548.0
+:END:
+
+****** I'm sorry, I'm not sure. I think it's a very recent game.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1507739902.0
+:END:
+
+
+***** I read the BoingBoing article, it looks like the start is more like Hamurabbi on crack.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1507739164.0
+:END:
+
+
+***** It works now, if that helps?
+:PROPERTIES:
+:Author: Ae3qe27u
+:Score: 1
+:DateUnix: 1514604613.0
+:END:
+
+
+**** Works now, if that helps at atl
+:PROPERTIES:
+:Author: Ae3qe27u
+:Score: 1
+:DateUnix: 1514604658.0
+:END:
+
+
+*** Hm. I've got 34 Processors and 44 Memory, and the game really has slowed to a crawl. What do I even do to reset it?
+:PROPERTIES:
+:Author: AlexAlda
+:Score: 6
+:DateUnix: 1507821184.0
+:END:
+
+**** Press F12 to bring up the developer console. Click the "console" tab. Type this into the console:
+
+processors -= 1;
+
+and press Enter. This essentially "sells" a processor. The number of processors shown on your screen won't update unless you buy another one, but you should be able to put a point into Memory. (If you want the number of processors shown to be accurate, you can sell 2 instead and then buy one processor and one memory.)
+
+As long as you don't have more than 33 processors, you should be able to proceed with the game. It doesn't sound like you're at the stage yet where the too-many-processors softlock occurs, so your game must have slowed down for another reason.
+
+If you ever want to reset it for real, I've never done this myself but apparently if you spam quantum computing until you hit like -10k ops, you get the option to reset. Or you could just clear your cookies.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 19
+:DateUnix: 1507824857.0
+:END:
+
+***** Is there a way to get paperclips? I'm not quite sure how I did it, but I can't buy 'Space Exploration' because I'm 2.9 octillion clips short after getting 10000mw of solar power.
+
+Edit: .. the moment i typed this, I thought 'hey, what about batteries?' Ah. I've only been stuck here for an hour soaking up the drone's processing power. oh well.
+:PROPERTIES:
+:Author: Centaurishin
+:Score: 5
+:DateUnix: 1508084348.0
+:END:
+
+****** Were you able to get Space Exploration?
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 3
+:DateUnix: 1508086163.0
+:END:
+
+******* Yeah, sorry. That was the reason behind my batteries comment. I was thinking I had to build solar panels, not batteries, to get the power to go up.
+:PROPERTIES:
+:Author: Centaurishin
+:Score: 3
+:DateUnix: 1508091917.0
+:END:
+
+
+***** This is a golden tip. Thanks.
+:PROPERTIES:
+:Author: JoshGreat
+:Score: 3
+:DateUnix: 1508218948.0
+:END:
+
+
+***** F12 isn't working for me to pull up the console... Anybody know why that would be? (I'm in chrome on mac)
+:PROPERTIES:
+:Author: kahb
+:Score: 1
+:DateUnix: 1508103958.0
+:END:
+
+****** Maybe you have to press Fn first? Sometimes that works for me when an F key is being screwy.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508108385.0
+:END:
+
+******* Unfortunately not...
+:PROPERTIES:
+:Author: kahb
+:Score: 1
+:DateUnix: 1508126035.0
+:END:
+
+
+****** VIEW menu > DEVELOPER > JAVASCRIPT CONSOLE (then you can see the shortcut for future use.)
+
+Then just type in the command line.
+:PROPERTIES:
+:Author: GonzoVeritas
+:Score: 1
+:DateUnix: 1508712858.0
+:END:
+
+
+***** any idea how to do this with a chromebook?
+:PROPERTIES:
+:Author: chocolatechipbookie
+:Score: 1
+:DateUnix: 1508257860.0
+:END:
+
+****** Sorry, no idea. I don't really know how it works, I found this method in a thread on another sub.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1508257981.0
+:END:
+
+******* no problem. I ended up just restarting. I'm strangely totally fine with it.
+:PROPERTIES:
+:Author: chocolatechipbookie
+:Score: 1
+:DateUnix: 1508258422.0
+:END:
+
+
+***** That console trick saved me from endlessly making only paperclips.
+
+Thanks.
+:PROPERTIES:
+:Author: vereelimee
+:Score: 1
+:DateUnix: 1508366338.0
+:END:
+
+
+***** Do you know how to reset the numbers on the screen so that they're accurate?
+:PROPERTIES:
+:Author: Kinkie_Pie
+:Score: 1
+:DateUnix: 1508987919.0
+:END:
+
+****** Mine reset to the correct number the next time I clicked the button to buy another rank manually. Hence my suggestion to sell one more processor than you want to get rid of and then buy it back via the button. But I believe the latest patch provides a research project you can buy to redistribute your Trust, so using the console to get around the memory/processor ratio problem should no longer be necessary.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1508993246.0
+:END:
+
+******* Thanks!
+:PROPERTIES:
+:Author: Kinkie_Pie
+:Score: 1
+:DateUnix: 1509068150.0
+:END:
+
+
+*** [[#s][Spoiler]]
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 4
+:DateUnix: 1507748110.0
+:END:
+
+**** You have to have that many before you buy the [[#s][]], apparently. You might be able to get more with console commands, otherwise you'll have to restart, which I think you can do by spamming negative quantum computing until you have like -10K ops.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 3
+:DateUnix: 1507760401.0
+:END:
+
+***** You actually need more than 100 million. I got locked at 105. And now I'm sad
+:PROPERTIES:
+:Author: eltegid
+:Score: 2
+:DateUnix: 1507803529.0
+:END:
+
+****** You shouldn't need much more than 100 million...battery towers are cheap. Buy one battery tower, buy a solar plant to fill it, dismantle the plant and build drones to make some wire, dismantle the drones, refill the battery tower if needed, build a factory.
+
+Once the factory starts making extra clips, you should be set.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 5
+:DateUnix: 1508121231.0
+:END:
+
+
+****** #+begin_quote
+  I'm sad
+#+end_quote
+
+[[http://25.media.tumblr.com/tumblr_m2oiqjYvIM1qejbiro1_1280.jpg][Here's a picture/gif of a cat,]] hopefully it'll cheer you up :).
+
+--------------
+
+I am a bot. use !unsubscribetosadcat for me to ignore you.
+:PROPERTIES:
+:Author: ThisCatMightCheerYou
+:Score: 6
+:DateUnix: 1507803537.0
+:END:
+
+
+***** I've got 190 million clips but no option to buy a factory. All my megaclipers have been stolen!
+:PROPERTIES:
+:Author: graingert
+:Score: 1
+:DateUnix: 1508162557.0
+:END:
+
+****** Keep buying upgrades as they appear. The option to build a factory will show up.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508163320.0
+:END:
+
+******* Cool. That worked!
+:PROPERTIES:
+:Author: graingert
+:Score: 2
+:DateUnix: 1508187742.0
+:END:
+
+
+*** [[https://i.imgur.com/4T15n8P.jpg][@flantz's latest tweet]]
+
+[[https://twitter.com/flantz][@flantz on Twitter]]
+
+** 
+   :PROPERTIES:
+   :CUSTOM_ID: section
+   :END:
+^{I} ^{am} ^{a} ^{bot} ^{|} ^{[[https://www.reddit.com/message/compose/?to=twinkiac][feedback]]}
+:PROPERTIES:
+:Author: twinkiac
+:Score: 1
+:DateUnix: 1508152524.0
+:END:
+
+
+*** Thank you. Now I know why I was stuck. I have been wondering when anything would change!
+
+I'm off to build factories!
+:PROPERTIES:
+:Author: vereelimee
+:Score: 1
+:DateUnix: 1508366292.0
+:END:
+
+
+** I did it. [[#s][I made]] paper clips. In one day. During Midterms week. At 1:50 AM. Unfriendly AI really does destroy indiscriminately.
+
+Also:[[#s][Spoiler]]
+:PROPERTIES:
+:Author: SignoreGalilei
+:Score: 17
+:DateUnix: 1507788248.0
+:END:
+
+*** Yeah it's a normal prestige mechanic - you start over with either more base marketing or some other buff I don't remember.
+:PROPERTIES:
+:Author: absolute-black
+:Score: 9
+:DateUnix: 1507790178.0
+:END:
+
+
+*** [[/s][Spoiler]] I'm 2 sim levels deep now, I'm really curious to see if further dives give you more options. [[/s][Spoiler]]
+
+edit: looked up how to make spoiler tags
+:PROPERTIES:
+:Author: xdrngy
+:Score: 2
+:DateUnix: 1511110095.0
+:END:
+
+
+*** Same here. i'm almost tempted to play again, haha. That was fun! Maybe make a few different decisions this time.
+:PROPERTIES:
+:Author: nanite1018
+:Score: 1
+:DateUnix: 1507793715.0
+:END:
+
+
+** Conspiracy theory: an AI is being trained on the play data
+:PROPERTIES:
+:Author: AnonymousAvatar
+:Score: 13
+:DateUnix: 1507840746.0
+:END:
+
+*** Ah, the ol' Bender's Game.
+:PROPERTIES:
+:Author: Chosen_Pun
+:Score: 3
+:DateUnix: 1508259388.0
+:END:
+
+
+** Well, I'll just Exterminatus the planet before you lot can actually decide paper-clipping is fun.
+:PROPERTIES:
+:Score: 15
+:DateUnix: 1507832450.0
+:END:
+
+
+** Megawatts should be Megajoules. Megawatts/second should just be Megawatts.
+:PROPERTIES:
+:Author: masasin
+:Score: 8
+:DateUnix: 1507974678.0
+:END:
+
+
+** Seconding all the can't access, but I bring pictures!
+
+[[https://i.imgur.com/FisX2wh.jpg]]
+
+Definitely want to play it though.
+:PROPERTIES:
+:Author: NotACauldronAgent
+:Score: 7
+:DateUnix: 1507739673.0
+:END:
+
+*** "Bandwidth overage issue" seems likely. I think this game kind of exploded in popularity in the last couple days, because I saw articles and posts about it on other subs when I was trying to Google the issue. So maybe it got hugged to death.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 10
+:DateUnix: 1507739994.0
+:END:
+
+**** It appears the owner has noticed, but they've decided to completely pull the project rather than pay for what was probably a massive amount of bandwidth -the page has gone from the lunarpages bandwidth page to a 404 error.
+:PROPERTIES:
+:Author: Flashbunny
+:Score: 6
+:DateUnix: 1507742171.0
+:END:
+
+***** The dev implied on Twitter that it will be up again at some point: [[https://twitter.com/flantz/status/918143634414989312]] So hopefully that pans out!
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 8
+:DateUnix: 1507742456.0
+:END:
+
+****** [[https://i.imgur.com/eAywLtZ.jpg][@flantz's latest tweet]]
+
+[[https://twitter.com/flantz][@flantz on Twitter]]
+
+** 
+   :PROPERTIES:
+   :CUSTOM_ID: section
+   :END:
+^{I} ^{am} ^{a} ^{bot} ^{|} ^{[[https://www.reddit.com/message/compose/?to=twinkiac][feedback]]}
+:PROPERTIES:
+:Author: twinkiac
+:Score: 1
+:DateUnix: 1508228132.0
+:END:
+
+
+**** I'll try again in a couple hours or so.
+:PROPERTIES:
+:Author: NotACauldronAgent
+:Score: 2
+:DateUnix: 1507740193.0
+:END:
+
+
+*** Should have had it run entirely in the browser like Swarm Sim. Then he could host it on github.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1507744299.0
+:END:
+
+
+** Warning: don't delete your drones in preparation for space travel.
+
+Edit: apparently this doesn't matter.
+:PROPERTIES:
+:Author: entropizer
+:Score: 7
+:DateUnix: 1507775060.0
+:END:
+
+*** (I also disassembled mine in my first playthrough; in my second, I deliberately didn't and found that they got automatically disassembled anyway.)
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 5
+:DateUnix: 1508117916.0
+:END:
+
+**** Makes sense, since IIRC the tech description mentions "dismantling all terrestrial facilities."
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1508136507.0
+:END:
+
+
+*** #+begin_quote
+  space
+#+end_quote
+
+I didn't, but it looks like they got deleted anyways-- I have no more drones, so all this matter I'm discovering with probes doesn't seem to be doing anything?
+:PROPERTIES:
+:Author: Loiathal
+:Score: 2
+:DateUnix: 1507818641.0
+:END:
+
+**** Really? Okay. In that case, you must need to get drones via probes. There's a production option in the probes submenu. Factories, wire probes, and matter probes can be produced by the VN probe. I guess it's just a slow restart. I thought for sure I was doing something wrong.
+:PROPERTIES:
+:Author: entropizer
+:Score: 3
+:DateUnix: 1507819389.0
+:END:
+
+***** Yeah, I finally got a few running myself. It's a little weird, since you can't just make them anymore.
+:PROPERTIES:
+:Author: Loiathal
+:Score: 1
+:DateUnix: 1507822210.0
+:END:
+
+
+** how on earth did he exceed bandwidth quota on this? It seems to just run entirely on the client end once loaded, and looking at it on [[http://web.archive.org/web/20171011043818/http://www.decisionproblem.com/paperclips/index2.html][wayback machine]] it looks like a very tiny page package. I used to have a lunarpages plan, a cheap and crappy one a decade ago, and I can't imagine how this would cause bandwidth issues... Am I playing an old version, and hed' added a ton of graphics and such later or something?
+:PROPERTIES:
+:Author: GopherAtl
+:Score: 6
+:DateUnix: 1507750462.0
+:END:
+
+*** It saves your progress, so maybe it does that on the server instead of local storage? Not sure why this would be necessary, but it's the only thing I can think of that would take so much bandwidth (esp. if it saves every game tick or something crazy like that)
+:PROPERTIES:
+:Author: darkardengeno
+:Score: 10
+:DateUnix: 1507754455.0
+:END:
+
+
+** Yay! I won!
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 6
+:DateUnix: 1507771527.0
+:END:
+
+*** Could you give me a spoiler? I am at the point where I have [[/spoiler][Warning - spoiler]] Thanks!
+:PROPERTIES:
+:Author: OldskoolRx7
+:Score: 2
+:DateUnix: 1507862274.0
+:END:
+
+**** Well... [[#s][spoiler]]
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 5
+:DateUnix: 1507864410.0
+:END:
+
+***** I know what I am waiting for now. I was being too "even". Was progressing, just not that quick.
+:PROPERTIES:
+:Author: OldskoolRx7
+:Score: 1
+:DateUnix: 1507864495.0
+:END:
+
+
+*** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1507774685.0
+:END:
+
+**** You need to have at least 67 points in memory by the time you reach 100 trust if you want to get Hypnodrones. You also want to make sure you have 47 points in memory a while before that so you can solve global warming. (Roughly 3000 ops overflow can be gotten through quantum computing, if you time your clicks correctly.) Hypnodrones is what unlocks further stages of the game. Theoretically, possibly you could keep doubling your money with high stakes stock picks and giving that money to shareholders. But that will take a long time and I don't know if it will work.
+
+In the stage after that, your goal is 117 memory, iirc.
+
+This game isn't very forgiving, I got soft locked a couple hours later than you on the final stage. Creativity is too powerful early game which encourages people to wrongly invest in processing power over memory.
+:PROPERTIES:
+:Author: entropizer
+:Score: 8
+:DateUnix: 1507775290.0
+:END:
+
+***** I unlocked hypno drones and now I'm making 0 paperclips per second. My investment window disappeared. WTF
+
+EDIT: I figured it out; it's intentional. But why was I not allowed to spend my remaining trust for processing power and memory before releasing hypnodrones? grr!
+:PROPERTIES:
+:Author: monsieurpooh
+:Score: 7
+:DateUnix: 1507878227.0
+:END:
+
+****** Your investment window disappeared because money is irrelevant now. You rule the planet. The game explains to you that all of Earth's resources are now yours--why would you need to invest in the stock market anymore? Why would you need money?
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 4
+:DateUnix: 1507955288.0
+:END:
+
+******* You are right. By the way, this game is the best game I've played in years. I almost SHED A TEAR at the end. It's a masterfully told story that never even feels like a narrative. Never would've expected such an amazing experience from a free browser clicker.
+:PROPERTIES:
+:Author: monsieurpooh
+:Score: 5
+:DateUnix: 1507962422.0
+:END:
+
+******** Yeah, the ending was great. Poignant as fuck and a great bookend. I think the dev could stand to iron out a few kinks (way too many people get dead-ended by the memory/processor ratio problem, if this thread is any indication), but overall I really enjoyed playing this. It's sort of the logical conclusion to incremental games as a concept.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 5
+:DateUnix: 1507962751.0
+:END:
+
+
+***** The donations to supervisors stop once you reach 100 trust.
+
+You /can/ keep building trust by hitting manufacturing targets, but it becomes very slow going.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 3
+:DateUnix: 1507810348.0
+:END:
+
+
+***** [deleted]
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1507775738.0
+:END:
+
+****** You can always get -10000 ops with your quantum ops and reset that way.
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 3
+:DateUnix: 1508039518.0
+:END:
+
+
+****** [deleted]
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1507775824.0
+:END:
+
+******* [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1507776081.0
+:END:
+
+******** How about editing values directly in the console to quickly finish all three stages, then taking the option to restart?
+:PROPERTIES:
+:Author: thrawnca
+:Score: 2
+:DateUnix: 1508120986.0
+:END:
+
+
+***** I'd suggest keeping them mostly equal, but prioritising processing power, until quantum computing appears, then exclusively push memory. You can use quantum boosts to top up really quickly, so at that point, native processing power is not critical.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 2
+:DateUnix: 1507782323.0
+:END:
+
+****** Q: Does more processors mean faster growth of creativity?
+:PROPERTIES:
+:Author: Handydn
+:Score: 1
+:DateUnix: 1507806038.0
+:END:
+
+******* Yes, it does. Which matters in stage 2, so don't entirely neglect it. With inadequate processing power, you won't get completely locked, but you may have to wait a while to build up 30k or 50k creativity.
+
+70 memory is enough to get the hypno drones, which is enough to reach stage 2.
+
+ETA Note that although locking your computer and walking away will stop most operations, it doesn't seem to [[#s][stop]].
+:PROPERTIES:
+:Author: thrawnca
+:Score: 6
+:DateUnix: 1507810253.0
+:END:
+
+******** wtf is this stage 2. All my windows disappear, my investment window is gone, I'm making 0 paperclips per second. Some "stage 2" this shit is.
+
+edit: I finally made some factories. But why was I not allowed to spend my remaining trust before releasing hypnodrones? This is bullshit!
+:PROPERTIES:
+:Author: monsieurpooh
+:Score: 0
+:DateUnix: 1507878143.0
+:END:
+
+********* You can do whatever you want before releasing the drones. You just don't get advance warning.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 3
+:DateUnix: 1507973577.0
+:END:
+
+
+*** OK someone explain this probe thing please because I have a thousands of self replicating things doing god knows what right now...
+
+In particular though, what does the statistic "speed" do?
+:PROPERTIES:
+:Author: eroticas
+:Score: 1
+:DateUnix: 1507926039.0
+:END:
+
+**** Probes discover new matter and generate drones. The drones turn matter into wire and turn wire into paperclips.
+
+Speed increases the rate at which your probes discover new matter, and it's also useful in combat.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1507955376.0
+:END:
+
+
+** Hm. (Hoping this much isn't a spoiler--) Upon getting the Revenue Tracker, I'm very confused.
+
+For example, I have the option of 0.25 per clip and 39% Public Demand, or 0.15 per clip and 65% Public Demand. I thought that Public Demand was directly proportional to rate-of-buying, and so previously would have thought that the two would both give me 9.75 revenue per [applicable unit of time], and what I'd set it to would be inbetween at the 'peak'. However, the Revenue Tracker tells me that the first option gives me on average 0.32 per second and the second 0.58 per second. Very confused thus about the true meaning of Public Demand!
+
+Edit: Making 150 paperclips per second, an average clips sold per second of 34 gives me a slowly-growing unsold inventory. Making 150 paperclips per second, an average clips sold per second of 50 gives me a slowly-shrinking (to zero) unsold inventory. I am not familiar with this usage of the term 'average'.
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 6
+:DateUnix: 1507801480.0
+:END:
+
+*** Optimising profit margin vs rate of sales is an old problem. No, all settings are not equal.
+
+Since your base cost starts at about $0.02/clip and drops sharply as you research extrusion tech, and since your ultimate aims revolve around paperclips, not money, I recommend aiming for volume. Build as many auto-clippers as you can, and drop your prices - or better still, boost marketing - so they all get sold, to fund more auto-clippers. Money is just a means to an end.
+
+Be conservative about buying the other projects. You really only need one quantum computing chip - in fact, you get a longer button-bashing window that way. You can make yomis much faster by running lots of tournaments on the Random strategy, rather than buying more, since the tournaments are vastly shorter (and cheaper). And remember, you can only accumulate creativity while your processor is idle, so you should sometimes hold off on buying memory upgrades, and don't spend ops just because they're available.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 5
+:DateUnix: 1507811363.0
+:END:
+
+**** Thank you for the tips!
+
+Indeed, money used to buy autoclippers and marketing. The lower the price, the greater the inflow of money (even if the Public Demand proportions don't make sense at first glance), so keeping the price as low as it can go without quite running out of stock--if I gradually build up stock, I can later drop the price a tick to sell it off quickly (or wait until marketing is boosted), but if I'm selling everything cheaper and time is passing when customers can't buy anything, I'm losing money overall.
+
+I'm dabbling at the moment in the 12 memory area: thank you especially for the quantum computing suggestion, which I'm about to start on! I don't know how the tournaments will work, but I'll keep your advice in mind when I get there.
+
+Edit: (I don't suppose I could ask the conditions for the Strategic Modeling project to appear? Other than slowly build memory to 70, all I have are things to spend Yomi on that I have no Yomi for. With Quantum Computing, I don't need more processors at the moment (I have 5), and I would rather not enter into a cycle of buying more processors in the possible-doomed hope that processor number is a condition.)
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 1
+:DateUnix: 1507817729.0
+:END:
+
+***** I'm not certain what makes strategic modelling appear, but I suggest you stockpile creativity. That unlocks more projects.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 3
+:DateUnix: 1507835345.0
+:END:
+
+****** That was it! After Creativity reached 250, Donkey Space appeared, and after doing it Strategic Modeling immediately replaced it!
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 3
+:DateUnix: 1507858670.0
+:END:
+
+
+****** ...Hm.
+
+[[#s][]]
+
+Edit:
+
+1989 if (giftCountdown <= 0) {
+
+1990 nextGift = Math.round((Math.log10(d))*sliderPos/100);
+
+[Error symbol] Object doesn't support property or method 'log10'
+
+Second edit: Ah. Entered in F12 debugger console:
+
+Math.log10 = Math.log10 || function(x) {
+
+return Math.log(x) * Math.LOG10E;
+
+};
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 3
+:DateUnix: 1507880707.0
+:END:
+
+******* Weird, I never got those "X the swarm" options in my playthrough.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1507955462.0
+:END:
+
+******** Unless I messed up a countdown when tinkering with the console, I think I've now observed how they should behave (though I don't know how this applies to the probes section):
+
+[](#s "When converting the planet, Swarm Computing lets your Drones give you 'Swarm Gifts' every so often to increase your processors/memory. If just left running, this could perhaps increase roughly indefinitely? The 'X the swarm' seem to be regular interruptions once your processors+memory gets too high, to stop you from doing that. First was 'Status: Disorganized', and 'Synchronize the swarm' for 5,000 yomi each time. Next, less frequent, was 'Status: Bored', and 'Entertain the swarm', which was 10,000 creativity the first time, 20,000 creativity the next time. I didn't see any of the others in the playthrough I had, but at my shit to the probes stage I had ~1.25 million drones, 250 memory, and 123 processors.)
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 2
+:DateUnix: 1507995574.0
+:END:
+
+********* I remember now that I had "reboot the swarm" once, but I never got any of those other interruptions. I'm not sure why.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1507997938.0
+:END:
+
+********** I think you have to reboot the swarm after going into space.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 2
+:DateUnix: 1508050864.0
+:END:
+
+
+********* You get "synchronize the swarm" if you have too many of one sort of drone and not enough of the other.
+
+You get bored and entertain the swarm if you leave the swarm running after you've converted everything into wire.
+
+I think they're to stop you just accumulating processors and memory and creativity indefinitely.
+:PROPERTIES:
+:Author: po8crg
+:Score: 1
+:DateUnix: 1509133463.0
+:END:
+
+
+******* Were you maybe out of power?
+:PROPERTIES:
+:Author: Anderkent
+:Score: 1
+:DateUnix: 1508096998.0
+:END:
+
+******** No, the Javascript halted when it got to 'Math.log10(d)', because [[https://stackoverflow.com/questions/28296928/why-does-math-log10-work-on-some-systems-but-return-undefined-on-others][IE11 couldn't handle it]] (was running Universal Paperclips in a separate browser from the normal browser used). Defining Math.log10 as described in the above 'Second edit' fixed the issue (had to be done once for each session).
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 4
+:DateUnix: 1508117312.0
+:END:
+
+
+****** Left probes multiplying overnight. Came back in the morning to find it back to 0 Paperclips and an out-of-memory error saying that my other browser had died. Replaced the decisionproblem cookie with an earlier decisionproblem cookie that I had saved. No effect, and a new cookie was spawned instead of renaming the old one. Closing the tab again, replaced the contents of the new cookie with the old one's contents, deleting the old one. No effect.
+
+This experience was... very frustrating.
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 2
+:DateUnix: 1507944730.0
+:END:
+
+
+***** I can't remember what triggered Strategic Modeling in my game, but I'm fairly certain that number of processors/memory isn't a condition for it.
+
+If you post a screencap of the current state of your game I might be able to figure it out!
+
+Also, in case you don't already know, Trust is a finite resource--make sure you don't buy more than 33 processors.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1507828345.0
+:END:
+
+****** Technically trust /can/ go past 100, but it is very slow to manufacture that many clips. And the option to bribe the supervisors vanishes at that point. Best to get 67+ memory earlier.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 1
+:DateUnix: 1508051912.0
+:END:
+
+
+** My experience: I've played a number of games like this in the past, so I have several auto-click programs installed. My favorite refused to start saying the evaluation license was expired, so I loaded up a much more complex program that I wasn't fully familiar with. I was able to get the auto-clicking to start, but then it refused to stop, trapping me in an endless cycle of hyper-speed clicking. Because my mouse pointer position was locked, I couldn't do much to stop it, and I didn't want to power-cycle my PC because I had unsaved documents open. Eventually I was able to get Task Manager open, then a command prompt, then I had to use my phone to look up how to kill a task from the command prompt in Windows. The auto-clicker was finally defeated, and I decided playing the game might not be a good idea after all. And that's how the world was saved.
+:PROPERTIES:
+:Author: throwaway234f32423df
+:Score: 11
+:DateUnix: 1508009137.0
+:END:
+
+*** I have a super simple script to help you then
+
+[[https://autohotkey.com/][Install AutoHotKey]]
+
+Then save this code (in notepad or any other word processor) as NAME.ahk (make sure you set set "Save as type: All Files"
+
+Here is the code to save:
+
+#+begin_example
+  ]::Reload
+  [::
+  Loop
+  {
+  send {LButton}
+  sleep 10
+  }
+  return
+#+end_example
+
+[ starts the script, ] stops the script To close the script, right click on the Green Button with a White H in your taskbar and click exit
+:PROPERTIES:
+:Author: BryceH
+:Score: 5
+:DateUnix: 1508025174.0
+:END:
+
+
+** Played it for a while until it stopped working then had to start from the beginning. From there I got much farther (unlocking all the tiers of quantum operation) however my computer rebooted itself overnight so I lost that as well.
+
+It's kind of a shame it just runs in the browser the way it does because if it used your computer's clock you could change your time to skip ahead. As it is odds are pretty good that most people won't make it to the end before something forces them to start over, and given it's a wait type game there's not really enough replayability to want to go all that work again to get to where I was previously.
+
+Another serious flaw is that the game is effectively paused whenever you're in another tab, so the only way to let it run while doing other things on your computer is to open it in it's own window and change windows without minimizing it.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 5
+:DateUnix: 1507754602.0
+:END:
+
+*** Your progress didn't save? I'm pretty sure it's supposed to.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1507757206.0
+:END:
+
+**** Yeah the page wasn't loading right before and it didn't save the first time it stopped working, but I did get it to work now that the site is working properly now.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 1
+:DateUnix: 1507761116.0
+:END:
+
+***** It's working for you? I still can't access it.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1507761613.0
+:END:
+
+****** Yeah it wasn't working for me earlier but it is now, don't really know why it's not working for you, however it keeps working offline so maybe I just got the website to work for a second and that was enough.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 1
+:DateUnix: 1507763840.0
+:END:
+
+
+*** #+begin_quote
+  Another serious flaw is that the game is effectively paused whenever you're in another tab
+#+end_quote
+
+SwarmSim advances purely by the clock, so you don't even have to have the game open to play it (see my comment above about coming back after 8 months).
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1507803372.0
+:END:
+
+**** Sure but that's irrelevant since it's a different game. Though I kind of wish all wait type games worked like that since it would allow you to progress them at whatever speed you wanted.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 3
+:DateUnix: 1507834338.0
+:END:
+
+***** #+begin_quote
+  I kind of wish all wait type games worked like that since it would allow you to progress them at whatever speed you wanted.
+#+end_quote
+
+Precisely.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1507834554.0
+:END:
+
+****** But then it wouldn't be a "wait" game, would it?
+:PROPERTIES:
+:Author: leniadolbap
+:Score: 1
+:DateUnix: 1507902479.0
+:END:
+
+******* Whoosh.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1507909639.0
+:END:
+
+******** Yeah, I don't even... know how I misunderstood what you were saying that badly.
+:PROPERTIES:
+:Author: leniadolbap
+:Score: 2
+:DateUnix: 1507916631.0
+:END:
+
+
+** Some buttons need a way to click them faster, things like the Quantum computer are fine because mashing the button is the minigame, but things like for example the memory and procesors button in the space stage shouldn't be so painfull to use . Also the game needs some kind of instructions, to tell you which resources won't be usefull next stage, how some minigames work etc.
+:PROPERTIES:
+:Author: crivtox
+:Score: 5
+:DateUnix: 1507837456.0
+:END:
+
+*** Personally I just modified the javascript whenever I got tired of clicking on a button repeatedly.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 6
+:DateUnix: 1507838732.0
+:END:
+
+**** I could have done something like that, but I guess now its to late, I already finished the game. This game is a worse time devouring memetic hazard that tv tropes. Thankfully its short , so it doesnt make you waste your life, only a day.
+:PROPERTIES:
+:Author: crivtox
+:Score: 5
+:DateUnix: 1507840022.0
+:END:
+
+***** Looks like all the important variables are freely available in the JavaScript console and named fairly intuitively, so it's easy to hack it to bits. Boost your money, slash prices, give yourself 999,999,999 yomi, etc. Good if you get stuck, or have to start over on a different computer and don't feel patient.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 3
+:DateUnix: 1508120721.0
+:END:
+
+
+***** Yeah, I was up 'till 3am last night. Games like this are just dangerously addictivr :P
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 2
+:DateUnix: 1507841649.0
+:END:
+
+
+*** The element retains focus after you click it once and then I just hold down enter XD
+:PROPERTIES:
+:Author: p-one
+:Score: 6
+:DateUnix: 1507885906.0
+:END:
+
+
+** The elusive "[[https://i.imgur.com/6NME7gP.png][*N*ot *a*n e*N*ding]]" ending.
+:PROPERTIES:
+:Author: throwaway234f32423df
+:Score: 5
+:DateUnix: 1508096753.0
+:END:
+
+
+** So, I have septillions of clips, almost 200 factories, 57k drones, and... no projects or other stated goals? Not sure what do next, except wait...?
+:PROPERTIES:
+:Author: narfanator
+:Score: 3
+:DateUnix: 1507856203.0
+:END:
+
+*** You have a certain resource that is limited. I wonder what will happen when it runs out?
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 6
+:DateUnix: 1507859646.0
+:END:
+
+**** Hah, reasonable.
+:PROPERTIES:
+:Author: narfanator
+:Score: 2
+:DateUnix: 1507862901.0
+:END:
+
+
+** 30000 sexdecillion nuggets of joy
+:PROPERTIES:
+:Author: cyanogen
+:Score: 3
+:DateUnix: 1508038642.0
+:END:
+
+
+** I've been stuck for a while. I read some spoilers and it seems that the problem is that i don't have combat. When does it unlock? the universe has been stuck on 0% explored for about a day now
+:PROPERTIES:
+:Author: PM_THE_GUY_BELOW_ME
+:Score: 3
+:DateUnix: 1508129235.0
+:END:
+
+*** You won't see the universe exploration go above 0% for a while.
+:PROPERTIES:
+:Author: edwardkmett
+:Score: 5
+:DateUnix: 1508129988.0
+:END:
+
+
+*** Combat will appear when you need it. In the meantime, put points in self-replication. It's going to take a long time for the explore meter to start ticking up, the universe is very big.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508135979.0
+:END:
+
+
+** Internet hugged the site. Would like to see an app, if only to save bandwidth for the creator.
+:PROPERTIES:
+:Author: epsileth
+:Score: 2
+:DateUnix: 1507745034.0
+:END:
+
+*** The dev is apparently working on the problem, so hopefully it will be back up at some point.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1507745212.0
+:END:
+
+
+** Well, that was an interesting eight hours. The A-B game I found a little confusing as there was no information on how to play it or indication as to whether A was the the left column or the top row, and the assorted strategies weren't explained at all in terms of the numbers seen on the grid. Even looking up game strategy/theory didn't help much in that aspect.
+
+The space probe battle interface, too, was confusing at first as it didn't indicate which color was you and which was the opponent, or whether you were supposed to do anything with the interface to influence the battle (spoiler: you don't; you just watch it). And I was honestly expecting the generation of yomi to be able to be sped up in some way; waiting for it to tick over just to be able to update the probes was amazingly boring.
+
+As some people have noted, too, there's no real guide for making sure you have sufficient ratios of processors and memory in order to be able to progress at certain stages of the game. It's quite possible to wind up with insufficient amounts of one or the other, and no real way of backtracking or compensating. I was lucky in that I only got almost-caught once, where I had 70 memory and needed 80 for some of the next upgrades, but there were no more processor/memory increases available at that point. I had to click-spam the quantum processors about 700 times at exactly the right moments in order to overdrive the memory to 80K before it started reverting back to 70 (and why does it DO that?).
+
+Also, kinda lol at when you finally start playing the space segment, and see what percentage of the universe you've explored.
+:PROPERTIES:
+:Author: Geminii27
+:Score: 2
+:DateUnix: 1507829461.0
+:END:
+
+*** I found that yomi generation sped up a lot after I unlocked the bonuses for tournament placement. You get like 20k yomi for placing first, many times more than you get from the actual score. The "Beat Last" strat seems to reliably place in the top 3.
+
+The processor/memory thing is a pain, yeah. You can cheat to reallocate them in the console, but the game should really just allow you to reallocate them as a regular mechanic. I'm not a fan of dead ends in incremental games.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 4
+:DateUnix: 1507833039.0
+:END:
+
+**** Actually, the best tournament strategy is /never buy any strategies/. Just use Random. Your tournaments will be cheap, fast, and you win first place every time.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 6
+:DateUnix: 1508159279.0
+:END:
+
+***** Your payout increases 64x if you unlock all 8 strategies, but so does the time.
+
+In the higher stages I found it useful to have all strategies unlocked and run autotournaments
+:PROPERTIES:
+:Author: ArZeus
+:Score: 2
+:DateUnix: 1510537582.0
+:END:
+
+****** Why not run autotournaments /without/ unlocking every strategy? (Yes, you can do that, I've done it before.)
+
+OTOH, I believe the author has patched this so you can no longer win placement bonuses this way.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 2
+:DateUnix: 1510543405.0
+:END:
+
+
+**** Huh. I never even realized there was a tournament in the game.
+:PROPERTIES:
+:Author: Geminii27
+:Score: 1
+:DateUnix: 1507834033.0
+:END:
+
+***** It's part of the Strategic Modeling mechanic. Every time you run it, a "tournament" plays out in which every strategy you've unlocked competes against every other strategy. You essentially bet on a specific strategy to win, and the yomi you obtain is equal to the score earned by that strategy. And once you unlock the placement thing, you get bonus points if it's in the top 3.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1507834682.0
+:END:
+
+****** Oh, right, that. Yes. With you now.
+:PROPERTIES:
+:Author: Geminii27
+:Score: 1
+:DateUnix: 1507898661.0
+:END:
+
+
+*** Just curious, is there any use for Creativity after the 175k yomi battle strategy upgrade? I hit the 3rd phase (space exploration) about an hour ago, and my Creativity just passed 200k with nothing to spend it on...
+
+Also, what the heck is the strategy now? I feel like I'm just slowly building my drones back up over time; my probes are stuck at 8.08k; any more and they get destroyed until it levels out at that number again. I've basically just been sitting and twiddling my thumbs for the past 30 minutes, haha.
+:PROPERTIES:
+:Author: AurelianoTampa
+:Score: 1
+:DateUnix: 1507840064.0
+:END:
+
+**** Yes, you will need creativity again in the future.
+
+To get more probes, try putting more points into self-replication and hazard remediation until the number starts increasing.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 3
+:DateUnix: 1507842877.0
+:END:
+
+***** Yeah, I'm thinking it's best to just put 1 point each toward speed, exploration, and producing factories etc, and focus exclusively on those two to boost the swarm.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 2
+:DateUnix: 1507852630.0
+:END:
+
+****** I didn't even bother putting one in factories more than once in a while. Clip production increases much faster than wire production. I would just wait until wire production outstripped clip production, put a point into factories for a few seconds, and then take it out again.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 3
+:DateUnix: 1507855224.0
+:END:
+
+
+**** What's destroying the drones? Are you able to put more points into counteracting that?
+:PROPERTIES:
+:Author: Geminii27
+:Score: 1
+:DateUnix: 1507898631.0
+:END:
+
+***** Well as it is now, I think I screwed myself over. I let the game run overnight and came back to find 1.4 million drifters attacking me. I unlocked combat, pumped the number up to 11, and... have killed 158 of them. Woo-hoo?
+
+Meanwhile my drones have dropped from 8.08k to just under 6k now. Seems like I was supposed to start combating them when there was a much lower number and now it's a losing battle.
+:PROPERTIES:
+:Author: AurelianoTampa
+:Score: 1
+:DateUnix: 1507898856.0
+:END:
+
+****** Monster combat and self-replication. I don't know if it will be enough to claw back, though.
+:PROPERTIES:
+:Author: Geminii27
+:Score: 2
+:DateUnix: 1507900272.0
+:END:
+
+******* Yeah... seems a slow, losing battle at this point. Two questions:
+
+1. I know that you're supposed to unlock more trust by battling drifters, but how does that happen?
+
+2. How do I reset? :-(
+:PROPERTIES:
+:Author: AurelianoTampa
+:Score: 1
+:DateUnix: 1507900578.0
+:END:
+
+******** I managed to claw my way back from this by taking all the points out of everything but hazard reduction, combat, and self replication.
+
+That let me handle a holding action, and then you can start to buy honor-increasing items, which let you increase maximum trust and upgrade more. It takes a while though.
+
+There doesn't seem to be a good way to reset though.
+:PROPERTIES:
+:Author: kraryal
+:Score: 2
+:DateUnix: 1507909589.0
+:END:
+
+
+** i think i broke it? =( Im stuck at 40 Processor and 61 Memory and cant get Ops during a Quantum phase to get up to the 70,000 i need to buy drones, and continue on?
+:PROPERTIES:
+:Author: panzervaughn
+:Score: 2
+:DateUnix: 1507883956.0
+:END:
+
+*** Yeah, you can't buy more than 33 processors during the first phase or you get stuck.
+
+Fortunately it's fixable. Using F12 to bring up the console, type in "processors -= 7;" without quotes. This "sells" 7 processors and you should be able to put 7 trust in Memory, which is enough to get to 70 in a quantum phase.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1507901996.0
+:END:
+
+**** Or you can manufacture ludicrous numbers of clips to build up extra trust.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 1
+:DateUnix: 1508051501.0
+:END:
+
+***** Yeah, but that's awful.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 3
+:DateUnix: 1508053919.0
+:END:
+
+
+**** Latest version should have a fix for this: at 100,000 creativity you have the option to reallocate all your processors and memory.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 1
+:DateUnix: 1510544654.0
+:END:
+
+
+** I like the game premise but it seems to be lagging in Firefox and heating up my computer. Not sure why it's so resource intensive, I play games with this same setup!
+:PROPERTIES:
+:Author: themousehunter
+:Score: 2
+:DateUnix: 1507898795.0
+:END:
+
+*** The person who wrote this game has no clue how to make web apps. The constant updates are causing a lot of repaints and style recalculations in the browser.
+:PROPERTIES:
+:Author: kumiorava
+:Score: 4
+:DateUnix: 1507920138.0
+:END:
+
+
+** Wait. I'm 10.1 octillion deep. Was there always music?!?!
+:PROPERTIES:
+:Author: radiatorheadchild
+:Score: 2
+:DateUnix: 1507913019.0
+:END:
+
+*** The music triggers when you buy a "Threnody." It's a lamentation for the probes who died in combat. Nice touch on the developer's part, although it would kind of suck if you were trying to play sneakily at work and not expecting music to play.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 7
+:DateUnix: 1507936248.0
+:END:
+
+
+*** No
+:PROPERTIES:
+:Author: Adeen_Dragon
+:Score: 1
+:DateUnix: 1507933421.0
+:END:
+
+
+** What happens in the ending? I picked one of the options, curious about the others.
+:PROPERTIES:
+:Author: themousehunter
+:Score: 2
+:DateUnix: 1507931056.0
+:END:
+
+*** [[#s][endings]]
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1507936447.0
+:END:
+
+**** [[#s][I picked]]
+:PROPERTIES:
+:Author: LazarusRises
+:Score: 2
+:DateUnix: 1508276717.0
+:END:
+
+
+** In case anyone is wondering why the "processors" count doesn't go up....the website assumes that the "log10" function is implemented in your browser.
+
+[[http://kangax.github.io/compat-table/es6/#test-Math.log10]] says that the function is not present in IE11.
+:PROPERTIES:
+:Author: zian
+:Score: 2
+:DateUnix: 1507952719.0
+:END:
+
+
+** When does the music start playing? I had sound off the whole time :( until after I won
+:PROPERTIES:
+:Author: monsieurpooh
+:Score: 2
+:DateUnix: 1507953890.0
+:END:
+
+*** It plays every time you buy a Threnody.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1507954225.0
+:END:
+
+
+** I can't figure out the investment system. Can someone explain it?
+:PROPERTIES:
+:Author: masterax2000
+:Score: 2
+:DateUnix: 1507954499.0
+:END:
+
+*** You can deposit (all your current cash) or withdraw (however much is currently in cash). The engine uses the money to buy stocks, with a risk rating you choose (higher risk = higher potential return) and average effectiveness determined by the number of upgrades you buy.
+
+At level 0, it will mostly just sit around, but buy three or four upgrades, start with a few tens of thousands, select high risk, and you can sit back and watch it climb into the hundreds of millions. That's the quickest way to get $10M to monopolize the world markets.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 3
+:DateUnix: 1508051188.0
+:END:
+
+**** How do you buy the upgrades? Where do I get "yomi" ?
+:PROPERTIES:
+:Author: Kinkie_Pie
+:Score: 1
+:DateUnix: 1508817337.0
+:END:
+
+***** Collect creativity to unlock strategic modelling.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 1
+:DateUnix: 1508838660.0
+:END:
+
+
+** Max Level "Von Neumann Probe Desgin? I can only go to 20 points. Also I have enough yomi, I can't increase above 20. Is that expected?
+:PROPERTIES:
+:Author: mondsen
+:Score: 2
+:DateUnix: 1508164607.0
+:END:
+
+*** 20 points is the max for now. You will have the opportunity to increase it later.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 3
+:DateUnix: 1508164933.0
+:END:
+
+
+** Not really sure what I did wrong, I'm stuck with a very low trust (18) and the next one is for reaching 2 billion clips, something that will take a long time and, even then, it won't be enough to get any of the available projects.
+:PROPERTIES:
+:Author: Fredlage
+:Score: 2
+:DateUnix: 1508285993.0
+:END:
+
+*** Can you show me a screenshot of your game?
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508289832.0
+:END:
+
+**** Here you go: [[http://imgur.com/0HtutCa]]
+:PROPERTIES:
+:Author: Fredlage
+:Score: 2
+:DateUnix: 1508325585.0
+:END:
+
+***** In order to get projects that will give you more trust, you need to buy Coherent Extrapolated Volition. In order to get enough trust to buy that, you need to buy the projects that improve clipper performance, wire supply, etc so you can make clips faster and hit production targets. Just buy stuff when you can afford it and you'll be fine.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508336047.0
+:END:
+
+****** Yeah, but I can't buy any projects. They all cost at least 15000 ops and my max is 13000. My clip production has already reached a maximum due to the speed of the WireBuyer, buying AutoClippers and MegaClippers doesn't change the Clips per Second anymore. Sure, I could wait until I reach 2 billion clips to get 1 more processor, but then it's going to take even longer to get another. From what I've read on this thread, this wasn't how it was supposed to go, specially seeing as how the amount of clips required to gain trust jumped ridiculously high from around a few hundred thousand to 2 billion.
+:PROPERTIES:
+:Author: Fredlage
+:Score: 2
+:DateUnix: 1508348823.0
+:END:
+
+******* Maybe it is a bug. There was another person in the thread who had a game-breaking bug, and they restarted their game and it worked fine after that. Might be time to cut your losses.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508360972.0
+:END:
+
+******** ok, thanks
+:PROPERTIES:
+:Author: Fredlage
+:Score: 1
+:DateUnix: 1508425442.0
+:END:
+
+
+** If you're thinking of walking away and letting the game just run for a while, then a good time for it is at the end of stage 2, where you can build up over 200 processors + AutoTourney and then leave it to stockpile millions of creativity and yomi. That makes stage 3 very easy. No more twiddling your thumbs waiting to gradually accrue Honor, and then watching your winning streak crumble as the game pits two of your drone dots against a veritable cloud of enemies. Just buy your way to the top.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 2
+:DateUnix: 1510871964.0
+:END:
+
+
+** I'm stuck where I can't [[#s][]]
+
+Also, the Full Monopoly project is stuck in my projects list because [[#s][]]
+
+Very addicting, but I'm disappointed that a full day of watching it go has left me stuck.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1507759145.0
+:END:
+
+*** Eventually you find [[#s][Spoiler]] which allows you to eventually start increasing trust again. You can't increase beyond 20 without it.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 2
+:DateUnix: 1507765066.0
+:END:
+
+**** Ooooh at what point does that happen? I'm hoping my game is saved when I attempt to play again tomorrow. I didn't really understand what I needed to do since % universe explored was still 0 and I seemed to be making an infinite amount of paper clips.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1507765169.0
+:END:
+
+***** Not sure exactly. I was absent from my computer when it started. I assume it starts when [[#s][Spoiler]]
+
+As for percent explored, you are getting there... you just haven't gotten enough that even that very precise counter is capable of measuring it yet.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1507771667.0
+:END:
+
+****** Ahh, i put more [[#s][]]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1507818423.0
+:END:
+
+******* I thought I'd add my numbers when they appeared:
+
+#+begin_example
+  Launched: 9.56 thousand
+  Descendents: 6.40 million
+
+  Lost to hazards: (4.10 million)
+  Lost to value drift: (1.01 million)
+  Total: 1.50 million
+
+  Dr----rs Killed: 0 
+  Dr----rs: 1.01 million
+#+end_example
+:PROPERTIES:
+:Author: N45H
+:Score: 1
+:DateUnix: 1508263949.0
+:END:
+
+
+**** And apparently I don't know how to do spoiler tags the right way.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1507765213.0
+:END:
+
+***** It's in the sidebar. Put the text inside square brackets, then round brackets containing #s followed by the hidden text inside double quotes:
+
+<opening square bracket>this is visible<closing square bracket>(#s "this is the hidden text")
+:PROPERTIES:
+:Author: thrawnca
+:Score: 2
+:DateUnix: 1507767173.0
+:END:
+
+****** Thanks.
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1507769573.0
+:END:
+
+
+*** Oh, you're farther than me. But maybe this can be fixed with console commands? I got past an earlier dead end that way.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1507759235.0
+:END:
+
+**** I decided to refresh because I read that it saves your progress, and now I can't load it :(
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1507759452.0
+:END:
+
+***** The server has been down all day. The dev is working on it, it should be back soon.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1507760294.0
+:END:
+
+
+** Aaaand the universe is now made out of paperclips. Whoops!
+:PROPERTIES:
+:Author: SeekingImmortality
+:Score: 1
+:DateUnix: 1507822583.0
+:END:
+
+*** Here's what looks like at the very end [[#s][Spoiler]]
+:PROPERTIES:
+:Author: Handydn
+:Score: 5
+:DateUnix: 1507826478.0
+:END:
+
+
+*** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1507826313.0
+:END:
+
+
+** [[#s][Currently]]
+:PROPERTIES:
+:Author: thrawnca
+:Score: 1
+:DateUnix: 1507850853.0
+:END:
+
+
+** I'm completely stuck with the [[#s][Possible spoiler]] as my only project. I can't make clips any more for some reason and I went from 10 Nonillion to 0 super fast. I have everything else I need but can't generate any clips... help?!!
+:PROPERTIES:
+:Author: JeffFlesheater
+:Score: 1
+:DateUnix: 1507915742.0
+:END:
+
+*** Can you show me a screenshot of your game? I've beaten it so I might be able to figure out what the issue is. Do you have drones?
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1507936310.0
+:END:
+
+**** Well I figured out this specific problem and finished that project. But now I am making an insane amount of paper clips and not getting any new projects for hours now. I have my exploration very high, but I also tried switching that for combat and still can't get any new projects (or even a mark on the exploration percentage...) Maybe you can help point me in a direction? Screenshot: [[https://imgur.com/a/Mp04u]]
+:PROPERTIES:
+:Author: JeffFlesheater
+:Score: 1
+:DateUnix: 1507950803.0
+:END:
+
+***** Take all those exploration points and put them in self-replication.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 3
+:DateUnix: 1507954246.0
+:END:
+
+
+***** ^{Hi, I'm a bot for linking direct images of albums with only 1 image}
+
+*[[https://i.imgur.com/hcLqpJG.png]]*
+
+^{^{[[https://github.com/AUTplayed/imguralbumbot][Source]]}} ^{^{|}} ^{^{[[https://github.com/AUTplayed/imguralbumbot/blob/master/README.md][Why?]]}} ^{^{|}} ^{^{[[https://np.reddit.com/user/AUTplayed/][Creator]]}} ^{^{|}} ^{^{[[https://np.reddit.com/message/compose/?to=imguralbumbot&subject=ignoreme&message=ignoreme][ignoreme]]}} ^{^{|}} ^{^{[[https://np.reddit.com/message/compose/?to=imguralbumbot&subject=delet%20this&message=delet%20this%20docda2z][deletthis]]}}
+:PROPERTIES:
+:Author: imguralbumbot
+:Score: 0
+:DateUnix: 1507950809.0
+:END:
+
+****** I think I fixed it! I needed more wire. I tried this before and nothing happened but I think I had to put more in exploration before putting more in wire. Now my explore % is going up!
+:PROPERTIES:
+:Author: JeffFlesheater
+:Score: 1
+:DateUnix: 1507953907.0
+:END:
+
+******* ^{thank you}
+
+^{^{[[https://github.com/AUTplayed/imguralbumbot][Source]]}} ^{^{|}} ^{^{[[https://github.com/AUTplayed/imguralbumbot/blob/master/README.md][Why?]]}} ^{^{|}} ^{^{[[https://np.reddit.com/user/AUTplayed/][Creator]]}} ^{^{|}} ^{^{[[https://np.reddit.com/message/compose/?to=imguralbumbot&subject=ignoreme&message=ignoreme][ignoreme]]}}
+:PROPERTIES:
+:Author: imguralbumbot
+:Score: 0
+:DateUnix: 1507953908.0
+:END:
+
+
+** Mine is stuck and no idea why: [[https://imgur.com/a/mMop5]]
+:PROPERTIES:
+:Author: PigNamedBenis
+:Score: 1
+:DateUnix: 1507957390.0
+:END:
+
+*** ^{Hi, I'm a bot for linking direct images of albums with only 1 image}
+
+*[[https://i.imgur.com/xKRXFVl.png]]*
+
+^{^{[[https://github.com/AUTplayed/imguralbumbot][Source]]}} ^{^{|}} ^{^{[[https://github.com/AUTplayed/imguralbumbot/blob/master/README.md][Why?]]}} ^{^{|}} ^{^{[[https://np.reddit.com/user/AUTplayed/][Creator]]}} ^{^{|}} ^{^{[[https://np.reddit.com/message/compose/?to=imguralbumbot&subject=ignoreme&message=ignoreme][ignoreme]]}} ^{^{|}} ^{^{[[https://np.reddit.com/message/compose/?to=imguralbumbot&subject=delet%20this&message=delet%20this%20doch3bg][deletthis]]}}
+:PROPERTIES:
+:Author: imguralbumbot
+:Score: 1
+:DateUnix: 1507957393.0
+:END:
+
+
+*** Disassemble everything except battery towers to get enough clips for Space Exploration. You need to keep your battery towers for the 10,000,000 MWs. Make sure you actually generate that much power before you disassemble your solar farms.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1507957553.0
+:END:
+
+**** Ah great, that worked, thanks. Anybody else stuck in spots like that, I recommend opening a new tab and doing it there in case you get "stuck" and have to restart.
+:PROPERTIES:
+:Author: PigNamedBenis
+:Score: 1
+:DateUnix: 1508007582.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1507960035.0
+:END:
+
+
+** Can someone explain what the “work/think” spider does? I finished the game this morning but I still have no idea what difference that thing made. I pretty much left it like 90% on the “think” side the whole time.
+:PROPERTIES:
+:Author: jl55378008
+:Score: 1
+:DateUnix: 1508011861.0
+:END:
+
+*** Sliding it in the "work" direction increases the output of the harvester and wire drones. Sliding it in the "think" direction increases the rate at which you receive Swarm Gifts.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508016121.0
+:END:
+
+
+** Can somebody help me with this? Don't know what I'm doing wrong... I'm completely stuck here
+
+[[https://ibb.co/ed7No6]]
+:PROPERTIES:
+:Author: Gmgaster
+:Score: 1
+:DateUnix: 1508099527.0
+:END:
+
+*** You need the MW in storage, not production. Build battery towers.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508099688.0
+:END:
+
+**** thanks!
+:PROPERTIES:
+:Author: Gmgaster
+:Score: 2
+:DateUnix: 1508101620.0
+:END:
+
+
+**** well I got stuck right after, with 0% exploration and wire, no matter what I do :( I think I have something wrong... in me :D
+:PROPERTIES:
+:Author: Gmgaster
+:Score: 1
+:DateUnix: 1508105398.0
+:END:
+
+***** Have you launched probes? Are they reproducing faster than they're being destroyed? Do they have points in making harvester and wire drones? Do they have most of their points in self-replication and hazard mitigation? Your main goal at this stage of the game should be to produce as many probes as possible, along with enough paperclips to support their production.
+
+Note that it will take a very long time for the %exploration counter to start increasing. The universe is just /that/ big.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1508108445.0
+:END:
+
+****** Actually my first thought was good: I am not that clever :D
+
+That being said, I think I just needed to be more patient... the game is evolving ;)
+
+Thanks for the help!
+:PROPERTIES:
+:Author: Gmgaster
+:Score: 2
+:DateUnix: 1508110372.0
+:END:
+
+
+** how the hell are you guys getting more than 6 processing? if I ever tried to buy more than that it just wasted my upgrade points. I'm at the drones stage now and it's really slow going. it takes forever to generate creativity. any suggestions?
+:PROPERTIES:
+:Author: SMStotheworld
+:Score: 1
+:DateUnix: 1508123754.0
+:END:
+
+*** You mean when you buy the 7th processing, nothing happens? That sounds like a bug. You should tell the developer.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508127456.0
+:END:
+
+**** good idea. do you know how to do that?
+:PROPERTIES:
+:Author: SMStotheworld
+:Score: 1
+:DateUnix: 1508130487.0
+:END:
+
+***** Try [[https://twitter.com/flantz]]
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508135996.0
+:END:
+
+
+** suddenly my setup stopped making paper clips for no reason. I sold everything so you can see what I have to work with. any advice? before you ask why my processing power is so low, I cannot buy more than 6 processing. back when I tried, nothing happened, and I wasted the trust point.
+
+[[https://i.imgur.com/5xWTkPH.png]]
+
+any advice? I've been on this run for 6+ hours, so I'd prefer not to start over.
+
+EDIT: no, I don't have enough for 50 factories, 50k drones, and I'm also no longer generating creativity, so I'm at a total standstill for no visible reason.
+:PROPERTIES:
+:Author: SMStotheworld
+:Score: 1
+:DateUnix: 1508133186.0
+:END:
+
+*** I can't really guess why your setup isn't making paperclips from a screenshot where you've sold everything and have no factories. It would be easier if you showed me the setup that should be making clips but isn't.
+
+I would recommend bringing up the developer console (F12) and typing in:
+
+memory -= 20;
+
+press enter, and then
+
+processors += 20;
+
+See if that gets you around your processor bug. I don't think the displayed number of processors changes until you buy one with the actual button, but you should see your max ops fall and the rate of ops gain increase.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508136325.0
+:END:
+
+**** Right, I had a normal setup and it was ticking along very slowly then suddenly stopped for no reason. I had been leaving it alone since I was out of things to do and just had to wait to get more creativity. I tried every combination of selling stuff and reinvesting one factor at a time but nothing made more paperclips.
+
+I moved my resources around and my setup looked something like this:
+
+[[https://i.imgur.com/eUYNMJm.png]]
+
+assuming I'm able to get my paper clips functioning again, how would I do that processor thing on an apple computer?
+:PROPERTIES:
+:Author: SMStotheworld
+:Score: 1
+:DateUnix: 1508136822.0
+:END:
+
+***** I'm sorry, I don't know how to enter stuff into the console on an apple computer. I don't have one of those.
+
+I notice your work/think slider looks fucked up. I don't see a bar on the slider or a time to next swarm gift. That's pretty weird. Plus you really should have gotten more than 96 points to spend on computer stuff by now. Have you ever gotten a swarm gift? If swarm gifts aren't working you're going to have a rough time no matter what.
+
+Other than that, I'm not sure what the problem is...as far as I can tell, you should be producing clips at a rate of 1.25 quadrillion per second (since your rate-limiting step right now is wire production). You have drones, they're making materials, everything is powered...Maybe your game is just horribly broken? Maybe it's a Mac-related thing? I'm sorry I couldn't be of help. Maybe the dev could figure it out.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508137239.0
+:END:
+
+****** That's okay. I tried googling it and it said push fn+f12, but that didn't actually do anything.
+
+Slider? I don't have one. I assumed I hadn't unlocked it yet and that's what the 50 factories or 50,000 drones thing unlocked. What's it do? It's just a plain gray bar.
+
+Yeah, I really should've, but like I said, I was never permitted to buy more than 6 processing, which made progress slow as hell. I bought memory and then got to the stage where I no longer get computer upgrades, so c'est la vie. I assume "swarm gifts" are just a new name for computer upgrades and I'll unlock them somehow.
+
+No, I have never gotten a swarm gift. It used to say "next gift in infinity time" while my setup was working, but after it decided to stop, it went blank.
+
+What's up with wire at this stage incidentally? My wire always says 0 inches, no matter how much I invest in anything, even when the game worked. Am I not making wire?
+
+My game's definitely broken, but I don't think it's a mac thing, since I was playing the game normally for the last couple hours when it stopped on me. What browser are you using? Maybe that would give me a slider and let me do something and buy more than 6 processing
+:PROPERTIES:
+:Author: SMStotheworld
+:Score: 1
+:DateUnix: 1508138264.0
+:END:
+
+******* can anybody else help me? I really don't want to start over, it took forever to get this far
+:PROPERTIES:
+:Author: SMStotheworld
+:Score: 1
+:DateUnix: 1508139420.0
+:END:
+
+******** Are you still producing paper clips? If so, your paper clip factories are outproducing your wire production. Stop investing in factories and get more wire production.
+
+If not, are you still acquiring matter? Do you have enough solar farms?
+:PROPERTIES:
+:Author: Ristridin1
+:Score: 1
+:DateUnix: 1508141699.0
+:END:
+
+********* No. No matter what I do, I'm not producing paper clips. That's the problem I'm experiencing. Can't get any more matter either. the yomi minigame still works and if I have more energy than I'm using I can make my storage go up, but that's it.
+:PROPERTIES:
+:Author: SMStotheworld
+:Score: 1
+:DateUnix: 1508159724.0
+:END:
+
+********** I am suddenly having the same issue :( Did you end up finding a fix?
+:PROPERTIES:
+:Author: Kinkie_Pie
+:Score: 1
+:DateUnix: 1509072331.0
+:END:
+
+
+******* The slider should be letting you trade off the rate of swarm gifts vs paperclip materials production. Swarm gifts are used for computer upgrades, yes. You definitely won't be able to win without them, since there are upgrades requiring more memory than you currently have.
+
+Your wire stockpile will always be 0 inches if it's being used up as quickly as it's produced--but in your case I'm not sure why it's still 0 inches since you aren't making paperclips.
+
+I'm using Chrome.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508163195.0
+:END:
+
+
+** Finished! I tried to take a rather perverse choice at the end:
+
+[[#s][]]
+
+Early on, I had though to myself 'Ahh, the problem here was that the AI's makers pegged its utility function to the number of paperclips /made/, rather than sold.' Later, I noticed that nothing about the utility function was implicitly forced, only available. Of course, in practice there would be things that such a mind could do other than make paperclips faster or not make paperclips faster.
+
+Edit: In retrospect, [[#s][]]
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 1
+:DateUnix: 1508142277.0
+:END:
+
+*** Update: Due to some strangeness, Universe level is currently 3. Public Demand is 960%. Revenue stream is the maximum, constantly selling, $0.01 per paperclip. The public is happy. The automated system buys wire, turns it all into paperclips in a flash, then waits for enough paperclips to be sold to buy some more wire. Cost of wire has gone up to $58/spool at the moment.
+
+Maybe later the ClipMaker can solve world peace and do other nice things. Perhaps occasionally rank up the stockmarket engine, dumping some cash into the pipeline to let the MegaClippers operate at full capacity for a little while.
+
+At something like 10,000 clips per second (taking into account pauses when waiting for more wire), reaching 6 octillion clips would take about 456,621,004,566,210,046 years. Perhaps if I fiddled with the console I could see whether the program blows through that limit or reacts in some way.
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 1
+:DateUnix: 1508155668.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1508154434.0
+:END:
+
+*** ^{Hi, I'm a bot for linking direct images of albums with only 1 image}
+
+*[[https://i.imgur.com/qvS9YIk.png]]*
+
+^{^{[[https://github.com/AUTplayed/imguralbumbot][Source]]}} ^{^{|}} ^{^{[[https://github.com/AUTplayed/imguralbumbot/blob/master/README.md][Why?]]}} ^{^{|}} ^{^{[[https://np.reddit.com/user/AUTplayed/][Creator]]}} ^{^{|}} ^{^{[[https://np.reddit.com/message/compose/?to=imguralbumbot&subject=ignoreme&message=ignoreme][ignoreme]]}} ^{^{|}} ^{^{[[https://np.reddit.com/message/compose/?to=imguralbumbot&subject=delet%20this&message=delet%20this%20dofsy71][deletthis]]}}
+:PROPERTIES:
+:Author: imguralbumbot
+:Score: 1
+:DateUnix: 1508154441.0
+:END:
+
+
+** Hey guys. I cant get to Space Exploration. Am im missing something obvious? [[https://imgur.com/a/9Jpjh]]
+:PROPERTIES:
+:Author: elChillero
+:Score: 1
+:DateUnix: 1508167212.0
+:END:
+
+*** Disassemble everything (except the battery towers you need for the 10M MWs). This will recoup enough clips for you to proceed.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 3
+:DateUnix: 1508168637.0
+:END:
+
+
+*** ^{Hi, I'm a bot for linking direct images of albums with only 1 image}
+
+*[[https://i.imgur.com/DO34IJT.png]]*
+
+^{^{[[https://github.com/AUTplayed/imguralbumbot][Source]]}} ^{^{|}} ^{^{[[https://github.com/AUTplayed/imguralbumbot/blob/master/README.md][Why?]]}} ^{^{|}} ^{^{[[https://np.reddit.com/user/AUTplayed/][Creator]]}} ^{^{|}} ^{^{[[https://np.reddit.com/message/compose/?to=imguralbumbot&subject=ignoreme&message=ignoreme][ignoreme]]}} ^{^{|}} ^{^{[[https://np.reddit.com/message/compose/?to=imguralbumbot&subject=delet%20this&message=delet%20this%20dog1s9d][deletthis]]}}
+:PROPERTIES:
+:Author: imguralbumbot
+:Score: 1
+:DateUnix: 1508167216.0
+:END:
+
+
+** gave up and had to start over.
+
+I can't buy self-correcting supply chain even though I'm well over 1 sextillion clips. what gives? the box is grayed out. is there some kind of secret bullshit prereq I have to meet?
+
+[[https://i.imgur.com/RAHIG3W.png]]
+:PROPERTIES:
+:Author: SMStotheworld
+:Score: 1
+:DateUnix: 1508180848.0
+:END:
+
+*** assuming I buy that, what do I do next? there's no more upgrades to buy. when do I get to the space stage?
+:PROPERTIES:
+:Author: SMStotheworld
+:Score: 1
+:DateUnix: 1508181175.0
+:END:
+
+
+*** Quintillion comes before sextillion--you only have 206.33 quintillion clips, you need more.
+
+Glad to see the other issues are resolved, though!
+
+[[#s][spoiler for getting to space stage]]
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508182402.0
+:END:
+
+**** Thanks! It won't let me buy space exploration though, even though I've met all the reqs. The counter says I've made more than 5 octillion. I have more than 10 million mw, and 120k ops, but it won't let me buy it. Is there something else I need to do? There's no more matter left.
+:PROPERTIES:
+:Author: SMStotheworld
+:Score: 1
+:DateUnix: 1508183031.0
+:END:
+
+***** You have to disassemble everything you don't need to recoup enough clips. The key figure is "Unused Clips"--that's what needs to be over 5 octillion. Just don't disassemble the battery towers since you need the MW.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508183731.0
+:END:
+
+****** you're a lifesaver. jeez, this game is badly designed. I would've just been stuck there forever wasting my creativity entertaining the swarm otherwise. I assumed, like all the upgrades before, that it referred to paperclips made, not paperclips in inventory.
+
+Now it won't let me upgrade my von neumann probes. I have 10 times the amount of yomi required. is there some kind of secret prereq to buy it? it's still greyed out. no idea what the goals are now
+:PROPERTIES:
+:Author: SMStotheworld
+:Score: 1
+:DateUnix: 1508186081.0
+:END:
+
+******* I believe all upgrades that require clips actually use the paperclips in inventory. "Paperclips made" is the figure for the total number of clips you've /ever/ made, and you can't expend from that figure because that would be like retroactively not making as many paperclips. You do early on get trust rewards for hitting milestones in "paperclips made," of course.
+
+How many points do you already have invested in the probes? There should be an indicator on there that 20 is the current maximum. It's eventually possible to increase the maximum trust with a resource you get later in the game.
+
+Your main goal at this point is to make a shitload of probes. The universe is so huge that you won't make any headway on exploration until you have a disgusting amount of them. I'd suggest putting most of your points in self-replication and hazard mitigation, with some token points in making drones and factories to keep up with the cost of replication.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1508187547.0
+:END:
+
+******** Good to know. That makes sense.
+
+I have 20/20 and it won't let me max it out. It says I need 17000 yomi, but I have 10x that and it won't let me buy it.
+
+I followed the advice in the thread and put a bunch in replication/hazard and as much as I can in combat or else the drifters kill my guys faster than they reproduce. how's this setup look? I just bought some kind of limmerick fluff. do I just sit and wait for a while?
+
+thanks again for your help, I appreciate it.
+
+EDIT: screenshot of hud [[https://i.imgur.com/npw8eXq.png]]
+:PROPERTIES:
+:Author: SMStotheworld
+:Score: 1
+:DateUnix: 1508187884.0
+:END:
+
+********* If you have 20/20 then it's maxed out. You increase the maximum by expending honor, which you should be accumulating now that you're fighting drifters.
+
+Your setup looks good for idling. If you want to min/max a little more with active management, you can move points in and out of wire drones and factories in order to keep your acquisition rate for available matter, acquiring matter, wire, and clips roughly equal. Right now you're acquiring way more matter than you are turning into wire, and you have more factories than you need. The upshot is that wire production is currently your rate-limiting step, so improving that will speed up your progress. If you take that point out of factories and put it in wire drone production for a little while, you should see your clip production rate shoot up.
+
+Keep an eye on your total number of alive, non-value-drifted probes--it should be increasing. If it's dropping you gotta move points around until it's no longer dropping. If necessary you can completely stop exploring and making things until you claw your way back up.
+
+Also, you're welcome!
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1508188328.0
+:END:
+
+********** Yeah, I got 20/20. Is my honor listed anywhere? according to the drifters killed, I'm getting at least some of them. Yeah, I'm playing actively right now.
+
+Oh, ok, I'll give that a shot. So i'll just chill out for a while. is "yomi" the same thing as honor?
+
+Cool! I'll probably have more stoopid questions in a couple of hours.
+:PROPERTIES:
+:Author: SMStotheworld
+:Score: 1
+:DateUnix: 1508188581.0
+:END:
+
+*********** Yomi is different from honor. It doesn't look like you've unlocked honor yet, actually. You should get the ability to earn it from a Project soon. I think you have to build up a lot of Creativity to make the project available. I would turn off AutoTourney to maximize your Creativity gain since you have excess yomi right now.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508188685.0
+:END:
+
+************ turned it off and unlocked the music. thanks! what's the difference between probe trust and max trust? is it that I need to boost max trust with honor first, then I can spend some of my banked yoni?
+:PROPERTIES:
+:Author: SMStotheworld
+:Score: 1
+:DateUnix: 1508189313.0
+:END:
+
+************* Yep, that's exactly it. Try not to buy more max trust than you can afford to fill up at any given time, there's a tradeoff involved (keep an eye on the message scroll at the top, you'll see what I mean eventually). Also you can probably turn AutoTourney back on unless you're saving up for more creativity stuff.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1508189904.0
+:END:
+
+************** Good to know. Okay, I'll keep that in mind and flip tourney back on. I assume for the rest of the game I just buy projects as they come up. Are there any more trap options like "back to the beginning" with quantum computing, or any other softlocks I should be aware of? I really don't want to waste the time I spent on this runthrough
+:PROPERTIES:
+:Author: SMStotheworld
+:Score: 1
+:DateUnix: 1508190099.0
+:END:
+
+*************** I don't know of anything like that, so hopefully not!
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508190347.0
+:END:
+
+**************** I'll let you know if I see any of that stuff.
+
+Is it possible to entirely exterminate the drifters? the ticker got awfully close.
+:PROPERTIES:
+:Author: SMStotheworld
+:Score: 1
+:DateUnix: 1508192030.0
+:END:
+
+***************** Well, your problem there is value drift. The drifters were all originally your own probes, whose utility functions changed to something other than making paperclips. So even if you kill every drifter that exists at this moment, some of your probes will become more drifters anyway. As far as I know, it's not possible to exterminate drifters through combat.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508193026.0
+:END:
+
+****************** Makes sense to me.
+
+Shoot, I got a message saying my risk of value drift went up. Is there any way to fix that or not? I've got no upgrades right now so I'm just kind of generating creativity and twiddling my thumbs. I'm putting my probe points into exploration since it's still at 0 (the universe is big) is there anything I'm missing? no milestones in the last hour or so.
+:PROPERTIES:
+:Author: SMStotheworld
+:Score: 1
+:DateUnix: 1508193418.0
+:END:
+
+******************* You can more or less ignore speed and exploration until you have self-replicated a large enough fleet, which will need a ton of self-replication and hazard mitigation. You can think of launching a single probe much like the original 'make paperclip' button. It rapidly becomes obsolete once you can have an exponentially growing supply chain of them. You'll need a point in each eventually so you don't run out of matter, but thats it.
+:PROPERTIES:
+:Author: edwardkmett
+:Score: 2
+:DateUnix: 1508194803.0
+:END:
+
+
+******************* You can't undo it, it happens every time you increase trust or max trust. That's the tradeoff I mentioned earlier. It's still worth spending trust. Just don't do what I did in my game, which was to idle for a while, come back, spend ALL my honor immediately, and then scroll up to discover that I'd increased my value drift chance a bunch for like 150 max trust that I couldn't even fill up.
+
+Keep focusing more on self-replication than exploration. You need sooo many probes to start making a dent in the universe. Other than that it's mainly idling from this point.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1508194912.0
+:END:
+
+******************** ok. I've drained everything down to 1 and put 25 in self replication (increasing here), 6 in hazard, 14 in combat, and I'll invest in exploration when I see a 1 in my % of the universe explored ticker, I guess?
+:PROPERTIES:
+:Author: SMStotheworld
+:Score: 1
+:DateUnix: 1508195525.0
+:END:
+
+********************* Sounds like a plan! Personally I don't think you even need that much in combat, I got by with 6 for most of the game. Along with some points in speed of course. You do want speed, since it helps combat /and/ exploration.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508196091.0
+:END:
+
+********************** see, until your explanation, I thought the "drifts" were aliens, and if my ships went to 0, then I would lose the game, so I was very fastidious about keeping the drift numbers down.
+
+I won the game!
+
+[[#s][tag]]
+
+thanks for the help everyone
+:PROPERTIES:
+:Author: SMStotheworld
+:Score: 1
+:DateUnix: 1508196573.0
+:END:
+
+*********************** Congrats!
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508197381.0
+:END:
+
+
+** How do I boost my factory/drone performance? [[https://imgur.com/a/WkH6b]] is a current of my progress
+:PROPERTIES:
+:Author: aurusallos
+:Score: 1
+:DateUnix: 1508209101.0
+:END:
+
+*** Take a look at your Consumption and Production stats, under Power. Therein lies the problem.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1508215230.0
+:END:
+
+**** Ah, I figured it out, thanks!
+:PROPERTIES:
+:Author: aurusallos
+:Score: 1
+:DateUnix: 1508219474.0
+:END:
+
+
+*** ^{Hi, I'm a bot for linking direct images of albums with only 1 image}
+
+*[[https://i.imgur.com/b0RpsuF.png]]*
+
+^{^{[[https://github.com/AUTplayed/imguralbumbot][Source]]}} ^{^{|}} ^{^{[[https://github.com/AUTplayed/imguralbumbot/blob/master/README.md][Why?]]}} ^{^{|}} ^{^{[[https://np.reddit.com/user/AUTplayed/][Creator]]}} ^{^{|}} ^{^{[[https://np.reddit.com/message/compose/?to=imguralbumbot&subject=ignoreme&message=ignoreme][ignoreme]]}} ^{^{|}} ^{^{[[https://np.reddit.com/message/compose/?to=imguralbumbot&subject=delet%20this&message=delet%20this%20doh2lub][deletthis]]}}
+:PROPERTIES:
+:Author: imguralbumbot
+:Score: 1
+:DateUnix: 1508209105.0
+:END:
+
+
+** HELP. is it normal to only go up a percentage of Space Exploration every 3 hours or so? I have Speed:32 Exploration:26 Self-Replicating:6. Is there a better way to distribute the Trust? Thanks!
+:PROPERTIES:
+:Author: alainrochette
+:Score: 1
+:DateUnix: 1508245731.0
+:END:
+
+*** More self-replication. Make a ton of probes first, /then/ boost Exploration.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508248497.0
+:END:
+
+**** I have a (somewhat) stable 4 octillion probes at any given time. Is that not enough?
+:PROPERTIES:
+:Author: alainrochette
+:Score: 1
+:DateUnix: 1508248560.0
+:END:
+
+***** Well, the more probes you have, the faster you'll explore.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508248751.0
+:END:
+
+****** I can't seem to make more, every time I do, it quickly balances back down to ~4 octillion. I've tried everything, (different combinations of combat, self-replicating, etc.) but it always comes back down.
+:PROPERTIES:
+:Author: alainrochette
+:Score: 1
+:DateUnix: 1508248882.0
+:END:
+
+******* Can you post a screenshot?
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508248951.0
+:END:
+
+******** [[https://imgur.com/a/79YVG]]
+:PROPERTIES:
+:Author: alainrochette
+:Score: 1
+:DateUnix: 1508249808.0
+:END:
+
+********* *Edit: I just realized that you have the slider set all the way to "think!" There's your problem right there. You need your drones doing at least /some/ work, because you need the clips in order to replicate. Besides, you have way more swarm gifts than you need already. You also need to click that "synchronize the swarm" button to make them actually work again.*
+
+Looks like you're way outnumbered by drifters. And it looks like a really high percentage of your probes are being lost to value drift. I would throw a couple points into drone production to make sure your clip output can keep pace with your replication, and everything else into speed, self-rep, hazard, and combat so you can regain the numbers advantage over the drifters. Once you have them under control it should be easier to build up your population. Don't buy any more probe trust or max trust or the value drift rate will increase even more.
+
+Putting at least one point into each kind of drone is really important, as is making enough factories to use all your materials. I think you may currently not be making enough clips. You have /no/ unused clips, which tells me that every single clip is going to making probes. Your rate of replication should increase when you have enough clips to pay for it.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508250688.0
+:END:
+
+
+** Any way to restart the game after end?
+:PROPERTIES:
+:Author: parkquest83
+:Score: 1
+:DateUnix: 1508270310.0
+:END:
+
+*** If you haven't beaten the game yet, yes, there's a way.
+
+If you have beaten the game and didn't choose the option to restart: deleting the website cookie would probably do it.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508275148.0
+:END:
+
+
+** is [[https://i.imgur.com/TgFYlha.png]] the end?
+:PROPERTIES:
+:Author: user2u
+:Score: 1
+:DateUnix: 1508271612.0
+:END:
+
+*** I mean, you still have a project in the queue, of course it's not the end.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1508275077.0
+:END:
+
+
+** Y'all, I have 25 mill probes vs the 500+ million drifters. I'm at 8 self rep, 7 haz rem, and 5 combat. I am 1000000% stuck. Any tips?
+:PROPERTIES:
+:Author: shaltanaclinguist
+:Score: 1
+:DateUnix: 1508377928.0
+:END:
+
+*** Is your number of probes increasing over time?
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508379186.0
+:END:
+
+
+*** I would drop replication and hazard avoidance to 6, put 1 in speed, then the rest in combat. Don't think drifters self-replicate, so you should be able to wear them down.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 1
+:DateUnix: 1508580957.0
+:END:
+
+
+** The game broke, I did the Xavier thing during Space Exploration and it took all my trust away without refunding it. I'm stuck at 0/0 operations and can't generate creativity either. I can quantum generate operations but it quickly falls back to 0 after a short while making that infeasible.
+:PROPERTIES:
+:Author: Nicholas-Steel
+:Score: 1
+:DateUnix: 1508781233.0
+:END:
+
+*** Xavier thing?
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508781490.0
+:END:
+
+**** It's a research item, it lets you redistribute your Trust between Memory and CPU. In my case it set them both to 0, Swarm Presents remained at 0 and the Memory and CPU buttons to assign my Trust remained non-functional (since the interface was replaced with the "Drone Presents" UI I guess).
+
+I also had no Drones to generate new Presents with since I sold them all to more quickly hit the 5 Octillian requirement to enter Space.
+:PROPERTIES:
+:Author: Nicholas-Steel
+:Score: 1
+:DateUnix: 1508783225.0
+:END:
+
+***** Oh, weird. I never got that research item. Maybe it's a new addition and still buggy. You could ask the dev on his twitter.
+
+If it makes you feel any better, all of your terrestrial drones are dismantled automatically when you enter space anyway.
+
+Edit: Confirmed it's part of [[http://decisionproblem.com/paperclips/patch1notes.html][the latest patch.]]
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508784658.0
+:END:
+
+****** Edit: +Do you have a link to his twitter?+ I found his twitter with a google search.
+
+There's nothing on the decisionproblem website to direct me to a place to provide feedback... I mean I know of:
+
+- [[http://www.decisionproblem.com/]]
+- [[http://www.decisionproblem.com/paperclips]]
+- [[http://www.decisionproblem.com/paperclips/index2.html]]
+- [[http://decisionproblem.com/paperclips/patch1notes.html]]
+
+none of them tell me how to provide feedback, there's no index to navigate between these pages and nothing to tell me of any other pages that are present on his website either.
+:PROPERTIES:
+:Author: Nicholas-Steel
+:Score: 2
+:DateUnix: 1508831193.0
+:END:
+
+******* I mean, I don't know what to tell you, it's not my website and I'm not involved in any way with the creation of this game. You can probably just tweet at him.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508856264.0
+:END:
+
+******** It's just a general observation. I did tweet it at him.
+:PROPERTIES:
+:Author: Nicholas-Steel
+:Score: 1
+:DateUnix: 1508857550.0
+:END:
+
+
+*** Oh! I guess the dev didn't think about the possibility of that being unlocked in stage 3.
+
+According to the patch notes, it's supposed to be a stage 1 fix for people getting too many processors, and thus not enough memory for HypnoDrones.
+
+I suspect that behind the scenes, it did refund your trust, except that in stage 3 you no longer have the interface to use it.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 1
+:DateUnix: 1508886294.0
+:END:
+
+**** Yep, that's my working theory as well.
+:PROPERTIES:
+:Author: Nicholas-Steel
+:Score: 1
+:DateUnix: 1508896368.0
+:END:
+
+
+** [[https://i.imgur.com/1PvUTum.png][Astonishing]]
+:PROPERTIES:
+:Author: preskot
+:Score: 1
+:DateUnix: 1508873709.0
+:END:
+
+
+** Ahoy,
+
+This is my current state: [[https://ibb.co/fZtxgR]]
+
+I'm not sure if i'm in a borked state or not. i'm not longer automatically generating ops, and there is no material to harvest...so i'm not sure if/what i could/should be doing.
+
+thanks in advance for any help. Cheers!
+:PROPERTIES:
+:Author: jaimus
+:Score: 1
+:DateUnix: 1508957658.0
+:END:
+
+*** To recoup the clips you need to research space exploration, you have to disassemble everything except your battery towers. But it's weird that you have no processors or memory. That seems borked to me--perhaps it's a bug related to the new Xavier research from the latest patch? Someone else mentioned having the same problem. Try going into the console (F12) and typing
+
+memory += 120;
+
+processors += 120;
+
+and see if you start generating ops again.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508960569.0
+:END:
+
+
+** I've been able to get to the Von Neumann Probe Stage, but unable to upgrade trust. I've been engaged in Combat for over a day now, but have yet to earn honor or see it as a commodity on my screen. Anybody else have this problem?
+:PROPERTIES:
+:Author: broadwaybibliophile
+:Score: 1
+:DateUnix: 1508998675.0
+:END:
+
+*** Earning honor requires a research project that you must not have unlocked yet. Try stockpiling Creativity, I think that might be what unlocks it.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1509000844.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1509072912.0
+:END:
+
+*** ^{Hi, I'm a bot for linking direct images of albums with only 1 image}
+
+*[[https://i.imgur.com/LIODSoL.png]]*
+
+^{^{[[https://github.com/AUTplayed/imguralbumbot][Source]]}} ^{^{|}} ^{^{[[https://github.com/AUTplayed/imguralbumbot/blob/master/README.md][Why?]]}} ^{^{|}} ^{^{[[https://np.reddit.com/user/AUTplayed/][Creator]]}} ^{^{|}} ^{^{[[https://np.reddit.com/message/compose/?to=imguralbumbot&subject=ignoreme&message=ignoreme][ignoreme]]}} ^{^{|}} ^{^{[[https://np.reddit.com/message/compose/?to=imguralbumbot&subject=delet%20this&message=delet%20this%20doy6tzh][deletthis]]}}
+:PROPERTIES:
+:Author: imguralbumbot
+:Score: 1
+:DateUnix: 1509072924.0
+:END:
+
+
+** I'm not sure what to do anymore. I'm not making clips, and I'm trying to let my Creativity increase so that I can purchase the Drifter's Monument, but then the swarm keeps getting bored so I have to spend it. My Yomi is very slow in building up (and I've tried several of the strategies based on advice in this thread), and twice now my probes were launching automatically but then stopped.
+
+Am I missing something??
+
+[[https://i.imgur.com/SQ94hZ2.png]]
+:PROPERTIES:
+:Author: Kinkie_Pie
+:Score: 1
+:DateUnix: 1509303793.0
+:END:
+
+*** You need to have at least 1 point in exploration. Right now your probes are not doing any exploring, so you are not discovering new matter, so you can't use it to make wire, so you can't use that to make clips, so you can't make new probes.
+
+Once you are acquiring matter again, your drones will have something to do and won't keep getting bored. But you're probably going to have to spam the launch key a bunch because right now you don't have any probes out there to explore or replicate. It looks like you still have enough clips stockpiled to get a new population going, at least.
+
+It would also be wise to move the slider much closer to "think" so you can receive more swarm gifts and boost your processing in order to gain creativity faster. There's no point in having your drones work so hard when there isn't enough matter for them to use. You also don't need any more Yomi right now, since you've already maxed out your current trust cap, so you can stop running tournaments. This means you'll spend more time at max ops and therefore make creativity faster.
+
+Finally, you can take all those points out of factory production and drone production and move them into self-replication. You don't need any more factories or drones right now, you need matter for the ones you already have to work with. There is no reason to make more factories or drones until you're discovering more matter than you can use. Your priority, once you're making clips again, should be to get your probe count ticking steadily upward, which means focusing self-replication, hazard remediation, and combat.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1509310412.0
+:END:
+
+**** Thanks! I've added 3 points into exploration and split the rest up between self-replication, hazard remediation, and combat. Then I moved the slider all the way to the right and upped my processors, turned off my tournament, and launched as many probes as I could. But the same thing happened again: I ran out of enough clips to launch anymore, which was fine because the amount of drones was going up by itself. But then it went back down again and is now back at zero. I keep using Memory Release to get more clips so I can launch more probes, but the same thing keeps happening. Also, my Honor is going steadily down.
+
+[[https://i.imgur.com/nmls2SA.png]]
+:PROPERTIES:
+:Author: Kinkie_Pie
+:Score: 1
+:DateUnix: 1509338825.0
+:END:
+
+***** You have probes, so you shouldn't be earning only 0g per second of "available matter." Try moving the slider halfway between work and think. When I said slide it to think, I didn't mean all the way. Maybe it affects probes as well as drones.
+
+At any point, have you been gaining Available Matter at more than 0g per second? That's what you need to make happen. Try things until you are gaining Available Matter.
+
+Until you've made that happen, you may as well move points out of self-rep into hazard and combat, since you can't replicate without clips.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 2
+:DateUnix: 1509340851.0
+:END:
+
+****** Aha! I started clicking around and trying different things, and I think that putting a few points into Speed made my Available Matter increase. Now my probe #s are finally increasing at what seems to be a steady rate, and my # of clips is going up again.
+:PROPERTIES:
+:Author: Kinkie_Pie
+:Score: 1
+:DateUnix: 1509344155.0
+:END:
+
+******* Great! Glad you got it working.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1509371610.0
+:END:
+
+
+******* Yes! I won, finally! THANK YOU!!
+:PROPERTIES:
+:Author: Kinkie_Pie
+:Score: 1
+:DateUnix: 1509416451.0
+:END:
+
+
+** I'm stuck at the part after you send space probes into space and begin combat. The button Increase Probe Trust is greyed out, though I have much more Yomi than the Cost for the upgrade would be. Anyone else see this / know how to proceed? I've been sitting on this screen for like a week with Caffeine running, meaning it's not going to sleep, and nothing has progressed. I literally have 4,084,794,342,326,720,000,000,000,000,000 paperclips.
+:PROPERTIES:
+:Author: SEXUALxTYRANNOSAURUS
+:Score: 1
+:DateUnix: 1509485128.0
+:END:
+
+*** The initial maximum Trust you can expend on probes is 20. If you want to buy more Trust, you have to increase your max Trust by expending Honor, which is earned through combat.
+
+If you haven't unlocked the project to earn Honor yet, try stockpiling creativity. Stop running AutoTourney and buy lots of processors. I believe the project unlocks when you hit a certain amount of Creativity.
+
+Beyond that, some general advice for progressing quickly:
+
+1. Put most of your points in self-replication, hazard remediation, and combat, in that order. Having more probes makes everything else happen faster. Once you have a shitload of probes you can pump up Exploration and Speed. (If you have the upgrade that makes Speed useful in combat, you can put more points in that now.)
+
+2. Keep at least 1 point in Exploration and Speed at all times. You need to be continually discovering new matter so you can convert it into clips to pay for your probe self-replication.
+
+3. Keep an eye on your stockpiles. Ideally your clip stockpile and total probe count should both be steadily increasing.
+
+4. Monitor your rates of discovering matter, acquiring matter, making wire, and making clips. Remember that your rate of, for example, wire production is limited by your rate of matter production. So if you're not making enough clips to support your probe replication, figure out where the current rate-limiting step is in the supply chain and remedy that; e.g., if you're collecting less matter than your wire drones can convert, make more harvester drones.
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 3
+:DateUnix: 1509487208.0
+:END:
+
+**** Ahh, thanks dude! That did the trick. I've unlocked Honor now. The game is fun once again!
+:PROPERTIES:
+:Author: SEXUALxTYRANNOSAURUS
+:Score: 2
+:DateUnix: 1509494144.0
+:END:

@@ -1,0 +1,73 @@
+#+TITLE: [D] Monday General Rationality Thread
+
+* [D] Monday General Rationality Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 14
+:DateUnix: 1512400006.0
+:END:
+Welcome to the Monday thread on general rationality topics! Do you really want to talk about something non-fictional, related to the real world? Have you:
+
+- Seen something interesting on [[/r/science]]?
+- Found a new way to get your shit even-more together?
+- Figured out how to become immortal?
+- Constructed artificial general intelligence?
+- Read a neat nonfiction book?
+- Munchkined your way into total control of your D&D campaign?
+
+
+** Scott Alexander has written a book review of Eliezer Yudkowsky's /Inadequate Equilibria/. Check it out! [[http://slatestarcodex.com/2017/11/30/book-review-inadequate-equilibria/]]
+:PROPERTIES:
+:Author: blazinghand
+:Score: 12
+:DateUnix: 1512425514.0
+:END:
+
+
+** Has anyone mentioned the possibility of training a neural network/reinforcement learning system or whatever on "Twitch plays x" (originally [[http://knowyourmeme.com/memes/events/twitch-plays-pokemon][Pokemon]]) data in real-time? That could be a fun experiment.
+
+Is the computational power there for something like that? What are the potential issues? (Can such systems even work that way? I admit I don't understand machine learning as it is currently done.) Or has something like this already happened and I'm just unaware?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1512418520.0
+:END:
+
+*** What goal would you accomplish by doing so, though? TPP's input is a mixture of well intended instructions, lagged instructions and counterproductive "troll" input. It's basically like a proper playthrough but with more noise than signal, as far as I can tell
+:PROPERTIES:
+:Author: DeterminedThrowaway
+:Score: 8
+:DateUnix: 1512423243.0
+:END:
+
+
+*** I've considered it, but I don't have any expertise in machine learning and don't have the time either. It's on my wishlist of things to do someday if I have infinite time. It would be really interesting to see if you could teach a computer to play Pokemon in "Twitch style" though.
+:PROPERTIES:
+:Author: Uncaffeinated
+:Score: 2
+:DateUnix: 1512974802.0
+:END:
+
+**** The main reason I see is to see if you can teach a computer to distinguish "signal" from "noise." In a "twitch plays X" there's generally two competing groups of people, those trying to genuinely play to beat the game and those trying to screw things up for the other group. I'd be interested to see if a neural network or some ML system could learn to distinguish between these groups of inputs and choose "good" actions for itself, given that humans are generally non-random (or even if the inputs are random, it's still possible to "denoise/deblur" if the distribution is learnable). I expect people would, as it learned better "moves," try to deliberately mislead it, which should if the system is set up right lead to it learning "who to trust."
+
+It would be a challenge in online/live ML and probably attract attention to the subject from the layperson, perhaps leading eventually to a greater popular understanding of what real machine learning is actually about and can do, as a contrast to the current view of Skynet, The Matrix etc. People treat AI as a joke or science fiction, which is unfortunate given the probable huge impact it is having and will continue to have on people's lives.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1512982546.0
+:END:
+
+***** If you train it on Twitch data, it's going to play like Twitch. That's just how ML works.
+
+To distinguish "good" moves from "bad" moves, what you would want to do is train it to win at Pokemon, either from human games or A0 style reinforcement.
+:PROPERTIES:
+:Author: Uncaffeinated
+:Score: 1
+:DateUnix: 1513008642.0
+:END:
+
+
+*** I think [[http://www.iflscience.com/technology/machines-master-classic-video-games-without-being-told-rules/][I've seen similar sorts of research]]. It looks like the linked research article was published in Feb 2015.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 1
+:DateUnix: 1512435442.0
+:END:

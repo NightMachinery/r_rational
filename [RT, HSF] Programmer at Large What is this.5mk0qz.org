@@ -1,0 +1,234 @@
+#+TITLE: [RT, HSF] Programmer at Large: What is this?
+
+* [[http://www.drmaciver.com/2017/01/programmer-at-large-what-is-this/][[RT, HSF] Programmer at Large: What is this?]]
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 57
+:DateUnix: 1483787397.0
+:END:
+
+** An outside view like this really exposes the weirdness inherent in our culture. Well done.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 12
+:DateUnix: 1483794026.0
+:END:
+
+*** I'm not sure distributing build artifacts is intrinsically perverse. If homomorphic encryption is possible, they should be able to continue this into the distant future.
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 10
+:DateUnix: 1483795904.0
+:END:
+
+**** A thing worth noting is that this is not, despite appearances, an author tract. The protagonist is not "correct", he's just from a different culture with different priorities and assumptions.
+
+Amongst those priorities is that the software ecosystem he lives in runs a slower than light interstellar trading ship. From their perspective, software that you can't modify long after the civilization that produced it has died or passed out of easy communication range is a death trap and is to be avoided at all cost.
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 25
+:DateUnix: 1483798107.0
+:END:
+
+
+** You should cross post this to [[/r/programming]] and [[/r/programmerhumour]]
+:PROPERTIES:
+:Author: ProfessorPhi
+:Score: 5
+:DateUnix: 1483801884.0
+:END:
+
+*** I tend to stay out of those reddits due to reasons, but someone else is welcome to post them there. :-)
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 5
+:DateUnix: 1483802357.0
+:END:
+
+
+** I could /feel/ the Vinge in the text miles before your inspiration. Well done. May hexapodia be your key insight.
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 6
+:DateUnix: 1483825136.0
+:END:
+
+
+** I felt that it's the beginning of a story?
+
+It's still an enjoyable short snippet.
+:PROPERTIES:
+:Author: hackerkiba
+:Score: 6
+:DateUnix: 1483797371.0
+:END:
+
+*** #+begin_quote
+  I felt that it's the beginning of a story?
+#+end_quote
+
+It is, although the story is mostly going to consist of a lot of episodes of similar structure and length rather than having any sort of overarching narrative arc.
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 9
+:DateUnix: 1483798133.0
+:END:
+
+
+** The insane part is, a huge amount of software isn't even being delivered anymore -- the build artifact is generating a view with an attached API.
+
+I imagine they'll see this as a way to keep the World Wide Web together on a planetary scale. If people can't download or make copies of software you can't let the network break. But it kills it when you have interplanetary scales. No one would wait eight years for the next web page to load.
+:PROPERTIES:
+:Author: zhanyin
+:Score: 5
+:DateUnix: 1483823170.0
+:END:
+
+
+** If people are interested, [[https://github.com/DRMacIver/programmer-at-large-notes][I've started writing up some world building notes so I can keep track of the details]].
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 4
+:DateUnix: 1483911474.0
+:END:
+
+
+** It's seems odd that the "unanswered question" is so simple- I find it hard to believe ideas about commerce and trade have shifted so much that "So they could sell the licenses alone" isn't a good answer.
+:PROPERTIES:
+:Author: fljared
+:Score: 1
+:DateUnix: 1483807693.0
+:END:
+
+*** Everything looks obvious when you're inside the system.
+
+From the perspective of the person asking the question this is like answering "Why don't they also sell the software /not/ bundled with getting punched in the face?" with "Because they want to punch people in the face" and immediately begets the question "Why are they not immediately out competed by companies who don't punch their customers in the face?"
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 13
+:DateUnix: 1483807959.0
+:END:
+
+**** that the person /asking/ doesn't find it obvious is not at issue; the implication that this is apparently an outstanding question "wiki" has been struggling with is what seems odd. At least, to me, can't speak for [[/u/fljared]]'s intention.
+:PROPERTIES:
+:Author: GopherAtl
+:Score: 3
+:DateUnix: 1483829344.0
+:END:
+
+***** #+begin_quote
+  "wiki" has been struggling with is what seems odd
+#+end_quote
+
+Ah, you're thinking of wiki as an AI (This is a problem the crew sometimes have too). It's not. It's literally a wiki, albeit a rather more advanced one than we're used to - it's a bunch of hand-written answers, a giant pile of heuristics, and a lot of manually tuned decision trees that have built up over the (many) years. The natural language interface is pretty good, and the depth and breadth of knowledge that you get with this level of brute force is huge, but there are still gaps in its knowledge that it has no inferential ability to close.
+
+The reason the answer doesn't exist isn't because wiki struggles to provide it. It's because nobody has written it. And the reason nobody has written it is that the study of the ethnography of software licenses is really niche. Most social science practiced shipboard is either about shipboard societies or is concerned with very specific questions of trade. Nobody tries to sell software licenses to interstellar traders twice, so the issue doesn't come up much.
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 7
+:DateUnix: 1483864512.0
+:END:
+
+
+***** To be fair, an interstellar wiki that can only transmit information at lightspeed is by necessity going to be less than universal. Maybe it's just something most people find intuitive and don't really ask about, and it's just that the protagonist is an extreme outlier who thinks themselves normal, as people do.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1483849845.0
+:END:
+
+
+** I could be so into this if not for this..
+
+#+begin_quote
+  In large contiguous civilisations with strong contract law it is common that rather than selling software you sell licenses, which grant the buyer the rights to use the software in a particular way.
+#+end_quote
+
+That's not the kind of license that the GPL is, at all. It's almost the exact opposite of that, and the kind of license described here is mostly not a real thing.
+:PROPERTIES:
+:Author: sparr
+:Score: 1
+:DateUnix: 1484001178.0
+:END:
+
+*** #+begin_quote
+  That's not the kind of license that the GPL is, at all.
+#+end_quote
+
+Yes it is? The GPL is a license to use the software in a particular way. That includes a great deal of leeway - modifying, redistribution, etc. - but it isn't total - you can't distribute build artifacts on their own, you can't remove the license, etc.
+
+It doesn't restrict what you do when you /run/ the software much (barely at all really), but that's not what the sentence says.
+
+Granted you usually don't /sell/ it, but there's nothing stopping you from doing so (and elaborating in story would open a whole extra can of worms).
+
+#+begin_quote
+  It's almost the exact opposite of that, and the kind of license described here is mostly not a real thing.
+#+end_quote
+
+This claim seems to ignore the existence of, like, basically all software, but in particular the fact that basically all proprietary software comes with an EULA.
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 5
+:DateUnix: 1484039687.0
+:END:
+
+**** OK, let me try to be more specific.
+
+There are a bunch of things you might do with a copy of some software:
+
+- Sell your only copy.
+- Make a new copy and sell that.
+- Modify your only copy.
+- Modify a new copy and give that away.
+- Modify a new copy and sell that.
+- Develop a new piece of software based on it.
+- Run it.
+- etc
+
+Copyright law says you're not allowed to do some of those things without permission. If you don't have a license, you can only do a few (useful) things, like run the software, delete it, write a review of it.
+
+The GPL is a license in the same way that licenses for /any other sort of media/ work. It gives you permission to do things that are otherwise illegal. You can still do all the things you could have done without the GPL, plus some things from the "reserved rights" list, like making and distributing copies.
+
+EULAs are the opposite of that. They try to take away your right to do things that you would already be allowed to do if there was no "license" at all. They might say you aren't allowed to run the software under some conditions, or that you can't write reviews of the software.
+
+As a general rule, I either decline or amend EULAs. There's rarely anything in them that I want or need, in exchange for all the restrictions.
+:PROPERTIES:
+:Author: sparr
+:Score: 2
+:DateUnix: 1484067744.0
+:END:
+
+***** I will grant that the description somewhat obscures the distinction between contract and IP law, but:
+
+- I don't think the latter can reasonably exist without the former, so the statement is still correct as written.
+- When you can give me an accurate description of the legal nuances of the code of Hammurabi (I'd pick something earlier, but we don't /have/ any records from anything that is as far before the present as the present is before this story) I might agree that this is a reasonable thing to be upset by.
+
+Nevertheless, the fundamental point remains correct even without clearing up that distinction: Software is not being exchanged, only a license to use that software in a particular way. What rights that license grants you may have defaults that are set by IP law, but that is essentially irrelevant to the explanation when what requires explaining is the very concept of software licenses.
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 3
+:DateUnix: 1484069052.0
+:END:
+
+****** #+begin_quote
+  Software is not being exchanged, only a license to use that software in a particular way.
+#+end_quote
+
+No. No No No. I understand why a lot of companies spend a lot of money convincing you that this is true; that's part of the unwritten "answer" in the original story here. But it's not. Not in the US, not in any of Europe afaik, nor anywhere else on Earth that I've heard of. A copy of the software is definitely being exchanged, and you can use that copy without needing a license.
+
+#+begin_quote
+  What rights that license grants you may have defaults that are set by IP law
+#+end_quote
+
+The *huge* distinction is between licenses that give you permission to do things that are otherwise illegal, and licenses that try to restrict you from doing things that are otherwise legal.
+:PROPERTIES:
+:Author: sparr
+:Score: 1
+:DateUnix: 1484069486.0
+:END:
+
+******* This has crossed my threshold of arguments not worth having on the internet, sorry.
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 3
+:DateUnix: 1484069700.0
+:END:

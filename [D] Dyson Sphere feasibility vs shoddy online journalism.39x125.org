@@ -1,0 +1,968 @@
+#+TITLE: [D] Dyson Sphere feasibility vs shoddy online journalism
+
+* [D] Dyson Sphere feasibility vs shoddy online journalism
+:PROPERTIES:
+:Author: lsparrish
+:Score: 16
+:DateUnix: 1434378234.0
+:END:
+I've been sprucing up a wikipedia page for a [[https://en.wikipedia.org/wiki/George_Dvorsky#Dyson_Sphere][transhumanist author]] who [[http://www.sentientdevelopments.com/2012/03/how-to-build-dyson-sphere-in-five.html][wrote about]] the prospect of making a Dyson Sphere in the near-ish future. AFAICT, he cited his sources and got all the facts pretty much dead on.
+
+A journalist [[http://www.forbes.com/sites/alexknapp/2012/04/03/destroying-mercury-to-build-a-dyson-sphere-is-a-bad-idea/][tried]] to shoot him down using some really bad numbers. It was pretty terrible because his core argument was that it would take 174 years to disassemble Mercury using the entire output of the sun at 1/3 efficiency. By contrast, when I do the calculations I get 4 /hours/. Even worse, using his own numbers gives me 1.75 years.
+
+Two media sources [[[http://www.popsci.com/science/article/2012-04/why-death-star-attack-mercury-harvest-solar-energy-not-worth-it][2]]] [[[http://motherboard.vice.com/blog/forget-wimpy-plans-and-nimbys-let-s-solve-the-energy-crisis-by-blowing-up-mercury][3]]] and one popular skepticism blog [[[https://worldofweirdthings.com/2012/04/05/why-we-wont-build-a-dyson-sphere-soon/][3]]] followed up on the story, all of them taking Knapp's 174 year number at face value despite him never explicitly giving the math.
+
+Anyone else have a similar story to share, and/or want to check my math in the WP article?
+
+Edit: Just to clarify, Knapp's [[http://www.forbes.com/sites/alexknapp/2012/04/03/destroying-mercury-to-build-a-dyson-sphere-is-a-bad-idea/][claim]] was that 174 years is the bare minimum based on fundamental energy constraints, not that it was a more realistic number given human factors or any such weaker claim that might be defensible. The 4 hour figure and 1.75 year figure are based on the total output collectable by a sphere, one surrounding our sun at 1.0 AU in the first case and another with his proposed surface area which also gets 1.4 kW/m^{2} from its star.
+
+
+** That number discrepancy made me laugh so much. It's sad how basic science gets thrown under the bus with shock journalism.
+:PROPERTIES:
+:Author: SkyTroupe
+:Score: 10
+:DateUnix: 1434380684.0
+:END:
+
+
+** Even if it took 174 years, that's going to be a fraction of the time the project as a whole would take, and even that's not a good argument about its validity.
+
+I would expect a classical Dyson sphere (a globe of independent habitats and manufactories orbiting the sun) to be the work of millennia... but it would pay for itself within a few production cycles because the process itself would produce valuable energy supplies, resources, and real-estate. Even if some part of the process took a long time to /complete/ that's almost irrelevant as an argument against it!
+
+Edit: I remember the Forbes article as well, and it was so bad that it wasn't even wrong.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 6
+:DateUnix: 1434382304.0
+:END:
+
+*** Hi Argent! /waves/. Small world, isn't it? Let's build bigger ones :-).
+:PROPERTIES:
+:Author: danielravennest
+:Score: 4
+:DateUnix: 1434387206.0
+:END:
+
+
+*** If it can pay for itself quickly, why would it take millennia to build? I figure it's an exponential growth thing. Once you've got the technology you need, you send a satellite to orbit the sun, beam the energy to a receiver on Mercury, use the energy to build more satellites, and the next thing you know there's so many satellites that the new ones don't get much sunlight and now you've hit peak solar and if you want more energy you'll have to look elsewhere.
+
+And now I want to write a story about someone about to finish a Dyson sphere and there's tons of worries about hitting peak solar and losing a bunch of jobs etc.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 2
+:DateUnix: 1434406183.0
+:END:
+
+**** #+begin_quote
+  If it can pay for itself quickly, why would it take millennia to build?
+#+end_quote
+
+Depends on the demand curve, how much of the energy goes to customers and how much gets ploughed back into production. New infrastructure is a customer, and if it's not paying as much as the paying customers, it's not going to get built.
+
+You're falling into the supply side fallacy that's been screwing up the US economy since Reagan. I mean Walmart can afford to build a zillion more locations and staff them, but they won't, because they don't project demand. So cutting their taxes won't convince them to build more stores... they'll just bank the difference.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1434407408.0
+:END:
+
+***** So it will take a long time to build, but it will pay for itself many times over as you build it. And it it's not so much that it takes a long time to build as it is that there's no point in building faster than a certain speed.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 1
+:DateUnix: 1434408466.0
+:END:
+
+****** Precisely. I don't know how fast it'll be profitable to build it out, I just think "as fast as you can build it" is probably optimistic.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1434414136.0
+:END:
+
+
+***** #+begin_quote
+  Walmart can afford to build a zillion more locations and staff them, but they won't, because they don't project demand.
+#+end_quote
+
+IMO this is a false analogy with regards to raw resources. There's no particular finite limit to the demand for computing power, usable work energy, scientific research equipment, or travel velocity -- if you produce more of these things, you just get stuff done faster or on a bigger scale. It's not quite like putting up more Wal-Marts to compete with each other over a fixed population's buying preferences.
+
+The demand at the margin should always tend to exceed supply, because these things create their own demand. It's more like internet bandwidth -- it sounds like you are talking about how we're going to run out of text files to send each other, without anticipating that more bandwidth is going to create more bandwidth-heavy uses, like youtube, netflix, etc.
+
+Edit: Clarity
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1434409308.0
+:END:
+
+****** I think you're arguing against a point I haven't made.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1434414000.0
+:END:
+
+******* You're saying it depends on the demand curve. But the demand curve would have to taper to essentially zero for this not to be profitable, given the rapid EROEI. Which I find pretty implausible, unless you unlock a more potent energy source that works anywhere you want (say direct matter-energy conversion). In that case, there's no real reason to have a Dyson Sphere even after thousands of years, other than as an accidental effect of people clustering together to avoid speed of light delays.
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1434483098.0
+:END:
+
+******** All demand curves taper essentially to zero.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1434483187.0
+:END:
+
+********* Doesn't matter. As demand decreases, so does market value. The lower the market value the more you have available to invest. That makes it cheaper to create new units. So it isn't really possible for the demand to get close enough to zero to outweigh the cost of the energy needed to make new units.
+
+The difference with Wal-marts is it costs roughly the same for each new store so new stores are unprofitable at some point when the market is saturated -- having excessive numbers of stores does not give you a resource to make a new store with.
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1434484193.0
+:END:
+
+********** #+begin_quote
+  As demand decreases, so does market value. The lower the market value the more you have available to invest.
+#+end_quote
+
+WAT?
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 0
+:DateUnix: 1434486971.0
+:END:
+
+
+**** You're right. However, if you do write this, think very hard about the math and the sheer scale of the thing. The "peak solar" aspect would only affect construction jobs, as the solar energy itself (the thing that most closely resembles oil) continues to flow (faster than ever, from the economic perspective) at the end of the project, which means the economy can still grow. You'd be transitioning from exponential growth to stable or diminishing growth. If you had a doubling time of 1 year, the whole project would be a mere 50 years or so, so the cultural aspects might be affected by that. A longer doubling time would give more time for it to become culturally entrenched though.
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1434409638.0
+:END:
+
+
+*** Yeah, but if you read the Dvorsky article again he explains why a very short timeline is surprisingly reasonable. The bottom line is self replicating robots.
+
+[[/u/danielravennest]] is currently writing a book on the most realistic short term path to making those in the very near future. My thinking is that we could probably use his approach to get started on an orbital factory array and bootstrap to a full self replicating system in a few decades.
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1434385788.0
+:END:
+
+**** (I know Argent from another forum, by the way)
+
+I don't know if my approach is the "most realistic", but I consider self-replicating robots or factories to be a hard design problem. Seed factories include a human element where needed. That can be hands-on work, or via remote control. They also allow for importing rare elements or hard to make parts, when that makes more sense.
+
+The way to think about large scale projects is their "doubling time". How long does it take to double your industrial capacity? Something, among raw materials, production processes, and energy supply, will be the rate-limiting item. Without a design, I can't tell you where the choke points will be, but I'm fairly certain there will be one or more such.
+:PROPERTIES:
+:Author: danielravennest
+:Score: 1
+:DateUnix: 1434387770.0
+:END:
+
+***** I don't see the technical issues to be the limiting points, at all. Any of them. I don't see any of the technical issues delaying the start of the project more than a century at most, considering where we were a century ago and where we are now.
+
+(insert flame about recently published and much lauded multi-thousand year future history using technology that's largely stalled out about 50-100 years from now)
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1434401614.0
+:END:
+
+
+***** #+begin_quote
+  I consider self-replicating robots or factories to be a hard design problem. Seed factories include a human element where needed.
+#+end_quote
+
+Right, my 50-year plan would involve starting with humans teleoperating all the robots and gradually improving the automation rate based on those experiences. I can't think of a reason it would be (much) harder than designing self-driving cars.
+
+Also, I'm figuring the first group of robots would only reproduce most of their mass, maybe 95%, with the rest being 'vitamins' shipped up from earth. They would be based on asteroids and/or the moon, initially. If you assume the operators stay on earth, the Moon has a relatively low delay time compared to Mercury (or a lot of NEAs), but it's still a half-second. We could also arrange to do the complex manufacturing tasks in closer orbits where there's less time delay, by sending smaller chunks of matter from the Moon/NEA to rendezvous with LEO-MEO orbital stations. Even with a half-second delay, with a bit of practice you could probably walk around and do stuff.
+
+We can also establish off-world colonies near the manufacturing (but far enough to be out of harm's way for high energy processes) as a solution to the time delay problem. This would be economic incentive for billions of people to leave the planet, even if short lived due to increasing automation (which the workers could acquire a partial ownership in).
+
+This could start in the NEA mining stage, with fair-sized asteroids accumulating a population in caves/inflatable areas, using smaller centrifuges on the inside for day-to-day gravity (at least until we find a cure for zero-gee related health problems). As you famously noted [[http://yarchive.net/space/exotic/bubbleworld.html][a few decades ago]] this lets you build fantastically large habs. [[http://gravitationalballoon.blogspot.com/][This guy]] took the concept and ran with it, as you can design huge volumes for billions of people this way. For smaller populations, we probably don't actually need the habitats to be all that big (size of a warehouse or so is fine), so the gravitational pressure doesn't need to be huge, although the radiation shielding from living deep in the asteroid is nice.
+
+I see the Mercury project starting on the ground with launchers and so on perhaps, but eventually it seems like the easiest way is to just focus a lot of light on Mercury until it starts spitting chunks of rock out at EV. Once you get it disassembled, it ends up an asteroid belt with about 100 times the mass of the the one we now have betwen Mars and Jupiter. The collectors themselves would remain in 0.3 AU in my version (no reason not to), possibly closer, and would be partly levitated by light pressure in order to allow their orbits to remain part of a synchronized semi-equatorial band (aligned with the equator but offset), which is far enough north or south to avoid blocking the earth. These would be managed using computers, either on-board or on control modules within a light-second, so any misalignment gets corrected quickly. Light pressure could be used to steer, in a manner similar to [[http://server-sky.com/ThinsatV4][this]], i.e. variable reflectivity towards the edge of the component.
+
+The human settlements, along with most of the manufacturing operations, would mostly be in the artificial asteroid belt (which I'm terming the Manufacturing Belt), which would contain most of the mass of the disassembled Mercury. (These might be processed into uniform chunks as it is being disassembled.) The belt itself would be thin enough not to block a noticeable amount of light from the earth (a heck of a lot thinner than Mercury) so we don't need it to be offset like we do the collectors. I don't see the need for collectors to be very massive, mostly thin foil would be best, so we can control where they "orbit" for a fair range of latitudes. The poles would eventually get filled in with very light graphene based collectors (which might have [[http://www.newscientist.com/article/mg22630235.400-spacecraft-built-from-graphene-could-run-on-nothing-but-sunlight.html][other properties]] besides light reflection that make this easier by a couple orders of magnitude).
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1434412410.0
+:END:
+
+****** I agree with most of your comment, and would invite you to contribute to the wikibooks I have been working on:
+
+- [[http://en.wikibooks.org/wiki/Space_Transport_and_Engineering_Methods]]
+
+- [[http://en.wikibooks.org/wiki/Seed_Factories]]
+
+Part of the reason they are hosted on that site is to make it easy to collaborate. I don't know everything. Some specific items:
+
+#+begin_quote
+  Right, my 50-year plan would involve starting with humans teleoperating all the robots
+#+end_quote
+
+Actually, I want to start by colonizing Earth. 80% of the planet is oceans, deserts, and ice caps, and a significant part of the remainder is under-developed. Seed factories and automation can help a lot of people down here who need it. Also, for future space operations, you are going to need rocket factories and launch sites, and therefore a way to bootstrap those too.
+
+By starting on Earth, you can develop the bootstrapping technology, and also practice remote operations in those difficult environments.
+
+#+begin_quote
+  , I'm figuring the first group of robots would only reproduce most of their mass, maybe 95%
+#+end_quote
+
+I was part of a "Solar Power Satellite built from Lunar materials" study sponsored by the Space Studies Institute. We found that 98% of the satellite mass could be made from the Moon, with the remainder from Earth. That assumed a mature space manufacturing capability, which would be consistent with the scale of producing many large power satellites. The study was done around 1986, so it did not consider modern robotics and automation, and did not consider asteroid resources. Back then only [[http://neo.jpl.nasa.gov/stats/][~ 100 Near Earth Asteroids were known]], vs 12,714 today. Statistically, the much larger population means more of them are in easy orbits. Also, ion/plasma electric propulsion was much less developed than today, and solar panels to power them were much less efficient. Since asteroid types have different compositions than the Moon, you have more opportunities to get what you need.
+
+Early bootstrapping is a different situation than mature space industry. The question is how to get from one to the other. I assume you start with the easiest products: bulk radiation shielding for habitats, carbon and water from chondrite-type asteroids. That can be reformed to hydrocarbons & oxygen, which makes good high-thrust propellant for landing on the Moon. Water and oxygen are also needed for life support. Metallic-type asteroids can provide feed stock for any number of mechanical and pressure vessel parts. From this level you gradually increase the range of products and percentage manufactured locally.
+
+#+begin_quote
+  If you assume the operators stay on earth, the Moon has a relatively low delay time compared to Mercury (or a lot of NEAs), but it's still a half-second.
+#+end_quote
+
+With modern video game technology, it's pretty easy to simulate time-delayed operations, and you could likely project a predictive overlay (augmented reality) over the current video. In other words, you can show a ghost image of your rover where it's going to be 1 second in the future, or whatever the operator reaction delay is. Operators in Lunar orbit or Lagrange points would have near real-time control, and these could be the same people who make maintenance trips to the surface when needed. An operator station in orbit is easier to spin up to 1 gee, and assuming they are also processing asteroid materials, or lunar materials flung into orbit, there is plenty of shielding mass available.
+:PROPERTIES:
+:Author: danielravennest
+:Score: 3
+:DateUnix: 1434463417.0
+:END:
+
+******* #+begin_quote
+  I agree with most of your comment, and would invite you to contribute to the wikibooks I have been working on
+#+end_quote
+
+I may take you up on that. However, it occurs to me that my tendency is sometimes more towards original ideas, and/or novel uses for old ones, and original research is something that Wikipedia prohibits (I'm actually skating a thin line with the edits to Dvorsky's page, NOR-wise), while Wikibooks also apparently [[https://en.wikibooks.org/wiki/Wikibooks:What_is_Wikibooks#Wikibooks_is_not_a_mirror_or_a_text_repository][frowns on it]]. So Wikiversity might be a better place to publish/republish certain of these concepts at first. In theory, one could get more eyes on the subject for peer review in this manner (although it looks like WV isn't especially widely known/used).
+
+#+begin_quote
+  I was part of a "Solar Power Satellite built from Lunar materials" study sponsored by the Space Studies Institute.
+#+end_quote
+
+Cool! Any chance that's online anywhere with your name credited? I couldn't find it by googling that title. It would strengthen the [[https://en.wikipedia.org/wiki/User:Lsparrish/Dani_Eder][case]] for giving you a [[https://en.wikipedia.org/wiki/Dani_Eder][Wikipedia bio]], if you're interested in that.
+
+#+begin_quote
+  We found that 98% of the satellite mass could be made from the Moon, with the remainder from Earth. That assumed a mature space manufacturing capability, which would be consistent with the scale of producing many large power satellites.
+#+end_quote
+
+This sounds plausible to me. Was there any kind of critical peer review that would potentially refute the numbers? Also, what components did the remaining 2% consist of -- printed semiconductor electronics? At some scale, a fab/cleanroom constructed in orbit (a gravity balloon filled with a thin atmosphere of argon, for example) might be less expensive, not necessarily so much due to launch considerations as the expense of running such facilities on earth vs space.
+
+#+begin_quote
+  The study was done around 1986, so it did not consider modern robotics and automation, and did not consider asteroid resources. Back then only ~ 100 Near Earth Asteroids were known, vs 12,714 today. Statistically, the much larger population means more of them are in easy orbits. Also, ion/plasma electric propulsion was much less developed than today, and solar panels to power them were much less efficient. Since asteroid types have different compositions than the Moon, you have more opportunities to get what you need.
+#+end_quote
+
+I wonder how many NEAs really would make good long-term colonies / save on delta-vee relative to the Moon? I could see [3753 Cruithne](en.wikipedia.org/wiki/3753_Cruithne) (with the kind of linear track based deceleration tech I mentioned and/or ion propulsion, since it is not cheap to get to from earth using rocket fuel) being of interest due to the 1-year orbit it has. Humans living there would be assured of a yearly time when they can communicate in real time with loved ones on earth. It might also serve as an acceptable launchpad for Mercury-targeting missions (or any inner planet really).
+
+The main limitation I'm seeing is that (as I understand it) most of the so-called NEAs are eccentric sun-orbiters, not circularized earth-orbiters, so you will generally have a variable distance from earth which complicates teleoperation. For simple tasks, automation should be adequate, and automation could become good enough to manage remotely as well, but the initial targets should probably be something simpler. That's the main argument for the Moon and/or other earth-orbiting objects (although the video game tech might actually be enough to work around this given how predictable the environment should be).
+
+We could take manageable-sized chunks into a lunar or earth orbit, or circularize the orbits of existing smaller meteors. The bottlenecks there would be rocketry for the tugs and fuel (although fuel can be pretty cheap in this context once there's a way to mine a carbonaceous asteroid for water).
+
+Then there are the [[https://en.wikibooks.org/wiki/Space_Transport_and_Engineering_Methods/Guns_and_Accelerators][various kinds]] [[https://en.wikibooks.org/wiki/Space_Transport_and_Engineering_Methods/Guns_and_Accelerators2][of guns]] which can be mounted on asteroids regardless of where they are -- Stuart Armstrong mentioned mass drivers, which most space nuts know about, but [[http://settlement.arc.nasa.gov/Nowicki/SPBI1SI.HTM][according to Keith Lofstrom]] these aren't necessarily the cheapest (and probably can't work at all on earth) due to scaling barriers. I'm partial to light gas guns powered by LH2 + solar heating.
+
+Whatever style of gun, I'd suggest that since tension is easier to engineer for than compression, in a high scale application the chunk in the process of being launched would be moved to the far end and accelerated towards the main body. It would then either dodge around at the last instant, or pass through a tunnel (which it could keep accelerating through). Lots of asteroids are big enough that the gun could be /just/ a tunnel.
+
+#+begin_quote
+  Early bootstrapping is a different situation than mature space industry. The question is how to get from one to the other. I assume you start with the easiest products: bulk radiation shielding for habitats, carbon and water from chondrite-type asteroids. That can be reformed to hydrocarbons & oxygen, which makes good high-thrust propellant for landing on the Moon. Water and oxygen are also needed for life support. Metallic-type asteroids can provide feed stock for any number of mechanical and pressure vessel parts. From this level you gradually increase the range of products and percentage manufactured locally.
+#+end_quote
+
+Good points all around, an given that the oxygen and water requirements can be met in space without, human settlement does make some sense. However, if it turns out to be relatively simple to make high-decel tracks/tethers like I'm thinking, all-robotic seeding of sites that are selected for a low communications delay from earth might be the cheapest option at the lowest viable scale. It also opens the prospect of using high-accel launchers to get the seed equipment off of earth to begin with (although they aren't mutually exclusive).
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1434568355.0
+:END:
+
+******** #+begin_quote
+  original research is something that Wikipedia prohibits
+#+end_quote
+
+I treat the two wikibooks I am working on as engineering textbooks. So I see no problem including worked-out examples to show how to design something. If something is truly new, then yes, go publish it somewhere and link back to it in the wikibook.
+
+#+begin_quote
+  Cool! Any chance that's online anywhere with your name credited?
+#+end_quote
+
+I don't know if it's online, but our study report was published in the journal /Space Power/ v. 6, no. 1, 1986, as a special issue. (Pergamon Press, ISSN 0883-6272). I'm listed as a contributor (Dani Eder).
+
+#+begin_quote
+  Also, what components did the remaining 2% consist of -- printed semiconductor electronics?
+#+end_quote
+
+If I remember right, it was mainly rare elements not found on the Moon, or difficult to make parts. Semiconductors are a poor candidate to make in space, not because of vacuum or clean room conditions, which are easy to make in space, but the very tight mechanical and thermal tolerances for the optics and masks. You need to expose the various layers for a chip in exactly the same places, hundreds of times per wafer. You aren't allowed any thermal expansion or contraction, vibration, etc. So while the chips are small, the lithography machines are massive, complicated, and very accurate. Only a couple of places in the world make them, and they would not take kindly to being launched on a rocket. Until you need millions of chips in space, simply launching finished ones is less mass than even one lithography machine.
+
+Now, power electronics, in particular solar cells, don't require nanometer tolerances, and are quite reasonable to make in space. Silicon is usually the second most common element in space rocks, and that's the most popular solar cell material.
+
+#+begin_quote
+  I wonder how many NEAs really would make good long-term colonies / save on delta-vee relative to the Moon?
+#+end_quote
+
+It depends on what technology you have for landing on the Moon. Today you need chemical rockets, because you need high thrust to land without crashing. Electric propulsion is roughly 10 times as fuel-efficient (10x higher exhaust velocity), so you can apply more delta-V for the same velocity change. In fuel terms, 90% of Near Earth Asteroids are easier to reach than the Moon. A secondary factor is that the Moon itself can provide a gravity assist of 1-2 km/s in both directions when trying to reach a NEA, but not when you try to land on it.
+
+If you build an efficient way to get mass off the Moon, and to deliver crew and cargo to the surface, the numbers change a whole lot. In that case, NEA's primary advantages are their different composition, high in carbon, water, and reduced metals, that the Lunar surface is short on. What I expect then is a colony in free-orbit, to get full time sunlight, with both lunar and asteroidal raw material supply.
+
+#+begin_quote
+  The bottlenecks there would be rocketry for the tugs and fuel (although fuel can be pretty cheap in this context once there's a way to mine a carbonaceous asteroid for water).
+#+end_quote
+
+Plasma thrusters like the VASIMR are not choosy about propellant, as long as your microwave heater is tuned to the particular material. Oxygen will work, and that's the most common element in most rocks. For hauling asteroids back to the Moon's vicinity, you consume ~ 2% of the returned mass in propellant for the next trip, so it is self-sustaining.
+
+Near Earth Asteroids don't have water as water or ice, they are too close to the Sun to hold on to it. What they have is "hydrated minerals" where the H and O are chemically bound. Most of it can be extracted by simple heating to 200-400C. A solar still to extract and condense water is easy to do in space. Reducing mineral oxides to their constituent elements requires lots higher temperatures, but those temperatures are lower in a vacuum than at Earth pressures (lower vapor pressure for the evolved Oxygen, mostly)
+
+I see the early colonies being in the Earth-Moon vicinity, then extending to other orbits using sequential bootstrapping. You emplace a starter habitat and production kit on a particular asteroid, then forage around it (in delta-V terms) for other resources. Eventually you can produce a new habitat and starter kit, and use an electric tug to move it to another asteroid farther out.
+:PROPERTIES:
+:Author: danielravennest
+:Score: 2
+:DateUnix: 1434650039.0
+:END:
+
+********* #+begin_quote
+  If something is truly new, then yes, go publish it somewhere and link back to it in the wikibook.
+#+end_quote
+
+Not sure if it's truly new, but I couldn't find [[https://en.wikiversity.org/wiki/User:Lsparrish/Research/Hypervelocity_Landing_Tracks][this idea]] anywhere else, so I've posted it to wikiversity. Feel free to tear it apart. :)
+
+#+begin_quote
+  If I remember right, it was mainly rare elements not found on the Moon, or difficult to make parts.
+#+end_quote
+
+Maybe given the [[https://en.wikipedia.org/wiki/KREEP][KREEP]] regions, we could extract these economically? Of course, early in the boostrapping it still makes sense that we'd want to remain focused on the heavy stuff like iron.
+
+#+begin_quote
+  Semiconductors are a poor candidate to make in space, not because of vacuum or clean room conditions, which are easy to make in space, but the very tight mechanical and thermal tolerances for the optics and masks.
+#+end_quote
+
+I get what you are saying, but it seems like this is all essentially scale dependent. Self replicating/growing factory systems could let you get to pretty big scales in short period of time. Of course, that also lets you launch stuff from earth more easily, so maybe it doesn't have relevant economic advantages until you need more than earth based economies can comfortably produce.
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1434999965.0
+:END:
+
+********** #+begin_quote
+  Not sure if it's truly new, but I couldn't find this idea anywhere else, so I've posted it to wikiversity. Feel free to tear it apart. :)
+#+end_quote
+
+Off the top of my head, here are some related concepts. There may be others if I think harder:
+
+- "Crashportation", landing on an airless body via friction, either with a runway, rail, or cloud of particles placed in your way.
+
+- Loftstrom Loop (by Keith Lofstrom). A ribbon of steel segments which either fly a ballistic arc from the surface, or are in orbit. Vehicles accelerate by magnetic friction with the segments as they fly past.
+
+- Magnetic friction is obviously not new, it dates back to experiments by Faraday.
+
+#+begin_quote
+  Maybe given the KREEP[2] regions, we could extract these economically?
+#+end_quote
+
+Those regions are high in Potassium, Rare Earth Elements, and Phosphorous, hence the name. The rare elements are things like Fluorine, which is useful as a chemical reagent, and very rare on the Moon.
+
+#+begin_quote
+  Self replicating/growing factory systems could let you get to pretty big scales in short period of time.
+#+end_quote
+
+This is true, but the world still only supports one Intel, and only three or four really big chip makers. The question is where is the crossover, given reasonably cheap launch from Earth (SpaceX with solved reusability), and the high value-to-mass ratio of electronics. You would have to use a lot of chips to save a few dollars per chip in launch cost to justify a space fab.
+
+Don't forget that self-replicating factory systems are just as viable on Earth, and there is a bigger market down here. So you are not really competing with Intel as it is today, you are pitting your space replicating factories against Earth replicating factories.
+:PROPERTIES:
+:Author: danielravennest
+:Score: 2
+:DateUnix: 1435012417.0
+:END:
+
+
+**** Well, honestly, I figure the real limiter on the growth of a swarm would simply be "On the margin, people would rather stay in the already existing swarm bits where there are lots of people rather than have even more energy available for personal use in a thinly peopled one". Doesn't matter how fast you /could/ build it if you don't have any use for it. Heck, by square km, I'd be unsurprised if most of a growing swarm was "Nature" preserves and similar artworks.
+:PROPERTIES:
+:Author: Izeinwinter
+:Score: 1
+:DateUnix: 1434389990.0
+:END:
+
+***** See, it's really a matter of demand, which is more a function of imagination, not "minimum humans absolutely need to survive and be comfortable". If you can't think of a use for it, then yeah you won't end up building it. But it's not that hard. Nature preserves are one obvious thing, but there's lots more.
+
+Say you want to build a solar system sized telescope to scan the heavens in detail and download alien life forms from distant planets. More speculatively, resolve the dust particles 100 light-years away down to the plank length and compute your way back to a historical snapshot of the earth 200 years ago (including the brain states of all persons living at the time).
+
+Or say you want to figure out how to make high grade femtotech using experimental data from high energy particle interactions and exotic matter. We spend billions on stuff like the LHC right now using earth's resources, but if you build the Dyson sphere first you can build a billion LHCs for a dollar.
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1434410200.0
+:END:
+
+****** Not talking about minimums. Talking about diminishing returns, and the relative scales. Solar output is 3.8 x10 to the 26th power. Assume every single individual in a 12 billion population can think of a use for an average of a gigawatt of power each, continuously and the conversion efficiency is typically 30 some percent.
+
+The installation required to harvest that would be collecting one part in a hundred million of the output of the sun.
+
+And there are downsides to making the swarm bigger - the bigger it is, the further you are going to have to travel to interact with other people, which is most of what the economy, and the interesting parts of life consists of, which is why I'd expect the swarm to /not/ grow all that quickly. Heck, just communicating with others slows down the bigger the swarm gets, due to light-speed lag. Any and all possible uses you can think of can be met by an incomplete swarm. Biospheres to go camping in? Sure, biomes the size of earth with an average population of "5000 campers and some grad students" are invisible gnats in this context.
+
+The only exception I can think of is the Nicoll-Dyson laser, and actually building one of those is sure and certain sure to draw hostile attention if there is anyone else in the lightcone.
+:PROPERTIES:
+:Author: Izeinwinter
+:Score: 1
+:DateUnix: 1434805858.0
+:END:
+
+
+**** #+begin_quote
+  The bottom line is self replicating robots.
+#+end_quote
+
+If the goal is "building a Dyson sphere", perhaps. But that's never the goal, like the goal in the settlement of Long Island wasn't creating a bunch of skyscrapers.
+
+If you do have a bunch of self-replicating robots building a Dyson sphere in minimal time, that's going to mean the robots are the agency behind it, and they've gone Borg on us.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 0
+:DateUnix: 1434387527.0
+:END:
+
+***** #+begin_quote
+  If the goal is "building a Dyson sphere", perhaps. But that's never the goal, like the goal in the settlement of Long Island wasn't creating a bunch of skyscrapers.
+#+end_quote
+
+Why? Because nobody has a use for a solar system scale computer / telescope / laboratory / interstellar probe launcher in the next 100 years?
+
+#+begin_quote
+  If you do have a bunch of self-replicating robots building a Dyson sphere in minimal time, that's going to mean the robots are the agency behind it, and they've gone Borg on us.
+#+end_quote
+
+Pretty sure that doesn't logically follow, it's a generalization of just one possible situation (independent AGI with agency). If we design a bunch of self-replicating robots and tell them to build and maintain a dyson sphere, we don't have to assign them any agency or higher reasoning capacity whatsoever. The components can be created and kept in place with mechanisms not much more complicated than self-driving cars (narrow AI).
+:PROPERTIES:
+:Author: lsparrish
+:Score: 2
+:DateUnix: 1434395517.0
+:END:
+
+****** #+begin_quote
+  Because nobody has a use for a solar system scale computer / telescope / laboratory / interstellar probe launcher in the next 100 years?
+#+end_quote
+
+Because building a Dyson Sphere is monumentally disruptive to pretty much every other operation, habitat, business, organization, nation-state, cooperative, or other legally relevant entity functioning in the solar system, and anyone proposing such a development is going to be ass, dorsal fin, tentacle, and primary chemosensory organ deep in lawsuits and challenges fifty nanotau after the paperwork hits the net.
+
+#+begin_quote
+  If we design a bunch of self-replicating robots and tell them to build and maintain a dyson sphere [...]
+#+end_quote
+
+See above. I don't see this happening on this time scale unless a rogue organization does it.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: -2
+:DateUnix: 1434397003.0
+:END:
+
+******* On the contrary, it would be economically beneficial to all existing colonies to have a source for cheap power / computing / scientific research. The only way it could be disruptive is if designed incompetently (e.g. block the light from the sun to the earth) or maliciously. If someone manages to get even slightly close to the point of doing it maliciously, we're screwed.
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1434399955.0
+:END:
+
+******** #+begin_quote
+  On the contrary, it would be economically beneficial to all existing colonies to have a source for cheap power / computing / scientific research.
+#+end_quote
+
+The organization/cooperative/government/groupsentience/collective/legalentity responsible would need to prove that, acquire insurance bonds, put rescue funds into risk escrow, etc...
+
+They'd also have to acquire title to Mercury, Venus, etcetera. There will undoubtedly be competing claims.
+
+Given that market forces will lead to the same result, albeit over a longer period, as the demand for power and computronium grew... I just don't see them starting out by building 20th Century Manhattan in the 1600s.
+
+If there's a unified United Solar Government, like McCarthy's Queendom, yeh. But I don't see that developing.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: -1
+:DateUnix: 1434401211.0
+:END:
+
+
+***** It could also mean that we asked them to build a Dyson sphere because there's no real advantage to waiting. We don't need a Dyson sphere, but we don't need to not have one either.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 1
+:DateUnix: 1434422123.0
+:END:
+
+****** Apart from the fact that the Dyson sphere will obscure the sun for all the habitats outside it, and interfere with the guys terraforming Mars, and the folks who want to build a launching laser for interstellar probes instead are filing a lawsuit, ...
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: -2
+:DateUnix: 1434449768.0
+:END:
+
+******* Actually that's not needed. You can leave the ecliptic plane bit out and Mars won't know the difference.
+:PROPERTIES:
+:Author: Jinoc
+:Score: 1
+:DateUnix: 1434461774.0
+:END:
+
+******** Initially. I think it would be challenging at the very least to keep the ecliptic unaffected once you get a significant fraction of a Dyson Sphere populated. And those Martians are thinking in the long term.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 0
+:DateUnix: 1434462045.0
+:END:
+
+
+******* Just stick lasers on them to shine lights on all the habitats that need it. And now you have complete control over the spectrum you get so you can cancel out global warming and stuff like that.
+
+#+begin_quote
+  and the folks who want to build a launching laser for interstellar probes instead are filing a lawsuit, ...
+#+end_quote
+
+Can't build a Nicoll-Dyson laser without a Dyson sphere.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 1
+:DateUnix: 1434477385.0
+:END:
+
+******** #+begin_quote
+  Just stick lasers on them to shine lights on all the habitats that need it. And now you have complete control over the spectrum you get so you can cancel out global warming and stuff like that.
+#+end_quote
+
+You think that's going to make the lawyers stay away?
+
+#+begin_quote
+  Can't build a Nicoll-Dyson laser without a Dyson sphere.
+#+end_quote
+
+Pretty sure Forward's design didn't need one.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 0
+:DateUnix: 1434478093.0
+:END:
+
+********* #+begin_quote
+  You think that's going to make the lawyers stay away?
+#+end_quote
+
+Nobody will come at you for the first satellite, since nobody will be able to see it. By the time it becomes a problem, they'll accept something like shining lasers as a solution. Also, there's a good chance that it will be the government who does this, which makes them pretty much immune to lawyers. It's like how they can build subways without buying the rights to going under everyone's houses.
+
+#+begin_quote
+  Pretty sure Forward's design didn't need one.
+#+end_quote
+
+Either you have more resources than you can use, in which case you might as well build a Dyson sphere, or you don't, in which case you'll need a Dyson sphere. You might not build it as fast as possible, but if you're going to need the energy, you'll have to build it fast enough to keep up with demand.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 1
+:DateUnix: 1434478364.0
+:END:
+
+********** #+begin_quote
+  Nobody will come at you for the first satellite, since nobody will be able to see it.
+#+end_quote
+
+Apart from like every traffic control division of every space industry group/organization/cooperative/etc operating anywhere in the solar system.
+
+#+begin_quote
+  Also, there's a good chance that it will be the government who does this, which makes them pretty much immune to lawyers.
+#+end_quote
+
+No, it doesn't, it really doesn't.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1434480042.0
+:END:
+
+*********** #+begin_quote
+  Apart from like every traffic control division of every space industry group/organization/cooperative/etc operating anywhere in the solar system.
+#+end_quote
+
+You'll have to go through the paperwork, but it won't be any different from putting a satellite around anywhere.
+
+#+begin_quote
+  No, it doesn't, it really doesn't.
+#+end_quote
+
+Then how are there subways?
+:PROPERTIES:
+:Author: DCarrier
+:Score: 1
+:DateUnix: 1434480240.0
+:END:
+
+************ #+begin_quote
+  You'll have to go through the paperwork, but it won't be any different from putting a satellite around anywhere.
+#+end_quote
+
+Which is a long way from "Nobody will come at you for the first satellite, since nobody will be able to see it."
+
+#+begin_quote
+  Then how are there subways?
+#+end_quote
+
+The government has lawyers. That doesn't make them immune.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1434481640.0
+:END:
+
+************* #+begin_quote
+  Which is a long way from "Nobody will come at you for the first satellite, since nobody will be able to see it."
+#+end_quote
+
+I mean that they're not going to get mad at you for blocking the sun. It will still need the normal amount of paperwork. And the vastly more expensive normal amount of rocket fuel.
+
+#+begin_quote
+  The government has lawyers. That doesn't make them immune.
+#+end_quote
+
+What I meant was that they wouldn't be stopped by lawyers. If you tried to build a subway and didn't buy permission from everyone on the path (which would be impossible), you'd be sued and lose. If the government does it, they can still get sued, but they'll win.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 1
+:DateUnix: 1434482211.0
+:END:
+
+************** #+begin_quote
+  I mean that they're not going to get mad at you for blocking the sun.
+#+end_quote
+
+They'll still file lawsuits, probably before you launch the first satellite, as soon as you apply for permission to build the thing.
+
+#+begin_quote
+  If the government does it, they can still get sued, but they'll win.
+#+end_quote
+
+Um, no, not necessarily. The subway routes under New York, for example, are the result of decades of legal wrangling and lawsuits which the government /didn't/ always win.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1434482624.0
+:END:
+
+*************** #+begin_quote
+  They'll still file lawsuits, probably before you launch the first satellite.
+#+end_quote
+
+For what?
+
+#+begin_quote
+  Um, no, not necessarily. The subway routes under New York, for example, are the result of decades of legal wrangling and lawsuits which the government didn't always win.
+#+end_quote
+
+Interesting. I tried googling for it and just found something about a suicide attempt. Got any links?
+:PROPERTIES:
+:Author: DCarrier
+:Score: 1
+:DateUnix: 1434482964.0
+:END:
+
+**************** #+begin_quote
+
+  #+begin_quote
+    They'll still file lawsuits, probably before you launch the first satellite.
+  #+end_quote
+
+  For what?
+#+end_quote
+
+For the expected disruption /your/ large scale engineering scheme will have on /their/ large scale engineering scheme.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1434483343.0
+:END:
+
+***************** What large scale engineering scheme? It's just one tiny satellite.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 1
+:DateUnix: 1434483442.0
+:END:
+
+****************** So you're planning on building the sphere as a fait accompli without getting anyone's approval or agreement? Pretending that the early stages are something else altogether? I don't think you've thought things through.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1434483604.0
+:END:
+
+******************* It's not an all-or-nothing thing. You start with a satellite, then you build another. You may or may not stop at some point. If you don't, you end up with a Dyson sphere. Maybe there will be too many people complaining that I'm replacing natural sunlight with artificial cancer-causing lasers and I'll have to stop. But it's not going to be the first satellite.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 1
+:DateUnix: 1434484708.0
+:END:
+
+******************** #+begin_quote
+  It's not an all-or-nothing thing. You start with a satellite, then you build another. You may or may not stop at some point. If you don't, you end up with a Dyson sphere.
+#+end_quote
+
+Yes, that was what I originally suggested would happen. I'm simply pointing out that the process is going to be bottlenecked by political, legal, and economic issues... not but how fast you can build robots.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1434486940.0
+:END:
+
+
+** Did he just assume we'd take mercury apart from the earth's orbit?
+
+*autocorrect mangled a wood
+:PROPERTIES:
+:Author: davidmanheim
+:Score: 4
+:DateUnix: 1434379842.0
+:END:
+
+*** Apparently... And with earth's own energy (from fossil fuels I guess?) to boot, at least at first.
+
+The 1.0 AU spec is ridiculously underoptimized (why not just set up the sphere at 0.3 AU, or even closer?) but that's not a mistake per se.
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1434381795.0
+:END:
+
+**** And it's assuming that you only deploy one collector before destroying Mercury, I think. The followup article addresses some of the issues and introduces a large batch of new ones.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1434434155.0
+:END:
+
+
+** The Dyson Sphere (swarm) is barely conceivable, but I really wish we would concentrate on the more plausible next step in space.
+
+If we can get a permanent colony on the Moon, that would be a good start to a real presence in space. A Moon colony would help us answer a lot of very important questions about human habitation in low gravity, and large-scale long-term closed environments.
+
+The Dyson Sphere concept just seems like pie in the sky when we don't even have one permanent colony on any other planetary or moon body.
+:PROPERTIES:
+:Author: Farmerbob1
+:Score: 3
+:DateUnix: 1434420186.0
+:END:
+
+*** I don't think a Dyson swarm is something you set out to build. At some point, sending solar panels to the sun becomes a cost-effective energy source. When you run out of places to put them, you now have a Dyson swarm. There's no particular advantage to building a complete one. In fact, the energy per satellite starts going down once you get enough for them to occlude each other.
+
+I guess it would be useful to have a full one for Nicoll-Dyson lasers. And those things are probably pretty important for near light-speed travel. Rockets get exponentially more expensive as delta-v increases, but radiation pressure just gets more efficient.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 3
+:DateUnix: 1434422463.0
+:END:
+
+
+*** #+begin_quote
+  really wish we would concentrate on the more plausible next step in space.
+#+end_quote
+
+Actually I think it is likely that we can develop the resources of near-earth space entirely robotically. The only reason (other than simple curiosity/tourism) to put people in habitats is to minimize speed of light based communications delays to their work site. (Given how close the Moon is, that's really only going to matter in a critical way when we get near the Mercury-is-toast stage, and that's /only/ assuming we aren't already at the AI-is-easy stage by the time we get there.)
+
+#+begin_quote
+  A Moon colony would help us answer a lot of very important questions about human habitation in low gravity, and large-scale long-term closed environments.
+#+end_quote
+
+Very important to /what/, exactly? A pipe dream Mars mission that does basically nothing for us besides yet more tourism? Many of the problems we're supposedly solving/learning about are just the result of insufficient equipment/energy/resources to throw at the problem. Insufficient industry, in other words. When you have a developed industry in space (where you don't need to punch through a huge atmosphere out of a huge gravity well to get from one place to another), you just build what you want. If low-gee is a problem, you make a full-gee centrifuge. If the closed environment is a problem, you make a bigger habitat. It's so much simpler.
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1434431212.0
+:END:
+
+**** Robotic exploitation of the moon is fine too. In fact, robotic exploitation before human habitation is probably a given. Robots to dig the first few habitats before the colonists arrive. Robots to mine, process, and stockpile the raw materials.
+
+Perhaps I'm just old fashioned, but I have absolutely zero urge to live in a fully-artificial constructed habitat in space, under artificial gravity.
+
+Mars could, potentially, be terraformed and even survivable to humans without suits. Sure, I won't see it in my lifetime, but I can't imagine there won't be people who want a real planet under their feet, even after real estate on Earth gets to be in rather short supply.
+
+Manned missions or even colonization of Mars in the long run isn't a pipe dream. It is, however, ridiculous to consider it before we have a permanent human presence on the Moon.
+:PROPERTIES:
+:Author: Farmerbob1
+:Score: 1
+:DateUnix: 1434433139.0
+:END:
+
+
+** #+begin_quote
+  It was pretty terrible because his core argument was that it would take 174 years to disassemble Mercury using the entire output of the sun at 1/3 efficiency.
+#+end_quote
+
+It will take an average of 4MJ to move 1kg of material from Mercury throughout the project (8MJ to start, gradually going down to nothing when we are left with the final 1kg chunk). If we assumed we started with the entire solar output dedicated to the project at 100% efficiency, we need about 10^{30} J. We get that in 10,000 seconds, about three hours. At 1/3 energy collection efficiency and 1/10 mining efficiency, as the article assumes, we still finish in 300,000 seconds -- a little over three days.
+
+#+begin_quote
+  Anyone else have a similar story to share, and/or want to check my math in the WP article?
+#+end_quote
+
+The problem isn't so much with how long it takes to pay off. It's with the time it takes to dismantle a planet.
+
+[[http://qntm.org/destroy][The definitive guide to destroying planets]] suggests using a large number of mass drivers expelling matter at 11km/s. We only need to hit 4km/s, fortunately, since Mercury is small. That's 8MJ to move one kilogram of Mercury (or iron or silicates) into solar orbit.
+
+That number will go down as we expel more of Mercury off Mercury, of course. We have 3.3×10^{23} kg of Mercury to move.
+
+We're starting with a 1km square of solar generators capturing 1/3 of incoming solar energy, and that's positioned within spitting distance of Mercury -- we'll say it's in a polar orbit around Mercury, oriented for constant exposure to the sun. Mercury is about 7×10^{7} km from the sun. 4×pi×r^{2} gives the surface area of a sphere at that distance -- 6^{16} square kilometers, give or take, and we're drawing power from one of them. The sun's total output is 3.8×10^{26} W. That leaves us with ~10^{9} W.
+
+Since we require 10^{29} J to launch 5% of Mercury into orbit, our dinky solar array lets us launch 1/10^{20} of our payload into orbit per second. It'll take 10^{20} seconds to move that entire slice of the planet. That's 10^{13} years. (Give or take. I'm doing order of magnitude here, people.) Not so great.
+
+But, all is not lost! In the first month, we launched about half a kilogram per second. We're assuming everything is roughly as dense as iron at 10g/cm^{3} , and let's say a solar array is 1cm thick. To build a 1m array we'll need 1,000 cm^{3} or 10kg. That's 200 seconds of mass driver output, which means we get 18 square meters of solar generator every hour, or 400 per day. Or to put it another way, our 1km solar panel takes 10^{7} kg of material, which is about 2×10^{7} seconds, which is about eight months at the starting rate. The third array comes at the one year mark; the fourth comes at 15 months; the fifth at 17.5 months; the sixth at 19.5 months...by two years you've got the fourteenth array well under way. In ten years, we're around five million. Once we reach twenty million, we can produce one per second -- just 4,000 days into the project. And at nineteen years, we're extracting a million tonnes of material for 100,000 new solar arrays.
+
+A million tonnes per second is a lot, possibly more than we could manage. But is it good enough? According to the guide:
+
+#+begin_quote
+  At a million tonnes of mass driven out of the Earth's gravity well per second, this would take 189,000,000 years.
+#+end_quote
+
+Mercury is 5% the mass of Earth. I'm not holding my breath.
+
+But what if our mass drivers are perfection itself? Well, we probably don't want to add many more solar arrays near Mercury's orbit. It'll start interfering with Earth's incoming solar radiation, but the losses have been deemed acceptable. We're getting 3.3 gigawatts per, and we're making 100,000 per second. Every three and a half minutes, we increase extraction rates by one per second. We're roughly doubling every year. We need to reach 1×10^{23} kg in one year, and then we'll be less than a year from completion.
+
+At nineteen years, we got 10^{9} kg/s, or 10^{16} kg/year. We'll get to 10^{23} kg around 42 years into the project. We'll finish the project after 43 years.
+
+It's actually a bit better than that. About 35 years in, we'll have excavated a large enough portion of the planet that the energy costs for extracting more will go down measurably.
+
+#+begin_quote
+  In fact, we could conceivably get going on the project in about 25 to 50 years, with completion of the first phase requiring only a few decades.
+#+end_quote
+
+Sure, assuming magic technology. But the article says 90% of the energy goes to things other than moving matter -- mining it, maintaining the mass drivers, that sort of thing. So it works out to several centuries, and that still requires magic mass drivers and magic energy transfer systems. Also, this gets us a Dyson's sphere at Mercury's orbit, whereas we need one at ~1.1AU.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1434431046.0
+:END:
+
+*** Cost to move Mercury's mass from 0.3 to 1.0 au is about 40km/s, so since velocity scales on a square law we are looking at 100 times the energy relative to merely disassembling it. 400 hours at 1/3 solar output (since Knapp waved away the 90% penalty that Dvorsky included) or 4000 hours at 1/3 with an additional 10% penalty (say from transmission costs or low-efficiency rockets). Since it can wait til after the sphere is complete in the ~0.3 range, I don't think the penalty needs to factor into the replication rate.
+
+#+begin_quote
+  4×pi×r^{2} gives the surface area of a sphere at that distance -- 6^{16} square kilometers
+#+end_quote
+
+[[https://www.google.com/search?q=4pi+x+%28%287%C3%97%2810%5E7%29%29%5E2%29][4pi x ((7×(10^{7} ) )^{2} ) = 6.1575216 x 10^{16}]].
+
+#+begin_quote
+  That leaves us with ~10^{9} W.
+#+end_quote
+
+That's about right, so I guess the above is a typo. But 3.8/6.1 is about 6, so you'd round up to ~10^{10} W/km^{2.} It's [[https://www.google.com/search?q=solar%20irradiance%20mercury][about 9]] in reality anyway.
+
+#+begin_quote
+  To build a 1m array we'll need 1,000 cm3 or 10kg.
+#+end_quote
+
+At this areal density, we end up with it costing 10000 tons (aka 10M kg or 10Gg, 10^{7} kg) per square kilometer. Each of those is getting around ~10 kW or 10^{4} W per square meter so times a million is 10^{10} W before we do any fudging for losses. With 1/3 x 1/10th, we end up with 3% of the power or 3 x 10^{8.} Given the 8MJ/kg cost to start 80TJ (call it ~100TJ) to launch a 1km^{2} chunk. That's ~10^{14} J, whereas and we are getting 3 x 10^{8} W/km^{2.} So we need 300000 seconds to double our mass in solar panels. That's about three days, suggesting that we could double twice per week.
+
+#+begin_quote
+  That's 200 seconds of mass driver output, which means we get 18 square meters of solar generator every hour, or 400 per day. Or to put it another way, our 1km solar panel takes 10^{7} kg of material, which is about 2×10^{7} seconds, which is about eight months at the starting rate.
+#+end_quote
+
+A hypothetical 200 second doubling time per square meter, which is what we would have if energy was the only bottleneck (it won't be in reality, but setting that aside) would would reach the target area of the whole sphere ~2^{75} m^{2} in about 1500 seconds, a 4 hour period of time. It could then finish disassembling Mercury over the next few hours, and start moving stuff out to 1.0 AU over the course of about six months.
+
+ETA: [[https://www.youtube.com/watch?v=zQTfuI-9jIo][Stuart Armstrong]] assumes the panels will take ten years to place, which is the main bottleneck in his model. I'm rather doubtful that this would be at all necessary, but he did give the disclaimer that it was a very conservative model, and it is the model Dvorsky stuck with.
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1434478121.0
+:END:
+
+
+** In conjunction with a Dyson sphere, something to both use the energy (and a portion of the materials gained from the energy) and bootstrap cheap LEO would be to construct an orbital ring suspended via mass stream. You could hang down space elevators/skyhooks without the ridiculous length required to get a counterbalance, and people wouldn't be stuck slowly being lifted outside the Van Allen belt to be exposed to radiation. Instead, launch payloads would be able to piggyback off the momentum of the mass stream and reach transfer orbit with very little energy requirements.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1434552308.0
+:END:
+
+*** #+begin_quote
+  In conjunction with a Dyson sphere
+#+end_quote
+
+Precursor to, perhaps. The issue of launch cost from earth fades away the more space manufacturing exists because (at the stupid limit) you can just land giant tanks of hydrogen. Also from what I've heard the energy cost isn't that much to begin with, the primary cost is that of launch vehicles (in which case landing steel asteroids or making self replicating machine shops is a cure for that, as are reusable vehicles).
+
+#+begin_quote
+  an orbital ring suspended via mass stream.
+#+end_quote
+
+One incarnation of this idea that probably deserves attention due to the sheer level of engineering detail is the [[http://launchloop.com/][Launch Loop]]. A fringe benefit of being a fellow cryonicist living in the same area of the US is that I've met [[https://en.wikipedia.org/wiki/Keith_Lofstrom][the author]] at various meetups. His other big idea, [[http://server-sky.com/][Server Sky]] might be more significant, especially in the Dyson Sphere context, since it involves using smart lightweight satellites that maintain a programmed formation with light pressure instead of orbiting in the traditional manner. If we had sats that thin at 0.3 AU, only a very small fraction of Mercury would be needed to fill out the sphere.
+
+#+begin_quote
+  Instead, launch payloads would be able to piggyback off the momentum of the mass stream and reach transfer orbit with very little energy requirements
+#+end_quote
+
+Technically, I think the idea could work, but it runs up against some of the same problems [[/u/ArgentStonecutter]] mentioned with regards to the disruption of other people's businesses/stuff and the required paperwork to be allowed to do that. Those might not be total show stoppers, but worth accounting for. If you can buy land/rights in a ring around the world, this wouldn't be impossible to do (it amounts to producing a vacuum tube and wrapping it around the world, then running a train through it at orbital velocity).
+
+I would consider ways to scale the concept down. The US is about 4000km in diameter, and some states such as Texas are over 1000km wide. So for example, suppose you have a pair of linear tracks 100km long (just about any state in the US could do this) and set it up to elecromagnetically transfer momentum energy back and forth between two trains running in parallel. (A possible way to get it down to one track would be to have pistons on either end that couple with the ballast magnetically at the last second and compress a pressurized volume of hydrogen gas like a spring.)
+
+Being nothing more than long chunks of steel ballast, they could handle extreme accelerations, so the bouncing at the ends could happen at thousands of gees. The passenger train (itself in an evacuated tube, and lighter than the ballast) would electromagnetically couple with the ballast train to acquire momentum at a lower rate. So you can [[http://keisan.casio.com/exec/system/1224835316][calculate]] with a 50 gee or 500 m/s^{2} acceleration along 100 km over 20 seconds. If you want one that can get humans to orbital velocity, plug in 135 seconds and 60 m/s^{2} for acceleration for a ~546 km track.
+
+There's also [[https://en.wikibooks.org/wiki/Space_Transport_and_Engineering_Methods/Guns_and_Accelerators][lots of other ways]] that could work. Note that even a modest boost can be combined with a rocket to drastically improve its fuel efficiency, since velocity is a square WRT energy.
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1434565219.0
+:END:
+
+**** #+begin_quote
+  the disruption of other people's businesses/stuff and the required paperwork to be allowed to do that. Those might not be total show stoppers, but worth accounting for. If you can buy land/rights in a ring around the world, this wouldn't be impossible to do
+#+end_quote
+
+I very much doubt that any single private endeavor will suffice to build an orbital ring. The security and military risks alone... This is the kind of thing that would take a coalition of nations acting in coordination with a number of multinationals.
+
+I do not understand your proposed mechanism for making a single track mass stream work. Are you saying this is on the ground? That's just a mass driver, and the issue is the massive loss of energy from air resistance, especially if the barrel isn't vacated, which would then kill people from the deceleration of hitting atmosphere. Mass drivers are really only suitable for freight, and using a noncontinuous mass stream is basically dumping enormous amounts of energy into accelerating the ballast, which simply makes no sense. The point of an orbital ring is that you have a railgun in LEO where atmosphere won't interfere, and that's why the energy cost for accelerating the mass stream is acceptable; it keeps it in orbit /and as a plus/ can be used for orbital transfers. Space elevators are estimated to be much more cost-effective, requiring $220/kg to GEO, while mass drivers are more like $500/kg to LEO. Consider an elevator to LEO, where a Lofstrom Loop or orbital ring is waiting, and you're probably along the lines of a fourth to a fifth of the cost of a mass driver.
+
+As for why the costs of launch are important, well... Consider the fact that one million humans weighs about 80.7 million kilograms, and you have a cost of $40.350bn for a 1 in 73000 chance for you to ever reach low earth orbit on a mass driver. And that's with /today's/ population.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1434568096.0
+:END:
+
+***** #+begin_quote
+  Are you saying this is on the ground?
+#+end_quote
+
+Yes, I was thinking of an evacuated tube with a ring-shaped train of ballast inside. It could be propelled mechanically, but regular train wheels would introduce too much friction. Instead, it could float on a thin hydrogen or helium atmosphere until it gets up to speed. These have less friction capacity than regular air. Momentum could be imparted very slowly compared to a mass driver. When it reaches and begins to exceed orbital velocity, the entire ring would start to levitate and stretch outwards (at this point the top part of the tube would need to be insulated from the train instead of the bottom part; again, a thin layer of hydrogen or helium would work for that).
+
+The main aspect of air resistance is the shock wave created in front, which creates a deceleration effect that depends on the mass of the body relative to the surface area of the nose. So rapid deceleration is not a necessary consequence as soon as you exit the evacuated tube, unless you have a very small vehicle. We are talking about a passenger train with substantial length, so it should be pretty massive compared to the nose area.
+
+An orbital ring that starts out already orbiting is again technically possible, but you'd need to have very advanced industrial capacity in space already to do it. If you did, you'd have cheap rockets already. Landing giant tanks of hydrogen is one way to do this, but obviously we'd be more likely to do something else. A space elevator to LEO altitude is possible, provided you are willing to expend a certain amount of fuel on keeping it up.
+
+With regards to the shorter option I described, the noncontinuous stream would be dumping energy from one high-velocity chunk of ballast to another, not losing it. It's more like a battery. The hydrogen gas spring variant would be temporarily turning it into gas pressure and heat, so it would have a certain amount of losses depending on the size and insulation factor of the gas containment vessel (which could be an underground cavern, say).
+
+With regards to the cost, you're conflating dollars with non-dollars. Any estimates you are quoting are factoring in some particular cost as measured in dollars per joule. If you suddenly end up in a world where you can get a million times as many joules per dollar, it's suddenly a millionth of the previous cost. Not to say relative efficiency doesn't matter, but the real bottlenecks are almost certainly organizational or political rather than raw energy collection. My point was that your orbital ring seems like it takes not only a pretty significant investment in joules and industrial organizational power to put together relative to other options (perhaps it's extremely energy efficient for launch purposes once you get it going), you additionally run the risk of any one of the countries it passes over failing to cooperate. A smaller system (say one that fits in a single US state) can be done with a much lower number of parties deciding to cooperate.
+
+Edit to add: Now that we've established that this would be built in space to begin with, it might be a lot easier to do the project in space (thousands of sections ready to assemble in LEO) and deliver it as a package deal to world leaders than it would be to build such a thing on the ground. There's not much the countries underneath can do against it unless they decide to shoot missiles or something, and it doesn't interfere with life on the ground. And you're obviously right that it's a lot easier to make than a traditionally conceived space elevator.
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1434571715.0
+:END:
+
+****** I picture the assembly process as launching thousands of tiled satellites designed to interlock, sending them up into GEO to begin with. Before that, mass will have been collected from elsewhere in the solar system, Mars, the asteroid belt, or Mercury, for examples, which will comprise the mass for the stream (and for the satellites, if launching the requisite material from Earth is too expensive). Whatever makes up the stream will be manufactured, then taken down to the satellites. Acquisition of resources to GEO and place of manufacture is absolutely tentative, of course. An intermediate form of alternate launch is entirely possible, even a counterbalanced space elevator.
+
+Depending on the density of molecular oxygen, LEO with regards to the orbital ring would be anywhere from 200 km up. This would mean a circumference of at least 41,331 kilometers for the finished ring. The GEO that the satellites would initially start out at has a circumference of about 264,925 kilometers. Satellites would start out at GEO, receive the material for the mass stream, then lower their orbit in a controlled fashion, adding more momentum to the mass stream as it goes in order to remain aloft. At some point, possibly in the very beginning, they would have to connect to each other using guidewires, which would help stabilize descent and alignment, pass along information faster and more reliably than radio, and transfer power to satellites on the dark side of Earth (unless there were another mechanism, such as redirecting sunlight via laser from your Dyson swarm off reflecting satellites at Earth-Sun L4/L5 and L2, or perhaps a better battery).
+
+Take, for example, a tiling design of 80,000 satellites, each half a kilometer long. To equalize the torque on satellites as they direct the mass stream (I'm not sure if this is actually a problem...), four streams would be necessary, though my intuition tells me that this would also quarter the required velocity for the stream, which is good. The satellites would originally be around 3.3 kilometers apart, which I'm pretty sure is doable to receive, aim, and redirect in the space of half a kilometer. They lower to LEO, interlock, and then further construction and refinement can be done on the ring in orbit to add things like pressurized oxygen, transportation, storage, housing, and of course the orbital transfer system. Elevators can be hung from the ring as soon as the momentum transfer is continuous enough to stably support them. Et voila.
+
+I am incredibly unsure about your statement that this would be easier to make than a space elevator. All we need for a space elevator is a few more breakthroughs in materials science, launch a satellite with the elevator inside, and unwrap it at the counterweight point. Skyhook touches ground, tie the anchor, there you go.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1434578362.0
+:END:
+
+******* #+begin_quote
+  I am incredibly unsure about your statement that this would be easier to make than a space elevator. All we need for a space elevator is a few more breakthroughs in materials science, launch a satellite with the elevator inside, and unwrap it at the counterweight point. Skyhook touches ground, tie the anchor, there you go.
+#+end_quote
+
+I actually think I underestimated how simple to implement the mass stream is, but a different approach (bootstrapping from something simpler) is needed if you want to avoid invoking the dyson sphere as a precursor.
+
+First, you could get it started with a long steel wire in LEO that wraps around the world. For reference, a 1 mm^{2} wire that's 40,000km with density 10 g/cm^{3} is 400 tons (roughly the mass of the ISS). This is 8 Falcon Heavy launches, so it costs $360 million to get that much wire up there. This eventually becomes the mass stream, but at the start it's just scaffolding.
+
+Once you have the wire in place, you can increase its diameter by vacuum deposition of metal from any source (asteroid, lunar, launched), thus growing it to the desired g. It can spin a little faster than orbital speed, but this creates tension. It can't handle much tension safely until it gets to a point where it can resist micrometeor damage. So you would probably want to build it into a ribbon before doing anything else. You would do this by setting up robots that work their way along the length and use a piece of heated metal to deposit layer after layer of material. These could go slower than the cable, as long as they are light enough to use it for support.
+
+This system could be somewhat self-bootstrapping, because you can use it as a track to brake along to get materials to orbital velocity. However, it's not the easiest kind of track of this kind to build, as you could simply take any orbiting mass (say the ISS itself) and attach a trailing cable to it. You need a few hundred km of distance for human compatible acceleration, but bulk materials like we need for bootstrapping purposes can be accelerated much faster, which allows even shorter cables. In either case, you are exploiting [[http://hyperphysics.phy-astr.gsu.edu/hbase/electric/farlaw.html][Lenz Law]] to create magnetic friction.
+
+The advantage of the huge circular track for this context is that it has effectively infinite length, so you can accelerate as slowly as you need and avoid stresses that might require large tensile strength to deal with. The problem is that you need to oppose gravity the whole time, albeit at a diminishing rate. So a 5 hour acceleration time would mean expending a considerable amount of fuel to keep craft from exerting downward acceleration on the wire. But there might be good workarounds to that (say use a jet + tether that lifts out of the atmosphere as it goes faster).
+
+In any case, it becomes essentially the same as your idea at the point when you construct a housing around the mass stream (supported by its momentum) that goes at a slower rate, and eventually slow that down to stationary with respect to the the earth. The mass stream needs to be accelerated proportionately to the weight it is supporting so it ends up going at superorbital velocities. The stationary ring can be used for elevators to stationary points on the earth, and you can walk around on it, live on it, etc. Neither the stationary ring nor the superorbital mass stream ring is under much tension at any point, as long as you keep the forces balanced and uniformly distributed.
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1434589420.0
+:END:

@@ -1,0 +1,260 @@
+#+TITLE: Crowdsourcing Level 2 Intelligent Characters
+
+* Crowdsourcing Level 2 Intelligent Characters
+:PROPERTIES:
+:Author: andor3333
+:Score: 15
+:DateUnix: 1415914647.0
+:END:
+I saw the article from Yudkowsky on writing level 2 intelligent characters, and thought this would be a good time to ask a question I have been thinking about.
+
+I am currently considering a new method to write characters in the fic I am writing (Rational/Supernatural- the monster hunting series) once it gets off the ground: crowdsourcing.
+
+I will write out at least a reasonable method for characters to solve certain problems for my draft, but I will encourage my readers to suggest better solutions. If someone gives me a brilliant idea I will use it; adapt my storyline, which is fairly flexible; and credit them. Apply 500 munchkins to a one munchkin task and you have good odds of getting SOMETHING a level 2 intelligent character might think of.
+
+This is why the audience in jeopardy on average does better than the most brilliant jeopardy player at leaning toward the correct answer.
+
+Problems I anticipate with this method are...
+
+1. I need to build my audience before using this technique. I originally hope to do a few specific sections with the help of this subreddit. I have already done a trial run of this to test the waters and it worked well.
+
+2. I will have to fit the idea into my plot, which means I can't draft exhaustively on problems I plan to get reader input on, or I can, but must rewrite it.
+
+3. I have to go over massive amounts of spam. (I am afraid of this)
+
+4. Figuring out the rules of the Supernatural universe is a large portion of the plot. I have a consistent set of rules the Supernatural universe runs on and I can't tell my readers the rules or I'll spoil it. Many ideas may not work with the rules. I could really use suggestions on how to handle that.
+
+Anyone have any thoughts, criticisms of this method? What problems may I run into? Has anyone done this crowdsourcing mechanism before me and how did they do it? How do I crowdsource this efficiently?
+
+(Yes, I am crowdsourcing my crowdsourcing implementation. Call this test number 1)
+
+
+** If the readers don't know the rules, they can't effectively solve problems, or come up with clever solutions within the constraints that they don't know exist. The first step for /anyone/ trying to solve a problem should be understanding the boundaries of that problem. Without boundaries, you're going to get a lot of solutions that rest on faulty assumptions. [[http://www.reddit.com/r/rational/comments/2j5q53/bst_the_magic_of_oathkeeping/][Check out this post I made a month ago]]. You don't need to read any of the comments, or any of the rules - just look at how many edits were necessary to bring the rules in line with what I had imagined. Now imagine a hundred people trying to solve a problem with rules that are much more poorly understood (if not more poorly defined) than that. I question how useful that's going to be to you.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 10
+:DateUnix: 1415916906.0
+:END:
+
+*** That is a very good point, and that is an excellent example of how to do this. Based on your post in combination with a post above, I'll probably be giving a list of what the characters currently consider the rules to be which will be refined as the story progresses.
+:PROPERTIES:
+:Author: andor3333
+:Score: 6
+:DateUnix: 1415917902.0
+:END:
+
+
+*** #+begin_quote
+  Edit: The increase of benefit over time is not linear - it is very mildly exponential. Keeping an Oath for ten years gives more benefit than keeping ten Oaths for one year each.
+#+end_quote
+
+Do you mean exponential, output(time) = 2^{small constant * time^{small} ^{constant}}, or superlinear, output(time) = time * some asymptotically infinite function which might be very slowly increasing indeed?
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1416062808.0
+:END:
+
+**** The first one. You get a lot more from the third decade of keeping the oath than from the second decade, and you get more from the second decade than the first.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1416188466.0
+:END:
+
+***** #+begin_quote
+  You get a lot more from the third decade of keeping the oath than from the second decade, and you get more from the second decade than the first.
+#+end_quote
+
+That statement is consistent with both. If output(time) = time^{3} then output(10)-output(0) < output(20)-output(10) < output(30)-output(20).
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1416188994.0
+:END:
+
+****** I guess I'm confused about what you're saying, probably because it's been a while since I've had any reason to use non-programming math. Google did not help me. Doesn't superlinear just mean that it's increasing faster than linear?
+
+At any rate, I don't think I ever figured out the exact formula, partly because there are enough variables that it's opaque to the characters (along with "time", there's also "desire" and the more nebulously defined "capability").
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1416195979.0
+:END:
+
+******* Yes, superlinear just means anything that's eventually faster than every linear function.
+
+My point is that exponentially-fast is probably a lot more than you want. The way you were phrasing things it made it sound a bit like you were saying exponentially-fast is the same as superlinearly-fast.
+
+edit: Technically even O(n lg lg lg lg n) is superlinear, and technically O(2^{n^{1/2^{100}}} ) is exponential, but in general exponential functions increase way faster for even moderately high values. They're guaranteed to do it eventually but they usually do it quickly.
+
+A good mental heuristic: is the increase in a given year proportional to how long it's been since it started, or is it proportional to the current output? That's the main difference if you get into the calculus of it.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 2
+:DateUnix: 1416199140.0
+:END:
+
+******** Ah, I get what you're saying. I was just using "exponential" to mean "plotted as a gently curved upward slope", not a mathematical definition.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1416200745.0
+:END:
+
+
+** It sounds like you want to run a forum game rather than just fully write a book. The idea of that kind of collaborative work where many people act as the brain of a single character has been done like that. I would invite you to take a look through some of the spacebattles creative writing and role playing section for examples of this. There are even people who have compiled the completed story thus far to remove the comments and cleared the story up so that it can be read all at once.
+:PROPERTIES:
+:Author: Traiden04
+:Score: 5
+:DateUnix: 1415915255.0
+:END:
+
+*** This is an okay idea, but I have some modifiers/warnings:
+
+- Typical forum game format is to let the audience vote on solutions. Thus intelligent solutions get ignored in favor of funny/more dakka/first posted solutions. You can avoid this by making clear at the beginning you are using non-standard rules and will only accept the solutions that you deem both in character and intelligent.
+
+- Spacebattlers tend to favor... a certain kind of approach. If it is in character for you character to choose violent/sociopathic/more dakka/over-the-top solutions then this is okay. Lesswrong or [[/r/rational]] or a saner forum that is still intelligent might suit you better.
+:PROPERTIES:
+:Author: scruiser
+:Score: 6
+:DateUnix: 1415915821.0
+:END:
+
+**** I presented the forums only for the format of the story rather than the content. A large part of the story relies on the story teller as well as the audience, and one would be able to find people who would enjoy trying to come up with intelligent solutions along with those of the more typical "One at sufficient velocity" types.
+:PROPERTIES:
+:Author: Traiden04
+:Score: 2
+:DateUnix: 1415916519.0
+:END:
+
+
+*** I have looked through several spacebattles stories like that. That is an angle I'll consider now. I do have a pretty good idea of the plot itself at the moment and the main actions the heroes will take. Honestly my main hangup is designing rational monsters that are interesting but not broken and how the heroes will respond. I am getting bogged down with the villain/monster of the week style that is a big part of supernatural that I don't want to lose.
+:PROPERTIES:
+:Author: andor3333
+:Score: 2
+:DateUnix: 1415917530.0
+:END:
+
+
+** As a specific answer, [[http://www.reddit.com/r/rational/comments/2a2vrk/q_if_you_were_jake_in_the_two_year_emperor_what/][I've done this]]. In addition, several of the things that happen in 2YE were at the suggestion of, or in response to, reader suggestions...the prime example being the way they finally defeated Neklos.
+
+Even some of my characters are based on reader comments. Specifically, Suze got a lot more camera than she might have otherwise because the readers loved her so much. Of course, I kept finding that I enjoyed writing her, so I think she would have gotten a fair bit of camera anyway, but probably not as much as she did.
+
+If you're worried about spoiling things for readers, he simple answer is to have people PM you their suggestions. Each reader then only sees their own suggestion, although then they can't bounce off each other's ideas.
+
+EDIT: one problem with this is that you then won't get credit for your own ideas -- someone else will come up with them too, and it will seem that you used heir idea instead of being creative on your own. This may not matter to you.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 4
+:DateUnix: 1415961118.0
+:END:
+
+*** It did occur to me someone could accuse me of that, but I don't imagine it will be too much of a problem if I credit the ideas I actually do use. If someone still insists on doing so and I credit those I do use I don't think it would bother me. It is a good thing to consider though, thanks.
+:PROPERTIES:
+:Author: andor3333
+:Score: 1
+:DateUnix: 1415992066.0
+:END:
+
+**** Come to think of it, I'm about to be starting on Book 2 of 2YE. I think I'll try crowdsourcing some of the plotting for the next book; you can watch how my attempt goes and use that as data points in your own planning.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 2
+:DateUnix: 1415994806.0
+:END:
+
+***** I may follow up with you about it. I am planning on launching mine around the end of this month, depending on whether I can resolve one last piece of writers block I am stuck on.
+:PROPERTIES:
+:Author: andor3333
+:Score: 1
+:DateUnix: 1416025380.0
+:END:
+
+
+** How well can you isolate the elements involved in the problems you want crowd sourcing on? Maybe you could post specific scenarios in [[/r/rational]] and get ideas for them without spoiling the entire story. (Or you could run it like a forum game as previously suggested.)
+
+#+begin_quote
+  I have a consistent set of rules the Supernatural universe runs on and I can't tell my readers the rules or I'll spoil it. Many ideas may not work with the rules. I could really use suggestions on how to handle that.
+#+end_quote
+
+A few ideas:
+
+- In your idea gathering posts, post spoiler warnings and let those who want to be spoiled be spoiled. If anyone wants to use spoiler information in their idea, require that they also use spoiler warnings.
+
+- Give a list of possible rules (based on things the characters have learned up to that point or things that they have reasonably inferred). The solutions you get may use any combination of the possible rules. Of course this also means that really good ideas can fail because of hidden rules, but this is actually a good thing because it is more realistic.
+
+- Keep in mind any solution that depends on these rules will need for the characters themselves to at least guess at the rules to use the idea in story. Thus it would be fair for the people giving you ideas to have roughly the same level of information as the in story characters.
+:PROPERTIES:
+:Author: scruiser
+:Score: 2
+:DateUnix: 1415916564.0
+:END:
+
+*** I like these ideas. I especially like giving a list of possible rules based on what has been learned. That works really well for my story as the characters are going to be refining their theories about how the Supernatural world works as they go along and I already have planned in several working theories they'll try and which the readers will be completely aware of.
+
+I will probably do this in this format now if I end up crowdsourcing unless something else comes up.
+:PROPERTIES:
+:Author: andor3333
+:Score: 2
+:DateUnix: 1415917724.0
+:END:
+
+**** Also the rules you give the characters shouldn't necessarily be correct all the time, either... :)
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 2
+:DateUnix: 1415933094.0
+:END:
+
+***** They won't be. This has been a major headache to plan but the characters will learn by trial and error and they won't get it right the first time. Hours upon hours have been wasted trying to keep track of what they know at what time so far. No wonder no one does this...
+:PROPERTIES:
+:Author: andor3333
+:Score: 2
+:DateUnix: 1415938482.0
+:END:
+
+****** The end result will be absolutely magnificent.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 2
+:DateUnix: 1416083644.0
+:END:
+
+******* I hope so. I am definitely new to writing and this is going to be...quite a challenge. Hopefully I can get the first arc online by the end of the month and see where it goes from there. Thanks for the support!
+:PROPERTIES:
+:Author: andor3333
+:Score: 2
+:DateUnix: 1416114300.0
+:END:
+
+
+** Thoughts on point no. 4: If something seems smart to do in the eyes of your audience it's likely the smart move given the information the characters have. Discrediting solutions that don't follow the rules of the supernatural gives me the feeling that the characters have access to information that i don't, so if you want the story to have a puzzle like feel maybe have the characters try out things that are deemed smart by the crowd? The story might become unwriteable if you do this too much, but if the story can hold some failed experiments it could be fun.
+:PROPERTIES:
+:Author: Prankster42
+:Score: 2
+:DateUnix: 1415916903.0
+:END:
+
+*** I actually plan to have some failed experiments for the characters. What I would say no to is monsters exploiting the rules in ways that they can't be exploited. I would object to incompatible worldbuilding, not character actions that won't work. In fact failed and successful experiments by the characters will be a large part of the plot. My main difficulty at the moment is crafting tons of unique monsters of the week with a rational twist without becoming repetitive. I will probably also request suggestions for character actions at some point too, so for that I will probably be less likely to reject attempting ideas.
+:PROPERTIES:
+:Author: andor3333
+:Score: 3
+:DateUnix: 1415992280.0
+:END:
+
+
+** Even if you can't post the rules, you can still post limits and constraints to work with.
+:PROPERTIES:
+:Author: clawclawbite
+:Score: 1
+:DateUnix: 1415916591.0
+:END:
+
+
+** Just write the chapters, wait for feedback/fanmail with ideas which you will openly invite, cherrypick/adapt them and use them in following chapters as needed, with credit given at the end of each chapter.
+:PROPERTIES:
+:Author: historymaking101
+:Score: 1
+:DateUnix: 1415936423.0
+:END:

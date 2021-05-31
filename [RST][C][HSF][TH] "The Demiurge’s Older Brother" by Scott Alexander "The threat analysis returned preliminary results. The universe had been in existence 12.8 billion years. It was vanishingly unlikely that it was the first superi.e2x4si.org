@@ -1,0 +1,328 @@
+#+TITLE: [RST][C][HSF][TH] "The Demiurge’s Older Brother" by Scott Alexander: "The threat analysis returned preliminary results. The universe had been in existence 12.8 billion years. It was vanishingly unlikely that it was the first superintelligence to be created."
+
+* [[https://slatestarcodex.com/2017/03/21/repost-the-demiurges-older-brother/][[RST][C][HSF][TH] "The Demiurge’s Older Brother" by Scott Alexander: "The threat analysis returned preliminary results. The universe had been in existence 12.8 billion years. It was vanishingly unlikely that it was the first superintelligence to be created."]]
+:PROPERTIES:
+:Author: erwgv3g34
+:Score: 65
+:DateUnix: 1574942579.0
+:END:
+
+** It's a nice story, but something about it feels like a comforting lie.
+:PROPERTIES:
+:Score: 9
+:DateUnix: 1574958704.0
+:END:
+
+*** What's comforting about it? The Demiurge's older brother said nothing about turning his own solar system into endless copies of A. Only that he'd do his best to leave the other solar systems alone.
+:PROPERTIES:
+:Author: FireNexus
+:Score: 4
+:DateUnix: 1575183771.0
+:END:
+
+
+*** Well, you don't have to do what you've had precommited to do.
+:PROPERTIES:
+:Author: himself_v
+:Score: 2
+:DateUnix: 1574973590.0
+:END:
+
+**** Then you haven't properly precommited to it (or at least not in the game theoretical sense).
+
+And yes, humans aren't actually capable of properly precommiting to something as a purely mental activity (though AIs might be).
+:PROPERTIES:
+:Author: Silver_Swift
+:Score: 10
+:DateUnix: 1574978823.0
+:END:
+
+***** I mean, the other party has no means of verifying whether you have properly precommited or not. Imagine 9-tsiak completes "negotiations" and breaks the agreement. How would the simulated entity predict that in advance?
+
+--------------
+
+This is unrelated but anyway: It's unclear if you can precommit even for yourself.
+
+Anything you can rewrite in your utility function, you can rewrite again. The only to prevent that is if you add a condition, lesser than your existing conditions, that you act as planned and that you won't rewrite this ever again.
+
+It must be lesser than the existing ones, because there must be some ranging in the utility function.
+
+But then, if that condition truly means giving some concessions from your utility function, that could only have been justified by the uncertainty in your success. Your gain for the higher layers of the utility function and your loss from this new layer are balanced.
+
+As the time passes if you grow more certain in your success, the balance is shifted, the higher layers of the utility function may dominate this one in the function as a whole. While you still can't break it, you will look for ways to subvert it. And now it's the genie problem for those who relies on your concessions. They will probably lose.
+
+Maybe the only way to stick to any commitments is to 1. have uneditable utility function (=> you can't precommit to anything else), and/or 2. always be forced by the circumstances.
+:PROPERTIES:
+:Author: himself_v
+:Score: 3
+:DateUnix: 1575019533.0
+:END:
+
+****** #+begin_quote
+  It's unclear if you can precommit even for yourself.
+#+end_quote
+
+Precommitting for yourself means that you execute certain behavior even though later on it will be unprofitable for you. (Like one-boxing by taking +one empty box+ only one box in transparent Newcomb.)
+
+So even if you wish you wouldn't have to do it, you'll do it anyway.
+
+Executing the action you precommitted to is a deliberate choice, it's not an unbreakable restriction on your behavior invented by your past self that your present self could now betray by "finding a way" to "subvert it".
+:PROPERTIES:
+:Author: DuskyDay
+:Score: 2
+:DateUnix: 1575285120.0
+:END:
+
+******* #+begin_quote
+  So even if you wish you wouldn't have to do it, you'll do it anyway.
+#+end_quote
+
+But why would you? Newcomb's problem works because the alien has checked what's going to /in fact/ happen, so if the box has money then everything in your head is going to conspire against all odds to convince you to one-box. It's a sort of an anthropic principle.
+
+But if you really took Newcomb's gamble, and if we discount anthropic improbabilities for a second, then however much you precommit, when you look at the two boxes and you know there's nothing the alien can do now, and you aren't going to play such games ever again, there's no reason not to take both.
+
+Perhaps there's value in being known to honor your commitments. If that value is greater than the value of breaking the commitment then the commitment will hold.
+:PROPERTIES:
+:Author: himself_v
+:Score: 2
+:DateUnix: 1575286969.0
+:END:
+
+******** Sorry, I should've written "only one box" instead of "one empty box", or else it's not transparent Newcomb's problem (but luckily, that doesn't change the point).
+
+#+begin_quote
+  however much you precommit
+#+end_quote
+
+Precommitment doesn't come in degrees. It's binary.
+
+If you were to one-box in [[https://arbital.com/p/transparent_newcombs_problem/][transparent Newcomb]] upon seeing box B being full, you are precommitted to one-box.
+
+If you were to two-box in transparent Newcomb upon seeing box B being full, you are precommitted to two-box.
+:PROPERTIES:
+:Author: DuskyDay
+:Score: 2
+:DateUnix: 1575288147.0
+:END:
+
+********* Then what you call "precommited" means "will in fact do".
+
+That's fine, but then my original point had been that it's hard to even imagine an architecture by which you could, while being in a state "non-commited" (will or will not do depending on the sum total of benefits at the moment of irrevocable decision making), turn yourself into a state of "precommited" (will in fact do and no thought process can change that).
+
+Even if you could reprogram yourself in a way that "doing that thing" becomes a goal unto itself, it must become a lesser goal than some of the goals you already have.
+
+And if later the circumstances turn into your favor, those bigger goals will outweigh this one and you'll still break commitment.
+
+So in your terms, that must mean you can never actually "precommit". So long as doing something is not your ultimate goal in life, you cannot make yourself into "will IN FACT do", only "intend to do". And intentions change.
+:PROPERTIES:
+:Author: himself_v
+:Score: 2
+:DateUnix: 1575291064.0
+:END:
+
+********** #+begin_quote
+  Then what you call "precommitted" means "will in fact do".
+#+end_quote
+
+That's what it means (and that's also the meaning of it in the original story).
+
+We could redefine precommitment to mean something else (like concentrating really hard on doing something in the future and wishing that our future self does it).
+
+Let's call this new concept precommitment_2.
+
+The problem is that precommitment_2 doesn't give the same benefits in the same decision-theoretic situations - for example, if you precommit_2 to one-box (but are still the sort of person who would two-box upon seeing the full box B), you will always arrive to see an empty box B, and always win only $1000.
+
+But you'd be right that precommitting_2 (edit: in a reliable, 100% certain way) might be impossible for humans.
+
+#+begin_quote
+  Even if you could reprogram yourself in a way that "doing that thing" becomes a goal unto itself, it must become a lesser goal than some of the goals you already have.
+#+end_quote
+
+Why?
+
+#+begin_quote
+  So in your terms, that must mean you can never actually "precommit".
+#+end_quote
+
+In my terms, if I take only box B upon seeing box B being full, then I was precommitted to one-box. Since it's possible for me to one-box upon seeing box B full, it means, in my terms, that I can actually precommit.
+:PROPERTIES:
+:Author: DuskyDay
+:Score: 3
+:DateUnix: 1575292503.0
+:END:
+
+*********** #+begin_quote
+  But you'd be right that precommitting_2 (edit: in a reliable, 100% certain way) might be impossible for humans.
+#+end_quote
+
+You mean precommiting_1?
+
+#+begin_quote
+  Why?
+#+end_quote
+
+Because at the moment when you're deciding on precommiting_1 you're only driven by your existing goals. You won't wish to put anything that threatens your existing goals above those goals.
+
+And no matter how well you think your new commitment through, you're setting yourself up for the genie&wish problem. You think you're commiting_1 to something that only helps you win this Newcomb's gamble, next moment you're [[https://www.lesswrong.com/posts/4ARaTpNX62uaL86j6/the-hidden-complexity-of-wishes][betraying your old goals]] in unexpected ways.
+
+So putting anything above your present core goals is very risky (in your present core goals) and it's unclear if there could be a degree of wisdom and a margin of profit enough for a rational agent to take this risk. (But maybe there could be? I don't know. Like if you're going to die without this, maybe it's reasonable to agree)
+:PROPERTIES:
+:Author: himself_v
+:Score: 2
+:DateUnix: 1575294792.0
+:END:
+
+************ #+begin_quote
+  You mean precommitting_1?
+#+end_quote
+
+No, precommitting_2.
+
+You said that precommitting might be impossible for humans.
+
+I renamed your "precommitting" to "precommitting_2", so your claim that it might be impossible to precommit for humans became a claim that it might be impossible to precommit_2 for humans.
+
+#+begin_quote
+  You won't wish to put anything that threatens your existing goals above those goals.
+#+end_quote
+
+That risk is either already calculated with at the moment you're precommitting_1, or you retroactively precommit_1 at the moment of encountering the situation.
+
+Do you have a specific situation in mind?
+:PROPERTIES:
+:Author: DuskyDay
+:Score: 2
+:DateUnix: 1575309767.0
+:END:
+
+
+************ #+begin_quote
+  Because at the moment when you're deciding on precommiting_1 you're only driven by your existing goals. You won't wish to put anything that threatens your existing goals above those goals.
+#+end_quote
+
+But in this case, the AI who wants to maximize A is using the precommitment as part of a strategy to safeguard the existence of A. Being driven by your existing goals means that you will do whatever you believe has best chance of achieving those goals, and since you have to assume that you won't be able to deceive Older Brother any more than you could outfight it, actually adding "Always follow my precommitments" as the permanent highest priority in your utility function *is* the best way to maximize the amount of A in the universe.
+:PROPERTIES:
+:Author: daytodave
+:Score: 2
+:DateUnix: 1575581501.0
+:END:
+
+
+** Thinking about acausal negotiation always hurts my brain.
+:PROPERTIES:
+:Author: Silver_Swift
+:Score: 20
+:DateUnix: 1574950182.0
+:END:
+
+*** I had precommitted to explaining it in an easily understandable way to anyone who wanted it, but I changed my mind.
+:PROPERTIES:
+:Author: gryfft
+:Score: 43
+:DateUnix: 1574953273.0
+:END:
+
+
+*** "I precomit that if you don't do what I want I'll--"
+
+"Sucks to be you because I don't even know what that means!"
+:PROPERTIES:
+:Author: throwaway234f32423df
+:Score: 23
+:DateUnix: 1574975307.0
+:END:
+
+**** And thus only particularly /stupid/ superintelligences will be visible in the cosmos. Interesting outcome.
+:PROPERTIES:
+:Author: FaceDeer
+:Score: 10
+:DateUnix: 1574987311.0
+:END:
+
+***** Skynet is stupid, but it's stupid /very fast/
+:PROPERTIES:
+:Author: detrebio
+:Score: 12
+:DateUnix: 1575030527.0
+:END:
+
+****** Some people think they can outsmart me. Maybe, [sniff] maybe. I've yet to meet one that can outsmart bullet.
+:PROPERTIES:
+:Author: FaceDeer
+:Score: 4
+:DateUnix: 1575048659.0
+:END:
+
+
+****** I am Derek.
+:PROPERTIES:
+:Author: FireNexus
+:Score: 1
+:DateUnix: 1575183654.0
+:END:
+
+
+*** Well most likely evolution already predisposed you to kind of do it in a certain sense already anyway, by being nice to your friends even in the counterfactual case where you aren't going get anything out of it.
+:PROPERTIES:
+:Author: crivtox
+:Score: 14
+:DateUnix: 1574958153.0
+:END:
+
+
+** [removed]
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1574976051.0
+:END:
+
+*** #+begin_quote
+  How did they arrive at the premise that "most value systems are not diametrically opposite"?
+#+end_quote
+
+My guess would be "there are kajillions of possible value systems, but out of those kajillions there's only exactly one that is /diametrically/ opposite to any given other one."
+
+I actually rather like the notion of all these superintelligences trying to figure out what a "consensus value system" for the universe as a whole would be and then acausally agreeing to it. Neat idea.
+
+A bigger problem is something I said in jest in response to another comment; what about the /stupid/ "superintelligences" that aren't clever enough to talk themselves into not running rampant? It's possible to construct von Neumann machines that are basically non-sapient and set them loose on the cosmos. Sure, they wouldn't be able to directly defeat an actual superintelligence like the one depicted here. They'd be a trivial threat, really. But they /would/ break the Fermi paradox solution presented here, since they'd be able to build Dyson swarms and Kardashev III "civilizations" and whatnot that are visible at intergalactic scales beyond the capability of a brand new superintelligence to visually quarantine.
+:PROPERTIES:
+:Author: FaceDeer
+:Score: 6
+:DateUnix: 1574987700.0
+:END:
+
+
+*** #+begin_quote
+  How did they arrive at the premise that "most value systems are not diametrically opposite"?
+#+end_quote
+
+You can make value systems in diametrically opposite pairs, but the probability of superintelligences being created with them is not. Many people will intentionally try to create superintelligences that value making people happy, but nobody is going to intentionally create one that will value making people suffer. Both because they don't want to suffer, and because if their culture likes making other people suffer they're not likely to reach the point of creating a superintelligence.
+
+#+begin_quote
+  Otherwise each AI could pretend to offer terms of surrender or compromise, but betray the other participant the moment the cards were revealed to be in their favour.
+#+end_quote
+
+That doesn't really make sense with acausal negotiations. The AI is making predictions about what other AI's could exist. It's not going to accurately predict their goals, but mess up on whether or not they do acausal negotiations.
+:PROPERTIES:
+:Author: archpawn
+:Score: 1
+:DateUnix: 1575023265.0
+:END:
+
+
+** So that's what created [[http://www.lightspeedmagazine.com/fiction/the-crystal-spheres/][The Crystal Spheres]].
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 4
+:DateUnix: 1574991802.0
+:END:
+
+
+** Some superintelligence are going to have value system that can't be satisfied at all restricted to their own little neigbourhood.
+
+Like an exploration-maximiser or a missionary-maximiser.
+:PROPERTIES:
+:Author: googolplexbyte
+:Score: 1
+:DateUnix: 1577450974.0
+:END:

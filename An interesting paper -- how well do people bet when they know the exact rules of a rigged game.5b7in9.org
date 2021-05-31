@@ -1,0 +1,599 @@
+#+TITLE: An interesting paper -- how well do people bet when they know the exact rules of a rigged game?
+
+* An interesting paper -- how well do people bet when they know the exact rules of a rigged game?
+:PROPERTIES:
+:Author: TaoGaming
+:Score: 47
+:DateUnix: 1478308786.0
+:END:
+The exact title is "Rational Decision-Making Under Uncertainty: Observed Betting Patterns on a Biased Coin" by Haghani and Dewey.
+
+Here's the game -- "you are offered a stake of $25 to take out your laptop to bet on the flip of a coin for thirty minutes. You're told the coin is biased to come up heads with a 60% probability, and you can bet as much as you like on heads or tails on each flip. You will be given a check for however much is in your account at the end of the half hour."
+
+Who were the subjects? -- "The sample was largely comprised of college age students in economics and finance and young professionals at finance firms. We had 14 analyst and associate level employees at two leading asset management firms. The sample consisted of 49 males and 12 females. Our prior was that these participants should have been well prepared to play a simple game with a defined positive expected value."
+
+The Results -- "Our subjects did not do very well. While we expected to observe some suboptimal play, we were surprised by the pervasiveness of it.....We were surprised that one third of the participants wound up with less money in their account than they started with. More astounding still is the fact that 28% of participants went bust and received no payout."
+
+This is particularly interesting to me, as it's a topic I touched on (lightly) on Ch 13 of Draco Malfoy and the Practice of Rationality (although that game's players did not know the rules).
+
+Full paper is at [[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2856963]]
+
+And ... as a bonus ... it tells you the optimal strategy (making certain assumptions about your utility function).
+
+
+** It's reasonable to assume that people won't instantly know the Kelly Criterion so wouldn't play "perfectly" optimally. And in fact it's I'm not completely sure that it's truly optimal in the case where a maximal cap exists, if you bet a smaller pecentage more time by betting very quickly (since you know you're always betting heads and it's computer simulated, I think you can bet as quickly as you can type in what your bet is) you might be able to hit the cap more consistently, I'm not completely sure. And also it would be a waste of time to calculate the precise percent of your current worth between each bet (unless you're using something easy like 10%) some approximations are fine.
+
+But I think it's pretty intuitive to scale your bets with your current value, and never bet 100%.
+
+And "always bet heads" is obvious to anyone who knows anything about probability. There is no excuse. I am astounded and disappointed and angry all at once.
+:PROPERTIES:
+:Author: zarraha
+:Score: 12
+:DateUnix: 1478322406.0
+:END:
+
+*** #+begin_quote
+  I think you can bet as quickly as you can type in what your bet is
+#+end_quote
+
+From the paper:
+
+#+begin_quote
+  We programmed the coin to be in a flipping mode for about 4 seconds, to create some suspense on each flip, and also to limit the number of flips to about 300.
+#+end_quote
+:PROPERTIES:
+:Author: GeeJo
+:Score: 9
+:DateUnix: 1478348773.0
+:END:
+
+
+*** Most of the players didn't even figure out a constant % betting strategy. My initial strategy was 10%, which is below the Kelly criterion value, but still the right strategy.
+:PROPERTIES:
+:Author: sparr
+:Score: 6
+:DateUnix: 1478428890.0
+:END:
+
+**** Always betting a constant proportion is the optimal strategy; what the proportion should be is determined by your risk appetite. (assuming a reasonably linear utility:dollars at the relevant scale)
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 3
+:DateUnix: 1478486637.0
+:END:
+
+
+**** Even if it's not obvious that "exactly constant" is the correct solution, it should be pretty clear that your betting amounts should scale upwards as your total money does, and downwards as it drops, so that you never end up betting everything you have. My initial strategy was a vague "let's throw in $5 to be safe and then adjust as necessary" which starts at 20%, but I would probably bet $5 the first few rounds and only update it to be proportional again every few bets.
+:PROPERTIES:
+:Author: zarraha
+:Score: 2
+:DateUnix: 1478455580.0
+:END:
+
+
+*** Kelly wouldn't be perfectly optimal either, technically. Since they cap the payout per bet at $250 and this is a finite-horizon problem (stops after 300 bets), this eliminates most of the future growth that a KC algorithm is counting on (note the part where they estimate that without the cap, a player could walk away with millions of dollars within 300 flips).
+
+#+begin_quote
+  With a capped payout (the game we actually offered) a simple (but not strictly optimal) strategy would incorporate an estimate of the maximum payout. If the subject rightly assumed we wouldn't be offering a cap of more than $1,000 per player, then a reasonable heuristic would be to bet a constant proportion of one's bank using a fraction less than the Kelly criterion, and if and when the cap is discovered, reducing the betting fraction further depending on betting time remaining to glide in safely to the maximum payout. For example, betting 10% or 15% of one's account may have been a sound starting strategy.
+#+end_quote
+
+I agree that the exact optimal strategy would not be betting a fixed % each round, but change over time roughly as they suggest. One would have to construct a decision tree to figure out exactly how much should be bet at each round depending on the current bankroll.
+:PROPERTIES:
+:Author: gwern
+:Score: 1
+:DateUnix: 1480097525.0
+:END:
+
+**** [[https://twitter.com/ArthurB/status/801549580076650496][Arthur B]] provides the dynamic programming/decision tree algorithm for estimating the value of a particular bankroll and number of bets assuming optimal play, if we are curious how much $25/300 bets at these rules (particularly the '$250 max' rule) is worth:
+
+#+begin_quote
+  =V(w,b) = max([0.6*V(min(w+x,250),b-1)+0.4*V(w-x,b-1) for x in 0..w])= for the value of having wealth /w/ and /b/ bets left.
+#+end_quote
+
+My try in R:
+
+#+begin_example
+  V <- function(w,b) { 
+      f <- function(x) { 0.6*V(min(w+x,250),b-1) + 0.4*V(w-x,b-1)}
+      returns <- if (b>0) { sapply(seq(0, w), f); } else { w; }
+      max(returns) }
+  V(10, 1)
+
+  ## requires too long to evaluate unless we use memoization/dynamic programming
+  # devtools::install_github("hadley/memoise")
+  library(memoise)
+  mV <- memoise(V)
+
+  ## expected value of optimal betting for # of bets from 0 to 300 (rough maximum possible according to paper) starting with $25
+  sapply(0:300, function(b) { v <- mV(25, b); print(v); v })
+  # [1] 25
+  # [1] 30
+  # [1] 36
+  # [1] 43.2
+  # [1] 45.36
+  # ...
+#+end_example
+:PROPERTIES:
+:Author: gwern
+:Score: 1
+:DateUnix: 1484794584.0
+:END:
+
+***** We've expanded the analysis considerably: [[https://www.gwern.net/Coin-flip]]
+
+Fast implementations in R and Haskell, both decision-tree and formula-based, scalable to 2000+ bets (after which the expected value stops increasing), simulation comparison, multi-threaded C version which evaluates the tree differently & runs in 10s etc. The OP KC strategy is actually inefficient by ~$6, but this is because 300 bets is overkill so the inefficiency of the KC doesn't show up so much - at lower bet amounts, KC can forfeit up to $36 compared to perfect play (about 30% of possible winnings at /b/=23).
+:PROPERTIES:
+:Author: gwern
+:Score: 2
+:DateUnix: 1485473352.0
+:END:
+
+****** Very nice. Checking a three month old thread paid off.
+
+If only I could use this to somehow figure out the version where bias is not known and has to be estimated.
+:PROPERTIES:
+:Author: AugSphere
+:Score: 1
+:DateUnix: 1486469964.0
+:END:
+
+******* #+begin_quote
+  If only I could use this to somehow figure out the version where bias is not known and has to be estimated.
+#+end_quote
+
+Oh, that's not that hard. That is, it's easy to write down the code to solve it, since it's just adding a beta/binomial, but it's efficiently computing it which is harder: [[https://www.gwern.net/Coin-flip#unknown-coin-flip-probability]]
+
+I also have versions for when the max cap on wealth ($250) is unknown and when the total number of rounds (300) are unknown, but I'm not at all sure they're right. Combining all 3 would only be a little tedious, but I haven't bothered since it would be so computationally demanding.
+
+One thing I'm trying is I've coded up an implementation of the Kelly coinflip game for OpenAI's Gym suite of environments/games, so it should be easy to apply deep RL to it in the future. Something like A3C should be able to handle the version with all 3 unknown with close to optimal performance.
+:PROPERTIES:
+:Author: gwern
+:Score: 2
+:DateUnix: 1488945565.0
+:END:
+
+******** Good work! Hadn't had the time to get into it myself, but was still curious about how well optimal agents could do without prior knowledge of true bias. Even if it's not very efficient, it's still nice to have a proper solution.
+:PROPERTIES:
+:Author: AugSphere
+:Score: 1
+:DateUnix: 1488973310.0
+:END:
+
+
+** I was curious about the game, and started reading the paper.
+
+In the paper, they tell you the optimal betting strategy in detail before actually giving you a link that would allow you the play yourself.
+
+If you want to give it a shot yourself, without spoiling the ideal strategy, here's the link: [[http://coinflipbet.herokuapp.com/]]
+
+edit: The app doesn't seem to be working, so I suppose this link wasn't too helpful
+:PROPERTIES:
+:Author: Khaos1125
+:Score: 5
+:DateUnix: 1478326805.0
+:END:
+
+*** I wrote a quick JS version since this seems to be down. I replaced the 4 second wait time with the bet limit it was intended to enforce, but otherwise I imagine it should be roughly the same.
+
+[[https://jsfiddle.net/vur0hmt7/]]
+:PROPERTIES:
+:Author: Veedrac
+:Score: 3
+:DateUnix: 1478478645.0
+:END:
+
+
+*** #+begin_quote
+  The app doesn't seem to be working
+#+end_quote
+
++Works for me.+
+:PROPERTIES:
+:Author: appropriate-username
+:Score: 1
+:DateUnix: 1478369204.0
+:END:
+
+**** Crashed after registration for me
+:PROPERTIES:
+:Author: Anderkent
+:Score: 1
+:DateUnix: 1478372640.0
+:END:
+
+***** Ohh yeah same, I didn't try to register before.
+:PROPERTIES:
+:Author: appropriate-username
+:Score: 1
+:DateUnix: 1478376773.0
+:END:
+
+
+*** Got my $250 in about 8 minutes, but I got a lucky run. Bet 60% of my cash each time. I could have done it faster, but 60% is not a natural division for me to calculate and I was doing it without assistance. Spent another 10 minutes fooling around over the cap, but the popups got annoying so I stopped at $266.64 after starting with a 0.01 bet and doubling it a few times (betting half the difference of my overage each time).
+:PROPERTIES:
+:Author: kenkopin
+:Score: 1
+:DateUnix: 1480629217.0
+:END:
+
+
+** My strategy would come from mistrust of the digitally controlled coin. I have no idea if the 60% is true, and the coin could be rigged; rules changing based on bet and bank size, etc. There could even be a human on the other end deciding the results.
+
+My strategy would be to bet a single cent every time until time runs out, or I noticed the results moving away from 60% heads. Either I'll statistically walk away with a small amount of winnings, or I'll catch on to trickery and stop playing before I lose more. Sure, this isn't optimal for the goal of maximizing winnings, but you can't play optimally if you can't trust the RNG.
+:PROPERTIES:
+:Author: Psychobeans
+:Score: 8
+:DateUnix: 1478323885.0
+:END:
+
+*** There's a significant opportunity cost to this strategy. You're playing with house money and your maximum possible loss is $25. If the expected value of the experiment is greater than $50 then you are losing money by not taking them at their word and playing aggressively.
+
+Put differently: you're playing with house money and cannot possibly walk out the door with less money than you had when you walked in. Why would you /not/ assume that they're telling the truth and play to win? Or, alternatively, just take the $25 and leave immediately without making a single bet? What are you trying to achieve with your strategy?
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 11
+:DateUnix: 1478434849.0
+:END:
+
+**** If it was house money then I misunderstood. I was under the impression that it was my money. I wouldn't bet at all if it was house money, and take the $25.
+:PROPERTIES:
+:Author: Psychobeans
+:Score: 2
+:DateUnix: 1478480084.0
+:END:
+
+***** OP says "you are offered a stake of $25". The paper says that they gave out the money.
+
+You realize that you're saying you would give up $225 that you are statistically almost guaranteed to get because you assume that someone who wants to do an experiment is definitely going to cheat you? I'm sorry to hear that; it sounds like a tough way to think.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 3
+:DateUnix: 1478491627.0
+:END:
+
+****** #+begin_quote
+  OP says "you are offered a stake of $25". The paper says that they gave out the money.
+#+end_quote
+
+I skimmed to the rules of the game, but is there really a difference between betting my money and money given to me? The moment they say I am given $25 to start, the $25 is now my money, and I am investing it into gambling if I play.
+
+#+begin_quote
+  you assume that someone who wants to do an experiment is definitely going to cheat
+#+end_quote
+
+No, what I assume is: it is possible that what is being tested is not actually what I am told is being tested. For all I know, they could be testing for how many people are actually willing to play when presented with a gambling game with odds in their favor, or maybe they are testing how people react to losing and the coin is rigged to make them lose. The point is that I can't know for certain.
+
+I'm not saying they are trying to cheat me out of my money, I am saying that I would rather walk away with a guaranteed small payout than risk it. I can't know for certain that they aren't testing something else entirely.
+
+Distrust of a game is a valid reason to decide not to play.
+:PROPERTIES:
+:Author: Psychobeans
+:Score: 5
+:DateUnix: 1478494970.0
+:END:
+
+******* #+begin_quote
+  I am saying that I would rather walk away with a guaranteed small payout than risk it.
+#+end_quote
+
+So what you're saying is you would never make an investment in which the payout is all but assured? That sounds like the only way for you to ever make money is salary employment.
+:PROPERTIES:
+:Author: Bowbreaker
+:Score: 2
+:DateUnix: 1478565581.0
+:END:
+
+******** You are taking it out of the context of participating in an experiment.
+:PROPERTIES:
+:Author: Psychobeans
+:Score: 2
+:DateUnix: 1478568526.0
+:END:
+
+********* So because you participate in an experiment your expectations of getting cheated are much much higher than real life? Why is that? Are scientists conducting an experiment, in your experience, less trustworthy than average?
+:PROPERTIES:
+:Author: Bowbreaker
+:Score: 2
+:DateUnix: 1478568714.0
+:END:
+
+********** From my post above:
+
+#+begin_quote
+  No, what I assume is: it is possible that what is being tested is not actually what I am told is being tested. For all I know, they could be testing for how many people are actually willing to play when presented with a gambling game with odds in their favor, or maybe they are testing how people react to losing and the coin is rigged to make them lose. The point is that I can't know for certain.
+#+end_quote
+:PROPERTIES:
+:Author: Psychobeans
+:Score: 2
+:DateUnix: 1478569121.0
+:END:
+
+
+********** Let me explain differently: Experiments are designed to collect data from subjects. Sometimes, it is necessary to trick, lie to, or mislead subjects to collect the data. I, currently, have no information on the frequency of trickery experiments versus non-trickery experiments. Therefore, if part of the rules of an experiment I am participating in is "you can walk away now with cash", I will likely walk away with cash.
+:PROPERTIES:
+:Author: Psychobeans
+:Score: 2
+:DateUnix: 1478569550.0
+:END:
+
+*********** #+begin_quote
+  I, currently, have no information on the frequency of trickery experiments versus non-trickery experiments.
+#+end_quote
+
+If you have no information, why assume a 100% trickery instead of investing a bit of the cash in order to investigate?
+:PROPERTIES:
+:Author: Bowbreaker
+:Score: 2
+:DateUnix: 1478569960.0
+:END:
+
+************ I feel this comes down to personal thoughts about gambling. I, myself, have a dislike for it.
+:PROPERTIES:
+:Author: Psychobeans
+:Score: 1
+:DateUnix: 1478570365.0
+:END:
+
+************* My dislike for real life gambling is that usually it is either is dumb (designed in a way that the bank has better odds than you) or it is smart but unethical (you know the odds are in your favor and the guy you plan to gain from effectively doesn't or is to ignorant to know why this matters) or is pointless (50% odds). But whenever these things don't apply I don't see how there's a problem.
+
+Examples are when the other party knows they are probably going to lose money to you but are okay with it for secondary reasons or when the gains themselves are secondary like when you are spicing up a fun game by putting a noticeable but ultimately unimportant stake (playing poker for a few dollars that you won't miss).
+
+Do you know where your dislike for gambling stems from, assuming it isn't a final utility value of yours?
+:PROPERTIES:
+:Author: Bowbreaker
+:Score: 2
+:DateUnix: 1478679146.0
+:END:
+
+
+****** But "don't gamble" is a very effective strategy against the dangers of gambling, lotteries, and advertising in our society.
+
+Real life is not a simulation. And in real life, the probable returns on gambling are always less than your inputs.
+
+A similar theory I frequently see in rational writing is substance abuse - characters who take up smoking because the end of the world is at hand and the ability to focus on stopping it is more important than life expectancy. That's not the real world. Perhaps you would have a good probability to better accomplish your productive, relaxation, creative, or pleasure goals with the help of caffeine, nicotine, adderall, alcohol, marijuana, opiates, LSD, or harder drugs. Yes, there is a variety of dangers and addictive properties in that list. And lots of people use the lighter options successfully, some are prescribed by medical professionals, and a rare few artists used illicit drugs to get results. But too many end up as barely recognizable burned out husks of their former selves.
+
+It can be very useful to precommit to not attempt certain activities that may be tempting in certain circumstances, such as gambling, drugs, or crime. This still means saying no when a contrived situation and perfect knowledge show that saying yes is advantageous: the whole point is that it protects you when it only appears advantageous.
+
+Don't criticize psychobeans for refusing to gamble. It's a very good life strategy!
+:PROPERTIES:
+:Author: LeifCarrotson
+:Score: 1
+:DateUnix: 1479825370.0
+:END:
+
+
+*** If the coin is rigged to 60% heads, to even show it's rigged, if you want to do significance testing with p < 0.05 and 80% power, you'd need /188/ flips.
+
+EDIT: In case the point I was trying to make with this wasn't clear: proving deception with limited resources (time and money) is difficult.
+:PROPERTIES:
+:Author: Magnap
+:Score: 12
+:DateUnix: 1478348971.0
+:END:
+
+**** They had time to make 300 flips. 200 to make sure it's rigged and then 100 to play for max profit would still do better than most of the players did.
+:PROPERTIES:
+:Author: sparr
+:Score: 4
+:DateUnix: 1478428961.0
+:END:
+
+
+**** Intro to statistics student here - could you show your work on this calculation?
+:PROPERTIES:
+:Author: Lugnut1206
+:Score: 1
+:DateUnix: 1478418127.0
+:END:
+
+***** To be honest, I just used [[http://powerandsamplesize.com/Calculators/Other/1-Sample-Binomial][this power calculator]]. But here's what I could've done (note that this is a slightly different calculation, as I'm finding the n needed to have 80% power to detect the bias as greater than or equal to no bias (50% heads) given that it's 60% heads, and the calculator used the power to detect the bias as different from no bias, i.e. I'm doing this for a 1-tailed test):
+
+I'm doing my calculations in Haskell, which makes things like looping until I find suitable parameters really easy. First I define, for the binomial distribution, the CDF (cumulative distribution function), which for a given k, n, and p, tells me the probability of a coin which lands heads with probability p landing heads k or less times out of n. 1-CDF(k,n,p) is of course the probability of it landing heads more than k times out of n. Then, I make a function (though you can do this by hand), which, for a given n, will keep trying larger and larger values of k until the probability of getting more than k heads in n trials with an unbiased coin (1 - CDF(k,n,0.5)) is less than 0.05. In other words, this function gives me the critical value (which from here on I'll call c), and yes, this is a very lazy way of doing it. I then use this critical value to define a power function for a given p and n, which is simply 1-CDF(c,n,p). I could then make a function to try larger and larger numbers for n until my power function reaches greater than 0.8 with p=0.6 (the probability of heads for the coin, not the p-value), but I wrote this code with no thought given to performance, so it was faster to just try some realistic numbers myself, and then search my way to the lowest integer n where the power was >0.8. In this case, that's 158. I can't share my code, as I just wrote it in GHCi (a read-evaluate-print loop), so it was gone the moment I closed my terminal, but if you really want me to, I can reconstruct it.\\
+The gist of what I did: find n and k such that 1-CDF(k,n,0.5)<0.05 and CDF(k,n,0.6) > 0.8
+
+Sorry if this post is long and rambling, I started writing it as my ADHD meds were wearing off, then got distracted, then came back to it, then got distracted again etc. several times. I hope it was helpful in any way.
+:PROPERTIES:
+:Author: Magnap
+:Score: 3
+:DateUnix: 1478488853.0
+:END:
+
+****** As far as optimal betting goes, requiring an 0.05 significance level with 80% power is way too risk-averse, isn't it?
+
+Simply estimating the bias using the Laplace's rule of succession and plugging that into the Kelly criterion would be a decent alternative. You don't /have/ to require large amounts of evidence for the bias before you're ready to bet on the outcomes.
+:PROPERTIES:
+:Author: AugSphere
+:Score: 4
+:DateUnix: 1478524556.0
+:END:
+
+******* Sure, that'd work. My goal was just to underscore how much work would be needed to execute "My strategy would be to bet a single cent every time until time runs out, or I noticed the results moving away from 60% heads", if you want to actually notice the results moving away from 60% heads.
+:PROPERTIES:
+:Author: Magnap
+:Score: 3
+:DateUnix: 1478541192.0
+:END:
+
+******** Since we're on the subject, can you think of a decent method that would utilise the whole posterior for determining the amount to bet, if the bias isn't known and has to be determined as the results of tosses are observed?
+
+Clearly betting using only the mean (estimated with a rule of succession, for example) ignores the very pertinent information about how much information the person has about the bias of the coin (the relative entropy from prior to posterior). I've been playing around trying to explicitly optimise expected gains with the beta distribution, but haven't managed to obtain a closed form expression yet.
+
+EDIT: I mean, it's pretty easy if you resort to Monte Carlo, but I was hoping I'd be able to get a concrete expression, since the situation is so simple.
+:PROPERTIES:
+:Author: AugSphere
+:Score: 2
+:DateUnix: 1478544683.0
+:END:
+
+********* Defining the posterior =Pr(p|h,t) = BetaPDF(h+1,t+1)= (the probability =p= of heads given the numbers =h= and =t= of heads and tails; please excuse my informal notation), we can combine this with the Kelly criterion for even-money bets (which I'm assuming this is, though I haven't read the paper) =f = 2p-1= (where =f= is the fraction you should bet) allows us to get the expected value of =f=: =E[f] = \int_{p=0}^1 (2p-1)*Pr(p|h,t) dp= (hope you don't mind a bit of LaTeX). When reassured that yes, =t= and =h= are indeed positive, Mathematica helpfully gives this as =(h-t)/(2+h+t)=, and indeed =\lim_{n\to\infty} (0.6n-0.4n)/(2+0.6n+0.4n) = 0.2= which is in agreement with the Kelly criterion.
+
+EDIT: rephrased last sentence
+:PROPERTIES:
+:Author: Magnap
+:Score: 2
+:DateUnix: 1478553853.0
+:END:
+
+********** By taking an average of the Kelly criterion over the posterior, you've just reproduced Kelly criterion with probability set to the mean of the posterior (i.e. the Laplace's rule, since you went for the uniform prior).
+
+Check it out: =2*(h + 1)/(n + 2) - 1 == (2*h + 2 - n - 2)/(n + 2) == (2*h - n)/(2 + n)=, which is the same as =(h-t)/(2+h+t)=.
+
+There must be a way to do better than this. Otherwise we'd have to conclude that a rational betting agent bets the same fraction whether they observed (2h, 1t) or (1502h, 1001t), which would be silly.
+:PROPERTIES:
+:Author: AugSphere
+:Score: 3
+:DateUnix: 1478558767.0
+:END:
+
+*********** But this would correspond to being risk-neutral, no? Same way that a risk-neutral agent couldn't choose between paying a bill and having 10% chance of paying 10x the bill. So if you've seen (2h,1t), you have a good bit of your probability volume outside of, say, [50%,70%], and where the <50% probabilities drag your expected payoff down, the >70% probabilities increase it, in fact more than enough to make up for the risk of the coin being biased against you. The Kelly strategy is optimal /in the long run/ for known bias, and similarly, this strategy /converges/ to Kelly as the bias becomes more certain, i.e. as we bet more. As such I claim it's optimal (maximizes expected utility) in the long run for a risk-neutral agent with logarithmic utility.
+:PROPERTIES:
+:Author: Magnap
+:Score: 2
+:DateUnix: 1478595698.0
+:END:
+
+************ I've been observing the betting outcomes of bots with this strategy and vast majority of them tends to lose money during first ~20 bets, which can't really be optimal, I feel. You could do better by simply not betting.
+
+The thing about Kelly criterion is that you start with the expected multiplier for profit =(1+x)^(N*p)*(1-x)^(N*(1-p))= and optimise that over x. The logarithm is useful for simplifying the expression, due to the fact that it's monotonic and doesn't move the extrema, but turns powers into products. If we want to derive optimal bets using a whole posterior, then we'd have to first figure out the expected multiplier by taking the integral =P(p|h,t)*(1+x)^(N*p)*(1-x)^(N*(1-p)) dp= and only then we could try and optimise the result, I think. Which isn't a trivial calculation even with a Beta distribution.
+
+Sure, the fact that simple Kelly strategy with Bayesian posterior mean converges to using Kelly criterion with the true bias is fairly obvious, unless the prior is insane, but I have a feeling there must be some strategy that does better.
+
+I think I'm gonna go write a bot that samples from the posterior and calculates the optimal bet for maximum expected gain using the sample. I'll post the results when I'm done.
+
+EDIT: Well, this turned out to be a little bit more complicated than anticipated. May be a while till I'm done.
+:PROPERTIES:
+:Author: AugSphere
+:Score: 2
+:DateUnix: 1478596996.0
+:END:
+
+
+************ Welp, according to [[http://www.columbia.edu/%7Eww2040/PortfolioChoice96.pdf][this paper]] (third section) betting using Kelly criterion with the Bayesian posterior mean is "optimal".
+
+I'm still confused about the precise technical meaning of "optimal" here, since the strategy is outperformed by not betting anything for the first 50 bets and then starting to bet.
+
+[[https://plot.ly/%7EAugSphere/5/][Here's]] the mean log-money for 500 simulated "optimal" bots. [[https://plot.ly/%7EAugSphere/7/][Here]] is for bots that don't bet anything for first 50 flips.
+
+EDIT: The situation is the same if I measure performance by simple average money of bots, rather than the average of logarithm.
+:PROPERTIES:
+:Author: AugSphere
+:Score: 2
+:DateUnix: 1478622891.0
+:END:
+
+************* Maybe trying to look at determining the optimal number of flips to wait before betting would give a clue? Just throwing it out there because I don't know how to approach that.
+:PROPERTIES:
+:Author: Magnap
+:Score: 2
+:DateUnix: 1478627450.0
+:END:
+
+
+*** Since participant trust in the experimenter is a commons, and economists know what a commons is, economic psychologists /do not lie/ about experimental setups to subjects.
+
+(No such rule or reason holds among cognitive psychologists generally, unfortunately.)
+:PROPERTIES:
+:Author: EliezerYudkowsky
+:Score: 12
+:DateUnix: 1478376091.0
+:END:
+
+**** Ah, but how do you know that it's not a cognitive psychology experiment masquerading as an economics experiment?
+:PROPERTIES:
+:Author: brocht
+:Score: 16
+:DateUnix: 1478455640.0
+:END:
+
+***** Ask them a basic question about economics?
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 4
+:DateUnix: 1478486698.0
+:END:
+
+
+*** I honestly didn't consider deception and I totally should have. It would probably be worth it to bet a single penny approximately 40 times to determine if the 60% probability is holding before starting "real" bets.
+
+My betting strategy before reading the guide would have been 50% of my pool each bet. After reading their explanation I can see that my instinct is too high lol.
+:PROPERTIES:
+:Author: Dragonheart91
+:Score: 4
+:DateUnix: 1478331005.0
+:END:
+
+**** The problem with the possibility of deception is it might not activate the deception until you start making "real" bets.
+:PROPERTIES:
+:Author: Psychobeans
+:Score: 7
+:DateUnix: 1478333106.0
+:END:
+
+***** That seems like a stretch to me. Only a very small fraction of people would thoroughly check for a deception.
+:PROPERTIES:
+:Author: Dragonheart91
+:Score: 1
+:DateUnix: 1478336704.0
+:END:
+
+****** I feel the suspicion is justified when I'm offered a gambling deal where they insist the odds are in my favor. I guess I'm in that small fraction.
+
+Quick edit: If the RNG was done via dice or some other traditional method, I'd feel a lot better about it, and would probably end up betting roughly a third of my cash each time (I was not aware of the correct formula ahead of time, but it makes sense to bet a predetermined percentage each time).
+:PROPERTIES:
+:Author: Psychobeans
+:Score: 5
+:DateUnix: 1478337104.0
+:END:
+
+******* But loaded dice are trivial to make. I mean it's slightly harder then just lying about the odds...but the reputational risk of out right committing fraud is more then either.
+
+Also what the hell would be their motivation? They aren't going to be making a profit off giving you money.
+:PROPERTIES:
+:Author: nolrai
+:Score: 1
+:DateUnix: 1478547617.0
+:END:
+
+
+**** That strategy assumes that the researcher lied about the odds your coin, but told the truth about every single other aspect of the game. What's to say they won't "switch" the coin with a different one halfway through the game? That might be part of an interesting experiment, to see if people notice conflicting evidence or something.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 7
+:DateUnix: 1478340401.0
+:END:
+
+
+** Never heard of the Kelly criterion before, but no lie, my instinct was to bet 25% of my stake per flip (proper answer is apparently 2*0.6-1=20%, but I tend to live dangerously anyway.)
+
+EDIT: Not noticing this was half a month old is what I get for browsing reddit with insomnia.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1479815734.0
+:END:
+
+
+** It's not that surprising a result. In all these sorts of experiments, whether it's the RAND studies on the prisoner's dilemma or calibration training, people initially perform terrible on tasks which are not ecologically valid or they have done before, but then gradually improve their performance. This takes more than 300 flips, though, which is not much for trying out various strategies with such a small edge. For example, calibration training requires at least that many items for most people, and their test items are much more informative than binary coin flips (eg one can update a lot from predicting 99% on a false item; one doesn't update nearly as much from one out of many strategies in betting $2 and losing on a 40% chance). So you would have to use play money, which I don't think would seriously damage the results' validity.
+
+Interesting affiliation for one of the authors - [[https://en.wikipedia.org/wiki/Pimco][Pimco]]?
+:PROPERTIES:
+:Author: gwern
+:Score: 2
+:DateUnix: 1480096594.0
+:END:
+
+
+** Are you betting against the other participants or the house?
+
+I started to say "why would you take this bet unless you could choose heads?" Then I realized that it would make sense to take a biased bet if you could get odds.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1478347454.0
+:END:
+
+*** you can choose heads
+:PROPERTIES:
+:Author: sparr
+:Score: 1
+:DateUnix: 1478429035.0
+:END:

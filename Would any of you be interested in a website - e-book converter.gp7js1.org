@@ -1,0 +1,347 @@
+#+TITLE: Would any of you be interested in a website -> e-book converter?
+
+* Would any of you be interested in a website -> e-book converter?
+:PROPERTIES:
+:Author: wederer42
+:Score: 43
+:DateUnix: 1590250304.0
+:END:
+I dislike reading in a web browser on my phone and prefer reading on a kindle While searching online I could not find a good service to create ebooks from a website such as fanfiction.net. So i wrote myself a small script that scrapes the websites and outputs a format which I can read on my kindle.
+
+Would any of you be interested in a online service with similar functionality?
+
+*edit: Thanks for your extensive input. I got a clearer vision for the service now and will write up a design document or similar.*
+
+To give you a broad overview:
+
+- Backend FanFicFare + leech + custom scripts for maximum compatability with sites
+- Frontend will be mobile-first (with PWA support)
+- Main feature will be to just convert an URL to an ebook
+- Additional Feature to "subscribe" to updates which get automatically pushed to your device of choice (e.g. kindle) -- open question: how to update ebooks on kindle?
+- Additional Feature to add support for custom sites -> User tries to convert a site which is not supported -> Provide a wizard with which the user can build a converter
+
+I have a lot of open questions still such as:
+
+- Name for the service?
+- How to get input on development? Should I post a "monthly development update" thread on reddit or similar?
+- How to pay for server costs? Patreon?
+
+I got to go now, so sorry if my edit seems rushed. Thanks again for the discussions and input!
+
+
+** Calibre + fanficfare is what I generally use. It works for a wide variety of sites, including ffnet and ao3. Very convenient.
+:PROPERTIES:
+:Author: Asviloka
+:Score: 23
+:DateUnix: 1590251366.0
+:END:
+
+*** I just took a closer look at fanficfare. It would probably be a good base for the website.
+:PROPERTIES:
+:Author: wederer42
+:Score: 5
+:DateUnix: 1590254036.0
+:END:
+
+
+** I have written extensive scripts for converting stuff into ebooks. I have general purpose scrapers that accept URLs and give you epubs, with support for additional modules such as Mozilla Readability, outline.com, the internet archive wayback machine, Github, raw text (such as URLs that contain code), ... . I have written convenience wrappers for RSS, k2pdfopt, Libgen Genesis, [[http://myanonamouse.net]], fanficfare, Lesswrong sequences, ... . The scripts are very powerful and customizable, supporting cookies if needed, JS-rendering via puppeteer, url redirecting, ... . I have opensourced all my [[https://github.com/NightMachinary/.shells][scripts]], but I have not documented them.
+
+If you're interested, I have recently written an experimental tool that converts any of my shell functions into a standalone script. I have used that to generate this [[http://82.102.11.148:8080//tmp/tl_a2b572e8fd354ff7b04ab799f1381407.zip][script]] that can be used as =EMAIL=whitelistedemail@sth.com kindle_email=youremail@sth.com tl.zsh <url> ...=. (I have not tested this experimentally generated script though.) (This =tl= is the general purpose scraper plus Mozilla Readability.) (I think you'd be better off using the scripts as I do, by sourcing all my shell functions.)
+
+Unfortunately, using my scripts for the backend of a webservice presents some security challenges that I do not have the expertise for, because they are written in shell languages and use “eval” quite a bit, so they may execute code if their input is not sanitized properly. Of course, one can always isolate them in docker containers so that if they do get hacked the damage would be small ...
+
+I also have written a unix-to-Telegram [[https://github.com/NightMachinary/betterborg][bridge]], with which I can easily utilize my scripts from mobile devices using my VPS. I have recently written a Siri shortcut, too, that sends the HTML content of the page via SSH to my VPS to be cleaned and sent to Kindle.
+
+PS: For the specific case of fanfiction, there are already good sites out there (Haven't you searched?!). [[http://ff2ebook.com]] [[https://ficsave.xyz]]
+
+PPS: Some screenshots of my workflow:
+
+[[http://82.102.11.148:8080//tmp/IMG_0125.PNG]]
+
+[[http://82.102.11.148:8080//tmp/IMG_0126.PNG]]
+
+[[http://82.102.11.148:8080//tmp/IMG_0127.PNG]]
+
+[[http://82.102.11.148:8080//tmp/IMG_0129.PNG]]
+
+If you like to use these, open an issue on my github repoes, and I'll help. The primary reason I haven't documented my work currently is that nobody has asked, and this isn't all that motivating.
+:PROPERTIES:
+:Author: whats-a-monad
+:Score: 17
+:DateUnix: 1590259457.0
+:END:
+
+*** Do your scripts work with wordpress? That's the only website that I can't find a scraper for.
+:PROPERTIES:
+:Author: CaramilkThief
+:Score: 2
+:DateUnix: 1590268947.0
+:END:
+
+**** There are two parts to scraping Wordpress; One is to convert a set of Wordpress links into epub (which my scripts handle well enough) and another is extracting links from Wordpress that form a coherent whole (for examples, the chapters of a story). My scripts don't support the second case out of the box, but I have a function “getlinks-c” that supports getting links that match a regex from a webpage, and I can do this: =web2epub “my title” “${(@f)$(getlinks-c -e “regex that matches the desired links” “wordpress link here”)}”=. (Alternatively, I have ways of selecting links via selectors, but I don't understand selectors as well as simple regexes, so I try not to use them.)
+
+The reason this can't get automated is that the regex needed to filter the URLs is unique to each Wordpress page and its way of organizing content. In fact, the above code assumes there is a single table of contents page on that site; If not, the code will get more complicated.
+
+Truth to tell, I have not needed to scrape Wordpress stories much, and there might be patterns that allow automated link retrieval after all.
+
+PS: Another easy solution is to use a browser extension that lets you copy the URLs of links in your selection, and then just paste them after the general scraper: =web2epub “title” “paste the urls copied from browser here”=. This method works quite well with all stories. I recently used this to make an epub of Overlord v14 whose links were on a private Discord channel and quite hard to scrape otherwise.
+
+PPS: Basically, most of the value is already captured by the general scraper; All other wrappers are mere conveniences.
+:PROPERTIES:
+:Author: whats-a-monad
+:Score: 1
+:DateUnix: 1590274837.0
+:END:
+
+
+*** Thanks for your extensive answer.
+
+Your scripts definitely look promising. I will take a closer look once I start implementing the backend and FanFicFare/leech do not cover my needs.
+
+I looked into ff2ebook and ficsave, but both of them sometimes failed with general error messages without further information. So I feel like a more robust service would definitely be of use.
+:PROPERTIES:
+:Author: wederer42
+:Score: 1
+:DateUnix: 1590304714.0
+:END:
+
+
+*** You seem to know what you are doing so let me ask you this:
+
+I am trying to download [[https://archiveofourown.org/works/11478249/chapters/25740126][Worth the Candle]] in a MOBI format to read on my Kindle but by using the download feature from archiveofourown.org I get tables looking like an unreadable mess [[https://i.imgur.com/3ZBLj3z.png][like this]] when [[https://i.imgur.com/4Uni1dE.jpg][this is]] how it properly looks like on the webpage. Any way I can get it to look nice on my Kindle?
+:PROPERTIES:
+:Author: Hypervisor
+:Score: 1
+:DateUnix: 1590331850.0
+:END:
+
+**** I tried a lot of things to get that table decent on epub, but none of them worked well. Here is one that you might prefer to ao3's mobi: [[http://82.102.11.148:8080//tmp/worth%20the%20candle%20%28v2%20ok%20tables%20till%20ch205%29%20-%20night.mobi][file]]. My only other suggestion is to try printing the webpages to an A7-sized PDF via your browser. That might work better. Ebook formats generally suck for anything but plain Western text. Blame the consumers.
+:PROPERTIES:
+:Author: whats-a-monad
+:Score: 2
+:DateUnix: 1590343803.0
+:END:
+
+***** I tried all I could but nothing seemed to work. But thanks anyway you saved me much time that I would have spend researching the problem. I think I'll just read on my phone whenever a table comes up.
+:PROPERTIES:
+:Author: Hypervisor
+:Score: 1
+:DateUnix: 1590351744.0
+:END:
+
+****** You know, I just tried the ebook fanficfare generates on my Kindle Oasis 1, and the tables show pretty well. I just set the zoom to the lowest level, and the table is as good as the web version, pretty much. Try moving the mobi file using USB?
+:PROPERTIES:
+:Author: whats-a-monad
+:Score: 1
+:DateUnix: 1590403768.0
+:END:
+
+******* I tried using fanficfare but it doesn't work either. Maybe it's the fault of the kindle model I have rather than the conversion process to .mobi format.
+:PROPERTIES:
+:Author: Hypervisor
+:Score: 1
+:DateUnix: 1590432006.0
+:END:
+
+
+** Other than FanFicFare, another such already-existing program is [[https://github.com/kemayo/leech][leech]]. It seems designed more specifically for the kinds of long-form independent web-novels that get linked here, as it focuses more on making it quick and easy to configure their generic scraper plugins for custom one-off sites (the kind of "novel as WordPress blog on its own domain" works we see a lot of here.)
+
+This contrasts with FanFicFare's focus on explicit preprogrammed support for fiction-hosting websites, blogging engines and forums, at the expense of requiring you to sit down and write a plugin from scratch if you want it to scrape anything more bespoke.
+
+Amusingly, in leech's example on how to configure a job for its "custom" plugin, the developer has chosen to use /Practical Guide to Evil/ as the scrape target. :)
+:PROPERTIES:
+:Author: derefr
+:Score: 7
+:DateUnix: 1590270705.0
+:END:
+
+*** I'd second leech. I use it quite a bit, and it cleans up web text nicely to more traditional book style (indented paragraphs instead of line breaks for example.)
+
+It isn't very hard to create new entries for one off sites (Wordpress, or really anything that has a discrete table of contents page). I haven't had the need to create a new web service (RoyalRoad, ao3, etc) since it already has the ones I need, but I figure it wouldn't be that bad.
+
+Updating existing ebooks is pretty fast, but does take a few minutes (I keep my kindle offline and transfer with Calibre, maybe faster way)
+:PROPERTIES:
+:Author: ConnorF42
+:Score: 2
+:DateUnix: 1590280639.0
+:END:
+
+
+*** Thanks for the link to leech. I might use it in addition to FanFicFare.
+:PROPERTIES:
+:Author: wederer42
+:Score: 1
+:DateUnix: 1590304098.0
+:END:
+
+
+** Is the proposed functionality similar to [[https://www.mobileread.com/forums/showthread.php?p=3084025&postcount=2][FanFicFares]]'s (previously known as FanFictionDownLoader)? Or is it more like [[https://chrome.google.com/webstore/detail/webtoepub/akiljllkbielkidmammnifcnibaigelm?hl=en][WebToEpub]]?
+:PROPERTIES:
+:Author: ahasuerus_isfdb
+:Score: 7
+:DateUnix: 1590251309.0
+:END:
+
+*** Similar to WebToEpub, but with support for custom sites. I would give the user a way to parse e.g. forums such as sufficientvelocity.com or wordpress sites.
+:PROPERTIES:
+:Author: wederer42
+:Score: 3
+:DateUnix: 1590252027.0
+:END:
+
+**** In this case, it would be more useful to work on adding to FanFicFare's functionality, rather than building a competing product.
+
+FFF already solved this problem for basically all major fiction repositories and a long list of minor ones, and as a bonus integrates well into Calibre, arguably the best ebook management tool at this time. There's no point in reinventing a wheel that's been polished for more than ten years. (Except for the joy of programming it yourself, in which case I understand it completely, go for it!)
+
+If it's a webservice you need, FFF also supports that. The dev [[https://github.com/JimmXinu/FanFicFare/wiki#web-service-version][did maintain one]] for a while before Google (his host at the time) made it too expensive to run.
+
+What FFF lacks is [[https://github.com/JimmXinu/FanFicFare/wiki/FAQs#why-doesnt-fanficfare-support-livejournal-and-many-other-popular-fan-fiction-websites][adapters for custom sites]] that don't integrate semantic clues or metadata in their pages, which obviously makes parsing them a scripting nightmare. If you have the will and skills to do that kind of work and resolve that difficulty, please consider contributing code to FFF.
+:PROPERTIES:
+:Author: rdalex
+:Score: 15
+:DateUnix: 1590255254.0
+:END:
+
+***** I absolutely agree after taking a closer look. I will edit my post with a more updated idea.
+:PROPERTIES:
+:Author: wederer42
+:Score: 1
+:DateUnix: 1590304769.0
+:END:
+
+
+**** does WebToEpub not do that in the advanced options? I've frequently used it for non supported sites by identifying the CSS elements containing text...etc
+
+Am I missing the core of your proposal or is it supposed to be more user friendly or something along those lines?
+:PROPERTIES:
+:Author: Areign
+:Score: 5
+:DateUnix: 1590261511.0
+:END:
+
+
+**** Yeah, that'd be super useful.
+:PROPERTIES:
+:Author: callmesalticidae
+:Score: 2
+:DateUnix: 1590253336.0
+:END:
+
+
+** I use [[http://ficsave.xyz/]] but it's a bit finicky, so I would be very glad to have something more robust available!
+:PROPERTIES:
+:Author: thomas_m_k
+:Score: 3
+:DateUnix: 1590274519.0
+:END:
+
+*** Thanks for the input!
+:PROPERTIES:
+:Author: wederer42
+:Score: 1
+:DateUnix: 1590304347.0
+:END:
+
+
+** The problem with scripts and plugins is that you need a PC for that still. Would it be possible to create an app for this? If it indeed has the versatality of WebToEpub and works for multiple sites (e.g wordpress royalroad, spacebattles, etc.) I wouldn't mind paying for such an app, and probably others would be willing too.
+
+The reason? Even if you use WebToEpub, you're going to need to use that from your PC, and then use /another/ app (Send to Kindle) to actually be able to read it. As a person who reads only from my phone and doesnt have access to a PC, an app that A) can scrape serials into an epub and B) add any downloaded epubs to your Kindle library would be a great lifesaver and something I'd gladly pay for.
+
+That's my two cents. WebToEpub stopped being useful when I no longer had access to a PC ;-;
+:PROPERTIES:
+:Author: xland44
+:Score: 2
+:DateUnix: 1590262347.0
+:END:
+
+*** WebToEpub works just fine on Firefox for Android.
+:PROPERTIES:
+:Author: zajhein
+:Score: 1
+:DateUnix: 1590271755.0
+:END:
+
+
+*** My plan for the website definitely includes PWA (Progressive Web App) features to make it usable like an app (at least on Android).
+:PROPERTIES:
+:Author: wederer42
+:Score: 1
+:DateUnix: 1590305851.0
+:END:
+
+
+** This already exists. There are FF.net downloaders and browser extensions, and I've used bloxp for wordpress sites.
+
+What I'd pay money for is a service that keeps an up-to-date ebook of a web serial synced to my kindle, so I don't have to start up a download/conversion manually every time there's an update.
+:PROPERTIES:
+:Author: uwu-bob
+:Score: 2
+:DateUnix: 1590268706.0
+:END:
+
+*** What would be the best way to "keep ebook synced up with kindle"? I know that you can send ebooks to a kind e-mail adress, but is kindle smart enough to update an ebook instead of add one when the metadata is the same?
+:PROPERTIES:
+:Author: wederer42
+:Score: 1
+:DateUnix: 1590304213.0
+:END:
+
+
+** While I probably wouldn't use such a thing myself, there's always a demand for format converters. And while (as people mentioned) there are existing things like FFF, it never hurts to have alternate channels in case something unfortunate (service outage, legal trouble, site DDOS etc) happens to one of them.
+
+Plus, I guess, you could always add additional functionality like the creation of ebooks with customizable covers, title pages, and so on. Make those kinds of services cheap enough and fans of various works may well be prepared to drop a couple of dollars to create a fancied-up version of their favorites.
+:PROPERTIES:
+:Author: Geminii27
+:Score: 2
+:DateUnix: 1590270050.0
+:END:
+
+
+** I use the browser extensions Web2epub (for works) and dotepub (for individual chapters).
+:PROPERTIES:
+:Author: Toastybob42
+:Score: 2
+:DateUnix: 1590277143.0
+:END:
+
+
+** If you start a github project and advertise it on here, I'd be happy to contribute.
+:PROPERTIES:
+:Author: waylandertheslayer
+:Score: 2
+:DateUnix: 1590344628.0
+:END:
+
+
+** A bit of background info about FFF. To quote a recent post by the developer:
+
+#+begin_quote
+  ... the *mobi output*. Honestly, that code is ancient and it is reverse engineered from Amazon's proprietary binary format. It predates my involvement in the project and I don't understand that code.
+
+  I recommend downloading to epub and using Calibre to convert to mobi if you really need mobi (I use azw3 for Kindle myself). You'll also get better mobi output with chapter marks.
+
+  That also gives you the advantage of being able to update and add new chapters without downloading every chapter every time.
+#+end_quote
+:PROPERTIES:
+:Author: ahasuerus_isfdb
+:Score: 2
+:DateUnix: 1590356176.0
+:END:
+
+
+** For custom sites, an alternative to parsing a table-of-contents page is to just identify the "next" link on each chapter and follow it. The @Voice android app, for example, follows next links and trims headers /footers using heuristics of some sort. It works pretty well in my experience.
+:PROPERTIES:
+:Author: rapdmt
+:Score: 1
+:DateUnix: 1590342974.0
+:END:
+
+
+** There is "Lightnovel Crawler" bot in Discord and Telegram which supports a lot of webnovel sites.
+
+[[https://github.com/dipu-bd/lightnovel-crawler]]
+:PROPERTIES:
+:Author: PreFollower
+:Score: 1
+:DateUnix: 1590405175.0
+:END:

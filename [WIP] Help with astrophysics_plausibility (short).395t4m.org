@@ -1,0 +1,660 @@
+#+TITLE: [WIP] Help with astrophysics/plausibility? (short)
+
+* [WIP] Help with astrophysics/plausibility? (short)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 12
+:DateUnix: 1433857213.0
+:END:
+I know just enough about physics and space exploration that I could impress someone who knew nothing, which means enough that I would exasperate someone knowledgeable on those subjects.
+
+The story is called /Sisyphus/. It's short (~2000 words). [[https://docs.google.com/document/d/1DdiSNDXT-ZL5gMEZ7C7ikcZixX4X7ZkcC1K39F3siQI/edit?usp=sharing][Read this,]] and tell me all the things wrong with it as far as physics and plausibility go, and how to fix those things. Google Docs supports editing suggestions, which I would appreciate. Longer comments (such as those pointing out some reason that there's no possible world where any of this could even remotely work) can go on reddit.
+
+(I decided to write first and ask questions later on this one; we'll see how that works out for me.)
+
+Edit: Changes:
+
+- Per [[/u/Transfuturist]] and [[/u/codahighland]], lowered total mass from 10^{15} kg to 10^{11} kg.
+- Fixed a bunch of style issues (thanks everyone).
+- Changed "decades" to the more ambiguous "years" in order to make the threat more difficult to respond to.
+- Per [[/u/Bulwersator]], changed some of the wording regarding encryption
+
+Still a work in progress; probably needs a full rewrite to make the physics of it work, per Kerbal_NASA.
+
+
+** You can vastly improve the realism by making a small difference that (imo) slightly improves the drama of the story. The primary realism issue is that no company is going to send an asteroid mining craft off to the asteroid belt in order to alter its path to orbit Earth when there are already plenty of asteroids that come really close anyway. Even if you did, you'd never do it with an asteroid of the necessary size as it would requires too much energy to get it to orbit. Even if you changed the story so that craft has landed on a closely approaching asteroid, the point in the orbit in which you'd mine is way too close to change it to hit Earth. Further, from an audience perspective, it /feels/ suspicious that there aren't a lot more precautions in this procedure anyway because even without an evil megalomaniac, getting an asteroid to orbit Earth /feels/ like you're doing something risky anyway. That makes Clark seem less like an ingenious opponent and more like the company is incompetent. The secondary issue is that if the craft position and asteroid is known, it gives ample opportunity for humanity to send a counter-craft
+
+Now for the change: The story starts with the craft being recently launched. Even though its only going to mine the asteroid from near-Earth orbit, it does still actually have enough fuel to get far away from Earth since, in order to mine the asteroid, it has to match velocity with the asteroid and then get back to Earth. It only needs to be able to match velocity to have whatever orbit the asteroid has.
+
+If the craft makes an unknown course correction and does not send signals then it is essentially invisible. This means you have a craft that can go by basically any asteroid or asteroids, and alter their course to hit Earth. For asteroids near enough to their apoapsis (peak of their orbit where its easiest to alter their course) that would normally be a near-miss this requires very little energy (to note: this course alteration is vastly less energy intensive/tricky than getting an asteroid into a nice orbit around the Earth). The craft does need a telescope with the ability to see nearby targets with the right composition. By "right composition" I mean it can't pick, say, a comet with a very visible tail. This way, by the time scientists are able to observe these targets, it would be too late.
+
+Now as far as security goes, you have to use a Dead Man's Switch (this even applies in your original story). Not only does this make it much more realistic, it creates the opportunity for a very dramatic scene/image. Everyday the emperor could get on a livestream to perform the daily ritual of entering in the codes while the whole world watches and hopes that the emperor didn't fuck up entering that day's code (he would, after all, have to either memorize many many codes). In order to obfuscate the position of the craft, this code is then broadcast to millions of different points corresponding to millions of potential orbits of which only one is the actual orbit of the craft (not even the emperor would need to know which is real, only the craft's computer would need to know). If the craft gets that day's code then it continues on not altering any asteroid's course. If it fails to get the code in a particular day, then it goes into Earth killing mode.
+
+This security feature also gives everyone enormous incentive to care deeply about the health and safety of the emperor, for if he dies for any reason, then so does everyone. Also, if he does die, then it becomes a desperate and I believe hopeless struggle to try to develop the technology necessary to find either the craft or be good enough at finding asteroids to be able to detect any collisions well in advance. While the world unites in this effort, everyone would know that at any point scientists could announce that they've found the asteroid that will kill us all and its too late to do a damn thing.
+
+And as for the initial dramatic reveal, since it seemed the company wasn't doing anything that sounded too dangerous to begin with, the betrayal seems way more unexpected, which makes Clark appear to be that much more of an unstoppable evil genius.
+:PROPERTIES:
+:Author: Kerbal_NASA
+:Score: 5
+:DateUnix: 1433891269.0
+:END:
+
+*** Thanks for the advice.
+
+Isn't there a question of credibility? What's to stop Clark from simply sending off the spacecraft and telling everyone that he's set up this program, when in fact it's a complete bluff? (That's probably a different story; where people argue over whether the emperor actually is threatening earth, or whether he's pulling the most successful ruse of all time.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 4
+:DateUnix: 1433901224.0
+:END:
+
+**** Well they presumably have a record of the git commits that they didn't look over carefully enough the first time, so no trust involved. There could even be some dramatic scenes of people trying to verify whether the code would actually work/if there are exploitable mistakes.
+
+Also them knowing the source code won't help them to predict where the craft is as long as there is some random or unknowable element to the machine's decision making (e.g. if a line of the source code says something like "of these 10 million useful orbits pick one at random" or "based on x data do y" where x data is something only the craft can see).
+
+I actually have a fair few things more to add now that I know you're interested, I'll post those too (have to write them up first). Edit: I added some extra stuff. I feel there's more I could say, but that's all I could think of for now.
+
+(also I looove all your work!!! >Insert unashamed squuuuueeeeeees<)
+:PROPERTIES:
+:Author: Kerbal_NASA
+:Score: 5
+:DateUnix: 1433902548.0
+:END:
+
+
+*** Some additional clarifications/explanations (this isn't particularly necessary to know but fills you in on some details).
+
+I've spent a bunch of time scrounging the internet and a bunch of papers trying to figure out if the NASA Deep Space Network (DSN for short) could broadcast across the entire solar system and expect to get the signal to the craft or if it would have to be limited to broadcasting to a number of fake orbits (+ one real one). If its the former then the following is possible
+
+Since the craft can pick and chose multiple targets at will, the emperor can threaten Earth with devastating but non-extinction causing disasters. I'm not sure why this would be used (perhaps to make the fear more visceral and make people super certain that he's actually capable of carrying these strikes out). I /think/ the safest way to implement this from a computer security point of view would be to send the devastate signal by not by not sending the Dead Man's Switch code signal for a day. The next day if the craft does get a proper signal it will send a devastating strike, whereas if it doesn't get the proper signal yet again then it goes into extinction strike mode. (the other way of sending a "devastate" signal introduces an unnecessary computer security attack vector, imo, also this means the emperor would have to fuck up the code twice in order to cause extinction, a problem which could also be solved by accepting one of N codes a day but at this point I'm rambling haha). Either way, this introduces the conundrum. In order for this to work, the craft would have to break one of the orbits that was initially given. This means that if DSN can broadcast completely blind there's no issue, but if it can't then it won't be able to broadcast the craft again. The craft would have to broadcast new positions, which would be fine cause you could give a million positions/orbits again, except for one issue. When the craft sends the signal, I believe that this could be used to find the actual position, based on the difference in time that the signal is received by various telescopes (and some other stuff I think).
+
+On to a different topic; I'm going to explain why I think its reasonable to assume that the telescope on board the craft would be powerful enough to do what I described. In order for the craft to land on a near Earth asteroid, its going to need to get detailed imagery of the asteroid in order to find good landing sites. The farther away course corrections can be made based on this data, the less fuel-expensive they will be which justifies a fairly powerful telescope. This combined with the fact you don't need anywhere near detailed imagery to select potential candidates, gives a decent range for the on board telescope to spot candidates. Finally, its biggest advantage vs. Earth telescopes is simply that its distance to asteroids compared to the minimum spotting distance required for Earth to do anything is waaay smaller. And in regards to competition vs. other spacecraft telescopes of the same magnification or greater, the emperor's still wins because it just has to be able to find an asteroid of any it comes across that is suitable, whereas the competition has to scan the entire area to find any dangerous asteroids (and/or the tiny tiny craft).
+
+With regards to the energy difference between setting an asteroid on a collision course versus a course that ends in orbiting Earth:
+
+There used to be an absolutely massive amount of asteroids that could get into orbit around Earth with relatively little energy. The reason these asteroids aren't around any more is because they became Earth. Ones closer to the Sun became Venus and Mercury and the ones farther from the Sun became Mars. This is why the Asteroid Belt is both the best best and a terrible bet, they're the closest stable* orbits for asteroids and still very far away. The amount of energy an asteroid in a circular orbit around the sun has is equal to -GMm/2R (G = grav. const., M = sun mass, m = asteroid mass, R = radius of orbit). If you plug in the energy for the orbit of an asteroid of mass 10^{11} kg at 2.7 AU (where the asteroid belt is) vs. 1 AU (Earth orbit), you get a difference of [[http://www.wolframalpha.com/input/?i=%2810%5E11+kg%29*%28%28G+*+%28mass+of+sun%29%2F+%281+AU%29%29-%28G+*+%28mass+of+sun%29%2F+%282.7+AU%29%29%29][5.6 x 10^{19} Joules]] . This about half the electricity consumption of the United States for a year. Which I think is kinda sorta a lot. It only gets worse when you try this with an elliptical orbit. An elliptical orbit is basically the same as a circular orbit except /slower/ when it reaches the same distance from the Sun (assuming the circular orbit is at the apoapsis (peak of the orbit)). Slower means less kinetic energy. Since the total energy is potential+kinetic, and the potential is the same at that point, this means there is less energy to begin with, which means there's more energy to make up for.
+
+Now compare this to the energy to get an asteroid to collide with Earth. Its 0. Well, sorta. "Colliding" is really just having to coincidentally be at the same place and time. Now making that coincidence happen artificially might require some doing. But to give an idea of the scale, I'll quote this [[http://www.internationalspace.com/pdf/NEOwp_Chapman-Durda-Gold.pdf][paper]] "Roughly 3x10^{-3} joules/kg are required to change a body's velocity by ~10 cm/sec, which is what would be generally required to change a predicted strike one year later into a miss." Or in this case, from a miss to a hit. To compare that to orbiting, that means a 10^{11} kg objects would take 3x10^{8} Joules to divert, or roughly 200 billion times less energy (which is 7 times as much as the calories Michael Phelps eats in a day, thanks for that wolframalpha!).
+
+*Completely off topic but "stable" is really a relative term, orbits are far more chaotic than people realize on a large time scale. Something that's really surprising to a lot of people is that Neptune's orbit was closer than Uranus' until they switched.
+:PROPERTIES:
+:Author: Kerbal_NASA
+:Score: 6
+:DateUnix: 1433912100.0
+:END:
+
+**** I've been trying to work out what this means in terms of story; what changes to the text-as-it-exists need to be made in order to make the science more accurate while keeping the structure of the story the same (there's a problem, there's some setup, there's a reveal, there's a speech).
+
+I'm not sure that I'm there yet, but this is very helpful. I'm /almost/ tempted to just make the wording vague enough that the science matters less, since I figure most people know even less about spacecraft and orbital mechanics than I do. But I'll work on it (probably next time I'm enthused about the idea), and let you know if I have additional questions.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1433995556.0
+:END:
+
+***** To me it doesn't seem like there needs to be too much of a change. I'll break it down based on the structure you mentioned:
+
+- The problem: (this is referring to the non-respose of the craft, right?) This can remain exactly the same. When I said "recently launched" I probably should have clarified that's still a window of time large enough for the rushed hotfixes plot to remain the same (I'd guess off hand at least a week).
+- The setup: This changes but really its just substituting the details of the asteroid mining company's plan and progress so far. Though its a bit awkward about the name "Sisyphus" and all the clever prose surrounding that since its no longer a good description of the craft. If I think of something I'll tell you.
+- The reveal: This can go down exactly the same way.
+- The speech: This can be about the same, just substituting the details of what Clark did/plans.
+
+Also, yeah, abstracting the details is, of course, a totally valid strategy.
+
+And I'm eager to answer any questions you have. As long as I get to answer them in a ramble of excruciating detail, of course :p
+:PROPERTIES:
+:Author: Kerbal_NASA
+:Score: 3
+:DateUnix: 1434001085.0
+:END:
+
+
+** 10^{15} kg seems like a fairly ludicrous number to de-orbit from the asteroid belt to Earth (where the hell does the energy come from?), but given that conceit, the story is pretty cool.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 5
+:DateUnix: 1433859334.0
+:END:
+
+*** I only picked that number because that's (roughly) the size of the Chicxulub asteroid. If that can be adjusted downward to be a bit more reasonable and still give an extinction level event, I'll do it. The question of where the energy comes from is also a head-scratcher, and a place where I'm out of my depth. My vague thought is that if you found an asteroid with an irregular orbit you might have less work to do, and if the plan is to give it nudges every once in a while at the moment of highest impact ... maybe?
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1433859886.0
+:END:
+
+**** Well, 10^{11} kg would still be an extinction-level event -- this is the order of magnitude of the size of 1999 FN53, an asteroid with a diameter of approximately 680 meters, which passed within 6 million miles of Earth last month.
+
+Now, doing some EXTREMELY rough estimates... The asteroid belt is roughly 4x10^{8} km away. If we assume that our asteroid has zero tangential velocity relative to its orbit (reasonable: it IS, of course, in orbit) and we want it to hit Earth in 10 years... well, y = ax^{2} + bx + c. We define b to be 0, c to be 4x10^{11} meters, y to be 0 (that is, collision with Earth), and x to be 10 years, so the necessary acceleration (considering gravitational acceleration to be negligible) is roughly 4x10^{-6} m/s^{2.} F=ma, so that means it'd need to be exerting a constant force of 4x10^{6} N. That much force, exerted over a distance of 4x10^{11} meters, requires on the order of 10^{18} joules of energy.
+
+If we go for nuclear pulse propulsion, that requires detonating 12 optimized Tsar Bombas (that is, the version the Russians chose NOT to build) behind the asteroid -- one bomb every 300 days.
+
+Sounds reasonable until you realize that each Tsar Bomba weighs 27,000kg.
+
+(If you wanted to go for constant thrust instead of individual impulses, you'd need a 32GW thruster.)
+:PROPERTIES:
+:Author: codahighland
+:Score: 6
+:DateUnix: 1433864947.0
+:END:
+
+***** Note: This is assuming we're just pushing the thrust directly towards the Sun, which would give it a spiral decaying orbit until it smashes into us. There will be assistance from gravity, but I don't want to do the calculus on the specifics. However, we can get another useful figure to get another bound.
+
+Asteroids average around 25 km/s orbital velocity. If we reduce that velocity to zero, then gravity will drag the asteroid directly toward the sun. From there it'd only take around 56 hours to come smashing into the planet at a final velocity of around two million meters per second.
+
+Gravity assists are scary, aren't they.
+
+How much energy would it take to zero out the orbital velocity? Well, 25000 m/s * 10^{11} kg = 2.5x10^{15} newton-seconds. If we wanted to zero the orbital velocity over 10 years, that would require about 8x10^{6} newtons of force. The asteroid would travel about 8.7x10^{12} meters in that time (that is, approximately 3.5 times its original orbit circumference), which is on the order of 10^{13} joules of energy.
+
+So that means the amount of energy required is somewhere between 10^{13} and 10^{18} J.
+:PROPERTIES:
+:Author: codahighland
+:Score: 3
+:DateUnix: 1433866864.0
+:END:
+
+****** The idea of stopping the asteroid is a good one, because what we really want to do is something like a [[http://en.wikipedia.org/wiki/Hohmann_transfer_orbit][Hohmann transfer orbit]], which is something like "slow it down so it drops from its higher-energy orbit to our lower-energy orbit." But unfortunately you're missing a very important puzzle piece: delta-v. Rocket engines don't actually output energy (or at least that's not a super useful way to think about them), they consume free energy and output momentum (almost all of the energy goes into accelerating the rocket fuel [the fuel goes way faster, and energy goes like velocity squared], but the momentum has to be split equally and oppositely). This point of view explains, for example, why we have to consume energy to slow down an asteroid with rockets, rather than being able to capture that energy like regenerative braking on an electric car.
+
+Suppose you wanted to use conventional rockets, which get about 5000 Newton-seconds of momentum per kilogram of fuel (keyword "specific impulse"). Now the math of slowing down the asteroid is easy: if its starting momentum is 2.5x10^{15} N*s, to stop it dead (before it begins plummeting into the sun), you just need to spend 5x10^{11} kg of fuel. Which, as a quantity on earth, is actually only a couple years worth of Earths' oil production. But as a quantity in space, you may note that 10^{11} kilograms is about the same mass as /the asteroid you would like to use this fuel to move/. Ion thrusters powered by a nuclear reactor can do better, but only by about a factor of 10. And it's not a lot easier to get the asteroid safely to earth than it is to stop it in place and let it drop.
+
+A more reasonable solution might be one Asimov used to move comets - send up the nuclear reactor, but not the rocket fuel; instead use the asteroid itself as the reaction mass. To do things this way requires (aside from ridiculously good automation and some luck besides) about the same energy as the conventional rocket approach (assuming you have exhaust velocity similar to a liquid fuel rocket) - about 10^{19} joules. Now things are easy - all you have to do is send up a collection of generators that can together output 100 times the output of one modern full-sized nuclear power plant, for 10 years, with no humans around. This is way easier than the other ideas - but in lieu of using the asteroid's weight in fuel, this idea uses futuristically advanced automation to basically run an entire automated city on the asteroid, devoted to feeding the asteroid underneath it into the maws of nuclear furnaces. (Put that way, this seems very unlikely to make economic sense.) It's a bit tricky to find Clark's place in this massive undertaking - maybe he's specifically the guy who wrote the 0.1% of software controlling the radio receiver? Narratively, this design just seems to have too many programmers involved (and them having no coworkers was already a stretch).
+
+I'm not sure about using gravity assists - using more sophisticated trajectories it's possible to dramatically cut down on the amount of delta-v you need (factor of two? As I said, not sure), but a factor of two isn't going to change much qualitatively. However, this is narratively useful because it will take some extra time that otherwise would have been unaccounted for (though perhaps not ten years?).
+
+And also, yeah -\\
+"“They'll shoot it out of the sky,” said Rachel," cursing the fact that asteroid shield funding had been cut drastically 5 years ago. "Which isn't even hard, they'll just have to shoot something at it that breaks a rocket motor or a fuel line or something."
+
+"Not likely" said Clark. "“From here on out, the orbit is going to be changing in ways that can't be easily predicted because of the force applied by the engines. By the time they're ready to launch, I'll have made enough course corrections that it'll be nearly impossible to hit Sisyphus.”"
+
+"Okay, first of all, I have no idea what you mean by evasion - a trillion kilograms of rock with a huge plume of rocket exhaust coming out its behind is neither inconspicuous nor maneuverable. But second of all, it's not like we included a bunch of extra fuel for the fun of it, or gave ourselves a bunch of extra time - any course with a chance of intersecting earth has to use a very limited budget of resources. So, uh, go ahead and make a bunch of ornamental course corrections, I guess."
+
+EDIT: Okay, thought of how to bring costs down and make everything work. /Evvvvvverythinnnnnng/. Well, some things. The trick is to use lower exhaust speed, which saves on energy at the cost of reaction mass. So what you do is you build a nuclear powered cannon that literally mines up rocks (okay, still needs futuristic automation) from the asteroid and flings them out into space at only a few thousand miles per hour (say, 1 kilometer per second). If the asteroid is moving at 25000 km/s, you only have to launch, well, basically all of it in order to bring the last remaining little fragment to earth's orbit. The energy requirements can be handled by a single nuclear reactor, which only has to output ~10 megawatts for a few decades. Sure, you only get a tiny, tiny portion of your initial asteroid, and could have much better spent that time using a somewhat bigger cannon to chuck rocks from earth into space, but it's the moral victory that counts.
+:PROPERTIES:
+:Author: Charlie___
+:Score: 5
+:DateUnix: 1433897756.0
+:END:
+
+******* Yeah, I'm no astrophysicist. I was working mostly from some basic equations and dimensional analysis, assuming 100% efficiency, and forgetting about Newton's third law. Of course, I KNEW I was being exceptionally simplistic, so I figured I wasn't any more accurate than "approximately the right order of magnitude, give or take a couple", but it's an idea of just how big of a rock we're dealing with. :P
+:PROPERTIES:
+:Author: codahighland
+:Score: 1
+:DateUnix: 1433910711.0
+:END:
+
+
+******* What about reeling out a few tens of kilometres of electrodynamic tether, and just sucking energy out of the system to induce electrodynamic drag and lower the orbit? Or would that take too long? I know you can't actually get much acceleration/deceleration out of such a system, but it can run constantly without the need for reaction mass. Solar sails might be another option, or even something like a big orbiting focusing lens that superheats a specific part of the asteroid's surface, causing thrust as the asteroid ablates.
+:PROPERTIES:
+:Author: Sagebrysh
+:Score: 1
+:DateUnix: 1433919264.0
+:END:
+
+
+****** #+begin_quote
+  10^{13} J
+#+end_quote
+
+So with really favorable assumptions, that's not actually that absurd. Neat.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1433867082.0
+:END:
+
+******* I redid my math on the time to collision and I was off by over an order of magnitude. It's not 56 hours to collision. Disregarding the influence of the Earth's own gravitational field, it's 75 days for the above asteroid, or 56 days for the improved asteroid we discussed elsewhere. It'll hit at around 100 km/s for the first one, or around 50 km/s for the second one. (Adding the Earth's gravitational field requires a numeric method to approximate the solution -- darn three-body problem! -- so I can't just plug formulas into WolframAlpha.)
+
+Doesn't change the amount of energy needed to reduce it to 0 m/s velocity parallel to the Earth's orbit -- though I WILL point out that this assumes you've done so instantaneously. Since changing the velocity at all will also modify the radius of your orbit, it occurs to me that this gives me another approximation.
+
+If we say that our 10^{11} kg asteroid has an orbital velocity of 21 km/s as we have assumed before, the formula for a circular orbit says that its orbit is about 2 AU away. (This is larger than the number I was working with previously. This implies that the Hungaria-family asteroid I was working with is smaller than 10^{11} kg. It's still smaller than the center of the asteroid belt.) To put that same asteroid in orbit at 1 AU, its velocity would need to be 30 km/s relative to the sun. This means we need a delta-V of 9000 m/s -- that is, we'd need to modify its momentum by 9.0x10^{14} newton-seconds. Over ten years, that's about 2.8x10^{6} N continuously applied. This requires a thruster that can put out 12.6 GW -- we've improved our power needs by a factor of about 2.5, but not by a full order of magnitude. Likewise, we've improved our energy needs by...
+
+... well dang. I screwed up my math earlier, because I just got 4x10^{18} J. Zeroing the orbital velocity as discussed earlier would need 6x10^{19} J of energy.
+:PROPERTIES:
+:Author: codahighland
+:Score: 2
+:DateUnix: 1433873423.0
+:END:
+
+
+***** Is there any way around that energy requirement? For example, using the Oberth effect? Assume a really preferential orbit that's not necessarily in the asteroid belt? (If you were looking for an asteroid to bring back to Earth, you'd probably try to find the low-hanging fruit, right?)
+
+I'll update the asteroid size.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1433866910.0
+:END:
+
+****** I realized I used the distance from the asteroid to the sun instead of the distance from the asteroid to Earth, and I used Earth gravity without paying attention to distance, when I should have been using solar gravity and the inverse square law. *facepalm* On the bright side, that doesn't affect the lower bound energy requirements (only how long it would take for the asteroid to smash into the planet) and it only reduces the upper bound by less than an order of magnitude at best. (The nice thing about these crazy Fermi estimates is that you can be wrong and still be right.)
+
+Though if you want to talk about finding a better orbit to start from, we could consider perhaps one of the Hungaria family of asteroids. The nearest one of those has an orbital velocity of around 21 km/s. This brings that 8x10^{6} N down to ~7x10^{6} N, so I imagine that we're still going to need at least 10^{12} J. Unfortunately, the initial velocity and the distance from Earth just don't have nearly as much impact on the energy requirements as the mass you're trying to push around.
+:PROPERTIES:
+:Author: codahighland
+:Score: 3
+:DateUnix: 1433867835.0
+:END:
+
+
+****** I made another post that's a sibling to yours that discusses a gravity assist.
+:PROPERTIES:
+:Author: codahighland
+:Score: 1
+:DateUnix: 1433867136.0
+:END:
+
+
+** [[http://www.asterank.com/]]
+
+This helps you see some of the maths on asteroid extraction. I suggest Anteros as a better option. It's close, yields a trillion dollars, and would still cause massive damage. Or 1994 AH2 which also gets pretty close, yields 4 trillion, and has platinum. Or 3200 Phaethon which would yield 18 trillion and is pretty big. It gets pretty close to earth too.
+
+I also have a suggestion for the propulsion. As it is, it would take several decades to get to earth so they have time to get a solution.
+
+What about propulsion using nuclear weapons strapped to the asteroid? Then he could hack the digger program. He'd then place the nukes in the asteroid and set them to explode and disperse a storm of fragments if any attempt was made to knock it off course, or disable any landers.
+:PROPERTIES:
+:Author: Nepene
+:Score: 6
+:DateUnix: 1433875350.0
+:END:
+
+*** Decades to Earth is a total guess on my part; I didn't do any math on it. I might change that around to be some lower number of years.
+
+I am doubtful that nuclear weapons would be considered a good propulsion method given the potential for radiation; the original plan is to use it for materials in orbit, so it still needs to be able to accomplish that. I'm open to arguments otherwise though. For now, it might just suffice to say "engines" and let the lack of specificity work in my favor.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1433875900.0
+:END:
+
+**** [[http://en.wikipedia.org/wiki/Nuclear_pulse_propulsion]]
+
+Nuclear pulse propulsion has long been a seriously considered method of moving a ship. It would shorten the timelines a lot and allow you to make it more believable that nothing could be done to stop them.
+:PROPERTIES:
+:Author: Nepene
+:Score: 6
+:DateUnix: 1433876315.0
+:END:
+
+***** [deleted]
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1433884166.0
+:END:
+
+****** Their company would probably have some government oversight, and the nukes would probably be set to not allow detonation within some predetermined range of earth.
+:PROPERTIES:
+:Author: Nepene
+:Score: 1
+:DateUnix: 1433892125.0
+:END:
+
+
+***** ***** 
+      :PROPERTIES:
+      :CUSTOM_ID: section
+      :END:
+****** 
+       :PROPERTIES:
+       :CUSTOM_ID: section-1
+       :END:
+**** 
+     :PROPERTIES:
+     :CUSTOM_ID: section-2
+     :END:
+[[https://en.wikipedia.org/wiki/Nuclear%20pulse%20propulsion][*Nuclear pulse propulsion*]]: [[#sfw][]]
+
+--------------
+
+#+begin_quote
+  *Nuclear pulse propulsion* or *external pulsed plasma propulsion*, is a hypothetical method of [[https://en.wikipedia.org/wiki/Spacecraft_propulsion][spacecraft propulsion]] that uses [[https://en.wikipedia.org/wiki/Nuclear_explosion][nuclear explosions]] for [[https://en.wikipedia.org/wiki/Thrust][thrust]]. It was first developed as [[https://en.wikipedia.org/wiki/Project_Orion_(nuclear_propulsion)][Project /Orion/]] by [[https://en.wikipedia.org/wiki/DARPA][DARPA]], after a suggestion by [[https://en.wikipedia.org/wiki/Stanislaw_Ulam][Stanislaw Ulam]] in 1947. Newer designs using [[https://en.wikipedia.org/wiki/Inertial_confinement_fusion][inertial confinement fusion]] have been the baseline for most post-/Orion/ designs, including [[https://en.wikipedia.org/wiki/Project_Daedalus][Project /Daedalus/]] and [[https://en.wikipedia.org/wiki/Project_Longshot][Project /Longshot/]].
+
+  * 
+    :PROPERTIES:
+    :CUSTOM_ID: section-3
+    :END:
+  [[https://i.imgur.com/gT8ast8.jpg][*Image*]] [[https://commons.wikimedia.org/wiki/File:NASA-project-orion-artist.jpg][^{i}]] - /An artist's conception of the Project Orion "basic" spacecraft, powered by nuclear pulse propulsion./
+#+end_quote
+
+--------------
+
+^{Interesting:} [[https://en.wikipedia.org/wiki/Antimatter-catalyzed_nuclear_pulse_propulsion][^{Antimatter-catalyzed} ^{nuclear} ^{pulse} ^{propulsion}]] ^{|} [[https://en.wikipedia.org/wiki/Project_Longshot][^{Project} ^{Longshot}]] ^{|} [[https://en.wikipedia.org/wiki/Nuclear_propulsion][^{Nuclear} ^{propulsion}]]
+
+^{Parent} ^{commenter} ^{can} [[/message/compose?to=autowikibot&subject=AutoWikibot%20NSFW%20toggle&message=%2Btoggle-nsfw+cs0w21g][^{toggle} ^{NSFW}]] ^{or[[#or][]]} [[/message/compose?to=autowikibot&subject=AutoWikibot%20Deletion&message=%2Bdelete+cs0w21g][^{delete}]]^{.} ^{Will} ^{also} ^{delete} ^{on} ^{comment} ^{score} ^{of} ^{-1} ^{or} ^{less.} ^{|} [[http://www.np.reddit.com/r/autowikibot/wiki/index][^{FAQs}]] ^{|} [[http://www.np.reddit.com/r/autowikibot/comments/1x013o/for_moderators_switches_commands_and_css/][^{Mods}]] ^{|} [[http://www.np.reddit.com/r/autowikibot/comments/1ux484/ask_wikibot/][^{Magic} ^{Words}]]
+:PROPERTIES:
+:Author: autowikibot
+:Score: 1
+:DateUnix: 1433876358.0
+:END:
+
+
+** I don't know much about astrophysics, but the cryptography seems odd. You don't make the key change. You use the key to send out encrypted messages that change. Just salt your messages by adding random characters at the end, and nobody will be able to tell which key you're using.
+
+Although for something like this, that wouldn't work too well either. They might not be able to tell which key you're using just looking at the ones embedded onto your computer beforehand, but if they bug then entire process of decrypting it, which they will, they can see what key you're using.
+
+You'd need an encryption scheme that you can do in your head. That pretty much limits you to a one-time pad. Someone has memorized 100,000 digits of pi, so it's definitely possible.
+
+How is this supposed to work long-term? Do they just keep giving in to Clark's demands until he dies and postpone the end of the world for a few decades? Does Clark give them a code to stop the whole thing when he thinks he's going to die soon, and then get killed? Does he make Sisyphus randomly decide to start acting on its own, so the longer he's emperor the less likely it is the Earth will get destroyed, but nobody knows if it's been long enough?
+
+I can understand not being able to stop the asteroid the first time, but if Sisyphus is only doing minor course corrections, the asteroid would still have to pass near Earth when it misses, which means that it will be easy to send a rocket in parallel that reaches it on the far side of the orbit. Is Clark hoping that people won't be able to hide the rocket from him?
+:PROPERTIES:
+:Author: DCarrier
+:Score: 3
+:DateUnix: 1433886343.0
+:END:
+
+*** If I can get some help then:
+
+Let's say that you're Clark. You have completely subverted /Sisyphus/ by having written the vast majority of its code, having full access to the repos, and having applied two "hotfixes" that let you slip in whatever code you needed to. You're a clever guy with a huge amount of hubris, and you're more or less in complete control of the situation until the point where you have to lock down the control systems on /Sisyphus/ and make your blackmail attempt.
+
+Your parameters:
+
+- /Sisyphus/ should respond to you, and only you.
+- There should be risks associated with trying to ping /Sisyphus/ so that the enemy can't try to brute force it.
+- The greatest minds in encryption and the best supercomputers in the world will be working against you.
+- You can/have set /Sisyphus/ up with a dead man's switch.
+- You /most likely/ need to be able to give /Sisyphus/ actual instructions, not just go/no-go messages.
+
+How do you set up the crypto?
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1433888005.0
+:END:
+
+**** Dead man's switch in your computer that activates on detection on any intrusion/transmission of data packets to anywhere but sisyphus and instantly sends kill orders. That computer is used only to send messages to sisyphus(encrypted with desired one time pad). Additionally, have Sisyphus automatically lock down unless it receives a packet every X minutes to prevent people from disassembling computer. All packet transmissions are sent through this computer only. All other computers sending packets after the time of this story will cause dead man's switch to activate(Clark left today as a window where that didn't happen for hubristic purposes). Any communication with the outside world happens through another computer. The protected computer is linked only to Sisyphus(Not sure precisely how...does Sisyphus have its own comsats?)
+:PROPERTIES:
+:Author: avret
+:Score: 1
+:DateUnix: 1433889124.0
+:END:
+
+***** The words/antiwords solution should work for disabling the enemy's ability to access, or, hell, alternatively, just pick an one time pad on the order of 10^{high-X} char to hash everything.
+:PROPERTIES:
+:Author: avret
+:Score: 1
+:DateUnix: 1433889302.0
+:END:
+
+
+***** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1433922830.0
+:END:
+
+****** If disassembling the computer took more than X min sisyphus locks down.
+:PROPERTIES:
+:Author: avret
+:Score: 1
+:DateUnix: 1433959049.0
+:END:
+
+
+**** The problem isn't so much that they might have the best supercomputers working against me as that they might have the computer I am currently using working against me. Suppose I work out the course corrections on my computer and then type in the key, encrypt them, and send them on my way. Except instead of encrypting /my/ course corrections, it just replaces them with course corrections someone else made, and I have no way to tell because it's not like I can just read the cyphertext.
+
+I could take a random sequence a//n// and say the a//n//th bit of the nth message must be a one. They could send in their own course correction, and they'll have a 50% chance of getting it right, but if they're wrong, they're all doomed. The only way they can be sure they made the right bit a one is if they send my exact message. And to make sure they don't notice which bit I worry about when I send the message, I can basically send the message as two strings it xors together, so I have control over every bit.
+
+There's another problem though. I don't want the world to end if I mess up. I can make it so I get three tries, but then even if I have to do a new number each time random guessing will get the right answer 7/8ths of the time. So I modify that original part so there's more than one key bit. I could also have a set of bits where giving all of them particular values sets off the dead man's switch. Giving the code for this is indistinguishable from giving the real code, so the real code can't be tortured out of me. And I'll also send that code if I suspect people are working on building another rocket to stop Sisyphus.
+
+Also, I make it Sisyphus has a chance of randomly deciding to accept all messages, so that the world probably won't end if I die of old age but everyone still has incentive to make me live as long as possible.
+
+I don't think there's anything standard that will work with this. There's not a lot in cryptography about things you can do in your head. This is just me being creative. Someone else might be creative and come up with a better answer.
+
+Edit: One strategy that Earth might use. Threaten to torture Clark unless he gives the correct code. We'll know if it's right several months before the asteroid hits. I imagine Clark wouldn't want to spend those months being waterboarded.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 1
+:DateUnix: 1433889709.0
+:END:
+
+***** It would seem like the way you deal with the intrusions onto your computer is to have the computer be linked to nothing but sisyphus.
+:PROPERTIES:
+:Author: avret
+:Score: 1
+:DateUnix: 1433890381.0
+:END:
+
+****** This isn't just about them hacking it through the internet. They can break into your house while you're asleep, disassemble your computer, and replace some of the components.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 2
+:DateUnix: 1433897062.0
+:END:
+
+******* in my comment I deal with that
+:PROPERTIES:
+:Author: avret
+:Score: 1
+:DateUnix: 1433898333.0
+:END:
+
+
+***** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1433922585.0
+:END:
+
+****** Drive encryption is more to keep people from reading what's on your laptop after they've stolen it. It's not going to work as well if they steal the laptop, copy it, install a keylogger, give it back to you, and wait for you to type in the password.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 1
+:DateUnix: 1433923701.0
+:END:
+
+******* [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1433924707.0
+:END:
+
+******** The fist time you type it in, the keylogger will record the password and your security is gone.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 1
+:DateUnix: 1433925452.0
+:END:
+
+
+**** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1433912763.0
+:END:
+
+***** #+begin_quote
+  code may not be modified and released by the same person
+#+end_quote
+
+Maybe I've just been working at shitty places, but every large company that I've contracted with has had /terrible/ security. Like, they do code reviews, but there's no mechanism in place to ensure that the commits you put in are the same ones as were in your review. No one is checking the hashes. Half the time, people will sign off on the code review with only a cursory glance. In places where they actually do follow the "code cannot be modified and released by the same person" rule, usually the person doing the release is far from an expert on what the code actually contains. The number of vectors of attack once you're on the inside are almost too numerous to name. And these aren't small companies, where I would expect security to be terrible, but Fortune 500. That's me looking at these systems as a contractor; if someone on the inside had been designing the policies and procedures from the word go, it would be a whole lot easier to simply introduce the flaws that you want to exploit.
+
+(I actually thought that a single person subverting years of hard work in an instant was one of the more plausible bits.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1433913849.0
+:END:
+
+
+** This is a wonderful story.
+
+You know, I wonder what Clark would do if everyone involved refused to tell anyone important and never substantiated his claims. Would he divert the rock rather than die powerless? Would he go public and try to rally up enough terror to make the company release Sissy's coordinates?
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1433887001.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1433913979.0
+:END:
+
+*** Not only that, they could torture him for years on end to verify his answers are consistent. People tend to underestimate torture.
+:PROPERTIES:
+:Author: IomKg
+:Score: 1
+:DateUnix: 1433926582.0
+:END:
+
+
+** Using Wikipedia magic i found [[http://en.wikipedia.org/wiki/%286178%29_1986_DA][this]] for which you would need [[http://www.wolframalpha.com/input/?i=%287.1+km%2Fs%29%5E2*2*10%5E13kg][roughly all the oil in Saudi Arabia]] to bring into low Earth orbit.
+
+So, if one would exaggerate this asteroids orbit to actually come pretty close to the earth, and have a huge nuclear engine on the asteroid, that uses the asteroid itself as reactive mass (meaning it would fire continuously), then maybe slingshots from Mars and Earth could work.
+
+Problem a) getting in more than one slingshot from either of those would take really really long. Problem b) WHY WOULD YOU PUT AN ASTEROID INTO LOW EARTH ORBIT. It would definitely crash into earth unless its orbit was constantly corrected, never mind it destroying all current satellites.
+:PROPERTIES:
+:Author: Synonimus
+:Score: 2
+:DateUnix: 1433865043.0
+:END:
+
+*** Mind you that particular asteroid is overkill. See my other comment, but 1999 FN53 is 680m diameter (that is, less than 1/3 the diameter -- less than 1/27 the volume), and an asteroid of that size with HALF the estimated density of (6178) 1986 DA (and therefore less than 1/54 the mass) would still be enough to wipe out all life on the planet.
+:PROPERTIES:
+:Author: codahighland
+:Score: 3
+:DateUnix: 1433865282.0
+:END:
+
+
+*** I don't think you'd necessarily put it in LEO; there are other orbits that you could choose from which are less populated/dangerous. "How much less?" is one of those questions that I don't have the background to answer.
+
+The energy required is a bigger concern.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1433866033.0
+:END:
+
+**** Earth's L3, L4, or L5 Lagrange points would be useful. It just takes a little bit of extra thrust and a lot of patience to navigate to those -- once you're not in Earth orbit anymore, you can just coast along in your own solar orbit until the asteroid catches up with you. Then you just break off pieces and chuck them back to Earth (likewise coasting along a solar orbit), and catch them from a processing station in high Earth orbit.
+
+Lunar Lagrange points are also options but I'm not certain we want something that massive in THAT close of an orbit to Earth.
+:PROPERTIES:
+:Author: codahighland
+:Score: 4
+:DateUnix: 1433866992.0
+:END:
+
+***** Lunar lagrange points are close, but they are [[https://what-if.xkcd.com/58/][very far away in speed]] (and, even more safely, angular momentum) :P
+:PROPERTIES:
+:Author: Charlie___
+:Score: 1
+:DateUnix: 1433899274.0
+:END:
+
+****** I was more wondering what the gravitational effects might be on the Earth-Moon system rather than just "oh yeah, that's close enough that it might hit us". Yeah, I know the moon's mass is like the square of our asteroid's mass, but I haven't yet speculated about stuff like tidal effects.
+:PROPERTIES:
+:Author: codahighland
+:Score: 1
+:DateUnix: 1433910849.0
+:END:
+
+
+** There's an issue with code generation which may lead to his plan being foiled. Basically, in order for this to be safe for the God Emporer to do, he would need to be able to generate the codes in his head, because /everything/ he does is going to be observed to find out the code generation process.
+
+Unfortunately for the God Emporer, this is equivalent to a stream cipher, and we don't have any stream ciphers you can implement in your head. While he would have the advantage of security by obscurity and only one output stream, given that he's going to have to be inputting a lot of numbers and the whole world is going to be working on the problem, I think there's a good chance someone will figure out how he's generating the codes.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1434176364.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1433871324.0
+:END:
+
+*** Wait, yeah. If it's going to take a few decades to get to them, can't they just arrest the guy and launch another mission to divert the asteroid's course? It's not really even a threat... Hell, they could send up second Sisyphus to destroy and salvage Sisyphus and bring the asteroid back to Earth as originally planned.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 3
+:DateUnix: 1433873801.0
+:END:
+
+**** Is this something that could be solved by assuming the right asteroid orbit? That is, could you have narrow enough launch windows that delta-v is too prohibitive outside of certain times, and have the impact be timed so that it comes prior to the next launch window?
+
+I was going to include something like this, but I'm already talking halfway out my ass; I have just enough knowledge to bullshit, but I'd prefer the story be able to survive some scrutiny.
+
+The solution might have to be lowering the travel time to Earth, but that makes the question of energy considerations even more apparent.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1433874653.0
+:END:
+
+
+**** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1433883511.0
+:END:
+
+***** I don't think that sort of replacement could be done with sufficient confidence remotely and autonomously without the original having been specifically designed that way.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1433914556.0
+:END:
+
+
+** Sorry, can't do the proofreading for you, but commenting to follow because /astrophysics is fucking cool/.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1433858684.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1433870942.0
+:END:
+
+*** It would actually be "another orbital period's time", but I couldn't immediately think of a non-clunky way of saying that. I'll change it.
+
+#+begin_quote
+  Sisyphus would be set on a course for impact at some point in the future. The threat is never lifted, we're only given a stay of execution.
+#+end_quote
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1433871217.0
+:END:
+
+**** "another year's time" sounds better...
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1433873664.0
+:END:
+
+
+**** Oh, I interpreted that to mean that Clark would set Sisyphus onto a collision course (that would take an unstated amount of time to strike the planet) if he didn't get his demands met within one calendar year.
+
+Or probably more accurately, that Clark had set a dead man's switch on Sisyphus; if he didn't send an "all clear" command within one calendar year, Sisyphus would initiate its course change.
+:PROPERTIES:
+:Author: codahighland
+:Score: 1
+:DateUnix: 1433873727.0
+:END:
+
+
+** [[http://www.reddit.com/r/rational/comments/395t4m/wip_help_with_astrophysicsplausibility_short/cs18zz4?context=1][My reply deeper in a thread ended up being a bit long.]]
+
+Long story short - because rockets spend most of their energy in kinetic energy of the fuel, the energy cost to get the asteroid near to earth is more like 10^{19} joules (with exhaust speeds similar to current rockets), even though the asteroid itself only has ~10^{13} joules of kinetic energy.
+:PROPERTIES:
+:Author: Charlie___
+:Score: 1
+:DateUnix: 1433897843.0
+:END:
+
+
+** Cool story. I love orbital mechanics ! Can't resist the following cross-over crack fic attempt. Please excuse me :
+
+"Yes, Mr. President. This is General Hammond at NORAD Stargate Command ... I'm afraid not sir, Not a bluff. NASA deep space network has confirmed that Sisyphus is on collision course with Earth. Unfortunately neither the Asgard nor the Tokra have responded to our hail. We must turn to the only entity with proven experience in Earth-hitting asteroids. Yes, I mean the... Goauld Anubis. <dramatic music>
+:PROPERTIES:
+:Author: recursiveAI
+:Score: 1
+:DateUnix: 1434145967.0
+:END:

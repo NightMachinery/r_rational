@@ -1,0 +1,259 @@
+#+TITLE: [fluff] So what are you guys working on?
+
+* [fluff] So what are you guys working on?
+:PROPERTIES:
+:Author: traverseda
+:Score: 12
+:DateUnix: 1389822389.0
+:END:
+I figure the people of this sub are probably more likely then average to be doing interesting things.
+
+So what are you working on? Interesting pieces of fiction? Long philosophical diatribes? Startups stuff?
+
+
+** I'm a software engineer, doing incredibly boring shit with simulating large scale phone systems. People ask me what I do for a living, and my eyes start to glaze over. I otherwise work on writing fiction, mostly science fiction or fantasy. Projects include;
+
+*Timewise Tales*: [[http://en.wikipedia.org/wiki/Novikov_self-consistency_principle][Self-consistent time travel]] novel in a fantasy setting. There are time storms that come down with increasing frequency through history which blow apart cities and scatter their component parts out through the span of history. The novel is about fate, destiny, and how people deal with natural disasters. This one is more or less done, and in the editing process.
+
+*The Wayward Souls*: Detective Jan-Fong dies in a back alley and has his soul put into a new body two hundred years later using blasphemous (but apparently now common) magics. He's widely regarded as the best detective to have ever lived, in part because a cadet wrote a long series of novels about his that embellished a lot. It's a fish out of water story in a sort of dystopian fantasy Chinese industrial revolution. This one is 2/3rds done at 50K words.
+
+*Pax Arcana*: Wizards rule the world, and have for a few centuries. Magic works like an API (and shares lots of the same terminology), with feedback effects depending on what kind of magic is used. The story is about a rogue wizard and the man who's hunting him down, at least to start. Lots of broken, damaged people. [[http://www.reddit.com/r/worldbuilding/comments/186l1y/a_crud_magic_system_v2/][Summary of the magic system here.]] Might end up as a novella instead of a propel novel.
+
+*Detective Jones and the Murder That Wasn't*: Terminator-style branching timelines story. Time travel was "invented" in 2007, and it's now 2012 - the police of Chicago use time travel in order to stop crimes before they happen. If you've read [[https://www.fanfiction.net/s/9658524/1/Branches-on-the-Tree-of-Time][Branches on the Tree of Time]] (my Terminator fanfic that I posted here awhile ago), it uses a lot of the same ideas, but in a setting that's more or less peaceful. I completed this for National Novel Writing Month a few years ago, but it's in the process of being rewritten from scratch to actually have a coherent plot and better character building.
+
+*[[http://www.kickstarter.com/projects/railboy/frontiers-explore-discover-survive][Frontiers]]*: An indie videogame in the style of Morrowind. I'm one of the lead lore guys, and laid down much of the foundations of the world's religions, regions, and so on. Currently working on a bunch of the books that you find scattered about the world. This is my first experience actually getting paid to write, which is cool.
+
+There are some others, but that's everything that I have in "active development" right now.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 6
+:DateUnix: 1389889930.0
+:END:
+
+*** Interesting. I'm a big fan of computable magic systems, which yours isn't. But it probably could be.
+
+Somewhere in my reddit history is post talking about a low-level magic system using cellular automata. The goal was to make something sort of particle physics-ey. Basically a combination of [[http://youtu.be/KJe9H6qS82I][smoothlife]] and [[http://en.wikipedia.org/wiki/Wireworld][wireworld]], in 3D. Never got to the point where I wrote any code.
+
+Is any of that online?
+:PROPERTIES:
+:Author: traverseda
+:Score: 2
+:DateUnix: 1389891208.0
+:END:
+
+**** No, none of it is online at the moment. Here's [[https://www.fanfiction.net/u/4976703/alexanderwales][my fanfiction.net page]], but that's about it. I would put some of this up online, but then I'd be pressured into finishing things, and in my experience I write best when it's not an obligation (I spread out over a couple projects trying to avoid burnout). When I finish any of these and edit them to a shine, I'll definitely post links to this sub.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1389895094.0
+:END:
+
+
+**** /Here's a bit from linked Wikipedia article about/ [[http://en.wikipedia.org/wiki/Wireworld][*/Wireworld/*]] :
+
+--------------
+
+#+begin_quote
+  *Wireworld* is a cellular automaton first proposed by Brian Silverman in 1987, as part of his program Phantom Fish Tank. It subsequently became more widely known as a result of an article in the "Computer Recreations" column of Scientific American. Wireworld is particularly suited to simulating electronic logic elements, or "gates", and, despite the simplicity of the rules, Wireworld is Turing-complete.
+#+end_quote
+
+--------------
+
+[[http://i.imgur.com/4S2eegw.gif][^{*Picture*}]] ^{-} *^{2} ^{Wireworld} ^{diodes,} ^{the} ^{above} ^{one} ^{in} ^{conduction} ^{direction,} ^{the} ^{lower} ^{one} ^{in} ^{reverse-biasing}*
+
+[[http://commons.wikimedia.org/wiki/File:Wireworld_two-diodes.gif][^{image source}]] ^{|} [[http://www.reddit.com/r/autowikibot/wiki/index][^{about}]] ^{|} /^{[[/u/traverseda]] can reply with 'delete'. Will also delete if comment's score is -1 or less.}/ ^{|} ^{*To summon*: wikibot, what is something?} ^{|} [[http://www.reddit.com/message/compose?to=/r/autowikibot&subject=bot%20glitch&message=%0Acontext:http://www.reddit.com/r/rational/comments/1vb2vq/fluff_so_what_are_you_guys_working_on/cer48fa][^{flag for glitch}]]
+:PROPERTIES:
+:Author: autowikibot
+:Score: 1
+:DateUnix: 1389891238.0
+:END:
+
+
+** I've got a pretty good volunteer group working on large scale 3D printing. The intent is to sell it to the automotive industry, although I'm not really working on that angle.
+
+I have most of a very scalable 3D object repository. I'm hoping that the community will adopt it, in part because it's open source and therefore a common ground all the small indie 3D printer companies can contribute to. You have to direct your users somewhere, but directing them towards something private is a good way to get your userbase bought out from under you.
+
+Of course there are all kinds of network affects that will make that very difficult. Still, it should be cheap to run and I can fork it off into more specialized services. Maybe something subscription based for the automotive industry, depending on if that team can successfully monetize it.
+
+I've got the system architecture more or less worked out that I suspect would be very good for distributed computing/virtual reality/collaborative design. Maybe some robotics stuff eventually, aggregating sensor data into a sort of short term memory. Almost entirely uses off the shelf pieces with a bit of python glue code. But that's hard to monetize and not really a high priority. Plus, it's a lot harder to tell if you're doing it right.
+
+Somewhere theres a group working on getting funding for 3D printed veterinary prosthetics. Presuming they do I'll be involved with that.
+
+I'm trying to do [[http://traverseda.wordpress.com/category/economics/][something]] in the style of the lesswrong sequences demystifying economics. What economics is and why it exists. How to tell whether it's beneficial or not. It doesn't seem to be going too well. I probably need to rethink the concept a bit.
+
+[[/fluttershy][]]
+:PROPERTIES:
+:Author: traverseda
+:Score: 5
+:DateUnix: 1389822398.0
+:END:
+
+*** #+begin_quote
+  I'm trying to do something[1] in the style of the lesswrong sequences demystifying economics. What economics is and why it exists. How to tell whether it's beneficial or not. It doesn't seem to be going too well. I probably need to rethink the concept a bit.
+#+end_quote
+
+Which perspectives/schools of thought within economics do you cover?
+
+[[/ohhi][]]
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1390079596.0
+:END:
+
+**** None of them. I just say stuff that seems true. [[http://traverseda.wordpress.com/2014/01/04/why-government/]]
+
+And right now it's two posts, one of which I'm not very sure of.
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1390085233.0
+:END:
+
+
+** Software engineer at google. Zoomed in, I build and maintain a a few components, just software engineering. Zoomed out, my team is working on [[http://www.google.com/insidesearch/features/search/knowledge.html][a giant model of reality]].
+:PROPERTIES:
+:Author: rictic
+:Score: 3
+:DateUnix: 1389860374.0
+:END:
+
+
+** I'm a computer science grad-student doing empirical metrics over software-engineering corpuses. And an improved Hadoop on the side, designed as a test-bed for a design for redundant storage hardware (wow, that actually sounds cool to say!).
+
+My original hobbies were programming-language design, and what I once dreamed of doing, that I can admit in the dark of night, was formally verified operating systems. I still have a programming-language design and its compiler to hack away it Real Soon Now, but I have to get around to sitting and learning enough Coq to prove the type system and its inference algorithm sound, complete, and correct. I'm hoping to take an independent study course to learn the Coq next semester.
+
+Right now, my grad-school's workload is kinda burning me out, and I'm gonna need to take a break of at least a year after my MSc anyway, to cohabit with my fiancee again and get married. Gibs job pls?
+
+As to my less code-oriented research hobby, well, I'll bring no report to brighten the good dark of night or warm the good winter's cold. Suffice to say I really need to do a bunch of background reading in neuropsychology and probably write some stuff up into LessWrong posts -- for which purpose I did make a LessWrong account.
+
+[[/twiright][]]
+
+As to my other hobby, I have a /long/ writing queue: current thing, next thing that will be a bit more fun and have a broader audience, the thing where Mitt Romney on spice melange gets into a reality-bending fight with futuristic spiral-powered communists as the economy collapses because Spiral Power became a thing....
+
+And then of course there's my political rantings everywhere, which have actually toned down somewhat: I'm occasionally not sure anymore if [[/r/politics]] is just behind me by a few years or if I actually seeded a few of the memes on there now.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1390079831.0
+:END:
+
+
+** Undergraduate in cognitive science, for one. In terms of writing... well a whole lot, but in terms of specifically rational writing I've got my "Avatar: the Last Rationalist" in the works. I'm a about halfway through the first chapter but the chapters are going to be a bit longer than chapters in a book, since they each take after one episode of the television series on which this is based. Once I finish this one and the next one as a proof of concept, I'll start on the next six simultaneously. When I've got those more or less done, or at least I have the first few well enough done to release I'll start putting them up.
+
+Another writing project I have that might be interesting to y'all is a futuristic dystopian original work about superheroes. It's a deconstruction of the superhero genre that takes it in a different direction from the typical "what if superheroes were just regular assholes like us?" deconstruction.
+
+There's also two YA things I have in the works. One is something I just thought of today that is a bit difficult to describe. Essentially, it's an over-the-top story about a high school where inter-student power struggles dominate. There's intrigue and espionage and betrayal and it's all comically framed as being between the Culture Alliance which is the old guard of the school's politics (consisting of a supremely uneasy alliance between the French, Spanish, German, Italian, Japanese, Chinese, Indian, and Arabic culture clubs, the school's marching band, jazz band, chamber choir, glee club, four a cappella groups, the fine arts club, the drama club, and several of the school's athletic clubs), and the emerging power that is the Gaming Federation, which has been steadily on the rise since two years ago when the Video Game Club acquired the power of several tabletop gaming clubs, including the Dungeons and Dragons club and the chess club, and several athletic clubs, and used them to take control of several important sports teams, most notably the cheerleading team, which was once firmly a territory of the Culture Alliance.
+
+The other YA thing is a combination coming of age story/deconstruction of the high fantasy genre. It's a compelling high fantasy story, but it alternates chapters with the story of several high school kids who are playing said high fantasy story in D&D. The high fantasy story follows close to the arc of the kids' story, which is about the rise and fall of their D&D club.
+
+Finally I have some hard-ish science fiction that's just a good old space adventure. First and foremost I'm trying to have it be about how a human society would exist in the future with a galaxy full of small colonies.
+:PROPERTIES:
+:Author: Paradoxius
+:Score: 3
+:DateUnix: 1396767531.0
+:END:
+
+
+** Aside from my undergraduate degree, I am focusing on a fantasy world that is based off of Napoleon dying from a new Black Plague, so the Council of Vienna is still led by Metternich but is focused on defence from outside threats (Russia, an Africa unified by the communication possibilities of scrying, the Chinese Empire that covers a fair fraction of South America and is fighting with a more unified Native American empire in North America).
+
+It is going to be the setting for an RPG I am designing about students in an army-run magic spy school, to oversimplify. I have an inventive combat system that has been simple and fun in playtesting, but still have to get the magic properly statted out. The magic system includes force mages(heat, electricity and kinetics), fundament mages(space and time warping), nature mages(super-breeding), knowledge mages(sensory enhancement, mental enhancement, scrying), and four other kinds of magic.
+:PROPERTIES:
+:Author: celeritatis
+:Score: 2
+:DateUnix: 1391519990.0
+:END:
+
+
+** I'm still studying at university so not doing something awfully interesting yet. I'm reading a big part of my time, fiction and non-fiction.
+
+I do plan to write a Harry-Potter-themed fanfiction at some time. I have the basic ideas but no plot yet ;)
+:PROPERTIES:
+:Author: lehyde
+:Score: 1
+:DateUnix: 1389895857.0
+:END:
+
+*** Actually, college / university is your best chance to do cool things. You have more free time now than you'll have until you retire. You have lots of inanimate resources (computers, books, etc) and enormous amounts of human resources (professors to act as consultants, other students to be co-founders / collaborators / guinea pigs / etc), and your need for money is as low or lower than it will be for decades.
+
+Carle Diem!
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 3
+:DateUnix: 1389970827.0
+:END:
+
+**** #+begin_quote
+  You have more free time now than you'll have until you retire.
+#+end_quote
+
+Am I the only one for whom that was a massive lie? From what I remember, I was basically working nonstop for junior and senior year of undergrad, and by now I feel burnt-out at the end of every semester of graduate school.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1390087568.0
+:END:
+
+***** Wow, it sounds like you are a really hard worker, probably with lots of interests that take your time. Congratulations; that's a fantastic life skill.
+
+That said, "More free time" doesn't mean "lots of free time". No matter how hard you work or don't work, once you are out in the world with a job and (eventually, probably) a house, spouse, and kids...your free time will drop to basically zero. So, yes, college is when you have the most...let's call it "self-determined" time, instead of "free" time. That work better?
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1390242096.0
+:END:
+
+****** #+begin_quote
+  Wow, it sounds like you are a really hard worker, probably with lots of interests that take your time. Congratulations; that's a fantastic life skill.
+#+end_quote
+
+No, I'm only taking 2 courses and a seminar this semester, TA'ing, and doing collaborative research on two topics much too slowlyl (like I said, grad student), while occasionally seeing friends, putting scant hours into my moonshot hobby research, and getting so far behind on my other hobby that my "January buffer" for having done an extra release in December is basically consumed.
+
+Basically, I'm a lazy son of a bitch. No, that is not a humblebrag: that combination of "achievements" really only sounds impressive when written down, and when considered in terms of total hours of actual, disciplined work rather than redditing or other distractions, it's much too little.
+
+I'm halfway through my second year of grad school, I'm panicked and stressed about courses I feel I haven't comprehended thoroughly enough, and I don't have even one publication (despite one paper submitted last year and one over the summer). The world is going to shit around me and I'm nowhere near doing anything about it. Fuck. My. Life.
+
+Sorry for venting. Grad-student stress plus hold-self-to-shounen-hero-standards stress.
+
+#+begin_quote
+  No matter how hard you work or don't work, once you are out in the world with a job and (eventually, probably) a house, spouse, and kids...your free time will drop to basically zero.
+#+end_quote
+
+I definitely had more free time than my current level when I was at my internship last summer. Ah, 40-hour workweeks that you actually finish in 40 hours rather than being so undisciplined that your 50-hour workweek drags out into 60 hours of wasted life.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1390244938.0
+:END:
+
+
+*** Just because you're studying at university doesn't mean you can't be taking on interesting side projects!
+
+But reading is definitely a worthwhile pastime.
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1389896543.0
+:END:
+
+
+** Software engineer here.
+
+I just got out of three years running a startup in the valley. Now I'm paddling my feet in the corporate world for a while, letting someone else do all the hard parts while I just cut code. I'll start something else eventually, but right now this is relaxing.
+
+I'm learning to play the lever harp. It's amazing. (Although I'm not that great at it yet.)
+
+I'm writing a rationalist fantasy story, [[http://tinyurl.com/two-year-emperor][The Two Year Emperor]]. It was posted here last week by one of the readers (thanks, man!) which is how I found this subreddit.
+
+I'm evaluating an idea for my next startup, and would appreciate input. Elevator Pitch: List your rental properties with us. We advertise them, take bookings, take payment, and we do it under your domain name so that (unlike with AirBnB) potential customers don't come to your listing and then get sucked off to someone else's.
+
+I'm trying to decide: is it worth marketing at all? If so, hosted or installed? What would the right fee structure be?
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1389972447.0
+:END:
+
+
+** Still working on [[http://www.reddit.com/r/HPMOR/comments/1ppyqx/is_anyone_doing_a_rationalist_nanowrimo_or_really/cd4v573][my old NaNoWriMo project]]. Progress is slow, but progress.
+:PROPERTIES:
+:Author: AmeteurOpinions
+:Score: 1
+:DateUnix: 1390256749.0
+:END:

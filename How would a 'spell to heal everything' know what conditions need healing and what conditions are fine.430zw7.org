@@ -1,0 +1,216 @@
+#+TITLE: How would a 'spell to heal everything' know what conditions need healing and what conditions are fine?
+
+* How would a 'spell to heal everything' know what conditions need healing and what conditions are fine?
+:PROPERTIES:
+:Author: luminarium
+:Score: 6
+:DateUnix: 1453945506.0
+:END:
+Ie. how would you design a spell so that it would be able to determine which of these are things that the spell should fix and which are things that the spell should leave well alone:
+
+- polydactyly
+- dyslexia
+- autism
+- gut bacteria
+- removed wisdom teeth
+- pedophilia
+- snoring
+- depression
+
+etc.
+
+
+** In a magic system where everything needs to be described precisely, I'd expect fewer spells that use complicated rules to distinguish these conditions, and more spells that are easy to describe and sidestep the issue.
+
+For instance, "reset body's state to what it was N days in the past" is a simple rule to describe. This spell is great for healing injuries, with a side effect of amnesia, not so great as a cure for the flu. (It could, in principle, heal everything, which is why I bring it up.)
+
+If spells can actually access and modify properties such as polydactyly, dyslexia, autism, etc., but needs some rule to determine what values those properties should have (there are millions, so too many to hardcode), then how about: the spell operates on groups of 100 people, and whenever some value of a property is shared by 99 of them, it is extended to all 100. (We can have groups of racially-diverse healthy people walking around casting this, but if everyone has the plague, then that's not so great. Also bad: diseases which take a while to produce symptoms.)
+:PROPERTIES:
+:Author: SpeakKindly
+:Score: 7
+:DateUnix: 1453947142.0
+:END:
+
+*** It could just be localizable and exclude the head when the wound is not there, so no amnesia. Usually just heal a small patch around the wound.
+:PROPERTIES:
+:Author: kaukamieli
+:Score: 3
+:DateUnix: 1453966517.0
+:END:
+
+**** Then you might have the problem of things not connecting up right. I imagine this spell to be a sort of teleportation-based healing, so telefragging issues arise.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 3
+:DateUnix: 1453998750.0
+:END:
+
+***** If telefragging was an issue, then the healing would need to move the patient to the location he was at specified time.
+:PROPERTIES:
+:Author: kaukamieli
+:Score: 1
+:DateUnix: 1453999367.0
+:END:
+
+
+*** This wouldn't really work though, because it would have the effect of removing genetic variation. It would potentially start to have the effect of inbreeding on groups it was used on, especially after a generation or two
+:PROPERTIES:
+:Author: CitrusJ
+:Score: 2
+:DateUnix: 1453998854.0
+:END:
+
+**** It does cause problems if not used carefully! (Which just makes it more fun in a story, though obviously worse as a solution.)
+
+We can mitigate the genetic effect by making 100 a larger number, or by imposing a cap on the number of times a person is healed in a lifetime. We could eliminate it entirely by adding a side effect of sterility, which means any children are born to unmodified humans. (Of course, this "solution" is not much better than the problem.)
+
+There's also a question of how many properties the spell recognizes. If each individual allele is a potential target, that's millions of genetic problems eventually. On the flip side, we're in great shape if the spell targets phenotype instead, as a rule.
+
+If the spell is somewhere in between, for whatever reason, I think it's still worth adopting as a life-saving measure until we finish the decades-long project of classifying all properties into "harmful" and "beneficial" and design a better spell.
+:PROPERTIES:
+:Author: SpeakKindly
+:Score: 1
+:DateUnix: 1454002781.0
+:END:
+
+
+** Potential sources of information:
+
+- DNA of the target\\
+- DNA of the caster\\
+- DNA of any designated sources\\
+- DNA of the target's parents and ancestors traced back through time, unless magically blocked\\
+- The target's own idea of what constitutes 'healthy'\\
+- The target's previous medical condition as a time vector\\
+- The general consensus of the target's species as to what is considered healthy\\
+- The consensus of the caster as to what is considered healthy\\
+- The consensus of any other specifically designated sources as to what is considered healthy
+
+There could (and probably should) also be defaults in the spell so that it could be cast by the ignorant onto the ignorant with no designated sources of consensus.
+
+So.
+
+By default, the spell could take the target's previous medical condition vector and run it against a general simulated species-wide consensus (if available) or the simulated consensus of the spell's creator species (if not) to determine at which point in the target's timeline its own brainstate would be considered most sane, calm, and "normal". It would then simulate that brainstate and run possible end-states of the available healing subroutines (based on available magic power, time to heal etc) past it, noting which ones gained the most positive long-term reactions without inducing lack of intelligence (i.e. accidentally growing drug glands). Then it would implement that choice.
+
+Of course, it should also have control hooks so that the caster can modify the result or designate sources of modification if they are familiar with the spell's workings.
+:PROPERTIES:
+:Author: Geminii27
+:Score: 7
+:DateUnix: 1453991136.0
+:END:
+
+
+** One I thought of a while ago is that your soul is basically a backup for your body. When you are hurt, your body just copies whatever's on the soul. If you connect neurons wrong and get epilepsy, just remove any that haven't imprinted on the soul. In that case, a healing spell just needs to copy whatever the soul says. Unless you lost your arm so long ago that you lost your phantom limb and your soul now only has one arm. Or you've been using dark magic and your soul is corrupted.
+
+A result of this is that your soul can actually function for a while without your body, up to and including conscious thought. Which is how you end up with ghosts.
+
+Since it's just a backup, you can't use that method to heal anything that was always that way. You could heal removed wisdom teeth. You could /technically/ heal pedophilia if you have only just gone through puberty by reversing it. You might develop differently the next time around.
+
+You also might manage to do a bit better by cheating a little. For example, if someone's right arm is gone including the soul, you might be able to copy the left arm but reversed. It will be pretty difficult to get it to connect right.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 3
+:DateUnix: 1453950640.0
+:END:
+
+*** [deleted]
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1453972788.0
+:END:
+
+**** My impression was that there's a delay before anything edits the soul, which puts a time limit on how long you can use the undo feature before a change becomes permanent.
+:PROPERTIES:
+:Author: cae_jones
+:Score: 2
+:DateUnix: 1453990872.0
+:END:
+
+
+**** It shifted it from magic to biology, and your biology is specifically built for preserving your body. It's reasonable for there to be an extremely complex method to heal your body.
+
+Your body knows to use the backup if there's something clearly going wrong. But if you don't heal, eventually your current state will be backed up.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 0
+:DateUnix: 1454008191.0
+:END:
+
+***** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1454024609.0
+:END:
+
+****** Why wouldn't magic be a part of biology? Your body will evolve to use anything available.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 1
+:DateUnix: 1454026245.0
+:END:
+
+
+** Well, that obviously depends on who exactly is designing this spell and what are his intentions. But if designer is benevolent, the best way IMO is to check if recipient wants each particular issue to be resolved. Spell can model recipient's response to issues he doesn't know about. All this should be within a realm of possibility for magic that can automatically cure mental illnesses. This way has it's own problems with addictions, but this can be solved by modeling recipient in non-addicted state (increasing spell difficulty in any sensible magic system).
+
+Alternatively, this spell can be made to just cure conditions that are accepted by medical professionals as diseases. There are obvious problems with this approach - used in the middle of last century, this spell would cure homosexuality, for example.
+
+My own design can differ a lot based on magical system and available resources.
+:PROPERTIES:
+:Author: Shadawn
+:Score: 2
+:DateUnix: 1453947084.0
+:END:
+
+
+** Example of such a magic device of bad design: [[http://www.scp-wiki.net/scp-212]]
+:PROPERTIES:
+:Author: robryk
+:Score: 2
+:DateUnix: 1454006443.0
+:END:
+
+
+** Magic as people think of it tends to be non-reductionist, to the point where that distinguishes magic from technology. Human-important categories are treated as fundamental aspects of how magic works. You can turn someone into a frog without being able to make arbitrary alterations to biology. Harry Potter magic can't create food. Magic pools in Ranma 1/2 turn you into something like what drowned, but "what drowned" uses categories like "girl" or "pig"--you never see a pool that is used to regenerate limbs because it's a "pool of drowned two-legged biped".
+
+A spell which does "healing" is magic, not science, so it works on a concept of "healing" that is more like "if I asked a guy in the street, and he was well-informed about the condition, would he call this healing?" and can't be reduced to being able to do specific kinds of cell adjustment or biological templates or anything which assumes that "healing" isn't a primitive category.
+:PROPERTIES:
+:Author: Jiro_T
+:Score: 2
+:DateUnix: 1454014175.0
+:END:
+
+
+** Another possible way is to just kludge in every desired specific feature into the spell.
+
+The spell extrapolates healthy organs from the DNA of the target(s), and:
+
+repairs cancer
+
+repairs unwanted wounds
+
+removes unwanted bacteria (excluding specific types)
+
+etc
+
+Not unlike how comp programmers do it.
+:PROPERTIES:
+:Author: darkflagrance
+:Score: 1
+:DateUnix: 1454074799.0
+:END:
+
+
+** If you live in a world with such a spell, then every time you remove wisdom teeth, have a tattoo or a piercing or make another wanted change to your body you would do some sort of protection or 'I meant to do that' spell on that change so it doesn't get healed. (I'd also hope there was a better solution to an overcrowded mouth than pulling teeth.) I would also make it so that no condition that affects the brain can be healed without explicit consent from the subject.
+:PROPERTIES:
+:Author: MonstrousBird
+:Score: 1
+:DateUnix: 1454094196.0
+:END:
+
+
+** Everyone knows healing spells just swap your body with a version of you from another universe, and it just turns out that, statistically, it's more often than not a healthier one. :V
+:PROPERTIES:
+:Author: luaudesign
+:Score: 1
+:DateUnix: 1454366166.0
+:END:

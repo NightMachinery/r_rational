@@ -1,0 +1,36 @@
+#+TITLE: [D] Monday General Rationality Thread
+
+* [D] Monday General Rationality Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 7
+:DateUnix: 1532963194.0
+:END:
+Welcome to the Monday thread on general rationality topics! Do you really want to talk about something non-fictional, related to the real world? Have you:
+
+- Seen something interesting on [[/r/science]]?
+- Found a new way to get your shit even-more together?
+- Figured out how to become immortal?
+- Constructed artificial general intelligence?
+- Read a neat nonfiction book?
+- Munchkined your way into total control of your D&D campaign?
+
+
+** x-posting a question I'd asked on [[/r/fitness][r/fitness]] and [[/r/advancedfitness][r/advancedfitness]], where it didn't really receive a response (though tbf it was rapidly deleted in the former for failing to promote discussion):
+
+#+begin_quote
+  *What are some good, publicly-available, fitness-related datasets? (from paper supp mats or elsewhere)*
+
+  So lately I've been helping colleagues fit some tricky glmms in Stan instead of working on my own projects and also saw [[https://www.openpowerlifting.org/data][the OpenPowerlifting dataset]] (alternatively accessible [[https://www.kaggle.com/open-powerlifting/powerlifting-database][here]]). This reminded me of some data-limited fitness-y questions I've had (usually prompted by reading a paper that only does very basic or less-than-appropriate analysis). Since data collection's a drag, I figured to ask here what other good, public datasets are available. I'll also sometimes teach a course related to or lead a reading group devoted to statistical inference (often with a large focus on functional morphology/biomechanics) and having real-world, personally-relevant data to center a task around is always fun, and can plausibly result in publication.
+
+  Anyone have any leads? IDK how much the exercise science community has embraced open science/open data so maybe all the good datasets are under tight lock and key until their lead investigators have squeezed out every pub they can (and even then maybe prefer that the raw data be lost forever, lest someone try to reproduce their results). Not necessarily stuff devoted to lifting, either -- running, nutrition, swimming, hiking, team-sports, etc. would all be interesting to get quality data on.
+
+  Though I guess if I had to request anything in particular, I'd love to see a demographically varied set of 1rm, 2rm, 3rm, 5rm, 10rm, etc. numbers for different lifts to play around with a few different approaches for constructing a probabilistic 1rm calculator (instead of the usual multiple regression by least squares... and some of the black box-y approaches getting lots of attention lately seem especially decent at prediction and would be fun to try out). Or some sort of labeled photo-bank labeled with dxa-estimates. Or accelerometer/mocap data for experienced lifters performing different lifts. etc.
+
+  Besides the powerlifting competitor database linked above, some other datasets I found after a quick search included [[https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results][historical Olympic athletic stats]], [[https://www.kaggle.com/girardi69/marathon-time-predictions][marathon times under different training volumes]], [[http://groupware.les.inf.puc-rio.br/har#weight_lifting_exercises][dumbbell curl accelerometer measurements]], various population level summaries of stuff like obesity frequency and activity level ([[https://catalog.data.gov/dataset/nutrition-physical-activity-and-obesity-behavioral-risk-factor-surveillance-system-f645f][e.g.]]), and assorted APIs for accessing public data (e.g. [[https://developers.strava.com/][Strava's]]). One could also probably compile some pretty large datasets through scraping places like reddit or instagram or [[https://bodyspace.bodybuilding.com/member-search][bodybuilding.com]], but that's a bit more questionable.
+#+end_quote
+:PROPERTIES:
+:Author: phylogenik
+:Score: 4
+:DateUnix: 1532971039.0
+:END:

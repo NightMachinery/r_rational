@@ -1,0 +1,316 @@
+#+TITLE: [D] Wednesday Worldbuilding Thread
+
+* [D] Wednesday Worldbuilding Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 13
+:DateUnix: 1481123071.0
+:END:
+Welcome to the Wednesday thread for worldbuilding discussions!
+
+[[/r/rational]] is focussed on rational and rationalist fiction, so we don't usually allow discussion of scenarios or worldbuilding unless there's finished chapters involved (see the sidebar). It /is/ pretty fun to cut loose with a likeminded community though, so this is our regular chance to:
+
+- Plan out a new story
+- Discuss how to escape a supervillian lair... or build a perfect prison
+- Poke holes in a popular setting (without writing fanfic)
+- Test your idea of how to rational-ify /Alice in Wonderland/
+
+Or generally work through the problems of a fictional world.
+
+^{Non-fiction should probably go in the Friday Off-topic thread, or Monday General Rationality}
+
+
+** I am trying to figure out what's essentially technobabble for a story. It's the 1970s and you're a wizard. Your magic has some kind of way to interact with the new era of computing which allows for new and interesting things to be done.
+
+*What gaps would a magic system need to have in order to be made better by hooking it up to a 1970s microcomputer (e.g. Apple II)?*
+
+So far I have */logic/* and */memory/*, which means that one of the things that a magic spell can't normally do is operate on conditionals (complex or otherwise) and another thing it can't do is store and retrieve information for later. Magic then essentially acts as a peripheral that you can hook up to your computer (as prior to computers, this was done entirely by hooking a mage up instead).
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 7
+:DateUnix: 1481127828.0
+:END:
+
+*** #+begin_quote
+  What gaps would a magic system need to have in order to be made better by hooking it up to a 1970s microcomputer (e.g. Apple II)?
+#+end_quote
+
+Put yourself into the shoes of any magician. What part of your job sucks?
+
+- Do diabolists have to draw tediously complex pentagrams in salt to summon an imp? Can a computer + CNC machine inscribe these shapes and forms perfectly, every time?
+- Do spells require exact timing (can only operate at midnight on the first blue moon of the year)? A computer can serve as alarms or watchdog processes.
+- Do potions require exact temperatures, exact content mixtures? Can a computerized thermometer aid the process? What about mass-production of potions in a factory?
+- Can mana/magic be stored in a vessel? Can computers access and release it? Check the storage level? Use it as a battery or other input?
+- Can mystic chanting be recorded and replayed over speakers?
+- Could you use a spell search engine? A potion database?
+
+Automate the parts of magic that are limiting factors for humans.
+:PROPERTIES:
+:Author: Afforess
+:Score: 17
+:DateUnix: 1481136660.0
+:END:
+
+**** #+begin_quote
+  A computer can serve as alarms or watchdog processes.
+#+end_quote
+
+I like the idea of a C++ like compiler that reads your magic language and outputs a list of errors/warnings if you screwed something up.
+
+#+begin_example
+  warning line23.col8:  Amount of virgin blood is inconsistent with spell casting time ...
+  note line12.col8:     ... Required from this point
+#+end_example
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 5
+:DateUnix: 1481149119.0
+:END:
+
+
+**** It seems like the first case would have been solved by having copper etching of pentagrams that salt could be poured into.
+:PROPERTIES:
+:Author: fljared
+:Score: 3
+:DateUnix: 1481140770.0
+:END:
+
+***** It's easy enough to un-solve it: Magically active salt must be stored in prepared containers until it is to be used. If it touches anything other than the ritual circle (such as a stencil), it loses some of its power.
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 3
+:DateUnix: 1481154207.0
+:END:
+
+****** So make the prepared container the shape of a ritual circle negative, and wouldn't the CNC machine also reduce the power by touching this?
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 2
+:DateUnix: 1481155899.0
+:END:
+
+******* /Waves hands more/. The container can only be roughly spherical in shape. The CNC machine doesn't reduce the power because it is holding the salt bag in place of the cutting tool, and also up an inch or so above the surface.
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 2
+:DateUnix: 1481156119.0
+:END:
+
+******** Blow through an anti-stencil? Tell an imp to draw the lines? Clockwork moving the bag along [[https://www.youtube.com/watch?v=QVuU2YCwHjw][a composition of epicycles]] as the CNC would?
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 4
+:DateUnix: 1481158947.0
+:END:
+
+
+***** That's only if the shape being drawn is the same each time. Perhaps the diagram requires small modifications based on current conditions, and therefore must be recalculated with each casting.
+:PROPERTIES:
+:Author: MereInterest
+:Score: 2
+:DateUnix: 1481167063.0
+:END:
+
+
+*** What if the logic/conditionals isn't a feature of magic, but rather a feature of making it match what people intuitively think?
+
+For example, what if magic spells were dependent on predictable horoscope-like features? /Fireball/ shoots towards Jupiter unless you use direction-changing metamagic, (which has a coordinate system relative to something else, like the plane of the ecliptic).
+
+If you wanted to shoot someone to the east of you, your spell set would be [Fireball] + [Aim +27 degrees forwards from Jupiter] + [Rotate aim point 75 degrees clockwise (with the axis on Jupiter)]. This is useful for a human in a siege situation, but not in any context that requires quick action.
+
+This could also be used to reduce already-known rituals to their base components and enable generalized use. "Ritual magic" is magic that people have only solved for one set of conditions, like a full moon that is occluding Mars, or when the sun is directly above the equator at your longitude. This would also likely mean that there are ritual /sites/ scattered all around the world, where individual spellcrafters made spells designed for the local conditions.
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 5
+:DateUnix: 1481154303.0
+:END:
+
+
+*** One of the Discworld books has the magical computer HEX able to speed up calculation massively because it can cast the same scrying spell, with minor variations, /several times a second/ - far faster than any human wizard (and then translate the results into a very accurate human-readable form), thus turning a fuzzy and uncertain picture of the future into a far /less/ fuzzy and uncertain picture of the future.
+
+So, let us consider, for example, a simple spell that tells you where an atom, randomly selected from within a range of three centimetres the point the caster designates, will most probably be one week from now.
+
+Tom the Mage, without a computer, can cast this spell on an opponent (aiming for his centre of mass) and get some idea of where the opponent will be next week.
+
+Marvin the computer-aided mage can have the spell cast on a thousand points spaced out over his opponent's skin (or just under it), and tell not only where he'll be in a week but have a very good idea of the pose he will be standing in.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1481203908.0
+:END:
+
+**** Heh -- Monte Carlo divination.
+:PROPERTIES:
+:Author: dalitt
+:Score: 2
+:DateUnix: 1481311593.0
+:END:
+
+
+*** Maybe communication though that's mostly an extension of logic. I think the problem your going to run into is that fundamentally memory and logic are what a computer is. Everything else a computer does is an extension of those things.
+:PROPERTIES:
+:Author: space_fountain
+:Score: 1
+:DateUnix: 1481131303.0
+:END:
+
+
+*** Magical output data (e.g. scrying) could produce outputs that are difficult for humans to natively interpret (whether by containing too much information to accurately recall, or not being well aligned with human sensory capabilities). Computers could then convert the data to a more useful format.
+:PROPERTIES:
+:Author: reaper7876
+:Score: 1
+:DateUnix: 1481132962.0
+:END:
+
+
+*** How expensive is your magic system? One of the most important parts of performant-but-cheap hardware design is caching. You have an expensive but really fast system that handles your most frequent/important operations, and several layers of slower, cheaper systems that store and treat the data for less frequent operations.
+
+For instance, if your magic system is capable of sending a message instantly, but only by writing in arcane ink on sacred parchment, you're going to want to use you computer for most communications, and your sacred parchment for extremely important communications for which radios or phone lines (or whatever they used to transmit binary data in the 70s) aren't adequate.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 1
+:DateUnix: 1481148672.0
+:END:
+
+
+** Magic systems are hard and trying to come up them can get frustrating. Something I've been trying to formulate recently is a magic based an a finite state machine. Basically magic would have a few simple operations like force coupling and then allow for states determine which was invoked with state transitions relying on another small set of rules. The biggest problem is I really don't want to violate thermodynamics, but I'm not sure how to add this without violating at least entropy.
+:PROPERTIES:
+:Author: space_fountain
+:Score: 2
+:DateUnix: 1481131738.0
+:END:
+
+*** Why not embrace the fact that magic reverses entropy? It could be the way your civilization combats the universe's heat death, down the road. That could be an epic tale.
+
+Make plot holes a plot feature.
+:PROPERTIES:
+:Author: Afforess
+:Score: 7
+:DateUnix: 1481136781.0
+:END:
+
+**** I'm just worried about managing the unintended consequences of making changes to physics on that level. It's fantasy so I don't really need to care, but some part of me still does.
+:PROPERTIES:
+:Author: space_fountain
+:Score: 1
+:DateUnix: 1481141999.0
+:END:
+
+***** A handwave I came up with before is that magic powers itself by doing a mass-energy conversion on the casters' blood cells. There's some amount of waste, which is transferred to the caster as heat and can give them severe heatstroke during prolonged casting.
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 2
+:DateUnix: 1481154696.0
+:END:
+
+****** I did some back of the envelope calculations and decided it could be powered by the glycogen stores in the body for most stuff that I thought was reasonable in my magic system (basically the kinetic energy of the biggest tank bullet is about 1/200th the glycogen stores in the human body). So casters will end up literally worn out as if they had just run a marathon after prolonged casting.
+
+Getting it directly from the red blood cells is even cooler in a way, and allows for bigger spells!
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 1
+:DateUnix: 1481180896.0
+:END:
+
+
+***** It only really matters if those consequences will come up in the story, usually to be exploited by characters. If you don't have a situation in your story where it would reasonably come up, then you don't have to worry about it.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1481144087.0
+:END:
+
+
+***** Even if you think this could be set up to create a perpetual motion machine and generate free energy on demand, there are ways you could limit the function of such machines to make them noticeably less efficient than mundane power generation. If so, you would have things like an inspired entrepreneur's magic power plant, but at the end of the day it won't matter until heat death becomes relevant.
+:PROPERTIES:
+:Author: InfernoVulpix
+:Score: 1
+:DateUnix: 1481147129.0
+:END:
+
+
+*** Magic usually requires "mana" or something similar or to be consumed when casting. Just have every spell cost energy in an amount greater than or equal to the amount of energy gained by the force or whatever the spell effects are (excess cost is radiated as heat or something to preserve conservation of energy).
+:PROPERTIES:
+:Author: zarraha
+:Score: 1
+:DateUnix: 1481170049.0
+:END:
+
+**** Energy isn't the problem. I can reason around making sure conservation of energy holds. Entropy is a harder nut to crack. Basically we need to prevent any way of turning heat into ordered stuff like driving a train without keeping the total entropy the same or higher.
+:PROPERTIES:
+:Author: space_fountain
+:Score: 1
+:DateUnix: 1481174016.0
+:END:
+
+***** Entropy can be decreased locally as long as it is accompanied by an increase in the system as a whole. Electricity typically creates a bunch of heat as a byproduct. Also, I believe that's the primary counterweight of human metabolism too.
+
+Consider a person eating food, digesting it, and then using that energy to push a cart. This happens in real life, everything is fine.
+
+Now consider a person eating food, digesting it, and then using magic to push a cart (at a distance) with the same force, requiring the same amount of energy, and have some sort of organs (maybe part of the brain) consuming the energy and giving off heat or whatever happens in real life anyway.
+
+Maybe the magic isn't super ultra useful if it requires the same amount of energy to do any task as just doing it manually would be, but now as an author you can modify it in various ways. I don't know how efficient the process of using muscles to exert force is, but you can make the magic system some amount closer to 100%. You can apply it at a distance. You could make it possible to store up more energy or unleash it in bursts so that a human could lift something ten times heavier than normal given ten times as long to prepare for it or rest afterwards. Or throw tiny objects with very fast speeds and/or high precision.
+
+Also you'd need to address Newton's third law and stuff like that, but that's not particularly difficult. I think the key is just having some sort of biological basis. It doesn't have to be super well explained, but just that every energy that gets exerted comes out of the metabolism stockpile along with all of the other energy that humans use to do things.
+:PROPERTIES:
+:Author: zarraha
+:Score: 3
+:DateUnix: 1481177592.0
+:END:
+
+
+** I have an idea of a HPMOR RatFic (a crossover with other work) branching on chapter 74, where Tracey's summons actually work, summoning an other work character.
+
+I feel like it'd be good in the quest format, so that readers control Harry and I describe others characters snippets (Quirell, Dumbledore, and OtherWorkCharacter) -- that also helps to gauge the readers' interest and abandon it if there are no votes anymore. Also, it gives the freedom of action -- players can either spend time investigating Rules of Magic, risking not to foil villains' plot in time; or focus on the plot, risking that somebody else will be ahead of Harry in magic knowledge.
+
+I also feel that I know how to consistently merge HPMOR's vague magic model with OtherWork's magic model... basically make the OtherWork a prequel of The Times Before Merlin.
+
+The thing is, I've never written a line of fiction in English and am not sure if I'll be ready for turning my inconsistent set of pre-made worldbuilding connections inside my mind into actual writing.
+
+Also I feel that I lack dedication to write things.
+
+I could find a willing co-author here, perhaps?
+:PROPERTIES:
+:Author: ShareDVI
+:Score: 2
+:DateUnix: 1481146172.0
+:END:
+
+*** Can we at least know who is being summoned? I'm very curious and am guessing it is Lina Inverse, because the summoning ritual borrows a few lines from her spell Dragon Slave.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 2
+:DateUnix: 1481159558.0
+:END:
+
+**** I will tell the full idea if I won't bring myself to write and release the first chapter in, let's say, 40 days from now. Otherwise the identity of deuteragonist would be the first puzzle for the readers.
+:PROPERTIES:
+:Author: ShareDVI
+:Score: 1
+:DateUnix: 1481160808.0
+:END:
+
+
+*** Why would a ritual that sacrifices Yog-Sothoth to summon HPJEV summon anything but HPJEV?
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 1
+:DateUnix: 1481156185.0
+:END:
+
+**** The subroutine that the magic server invoked failed to identify the target, and therefore it did not work as 'summon by name' function -- however, the guardian and key of the gate was sacrificed, opening The Way.
+
+No, the crossover is not with Lovecraft, but Quirrell does not know that (I prefer to imagine his reaction casting AK and Fiendfire at the /thing/ at the same time)
+:PROPERTIES:
+:Author: ShareDVI
+:Score: 2
+:DateUnix: 1481158892.0
+:END:
+
+
+**** If you read part of the chapter about the summoning ritual, it only names HPJEV as the person being summoned at the very end. So a writer could simply have the OtherWorkCharacter be summoned right before Tracy names /who/ she's trying to summon and leave everything else about the summoning ritual unchanged.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 2
+:DateUnix: 1481159493.0
+:END:

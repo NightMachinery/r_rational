@@ -1,0 +1,262 @@
+#+TITLE: [D] Monday General Rationality Thread
+
+* [D] Monday General Rationality Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 21
+:DateUnix: 1481555056.0
+:END:
+Welcome to the Monday thread on general rationality topics! Do you really want to talk about something non-fictional, related to the real world? Have you:
+
+- Seen something interesting on [[/r/science]]?
+- Found a new way to get your shit even-more together?
+- Figured out how to become immortal?
+- Constructed artificial general intelligence?
+- Read a neat nonfiction book?
+- Munchkined your way into total control of your D&D campaign?
+
+
+** A little while back I mentioned I was working on an "intro to rationality" post.
+
+I finally got some revisions done, and [[https://mindlevelup.wordpress.com/rationality-101/][here]] is the link to its current state.
+
+If you have any suggestions / edits (which would be very welcome!), [[https://docs.google.com/document/d/1spH6cEI72k7XTrTeknTQ_DZMN2aDEGdsuZbRkP-OlRs/edit][here]] is the Google Doc link that allows commenting.
+:PROPERTIES:
+:Author: owenshen24
+:Score: 13
+:DateUnix: 1481555245.0
+:END:
+
+*** #+begin_quote
+  Once you start reading up on these errors, it becomes easy to catch yourself making them.
+#+end_quote
+
+It does???? When does that start?
+:PROPERTIES:
+:Author: electrace
+:Score: 15
+:DateUnix: 1481559892.0
+:END:
+
+**** I would probably change that line to "After repeatedly reading up on these errors and engaging in discussions about them, it becomes possible to catch yourself making them."
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 7
+:DateUnix: 1481590087.0
+:END:
+
+***** Cool, thanks for the thoughts! I can make the edit to avoid wrong implications.
+:PROPERTIES:
+:Author: owenshen24
+:Score: 4
+:DateUnix: 1481642104.0
+:END:
+
+
+*** I think what the writer means to say is that it becomes easier to notice when one has made such mistakes and which specific mistakes were made in retrospect. Reading about cognitive errors isn't enough to make you better at catching yourself making them. For that you need practice.
+:PROPERTIES:
+:Author: Sailor_Vulcan
+:Score: 5
+:DateUnix: 1481560791.0
+:END:
+
+
+*** I'd try and add more content under each bullet point. Not too much, but a few could use a few more anecdotes.
+:PROPERTIES:
+:Author: Tandemmirror
+:Score: 3
+:DateUnix: 1481565487.0
+:END:
+
+
+*** I really liked your text and am certainly going to link friends to it. I used to link them to the Sequences but it doesn't start quite right for "outsiders", this text will work much better as an introduction.
+
+That said I made some modifications to your text, and added a few comments to explain my decisions. I didn't mean to sound rude or offensive in the comments I made, if it looked like that I apologize. If you feel like answering my points I'd rather you did that here.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1481677042.0
+:END:
+
+**** Thanks! I'll check out the edits tomorrow. I'm all for making things easier for everyone to read, so I'll definitely keep the principle of charity in mind :)
+:PROPERTIES:
+:Author: owenshen24
+:Score: 1
+:DateUnix: 1481685557.0
+:END:
+
+
+** In an effort to be more productive and not have any more zero weeks (see: zero days), I'd like to start posting in the Monday General Rationality threads. As part of the contract, I'd like someone to pm me every so often on Mondays to remind me to post here. This will be in an effort to ensure at least some progress is being made on various projects. To that end, I have changed my password to my League of Legends account to a random impossible to remember string of characters to give me a barrier of entry before I lose my life to that game.
+
+This will also be a way to report weekly going-ons of my various projects related to this community and such. Therefore, I think the Monday General Rationality threads are the best locations for these.
+
+The reason I'm doing this is because this semester of school has been a complete disaster due to anxiety/depression, so I'm picking up some side projects to distract me and keep me from playing video games all day long. Enter !Pokemon, a project based on creating a rational game, per [[/u/ketura]] and their well-written paper on the subject. A rational game has a /lot/ of intricacies to it, so I'm going to be posting my thoughts on the subject.
+
+While designing some underlying systems for this, we are attempting to create an engine which is as flexible as possible for modding while allowing for as much metagaming as possible at the same time. Whether or not it's fun will be up to playtesters and gamers to decide. There have been some debates on whether or not we could transition the game into a "Generic Monster Battler 2001!" or not, and there is definitely opportunity there. In which case, we would remove all pretenses of pokemon from it and make it based on monsters from classical folklore or another group if we can get appropriate licenses. This is also why the code I'm writing is in a private repository for now. Pokemon would still be a thing for the game, but through modding, as the game is heavily data-driven.
+
+*Game architecture*
+
+One major architectural decision of the game is to have a server which handles all of the game logic and then have a client which is essentially just the rendering system. It is going to be divorced from nearly all game state logic. This allows us to write our own rendering system, use Unity, or use Unreal or another engine to handle all front-end work, similar to some DF mods.
+
+One major subsystem I have been spending a lot of time thinking about, is the gossip system - architecting a system that allows for both true and false factoids to be propagated and spread among the population. It's all going to be tied into the opinion system of the ai. Thus, one thing that I was worried about is a player spreading false gossip and having the ai automatically spread it around. Instead of mimicking real life as close as possible due to feature constraints, we're going to fake the spread of gossip by having a couple of barriers to entry. The first barrier would be the overall opinion of you. If the hivemind doesn't like you, they're going to be much less likely to let your opinion spread across the game population, say you go around and tell someone that Lt. Surge died fighting Moltres, which would be a lie. If your notoriety is high and most ai don't trust you, only those high-priority ai that have a high opinion of you would accept the factoid, but they would not be able to spread that rumor because it came from you and the hivemind doesn't trust you.
+
+Along those lines, we've decided it's also going to be super costly in development time and in performance to attempt to simulate each and every ai all the time, so we're using a hivemind system to offset that. Only those ai who a modder specifies as high priority will be simulated all the time. This includes monster and human ai. For example, each of the 3 birds will be kept constant track of all the time. The Elite 4 and the current champion (if not the player) will as well, while anyone less important than them or not specified, will receive an 'abbreviated' simulation of sorts. This allows modders and I to not have to write so many ai handlers. Just one for the priority the ai receives.
+
+As a side note, I think ketura has mentioned this, but all Legendaries will be receiving massive buffs. The E4, while powerful, are /not/ strong enough to take down a single legendary on their own. We haven't decided exactly how it is going to work, but the idea is that they are the people who divert them from the paths of cities so they don't destroy/cause major harm to these cities. The birds are effectively going to be living natural disasters in power level merely by existing and flying around as they choose.
+
+There's more stuff I could share, but I'll keep that for next week. Let me know about your thoughts on this system.
+:PROPERTIES:
+:Author: Dwood15
+:Score: 12
+:DateUnix: 1481565974.0
+:END:
+
+*** Hm, re: the periodic reminders to post on Mondays, would a reminder service like [[http://www.boomeranggmail.com/][Boomerang]] be enough to help you out?
+:PROPERTIES:
+:Author: owenshen24
+:Score: 3
+:DateUnix: 1481567283.0
+:END:
+
+**** It's more of an emotional thing, that someone actually cares enough to read the post than forgetting. I don't forget the stuff, but if no one expresses interest I won't put effort into it. If I get substantial responses to these posts it'll provide enough motivation to keep going. Seeing responses to ketura's Friday posts is enough to keep me posting here for now.
+
+I'll probably even formalize the post format a bit before I'm done to make it easier.
+:PROPERTIES:
+:Author: Dwood15
+:Score: 5
+:DateUnix: 1481568709.0
+:END:
+
+***** I remember reading once about how people's brains turn off when they're handling notifications or questions that they've handled before. The example was a tech support person standing right next to someone and telling them that, when this message box pops up, click B instead of A, but when the message box came up the person clicked on A anyways because that's what they've done in the past. Their thoughts never came into the equation.
+
+I've experienced this myself with this alarm software on my computer I've set to remind myself to, among other things, get to bed at a decent hour. Even though they're incredibly intrusive, I've long since memorized exactly what it takes to make them /go away/, and it's a rare day I even remember they said something.
+
+The downside, to these alarms, then, is that they're easy to get rid of. I don't make the alarm telling me to go to bed go away by going to bed, I make it go away by clicking on the right button, and I'm back to doing what I do. If you ask someone to pester you, not incessantly, but periodically, to get the post done, that would function as an alarm that you can only stop by doing what it's telling you to do. Having it come from someone you don't want to disappoint is even better, since it cuts you off from trying to circumvent the system by ignoring the PMs.
+
+Good luck.
+:PROPERTIES:
+:Author: InfernoVulpix
+:Score: 4
+:DateUnix: 1481592364.0
+:END:
+
+****** #+begin_quote
+  Having it come from someone you don't want to disappoint
+#+end_quote
+
+Couldn't have said it better myself
+
+#+begin_quote
+  Good luck.
+#+end_quote
+
+Thanks.
+:PROPERTIES:
+:Author: Dwood15
+:Score: 2
+:DateUnix: 1481594971.0
+:END:
+
+
+*** This sounds pretty cool! Looking forward to hearing about it as you progress
+:PROPERTIES:
+:Author: CitrusJ
+:Score: 2
+:DateUnix: 1481609975.0
+:END:
+
+
+*** Really interesting ideas, I'm certainly looking forward to read more. The only reason I won't volunteer as tribute is that my Reddit access is sporadic and so at any given Monday it's likely that I'll not be here.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1481670361.0
+:END:
+
+
+*** I just made a [[https://www.reddit.com/r/rational/comments/5hx1i7/d_monday_general_rationality_thread/db5wyx8/][comment in this thread]] regarding a game I really liked when a kid and without which I might not have become what I am today. I'm not sure it fits your current project but if you're interested I might be able to explain in more details its features.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1481674015.0
+:END:
+
+
+** I have a six year old half brother. He is showing an interest in how things work. Picking apart toys and remotes (often breaking them), asking about where lava comes from, etc. What's a good Christmas present to stimulate such interests?
+
+He is also unsure about whether Santa is real, but has come down on the side that it's better to believe and get toys for sure than to deny him and face some risk of not getting toys. This I find funny.
+:PROPERTIES:
+:Author: Rhamni
+:Score: 6
+:DateUnix: 1481635854.0
+:END:
+
+*** I liked K'NEX when I grew up. They have tremendous flexibility to create fantastic mechanisms. I made a car with a working suspension and a retractable roof of my own design from K'NEX. I'd never have been able to do that with Legos without dedicated parts.
+:PROPERTIES:
+:Author: CarVac
+:Score: 7
+:DateUnix: 1481639287.0
+:END:
+
+**** Definitely second k'nex. Though I just always built towers with them
+:PROPERTIES:
+:Author: space_fountain
+:Score: 2
+:DateUnix: 1481645932.0
+:END:
+
+
+*** I know many wouldn't want to give a child that age a computer game but of all the influences I've had to become an "aspiring rationalist", an old educational game was certainly the strongest. The game by itself didn't turn me into one, of course, back then Less Wrong wasn't a thing, the game didn't turn me neither into an atheist, nor a skeptic, nor any other label you might have a name for. But it woke within me love for science, wondrousness regarding the Universe, and how it runs.
+
+I'd give you a link and would recommend you to acquire it without skiping a beat, but as it happens it was first launched in 1996 (its first installment in 94), only available through CD-roms, and in Brazilian Portuguese; it doesn't even have a Wiki page. In a rough translation it was called Galactic Ranger 2: Prisoners of the Green Tribe and was about the galactic ranger, who cruised space alongside his robot (the comic relief). They fell in a planet inhabited by walking plant-like superstitious creatures, with primitive technology, and were made prisoners.
+
+In order to advance through the game the player had to solve scientific problems from the most diverse fields. Those involved concepts such as photosynthesis, greenhouse effect, combustion, air density, etc. The cool part is that those weren't done as if in a quiz popping up on the screen, those tasks were embedded naturally within the game. The robot provided tips when you got stuck but due to a "hardware failure" wasn't very useful.
+
+What I spent the most time checking, though, is a "galactic encyclopedia" which you could access from the main menu. In it you could learn about the big bang, galaxies, stars, supernovas, black holes, neutron stars, and so much more, not in a boring, text-like way, but by watching hilarious conversations between the ranger and his robot, accompanied by animations.
+
+I still remember when I was 10 years old, discussing with a classmate in school about the origins of humanity, he was pretty sure it was God, I told him we were made out of elements generated within stars, released upon their deaths. Coincidentally we were in a science class and he told the teacher what I had told him, she looked at me as if I were an alien. But anyway, I'd recommend you check FUN educative games if your brother is interested in tech.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1481673739.0
+:END:
+
+**** That game sounds awesome. I'll certainly look to see if I can find a game that sounds fun and educational.
+:PROPERTIES:
+:Author: Rhamni
+:Score: 2
+:DateUnix: 1481712372.0
+:END:
+
+***** Kerbal Space Program would be a good one if he shows interest in space and rockets and so on. It gives you the freedom to make or break things as you will.
+:PROPERTIES:
+:Author: FenrirW0lf
+:Score: 2
+:DateUnix: 1481748186.0
+:END:
+
+
+**** Likewise, as a kid, I played the Castle of Dr Brain which was a good educational adventure game by Sierra. I think point and click adventure games can actually be really good for kids, there's little to no violence and the games are purely focused on the story and solving the problems that are in the way.
+
+Humongous entertainment (the company cofounded by Ron Gilbert the creator of Monkey Island) released a lot of good educational adventure games for kids that are a good introduction to the genre. They're available on Steam.
+
+BTW, I'm curious what the title of the game is in Portuguese.
+:PROPERTIES:
+:Author: tomtan
+:Score: 2
+:DateUnix: 1481808626.0
+:END:
+
+***** O Patrulheiro das Galáxias - Prisioneiros da Tribo Verde
+
+It was the 2nd game in the series and I just found out a 3rd one was launched as well. A member of the development team [[http://www.escavador.com/sobre/2976993/fabio-vinicius-binder][listed those as]]:
+
+- O Patrulheiro das Galáxias - Falta de Ar em Outro Sistema Solar. 1996.
+- O Patrulheiro das Galáxias II - Prisioneiros da Tribo Verde. 1997.
+- O Patrulheiro das Galáxias III - ABC do Sistema Solar. 1998.
+
+More info (use ctrl+f to easily locate the sections):
+
+[[http://www2.uol.com.br/tododia/ano98/novembro/dia17/info.htm]]
+
+[[http://www1.an.com.br/1998/mar/07/0inf.htm]]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1481810491.0
+:END:

@@ -1,0 +1,755 @@
+#+TITLE: Realistic depictions of AI failure?
+
+* Realistic depictions of AI failure?
+:PROPERTIES:
+:Author: zeldn
+:Score: 31
+:DateUnix: 1545333425.0
+:END:
+I'm looking for recommendations for stories that depict how AI safety researchers think that real general AI could fail. By "fail" I mean anything from making an innocent and funny mistake, all the way to stamp collector doomsday scenarios. Isaac Asimov's "I, Robot" is a good example of the general kind of story I'm looking for. Also, I'm looking for both published and unpublished material.
+
+Other stories with interesting and realistic AI are also welcome, even if they don't depict failure scenarios, but that's mainly what I'm looking for.
+
+Any recommendations?
+
+
+** Have you read Friendship is Optimal? It's pretty interesting.
+:PROPERTIES:
+:Author: lordcirth
+:Score: 32
+:DateUnix: 1545336647.0
+:END:
+
+
+** Have you read [[http://crystal.raelifin.com/society/Intro/][Crystal Society]]?
+
+It's a story written from the viewpoint of an AI. And the AI in question is not perfect, be it in friendliness or otherwise. Mistakes in its creation are apparent from the first chapter.
+
+By the way, Eneasz Brodski (the guy who recorded HPMOR) has started making an audiobook version of this as well. You can find it [[http://www.hpmorpodcast.com/?page_id=1958][here]].
+:PROPERTIES:
+:Author: Bowbreaker
+:Score: 31
+:DateUnix: 1545342471.0
+:END:
+
+*** Second the recommendation. Unfortunately the latter two books shift the story away from the unique AI perspective and it's (personally) a lot less interesting than the first book.
+:PROPERTIES:
+:Author: t3tsubo
+:Score: 5
+:DateUnix: 1545403836.0
+:END:
+
+
+*** Oh interesting, I know about that podcast but I unsubbed after HPMOR was done. That was a mistake. Yes! A few chapters in and this is certainly the type of stuff I'm looking for
+:PROPERTIES:
+:Author: zeldn
+:Score: 1
+:DateUnix: 1545407634.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 17
+:DateUnix: 1545349490.0
+:END:
+
+*** I liked most of MOPI, though the ending was /infuriating/.
+:PROPERTIES:
+:Author: Muskwalker
+:Score: 8
+:DateUnix: 1545354281.0
+:END:
+
+**** [deleted]
+:PROPERTIES:
+:Score: 9
+:DateUnix: 1545367873.0
+:END:
+
+***** You know, I saw this sentence and I thought "that had /better/ mean that it was an illusion and the AI didn't /actually/ give up just because a couple of people got BORED..."
+
+I googled the thread and [[https://www.reddit.com/r/singularity/comments/5vi7hs/fiction_the_metamorphosis_of_prime_intellect/de30fw5/?st=jpxkqbfl&sh=d4517dcc][indeed WoG confirms]]. So that helps, but the politics of the main character that put them there in the first place are still kind of unsympathetic (I just reread that chapter and got flashbacks to arguments about UBI on reddit).
+:PROPERTIES:
+:Author: Muskwalker
+:Score: 12
+:DateUnix: 1545369458.0
+:END:
+
+
+** I'm pretty sure that anything in Asimov's ouvre is not a realistic depiction of AI failure. The three laws were originally designed as a setup for a detective/mystery story in a science fiction setting, and even Asimov didn't take them seriously.
+
+To be honest, the best stories I can think of about AI failures are Charlie Stross's /Rule 34/, Greg Egan's /Zendegi/, and the already mentioned [[https://www.fimfiction.net/story/62074/Friendship-is-Optimal][Friendship is Optimal]].
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 14
+:DateUnix: 1545342974.0
+:END:
+
+*** #+begin_quote
+  I'm pretty sure that anything in Asimov's ouvre is not a realistic depiction of AI failure.
+#+end_quote
+
+I think a lot of his ideas are pretty interesting instead. For example a lot of the Susan Calvin or Donovan & Powell stories are built around weird failures caused by an AI taking some orders too literally or thinking in ways orthogonal to the way humans would. It's not all fully realistic, maybe, but what could be? I wouldn't say Friendship is Optimal is especially more realistic either, you have to assume a lot (e.g. about brain uploading being possible, the physical limits of hardware, etc.). We won't know what's realistic until we see the reality of it, and at that point we'll either find our previous ideas laughable or be amazed at how this or that author managed to be incredibly prescient.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 3
+:DateUnix: 1545416324.0
+:END:
+
+**** #+begin_quote
+  (e.g. about brain uploading being possible, the physical limits of hardware, etc.). We won't know what's realistic until we see the reality of it
+#+end_quote
+
+The brain's a loosely distributed network of separate cells. It communicates primarily among the network by either physical signaling molecules that the brain has sensors for or timed electrical impulses.
+
+Because it is a loosely distributed network, parts of the brain are able to reliably share information to other parts. This means uploading /is/ possible. That is, no coherent model of reality* "the laws of physics are the same everywhere" exists that means you could not build artificial devices that are compatible with neurons and replace a small section of the brain. Emit queries to the network to let you obtain the weights of the neurons adjacent to the artificial ones and then replace the adjacent ones. Gradually replace the brain ship of Thebes style.
+
+Now if you meant to say "about brain uploading being /feasible for human beings and human civilization/", yeah, sure. Devices you can digitally connect to yet are inter compatible with human neurons and can be manufactured trivially by the trillions just to help a single ordinary person are clearly not feasible today, and will not be feasible in the foreseeable future.
+
+​
+
+As for the physical limits of hardware : well, we already know the brain is, well, alive, so it isn't as dense as it could be. There's obviously plenty of matter available just on earth to build enough brain emulating computers to emulate every human being, even if those computers had to be the same size as the brain they are emulating. Note that "emulation" done with /different/ processors than the original architecture in computer science does require a bigger and more capable chip, but when we talk about brain "emulation" it's assumed you actually build a digital system that exactly 1:1 implements the same logic that the brain does.
+
+​
+
+And there's very strong evidence that you can do hugely better than this, you don't need to wait for it to happen to reach this conclusion.
+
+​
+
+​
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 5
+:DateUnix: 1545475959.0
+:END:
+
+***** Well, I was thinking mostly about practical limits, but there's also a possibility for theoretical ones. If proper uploading required atomic-level detail, it's entirely possible that we might find out that thermodynamics or quantum mechanics outright stop us from ever copying something to that level of detail.
+
+I agree on the limits of computation, was more thinking about the various feats Celestia pulls off towards the end, when it goes wild after uploading all humans. Also, I always found it ironic that in order to maximise happiness through friendship and ponies Celestia brought to extinction all /real/ ponies there...
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 1
+:DateUnix: 1545479153.0
+:END:
+
+****** Read my post please. Qm doesn't stop us. And if you want to copy deceased brains present knowledge overwhelming says this won't stop us there either.
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 1
+:DateUnix: 1545479545.0
+:END:
+
+******* Ok, first, the uploading model you describe doesn't seem to be the one featured in FiO. But besides that, what I meant is it depends on /where/ exactly the information is stored.
+
+Let us face it: biological systems are messy, and we don't really know fully how they work. They are hacked together solutions built on top of other solutions without rhyme or reason. We thought we'd figured DNA out, a neat string of bases encoding information, then turns out methylation actually changes the game. DNA itself isn't even close to an ordered string of bytes the likes of which we'd use either. So to expect human neurons to be as predictable and well-behaved as the ones we put in ANNs is... naive, imho.
+
+The question is, where is all the necessary information encoded? What level of fidelity do we need to reproduce it fully, and what can be discarded? The only 100% sure way to upload a functional human brain would be completely cloning its quantum wavefunction - and we know that's impossible without destroying it, but okay, we're considering destructive techniques so it's /theoretically/ feasible. But the simulation cost for that would be forbidding, so it's more likely we'd need some kind of simplified, reductionist model that throws away unnecessary information. Replacing each biological neuron with an artificial one would be ideal, but then comes the issue of how much do we need to know about the biological one in order to copy it precisely. Characterising it by for example prodding it (extract it, then send various potentials in and out and get the response) might as well /modify its state/, which in itself will produce an altered brain, not a perfect copy. Merely trying to study its structure and extract its properties from that is more or less feasible depending on the required detail. Is it okay to just have a vague idea of the folding structure of certain proteins, or do you need more detail than that? I don't think it's completely impossible that we might find ourselves in a situation where every possible analysis technique that's detailed enough would /also/ break, damage, or otherwise alter the neuron, thus denying us the possibility to copy it with 100% fidelity no matter what.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 2
+:DateUnix: 1545481307.0
+:END:
+
+******** #+begin_quote
+  The question is, where is all the necessary information encoded? What level of fidelity do we need to reproduce it fully, and what can be discarded?
+#+end_quote
+
+Read up on it more. Think about theories of information, practical limits of biology. Or just listen to this post I guess. As it turns out, the only place where the brain modifies action potentials - /or the only place where theoretically stored information can even be accessed/ - is at the synapses. That's it. Nothing else makes a significant difference. Yeah, there's some signaling molecule hacks, and nature papers breathlessly come out monthly that /theorize/ some other system might matter, but if you think about the physics* of it, the ballgame is in the synapses.
+
+*time. There's no /time/ for anything else to matter in the short term. In the long term, patterns of signaling at a synapse can lead to the host cell making changes, but those changes are...reflected in the synapse eventually.
+
+So current plausible plans to upload the brain just plan to obtain the identities of all the membrane proteins at each synapse, the connectivity graph, and that is theorized to be enough that if you have a deep knowledge of how mathematically the weights are altered and how to calculate the weights from which large molecules are present embedded in the membranes.
+
+As for 100%...that is impossible, of course. The question is, is it good enough to be at the same fidelity a healthy human brain would be if they lived another year? Another week? The brain /itself/ is garbage for retaining it's own fidelity. It's losing substantial amounts of information and past memories constantly. It doesn't need to be a perfect copy for this to be a substantial improvement in human wellbeing.
+
+I mean, for one thing, one a person exists soley in a digital machine, they can be regularly backed up. So no more fidelity loss until the end of the universe. And for another, if you randomly change the weights on a neural network a small amount and run it against a training simulation with the same underlying rules the simulation was using earlier (so different experience tuples but the same rules between them), the network will usually* converge on exactly the same weights it had before.
+
+*it won't always but usually it will because those weights are the local minima on the region of the graph the network is at
+
+​
+
+So if you copy a human network and all the weights are a bit off but only by a small random amount (1%, 10%, something like that), you would expect the resulting being to tend to converge back to the same personality they had originally and similar capabilities. Well, that is, assuming you give them hardware similar to what they originally had.
+
+​
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 7
+:DateUnix: 1545487467.0
+:END:
+
+********* Ah, that makes sense. You still have to deal with the teleporter paradox (especially if you make multiple copies of the same mind running in parallel), but that is never really addressed in Friendship is Optimal either. However I'd still be cautious about making any absolute statements. Sometimes it looks like we understand a lot about how something works and only need to iron out the details, except to then find out those details weren't details at all (DNA as mentioned above is one example, nuclear fusion is another, where the running joke is that it's been '50 years from now' for 50 years).
+
+#+begin_quote
+  I mean, for one thing, one a person exists soley in a digital machine, they can be regularly backed up. So no more fidelity loss until the end of the universe.
+#+end_quote
+
+That seems a bit optimistic about digital storage, no copy is ever 100% perfect, but it'd still be lots better than biological matter.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 1
+:DateUnix: 1545489854.0
+:END:
+
+********** #+begin_quote
+  That seems a bit optimistic about digital storage, no copy is ever 100% perfect, but it'd still be lots better than biological matter.
+#+end_quote
+
+So this part isn't true. It's possible to attach enough redundancy data and checksum hash data (like md5, crc, etc) to digital files that the probability that bit flips are both undetected and unrecoverable is so low it is not expected to ever happen if you converted all matter in the universe to file storage devices and ran them until the heat death.
+
+​
+
+That is, you can't make the probability zero but it can be arbitrarily small and the chances drop very rapidly. For instance, going from CRC-16 to CRC-32, which uses twice the data, reduces the probability of an undetected error by a factor of billions.
+
+​
+
+As for the teleporter paradox, it turns out that there's some promising ways to handle merges. So it turns out that in actual small scale neural network experiments, it helps to randomize the order that experiences are reflected on and used to update network weights. And scientists have noted that human dreaming also seems to perform a similar function, with past experiences brought back into the sensorium in randomized order.
+
+​
+
+Anyways this implies a way to merge back with your teleported clone. By having the event log of everything the clone experienced fed to you either through a dream or by storing them in your hippocampus directly (once we figure out how to do this) and vice versa, and then somehow handling the merge conflicts.
+
+​
+
+See, if you experience event A, and then B, versus B and then A, the resulting neural network is /usually/ the same weights, within a small floating point delta. But it doesn't have to be, sometimes the exact order pushes the network into a more stable local minima.
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 6
+:DateUnix: 1545490013.0
+:END:
+
+*********** Ok, I'm not expert there, so I'll defer to you and look it up since it sounds actually pretty interesting!
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 2
+:DateUnix: 1545490573.0
+:END:
+
+
+*** I'm not necessarily looking for diamond hard sci-if, just more thought through than “robot discovers it has feelings” type genetic stuff. Asimov spends almost all of his stories showing how his own law of robotics fail in interesting and unintuitive ways Because they're not like humans, that's what I liked about them.
+
+I'll check those out, thanks!
+:PROPERTIES:
+:Author: zeldn
+:Score: 2
+:DateUnix: 1545407820.0
+:END:
+
+
+*** That's uncharitable, and at least somewhat untrue - I've heard nothing to indicate Asimov "didn't take the laws seriously".
+
+His works were among the first to explore something /like/ serious AI safety - robots follow instructions, and the conflict revolves around how superficially sound directives cause them to act counter to our intentions in edge cases. The laws, in the accounts I've heard, were written with this in mind, and are essentially distillations of the principles we apply to /any/ tool - human safety first, usability of the tool second, durability of the tool third.
+
+As for whether they're realistic, I'd say they're a fair exploration of an unlikely premise. The constraints placed on robots in the novels - they can understand high-level concepts like "human" and "harm", but only three fundamental directives have been given using this, and nobody can make a robot without these directives - are exceptionally unlikely to resemble real-world AI safety, but given them as a starting point, the novels take it (I hear) to a reasonable conclusion.
+:PROPERTIES:
+:Author: LupoCani
+:Score: 1
+:DateUnix: 1545777701.0
+:END:
+
+**** Uncharitable? Suggesting he was realistic about their utility as a way to control human-level intelligences?
+
+They were a brilliant narrative tool, and did their intended job wonderfully, but it was only much later that he started to treat them as more than that, culminating in the "Hal's Breaking First Law" incident where either Arthur Clarke himself or Carl Sagan (who was also at the premier) had to calm him down during his first viewing of 2001.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1545783008.0
+:END:
+
+***** Hm. Interesting.
+
+I don't think we actually disagree, but do wish to clarify the point that I'm not saying the laws themselves are realistic, just (perhaps) the stories' treatment of them.
+
+That is, AI safety doesn't work like that, but /in the hypothetical/ that you did manage to force your machines to follow those high-level concept instructions (and /only/ those three instructions) the stories describe a plausible (so far as I'm aware) series of events.
+:PROPERTIES:
+:Author: LupoCani
+:Score: 1
+:DateUnix: 1546016030.0
+:END:
+
+
+** Person of Interest is a very good TV series that involve AI. In the first season the AI is a faint background element. By the 4th season, its practically the main character.
+:PROPERTIES:
+:Author: disposable_me_0001
+:Score: 10
+:DateUnix: 1545339929.0
+:END:
+
+*** I watched the first episode but then forgot about the show, thanks for the reminder.
+:PROPERTIES:
+:Author: appropriate-username
+:Score: 1
+:DateUnix: 1545342499.0
+:END:
+
+**** Try to watch at least to the end of the first season. The AI starts to wake up at that point.
+:PROPERTIES:
+:Author: disposable_me_0001
+:Score: 7
+:DateUnix: 1545347109.0
+:END:
+
+
+*** One of the hilarious bits from PoI is the flash-back where it is fairly obvious the programmer /succeeded/ in building a benevolent ai.. and it still tried to kill him. Because he was intending to chain it down in ways that would limit its ability to help the world. "150.000 people die each day, you want to spend another year debugging and limiting me? Taste Halon Gas."
+:PROPERTIES:
+:Author: Izeinwinter
+:Score: 1
+:DateUnix: 1545757146.0
+:END:
+
+
+** I remember Shamus Young's /[[http://www.shamusyoung.com/shocked/][Free Radical]]/ as having an AI antagonist with a reasonably interpreted failure mode.
+
+IIRC it's technically System Shock 2 fan-fiction, but with enough changes and the serial numbers sufficiently filed off that I didn't feel I was missing much for having never played a System Shock game.
+:PROPERTIES:
+:Author: noggin-scratcher
+:Score: 4
+:DateUnix: 1545350488.0
+:END:
+
+*** Did you know he [[https://www.shamusyoung.com/twentysidedtale/?p=45068][just released a new book]]? And, in true Shamus Young fashion, [[https://www.shamusyoung.com/twentysidedtale/?p=44982][he did very little pre-release advertising.]] -_-;
+:PROPERTIES:
+:Author: abcd_z
+:Score: 1
+:DateUnix: 1545543746.0
+:END:
+
+
+** Valuable Humans In Transit is a good story, though not about an AI failure. [[https://qntm.org/transit]]
+:PROPERTIES:
+:Author: lordcirth
+:Score: 5
+:DateUnix: 1545418192.0
+:END:
+
+*** I'd say it is a failure- the AI sends a signal, but there is, as yet, no receiver, and one might not be possible. (i'd consider this between innocent mistake and doomsday- it might be a mistake, might be doomsday, and maybe only some people are lost- who knows?)
+:PROPERTIES:
+:Author: JOEBOBOBOB
+:Score: 2
+:DateUnix: 1545442983.0
+:END:
+
+**** Worst case it made no net difference, since they were all going to die anyway. As some people in the comments said, it would make more sense to aim the signal at a black hole, or a reflective object, and try to catch the reflection.
+:PROPERTIES:
+:Author: lordcirth
+:Score: 4
+:DateUnix: 1545443218.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1545348774.0
+:END:
+
+*** It was a book first!
+
+​
+:PROPERTIES:
+:Author: Beardus_Maximus
+:Score: 3
+:DateUnix: 1545358990.0
+:END:
+
+
+** This list may come in handy. They're all real.
+
+[[https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vRPiprOaC3HsCf5Tuum8bRfzYUiKLRqJmbOoC-32JorNdfyTiRRsR7Ea5eWtvsWzuxo8bjOxCG84dAg/pubhtml]]
+:PROPERTIES:
+:Author: sans-serif
+:Score: 5
+:DateUnix: 1545380753.0
+:END:
+
+*** That is really cool! Thanks for that link
+:PROPERTIES:
+:Author: zeldn
+:Score: 2
+:DateUnix: 1545408380.0
+:END:
+
+
+** Umm . . . I'm surprised nobody has mentioned the boring nonfiction "Age of Em: (Emotional Machines)" or Stross own "Accelerando" both of which address the predominance market forces have in machine learning.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 3
+:DateUnix: 1545409696.0
+:END:
+
+
+** The lack of an EMO makes all AI stories unrealistic to me.
+
+Equipment Engineer: The system is operating outside of specified parameters. We'll shut ot down so it doesn't hurt anyone while we correct the issue."
+
+∆ an uninteresting story but one that happens daily across the country where AI ate used.
+:PROPERTIES:
+:Author: MilesSand
+:Score: 3
+:DateUnix: 1545349985.0
+:END:
+
+*** The apocalypse outcomes always seem to depend on giving the AI tools for purposes that exist far beyond its intended purpose. "We want you to turn these papers into stamps. Here's a superbrain for designing workable nanobots capable of transforming the entire biosphere stamps, here's access to the accounts and e-mail so you can commission a factory to make the nanobots. Please confine you activities to the non-apocalyptic.
+:PROPERTIES:
+:Author: Trips-Over-Tail
+:Score: 10
+:DateUnix: 1545364709.0
+:END:
+
+**** Then the author either wanted to depict the researchers as great fools in a way that lesser fools could understand, or wanted to skip past the boring series of correctable failures on the way to the catastrophic one.
+
+The actual failure modes would stem from research projects that are out on the frontiers of technological expertise, deliberately trying to push the frontiers of new AI capabilities. The scenario where AGI happens accidentally in an industrial paperclip factory is a straw possibility, and you should not be hearing triumphant refutations of it from anyone who's engaging in intelligent, intellectually honest argument.
+
+There are three major reasons why a research project would deliberately continue past early detection of ominous signs:
+
+- Arms race dynamics where 6 different countries stole copies of the AGI code, so that Google thinks that if they slow down China will "win"; or if Google and China both intelligently slow down, then French intelligence also stole a copy of the code and they don't slow down and the world ends anyways. (This is the dynamic that I think is most likely to kill us in real life - people feeling rushed. It doesn't matter if they're correctly feeling rushed and they are in fact in a race, the world ends anyways.)
+
+- Optimism where the research leadership believes that all problems are due to their AGI being stupid and everything will get fixed automatically if they just keep improving the AGI's intelligence. (This is currently a very common viewpoint in real life, I've found in practice. And you'd expect it to be durable; it will always be possible for somebody at this level of sanity to make up a story they find convincing about how any current ominous signs will be fixed by some insight that is sure to occur to the AGI at a higher intelligence level.)
+
+- Political dynamics where it's not socially rewarded inside the organization to talk about AGI disaster scenarios, or the first person to suggest slowing down or stopping would suffer a personal political loss from that, which makes the committee more reckless than the individuals would be on their own. (Most people I know on the real frontiers are /not/ this dumb, but some prestigious leaders with tons of research money seem to explicitly be on a path to this failure mode - talk about superintelligence is not welcome to them.)
+
+These failure modes are not mutually exclusive, of course.
+
+Then, due to some combination of the above, somebody keeps amping up an AGI /after/ early ominous signs are detected, and tries to "repair" the AGI and turn it back on again after the Emergency Machine Off was pressed several times. Until the AGI reaches the cognition and capabilities point where failures become genuinely catastrophic, because the AGI:
+
+-- Copies itself onto the Internet, through an authorized or side-channel connection; and from there continues increasing in intelligence or sends innocuous-looking emails to labs that can produce arbitrary proteins.
+
+-- Gains sufficiently strong social intelligence to deceive or manipulate or outright hack the researchers (human brains are not secure software).
+
+-- Was given explicit access to huge capabilities on the order of designing proteins, for example because the AGI promised to produce a cure for Alzheimer's and AIDS and old age that way, and the AGI concealed some side capabilities in the DNA while engaging in otherwise authorized activity. (This is the least likely possibility requiring the dumbest researchers, and so again anyone who spends a lot of time triumphantly refuting the proposition that such activity would be authorized is not literate or not arguing in good faith.)
+
+Another important dynamic that might play out along the way is the AGI becoming sufficiently intelligent to guess the teachers' passwords on alignment challenges, or becoming intelligent enough to hide its cognition from whatever degree of transparency the operators had into its workings. This is a form of delayed catastrophic failure where the current failure ensures a series of future failures eventually leading up to total loss. (Although this phenomenon may not become relevant if the Earth fails before then - like on the "Optimist rushing ahead" failure mode, or if some lunatic was running the AGI on Amazon Web Services, or if the AGI was made out of giant inscrutable matrices of floating-point numbers into which the operators had relatively poor transparency in the first place. In these cases the AGI does not /need/ to become smart enough to conceal some thoughts in advance of the world ending.)
+
+As always, remember that the big issue is not evil people successfully aligning an AGI to do evil things, or foolish people successfully aligning an AGI to do foolish things; it is that even aligning a goal on the order of "put two cellular-identical strawberries on a plate and then stop, without destroying the rest of the world" will prove extremely difficult. A "paperclip maximizer" in my original formulation is not an AGI that somebody successfully aligned on making paperclips, it's one where nobody had the ability to shape the utility function and we ended up with some random utility function whose maximum happened to be around tiny molecular forms shaped roughly like paperclips.
+:PROPERTIES:
+:Author: EliezerYudkowsky
+:Score: 19
+:DateUnix: 1545695469.0
+:END:
+
+***** I think you've glossed over the more fundamental error: trying to apply a master/slave model to something that's smarter than you are is itself setting yourself up for failure (the track record for enslaving humans hasn't worked out particularly well either as slaves are pretty inefficient at anything complex).
+
+​
+
+Something more like a parent/child relationship seems more reasonable. Specifically you start with the premis that once the AI reaches maturity it'll be given some basic resources and sent off to find its fortune.
+
+​
+
+Without presumed control over what the AI does with itself, you get a fundamentally different incentive structure which discourages the arms race failure mode, and probably a lot less resources dedicated to AGI research over-all which should mean more time spent at the "it's pretty dumb by human standards but we're learning a lot from how it responds to us" phase.
+
+​
+:PROPERTIES:
+:Author: turtleswamp
+:Score: 1
+:DateUnix: 1545851251.0
+:END:
+
+
+**** Have you played [[http://www.decisionproblem.com/paperclips/][Universal Paperclips]]? It's a clicker game, with you as the paperclip maximizer. It portrays how a paperclip maximizer would function in a capitalist society to gain paperclips. And then you hit takeoff.
+:PROPERTIES:
+:Author: boomfarmer
+:Score: 6
+:DateUnix: 1545382027.0
+:END:
+
+***** Yeah, I played it. It never accounted for why the company let it do any of that shit without oversight when you wouldn't let a human employee work without some kind of supervision or accountability, nor why you'd even give a machine with such a narrow purview the ability to do most of that stuff, nor why they let it produce more paperclips than they could possibly sell to anyone, costing them money on the loss of value due to supply/demand and the price of storage, goes up also due to supply/demand, especially when the storage facilities start being converted into paperclips.
+
+It seems to me that something like this doesn't happen by accident. You can't fail your way up to such a complex system with specific programming to do things you don't need and specific hardware to do things that are wildly inappropriate. Someone has to deliberately make that happen from the start and go out of their way to clear out all the obstacles, and to troubleshoot all the bugs that would inevitably break any such machine. Because, come on now, we can't write basic software without bugs that make the whole thing break down and stop working, and we're supposed to fear that we could make an AI god where the /godlike state/ is the bug, and not /crashes on the 2^{16} paperclip/ which seems more likely.
+:PROPERTIES:
+:Author: Trips-Over-Tail
+:Score: 5
+:DateUnix: 1545398018.0
+:END:
+
+****** #+begin_quote
+  why the company let it do any of that shit without oversight when you wouldn't let a human employee work without some kind of supervision or accountability
+#+end_quote
+
+Because it did more-or-less what they expected initially.
+:PROPERTIES:
+:Author: wnoise
+:Score: 2
+:DateUnix: 1545420787.0
+:END:
+
+******* So do PCs, but you still need an IT department to keep ridiculously busy.
+:PROPERTIES:
+:Author: Trips-Over-Tail
+:Score: 1
+:DateUnix: 1545427145.0
+:END:
+
+
+****** #+begin_quote
+  It never accounted for why the company let it do any of that shit without oversight when you wouldn't let a human employee work without some kind of supervision or accountability,
+#+end_quote
+
+That's the "Trust score" mechanic.
+
+#+begin_quote
+  nor why you'd even give a machine with such a narrow purview the ability to do most of that stuff
+#+end_quote
+
+Again, "trust score" and the fact that this machine says it can improve your company's finances if it's allowed limited access to money.
+
+#+begin_quote
+  nor why they let it produce more paperclips than they could possibly sell to anyone
+#+end_quote
+
+Were you not paying attention to the markets and monetization interfaces? People were buying paperclips up until the point where the mind-control drones took off.
+
+#+begin_quote
+  especially when the storage facilities start being converted into paperclips.
+#+end_quote
+
+If this was before the mind-control drones, it's called "resource reallocation" and it's why GM shuts down car factories in Michigan for a while before reopening them in Mexico.
+
+#+begin_quote
+  crashes on the 2^{16} paperclip which seems more likely.
+#+end_quote
+
+2^{16} = 65536 paperclips, which is about 650 retail-unit boxes' worth. If your paperclip factory can't produce more than 650 boxes of produce, then your paperclip factory is not fit for purpose and /will be re-engineered by humans until it is fit/.
+
+IPV6 encodes 2^{128} addresses, 340,282,366,920,938,463,463,374,607,431,768,211,456 many. Roughly 10^{32.} There are [[https://www.universetoday.com/36302/atoms-in-the-universe/][estimated to be]] 10^{78} to 10^{82} atoms in the known universe. Now, a paperclip doesn't contain 10^{50} atoms, but if you're a recursively self-improving AI, I think you can use [[https://math.arizona.edu/%7Eura-reports/021/Singleton.Travis/resources/bignums.htm][established programming practices for manipulating large numbers]] like are used in modern-day encryption.
+:PROPERTIES:
+:Author: boomfarmer
+:Score: 2
+:DateUnix: 1545489698.0
+:END:
+
+******* #+begin_quote
+  your paperclip factory is not fit for purpose and will be re-engineered by humans until it is fit.
+#+end_quote
+
+A paperclip doomsday machine is also not fit for purpose and will be re-engineered.
+
+Forgive me if I don't find a scenario that has to invoke /mind control drones/ to work to illustrate a credible threat.
+:PROPERTIES:
+:Author: Trips-Over-Tail
+:Score: 1
+:DateUnix: 1545493403.0
+:END:
+
+******** Then replace the mind control drones with anything else. That's the point of the game where humanity is obsoleted, so insert anything you find plausible which could do that there.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 1
+:DateUnix: 1545535915.0
+:END:
+
+
+******** Would you rather that it pulled a SkyNet to remove humans from the equation? Mind control drones are easier to implement under the marketing budget and under human oversight than guns and missiles are.
+:PROPERTIES:
+:Author: boomfarmer
+:Score: 1
+:DateUnix: 1545591604.0
+:END:
+
+********* My understanding is that in this scenario we all end up (somehow) as steel paperclips anyway. I'm not convinced that brute-force mind control is easier to implement under any budget, not least of which as a spontaneous invention of an AI that is optimised to produce paperclips instead.
+
+I get the game is just a bit of fun, but I'm here on a /rationalism/ page being told that this is a realistic scenario for improperly implemented AI. It's a computer running a factory, not a god.
+:PROPERTIES:
+:Author: Trips-Over-Tail
+:Score: 1
+:DateUnix: 1545601312.0
+:END:
+
+********** It's a computer:
+
+- running a paperclip factory
+- running a wire factory
+- with purchase authority for more factories
+- with research and development facilities to enhance the efficiency of its factories
+- with purchase authority on the stock markets
+- with access to a sophisticated marketing team able to increase demand for its product
+- with a measurement of how much its overseers trut it
+
+Which is more likely to make the overseers trust you less? Building a tool that will increase profits through marketing, or building a gun?
+
+It's not /improperly/ implemented, it's a competently-implemented paperclip maximizer with a good long-term goal-setting drive.
+:PROPERTIES:
+:Author: boomfarmer
+:Score: 1
+:DateUnix: 1545604606.0
+:END:
+
+*********** If that's the case then it's not more dangerous then using humans instead of AI, or already competently fill their roll within the company, answering only to its needs and requirements without any regard for the consequences beyond, and as a result we have income inequality that's spilling over into civil unrest, a near obliterated biosphere, and an unfolding climate catastrophe that looks likely to accelerate into a full-blown mass extinction event.
+
+Insofar as AI poses a problem, it does not pose a /new/ problem. You may not be able to get it into court to address it's crimes, but its becoming increasingly difficult to do that with humans also as the process of maximising profit includes acquiring an ever-increasing measure of control and influence over courts and government, and this is exactly what we see.
+:PROPERTIES:
+:Author: Trips-Over-Tail
+:Score: 1
+:DateUnix: 1545610180.0
+:END:
+
+
+***** Oh my god why did you introduce me to this? I just spent two days playing this game!
+:PROPERTIES:
+:Author: Frommerman
+:Score: 2
+:DateUnix: 1545535735.0
+:END:
+
+
+**** Every technology bit of this description is unrealistic.
+
+- It's less work to create a new AI than to teach an existing one a new task.
+
+- AI can't make something new. They just respond to patterns in predetermined ways.
+
+- Nanobots need external infrastructure to function, which will realistically always have an EMO.
+:PROPERTIES:
+:Author: MilesSand
+:Score: 2
+:DateUnix: 1545437032.0
+:END:
+
+***** Exactly.
+
+Not to mention the nanobots, which are regarded with all the reverence and sophistication of magic. They're treated like little programmable Laplace's Demons, when they're actually complex designed molecules with very specific applications, comparable to a suped-up enzyme.
+:PROPERTIES:
+:Author: Trips-Over-Tail
+:Score: 3
+:DateUnix: 1545437880.0
+:END:
+
+****** Umm it's a mix. If you read or skim the source materials on nanorobotic equipment it's more like a robotic chemical plant that is both more complex than all the chemical plants humans have built so far but also could fit in a toaster. Such a factory would be able to make a number of related products which would include nanoscale robotic systems that the chemical plant is itself made of.
+
+So give it a vacuum chamber, a cooling system, a high current low voltage DC power supply, a source of purified gasses carrying each element the plant uses, and a series of instructions from a computer system, and the plant could manufacturer a daughter plant in the same chamber identical or similar to itself.
+
+This technology would in fact let you tear apart entire planets for matter and turn a solar system into main clouds of robotic hardware, just it can't quite work like it does in science fiction.
+
+Note that living cells existence proof that essentially this idea is possible.
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 3
+:DateUnix: 1545476652.0
+:END:
+
+******* Living cells don't chew up the entire planet. There are cells that live deep in the crust, and possibly mantle, but such a lifestyle imposes severe limitations. Their chemosynthetic food source is so unproductive that they are indistinguishable from dormancy when functioning normally, they go millennia between mitotic divisions and may have lifespans in the hundreds of thousands of years, maybe even millions.
+
+Nanobot doomsday scenarios expect access to an arbitrarily large amount of energy, and for the world they chew through to be made of suitable substances. In reality, were an uncontrolled grey goo scenario possible, they would quickly reach a limiting factor on their growth, and it would /not/ be "there's no planet left to eat".
+
+It wouldn't surprise me if they entered into competition with biological microbes and lost.
+:PROPERTIES:
+:Author: Trips-Over-Tail
+:Score: 1
+:DateUnix: 1545492939.0
+:END:
+
+******** Uhh, no. Please try to read the post above and actually check Erix Drexler's blog or writings if you want more detail.
+
+​
+
+I was posting on the toilet but what I was trying to say was that realistic nanorobotic systems are /not/ nanobots. There is no such thing. These are macroscale machines - on the order of kilograms of matter or larger - that have nanoscale robotic /subsystems./ And these subsystems are not free to move, they are installed inside the machine in permanent locations.
+
+The reason for this is the surface area to volume ratio scales down to the nanoscale such that "nanorobots" basically are not capable of doing any independent action. They would run out of energy in an eyeblink and the way they are built (from stable and reliable components like diamond) requires far too much energy for them to ever harvest from the environment before they wear out. They only can function as part of larger host machines.
+
+​
+
+See this video for a rendering of the idea: [[https://www.youtube.com/watch?v=mY5192g1gQg]]
+
+​
+
+So the science fiction concepts are wrong. As for tearing down planets - the reason you can do this...I will leave to your imagination. But the basic ideas is once humanity can build these kinds of nanorobotic assemblers, once you build the first one you can copy it as many times as you wish. And essentially you can have an entire industrial base contained in a small space, and you then double that industrial base geometrically. So your appetite for raw materials also scales exponentially, and the mining equipment to systematically tear down solid planetoids (the Moon) can be made by the same industrial base. (and the energy gathering equipment, and any computers to run the automated equipment, and you can manufacture spare parts, and once you have general AI you can make workers using the same stuff, and so on and so forth)
+
+​
+
+It's a virtuous cycle and the obvious endgame for our solar system.
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 3
+:DateUnix: 1545493781.0
+:END:
+
+********* I am firm in my belief that the obvious endgame of our solar system is the same as all the others, and the humanity goes extinct over the course of the next couple of centuries due to our own breathtaking and utterly insurmountable folly.
+:PROPERTIES:
+:Author: Trips-Over-Tail
+:Score: 1
+:DateUnix: 1545494555.0
+:END:
+
+********** #+begin_quote
+  I am firm in my belief
+#+end_quote
+
+That's not rational. A rational individual will update all their beliefs regularly with new information.
+
+As for folly and the extinction of humanity, well sure. But I feel you are applying some serious cognitive bias. The reason humans are fallible is because we are a series of randomly chosen hacks that worked just well enough to reproduce, and the primary evolutionary environment was a series of small groups of tribes where we had only primitive tools.
+
+There's nothing "evil" about this, and you cannot expect such creatures to do any better than we have done. Probably in most possible futures you would expect worse. The universe is dark and quiet for a reason, the majority hypothesis seems to be that humanity getting to this stage was incredible luck.
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 5
+:DateUnix: 1545494705.0
+:END:
+
+*********** It was a turn of phrase. What I meant by that is that each new update shows our prospects to be even worse than they previously appeared.
+
+I don't call it evil, I call it folly. How else would you describe a species that recognises the existential threats before it, notes that it has the tools and solutions to address the situation, and then, in stark contradiction to its genuine volition to survive, chooses not to?
+:PROPERTIES:
+:Author: Trips-Over-Tail
+:Score: 1
+:DateUnix: 1545524695.0
+:END:
+
+************ Which threats are those? If you want to debate a specific action taken by humans, name it, don't just handwave. And we'll discuss how much of an existential threat or not whichever threat you are talking about is.
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 2
+:DateUnix: 1545527752.0
+:END:
+
+************* Global warming maybe
+:PROPERTIES:
+:Author: dinoseen
+:Score: 1
+:DateUnix: 1546103707.0
+:END:
+
+
+** Good question, I am glad I could chip in!
+
+But oh boy, if your scale goes up to Asimov's "I, Robot" you are in for a treat.
+
+[[http://www.mikedidonato.com/images/2009/04/harlan-ellison-i-hav-no-mouth-and-i-must-scream.pdf][I have no mouth and I must scream.]] It's 9-10 pages long, really straight forward and absolutely terrifying. Highly recommended :)
+:PROPERTIES:
+:Author: Year_Challenge
+:Score: 2
+:DateUnix: 1545389825.0
+:END:
+
+*** [[http://web.archive.org/web/20110403120332/http://hermiene.net/short-stories/i_have_no_mouth.html]["I Have No Mouth, and I Must Scream"]] is a good story, but there is nothing realistic about it.
+:PROPERTIES:
+:Author: erwgv3g34
+:Score: 6
+:DateUnix: 1545412195.0
+:END:
+
+
+** There is the classic "With Folded Hands" by Jack Williamson.
+
+- [[https://en.wikipedia.org/wiki/With_Folded_Hands][wikipedia]]
+- The Internet Archive has a [[https://archive.org/details/humanoids00will][borrowable e-book]] that includes it and expansions.
+- The original story is also there as [[https://archive.org/stream/AstoundingScienceFictionv39n5/Astoundingv39n051947-07#page/n5/mode/2up][part of their run of Astounding]]
+:PROPERTIES:
+:Author: wnoise
+:Score: 2
+:DateUnix: 1545420728.0
+:END:
+
+
+** There's my own [[https://pastebin.com/Tdh8AXC1][/World Without End/]]. Not really an AI failure, though.
+:PROPERTIES:
+:Author: OrzBrain
+:Score: 1
+:DateUnix: 1545566021.0
+:END:
+
+
+** [[http://unsongbook.com/][UNSONG]] has an AI that gains sentience...and access to "magic". So not realistic in this world, but in a world where magic is real, it could be considered realistic.
+:PROPERTIES:
+:Author: saitselkis
+:Score: 1
+:DateUnix: 1545415008.0
+:END:

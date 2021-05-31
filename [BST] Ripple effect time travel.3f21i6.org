@@ -1,0 +1,221 @@
+#+TITLE: [BST] Ripple effect time travel
+
+* [BST] Ripple effect time travel
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 5
+:DateUnix: 1438192842.0
+:END:
+Is there any way to make this work? I've been trying to make sense of it, and just can't come up with a model that's really functional in all but the most cursory sense.
+
+The basic idea is that when you travel backwards in time, it takes some time for the changes to propagate forward. So if changes propagate at the rate of 10 minutes per minute, if I travel from 2015 to 1915, the cause-and-effect of changes I make will "eventually" reach 2015 and overwrite what was there.
+
+For this to work, you need some concept of "meta time"; in /Bill and Ted's Excellent Adventure/ they say that the clock is always running in San Dimas, which places some limits on the ability to travel wily-nilly and put off any deadline indefinitely, as you can do with most normal models of time travel.
+
+I'm having a lot of trouble putting this into a concrete set of rules though. Here's my best attempt so far:
+
+- Every instance of time travel consists of points in time A (arrival) and D (departure).
+- Ripples move "forward" in time with respect to A and D at a rate of X minutes per minute.
+- At time D+t, the ripple will be at A+t*X. When D+t = A+t*X, the observer who might have existed at D (someone watching the time traveler leave) will cease to exist.
+
+I am certain that this is not correct though; the ripple keeps traveling forward, so the hypothetical observer at D is always going to be reachable at some point in the future (until he or she dies). The amount of time that Observer D is reachable keeps getting smaller and smaller, but ... I don't know. It keeps feeling like there's a solution just within reach of being coherent and sturdy.
+
+Is there a way to make this work without having fudge it too much?
+
+
+** There's a real-time strategy game called [[http://www.achrongame.com/][Achron]].
+
+The player can give commands and chronoport units backwards and forwards in time, with a limit of about 8 minutes.
+
+There are "timewaves", which move forwards through time at about 3:1 and propagate changes between timelines.
+
+I can't quite explain it properly, but it's real and it works. Somehow.
+:PROPERTIES:
+:Author: Meneth32
+:Score: 8
+:DateUnix: 1438204799.0
+:END:
+
+*** I think you mean a real time-strategy game.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 9
+:DateUnix: 1438216153.0
+:END:
+
+
+*** I've seen Achron before, but have no idea how it works - I think when I get home I'll play with it in a sandbox and try to figure out what programmatic magic is going on there.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1438204886.0
+:END:
+
+
+*** I watched a competitive match of this about 6 months back I think. I don't know if I've ever been more lost as to who's winning and who's losing. And that was with commentary.
+:PROPERTIES:
+:Author: Junkle
+:Score: 3
+:DateUnix: 1438280196.0
+:END:
+
+
+*** It's a pretty good way of playing around with these concepts, although the story is never quite clear on which time mechanics are just gaming abstractions due to the fact that a computer cannot simulate an arbitrary number of timewaves at the same time.
+
+For example, you'd think that the ability to permanently duplicate units via a paradox would be used in-story, even though it requires a lot of attention and is easily interfered with (so it's almost always impractical in combat).
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 2
+:DateUnix: 1438274383.0
+:END:
+
+
+** For clarity, this is the method of time travel that the first Back to the Future movie /sort of/ used. Marty McFly went back in time from 1985 to 1955, messed things up, and had only a limited windows in which to set things right. He had a picture with him where his older brother disappeared (as the ripple passed ~1963 when Dave was born), then his older sister disappeared (as the ripple passed ~1966 when Linda was born), then Marty himself begins to disappear (born in ~1968). This makes */no goddamned sense/* when you think about it, because the photograph itself was taken somewhere around 1985. Are we supposed to believe that the ripple hit 1963, disappeared Dave, then erased him from all photographs (while keeping the photograph intact)? Why does Marty still remember his brother then? Why don't the positions of people in the photograph change? It's a huge cheat that you don't really notice the first time you see the movie, but is there a way of fixing the general model so you don't have to cheat?
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 5
+:DateUnix: 1438195360.0
+:END:
+
+*** I was going to say "that sounds like Back to the Future" and came back to post that... and well, yes, there's all kinds of problems, like the probability of Marty (or any of his siblings for that matter) being born in the third timeline is basically zero due to the butterfly effect on sperm cells...
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 3
+:DateUnix: 1438196649.0
+:END:
+
+
+*** Sorry in advance for the wall of text.
+
+If time travellers are affected by ripples, shit gets crazy fast. Divergence of history from the previous reality is exponential in time (since the world is a chaotic system).
+
+This means that even a change as small as breaking a branch is probably going to invalidate the entire future if you travel back more than about 100 years, which will of course erase the time traveller from existence.
+
+At 1,000 years, your mere presence for a second or so would be enough to fundamentally alter the future beyond recognition.
+
+This basically means that a "one timeline model" means time travellers have to minimise at least one of two things: locality (i.e. how close in time/space your changes are to your jump - basically the "event distance" between source and destination) and divergence (i.e. how much you change things).
+
+Any change big enough to cause a "shit, we have to worry about the ripples" problem is going to erase the time traveller from existence long before they notice, unless specific steps are taken to prevent that.
+
+You could carry "canaries" with you (i.e. artefacts whose nature/existence forewarns you of dangerous ripples), like the photograph from Back to the Future only not idiotic.
+
+A photo from your parents' wedding might you a few years of warning of a potential deletion event. Their birth certificates could give you longer. Memorabilia from the moon landing and other historical events could be useful as well.
+
+A photo of you would be completely useless unless you were born after the photo was taken (since the ripple that erases the photo would arrive after the ripple that erases you).
+
+In general, the closer the canary artefact to the crucial date, the lower the chance of a false negative (without the wedding photograph you might think you're fine because your parents were born as normal, except you accidentally made them never meet). The further back the more warning you'd get.
+
+Could be a cool way of identifying characters and their approach to time travel (e.g. somebody with a photo album, somebody with a suitcase full of heirlooms, somebody with political almanacs from different decades), and also ties into their goals. The person with the political books would be focussed on world-spanning change, where the one with the photo album would be much more personal.
+
+You could also make it so that ripples affect time travellers in waves, like foreshocks before an earthquake. These waves could potentially travel faster in meta-time, giving ample warning and gradually ramping up in intensity as the critical moment approaches.
+
+How they would manifest is trickier. The phasing out of existence thing could work, but also makes absolutely no physical sense (Does the air pass both through and around you? Do you both heat and not heat your surroundings?).
+
+You could just go with mental/physical pain, but how does that work for inanimate objects?
+
+Achron (the game mentioned elsewhere) I believe alternates between the two realities with increasing frequency, but that would be less useful (you by definition can't be aware of not existing, though a companion could conceivably comment on it).
+
+Oh, and the other problem is the grandfather paradox inherent to a one timeline model. The only way it really makes sense is if the actions of the traveller in the past are somehow fixed irrespective of whether they get erased, which is handwavy but just breaks things if you don't address it.
+
+*TL;DR:* Characters carrying temporal totems could be cool. Recent totems for fine detail, distant totems for forewarning.
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 3
+:DateUnix: 1438241586.0
+:END:
+
+**** If a time traveller were to fall in the middle of the ocean and promptly drowned moments before the creator of the KT barrier arrived, would they cause vast ripple effects? Or would the much more significant event "wash out" their influence?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1438357069.0
+:END:
+
+***** What would matter is the magnitude of the change effected (basically the difference between the future given X and the future given not X).
+
+In this case, would them drowning like this cause a significant divergence from the expected course of events? If so, other time travellers would experience the effects of the resultant ripples.
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 1
+:DateUnix: 1438360607.0
+:END:
+
+
+** #+begin_example
+  $ git branch master
+  $ git merge almanac-1955
+  CONFLICT (content): Merge conflict in people/martymcfly37125.eml
+  Automatic merge failed; fix conflicts and then commit the result.
+#+end_example
+
+We have hard rules for time travel within a single timeline. We have hard rules for time travel that causes a single timeline to branch out into multiple ones. Why can't we have time travel that merges several divergent timelines back into one?
+
+Well, how would that work? As long as there aren't any differences between the timelines, they can merge flawlessly - actually, determining that they were ever different is an interesting exercise. And perhaps in some simple cases the sets of changes from two different time travellers can be combined seamlessly. But merging arbitrary timelines will probably result in some sort of mutant hybrid which only grudgingly abides by cause and effect, assuming one timeline doesn't overwrite the other entirely (which isn't much of a merge).
+
+I think that's the best way of understanding Marty Mcfly's situation. The timeline as of the end of the movie leaves Marty with memories of events that "never happened", including some that are only possible if Marty doesn't exist. Bits and pieces of at least three timelines ended up in a single present, even when nobody was actually time-travelling. Things faded in and out of existence as different parts of their history came from different realities. If he'd failed at the climax, Lorraine might have remembered Calvin Klein's existence even though - in that version of history - no such person was ever born.
+
+As for what the rules of timeline-merging are or why it happens at all, I couldn't possibly comment.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 4
+:DateUnix: 1438273110.0
+:END:
+
+*** Well, merge conflict sounds about right. God's a newbie git user.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 3
+:DateUnix: 1438316044.0
+:END:
+
+
+** We have two dimensions of time: Malleable Wimey-Time and San Dimas Time. At each pair of time coordinates, we have one universe state.
+
+Observers move through both forms of time at once, time machines jump through Wimey-Time, but are San-Dimas-instant. (Or perhaps they take San Dimas Time - this would be a variable of the story.)
+
+Here's what 5-dimensional spacetime, projected onto the two-dimensional time plane looks like:
+
+[[http://www11.pic-upload.de/29.07.15/724ffurvjj6q.png]]
+
+The first ripple was the Big Bang. The curve coming out of it is the shape of the ripple. OP suggested a linear shape, but we can choose a shape of the ripple that is useful to the story. Along each horizontal, the universe evolves according to classical laws until a ripple is hit, at which point the universe is replaced with whatever there would have been San-Dimas-before the ripple. At some San-Dimas-point, the Big Bang ripple reaches modern-day humans. Conscious observers move diagonally through both forms of time, like our protagonist Bob. Some of our Bobs are produced by the ripple after they are born - of course, they can't tell.
+
+At some point, Bob invents a time machine, and, like any munchkin worth his salt, prompty travels into the distant future to fetch some awesome technology. Of course, since time machines move horizontally, he comes out before the Big Bang ripple, where what he finds Author knows what.
+
+Good thing too, for in the distant future after the Big Bang ripple, at some point someone releases Skyborgnet, which, like any UFAI worth its salt, promptly goes on to conquer all of Wimey-Time to implement Author-knows-what utility function. Lucky for us that San-Dimas-travel is impossible!
+
+Bob and our story live in that sweet spot between the Big Bang ripple and Skyborgnets inception. How that big blank on the map I posted is to be filled out is the rest of the work. (Note that any rectangle in the map that doesn't cross a ripple line has the same horizontal Wimey-Timeline slice repeated across its vertical.) (Nothing says that all ripples must have the same shape, but I predict this target demographic will give the story bonus points if the rules are simple.)
+
+Now build a rational story out of it! Since I provided the rules, you won't be accused of strawmanning when you exploit it. Though you can ask me to play GM in unclear cases.
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 2
+:DateUnix: 1438198638.0
+:END:
+
+
+** I assume you've looked at Sam Hughes's [[http://qntm.org/time][essays]] on this? See especially the essays on [[http://qntm.org/models][models]], [[http://qntm.org/excellent][Bill & Ted's Excellent Adventure]], and [[http://qntm.org/bttf][BTTF]].
+:PROPERTIES:
+:Author: jalapeno_dude
+:Score: 2
+:DateUnix: 1438209774.0
+:END:
+
+*** Yup, I've checked those out (and that's my go-to when I have a thought about time travel). The analysis of BTTF unfortunately doesn't cover the actual mechanical issues involved with the ripple effect; it uses the same sort of vague wording that the movie itself uses. This isn't a bad way to analyze it, but ... it's not quite what I want.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1438214836.0
+:END:
+
+
+** I've thought a bunch about it; I'm using a similar system in my upcoming serial novel.
+
+Timeless Physics posits that there is no time; rather all of spacetime already exists in a predetermined timeless sense, and our experience of consciousness is merely an illusion of how the various slices of the universe are causally related.
+
+Applied to a time travel scenario, assuming the existence of a metatime, a change that propagates forward would forever be chasing the previous time wave (assuming they travel at the same speed) but if the time wave travels faster than the percieved speed of consciousness, you would be able to get a ripple effect time travel.
+
+(Of course, the character will still exist unrippled in some parts of spacetime, but you don't have to write from their perception.)
+:PROPERTIES:
+:Author: eniteris
+:Score: 1
+:DateUnix: 1438197036.0
+:END:

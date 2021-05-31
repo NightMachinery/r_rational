@@ -1,0 +1,661 @@
+#+TITLE: [D] Von Neumann probes seem like a very dangerous idea
+
+* [D] Von Neumann probes seem like a very dangerous idea
+:PROPERTIES:
+:Author: cjet79
+:Score: 10
+:DateUnix: 1485152009.0
+:END:
+For those unfamiliar with Von Neumann probes: [[https://en.wikipedia.org/wiki/Self-replicating_spacecraft#Von_Neumann_probes]] "A von Neumann probe is a spacecraft capable of replicating itself."
+
+Regardless of why you would use a self replicating probe (exploration, seeding, even extermination of other life forms), if you lose control of their self replication abilities then you are going to fill the Galaxy with an endless tide of your Von Neumann probes. And eventually that swarm is going to grow and envelop everything, including the place where it was created.
+
+Assuming you create a single probe for every star in the milky way galaxy, that is 1 trillion chances for something to go wrong with your probe and set off a chain reaction of out of control self-replicating probes. And it only takes one occurrence.
+
+I think it would be incredibly irresponsible and dangerous for humans to ever create Von Neumann probes, especially if the only purpose of doing so is to explore the galaxy. That is a very minor payoff for a galaxy ruining level of risk.
+
+When I see these probes in any works of fiction I can't help but think the civilization that creates them is either dumb or careless.
+
+
+** On the contrary, we must launch such probes at the first opportunity to have any chance of defending against competitor swarms.
+:PROPERTIES:
+:Author: pixelz
+:Score: 24
+:DateUnix: 1485160726.0
+:END:
+
+*** That wouldn't be defense. It would be annihilating yourself first before anyone else can do it.
+:PROPERTIES:
+:Author: cjet79
+:Score: 4
+:DateUnix: 1485178862.0
+:END:
+
+**** Just as easy as making a probe that uses whatever material to replicate would be making a probe that uses material selectively, you know. It would also be possible to make machines that preferentially replicate by disassembling out of control self replicators.
+
+There is also the opportunity for safety features like parent probes checking their children for errors and repairing or destroying them if necessary.
+:PROPERTIES:
+:Author: Law_Student
+:Score: 2
+:DateUnix: 1486060892.0
+:END:
+
+
+** You seem to have the idea that any error in the code whatsoever will eventually lead to variation in the probes. Then the variation will allow for evolutionary pressures to take effect, resulting in wildly divergent probes including ones akin to a "grey goo" scenario.
+
+The flaw I think you have in your reasoning is that not all replication permits evolutionary processes. There are multiple requirements:
+
+- Reproduction - The organism can create another alike itself. This is the whole premise of the Von Neumann. Check!
+
+- Heredity - The offspring resembles the parent. It is desired for the probe to be identical to the parent. Check!
+
+- Selection - The less fit offsprings will die out. Not Check! All probes will be making more of themselves, and there is very few factors to 'weed' out the unfit probes. Maybe reproduction speed will play a role, but by the time we have a theoretical probe which is better than the existing probe, we'll already have (at least) millions of the original design still spreading. While speed plays a role, there isn't anything to eliminate the 'inferior' versions if it's still capable of spreading.
+
+- Variable Fitness - Some offsprings are better at surviving/reproducing than others. This is the main flawed assumption. You are saying that if there are any errors in the reproduction, then evolution will result. But there can only be competing strains of probes if the mutation is somehow better at spreading through space, faster at reproducing, reproduces more, or is in someway /better/ at something than the original type.
+
+Evolution is not a magical process that generates working lifeforms out of disorder in a finger snap. It is a very gradual process which develops new adaptations with very little change between the parent and offspring. Making a probe more efficient or faster is (most likely) a very hard problem the best human minds will be trying to solve. Complex adaptations which do something outrageous like taking advantage of unknown laws of physics or warp gravity to travel faster can't spontaneously appear out of nowhere since it will require multiple adaptations which in the process will likely be a detriment to reproduction.
+
+Sexual reproduction is an evolutionary strategy to /speed/ up evolution and it still takes hundreds of generations for even the most minor adaptations to spread. The probes will be more similar to asexually reproducing species which are hundreds of times slower at evolving. Furthermore, the probes will take centuries to millennia per 'generation' traveling between stars.
+
+Any variability in the probes will overwhelmingly be more likely to be a detriment or be meaningless.
+
+Finally, this is something that can be tested beforehand, via computer simulations by deliberately introducing errors to the code and see what viable results can occur. Then we can introduce self-correcting redundancies to parts of the code most likely to go wrong as well as general error-checking mechanisms to prevent the errors in the first place.
+
+TL:DR - Evolution requires very minor errors which can lead to numerous viable mutations. Evolution is a process which in this case is already unlikely and we can prevent it to arbitrarily close to zero likelihoods.
+
+Sorry for having such a long post. I kept coming up with more to say!
+:PROPERTIES:
+:Author: xamueljones
+:Score: 18
+:DateUnix: 1485196701.0
+:END:
+
+*** I can't see how there isn't a selection effect.
+
+You send out 10 Von Neumann probes. Half of them stay healthy and 'reproduce' passing on their healthy systems to their 'offspring'. The other half encounter errors. 4 of the 5 that encounter errors have an effect that makes them less fit or completely unable to reproduce. Those 4 lines disappear. The 5th one has a random error that causes its communication systems to fail, so it can now send probes to systems that have already been explored. This is a huge jump in fitness compared to the 5 healthy probes which have to send their probes to unexplored systems.
+
+There is a selection effect against probes that can self diagnose errors and shut themselves down, and a selection effect against probes that do not re-explore the same solar systems as other probes.
+
+The probe doesn't have to take advantage of some exotic laws of physics, it just has to have a bug or error in the part of the probe that tells it to stop reproducing when its job is done.
+
+Remember fitness is a function of how fit an organism is to reproduce. A sterile body builder is less fit in an evolutionary sense than a a vial of reproductive fluid.
+:PROPERTIES:
+:Author: cjet79
+:Score: 4
+:DateUnix: 1485197993.0
+:END:
+
+**** Yes that's correct, but what I'm debating about is how easily such an error can occur. If we build in redundancies and self-correcting mechanisms, errors become very unlikely.
+
+However, let's say there are so many probes that even unlikely errors do appear. The code can be structured in such a way that there needs to be multiple steps to permit the creation of more probes. If the odds of an error for each step is 1%, then just by requiring 6 separate steps to allow for unlimited replication the odds drop below 1 trillion.
+
+Evolution doesn't rely only on errors/mutations. It needs /useful/ mutations that can appear with only a small change.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 6
+:DateUnix: 1485200573.0
+:END:
+
+***** #+begin_quote
+  but what I'm debating about is how easy such an error can occur.
+#+end_quote
+
+It sounded like you were debating whether there was a selection effect, specifically when you said this:
+
+#+begin_quote
+  Selection - The less fit offsprings will die out. Not Check! All probes will be making more of themselves, and there is very few factors to 'weed' out the unfit probes. Maybe reproduction speed will play a role, but by the time we have a theoretical probe which is better than the existing probe, we'll already have (at least) millions of the original design still spreading. While speed plays a role, there isn't anything to eliminate the 'inferior' versions if it's still capable of spreading.
+#+end_quote
+
+I'm assuming since you didn't debate me on those points you accept them.
+
+So that means evolution requires more than you list above. In addition to *Reproduction, Heredity, Selection, and Variable Fitness* you also say there is a need for mutation.
+
+And I should be clear on this point: evolution does not require that mutations be beneficial in general, it just requires that mutations happen. Biological evolution mostly has fitness reducing mutations. All that matters is that sometimes it has fitness enhancing mutations.
+
+All that you are really arguing is that the mutation rate will be low enough that we won't have to worry. And my response to that is to remind you that we are talking about 1 trillion stars in the milky way galaxy, and possibly hundreds of trillions of celestial bodies that a probe might be able to visit. Those numbers you give of 1% chance with 6 separate steps. Its actually exactly a 1 in a trillion chance of all those 1% things happening. I did the math elsewhere in this thread but with 1 trillion attempts at a 1 in a trillion chance there is a 64% chance that the thing will happen. And that is playing unfavorably with my numbers. Because one of the errors that might happen is that one of those 6 separate steps starts getting skipped. And when I refer back to the danger of mutation and selection earlier this is what I'm referencing. A probe that only has to pass 5 tests is more fit to reproduce then a probe that has to pass 6 tests.
+
+Let me ask you some separate but related questions:
+
+1. Do you think it is possibly to build an unhackable probe. Unhackable in the sense that an intelligent agent knowing everything about the probe could not alter it in any series of steps that would cause a grey goo scenario?
+2. Your banking software is launched into outer space. It must continously operate for 1000s of years in the harsh radiation environment of space, and then at the end of 1000 years it must copy itself into a new physical medium. A physical medium that your banking software created with the same code that needed to be running perfectly for 1000's of years. Do you still trust that banking software with your money? If yes, how many iterations of this process before you don't trust your banking software (100 iterations, a million iteration, a trillion iterations, a trillion trillion iterations)?
+3. Do you worry about other existential risk problems like GAI?
+:PROPERTIES:
+:Author: cjet79
+:Score: 3
+:DateUnix: 1485207374.0
+:END:
+
+****** Okay, I was a little tired when I made my earlier reply so I apologize if I sound like I was switching topics from whether or not there is evolution to talking about errors. Furthermore you seem to believe that I don't care or believe the Von Neumann probes are a serious threat. What I was trying to argue is a solution to the hypothetical problem, not that there isn't a problem.
+
+I agree it's a bad idea, but I believe it's one we can cautiously work with rather than an idea which is so dangerous that we shouldn't do it at all.
+
+Just to reiterate, the basis of my argument boils down to saying evolution requires beneficial mutation. I agree that evolution can theoretically act on the probes and cause selection pressures which result in a grey goo scenario. However, what I'm trying to say is that such an outcome can be planned for and prevented from occurring.
+
+The idea of multiple tests was a bad one, so let me try a different tack.
+
+I believe it's possible to design the probes to make evolution difficult to occur. I'm imagining that we can design the probes in such a way that any minor change results in failure of the probe rather than a modified version.
+
+The way DNA is designed, it often results in a viable life form because the 'space' of life is dense aka all life has very similar DNA.
+
+We can create the design/code of the probes that any minor change (or even major ones) results in absolute failure. With a 'fragile' design, we don't have to worry about competing strains.
+
+#+begin_quote
+  Do you think it is possibly to build an unhackable probe. Unhackable in the sense that an intelligent agent knowing everything about the probe could not alter it in any series of steps that would cause a grey goo scenario?
+#+end_quote
+
+I'm not sure. This question is a little too vague for me. It depends on how the agent can interface with it as well as how smart it is. If it has very few options to deal with the probe, then the probe can be unhackable. But if the agent is extremely intelligent and it can put the probe on a workshop table and use any tools it desires for as long as it wishes, then I don't believe the probe is unhackable. However evolution is not intelligent, so I believe we can make the probe unhackable to evolution.
+
+#+begin_quote
+  Your banking software is launched into outer space. It must continuously operate for 1000s of years in the harsh radiation environment of space, and then at the end of 1000 years it must copy itself into a new physical medium. A physical medium that your banking software created with the same code that needed to be running perfectly for 1000's of years. Do you still trust that banking software with your money? If yes, how many iterations of this process before you don't trust your banking software (100 iterations, a million iteration, a trillion iterations, a trillion trillion iterations)?
+#+end_quote
+
+First off, I definitely believe that such a banking system can theoretically exist. The question then boils down to how I can verify a given banking system to be as good as the theoretical version. I would want to see explanations for how it can survive the harsh radiation and what sort of precautions it would take against errors such as redundancies, prevention, and so on. It would take a lot of pre-testing and research before I would trust such a system. But if I need to store my money somewhere for a long time and I can't check on it in the meantime, then I would trust the banking system.
+
+#+begin_quote
+  Do you worry about other existential risk problems like GAI?
+#+end_quote
+
+Yes.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 3
+:DateUnix: 1485281997.0
+:END:
+
+******* Furthermore, any entity intelligent enough to hack a probe into a universal grey-goo machine... is probably smart enough to build a universal grey-goo machine, smart enough to know that they're hacking it into a grey-goo machine, and thus for whatever reason want to build a grey-goo machine. The probe is basically irrelevant at this point.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1485304619.0
+:END:
+
+
+**** On the contrary, there most certainly /is/ a selection effect, if the designers were sane. It's called error-correction failsafes; if a probe goes off-script, there's code present to prevent it from reproducing at all, probably by killing itself.
+
+You will want those failsafes to be quite robust, with a device of this sort; you are dealing with trillions of replications, so you'll want multiply-redundant systems such that you can handle wildly improbable combinations of errors.
+
+Implemented correctly, you have a system such that any deviation whatsoever from the approved codebase prevents the probe from reproducing. Thus, all mutations are immediately lethal, and you never get dangerous mutant strains outcompeting the parents. Thus, even if you get absurdly high error rates like 50%, all the error lines disappear immediately, because the design specs are such that you'd need something like a 20 sigma error to get an off-spec probe to reproduce in any way.
+:PROPERTIES:
+:Author: Endovior
+:Score: 1
+:DateUnix: 1485376240.0
+:END:
+
+
+** I see little problem with it. We the living beings are already self replicant robots.
+
+Nothing much worse can come out of making it on a galactic scale.
+:PROPERTIES:
+:Author: hoja_nasredin
+:Score: 8
+:DateUnix: 1485181670.0
+:END:
+
+*** If you have no preference for your own form of self replication, then sure there is no reason not to create another form of self replication that will replace you.
+
+Your indifference between grey goo vs human civilization is probably a very unique preference, and I don't think any space agency would put you anywhere near a Von Neumann probe project if they knew you had those preferences.
+:PROPERTIES:
+:Author: cjet79
+:Score: 7
+:DateUnix: 1485182726.0
+:END:
+
+
+** worst case, you send in a pair of Quality Assurance bots with every probe; the QA are tasked with analyzing each bot (both new and old) and destroying anything that falls outside of acceptable parameters. It is possible that the probe could go haywire, and even possible that one of the QA bots could fall outside of acceptable parameters, but incredibly unlikely* that both QA bots would do so at the same time.
+
+*I'm sure that somebody could do the math, if not now then once we actually have the programming written up. If the odds aren't low enough, then just add more QA bots.
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 8
+:DateUnix: 1485155669.0
+:END:
+
+*** 1. If you make the bots too cautious about reproducing they may not reproduce at all, or they might die out.
+
+2. Part of the danger of Von Neumann probes is that they essentially have a genetic line of parentage. When they reach a new planet and replicate themselves their "child" may be more likely to carry over any mutations in the code or the construction. In this scenario you have to not just insure that a few random mutations will lead to a bad scenario, you have to insure that thousands of mutation steps won't lead to a bad scenario. The more cautious you are in eliminating certain lines of reproducing Von Neumann probes the more work you create for all of the remaining lines of Von Neumann probes. In the worst case scenario you have a single "genetic" line of Von Neumann probes that might have to stay safe through a trillion 'generations'.
+
+3. You are ultimately fighting against evolution and selection effects. Cautious probes will die out. Probes that first sustain damage to the QA part of their coding will be more likely to live on. Probes that have out of control self replication are far more likely to live on than their reproduction limited peers.
+:PROPERTIES:
+:Author: cjet79
+:Score: 7
+:DateUnix: 1485183256.0
+:END:
+
+
+*** 1 trillion is a very big number - you'd need an awful lot of QA bots, given the increased propensity for data corruption in space.
+:PROPERTIES:
+:Author: Flashbunny
+:Score: 3
+:DateUnix: 1485156381.0
+:END:
+
+**** Undetected data corruption causing insidious changes to programming isn't really an issue. Computer science has good solutions for detecting and either fixing corruption or destroying the corrupted data if it's so badly gone that error correcting codes can't save it. You can read about things like hamming codes and checksums and RAID arrays for some different approaches to the problem.
+:PROPERTIES:
+:Author: Law_Student
+:Score: 2
+:DateUnix: 1486061403.0
+:END:
+
+***** Sure we have checks and balances to make the problem negligible, but at those numbers there's almost no such thing as negligible.
+
+I guess you could design a system with an error rate so low that even given trillions of chances to go wrong it probably won't (or will at least fail-safe), but given the possible ramifications of this going wrong you'd need to have a system with an error rate of at least < 1/100 trillion or so. And I imagine it would be pretty hard to estimate the probability of random corruption causing issues, so you'd have to include a huge safety margin of error, etc....
+:PROPERTIES:
+:Author: Flashbunny
+:Score: 1
+:DateUnix: 1486064633.0
+:END:
+
+****** When you start looking at the odds of cosmic rays simultaneously making the exact same series of changes at the same time on two or three data storage drives I think you'd start getting in that sort of astronomical territory.
+
+All this also assumes you can't make a data storage solution that isn't vulnerable to cosmic rays or other radiation, which is almost certainly not true. Non-rewriteable data storage can be very robust, to the point of circuits somehow needing to be rewired to change output.
+:PROPERTIES:
+:Author: Law_Student
+:Score: 2
+:DateUnix: 1486064971.0
+:END:
+
+******* I don't know nearly enough to comment on exactly how unlikely it would be, but your second point is well-made.
+:PROPERTIES:
+:Author: Flashbunny
+:Score: 1
+:DateUnix: 1486084772.0
+:END:
+
+
+** ...Your Von Neumann machine became a threat to life? How? Why did you give it protection against re-entry, oxygen, liquid water, its own weight, and missiles? Why did you give it the ability to track and intercept spacecraft that can manuever more than ten million times as often as the rocks in freefall it should be targeting? Why did you leave any possible optimization for evolution to exploit by breaking your rules - that is, why isn't it already at a local optimum that is far away from the dangerous global optimum? The best possible robot arm doing everything by hand is not a grey goo doomsday scenario. Why did you make it reproduce using a mechanism that /even in principle/ could ever be dangerously fast? It barely makes a difference whether a Von Neumann probe copies itself in a second or a century!
+
+Maybe don't do any of that. Make a slow, fragile, dumb thing that can't evolve into grey goo in ten thousand generations, let alone thirty. Then use error correction systems anyway - but don't rely on them to the exclusion of sane engineering. Your problem seems to be that you made a galaxy-killer with a limiter, instead of designing a probe for the mission. Don't massively overdesign stuff.
+:PROPERTIES:
+:Author: Anakiri
+:Score: 7
+:DateUnix: 1485253105.0
+:END:
+
+
+** Set it up so there are multiple backup systems protecting against mutation. Ideally you'd get to a point where it's almost impossible for something to go that wrong.
+:PROPERTIES:
+:Author: TBestIG
+:Score: 3
+:DateUnix: 1485176917.0
+:END:
+
+*** Almost impossible is an unacceptably large margin of error when you only need 1 probe in a trillion for everything to blow up in your face. If you have a 1 in a trillion chance of something going wrong, and you have 1 trillion cases then you have a 64% chance of things going wrong.
+
+To me "almost impossible" would mean something like 1 in a million chance. I'd just call 1 in a trillion chance of something happening 'impossible' with no qualifiers. You need to be able to say it would be impossible for the probes to go wrong just to even the odds.
+:PROPERTIES:
+:Author: cjet79
+:Score: 5
+:DateUnix: 1485184424.0
+:END:
+
+**** Biological replication is not a good predictor for designed systems. DNA is an imperfect information transmitter because lines of decent where it was not became static and selected against. Evolution acts via selection over variation - it is perfectly possible - and in fact sort of trivial for anyone that can build a self replicator at all to build them to just never vary at all. Mutations and variation will simply not happen to a line of decent that uses quadruple redundant information storage and defaults to sterility in the event of data corruption.
+:PROPERTIES:
+:Author: Izeinwinter
+:Score: 10
+:DateUnix: 1485186527.0
+:END:
+
+***** As I mentioned elsewhere ... if you are too cautious you end up with a failed Von Neumann probe system. They won't consistently replicate and won't explore the galaxy. I'm fine with this outcome, but I assume what happens next is that they lower the strictness for error and try again.
+
+Its not trivial to build a perfect replicator because your replication system is subject to error just like all other systems.
+
+Is quadruple redundancy enough to protect a system from human hackers? I wouldn't trust it with even basic identifying information if that was the only security in place. And the universe will be brute force attacking every potential vulnerability of your system. And for all we know there may even be intelligent life intercepting your probes and messing with them in a way that isn't random.
+
+Also as I said in the original post, this seems like a terrible gamble for a very low payout. What would we think of an alien civilization that accidentally destroys all habitable planets in their galaxy in an attempt to just stick a metal probe on every planet?
+:PROPERTIES:
+:Author: cjet79
+:Score: 1
+:DateUnix: 1485188289.0
+:END:
+
+****** No. You do not. Error in the replication process does not magically make your probes more capable, except via the evolutionary process, which is what you wish to avoid, nor is the resource expenditure on multiple memory media likely to make any difference whatsoever, given the density of memory media.
+
+You do not have to proof it against intelligent sabotage - anyone that can mess with a replicating probe can also build their own, so this is not a vulnerability that actually adds any hazard. Any intelligence's inclined to turn your probe into something else already /have/ a probe that is that something else, and as for other conditions - natural law is universal, and everyplace should have rocks floating in vacuum at least somewhere nearby. Your probes may need to /investigate/ all kinds of exotic locales. They don't have to reproduce, let alone successfully in all of them.
+:PROPERTIES:
+:Author: Izeinwinter
+:Score: 10
+:DateUnix: 1485190416.0
+:END:
+
+******* #+begin_quote
+  No. You do not. Error in the replication process does not magically make your probes more capable, except via the evolutionary process, which is what you wish to avoid, nor is the resource expenditure on multiple memory media likely to make any difference whatsoever, given the density of memory media.
+#+end_quote
+
+You are creating a selection effect as soon as you have probes turning themselves off if their internal systems deem them too dangerous to replicate. Your probes will self select themselves for for anything that winds up producing more probes. I don't understand how this is even a controversial point. And it could be a large number of things that causes more probes to be produced.
+
+#+begin_quote
+  You do not have to proof it against intelligent sabotage - anyone that can mess with a replicating probe can also build their own, so this is not a vulnerability that actually adds any hazard. Any intelligence's inclined to turn your probe into something else already have a probe that is that something else, and as for other conditions - natural law is universal, and everyplace should have rocks floating in vacuum at least somewhere nearby. Your probes may need to investigate all kinds of exotic locales. They don't have to reproduce, let alone successfully in all of them.
+#+end_quote
+
+There is an easy proof against this: our current civilization. We aren't capable of building Von Neumann probes, but I have no doubt that if we found one we could screw with it in ways that are non-random and potentially dangerous.
+:PROPERTIES:
+:Author: cjet79
+:Score: 0
+:DateUnix: 1485192810.0
+:END:
+
+******** You are creating a- strong selective pressure in a very specific and known direction: That is, only probes that are exactly like the original reproduce. Seriously, you overestimate the universality and power of evolution. An imperfect replicator will radiate into a multitude of new forms - that's correct, which is why anyone that builds such a device capable of operating on space rocks will deserve the extinction that happens to them. But a blueprint encoded in an redundantly error-checking format can be replicated without error until the final heat-death of the universe. That is -the chain may be broken, the data erased, but it will never be /corrupted/ - and thus, there is no opening here for evolution to happen at all. If the code says to make one copy per star system and then sit, selfrepair and observe until the end of the life of that star and then suicide, the probes will do so.
+:PROPERTIES:
+:Author: Izeinwinter
+:Score: 5
+:DateUnix: 1485206007.0
+:END:
+
+********* #+begin_quote
+  Seriously, you overestimate the universality and power of evolution.
+#+end_quote
+
+My argument relies on the fact that any self replicating entity is subject to the laws of evolution. But the real meat of my argument is that there are 1 trillion chances for this thing to go wrong. And unless you drastically improve space travel (in which case why use Von Neumann probes?) then each of those 1 trillion chances is going to have a 1000-5000 year time span from when it was created to when it reproduces. So every one of these probes is going to spend a couple thousand years being bathed in cosmic radiation which can flip random bits of memory one way or the other. Oh and if you want timelines of only a couple thousand years of travel then your probe will be going fast enough that a micron sized particle floating around in space will have enough power to punch a hole straight through your probe.
+
+Just having a probe that still functions after that long will actually be an engineering marvel. Having it function exactly as specified? That is probably a level of precision engineering that we have never achieved as humans.
+
+And if you are too cautious about having your Von Neumann probes reproduce then they will just die out, and the whole program will be pointless.
+:PROPERTIES:
+:Author: cjet79
+:Score: 1
+:DateUnix: 1485209285.0
+:END:
+
+********** A trillion is a astonishingly small number in this context. Four seperate memories checking each other means that a bit has to be flipped in all of them /at the same time/. The same bit. And since this system also does all the usual parity checks, that isn't enough, random chance has to hit the same two or three bits in 4 separate memory systems. At the same time. Because if the errors are separated in time, the standard crosschecks will restore the outlier to consensus, if necessary by fabricating a new "hard-drive" (memory diamond, whatever). This will not happen by accident before the end of time. And doing this isn't paranoid design, that will keep the probe from reproducing - it makes it many times more likely to be able to execute it's job because it means it has a correct blue-print to work with come hell or high water. Most mutations are non-viable, so this /increases/ the odds of any given probe successfully replicating.
+:PROPERTIES:
+:Author: Izeinwinter
+:Score: 6
+:DateUnix: 1485210165.0
+:END:
+
+*********** Or it flips just one bit. That one bit is the bit in charge of doing the comparison between the different blueprints. Now its always true.
+
+Or the antennae is taken out so now it doesn't stop other probes from landing on that planet.
+
+Or a micrometeorite pierces the internal machinery and the signal from the "don't produce more probes" section is cut off.
+
+Or you have a flood of radiation in space from a cosmic event that hits all of the data storage devices at the same time. They all have 25% of their data corrupted but not the same 25%. How much do you trust the integrity of its safety mechanisms now?
+
+Or you have a noisy area of space that overpowers whatever signalling device your probes are using so they keep thinking a solar system is empty when instead its already will with a bunch of other probes.
+
+#+begin_quote
+  A trillion is a astonishingly small number in this context. Four seperate memories checking each other means that a bit has to be flipped in all of them at the same time.
+#+end_quote
+
+Its not just a trillion. Its a trillion probes, each with a ~2500 year lifespan flying through space dust, radiation bursts, and magnetic fields. Data integrity is only ONE of your concerns. You also need to make sure its ability to produce new probes isn't compromised, its communication isn't compromised, its processing of communication isn't compromised, etc. Oh and this all pretends as if you were able to perfectly code this probe when you sent it out. If you perfectly preserve code that has a deadly error in it then we are equally as screwed as if the code had been perfectly modified to contain this deadly error.
+:PROPERTIES:
+:Author: cjet79
+:Score: 1
+:DateUnix: 1485211401.0
+:END:
+
+************ #+begin_quote
+  Or it flips just one bit. That one bit is the bit in charge of doing the comparison between the different blueprints. Now its always true.
+#+end_quote
+
+There is no such thing as a bit that is "in charge of" anything.
+
+#+begin_quote
+  Or the antennae is taken out so now it doesn't stop other probes from landing on that planet.
+#+end_quote
+
+Not sure what this means. What antennae? What planet? There seem to be a lot of unspoken assumptions in this sentence.
+
+#+begin_quote
+  Or a micrometeorite pierces the internal machinery and the signal from the "don't produce more probes" section is cut off.
+#+end_quote
+
+What "don't produce more probes" section? What signal? You are assuming a great number of things about this hypothetical self-replication process which are not even close to necessary. For instance, what if the replication process physically required all four probes in order to occur? In that case, damage to any one of the four probes would make replication impossible.
+
+#+begin_quote
+  Or you have a flood of radiation in space from a cosmic event that hits all of the data storage devices at the same time. They all have 25% of their data corrupted but not the same 25%. How much do you trust the integrity of its safety mechanisms now?
+#+end_quote
+
+You'd be surprised at how possible it is to reconstruct a message using multiple partially-corrupted copies. There's actually an information-theoretic criterion which allows us to calculate the mutual information between the copies (and thereby the probability with which the resulting reconstruction matches the original message), but I'm not feeling up to running the numbers right now. However, if the number of redundant copies you have isn't enough to ensure a satisfactorily high probability of success, all you have to do /add more/. Come on. This isn't hard stuff.
+
+#+begin_quote
+  Or you have a noisy area of space that overpowers whatever signalling device your probes are using so they keep thinking a solar system is empty when instead its already will with a bunch of other probes.
+#+end_quote
+
+Unless your probes are in close orbit around a neutron star or some such, they will not encounter such a region of space. Also, more assumptions about how the probes will work! What if they periodically approach each other to exchange information instead? What if the probes are capable of modulating the signals they send to compensate for noise? What if there are multiple channels of communication for redundancy's sake?
+
+#+begin_quote
+  Its not just a trillion. Its a trillion probes, each with a ~2500 year lifespan flying through space dust, radiation bursts, and magnetic fields. Data integrity is only ONE of your concerns. You also need to make sure its ability to produce new probes isn't compromised, its communication isn't compromised, its processing of communication isn't compromised, etc. Oh and this all pretends as if you were able to perfectly code this probe when you sent it out. If you perfectly preserve code that has a deadly error in it then we are equally as screwed as if the code had been perfectly modified to contain this deadly error.
+#+end_quote
+
+Why do you need to make sure the ability to produce new probes isn't compromised? As long as there are other probes out there that are still capable of replication, things are completely fine even if one or two (or even several thousand) probes get damaged to the point of being unable to replicate. As for communication... well, I already addressed that above. And the possibility of a coding error is /always present/, so I hardly see a reason to single out von Neumann probes in particular, except insofar as the stakes are unusually high--which actually provides a greater incentive to get it right. (One sees an interesting analogy with FAI here.)
+
+Look, I'd recommend sitting down and actually working out how an error-correction system for self-replicating probes might /work/ before making (incorrect) claims about ways in which such a system can fail. None of the concerns you raised are anywhere close to being general enough to count as legitimate issues, seeing as it took me about fifteen minutes in total to come up with either a refutation of your point or a workaround. /Anyone/ could have come up with those--including yourself. There's a worrying trend I see online, wherein people seem more and more content to simply point out (what they think is) an object-level criticism, without immediately going one level higher and asking themselves, "Well, before I post this complaint, how can it plausibly be addressed?" This is a habit of thought that, ideally, should be the /default/, and it's something that is completely lacking in your comments.
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 4
+:DateUnix: 1485232564.0
+:END:
+
+************* #+begin_quote
+  Look, I'd recommend sitting down and actually working out how an error-correction system for self-replicating probes might work before making (incorrect) claims about ways in which such a system can fail. None of the concerns you raised are anywhere close to being general enough to count as legitimate issues, seeing as it took me about fifteen minutes in total to come up with either a refutation of your point or a workaround. Anyone could have come up with those--including yourself. There's a worrying trend I see online, wherein people seem more and more content to simply point out (what they think is) an object-level criticism, without immediately going one level higher and asking themselves, "Well, before I post this complaint, how can it plausibly be addressed?" This is a habit of thought that, ideally, should be the default, and it's something that is completely lacking in your comments.
+#+end_quote
+
+Look, I work in the software industry. I see shitty code on a regular basis. I know there are ways to be careful and guarantee your code works. NASA is even one of the few coding organizations that is actually really good about producing quality code.
+
+Even relatively simple websites can have codebases that spiral out of control in complexity and become quickly impossible for a single human or even a group of humans to understand. You are right, I don't know what the probe will look like. But I can be pretty sure it will be more complex then a website.
+
+Because of these reasons I think building a probe that is successful (able to reproduce other probes), safe (won't somehow go out of control and produce too many probes), and effective (will do whatever we want it to do at the places it goes to) will be an engineering marvel.
+
+It sounds like a lot of hubris to me to say "yeah we can definitely construct a probe that will never malfunction in a dangerous way, and we can do it perfectly 1 trillion times, and each probe will be able to last thousands or tens of thousands of years without any problems."
+
+I don't think its impossible for humans or some alien species to succeed at this, but its dangerous. Because if they fuck up the consequence is basically creating a grey goo scenario for an entire galaxy.
+
+Its a high risk, high upfront effort (developing your perfectly safe self replicating probe), and probably low payoff. Why not just build a million probes that don't self replicate and explore all your nearby stars with none of the risk and just about all the same benefits? Do you really need to send probes to every corner of the galaxy, and is settling for only a couple million solar systems to start your colonization/exploration really so terrible?
+:PROPERTIES:
+:Author: cjet79
+:Score: 1
+:DateUnix: 1485236581.0
+:END:
+
+************** #+begin_quote
+  Why not just build a million probes that don't self replicate and explore all your nearby stars with none of the risk and just about all the same benefits? Do you really need to send probes to every corner of the galaxy, and is settling for only a couple million solar systems to start your colonization/exploration really so terrible?
+#+end_quote
+
+How are you planning to scale up the manufacturing of probes to that degree without self replication?
+:PROPERTIES:
+:Author: lsparrish
+:Score: 2
+:DateUnix: 1485301643.0
+:END:
+
+*************** Without the requirement for self replication you could make much simpler probes. We could probably afford to launch a million micro satellites around our own solar system right now, it just doesn't make sense to buy that.
+:PROPERTIES:
+:Author: cjet79
+:Score: 1
+:DateUnix: 1485309581.0
+:END:
+
+**************** If the only goal we were interested in were passive information gathering and there were no way to benefit from even greater amounts of information, you might have a point. It doesn't seem realistic to me though.
+
+Chances are we will continue to have uses for larger scale computing arrays, power collection, and more detailed information, than is possible with the local solar system's manufacturing capabilities. The cost of making a probe that works as intended, even if that is very hard, is infinitely lower than the gains from doing so.
+
+Besides, tapping the local system's resources is probably going to involve something very much like self replicating robots to begin with. And industry on earth already grows in a recursive fashion (where one machine builds / harvests resources for the next), which is basically a de facto self replicator with humans (another type of self replicator) being a component.
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1485313978.0
+:END:
+
+
+************** #+begin_quote
+  Look, I work in the software industry. I see shitty code on a regular basis. I know there are ways to be careful and guarantee your code works.
+#+end_quote
+
+We are nowhere close to code that can self-replicate well. For an example of /good/ self-replicating code, look at the human genome. It is very complicated, but it does succeed at self-replicating. Do you think humans will eventually become the grey-goo of the universe because of genetic mutations? How unlikely is that?
+:PROPERTIES:
+:Author: kuilin
+:Score: 1
+:DateUnix: 1485405557.0
+:END:
+
+
+**** If almost impossible means one in a million and you have several billion of them, it's not 'almost impossible' anymore, it's very likely.
+:PROPERTIES:
+:Author: TBestIG
+:Score: 2
+:DateUnix: 1485187019.0
+:END:
+
+***** That was my point. So you are saying you want a margin of error that is a million trillion to 1.
+:PROPERTIES:
+:Author: cjet79
+:Score: 1
+:DateUnix: 1485187321.0
+:END:
+
+****** It's still possible, just very hard. I think that it's worth it considering the risk, like you said in your post
+:PROPERTIES:
+:Author: TBestIG
+:Score: 1
+:DateUnix: 1485194510.0
+:END:
+
+
+** What if you deliberately "neuter" such probes, giving them the relevant skills to survive in uninhabited space but not the relevant skills to win a fight with your own military? In order to wipe out your species, they would not merely need to become defective in the sense of "forgetting their loyalty to you", they'd need to become defective in the sense of "undergoing an intelligence explosion", which is obviously always a problem.
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 3
+:DateUnix: 1485189649.0
+:END:
+
+
+** I wouldn't really worry about that. In the 100 years it takes the probe to get to Alpha Centauri, our technology will have advanced to be /far/ better so that any probes we send out later will be much better at replicating and outcompeting, and we'll be spreading a lot more of them to other worlds, and we have the much larger industry, if it comes to war we'll win. And the thing about these probes is that any planet with a global net to catch arriving probes will have no problem getting rid of them, and we'll probably have that technology before the probes ever get to another planet, much less cover the planet and get back to us.
+
+As an analogy, worrying about these probes is like worrying that compound growth in the stock market is going to make a regular person richer than the rest of the world combined. No, the rest of the world's wealth is growing at the same pace (and often at a faster pace).
+:PROPERTIES:
+:Author: luminarium
+:Score: 3
+:DateUnix: 1485233674.0
+:END:
+
+
+** Load the probes with a governing AI that manages the replication. Or better yet, load the probes with uploaded minds /and/ AI. Although at that point, the line between "probes" and "colonizing starships" starts to blur.
+
+I'm pretty sure any self-respecting civilization would at least load a governing intelligence to prevent such a scenario as you described, and it wouldn't even be that hard once they have the tech to create such probes.
+
+Plus, they may have other duties besides exploring. Seeding the galaxy with life, preparing planets for colonization, contacting and uplifting other species, scientific research, etc. Why send out multiple probes to do each thing when you can send out one that can do all?
+
+A good way to reduce malevolent variation is to send the probes out in "swarms". Packs of a dozen or hundred each, that would check themselves and each other for discrepancies. The chance that a majority of them will experience an error that is both malevolent /and/ prevents error-correction rapidly approaches zero the more probes there are in a pack.
+:PROPERTIES:
+:Author: eshade94
+:Score: 2
+:DateUnix: 1485206947.0
+:END:
+
+
+** Encrypt the code. If it messes up a bit while copying, then when it tries to decrypt it it will get gibberish. And store the encrypted and decrypted code in very different ways, so there's no way it can accidentally copy the decrypted code.
+
+I think the bigger problem is something more intentional. Say you want a way to reprogram the robots after they're built. Then they can be reprogrammed by a hacker.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 3
+:DateUnix: 1485194384.0
+:END:
+
+
+** I think its a question of sufficient close sentient oversight:
+
+1) In the solar system (target is asteroids and comets), we can relatively easily keep an eye out, even keep some non-replicating killer bots on hand if something goes wrong, alongside other contingency plans
+
+2) Not-near-breathing-humans: In these cases, I think that the concerns you raise apply, for sufficient oversight I think you might need the genie of strong AI, or of downloaded human consciousness...
+:PROPERTIES:
+:Author: ABZB
+:Score: 1
+:DateUnix: 1485206369.0
+:END:
+
+*** Well if you can exercise sentient oversight there doesn't seem to be much reason to send out the Von Neumann probes. Part of why you'd do it is that sending a robot to another planet is a lot easier than sending a human.
+:PROPERTIES:
+:Author: cjet79
+:Score: 2
+:DateUnix: 1485209485.0
+:END:
+
+**** I don't envision constant moment-to-moment monitoring for every single probe - for the in-system oversight, a system of inspectors, even a mostly automated one, would probably be sufficient.
+
+For the interstellar application, have the onboard personality wake up on some schedule, and have some system of checking up on nearby probes.
+:PROPERTIES:
+:Author: ABZB
+:Score: 1
+:DateUnix: 1485270902.0
+:END:
+
+
+** I'm a bot, /bleep/, /bloop/. Someone has linked to this thread from another place on reddit:
+
+- [[[/r/replicatingrobots]]] [[https://np.reddit.com/r/replicatingrobots/comments/5q00l6/d_von_neumann_probes_seem_like_a_very_dangerous/][[D] Von Neumann probes seem like a very dangerous idea • /r/rational]]
+
+[[#footer][]]/^{If you follow any of the above links, please respect the rules of reddit and don't vote in the other threads.} ^{([[/r/TotesMessenger][Info]]} ^{/} ^{[[/message/compose?to=/r/TotesMessenger][Contact]])}/
+
+[[#bot][]]
+:PROPERTIES:
+:Author: TotesMessenger
+:Score: 1
+:DateUnix: 1485304711.0
+:END:
+
+
+** Have you read [[https://www.amazon.com/Are-Legion-Bob-Bobiverse-Book-ebook/dp/B01LWAESYQ][We are Legion; We are Bob]]? If not and you (OP only) are willing to pm me with your preferred format and an email. There's a lot of laughable/horribly pessimistic assumptions in the story, but it's a good mix of passages in the void and humorous sci-fi illustrating a counter-argument.
+
+I think you are assuming a sub-sapient probe, and that only makes sense if you don't pursue a [[https://www.cs.montana.edu/webworks/projects/stevesbook/contents/chapters/chapter002/section004/blue/page003.html][K type reproductive strategy]] (i.e. quality over quantity) for your probe. We are K type reproducers ourselves; and I would hope our first von-neuman probes are, at least, as strongly trans-human as the Bobs are.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 1
+:DateUnix: 1485312899.0
+:END:
+
+*** #+begin_quote
+  Have you read We are Legion; We are Bob? If not and you (OP only) are willing to pm me with your preferred format and an email.
+#+end_quote
+
+I have not read it. Its in my general area of interest, so I might read it in the future. I think you might have left out a words, but I think this is an offer for a free version of the book, sorry if that interpretation is wrong. If it is an offer, thank you, but I need to politely decline. I make it a habit to buy any entertainment media I am interested in, even if the effect is small I like to encourage and support the creators of anything I am interested in.
+
+Are you the author?
+:PROPERTIES:
+:Author: cjet79
+:Score: 1
+:DateUnix: 1485356008.0
+:END:
+
+**** No not the author, just a fellow traveler who's willing to buy a copy because it'd argue my point better than I would and I enjoy sharing books I enjoy. That and I don't know what I'll do with this month's Audible credits.
+
+Edit: I did ask another user here if they had written it though.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 1
+:DateUnix: 1485365493.0
+:END:
+
+
+** I imagine long before we start making von Neumann probes we would test a number of variables, including how likely it is for code to be corrupted during the copying process.
+
+Consider the following:
+
+1) Code is significantly more fragile than DNA. A single missing semicolon is enough to cause an entire program to fail to compile.
+
+2) Even a single gigabyte of code would be made of /eight billion/ bits. The odds that the right bit is going to be changed to allow uncontrollable self-replication, at a low estimation, is one in eight billion.
+
+Not only is the code likely to be larger (at this stage we'll be dealing with atomic deconstruction, which I assume will contain some fairly complex code), but it's highly unlikely that the self-replication function will be attributed to a single bit. The odds that /two/ of the exact, necessary bits will be changed are... 1 in 6400000000000000000. This increases exponentially the more checks you add.
+
+3) These probes - unlike the nanomachines in the Grey Goo scenario - are easy to destroy if malfunctioning ones are located. They will not retain functionality if broken down.
+:PROPERTIES:
+:Author: Quetzhal
+:Score: 1
+:DateUnix: 1485428847.0
+:END:
+
+
+** Von Neumann probes can be made arbitrarily resilient to error propagation. You can easily have pentuple-redundant backups and failsafes to ensure against the spread of buggy probes. You could even build 101 redundant microchips and 101 redundant flash drives and likely do that in under a kilogram. Highly redundant integrity testing prior to deployment of subsequent probes is also fairly easy.
+
+In contrast, humans are actually a major concern once they start spreading around the galaxy. We cannot arbitrarily enhance our resistance to mutations and natural selection. Indeed, with modern abortion to prevent genetic defects and the potential for genetic engineering to prevent diseases, we may be more mutable than we've ever been as a species. What will the human race become when genetic engineering is used to make people taller, slimmer, stronger, smarter, etc?
+
+Even without that, given a million years, you'll likely see humans change at least as much as we have since Homo habilus. In 10 million years, the change would likely be at least as much as when we shared a common ancestor with bonobos and chimpanzees. The Milky Way is 100-180 thousand light years across. I doubt we'll travel much faster than 1% of the speed of light, which means we'd probably be looking at a 10-18 million year timespan by the time we reach the other side of the galaxy. Whatever arrives at that side of the galaxy would not be the same species as the hominids that inhabit our side of the galaxy.
+
+Add on how rapidly cultures and languages diverge (easily less than 5,000 years) and the potential for rapid and intentional genetic alteration and you're dealing with a scenario where our one species would fill the galaxy with countless worlds populated by the truly alien descendants of our species. Indeed, worlds upon worlds with ecosystems full of genetically-engineered variants of Earth flora and fauna, all dominated by the oddly similar intelligent bipeds. But what if some of those races are not peaceful?
+
+Von Neumann probes don't worry me at all. It's humans that make me worried.
+:PROPERTIES:
+:Author: Norseman2
+:Score: 1
+:DateUnix: 1485476049.0
+:END:

@@ -1,0 +1,195 @@
+#+TITLE: Adventures in Cognitive Biases - a rationality game
+
+* [[http://web.mit.edu/~xiac/www/advbiases/][Adventures in Cognitive Biases - a rationality game]]
+:PROPERTIES:
+:Author: mpdaugherty
+:Score: 22
+:DateUnix: 1405266834.0
+:END:
+
+** I really didn't like the implementation of the belief graphs. Two huge problems, IMO:
+
+1. They were symmetric in linear space, when a lot of the time I'd prefer to distribute probability mass symmetrically in log space. (Example: one question was "how many gallons of milk does a cow produce per week). My rough guess was "the order of magnitude is around 100", i.e. between 10 and 1000 (or maybe a little tighter, but the point is that it was symmetric in log space).
+2. An inability to make flat belief graphs. When I don't know the answer, I want to admit my ignorance by submitting a flat prior, but this isn't possible here. (E.g. if I want the median of my guess to be 200, the minimum and maximum can only extend to 135-265).
+
+The two things together were especially frustrating, and forced me to give much more confident answers than I actually wanted to, which seems to entirely defeat the point of the exercise. So I gave up pretty quickly.
+:PROPERTIES:
+:Author: jalapeno_dude
+:Score: 19
+:DateUnix: 1405298732.0
+:END:
+
+*** I agree, and I like the way the [[http://acritch.com/credence-game/][credence game]] does it a /lot/ better.
+:PROPERTIES:
+:Author: khafra
+:Score: 2
+:DateUnix: 1405594994.0
+:END:
+
+
+** Fun. I just wish you used metric..
+:PROPERTIES:
+:Author: Lethalmud
+:Score: 7
+:DateUnix: 1405290737.0
+:END:
+
+*** #+begin_quote
+
+  #+begin_quote
+    How many gallons of milk does a cow produce
+  #+end_quote
+
+  WTF is a gallon?
+#+end_quote
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 8
+:DateUnix: 1405308122.0
+:END:
+
+**** Yeah, and what is labeled "organic" food?
+:PROPERTIES:
+:Author: qznc
+:Score: 9
+:DateUnix: 1405327702.0
+:END:
+
+
+**** My exact response, surely it wouldn't be too hard to add a switch somewhere/question at the beginning.
+
+This and the American bias (How much organic food is sold in America, how much to Americans spend in vending machines, etc.) annoyed me more than it really should.
+:PROPERTIES:
+:Author: duffmancd
+:Score: 6
+:DateUnix: 1405340136.0
+:END:
+
+
+** An interesting illustration for people who haven't seen this sort of thing before. Very intuitive and easy to follow, but no actual new ideas or concepts for me. If I was teaching or taking an intro to probability and stats class, this might be valuable, but it's old concepts for me personally.
+
+Some questions seemed a little imprecise or stupid. I mean, I have an extremely high probability that there have been exactly 0 reincarnations of the Dalai Lama (>99.9999%). Perhaps the question should have been something like "How many reincarnations do religious followers of his ascribe to the Dalai Lama?" if they wanted to use the answer they went with (though I guess it might be interpreted as a joke based on the monk trappings?). A couple others also felt like the questions were wrong or imprecise. For another example, consider the number of countries in the world question - I personally think the best answer is [[https://www.youtube.com/watch?v=4AivEQmfPpk][around 200 or so]], but honestly this is more a question about 'how do you define a country' than a real question with a concrete answer.
+:PROPERTIES:
+:Author: Escapement
+:Score: 9
+:DateUnix: 1405269568.0
+:END:
+
+*** There's a party game called "Wits & Wagers" that's very good at giving concrete numerical questions /and/ giving you the sources so that you can calibrate your answers with that extra knowledge. I wish they'd taken a page from that playbook.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1405349728.0
+:END:
+
+
+*** #+begin_quote
+  A couple others also felt like the questions were wrong or imprecise.
+#+end_quote
+
+Maybe you should incorporate how the questioner interprets the question and its answer into your own uncertainty of what will seem like the correct answer to the questioner. In a way that's a good lesson to learn for example when you're taking a standardized test or in a job interview ;)
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1405274579.0
+:END:
+
+**** I know how to answer questions on tests to score what the tester expects. I have extremely good test-taking skills. That said, I hate tests like this one where to score 'correctly' I have to answer incorrectly because of the test-giver's biases and prejudices, rather than actually choosing the factually correct answer.
+
+True story: I had an English teacher who actually taught us that, in Shakespeare's Macbeth, the titular character was never motivated not by ambition or lust for power or persuasion by his wife but was instead a purely noble and good person who was corrupted by an evil spell from the play's witches, and that any other interpretation of the play's events was wrong. After discussing and attempting to persuade the teacher and eventually giving up, I answered tests and wrote in essays basically fundamentally wrong things about the play and ended up in the top of the class. I didn't feel good about it, though.
+:PROPERTIES:
+:Author: Escapement
+:Score: 6
+:DateUnix: 1405280938.0
+:END:
+
+***** I had a similar experience in my economics unit last semester - advertised as economics for environmentalists, actually resource extraction economics. Much less interesting, but when I know the material and got /exactly/ 50% on the practise exam I can take a hint.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 2
+:DateUnix: 1405415368.0
+:END:
+
+
+** In addition to other concerns in this thread, I found the second scenario (of choosing between the Caves or the Tavern) to be improperly handled. One of the first things said is that the two are weeks apart. If he only makes the trip once a year, then the time he spends traveling will be around ~5%. This information is significant, as, if we can assume that we don't have to worry about him being in transit, then that is evidence that he spends multiple years at each location before switching. However, the evidence that the leaves the tavern when the weather is nice is evidence that he spends less than a month at the Tavern. Adding this in means that he spends about as much time traveling as being at the Tavern, and thus he's either at the Cave, or we need to add the probability of Traveling into our calculations.
+
+Now, if I misinterpreted the distance between the Cave and the Tavern, then it wouldn't take long to check both, and you might as well start with the Tavern so you can get a drink~
+:PROPERTIES:
+:Author: UnfortunatelyEvil
+:Score: 3
+:DateUnix: 1405365843.0
+:END:
+
+
+** "How many years does a plastic bag take to degrade?"
+
+"Hmm... I don't know, but I remember hearing that glass bottles take 4000 years, and plastic bags seem more flimsy so they'll take slightly less time. I'll guess between 100 and 1500 years, peaking at 400."
+
+... but at the flattest I can make my belief graph, it only spans 130 years.
+
+This seems like it should be fixable. Have you tried using logarithms?
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 4
+:DateUnix: 1405452609.0
+:END:
+
+
+** [[http://i.imgur.com/T9pl1w0.jpg][I think the belief graph system might need some work.]]
+
+A way to indicate that you haven't got any idea might also be nice, since you can't drag it all the way down.
+:PROPERTIES:
+:Author: Nyubis
+:Score: 3
+:DateUnix: 1405330781.0
+:END:
+
+
+** Is it just me, or does the Google Form read as if we are doing someone else's homework for them?
+:PROPERTIES:
+:Author: UnfortunatelyEvil
+:Score: 3
+:DateUnix: 1405365879.0
+:END:
+
+
+** I didn't like the test at the end. Too much math that felt more like it was out of a statistics text book than something aimed to improve my thinking.
+:PROPERTIES:
+:Author: CopperZirconium
+:Score: 3
+:DateUnix: 1405397583.0
+:END:
+
+
+** TIL that reincarnation has occurred. This changes everything I thought I knew about the universe. I'm notifying all the universities I can.
+:PROPERTIES:
+:Author: trucircle
+:Score: 3
+:DateUnix: 1405346188.0
+:END:
+
+*** Yeah, I'm pretty sure if there has been 14 reincarnations instead of 0 then I have to start adjusting some things I believe about reality.
+:PROPERTIES:
+:Author: RMcD94
+:Score: 4
+:DateUnix: 1405352219.0
+:END:
+
+
+** I recommend trying it just to use the belief graph widget, which struck me as a really nice visual tool. However, [[/u/Escapement]] is completely right that the questions are distractingly ambiguous.
+
+...Though, I can see a possibility where the questions are written intentionally poorly in order to teach you to adjust your guesses to handle multiple interpretations, but that seems too subtle since it wasn't mentioned in the intro text.
+:PROPERTIES:
+:Author: bouncingsoul
+:Score: 2
+:DateUnix: 1405278621.0
+:END:
+
+
+** "How fast can a horse run?"
+
+The claimed the answer was 30 mph - this is incorrect. Google says it is [[https://www.google.com/search?q=fastest+horse&ie=utf-8&oe=utf-8&aq=t&rls=org.mozilla:en-US:official&client=firefox-a&channel=nts][44 mph]]
+:PROPERTIES:
+:Author: Calsem
+:Score: 1
+:DateUnix: 1407732751.0
+:END:

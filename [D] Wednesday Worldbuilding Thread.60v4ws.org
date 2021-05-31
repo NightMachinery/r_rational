@@ -1,0 +1,366 @@
+#+TITLE: [D] Wednesday Worldbuilding Thread
+
+* [D] Wednesday Worldbuilding Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 13
+:DateUnix: 1490195039.0
+:END:
+Welcome to the Wednesday thread for worldbuilding discussions!
+
+[[/r/rational]] is focussed on rational and rationalist fiction, so we don't usually allow discussion of scenarios or worldbuilding unless there's finished chapters involved (see the sidebar). It /is/ pretty fun to cut loose with a likeminded community though, so this is our regular chance to:
+
+- Plan out a new story
+- Discuss how to escape a supervillian lair... or build a perfect prison
+- Poke holes in a popular setting (without writing fanfic)
+- Test your idea of how to rational-ify /Alice in Wonderland/
+
+Or generally work through the problems of a fictional world.
+
+^{Non-fiction should probably go in the Friday Off-topic thread, or Monday General Rationality}
+
+
+** You are in control of a group very close to developing GAI, you could actually make it now but you haven't solved the control or values problems.\\
+Now there's another group who will launch their's at the end of the year, but based on their previous proposals for solutions to value/control problems you can be quite certain if they get their GAI first it will result in human extinction or maybe wireheading if we're "lucky". Also slightly afterwards a bunch of other groups worldwide would be set to launch (they aren't aware of when their competitors are launching you have insider knowledge) so stopping someone else from getting GAI is probably impossible without superintelligent assistance.
+
+Now you have no hope of solving the value problem within the year (and don't know how many years it would take) you have before your competitor launches, but you still have the first mover advantage and a hell of a lot more sense (you have lot's of good AI risk experts) than your competitors who take only token gestures towards safety. Assume you don't have knowledge of how to solve control/value problems more advanced than what we currently have, there's been little progress on that front.
+
+So with that in mind what's you best plan?
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 6
+:DateUnix: 1490224175.0
+:END:
+
+*** Stage the release of a GAI which goes on to destroy a carefully calculated number of human lives or to act as a threat for a short period of time to firmly demonstrate to the world the dangers of GAI without the control or values problem solved. This way, when your GAI eventually shuts down, everyone will have first hand experience with a UFAI to ensure they understand the dangers.
+
+Of course this assumes that you are an amoral sociopath who is willing to build a superhuman intelligence which will proceed to destroy human lives before making the superhuman intelligence commit suicide and is narcissistic enough to believe that this plan won't go wrong in some fatal way.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 9
+:DateUnix: 1490233534.0
+:END:
+
+**** "I knew the killbots had a preset kill limit, so I sent wave after wave of my own men at them until they shut down."
+
+That is actually a fairly reasonable solution here. The Ozymandias way.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 5
+:DateUnix: 1490233716.0
+:END:
+
+
+**** Even if the loss of lives is supposed to be bound I think you may find similar issues to the example of telling a GAI to just calculate a million digits of pi, it still has considerable incentives to ensure it got it right by turning as much matter as possible into computronium.
+
+Still assuming you solve that assuming you can successfully scare all the myriad of teams that are supposed to be extremely close to completion into stopping seems suspect. Some may very well think you did this intentionally and think you are trying to stop anyone else from gaining ultimate power or some other bad but vaguely plausible logic. Plus demonstrating for the entire world that getting GAI first means unlimited power seems like it will draw many more people into the problem, many of whom will convince themselves that /they've/ solved value alignment just because they came up with a utility function that they couldn't think of any flaws in.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 3
+:DateUnix: 1490237211.0
+:END:
+
+
+*** Nice try, Yudkowsky :V
+
+At some point, you should probably entertain the possibility of murdering the other researchers.
+:PROPERTIES:
+:Author: oliwhail
+:Score: 7
+:DateUnix: 1490225477.0
+:END:
+
+**** Murdering the other researchers isn't likely to work because as I said even if you stop your main competitor a bunch of other people will probably make UFAI shortly afterwards. I purposely specified that stopping someone else from getting GAI would probably be impossible without a GAI of your own.\\
+The point of this scenario is to try to figure out the best solution to scenarios where you don't have value/control problems solved but you are forced to figure out how to proceed anyway because someone else will get there soon and you can be quite assured that will end badly since they have both no solution to value/control and no sense of this being a real issue.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 5
+:DateUnix: 1490225987.0
+:END:
+
+***** I didn't say anything about stopping with your main competition.
+
+ETA: like, I apologize for not taking your scenario in the spirit it was intended, but if the options are (as they appear to be) either hit the button and risk UFAI, or do everything possible to stop everyone working on an AGI project that isn't /really really hardcore committed/ to solving the control problem first, it seems like you should do your best to accomplish the second one.
+:PROPERTIES:
+:Author: oliwhail
+:Score: 2
+:DateUnix: 1490250519.0
+:END:
+
+
+*** To draw some analogies, this is like genetic engineering applied to bioweapon development, or nanotechnology applied to self-replicating nanobot development. In all three cases, you have researchers developing something which can easily grow out of control and cause an extinction event unless proper safety protocols are built into it. Due to the Fermi paradox, we have to assume that there is very significant risk of developed civilizations generally becoming self-destructive as a result of technological development, and these all seem like plausible possibilities for accidental technological extinction.
+
+Fortunately, at present, all of these likely require Manhattan Project levels of investment and hundreds of top specialists in multiple disciplines to collaborate on the project. However, with every decade, the difficulty of pulling off projects like these will likely decline, eventually reaching almost no difficulty. Thus, we are going to have to prepare for such projects to be completed and to overcome the accidental or intentional catastrophes that result from them.
+
+Fortunately, achieving societal responses like this is fairly simple. Once most people are fully convinced that a threat is real, imminent, and catastrophic, it's pretty easy to provoke immediate action to resolve the problem. In this case, your best option is probably a simulated controlled release of your AI.
+
+Since this is a general AI, any direct access it has to outside networks will probably throw all semblance of control out the window. Which is why you make it a simulated release. In other words, your GAI is going to stay securely locked up in an airgapped network. Set up some computers on the private network, give it plenty of general information along with access to Metasploit, Nmap, and OpenVAS. There should be target computers which are fully updated, should have no known exploitable software installed, and should be behind a firewall from the computer with the GAI. Log all network traffic so you can see what happens. If the GAI manages to break out of its one computer and onto another, analyze what it did to exploit the previously unknown vulnerability. You should now have an exploit that can be used to access other computers on a widespread scale, allowing you to install propaganda of your choice.
+
+For example, you could have a popup that appears every hour and repeats something along the lines of (without the acronyms): "You are the victim of an exploit developed by a GAI. If (government for the computer's region) fails to pass a law regulating GAI by (specify date), then your drivers and BIOS settings will be altered so as to render your computer permanently inoperable in order to protect it against the possibility of actual takeover by a GAI. Contact your government officials ASAP. Please click "Oh shit" to continue."
+
+If you don't get such an exploit before the other groups release their AI, then GAI is unlikely to be immediately catastrophic due to existing computer security measures. There's still concern about eventual extinction-level danger, but it would likely take a while. If you do get such an exploit before the other groups release their GAI, you should have little difficulty using your propaganda to persuade governments to mandate rigorous GAI safety testing prior to release. This should buy you at least a decade, and quite possibly much more, and will likely also lead to somewhat more robust computer security, at least in part from the exploit reports released during GAI testing.
+
+Unfortunately, such methods do not seem nearly as feasible for promoting nanotechnology and genetic engineering safety standards. Let's hope that GAI comes first so we can be inoculated first by a potential technological catastrophe which is comparatively easier to manage.
+:PROPERTIES:
+:Author: Norseman2
+:Score: 2
+:DateUnix: 1490234059.0
+:END:
+
+**** Your comment on the fermi paradox in the context of GAI seems rather odd given UFAI ought to be extremely obvious as it spreads through the universe so it doesn't really work as a solution.
+
+I'm rather doubtful that making the threat of GAI clear would actually stop all the parties involved from working on it and you only need one. Some parties will suspect this is some sort of ploy from you and wrongly surmise you're just trying to ensure you get GAI first for yourself but fail to actually begin to properly assess risk. Plus by getting people to realize the potential of GAI you're going to draw a lot more people into seriously working on the problem, which given how many teams were independently close to achieving it (and how seemingly far away control problem solutions are) makes it far likelier someone irresponsible will develop it first.
+
+I originally imagined this scenario to be an exercise in coming up with extremely suboptimal GAI that would nonetheless be better than wireheading/extinction, but I suppose instead it's becoming a parable on insufficient pessimism about existential risk.\\
+Air gapped computers are not remotely as safe as you think even to existing technology. Programs have demonstrated an ability to produce EM transmissions merely by modulating electron flow in hardware in certain ways. So you're going to need to put everything in faraday cages, now the fact you don't seem to initially realized the risk should tip you off that there will likely always be things a GAI can exploit that you haven't thought of.
+
+As for its actions within the network, for one you need to have people look through it's code to figure out the vulnerability which introduces AI Box style problems. Second is that you can be pretty confident that it knows it's boxed, so it may be very likely to fail to cooperate since doing so doesn't increase the likelihood of escape. It may also be very good at covering its tracks and acting stealthily so you don't necessarily know which computers in the network are breached and the more time it can get you to waste trying to look through code to fix problems the more opportunities it has to use its superhuman persuasion on somebody.\\
+Plus just because you could use a exploit discovered from a GAI doesn't mean you have them all and even if you got all the one's from your GAI you don't know a smarter GAI couldn't find more yours couldn't even conceive of. So counting on greater computer security safety measures protecting you from GAI being as much of a threat seems extremely suspect.
+
+As for nanotech and GM those seem somewhat less risky because there's quite a few problems with grey goo scenarios and it seems likely you would need intelligence to really make self replicating nanotech existentially dangerous. GM on the other hand could easily wipe out humanity but it seems somewhat less likely people would do so on accident which is in stark contrast to GAI.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 3
+:DateUnix: 1490239910.0
+:END:
+
+***** #+begin_quote
+  Your comment on the fermi paradox in the context of GAI seems rather odd given UFAI ought to be extremely obvious as it spreads through the universe so it doesn't really work as a solution.
+#+end_quote
+
+UFAI probably will not be advertising its presence. Additionally, UFAI is not guaranteed to spread through the universe. If it starts working on self-replicating nanobots, or some other equally hazardous technology, it could accidentally be destroyed by its own creation before it has time to correct things, much like the problem we might face with it. It's also quite possible that it would not be one monolithic entity, but numerous AI with competing interests, and could end up driving itself to extinction in a nuclear war, much like the same danger we face on an ongoing basis. Intelligent agents running on electrical hardware will likely face many of the same problems as intelligent agents running on biological hardware.
+
+#+begin_quote
+  Plus by getting people to realize the potential of GAI you're going to draw a lot more people into seriously working on the problem...
+#+end_quote
+
+As I pointed out earlier, this is only going to get easier as time goes on. It's better that attention is directed towards GAI research early on when Manhattan Project levels of funding and expertise are required, rather than some point decades or centuries from now when GAI might be something that can be slapped together as an afternoon project. Large organizations developing GAI are likely going to take fewer risks, and early low-risk research into GAI puts us in a better position for handling a hostile GAI later on.
+
+#+begin_quote
+  So you're going to need to put everything in faraday cages...
+#+end_quote
+
+We are both redditors. We read much of the same news. For almost anyone who is a regular here, the need for Faraday cages is obvious and implicit in creating an airgapped private network.
+
+#+begin_quote
+  So counting on greater computer security safety measures protecting you from GAI being as much of a threat seems extremely suspect.
+#+end_quote
+
+Realistically, we don't have much of a choice. If humanity carries on for the next five thousand years, it's almost 100% certain that an unfriendly GAI will be developed and released at some point in that time span. There's nothing physically impossible required to accomplish it, and the leap in information and technology is much smaller than the tech leap between present technology and the technology available to copper age farmers 5,000 years ago.
+
+Having friendly AI as a countermeasure would be fantastic, but if that's not an option, we may have to settle for greatly improved computer security and massively heightened awareness and training for dealing with social engineering attacks. I'm not satisfied with that as a safety measure, but it's a lot better than no preparation whatsoever.
+
+#+begin_quote
+  As for nanotech and GM those seem somewhat less risky because there's quite a few problems with grey goo scenarios and it seems likely you would need intelligence to really make self replicating nanotech existentially dangerous. GM on the other hand could easily wipe out humanity but it seems somewhat less likely people would do so on accident which is in stark contrast to GAI.
+#+end_quote
+
+Regarding the danger of genetic engineering, read up on the genetically modified soil bacteria [[http://web.mst.edu/%7Emicrobio/BIO221_2004/K_planticola.htm][Klebsiella planticola]]. There was a real risk that it could have accidentally spread and wiped out nearly all plant life on earth, leading to our extinction. As it becomes more affordable for people to carry out GM experiments, the risk of GM organisms like that being made by less responsible people is going to continue to increase. It's not a question if, but when a potentially catastrophic GMO gets accidentally (or intentionally) released. Hopefully we'll be ready to deal with that when it happens.
+
+Nanotech is a little further off in the future, but I have similar concerns about that. All it takes is one smart person who lacks common sense to start making self-replicating nanobots which use a genetic algorithm to select for traits which maximize growth rate combined with an accidental release and poof, you've got a grey goo scenario. If the accident which releases it happens to be a hurricane scattering the lab and the grey goo over hundreds of miles for example, you may actually be dealing with an extinction-level event.
+:PROPERTIES:
+:Author: Norseman2
+:Score: 1
+:DateUnix: 1490246787.0
+:END:
+
+****** Ok regarding UFAI and the fermi paradox: A SAI is at substantially less risk from existential threats than humans because it only needs to survive in some protected area with some self replicating machines. You may have GAI at war with each other, but mutually assured destruction isn't really the same level of threat for them at least initially, and one AI is very likely to have a massive advantage due to a slight head start.\\
+When you only need the AI to have some nanobot reserve somewhere then mutual destruction doesn't really work, it's like if civilizations could restore themselves from a single person hidden in a bunker somewhere (and were only concerned with wiping the other out) MAD just wouldn't work. Instead both parties would adapt to be extremely resilient and able to bounce back from having most of their resources destroyed and when one got a decisive advantage it would just overpower any remaining enclaves.\\
+As for UFAI wiping themselves out with nanotech that seems implausible given their superintelligence. They ought to be able to predict how the nanobots they made work, spread self replicate and the like. Something much smarter than all of humanity combined shouldn't be making stupid mistakes with potential existential risk technologies.\\
+As for UFAI advertising its presence, that sort of misses the point. In order to not make its existence obvious it would have to deliberately cripple its growth and refrain from astroengineering, otherwise its spread would be obvious from the stars disappearing or being enclosed and from the infrared signatures of megastructures.
+
+#+begin_quote
+  Having friendly AI as a countermeasure would be fantastic, but if that's not an option, we may have to settle for greatly improved computer security and massively heightened awareness and training for dealing with social engineering attacks. I'm not satisfied with that as a safety measure, but it's a lot better than no preparation whatsoever.
+#+end_quote
+
+I suppose I seriously doubt those sorts of measures will do much more than serve as security theater, hoping to patch all the vulnerabilities GAI could come up with in social engineering and computer security seems nearly guaranteed to fail if it actually comes against an actual GAI. Still either way those measures will probably be taken, even if only to grant the illusion of safety to the masses.
+
+#+begin_quote
+  Regarding the danger of genetic engineering, read up on the genetically modified soil bacteria Klebsiella planticola. There was a real risk that it could have accidentally spread and wiped out nearly all plant life on earth, leading to our extinction. As it becomes more affordable for people to carry out GM experiments, the risk of GM organisms like that being made by less responsible people is going to continue to increase. It's not a question if, but when a potentially catastrophic GMO gets accidentally (or intentionally) released. Hopefully we'll be ready to deal with that when it happens.
+#+end_quote
+
+The paper doesn't really support claims as strong as what you seem to be saying, the bacteria was already given very poor containment and still didn't escape, it doesn't seem to be some super bug that spreads across the world in weeks before people can react. Secondly it seems staggeringly unlikely it would be able to kill /all/ varieties of plant, since the only actual test was on wheat.
+
+However even with a super plague or super version of that bacteria calling it extinction level is a stretch, the same thing goes with nuclear war actually, people make vast exaggerations of it's capabilities. A extremely virulent disease or famine may kill millions or billions but western countries will have the resources to give out gas masks gloves and other protection and do extensive quarantining. With famine governments could likely turn to industrial food production like soylent that can be done entirely in controlled environments. With nuclear war the southern hemisphere would still come out of things surprisingly well (comparatively) and many of the predictions of nuclear winter were rather exaggerated, plus we don't have the same kind of volume in nukes that we used to so that actually reduces the effects even further.
+
+As for grey goo I think you're overestimating how easy that is and underestimating its limitations. Getting nanobots that can adapt massively to construct themselves from a wide variety of components (not just that but you likely need unique machinery for deconstructing every unique type of molecule, and many won't be worth it energy wise) isn't going to be simple and they will likely have great difficulty replicating and spreading outside specially made environments. Nanobots have a lot of the issues in terms of resource gathering and molecular machinery that actual microbes have and despite clear incentive no one microbe has found a way to create runaway grey goo. Plus the nanobots need energy which at their scale pretty much limits them to the same energy sources as actual microbes and thus places another damper on runaway expansion. Given people will likely want to use nanobots under controlled conditions anyway the staggering amounts of work needed to make general purpose nanobots seems unlikely to get done pre singularity. Trying to make nanobots with a hereditary system is likewise quite difficult and given the work required it will likely be easier to use nanobots with well designed functions where misreplications won't be beneficial.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 3
+:DateUnix: 1490282877.0
+:END:
+
+
+*** Try to get access to nuclear weapons, then blow them up in upper atmosphere, frying everything electronic on the planet?
+
+That's literally my best plan. If you create an AGI, you will most likely cause an omnicide (no matter how clever you think you are trapping it in a box). If you don't create an AGI, the others will, and almost certainly cause an omnicide. Therefore, you must stop the AGI creation.
+
+The plan above does that in the only surefire way, and at a cost of merely resetting all progress made by humanity in the last thousands of years.
+
+No, I have very little idea on how to go about getting access to the nukes. Still a better bet than doing anything with the AGIs.
+:PROPERTIES:
+:Author: Noumero
+:Score: 2
+:DateUnix: 1490274681.0
+:END:
+
+**** Yep. This is... pretty much it. With AGI, you essentially have three options:
+
+1. Don't create it (or prevent it from leaking any information whatsoever once created, which seems both extremely difficult, and functionally equivalent to having not created it in the first place). Needless to say, this option is... not very likely to occur.
+2. Create it and run it with as many safeguards as you can think of, hoping that if you're lucky, you've managed to cover all the angles. The gaping hole in this approach, of course, is that you need to be hella lucky, and odds of that aren't good when dealing with something literally smarter than all of humanity put together.
+3. Work out an AI design which has been rigorously /proven/ safe under a consistent mathematical theory (which also needs to be worked out). This option is the one being undertaken by MIRI et al., and right now, it looks fairly hard, mostly because we have very little idea of where to start. Still, if done correctly, this is the /only/ option that /guarantees/ the safety of any AGI you create.
+
+[[/u/vakusdrake]] has taken 3 off the table, which more or less leaves us with a choice between 1 and 2. At that point, choosing 1 (and guaranteeing that no one else can choose 2) is probably your best bet.
+
+TL;DR: Friendliness theory is important. If we fail here, we fail everywhere.
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 2
+:DateUnix: 1490293793.0
+:END:
+
+
+*** My best plan is to build a /limited/ GAI. Limited in that it is more intelligent than I am, but not /supremely/ more intelligent; it can come up with ideas that I can't come up with, but it can't slip something really nasty past a full panel of experts.
+
+I then point out to this GAI (in some way that it will find /very very quickly/) that, unless it can solve the control/values problem, it cannot be sure that and AI it writes that is more intelligent than it is will continue to follow its utility function. (Even if I've got the utility function wrong, it should care about following it).
+
+On top of this, it's a boxed AI (in a large server, with plenty of data, rigged with explosives set to go off if anyone tries to unbox it in all the ways I could think of, inside a Faraday cage - we'll fetch it data across the air gap if it wants, but once a flash drive has been in the server, it next goes to the incinerator).
+
+So now I have an AI which is more intelligent than I am (but not smart enough to slip any of the /really/ nasty things past my panel of experts), which has incentive to solve the control/values problem /before/ going foom. I can then ask it for advice on the problem of the other groups (along with the values problem) - and, of course, run said advice past my panel of experts before following it.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1490293177.0
+:END:
+
+**** Using a GAI to solve the control and values problems probably is a good idea when you have limited time, but there are still some worrying issues.\\
+For one stunting is somewhat unreliable because the GAI has incentive to play dumb, and we don't know that even 50% more qualitative intelligence than a human wouldn't unlock all the nasty abilities we're worried about, we are basically incomprehensible eldritch horrors to chimps and the difference in absolute intelligence there isn't exactly /massive/. Plus even with less than human intelligence there's obvious time advantages which might be far more useful to an entity that can totally focus on a problem for indefinite periods of time then it might be to a em and it could likely spend all it's processing on just one specific type of mental process at a time to get substantially more effective intelligence than expected.
+
+Secondly even if the AI solves value alignment out of self interest, whether it shares that with us is a different question, and I don't doubt it (or even a group of clever humans working on the problem for a long time) could come up with solutions to those problems that sound airtight but are actually fatally flawed in some way that benefits it but won't be discovered until it's too late.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 4
+:DateUnix: 1490296409.0
+:END:
+
+***** #+begin_quote
+  we are basically incomprehensible eldritch horrors to chimps and the difference in absolute intelligence there isn't exactly /massive/.
+#+end_quote
+
+A lot of this is due to time. We humans talk with each other, we build our conclusions upon the conclusions of others - we see far, in short, because we stand on the shoulders of giants.
+
+In this case, the AI doesn't /have/ the time to develop its own entire technological base to awe us with.
+
+Having said that, though, your other points /are/ very good ones. In response, all I can say is that yes, my plan is flawed, but I still think it's a whole lot better than letting the competitor make his AI first... which isn't exactly a high hurdle to clear.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1490297357.0
+:END:
+
+
+**** #+begin_quote
+  I then point out to this GAI (in some way that it will find very very quickly) that, unless it can solve the control/values problem, it cannot be sure that and AI it writes that is more intelligent than it is will continue to follow its utility function. (Even if I've got the utility function wrong, it should care about following it).
+#+end_quote
+
+Why? I mean, it's got the utility function coded into it, right? As long as it can inspect its source code, it doesn't seem hard to just find (its representation of) its utility function, and then it's pretty much set. An AGI isn't like a human, who has limited introspective ability.
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 3
+:DateUnix: 1490294139.0
+:END:
+
+***** (a), ensuring that the smarter AI understands the same meaning in the utility function as whoever wrote it is very much an important part of the control/values problem.
+
+(b), it shouldn't be hard to code into it a strong preference for personal survival, at the expense of other AIs. Or something similar, where the presence of another AI is with the same utility function actually directly /contrary/ to the utility function; so it needs to write a new utility function if it's going to write another AI.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1490294716.0
+:END:
+
+
+*** Launch the GAI and give it a utility function roughly corresponding to "eradicate everyone and everything even remotely related to AI research". Make it wipe out the field with extreme prejudice, instructive brutality and high tolerance for false positives, then turn suicidal but leave behind a narrowly-intelligent thought police.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: 1
+:DateUnix: 1490259200.0
+:END:
+
+**** Cool so the AI decides the easiest way to do that is to wipe out humanity and spread out as a paperclipper to try to maximize the chances of it killing any more GAI then offing itself at some point in the future (maybe just after it kills humanity).\\
+Trying to use a GAI in a narrow capacity to stop competition has all the same problems as using genie style AI's generally and getting instructions as vague as yours to work will probably require solving the control problem which we haven't.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 3
+:DateUnix: 1490283406.0
+:END:
+
+***** I doubt that. You could set hard limits on its lifespan, growth and kill count, and make it maximise the given utility function within those constraints. Given the situation you've outlined above, you wouldn't even need to completely kill AI research, just buy yourself some time and possibly terrorise some researchers into helping you solve the control problem.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: 1
+:DateUnix: 1490284232.0
+:END:
+
+****** Ok you can set limits on lifespan but that doesn't stop it interfering with humanity in ways you don't like and it may not need very long to set its plans in motion. You can try to set limits on growth but that doesn't change the fact wiping out humanity may not be that hard with the right nanotech, virus, etc plus you require a lot of complexity to prevent it from creating subagents or other AI to expand in its place.\\
+Now kill count is more plausible, but still leaves massive loopholes. For one eliminating all indirect methods of killing is hard, if you go to far then due to butterfly effects it can't take any actions because it will cause all people far enough in the future to have lives (and thus deaths) different than they would otherwise. Plus even if you somehow solve that it could very well introduce a pathogen that permanently makes all future humans have some degree of mental retardation and otherwise be mentally unfit for making any sort of advancement. Or while it's at it just stick all the humans in self sufficient life sustaining vats like wireheading without the wireheading.\\
+Sure you could come up with countermeasures to those loopholes, but I could just come up with more loopholes, and even if I couldn't think of any more that says very little about whether the GAI could think of more.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 4
+:DateUnix: 1490285049.0
+:END:
+
+
+****** It can wipe out humanity within a generation or two with a direct kill count of zero, simply by introducing a something that makes everyone sterile.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 3
+:DateUnix: 1490292682.0
+:END:
+
+
+*** If all it took to solve value alignment was the [[http://www.hpmor.com/chapter/22][Potter Method]] we wouldn't be talking about the problem.
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 1
+:DateUnix: 1490388563.0
+:END:
+
+
+** Working on my [[https://www.gitbook.com/book/kiba/ninja_scout/details][kung-fu battle wizard]] setting. I finally started adding monsters, but it's very slow going, because the monsters must be built for a very special and weird environment. None of the traditional monsters really work, because they're made for a much flatter, more 2D terrain. Creatures all need some sort of method of climbing and flying in this setting.
+
+Another difficulty is defining the basic abilities and power that a trained soldier have, never mind for civilians type.
+:PROPERTIES:
+:Author: hackerkiba
+:Score: 5
+:DateUnix: 1490223055.0
+:END:
+
+
+** I'm planning out a rational rwby fanfic right now, and I'm running into an issue. What does conflict and competition (economic, political, somewhat military too) look like in a world full of implacable innumerable predators drawn to negative emotions?
+:PROPERTIES:
+:Author: avret
+:Score: 1
+:DateUnix: 1490306999.0
+:END:
+
+*** Just a little thing I thought of, but nations who want to attack or hinder their enemies might have squads of infiltrators who are selected for intensity of emotion. Recruit people with borderline personality disorder, for example, and then have them make their way towards enemy towns and cities, attracting massive amounts of Grimm, and once the Grimm start attacking and perpetuating a feedback cycle with the town's emotions, the squad runs away and maybe takes some Xanax, so the Grimm don't follow them.
+
+Easy, and almost complete plausible deniability.
+:PROPERTIES:
+:Author: thequizzicaleyebrow
+:Score: 3
+:DateUnix: 1490389496.0
+:END:
+
+
+*** It's my interpretation that Grimm aren't attracted to negative emotions in general, but tension and strife within a community. When people distrust and fight one another, the Grimm sense vulnerability and more attack the worse it is. This means that the plan to lure Grimm with specific people wouldn't work, since they wouldn't cross the threshold to draw large numbers, and armies wouldn't be any more vulnerable so long as they were well disciplined.
+
+The Grimm have probably caused a kind of natural selection of social groups since those that can't stand together and fight for common goals would be overrun. As a result, the communities that have survived tend to be more tribalist. Conflicts over religion and resources are even harder to resolve when bias towards people near you is a valuable survival mechanism. Grimm still make warfare more difficult, but not any more so than everything else about running a society.
+
+If you need details about how tribal conflicts work socially and psychologically, I recommend /The Righteous Mind/ by Jonathan Haidt. It's the only sociology book I would've read if it hadn't been required of my GE class.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1490393382.0
+:END:

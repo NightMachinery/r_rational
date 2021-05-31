@@ -1,0 +1,354 @@
+#+TITLE: [D] Wednesday Worldbuilding Thread
+
+* [D] Wednesday Worldbuilding Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 7
+:DateUnix: 1518016020.0
+:END:
+Welcome to the Wednesday thread for worldbuilding discussions!
+
+[[/r/rational]] is focussed on rational and rationalist fiction, so we don't usually allow discussion of scenarios or worldbuilding unless there's finished chapters involved (see the sidebar). It /is/ pretty fun to cut loose with a likeminded community though, so this is our regular chance to:
+
+- Plan out a new story
+- Discuss how to escape a supervillian lair... or build a perfect prison
+- Poke holes in a popular setting (without writing fanfic)
+- Test your idea of how to rational-ify /Alice in Wonderland/
+
+Or generally work through the problems of a fictional world.
+
+^{Non-fiction should probably go in the Friday Off-topic thread, or Monday General Rationality}
+
+
+** I've started cobbling together a new setting, mostly as stress relief from a different thing I've been writing. I did the slightly unwise thing of writing something that wasn't very story-like first, and then trying to work out the rules that would enable it.
+
+The setting is a battle school that favors one-on-one melee battles between students, with the occasional team battle or special match thrown in for flavor. To that end, I want:
+
+- No permanent death/injury on the arena floor (but available elsewhere)
+- A magical combat system that produces a healthy metagame
+- Unique weapons and armor
+- Meditations on class, privilege, and politics
+
+I'll probably be posting to these threads over the next few weeks, so that I can try to flesh this out more; this is intended to be a side project, not a deep, no-holds-barred sprint of work.
+
+Further, I'll be taking some of [[/u/ultraredspectrum]]'s thoughts on how battles, summarized from conversation on Discord:
+
+- The "rules" of the fight must be known to the reader, not in the sense of what rules they're operating under, but in the sense of "player A wins if he can stall" or "player B wins with his big finisher or not at all" or "player C loses if his opponent figures out his trick".
+- Each fight should be different from the last in some way, because repeated fights with the same opponents, circumstances, and strategies are uninteresting.
+- Each character is linked in some way to their strategy/power, so that each fight is about characters in some way, rather than merely being a fight.
+
+The "healthy metagame" aspect is probably the hardest thing, which means that it should come first; it's not at all hard to make rules that people would be forced to fight by, but it /is/ hard to make rules that create a chaotic and shifting set of strategies used by individual actors with no stable equilibrium.
+
+Rock-Paper-Scissors is probably one of the easiest unstable equilibria, so that's where my mind first went. A simple, melee-combat oriented example would be that speed beats power, power beats defense, and defense beats speed, which would be trivial to create a magic system for, but also only results in three possible matchups. Something like Rock-Paper-Scissors-Lizard-Spock offers more matchups, but I find that (and variants) a little lacking.
+
+What I'm toying with right now is the idea of having two RPS cycles that can work for or against each other. Each person would have two attributes, picked from two different pools, and each matchup would be dictated by the major and minor cycle. For example, if Power>Defense>Speed>Power, and Plant>Earth>Fire>Plant, then you could have nine different different configurations (PowerPlant, EarthSpeed, etc.) and 45 different matchups, which would break down in different ways:
+
+- Synced cycles are curbstomps: because it's a win on both the major and minor cycle, victory is almost trivial (e.g. PowerPlant >> DefenseEarth).
+- Half cycles favor one participant, more if it's a major cycle, less if it's a minor one (e.g. PowerPlant > DefensePlant, PowerPlant >= PowerEarth).
+- Counter cycles are essentially toss-ups, determined by skill or gear, rather than the selection (e.g. PowerPlant = DefenseFire).
+
+This needs fleshing out, since the PDS/PEF cycles are placeholders, but I think the bones might be solid enough to build off of, especially since each character can have their own techniques within each configuration, their own personal preferences, possibly some unique abilities, and some complexity with weapons and armor. What's needed most in terms of fleshing out is determining how/when people can change their configuration, ideally in such a way that allows for some mindgames and game theory within the structure of the battle school.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1518030870.0
+:END:
+
+*** #+begin_quote
+  Rock-Paper-Scissors is probably one of the easiest unstable equilibria, so that's where my mind first went
+#+end_quote
+
+Mhh... One thing I got from watching extra credits is that rock-paper-scissors metagames are more interesting when they're unbalanced. At least, this feels more interesting to me.
+
+Like, for instance, maybe Fire is clearly the most powerful of all elements, on average, by a wide margin. Water and Shadow beat Fire, but Fire beats everything else by a wider margin than every other elements. That means that the distribution of powers is asymmetric. Instead of being sorted roughly equally in the different categories, most beginners choose Fire, because it's the comfortable choice, most people with a little experience choose Water because it beats Fire, etc. At a higher level, people maybe start choosing some combination of elements or switching elements at random between fight so they can't be out-predicted.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 4
+:DateUnix: 1518092310.0
+:END:
+
+
+*** What if participants are able to build their configuration during the fight? An opening move might be to attune a particular attribute and begin gaining abilities associated with it?
+
+So, someone might start off by attuning Power, while his opponent foregoes any attunement in favor of a martial opener, ending the fight immediately. Alternatively, someone attuning Defense would be able to immediately deflect a martial strike, thereby gaining the upper hand.
+
+Perhaps experience could determine how fast someone can attune a particular school. So at a higher competitive level, fighters can attune so fast that a martial strike would be effectively useless, no matter what attunement was chosen. Furthermore, people might be more familiar with certain attunements and powers that using other attunements, even if better from a metagame perspective, would be inferior to their preferred strategies.
+
+And don't forget about combo victories. Like if someone is using some kind of acceleration ability, and starts stacking the ability to gain unlimited time. (For that particular scenario, perhaps the downside is that if their time is doubled, their senses are halved, so they'll also need a way to improve their senses; abilities that mess with their senses might be particularly effectively against them, essentially stopping the combo from working.)
+
+--------------
+
+Maybe the abilities used in their competitions are unique to the arena? A 'natural' phenomenon, so to speak. This would allow people to use outrageous powers while explaining why they aren't used all the time in world-breaking ways. Perhaps participants have to fight over who gets which abilities as they spawn from the arena.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 3
+:DateUnix: 1518065301.0
+:END:
+
+
+*** The best execution of safe sparring I've seen is when the characters have an additional “heath bar” that absorbs damage to prevent injuries. RWBY has auras that do this, where matches end when it's depleted, but mecha and mons shows follow the same principle by giving something else for combatants to hit than each other.
+
+The simplest way to include class and politics is to tie the characters' wealth and background into the combat. Even something as simple as them having to buy school supplies would create a divide among them. Politics comes into play when characters have conflicting beliefs and goals. Privilege, in my experience, is about biases instilled by upbringing.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1518035497.0
+:END:
+
+**** In this case I was thinking that perhaps the arenas would simply be places where someone on the outside could reverse the flow of time once the battle was complete, which allows for full lethality and gruesome injuries. I'd want people to (magically?) keep their memories of the fights, but that's not a huge problem if you already have magical fighting.
+
+Of course, the existence of such an arena would imply a lot of other things about the world, given how such magic could be used (even with restrictions), all of which would need thinking about, but some interesting worldbuilding might come out of the concept.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1518053520.0
+:END:
+
+***** Well, I'm the kind of person who thinks if you're willing to go that /out there/ that you might as well go all the way and make it a trippy surrealist fantasy where the battles have utterly bizarre stakes and rules to exploit.
+
+Go listen to the first episode of One Shot's [[https://youtu.be/II8MpLIEh20][Invisible Sun]] campaign if you want some inspiration for building a setting like that. It's like Welcome to Night Vale meets Harry Potter, and is surprisingly rational.
+:PROPERTIES:
+:Author: trekie140
+:Score: 2
+:DateUnix: 1518064619.0
+:END:
+
+
+***** Ooooh. So, a sealed and prepared area can have a Save Point but everyone remembers what happened in there?
+
+Opportunities for shenanigans abound!
+
+- Have a secret meeting with an ally instead of a fight, and no-one else knows because the Save Point was not observed while in use
+- A villain can sabotage the Save Point so it looks like it works just when the Hero and the Honor-Before-Reason fighter go for a death match in the arena (at least /one/ of them will die, right?)
+- Non-Arena areas can be prepared with Save Point technology for a variety of reasons, up to and including torture. This is hardly ever advertised.
+- A single person with a Save Point and a good memory can do weeks of planning in an apparent few hours. (This is probably restricted to teachers or the principal, who can use their offices as a Save Point).
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1518081495.0
+:END:
+
+
+*** #+begin_quote
+  Plant>Earth>Fire>Plant
+#+end_quote
+
+Hmmmm.
+
+You are probably going to want a major villain who's near undefeatable. Given the above cycle, then, it might be worthwhile taking inspiration from [[http://www.fynboshub.co.za/fynbos-and-fire/][fynbos]] - a type of plant that actually /requires/ regular fires to maintain a healthy ecosystem. (Yes, it kills the parent plants - of some varieties (some have massively insulated stems and just lose their outer branches) - but the heat makes the seeds germinate and the entire area has just received a healthy fertilising coating of ash, so a short while later the only plants in the area are fynbos).
+
+So then you have an antagonist who can nearly always win on the minor cycle (but can still be beaten on the major cycle by the right opponent). This also implies that plant-second-cyclers can perhaps take minor traits from different types of plants known to them (poison and leaching strength from Earth opponents are probably the major ones there).
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1518081172.0
+:END:
+
+
+*** Some stuff that stands out to me immediately, is trying to make at least some of the configurations non-trivially different from another. Making it so that, the different 'elements' do different things, and it is through that difference in functional ability that the cycles arise. The flavor to something like Power>Speed>Defense or Earth>Plant>Fire already imply something like this, along the lines of "Speed allows you dodge Powerful attacks, Defense allows you to weather fast attacks, Power lets you crack open Defenses" or "Plants' roots break up the earth, fire burns away plants, earth smothers fire" but there is possibly further depths to be explored.
+:PROPERTIES:
+:Author: Aabcehmu112358
+:Score: 1
+:DateUnix: 1518086922.0
+:END:
+
+
+** I'm planning out my first ever quest on Sufficient Velocity and I need help looking for similar works +to plagiarize ideas from+ for some inspiration.
+
+The idea of the quest is that the protagonist is stuck in a reoccurring lucid nightmare and he needs to escape within an unknown time limit. The quest is meant to have the players discover the rules of an bizarre new world where the rules of physics and logic may not necessarily apply.
+
+I'm basically requesting any recommendations that involve a dream world to get some ideas for writing the scenery or modifying the dream logic/rules.
+
+Something else that may also help me are stories that involve exploring a maze/labyrinth since the nightmare is set in a maze-like abandoned city.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 2
+:DateUnix: 1518026111.0
+:END:
+
+*** - Anything can appear in any out-of-direct-sight location.
+- Things tend to appear when the protagonist thinks of them - this especially includes terrifying monsters from the depths of his own psyche.
+- Nothing (including the protagonist) can be permanently destroyed or escaped from. However, clothing will vanish at the most embarrassing moment possible.
+- Running doesn't help.
+- Playing dead /does/ help, but the monster never exactly goes away and will attack instantly the instant you stop playing dead.
+- If it's out of sight, then it's /right behind you/.
+- /It's going to get you./
+- You are already too late.
+
+--------------
+
+Those rules seem pretty nightmare-logic to me.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1518080582.0
+:END:
+
+**** Heh, thanks for the ideas. I'm including some monsters, but I want the quest to be about exploration, so the nightmare is about time running out rather than monsters. The protagonist has to escape from a suburban maze before an explosions occurs instead of survive an attack. This is because my nightmares were always about a creeping horror lurking out of sight and I tend to wake up without anything actually happening in the dream.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1518115633.0
+:END:
+
+***** - The closer you get to the exit, the faster time goes (on average).
+- Time does not go at a consistent speed. Sometime you blink and lose half an hour on the timer. Sometimes you spend an hour or more doing something and only lose minutes. Sometimes time goes /backwards/ for no apparent reason.
+- The more you think about the timer, the faster time goes.
+- When you hit a certain point on the edge of the city, the explosion /will/ go off.
+- You can't outrun it. (However, if you are far enough away (i.e. out of the city), the explosion will merely throw you harmlessly through the air).
+- If you take four right turns at a 90-degree angle each time, you don't end up going the same direction that you started. (Basing the dream geometry on hyperbolic space will really mess with anyone trying to keep a map).
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1518117495.0
+:END:
+
+****** #+begin_quote
+  If you take four right turns at a 90-degree angle each time, you don't end up going the same direction that you started. (Basing the dream geometry on hyperbolic space will really mess with anyone trying to keep a map).
+#+end_quote
+
+This is one of the things I have planned which is a reason for why it's so hard to escape the explosion or to keep a map.
+
+#+begin_quote
+  The closer you get to the exit, the faster time goes (on average).
+#+end_quote
+
+I like this idea, because then the protagonist can use this as a clue for finding the exit.
+
+Thanks for the suggestions!
+:PROPERTIES:
+:Author: xamueljones
+:Score: 2
+:DateUnix: 1518120261.0
+:END:
+
+
+*** I really really like this idea, because I love the absurdity available in dreams. My suggestion is read (or reread) a bunch of Lovecraft's really weird stuff, because he does a great job of explaining just enough that you're forced to let your imagination fill in all the horrors that you know are so abundant, and I think that's a great quality for writing about dreams. We've all got different ways of letting our brain run away in all the wrong ways, and of course that's doubly true for dreams. Lovecraft takes full advantage of this by using vague superlatives that feel like they describe what he's writing about but really leaves all the good stuff up to our imaginations. Of course if we're talking dreams then I've gotta mention [[http://www.hplovecraft.com/writings/texts/fiction/dq.aspx][The Dream-Quest of Unknown Kadath]], but a lot of his stuff reads like a nightmare taken flesh, which I suppose is what he was going for.
+
+One more thing, something that I've noticed about my own dreams and nightmares is that often someone makes an assumption, and it's as if it was always the case to everyone involved, even if it very clearly wasn't not two seconds earlier. Might be a fun way to keep people on their toes, not that you need too much of that with an idea like this.
+:PROPERTIES:
+:Author: DrainageCity
+:Score: 2
+:DateUnix: 1518182883.0
+:END:
+
+**** #+begin_quote
+  One more thing, something that I've noticed about my own dreams and nightmares is that often someone makes an assumption, and it's as if it was always the case to everyone involved, even if it very clearly wasn't not two seconds earlier. Might be a fun way to keep people on their toes, not that you need too much of that with an idea like this.
+#+end_quote
+
+I'm not too sure what you mean by this? Can you give an example?
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1518197797.0
+:END:
+
+***** Right, um, let's say you're dreaming you're on a ship in the middle of the completely normal ocean. Someone casually mentions how it's such a relief that the ocean around here is carbonated since that means no sharks. If you remember all this upon waking up you're sure that the water was just normal ocean water before hand, but after that the water was definitely fizzy.
+
+Honestly, maybe this isn't a thing for other people's dreams. I dunno, I've only ever had my dreams, ya know?
+:PROPERTIES:
+:Author: DrainageCity
+:Score: 2
+:DateUnix: 1518204588.0
+:END:
+
+****** I see what you mean. At first it's like the world is normal or similar to real-life, but you are not focusing too hard on the details (it's the same old stuff, why care?), but then something happens where it's clearly unusual and because you haven't focused on the detail yet, it becomes set.
+
+For example, you are walking along a path with someone and the sky above you is the same old sky as ever, no need to pay attention to it at all. But your friend says what a nice purple color the sky is, and you look up to see a purple sky and it was always purple even though you could have swore it wasn't always purple.
+
+#+begin_quote
+  The sky was always purple. The sky had always been purple. Always. But had the sky always been purple before you looked?
+#+end_quote
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1518205207.0
+:END:
+
+******* Exactly! I've never lucid dreamed, so I've never picked up on the oddities as they happen, but it might be neat in a story about dreams. Also worth noting, of course, is that it would make it much harder for readers to pin down what rules are being followed and which are open for subversion. That might be really cool, or it might feel like everything is an unexpected ass-pull. It might not be worth it to include that into your world, but if you decide it is I think it'd help drive the point home that it's a dream and not, say, his/her mind being kidnapped at night time.
+:PROPERTIES:
+:Author: DrainageCity
+:Score: 2
+:DateUnix: 1518207021.0
+:END:
+
+******** I think I will include it, but only when the protagonist interacts with others. So when he's by himself, nothing happens because the environment follows his expectation of reality. But when he runs into someone else and they comment on something he hasn't paid any strong/focused attention to, their expectation dominates instead.
+
+I'll make it obvious by having the stranger be someone with red eyes (dream-demon?) and they'll comment on what pretty red eyes he has. His expectations won't affect his eye color because there is no mirror in the dream for him to find and observe his face in.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1518207643.0
+:END:
+
+
+** I have a question regarding how to perform a important task for world building. Does anyone have any advice for categorizing different types of magic and naming the types. How do you divide magic up into a number of types that a mage can specialise in.
+:PROPERTIES:
+:Author: genericaccounter
+:Score: 1
+:DateUnix: 1518042081.0
+:END:
+
+*** [[https://www.reddit.com/r/magicbuilding/comments/2jndl2/magic_building_is_tough/cldgiez/][Here's an (old) checklist for making magic that might be helpful.]]
+
+Basically, I would focus on:
+
+- *Who can use magic?* People of a certain bloodline? People who have undergone a specific ritual? Those born under the glow of a comet that passes overhead every thirty years? Anyone who studies well enough?
+- *What does magic cost?* Is there some internal chi, mana, spirit, etc. that renews slowly over time? Does it take a lot of time? Do you need to crush up rare gems every time you cast a spell? Or maybe once, and then you can cast the spell forever? Do you need the blood of a virgin rabbit? Does using magic tear away at your soul, piece by piece?
+- *What does magic affect?* Does it only work on sand? Can it affect the minds of men but not animals? Does it work on the unique but not the generic? Does it allow for time travel? Can it manipulate gravity? Add generic amounts of lbs-force to objects?
+
+From these, you can get your divisions. My recommendation is to think about how the people in your world think about magic, and then start from there for "schools". Some examples:
+
+- There's a world where "magic" means the ability to control four basic elements. The primary division between elementalists is which element they specialize, since there isn't much cross-applicability between them, or alternately, you're locked in to a single element by your very nature. (Names are highly connected to culture, and not to be taken lightly, but if you don't want to do a deep dive there, you can mash two dog-Latin words together with slight mutuations, so virignis, viraqua, vircaeli, virsolum, but spend more than five seconds on this. If you were going with that, maybe change it to "virele" instead of elementalist.)
+- There's a world where "magic" means the ability to control four basic elements. /Here/, however, the primary distinction between the elementalists is not the element, but what they pay for that control. The schools are those of blood, barnacle, and dust, each who pays the Shadow's Price in their own way -- the sanguis must let their own blood, the bernak grow bone spurs, and the horologe give up years of their own life.
+- There's a world of four elements, etc. But /this time/ the primary difference between the elementalists is in what their power does with those elements. The partumni are creators, able to make fire, water, earth, and air. The mutati are changers, capable of shifting one element to the other, and to control the movement of the elements around them. Lastly, the erado can wipe any of the elements away without a trace of them ever being there.
+
+These are all lazy, quick-sketch examples, but hopefully they illustrate that divisions are A) artificial and B) a result of the natural cleavages in the system that emerge from how people do magic.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 4
+:DateUnix: 1518067446.0
+:END:
+
+**** #+begin_quote
+  Do you need the blood of a virgin rabbit?
+#+end_quote
+
+I've always found it to be useful.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 1
+:DateUnix: 1518114725.0
+:END:
+
+
+*** Well, first you have to ask what kind of mages you have?
+
+- Wizard - A person who uses their knowledge of the mystical forces of the universe to reshape reality.
+
+- Sorcerer - Someone who has inborn magical ability. Their magic flows from them to strike out at an uncaring world.
+
+- Warlock - This person has made a pact with supernatural beings, often trading their soul in exchange for magical power. Alternatively, this could be someone who receives divine power from their god as a reward for their devotion.
+
+--------------
+
+Next you have the categories of effect:
+
+- Divination - Information gathering abilities.
+
+- Transmutation - Effects that change the physical characteristics of a thing.
+
+- Illusion - Changing how others perceive the world.
+
+- Conjuration - Making something where there was nothing.
+
+- Necromancy - A somewhat broad category that covers magic dealing with the souls and/or bodies of the dead.
+
+--------------
+
+Be careful not to conflate effect with specialization. A fire mage might be able to get a wide variety of effects from fire, being able to both conjuring a jet of fire, and also disappear (and reappear) in a pillar of flame. That same mage, however, might not be able to work with water at all.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 1
+:DateUnix: 1518066769.0
+:END:

@@ -1,0 +1,486 @@
+#+TITLE: [D] Wednesday Worldbuilding Thread
+
+* [D] Wednesday Worldbuilding Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 14
+:DateUnix: 1471446272.0
+:END:
+Welcome to the Wednesday thread for worldbuilding discussions!
+
+[[/r/rational]] is focussed on rational and rationalist fiction, so we don't usually allow discussion of scenarios or worldbuilding unless there's finished chapters involved (see the sidebar). It /is/ pretty fun to cut loose with a likeminded community though, so this is our regular chance to:
+
+- Plan out a new story
+- Discuss how to escape a supervillian lair... or build a perfect prison
+- Poke holes in a popular setting (without writing fanfic)
+- Test your idea of how to rational-ify /Alice in Wonderland/
+
+Or generally work through the problems of a fictional world.
+
+^{Non-fiction should probably go in the Friday Off-topic thread, or Monday General Rationality}
+
+
+** I've watched a horror movie [[http://tvtropes.org/pmwiki/pmwiki.php/Film/TheCaller][The Caller]] recently.
+
+The story was predictably unnoteworthy: a typical horror movie, a bunch of boring characters, a predictable twist at the end, nobody pays attention the magical elephant in the room, et cetera.
+
+The premise, however, is interesting. To be brief, a telephone in a particular apartment works as a time machine: a person from year 1979 could activate it and talk to the person from 2011 (not vise versa). Mary, the protagonist and the Receiver, is an ordinary woman from 2011.
+
+The Caller is an unstable sadistic murderlady from 1979, Rose. She knows when you live.
+
+Rose proceeds to: [[#s][spoiler, if anyone cares]] And so on. Mary [[#s][spoiler]]
+
+I think it is an interesting premise to build a rational fanfic on. The anomaly is ridiculously exploitable, so two cooperating rational people would be able to science everything out of the universe in no time.
+
+But what if one of them is a homicidal psychopath? Can rational!Mary outmaneuver rational!Rose, despite being in a drastically disadvantageous postition, and use the anomaly to better the world?
+
+--------------
+
+Of course, the time travel system is naïve and needs refining. The way I see it, it works like this:
+
+1. The Caller intends to make a call 32 years into the future. The timeline splits: in one timeline, timeline M^{1,} the phone lost its anomalous power, the call failed, and no further time travel ever occurred; in the other timeline, timeline P, the phone worked, and connected the Caller to the Receiver of the timeline M^{1.} (I. e., from the perspective of the timeline P, timeline M^{1} was instantly fast-forwarded 32 years into the future.) During the call, the timelines were running in sync, but after the call was over, M^{1} timeline was destroyed and replaced by M^{2} timeline, similarly branched off of the current point in P timeline and fast-forwarded, with the Receiver's mind jumping to the new timeline. After that, P and M^{2} timelines were running in sync. Next call would destroy M^{2} timeline and create M^{3} timeline, and so on.
+2. The Receiver has ripple-proof memory. The Receiver's timeline does not changes over the course of the transtemporal call, but changes abruptly after the call is over.
+
+Here's my masterpiece: [[https://i.imgur.com/p3MyWQt.png][paint diagram]].
+
+There is no way anyone can get from M^{i} timeline to the P timeline (except transfer of an uploaded mind through the phone, of course).
+
+--------------
+
+Thoughts? Temporal weapons, tricks, defense ideas (especially for the Receiver)? Holes in the model? Interesting ways to use it?
+
+^{Yes, yes, destroying a timeline basically amounts to killing everyone in it sans the Receiver. Let's ignore that issue for the moment.}
+:PROPERTIES:
+:Author: Noumero
+:Score: 7
+:DateUnix: 1471447037.0
+:END:
+
+*** Question to explore: what happened in the M^{2} timeline during the period corresponding to the first phone call? Does M^{2} history record that the phone never rang until call 2? That seems like the simplest solution to me. If there was a phone call, it's one that didn't happen to the real Caller, and an important part of this model is that anything that happens in timeline P is real and permanent.
+
+But this model is quite exploitable. It means that anything the Receiver does as a result of the phone call will be undone in the next timeline. This prevents her from setting up long-term plans, but it means she can e.g. spend lots of money and resources to acquire a piece of information, in the knowledge that she'll get her money back in the next timeline (but keep the memories).
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 5
+:DateUnix: 1471454821.0
+:END:
+
+**** #+begin_quote
+  timeline during the period corresponding to the first phone call? Does M^{2} history record that the phone never rang until call 2?
+#+end_quote
+
+Yes. The past calls get rewritten by whatever a normal flow of events in this timeline is.
+
+#+begin_quote
+  This prevents her from setting up long-term plans, but it means she can e.g. spend lots of money and resources to acquire a piece of information, in the knowledge that she'll get her money back in the next timeline (but keep the memories).
+#+end_quote
+
+Hm, I didn't thought about that at all. Interesting idea. The Receiver then can go as far as set herself up to be killed, only to leap into another timeline at the last moment. It can even be done remotely (by agreeing on the time of the Call, then setting up a device to pick up and put down the transtemporal phone while the Receiver is off doing dangerous deeds).
+
+Can Mary /die/? That part is fuzzy, since the means by which the phone determines who the Receiver is are unclear. Is it whoever picked it up first? What if it changed between M^{i} timelines? Or is being the Receiver Mary's inherent transtemporal property now? That seems most simple, and it ensures that Rose can't just murder her and work with her own older self; if so, then Mary can even afford to die.
+
+But it also complicates things: it means Rose can't change history too much, since Mary needs to be /born/, which is quite an unlikely event, all factors considered.
+
+Still. Nothing stops Rose from hunting Mary down, imprisoning her and making calls to Rose's older self... Except Rose's sociopathy.
+
+Once Rose found herself in M^{i} timeline, what's her incentive /not/ to murder Mary and destroy the phone in order to cut off any possibility of the timeline's destruction and her subsequent death?
+
+Can Rose get /anything at all/ done in M^{i} timeline? Once she figured out the rules, if she finds herself in M^{i} timeline, then she knows she is going to be rewritten, so she has no reason to play along with P!Rose's plans; she needs to destroy them.
+
+Alright, it won't work: if a Call goes unanswered/doesn't go at all, the phone returns 'blank', and the corresponding M^{i} timeline gets replaced by M^{i+1}. A few M^{i}!Roses do that anyway, then P!Rose figures out what's going on. M^{i}!Roses after that know that too, so... What do they do? Cutting off the phone doesn't work, so they need to figure out how to escape to P timeline. They research mind uploading, eventually succeed. Then... P!Rose precommits to host them all IF they play along with her long-term plans, arranges the creation of a supercomputer /during a very long Call/. After that, her M^{i}!selves obediently do science, sending P!Rose results and themselves.
+
+Then everything blows up.
+
+Huh. Neat.
+
+Wait, it was supposed to be a story about Mary. Can she even do anything to prevent that?
+:PROPERTIES:
+:Author: Noumero
+:Score: 3
+:DateUnix: 1471459252.0
+:END:
+
+***** Oh crap, I didn't even think about Future Rose.
+
+In the original film, once Rose's death is written into the immutable timeline then she's gone forever. But until then... maybe she's alive in the future, maybe she isn't. Maybe it changes from one timeline to the next. Sometimes she's alive, sometimes she's dead. Sometimes she's wormed her way into the unsuspecting Past Mary's life and become her friend, just to get close to Future Mary when her memories sync.
+
+Does Rose honor precommitments to herself? There's several versions of her running around. If she doesn't consider her copies extensions of herself, then Future Rose should indeed be scared of the end of her timeline. But if rational!Rose has the determination to make plans over 30 years, in the knowledge that this version of her will die before they come to fruition, and still carry them out, then she becomes a lot more dangerous. (See [[/u/alexanderwales]]' story /Branches on the Tree of Time/).
+
+Ugh. Mary's only bargaining chip is her identity - Rose doesn't a priori know anything about the future until Mary tells her, including Mary's name and past. As long as Rose can't track Mary down in 1979, there's limits to the havoc she can wreak.
+
+Well, that and the fact that if Mary dies in any timeline, then she can no longer take a phone call (because she's dead) so the timeline can't change any more. Probably. Depending on how being the Receiver works. So if Rose wants access to her incredibly powerful time machine then she has to keep Mary alive, which means there are some changes she can't risk making. (In any case the time loop will eventually end of its own accord when a version of Mary is hit by a car or something.)
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 2
+:DateUnix: 1471460354.0
+:END:
+
+****** #+begin_quote
+  Oh crap
+#+end_quote
+
+Oh crap indeed.
+
+#+begin_quote
+  Does Rose honor precommitments to herself?
+#+end_quote
+
+Only if both parties get to live and be free in the end, I expect. But that's only my model of a perfect sociopath. Perhaps it can vary. If she is not a sociopath, but a pathological narcissist, maybe? Then she /would/ value all her selves, not only herself, while still considering other people inferior to her.
+
+#+begin_quote
+  Ugh. Mary's only bargaining chip is her identity - Rose doesn't a priori know anything about the future until Mary tells her, including Mary's name and past
+#+end_quote
+
+So? M^{2}!Rose sits in ambush near the transtemporal phone apartment, then Mary arrives, she murders her and destroys the phone. Even if she doesn't know who precisely Mary is, she knows enough to identify her.
+
+#+begin_quote
+  then she can no longer take a phone call (because she's dead) so the timeline can't change any more
+#+end_quote
+
+No, no, if M^{i}!phone doesn't work, then P!phone still gets some information from the future --- namely, that the M^{i}!phone doesn't work --- so M^{i+} timelines continue to branch out. The only way to break this system is for P!Rose to ensure that Mary can never be born.
+:PROPERTIES:
+:Author: Noumero
+:Score: 2
+:DateUnix: 1471461571.0
+:END:
+
+******* #+begin_quote
+  The only way to break this system is for P!Rose to ensure that Mary can never be born.
+#+end_quote
+
+Or, if she's already born, to kill her in the immutable P timeline so she can never come back.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 2
+:DateUnix: 1471464028.0
+:END:
+
+******** I came up with an idea of how to bypass the imprisonment problem [[https://www.reddit.com/r/rational/comments/4y62uz/d_wednesday_worldbuilding_thread/d6mt8re][here]], if you're interested.
+
+In short, Mary needs to deceive Rose into believing that the transtemporal phone (and Mary with it) is located somewhere else in M-timelines.
+
+That may be tricky, since Rose would know Mary's voice by then, and would try to check by timing the Call with her M!self being present near the phone, but there's no way she could catch an unsuspecting Past Mary on using time travel, so that's doable. Especially if the difference in time is not exactly 280512 hours.
+:PROPERTIES:
+:Author: Noumero
+:Score: 1
+:DateUnix: 1471540110.0
+:END:
+
+
+*** That movie has some similarities with [[http://www.imdb.com/title/tt2669336/][/Time Lapse./]]
+:PROPERTIES:
+:Author: OutOfNiceUsernames
+:Score: 5
+:DateUnix: 1471458530.0
+:END:
+
+**** Also, [[https://en.wikipedia.org/wiki/The_Lake_House_(film)][The Lake House]]
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 4
+:DateUnix: 1471483959.0
+:END:
+
+
+**** Sounds intriguing, thank you for sharing.
+:PROPERTIES:
+:Author: Noumero
+:Score: 2
+:DateUnix: 1471460601.0
+:END:
+
+
+*** #+begin_quote
+  Yes, yes, destroying a timeline basically amounts to killing everyone in it sans the Receiver
+#+end_quote
+
+To be fair, the Caller /is/ a homicidal psychopath. I see no reason why this would stop her.
+
+--------------
+
+Alright, so the Receiver is 32 years in the Caller's future. The Receiver is the Caller's only source of information about said future; moreover, the Caller is the Receiver's only way to influence the past.
+
+There are a number of ways for Mary to weaponise this. Luring Rose to a location where there will be a disaster is the simplest.
+
+Another way is for Mary to offer Rose a set of winning lottery numbers. Then (say) the name of a few winning horses in races to multiply those winnings. Then to tell her that the real money's in investment, and getting her to fund a number of promising inventions which, back at the time, failed for lack of funding but were solid aside from that. Then you may get a slight improvement in modern technology.
+
+Alternatively, Mary can offer Rose fame as a mathematician, by reading out mathematical proofs that have yet to be invented in Rose's time over the phone. Past Rose can reap the fame, but the rest of the world reaps the benefit of slightly earlier discovery of certain results.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1471521631.0
+:END:
+
+**** That particular development may not be optimal or even possible.
+
+You see, in each M^{i} timeline, there's still a Rose around. What stops Rose from precommitting to, if she finds herself in a M-timeline, wait for Mary near that apartment for 32 years, then kill her and take the phone for herself, hijacking the Receiver position? Then she would be able to accomplish her own goals without any obstacles.
+
+The only way to stop that is to make being the Receiver Mary's inherent property: exchange of information between P-timeline and a M-timeline should /only/ be possible if Mary was born and is alive in the M-timeline.
+
+The consequence of it is that Rose can't make vast changes in her time, lest she would ensure that Mary can never be born, and then Time Travel Goes Away.
+
+I was thinking about an isolated research group somewhere on the other side of the world, who would be told to send results of their research to Mary's email address 32 years later. Then Mary would send that information to P-timeline Rose, the research group would use /that/ as their input in the next M-timeline, and so on 'til the Singularity.
+
+The problem is, why won't Rose simply imprison Mary? Mary would exist and be alive in this case, but won't be able to do anything. Is there a way to save Mary's agenda? I can't think of anything sans placing the transtemporal phone in a different location in Mary's time, so that Rose can't find her if Mary doesn't lets her.
+
+...Oh. Of course.
+
+Mary can lead Rose to /believe/ that the transtemporal phone is located somewhere else in M-timelines. Rose can't waste all her M-timeline selves' lives on stalking that apartment, so she'll give up on it sooner or later.
+:PROPERTIES:
+:Author: Noumero
+:Score: 2
+:DateUnix: 1471539370.0
+:END:
+
+***** Alternatively, Mary could simply set in motion changes that have only a minor expected effect up until the date of Mary's birth.
+
+Thinking about it, this is very much a "boxed AI" problem, with Mary as the AI-in-the-box. She cannot affect Rose's time /at all/ except by her words, which can only be delivered to Rose; and Rose has a number of ways to do nasty things to Mary and absolutely no incentive to be nice to her. At the same time, Mary has (from Rose's perspective) near-perfect predictive powers, at least of things important enough to be written down. If Rose agrees to write down a note tomorrow in a certain place, Mary can tell Rose what it says (unless she decides to lie) - since this note may include information that Rose only discovers tomorrow, Rose can use this to set up a shorter-term information loop for herself.
+
++Hmmm... and, interestingly, there is a symmetrical element here. Rose's note, tomorrow, can include things that Mary only tells her tomorrow. Mary can tell Rose tomorrow what the winning lottery numbers are, and Rose can (in theory) write those down in her tomorrow, which means that Mary can find the note today. (Since neither Rose nor Mary are trustworthy individuals, however, Mary should start looking into modern cryptography techniques and come up with some encoding of the information that she will be able to confirm that Rose had not altered the message when writing it down).+
+
+No, wait, that won't work. I just realised, that requires transferring information from the M^{i+1} timeline to the M^{i} timeline.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1471541604.0
+:END:
+
+
+*** I think the odds of sane sperm and egg combo are so low that this is impossible I'm afraid. Unless Rose is older than the time difference
+:PROPERTIES:
+:Author: RMcD94
+:Score: 1
+:DateUnix: 1471840201.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 6
+:DateUnix: 1471470725.0
+:END:
+
+*** Does the curse only prevent the victim from communicating about it, or from doing anything that would have a net negative effect on the curse doing whatever it wants to do?
+
+If it's just communication, then since the curse is powered by ambient magic maybe your character could make a magic Faraday cage and cut herself off from the Earth's magic- assuming that's possible in your system. Depower the curse and go from there (though the plan after the curse is depowered probably can't involve communicating with anyone or the curse might trigger).
+:PROPERTIES:
+:Author: Badewell
+:Score: 4
+:DateUnix: 1471480241.0
+:END:
+
+**** I think I managed to find a solution! Thanks for trying though!
+:PROPERTIES:
+:Author: gods_fear_me
+:Score: 2
+:DateUnix: 1471480986.0
+:END:
+
+
+*** I'm not sure exactly where you should take the story next, but a couple similar ideas, like dealing with the ability to think about things and memetics/antimemetics, have been written. Check out Alexander Wales' Lost City [[http://alexanderwales.com/lost-city/][(link)]] or the SCP Antimemetics stories [[http://www.scp-wiki.net/introductory-antimemetics][(link)]] by qntm
+:PROPERTIES:
+:Author: blazinghand
+:Score: 4
+:DateUnix: 1471474317.0
+:END:
+
+
+*** Hmmmm. So, any /active/ effort from her gets prevented. What about any /lack/ of effort?
+
+You say there's a way to find out the problem with her magic, but it requires the cooperation of another wizard. For the purposes of discussion, I shall refer to this as the Detection Spell. Let's say that she knows of another wizard capable of casting said spell. She hires him to cast the Detection Spell on somebody else, completely unrelated. And again somebody else. And again somebody else. Say, everybody in the city that shares her first name - except herself. And when he spots the gap in her pattern and asks if he should cast it on her as well - she says nothing, makes no comment positive or negative.
+
+--------------
+
+Alternatively; she uses a channel of communication that has no guaranteed recipients. For example, she posts a full description of what she knows of the spell - on a fanfiction site. As fanfiction. Including her real name, and address, in the vague hope that someone who knows her will read it. Then she writes the url of the fanfic on hundreds of pieces of paper, and scatters them around the city. Hopefully someone will figure out something, but she will have no idea who or how.
+
+--------------
+
+Alternatively, she works the two ends of the curse against each other. Let us say she has a rival - an enemy of sorts, but an honourable person. They've been competing, perhaps slinging insults at each other, massive competition between them... that sort of thing. Maybe she just strolls over to said rival, and just hands over her wand (or in some other way gives said rival the power to prevent her from using magic). This gives the rival a definite clue that something is wrong, and at the same time prevents whatever the curse has done to her magic from having any further effects (since she's now not using her magic).
+:PROPERTIES:
+:Author: CCC_037
+:Score: 3
+:DateUnix: 1471520676.0
+:END:
+
+
+*** That's a gnarly curse to find yourself under. I think you made the curse too powerful and then need to scale is effects
+
+It doesn't seem like there are limits to the curse. In a magical world with those sorts of things available, even if it's one out of 100k affected by it, there would be people actively researching and studying geass' like that and working on defeating them. What are the limits? A rationalist world of magic would limit the power of curses otherwise it's too easy to abuse.
+:PROPERTIES:
+:Author: Dwood15
+:Score: 2
+:DateUnix: 1471475159.0
+:END:
+
+**** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1471477365.0
+:END:
+
+***** Sure, but for me, the important question when making curses or spells is defining not what they do, but what they WONT do. In order for your character to defeat the curse the must first discover its limits and then exploit that.
+
+So I'll restate my question. Where does the curse' powers end? Otherwise the human race, without similar power, is screwed.
+:PROPERTIES:
+:Author: Dwood15
+:Score: 2
+:DateUnix: 1471477662.0
+:END:
+
+****** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1471478071.0
+:END:
+
+******* Okay, so in direct relation, when the curse does activate, what doesn't it do? The more you answer the better.
+
+Does the curse leave others alone?
+
+Does it affect others?
+
+Do others get placed under something similar? Does it spread?
+
+What's the source of power?
+
+What happens when it runs dry?
+
+What if 10000 people found out about the curse and then the character learned about it?
+
+What if she went around telling everyone she's fine and not under the effects of a geass?
+
+I already know or think i know how to abuse the curse but i need answers to the above.
+:PROPERTIES:
+:Author: Dwood15
+:Score: 3
+:DateUnix: 1471478574.0
+:END:
+
+******** [deleted]
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1471480357.0
+:END:
+
+********* That's very close to the idea! Go ahead and ignore my other post then.
+:PROPERTIES:
+:Author: Dwood15
+:Score: 2
+:DateUnix: 1471480546.0
+:END:
+
+********** Thanks! Talking about it with you gave me a pretty good idea about a possible chink in the curse. I may be back later if I fail.
+:PROPERTIES:
+:Author: gods_fear_me
+:Score: 2
+:DateUnix: 1471480728.0
+:END:
+
+
+******** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1471479010.0
+:END:
+
+********* #+begin_quote
+  unless MC involves them
+#+end_quote
+
+I'm sorry, I'm not getting all the information i need. I may be asking bad questions. Let's try a different approach. Give your spell at max 4 major effects and then a crystal clear list of where the limits of those effects are. Including any and all exceptions to the rules you can think of.
+
+Any character afflicted with a curse who is mildly rational will explore the limits/boundaries of said curse. It may take weeks, months, or even years, but at some point they need to find a chink in the curses armor in order to bypass it.
+
+Please give the curse some chinks, a weak spot, knowing what it does, you must define what it doesn't, and then define how your character will exploit that.
+
+I say this because you seem to misunderstand me because the answers to two and three are wrong if the spell actually can affect others, no matter how small.
+
+I hope i give you enough to think about, but ultimately you'll have to figure out the kinks in the spell.
+:PROPERTIES:
+:Author: Dwood15
+:Score: 2
+:DateUnix: 1471480413.0
+:END:
+
+
+** <meta> I love Wednesday Worldbuilding threads. </meta>
+
+This is a bit more abstract, but how do you craft an irrational character in a rational/ist world? Any techniques or things to keep in mind? I was thinking about this a bit the last few days. I want the world's rules and concepts to stay consistent but have a major actor make arbitrary decisions just because that's what they like to do. If asked about why they do, they can come up with reasons, but the truth is that's just the way they want it to be.
+
+Rephrasing the question: How do you create a believably irrational character in a rational world? What they do has real effects, and you can see that person doing it, but WHY they're choosing to do it may not make any sense.
+:PROPERTIES:
+:Author: Dwood15
+:Score: 5
+:DateUnix: 1471465414.0
+:END:
+
+*** Case study: Mr. Kordana, the villain of a recent arc in /Freefall/.^{1}
+
+If you're writing a rational story, characters are not allowed to act out-of-character to advance the plot. Their actions flow logically from their personality and their goals, and do not bend one inch to serve the needs of the story.
+
+This still holds for stupid/irrational people. Their actions may not bend to serve the story either. They must follow their own internal logic, twisted though it be. And it must be the same internal logic throughout, character development notwithstanding.
+
+Stupidity is not just reversed intelligence. It would be out-of-character for Mr. Kordana to angrily challenge an entire biker gang to a fistfight - stupid, yes, but not his particular brand of stupidity.
+
+--------------
+
+^{^{1}} ^{He's an idiot from the word go. His job, whatever it actually is, grants enormous authority with no responsibility or accountability. He's good at delegating problems to people smarter than he is, and he understands plausible deniability. On the occasions when he notices other people, he's incapable of empathy or tact. He speaks with all the poetry and emotion of an electricity bill, albeit one soaked in weapons-grade smugness. He never intentionally insults people, it just sort of happens on its own. He seems blind to the idea that if his actions hurt people, they might treat him differently because of it. Ask him about anything he's ever done and he'll explain why it was perfectly correct and what anyone would do in the same circumstances - and no, you can't convince him otherwise, we've tried. In short, he's modeled off the Pointy-Haired Boss from Dilbert.}
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 7
+:DateUnix: 1471468392.0
+:END:
+
+**** Thanks I was hoping for an answer similar to that. It seems that when you're describing these characters it's the things like the priority lists that they have which makes the big difference in whether or not a person is an irrational or rational character. I'm thinking if I cracked my character where I sat the priority is and things they care about in a list and then I mix them up I can make it rather irrational character based on that priority list.
+
+It seems to me that most irrational characters are not necessarily completely irrational but rather they have different priorities and ways they care about other people vs someone we would consider mentally stable or fairly rational.
+:PROPERTIES:
+:Author: Dwood15
+:Score: 3
+:DateUnix: 1471587308.0
+:END:
+
+
+*** #+begin_quote
+  an irrational character in a rational/ist world
+#+end_quote
+
+Do you really mean /irrational/, or merely /non-rational/? That is, does the character consciously decide to be 'not rational'? In the latter case, just look at most people on Earth!
+
+In either case, I think the important thing is to think about orthogonal components of 'rationality' or 'general intelligence'. People could have the following in basically any combination: knowledge, experience, analytic/synthetic/spatial/relational/mathematic/linguistic intelligence, "willpower" (anti-akrasia), consistency in higher-order preferences, worldview (eg: what's the best route to power?), "moral foundations" (google it), and so on.
+
+Many activists end up denouncing their opponents as evil, because they literally can't comprehend the real motivations involved. Frustrating in the real world, but a great basis for rational conflict in stories!
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 2
+:DateUnix: 1471495562.0
+:END:
+
+
+*** Everything the character does makes sense to /them/. Their reasons may be full of logical fallacies, and hard for others to understand, but those reasons are there...
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1471520813.0
+:END:
+
+
+*** #+begin_quote
+  Rephrasing the question: How do you create a believably irrational character in a rational world? What they do has real effects, and you can see that person doing it, but WHY they're choosing to do it may not make any sense.
+#+end_quote
+
+If the rest of the world really is rational, there's going to have to be a reason why rationality wasn't or couldn't be taught to them. Whatever cause that made regular use of rational heuristics impractical or undesired may help you inform their motivations (and their character)---whether it's a natural mental impairment, results from depression or other mental illness, physical damage, fetishism, memetic hazard damage, whatever.
+
+Alternately, maybe they're not actually irrational. They could be rational with goals wildly orthogonal to everyone else's---in the worst case, a small-scale version of a paperclip maximizer.
+:PROPERTIES:
+:Author: Muskworker
+:Score: 2
+:DateUnix: 1471538150.0
+:END:
+
+**** Yeah basically what I would go for in an irrational character in a rational world where all of the laws fit together, character actions actually have consequences, etc, is a priority list which basically gives the character a list of attributes and things they care about. Then we jumble it up a bit which should produce the effect I'm looking for. Of course I'll play with the actual character creation stage myself a bit but from the discussion I've gotten what I was looking for.
+:PROPERTIES:
+:Author: Dwood15
+:Score: 1
+:DateUnix: 1471587457.0
+:END:

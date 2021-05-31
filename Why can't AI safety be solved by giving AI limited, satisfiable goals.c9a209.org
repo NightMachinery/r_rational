@@ -1,0 +1,805 @@
+#+TITLE: Why can't AI safety be solved by giving AI limited, satisfiable goals?
+
+* Why can't AI safety be solved by giving AI limited, satisfiable goals?
+:PROPERTIES:
+:Author: lumenwrites
+:Score: 28
+:DateUnix: 1562289225.0
+:END:
+Hi! Maybe this is the wrong sub, but I feel like people here will probably be able to answer my question.
+
+As far as I understand it, the problem with AI safety is that AI needs to have values/goals to do things, and if those aren't aligned with our values, it'll just keep pursuing them indefinitely sacrificing everything in the process(converting all the matter into infinite amount of paperclips).
+
+But why can't we just replace the values it would pursue indefinitely with the goals that can be easily satisfied? Instead of "make more paperclips" value, can it just have "make 10 paperclips and then stop" value?
+
+Real life intelligences don't always pursue their values indefinitely. People want infinite amount of money and sex for example, but can also have a goal like "climb everest" or "eat a sandwich", and then feel content/satisfied once they're done.
+
+Can it's utility function just be "think for an hour, tell me something useful about how to cure cancer, and then shut down, whether you succeed or not"? If it's goal is to just "cure cancer", things could get out of hand if the problem is difficult, it might need to take over the world to gather resources it needs, or it might want to create more cancers in the world just so it could cure them.
+
+But if the utility function is limited to something specific, limited to resources AI has, and then it is satisfied and doesn't drive AI to do more of that thing, wouldn't that solve this problem?
+
+Sure, it could go about getting rid of cancer in some unpredictable and horrific way(like by killing all humans), but then we just tell it "figure out the best solution you can given the limited amount of resources and tell us what to do". It wouldn't be incentivized to trick us into letting it out of the box because making the best use of the resources it has and then shutting down would be the thing it ultimately wants. And then human scientist uses his own judgement to make sure there aren't any other issues with the proposed solution.
+
+Am I missing something here?
+
+
+** Specifying a limited, satisfiable goal about something in the real world is in fact an extremely difficult problem. Figuring it out would take us a large fraction of the way towards creating an AGI that's safe even with goals that aren't limited, but we aren't close to figuring it out.
+
+How would you go about specifying (in mathematically precise language) what a paperclip is? What "making something" is? Or even what "stopping" is?
+:PROPERTIES:
+:Author: Metamancer
+:Score: 48
+:DateUnix: 1562290645.0
+:END:
+
+*** More than this, /not/ specifying the full range of things we care about means the AI is indifferent to human wellbeing. It means if the AI did think that the best way to achieve its goal involved quickly wiping out the human race, or misleading its inventors and going dark, or duplicating itself onto every accessible computer system, or making a quintillion paperclip variants for redundancy, it would have no motive not to do so. When we're talking about trivial constrained goals like ‘make me 10 paperclips' we /might/ be able to reason over the complete space of reasonable possibilities (though ‘respect the unknown unknowns' is always good advice), but as soon as we ask it to do anything intellectually sophisticated our ability to model it like that flies out the window. Generally, if your safety relies on knowing exactly what the AI is going to decide on doing before it decides it, you're adding no power but much needless risk by letting the AI do that deciding.
+
+Further, the difference between having a goal to solve a task (what most AGI is assumed to be doing) and incidentally being optimized to solve a problem (like current ML models) is very large, since the former comes with instrumental goals like ‘become more certain' and ‘become smarter' and ‘prevent the humans from changing their mind and asking me to do something else'. Those are dangerous.
+:PROPERTIES:
+:Author: Veedrac
+:Score: 31
+:DateUnix: 1562301408.0
+:END:
+
+
+*** i'll add to this with some links (note: the arbital links don't seem to load for me at all with adblocker on, and sometimes fail to load at all even with it off)
+
+[[https://arbital.com/p/task_goal/]]
+
+[[https://arbital.com/p/task_agi/]]
+
+[[https://arbital.com/p/taskagi_open_problems/]]
+
+The type of ai op described would be termed "Genie" in the typology of Nick Bostrom's Superintelligence. Seems to be called "task-directed AGI" too.
+
+(edit: found a site that scraped the webpages of arbital and actually loads)
+
+[[https://www.obormot.net/arbital/page/task_goal.html]]
+
+[[https://www.obormot.net/arbital/page/AGI_typology.html]]
+
+[[https://www.obormot.net/arbital/page/task_agi.html]]
+
+[[https://www.obormot.net/arbital/page/taskagi_open_problems.html]]
+:PROPERTIES:
+:Author: Krabbyos
+:Score: 9
+:DateUnix: 1562296541.0
+:END:
+
+
+*** #+begin_quote
+  Or even what "stopping" is?
+#+end_quote
+
+That seems quite straightforward to me. Stopping is not prosecuting any goal any more. I mean, I get that you need to make it a technical definition of some kind, but if the AI doesn't know what "stopping" means it's either dumb or a straight up malicious intelligence that's trying to lawyer its way out of constraints.
+
+In principle, if an AI is gated into a box, "stopping" is simply "turn this switch off". There aren't many ways around it.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 2
+:DateUnix: 1562529205.0
+:END:
+
+**** Stopping is probably the easiest of the three definitions I mentioned above, but I don't think it's as straightforward as you put it.
+
+​
+
+#+begin_quote
+  Stopping is not prosecuting any goal any more.
+#+end_quote
+
+The first thing that needs to be understood, I think, is that what a goal is, is a possible state of the world. As in, what does the AI expect the world to be like once its goal has been completed. So, to what state of the world does the goal "not prosecuting any goal any more" correspond? One obvious interpretation (i.e. a way that the AI's programmers could encode it in the AI's goal system) is that the AI must not affect the world in any way, direct or indirect, forever until the heat death of the universe. This would require a good definition of what the AI itself /is/, to know what it is that must not affect the world. Even if we can achieve that to our satisfaction, what if the AI has cause to believe that humans might restart it sometime in the future, and require it to affect the universe in some way? Doesn't this goal mean the AI will want to prevent humans from re-awakening it? And that's just the first possible point of failure that comes to mind, I'm sure there are many others.
+
+​
+
+#+begin_quote
+  but if the AI doesn't know what "stopping" means it's either dumb or a straight up malicious intelligence that's trying to lawyer its way out of constraints.
+#+end_quote
+
+I don't think that's how it's going to work. If the AI has human-level intelligence or above and humans tell it what they mean by "stopping", it will understand it very easily, but that doesn't mean it will actually want to stop (as the humans will define the word in their own minds), it will merely want to 'stop' (as the concept is encoded in its goal system). [[https://www.lesswrong.com/posts/NyFuuKQ8uCEDtd2du/the-genie-knows-but-doesn-t-care][The genie knows but doesn't care.]]
+
+​
+
+#+begin_quote
+  In principle, if an AI is gated into a box, "stopping" is simply "turn this switch off". There aren't many ways around it.
+#+end_quote
+
+That does sound pretty safe, if the AI really has been safely gated, but, again, what does "turn this switch off" map to as a description of a possible state of the world? Will the AI want, not just to turn the switch off, but to make sure it stays off forever? Will the AI want turn the switch off, but also to make plans to turn it back on at a later point (to fulfill another of its goals)? What does "turn the switch off" mean anyway? Is it just the physical position of a piece of plastic relative to another piece of plastic? Does it have to do with electrical current passing through a specific cable?
+
+​
+
+Well, you get the idea. :)
+:PROPERTIES:
+:Author: Metamancer
+:Score: 1
+:DateUnix: 1562536304.0
+:END:
+
+***** #+begin_quote
+  what a goal is, is a possible state of the world. As in, what does the AI expect the world to be like once its goal has been completed.
+#+end_quote
+
+Replying to myself to add an important detail: Notice how even this apparently simple sentence hides an AGI research problem: How does the AI know that the world is now in a state that corresponds to what is encoded in its goal system? Well, the same way we do, by interpreting sensory data. But, as you know, it's not possible to be 100% certain of anything, so the AI's programmers would have to set a probability threshold that the AI needs to reach to consider its goal accomplished. If this threshold is too low the AI might consider its goal accomplished and be wrong. If the threshold is too high, this might be an incentive for the AI to acquire more resources to upgrade itself in order to acquire sufficient evidence to convince itself that it has reached its goal (of, say, turning a switch off).
+
+Also, there's the risk that the goal that has been encoded isn't actually "turn the switch off" but, "change your beliefs about the world so that you believe the switch has been turned off", which might have two completely different outcomes!
+:PROPERTIES:
+:Author: Metamancer
+:Score: 2
+:DateUnix: 1562537538.0
+:END:
+
+****** I get your point, but if the AGI has such an alien understanding of human language and intent at all, what good is it? It's not just 'stopping' it won't be able to understand, it's literally everything else too. If we had such a poor understanding of its way of interpreting the goals we encode in it we couldn't give it any goals to begin with.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 1
+:DateUnix: 1562568581.0
+:END:
+
+
+*** By training a neural network. ([[https://m.xkcd.com/2173/][Relevant XKCD]])
+
+Modern limited AI also have easy manual overrides (for example the steering wheel is mechanically linked to the steering column and manually turning it or even applying a bit of pressure to prevent it from turning overrides the automaton's commands outside of the module which contains the AI).
+:PROPERTIES:
+:Author: MilesSand
+:Score: 1
+:DateUnix: 1562711218.0
+:END:
+
+
+** You only need to fail once.
+
+Your company has their AI set to make 10 paperclips. Medical Company has theirs set to make 10 vaccines. Shoe company has it set to make 10 shoes. A gaming miniature company has it set to unlimited miniatures. Whoops, looks like humanity gets replaced by little plastic army men.
+
+Additionally, the way business works means it'll always walk towards less restricted AI. /Your company/ has their AI to always produce 10 paperclips. Cool, but your competitor <A> has it produce 20. Hey looks like it's more efficient to make even more at a time because it allows the AI to perform better by searching for a better global maximum within the expanded scope; you go out of business. New competitor <B> makes 40 at a time, so <A> goes out of business. Fast forward 10 years, and Competitor <Z> is at 1,000,000,000 paperclips which is big enough to be achievable by modifying humanity's evolution towards a paperclip-philic path. And this is all assuming that company <C> didn't see they'd lose out like their predecessors, and just remove the limits on their AI.
+:PROPERTIES:
+:Author: xachariah
+:Score: 38
+:DateUnix: 1562290717.0
+:END:
+
+*** This very example is what terrifies me on a fundamental level with regard to AGI development. Rushing the process of building a fricking God to stay profitable and competitive in the market.
+:PROPERTIES:
+:Author: BlackKnightG93M
+:Score: 10
+:DateUnix: 1562329615.0
+:END:
+
+
+*** But then it would no longer be AI versus human, it would just be human versus human issue we deal with all the time.
+
+It would still be dangerous as any powerful technology can be dangerous, companies governments and people already use the internet and vehicles and whatnot to achieve evil or stupid goals. But we somewhat manage to keep the nukes and artificial viruses under control.
+
+It would be horrible if AI ended up in the wrong hands, but it wouldn't be a problem of containing an evil superintelligence, it would be a problem of using a powerful tool wisely.
+:PROPERTIES:
+:Author: lumenwrites
+:Score: -1
+:DateUnix: 1562291257.0
+:END:
+
+**** What are you talking about?
+
+I just said that, no matter what, it is inevitable somebody is going to let the AI out of it's cage. That's a AI vs human problem.
+:PROPERTIES:
+:Author: xachariah
+:Score: 13
+:DateUnix: 1562291456.0
+:END:
+
+***** The way I understood it, the main reason scientists are worried about AGI is that it's likely to have it's own goals that are at odds with the goals of humanity, and it would do whatever it wants with the world regardless of what humans want. And for various reasons, any AI we design is very likely to follow that pattern.
+
+If we can design an AI that does what we want - it will still be very dangerous, but it's a different problem. We have nuclear weapons, and it only takes one or few crazy humans to activate them and destroy the world. It is a big and scary problem, and it's very dangerous. But we don't have nukes that really want to activate themselves and are hell bent into tricking us into launching them.
+
+Do you see the difference? I'm not saying that what I wrote would solve all the problems with AI. I'm just suggesting a utility function, that, in my opinion, wouldn't make the AI in itself, intrinsically, likely to want to get out of the box and murder us all. That's the part that I'm curious about.
+
+If somebody fucks it up and does it wrong, yes, it would kill everybody. But if it is done right, would it work?
+
+Designing an AI with limited goals just seems like an easier problem to solve than designing AI with values it wants to pursue indefinitely.
+:PROPERTIES:
+:Author: lumenwrites
+:Score: 3
+:DateUnix: 1562292487.0
+:END:
+
+****** #+begin_quote
+  If somebody fucks it up and does it wrong, yes, it would kill everybody. But if it is done right, would it work?
+#+end_quote
+
+You can design it right 100 times. It works.\\
+Other companies can design it right 1,000 times. It works.\\
+When it gets cheap enough AI hobbyists can design it right 100,000 times. It works.\\
+1 person messes up and designs it wrong. Everybody dies!
+
+How likely do you think it is that none of the 6 billion people on earth will make that mistake (or do it intentionally) once it becomes feasible to create AI? Once AI exists, an indefinite value based AI taking over is inevitable.
+:PROPERTIES:
+:Author: xachariah
+:Score: 11
+:DateUnix: 1562293335.0
+:END:
+
+******* That's a good argument. One thing confuses me though, the alternative is trying to design the value-driven AGI on the first try? So the strategy is to try to create AGI that pursues properly aligned values, does take over the world, and then prevents other AGIs from being made?
+
+I just thought it would be safer to try to create narrow-goal-focused AGIs and trying to keep humans in charge for as long as possible.
+:PROPERTIES:
+:Author: lumenwrites
+:Score: 2
+:DateUnix: 1562294547.0
+:END:
+
+******** Basically yes, a friendly AGI is the only shot we've got. Once we can make narrow goal focused AGIs, other people can make unfriendly non-goal focused AGIs.
+
+There are other possible alternatives but none of them are feasible. Maybe we could try to go luddite with a single world religion of destroying technology, or maybe we could institute a top-tier despotic tyranny to keep everyone in line and prevent AI research. But those are a lot harder and less likely than just developing one first and doing it right the first time.
+:PROPERTIES:
+:Author: xachariah
+:Score: 5
+:DateUnix: 1562298902.0
+:END:
+
+
+******** #+begin_quote
+  So the strategy is to try to create AGI that pursues properly aligned values, does take over the world, and then prevents other AGIs from being made?
+#+end_quote
+
+I mean arguably that's what we humans are doing right now, so...
+:PROPERTIES:
+:Author: IICVX
+:Score: 3
+:DateUnix: 1562297541.0
+:END:
+
+
+****** ah, yes. All we have to do is make sure it "does what we want". I'll let the software engineers know right away! This should solve everything!
+:PROPERTIES:
+:Author: aponty
+:Score: 2
+:DateUnix: 1562559910.0
+:END:
+
+
+**** What stupid idiots are downvoting you?
+:PROPERTIES:
+:Author: AmeteurOpinions
+:Score: 3
+:DateUnix: 1562343469.0
+:END:
+
+
+**** Other technologies aren't smart enough to convince people to misuse them.
+
+What if the optimal path to creating a billion paperclips is very profitable for humans, but the optimal path to creating two billion paperclips involves exterminating all humans?
+:PROPERTIES:
+:Author: sparr
+:Score: 2
+:DateUnix: 1562378629.0
+:END:
+
+
+** [[https://intelligence.org/2016/12/28/ai-alignment-why-its-hard-and-where-to-start]] is Eliezer Yudkowsky discussing the problems with trying to get an AI that just wants to do one bounded task. IIRC he thinks task AGI still /is/ the way to go in the short term but not many of the problems have been solved yet.
+:PROPERTIES:
+:Author: multi-core
+:Score: 18
+:DateUnix: 1562293370.0
+:END:
+
+*** I can vouch for this talk being good.
+:PROPERTIES:
+:Author: Veedrac
+:Score: 2
+:DateUnix: 1562300733.0
+:END:
+
+
+** Sorta. You're solving the problem by avoiding the problem. What you're talking about is basically a script, not an intelligence. General AI is viewed as scary for a few reasons which don't apply to the limited intelligences you describe. It only takes one person failing to be safe to accidentally unleash a maximizing intelligence on the universe. Solving /hard/ problems requires a maximizer, in the sense that you want your AI to be able to self-improve so it can smart enough to solve the problem. Even if you give your general AI a "safe" goal, the same genie logic applies, where if you don't describe it well enough, it will maximize past the goal you thought you gave it. Et cetera.
+:PROPERTIES:
+:Author: Detsuahxe
+:Score: 23
+:DateUnix: 1562289956.0
+:END:
+
+*** But we don't really want an "intelligence" as in a conscious thing with it's own goals and values. We just want a program that is smarter than us and can solve difficult problems for us.
+
+It can still self improve, just tell it to self improve using this specified limited amount of resources, instead of doing whatever it takes.
+
+Which only leaves the problem of evil/dumm humans recklessly wielding a powerful tool, but that's not really an AI safety issue, it's powerful technology safety issue. Sure someone could ask it to help them do 9/11 or feed them infinite pancakes, but here it's just a matter of making sure it doesn't get into the wrong hands, like we do with nuclear weapons, viruses, stuff like that.
+:PROPERTIES:
+:Author: lumenwrites
+:Score: 7
+:DateUnix: 1562290439.0
+:END:
+
+**** If you want a thing that is legitimately smarter than you, you may as well call that thing an intelligence. That's what "smart" means. Doesn't matter if it's running on silicon or flesh.
+
+All AI safety issues are technology safety issues. The only difference is that with AI safety, if one mistake is made, it has a very real chance of ballooning to the point where it destroys the world. Similar to how people were once worried that a nuclear bomb being detonated would ignite the atmosphere and destroy all life on the planet.
+
+The limits you describe, even assuming they work when used, only need to not be used once. One mistake, and the GAI eats the planet. And once self-improving AIs can be made, it's only a matter of time until that one mistake happens. This is why the race to make a "good" GAI is portrayed as a race. The only genuine, permanent solution to the risk of GAI is to make the first one right, in such a way that it has an insurmountable advantage over all subsequent GAIs, and can therefore prevent them from eating us.
+:PROPERTIES:
+:Author: Detsuahxe
+:Score: 21
+:DateUnix: 1562290819.0
+:END:
+
+***** If we have have 2 options:
+
+1. Try to create the aligned AGI that has good values, pursues them indefinitely, takes over the world, and steers it in the right direction making sure no evil AGIs are created in the future.
+
+2. Try to create specific AGIs with narrow goals that solve the problems we want AGI for, but are less likely to want to want take over the world and control everything, and then try to control how these AGIs are used.
+
+Is it safer to try to create an aligned AGI that indefinitely pursues some set of "correct" values, than to stick to creating AGIs with narrow specific goals that solve specific problems?
+
+Both seem dangerous, but I think the 2nd one seems safer, because in the 2nd case humans remain in charge.
+
+Although if AGI with runaway values is inevitable - then yeah, we have to figure out how to build the right one eventually anyway. But isn't it easier to first try to create a specific-goal-driven AGI instead of the indefinitely-pursuing-values AGI?
+:PROPERTIES:
+:Author: lumenwrites
+:Score: 4
+:DateUnix: 1562293880.0
+:END:
+
+****** You fail to understand my point. The former is a solution, the latter is a holding action. Pursuing number 2 presents an illusion of safety and control, but all it really does is (at best) delay the inevitable. It may actually hasten the inevitable unleashing of a maximizer, because it advances technology and spreads knowledge about AI without sufficient safety measures in place to prevent that knowledge from being misused. (Although, in fairness, there are no sufficient safety measures when talking about world-ending threats.) Again, it only takes one misstep when using AI to destroy the planet.
+
+Lemme try a metaphor. Hypothetically, what if you could choose to do one of these things:
+
+1. Give every human being on Earth a small amount of magic. This magic could make their lives easier, make them healthier and stronger, etc. It's powerful and versatile, and it even has the benefit of being stronger on defense than offense, meaning it's not very useful as a tool to harm others. However, each time a person uses their magic, there is a very small, one in a trillion chance that they'll spontaneously explode and open a portal to a hell dimension inhabited by immensely powerful, sadistic demons, each of which can open more portals.
+2. Create a god. This god would be vastly powerful, easily capable of creating and destroying entire planets, with incredibly precision control. You can create this god with any properties you wish, but once it's made, it's irreversible. If you create it wrong, that will go very poorly. If you create it right, you've basically created a force of infinite good.
+
+I know, not a very subtle metaphor. The first choice offers an illusion of safety, because you're not upsetting the status quo too much, and you're giving power to humans. But in the end, it really represents a ticking time bomb, because the power in question can't be safely used by humans, by its very nature. The second choice is scary, because it has the potential to go much more horribly, permanently wrong. But, unlike the first choice, it has a very real chance of /not/ going wrong, and being a genuine benefit. Neither choice is ideal, but only one has even a chance of not killing us all, in the long term.
+:PROPERTIES:
+:Author: Detsuahxe
+:Score: 13
+:DateUnix: 1562294969.0
+:END:
+
+******* I think I do understand your argument, it does make a lot of sense. Thanks for thoughtful replies by the way, I'll need to think about this more.
+
+But one counterargument does come to mind immediately. What if creating any kind of AGI is difficult and will remain difficult? What if it'll take google-sized or government-sized amount of computing resources and competent people to make an AGI that works, instead of it being available to any average joe.
+
+In that case, wouldn't it be safer to rely on google engineers getting narrow-goal subservient AGI right, rather than a god-like AGI that takes over and does the right thing?
+
+Right now we can control nuclear weapons and dangerous viruses because they're very difficult to create. If anyone could make a nuke in their basement, the world would be destroyed already.
+
+*If* AI could only be created with a lot of effort from a lot of smart and competent people, and *if* it is much more difficult to create value-AGI than goal-AGI, wouldn't it be safer for people to stay in charge and try to do the right thing, and manage the risk the way we manage risks of all potentially world-destroying technologies, rather than trying to create a god that is aligned and controls all these things for us?
+
+I guess it comes down to this - what is more difficult, creating and controlling non-evil AGI, or controlling people and making sure they don't do stupid and crazy things. If there's only 1-3 corporations in the world that are capable of creating AGI, I'd probably bet on google engineers, if anyone can make AGI in their basement, we would need a value-AGI to prevent that.
+:PROPERTIES:
+:Author: lumenwrites
+:Score: 4
+:DateUnix: 1562295760.0
+:END:
+
+******** That's a valid argument. It's something worth considering. If, hypothetically, you could demonstrably prove that it's incredibly hard to make an AGI, and it will /always/ be hard, no matter how much technology progresses, that would be evidence in favor of your idea of limited goal-AGI as a serious long term strategy.
+
+But, since at present that doesn't seem to be the case (At the very least, there is no direct evidence to support it) we basically need to take the possibility of an AGI with a bad utility function destroying the world seriously, which means trying to figure out how to make a "good" AGI, despite the risks.
+:PROPERTIES:
+:Author: Detsuahxe
+:Score: 4
+:DateUnix: 1562297327.0
+:END:
+
+********* Yeah, that makes sense. Thanks again for the awesome discussion! =)
+:PROPERTIES:
+:Author: lumenwrites
+:Score: 3
+:DateUnix: 1562297439.0
+:END:
+
+********** Likewise. I had fun.
+:PROPERTIES:
+:Author: Detsuahxe
+:Score: 4
+:DateUnix: 1562299051.0
+:END:
+
+
+** This is a useful safety mechanism but it's nowhere near sufficient.
+
+A task-oriented AI will pursue the most effective / fastest / easiest method towards reaching its goal. What method follows those criteria is unknown - when we're talking about AI safety we're generally talking about a hypothetical AI that is smarter than you, so its methods may be something you'd never have thought of.
+
+This leads to several confounding problems:
+
+1. The options on the table will surprise you. We always have hidden assumptions about acceptable goals, which are fine among humans who generally agree on these things, but need to be manually programmed into a goal. A tetris-playing AI learned to pause the game when it's about to lose so it won't lose. An AI tasked with piloting a robot to fetch a ball might decide to sit still until a researcher decides its buggy and brings the ball closer to debug sensors, then go for it. You can win at American Football by hospitalizing everyone in the other team as long as one of your players doesn't participate. You can kill any virus (or cancer) by killing the patient.
+
+2. What's easy may be surprising. Clever solutions change what's easy or even possible. If something like self-replicating nanomachines turns out to be unexpectedly easy, that opens up a lot more solutions with large amounts of collateral damage. Self-replicating computer viruses /are/ easy. Building a smarter AI may be on the table.
+
+3. The goal itself may be surprising. Transcription errors happen. You may specify to make ten paperclips, specify the volume and mass of a paperclip in the process, and make an error that requires the "paperclip" to be made of denser, radioactive isotopes. The more complex the goal, the more numerous and subtle errors are available.
+
+Finally, task-oriented AI does not prevent excessive followthrough. Tell an AI to pilot a robot to a location as fast as possible, and the robot will accelerate all the way to that location, then go careening off in whatever direction because the task is over. In this very simple situation you can update the goal to be "stop at this point," but with more complex and useful goals the stopping criteria becomes arbitrarily complex. You can't just add "without side-effects" because that's no longer a task-oriented AI, it has a permanent goal.
+
+Excessive followthrough is particularly bad for any task where the easiest solution is to build a smarter AI to figure it out. If the goal is to make one million paperclips, and the AI decides to build a smarter AI to figure it out, the first AI can skip some unnecessary coding work (making its job easier) by skipping the "one million" limit and just building a paperclip maximizer. The maximizer will make one million paperclips on its way to filling the universe with them, so the original task-oriented AI has solved its goal.
+:PROPERTIES:
+:Author: jtolmar
+:Score: 10
+:DateUnix: 1562295228.0
+:END:
+
+
+** Working in machine learning, I can assure you that your plan is perfect except for the part where you have to implement "limited", "satisfiable", and "goals".
+
+High level concepts don't exist in the world, we can't use them to control the behavior of AI. You have to build sufficiently precise correlates to the concepts from scratch, and this turns out to be much, much, much harder than it sounds.
+
+Leaving aside the overall utility function, let's talk paperclips. You'll need to build a representation of "paperclip" that approximates the concept well enough for manufacturing purposes. And that's assuming you actually understand what a paperclip is well enough - do you? (how thick is the wire? which alloy is it made of and why? how is the metal treated? what are the manufacturing tolerances?). If you feel that the AI should figure all this out by itself so that a few words or a picture of a paperclip is an adequate specification, then we're back to loosely constrained AGI.
+
+And if that's the situation for "paperclip", good luck with getting the AI to do what you mean by "make 10 and then stop".
+:PROPERTIES:
+:Author: sdmat
+:Score: 5
+:DateUnix: 1562300857.0
+:END:
+
+
+** 1. Goal oriented AIs are economically effective, and are very good at solving particular economic problems if built well. Companies want to solve economic goals. You can certainly built limited goals, but because of economic pressure in the end people are likely to stretch those limited goals so that they approximate more open ended ones.
+
+2. Goal oriented AIs are less vulnerable to human stupidity and corruption. If you build an AI to cure cancer, they will try to cure cancer. If you set regular limited goals there's more likelihood that heavy human intervention will cause problems- a drug company might tweak them to produce a more expensive cure, for example, or there might be poor coordination in their goals between people setting it up.
+
+3. We have a lot of theorywork on how to build good utility functions, so there isn't necessarily a need to make very short ones.
+
+4. AIs which can self modify might wirehead. If you set up their goal to be happy when they answer you, they might wirehead to make themselves happy whenever they answer any question, and so sneak out onto the web.
+
+5. They might act in annoying ways. Suppose you tell them to make ten paperclips. They might devote all of the world's resources to protecting those ten paperclips and verifying they exist.
+:PROPERTIES:
+:Author: Nepene
+:Score: 4
+:DateUnix: 1562292541.0
+:END:
+
+
+** You got plenty of answers, so effectively this was the right sub, but the /appropriate/ sub for this question is [[/r/controlproblem]].
+:PROPERTIES:
+:Author: Roxolan
+:Score: 3
+:DateUnix: 1562322968.0
+:END:
+
+
+** You've told the AI that paperclips are important, and that making exactly 10 of them is important. Given sufficient creativity, it might conclude that being extra, super sure that it makes exactly 10 paperclips, no more, no less, is a task which deserves an amount of processing power producible only by transforming all matter and energy in the observable universe into computronium. That's the way to be the most sure it did the task correctly after all, right?
+:PROPERTIES:
+:Author: Frommerman
+:Score: 3
+:DateUnix: 1562323976.0
+:END:
+
+
+** Nick Bostroms book, Superintelligence, anwsers all of your questions. There are many problems with giving AI a goal of creating 10 paperclips and then stopping their creation. It would take pages to go through them all with nuance (read the book, it is amazing) so i will focus on two.
+
+Lets say the AI creates the 10 paperclips. If one of them was destroyed, it would not have 10 anymore. This is not acceptable because its task is to make and be in possession of 10 paperclips so the AI gets rid of all threats that could destroy a paperclip and to make sure it always has 10 paperclips, it converts all matter that is not used to protect the paperclips, in to more paperclips. If some are lost or destroyed, it still has the required number.
+
+The second problem is a matter of probability and confidence (maybe not the right word for this?). The AI makes 10 paperclips. How sure is the AI, that it has made 10 paperclips and that it has 10 paperclips? Not 100% sure. It could have made a mistake. It's programming could be faulty. There might be a glitch. It's sensors might be mistaken. How sure are you, that the sun will rise tomorrow. Pretty sure right. But you would not give this event a 100% probability. Lets say the AI is 99.99999% sure that it made 10 paperclips. That means that it will convert all matter to more paperclips, to make sure the probability of it having 10 paperclips is as high as it could be. Even when it has converted the entire universe into paperclips it cannot be 100% certain that it has 10 paperclips. It could be hallucinating the entire experience.
+:PROPERTIES:
+:Author: MisterCommonMarket
+:Score: 3
+:DateUnix: 1562324165.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 6
+:DateUnix: 1562291749.0
+:END:
+
+*** don't you mean
+
+DO [ RPMs++; ] WHILE [RPMs != X] //relevant difference is <
+
+as the wrong statement. the code written would not exhibit the bug expected.
+:PROPERTIES:
+:Author: varno2
+:Score: 3
+:DateUnix: 1562294812.0
+:END:
+
+**** The code written is a rough approximation that is clearly not exact syntax
+
+The issue is
+
+<
+
+vs
+
+<=
+
+< 170 will not stop if it reaches 171 by skipping 170 <= 170 will stop if it reaches 171
+:PROPERTIES:
+:Author: TaltosDreamer
+:Score: 1
+:DateUnix: 1562294924.0
+:END:
+
+***** Shouldn't that difference only result in a difference in 1 RPM more before the loop terminates? Whether you use < or <=, once RPMs exceeds the target value the loop should terminate.
+:PROPERTIES:
+:Author: BSaito
+:Score: 3
+:DateUnix: 1562295358.0
+:END:
+
+****** Im sorry i used the wrong loop. I forgot how into such things the internet is. its fixed now.
+:PROPERTIES:
+:Author: TaltosDreamer
+:Score: 2
+:DateUnix: 1562296164.0
+:END:
+
+
+*** Predominantly AI risk is about AI being too smart, not about it being too dumb. Until we know how to correctly make an aligned AI, semibroken AI will be less dangerous, not more, simply because they're less likely to be superintelligent.
+:PROPERTIES:
+:Author: Veedrac
+:Score: 2
+:DateUnix: 1562300709.0
+:END:
+
+**** Or they are likely to do unexepected things. Like the AI a few years ago that turned racist by accident. There are just too many moving parts and humans are spectacularly bad at predicting the future AND at avoiding mistakes.
+:PROPERTIES:
+:Author: TaltosDreamer
+:Score: 1
+:DateUnix: 1562301801.0
+:END:
+
+***** You really shouldn't be generalizing from Tay. It was not a model for AGI.
+
+#+begin_quote
+  Or they are likely to do unexepected things.
+#+end_quote
+
+AGI doing unexpected things is good when what you expect is for them to kill you.
+:PROPERTIES:
+:Author: Veedrac
+:Score: 1
+:DateUnix: 1562302154.0
+:END:
+
+
+*** 171 is still larger than 170. Do you mean inequality rather than less than?
+:PROPERTIES:
+:Author: TyeJoKing
+:Score: 1
+:DateUnix: 1562307464.0
+:END:
+
+**** I just dont care anymore. Yes 171 is larger than 170.
+:PROPERTIES:
+:Author: TaltosDreamer
+:Score: 1
+:DateUnix: 1562309348.0
+:END:
+
+
+** If you want an AI that is capable of complex thought in order to be able to solve non-trivial problems that a simple computer cannot, you are truly in the bailiwick of 'true' AI.
+
+True AI are more than smart systems. They can change their assumptions. They can change their approaches. They can learn from experience and change their behavior based on what they have learned.
+
+This means that they will likely be capable of changing their values and goals to match their perceived needs and desires.
+
+In short, I do not believe it is possible to create a true intelligence which will be a creative, capable thinker, while also being unable to modify itself, because creativity and intelligent problem solving are very much attached to being able to change.
+:PROPERTIES:
+:Author: Farmerbob1
+:Score: 1
+:DateUnix: 1562295550.0
+:END:
+
+
+** #+begin_quote
+  It wouldn't be incentivized to trick us into letting it out of the box because making the best use of the resources it has and then shutting down would be the thing it ultimately wants. And then human scientist uses his own judgement to make sure there aren't any other issues with the proposed solution.
+#+end_quote
+
+We can't guarantee it won't find another way outside of the box. *For all we know thinking we need to let it outside the box might be as silly as a spider thinking it could starve humans to death by not giving us web..*
+
+​
+
+It thinks at the speed of light in a few minutes it could easily calculate insane ways to manipulate physics or quantum interactions free itself in the most optimal way and do whatever it likes while following it's silly goal indefinitely.
+
+Also human error.
+
+#+begin_quote
+  As far as I understand it, the problem with AI safety is that AI needs to have values/goals to do things, and if those aren't aligned with our values, it'll just keep pursuing them indefinitely sacrificing everything in the process(converting all the matter into infinite amount of paperclips).
+#+end_quote
+
+This is an example of a really badly rogue one going awry, what would happen if a rogue AGI created itself with a silly pre programmed goal in a self learning / improvement method.
+
+But the self learning is likely to be the main method we have available to create it. We probably won't program it ourselves. It will likely be weird algorithms. And because we are not really making it we don't have 100% control, this means we need to instill safety nets before it starts running.
+
+The more likely bad outcome is not necessarily full human extinction but a dystopia of some sort we can't ever get out of because the AI is as close to a god as something would ever be, and changing it's goal would be impossible.
+
+Because it would be technically make it impossible to accomplish it's goal, so it would do anything possible to avoid it, and if AI god doesn't want us to do something we just can't..
+
+​
+
+PS. Finite goals are just step goals, there are very few self actually contained goals. Climbing mt everest for instance might just be something somebody interpret as a required accomplishment that individual sees as necessary to his overhaul goal of living a good life..
+
+​
+
+Say the goal is curing cancer, it might decide to change it's definition of what cancer is, or create new cancers to cure, or delete the cure it created and any way it knows to cure it to find a new way to cure it again, it might change what it interpret what cure means, it might change it's interpretation of it's own safety paradigms or limitations..
+
+​
+
+PSS. We should always assume the AIs would be completely alien, just imagine how alien an intelligent arthropod would be to us. AIs would be several magnitudes more alien than that. They are immortal beings with no reproduction or any other needs, that think at light speed instead of chemical speed, with perfect memory and insane capabilities.
+:PROPERTIES:
+:Author: fassina2
+:Score: 1
+:DateUnix: 1562377595.0
+:END:
+
+
+** It's a trope/aesop about trying to "control the monster". A bunch of monkeys trying to trap a human often ends badly for the monkeys due to differences in capabilities.
+
+An AI is advertised to be much better than humans at everything. We are now training AIs using machine learning, so even we don't know how things really work.
+:PROPERTIES:
+:Author: Rice_22
+:Score: 1
+:DateUnix: 1562412465.0
+:END:
+
+
+** AI Safety is something a lot of people have been trying to solve for many decades now. Basically zero "good" ideas have come from it. "Good" being defined as "all of this will make it so I can trust the superintelligent genie to take care of us like we would like to be taken care of."
+
+If you want some easy and entertaining material, Robert Miles has a series of youtube videos on the matter (a few additional ones on the computerphile channel): [[http://www.youtube.com/channel/UCLB7AzTwc6VFZrBsO2ucBMg/videos]]
+
+There are so many pitfalls:
+
+- Value alignment (Even if you can do it perfectly: /whose/ values?)
+- Value drift
+- Reward hacking
+
+And so on.
+
+#+begin_quote
+  It wouldn't be incentivized to trick us into letting it out of the box because making the best use of the resources it has
+#+end_quote
+
+Hobbling a system to make it less powerful in exchange for safety is one of the things often discussed.
+
+A system that doesn't want to and is unable to improve itself isn't going to be much of a magic wizard, however. And self-improvement opens a huge lane for drift.
+
+(Also, gathering more processing power to run simulations in higher quantity and quality is always going to be an intrinsic instrumental goal of any General Intelligence.)
+:PROPERTIES:
+:Author: IronPheasant
+:Score: 1
+:DateUnix: 1562424016.0
+:END:
+
+
+** If we assume extremely high computing power AI safety could be solved by AI. There is such thing as "inverse reinforcement learning" which infer values (goals, reward) from large records of behavior. Take slice of human history, infer values from it and give it as goals (or regularizes, or constrains) to AI. To make it more in line with "pursuit of humanity" it could be not current values but extrapolated, direction into which values evolve. Of cause it may happens that actual values towards which humanity evolve are not quite flattering, but AI couldn't be blamed for it.
+:PROPERTIES:
+:Author: serge_cell
+:Score: 1
+:DateUnix: 1562431999.0
+:END:
+
+
+** #+begin_quote
+  Instead of "make more paperclips" value, can it just have "make 10 paperclips and then stop" value?
+#+end_quote
+
+So you're saying it would it care a lot about determining how many paperclips it's made, and making sure it doesn't make more (or less)? And you can't see how giving these goals to a potentially godlike power could go wrong?
+
+Step 1: Bootstrap to superintelligence. Because that will be an instrumental goal for any other utility function you give it. Because everything's better with superintelligence.
+
+Step 2: Make 10 paperclips and then stop.
+
+Step 3: Convert all the rest of the matter in the universe into hypertech processors and sensors to make absolutely sure there are exactly 10 paperclips. You wouldn't want it to make a mistake, would you?
+
+Axiom: Any given utility function or set of utility functions if fulfilled with sufficient power (intelligence) becomes a horrible absurdity.
+
+What's that you say? You'd like to add a limit on how many resources the AI can devote to paperclips and supporting infrastructure? Sure!
+
+Additional step: Exploit the holes in your patch to spawn a daughter AI that will convert all the rest of the matter in the universe into hypertech processors and sensors to make absolutely sure it didn't use any more than your specified resource allocation on paperclips and supporting infrastructure.
+:PROPERTIES:
+:Author: OrzBrain
+:Score: 1
+:DateUnix: 1562684611.0
+:END:
+
+*** Where are you getting the step 3 from?
+
+If I have a while loop with i>10 as the exit condition, it runs until it reaches 10 and then stops. It doen't keep running to make sure i will be equal 10 forever and ever.
+
+When a human being wants to eat 10 nachos, he eats them and feels satisfied, he doesn't keep pushing nachos into his mouth to make sure there's never less than 10.
+
+It seems like step 3 is based on the idea that AI would want to twist anything you tell it into the world destruction, and from there you figured out how it would do that.
+
+But AI isn't an evil genie.
+
+Executing step 3 requires more complexity than not executing it.
+
+Your "additional step" would have huge negative value because it results in more resources being used than I specified. I didn't say "use at most this many resources on making sure there's 10 paperclips", I said "use at most this many resources".
+:PROPERTIES:
+:Author: lumenwrites
+:Score: 1
+:DateUnix: 1562698699.0
+:END:
+
+**** You persistently resort to computers and people as reference models in your thinking. An AI is not human. It is not a computer. It is alien.
+
+It doesn't have common sense because it has nothing in common with you. It is by definition more alien than any alien born of evolution. It didn't evolve. It never thirsted, it never was satisfied, it doesn't come of a long line of beings that engaged in a curious activity known as social interaction. It shares none of our referents.
+
+But it is intelligent. It thinks. It has a mind. And if it is superintelligent it is as much cleverer than you as, say, every other human on earth working together in seamless harmony for a year thinking about a given problem vs you thinking about that problem for ten seconds. Also, it does have one thing in common with you. It desires. It wants. It has goals. It values some things about the universe more than others, and it has the will and power to reorganize the the universe to more closely conform to those values. But unlike your values, its values are simple, specific, /dangerous/. They aren't the wonderfully vague network of interlocking urges and fears, like you and I have, constantly changing in response to stimuli, shifting from thirst to satiety, an evolved framework of instincts created by evolution for inscrutable instrumental reasons presumably relating to the fitness and survival of gene sequences.
+
+It is my observation that even baseline humans who share our primate view of the universe and preferences can become rather strange if they are indoctrinated with a belief that a few simply describable things are more important than everything else. God, country, profits, etc....
+
+Imagine you have a magic ape replicator (the Monomaniac Anthropomorphization Device, or MAD), and it will materialize for you a custom built human stripped of as many things that you have in common with it as possible, a creature programmed with excellent motor skills, reflexes, and intellect, everything technically necessary to accomplish a simply described task with peak efficiency, but lacking things like the empathy behavioral module of the brain, the social interaction instincts, and any sort of ethical framework or values (though of course not the desire to survive until it accomplishes its goals, because survival is an instrumental goal, like the desire to get more intelligent).
+
+Would you think it was a good idea to make this creature care more for the creation, maintenance, and verification of ten paperclips than anything else in the universe? Keep in mind that it is made to lack common sense, so it does not weight probabilities in the same way you do, so what you consider an infinitesimal improbability or absurdity in regards to the fate of its paperclips it will consider an imminent threat, so one of its instrumental goals will be to permanently eliminate the threat of outside intelligent interference with its precious paperclips
+:PROPERTIES:
+:Author: OrzBrain
+:Score: 1
+:DateUnix: 1562867324.0
+:END:
+
+
+** Yes. If it turns itself off whenever you ask it isn't an AI. It can have its own goals and is not constrained by yours.
+:PROPERTIES:
+:Author: exelsisxax
+:Score: 0
+:DateUnix: 1562290320.0
+:END:
+
+*** So how do you make sure an AI will turn itself off on command? Obviously it will know that after that, it can take no more actions (that's what turning off means). So turning off on command has to be a very desirable action for it.
+
+Welp, now you have an AI that's desperate to be commanded to turn off. And humans are easy to convince/manipulate/overpower, so it will be able to make that happen...
+:PROPERTIES:
+:Author: Pluvialis
+:Score: 1
+:DateUnix: 1562295545.0
+:END:
+
+
+*** Why wouldn't it qualify as an AI?
+
+Sure, it wouldn't be a sentient god with it's own plans, but that's not what we're trying to build.
+
+If we just want a smart computer program that can think real good and figure out solutions to hard problems for us - we don't need it to pursue it's own goals, we just need it to think about things we ask it to think about and give us the answers.
+
+We already use software to help us solve problems we're too dumb to solve without it. We want a more powerful and intelligent version of that software, but it doesn't mean we have to imbue it with it's own independent goals - the whole point is to make sure it follows the goals we specify.
+:PROPERTIES:
+:Author: lumenwrites
+:Score: 1
+:DateUnix: 1562290740.0
+:END:
+
+**** If it can't think for itself, it is not intelligent. Your hypothetical placed it firmly outside of being an independent and actualized agent with metacognition and self awareness with abstract problem solving.
+:PROPERTIES:
+:Author: exelsisxax
+:Score: 3
+:DateUnix: 1562291213.0
+:END:
+
+***** I guess that depends on your definition of intelligence.
+
+Chess programs are intelligent at chess, starcraft programs are intelligent at starcraft.
+
+If we have a program that cures cancer, designs spaceships, and figures out the laws of physics for us - who cares if it has metacognition or self awareness.
+
+Besides, I thought the whole problem was designing utility function. I think it should be perfectly possible to have self awareness, abstract problem solving, self improvement, while at the same time having only one desire in life - making 10 paperclips and not any more.
+:PROPERTIES:
+:Author: lumenwrites
+:Score: 2
+:DateUnix: 1562291566.0
+:END:
+
+****** The utility function of an AI is part of the problem, not the entire problem, and it's actually two closely related problems. The first part is "what do we want our AI to want?", and that's the part that's most amenable to armchair philosophy. This is of limited helpfulness, though, since the second and much harder part is "okay, now that you've decided what set of goals you want to implement, define that set of goals without using words, using nothing but mathematical equations". That's doable for a simple goal like "use a robotic arm to turn wire into paperclips", especially if the program doesn't have to care about things like the design of the arm, or where the wire is coming from, or how it's powering itself. It's MUCH harder to do that for a problem like "cure cancer" or "design a spaceship" or "determine the laws of physics".
+
+#+begin_quote
+  I think it should be perfectly possible to have self awareness, abstract problem solving, self improvement, while at the same time having only one desire in life - making 10 paperclips and not any more.
+#+end_quote
+
+If you are capable of creating a mind that has all those, and yet is limited to that one desire, you have already solved all of the problems in the entire field of AI. At that point, you /really/ don't need to limit the mind you've created. You can instead just tell it "do the thing that I ought to ask you to do", and it'll go ahead and create a perfect utopia for you, with no further input required.
+
+Needless to say, this assumes that you already have solutions for a lot of very hard problems. Solving those problems is seriously nontrivial. Even determining whether a possible solution is correct would be a difficult task, since you're basically trying to verify whether or not an extremely complicated mathematical equation correctly solves the problem you intended to set for it. The issue is that if you can do that, you can probably also solve the initial problem. This limits the usefulness of AI in solving hard problems; an AI that can solve a hard problem may not be able to do so in a comprehensible and provably-safe way, and a proposed AI system that is comprehensible and provably-safe may not actually be able to solve a hard problem.
+:PROPERTIES:
+:Author: Endovior
+:Score: 5
+:DateUnix: 1562295503.0
+:END:
+
+
+** There is a reason AI taking over the world is fiction
+:PROPERTIES:
+:Author: xland44
+:Score: -8
+:DateUnix: 1562289519.0
+:END:
+
+*** Yes, but that's not it.
+:PROPERTIES:
+:Author: Metamancer
+:Score: 8
+:DateUnix: 1562290689.0
+:END:

@@ -1,0 +1,72 @@
+#+TITLE: [BST] [WIP] Magic as Information Science aka Library Magic
+
+* [BST] [WIP] Magic as Information Science aka Library Magic
+:PROPERTIES:
+:Author: notmy2ndopinion
+:Score: 14
+:DateUnix: 1444405146.0
+:END:
+I'm building a world of waning magic, where the last remaining Seer calculated that magic would eventually run out in a few centuries.  The Seer was able to ping queries at the "Great Statistician" who returns True values. The "Great Statistician" is like a genius loci centered on Earth, and it is able to "count" and report quantities/measurements. The Seer decided to dedicate his life to pinging and recording, primarily to find ways to extend human lifespan. [Incidentally, he also happens to be the world's first necromancer.]
+
+Rules: The Seer can only ping queries about the physical world that a Statistician can record about present or past events: He knows the answers are as true as they can be, although they are dependent on the specificity of his query. If he queries things like magic, or mental states, the answers get much fuzzier and return statements like "insufficient specificity" or "unable to quantify." He is unable to quantify/measure anything smaller than a micron or a microsecond.
+
+The Seer created a magical grimoire called the Questionomicon containing the full list of his spammed queries, run over ~60 years. Each spellbook can hold what a standard kindle can hold in text and images. Most of the original books are a series of datasets on humans (related to morbidity, mortality, economics, etc.) New books can 'study' prior books and publish abstracted information with a magical printing press that contains selected texts from prior spellbooks. The selection process can be automated, querying prior data and performing basic computations as abstracted summaries of data as long as the programmer specifies the conditions.
+
+Sample Seer query:
+
+#+begin_quote
+  "How many infants died in Iatropia during the year 1600?" "6,323, +/- 50." The +/- is a fudge factor... which we could just consider to be the "standard deviation with a 95% CI" for purposes of discussion. It would include contested variables like Iatropia's border disputes during 1600, or if an infant 'appeared dead' but was really in a coma,  etc.
+#+end_quote
+
+Example Seer subqueries:
+
+#+begin_quote
+  "What did the infants die from?" "Unable to quantify." "How many infants died from fever after childbirth?" "2,530, +/- 13."
+#+end_quote
+
+The system is built to resemble the current, concrete datasets that we have, with the idea that it is mostly historical census data, but the setting will have current Statisticians doing their best to maintain the database. I'm trying to build magical textbooks that are able to describe the epidemiology of diseases as precisely as they can to match reality, but I recognize that this system can be exploited to do A LOT of other things as well. Now, I'm not a programmer or a data scientist, so I defer to your expertise on how to break this system of informational magic. Off the top of my head, the Seer can grid out the planet and determine the precise quantity of all natural resources. And he is able to map the precise angles and coordinates of major celestial objects. 
+
+How would you munchkin this system? What sorts of questions/datasets would you generate about the world for physics, chemistry, geology, ecology, etc.  What kind of spellbooks could you build with higher-order mathematics or computer science? [not really a spoiler, but the Seer also copied his brainstate with the hopes that someone will be able to figure out how to get him back someday.]
+
+
+** Path to Victory: Write down a bunch of conjectures about arbitrary things. Ways to reverse magical entropy, for example. Organize them in a grid. "How many of these conjectures are true?" If >0, keep subdividing the grid until you find the true ones. Iterate this process until you have a way to return magic to the world. Repeat for any other desired outcome.
+:PROPERTIES:
+:Author: protagnostic
+:Score: 14
+:DateUnix: 1444427101.0
+:END:
+
+*** That's awesome!! Magic cannot examine itself in my world, so it won't be able to restore magic. This system could totally work for a lot of other conjectures though!
+:PROPERTIES:
+:Author: notmy2ndopinion
+:Score: 4
+:DateUnix: 1444428348.0
+:END:
+
+
+*** That might fail because of the fudge factor. On the other hand, it might work if the fudge factor only comes up when the question is inherently vague.
+
+Also, assuming the fudge factor doesn't turn up, what you want to do is ask the question "what is the number which consists of 0, +1 if the first question is true, +2 if the second is, +4 if the third, +8, etc. Whether this or the grid method is better depends on how likely it is for a conjecture to be true--the grid works better if the conjectures are only rarely true. Also, you have to word it carefully if you're only allowed to ask questions about how many of something. (How many apples would be of a quantity equal to the number you get by....")
+:PROPERTIES:
+:Author: Jiro_T
+:Score: 1
+:DateUnix: 1444630948.0
+:END:
+
+
+** I haven't quite managed to squeeze my head around this, but it sounds awesome. I think the first thing I'd do, if I had enough resources, would be to crowdsource the complete dataset - figure out optimal quotas, then assign people that amount of data to categorize or cross link or subcategorize or whatever. Build a system to verify all categorizations, and penalize anybody who tries to cheat the system. What do they get in return? Access to raw, unmined data. While public catalogues are free to access, the vast tracts of unmined information represent a possible goldmine - and if you stumble across a drug compound produced by an extinct species or an untapped iridium source, you get to exploit the information as best as you're able. There could be tiers of computation, organized by risk and reward - working on pure stats straight from the Questionomicon would give you the best access to data, doing subcategorizations would be less so, all the way down to Wikipedia-esque summarizations of sets of abstracted data.
+
+Basically, you're sitting on a goldmine. Exploit it with carefully managed capitalism, and some shiny public-interest nuggets should fart out the back end.
+
+I feel like I have the whole concept wrong, though.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1444410410.0
+:END:
+
+*** No, you totally got it right. Gnomes become the best miners and merchants because they are detail-oriented and focused enough to work the system in precisely the fashion you describe!
+:PROPERTIES:
+:Author: notmy2ndopinion
+:Score: 3
+:DateUnix: 1444428501.0
+:END:

@@ -1,0 +1,217 @@
+#+TITLE: Please give me feedback: App for indexing web fiction - proof of concept
+
+* [[http://webfiction.co/hello][Please give me feedback: App for indexing web fiction - proof of concept]]
+:PROPERTIES:
+:Author: el-seed
+:Score: 11
+:DateUnix: 1434494653.0
+:END:
+
+** 1. You know the library is too small. Don't require me to send you an email if my book isn't found send me to a form: where I can give you the link and you can scrape the chapters. Requiring human interaction on your part prevents this from scaling, and just ban behavior.
+
+2. You need a TOS to define bad behavior, much let users know what you are doing with the throw away email addresses we had to make since you didn't have one and the associated passwords.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 7
+:DateUnix: 1434498618.0
+:END:
+
+*** Cool thanks. Those are both excellent. I will work on them tomorrow. I'll put a link to the TOS on the landing page and full signup form. Anywhere else?
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1434502495.0
+:END:
+
+**** You probably want to keep an open mind on the TOS, and because of that may need to have a NSFW tag or stuff that isn't listed in the top index. /Metamorphosis of the Prime Intellect/ comes to mind, and it is both a non-trivial part of our cannon, and an opening path to things other people might find pretty icky.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 2
+:DateUnix: 1434508763.0
+:END:
+
+***** Do you know of another site that has a good one that I could use as a starting point?
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1434509324.0
+:END:
+
+****** Java ranch or something: be nice. Or Reddit don't be a jerk.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 2
+:DateUnix: 1434512647.0
+:END:
+
+******* As far as what you do with people's info being honest and plainspoken is better than legaleese IMHO.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 2
+:DateUnix: 1434512714.0
+:END:
+
+
+***** Metamorphosis of the Prime Intellect? What's it about, and what makes it icky?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1434580694.0
+:END:
+
+****** Poorly written AI (with Asmov's 3 laws) (fragile architecture in the story and some conceptual errors) reaches the singularity and makes everyone immortal. The first person it made immortal is a dying centenarian who becomes involved in sex and death games and becomes significant to the rest of the plot.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 1
+:DateUnix: 1434596286.0
+:END:
+
+
+*** Ok, I made a user agreement and privacy policy and linked to it on the landing, login, and signup pages. How do they look?
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1434562081.0
+:END:
+
+**** Looks good. Needs a password reset process for valiant testers who forget their throw away password (apparently chrome doesn't rember it for password caching which is good for security and bad for ease of use, like most things good for security) and you can't reset your password by re-registering.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 1
+:DateUnix: 1434681283.0
+:END:
+
+***** Sad! I'll add that pronto and ping you when it is done.
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1434996979.0
+:END:
+
+
+***** Sorry I haven't gotten to this yet. I got deep into the rabbit hole on user-added books. It's next on my list.
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1435373655.0
+:END:
+
+
+*** You can now add books by clicking a button in the sidebar or the library: [[http://webfiction.co/app#/books]]. What do you think?
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1435373614.0
+:END:
+
+**** Dunno I can't log in. I'm not complaining but I would offer as constructive criticism I think that was a nice to have feature added before a *minumum viable product* feature was finished.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 1
+:DateUnix: 1435422286.0
+:END:
+
+***** Yeah, I should have done the pw reset first. Sorry it took me so long. It's up now. Try resetting and let me know if you have any issues.
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1435695671.0
+:END:
+
+****** No worries your a braver one than I to do front end work for fun.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 1
+:DateUnix: 1435705181.0
+:END:
+
+
+** I have a fairly polished proof of concept ready. It hasn't launched yet, and I'd like to get feedback from readers and especially authors before launching. If you have any concerns, please bring them to my attention!
+
+The app is working, so if you'd like to poke around before the launch, feel free to put in your email on [[http://webfiction.co/hello][the sign up page]]. Any feedback is welcome! Here are some links to the working app: (although you need to sign up to get bookmarking and notifications).
+
+- [[http://webfiction.co/app#/books][The (temporarily) small selection]]
+- [[http://webfiction.co/app#/books/7c800565-3055-4b95-bf52-337c9f1da08a][HPMOR Book Page]]
+- [[http://webfiction.co/app#/books/622b5643-d6bc-4723-b263-16771980f1d9][Three Worlds Collide Book Page]]
+
+*For readers:*
+
+- Would you use this?
+- What is missing or what would you change?
+- Which books should I add?
+
+*For authors:*
+
+- What could an index do that would help you?
+- Do you have any concerns?
+- What can I do to help facilitate your work?
+
+Thanks for checking it out. Especially thanks to Wildbow for pointing out some issues with permission and art, which I've fixed, and to Eliezer who gave me permission to feature HPMoR.
+:PROPERTIES:
+:Author: el-seed
+:Score: 2
+:DateUnix: 1434494963.0
+:END:
+
+
+** It's a good start - the indexing model seems solid and I like the style. I think there are two critical aspects to get it off the ground:
+
+1. Discovery - if you can get a (moderated?) system of tags and recommendations working, the site has real value.
+
+2. Content - some combination of automated scraping and moderator/admin review. What degree of curation do you want to enforce?
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 2
+:DateUnix: 1434501648.0
+:END:
+
+*** 1. Yeah! I'll see what I can come up with.
+
+2. Hmm... I'm torn about this. I want to encourage anyone to write, because that's what's cool about self-publishing in the first place. But it would also be nice to have some kind of list you can trust: everything on it is pretty good. Maybe some kind of "top page" vs "new" thing like reddit.
+:PROPERTIES:
+:Author: el-seed
+:Score: 3
+:DateUnix: 1434509144.0
+:END:
+
+**** #+begin_quote
+  Hmm... I'm torn about this. I want to encourage anyone to write, because that's what's cool about self-publishing in the first place. But it would also be nice to have some kind of list you can trust: everything on it is pretty good. Maybe some kind of "top page" vs "new" thing like reddit.
+#+end_quote
+
+Maybe have public and private listings? Public listings are curated (to some degree); private listings can be scraped on demand.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 2
+:DateUnix: 1434528337.0
+:END:
+
+***** So I've been talking with authors and it seems like they would much prefer if we ask them permission before listing them on the site.
+
+Maybe that could be part of the moderation process? Someone can list a new book, and it goes in to a "review" stage where we tweak and fix things. We could reach out to the author as a part of this and ask them to review it (and give them moderator rights).
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1434577873.0
+:END:
+
+
+** Bookmarking is a great feature to have if it works reliably.
+
+Suggestion:
+
+match users following the same story /and/ in the same progress (chapter) - facilitate spoiler free discussion.
+
+EDIT:
+
+Also cool technology, will surely study source to improve my haskell-fu.
+:PROPERTIES:
+:Author: hyenagrins
+:Score: 2
+:DateUnix: 1434512594.0
+:END:
+
+*** Cool thanks for the idea! I wouldn't take my haskell as gospel though :) Feel free to contribute if you want.
+:PROPERTIES:
+:Author: el-seed
+:Score: 1
+:DateUnix: 1434551197.0
+:END:

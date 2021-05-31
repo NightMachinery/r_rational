@@ -1,0 +1,150 @@
+#+TITLE: Science Isn’t Broken
+
+* [[http://fivethirtyeight.com/features/science-isnt-broken/][Science Isn’t Broken]]
+:PROPERTIES:
+:Author: xamueljones
+:Score: 16
+:DateUnix: 1440040356.0
+:END:
+
+** For anyone who's curious, I got this due to being on CFAR's mailing list.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 5
+:DateUnix: 1440040639.0
+:END:
+
+*** Amusing thought the idea might be, I'm not going to say that falsifying data for a scientific paper means you're writing rational fiction.
+
+Let's try to keep posts on-topic!
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 6
+:DateUnix: 1440059294.0
+:END:
+
+**** Eh. If this had been tagged [EDU] it would be perfectly suitable.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1440097625.0
+:END:
+
+
+*** What class were you? I went October of 2013 and April of 2014.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1440046159.0
+:END:
+
+**** I only signed up for the mailing list online.
+
+I haven't gone to one of their workshops yet, but I'm hoping to get in for the upcoming one in November or the next one. It kind of depends on whether or not I can get financial aid, or save up enough money from my part time job quickly enough.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1440090527.0
+:END:
+
+***** If you volunteer, I believe you can go for free or extremely reduced cost. Contact CFAR at [[http://rationality.org][rationality.org]] for the correct answer.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1440096505.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1440042326.0
+:END:
+
+*** #+begin_quote
+  what methods you guys use to identify a significant result? For
+#+end_quote
+
+Replying here rather than on the [[/r/skeptic]] crosspost. FULL CYNICISM MODE, ENGAGE.
+
+Personally, when I realized I'd blundered my fucking way into an empirical MSc project, I tried to learn statistics. So I ended up taking undergrad Stats 1 and postgrad Machine Learning 1+2ish, and self-learning Bayesian Stats 1. I'm currently, ever so slowly, making progress on Computational Bayesian Stats and, some day, will manage to work through Jaynes' /Probability Theory/ and actually get the fucking point.
+
+Now, what does that avail me in my actual research? /Jack shit./ How do I actually identify a significant result? /However my advisor told me to/, which seemed to primarily involve some very frequentist data-analysis methods he'd picked up over the ages. Did my results really mean all that much? /No./
+
+What methods do I really suggest? /What your conference/journal editors like./
+
+Of course, I was in computer science, which is /unusual/ for its widespread ignorance of and failure to care about statistical rigor in empirical research.
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1440046198.0
+:END:
+
+**** It's usually hard to get mathematicians to care about experiments, yes. :P
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1440092802.0
+:END:
+
+***** If my advisor had been a theoretician, I'd have been a good deal happier. No, he thought he was an empiricist in a subfield that doesn't make sense, in a field where empiricism doesn't work as well as formal proof.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1440097552.0
+:END:
+
+
+**** Wait, are you saying I /shouldn't/ be try to learn statistics by going through Jayne's /Probability Theory/ first, before any relevant classes? I think I might be doing this wrong. ;)
+:PROPERTIES:
+:Author: Jace_MacLeod
+:Score: 1
+:DateUnix: 1440186320.0
+:END:
+
+***** I tried that at first, and eventually realized that while Jaynes is pretty great, precisely the fact that his point of view remains unpopular makes him /terrible/ for teaching you about statistics /that other people will expect you to use./ Also, he doesn't really cover the computational difficulties of Bayesian statistics very well.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1440199584.0
+:END:
+
+
+*** If you understood the statistical models sufficiently well, you could simply utilize the same data they used, change the assumptions, and come up with a different answer.
+
+The problem with the specific example given is that there may not be a 'real' truth. If two referees are clearly giving more cards to dark-skinned players, that says nothing about the other referees.
+
+What about if a deeper analysis determined that the referees actually seemed to be giving more cards to players with brighter-colored uniforms, and an analysis of those teams determined they had more dark-skinned players. Were the referees just able to see the movements of players in brighter colors better?
+
+Real life scenarios are so much harder to isolate and perform analysis on - especially when you start looking at human reactions. The number of variables can be staggering, and the data extremely difficult to collect accurately.
+:PROPERTIES:
+:Author: Farmerbob1
+:Score: 1
+:DateUnix: 1440042867.0
+:END:
+
+**** I guess that's exactly what I'm worried about. I think for most studies I end up having serious doubts about their methodology / data analysis. How are you supposed to trust any results when like you said, variables / accurate data are hard to acquire and even then there could be some real-life factor that invalidates the conclusion (leaving aside intentional manipulation or unconscious p-hacking).
+
+Edit: A point of this article was that although there are many pitfalls, ultimately science still corrects itself and moves forward. But while it leaves little doubt that with some work you can spot problems with an answer, it doesn't make me confident that even a seemingly good answer might not have problems with it.
+
+Nitpicking, but as regards to assertion that you can't tell if two referees are giving more cards than others, I thought that sort of thing is specifically what ANOVA tests are for (measuring whether there's variation between different populations of data, such as each referee's card history), among others? Similar to how statisticians can tell if certain teachers are manipulating standardized test results?
+:PROPERTIES:
+:Author: whywhisperwhy
+:Score: 2
+:DateUnix: 1440044063.0
+:END:
+
+***** I didn't say that you couldn't tell if two referees were giving more cards than others, I said that two referees are clearly giving more cards than others. If you don't account for that, it can taint the data for the rest of the referees. How you define and eliminate outliers is important.
+
+Even if you prove that some referees are giving more cards to dark-skinned players than others, you have to also be able to show that they weren't simply refereeing matches where there were larger than normal percentages of dark skinned players playing! (I have no idea how referee choices are made) Some home teams may have far more dark-skinned players than others. A referee who only worked home games for such a team might be perfectly fair, but have a higher card-giving ratio for dark-skinned players simply because their home team was disproportionately dark-skinned.
+
+A lot of studies fail to consider things like this. Just look at all the absurd studies around gun control, both for and against.
+:PROPERTIES:
+:Author: Farmerbob1
+:Score: 1
+:DateUnix: 1440046464.0
+:END:
+
+
+** This is why having multiple studies and multiple teams replicating studies is important.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 3
+:DateUnix: 1440065296.0
+:END:

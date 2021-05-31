@@ -1,0 +1,300 @@
+#+TITLE: [RT, HSF] Programmer at Large Chapter 4: Are you serious?
+
+* [[http://www.drmaciver.com/2017/01/programmer-at-large-are-you-serious/][[RT, HSF] Programmer at Large Chapter 4: Are you serious?]]
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 22
+:DateUnix: 1485503942.0
+:END:
+
+** It's millennias into the future and humanity still hasn't solved death? What have they been doing?
+:PROPERTIES:
+:Author: MaddoScientisto
+:Score: 5
+:DateUnix: 1485508539.0
+:END:
+
+*** #+begin_quote
+  It's millennias into the future and humanity still hasn't solved death?
+#+end_quote
+
+The basic premise of this setting (and the Vernor Vinge novels it was loosely based on) is that we're much closer to the point where what's possible plateaus than one might optimistically expect. No FTL. AI is limited or impossible. No magic nanotech. No neural transfers.
+
+Depending on how you count things (basically, whether you count time spent asleep or not. The crew don't), the average crew lifespan is anywhere between about 200 and about 1000 years. They push that up gradually over time, but towards the end of that they're hitting some fairly major limitations on human neural architecture which are hard to resolve without causing major damage, and the body has been repaired so many times that it starts to become extremely fragile.
+
+#+begin_quote
+  What have they been doing?
+#+end_quote
+
+Periodically self-destructing at a global level, or sleeping through most of it amidst the stars.
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 7
+:DateUnix: 1485509500.0
+:END:
+
+**** Did those novels not just take place in the zones of thought? I presume if they were in the sub-light parts of the zones, the wouldn't know about them. And the zones create other problems with things like neural-links.
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1485510446.0
+:END:
+
+***** #+begin_quote
+  Did those novels not just take place in the zones of thought? I presume if they were in the sub-light parts of the zones, the wouldn't know about them.
+#+end_quote
+
+They did, but from the inside of the slow zone it doesn't look much different from That's Just How Reality Works.
+
+There are no zones of thought in Programmer at Large. That's just how reality works in this setting.
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 6
+:DateUnix: 1485511629.0
+:END:
+
+
+** [[https://github.com/akashic-os/akashic-core]] for what amount to my doodles for an "os" with some interesting properties. Our discussion on how logging works inspired me to work a bit more on it.
+
+Written in python.
+
+It uses a json-store called rethinkdb, which has one really interesting property, that you can subscribe to a query, and get an object when it changes, or any document in it changes. That makes a lot of things a lot easier, like remote-procedure calls, log monitoring, etc.
+
+There's a lot of work that needs to be done before it's usable for anything. Right now the only thing that really works is "rq", an editor that converts the data into a more pleasant format (yaml). Right now it only support vim for the actual editor component.
+
+I've been working on helper classes. Like akashic.db.ExitHandler which is a class that will add a heartbeat to every object you put in it, and delete any object you put it it from the database on clean-ish (not -9) exit.
+
+My next big project is a tagged file system layer using fuse, and patching pythons logging to support arbitrary data so it can use more complicated errors.
+
+After that is an RPC system, which I can use as part of an init system, which I can use to run things like dead-object cleanup daemons. Probably extending python-hug.
+
+After that is daemons, like something that generates thumbnails for any file that matches a certain query.
+:PROPERTIES:
+:Author: traverseda
+:Score: 3
+:DateUnix: 1485509500.0
+:END:
+
+*** Did you mean to post this elsewhere?
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 2
+:DateUnix: 1485520264.0
+:END:
+
+**** No. It's marginally relevant to a conversation we had had about how software works in the trade fleet.
+:PROPERTIES:
+:Author: traverseda
+:Score: 2
+:DateUnix: 1485556777.0
+:END:
+
+
+** I like the syllable IDs ! jad-nic, vic-taf, nod-sid... Are you inspired by Urbit in this, or you both draw from another source, or is it independent?
+
+Also, is nod-sid 1 not the same as Tulela? Did Tulela adopt the nod-sid ID when they were born?
+:PROPERTIES:
+:Author: rhaps0dy4
+:Score: 2
+:DateUnix: 1485528151.0
+:END:
+
+*** #+begin_quote
+  I like the syllable IDs ! jad-nic, vic-taf, nod-sid... Are you inspired by Urbit in this, or you both draw from another source, or is it independent?
+#+end_quote
+
+I'm only aware of Urbit in the vaguest sense, so it's not inspired by it but there might be a common source. The syllables are byte representations from a UUID, with crew-members chosen to have the two least significant bytes from their UUID unique amongst living crew on the same ship. The byte->syllable mapping [[http://hewo.xedoloh.com/2015/04/base-256/][comes from here]]
+
+#+begin_quote
+  Also, is nod-sid 1 not the same as Tulela? Did Tulela adopt the nod-sid ID when they were born?
+#+end_quote
+
+Tulela is a use name. It's globally unique amongst living crew, but when its user either dies or manually relinquishes it it comes up for grabs by other users.
+
+So in this case although Arthur is referring to nod-sid 1 as "Tulela" this is technically incorrect. Tulela is the living crew member who currently claims that use name. nod-sid 1 simply happened to be identified as Tulela at the point at which the message was left.
+
+This is a fairly common source of confusion with historical records.
+
+Similarly the nod-sid ID becomes available when its holder dies (two bytes isn't enough for uniqueness across history!), and the dead holder gets a digit after their ID to uniquely identify them (this can technically be used for living crew, but generally you don't and if you don't use a numeral it's assumed you're referring to a live crew).
+
+If you're not bored yet [[https://github.com/DRMacIver/programmer-at-large-notes/blob/master/names.md][there are more details on how all of this works in the world building notes]].
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 6
+:DateUnix: 1485529038.0
+:END:
+
+**** #+begin_quote
+  byte->syllable mapping comes from here
+#+end_quote
+
+Oh I see! That is quite cool, although will anyone memorise the 256 syllables? Anyways the syllables I recall seeing in planet names probably come from the character names in [[https://urbit.org/docs/arvo/basic/]], so it's a similar idea but not the same.
+
+#+begin_quote
+  This is a fairly common source of confusion with historical records.
+#+end_quote
+
+I guess with this reader too. Thank you for explaining!
+
+I like this part of the details:
+
+#+begin_quote
+  Names are best-effort globally unique: When traders meet they synchronize their ship databases, and if they notice a ship of a different identifier which has ever had the same name as their current ship name they must change names to one they know to be unique.
+#+end_quote
+:PROPERTIES:
+:Author: rhaps0dy4
+:Score: 1
+:DateUnix: 1485543527.0
+:END:
+
+***** #+begin_quote
+  Oh I see! That is quite cool, although will anyone memorise the 256 syllables?
+#+end_quote
+
+It isn't actually necessary to do so - you just need to remember people's identifiers, and it's easier to remember vic-taf than to remember what numbers it corresponds to.
+
+That being said, the crew are much much better at language than we would consider normal, so it's probably easy for them to memorise the syllables if they really cared to.
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 4
+:DateUnix: 1485544112.0
+:END:
+
+
+** Why does the computer keep recommending socialization for Arthur, when it's clearly unpleasant for them? I imagine that some level of socialization is necessary for the proper functioning of a crew, and that for most members, the preferred level of socialization exceeds this minimum. Is the computer insisting on (and Arthur being frustrated by) the minimum level, or are its recommendations based on what an average crew member would enjoy?
+:PROPERTIES:
+:Author: bassicallyboss
+:Score: 2
+:DateUnix: 1485552144.0
+:END:
+
+*** The ship's software is not a hedonic utilitarian and it's only really interested in Arthur's happiness to a certain base level (above the bare minimum needed for them to be productively functioning as a member of the crew, but not a /lot/ above that).
+
+The goal of the socialisation program is primarily to keep the crew society well integrated and stable, not because the ship thinks people enjoy it. Normally the suggestions are less "you should socialise more" and more "it would be useful for you to socialise outside your current ingroup".
+
+Fortunately most of the crew /do/ enjoy it. Arthur is just unlucky in that they have a social anxiety disorder and live in a hypersocial society, so they tend to be constantly bumping into the danger zone where the ship thinks they might be failing to integrate properly and gets quite pushy.
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 5
+:DateUnix: 1485552963.0
+:END:
+
+**** Okay. That's sort of what I was thinking. I'm assuming that genetic engineering is not available, or Arthur probably wouldn't have social anxiety in the first place. It seems like there might be some optimization left to perform here--Arthur seems to freak out when social interaction is required, and I can't imagine that's good for either their job performance or crew stability and integration.
+
+I enjoy socializing (though I do find it tiring to meet and be friendly with new people), and I don't really have a good model of the social needs of socially anxious people. Does Arthur actually benefit much from socializing, despite their distaste for it? Or is this mostly for the rest of the crew's benefit, so they can get to know and trust their fellow crewmember?
+:PROPERTIES:
+:Author: bassicallyboss
+:Score: 2
+:DateUnix: 1485553758.0
+:END:
+
+***** #+begin_quote
+  I'm assuming that genetic engineering is not available, or Arthur probably wouldn't have social anxiety in the first place.
+#+end_quote
+
+Genetic engineering and screening are available but tricky when it comes to behaviour - too many useful things are too close to too many problem things. Cases like Arthur are rare but not absurdly so.
+
+(Significant modification of the human mind may be possible in reality, but in this setting 21st century technology is posited to be much closer to the plateau of what's possible than one might hope)
+
+#+begin_quote
+  It seems like there might be some optimization left to perform here--Arthur seems to freak out when social interaction is required,
+#+end_quote
+
+Arthur doesn't usually freak out when socialisation is required, they freak out when they perceive socialisation to be going wrong (and have an extremely exaggerated sense of when that is). Normally they just find it slightly overwhelming. Unfortunately they anticipate both these things, so are rather scared of it and try to avoid it where possible.
+
+#+begin_quote
+  and I can't imagine that's good for either their job performance or crew stability and integration.
+#+end_quote
+
+There's a reason Arthur has an atypically solitary job.
+
+#+begin_quote
+  Does Arthur actually benefit much from socializing, despite their distaste for it?
+#+end_quote
+
+Arthur (and a lot of people with social anxiety in general) actually quite likes socialising as long as it's going well, and will feel sad like most people if they don't get enough of it. It's just that they also find it scary and difficult, and would prefer to stick to more familiar people and situations that they're better able to navigate.
+
+Sometimes when they avoid it it's genuinely because they can't cope with it right now, sometimes they're just letting fear overcome them. In that sense having the ship giving them a constant nudge towards socialisation is actually quite helpful for them, even if they hate it, but it can also go wrong and the ship is not particularly able to distinguish the difference.
+
+#+begin_quote
+  Or is this mostly for the rest of the crew's benefit, so they can get to know and trust their fellow crewmember?
+#+end_quote
+
+It's not so much about knowing and trusting any individual crewmember (though that is part of it) as creating an extremely tightly knit society that is very resistant to factionalisation and other forms of breakdown. The ship's social software pays a lot of attention to the shape of the friendship network and tries to make sure that it's well mixed and everyone is a fairly low social distance from everyone else.
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 7
+:DateUnix: 1485554875.0
+:END:
+
+****** Thanks for the clear and thorough response.
+:PROPERTIES:
+:Author: bassicallyboss
+:Score: 1
+:DateUnix: 1485555323.0
+:END:
+
+
+****** As a person with social anxiety,\\
+can confirm
+:PROPERTIES:
+:Author: TheThrowAwayDevil
+:Score: 1
+:DateUnix: 1487225949.0
+:END:
+
+
+** Saving this for later, but the comments in this thread are very intriguing (and relevant to some ideas of my own).
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 1
+:DateUnix: 1485557207.0
+:END:
+
+
+** For some reason, I expect the whole plumbing system to undergo a cascading failure because /some other bug/ is prevented by temperature watchdog crashes.
+:PROPERTIES:
+:Author: m1el
+:Score: 1
+:DateUnix: 1485691929.0
+:END:
+
+*** The deployment system shipboard is /very/ cautious. Shutdown doesn't just mean "turn all of these things off" it means "over time gradually shut down an increasingly large fraction of these", and the deployment system has a lot of safeguards in it for rolling back to a known good state and screaming for a human to come take look if something goes wrong.
+
+It's not perfect, but it requires a relatively strong shove to actually break things purely by changing the system - the real risk case is when something unexpected happens, and that's a risk both before and after a change (but what counts as "something unexpected" can vary).
+
+We probably /will/ be seeing bugs masked by bugs masked by bugs, but if changing the system through a standard procedure can result in a cascading failure then that is itself a bug.
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 1
+:DateUnix: 1485693408.0
+:END:
+
+
+** Until the last comment about the gym, I honestly didn't realize the protagonist was female. Huh.
+
+Once more the differences between Ship coding and ours proves amusing. The fact bug-hunter programs exist makes sense as soon as it's brought up, but beforehand I was thinking people went around to do it manually. Got a chuckle out of the protag's first thought to find out how many programs hadn't been poked at by humans since launch, only to realize it was /considerably/ bigger than expected and immediately toss that idea for something else.
+:PROPERTIES:
+:Author: Mizu25
+:Score: 1
+:DateUnix: 1485956498.0
+:END:
+
+*** #+begin_quote
+  Until the last comment about the gym, I honestly didn't realize the protagonist was female. Huh.
+#+end_quote
+
+Well, all you know is that the protagonist has breasts. It doesn't follow that they're female.
+
+(The crew don't have the same gender norms as we do)
+
+#+begin_quote
+  I was thinking people went around to do it manually.
+#+end_quote
+
+TBH so was I originally, but then I realised how non-viable that was for the software environment they have.
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 2
+:DateUnix: 1486039386.0
+:END:

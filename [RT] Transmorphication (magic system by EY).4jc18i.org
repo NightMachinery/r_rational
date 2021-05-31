@@ -1,0 +1,184 @@
+#+TITLE: [RT] Transmorphication (magic system by EY)
+
+* [[https://www.facebook.com/yudkowsky/posts/10154210008284228][[RT] Transmorphication (magic system by EY)]]
+:PROPERTIES:
+:Author: raymestalez
+:Score: 16
+:DateUnix: 1463242997.0
+:END:
+
+** Hmm, given the theory-ladenness of observation, what sort of theoretical lens would the magic system be using? What properties of the inputted objects would it know to regard as relevant vs. irrelevant to find where they intersect (I've been meaning to delve more into machine learning and neural nets and stuff but haven't yet, though presumably the sorts of relationships those methods broadly focus on are programmed and constrained by the user)? How does it handle overfitting vs underfitting to the training data? Especially with, like, 2 data points in your training set, you'd overfit like mad.
+
+#+begin_quote
+  For example, honey, a sponge, and a jar that was used for storing ingredients, might have in common the property of 'storing resources'. A wolf's tooth and scorpion's sting might have in common 'tool for causing damage to living things'.
+#+end_quote
+
+How does the magic system know that the jar was used for storing ingredients (I'm guessing "honey" is included because bees make honey "intending" for it to store energy?)? How does it know that teeth and stingers can cause "damage" (what is damage?) to living things? How does it know what living things are? "If this spark of Fire is then applied to something that has the nature of Growth, like wood from a growing tree, the Fire will itself start to grow." What's "the nature of Growth" and how does the magic identify it? Would it identify "the nature of Growth" in all the ambient bacteria and whatever that are coating everything not thoroughly sterilized? How does it distinguish objects from collections of parts and evaluate emergent properties in different sets of circumstances?
+
+Point 2 sort of addresses some of this ("conservatively estimate... simple-ish classifier... narrow-ish boundary"), but with really vague language.
+
+Overall though it sounds like a fun system, but hard to make internally consistent and non-arbitrary. If there's a human-level intelligence on the receiving end interpreting all the spells it could work, though. I'd maybe worry a bit about cultural sensitivity and falling victim to stereotypes with respect to hypothetical hunter-gatherers, too.
+:PROPERTIES:
+:Author: captainNematode
+:Score: 9
+:DateUnix: 1463265096.0
+:END:
+
+*** The magic system doesn't know anything, your associations of the items cause things to work, like in [[http://slatestarcodex.com/2014/04/03/the-study-of-anglophysics/]] when MOP + GUT made POT and GUM with cooking pots near kitchen utensils and weed near pipes and bongs. It operates on a subjective association unless in the wild, like with his ash example.
+:PROPERTIES:
+:Author: Dankestmemelord
+:Score: 6
+:DateUnix: 1463277160.0
+:END:
+
+
+** I like this, but I see a number of issues with it.
+
+*A) What constitutes a /property/?*
+
+The original post indicated that blood and red clay share the property of /color/, which in this case is red. However, the reason they are both red is the presence of iron oxides, so you could also say that they share the property of /oxidized/.
+
+If you started with a chunk of copper and added blood and red clay, would the result be a layer of green patina? If the shared property was indeed red, would the result be red copper, or would it be some other substance which is similar to copper but red in color?
+
+*B) What happens if you add completely dissimilar ingredients?*
+
+The only method for determining the property to apply is whichever property is shared by the inputs. What happens if the system is given a number of different inputs that share /no/ similarity? Presumably, the system would try to find some abstract property that is shared, but at what point does that property become "things that share no similarity"? I'm not seeing a good way of handling this case.
+
+*C) How does the system choose its output?*
+
+Some people have already mentioned that when you're trying to make metal, there's no consideration given to the /type/ of metal. Do I get iron or tin? Is it whichever metal most closely matches the desired shininess and malleability? Will it produce some kind of complex alloy in an attempt to match the inputs as closely as possible?
+
+The system also seems fundamentally not commutative. If I add the /shiny/ property first and then the /malleable/ property, the /malleable/ will be affected by whatever the material turns into after the /shiny/ is applied. Switching them around should result in a different output.
+
+#+begin_example
+  ((rock + $malleable) + $shiny) = ?
+  (clay + $shiny) = porcelain
+
+  ((rock + $shiny) + $malleable) = ?
+  (hematite + $malleable) = iron
+#+end_example
+:PROPERTIES:
+:Author: booljayj
+:Score: 7
+:DateUnix: 1463278953.0
+:END:
+
+
+** Aesthetically, this reminds me a lot Homestuck's alchemy system, where you combine the properties of items by AND-ing OR XOR-ing their addresses. It's great fun if you aren't real picky about whether you craft a pogo-head hammer or a hammer-head pogo, but really stupid if you want a consistently useful system that runs on something other than sheer predestined bullshit.
+:PROPERTIES:
+:Author: Chosen_Pun
+:Score: 5
+:DateUnix: 1463303642.0
+:END:
+
+
+** Well, Transmorphication certainly doesn't look like a magic system for a children's fantasy novel. In books like that author should make rather something simple and dependant more on user's intention (like bending from Avatar or gramarye from Inheritance) or use magic as loosely defined force, that just adds flavor and doesn't resolve any plot points.
+
+I am not saying it's bad, since the premise is very interesting and I love alchemy related stuff (unless it's reduced to potion brewage), but as for now Transmorphication is rather vague and often may become deus ex machina.
+:PROPERTIES:
+:Author: Jakkubus
+:Score: 3
+:DateUnix: 1463310135.0
+:END:
+
+
+** As I'm actively avoiding Facebook, could someone please copypaste the post here?
+:PROPERTIES:
+:Author: Rhamni
+:Score: 2
+:DateUnix: 1463250271.0
+:END:
+
+*** How about with paragraph breaks:
+
+#+begin_quote
+  I've been toying with the idea of trying to write a children's fantasy novel, which would require a simple and intuitive magical system. And what could possibly be easier for young brains, on a cognitive level, than a magical system inspired by simple machine learning algorithms?
+
+  Transmorphication is a machine-learning-inspired system of alchemy. We tell Transmorphication what we want by giving it collections of things that have a key property in common, and then Transmorphication can add that property to base objects. (Like a generative network being set to learn a style of painting by looking at examples, which network can then apply this style to a base image.)
+
+  For example, if you wanted to turn a rock red, you would start with the rock (plus applied Fire, which is the essence of Change) and then add (in quick succession) some red blood and red clay. The blood and clay don't have a shape in common, or even solidity, or any other properties /you/ can think of besides their color. If you're right about that being the only thing they have in common, then this Transmorphication should apply this 'red' property to the rock you started with.
+
+  To produce metal, we could start by placing into a Fire a big rock that we intend to keep its hardness and solidity. We then find at least two things that are shiny (and otherwise have no obvious properties in common, that they don't also have in common with the base rock), and then add at least two things that are malleable (like clay and beeswax).
+
+  (Aside from Transmorphication, the society in question has very little /other/ technology - they haven't invented writing yet, and are still transmitting recipes using verse. They're hunter-gatherers, or small-scale agriculturalists if they figure out how to use Transmorphication to make plows or otherwise enhance their gardens.)
+
+  The laws of Transmorphication are as follows:
+
+  1. Transmorphication takes place in the presence of Fire, which is the embodiment of Change. (The opposite of Fire, namely Cold, will turn fluids solid and make people and other animals sluggish, since it is the essence of Stasis.)
+
+  2. To carry out a Transmorphication, begin with a substance already in the midst of Fire, then bring into contact with it two or more other substances in quick succession. The property held in common by these new substances will be applied to the base substance.
+
+  - Transmorphication will /conservatively/ estimate what this new set of substances have in common - that is, it essays a simple-ish classifier that would be a narrow-ish boundary around the observed materials. The conservative bias lets Transmorphication work from only positive examples, without the classifier just being 'all substances are positive examples' every time.
+
+  - If the set of objects has a property in common with the substance already present, Transmorphication will tend to ignore that property. E.g., if you are starting with a rock and add two solid things, Transmorphication will assume that you're probably not trying to say something about solidity.
+
+  - Transmorphication has some idea of which environmental properties are rare and is more likely to pay attention to unusual or low-base-rate or improbable/surprising properties held in common.
+
+  1. The key property takes its particular flavor or exact settings from the first new substance added within the set. If you turned a rock red by adding red blood /and then/ red clay a second later, the rock would be a bloody shade of red.
+
+  2. The greater the relative volume or mass of the objects in the set, the harder the induced property is applied to the new thing. To make metal that's malleable when hit, without being easily deformable, you'd add a /small/ amount of clay and beeswax to a very hard base material.
+
+  3. Abstract properties can sometimes be generalized and applied, if you find a base material ready to accept them. For example, honey, a sponge, and a jar that was used for storing ingredients, might have in common the property of 'storing resources'. A wolf's tooth and scorpion's sting might have in common 'tool for causing damage to living things'.
+
+  4. The more your collection of objects sharing a property P, is /unlike/ the current base object, the weirder the results you get from applying P to the base object. (Since the Transmorphication has been given no examples of what things-similar-to-the-base-object-in-various-regards look like when P is added to them.) Start with a hat, and add a wolf's tooth and scorpion's sting, and you'll get ???
+
+  5. Transmorphications may be applied in succession. It may get harder to go on as you try to create more /complicated/ objects - a rock transformed to red rock isn't much more complicated; but it's different if you try to add multiple abstract properties. There's no time limit on how long you can wait between Transmorphications, and you can take a Transmorphified substance and put it back in a Fire and add more properties.
+
+  6. If you take a highly Transmorphified substance and then change it by any means /other/ than Transmorphication - e.g. by twisting the substance into a new shape - then the result is likely to be hard to Transmorphify in complicated further ways. (You've taken a complicated Transmorphed object, and then altered it along a new direction likely to be outside Transmorphing's native representation.) This is limiting but also useful, because you can use highly Trasmorphified substances to make relatively Fire-resistant objects, e.g., use metal tongs to hold a base object within a Fire. (Altered objects can still be used as ingredients.)
+
+  7. Naturally, if you make a couple of Transmorphified things by adding the same property to both of them, you are super likely to get that same property again if you use those two things as ingredients.
+
+  Further qualifications and corollaries:
+
+  a. A spark of Fire can be produced by forcibly changing the form of something, e.g., rubbing sticks against each other repeatedly until they begin to wear away, or banging rocks together hard enough that bits of rock break off.
+
+  b. If this spark of Fire is then applied to something that has the nature of Growth, like wood from a growing tree, the Fire will itself start to grow. Obviously, this is a very dangerous process which could easily get out of control.
+
+  c. Putting your hand in Fire quickly becomes painful as the Fire starts to change your hand into ash, which is like a combination of your solid hand and the surrounding non-solid air into partially-solid ash. This is what happens by default when you use Fire on solid things, if you don't add more interesting substances to the Fire before. (The wise might deduce that air is a mix of at least two different gases, since Fire tries to add airiness if you don't give it anything else to work with.)
+
+  d. Living things are extremely complicated, and different parts of them react differently to added properties, which usually kills them. You can use living ingredients with unusual properties, like 'firefly' or 'chameleon', to pinpoint properties for adding to base substances. But living things don't work well as a base material. The property of 'being alive' is likewise impossible to add to a stone just by finding three living things that are alive but have nothing else in common. e. Nobody understands how people or other animals reproduce, but it's obviously a Transmorphication process if a mysterious one. Two people rub together, which is how you'd start a Fire, and then they combine fluids from their body and mutual feelings of love to create a body and soul. A sufficiently passionate kiss with exchange of saliva can get an egg started.
+
+  f. It sometimes takes multiple tries (like three or four, even!) and exotic materials (you might have to hunt all over the forest!) to successfully implement the next step of whatever Transmorphication you have in mind. But once you find a recipe, it should work repeatably.
+
+  Any interesting recipes come to mind?
+
+  In terms of general living standards, how far could an otherwise illiterate society go with this after three or four generations? What are their houses like? Their gardens? Their clothes? Their hunting tools and weapons?
+
+  Or: You describe the recipe, I'll say what I think happens. Successful recipes so far: Pebble + {honey, grape juice} = Everlasting Gobstopper. (Jay Fowler.)
+#+end_quote
+:PROPERTIES:
+:Author: tbroch
+:Score: 11
+:DateUnix: 1463262294.0
+:END:
+
+
+*** #+begin_quote
+  I've been toying with the idea of trying to write a children's fantasy novel, which would require a simple and intuitive magical system. And what could possibly be easier for young brains, on a cognitive level, than a magical system inspired by simple machine learning algorithms? Transmorphication is a machine-learning-inspired system of alchemy. We tell Transmorphication what we want by giving it collections of things that have a key property in common, and then Transmorphication can add that property to base objects. (Like a generative network being set to learn a style of painting by looking at examples, which network can then apply this style to a base image.) For example, if you wanted to turn a rock red, you would start with the rock (plus applied Fire, which is the essence of Change) and then add (in quick succession) some red blood and red clay. The blood and clay don't have a shape in common, or even solidity, or any other properties /you/ can think of besides their color. If you're right about that being the only thing they have in common, then this Transmorphication should apply this 'red' property to the rock you started with. To produce metal, we could start by placing into a Fire a big rock that we intend to keep its hardness and solidity. We then find at least two things that are shiny (and otherwise have no obvious properties in common, that they don't also have in common with the base rock), and then add at least two things that are malleable (like clay and beeswax). (Aside from Transmorphication, the society in question has very little /other/ technology - they haven't invented writing yet, and are still transmitting recipes using verse. They're hunter-gatherers, or small-scale agriculturalists if they figure out how to use Transmorphication to make plows or otherwise enhance their gardens.) The laws of Transmorphication are as follows: 1. Transmorphication takes place in the presence of Fire, which is the embodiment of Change. (The opposite of Fire, namely Cold, will turn fluids solid and make people and other animals sluggish, since it is the essence of Stasis.) 2. To carry out a Transmorphication, begin with a substance already in the midst of Fire, then bring into contact with it two or more other substances in quick succession. The property held in common by these new substances will be applied to the base substance. - Transmorphication will /conservatively/ estimate what this new set of substances have in common - that is, it essays a simple-ish classifier that would be a narrow-ish boundary around the observed materials. The conservative bias lets Transmorphication work from only positive examples, without the classifier just being 'all substances are positive examples' every time. - If the set of objects has a property in common with the substance already present, Transmorphication will tend to ignore that property. E.g., if you are starting with a rock and add two solid things, Transmorphication will assume that you're probably not trying to say something about solidity. - Transmorphication has some idea of which environmental properties are rare and is more likely to pay attention to unusual or low-base-rate or improbable/surprising properties held in common. 3. The key property takes its particular flavor or exact settings from the first new substance added within the set. If you turned a rock red by adding red blood /and then/ red clay a second later, the rock would be a bloody shade of red. 4. The greater the relative volume or mass of the objects in the set, the harder the induced property is applied to the new thing. To make metal that's malleable when hit, without being easily deformable, you'd add a /small/ amount of clay and beeswax to a very hard base material. 5. Abstract properties can sometimes be generalized and applied, if you find a base material ready to accept them. For example, honey, a sponge, and a jar that was used for storing ingredients, might have in common the property of 'storing resources'. A wolf's tooth and scorpion's sting might have in common 'tool for causing damage to living things'. 6. The more your collection of objects sharing a property P, is /unlike/ the current base object, the weirder the results you get from applying P to the base object. (Since the Transmorphication has been given no examples of what things-similar-to-the-base-object-in-various-regards look like when P is added to them.) Start with a hat, and add a wolf's tooth and scorpion's sting, and you'll get ??? 7. Transmorphications may be applied in succession. It may get harder to go on as you try to create more /complicated/ objects - a rock transformed to red rock isn't much more complicated; but it's different if you try to add multiple abstract properties. There's no time limit on how long you can wait between Transmorphications, and you can take a Transmorphified substance and put it back in a Fire and add more properties. 8. If you take a highly Transmorphified substance and then change it by any means /other/ than Transmorphication - e.g. by twisting the substance into a new shape - then the result is likely to be hard to Transmorphify in complicated further ways. (You've taken a complicated Transmorphed object, and then altered it along a new direction likely to be outside Transmorphing's native representation.) This is limiting but also useful, because you can use highly Trasmorphified substances to make relatively Fire-resistant objects, e.g., use metal tongs to hold a base object within a Fire. (Altered objects can still be used as ingredients.) 9. Naturally, if you make a couple of Transmorphified things by adding the same property to both of them, you are super likely to get that same property again if you use those two things as ingredients. Further qualifications and corollaries: a. A spark of Fire can be produced by forcibly changing the form of something, e.g., rubbing sticks against each other repeatedly until they begin to wear away, or banging rocks together hard enough that bits of rock break off. b. If this spark of Fire is then applied to something that has the nature of Growth, like wood from a growing tree, the Fire will itself start to grow. Obviously, this is a very dangerous process which could easily get out of control. c. Putting your hand in Fire quickly becomes painful as the Fire starts to change your hand into ash, which is like a combination of your solid hand and the surrounding non-solid air into partially-solid ash. This is what happens by default when you use Fire on solid things, if you don't add more interesting substances to the Fire before. (The wise might deduce that air is a mix of at least two different gases, since Fire tries to add airiness if you don't give it anything else to work with.) d. Living things are extremely complicated, and different parts of them react differently to added properties, which usually kills them. You can use living ingredients with unusual properties, like 'firefly' or 'chameleon', to pinpoint properties for adding to base substances. But living things don't work well as a base material. The property of 'being alive' is likewise impossible to add to a stone just by finding three living things that are alive but have nothing else in common. e. Nobody understands how people or other animals reproduce, but it's obviously a Transmorphication process if a mysterious one. Two people rub together, which is how you'd start a Fire, and then they combine fluids from their body and mutual feelings of love to create a body and soul. A sufficiently passionate kiss with exchange of saliva can get an egg started. f. It sometimes takes multiple tries (like three or four, even!) and exotic materials (you might have to hunt all over the forest!) to successfully implement the next step of whatever Transmorphication you have in mind. But once you find a recipe, it should work repeatably. Any interesting recipes come to mind? In terms of general living standards, how far could an otherwise illiterate society go with this after three or four generations? What are their houses like? Their gardens? Their clothes? Their hunting tools and weapons? Or: You describe the recipe, I'll say what I think happens. Successful recipes so far: Pebble + {honey, grape juice} = Everlasting Gobstopper. (Jay Fowler.)
+#+end_quote
+:PROPERTIES:
+:Author: Fredlage
+:Score: 2
+:DateUnix: 1463251243.0
+:END:
+
+
+** #+begin_quote
+  Abstract properties can sometimes be generalized and applied, if you find a base material ready to accept them
+
+  A wolf's tooth and scorpion's sting might have in common 'tool for causing damage to living things'.
+#+end_quote
+
+See, when you say the process has no idea what we're thinking... I have to ask, if it's not reading our thoughts, whose is it reading? Because these are clearly concepts it must have gleaned from some mind somewhere with a similar sense of salience to humans. Nature by default doesn't know that venom is important. It might just fixate on the shape of the molecules(although I'm not sure there are such things as molecules in this world) and ignore everything else. There must be a Great Transmorpher, who has learned to care more about whether an object can be used to carry or kill than about, say, the complexity of its molecular structure, and the ability of a transmorpher will correspond to how well they know that Great Transmorpher's mind. Without knowing what the baseline system considers important, you can't anticipate anything. The more you can anticipate, the more of that mind you'll know.
+:PROPERTIES:
+:Author: IWantUsToMerge
+:Score: 4
+:DateUnix: 1463278705.0
+:END:
+
+*** Is it simply a very shallow world? Where a sufficiently wise hunter gatherer will have an intuitive sense of the basic building blocks of reality? I can see the pedagogical benefits, it'd be like giving them a world where becoming the ultimate physicist is within reach. It'll take them 1000 times as long in our world, but they'll have been given a sense of what it'll be like when they make it. They'll want it more.
+:PROPERTIES:
+:Author: IWantUsToMerge
+:Score: 2
+:DateUnix: 1463304661.0
+:END:

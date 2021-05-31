@@ -1,0 +1,207 @@
+#+TITLE: [D] Monday General Rationality Thread
+
+* [D] Monday General Rationality Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 20
+:DateUnix: 1508771195.0
+:END:
+Welcome to the Monday thread on general rationality topics! Do you really want to talk about something non-fictional, related to the real world? Have you:
+
+- Seen something interesting on [[/r/science]]?
+- Found a new way to get your shit even-more together?
+- Figured out how to become immortal?
+- Constructed artificial general intelligence?
+- Read a neat nonfiction book?
+- Munchkined your way into total control of your D&D campaign?
+
+
+** I've always thought the Yudkowsky's warnings about AI were overblown and sided with Hanson in their debate over how the singularity would occur. One of the reasons for this was that I didn't understand why an AI would ever be designed to optimize a particular set of values independently of its creators' instructions. The paperclip maximizer just seemed like an absurd thought experiment that would probably never occur in reality, so imagine my surprise when I discovered that [[https://youtu.be/BSpAWkQLlgM][this is exactly how the YouTube search algorithm works.]]
+
+So it turns out that artificial intelligence is being programmed to independently optimize values, in this case organizing information accessible through a public platform. Here is the part where I start brainstorming for a Black Mirror episode about confirmation bias and propaganda, followed by looking up the [[https://youtu.be/Z7M7yyRDHGc][YouTube adpocalypse]] and worrying about the present day state of media. So I think this is an interesting topic to discuss that I have been especially preoccupied with due to existential fear over [[https://nyti.ms/2bz5Jr5][post-truth politics.]]
+:PROPERTIES:
+:Author: trekie140
+:Score: 9
+:DateUnix: 1508787882.0
+:END:
+
+*** super interesting topic, especially for game streamers, which were almost all relegated to non family-friendly and therefor lower ad revenue. it basically killed game streaming as a viable occupation in a matter of days.
+
+AI definitely has TONS of potential to fuck our shit up in so many ways.
+
+I mean, the vast majority of the stock market is now run algorithmically. all it takes is some weird variable throwing this out of wack for us to experience a global recession. and things will get ever more connected and fragile in thsi way.
+:PROPERTIES:
+:Author: wren42
+:Score: 5
+:DateUnix: 1508795726.0
+:END:
+
+**** #+begin_quote
+  all it takes is some weird variable throwing this out of wack for us to experience a global recession
+#+end_quote
+
+How well read are you in this field? My initial impression is that you're overthinking this. Algorithms are mainly relegated to high frequency trading from what I've heard (I've family who pick stocks for a living and friends who work as analysts). Other than that I haven't heard of anyone relying solely on algorithms. They may be examined but when dealing with long term investing a human still has control. If the high frequency trading algorithms actually did blow up it'd be rather apparent and while it would have some effect I don't think it'd lead straight to a recession.
+:PROPERTIES:
+:Author: All_in_bad_taste
+:Score: 5
+:DateUnix: 1508814655.0
+:END:
+
+***** AI/Algorithmic trading is making its way into longer term investment. this trend will continue over time, because humans are frankly terrible at it. Historically, even highly trained investment advisors did not beat the market index funds in the long term. As AI takes on a bigger and bigger role in finance, the entire system becomes more brittle. The crash in 2008 was caused by a single industry pushing the limits on loaning practices because the short term gains looked good. As more and more of the market becomes a black box, the odds of an automated system adopting a strategy with strong short term prospects but high long term risk are extremely likely.
+
+So yes, while /right now/ the scope is limited enough that we aren't going to blow up the market, the risk is going to increase rapidly in the next few years.
+:PROPERTIES:
+:Author: wren42
+:Score: 4
+:DateUnix: 1508855223.0
+:END:
+
+****** I was content with downvoting BS and moving on. But it seems the BS keeps coming.
+
+#+begin_quote
+  As AI takes on a bigger and bigger role in finance, the entire system becomes more brittle.
+#+end_quote
+
+No. That's not how markets work.
+
+#+begin_quote
+  even /highly trained/ investment advisors did not beat the market index funds in the long term
+#+end_quote
+
+Nor are they expected to. If you think that's what their job is, you probably misunderstand the purpose of markets entirely.
+
+#+begin_quote
+  The crash in 2008 was caused by a single industry pushing the limits on loaning practices because the short term gains looked good
+#+end_quote
+
+Much has been said about this topic. I would argue that it was caused by a single company pushing the limits of underwriting in exchange for short-term gains.
+
+#+begin_quote
+  the odds of an automated system adopting a strategy with strong short term prospects but high long term risk are extremely likely
+#+end_quote
+
+If we put all the markets under the control of a single trading algorithm, then sure. That's not what will happen. As long as many different algorithms are running simultaneously, the rules of competition will generally smooth things out.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 2
+:DateUnix: 1508888180.0
+:END:
+
+
+***** Have you heard of the [[http://www.barrons.com/articles/remembering-the-flash-crash-of-2015-1491920436][flash crash?]] Not only could this be a reality, it's already happened once. The only reason we didn't spiral into a recession is that we shut down the stock market minutes after it started and everything went back to normal immediately after. What if it didn't? What if whatever random variables which caused it persist after the shutdown and permanently break the entire system? At the very least, every institution with trading bots would have to redesign all of theirs, which could mean /weeks/ of disrupted trading. Sounds like a recession starter to me.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 5
+:DateUnix: 1508884948.0
+:END:
+
+****** There's a key word in that article: "arbitrageurs". The problem wasn't that the markets were crashing, but that the algorithms weren't keeping up. Calculating the value of, well, everything, is difficult under the best of circumstances. They just shut down trading to let the algorithms catch back up. There was no chance of a recession happening, and the system wasn't going to break permanently. The end result? The algorithms doing arbitrage got updated (which is always happening, anyways.)
+:PROPERTIES:
+:Author: ben_oni
+:Score: 2
+:DateUnix: 1508888972.0
+:END:
+
+
+*** #+begin_quote
+  this is exactly how the YouTube search algorithm works
+#+end_quote
+
+I don't understand. What did you expect a maximization algorithm to do? Also, don't listen to that guy; he's full of crap. Where he says nobody really understands how the algorithm works, the truth is that nobody understands the /details/ of how the algorithm works. The engineers still understand what's going on at a high level. But the nice thing about "deep learning" algorithms is that you don't need to understand them to use them. This doesn't make them dangerous.
+
+Nor is the "ineffable" algorithm the only building block of the system. Consider that google curates search results for most common search terms, which is one way of making sure that if you search for "youtube", the top hit is "youtube.com", regardless of what the google algorithm might think it should be.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 5
+:DateUnix: 1508818888.0
+:END:
+
+**** How does he, or anyone, know that nobody at google understands the details of the algorithm?
+:PROPERTIES:
+:Author: appropriate-username
+:Score: 4
+:DateUnix: 1508862961.0
+:END:
+
+
+*** I don't think the YouTube search algorithm is gonna destroy the world, dude.
+
+That said, I think the AI field's /ridiculous/ enthusiasm for black box algorithms will probably significantly contribute to destroying the world. It shouldn't be only MIRI and Marcus Hutter pushing for a principled understanding of how AI would work.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1509033751.0
+:END:
+
+**** The reason YouTube makes me worry is because it showed me that black box AI has an application that it's already being used for, organizing media for personal consumption, and the potential implications of that as a common practice.
+
+It seems like the reasons for using these algorithms is due to the massive amount of data that needs to be organized, motive to deliver that data to as many people as possible, and desire to avoid legal liability for catering such data for people.
+
+The Internet is basically a public utility owned and operated by private entities, and we're already seen the problems this is causing when companies have enough control to target specific consumers and suppress competition.
+
+Capitalism is dependent upon the idea that consumers can choose how to spend their money between a range of options, but more and more industries are become monopolized. Demand for alternatives is low and the law is doing less to protect consumers.
+
+Dropping AI programmed to maximize profits with media consumption into this situation is not a scenario I expect to turn out well and I'm not sure what can be done to stop it from happening when economic incentives aren't changing.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1509039809.0
+:END:
+
+***** We could get rid of capitalism.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1509040492.0
+:END:
+
+****** Not exactly an easy task in our society. I'm totally on board with what the social democrats want to do, but even getting that much is going to be hard let alone demanding even more public assistance.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1509042947.0
+:END:
+
+
+** So, I bit the bullet and decided to buy a complice subscription to see if it helps me out at all. I've got an assignment due on Friday and I'm frantically working on it every night after work this week, as well as being at work during the day.
+
+So I'll be hanging out in the lesswrong chat room: [[http://www.complice.co/room/lesswrong][www.complice.co/room/lesswrong]] - which is basically a group pomodoro-doing and productivity chat, it's been really helpful as people talk about their problems and projects and help motivate each other. I always found I need productivity and I think the room has been really helpful the past three weeks or so that I've used it. Like, I got 3+ hours of my assignment done last night which I don't think I would have been able to do without the chat room.
+
+(and if you want to try complice, [[https://complice.co/?r=uv93q4n34x][use this link]] and you'll get an extra week on your trial - I wish I'd been able to be referred by someone because I really wanted a third week of trial to see if I stuck with it long-term enough to justify the price tag)
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 8
+:DateUnix: 1508798290.0
+:END:
+
+*** And you didnt think to ask here or on LW or on SSC for a referal? Seems like a very low effort solution :-D
+
+Note for everyone that you dont need a complice account to use the chatroom. Previous discussions about LW productivity chatroom: [[http://lesswrong.com/lw/lqz/announcing_the_complice_less_wrong_study_hall/]]
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 2
+:DateUnix: 1508836481.0
+:END:
+
+**** I was linked to the chatroom on facebook (brain debugging discussion) and didn't realise that there was a being-signed-up-by-someone bonus.
+
+I'm in there at the moment, if you happen to be too.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1508837122.0
+:END:
+
+***** I ... have planned on joining for a couple years now, but social anxiety and stuff make it hard. Today is not a good day for me - I'll come back to you.
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 7
+:DateUnix: 1508837183.0
+:END:
+
+****** Awwwwww <3
+
+I had a crummy day today too but I have an assignment due in 3 days and it is taking longer than I thought possible, so I'm trying to do 6 pomos after work like I did yesterday (I was a pomo beast back then).
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 3
+:DateUnix: 1508837239.0
+:END:

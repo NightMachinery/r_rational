@@ -1,0 +1,154 @@
+#+TITLE: Short Story on AI: A Cognitive Discontinuity.
+
+* [[http://karpathy.github.io/2015/11/14/ai/][Short Story on AI: A Cognitive Discontinuity.]]
+:PROPERTIES:
+:Author: traverseda
+:Score: 13
+:DateUnix: 1458920913.0
+:END:
+
+** A friend of mine was reading "a hackers guide to neural nets" and stumbled upon this, recommending it to me. So I figured it was time for a repost.
+
+[[/u/raymestalez]]
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1458920968.0
+:END:
+
+
+** Ha! This thing is gonna be so Zeerusted when the fad for neural networks passes and everyone learns about multi-information as a normal ML principle.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1458938281.0
+:END:
+
+*** I suspect that a big chunk of the current NN fad is related to tensorflow. That is, writing NN code is a lot easier then it was like 4 months ago.
+
+But the nice thing about tensorflow is that it can be used /alright/ as a somewhat-generic math lib that runs on GPU.
+
+If you think that the multi-information approach is a lot better you could get a lot of prestige by making it work with tensorflow. Well, alongside a decent demo.
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1458939693.0
+:END:
+
+**** Dang, and I just spent time learning how to use Caffe this past while.
+
+But the DNN/CNN fad is mostly due to Alexnet.
+
+But you're right, I /should/ try implementing multi-information as an objective function for an existing framework, and seeing if I can get good unsupervised learning results that way. I'd been planning to do a marginal likelihood function proportional to multi-info for use with probablistic program learning. And also just measuring the multi-info content of existing CNN/DNN models.
+:PROPERTIES:
+:Score: 0
+:DateUnix: 1458941331.0
+:END:
+
+***** #+begin_quote
+  But the DNN/CNN fad is mostly due to Alexnet.
+#+end_quote
+
+Specifically, due to Alexnet significantly outperforming all previous non-NN based approaches to object recognition, which was quickly followed by DNNs and RNNs achieving similar breakthroughs in most other ML fields. At what point is it no longer a "fad"? Most people opposed to deep learning (or neural nets in general) seem to me to be statisticians personally offended that the best performing models don't have as proven and obvious a mathematical grounding as they would like.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: 5
+:DateUnix: 1458947061.0
+:END:
+
+****** #+begin_quote
+  At what point is it no longer a "fad"?
+#+end_quote
+
+At the point where we stop just trying to optimize hyperparameters and achieve good test-set performance and set out to explain why it works.
+
+#+begin_quote
+  Most people opposed to deep learning (or neural nets in general) seem to me to be statisticians personally offended that the best performing models don't have as proven and obvious a mathematical grounding as they would like.
+#+end_quote
+
+I'm not so much offended that it works well as I am offended that very few people are trying to explain why it works. Normally I wouldn't invoke the Principle of Sufficient Reason, but "gradient descent in deep convolutional neural nets is great at learning functions" doesn't seem to me like a brute fact. It ought to have an explanation, and that explanation would help us generalize the success to many ML techniques. But people don't look for that explanation, they just say, "Deep neural nets are /smart/."
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1458951479.0
+:END:
+
+******* Eh, it works empirically. The final arbiter is reality and all that.
+
+Why do you suspect a multi-information approach will work better then a NN approach?
+
+Intuitively (and keeping in mind that I don't really do the maths), I'd expect RNN's to work better. An RNN is a turing machine, and a turing machine could match your mystery function perfectly. Or rather, somewhere out there in RNN space is an RNN that does fit your function perfectly.
+
+Where as most statistical techniques I've seen seem like they're a lot more likely to produce a low kolmogorov complexity function. Somewhere out there is a function that approximates your real function perfectly, but statistical techniques are weighted to return functions with a low kolmogorov complexity.
+
+RNNs don't constrain the search space like that, although backpropogation or gradient descent might for all I know.
+
+A multi-information approach may be able to better deal with the dependence of that data then more traditional statistics, but it would still be starting from a linear equation and adding data, starting with a low kolmogorov complexity and adding more modifiers.
+
+Also I don't really get how it's different from non-naive bayesian inference. Both seem very computationally expensive.
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1458955093.0
+:END:
+
+******** #+begin_quote
+  Eh, it works empirically. The final arbiter is reality and all that.
+#+end_quote
+
+Yes, but /why/ do they work empirically?
+
+#+begin_quote
+  Why do you suspect a multi-information approach will work better then a NN approach?
+#+end_quote
+
+Uhhhh... that's not exactly an apples-to-apples comparison. I more expect that multi-information is a useful statistical principle for explaining why /deep/ and /convolutional/ neural nets, in particular, learn as well as they do on the problems where they do. We know that they learn hierarchies of filters, we've seen in Bayes methods that hierarchical models seem to work "blessedly" well, and I think multi-information is a way of quantifying "how much" a dataset "says" to a hierarchical model of some kind (Bayes, generative, discriminative, neural, whatever).
+
+The interesting thing about deep and convolutional neural networks is not merely "they work". We already knew, long before Alexnet, that a sufficiently large fully-connected net could learn /any/ function, even with /just one/ hidden layer. The interesting thing about them is that adding additional layers scales up the number of parameters to be estimated (via gradient-descent) linearly, but the difficulty of learning and generalizing in that model subsequently /fails/ to scale up exponentially. Something about "deep" and "hierarchical" models /counteracts the Curse of Dimensionality/.
+
+If we consider multi-information in its presentation as "correlation explanation", [[http://arxiv.org/pdf/1410.7404v2.pdf][it turns out]] that learning a hierarchical representation from data only ever requires a constant number of samples (because we can build the multi-information estimators from marginal probabilities that are easy to estimate with few samples). This would then appear to be how a "deep" or "hierarchical" model can fight the Curse of Dimensionality: you only ever need a constant number of samples to have enough multi-information (intuitively, we could talk of "enough multi-likelihood", perhaps) to narrow your search for latent representations.
+
+We would thus have a principle by which to unify deep neural networks and hierarchical Bayes methods, while also explaining why [[http://arxiv.org/abs/1603.05691][deep models /need/ to be deep]], why deep models /don't/ overfit as we'd normally /expect/ to happen when we grow the parameter space linearly, and potentially part of why real brains have such an easy time with the vast dimensionality of their sensoria.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1458962801.0
+:END:
+
+********* Ahh, that seems a bit at-odds with your zeerust statement because I imagine a future where we understand /why/ RNN's work well to look pretty similar to the situation described. There's still room for an unexplained layer/module and training would still look pretty similar.
+
+That mess up my model of what you were claiming with the multi-information, I think.
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1458993139.0
+:END:
+
+
+******* #+begin_quote
+  I'm not so much offended that it works well as I am offended that very few people are trying to explain why it works.
+#+end_quote
+
+If people approached medicine the way you're approaching machine learning, the introduction of life-saving interventions would have been delayed by decades so we could figure out why they /really/ work. In my opinion, ML/AI is quickly approaching that level of utility, and it won't be held back because of people's abstract misgivings.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: 1
+:DateUnix: 1458980726.0
+:END:
+
+
+***** #+begin_quote
+  But the DNN/CNN fad is mostly due to Alexnet.
+#+end_quote
+
+Depends. Fad in academia? Sure. Fad in startups/hackernews/etc? I'd still bet it's tensorflow related.
+
+Sounds like a cool project. Good luck.
+:PROPERTIES:
+:Author: traverseda
+:Score: 2
+:DateUnix: 1458941808.0
+:END:
+
+****** Oh. I've been following academia more.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1458942668.0
+:END:

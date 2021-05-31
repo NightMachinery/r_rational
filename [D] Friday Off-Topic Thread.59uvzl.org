@@ -1,0 +1,485 @@
+#+TITLE: [D] Friday Off-Topic Thread
+
+* [D] Friday Off-Topic Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 17
+:DateUnix: 1477667073.0
+:END:
+Welcome to the Friday Off-Topic Thread! Is there something that you want to talk about with [[/r/rational]], but which isn't rational fiction, or doesn't otherwise belong as a top-level post? This is the place to post it. The idea is that while reddit is a large place, with lots of special little niches, sometimes you just want to talk with a certain group of people about certain sorts of things that aren't related to why you're all here. It's totally understandable that you might want to talk about Japanese game shows with [[/r/rational]] instead of going over to [[/r/japanesegameshows]], but it's hopefully also understandable that this isn't really the place for that sort of thing.
+
+So do you want to talk about how your life has been going? Non-rational and/or non-fictional stuff you've been reading? The recent album from your favourite German pop singer? The politics of Southern India? The sexual preferences of the chairman of the Ukrainian soccer league? Different ways to plot meteorological data? The cost of living in Portugal? Corner cases for siteswap notation? All these things and more could possibly be found in the comments below!
+
+
+** A few nights ago, I had a dream where I was a vampire. I went to a meeting of vampires where it turned out that Peter Singer was a vampire. Singer explained to an auditorium full of other vampires why vampirism was ethical and moral on utilitarian grounds, and then he fought a magical duel with a witch using his magic powers, which he won. Then he flew away.
+
+I don't even know. This is your mind on Unsong, I guess?
+:PROPERTIES:
+:Author: Escapement
+:Score: 23
+:DateUnix: 1477669954.0
+:END:
+
+*** Maybe you were just dreaming of the wrong Peter? [[http://www.inc.com/jeff-bercovici/peter-thiel-young-blood.html]]
+:PROPERTIES:
+:Author: Afforess
+:Score: 8
+:DateUnix: 1477674298.0
+:END:
+
+
+*** I KNEW IT! Fucking Peter Singer!
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1477678323.0
+:END:
+
+
+** Weekly update on [[/u/ketura][ketura]]'s rational Pokemon game. He's not able to write this one up today thanks to the failings of technology, so he asked me to fill in. I'm afraid I'm not in a position to make an update as comprehensive as ketura's accustomed to making, but there are still things to talk about. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][You can find the discussion links and previous weekly updates here.]]
+
+According to ketura, he's spent this past week working on the underlying hex grid and tracking of entities on said grid. Right now his goal is to be able to have the player run around and walk into things, which is always harder than it sounds.
+
+The biggest development on the theory-crafting side of things is the creation of our [[https://drive.google.com/drive/u/0/folders/0B0LYycfi-K18bUpWUWw3T180SFU][Story Bible]]. It's only got a few pages now, but over time we'll record the many pieces of lore and worldbuilding here. It's open to editing, so if you have an idea you think would fit in the world, by all means go and make an entry for it or leave a note in the 'unfinished ideas' page.
+
+We also discussed a lot about the nature of Pokeballs and TMs. Right now, our running idea is that the technology for storing Pokemon has been around for a very long time, but in the form of large basketball-sized orbs that you'd more likely keep in your living room in case of threats than lug around on a journey. It was then only in the last century or so that people started improving the Pokeball and making journeys more than a rite of passage to find yourself a single partner Pokemon. In modern times, the Indigo League has its own subsidized line of 'generic' Pokeballs (the canonical Pokeball, Great Ball, etc.) which are sold at Pokemon Centers, while you can find more specialized Pokeballs in shops all around town. There are plenty of traits to care about with Pokeballs, from their mass limit to how long they'll lock on to the targeted Pokemon to the failsafes if it gets damaged, so there will be a large amount of variety in your selection.
+
+For TMs, we've mainly eschewed the idea of TMs being software-defined modifications on the biological structure of the Pokemon, since that opened technological doors in-universe we decided shouldn't be open just yet. Instead, the purpose of a TM is to induce a micro-evolution in the Pokemon to give it an organ it normally doesn't have. So to give your Rhydon Flamethrower, you'd take cells from the oil gland of a Charizard, mix them with some Rhydon cells and some Fire Stone dust in a special formula, and then give the formula to the Pokemon. This isn't something you can do yourself without disastrous results, but for large amounts of money you could commission the creation of new TMs that don't already exist.
+
+Lastly (as far as I remember), we talked about the distinction between Ghost and Dark type Pokemon. Specifically, if Ghost types live in the distortion world, how exactly are Ghost type attacks different from raw distortion? Our current idea is that Ghost types suck up distortion like a vacuum and separate it into two non-distorting energies. One of them is used to phase between dimensions, and the other is weaponizable into things like the Shadow Ball we all know and love. The current question is whether some regular Pokemon will be able to execute the same process if given an access to distortion. We could give Pokemon like Ninetales and Marowak a slight ghost typing if we say that they gather in places where distortion naturally accumulates and consume that distortion in the same way a Gastly would.
+
+Of course, there isn't enough game to implement /any/ of this yet, so if you have an objection or idea about more or less anything, we'll listen to any compelling argument you make. You can do this at [[https://discord.gg/sM99CF3][the #pokengineering channel of the /r/rational Discord server]], the story bible we just made, or right here in the comments if that's more comfortable.
+:PROPERTIES:
+:Author: InfernoVulpix
+:Score: 13
+:DateUnix: 1477674920.0
+:END:
+
+
+** Let's say every sexually reproducing organism has a value "N". This value N is the maximum number of generations you can go back and have no ancestors repeated. For example, someone with parents who are siblings has an N value of one, and someone with parents who are first cousins has an N value of two. The fact that there's a single common ancestor of all life indicates that everything has a finite N value.
+
+Some possible discussion questions:
+
+- What is the average N value of living humans?
+- How does average N value vary between demographics like ethnicities, nationalities, and social classes? How about between species?
+- Does N value correlate with good things like intelligence and health among humans? Clearly the lowest N values correlate with very bad intelligence, health, and so on, but is the reverse true for the highest N values?
+- What is likely the greatest N value of any living human? Obviously genealogy isn't good enough to get this as an actual example; I'm talking about estimates, here. How might this compare to the greatest N value of any other living creature? Do highly numerous creatures like flies have greater average N values, or greater variance, or both?
+
+I Am Not A Statistician
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 10
+:DateUnix: 1477694655.0
+:END:
+
+*** The most generations you could possibly go back without any common ancestors would be ~30, because 2^{30} is approximately a billion, which was the world population for a long time. That's the absolute upper bound. That equates to something like 600 years depending on how long you think a generation is, which is (naturally) much closer to us in time than [[https://en.wikipedia.org/wiki/Mitochondrial_Eve][Mitochondrial Eve]] or [[https://en.wikipedia.org/wiki/Y-chromosomal_Adam][Y-chromosomal Adam]].
+
+If you have a village with a population of about Dunbar's number, its population probably falls between 2^{7} and 2^{8} ... but the size of an individual generation is maybe a third the size of our population, so maybe more like 2^{5} or 2^{6} as an extreme. More likely, the average N in a village of ~200 people is going to be between 2 and 4.
+
+The biggest thing that N value measures is probably mobility of ancestors, which might act as a proxy for a lot of things which aren't necessarily genetic. You'd expect a higher average N value in multicultural societies; if the average Jewish person has an N value of X and the average African-American has an N value Y, you would expect the average Jewish/African-American union to have an N value of the lesser of X and Y, plus 1.
+
+But /historically/ you would have seen very low N values at the highest social circles; if you're a princess, the pool of people you can marry and have children with is in the double digits.
+
+(My N value is 5, as my grandparents were first cousins.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 4
+:DateUnix: 1477704842.0
+:END:
+
+**** #+begin_quote
+  The most generations you could possibly go back without any common ancestors would be ~30, because 2^{30} is approximately a billion, which was the world population for a long time. That's the absolute upper bound. That equates to something like 600 years depending on how long you think a generation is,
+#+end_quote
+
+This isn't right. If all of a person's ancestors were European (going back to 1416), they wouldn't share any ancestors with someone whose ancestors were all Asian.
+
+In order to see why, at year 0, imagine two small groups of 50 people. Both groups only have children with people inside of their group. Assuming they kept up this practice, it doesn't matter how many generations pass, every person in the first group would only have ancestors from the first group.
+
+If there aren't any restrictions, then the probability that a person doesn't share any ancestor with someone else falls dramatically, but the only absolute maximum is the first life form. It's unrealistic, but statistically true, the best kind of true.
+:PROPERTIES:
+:Author: electrace
+:Score: 1
+:DateUnix: 1477707917.0
+:END:
+
+***** As I understand [[/u/LiteralHeadCannon]], N-value is equal to the number of generations that an individual can go back without having any repeated ancestors, not the number of generations that a person could go back before they're related to everyone in the world.
+
+So our hypothetical pure European wouldn't share any ancestors with a pure Asian, but that doesn't affect his N-value because he would have "repeated" ancestors at some point.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 4
+:DateUnix: 1477708053.0
+:END:
+
+****** You're right, I'm stupid...
+:PROPERTIES:
+:Author: electrace
+:Score: 2
+:DateUnix: 1477709083.0
+:END:
+
+
+****** This is correct.
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 2
+:DateUnix: 1477709250.0
+:END:
+
+
+*** I only did a few minutes of googling for my own interests and therefore can't be trusted, but here's my best answers to your questions:
+
+#+begin_quote
+  average N
+#+end_quote
+
+The common ancestor seems to have lived over 5,000 years ago, so with ~25 years per generation (arbitrary age of mother when she gives birth) that's 5,000/25 = ~200 generations as an upper-bound. Of course there's no way that anyone actually had 200 generations without any siblings. However, I found that ~20% of the population nowadays are an only child which is a contrast to several decades ago which were ~10%. So pick the number of generations you are interested in (5 here as an example), and I'll just go with 15% as an average. That means 0.15^{5} = 0.0000759375% of the population who have a N value of 5.
+
+#+begin_quote
+  demographics
+#+end_quote
+
+No idea.
+
+#+begin_quote
+  N correlations
+#+end_quote
+
+The thing you have to notice is that while low N implies inbreeding, it takes very, /very/ few generations to counteract it because with every stranger a family breeds with, it 'dilutes' the gene pool by half under ideal conditions. To me, it seems to imply that once a family gets past some low N value of like 3 or 4, all Ns are essentially equivalent and a value of 5 is the same as 100.
+
+#+begin_quote
+  greatest N?
+#+end_quote
+
+That person would probably be Chinese due to China's one-child only policy.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1477705878.0
+:END:
+
+**** #+begin_quote
+  That person would probably be Chinese due to China's one-child only policy.
+#+end_quote
+
+That's only been in effect since 1979. That's maybe 2 generations, max. The effect would be negligible.
+
+The greatest N would most likely be a biracial child. Of all theoretical biracial children, I'd guess that a child of a a Native American and a Sub-Saharan African (or maybe European?) would have the highest N, but full-blooded native Americans are probably close to non-existent at this point in time, so who knows?
+
+Edit: Now that I think about it more, the more multi-racial the higher the N. Being biracial stops your parents from having a close common ancestor, but being quadra-racial would also stop your grandparents from having close common ancestors.
+
+Also, none of this is a guarantee, because that quadra-racial person could always have had great-grandparents who were cousins, giving them a lower N than most people.
+:PROPERTIES:
+:Author: electrace
+:Score: 1
+:DateUnix: 1477709026.0
+:END:
+
+***** The most divergent extant human populations are probably Australian Aboriginal and any other race. But there are perfectly healthy, normal hybrids of Australian Aboriginal and Europeans so there probably isn't substantial downside or upside to such crosses.
+:PROPERTIES:
+:Author: gardenofjew
+:Score: 2
+:DateUnix: 1477714062.0
+:END:
+
+
+*** On my phone at the moment so no links, but IIRC inbreeding depression is important for humans only at second cousins and closer. And at second cousins it's very low. Even first cousins are pretty safe in terms of birth defects-- it does seem to lower IQ a bit though.
+
+Then there's out breeding depression. It doesn't seem to happen to people (though it'd be difficult and controversial to test) because different races/groups are not divergent enough, but people and chimps obviously wouldn't have very fit offspring. So there's some upper limit at which point divergent mates are not a good idea.
+
+There may be a degree of hybrid vigor in mixed race offspring in people or hybrid depression but of there is its very subtle because no one has noticed it until now.
+
+Disclaimer: phone and sleepiness may cause misspellings or errors
+:PROPERTIES:
+:Author: gardenofjew
+:Score: 1
+:DateUnix: 1477713917.0
+:END:
+
+
+** Last week I was looking for an old recommendation:
+
+#+begin_quote
+  Looking for a webfiction that was recommended here about... a year ago. Some kids learn how to master their universes version of magic, which is basically calling upon and overlapping alternate universes into the characters reality. This of course has the unfortunate side effect of introducing neuphytic organisms all the time. They start by building a house and shaping everything around it, and want to start up a glass making buisness.
+#+end_quote
+
+Did it the hard way, reading through recommendation threads, and its */A Succession of bad days/*.
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 7
+:DateUnix: 1477667903.0
+:END:
+
+*** Links:\\
+- [[http://np.reddit.com/r/rational/comments/39nab5][Recommendation thread]]\\
+- [[https://www.goodreads.com/book/show/25635541][Goodreads page]]
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 4
+:DateUnix: 1477669461.0
+:END:
+
+
+*** #+begin_quote
+  neuphytic organisms
+#+end_quote
+
+Can you explain what this term means? My google skills are failing me.
+:PROPERTIES:
+:Author: Fresh_C
+:Score: 3
+:DateUnix: 1477671351.0
+:END:
+
+**** Freudian typo. Neophytic, newly introduced organism, like Rats in NZ or that australian toad.
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 4
+:DateUnix: 1477687603.0
+:END:
+
+***** Thanks. That makes sense.
+:PROPERTIES:
+:Author: Fresh_C
+:Score: 1
+:DateUnix: 1477688615.0
+:END:
+
+
+**** neu is german for new so I tried neophytic and that term seems to actually exist.
+:PROPERTIES:
+:Author: DrunkenQuetzalcoatl
+:Score: 3
+:DateUnix: 1477671708.0
+:END:
+
+
+** Luke Cage is my least favorite of Marvel's tv shows so far, but that's probably because the culture it's representing is completely alien to me. I still enjoyed watching it, but I didn't understand the mindset of any of the characters so I couldn't get past how irrational they all were. It's possible that I'm freaking out over nothing, this has happened before with popular stories and I blamed my autism, but I loved the other Marvel Netflix shows so I'm blaming it on how white I am. Is there a way for a middle class liberal white man like me to fill in this cultural blind spot I have?
+:PROPERTIES:
+:Author: trekie140
+:Score: 7
+:DateUnix: 1477670964.0
+:END:
+
+*** It's not that you have a cultural blind spot, or at least not one that should be relevant today - I think Luke Cage has unintentionally ended up as a revival of 70's-80's era views on race and racism in America since it has its roots in the blaxploitation genre that was popular when the character was invented.
+
+I'm no expert on race relations in America aside from just being black, but to me it feels like Luke Cage's cultural weirdness is down to the fact that it portrays a caricature of Harlem/Black America rather than anything resembling actuality. It feels mostly like it was constructed based on the "Black History Month" view of black people in American history than anything else.
+
+It's an unfortunate truth that for all that black Americans have contributed quite a lot to the cultural history of the country, they simply haven't been significantly involved in the development of most modern economic, scientific, or governmental institutions. Acknowledging that fact would be politically problematic since the obvious conclusion is that this fact is a consequence of a continuing history of systematic racism in America, and so social studies classes in America instead seek to present an alternate version of history wherein black people really are and have been important in the country's institutional development.
+
+As a result, every February, teachers try and convince students that Crispus Attucks being in the wrong place at the wrong time was as important a part of our country's founding as if there had been black people in the Continental Congress. They teach that George Washington Carver was a genius on par with Leonardo da Vinci because he did a lot of things with peanuts, and that Martin Luther King was basically a saint while Malcolm X was basically Osama bin Laden.
+
+Mostly this is meant well, meant to both make it clear to white kids that black people have played an important part in developing the country and provide black kids with examples to aspire too.
+
+Unfortunately, since people live outside of the Black History month social studies classroom for most of their lives, they have to reconcile two disparate sets of facts. Black History Month paints a picture of history where there were politically active, educated, and wealthy black people all the way through the country's history. Day to Day Life shows that black people massively underachieve on academic and economic measures, and are far more likely to end up committing (or at least being changed and convicted with) crimes than the majority white populace.
+
+As a result, there's a particular view of black history that's waxed and waned over time, but was strong and informed the formation of the blaxploitation genre in the 1970s of which Luke Cage is probably the most prominent comic book example. Summarized roughly "Sure, the institutional racism of the past provided a massive disadvantage to black people - but as the examples I've been given show, it's always been possible for black people to be successful. Now, we live in the promised age of freedom and equality for all, so black people's failure to be successful is just down to them still feeling psychologically oppressed even if it's not true anymore."
+
+Luke Cage is weird because the dialog about race relations in America has mostly moved to a discussion on implicit bias and how the structural aftereffects of institutionally sanctioned racism continue to affect black communities, but Luke Cage appears to be written from the earlier viewpoint.
+
+Cottonmouth and Mariah have really weird conversations about how their ancestors would feel about what they're doing (Supporting the view that racism is over and they're squandering the opportunities of their freedom by continuing to engage in criminal activity)
+
+Detective Knight is "one of the Good Ones" - black people who come out of the same environment as the "Bad Ones" but make role models of themselves, like the Black History Month examples. This is the purpose of her scene at the basketball court - establishing her character history. It supports the narrative that it's really a matter of personal characteristics that distinguishes life outcomes.
+
+Luke himself is similar, and his character arc is largely one of him becoming "one of the Good Ones". We start out knowing that he has a criminal past and a lowly occupation as a paid under-the-table janitor/dishwasher, but over time find out that he's well read (in the canon of black authors who wrote culturally significant pieces in reaction to the racism of the day) while his foil Cottonmouth's most prominent cultural symbol is his portrait of Notorious B.I.G.
+
+Luke calls Crispus Attucks "one of our greatest" heroes and objects to one of Cottonmouth's thugs calling him nigga more strongly than that thug /pointing a gun at him/, and again laments how black people are just throwing their opportunities away. And then we get a scene where Luke and Cottonmouth make dueling speeches and symbolically present the people of Harlem a choice between their reactions to the circumstances they find themselves in. Cottonmouth speech is all about seizing personal power by any means necessary and Luke's is about how really they just need to fix themselves up before worrying about getting involved in the outside world.
+
+After the backlash against blaxsploitation films in the late 70's, these ideas faded and haven't really been relevant to race relations in America for decades, but Luke Cage has failed to adapt its narrative and the characters end up doing weird things that I can only explain as being in support of a race relations narrative that might have resonated 40 years ago but falls completely flat today.
+:PROPERTIES:
+:Author: JanusTheDoorman
+:Score: 17
+:DateUnix: 1477690264.0
+:END:
+
+**** I get what you're saying, but the resemblance to blaxploitation films was entirely intentional on the creators' part. It wasn't just a matter of adapting the comic books, they specifically chose to homage the genre while also modernizing it in some ways. People smarter than me about this have pointed out that Luke is kind of conservative and isn't meant to be a representation of all black people, saying as much himself in the show.
+
+I would even argue that the story is more about living in an crime-ridden neighborhood than race relations. I don't think you're wrong, the show certainly doesn't advance the conversation about race in the US, but I also think the creators did exactly what they intended to do without screwing up the theme of the story.
+:PROPERTIES:
+:Author: trekie140
+:Score: 4
+:DateUnix: 1477700028.0
+:END:
+
+
+**** [deleted]
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1477702711.0
+:END:
+
+
+**** That was an amazingly in depth analysis. Thanks.
+:PROPERTIES:
+:Author: gardenofjew
+:Score: 1
+:DateUnix: 1477713443.0
+:END:
+
+
+*** Middle class black dude with autism. You are not alone. I think it's just oddly written. The characters seems inconsistent at some points and too consistent at others. By too consistent I mean they turn into caricatures of themselves, one part of their personality taking priority when it doesn't really make sense.
+:PROPERTIES:
+:Author: Brain_Blasted
+:Score: 7
+:DateUnix: 1477672956.0
+:END:
+
+**** I got that feeling from Luke, but I just assumed that was because he was too stoic for me to read him since everyone seemed to love him. The characters where it really bothered me were the villains. I couldn't process how Cottonmouth could be both a psychotic mobster and a pillar of the community, and be seen that way by both himself and much of Harlem, while Mariah said she hated being involved in his crimes but still willingly supported him at risk to herself. Even with their backstory, I just didn't get it.
+:PROPERTIES:
+:Author: trekie140
+:Score: 3
+:DateUnix: 1477677412.0
+:END:
+
+***** Both of those things made sense to me (although there were a number of things in the show that didn't.)
+
+Most criminals aren't sociopaths. Most arms dealers view themselves as semi-legitimate businessmen; most murderers see themselves as having a legitimate grievance, of having been /driven/ to kill by an unfair world. Most mobsters don't see anything wrong with what they do. There's nothing really stopping them from playing the respectability game and owning nightclubs.
+
+Mariah lent her cousin some money. She viewed it as a major favor to him, even though IIRC she was making money on the deal. It /was/ a major favor; it allowed him to make a major deal, but exposed her to a small-to-moderate amount of risk. I'm pretty sure she disliked being involved in crime because it was risky, which is pretty reasonable - it /is/ risky. But the normal reasons for doing someone a major favor apply - they'll hopefully repay it, it strengthens your relationship, and you altruistically get to help someone you (presumably) like and care about.
+:PROPERTIES:
+:Author: MugaSofer
+:Score: 5
+:DateUnix: 1477699754.0
+:END:
+
+****** Fair points, but I still found it odd that Wilson Fisk was so afraid of being caught that he had anyone who spoke his name murdered while Cottonmouth was able to throw a man off the roof of his own building without attracting any attention from the police. Fisk actually controlled more police officers and was still more careful about avoiding suspicion than the mobster with a reputation on the street who's related to a politician.
+
+As for Mariah liking Cottonmouth...I still have trouble believing that she was willing to work with him despite consistently voicing her displeasure with it. She didn't seem to like him very much and he didn't provide a service she wanted. Also, shouldn't the investigation into Crispus Attics have found some evidence linking her to Cottonmouth? His money and men were in her campaign headquarters, yet all she was asked to do is resign.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1477763508.0
+:END:
+
+
+** The science-fiction publisher [[http://www.baen.com/baenebooks][Baen Books]] sells DRM-free e-books (including [[http://www.baen.com/categories/books-by-series-list/ring-of-fire-series-by-eric-flint.html][the /1632///Ring of Fire///Assiti Shards/ series]] ([[https://www.goodreads.com/series/40670][Goodreads]]) and [[http://www.baen.com/categories/books-by-series-list/grantville-gazette-created-by-eric-flint.html][officially-sanctioned fanfiction thereof]]), if you want the freedom to edit the EPUB files that you buy. It also has [[http://www.baen.com/catalog/category/view/s/free-library/id/2012][quite a few books]] (including [[http://www.baen.com/1632.html][/1632/ itself]]) available for free download.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 6
+:DateUnix: 1477684619.0
+:END:
+
+*** I've hear many good things about the first book, /1632/, but what's your opinion about the sequels? Are they worth reading, or should I just pretend there were no follow-up books written?
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1477704498.0
+:END:
+
+**** You can download the first book (free, entire, and no DRM) at the link above. Personally I enjoyed it, but not enough to buy the sequels.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 1
+:DateUnix: 1477706297.0
+:END:
+
+***** You can also get like 9 books in the series + various Grantville Gazettes +etc for free legally. Baen some time ago had a fairly generous policy of occasionally bundling hardcovers with CDs that had electronic copies of books in a series or by an author. These CDs had extremely permissive copyright notices - basically, the copyright notices boiled down to "feel free to copy these CDs and share them around but don't make money off of it or change them". You can download copies of those free-to-distribute CDs from this website: [[http://baencd.thefifthimperium.com/]]. The top one, 1635: The Eastern Front CD, has 9 of the 163X series and a few Grantville Gazettes and some random other books. You can also pick up a lot of Weber, Ringo, Mercedes Lackey, and several other authors; I particularly like Chris Anvil's Interstellar Patrol short stories.
+:PROPERTIES:
+:Author: Escapement
+:Score: 2
+:DateUnix: 1477718819.0
+:END:
+
+
+**** The only one I've read is /1632/, and that reading was several years ago. I don't remember liking it particularly*--IIRC, it focused too much on the characters, rather than on the technology, for my liking. (Was I supposed to want to read about a kid who married a woman a few days after fighting to save her from being raped by mercenaries [or something like that]?) I may be misremembering, however.
+
+*Three out of five stars = "Meh. I guess it was better than /nothing,/ but I didn't /like/ it."
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 1
+:DateUnix: 1477706435.0
+:END:
+
+***** Nah you're remembering correctly. That marriage was one of the cringier moments of that book. Dropped it soon after. The premise is interesting but ultimately not enough to make up for the lackluster characters.
+:PROPERTIES:
+:Author: gardenofjew
+:Score: 3
+:DateUnix: 1477713546.0
+:END:
+
+****** Are you me? I basically did the same thing.
+:PROPERTIES:
+:Author: Tandemmirror
+:Score: 2
+:DateUnix: 1477754397.0
+:END:
+
+******* That book was so disappointing. I was expecting in-depth history + culture clash flavored with the mildest of tech wank. Instead I got tech wank + scraps of history plus awkward characters.
+:PROPERTIES:
+:Author: gardenofjew
+:Score: 1
+:DateUnix: 1477766231.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1477673981.0
+:END:
+
+*** Yup. Ping [[/u/nobody103]]
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 9
+:DateUnix: 1477675435.0
+:END:
+
+
+** I'm currently studying German. Are there german rationalist with whom I can connect? Any show/book/fanfiction you recommend watching?
+
+More in general, I've tried using Duolingo, Babbel and Bliubliu. Everyone has a different approach, but no one feels complete. Do you have tips on how learning a language effectively? English is my second language, and I feel fairly confident in it, but I reached this state by watching/reading everything in english in the past years.
+:PROPERTIES:
+:Author: munchkiner
+:Score: 3
+:DateUnix: 1477668014.0
+:END:
+
+*** A friend of mine got great results teaching himself a new language by watching children's news programs online (after having the basics down through more conventional methods). Which makes sense to me - they'll use a relatively simple vocabulary and enunciate things clearly, but it's about actual things which will usually be more interesting to an adult than children's literature.
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1477669925.0
+:END:
+
+
+*** I'm a german native speaker. But I can't really give any recommendations for german media because in order to learn english better I'm also using your way of immersion in the other language and only consume english media.
+
+edit: I used to read a lot of fantasy books and one of the better writers is also a german native speaker. Hohlbein (hollow leg translated). Can't say from memory how rationalist the stories are but they might be a bit much for language learning.
+:PROPERTIES:
+:Author: DrunkenQuetzalcoatl
+:Score: 3
+:DateUnix: 1477670737.0
+:END:
+
+
+** Recently came across [[http://mgvez.github.io/jsorrery/][this]] [[https://github.com/mgvez/jsorrery][project]]. Thinking of trying to use it to simulate [[https://en.wikipedia.org/wiki/Orbital_ring][orbital rings]] / various related concepts.
+:PROPERTIES:
+:Author: lsparrish
+:Score: 3
+:DateUnix: 1477705049.0
+:END:
+
+
+** As a result of a conversation with a friend where the weirdness of chariots in the Iliad was explained to me (chariots had mostly phased out of warfare by the time the Iron Age poets were composing the story, but they knew their ancestors had used them, so chariots are there but are used more like taxicabs than as weapons), I'm interested in understanding the Bronze Age better. Anyone here have experience with good general-audience introductions to the history of the period, especially How Civilization Worked back then?
+:PROPERTIES:
+:Author: Aretii
+:Score: 3
+:DateUnix: 1477799824.0
+:END:
+
+
+** I spent a good portion of last night making [[http://imgur.com/a/cxoLH][this map]] of local space, since [[http://www.atlasoftheuniverse.com/12lys.html][this one]] which is the only decent one I could find online, doesn't include distances. Fortunately, you can generate the distances by dumping the stars in Wolfram Alpha.
+
+Just to make sure you guys know Sideways in Hyperspace is still going places. Oh, it's definitely going places. I don't have a definitive date for when I'll start posting again, I want to, but I need to make sure I have sufficient slush between the stuff I'm currently writing and the stuff I'm posting.
+:PROPERTIES:
+:Author: Sagebrysh
+:Score: 2
+:DateUnix: 1477748810.0
+:END:
+
+
+** Arg no Doctor Strange dammit why would you do this?
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 1
+:DateUnix: 1478040174.0
+:END:

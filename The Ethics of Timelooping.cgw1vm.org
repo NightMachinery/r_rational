@@ -1,0 +1,977 @@
+#+TITLE: The Ethics of Timelooping
+
+* The Ethics of Timelooping
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 34
+:DateUnix: 1563904812.0
+:END:
+I am writing a story (well more thinking about and working on the world building (hopefully) for now) where my MC has the ability to rewind time to designated save points. Let's call him John. So the way this works is John has the ability at a given time t_x to set a save point (provided he has not exhausted all his save slots) and at a future time t_y, John can "rewind" to t_x. The way John experiences this "rewinding" is that at t_x John would have all his memories of the duration [t_x, t_y], so it's a form of mental time travel (this is probably the main form of time travel (at least on a multiverse wide scale) that would be covered in this story). How this time travel actually works has some profound ethical implications.
+
+​
+
+I do not have a canon model of how time travel works in my story (if I find out that my current model is incoherent, I would throw it out, otherwise I would /likely/ live with the implications of it), so while I do have a favoured mental framework for thinking about time travel, there is not much reason to privilege my particular framework and treat it as anything other than just another model in the model space of how time looping abilities can work.
+
+​
+
+My world is pretty big with several universes (probably an infinite amount of them), but it is probably strictly smaller than the Tegmarkian multiverse. Different universes have different temporal interactions with our universe, but John's time rewind ideally (I'm no physicist (actually, you can probably assume I have no knowledge of physics beyond what little I retained from cramming for high school exams, but I do intend to keep a coherent model. It is integral to the story that the time rewind occurs everywhere, so if certain details of my world makes that impossible, I would probably shrink it as needed) rewinds time on a multiverse wide scale.
+
+​
+
+The interesting question for the purposes of this thread, is: what happens at t_{y+1}? After John jumps back in time, what happens to the rest of the world?
+
+​
+
+There are many different ways of thinking of this. The approach I'm currently using is to imagine timelines. Whenever a rewind occurs, the timeline from origin to t_x (the point of the rewind) is duplicated (or perhaps the duplicate already exists), and the world state at t_x is updated to reflect the new information that John has. Let's call the "source" timeline T_1, and the duplicate timeline T_1.1. If we work with this framework, then what happens to T_1 at t_y has very profound implications. The way I see it there's two basic outcomes:
+
+1. T_1 continues operation normally.
+2. T_1 is terminated at t_y.
+
+​
+
+If T_1.1 is terminated at t_y, then by rewinding time John is committing omnicide. He's literally killing an infinite number of people each time he rewinds creating infinite disutility (or the upper bound of disutility if you use a bounded utility function). Suppose John assigns a probability of p to the hypothesis "rewinding time terminates the source timeline". I'm not sure how John assigns his probabilities, but whatever prior he's using --- as long as it's sensible --- I would imagine that it wouldn't assign a probability below say 10^{-10} to the above hypothesis (probably several orders of magnitude more in fact). If John is doing an expected value calculation, then the possibility of omnicide should dominate his calculations (even with a bounded utility function) when evaluating whether or not to rewind time. In short, John seems to be getting [[https://en.wikipedia.org/wiki/Pascal%27s_mugging][Pascal mugged]] (only without an extant mugger).
+
+​
+
+I mentioned above that either T_1.1 is created from T_1 due to the rewind, or T_1.1 already exists. I think this also has interesting ethical implications of its own. For one, if the rewind causes the creation of a new timeline, then each rewind causes amounts of utility equivalent to the total utility history of the multiverse (and if that number is positive), then the moral thing for John to do is to rewind as many times as possible (if the number is negative John creates even more disutility). Interestingly, if the rewinds creates the new timelines, and the multiverse is net positive utility, then the positive utility created by the multiverse may outweigh the negative utility created by omnicide.
+
+​
+
+As an aside, even if hypothesis 1 was true, then John may still cause omnicide as there's a multiverse ending event (John believes his time rewinding ability is to avert it (he auto rewinds to a fixed save point at when he first awakened his powers if he dies or gets stuck in an infinite loop)), so if the time rewind clones the timeline, if all possible timelines don't already exist and rewinding creates a new timeline, then it seems to me that John rewinding time is omnicide.
+
+​
+
+Sidestepping the talk of timelines for a bit, it seems to me that no matter how you dice it timelooping/rewinding has profound ethical implications. After the rewind happens, it's possible to treat the period of time [t_x, t_y] as a mere simulation of the future which the MC now has knowledge about (perhaps John's power merely simulates the multiverse (and informs him of the results of said simulation)). This brings up the interesting question of whether simulated copies of an agent have moral worth. If 1,000,000 copies of Jane Smith exist and I terminate 100,000 of them have I created disutility? If one believes that simulated copies don't have moral worth separate from the original, then I'd like to ask you this question: if someone told you that you were a simulation and decided to terminate you, would you consider it murder? Alternatively, if we found out that this universe was a simulation (and that there was a real "earth" somewhere) should we consider the termination of the said simulation omnicide? In short, do you believe in [[https://arbital.com/p/mindcrime/][mindcrime]]([[https://emma-borhanian.github.io/arbital-scrape/page/mindcrime.html][scraped on github (cause Arbital isn't reliable]]))?
+
+​
+
+If one privileges some "real" timeline, I'd like to point out that if the simulation goes on for long enough, the simulated agents may sufficiently diverge from their "real" copies that they're no longer the same moral persons. Alternatively, some entirely new agents may be created in the simulation that would not exist in the "real world".
+
+​
+
+​
+
+I find it interesting that literally every other action John takes seems negligible in the face of the astronomical amounts of (dis)utility created by his time rewinding ability. I also wonder how someone who believes(believed?) in "[[https://wiki.lesswrong.com/wiki/Shut_up_and_multiply][shut up and multiply]]" would react to that realisation.
+
+​
+
+​
+
+Aside from the ethical implications of time rewinding in my story, it seems that time rewinding (or time looping in general) has massive ethical implications.
+
+​
+
+​
+
+The above timeline framework is the current framework I have for thinking about it. It is not mandatory to think about it in this framework, perhaps it's incoherent (in which case I would discard it) or you have a more powerful framework that is much easier to work with (do tell), but barring those two scenarios, it would probably be more conducive to conversation and discussion if we used the timeline framework.
+
+The above was very rambly and may have been less than coherent at times. Feedback on my writing is appreciated as well. If you have stuff that you think I should read relating to the contents of this post, time travel, rational fiction or writing in general, do tell.
+
+
+** Honestly I had some of the same thoughts as you while thinking about time travel in a series. If you have read Mother of Learning, this idea kinda gets brought up.
+
+I think the most "ethical" view of time travel is that you are merging with a different timeline of yourself. As to what happens to you in your old timeline? You either drop dead or disappear.
+
+​
+
+Another way to view a purely mental version of time travel is that you are simply receiving mental messages from another version of yourself. This adds the constraint that your future self will only take actions that they reasonably think will succeed.
+:PROPERTIES:
+:Author: speakerforthe
+:Score: 20
+:DateUnix: 1563905980.0
+:END:
+
+*** #+begin_quote
+  I think the most "ethical" view of time travel is that you are merging with a different timeline of yourself.
+#+end_quote
+
+The soul travelling across timelines is something I considered as well. However, the nature of those timelines matter:
+
+- Did the time travel create the other timeline?
+- What happens to the old timeline when the travel occurs?
+
+​
+
+I do read Mother of Learning (currently waiting for it to finish).
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 7
+:DateUnix: 1563907736.0
+:END:
+
+**** Assuming the author gets to choose a system with the least ethical implications: That's a good point, but I guess I have less issues with the idea of creating a universe. The rest of the old timeline continues to exist just, just without the protagonist. Like you said, the alternative is killing everything.
+:PROPERTIES:
+:Author: speakerforthe
+:Score: 3
+:DateUnix: 1563908078.0
+:END:
+
+***** In my particular story, it doesn't actually matter. There's a multiverse ending event in the near future, so whether it terminates or doesn't is irrelevant as the timeline ends anyway somewhere down the line.
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 4
+:DateUnix: 1563908997.0
+:END:
+
+
+***** I think of this is similar to learning that your mind is running on a distributed cloud system. The system functions where every few minutes, your thoughts are frozen, the VM is ported over a network link to a different host node, and then restarted. As your reality is also simulated on the same VM each time, you see perceptually no difference.
+
+​
+
+So from an outside reality standpoint, you "die" every few minutes. Nothing about you lasts except for the every changing information making up your mind that gets copied from node to node. But I would imagine you could get used to it - your existence "now" is very temporary, so why sweat the next cycle?
+
+​
+
+Anyways, this seems similar to the idea of existing in a universe where other beings have erased you and rolled back billions of times - you still perceive a connected, contiguous "now" and if those erases and rollbacks are extremely frequently, then there is nothing to be upset about.
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 1
+:DateUnix: 1564028658.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 13
+:DateUnix: 1563905232.0
+:END:
+
+*** While we're questioning the basic moral framework we're using, I think it's worth noting that there exists a utility function (that I find quite agreeable) which would open the door to only giving moral weight to unsimulated lives. In preference utilitarianism (or desire-satisfaction consequentialism, or whatever), the value of an action is determined by how well its consequences meet everyone's well-informed desires.
+
+Since many people seem to have a strong preference for even a mediocre reality compared to a simulated life in paradise, it seems feasible that improving the real world at the expense of simulated lives would be morally permissible. Granted, I'm no empath, so I may be wrong.
+
+Side note: At what point does a simulated life become morally valuable? Does your idea of a character have any moral value as a simulated life?
+:PROPERTIES:
+:Author: JusticeBeak
+:Score: 7
+:DateUnix: 1563907382.0
+:END:
+
+**** #+begin_quote
+  Since many people seem to have a strong preference for even a mediocre reality compared to a simulated life in paradise, it seems feasible that improving the real world at the expense of simulated lives would be morally permissible. Granted, I'm no empath, so I may be wrong.
+#+end_quote
+
+I addressed this:
+
+#+begin_quote
+  If one believes that simulated copies don't have moral worth separate from the original, then I'd like to ask you this question: if someone told you that you were a simulation and decided to terminate you, would you consider it murder? Alternatively, if we found out that this universe was a simulation (and that there was a real "earth" somewhere) should we consider the termination of the said simulation omnicide? In short, do you believe in [[https://arbital.com/p/mindcrime/][mindcrime]]([[https://emma-borhanian.github.io/arbital-scrape/page/mindcrime.html][scraped on github (cause Arbital isn't reliable]]))?
+#+end_quote
+
+​
+
+Is that a bullet you're willing to bite? Would you accept the omnicide of this universe to benefit some other "real" universe?
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 4
+:DateUnix: 1563907886.0
+:END:
+
+***** I'm not sure, but I think a similar and related question that could help find an answer is whether you root for Neo in The Matrix. Regardless, my intent was to bring up a moral framework that could justify what you seem to take as trivially inexcusable.
+:PROPERTIES:
+:Author: JusticeBeak
+:Score: 3
+:DateUnix: 1563912967.0
+:END:
+
+****** #+begin_quote
+  I'm not sure, but I think a similar and related question that could help find an answer is whether you root for Neo in The Matrix.
+#+end_quote
+
+Haven't watched The Matrix.
+
+​
+
+#+begin_quote
+  Regardless, my intent was to bring up a moral framework that could justify what you seem to take as trivially inexcusable.
+#+end_quote
+
+I don't find the moral framework interesting unless you (or others) are willing to bite the bullet of omnicide. Talking about some "real" world is all fine and dandy until people are presented with the hypothesis that they are a simulation.
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 5
+:DateUnix: 1563913910.0
+:END:
+
+******* You should watch The Matrix, at least the first one. It's quite good.
+
+Presenting people with the hypothesis that they're (in) a simulation is generally not going to be taken any more seriously than the idea that the world was created Last Tuesday with our memories intact. It's too ludicrous for most folks to contemplate at all, and even among those of us who do contemplate it, it's really only /useful/ if there are some exploitable implications, eg time-looping or reincarnation with memories intact, or local deviations from the norms of physics.
+:PROPERTIES:
+:Author: aeschenkarnos
+:Score: 4
+:DateUnix: 1563927070.0
+:END:
+
+******** #+begin_quote
+  Presenting people with the hypothesis that they're (in) a simulation is generally not going to be taken any more seriously than the idea that the world was created Last Tuesday with our memories intact. It's too ludicrous for most folks to contemplate at all, and even among those of us who do contemplate it, it's really only /useful/ if there are some exploitable implications, eg time-looping or reincarnation with memories intact, or local deviations from the norms of physics.
+#+end_quote
+
+Well the purpose in this case is that apparently, some people believe that simulated copies don't have moral personhood. I merely want to know if they are willing to bite the bullet of omnicide. If people don't find "what if we are the simulation" worth considering, then they are not seriously reckoning with the concept of simulated persons. It shouldn't be possible for a given agent to determine whether they are real or the simulation (assuming high fidelity simulations).
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 3
+:DateUnix: 1563951029.0
+:END:
+
+********* Simulated entities might not necessarily have moral personhood from /outside/ the simulation, but if we exist on an equal basis with each other as simulations /inside/, then we have the same moral personhood. (Which is a similar argument to the theological principle that it's OK for /God/ to kill a baby but not /you/.)
+:PROPERTIES:
+:Author: aeschenkarnos
+:Score: 2
+:DateUnix: 1563951308.0
+:END:
+
+********** #+begin_quote
+  Simulated entities might not necessarily have moral personhood from /outside/ the simulation, but if we exist on an equal basis with each other as simulations /inside/ , then we have the same moral personhood.
+#+end_quote
+
+Aah, this makes sense. I guess my rejoinder is along the lines of: "what if there's no outside?" What if outside the simulation is some alien god and there's no other moral agent of any relevance. Coming back to my story, what if all the timelines are equally real?
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 2
+:DateUnix: 1563962351.0
+:END:
+
+*********** Well, I guess write the story and find out. I suggest having multiple characters with different moral takes on it - narcissistic hedonist doesn't give a damn, utilitarian tries to calculate what they should do, consequentialist tries to live a good life and sees what happens, deontologist decides on a code of ethics in advance and follows that.
+
+There's a reason humanity has not been able to find a binding solution to any moral question in ten thousand years of trying. Your job as a writer is firstly to entertain, secondly to provoke epiphany and amazement, thirdly to educate.
+:PROPERTIES:
+:Author: aeschenkarnos
+:Score: 1
+:DateUnix: 1563970115.0
+:END:
+
+
+*** The MC started out as someone with a moral framework similar to mine (so very selfish, but think utilitarianism is the only sensible way to make decisions at the group level. They strongly believed in "[[https://wiki.lesswrong.com/wiki/Shut_up_and_multiply][shut up and multiply]]").
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 4
+:DateUnix: 1563906031.0
+:END:
+
+**** Easy solution then. Utilitarianism is great for enforcing mutual cooperation between free agents. Turns out, when you have reality-breaking powers, you don't have to care about the feelings of people who can't also time travel.
+:PROPERTIES:
+:Author: GemOfEvan
+:Score: 3
+:DateUnix: 1563937063.0
+:END:
+
+***** Interesting, but it's an argument I'm pretty hesitant to make.
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 2
+:DateUnix: 1563962393.0
+:END:
+
+
+** An argument I could see being made is that timelooping is no different than exercising free will. If I take action X at time 0, then by time 10^{10^{10^{10,}}} 100 trillion people will have died. If I instead take action Y, 101 trillion will have died instead. This happens for every action you take, conscious and unconscious.
+
+There's also the issue of whether it's better to exist and be killed or to never exist at all. The protag is basically creating everything living in the universe every time he goes back, but also kills everything from the last branch.
+
+Maybe check out [[https://en.wikipedia.org/wiki/Population_ethics][population ethics]].
+:PROPERTIES:
+:Score: 13
+:DateUnix: 1563907134.0
+:END:
+
+*** #+begin_quote
+  There's also the issue of whether it's better to exist and be killed or to never exist at all. The protag is basically creating everything living in the universe every time he goes back, but also kills everything from the last branch.
+#+end_quote
+
+I addressed this:
+
+#+begin_quote
+  I mentioned above that either T_1.1 is created from T_1 due to the rewind, or T_1.1 already exists. I think this also has interesting ethical implications of its own. For one, if the rewind causes the creation of a new timeline, then each rewind causes amounts of utility equivalent to the total utility history of the multiverse (and if that number is positive), then the moral thing for John to do is to rewind as many times as possible (if the number is negative John creates even more disutility). Interestingly, if the rewinds creates the new timelines, and the multiverse is net positive utility, then the positive utility created by the multiverse may outweigh the negative utility created by omnicide.
+#+end_quote
+
+​
+
+I'll give the Wikipedia article a look.
+
+​
+
+#+begin_quote
+  An argument I could see being made is that timelooping is no different than exercising free will. If I take action X at time 0, then by time 10101010, 100 trillion people will have died. If I instead take action Y, 101 trillion will have died instead. This happens for every action you take, conscious and unconscious.
+#+end_quote
+
+The scale is different, but timelooping isn't unique in having an astronomical effect (the effects are just much more imminent).
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 3
+:DateUnix: 1563908251.0
+:END:
+
+
+** I don't see a problem - everything he unmakes by rewinding will any of:
+
+- happen again once t_y is reached (so at the second iteration of t_y there is no net change, no harm no foul)
+- happen again, except that anything subject to true randomness (if that exists (in this setting)) might have a different outcome (in which case, the expected net good shouldn't change. I would compare this to doing anything IRL, where some nth-degree consequence has some chance of have a terrible effect - after a point, we must dismiss it). The only time this would be morally wrong is if some horrifically unlikely event occured, such that it changing would be very bad, and after rewinding it is very unlikely to occur again.
+- Is something he, at t_x, can affect (so as long as he acts properly based on his knowledge, it is good).
+
+​
+
+Generally speaking, given the infinite time that time looping gives, a sufficiently competent and good character will probably use it to find maximally good paths anyway, which probably outweighs the temporary loss of the first kind and the probabilistic risk of the second.
+:PROPERTIES:
+:Author: ABZB
+:Score: 8
+:DateUnix: 1563906028.0
+:END:
+
+*** - Different people would get born.
+- The people in the rewound time may sufficiently diverge from those in the other timeline to be different moral persons.
+
+Addressed here:
+
+#+begin_quote
+  If one privileges some "real" timeline, I'd like to point out that if the simulation goes on for long enough, the simulated agents may sufficiently diverge from their "real" copies that they're no longer the same moral persons. Alternatively, some entirely new agents may be created in the simulation that would not exist in the "real world".
+#+end_quote
+
+A lot of the impact of the time looping is outside his light cone, but true randomness is meant to exist in this setting. The impact John can have seems like it would be outweighed by the astronomical scales involved in timelooping (no matter how competent he is).
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 5
+:DateUnix: 1563907102.0
+:END:
+
+
+** #+begin_quote
+  As an aside, even if hypothesis 1 was true, then John may still cause omnicide as there's a multiverse ending event (John believes his time rewinding ability is to avert it (he auto rewinds to a fixed save point at when he first awakened his powers if he dies or gets stuck in an infinite loop)), so if the time rewind clones the timeline, if all possible timelines don't already exist and rewinding creates a new timeline, then it seems to me that John rewinding time is omnicide.
+#+end_quote
+
+I'm going to focus on this, because this is a relatively easy one.
+
+The first rule of first aid is "Don't become another patient." If you get yourself injured or killed trying to help someone eldeyr, you've just made the problem worse for the next person to deal with. So, if you see someone bleeding out at the bottom of a steep incline, and, you're not confident you can safely descend in time to save that person... or sounds heartless, but your priority has to be keeping yourself safe.
+
+How does this pertain to your time loop?
+
+From what you've described, the universe your character is currently in would be the person at the bottom of the cliff, bleeding out. They're already dying, through no fault of John's, and getting himself killed to rescue them just makes things worse.
+
+Now, if he's using his ability frivolously, then that's a different thing. If John's looping through time to get into the pants of someone he's attracted to, then yes, he should feel bad about the people he's condemned to sure. On the other hand, if he chooses to loop to get closer to a solution to the universe-ending threat, he's not killing anyone. What he's doing is prioritizing the patients he can save over the ones he can't, which is just basic triage.
+:PROPERTIES:
+:Author: Nimelennar
+:Score: 7
+:DateUnix: 1563912484.0
+:END:
+
+*** #+begin_quote
+  Now, if he's using his ability frivolously, then that's a different thing. If John's looping through time to get into the pants of someone he's attracted to, then yes, he should feel bad about the people he's condemned to sure. On the other hand, if he chooses to loop to get closer to a solution to the universe-ending threat, he's not killing anyone. What he's doing is prioritizing the patients he can save over the ones he can't, which is just basic triage.
+#+end_quote
+
+Thank you very much for this. This is interesting as it constrains John from frivolous use of his looping ability (without me designing any mechanics to do so).
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 2
+:DateUnix: 1563914879.0
+:END:
+
+
+** I'll sidestep ethics and say that prettymuch any random person you gave this power to would do two things eventually. A) fuck around and live it up a little bit while acting thoughtless about the lives of others. B) do a "perfect play-though" i.e. when they did decide to move forward in time they would try to set shit up to be their idea of perfect. Either by always having the best thing to say in mind, or getting the girl, or just spending a lot of time hanging out with friends and family (who are now mysteriously rich and free to hang out)
+:PROPERTIES:
+:Author: chaogomu
+:Score: 5
+:DateUnix: 1563918410.0
+:END:
+
+*** True. That's not something I'm unaware of though. In John's case, the latter would be escapism as the world ends sometime in the near future (I'm thinking 10 years from when he first awakened), and his ability resets upon death so he would be stuck in the loop unless he can avert the world end. Alternatively he could try searching for a universe with a massive time divergence from earth (say 1,000 seconds pass there for every second on Earth) and live out his life there. But eventually, that dream too would end.
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 1
+:DateUnix: 1563951452.0
+:END:
+
+**** With a concrete goal most of his time will be trying to prevent the cataclysm. He'll take time off now and then but otherwise it's a job.
+
+If he gets unlimited tries then eventually he will succeed, and then may go back and do it again to get the perfect run.
+:PROPERTIES:
+:Author: chaogomu
+:Score: 1
+:DateUnix: 1563951941.0
+:END:
+
+
+**** Being potentially-able to avert a seemingly inevitable end-of-the-universe scenario allows your protagonist nigh-unlimited fuel for his trolley problem.
+
+After all, if you look at an unbounded timeline of satisfying folks' utility functions, it would eventually counterbalance the disutility of killing a copy of everybody that is in the simulation 10 years early over and over to get to that unbounded open timeline.
+
+Things get messier if he's only buying time to get to some yet-bigger time-bounded window.
+
+There's an additional moral dilemma of using the ability to advance the save state. You "save" all the beings that existed, giving them a chance at an end-of-universe minus save-time window of opportunity, but reverting to an earlier state gives access to a slightly longer timeline for the beings you bring into existence through the loop. Is there a moral dilemma in "creating" a universe of beings with a shorter clock? and how do you weight one possible restore-state universe against another other than your perceived likelihood that one is more likely than the other to help you achieve the "good end" in which you actually avoid catastrophe in 10 years?
+:PROPERTIES:
+:Author: edwardkmett
+:Score: 1
+:DateUnix: 1563952433.0
+:END:
+
+
+** Interesting post. I've had similar thoughts when thinking up my own time travel story, though you've touched on some things that never occured to me.
+
+#+begin_quote
+  I mentioned above that either T_1.1 is created from T_1 due to the rewind, or T_1.1 already exists. I think this also has interesting ethical implications of its own. For one, if rewind causes the creation of a new timeline, then each rewind causes amounts of utility equivalent to the total utility history of the multiverse (and if that number is positive), then the moral thing for John to do is to rewind as many times as possible (if the number is negative John creates even more disutility). Interestingly, if the rewinds creates the new timelines, and the multiverse is net positive utility, then the positive utility created by the multiverse may outweigh the negative utility created by omnicide.
+#+end_quote
+
+This bit is particularly interesting to me. I wonder if it even makes sense to think of multiple timelines in terms of utility, unless each timeline can interact with each other. Utility is pointless unless it's benefiting someone, so even if you're creating infinite worlds with a finite utility, the fact that you're creating infinite people to use up that utility ultimately negates that progress (IMO).
+
+The only counter argument I can think of, is that the knowledge John brings from the future would potentially allow that world to better utilize the resources available to the people of that world. So in that sense, even though the same resources would be available in the new timeline that were available in the old one, The way they're used could make them more valuable to the New timeline as a whole. So in that case, there would potentially be utilitarian value in time travelling like this.
+
+On a slightly unrelated note: I'm curious what would happen to the John of T_1 when he time travels to T_1.1. Esentially this is a transfer of memories or conciousness instead of a bodily transfer. So assuming a new timeline is created and the old one is still in tact, there's a few options. John's body on T_1 could just drop dead on the spot or have him be a brain-dead vegetable. Or the John on T_1 experiences no consequences. Simply a copy of his memories are sent to the new timeline and the John of T_1 is stuck dealing with his original timeline without reaping any of the benefits of knowledge that the new John on T_1.1 will have.
+
+In any case, there's a lot here to explore. Good luck with your story and good luck not confusing people!
+:PROPERTIES:
+:Author: Fresh_C
+:Score: 3
+:DateUnix: 1563906357.0
+:END:
+
+*** #+begin_quote
+  This bit is particularly interesting to me. I wonder if it even makes sense to think of multiple timelines in terms of utility, unless each timeline can interact with each other. Utility is pointless unless it's benefiting someone, so even if you're creating infinite worlds with a finite utility, the fact that you're creating infinite people to use up that utility ultimately negates that progress (IMO).
+#+end_quote
+
+Well ceteris paribus, do you consider creating new lives (who would raise both total and average utility) a good thing? If you do, then I think you'll consider creating the new multiverses beneficial.
+
+​
+
+#+begin_quote
+  On a slightly unrelated note: I'm curious what would happen to the John of T_1 when he time travels to T_1.1. Esentially this is a transfer of memories or conciousness instead of a bodily transfer. So assuming a new timeline is created and the old one is still in tact, there's a few options. John's body on T_1 could just drop dead on the spot or have him be a brain-dead vegetable. Or the John on T_1 experiences no consequences. Simply a copy of his memories are sent to the new timeline and the John of T_1 is stuck dealing with his original timeline without reaping any of the benefits of knowledge that the new John on T_1.1 will have.
+#+end_quote
+
+Or T_1 is terminated?
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 2
+:DateUnix: 1563907571.0
+:END:
+
+**** I think creating completely identical lives is somewhat pointless. If those lives already exist, then destroying them is bad. But I don't personally see the value in creating life, if it will live in an exactly identical way to something that already exists.
+
+Though I'm of the opinion that creating life in general isn't necessarily a morally good thing, depending on the quality of the lives created. Unless you're already living in a utopia, creating more life might just mean creating more suffering. (Note: Not that it's necessarily morally bad to have children in the current world. Just you should only have children if you think you can give them a life worth living.)
+
+Also, my comment's initial assumption was that T_1 was not being terminated.
+
+#+begin_quote
+  So assuming a new timeline is created and the old one is still in tact, there's a few options.
+#+end_quote
+
+I did misspell intact though, so I don't blame you for missing it.
+:PROPERTIES:
+:Author: Fresh_C
+:Score: 1
+:DateUnix: 1563913170.0
+:END:
+
+***** I expect that T_1 would be terminated. Both because it's how I've been thinking of time travel (before I put anything to paper) and because I imagine the mechanics that would play out would involve simulation of some form, and it seems natural that "wasteful" simulations would be terminated.
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 3
+:DateUnix: 1563914196.0
+:END:
+
+****** It only seems natural, if John is the only being who "matters"; in which case the ethical implications are self-resolved.
+
+As someone with an actual real-life superpower like John's, here's how it works for us: we create our savepoints through moments of happiness that are clearly remembered, eg that time we finally finished high school or moved out of home or had a nice date with someone. Whenever we experience a state of extreme regret, such that we desperately wish that we could return back to that time knowing what we now know, the multiverse makes a copy of our mindstate and sends it back down the timeline to the savepoint. It then overwrites the mind of the previous Aeschenkarnos (which is a subset of the data, so it's not "killing him" and we see no ethical issues), and he then proceeds to live out his life in a divergent timeline. The original self continues on, living with all of the mistakes he made after the savepoint.
+
+So far, I've only ever been the original self, but maybe that will change.
+:PROPERTIES:
+:Author: aeschenkarnos
+:Score: 2
+:DateUnix: 1563928859.0
+:END:
+
+******* You don't consider another copy of you a separate moral patient?
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 1
+:DateUnix: 1563951259.0
+:END:
+
+******** That'd be a category error, like wondering if one's ears or elbows have free will, and whether they owe a duty to each other. The "moral agent" (I assume you mean "agent" not "patient") would be the whole entity at all points in its lifespan(s).
+:PROPERTIES:
+:Author: aeschenkarnos
+:Score: 1
+:DateUnix: 1563951621.0
+:END:
+
+********* I've seen the term "moral patient" before. I'm not sure we should consider a copy of me to be the same agent. Especially if we never communicate. For one we would eventually diverge, for another given our lack of communication (and thus coordination), it seems we're more profitably treated as separate agents.
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 1
+:DateUnix: 1563962558.0
+:END:
+
+********** How thin can the difference meaningfully be sliced? Is you of ten years ago a significantly different person? How about ten minutes? There will be some point in the grey area where it matters.
+
+This is why I assert, as a moral choice rather than as a provable fact, that to "overwrite" a mind X with the contents of mind X /plus/ additional experience Y, is not murder of X.
+:PROPERTIES:
+:Author: aeschenkarnos
+:Score: 1
+:DateUnix: 1563970320.0
+:END:
+
+
+** First, your story sounds fascinating. I hope your viewpoint character explores all of the ethical ramifications over time as he or she learns more about the process of what is happening, as it would add a lot of weight to the arguments if they applied to actions already committed and not just hypothetical future actions.
+
+Second, how would a time-traveling character even know the fate of a timeline he or she left behind? Assuming that you jumping back to a save point has destroyed an entire universe is a rather large assumption and I don't see how someone could collect data on it either way. The only exception I can see to this would be if setting a save point created a mental simulation and there was some tell to indicate this was the case (perhaps a range limitation causes only a small light cone to be copied and the stars begin to go dark after a few days/weeks/months/years) or if a time limit applied (simulated universe can only last for 90 days, after which point it either collapses or becomes glitchy -- though this tell would make the moral calculus a little easier, which may be a detractor if you want to explore that aspect).
+
+Third, I wouldn't recommend having your character adhere too strictly to a moral framework. It could really get in the way of telling a good story if time travel never actually happens (after presumably a first accidental incident) because of moral reasons.
+:PROPERTIES:
+:Author: AuthorBrianBlose
+:Score: 3
+:DateUnix: 1563911907.0
+:END:
+
+*** #+begin_quote
+  Assuming that you jumping back to a save point has destroyed an entire universe is a rather large assumption
+#+end_quote
+
+How low a probability do you assign that hypothesis?
+
+​
+
+#+begin_quote
+  and I don't see how someone could collect data on it either way.
+#+end_quote
+
+You can't, which is why it's up to your priors.
+
+​
+
+#+begin_quote
+  Third, I wouldn't recommend having your character adhere too strictly to a moral framework. It could really get in the way of telling a good story if time travel never actually happens (after presumably a first accidental incident) because of moral reasons.
+#+end_quote
+
+There would be some moral ruminations, but probably the MC would bite the bullet of "I create infinite expected disutility with my actions". Also, "any single moral action I do is grossly outweighed by the moral impact of the rewinds".
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 1
+:DateUnix: 1563914395.0
+:END:
+
+**** I would estimate an extremely low probability, well below 1%, that I was destroying an entire universe with mental time travel. The idea in the first place seems like a giant non sequitur. It would be like assuming that upon my death, the whole universe would be destroyed because I'm not here to witness it. Why would I ever assume such a thing? I think there would be a huge burden of proof on the side assuming a universe is destroyed.
+
+Things could become morally bankrupt pretty fast if the MC operated under a strictly utilitarian morality. Any actions in a temporary universe could be written off as very minor disutility relative to other events going on. Adopting virtue ethics for the duration of the time traveling could greatly simplify things, especially if the choice is consciously made at some point to utilize a different moral paradigm within the context of fake time.
+:PROPERTIES:
+:Author: AuthorBrianBlose
+:Score: 2
+:DateUnix: 1563970590.0
+:END:
+
+
+** From my understanding of speculative multiverse theory, I do not see a problem. All time frames of all *verses exist eternally. By rewinding, he returns to a frame, which in a linear perspective comes "before", but that is only his perspective. All other infinite time frames, even the ones he left behind exist timelessly.
+
+If this interpretation is wildly off from your ideas, please ignore! I do think that reality, not even fiction, is that way.
+:PROPERTIES:
+:Author: flodereisen
+:Score: 3
+:DateUnix: 1563912249.0
+:END:
+
+*** I don't think my story's multiverse is that large.
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 1
+:DateUnix: 1563914472.0
+:END:
+
+
+** it seems to me that your mc is less timelooping /per se/ and more that they have a form of precog. much like Coil in wildbow's Worm, theyre not creating or destroying timelines (or even moving between them) but instead are running an incredibly detailed simulation of the consequences of n choices over the period [t_x, t_y]. so instead of T1, T1.1...T1.n just have knowledge from t_y appearing at t_n which im pretty sure would allow your mc to create maximal utility within his constraints. as to the mindcrime question i think that its probably not only prohibitively expensive to worryabout in terms of opportunity cost compared to astronomical stakes but probably impossible to avoid commiting once you have an agent running computations of sufficient advancement to be considered moral agents in and of themselves. honestly im pretty sure some humans capable of modelling behavior in arbitrary intelligences well could indeed already be committing mindcrime
+:PROPERTIES:
+:Author: N0xS4v4g3
+:Score: 2
+:DateUnix: 1563914213.0
+:END:
+
+*** One of the mechanics I'm considering is incredibly detailed simulation, but that doesn't sidestep the issue at all. There would still be mindcrime in that scenario.
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 2
+:DateUnix: 1563915204.0
+:END:
+
+**** yeah sure but if you compare ~8,000,000,000*(n-1) simulated individuals destroyed per decision to that (theoretically) googolplex of immortal individuals once your mc succeeds, ending death and colonizing space etc. im pretty sure shut up and multiply comes down on the side of your mc maximizing however he needs to.
+:PROPERTIES:
+:Author: N0xS4v4g3
+:Score: 2
+:DateUnix: 1563918498.0
+:END:
+
+***** i mean i know im assuming no aliens in your setting but im pretty sure that the math still works out if you consider that by ending death your mc can save a lot more moral agents than he destroys in his simulations
+:PROPERTIES:
+:Author: N0xS4v4g3
+:Score: 2
+:DateUnix: 1563918678.0
+:END:
+
+
+*** I now want a (probably short) Worm fanfic of a utilitarian-morality Coil-powered MC who has read one too many Iain M. Banks novel and so is aware of the simming problem.
+
+That said, after they accidentally cancel a timeline for the first time, they might have a nervous breakdown. You could maybe get a second chapter out of the trolley problem of using it to avert the protagonists' own certain death in one or both timelines, but wow the level of grimderp would get bad fast.
+:PROPERTIES:
+:Author: edwardkmett
+:Score: 2
+:DateUnix: 1563930073.0
+:END:
+
+**** My story would have been a Worm fanfic if I'd actually read Worm, sadly I've yet to pick up a chapter, so no dice.
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 3
+:DateUnix: 1563951587.0
+:END:
+
+***** definitly a hard reccomend from me. its basically a deconstruction of the standard superhero setting and it explores themes of responsibility, the shifting line between ally and enemy, and what it really means to be a hero. its got kind of a slowish start offset quite well by its worldbuilding and depth of character. plus some of the best superhero fights ive ever read.
+:PROPERTIES:
+:Author: N0xS4v4g3
+:Score: 1
+:DateUnix: 1563990382.0
+:END:
+
+
+** The spatial impact of one reset can be restricted to the light cone from t_x to t_y, because to the universe outside a c*(t_y - t_x) radius of John at t_y, t_x is in the future. Entering the deleted light cone from outside would be a separate instance of time travel.
+
+Because of the vast scale of space, most resets should only kill all life in the local solar system. Still massive, but quantifiable.
+:PROPERTIES:
+:Author: FireHawkDelta
+:Score: 2
+:DateUnix: 1563916381.0
+:END:
+
+*** The reset is meant to occur across the entire multiverse.
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 2
+:DateUnix: 1563917131.0
+:END:
+
+**** I'm saying it's functionally identical, so you could reset only the light cone for the same result. In universe, this could be more energy efficient depending on the mechanism. Ethically, the deleted part of the multiverse outside this section will be replaced with a /completely identical/ replica, which in some ethical frameworks is better than destroying something unique.
+:PROPERTIES:
+:Author: FireHawkDelta
+:Score: 4
+:DateUnix: 1563919489.0
+:END:
+
+***** That's assuming no faster than light travel, which in a world with time travel isn't a very safe assumption.
+
+It does seem unlikely that a single instance of time travel could kill even a large majority of the universe, but, hypothetically at least, the protagonist could trigger an interstellar war between a series of FTL civilizations, wait for the various effects to propagate across galaxies and then reset it.
+:PROPERTIES:
+:Author: Watchful1
+:Score: 2
+:DateUnix: 1563941760.0
+:END:
+
+
+***** #+begin_quote
+  Ethically, the deleted part of the multiverse outside this section will be replaced with a
+
+  completely identical
+
+  replica, which in some ethical frameworks is better than destroying something unique.
+#+end_quote
+
+Would quantum dice rolled outside John's light cone return the same results across rewinds?
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 2
+:DateUnix: 1563951660.0
+:END:
+
+****** It doesn't matter, if you have a branching style multiverse every possible quantum dice result will create a universe for each possible result. This happens the same way before and after a time loop, so the set of universes in the multiverse won't change. Your specific POV universe might be different, but I don't think the multiverse changes at all.
+
+Thinking some more, if the multiverse is a set of every possible universe (or every universe within constraints), there might be a zero utility cost to timelooping. anything that is different still happens in another universe, a set of all universes is identical to another set of all universes. Although, there can still be narrative consequences to time looping, as John probably don't have free access to whichever universe he wants.
+:PROPERTIES:
+:Author: CompactDisko
+:Score: 2
+:DateUnix: 1564017118.0
+:END:
+
+
+** This is easy enough to fix. Just make the rewind operation local to John, and also a cause for multiverse splitting.
+
+For all t_y there exists some version of John who did not choose to rewind despite having the same history as the John who did rewind. That version of John continues on in that instance of the 'verse. The version of John who chose to rewind begins a new run at t_x.
+:PROPERTIES:
+:Author: IICVX
+:Score: 2
+:DateUnix: 1563940463.0
+:END:
+
+
+** I think this short film needs to be linked here.
+
+One Minute Time Machine [[https://youtu.be/vBkBS4O3yvY]]
+:PROPERTIES:
+:Author: CronoDAS
+:Score: 2
+:DateUnix: 1563941486.0
+:END:
+
+
+** While it sounds interesting, I think the core of the argument is flawed here. Utility functions aren't meant to be defined for universes where time travel exists, or for that matter lifelike simulations, or even the concept of a timeline stopping.
+
+From this time traveler's perspective, there is only one universe that will last forever, and any other timeline is deleted (unwound) every time he goes back in time. He can't know if the lost timeline is stopped, continues normally, continues with more time travelers and more splits, continues and ends up as a utopia/dystopia, stops but saves all the people's memories and merges and sends them to the final timeline, continues with the absence of the time traveler, or continues to end up including a computer that will simulate every other timeline. He can't even assign probabilities to these things, because he isn't aware of some of the rules of metaphysics. Therefore, I argue that it's useless and irrelevant for him to morally consider anything that he has done inside the loop; only his own experiences, plus the final universe, should matter to him.
+
+Also, since all of these universes are functionally simulations that start from our current world and slightly diverge, it's unlikely that any of them will be apocalyptic hellish morality disasters, or vice versa. The timelines will end up being finitely similar to each other, before he goes back each time. So, if you do want to consider the "utility/morality cost" of each such pruned branch of alternate history, it will always be pretty similar to the "utility/morality cost" of just continuing with our normal universe for some small finite amount of time, and it's pretty insignificant when compared to the entire rest of potential human future in the final (supposedly maximally-good) timeline.
+
+Not to mention - the utility/morality cost of each pruned timeline could totally be positive, and not negative. If most people enjoy their lives and prefer living to not living (a pretty safe assumption), then re-simulating the universe over and over with slight differences could be considered as a very good thing to do.
+
+Your point about "committing omnicide" when you go back in time is ridiculous, because you're also committing the opposite of omnicide when you restart the universe from earlier, and because simply making a person stop existing in a vaccuum where no other people will ever know or be affected by it is what I would consider morally meaningless. It's not murder if the person's life is going to get repeated soon (albeit with slight differences), or if the person is just never going to live again (e.g. when time-traveling after babies are born). Just like we don't consider the fact that we are not spending our entire time creating babies to be murder. The reason we don't like murder is that in our world it has lasting consequences and takes something away from the world, but in a time travel scenario, the murder is just undone and the world isn't any different for it.
+
+I think the only coherent, interesting, and agreeable model of time travel ethics would be to completely disregard the lives that are going to get undone when you loop back, and only consider yourself (the time traveler) and the final outcome universe, or if that does not exist, your final chosen path in all time loops after a certain point.
+
+And yes, this does make it morally fine to repeatedly torture every person in the world for information, unwinding that time, and then creating the perfect timeline. I guess that's the price of progress.
+:PROPERTIES:
+:Author: Shemetz
+:Score: 2
+:DateUnix: 1563947836.0
+:END:
+
+*** I agree with pretty much all of that except for the torture thing. If you torture someone, even if that torture is reversed or undone somehow, there's still terrible suffering that existed in the world due to your actions. There's also the fact that you're a flawed human being, and becoming the sort of creature capable of torturing people for information simply because it's convenient will inevitably start to eat away at your values and normal moral perceptions. You do enough bad things and you start to forget why you thought they were bad in the first place, which is going to lead to some serious value drift over time.
+:PROPERTIES:
+:Author: SilverstringstheBard
+:Score: 2
+:DateUnix: 1563963654.0
+:END:
+
+
+** First I'd like to note that all the ethical issues you discuss here are exactly the same as if your universe/multiverse had a branching non-mental time travel mechanic.
+
+Second, you're completely right that a branching time travel model is an ethical black hole for stories - i.e. if you really think about the implications, the time travel itself is more morally significant than any other aspect of the plot or world.
+
+If the timeline you're branching to already always exists, then morality is dead because now that any outcome/timeline that ever could happen, is happening, somewhere, and so all that is left is your personal selfishness about which timeline your strand of consciousness wants to be involved in.
+
+If your branching time-travel creates a universe without destroying the original (or vice versa), that's incomprehensibly more morally significant that any disaster you were trying to stop.
+
+If the branching both creates a new universe and destroys the old, that's the only configuration where other concerns could legitimately have any bearing. This is in fact a kind of "time travel" you could achieve without actual time travel - see the Omega 13 from Galaxy Quest, which is a universal "matter rearranger". If your protagonist accepted that this was certainly playing god on a huge scale, and was both omnicide and omni-nate(?), then he could make arguments along the lines of not privileging the lives currently being lived over the lives that could be lived in another possible timeline, and then just get on with his task.
+:PROPERTIES:
+:Author: carminis_vigil
+:Score: 2
+:DateUnix: 1564057911.0
+:END:
+
+*** Ultimately, I think the option of every timeline already exists so nothing matters may be what I go with as it best lets me tell the story.
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 1
+:DateUnix: 1564433005.0
+:END:
+
+
+** #+begin_quote
+  I'd like to ask you this question: if someone told you that you were a simulation and decided to terminate you, would you consider it murder?
+#+end_quote
+
+I don't see why not. In the end the universe too is just information processing itself. The whole "is the universe a simulation?" argument is an ill-posed question - the relevant question is, "is the hardware the universe is running on embedded within another, bigger universe?". Functionally, the universe is equivalent to a simulation running on a quantum computer.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 2
+:DateUnix: 1564611774.0
+:END:
+
+
+** Why is killing disutility? Surely pain is not death. Death is 0 utility
+:PROPERTIES:
+:Author: RMcD94
+:Score: 1
+:DateUnix: 1563931915.0
+:END:
+
+*** You're averting utility. Ceteris paribus, an alive moral person would want to remain alive. Killing them is contrary to their preferences and thus creates disutility.
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 3
+:DateUnix: 1563951767.0
+:END:
+
+**** By the same logic not having children constantly you're avoiding utility but no one cares about that so.
+
+When they're dead they can't experience negative utility but if we care about potential utility then we have to do stupid things like have kids 24/7
+:PROPERTIES:
+:Author: RMcD94
+:Score: 1
+:DateUnix: 1564023529.0
+:END:
+
+
+** Generally when it comes to time travel: the only solutions I've came up with that don't have staggering inescapable ethical ramification require your world to either be simulated, or have physical laws that operate similarly.
+
+This is because if your world operates like a simulation then you have the following options, which you didn't considered in your question:
+
+- Firstly one can have the simulation run backwards (with exception possibly made for the MC's mind) to some specified point. This can let your maintain continuity of consciousness for everyone conceivably by letting them experience events in reverse, and erasing people's memories here seems as justifiable as any other form of memory manipulation. Of note here is that you have to either say that experiencing events in reverse is how time reversal works (which the MC would know if the rewrite didn't mess with their memories and they could remember the rewind process), or that the simulation/world is changed in such a way that people experience events in reverse when the time reversal happens.
+
+- Secondly and slightly differently you could just have the state of the world changed all at once erasing everyone's memory (except the MC), but still potentially maintaining continuity of consciousness for everyone involved. The noteworthy difference here is just that people's memories are erased all at once instead of gradually, which you may or may not consider morally distinct. Also this option, unlike the first doesn't have an obvious way of making clear to the MC that they /probably/ aren't destroying entire multiverses.
+
+Now in both cases the there may seem to be the issue that continuity of consciousness is still broken for people who died before the time travel, and the issue of how to deal with new persons that came into existence. However I think I can come up with solutions to both of those:
+
+- One can have the hypercomputer simulation/multiverse that behaves similarly be "timeless". As in one could have the "simulation/reality" reference frame exist outside of normal time. Thus when time was "reversed" (whether gradually or not) the minds of anyone who died, would from their own temporal reference frame not experience a cessation of consciousness.
+
+- People being brought into existence is trickier though, since it doesn't really have an apparent solution which doesn't treat minds as having special significance within the rules of the simulation. However since reality must /already/ treat minds as special in order to let the MC keep their memories (unless they time travel such that there will now be two copies of around at once), there's obviously precedent.\\
+  So one could solve this issue in multiple ways: Fetuses or even infants below a certain age could just be imperfect P-zombies (since it doesn't seem like you would need a conscious process to imitate an infant, and certainly not a fetus), except in the final iteration of the timeline. Alternatively the process governing the "rewind" could just tweak any minds created during the duration of the time loop and basically reuse them for the fetuses/infants created in every iteration of the time loop. The first scenario only has the issue of deceiving parents, not so bad given the stakes. The second option has to alter the minds of the fetuses/infants involved (which could happen gradually), but this isn't necessarily terrible as the infants don't exactly have meaningful (conflicting) preferences. So doing this would be net neutral according to preference and classical utilitarianism.
+
+Notably though these solutions presume the time loop isn't long enough for mind created during it to start being hard to simulate and having preferences which would conflict with them having their mind altered. Since in that case things are morally far more challenging. Also time loop stories generally don't involve years long loops, so you probably only have to worry about the creation of fetus minds which makes both solutions above work better.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 1
+:DateUnix: 1563932078.0
+:END:
+
+*** #+begin_quote
+  require your world to either be simulated
+#+end_quote
+
+Why is this at all relevant?
+
+#+begin_quote
+  Firstly one can have the simulation run backwards (with exception possibly made for the MC's mind) to some specified point. This can let your maintain continuity of consciousness for everyone conceivably by letting them experience events in reverse, and erasing people's memories here seems as justifiable as any other form of memory manipulation. Of note here is that you have to either say that experiencing events in reverse is how time reversal works (which the MC would know if the rewrite didn't mess with their memories and they could remember the rewind process), or that the simulation/world is changed in such a way that people experience events in reverse when the time reversal happens.
+#+end_quote
+
+This seems gimmicky, and I'm not sure how practical it is/what implications it has. That said, it is another approach to the mechanism of time travel that I hadn't considered, thanks for that. That said, I probably wouldn't be using it.
+
+​
+
+#+begin_quote
+  Secondly and slightly differently you could just have the state of the world changed all at once erasing everyone's memory (except the MC), but still potentially maintaining continuity of consciousness for everyone involved. The noteworthy difference here is just that people's memories are erased all at once instead of gradually, which you may or may not consider morally distinct. Also this option, unlike the first doesn't have an obvious way of making clear to the MC that they /probably/ aren't destroying entire multiverses.
+#+end_quote
+
+How is this different from cloning the timeline updating it and terminating the source timeline? If we imagine the timeline as a simulation, I'm not sure that this and the other mechanic I described are any different. Not only do they behave exactly the same, the mechanism of "update the world state to this new world state" doesn't seem any different from a clone, update and terminate.
+
+​
+
+#+begin_quote
+  Notably though these solutions presume the time loop isn't long enough for mind created during it to start being hard to simulate and having preferences which would conflict with them having their mind altered. Since in that case things are morally far more challenging. Also time loop stories generally don't involve years long loops, so you probably only have to worry about the creation of fetus minds which makes both solutions above work better.
+#+end_quote
+
+I think the maximum length of a loop in this story would be 10 years, but I imagine that there would be other universes where perhaps one earth second corresponds to 1000 of their seconds. Temporal differences between universes kind of obviate this as a solution. Regardless though, I don't expect the simulator to have any reason to care about our ethics, so I don't expect they would sacrifice even an iota of predictive accuracy due to moral concerns (your ideas about mitigating the moral harm of simulation).
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 1
+:DateUnix: 1563952594.0
+:END:
+
+**** #+begin_quote
+  How is this different from cloning the timeline updating it and terminating the source timeline? If we imagine the timeline as a simulation, I'm not sure that this and the other mechanic I described are any different. Not only do they behave exactly the same, the mechanism of "update the world state to this new world state" doesn't seem any different from a clone, update and terminate.
+#+end_quote
+
+The difference is that you're rearranging the state of the world and altering people's memories, but no multiverse timeline is actually erased and everybody maintains continuity of consciousness albeit with memory modification.
+
+#+begin_quote
+  I think the maximum length of a loop in this story would be 10 years, but I imagine that there would be other universes where perhaps one earth second corresponds to 1000 of their seconds. Temporal differences between universes kind of obviate this as a solution. Regardless though, I don't expect the simulator to have any reason to care about our ethics, so I don't expect they would sacrifice even an iota of predictive accuracy due to moral concerns (your ideas about mitigating the moral harm of simulation).
+#+end_quote
+
+Yeah if the time loops are 10 years then there's no good option for mitigating the moral concerns anyway. Since you have to either kill infinite children or completely overwrite the identities of an infinite number number of people which isn't exactly better.
+
+Given you don't seem to want to design the time travel around giving your protagonist moral reason to justify their actions though, the only real good option here is probably just to make them amoral or willfully ignorant of the implications of their actions.\\
+Since it's somewhat difficult to design the time travel such that the evidence available to the protagonist doesn't point towards them creating infinite multiverses doomed to death, just to save the small portion of timelines the protagonist exists in.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 1
+:DateUnix: 1564527350.0
+:END:
+
+
+** I'm not religious, and don't believe that humans have some kind of innate soul that has value in and of itself. So for me, the sum total of a person's value from a moral standpoint is their mind. Painlessly delete a mind and recreate it exactly and nothing is lost. Minds do have value to other minds, so killing someone, while they might not care afterwards, would cause pain to the people that knew them, or even potentially the people that might have known them in the future.
+
+But none of that happens if you kill everyone. If everyone dies, there's no one to miss anyone. Assuming you do it painlessly, IE by time traveling, there's no intrinsic moral issues. Your actions in the meantime aren't erased, if you torture someone and then time travel it away, that's still bad, but it's actually better than torturing them and not time traveling it since if they don't exist anymore then they can't feel more pain about it in the future.
+
+Now if people in your universe canonically have souls, like the people in the mother of learning universe do, then it's a different matter.
+:PROPERTIES:
+:Author: Watchful1
+:Score: 1
+:DateUnix: 1563943027.0
+:END:
+
+
+** #+begin_quote
+  he auto rewinds to a fixed save point at when he first awakened his powers if he dies or gets stuck in an infinite loop
+#+end_quote
+
+/This/ is a /very/ important and interesting note; it changes the entire debate around when (and whether) John should use his looping powers. Because, unless he aggressively pursues longevity, we can assume that he /will/ die sooner or later. Perhaps not immediately, but within (say) the next two hundred years, it seems inevitable.
+
+And then, when that happens, he /will/ rewind. There's not much choice here. If John's time travel destroys the universe, then the universe that he is in is /already doomed/.
+
+It's just a matter of /when/ the universe is destroyed; not /whether/.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1563956930.0
+:END:
+
+
+** The character-internal ethics are going to depend on how John perceives the multiverse operating. These may be separate and distinct from the ethics perceived by a person (or the audience) who has a different viewpoint on the multiverse.
+
+So what if John is of the opinion that the multiverse, and all possibilities at all moments of time, are fixed and immutable, i.e. time itself only exists as a function of perception? Jumping back in time could then merely be transporting John's mind-state back to point X and continuing down the path of "What if John at this point in time gained this potential future knowledge from nowhere?" Effectively, he'd not have the ability to time-travel, per se, but have the ability to (mentally) jump timelines. No-one dies, the people John's previous timeline are all still there.
+
+It's also possible that the time-travel ability doesn't exist at all, and every time John attempts to time-travel, the author simply picks up the story in the new timeline without indicating directly to the audience that this is now a completely different timeline and different John than the one they were reading about a sentence ago. No-one dies, they just stop getting written about.
+
+Or perhaps a mental copy of John is sent from point Y back to point X and merges with John-X, forming a new splinter timeline X2. Meanwhile, John-Y is confused as to why his timeline-jumping ability doesn't seem to have worked this time (or maybe ever, if the ability follows the mental copy). No-one dies.
+:PROPERTIES:
+:Author: Geminii27
+:Score: 1
+:DateUnix: 1563958684.0
+:END:
+
+
+** Honestly, I think you are going a little too deep on this. Assuming the timeline he leaves effectively ceases to exist, while he has committed omnicide he has also created a similar amount of life. To quote Gandalf, “Many that live deserve death. And some that die deserve life. Can you give it to them? Then do not be too eager to deal out death in judgement.”. Our MC can indeed give life to people who deserve it. He has the power to choose a reality where those who deserve death get it and those who deserve life get it.
+
+Now you could always get into the ethics of meddling with fate and the arrogance of assuming you're own choices have any sort of moral authority on right and wrong, if you were so inclined. Still though, the reality is that for approximately every person who loses out because he went back there is another who is happier for it, so long as he doesn't manage to incite any particularly bad disasters. Meaning that the morals of making a new timeline are (rationally) the exact same as being able to save one person out of a pair. Internally it could be quite problematic and result in guilt, but there was no right or wrong choice.
+:PROPERTIES:
+:Author: silian
+:Score: 1
+:DateUnix: 1564006790.0
+:END:
+
+
+** There is an interpretation that involves no such things as multiple timelines:
+
+Let t_0 be the point you're rewinding to, and t_y the point you're rewinding from.
+
+Consider this: There is no such thing as a pre-rewind version of t_0 to t_y. The device is simply an oracle that at t_0 modifies your brain into what it predicts you are going to become, handwaving biocompatibility issues.
+:PROPERTIES:
+:Author: Mr-Mister
+:Score: 1
+:DateUnix: 1564045463.0
+:END:
+
+
+** Book recommendation: [[https://www.amazon.com/Fabric-Reality-Parallel-Universes-Implications/dp/014027541X/ref=nodl_][The Fabric of Reality]]
+
+Deals explicitly with how to think about a concept of time travel very similar to this. It's framed in terms of Virtual Reality, but I think you could translate it for your own use easily. As a bonus, it's a pretty fun tour of some really important ideas too.
+:PROPERTIES:
+:Author: optimizeprime
+:Score: 1
+:DateUnix: 1563930705.0
+:END:
+
+
+** #+begin_quote
+  it seems that time rewinding (or time looping in general) has massive ethical implications.
+#+end_quote
+
+​No, it doesn't. For the same reason that killing dragons doesn't. *It's not real*
+:PROPERTIES:
+:Author: BayesianPriory
+:Score: -2
+:DateUnix: 1563932155.0
+:END:
+
+*** Neither is any other counterfactual or thought experiment. Don't fight the hypothetical.
+:PROPERTIES:
+:Author: CronoDAS
+:Score: 3
+:DateUnix: 1563995933.0
+:END:
+
+**** [removed]
+:PROPERTIES:
+:Score: -2
+:DateUnix: 1563997918.0
+:END:
+
+***** Maybe it doesn't matter for anything in the real world, but it matters for the story the original poster wants to write. And it's not helpful to say that thinking about fiction is stupid, or to insult people.
+:PROPERTIES:
+:Author: CronoDAS
+:Score: 3
+:DateUnix: 1563998751.0
+:END:
+
+
+*** I meant within the world of the story.
+:PROPERTIES:
+:Author: DragonGod2718
+:Score: 1
+:DateUnix: 1565180159.0
+:END:

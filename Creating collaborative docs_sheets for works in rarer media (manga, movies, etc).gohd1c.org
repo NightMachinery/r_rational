@@ -1,0 +1,152 @@
+#+TITLE: Creating collaborative docs/sheets for works in rarer media (manga, movies, etc)
+
+* Creating collaborative docs/sheets for works in rarer media (manga, movies, etc)
+:PROPERTIES:
+:Author: whats-a-monad
+:Score: 11
+:DateUnix: 1590145680.0
+:FlairText: META
+:END:
+It's quite hard/inefficient to find recommendations for any media except written fiction on this subreddit. (E.g., anime. manga, movies, etc.) Do you guys think it would be a good idea to create a Google Docs or some similar online collab system for these media and put that in the weekly rec threads or the sidebars?
+
+On a side note; If we could create a rating mechanism like IMDB things could potentially be better. IMDB's model is much more efficient than sifting through lots of recommendations, though the ease of "contributing" might dilute our niche. Can we emulate a rating system via Google Sheets?
+
+[Reposted from my comment on the current recommendation thread.]
+
+Update: Some kind soul created a wonderful [[https://docs.google.com/spreadsheets/d/1Qwg1e7iARJ4a4F3yNTPA-BiwqYo7j4KPcxE1Nz_D5u0][sheet]] that works neatly. If any of the mods can be so kind to include this in the weekly recommendation threads, we'll be good to go!
+
+
+** #+begin_quote
+  Can we emulate a rating system via Google Sheets?
+#+end_quote
+
+We sure can! On a separate sheet, we can do [[https://i.imgur.com/8r9JTLW.png][something like this]]. (As you can see, we can even somewhat-proof it against weird scoring.) As long as nobody griefs the doc, this should work.
+
+Then, [[https://i.imgur.com/QGVi3oE.png][we can use the score on another sheet]] (for example, the main one, with recommendations).
+:PROPERTIES:
+:Author: NTaya
+:Score: 3
+:DateUnix: 1590152814.0
+:END:
+
+*** #+begin_quote
+  something like this
+#+end_quote
+
+I guess the mods should create the sheet? Is there a ping [[/u/admin][u/admin]] on reddit?
+:PROPERTIES:
+:Author: whats-a-monad
+:Score: 1
+:DateUnix: 1590159403.0
+:END:
+
+**** I mean, we can create the sheet, and if mods like it, they can pin it, or put in the subreddit Wiki or something.
+:PROPERTIES:
+:Author: NTaya
+:Score: 2
+:DateUnix: 1590162236.0
+:END:
+
+***** I added a spreadsheet to the post but I have little experience creating Google docs.
+:PROPERTIES:
+:Author: whats-a-monad
+:Score: 1
+:DateUnix: 1590169673.0
+:END:
+
+****** [[https://docs.google.com/spreadsheets/d/1Qwg1e7iARJ4a4F3yNTPA-BiwqYo7j4KPcxE1Nz_D5u0/edit?usp=sharing][Okay, here you go.]]
+
+There are two pages, the main one and the one with the scores. I used the black magic of INDIRECT() to automatically pull titles and scores from each sheet. It's ready for production, hope you like it! If it's okay, we should start filling it with content and then make a top post.
+:PROPERTIES:
+:Author: NTaya
+:Score: 3
+:DateUnix: 1590196232.0
+:END:
+
+******* It's excellent! Is the syntax the same as Excel? I should invest some time in learning it, and I don't know what to search for. Can you separate anime/manga tags? They are very different media. It might be a good idea to have separate scores for different domains of each entry. An extreme example is how Royalroad does it, but I think adding at least a Rationality Score and Overall Score is better than having a single number. I was adding items now, and I noticed I was conflicted in what scores to give. To fill them, I imagine asking some veterans can help?:)) Though as long as the mods include it in the weekly rec threads, it will get filled in time.
+:PROPERTIES:
+:Author: whats-a-monad
+:Score: 1
+:DateUnix: 1590256664.0
+:END:
+
+******** #+begin_quote
+  Is the syntax the same as Excel?
+#+end_quote
+
+No idea, honestly: I've only ever worked with Sheets!
+
+#+begin_quote
+  Can you separate anime/manga tags?
+#+end_quote
+
+Done.
+
+#+begin_quote
+  but I think adding at least a Rationality Score and Overall Score is better than having a single number.
+#+end_quote
+
+This would require a lot of changes, to be honest. The template (Name, Review, Score) had to be added manually each time, so this would require both changing the formulas and redoing the structure. I think at this point it's easier to just write your overall opinion and explain if it's rational(ist) in reviews.
+
+P.S. Use Ctrl+K to insert links, Reddit-like formatting doesn't work! :D
+:PROPERTIES:
+:Author: NTaya
+:Score: 2
+:DateUnix: 1590258370.0
+:END:
+
+********* I noticed it didn't work, but I thought the markdown syntax should be legible to most people. I mostly write my notes in plaintext markdown, so I'm used to seeing URLs that way. :D Thanks for the tip though.
+:PROPERTIES:
+:Author: whats-a-monad
+:Score: 1
+:DateUnix: 1590260552.0
+:END:
+
+
+********* If you're done filling it/asking other people to fill it, we should proceed to somehow contacting the mods.
+:PROPERTIES:
+:Author: whats-a-monad
+:Score: 1
+:DateUnix: 1590260603.0
+:END:
+
+********** #+begin_quote
+  you're done filling it
+#+end_quote
+
+Honestly, I still haven't touched that part yet, I've been studying/working all day, so I'll be free only in a few hours. Then, we probably should make another top post, and ping the mods in it or something. I can do that.
+:PROPERTIES:
+:Author: NTaya
+:Score: 2
+:DateUnix: 1590260790.0
+:END:
+
+*********** Any updates?
+:PROPERTIES:
+:Author: whats-a-monad
+:Score: 1
+:DateUnix: 1591549727.0
+:END:
+
+************ Hello! I'm super sorry, but I have incredibly taxing weeks of uni exams, and my brain is too melted for anything other than peacefully browsing Reddit. You are free to do with the Sheet whatever you want, I'll join somewhere after the 20th of June. Good luck!
+:PROPERTIES:
+:Author: NTaya
+:Score: 2
+:DateUnix: 1591704278.0
+:END:
+
+
+****** Okay, give me 6 hours, I'll finish with my studies and send you a spreadsheet for all reviews. Then we can probably make a new top post if mods won't mind.
+:PROPERTIES:
+:Author: NTaya
+:Score: 2
+:DateUnix: 1590169924.0
+:END:
+
+
+** You could also set up a google form to take recommendations/rankings then populate the curated list from that
+:PROPERTIES:
+:Author: DrFretNot
+:Score: 2
+:DateUnix: 1590164346.0
+:END:

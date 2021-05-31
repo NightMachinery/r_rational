@@ -1,0 +1,679 @@
+#+TITLE: [D] Wednesday Worldbuilding Thread
+
+* [D] Wednesday Worldbuilding Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 8
+:DateUnix: 1510153601.0
+:END:
+Welcome to the Wednesday thread for worldbuilding discussions!
+
+[[/r/rational]] is focussed on rational and rationalist fiction, so we don't usually allow discussion of scenarios or worldbuilding unless there's finished chapters involved (see the sidebar). It /is/ pretty fun to cut loose with a likeminded community though, so this is our regular chance to:
+
+- Plan out a new story
+- Discuss how to escape a supervillian lair... or build a perfect prison
+- Poke holes in a popular setting (without writing fanfic)
+- Test your idea of how to rational-ify /Alice in Wonderland/
+
+Or generally work through the problems of a fictional world.
+
+^{Non-fiction should probably go in the Friday Off-topic thread, or Monday General Rationality}
+
+
+** So I've just had the very broad strokes of an idea. Here it is:
+
+“*We* have bestowed upon humanity a Game. Play it. Learn its intricacies. Master its systems. Because in 2^{8} days, it becomes real.”
+
+Or in other words, an ROB (that is, Random Omnipotent Being) has created an MMO and tells people to play it. They aren't forced to, but 256 days from the announcement, people will become their in-game character, gaining their abilities and equipment. On the flipside, monsters will also start appearing in the real world. Individual physical locations might change, but the world itself will still be "planet earth"; this wouldn't be an isekai.
+
+In the following paragraphs, I'm going to talk about some initial ideas I've had. If you want to get directly to the part where I ask people to contribute ideas, scroll down below the line break.
+
+The plan would be to have one "book" about the 256 days leading up to the conversion (I haven't even started thinking about what the plot would entail), and however many books necessary about the world after to get to a "stable state" so to speak.
+
+By ROB fiat, the game is playable on literally any device with a screen and input (so if you really wanted to, you could play it on an oscilloscope) which means that pretty much everyone on the planet is be able to play, should they so choose. That being said, while the game /does/ somehow run on nokia flip phones and calculator watches, it's deliberately designed to be easier to play the more "realistic" the play medium is. A mouse+keyboard is worse than a wiimote and nunchuck is worse than a kinect. (I'd need to figure out /how/ to make the game naturally easier that way, though-- m+kb is almost always the best control surface IRL).
+
+After the 256 days, death will of course be permanent, but prior to that, death "kills" your character, forcing you to start over at lvl 1 with a new character, with the additional restriction that you can't choose the same set of starting choices as you chose initially (this is a big deal) and you can't choose the exact same character design (not a big deal). You also get locked out of playing until the next (calendar) day, so that someone can't kill themselves 256+1 times and not have any character options.
+
+For starting choices, I'm thinking of heavily restricting the player options. Namely, that there would only be 8 total "abilities" to pick, and you get a "primary" ability slot and a "secondary" slot, both of which can have the same ability in order to specialize.
+
+That being said, these "abilities" would be very broad; think worm power categories (ex. mover, blaster) rather than something more specific (like regular MMO abilities), and individuals would develop their own abilities though some system. Which brings me to the questions I have for you guys:
+
+--------------
+
+I'll be asking a few questions from the perspective of the ROB "game designer". Note that my "job" is easier for a few reasons:
+
+1. I'm not restricted by the computational power of what the game is run on; a literal toaster could run the game at full quality.
+2. My servers can "magically" connect to any computer with no latency and 100% uptime.
+3. Outputs (ex. graphics, sound, and even stuff like smell, taste, and touch, if supported) are maximally good for the output system they exist on, and will asymptotically approach "lifelike" the better the displays/sound systems get.
+4. Inputs are used to their maximal potential. A kinect camera will be able to track you near-perfectly by vision, although its limited to the detail it can get out of its limited resolution.
+
+And onto the worldbuilding questions:
+
+- Given that there will only be +8+ 16 broad categories that need to do double duty as both a character's primary class and subclass, what should these categories be? (think "mover, area-of-effect, healer, whatever). Note that no class can directly affect a player's mental state before or after the game becomes real, (so no "thinker") class, but classes that indirectly affect it (such as an alchemist class creating LSD) are kosher.
+- With 256 possible combinations of starting categories, someone can kill themselves once per day (in-game) and not have a remaining character combination when the game becomes real. What should I do in that case? I'm currently leaning towards having a special "final" ability that people who do that get, and if I implement that, what suggestions do you have for that ability?
+- I abhor LitRPGs that are all about grinding stats and levels. So how do I design a MMO with a combat system that a.) doesn't have levels (but will probably still have stats to some extent), but also b.) doesn't play out like an FPS, where if you don't have twitch reflexes and great input system, you simply can't compete (as this would be a worldwide phenomenon, and most people /don't/ have great twitch reflexes, or gaming keyboards and mice)
+- m+kb is the superior input system of the vast majority of games for a number of reasons, with a few exceptions for things like racing games and realistic flight sims. How do I make a game where it's an advantage to use the most "realistic" input system available to you, despite the fact that think like headtracking or wiimotes are usually inconvenient and difficult to use in games, even though they have a closer to 1-1 correspondence with real movement. Note that the game shouldn't /restrict/ the ability of people to play the game with non-realistic input systems: I "want" as many people as possible to play it.
+- How do I go around designing a system where players can create new abilities based off their class/subclass/any external knowledge they have without either making player abilities seem arbitrary or having to nail everything down to stats that bog down the story flow?
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 4
+:DateUnix: 1510206233.0
+:END:
+
+*** #+begin_quote
+  I abhor LitRPGs that are all about grinding stats and levels.
+#+end_quote
+
+MMOs are all about grinding. From the game-designer's perspective, this means making the grind as enjoyable as possible. From a LitRPG perspective, it means making the grind as enjoyable /to read about/ as possible. These are very different.
+
+#+begin_quote
+  m+kb is the superior input system of the vast majority of games for a number of reasons, with a few exceptions for things like racing games and realistic flight sims. How do I make a game where it's an advantage to use the most "realistic" input system available to you, despite the fact that think like headtracking or wiimotes are usually inconvenient and difficult to use in games, even though they have a closer to 1-1 correspondence with real movement.
+#+end_quote
+
+Have you tried out any VR systems? What makes mouse+keyboard wonderful is that it's both easy to use and easy to develop for. The keyboard makes it easy to interact with the game-world in predefined ways. The trick for the game developers is to make those predefined ways seem complete, while in reality they never even come close. While VR systems currently don't even come close to what already exists, we can already glimpse how they could be used to create a game experience that gives players limitless interaction options. If you haven't tried VR, I recommend visiting an arcade at some point. For "research".
+
+#+begin_quote
+  How do I go around designing a system where players can create new abilities based off their class/subclass/any external knowledge they have without either making player abilities seem arbitrary or having to nail everything down to stats that bog down the story flow?
+#+end_quote
+
+Played any trading card games? M:tG does a pretty good job of this. Hundreds of new cards are created every year, each with unique effects, with the potential to change how players interact. What's really interesting is that the cards interact with the /rules/ rather than other cards. Even though each new card has its own unique rules, this doesn't create a combinatoric increase in game interaction logic.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 5
+:DateUnix: 1510211071.0
+:END:
+
+**** #+begin_quote
+  MMOs are all about grinding. From the game-designer's perspective, this means making the grind as enjoyable as possible. From a LitRPG perspective, it means making the grind as enjoyable to read about as possible. These are very different.
+#+end_quote
+
+To clarify, I specifically hate grinding /for levels/. I intentionally avoid games where characters have strict power curves based on the amount of time players have spent smashing rats, or whatever. I have fewer problems with grinding for items, although that's with the caveat that I much prefer when items in MMOs are sidegrades that let you do something different rather than upgrades. The MMO I've had by far the most experience with is Planetside 2, where levels have absolutely no bearing on the ability to kill other planetmen, and the grinding for currency, beyond a certain basic point of getting the equipment to deal with specific situations (like having to unlock an AA launcher to deal with planes), doesn't actually make you better, because you can only equip one set of equipment at a time anyways. Similarly, I plan for my next MMO to be Star Citizen (if it ever gets released, anyways...), which also won't have individual character stats to grind. And in the interim, I'm playing Overwatch, where I don't have to grind at all (although it's not actually an mmo...)
+
+#+begin_quote
+  Have you tried out any VR systems? What makes mouse+keyboard wonderful is that it's both easy to use and easy to develop for. The keyboard makes it easy to interact with the game-world in predefined ways. The trick for the game developers is to make those predefined ways seem complete, while in reality they never even come close. While VR systems currently don't even come close to what already exists, we can already glimpse how they could be used to create a game experience that gives players limitless interaction options. If you haven't tried VR, I recommend visiting an arcade at some point. For "research".
+#+end_quote
+
+I've had very limited experience with an oculus rift dk1 (just a demo at an event) and played one of those arcade games with the pull-down headset. VR is indeed really interesting from the point of immersion, but while immersion makes games more fun, it doesn't make you /better/ at the game. For example, in FPS games, you have people deliberately lowering graphics to get better IFF, even if they have a monster gaming rig. M+KB is great because you can have a large number of instant inputs with the keyboard, and the mouse lets you make small, precise motions that are difficult to replicate with a controller, joystick, or especially wiimote/other handheld motion sensor.
+
+Which is what makes my dilemna so difficult-- I'm trying to think of how to make M+KB inferior, but /without/ gimping it. That being said, I do have some ideas. Looking at, for example, warthunder, m+kb becomes worse than joysticks when mouse controls stop being first-order (ex, point where you want to go) and begin to be second order (point at a section of the screen to determine roll/pitch rate) and third order (point at a section of the screen to control a virtual rudders and flaps that in turn control roll and pitch) because joysticks stay second order the whole time. The trick would be to figure out how to make most input devices consistently second order, but it's difficult to visualize how that would work in an efficient manner when controlling an avatar, rather than a vehicle.
+
+#+begin_quote
+  Played any trading card games? M:tG does a pretty good job of this. Hundreds of new cards are created every year, each with unique effects, with the potential to change how players interact. What's really interesting is that the cards interact with the rules rather than other cards. Even though each new card has its own unique rules, this doesn't create a combinatoric increase in game interaction logic.
+#+end_quote
+
+That's a really good point, actually. Though as with trading card games, there would of course be the problem of avoiding power creep :P
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 2
+:DateUnix: 1510212257.0
+:END:
+
+***** #+begin_quote
+  To clarify, I specifically hate grinding for levels.
+#+end_quote
+
+My experience is that modern MMOs don't grind for levels. I hear some people are still playing Everquest, which doesn't have a level cap. I literally cannot imagine. On the other hand, WoW has a level cap, even if each level is a substantial investment. In Guild Wars, the design decision was to make each level an hour or two of play at most. The point is for players to quickly reach max level and start the real grind. In many RPGs, even if there isn't a level cap, the boss monsters will scale with player level, so that grinding just makes it harder. Do whatever will make the best story.
+
+#+begin_quote
+  VR is indeed really interesting from the point of immersion, but while immersion makes games more fun, it doesn't make you better at the game.
+#+end_quote
+
+While immersion is where VR excels, that's not what I'm talking about. I'm talking about how players interact with the game world.
+
+In an FPS, keyboard and mouse rules not because they are superior inputs, but because they cover all situations that matter /to an FPS/. Why would you pick up a chair and hit someone with it when you can just shoot them? The fact that you can't do something you wouldn't want to do never even crosses the player's mind. This is by design. Think about the differences even among first person games. Say, Overwatch and Minecraft. You can't even do the same sorts of things in these games. Each shows the very real limitations of the other. If the game world were as real as possible, it would allow players to do everything that either game allows. On the other hand, designing the inputs to such a system would be a nightmare.
+
+My point here is that more realistic inputs allow players to interact with the game world in more flexible ways. Hopefully that flexibility is worth giving up the agility granted by more rigid input systems.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 3
+:DateUnix: 1510249068.0
+:END:
+
+****** #+begin_quote
+  In an FPS, keyboard and mouse rules not because they are superior inputs, but because they cover all situations that matter to an FPS. Why would you pick up a chair and hit someone with it when you can just shoot them? The fact that you can't do something you wouldn't want to do never even crosses the player's mind. This is by design. Think about the differences even among first person games. Say, Overwatch and Minecraft. You can't even do the same sorts of things in these games. Each shows the very real limitations of the other. If the game world were as real as possible, it would allow players to do everything that either game allows. On the other hand, designing the inputs to such a system would be a nightmare.
+#+end_quote
+
+That's definitely true, but as a Game Developer I still want my game to be played by the widest possible audience, which means much of the in-game content still needs to be accessible with M+KB, a game controller, or a touchscreen, rather than a fancy $3k haptic feedback rig.
+
+Obviously as an /author/ I get the freedom to do a bunch of handwaving, but I need at least a few sentences of plausible explanation.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 1
+:DateUnix: 1510252967.0
+:END:
+
+******* #+begin_quote
+  I still want my game to be played by the widest possible audience, which means much of the in-game content still needs to be accessible with M+KB, a game controller, or a touchscreen, rather than a fancy $3k haptic feedback rig.
+#+end_quote
+
+The usual solution is to provide a degraded experience. You could create a very high-end immersive experience for someone with a full rig, while someone playing on a digital watch gets to make a few high level decisions while an avatar plays for them in the game world. Some of the options will prepare players better than others for when the game becomes real.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 1
+:DateUnix: 1510254748.0
+:END:
+
+******** Yeah a degraded experience is probably the best plan to have. That being said, it comes with its own balance problems-- it's emotionally easier to order an on-screen avatar to kill a monster than it is to control its stabs with a game controller with haptic feedback than it is to get up close and personal with an oculus rift.
+
+But I think you make a good point with the "better preparation" part-- it's better when the game is a game, but people won't be able to prepare as well for when it starts being real life. hmmm...
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 1
+:DateUnix: 1510255273.0
+:END:
+
+
+*** #+begin_quote
+  With 256 possible combinations of starting categories, someone can kill themselves once per day (in-game) and not have a remaining character combination when the game becomes real. What should I do in that case? I'm currently leaning towards having a special "final" ability that people who do that get, and if I implement that, what suggestions do you have for that ability?
+#+end_quote
+
+Congratulations! You've done the easter egg to unlock the Challenge Class! You have no special abilities / some really bad special abilities. Have fun!
+
+This is based on the "Wanderer" class in Dungeon Crawl Stone Soup (roguelike), which has a random set of starting skills and equipment. It's meant to be a challenge: you might end up with a greataxe and heavy armour and low STR but very high INT.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1510208630.0
+:END:
+
+**** To be honest, I'm actually leaning towards making it both beneficial and widely known. That is, if you commit day 1 to choosing that class and follow through, at the expense of never getting to properly play the "game" and starting with no equipment or personal abilities, then you get to use this rare and useful class. It would still be "balanced" in the long run versus, but it would obviously be much more rare than other options, leading to a comparative advantage.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 1
+:DateUnix: 1510208785.0
+:END:
+
+
+*** 8 classes:
+
+- Mage: Elemental/blaster
+- Cleric: Buff/healing
+- Enchanter: AoE/noncombat
+- Ranger: Ranged
+- Bulwark: High Defense
+- Berserker: Pure damage
+- Rogue: Stealth/trickery
+- Dancer: Dodge/movement
+
+Most of your abilities are determined by your primary class: mage/cleric/enchanter are primary spellcasters, ranger/bulwark/berserker are primary fighters, and rogue/dancer are primary utility.
+
+If you double up for your secondary class, you will be more powerful but less versatile.
+
+If you stay in the same category (eg. Mage/Cleric), you can benefit from many obvious synergies that are available (+ magic power items are more useful, you are best on the back lines, etc).
+
+Taking your second class /across/ categories, on the other hand, has specific hardcoded advantages. Berserker/Mages can deal bonus elemental damage with their attacks, Ranger/Rogues make good assassins, and Dancer/Bulwarks are very good tanks.
+
+There are 8 double-class, 14 in-category, and 42 cross-category builds available in this system. (Where are you getting 256 from? Is there another two bits of choice?)
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 2
+:DateUnix: 1510281944.0
+:END:
+
+**** #+begin_quote
+  (Where are you getting 256 from? Is there another two bits of choice?)
+#+end_quote
+
+8 choices, that can be doubled up on. So you can go Rogue-dancer, Dancer-rogue, or Dancer-dancer, for example. The first "class" gives you your primary abilities. The second class specializes you. Or at least, that's one of the possible ways to A-B be different from B-A, while still picking from the same 8 categories in each slot.
+
+As for your list, I think it's pretty solid. The idea of having "supercategories", so to speak, would be an interesting way to impose order on abilities developed by people.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 2
+:DateUnix: 1510282332.0
+:END:
+
+***** I'm still getting 64 from that. 8 first choices, 8 second choices = 8 * 8 = 64
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 2
+:DateUnix: 1510282481.0
+:END:
+
+****** Oh man, I've derped hard. I was thinking 2^{8,} which would be 8 binary choices made in sequence. derp. Guess it's back to the drawing board... Though admittedly, the system still works, and now I get to think up 16 classes instead of 8. Or maybe a system of 8 classes, and then 5 binary questions (for example, AOE-RANGED-ENERGY-IMMOVABLE-OUTPUT Magus, or POINT-CLOSE COMBAT-PHYSICAL-MOBILE-DEFENSE Defender). There's a lot of interesting options, actually.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 2
+:DateUnix: 1510282752.0
+:END:
+
+
+*** - Some people (think remote tribesmen in the Amazon or similar) will have access to no computing devices at all. For complete saturation, I recommend the ROB permitting the game to be played in any /reflective surface/ (i.e. puddles of water can work), with the surface acting as a touchscreen. Naturally, this would be the lowest-computing-power option.
+
+- Some people (babies in particular) will have no conception or understanding how to play the game. They might mess around with a parent's phone in any case, just picking options at random. This results in a non-negligible possibility of dozens of babies across the world suddenly obtaining Full Starting Equipment on start-day. (And some may have bumbled their way through a level or two by sheer coincidence - or by another person holding their elbow and poking their hands at the screen ('yes, dear, but if I get baby through one more level she'll have a passive healing aura, you can't tell me that won't be worth it'...)).
+
+#+begin_quote
+  How do I go around designing a system where players can create new abilities based off their class/subclass/any external knowledge they have without either making player abilities seem arbitrary or having to nail everything down to stats that bog down the story flow?
+#+end_quote
+
+How about this - apart from primary class and subclass, powers have to have a /theme/, which is constant for a given character. This theme is chosen by the player, and depends on the player's understanding of that theme. So, a player might choose the theme of /fire/, which makes pyromaniac abilities very easy but healing abilities very hard (except Cauterize). (Mind you, a Fire theme can be used to cool something down - by removing its fire - as well as warm it up).
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1510310296.0
+:END:
+
+
+*** Well, this ROB doesn't have to worry about things like processing power or programming difficulty, so the game could be an entire simulation of a universe. Of course, that wouldn't be a great game, but you could have a hyperrealistic game where not only can you pick up things and throw them, you can break them apart and blow them up and look at them in scanning tunneling microscopes. Controls could be such that you're just controlling your actual muscles, so it would be hard to do complex tasks with a mouse and keyboard or an oscilloscope, but not impossible. What I'm trying to get at is that making the game far more realistic than any modern game could help solve a lot of your problems.
+:PROPERTIES:
+:Author: Lorxu
+:Score: 1
+:DateUnix: 1510271035.0
+:END:
+
+**** #+begin_quote
+  Well, this ROB doesn't have to worry about things like processing power or programming difficulty, so the game could be an entire simulation of a universe. Of course, that wouldn't be a great game, but you could have a hyperrealistic game where not only can you pick up things and throw them, you can break them apart and blow them up and look at them in scanning tunneling microscopes. Controls could be such that you're just controlling your actual muscles, so it would be hard to do complex tasks with a mouse and keyboard or an oscilloscope, but not impossible. What I'm trying to get at is that making the game far more realistic than any modern game could help solve a lot of your problems.
+#+end_quote
+
+Oh believe me, it will be-- the game will be a 1:1 simulation of planet earth, physics will be modeled perfectly*, and any action** you can do in real life will be able to be done with the game. Which is where the challenge comes is-- getting a m+kb setup to still work in such a setting is doable (although it would provide a significant difficult curve for players, that's a feature rather than a bug), there are fundamental advantages to being divorced from the actual gameplay.
+
+Thought admittedly, that's where an earlier suggestion comes into play-- that that's also treated as being a feature, because powergaming will stop working after the 256 days are up, so it would be a long-term disadvantage.
+
+*With specific exceptions made for the game's "magic" system, however I decide it to work, and for adding in stuff like invulnerable objects and safe zones for game purposes.
+
+** Again, with a few restrictions for game purposes
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 2
+:DateUnix: 1510271525.0
+:END:
+
+
+*** Ok, so I think this is a really interesting idea.
+
+Some thoughts:
+
+Since the world is a one to one copy of earth, that includes all it's sordid secrets and skeletons. Expect political and corporate espionage to a ludicrous degree.
+
+You should really consider the fact that not everyone is going to /want/ to be an adventurer. Most people will be perfectly happy being npcs. You'll need to figure out what your world looks like when it starts settling down, and what it takes to get there. Look at the tippyverse for seeing what a logical conclusion to d&d's system means for society.
+
+You need to remember that the players aren't controlling their character. A super-intelligence with infinite processing power and the directives "convince my player they are their character" and "prepare my player for the system they're going to be using" is what is /actually/ controlling the character.
+
+This means that you've got at least something as intelligent as a person with infinite math skills, memory, time, and patience analyzing every frame, button press, and second of feed. This means that every camera pointed at someone gets a 3d feed of a persons face analyzing where their eyes go, micro facial expressions, [[https://www.extremetech.com/extreme/149623-mit-releases-open-source-software-that-reveals-invisible-motion-and-detail-in-video][heart rate,]] and anything a human can get from watching someone's face in a billion different ways. A human intimately familiar with every quirk of the subject and infinite inferential power. You also get infinite gesture understanding, as well as infinite body language understanding.
+
+With a microphone, you might get some echolocation information, and you get biometrics on their breathing. You might also get trembling from their hands, whooshing from waving their phone around, and natural language commands. Stuff like that. You also get natural language processing, so you can take whatever commands you choose from people.
+
+If you're looking at an average smartphone, you also get an accelerometer, a gps, and a touchscreen.
+
+The big difference between an oculus and a smartphone is screen resolution and processing power, assuming you can log into multiple devices and composite their input, which you really should allow because of the shenanigans it allows. The smartphone can even do retina tracking, which the oculus can't.
+
+You can plug an ekg into your computer, or even an [[https://gizmodo.com/5843117/scientists-reconstruct-video-clips-from-brain-activity][fmri]], and suddenly you've got mind reading and intention inferencing.
+
+Strap a shit load of accelerometers to your body and let the game figure it out.
+
+Have the game make people go for a run with their smart phone so it can make them think it's taking their biometrics, which it probably is already doing.
+
+I mean, the only reason we use m+kb is because it's precise and fast, not because it's flexible. You have arbitrary precision with a couple of cameras and microphones and the fai does the processing.
+:PROPERTIES:
+:Author: CreationBlues
+:Score: 1
+:DateUnix: 1510351452.0
+:END:
+
+**** #+begin_quote
+  Since the world is a one to one copy of earth, that includes all it's sordid secrets and skeletons. Expect political and corporate espionage to a ludicrous degree.
+#+end_quote
+
+Ooh, yeah. Hadn't thought of the espionage angle, actually :P You'll probably have a weird economy of hiring high-level players to defend industrial secrets in-game, at least in the interim period.
+
+#+begin_quote
+  You should really consider the fact that not everyone is going to want to be an adventurer. Most people will be perfectly happy being npcs. You'll need to figure out what your world looks like when it starts settling down, and what it takes to get there. Look at the tippyverse for seeing what a logical conclusion to d&d's system means for society.
+#+end_quote
+
+That's part of the fun! On one hand, nobody will be able to force you to play. On the flip side, even just checking it out will make you a player character. And sure, that won't necessarily be a big deal-- in the character create option, there's going to be a "keep me as I am" setting, but then you'll have situations where, for example, someone who makes a deliberately alien looking character to play as before the event anonymously (with the plan to transfer their assets to a friend, kill their character, and make a new character) and then for whatever reason fails to carry out their plan will have to explain to their family why they look like that now.
+
+#+begin_quote
+  I mean, the only reason we use m+kb is because it's precise and fast, not because it's flexible. You have arbitrary precision with a couple of cameras and microphones and the fai does the processing.
+#+end_quote
+
+This is a good point, actually. That being said, the kind of people who can rig crazy multi-smartphone setups are going to be in the minority :P They'd definitely feature, though. Personally, I'd expect to see a lot of people with wearable displays (ex. google hololens) running around in their backyards, as they only need to optimize for input and display fidelity, rather than for computational power.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 1
+:DateUnix: 1510353557.0
+:END:
+
+***** #+begin_quote
+  That's part of the fun! On one hand, nobody will be able to force you to play. On the flip side, even just checking it out will make you a player character.
+#+end_quote
+
+Okay, so first of all, playing the game literally has no downsides, as presented. You get a "Get out of Dysphoria Free Card," you get to choose what you look like so that's going to make a lot of people really happy, especially everyone who wants to be a sicknasty monster, you might even get to extend your life by changing the age slider! That doesn't even cross the fact that you get magic for playing this game, which is pretty cool.
+
+But what I was talking about is the fact that artists, farmers, engineers, business men, politicians, and every other human who understands the ramifications of this thing are going to ask themselves what class will give them an edge at their passion. Killing monsters is going to be a secondary objective for them.
+
+Edit: I also forgot to mention that people will pay out the ass for a beautiful avatar. People will commission artists to meet them and walk through character creation, so that they avoid looking like a freak. Having a microphone that takes natural language queries will probably mean that even people shitty at art will be able to make a pleasing avatar, but that depends on the parameters and when you get down to brass tacks artists are going to be better than the layman when it comes to making cool shit.
+
+Of course, the command "inference my preferences from my internet history" will get a lot of mileage in certain circles.
+:PROPERTIES:
+:Author: CreationBlues
+:Score: 1
+:DateUnix: 1510354710.0
+:END:
+
+****** #+begin_quote
+  Okay, so first of all, playing the game literally has no downsides, as presented. You get a "Get out of Dysphoria Free Card," you get to choose what you look like so that's going to make a lot of people really happy, especially everyone who wants to be a sicknasty monster, you might even get to extend your life by changing the age slider! That doesn't even cross the fact that you get magic for playing this game, which is pretty cool.
+#+end_quote
+
+Yep. The "Game Designer" /wants/ people to play the game, insofar as something with a divergent enough value system to make the planet a LitRPG can "want" something.
+
+#+begin_quote
+  But what I was talking about is the fact that artists, farmers, engineers, business men, politicians, and every other human who understands the ramifications of this thing are going to ask themselves what class will give them an edge at their passion. Killing monsters is going to be a secondary objective for them.
+#+end_quote
+
+Definitely-- that's what makes the concept so interesting for me. The regular gameplay loop of MMOs is "kill monsters so you can get better at killing monsters." The gameplay loop of this MMO (long term, anyways) would be to kill monsters to you can become more efficient at your chosen proffessions (so you can spend more time killing monsters to get more efficient at your chosen profession, etc.)
+
+#+begin_quote
+  I also forgot to mention that people will pay out the ass for a beautiful avatar. People will commission artists to meet them and walk through character creation, so that they avoid looking like a freak. Having a microphone that takes natural language queries will probably mean that even people shitty at art will be able to make a pleasing avatar, but that depends on the parameters and when you get down to brass tacks artists are going to be better than the layman when it comes to making cool shit.
+#+end_quote
+
+That's an interesting idea, actually. I've mostly just been thinking that people would either pick their own appearance, pick their own appearance + a few tweaks (ex. increasing facial symmetry or gender swapping), or go completely off the rails towards their transhumanist fantasies. But I was still only thinking in terms of a single person deciding what they'd look like, a-la the "uglies" quadrilogy. I can definitely see people hiring artists for their avatars, once people figured out this really wasn't a joke.
+
+(though that being said, while controls would be very, very intuitive, they wouldn't be capable of just straight up inferring your preferences.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 1
+:DateUnix: 1510358968.0
+:END:
+
+
+*** #+begin_quote
+  which means that pretty much everyone on the planet is be able to play,
+
+  even now there are many places in third-world countries that don't have smartphones or anything similar. Those places are going to be in trouble.
+#+end_quote
+:PROPERTIES:
+:Author: General_Urist
+:Score: 1
+:DateUnix: 1510684931.0
+:END:
+
+**** #+begin_quote
+  even now there are many places in third-world countries that don't have smartphones or anything similar. Those places are going to be in trouble.
+#+end_quote
+
+Prepaid clamshell smartphones are dirt cheap these days-- a few bucks a pop. And because they're so incredibly useful, close to [[https://www.rferl.org/a/report-says-75-percent-of-worlds-population-have-mobile-phones/24648234.html][75%]] of the world's population have mobile phones (albeit not smartphones). So since people can share phones, in a situation where getting access to a device at least once is so important, even the poorest places in africa, latin america, or asia are going to have people able to at least create a character, if not play.
+
+And that's before the game would provide an economic incentive to make dirt cheap devices that basically just consist of a bichromatic screen, 4 buttons, and a token processor (think even shittier gameboy) to distribute to people. Considering a raspi zero is only $5, the cost to make a minimum viable game playing device would likely be below a dollar.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 1
+:DateUnix: 1510687178.0
+:END:
+
+
+** Hoping to collect some opinions for a short story I'm working on.
+
+Say there were a ritual which granted unaging immortality. The specifics of immortality can match whatever flavor you find most desirable, for the purposes of setting up this scenario.
+
+The rules of the ritual are as follows:
+
+- The ritual can only be performed /once/, and will only affect the current living population of Earth (anyone born after will have a normal lifespan)
+- The ritual simply needs to be read from a scroll, which you currently have
+- When the ritual is finished, X% of the world's population (chosen randomly) will instantly die. The remaining percent will be granted immortal life. All people have the same chance of being chosen for death, even you the scroll-reader, and there's no way to know beforehand who will be chosen.
+
+Given that...
+
+- What value of ‘X' would make it /definitely/ worth it for you, the scroll-reader? What value (range) would make you /unsure/, but still consider it? At what value would it definitely /not/ be worth it?
+- Same as above, but in the eyes of the general public. Obviously the views will span all possible values (and likely there would be some who wouldn't even /want/ immortality), but what's the highest bound limit of X that the /majority/ of people would accept, if it meant a chance to become immortal?
+:PROPERTIES:
+:Author: tonytwostep
+:Score: 3
+:DateUnix: 1510172985.0
+:END:
+
+*** As you command, this answer assumes the specifics of immortality I find most desirable: Opt-out invincibility to physical effects such as force, aging, disease and starvation.
+
+If the method of death is heart failure, a global coordinative effort to set up defibrillation for everyone in advance would make it worth it for almost all percentages. If one's "life force" leaves, so that modern medicine can't revive the corpses, cryonics is still an option, but it's even more outlandish to suppose that the public will agree to that.
+
+If I were selfish, a few percent would be worth it, for that is a ballpark for a lower bound on the chance I'd die anyway before a global paradigm shift. Any value would make the scroll worth keeping in hand in case the existential risk situation turns dire in ways the scroll can help with.
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 2
+:DateUnix: 1510188994.0
+:END:
+
+**** Assume there's no workarounds, loopholes, or any other way to save the people chosen to die. It's magic, so let's say they just instantly turn to dust, once the ritual is completed.
+:PROPERTIES:
+:Author: tonytwostep
+:Score: 1
+:DateUnix: 1510189928.0
+:END:
+
+***** Since the scroll still beats heat death, it's worth to keep around for any sub-100% value - in a far future, one could turn all humans into biologically nonhumans, genetically engineer something that is biologically, but not morally, a human, and use its immortal heartbeat to keep the lights going.
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 5
+:DateUnix: 1510194957.0
+:END:
+
+
+*** Any non-zero X is worthwhile. This is mathematically verifiable. If the ritual is not performed, 100% of the population will die (eventually). If it is performed, the maximum number of man-years lost is (human lifespan)x(population). +If even one person survives to become immortal+ Let's make it a breading population that lives to become immortal. Then an infinite number of man-years are gained, which is greater than the finite number lost. And the benefit of guaranteeing the perpetuation of the species for eternity? Priceless.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 2
+:DateUnix: 1510207634.0
+:END:
+
+**** The immortality is stated to not apply to any new human that will be born. Also you're making the assumption life extension aging prevention doesn't make significant progress in the (likely longer) lifetime of any humans alive today.
+
+Also even if no current humans could be saved you're making the assumption that the potential disutility of people being unable to opt to die will be worth it over trillions or more years. Particularly when you consider that (excluding human extinction) technology allowing immortality will inevitably come around /eventually/ and even if it was millennia from now that would still mean nearly all human-descendants to ever live would live after its advent.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 2
+:DateUnix: 1510252903.0
+:END:
+
+***** #+begin_quote
+  The immortality is stated to not apply to any new human that will be born.
+#+end_quote
+
+So? Irrelevant.
+
+#+begin_quote
+  Also you're making the assumption life extension aging prevention doesn't make significant progress in the (likely longer) lifetime of any humans alive today.
+#+end_quote
+
+Again, irrelevant. I'm assuming that no one alive at the time of the ritual would otherwise live forever. As /very/ safe assumption.
+
+#+begin_quote
+  technology allowing immortality will inevitably come around eventually
+#+end_quote
+
+We've been over this. You're still wrong, and I don't care to repeat the discussion. Besides, OP said it was whatever flavor of immortality I most prefer. I do not prefer the weaker sorts of immortality usually proposed by futurists.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 3
+:DateUnix: 1510254309.0
+:END:
+
+****** #+begin_quote
+  So? Irrelevant.
+#+end_quote
+
+You specifically mentioned a "breeding population" what would be the point of saying that otherwise? Also if you're trying to maximize the number of immortals then it would seem like you ought to wait until you can maximize the number of humans that exist, which pretty much necessitates that you do it far enough in the future that you can apply it to potentially an absurdly large number of people.
+
+As for your other two comments if people can exist in a sufficiently well defended and stable state to survive until heat death, then the utility of immortals here may not be so clearly positive. Since I mentioned there is no opt out for this immortality.
+
+Though I suppose it's sort of irrelevant since any form of true immortality is going to be able to be leveraged for free energy meaning you can beat back the heat death of the universe indefinitely. Which means keeping around a bunch of miserable /insanely/ old immortals is unambiguously worth it since they can be farmed for energy to keep civilization running.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 1
+:DateUnix: 1510257038.0
+:END:
+
+******* #+begin_quote
+  You specifically mentioned a "breeding population" what would be the point of saying that otherwise?
+#+end_quote
+
+To ensure the race continues beyond just a few male (or female) immortals. A single immortal being may have an infinite number man-hours, but an immortal civilization will have... well, still ℵ₀. But it would be something different, and something I wouldn't want to lose.
+
+#+begin_quote
+  if you're trying to maximize the number of immortals
+#+end_quote
+
+I'm not. OP asked what the minimum value was that makes the ritual worthwhile, not how to maximize on the ritual.
+
+#+begin_quote
+  As for your other two comments if people can exist in a sufficiently well defended and stable state to survive until heat death, then the utility of immortals here may not be so clearly positive.
+#+end_quote
+
+Without endorsing utilitarianism, the benefit of immortals by definition outweighs that of everyone else. It is, after all, the form of immortality I find most pleasing.
+
+#+begin_quote
+  Though I suppose it's sort of irrelevant since any form of true immortality is going to be able to be leveraged for free energy meaning you can beat back the heat death of the universe indefinitely. Which means keeping around a bunch of miserable insanely old immortals is unambiguously worth it since they can be farmed for energy to keep civilization running.
+#+end_quote
+
+Yes, true immortality means there is no heat-death. How observant. But no, there would be no "miserable old immortals", because /it is the form of immortality I find most pleasing/.
+
+--------------
+
+To be fair, working out what form of immortality I find most pleasing is a chore in and of itself. My preferred form is probably different from your preferred form, so working out the definition of immortality for the purposes of the ritual would take quite some time. I'm not convinced that there isn't a definition that could please everyone (excluding, of course, those people who can't be pleased in the first place).
+:PROPERTIES:
+:Author: ben_oni
+:Score: 1
+:DateUnix: 1510299334.0
+:END:
+
+******** #+begin_quote
+  To ensure the race continues beyond just a few male (or female) immortals. A single immortal being may have an infinite number man-hours, but an immortal civilization will have... well, still ℵ₀. But it would be something different, and something I wouldn't want to lose.
+#+end_quote
+
+Still it seems like it probably won't matter whether you have a breeding population since (especially with the immortals around) since it seems unlikely humanity wipes itself out in a way that makes that relevant (for instance UFAI would imprison them for power sources countless years from now and wouldn't waste resources letting them breed).
+
+#+begin_quote
+  I'm not. OP asked what the minimum value was that makes the ritual worthwhile, not how to maximize on the ritual.
+#+end_quote
+
+He asked for the minimum percent left alive, however that doesn't mean you wouldn't still wait as long as possible since time isn't an issue and you can only use the ritual once.\\
+Even human extinction isn't a concern likely to make you not want to wait, since extinction events would generally be something you could see in advance well enough to use the ritual before the population drops to much. Even UFAI doesn't much matter here (provided /all/ you care about is having humans around forever) since it would likely mind control you then create as many humans as possible then do the ritual in like a trillion years so it has the maximum number of power sources to beat back heat death.
+
+#+begin_quote
+  Without endorsing utilitarianism, the benefit of immortals by definition outweighs that of everyone else. It is, after all, the form of immortality I find most pleasing.
+#+end_quote
+
+My point was that if immortals are around forever then one should only really consider the era close to heat death (I say close to because as long as the immortals exist it's not heat death) when considering whether their lives are on the net worthwhile. So since ~100% of their existence will be spent in an empty vacuum probably extremely uncomfortable and utterly insane there's a question as to whether such a life is really worth immortality?
+
+I said before that their bodies could act as the generators to run a sizeable civilization ([[https://www.youtube.com/watch?v=Qam5BkXIEhQ][in a cold enough universe processing power becomes /extremely/ efficient]]). Of course while they're being used as generators they would probably be plugged into some sort of perfect VR so their lives would still be pretty nice at this point. However sooner or later, perhaps via quantum tunneling, the rest of civilization will /eventually/ be destroyed, and thus they will enter the period of floating in an empty vacuum which will be ~100% of their life.\\
+So from a utilitarian perspective if these immortals live forever and their lives are on the whole a net negative that would seem to make keeping them around infinitely terrible. Of course I'm not a utilitarian nor lacking in time discounting so I might be willing to ignore the fate that awaits me in the future if I could have a truly mind boggling amount of fun before then, but i'm not sure this is the most reasonable choice.
+
+#+begin_quote
+  Yes, true immortality means there is no heat-death. How observant. But no, there would be no "miserable old immortals", because it is the form of immortality I find most pleasing.
+#+end_quote
+
+The fact that you have control over the method of immortality probably shouldn't mean you have infinite leeway here. After all if you could do that why not just specify a form of immortality that allowed time travel, the production of negative mass, and could be tapped into to draw out however much energy you want at lightspeed?\\
+My point being that with any sort of reasonable form of immortality nearly all of their existence would be spent either floating in a totally empty void or perhaps constantly being in incredible pain inside a black hole which will never decay since they are an infinite energy source. They may have some sort of regeneration that affects their sanity as well as their body, but that would just mean they wouldn't have insanity to serve as a coping mechanism which would probably just make their existence worse.\\
+It's not that the immortals become miserable and old, it's that their existence is on the whole mostly terrible. After all if their memory isn't perfect then so long as they had a civ to keep them in VR they can always have new (to them) interesting experiences to have as a loop immortal.
+
+As for coming up with the best form of immortality, I think the issue would probably be figuring out what you could get away with in terms of complexity. After all if you could really get away with /any/ type of immortality then I'm confident you could find something that would satisfy both of us and allow for pretty much everything we could ever possibly want forever.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 1
+:DateUnix: 1510362626.0
+:END:
+
+********* #+begin_quote
+  My point being that with any sort of reasonable form of immortality nearly all of their existence would be spent either floating in a totally empty void or perhaps constantly being in incredible pain inside a black hole which will never decay since they are an infinite energy source. They may have some sort of regeneration that affects their sanity as well as their body, but that would just mean they wouldn't have insanity to serve as a coping mechanism which would probably just make their existence worse.
+#+end_quote
+
+... your preferred immortality sounds pretty crappy. I vote you don't get to perform the ritual.
+:PROPERTIES:
+:Author: ben_oni
+:Score: 1
+:DateUnix: 1510381677.0
+:END:
+
+********** #+begin_quote
+  ... your preferred immortality sounds pretty crappy.
+#+end_quote
+
+That's the thing though, the fact you inevitably end up floating in the empty void of space basically forever /isn't a feature of a particular type of immortality/.\\
+It's a feature of everything /except/ the immortal person /*not*/ being immortal. Eventually everything /except/ the immortal is gone, which ends up being pretty shitty. And even if other immortals exist, the cosmological horizon ensures that sooner or later all immortals end up permanently alone.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 1
+:DateUnix: 1510387512.0
+:END:
+
+
+*** -From the perspective of someone immortal it's the best if the ritual killed as many people as possible, so up to 50%? World would be in chaos (to your benefit) for a few decades, but hey, you are immortal. I am assuming that immortality means not aging or dying by means of sickness, you can still get killed. -Majority of people would simply not accept such ritual.
+:PROPERTIES:
+:Author: r33d___
+:Score: 1
+:DateUnix: 1510184535.0
+:END:
+
+**** Why would they want as many people as possible to die, and why would chaos be to one's benefit?
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 3
+:DateUnix: 1510187711.0
+:END:
+
+***** I am assuming immortality means something different than invincibility, so you still can get killed. Imagine this. The information about immortality is public. New generations of normal, not immortal people are alive and well. Ritual killed off only a few thousand people so overpopulation is still a problem. When conflict arises, and it's bound to happen someday, you need a scapegoat to put the blame on/rally the people. Who are they gonna blame? probably the immortals, they are "unnatural" or even "evil", also add the factor of religion rising in popularity in times of crisis. "Immortality? That's only reserved to god!" etc. So by killing of half of population you solve that problem, although temporarily. TLDR: Jews 2.0
+:PROPERTIES:
+:Author: r33d___
+:Score: 1
+:DateUnix: 1510439319.0
+:END:
+
+
+**** You don't think the majority of people would accept such a ritual, if it meant say, just one person would be killed? How about two? Ten?
+
+Is it that you don't think most people believe immortality worthwhile, or do you think most people consider even a single life too sacred to sacrifice for the good of everyone else?
+:PROPERTIES:
+:Author: tonytwostep
+:Score: 2
+:DateUnix: 1510189857.0
+:END:
+
+***** I thought that by majority of people you mean a scenario where majority of people on earth are asked whether the ritual should be conducted. I think quite the opposite, majority of people think that they want immortality, but slowly they would realize how foolish is that desire. Also, human brain has certain limit on how many memories it can store, after 500 years you would most likely forget about everything from the first 150 years. Most of us can't even live normal, "short" lives while being happy. Then what about eternity of being unhappy.
+:PROPERTIES:
+:Author: r33d___
+:Score: 1
+:DateUnix: 1510438584.0
+:END:
+
+****** I mean, for one, I think we can only theorize as to whether traditional immortality (the way you've constructed it here) would be "eternal unhappiness". I personally think much of why we're so unhappy, is because of the constraints of mortality (trying to find a life purpose, achieve "success" by our own personal metrics, etc., all within the short span of our adult lives). Without the pressure of aging and death, you'd have much more time to find happiness, I think.
+
+In any case, as I said originally, for the purposes of this exercise you can interpret "immortality" in whatever way you think would make it most universally desirable. So maybe your version of immortality is one which (a) expands our memory capabilities, so we can retain memories for a much longer time, and (b) includes the ability to choose to die or lose your immortality whenever you wish, so it's not a forced eternal existence.
+
+Given that, if you asked people what value of X% of the population would they accept to kill off to grant the rest immortality, what range of X do you think the majority of people would fall into (and where would you fall)? Still 50% (so they'd accept killing 3.8 billion people, for a 50/50 coin flip chance at immortality)? I'm asking from both a morality perspective, and a risk-assessment perspective.
+:PROPERTIES:
+:Author: tonytwostep
+:Score: 1
+:DateUnix: 1510439361.0
+:END:
+
+
+*** X=0, worth it. X=100%, not worth it. Anywhere between that would take some consideration, but I'm inclined to lean heavily in the direction of 'not worth it' for nonzero X.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1510310400.0
+:END:
+
+
+** I've come up with a dumb but amusing idea. Take the standard Japanese mecha show, and invert the premise. Instead of humans building mechs to fight inside, you either get mechs creating humans to act as pilots to enhance their capabilties, or humans creating mini-mechs to act as pilots to enhance their capabilities. I think it'd be potentially interesting to explore the question of pilot-mech synchronization from this angle, contrived though it might be. There are some echoes of Yeerk-human synergy concepts from r!Animorphs here.
+:PROPERTIES:
+:Author: entropizer
+:Score: 2
+:DateUnix: 1510288010.0
+:END:
+
+*** I don't think humans building mechs to pilot them is terribly contrived, except insofar as you would never actually build a /mech/, you would just build a brain interface that would take over and pilot you from time to time. Though actually, it would be well-possible that people might benefit from giving that "pilot" a personality and visual identity, along with some rudimentary communication ability, even if that only existed as a virtual display.
+
+As far as story went, you would probably want some drawbacks to the "piloting", other than just the loss of autonomy. The narrative constraint I would want to put on would be something like "no more than thirty minutes a day" or "to get the most use out of the internal mech you need to jailbreak it and remove the safeties that prevent it from injuring you". Oh, and some need to "sync" the mech, meaning that you actually are building up a relationship. And from there you have some built-in tension to work with, and could focus a story on, say, a skilled gymnast who competes in these human/mech cooperative events that go beyond what mere human muscle memory and cognition can do.
+
+Or, if you wanted a more shonen mecha thing, a young boy who has been implanted by a godly powerful minimech by his father and is now on the run from the government or a corporation or something -- capable of turning into an expert marksman at the drop of a hat, gets in lots of cool fights, etc.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1510374933.0
+:END:
+
+**** Thanks for turning the idea into something actually cool. I'm laughing now. The mental images you gave me are very funny to me, for some reason.
+:PROPERTIES:
+:Author: entropizer
+:Score: 1
+:DateUnix: 1510375699.0
+:END:

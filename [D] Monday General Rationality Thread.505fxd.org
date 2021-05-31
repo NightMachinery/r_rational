@@ -1,0 +1,303 @@
+#+TITLE: [D] Monday General Rationality Thread
+
+* [D] Monday General Rationality Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 15
+:DateUnix: 1472483055.0
+:END:
+Welcome to the Monday thread on general rationality topics! Do you really want to talk about something non-fictional, related to the real world? Have you:
+
+- Seen something interesting on [[/r/science]]?
+- Found a new way to get your shit even-more together?
+- Figured out how to become immortal?
+- Constructed artificial general intelligence?
+- Read a neat nonfiction book?
+- Munchkined your way into total control of your D&D campaign?
+
+
+** Actually, yes! I recently read a PDF of a book called /How to munchkin D&D campaigns, get your shit together, construct GAI, and become immortal/ that I found linked in a [[/r/science]] comment.
+
+Well, that is, I started reading it, but I only had the link saved on Reddit and the comment was deleted for being off topic. Typical.
+
+So the lesson is, always save the PDF itself. Never just the link.
+:PROPERTIES:
+:Author: gabbalis
+:Score: 12
+:DateUnix: 1472496784.0
+:END:
+
+*** has checking your history not worked? And if it was a pdf, it might be in your temp files.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 7
+:DateUnix: 1472500978.0
+:END:
+
+
+*** Any chance that the deleted comment still had the poster's name showing? Then you can ask that person directly for the pdf.
+
+If not, can you also try posting to [[/r/science]] directly asking for the poster (since the poster is likely someone who frequents the subreddit) to come forward?
+:PROPERTIES:
+:Author: xamueljones
+:Score: 4
+:DateUnix: 1472530503.0
+:END:
+
+
+*** If you find it again post it, that sounds like a fun read
+:PROPERTIES:
+:Author: ireallylikedolphins
+:Score: 3
+:DateUnix: 1472515701.0
+:END:
+
+
+*** The books that change us most are the ones we never knew we needed.
+:PROPERTIES:
+:Author: rineSample
+:Score: 2
+:DateUnix: 1472497650.0
+:END:
+
+
+*** I believe you can retrieve deleted comments using a tool which shall not be named. A quick search should find it.
+:PROPERTIES:
+:Author: ggrey7
+:Score: 1
+:DateUnix: 1472664915.0
+:END:
+
+
+** In November, I'll be attending a conference in California entitled "Reducing Diagnostic Error in Medicine" which is basically the Less Wrong of the medical world.
+
+It'll be my first time attending the conference and while I'm interested in doing research and publishing on the subject, right now I'm struggling to find the right angle. My medical school would fund research with medical students, but I'd probably be limited to doing something about early cognitive biases and dysrationalia overrides. My real passion is in a Bayesian-styled probability generator/calculator for differential diagnoses based on signs, symptoms, and testing, especially if we could train a Watson-like system to scrub for the data in electronic medical records that link s/sx/labs to diagnosis codes.... but to be honest, I don't think that the broader medical community is really interested in this. The biggest threat to build such a Bayesian system, to be honest, is the drive for documentation is driven by reimbursement by insurance companies and the threat of malpractice, rather than the genuine desire to capture a patient's information accurately in a narrative format.
+
+Networking with rational doctors and sniffing out alternative funding sources for research are my two main goals for attending such a conference, but I'd also be interested in reporting back on my findings here, although that depends on medical rationality interests of the community.
+
+I've inquired a few times before, but is anyone interested in medicine on this forum? I think [[/u/gnimhey]] used to frequent this reddit and even wrote an awesome crossover fic between Worm and Shadows of Limelight.
+:PROPERTIES:
+:Author: notmy2ndopinion
+:Score: 6
+:DateUnix: 1472579099.0
+:END:
+
+*** I believe that [[/u/oliwhail]] may be going into the field of medical research? Not sure how interested he'd be in this, but I'll ping him anyway.
+:PROPERTIES:
+:Author: Cariyaga
+:Score: 1
+:DateUnix: 1472586094.0
+:END:
+
+
+*** Not medical, but I do a fair bit of programming. I've been considering some kind of EMR aimed at small clinics, running on a little appliance (think rpi)
+
+Might be something to think about.
+
+[[http://traverseda.github.io]]
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1472598326.0
+:END:
+
+
+*** #+begin_quote
+  My real passion is in a Bayesian-styled probability generator/calculator for differential diagnoses based on signs, symptoms, and testing
+#+end_quote
+
+Part of me wonders whether paying someone to make a professional version of something like this would be worthwhile from an EA perspective. Unfortunately, I doubt it. It's hard to guess at, but I think you may be right that interest in this sort of thing could be minimal. As things are, I already do similar kinds of estimates for problems I've had by hand when I have the data to.
+
+Also, there's a long section from Sarah Constantin's blog on this topic:
+
+"Back when I was trying to build a Bayes net model for automated medical diagnosis, I thought it would be relatively simple. The medical literature is full of journal articles of the form “A increases/decreases the risk of B by X%.” A might be a treatment that reduces incidence of disease B; A might be a risk factor for disease B; A might be a disease that sometimes causes symptom B; etc. So, think of a graph, where A and B are nodes and X is the weight between them. Have researchers read a bunch of papers and add the corresponding nodes to the graph; then, when you have a patient with some known risk factors, symptoms, and diseases, just fill in the known values and propagate the probabilities throughout the graph to get the patient's posterior probability of having various diseases.
+
+This is pretty computationally impractical at large scales, but that wasn't the main problem. The problem was deciding what a node is. Do you have a node for “heart attack”? Well, one study says a certain risk factor increases the risk of having a heart attack before 50, while another says that a different risk factor increases the lifetime number of heart attacks. Does this mean we need two nodes? How would we represent the relationship between them? Probably having early heart attacks and having lots of heart attacks are correlated, but we aren't likely to be able to find a paper that quantifies that correlation. On the other hand, if we fuse the two nodes into one, then the strengths of the risk factors will be incommensurate. There's a difficult judgment call inherent in just deciding what the primary “objects” of our model of the world are."
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1472620234.0
+:END:
+
+**** #+begin_quote
+  The problem was deciding what a node is. Do you have a node for “heart attack”? Well, one study says a certain risk factor increases the risk of having a heart attack before 50, while another says that a different risk factor increases the lifetime number of heart attacks. Does this mean we need two nodes?
+#+end_quote
+
+IMO you have two nodes, and start pushing for a (very large) set of standard measurements. Essentially I think there's a disproportionate value in the final approach to 'as accurate as possible'.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 1
+:DateUnix: 1472642166.0
+:END:
+
+
+*** [[/u/Cariyaga]] is correct that I'm going into medical research (biomedical engineering with a neuroscience focus). Not sure I have much to add unfortunately, as I'm just starting out myself
+:PROPERTIES:
+:Author: oliwhail
+:Score: 1
+:DateUnix: 1472730324.0
+:END:
+
+
+** I think I am very, very, very slowly getting better at beating akrasia. I wish I had a way to measure it. Although I guess a few months/years from now I'll just be able to check my beeminder account.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 4
+:DateUnix: 1472499980.0
+:END:
+
+*** I've found that just about the only thing that works even semi-reliably is setting myself up for situations where not getting shit done results in public shame.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: 3
+:DateUnix: 1472503372.0
+:END:
+
+**** Throwing your hat over the fence?
+:PROPERTIES:
+:Author: thrawnca
+:Score: 1
+:DateUnix: 1472511433.0
+:END:
+
+
+*** That's great! Care to share what's working for you? As measuring it, maybe tracking the amount of productive time?
+:PROPERTIES:
+:Author: munchkiner
+:Score: 1
+:DateUnix: 1472502827.0
+:END:
+
+**** I'm not really sure of what works, but I guess I have a long list of things that don't work, or look like they work but don't make things better long term.
+
+My current is strategy is to rely as little as possible on lists, physical constraints and external tools, because they make it easier to fall into a cycle of bad habits when I no longer have them (ex: relying too much on website-delaying plug-ins means resume wasting my time on the internet as soon as I switch the plug-ins off or get a new computer). I'm trying to be as mobile as I can, and never rely on tools I can't easily replace.
+
+Otherwise, I try to notice the relevant choices when I'm making them, and analyse their consequence. My reasoning, based on past experience, is that at some point I'm too drained of willpower to do anything productive or sensible, but most of the time, when I actually have the energy to make good choices, I fail to make them because I don't pay attention to the fact that there's a choice at all.
+
+Everything I just said didn't make a lot of sense, and I doubt it could really apply to anybody else. I'm just trying to explain/rationalize my current philosophy regarding akrasia, which is mostly a result of non-shareable experience and a lot of trial-and-error, and I'm still doing it wrong anyway.
+
+As for measuring productive time... actually, I should do that. The main problem is that automated tools only measure one type of activity and a manual tool can give skewed results if you forget to switch it off, but that's probably not too hard to work around. I'll just have to figure out how to log activity time on unix systems.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 3
+:DateUnix: 1472507331.0
+:END:
+
+***** Hm, that's not as inapplicable as you'd think. I do something somewhat-similar in analyzing my actions, too, although I haven't done so as consistently as you seem to.
+:PROPERTIES:
+:Author: Cariyaga
+:Score: 1
+:DateUnix: 1472547346.0
+:END:
+
+
+***** To track time I used successfully [[https://toggl.com/][toggl]] and its chrome extension. It's built for freelancers, so you can track different types of activities if you wish. One click on your browser and it starts counting, and it's smart enough that if you were AFK it asks you: "you passed the last N minutes away from the computer, should I consider it or not?"
+:PROPERTIES:
+:Author: munchkiner
+:Score: 1
+:DateUnix: 1472548548.0
+:END:
+
+
+***** No, that makes perfect sense. I've noticed that there are a lot of times where I feel like I can't be bothered, but if I take 3 seconds to actually check the Willpower Reserve Tank, I'm actually well above minimum levels.
+:PROPERTIES:
+:Author: Iconochasm
+:Score: 1
+:DateUnix: 1472563462.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1472557113.0
+:END:
+
+*** [deleted]
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1472567404.0
+:END:
+
+**** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1472570228.0
+:END:
+
+***** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1472570918.0
+:END:
+
+****** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1472571120.0
+:END:
+
+
+*** I struggle with a similar issue. It leads to a lack of motivation for sure. My greatest success in overcoming that specific feeling of accomplishing nothing is to find something with a small cost to me in terms of effort and yet creates or causes something I value. In short, to accomplish something fairly easily. I can then point to the fact that one more step had been taken towards my goals as actual evidence that yes, I do in fact get things done.
+
+Measuring progress towards a big goal in terms of sub-steps also helps me keep a realistic sense of progress.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1472559795.0
+:END:
+
+**** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1472564045.0
+:END:
+
+***** #+begin_quote
+  Only things I could possibly value is ones requiring grand plans
+#+end_quote
+
+Give us an example of something you would value that cannot be accomplished but by the use of a grand plan?
+
+It would be a little odd, to me, if something could be accomplished with a "grand plan" but not be broken down into smaller ones.
+
+Like if your grand plan was to start a country-wide company that helped the homeless. Sure that seems impossible to just /do./
+
+But you can make those sub-steps. The way I see it you could divide that grand plan pretty easily into two sides: the business/company-running side of it, and the actual help given to the homeless.
+
+*/Business Side/*\\
+You need to know how to start a company.\\
+You need to know how to run said company successfully.\\
+You need to know how to fund your company\\
+You need to know how to staff your company
+
+*Substeps*\\
+Learn how to start a company. Either internet research, business school, or finding a business owner who is willing to take you under their wing as a kind of apprentice.\\
+Determine the most successful companies in the same or a similar industry and compare them to see what they all do, and what they all /don't/ do\\
+Go to a bank and ask a qualified professional to help you understand everything you need to know about gathering starting capital or a business loan.\\
+Take a management course or hire someone with management experience to handle it for you.
+
+*/Homeless Side/*\\
+You need to know what the homeless need most.\\
+You need to know how to get that thing, and distribute it.
+
+*Substeps*\\
+Approach similar companies, soup kitchens, homeless outreach centers and find out what item or service is missing or can't be accessed for some reason.\\
+Determine which of the things from above are either most needed or easier to get and distribute.
+
+--------------
+
+The point is, it's very rare that there's a single, grandiose step to accomplish any given goal or task that cannot be tackled bit by bit.
+
+For each of those steps and substeps, if it seems like it's beyond you or your current capabilities you look to see what, exactly, it is that is holding you back from being able to do it. Once you know why you can't move forward, you make a plan to deal with that issue or shortcoming and continue on from where you had to stop.
+:PROPERTIES:
+:Author: shiningmidnight
+:Score: 2
+:DateUnix: 1472570851.0
+:END:
+
+
+** So I'm starting me 3rd semester of college right now, and have noticed something really interesting. When I first started college, I was super motivated all the time, and basically was always working on projects. Once summer started I lost all that motivation, and felt like it was probably just a result of the novelty of my first year. However, I feel the same this semester. The college environment spikes my productivity by at least 10x, and to an extent that seems crazy when I'm not in this mental frame. I've been trying to figure out what it is that kills my akrasia so I can utilize it outside of the schoolyear. I think a big part of it is that other people have expectations of me, and I know other people will recognize/praise my accomplishments. I'm pretty sensitive to other people's opinions, so this makes sense to me. Ideally though, I would value my own opinion of my work as much as other people's. Doing so would make me less dependent for motivation, and more resilient to social pressures. Does anyone know of any techniques to make yourself value your own markers of success more?
+:PROPERTIES:
+:Author: VivaLaPandaReddit
+:Score: 1
+:DateUnix: 1472779246.0
+:END:

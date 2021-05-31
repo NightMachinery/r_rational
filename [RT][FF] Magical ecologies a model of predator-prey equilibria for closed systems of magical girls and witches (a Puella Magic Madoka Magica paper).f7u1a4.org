@@ -1,0 +1,233 @@
+#+TITLE: [RT][FF] Magical ecologies: a model of predator-prey equilibria for closed systems of magical girls and witches (a Puella Magic Madoka Magica paper)
+
+* [RT][FF] Magical ecologies: a model of predator-prey equilibria for closed systems of magical girls and witches (a Puella Magic Madoka Magica paper)
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 55
+:DateUnix: 1582385677.0
+:END:
+I just spent a few hours on this - a differential equation model of the populations of magical girls and witches in Puella Magi Madoka Magica, and how they can be regulated and optimised for maximum negentropy production. Does a fictional academic paper set in someone else's universe count as fanfiction? A fictional newspaper article or epistolary would, so I guess this does too.
+
+[[https://github.com/higgs-bosoff/pmmm-ecology/raw/master/paper/mweco.pdf][Magical ecologies: a model of predator-prey equilibria for closed systems of magical girls and witches]]
+
+[[https://github.com/higgs-bosoff/pmmm-ecology][Github repository and code]]
+
+The results actually turned out quite interesting, and surprised me. It's a remarkably self-stabilising and easy to regulate system. A Kyubey's work is pretty easy after all, unless he royally fucks it up like someone I won't mention who was assigned to a planet beginning with E and ending in -arth.
+
+
+** [[https://wiki.puella-magi.net/Population_dynamics][Prior art]].
+
+No joke, this page is a major reason I'm taking a course on dynamical systems now.
+
+Awesome work, I love this kind of stuff. I've always wondered what sort of model might be suitable for magical girl-wraith populations, too.
+:PROPERTIES:
+:Author: zwerhau
+:Score: 19
+:DateUnix: 1582401170.0
+:END:
+
+*** Holy shit, /someone had done it already/?
+
+The internet truly is a wondrous place.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 13
+:DateUnix: 1582403616.0
+:END:
+
+
+*** Seems like the lack of modelling of familiar growth mechanics is why this paper avoids the population instability of the previous work?
+
+Does this indicate that the familiar+human=witch reaction is less impactful than previously believed?
+:PROPERTIES:
+:Author: FeepingCreature
+:Score: 6
+:DateUnix: 1582402199.0
+:END:
+
+**** I'd say there's issues in both of them. This paper ignores the interaction entirely, whereas the previous one assumes it scales only with the witch population.
+
+This is really a 3-species system. Humans are eaten by Witches, then Witches are eaten by Magical Girls. Humans can properly regulate their food sources via farming (so we can ignore what they eat), but the other two aren't organized enough to do so on a large scale. Familiar->Witch maturation rate is strongly dependent on the available human population, particularly since humans will flee the area should too many humans begin to die and most witches' labyrinths are not very mobile. Magical Girl->Witch corruption has both a constant term (it costs magic to keep the body running in everyday life) and the proportional term (it costs a lot of energy to fight a witch).
+
+Most importantly though, is that Kyuubey can adjust many of the statistics as needed. Contracting more Magical Girls, purposefully respawning "dead" witches as required, making Magical Girls sad to get more Witches, all sorts of things. With that the only real threat to systematic instability is Magical Girls organizations, which it has made sure are never able to get off the ground.
+:PROPERTIES:
+:Author: notgreat
+:Score: 5
+:DateUnix: 1582404652.0
+:END:
+
+***** #+begin_quote
+  purposefully respawning "dead" witches as required
+#+end_quote
+
+Oh yeah, he has all the grief seeds. I forgot about that.
+
+That's kind of metal in a gruesome way. Literally not even death is an escape from this evil.
+:PROPERTIES:
+:Author: FeepingCreature
+:Score: 7
+:DateUnix: 1582405146.0
+:END:
+
+
+***** #+begin_quote
+  With that the only real threat to systematic instability is Magical Girls organizations, which it has made sure are never able to get off the ground.
+#+end_quote
+
+I think the other real threat are exceptional singular witches like Walpurgisnacht or Gretchen (aka Witch!Madoka). Exceptional magical girls would usually run out of witches to hunt and succumb to Soul Gem decay; exceptional witches can just go on and on until they destroy an entire planet. Kyubey's never been shown to be able or willing to destroy excessively dangerous witches.
+
+Also, as I said, I ignored Humans because they vastly outnumber the other two species. Basically if witch population density and killing rate are fixed, then witches will be only a small drain on the human population, as will be magical girl recruitment. In general, since both parameters can be controlled directly or indirectly by Kyubey, it is always possible to make it so that Humans (or whatever host species is used, really) aren't drained out at a rate that will cause them to die off or even notice too much what's going on. However in case of singular events like super-strong witches they should be accounted for as death counts will be significant.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 5
+:DateUnix: 1582408384.0
+:END:
+
+****** You have a good point about megawitches, and that's explicitly demonstrated in-show via Gretchen in the doomed timelines. For that it seems as though the solution is simply that they're rare and localized: they're a Walpurgisnaught level threat which is annoying and destroys local ecologies but insignificant on a global scale, except for the exceptional case of Gretchen where it's still localized to a single planet (until the final timeline at least).
+
+It's certainly true that the witches aren't enough to directly hit the human population, but there's a multiplicative effect due to humans fleeing areas with high "mysterious death" rates. Even a few dozen humans dead per day would be a massive effect. Incubator control over statistics collection is an important issue I hand't thought of, however. Magical girl recruitment is definitely not significant compared to human population, but it seems to take many humans to create one witch.
+:PROPERTIES:
+:Author: notgreat
+:Score: 4
+:DateUnix: 1582410897.0
+:END:
+
+
+**** As I said to another commenter - I honestly didn't think of the familiar thing because it was only something Kyoko said before the big reveal. I thought they just /assumed/ witches grew out of familiars, because they didn't know the truth.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 5
+:DateUnix: 1582403677.0
+:END:
+
+***** "Witch Farming: Another Victim of the Replication Crisis?"
+:PROPERTIES:
+:Author: FeepingCreature
+:Score: 13
+:DateUnix: 1582408339.0
+:END:
+
+
+***** #+begin_quote
+  "You just have to wait until it eats four or five people and becomes a witch. That way, you'll be able to get a Grief Seed from it."
+#+end_quote
+
+That's the exact quote from Kyouko, at least according to the subs I have. It seems unlikely that she would have that much certainty or give a number of people it had to eat, If she hadn't observed the process before or at least had very strong evidence.
+:PROPERTIES:
+:Author: Patrias_Obscuras
+:Score: 7
+:DateUnix: 1582422717.0
+:END:
+
+
+** Great read. However, given your conclusion about win rate, I think a your discussion of witch populations viability is either questionable or needs further elaboration why or why not over hunting resulting in unstable populations are a concern.
+
+I would also disagree with your choice to exclude witch self reproduction as a factor as that is another source of witch population growth and field experience tells us it's significant.
+:PROPERTIES:
+:Author: MSpekkio
+:Score: 9
+:DateUnix: 1582388202.0
+:END:
+
+*** We are grateful to the reviewer for their constructive comments and criticism. We include here our response for the benefit of both editor and referees.
+
+Concerning the witch population viability, I do not think the conclusions about the win rate are a problem, or imply that unstable populations are a significant risk. As one can see in Eq. 4, the only case in which the witch population diverges is for a value of w -> 0. This is not only undersirable, but in practice almost never the case, if the agent selects magical girl candidates with a modicum of competence, and provides them with the needed support. For the ideal case of w ~ 1 the witch population is well defined. I therefore fail to see why this should constitute a significant risk to the stability of the population. 'Over hunting' is not a concern: if w = 1, then all magical girls succeed in killing witches, but that only means the average magical girl has less chances at a grief seed, which shortens their life and thus accelerates the regeneration of the witch population. The equilibrium is a dynamical one; the only thing that changes is the specific fluxes that determine it.
+
+Concerning witch self-reproduction, I did not consider it due to my understanding of the literature. There are occasional mentions of the process of familiars turning into witches; however, I was unable to find any direct examples of this within the canonical references [G. Urobuchi, PMMM 1-12 (2011)]. It is possible that references from other materials exist, but they are unknown to me at the moment. Given the circumstances, I did not consider this phenomenon as fully documented, or relevant enough to matter. The existing references do not give me grounds to believe it to be a real phenomenon, rather than a myth spread among magical girls who are unaware of the origin of witches as products of their own decay process. Given that many agents consider it useful to withhold such information from the local magical girls, and even purposefully avoid dispelling misconceptions or disclosing key knowledge that might cause major alteration in behaviour, as part of good breeding practices, I can not in good faith say that I have reason to believe the fabled self reproduction of witches is a real phenomenon at all.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 14
+:DateUnix: 1582393161.0
+:END:
+
+**** #+begin_quote
+  canonical references [G. Urobuchi, PMMM 1-12 (2011)].
+#+end_quote
+
+Can you tell us what you consider canon for this paper? There are movies.
+:PROPERTIES:
+:Author: NZPIEFACE
+:Score: 5
+:DateUnix: 1582395430.0
+:END:
+
+***** PMMM 1-12 = the main show
+
+Honestly I haven't watched the first two movies (aren't they just recaps?) and I don't remember well enough the details of Rebellion to include it. I'm watching Magia Record right now but it's all still in the air for me until I see how it ends.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 6
+:DateUnix: 1582395881.0
+:END:
+
+
+***** I do agree with [[/u/SimoneNonvelodico]] - the show doesn't /actually/ show familiars becoming witches. In Episode 5, Kyoko reprimands Sayaka for killing a familiar instead of letting in grow into a witch. But this is at a point in time before they find out that magical girls actually become witches themselves.
+
+So it's entirely possible that Kyoko is under the mistaken impression that familiars grow to become witches.
+:PROPERTIES:
+:Author: reilwin
+:Score: 4
+:DateUnix: 1582410987.0
+:END:
+
+
+**** > canonical references
+
+The authors do seem to miss a fairly significant paper, which is canonical even though rather obscure: [G.Urobuchi, et al, Madoca Magica Portable, 2012] ( [[https://wiki.puella-magi.net/Puella_Magi_Madoka_Magica_Portable]]). The paper deals with various counterfactual scenarios. Some of them do feature familiars turning into witches.
+:PROPERTIES:
+:Author: gRRUR
+:Score: 5
+:DateUnix: 1582451839.0
+:END:
+
+
+** This is such an odd crossover of fields that I don't know if I should be impressed it exists or critical that you only bothered to draw references from three sources.
+
+I think you might have capstoned my weekend early. Thanks for the link!
+
+PS. it's totally fanfiction since we all know Kyubei #65471 is too busy saving the universe to publish a paper on the side.
+:PROPERTIES:
+:Author: PDNeznor
+:Score: 8
+:DateUnix: 1582391229.0
+:END:
+
+*** #+begin_quote
+  critical that you only bothered to draw references from three sources
+#+end_quote
+
+Is that you, Reviewer #2, my old nemesis?
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 14
+:DateUnix: 1582391552.0
+:END:
+
+
+** This.
+
+This is the type of writing that fits this sub /perfectly/.
+
+Though there's one thing bothering me about the model: magical girls have variable potential, subsequent power (and powerset), personality as well as a growing body of experience and skill to draw on (as well as trauma, which reduces their effectiveness), which also most likely does influence the resultant Witch. And that's without considering the socio-economic ramifications of being a Magical Girl, of the way they form and dissolve groups, for purposes of teaching/hunting/companionship, or how is it influenced by local ecology.
+
+Now, I am pretty sure that most of those variables would massively complicate this model without providing much of a benefit to general predictive power (as it mostly makes difference in vastly anomalous situations, see Madoka Incident^{\}1])), but it's something to consider for any future research attempt.
+
+EDIT: In fact, I can see why Incubators as a whole have a severe problem with understanding human motivation and psychology.
+
+Can you /imagine/ the amount of work that would have to go into making a specific model of Puella Magi ecosystem on a human-inhabited world? This model wouldn't even have any use outside of Earth! It's pretty much a complete waste of computational resources for Incubators, which could be used for literally anything else, like better entropy management models.
+:PROPERTIES:
+:Author: PurposefulZephyr
+:Score: 6
+:DateUnix: 1582406903.0
+:END:
+
+*** Oh, absolutely, this is what I would refer to as a 'mean field' model.
+
+I had considered a more advanced model. One way to implement what you say would be to have a Monte Carlo model with individually instantiated Magical Girls and Witches, each with their own stats (randomly selected with some kind of distribution), and have them move across a board randomly, and do battle if they meet. Then it's possible to observe the emergence parameters like /w/ - which would simply be the result of comparison between respective combat strengths - and /b/ - a function of the density of population. We could see limit effects as the number of battles might stop being linear in M and W if we go into an overpopulation regime (a bit like the perfect gas equation stops applying when the excluded volume becomes significant). And we would see random fluctuations (if only because M and W would be discrete, not continuous, variables).
+
+It's definitely possible. I didn't do it because it would become far more complicated and really, I didn't have /that much/ time to spend on this today. Plus I think the results wouldn't be too different, unless we consider further mechanisms such giving magical girls or witches experience and thus the ability to level up, which could generate a singularity if one becomes so strong they start winning every time.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 4
+:DateUnix: 1582408229.0
+:END:

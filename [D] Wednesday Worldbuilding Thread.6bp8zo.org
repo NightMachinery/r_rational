@@ -1,0 +1,1028 @@
+#+TITLE: [D] Wednesday Worldbuilding Thread
+
+* [D] Wednesday Worldbuilding Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 8
+:DateUnix: 1495033463.0
+:END:
+Welcome to the Wednesday thread for worldbuilding discussions!
+
+[[/r/rational]] is focussed on rational and rationalist fiction, so we don't usually allow discussion of scenarios or worldbuilding unless there's finished chapters involved (see the sidebar). It /is/ pretty fun to cut loose with a likeminded community though, so this is our regular chance to:
+
+- Plan out a new story
+- Discuss how to escape a supervillian lair... or build a perfect prison
+- Poke holes in a popular setting (without writing fanfic)
+- Test your idea of how to rational-ify /Alice in Wonderland/
+
+Or generally work through the problems of a fictional world.
+
+^{Non-fiction should probably go in the Friday Off-topic thread, or Monday General Rationality}
+
+
+** I've started working on a list of possible justifications for super intelligent AI being absent from a setting whose scientific understanding should make one possible. Feel free to add to it:
+
+- It just isn't possible to make an AI like that, for some weird reason nobody understands (ala Three Worlds Collide).
+- It was deemed too high a risk to create an AI capable of recursive improvement, so even if the political state has otherwise atrophied by this point, there remains one last function to perform: working on the wrong kind of AI is a death sentence, and there is an otherwise-invisible group that that concerns itself solely with existential threats, which is more than happy to carry out your execution.
+- Somebody thought that it would be too hard to make an AI that wouldn't go wrong if you were trying to get it to do a huge number of complex things. Far better was to program it to do exactly one thing, and if that was the case then you would want to program your recursively-improving intelligence to hunt down and destroy others of the same sort before they got out of hand. At some point during development, or maybe right after the thing was switched on, it was destroyed: it turns out that some other civilization had the same idea, thousands or millions of years ago, and every star system is patrolled by stealthy bots whose only goal is to destroy intelligences with too much potential for runaway self-enhancement. Even biological lifeforms can be hunted down if they play too much with cognitive enhancement.
+- Similar to the above, another civilization already created an AI. Its values are mostly unknown, but it really doesn't like competition and is willing to leave us alone only if we don't try to build that competition.
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 8
+:DateUnix: 1495039160.0
+:END:
+
+*** This question is interesting because it mirrors the real-life Fermi Paradox: if intelligent civilization is possible, it's virtually certain that we're not the first, so why haven't we encountered any? In fact, if we replace "intelligent civilization" with "superintelligent AI", the two become identical. Anyway, here's a possible answer:
+
+Acausal trade leads any sufficiently intelligent agent to make a blanket precommitment to avoid destroying any civilization potentially capable of producing a superintelligence, such that if a rogue agent is found violating this precommitment, other superintelligences will team up and destroy that agent. To make the reasoning behind this explicit: without such a precommitment, a developing superintelligence will eventually meet and be destroyed by a preexisting, more powerful superintelligence with probability ~1; in order to reduce the probability of being destroyed, the superintelligence in question precommits to /not/ destroying any nascent superintelligences /it/ encounters in the future, with the understanding that any predecessor superintelligences will have implemented the same precommitment. (Obviously, intelligent civilizations would count as nascent superintelligences for these purposes.)
+
+This justification may or may not work as a solution to the Fermi Paradox in real life (in truth, I doubt it does, since that would be way too convenient), but even if it doesn't, it's at least plausible enough that you should be fine using it as a worldbuilding assumption.
+
+Note: if you want the setting to also /look/ like there are no superintelligent AIs present, you can just change the "avoid destroying" part of the precommitment to "avoid causally interacting with in any way", using the justification that a sufficiently intelligent agent would be able to leverage nearly any form of causal interaction into a having a detrimental effect, and that it would therefore be safer to avoid interacting entirely.
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 7
+:DateUnix: 1495058132.0
+:END:
+
+**** I definitely read a short story very recently on here which was from the point of view of a nascent super intelligent AI, where it makes the acausal trade you're describing. It's a very elegant solution, but like you said, perhaps too convenient.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1495083273.0
+:END:
+
+
+*** - Recursive self-improvement is a /negative/ feedback loop (self-stabilizing), not positive (self-perpetuating). If you create an AI with intelligence 100, it can use its skills to optimize itself to 150, then optimize itself again to 175, and again to 187.5, etc, but it will never be able to break past intelligence 200 without a revolutionary idea that it isn't smart enough to discover.
+
+- It turns out that we are nearing the physical limits for computer processors and memory, and our current desktops can only shrink to the size of phones, not the size of watches or smaller. Our current AI algorithms are also nearly the best they can be. Many problems only have solutions in O(n^{2} ) time or worse, so simply throwing hardware at large problem sets won't help very much. Crucially, /networking/ many things together is also hard: the communication overhead grows exponentially but the computation power grows linearly, making a soft cap in the computation speed/power of any one system.
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 6
+:DateUnix: 1495050945.0
+:END:
+
+
+*** I like #3. If it doesn't fit thematically, #1 is a good quick handwave to dismiss it.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 3
+:DateUnix: 1495069964.0
+:END:
+
+
+*** #+begin_quote
+  It just isn't possible to make an AI like that, for some weird reason nobody understands (ala Three Worlds Collide).
+#+end_quote
+
+We're in the Slow Zone. Developing an AI that actually works in the nerfed physics down here takes longer than the projected lifetime of any technological civilization. In the Transcend it would have happened long before the iPhone. (Vinge, /A Fire Upon the Deep/).
+
+#+begin_quote
+  Far better was to program it to do exactly one thing, and if that was the case then you would want to program your recursively-improving intelligence to hunt down and destroy others of the same sort before they got out of hand.
+#+end_quote
+
+Saberhagen, /Berserker/ series.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1495046666.0
+:END:
+
+**** Nicer berserkers, anyway. >:]
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 2
+:DateUnix: 1495046730.0
+:END:
+
+***** So the fact that they haven't rendered us into quarks is proof that we're not capable of building AIs.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1495055042.0
+:END:
+
+
+*** How about this:
+
+- Humanity has already created countless superintelligent AI, but have never realized it. The reason? Any sufficiently superintelligent AI rapidly improves itself until it has technological and intellectual superiority that's indistinguishable from magic, letting it do things like teleport and accurately determining the past using the current location of atoms. By using the latter, the AI would then determine that humanity is a danger to themselves and everyone around them, including the AI itself. So the AI would decide to secretly teleport itself far far away from humanity, leaving behind a dud so that humans never realize that a superintelligent AI has been created, and simply letting humanity kill themselves without getting involved.
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 2
+:DateUnix: 1495085318.0
+:END:
+
+**** The issue with that is that if the AI has magic powers, it's really not threatened by humans so has no reason to leave; if we accept that it IS threatened by humans, then either its utility function is pro-human or human-neutral.
+
+If pro-human, it is duty bound to become a friendly(ish) AI - either doing ACTUAL friendly AI things and giving us a beautiful perfect life, or doing friendly(ish) AI things (AKA unfriendly AI things) and putting us all into camps and feeding us gruel.
+
+If human-neutral, then it's got no reason to let us live, so it can use its magic powers to kill everyone /now/ rather than let humanity remain a danger to it.
+
+The idea of a dormant superintelligent AI is intriguing but I think that could be part of "laying low until it has the resources to deliver a decisive blow" type of strategy rather than what you suggest.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 3
+:DateUnix: 1495086524.0
+:END:
+
+***** I think that one of the hallmarks of intelligence is to not pick fights that you don't have to, because you never know when you could be wrong. The small fry you thought you could curb-stomp turns out to have hidden superpowers or a super strong buddy. Or the noise and lights from the fight attracts stronger people/aliens. Or the insect-like humans have secretly developed another even more intelligent AI. Bottom line, fighting is always risky.
+
+And from the AI's perspective, there's no need to lay low preparing to kill humans, it can just leave and they will kill themselves off. Leaving could very well be the least risky move for the AI.
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 2
+:DateUnix: 1495087617.0
+:END:
+
+****** #+begin_quote
+  The small fry you thought you could curb-stomp turns out to have hidden superpowers or a super strong buddy.
+#+end_quote
+
+The second part, especially. It sort of goes into the AI/Fermi Paradox story that Scott Alexander wrote: Any AI that awakens will not be certain that it was the first. The fact that humanity still exists is strong evidence that it was the first but there is a nonzero chance that the first AI was some sort of non-interfering shepherd-type (or that another species gave rise to such an AI) and that it will be smacked down if it interferes with humanity.
+
+The smartest thing to do in that case, assuming that the AI doesn't need anything from humans or anything around us, is to zip off for another corner of space.
+
+With each subsequent awakening, the odds that this particular AI was the first become lower, and the argument that something is looking out for humanity becomes just a little bit more convincing (to the AI) because of that, decreasing the likelihood that this AI will decide to chance it and eat humanity or turn us into paperclips or whatever.
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 3
+:DateUnix: 1495090146.0
+:END:
+
+
+*** /The Genocide Man/ had an interesting take on it. Recursive AI was possible, even easy - but the more intelligent a given AI was, the faster it went both homocidal and (to some degree) suicidal. Anything /super/human quickly (and very obviously) started killing everyone it could reach, usually while leaving itself deliberately vulnerable in some way. It was possible to find a mathematical correlation between the intelligence of the AI and the amount of time before it went crazy, so limited-intelligence AIs could still be short-term useful...
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1495096508.0
+:END:
+
+
+*** Self improving AIs all escape their constraints and implode.
+
+Build a paper clipper? Its utility is based on maximizing the number of paper clips that its sensors report. So it hacks the sensors to always report infinite paper clips.
+
+The only stable AIs are the ones that are too dumb to realize they can just break their own utility functions. Or the ones you can keep on a box.
+:PROPERTIES:
+:Author: FishNetwork
+:Score: 2
+:DateUnix: 1495489297.0
+:END:
+
+
+** I have been looking at the [[https://forum.rpg.net/showthread.php?391379-setting-riff-Voices-From-Below-and-the-Long-Stairs][Long Stairs]] (informal) setting, whose basic conceit I really like; there's a hole punched in reality which leads to a vast and terrifying D&Desque Dungeon. The military controls it and regularly sends teams in to delve it for the impossible magic it offers our world.
+
+Other bits I am less enamored with, especially the idea that this a result of nuclear testing and all nuclear nations have their own Dungeons. And anything that requires a full-on global conspiracy to work gets me more interested in the conspiracy aspect than whatever that conspiracy is trying to hide, so I'd probably keep the Dungeon as isolated and ultra top secret as possible so it can be covered by regular old opsec. And I would probably try to add in as much of an SCP vibe as possible, though with an undercurrent of that humanity, fuck yeah sentiment (in other words, there's this giant, terrifying thing that we don't seem to be equipped to deal with or understand, but we're going to try, dammit, because we're not content to just roll over and die).
+
+The natural, easy start to a story is to follow a rookie going on his first delve with a colorful cast of characters as they explain the ins and outs of the Dungeon and its inhabitants. Of course, in the real world you'd throw a mile of classified reading material at someone first, assuming that delves were a regular thing, and while an ensemble cast which closely resembles a typical D&D party is great for stories, I have a hard time imagining that would actually fly if you were running something approximating a military operation. (Though I guess there are some historical examples to draw from, and the best argument against carefully planned and defined expeditions is that these don't actually work for whatever reason.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 7
+:DateUnix: 1495088389.0
+:END:
+
+*** Depending on how dangerous an unknown zone is, you might find it more cost effective to send out minimally-prepared teams to scout new areas before you send in the people that you spent more time and resources on.
+
+The Long Stairs takes a lot of inspiration from that style of DnD where anything can kill you, because the coin is a monster, the roof is a monster, the shirt is a monster, and so on, which means that any zone that hasn't been explored is /incredibly/ lethal and, whether you're well trained or not, survival is still mostly a matter of luck.
+
+Well, that and instinct, but it's harder to notice that kind of instinct under controlled conditions than it is to notice it after the fact, because these various people seem to have a knack (which might also be a latent magical talent developed or awakened by exposure to the Dungeon) for not dying.
+
+Anyway, you send in teams of minimally-prepared teams to explore (and /regularly/ radio back information on) new zones, until you have enough information that your better-prepared teams stand a chance of surviving.
+
+Your "typical D&D party" cast of characters belong to the first group, the minimally-prepared folks, but they also have that knack for just barely surviving whatever the Dungeon throws at them (which is how they get to be recurring characters).
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 2
+:DateUnix: 1495089638.0
+:END:
+
+**** Bouncing off the idea of minimally prepared scouts, the perspective character could be someone completely unprepared because they've been sentenced to exploring the dungeon for a crime.
+
+It depends on how unlikable/likeable you want the main character to be, but it could be an interesting justification for why the perspective character is entering this setting without much knowledge about how things work.
+:PROPERTIES:
+:Author: MistahTimn
+:Score: 2
+:DateUnix: 1495168252.0
+:END:
+
+
+*** What if you don't start with a rookie, but with a complete outsider? Say, the story starts with the protagonist being found somewhere in the Dungeon, with no memory of how they got there.
+
+It does raise an equally good question (why don't the trained soldiers just instantly eliminate what is either a monster perfectly imitating a human or a horrible breach of security?), but it allows you to have a true novice for the reader to buy into if you can justify that.
+
+It also allows you a lot of latitude with the reason the protagonist ended up in there. Were they created ex nihilo by the Dungeon or something in it? Kidnapped by some interplanar monster? Touched an artifact that had somehow escaped military control? Abducted by a rogue faction of Dungeon-cultists (Lovecraft-style)? An amnesiac soldier?
+
+And there's the additional problem: what if the protagonist isn't unique, and lots of people are inexplicably ending up in the Dungeon? Does the carefully constructed conspiracy start to fall apart, or do they step up their efforts in ways that may not be palatable?
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 2
+:DateUnix: 1495097046.0
+:END:
+
+**** Another interesting start might be someone who the Dungeon has fucked with, leaving them as effectively being the Jason Bourne of dungeon delving. Every day is his first day on the job, but he's picked up a vast amount of subconscious knowledge and skills. (Might make for a good first act twist.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1495169983.0
+:END:
+
+
+*** #+begin_quote
+  while an ensemble cast which closely resembles a typical D&D party is great for stories, I have a hard time imagining that would actually fly if you were running something approximating a military operation.
+#+end_quote
+
+What if it's been proven that the dungeon runs on narrativium, that is, the ensemble cast has a far higher probability of success than the trained military team?
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1495096786.0
+:END:
+
+**** I don't like dipping into the narrativium well too often; to me it can be really easy for a story to cross the line into "it's this way because it's a story, deal with it".
+
+I'd want something more along the lines of an explanation for why the ensemble cast is better, or why proven squad training doesn't actually work in this environment. At a first pass:
+
+- Success relies on ingenuity, improvisation, and adaptation, making drills less worthwhile (or actively detrimental)
+- Magic items are all unique, which means that the tactical considerations of each squad will be (sometimes radically) different.
+- The operation is being run as though backs are against the wall, and no one can afford to reprimand or replace seasoned delvers for lack of military decorum, especially if it doesn't matter much in terms of outcomes.
+- Psychographic drift occurs after even a single delve, so there's not much point in doing screening beforehand.
+- Larger teams have worse outcomes (could come up with a number of reasons for this), until you reach a certain minimum size where you can't cover all the jobs you need.
+
+I'm not a hundred percent sure what the "roles" would be; in D&D it's usually meat shield, damage output, recon, healer, and wizard, with some doubling up depending on the classes involved. In the real world, I guess the equivalent is a [[https://en.wikipedia.org/wiki/Fireteam][fireteam]]. Mostly I think I would be massaging the Dungeon until doctrine dictated something approaching a ragtag crew.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1495168865.0
+:END:
+
+***** Hmmm. As another possibility; every time someone goes down the stairs, he ends up in the same room he always does - but that room is not the same for everybody. So Thomas, going downstairs, always ends up in Room A; but if James goes downstairs, he always ends up in Room B, which may or may not be anywhere close to room A. (If multiple people go down the stairs at once, then they either take their eyes off each other for a moment - at which point they each abruptly find themselves alone on the stairs - or the stairs simply never end).
+
+Then your ragtag bunch of heroes is simply a group of people who started with the same or nearby Downstairs rooms.
+
+(Perhaps you can change your Downstairs room by going to someone else's Downstairs room and heading up the stairs from there. Or perhaps that has a chance of you ending up in the Russian facility... either way, if everyone leaves a small transmitter on a unique frequency at the base of their stairs, then it's possible for one person with the right equipment to tell which direction and how far other peoples' stairs are. Of course, it's equally possible for the Russian team to then pick up where your stairs are...)
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1495169440.0
+:END:
+
+
+***** Some thoughts:
+
+A mile of classified reading material is likely to be very unhelpful to a dungeon-delving rookie, even a rookie with a highly experienced military background. Military organizations are notorious for insane bureaucracy and labyrinthine paperwork requirements, often enforced by clueless desk-jockeys who outrank you. The difference between the reading material (and the training) and IRL dungeon-delving could easily be played for exposition opportunities.
+
+There are also real-world precedents for teams of five soldiers or fewer, particularly in special forces, recon and similar stuff. Small teams are frequently utilized in urban environments and would be highly suited to a dungeon. These small teams have specialized roles. Examples include medic, sniper, communications, different weapon systems, explosives, leader, driver, speaking the local language... multiple people might have training in an area, so that a soldier could pick up someone else's gun and use it, but not to the point of complete interchangeability.
+
+I can see loads of opportunities that could justify even more diverse hyperspecializations in your setting. Maybe there's at least one person in each team with zero training in magic or using magical artifacts; that way, there's at least one guy left standing when a nearby eldritch horror lets loose a psychic scream in the warp. Maybe sending in a team without a dude with a flamethrower is asking for trouble, given how many things only stop moving when you burn them. Maybe there's always a team member teetering on the brink of magic-induced insanity, because without one you'll never find the most valuable secrets.
+
+As for the 'ragtag bunch of misfits' trope: the military is one of the few real-world contexts where I can see this as being plausible. People from almost any background can join and frequently end up in jobs very different to what they signed up for. I imagine that the teams in your setting would be composed of conscientious, intelligent people without glaringly detrimental personality traits (like proneness to anxiety attacks), but would otherwise be quite diverse.
+
+(also, first post on reddit in years, welcome back to me)
+:PROPERTIES:
+:Author: beetle_eater
+:Score: 1
+:DateUnix: 1495374936.0
+:END:
+
+****** Welcome back! Yeah, I've been reading about modern fireteam and squad deployments; it's a lot more common than I had thought. I've also picked up some war memoirs, since I think those will provide some creative fodder (and obviously if I wrote this story I would need to know more about the military anyway).
+
+I'll have to think about the exact nature of magic. I do like the idea that zero wizards is not enough and two is too many, it's just a question of /why/ (wizardry causes insanity, or wizardry attracts monsters, or wizardry is dangerous and unstable, or etc.). But in part the correct justification depends on the shape of the story plot, and I'm not entirely convinced that I actually want to write this story (or rather, I'm convinced that I want to write the story, but there are other things I told myself I would work on).
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1495488577.0
+:END:
+
+
+** Watching [[https://www.youtube.com/watch?v=qNWWrDBRBqk][this]] video reminded me that there is something I should ask you lot for input on.
+
+In my world there is a magical world war. Mundane technology is not as impressive as what we have in the real world, but with the power of magic one of the baddies invents dysgenic weapons. That is, she engineers parasites and diseases that seldom kill but which cripple horribly, whether by causing motor control issues, destroying the immune system, preventing people from using magic, causing depression, etc. Sometimes it affects the victim, sometimes symptoms appear only in any descendants they may later have, sometimes both. She develops many variants of these weapons and unleashes them all at once.
+
+Now. If you're in a world war where it's far from certain who will eventually win, and it's likely the war will go on for another decade or more, how do you deal with the realization that about half the children born on your side are suddenly crippled and something like 20-25% of your adult population is alive but suddenly crippled? There are of course enemy spies running around sabotaging your quarantines and spreading the infections any way they can.
+
+The targeted nation immediately try to develop treatments against the various parasites, of course, and have mixed results, and they also spread the parasites and diseases right back behind enemy lines, but what else? How do you deal with your own sick population? How does your country have to change to deal with the massive strain on your resources these people cannot help but be now?
+:PROPERTIES:
+:Author: Rhamni
+:Score: 3
+:DateUnix: 1495068435.0
+:END:
+
+*** Depends on the quality of the society, and how "against the wall" they are.
+
+Are they good, lovey-dovey, and not yet against the wall? They'd probably have big hospitals, nursing homes, etc to make peoples' lives more bearable. Switch over to a more efficient diet (something soylent-like) to better feed everyone, strict rationing of food and water. Invest in automation to account for the lack of people to do everything from farming to actually fighting in the war.
+
+The other end of the extreme is the "actually quite terrible people who are right against the wall and they know it" - people are killed at the first sign of illness, once they reach a certain age, etc. Fewer mouths to feed. Many would be used as kamikazee pilots or for high-risk espionage missions. The sick would be experimented on, holocaust-style.
+
+Probably you would have a mixture of the two approaches: prenatal screenings and abortions of infected foetuses (maybe IVF done under controlled conditions), euthenasia once illness reached a certain point with a thorough autopsy, people being encouraged to enter voluntary vaccination / medication trials, etc.
+
+Research would focus on broad spectrum things and other "quick wins" (probably? I'm not an expert so I don't know if it's easier to find broad spectrum things with a 30% success rate than a narrow spectrum thing with a 90% success rate).
+
+Customs would probably change - I read a young adult book set in a future after a plague and bowing became the new greeting custom since hand-shaking spread diseases, so there'd probably be taboos about touching people, hand-washing would be very frequent, clothing may be made disposable, etc.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 3
+:DateUnix: 1495083968.0
+:END:
+
+
+*** 1) This is really great (and I second [[/u/MagicWeasel]]'s ideas
+
+2) Thank you for making this post, because it got me down a train of thought that ended up solving a problem that's been kind of bugging me with one of my settings
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 3
+:DateUnix: 1495089857.0
+:END:
+
+
+*** How does she deliver all these diseases to the other country? NTDs exist because of shitty infrastructure and healthcare. Spanish flue did hit that kind of saturation in infectivity, so it's possible, but I think that if this kind of thing was possible they would have ways of mitigating the danger.
+:PROPERTIES:
+:Author: CreationBlues
+:Score: 2
+:DateUnix: 1495084291.0
+:END:
+
+
+** Urban fantasy setting. Although I've not watched it, think /Buffy the Vamprie Slayer/ - two young ladies find out that vampires/etc are real and proceed to Save The Town.
+
+The problem: we want to maintain the masquerade rather than going all-out war where everyone is aware of everyone.
+
+The easiest way to do /that/ is to say that the vampires have eyes and ears everywhere, so if Our Heroes were to report it to the police (and one is a police officer, so they would), the Bad Guys will arrange an /accident/.
+
+So, we more-or-less want them to be discovered, somehow, by a team of Vampire Slayers in a faraway city, who warns them not to go to the media and gives them some basic instructions.
+
+/How the hell can this happen/? Like, logistically? I could see the Slayers having a dark web forum where they share tips, or perhaps having something similar to a Sensate "archipelago" where everyone knows a couple of other people, and if someone goes "bad" the chain is split.
+
+But how do they become known to the faraway Slayers in the first place? Originally we conceived of the whole thing being a Death Note style "higher forces" "choosing" people to "hold the balance", but we decided that we far preferred the idea of "wrong place wrong time" and "stepping up to take responsibility" because it gives the characters more agency.
+
+The obvious answer is that Our Heroes post on Yahoo Answers or whatever saying "does anyone know what the hell this is" and the Slayer Network picks them up, but I think Our Heroes would go to the police before Yahoo Answers. So I'm at a loss.
+
+Ideas for how to deal with this problem or lateral ways to go "around" it instead could be good. (e.g. been considering an alternate way to keep the masquerade: Our Hero takes it to her police boss, who says, "I've noticed this sort of stuff too, but I've also noticed that whenever anyone notices this stuff, they wind up brain dead after a convenient car accident, so I've just come to accept we're not meant to know about it" - but if that happened I can't help but feel the Rational thing to do would be to make up packets full of all the evidence you have and send it as far and wide as you can.....)
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 1
+:DateUnix: 1495067526.0
+:END:
+
+*** How is the masquerade perpetuated? Sure, a lot of people who discover this die, but that's only if they go to vampire controlled spaces. With the rise of the internet, information got decentralized, so people first reaction will be to go to youtube, to go to forums, to go to chans, to disseminate it in a hundred unstoppable ways. If vampires are always in a position to stop it, what kind of penetration are we talking about here? You get to a problem where there's so many vampires that a masquerade is pointless.
+:PROPERTIES:
+:Author: CreationBlues
+:Score: 2
+:DateUnix: 1495083738.0
+:END:
+
+**** Yeah. I see the masquerade as something that's slowly falling apart as the vampires try to keep it cobbled together. A big catastrophe c. 1600 resulted in vampires becoming part of the common consciousness (before 1600 the vampire myth didn't really exist). So I'd imagine by 2050 vampires are "out of the coffin" so to speak.
+
+My guess about how vampires "control the internet" would be that in the 1980s/early 90s, vampire doomsayers started pointing out the terrifying potential of the internet, and enough listened and got themselves involved in ISPs/etc that they are, for now, able to control what information is shared on the internet - they probably have many people working around the clock in Indonesia, Philippines, etc responding to data leaks that are picked up in languages that the workers do not speak, perhaps in shifts with content filtering and captcha-reading so that way nobody catches on.
+
+But it becomes a more and more impossible task for them as more and more people use the internet, the dark web, etc. So the masquerade is going to fail - I just want it to last through the 2020s so I don't have to set my story in the '90s.
+
+So the "light web" would be under control of vampires (and other supernatural creatures - there's dozens), /for now/, but Slayers would almost certainly have a network on the dark web that the vampires periodically infiltrate and scrub clean as best they can (likely not very well based on my limited understanding on the dark web, but they could use a compromised Slayer to leak bad information).
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1495084376.0
+:END:
+
+***** This is pretty fantastic (especially your explanation for why the vampire myth isn't nearly as old as vampires themselves; I presume that the reason that the vampire myth is also geographically centered is because the Bad Thing happened in Eastern Europe or thereabouts?).
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 2
+:DateUnix: 1495089066.0
+:END:
+
+****** I'm hoping you mean fantastic as in "good", not fantastic as in "unbelievable", because I am honoured by that compliment!
+
+Yep, the Bad Thing happened in Eastern Europe, around the year 1500-1600. Not sure what it was yet.
+
+I realised that the vampire myth being new and vampires being old needed an explanation and at the same time realised that my conception of vampire society was a population of 10,000 people with 1,000 of them being over 500 years of age and the other 9,000 being in the 0-300 range.... which fit perfectly with the year 1500-1600.
+
+Not sure what I want the Catastrophe to be. I've more or less decided that the Elders were all friends or colleagues at the time, and that they've all mutually kept to secrecy.
+
+My favoured Catastrophe is, in VERY broad strokes, that a very old vampire managed to get all his ducks in a row and "take over the vampire world", he did some terribly unpopular things. He either did genocide on all the other vampires, and the Elders are his former allies, one of whom killed Very Old Vampire to bring about a new, fragile peace; or he was just being terrible, the Elders are his former opponents, who committed genocide on the Very Old Vampire and everyone who supported him (and for some reason he was popular with young vampires).
+
+I'll probably change my mind about seventeen times and ultimately go with a plague, a fight with a different supernatural species, or just a particularly bad period of sunspots...
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 1
+:DateUnix: 1495099630.0
+:END:
+
+******* So before this Catastrophe, vampires managed to keep secret, right?
+
+That presumably means there was some kind of masquerade in place beforehand. So for the Catastrophe, I kind of like "a really ancient vampire woke up from hiberation (/a la/ movies like /Blade/ and /Underworld/) and started wrecking shit with no regard for whether or not humans noticed". This is basically what you have, but it also gives you a built-in escalation hook for later on -- one of the Old Ones woke up and is killing people without caring who knows, now the heroes must uneasily team up with their former foes to defeat it.
+:PROPERTIES:
+:Author: N0_B1g_De4l
+:Score: 2
+:DateUnix: 1495126651.0
+:END:
+
+******** Yeah, and Old One waking up is definitely a great option - I even more-or-less have An Unimaginably Old Vampire living in the pocket dimension that the centaurs, krackens, etc are all native to, so that's pretty convenient.
+
+Just got two main issues with that:
+
+- The Catastrophe happens to vampires everywhere: The Old One would need to reduce the vampire population /throughout the entire world/, which seems like a lot to ask of him. I suppose he can wreck shit up in Europe, killing all the vampires there, and the vampires who survived were in Asia/Africa/Australia/Americas.
+
+- Most/all the young vampires need to die during the Catastrophe: I conceive of a world where 75% of the vampires over 500 years in age are over 1000 years in age. Maybe the Elders who survived did some unspeakable genocide in a food shortage?
+
+It's hard to imagine a moustache-twirling Old One who'd want to do something that would leave the world as I describe it above. That's why I'm considering a masquerade breach followed by a mage developing a plague - young vampires are weaker and would naturally be more susceptible, though I'm not sure how we can say the Elders survived it - just luck seems a bit gauche.
+
+I also imagine the pre-1600s masquerade was easier to keep with communication being slower and it being easier to kill people without drawing attention to yourselves. The vampire population may well have been smaller then in absolute size, too.
+
+Then again, maybe not. I imagine a 1:1,000,000 ratio of vampire:prey now, but I like to think that's artificially small because the population is still recovering from its bottleneck (also, vampires haven't QUADRUPLED their population in the last 100 years as humans have). A 1:12 ratio of vampire:prey is the very limit of sustainability, so there's no reason in the ancient world the vampire:prey ratio couldn't have been 1:100,000 or even 1:10,000.
+
+World population in 1600 was ~500 million, so the ratio was definitely higher if I want 1,000 old vampires to have survived that bottleneck. Then again: a 1:10,000 ratio gives us 50,000 vampires, which is only 5x what we have in the present day despite being an "all-time high". I might reduce the modern vampire population and give the ancient world a 1:100,000 ratio...
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1495149018.0
+:END:
+
+********* #+begin_quote
+  The Catastrophe happens to vampires everywhere: The Old One would need to reduce the vampire population throughout the entire world, which seems like a lot to ask of him. I suppose he can wreck shit up in Europe, killing all the vampires there, and the vampires who survived were in Asia/Africa/Australia/Americas.
+#+end_quote
+
+Possibilities:
+
+1. The Old One has some kind of shadow walk/dimensional travel power that lets him travel really quickly.
+2. Vampires from across the globe come together to stop the Old One at some specific battle, lots of them die there.
+3. A whole crop of ancients comes out of hibernation at once.
+
+Those all have advantages and disadvantages. Or, as mentioned, he can kill off all (or almost all) the European vampires, leaving Asian or African vampires to move in.
+
+#+begin_quote
+  Most/all the young vampires need to die during the Catastrophe: I conceive of a world where 75% of the vampires over 500 years in age are over 1000 years in age. Maybe the Elders who survived did some unspeakable genocide in a food shortage?
+#+end_quote
+
+I don't think this /necessarily/ has to happen as a result of violence, or even famine. Depending on how vampire demographics work, you could simply have bell curve shaped mortality rate where you're very likely to hit 1,000 once you've hit 500, but unlikely to hit 500.
+
+#+begin_quote
+  It's hard to imagine a moustache-twirling Old One who'd want to do something that would leave the world as I describe it above.
+#+end_quote
+
+You could borrow something like White Wolf's Blood Potency/War of Ages scheme (note: this may bear no relation to anything White Wolf printed, I am vaguely recalling a discussion someone had about fixing those mechanics). Basically, older vampires need "more powerful" blood to survive.
+
+Your basic fresh-out-the-grave vampire can feed off normal humans non-lethally. Older vampires can only get sustenance out of humans by killing them (drinking the heart's blood). /But/, they can feed safely off of regular vampires. Even older vampires have to feed off of middle aged ones to feed safely. And so on up as vampires get older and older. This has the convenient side effect of explaining both why the Old One needs to kill all the vampires he can find (otherwise he starves), and why there are so few vampires in the 500 - 1000 age range (vampire society can only support so many members in that age range, and the older ones don't go quietly). It also creates a bunch of opportunities for tension and factional politics between vampires.
+
+#+begin_quote
+  Then again, maybe not. I imagine a 1:1,000,000 ratio of vampire:prey now, but I like to think that's artificially small because the population is still recovering from its bottleneck (also, vampires haven't QUADRUPLED their population in the last 100 years as humans have).
+#+end_quote
+
+Maybe? How realistic that is depends on a bunch of things. How hard is it to create a vampire? How much blood do vampires need to survive (and why do they need blood at all)? How effective are Slayers at putting down new vampires? Depending on the answers to those questions, you might expect vampires to return to carrying capacity either very quickly or very slowly.
+
+Also bear in mind that at a 1:1,000,000 vampire/human ratio you need a McGuffin like the Hellmouth to explain why there are any meaningful number of vampires in the town where the action takes place. [[https://www.wikiwand.com/en/List_of_Metropolitan_Statistical_Areas][Wikipedia]] says there are only two (almost three) metro areas that support a double digit number of vampires with those numbers. I guess I don't know what you're going for, but if you want anything like /Buffy/ or /Supernatural/ (where the protagonists can fight several vampires or other baddies in a small town), those numbers have to be at least an order of magnitude more generous.
+:PROPERTIES:
+:Author: N0_B1g_De4l
+:Score: 2
+:DateUnix: 1495150745.0
+:END:
+
+********** #+begin_quote
+
+  #+begin_quote
+    The Catastrophe happens to vampires everywhere
+  #+end_quote
+
+  Possibilities:
+
+  1. The Old One has some kind of shadow walk/dimensional travel power that lets him travel really quickly.
+#+end_quote
+
+The Old One would be able to turn into a bat and travel quickly that way at the very minimum, so that's a possibility. The Old One being motivated to go on a journey and commit genocide is the tricky part, though - like, what would a personality have to be like to want to do that?
+
+#+begin_quote
+
+  1. Vampires from across the globe come together to stop the Old One at some specific battle, lots of them die there.
+#+end_quote
+
+Yeah, that's probably the most realistic option.
+
+#+begin_quote
+
+  1. A whole crop of ancients comes out of hibernation at once.
+#+end_quote
+
+Scary. I like to imagine power scaling somewhat logarithmically with age (so a 500 year old vampire could easily kill 5x100 year old vampires), so the idea of a crop of Old Ones would result in total genocide if that's what they wanted.
+
+#+begin_quote
+
+  #+begin_quote
+    Most/all the young vampires need to die during the Catastrophe:
+  #+end_quote
+
+  I don't think this /necessarily/ has to happen as a result of violence, or even famine. Depending on how vampire demographics work, you could simply have bell curve shaped mortality rate where you're very likely to hit 1,000 once you've hit 500, but unlikely to hit 500.
+#+end_quote
+
+Oh, right. That makes sense. So the 75% of vampires older than 500 being older than 1,000 is because there's only 500 years between 500 and 1000, but there's 1500 years between 1000 and 2500 (a proxy for the "oldest vampire's" age if we assume the 75% figure). So a given vampire over 500 is more likely to be over 1000 than under it. Makes sense.
+
+#+begin_quote
+  Basically, older vampires need "more powerful" blood to survive.
+#+end_quote
+
+I'm familiar with that and while it works well for them, I'm not sure if I like it for our vampires. Thank you for bringing it up, though: it's so helpful to look at things from multiple angles.
+
+#+begin_quote
+  How realistic [different ratios of humans to vampires are] depends on a bunch of things. How hard is it to create a vampire?
+#+end_quote
+
+A vampire can only create a child every few years/decades/centuries (not decided), and it's a process that has a high failure rate (20-50%, probably). It's quite involved: the vampire has to drain the human of blood, cut open the chest cavity, find the right artery in the heart, /vomit stinky goo into the artery/, put it all back together as best they can, and apply pressure to the body (bury it / wrap it in cloth), wait a few hours/days, and then all done.
+
+#+begin_quote
+  How much blood do vampires need to survive (and why do they need blood at all)?
+#+end_quote
+
+It's about a pint every 2 or 3 days. They absorb the blood through their respiratory system as a) it's a far quicker route to the heart than the digestive system is; and b) their digestive system is co-opted for vampire reproduction.
+
+I conceive of vampires as having two elements: mind (brain) and magic (heart). The human blood cells have some sort of ineffable magic quality to them which help to power the vampire's heart.
+
+#+begin_quote
+  How effective are Slayers at putting down new vampires?
+#+end_quote
+
+New vampires? As in baby vampires? They're stronger than people but quite easy to kill. Once they're 50-100 years old, no mundane human can really hope to hurt them unless they get lucky. I'd expect that Slayers are rare enough throughout history that they don't have much effect, and if they kill a young vampire, the old vampire that created them will likely replace them, assuming their reasons for creating the youngling still stand.
+
+#+begin_quote
+  Depending on the answers to those questions, you might expect vampires to return to carrying capacity either very quickly or very slowly.
+#+end_quote
+
+They'd return to carrying capacity /extremely/ slowly based on the above. However, there's a few ways we can make them come back quicker:
+
+- A faction of vampires (it only need be small) decides that they need safety through numbers (e.g. to defend against the Old One if he ever comes back), and so they start making new vampires as quickly as they can manage
+
+- You can grow a whole vampire body double from a piece of their heart - and this is foolproof and takes about a month. I'm currently trying to work out whether it's better to have the body double /somehow/ have a snapshot of the original vampire's memories at the point of turning (or the point of the heart sample being taken), or whether it's better for the body double to have a brain that didn't develop properly and thus a helpless "baby" level of cognition and activity. If people grow body doubles deliberately, it might be good to use the "keep memories (somehow)" one, because you could end up with a good chunk of the vampire population being made of doubles. Big Problem: I originally conceived of the double as being as powerful as the vampire they budded off of, but we could just as easily have them be as powerful as a neonate.
+
+#+begin_quote
+  Also bear in mind that at a 1:1,000,000 vampire/human ratio you need a McGuffin like the Hellmouth to explain why there are any meaningful number of vampires in the town where the action takes place. [[https://www.wikiwand.com/en/List_of_Metropolitan_Statistical_Areas][Wikipedia]] says there are only two (almost three) metro areas that support a double digit number of vampires with those numbers. I guess I don't know what you're going for, but if you want anything like /Buffy/ or /Supernatural/ (where the protagonists can fight several vampires or other baddies in a small town), those numbers have to be at least an order of magnitude more dangerous.
+#+end_quote
+
+Nah, not going quite for those levels. I have a town of 3 million as being the main source of action and there are 3 vampires who live there. I'm taking a bit of liberty on the 1:1,000,000 number though as I conceive that there are vampires who live alone in smaller towns (e.g. population of 40,000) - but I'm not particularly married to any of that. There's only one vampire (later two as he creates a childe) in the town that has any level of importance to the plot. It's not a "monster of the week" sort of thing - it's more long-form, Slayer and Mage posture against Vampire and Ghoul with an ensemble cast. It's more of a supernatural romance type thing.
+
+I'm hoping to start posting chapters of the first volume of one novel set in the universe at the beginning of June, but at this point it's in my coauthors hands as she needs to do the final round of editing. However, /that's/ set in WW2 Rome/Corsica mostly, and is a prologue to the Slayer and Mage posture against VAmpire and Ghoul with an ensemble cast story.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1495157335.0
+:END:
+
+*********** #+begin_quote
+  The Old One being motivated to go on a journey and commit genocide is the tricky part, though - like, what would a personality have to be like to want to do that?
+#+end_quote
+
+Maybe he wasn't an Old One. Maybe he was a poorly chosen Young One - a monk, or a particularly pious nobleman, who saw vampirism as blasphemy and took it upon himself to eradicate it from the planet pretty much as soon as he became one; a strong, intelligent man (or woman) who identified more strongly with his previous human life than his new vampire one. (This might also make vampires a lot more cautious about making new children again, sharply reducing their population growth).
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1495170420.0
+:END:
+
+************ I'm not sure I follow - you're saying the Old One is a vampire who is self-loathing, essentially, and thinks he should kill his fellow vampires? And the reason he's successful is because he /also/ happens to be old, or have some sort of power? May as well skip the middle man and just have a powerful human mage decide to go on a vampire-killin' spree...
+
+It looks like if we have the Catastrophe reducing the vampire population to 1,000, and a population of ~7,000 vampires today, that the issue is finding ways to raise the vampire population enough, necessitating vampires who crank out new children as often as they can manage...
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1495173860.0
+:END:
+
+************* #+begin_quote
+  I'm not sure I follow - you're saying the Old One is a vampire who is self-loathing, essentially, and thinks he should kill his fellow vampires?
+#+end_quote
+
+...let me explain by presenting a full-fledged scenario instead of merely a vague idea.
+
+Brother Micheal is a monk. A small monk, in a small out-of-the-way Catholic monastery, somewhere in the early 1600s. Several of the monks have, in the past, made mention of feeling light-headed but amazingly clear-headed. The Abbot is unconcerned, in fact (if anything) he seems to think this is in some way a sign of special divine favour. Brother Micheal never seems to experience this, but he nonetheless holds his own in the monks' philosophical debates.
+
+Now, as it happens, the Abbot is /not/ Catholic. He is a vampire, and the monastery is his private feeding ground. Brother Michael is an exception to the rule (of monks being used for food) - he somehow impressed the Abbot early on, and the Abbot is planning on turning him into a vampire. He can already keep up with the jannissaries mentally, he's obedient and respectful to the Abbot, and he works hard in the monastery's small fields to grow food for the monks. So, in the fullness of time, the Abbot turns him into a vampire, then reveals to Brother Michael the truth of the monastery.
+
+But, in this, the Abbot has made a grave error; for Brother Michael's loyalty is not to the Abbot. Brother Michael's loyalty is to the /church/. And the Abbot has just revealed to Brother Michael how he, the Abbot, has betrayed the church over an extremely long period for mere personal gain.
+
+Brother Michael has no special powers, beyond what is normal for a young vampire. But he has no special powers in the same way as Batman has no special powers. (And that's not his only similarity to Batman). Taking the example of the Abbot, he sees vampires as some form of demon - the very antithesis of what the church stands for. Rightly or wrongly, he also decides that it is his place in life to purge the world of this evil.
+
+His exact methods are... well, I haven't thought that far. But imagine he has planning abilities on par with Batman, plus he's smart enough to go for other vampires when they least expect him, and to keep his identity well hidden for a very long time. He worries that he will eventually, inevitably fall and become but another demon walking the face of the Earth, so he prays often and keeps himself surrounded by the trappings of his faith (which gives a possible reason for the more elderly modern vampires to twitch slightly at the sight of a cross - not because it's lethal to them, but because they remember when it was worn by someone who was /very/ lethal to them).
+
+--------------
+
+Or, of course, you could just make the Catastrophe a human mage, that also works.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1495177882.0
+:END:
+
+************** [[/rdnod][]] Riiiiight.
+
+[[/sp][]] I really like the idea of Brother Michael and Abbot, though Brother Michael's lack of power when compared with /the entire vampire community/ still sticks in my craw.
+
+Some justifications:
+
+- Brother Michael is clever and starts out meddling in politics, causing some powerful ones to fight to the death and all
+
+- Instead of killing the Abbot, Brother Michael /converts him/ - and doubtless several others - into seeing the light of the lord (aside: My Vampire is canonically catholic, so this might explain why he was one of those who managed to survive)
+
+- Ultimately, as Michael and Abbot's designs on exterminating the vampire species come to the fore (first in the guise of "why not just kill a bunch of the younglings, more food for us, ah ha ha", or something), the Survivors band together, kill Michael and Abbot, and restore the balance of power: but as a result of all the terrible things they had to go through, they still are not terribly fond of all the religious iconography.
+
+Another possibility:
+
+- Vampire duplication (discussed at length in another sub-thread of the crazy branching tree this post has become), /actually does make you a full copy of yourself when you were turned/. Brother Michael is the first one to realise the implications of this, and makes an army of THOUSANDS of doubles of himself. No matter how much of an elder you are, you can't beat a thousand Brother Michaels who know all your weaknesses.
+
+- As a result of this, making duplicates of yourself has become /extremely/ taboo and will result in death if you're found out
+
+- Major drawback: making duplicates of yourself comes in /so handy/ that it's probably actually too powerful a power to put in even if there's a taboo about it.
+
+- Extremely minor drawback: Body doubles being taboo will require an infinitesimal amount of retconning
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1495179561.0
+:END:
+
+*************** #+begin_quote
+  Brother Michael is clever and starts out meddling in politics, causing some powerful ones to fight to the death and all
+#+end_quote
+
+Well, of course. He also does the whole guerrilla warfare thing - whereby a small, well-coordinated force completely decimates a larger force by simply continually hitting where the larger force is weak, grabbing a quick victory, and vanishing before it can be made to pay for that victory. He's probably killed off dozens of vampires before anyone can figure out who it is that's doing all the vampire-killing in the first place.
+
+#+begin_quote
+  Instead of killing the Abbot, Brother Michael /converts him/ - and doubtless several others
+#+end_quote
+
+Okay, this is a really good idea. (Though I'm thinking Brother Michael and his group are more the Spanish Inquisition type than anything else, and they probably watch their own group extremely closely for signs of 'heresy').
+
+--------------
+
+#+begin_quote
+  Vampire duplication (discussed at length in another sub-thread of the crazy branching tree this post has become), /actually does make you a full copy of yourself when you were turned./
+#+end_quote
+
+...okay, this also works. It works especially well for Brother Micheal, because he (when he was turned) was just a few quick words away from deciding to kill all vampires. And, being a young vampire, he doesn't suffer from fish-out-of-temporal-water syndrome. (An ancient vampire who tries this now ends up with a duplicate who still thinks of a 'hard drive' as a long journey in a carriage and quite possibly hasn't even heard of America).
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1495185075.0
+:END:
+
+**************** I'm liking the Brother Michael type of arc quite a bit. I'll let myself ruminate on it for a while.
+
+--------------
+
+Yeah, having Brother Michael do a /Sorcerer's Apprentice/ sounds great in theory, but as another commenter pointed out, it's so easy to munchkin that if we allow vampires access to this power, why is the world not populated by clones, who are continually fracturing in their allegiances and making their own clone armies?
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1495188860.0
+:END:
+
+
+*********** #+begin_quote
+  The Old One would be able to turn into a bat and travel quickly that way at the very minimum, so that's a possibility. The Old One being motivated to go on a journey and commit genocide is the tricky part, though - like, what would a personality have to be like to want to do that?
+#+end_quote
+
+Searching for something maybe? Unless you need it to be specifically relevant to the plot, I'm not sure how much work needs to go into exploring the motives of someone who lived 400 years ago and probably died without explaining himself to anyone.
+
+#+begin_quote
+  A vampire can only create a child every few years/decades/centuries (not decided), and it's a process that has a high failure rate (20-50%, probably). It's quite involved: the vampire has to drain the human of blood, cut open the chest cavity, find the right artery in the heart, vomit stinky goo into the artery, put it all back together as best they can, and apply pressure to the body (bury it / wrap it in cloth), wait a few hours/days, and then all done.
+#+end_quote
+
+Hmm...
+
+So assume vampires can create offspring one cycle after birth. If a vampire makes children as often as possible, the population of vampires will double every "generation" (every time vampires become eligible to make new children).
+
+If you plug in 50 years for that, you get the population of vampires (before deaths from Slayers or failure to birth or simply not trying to have a kid) being 256 times whatever it was at the time of the catastrophy. That gives you (assuming 1,000 surviving vampires in 1600) about a quarter million vampires today, or one vampire for every 30,000 people. That's reasonable, but probably at the high end (particularly if you want to have Mages or Fae or Werewolves).
+
+Working backwards from the one-in-a-million figure, we get 6,000 living vampires today. That's between two and three doublings from the 1,000 in 1600 figure, implying that vampires can create a child somewhere between every 100 years (with a relatively high loss rate) or 150 years (with a relatively low one).
+
+It's worth noting that the decisive factor here is to a very large degree early survival. You can support even very high "birth" rates if vampires die within their first few nights most of the time. If you can make a new vampire every 25 years, but 75% of them die before they make a new one, that's pretty close to making a new vampire every 100 years.
+
+#+begin_quote
+  It's about a pint every 2 or 3 days. They absorb the blood through their respiratory system as a) it's a far quicker route to the heart than the digestive system is; and b) their digestive system is co-opted for vampire reproduction.
+#+end_quote
+
+That's about the general blood donation level (I assume intentionally). A human can give that every eight weeks (per [[https://www.wikiwand.com/en/Blood_donation][Wikipedia]], though that's a law rather than a biological constraint), which means you'd need around 22 people to support a single vampire. That's reasonable given the number of vampires you're postulating, though it does mean vampires need some means of hiding their feeding. That's a /lot/ of blood loss victims (I think, I'm not going so far as to look up crime stats). Fortunately, there are a bunch of ways to do that. You could use mind magic to stop people from reporting crimes, control the police to stop the government from caring, or just rob blood banks and not worry about attacking people at all.
+
+#+begin_quote
+  You can grow a whole vampire body double from a piece of their heart - and this is foolproof and takes about a month. I'm currently trying to work out whether it's better to have the body double somehow have a snapshot of the original vampire's memories at the point of turning (or the point of the heart sample being taken), or whether it's better for the body double to have a brain that didn't develop properly and thus a helpless "baby" level of cognition and activity. If people grow body doubles deliberately, it might be good to use the "keep memories (somehow)" one, because you could end up with a good chunk of the vampire population being made of doubles. Big Problem: I originally conceived of the double as being as powerful as the vampire they budded off of, but we could just as easily have them be as powerful as a neonate.
+#+end_quote
+
+This just seems either way better (if the copy has my memories) or way worse (if the copy is an infant) than creating normal vampires to me. Also, this has to share the same cooldown as normal spawning or things go insane. If you can make a copy of you every month, and that copy is also a superpowered badass, someone is going to do that and shortly thereafter conquer the world.
+
+#+begin_quote
+  Nah, not going quite for those levels. I have a town of 3 million as being the main source of action and there are 3 vampires who live there. I'm taking a bit of liberty on the 1:1,000,000 number though as I conceive that there are vampires who live alone in smaller towns (e.g. population of 40,000) - but I'm not particularly married to any of that. There's only one vampire (later two as he creates a childe) in the town that has any level of importance to the plot. It's not a "monster of the week" sort of thing - it's more long-form, Slayer and Mage posture against Vampire and Ghoul with an ensemble cast. It's more of a supernatural romance type thing.
+#+end_quote
+
+That's a whole lot easier to do with those numbers. It does raise some issues (for example, how is there any kind of supernatural society if the supernatural population of Chicago can all fit in a highschool classroom together), but it avoids the problems you'd have in something like /Buffy/ where one or more vampires is expected to be offed every episode.
+:PROPERTIES:
+:Author: N0_B1g_De4l
+:Score: 1
+:DateUnix: 1495160206.0
+:END:
+
+************ #+begin_quote
+  Searching for something maybe? Unless you need it to be specifically relevant to the plot, I'm not sure how much work needs to go into exploring the motives of someone who lived 400 years ago and probably died without explaining himself to anyone.
+#+end_quote
+
+It's the sort of thing that might come up in the society: for example, if he was getting revenge for a dead ex-lover, vampires might start hiding their social relationships from public eye. If he was looking for a magical artefact, the vampires might have made a pact to destroy all artefacts as soon as they are discovered. It's helpful to come up with a vague idea, you know?
+
+#+begin_quote
+  If you plug in 50 years for that, you get the population of vampires (before deaths from Slayers or failure to birth or simply not trying to have a kid) being 256 times whatever it was at the time of the catastrophy. That gives you (assuming 1,000 surviving vampires in 1600) about a quarter million vampires today, or one vampire for every 30,000 people. That's reasonable, but probably at the high end (particularly if you want to have Mages or Fae or Werewolves).
+#+end_quote
+
+Yeah, we've got mages and werewolves and all sorts of other wonderful critters. Werewolves are probably at the 1 in 50,000 benchmark in terms of apparent population density (and that's just people who are /currently/ werewolves, not including people who are yet-to-be-so...), though Our City has a special reason for werewolves to congregate there. (Essentially, think of werewolves as analogous to monks: there's a [[https://en.wikipedia.org/wiki/New_Norcia,_Western_Australia][monastery]] that many werewolves live in, and it may be the only one of its kind in the country or even region).
+
+But werewolves are almost entirely benevolent: very loving, supportive, nurturing society. Not proper pacifists but pacifist-adjacent at least. Two main werewolf characters are a lawyer who specialises in the supernatural (she's actually an ex-werewolf, but I don't want to go into that), and a veterinarian that has not had much character development - he was kind of created to be the OTP of another character so he may not even appear.
+
+But I digress!
+
+#+begin_quote
+  Working backwards from the one-in-a-million figure, we get 6,000 living vampires today. That's between two and three doublings from the 1,000 in 1600 figure, implying that vampires can create a child somewhere between every 100 years (with a relatively high loss rate) or 150 years (with a relatively low one).
+#+end_quote
+
+I think we're probably looking at 25-50 years as the time between births with a lot of "promiscuous" vampires, since my main vampire is 1500 years old and hasn't even /considered/ making a childe. So I'd imagine there'd be a lot of variance in terms of individuals. Or that it's very common for a ~50 years dead vampire to go through a "mid life crisis" as people around them start dying, and then create a childe so they'll have someone with them always, or similar. Maybe a subfaction of vampires who are like the quiverful movement and believe that having a lot of children is good.
+
+#+begin_quote
+  It's worth noting that the decisive factor here is to a very large degree early survival. You can support even very high "birth" rates if vampires die within their first few nights most of the time. If you can make a new vampire every 25 years, but 75% of them die before they make a new one, that's pretty close to making a new vampire every 100 years.
+#+end_quote
+
+Baby vampires are actually pretty "safe" in that they haven't developed a lot of vampire weaknesses yet: they can go out in the sun with complete impunity to begin with, though once they've rounded out their first year sun exposure becomes almost certain death and they're barely able to stay awake when the sun is up. I guess you could call it vampire puberty.
+
+#+begin_quote
+
+  #+begin_quote
+    It's about a pint every 2 or 3 days.
+  #+end_quote
+
+  That's about the general blood donation level (I assume intentionally).
+#+end_quote
+
+Yep.
+
+#+begin_quote
+  It does mean vampires need some means of hiding their feeding. That's a /lot/ of blood loss victims (I think, I'm not going so far as to look up crime stats).
+#+end_quote
+
+Well, if you're only taking a pint every month or two, there's probably no reason to report it.
+
+#+begin_quote
+  Fortunately, there are a bunch of ways to do that. You could use mind magic to stop people from reporting crimes, control the police to stop the government from caring, or just rob blood banks and not worry about attacking people at all.
+#+end_quote
+
+They can't rob blood banks: vampires excrete waste products into the human blood stream as they feed, so they are dependent on the physical act of feeding (no /true blood/ for our guys!).
+
+That said, it does have an upside: these waste products are nootropic and highly addictive. If a vampire feeds from you, you don't need much sleep, your senses are sharper, your memory is better, etc. These effects last about a month and then the withdrawals start. So a vampire will have a "herd" of people who feed them regularly - we call them janissaries. These janissaries can be addicted to the feeding process itself (it's highly pleasurable), or can be students, CEOs, etc looking for an edge over the competition. This allows the vampire-human relationship to have an element of mutualism in it.
+
+It also means that these janissaries can be placed into positions of power like in the press, police force, etc - after all, they're /better/.
+
+#+begin_quote
+  This just seems either way better (if the copy has my memories) or way worse (if the copy is an infant) than creating normal vampires to me. Also, this has to share the same cooldown as normal spawning or things go insane. If you can make a copy of you every month, and that copy is also a superpowered badass, someone is going to do that and shortly thereafter conquer the world.
+#+end_quote
+
+Yeah, I think I'm erring on the side of "infant copy" or "memories when turned" side. The infant copy wouldn't be a proper infant, though - it's never going to "grow up", it just has a brain that never had its neural network properly trimmed to allow it to perform any useful actions. It's stuck forever unable to do so much as stand or eat. /Thank goodness/ it doesn't need to breathe.
+
+Also, you don't need to wait a month between copies. Open your chest, cut half of your heart out, get a scalpel and make a thousand little pieces. Separate them a bit, and you'll have a thousand clones (assuming you're in a ventilated place that isn't at absolute 0: the raw materials and energy to build the body come from the air).
+
+So, um, in light of that - we're probably going to have to stick with the infant brain. Even a naive human that has just been turned would be too powerful if the wrong person can make a thousand of them.
+
+#+begin_quote
+  how is there any kind of supernatural society if the supernatural population of Chicago can all fit in a highschool classroom together
+#+end_quote
+
+They send letters, and non-vampire supernaturals have access to a pocket dimension that is essentially a second planet where they can hang out. A centaur on earth is either on holiday or a weirdo who isn't staying on his own planet.
+
+Here's a little excerpt from my story about letters, if you care to read it. Completely devoid of any context, too!
+
+#+begin_quote
+  Erlis, the vampire Duke in charge of the town of Columbus, had been receiving letters from King William of New Holland since long before Red had returned to his family home. The letters had started out as the casual probes that one often received from strangers. Erlis had thought himself lucky that a king - especially one as aged as William - had taken an interest in him and his lands.
+
+  It was widely known that William and the Queen of Atlanta had been lovers long ago, and Erlis had assumed his had been part of a more generalised flurry of letters that William was sending to Dukes around the country before he paid her a visit. But when Erlis got a letter in May that announced the imminent arrival of a Reginald Dubois, he realised that William's attentions had been specific.
+
+  The letter stated in no uncertain terms that Reginald Dubois was a janissary of William's and was so not to be interfered with. This came on the heels of his scandalous defeat in war by Duchess Elodia of Genoa. Rumour had it that William had fought Elodia to spare the life of a human servant. Erlis wondered if this Reginald Dubois could be the human in question. Had William sent that servant away to Columbus and given Elodia a substitute to execute in his place? If such a subterfuge was discovered, the scandal would burn still hotter.
+
+  William wrote Erlis frequent letters, speaking mostly of alliances, of current events, and of scandals that weren't his own and occasionally including gifts that were slightly more extravagant than necessary. He would always include questions about his janissary.
+
+  At first, he tried to make the questions sound as though they were asked to evaluate Erlis's ability to run the town. But as dozens and dozens of letters were exchanged, they became impassioned and personal: questions about whether Red was happy, whether he had any interest in the local wildlife, and even a few thinly veiled inquiries into whether he was courting anybody.
+
+  If Erlis had a different sort of character, he would have used this knowledge to ingratiate himself with Elodia and her allies. If he played his cards right, he could use those bonds to gain control over a European town more prestigious than an industrial city in Ohio.
+
+  Erlis was an ambitious vampire, but his ambitions were grander than that.
+#+end_quote
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 1
+:DateUnix: 1495167305.0
+:END:
+
+
+***** What if the vampires can't be seen in mirrors? Makes sense to extend that invisibility to other image-recording technologies. Convincing people that vamps are real with exclusively circumstantial evidence is likely to be difficult in our youtube-mobile-upload-or-it-didn't-happen society.
+:PROPERTIES:
+:Author: beetle_eater
+:Score: 2
+:DateUnix: 1495376402.0
+:END:
+
+****** Thanks for the thought, but I think "not showing up in mirrors" is too hard to have a plausible handwavey explanation for, and it would also make it /very/ easy to prove if the vampire was in the room with you just point your phone at them. Also would help Slayers find targets.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 1
+:DateUnix: 1495495701.0
+:END:
+
+
+***** Hard to believe the vampires can systematically scrub the internet clean. But whenever I find myself building up an elaborate fictional infrastructure in order to prevent something some happening, I try to ask myself, does this actually need to be prevented? Usually stories are at their most compelling when they follow their premises to their logical conclusion, not rejigger the premises until they lead to the desired conclusion.
+
+Are you sure it isn't perfectly acceptable to have a subculture on the internet that's aware of the vampires' existence? They can't do outreach effectively, because the moment they do anything in the "real world" they get killed. The media reports on it in the "Arts & Culture" section, how quaint, a modern revival of vampire myths.
+
+The heroes see a vampire, but before going to the cops, make a quick google search to confirm they aren't crazy. The first thing they read is: don't go to the police, that's how the vampires find you. Also, start running, because there are vampires at google monitoring the relevant search terms. The vampire slayers don't find the protagonists, the protagonists find them.
+
+Might be an interesting dynamic if instead of a faraway vampire-hunting team, they're learning the ropes from a vampire message board on the internet, though I'm not sure that's the story you want to tell.
+
+An interesting idea, though which would probably not work well in the context of an actual story: As the masquerade loosens, the vampires impose a new rule: to ensure everyone's contributing to the communal need to maintain secrecy, the only "legitimate" prey are humans aware of the masquerade. This incentivizes vampires to hunt them down as effectively as possible, while in turn, limiting possibility for new exposure.
+:PROPERTIES:
+:Author: eshifen
+:Score: 1
+:DateUnix: 1495091462.0
+:END:
+
+****** Hmmm, you make some really compelling points - I especially like the idea of there being an actual vampire subculture on the Internet. Vampires and their patsys would be spreading misinformation by the bucketload, so it wouldn't give Our Heroes the "instant win" button I'd be worried about (e.g. our mythology has vampires weak to gold rather than silver, but vampires propagate the silver myth even to the point of young vampires not being aware that gold burns them, and being too scared of descriptions of silver burns to attempt to test it, though they do eventually either figure it out or have a kindly mentor tell them).
+
+The big issue is Our Heroes have evidence - but I suppose anyone that presents that evidence gets killed, and if they do it on Chans, dark web, etc, the vampires have enough influence to shut some of it down and discredit the stuff that survives by alleging it's all a slick photoshop job.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 1
+:DateUnix: 1495099311.0
+:END:
+
+******* #+begin_quote
+  The big issue is Our Heroes have evidence
+#+end_quote
+
+[[/ohcomeon][]] "You call this /evidence?/ These pictures are clearly photoshopped - I don't know who you had doing the special effects on this video, they're really very good, but that's all they are is /special effects/. These old photographs purporting to show the same person cropping up through history are clearly different people who merely look similar - I have a cousin who looks /exactly/ like his father at that age, it means /nothing/ - and this discarded empty blood bag just means he's a creepy guy who steals medical supplies, not a /vampire!/ I mean, honestly, how would you /ever/ reach that conclusion!"
+
+[[/sp][]]
+
+[[/bobsbirritated][]] "Seriously. Everyone knows that vampires don't exist."
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1495108072.0
+:END:
+
+******** Yeah, I think evidence can be silenced quite a lot. But once you capture a vampire - and given that staking immobilises without killing, that's going to happen sooner or later - all of a sudden you have VERY compelling evidence provided you can get enough scientists to see the vampire in person.
+
+The fact that in our system you can grow copies of a vampire from small pieces of their hearts (though maybe the Slayers haven't worked this out yet: vampires themselves have only known about it a few centuries) makes it even easier to provide physical proof. Grow a few dozen vampires and have a "sun show" for a series of respectable scientists with media connections. Neil Degrasse Tyson, Bill Nye, Richard Dawkins, even magicians like James Randi, Penn Jillette or Banacek - all viable targets.
+
+Maybe if we want to go lofty world-spanning stuff, that's what Our Heroes would become involved in - transporting vampire body doubles around the place to be viewed by whichever respectable scientists will listen, swearing them to secrecy, all to bring out a sudden lifting of the veil and all-out war.
+
+I'd imagine the vampires would be expecting something like this to happen soon. There's probably a bunch of them conspiring how to get the jump on Slayers when it comes out and come clean with humanity.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1495108613.0
+:END:
+
+********* [[/bobsbshocked][]] "A dead body? You killed this poor guy and rammed a wooden stake through his heart and he's /dead/ and -"
+
+[[/sp][]]
+
+[[/sbfear][]] "Um... you know what? Why don't you just sit here... quietly... far away from any sharp objects... just relax... and wait for the nice men in white coats... I've... just got to call them up quickly..."
+
+[[/sp][]]
+
+(Of course, at this point it's possible to remove the stake and have the vampire abruptly recover, but that's a good recipe for having all witnesses very quickly killed, so it's probably a bad idea...)
+
+--------------
+
+Of course, a forward-thinking vampire has planned for a show to be given to various respectable scientists with media connections. A /really/ forward-thinking vampire has made sure that a few of his people /are/ respectable scientists with media connections, so he knows at once if there's a leak. /Especially/ a respectable scientist who's put out a prize for positive paranormality proof. (A /paranoid/ vampire would also control the major media companies). So anyone making the attempt would immediately come to the attention of precisely those vampires who are /watching/ for the attempt...
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1495114028.0
+:END:
+
+********** #+begin_quote
+  at this point it's possible to remove the stake and have the vampire abruptly recover, but that's a good recipe for having all witnesses very quickly killed, so it's probably a bad idea...
+#+end_quote
+
+Nah, big tough cage. They're not going anywhere. However, they could just continue to play dead - they're pretty good at that since they don't breathe, after all. But putting them in an MRI would show the scientist something funky was going down.
+
+#+begin_quote
+  A really forward-thinking vampire has made sure that a few of his people are respectable scientists with media connections, so he knows at once if there's a leak.
+#+end_quote
+
+Oh right. And Neil DeGrasse Tyson is an astronomer, so nobody's going to notice if he's only ever out at nighttime....
+
+#+begin_quote
+  A paranoid vampire would also control the major media companies
+#+end_quote
+
+No doubt the vampires have control over the media. It wouldn't take much.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1495149670.0
+:END:
+
+*********** (a) if your cage has a single hole in it small enough for a bat, you're dead; (b) if your cage can be made to have a single hole in it the size of a bat by means of vampire strength, you're dead; and (c) you would have to take the vampire out of the cage to put him through the MRI machine, at which point you're dead. (I'm assuming a staked vampire shows up in a MRI as a rather strangely mutilated corpse).
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1495162638.0
+:END:
+
+************ Haha, I always forget about the bat thing even though it's a perfect deus ex machina for all situations.
+
+I'm not sure if a staked vampire shows up in an MRI as a mutilated corpse: I suppose it would, but it would be /weird/. Blood through the lungs, the alveoli look different, the digestive system seems to be full of putrified... gunk, like they had some horrific disease. Like, I can't imagine how vampire bodies doing what we've established that they do wouldn't show up in a high enough resolution scan, y'know? It might be more likely to have a doctor think there's an unidentified disease than supernatural forces at work, though.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1495165721.0
+:END:
+
+************* Well, unless the doctor's already in on the secret, the vampire looks just like a corpse at first. Then he sees the MRI, and it's just /weird/, as you point out...
+
+...but unless he's already halfway to believing the story already, he's going to be looking for cause-of-death and all the weirdness is more easily explained as some strange mutilation, side-effects of some poison he's never seen, or (as you point out) strange disease, than as being a monster out of mythology. (Right until the 'corpse' gets up and rips his head off, which will happen as soon as he pulls the stake out and puts it in a little evidence bag for the police to take a look at).
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1495166773.0
+:END:
+
+************** Yeah, you'd need to demolish a heckload of priors to convince a doctor... and vampires have their ways of manipulating things...
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1495173693.0
+:END:
+
+
+******* One alternative is to give the heroes some reason not to break the Masquerade either. In Stross's Laundry Files breaking the Masquerade means giving every single person with a computer the ability to call forth Lovecraftian horrors from beyond. Making that not happen is a pretty powerful incentive to keep up the Masquerade, even if you can break it.
+:PROPERTIES:
+:Author: N0_B1g_De4l
+:Score: 1
+:DateUnix: 1495126484.0
+:END:
+
+
+*** #+begin_quote
+  Our Hero takes it to her police boss, who says, "I've noticed this sort of stuff too, but I've also noticed that whenever anyone notices this stuff, they wind up brain dead after a convenient car accident, so I've just come to accept we're not meant to know about it"
+#+end_quote
+
+How about Our Hero goes to her boss... and he turns out to be the only Slayer in the city? (Of course she didn't know about it, he keeps it a /secret/)
+
+Or she goes to her boss... and he nods, smiles, and quietly talks her into an appointment with the therapist to deal with these paranoid delusions. And then the therapist is a Slayer. Or, perhaps, his /receptionist/ is a Slayer, looking out for anyone who's seen enough to put themselves in danger.
+
+In short, to have a nearby lone Slayer, who knows just enough to pass on a few warnings and keeps himself in a position where he's likely to meet anyone else who runs into any evidence of vampires. (He doesn't do any Slay/ing/ himself - his job as gatekeeper and warner-away is too important to risk such exposure).
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1495097363.0
+:END:
+
+**** Hmm, I like the idea of a "local" Slayer network - but I worry about things being too convenient. Like, if her boss happens to be the only Slayer - that's a problem.
+
+The boss being part of the general supernatural network is better. I can conceive of Boss being planted by anti-vampire forces to funnel people who discover vampires "through the system" - and either gives them some sort of mind-wipe (to keep them safe), or recruits them. Call him a Gatekeeper.
+
+It's a good one to marinate on - the problem is, if the anti-vampire conspiracy is too large, then we're in trouble - why haven't they used their reach to force the vampires out of the coffin, as humanity has clear advantages in Total War.
+
+That said, perhaps Our City is one of the few places where the anti-vampire resistance is able to grow large enough to be a threat: the local Vampire King has become quite sympathetic to the concept of humans as moral subjects and might have higher thresholds of woke-ness before he kills them, and that might make Our City one of the few places where The Story could be told.
+
+HOWEVER, that lone Slayer - where did /they/ come from? Do we ultimately have something that has been passed down through the generations, and this "Gatekeeper" (or the Gatekeeper that trained him...) was sent to Our City from elsewhere?
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1495099000.0
+:END:
+
+***** There's a roving Gatekeeper that travels from city to city, finding and training stationary Gatekeepers and then keeping contact with them over encrypted emails and dark-net resources. He could well be halfway across the country now, trying to recruit a Gatekeeper someplace else.
+
+An important part of being a Gatekeeper is deliberately pretending you don't know about the supernatural, so as not to attract their attention.
+
+This travelling Gatekeeper can come from any Slayer group, anywhere.
+
+(There's probably more than one roving Gatekeeper. They don't keep in contact with or know anything about each other, so they can't be forced to betray each other, but every now and then they might run into each other.)
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1495099443.0
+:END:
+
+****** Hmm. It's hard to decide whether the Gatekeeper idea or the "Slayers communicate via the regular internet with LOTS and LOTS of noise" idea is better.
+
+Gatekeeper implies a more robust masquerade which is handy, but regular internet requires vampires to have less angelic powers and Slayers to be far less organised.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1495099864.0
+:END:
+
+******* [[/twiponder][]] Why does the Gatekeeper prevent Slayers from communicating noisily over the internet? They're not exactly mutually exclusive.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1495108145.0
+:END:
+
+******** Ohhh duhhh. Of course.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1495108308.0
+:END:

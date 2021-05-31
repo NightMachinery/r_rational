@@ -1,0 +1,406 @@
+#+TITLE: [D] Request: Important Laws of Physics and What Happens When You Break Them
+
+* [D] Request: Important Laws of Physics and What Happens When You Break Them
+:PROPERTIES:
+:Author: TimTravel
+:Score: 14
+:DateUnix: 1414893677.0
+:END:
+I don't know physics as well as a lot of the other people here so I don't fully understand the consequences of changing the rules. Anything nonobvious is appreciated but I'm particularly interested in unexpected consequences of the following rules often broken by fiction:
+
+1. Conservation of Mass / Conservation of Energy
+
+2. Conservation of Momentum
+
+3. Privileged Reference Frames
+
+4. Locality
+
+5. The existence of differential equations describing the laws of physics
+
+6. High Kolmogorov Complexity Laws of Physics
+
+7. Infinite Speed of Light
+
+8. Discrete vs Continuous Matter / Time / Space
+
+Links to pre-existing explanations already available elsewhere are sufficient.
+
+
+** Look up Noether's Theorem, which shows why conservation laws emerge in nature.
+:PROPERTIES:
+:Author: recursiveAI
+:Score: 5
+:DateUnix: 1414897256.0
+:END:
+
+*** [[http://en.wikipedia.org/wiki/Noether%27s_theorem][Wikipedia]] is a start but it seems a little technical. I understood the very high level explanation, none of the technical stuff, and very little of the implications.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 2
+:DateUnix: 1414915088.0
+:END:
+
+**** ***** 
+      :PROPERTIES:
+      :CUSTOM_ID: section
+      :END:
+****** 
+       :PROPERTIES:
+       :CUSTOM_ID: section-1
+       :END:
+**** 
+     :PROPERTIES:
+     :CUSTOM_ID: section-2
+     :END:
+[[https://en.wikipedia.org/wiki/Noether%27s%20theorem][*Noether's theorem*]]: [[#sfw][]]
+
+--------------
+
+#+begin_quote
+  *Noether's (first) theorem* states that any [[https://en.wikipedia.org/wiki/Differentiable_function][differentiable]] [[https://en.wikipedia.org/wiki/Symmetry_in_physics][symmetry]] of the [[https://en.wikipedia.org/wiki/Action_(physics)][action]] of a physical system has a corresponding [[https://en.wikipedia.org/wiki/Conservation_law_(physics)][conservation law]]. The theorem was proved by German mathematician [[https://en.wikipedia.org/wiki/Emmy_Noether][Emmy Noether]] in 1915 and published in 1918. The action of a physical system is the [[https://en.wikipedia.org/wiki/Time_integral][integral over time]] of a [[https://en.wikipedia.org/wiki/Lagrangian][Lagrangian]] function (which may or may not be an [[https://en.wikipedia.org/wiki/Integral_over_space][integral over space]] of a [[https://en.wikipedia.org/wiki/Lagrangian#Lagrangians_and_Lagrangian_densities_in_field_theory][Lagrangian density function]]), from which the system's behavior can be determined by the [[https://en.wikipedia.org/wiki/Principle_of_least_action][principle of least action]].
+
+  Noether's theorem has become a fundamental tool of modern [[https://en.wikipedia.org/wiki/Theoretical_physics][theoretical physics]] and the [[https://en.wikipedia.org/wiki/Calculus_of_variations][calculus of variations]]. A generalization of the seminal formulations on [[https://en.wikipedia.org/wiki/Constants_of_motion][constants of motion]] in [[https://en.wikipedia.org/wiki/Lagrangian_mechanics][Lagrangian]] and [[https://en.wikipedia.org/wiki/Hamiltonian_mechanics][Hamiltonian mechanics]] (developed in 1788 and 1833, respectively), it does not apply to systems that cannot be modeled with a Lagrangian alone (e.g. systems with a [[https://en.wikipedia.org/wiki/Lagrangian_mechanics#Dissipation_function][Rayleigh dissipation function]]). In particular, [[https://en.wikipedia.org/wiki/Dissipative][dissipative]] systems with [[https://en.wikipedia.org/wiki/Continuous_symmetry][continuous symmetries]] need not have a corresponding conservation law.
+#+end_quote
+
+--------------
+
+^{Interesting:} [[https://en.wikipedia.org/wiki/Emmy_Noether][^{Emmy} ^{Noether}]] ^{|} [[https://en.wikipedia.org/wiki/Noether%27s_theorem_on_rationality_for_surfaces][^{Noether's} ^{theorem} ^{on} ^{rationality} ^{for} ^{surfaces}]]
+
+^{Parent} ^{commenter} ^{can} [[/message/compose?to=autowikibot&subject=AutoWikibot%20NSFW%20toggle&message=%2Btoggle-nsfw+clqniar][^{toggle} ^{NSFW}]] ^{or[[#or][]]} [[/message/compose?to=autowikibot&subject=AutoWikibot%20Deletion&message=%2Bdelete+clqniar][^{delete}]]^{.} ^{Will} ^{also} ^{delete} ^{on} ^{comment} ^{score} ^{of} ^{-1} ^{or} ^{less.} ^{|} [[http://www.np.reddit.com/r/autowikibot/wiki/index][^{FAQs}]] ^{|} [[http://www.np.reddit.com/r/autowikibot/comments/1x013o/for_moderators_switches_commands_and_css/][^{Mods}]] ^{|} [[http://www.np.reddit.com/r/autowikibot/comments/1ux484/ask_wikibot/][^{Magic} ^{Words}]]
+:PROPERTIES:
+:Author: autowikibot
+:Score: 2
+:DateUnix: 1414915101.0
+:END:
+
+
+**** Very basically, conservation laws happen because of symmetries.
+
+Conservation of momentum is due to the fact that the physical laws of a system are independent of location for example. So if youre in a system without conservation of momentum this necessarily means that the physical laws vary with respect to space. So it might be easier to accelerate in certain places or directions for example, depending on how exactly momentum is not conserved.
+
+[EDIT] I should also mention that no privelidged reference frames is strongly related to these symmetries. A reference frame is simply the coordinates that our laws are written in, and the symmetries specify limits on the types of reference frames that are equivalent to each other. I.e. in special relativity, only non-accelerating (relative to each other) frames are OK. In general rel, accelerating frames /are/ OK. Breaking symmetry limits the types of reference frames which are OK, if you break rotational symmetry, all frames must align with the great celestial pole or something like that.
+:PROPERTIES:
+:Author: duffmancd
+:Score: 2
+:DateUnix: 1414931199.0
+:END:
+
+***** It would help if I understood precisely what it means for the laws of physics to vary based on location or not. If an object is in one location but not another, that location would behave differently, but surely that doesn't count as the laws of physics being different in those two locations. If there's a nonuniform curvature of space in absence of matter would that violate conservation of momentum?
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1414949636.0
+:END:
+
+****** #+begin_quote
+  If there's a nonuniform curvature of space in absence of matter would that violate conservation of momentum?
+#+end_quote
+
+It would certainly lead to the violation of /classical/ momentum.
+
+A simpler example: consider some volume of space with a non-uniform electric potential. For example between to charged plates in [[http://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Capacitor_schematic_with_dielectric.svg/931px-Capacitor_schematic_with_dielectric.svg.png][a capacitor]]. Now you put there a charged particle. Because of the [[https://sites.google.com/site/demijeremy/ElectricPotential-inducecurrent-tota.jpg][non-uniformity of the potential]], it will start to move, seemingly on its own. So it seems conservation of momentum is violated. This is not surprising because the electric potential broke translational symmetry. *But* the /laws/ that govern this potential and its interaction with matter /are/ the same everywhere. So, according to Noether's Theorem, there must be a conserved quantity somewhere. And indeed, it turns out an electric field [[http://physics.stackexchange.com/questions/7218/how-can-there-be-net-linear-momentum-in-a-static-electromagnetic-field-not-prop/7228#7228][carries momentum]], so that the /total momentum/ (charged particle + electric field) is conserved.
+
+I think one can also define quantities in General Relativity (that reduce to the usual momentum in sufficiently flat space) that are conserved in even highly curved space. Though [[http://math.ucr.edu/home/baez/physics/Relativity/GR/energy_gr.html][it's difficult]] because General Relativity is really complicated.
+:PROPERTIES:
+:Author: lehyde
+:Score: 3
+:DateUnix: 1414957290.0
+:END:
+
+
+****** #+begin_quote
+  If there's a nonuniform curvature of space in absence of matter would that violate conservation of momentum?
+#+end_quote
+
+It would not in itself be a violation, but it can cause a violation. It would also allow the breaking of conservation of energy and conservation of angular momentum. Just to be extremely blunt, all three of those classical conservation laws don't hold in general relativity.
+
+Instead, they are replaced with the assertion that the divergence of the Stress-Energy Tensor is zero, along with the assertion that the Stress--energy--momentum pseudotensor, in the [[http://en.wikipedia.org/wiki/Stress%E2%80%93energy%E2%80%93momentum_pseudotensor#Landau.E2.80.93Lifshitz_pseudotensor][words of this article]], "allows the total of matter plus the gravitating energy--momentum to form a conserved current within the framework of general relativity".
+
+This means you can assign an (negative) energy and momentum to the gravitational field. Note that gravitational waves and local wells formed by objects are not fields themselves, rather they are depressions in the gravitational field that permeates the entire universe. When you do this, a loss of ordinary energy translates to a loss of negative energy (an increase in positive energy) from the gravitational field, and vice versa. This is mostly a semantic description. [[http://www.preposterousuniverse.com/blog/2010/02/22/energy-is-not-conserved/][Some physicists]] feel the whole idea of these conservation laws should be abandoned, as we're no longer talking about energy by the ordinary definition.
+
+The typical example that's used is the phenomena of redshift. As photons from a source have moved to new locations of greater inflated space time, their wavelengths have increased, and with that, their energy decreases. Where did this energy go? For all practical purposes, it disappeared. Some physicists argue that it became gravitational energy. Whether this is a useful distinction to make is up for debate. This is explored in more detail [[http://math.ucr.edu/home/baez/physics/Relativity/GR/energy_gr.html][here]]. If you want to ignore all that, you could just say [[http://upload.wikimedia.org/math/f/5/d/f5dfdbbc1337dfe4578e0d322bfd9b5c.png][this]], and not worry about translating mathematics to English.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1414956494.0
+:END:
+
+
+** 7 Infinite speed of light. This means that light cannot be a wave or a particle, it is a mathematical ray. So, none of electromagnetic theory works - no radio, relativity, QM, etc. Chemistry and electromagnetics may work, but they'd only be superficially similar, the equations would be different. Electrostatics and simple models of magnetism work without any changes.
+
+Infinite speed of light also means a privileged times reference. I.e. everyone anywhere moving at any speed can agree on whether two events happen at the same time or not (in theory). So Newtonian mechanics works, relativity doesn't.
+
+Basically, take the scientific discoveries up to Lord Kelvin-ish era and they might be explainable in a universe with a limitless speed of light. When you join electrics and magnetics with Maxwell's equations the speed of light pops out (because light is an electromagnetic wave). So anything built on this (and most physics since then is) cannot hold true.
+:PROPERTIES:
+:Author: duffmancd
+:Score: 3
+:DateUnix: 1414935496.0
+:END:
+
+*** #+begin_quote
+  Infinite speed of light also means a privileged times reference. I.e. everyone anywhere moving at any speed can agree on whether two events happen at the same time or not (in theory). So Newtonian mechanics works, relativity doesn't.
+#+end_quote
+
+If everyone agrees on the location, time, and relative time of events then how is that a privileged reference frame? I'm assuming that the light particles themselves don't have one because they only exist in the limit.
+
+"Conservation of momentum" and "no privileged reference frames" sound similar to me. Can you elaborate on the similarity/difference? Often you use your own location as the origin of the coordinate system. Is it just "if event A happens from Bob's perspective then it must also happen from Alice's perspective"? What precisely makes a reference frame privileged?
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1414939461.0
+:END:
+
+**** #+begin_quote
+  If everyone agrees on the location, time, and relative time of events then how is that a privileged reference frame? I'm assuming that the light particles themselves don't have one because they only exist in the limit.
+#+end_quote
+
+Unless I'm misunderstanding something, I think an infinite speed of light would directly result in there being a privileged reference frame because /there would only be one reference frame/. Relativity doesn't work because relativity literally doesn't exist. It would be a purely Newtonian universe.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1414946924.0
+:END:
+
+***** I disagree. Newtonian universes still have multiple inertial frames of reference. You have the frame where I'm currently stationary, the frame where the Earth's core is currently stationary, the frame where the Sun's core is currently stationary, etc.
+
+The difference is that the coordinate transform which turns one frame into another is very simple:
+
+x' = x + vt\\
+t' = t
+
+while in special relativity, the equivalent transformation is:
+
+x' = γ(x + vt)\\
+t' = γ(t + vx/c^{2})\\
+where γ = (1-v^{2}/c^{2})^{1/2}
+
+(And yes, taking the limit of the second transformation as c goes to infinity will give the first transformation. I checked.)
+
+You're definitely right that, in Newton's world, time passes at the same rate in all frames. No more twin paradox.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 2
+:DateUnix: 1415262780.0
+:END:
+
+****** For some reason, I thought that part of the Newtonian framework wasn't just an absolute time, but also an absolute space from which all velocities were measured. Then I realized that, by Newton's time, we already knew the Earth went around the Sun, so that would render several equations unusable. Compartmentalization at its best; thanks for the correction.
+
+On that note, bonus points for using the actual gamma symbol for the Lorentz factor. I usually just use y. :3
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1415316150.0
+:END:
+
+
+***** According to [[https://en.wikipedia.org/wiki/Preferred_frame][wikipedia]]
+
+#+begin_quote
+  In theoretical physics, a preferred or privileged frame is usually a special hypothetical frame of reference in which the laws of physics might appear to be identifiably different (simpler) from those in other frames.
+#+end_quote
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1414949118.0
+:END:
+
+****** Exactly.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1414950701.0
+:END:
+
+
+** Honestly, breaking any of them makes your universe not make sense. Unless you do it absurdly well, and I mean on the level of rewriting the laws of physics from the ground up and not caring whether the final result looks like, you will have to handwave something that is a consequence of the thing you changed. The laws of the physical world are so intertwined that changing anything would result in massive differences from our real world.
+
+Lets take gravity as an example, as it seems to be the least entangled physical constant that we have. If you change it even the slightest bit, you have no guarantee that planets form, or stars, or that stars still go supernova in the same way, or even that elements heavier than lithium can even form. Maybe if you changed it slightly enough not much would change, but then your story world probably wont be much different from the real world, and massive changes happen for even small bits that you change.
+
+If you want to do anything less trivial than changing gravity, then you most likely alter something deeply fundamental to how our world works. I have no idea how a privileged reference frame would even work in any sense, unless the fabric of the universe was a physical thing, which barely even makes sense. Changing anything about electromagnetism will kill everyone, although it might take a little while for it to happen. Adding a fourth dimension of space probably lets atoms have orbitals in that dimension as well, meaning everything instantly violently reacts with everything, destroying every planet that isnt a gas giant. infinite speed of light at the very least means light can no longer carry information, as c=hv and one of those terms would be an infinity. The constant c is used in so many different formulas that you would probably just stop having a functional universe right there.
+
+I could go on, but I think ive conveyed the point that at some level, you /have/ to hand wave it and say that the world works even with your inclusion, as you wont have a world to write a story in in the first place.
+:PROPERTIES:
+:Author: sicutumbo
+:Score: 3
+:DateUnix: 1414942428.0
+:END:
+
+*** #+begin_quote
+  Adding a fourth dimension of space probably lets atoms have orbitals in that dimension as well, meaning everything instantly violently reacts with everything
+#+end_quote
+
+Can you explain this? I'm trying, but I can't make the conclusion arise from the premise in my mind.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1414947116.0
+:END:
+
+**** Atoms bond the way they do because of how many dimensions we have. A sigma bond is essentially linear, even if the electron probability distribution is not. Then the first pi bond extends in one dimension of space, effectively making a 2d plane of electron cloud. Then the second pi bond extends into the third dimension in the same way as the first pi bond did. And it stops there, because we now lack any more dimensions for a bond to form without astronomical angle strain. If you have 4 dimensions that an electron cloud can occupy, then suddenly every atom above helium becomes a free radical, forming new bonds with anything near it, releasing astronomical amounts of energy.
+
+I mean, is suppose if you made some theory of chemistry in 4 dimensions that happens to be exactly like our 3 dimensional chemistry and use that from the start, I guess that works, but if you want a structure to exist in 4 dimensions, then you need new chemistry, and 3 dimensional chemistry if complex enough already
+
+(My description is somewhat simplified, but it basically conveys what is hapoening)
+:PROPERTIES:
+:Author: sicutumbo
+:Score: 5
+:DateUnix: 1414949086.0
+:END:
+
+***** I like to look at the equations of force. Take the gravitational force F=kmM/r^{2} . The r^{2} is basically because the surface of a volume scales with r^{2.} If we had 4 spacial dimensions it would be an r^{3.} (Of course there are exceptions like the curled up dimensions of string theory, or the screening that occurs for the strong force)
+:PROPERTIES:
+:Author: duffmancd
+:Score: 1
+:DateUnix: 1414981683.0
+:END:
+
+
+** Ooh, ooh, I have something slightly tangentially helpful to add!
+
+1: Conservation of mass and conservation of energy are already a little broken by E=mc^{2}, which says mass can be destroyed and energy can be created (or vice versa). There's a solid conversion ratio between the two. But all-in-all, the amount of ... stuff in the universe does stay the same, yes, once you look at energy and matter as two states of the same stuff.
+
+Why does this happen? Because of 2. E=mc^{2} is a softcore version of Einstein's more applicable spacetime momentum equation, which basically says that mass, energy, and 3d momentum are all shadows of one 4d vector. And since momentum -- yes, even 4d spacetime momentum -- is conserved through symmetry (as [[/u/duffmancd]] [[http://www.reddit.com/r/rational/comments/2l13p1/d_request_important_laws_of_physics_and_what/clqq5y5][explained]]) energy and mass appear to be conserved, also.
+
+So yeah, a violation of 1 is really also a violation of 2, which is highly related to 3.
+
+ETA: grammar
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1414945793.0
+:END:
+
+*** Actually, E=mc^{2} doesn't violate conservation of mass or energy, it unites them. When an object gains energy it actually gains mass. So a fully charged (closed cell) battery is heavier than a flat one, a compressed spring is heavier than a relaxed one and a hot ball bearing is heavier than a cold one. The mass in all these cases is negligible because c is so large, but it /is/ there.
+
+And so whenever you transfer energy from one thing to another you transfer mass too. It gets a bit more complicated once things start moving (energy/mass in which reference frame are we talking about) but the idea holds. As [[/u/seraphnb]] said we generally talk about conservation of P-vector.
+:PROPERTIES:
+:Author: duffmancd
+:Score: 1
+:DateUnix: 1414981236.0
+:END:
+
+**** Do you have a reference for that out of curiosity?
+:PROPERTIES:
+:Author: AmyWarlock
+:Score: 1
+:DateUnix: 1415006292.0
+:END:
+
+***** You should find it touched on in most descriptions of nuclear fusion and fission. Reference is made to E=mc2 to explain why so much energy can be generated. Yet no particles are destroyed. The total number of neutrons and protons remains unchanged, however the total mass of the nuclei (atoms) is slightly lower. This is because the nuclei have lower potential energy.
+
+We knew about the difference in masses before we knew about the structure of the nucleus (and the existence of neutrons). Conversion of hydrogen to helium (in a 4:1 ratio) as the Sun's energy source was originally hypothesized on this basis.
+
+I'm afraid my reference for that this month was audio :)
+
+[[http://downloads.bbc.co.uk/podcasts/radio4/iot/iot_20141030-1145a.mp3]]
+:PROPERTIES:
+:Author: sourcejedi
+:Score: 1
+:DateUnix: 1415056105.0
+:END:
+
+
+** [[http://www.reddit.com/r/whowouldwin/comments/2jc0p4/character_scramble_ii_sign_up_thread/clbkz9b?context=3][A long discussion on Time Travel and how almost everyone does it wrong, possibly including HPMOR.]]
+
+The short version: the simplest way of defining single-timeline time travel mechanics leads to the universe conspiring to prevent any nontrivial time travel events.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 4
+:DateUnix: 1414893754.0
+:END:
+
+
+** Greg Egan wrote a novel set in a universe where speed of light is unlimited. I haven't read it, but he explains how the universe works [[http://www.gregegan.net/ORTHOGONAL/ORTHOGONAL.html][here]].
+:PROPERTIES:
+:Author: Solonarv
+:Score: 2
+:DateUnix: 1414957676.0
+:END:
+
+
+** It's common for people to postulate breaking conservation of momentum to allow for reactionless drives. This results in breaking conservation of energy. Power = Energy / Time = Force * Distance / Time = Force * Velocity. If you could, for example, produce one newton of thrust with one watt of power, you don't create energy, so long as you're moving below one meter per second. If you move, say, two meters per second, then your kinetic energy is increasing at a rate of two watts, and you're only spending one. If you use a conventional generator to turn this energy back into power, you have a perpetual motion machine. The only way to make it work is to make it take about 300 megawatts per newton, which means you'd have to go faster than light to create energy. But you can get a drive that efficient just by using a flashlight and relying on the momentum from the light leaving, so it's completely pointless. And you've still destroyed energy.
+
+If it's too easy to violate conservation of energy, or worse, mass, you have to explain why no life has evolved to just do that instead of absorbing energy the way life does in real life.
+
+Discrete time and space means that the laws of physics won't be invariant under rotation. In extreme versions, you might not be able to make anything rotate. Try to make something spin in Minecraft and you'll see what I mean.
+
+Continuous matter could cause problems with immeasurable sets. For example, it's theoretically possible to cut one solid ball into five pieces and rearrange them into two solid balls the same size as the original. But if you don't start with them and your physics don't involve the axiom of choice they can't form later on, so it's not a huge issue.
+
+You didn't ask about it, and you might already know, but for the benefit of anyone who does not, having faster than light travel (not to be confused with infinite speed light) and no privileged reference frame allows for time travel. My favorite example of why is this: [[http://www.thebestforumever.com/community/threads/tachyon-pistol-duel-thought-experiment.47326/]]
+:PROPERTIES:
+:Author: DCarrier
+:Score: 2
+:DateUnix: 1417751232.0
+:END:
+
+
+** #+begin_quote
+  High Kolmogorov Complexity Laws of Physics
+#+end_quote
+
+I am struggling to imagine this.
+
+Math was built by humans to describe order and structure. We are able to conceptualize math because our brains evolved to identify order and structure and patterns, and draw conclusions from these identifications. The math we use, with our axioms etc, is an abstraction of this process.
+
+It's important to note here that the whole "unreasonable effectiveness of mathematics in the natural sciences" is absolute hooey. [[http://www.researchgate.net/profile/Derek_Abbott/publication/256838918_The_Reasonable_Ineffectiveness_of_Mathematics/links/00b7d523d5bd289428000000][There are lots of good arguments against the idea]], basically hinging on the above-alluded fact that math didn't evolve independently of the universe, and other universes -- or even other evolutionary paths within our same universe -- would lead to totally different mathematical axioms.
+
+If we were to try to use our mathematics, which we developed in this universe, to model the laws of another universe with alien laws of physics, then yeah, our models would probably have quite high Kolmogorov complexity. But if there were lifeforms that evolved in that other universe, with their own alien brains and models and mathematical axioms, then if they were to model the laws of their universe with their mathematics, they would certainly get formulas and equations with low Kolmogorov complexity (whether they define it the same way or not).
+
+*TLDR*: I think Kolmogorov complexity (and all other Occam's razor esque formalizations) the map, not the territory. There is no universe with high Kolmogorov complexity laws of physics.
+
+Someone tell me if I'm fundamentally misunderstanding something, but otherwise I can't imagine a violation of type 6.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1414946572.0
+:END:
+
+*** Kolmogorov Complexity can be measured by fixing a Turing machine and finding the minimum length for a tape which describes whatever it is you're measuring. Different Turing machines will give different measures, and you can also use anything that gives a Gödel encoding, such as combinatory logic or the [[http://homepages.cwi.nl/%7Etromp/cl/LC.pdf][binary lambda calculus]].
+
+I think an important point to note is that all our physical models tend to have high Kolmogrov complexity. Taking lambda calculus as our example (since it's probably the most natural), we need to consider the [[http://en.wikipedia.org/wiki/Church_encoding][Church encoding]] for different data types that occur in physics. Just starting with real numbers, the classical way is to use [[http://en.wikipedia.org/wiki/Dedekind_cut][Dedekind cuts]] of rational numbers. This would require a hierarchy of types, including ordered pairs, quotient types, natural numbers, and integers. After that, one has to encode the inductive equality and indexed sums to describe the algebras used in physics, such as lie groups. On top of that is the large hierarchy of topological terms just to get to Minkowski spaces or Riemann manifolds. And this is stuff I'm thinking of off the top of my head, not to mention all the algorithms/proofs one would have to make in order to actually compute with these datatypes.
+
+You could fix a different system to get a lower measure. For instance, let's say you took the length of programs written in [[http://en.wikipedia.org/wiki/J_(programming_language)][J]] as your measure of complexity. All the floating point numbers, array manipulations, and even elementary calculus is pre-built in, so it would get much smaller measures of complexity for physical laws. Ignoring this cheating, we can pick more basic languages to get fairer, more objective measures.
+
+Even if the "unreasonable effectiveness of mathematics in the natural sciences" was true, the physical laws would not necessarily have low Kolmogorov Complexity. Human brains are just good at handling certain high complexity tasks, and those tasks are widely applicable in certain sciences.
+
+Let's say you were making universes by altering a billion binary parameters. One universe was designed with the first 500 million being 0, and the last 500 million being 1. Another universe was generated with each parameter being randomly assigned. How many bits would it take to represent each universe? Assuming you designed some sort of compression scheme, you could easily make the first universe's representation really small. The second, however, cannot be compressed, since it's random, and that's basically the definition of randomness. Using this compression scheme as a measure of complexity, the first universe has a lower complexity than the second. The beings living inside each may be equally befuddled by the alien nature of eachother's universes, but given full descriptions of each, they would both agree that one is far more complex than the other.
+
+Another relevant concept is [[http://www.hutter1.net/ai/aixigentle.pdf][AIXI]] and [[http://en.wikipedia.org/wiki/Solomonoff's_theory_of_inductive_inference][Solomonoff induction]]. A short description of each is that you fix a (typically monotone) Turing machine, and generate every tape possible. For Solomonoff induction, you then have a problem, let's say it's physical data you need to describe. You look through all the tapes, starting from the shortest and counting in binary to get more, to see which one returns the data. You then continue looking for new tapes which are more accurate when you get new data. Assuming the data is being generated by something actually computable, you'll eventually hit a program that is equivalent to whatever is actually generating the data. If what's generating the data has a low complexity, than the tape generating the data will be short. AIXI uses this process to learn how to maximize some parameter, given some senses and a reward function. In a low complexity universe, the tape it hits on for maximum reward will be shorter than in a high-complexity universe. You could pick different machines to influence this, but assuming you pick the minimal universal machine, then the results would be unbiased.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1414959646.0
+:END:
+
+
+*** Since you can't imagine a violation, it occurs to me that one possible example of a universe with high Kolmogorov complexity laws of physics would be a universe that runs on the mind of some agent, who can intervene arbitrarily at will; in other words, a universe which exists at the whim of an omnipotent god that makes changes regularly.
+
+That adds a lot of complexity to the 'laws of physics', to the point where the term hardly applies. One might assume that the laws of physics could be mostly regular, barring specific interventions... but those interventions could be unlimited in scope, up to and including changing the laws. It's not, strictly speaking, impossible to calculate, but all the calculations would be based around divine intervention, which could only be calculated by considering the infinite information the god has available, factoring that into whatever the god's decision function winds up being, and outputting whatever arbitrary changes the god decides to make, whenever those changes occur. It would only be between those changes that you could simulate anything approaching physical laws.
+
+For an example of this in an actual story, reference [[http://www.talesofmu.com][Tales of MU]], in which the gods that run the universe regularly but unpredictably intervene to curtail observations, among other things. The end result from the perspective of inhabitants of such a world is that science doesn't work, since the rules are demonstrably inconsistent under scrutiny, and sometimes change for unknowable reasons.
+:PROPERTIES:
+:Author: Endovior
+:Score: 1
+:DateUnix: 1414997089.0
+:END:
+
+**** #+begin_quote
+  it occurs to me that one possible example of a universe with high Kolmogorov complexity laws of physics would be a universe that runs on the mind of some agent, who can intervene arbitrarily at will
+#+end_quote
+
+But then, aren't the "real" laws of physics the laws governing the "neurons" in that agent's brain? It may never be possible for humans to study those laws, but that doesn't mean they don't exist.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 1
+:DateUnix: 1415263750.0
+:END:
+
+***** This would be the difference between a naturalistic universe and a magical universe. In a naturalistic universe, you'd be right. In a magical universe, there would be defects of unsimplifiable, nonreductionistic complexity. Which would suck.
+:PROPERTIES:
+:Author: Newfur
+:Score: 1
+:DateUnix: 1415405562.0
+:END:
+
+
+***** Depends on whether or not the god-agent is self-modifying or not. It's probably unwise to casually modify the rules on which your own cognition runs, but a superintelligence given that power could probably devise a series of changes to optimize its thinking processes, or even a menu of changes it can implement at will to selectively optimize for different tasks.
+
+Even if that wasn't the case, though, the universe probably won't look naturalistic to the people inside it, so it's not good metaphysics to assume if you're trying to tell a rationalist story.
+:PROPERTIES:
+:Author: Endovior
+:Score: 1
+:DateUnix: 1415480750.0
+:END:

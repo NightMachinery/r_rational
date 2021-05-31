@@ -1,0 +1,1324 @@
+#+TITLE: [D] Friday Off-Topic Thread
+
+* [D] Friday Off-Topic Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 20
+:DateUnix: 1509116828.0
+:END:
+Welcome to the Friday Off-Topic Thread! Is there something that you want to talk about with [[/r/rational]], but which isn't rational fiction, or doesn't otherwise belong as a top-level post? This is the place to post it. The idea is that while reddit is a large place, with lots of special little niches, sometimes you just want to talk with a certain group of people about certain sorts of things that aren't related to why you're all here. It's totally understandable that you might want to talk about Japanese game shows with [[/r/rational]] instead of going over to [[/r/japanesegameshows]], but it's hopefully also understandable that this isn't really the place for that sort of thing.
+
+So do you want to talk about how your life has been going? Non-rational and/or non-fictional stuff you've been reading? The recent album from your favourite German pop singer? The politics of Southern India? The sexual preferences of the chairman of the Ukrainian soccer league? Different ways to plot meteorological data? The cost of living in Portugal? Corner cases for siteswap notation? All these things and more could possibly be found in the comments below!
+
+
+** Adult Swim is steaming every episode of Rick and Morty in reaction to all the illegal streams on YouTube:
+
+[[http://www.adultswim.com/videos/streams/rick-and-morty]]
+
+Regardless of the memes, it's legitimately a pretty awesome show.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 7
+:DateUnix: 1509181679.0
+:END:
+
+*** They're missing the point, [[https://i.imgur.com/r1b1nXY.png][in more ways than one.]]
+:PROPERTIES:
+:Author: NinjaStoleMyPass
+:Score: 5
+:DateUnix: 1509213554.0
+:END:
+
+**** At the end of the day there are just limits to what a legal product can provide. You're always going to have trouble with people abroad, people who like to hoard, people who want to own and so on.
+
+That doesn't necessarily mean that opening the door for more people /within/ a limited market is a bad idea.
+:PROPERTIES:
+:Author: Tsegen
+:Score: 4
+:DateUnix: 1509290712.0
+:END:
+
+
+** I recommend this [[http://www.lapsedhistorian.com/long-way-round-part-1/][read]].
+
+#+begin_quote
+  “Do you have a better idea?” replied Hendrickson, apologetically.
+
+  Poindexter didn't, and when the California Clipper took to the sky that afternoon he was sitting at its radio desk next to Hendrickson. With the late afternoon sun glinting off her metallic grey hull, the flying boat turned and headed towards Pearl Harbour.
+
+  Unbeknownst to everyone but the Japanese, somewhere out there in the Pacific, a Japanese battle fleet consisting of six carriers, two battleships and their supporting ships was doing exactly the same thing.
+#+end_quote
+
+Gripping.
+:PROPERTIES:
+:Author: blazinghand
+:Score: 6
+:DateUnix: 1509121554.0
+:END:
+
+*** For a shorter read there is [[https://en.wikipedia.org/wiki/Pacific_Clipper]]
+:PROPERTIES:
+:Author: Ilverin
+:Score: 2
+:DateUnix: 1509125090.0
+:END:
+
+**** For a longer read there is [[https://www.amazon.com/Long-Way-Home-Ed-Dover/dp/061521472X/]]
+:PROPERTIES:
+:Author: blazinghand
+:Score: 2
+:DateUnix: 1509130321.0
+:END:
+
+
+** Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Another week with scant code progress. I recently had decided that I was going to attempt to go to bed by 11 PM each night (as opposed to 1:30-2 AM) and I think I'm discovering that I used 9-11 to unwind and 11-1ish to actually get stuff done.  This is a bit frustrating, as I don't /like/ not making progress, but on the other hand I /am/ somewhat concerned about the long-term ramifications of only getting 5-6 hours of sleep a night.  It's an annoying balance to find.
+
+Maybe I should try something like two weeks at 11, two weeks when I'm tired.  It's not the best system, but on the other hand it's not like I'm getting oodles of sleep regardless due to having a one-year-old.  Maybe I should just power through and re-evaluate once I'm at a point that sleeping in on Saturdays is an option again.
+
+--------------
+
+There was /one/ bit of development, although I was only partially involved.  Thanks to the efforts of [[/u/gbear605]], XGEF can now be built and thus developed using VS2017 on macOS.  (It could already be ran using mono on both macOS and linux, but I had never attempted to /build/ on anything other than Windows).  Kudos to him!  
+
+--------------
+
+Regardless of code progress, there was /oodles/ of design discussion, much of which came as a result of the responses to [[https://www.reddit.com/r/rational/comments/77mobw/d_friday_offtopic_thread/don7arq][last week's topic of pokeball internal capture mechanics]], which actually went on a lot longer than just Friday.  The current solution I'm leaning towards is detailed in that thread, but TL;DR humans should have a small Psychic typing (~10%) that unlike most Psychic types which have it manifest in a separate organ, have it interspersed throughout the white matter of the brain.  Thus, most Psychic types incur a weak penalty to their power when captured and thus exposed to the brief distortion energy of the portal tech, but humans instead have that minor scrambling effect applied to the brain, which, well, isn't good.  
+
+It's a bit handwavey (what isn't when it comes to pokemon) but as a system it can at least be interacted with and have its boundaries poked, which is my primary concern for something as fundamental as pokeballs.
+
+I also brought up in that thread the differences in the scientific tradition of the world, basically that it would nearly of necessity be based more on mad science than science: inventors, not theorists.  A more recent era of stability might permit science to grow and flourish, but before then it's more important that one figure out how to stop the 1000 rampaging monsters around you rather than figuring out the intricacies of /why/ the tools you're using to do this work.
+
+--------------
+
+The topic of individual pokemon resource use came up; I'll just quote myself on that one:
+
+#+begin_quote
+  We've actually taken a hybrid approach: having the resource available grants bonuses, but if the resource is unavailable then it is created ex nihilo at greater cost of the pokemon's endurance.  This means that Charizard has a bigger area of effect and burn chance on flamethrower if it has oil to spare, Blastoise is able to hydro pump practically indefinitely and at greater range if surrounded by water, and Venusaur is able to regularly replenish leech seeds/razor leaves if in sufficient sunlight.  However, all of them can still use those moves if they are out of oil/water/sunlight, they'll just tire out much faster and have comparatively weaker effects.  I think this is a necessary realism compromise due to both fun and tactical reasons, but it doesn't bother me too much.
+
+  I do draw the line at producing boulders out of thin air, however.  In general I'm okay with some moves only being practical when resources are available, such as Surf having such a maddeningly high endurance cost in the absence of water that it just isn't feasible for mere mortals.  This also grants a very simple signal for extremely powerful pokemon ("Shit!  Where did all that lava even /come/ from it didn't even break a /sweat/ oh /arceus/ we're all going to die aren't we").
+#+end_quote
+
+--------------
+
+The Trouble with Typing was breached once again, so types have been rearranged for, mmm, maybe the fourth or fifth time.  This time around the major insights that built upon the previous offensive/defensive typing split was that A: not all types have a meaningful offensive profile that is affected by the substance that the target is made of, and B: not all type defensive profiles can be reduced to a single archetype.  Ice pokemon, for instance, might be blubberous, or they might be literally made partially of ice; these will not both react to all incoming attacks in the same way and so are (or should be) two different defense profiles.
+
+[[https://i.imgur.com/M4vHoYx.png][Here is the current iteration of the typing chart]].  Note as usual that numbers are relative and not by any means final.  
+
+One thing to keep in mind while looking at this chart is that it's an attempt to communicate damage multipliers in cases where /all factors are otherwise equal/.  That means same stats, a solid hit that did not miss, and so on.  Many of the type interactions in canon are an attempt to abstract away dodge chance, damage application, and range, but we have stats and/or mechanics for all those things, so it is no longer necessary to keep them abstracted to a damage multiplier.  
+
+Basically, the type chart should, as much as possible, reduce down to “I performed a move of X type on a Normal type and then again on a Y type of equal stats, and this is the difference in pure, raw damage incurred”.  Many of the traditional justifications for type interactions (at least, the ones that make sense in the first place and aren't otherwise an abstraction of a non-damage concept) actually boil down to a special interaction with a /status/ applied by that type instead.  
+
+A Fire type, for instance, might not necessarily be hurt by a fire hose any more than an average pokemon would.  After all, the flames coming out of it aren't (too) magical, it's just for the most part ignited oil secreted from the skin.  It's still secreting the oil, putting it out doesn't /inherently/ affect it.  However, (we could claim), perhaps a Fire pokemon /does/ need to run at a higher temperature for the various chemical whatsits to work, so in the /aftermath/ of the water hit, it is going to burn fuel to shake off the temperature hit and get back up to high heat.  Described this way, it sounds more like the Fire pokemon is shaking off a Soaked status effect, rather than interacting with a Water attack directly.  
+
+This indicates to me that (at /least/) one more pass on this typing setup is going to need to be done to figure out what common statuses are inflicted, and ensure that damage multipliers are not taking those into account.  (The Fire/Water example, for instance, is not currently reflected accurately).  
+
+Oh, and one more slight tangent related to types: each percentage of a given defensive type (which we have been referring to as Substance to avoid conflating the two too much) is going to have stat bonuses/penalties associated with them, which will make up for much of the type interactions that might appear at first glance to be missing from this chart.  Steel Substance, for instance, would grant, say, 20 DEF + 2% DEF per percentage point of Steel that the pokemon's Substance is made of.  
+
+--------------
+
+Anyhoo.  Hopefully I can avoid playing Tooth and Tail too much this weekend and push forward on the Unit/Species definitions that are currently next on my to-do list. (That game is too damn good, I'd highly recommend it as it's on sale at the moment).  
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  
+:PROPERTIES:
+:Author: ketura
+:Score: 7
+:DateUnix: 1509128598.0
+:END:
+
+*** Question: will it be possible (say, through breeding) to adjust Typing, in order to get e.g. Alola-style pokes? Your mention of percentage points is making me wonder.
+:PROPERTIES:
+:Author: callmesalticidae
+:Score: 2
+:DateUnix: 1509391191.0
+:END:
+
+**** Yup! There are two main areas where type conversion is a thing, and both revolve around the concept of Normal typing being a vector of mutation. First is breeding, where a high Normal % translates to a higher chance that other elemental typing will be converted to some other type randomly on unit creation. Over generations it is possible to breed a type into a species (if you have a lucky patient zero), and this will be easier on a Rattata than a Gyarados.
+
+Second pertains to evolutions and the use of HMs. When evolving, a certain portion of Normal % will regularly be converted when upgrading the Pokémon; for instance, an (average) Charmander might go from 20/10/70 Fire/Dragon/Normal to a Charmeleon at 30/15/55 to a Charizard at 40/20/20/20 Fire/Dragon/Flying/Normal. Normal typing is usually the pool from which additional typing is taken (there might be some cases with more specialized transformations, such as Onix turning 50% of its Rock into Steel while evolving). Coincidentally, HMs that add new organs (such as a cooling organ to enable Ice Beam) do so at the expense of Normal typing, so one might need to sacrifice 10% Normal to add 10% Ice, for instance. This means that using HMs on unevolved Pokémon is a risk, for if insufficient Normal typing exists, the Pokémon might be prevented from evolving at all. It also naturally limits the number of diverse HMs that can be used; pure Normal types will be naturally much more flexible where this is concerned.
+
+It occurs to me that the second might be used as a catalyst for the first, altho I'd have to think through how much of that should affect the inherited typing.
+:PROPERTIES:
+:Author: ketura
+:Score: 2
+:DateUnix: 1509433139.0
+:END:
+
+
+*** I know I'm a week late, but reading your typing chart made me think of [[http://www.shamusyoung.com/twentysidedtale/?p=17585][this Twenty Sided article]].
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 2
+:DateUnix: 1509762673.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 8
+:DateUnix: 1509130902.0
+:END:
+
+*** Huh-- is that common at all with her breed? I've never heard of this happening.
+:PROPERTIES:
+:Author: Loiathal
+:Score: 2
+:DateUnix: 1509139371.0
+:END:
+
+
+*** Huh. Neat. Appropriate name given the Homestuck reference, too.
+:PROPERTIES:
+:Author: Cariyaga
+:Score: 2
+:DateUnix: 1509284323.0
+:END:
+
+
+** Most disappointingly misleading YouTube title of all time: "[[https://www.youtube.com/watch?v=__5whYgSTV0][Tales from the Trenches: AI Disaster Stories]]"
+:PROPERTIES:
+:Author: throwaway234f32423df
+:Score: 5
+:DateUnix: 1509132917.0
+:END:
+
+
+** I had an assignment to do, and I estimated it would take me 12-15 hours. It took me something like 30 hours. I spent basically every waking moment I wasn't at the office on this damn thing for a week. I took a day off work last minute to finish it.
+
+Like, I'm normally pretty good at estimating how long I need to do an assignment. There was an assignment for a "harder" unit that took me less time. I've never been down to the wire like that before, where I'm trying as hard as I can but still not getting finished.
+
+Anyone have any tips for how I can best learn from this experience? My first thought is, I had the assignment since some 2 months ago, I could have spent 1-2 hours a week on it and saved things.
+
+And I'm trying to think how I "wasted time" to make it 30 hours. I can't think of anything. I think maybe the 2 hours I spent on the beginning on literature review was inefficient and I should have incorporated those into the main assignment-doing-time. Fucking around with LaTeX/BibTeX only wasted maybe 1 or 2 hours. So maybe that's what happened, a "death by a thousand cuts", with a pomodoro here or there wasted?
+
+I don't know. I feel like such a failure for this, even though it's stupid: I had the resources to do the assignment and I did it, and I'm sure I'll get a good mark (not to humblebrag but I'm on a high distinction average at the moment and I only need a middling credit average to get into the masters programme if I decide that's what I want to do). But I am kind of bummed. Life has been hard lately too, so many things going wrong by my uniquely privileged white western sense of going wrong. Hopefully things will get better. I know I'll kick butt at both my exams, so that's the next thing to focus on.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 6
+:DateUnix: 1509186937.0
+:END:
+
+*** #+begin_quote
+  Anyone have any tips for how I can best learn from this experience? My first thought is, I had the assignment since some 2 months ago, I could have spent 1-2 hours a week on it and saved things.
+#+end_quote
+
+That's the big tip I've been given recently. Just allocate time by subject/unit/job, and invest a fixed number of hours in each thing daily, until you completely run out of things to do for it. Then start working ahead.
+
+#+begin_quote
+  Fucking around with LaTeX/BibTeX only wasted maybe 1 or 2 hours.
+#+end_quote
+
+That's actually very, very little.
+
+#+begin_quote
+  But I am kind of bummed. Life has been hard lately too, so many things going wrong by my uniquely privileged white western sense of going wrong.
+#+end_quote
+
+You know, at a certain part I started thinking, "oh fuck all that 'privileged Western sense' shit". Because right now the "privileged" world is in nonstop crisis and catastrophe. So fuck it, we get to feel legitimately bad right now.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1509205555.0
+:END:
+
+**** #+begin_quote
+  That's the big tip I've been given recently. Just allocate time by subject/unit/job, and invest a fixed number of hours in each thing daily, until you completely run out of things to do for it. Then start working ahead.
+#+end_quote
+
+Yeah, I think I should have done the "working ahead" on the assignment rather than "I have read every single reading and every single lecture that is currently available, time to watch TV!" that I actually did.
+
+#+begin_quote
+
+  #+begin_quote
+    Fucking around with LaTeX/BibTeX only wasted maybe 1 or 2 hours.
+  #+end_quote
+
+  That's actually very, very little.
+#+end_quote
+
+And my partner waxes lyrical about LaTeX being such a timesaver??? Then again another student was talking about how she spent tons of time on her margins and fonts which I spent 0 time on, so maybe I'm not doing so bad. And I likely spent comparatively little time on my references too...
+
+#+begin_quote
+  You know, at a certain part I started thinking, "oh fuck all that 'privileged Western sense' shit". Because right now the "privileged" world is in nonstop crisis and catastrophe. So fuck it, we get to feel legitimately bad right now.
+#+end_quote
+
+As I said in another comment, I actually was feeling bad for being a priviledged /Australian/ since I have a job I basically can't get fired from (for real) and can take last minutes days off and an extremely cheap system of student loans that I only have to pay back when I earn over a certain salary. You were talking about losing your job, and I felt kind of bad writing a whole bunch of stuff about "an assignment I'm doing for a course for a qualification that earns less than the job I'm doing now was hard and I feel sad". Was trying to be sensitive.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1509237783.0
+:END:
+
+***** Oh, Australian? Yeah, ok, fuck your First World privilege, mate. You and NZ have the least grimdark right now. Thanks for being sensitive, cunt.
+
+;-)
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1509239609.0
+:END:
+
+
+**** #+begin_quote
+  You know, at a certain part I started thinking, "oh fuck all that 'privileged Western sense' shit".
+#+end_quote
+
+You're just proving white fragility if mild inconveniences like that cause you to ignore your privilege. We're better than that.
+:PROPERTIES:
+:Author: VirtueOrderDignity
+:Score: 1
+:DateUnix: 1509221151.0
+:END:
+
+***** You don't have to ignore privilege, but you also shouldn't be letting the fact of it make you feel terrible for feeling terrible about genuinely bad things that happen to you.
+
+You can always say, "sure I may be underemployed and have student debt, but I'm privileged enough to have square meals each day!". But that doesn't help anyone. Worry about your privilege when you're on Team Building Day at a nice job drinking craft beer or some shit like that.
+
+Also, excuse me if I want to check that you don't post to right-wing subreddits, since that username sounds really conservative to be speaking nice social justice language.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1509222199.0
+:END:
+
+****** #+begin_quote
+  You can always say, "sure I may be underemployed and have student debt, but I'm privileged enough to have square meals each day!". But that doesn't help anyone.
+#+end_quote
+
+Neither does ignoring your privilege. In fact, it does the opposite, since a part of white privilege is the default ability to survive and thrive in the kind of society that damn near requires "student debt" to do so - so the outliers that can't are punished almost as harshly as underpriviliged groups. This is just like the MRAs who ignorantly oppose feminism because of issues caused by the patriarchy and toxic masculinity in the first place.
+
+#+begin_quote
+  Also, excuse me if I want to check that you don't post to right-wing subreddits, since that username sounds really conservative to be speaking nice social justice language.
+#+end_quote
+
+That's interesting because the actual intent was to signal "social justice" without being too obvious about it. How did you get conservative from that?
+:PROPERTIES:
+:Author: VirtueOrderDignity
+:Score: 2
+:DateUnix: 1509229979.0
+:END:
+
+******* #+begin_quote
+  Neither does ignoring your privilege.
+#+end_quote
+
+Yeah, especially on this thread where I saw some people from the US discuss job lossess, college aspirations, etc. I'm in Australia and I've got a ton of priviledges in that regard: I work for the government and get paid well enough, and because I work for the government /I basically cannot be fired, ever/ (yes, that is really how the system works). And if they do fire me and /I agree to it/, they give me 12 weeks of pay.
+
+On top of /that/ I'm studying a degree I don't "need", and I am getting an effectively zero interest loan from the government to pay for it (and I only have to pay that loan back if I'm earning a certain amount of money). On top of /that/ I'm able to take time off work because I have 9 weeks of leave (4 of which are required by law, 5 of which I "bought" by lowering my pay rate). On top of /that/ I had a comfortable upbringing, supportive family, good schools, genetics, etc that allowed me to be smart enough to have an average of high distinction when I work 4 days a week while studying a 50% load.
+
+Like, priviledge is oozing out of my every pore to borrow from a copypasta. So I thought me complaining that I was able to take a day off work at the drop of a hat and receive literally no consequences for it might seem a bit rich to many people here.
+
+I'm not even thinking about people in war-torn parts of Uganda who don't have enough to eat. I'm thinking about /Americans/ when I mention my privilege.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 5
+:DateUnix: 1509237071.0
+:END:
+
+******** #+begin_quote
+  I'm not even thinking about people in war-torn parts of Uganda who don't have enough to eat. I'm thinking about Americans when I mention my privilege.
+#+end_quote
+
+Oh how the mighty have fallen.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1509376373.0
+:END:
+
+
+** Content note: whining
+
+I am dissatisfied with my life. My life isn't currently that awful, but isn't where I would have hoped it would be if you had asked me when I was much younger. Studied Arabic in a fit of idealism when I was in college in the 05-09 period, didn't effectively use my college period partly due to personal flaws and partly due to economics (never pieced together the money to do study abroad which is a highly advisable thing to do when studying a foreign language.) Then the economic crisis happened and I had trouble getting and keeping a job for a while, and also a close family member died. I currently am stably employed and am paid better than at any of my previous jobs, but it is at a fairly boring factory job, sitting in the stockroom opening UPS deliveries, giving the stuff to the maintenance department, updating the database of what we have, and listening to my coworkers talk about how great Trump is. (I am a democrat in one of the most heavily republican counties in my state.) I like the scenery in the area where I live but don't have much of a social life and most of my college friends who I still talk to live in cities far away from me. I would love to get out of my current situation but feel like imposter syndrome will kick in whenever I try for a job I might like.
+
+I ought to return to school or something but am somewhat anxious about giving up a paid job to do it, and also am torn between doing something I like and something that looks like it plausibly pays money. Technical stuff seems like it pays well these days but I am a more humanities oriented person and am inhibited from studying things like programming because I am unsure what thing I could apply it to that I would be motivated at and there's lots of competition from more interested people, but professions like 'history teacher' are also lacking in prospects and so on and so forth. My main problem here is probably actually more about anxiety forcing me into inaction, though. If I thought I had a good chance at some decent civil service job or had a flash of insight on what kinds of interesting jobs I'm not thinking of, I would love to pursue those, but I keep on having the anxiety spiral.
+
+The good thing about my current job is that I enjoy reading and it has great breaks (insert joke about being in a union) so I can manage to get some good reading done on the days I bring a book to work.
+:PROPERTIES:
+:Author: ErekKing
+:Score: 4
+:DateUnix: 1509136933.0
+:END:
+
+*** Where would you like to move, what would you like to do, what would you like to know, who would you like to spend time with?
+:PROPERTIES:
+:Score: 6
+:DateUnix: 1509137949.0
+:END:
+
+**** I have opinions about the importance of good governance and therefore am attracted to the idea of working in some public planning field or attaching myself to some politician (in the event that I get the connections to some politician.) For practical purposes, if I move, it is likely to be to the New York City or Washington areas, since the first is where my friends are and either place is a good fit for 'what I would like to be employed doing in an ideal world'. A friend of mine urges me to go into the nonprofit field in New York City (what she does and where she does it) but it doesn't pay well. I might be interested in that if it was something on the more effective altruism end of the spectrum but generic politics is more interesting to me than generic nonprofit. More generically, history and linguistics are areas I have strong interests in, but the job market seems decidedly not great for those. More broadly, my personality tends me towards the 'sit at your desk researching' type jobs than the 'interact with random members of the public in PR or sales' end of the spectrum except in areas where I have strong motivation (like politics.)
+
+Who I would like to spend time with: my tastes run variably highbrow and mildly nerdy and many of the people I currently spend time with are more towards the god, guns, and nascar end of the spectrum. I go onto Meetup.com periodically and there are a handful of interesting local groups doing things like hiking or discussing atheism or watching non-action movies but they mostly meet at times bad for my schedule and most of the local groups are things like bible study. Lots of Ithaca NY groups seem interesting - it is close enough to me for those groups to show up on Meetup but sufficiently far away that I can't really go to any of them.
+:PROPERTIES:
+:Author: ErekKing
+:Score: 3
+:DateUnix: 1509139605.0
+:END:
+
+***** #+begin_quote
+  More broadly, my personality tends me towards the 'sit at your desk researching' type jobs than the 'interact with random members of the public in PR or sales' end of the spectrum except in areas where I have strong motivation (like politics.)
+#+end_quote
+
+Paralegal or legal researcher?
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1509208468.0
+:END:
+
+****** Been doing a little bit of research on this, because it is a cheap version of becoming a lawyer. Are there any people in this subreddit who have direct experience they can share about paralegals?
+:PROPERTIES:
+:Author: ErekKing
+:Score: 1
+:DateUnix: 1509228274.0
+:END:
+
+
+*** Hey, someone with an Animorphs pseudonym! I like those!
+
+I have nothing to contribute.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 2
+:DateUnix: 1509204453.0
+:END:
+
+**** I was going to comment "have you tried not being an android" yesterday, but was unwilling to do so without anything actually constructive to say.
+:PROPERTIES:
+:Author: ketura
+:Score: 1
+:DateUnix: 1509228341.0
+:END:
+
+
+**** I might be pro-Animorph, not sure... heard there was Animorph stuff around here... let's commit nonviolent resistance against yeerks...
+:PROPERTIES:
+:Author: ErekKing
+:Score: 1
+:DateUnix: 1509228590.0
+:END:
+
+
+** Well... yesterday i had to write an essay as an exam. We had like 60 minutes to cover 2 A4 pages. It was as a kind o exam/test if you had understood and read the lecture( the lecture being "crime and punishment" by F.Dostoyevsky). So the question we had been asked was "Can morality change ?"
+
+I ofcourse answered yes and listed some examples from the book. Today i learned that the answer was supposed to be no, morality isnt something that can change. The teacher argumanted that by saying that its in the context of the book so we have to kinda use the arguments the author of the book made. Meaning that since we answered wrongly we didnt really understand the book. I get that and i know it makes atleast some sense to me but why even ask us the question if no matter our argumentation the answer will be set in stone.
+
+i was really bugged by this and i dont know what to think about this. Kinda mad i wont get a good grade since i thought my response wasnt half bad.
+:PROPERTIES:
+:Author: IgonnaBe3
+:Score: 7
+:DateUnix: 1509133803.0
+:END:
+
+*** In my experience with literature teachers, you can make literally any argument you damn well please, but you have to use the text to support it. You probably could have argued that morality can change, but would need to use textual evidence and explain why passages that seemed to say otherwise really didn't.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 10
+:DateUnix: 1509134015.0
+:END:
+
+**** The book and the text we had been handled were my only points of reference tho. Teacher today just told us that everyone who answered yes has it wrong and didnt understand the book. She didnt check the works yet so ...idk
+
+also the last segment with my conclusion and everything after my 2nd argument was incredibly rushed cuz my time was nearing its end.
+:PROPERTIES:
+:Author: IgonnaBe3
+:Score: 3
+:DateUnix: 1509134556.0
+:END:
+
+
+** Well, as promised last week, my job laid me off today. With honors, in a way: they say they'd be happy to work with me again when/if the revenues pick up.
+
+Anyone got some good ways to keep out of an anxiety spiral so I can take some MOOCs and finish getting my PhD applications in?
+
+Speaking of which, got the personal statements separated out by school. I need to rewrite a couple to target computer science departments (with cognition labs) instead of neuroscience departments. That's harder than it sounds, since a personal statement is supposed to express my personal drive to study the subject.
+
+Gonna have to leave my current narrative about the brain and stuff into a bunch of stuff about Moravec's Paradox, Neats vs Scruffies, "build it to understand it" and such... for an essay about studying the core affect/evaluative system.
+
+Oh shit, I need to throw in the citations in all of them.
+:PROPERTIES:
+:Score: 8
+:DateUnix: 1509138276.0
+:END:
+
+*** #+begin_quote
+  Anyone got some good ways to keep out of an anxiety spiral so I can take some MOOCs and finish getting my PhD applications in?
+#+end_quote
+
+there's a wealth of literature on the beneficial effects of exercise w.r.t. reducing anxiety (most of it focused on aerobic exercise, but some also on e.g. strength training), and some on exposure to nature-y/outdoors-y stuff, so I suggest going on a medium-length (~10mi? idk, w/e is appropriate for your current level of fitness and time availability) run in some nearby park/trail system
+
+#+begin_quote
+  a personal statement is supposed to express my personal drive to study the subject.
+#+end_quote
+
+express /and/ evince! Be sure to not just wax poetic on your love of neural nets *or* whatever, but provide concrete examples of your consistent interest and competence in them (ideally in ways that aren't immediately obvious from the rest of your app/cv). Overall though I don't think a personal statement is too make-or-break-y, but maybe it's different in neuro/cs departments. Also, by citations, do you mean more ~5 or, like, 50? In my experience personal statements aren't supposed to be research statements so be sure yours isn't as much of one!
+
+You could also consider marketing yourself more as an interdisciplinarian and then not have to change too much!
+
+(and regardless should imo seek to integrate yourself into multiple groups to allow for greater flexibility on future job markets -- put on your neuro hat when applying to neuro jobs, your cs hat when applying to cs jobs, etc.)
+
+Good luck!
+:PROPERTIES:
+:Author: phylogenik
+:Score: 2
+:DateUnix: 1509141786.0
+:END:
+
+**** #+begin_quote
+  Be sure to not just wax poetic on your love of neural nets of whatever, but provide concrete examples of your consistent interest and competence in them (ideally in ways that aren't immediately obvious from the rest of your app/cv).
+#+end_quote
+
+Well, I'm not exactly trying to study neural nets... and I can't really show competence in the thing I /am/ signing up to study, because it's fairly unique to these few labs. And new.
+
+So I'm settling for showing consistent wide-ranging interest in the subject, and hopefully making as nice a picture of my quantitative background (I have one, just not in neurosci) as possible. This will definitely show interest that isn't just apparent from my CV.
+
+But yeah, I think for the computing departments, I can pitch myself as an interdisciplinarian looking to build out computational models of the stuff being discovered in neurosci and cogsci, which also lets me work on the neurosci/cogsci side in mostly the same labs, while also having the excuse /not/ to wave my hands about how the calculations happen when writing papers.
+
+#+begin_quote
+  Overall though I don't think a personal statement is too make-or-break-y, but maybe it's different in neuro/cs departments.
+#+end_quote
+
+I mean, it's still got to be /good/ when you're trying to change from one field to another, especially when the new field is... well, was only really /born/ in the past decade or so, so it's not like you can have a publication in it already.
+
+Gosh, that's a surprisingly positive way to think of my chances. My tutor /did/ mention that only 5% of admits to my top target department /actually/ had any kind of publication going in, and that they really like to admit from quantitative backgrounds for their neuro/cog programs rather than just biological backgrounds.
+
+#+begin_quote
+  Also, by citations, do you mean more ~5 or, like, 50?
+#+end_quote
+
+More like five. I just started looking it over, and I've really had to throw out most of the actual non-personal neurosci stuff from this statement.
+
+#+begin_quote
+  (and regardless should imo seek to integrate yourself into multiple groups to allow for greater flexibility on future job markets -- put on your neuro hat when applying to neuro jobs, your cs hat when applying to cs jobs, etc.)
+#+end_quote
+
+Most of the labs I'm applying to are interdisciplinary cognition labs: combinations of comp-sci/cog-sci/psych/neuro/linguistics. My real needle to thread is getting the space/excuse to implement some computational stuff based on theoretical neuroscience, while also getting the neurosci-side excuse to turn the computational stuff towards problems related to actual, embodied minds.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1509142721.0
+:END:
+
+***** ah whoops, that meant to read neural nets /or/ whatever (it was the first thing I thought of that combined cogsci and cs lol), and wasn't meant to imply that that's what you'd actually be studying
+
+#+begin_quote
+  publications stuff
+#+end_quote
+
+plus it's rare that people directly continue on with their ugrad work in grad school. If you have /any/ vaguely relevant pubs/talks going in that's certainly a major plus in the eyes of admissions committies since it's direct evidence of your research productivity. Also gives you a leg up for scholarships/fellowships!
+
+#+begin_quote
+  My real needle to thread is getting the space/excuse to implement...
+#+end_quote
+
+sounds like a question of PI-level variation more than department-level variation. Have you chatted with any current students in the labs you're applying to? They're the ones to ask how hands-on/micromanage-y your prospective supervisor is
+:PROPERTIES:
+:Author: phylogenik
+:Score: 1
+:DateUnix: 1509143552.0
+:END:
+
+****** #+begin_quote
+  If you have any vaguely relevant pubs/talks going in that's certainly a major plus in the eyes of admissions committies since it's direct evidence of your research productivity.
+#+end_quote
+
+It's not even vaguely relevant except for being in a quantitative field.
+
+#+begin_quote
+  Have you chatted with any current students in the labs you're applying to?
+#+end_quote
+
+Shit, I should try to get time with them as well as the profs.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1509145122.0
+:END:
+
+******* #+begin_quote
+  It's not even vaguely relevant except for being in a quantitative field.
+#+end_quote
+
+Sounds pretty relevant to me! at least insofar as it demonstrates your ability to do math-y stuff with computers, which is most of the battle anyway. Irrelevant would be if it were on some philosophical description of fashion trends in 17th century France, or something, which would still be relevant to the extent that it shows you can write
+
+#+begin_quote
+  Shit, I should try to get time with them as well as the profs.
+#+end_quote
+
+Yah definitely! They're the ones to tell you what it's like actually working in the lab (and will usually warn you if the PI is really appealing before you're in but turns into a monster later on). Plus, unless you explicitly tell them not to, they'll probably mention your call/skype/email to the boss, which'll further serve as evidence of your interest and can-do, go-getter attitude :]
+
+edit: though I should note that the student-student talk usually occurs, in my experience, after you've already been accepted to the program/lab, and are trying to decide whose offer you want to accept. But I reckon most grad students would be happy to chat with a prospective labmate so long as you don't occupy their time for too long
+:PROPERTIES:
+:Author: phylogenik
+:Score: 2
+:DateUnix: 1509145516.0
+:END:
+
+
+**** #+begin_quote
+  there's a wealth of literature on the beneficial effects of exercise w.r.t. reducing anxiety (most of it focused on aerobic exercise, but some also on e.g. strength training), and some on exposure to nature-y/outdoors-y stuff, so I suggest going on a medium-length (~10mi? idk, w/e is appropriate for your current level of fitness and time availability) run in some nearby park/trail system
+#+end_quote
+
+We've got a nearby trail system through a bit of a riverside park, but, like, dude, the longest run you can make through it is about... 3.25km. My current standard runs are about 2.5km. 10 miles as a /medium-length/ run? Wow, you're /good/ at this.
+
+That said, one of the things I really like about athletics is that, well, you push yourself to do something you've never done before, you feel like shit, and then a few days later, it gets easier to do it /every single time you do it/. In addition to PhD applications, the point of the MOOCs is really to set myself up to be able to do academic things that way: just put in the work, and get the results. I was never able to treat school like that before, and I've been having to re-learn how to study to do it.
+
+#+begin_quote
+  You could also consider marketing yourself more as an interdisciplinarian and then not have to change too much!
+#+end_quote
+
+Since my topic was going to be [[http://journals.sagepub.com/doi/abs/10.1177/1754073916670021?journalCode=emra][affective/evaluative cognition along these lines]], I'm struggling to come up with non-ridiculous ways to write a Comp Sci essay that says, "I will make the robots like you."
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1509208362.0
+:END:
+
+***** Ah it's a longer distance for me currently (getting back into running after a break of nearly a decade). But my reference group may be non-representative. I only really talk about running with two people: my wife, who goes on 10mi runs pretty regularly, maybe once a week, and a good friend from ugrad, who seems to have switched to running stuff full time in recent years and regularly wins races in the 50-200mi category (incidentally, she aced a math/cs double major and then went to work at nasa, mit, harvard, etc. and then was a few years into a math/cs PhD before quitting to become a runner). Her easy runs can get up to 30mi lol (on which she'll sometimes forego food/water to "build endurance" O_O). She actually just set a fastest known time record on a ~1200mi trail a few weeks ago! And then my third interaction with a runner recently was finding out that one of my current goals, which I'm closing in on -- a sub-20min 5k -- was [[https://www.reddit.com/r/running/comments/747pcm/official_qa_for_wednesday_october_04_2017/dnx6byq/][not even mildly impressive]]. But I'd thought it at least sort of decent, so I think I'm just really miscalibrated.
+:PROPERTIES:
+:Author: phylogenik
+:Score: 1
+:DateUnix: 1509213868.0
+:END:
+
+****** #+begin_quote
+  She actually just set a fastest known time record on a ~1200mi trail a few weeks ago!
+#+end_quote
+
+Please tell me you mean... /what!?/ 1200 miles is usually going to run through state or national borders. You don't run that distance, you /fly/ it.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1509379845.0
+:END:
+
+******* It was all in one state, actually! California, up along the coast, from the Mexico border to Oregon (the distance technically looks to work out to 1,171 miles with 61,000 ft of dE, but close enough). I think she walked a lot of it though (she's been recovering from some gnarly injuries and it was unsupported, so she had to carry a bunch of backpacking equipment and stuff). But still, daily average was over 26 miles! I've done that backpacking a fair bit and it's pretty hefty bookended by shorter days, much less for weeks in a row!
+:PROPERTIES:
+:Author: phylogenik
+:Score: 1
+:DateUnix: 1509388814.0
+:END:
+
+
+** I have been in a reflective move about my age recently, and I realized that in a period of let's say 1-4 years I am going to become an adult. I further realized that I have no idea what that entails besides the obvious changes in my legal status and the associated societal expectations. Given that this is a sub whose members are probably much more similar to me than average, I have a rather stereotypical set of questions to ask you all: What ought I prepare for? What ought I do now? What should I know?
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1509149095.0
+:END:
+
+*** #+begin_quote
+  What ought I prepare for? What ought I do now? What should I know?
+#+end_quote
+
+Are you under/over 18? Going to college in less than a year? Just started college? Have two or more years left of highschool? Have more than a year of college under your belt?
+
+"What should I prepare for" depends on what plans you have for the future and "what should I do now" depends on what your "now" looks like.
+
+As for what you should know: "who you are as a person" might change significantly and not-infrequently as you grow older. I'm 28; I'd say I've been no fewer than 9 different people since I was 14.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 6
+:DateUnix: 1509152351.0
+:END:
+
+**** To finally destroy any illusion of anonymity I might have, I am 16.
+
+In terms of future plans, I want to do something about the long list of horrible problems the world has, especially problems in how people think or fail to. In terms of interests, math, computers, etc., as you might expect.
+
+I have not changed much over the years in qualitative ways, unlike most people I know. Any advice on how to change for the better?
+
+EDIT: I find it vaguely disturbing that this post has more likes than my top level one.
+:PROPERTIES:
+:Score: 7
+:DateUnix: 1509154004.0
+:END:
+
+***** #+begin_quote
+  In terms of future plans, I want to do something about the long list of horrible problems the world has, especially problems in how people think or fail to.
+#+end_quote
+
+That's admirable, but it's pretty abstract, and a little naive. There is no "changing the world" profession, that's a passion project you have to do on your own time. The vast majority of people aren't lucky enough to end up in a profession that aligns with, much less furthers/promotes, their values.
+
+My advice would be to come up with a concrete plan, like go to college and become a dental hygienist or a teacher or do some sort of trade program and become an electrician or some other such profession where you can start pulling in forty to fifty thousand dollars a year in your early 20s. If you can manage to do that, you'll have a wider range of options in the future for going back to school or changing careers. Don't major in Philosophy, don't major in English or History unless you have a strong desire to be a teacher, y'know, stuff like that. Don't assume that your personal interests ought to play a role in your future profession, that's not particularly pragmatic. /Everyone/ your age is interested in computers, y'know? I certainly don't mean to discourage any ambitions, but you /need/ a concrete plan or you'll end up like me.
+
+#+begin_quote
+  I have not changed much over the years in qualitative ways, unlike most people I know. Any advice on how to change for the better?
+#+end_quote
+
+I'm sure you've changed more than you think you have, but that's the thing of it; you haven't experienced it yet and it's hard to describe, but you're likely going to experience more in the next 5 years than you have in the last 10, since the last 10 for you have probably consisted mostly of being taken care of by adults and spending most of your days within the rigid structure of the school system.
+
+When I started college, I'd be walking around campus and end up walking 20 feet behind someone who was smoking a cigarette and I'd think about how disgusting it smelled and how people shouldn't be allowed to smoke in public. Within less than a month I started smoking and had gotten drunk for the first time, even though I had recently thought of myself as the type of person who didn't do those types of things. I believed in the truth of Christianity my entire life up until the age of 19, at which point I became so preoccupied with the wonders of college life that I entirely neglected to have a single thought about religion for almost an entire year. When I realized at age 20 that I hadn't thought about it in a year, I also realized I didn't believe in any of that religion stuff anymore. I thought "atheist" was a dirty word until the very moment I became one.
+
+There's no way to anticipate how you're going to change, but I will say this: humans are prone to becoming more like the people we associate with. Your behavioral and speech patterns will shift to match your peer group, and your thoughts will shift to match your behaviors.
+
+As far as general quality of life advice, if I could go back in time twelve years and say something to "16-year-old me," I would implore myself to begin exercising and working out, to walk an hour a day 5 days a week and to do pushups and pullups and squats 3 days a week and to eat more protein. It's much easier to add muscle mass when you're a teenager / young adult than it is when you're pushing 30. It's like in chapter 12 of HPMOR, your future self will wish they could go back in time and do it, and all that jazz.
+
+EDIT: I went back and gave your top level post a like to balance things a bit for you LOL
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 5
+:DateUnix: 1509161759.0
+:END:
+
+****** I hope I don't come off as totally naive! To defend myself a little, I hope your reference to HPMOR means you know that I know that there is a close to zero mapping between a given human's internal world and external future.
+
+#+begin_quote
+  Don't major in Philosophy
+#+end_quote
+
+Small risk of that. Fortunately for future-me, I have a healthy understanding of what that would mean for my job prospects
+
+#+begin_quote
+  you're likely going to experience more in the next 5 years than you have in the last 10
+#+end_quote
+
+I have observed this as well, and find it frankly terrifying. 16 year old me wants to relate a little with my future counterparts, so I can at least cooperate with them right now, as you say.
+
+This is probably going to end being horribly formatted. EDIT: Formatting turned out fine, English turned out unforgivable.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1509162638.0
+:END:
+
+******* #+begin_quote
+  I hope I don't come off as totally naive!
+#+end_quote
+
+Don't worry kid, you're fine. "I want to do something about the long list of horrible problems the world has" just sounded a bit idealistic is all.
+
+#+begin_quote
+  I hope your reference to HPMOR means you know that I know that there is a close to zero mapping between a given human's internal world and external future.
+#+end_quote
+
+That alleviates my concerns. I, myself, was utterly convinced from the ages of 6 to 14 that I was going to be a genetic engineer when I grew up, with the end goal of /cloning a dinosaur/. I don't know if all schools do this, but we had something called "pathways" where all the students had one specialized class a year in things like graphic arts or business or whatever. They had a pathway Medical Science, and I chose it /specifically/ because I thought that'd be the path to take to accomplish my goal of /becoming a genetic engineer and cloning a dinosaur/.
+
+They should give children aptitude tests to sort them and not allow them to make their own decisions.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 5
+:DateUnix: 1509163737.0
+:END:
+
+******** I told the school counselor at 12, in response to a vague question about what I wanted to achieve in life, my brilliant plan of discovering room-temperature superconductivity, repaving every road in America with said material, and building cars so energy efficient as a result of lower friction that they could be powered by solar panels alone. This impressed her so much that I decided to really plan it all out. Then I realized that I had no idea that I was going to discover room-temperature superconductivity, let alone get funding for I was quickly discovering would be an insanely expensive and unpopular infrastructure proposal. That day marks one of perhaps four shifts in maturity that I have actually noticed.
+
+#+begin_quote
+  They should give children aptitude tests to sort them and not >allow them to make their own decisions.
+#+end_quote
+
+All the yes to this, to the extent that it is not obviously horrible, and they should also use those tests to determine credit requirements. I know someone with an insane capacity to memorize historical material and correlate it into models. The person in question may also literally fail too many math courses to graduate high school. Clearly there is something wrong here, when people's grades can be that stark.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1509164677.0
+:END:
+
+
+******** [[https://smbc-comics.com/index.php?id=3853]]
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 1
+:DateUnix: 1509214154.0
+:END:
+
+
+******* #+begin_quote
+  Small risk of that. Fortunately for future-me, I have a healthy understanding of what that would mean for my job prospects
+#+end_quote
+
+Adding it as a second major can work ok.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1509208159.0
+:END:
+
+******** That is, for those playing at home, exactly what my father did. He still can't articulate to me exactly why, although he gets my Russell references so that's something.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1509209268.0
+:END:
+
+
+****** #+begin_quote
+  There's no way to anticipate how you're going to change, but I will say this: humans are prone to becoming more like the people we associate with. Your behavioral and speech patterns will shift to match your peer group, and your thoughts will shift to match your behaviors.
+#+end_quote
+
+And if they don't, you won't fit in, so you have to learn how to fit yourself into a group.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1509208143.0
+:END:
+
+
+***** First post was vague, this one offers more details :)
+
+Another thing worth stating, just how into math and computers and such are we talking? Like do you do math olympiads or hackathons, or are they just interests?
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 5
+:DateUnix: 1509179142.0
+:END:
+
+****** I did competitive math for a year, before my life took one of its more exciting turns, but I am likely to get back into it this year, if for no other reason than that I would make the 4th member of the school's team. In terms of math knowledge, I am taking BC Calc (basically Calc 1.5) this year and know a good deal of popular mathematics. My expertise is basically, "has read two decision theory papers, does physics homework sans calculator."
+
+In terms of computers, this is a very recent interest on my part, although I do program for my school's robotics team. I have no idea what to actually do to meaningfully progress past the, "Quick study; knows some Java and C++" stage.
+
+Mostly I was trying to emphasize that it is all rather free-floating. I know /things/ but not on eminently marketable level.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1509205649.0
+:END:
+
+******* Right, but even that amount of interest and activity can be something you leverage into bigger things. For example, SPARC and ESPR are summer camps run by many of the same people as the Center for Applied Rationality that high school students can apply for. You might find it the kind of thing that helps you change in qualitative ways :)
+
+[[https://sparc-camp.org/faq/]]
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 2
+:DateUnix: 1509251380.0
+:END:
+
+
+***** If you want to make a large impact on the world's horrible problems, your three main routes are startups, politics, and academia. Pretty much all of those require a bachelors to be taken seriously, so college is basically a must. The following advice is largely USA-centric. Try to get into a state school, ideally with enough scholarships to cover at least tuition + room and board. Landing a national merit scholarship via PSAT score will help hugely with that, they can easily be 20k+, and usually qualify you for other school specific merit aid. I'm of the opinion that the Ivy's and small private schools aren't really worth it and that if you're good about finding research opportunities, you can learn and do far more at a large state research school.
+
+From there, consider college as the time to lay groundwork for your future plans. While you will be academically busy with classes, you will have a relatively open schedule and access to a ton of technology. I'd recommend getting involved with a lab that takes undergraduates, but there are no shortage of other things you could be doing. Have fun, learn things, spend at least one summer doing some sort of actual work related to your field, and make friends. Also, obligatory plug for Texas A&M University, as I am an Aggie (Class of 2016!). Also we do cool shit with robots.
+:PROPERTIES:
+:Author: Turniper
+:Score: 4
+:DateUnix: 1509162141.0
+:END:
+
+****** #+begin_quote
+  I'm of the opinion that the Ivy's and small private schools
+#+end_quote
+
+I don't think these should be discounted entirely, especially if you don't come from a middle class background, since they give pretty fantastic need-based aid than can often (partially) stack with merit-based (and if you're upper class it might well be your parents can pay out-of-pocket). Plenty of them have solid departments for research, too. I went to a small-ish private university primarily b/c they agreed to cover my costs and then some -- I think my living stipend after tuition and fees were paid was something like ~$15k-$20k per year, which was more than enough for food and housing, a comfortable travel/adventure budget, and a nice kickstart to investments in a (then) future runway + emergency fund.
+
+(I do second the PSAT point -- I think around $5k/year of the money I received came from that national merit thing, and some of the schools I applied to gave considerably more)
+:PROPERTIES:
+:Author: phylogenik
+:Score: 3
+:DateUnix: 1509163246.0
+:END:
+
+
+****** I am an American, so it is at least appropriately specific.
+
+I suppose I have a mild obligation to look at A&M now. Research universities do look significantly more up my alley, if nothing else.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1509163114.0
+:END:
+
+******* If you ever get serious enough about it to visit, drop me a line. I still have a bunch of friends there and am in town fairly frequently, and probably will be for the next few years until my GF graduates. I could arrange a campus tour (Or, a more interesting and honest one than the official ones) and possibly some introductions in the CS department if you were interested in that direction.
+:PROPERTIES:
+:Author: Turniper
+:Score: 3
+:DateUnix: 1509164285.0
+:END:
+
+******** Depending on what my financial situation looks like, I might be in the San Antonio area sometime in Spring, and if I get the chance I will certainly take you up on that.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1509164948.0
+:END:
+
+
+****** #+begin_quote
+  I'm of the opinion that the Ivy's and small private schools aren't really worth it and that if you're good about finding research opportunities, you can learn and do far more at a large state research school.
+#+end_quote
+
+IMHO, it's bimodal, and [[/u/LookUponMyResearch]] should try for both. If you get into an Ivy-grade STEM institution (Stanford, MIT, hell, even RPI), you will receive a /superb/ education and /astoundingly top-rate/ research opportunities, plus they may go ahead and give you loads and loads of scholarships. If you get into Harvard or Yale, you have a straight beeline into politics or law.
+
+"Public Ivies" like UWashington or Berkeley are also great options, and you can throw in a whole bunch of them up and down the selectivity spectrum without actually sacrificing quality of education to get into a nice school.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1509207980.0
+:END:
+
+
+*** I have to leave in just a moment, so just in case this slips my mind the next time I'm able to type, [[http://howtogrowthefuckup.com/post/87238065412/how-to-grow-the-fuck-up-guides-to-life][this]] should be helpful.
+
+Also, save money and write a budget. That isn't news or anything, I just want to emphasize it. I like Excel, personally, and there are templates that you can use.
+
+Oh, and don't be bothered by other people's notions of what Adulting means. Everybody is making it up as they go along, more or less. You want to live in a houseboat and walk dogs for a living? Congratulations, you can make a fair amount of money walking dogs, and I hear that houseboats are awesome (and cheap, if you know where to look).
+:PROPERTIES:
+:Author: callmesalticidae
+:Score: 3
+:DateUnix: 1509149532.0
+:END:
+
+**** Thank for finding the time to respond, and the link.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1509149633.0
+:END:
+
+
+*** If I could send a message to my 16-year old self that he would take seriously I would say the following:
+
+1. develop smart study strategies since simply relying on natural smarts will eventually come to bite you in the ass-- I recommend looking into Cal Newport's books, getting good at using a Spaced Repetition program like [[https://www.reddit.com/r/Anki/][Anki]], and generally becoming more comfortable with working hard on stuff. If you're puzzled about what to learn, try the Ultimate Geography [[https://ankiweb.net/shared/info/2109889812][deck]]. Do 5 new cards a day and you'll learn every country's flag/capital/map_image within a year-- makes international relations/news/politics surprisingly understandable when you understand the geographic relationships between places.
+
+2. get more physically fit/aesthetic, for the aesthetic/social benefits if nothing else. Yes, it's shallow, but if you go from unathletic skinny or fat male physique to even kind-of in shape ('swimmer's body'), you'll be quite happy with the change.
+
+3. realize that social status (popularity) is usually something you have to work for, not something some people just naturally have. Status games/hierarchies vary widely depending on context but in nearly every social circle I've encountered, the combination of confidence, calibration (something vaguely like social intelligence or skill at reading the room or body language skills) and being good at something will reap dividends. If you're like most people, no matter what you try to convince yourself of, your place in the social hierarchy will play a big role in how happy you are. Learning to play the social game early on will be helpful for basically every other endeavor, though some professions (STEM academia, tech sector) will have other ways of raising your status, like being really good at what you do.
+
+4. for #3, there isn't any single resource out there that's comprehensive. The classic advice of "How to Win Friends and Influence People" is not bad, but the book is a little too vanilla and bland to be super useful. "Models" by Mark Manson is a good book too, though not all that actionable. For me the combination of meditation and social immersion was key, along with befriending more socially skilled friends. I went from mild/moderate social anxiety to basically socially fearless over ~5 years-- it was an effortful transition, but well-worth it.
+
+5. Ala Gwern's [[https://www.gwern.net/The-Melancholy-of-Subculture-Society][piece]] on subcultures, never forget that if the social circle you're currently in is toxic or causing you lots of unhappiness, you can always opt out and choose one you're more suited or interested in. Of course, don't let the low cost of switching deter you from eventually learning the important skills of socializing and hierarchy navigation.
+
+Above all, I'd say the following:
+
+-whenever you feel particularly emotionally shitty, try your hardest to take the outside view-- most things are temporary, this too shall pass, and in a week or a month or a year, whatever has you so down will probably be nothing more than a faint memory with little emotional impact. Remember that when things get overwhelming!
+:PROPERTIES:
+:Author: gardenofjew
+:Score: 2
+:DateUnix: 1509235417.0
+:END:
+
+
+*** #+begin_quote
+  What ought I prepare for?
+#+end_quote
+
+Getting mostly pretty fucked-over by society, and having to figure out how to live and help your friends and family despite that.
+
+Also, should you want to be materially secure, some form of remunerative career. Also, should you have some cause or plan you care about, how to execute on that.
+
+#+begin_quote
+  What ought I do now?
+#+end_quote
+
+Ace everything in high school, or somehow manage to take uni-level classes in high school and ace them. Get some work experience too.
+
+When I was young, I knew that my time of ever having any free time or leisure was counting down, so I wanted to take advantage of it. That was a bad decision.
+
+When you're young, you have almost no real choices in life, so each one where you do the "responsible" thing and constrict your options to a bunch of hard work and stuff feels like utter shit. Problem is, the returns on those Responsible Things compound into adulthood, eventually giving you a lot more choices as an adult. You're sacrificing choices as a youth to have more later on.
+
+Shit sucks, but it's an investment.
+
+#+begin_quote
+  What should I know?
+#+end_quote
+
+If you get the sense that the world is coming to an end, you're entirely correct. Please help the rest of us handle this.
+
+Adulthood is difficult and draining, and that's why the adults around you seem so damn drained.
+
+Solidarity and love for others are essentially all we fucking have right now, and that's a /really bad/ situation to be in, actually.
+
+You are going to die, and you may experience real personal suffering at any time.
+
+Civilizational crisis and climate apocalypse aside, almost everyone you meet has more potential than they're getting to really express. Help with that. If you ever wanted to be a hero, now's the time.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1509206850.0
+:END:
+
+**** Out of curiosity, as I haven't been around all that much recently, why exactly do you think the world is going to end? Or was that a moresarcastic /dark humor statement?
+:PROPERTIES:
+:Author: Kishoto
+:Score: 1
+:DateUnix: 1509376059.0
+:END:
+
+***** It's not sarcastic. It's that as far as I can tell, our civilization is just piling up dramatically huge horrible problems and eventually some combination are just gonna get us. Doesn't have to be any one problem alone, it just has to be some temporary convergence of events that pushes most of human civilization past its breaking for /just long enough/ for the damage to be permanent.
+
+Infected stab wounds are fucking terrible, but can ultimately be treated in a way that may leave you severely injured for life but alive. Cancer is likewise. Getting infected stab wounds while also having cancer leaves a lot less chance of survival.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1509376319.0
+:END:
+
+****** Hmm. I see. Do you have any specific examples/evidence for this conclusion?
+:PROPERTIES:
+:Author: Kishoto
+:Score: 1
+:DateUnix: 1509393329.0
+:END:
+
+******* Known present-day factors:
+
+- Global warming
+- Economic stagnation since 2008
+- Economic stagnation since /the 1970s/, with productivity-growth rates being surprisingly low
+- The number of war deaths has started ticking up again starting in 2011
+- Economic and cultural crisis driving a descent into authoritarianism and demagoguery in most developed countries
+- Antibiotic-resistant bacteria
+
+Exotic possible future factors:
+
+- Economic inequality crisis induced by automation
+- Unfriendly artificial general intelligence
+- Biotechnology making bioterrorism cheap-as-free
+- Distributed manufacturing technology making firearms and other weapons impossible to control
+
+Again, I don't think there will be any single huge "BANG!" to which to point and say, "That was it, that was the end." It feels more to me like more and more of these things are just /piling up/, and if we want to avoid catastrophe, we need to start actively moving through the pile /solving them/ and driving away the danger. Instead, we're fighting each-other over trivial bullshit.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1509394753.0
+:END:
+
+******** #+begin_quote
+
+  - Economic stagnation since 2008
+  - Economic stagnation since the 1970s, with productivity-growth rates being surprisingly low
+#+end_quote
+
+Is this the US, the West/the developed world, or the whole world?
+:PROPERTIES:
+:Author: waylandertheslayer
+:Score: 1
+:DateUnix: 1509406961.0
+:END:
+
+********* Both were referring to the developed Western world, usually being pushed along since the '70s with debt-driven, low-productivity-growth financialized bullshit-stuff, which eventually bit everyone in 2008.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1509407048.0
+:END:
+
+
+**** #+begin_quote
+  If you get the sense that the world is coming to an end, you're entirely correct. Please help the rest of us handle this.
+#+end_quote
+
+Oh my sense is far worse than that. Throughout history, humans have always been screwed over by things we didn't see coming. Right now, there are a small list of plausible near-term apocalypses, but of course I don't need to tell you that. It seems likely that we are going to get massively fucked, to put it as bluntly as possible, by something we didn't even consider. The only thing that makes me confident that we know what will get us is that very few people seem to notice, which while marginally comforting, is also incredibly alarming on its own merits. Manhattan Project level efforts would not be a bad place to start.
+
+I am getting the sense that there is something /I ought to be doing/ about the almost comical misallocation of resources we call civilization, but I am not sure what. Most intelligent adults I know seem content to do nothing about anything, which in fairness does appear to be the education system's opinion on the matter as well.
+
+EDIT: I would like to emphasize that I don't blame people for not doing much, given the demands of just staying in place. I have no illusions about what most lives entail.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1509208675.0
+:END:
+
+***** #+begin_quote
+  I am getting the sense that there is something I ought to be doing about the almost comical misallocation of resources we call civilization, but I am not sure what.
+#+end_quote
+
+Think in terms of what you /can/ do, what the circumstances of your life, your interests, your character afford to you. What are you good at, and what kind of issue or problem can you tear off and make doable on the scale of ten to 40 years worth of effort (depending on how long you think you can go on one thing without society wrecking your project)?
+
+#+begin_quote
+  EDIT: I would like to emphasize that I don't blame people for not doing much, given the demands of just staying in place. I have no illusions about what most lives entail.
+#+end_quote
+
+Thanks for that, on behalf of everyone I know just trying to survive and feel ok right now. Including me, actually.
+:PROPERTIES:
+:Score: 0
+:DateUnix: 1509215421.0
+:END:
+
+****** I would like to apologize. I realize that I must seem rather like a pissant kid, which is obviously accidental. More to the point, this sub has tried to help me, and I responded by insulting them by proxy of all humanity. It was an inappropriate use of my anger. I am sorry for my ingratitude.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1509228001.0
+:END:
+
+******* Oh, I wasnt criticizing. Seriously, thanks. I was just thinking a few minutes ago that I can't remember having a calm, pleasant year since 2010ish.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1509229497.0
+:END:
+
+******** I like everything in my life to be exciting, without my life itself. Hopefully your life reaches a point where you don't want any excitement, preferably until we all run out of negentropy.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1509230013.0
+:END:
+
+********* #+begin_quote
+  Hopefully your life reaches a point where you don't want any excitement
+#+end_quote
+
+Hey, for the right kind of excitement, I'm not /Rincewind/.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1509378767.0
+:END:
+
+
+*** I am very surprised that no-one has mentioned looking at the evidence-based research from [[https://80000hours.org][80,000 hours]], in particular the [[https://80000hours.org/articles/advice-for-undergraduates/][advice for undergraduates and potential undergraduates]]. This is the advice I wished I had been told before my stint at university.
+:PROPERTIES:
+:Author: e59ecc253ab2fb43e8e8
+:Score: 1
+:DateUnix: 1509228849.0
+:END:
+
+**** Wow. I tried their quiz and found out that /none/ of the stuff I put in can get them to recommend /anything/ to me but nonprofits, management consulting, and policy civil service.
+
+Like, I've always kinda wanted to do policy work, but I don't have the connections to get into that field. Management consulting is vomit-worthy "sounds neoliberal but ok" /crap/. "Effective" nonprofits and EA orgs? Well /why/? What I /want/ is academia, and what I already have is tech skills.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1509379973.0
+:END:
+
+
+*** [[http://www.paulgraham.com/hs.html]]
+:PROPERTIES:
+:Author: DraggonZ
+:Score: 1
+:DateUnix: 1509599062.0
+:END:
+
+
+*** I wanted to custom-write a set of especially insightful advice custom-tailored to your personality that would sound incredibly clever and pertinent, but it actually sounds like you mostly have your shit together, so I don't have that much to say.
+
+But smarter people than me do have much to say! What you said earlier about wanting to change the world made me think about [[http://kazerad.tumblr.com/post/90923468138/depth][this article by Kazerad on challenges and expectations]]; he wrote a few articles on the subjects of [[http://kazerad.tumblr.com/post/92214013593/power][responsibility]], activism, and how we personally relate to them which felt to me like a pretty fresh insightful perspective you don't really see anywhere else.
+
+Actually, I do one have custom-ish piece of advice for you: try to chill out. It's something I often say / want to say to trekie140 and eaturbrainz; I don't think it applies to you quite as much, but in a way it applies to anyone who identifies with the rationalist community.
+
+Don't take concepts and ideas to seriously. Question yourself often, but don't question yourself /too/ hard. Don't spend all your life trying to prevent the end of the world; focus on yourself, on your comparative advantages, and have fun. Don't rationalize yourself into a corner of obsessive misery.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 1
+:DateUnix: 1509760280.0
+:END:
+
+
+** I recently (well, a month and a half ago is /relatively/ recently) acquired a corn snake hatchling. I was concerned for a while that it was going to be a nonfeeder (meaning a snake that goes its entire life without eating; as you might imagine, the period of time covered by "its entire life" isn't particularly long). I tried a lot of different ways to get it to feed and eventually I had to force feed it, and the snake didn't regurgitate so now I know it's just a stubborn feeder and not a nonfeeder. It's not gonna up and die in the next few weeks (it'll probably live around 20 years) so I'm now allowing myself to become more emotionally attached to the snake.
+
+I've been calling it Mister Noodle, but that feels wrong, like naming a dog Doggy. I've tried out the name Morty, but I'm having trouble disentangling the name from associations with the character from Rick and Morty, it just doesn't feel right coming out of my mouth.
+
+Do you, dear lovely reader, have a suggestion for a name?
+
+I'd prefer the name to be two syllables with emphasis on the first syllable. Names of either gender will be considered equally. Snakes' brains are too small and simple for there to really be any meaningful behavioral differences between the genders, y'know, they only just barely have a personality at all, a snake's personality is snek, so all I care about in a name is that it looks aesthetically pleasing on paper and feels good coming out of my mouth.
+
+EDIT:
+
+I want the name to be simple and almost guttural, a very "round" name with a prominent O or U or both. I have three cats named Venus and Roxy and Milo. Ideally, the name wouldn't overlap with any of the cats' names, nothing like Tidus or Rocky or Shiloh.
+
+EDIT EDIT:
+
+My mother, when given the constraints listed in the previous edit, almost immediately suggested the name Rudolph. I'm iffy about the fact that it begins with an R, and I don't like the fact that I think about the reindeer every time I say the name, but it's very close to what I'm looking for.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 4
+:DateUnix: 1509151003.0
+:END:
+
+*** When I think of snakes, I am invariably reminded of Ancient Egypt, and there are some cool two syllable Egyptian names like Djoser, Neheb, and of course Apep. That being said, corn snakes are not Egyptian and given your reference points are Morty and Noodle you are not looking for anything exotic.
+
+For maximum snake irony, there is always Adam (Eve is monosyllabic of course). Alex is popular, genderless, and inoffensive, with a pleasing sound. I find Mary, David, Richard, Harry, and Hanna to have nonzero personality without being Chad, or similar. The suite of angel names, Michael, Raphael, URIEL, etc., convey tiny amounts of mysticism without being Hastur, although some are longer than you specify.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1509153508.0
+:END:
+
+**** Yeah, probably not "exotic." My first thought was to name him Mephistopheles or Mephisto, but it's got such a tiny brain and snakes don't have external ears, so I want it to be simple and almost guttural, a very "round" name with a prominent O or U or both.
+
+I have a cat named Venus and a cat named Roxy and a cat named Milo, and there are humans who have those names, but, like, /Richard/? /Michael/? Those are /definitely/ "people names" LOL
+
+Ideally, the name wouldn't overlap with any of the cats' names. My mom thought Milo's name should be Brutus, but I shot that down because of the overlap with Venus.
+
+Anyway, thank you for trying to help :)
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 3
+:DateUnix: 1509162959.0
+:END:
+
+***** There is no intensifying adverb in any language I know that is strong enough to emphasize how incompetent I am at naming things. A few years ago I had a pet named Fred. My name on reddit is the most creative one I have ever thought of by a wide margin. So that was the old college try on my part.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1509163676.0
+:END:
+
+****** Oh don't get the wrong idea, my mom chose the names Venus and Roxy, I had nothing to do with either of them. I got Milo's name off a list of pet names. When I was a very small child, probably between the ages of 3 and 5, I had a series of fish (because fish are short-lived) and I named every one of them Cleo because that was the name of the fish in Pinocchio. I wasn't particularly fond of the movie, it was just the only movie I had seen that had a named pet fish when I was that age. I've had this snake for 6 weeks and I haven't given it a proper name yet.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 2
+:DateUnix: 1509164063.0
+:END:
+
+
+*** Quirrel.
+:PROPERTIES:
+:Author: Predictablicious
+:Score: 4
+:DateUnix: 1509188573.0
+:END:
+
+**** Yes but that's ... I mean, on a scale of "round" to "sharp" it's not necessarily a "sharp" name, but it's not particularly "round," either. Snakes don't have external ears, they're not technically deaf per se but they're a lot more reliant on vibration than we are, so I want the name to be semi-guttural.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 1
+:DateUnix: 1509189084.0
+:END:
+
+***** Draco is another option, it's more gutural.
+
+Leaving the HP space, there are some names that can have an emphatic pronunciation making them almost gutural (e.g. name they Khan and do your best Shatner impression).
+
+I would go for Jörmungandr but it's way longer than you want.
+:PROPERTIES:
+:Author: Predictablicious
+:Score: 3
+:DateUnix: 1509190137.0
+:END:
+
+****** I honestly can't figure out why I didn't already think of the name Draco. It's a great option. Rudolph was going to be the de facto name if I couldn't figure out a better name, but Draco just pushed to the front of the line. Thanks for that suggestion.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 1
+:DateUnix: 1509190995.0
+:END:
+
+
+*** There's always [[https://en.wikipedia.org/wiki/Ouroboros][Ouroboros]] (Ouro for short) the metaphorical snake that eats its own tail, symbolising eternity (especially a cyclical eternity). Pronunciation varies, so I'd just go with "Oo-row" for the short form.
+
+Other possibilities:
+
+- Rook or Brook
+- Muon or Gluon
+- Fuse (you can joke that it was short for "Refuses to eat")
+- Bluey (only if the snake is definitely /not/ blue, preferably red instead; this is an Australian style of nickname that may not translate)
+- Cue ball (if white)
+- Oolong (a type of tea, often [[https://www.organicfacts.net/wp-content/uploads/2013/05/Oolongtea1.jpg][this sort of colour]])
+
+None of those are particularly similar to "Rudolph" though.
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 4
+:DateUnix: 1509209760.0
+:END:
+
+
+*** My suggestions are:
+
+Rocky
+
+Archie
+
+Razja
+
+Sumi
+
+Lilac
+
+Personally I think Razja sounds like the name of a stubborn snake, but then again, not my snake.
+:PROPERTIES:
+:Author: over_who
+:Score: 3
+:DateUnix: 1509156298.0
+:END:
+
+**** Thank you for the suggestions, but three of them have an "ee" sound for the second syllable and I already have a cat named "Roxy." I should have specified things like that, I'm going to go up and update the comment now.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 2
+:DateUnix: 1509164465.0
+:END:
+
+
+*** I think if you post this list of requirements to [[/r/namenerds]] you'll have some great suggestions. I post there from time to time but nothing springs to my mind.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 3
+:DateUnix: 1509186345.0
+:END:
+
+**** That's an excellent suggestion, thank you. I'm going to ask them as well.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 2
+:DateUnix: 1509189135.0
+:END:
+
+
+*** /Nahash/, Hebrew word for "snake".
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1509206544.0
+:END:
+
+
+** [[https://danluu.com/su3su2u1/hpmor/][A very comprehensive and fairly entertaining criticism of /HPMoR/]]
+
+I stumbled across a link to this morsel [[https://i.imgur.com/UH3of0B.png][on 4chan's /tg/ board]]. Here's [[https://i.imgur.com/E12AvOe.png][a bonus image from the same thread]].
+
+--------------
+
+[[http://i0.kym-cdn.com/photos/images/original/001/306/069/ef1.jpg][The demicolon]] ([[http://www.collegehumor.com/post/6009631/new-punctuation-marks-for-grammar-nerds][source]])
+
+I think I've mentioned that using hyperlinks in text is wonderful because it allows the writer to add another dimension to his 1D text without resorting to the cumbersome workaround of footnotes. See also fancy Javascript footnotes that pop up when you move your cursor over them ([[http://www.gwern.net/Death-Note-Anonymity][example]])---but I generally dislike the use of Javascript when HTML and CSS suffice for the purpose.
+
+--------------
+
+[[http://www.zachtronics.com/][Zachtronics]] has just released [[http://www.zachtronics.com/opus-magnum/][/Opus Magnum/]], a direct (hexagon-based, [[http://store.steampowered.com/app/558990/Opus_Magnum/][$20]]) sequel to (square-based, free) [[http://www.zachtronics.com/the-codex-of-alchemical-engineering/][/The Codex of Alchemical Engineering/]] and [[http://www.zachtronics.com/the-magnum-opus-challenge/][/The Magnum Opus Challenge/]]!
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 3
+:DateUnix: 1509132758.0
+:END:
+
+*** Something I've said before about that critique:
+
+Ugh. This review is sneering so hard that it comes across as the author having an axe to grind, which would be tolerable on its own if they actually made good criticisms, but instead within a few paragraphs they get many parts of the plot or themes of the story blatantly wrong or show that they massively missed the point of it.
+
+Criticisms of the actual science would be useful if I could trust the author to know what he's talking about. Having found out that he's been using alt accounts to lie about his experiences and credentials in argument threads massively lowers my confidence in anything he says being worth following up on beyond the amount I normally do for new ideas I encounter.
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 11
+:DateUnix: 1509180160.0
+:END:
+
+
+*** Su3su2u1 is gone? NOOOOOOOO!
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1509135325.0
+:END:
+
+**** He had a lot of sock puppets he used to claim expertise in various areas when he needed support for arguments that he was making or just wanted to stir up shit. So ... yeah, he wasn't exactly the kind of quality opposition that you want. Use alt accounts ethically, people!
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 12
+:DateUnix: 1509136173.0
+:END:
+
+***** Opposition? I read his Tumblr sometimes and thought he had interesting things to say.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1509137005.0
+:END:
+
+****** Even if that was what you were in it for, you should know that his pattern of operation was to talk about various subjects outside his area of expertise, then when challenged on that lack of knowledge, come in with a sock puppet "with a PhD" or "years of experience" to back him up.
+
+Fuck that guy.
+
+Edit: And because I don't want to just defame someone, [[https://slatestarscratchpad.tumblr.com/post/140061032741/nostalgebraist-shlevy-im-the-reason][here's a link]] to some discussion on the topic, see particularly the post from slatestarscratchpad, which is Scott Alexander's tumblr.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 18
+:DateUnix: 1509137406.0
+:END:
+
+******* Yeesh. I've said before that he came off as someone with an axe to grind, but I didn't realize how far he took things.
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 8
+:DateUnix: 1509180243.0
+:END:
+
+
+******* Honestly, I'm amazed the internet is still functioning as a place with /any/ social trust at all. You can lie all the time and it's not that hard, you can pretend to have expertise you don't have, and you're never going to get caught unless you're sloppy.
+
+When you think about it, it's kind of like a giant experiment where everybody is given Plato's ring of Gyges at the same time, and for some reason most people only use it for being really passive aggressive.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 5
+:DateUnix: 1509204220.0
+:END:
+
+
+******* Well /shit/.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1509137730.0
+:END:
+
+
+*** #+begin_quote
+  See also fancy Javascript footnotes that pop up when you move your cursor over them ([[http://www.gwern.net/Death-Note-Anonymity][example]])---
+#+end_quote
+
+I hovered my mouse over that for too long, thinking it was like [[#a][this]].
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 1
+:DateUnix: 1509133353.0
+:END:

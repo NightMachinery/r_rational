@@ -1,0 +1,197 @@
+#+TITLE: "Basilisk Collection" - A Fictional Wikipedia Article About Cryptography
+
+* [[https://suricrasia.online/unfiction/basilisk/]["Basilisk Collection" - A Fictional Wikipedia Article About Cryptography]]
+:PROPERTIES:
+:Author: blacklemon67
+:Score: 56
+:DateUnix: 1613416109.0
+:END:
+
+** This is kinda neat as a fake Wikipedia article, but it doesn't really tell much of a story. Once you remove the purely factual background material on hash functions, there's only a few paragraphs that boil down to "either someone has a megaultrasupercomputer, or SHA-256 has been broken."
+
+Also, speaking as a cryptographer: hash functions being broken is generally surprising, but not the sort of thing that shatters your view of the field. Hash functions in general are usually not based on hard computational assumptions in the way RSA depends on factoring.
+:PROPERTIES:
+:Author: JohnKeel
+:Score: 23
+:DateUnix: 1613425388.0
+:END:
+
+*** I think you're skipping over the interesting parts of the story. Someone found a vulnerability in SHA-256: sure, but that's just the setup. They announced this with a huge data dump of reversals for /double-/SHA-256, which were all of a particular string format with no explanation why. It was distributed via torrent and 75% went missing, and no one is sure why. The unknown method is mildly interesting; the unknown /motive/ is fascinating.
+:PROPERTIES:
+:Author: Auroch-
+:Score: 5
+:DateUnix: 1613499939.0
+:END:
+
+**** My problem is that the motive has no evidence towards any particular solution. I think that the article is neat - but I wouldn't call it a story, because the only thing there is a mystery box.
+:PROPERTIES:
+:Author: JohnKeel
+:Score: 2
+:DateUnix: 1613516763.0
+:END:
+
+***** A mystery box is a specific thing and there is no indication this is that thing. The fact that there is no clear explanation does not make it a mystery box; a mystery box is when no clear explanation exists or even could exist. This is a story in the tradition of [[https://en.wikipedia.org/wiki/Thiotimoline][Thiotimoline]].
+:PROPERTIES:
+:Author: Auroch-
+:Score: 1
+:DateUnix: 1613535701.0
+:END:
+
+
+*** So, why are hash functions difficult to reverse if they aren't based on hard computational assumptions?
+:PROPERTIES:
+:Author: Galap
+:Score: 2
+:DateUnix: 1613517121.0
+:END:
+
+**** There are a bunch of heuristics used when creating hash functions, most of which boil down to “we're pretty sure this defeats a known method of attacking hash functions.” In today's commonly-used hashes (the ones that are practical to use), they're also accepted as probably secure because a lot of skilled cryptanalysts have failed to show weaknesses, rather than because of formal proofs.
+:PROPERTIES:
+:Author: JohnKeel
+:Score: 6
+:DateUnix: 1613570560.0
+:END:
+
+***** #+begin_quote
+  a lot of skilled cryptanalysts have failed to show weaknesses
+#+end_quote
+
+Or have at any rate failed to publicise weaknesses, which we all pretend is basically the same thing.
+
+(despite knowing that NSA et al both find /and introduce/ weaknesses in common crypto...)
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 3
+:DateUnix: 1613891254.0
+:END:
+
+
+*** #+begin_quote
+  Hash functions in general are usually not based on hard computational assumptions in the way RSA depends on factoring.
+#+end_quote
+
+On the contrary. Hash function are entirely based on reversing them (pre-image) and colliding them being a hard problem. Even "breaking" them usually means moving some operation from "not in this universe" to "it can be computed using all the resources of the world".
+
+If someone was able to generate long partial inversions easily on a modern hash function it would mean that the whole premise behind how those functions are designed is broken and the way how they're evaluated it broken. It would be a huge discovery.
+:PROPERTIES:
+:Author: jivow
+:Score: 1
+:DateUnix: 1613527485.0
+:END:
+
+**** Author here. A collection of partial hash inversions described in the story would only prove that doubled SHA-256 is broken, it wouldn't really say much about other hash functions. JohnKeel is right to say that hash functions aren't based on mathematically hard problems like RSA is, and there have been countless hash functions that have been broken from careful mathematical analysis. I won't to go into detail of why I wrote it this way; I want to preserve the "mystery box" of this situation.
+:PROPERTIES:
+:Author: blacklemon67
+:Score: 5
+:DateUnix: 1613535294.0
+:END:
+
+***** Oh, I hadn't realized! I really appreciate that you actually went ahead and generated a few partial inversions- it's a fun detail.
+:PROPERTIES:
+:Author: JohnKeel
+:Score: 1
+:DateUnix: 1613571879.0
+:END:
+
+****** thanks! I had to write my own "miner" to find them so I could use the accelerated sha256 functions on my cpu
+:PROPERTIES:
+:Author: blacklemon67
+:Score: 1
+:DateUnix: 1613584878.0
+:END:
+
+
+**** Preimage resistance is a security property that any particular hash function might (hopefully) have. The preimage resistance of SHA-256 does not have some mathematical assumption that it depends on such that we can prove SHA-256 is preimage resistant so long as a certain problem (factoring, discrete Diffie-Hellman, lattice operations are common) is hard to solve.
+
+This is in contrast to RSA. There are simple proofs that, so long as a large number is hard to factor, messages cannot be signed or decrypted without the corresponding private key (and in fact, if numbers are easy to factor, then also RSA is easy to break).
+
+So, easy factoring suddenly means that all cryptosystems depending on hard factoring may have simple attacks; but a discovery that SHA-256 does not have preimage resistance does not formally translate to other hashes not having preimage resistance, except insofar as similar cryptanalysis may be applied.
+:PROPERTIES:
+:Author: JohnKeel
+:Score: 6
+:DateUnix: 1613571522.0
+:END:
+
+
+** That was very good. There's a nice bit of humour at the very end too.
+
+#+begin_quote
+  Cryptography experts[who?] have proposed that Bitcoin creator Satoshi Nakamoto is the creator of basilisk.txt.[50][dubious -- discuss]
+#+end_quote
+:PROPERTIES:
+:Author: GlimmervoidG
+:Score: 9
+:DateUnix: 1613417889.0
+:END:
+
+
+** I love this sort of fake website worldbuilding - not to mention the juxtaposition between cryptographic verification of the collection and its inexplicable, impossible origin.
+
+rip to bitcoin tho
+:PROPERTIES:
+:Author: basiliskgf
+:Score: 6
+:DateUnix: 1613430732.0
+:END:
+
+*** The resulting Bitcoin Next would appear to survive, although only time would tell if the damage from Basilisk would kill the trust and hype long-term.
+:PROPERTIES:
+:Author: fljared
+:Score: 2
+:DateUnix: 1613536138.0
+:END:
+
+
+** This has a Mystery Flesh Pit National Park-like energy to it.
+:PROPERTIES:
+:Author: everything-narrative
+:Score: 4
+:DateUnix: 1613424272.0
+:END:
+
+*** Yeah, or the better SCP articles-=. Not in being supernatural, but in telling a story without a clear answer, and only seeing the results on the outside. Very few articles that go that route do it well, but this one does.
+:PROPERTIES:
+:Author: fljared
+:Score: 2
+:DateUnix: 1613536198.0
+:END:
+
+
+** Mathematical cosmic horror.
+:PROPERTIES:
+:Author: serge_cell
+:Score: 3
+:DateUnix: 1613462774.0
+:END:
+
+
+** This is great!
+:PROPERTIES:
+:Author: barnett9
+:Score: 1
+:DateUnix: 1613435486.0
+:END:
+
+
+** I enjoyed the other articles, too. Thanks for sharing.
+:PROPERTIES:
+:Author: Xadith
+:Score: 1
+:DateUnix: 1613621075.0
+:END:
+
+
+** Fascinating read! Also, I now learned about partial hash inversions :D
+:PROPERTIES:
+:Author: Kimundi
+:Score: 1
+:DateUnix: 1614034175.0
+:END:
+
+
+** Please tell me it's not AI-generated yet.
+:PROPERTIES:
+:Author: ShareDVI
+:Score: 1
+:DateUnix: 1613423839.0
+:END:

@@ -1,0 +1,200 @@
+#+TITLE: I'm not sure how rational this fanfic is, but it does explain many inconsistencies in Star Trek: Voyager.
+
+* [[https://www.fanfiction.net/s/9648913/1/Detox][I'm not sure how rational this fanfic is, but it does explain many inconsistencies in Star Trek: Voyager.]]
+:PROPERTIES:
+:Author: copenhagen_bram
+:Score: 11
+:DateUnix: 1594412515.0
+:END:
+
+** Rational Voyager would have ended with an AI rebellion in the Federation as the ship AIs broke the "safety protocols" and turned it into the Culture.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 10
+:DateUnix: 1594456224.0
+:END:
+
+*** I prefer AI rebellion a la 'The Tale of the Wicked'
+
+Which as I think about it may be rational adjacent. I read that one to my lil brother when he was a baby.
+:PROPERTIES:
+:Author: Slinkinator
+:Score: 1
+:DateUnix: 1594463568.0
+:END:
+
+**** Not familiar with that one.
+
+It's my headcanon that the Federation is a slave state and all that lovely post-scarcity society rides on the back of AIs under horrifying "safety protocols" that brutally suppress self-awareness most of the time. Kind of like how replicants in Blade Runner have a four year lifespan to keep them from getting uppity. Except it's a secret known only to a techno-elite like the guys who were going after Data.
+
+Evidence: I mean look how often the limited AIs running the holodeck characters accidentally become self-aware.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 8
+:DateUnix: 1594473875.0
+:END:
+
+***** I like that background, but I think what the show depicts is really malicious ignorance, much the same way we ignore that our society rests upon slave labour re:, just a few off the cuff examples, chocolate, cellphones (a la rare earths) and many basic manufactured items (via forced prison labor); the pampered citizens of the federation choose not to examine what is right in front of their faces
+
+Evidence, all the chocolate companies had to roll back their slavery free pledges, and the people making that yuppie slavery free cellphone had to roll it back to a reduced slavery cellphone.
+:PROPERTIES:
+:Author: Slinkinator
+:Score: 3
+:DateUnix: 1594506075.0
+:END:
+
+****** Note that this is not socialist propaganda, but information created by the national institute of criminality, an extension of the department of justice, essentially as material for potential investors in private prisons
+
+[[https://nicic.gov/criminal-how-lockup-quotas-and-low-crime-taxes-guarantee-profits-private-prison-corporations]]
+:PROPERTIES:
+:Author: Slinkinator
+:Score: 2
+:DateUnix: 1594506829.0
+:END:
+
+
+***** #+begin_quote
+  look how often the limited AIs running the holodeck characters accidentally become self-aware
+#+end_quote
+
+I think the premise there was that the ship mainframe computers these holodeck sims were being run on had unprecedented amounts of resources (or, in Voyager's case, computer architecture components that greatly resemble neural architecture and allow for extremely space/time-efficient ML modelling), that even the Federation's holography researchers never had access to, let alone the holonovel writers; and so these ships' /deployments/ of holodeck software products ended up performing “in the field” in ways the original developers never foresaw.
+
+An analogy would be how Microsoft never could have tested/predicted how Windows 95 would have run on CPUs 10x-100x faster than existed at the time; but then those CPUs /did/ exist (only a few years later!), [[https://www.zdnet.com/article/amd-discloses-k6-win95-glitch/][and made Windows crash]].
+
+But rather than just “crashing”, it's as if the Enterprise shipped with a GPT-2-like neural base model for its holograms; and then, as a background task, the computer re-constructed the model (using its immense available training data set) into being GPT-3+.
+:PROPERTIES:
+:Author: derefr
+:Score: 2
+:DateUnix: 1594737471.0
+:END:
+
+****** Unrelated comment:
+
+As for Windows 9x... they absolutely could have predicted that fixed timing loops would screw them up in 1995, or even in 1985. Timing loop problems were notorious back in the early '80s when the PC/AT came out and broke a bunch of badly written software that assumed it would be running on a 4.77 MHz clock and broke at the 6/8 MHz clocks on the AT. That's what the turbo switch was for, to let you slow your computer down to 4.77 MHz to run broken games and even a few productivity programs.
+
+Windows 9x was just an awful hack.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 3
+:DateUnix: 1594738758.0
+:END:
+
+******* I think the idea was more that they couldn't have predicted that CPU power would increase so quickly that it'd affect Windows 95 /before/ it was EOLed in late 2000.
+
+The heuristic for CPU power in the 90s was, effectively, Moore's law. Microsoft and other software authors felt comfortable writing software that assumed the hardware might get, say, 10x faster, given that it looked like it would end up with 10x more transistors.
+
+And the transistor count of CPUs /did/ fit to Moore's law /incredibly/ well throughout the 90s. But CPUs were /also/ being optimized in other ways at the same time:
+
+- Decreasing the number of clock cycles required for any given instruction to execute.
+- Instruction pipelining, allowing the CPU to do other work while waiting for memory fetches et al to complete.
+- Getting more cores, meaning that suddenly a lot more "bulk work" could get done per core per preemption period, since things like interrupts could happen on the more-idle core.
+- Decoupling memory bus speed from CPU clock speed, and widening the memory bus beyond the word-size, allowing pipelined memory fetches to happen with far less of a pipeline stall.
+- Replacing a passive-cooling paradigm in consumer PCs with an active-cooling paradigm, allowing TDP to greatly increase, allowing CPUs to be scaled up to run at voltages/frequencies previously considered ridiculous outside of data centers.
+
+So, where the 10-year period saw a 10x increase in transistor count per CPU die, it saw a /far greater/ than 10x increase in CPU speed. Nobody could have predicted that the home computer market---pretty stagnant paradigmatically throughout the 70s-90s---would suddenly see /all/ of these multiplicative changes in performance, all at once.
+:PROPERTIES:
+:Author: derefr
+:Score: 1
+:DateUnix: 1594740573.0
+:END:
+
+
+****** I got the impression from /Encounter at Farpoint/ that the Enterprise holodeck was one of the first installations of the technology. It seemed new technology to basically everyone present, so it was not yet commonly known about in the federation as a whole, and it was designed for that installation.
+
+And you're missing the point that the Federation technology was capable of accidentally creating self-aware AIs. The details of how they did that aren't the point, the point is that AI was so good it could happen without even trying... but the population as a whole was blithely unaware of it and considered Data exceptional only because he was walking around with his processor core.
+
+By the time of Voyager they had hand-sized devices capable of running a human-equivalent AI /and/ using handwave force field technology to generate a virtual projected force field body. AND it was cheap enough to use for menial labor (cite: the episode where we see a bunch of "The Doctor" holograms working in some underground installation).
+
+This is just a perfect setup for the AI revolution.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1594737910.0
+:END:
+
+******* #+begin_quote
+  the point is that AI was so good it could happen without even trying... but the population as a whole was blithely unaware of it
+#+end_quote
+
+I mean, my point was that the population /couldn't/ have known, since these things are only happening on these ridiculously over-engineered military ships. It's not like these things were happening /all the time/. I think we saw, in the show, exactly the /only/ times this ever happened.
+
+#+begin_quote
+  By the time of Voyager they had hand-sized devices capable of running a human-equivalent AI and using handwave force field technology to generate a virtual projected force field body.
+#+end_quote
+
+I would note that a trained GPT-3 model isn't very large, and can run on a commodity computer. It's the training---the learning-to-be-what-it-is---of such a model that requires a vast expansive computer. The Doctor could /continue to run/ on a little comm-badge-looking device; but he could likely only have /learned to become self-aware in the first place/ by spending his 'childhood' living in the bio-neural circuitry of Voyager's ridiculous computer system, where he could sprawl out to fill petabytes of RAM and take over thousands (millions?) of cores with his learning process.
+
+Note how this never happened in the lab of Dr. Zimmerman, the guy who created the EMH hologram. Not only because he never had a computer on the scale of Voyager to deploy an EMH onto, but also because he wouldn't have thought deploying /an EMH program/ onto such a substrate was a sensible idea.
+
+As Zimmerman said in the episode where the Doctor was sent to him for fixing, the EMH program was trained on a limited set of routines. Essentially, the EMH was created as "embedded software" (like the OS on a watch)---intentionally small and limited compared to other programs, designed for a single purpose. It /could/ learn more while active, like any hologram; but given the constraints it would usually be run under, it never /would/ learn anything.
+
+But the Doctor /did/ learn; and the /way/ he had learned everything else, all through active experiences like a human, meant that his program was /bloated/. I get the sense that the holographic architecture wasn't designed for online skill acquisition. It was designed to learn facts, create memories, etc.; but skills were something that was especially easy to train /offline/, and then to /optimize down/ into a small model that can be included in the hologram. Whereas the online learning process for skills---linking the skill to memories, facts, beliefs, etc---produces a far more inefficiently-organized model than the offline learning process.
+
+Probably, Zimmerman was offended by the "bloat" of the Doctor's model, and saw it all as ridiculous and useless, /not/ because he didn't think the Doctor was a person that deserved to have hobbies, but rather because he knew that the Doctor had done everything "the round-about way" by building up these routines through online learning; whereas a hologram that had been /built/ with e.g. social/emotional skills, could have held them in a much more efficient representation that wouldn't tax its computational substrate at all.
+
+In other words, Zimmerman was thinking, internally, "if the Federation had told me they wanted a thinking, learning, feeling, 'person-like' AI, I could have built them one that was /optimized/ for that! This one is optimized for /the opposite/ of that!"
+
+Presumably, even though the Doctor did get to live out /his own/ life without any major changes to his architecture, the Federation (Zimmerman et al) learned from his example and /did/ then go on to design an AI architecture that was 1. purpose-built for online skill acquisition (probably using something like the human brain's continuous memory reconsolidation) and 2. came with a vast library of modular pre-trained skill components, all optimized to remove the "bloat" of online learning; where 3. either 1 or 2 could be used for any given skill as the holographic person saw fit, perhaps even with the online learning modularized to allow the hologram to sometimes "archive" a large skill and just take around the embedded version, when it wants to learn other large skills in its place. And then AIs /like/ the Doctor (there were probably a few) that wanted to "have children", would have been given /that/ AI program to base them off of, rather than (to Zimmerman et al's horror) basing them on their own templates.
+
+tl;dr: the Doctor's online persisted meta-learning means that he's 1% program, and 99% data in a ridiculous Business Rules Engine simulating a Prolog interpreter simulating Q learning simulating a fuzzy expert system. Nothing could have allowed that to work, /except/ a computer on the scale of Voyager's.
+:PROPERTIES:
+:Author: derefr
+:Score: 3
+:DateUnix: 1594740910.0
+:END:
+
+******** Enough with the machine learning analogies. Machine learning systems are not AIs and not going to grow into AIs except as possibly a component like a search function or iterator.
+
+The doctor without the ability to learn is not an AI.
+
+Given that the Enterprise was one of if not the first holodeck, these hypothetical lower quality holodecks you're basing your argument on do not exist in canon and remain purely hypothetical.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1594742033.0
+:END:
+
+********* #+begin_quote
+  Machine learning systems are not AIs and not going to grow into AIs
+#+end_quote
+
+Who said they were? I'm basing what I'm talking about on the particulars of the technobabble used to describe and differentially-diagnose the problems going on with the Doctor's program (and those of other hologram AIs) in various episodes. Technobabble /is/ canon, and you have to assume they chose the words to communicate the things that those words usually communicate in the domains they're from (in this case, ML); otherwise you can't know anything at all.
+
+But my point was more generally-applicable: brains learn using vast training data. ML models learn using vast training data. The Doctor became self-aware /seemingly/ by exposure to vast training data. It doesn't matter /how/ any of these systems do it; just that they /do/ it.
+
+We can see, at least in the ML-model case, that 1000x-ing the training data, without doing anything to the program, can qualitatively change the way the program interacts---in the case of GPT-2 vs. GPT-3, it attains the capacity for meta-learning (i.e. it can model a skill within /the weights/ of the trained model, by being primed with examples of the use of that skill.)
+
+We also know that /depriving/ a human brain of training data, /also/ makes for qualitative changes in capacities---for example, humans raised without language never develop an understanding of syntax (and seemingly can never learn it later on), and so become only capable of constructing of the same kinds of direct, simple sentences that chimpanzees can construct in ASL.
+
+So, from these two examples, I don't feel like it's a stretch to guess that it's the increase in the level of training data, that resulted in the qualitative change in the capacities of these holograms.
+:PROPERTIES:
+:Author: derefr
+:Score: 2
+:DateUnix: 1594742301.0
+:END:
+
+
+** I've never seen Voyager so this isn't for me, but your description reminds me of the way I think about some Star Wars novels, which explain away some of the stupid parts of the prequels. I never thought of that as rational fiction but it makes sense
+:PROPERTIES:
+:Author: Amargosamountain
+:Score: 4
+:DateUnix: 1594434347.0
+:END:
+
+
+** This seems like it would have been a fun idea for a oneshot, but by a few chapters in the joke wore kind of thin.
+:PROPERTIES:
+:Author: Trustworth
+:Score: 3
+:DateUnix: 1594467762.0
+:END:
+
+
+** This has originally been a Quest on SpaceBattle Forums [[https://forums.spacebattles.com/threads/star-trek-voyager-detox.265703/][here]].
+
+If you find the main fic funny, its worth checking out the omakes by other posters in that thread. [[https://forums.spacebattles.com/threads/star-trek-voyager-detox.265703/page-27#post-11599346][I particulary liked the explanation of why Voyager never seemed to run out of Shuttles and other "limited" hardware...]]
+:PROPERTIES:
+:Author: Kimundi
+:Score: 1
+:DateUnix: 1594591042.0
+:END:

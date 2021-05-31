@@ -1,0 +1,221 @@
+#+TITLE: [Q] Consistent Dragons (D&D 3.5)
+
+* [Q] Consistent Dragons (D&D 3.5)
+:PROPERTIES:
+:Author: KZLightning
+:Score: 5
+:DateUnix: 1438270419.0
+:END:
+I am trying to think of a consistent version of D&D dragons that matches the information found in the Draconomicon as much as possible. The problem is that I simply do not know enough biology or physics to determine the right answers.
+
+According to the book, Dragons are essentially mammals that lay eggs. (Yes, some mammals do lay eggs.) Their physiology is a mix of large cat and bird with scales added.
+
+One of the problems of the book is that dragons are supposed to be able to fly without direct magical assistance. This seemed problematic, so I wanted to know whether it was reasonable or whether or not magical assistance really was necessary. According to the book, dragon bones are very light and hollow on the inside (like birds), but are very strong (think carbon nanotubes). The muscles of the dragon are extremely strong and gain their energy from a magical organ.
+
+A mature adult silver dragon (200-400 years old) is a huge creature, capable of flying at 25ft/s. The wingspan is between 75 (max) and 30 (min) feet. The dragon weighs 20 000 pounds. Given this information, how fast would the dragon have to beat its wings in order to fly? Also, how strong would its muscles and bones have to be to withstand that level of activity?
+
+
+** I'm visualizing traincar-sized hummingbirds. Actually, that's terrifying.
+:PROPERTIES:
+:Author: pedanterrific
+:Score: 7
+:DateUnix: 1438276552.0
+:END:
+
+
+** Not a biologist, but ...
+
+The largest flying animals were the [[https://en.wikipedia.org/wiki/Pterosaur_size][pterosaurs]]. At 500 lbs, that puts them at roughly the size of juvenile to young, depending on species. Given that pterosaurs definitely could fly, we're in the range of plausibility for Medium-sized dragons. The problems start to arise when we increase their size; the square-cube law says that as we double the size of a dragon, we square the area of it and cube the weight.
+
+Here's a simplified chart (taken from the page for black dragons):
+
+| Size       | Wingspan | Weight      |
+|------------+----------+-------------|
+| Tiny       | 8 ft.    | 5 lb.       |
+| Small      | 16 ft.   | 40 lb.      |
+| Medium     | 24 ft.   | 320 lb.     |
+| Large      | 36 ft.   | 2,500 lb.   |
+| Huge       | 60 ft.   | 20,000 lb.  |
+| Gargantuan | 80 ft.   | 160,000 lb. |
+
+Note the problem here? Weight is increasing /really, really fast/, as we'd expect from the square-cube law. Each size category is effectively doubling size, quadrupling area, and octopuling weight. The problem here is that the surface area of the wing is being outstripped by the weight in a major way; we would not expect a scaled up dragon (pun not intended) to be able to support its own weight with its wings. We /really/ shouldn't expect them to get more maneuverable or faster. Going from Huge to Gargantuan increases the wing area by ~70% (assuming invariant wing shape), but weight increases by ~800%.
+
+You can fudge some of the numbers with non-magical materials that are equivalent to the best that humans could ever make, but you /really/ need to work on the weight problem; dragons should be as light as possible. Their fuel source obviously can't be meat either, though that's already canon.
+
+(It should be possible to work backward to work out how much power a gargantuan dragon needs to put into its wings in order to take flight.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1438273663.0
+:END:
+
+*** Good points. It is your last point in brackets that I really want an answer to, but the cube-square law is a very good point to bring up.
+:PROPERTIES:
+:Author: KZLightning
+:Score: 2
+:DateUnix: 1438274681.0
+:END:
+
+**** If you want to estimate the power required for flight, consider that most planes have a glide ratio of about 10:1 (gliders can go much higher, 50:1 or more). So with no power our dragon will descend 1m for every 10m forward. Power is P=Fv and the force of gravity is F=mg, so the power required to fly level is P=mgv/10 where m is mass, g is gravity (10m/s/s at ground level on Earth) and v is the maximum level flight speed of the dragon. (This is all ignoring magic)
+
+Once you have your power, you can work out how much the dragon needs to eat by multiplying the Power by the seconds spent flying per day and dividing by the energy density of their food.
+
+Of course if dragons are mostly gliders this changes, now, so long as the air rises at or above 1/10 the minimum flight speed of our dragon it will fly. (100ft/min is usually available during the day up to 500 or 1000ft/min depending on weather. On Earth) You can make the number smaller to match bird or man-made gliders (1/20-1/50) but that limits you to a glider-type shape, long thin wings, very aerodynamic body. BTW minimum flight speed is roughly related to wing loading (weight/wing area)
+:PROPERTIES:
+:Author: duffmancd
+:Score: 2
+:DateUnix: 1438293415.0
+:END:
+
+***** Thanks for the math. I wouldn't know where to find that information.
+
+Useful calculation. So since g is 9.8m/s/s (round to 10), the flight speed is 7.6 m/s (sustained level flight), and the mass is supposed to be 9000 kg. (That last number might be changing.) That gives a power of 67 032. Assuming that an adult dragon flies for about 3 hours per day, that is 723 945 600. I am not sure of the units this has? Is it Joules? If so, then the dragon needs to eat 19.5 meters square of fat per day. (Thankfully, the dragon does not need to eat food for energy.)
+:PROPERTIES:
+:Author: KZLightning
+:Score: 1
+:DateUnix: 1438296502.0
+:END:
+
+****** Yep you're right. Nice thing about SI is that all results are also in SI so that's 723MJ or 19.5 *kg* of fat. From a pure energy approach it's certainly possible. You may have more issues with the structural strength but they could have biological Carbon fibre bones/wing membranes or be reinforced with magic.
+
+Keep in mind that 7.6m/s is kinda slow for a dragon. 75ft base speed. Multiply everything by 2.67 for 200ft speed and 5.33 if they're "running". (Assuming DnD is close enough to Pathfinder that my calcs make sense.) So after a fight they're going to be quite hungry.
+
+They'll also burn a lot climbing for example E=mgh or 27MJ for 1000ft (low for a light plane, below most clouds). We can approcimate and say about 1kg of fat per 1000ft climbed.
+:PROPERTIES:
+:Author: duffmancd
+:Score: 2
+:DateUnix: 1438332204.0
+:END:
+
+******* The numbers are turning out to be more reasonable that I thought they would. I am unsure how to calculate for structural strength or muscle power though. (Thanks for the climbing information.)
+:PROPERTIES:
+:Author: KZLightning
+:Score: 2
+:DateUnix: 1438352287.0
+:END:
+
+
+*** #+begin_quote
+  the square-cube law says that as we double the size of a dragon, we square the area of it and cube the weight.
+#+end_quote
+
+I think you mean as we double the size the area multiplies by 4 and the weight by 8, according to 2^{2} and 2^{3}
+
+Probably just being pedantic, but there's always the chance someone'll read that and believe it for years.
+:PROPERTIES:
+:Author: Ishamoridin
+:Score: 2
+:DateUnix: 1438708409.0
+:END:
+
+
+*** Mark Witton had a good blog post on the masses of pterosaurs which I can't find at the moment, but [[http://markwitton-com.blogspot.com.au/2013/08/9-things-you-may-not-know-about-giant.html?m=0][here's]] one talking about a specific family with a good size comparison image (vs a giraffe and human).
+:PROPERTIES:
+:Author: duffmancd
+:Score: 1
+:DateUnix: 1438290041.0
+:END:
+
+
+** We've discovered a species called /Argentavis magnificens/, which, when alive, had a wingspan of 7m and weighed about 72kg (estimated). The reconstructions I've seen suggest it's got a total wing area of 3.5 square meters. Naively scaling that up, our dragon has a wing surface area closer to 350 square meters. In that case, our dragon can weigh nearly 8,000kg and still soar -- that's almost where we need to be. If we use extant birds, we can get somewhat lower weights, probably around 5,000kg, and that gives us a known cruising speed -- around 10m/s.
+
+Not quite the numbers you want, but within spitting distance, and things that fly tend to be lighter than you might expect.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1438277611.0
+:END:
+
+*** The weight numbers do not have to be perfectly accurate. I am trying to get as close as possible, not find exact matches. Furthermore, 10m/s is actually a good speed (for dragons), so that would work.
+:PROPERTIES:
+:Author: KZLightning
+:Score: 1
+:DateUnix: 1438280610.0
+:END:
+
+
+** You could fiddle with the setting some. If you decrease gravity, and increase air pressure, you can still justify most terrestrial life (including humans) and make flying significantly easier. A higher amount of oxygen in the atmosphere also justifies megafauna.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 1
+:DateUnix: 1438556800.0
+:END:
+
+
+** Your dragons might have to actively store materials that are lighter than air and materials as strong and light as carbon nanofibers to both sufficiently reduce weight and remain strong enough to beat their wings. They probably still wouldn't be maneuverable, but they could be more feasible.
+:PROPERTIES:
+:Author: darkflagrance
+:Score: 1
+:DateUnix: 1438274756.0
+:END:
+
+*** Canonically, large dragons are not maneuverable. Storing materials lighter than air is an interesting idea. I don't want to be deceived by nice sounding ideas though. Sometimes the math does not work out.
+:PROPERTIES:
+:Author: KZLightning
+:Score: 5
+:DateUnix: 1438275075.0
+:END:
+
+**** You're right, it doesn't. Storing anything increases weight, it just decreases density, which doesn't help with the wingspan problem.
+:PROPERTIES:
+:Author: pedanterrific
+:Score: 1
+:DateUnix: 1438276463.0
+:END:
+
+***** It would reduce weight if volumes that would be filled with air are instead filled with a lighter alternative (steam might be feasible for dragons due to some esoteric energy source maintaining suitable body temperatures and also allowing fire-breath). Metabolism would have to adjust for water in a gaseous form though.
+:PROPERTIES:
+:Author: darkflagrance
+:Score: 1
+:DateUnix: 1438276994.0
+:END:
+
+****** Hydrogen, methane or other lighter than air gases would all work. My problem is whether or not these additions would be enough to overcome the weight problem - especially with the larger dragons.
+:PROPERTIES:
+:Author: KZLightning
+:Score: 1
+:DateUnix: 1438280447.0
+:END:
+
+******* The way it works is that one liter of displaced air can lift 1.28 grams by buoyancy. That's with complete vacuum, hydrogen is slightly less efficient due to the weight of the gas. For example, the Goodyear blimp weighs right around 12k pounds. It needs 200k cubic feet of envelope to have lifting ability.
+:PROPERTIES:
+:Author: pedanterrific
+:Score: 1
+:DateUnix: 1438291862.0
+:END:
+
+******** That helps.
+:PROPERTIES:
+:Author: KZLightning
+:Score: 1
+:DateUnix: 1438296562.0
+:END:
+
+
+**** Take the temeraire path. Have dragons include air sacs that posses Hydrogen gathered through the electrolysis of water.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 1
+:DateUnix: 1438556659.0
+:END:
+
+***** Mentioned. If 1 L of hydrogen lifts about less than 1.28 grams of mass then hydrogen will not be enough.
+:PROPERTIES:
+:Author: KZLightning
+:Score: 1
+:DateUnix: 1438623147.0
+:END:
+
+****** not by itself, but it would certaintly help as a supplementary path to get airborne.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 2
+:DateUnix: 1438624285.0
+:END:
+
+
+** (Ex) Flight
+:PROPERTIES:
+:Author: Draconomial
+:Score: 0
+:DateUnix: 1438386034.0
+:END:

@@ -1,0 +1,164 @@
+#+TITLE: [EDU] Harry Potter And The Cryptocurrency of Stars
+
+* [[http://www.kalzumeus.com/2014/08/05/harry-potter-and-the-cryptocurrency-of-stars/][[EDU] Harry Potter And The Cryptocurrency of Stars]]
+:PROPERTIES:
+:Score: 18
+:DateUnix: 1407307169.0
+:END:
+[deleted]
+
+
+** I started reading this hoping, based on the title, that it would be about Harry Potter and financial instruments designed to work over interstellar distances and times, like the schemes written about by Charles Stross in his /Neptune's Brood/ - a distributed interstellar cryptocurrency based around transmitting and receiving to peers located lightyears away, with transaction times measured in decades or longer. I was sort of disappointed when this was not the case.
+
+That said, this explanation become super technical super fast, and seems to rely on people already fully understanding the underlying concepts and terminology a lot of the time, which makes it less than useful for beginners. If you were going to introduce new people to the concept, this isn't how I'd do it - If you don't already know and understand the underlying concepts, putting them into stories with Harry Potter characters' names is not sufficient - a glib glossed-over jargon-laden example doesn't seem like good enough explanation to actually teach, you actually have to explain things in depth. The obfuscation around specific incidents and names and the "Things that can't be named" seem to also hinder it's useability as an introductory/teaching work - I am broadly familiar with the ongoing saga of e.g. Magic The Gathering Online eXchange and the like, but if I wasn't this sort of thing would probably leave me more confused for no reason.
+
+It's interesting and amusing for people already familiar with bitcoin and the various spinoffs to some degree, but I would not use this particular piece as an actual way to teach others.
+:PROPERTIES:
+:Author: Escapement
+:Score: 7
+:DateUnix: 1407337362.0
+:END:
+
+
+** What's the [EDU] tag? I can't find it in the sidebar. Educational?
+:PROPERTIES:
+:Author: Zephyr1011
+:Score: 1
+:DateUnix: 1407325722.0
+:END:
+
+*** I'd guess so too.
+:PROPERTIES:
+:Author: lehyde
+:Score: 1
+:DateUnix: 1407325948.0
+:END:
+
+**** Can confirm. Just needs to be added. That and [MK] for Munchkin. Paging [[/u/eaturbrainz]], wee oo wee oo wee oo
+
+ETA: or [[/u/PeridexisErrant]]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1407332324.0
+:END:
+
+***** Done.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1407332520.0
+:END:
+
+****** Mr Brainz, aka the Bomb dot Com! Thanks.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1407333439.0
+:END:
+
+
+***** If you're trying to page /me/, try that with a 'u' instead on an 'r'.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 1
+:DateUnix: 1407362863.0
+:END:
+
+****** Oh yeah ... thanks
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1407372738.0
+:END:
+
+
+** Well, I wasn't expecting that, but now I'm linking this to the next person who asks me what a Bitcoin is.
+:PROPERTIES:
+:Author: JackStargazer
+:Score: 1
+:DateUnix: 1407327433.0
+:END:
+
+*** It doesn't really say much about bitcoin though?
+:PROPERTIES:
+:Author: Anderkent
+:Score: 1
+:DateUnix: 1407331596.0
+:END:
+
+**** Eh, cryptocurrency is cryptocurrency is cryptocurrency, know what I'm saying
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1407332386.0
+:END:
+
+***** Well, no. BitCoin and Stellar are very different models -- as this story addresses. Stellar's like a distributed credit system, kind-of like a distributed version of how a lot of traditional banking works -- and can represent things like real dollars from a real institution (such as Stripe). BitCoin's more like virtual gold - a resource available in limited quantity, produced through an expensive process.
+:PROPERTIES:
+:Author: iJ5dac9oN1
+:Score: 1
+:DateUnix: 1407655086.0
+:END:
+
+
+**** When people ask "what is Bitcoin?" the question they really want the answer to is most often "what is a cryptocurrency?".
+:PROPERTIES:
+:Author: JackStargazer
+:Score: 1
+:DateUnix: 1407332325.0
+:END:
+
+
+** Very well written. Now I have a go-to share for my more literary-minded friends who wonder what cryptocurrencies are :)
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 1
+:DateUnix: 1407335206.0
+:END:
+
+
+** #+begin_quote
+  Cho Chang: Alright, as a favor: Stellarmus, I offer to buy one Weasley!GBP in exchange for ten stellars.
+#+end_quote
+
+This doesn't seem to be how the system works though, I think the assumption is that 1 USD is worth 1 USD no matter where it comes from, as long as you trust the source. So Cho can decide to trust Weasley, and send an order to buy 1 GBP for 10 stellars, but as long as she trusts any other kinds of GBP they can also fulfill that order.
+
+See discussion [[https://news.ycombinator.com/item?id=8117303][here]]
+
+#+begin_quote
+  andrewstellar 5 days ago
+
+  We recommend you only trust one gateway per currency for that exact reason. You can only paid in currency issued from accounts you trust. Lets say your friend holds Euro credits from a gateway in London, and you live in San Francisco and therefore only hold USD credits from a gateway there. All she has to do to send you USD is specify "Send him X USD". She doesn't have to care about your issuer. It's taken care of by the protocol.
+#+end_quote
+:PROPERTIES:
+:Author: Anderkent
+:Score: 1
+:DateUnix: 1407338984.0
+:END:
+
+*** I wrote the article, and I'm technically correct, which is the best form of correct. Notice, on the API documentation for Order Create, the issuer parameter.
+
+[[https://www.stellar.org/api/#api-offercreate]]
+
+Or the API documentation for "amounts" in general:
+
+[[https://www.stellar.org/api/#api-amount]]
+
+This is distinct from the code path for /sending/ money as opposed to making markets in money -- on that one, you don't specify whose GBP you want to have sent, it will pick one acceptable to the sendee (if possible -- when not possible, your software should ideally recover for you, like Harry's wand does).
+:PROPERTIES:
+:Author: patio11
+:Score: 1
+:DateUnix: 1407339540.0
+:END:
+
+**** Oh, I see. Nice. I crawled the wiki before posting this but it's really rather miserable. it didn't occur to me to look through the api docs :P
+:PROPERTIES:
+:Author: Anderkent
+:Score: 1
+:DateUnix: 1407339857.0
+:END:
+
+
+** There's competition in /every/ niche, it seems. Something to remember.
+
+That Defense Professor is evil enough to give Lord Voldemort a run for his money. And indeed if enough people listen to him they might just see some runs on their money....
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1407546433.0
+:END:

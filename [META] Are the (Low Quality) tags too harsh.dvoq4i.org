@@ -1,0 +1,2133 @@
+#+TITLE: [META] Are the (Low Quality) tags too harsh?
+
+* [META] Are the (Low Quality) tags too harsh?
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 14
+:DateUnix: 1573633303.0
+:FlairText: META
+:END:
+Due to recent feedback, I've come to the conclusion that there are people who believe the (Low Quality) tags negatively affect their enjoyment of certain stories.
+
+I've [[http://www.strawpoll.me/18934461][set up a poll here]]. You can choose between three options: keeping the (Low Quality) tags I sometimes attach to linked titles, entirely removing them, or replacing them with something less harsh. If you choose the third option, please suggest what that replacement might be in the comments.
+
+Edit: link activity halted for now. Currently evaluating the feasibility of entirely changing the system based on Eliezer's ideas.
+
+
+** Hi, [[/u/Lightwavers]]! Thank you for having put in the work on that bot, by the way! I hadn't even been aware of your recent bot changes at the time I wrote my own recent post. That said, yeah, putting a [Low Quality] tag on Metaworld Chronicles does seem to me like pushing it from two directions - the first direction being that an automated bot posting things at high volume takes on aspects of requiring community approval and not just a personal opinion, and the other direction being that it does seem like a bit of a slap for somebody to see that autoreply after posting a glowing review of Metaworld Chronicles.
+
+Like the trueborn nerd I am, I have a thought about a technical solution to this political problem. It would require added work on your part and you should feel free to say in reply something like "You'd have to pay me $500 to do that".
+
+My thought is to allocate wiki pages, on the reddit wiki or on some other wiki, to each new story that comes up for recommendation. The top of the wiki page links directly to the story. The bot links to the wiki page, /without/ any annotations shown inside the Reddit comment itself. People are free to post their own negative or positive reviews on the wiki page, but without the connotation of any of them replying to each other, and with etiquette saying that you are forbidden to suggest that other people shouldn't or won't enjoy something aside from you talking about your own experiences. All reviews on a wiki page must be signed by a /u reddit username.
+
+It would also be nice to have something that automatically aggregated and posted all the story reviews, by a particular poster, to their own wiki page, and that replaced their signature inside the Wiki article with a link to that page.
+:PROPERTIES:
+:Author: EliezerYudkowsky
+:Score: 37
+:DateUnix: 1573668561.0
+:END:
+
+*** From a reader perspective, I see this as a reasonable compromise, especially regarding tags other than [Low Quality]. I highly value getting a rough overview of other readers' feelings regarding a work, as well as anything in the author's Weltanschauung that I might want to take into account either before deciding if their work is worth my time, or during my enjoyment of said work. I am most jealous with my free time, after all.
+
+Though of course tastes vary drastically, it seems patently absurd to me that anyone in this particular community *wouldn't* want any meta-information with which to update their probabilities on something that they'd likely be spending many hours consuming, even filtered as they are through the poor metaphors for reality that we mere humans can contribute.
+:PROPERTIES:
+:Author: PoisonInBothCups
+:Score: 10
+:DateUnix: 1573670378.0
+:END:
+
+**** Thank you! I thought I was losing it when people were saying they didnt care if the author was a nazi due to death of the author. Ideas are contagious, especially when you're not aware of the possibility of receiving them.
+:PROPERTIES:
+:Author: Iwasahipsterbefore
+:Score: 1
+:DateUnix: 1573835246.0
+:END:
+
+
+*** You're correct that putting in work to come to that particular solution would be something I'm not particularly keen on doing, since I've spent the time on a system right now. The poll seems to be heading in the direction of removing the (Low Quality) tags entirely, so how about I do that and then replace the tags with links to the story's wiki, if applicable?
+
+Also, what's your opinion on the (Author Politics) tags, which link to a specific Reddit discussion, including links/evidence to support that the author or work portrays certain political ideas in a certain way? So far that's just been to stories written by Neo-Nazis and ones which display bigotry toward trans people.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 10
+:DateUnix: 1573668931.0
+:END:
+
+**** Linking both the story and a wiki page seems no worse, nay better, than just linking the wiki page.
+
+"Author Politics" seems to be moving in a potentially dangerous direction, considering the larger context of our increasing civilizational insanity, and also seems to have its useful functionality replaced by offering links to wiki pages.
+
+> You're correct that putting in work to come to that particular solution would be something I'm not particularly keen on doing, since I've spent the time on a system right now.
+
+Hence my asking if you wanted to be paid.
+:PROPERTIES:
+:Author: EliezerYudkowsky
+:Score: 16
+:DateUnix: 1573669322.0
+:END:
+
+***** #+begin_quote
+  and also seems to have its useful functionality replaced by offering links to wiki pages.
+#+end_quote
+
+That's fair.
+
+#+begin_quote
+  Hence my asking if you wanted to be paid.
+#+end_quote
+
+Huh. Hang on, I'll get back to you after I evaluate the scope of the project.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 11
+:DateUnix: 1573669568.0
+:END:
+
+
+***** Alright, I'll probably do it, but I don't have a lot of spare time right now. I've halted the normal bot activity since you seem to disapprove of it in its current state.
+
+What do you think about waiting for me to complete it first, so you can judge its quality?
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 7
+:DateUnix: 1573670399.0
+:END:
+
+****** Waiting to do what for you to complete it first?
+
+Also, as soon as tags like "low quality" are shut off, I think the bot just posting direct story links is better than the bot being turned off entirely.
+:PROPERTIES:
+:Author: EliezerYudkowsky
+:Score: 4
+:DateUnix: 1573674221.0
+:END:
+
+******* I believe [[/u/lightwavers]] took your earlier responses not as hypothetical "I get that this might not be something you would do for free" but actual offers of payment to do the proposed things. If that was your intention, that's the "what" he is suggesting; that he completes it first, you judge the quality, then decide to pay him after.
+
+If you brought up payment as a rhetorical point, that should probably be clarified.
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 7
+:DateUnix: 1573730271.0
+:END:
+
+
+******* I've started work on redesigning it to point toward wiki links instead. I'll send you a PM when I've gotten it to a workable state.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 3
+:DateUnix: 1573726164.0
+:END:
+
+
+***** Please ensure that code you pay for is available as open-source. There are some concerns with this bot and it's important that someone else be able to run it if there are problems.
+:PROPERTIES:
+:Author: traverseda
+:Score: 4
+:DateUnix: 1573672428.0
+:END:
+
+****** I already had a problem with this [[/u/Lightwavers][u/Lightwavers]] person before any of this nonsense. It seems like a /lot/ of other people did as well. Looking over this thread and the other one that [[/u/alexanderwales]] just locked, it seems like a lot of people feel like a bot of this sort wouldn't necessarily be the worst thing in the world /if it were under the control of a person who wasn't [[/u/Lightwavers][u/Lightwavers]]./ Like the issue isn't necessarily the bot, the issue is [[/u/Lightwavers][u/Lightwavers]].
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 10
+:DateUnix: 1573672938.0
+:END:
+
+******* Frankly, having read through this thread, your behaviour and style of argument in it seems at least equally objectionable. You're very aggressive towards this Lightwavers person and anyone who disagrees with you or questions you.
+
+With that said, I do agree Lightwavers hasn't covered themself in glory in the threads I've seen them in.
+:PROPERTIES:
+:Author: MugaSofer
+:Score: 4
+:DateUnix: 1575435710.0
+:END:
+
+******** #+begin_quote
+  You're very aggressive towards this Lightwavers person and anyone who disagrees with you or questions you.
+#+end_quote
+
+^{[/citation needed/]}
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 2
+:DateUnix: 1575484682.0
+:END:
+
+
+******* What problems unrelated to the bot do you have with Lightwavers? PM me if you don't want to air it in public.
+:PROPERTIES:
+:Author: Bowbreaker
+:Score: 7
+:DateUnix: 1573690061.0
+:END:
+
+******** Y'know how Seraph in the Matrix Reloaded says "you do not truly know someone until you fight them"? I've been in at least one argument with Lightwavers before this, and I can see the arguments they've been having with other people. I don't like the way they argue. I get a bad feeling from them. Saying whatever they have to say to make it look like they're the one who's right. Disingenuous. Somewhat manipulative. That sort of thing.
+
+And of course, there's also the fact that a quick perusal of their commenting history indicates that they sincerely believe that "tulpas" are actually real, and that causes me to question their mental health. Is it fair to allow that to color my judgement of their behavior? Because it does.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 14
+:DateUnix: 1573694259.0
+:END:
+
+********* Fair enough. Though regarding the tulpa stuff, I have no personal experience beyond having lurked on their subreddit once or twice, but I thought it seemed like a plausible way to train drugless hallucination and extreme compartmentalization. Or is Lightwavers one of those who think tulpas deserve actual rights as sentient beings?
+:PROPERTIES:
+:Author: Bowbreaker
+:Score: 3
+:DateUnix: 1573746742.0
+:END:
+
+********** Hello, [[/u/ElizabethRobinThales]] has said:
+
+#+begin_quote
+  I'm pretty sure they think tulpas are sentient beings in their own right.
+#+end_quote
+
+That user is wrong. I believe they have some sort of beef with me. The 'tulpa' thing is just training your inner voice to speak with a certain personality.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 6
+:DateUnix: 1573813809.0
+:END:
+
+*********** This post you made seems to indicate that you /do/ attribute "personhood" to tulpas:
+
+[[https://www.reddit.com/r/Tulpas/comments/cgpc9i/what_is_a_person/]]
+
+But even more importantly than the tulpa issue:
+
+#+begin_quote
+  You just want to establish your personal opinions and ideas as the 'right' ones, the only correct way to think.
+#+end_quote
+
+Somebody on that tulpa subreddit said that about you. More than one person on [[/r/rational][r/rational]] has expressed the same sentiment. That's not a good pattern. I don't necessarily have beef with you, but you give off bad vibes.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 0
+:DateUnix: 1573849844.0
+:END:
+
+************ #+begin_quote
+  I don't necessarily have beef with you, but you give off bad vibes.
+#+end_quote
+
+This seems a contradiction. But okay.
+
+#+begin_quote
+  This post you made seems to indicate
+#+end_quote
+
+First, ideas and opinions can change. Though that isn't the case here. Do be aware that there is a difference between recognizing what a phenomenon /is/, and what you should treat it as. Tulpas, clinically speaking, are simply the manipulation of that inner voice most people have, and that I believe all neurotypical people can learn to build if they don't. However, if something acts human, my philosophy is that it's safer to treat it as human than not.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 3
+:DateUnix: 1573860395.0
+:END:
+
+
+********** Idk about rights, but I'm pretty sure they think tulpas are sentient beings in their own right.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: -1
+:DateUnix: 1573755044.0
+:END:
+
+
+********* #+begin_quote
+  I get a bad feeling from them.
+#+end_quote
+
+This is what your argument seems to amount to. If that is all, then that is fair. Arguing the point will not get either of us anywhere, as you seem to hold bad faith toward me because of my ... writing style?
+
+#+begin_quote
+  a quick perusal of their commenting history indicates that they sincerely believe that "tulpas" are actually real,
+#+end_quote
+
+Point of order: that is not a 'quick perusal.' You have just lied. My last post in the community that shows support for the phenomena is several pages down. Next, I do not believe there is anything mystal about tulpas. They are simply a name for a mental process that you might call an imaginary friend. Many people have an inner dialogue, and with proper practice you can impart a personality, for lack of a better description, onto that inner dialogue. The community has been partially coopted by people who genuinely believe there is something mystical about all this, but the truth is simply that brains are extraordinarily malleable.
+
+Being someone who tries to follow the evidence where is leads, despite my extreme skepticism in the phenomena, I found enough people who genuinely believed there is something to it to try it myself. I have succeeded.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 5
+:DateUnix: 1573727141.0
+:END:
+
+********** [deleted]
+:PROPERTIES:
+:Score: 10
+:DateUnix: 1573738384.0
+:END:
+
+*********** #+begin_quote
+  Like you're just looking for a reason you don't have to take them seriously.
+#+end_quote
+
+It feels like arguing with a creationist. That's the feeling I get from arguing with Lightwavers, the same feeling I used to get half a decade ago when I was wasting entirely too much time arguing with creationists in the comments sections of youtube videos and facebook posts.
+
+I've been in plenty of arguments with plenty of people on [[/r/rational][r/rational]] over the past three years. The vast majority of those arguments haven't triggered that feeling.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 7
+:DateUnix: 1573756556.0
+:END:
+
+
+*********** Here's the thing: I'll normally debate in good faith, but /not when someone supports an actual Nazi./ Debating a Nazi gives them a platform, and that is not a good idea as it legitimizes those ideas.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 3
+:DateUnix: 1573738681.0
+:END:
+
+************ [deleted]
+:PROPERTIES:
+:Score: 10
+:DateUnix: 1573739265.0
+:END:
+
+************* No. I said that if the mods /shut down discussion/ of bigotry in an author's work, then they might be. If they don't like my tags, that's an entirely separate thing.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: -3
+:DateUnix: 1573739957.0
+:END:
+
+************** And you conflated "everything that every person said about your tags" with "shutting down discussion of bigotry." Like, you reacted to that thing you were concerned about rather than reacting to what was actually being said. That isn't "debating in good faith."
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 8
+:DateUnix: 1573756896.0
+:END:
+
+*************** Nah. I admit it was worded poorly, but no, I was talking about the mods potentially shutting down organic discussions of bigotry.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 0
+:DateUnix: 1573757601.0
+:END:
+
+**************** #+begin_quote
+  I was talking about the mods potentially shutting down organic discussions of bigotry.
+#+end_quote
+
+Yes you were. And the people you were responding to were not. Which was my point.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 8
+:DateUnix: 1573757828.0
+:END:
+
+***************** #+begin_quote
+  Yes you were
+#+end_quote
+
+Only I know what I meant. Stop. Look, people misunderstood? Fine. I need to communicate more clearly? Dandy. I'll work on it.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 2
+:DateUnix: 1573758948.0
+:END:
+
+****************** You would probably benefit from practicing mindfulness meditation. Look into that.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 2
+:DateUnix: 1573759234.0
+:END:
+
+******************* No need. I already do.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 1
+:DateUnix: 1573759807.0
+:END:
+
+
+************ I think the fact that this post has a negative score points at a lot of why things like [[/r/sneerclub][r/sneerclub]] exist. If we as a community cannot take this stand against nazis, I guess we deserve that.
+:PROPERTIES:
+:Author: aponty
+:Score: 4
+:DateUnix: 1573859235.0
+:END:
+
+
+********** #+begin_quote
+  you seem to hold bad faith toward me because of my ... writing style?
+#+end_quote
+
+Not because of the way you write, but because of the way you argue.
+
+#+begin_quote
+  that is not a 'quick perusal.'
+#+end_quote
+
+Apparently not. It /was/ a quick perusal a month or three ago when I clicked on your name during an argument. I guess when I said that, I didn't think about the fact that you obviously would've continued posting and commenting since then.
+
+#+begin_quote
+  I do not believe there is anything mystical about tulpas.
+#+end_quote
+
+Sure. But you have mystical ideas about how the brain operates in order for tulpas to be a thing. Probably less indicative of a mental health concern, now that I think about it. A great many people in the rational community have expressed ideas about the brain that could be labeled "mystical," like brains being hardware that the software of your personality runs on. I suppose it's not too far of a stretch from that mistake to the mistake of believing that more than one personality software can run on an individual brain.
+
+#+begin_quote
+  with proper practice you can impart a personality, for lack of a better description, onto that inner dialogue.
+#+end_quote
+
+False.
+
+#+begin_quote
+  the truth is simply that brains are extraordinarily malleable.
+#+end_quote
+
+You literally have less than zero knowledge about how brains work.
+
+#+begin_quote
+  I have succeeded [in deluding myself].
+#+end_quote
+
+Fixed that for you.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 4
+:DateUnix: 1573755904.0
+:END:
+
+*********** #+begin_quote
+  I didn't think about the fact that you obviously would've continued posting and commenting since then.
+#+end_quote
+
+I see. I'll retract that accusation, then.
+
+#+begin_quote
+  But you have mystical ideas about how the brain operates in order for tulpas to be a thing.
+#+end_quote
+
+No. I do not. Many, /many/ people have an inner voice that does not just disagree with them, but /violently/ does so. It's more common in depressed people, and /multiple/ voices are /much more/ common in people who are schizophrenic, or might become schizophrenic given the wrong triggers. Manipulating your inner voice to give it a different personality than "you, but nasty," is an extremely valuable technique. Once done, it's common to call that altered inner voice a tulpa.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 2
+:DateUnix: 1573801463.0
+:END:
+
+
+******* I'm going to disagree sharply here. I think that /any/ bot that adds tags that refer to the politics of the author (as opposed to the politics of the story) is a significant potential problem, regardless of the person controlling it.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 6
+:DateUnix: 1573715275.0
+:END:
+
+******** This was 12 hours ago, but I think by this point it had been determined that there would be no more tags involved with the bot. The bot had been made neutral and apolitical. My comment was in reference to an apolitical bot. Perhaps you meant to reply to [[/u/traverseda]], who said the author's politics tags would possibly be fine if the bot were handled by a different person?
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 4
+:DateUnix: 1573715610.0
+:END:
+
+********* Apparently a lot happened while I was asleep. And people are forming strong opinions and arguing them forcefully.
+
+I think that a bot that only posts links is a good thing. And a bot that appends these links with author-politics-based tags is a bad thing. I /don't/ think it matters who runs the bot, as long as the bot is run in a sensible manner (one sensible way in which to run the bot is to have no tags; this is not the only sensible way in which to run the bot).
+
+So, in the specific case of the tagless bot, I don't particularly mind who runs it; as long as it remains tagless.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 5
+:DateUnix: 1573717025.0
+:END:
+
+
+******* Are you seriously starting a smear campaign because you 'have a bad feeling' about someone?
+:PROPERTIES:
+:Author: Tenoke
+:Score: 3
+:DateUnix: 1574603135.0
+:END:
+
+******** Like, that's part of what gives me a "bad feeling" about them:
+
+#+begin_quote
+  [[https://www.psychologytoday.com/us/blog/tech-support/201906/dealing-the-narcissists-smear-campaign][The smear campaign is born out of a combination of factors, including the need to be right and have his or her “truth” become the prevailing script...]]
+
+  [[https://en.wikipedia.org/wiki/Smear_campaign][Smear tactics differ from normal discourse or debate in that they do not bear upon the issues or arguments in question. A smear is a simple attempt to malign a group or an individual with the aim of undermining their credibility.]]
+#+end_quote
+
+Remember that I am not the only person who has pointed out that Lightwavers argues like they're trying to win no matter what. Lightwavers seems to have no problem ignoring the issue/argument to attack the person. And while lots of people do that and it's not necessarily a sign of toxicity, their other behaviors add up to a pattern that gives me that 'bad feeling,' like their initial stubborn insistence on their bot being the new "default" option, and their seeming attempts towards reputation management. Lightwavers just argues in a way that triggers my "toxic tingle." Like, a Spider-Sense that detects narcissistic patterns. Yes, that's incredibly subjective, but I've argued with a lot of people on this subreddit and almost none of those arguments have given me that feeling.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 3
+:DateUnix: 1574611500.0
+:END:
+
+
+******** Out of curiosity, where do you see me making any false or dubious accusations?
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 1
+:DateUnix: 1574610574.0
+:END:
+
+********* For what is worth at first I assumed he is in the wrong and was surprised when I didn't find anything showing it in the thread. Here's how I read the thread
+
+You start off with strong accusations with him, but no evidence.
+
+#+begin_quote
+  I already had a problem with this [[/u/Lightwavers][u/Lightwavers]] person before any of this nonsense. It seems like a lot of other people did as well.
+#+end_quote
+
+Nobody else has chimed in, and the bot 'issue' is very separate (and he's clearly fixing it in this very thread) from the attack on his character, so *a lot of other people* already seems like a potential exaggeration.
+
+Then you start making some even more serious statements, while mainly justifying them with your dislike
+
+#+begin_quote
+  ..I get a bad feeling from them. Saying whatever they have to say to make it look like they're the one who's right. Disingenuous. Somewhat manipulative. That sort of thing.
+#+end_quote
+
+This is also the first comment that actually lists something concrete
+
+#+begin_quote
+  of their commenting history indicates that they sincerely believe that "tulpas" are actually real, and that causes me to question their mental health.
+#+end_quote
+
+Now there's something to examine - which I did. After seeing his comments I quickly looked at his history (ctrl-f tulpa) and it seems he shares the common position here that Tulpas are something in the general direction of a directed hallucination, extension of someone's inner voice and/or modelling of others etc.
+
+You continue over multiple comments to double down on this (while it still being your only real accusation).
+
+#+begin_quote
+  It feels like arguing with a creationist.
+#+end_quote
+
+Reading more, it sounds like you had a disagreement. I specifically looked through the thread for other links to something he has done/said that's obviously bad and didn't see them - the most I saw was citing someone from [[/r/tulpas][r/tulpas]] that didn't like him or disagreed with him. The thing is you can find a comment like that about anyone that's spent significant time on reddit, so citing it here makes it look like there's nothing better to find. The quote from [[/r/tulpa][r/tulpa]] you cite is
+
+#+begin_quote
+  You just want to establish your personal opinions and ideas as the 'right' ones, the only correct way to think.
+#+end_quote
+
+Again, I'm sure you can find a comment like that about many redditors that are active enough.
+
+Having said all that, someone giving you bad vibes is totally valid internal evidence, that I wouldn't say should be discarded by you. However, accepting 'bad feelings' as the main/only argument against someone is not great for us. Anyone can say it about anyone and in a forum if someone is problematic it should be possible to find evidence of it and show that instead.
+:PROPERTIES:
+:Author: Tenoke
+:Score: 3
+:DateUnix: 1574624119.0
+:END:
+
+********** [[https://www.reddit.com/r/rational/comments/dvoq4i/meta_are_the_low_quality_tags_too_harsh/]]
+
+[[https://www.reddit.com/r/rational/comments/dwuljh/meta_should_the_redesigned_link_bot_be_activated/]]
+
+[[https://www.reddit.com/r/rational/comments/dvkv41/meta_reducing_negativity_on_rrational/]]
+
+I'm most certainly not the only person who noticed a pattern of inappropriate behavior from Lightwavers.
+
+This nonsense happened two weeks ago. Let it go.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 1
+:DateUnix: 1574630608.0
+:END:
+
+*********** These are all about the bot and they look mostly like him taking and asking for feedback.
+
+#+begin_quote
+  This nonsense happened two weeks ago. Let it go.
+#+end_quote
+
+I only responded in detail out of respect. "Let it go"? That's a disappointing response to say the least.
+:PROPERTIES:
+:Author: Tenoke
+:Score: 3
+:DateUnix: 1574631008.0
+:END:
+
+************ #+begin_quote
+  These are all about the bot
+#+end_quote
+
+/Are they?/
+
+#+begin_quote
+  and they look mostly like him taking and asking for feedback.
+#+end_quote
+
+/Do they?/
+
+Listen to me, broheim: I am /not/ interested in this shit.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 1
+:DateUnix: 1574631357.0
+:END:
+
+
+*** (Message also sent to this subreddit's modmail.)
+
+The bot now points toward the wiki for each title it links. Since anyone can modify the wiki, I've held off on working on an auto-populate function, as any user can simply click the creation link and add their content. That functionality can be added if requested.
+
+Bot test results shown here: [[https://redd.it/dwpnwa]]
+
+As per the about page, found at [[https://redd.it/dw7lux]], I can give users administrator positions, which means they can use the !Add function if they notice a title going unlinked. The !Add function is fragile and must be used exactly as shown, so keep that in mind if you have any usernames that I should give administrator access.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 4
+:DateUnix: 1573825104.0
+:END:
+
+
+*** Elsewhere I suggested some kind of rating system instead of these tags, but I like this suggestion much better. Reviews work much better than ratings, while not carrying a (possibly undeserved) connotation of authority.
+
+This should also be relatively easy to implement I think. You only need to update the links in the bot, the wiki itself can be community-maintained.
+:PROPERTIES:
+:Author: Ozryela
+:Score: 2
+:DateUnix: 1573764777.0
+:END:
+
+
+** If your intent behind this is to prevent people from spending time on frustratingly bad reads, I understand where you're coming from. The same happened numerous times to me, and my response was to try some more and (if nothing changes) drop the series. No harm, no foul. Everyone has their own pet peeves.
+
+In this, I do not trust your judgment. This is fiction, and such a low resolution judgment as the one you espouse needs to align extremely well with viewers' criteria (and the weights thereof) to be valuable and not harmful.
+
+How highly selective the "review" process is, combined with the inherent persistence of the bot effectively results in dubiously sourced low resolution judgment seem like gospel whenever a fiction is submitted. The fact that (at my time off writing) the removal option is winning in your optional poll to address your non-optional (as it operates) bot seems to show that this is not a minority opinion.
+
+Finally, and I didn't even know about you doing this, you tag stories based on how you feel about the author as a person based on ideology? In addition to the above problems applying to this, there is at least the obvious problem:
+
+If I could not separate the author and the art, I would not have read OSC or any of HP Lovecraft. People are certainly free to do otherwise, but your low-resolution, highly selective, and in this case extremely subjective author-tagging is more harmful than it is helpful. (what do you think of as an appropriate bad ideology tag? Sure you may have some easy targets like Nazis whom we've societally agreed are bad, which makes this implementation easier to justify for you, but is that where the ideology tags stop, and are you sufficiently confident in your evaluation to tag all authors with something so widely considered to be abhorrent?)
+
+Given the voting at my time of worrying, the majority seems to want this system gone. I too voted that way; though I cannot help but note that this is not the actual point.
+
+Anyway, I hope you don't misunderstand me: I can actually see where you are coming from, so consider these two suggestions:
+
+1) Make it a browser plugin instead of a reddit bot. You can solve many of the above problems, insofar as you believe they are problems. In addition, the private nature of the plugin would help ease the feeling that an extremely opinionated and equally persistent bot is holding this community's common hobby hostage.
+
+2) Create a more nuanced review system and deploy it on an external site that your bot can then link to. Like topwebfiction, but in the form of more in depth reviews. A useful function to help authors grow could be to focus on recency (as well as review "upvotes" like many platforms do) to encourage development. That may have other drawbacks, but it's up to you.
+
+In summary: I sympathize with what I think to be your initial motivation. However, your idea's current application seems at least to be polarizing and mostly disliked (according to current votes). I believe there are ways that you can achieve what I presume to be your core goals in better ways. Also, please don't make a reddit bot where you tell everyone your judgment of an author's character in a fiction subreddit. I'm sure that egregious and easy examples can be given to justify that course, but 1) the execution is tyrannical 2) you do not have the right to deny redemption and trap people in categories you deem to be evil. I am unconvinced by your neutral stance in this.
+
+In short, there are better ways to do what you say you want to do. As it stands, the bot is at best useless, and at worst harmful.
+:PROPERTIES:
+:Author: Daedalus_M
+:Score: 28
+:DateUnix: 1573668908.0
+:END:
+
+*** #+begin_quote
+  Finally, and I didn't even know about you doing this, you tag stories based on how you feel about the author as a person based on ideology?
+#+end_quote
+
+The tag simply says (Author Politics) and it is only applied when the author or the work in question promotes bigotry toward a certain subset of people or is an actual Neo-Nazi.
+
+#+begin_quote
+  Make it a browser plugin
+#+end_quote
+
+Thank you, I'll look into this.
+
+#+begin_quote
+  Create a more nuanced review system
+#+end_quote
+
+It does indeed have drawbacks. There are an astonishing number of works which are ... not good. And yet they have 4 to 5 stars for their reviews. I'd have to come up with a system which dissuades upvoting based on enjoyment and instead persuades users to vote based on quality, which is /not easy/.
+
+#+begin_quote
+  and mostly disliked (according to current votes)
+#+end_quote
+
+Indeed. It seems that I will be repealing that functionality.
+
+#+begin_quote
+  I am unconvinced by your neutral stance in this.
+#+end_quote
+
+I am not neutral. I have never professed neutrality. In any conflict where there is oppressor and oppressed, taking the neutral stance means you implicitly side with the oppressor.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 3
+:DateUnix: 1573669388.0
+:END:
+
+**** I really mean it when I say I sympathize with where you are coming from on the story front. As I said, I had similar experiences of my own and most of those stories were very well-liked by a large number of people.
+
+Perhaps you could consider specifying the axes of ratings/tags that people can use. I'm sure this has occurred to you. However, (beyond the obvious like "Grammar", which is mentioned often) a way to ease the burden on you in this regard could be to make a poll like this on the bases of judgment here, the community (that I think) you have built a service for. The low bandwidth nature of both the bot and communication here seems to be hobbling that. I would love to see your work blossom; and I mean it. Solving the core problem behind the idea (which is non-trivial) would be of great value.
+
+On the topic of tagging author politics, I believe this is not the right place for the discussion to go where it currently is. The medium itself is difficult. We are speaking past one another, on different levels of generality, and that is not an accusation on you. With that in mind, I won't.
+:PROPERTIES:
+:Author: Daedalus_M
+:Score: 11
+:DateUnix: 1573670713.0
+:END:
+
+***** Thank you for your feedback. I haven't ignored it. I've shut down the bot, with redesign pending.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 5
+:DateUnix: 1573670808.0
+:END:
+
+
+**** The low quality tag seems not worth the bother because people can read it and tell pretty quickly
+:PROPERTIES:
+:Author: RMcD94
+:Score: 4
+:DateUnix: 1573695255.0
+:END:
+
+
+** Yeah, how about just nixing all the tags save for the link itself?
+
+Trying to inject your subjective opinion of a work into every mention of the story that goes on in this sub leaves a bad taste in my mouth. It would be like someone spamming a copypasta rant every time a story gets mentioned, which is just low quality participation.
+:PROPERTIES:
+:Author: meterion
+:Score: 36
+:DateUnix: 1573660979.0
+:END:
+
+*** Some people do not wish to read works by actual Nazis. Others want only to read works that show the author had a minimum grasp of language. I could couch these tags in more neutral terms, which is what the third option on the poll is for. I've already done that with the politics warnings, which now simply states Author Politics and links to evidence.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 7
+:DateUnix: 1573661190.0
+:END:
+
+**** You can have a look link that says author politics and story quality and content warnings.
+
+People who care can click on the link they are interested in for expansion, that gives you room to add sources for author politics
+:PROPERTIES:
+:Author: RMcD94
+:Score: 7
+:DateUnix: 1573692181.0
+:END:
+
+
+**** So let human comments take care of dereccomending stories for reasons related to the author's politics. Having a bot do so sets precedent of bots plastering value judgements wherever certain things are mentioned. Including value judgements that are much less agreeable to you or me.
+:PROPERTIES:
+:Author: Bowbreaker
+:Score: 13
+:DateUnix: 1573690749.0
+:END:
+
+
+**** Or people can just separate the artist from the art? Not to mention that the definition of "actual nazis" is stretching pretty thin in this day and age. If you want to put up what would essentially be trigger warnings for racist or sexual content in-story, then that's one thing, but throwing in a "author has committed wrongthink" gives me a massive eyeroll. What would be the point of putting a politics tag on Ender's Game when the story is entirely divorced from OSC's views, objectionable as they may be?
+:PROPERTIES:
+:Author: meterion
+:Score: 15
+:DateUnix: 1573663500.0
+:END:
+
+***** #+begin_quote
+  Or people can just separate the artist from the art?
+#+end_quote
+
+Not everyone wants to do this. If you're comfortable with doing so, then that's well and good. Ignore the tag. Other people may feel betrayed that no one mentioned the art they enjoyed was made by a Nazi.
+
+#+begin_quote
+  If you want to put up what would essentially be trigger warnings for racist or sexual content in-story
+#+end_quote
+
+The only political tags link to transphobia and Nazism. I don't think Orson Scott Card is a Nazi, and he hasn't let his homophobia seep into his work, but if someone asked me to add a politics tag to his titles I would do so.
+
+Edit: sleep ---> seep
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 4
+:DateUnix: 1573664153.0
+:END:
+
+****** #+begin_quote
+  Other people may feel betrayed that no one mentioned the art they enjoyed was made by a Nazi.
+#+end_quote
+
+--------------
+
+#+begin_quote
+  he hasn't let his homophobia seep into his work
+#+end_quote
+
+Do you see the implicit contradiction between these two lines?
+:PROPERTIES:
+:Author: CCC_037
+:Score: 6
+:DateUnix: 1573715426.0
+:END:
+
+******* I do, yes. I was tired, if that's any excuse. His work would definitely be tagged.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 10
+:DateUnix: 1573725930.0
+:END:
+
+******** That clarifies your position beautifully, thank you.
+
+[[/twiwink][]] And reaffirms my belief that said political tags would be trouble.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 9
+:DateUnix: 1573727397.0
+:END:
+
+********* [[/starlightconcern][]]I'm starting to think the same. You know, I've always tried to hold on to my principles no matter what. It's ... exhausting, to have many dozens of arguments thrown at you, each with just enough of a point that it feels like /not/ responding simply isn't an option. I'm not sure how I feel. I thought a good sleep would clarify things, help me come to a resolution. The truth, however is that I'm still tired. I was never the most optimistic person, despite my efforts, and all it takes is enough little nudges in the right places to send me to a place I'd really rather not be. If If I hadn't made a habit of not lying to myself I might consider my final decision a compromise, or even a victory. The reality is that I felt an immense weight from several directions, and caved to the first suggestion from someone I perceive as having enough authority that acceding to his suggestions felt like putting everything in his hands. I'm going to rebuild the bot, and then I'm taking some time off for my sanity.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 9
+:DateUnix: 1573727817.0
+:END:
+
+********** [[/twiponder][]] For what it's worth, I can see where you're coming from here. I can see a chain of reasoning that would lead to the action you took, to the arguments that you made, to the positions that you hold. And I can see how that chain holds /absolutely/ zero malice, zero desire to deceive anyone, and a genuine wish to be helpful.
+
+I am assuming that the chain of reasoning that you followed is (at least broadly) similar to the chain of reasoning that I am considering. And, while there are flaws in this chain of reasoning, those flaws are subtle. They are sneaky. They are /incredibly common/ flaws in human thinking; the sort of flaws that will likely trip up most people who are not being /extremely/ vigilant about their thinking.
+
+[[/ktwieager][]] If you'd like me to, purely in the interests of better being able to identify the same flaws in the future, I can go into thorough detail!
+:PROPERTIES:
+:Author: CCC_037
+:Score: 7
+:DateUnix: 1573730689.0
+:END:
+
+*********** [[/twibook][]]Please do. Flaws in my reasoning process are the most dangerous kinds. First though, if you do detail them, do you want me to respond if I think they're not necessarily valid, or no?
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 5
+:DateUnix: 1573731273.0
+:END:
+
+************ #+begin_quote
+  First though, if you do detail them, do you want me to respond if I think they're not necessarily valid, or no?
+#+end_quote
+
+[[/twibeam][]] Oh, please do! We can both benefit from a thorough discussion of flaws in a presented chain of reasoning.
+
+[[/sp][]]
+
+[[/psychiatwi][]] Okay! Let's start off with a few simple, straightforward points. I put it to you that the following statements are all false:
+
+- Everyone, when presented with the same evidence as I have seen, will inevitably come to the same conclusion if they take the time to properly consider the evidence. This is well known.
+- People will always understand precisely what I mean when I make any statement.
+- It does no harm to divide people into Them and Us.
+- There exist people in the world who are Evil. While redemption is possible, it is rare to the point of being vanishingly nonexistent.
+- It does no harm to exclude people labelled as Evil; in fact, by removing a corrupting influence, this does a lot of good.
+
+Any of the statements in the above list, taken as true, would represent a different potential flaw. Are there any of the above statements in which you /cannot/ see the flaw? (I ask this mainly so as to avoid spending a lot of words going over something that you are already aware of).
+
+Alternatively, are there any of the above statements where you cannot see what the statement has to do with your bot's tagging?
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1573733504.0
+:END:
+
+************* #+begin_quote
+  Everyone, when presented with the same evidence as I have seen, will inevitably come to the same conclusion if they take the time to properly consider the evidence. This is well known.
+#+end_quote
+
+I don't think so. First off, I don't believe this is well known---I instead think the exact /opposite/ is known. However, while I agree that simply shoving evidence at someone will not change their mind in most cases, what would you say if I claimed that if someone were able to experience my life exactly as I have, moment by moment, many of my conclusions on bigotry and related topics be shared? I confess that saying that makes me look arrogant, but the thing is, bigotry generally stems from a place of experience, emotion, and most of all, flawed nurturing.
+
+#+begin_quote
+  It does no harm to divide people into Them and Us.
+#+end_quote
+
+I don't believe so. However, I submit that the harm caused by doing so is less than /not/ dividing people into Them and Us---when those labeled Them are actual Nazis.
+
+#+begin_quote
+  There exist people in the world who are Evil. While redemption is possible, it is rare to the point of being vanishingly nonexistent.
+#+end_quote
+
+Here are some of my beliefs. People cannot be evil because I believe that is a nonsensical claim. Actions can be evil, ideas can be evil, but no matter how much evil a person does, they are not themselves evil. Even a psycho/sociopath is not inherently evil; it's just much easier for them to do evil things. It's probably not a big distinction for most, but it is for me. And while redemption can be very rare in some cases, I believe that if there were enough scientists with enough resources studying a person for a long enough period of time, then no matter who they are or what they've done, redemption is always /possible/. Though I'm not sure our definitions of redemption coincide, so maybe not. Definition swap?
+
+#+begin_quote
+  It does no harm to exclude people labelled as Evil; in fact, by removing a corrupting influence, this does a lot of good.
+#+end_quote
+
+As above, I say here that I don't believe the former statement is true, but I do believe the latter is in many cases.
+
+#+begin_quote
+  People will always understand precisely what I mean when I make any statement.
+#+end_quote
+
+I have many, many experiences which lead me to say that this is emphatically /not/ the case.
+
+[[/raritydress][]]I think I see where you're going with this, but I don't want to preempt you, especially if I'm wrong.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 5
+:DateUnix: 1573734501.0
+:END:
+
+************** #+begin_quote
+  I don't think so. First off, I don't believe this is well known---I instead think the exact opposite is known. However, while I agree that simply shoving evidence at someone will not change their mind in most cases, what would you say if I claimed that if someone were able to experience my life exactly as I have, moment by moment, many of my conclusions on bigotry and related topics be shared? I confess that saying that makes me look arrogant, but the thing is, bigotry generally stems from a place of experience, emotion, and most of all, flawed nurturing.
+#+end_quote
+
+I agree that someone else who has experienced your entire life and nothing else will agree with you on /many/ things (I hesitate to say "all" because people are complicated). However, that is not quite where I was intending to go with that point.
+
+So let's consider a more concrete example.
+
+I state, without (yet) providing any evidence one way or the other, that person X has 'objectionable politics'. What are the odds that you would, if you did the research on Person X, agree with that assessment?
+
+What are the odds that you would agree with /all/ such assessments that I make?
+
+#+begin_quote
+  I don't believe so. However, I submit that the harm caused by doing so is less than /not/ dividing people into Them and Us---when those labeled Them are actual Nazis.
+#+end_quote
+
+There are two flaws that I believe I can see in this statement.
+
+The first flaw is the idea that it does little harm to /incorrectly/ label someone as a Nazi. (This ties in to the above)
+
+The second flaw is that it does little harm to divide off the Nazis so that their only company is each other, such that they can reinforce and strengthen each other's views. (This ties in to the below)
+
+(There are a number of further practical problems with any Them/Us division as well, quite apart from the above).
+
+#+begin_quote
+  Here are some of my beliefs. People cannot be evil because I believe that is a nonsensical claim. Actions can be evil, ideas can be evil, but no matter how much evil a person does, they are not themselves evil. Even a psycho/sociopath is not inherently evil; it's just much easier for them to do evil things. It's probably not a big distinction for most, but it is for me. And while redemption can be very rare in some cases, I believe that if there were enough scientists with enough resources studying a person for a long enough period of time, then no matter who they are or what they've done, redemption is always possible. Though I'm not sure our definitions of redemption coincide, so maybe not. Definition swap?
+#+end_quote
+
+Redemption: Realising that a course of action, undertaken in the past, was incorrect. Taking effort to eliminate, as far as humanly possible, the negative consequences of said action. Taking effort to ensure that said action is not undertaken again in the future, particularly by oneself. Having the above recognised by the victims of the original course of action.
+
+I do not merely believe that redemption is possible; I would go further and say that it is /likely/ in many cases. Especially when the offense is minor.
+
+#+begin_quote
+
+  #+begin_quote
+    It does no harm to exclude people labelled as Evil; in fact, by removing a corrupting influence, this does a lot of good.
+  #+end_quote
+
+  As above, I say here that I don't believe the former statement is true, but I do believe the latter is in many cases.
+#+end_quote
+
+I believe that the latter is false, in many cases. The reasoning is thus: most people want to be good. Most people therefore do not /intentionally/ try to corrupt people. (This includes people with objectionable politics of almost every stripe).
+
+What people do do, is they intentionally try to /redeem/ other people. (Sometimes two people can work at cross-purposes, because they have different ideas of what the 'good' course of action is.) If members of Them are permitted to interact with Us, then I put it to you that the result is /more likely/ to be the redemption of Them than the corruption of Us.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 3
+:DateUnix: 1573736418.0
+:END:
+
+*************** #+begin_quote
+  and nothing else
+#+end_quote
+
+Nay, that's not what I'm implying. I say if they go through the process of experiencing my life, and then after they do so all other memories return, I believe they will likely be at least less of a bigot.
+
+#+begin_quote
+  I state, without (yet) providing any evidence one way or the other, that person X has 'objectionable politics'. What are the odds that you would, if you did the research on Person X, agree with that assessment?
+
+  What are the odds that you would agree with all such assessments that I make?
+#+end_quote
+
+I can't say. I made a point of it to only append the tag if said evidence is provided. I'm not really sure what your point is here, since without evidence I can make no conclusions one way or another, and there are no examples mentioned. I suppose if you really want me to provide odds, I could find the percentage of the population of the Earth that are Nazis or bigots as defined by some source, probably a collection of polls, and then find the percentage of people who are writers, and then use those numbers to find the odds.
+
+#+begin_quote
+  The first flaw is the idea that it does little harm to incorrectly label someone as a Nazi.
+#+end_quote
+
+Doing that does do harm. However, would you not say that someone who spouts actual Nazi propaganda on their Twitter feed is a Nazi?
+
+#+begin_quote
+  The second flaw is that it does little harm to divide off the Nazis so that their only company is each other, such that they can reinforce and strengthen each other's views.
+#+end_quote
+
+Perhaps if they have multiple places to gather, but [[https://www.vice.com/en_us/article/bjbp9d/do-social-media-bans-work][deplatforming works]].
+
+#+begin_quote
+  I do not merely believe that redemption is possible; I would go further and say that it is likely in many cases. Especially when the offense is minor.
+#+end_quote
+
+Indeed. A world where this is not the case would be bleak indeed. Fortunately, Reddit provides an easy way for someone who has committed such offense to correct it and come back with no one finding a connection between the two accounts if they so choose, completely eliminating any social stigma their former positions may have incurred.
+
+#+begin_quote
+  Most people therefore do not intentionally try to corrupt people. (This includes people with objectionable politics of almost every stripe).
+#+end_quote
+
+I have to disagree there. There are a few harmful ideas which cause the people holding them to promote said ideas. Most religions do this, as they say that converting people is one of the best things one can do. Nazism is another one of these beliefs, because anyone who is /not/ a Nazi is seen as an enemy.
+
+#+begin_quote
+  If members of Them are permitted to interact with Us, then I put it to you that the result is more likely to be the redemption of Them than the corruption of Us.
+#+end_quote
+
+This holds true in many cases, but not for Nazis. When a Nazi sees that a place will tolerate them, it becomes a signal for more to come join, and push the politics of that place further right with their presence and arguments. It is a very rare Nazi that wishes to change their mind---when you join a community pre-committing to refuse all persuasive arguments, it takes a boxed AI to get through that and peel back those kinds of beliefs.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 5
+:DateUnix: 1573738506.0
+:END:
+
+**************** #+begin_quote
+  Nay, that's not what I'm implying. I say if they go through the process of experiencing my life, and then after they do so all other memories return, I believe they will likely be at least less of a bigot.
+#+end_quote
+
+I believe that, after all their other memories return, that they will then agree with you about /less/ than before that happens.
+
+How much less, and why, I cannot say. There are too many variables.
+
+#+begin_quote
+  I can't say. I made a point of it to only append the tag if said evidence is provided. I'm not really sure what your point is here, since without evidence I can make no conclusions one way or another, and there are no examples mentioned. I suppose if you really want me to provide odds, I could find the percentage of the population of the Earth that are Nazis or bigots as defined by some source, probably a collection of polls, and then find the percentage of people who are writers, and then use those numbers to find the odds.
+#+end_quote
+
+Mmm-hmm. Let me make it explicit, then.
+
+The first time that I see a story labelled 'objectionable author politics', I have to ask myself, what does that /mean/? Does the author disagree with some reviewer on the subject of (say) gun control? Or (to take an example from Gulliver's Travels) which end of the egg to open at breakfast?
+
+Has the author been slandered by an enemy? Has the author said something in innocence that has been badly misinterpreted? Has the author been attacked by political mudslingers, or expressed support for a single good policy of an otherwise reprehensible person?
+
+Has the reviewer actually done /thorough/ research, or merely skimmed the surface?
+
+There are so /many/ ways in which even a committed and thorough researcher can get someone else's politics /wrong/ that it's a near-certainty that it will happen sooner or later. And that's /before/ I consider the possibility that the reviewer's politics might not align with my own.
+
+#+begin_quote
+  Doing that does do harm. However, would you not say that someone who spouts actual Nazi propaganda on their Twitter feed is a Nazi?
+#+end_quote
+
+Define 'Nazi propaganda'. Extreme counterexample: Hitler was a vegetarian. People supporting vegetarianism should not be considered to be 'spouting Nazi propaganda'.
+
+Personally, given how much of a bad name the Nazis have had ever since WWII, I'd find it hard to imagine them being taken seriously as a political concern.
+
+#+begin_quote
+  Perhaps if they have multiple places to gather, but deplatforming works.
+#+end_quote
+
+Deplatforming takes people out of the public eye and removes their audience. This is, in my view, an /extreme/ step which should not be taken lightly (albeit sometimes a necessary step).
+
+#+begin_quote
+  Indeed. A world where this is not the case would be bleak indeed. Fortunately, Reddit provides an easy way for someone who has committed such offense to correct it and come back with no one finding a connection between the two accounts if they so choose, completely eliminating any social stigma their former positions may have incurred.
+#+end_quote
+
+I put it to you that merely putting on a new mask is /not/ redemption. Redemption requires acknowledgement of wrong and an attempt to make it right; not merely a dodging of consequences.
+
+#+begin_quote
+  I have to disagree there. There are a few harmful ideas which cause the people holding them to promote said ideas. Most religions do this, as they say that converting people is one of the best things one can do. Nazism is another one of these beliefs, because anyone who is not a Nazi is seen as an enemy.
+#+end_quote
+
+...okay, I acknowledge the main substance of your point, though I believe it's rooted in a misunderstanding.
+
+Most people believe that they are good, and that their attempts to spread their own ideology are attempts to redeem, not to corrupt. These people operate under the /belief/ that they are redeeming.
+
+#+begin_quote
+  This holds true in many cases, but not for Nazis. When a Nazi sees that a place will tolerate them, it becomes a signal for more to come join, and push the politics of that place further right with their presence and arguments. It is a very rare Nazi that wishes to change their mind---when you join a community pre-committing to refuse all persuasive arguments, it takes a boxed AI to get through that and peel back those kinds of beliefs.
+#+end_quote
+
+...this suggests that you may have fallen into one of the major traps of the Them vs. Us mindset; to be precise, a belief that there is a sharp gulf between the two groups. That 'Them' are actively malicious, and not merely mistaken; that 'They' are the enemy and are diametrically opposed to Us. Moreover, that 'They' are a cohesive and well-organised group.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 3
+:DateUnix: 1573740718.0
+:END:
+
+***************** #+begin_quote
+  that they will then agree with you about less than before that happens.
+#+end_quote
+
+Well, alright. I can't prove it, so I'll let it go.
+
+#+begin_quote
+  There are so many ways in which even a committed and thorough researcher can get someone else's politics wrong that it's a near-certainty that it will happen sooner or later. And that's before I consider the possibility that the reviewer's politics might not align with my own.
+#+end_quote
+
+What if this only includes bigotry (homophobia, transphobia, etc), Nazis/Nazi propaganda, and communists/communist propaganda?
+
+#+begin_quote
+  Define 'Nazi propaganda'
+#+end_quote
+
+Nazi talking points. The fourteen words, 'we should create a nation for white people,' that sort of thing.
+
+#+begin_quote
+  I'd find it hard to imagine them being taken seriously as a political concern.
+#+end_quote
+
+They seem to be gaining momentum, especially online. Places like 4Chan with low moderation don't kick out the actual Nazis, so what starts out as people ironically trying to be shocking turns into an actual Nazi hangout.
+
+#+begin_quote
+  This is, in my view, an extreme step which should not be taken lightly
+#+end_quote
+
+So what about said Nazis?
+
+#+begin_quote
+  I put it to you that merely putting on a new mask is not redemption. Redemption requires acknowledgement of wrong and an attempt to make it right; not merely a dodging of consequences.
+#+end_quote
+
+It is extraordinarily easy to dodge consequences on Reddit. But if someone is, say, deplatformed, and no one wants to hear them out because they were an actual Nazi for a long time, and then they have a change of heart and make a new account, /they can do that./
+
+#+begin_quote
+  Most people believe that they are good, and that their attempts to spread their own ideology are attempts to redeem, not to corrupt. These people operate under the belief that they are redeeming.
+#+end_quote
+
+Indeed. Nazis believe that whiteness is good, and superior, and that anyone who does not fit their vision of a good person is /in/human. They have good intentions, yes, but they would not hesitate to push a button that killed all Jews.
+
+#+begin_quote
+  That 'Them' are actively malicious, and not merely mistaken; that 'They' are the enemy and are diametrically opposed to Us. Moreover, that 'They' are a cohesive and well-organised group.
+#+end_quote
+
+They are a minority, but being actively malicious in support of a cause is /still being mistaken/. From a Nazi's perspective, it is /just/ and /right/ and /good/ to kill Jews. It is just as right to infiltrate online spaces and promote their ideology whatever the cost. It is important to precommit to ignoring persuasive arguments, because /they are the enemy/. It's the paradox of tolerance, see? Tolerate anything except intolerance, because when intolerance becomes intertwined with an ideology people who believe in it become zealots. You don't calmly reason with a terrorist holding a bomb, for example---you /disarm the bomb/.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 7
+:DateUnix: 1573741487.0
+:END:
+
+****************** #+begin_quote
+  What if this only includes bigotry (homophobia, transphobia, etc), Nazis/Nazi propaganda, and communists/communist propaganda?
+#+end_quote
+
+Those are /largely/ policies I agree are bad. (I say 'largely' only because of the inclusion of the communists on the end; while historical implementations of communism have pretty much all gone wrong for various reasons, I do believe that there is an argument to be made in favour of community ownership of infrastructure in some cases. I'd put forward the Free Software community as an example of this sort of thing done right.)
+
+However, as I had noted above, this does nothing to reassure me that the reviewer is /right/ about the author's politics. I don't know how strong the reviewer's standards of proof are. I don't know how much evidence he has considered, and whether that evidence is actually a true reflection of the author's politics.
+
+#+begin_quote
+  Nazi talking points. The fourteen words, 'we should create a nation for white people,' that sort of thing.
+#+end_quote
+
+I don't know what 'fourteen words' you're even talking about. And the last time I heard a serious suggestion of 'a nation for white people' was [[https://en.wikipedia.org/wiki/Boeremag][the boeremag]] who, while hugely racist, were not Nazis and (so far as I can tell) had nothing against Jews. (They were also convicted of treason).
+
+#+begin_quote
+  They seem to be gaining momentum, especially online. Places like 4Chan with low moderation don't kick out the actual Nazis, so what starts out as people ironically trying to be shocking turns into an actual Nazi hangout.
+#+end_quote
+
+Oddly enough, I haven't seen any particular sign of them. Presumably I don't hang out in the wrong places.
+
+#+begin_quote
+  So what about said Nazis?
+#+end_quote
+
+I'd say that deplatforming is a valid tactic to use against anyone seriously advocating mass murder who refuses to stop doing so.
+
+#+begin_quote
+  It is extraordinarily easy to dodge consequences on Reddit. But if someone is, say, deplatformed, and no one wants to hear them out because they were an actual Nazi for a long time, and then they have a change of heart and make a new account, they can do that.
+#+end_quote
+
+Noted. But I think we're getting away from the point here.
+
+The point of this discussion isn't 'how to deal with actual Nazis'. The point is to consider the possibility of flaws in a certain chain of reasoning.
+
+--------------
+
+I will agree with you that anyone actually willing to kill people based on nothing more than their ethnicity or culture deserves far more than merely being banned from online discussions. I will further agree that anyone trying to persuade other people to kill people based on nothing more than ethnicity or culture should be prevented from reaching a wide audience.
+
+However, nothing in my previous paragraph has to do with the flaws in said chain of reasoning.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 3
+:DateUnix: 1573743073.0
+:END:
+
+******************* #+begin_quote
+  The fourteen words
+#+end_quote
+
+[[https://en.wikipedia.org/wiki/Fourteen_Words]]
+
+"We must secure the existence of our people and a future for white children."
+
+#+begin_quote
+  And the last time I heard a serious suggestion of 'a nation for white people' was the boeremag who, while hugely racist, were not Nazis and (so far as I can tell) had nothing against Jews. (They were also convicted of treason).
+#+end_quote
+
+Perhaps you're not going looking for Nazis? It's commendable, if that's the case, but the thing is, there are Nazis on the internet. Have you heard of Stormfront?
+
+#+begin_quote
+  Presumably I don't hang out in the wrong places.
+#+end_quote
+
+Ah. Likely, then.
+
+#+begin_quote
+  However, nothing in my previous paragraph has to do with the flaws in said chain of reasoning.
+#+end_quote
+
+I think the core conflict is this: I see Nazis gaining a foothold in internet spaces while you don't seem to see the same thing. This may be because I am more sensitive to Nazi ideology---I know the fourteen words, and other Nazi dogwhistles, so I can more easily perceive them where they exist. Even on Reddit, the president's subreddit has more than a few white nationalist talking points repeated ad nauseam.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 7
+:DateUnix: 1573743955.0
+:END:
+
+******************** ...okay, clearly there is a /history/ to that 14-word phrase that is not obvious.
+
+And no, I don't go around looking for Nazis. As a general rule. Furthermore, I haven't heard of Stormfront.
+
+But all of this is beside the point. The point isn't the actual Nazis.
+
+The point is whether or not it's a good idea to label /suspected/ Nazis (or other people one disagrees with) as having 'objectionable politics'.
+
+#+begin_quote
+  I think the core conflict is this: I see Nazis gaining a foothold in internet spaces while you don't seem to see the same thing. This may be because I am more sensitive to Nazi ideology---I know the fourteen words, and other Nazi dogwhistles, so I can more easily perceive them where they exist. Even on Reddit, the president's subreddit has more than a few white nationalist talking points repeated ad nauseam.
+#+end_quote
+
+Okay, I had to go and [[https://en.wikipedia.org/wiki/Dog-whistle_politics][look that up]]. It turns out the dog-whistles are absolutely not about trying to convert other people to your ideology. Rather, it's about tricking people into voting for a given ideology by couching it behind innocent-seeming codephrases.
+
+Which is only useful in situations where there /is/ a vote.
+
+And the biggest problem with innocent-seeming codephrases is that sometimes people really do say innocent things. Which may lead to them being unfairly considered part of a group that uses said phrase.
+
+...I'm getting off-track.
+
+While the conflict that you perceive is /a/ conflict between us, it is not the conflict at the core of the debate. The conflict at the core of this debate regards how useful or harmful it is to have a link-bot refer to the politics of the author next to the link of the fic.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 3
+:DateUnix: 1573746548.0
+:END:
+
+********************* #+begin_quote
+  Which is only useful in situations where there is a vote.
+#+end_quote
+
+Precisely. A given situation might be, say, one where some Nazis have invaded a subreddit and are attempting to push a particular set of ideas to make it more accommodating to them. Perhaps pointing out that some users are Nazis actually starts driving away the Nazis---that's undesireable, so they might push forward the idea that politics shouldn't be allowed.
+
+#+begin_quote
+  The conflict at the core of this debate regards how useful or harmful it is to have a link-bot refer to the politics of the author next to the link of the fic.
+#+end_quote
+
+I think that /is/ the core. Because if a link bot refers to the politics of the author, and that manages to drive away Nazis, then that is a good thing.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 7
+:DateUnix: 1573747846.0
+:END:
+
+********************** #+begin_quote
+  Precisely. A given situation might be, say, one where some Nazis have invaded a subreddit and are attempting to push a particular set of ideas to make it more accommodating to them. Perhaps pointing out that some users are Nazis actually starts driving away the Nazis---that's undesireable, so they might push forward the idea that politics shouldn't be allowed.
+#+end_quote
+
+And that prevents them from spreading their ideology, neutering them entirely.
+
+The moment that they start to push a vote for an actually objectionable cause - like allowing anti-Semitic rhetoric while simultaneously banning all other politics - they will lose that vote. Dog-whistle tactics don't work unless you can make something dangerous sound innocent and then /still implement the dangerous thing/.
+
+#+begin_quote
+  I think that is the core. Because if a link bot refers to the politics of the author, and that manages to drive away Nazis, then that is a good thing.
+#+end_quote
+
+Is it still a good thing if it drives away non-Nazis?
+:PROPERTIES:
+:Author: CCC_037
+:Score: 4
+:DateUnix: 1573750237.0
+:END:
+
+*********************** #+begin_quote
+  The moment that they start to push a vote for an actually objectionable cause - like allowing anti-Semitic rhetoric while simultaneously banning all other politics - they will lose that vote.
+#+end_quote
+
+Ah, but by that point in time there are enough Nazis that the vote becomes controversial instead of obviously fated to lose. And if they're not yet at that point, well, you only need half a dozen dedicated people to fake a consensus, especially in smaller communities. And if everyone who posts things that are even mildly anti-Nazi sees constant disapproval---well, some people might see that their community seems to be constantly downvoting posts by Jewish people. And so the more sensitive members leave, and now there are only moderates and Nazis. And so now Nazis continue shaping community consensus in an effort to drive off the most sensitive of the moderates. And when they're gone...
+
+#+begin_quote
+  Is it still a good thing if it drives away non-Nazis?
+#+end_quote
+
+I'll be honest here, if it drives away someone who supports a Nazi, in my mind they're not that different from said Nazi.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 4
+:DateUnix: 1573750945.0
+:END:
+
+************************ #+begin_quote
+  And when they're gone...
+#+end_quote
+
+...then the invaders will have, with much effort, managed to do what they could have much more easily done by simply creating a new subreddit.
+
+#+begin_quote
+  I'll be honest here, if it drives away someone who supports a Nazi, in my mind they're not that different from said Nazi.
+#+end_quote
+
+What if it drives away an innocent person who has been /mistaken/ for a Nazi? What if it drives away people who see a clear Us/Them division and, having been the victims of bigotry before, don't even bother to look further before leaving?
+:PROPERTIES:
+:Author: CCC_037
+:Score: 4
+:DateUnix: 1573752171.0
+:END:
+
+************************* #+begin_quote
+  ...then the invaders will have, with much effort, managed to do what they could have much more easily done by simply creating a new subreddit.
+#+end_quote
+
+But they don't want to create a new subreddit. They want to take over things that exist and make them new territory. They've already done that, the creation of new subreddits, and /undisguised/ Nazis get banned by the admins. Look at [[/r/frenworld]].
+
+#+begin_quote
+  What if it drives away an innocent person who has been mistaken for a Nazi? What if it drives away people who see a clear Us/Them division and, having been the victims of bigotry before, don't even bother to look further before leaving?
+#+end_quote
+
+Well, that's unfortunate, but I think we're at the point where we have to either do that or accept Nazis into the community. If we were planning to /make/ a community, it's easy to subtly influence it to steer away Nazis from gaining ground in the first place. Suffuse a place with anti-Nazi sentiment, or just ban all bigotry in the comments. For example, someone who says or implies homophobia is okay is just gone, no matter how politely they word it.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 3
+:DateUnix: 1573801644.0
+:END:
+
+************************** Going to look at that subreddit, I see that it was banned for "the posting of content that glorifies or encourages violence." Given that that is the policy, it will surely apply to subreddits that get taken over, too; as soon as violence gets "glorified or encouraged" the community gets banned. Right?
+
+And any means by which this can be disguised in a taken-over community is /also/ a means by which it can be disguised in a new subreddit.
+
+#+begin_quote
+  Well, that's unfortunate, but I think we're at the point where we have to either do that or accept Nazis into the community.
+#+end_quote
+
+You know, you don't /need/ to suffuse a community with any particular sentiments to do that. Just report any Nazis that you spot to the moderators and/or site admins, and let them deal with the problem. We don't /need/ to permanently be on alert (and permanently being on alert will effectively change the subreddit in unwelcome ways).
+
+That's the first point.
+
+And as another point; I don't think that you and I are understanding the same thing by the word 'Nazi'. I am understanding it to mean a follower of the circa-WWII policies of Adolf Hitler, specifically with regard to Aryan supremacy and the policies that led to the Holocaust. (These are the people that I do not think are common).
+
+Yet you appear to be including in said group people who merely "imply homophobia is okay". I think that you'll agree that that is a far lesser offense than mass murder.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 3
+:DateUnix: 1573803931.0
+:END:
+
+*************************** #+begin_quote
+  it will surely apply to subreddits that get taken over, too; as soon as violence gets "glorified or encouraged" the community gets banned. Right?
+#+end_quote
+
+Yes. Some Nazis are smart enough not to openly encourage violence, but when enough gather and everyone else is driven out, that's generally what happens. However, I don't /want/ this sub to be banned.
+
+#+begin_quote
+  And any means by which this can be disguised in a taken-over community is also a means by which it can be disguised in a new subreddit.
+#+end_quote
+
+A /fully/ taken-over community will eventually have the Nazis surface. Unless there are still a large enough amount of people, especially mods, from the original community that don't like Nazis.
+
+#+begin_quote
+  We don't need to permanently be on alert (and permanently being on alert will effectively change the subreddit in unwelcome ways).
+#+end_quote
+
+I believe this is true---/if/ Nazi ideology and bigotry is just flat-out banned whenever it's spotted. However, I've seen a grand total of zero of the first banned, probably because the mods /would/ ban open Nazis here, and I have seen /many/ instances of bigotry which the mods have taken no action against, presumably because they don't want to ban someone on the off chance that there's a good faith reason for expressing a bigoted opinion.
+
+#+begin_quote
+  Yet you appear to be including in said group people who merely "imply homophobia is okay".
+#+end_quote
+
+Nah. I'm saying that the Nazis were homophobic as well as advocates for mass murder, and nothing is lost by banning homophobia, which is not a good opinion on its own.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 3
+:DateUnix: 1573804473.0
+:END:
+
+**************************** #+begin_quote
+  However, I don't /want/ this sub to be banned.
+#+end_quote
+
+Noted. However, there are several steps that would need to happen before that point (probably starting with the banning of individual users for glorification of violence), so I don't think there's any danger of this in the near term.
+
+#+begin_quote
+  I believe this is true---if Nazi ideology and bigotry is just flat-out banned whenever it's spotted. However, I've seen a grand total of zero of the first banned, probably because the mods would ban open Nazis here, and I have seen many instances of bigotry which the mods have taken no action against, presumably because they don't want to ban someone on the off chance that there's a good faith reason for expressing a bigoted opinion.
+#+end_quote
+
+Ah. Now we're onto an important point here. Nazis, I put it to you, are vanishingly rare. Bigots, on the other hand, are far more common; and far less likely to advocate for violence.
+
+#+begin_quote
+  I have seen /many/ instances of bigotry which the mods have taken no action against
+#+end_quote
+
+Two points. Point the first: were the mods aware? (There is a 'report' button under posts which can be used to make the mods aware if you are not sure).
+
+Point the second: No action /that you saw/. It is possible that, in certain cases, the action that the mods would take is one of the following:
+
+- Conclude that the statement has an innocent interpretation, and/or is being taken out of context, and give the poster the benefit of the doubt
+- Send the poster a private message, warning them to be more careful or face stronger sanctions in the future
+- Request that the poster edit the post to something less objectionable
+- Very quietly delete the given post (perhaps with, again, a castigation of the poster via private message)
+
+Generally, the first two will look like nothing; but a poster with a habit of objectionable statements would be more likely to end up in trouble than a poster who says something easily misinterpreted (perhaps due to tiredness).
+
+#+begin_quote
+  Nah. I'm saying that the Nazis were homophobic as well as advocates for mass murder, and nothing is lost by banning homophobia, which is not a good opinion on its own.
+#+end_quote
+
+Is anything lost by banning people who say something that /appears/ homophobic?
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1573806623.0
+:END:
+
+***************************** #+begin_quote
+  so I don't think there's any danger of this in the near term.
+#+end_quote
+
+Indeed. All we have is a few bigots, so far.
+
+#+begin_quote
+  Bigots, on the other hand, are far more common; and far less likely to advocate for violence.
+#+end_quote
+
+This is true, but the latter is a subset of the former, and neither of them are good for a community.
+
+#+begin_quote
+  Point the first: were the mods aware?
+#+end_quote
+
+It is extremely likely, since in the most recent instance one mod went down the thread, went by it, found one of my comments, and locked it. However, I cannot be /certain/ because I didn't report it, so I'll give you that.
+
+#+begin_quote
+  the action that the mods would take is one of the following:
+#+end_quote
+
+I will admit that I have seen no evidence that this /doesn't/ happen---however, that sort of thing shows. I have an extension that allows me to [[https://chrome.google.com/webstore/detail/removeddit/epigemnhfmbapjjpkdaaholmachfnfem?hl=en][see removed comments]], so not seeing any evidence that something has been removed is perhaps a piece of evidence in and of itself.
+
+#+begin_quote
+  Conclude that the statement has an innocent interpretation, and/or is being taken out of context, and give the poster the benefit of the doubt
+#+end_quote
+
+I believe that this is happening in every situation where the bigotry is expressed in polite language.
+
+#+begin_quote
+  Is anything lost by banning people who say something that appears homophobic?
+#+end_quote
+
+Mod discretion is advised. In that case, the mods would ideally give the user a warning, and keep an eye on them to see if it's a frequent occurrence.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 4
+:DateUnix: 1573807583.0
+:END:
+
+****************************** #+begin_quote
+  This is true, but the latter is a subset of the former, and neither of them are good for a community.
+#+end_quote
+
+...either I've got the two mixed around or this just said that bigots are a subset of Nazis, which I'm pretty sure is not the way round that you intended.
+
+#+begin_quote
+  It is extremely likely, since in the most recent instance one mod went down the thread, went by it, found one of my comments, and locked it. However, I cannot be certain because I didn't report it, so I'll give you that.
+#+end_quote
+
+It is possible that your post was reported, for... whatever reason, and so the mod read your post without reading all the parent posts.
+
+But yeah. If you find posts you object to, then report them.
+
+#+begin_quote
+  I will admit that I have seen no evidence that this doesn't happen---however, that sort of thing shows. I have an extension that allows me to see removed comments, so not seeing any evidence that something has been removed is perhaps a piece of evidence in and of itself.
+#+end_quote
+
+I have no idea how that particular extension works. Does it still allow you to see that a comment /has been/ deleted, or do they simply appear as if they were never deleted?
+
+#+begin_quote
+  Mod discretion is advised. In that case, the mods would ideally give the user a warning, and keep an eye on them to see if it's a frequent occurrence.
+#+end_quote
+
+Seems sensible. And mod discretion would also be the answer to the question of how to tell the difference between actual homophobia and the mere appearance thereof.
+
+Again, though, it seems to me that the correct and proportional action to take in response to such a post it to report the post to the mods, and allow them to use that discretion.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1573808511.0
+:END:
+
+******************************* #+begin_quote
+  which I'm pretty sure is not the way round that you intended.
+#+end_quote
+
+Yep yep, rearrange that. Point stands, though. Neither is good.
+
+#+begin_quote
+  It is possible that your post was reported
+#+end_quote
+
+That may be. I'll report it right now, then, and see if there's a response.
+
+Nvm: the post being locked apparently forbids reports. I'll do it next time I see something of that nature and observe what happens.
+
+#+begin_quote
+  Does it still allow you to see that a comment has been deleted
+#+end_quote
+
+It allows you to see both that a comment has been removed, and what its content was before removal.
+
+#+begin_quote
+  to report the post to the mods, and allow them to use that discretion.
+#+end_quote
+
+Seems fair. I'll do that over the course of ... say, a month, and report back here.
+
+!RemindMe 1 month
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 4
+:DateUnix: 1573809073.0
+:END:
+
+******************************** I'll look forward to the results of that in a month, then.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 3
+:DateUnix: 1573819468.0
+:END:
+
+********************************* See you then! In the meantime, bot's finished. :)
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 2
+:DateUnix: 1573819733.0
+:END:
+
+
+******************************** I will be messaging you on [[http://www.wolframalpha.com/input/?i=2019-12-15%2009:11:13%20UTC%20To%20Local%20Time][*2019-12-15 09:11:13 UTC*]] to remind you of [[https://np.reddit.com/r/rational/comments/dvoq4i/meta_are_the_low_quality_tags_too_harsh/f7kgj8r/][*this link*]]
+
+[[https://np.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5Bhttps%3A%2F%2Fwww.reddit.com%2Fr%2Frational%2Fcomments%2Fdvoq4i%2Fmeta_are_the_low_quality_tags_too_harsh%2Ff7kgj8r%2F%5D%0A%0ARemindMe%21%202019-12-15%2009%3A11%3A13%20UTC][*1 OTHERS CLICKED THIS LINK*]] to send a PM to also be reminded and to reduce spam.
+
+^{Parent commenter can} [[https://np.reddit.com/message/compose/?to=RemindMeBot&subject=Delete%20Comment&message=Delete%21%20dvoq4i][^{delete this message to hide from others.}]]
+
+There is currently another bot called [[/u/kzreminderbot][u/kzreminderbot]] that is duplicating the functionality of this bot. Since it replies to the same RemindMe! trigger phrase, you may receive a second message from it with the same reminder. If this is annoying to you, please click [[https://np.reddit.com/message/compose/?to=kzreminderbot&subject=Feedback%21%20KZ%20Reminder%20Bot][this link]] to send feedback to that bot author and ask him to use a different trigger.
+
+--------------
+
+[[https://np.reddit.com/r/RemindMeBot/comments/c5l9ie/remindmebot_info_v20/][^{Info}]]
+
+[[https://np.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5BLink%20or%20message%20inside%20square%20brackets%5D%0A%0ARemindMe%21%20Time%20period%20here][^{Custom}]]
+[[https://np.reddit.com/message/compose/?to=RemindMeBot&subject=List%20Of%20Reminders&message=MyReminders%21][^{Your Reminders}]]
+[[https://np.reddit.com/message/compose/?to=Watchful1&subject=RemindMeBot%20Feedback][^{Feedback}]]
+:PROPERTIES:
+:Author: RemindMeBot
+:Score: 2
+:DateUnix: 1573809102.0
+:END:
+
+
+********** For what it's worth, I applaud your effort and intention. I just think you've gotten a lot of feedback that should be used to recalibrate how thorough your initial intuitions and reasoning were in deciding the value/dangers of your idea.
+
+Take care of your sanity first and foremost. Without that you're not going to be able to do much else, principles or not.
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 4
+:DateUnix: 1573729977.0
+:END:
+
+
+****** #+begin_quote
+  and he hasn't let his homophobia seep into his work
+#+end_quote
+
+.... have you read the Shadow series? There's a character who says he's gay but he's marrying a woman and having a baby because having children is the point of life. The entire A plot is about saving embyros as though they're human beings. I still love it but that's partly because it's such blatant conservative wish fulfillment.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 6
+:DateUnix: 1573723216.0
+:END:
+
+******* Ah. I was referring to Ender's Game. My bad.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 6
+:DateUnix: 1573725896.0
+:END:
+
+******** If you've literally only read one of his works, you can't really confidently say that his politics doesn't affect it, right? Especially when the Shadow series is so popular (it's got excellent political intrigue!)
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1573820390.0
+:END:
+
+********* There are different kinds of politics. It's a moot point though---I've redesigned the bot. It points to wiki links now.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 2
+:DateUnix: 1573820534.0
+:END:
+
+
+** I'd rather do without the bot itself.
+:PROPERTIES:
+:Author: megazver
+:Score: 28
+:DateUnix: 1573648446.0
+:END:
+
+*** Why? In general a bot automatically linking stories seems pretty handy. Reminds me of the bot linking cards in CCG related subreddits.
+:PROPERTIES:
+:Author: Bowbreaker
+:Score: 9
+:DateUnix: 1573690511.0
+:END:
+
+
+*** Linking stuff is great! Why are you opposed?
+:PROPERTIES:
+:Author: RMcD94
+:Score: 3
+:DateUnix: 1573718026.0
+:END:
+
+
+*** If people link titles they mention, it stays silent. If you still hold the same opinion knowing this, then I'm sorry but your reasoning is entirely alien to me.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: -9
+:DateUnix: 1573649094.0
+:END:
+
+**** I think your providing the links is a valuable service. I think your providing tags based on your subjective aesthetic and political preferences is not valuable, and causes needless controversy.
+:PROPERTIES:
+:Author: Amonwilde
+:Score: 24
+:DateUnix: 1573667540.0
+:END:
+
+***** The aesthetic avenue is fair, and is why the poll above exists. However, my politics are essentially ‘don't be a bigot' and ‘no Nazis please.' I do think providing a tag which says only ‘Author Politics' and links to a discussion where proof is provided that someone is actually a Nazi is valuable to a certain subset of people. Namely, those who don't want to support a Nazi with ads or traffic.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: -1
+:DateUnix: 1573667756.0
+:END:
+
+****** Just want to preface this by saying that I've found the links helpful, and used them on a number of occasions. And also that I think your heart is 100% in the right place.
+
+I'm probably not the only person who is saying this, and I know that getting criticized from multiple places simultaneously can be stressful and alienating even if individual responses are relatively restrained. So sorry, too, if this is adding to a pile of similar responses that is creating a negative effect on you. But I think adding any kind of politics tags to posts is damaging to the community. Besides the fact that it's specifically against the rules, the fact that the bot respons so prolifically and prominently in the recommendation threads makes it highly likely that a politics tag will trigger a political discussion. I've already seen it multiple times since the bot started up and almost never before that.
+
+Secondarily, the subjective nature of the tags leads to unresolvable contradictions, and the system seems to be based on a number of cultral assumptions. For example, the Lord of the Mysteries tag for author politics is based on views that are commonly, really near universally, held in mainland China. It's really saying you have a beef with another culture, which in this case is Western-centric. It also means you would, for example, have to put an author politics tag on 95% of the works written before 1960, or which were written in the middle east (maybe more like 70% on that one). I think that just doesn't show enough respect for cultural difference. The fact that it's yourself, or yourself and two hand-picked friends, means that this isn't something that the community has chosen for itself, but that you're implementing unilaterally. And I do think the disucsioon kicked up by these tags is convulsing the community, and even if the tags themselves have some value they're not worth it.
+
+I know you've invested a lot in the bot, but I wonder if you could make it go back to just linking to texts. Please. :(
+:PROPERTIES:
+:Author: Amonwilde
+:Score: 21
+:DateUnix: 1573672909.0
+:END:
+
+
+**** Judging by the discussion in this sub, your reasoning doesn't seem to be in alignment with the majority of the posters period; so maybe it's not everyone else, maybe it's you?
+:PROPERTIES:
+:Author: megazver
+:Score: 22
+:DateUnix: 1573651036.0
+:END:
+
+***** Note that not everyone who holds an opinion feels the need to comment. Check the poll, it seems to refute that assertion.
+
+You're also the only one I see advocating for the removal of the system in its entirety.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 1
+:DateUnix: 1573651397.0
+:END:
+
+****** [deleted]
+:PROPERTIES:
+:Score: 19
+:DateUnix: 1573654350.0
+:END:
+
+******* #+begin_quote
+  Maybe do a poll on whether or not we actually want it here?
+#+end_quote
+
+I mean, checking the votes on the average link provided, the evidence seems pretty conclusive.
+
+#+begin_quote
+  Or separate the bot from your personal account
+#+end_quote
+
+That would be incredibly inconvenient for me. The way it is now allows me to tweak things while I'm just casually browsing without switching to a new account, fiddling with what needs to be changed, and then going back again. It also allows me to provide custom responses where the templates fail.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 2
+:DateUnix: 1573654660.0
+:END:
+
+******** [deleted]
+:PROPERTIES:
+:Score: 16
+:DateUnix: 1573655169.0
+:END:
+
+********* #+begin_quote
+  checking the votes on the *average link provided*
+#+end_quote
+
+If people did not want the system to exist, the actual links would be largely downvoted.
+
+#+begin_quote
+  I'm also not sure I should be trusting you to run the polls in good faith
+#+end_quote
+
+Then we're done here. I'd like to know if there's a /reason/ for your assumption of bad faith, but that's all I need to know.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 3
+:DateUnix: 1573655636.0
+:END:
+
+********** /this entire post/ is at 0 now
+:PROPERTIES:
+:Author: megazver
+:Score: 15
+:DateUnix: 1573656362.0
+:END:
+
+*********** It is fluctuating between 1 and 2. That is not necessarily indicative of the average opinion on the function of providing links, but I will follow the evidence as it appears and take this in mind. I do still have more evidence supporting my current opinion, however, so it is not yet enough to change my mind.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 2
+:DateUnix: 1573656493.0
+:END:
+
+
+********** [deleted]
+:PROPERTIES:
+:Score: 9
+:DateUnix: 1573655973.0
+:END:
+
+*********** I do not. I mean the links provided when people mention titles without linking to them.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 3
+:DateUnix: 1573656217.0
+:END:
+
+
+********** [deleted]
+:PROPERTIES:
+:Score: 12
+:DateUnix: 1573655851.0
+:END:
+
+*********** /Everything/ is politics. Refusal to see this doesn't make it untrue. Now, refusal to listen to detractors does matter if they have valid points, which is why I've made a point of it to respond to every one of them that I've seen. However, I will not allow the minority of voices that shout the loudest to rule my actions. Which is why I've set up a poll. I did not have to do that---in fact the incentive for me to do so is /negative/ if you assume I'm acting in bad faith.
+
+However, since you /do/ assume that, we cannot have a productive discussion.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 6
+:DateUnix: 1573656095.0
+:END:
+
+************ [deleted]
+:PROPERTIES:
+:Score: 16
+:DateUnix: 1573656454.0
+:END:
+
+************* Ah, I see. You're from [[https://www.reddit.com/r/rational/comments/duwi0x/c_th_god_shaped_hole_by_zero_hp_lovecraft/][this thread]]. At the very top of the thread, we have someone who says that the author is "an alt-right white supremacist." Right below we have multiple links pointing directly at the author's own words which back up this assertion. Then you say that "I'm not seeing anything that screams "white supremacist" skimming through their work, just right-wing and anti-capitalism/immigration. But I'm also not digging into it in depth." This immediately rings my own bells. Looking at this, I think I'm justified in assuming bad faith on your part.
+
+Edit: misspelled a word.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 1
+:DateUnix: 1573656746.0
+:END:
+
+************** [deleted]
+:PROPERTIES:
+:Score: 12
+:DateUnix: 1573656951.0
+:END:
+
+*************** Showing support for a Nazi is not the right way to demonstrate good faith.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 0
+:DateUnix: 1573657000.0
+:END:
+
+
+************ [deleted]
+:PROPERTIES:
+:Score: 11
+:DateUnix: 1573656283.0
+:END:
+
+************* HPMOR. I'm sorry, but I have to stop you here. Since you assume I'm acting in bad faith, discussion is unproductive and I estimate a high probability of further conversation descending into flames.
+
+Edit: the original comment displayed above said only “How did you find this community?” I do not believe Nazis are politically neutral.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 3
+:DateUnix: 1573656509.0
+:END:
+
+
+****** Not everyone who hold an opinion feels the need to use the poll where you picked out all the options, either. I didn't bother, for example.
+:PROPERTIES:
+:Author: megazver
+:Score: 14
+:DateUnix: 1573651502.0
+:END:
+
+******* If you would like another option, simply state it and I'll take the amount of upvotes to decide how popular it is. However, it still looks like you're the only person who wishes for the system's removal, so I doubt you'll get very far with that proposal.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: -1
+:DateUnix: 1573651587.0
+:END:
+
+
+** I chose "replace" because there was no option for "just quit linking stories that you think are low quality, /duh/."
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 22
+:DateUnix: 1573635103.0
+:END:
+
+*** If replace wins and your comment has the most upvotes, that is what will happen.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 0
+:DateUnix: 1573635466.0
+:END:
+
+**** I think I've misunderstood what the issue here is because in the past month or two I've been using reddit much less frequently. I notice often on the front page that there'll be a story or three (usually pony related) that you're posting as a recommendation. I thought that was the issue. If the actual issue is that you've got a bot that's going around and commenting something like "this fic is low quality" on /other peoples' recommendations/ then you should probably be banned from this subreddit.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 19
+:DateUnix: 1573665541.0
+:END:
+
+***** If that's your position then ... yikes? Do be aware that as long as there are no titles unlinked, there will be no links and thus no tags provided. Also be aware that every tag comes with a link that goes to an explanation about said tag.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 6
+:DateUnix: 1573665828.0
+:END:
+
+****** People aren't obligated to provide a link every time they mention a title, and it isn't your place to impose links anywhere that you personally feel like they're missing. I've seen the mods ban several bots, and from what they've said at the time of the banning it seems like there's an unofficial policy here against having any bots in this subreddit at all, so if you're /being/ a bot, then...
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 13
+:DateUnix: 1573666738.0
+:END:
+
+******* #+begin_quote
+  People aren't obligated to provide a link every time they mention a title
+#+end_quote
+
+Indeed. Which is why I've taken it upon myself to do it for them.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 4
+:DateUnix: 1573666835.0
+:END:
+
+******** #+begin_quote
+  and it isn't your place to impose links anywhere that you personally feel like they're missing.
+#+end_quote
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 11
+:DateUnix: 1573667136.0
+:END:
+
+********* I have to honestly ask: If the bot did nothing but link stories without any kind of tag or other value judgement, would you still have a problem with it? If so, why?
+:PROPERTIES:
+:Author: Bowbreaker
+:Score: 6
+:DateUnix: 1573690431.0
+:END:
+
+********** I don't know whether I would have an actual problem with it or not. I think I'd probably at least find it annoying that somebody took it upon themselves to do something like that without getting permission from the mods to implement a trial run to see how people reacted to it.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 6
+:DateUnix: 1573692204.0
+:END:
+
+
+********* Kind of response when you see someone picking up someone's litter and you tell them we have people for that, except in this case there's no people
+:PROPERTIES:
+:Author: RMcD94
+:Score: 4
+:DateUnix: 1573692371.0
+:END:
+
+********** Kind of response when one of your coworkers at the office tries to convince the boss to improve morale by hanging a mandatory "inspirational bible verse of the month" calendar in every person's cubicle, except in this case they just hung up all the calendars themselves without asking the boss.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 7
+:DateUnix: 1573692713.0
+:END:
+
+*********** Yeah that analogy works too. I feel empathy for that person.
+
+Ask forgiveness not permission, that'd never have been approved if they asked but no one might raise enough of a fuss if they present it fait accompli. Cost comes out of social capital I suppose
+
+I don't see the it's not your responsibility as a good argument for anything. People stepping up to tasks abandoned (in this case everyone going to hell or whatever) should be praised. The issue with this scenario is that we don't believe in the end goal. No one complained about him providing links prior to the addition of comments yet if he had asked someone might have said we don't need it. People will just comment if they want the link. People can Google.
+
+But if no one had bothered buying a calender for any cubicle and they'd went around realising how inefficient that was and improving it. Well not their responsibility still? And you bet people would find some reason to be annoyed in an office.
+:PROPERTIES:
+:Author: RMcD94
+:Score: 4
+:DateUnix: 1573695773.0
+:END:
+
+************ #+begin_quote
+  I don't see the it's not your responsibility as a good argument for anything. People stepping up to tasks abandoned should be praised.
+#+end_quote
+
+You're conflating two different things.
+
+Planting a tree isn't your responsibility, but if you do it then you've stepped up to an abandoned task.
+
+Planting a tree /on your neighbor's side of the property line/ isn't your place, and if you do it then you've acted out of line.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 1
+:DateUnix: 1573696197.0
+:END:
+
+************* I agree with that, then you see that responsibility isn't the issue. It's some other violation, in this case violating someone's property.
+
+#+begin_quote
+  and it isn't your place to impose links anywhere that you personally feel like they're missing.
+#+end_quote
+
+My problem with this is all the argument is that it's not "his place". Ie people should do nothing they aren't assigned to by their superiors
+:PROPERTIES:
+:Author: RMcD94
+:Score: 1
+:DateUnix: 1573698427.0
+:END:
+
+
+********* And you're free to think that.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 1
+:DateUnix: 1573667187.0
+:END:
+
+********** That isn't something that I "think," it's something that's objectively true as a statement of fact. It isn't your place to take it upon yourself to set a bot loose in this subreddit. Did you ask any of the mods for permission to set a bot loose in this subreddit before taking it upon yourself to do so?
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 13
+:DateUnix: 1573667673.0
+:END:
+
+*********** Hang on, doing so at this moment.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 3
+:DateUnix: 1573668606.0
+:END:
+
+
+*********** “It isn't your place” is a status-based argument and you should be suspicious of yourself for making it. What is the /real/ reason you're upset here? I invite you to ask yourself, refocus on that and clearly express it.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1573701524.0
+:END:
+
+************ #+begin_quote
+  “It isn't your place” is a status-based argument and you should be suspicious of yourself for making it.
+#+end_quote
+
+Consider the following statement:
+
+"It's not my place to come to your house while you're at work and start painting it purple with orange polka dots."
+
+Even if that /is/ status-based, it's still entirely valid.
+
+The real reason I've been participating in this argument (and you should be suspicious of yourself for trying to be a telepath, ascribing to me an emotional state based on how you inferred I must have been feeling - as though I couldn't /possibly/ have said the things I said unless I was upset) is because Lightwavers attitude ("as long as there are no titles unlinked, there will be no links and thus no tags provided") struck me as similar to "if you've got nothing to hide, you've got nothing to fear."
+
+It's like, no, you don't get to assume that this decision you've made is the default option. I don't even care if there's a bot or what it does, I barely interact with this subreddit outside of the Friday thread anyway.
+
+And if you'll follow this argument to its conclusion, Lightwavers thought they had a "gotcha" with the "prove it's objectively true." I responded with two short, simple sentences. Then they went back and said "... yeah, okay, I'm messaging the mods for permission right now." So, like, idk what you're doing here but I'm wanting to be shut of all this, I haven't heavily participated in reddit for a hot minute and I feel like I wasted my entire day thinking about this nonsense, so...
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 4
+:DateUnix: 1573705111.0
+:END:
+
+************* The difference is, one is illegal while one is merely against convention. It's like the example that [[/u/RMcD94]] [[https://www.reddit.com/r/rational/comments/dvoq4i/meta_are_the_low_quality_tags_too_harsh/f7g6gej/][gave]] about asking forgiveness not permission. That's totally fine when it's just a convention that you're breaking, and the convention is one you understand why it's in place (Chesterton's Fence) and what it's for, and you're breaking it for a specific reason that you think will improve the situation. I will charitably ascribe this motive to Lightwavers as I don't think his behaviour contradicts it. (Although I don't /know/ how hard he thought about it first, by default one should be charitable in their interpretations of others, I feel.)
+
+Sorry about using the word "upset." I meant it as more of a stand-in for the longer phrase "arguing about this on the internet." I see this as mostly a pointless activity, so I don't do it much. Possibly I am guilty of ascribing a motive to you because you are engaging in an activity I find to be low-value.
+
+I'm sorry to hear that you feel you wasted your day thinking about this. I may have contributed to that, for which I apologise again.
+
+For others reading:
+
+#+begin_quote
+  It's like, no, you don't get to assume that this decision you've made is the default option. I don't even care if there's a bot or what it does, I barely interact with this subreddit outside of the Friday thread anyway.
+#+end_quote
+
+Why not? Why can't people contribute as they see fit, if they look at the current state of things on [[/r/rational]] and go, "Hey, I could do this and it would be a definite improvement. I know about all the likely errors I could be making in this judgement, and have specifically thought about why things are the way they are, and I still feel that this would be an improvement." And then the only thing they do is break a (previously unenforced) convention. As an honest, genuine question, what is the problem with this?
+
+(A separate issue: I can see why people dislike Lightwavers injecting personal commentary into bot-like behaviour which should be "impartial." I mostly agree with the criticisms here and so voted to remove the extra tags on the poll he put up.)
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1573708447.0
+:END:
+
+************** #+begin_quote
+  [Doing whatever the hell you want - as long as you've personally determined that it's for the best - and then asking forgiveness afterwards is] totally fine when it's just a convention that you're breaking [and not a law].
+#+end_quote
+
+*sigh*
+
+#+begin_quote
+  Why can't people [do whatever the hell they want as long as they personally determine that it's for the best]? As an honest, genuine question, what is the problem with this?
+#+end_quote
+
+**/sigh/**
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 3
+:DateUnix: 1573710832.0
+:END:
+
+*************** I can honestly see [[/u/Perspeculative]]'s point on this. Breaking a convention (where it is merely a convention and not a law) in a way that one genuinely believes to be most probably beneficial is exactly how societies get rid of poor conventions.
+
+There were a bunch of distinct problems with Lightwaver's bot. But the argument that it was "not his place" to implement it is not a very meritorious argument.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 7
+:DateUnix: 1573716538.0
+:END:
+
+**************** #+begin_quote
+  But the argument that it was "not his place" to implement it is not a very meritorious argument.
+#+end_quote
+
+I disagree.
+
+I'm going to bed, then I'm going back to not interacting with reddit for a while.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 1
+:DateUnix: 1573718937.0
+:END:
+
+***************** Noted.
+
+Goodnight, and may you live long and prosper.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1573720433.0
+:END:
+
+
+*********** #+begin_quote
+  it's something that's objectively true as a statement of fact.
+#+end_quote
+
+Feel free to prove it, using only object truths. Be sure to state your axioms, and provide a clear logical connection that shows how you came to this conclusion.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 0
+:DateUnix: 1573667877.0
+:END:
+
+************ Okay. [[/r/rational][r/rational]] is not the personal property of [[/u/Lightwavers][u/Lightwavers]]. Therefore [[/u/Lightwavers][u/Lightwavers]] is not entitled to make decisions on behalf of [[/r/rational][r/rational]] as though it were his/her/their personal property.
+:PROPERTIES:
+:Author: ElizabethRobinThales
+:Score: 13
+:DateUnix: 1573668074.0
+:END:
+
+
+** I personally think that they should be removed. I feel like they are detrimental to the community as a whole.
+
+By immediately judging and labelling a story 'low quality' we are arbitrarily prejudging it for everyone who sees it.
+
+I personally am writing a story that I want to consider rational, but I am an amateur and it is obviously the work of an amateur. Does that make it 'low quality'? Perhaps, does that mean it deserves to be labelled low quality? I don't think so.
+
+I voted for remove, but if replace wins, then perhaps replacing the tag with 'amateur story' or 'constructive Critique only', something that will tell the reader not to expect a master work but not to judge the work like they would judge a story that has been edited and published by a professional Writer and a full team of editors and beta readers.
+:PROPERTIES:
+:Author: signspace13
+:Score: 23
+:DateUnix: 1573641552.0
+:END:
+
+*** If your comment ends up with the most votes and replace wins, the (Low Quality) tag will be replaced by (Amateur Work).
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 2
+:DateUnix: 1573641851.0
+:END:
+
+
+** Ironic given the meta discussion, but I see a lot of negativity directed toward you. Disappointing given your good intentions.
+
+Anyways, thanks for creating and sharing your super convenient tool! Really appreciate not having to search up the titles.
+
+Re: controversy, people apparently find your objectionable tags objectionable (to the point where they irrationally hate the bot itself rather than its current iteration) , so the neutral solution is posting the links only.
+
+On a side note, having to police beneficial technology because of human foibles and quibbles is always depressing...
+:PROPERTIES:
+:Author: nytelios
+:Score: 11
+:DateUnix: 1573684235.0
+:END:
+
+*** Yeah, I'm finding this pretty funny so far.
+
+#+begin_quote
+  "OK, so I realized the tag this isn't really working, should I change it?"\\
+  "Yes, remove it. Also you suck."
+#+end_quote
+:PROPERTIES:
+:Author: NZPIEFACE
+:Score: 9
+:DateUnix: 1573756975.0
+:END:
+
+
+** I expect that the underlying issue is that you are trying to enhance your bot, which was originally limited to providing links to third party sites, to provide what is effectively recommendation data. Or anti-recommendation data, as the case may be.
+
+The problem with it is that recommendations are a notoriously complex area. Even Amazon, which has access to its users' browsing history and their purchasing history, not to mention a lot of experienced developers, has had trouble with them over the years. And they have every incentive to get recommendations right in order to sell more books.
+
+Something like /Taylor Varga/, which you currently [[https://www.reddit.com/r/LightPieces/comments/dtszrx/taylor_varga/][list as (Low Quality)]], is a good example of the challenges involved. It's a hugely polarizing fics; some readers love it and some readers hate it. The quotes that you have collected are a decent cross-section of the reasons given by the people who dislike it. However, you could also come up with another list of reasons given by the people who like it. Which is why it is [[https://wormstorysearch.com/?direction=desc&is_nsfw_eq=any&limit=20&page=2&searching=true&sort=stories.rating][currently ranked 32rd out of 7,000+ /Worm/ fics]].
+
+In my case, I had finished 180 /Worm/ fics before I started researching /Taylor Varga/ in depth, so I knew what I was doing. And yet even after reading all the arguments "pro et contra" I wasn't sure whether I would like it. I had to actually sit down and read the 2,000,000-word monstrosity in order to decide for myself. Moreover, my opinion changed repeatedly as I progressed through the text. If I had stopped after the first 300K words, when some of the issues with the fic became more pronounced, I would have had a different opinion than I have now. If you were to ask me today whether it's a "low quality" work, I would shrug and say that it really depends on what you are after, what kind of sense of humor you appreciate, whether you can handle well-written but repetitive scenes, etc. There are sections of /Taylor Varga/ which I find to be very enjoyable and there are section which I find to be very irritating.
+
+As a general observation, I find that using objective quantifiable data helps when creating recommendation lists. It's not a perfect method by any means, but it helps minimize controversy. Things like [[http://www.isfdb.org/cgi-bin/most_popular_table.cgi?1][the ISFDB's list of Novels Ranked by Awards and Nominations]], which I put together a few years ago.
+:PROPERTIES:
+:Author: ahasuerus_isfdb
+:Score: 3
+:DateUnix: 1573783226.0
+:END:
+
+*** Indeed. The low quality tag has been abandoned. Hopefully the wiki links work out better.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 3
+:DateUnix: 1573801074.0
+:END:
+
+
+** Just do what the rest of the world does and stick three stars on things that you think are low quality and use four and five for things you think are better.
+:PROPERTIES:
+:Author: MyreMyalar
+:Score: 2
+:DateUnix: 1573641295.0
+:END:
+
+*** The system so far ranges from low quality, as in the way the text/plot/etc is constructed is subpar, to no recommendation one way or the other, and finally a nearly universal recommendation at the other end. Star ratings are not in line with this system, unfortunately.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 4
+:DateUnix: 1573641447.0
+:END:
+
+**** I'm not sure you can really make a fine dividing line between the wide scope of what you are talking about and a recommendation.
+
+I mean try saying 'The writing, plotting and characters are all subpar - strongly recommended'. I think it sounds absurd. 'Low quality' as a tag with no qualifiers attached is functionally identical to saying 'not recommended'.
+
+If you want to attach tags to links, I wouldn't mind something like (original) vs (fan-fiction) - I generally tend to prefer original stories, or if I am going to read fan-fiction it'll only be for specific settings I'm interested in other takes on (e.g I like Worm & Ward, but have little interest in other author's Worm spin-offs).
+
+From the title of a story alone it is not always clear what category it falls into.
+:PROPERTIES:
+:Author: MyreMyalar
+:Score: 5
+:DateUnix: 1573641810.0
+:END:
+
+***** #+begin_quote
+  'Low quality' as a tag with no qualifiers attached is functionally identical to saying 'not recommended'.
+#+end_quote
+
+Indeed. Links are attached that point to reviews/comments that display specific critiques.
+
+#+begin_quote
+  links, I wouldn't mind something like (original) vs (fan-fiction) - I generally tend to prefer original stories, or if I am going to read fan-fiction it'll only be for specific settings
+#+end_quote
+
+An interesting idea. The system right now doesn't support more than one tag, but I might redesign it to point to fandoms if I have the time.
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 3
+:DateUnix: 1573641979.0
+:END:

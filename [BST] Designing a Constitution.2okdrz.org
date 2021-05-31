@@ -1,0 +1,729 @@
+#+TITLE: [BST] Designing a Constitution?
+
+* [BST] Designing a Constitution?
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 11
+:DateUnix: 1417975420.0
+:END:
+Mad Queen Bunny has been getting involved in war and politics. As the result of one short war's surrender terms, a post-American city-state is about to get a new constitution.
+
+With all the lessons that have been learned through the Enlightenment to the present day, up to and including this subreddit's focus on rationality... what items would it be worth nudging the constitutional committee towards adopting? President, cabinet, executive committee? Unification or separation of powers? First-past-the-post, preferential voting, liquid democracy, transferable proxy vote? Unicameral, bicameral, x-cameral legislature? Constitutionally separate branch of government to avoid partisan gerrymandering of electoral districts? Which rights should be explicitly mentioned in the Charter of Rights and Freedoms? Appointed or elected judiciary, and either way, by who?
+
+(Mad Queen Bunny has her own long-term projects to deal with, and isn't particularly interested in taking over administrating the city; especially without, at the very least, a believable referendum/plebiscite. She mostly wants the city to have sufficiently developed political institutions for the city's governance to leave her alone, such as by having particular people who can be blamed for acts of war; though she'd be happy if the city's economy and society developed to the point where its people could work on similar anti-extinction-risk projects as her own.)
+
+
+** Some simple optimizations for typical democracies:
+
+- Voting uses a preference rank and any Condorcet method for counting, because why wouldn't you.
+
+- Line-item veto decreases pork and gets rid of the ability to hold good laws hostage (seems to be a net improvement, requires separation of powers).
+
+- Laws should be required to have metrics by which they'll be judged, a goal defined with those metrics, and an expiration date for when they'll go away if they miss the goal.
+
+- Budgets are particularly contentious and could be defined automatically (ie: taxes adjust to fit the budget always unless the legislature passes a "we need deficit spending this year" law manually.) Putting this into the constitution would make it harder to fiddle with.
+
+- Political parties are inevitable so you should take advantage of them in your system.
+:PROPERTIES:
+:Author: OffColorCommentary
+:Score: 5
+:DateUnix: 1418000375.0
+:END:
+
+*** #+begin_quote
+  Voting uses a preference rank and any Condorcet method for counting, because why wouldn't you.
+#+end_quote
+
+As someone who's been part of an effort to get ranked-choice voting used by our city, the reasons seem to boil down to:
+
+- It's difficult to understand, and a voter education scheme would cost money.
+- It's difficult to count (or manually recount) the votes.
+- It requires money for upgrading the existing voting machines.
+- There are a lot of different voting schemes to choose from.
+- It's fairly opaque to the voters.
+
+(These range from reasonable to frustratingly stupid.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 5
+:DateUnix: 1418013314.0
+:END:
+
+**** How do you feel about Borda Count?
+
+It's super easy to explain, and while not as good as a Condorcet method, is closer than most.
+:PROPERTIES:
+:Author: OffColorCommentary
+:Score: 1
+:DateUnix: 1418013574.0
+:END:
+
+***** I don't like Borda count, mostly because it fails on a number of criteria that I consider important (majority criterion, Condorcet criterion). My pie-in-the-sky preference is one of the methods that finds the Smith set and then applies some ranked choice algorithm to it if there's not a Condorcet winner, but that's hard to explain to city council members, let alone the general voting public. (Edit: For single-winner elections, anyway. Multiple winner elections are a whole different kettle of fish.)
+
+The biggest problem is that when you start talking about voting systems, people think that you're trying to steal an election or squeeze out some advantage. What people hear is "rank the candidates, then stuff happens, and at the end we have a winner", with that middle step being a thing of mystery.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 7
+:DateUnix: 1418016345.0
+:END:
+
+****** I am admittedly biased, coming from Australia, but I like the instant runoff method. I feel that it is a good compromise in that it is simple to explain, reduces tactical voting and fulfills the majority criterion.
+
+While it doesn't meet the Condorcet criterion, *I* don't feel that that is a necessity due to philosophical problems with paper rock scissors situations. Preferable sure, but not necessary.
+
+Of course it doesn't really matter in most cases, (so long as you don't choose first past the post), no voting system is perfect. (As has been mathematically proven!)
+:PROPERTIES:
+:Author: duffmancd
+:Score: 1
+:DateUnix: 1418090531.0
+:END:
+
+******* None is perfect, but some are more perfect than others.
+:PROPERTIES:
+:Author: mcgruntman
+:Score: 1
+:DateUnix: 1419247619.0
+:END:
+
+
+*** On the scale of a city-state, political parties are much less inevitable. Neighborhood groups take most of the tribalist pressure, not broad position-on-everything coaltions.
+:PROPERTIES:
+:Author: VorpalAuroch
+:Score: 2
+:DateUnix: 1418076536.0
+:END:
+
+
+*** #+begin_quote
+  Voting uses a preference rank and any Condorcet method for counting, because why wouldn't you.
+#+end_quote
+
+Personally, I'd use a Borda Count and mixed-member proportional representation -- which also integrates the inevitability of political parties.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1418033200.0
+:END:
+
+
+** Prediction markets playing a major role in deciding policy would probably be my first item.
+
+(That, or appointing Robin Hanson king, which effectively accomplishes the same.)
+:PROPERTIES:
+:Author: Jace_MacLeod
+:Score: 6
+:DateUnix: 1417984347.0
+:END:
+
+*** I would consider a country with Robin Hanson as ruler an existential threat to be nuked as soon as possible. The man appears to have self-modified to no longer value anything resembling standard human values.
+:PROPERTIES:
+:Author: VorpalAuroch
+:Score: 6
+:DateUnix: 1418006243.0
+:END:
+
+**** That's an extreme enough position about someone I've never heard of that I'm now curious to know what you mean. Quick google searches don't make him seem particularly scary. Mind giving a 30 second explanation?
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 5
+:DateUnix: 1418018973.0
+:END:
+
+***** The summary is that he is an economist who looked at the conflicts between what people value and what economic principles value and decided that the economics was correct and it was the people who were in error. The place this is most obvious is in [[http://www.overcomingbias.com/2009/09/poor-folks-do-smile.html][Poor Folks Do Smile]], where, as Scott Alexander says, "he envisions a grim Malthusian future of slavery and privation for humanity and then soundly endorses it."
+:PROPERTIES:
+:Author: VorpalAuroch
+:Score: 3
+:DateUnix: 1418037191.0
+:END:
+
+****** Thanks for that. I think I can grasp his value-system abstractly, but they do seem to be based on a number of assumptions that are hard to justify. Even if we can, as he claims, dismiss the hardship of lives lived at near-subsistence levels, it's pretty pessimistic or unimaginative to believe that such a future is the only/best one probable to occur.
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 1
+:DateUnix: 1418052599.0
+:END:
+
+
+***** If I recall correctly the Defense Professor in HPMOR is based, in part, on Robin Hanson and Michael Vassar.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1418031537.0
+:END:
+
+
+**** Just to be clear, I consider /anyone/ being king a very failure-prone system of government. I was just making a bit of snark on his (IMO justified) love of prediction markets.
+:PROPERTIES:
+:Author: Jace_MacLeod
+:Score: 1
+:DateUnix: 1418052989.0
+:END:
+
+***** That didn't really come through previously, but I definitely agree. Prediction markets are cool.
+:PROPERTIES:
+:Author: VorpalAuroch
+:Score: 2
+:DateUnix: 1418076254.0
+:END:
+
+
+** The constitution of the United States was based a lot on things such as the Magna Carta and the government it outlines was inspired by the Roman Republic. Now, that's not the only thing that shaped the document. Consider the 3rd Amendment.
+
+#+begin_quote
+  No Soldier shall, in time of peace be quartered in any house, without the consent of the Owner, nor in time of war, but in a manner to be prescribed by law.
+#+end_quote
+
+This was added in more from then recent memory of colonial homeowners forced to shelter British soldiers. It was a pressing issue that the then new government wish to abstain from.
+
+My suggestion is to think hard about your setting's history and what the lives of those writing this new constitution were like leading up to that moment. Find what the beliefs, thoughts, and feelings of the writers are at the time of penning this document and you'll see what would fit.
+
+“It has been said that democracy is the worst form of government except all the others that have been tried.” ~ Winston Churchill
+:PROPERTIES:
+:Author: ZombieboyRoy
+:Score: 3
+:DateUnix: 1417989238.0
+:END:
+
+
+** One feature I would include is the ability for some official to split bills before they are voted on.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1418061245.0
+:END:
+
+
+** Yes, yes, I know: Politics is SPIDERS. However, I'm reasonably confident this post is sufficiently divorced from present-day political tribes that I'll get at least one useful idea out of it.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1417975944.0
+:END:
+
+*** ...I mean this is going to get very different responses depending on the person.
+
+I for one am going to say copy the US constitution, but remove the commerce clause and the elastic clause, add a clause preventing states from erecting trade barriers, add incorporation, and obviously ban slavery, and hope for the best...
+:PROPERTIES:
+:Author: logrusmage
+:Score: 2
+:DateUnix: 1417978894.0
+:END:
+
+**** One slight issue with that approach; the constitution being written is for an individual city-state, as opposed to a large federal state of multiple sub-parts.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 2
+:DateUnix: 1417979139.0
+:END:
+
+***** Does your city state plan on growing? How will it handle an increase in population? Will you allow for an expansion of borders?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1417982796.0
+:END:
+
+****** The city in question is where present-day Erie stands. The next nearest population centres are Buffalo and Cleveland - there's plenty of room for expansion between them.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1417983008.0
+:END:
+
+
+***** I think the state parts would map well onto a district system, especially if the city is big enough to have different districts.
+
+Basically, if it's big enough to be its own city-state, I think the states thing wouldn't be much of an issue.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1417984220.0
+:END:
+
+
+**** Another change to make don't let Senators be popularly elected. This was a change made in the desire for democracy, but the purpose of the senate is to throw some cold water on the "bread and circuses" tenancy of popular democracy by state councils electing Senators who will act in the populace's interest.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 1
+:DateUnix: 1418051290.0
+:END:
+
+
+**** Yeah, I like that path. Break down the right to bear arms a wee bit, beef up the privacy right to match, reinforce the separation of church and state ... also, [[http://www.cgpgrey.com/politics-in-the-animal-kingdom/][the voting system would need some work]]. But I think it's a pretty good template, especially for a American city-state like [[/u/DataPacRat]] is describing -- super-especially for one that just ended a period of oligarchical mob rule.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1417984070.0
+:END:
+
+***** #+begin_quote
+  Break down the right to bear arms a wee bit,
+#+end_quote
+
+Also, clarify it. Do they really mean:
+
+- you may carry a weapon at any time
+- you may only carry a weapon if you a militia member, regardless of whether you are currently on duty (e.g. on the training field)
+- you may only carry a weapon if you are on active duty in the militia at that moment
+
+Also, what's the definition of "arms"? Blunderbuss? Pistol? Rifle? Machine gun? Tank? NBC weapon?
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 2
+:DateUnix: 1417997336.0
+:END:
+
+****** Okay /braces self to delve into SPIDERS/ current SCOTUS cases and the federalist papers imply the intent is:
+
+#+begin_quote
+
+  - you may carry a weapon at any time
+#+end_quote
+
+As the intent was to allow the people to overthrow or check government influence, so anything goes. Interestingly Heinlein's attitude to personal responsibility expressed by Prof in /The Moon is a Harsh Mistress/ seems to align with this, because in the end only one man is responsible for any decision.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 2
+:DateUnix: 1418088296.0
+:END:
+
+******* Yes, I'm aware that that's what it means. You have, however, proven my point: the original text is not clear. The current definition is based on reference to other documents (FP) and to decisions made after the fact by a group of people not signatory to the document. If you're going to write a Constitution, be clear. Try something like: "The people have a fundamental right to own whatever weapons they choose and to carry those weapons on their person at any time. No branch of government shall place restrictions on this right."
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 3
+:DateUnix: 1418140113.0
+:END:
+
+
+****** [deleted]
+:PROPERTIES:
+:Score: 0
+:DateUnix: 1418059776.0
+:END:
+
+******* No, I said militia and I meant militia. The point I was trying to make was:
+
+1. There are people who are not considered part of the militia (e.g. because they are too old). Are these people allowed to own and carry weapons?
+2. In revolutionary times, the militia had training sessions. Are militia members allowed to carry their weapons when they are not actually on the field of a training event? e.g., can they go grocery shopping with a rifle on their back and a pistol on their hip?
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 2
+:DateUnix: 1418140524.0
+:END:
+
+
+******* You're assuming the consequent here. That is one formulation of the meaning of 'militia', but not at all a universally accepted one, and it is a heavily political definition. Considering only the National Guard and other historical organizations which were similar but more local to be 'militia' is an equally valid interpretation.
+:PROPERTIES:
+:Author: VorpalAuroch
+:Score: 1
+:DateUnix: 1418076839.0
+:END:
+
+******** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1418085432.0
+:END:
+
+********* Significant typo: By 1972 you meant 1792.
+
+Also, that passage distinctly does /not/ say that " 'militia' refers to all able-bodied men between 17 and 45 years of age." If that was true, then it would not be necessary to enroll them in it, as they would already be part of it by virtue of being able-bodied mean between 17 and 45 years of age. Additionally, two-century-old Acts of Congress which were not well-enforced even at the time are not strong precedent for current law; there are many strange laws passed around that time that are totally disregarded for all purposes (often called 'blue laws').
+
+I'm quite confident that the current legal interpretation of 'the militia' in practice is 'the National Guard', and unless you can find a citation in law from the post-WWII period discussing militia that implies universal membership, I stand by that.
+:PROPERTIES:
+:Author: VorpalAuroch
+:Score: 2
+:DateUnix: 1418094266.0
+:END:
+
+********** While I admire and appreciate the precision and scholarship that both of you show, is this discussion actually relevant to the topic? The point is that we are writing a /new/ Constitution. I was suggesting that one thing that would want to be clarified in such a document would be the nation's attitude towards armed civilians. What the current legal status of that seems a bit offtrack
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1418140799.0
+:END:
+
+*********** True.
+:PROPERTIES:
+:Author: VorpalAuroch
+:Score: 1
+:DateUnix: 1418159708.0
+:END:
+
+
+** Depends upon the size, political history, and activities of the city-state, honestly. A small city-state can make due with a single governing body elected by consensus. A larger one will need separation of powers, checks and balances, etc.
+
+Some areas have bad political history of despotism, which would lead towards an individual head of government being a bad idea, others have histories of bureaucratic nightmares that argue in favor of a single source of final decisions.
+
+Honestly, any American city-state is likely to desire/demand freedoms a la Bill of Rights, but that's all we can say for sure.
+:PROPERTIES:
+:Author: failed_novelty
+:Score: 1
+:DateUnix: 1417979810.0
+:END:
+
+*** #+begin_quote
+  any American city-state
+#+end_quote
+
+Some further details, which may help narrow in on some suggestions: A Singularity-like apocalypse vanished nearly all humans, did weird things to most cities. People rebuilt, started repopulating. Long-distance comms and travel nearly non-existent (due to Plot). Before the brief state of war, the city (Erie) was essentially run by guild-like "unions", who arranged (via methods that haven't been specified) for a mayor to run things at city hall. No bill of rights, no formal constitution; due to pre-Singularity politics, "police" are generally despised, with some of their functions now taken care of by a "civil guard".
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1417981015.0
+:END:
+
+**** What about resource distribution? What's the tech level? If there's /also/ an abundance of natural resources to go with that low population, the best possible thing would probably be to /keep/ the population low and live as technologically advanced hunter-gatherers - perhaps with a loose set of treaties to deal with conflict where it arises. The need for government arises out competing interests, which in turn arise out of scarcity.
+:PROPERTIES:
+:Author: E-o_o-3
+:Score: 1
+:DateUnix: 1418066263.0
+:END:
+
+***** #+begin_quote
+  hunter-gatherers
+#+end_quote
+
+Mad Queen Bunny occasionally daydreams about personally undertaking such a lifestyle...
+
+More seriously - various Plot thingummies have created all sorts of new and interesting life-forms to populate the environment with, various pre-Singularity global heating amelioration efforts are out of control and interacting interestingly, and if a human walks into the wrong zone he might get turned into one of those new and interesting life-forms.
+
+(Sample life-form: 'Carousel tree'. Description: "If you ever find a branch growing out of your chest, and another growing out your back, do whatever you have to to keep the chest one from touching the ground. That is, unless you're in a spot you don't mind being rooted to for the rest of your life.")
+
+#+begin_quote
+  scarcity
+#+end_quote
+
+One item that is in reasonably short supply: areas that have been carefully mapped out for dangerous plants, dangerous animals, and dangerous zones, and are thus reasonably safe for human habitation. The scarcity comes from the fact that scouting to map out new areas tends to use up the scouts fairly quickly, and without proper monitoring previously-mapped areas can be infiltrated by invasive life-forms.
+
+#+begin_quote
+  tech level
+#+end_quote
+
+On average, probably something like late 19th century, with various 20th century tweaks that are more about information or organization (eg, standardized cargo pallets), with occasional surviving near-Singularity-level artifacts (eg, a nearly-self-maintaining university that avoided getting eaten by the Singularity). Some of the new and interesting life-forms provide useful enough materials to have been farmed.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1418067271.0
+:END:
+
+****** Ah. You're in a [[http://avatar.wikia.com/wiki/Spirit_Wilds][Spirit Wilds]]-type setting. Also see the anime "Mushishi" for ideas. Neither of these are techno-settings, but the consequences for humanity are essentially the same.
+
+I feel like I've read something like this before online a long time ago. The details are blurry now but it involved a protagonist who got revived from his cryo-chamber and turned into a female rabbit. The environment was hostile and I seem to remember a vending machine AI. Some agency turned to him/her for advice because his ancient-origin made him immune or something. You wouldn't happen to have written that?
+
+Anyway - governments. I don't think any real-life humanity has ever been in this situation before. Check out Scott Alexander's Archipelago. Your world is basically an archipelago, except with techno-wilds rather than ocean.
+
+[[http://slatestarcodex.com/2014/06/07/archipelago-and-atomic-communitarianism]]
+
+It's essentially set of meta-rules which allows people to do as they like within small enclaves, and to easily leave one enclave for another, provided the second enclave will accept them - terms and conditions apply. I suppose it's a little more meta than what you asked for - but, from what I know of human psychology, volunteers for scouting are practically lining up to go exploring despite how dangerous it is, so ultimately you /do/ have a world where new enclaved regions are rapidly being charted out. (What was that war over, anyway?)
+
+This doesn't help you with statecraft for a specific city state, but it's good idea-fuel for the broader world.
+:PROPERTIES:
+:Author: E-o_o-3
+:Score: 1
+:DateUnix: 1418068403.0
+:END:
+
+******* ***** 
+      :PROPERTIES:
+      :CUSTOM_ID: section
+      :END:
+****** 
+       :PROPERTIES:
+       :CUSTOM_ID: section-1
+       :END:
+**** 
+     :PROPERTIES:
+     :CUSTOM_ID: section-2
+     :END:
+[[https://avatar.wikia.com/wiki/Spirit%20Wilds][*Spirit Wilds*]]: [[#sfw][]]
+
+--------------
+
+#+begin_quote
+  In the era before the Avatar, the Spirit Wilds encompassed all regions of the Avatar World, but remained largely uninhabited by humans due to hostile spirits that lurked in the wilderness. Spirits often disguised themselves as plant life to deceive human trespassers, and attacked individuals that they regarded as threats to their well-being. For instance, vine-like entities that resembled grass would lie in wait until they made contact with a group of individuals, before ensnaring and pulling the people underground. Furthermore, as humans typically only ventured into the Spirit Wilds in search of food, spirit wasps would join together atop trees resembling fruit and attack humans who attempted to eat them.
+
+  * A parade of spirits entered the Spirit Oasis near the city from where Wan was banished, under the watch of the guardian aye-aye spirit.
+    :PROPERTIES:
+    :CUSTOM_ID: a-parade-of-spirits-entered-the-spirit-oasis-near-the-city-from-where-wan-was-banished-under-the-watch-of-the-guardian-aye-aye-spirit.
+    :END:
+  [[https://i.imgur.com/PkOgSCM.png][*Image*]] [[http://vignette1.wikia.nocookie.net/avatar/images/5/5c/Spirits_enter_the_Spirit_Oasis.png/revision/latest/scale-to-width/200?cb=20131020193500][^{i}]]==== [[https://i.imgur.com/9KzlDIb.png][*Image*]] [[http://vignette4.wikia.nocookie.net/avatar/images/a/a2/Overgrown_Republic_City.png/revision/latest/scale-to-width/200?cb=20140730103051][^{i}]]==== [[https://i.imgur.com/T1hOapQ.png][*Image*]] [[http://vignette2.wikia.nocookie.net/avatar/images/a/a7/South_Pole_in_the_past.png/revision/latest/scale-to-width/200?cb=20131020153931][^{i}]]
+#+end_quote
+
+^{Parent} ^{commenter} ^{can} [[http://www.np.reddit.com/message/compose?to=autowikiabot&subject=AutoWikibot%20NSFW%20toggle&message=%2Btoggle-nsfw+cmozukv][^{toggle} ^{NSFW}]] ^{or[[#or][]]} [[http://www.np.reddit.com/message/compose?to=autowikiabot&subject=AutoWikibot%20Deletion&message=%2Bdelete+cmozukv][^{delete}]]^{.} ^{Will} ^{also} ^{delete} ^{on} ^{comment} ^{score} ^{of} ^{-1} ^{or} ^{less.} ^{|} [[http://www.np.reddit.com/r/autowikiabot/wiki/index][^{FAQs}]] ^{|} [[https://github.com/Timidger/autowikiabot-py][^{Source}]] ^{Please note this bot is in testing. Any help would be greatly appreciated, even if it is just a bug report! Please checkout the} [[https://github.com/Timidger/autowikiabot-py][^{source} ^{code}]] ^{to submit bugs}
+:PROPERTIES:
+:Author: autowikiabot
+:Score: 1
+:DateUnix: 1418068431.0
+:END:
+
+
+******* #+begin_quote
+  You wouldn't happen to have written that?
+#+end_quote
+
+I started writing S.I., where Bunny once met "Pepsi Convoy", just about six months ago. It's 268,000 words later, and at the chapter I'm currently writing, 'Bunny' is occasionally referred to as 'Mad Queen Bunny' for Reasons.
+
+#+begin_quote
+  (What was that war over, anyway?)
+#+end_quote
+
+(Mild spoilers for Book Six)
+
+Erie's Office of the Mayor sent orders for the capture of the visiting head-of-state of the Dominion of Lake Erie (ie, Bunny), and to place her in dangerous proximity to a known transformative zone; violating all sorts of the diplomatic protocols required to have any sort of diplomatic negotiations at all, thus committing a de facto act of war against Lake Erie. The apparent motivation was to gain control of city-killer tech they believed Bunny had access to.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1418075293.0
+:END:
+
+
+** How many large is the legislative body? In a city-state, as opposed to a larger collective with more conflicting interests, you won't need hundreds of people to form a quorum. You could probably get by with nothing but a parliament of one person per, say, ten thousand residents (I don't know how many, exactly, because I haven't read past /In -/), and set a number of tasks that they have to accomplish on an annual or bi-annual basis: establish a police force by any other name, regulate trade, that sort of thing.
+
+Have someone leading the government, but their role would be more akin to that of secretary-general than president. They could be elected internally, or whatever.
+
+Issues that the parliament can't determine decisively, say by a 75%-25% majority, go to a referendum. Voting is mandatory. Certain things are constitutionally prohibited (murder, slavery, holding office for longer than /N/-years, owning weapons/drugs etc. without a license or permit, people can't be barred from your establishment/services based on race, colour of fur, gender, sexuality, species, or status as 'alive').
+
+The constitution can be modified, but I don't know how you would pull that off with such a small population.
+
+Maybe a clause for regulating political advertising. How about having mediated television programs where every candidate makes their case?
+
+Rather than having ridings, I (personally, so this might actually be a horrible idea) would go with a certain number of seats, with the top candidates afforded a seat in the parliament. Every citizen has a number of votes they can use relative to the number of seats, number of candidates, and so on.
+
+There are two voting periods, one month and then later one week before the legislature has to dissolve and then reconvene. First item after the vote is revisiting the agenda (i.e. examining the judicial branch, candidates advancing their election platforms) No proxy voting.
+
+I dunno, that's kind of a tall order. Good luck.
+:PROPERTIES:
+:Author: chthonicSceptre
+:Score: 1
+:DateUnix: 1418003083.0
+:END:
+
+
+** For a small area, I'd probably base the organizational model on the [[https://en.wikipedia.org/wiki/Representative_town_meeting][Representative Town Meetings]] of the large Massachusetts towns (these get reasonably large and remain manageable; Framingham has 68,000 residents). As long as you stick to a small area, this works pretty well, as everyone who is making policy is constantly accountable to their constituents(=neighbors), and it resists the current US form of partisan politics by deflecting factional tendencies toward neighborhoods and specific interest groups rather than all-encompassing Red/Blue Tribes that have an opinion on everything.
+
+The town meeting format does not account for a judicial branch nor deal well with the executive-branch end of things; the meeting moderator and town administrator/town manager, which are in principle carrying out the wishes of the meeting representatives and board of selectmen, in practice can be very powerful positions prone to abuse. Gerrymandering of representative districts is also possible. Copying [[https://en.wikipedia.org/wiki/Framingham,_Massachusetts#Government][Framingham's model]] seems like a good way to deal with some of this; preference rank within the precint-equivalents is obviously a good plan.
+
+For policy-oriented suggestions, mundane ones include making politicians well-paid for their time in order to avoid bribery and make conflicts of interest unnecessary in principle. Expressly stating the principle that taxes should be placed only on things that the government wishes to discourage or on things that cannot be moved outside the borders of the city-state (i.e. Pigovian and land-value taxes) seems like a broad enough criterion to be included in the Constitution; I'd be leery of including anything terribly specific, on the general principle that theoretical rules should be set up to fail gracefully if they turn out to be bad empirically, and Contitutional limits on what can be taxed would not fail gracefully.
+
+One thing you can get nicely if you have royalty is a safety valve if things go poorly. This makes it easier to provide for governmental stability with very long terms for some parts of the government, with the royal safety valve if someone successfully deceives the voters and changes their policy drastically once elected; allow the monarch to be given emergency powers by a plebiscite or to have their intervention requested in a specific matter by a sufficiently-large citizen's petition.
+
+Elected judiciary is immoral and grotesquely stupid, and should not be considered in any halfway-reasonable discussion of government planning. I am unclear on how it ever seemed like a good idea.
+:PROPERTIES:
+:Author: VorpalAuroch
+:Score: 1
+:DateUnix: 1418009500.0
+:END:
+
+
+** I always thought it would be neat if there was a way of having representatives that don't just represent based on location. Have them run for a particular issue or whatever, and whoever gets the most approval signatures wins. No idea if it would work better or not but it would be interesting.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1418060137.0
+:END:
+
+
+** Hooo boy, this is something that people have devoted their entire lives to thinking about. It's not the sort of thing that gets any /easier/ in a fictional universe, but there's no shortage of reading material on the topic.
+
+The truth is (in my opinion) what really matters is the context of the current situation. Everything always evolves from the current situation.
+:PROPERTIES:
+:Author: E-o_o-3
+:Score: 1
+:DateUnix: 1418066128.0
+:END:
+
+
+** One thing you may want to consider is *not* including any rights in the constitution. One of the benefits and one of the drawbacks to a constitution is that it is hard to change. As seems to be one of the problems with the gun debate in USA at the moment, things change. What seems like a perfectly reasonable right today might not be in 100, or 1000 years.
+
+If your rights are implied in the laws made, as is common in Common Law systems (I believe, IANAL), you can adapt those rights to changing times more easily. Of course they can also be taken advantage of more easily by a powerful government, but I think it is something to consider particularly if you come from a place like USA where the Bill of Rights is such a commonly accepted part of the constitution.
+:PROPERTIES:
+:Author: duffmancd
+:Score: 1
+:DateUnix: 1418091475.0
+:END:
+
+*** I mostly agree with you, but only mostly. There are certain rights which are important enough that they should be made nigh-unchangeable. Examples might include "no slavery", "cannot be forced to testify against yourself", etc. We could debate about what exactly should be in that list, but I'm confident that most people will agree that there should be such a list.
+
+The list should be minimal, however, and everything else can and should be placed in law though. Absolutely with you on that.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1418141076.0
+:END:
+
+**** "cannot be forced to testify against yourself" could bring all kinds of havoc with A.I. gaining citizenship.
+:PROPERTIES:
+:Author: Bowbreaker
+:Score: 1
+:DateUnix: 1418340037.0
+:END:
+
+***** Such as what?
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1418343082.0
+:END:
+
+****** That designing transparent A.I becomes against the law automatically. And once the data within A.I. itself becomes part of the A.I.'s speech (because what would be the difference? Everything is data for an A.I.) then it could be easily argued that any data within personal accounts of biological citizen is an extension of their body just the same, making any search for evidence within them inadmissible in court regardless of warrants. Far fetched but lawyers have successfully argued weirder things.
+:PROPERTIES:
+:Author: Bowbreaker
+:Score: 1
+:DateUnix: 1418350644.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1417981772.0
+:END:
+
+*** #+begin_quote
+  If you violate an executive order you must proof you did not violate the law it is based on, then you cannot be punished.
+#+end_quote
+
+How do you prove a negative?
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1417996993.0
+:END:
+
+**** Usually by showing that the positive leads to contradiction.
+:PROPERTIES:
+:Author: ajuc
+:Score: 1
+:DateUnix: 1418000930.0
+:END:
+
+***** That's a pretty strong burden of proof to place on the accused.
+
+Prosecutor: "Your Honor, Joe here was part of the gang that robbed the bank."
+
+Joe: "No I wasn't! I wasn't anywhere near the bank when it was robbed, and I can prove it!"
+
+Prosecutor: "Sure, you didn't actually go into the bank yourself, but you helped them plan and prepare for the crime."
+
+What can Joe say to prove that he never had contact with these people in any way and never contributed anything to the planning or prep of the crime? If he's guilty until proven innocent, he's screwed.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1418002273.0
+:END:
+
+****** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1418031005.0
+:END:
+
+******* Grammar nitpick: "prove" is the verb, "proof" is the noun. And in this case I think you actually want "evidence."
+
+I'm still unclear on what you're putting in executive orders and how they differ from laws. If an executive order constitutes a rule that I can be punished for breaking and that will be enforced by the LEOs and judicial branch, then how is it different from a law? (Serious question, not being snarky.)
+
+In your original comment you did not say that people couldn't be accused without proof, which is why I was confused. I'm still worried about your burden of proof however -- the government should never be able to send me to prison unless they have substantial evidence that I actually did something illegal. If I am known to have drinks with Tony the Mobster every Thursday, they are absolutely justified in using that as evidence that I MIGHT be a criminal, and to therefore investigate me to see if they can find evidence that I AM a criminal. When they have leveled a specific charge ("you shot Joe") it should still be their job to prove that I did it, not my job to prove that I didn't.
+
+If the burden of proof is on the accused, then you end up with witch hunts and tyranny -- anyone, citizen or government, can send anyone to prison simply by leveling a charge that cannot be disproven.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1418142474.0
+:END:
+
+******** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1418152523.0
+:END:
+
+********* If I understand this correctly:
+
+- Laws are abstract principles that cannot be changed (without significant effort) and cannot inherently be violated because they lack specifics that would allow for violation
+- Executive orders are the instantiation of a law; they provide specific terms that say what constitutes a violation
+- If A feels that B has broken an executive order, A can accuse B and the burden of proof is on A
+- If B has complied with the executive order but A feels that the EO is not an appropriate instantiation of the law, then A can accuse B and the burden of proof is on A.
+
+Interesting idea; I'll need to think on it some more before I could say if I agree with it, but it's definitely interesting.
+
+My concern is that it does not well address externalities. Take, for instance, drug use (by which I mean serious drugs such as heroin). Drug use itself is victimless, yet drug users place an above-average strain on the nation's health care infrastructure, they contribute less to the economy, and they are overrepresented in the criminal classes. Under your system, what law or executive order would address this? Who would bring suit against them, and who would have the burden of proof?
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1418157050.0
+:END:
+
+********** #+begin_quote
+  If A feels that B has broken an executive order, A can accuse B and the burden of proof is on A If A feels that B has broken an executive order, A can accuse B and the burden of proof is on A
+
+  If B has complied with the executive order but A feels that the EO is not an appropriate instantiation of the law, then A can accuse B and the burden of proof is on A.
+#+end_quote
+
+These two seem confusingly similar and in both examples A has the burden of proof.
+
+I think a better example instead of your last one is: If A feels that B has broken the executive order but B thinks that despite that he actually complied with the relevant Law then B has the burden of proving that he complied with the Law despite not complying to an executive order based on it. Similar on how laws nowadays can get thrown out if they go against the constitution.
+:PROPERTIES:
+:Author: Bowbreaker
+:Score: 1
+:DateUnix: 1418339716.0
+:END:
+
+
+**** I like the weapons-means-LEO; give people freedoms with attendant responsibility, seems a good plan.
+
+The part about taxes seems exploitable -- if you're only taxed on land /ownership/, then why would anyone buy land? Just rent / lease the use of it. Or, alternatively, create a corporation (or a trust) which holds ownership of the land but you do not. Who would owe taxes in the second case -- the stockholders? The CEO of the company? The board of directors of the company? The administrators of the trust?
+
+#+begin_quote
+  There cannot be criminal charges without a victim
+#+end_quote
+
+In principle I like this, but there are edge cases that would need to be addressed. For example, water right management, toxic waste dumping, strip mining -- these are all externalities with no direct victims, so how are they prosecuted? Would this fall under the "executive orders"?
+
+Actually, I'm unclear on what you're putting under "executive orders" -- how do you see those working?
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1418002698.0
+:END:
+
+***** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1418030694.0
+:END:
+
+****** #+begin_quote
+  I don't see how the taxation could be exploited. Someone owns the land and whoever that is owes the taxes.
+#+end_quote
+
+Again, what if I sell the land to a foreign national who doesn't live in the country, then rent it from him? Will the government send debt collectors to France / Japan / etc? What if it isn't even a real person, just a well-constructed fake? Or what about my other questions from prior post:
+
+#+begin_quote
+  Or, alternatively, create a corporation (or a trust) which holds ownership of the land but you do not. Who would owe taxes in th[is] case -- the stockholders? The CEO of the company? The board of directors of the company? The administrators of the trust?
+#+end_quote
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1418162671.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1417980250.0
+:END:
+
+*** #+begin_quote
+  the purpose of your government
+#+end_quote
+
+Before the war: ensuring that the poor people in the city didn't get it into their heads to form mobs to storm the rich peoples' homes and take all their stuff. And to keep the economy going so the rich people stayed rich.
+
+Mad Queen Bunny's purpose, post-war: To keep that group of people who happen to live in the city from committing any further acts of war against her; such as by having some body of people to negotiate with about where to set borders between where Bunny's people get to do stuff and where the city-people get to do stuff, and by arranging matters so that the city-people face incentives which encourage them to do things other than commit acts of war.
+
+#+begin_quote
+  a declaration
+#+end_quote
+
+At least in-story, this probably already exists in the form of the peace treaty which Bunny arranged for the city's major political figures to sign.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1417981495.0
+:END:

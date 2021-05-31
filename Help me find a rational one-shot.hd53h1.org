@@ -1,0 +1,122 @@
+#+TITLE: Help me find a rational one-shot
+
+* Help me find a rational one-shot
+:PROPERTIES:
+:Author: sheikheddy
+:Score: 23
+:DateUnix: 1592737050.0
+:END:
+There was a magic system really close to computer science. Tribal setting, post-apocalyptic hints. This lady is getting trained to use a magic item (a pendant?) from this other guy. Used by speaking. Hers is harmless against people, but it's revealed later on that his can hurt people. I think she had a hard time getting a coconut or something once because she immediately tried to break it down into every step and then she shook it off and realized it was simple, just that her practice of magic was making her overcomplicate how she was thinking? Near the end she leaves the guy to go to a dangerous area and he gives his pendant to her.
+
+
+** Wow, this sounds a lot like my own story - super flattered someone is looking for it :)
+
+[[https://omnisplore.wordpress.com/2019/06/21/manifest-logic/]]
+
+Both characters are female by the way, though admittedly somewhat androgynous.
+:PROPERTIES:
+:Author: crispin1
+:Score: 13
+:DateUnix: 1592761081.0
+:END:
+
+*** Yes! This is it! Thank you!
+:PROPERTIES:
+:Author: sheikheddy
+:Score: 6
+:DateUnix: 1592763771.0
+:END:
+
+**** If you like the concept, I later made this list which includes various stories in a similar vein. In particular I'd recommend Sam Hughes's Ra. [[https://fiftysevendegreesofrad.github.io/hard-comp-fi-fiction-list/]]
+:PROPERTIES:
+:Author: crispin1
+:Score: 4
+:DateUnix: 1592764576.0
+:END:
+
+***** Metamorphosis of Prime Intellect is so overrated.
+
+Shockwave Rider is not really in this list. It's more 2020 seen through a filter of 1974, 2001-flavored space industry and a telecom-based internet.
+
+David Brin's "Earth" is much more computational magic.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 3
+:DateUnix: 1592787860.0
+:END:
+
+****** #+begin_quote
+  Metamorphosis of Prime Intellect is so overrated.
+#+end_quote
+
+Is it really? I mean, I thought it was pretty bad, but I've never seen anyone hype it as being good.
+:PROPERTIES:
+:Author: cthulhusleftnipple
+:Score: 3
+:DateUnix: 1592797486.0
+:END:
+
+******* Yeh, people really describe it as good.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1592825060.0
+:END:
+
+
+*** What specifically went wrong with the little tea cups?
+
+I've read the scene several times and I'm trying to figure out how she /overwrote/ the old tea leaves with tea cups.
+
+Is it because =tea= was referring to unused leaves, used leaves, and the actual drink (contained in the cup) and so the latest assignment to =tea= was the drink... and then "the value stored at =tea=" was used to overwrite the leaves?
+
+This all sounds good to me, I'm just not clear why she tried to /write/ =tea= to the leaves, nor how she decided to choose some... what, library call(?)... that would overwrite the existence of the leaves (rewrite their molecular makeup?) with =tea= rather than... just physically moving the leaves to the trash similar to the toy game (which I'm realizing now has a simplified interface) or the apples?
+
+On top of that, the reference to the old tea leaves was destroyed by updating =tea=, right? how would it know to write the /new/ value of =tea= to the old object /referred to/ by =tea=? Race condition?
+
+I think the main error you were trying to call attention to was referring to many things by the same name, as well as demonstrate the existence of the... exception handler watchdog (can you interact with it to learn more details about the error? or do different colors refer to different kinds of thrown errors, blue=bad memory access, red=undefined behavior, etc)
+
+I have a background in this field, so if you feel like answering, feel free to use a more technical answer, thanks
+:PROPERTIES:
+:Author: Lugnut1206
+:Score: 2
+:DateUnix: 1592769330.0
+:END:
+
+**** It's inspired by undefined behaviour in c++... anything can happen, but it's usually both surprising and useless. Obviously in the story we don't have a formal language spec, but I guess you could view her error as calling a class destructor from a pointer that either references the wrong data type, or points to deallocated memory.
+
+The orb thing is the os killing the process after it's stumbled on a bit from erratic behaviour into an illegal memory access. Or an exception handler if you have exceptions switched on, yeah.
+
+Edit: maybe a method call not a destructor as in the real world she's only moving the object to the bin not making it disappear altogether.
+:PROPERTIES:
+:Author: crispin1
+:Score: 3
+:DateUnix: 1592770447.0
+:END:
+
+***** Sorry reading your post again ... The library call that put the leaves in the water invalidated the pointer. Once she tried to discard the object referenced by the invalid pointer, nothing means what it's supposed to any more, so there's no point in trying to figure out whether she put a teaspoon of miniature cups into the water, or whether she just thought she did, and what that would even mean in any case... it's undefined behaviour.
+
+I hope that's a vaguely satisfying explanation?
+:PROPERTIES:
+:Author: crispin1
+:Score: 1
+:DateUnix: 1592771475.0
+:END:
+
+
+** Can't remember the title OR find the link, but this reminds me of something that went up in one of the contests that there used to be on this sub, I think.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 4
+:DateUnix: 1592737466.0
+:END:
+
+
+** Spoiler-y speculation on some wording:
+
+Manifest Logic Military Corporation? That doesn't quite fit the pattern of two letter per word though. Manifest Logic Militarized Linguistics Corporation?
+:PROPERTIES:
+:Author: TrebarTilonai
+:Score: 3
+:DateUnix: 1592775128.0
+:END:

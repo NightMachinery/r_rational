@@ -1,0 +1,2516 @@
+#+TITLE: [WIP][RT] Worth the Candle, ch 80-82 (Pea/God/Tail)
+
+* [[http://archiveofourown.org/works/11478249/chapters/31799628][[WIP][RT] Worth the Candle, ch 80-82 (Pea/God/Tail)]]
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 152
+:DateUnix: 1519838702.0
+:END:
+
+** February report, x-posted from [[https://www.patreon.com/posts/february-report-17268937][my Patreon]], probably not that interesting to anyone:
+
+I think that word count is a terrible metric of performance for an author, because word count isn't terribly hard to inflate, and really easily comes at the expense of the story construction and/or quality of the prose. That being said, it's not like you can easily quantify a work's other qualities, which is why word count dominates discussion of output. Word counts are reported verbatim as taken from the function in Google Docs, but shouldn't be treated as absolute, since there are lots of ways to count words and those methods are in disagreement with each other.
+
+The last chapter of January was published on the 26th, so the February period covers all writing done January 27th to February 28th, a period of 32 days. In that time, 10 chapters were posted (not including ch 75, which was a compilation of material), totaling 60,329 words, or an average of 1,885 words per day, and an average chapter length of 6,032 words.
+
+And some other stuff, mostly to answer the question of what else I'm doing with my time, and in the interests of being at least transparent about where my time is spent (so you can keep an eye on it):
+
+Words written for Worth the Candle but not actually used in it total roughly 6K words for the month, though some of those are in the form of scenes that might potentially find a home later.
+
+Words written for other projects:\\
+~12K for A Series of Fights Without Any Meaning [WIP Title]\\
+~4K for untitled fantasy/military novel\\
+~3K for Glimwarden
+
+Reddit comments for the month total (very roughly) 12K words, not counting quotes or mod messages.
+
+Edit: Oh, also! The (hacked-in) thumbnail is courtesy of my sister, who does a lot of watercolor, and [[https://annifriesen.com/][whose site is here]]. It's a crop of a larger banner for TopWebFiction, which I paid her for with homemade fermented honey-garlic and kimchi.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 37
+:DateUnix: 1519840257.0
+:END:
+
+*** #+begin_quote
+  word count isn't terribly hard to inflate
+#+end_quote
+
+Have you considered calculating the Shannon entropy of your writing?
+
+I've recommended this approach for calculating programming productivity metrics before, but never thought to apply it to prose until now. But I think it might work!
+
+A proper measure of Shannon entropy for prose would involve, I think, converting your words into word-pairs, and then generating a big table of word-pair frequencies in the English language and using it as a Huffman prefix table. Not the most approachable metric.
+
+But a pretty easy heuristic to /estimate/ Shannon entropy, is just dump your text into a raw plaintext file, compress that file with any random compression algorithm (say, gzip), and then take the size in bytes of the compressed file as your entropy. Since the theoretic "perfect" compression finds the Minimum Message Length of a plaintext---and current generic compression algorithms are about 95% of the way to "perfect" for text---these algorithms serve as a viable estimate of text's informational entropy.
+
+For the most conservative estimate of productivity, make sure to compress all your earlier chapters together with the newest one, and then measure the marginal difference in compressed byte-size with and without the newest chapter added. That way, you can't cheat by being redundant /between/ chapters, either. Flashbacks would compress to nothing!
+
+I'd be excited to know whether this works for you, if you're willing to give "marginal compressed bytes per day" a try as a metric.
+:PROPERTIES:
+:Author: derefr
+:Score: 11
+:DateUnix: 1519986470.0
+:END:
+
+
+*** Can you share your recipe for homemade fermented honey-garlic? That sounds delicious.
+:PROPERTIES:
+:Author: t3tsubo
+:Score: 6
+:DateUnix: 1519847885.0
+:END:
+
+**** It's literally just raw honey and raw garlic. They ferment each other; the honey gets watery and infused with garlic flavor, while the garlic loses most of its moisture and becomes sweet (almost candied). Then add some vinegar if you have to in order to lower the pH, which should be below 4.5 (I try to use as little vinegar as possible, because I don't think it tends to do good things for the taste). After that, you just wait a month with it out of the light and at room temperature and burp it occasionally to let out the gasses. There should be enough honey to cover the garlic and then some. [[https://www.youtube.com/watch?v=XLVxVQ8O0s4][See this video.]]
+
+I use it as a sweetener in anything savory; lately it's been part of kimchi stew (kimchi, rice vinegar, sesame oil, fish sauce, honey-garlic, broth, and some seared pork belly or a soft-boiled egg).
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 16
+:DateUnix: 1519848452.0
+:END:
+
+***** Shit, dude. In addition to being incredibly entertaining, you may have just made my real life better. Welp, I've been putting off adding you on patreon for too long. Time to support.
+:PROPERTIES:
+:Author: dac69
+:Score: 3
+:DateUnix: 1519873974.0
+:END:
+
+
+** #+begin_quote
+  Amaryllis frowned. “Have you been talking to Fenn, Grak, or both?” “About ... this?” I asked. “Neither.” “Shit,” said Amaryllis.
+#+end_quote
+
+I loved this subtle dig at Joon's social skills. ‘If even Juniper can tell it must be /really/ fucking obvious'.
+:PROPERTIES:
+:Author: sparkc
+:Score: 30
+:DateUnix: 1519875001.0
+:END:
+
+*** Maybe that, but perhaps just the fact that she's now received three independent observations in the same direction
+:PROPERTIES:
+:Author: adgnatum
+:Score: 21
+:DateUnix: 1519878498.0
+:END:
+
+
+** #+begin_quote
+  mary.bak, grak.bak, and fenn.bak
+#+end_quote
+
+love it lol
+:PROPERTIES:
+:Author: Jokey665
+:Score: 29
+:DateUnix: 1519845377.0
+:END:
+
+*** Can you explain the joke here? I'm not familiar with programming.
+:PROPERTIES:
+:Author: Kilbourne
+:Score: 6
+:DateUnix: 1519847169.0
+:END:
+
+**** not a programming thing, just a general computer thing. it's relatively common practice when backing up a file to make a copy of it and append .bak as the file extension
+:PROPERTIES:
+:Author: Jokey665
+:Score: 20
+:DateUnix: 1519847420.0
+:END:
+
+***** Oh I see. My file back-ups are in the original file-form. Is this bad practice?
+:PROPERTIES:
+:Author: Kilbourne
+:Score: 4
+:DateUnix: 1519847698.0
+:END:
+
+****** Not really, the idea is to just make it clear that the file is a backup.
+
+So "important.dll.bak" versus "(BACKUP)_important.dll" would accomplish the same thing
+:PROPERTIES:
+:Author: t3tsubo
+:Score: 14
+:DateUnix: 1519848022.0
+:END:
+
+******* Traditionally, the '.bak' naming process is used because that makes the file unreadable to programs, systems, or code that might be trying to access it. This is especially important when you have somewhat unpolished scripts that go into a folder and, for example, upload all the PDFs to a server somewhere, or attempt to read in a text file. It's really helpful to prevent user error as well, because a .bak file can't be naively opened by double-clicking.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 20
+:DateUnix: 1519880104.0
+:END:
+
+******** It's also more of a DOS-ism, with filenames always being expected to be in that 8.3 format.
+
+In Linux or macOS, you'll instead see backup files, or temporary files, with names that end in tildes, like =foo~=. These are usually created by programs like text-editors that want to autosave, but are afraid that creating a file with the real name will make magic happen (like a program noticing a change in its config file and so attempting to reload it.) You don't want to be able to break your computer by shutting it off with a text-editor open with unsaved changes to a system configuration file. So, instead, programs will name their temporary auto-saved copy of a file =foo= as =foo~=, and then, when you save, delete =foo= and rename =foo~= to =foo=---or, if you quit without saving, just delete =foo~=.
+
+These files still work as backups, too; if power gets cut off to the computer, when you start it back up, you'll find the autosaved =foo~= sitting there beside =foo=. The types of programs that make these files are usually smart enough that, if you try to edit =foo= again while =foo~= is still there, they'll notice =foo~= and offer to resume your editing session.
+:PROPERTIES:
+:Author: derefr
+:Score: 3
+:DateUnix: 1519987452.0
+:END:
+
+
+******* Gotcha, thanks.
+:PROPERTIES:
+:Author: Kilbourne
+:Score: 1
+:DateUnix: 1519848954.0
+:END:
+
+
+** Well, this is going in all sorts of interesting directions. June needs to look into the backpack and see what sort of gear he can come up with from Earth.
+
+Odds on Frog Princess joining the party?
+
+#+begin_quote
+  A large, domesticated, flightless bird had been used as a pack animal for centuries, and was suddenly supplanted by the rails.
+#+end_quote
+
+[[https://www.youtube.com/watch?v=75417gQnauQ][:(]]
+:PROPERTIES:
+:Author: Escapement
+:Score: 21
+:DateUnix: 1519843056.0
+:END:
+
+*** It seems that your comment contains 1 or more links that are hard to tap for mobile users. I will extend those so they're easier for our sausage fingers to click!
+
+[[https://www.youtube.com/watch?v=75417gQnauQ][Here is link number 1]] - Previous text ":("
+
+--------------
+
+^{Please} ^{PM} ^{[[/u/eganwall]]} ^{with} ^{issues} ^{or} ^{feedback!} ^{|} ^{[[https://reddit.com/message/compose/?to=FatFingerHelperBot&subject=delete&message=delete%20duz1m5p][Delete]]}
+:PROPERTIES:
+:Author: FatFingerHelperBot
+:Score: 9
+:DateUnix: 1519843065.0
+:END:
+
+
+*** #+begin_quote
+  Well, this is going in all sorts of interesting directions. June needs to look into the backpack and see what sort of gear he can come up with from Earth.
+#+end_quote
+
+I'm really hoping for "something which includes an Internet connection", because that would be hilarious.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 3
+:DateUnix: 1519854232.0
+:END:
+
+**** He couldn't take out a laptop though so i'm guessin that's out of the question.
+:PROPERTIES:
+:Author: mp3max
+:Score: 6
+:DateUnix: 1519861740.0
+:END:
+
+***** Yeah, wheni wrote that I hadn't noticed that this was a three-chapter drop so I hadn't read the part with the laptop. Not too surprising, but also a pity.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 5
+:DateUnix: 1519865611.0
+:END:
+
+
+*** #+begin_quote
+  Odds on Frog Princess joining the party?
+#+end_quote
+
+I'm betting that, given the perverse interpretation of "princess" that the DM has seemingly used to select Joon's companions so far, /someone/ from the frog princess's retinue will likely be joining, but that someone won't be the same someone considered by said retinue to be their princess.
+
+Given the fact that the only reason to point out and explain a pattern in a narrative is to build the audience's expectations so you can then subvert them, the next princess will probably be one who's considered a princess by /someone else's/ culture's rules, rather than by their own culture's rules.
+:PROPERTIES:
+:Author: derefr
+:Score: 1
+:DateUnix: 1519987899.0
+:END:
+
+
+** #+begin_quote
+  like a mobile Dyson sphere for the soul
+#+end_quote
+
+Yep, reading rational fiction. Love it.
+:PROPERTIES:
+:Author: NotACauldronAgent
+:Score: 23
+:DateUnix: 1519871700.0
+:END:
+
+
+** #+begin_quote
+  “No,” said Amaryllis. She closed her eyes and shook her head. “No, Juniper, why, I'm pregnant now, I can't even drink my sorrows away.”
+#+end_quote
+
+Okay, this is one of her best all-time lines. She is too perfect to only exist in this story.
+
+I am smelling a locked room murder mystery here, and kept thinking that Juniper was gonna bring that up. I find myself leery of this new potential companion, I like the current group dynamic and make-up and don't know whether I'd like another person added.
+:PROPERTIES:
+:Author: XxChronOblivionxX
+:Score: 47
+:DateUnix: 1519842445.0
+:END:
+
+
+** I feel like I'm starting to fall in love with Amaryllis a little.
+:PROPERTIES:
+:Author: AStartlingStatement
+:Score: 21
+:DateUnix: 1519849930.0
+:END:
+
+*** #+begin_quote
+  starting
+#+end_quote
+
+Have you not been paying attention? She's been my girl since the end of the prologue.
+:PROPERTIES:
+:Author: XxChronOblivionxX
+:Score: 17
+:DateUnix: 1519879099.0
+:END:
+
+**** I think I'd be most attracted to Valencia, myself.
+:PROPERTIES:
+:Author: abcd_z
+:Score: 7
+:DateUnix: 1519906398.0
+:END:
+
+***** Best girl wars on [[/r/rational][r/rational]]. What has the world come to.
+:PROPERTIES:
+:Author: Noumero
+:Score: 30
+:DateUnix: 1519943123.0
+:END:
+
+
+** #+begin_quote
+  I started with my favorites, Jelly Belly, Reese's minis, Warheads, Sour Patch Kids, and then moved on to other things
+#+end_quote
+
+Being unfamiliar with American candy, for a moment I thought Joon nonchalantly pulled a couple warheads out.
+:PROPERTIES:
+:Author: the_terran
+:Score: 18
+:DateUnix: 1519846667.0
+:END:
+
+*** "Laptops are not allowed, for obvious reasons, but I don't see how high powered explosives could really change anything."
+:PROPERTIES:
+:Author: sicutumbo
+:Score: 13
+:DateUnix: 1519859459.0
+:END:
+
+**** nuclear warheads are WAY more common though. I am sure he can pull a few out.
+:PROPERTIES:
+:Author: I_Hump_Rainbowz
+:Score: 3
+:DateUnix: 1519869513.0
+:END:
+
+***** I think nuclear weapons (at least magic based ones) were excluded. So maybe he could pull one out but it wouldn't work or something. Or maybe it does because because the mechanism isn't magical.
+:PROPERTIES:
+:Author: PanickedApricott
+:Score: 2
+:DateUnix: 1519947638.0
+:END:
+
+****** Oh I was being sarcastic. Thought it was obvious so I did not include /s
+:PROPERTIES:
+:Author: I_Hump_Rainbowz
+:Score: 1
+:DateUnix: 1519950166.0
+:END:
+
+
+**** While reading the "fighting a dragon" bit, I pictured Joon, on an airship, trying to dredge up an air-to-air missile from the backpack to chuck at the dragon. He would fail---then internally monologue to the DM that it was really no more OP than Fenn's multi-void-arrow thing, really just different flavor---and then try again and succeed.
+:PROPERTIES:
+:Author: derefr
+:Score: 3
+:DateUnix: 1519988360.0
+:END:
+
+
+**** Eh, the void-arrow arty shot is better than conventional explosives for most purposes. Not all - I mean, high quality modern explosives would likely sell like hot-cakes to local mining concerns, but it is not like the party has a shortage of ways to make arbitrary amounts of money.
+:PROPERTIES:
+:Author: Izeinwinter
+:Score: 1
+:DateUnix: 1519901886.0
+:END:
+
+
+*** Those are excluded.
+:PROPERTIES:
+:Author: LordGoldenroot
+:Score: 3
+:DateUnix: 1519859669.0
+:END:
+
+
+** Theodicy huh, having Unsong flashbacks here, I really can't wait to know more about the DM and his motivations.
+
+Also the whole chapter felt wholesome, sometime it's good to just lay back and see people get along and be happy, for once.
+:PROPERTIES:
+:Author: MaddoScientisto
+:Score: 14
+:DateUnix: 1519844905.0
+:END:
+
+*** Next thing you know, AlexanderWales will announce he and ScottAlexander are the same person. They even share most of a name!
+:PROPERTIES:
+:Author: NotACauldronAgent
+:Score: 15
+:DateUnix: 1519889283.0
+:END:
+
+**** Yep, and the non-Alexander parts of both names refer to countries of the UK...
+:PROPERTIES:
+:Author: CannotThinkOfAThing
+:Score: 17
+:DateUnix: 1519889599.0
+:END:
+
+
+**** I didn't even realize that!
+
+Scott Alexander Wales... but why stop here?
+
+Scott Alexander Wales Yudkowski, plus Wildblow, ErraticErrata and Nobodywhatevernumber
+
+Perhaps you too are part of the writer amalgamation!
+:PROPERTIES:
+:Author: MaddoScientisto
+:Score: 6
+:DateUnix: 1519896276.0
+:END:
+
+***** Still, nobody's figured out The Waves Arisen. The author has started leaving hints as ANs, but they contain information no one should have access to, some of it classified, some of it merely secret.
+:PROPERTIES:
+:Author: NotACauldronAgent
+:Score: 2
+:DateUnix: 1519912357.0
+:END:
+
+****** Hang on, new info re TWA's author since it was released a few years ago? Didn't somebody do like a statistical linguistic analysis at some point and rule out most of the famous rational authors?
+:PROPERTIES:
+:Author: jaghataikhan
+:Score: 4
+:DateUnix: 1519927529.0
+:END:
+
+******* No, I was making a joke.
+:PROPERTIES:
+:Author: NotACauldronAgent
+:Score: 4
+:DateUnix: 1519927859.0
+:END:
+
+
+** Typos here, please. (I'm still behind on typos from last chapter, due to a preference for writing instead of typo fixing, hope to catch up tonight or over lunch.)
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 12
+:DateUnix: 1519838750.0
+:END:
+
+*** "Discrete knock" in the last chapter should be "discreet".
+:PROPERTIES:
+:Author: sharikak54
+:Score: 5
+:DateUnix: 1519848408.0
+:END:
+
+**** Fixed, thank you.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 1
+:DateUnix: 1519880149.0
+:END:
+
+
+*** #+begin_quote
+  the part that seemed weakest was the goodness, no the omnipotence
+#+end_quote
+
+not the omnipotence
+
+#+begin_quote
+  the three largest (and loosely-aligned) tuung polities largely independent
+#+end_quote
+
+polities were largely independent
+:PROPERTIES:
+:Author: Badewell
+:Score: 1
+:DateUnix: 1519842509.0
+:END:
+
+**** Fixed those, thank you.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 1
+:DateUnix: 1519843872.0
+:END:
+
+
+*** #+begin_quote
+  though it should be.after such a long
+#+end_quote
+
+be after
+
+#+begin_quote
+  I wanted to be a being of pure, perfect, empathy, and instead I had to fake it.
+#+end_quote
+
+pure, perfect empathy,
+
+#+begin_quote
+  She crouched down and then launched herself up, screaming in delight as she went rose thirty feet into the air.
+#+end_quote
+
+she rose thirty
+
+#+begin_quote
+  I transferred tried transferring some of my points from Essentialism back into my other skills,
+#+end_quote
+
+I tried transferring
+
+#+begin_quote
+  I was just so convinced that there was a god, and the part that seemed weakest was the goodness, no the omnipotence, because someone had to create the world, so ...”
+#+end_quote
+
+not the omnipotence,
+
+#+begin_quote
+  “If carrying Solace to term and then birthing her is as normal for either crantek or humans, as the quest says it will, then I don't think placing a stop on the bottle is a good idea,”
+#+end_quote
+
+humans as
+
+#+begin_quote
+  using Grak's axe to grow it out, dying it a dark brown that bordered on back,
+#+end_quote
+
+bordered on black.
+
+#+begin_quote
+  Individual tuung could be members of the Empire of Common Cause, if they were citizens of a member nation, but the three largest (and loosely-aligned) tuung polities largely independent, with a few points of tension with the Empire.
+#+end_quote
+
+tuung polities [missing verb] largely independent,
+:PROPERTIES:
+:Author: Laborbuch
+:Score: 1
+:DateUnix: 1519844049.0
+:END:
+
+**** Fixed those, thank you. (Reworded the 'carrying Solace to term' bit slightly.)
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 1
+:DateUnix: 1519845081.0
+:END:
+
+
+*** #+begin_quote
+  (Also, there was no doubt in my mind that we were going to have to fight a dragon at some point, but that thankfully seemed like it was going to be a long time coming.))
+#+end_quote
+
+Two closing brackets.
+:PROPERTIES:
+:Author: Veedrac
+:Score: 1
+:DateUnix: 1519863880.0
+:END:
+
+**** There should be two. The second bracket is closing the parenthetical started four paragraphs up, beginning with "Interestingly".
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 2
+:DateUnix: 1519876475.0
+:END:
+
+***** sweet jesus that's an extremely long aside
+:PROPERTIES:
+:Author: therealflinchy
+:Score: 1
+:DateUnix: 1519914018.0
+:END:
+
+
+*** 80
+
+I have to say that +without her,+ I'm not actually sure that I can solve the bigger picture problem without her [or this one]
+
+about to start giving up point(s)
+
+I'd tried tap(ping) into a raw soul before,
+
+81
+
+I've been trying to think of what +all+ I want to show you (all?)
+
++see+ (she) seemed to take some real pleasure
+
+82
+
+after his disappearance and +the+ even through the collapse
+
+living things couldn't (be) teleported
+
+nor +the+ (to) compel the necessary retrofitting
+
+returning to her homeland (after?) training at the athenaeum
+
+few generations and some outsider(s) coming in
+:PROPERTIES:
+:Author: nytelios
+:Score: 1
+:DateUnix: 1519872788.0
+:END:
+
+**** Fixed all those, thanks.
+
+("What all" is a colloquialism/regionalism with a meaning similar in usage to "all that", so I left it in.)
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 1
+:DateUnix: 1519880552.0
+:END:
+
+
+*** 3 sentences where the meaning wasn't clear:
+
+#+begin_quote
+  “I got screwed on this deal,” said Fenn, folding her arms across her chest. No Symbiosis from the swap.
+#+end_quote
+
+What deal/swap?
+
+#+begin_quote
+  in a way, I was glad that it wasn't a Chekov's Gun that had been laying in wait to fire all this time.
+#+end_quote
+
+If I'm reading this correctly, I assume Joon is happy that everything isn't always a clue?
+
+#+begin_quote
+  When I was giving the dire warning, I was more thinking that I would end up staring into the eye of the abyss and have to fight an Elder God.
+#+end_quote
+
+What dire warning? Maybe "given the dire warning" - in which case I still don't remember anything dire.
+:PROPERTIES:
+:Author: nytelios
+:Score: 1
+:DateUnix: 1519877140.0
+:END:
+
+**** 1. The deal/swap being the points that Juniper shifted over. Reworded to "No Symbiosis effect for her from the points I'd shifted over." In theory, she could have gotten up to Essentialism 50 for a short duration.
+
+2. Yeah, essentially he's happy that a random item innocuously picked up long ago wasn't a crucial item in a time of need. Not sure how to reword that, or what it might need, if anything.
+
+3. The "dire warning" is a melodramatic way of phrasing his argument back in ch 76 when they were deciding what to do and he'd said that the Essentialism Gambit was going to lead to some unexpected thing like a quest chain that they'd then immediately have to do.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 1
+:DateUnix: 1519880997.0
+:END:
+
+
+*** ch.82
+
+#+begin_quote
+  and I was treated a rapidly receding view
+#+end_quote
+
+treated a -> treated to a
+
+#+begin_quote
+  Valencia was in a very similar outfit, the blues of it lighter, and the cut a little different, but with the overall effect.
+#+end_quote
+
+the overall -> the same overall
+:PROPERTIES:
+:Author: Kerbal_NASA
+:Score: 1
+:DateUnix: 1519879950.0
+:END:
+
+**** Fixed those, thanks!
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 1
+:DateUnix: 1519885019.0
+:END:
+
+
+*** twenty minute's walk/twenty minutes' walk
+
+accomodated/accommodated
+:PROPERTIES:
+:Author: thrawnca
+:Score: 1
+:DateUnix: 1519888619.0
+:END:
+
+**** Fixed, thanks.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 1
+:DateUnix: 1519888772.0
+:END:
+
+
+*** 80: Chekov -> [[https://en.wikipedia.org/wiki/Chekhov%27s_gun][Chekhov]]. Star Trek confuses me too.
+:PROPERTIES:
+:Author: Makin-
+:Score: 1
+:DateUnix: 1519906130.0
+:END:
+
+**** Fixed, thank you.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 1
+:DateUnix: 1520488563.0
+:END:
+
+
+** That first chapter had so much going on and I thought it did an excellent job of capturing a D&D timed skill challenge with the race-against-time rush. Hope there are more of these!
+
+Some parts made me laugh inappropriately though. Joon telling Val that she had to "hurt it to save it" like a parent with the tough love mentality - that won't come back to bite him, right? I laugh-groaned when it was finally clear why Mary was chosen as the nickname over Amy or Liss... Virgin Mary giving birth.
+
+#+begin_quote
+  On Earth -- well, no, in the specific part of Earth that I grew up on, we're raised to believe that there's only one singular god, who made everything in the whole world, wrote all the laws of physics, set up all the rules the world works by, is omnipotent, meaning that he's all powerful, he's omniscient, which means that he's all-seeing, and finally, the kicker, he's omnibenevolent, which means that he's all-good, as good as good can be.”
+#+end_quote
+
+When you phrase it like that, it looks like one of those super obvious "which one doesn't belong?" multiple choice questions.
+
+I'm wondering how the tuung can live in the Boundless Pit with their strict H2O needs. If it's like the hole in Cyoria, then they might have access to groundwater but that doesn't seem sufficient. Some sustainable source of water constantly pouring off the edge?
+:PROPERTIES:
+:Author: nytelios
+:Score: 12
+:DateUnix: 1519876562.0
+:END:
+
+*** Ironic that Joon tells Val that she had to "hurt it to save it" and then later went on a whole thing about the Problem of Pain.
+:PROPERTIES:
+:Author: Mountebank
+:Score: 8
+:DateUnix: 1519885807.0
+:END:
+
+**** Not really as Joon is not all seeing and all powerful who could just have put everyone into heaven alltogether skipping the pain.
+:PROPERTIES:
+:Author: kaukamieli
+:Score: 20
+:DateUnix: 1519907674.0
+:END:
+
+
+*** #+begin_quote
+  When you phrase it like that, it looks like one of those super obvious "which one doesn't belong?" multiple choice questions.
+#+end_quote
+
+Eh, maybe in that specific phrasing. I prefer Euclid's thought process that, basically, God is a Friendly AI, but specifically, God is the /Friendliest AI/---the /best possible/ world-optimizer from a human perspective.
+
+So, to start with, definitionally, God is omnibenevolent---at least in the weak way the philosophers who first conceptualized that term defined it. Today we'd more say the Abrahamic God is taught to be globally optimizing for [something something] /of humanity specifically/, while not really caring so much what happens to other species. Homobenevolent. Anthropobenevolent?
+
+But, then, given that, of course God is also omniscient and omnipotent---taking control of the universe was an obvious instrumental sub-goal under the goal of becoming the Friendliest AI.
+
+And of course God exists rather than doesn't, because making Roko's Basilisk-like bargains from outside of time is /also/ an instrumental subgoal of becoming the Friendliest AI.
+:PROPERTIES:
+:Author: derefr
+:Score: 2
+:DateUnix: 1519988897.0
+:END:
+
+
+** I love how in chapter 82 they are literally on a train and appear to be /railroaded/ into a major quest, probably with a companion as a reward.
+
+Annoyingly, unlike Bethesda games, quests in this world often seem to have a time limit before failure. The party may not be ready for heavy combat.
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 22
+:DateUnix: 1519846337.0
+:END:
+
+*** #+begin_quote
+  The party may not be ready for heavy combat.
+#+end_quote
+
+I mean, thus far Joon's completed every quest he's received through the liberal application of combat/murder (Quills, Aumann, Unicorn, Larkspur, Fallatehr). The gang is pretty competent at it, all in all.
+:PROPERTIES:
+:Author: GeeJo
+:Score: 20
+:DateUnix: 1519846935.0
+:END:
+
+**** Ok sure. I was just trying to say that in a world with no respawn I would hate to feel forced into a time limited encounter. I would rather get another companion, better gear, maybe figure out a better form of attack than swords or find a trainer for magic skills - do everything I could to maximize my odds of success. But this questline implies they may have to take on those guards in the next 2 days.
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 5
+:DateUnix: 1519847702.0
+:END:
+
+***** I'm hoping that this new quest is something that requires more brain than braw for a change. It would fit with the fact that they aren't in good position for combat and give Valencia a time to shine with her demon-devouring powers. Something like a mistery to be solved or something.
+:PROPERTIES:
+:Author: mp3max
+:Score: 5
+:DateUnix: 1519861913.0
+:END:
+
+
+** Come on, Joon! Copy Feen's scars onto your own body and try your best to patch the mistakes. Write down the materials you would need for a more complete version of the scar magic so you can passively start collecting them. Look at Fallatehrs scars and try to combine the knowledge from the two of them to build scar magic on as many companions as you can.
+:PROPERTIES:
+:Author: munkeegutz
+:Score: 9
+:DateUnix: 1519860305.0
+:END:
+
+*** Opportunity costs. Juniper has very limited time (and even more limited time with his Essentialism boosted) and he decided that studying scar magic was not a high enough priority.
+
+Also, while it would be interesting to plenty of us, I suspect the author doesn't want to turn this story into nothing but thousands of words about magic systems.
+:PROPERTIES:
+:Author: Detsuahxe
+:Score: 11
+:DateUnix: 1519866084.0
+:END:
+
+**** Nah he was able to pull it off with Fenn, so he should have instantly done the same for himself. He had an hour of boosted essentialism left, and was out of things to do. It's a tiny investment for being able to jump 30 feet in the air (and proportionate strength)
+
+Edit: I agree that the author doesn't want to turn this into a lecture about magic systems, but a one paragraph doodad saying "I copied the scars onto my own body, but they didn't work out" or the such would have been enough. Or "Surprisingly, the scars that works for Fenn were almost close enough to work on Amaryllis. I duplicated them (with corrections) onto everybody's bodies, with their blessing."
+:PROPERTIES:
+:Author: munkeegutz
+:Score: 3
+:DateUnix: 1519869009.0
+:END:
+
+***** It's unlikely that Joon would be able to create a set of tailored scar magic ex novo. The original explanation by Fenn suggests it's neither quick nor easy:
+
+#+begin_quote
+  You go through the pain of this scarring in very specific patterns, and when you're done and they've healed, you can put your fist through stone or leap up a few stories into the air. The problem with it, aside from the perfection of technique needed to do the scarring right, is that the scars themselves need to be positioned properly upon the skin, and if the skin changes too much, the magic gets lost.
+#+end_quote
+
+So Fenn went through the legitimate process but the effect waned with time and bodily change. Reminds me of the blueprint theory analogy. Easier to fix loose shingles than make a new wing of a house.
+:PROPERTIES:
+:Author: nytelios
+:Score: 10
+:DateUnix: 1519873497.0
+:END:
+
+
+** #+begin_quote
+  unable to project out because it was too weak
+#+end_quote
+
+Well, solution to that is pretty simple - Twinned Souls (Six-Eyed Doe), kind of strange that it is not mentioned. Maybe I missed it.
+:PROPERTIES:
+:Author: valeskas
+:Score: 8
+:DateUnix: 1519892026.0
+:END:
+
+*** That's a great idea! Very likely to be one of the potential answers since the Loyalty perks are unique. Challenges are time and difficulty of raising loyalty with the doe. Also the description was "will never lag behind you in relative power" so the rubber band might only tug one way since the locus should be far ahead of Joon as it is several hundred years old (or is a few centuries considered young for a locus?). Symbiosis offering the locus more magic a possibility?
+:PROPERTIES:
+:Author: nytelios
+:Score: 6
+:DateUnix: 1519937734.0
+:END:
+
+**** #+begin_quote
+  the locus should be far ahead of Joon as it is several hundred years old (or is a few centuries considered young for a locus?).
+#+end_quote
+
+My understanding of what Joon is perceiving when looking at the locus's soul is that it doesn't have /one/, because it isn't one being, but is rather an emergent property of a large number of independent souls making up its local ecosystem. In other words, the locus is essentially a [[https://en.wikipedia.org/wiki/Bryozoa][bryozoa]]: many life-forms with independent DNA, but which function together as one larger organism in the same way the monoclonal cells of a multicellular plant or animal body do.
+
+This might neatly explain the waning of the locus's power: even if the emergent phenomenon of sentience of the locus has "cultural memory" that is old, if most of its /constituent organisms/ are presently of a young age (because many of the older ones were left outside when its domain was sequestered to the bottle, and then the few remaining older ones died off), that might cause it to be less powerful than before.
+:PROPERTIES:
+:Author: derefr
+:Score: 6
+:DateUnix: 1519989749.0
+:END:
+
+
+** Something I'm not understanding; Grak is the end result of a single founder line that has bred solely by parthenogenesis to avoid "drift," and as a result could be seen as a prince/ess. But Grak left Darili Irid because he was going to be forced into sharing a Kiss with a bondmate.
+
+Seems odd that a line which prides itself on not drifting would force its heir into a Kiss with someone else... wonder if that's part of the reason Grak left?
+
+Also, someone refresh my memory, was there a conversation with Fenn and her views on children before? I seem to recall (or at least believe) that she's against the idea because she doesn't want to raise a child who had to face the alienation she herself faced as a half-elf, but I don't know if that was actually written. Or maybe this is some more evidence that Nellan is a child she had before?
+
+Next, I'm wondering why the two unknown companion connection lines disappeared when Joon came back from the DM discussion. His skill was still over 100, so it's not based on that... did the DM exclude something from him, perhaps?
+
+Finally, clarification question on chapter 80 when they're discussing the ritual; Joon originally says he could take Solace's druid connection to do the ritual, but she'll come back as a non-druid. Isn't Solace's druidity (fake words are fun!) what would keep the bottle stable? So what would be the point of even proposing that, besides getting Solace alive again. Locus would still die.
+
+... thinking about it, Joon was probably just speaking outloud, huh? Anyway, good chapters, lots of interesting stuff afoot :)
+:PROPERTIES:
+:Author: AurelianoTampa
+:Score: 7
+:DateUnix: 1519918374.0
+:END:
+
+*** #+begin_quote
+  Next, I'm wondering why the two unknown companion connection lines disappeared when Joon came back from the DM discussion
+#+end_quote
+
+Possibly it was the DM removing some rails: initially, all companions were set in stone, and them joining Juniper was just a matter of time; afterwards, the DM removed connections to them, and decided to give Juniper more freedom as per his comments about narrative. It could mean that Juniper's group now has a pool of potential companions to choose from instead of preset two, or that they're free to dodge new companions.
+
+Alternatively, the DM just decided that letting Juniper see his future companions is too easy, and made the lines invisible.
+
+Alternatively, it was one of the "choices" the DM is apparently so fond of: he wanted to see whether Juniper would want to see his future companions or follow the suspicious black line; if he chose one, the other would disappear.
+:PROPERTIES:
+:Author: Noumero
+:Score: 12
+:DateUnix: 1519943088.0
+:END:
+
+
+*** #+begin_quote
+  Seems odd that a line which prides itself on not drifting would force its heir into a Kiss with someone else... wonder if that's part of the reason Grak left?
+#+end_quote
+
+My interpretation was that it was some sort of political marriage, maybe with another kingdom. So that realpolitik angle took precedence.
+
+Also, there doesn't seem to be any reason that they have to have only one selfinsemination child each generation, so there could be multiple prospective heirs that are Grak's siblings.
+:PROPERTIES:
+:Author: akaltyn
+:Score: 1
+:DateUnix: 1520175329.0
+:END:
+
+
+*** Maybe Joon can level her up with soul magic and the changes will stick because they map to her actual skill? ( her actual brain skills, as opposed to her stat sheet)
+:PROPERTIES:
+:Author: eroticas
+:Score: 1
+:DateUnix: 1520610923.0
+:END:
+
+
+** Nice, loved some of the interactions in these chapters. Amarillyis had some excellent moments, and their mini therapy session was well done. I'll be interested to see if they can stay uninvolved like they seem to want to, it's a good test of what the DM said to be true. Of course something may happen that will cause them to choose to become involved, something they couldn't ignore or the like. Still not necessarily forcing them (putting them in direct danger or need) but rather enticing them in some form.
+:PROPERTIES:
+:Author: ForMyWork
+:Score: 8
+:DateUnix: 1519869668.0
+:END:
+
+
+** I want to learn more about how these exclusions work. How are they enacted? I'm curious why Juniper seems to take for granted that they cannot be reversed.
+:PROPERTIES:
+:Author: _immute_
+:Score: 7
+:DateUnix: 1519961751.0
+:END:
+
+
+** #+begin_quote
+  “Ah,” I said. “Right. Shit, sorry.” Grak waved a hand, dismissing my oversight.
+#+end_quote
+
+I don't quite follow this bit
+
+what oversight was there?
+
+EDIT:
+
+all party members technically kinda being royalty was a welcome, hilarious surprise. I mean, you could argue the six-eyed-doe even, would be top brass of all animals (beasts? spirit beasts? idk) currently.
+:PROPERTIES:
+:Author: therealflinchy
+:Score: 5
+:DateUnix: 1519911974.0
+:END:
+
+*** Last locus, queen by default? Ruler of druids?
+:PROPERTIES:
+:Author: AurelianoTampa
+:Score: 5
+:DateUnix: 1519917359.0
+:END:
+
+
+** Maybe june can use the backpack to level up his engineering. It's basically a materials/machined part dispenser.
+:PROPERTIES:
+:Author: PanickedApricott
+:Score: 2
+:DateUnix: 1519948543.0
+:END:
+
+
+** #+begin_quote
+  “I just thought that you should know. We'll see whether we can get through the next forty-eight hours without getting into trouble.”
+#+end_quote
+
+Joon realizes that this was intentional, I hope. I wonder what her motive is in seeking another companion.
+:PROPERTIES:
+:Author: infomaton
+:Score: 2
+:DateUnix: 1519970731.0
+:END:
+
+*** Its also a way of testing the DMs pledge not to directly interfere by saying such a massive obvious dramatic irony hook.
+:PROPERTIES:
+:Author: akaltyn
+:Score: 3
+:DateUnix: 1520176022.0
+:END:
+
+
+** Yay for munchkinry! Nay for glossing over most of it haha. Kind of disappointed he didn't delve much deeper into finding ways to permanently enhancing himself while being at 180 Essentialism.
+:PROPERTIES:
+:Author: elevul
+:Score: 2
+:DateUnix: 1520017038.0
+:END:
+
+
+** Juniper started as relatable, traumatized, but trying to do good guy. He had issues, but it seemed that he learned from them and was doing or aspiring to be better. It all started to go down for me after the narrative started to creep in, soul magic and Chapter 79 with DM was a culmination of his regression in my eyes.
+
+His part is only numbers for the most part, he could have asked the DM for Loyalty to not affect them, but instead he opted for "Double Tiff, but no Harem tho". Can loyalty even regress, frankly it should have if he told them the DM exchange as it transpired. He says he cares, but his actions speak otherwise.
+
+"You guys have free will, but I only say when you are around"
+
+"I don't want a harem, but let me ogle Valencia in my room while we are alone for no reason. Why he decided that being alone with her was a good idea?
+
+The problem with Narrative is - you don't need character motivation or logic. I thought DM encounter solved that, but it seems we are again on that track.
+
+There are other"rant" of mine here, I just think this is a summarized version of my problems. So it can be kinda separate.
+
+Edit: This was often compared to Mother of Learning. That series started with Zorian being distant, cold and not that caring for people or their struggle. As the time wen on he matured and even in the time loop physically and mentally reacted to negative things he had to do, even tho they shouldn't really have any effect on the "real world". Here Junipers thought more about "who is that Glenn in Fenns values" than he thought about killing people. Or he thought to himself that he should treat people of Aerb as real human, but even with Grak calling him out he replaced into only thinking about and not actually doing it.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 7
+:DateUnix: 1519848714.0
+:END:
+
+*** I don't get your problem sympathizing with with Juniper's motivations.
+
+Like, dude is generally trying to acquire power in order to become God and save Aerth from its myriad problems. Like, he wants to fix the 'problem' of theodicy, make 'everything perfect forever'.
+
+That may not be literally 'what anyone would do' if granted the ability to rapidly acquire infinite power, but it is certainly not a huge leap. Presumably if you were in Juniper's shoes you wouldn't just let Aerth lie fallow, but would be doing some variation on what he is up to, yeah? Leveling up and gaining power, in order to 'win' and fix everything.
+
+As far as your harshness towards his imperfections go, I guess I can see that. I think you don't make enough allowances for the difficulties of his situation, but if you can only relate to Clark Kent then I imagine if you wait long enough someone will write a story about a character who never makes mistakes.
+:PROPERTIES:
+:Author: WalterTFD
+:Score: 32
+:DateUnix: 1519850447.0
+:END:
+
+**** #+begin_quote
+  Aerth
+#+end_quote
+
+Fenn, how did you get access to this thread?
+:PROPERTIES:
+:Author: Noumero
+:Score: 11
+:DateUnix: 1519905418.0
+:END:
+
+
+**** #+begin_quote
+  Like, dude is generally trying to acquire power in order to become God and save Aerth from its myriad problems. Like, he wants to fix the 'problem' of theodicy, make 'everything perfect forever'.
+#+end_quote
+
+Only motive he directly displayed with actions is Arthur. Other motivations are given by quests aka DM. Start was drifting with the flow and figuring out what is happening, that was good premise.
+
+But after that he isn't actually doing any of that. As soon as Arthur was back and alive somewhere, it all shifted to focus on saving him. He was willing to pretty much let Locus die in a form, i don't know how to help so if it happens it's not my fault and others voted in him to save it. Maybe saving a living being, that was very important to your companion, who died helping Juniper and saved the life of Fenn should have been a good enough motivation.
+
+With introduction of Narrative it felt like outside motives driving them and not really inner logic or motivation. Looking out for narrative threads was pretty heavy up to Chapter 79 and it seems to be back with the Chapter 82(Princess Boogaloo)
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: -1
+:DateUnix: 1519885018.0
+:END:
+
+***** I feel like you might be confused.
+
+The 'quests' don't actually assert any compulsive force. They don't make him do anything. He has chosen to do everything he's done so far.
+
+And what he has done, very obviously, is not 'rescue Arthur'.
+
+The most recent thing he did was strive to rescue the Locus. He is currently seeking a time chamber to resurrect Solace in order to rescue the Locus.
+
+You are talking like you think the vote was mind control or whatever. I don't get it. You understand that the only reason that the vote was binding is that he decided that it was, right?
+:PROPERTIES:
+:Author: WalterTFD
+:Score: 10
+:DateUnix: 1519914771.0
+:END:
+
+****** #+begin_quote
+  The 'quests' don't actually assert any compulsive force. They don't make him do anything. He has chosen to do everything he's done so far.
+#+end_quote
+
+We literally had chapter upon chapter of party wondering that if they don't do quests and idle for to long DM would punish them or drop something bad as the response to their negligence. They are wondering about the new princess in this current chapter, because "it might be a narrative thread". It's very much the compulsive force and the answer at the same time. Without those quests they could move at their leisure, be more aggressive or have a base of operations without fear of it being attacked because the narrative would demand it. Without the information in those quest descriptions Juniper would have been wandering aimlessly or actually had to learn about the world at large. It helps to keep the world disjointed and have blank spaces in it for future use. Quests pretty much set them on a path, they can approach them differently, but it's a path nonetheless.
+
+#+begin_quote
+  The most recent thing he did was strive to rescue the Locus.
+#+end_quote
+
+No he didn't he voted against it. Valencias vote decided that they were going to save Locust right here and right now. He very much wanted to go and find the clues to save Arthur. Of course it not mind control, but his intentions were pretty clear, he even had a one on one talk with Valencia about "why you voted like you did". Locus conveniently didn't get a vote. He did all that was in his power to not save it at that moment and go for Arthur instead.
+
+#+begin_quote
+  “Kuum Doona,” I said.
+
+  “Kuum Doona,” said Fenn.
+
+  “I want to save the locus,” said Val.
+
+  Fuck.
+#+end_quote
+
+Yeah, he seems so eager to help the Locus.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 6
+:DateUnix: 1519915937.0
+:END:
+
+******* You get that the votes don't control his mind or anything. They are just people saying words to him. He still makes the choice to save the locus, indeed, he still prioritizes it over saving Arthur.
+:PROPERTIES:
+:Author: WalterTFD
+:Score: 3
+:DateUnix: 1519929116.0
+:END:
+
+******** Yeah, alienate my whole team or agree with them even i don't want to. So until his is willing to kill them or mind control everything he does is and agreement. Lacking powers or ways to do otherwise is not an agreement, that's not how it works. Wanting to do something else, but denied it by the group=he wanted to do it himself.
+
+This is some strong denial of facts going on.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 0
+:DateUnix: 1519984519.0
+:END:
+
+********* Take one step further back: Joon chose to be around these people. He /picked/ them. He didn't have to make friends with someone just because the game there would be game-layer benefits to doing so. Like Mary says in this very chapter-set, Joon never had to actually "let her in" on the whole game-layer thing. She could have just been some random person who /he/ happened to have secret useful information about; and then he could have left her alone at any point if he didn't like the direction things were going.
+
+I mean, obviously, like he says in his conversation with the DM, Joon's companions were made specifically for Joon to enjoy being around---likely, for him to empathize with. It'd be hard to pass that up, but only in the sense that it'd hard to pass up your favourite flavor of ice-cream. If you think you'd be better off not eating any ice-cream, it being your favourite flavor isn't going to change anything.
+
+Instead, Joon has decided he wants the ice-cream. He /wants/ these people around, and then he /wants/ to allow them to steer his life (probably in no small part because he's afraid that the alternative is him steering all of /their/ lives.) He always has the option to just... not hang out with these people.
+:PROPERTIES:
+:Author: derefr
+:Score: 5
+:DateUnix: 1519990724.0
+:END:
+
+********** How this in any way relates to him not wanting to save the locus now and to go after Arthur instead?
+
+#+begin_quote
+  he could have left her alone at any point if he didn't like the direction things were going.
+#+end_quote
+
+You mean how he literally was struck with a cowardice affliction in the first chapter, because he left someone alone. How we had a whole chapter about "don't separate the party" and how Arthur had companions, so you will have them to to the exact number even. How only reason for him trusting Valencia was her appearing on the companions screen and same with Grak. He does like them as people, but it's unrelated to the whole "narrative" steering them in a direction.
+
+Hell, saving locus is now conveniently tied to the "follow the Arthur" location, not the other one that they voted on and not some other place.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 0
+:DateUnix: 1519994262.0
+:END:
+
+*********** #+begin_quote
+  How this in any way relates to him not wanting to save the locus now and to go after Arthur instead?
+#+end_quote
+
+Because he signed up for being bullied into that. He could have /not/ signed up for that, by not associating with these people, or just, y'know, being mean. He has the power to get his way 100% of the time if he wants to. He's the one who decided voting would be a thing they did, rather than just unilaterally making decisions by himself. He decided that because he didn't want to make his companions' lives into a weird form of slavery, but again, it was a /decision/.
+
+#+begin_quote
+  cowardice affliction
+#+end_quote
+
+Yes, because he didn't act to save someone who he knew was going to die without his immediate help. That's an /entirely different thing/ from the act of dumping his companions off somewhere safe and then going questing on his own, or picking up mercenaries and going questing with /them/, or any number of other things.
+
+The game-layer has very specific rules associated with its punishments. There is no rule about actually having your companions as... your companions. If you dump them off somewhere, they can probably even go and do something and die from it, and as long as Joon wasn't aware of that happening and with full ability to teleport in and fix the problem, there wouldn't be an affliction from it.
+
+#+begin_quote
+  How we had a whole chapter about "don't separate the party"
+#+end_quote
+
+It is a trope that separating /a party/ means ambush. A party being the set of people who are actively travelling around together, and separating being a temporary condition where they're each trying to achieve something but are temporarily vulnerable. It's an action by DMs that's supposed to make you /regret/ being stupid enough to think you could gain efficiency by separating the party. (And it punishes players for making the DM do more work keeping track of several concurrent things happening in several concurrent places; and, by proxy, for the fact that it also annoys the other players when your PC is getting the DM's focus and everyone else is sitting around waiting. Splitting the party is just bad RPG gameplay all-around, really.)
+
+This trope would also apply equally to anyone else Joon was adventuring with---and thus in /a party/ with---even if they weren't Joon's game-layer companions, I'd expect. Or, really, anyone who Joon might like to perform distributed concurrent actions with to gain parallelism.
+
+There's no related trope where the DM would be expected to kill off people Joon has explicitly /kicked out/ of the party.
+
+#+begin_quote
+  how Arthur had companions, so you will have them to to the exact number even
+#+end_quote
+
+Again, "companion" doesn't mean "in the party." Compare: having seven siblings. Doesn't mean you drag them around with you.
+
+#+begin_quote
+  How only reason for him trusting Valencia was her appearing on the companions screen and same with Grak.
+#+end_quote
+
+In a world where (so far as it seems) everyone is trying to kill you, someone being a companion is at least a filter telling you that they have the /potential/ to be someone who isn't trying to kill you. That's a helpful way to bubble people up as, at the very least, resources Joon could pretty quickly be able to lean on.
+
+Consider what a sociopath!Joon would do: keep the teleport key to himself, and let each new companion live their life until he randomly pops in on them whenever he needs them for something.
+:PROPERTIES:
+:Author: derefr
+:Score: 5
+:DateUnix: 1519995368.0
+:END:
+
+************ #+begin_quote
+  He's the one who decided voting would be a thing they did, rather than just unilaterally making decisions by himself.
+#+end_quote
+
+Well this goes into territory of me saying "he doesn't take responsibility for his action and makes it so he had no or only partial control over it". It happens a lot be it voting(i didn't want to but i guess i have to listen now", narrative\DM, this world is like this so i should act like this, etc.
+
+The whole dump companions would be the stupidest thing to do. How exactly getting their trust\help is less efficient when going on his own, escpecially when he knew\knows almost nothing about the world.
+
+#+begin_quote
+  Joon would do: keep the teleport key to himself
+#+end_quote
+
+Well, see he does need them, cause teleportation key would be very limited
+
+#+begin_quote
+  Either you go to a place that you've physically been before, or you follow the pull of a touchstone.
+#+end_quote
+
+If he had power and resources the first thing he would have done is go for Arthur and abandon his companions to do as they please. Him following Abswifth to the white tower was not because he wanted to do it, he lacked power to do otherwise. Same here having companions is better than not having them, but Arthurs importance is pretty close to the top on his priority list.
+
+You also pretty much said as much yourself.
+
+#+begin_quote
+  But, from my viewpoint, the "main arc" of the story hasn't begun yet, because that'll coincide with Joon actually having to let go of Arthur in order to save Aerb (in other words, explicitly choosing to grow rather than to be tied down to the past.) Everything happening right now---this is all a long demonstration of "pre-crisis" Joon.
+
+  And, because the story is "about" this conflict, Aerb basically doesn't matter. Only the Earth framing-device storyline matters. Aerb matters to Joon, and will eventually (likely) be the cause of his character development, but nothing that happens there will change things for us, as readers.
+#+end_quote
+
+Part of my point is Arthur being so important to the junipers story, no way he was 6th on the list of values the soul magic displayed.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 0
+:DateUnix: 1519996981.0
+:END:
+
+************* #+begin_quote
+  How exactly getting their trust\help is less efficient when going on his own, escpecially when he knew\knows almost nothing about the world.
+#+end_quote
+
+That's like saying that making friends is less efficient than just relying on your family for everything. The people pushed on you (whether by genetics, or a game layer, or whatever) aren't necessarily the best people for /you/. You can maybe find ones you'd rather be around---and, at the same time, ones who may be of more /help/, and who might also /ask/ less of you.
+
+Keep in mind that, even very early on, Joon became insanely wealthy. He can afford to hire mercenaries, cultural guides, and whatever else he wants.
+
+Consider the way a business operates. Businesses operate based on efficiency, and they do so by making money and then using it to pay people to get things done. Operating like a business would likely be more efficient for Joon than "going with the flow" of depending on the companions the game shoved on him. He knows how businesses work. He has chosen not to do this.
+
+#+begin_quote
+  If he had power and resources the first thing he would have done is go for Arthur and abandon his companions to do as they please.
+#+end_quote
+
+I agree that Arthur is higher on Joon's values list than the story reported (maybe this is an intentional change? Maybe the game-layer is lying to him, to make him avoid considering tweaking the Arthur-value the way he has the levelling-up value?)
+
+But I don't think /Joon/ really thinks that way, where he'd abandon his companions like that. Though, not, of course, because he's a good person :)
+
+Joon, at this point, is sort of a... Shinji Ikari figure? He feels like he has an /obligation/ to solve all his companions' quest-lines. He feels like he has an /obligation/ to do the things required to raise his companions' loyalty, even if he doesn't /like/ them. (And /this/ is what's at the heart of Grak's annoyance with him.) He just feels like this whole thing with his companions is one big /duty/ that he has to discharge. He's going to do it, even if he hates it. Even though nobody ever asked him to do it if he hates it. (Just like how he was still running RPG sessions even though nobody asked him to!.) Of course, to be clear, the one making him do these things... is him. (And that's sort of the point I was making with the voting: he isn't really being bullied by his companions. He's bullying /himself/, using his own sense of obligation, into accepting their vote.)
+
+If he suddenly munchkined his way into being the right level for the endgame Arthur-saving quest, he'd almost certainly drag his companions along. Not because they'd be useful... but because, at least at this point in his character development, he would think he had an /obligation/ to "carry" them through to the endgame with him. Even if they're a pure burden.
+:PROPERTIES:
+:Author: derefr
+:Score: 2
+:DateUnix: 1519997981.0
+:END:
+
+************** We are kinda agreeing on this, just maybe viewing it slightly different.
+
+My points are:
+
+1. He treats them like "loyalty" upgrades and not like people a lot. It happend before Graks call out, extreme was at Chapter 79(DM talk) and kinda happening again to a lesser degree.
+
+2. He in fact can't abandon them and has to agree to some things even tho he doesn't want to, because they have skill and abilities he doesn't have himself or can't have. This was a sticking point in the Solace druid part. Bonus from the level 20 loyalty going both ways is a heavy intensive to be around them and is somewhat of a "game patch" to implementation "don't separate the party trope", cause they have literal stat bonus for being together.
+
+3. He was very willing and going to pretty much abandon the locus(companion). He did most of what was in his power to do it and other methods were going into monster\unethical\manipulation territory.
+
+#+begin_quote
+  Keep in mind that, even very early on, Joon became insanely wealthy. He can afford to hire mercenaries, cultural guides, and whatever else he wants.
+#+end_quote
+
+Could he? Morals aside the solution to his "Boneitis" problem was knowledge of one of the companions. He had 1\4 of the money. As others love to bring up he is just 17 and having people that he can trust after all he has been through is kinda important for him.
+
+I'm not saying this is the only driving force behind his decision, but Arthur, "narrative" and loyalty heavily affect those. People around him are downplayed at times, because of his
+
+#+begin_quote
+  And at the end of it, I want Arthur back. That's the only way that this game is ever going to be worth the candle
+#+end_quote
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1519999883.0
+:END:
+
+
+** So lat time i went on a pretty long "rant". I slept on it and thought that i was to harsh on Juniper and i should cut hims some slack.
+
+Cause his actions are good and he helped all those ... Huh
+
+He did that good deed...
+
+Well, it can't be at least his party members helped...
+
+So i discovered why i disliked the direction the story was taking, why i felt Junipers character was regressing, why meta"narrative" layer and soul magic were bothering me and a ton of other problems. All courtesy off me trying to find the good thing Juniper and his party did.
+
+So what exactly his motivation are in general, what moves him forward, what was his life goal? What is the goal of all of his comrades? What was motivation of his Earth friends?
+
+The overarching problem with the story is "telling and not showing". I reread previous chapter and Juniper is highly egoistic, hypocritical, asshole (the nicest word for him i can muster), he says something, but he acts completely different.
+
+The only two people that acted like they care for somebody else and really mean it so far are Tiff and Solace.
+
+So this are the problems that exist both in world and in writing that culminated in Chapter 79 (meeting the DM) and they are not that easily fixed if they are fixable.
+
+1) DM is a Deus Ex MAchina that motivates the living Deus Ex Machina of Juniper to function on Aerb. Without them the whole world doesn't exist. What i mean is Juniper is conveniently motivated by outside force that only exist to give him motivation. If Arthur was not existent here he would do nothing, if he could get Arthur right this instant other things would cease to exist.
+
+2) Juniper is obsessed with Arthur and he would trade anyone who is not Arhur for Arthur. He never learned his lesson of not being shitty to others and is ready to tready anybody for his Athur time. He holds the D&D books that Arthur had to a higher value than the "Deer" that is a living being, that was VERY important to Solace\friend that die helping you and saved the girl you "love".
+
+3) Souls stats are a problem, cause they put an anchor on the logic of the world that is too easy to check and it created problems when it clearly doesn't make sense. So Fallatehr can change values so that others follow him, it assumes he is at the top of that value list, right?
+
+Yeah, when at the top of Junipers it's
+
+1. Making excuses for himself
+
+2. Arthur (More than Fenn and Tiff combined)
+
+Power gap
+
+3.Level up
+
+This is not the 6th place
+
+#+begin_quote
+
+  #+begin_quote
+    And at the end of it, I want Arthur back. That's the only way that this game is ever going to be worth the candle.
+  #+end_quote
+#+end_quote
+
+4) Juniper double questioning and saying"I felt bad", but still doing it doesn't mean anything at this point. Actions speak more than words.
+
+5) All the philosophy, morality and psychology discussion in the world mean nothing when characters don't follow them with their actions. Frankly it portraits his whole friend group as a collection of shallow hypocrites. More so it does to Juniper,Arthur and Tiff. I was confused why they are having this discussion, but are not adapted to real world. I confused his age all this time, i thought he was in college, yeah, age of 17 only brings more problems from the time\story stand point.
+
+6) Bringing points or discussion to the story makes people think about them, it kinda makes them relevant. So we had that segment about feminism so. Now we a have a literal princess in the need of a rescue at the start, which would be fine only.
+
+1. Princess needs rescue in town.
+
+2. Princess needs rescue from a literal castle, she would be captured if not for Juniper.
+
+3. Princess needs rescue from the tower, she is captured.
+
+4. Princess needs rescue by killing a unicorn.
+
+5. Princess is captured for a second(3rd) time, she frees herself, but it wouldn't work if Juniper didn't kill Fallatehr.
+
+Great pattern of princess getting captured and being helpless.
+
+6) This next one requires it's own separate entry, cause even tho it is similar to other ones and is mostly "actions speak more than words", boy is it BAD.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 7
+:DateUnix: 1519846447.0
+:END:
+
+*** I think that many of the points you make here have merit -- specifically, it's hard to reconcile Joon's actions with the values in his soul (unless there's another way to slice them or there's more to the story than just the ordered value list)
+
+I especially disagree with your #6:
+
+1. Princess needs rescue in town. ---> I suppose Joon helped, but she had void rifles and a soul cycle. She might have managed on her own.
+
+2. Princess needs rescue from a literal castle, she would be captured if not for Juniper. ---> She had the key and was waiting for him. If not for Joon, she would have just ported out
+
+3. Princess needs rescue from the tower, she is captured. ---> yup
+
+4. Princess needs rescue by killing a unicorn. ---> I mean, she had a medical condition that made them need to kill a unicorn, but they also went through a ton of effort to revive Solace and fix Joons bones.
+
+5. Princess is captured for a second(3rd) time, she frees herself, but it wouldn't work if Juniper didn't kill Fallatehr. ---> She actually took care of this one on her own rather handily. I think she was fine.
+
+On the whole, I very much enjoy the story, and even though I disagree with many of your points, I appreciate that you made them in a constructive manner.
+:PROPERTIES:
+:Author: munkeegutz
+:Score: 12
+:DateUnix: 1519860188.0
+:END:
+
+**** You are correct on this one and this was one of the weakest ones. But it was more about the pattern for a princess to get into trouble in a somewhat cliche manner. Bandits after her>castle rescue>tower locked>unicorn>controlled against her will.
+
+1. Is fine on it's own.
+
+2. She is dead cause at this point she has Ratrot and only Juniper knows it or that they would need a unicorn to heal it.
+
+3. It lingers from the second point. At this rate she is not surviving without Junipers knowledge or power.
+
+4. It was more about her getting captured for the 2nd time. She did save herself, but if it wasn't for the convenience of (Soul link that juniper has) she Fallatehr would not let her go from literal mind control.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 2
+:DateUnix: 1519880080.0
+:END:
+
+
+*** #+begin_quote
+  “Some personal things,” I said. “Things I don't want to share, and that I don't think it would be helpful to share. And ... keep an eye out for a backpack, I guess. He said that there would be a magical one that could get things from Earth, a gesture of goodwill.”
+#+end_quote
+
+Yeah, it would not be. I mean Juniper said this first
+
+#+begin_quote
+  I want Tiff. Two of her, one for him, one for me -- she'd kill me if she heard me say that -- and I want to unfuck everything somehow, make it so that I didn't make so many mistakes, so many things I can't possibly believe she'd get over them.” I want Tiff. Two of her, one for him, one for me -- she'd kill me if she heard me say that -- and I want to unfuck everything somehow, make it so that I didn't make so many mistakes, so many things I can't possibly believe she'd get over them.”
+#+end_quote
+
+“And Fenn?” he asked.
+
+“Fuck you,” I said. “I want Fenn too, god damn you, you fucking made her just for me, I knew from the start that Amaryllis was too pretty, terrifyingly pretty, I should have seen it with Fenn too, that you were just --” I shook my head. Manipulating me, but doing it with a full person that couldn't even be blamed for that manipulation, who I loved in spite of the fact that she was designed to be with me. “Fuck you,” I said.
+
+Followed by this
+
+#+begin_quote
+  I don't want a harem
+#+end_quote
+
+It really shows his ethics and how Fenn and Tiff(especially) are clearly more important when Arthur. Maybe if you don't want a harem stop acting like a horny teenager. Did he ever describe any of the Aerb girls by something besides them being beautiful and made to appeal to his physical taste? At this point when he says "I didn't want to peak at her being naked via soul link" i assume he stared like crazy, but just made an excuse for himself.
+
+Also, let me get this straight what he asked and question how exactly that was going to work.
+
+Junipers point of view:
+
+*I want you to create a copy of a 15-16 year old feminist girl for me and my 40+(500+) pal. Forget about the fact that i didn't speak to her in moths, she might have moved on, she doesn't like the 40+ in question and he doesn't care cause he had multiple wives,lovers and children. Forget that i did the whole speech about Aerb being a hellhole and totally unsuitable for a 15-17 year old girl from Kansas and she probably doesn't want tob e here*
+
+So at what point does he tell her about the sex clone of her for Arthur? How exactly it would work? Is she 15-16 at the time of her liking Arthur or 17 when after she dated Juniper and doesn't love Arthur? Would he like her sex clone to be reverted to being a virgin?
+
+Yeah, he is awful.
+
+Also story contradicts itself at times.
+
+#+begin_quote
+  We drifted apart by inches until she was sitting somewhere else for lunch and the last text message from her (an unanswered ‘how are you doing?') was months ago.
+
+  I'd been trying to mend things with Tiff, and it had almost seemed to be working, so I guess there was that.
+#+end_quote
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 12
+:DateUnix: 1519847341.0
+:END:
+
+**** I'm not clear on why you're being downvoted, since I think your posts are constructive critique as opposed to criticism. Having said that, I disagree with your take on the Tiff thing. I read this as Juniper speaking directly from the id -- he /wants/ this, but he recognizes that he /shouldn't/ want it. He knows perfectly well that these aren't reasonable (or perhaps even possible) things -- that's the point, he's telling the DM "I hate this situation so much that there is nothing you can plausibly give me that would make it right."
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 37
+:DateUnix: 1519853881.0
+:END:
+
+***** I've read all of his previous posts and agreed/upvoted some of them because there were legitimate concerns but now I feel the posts have degenerated into a not-entirely-coherent rant where he's really committed to his own tunnel-vision interpretation and railroading his reading and opinion as fact or ultimatums of how Joon-the-teenager should/shouldn't think. That's very different from saying "I think Joon is acting like a complete asshole and hypocrite at times because of examples X, Y and Z. It makes me really uncomfortable that Joon even thought about requesting Tiff like a commodity for both him and Arthur."
+
+It's obvious that Ace_Kuper's a very invested reader, which is always valuable to a writer, but you can't blame people for downvoting a harangue.
+
+[[/u/Ace_Kuper]] - I also think Joon is an asshole sometimes. Personally I hope he continues to show his shortcomings, as it makes him more interesting than if he were a paragon of justice or "being of pure, perfect empathy." People are complex and make mistakes.
+
+I'm happy you mentioned the save-the-princess trope. I've been wondering whether Amaryllis is aware that she's routinely in some position of distress. She probably has one of the least complementary personalities to endure that and it seems to have had an effect on her confidence, so she probably isn't aware of the ever common damsel-in-distress plot. The anxiety will really start once Joon realizes this /and/ that his party is now filled with princesses.
+:PROPERTIES:
+:Author: nytelios
+:Score: 22
+:DateUnix: 1519879991.0
+:END:
+
+****** It is incoherent at times, that's why i'm thankful for people disagreeing with me, that way i can clarify or acknowledged their points. A lot of those complaints flow from one to another and listing them in a good order is kinda hard for me, but it's fully my fault for not being clear\coherent enough.
+
+#+begin_quote
+  I think Joon is acting like a complete asshole and hypocrite at times because of examples X, Y and Z. It makes me really uncomfortable that Joon even thought about requesting Tiff like a commodity for both him and Arthur.
+#+end_quote
+
+If it didn't came out a such that's my fault, but this was explicitly my point. I feel like he acts as an asshole and should put his actions towards his words.
+
+#+begin_quote
+  I'm happy you mentioned the save-the-princess trope.
+#+end_quote
+
+See, this is funny. Cause other people heavily disagreed that this is the case and even i admitted that this was one of the weakest points i made.
+
+Some clarifications, i hope they are more coherent.
+
+1. [[https://www.reddit.com/r/rational/comments/80xryk/wiprt_worth_the_candle_ch_8082_peagodtail/dv025f7/][Response 1]]
+
+2. [[https://www.reddit.com/r/rational/comments/80xryk/wiprt_worth_the_candle_ch_8082_peagodtail/dv034yt/][Response 2]]
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 6
+:DateUnix: 1519883501.0
+:END:
+
+
+***** #+begin_quote
+  I read this as Juniper speaking directly from the id -- he wants this, but he recognizes that he shouldn't want it
+#+end_quote
+
+I read at as the same thing, mu problem is almost all of the things he does fall into - "I don't like this, but i will do it anyway or i shouldn't do this, but i will."
+
+That "Tiff moment" was just the last straw for me. Also, Soul magic having a clear number for "values" should not have really shown Arthur as 6th, he was willing to trade Tiff to make good for Arthur. Giving an underage girl to a 40 year old guys is not really a good thing.
+
+1. When talking about Amaryliss or other girls he constantly brings up how they "were created for me" and it's mostly physical.
+
+2. Why exactly he chose to take Valencia to his private room to be alone with her. There did this come from "My heart was hammering away in my chest, and I told myself that it was fear and anxiety talking." Like is he going to be like that with every girl.
+
+3. You can have low empathy, but he still should take responsibility for his actions. It's not the DM creating a harem when Juniper himself falls for the looks of every party member.
+
+4. Every time it's convenient for him it's either "they were created for me", but "no you are you and you have free will".
+
+This is what defines his hypocrisy for me. He says that i should change, but doesn't and backpedals with his actions.
+
+Unrelated to the Tiff, but related to the hypocrisy. "I couldn't feel any connection to the locus. I didn't understand the cultural significance of it". Well, maybe you should save it just on the basis that your party member just died helping you and she saved the life of a girl you liked. Or honoring someones memory only applies to Arthur and his D&D books that are treated with more reverence when a LIVING being. Like his admittance of "i was an asshole to people because of Arthur, i will try better" didn't solve anything, in fact i would say it became worse, cause now Arthur is Number 1 priority above living people that are near Juniper and their desires.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 4
+:DateUnix: 1519884431.0
+:END:
+
+****** In regards to Junipers ‘harem', I don't think it's particularly controversial to point out that physical image is crucial to attraction for a lot of males and that you can't choose what you're attracted to. I personally would never judge someone on what or who they're attracted to, only how they choose to act in regards to that attraction.
+
+Juniper is a teenager boy who has slept with a single girl in life and then been surrounded by a number of very attractive females who, at various points, show interest in him. He has done nothing unethical or been unfaithful at any point. If you ask me /that/ fact is less believable than a story where Juniper caves in and sleeps with Valencia, or sneaks looks at Amarylis through the soul link or something similar.
+:PROPERTIES:
+:Author: sparkc
+:Score: 13
+:DateUnix: 1519888686.0
+:END:
+
+******* All of your points are valid, but the fact is,being attracted to them is on him and not on the harem flag that forces him to sleep with them. My problem is, he isn't admitting that, but rather shifting the blame of his possible actions on someone else. It's a flaw of his character, not a wrighting flaw. It's me disliking him for not taking responsibility for himself.
+
+There is a difference of liking someone and thinking to yourself "I might be not able to control myself cause she is so beautiful. His compassion for Valencia took a sudden turn to lust, even tho he saw her as a clueless innocent kid a couple of chapters ago.
+
+#+begin_quote
+  He has done nothing unethical or been unfaithful at any point. If you ask me that fact is less believable than a story where Juniper caves in and sleeps with Valencia, or sneaks looks at Amarylis through the soul link or something similar.
+#+end_quote
+
+Not for the lack of trying. There is a segment in bold text that is in my other comment. He did try to do something super scummy and bad.
+
+[[https://www.reddit.com/r/rational/comments/80xryk/wiprt_worth_the_candle_ch_8082_peagodtail/duz6dvq/][I want Tiff. Two of her, one for him, one for me]]
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 6
+:DateUnix: 1519889216.0
+:END:
+
+******** You really need to rewrite this. I literally cannot understand what you're trying to say in that first paragraph.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 4
+:DateUnix: 1519915107.0
+:END:
+
+********* Fixed, that was a mess.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 2
+:DateUnix: 1519915256.0
+:END:
+
+
+****** [hypocrisy] It doesn't read that way to me, but okay.
+
+#+begin_quote
+  Giving an underage girl to a 40 year old guys is not really a good thing.
+#+end_quote
+
+Sure, but he's not thinking of Arthur as a 40-year-old. He's thinking of him as the teenager that Juniper knew back on Earth. He knows intellectually that Arthur is not older, but he hasn't accepted it emotionally.
+
+#+begin_quote
+  Well, maybe you should save it just on the basis that your party member just died helping you and she saved the life of a girl you liked.
+#+end_quote
+
+...that's what he's doing? Like, he just sacrificed a bunch of skills for a cheaty-munchkin ritual so that he would have the ability to attempt to save it? And now he and all his friends are spending days traveling in order to get to the place where they can take the next step on saving the locus?
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 13
+:DateUnix: 1519913355.0
+:END:
+
+******* #+begin_quote
+  ..that's what he's doing? Like, he just sacrificed a bunch of skills for a cheaty-munchkin ritual so that he would have the ability to attempt to save it? And now he and all his friends are spending days traveling in order to get to the place where they can take the next step on saving the locus?
+#+end_quote
+
+he was going to pretty much abandon Locus, they voted on it, Juniper was going to do something else instead, but Valencia's vote decided that they should help. He specifically had a one on one talk with her about why she decided to vote like that. Also, all of a sudden he found her highly during that exchange.
+
+#+begin_quote
+  Sure, but he's not thinking of Arthur as a 40-year-old. He's thinking of him as the teenager that Juniper knew back on Earth. He knows intellectually that Arthur is not older, but he hasn't accepted it emotionally.
+#+end_quote
+
+Okay, how about making a clone of a girl that loved you for your friend. She clearly stated that girls are not trophies to be won, but juniper wanted to give her as such for himself and Arthur.
+
+The problem that i have with Juniper is exactly that, he is not thinking about it, but only in cases that it involves other people. When it's about him making a decision he goes into the over thinker mode. My whole problem is he can justify any of his action, but it doesn't make them less bad and when he is calling out someone for the same thing he does, it's hypocritical.
+
+He specifically had problems having relationship with Fenn, cause she is older than him, he even thought about her as being immature for her age and that being a problem. Yet, he conveniently forgets about Arthurs real age and acts super immature when it suits him.
+
+Like i don't think he is badly written, but i do think he is an asshole kid who never interacted with the real world or people. He reminiscence about how Arthur had this talks about morality, but Juniper applies zero of it to real life.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 4
+:DateUnix: 1519913915.0
+:END:
+
+******** #+begin_quote
+  Like i don't think he is badly written, but i do think he is an asshole kid who never interacted with the real world or people. He reminiscence about how Arthur had this talks about morality, but Juniper applies zero of it to real life.
+#+end_quote
+
+Okay...? And? I mean, sure, he's a teenager with poor social skills. I'm not sure if your message is simply "I don't like him" or if there's some actual useful feedback here. You're free to dislike a character, certainly.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 5
+:DateUnix: 1519915040.0
+:END:
+
+********* I already describe in detail why i don't like the way he acts.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1519915305.0
+:END:
+
+********** I think there might be a miscommunication here on a deeper level.
+
+Are you aware that, generally, the people here are trying to interpret your posts as /constructive criticism of the story itself/? That's what the parent poster means by "useful feedback"---they're expecting the "point" of your message to be something regarding things you'd like the author to /change/ in order to write a story that more suits your tastes.
+
+Because, if your point is literally "this is a good story about an asshole," well, I mean, there are plenty of stories like that. /Hamlet/ is a good story about an asshole. But people don't generally spend thousands of words trying to point out to others that the character of Hamlet is an asshole. Everyone /knows/ that Hamlet is an asshole. That's rather the point of the play, and is, in fact, part of /why/ the play is good.
+
+Personally, I think that Joon being an asshole is part of why WtC is good, for similar reasons. It's exploring the /consequences/ of Joon being an asshole. It's not a power fantasy where he'll be able to /get away with/ being an asshole, over the long term. It'll either be a tragedy, or a bildungsoman, and---given that it's semi-autobiographical on the part of the author---I'm guessing it'll be more of the latter.
+:PROPERTIES:
+:Author: derefr
+:Score: 2
+:DateUnix: 1519992622.0
+:END:
+
+*********** My points are.
+
+1. Is he intended to be an asshole to this degree.
+
+2. Are lapses in his judgment intended to be like that, because of his previous history.
+
+3. There some points i just found interesting and wondered if they are intended.
+
+4. Logical deconstruction of decisions doesn't work if Juniper stops thinking every time it involves him directly.
+
+5. I in fact think that moment to moment Juniepr works, but as a whole he is a mess. Same with the world it is disjointed on purpose, but it makes it feel less real as a result. "Narrative" suck the drive out of their decision and in fact they relied heavily on "is this narrative" to make their decision. The last chapter is them wondering "is this princess on a train a narrative".
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1519994778.0
+:END:
+
+************ #+begin_quote
+  "Narrative" suck the drive out of their decision and in fact they relied heavily on "is this narrative" to make their decision.
+#+end_quote
+
+I'm curious---how would /you/ write a rational story exploring the consequences of being someone living in a simulation where there really is such a thing as a narrative? Wouldn't you do the same? Is it not rational to pay attention to it, if it is there?
+
+Or is it the conceit itself that's bad, in your opinion? Because I personally find the conceit enjoyable: it's rather novel speculative fiction exploring the /social/ ramifications of a change in the world we live in.
+:PROPERTIES:
+:Author: derefr
+:Score: 1
+:DateUnix: 1519996156.0
+:END:
+
+************* Pretty much Mother Of Learning. If the simulation is so close to reality why does it matter that it's a simulation? The protagonist also has realistic reaction and aversion to committing atrocities even tho it's a simulation and ultimately doesn't matter. He also starts as the unsocial, cold guy who doesn't really care about other people, but he grows other time.
+
+My problem is the whole existence of the simulation layer and i hope that Chapter 79 was an end to it being in focus. "Soul magic" chapters especially were too close to infinite loop of wondering if it's real or not, are we under control or what. At that point it becomes either a philosophical debate or looses all tension cause it doesn't matter.
+
+Just accepting that there are powers beyond your control trying to nudge you in directions is fine, accept people as real and move on. It looses all meaning when he wonders for the 20th time if they Aerb people are real or not.
+
+Here is one of the things that becomes problematic because of the "narrative" layer. Why exactly he is so reluctant to believe that DM is not trying to fail him, yet he believes and follows the descriptions of quests, they are written by the same DM.
+
+Like Jooniper himself said "Even if it all happened like you said, even if I was in a paradise of my own choosing, I would have to worry about whether you were going to show up again." This creates to much problems especially when there are multiple levels of meta narrative going on.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1519997656.0
+:END:
+
+
+**** I'm not sure if it would help your enjoyment any, but when I read this story, I'm mostly thinking of it as this:
+
+#+begin_quote
+  Juniper is obsessed with Arthur and he would trade anyone who is not Arhur for Arthur. He never learned his lesson of not being shitty to others and is ready to tready anybody for his Athur time. He holds the D&D books that Arthur had to a higher value than the "Deer" that is a living being, that was VERY important to Solace\friend that die helping you and saved the girl you "love".
+#+end_quote
+
+...being the /conflict/ of the story. This is Joon's /character flaw/, introduced in the very first chapter. It's the thing he can't let go of; the thing he needs to get over. Aerb is here as a trial, a spirit-quest for him to go through that will lead to him figuring out how to let go of Arthur and grow as a person from there.†
+
+And he /has/ started to do this, in a few small ways. For example, his relationship with Fenn is a lot healthier than how he was treating Tiff only a few months earlier.
+
+But, from my viewpoint, the "main arc" of the story hasn't begun yet, because that'll coincide with Joon actually having to let go of Arthur in order to save Aerb (in other words, explicitly choosing to grow rather than to be tied down to the past.) Everything happening right now---this is all a long demonstration of "pre-crisis" Joon.
+
+And yes, right now, Joon is an asshole. But I think it's promising that even Joon can see that he's an asshole. He hates himself, and is self-destructive (those two things coming together in him killing a version of himself in Ch. 79)---but I think he feels those impulses now more out of a revulsion for the way he was behaving before, on Earth, after Arthur's death. He knows, at least, that he /doesn't/ want to be the person he was at that point. He just hasn't resolved who he /does/ want to be yet.
+
+--------------
+
+† And, because the story is "about" this conflict, Aerb basically /doesn't matter/. Only the Earth framing-device storyline matters. Aerb matters /to Joon/, and will eventually (likely) be the cause of his character development, but nothing that happens there will change things /for us/, as readers. This story is no more about Aerb---or Joon's companions on Aerb---than it would be if Aerb was another of the regular RPG sessions that Joon was playing. This story is, essentially, a one-man fever-dream stage-play. This is /A Christmas Carol/ for gamers.
+:PROPERTIES:
+:Author: derefr
+:Score: 4
+:DateUnix: 1519991475.0
+:END:
+
+***** I almost fully agree with you and it's my view exactly.
+
+1. My problem is he started on this "let go quest" at chapter one, but relapsed heavily at the point narrative and Arthur quest became a thing.
+
+2. It doesn't excuse him being an asshole to his current "friends?" and no amount of him thinking "i lashed out in real world, i should not do it again" would convince me he isn't doing the same thing again.
+
+3. People are heavily disagreeing that he can't let go of Arthur and is in a self\others destructing rush to get to him.
+
+#+begin_quote
+  This story is no more about Aerb---or Joon's companions on Aerb---than it would be if Aerb was another of the regular RPG sessions that Joon was playing.
+#+end_quote
+
+This is the blessing and a curse, cause it makes the world aka Aerb that much disjointed and not real. The strength of this story is in the separated moment to moment happenings, but it breaks the connections between them. The journey is often more important when the ending, but if this whole journey doesn't matter it doesn't work. He should grow as the result of the journey, not because he needs to grow. He needs to let go , because he comes to some sort of understanding, not because it makes this story pointless otherwise.
+
+P.S. You are the same guy talking to me. Boy is this super disorganized now and hard to follow for anyone else.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 2
+:DateUnix: 1519995457.0
+:END:
+
+
+**** Time in the story is pretty convenient for maximum Juniper suffering and it's balanced like a house of cards.
+
+Good thing Arthur was discovered to be alive right before the Junipers birthday (i assume it's June), otherwise it would be a guilt sour 18th one for him.
+
+#+begin_quote
+  Tiff always felt like she had moved to town around the middle of high school, but that wasn't actually true. She'd grown up in Bumblefuck, Kansas, same as the rest of us, it was just that she lived out in the country and she had mostly kept to herself, cloistered within her own group of friends. That group of girls had collapsed at some point freshman year, first with Laurel, a keystone member, moving away, and then with two of the girls dating boys a few grades ahead of us. Tiff was adrift for a few months, until she fell in with us.
+#+end_quote
+
+So is it "middle of highschool" or "couple of moths after freshman year"? Cause those are kinda different.
+
+Either way Tiff has a loose definition of "I kept waiting for him to ask me out or even just confess to me, but months and months went by and he never did", cause moths and moths in this case are *2 years*. No wonder she gave up on that. Also how exactly Juniper was thinking he was fooling anybody when "Arthur new him better when he himself", but they dated for "We carried on like this for about five months."
+
+Is it an unfortunate coincidence that Tiff driving Juniper alone in her car would be them almost breaking the law and Arthur driving in a car crash. The are not breaking it only if Tiff really rushed for that drivers license and her priority of "not making the first step with boys" is to drive a boy alone with her at the first opportunity.
+
+So Tiff was a 15-16 year old girl that extensively read up on feminism and Arthur did the same as 15-16 year old boy, because he had arguments with her?
+
+Tiffs parents wrote a permission for her to get a tattoo and another minor was present during the process? considering circumstances maybe.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1519848112.0
+:END:
+
+***** From my notes:
+
+March 23rd, 2017: Juniper gets 'sent to' Aerb\\
+June 21st, 2016: Arthur dies\\
+June 10th, 2016: Arthur's accident\\
+December 15th, 2015: Juniper and Tiff first kiss
+
+2016-17: senior year\\
+2015-16: junior year\\
+2014-15: sophomore year\\
+2013-14: freshman year
+
+Tiff is explicitly mentioned as living out in the country, which would mean that she would both have the incentive to get her license early, and (probably) have a farm license, which a lot of the country kids do whether they're farm kids or not.
+
+Regarding where any of this is mentioned, it's mentioned twice that Juniper is in his senior year of high school, it's mentioned that it's been nine months since Arthur's death four times (ch 20, 34, 58, 79), and in chapter 42 it's mentioned that Tiff and Juniper dated for five months.
+
+I don't particularly feel that this timeline is actually important, and don't want to restate it whenever there's a new flashback, especially since a lot of it is just implicit in the text. If you can point me to where there are concrete continuity issues, I'll do my best to fix them.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 9
+:DateUnix: 1519881935.0
+:END:
+
+****** I read those chapters i even copied the mentions of time line. My comment would be even more bloated if i quoted them.
+
+It kinda falls under what i was estimating. My point was suing this as basis [[https://www.dmv.org/ks-kansas/teen-drivers.php]]
+
+She would have to be driving Juniper(boy) as the first thing after getting the ability to do so.
+
+#+begin_quote
+  When you reach 17 years old, or you've had your restricted license for 6 months (age of 16 and 6 months).
+#+end_quote
+
+Otherwise
+
+#+begin_quote
+  Once you turn 16 years old, some of the restrictions will fall off of your license, but not all of them. With your less restricted license, you may drive only:
+
+  Between 5 a.m. and 9 p.m.
+
+  To and from work, school, or a farm-related purpose.
+
+  To and from a religious worship service held by a religious organization.
+#+end_quote
+
+Playing D&D at a friends house doesn't really fall under those categories. It's not a such a bad things, just a small unintentional thing.
+
+#+begin_quote
+  I don't particularly feel that this timeline is actually important, and don't want to restate it whenever there's a new flashback, especially since a lot of it is just implicit in the text. If you can point me to where there are concrete continuity issues, I'll do my best to fix them.
+#+end_quote
+
+Probably not, but it means that Tiff did wait for Arthur to make the first step for 2 years.
+
+Since we are on about the timeline this was a contradiction:
+
+#+begin_quote
+  we drifted apart by inches until she was sitting somewhere else for lunch and the last text message from her (an unanswered ‘how are you doing?') was months ago.
+
+  I'd been trying to mend things with Tiff, and it had almost seemed to be working, so I guess there was that.
+#+end_quote
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1519883039.0
+:END:
+
+******* #+begin_quote
+  Probably not, but it means that Tiff did wait for Arthur to make the first step for 2 years.
+#+end_quote
+
+No, it doesn't. During that whole conversation Tiff is using indefinite periods of time, both "in the beginning" and "months and months". Tiff is established as having joined the group at some point at least a few months into freshman year, probably late in the year. Given some indefinite amount of time for her attraction to Arthur to grow, then "months and months" without him making the first move -- and then that attraction began to fade, and her attraction to Juniper began to grow, a state which continued for some indefinite amount of time until their first kiss /and/ that's coming from a character viewing their own past in light of a current relationship and/or flattering her boyfriend.
+
+#+begin_quote
+  Since we are on about the timeline this was a contradiction:
+#+end_quote
+
+That's not a contradiction. Juniper doesn't say "until [...] was months ago [and then I was sent to Aerb]", the sentence only says/implies that the "until" is when they reached that state of having a failed friendship. "We drifted apart until we reached this specific point."
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 4
+:DateUnix: 1519884927.0
+:END:
+
+******** My point was she would have spent at least 2 year with them. That's a lot of time to start liking someone, especially since she and Arthur "argued" from the start.
+
+Wait. How "It almost seemed to be working" and "last text message from her (an unanswered ‘how are you doing?') was months ago."
+
+Doesn't this imply that they weren't interacting for months at the end, so how can his attempt at fixing the relationship "seem to be working"? Or is it "It almost seemed to be working, but didn't"? Or it was broken, but he tried to fix it later?
+
+There was another question i had.
+
+#+begin_quote
+  the group had a Ship of Theseus thing going on where people came and went until Arthur and I were the only constants, and then eventually it was just me.
+
+  The funny thing was, while Reimer and I never actually made up, we kept playing together, and in the end, just before I left Earth, he and Tom were the only ones still willing to play with me.
+#+end_quote
+
+It kinda seems that Reimer and Tom were also those constants.
+
+Also, thanks for reading my rants, i know they are somewhat incoherent in places. So i tried to clarify my points in the responses to people, maybe those responses articulate my gripes better.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 0
+:DateUnix: 1519886027.0
+:END:
+
+
+***** #+begin_quote
+  Good thing Arthur was determined to be alive right before the Junipers birthday (i assume it's June), otherwise it would be a guilt sour 18th one for him.
+#+end_quote
+
+I'm not sure what this means...?
+
+#+begin_quote
+  So is it "middle of highschool" or "couple of moths after freshman year"? Cause those are kinda different.
+#+end_quote
+
+The line that you quoted explicitly said "she felt this way but it wasn't true".
+
+I'm not quite clear on some of the rest of the post and I definitely don't remember the timeline well enough to comment.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 2
+:DateUnix: 1519854088.0
+:END:
+
+****** That was a mistake. "Determined" changed to "discovered". Juniper found out that Arthur is alive on Aerb.
+
+It wasn't true that he encountered her at the time"she had moved to town around the middle of high school". It wasn't true because "She'd grown up in Bumblefuck, Kansasshe". My question is did he meat her at the middle of high school or couple of moths after the freshman year, cause those are different.
+
+#+begin_quote
+  I'm not quite clear on some of the rest of the post and I definitely don't remember the timeline well enough to comment.
+#+end_quote
+
+Ask, i will try to clarify initial comment was a stream of consciousness and it's bound to have some(a lot) mistakes.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1519880994.0
+:END:
+
+******* #+begin_quote
+  It wasn't true that he encountered her at the time"she had moved to town around the middle of high school". It wasn't true because "She'd grown up in Bumblefuck, Kansasshe". My question is did he meat her at the middle of high school or couple of moths after the freshman year, cause those are different.
+#+end_quote
+
+Okay, maybe you're not American and therefore have different definitions of 'high school'? In the US high school is 4 years and freshman year is your first. "The middle of high school" would be your sophomore year, so "a few months after freshman year" is approximately right. Also, he's not giving a friggin' measurement, he's talking casually. If it's at 33% or 40% instead of exactly at 50% that's hardly something surprising.
+
+Seriously, this is a nitpick, let it go. You have other points that are valid, but this ain't one.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 5
+:DateUnix: 1519914201.0
+:END:
+
+******** I misquote it, this does seem like a nitpick.
+
+#+begin_quote
+  That group of girls had collapsed at some point freshman year, first with Laurel, a keystone member, moving away, and then with two of the girls dating boys a few grades ahead of us. Tiff was adrift for a few months, until she fell in with us.
+#+end_quote
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1519914528.0
+:END:
+
+
+*** No one is forcing you to read this story --- it's fine if you don't like it, but why spend so much time tearing it down?
+:PROPERTIES:
+:Author: dalitt
+:Score: 3
+:DateUnix: 1519849395.0
+:END:
+
+**** Clear communication powers, activate!
+
+Speaking as an author who has received lots of negative feedback over the years, I find that it comes in two categories: "ur story sux! Juniper bad guy! I'm not reading anymore!!1!!"[1] and "I used to like this but it's gone off the rails for me because <reasons>" The former type is easy to ignore. The latter type is much more nuanced, and I divide it into "critique" and "criticism". Critique provides useful and thoughtful evaluation of the story and its failings in a way that is actionable for the author (e.g. "Jess doesn't ever have an emotional reaction", one that I got on the first couple chapters of Tinker's Daughter). Criticism is oriented around tearing the story/author down condescending, or simply offensive, or a whole spectrum of other BS.
+
+Critique is gold; it's nice to get "Woohoo! This is awesome", but it's the constructively critical reviews that help you grow as a writer. They generally aren't /fun/ to read, but they are usually useful.
+
+I think [[/u/Ace_Kuper]] 's posts fall into the "critique" bucket. He's put significant work into thinking through what it is that bothers him and he's conveyed it in a clear and (IMO) polite manner. There's no ad hominem[2] or offensive language, just a set of clearly-stated and actionable problems. You might disagree with him on whether these are problems or not, but I don't think he's just trying to tear down the story.
+
+--------------
+
+[1] <tangent class="pet_peeve"> I've never understood why people feel the need to tell me when they're going to stop reading, especially when they don't say anything else...I mean, unless I know them personally, am I really going to care? It seems awfully self-indulgent. </tangent>
+
+[2] I've gotten every sort of personal criticism from "u sux as writer go die" to the far more insulting "Clearly, you aren't as talented or experienced as you think you are. I suggest taking some classes before you try to publish anything again." Ah, internet...how we love and hate you.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 29
+:DateUnix: 1519853601.0
+:END:
+
+***** I absolutely agree with you that constructive criticism (what you call critique) is useful, when it's well-thought out. My most charitable reading of Ace_Kuper's posts, however, is that they're ill-thought-out and based on surface reading; I also think there's a fine line between what you call "criticism" and writing 1000s of words (in this thread and the last WtC thread) essentially repeating the same points over and over again.
+
+Even if you agree with the points made by Ace_Kuper (which I suspect you don't, based on what you've written), I'm also kind of annoyed by the tone, e.g. the sarcastic "Great pattern of princess getting captured and being helpless."
+:PROPERTIES:
+:Author: dalitt
+:Score: 17
+:DateUnix: 1519855340.0
+:END:
+
+****** Think of it like a bug report: a badly-written bug report with no replication steps is still better than no bug report, because at least you know you have a bug.
+:PROPERTIES:
+:Author: Calsem
+:Score: 3
+:DateUnix: 1519873262.0
+:END:
+
+******* ... except sometimes you don't have a bug at all, you have user error, and you spend time trying to track down the bug and replicate only to find that you can't replicate, or the thing the person was talking about as a bug was actually intended behavior.
+
+In terms of prose, I get the occasional spelling or grammar correction which is, in fact, wrong, which means that I spend time looking up the rule or googling the spelling for no practical reason. I would say that in these cases, having an incorrect error report is much worse than having no error report at all. (Signal to noise ratio is generally good though.)
+
+In terms of /interpretation/ it's a little different, because I can't strictly say that someone's interpretation is /wrong/, and I do think that it's the author's job to create a text that gets interpreted how they wish it to ... but that doesn't mean that there can't be user error. I think that's especially the case when someone doesn't like something and is fumbling around in order to try to figure out why they didn't like it, and stumbles from complaint to complaint, none of which are really the problem that they've run into. All I get out of it is "I don't like this", which isn't anything that I find actionable.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 17
+:DateUnix: 1519878876.0
+:END:
+
+******** Yeah, rather than a bug report, this seems like someone complaining about /features/ (e.g. that the characters have complex inner lives and are imperfect, or the interesting meta-narrative aspects of the story), along with a lot of weirdly overstated nitpicks (e.g. the timeline, which seems totally reasonable to me).
+:PROPERTIES:
+:Author: dalitt
+:Score: 6
+:DateUnix: 1519923836.0
+:END:
+
+
+******** #+begin_quote
+  In terms of interpretation it's a little different, because I can't strictly say that someone's interpretation is wrong, and I do think that it's the author's job to create a text that gets interpreted how they wish it to
+#+end_quote
+
+So the fun thing about writing a serial story, and Wildbow has been playing with this in Ward, is that the author is /not/ in fact dead. The text is a work in progress, and if there are reader interpretations in the fan community that run counter to your view of the story, you can have the text contradict that interpretation in a future update.
+:PROPERTIES:
+:Author: -main
+:Score: 5
+:DateUnix: 1519900679.0
+:END:
+
+
+******** It reminds me of all those news articles that came out after season 1 of GoT saying they should have changed Eddard Starks death because having the lead die clearly doesn't work for a tv series.
+:PROPERTIES:
+:Author: i6i
+:Score: 3
+:DateUnix: 1519907372.0
+:END:
+
+
+******** #+begin_quote
+  except sometimes you don't have a bug at all, you have user error,
+#+end_quote
+
+Or someone is trying to use MS word as a database and getting angry its not very good at it.
+:PROPERTIES:
+:Author: akaltyn
+:Score: 1
+:DateUnix: 1520175838.0
+:END:
+
+
+******** I was trying to find out why i started to dislike it. The minute to minute story or set pieces are great. Character dialog between people feels real and is a fun read. I think the problems i list pile up when you have a multiple levels to consider and there are some continuity errors.
+
+My main gripe would be.
+
+1. Juniper says something, but acts completely different in the next scene.
+
+2. Arthur is clearly above all at this point.
+
+3. That whole "give me Tiff" raised a lot of problems. Like contradicting himself "i want that girl", but no "harem" well a second love interest is clearly going on that route not even counting the moral problems it brings.
+
+In no way my points are universal truth or the full picture. They are just how i saw the story as a whole over time.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 0
+:DateUnix: 1519881431.0
+:END:
+
+********* Yeah, the "give me Tiff" thing was weird and out of the blue. I kinda understand it (cf prior comments about "speaking from the id" and "knows this isn't really plausible or right") but it was still strange. I'll give you that one.
+
+As to the other two...what? I don't really see where you're coming out with point #1. Joon is a teenager trapped in a difficult situation. He doesn't have a lot of romantic experience, or even general people experience, and he's doing the best he can. Like everyone he isn't a perfect example of self-consistency and rationality, but he's trying. He feels very human to me.
+
+Point #2: I am /really/ lost on this one. Arthur is very much a background desire here -- an overarching, plot-driving one, sure. But he very clearly prioritizes those around him above pursuing Arthur at any expense. If finding Arthur was his top priority then soul magic gives him lots of unsavory opportunities that would be much more efficient than the way he's doing it -- walk up to any mage / noble / sage / whatever and mindrape them into being his devoted servant so they will tell him everything he needs to know and give him whatever resources he needs. Joon is not doing that, so Arthur is very obviously not "above all" at this point.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 3
+:DateUnix: 1519913926.0
+:END:
+
+********** #+begin_quote
+  Joon is a teenager trapped in a difficult situation
+#+end_quote
+
+This is a fair point, it just seems to me that every time it concerned him or Arthur he would do one thing, but when judge people when it concerned them. He remarks about Fenn being immature a couple of times, but doesn't see the problem with himself. It's not bad writing, he just comes of as an asshole and hypocrite to me.
+
+#+begin_quote
+  But he very clearly prioritizes those around him above pursuing Arthur at any expense
+#+end_quote
+
+They had a vote, Juniper wanted to pursue Arthur's lead no matter what, only Valencias vote decided that would save the Locus right now.
+
+I was talking about his soul magic placing Arthur as 6th value and Tiff\Fenn as 2\3rd or 3\2nd. If he is willing to trade Tiff to make Arthur happy, Arthur is and was clearly above that number by a long shot. He is clearly at the top of priorities long before chapter 79:
+
+#+begin_quote
+  And at the end of it, I want Arthur back. That's the only way that this game is ever going to be worth the candle
+#+end_quote
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 2
+:DateUnix: 1519914935.0
+:END:
+
+
+********* Cares about Arthur or cares about looking for Arthur? Everyone he knew is gone. Possibly he imagined all of them. Possibly not having an excuse to do something urgent means having to fix every single problem in the world which only exist to give him quest hooks. Possibly it means spending the rest of his life wondering if the people around him are just articulate NPCs.
+
+Honestly I think he'd spend as much effort on Reimer.
+:PROPERTIES:
+:Author: i6i
+:Score: 1
+:DateUnix: 1519925430.0
+:END:
+
+
+********* I don't think the point was to actually get clones of Tiff. He was just venting his god-problems to an actual god, but there was no way he thought there was a chance he would get it. I think the whole point was to whine about the unfairness of the system, and now there was actually an omnipotent being that listened.
+
+I'm very sure that if he thought he was gonna get whatever he asked for, he would have been waaay more careful about his words.
+:PROPERTIES:
+:Author: kaukamieli
+:Score: 1
+:DateUnix: 1519949351.0
+:END:
+
+
+****** #+begin_quote
+  Great pattern
+#+end_quote
+
+That was meant as a joke. That whole point is the weakest one of that i made. I try to clarify it here
+
+[[https://www.reddit.com/r/rational/comments/80xryk/wiprt_worth_the_candle_ch_8082_peagodtail/dv025f7/][Response 1]]
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: -1
+:DateUnix: 1519881535.0
+:END:
+
+******* A joke can be mean-spirited; that was how I read this one, and many of the other comments you've made which I assume are "jokes."
+
+Look, I understand you're trying to figure out why you don't like some of the recent writing in this story. But you've written literally thousands of words, and you've conceded now that many of the points you made were weak, poorly-stated, or in error (in fact, I would argue that /all/ the points you made fall into one of these categories). You've also had other commenters tell you that what you've written comes off as mean or sarcastic, or not understandable.
+
+I have two actionable suggestions for you. First, remember that this is a piece of writing that someone has spent hundreds of hours on, and is giving to you for free, and structure your response accordingly. Try to imagine yourself in the shoes of the hard-working writer who reads your sarcastic joke -- surely, even if all of your points were unarguably correct, that tone is inappropriate, right?
+
+Second, if you're determined to write thousands of words of criticism, approach it like you would any other long-form writing project. Think about it for a few days before you start writing, so you know what point you're actually trying to make. Then pick your strongest claim (or at most your strongest two claims), and then pre-write, draft your post, and proofread it before posting. I think this would go a long way to address my concerns, and those of other commenters, though I can't speak for them.
+:PROPERTIES:
+:Author: dalitt
+:Score: 9
+:DateUnix: 1519924314.0
+:END:
+
+******** Most other responses were not really a joke , nor were they mean spirited. I admitted that my points about "princess rescue" were weak, even tho someone agreed with those specifically. Ones relating to the timeline were just questions, me feeling that it was to tightly packed and would bring future problems.
+
+#+begin_quote
+  You've also had other commenters tell you that what you've written comes off as mean or sarcastic, or not understandable.
+#+end_quote
+
+But there are also people that didn't think that they were mean or ill spirited. In fact you are the only one that brought and still brings up "mean" or "ill intent". Others did bring up that my posts were poorly constructed or had a good amount of spelling\grammatical errors - i agree with that.
+
+#+begin_quote
+  First, remember that this is a piece of writing that someone has spent hundreds of hours on, and is giving to you for free, and structure your response accordingly. Try to imagine yourself in the shoes of the hard-working writer who reads your sarcastic joke -- surely, even if all of your points were unarguably correct, that tone is inappropriate, right?
+#+end_quote
+
+This is one of the worst advice i have ever read. Not being an asshole part is fine, but being free or putting hours in doesn't make the work immune to criticism. In fact major success and fame doesn't too. Have you read\heard about Ready Player One? It's one of the best selling books, i'm sure author also spend time writing it, but it's one of the worst works in terms of writing,narrative structure and in terms of characters and it's world.
+
+Second advice is pretty solid, but i had to get it off my chest for egoistical reasons. Thankfully i received a great amount of responses that disagreed and explained why, people that agreed with some points elaborating on the reasons for the partial agreement.
+
+For the next time i already planned to focus on the stuff i liked and one thing that is not poor wring, but rather a fun observation or question of Joons judgment. In Chapter 81 he describes in detail an answer to one of the problems he previously had, but doesn't realize it. So most of the work was done for me.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1519926019.0
+:END:
+
+********* Please read what I wrote again and ask yourself where I said that this (or any) work should be immune from criticism.
+:PROPERTIES:
+:Author: dalitt
+:Score: 2
+:DateUnix: 1519932833.0
+:END:
+
+********** The very first thing that started this chain of comments.
+
+#+begin_quote
+  No one is forcing you to read this story --- it's fine if you don't like it, but why spend so much time tearing it down?
+#+end_quote
+
+Please read what you wrote and ask yourself where did you said anything constructive about my points and it wasn't a blanket statement of "they are all wrong", you going after me personally or not liking my tone(that isn't meant to be mean)?
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 0
+:DateUnix: 1519986179.0
+:END:
+
+
+***** #+begin_quote
+  Clear communication powers, activate!
+#+end_quote
+
+It would be nice if i had those.
+
+I was sarcastic at points, cause that's how i naturally am and some of the stuff i brought up stands on weak ground. There are also probably a lot of mistakes too. Some gripes i had just flow into one another and i loose structure as a result.
+
+There are also thins i love about the story and in no way it's irredeemable or super bad. As i said it culminated at Chapter 79 for me and if Juniper grows from this point onward this would be solved.
+
+Me trying to clarify stuff:
+
+[[https://www.reddit.com/r/rational/comments/80xryk/wiprt_worth_the_candle_ch_8082_peagodtail/dv025f7/][Response 1]]
+
+[[https://www.reddit.com/r/rational/comments/80xryk/wiprt_worth_the_candle_ch_8082_peagodtail/dv034yt/][Response 2]]
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1519881828.0
+:END:
+
+
+***** #+begin_quote
+  I've never understood why people feel the need to tell me when they're going to stop reading
+#+end_quote
+
+Do they do it somewhere publicly visible? Because I've often found that the point of this is for them to use their little comment box below your story, or their retweet/reblog/etc., as a platform for them to convey their feelings not to /you/, but rather to the people who tend to read the things /they/ post on the Internet. (And I've basically never received such "news" as a direct private message. What would, indeed, be the point /then/?)
+
+I'm surprised there isn't a name for this---it's the same reason that, say, random Tumblr posts can devolve into RP in their reblogs. People are trying to do a thing that /reacts/ to your post, or /uses/ your post, or is /inspired/ by your post, within their own closed community for their own friends/fans, but---due to the way the platform works---that thing then happens to be publicly visible to you, when that was never their intended effect.
+:PROPERTIES:
+:Author: derefr
+:Score: 1
+:DateUnix: 1519993047.0
+:END:
+
+****** Valid point; I've never (very rarely?) gotten such a thing as PM.
+
+I'd probably lump it under the "ragequit" banner, I guess.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1520035666.0
+:END:
+
+
+**** Because i liked it and there are still great elements in it, but it took a turn for the worse starting with the introduction of the "narrative" and being the lowest at Chapter 79.
+
+Like recent chapters are fine, but this things are kinda a problem for me. I also would expect to dispute my points or show evidence of me misunderstanding things.
+
+Like i think people, especially at rational fiction, should describe and talk about why the liked\disliked the thing.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 5
+:DateUnix: 1519849968.0
+:END:
+
+***** Well I disagree with your points in general -- I think they're based on a weird conception of what fiction should be. But my complaint isn't about that; it's about the sarcastic tone and general meanness which I'm getting from what you've written. If you don't intend your posts that way, my apologies, but please be aware that they can be read as mean-spirited.
+:PROPERTIES:
+:Author: dalitt
+:Score: 15
+:DateUnix: 1519855520.0
+:END:
+
+****** Frankly, even if his posts were not intended to be mean-spirited, they're so poorly written and formatted that you can't be blamed for seeing them that way. It is /very/ hard to take critique seriously when simply trying to understand it is a struggle.
+:PROPERTIES:
+:Author: Detsuahxe
+:Score: 11
+:DateUnix: 1519866226.0
+:END:
+
+******* They are written on the fly and not properly organized. I tried to separate my points the best i could so it was easier to read. The problem is a lot of the complaints interconnect with one another and it's hard to lay them down in a specific order without going into the next topic. Quoting and lists are also kinda finicky on reddit and i had to edit the formatting, cause it was a mess of numbers at points.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1519880465.0
+:END:
+
+
+****** #+begin_quote
+  I think they're based on a weird conception of what fiction should be.
+#+end_quote
+
+Some of the problems are have are not about what fiction should be, but
+
+1. Lack of internal character motivation.
+
+2. Morality of the characters and especially Juniper wildly changing to fit the situation.
+
+3. Sometimes the story contradicts it's own set of rules. Aka hard "values" with soul magic or Joon claiming one thing, but then saying something different about it later. It's not a change of mind, because it sometime was about the past Earth events and his recollection was contradicting itself.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1519880661.0
+:END:
+
+******* 1&2 are what I would think disagreement here means, people don't have consistent morals nor clearly defined motive outside certain kinds of fiction
+:PROPERTIES:
+:Author: i6i
+:Score: 1
+:DateUnix: 1519907117.0
+:END:
+
+******** #+begin_quote
+  don't have consistent morals nor clearly defined motive outside certain kinds of fiction
+#+end_quote
+
+I would assume in any type of fiction written or otherwise people have morals, goals or character traits. In fact best work i would say makes the characters feel alive and human. Archetypes exists for a reason ,cause people use them. Characters don't need to be good or evil to the bone, but their internal motivation or logic is often present.
+
+I would dare to say that if characters are flip flopping between morals and change their motivation constantly it makes the story worse and certainly not a rational one. Character can be unstable and troubled, but if he changes what he does constantly people should point that out. Especially if the story is about a guy who analyzes things, thinks about actions and their consequence and tries to be better. All of his moral pondering are useless if he doesn't act on them.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: -1
+:DateUnix: 1519909989.0
+:END:
+
+********* Yeah, see, here's where your take differs from mine and from (as far as I've seen) literally everyone else's in this thread: you find it upsetting that Juniper's goals, desires, and actions are not perfectly congruent and consistent at all times. Everyone else finds it very relatable and an example of excellent characterization.
+
+I generally try not to resort to arguments from authority or consensus, but in this case I'm going to: It's possible that you are the [[http://tvtropes.org/pmwiki/pmwiki.php/Main/OnlySaneMan][OnlySaneMan]], that Juniper's characterization is bad, and that the rest of us are all wrong. On the other hand, the fact that literally everyone else seems to be disagreeing with you might be a good signal that you should go back and reexamine your beliefs. If you do, and you still find yourself thinking that Juniper is poorly written, fine. If not, it might help you enjoy the book more.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 9
+:DateUnix: 1519914883.0
+:END:
+
+********** His characterization is not bad, as i said in other replies to you. I think he acts as hypocritical asshole a lot.
+
+Also, not literally everyone is disagreeing with that point specifically, people in fact agreed that he kinda is an asshole at times.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1519915095.0
+:END:
+
+*********** Just to be clear, I called him an asshole sometimes, but I don't agree with any of your points. I'm thinking of his behavior after Arthur died (which is an understandable coping method) and his attitude toward the game and Aerb which Grak called him out on (also extenuated by his circumstance - if people were given divine messages and power, it's likely most would be spoiled into an instant gratification expectations). He's also said insensitive things, like the Tiff demand that you keep harping on about, but people do that all the time, especially in the heat of the moment.
+
+I think you have certain idealistic and/or moralistic expectations towards Juniper's character that haven't been met. If you don't focus on all his perceived flaws, Juniper has been a rather upright and empathetic guy overall.
+:PROPERTIES:
+:Author: nytelios
+:Score: 5
+:DateUnix: 1519937211.0
+:END:
+
+************ #+begin_quote
+  If you don't focus on all his perceived flaws, Juniper has been a rather upright and empathetic guy overall.
+#+end_quote
+
+Well, yeah if you ignore all his flaws he is a great guy, if you ignore all of his good qualities he is a monster.
+
+I think at the start of the story and before the "narrative" structure was present he was making progress towards being better.
+
+In fact, this story is at it strongest when you view every chapter or interaction separately, when Joon is having a discussion with someone that dialog is mostly great and he is super reasonable.
+
+The problem for me is, when you look at the whole picture, i see a pattern in his behavior and it's something that i highly dislike in real life humans. Joon thinks something like "i should be more empathetic", he doesn't act more empathetic, thinks "they are real people" acts "time to grind loyalty". Everyone that doesn't have "loyalty" is extra dead after meeting him or an enemy that he couldn't kill.
+
+This is how his thoughts\actions feel like to me.
+
+Joon - "I don't want to kick you".
+
+"Joon kicked you." Well, he is a nice guy he thought about not doing it, he had to tho, he is trying at least.
+
+"Joon you probably should stop kicking people" - Grak. Oh he got called out, that changes everything.
+
+"Jonn contemplates about kicking you" - he kicks or maybe future holds something different and he punches.
+
+This is exactly before the Chapter 79 with DM.
+
+#+begin_quote
+  I need to just ... listen more, I guess, and focus less on the end goals, at least when it comes to our kharass.”
+#+end_quote
+
+I feel like him saying he would try and trying are actually different thins. I doubt he wouldn't ever change, but he kinda reset all of the progress he had before coming to Aerb and all that he supposedly learned after lashing out on people in real world.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1519985492.0
+:END:
+
+************* #+begin_quote
+  The problem for me is, when you look at the whole picture, i see a pattern in his behavior and it's something that i highly dislike in real life humans.
+#+end_quote
+
+Yes, but... characters in fiction having traits that would make them awful people to know in real life, can actually make them /more compelling/ fictional characters. And, like [[/u/eaglejarl]] says above, everyone here thinks that Joon's inconsistency is part of what /makes/ him compelling. His screwing up and backsliding and hypocrisy is, well, a messy, human character arc, of someone who is not a very good person attempting to be better---and then screwing up and backsliding and being hypocritical. As people do. As we tend to recognize in ourselves and our own attempts to be better.
+
+I mean, to be clear, Joon isn't meant to serve as an /example/ of, well, anything much. This is a /rational/ story, not a /rationalist/, story, y'know? This isn't HPMoR; Joon isn't any kind of attempt at portraying a paragon of any-rationalist-skill-in-particular. Joon himself isn't rational at all; but nor is he marketed as being such. (As far as I can tell, the main way this story /is/ rational is actually just that the fantasy world of Aerb is, to quote Philip K. Dick, "A Universe That Doesn't Fall Apart Two Days Later." The setting here is quite thoroughly munchkin-proofed in rather novel ways for a high-magic fantasy setting, which makes it all the more tantalizing to wonder how exactly it'll end up being pried wide open. The setting itself is a puzzle-box, one made to be taken apart with one's mind, rather than one's hands.)
+
+#+begin_quote
+  Everyone that doesn't have "loyalty" is extra dead after meeting him or an enemy that he couldn't kill.
+#+end_quote
+
+Ah, but now /that's/ a solid critique! This one is not Joon's fault, but the author's---in the story thus far, we've just had the "camera" pointed at very few characters who both aren't companions, and /also/ aren't out to kill Joon. I have a feeling that they're there---they have to be---they're just elided, and I think that's a mistake. Anyone in this story actively "making a friend" who /isn't/ a companion would be a great move for this story to take.
+:PROPERTIES:
+:Author: derefr
+:Score: 3
+:DateUnix: 1519994038.0
+:END:
+
+************** The last one was a long standing critique that i had and people tend to agree with that one more.
+
+Like Solace was exactly that and she died. My problem of hypocrisy solidified itself as the result of it. Wanting to go after Arthur pronto instead of wanting to save an active companion(Locus), that also was very important to said friend, friend that died helping you and kinda used powers of the locus to save your loved one.
+
+I answered about Juniper and his traits in another response to you, so i want say the same thing here, by the time i was done with that one you already responded here :)
+
+#+begin_quote
+  The setting here is quite thoroughly munchkin-proofed in rather novel ways for a high-magic fantasy setting, which makes it all the more tantalizing to wonder how exactly it'll end up being pried wide open.
+#+end_quote
+
+Yeah, the problem is it's really not and it is proofed by a Deus Ex Machina not internal logic. In fact this world would not really function at all cause it's an amalgam of so much variety. (I also touched on this in the another response to you)
+
+Here is a fun question that popped into my head. How exactly the "real world goods" back pack functions? Cause depending on it's ability in conjunction with "clonal kit" it breaks everything.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1519996118.0
+:END:
+
+*************** #+begin_quote
+  How exactly the "real world goods" back pack functions?
+#+end_quote
+
+Probably the same way time-travel in HPMoR does: you ask God (i.e. the DM) for something, and he decides whether you can have it. It's a literal Deus Ex Machina... but that's only a /bad/ thing in stories when that fact is to the character's /advantage/. Nobody tends to have any problems with a [[http://tvtropes.org/pmwiki/pmwiki.php/Main/DiabolusExMachina][Diabolus Ex Machina]].
+
+#+begin_quote
+  it is proofed by a Deus Ex Machina not internal logic
+#+end_quote
+
+I mean, in some ways, yeah. But the whole concept of exclusion zones, and the way the teleport keys work, and the limits on bone/blood/etc. magic, are all crafted in such a way that it's clear that these are each---at least /individually/---actual /battle-tested/ systems that the author used in real games as a DM, putting them up against real munchkin players who broke them and re-broke them across a number of sessions, with their associated rules evolving to make gaining "free energy" from them impossible. It makes you expect that everything that /hasn't/ yet been explored to the same level of detail, will end up being just as (individually) robust.
+
+I agree that Aerb itself is a weak amalgam of those ideas. The exclusion zones---and the DM's likely ability to introduce new ones instantaneously---are probably the likely glue preventing Aerb from falling apart at a moment's notice.
+
+I would mind this in any other universe, but this universe is, under one interpretation, a pen-and-paper RPG session (there are even dice-rolls that can be rerolled... somehow) and RPG sessions have DMs, who do make calls on house-rules to resolve disputes and prevent /unexpected/ avenues of munchkinry that breaks the game (as in, ruins the players' further enjoyment; not as in, breaks the world economy or anything.)
+:PROPERTIES:
+:Author: derefr
+:Score: 1
+:DateUnix: 1519996932.0
+:END:
+
+**************** As i said being a story of D&D session is it's strength and it's weakest point.
+
+#+begin_quote
+  the limits on bone/blood/etc. magic, are all crafted in such a way that it's clear that these are each---at least individually---actual battle-tested systems that the author used in real games as a DM, putting them up against real munchkin players who broke them and re-broke them across a number of sessions, with their associated rules evolving to make gaining "free energy" from them impossible. It makes you expect that everything that hasn't yet been explored to the same level of detail, will end up being just as (individually) robust.
+#+end_quote
+
+I actually expect the opposite, because any living human can't have enough time and ability to test all of that. In fact the only reason Juniper is not breaking anything apart is because Author is going "no no no, narrative excluded that". How would your self insert win a battle against yourself controlling the narrative. I'm pretty much sure that the point of readers seeing something extremely busted comes along:
+
+1. Author is to deep in descriptions to fix it
+
+2. Exclusion or "narrative" justification comes along to say it doesn't work.
+
+I'm pretty on the fence already about the legitimacy of "personal values" that soul magic displayed. Considering Arthur and desire to save him being so important to Joon. In no way was Arthur was 6th on that list. Also, i guess soul magic gives some resistance to soul magic, or Juniper is just that special that he can downgrade his number 1 value. Considering the whole problem with Fallatehrwas that he controlled people by being at the top of their lists and they couldn't break from it themselves. Yet Juniepr just willed himself to reduce his own number 1 value.
+
+This are not broken things, but i can see the cracks forming.
+
+Don't get me started on Anyblade. IT's God Tier and i'm saving it for the next chapter. Cause boy is it ironic in some way.
+
+#+begin_quote
+  I turned my back and kept my attention on the Anyblade, testing the limits of its abilities. It could only do blades, but it was pretty permissive when it came to what a blade was, and I could work whatever I wanted into the ornamental features of the sword, axe, or other bladed weapon I formed it into.
+#+end_quote
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1519998699.0
+:END:
+
+***************** Basing the world and gameplay on D&D does set certain boundaries, but I don't see it in terms of strength/weakness. Good stories have boundaries; they need it to restrict the scope. Aerb has already been confirmed as some kind of simulation. If you live in the Matrix, how real do you want it to be (if a tree falls in a forest...)? Is it boring if you know that certain events are being orchestrated, nudged or deus ex-ed? When you compare a D&D world to a seamless fantasy reality, I imagine it's like comparing the value of a biographies of people who lived in one place their entire life to others who traveled the world. It will still come down to what you take away from the story.
+
+I doubt Juniper will find a way to pry the world wide open, but victory by munchkining doesn't seem to be the intended conclusion of WtC (nor a satisfactory ending if it ends like Harry's triumph over Quirrelmort in HPMOR).
+
+Regarding the personal values that bother you, here's the original quote. There's no reason to expect a perfect representation. In fact, Juniper actively distrusts its accuracy.
+
+#+begin_quote
+  Fallatehr had said that values were part of the soul, which meant that there was some way to view them, and maybe change them. I had to think that there would be something like a social network as well, some conceptualization of the internal models I had of various people, as well as physical models of various things, which would be how my brain knew that when a ball went up, it was going to come back down again.
+
+  Mostly, I kept thinking that this wasn't how people were built.
+
+  People were really freaking complex. They weren't a list of attributes, or neat piles of declarative and procedural memories, they were messy, complicated things that didn't always make sense, there were contextual shifts and a plethora of messy models and hidden assumptions, it wasn't just numbers. And as far as I could see, the soul as presented to me was missing half of the picture, which was the matter of how all these little bits and bobs actually did anything. So far as I had seen, the “soul” didn't have all that much in the way of process or algorithms or any kind of decision-making in it, only weights that could be applied to some decision tree or neural network or whatever else it was that took this static information and let it actually do anything.
+
+  ...
+
+  I kept thinking that this was not how humans were. Let's say that you actually could take someone through a trillion different tests, pairwise comparisons like “Would you rather eat a hamburger from Culver's or spend twenty minutes playing Tetris, a year from now?”, and then you crunched that enormous amount of information, the result that you got back wouldn't even be that sensible, because people weren't sensible, concepts were shifting and mercurial, I could think differently about a given person based on the last word out of their mouth, or the setting I was in, or any number of things. That was, to my understanding at least, how the human brain worked.
+
+  The soul, as it was presented to me, made sense as the sort of thing you could maybe pull from a brain, if you had some hypertech and were willing to cut some corners in terms of how you were mapping out what the brain actually was. You couldn't capture everything, not really, but you might be able to put a number on time sensitivity of value, maybe, and then make a chart that would be a little bit useful. The soul made sense as a report, or a visualization. That wasn't what the soul purported to be though; it was meant to work as the mind, not just a report on it, and changing the soul meant changing the mind. Was there some hidden conversion process in there? Was this just a game interface covering something vastly more complex, for all the data that was exposed to me? Or was I really reducible down just this stuff and whatever sort of thing was involved in actually running it?
+#+end_quote
+:PROPERTIES:
+:Author: nytelios
+:Score: 2
+:DateUnix: 1520011456.0
+:END:
+
+****************** #+begin_quote
+  Aerb has already been confirmed as some kind of simulation.
+#+end_quote
+
+No it wasn't. You might as well say that DM is just a god messing with him or providing him the most natural interface for Juniper.
+
+#+begin_quote
+  There's no reason to expect a perfect representation.
+#+end_quote
+
+Yeah, that's my whole point that thing is shaky at best so at best it's vague and works similar in a lot of aspects to Druid magic, but that's a can of worms for another time.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1520014654.0
+:END:
+
+******************* When you start doubting whether there's a god messing with you and making you question the nature of your reality, there is no meaningful distinction between reality and simulation.
+
+Here's an excellent [[https://www.quora.com/Would-there-be-any-difference-between-reality-and-a-perfect-simulation-of-reality][food for thought explanation]].
+
+#+begin_quote
+  Yeah, that's my whole point that thing is shaky at best so at best it's vague
+#+end_quote
+
+Your rant about it suggested you expected it to be perfect. You even made a list surmising what the list should be, if you were the writer/game designer. I didn't really understand the point.
+:PROPERTIES:
+:Author: nytelios
+:Score: 1
+:DateUnix: 1520040620.0
+:END:
+
+******************** #+begin_quote
+  When you start doubting whether there's a god messing with you and making you question the nature of your reality, there is no meaningful distinction between reality and simulation.
+#+end_quote
+
+Well, yes that is my point.
+
+[[https://www.reddit.com/r/rational/comments/80xryk/wiprt_worth_the_candle_ch_8082_peagodtail/dv2i58r/][My response to someone else about this exact thing]]
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1520061734.0
+:END:
+
+********************* No, you're saying he shouldn't treat it as a simulation but as reality. I phrased that line poorly - I meant there's no distinction between treating it either way. With the evidence he's given, it's equally viable to treat it as simulation or reality (and doubt your choice).
+
+Your other points in that post are either your opinion or they outright contradict each other. How do you accept powers-that-be nudging your and others' free will, and also just accept people as real and never wonder? People today are still pondering the meaning of existence or struggling with the idea of free will vs determinism. It hasn't lost meaning or tension after millennia.
+:PROPERTIES:
+:Author: nytelios
+:Score: 1
+:DateUnix: 1520091095.0
+:END:
+
+
+************* #+begin_quote
+  Well, yeah if you ignore all his flaws he is a great guy, if you ignore all of his good qualities he is a monster.
+#+end_quote
+
+I'm saying it's pointless and irrational to think of people in black and white like that. You keep emphasizing whatever flaws you think he has to show that he's a monster or terrible person. Maybe you also have an expectation that characters always have to progress for the better, which is untrue in a rational world.
+
+I don't actually think you're looking at the whole picture, but rather nitpicking on any slip-ups Joon has or you think he had. I see him as honestly attempting to be more empathetic and trying to treat the others as real people (also, you seem to be forgetting that he literally /sees numbers in his head/ representing loyalty - no matter how good your intentions, this tampers with a person's sense of reality, and it can lead to all kinds of psychological effects - e.g. you reciprocate for another's loyalty, if you are a min-maxing gamer and have quantifiable feedback, you'll have this urge to max things). Also, people make resolutions but that rarely means instant self-improvement; your interpretations of his behavior are short-sighted in many ways. He's merely been in Aerb for a month or two? He's a teenager who barely came out of a traumatic episode only to be thrown into an even more stressful world: he doesn't owe you or anyone else a self-actualized identity. It's fine that his thoughts and actions make you feel that way. But how we think and act is not how others think and act. Progress is not linear.
+:PROPERTIES:
+:Author: nytelios
+:Score: 3
+:DateUnix: 1520008023.0
+:END:
+
+************** #+begin_quote
+  I don't actually think you're looking at the whole picture, but rather nitpicking on any slip-ups Joon has or you think he had.
+#+end_quote
+
+Those were not slip ups, they are pretty constant. I know that progress is not linear, but all the "progress" he had before Aerb was pretty much reset to 0 at the news of Arthur being alive and narrative introduction, this is not a solid statement, but rather a reference to the time frame.
+
+Check my responses to \derefr. I think, i already explained myself better in them.
+
+#+begin_quote
+  he doesn't owe you or anyone else a self-actualized identity. It's fine that his thoughts and actions make you feel that way. But how we think and act is not how others think and act.
+#+end_quote
+
+Well, yeah. I was commenting on how it seems. I just personally dislike people that say they are trying, but they don't act on those promises. Most of the time they don't change. Is the part i quoted deliberately similar to the speech Juniper received from Grak?
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1520015187.0
+:END:
+
+*************** Constant? Given your effort in trying to prove Joon an asshole, you should do a text analysis to record these occurrences, like behavioral data. Take all the instances where Joon has positive/negative interactions with his companions. Find a frequency/rate/celeration of when he is shitty/nice to others, when he makes resolutions, when he keeps them or fails, when he makes excuses for it, when he "feels bad", etc. It will help because you provide few examples and make arguments based on a few isolated situations that you /feel/ strongly about.
+
+#+begin_quote
+  Well, yeah. I was commenting on how it seems. I just personally dislike people that say they are trying, but they don't act on those promises. Most of the time they don't change.
+#+end_quote
+
+You're also saying you dislike the direction the story is going in, which is implying the story would be better if Joon acted in accordance with your expectations.
+:PROPERTIES:
+:Author: nytelios
+:Score: 2
+:DateUnix: 1520040623.0
+:END:
+
+**************** No, i dislike heavy reliance on "narrative" as a story motivator, i dislike DM as a Deus Ex Machina that looms over the party and i somewhat disliked soul magic related chapters.
+
+Soul magic was scheming in the dark without set of rules and only way it was resolved is because author said so. Soul magic was too powerful, but needed to be limited so the story could exist. Fallather needed to be super smart and scheming, but he had to go down by not being smart. As others pointed out in the related threads, he could have taken the teleportation stone and go to another part of the Aerb, there Juniper could not touch him, with Grak and Amaryllis as hostages. Then interact with Juniper via 3rd party or some remote method. He schemed how to escape or beat the prison for decades, but he was so impatient and arrogant towards Juniper that he needed to be present personally to interact with him, when in reality he had the upper hand if he didn't.
+:PROPERTIES:
+:Author: Ace_Kuper
+:Score: 1
+:DateUnix: 1520061453.0
+:END:
+
+***************** That's completely unrelated to disliking Joon's character choices. I like how the story exploits the looming Deus Ex Machina, except they take shape in "nudges" (however the DM defines those). Matter of taste, I suppose.
+
+Soul magic was like a black box before the rules were revealed by game layer proficiency. As others have also pointed out, there were weights to whatever he chose. Blackmailing Joon from a remote location has a limited set of outcomes (which would have inevitably failed and set to to square one face-to-face). In hindsight, my opinion is that his smartest move was to work with Juniper in good faith. He hedged his bets on a reasonable assumption given his character values and it failed.
+:PROPERTIES:
+:Author: nytelios
+:Score: 1
+:DateUnix: 1520091838.0
+:END:
+
+
+** Here was talk about life universe and everything which was missing the ROB chapter :)
+:PROPERTIES:
+:Author: serge_cell
+:Score: 1
+:DateUnix: 1519915307.0
+:END:

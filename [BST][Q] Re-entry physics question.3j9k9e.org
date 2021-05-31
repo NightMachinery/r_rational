@@ -1,0 +1,301 @@
+#+TITLE: [BST][Q] Re-entry physics question
+
+* [BST][Q] Re-entry physics question
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 6
+:DateUnix: 1441139196.0
+:END:
+For the purposes of hard sci-fi, I need to know the velocities, pressures, forces, temperatures, and electromagnetic dynamics something in the shape of a human body would experience while falling to Earth from 200 km on a geosynchronous (suborbital at that altitude) trajectory.
+
+Is there any summary of physics formulas and atmospheric data, or a calculator or simulator that would help me determine the results of such a specifically unusual event?
+
+[[#s][]]
+
+[[#s][]]
+
+Is there anything the protagonists can do to increase their chances of survival?
+
+[[#s][]]
+
+
+** I think xkcd What If covered similar problem, about cooking steak via free fall. The article is [[https://what-if.xkcd.com/28/][here]]. If I understand it correctly, your protagonist can survive slowing in atmosphere without any additional measures. But covering himself in metal capsula can help. He should also (obviously) disable any sensory machinery on his skin. He should also try to manufacture parachute or something to help with landing.
+:PROPERTIES:
+:Author: Shadawn
+:Score: 8
+:DateUnix: 1441176595.0
+:END:
+
+
+** I believe the thing happening with temperature is a result of the ideal gas law -- you compress air in front of you, which increases the pressure, which means either more material or higher temperature. Obviously, to protect yourself from that, you need to keep the hot air away from you, which means having a good insulator around or just a large amount of ablative shielding. I don't have formulas or numbers on that.
+
+Forces -- you've got gravity and air resistance as the main things. (Unless you encounter orbital debris, in which case the normal force is going to make you sad.) We approximate Earth's gravity as causing acceleration of 9.8m/s^{2} , and you'll start out with about 6% less than that -- not enough to make a big difference.
+
+At 100km, you'll start encountering atmosphere. You'll be going about 1400m/s at that point. You will decelerate to 50-60m/s by the time you reach the ground. [[http://hypertextbook.com/facts/JianHuang.shtml]] has some measured velocities for humans in free fall at terminal velocity at particular altitudes; you can do linear interpolation to guess at the acceleration and forces between the measured points.
+
+You'll get turbulence from wind. It gets pretty strong in places. Turbulence is an injury magnet because of the jerk and jounce more than the acceleration.
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1441144343.0
+:END:
+
+*** Thanks for the reference!
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1441144496.0
+:END:
+
+
+** Depends on the capability of the nanoassemblers.
+
+If they can control the angle of re-entry and have enough time to build an aerogel-density ablative heat shield out of surplus body mass, it should be survivable.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 3
+:DateUnix: 1441141463.0
+:END:
+
+*** There's no way to control angle of re-entry with nanoassemblers. o_O The angle of re-entry is nearly perpendicular.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1441141674.0
+:END:
+
+**** OK, I see where that was confusing.
+
+I mean if they (the cyborg and the android) can control the angle of entry. Not if the nanoassemblers can.
+
+Though a perpendicular entry is unusual. Did they fall from a skyhook or something? That would actually be easier, since they won't have to shed full orbital velocity. They'd be travelling under 2000 m/s, not almost 8000.
+
+Depending on their capabilities you could use most of the body mass to build the heat shield and parachute and save the nanotech core, the brains, and enough random organic material to keep the blood oxygenated and fed.
+
+Once they're in the water, spin a small-mesh drift net, collect plankton and oxygen. Don't worry about waking up the meatsack... he'd only complain.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 5
+:DateUnix: 1441142754.0
+:END:
+
+***** Drexler makes a claim of a 1kg system producing 1kg in one hour, and he's probably optimistic. Even with more kilograms in the system, I'm pretty sure that means our heroes are fucked.
+
+Perhaps the heat shields are prefabbed emergency escape devices. I think that's about the only way they could survive. [[#s][]]
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 2
+:DateUnix: 1441166745.0
+:END:
+
+****** #+begin_quote
+  Drexler makes a claim of a 1kg system producing 1kg in one hour, and he's probably optimistic. Even with more kilograms in the system, I'm pretty sure that means our heroes are fucked.
+#+end_quote
+
+Assuming this is the speed for fully-general nanowizadry, don't discount the power of making a more-specific device that helps with your specific problem - eg a half-gram fast-flesh-to-carbonnanotubes converter, to provide the structure for your (flesh-to-) carbon/nitrogen aerogel heatshield or drag-increasing parachute streamers.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 3
+:DateUnix: 1441194678.0
+:END:
+
+******* ...Maybe. But it also makes sense for there to be emergency heat shields. [[#s][]]
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1441210012.0
+:END:
+
+******** Makes sense to have a variety of useful emergency equipment, including easily-reconfigured matter. Would it be possible to take other mass with them, eg by cutting off a airlock door with nano-thermite-magic?
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 1
+:DateUnix: 1441237083.0
+:END:
+
+********* #+begin_quote
+  cutting off a airlock door with nano-thermite-magic
+#+end_quote
+
+...No, I don't think that's quite possible. I don't see a way she can do that without melting off her hands.
+
+#+begin_quote
+  easily-reconfigured matter
+#+end_quote
+
+That's stretching the hardness of the sci-fi quite a bit.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1441259003.0
+:END:
+
+
+****** You can always build small, light extruders and extrude the meatsack's material as a foam. You're in a vacuum, it won't take much pressure to get it to expand.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1441191409.0
+:END:
+
+
+***** The android is unconscious for some period in the beginning, so it's the meatsack's duty to make a survival plan.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1441143860.0
+:END:
+
+****** Does the meatsack have control over the nanotech?
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1441145996.0
+:END:
+
+******* The meatsack has a lung replaced by a quantum computer and molecular assembler, so they have about a third of capacity until the android is reactivated, which is probably done as soon as possible, no less than 30 seconds. They have at least 145 seconds before they hit the atmosphere.
+
+Do you know Drexler's idealized claim for rate of production? I'm thinking they could have a mode that rips out the "lung" to expand to a maximum surface area, which would speed up both production and material feed.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1441146871.0
+:END:
+
+******** Don't forget that the atmosphere itself is a potential power source.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1441157540.0
+:END:
+
+********* Power?
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1441160422.0
+:END:
+
+********** Whatever the nanotech is doing it needs energy and cooling.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1441191699.0
+:END:
+
+*********** #+begin_quote
+  energy and cooling.
+#+end_quote
+
+Energy from re-entry I can see, but cooling? What kind of temperature do you think they're operating at?
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 1
+:DateUnix: 1441194372.0
+:END:
+
+************ If the nanotech is constructing stuff, it's making and breaking lots of atomic bonds very very fast. That uses energy. The waste heat has to go somewhere. That's something that doesn't generally get addressed in fiction.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1441195490.0
+:END:
+
+************* Yeah, I'm somewhat familiar with Drexler's work. The issue is that your output materials have to below a certain temperature to retain their desired physical and chemical properties, instead of eg vaporising or decomposing. This is a major rate-limiter on the process.
+
+I guess there are heatshield materials that might have a very high temperature threshold, but if compression heats them to thousands of degrees I can't see that being good for the assemblers.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 2
+:DateUnix: 1441196761.0
+:END:
+
+************** The heat shield itself is going to have to be dead matter, obviously.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1441198567.0
+:END:
+
+
+*********** They don't need to worry about power; they have ludicrous amounts of energy in nanotech ultracapacitors, and possibly a nuclear battery that they charge off of.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1441210700.0
+:END:
+
+
+** My first thought was obviously that if the android were of sufficient mass (1200 kg or so), you could use the most obvious existing solution to this problem--simply recreate a Mercury capsule, as this is the approximate altitude reached by the sub-orbital Mercury flights (though you will need to fire some sort of propellant to control re-entry angle).
+
+While this seems like the most likely meatsack-with-an-internet-connection solution to the problem, it unfortunately requires the android to be absurdly dense--a humanoid weighing that much would be denser than a solid block of human shaped gold. Just recreating the Mercury capsule heat shield is a little better (272 kg), but insufficient on its own.
+
+Fortunately, someone has indeed already solved this problem; the inflatable re-entry vehicle experiment recently conducted successful tests at this altitude and has the modest flight mass of about 125 kg.
+:PROPERTIES:
+:Author: gambling8nt
+:Score: 1
+:DateUnix: 1441151446.0
+:END:
+
+*** IRVE has to be inflated with gas in the payload, so that's not really an option.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1441159082.0
+:END:
+
+**** I used the stated re-entry mass for IRVE-II, which had essentially no payload, rather than the heavier and more recent IRVE-3, for my estimate of 125 kg. I'm fairly certain that mass estimate includes the needed gas and inflation system. That said, there may not be enough nitrogen available at all to follow the schematic exactly even with a nanoassembler; you may be stuck instead using some other gas (probably carbon dioxide) to inflate the heat shield. I don't think this would require any sort of significant design change, however.
+:PROPERTIES:
+:Author: gambling8nt
+:Score: 2
+:DateUnix: 1441162680.0
+:END:
+
+***** Ah, that makes sense. I forgot about gases in the human body... ._.
+
+Now I'm left wondering whether aerogel or an IRVE would be better. I also need to find out if a 2m-diameter heat shield is safe. They can curl up in the center to manufacture parachutes. 2m would be a lot faster than 3m, and they only have 2.5 minutes to manufacture the heat shield. There is definitely some preparatory calculations and planning being done before they fall.
+
+Since the heat is from compression, that means that everything behind the heat shield remains relatively copascetic, right? Maybe 1.5m is enough.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1441163776.0
+:END:
+
+****** The original Mercury heat shield was less than 2m diameter, although I doubt a person could easily hide in the space available behind one only 1.5m in diameter. Maybe a short woman? Remember, curling up on top of it will be essentially impossible due to the large g-forces pushing you flat against it as you decelerate.
+
+Also, the IRVE fabric includes several outer layers of Nextel (tm) fibers, a derivative of aerogel technology--and probably would not be possible without it. Ordinary aerogel, on the other hand, while having high compressive strength and good thermal insulation properties, is too brittle to use as a heat shield for re-entry.
+:PROPERTIES:
+:Author: gambling8nt
+:Score: 1
+:DateUnix: 1441169538.0
+:END:
+
+******* Okay. However, Drexler's estimate for production speed, which could be considered optimistic to begin with, is at 1kg per hour on a 1kg system. [[https://www.reddit.com/r/rational/comments/3j9k9e/bstq_reentry_physics_question/cuntbww][That means fab in mid-air is not happening, so I have to take a different approach in the narrative.]]
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1441169887.0
+:END:
+
+******** You might be able to fab an interesting amount of [[https://en.wikipedia.org/wiki/Aerogel#Properties][Aerogel]] in useful time. The stuff is strong ([[https://www.youtube.com/watch?v=WREnMOheOMI][car drives over it video]]), ridiculously light, and extremely heat resistant.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1441406344.0
+:END:
+
+********* #+begin_quote
+  Ordinary aerogel, on the other hand, while having high compressive strength and good thermal insulation properties, is too brittle to use as a heat shield for re-entry.
+#+end_quote
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1441409895.0
+:END:
+
+********** Doh! Critical fail on my reading comprehension. Sorry.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1441413710.0
+:END:

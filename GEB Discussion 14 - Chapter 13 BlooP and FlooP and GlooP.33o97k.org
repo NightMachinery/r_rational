@@ -1,0 +1,493 @@
+#+TITLE: GEB Discussion #14 - Chapter #13: BlooP and FlooP and GlooP
+
+* GEB Discussion #14 - Chapter #13: BlooP and FlooP and GlooP
+:PROPERTIES:
+:Author: xamueljones
+:Score: 10
+:DateUnix: 1429846185.0
+:END:
+*Gödel, Escher, Bach: An Eternal Golden Braid*
+
+This is a discussion of the themes and questions concerning the *Chapter 13: BlooP and FlooP and GlooP* and its dialogue, *Air on G's String*.
+
+WARNING: The following post is a wall of text as I try to explain all of the high-level computer science concepts and elaborate beyond what Hofstadter covers. I'm attempting to explain everything to an audience with no computer programming experience, but with a good mathematical understanding.
+
+*BlooP Programming*
+
+This chapter is rather awkwardly written because Hofstadter is introducing high-level computer science topics very quickly with not enough background knowledge provided. Technically he does explain everything, but it's a little terse if you have never learned about computer programming before. I guess one could say that he's [[http://lesswrong.com/lw/kg/expecting_short_inferential_distances/][expecting a shorter inference distance]] between himself and the general audience than he expects. As a computer scientist, I'll do my best to fill in the gaps.
+
+BlooP stands for Bounded loops, FlooP stands for Free (or unbounded) loops, and GlooP stands for Greater loops. Notice that while BlooP may be hard to understand for non-programmers, programmers also will have difficulties understanding because BlooP is such a kludgly and inefficiently-designed language. To be fair, Hofstadter wrote this at a time when programming languages had awkward punctuation and he was stripping out all unessential features to simplify explanation. If you want to learn more about programming, I recommend starting with [[https://www.python.org/about/gettingstarted/][Python]] and it's [[https://wiki.python.org/moin/BeginnersGuide/NonProgrammers][guides for non-programmers]], because it's a very high-level language which means you can start writing programs yourself very quickly.
+
+BlooP is meant to represent the class of languages which only use primitive recursion. The difference between primitive and normal recursion is that primitive recursion are not unbounded. By forcing the recursion to have a defined limit, we can say that every possible program in BlooP will stop running after a finite amount of time (it finished or hit the limit of recursion). By the formal definitions, all primitive recursive functions are built out of combinations of five basic functions (stolen from the Wikipedia article on [[http://en.wikipedia.org/wiki/Primitive_recursive_function][Primitive Recursive Function]] ):
+
+Note that I'll be listing quite a number of formal definitions used for the functions in BlooP at the end of the post and you can skip them without getting confused. They are just provided for anyone who is curious.
+
+Hofstadter goes on to explain how once we construct a few simple functions directly from the building blocks defined in the comments, we can give these functions some name like MyFunction which allows us to make a ‘call' to the function when we need it, instead of rewriting it again and again. This allows us to rapidly expand the set of possible BlooP functions.
+
+A piece of advice if you want to answer the problems about which functions are in BlooP, don't always try to write a procedure for each of the functions. It's enough to be able to say the function can be constructed even though it would huge and difficult to write it correctly. I stole the answers to Hofstadter's exercises from [[http://www.dailykos.com/story/2009/05/17/732242/-Godel-Escher-Bach-series-Chapter-XIII-BlooP-and-FlooP-and-GlooP#][here]] and therefore can't take credit:
+
+- FACTORIAL [N] = N! (the factorial of N)
+
+This is straightforward in BlooP.
+
+- REMAINDER [M, N] = the remainder upon dividing M by N
+
+The awkwardness in concocting a "MINUS" function is a good indicator of the messiness of inverse functions. Perfectly feasible, however. Building up low-level functions of this kind allows more complex properties to be considered for feasibility in BlooP. A good complement to this function would be QUOTIENT [M,N] that would give the integer division of M by N.
+
+- PI-DIGIT [N] = the Nth digit of pi, after the decimal point
+
+Before doing this, it would probably be a good idea to consider a function like RATIONAL-DIGIT [K,L,M] which outputs the Mth digit of K/L. Once that is available, there are functions which generate a rational approximation of pi which can reliably be used for the Nth digit in (much) less than N steps. So feasible, if pretty complicated.
+
+- FIBO [N] = the Nth Fibonacci number
+
+  #+begin_example
+    FIBO [9] = 34
+    DEFINE PROCEDURE "FIBO" [N]: 
+    BLOCK 0: BEGIN 
+    CELL(0) <= 0; 
+    CELL(1) <= 1; 
+    LOOP N TIMES: 
+    BLOCK 1: BEGIN 
+        CELL(2) <= CELL(0) + CELL(1); 
+        CELL(0) <= CELL(1); 
+        CELL(1) <= CELL(2); 
+    BLOCK 1: END; 
+    OUTPUT <= CELL(0); 
+    BLOCK 0: END.
+  #+end_example
+
+- PRIME-BEYOND [N[ = the lowest prime beyond N
+
+Since there is always a prime between N and 2N (N>1), we can check this in a known number of steps.
+
+- PERFECT [N] = the Nth "perfect" number (a number such as 28 whose divisors sum up to itself: 28 = 1 + 2 + 4 + 7 + 14)
+
+There is no way of knowing how big our search must be for (say) the 200th perfect number, if it even exists, so this is probably not BlooP achievable.
+
+- PRIME? [N] = YES if N is prime, otherwise NO.
+
+  #+begin_example
+    DEFINE PROCEDURE "PRIME?" [N]:
+    BLOCK 0: BEGIN
+        IF N = 0, THEN:
+        QUIT BLOCK 0;
+        CELL(0) <= 2;
+        LOOP AT MOST MINUS [N,2] TIMES:
+        BLOCK 1: BEGIN
+            IF REMAINDER [N,CELL(O)] = 0, THEN:
+            QUIT BLOCK 0;
+            CELL(O) <= CELL(O) + 1;
+        BLOCK 1: END;
+        OUTPUT <= YES;
+    BLOCK 0: END.
+  #+end_example
+
+- PERFECT? [N] = YES if N is perfect, otherwise NO.
+
+This is straightforward, an accumulation of the factors of N
+
+- TRIVIAL? [A,B,C,N] = YES if A + B = C^{N} is correct; otherwise NO.
+
+Equation check, this is easy.
+
+- PIERRE? [A,B,C] = YES if A + B = C^{N} is satisfiable for some value of N greater than 1, otherwise NO.
+
+Even without the knowledge that Fermat's Last Theorem is proven, it would be possible in advance to establish how big a power could be feasible for this equation to work, so this has always been BlooP-solvable. For a sufficiently large N, X^{N} + X^{N} < (X+1)^{N,} and it happens that N < X, so we could search powers up to the larger of A or B using TRIVIAL? above.
+
+- FERMAT? [N] = YES if A^{N+B^{N}} = C^{N} is satisfied by some positive values of A, B, C; otherwise NO.
+
+The answer to this has changed since the book was published. Now it is trivial to code this in BlooP: only "YES" when N = 1 or 2.
+
+- TORTOISE-PAIR? [M,N] = YES if both M and M + N are prime, otherwise NO.
+
+Equation check, this is easy.
+
+- TORTOISE? [N] = YES if N is the difference of two primes, otherwise NO.
+
+As indicated in the previous Dialogue, a simple approach to this does not have an obvious bound to the search (for even N). I don't know if there is any number theory result to help on this. This relates to the idea of prime gaps and is an open problem.
+
+- MIU-WELL-FORMED? [N] = YES if N, when seen as a string of the MIU-System, is well-formed; otherwise NO.
+
+Since the number of digits in N is less than N, it's easy to write a BlooP program to break out the digits of N (into CELL() storage) using REMAINDER and QUOTIENT procedures. Once that is done we can check whether each is 3,1 or 0.
+
+- MIU-PROOF-PAIR? [M,N] = YES If M, as seen as a sequence of strings of the MIU-system, is a derivation of N, as seen as a string of the MIU-system; otherwise NO.
+
+Whoof. Now we are getting a little more complicated, but we can imagine an intermediate function here, MIU-PROOF-STEP [M,N] which checks whether N can be obtained from M by one application of one of the rules, and apply that successively to each portion of the broken-out digits of N. So again this should be possible in BlooP.
+
+- MIU-THEOREM? [N] = YES if N, seen as a MIU-system string, is a theorem; otherwise NO.
+
+There is no obvious way to make this into a predictable-length search, although like FERMAT? above I wouldn't rule out the possibility of using a result from "outside the system" to allow a simpler BlooP test to be written.
+
+- TNT-THEOREM? [N] = YES if N, seen as a TNT-string, is a theorem.
+
+Look at the answer to FALSE? below.
+
+- FALSE? [N] = YES if N, seen as a TNT-string, is a false statement of number theory; otherwise NO.
+
+A little dig here from Douglas, trying to make us consider whether or not TNT has captured number theory. Nevertheless from a BlooP perspective both of these questions are out of reach.
+
+The idea concerning Blue Programs is about countable versus uncountable sets. In set theory, the cardinality of a set simply means the number of elements in the set. This is very easy to do for finite sets, just count them. However, this can't be done for infinite sets. Instead Cantor thought of a bijection between two sets where every element of one set can be mapped onto some element of the other set (and the reverse is true as well) to prove that two sets have the same cardinality. He used the diagonalization argument as explained in the book to prove that the set of all real numbers is infinitely bigger than the set of integers.
+
+The reason why this technique can be applied to BlooP programs is because languages are simply *sets* of functions with a certain property. Therefore, Hofstadter has shown that not all possible numerical properties can be discovered by a BlooP program.
+
+...
+
+*FlooP Programming*
+
+FlooP represents the class of languages with unbounded loops. Interestingly all FlooP languages are called Turing-recognizable, recursively-enumerable, or semi-deciable where the language has the following characteristic:
+
+- Every valid string in the language will be produced by a possible program given enough, yet finite, time. Or basically, if the answer is YES, then the program will stop sooner or later. Yet the same thing cannot be guaranteed for all possible rejections (some strings not in the language will make the program run forever).
+
+Some of you with computer science knowledge should realize that BlooP describes a [[http://en.wikipedia.org/wiki/Machine_that_always_halts][non-Turing complete language]] where every possible BlooP program always halts (and can't stimulate all possible Turing machines, hence the ‘non' part). Therefore, BlooP programs are always Turing-decidable.
+
+When Hofstadter talks about possibly separating the class of input strings into one where the program halts to return NO, and into one where the program will never stop (remember that for this one, the output should also be NO, but we just can't get to the ‘end'), he is describing a famous problem called the [[http://en.wikipedia.org/wiki/Halting_problem][Halting Problem]] which asks the question, can a BlooP program be written to check if a FlooP program will terminate or not for a given input?
+
+I'll try to give the overview of the answer to the Halting Problem. It will be a proof by contradiction.
+
+First assume that you do have such a BlooP program called HALT(M, w) which takes in an encoded program, M, and an input, w. HALT will magically tell us if M will halt on w or not. HALT will always halt no matter what machine M or input w is given, because all machines will halt (accept or reject) or loop forever for any input, therefore HALT is a BlooP program.
+
+Now we'll make a new program called OPP(X) which runs HALT(X, X) where X is a program is fed itself as an input. OPP accepts if and only if HALT rejects, and loops forever otherwise when HALT accepts (OPP stands for OPPosite). This is fine because all programs can be encoded as input strings like a Gödelian numbering. Note that we don't care if OPP itself is a BlooP program, or a program that halts on every input. In addition, OPP never rejects.
+
+OPP(X) runs HALT(X, X), and HALT(X, X) asks if X halts on X. There are three possibilities:
+
+- If X does accept X, then HALT accepts and OPP loops forever.
+- If X does reject X, then HALT accepts and OPP loops forever.
+- If X loops forever on X, then HALT rejects and OPP accepts.
+
+What if we run OPP on itself?
+
+OPP(OPP) runs HALT(OPP, OPP), HALT(OPP, OPP), asks if OPP halts on OPP. There are three possibilities:
+
+- If OPP does accept OPP, then HALT accepts and OPP loops forever.
+- If OPP does reject OPP, then HALT accepts and OPP loops forever.
+- If OPP loops forever on OPP, then HALT rejects and OPP accepts.
+
+For every single possibility, OPP simultaneously halts and loops forever which is a contradiction. Yet there was nothing wrong with our construction of OPP, only in the subprogram of HALT. Therefore HALT cannot exist, or is unBlooPable.
+
+Hofstadter gave a similar proof by contradiction, where he pretended to have a working terminator test and showed it inevitably leads to a contradiction.
+
+...
+
+*GlooP Programming*
+
+Just to recap, BlooP programs are primitive recursive functions, terminating FlooP programs are general recursive functions, and non-terminating FlooP programs are partial recursive functions where partial means that only some of its inputs have an output or terminates. [[http://ncatlab.org/nlab/show/partial+recursive+function][Here]] is a page which explains the differences between the types of functions.
+
+GlooP is simply the hypothetical language(s) which includes programs that can't be created in FlooP. GlooP is a myth according to the [[http://en.wikipedia.org/wiki/Church%E2%80%93Turing_thesis][Church-Turing Thesis]].
+
+The Turing-Church Thesis states that all functions/algorithms are computable by a human if and only if it is computable by a Turing machine. It's not obvious in this day and age, but all computations can also be performed by a human being as well if the amount of time taken is ignored. Therefore, the thesis is stating that all possible computation we can ever do is also performed by a Turing machine. This is why something like the [[http://lesswrong.com/lw/fok/causal_universes/][Time-Turners in Harry Potter are non-Turing-computable]] are so enormously powerful. They allow one to preform computational operations that ordinary humans and Turing machines can't do and allow one to construct a theoretical GlooP program such as [[http://en.wikipedia.org/wiki/Hypercomputation][hypercomputation]].
+
+The Church-Turing Thesis work by examining the following three classes of functions:
+
+- [[http://en.wikipedia.org/wiki/%CE%9C-recursive_function][General Recursive Functions]]
+
+- [[http://en.wikipedia.org/wiki/Turing_machine][Turing Machines]]
+
+- [[http://en.wikipedia.org/wiki/Lambda_calculus][Lambda Calculus]]
+
+Since I'm reaching the maximum possible length of this post, please go to the comments below for the rest of this post.
+
+
+** Continuation of the post:
+
+The thesis proves that the three classes are all equivalent which is important because they contain all known [[http://en.wikipedia.org/wiki/Computable_function][Computable Functions]] and any other model of computation can be shown to be the same as one or more of the above classes. Furthermore they /demonstrate/ that the classes are the same as our informal notion of computability. The thesis cannot be formally proven because it's showing that the classes are the same as our informal notion of computability which is equating an informal notion with a formal notion. Since the informal notion of computability doesn't have a formal definition, their equivalence can't be proven. To be fair though, some people do use the thesis itself as a formal definition of computation. Another reason is that we can't check all possible models of computation for their equivalence to the Turing machine (only ones we can do on current computers). One such model where the thesis fails is if we have a machine which can somehow take an infinite number of steps in finite time, now we can solve the halting problem by asking if the program looped forever or not afterwards.
+
+In this sense, the thesis is a scientific hypothesis that asserts all possible computation can be done by a Turing machine. If a machine can be built to preform computation that no Turing machine can ever do, then we have shown the thesis to be false. If we could show that [[http://xkcd.com/505/][the laws of physics can be computable by a Turing machine]] (xkcd comic), then that's one way to prove all computable functions can be computed by a Turing machine.
+
+......
+
+*Dialogue*
+
+The sentence:
+
+#+begin_quote
+  Yields falsehood when preceded by its quotation! Yields falsehood when preceded by its quotation!
+#+end_quote
+
+is a quine which is very similar to the idea of a strange loop which was discussed in the earlier [[http://www.reddit.com/r/rational/comments/2z8zm5/geb_discussion_1_introduction_a_musicological/][discussion of the introductory chapter]]. [[http://en.wikipedia.org/wiki/Quine_%28computing%29][Quines]] are mainly defined in computing as a computer program which produces itself. Here's an example in pseudocode:
+
+#+begin_quote
+  Program Quine- Print twice: Program Quine- Print twice:
+#+end_quote
+
+If you make a call such as ‘Run Quine', the program, Quine, will run a command to print everything after the colon twice. This outputs the program, Quine. Note that I didn't include any such command Run as part of the program to make writing the pseudocode simpler, but it can be done. For any programmers reading, I strongly recommend trying to write your own quine. Hacking the computer to find the file with the source code of the hacking file itself is not acceptable since the code wouldn't *look* like a quine. An empty source file is also too easy of a solution since that's simply making no code the same as no output (I don't want trivial solutions).
+
+For non-programmers in the audience, try thinking of sentences or questions which either refer to itself or is its own answer. Play around with the commenting system such as:
+
+#+begin_quote
+  What question is this comment asking?
+#+end_quote
+
+Can you think of a quine which is not in text form? (Hint: what does reproduction have to do with anything?)
+
+Wikia Links:
+
+- [[http://godel-escher-bach.wikia.com/wiki/Chapter_13][Chapter 13]]
+
+- [[http://godel-escher-bach.wikia.com/wiki/Air_on_G%27s_String][Air on G's String]]
+
+Coming up next on April 27th is Chapter XIV: On Formally Undecidable Propositions of TNT and Related Systems.
+
+The discussion for the previous chapter is posted [[https://www.reddit.com/r/rational/comments/33dmiu/geb_discussion_13_chapter_12_minds_and_thoughts/][here]].
+
+The discussion for the next chapter is posted [[http://www.reddit.com/r/rational/comments/35mjwy/geb_discussion_15_chapter_14_on_formally/][here]].
+
+[[http://www.reddit.com/r/rational/comments/2yys1i/lets_start_the_read_through/][Official Schedule]].
+:PROPERTIES:
+:Author: xamueljones
+:Score: 2
+:DateUnix: 1429846551.0
+:END:
+
+*** This is the one about formal definitions of the functions used in BlooP.
+
+All BlooP functions are composed of the following functions:
+
+- Constant Function -- always returns a constant, or the same answer for all possible inputs. Takes no input. A() = C.
+
+- Successor Function -- returns the successor of the input. Takes only one input. B(n) = n + 1
+
+- Projection function -- runs a function on every one of its inputs sequentially. Takes n inputs and returns n results of preforming the function on the i-th argument. C(1, 2, 3, 4) = B(1), B(2), B(3), B(4) = 2, 3, 4, 5.
+
+Then we have operations to combine functions:
+
+- adding any two natural numbers
+
+- multiplying any two natural numbers
+
+- determining if two numbers are equal
+
+- determining the larger (smaller) of two numbers
+
+The above list makes more sense when you realize that (most) functions have a numerical output.
+
+Finally, you can write functions to control the structure of your programs to combine other functions directly.
+
+- Composition Function -- Two functions can be combined where f(g(x)) = h(x). This is extended for a function which takes k inputs and there are k functions which takes m inputs.
+
+Ex. h(x1, x2, ... , xm) = f(g1(x1, x2, ... , xm), g2(x1, x2, ... , xm), ... , gk(x1, x2, ... , xm))
+
+- Primitive recursion -- Given two functions where one has n inputs and the other one has n+2 inputs, a new function can be made with n+1 inputs.
+
+Ex. h(0, x1, x2, ... , xn) = f(x1, x2, ... , xn) and h(S(y), x1, x2, ... , xn) = g(y, h(y, x1, x2, ... , xn), x1, x2, ... , xn) where S can be any function with one input.
+
+These two functions are what allow you to make looping programs.
+
+Hopefully the above explanation helps in explain how the concept of BlooP or primitive recursive functions work.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 2
+:DateUnix: 1429846562.0
+:END:
+
+
+*** [[http://imgs.xkcd.com/comics/a_bunch_of_rocks.png][Image]]
+
+*Title:* A Bunch of Rocks
+
+*Title-text:* I call Rule 34 on Wolfram's Rule 34.
+
+[[http://www.explainxkcd.com/wiki/index.php/505#Explanation][Comic Explanation]]
+
+*Stats:* This comic has been referenced 166 times, representing 0.2717% of referenced xkcds.
+
+--------------
+
+^{[[http://www.xkcd.com][xkcd.com]]} ^{|} ^{[[http://www.reddit.com/r/xkcd/][xkcd sub]]} ^{|} ^{[[http://www.reddit.com/r/xkcd_transcriber/][Problems/Bugs?]]} ^{|} ^{[[http://xkcdref.info/statistics/][Statistics]]} ^{|} ^{[[http://reddit.com/message/compose/?to=xkcd_transcriber&subject=ignore%20me&message=ignore%20me][Stop Replying]]} ^{|} ^{[[http://reddit.com/message/compose/?to=xkcd_transcriber&subject=delete&message=delete%20t1_cqmt4kj][Delete]]}
+:PROPERTIES:
+:Author: xkcd_transcriber
+:Score: 1
+:DateUnix: 1429846569.0
+:END:
+
+
+*** ***** 
+      :PROPERTIES:
+      :CUSTOM_ID: section
+      :END:
+****** 
+       :PROPERTIES:
+       :CUSTOM_ID: section-1
+       :END:
+**** 
+     :PROPERTIES:
+     :CUSTOM_ID: section-2
+     :END:
+[[https://en.wikipedia.org/wiki/Computable%20function][*Computable function*]]: [[#sfw][]]
+
+--------------
+
+#+begin_quote
+  *Computable functions* are the basic objects of study in [[https://en.wikipedia.org/wiki/Recursion_theory][computability theory]]. Computable functions are the formalized analogue of the intuitive notion of [[https://en.wikipedia.org/wiki/Algorithm][algorithm]]. They are used to discuss computability without referring to any concrete [[https://en.wikipedia.org/wiki/Model_of_computation][model of computation]] such as [[https://en.wikipedia.org/wiki/Turing_machine][Turing machines]] or [[https://en.wikipedia.org/wiki/Register_machine][register machines]]. Any definition, however, must make reference to some specific model of computation but all valid definitions yield the same class of functions. Particular models of computability that give rise to the set of computable functions are the [[https://en.wikipedia.org/wiki/Turing-computable_function][Turing-computable functions]] and the [[https://en.wikipedia.org/wiki/%CE%9C-recursive_function][μ-recursive functions]].
+#+end_quote
+
+--------------
+
+^{Interesting:} [[https://en.wikipedia.org/wiki/Computable_real_function][^{Computable} ^{real} ^{function}]] ^{|} [[https://en.wikipedia.org/wiki/Semicomputable_function][^{Semicomputable} ^{function}]] ^{|} [[https://en.wikipedia.org/wiki/Recursive_set][^{Recursive} ^{set}]]
+
+^{Parent} ^{commenter} ^{can} [[/message/compose?to=autowikibot&subject=AutoWikibot%20NSFW%20toggle&message=%2Btoggle-nsfw+cqmt4y8][^{toggle} ^{NSFW}]] ^{or[[#or][]]} [[/message/compose?to=autowikibot&subject=AutoWikibot%20Deletion&message=%2Bdelete+cqmt4y8][^{delete}]]^{.} ^{Will} ^{also} ^{delete} ^{on} ^{comment} ^{score} ^{of} ^{-1} ^{or} ^{less.} ^{|} [[http://www.np.reddit.com/r/autowikibot/wiki/index][^{FAQs}]] ^{|} [[http://www.np.reddit.com/r/autowikibot/comments/1x013o/for_moderators_switches_commands_and_css/][^{Mods}]] ^{|} [[http://www.np.reddit.com/r/autowikibot/comments/1ux484/ask_wikibot/][^{Magic} ^{Words}]]
+:PROPERTIES:
+:Author: autowikibot
+:Score: 1
+:DateUnix: 1429846588.0
+:END:
+
+
+** Are there any other proofs on the undecidability of the halting problem, that don't involve the OPP function? Or, may I ask for some clarification on that matter? This has been a long-standing confusion for me, which is frustrating, since I hope to become a computer scientist in the near future.
+:PROPERTIES:
+:Author: Aabcehmu112358
+:Score: 1
+:DateUnix: 1429850526.0
+:END:
+
+*** Sorry, but I have never heard of any proofs of the Halting Problem which wasn't a contradiction proof. All contradiction proofs I have ever read work by the following two steps:
+
+- Assuming there is a program which takes a machine M and input w to output 'ACCEPT', if M halts on w, or 'REJECT' if M loops forever on w.
+- If such a program exists, it is always possible to write a new program which immediately leads to a contradiction. The new program will be perfectly valid in every way except for it's usage of the first program. Hence no program exists that can decide if M halts or not on w in finite time.
+
+There's multiple ways to do step two, but they tend to boil down to constructing some metaHALT program which somehow asks if a new given program will halt when given itself as the input. This is fine. But what happens when you feed this metaHALT program to itself?
+
+......
+
+*Review of Proof*
+
+HALT(M, w) - solves the halting problem of whether or not M halts given w, in finite time.
+
+OPP(X) - asks if X halts when given input X <=> HALT(X, X). OPP(X) outputs accept if HALT(X, X) rejects. OPP(X) will loop forever if HALT(X, X) accepts.
+
+OPP(OPP) - asks if OPP halts when given input OPP <=> HALT(OPP, OPP)
+
+No matter what HALT(OPP, OPP) says, accept or reject, OPP by definition does the opposite. This will lead to a contradiction as shown below.
+
+- If HALT(X, X) outputs accept or that X halts in finite time (whether or not X accepts or rejects input X is ignored), then according to OPP(X), OPP loops forever.
+
+- But if HALT(OPP, OPP) outputs accept or that *OPP halts* in finite time (whether or not OPP accepts or rejects input OPP is ignored), then according to OPP(OPP), *OPP loops forever*. Contradiction!
+
+- If HALT(X, X) outputs reject or that X loops forever, then according to OPP(X), OPP halts given input X.
+
+- But if HALT(OPP, OPP) outputs reject or that *OPP loops forever* given input OPP, then according to OPP(OPP), *OPP halts* given input OPP. Contradiction!
+
+In both cases, it's a contradiction that OPP is saying that it's looping forever /and/ halting for the same input.
+
+I hope this helps, because I have never heard of any proof that wasn't similar to this one in structure.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 3
+:DateUnix: 1429856416.0
+:END:
+
+**** There's still a sticking point for me. Specifically, how can HALT take OPP as it second argument, when the second OPP doesn't have any input to run on?
+:PROPERTIES:
+:Author: Aabcehmu112358
+:Score: 1
+:DateUnix: 1429877834.0
+:END:
+
+***** HALT(X,X) asks if X(X) halts.
+
+So HALT(OPP,OPP) asks if OPP(OPP) halts.
+
+OPP(X) returns the opposite of X(X).
+
+So OPP(OPP) returns the opposite of OPP(OPP), which is a contradiction.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 3
+:DateUnix: 1429989996.0
+:END:
+
+
+***** The OPP in the second argument of HALT isn't run; it's just used as input into the first OPP. The first OPP runs HALT(OPP, OPP) (same as the original command) and contradicts it.
+:PROPERTIES:
+:Author: OffColorCommentary
+:Score: 2
+:DateUnix: 1429893264.0
+:END:
+
+****** Hm...I think I'm starting to get it.
+:PROPERTIES:
+:Author: Aabcehmu112358
+:Score: 1
+:DateUnix: 1429893960.0
+:END:
+
+******* Maybe this will help.
+
+When a program is fed itself as input, the input-version of the program doesn't need its own input at the same time. All programs are data and all programs take data as input. Therefore all programs can take itself as input (even if most programs would reject it because it's not a valid string to run). So when HALT(OPP,OPP) is run, it doesn't matter if the second OPP doesn't have any input. HALT simply asks if OPP can take a description of itself and halt or loop forever on that description. Hofstadter explains that it works due to Godelian numbering which does similar things with number theory.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1429911775.0
+:END:
+
+
+** Awesome post [[/u/xamueljones]] ;)
+
+***** Chapter 13
+      :PROPERTIES:
+      :CUSTOM_ID: chapter-13
+      :END:
+
+- I really enjoyed the cantor diagonalization discussion
+- a lot of punning: BlooP <-> Pool B <-> Blue Programs <-> Blue BlooP Programs
+- why is the subset of BlooP blue (okay pun?) the subset of FlooP *green* and GlooP *red*? Pushing/Popping tonics are blue/red, the tortoise's shell is green but I think that is a little far fetched.
+
+***** Dialogue
+      :PROPERTIES:
+      :CUSTOM_ID: dialogue
+      :END:
+
+- Figure 74 is cool
+
+- on p.435, it says:
+
+  #+begin_quote
+    /Achilles/: A king without a subject would be -
+
+    /Tortoise/: - an anomaly, of course
+  #+end_quote
+
+  Which is similar to p.44 (Two-part invention):
+
+  #+begin_quote
+    "A tortoise playing football would be -" Achilles was beginning. "- an anomaly of course," the Tortoise hastily interrupted.
+  #+end_quote
+
+  referenced by DRH in chapter 4 on p. 96, as discussed in a previous [[http://www.reddit.com/r/rational/comments/30a22q/geb_discussion_5_chapter_4_consistency/cprj4ti][comment]]
+
+  This time it seems to refer back to p.208 (chapter 8):
+
+  #+begin_quote
+    It is a sentence without a subject (or a sentence whose subject is an out-of-context pronoun). For instance,
+  #+end_quote
+
+  #+begin_example
+           is a sentence without a subject
+                  would be an anomaly
+      runs backwards and forwards simultaneously
+          improvised a six-part fugue on demand
+  #+end_example
+
+  #+begin_quote
+    are nonarithmetical predicates.
+  #+end_quote
+
+  Which is why the tortoise says in the same dialogue:
+
+  #+begin_quote
+    "IS A KING WITH NO SUBJECT" IS A KING WITH NO SUBJECT
+
+    It seems to me that it might make more sense if it said "sentence"
+  #+end_quote
+:PROPERTIES:
+:Author: markus1189
+:Score: 1
+:DateUnix: 1429862724.0
+:END:
+
+
+** I've noticed that the vast majority of programs I've written could be done using only bounded loops. (Most of the exceptions deal with input streams). I've been toying with a design for a programming language where all functions are limited to bounded loops unless you explicitly declare the function as turing-complete. I expect this will allow for some new compiler optimizations (or larger chunks of code amenable to old ones).
+:PROPERTIES:
+:Author: OffColorCommentary
+:Score: 1
+:DateUnix: 1429890990.0
+:END:

@@ -1,0 +1,115 @@
+#+TITLE: I'm having trouble downloading Worth the Candle.
+
+* I'm having trouble downloading Worth the Candle.
+:PROPERTIES:
+:Author: myownimaturity
+:Score: 15
+:DateUnix: 1564533494.0
+:END:
+Hi, I've just mostly caught up with worth the candle, there appears to be 3 new chapters which I'm really pleased about. That said the download links on the ArchiveOfOurOwn page seem to not be working for me. I just have the endless 'Waiting for download.archiveofourown.org...' shown in the lower left. I've tried using firefox and chrome but no luck. I figured it might just be a slow download but I gave it about 15 minutes and it still hadn't started downloading. PDF and HTML works, Mobi and EPUB don't.
+
+I'm not sure if here is a good place to ask but I'm not sure where else to go. Thanks
+
+
+** From their website's [[https://archiveofourown.org/known_issues#downloads][known issues]]:
+
+#+begin_quote
+  Large MOBI files fail: Despite the update of our download software, some very large files with many images may still fail to download. If this happens, you might try downloading the work in another format and then converting it to MOBI.
+#+end_quote
+
+[[https://calibre-ebook.com/][Calibre]] is what I use for most of my epub/mobi/etc manipulation. It's not bad for converting from another format to e-pub or mobi.
+:PROPERTIES:
+:Author: Escapement
+:Score: 13
+:DateUnix: 1564535114.0
+:END:
+
+*** Yeah I saw that but Epub is also down. It was working for me only a few weeks ago, hopefully they'll fix it soon :)
+:PROPERTIES:
+:Author: myownimaturity
+:Score: 3
+:DateUnix: 1564593043.0
+:END:
+
+**** Fanficfare can scrape the page directly and generate its own epub, with images and formatting.
+:PROPERTIES:
+:Author: nerdguy1138
+:Score: 1
+:DateUnix: 1564783158.0
+:END:
+
+
+** I think mobi is legitimately broken for long works, but epub shouldn't be. Give it another try?
+:PROPERTIES:
+:Author: Makin-
+:Score: 8
+:DateUnix: 1564535002.0
+:END:
+
+
+** Use [[https://github.com/kemayo/leech]] to get epubs from most popular story sites (even works for wordpress sites with some configuration). Then use calibre to convert between formats as needed.
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1564553505.0
+:END:
+
+*** This is the route I went with. It was a pain to get working but I reinstalling python solved my issues. Next up, working out how to scrape Ward!
+:PROPERTIES:
+:Author: myownimaturity
+:Score: 1
+:DateUnix: 1564654534.0
+:END:
+
+**** Fanficfare for Calibre is the greatest plugin ever. It can even grab stories from your email.
+:PROPERTIES:
+:Author: nerdguy1138
+:Score: 1
+:DateUnix: 1564783107.0
+:END:
+
+
+*** Do you know how to use leech to only download one chapter or a range of chapters? I tried using the --offset and --limit options, but that does not seem to do what I want (it still downloaded everything).
+:PROPERTIES:
+:Author: morgf
+:Score: 1
+:DateUnix: 1565058313.0
+:END:
+
+**** I haven't used it a ton because it did exactly what I was trying to accomplish the first time. I suppose I would delete the extra stuff in calibre if leech doesn't seem to work for only 1 chapter.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1565069889.0
+:END:
+
+***** I was hoping to shorten download time and reduce load on their server.
+
+It seems like the chapter select portion of a .json file may be able to get leech to do what I want, but I do not know exactly how to do it and I cannot find any good documentation on how the .json files work with leech.
+:PROPERTIES:
+:Author: morgf
+:Score: 1
+:DateUnix: 1565098524.0
+:END:
+
+
+** You can use a HTML to MOBI converter. I have this one bookmarked: [[https://www.onlineconverter.com/html-to-mobi]]
+:PROPERTIES:
+:Author: CraftyTrouble
+:Score: 2
+:DateUnix: 1564561977.0
+:END:
+
+
+** It didn't work for me either.
+:PROPERTIES:
+:Author: GET_A_LAWYER
+:Score: 1
+:DateUnix: 1564539411.0
+:END:
+
+
+** You can use chrome to make pack it into a .mobi file (and then use something like calibre to turn it into a kindle-readable .epub)
+:PROPERTIES:
+:Author: Reply_or_Not
+:Score: 1
+:DateUnix: 1564583302.0
+:END:

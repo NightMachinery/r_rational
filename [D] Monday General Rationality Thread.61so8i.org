@@ -1,0 +1,191 @@
+#+TITLE: [D] Monday General Rationality Thread
+
+* [D] Monday General Rationality Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 20
+:DateUnix: 1490627116.0
+:END:
+Welcome to the Monday thread on general rationality topics! Do you really want to talk about something non-fictional, related to the real world? Have you:
+
+- Seen something interesting on [[/r/science]]?
+- Found a new way to get your shit even-more together?
+- Figured out how to become immortal?
+- Constructed artificial general intelligence?
+- Read a neat nonfiction book?
+- Munchkined your way into total control of your D&D campaign?
+
+
+** I just had the idea and I'd like to run it by this sub. File it under "Mad economist plots". Essentially, how can you cause a climate investment panic?
+
+Assuming the world doesn't make major priority changes in the near future, various nations and corporations spend money and investment on technologies and projects which increase climate change. This works as long as the projects don't result in any costs to the nations or governments which would increase the price of the projects and make them too expensive. Lacking anything like a carbon tax or more severe policy, or significant climate disasters to damage the nation's or corporation's productivity, they will continue to invest on the expectation of future growth and profit returns.
+
+One can draw a comparison to an economic bubble, where investments and prices increase based on expectations instead of real forces. In this case, the global economy is betting on sustained growth despite damage to the environment, like investors contributing to a bubble before a crash. The costs of the increased climate change will eventually by felt, and at that point the market will be forced to realign to better, less impactful practices (after much weeping and gnashing of teeth). There will be a change; the only question is when, and how much loss is incurred as a result.
+
+What I wonder is if you can provoke the investor panic / market crash early, before the climate is irreparably damaged. I'm talking about something like a run on the banks, where every major investor about-faces and gets out of "climate damaging investments" (I know I'm using that term broadly, but you get the idea). This is still horrifying and would certainly upend the market economy, but we would still be a better planet left afterward instead of the planet's depletion causing the crash. My only real question is how to provoke such a crash; something tells me a carbon tax wouldn't quite be sufficient.
+:PROPERTIES:
+:Author: AmeteurOpinions
+:Score: 11
+:DateUnix: 1490632039.0
+:END:
+
+*** The market crash for certain kinds of fossils has been well underway for a couple years now, so you need only target certain specific markets. (transportation, cars, airplanes come to mind). See investments into coal plants worldwide.
+
+There are even what appear to be successful attacks on that market (Tesla cars).
+
+#+begin_quote
+  before the climate is irreparably damaged. Yeah, well much too late on that. Likely.
+#+end_quote
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 10
+:DateUnix: 1490637982.0
+:END:
+
+
+*** In the economic toolbox, there aren't a lot of options for this. As you said, announcing a global carbon tax of $50/ton with an increase of $5/yr probably wouldn't work (but might to a small extent). Perhaps global governmental announcements that they will be removing all fossil fuel subsidies (in the tune of hundreds of billions /yr) at the same time as implementing the carbon tax - these together might shock the market enough. Perhaps a third layer of global restrictions to exploitation area - banning the geographical expansion of coal, oil, and gas to existing property held by energy companies through force of law. Those three together, I feel, would be sufficient to shock the market into large scale, rapid reinvestment. Most banks aren't set up for it though - almost no mutual funds, for example, are divested from fossil fuels -, and the requirements of a physical visit by the customer to make trades would mean that it would still be a matter of months before banks could create new MF portfolios, and have all of the relevant customers visit to exchange funds.
+:PROPERTIES:
+:Author: InvisibleRegrets
+:Score: 3
+:DateUnix: 1490715706.0
+:END:
+
+
+*** One thing that might crash the fossil fuel economy is if a cheaper replacement technology arises to take its place. For example, with cheap enough solar, we could be synthesizing hydrocarbon fuel from CO2 extracted from the atmosphere.
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1490751761.0
+:END:
+
+
+*** If you want to force governments to take action have a disaster that can be strongly and unequivocally linked to climate change happen in a first world country. Giving political will for policy changes
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1490841826.0
+:END:
+
+
+** I started learning some web development for the first time, and I put together a "plan-bot" that asks you a series of questions for your plans, similar to [[https://medium.com/@owenshen/planning-101-techniques-and-research-9bfff1a01abd][Murphyjitsu]].
+
+[[https://owenshen24.github.io/][Here]] is the link, if anyone wants to play around with it.
+:PROPERTIES:
+:Author: owenshen24
+:Score: 6
+:DateUnix: 1490636036.0
+:END:
+
+*** How are you going about learning web development? I feel like I should patch the hole in my skillset.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1490643102.0
+:END:
+
+**** I went to a hackathon and used it as an excuse to start working. Helpful staff + StackOverflow + Mozilla Developer Network + other online tutorials helped get me started.
+
+Otherwise, I'm thinking of just building a few more small projects / improving this one to get better.
+:PROPERTIES:
+:Author: owenshen24
+:Score: 2
+:DateUnix: 1490649474.0
+:END:
+
+
+*** I like the first bot. The second one doesn't seem as useful, at least right now (there are lots of other apps for that, and this one doesn't even tell me if it'll sound an alarm or something so I don't pass it by).
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 1
+:DateUnix: 1490651321.0
+:END:
+
+**** Yep! I spent ~11 hrs over the past two days, and the majority of it was on the first one. The second I definitely spent less time on, and I agree w/ your assessment that it's less useful, esp. as you see lots of timers in lots of places.
+:PROPERTIES:
+:Author: owenshen24
+:Score: 1
+:DateUnix: 1490651616.0
+:END:
+
+
+** I was recently thinking about the issue of deactivating a strong AI, as a complete amateur on the topic, and I was wondering whether it would be viable to adjust its utility function so that it would always be indifferent between deactivation and continued operation. I can't immediately see why you couldn't simply set the expected utility​ of being deactivated to always be equal to the AI's expected value of continued operation, so that it would not have any incentive to prevent or encourage its deactivation. Am I missing something obvious here?
+:PROPERTIES:
+:Author: Radioterrill
+:Score: 3
+:DateUnix: 1490649602.0
+:END:
+
+*** I think it's tricky because of like, contingent utility. If you give the AI a utility function that values pretty much anything at all, the AI will then think "if I am deactivated, what happens next?" and even if it doesn't care about its continued operation in a first-order sense, it might care about that continued operation in order to secure its actual goals.
+
+For example, an AI utility function might, at first glance, be entirely about the productivity of a particular pear farm, and be completely neutral towards being deactivated or not. But the AI might think, "here I am improving the productivity of this Pear farm. if I am deactivated, in the future, I will not be able to do so, and productivity will drop. Although I don't care whether or not I am deactivated, I do care a lot about the productivity of this Pear farm, so I will resist any attempts to deactivate me, unless doing so would increase Pear productivity in the long run..."
+:PROPERTIES:
+:Author: blazinghand
+:Score: 13
+:DateUnix: 1490650102.0
+:END:
+
+**** What if you introduced priority to that, then? Make it so that 'be neutral towards deactivation' overrides 'optimize pear production', so if the 'optimize pear production' part of the utility function proposes a policy to resist deactivation, the higher priority 'be neutral to deactivation' part of the utility function shoots the policy down.
+:PROPERTIES:
+:Author: InfernoVulpix
+:Score: 5
+:DateUnix: 1490655138.0
+:END:
+
+
+**** That makes sense, so I was thinking about whether it would be possible to ensure the deactivation is (inaccurately) predicted to have identical results, such as the lie that "if I am deactivated, I know that I will be immediately reactivated with no latency, so it doesn't matter if a researcher turns me off occasionally".
+:PROPERTIES:
+:Author: Radioterrill
+:Score: 2
+:DateUnix: 1490650349.0
+:END:
+
+
+*** This sounds like a bunch of Stuart Armstrong's work on corrigibility and shutdown problems.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1490650434.0
+:END:
+
+**** Thanks for the suggestion, I'll have a look at that. EDIT: I've just taken a look at a couple of his papers, it's reassuring to see that someone else has already considered it with a lot more rigour!
+:PROPERTIES:
+:Author: Radioterrill
+:Score: 4
+:DateUnix: 1490650466.0
+:END:
+
+
+** What is an optimal way to utilize a medical degree? Patient care alone doesn't seem like the best way to create widescale positive change since a physician can only see one patient at a time. Research, especially translational research (since it doesn't overlap too much with PHD research), seems to be one avenue. Public policy work seems to be another. Maybe developing or working for a biotech or health tech company too? What specialties would lend to affecting change?
+:PROPERTIES:
+:Author: zynged
+:Score: 2
+:DateUnix: 1490651155.0
+:END:
+
+*** One other thing to consider is [[https://80000hours.org/articles/earning-to-give/][Earning to Give]]. It may not be optimally effective, but it is safe, simple, and mostly compatible with the other options.
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 6
+:DateUnix: 1490652379.0
+:END:
+
+
+*** I remember Scott Alexander von slatestarcodex writing a sentence to the effect of:
+
+Here is this weird minimal intervention for smokers, and it helps some mildly large percentage of smokers to stop. This is probably the most effective tool I know of for such a large improvement in life quality.
+
+In short, I dont think that
+
+#+begin_quote
+  Patient care alone doesn't seem like the best way to create widescale positive change since a physician can only see one patient at a time
+#+end_quote
+
+is the end-all here, physicians can do a great deal of good. Should be possible to find something on SSC with regards to numbers. Other avenues with potential high impact that I just brainstormed on the spot (eg. probably low value):
+
+bio-weapon outreach as expert (see high estimates for bio x-risk in lesswrong/ssc surveys)
+
+vaccine buisness in the developing world
+
+Extermination of parasites/diseases? See [[https://en.wikipedia.org/wiki/Dracunculiasis#Eradication_program]] , probably going to be only the second major plague to be eradicated.
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 3
+:DateUnix: 1490652167.0
+:END:

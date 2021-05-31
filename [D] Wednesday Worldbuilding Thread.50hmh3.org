@@ -1,0 +1,354 @@
+#+TITLE: [D] Wednesday Worldbuilding Thread
+
+* [D] Wednesday Worldbuilding Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 17
+:DateUnix: 1472655895.0
+:END:
+Welcome to the Wednesday thread for worldbuilding discussions!
+
+[[/r/rational]] is focussed on rational and rationalist fiction, so we don't usually allow discussion of scenarios or worldbuilding unless there's finished chapters involved (see the sidebar). It /is/ pretty fun to cut loose with a likeminded community though, so this is our regular chance to:
+
+- Plan out a new story
+- Discuss how to escape a supervillian lair... or build a perfect prison
+- Poke holes in a popular setting (without writing fanfic)
+- Test your idea of how to rational-ify /Alice in Wonderland/
+
+Or generally work through the problems of a fictional world.
+
+^{Non-fiction should probably go in the Friday Off-topic thread, or Monday General Rationality}
+
+
+** Okay so some questions about physics and how it'll relate to the sci-fi story I'm writing.
+
+In Sideways in Hyperspace, the humans start off the story with a modified form of the warp drive. This drive works by pinching space between two points and then 'kicking' the ship through higher dimensional space (non-time +W Axis). When the ship falls back into regular space, it falls onto the other side of the field distortion its drive created. Then the field distortion is allowed to relax, as it does, the ship is pulled along with the distortion, exiting the warp tunnel at the destination.
+
+Given all that, the question is, does it totally violate physics (either my made up physics or real physics) to have velocity conserved through warp?
+
+Example: A ship at Earth activates its warp drive while going 5% of C. It travels through warp for a week to reach Alpha Centauri, and it exits the warp still going at 5% of C.
+
+One of my friends tells me this is wrong, and velocity doesn't exactly work like that, but to me, it seems like it would be wrong for velocity /not/ to be conserved.
+
+None of this has yet had an effect on the plot, but I'd like to make sure I'm making sense with stuff like this before I get far enough into the plot for it to matter. Its important to get it right early though, because its pretty critical to a proper application of [[http://brandonsanderson.com/sandersons-first-law/][Sanderson's First Law]], which is something I want to achieve.
+
+I'm going for a [[http://tvtropes.org/pmwiki/pmwiki.php/Main/MinovskyPhysics][Minovsky Physcs]] type feel, where the technology is spelled out well enough that the main characters can use it to further the plot, without it feeling contrived. I very much want to avoid a star trek vibe, where the technology works or doesn't work solely as the plot requires.
+
+Also! I'm looking for beta readers for Sideways in Hyperspace, if anyone is so inclined to help me, I'd really like to have someone other than myself go over stuff before I post it, and it'll mean whoever betas gets a chance to see stuff early, before its posted.
+:PROPERTIES:
+:Author: Sagebrysh
+:Score: 8
+:DateUnix: 1472664564.0
+:END:
+
+*** So the problem I see is what is the velocity relative too? So if you go to another star those two stars are probably not both sitting placidly next to each other moving at 0 relative velocity. You are need to keep in mind that energy needed to move like this has to conserve the total energy in the universe. So you have to prevent perpetual motions machines. You can't just warp somewhere "higher" and fall back down to get some free speed.
+:PROPERTIES:
+:Author: space_fountain
+:Score: 4
+:DateUnix: 1472670172.0
+:END:
+
+**** I assume it would be relative to C and the original reference frame, since C is the only absolute and the starting point establishes a baseline.
+
+You're absolutely right that two stars will not have a relative velocity of zero, which is why I think having velocity conserved between warps would be interesting from a storytelling perspective as it forces ships coming out of warp to burn their sublight engines to bring their velocity into line with that of the system they're now inside of.
+
+I see it like this: Alpha Centauri A's radial velocity with respect to Sol is -21 km/s. So if you add up all the different velocity vectors that the two systems have, you still get a net 21 km/s that you have to make up for on arrival. Obviously you wouldn't burn all that velocity off or you would just be in a radial orbit and falling towards the star, however, you would need to burn off some of it or your trajectory will stay hyperbolic and you'll fly right back out of the system.
+
+#+begin_quote
+  You are need to keep in mind that energy needed to move like this has to conserve the total energy in the universe. So you have to prevent perpetual motions machines. You can't just warp somewhere "higher" and fall back down to get some free speed.
+#+end_quote
+
+This is something I hadn't actually considered, but given some of the later physics I have in mind, this would be a problem. Maybe tie the energy requirements of the drive to the gradient of spacetime? So the best you could do with impossibly perfect systems would be perpetual motion, but not free energy. I don't want this universe to have over-unity engines (I have another story with those, lol)
+
+I don't think that having the drive /not/ conserve velocity would fix that issue though unless the exit speed is determined by the initial input energy (and again, speed relative to what?).
+
+As far as I see it, the only absolute against which speed can be measured is C, and speed relative to C is what would be conserved in the warp. Nothing else is conserved though, you can still rotate that velocity vector however you like.
+
+I dunno, does that make sense?
+:PROPERTIES:
+:Author: Sagebrysh
+:Score: 3
+:DateUnix: 1472677389.0
+:END:
+
+***** Two things:
+
+1. This kind of establishes a pretty heavy restriction on distance (at least compared to the actual scale of the universe).
+
+[[https://en.wikipedia.org/wiki/Hubble%27s_law][Hubble's Law]] states that the relative velocity of a two galaxies is approximately 67.6 kilometres per second per megaparsec of distance.
+
+A megaparsec is 3.0857×10^{22} metres, or 3,261,633 light years. Obviously that's a really enormous distance from our perspective, but even [[https://en.wikipedia.org/wiki/SDSS_J1229%2B1122][the most distant star directly observed]] is a bit less than 16.9 megaparsecs away while the observable universe has a radius of around 14,300 megaparsecs.
+
+This means that, purely as a function of distance, you'd expect the most distant star (16.9 Mpc away) to be moving away from Sol at 1,142 km/s, or 15.6 times the fastest known man-made object (the estimated speed of [[https://en.wikipedia.org/wiki/Juno_(spacecraft)][the Juno]] before being captured by Jupiter. Of course, 1,142 km/s is only about 0.38% c, so it's well within the bounds of your 5% c estimate.
+
+You also have concerns about relative galactic rotation, etc. The latter is even relevant within our own galaxy (relative velocity on the diametrically opposite side of the Milky way is 2× our angular velocity) to a lesser extent.
+
+If your engines are really spectacularly good (and getting up to 5% c /at all/ is difficult, especially without killing your crew---if you take a day [86,400 seconds] you'd be accelerating at 173.5 m/s^{2} or 17.7 g, which is more than twice what Apollo 16 experienced on reentry), it won't be too much of a problem as long as you allow enough room to accelerate to match the system, but there's still the issue of how precisely you know those speeds.
+
+You may have to do the trip in stages, or be very certain that you're not going to hit anything in your velocity-matching phase.
+
+2. Kind of minor by comparison, but if velocity is conserved then you can annihilate any planet you wish by fitting an asteroid in a different system with a warp drive. You could do the same with torpedos in combat, even, which would mean that large combat ships basically couldn't exist (any space station in the universe could kill you pretty well instantly if they knew your precise location).
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 2
+:DateUnix: 1472720883.0
+:END:
+
+
+**** Presumably, the energy required to warp any given distance is greater than the energy that would be required to travel that distance in a useful timeframe. So perpetual motion machines aren't possible because gravity wells aren't big enough.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 1
+:DateUnix: 1473014017.0
+:END:
+
+
+*** Next to one ship being able to "pinch" the universe as it pleases (and what would mean for the parts of the universe that end up pinched in such a way, which is a catastrophe in itself), I don't think anybody is going to worry about the conservation of momentum (and for ideal /hardness/ of your sci-fi you can look into [[https://en.wikipedia.org/wiki/Four-momentum][Four-momentum]]).
+
+The actual problem with physics (if you disregard what effects "pinching" of the universe would introduce) comes from this:
+
+#+begin_quote
+  Its not a gravity-like force, its actually gravity. All matter in the universe normally lies along the XYZ axes, forming the 'surface' of the hyperplane that is our visible universe. The +W axis is empty, the -W axis is the surface of the hyperplane. Because all matter lies along this plane, anything pushing off of it will be quickly drawn back to the surface by the gravitational attraction of all matter in the universe. The Boot just gives the ship a good hard shove in the +W axis, allowing it to 'hop' through higher dimensional space to avoid the deformations the drive introduces to the hyperplane.
+#+end_quote
+
+If you allow gravity along W axis and you also allow the usual matter to exist there, you're going to end up with an extra dimension, all your Inverse-square laws will turn into Inverse-cube laws, the orbits of planets will not end up being stable and the universe will not look anything like we're used to. The only way to somehow preserve the familiar universe, while still adding that W axis, is to postulate some kind of horribly kludgy rule like "no, the usual fields are allowed along W axis, but only when the (warp)-drive is there to enable it", which doesn't really sound like something that could actually be consistent under the hood, but could get you past the immediate "I call bullshit" reactions at least.
+
+As for "pinching", it's gonna affect a bunch of things if one interprets it literally. Curvature of space(-time) and in turn pressure and mass are all going to be affected. You could well end up creating a singularity every time you're pinching the universe, and who knows what would then happen to it when you stop pinching. You could hand-wave it by saying that the overall distance travelled after ascending up in the W dimension is just much smaller than the normal one would be (with no manipulation of normal space-time required). The real problem is the interaction of the extra dimension with the original ones.
+:PROPERTIES:
+:Author: AugSphere
+:Score: 3
+:DateUnix: 1472709153.0
+:END:
+
+
+*** ^{This} ^{is} ^{based} ^{on} ^{my} ^{seconday-school} ^{level} ^{understanding} ^{of} ^{physics,} ^{so} ^{feel} ^{free} ^{to} ^{correct} ^{me.}
+
+Velocity should be conserved, I think. You're only changing the ship's velocity along the w-axis, which shouldn't affect it's velocity along the regular x y and z axes (assuming the higher-dimensional space is a vacuum).
+
+A couple of questions, though, because I feel very munchkiny right now:
+
+What causes the ship to "fall" back into regular space? Is there some kind of gravity-like force pulling all matter into our level of the w-axis, or does the flight system just calculate the exact force needed to bring it back to it's exact starting position? Is it possible to be stranded in higher-dimensional space? If so, is it a viable strategy to leave obstacles or traps in higher dimensional space to ward off unwelcome ships?
+:PROPERTIES:
+:Author: DaWaffledude
+:Score: 2
+:DateUnix: 1472670383.0
+:END:
+
+**** #+begin_quote
+  What causes the ship to "fall" back into regular space?
+#+end_quote
+
+Its not a gravity-like force, its actually gravity. All matter in the universe normally lies along the XYZ axes, forming the 'surface' of the hyperplane that is our visible universe. The +W axis is empty, the -W axis is the surface of the hyperplane. Because all matter lies along this plane, anything pushing off of it will be quickly drawn back to the surface by the gravitational attraction of all matter in the universe. The Boot just gives the ship a good hard shove in the +W axis, allowing it to 'hop' through higher dimensional space to avoid the deformations the drive introduces to the hyperplane.
+
+#+begin_quote
+  Is it possible to be stranded in higher-dimensional space?
+#+end_quote
+
+Not in the +W axis.
+
+#+begin_quote
+  If so, is it a viable strategy to leave obstacles or traps in higher dimensional space to ward off unwelcome ships?
+#+end_quote
+
+Spoilers.
+:PROPERTIES:
+:Author: Sagebrysh
+:Score: 3
+:DateUnix: 1472675355.0
+:END:
+
+***** #+begin_quote
+  The +W axis is empty, the -W axis is the surface of the hyperplane.
+#+end_quote
+
+Am I misunderstanding, or does this mean that our visible universe is at the "bottom" of the W axis, below which nothing can travel? What happens if somebody tries? Can you be crushed against the "floor" by being booted in the wrong direction?
+:PROPERTIES:
+:Author: DaWaffledude
+:Score: 1
+:DateUnix: 1472677918.0
+:END:
+
+****** #+begin_quote
+  Am I misunderstanding, or does this mean that our visible universe is at the "bottom" of the W axis, below which nothing can travel?
+#+end_quote
+
+Yes and no. Its the bottom of the positive component of the W axis. So Approaching 0. The negative component lies on the other side of the hyperplane.
+
+#+begin_quote
+  What happens if somebody tries? Can you be crushed against the "floor" by being booted in the wrong direction?
+#+end_quote
+
+The boot isn't designed to push in that direction, but hypothetically if you broke one so it did, than no, your ship wouldn't be destroyed, it just wouldn't go anywhere, the boot doesn't have enough energy to crush the ship like that. It has to 'push off' the surface of the hyperplane in order to perform the kick. Trying to go in the other direction, there's nothing to push against, so you just go nowhere.
+
+There is stuff on the other side of the hyperplane though, namely the titular Hyperspace. Its just that humans at the start of the story don't know about hyperspace, can't get into hyperspace, and their drives don't really interact with it. That will come later. Plot and stuff.
+:PROPERTIES:
+:Author: Sagebrysh
+:Score: 2
+:DateUnix: 1472679391.0
+:END:
+
+******* Something that's only just occured to me now: If the ship is being pulled back towards the visible universe by the gravity of all other mass in the universe, shouldn't all other mass be pulled ever so slightly into the +W axis by the mass of the ship?
+:PROPERTIES:
+:Author: DaWaffledude
+:Score: 2
+:DateUnix: 1472757187.0
+:END:
+
+
+*** Out of curiosity, what happens when you stack things on top of one another in the W dimension?
+:PROPERTIES:
+:Author: Aabcehmu112358
+:Score: 2
+:DateUnix: 1472680227.0
+:END:
+
+**** Nothing too weird to useful. For fixed structures it might make a good method of free storage space (not that space is particularly lacking in space). If the stack falls over, some weird stuff might happen as the falling items acquire X, Y, and Z components to their motion. You could have stuff seeming to phase through other objects and seeming to appear and vanish and move in an impossible way as it falls back onto the hyperplane.
+:PROPERTIES:
+:Author: Sagebrysh
+:Score: 2
+:DateUnix: 1472681615.0
+:END:
+
+***** Wait, you can have standing structure in the W-axis? That seems like it'd lead to some interesting hyperspace-elevator type stuff.
+:PROPERTIES:
+:Author: Aabcehmu112358
+:Score: 3
+:DateUnix: 1472697954.0
+:END:
+
+
+** One problem I've noticed with UNSONG is that it has a habit of saying, "this is true, except not really". For instance, when we first learn about angels we find out they lose their powers when their naïveté. Then we find out that doesn't apply to the really powerful angels, but most of them were killed in the war with Thaumiel. Then we're introduced to Gadiriel, who was neutral in the war and Ronald Reagan, but we never heard about before.
+
+Revealing exceptions to previously implied facts is a reoccurring feature of this story. The Other King rules all of Mexico, except for the parts ruled by the Drug Lord. America has an alliance with Hell, except that time demons invaded. The Talmud and Torah are literally true, but the Israelites weren't God's chosen people. Even the first few chapters talk about Kabbalah as if it's the only magic in the world, but then we find out about placebomancy.
+
+Why is this bad worldbuilding? Because none of these elements get the chance to develop before something new is introduced. There's so much exposition about how things work we never get the chance to see the full implications of any of them. The point of worldbuilding is to create potential plot points, but UNSONG doesn't utilize its own story potential before moving on to something else. It'd be fine if the plot was just a sightseeing trip like Alice in Wonderland, but it isn't.
+:PROPERTIES:
+:Author: trekie140
+:Score: 10
+:DateUnix: 1472660782.0
+:END:
+
+*** I don't really agree with your examples and I think your objections have a lot more to do with your personal interpretation than the actual text. The very first angel we meet is Uriel and he didn't seem naive at all. It seemed very clear to me, from the get go, that not every angel is the same. Sure, Gadiriel and Samyazaz are anomalous cases, but I think that this is something that will still be revisited in the story.
+
+I don't recall reading that the Other King ruled all of Mexico, my impression was that his territory was a stretch from Nevada to northern Mexico, including New Mexico and whatever else he took from the Comet King.
+
+The alliance with Hell thing always seemed to me like something that happened in the past and then was over, especially considering how many times they mentioned the Comet King's crusade against Thamiel, "that time the demons invaded", as you call it, was something I thought had been pretty clearly foreshadowed.
+
+I also don't recall anything in the first chapters implying Kabbalah was the only magic. They don't mention any other for a while, but I personally never got that same impression as you.
+
+As for the Talmud and the Torah being literally true, that is definitely a misunderstanding on your part, from the very beginning we are told that the Torah was just another representation of the Adam Kadmon and a more or less accurate account of some of the stuff that happened. As for the Talmud, Aaron is constantly reminding us how crazy it is.
+
+Most of these things come down to a matter of interpretation. Maybe it is the author's fault for leaving it vague to the point where more than one comprehension is possible, but I think the main problem is that he built a world that is too big to be explained all at once and it can confuse sometimes.
+:PROPERTIES:
+:Author: Fredlage
+:Score: 2
+:DateUnix: 1472689078.0
+:END:
+
+**** I think a lot of the difference of interpretation comes down to what is implied vs. explicitly stated. They don't outright say "kabbalah is the only magic" bu the story starts by setting up a world with Kaballah and explaining how it woks, with no other things mentioned even in passsing. Then other things you couldn't anicipate are revealed later
+
+In comparison most fantasy and scifi books establish the parameters of the world ver early on, and stick with that. E.g. Tolkien never explicitly states "By the way gunpowder isn't a thing" but it would still feel incongruous if the armies of Gondor were using muskets and they were never mentioned before. A good example is in Worm where the first few chapters give exposition on the world and characters, then build within that frameworklater on. Mostly this is a general expectation of how fantasy and scifi books work, not a codifed thing, though [[http://tvtropes.org/pmwiki/pmwiki.php/Main/SandersonsFirstLaw][Sandersons laws of magic come close.]]
+
+Unsong by contrast is slowly releasing new bits of the world as it goes on, which is exacerbated by the non-linear order of events*. Which is probably a deliberate authorial choice, but it does mean you can't really anticipate where the story is going and what is and isn't allowd by the universe. You can't derive from "this is a world with Kaballah as intellectual property" to placebomancy and demons.
+
+It also makes the problem solving/prediction element of enjoying reading the story much harder, e.g. with HPMOR half the fun was speculating about what could be done with the tools available, but if new elements of the world are continuously being released you can't do that because you have no idea what the limits are.
+
+[*] (I feel like way more time has been spent on flashbacks than the present day timeline thats supposed to be the main plot. Once the story is finished it would be interesting to rearrange the chapters chronologically and see the story of the wold unfolding chronologically. )
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1473032829.0
+:END:
+
+
+**** #+begin_quote
+  As for the Talmud and the Torah being literally true, that is definitely a misunderstanding on your part, from the very beginning we are told that the Torah was just another representation of the Adam Kadmon and a more or less accurate account of some of the stuff that happened. As for the Talmud, Aaron is constantly reminding us how crazy it is.
+#+end_quote
+
+Mm, I'd have to disagree there. Aaron constantly reminds us how crazy it is, but is /also/ literally true in the world of Unsong - the whole "angels can't understand Aramaic" thing, for example.
+:PROPERTIES:
+:Author: MugaSofer
+:Score: 1
+:DateUnix: 1473015714.0
+:END:
+
+***** He points out how strange it is that it turned out to be true, but it's not a coincidence because etcetera etcetera... They are both valuable sources of information, but not literally true in all aspects. At least, that's what I understood.
+:PROPERTIES:
+:Author: Fredlage
+:Score: 1
+:DateUnix: 1473022271.0
+:END:
+
+
+** I've been trying to think about rationalizing Dr Who recently. Obviously you aren't going to be able to have anything rational that matches every aspect of the show. It's contradictory at times, but some things have jumped out at me.
+
+First you basically have to have the Doctor be crazy in some way or another. If the doctors crazy we can ignore a lot of what he says and focus on what actually happens simplifying things quite a bit. There we hit more problems, but quite a bit can be explained by an idea of an immutable time which still allows for time travel. This would be in the vein of time turns or the like. There all exceptions to this, but if you look at most of the times the Dr "changes" something in the past it turns out to be consistent with his present, basically it turns out that the change has already happened. Yes the Dr claims this is not the way things worked. He'll say that things can be changed unless they are fixed points, but fixed points appear to be set fairly arbitrarily and there biggest feature seems to be that the Dr already knows how they are going to turn out and again I'm going with the idea that the Dr is crazy or at least unreliable.
+
+Anyway can anyone think of any majors problems with this or a better way of making things consistent. Really interested to know.
+:PROPERTIES:
+:Author: space_fountain
+:Score: 2
+:DateUnix: 1472668784.0
+:END:
+
+*** I think a simpler solution than making the Doctor crazy is to say he doesn't know how to describe things in layman's terms. He describes time as Wibbly Wobbly because there's no quick and simple way for him to describe it, so he just blurts out a half-assed explanation so he can get back to what's important.
+:PROPERTIES:
+:Author: trekie140
+:Score: 6
+:DateUnix: 1472671460.0
+:END:
+
+**** English doesn't even have the right words to explain how an extradimensional living time machine works. He has to use made-up words regardless, might as well use ones he likes.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 1
+:DateUnix: 1472747788.0
+:END:
+
+
+*** Rule one: the Doctor lies
+:PROPERTIES:
+:Author: gbear605
+:Score: 4
+:DateUnix: 1472670302.0
+:END:
+
+**** That's not even the real rule one
+:PROPERTIES:
+:Author: CaptainAdjective
+:Score: 1
+:DateUnix: 1473016901.0
+:END:
+
+
+*** Rationalizing Doctor who has come up on here before but I don't know if anything came of it. see [[https://www.reddit.com/r/rational/comments/3do9m0/d_time_travel_in_doctor_who_things_of_interest/ct73ogb]] [[https://www.reddit.com/r/rational/comments/3yuejk/biweekly_challenge_paperclipper/cyj6t42]] [[https://www.reddit.com/r/rational/comments/4ixzrw/d_wednesday_worldbuilding_thread/d32c9qt]] [[https://www.reddit.com/r/rational/comments/4ixzrw/d_wednesday_worldbuilding_thread/d33ec5o]] [[https://qntm.org/who]]
+:PROPERTIES:
+:Author: MrCogmor
+:Score: 1
+:DateUnix: 1472719662.0
+:END:
+
+**** I'm still theoretically working on my Rational!Who story, but working on job-related things outside of work has killed my motivation pretty hard. Once I'm settled into my new job I hope to continue it.
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 2
+:DateUnix: 1472733032.0
+:END:
+
+
+*** It would be interesting to p;lay up the blue and orange morality element of the Doctor. He's an aien interfering with human society mainly for his own entertainment, imposing his ethics as he sees fit then disappearing again. You could flesh out Three Worlds Collide style what he actually values and how being able to travel throughout time and space does to how he and the other time lords think of other sentient beings, etc. The daleks would be a good antagonist in that setting if they have their own coherent but human unfriendly values system.
+
+it helps if the Tardis is the only method of time travel commonly used in the plot, because you can also have its limitations in the story. E.g. no going back a week to prepare more once you are already involved in events. You could say that he Tardis can only appear at certain arbitrary times and places dotted through time and space, then is part of the normal timeline while there.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1473033406.0
+:END:
+
+
+** An idea for a superhero setting I had recently (perhaps not terribly original, I admit) is to begin with a set of essential mechanics that the superpower system can draw on to create end-user powers.
+
+At the moment, I'm thinking of three main mechanics. The main three are; Lorentz boosting, momentum rays, and 'delaying'. Lorentz boosting works by applying a boost to a selected region of space, which opens the door towards things like fake-gravity manipulation, time manipulation (sort-of), weaker forms of invulnerability and super-strength, maybe some other stuff I'm not thinking of. Momentum rays are a means of transferring momentum between masses, which can do a whole lot of convenient stuff. 'Delaying' would work along the lines of delaying the application of forces on select things, which do more interesting things alongside the rays, and on its own can do some invulnerability-type stuff.
+:PROPERTIES:
+:Author: Aabcehmu112358
+:Score: 2
+:DateUnix: 1472780632.0
+:END:

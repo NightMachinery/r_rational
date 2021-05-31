@@ -1,0 +1,508 @@
+#+TITLE: [D] Friday Open Thread
+
+* [D] Friday Open Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 28
+:DateUnix: 1620396017.0
+:END:
+Welcome to the Friday Open Thread! Is there something that you want to talk about with [[/r/rational]], but which isn't rational fiction, or doesn't otherwise belong as a top-level post? This is the place to post it. The idea is that while reddit is a large place, with lots of special little niches, sometimes you just want to talk with a certain group of people about certain sorts of things that aren't related to why you're all here. It's totally understandable that you might want to talk about Japanese game shows with [[/r/rational]] instead of going over to [[/r/japanesegameshows]], but it's hopefully also understandable that this isn't really the place for that sort of thing.
+
+So do you want to talk about how your life has been going? Non-rational and/or non-fictional stuff you've been reading? The recent album from your favourite German pop singer? The politics of Southern India? Different ways to plot meteorological data? The cost of living in Portugal? Corner cases for siteswap notation? All these things and more could (possibly) be found in the comments below!
+
+Please note that this thread has been merged with the Monday General Rationality Thread.
+
+
+** It is often said that quantum entanglement is not capable of permitting FTL communication. The reason I most often see given for it is the somewhat circular logic of "because the laws of physics forbid FTL communication"; that is, instead of explaining why quantum entanglement can't do it, the person instead explains why it is forbidden for quantum entanglement to be able to do it.
+
+I find this somewhat dissatisfying. I've read a bit about what the mechanical reason is, and it seems to boil down to "entangled particles don't actually affect each other, they merely behave exactly the same way as each other; so you can't use them to communicate". Is that about as accurate a statement as I'm going to get/understand as a layperson, or would someone care to correct me here?
+:PROPERTIES:
+:Author: PastafarianGames
+:Score: 9
+:DateUnix: 1620406908.0
+:END:
+
+*** Sort of, here's how I'd put it:
+
+When a particle is in an unknown quantum state, the only way to get information about that state out of it is to perform a measurement on the particle. That forces the particle into one of the measurement states and tells you which one it ends up in. However, you can't control which measurement state it goes to. Once a particle is in a measurement state, performing the same measurement on it will get the same result.
+
+With quantum entanglement, two particles share the same state. That means a measurement of one of the particles will be a measurement of the shared state, and so it forces both particles into that measurement state even if they're physically separate.
+
+That means you can have one of the particles and send the other to a friend, and when you measure yours, your friend's particle is also put into the measurement state. However, you can't do anything with that because when you take the measurement you can't control what state it ends up in. In fact, your friend won't even be able to tell that you made a measurement at all, because when they take a measurement of their particle it'll look the same as if they were the one to measure it first.
+
+[[https://en.m.wikipedia.org/wiki/No-communication_theorem][The Wikipedia page for the No-Communication Theorem]] is a good summary of the mathematics behind this.
+:PROPERTIES:
+:Author: Radioterrill
+:Score: 26
+:DateUnix: 1620415918.0
+:END:
+
+**** Another way of summarizing this I'd say is: While other experiments rule out hidden variable theories, and we very much know there's no such thing as hidden variable, the reason for why this /particular/ exploit fails is the same as the one that'd be intuitively obvious is the case for hidden variables.
+:PROPERTIES:
+:Author: ArmokGoB
+:Score: 8
+:DateUnix: 1620417485.0
+:END:
+
+
+**** Hm. So the central tenet here mechanically, if I'm understanding correctly, is that there is no way to perform a measurement in such a way that it will change an unknown-state particle to A but not change a B particle to A?
+:PROPERTIES:
+:Author: PastafarianGames
+:Score: 5
+:DateUnix: 1620416318.0
+:END:
+
+***** I'll try to clarify how the measurements work. The usual example is of the polarization of light.
+
+In an unknown state, the polarization can be in any direction.
+
+Possible polarisations: | / - \
+
+When you measure the polarization, you choose what basis you want to measure it in. Let's say we use the vertical and horizontal basis.
+
+Measurement basis: + (rather than the diagonal basis X)
+
+In this basis, the measurement states are horizonal polarization or vertical polarization. If the unknown state corresponds to one of those, it will stay in that state. Otherwise, it collapses into one of those states, with the closer one being more likely. You can think of it as snapping into one of them, like prodding a Phillips screw with a flathead screwdriver.
+
+| -> |
+
+/ -> | or - at random
+
+- -> -
+
+\ -> | or - at random
+
+So if you measure the polarization as vertical, that doesn't mean it was vertical to begin with, it could've been a diagonal state that was forced into the vertical measurement state when you took the measurement.
+
+Let's say you invite your friend to measure the particle too. If they use the horizonal and vertical basis, they'll get the same result as you, but they have no way of telling whether you made a measurement before them - the probability of it coming up horizonal or vertical is unchanged. There's no way to communicate information just by taking a measurement.
+
+When you have two entangled particles, you can measure the state with either of them even if they're in different places, but the same rules apply - you still can't communicate just by taking a measurement.
+
+Does that make sense? Apologies if I misunderstood your question
+:PROPERTIES:
+:Author: Radioterrill
+:Score: 10
+:DateUnix: 1620418691.0
+:END:
+
+****** This is great and we're making progress, but I still have questions, and I hope you don't mind answering them.
+
+Is it possible to measure in such a way that the random distribution you get from the / \ collapse is skewed? Hypothetically, if you could, it seems that you could have a million of them and a pre-set time, and use it to transmit a probabilistic bit. So I'm guessing you can't?
+:PROPERTIES:
+:Author: PastafarianGames
+:Score: 5
+:DateUnix: 1620420573.0
+:END:
+
+******* No problem, it's a good opportunity for me to refresh my memory of how it all works.
+
+You guess correctly, there's a couple of factors at play here.
+
+Firstly, there's only one way to measure in a given basis, so you can't change the measurement to bias it towards a particular result. If you measure in a different basis, the same problems apply.
+
+(Let's say you measure in the diagonal basis instead. Then the state changes to the diagonal measurement states, / or \. When your friend measures in the horizonal and vertical basis, there's still the same 50-50 odds of them measuring each result.)
+
+In addition to measurements, the other way of interacting with states is to transform them, such as with a rotation. This doesn't collapse them like a measurement does, and can be used to communicate.
+
+If you and your friend have access to the same state and agree that | = 1 and - = 0, you can measure the state to collapse it into one of those and then transform it with a rotation if it's not the one you want your friend to measure.
+
+However, transformations are local. That means that if you have separate entangled particles, you can transform yours all you like but it won't affect your friend's one, and so you can't use that to communicate.
+
+Say you've got an entangled state that can be either | - or - |, where you have the particle on the left and your friend has the particle on the right. If you apply a 90° rotation transform to your particle, that means that the entangled state becomes - - or | |. Your friend still gets the same results when they measure their particle, because their half of the state is unchanged. If you only rotate the particle if you measure |, the state ends up as - - or - |, and your friend still doesn't get any information out of it.
+
+Lastly, the talk of probability can make it sound similar to the problem of communicating over a noisy classical channel, but it's mathematically impossible to send any information with a single entangled pair so you can't do any better by using more of them - a million times zero is still zero.
+:PROPERTIES:
+:Author: Radioterrill
+:Score: 7
+:DateUnix: 1620423010.0
+:END:
+
+******** Okay, that makes a ton of sense. If there isn't a way to measure something and bias the uncollapsed state's collapse in response, I can see how you mechanically can't get any information out of the system.
+
+Thank you!
+:PROPERTIES:
+:Author: PastafarianGames
+:Score: 6
+:DateUnix: 1620423344.0
+:END:
+
+********* You're welcome, happy to help!
+:PROPERTIES:
+:Author: Radioterrill
+:Score: 2
+:DateUnix: 1620423596.0
+:END:
+
+
+******* That's what the no-communication theorem says...
+
+What are you wanting here? An exhaustive experimental test of every physically possible measurement? How do you 'prove' a negative except mathematically?
+:PROPERTIES:
+:Author: TridentTine
+:Score: -4
+:DateUnix: 1620423297.0
+:END:
+
+******** I don't want to be a dick here, but it's worth reading the other person's responses and considering that they provided exactly the information I was looking for whereas you provided the information I specifically said I wasn't looking for.
+:PROPERTIES:
+:Author: PastafarianGames
+:Score: 4
+:DateUnix: 1620423636.0
+:END:
+
+
+****** Interesting. So, presumably, I'd still be able to coordinate with someone faster than light if we agreed on what to do beforehand?
+
+For instance, suppose that we have a large number of entangled particles, we measure them and translate the state into a time, and then we rob a bank in, say, the Earth and Mars at the same time.
+:PROPERTIES:
+:Author: NestorDempster
+:Score: 1
+:DateUnix: 1620632447.0
+:END:
+
+******* You could accomplish the shared timing by printing out two copies of a random time and sticking them in envelopes to open when you arrive. I wouldn't call that FTL coordination, and it doesn't require quantum mechanics.
+
+Using entangled particles could serve to improve the security of your communication by using quantum cryptography, but that's a separate topic. Happy to talk about that if you're interested, though.
+:PROPERTIES:
+:Author: Radioterrill
+:Score: 1
+:DateUnix: 1620636936.0
+:END:
+
+
+***** I think to understand "mechanically" you'd need to actually understand the quantum physical background, at least a little.
+
+The point (on that page) is that there is nothing Alice can do locally, given only a pre-prepared entangled state, that Bob can detect.
+
+The calculation at the end of the "Formulation" section on that wikipedia page is essentially showing this - from Bob's perspective, what he can observe of the system is unchanged by any action (P(..)) Alice may take. (The final line: tr(P(sigma)) = tr(sigma) from bob's perspective.)
+:PROPERTIES:
+:Author: TridentTine
+:Score: 1
+:DateUnix: 1620418148.0
+:END:
+
+****** I'm not satisfied by the mathematical/information theory representation of why it's not possible. If that means I'm not going to be satisfied, period, because I can't understand the mechanical part, that's fine but at least I'll have tried!
+:PROPERTIES:
+:Author: PastafarianGames
+:Score: 1
+:DateUnix: 1620419922.0
+:END:
+
+
+*** It's a standard-but-boring correlation/causation thing that popsci articles blew way out of proportion. To offer an analogy, it's like trying to communicate by establishing a special office where they make outwardly identical pairs of envelopes where the word "yes" is written on a slip inside one envelope and "no" is written on a slip inside the other, then mailing someone one of the two envelopes at random along with instructions to take the out the current slip, cross out the current word on it, write down the opposite of their actual response (which still has to be yes or no) and then throw it into the fireplace so that your envelope back home will magically transmute itself to have their reply, because "durrr, the magic slips always have the opposite words in them, the paper office makes sure of it". Obviously that doesn't work, and the reason why quantum communicators can't work is basically the same logic, except with an extra layer of quantum physics explaining how exactly the "envelopes" are being produced, shipped and altered.
+:PROPERTIES:
+:Author: grekhaus
+:Score: 14
+:DateUnix: 1620408765.0
+:END:
+
+**** Wait, so all of the "entangled/quantum particle linked FTL Communication" in fiction would functionally be space ships with those letter pairs? I feel so betrayed. I always thought they were a theoretically possible material that might be practically impossible, like warp drives and huge amounts of antimatter.
+
+Edit: Read the wiki entry for action at a distance. Turns out my understanding of quantum entanglement via 50 year old Einstein quotes criticizing it as "spooky action at a distance" wasn't a good foundation
+:PROPERTIES:
+:Author: RetardedWabbit
+:Score: 8
+:DateUnix: 1620412601.0
+:END:
+
+***** Correct. You'd have a huge box that somehow contains a bunch of particle pairs, and every time you ran out of bits to send messages with, you'd need to have some more particles shipped in from the place you're trying to talk to.
+
+The impossible magic supermaterial would be some sort of super-particle pair where wiggling one instantly wiggles the other. That would indeed allow for FTL communication (and, interestingly enough, time travel) but as far as we're aware that isn't a thing and can't physically exist.
+:PROPERTIES:
+:Author: grekhaus
+:Score: 10
+:DateUnix: 1620414063.0
+:END:
+
+****** I remember reading about a book which tried to address this, and the main commodity of (physical) interstellar trade was "entangled qubits," because they're expended as they're used, but are vital for FTL interstellar communication (and interstellar trade in knowledge).
+
+EDIT: It was Iron Sunrise, by Charles Stross.
+:PROPERTIES:
+:Author: callmesalticidae
+:Score: 7
+:DateUnix: 1620414816.0
+:END:
+
+
+****** Wait, so logistics/supply aside you can send messages with them? My understanding is that checking your particles let's you know/deduce properties about their pair particles, but that doesn't transmit information and isn't observable on the pair particle?
+
+Yeah, I thought the wiggle one wiggle another was magic, but measure/flip one once flips the other was "real".
+:PROPERTIES:
+:Author: RetardedWabbit
+:Score: 2
+:DateUnix: 1620429573.0
+:END:
+
+******* No, you can't. But if the "measure/flip one once flips the other" thing WERE how it worked, then the logistics of using it for communications would look like the thing that I described in the post above. But it doesn't work like that in real life, so there's no need for great big crates of qbits.
+:PROPERTIES:
+:Author: grekhaus
+:Score: 5
+:DateUnix: 1620430819.0
+:END:
+
+
+*** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1620408334.0
+:END:
+
+**** But they can't just look, right? They can also flip the coin, which I guess stands for "make measurements in ways that will force a particular state if it's not already in it".
+:PROPERTIES:
+:Author: PastafarianGames
+:Score: 3
+:DateUnix: 1620408470.0
+:END:
+
+***** Sorry, yes, realised that would lead to confusion but you spotted it before I deleted :)
+
+Imagine you hold up a coin so someone in front of you can see one side, and someone behind you the other. Someone stands in front of you and sees heads; they can instantly deduce someone standing behind you will see tails, but this deduction does not give them a means to communicate with that person.
+
+This is a nice intuition pump but as you noticed it does not actually reflect what's happening with entangled particles, where there are no hidden variables - there is no way round a coin is until someone looks.
+
+Imagine the coin is spinning rapidly, and the act of someone looking at it instantly makes it stop. You can never observe it spinning, you can only see one side or the other. This still doesn't help - the person standing in front is in exactly the same situation as before with respect to the person standing behind.
+
+This still isn't /quite/ what's going on with entanglement, but closer, and getting even closer to what's actually going on doesn't help the observers communicate in the same way that the change to the model above didn't help.
+:PROPERTIES:
+:Author: sl236
+:Score: 3
+:DateUnix: 1620409100.0
+:END:
+
+****** My favorite way of interpreting standard quantum mechanics is the ontologically agnostic view. To me, the moral of quantum mechanics is that the more completely you isolate a system, the less you can say about the existence, persistence, and behavior of particular states. In the quantum world, existence is synonymous with observation, and therefore interaction. If you don't interact with something, you can't say whether it exists in any particular way. Only once you define and subsequently open the channel of interaction, do you observe things to exist in some way.
+
+Applying this to the entanglement scenario, what happens is that since you've managed to isolate two correlated particles from the rest of existence, you can't say how they exist until you interact with them, and that by defining how you interact with your particle (choosing a basis) you define how your partner's correlated particle will appear to you. What you can't do is influence how your partner's particle will appear to them. That will be defined on how they end up defining the interaction (which basis they choose).
+:PROPERTIES:
+:Author: Gaboncio
+:Score: 2
+:DateUnix: 1620750117.0
+:END:
+
+******* ...Neal Stephenson's "Anathem" includes this principle taken to its logical conclusion ;)
+:PROPERTIES:
+:Author: sl236
+:Score: 1
+:DateUnix: 1620751009.0
+:END:
+
+******** Ooh, I'll have to check it out then. Any hints about why you think the book does this and why it does it well?
+:PROPERTIES:
+:Author: Gaboncio
+:Score: 1
+:DateUnix: 1620751383.0
+:END:
+
+********* I can confirm it does this because it includes almost exactly the contents of your post early on - I literally ended up rereading the relevant bit of exposition to check you weren't quoting - and concepts develop from there.
+
+As for whether it does it /well/, YMMV, I guess - some of the conclusions are... surprising, though not entirely without precedent in the literature.
+
+Overall it's nowhere as rigorous a piece of physics fanfiction as, say, the novels Greg Egan writes (though, as is common with those works, there is an appendix developing some of the maths touched upon), but it certainly fits somewhere on that scale, and makes up for it by being rather less dry. Certainly I enjoyed it :)
+:PROPERTIES:
+:Author: sl236
+:Score: 1
+:DateUnix: 1620752304.0
+:END:
+
+
+** I got my second COVID vaccination last week. No "flu-like symptoms," but it turns out that if you get migraines, that can trigger them.
+
+I don't know if anybody else on here gets migraines, but I thought I should mention it just in case. Obviously do get vaccinated anyway, but make sure you're prepared (I can work through the flu but can't do much with a migraine, so it sorta threw my workflow out of whack).
+:PROPERTIES:
+:Author: callmesalticidae
+:Score: 10
+:DateUnix: 1620415045.0
+:END:
+
+*** I would /love/ to get vaccinated, and fully intend to do so as soon as reasonably possible. As I'm below 60 and not afflicted with any comorbidities, though, I'm down on the end of my country's priority list; and we aren't getting the vaccines in anywhere near fast enough...
+:PROPERTIES:
+:Author: CCC_037
+:Score: 3
+:DateUnix: 1620665104.0
+:END:
+
+
+** Is anyone here familiar with (I guess) both basic stats and set theory? I'm OK at the former but well out of my depth in the latter and looking for a way to complete the following analogy:
+
+#+begin_example
+  Correlation :: Jaccard Similarity
+  Partial Correlation :: ?
+#+end_example
+
+More details in a thread I posted yesterday here: [[https://www.reddit.com/r/AskStatistics/comments/n6krb5/partial_correlation_equivalent_of_a_jaccard_index/]]
+
+Any suggestions would be appreciated!
+:PROPERTIES:
+:Author: --MCMC--
+:Score: 7
+:DateUnix: 1620399774.0
+:END:
+
+*** One observation: You're not talking about the field of Set Theory, so you may be inadvertently discouraging people from looking at your link by asking for it.
+:PROPERTIES:
+:Author: NoYouTryAnother
+:Score: 3
+:DateUnix: 1620401615.0
+:END:
+
+**** yeah it involves more basic stats than anything (hence the question being in [[/r/askstatistics]]), but in my unfamiliarity with set theory I mistook a question of set intersects as falling under its remit but I guess not?
+:PROPERTIES:
+:Author: --MCMC--
+:Score: 2
+:DateUnix: 1620401934.0
+:END:
+
+***** So, I'm not familiar with Jaccard indices and don't know what you want them for, but here are a few thoughts.
+
+In mathematics, the way that 'relative' usually falls out is that you look at the object 'above' the relative part, or you 'quotient out' by the relative part. So, not knowing what category you're working in, a first thought would be to remove the elements of D from the remaining sets and calculate the Jaccard indices which result from that. This would be, perhaps, the 'category of sets' version of 'relative'.
+
+--------------
+
+But it seems this is more a 'probability measure' or ‘information theory' setting.
+
+So here's my primary suggestion: Sets generalize to functions, and (positive) functions generalize to (positive) measures. In statistics and adjacent, there are a number of ways to talk about how close two probability measures are, the primary one being the Kullback-Leibler Divergence and/or the Cross-Entropy. Why not renormalize these sets to instead be probability measures on the integers and consider how close P_C is to P_A and P_B, 'given' P_D? Here, obviously, you'll need to make more precise the sense in which P_D is meant to 'already contain' the information which P_C and P_A share - phrased that way, obviously entropy seems relevant.
+
+You could try looking at
+
+** H(A | D, C) versus H(B | D, C)
+   :PROPERTIES:
+   :CUSTOM_ID: ha-d-c-versus-hb-d-c
+   :END:
+to determine that, perhaps, C gives more information about B than it does A.
+
+Or, you could look at the mutual information between A and C conditioned on D, versus that between C and B conditioned on D:
+
+** I(A:C | D) vs. I(B:C | D)
+   :PROPERTIES:
+   :CUSTOM_ID: iac-d-vs.-ibc-d
+   :END:
+which ends up recovering the original idea of subtracting off the set D, but places it in a larger framework.
+
+Along those lines, this blogpost of Tao's may be helpful: [[https://terrytao.wordpress.com/2017/03/01/special-cases-of-shannon-entropy/]]
+:PROPERTIES:
+:Author: NoYouTryAnother
+:Score: 2
+:DateUnix: 1620403073.0
+:END:
+
+
+** There are people calling Eliezer Yudkowsky a cult leader and someone that doesn't qualify to be an ethical AI theorist/artificial intelligence researcher, prime example being [[/r/sneerclub]]. What does [[/r/rational]] think of this?
+
+Personally, I don't know much of the guy and his works; I dropped HPMOR as I disliked Harry (not that it makes the story bad, just not my taste). I don't think I can accept calling him an ethical AI theorist/artificial intelligence researcher if he didn't go to college for it. Or at least, no more than I can call Rolf Dobelli of "The Art of Thinking Clearly" a Cognitive Scientist. Rolf Dobelli is a well-respected author even if he isn't.
+:PROPERTIES:
+:Author: HantuAnggara
+:Score: 2
+:DateUnix: 1620623466.0
+:END:
+
+*** It's been several years and I'm a layman to computer science, but I remember looking into MIRI and reviewing some of their research papers on the topics you mentioned (which seemed pretty par for research papers).
+
+Based on that, if Eliezer's still contributing to that work then I don't see why he couldn't be called an ethical AI theorist/artificial intelligence researcher. You don't need a degree to conduct research, after all.
+:PROPERTIES:
+:Author: WhispersOfSeaSpiders
+:Score: 4
+:DateUnix: 1620754015.0
+:END:
+
+
+*** All opinion:
+
+To my lay knowledge and outsider perspective to his rational community, Yudkowsky is an ambitious self-taught philosopher. His research has a very narrow focus ("humanity might create a godlike intelligence at some point in the future, the most likely avenue for that is AI, and when we do it we'd better know how to not fuck it up"). The fact that the godlike intelligence is likely to be an AI is almost inconsequential to the core of the work (as far as I can tell), but he isn't willfully ignorant about developments in AI. He might not be in "the club" of AI researchers, but his work is dependent on the field.
+
+And crucially, you don't have to have an academic background to be a philosopher. But also crucially, most philosophy is ridiculous and useless. It's a fine line to walk. On utilitarian grounds, I would say it's better than not to have /someone/ thinking about this problem, and Yudkowsky seems intelligent enough to put some actual creative thinking into it. There are a lot of other existential risks out there, though, and balancing resources between them intelligently is difficult. On the whole, I would rather donate to the old standard Effective Altruism causes, like cheap long-lasting mosquito nets to prevent malaria, but I don't think it's a bad thing that MIRI exists.
+
+One reason people have cultish vibes from some of his writings is because the idea of the big, shining Singularity with a capital S smacks of a pro-science atheist version of a doomsday cult. And he is definitely a charismatic writer, judging by the fervent following he has gained in the communities he founded. I would argue against him being a true cult leader based on the lack of separation rhetoric. As far as I know, Yudkowsky does not want his followers to separate from the rest of the world and become completely reliant on his supposed "cult". He's more like Ayn Rand: a charismatic writer who speaks to and is believed by a certain sort of person.
+
+I read at some point that his ulterior motive for HPMOR was to attract that particular sort of person and get their help on his AI alignment project, but I don't think it was particularly successful. BUT if his writings have inspired people to try to be smarter, and to think more deeply about the world, that's at least a better track record than someone like Ayn Rand.
+
+Bottom line, I don't worship the guy, but I appreciate him for what he is and what he's trying to do. I also do not agree with the modern academic system, and do not think it is the end-all-be-all of qualification, so I am biased in that regard.
+:PROPERTIES:
+:Author: GriffTheJack
+:Score: 2
+:DateUnix: 1620996569.0
+:END:
+
+
+*** I'm inclined to agree with you about HPMOR, but before that I'd like to see a diploma in an relevant field(eg. English Lit, etc) to know whether you're qualified to even profess such an opinion.
+
+As to your comment on Yudkowsky's lack of qualifications in the field of AI, seeing as you've also admitted to not having any qualifications in the field yourself please keep your diploma-less mouth shut. Unless you have a degree in a field of Pedagogy? That would allow one to perform a meta-analysis on diploma deficiency, I suppose. Scanned copies of any relevant diplomas and valid ID will do, but know that I will be contacting the institutions to verify.
+
+Please reply forthwith.
+:PROPERTIES:
+:Author: GlueBoy
+:Score: 0
+:DateUnix: 1620631357.0
+:END:
+
+**** First, I'm going to state that I'm neutral to Yudkowsky, I have no strong opinions about him either way.
+
+Secondly I am not a doctor of any sort, I have never been to medical school. Therefore, I am not qualified to decide whether or not that guy offering cosmetic surgery, operating out of the back of a van, is a medical professional who will follow proper hygienic standards.
+
+This is, frankly, not even straw-manning your argument.
+
+You don't need a degree in a field to /be able to tell if someone is competent in a field/. That's just ridiculous. /Verifying/ is almost always easier than /doing/; you don't need a degree to compare post-operation complication rates between a doctor and a 'doctor', or hell, even just check if they sanitize their tools. Maybe you'd need to be a doctor to /decide if/ sanitizing tools is a thing that should be done, but there are doctors, they've decided that, and they've told us all, so you don't need to be a doctor.
+
+Now, this does not translate perfectly to AI ethical theorism, because to the best of my knowledge there aren't really degrees in AI ethics. It's scarcely a field at all. Or at least, not as far as strong-AI ethics is concerned.
+
+But this means that OP is (if we're only counting formal education), /just as qualified as Yudkowsky/. You can't dismiss his opinion on the basis of formal education without even moreso dismissing Yudkowsky, since OP is merely trying to verify while Yudkowsky is trying to /do/.
+
+If Yudkowsky is qualified to theorize about AI ethics without a formal education, we're qualified to /judge/ him without formal education. The lack of a standardized regulatory body as a basis for more objective comparison means that we just have to do the legwork ourselves. In other words, individuals' competence should be judged by their known experience and knowledge, and the weight given to any arguments should be on the basis of how well-reasoned they are.
+:PROPERTIES:
+:Author: Buggy321
+:Score: 3
+:DateUnix: 1620733218.0
+:END:
+
+***** What do you think my argument is, exactly? Because I was just taking the piss of the guy's argument by using reductio ad absurdum. I'm honestly shocked that you could misinterpret my short little comment so fucking much, and write so much while under that misapprehension.
+
+#+begin_quote
+  If Yudkowsky is qualified to theorize about AI ethics without a formal education, we're qualified to judge him without formal education
+#+end_quote
+
+The original argument by [[/u/HantuAnggara][u/HantuAnggara]] is that yudkowsky /isn't/ qualified *because* of his lack of formal education. I made light of that argument by reducing it to a ridiculous extreme. I /obviously/ wasn't actually arguing that one should have a diplomas before being a smoothbrain mouthbreather online and sneering at people, like you two are doing. I WAS MAKING FUN OF THAT CONCEPT.
+:PROPERTIES:
+:Author: GlueBoy
+:Score: 1
+:DateUnix: 1620812937.0
+:END:
+
+****** #+begin_quote
+  What do you think my argument is, exactly?
+#+end_quote
+
+It wasn't clear, but if I'm being frank, I was hedging my bets that your original comment was that of a die-hard Yudkowsky supporter aggressively putting down a doubter and also attempting to prevent any further responses.
+
+Whatever the intent, that level of aggression, sarcasm, and dismissal is not conducive to discussion. [[/u/HantuAnggara][u/HantuAnggara]] made a reasonable point and presented it in a reasonable manner, and ideally other responses would bring in more evidence or present counterpoints so as to further the overall discussion. But instead of explaining why you think he's wrong and why you consider Yudkowsky to be qualified, you essentially just told him to shut up. With an actual argument tacked on, buried a bit beneath the shut up.
+
+There's a time and a place for that sort of response, but generally that is after /someone else/ throws the first verbal punch.
+:PROPERTIES:
+:Author: Buggy321
+:Score: 3
+:DateUnix: 1620815777.0
+:END:
+
+******* I thought it was hostile myself, which is why I didn't bother replying.
+
+I didn't mean one couldn't have an opinion unless they had a degree on the subject... To me, there are two types of opinions: layman and expert. If I were to take EY's take on the matter as an expert one, I'd treat it like a suggestion from a doctor that is treating me. If I were to treat like it was from a layman, I'd do my own research and search for expert takes before deciding/opining.
+
+I believe it's important to discern between the two. After all, taking "advice" from someone that appears educated yet unqualified is one of the major reasons why opinions like anti-vaccine is so prevalent.
+
+If, even after calling him an ethical AI theorist, I have to take EY's perspective as a layman's then the term 'theorist' would only hold as much meaning/weight as an 'ancient alien theorist/historian' on the History Channel does. If that's the case, then I suppose you wouldn't need academic qualifications to become one.
+
+As to whether he's actual researcher, that is something I'm unclear on. As [[/u/WhispersOfSeaSpiders]] said, EY has released research papers. Problem being a majority if not all [[https://intelligence.org/all-publications/][MIRI papers]] are released on arXiv where papers are not peer reviewed.
+
+#+begin_quote
+  Important: e-prints posted on arXiv are not peer-reviewed by arXiv; they should not be relied upon without context to guide clinical practice or health-related behavior and should not be reported in news media as established information without consulting multiple experts in the field.
+#+end_quote
+
+[[http://www.arXiv.org][www.arXiv.org]]
+
+[[https://www.reddit.com/r/math/comments/73rht/not_everything_on_arxiv_can_be_trusted/][Example of a crackpot paper on arXiv (not EY's, just an example)]]. Since the papers may not be legitimate, I wouldn't be comfortable calling him a researcher either. But maybe I am missing something as I am very new to this. I hope to be proven wrong and that they are legitimate.
+
+I'd actually love it if he has always been qualified for these things and people are just hating on him. He kinda popularized the rational writing style and I like it. AI is a field I want to get into (I just have a CS diploma), so he'd gain my respect too.
+
+I hope I come across as ignorant and curious this time, not hostile and malicious.
+:PROPERTIES:
+:Author: HantuAnggara
+:Score: 3
+:DateUnix: 1620916110.0
+:END:

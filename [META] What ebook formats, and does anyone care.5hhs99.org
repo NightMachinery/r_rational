@@ -1,0 +1,225 @@
+#+TITLE: [META] What ebook formats, and does anyone care?
+
+* [META] What ebook formats, and does anyone care?
+:PROPERTIES:
+:Author: Soren_Tycho
+:Score: 10
+:DateUnix: 1481335056.0
+:END:
+In the publishing of [[http://sadehall.tumblr.com/][Magical Creatures]], I've now had a couple of requests for an ebook format, and I'm trying to decide if this is worth doing, but am myself not an ebook user and so have no idea what's current/convenient for people, or if everyone's just reading the site on their phone anyway.
+
+Anyone have thoughts on this?
+
+
+** [[https://en.wikipedia.org/wiki/Comparison_of_e-book_formats][Wikipedia says:]]
+
+#+begin_quote
+  The EPUB format is the most widely supported vendor-independent XML-based (as opposed to PDF) e-book format; that is, it is supported by the largest number of e-Readers, including Amazon Kindle Fire (but not standard Kindle).
+#+end_quote
+
+--------------
+
+[[http://archiveofourown.org/][ArchiveOfOurOwn]] allows users to download stories in the MOBI, EPUB, PDF, and HTML formats.
+
+[[http://www.fimfiction.net][FIMFiction]] allows users to download stories in the TXT, HTML, and EPUB formats.
+
+--------------
+
+When necessary, I use [[https://github.com/Sigil-Ebook/Sigil/releases][Sigil]] to convert HTML files to EPUB files. When possible, I use [[https://sourceforge.net/projects/crengine][Cool Reader]] to read EPUB files on my computer, phone, and (rarely) Nook device.
+
+Note that PDF is /totally different/ from HTML/EPUB and MOBI. For most literature, the fixed layout of PDF is inferior to the dynamic layout of the other formats.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 22
+:DateUnix: 1481335700.0
+:END:
+
+
+** Serious ebook users use calibre. It auto translates from any format to any format. So it largely doesn't matter.
+:PROPERTIES:
+:Author: Terkala
+:Score: 12
+:DateUnix: 1481335690.0
+:END:
+
+*** I'd say I qualify as one of the aforementioned "serious ebook users", and I absolutely /hate/ having to turn PDFs into EPUBs (though Calibre is indeed the tool to use for this). Going from non-reflowable text (pdfs) to reflowable text (ebooks) is much more difficult that changing reflowable text formats, so I'm always very appreciative when content producers put out ebooks instead of just PDFs.
+
+I'd say go with EPUB because it's the open standard for ebooks. The only reason ebooks ever come in other formats is when platforms like amazon have their own proprietary format or for DRM purposes which still wont stop anyone who knows what they're doing.
+
+That said, some people really like pdfs for whatever reason, even when the content is just text without any fancy formatting, so though I personally stay away from pdfs when possible, it wouldn't do to ignore the pdf-people.
+:PROPERTIES:
+:Author: Cuz_Im_TFK
+:Score: 9
+:DateUnix: 1481384704.0
+:END:
+
+**** Agreed, the only time I have issues translating format's with Calibre is when a PDF is involved.
+:PROPERTIES:
+:Author: BlueSigil
+:Score: 1
+:DateUnix: 1481388956.0
+:END:
+
+***** Ditto. Epub please.
+:PROPERTIES:
+:Author: nerdguy1138
+:Score: 1
+:DateUnix: 1482283250.0
+:END:
+
+
+*** #+begin_quote
+  It auto translates from any format to any format.
+#+end_quote
+
+How do you handle epub to pdf conversions? They turn out terrible for me with a waaaay too big font size.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 4
+:DateUnix: 1481338473.0
+:END:
+
+**** The settings in the "pdf output" option that appears when you select PDF output lets you choose font size. It defaults to 20px (which is pretty big), so I'd suggest 14 pt.
+
+Calibre has a ton of options, so it's easy to miss.
+:PROPERTIES:
+:Author: Terkala
+:Score: 4
+:DateUnix: 1481340751.0
+:END:
+
+
+*** Calibre UI is kinda shit tho. I use calibre to convert things then read in either kindle or ibooks.
+:PROPERTIES:
+:Author: Anderkent
+:Score: 1
+:DateUnix: 1481394672.0
+:END:
+
+**** Calibre also has a command-line interface. It's
+
+#+begin_example
+  ebook-convert source.epub destination.mobi
+#+end_example
+:PROPERTIES:
+:Author: AndreiSipos
+:Score: 1
+:DateUnix: 1481751382.0
+:END:
+
+***** Right, I meant the built-in ebook reader rather than the converter.
+:PROPERTIES:
+:Author: Anderkent
+:Score: 1
+:DateUnix: 1481753029.0
+:END:
+
+****** Moon+ reader pro. Fantastic ebook app for android. Reads basically every format no problem.
+:PROPERTIES:
+:Author: nerdguy1138
+:Score: 1
+:DateUnix: 1482283325.0
+:END:
+
+
+** To reach the largest number of people, I recommend having the story in epub, mobi, pdf, and html since they are the most frequently used formats.
+
+However, I don't know how you can set Lyra's perspective to the right like you do online in an epub/mobi format.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 7
+:DateUnix: 1481338388.0
+:END:
+
+*** Replace that with colored text?
+:PROPERTIES:
+:Author: nerdguy1138
+:Score: 1
+:DateUnix: 1482283357.0
+:END:
+
+
+** When I read offline (on a Kobo Mini), I use Calibre to translate almost any format to Epub. (PDF is the one format that I've had trouble with.) Any ebooks that are already available in Epub save me a step.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 3
+:DateUnix: 1481336628.0
+:END:
+
+
+** Calibre is definitely the way to go, as others have mentioned. It also has a command line interface, so it's easily scriptable.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 2
+:DateUnix: 1481408377.0
+:END:
+
+
+** .mobi is the easiest for Kindle users, which is the majority e-reader.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1481465023.0
+:END:
+
+
+** I'm going to add to the chorus of "EPUB" here, with a couple additions: many people appreciate the ability to read EPUBs in whatever color scheme they choose. The typical mechanisms of this are twofold: either their reader simply ignores the bundled CSS, or the reader overrides the colors manually. The former is meaningfully more common. What this means to you, is that someone trying to avoid the glowy pink & grey will also likely lose the part of the stylesheet that right-aligns Lyra's text and left-aligns the nameless narrator. You may wish to have an array of EPUBs matching the available display options.
+:PROPERTIES:
+:Author: seylerius
+:Score: 2
+:DateUnix: 1481487404.0
+:END:
+
+*** Replace left or right alignment with differently-colored text.
+:PROPERTIES:
+:Author: nerdguy1138
+:Score: 1
+:DateUnix: 1482283438.0
+:END:
+
+**** The point I'm trying to make is that some ereaders don't give options more complex than on and off. Some people won't want fancy colors, while others won't want fancy alignments. Providing the ebook in multiple versions, each with a different stylesheet, fixes that.
+:PROPERTIES:
+:Author: seylerius
+:Score: 1
+:DateUnix: 1482284377.0
+:END:
+
+***** That makes more sense.
+:PROPERTIES:
+:Author: nerdguy1138
+:Score: 2
+:DateUnix: 1482284525.0
+:END:
+
+
+** EPUB is a nice open format - it's basically an HTML file per chapter, wrapped up into a ZIP file with the extension changed. There are free tools for editing and reading them.
+:PROPERTIES:
+:Author: IvorTheEngine
+:Score: 1
+:DateUnix: 1481368508.0
+:END:
+
+
+** I usually go with EPUB and MOBI (well, technically an AZW3 these days) with the EPUB being the working file and finished product, and then converting the EPUB to MOBI for the convenience of Kindle users (although I suspect that most people who want to read third-party ebooks on their Kindles are using Calibre anyway, and probably have an ePub reader installed on the Kindle.
+
+So mainly, EPUB, plus MOBI/AZW3 if you feel like saving Kindle users some time. Using Sigil, or Calibre's book editor, it's pretty simple to make an EPUB file from a word processor document, or from a collection of HTML files (which you presumably have since you are already publishing a web serial).
+:PROPERTIES:
+:Author: chorpler
+:Score: 1
+:DateUnix: 1481509760.0
+:END:
+
+
+** I think with mobi, epub, and pdf you pretty much cover it all.
+:PROPERTIES:
+:Author: ajuc
+:Score: 1
+:DateUnix: 1481523145.0
+:END:
+
+
+** It wasn't mentioned yet -- FB2 is a popular e-book format in the Russian-speaking world, which provides extensive metadata capabilities. A lot of sites where I get books still offer FB2 books, even though readers like Kindle don't support it. (Fortunately I have Pocketbook and it's great)
+:PROPERTIES:
+:Author: ShareDVI
+:Score: 1
+:DateUnix: 1483374239.0
+:END:

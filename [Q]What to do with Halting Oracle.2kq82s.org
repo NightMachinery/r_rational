@@ -1,0 +1,320 @@
+#+TITLE: [Q]What to do with Halting Oracle?
+
+* [Q]What to do with Halting Oracle?
+:PROPERTIES:
+:Author: lvwolb
+:Score: 16
+:DateUnix: 1414625008.0
+:END:
+TLDR: What would you do with access to an oracle capable of solving the halting problem?
+
+Details (story): The discovery of R'lyeh was of course an earth-shattering revelation. The greatest of all the marvels discovered in the sunken city is Cthulhu's labyrinth (the true power of which took some time to be recognized)
+
+Cthulhu labyrinth has a single entrance and consists of indestructible extradimensional tunnels connecting rooms. All rooms and tunnels except the entry look the same. After loosing many a researcher in the tunnels, an extensive program of mapping the labyrinth was started. The first futurologists already began dreaming of an infinite civilization stretched out in the endless tunnels of Cthulhu's labyrinth-- why travel to the stars in our bounded milkyway, when we can have infinite space in the labyrinth? Even more strikingly, even an infinite mostly flat universe cannot sustain endless exponential growth (since with bounded speed of light the volume of accessible space grows only polynomially in time, not exponentially). In Cthulhu's labyrinth, this is different.
+
+However, the mapping project showed that Cthulhu's labyrinth is even more powerful. When you take a path through the labyrinth, you will occasionally return to the entrance room or some previously visited room. This relationship appears to be governed by a group, i.e. Cthulhu's labyrinth is actually a Cayley graph-- and the corresponding group ("Cthulhu's goup") has a turing-complete word-problem!
+
+Therefore, the labyrinth can be used as an oracle to the halting problem: You encode your computer program into a path; if the corresponding computer program terminates, then you end up in the entrance chamber, and if it does not terminate then you end up somewhere else (and backtrace your steps in order to avoid getting lost in the endless tunnels).
+
+This is of course madness (as can be expected in R'lyeh): Solving the halting problem is a truly godlike power.
+
+What should be done with this power? What would you do with it?
+
+Does the existence of the labyrinth impact your human values in any way? What about mind-uploading in some possible future? Does the existence of the labyrinth devalue human creativity?
+
+Addendum: A whole generation of mathemeticians was decimated in the labyrinth, hunting for the proof of P!= NP. One of the first "deep" expeditions, several months long, showed that indeed P!=NP and there does indeed exist a proof in ZFC, using a path which applies a (badly optimized) proof-verifier to every bit-sequence in order and terminates when a correct proof is found.
+
+After several more lengthy expedition, the explorers found out that the shortest possible proof is roughly 100 KB long; this started the tradition of the "great pilgrimage", where young mathematicians traverse the labyrinth once, each one discovering an additional bit of the minimal proof.
+
+Edit:
+
+The tunnels are not one-way, i.e. you can trace back your steps and can trace back only parts of the program. Forgot to explicitly mention, Cthulhus group is finitely presented. Short explanation re Cayley graphs (also, see [[http://en.wikipedia.org/wiki/Cayley_graph]] and [[http://en.wikipedia.org/wiki/Word_problem_for_groups]] ):
+
+At each chamber, three tunnels meet in perfect 120 deg angles. You can encode a path by a sequence of "L" (left) or "R" (right) turns, i.e. a word like "LLRRLRLLR". In a sane world, this would mean that after six left turns, you come up at your intial point ("LLLLLL" = ""), and you end up with an infinite hexagonal lattice. Cthulhu's labyrinth is described by a small finite number of such laws (relations), e.g. "LLRRLLRLLR"="", and so on. If these laws do not force it, then a path does not lead you back.
+
+As was later found out, Abdul Alhazred already described the labyrinth in some rather cryptic poem. You can find the relations in Table 4.3.7 on page 519 in the commented consensus translation of the Necronomicon (arXiv:2029.1653v3). Many scholars believe that the relations have something to do with spelling out the elder god's true names, but nobody really knows. Regrettably, Abdul Alhazred failed to document how he came up with his knowledge; this may be excusable by his mental state and the conventions of his time.
+
+
+** FUCK. This is one of those times I /really/ wish I'd done my reading on super-Turing computation models.
+
+Basically, there's a hierarchy of Halting levels, for each one, you are subject to the Halting Problem at your own level, but can decide the Halting Problem for all levels below your own using your Oracle.
+
+At level 1, you can already bypass all the known computability problems in AI, which should render you all powerful/made of paperclips very quickly, but unless you've programmed it /right/ you won't get anything useful out of that. You /can/ compute all possible probability distributions, though.
+
+You didn't specify, by the way, how long it takes the tunnels to yield an answer in the halting or nonhalting cases: many problems are already Turing-decidable but have such complexity that we consider the relevant algorithms intractable for practical usage. Tractability is the key to using R'lyeh's Oracles.
+:PROPERTIES:
+:Score: 8
+:DateUnix: 1414663348.0
+:END:
+
+*** #+begin_quote
+  should render you all powerful/made of paperclips
+#+end_quote
+
+I don't have a lot to add to the discussion, but I enjoyed this turn of phrase and wanted to congratulate you on it.
+:PROPERTIES:
+:Author: noggin-scratcher
+:Score: 7
+:DateUnix: 1414666328.0
+:END:
+
+**** Yeah, the slight problem with Solomonoff Induction-based AI techniques is that they cannot actually be /targeted/ at any specific task, problem, or concept you actually want to investigate.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1414666555.0
+:END:
+
+
+*** The short answer: you can't do things like decide whether two Turing machines accept the same language or whether a Turing machine accepts a language that could be expressed as a DFA instead.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1414694973.0
+:END:
+
+
+** So there are two general formalizations of a halting oracle. One takes a Turing machine and determines if it halts with no input. The other takes a Turing machine and an input, and determines if that Turing machine halts on that input. They are both equally powerful, and you can convert between them trivially. When it matters, I'm going to talk as if this is the latter -- Turing machine plus input.
+
+This isn't actually very useful unless your problem can be solved or at least cut down reasonably well with one bit of information. You're not going to use this as a way to route deliveries (traveling salesman problem) because you've got thousands of routes to choose from.
+
+You also need to be able to express your problem as a Turing machine, and a relatively short one at that. No curing cancer with this power. (Well, maybe, but it would take a lot of time to come up with the right Turing machine, and then it would take even longer to walk it with the requisite inputs.)
+
+What you'll end up doing is creating a Turing machine that creates a solution to your problem, then halts if its input is a prefix of that solution. Encode the solution in binary and now you can solve any problem in O(log output size) runs. Of course, if you can do some intermediate processing, you might be able to cut down on the search space even more. For instance, if you're trying to get a protein out of it, you might determine that there are only three amino acids that can follow the portion of the protein you've decoded so far, which means you can spend one or two attempts to determine which one follows rather than four to five.
+
+In general, this would encourage (to some degree) optimizing algorithms for complex problems to minimize the length of the generated Turing machine rather than algorithmic efficiency.
+
+If you want a mouth-watering variant, have the maze vomit viscera on you at the end, where the viscera represents the final state of the Turing machine and contents of the tape.
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1414636067.0
+:END:
+
+
+** It's easy to convert a halting oracle to run any finite computation immediately. Let's say the output is 20 bits long. First, ask whether the program that computes the first bit of the output, and runs forever if that bit is 0, else halts, halts, etc.
+
+I do not know of anything productive to humanity's situation to do with an infinitely powerful but slow computing device. If it were faster, one could maybe use it to make money on the stock market and use that to do something productive.
+
+This seems mostly equivalent to the standing problem, "What the hell do you actually do with an Oracle that gets humanity out of its trouble?"
+:PROPERTIES:
+:Author: EliezerYudkowsky
+:Score: 3
+:DateUnix: 1414717693.0
+:END:
+
+
+** I'm sorry if this answer is taking the story behind the problem too seriously, rather than considering what the implications of a halting oracle would be, but, I would do my best to bar any entry into the labyrinth.
+
+R'lyeh is the home and abode of Cthulhu, and I am not willing to risk advancing his potential awakening by delving into the city. He is extraordinarily powerful, on a personal level and a political one, given his ability to corrupt minds, and unless I could independently verify that we could use the oracular nature of the tunnels to gain power comparable, or preferably much great than Cthulhu (which seems rather unlikely, given he apparently has the power to create a structure such as R'lyeh), I don't think keeping them open would be worth it. Better to delay his arrival and ascend some other way.
+:PROPERTIES:
+:Author: Aabcehmu112358
+:Score: 5
+:DateUnix: 1414797466.0
+:END:
+
+
+** That is certainly a setting. Let me try my hand at clarifying the rules.
+
+1. All programs must return only 1 bit.
+
+2. The more bits long a program is, the longer it takes to run (screaming through a labyrinth).
+
+3. Programs will take the same amount of time to run if they are the same physical length, no matter what that program actually does.
+
+Those are really the only rules.
+
+--------------
+
+A kolmogorov complexity solver is probably one of the most valuable tools. I'm not confident in that working though.
+
+That's admittedly a pretty long term goal, since it requires multiple bits. Of course you should be able to acquire each bit in parallel. Can I get ~800 000 grad students?
+
+I'd want to eventually implement the kolmogorov program on real hardware.
+
+--------------
+
+Ooh!
+
+Are tunnels one way only? Try to keep all the data bits at the very end of your journey/program. Trace your steps back. That way you can rerun a program, and only pay for the bits that have changed. Once you have a well mapped program, you retrace your steps and simply tell it to find a different bit. Run multi-bit programs a lot easier. Like just a massive amount easier.
+
+You can just follow the path that points at a particular bit.
+:PROPERTIES:
+:Author: traverseda
+:Score: 3
+:DateUnix: 1414636272.0
+:END:
+
+*** The tunnels are not one-way.
+
+Keeping most input bits and changing only the last ones is a cool optimization I didn't think about, nice!
+:PROPERTIES:
+:Author: lvwolb
+:Score: 4
+:DateUnix: 1414657174.0
+:END:
+
+**** More than this you can start mapping out the space. You can leave an item with the shortest path to that room (LLRLLRR etc.) And have a database somewhere with mappings. You can use this to reduce any query you want to run. (If I'm understanding this right, if LRLR leads back to the entrance then LRLR at any point leads back to the room you were at. Or is this just an artifact of the simplified example on Wikipedia?)
+:PROPERTIES:
+:Author: duffmancd
+:Score: 2
+:DateUnix: 1414735472.0
+:END:
+
+
+*** Of course you can get ~800 000 grad students. However, number theorists are in short supply, as there was a massive exodus from the field after two expeditions showed that the Riemann hypothesis is true, but cannot be proven.
+:PROPERTIES:
+:Author: lvwolb
+:Score: 2
+:DateUnix: 1414663362.0
+:END:
+
+
+** This is a brand new reddit account, so obviously this is some kind of trap. No one give him any information!
+:PROPERTIES:
+:Author: traverseda
+:Score: 2
+:DateUnix: 1414636673.0
+:END:
+
+
+** I wonder if the explorers even kept going after that ... Cthulhu can slumber for a few more centuries, while we exploit his alien geometries.
+
+No, I don't think it would impact my values or devalue creativity in my mind -- not before reading a few eloquent online editorials on the philosophical impact of this labyrinth, at least.
+
+Right now all my proposals are boring -- à la "claim the prizes to the Millennium Problems," etc, so I think I'll just wait for someone smarter to come along and munchkin the fuck out of this. In the meanwhile: Thanks, [[/u/lvwolb]], for coming up with this creative question! I love this idea and would definitely read a story about this.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1414632803.0
+:END:
+
+*** Re philosophical impact.
+
+You have an easily accessible physical embodiment of the entire platonic world. This is crazytown! (well, the computationally accessible part, which is everything which matters for us humans anyway)
+
+Suppose you can do mind-uploads. What is the point? An uploaded mind is, necessarily, a "platonic and immortal" entity. What are the ethical reasons to run the program and not stop & delete it?
+
+One possible answer is that you inscribe some value to "physical reality", as opposed to "platonic reality". Cthulhu's labyrinth already contains all computations, so this answer evaporates.
+
+Re creativity:
+
+Most disciplines of intellectual endeavor rely on a fundamental asymmetry: It is easier to appreciate a great work than to create it. If writing is as easy as reading, what is the point in reading?
+
+In this viewpoint, a (much weaker!) SAT-oracle already kills creativity: Just write a program, which rates a musical piece for its beauty (worst case, using mind-uploads). Then run your SAT-oracle and spit out the most beautiful piece of 1-hour music, ever! No need for human composers anymore! No need for programmers, mathematicians, philosophers, thinkers, writers!
+
+Btw, this is a fun setting for a scifi/fantasy story, where P=NP. To me, a world where NP-complete problems can be solved in reasonable time is most terrifying. Human intellectual endeavor would be reduced to playing chess or Go, or other games (which, funnily, are not in NP).
+
+Re story: Maybe I'll write more of it at some point. But feel free to take the setting and run with it! Quite frankly, I suck at writing and would rather read somebody else's well-written story than writing it myself. I just like the setting.
+:PROPERTIES:
+:Author: lvwolb
+:Score: 1
+:DateUnix: 1414661870.0
+:END:
+
+
+** You could just throw as much information as you can at it and directly do Solomonoff induction on it to find all patterns. Throw some physics at it, throw some stock data at it, etc.
+
+You could prove any true mathematical theorem or prove that it cannot be proven or disproven.
+
+You can break any encryption scheme.
+
+You can solve any finite-time computable problem efficiently as long as the output is small.
+
+edit: You ought to be able to do mathematically optimal science in some way. Do Solomonoff induction on a video feed and have some sort of model of requests for actions you can do then somehow figure out what action differentiates the most TMs that model the data accurately. It would take a long time to catch up to human science but it ought to work if you do it just right. You'd have to worry a bit about it turning into omniscient unfriendly AI. It'll probably be fine! :P
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1414647010.0
+:END:
+
+*** Sooo....you can basically solve any algorithm that outputs "halt" or "not halt" within a pre-defined time limit (essentially, any algorithm with a binary output) right?
+
+How does that translate to "you can prove any mathematical theorem or prove that it cannot be proven or disproven"? Is it okay to say that all mathematical theorems can be proved via solving some algorithm with a single binary output?
+:PROPERTIES:
+:Author: ishaan123
+:Score: 1
+:DateUnix: 1414654490.0
+:END:
+
+**** Write a program that systematically checks all finite proofs. It halts if it finds one.
+
+Write a program that halts if it finds a proof beginning with a particular prefix.
+
+Fiddle around with those until you have it.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 2
+:DateUnix: 1414654568.0
+:END:
+
+***** Wait, what's your confidence level in what you're saying here? Is this something you're casually conjecturing, confidently believe, or a proven and known property of halting oracles that I can read about somewhere? Because what you're saying is strongly violating my (very underdeveloped) math intuition.
+
+I'm having trouble figuring out how you could ever use an algorithm to systematically go through an uncountable set. (For example, try making an algorithm to "systematically" go through the irrational numbers. What does it even /mean/ to systematically go through them?)
+
+I think you have to /at least/ narrow down that if a correct proof exists, it exists within a countable set of proofs, before that would work.
+:PROPERTIES:
+:Author: ishaan123
+:Score: 1
+:DateUnix: 1414692893.0
+:END:
+
+****** Finite proofs are expressible as text. You can enumerate over all finite strings and in finite time determine whether each one encodes a valid proof of the desired theorem. Empty string, 0, 1, 00, 01, 10, 11, 000, ...
+
+In order to be a valid oracle for the halting problem it must halt in finite time. It's nothing special to make it run in time proportional to how long the TM runs: we can do that in the real world. That's not an oracle for the halting problem because it will never give you an answer if it doesn't halt.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1414693389.0
+:END:
+
+******* Huh, ok on further thought, I guess there is a countable set of finite proofs within a given formal language after all.
+
+For some reason I was thinking you had to go through all statements of a mathematical nature, but you don't.
+:PROPERTIES:
+:Author: ishaan123
+:Score: 2
+:DateUnix: 1414708788.0
+:END:
+
+
+**** It goes beyond that. You can for any algorithm which either outputs "halt" at some point and stops running, or does not output halt because it runs forever, say which it does.
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 2
+:DateUnix: 1414665643.0
+:END:
+
+
+** The tunnels linking final chamber in each halting-path with the entrance are one-directional, right?
+
+Because otherways entrance has infinite number of tunnels going out of it, and LR encoding wont workin the first step.
+
+Also - if the program X is substring of program Y starting from the beggining, and both halts then how does the chamber at the end of X work? It should both end at entrance and go further both ways.
+:PROPERTIES:
+:Author: ajuc
+:Score: 1
+:DateUnix: 1414692378.0
+:END:
+
+*** If I understand this correctly (and I'm just reading up on Cayley sets so I might not be), each chamber is a member of the chthulu group. This group has the generating operators L and R, (and also L^{-1} and R^{-1).} The first chamber is identified with the null set, and then every other chamber can be reached by some combination of turning left or right. You can also reach each chamber by going backwards along a left hand or right hand tunnel.
+
+(This is the bit I'm not sure about) Because these are the Generators of th group, each chamber can /only/ be reached by an L, R, L^{-1} and R^{-1} tunnel. Each chamber has four tunnels connected to it (except for the starting chamber presumably which has a ladder say to enter the labyrinth). A chamber that leads to the entrance chamber by a left hand turn is L^{-1.} Any chamber. And in fact, they are the same chamber, representing the same item of the chthulu set.
+
+So if you go LRLRL and that leads to the entrance chamber, and if you go LLLL and that leads to the entrance chamber, then LRLR and LLL also lead to the same chamber (as does going backwards along L^{-1,} or LLLLLRLR etc.)
+
+Can someone with more experience check this. I've studied undergraduate maths, but not Cayley groups or similar.
+:PROPERTIES:
+:Author: duffmancd
+:Score: 2
+:DateUnix: 1414734827.0
+:END:
+
+
+** I'd send robots instead of researchers so I don't have to worry so much about losing them.
+
+How exactly does the pattern work? Could you send one person (or robot) through the majority of the program to find the shortest proof of P != NP and stick a marker in that room, and send everyone else entering in what bit they want backwards to see if they end up in the same place? Or if that has to be somewhere in the middle of the program, you could enter in the first half forwards, the last half backwards, and just have someone move back and forth between those two spots to find each bit of the program.
+
+Quantum physics takes huge amounts of computing power to model, but writing a program for it shouldn't be too long. You could do things like protein folding without too much difficulty.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 1
+:DateUnix: 1417247286.0
+:END:

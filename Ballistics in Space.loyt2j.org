@@ -1,0 +1,73 @@
+#+TITLE: Ballistics in Space
+
+* Ballistics in Space
+:PROPERTIES:
+:Author: IbnAurum
+:Score: 0
+:DateUnix: 1613919816.0
+:END:
+[removed]
+
+
+** Bullets wouldn't continue to accelerate, missiles would accelerate until all of the fuel is depleted. Here's an illustration.
+
+Imagine two people in space. They kick off from each other, and are moving in opposite directions at an equal speed. The speed at which they now float is determined by the energy from the initial kick.
+
+If they both draw their guns after 30 seconds of floating, their bullets will reach X velocity and transfer a proportionate amount of kinetic energy on impact.
+
+What about if they kick off after 60 seconds of floating away? The distance between them will have doubled.
+
+If we go with your inference that acceleration is perpetual, then bullets shot from further away will be travelling faster at the moment of impact, and therefore transfer more kinetic energy.
+
+Where would the extra energy come from in that scenario?
+:PROPERTIES:
+:Author: emmyarty
+:Score: 10
+:DateUnix: 1613924504.0
+:END:
+
+
+** As others have said, a bullet won't accelerate unless something's making it accelerate. Newton's first law- velocities stay constant by default.
+
+A missile accelerates while it's firing its rocket, but the total change in velocity it can effect is described by the rocket equation- it can keep accelerating so long as it has fuel, once it's out, it keeps going on straight line at constant velocity (ignoring gravity).
+
+A bullet is (sort of like) a rocket that spends all its fuel at once at the moment it's fired.
+:PROPERTIES:
+:Author: echemon
+:Score: 6
+:DateUnix: 1613925622.0
+:END:
+
+
+** What's causing the projectile to accelerate?
+:PROPERTIES:
+:Author: major_fox_pass
+:Score: 5
+:DateUnix: 1613919938.0
+:END:
+
+
+** I suspect that you remembered the law that falling masses have a constant acceleration of 9.81 m/s^2, but forgot that this law only holds in the presence of /gravity/.
+
+In space, when you fire a bullet/missle, the velocity will increase until fuel runs out and then is set until it hits another object or another gravitational force interferes. Acceleration is not constant.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1613944731.0
+:END:
+
+
+** Not exactly.
+
+A missile with some engine would indeed keep accelerating until it runs out of fuel. Keep in mind the acceleration wouldn't be constant: it would /increase/ as the missile becomes lighter by burning fuel.
+
+A bullet with no engine would just keep going in a straight line at a constant velocity.
+
+In presence of gravitational fields, both cases would complicate considerably. Bullets could slow down or speed up depending whether they're climbing out or falling into a gravitational well. Trajectories would be curved and it would all be pretty confusing.
+
+If you're interested in learning this both in great detail and with a hands on approach, check out the game [[https://store.steampowered.com/app/476530/Children_of_a_Dead_Earth/][Children of a Dead Earth]]. You won't find a more realistic simulation of space warfare out there. It's also, obviously, incredibly complex.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 1
+:DateUnix: 1613947978.0
+:END:

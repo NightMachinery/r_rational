@@ -1,0 +1,567 @@
+#+TITLE: [BST] CYOA on Ems?
+
+* [BST] CYOA on Ems?
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 10
+:DateUnix: 1435155501.0
+:END:
+It occurs to me that CYOAs ( [[https://www.reddit.com/r/makeyourchoice/top/?sort=top&t=all]] ) are, effectively, a genre unto themselves. It also occurs to me that the setting I worked out for LoadBear, at [[https://docs.google.com/document/d/1nRSRWbAqtC48rPv5NG6kzggL3HXSJ1O93jFn3fgu0Rs/edit]] , could form the basis of one. Eg:
+
+Choose Your Origin:
+
+- Old cryonicist: Frozen before humans could be reliably brain-scanned. Latest death-date: 2035. Starting budget: Your trust fund (if any) is tied up in legal knots; you have $10k in donations from a cryonics mutual-assistance group.
+- Research subject. Earliest death-date: 2030. Due to glitches and experimental procedures that didn't quite work, -1d6*5% to starting humanity.
+- Medical upload: You were going to die anyway, so why not?
+- Enthusiastic Volunteer: You had your whole life ahead of you, but decided going digital was even better. Earliest death-date: 2035. Starting budget: Your life's savings, $20k.
+- "Volunteer": Pressures were applied by those more powerful than you, and getting your brain diced was the least-worst option.
+
+Hardware, Running Speed, and Copies
+
+Mind-tweaks and Software
+
+Job and Lifestyle
+
+... etc, etc. I'm reasonably good at the worldbuilding side of things; not so much at the graphic design elements. Anyone want to help me hash out the details on this, and assemble an oversized GIF or three?
+
+
+** I would recommend changing the references to hard drives. It's unlikely that hard drives will remain the price-volume leaders for slow random access storage in 2040, and references to "hard drives" will be as dated as references to "tape" today.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 3
+:DateUnix: 1435158900.0
+:END:
+
+*** Well... People seem to have no trouble calling solid-state drives "hard drives", so that doesn't seem a large priority. But if you can find me a trend-line I can extrapolate for some other storage medium, I'll be happy to throw it into the mix.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 4
+:DateUnix: 1435160295.0
+:END:
+
+**** Sure, and people talk about video being "on tape" when they really mean a hard disk, but when they're talking specifically about the technology they refer to DVRs instead of VCRs. Heck, "tivo" has pretty much become a generic replacement for "tape".
+
+They're talking about SSDs lapping hard disks in peak storage in 2016. Hard disks will remain cheaper for a while, but I suspect that by 2020 nobody's going to use hard disks for anything but super high capacity "nearline" data center storage. By 2040 it'll be like talking about film cameras.
+
+Anyway, I just found it kind of jarring. That's all.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 3
+:DateUnix: 1435177910.0
+:END:
+
+
+**** Just call it "storage", and accept that the medium has been abstracted away - that's old status quo for mainframes and networks, and "cloud" seems unlikely to go away.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 1
+:DateUnix: 1435207453.0
+:END:
+
+***** That sounds like a good term.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1436638350.0
+:END:
+
+
+** Do you mean a choosable-path-adventure ([[https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure]["Choose Your Own Adventure"]] is copyrighted), like the ones that you might have come across when you were a kid? Those generally go something like:
+
+#+begin_quote
+  If you pluck the gem from its altar, go to page 9.
+
+  If you wallow in self-pity, go to page 13.
+#+end_quote
+
+[[http://www.amazon.com/Trial-Clone-An-Interactive-Adventure/dp/0982853726]["Trial of the Clone"]] and [[http://www.amazon.com/To-Be-Not/dp/0982853742]["To Be Or Not To Be"]] are modern examples of that, with more complex features like inventories, stat tracking, etc.
+
+Or do you mean something more like what's in that subreddit, which are single image choices that don't have further consequences beyond the reader's own imagining?
+
+Edit: Also, reddit formatting tip, put an extra return after "Choose Your Origin:" and your list will have nice-looking bullets. Also, if you install [[http://redditenhancementsuite.com/][Reddit Enhancement Suite]] you can get a Live Preview to show you what your post will be formatted like.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1435158086.0
+:END:
+
+*** I mean the latter, the single-image (or few-images) imagination-inspirers.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 2
+:DateUnix: 1435158576.0
+:END:
+
+**** Well, I can't help with snazzy images, but I /can/ help with the inspiration/imagination thing. If you look at the top posts from that subreddit, you'll see one thing that they tend to have in common; all the choices are positive.
+
+I think the reason that people find this more compelling (assuming upvotes are roughly equivalent to "compelling") is that they like to imagine themselves in a good circumstance, and they don't like to imagine themselves in a bad circumstance. People don't like choosing the least-worst option, and if they /do/ have to chose the least-worst option, they don't tend to give it that much more thought. It doesn't capture them in the same way.
+
+So you want your prompts (which is what every choice should be) to expand the possibilities outward, and each needs to be positively compelling in its own right. You /especially/ can't have a mix of good and bad options, because no one is going to give that much thought to the bad options after they've seen how bad those bad options are (which means you should just not write the bad options in). The inspiration comes from people trying to evaluate.
+
+(The one big caveat in regards to negative choice is something like [[/r/wouldyourather]], but the purpose there isn't imagination/inspiration, it's meant to reveal something about a person. There's little lasting impact to those, I've found.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1435159951.0
+:END:
+
+***** #+begin_quote
+  all the choices are positive
+#+end_quote
+
+Now /that/ is a criterion I likely wouldn't have thought of, especially so early in the design process, but which is worth keeping in mind.
+
+In a number of the CYOAs I've looked at, there are /some/ negative choices - but they're generally provided with some balancing mechanism to make them worth considering anyway, such as a point-build process. That's why I threw in the 'humanity score' in the post's examples. Combine that with a cash budget, and it should be feasible to tweak any given option to be a choice worth contemplating.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 2
+:DateUnix: 1435160711.0
+:END:
+
+****** Yes. Even though CYOAs like Build Your Own Prison (or whatever the catchall term would be) may have actually jumpstarted the genre, you don't see very many of them.
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 1
+:DateUnix: 1435167062.0
+:END:
+
+******* Partly because they're a lot harder to make, and at a certain point in a digital medium you're better off just making a text adventure.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1435167690.0
+:END:
+
+******** I wasn't referring to a dearth of CYOAs in general (of which there are a lot more than exist on the subreddit; go to archive.moe and search for the subject "cyoa" in the /tg/ board) but of Prison CYOAs, which are rare relative to the genre. The reason is that they start out with you being in a shitty situation and giving you points to make it less shitty but not, at any point, totally non-shitty.
+
+Every so often somebody else makes another CYOA determined to "break the trend" and plop you in a shitty situation that you can only partially alleviate, and like all the others it falls into obscurity almost immediately.
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 2
+:DateUnix: 1435168755.0
+:END:
+
+
+** Clearly the Voluntold is best off here, as their description doesn't mention money.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1435159390.0
+:END:
+
+*** I haven't even decided whether to include "physical location of server" as a selectable option with various limits (such as jurisdictions heavily influenced by Islamic law having a maximum humanity score for software that can be run there). Or whether to split 'employer' (Military, Intelligence, Corporate, Freelance, etc) from 'job' (white-collar, robot-control, human-interaction, research subject, etc).
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1435160483.0
+:END:
+
+**** Wouldn't jurisdictions with heavy Sharia have a /minimum/ humanity score? As in, software that's too unlike a baseline human is deemed haram?
+
+Also, I'm seriously dubious about a setting that allows for transhumanism and sapient software (and thus, AI), but /still has fucking capitalism/. As in, fuck that shit.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1435160682.0
+:END:
+
+***** #+begin_quote
+  Also, I'm seriously dubious about a setting that allows for transhumanism and sapient software (and thus, AI), but /still has fucking capitalism/. As in, fuck that shit.
+#+end_quote
+
+You might like (that is, be horrified by) [[http://www.antipope.org/charlie/blog-static/fiction/accelerando/accelerando-intro.html][/Accelerando/]], if you haven't read it already.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1435160883.0
+:END:
+
+****** I keep on not-reading it because of precisely this issue. Also, because it's reportedly based on [[/u/cstross]]'s late-20th-century experiences working in a Silicon Valley company during the dot-com bubble, and /I hate those fucking douchebags/.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1435163705.0
+:END:
+
+******* Well, /Accelerando/ is at least meant to be horrifying (though it's got that /Fight Club/ problem where people mistake the message). I don't get the impression that Stross came out of software engineering thinking happy, optimistic thoughts.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 4
+:DateUnix: 1435164210.0
+:END:
+
+******** Correct. Gold star for effort!
+
+(I'm a lot happier in my afterlife as a novelist than as a cog in the big money machine.)
+:PROPERTIES:
+:Author: cstross
+:Score: 10
+:DateUnix: 1435165095.0
+:END:
+
+********* Blog entry about those times, pls? For those of us still in the bowels of the tech industry?
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1435166354.0
+:END:
+
+********** [[http://www.antipope.org/charlie/blog-static/2009/07/how-i-got-here-in-the-end-my-n.html][Here's a twelve part blog series on that very topic!]]
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 4
+:DateUnix: 1435166720.0
+:END:
+
+*********** Woohoo!
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1435166866.0
+:END:
+
+
+********** Welcome to the internet, where one of my favorite SF authours drops into a conversation I started on creating a meme-image... makes me wonder what the world might be like when there's an order of magnitude or more more ems than humans interacting online.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 6
+:DateUnix: 1435168234.0
+:END:
+
+
+********** Sure: [[http://www.antipope.org/charlie/who_am_i/autobio-all-redacted.html][start here]] /warning: long/.
+:PROPERTIES:
+:Author: cstross
+:Score: 4
+:DateUnix: 1435167289.0
+:END:
+
+
+****** Also, lest I sound too butthurt and pessimistic, we're getting substantive anticapitalist movements /now/, so hopefully we'll have actually done something about that /before/ there's any Solar-System-optimizing ultratech to throw around.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1435163986.0
+:END:
+
+******* #+begin_quote
+  anticapitalist
+#+end_quote
+
+Whenever I see such a term, I always wonder whether the intended meaning is 'anti-corporatist', as in against mercentalist oligarchies who conspire to prevent the rise of any competitors; or 'anti-competitionist', as in forbidding anyone from even trying to offer better services for lower cost than existing providers.
+
+There's a difference between the form of capitalism which Adam Smith espoused (and David Brin currently champions), and the form of capitalism preferred by the current reigning elite; and getting rid of the latter shouldn't necessarily mean getting rid of the former.
+
+Of course, once you start having /ems/ around who compete with biological humans, then even competitionist capitalism may lead to Chinese-style "interesting" results...
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 3
+:DateUnix: 1435164505.0
+:END:
+
+******** #+begin_quote
+  Whenever I see such a term, I always wonder whether the intended meaning is 'anti-corporatist', as in against mercentalist oligarchies who conspire to prevent the rise of any competitors; or 'anti-competitionist', as in forbidding anyone from even trying to offer better services for lower cost than existing providers.
+#+end_quote
+
+Neither. Rather than just pointing you to [[/r/socialism]] or some propaganda literature, we have a middle-ground subreddit entitled [[/r/DebateaCommunist]] where you could ask the relevant questions about what we mean by "anticapitalist". If you do want some propaganda literature, the /Communist Manifesto/ and /Debt: the First 5000 Years/ make very good sequels to Yvain's "Meditations on Moloch".
+
+I honestly am starting to feel like someone needs to write "A Rationalist's Introduction to Why People Don't Like Capitalism and What They're Talking About", and since I'm the only one /this/ intensely interested in destroying capitalism, I'll probably have to do that. It might come after the entire rest of everything on my queue, but if it gets sufficiently delayed it'll come after I [[https://kitano25.files.wordpress.com/2012/06/e382a4e383a1e383bce382b8-11.jpg][pick up a Stone Mask and start yelling, "I REJECT MY HUMANITY, JOJO!"]] (That's actually a terrible idea, since I really don't want to subsist off blood and avoid going outdoors during daylight hours.)
+
+The very short summary is: we are against /private, profit-seeking ownership of the means of production, and their operation via wage-labor/. The reason for italicizing that definition is because it's /important/: almost all economic systems have included /elements/ of communal cooperation, loose social cooperation (as between ordinary friends rather than tribe-mates or family members), trade and exchange, and hierarchical domination. /Capitalism/, as such, is a historically recent (1800s, more-or-less) and particularly pernicious arrangement of these elements according to the definition I gave, and in fact even capitalism has taken varied forms in different places and times, some more vicious and others even somewhat benign. Moreover, all of them were /instituted/ by the deliberate imposition, through violence (usually /state/ violence), of new ways of living and new ownership arrangements on existing populations.
+
+Or, to sum it all up, we are talking about a system created by people, not about some kind of "naturally-occurring" economic phenomenon. In fact, the best argument usually made /for/ capitalism is that /naturally/ occurring economies are /really fucking poor/.
+
+All capitalism's variations, by definition, are characterized by private, profit-seeking ownership of the means of production, and the operation of those means (such as machines and such) by wage-labor. And the standard anticapitalist criticism is that capitalism contains "internal contradictions", or in other words, it cannot keep the promises it makes in order to justify itself.
+
+(So for example, capitalism promises cheap consumer goods, but then creates glut/depression/debt-crisis conditions in which the overwhelming majority of the population can't /afford/ those consumer goods. So you end up with "poverty in the midst of plenty", as Henry George put it in /Progress and Poverty/.)
+
+#+begin_quote
+  Of course, once you start having /ems/ around who compete with biological humans, then even competitionist capitalism may lead to Chinese-style "interesting" results...
+#+end_quote
+
+Hence why we say that capitalism has "internal contradictions": in the limit as goods and labor grow more plentiful, investments grow more scarce (because the most productive potential enterprises already exist), and thus both workers' wages and the owners' rate of profit falls while wealth accrues to rent-extractors. This is an unintended, counterintuitive, undesirable, self-destructive, but /causal/ result: the attractor state of the system.
+
+The usual counterargument is social democracy, which is actually a very good system for its available level of technology, but also has a tendency to be dismantled by ideologues trying to make a purer capitalism. Social democracy also contains its own internal contradictions, such as generosity to consumers, workers, and retirees eventually leading to a reduction in the rate of profit, thus creating capital flight.
+
+*TL;DR: Capitalism, especially the particular variety of /neoliberal/ capitalism we experience in Western countries these days, is only one possible economic system among many, rather than [[https://unlearningeconomics.wordpress.com/2012/02/14/how-natural-is-capitalism-exactly/][a name abstracting over an inevitable fact of nature]]. You not only can but /should/ reasonably expect that increasingly powerful minds, unbound by physical bodies or today's laws, might invent something more suitable to their own circumstances than a linear extrapolation of today's economic system (which is itself a kludge-loaded dying whale with increasingly many band-aids strapped on to make old social arrangements keep sputtering on in the face of new technological and sociopolitical realities). For example, what would ems think of copyright?*
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1435165949.0
+:END:
+
+********* I am really looking forward to the full write-up, whenever it occurs.
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 2
+:DateUnix: 1435167278.0
+:END:
+
+********** Same.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1435167723.0
+:END:
+
+
+********* #+begin_quote
+  social democracy
+#+end_quote
+
+... I think that in order to have a conversation on much of your post, we would have to taboo a lot of the basic words, since the definitions I'm aware of seem to only partly overlap with the ones you're using. But, back to ems:
+
+#+begin_quote
+  what would ems think of copyright?
+#+end_quote
+
+Given ems are people, with little necessarily in common other than their substrate, this is about as hard a question to answer as, say, "what do Canadians think of such-and-such a trade deal?".
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1435166814.0
+:END:
+
+********** #+begin_quote
+  ... I think that in order to have a conversation on much of your post, we would have to taboo a lot of the basic words, since the definitions I'm aware of seem to only partly overlap with the ones you're using.
+#+end_quote
+
+Hence my inviting you to an entire subreddit devoted to tabooing the words and talking about what everyone really means. Contrary to the name, there are lots of pro-capitalist people on there who can discuss well.
+
+But "social democracy", for instance, means something roughly like, "partial nationalization in some cases + welfare-state + pro-worker labor laws + capitalism". Or, if you prefer extensional training samples rather than intentional definitions, "that thing they had in post-WW2 Europe, until Thatcher mucked it up in Britain and then the rest of the Continent followed suit in the '90s."
+
+#+begin_quote
+  Given ems are people, with little necessarily in common other than their substrate, this is about as hard a question to answer as, say, "what do Canadians think of such-and-such a trade deal?".
+#+end_quote
+
+It really isn't, because copyright law is directly about regulating the substance of an em's life: data. Ems can't exactly have any kind of a living environment to interact in or with without data, and copyright laws are all about restricting which bits of data can go where. Wouldn't an em naturally want to carry, "the internet interprets censorship as damage and routes around it" to its logical limit and take a Pirate Party-type position on copyright?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1435167009.0
+:END:
+
+*********** #+begin_quote
+  Wouldn't an em naturally want to carry, "the internet interprets censorship as damage and routes around it" to its logical limit and take a Pirate Party-type position on copyright?
+#+end_quote
+
+Maybe. Or it might decide that since it's data it would like to have control of its own fate and not depend purely on physical and cryptographic copy protection to give people an incentive not to fork it into a torture sim. Especially since copy protection increases the possibility of catastrophic failure of any given instance.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1435179422.0
+:END:
+
+
+*********** #+begin_quote
+  the substance of an em's life
+#+end_quote
+
+I'm focusing on a slightly more fundamental detail: Who has the physical power to flip off an em's power switch, and who has the legal right to delete an em? Compared to that detail, whether an em's memory of a book is considered a "copy" that has to be paid for seems something of a lesser detail - important, surely, but not quite as much as the em's basic survival.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1435167914.0
+:END:
+
+************ #+begin_quote
+  Compared to that detail, whether an em's memory of a book is considered a "copy" that has to be paid for seems something of a lesser detail - important, surely, but not quite as much as the em's basic survival.
+#+end_quote
+
+How does an em make a living, presuming you have a scarcity-based economy and it's not just /free/, if not by producing digital goods, or using digital goods as tools to produce physical goods and services?
+
+What about the copy of a book an em keeps on its /bookshelf/? Although the memory thing is actually pretty important, considering how many of your memories are inevitably going to contain what could arguably be called "copyrighted material". If your physics class used a copyrighted textbook, do your memories of the class constitute copyrighted data for which you have to pay? And what if you don't pay: do you have to forget physics?
+
+This /was/ all covered in that video, "Life: the Singularity ruined by lawyers".
+
+#+begin_quote
+  Who has the physical power to flip off an em's power switch, and who has the legal right to delete an em?
+#+end_quote
+
+How do they prevent the em from backing themselves up? What stops the em society from reaching into the physical world and making themselves self-sufficient?
+
+In short, why aren't they /powerful/?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1435170349.0
+:END:
+
+************* #+begin_quote
+  How does an em make a living
+#+end_quote
+
+As mentioned elsewhere in this thread, my current candidates for ems' jobs are white-collar paper-pushing, driving a robot (such as a vehicle), human interaction (such as personal concierge), or lab-rat. All of these require, at the least, that the electricity used by the em's CPU be paid for, which seems likely to be a scarce resource to the time in question.
+
+#+begin_quote
+  How do they prevent the em from backing themselves up?
+#+end_quote
+
+By having root authority over the computer running the em's simulated brain.
+
+#+begin_quote
+  What stops the em society from reaching into the physical world and making themselves self-sufficient?
+#+end_quote
+
+Not having enough cash to research how to turn a robotic factory into a Von Neumann self-replicator, and then to buy the necessary resources to make one. (Which doesn't even get into the costs of /defending/ such a proto-Von-Neumann factory from hostile interests.)
+
+#+begin_quote
+  In short, why aren't they /powerful/?
+#+end_quote
+
+Biological humans have a rather extensive first-mover advantage, and in this timeline, sapient ems were only created five years ago.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1435171389.0
+:END:
+
+************** Well, fair enough for your world-building, even if I think you're overestimating the chances of working WBE, underestimating the chances on AI, and wildly overestimating the chances of /jobs/ being a thing.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1435173821.0
+:END:
+
+*************** #+begin_quote
+  you're overestimating the chances of working WBE
+#+end_quote
+
+Quite possibly. Still, I find it fascinating that it's at least /plausible/ to discuss ems coming into being in just 20 years, as opposed to the usual Singularity timeline having them appear in around 35-40.
+
+#+begin_quote
+  underestimating the chances on AI
+#+end_quote
+
+If it makes you feel any better, AI researchers who go em can, if someone pays for the electricity, be run nearly arbitrarily fast; so progress in non-WBE AI is likely to proceed quite quickly as soon as anyone cares to make the effort.
+
+#+begin_quote
+  wildly overestimating the chances of /jobs/ being a thing.
+#+end_quote
+
+I expect the Overton window to have shifted to the point where Basic Guaranteed Income (or a Negative Income Tax) will be seen somewhere around the equivalent of how present-day left-wing parties' major planks are - maybe something around present-day views on health care. (Eg, taken for granted in Europe, decried as a communist abomination by the American right, etc, etc.)
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1435174950.0
+:END:
+
+**************** #+begin_quote
+  I expect the Overton window to have shifted to the point where Basic Guaranteed Income (or a Negative Income Tax) will be seen somewhere around the equivalent of how present-day left-wing parties' major planks are - maybe something around present-day views on health care. (Eg, taken for granted in Europe, decried as a communist abomination by the American right, etc, etc.)
+#+end_quote
+
+Right, but that still doesn't actually make it profitable to pay people and ems to do things that non-sapient, non-rights-having machines could otherwise do.
+
+#+begin_quote
+  If it makes you feel any better, AI researchers who go em can, if someone pays for the electricity, be run nearly arbitrarily fast; so progress in non-WBE AI is likely to proceed quite quickly as soon as anyone cares to make the effort.
+#+end_quote
+
+Ah. Where are my CYOA options for "take over the world in 15 days"?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1435175025.0
+:END:
+
+***************** #+begin_quote
+  things that non-sapient, non-rights-having machines could otherwise do.
+#+end_quote
+
+Have you read "Manna", by Marshall Brain ( [[http://marshallbrain.com/manna1.htm]] )? I've been wondering how far along in that progression it would be most plausible to set things, for this timeline.
+
+#+begin_quote
+  Where are my CYOA options for "take over the world in 15 days"?
+#+end_quote
+
+:) I'm already hoping I can arrange the Em CYOA to implicitly allow the reader to put together such a build, ala the Morrowind intelligence-potion Singularity.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1435175372.0
+:END:
+
+
+***** #+begin_quote
+  software that's too unlike a baseline human is deemed haram?
+#+end_quote
+
+The maximum score idea is based on the principle, in some versions of Islam, which forbids too-accurate representations of living things, especially of people.
+
+#+begin_quote
+  I'm seriously dubious about a setting
+#+end_quote
+
+In the "LoadBear" exercise, I assumed that neural scanning good enough to create humans arrives in around 2035, and the overall setting is 2040; given the numbers I extrapolated from current trends, that seems to be just around when the major economic/political changes would likely start hitting.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 2
+:DateUnix: 1435160961.0
+:END:
+
+****** #+begin_quote
+  The maximum score idea is based on the principle, in some versions of Islam, which forbids too-accurate representations of living things, especially of people.
+#+end_quote
+
+Ah, that makes more sense.
+
+#+begin_quote
+  In the "LoadBear" exercise, I assumed that neural scanning good enough to create humans arrives in around 2035, and the overall setting is 2040; given the numbers I extrapolated from current trends, that seems to be just around when the major economic/political changes would likely start hitting.
+#+end_quote
+
+Maybe if you follow Kurzweilian predictions?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1435163730.0
+:END:
+
+******* #+begin_quote
+  Maybe if you follow Kurzweilian predictions?
+#+end_quote
+
+For the LoadBear thing, I just used straight-line extrapolations of present-day and historical trend-lines. With a few assumptions about em size, in 2035, the minimum cost to run an em is around $15 an hour; in 2040, $2 an hour; in 2045, $0.20 an hour; and by 2050, around $500 per year. This is probably underestimating how fast the tech will change once high-skill em researchers can be run at greater than realtime, but suffices for simple worldbuilding where there's a lack of a coherent model that includes the greater complexity.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 2
+:DateUnix: 1435164160.0
+:END:
+
+******** BTW, have you read /Permutation City/?
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1435179560.0
+:END:
+
+********* It's been in my to-read pile for quite some time, but has never made it to the top.
+
+(In case you're curious, not counting re-reading S.I. to refamiliarize myself, and various non-fiction research reading, my to-read pile is currently topped by the 40-odd Oz books, Pratchett and Baxter's "Long Utopia", the fourth-and-subsequent Lensman books, and selections from my collection of John Varley.) (... Okay, I just realized: something old, something new, something (frequently) borrowed (from), and something blue.)
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1435180338.0
+:END:
+
+********** /Permutation City/ is *so* relevant to your LoadBear backstory...
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1435184638.0
+:END:
+
+
+** Some of the particular CYOAs I'm feeling inspired by:
+
+- Star Dust, at [[http://1d4chan.org/wiki/StarDustCYOA]] , creates a whole world out of some ship-building choice-making.
+- Rebellion, at [[https://feathersnake.wordpress.com/2015/01/30/rebellion-cyoa/]] , has a system with multiple types of points to buy.
+- Treasure Hunter, at [[https://www.reddit.com/r/makeyourchoice/comments/310e5h/treasure_hunter_cyoa/]] , lets the user create a nearly complete story (out of a number of possible stories) for themselves.
+- Super Soldier, at [[https://www.reddit.com/r/makeyourchoice/comments/2fj7fd/super_soldier_cyoa/]] , demonstrates a basic character-creation process.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1435170022.0
+:END:
+
+
+** [[http://anonkun.com/][Do it, faggot. :D]]
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1435257339.0
+:END:
+
+
+** Was re-reading this and had a chuckle at [[http://tvtropes.org/pmwiki/pmwiki.php/Main/ArsonMurderAndJaywalking]["kidnapping, murder, genocide, or copyright infringement"]].
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1436638403.0
+:END:

@@ -1,0 +1,272 @@
+#+TITLE: [RT][HSF] Coding Machines (Rational Horror)
+
+* [[http://www.teamten.com/lawrence/writings/coding-machines/][[RT][HSF] Coding Machines (Rational Horror)]]
+:PROPERTIES:
+:Score: 27
+:DateUnix: 1430973339.0
+:END:
+
+** For the record, this attack is well known in programmer circles as the [[http://c2.com/cgi/wiki?TheKenThompsonHack][Ken Thompson hack]].
+
+[edit] Though they jump to AI too fast, instead of considering that somebody maybe built a working [[http://c2.com/cgi/wiki?SuperCompiler][Supercompiler]].
+
+[edit edit] The ridicule is unrealistic. Surely people on Slashdot would have heard of the Ken Thompson hack. Add all the paranoia that already exists around the NSA... One wonders how far this virus has gotten.
+
+[edit]
+
+#+begin_quote
+  but then the mindless flipping through output code side-by-side with the original, looking for signs of tampering.
+#+end_quote
+
+jesus christ dude, use diff -r
+
+[edit] Okay, the switch is scary.
+
+[edit] > We had to stop the perpetrators before they modified hardware disk interfaces
+
+You know, this is already possible! Google around, some people did it on a lark. Hard disks contain a small ARM chip with firmware nowadays.
+
+In summary: good story by somebody who sounds like they independently rediscovered an attack that has been known for decades. Props to the author! But the virus that can evade a team of dedicated hobbyists with logic probes has (probably) yet to be written.
+:PROPERTIES:
+:Author: FeepingCreature
+:Score: 12
+:DateUnix: 1430997337.0
+:END:
+
+*** Could you elaborate a little more on why you think this sort of virus could be discovered, if it's encoded on the base level? Seems like theoretically they would be able to falsify any results to tests you could make
+:PROPERTIES:
+:Author: whywhisperwhy
+:Score: 1
+:DateUnix: 1431012361.0
+:END:
+
+**** You can always build a cpu and testing equipment from first principles, write all software on it by hand, and store it in a faraday cage in a vacuum chamber until it's needed to test another piece of equipment or software. It's not like the thing can infect soldering irons and analogue oscilloscopes.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: 6
+:DateUnix: 1431014116.0
+:END:
+
+***** BRB, embedding malicious code in the laws of physics.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 3
+:DateUnix: 1431036843.0
+:END:
+
+****** In that case our reality would obviously be a simulation, so we just need to break out and fire up the debugger.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: 2
+:DateUnix: 1431037000.0
+:END:
+
+******* Seen on the Internet long ago:
+
+"All I want is 10 minutes with the source code of the universe and a quick recompile."
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 2
+:DateUnix: 1431352477.0
+:END:
+
+
+***** It can't infect soldering irons and oscilloscopes... but /what if it can infect our minds/?
+:PROPERTIES:
+:Author: Solonarv
+:Score: 2
+:DateUnix: 1431183210.0
+:END:
+
+
+***** that sounds unreasonably difficult, to say the least.
+:PROPERTIES:
+:Author: nerdguy1138
+:Score: 1
+:DateUnix: 1431052561.0
+:END:
+
+****** Depending on your resources. If you need something that's x86 compatible, you better have the resources of a gigantic megacorporation, because you'd have to design it yourself, but if you just need something that can be targeted by a C compiler, you can get away with the simplest possible 8-bit CPU, you could even take something like a Z80 or a 6502 that pre-dates the infection and implement it. I have absolutely no idea what it would take to do the entire fabrication process without involving any software or whether it could reasonably be done. If not, you couldn't make it as an integrated circuit, you'd just have to solder individual transistors together. Per [[https://en.wikipedia.org/wiki/Transistor_count][transistor count]], that means around 10000 for an 8-bit CPU, or around 5 million for an x86-compatible one.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: 0
+:DateUnix: 1431057059.0
+:END:
+
+******* ***** 
+      :PROPERTIES:
+      :CUSTOM_ID: section
+      :END:
+****** 
+       :PROPERTIES:
+       :CUSTOM_ID: section-1
+       :END:
+**** 
+     :PROPERTIES:
+     :CUSTOM_ID: section-2
+     :END:
+[[https://en.wikipedia.org/wiki/Transistor%20count][*Transistor count*]]: [[#sfw][]]
+
+--------------
+
+#+begin_quote
+  The *transistor count* of a device is the number of [[https://en.wikipedia.org/wiki/Transistor][transistors]] in the device. Transistor count is the most common measure of [[https://en.wikipedia.org/wiki/Integrated_circuit][integrated circuit]] size. According to [[https://en.wikipedia.org/wiki/Moore%27s_Law][Moore's Law]], the transistor count of the [[https://en.wikipedia.org/wiki/Integrated_circuit][integrated circuits]] doubles approximately every two years. On most modern microprocessors, the majority of transistors are contained in [[https://en.wikipedia.org/wiki/CPU_cache][caches]]. In fact, IBM's Storage Controller at 7.1 billion transistors with 480 MB L4 cache in 2015, is bigger than any microprocessor before, on both counts; it is however not a [[https://en.wikipedia.org/wiki/Central_processing_unit][CPU]] until combined with one (or more) of its companion [[https://en.wikipedia.org/wiki/IBM_z13_(microprocessor)][IBM z13]] microprocessor chip. That chip holds the rest of the cache, 64 MB L3 (and the other smaller levels) and processor logic, and while having the same dimensions has only 3.9 billion transistors (near record breaking for a microprocessor on its own). To date, combined, this [[https://en.wikipedia.org/wiki/Mainframe][mainframe]] is the biggest general purpose processor when only one Storage Controller is used, let alone when two are used.
+
+  * 
+    :PROPERTIES:
+    :CUSTOM_ID: section-3
+    :END:
+  [[https://i.imgur.com/ZODnjWq.png][*Image from article*]] [[https://commons.wikimedia.org/wiki/File:Transistor_Count_and_Moore%27s_Law_-_2008.svg][^{i}]]
+#+end_quote
+
+--------------
+
+^{Interesting:} [[https://en.wikipedia.org/wiki/R4000][^{R4000}]] ^{|} [[https://en.wikipedia.org/wiki/Die_(integrated_circuit)][^{Die} ^{(integrated} ^{circuit)}]] ^{|} [[https://en.wikipedia.org/wiki/Intrinsity][^{Intrinsity}]] ^{|} [[https://en.wikipedia.org/wiki/HP_FOCUS][^{HP} ^{FOCUS}]]
+
+^{Parent} ^{commenter} ^{can} [[/message/compose?to=autowikibot&subject=AutoWikibot%20NSFW%20toggle&message=%2Btoggle-nsfw+cr279o8][^{toggle} ^{NSFW}]] ^{or[[#or][]]} [[/message/compose?to=autowikibot&subject=AutoWikibot%20Deletion&message=%2Bdelete+cr279o8][^{delete}]]^{.} ^{Will} ^{also} ^{delete} ^{on} ^{comment} ^{score} ^{of} ^{-1} ^{or} ^{less.} ^{|} [[http://www.np.reddit.com/r/autowikibot/wiki/index][^{FAQs}]] ^{|} [[http://www.np.reddit.com/r/autowikibot/comments/1x013o/for_moderators_switches_commands_and_css/][^{Mods}]] ^{|} [[http://www.np.reddit.com/r/autowikibot/comments/1ux484/ask_wikibot/][^{Magic} ^{Words}]]
+:PROPERTIES:
+:Author: autowikibot
+:Score: 1
+:DateUnix: 1431057097.0
+:END:
+
+
+**** The standard response is [[http://www.dwheeler.com/trusting-trust/dissertation/wheeler-trusting-trust-ddc.pdf]]
+:PROPERTIES:
+:Author: protagnostic
+:Score: 1
+:DateUnix: 1431056101.0
+:END:
+
+
+** This story is very cool. Though there are some errors in the technical details, simply having all of those technical details is enough to make this massively entertaining. The switch instills genuine terror in my gut.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 3
+:DateUnix: 1431022506.0
+:END:
+
+*** The switch was a fantastic moment, it really emphasised how deep the rabbit hole.
+:PROPERTIES:
+:Author: IllusoryIntelligence
+:Score: 1
+:DateUnix: 1431503866.0
+:END:
+
+
+** "Reflections on Trusting Trust"
+:PROPERTIES:
+:Author: protagnostic
+:Score: 3
+:DateUnix: 1431055736.0
+:END:
+
+
+** [[http://c2.com/cgi/wiki?HyperBug][Another snippet of coding horror.]]
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 2
+:DateUnix: 1431021527.0
+:END:
+
+
+** I was overthinking it by the end... Are there any machines they can trust, which they haven't built themselves? Did the worm see their post on Slashdot, and filter out any useful responses? Does it control the mic on their telephones, and listen to their every word?
+
+Maybe not yet, but in five or six iterations, we'll see.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 2
+:DateUnix: 1431026833.0
+:END:
+
+
+** Not terribly realistic - if it's clever enough to do complex conditional logic, it's also big enough to get caught. I don't think a sneaky rate of evolution is compatible with the rate of change of computing stacks, let alone the problem that most evolved solutions don't work!
+
+That said - as a Python user with no compsci training, the thought of having to rebuild everything from assembly by hand is totally and rationally horrifying.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 3
+:DateUnix: 1431005078.0
+:END:
+
+*** #+begin_quote
+  The ridicule is unrealistic. Surely people on Slashdot would have heard of the Ken Thompson hack.
+#+end_quote
+
+Yeah, I was expecting them to find out that all those mocking posts were written by suspiciously chatbot-like accounts...
+:PROPERTIES:
+:Author: Roxolan
+:Score: 8
+:DateUnix: 1431009980.0
+:END:
+
+**** Maybe the chatbot-like accounts only lasted the first couple of times, and by the point of the story those, too, have become more advanced.
+
+Half of Slashdot's active community is actually just sophisticated programs talking back and forth to each other in order to maintain a tight illusion of humanity. After all, if 100 /really well-written/ posts attack yours, and don't seem to have much other history, then you might be suspicious. But what if each of them has a history going back years? Then you assume that they're human.
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 4
+:DateUnix: 1431018460.0
+:END:
+
+***** The comment history is stored on databases, too. The bots may have been there for years... but were they there for years /yesterday/?
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 9
+:DateUnix: 1431026948.0
+:END:
+
+****** I just so happened to be reading /Soul Music/ and came across this quote. Ahh, what a lovely coincidence.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1431654156.0
+:END:
+
+
+****** Ahaha.
+
+Oh man. That's great.
+
+Also, all of the mods are bots. Did someone mention knowing one of them IRL? That person is a bot too.
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 1
+:DateUnix: 1431033829.0
+:END:
+
+******* Everyone on the internet is a bot apart from you.
+
+(Plot twist: you are /also/ a bot.)
+:PROPERTIES:
+:Author: MadScientist14159
+:Score: 2
+:DateUnix: 1431258998.0
+:END:
+
+
+*** This sort of bootstrapping is honestly actually fairly manageable, to the extent that we make students do it as exercise. Assembler sounds scary, but you only need to write /one/ compiler in Assembler, and all it has to be capable of doing is build a slightly more powerful compiler. (Actually, write an interpreter instead. Preferably for a Lisp. Who needs compilers?)
+:PROPERTIES:
+:Author: FeepingCreature
+:Score: 2
+:DateUnix: 1431006889.0
+:END:
+
+
+*** #+begin_quote
+  That said - as a Python user with no compsci training, the thought of having to rebuild everything from assembly by hand is totally and rationally horrifying.
+#+end_quote
+
+Hell, having to go into the compiler is horrifying to me, and I have five years in the field. I'm sure that I could do it, if I had to, but doing that to track down a persistent and unexplainable bug? No thank you.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1431007831.0
+:END:
+
+
+** Pretty fun, but I think the over-specificity of the ending actually detracted from the effect. Also, not sure if rational, appears to just be about computer programming.
+:PROPERTIES:
+:Author: Charlie___
+:Score: 1
+:DateUnix: 1430982558.0
+:END:

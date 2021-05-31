@@ -1,0 +1,159 @@
+#+TITLE: rationalfiction.io v1.0 – an awewome place to host, share and discuss rationalist stories
+
+* [[http://rationalfiction.io][rationalfiction.io v1.0 – an awewome place to host, share and discuss rationalist stories]]
+:PROPERTIES:
+:Author: raymestalez
+:Score: 11
+:DateUnix: 1434895688.0
+:END:
+
+** Any chance of integration with rationalreads? Seems like a natural fit :).
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1434905469.0
+:END:
+
+*** What kind of integration do you have in mind?
+:PROPERTIES:
+:Author: raymestalez
+:Score: 1
+:DateUnix: 1434913507.0
+:END:
+
+**** Use rationalreads as your backend commenting and rating system, and as a result every new story posted gets uploaded to rationalreads (along with the appropriate chapter links and description).
+
+This way your website gets visiblity to exactly the audience you're looking for (your value prop), and rationalread's rating algorithm gets more data (their value prop).
+:PROPERTIES:
+:Score: 7
+:DateUnix: 1434922006.0
+:END:
+
+***** Hmm, I don't think I'll use it as a backend, but I like the idea of automatically reposting stories over there. I'll think about it and then contact the author, maybe we can figure something out =)
+:PROPERTIES:
+:Author: raymestalez
+:Score: 1
+:DateUnix: 1434923805.0
+:END:
+
+
+** Hi! Thanks to your feedback in the previous thread I've improved the homepage and added some features, and now I want to share with you the first version of the website =)
+
+Please let me know what you think, I'll gladly receive some feedback and critique and build features that you request.
+:PROPERTIES:
+:Author: raymestalez
+:Score: 2
+:DateUnix: 1434895727.0
+:END:
+
+
+** Is there any possibility of automating the transfer of stories from other fic-hosting sites?(Similar to what AO3 does for all websites but FFN)
+:PROPERTIES:
+:Author: avret
+:Score: 2
+:DateUnix: 1434898274.0
+:END:
+
+*** I already have a script that imports stories from FFN, I just haven't built an interface for it yet. This feature is definitely coming.
+
+For now, if you want to import your stories from any site - just let me know, and I'll do that for you.
+:PROPERTIES:
+:Author: raymestalez
+:Score: 5
+:DateUnix: 1434898880.0
+:END:
+
+**** Ok, excellent, thanks(I ask b/c I've a 46 chapter story I'd like to import, and at that level it'll take at least 1 or 2 hours to do manually).
+:PROPERTIES:
+:Author: avret
+:Score: 1
+:DateUnix: 1434901682.0
+:END:
+
+
+**** All of them? Cause I'm working on archiving all of ffn, and I'm almost done.
+:PROPERTIES:
+:Author: nerdguy1138
+:Score: 1
+:DateUnix: 1435029960.0
+:END:
+
+***** No, not all, only the stories author wants to import.
+:PROPERTIES:
+:Author: raymestalez
+:Score: 1
+:DateUnix: 1435031698.0
+:END:
+
+
+** Instead of getting your website, I get the following error message:
+
+TypeError at /
+
+unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+
+Request Method: GET
+
+Request URL: [[http://rationalfiction.io/]]
+
+Django Version: 1.8.2
+
+Exception Type: TypeError
+
+Exception Value:
+
+unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+
+Exception Location: ./posts/utils.py in score, line 12
+
+Python Executable: /usr/local/bin/uwsgi
+
+Python Version: 3.4.3
+
+Python Path:
+
+['.',
+
+'',
+
+'/usr/local/lib/python34.zip',
+
+'/usr/local/lib/python3.4',
+
+'/usr/local/lib/python3.4/plat-linux',
+
+'/usr/local/lib/python3.4/lib-dynload',
+
+'/usr/local/lib/python3.4/site-packages']
+
+Server time: Mon, 22 Jun 2015 01:20:40 +0000
+
+So yeah, make of that what you will
+:PROPERTIES:
+:Author: FuguofAnotherWorld
+:Score: 2
+:DateUnix: 1434936226.0
+:END:
+
+*** Oh, it was /very/ unwise of me to edit the website right after the launch.
+
+Sorry for that, now all should be fixed.
+:PROPERTIES:
+:Author: raymestalez
+:Score: 2
+:DateUnix: 1434937376.0
+:END:
+
+
+*** I get the same error: However, loading a specific story works.
+:PROPERTIES:
+:Author: avret
+:Score: 1
+:DateUnix: 1434937051.0
+:END:
+
+
+** So /that/ finally happened.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1434900981.0
+:END:

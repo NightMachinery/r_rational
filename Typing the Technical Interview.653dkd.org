@@ -1,0 +1,166 @@
+#+TITLE: Typing the Technical Interview
+
+* [[https://aphyr.com/posts/342-typing-the-technical-interview][Typing the Technical Interview]]
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 16
+:DateUnix: 1492057825.0
+:END:
+
+** I find myself confused and it's been a year since I last did any programming (if you can call a CS class or two /real/ programming), but what is so amazing, interesting, or novel about these interviews that readers like so much?
+:PROPERTIES:
+:Author: xamueljones
+:Score: 5
+:DateUnix: 1492059333.0
+:END:
+
+*** They fit nicely into the ancient tradition of mysticism in programming (ancient in the field, anyway), updated with modern superstitions about functional languages and cultural references to the valley workplace. The prose is well-written, and the characters interesting - there's a lovely ring of authenticity to the internal dialogue, reflecting both Norse poetry and the experience of working through a hard problem. Finally, the presence and quality of the program snippets is better than anything else I can remember; not surprising given the author's background.
+
+TLDR they're technically excellent in every sense.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 17
+:DateUnix: 1492062615.0
+:END:
+
+
+*** Everything the other guy said is correct. However there's some additional points. They are hilarious. Basically they take everything that is normal or reasonable and stand it on its head. Things that are easy the witch claims are difficult and with ease she does things that don't appear possible. For example Haskell is statically typed and compilied but she uses it as if there were barely any types. The entire point of Haskell is a ton of type checking but she gets around that. And nearly everything she does is super elegant even though it would be awful to think through or come up with.
+:PROPERTIES:
+:Author: xThoth19x
+:Score: 7
+:DateUnix: 1492079854.0
+:END:
+
+**** Oh yes, she has the subversive and playful attitude of a true hacker (in the old sense of that word). Twisting systems to the breaking point just for the fun of it, doing things the creators thought were impossible... Delightful.
+
+If you have any background in distributed systems (knowing what ACID is is plenty), the rest of the blog has some fantastic write-ups of his work finding bugs.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 7
+:DateUnix: 1492084171.0
+:END:
+
+
+*** It's been 3 days since I've done any /functional/ programming
+
+I'm still lost
+
+#+begin_quote
+  but what is so amazing, interesting, or novel about these interviews that readers like so much?
+#+end_quote
+
+The thought of someone doing "carmack magic number" all the time form start to finish of a program makes me hard
+:PROPERTIES:
+:Author: monkyyy0
+:Score: 3
+:DateUnix: 1492063963.0
+:END:
+
+**** It's not really functional programming.
+
+[[http://www.cse.chalmers.se/%7Ehallgren/Papers/hallgren.pdf][It's logic programming, using Haskell's type system as a weird dialect of prolog.]]
+
+It's fairly well known that C++'s templates are actually a turing-complete functional programming language in disguise. Somewhat similarly, Haskell's typeclass instance resolution, when paired with a few language extensions, is actually a logic programming language in disguise.
+:PROPERTIES:
+:Author: pipocaQuemada
+:Score: 2
+:DateUnix: 1492099434.0
+:END:
+
+
+** Previously:
+
+[[https://aphyr.com/posts/340-reversing-the-technical-interview]]
+
+[[https://aphyr.com/posts/341-hexing-the-technical-interview]]
+:PROPERTIES:
+:Author: _stoodfarback
+:Score: 3
+:DateUnix: 1492070002.0
+:END:
+
+
+** #+begin_quote
+  #+begin_example
+    *Main> :type solution (nil :: N6)
+  #+end_example
+#+end_quote
+
+That looks like 6 queens to me. Using =N8= takes a couple of minutes, but seems to work.
+:PROPERTIES:
+:Author: Veedrac
+:Score: 2
+:DateUnix: 1492076331.0
+:END:
+
+*** She was asked to solve for N-queens, not 8, so displaying either is proof.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1492122744.0
+:END:
+
+**** Fair.
+:PROPERTIES:
+:Author: Veedrac
+:Score: 1
+:DateUnix: 1492122831.0
+:END:
+
+
+*** In theory the 1st and last queen is given
+:PROPERTIES:
+:Author: monkyyy0
+:Score: 1
+:DateUnix: 1492118370.0
+:END:
+
+**** By what?
+:PROPERTIES:
+:Author: Veedrac
+:Score: 1
+:DateUnix: 1492119675.0
+:END:
+
+***** The first queen is given because it can literally go anywhere, no constraints
+
+the last because there is only one possible spot, its literally 8,unused column.
+
+The punch line is she's looking at a "family" of solutions and doing the rest in her head. Granted the easiest solution of the family given its presentation, but still.
+:PROPERTIES:
+:Author: monkyyy0
+:Score: 1
+:DateUnix: 1492121106.0
+:END:
+
+****** This is the board given in the answer in the story:
+
+#+begin_example
+    0 1 2 3 4 5 6 7
+  0 · · ♛ · · · · ·
+  1 · · · · · ♛ · ·
+  2 · ♛ · · · · · ·
+  3 · · · · ♛ · · ·
+  4 ♛ · · · · · · ·
+  5 · · · ♛ · · · ·
+  6 · · · · · · * ·
+  7 · · · · · · · *
+#+end_example
+
+The final two queens cannot be placed on this board as the only two remaining places not under attack are those with asterisks, but they attack each other.
+:PROPERTIES:
+:Author: Veedrac
+:Score: 2
+:DateUnix: 1492122462.0
+:END:
+
+******* hmmmm am I wrong about the last one?
+
+In my mind the last two queens should come as a set, the 2nd the last should consume the safety all but one square if its going to be valid, I don't think you can swap rows in any of the solutions all valid transformations are more complicated then that, i.e. you'll never see a case where the any two queens can share 4 safe potions between themselves suggesting 2 branching cases, right?
+
+I'm quite sure that the first is freebie tho.
+:PROPERTIES:
+:Author: monkyyy0
+:Score: 1
+:DateUnix: 1492125162.0
+:END:

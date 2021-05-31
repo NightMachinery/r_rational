@@ -1,0 +1,252 @@
+#+TITLE: Monty’s Hall
+
+* [[https://vanpeerblog.wordpress.com/montys-hall/][Monty’s Hall]]
+:PROPERTIES:
+:Author: VanPeer
+:Score: 46
+:DateUnix: 1472435624.0
+:END:
+
+** Hopefully next time Forwin's first thought in this situation is "Am I willing to stake my life on the assumption that this person is a complete moron?".
+
+Sometimes people are just stupid, but it's worth being /really/ sure they're stupid if you're gambling with your life.
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 11
+:DateUnix: 1472482398.0
+:END:
+
+*** Exactly. Sometimes the enemy isn't as stupid as he seems.
+:PROPERTIES:
+:Author: VanPeer
+:Score: 4
+:DateUnix: 1472483006.0
+:END:
+
+
+** Even before he was introduced to the true probabilities, Forwin should at least have realised that after revealing one goblet, the corporal's odds jumped to a minimum of 50/50. Not worth staking your life on.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 7
+:DateUnix: 1472511116.0
+:END:
+
+
+** Wait, best of ten? Surely you must mean some odd number like nine or eleven?
+
+Liked it overall, though.
+:PROPERTIES:
+:Author: AugSphere
+:Score: 5
+:DateUnix: 1472456393.0
+:END:
+
+*** An odd number would make more sense to avoid a draw, wouldn't it. Hmm. Thanks.
+:PROPERTIES:
+:Author: VanPeer
+:Score: 7
+:DateUnix: 1472465638.0
+:END:
+
+**** I've always thought that "best of X" was a strange way to specify the format. "First to (X+1)/2 victories" seems way more obvious. Best-or-three becomes "first to reach two victories", best-of-five "first to three" and so on. It's functionally closer to how the games are usually played as well. Most of the time a "best of X" series doesn't actually involve X games, but rather goes on until one side accumulates enough victories.
+:PROPERTIES:
+:Author: AugSphere
+:Score: 8
+:DateUnix: 1472479697.0
+:END:
+
+
+** He'd have a 7.7% chance of losing if his 2/3 estimate was correct, which increases to a 12.2% chance if they play a single round tiebreaker in the event of a 5-5 tie.
+
+That's like playing Russian roulette with 1 bullet and 13 chambers (or 8 chambers).
+
+I suppose that this is roughly in line with what "almost certainly" typically means.
+
+#+begin_quote
+  But Forwin /couldn't/ lose, could he? The odds of the corporal guessing the correct goblet was only one in three, and the corporal would almost certainly lose to those odds if the game was played ten times in a row.
+#+end_quote
+:PROPERTIES:
+:Author: keeper52
+:Score: 4
+:DateUnix: 1472470611.0
+:END:
+
+*** I realise this isn't the point of the discussion, but I'm still curious how you got the 7.7% chance.
+
+I'm getting 14.5% by evaluating the survival function of the negative binomial distro (for five successes with 2/3 success chance) at 4.
+:PROPERTIES:
+:Author: AugSphere
+:Score: 5
+:DateUnix: 1472480479.0
+:END:
+
+**** It's 14.5% for best out of 9 (or first to 5), and 12.2% for best out of 11 (or first to 6).
+
+7.7% is the chance of losing 6 or more out of 10 rounds. There is also a 13.7% chance of a 5-5 tie, which could count as a push where no one loses or could be broken by playing one more round (which makes the game equivalent to best out of 11 or first to 6).
+:PROPERTIES:
+:Author: keeper52
+:Score: 4
+:DateUnix: 1472502552.0
+:END:
+
+***** It's awesome that neither of us was actually wrong and we were just working with different scenarios. It also handily demonstrates my point that "best of ten" is a very ambiguous way to specify the format.
+:PROPERTIES:
+:Author: AugSphere
+:Score: 3
+:DateUnix: 1472524505.0
+:END:
+
+
+** That was fun, I'd definitely read more in this setting/style.
+:PROPERTIES:
+:Author: Themnos
+:Score: 3
+:DateUnix: 1472444261.0
+:END:
+
+*** Thanks!
+:PROPERTIES:
+:Author: VanPeer
+:Score: 1
+:DateUnix: 1472465538.0
+:END:
+
+
+** Well done! This would make for a fun event in an RPG :) Hope to see more from you, if you do others like this! (or even not)
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 3
+:DateUnix: 1472468892.0
+:END:
+
+*** Thanks for the encouragement. That keeps me writing.
+:PROPERTIES:
+:Author: VanPeer
+:Score: 2
+:DateUnix: 1472482932.0
+:END:
+
+
+** Now that everyone has overcome the hurdle of Monty Hall, the next step is to achieve intuitive understanding of the [[https://arbital.com/p/sockdresser_search/][sock dresser]] and unravel the [[https://www.gwern.net/docs/statistics/1994-falk][mysteries of hope]].
+:PROPERTIES:
+:Author: AugSphere
+:Score: 2
+:DateUnix: 1472616220.0
+:END:
+
+*** Thanks for the links. I'm intrigued.
+:PROPERTIES:
+:Author: VanPeer
+:Score: 2
+:DateUnix: 1473520590.0
+:END:
+
+
+** Excellent! Write more, please.
+:PROPERTIES:
+:Author: AlexAlda
+:Score: 1
+:DateUnix: 1472448994.0
+:END:
+
+*** Thanks !
+:PROPERTIES:
+:Author: VanPeer
+:Score: 1
+:DateUnix: 1472465559.0
+:END:
+
+
+** Was a very entertaining read, I must say. Especially considering how I only recently learnt about the MH problem recently and am even now still somewhat baffled by it. I /get/ it but getting it was a painful process, lol.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 1
+:DateUnix: 1472496123.0
+:END:
+
+
+** #+begin_quote
+  Uncovering an empty goblet wouldn't reveal anything, since Forwin would always uncover an empty goblet no matter what the corporal chose at first. The corporal couldn't know whether the coin was under his first choice or under the other uncovered goblet. The odds didn't change, right?
+#+end_quote
+
+Thought this meant Forwin would precommit to revealing one of the two empty goblets regardless of the corporal's choice, meaning that the corporal's choice and Forwin's precommitment could coincide in the same goblet.
+
+There's also a confounding factor left unaddressed. If the goblet Forwin chooses to remove is replaced on the tray, the corporal may be able to hear or see which goblet conceals the coin based on the sound or movement of the tray or goblet. You should specify that the removed goblet stays off the tray.
+
+How did the wizard's demonstration help Forwin? How does removing one of six shot glasses inform which of the remaining four don't contain the coin? Does it not, but was contrived by the wizard to trigger Forwin's leap to understanding?
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 1
+:DateUnix: 1472518845.0
+:END:
+
+*** Forwin is only obliged to reveal whichever goblet happens to be empty out of the two remaining goblets that are not part of the corporal's tentative pick. He is not precommitted to a specific goblet. Sorry if that was unclear. The story assumes a familiarity with the Monty Hall problem.
+
+Many people (myself included), were absolutely convinced that the odds don't change by revealing the empty goblet, until the Bayesian reasoning is explained. The Wizard's demonstration is my own version of understanding the Bayesian explanation. The key, as I see it, is to understand that the probability of the initial pick being correct is low. The coin is more likely to be in one of the unselected goblets. Revealing the empty goblet, guides the corporal to the most likely pick. This is much more obvious when considering many more goblets. Yes, the Wizard was trying to trigger Forwin's leap of understanding.
+:PROPERTIES:
+:Author: VanPeer
+:Score: 1
+:DateUnix: 1472520406.0
+:END:
+
+**** Here's a more Bayesian way to think of it: If you pick goblet 1, and then you observe goblet 2 being revealed as empty, you know that you are in one of two universes. Either a) the coin is in goblet 3, or b) the coin is in goblet 1.
+
+Now, in advance (before goblet 2 was revealed), each universe was equally likely (assuming we truly picked the initial goblet at random). But which of those two universes is more likely to have produced the observed result of goblet 2 being revealed as empty?
+
+In universe 'a', goblet 2 was the only choice. That universe would reveal goblet 2 with 100% probability.
+
+In universe 'b', either goblet 2 or goblet 3 could have been revealed. That universe would reveal goblet 2 with only 50% probability.
+
+Thus we can conclude that universe 'a' is twice as likely as universe 'b'.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 3
+:DateUnix: 1472523910.0
+:END:
+
+***** Solid explanation. The issue for people like me, is that explicitly adding probabilities is not intuitive, even if the math is clear.
+:PROPERTIES:
+:Author: VanPeer
+:Score: 1
+:DateUnix: 1472565479.0
+:END:
+
+****** Actually, this also ties in to your earlier comment, "The key, as I see it, is to understand that the probability of the initial pick being correct is low."
+
+Whichever goblet was revealed, /it is more likely that it was a forced choice than that you picked correctly and the goblet was chosen randomly/.
+:PROPERTIES:
+:Author: thrawnca
+:Score: 2
+:DateUnix: 1472596940.0
+:END:
+
+
+**** Yeah, I've always found it helpful when trying to comprehend the Monty Hall problem to demonstrate it with a /huge/ number of doors.
+
+Example:
+
+[1] [2] [3] [4] *[X]* [6] [7] [8] [9] [10] [11] [12] [13] [14] [15]
+
+You choose the third.
+
+[1] [2] *[3]* [4] *[X]* [6] [7] [8] [9] [10] [11] [12] [13] [14] [15]
+
+All doors except for the third and the fifth (where the XXX is) are revealed, leaving these:
+
+=[3] [XXX]=
+
+Question: Should you switch? When presented in this manner, I think it's obvious what you should do.
+
+Excellent story.
+:PROPERTIES:
+:Author: Lugnut1206
+:Score: 3
+:DateUnix: 1472524629.0
+:END:
+
+***** This is the exact reasoning I used to convince myself.
+:PROPERTIES:
+:Author: VanPeer
+:Score: 2
+:DateUnix: 1472564900.0
+:END:

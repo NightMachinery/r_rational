@@ -1,0 +1,315 @@
+#+TITLE: SMBC: Bayesian Immortality
+
+* [[http://smbc-comics.com/index.php?id=4127][SMBC: Bayesian Immortality]]
+:PROPERTIES:
+:Score: 59
+:DateUnix: 1464707559.0
+:END:
+
+** Mouseover text:
+
+#+begin_quote
+  I'm just realizing the Venn diagram for people who know the reference and people who like the joke is a null set.
+#+end_quote
+
+As a huge SMBC fan, I admit this is approximately accurate tbh
+:PROPERTIES:
+:Author: wtfbbc
+:Score: 54
+:DateUnix: 1464708081.0
+:END:
+
+
+** The Bayesian overloader sounds like the internet.
+:PROPERTIES:
+:Author: worldsayshi
+:Score: 10
+:DateUnix: 1464770193.0
+:END:
+
+
+** Hmm, you can still have both finite and infinite "theories" integrate to some trivial slice of probability (and indeed you always do with continuous parameters, since there are infinitely many values between two points).
+
+It's also very common and helpful to assign probability = 0 to certain values (e.g., what's your prior that a standard deviation is negative?).
+:PROPERTIES:
+:Author: captainNematode
+:Score: 15
+:DateUnix: 1464711960.0
+:END:
+
+*** Things like this fall prey to a certain mistake. This is in the same category of those "mugging" thought experiments. In these experiments, there is someone saying "I'm actually simulating this universe, give me 5 dollars and you'll get 10^{10^{10^{10}}} happiness" or something. It is then said that even if it's super unlikely this is true, it's not zero, and the happiness value is really high, and asks us how we could logically turn it down.
+
+The mistake made by the presenter in the comic, and also by people who think the thought experiments about mugging are interesting, is not having [[https://en.wikipedia.org/wiki/Error_bar][error bars]]. For most things that we evaluate, we need to have error bars. It is categorically imperative not to consider probabilities below a certain amount. It is literally self-defeating to evaluate a potential outcome and try to reason about it, if that potential outcome is sufficiently unlikely: spending time evaluating things that are smaller than your ability to measure accurately actually decreases your ability to make good choices.
+
+If we say "I think the likelihood of this being true is 0.000004 ± 0.000300" about a particular outcome, then we shouldn't evaluate anything based on that outcome at all: our measurement is not accurate enough to distinguish something this unlikely from something that has zero likelihood of truth.
+
+So, it's not quite true that "all probabilities must add to 1 in total" when we're making these judgement calls. Instead, we should say that "all probabilities, accounting for error, must add to 1 in total"--and effectively ignore outcomes that are sufficiently unlikely that we can't distinguish them from impossible. In fact, this is what most people do.
+:PROPERTIES:
+:Author: blazinghand
+:Score: 24
+:DateUnix: 1464725098.0
+:END:
+
+**** Uncertainty about uncertainty, in Bayesian terms, resolves to plain old first-order uncertainty. If you want meta-uncertainty, you need [[https://en.wikipedia.org/wiki/Dempster%E2%80%93Shafer_theory][DST]] or something like that.
+
+Of course, unadorned Bayesian reasoning is only epistemic, it doesn't prescribe actions. Most flavors of Bayesian decision theory do have ways to deal with Pascal's Muggings.
+:PROPERTIES:
+:Author: khafra
+:Score: 7
+:DateUnix: 1464868827.0
+:END:
+
+***** Uncertainty about the parameters of your uncertainty in Bayesian stats is hierarchical Bayes methods, which are actually more powerful and really useful at the research frontier right now.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1465166479.0
+:END:
+
+
+**** The point of the Muggings isn't actually the thought-experiment, [[https://arxiv.org/abs/0712.4318][it's that certain expectations don't actually converge.]]
+
+[[http://polymer.bu.edu/hes/rp-peters16gellmann.pdf][And of course, there are ways to just model things differently.]]
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1464828917.0
+:END:
+
+
+**** If the probability of the likelihood of this being true is greater than zero (and according to how error bars are usually used, even greater than 50%), we should invest a monotonous amount of effort into the hypothesis.
+
+(I suspect that Pascal's Mugging is defeated by game-theoretic concerns.)
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 2
+:DateUnix: 1464771535.0
+:END:
+
+
+*** In that case, how do you /know/ that 1+1=2? Is this hypothesis based on evidence, or is it something you just know somehow? I'm pretty sure my prior here is based on the evidence that whenever I have added one thing to another thing in the past I got two things, and whenever I typed 1+1= into a calculator it would always say 2. In order to convince me that 1+1 does not equal 2, I would at least need a fucking shitton of shittons of evidence. Like if you could demonstrate that I had hallucinated whenever I added 1 thing to another thing, and if every time I add one thing to another thing in the next few decades I don't get two things. But my prior probability is overwhelmingly in favor of the hypothesis that 1+1=2. Even if I did see the evidence mentioned above, it would be /extremely hard/ to distinguish between 1+1 not equaling 2 and plain old human error, and human error has a MUCH higher prior.
+
+My prior that a standard deviation is negative? Well, if you can turn a data distribution inside-out, or loop it somehow, so that getting farther away from the mean actually brings you closer...but that would require that math is inconsistent. So really really really REALLY unimaginably low prior.
+:PROPERTIES:
+:Author: Sailor_Vulcan
+:Score: 3
+:DateUnix: 1464718731.0
+:END:
+
+**** "But surely there can't be a LessWrong post about /everything/!"
+
+Ahem. [[http://lesswrong.com/lw/jr/how_to_convince_me_that_2_2_3/][How To Convince Me That 2+2=3 - LessWrong]]
+:PROPERTIES:
+:Author: FeepingCreature
+:Score: 16
+:DateUnix: 1464723368.0
+:END:
+
+
+**** Eh, I'd say probability is in the model (or the mind, maybe), not the world. The "true" state of affairs is already determined (well, maybe barring some interpretations of QM, or something). You can pick whatever priors you want (or hyperpriors, or hyperhyperpriors, etc.) and go with them for either your model or your mind, including assigning all the probability density to the value "2" when evaluating 1+1. Otherwise, though, you just arbitrarily designate priors (well, you can use the posteriors from earlier analyses, but eventually the turtles have to stop stacking) -- they're not out there in the world for you to discover (hence why they're priors). As for /knowing/, the epistemologists have been arguing that one for ages (and I think you can get more fundamental than 1+1; think stuff like the laws of thought, /A/ = /A/, ¬(A∧¬A), etc.).
+
+If standard deviations permit disagreement, can I fall back to the classic playground "if there are no absolute truths, what about this statement"? As in, you can assign probabilities to probabilities, and if you say a /p/ of 0 is impossible, you've effectively assigned a probability of 0 to 0. Consider, for example, trying to determine the fairness of a coin. You'd use a binomial (or Bernoulli) likelihood, and in a Bayesian framework have to assign a prior to its parameter, /p/. Typically you'd define this on an interval between 0 and 1 using whatever distribution you fancy (uniform, beta, etc.). Values outside this interval would then receive zero probability density. You could use a prior distribution that's defined on all the reals if you wanted (and depending on what it is, it might work out ok in practice; a normal centered on .5 with low sd), but that'd be silly.
+:PROPERTIES:
+:Author: captainNematode
+:Score: 3
+:DateUnix: 1464728344.0
+:END:
+
+
+** I believe the point of the joke was someone following their highly flawed model to a logically absurd conclusion resulting in death, without stopping to consider that reality might be different than their model. That is, someone having a psychotic break. Or behaving like masses of humans have throughout history regarding religion and war. And that by using the buzzword "Bayesian" this nutjob got people to listen while he gave a lecture about it and then committed suicide on stage. And that afterwards instead of reacting to a death or life threatening injury, one of the "rational" audience spent time defending a competing buzzword.
+
+Would there be less salt here if he had used the buzzword "Quantum" rather than "Bayesian"? Would you be able to notice the point if you weren't busy defending your favorite buzzword, rather like the audience member in the comic? If the guy had instead given a lecture about how he had figured out how to get into Muslim heaven and enjoy the virgins by stabbing himself with a special knife, and one of the audience had commented after the suicide, "That's why I'm a Christian," would the point of the comic been any different?
+:PROPERTIES:
+:Author: OrzBrain
+:Score: 9
+:DateUnix: 1464801141.0
+:END:
+
+*** The pattern-match reading of this comic is anti-bayesian. The pattern-match reading of the XKCD bayesianism comic was pro-bayesian. I didn't particularly enjoy either because neither make sense as a commentary about statistics.
+
+So, at least for me, I think the joke fails to land because it's not an intellectually rigorous poke at the nominal subject (which I was expecting and hoping to be far funnier), not mere partisanship. The equivalent joke about a Christian who thought God would protect him because he lives in the best of all possible worlds and his continued existence is obviously a part of that would also fail for me. (A quantum immortality version might have been more salvageable with a different punchline; I'd have to think of one though.)
+:PROPERTIES:
+:Author: TexasJefferson
+:Score: 2
+:DateUnix: 1464929969.0
+:END:
+
+
+** One problem is that he is changing the map and assuming that the territory will change with it.
+:PROPERTIES:
+:Author: gbear605
+:Score: 14
+:DateUnix: 1464709572.0
+:END:
+
+*** More like he's drawing trillions of maps that may or may not be the true map and hoping reality get's confused about it. I'm pretty sure Mr. Weinersmith is not actually proposing that someone attempt this, though.
+:PROPERTIES:
+:Author: SometimesATroll
+:Score: 33
+:DateUnix: 1464715605.0
+:END:
+
+**** Instruction unclear, please send paramedics.
+:PROPERTIES:
+:Author: Iconochasm
+:Score: 11
+:DateUnix: 1464729985.0
+:END:
+
+***** Request unclear. I'm sorry; your new puncture wound is plugged, though.
+:PROPERTIES:
+:Author: failed_novelty
+:Score: 4
+:DateUnix: 1464741345.0
+:END:
+
+
+**** That sounds like an UNSONG plot device
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1464796664.0
+:END:
+
+***** Called, fittingly, "The Plot Device."
+:PROPERTIES:
+:Author: awesomeideas
+:Score: 1
+:DateUnix: 1464821304.0
+:END:
+
+
+** Do people believe the assertion in the second panel? So if you could only come up with one theory it must be true?
+:PROPERTIES:
+:Author: pizzahotdoglover
+:Score: 1
+:DateUnix: 1464745887.0
+:END:
+
+*** The sum of all /possibilities/ multiplied by their probability should equal 1, but just because you can only come up with one theory doesn't mean that it's the only possibility. For that matter, just because you can only come up with thirty theories doesn't mean there are only thirty possibilities. Unknown unknowns are notoriously hard to correct for though.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 13
+:DateUnix: 1464750869.0
+:END:
+
+**** Right, so since coming up with new theories doesn't change the total number of possibilities, then the whole premise of the comic doesn't work, since those possibilities would have already existed before the machine described them.
+:PROPERTIES:
+:Author: pizzahotdoglover
+:Score: 2
+:DateUnix: 1464753550.0
+:END:
+
+***** #+begin_quote
+  Right, so since coming up with new theories doesn't change the total number of possibilities, then the whole premise of the comic doesn't work,
+#+end_quote
+
+Do you always try to figure out if the premise of a joke "works"?\\
+- Two numbers walk into a bar...\\
+- Wait a minute, numbers aren't corporeal entities, the whole premise of this doesn't work.
+:PROPERTIES:
+:Author: ArisKatsaris
+:Score: 12
+:DateUnix: 1464764787.0
+:END:
+
+****** If the first reaction to a joke isn't "haha", but "wait, that doesn't make sense", there's still room for the joke to be improved.
+:PROPERTIES:
+:Author: holomanga
+:Score: 2
+:DateUnix: 1464782065.0
+:END:
+
+******* Not everyone's "first reaction" to this comic was the same...
+:PROPERTIES:
+:Author: ArisKatsaris
+:Score: 7
+:DateUnix: 1464787409.0
+:END:
+
+
+****** I get your point, but the part of the joke that doesn't make logical sense should be the punchline not the premise. A joke meant to highlight the absurdity of a position doesn't really work if it gets the position completely wrong. Anyway, I only brought it up because I wanted to find out if that's what Bayesian theories really said.
+:PROPERTIES:
+:Author: pizzahotdoglover
+:Score: 1
+:DateUnix: 1464787279.0
+:END:
+
+******* #+begin_quote
+  A joke meant to highlight the absurdity of a position
+#+end_quote
+
+Perhaps you're wrong about what the joke meant to do. I don't see it as a mockery of Bayesianism...
+:PROPERTIES:
+:Author: ArisKatsaris
+:Score: 6
+:DateUnix: 1464792664.0
+:END:
+
+
+******* It's SMBC, he rarely takes a position seriously and rigorously from the outset, though from what I can tell he does understand them well enough.
+:PROPERTIES:
+:Author: FuguofAnotherWorld
+:Score: 1
+:DateUnix: 1464909053.0
+:END:
+
+
+******* I'm super-late to the party here, but I had another thought on the matter...
+
+#+begin_quote
+  the part of the joke that doesn't make logical sense should be the punchline not the premise
+#+end_quote
+
+If I had to really break the joke down to its essentials I'd separate it out as:
+
+Premise: the 'main' character has terribly misunderstood Bayesianism
+
+Development: his misunderstanding leads him to commit an entirely stupid form of suicide
+
+Punchline: instead of saying "What a terrible misunderstanding and misrepresentation of Bayesianism", the person in the audience says "That's why I'm a frequentist".
+
+The implication being that Bayesianism really does predict immortality, and that the presenter's Bayesianism was therefore "the problem", rather than his fatal misunderstanding of it.
+
+So it /is/ the punchline that makes no logical sense; the rest of the comic was "played straight" with exactly the normal logical conclusion of stabbing yourself in the gut.
+:PROPERTIES:
+:Author: noggin-scratcher
+:Score: 1
+:DateUnix: 1465498035.0
+:END:
+
+
+****** I meant the premise within the context of the joke. By the premise in your example, numbers can walk, etc.
+:PROPERTIES:
+:Author: pizzahotdoglover
+:Score: 1
+:DateUnix: 1464787806.0
+:END:
+
+******* Honestly it feels almost anti humor to me. It begins with him making a true statement. He extrapolates wrongly. He builds a machine based off of wrongful extrapolation. He states the outcome of the machine. now here is where I got tripped up mentally, THIS IS A COMIC. In one comic someone disproved math, lit themselves on fire and became more powerful. I honestly expected his machine to work within the comic. Then he died. Subverting expectations and entertaining me.
+:PROPERTIES:
+:Author: Rouninscholar
+:Score: 3
+:DateUnix: 1464797031.0
+:END:
+
+
+******* The premise within the context of the joke is that there's a buffoon who doesn't understand how Bayesianism works...
+
+...I mean it's not even as if his device worked or anything, even within the joke.
+
+Though that would have been funny.
+:PROPERTIES:
+:Author: ArisKatsaris
+:Score: 1
+:DateUnix: 1464792558.0
+:END:
+
+
+***** #+begin_quote
+  the whole premise of the comic doesn't work
+#+end_quote
+
+The premise of the comic is that this guy's thing doesn't work, though
+:PROPERTIES:
+:Author: Putnam3145
+:Score: 4
+:DateUnix: 1464774435.0
+:END:

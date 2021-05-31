@@ -1,0 +1,147 @@
+#+TITLE: GEB Discussion #16 - Chapter 15: Jumping out of the System
+
+* GEB Discussion #16 - Chapter 15: Jumping out of the System
+:PROPERTIES:
+:Author: xamueljones
+:Score: 13
+:DateUnix: 1431739494.0
+:END:
+*Gödel, Escher, Bach: An Eternal Golden Braid*
+
+This is a discussion of the themes and questions concerning the *Chapter 15: Jumping out of the System* and its dialogue, *Edifying Thoughts of a Tobacco Smoker*.
+
+*Generalization of Gödel's Theorem*
+
+After last chapter's proof of Gödel's Theorem, one might be wondering if this applies to all formal systems or only to TNT. One possible way to circumvent the proof is to see if we can make a ‘stronger' formal system where Gödel's Theorem doesn't apply. Hofstadter first tries adding G (I Cannot Be Proven in Formal System TNT) as an axiom to the system. Since the proof previously depended our inability to derive G this resolves that problem very nicely. Unfortunately since TNT is part of TNT+G, every step that we applied to TNT to derive G can be applied to TNT+G which ends up deriving a /different/ Gödelian statement (I Cannot Be Proven in Formal System TNT+G).
+
+Therefore Gödel's proof can be applied to TNT+G, TNT+~G, TNT+G', TNT+~G', TNT+G'', TNT+~G'', and so on to “I Cannot Be Proven in Formal System X”. All formal systems with TNT as part of it, is doomed to the same failure.
+
+On the other hand, all of the Gödelian sentences, *G*, for the derived formal systems, TNT+*G*, mentioned so far has the form, “I cannot Be Proven in TNT+*G*”. Since there is a repeating pattern, we can create a generalizable axiom. It doesn't matter whether or not this is possible, we assume such an axiom, Omega-G, exists. In TNT+Omega-G, all Gödelian sentences in the previously mentioned TNTs can be derived. Unfortunately while the Gödelian sentence for TNT+G, TNT+~G, TNT+G', TNT+~G'... can all be derived, none of them are of the form “I Cannot Be Proven in TNT+Omega-G”. If we continue among this pattern, we get formal systems such as TNT+Omega-G+i, TNT+Omega-G+Omega-i, TNT+Omega-Omega-G, etc... where each formal system encompasses an infinite level of all formal systems coming previously. One last method one could try is to think on a meta-level where we use a BlooP program to write up an axiom handling all of them. Unfortunately, the Gödelian sentences for each level can't be predicted using our knowledge of prior levels, or they are not recursively-enumerable.
+
+But no matter how far we go, no given formal system X will ever have be capable of deriving the sentence, “I Cannot Be Proven in Formal System X”.
+
+The failure point of each and every single formal system was the fact that they were all derived from the first formal system, TNT. Since TNT is the weak point, could we side-step this issue by creating a completely different formal system without TNT's flaws?
+
+No because the proof for the Gödelian sentences only requires that the formal system has the following three properties:
+
+- The system can express any property about numbers, or arithmetical truths can be written as sentences from the system (it doesn't matter if it's true or false, only that it can be expressed). Without this property, the system doesn't qualify as a mathematical tool for dealing with numbers.
+- All general recursive truths can be expressed in the formal system, or theorems which can be recursively applied to all numbers at once. Without this property, the system is incapable of expressing general truths about a numerical property in finite time and is a very ‘weak' system. Such systems can be complete and consistent.
+- Axioms and theorems can be derived in finite time. Without this property, the system can't say what makes a derivation valid or not and isn't even a formal system at all.
+
+Once a given consistent system has the following three properties, it gains the ability of self-reference and is automatically incomplete due to the Gödelian sentence being underivable from with the system.
+
+......
+
+*Applying Gödel's Theorem to the Human Mind*
+
+Lucas seized on this idea as the reason why machines cannot ever be as smart as a human being, because since machines are rich enough to have the above three properties, they have ‘programs' or ‘thoughts' that they cannot run or compute. Since humans are able to ‘see' the Gödelian sentence of a system, then a human being must be ‘intelligent' in a way that machines cannot every match.
+
+The critical flaw in his argument is that he only observed humans finding the Gödelian sentence of simple formal systems such as TNT. As formal systems get more and more complex, we find it harder and harder to understand what types of derivations are possible and what would qualify as a Gödelian sentence, even when we know such a Gödelian sentence must exist. It's almost as if more complex formal systems are approximating the human mind. If the human mind can be represented as a mind boggling complex formal system, there would certainly be statements we cannot possibly think of or understand. Therefore, other similar complex formal systems would be equivalently impossible to find the Gödelian sentence of.
+
+The only way we can show that this fact is untrue is if we can prove that we can find the Gödelian sentence of any possible formal system. While there are an infinite number of formal systems making this impossible to prove for all systems, the fact that we find it harder and harder to figure out as the systems grow in complexity implies that there exist a system so complex, we can't possibly know its Gödelian statement.
+
+A Gödelian sentence for the human mind would likely be something like figuring out the truth of “I always lie”. While that sentence cannot be a Gödelian sentence for a human mind, since we understand the confusion and the paradox, it's likely a human's Gödelian sentence is something similar. Ted Chiang's story [[http://www.nature.com/nature/journal/v436/n7047/full/436150a.html][What's Expected of Us]] talks about a similar concept.
+
+This brings up the question of whether or not we can ever truly ‘jump out' of all mental systems. The answer seems to imply no, not even if you were to change yourself so completely that you wouldn't be recognizable as a human mind. Not even if we built an AI infinitely smarter then all humans. Even then, there would always be some sort of Gödelian idea or concept that no possible formal system could ever express. This is the power of infinity and the limits of knowledge. The only choice you have is to lower your expectations.
+
+......
+
+*Dialogue*
+
+This dialogue goes very deeply into the themes of self-reference and self-representation.
+
+Achilles' discussion with Crab about Magritte's paintings show Achilles being fooled by the paintings into thinking they are actual objects, then he ‘realizes' they are actually paintings, and then Crab takes the pipe out of the ‘picture'. This illustrates how we often confuse the self-reference as the object itself. For example, the painting at the end of the dialogue, [[http://en.wikipedia.org/wiki/The_Treachery_of_Images][The Treachery of Images]], refers to a painting of a pipe with the phrase “This is not a pipe” below the pipe in French. The phrase is referring to how the image is only a representation of a pipe and is not actually a pipe. Remember, [[http://wiki.lesswrong.com/wiki/The_map_is_not_the_territory][the map is not the territory]].
+
+The concept of self-reference also applies to Crab's song when he sings about the last line in his song.
+
+We also finally learn about what happened to Crab's Record Player Omega. The phonograph works by scanning the record and reconfiguring the player into something which won't break when playing the record. However the one part of the system that can't be changed is the analyzer itself. Therefore no matter what record is played, the analyzer would stay the same and breaks. This is analogous to the TNT being the same part of all derived TNT+Gs containing the properties required for a Gödelian sentence.
+
+There is a short paragraph where Achilles and Crab talk about another dialogue suspiciously similar to this one. [[http://en.wikipedia.org/wiki/Meta-reference][I wonder, did anyone wrote a guide to explain that dialogue?]]
+
+They then go on to talk about Spontaneous Self-Assembly and wonder if they could apply it to the record players. If the record player could reassemble after breaking apart, then it would be safe from all breaking records. Unfortunately just like cells, the phonograph is very likely to be capable of reassembly after certain breaks or if certain parts are left intact. Otherwise that's just nanotechnology.
+
+Crab learns his lesson and lowers his expectations of what records he wants to be played and by having a finite number of records, he weakens the ‘system' of his phonograph until Gödel's Theorem doesn't apply anymore. This is equivalent to having a complete and consistent system. As a side note, [[http://en.wikipedia.org/wiki/Tarski%27s_axioms][Tarski]] derived a list of axioms which can express all possible theorems of Euclidean Geometry and used it to prove that Euclidean Geometry is complete. Therefore, Euclidean Geometry is not powerful enough to express arithmetical truths.
+
+Crab mentions Henkin's Theorem which is a proof that any model only using first-order logic is complete which relates to [[http://en.wikipedia.org/wiki/G%C3%B6del%27s_completeness_theorem][Gödel's Completeness Theorem]]. This is sort like Gödel's Incompleteness Theorem which we just proved for all formal systems, but reversed. While Gödel's Incompleteness Theorem starts with a system having certain properties leads to a Gödelian sentence, Henkin's theorem starts with the system being complete and proves that it must have a model based on first-order logic. Basically "I am Provable in This Formal System" versus "I Cannot Be Proven in This Formal System". Therefore according to these theorems, Crab should win against Tortoise.
+
+I apologize for taking so long with writing the discussion for this chapter. I even took into account Hofstadter's Law!
+
+- Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law.
+
+Wikia Links:
+
+- [[http://godel-escher-bach.wikia.com/wiki/Chapter_15][Chapter 15]]
+
+- [[http://godel-escher-bach.wikia.com/wiki/Edifying_Thoughts_of_a_Tobacco_Smoker][Edifying Thoughts of a Tobacco Smoker]]
+
+Coming up next on May 18th is Chapter XVI: Self-Ref and Self-Rep.
+
+The discussion for the previous chapter is posted [[http://www.reddit.com/r/rational/comments/35mjwy/geb_discussion_15_chapter_14_on_formally/][here]].
+
+The discussion for the next chapter is posted [[http://www.reddit.com/r/rational/comments/3andzl/geb_discussion_17_chapter_16_selfref_and_selfrep/][here]].
+
+[[http://www.reddit.com/r/rational/comments/2yys1i/lets_start_the_read_through/][Official Schedule]].
+
+
+** I wish I could say that I was deliberately late so I could make a joke about Hofstadter's Law, but that would be a lie.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1431739662.0
+:END:
+
+
+** Awesome summary [[/u/xamueljones]].
+
+**** Chapter
+     :PROPERTIES:
+     :CUSTOM_ID: chapter
+     :END:
+
+- The chapter's discussion about Lucas argument why machines can never be as intelligent as humans was especially interesting to me.
+
+**** Dialogue
+     :PROPERTIES:
+     :CUSTOM_ID: dialogue
+     :END:
+
+- when the Crab asks
+
+  #+begin_quote
+    /Crab/: Curious that you should think so... I don't suppose that you know Henkin's Therem *forwards and backwards*, do you?
+  #+end_quote
+
+  This is similar to p.78:
+
+  #+begin_quote
+    /Tortoise/: Curious that you should think so... I don't suppose that you know Gödel's Incompleteness Theorem *backwards and forwards*, do you?
+  #+end_quote
+
+  but note that it's *forwards and backwards* vs *backwards and forwards* which matches with what [[/u/xamueljones]] says about Henkin's Theorem being somewhat the reversed of the Incompleteness Theorem.
+
+- They talk about *Copper, Silver, Gold: an Indestructible Metallic Alloy* which is a self-reference to GEB and was first mentioned on p. 402 in "Aria with Diverse Variations"
+
+  - the bowl of the pipe as a *copper* lining (p. 481)
+  - the records have a *silver* lining (p. 486)
+  - the frame of the picture shown in Fig. 82 has a *gold* lining (p.494)
+  - does that mean =copper = bach= (the pipe), =silver = gödel= (the records), =gold = escher=(painting)? That would be *e*ternal *g*olden *b*raid backwards, but against it would speak that in "Aria with Diverse Variations" it seems as if the intended association is =copper = Gödel= (*G*iraffe), =silver = Escher= (*E*lephants) and =gold = Bach= (*B*aboons)
+:PROPERTIES:
+:Author: markus1189
+:Score: 1
+:DateUnix: 1431848194.0
+:END:
+
+
+** #+begin_quote
+  A Gödelian sentence for the human mind would likely be something like figuring out the truth of “I always lie”. While that sentence cannot be a Gödelian sentence for a human mind, since we understand the confusion and the paradox, it's likely a human's Gödelian sentence is something similar. Ted Chiang's story What's Expected of Us[1] talks about a similar concept.
+
+  This brings up the question of whether or not we can ever truly ‘jump out' of all mental systems. The answer seems to imply no, not even if you were to change yourself so completely that you wouldn't be recognizable as a human mind. Not even if we built an AI infinitely smarter then all humans. Even then, there would always be some sort of Gödelian idea or concept that no possible formal system could ever express. This is the power of infinity and the limits of knowledge. The only choice you have is to lower your expectations.
+#+end_quote
+
+Not to research-wank too much, but it seems to me like this is just a matter of computational/logical uncertainty. You can't directly compute the uncomputable, but by running the attempt for longer and longer, you can eventually acquire a reasonable degree of belief that the computation won't eventually terminate.
+
+Actually formalizing how to do this is an open problem whose solution would help out a lot of things, big time.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1432046472.0
+:END:

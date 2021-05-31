@@ -1,0 +1,333 @@
+#+TITLE: [D] Monday General Rationality Thread
+
+* [D] Monday General Rationality Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 17
+:DateUnix: 1477926289.0
+:END:
+Welcome to the Monday thread on general rationality topics! Do you really want to talk about something non-fictional, related to the real world? Have you:
+
+- Seen something interesting on [[/r/science]]?
+- Found a new way to get your shit even-more together?
+- Figured out how to become immortal?
+- Constructed artificial general intelligence?
+- Read a neat nonfiction book?
+- Munchkined your way into total control of your D&D campaign?
+
+
+** */Happy Halloween!/*
+
+I just wanted to share this with y'all since I figure y'all would appreciate it. Recently I asked one of my professors this question:
+
+#+begin_quote
+  My friends and I heard of an interesting game called Odds, a revised version of "truth or dare" that works like this:
+
+  Some guy dares you to do something. You give a number for how little you want to do something, from 2 to 99. Both people countdown from 3, and the darer (the guy who is daring a challenge) and the dare-ee (the guy being dared and issuing the number) each say numbers smaller than the original number.
+
+  If the numbers match, the dare-ee has to do whatever they assigned odds to, and if they sum, the darer has to do it. So for example if Alice dares Bob to drink some shots or something, Bob gives a number from 2 to 99 (let's say he says 53). Then they countdown from 3.
+
+  If they both say 22, then Bob has to drink the shots. If both numbers sum to 53 (if Bob says 22 and Alice says 31) then Alice has to do it instead. My questions to you are,
+
+  A) What are the odds that they sum, and
+
+  B) What are the odds that they match?
+#+end_quote
+
+He replied:
+
+#+begin_quote
+  Of course, the answer to A and B is "It depends on what strategies Alice and Bob use". But what is an optimal strategy?
+
+  I will assume if Alice performs the task, she receives a penalty Ap (for some Ap < 0) and if Bob does, she receives reward Ar (for some Ar > 0). Similarly, Bob has penalty and reward Bp < 0 and Br > 0. I will further assume that these values are known to both players, and that each player is acting to maximize the expected payout.
+
+  What happens if the numbers both sum and match? I'm assuming that if the numbers both sum and match, both Alice and Bob perform the task, and receive both the penalty and reward.
+
+  Suppose Bob has already chosen the first number k. Alice may use some mixed strategy, choosing number 1 with probability a1, 2 with probability a2, and so on, with a1+a2+...+a(k-1) = 1. Similarly, Bob chooses numbers with probability b1, b2, and so on. Alice's expected payout is SUM_x (ax * ((Ap * b(k-x)) + (Ar * bx))). Bob's expected payout is SUM_x (bx * ((Bp * ax) + (Br * a(k-x)))). (That is, sum over all choices of number, the probability that number is chosen, times the expected payout of that choice, which is the penalty times the probability that the opponent chose the corresponding penalty number, plus the reward times the probability that the opponent chose the corresponding reward number.)
+
+  One obvious Nash equilibrium is for each player to choose each number with probability 1/(k-1). (This is a Nash equilibrium, since no matter what strategy the opponent uses, the expected payouts are the same - SUM_x (ax * ((Ap * (1/(k-1))) + (Ar * (1/(k-1))))) = (Ap+Ar) (1/(k-1)) for Alice (and similar for Bob).
+
+  There may be other equilibria - Suppose Ar + Ap > 0 and Br + Bp > 0 and k is even. Then there is a Nash equilibrium in which Alice and Bob both choose k/2. Suppose Ar + Ap < 0 and Br + Bp < 0 and k >= 5. Then there is a Nash equilibrium in which Alice chooses 1 with probability 1/2 and (k-1) with probability 1/2. Bob chooses 2 with probability 1/2 and (k-2) with probability 1/2. Each has an expected payout of 0. This is a Nash equilibrium - If Alice chooses 2 or (k-2) with nonzero probability, then the expected penalty will be larger than the expected reward, so the expected payout will be negative. (We can do something similar if k=3, Alice chooses 1 or 3, and Bob always chooses 2.) So in certain situations there is scope for Alice and Bob to coordinate.
+
+  Which number k should Bob choose? If Br + Bp > 0, he can choose 2 to get a payout of Br + Bp, and if Br + Bp < 0, he can choose 99 to get an expected payout of (Br + Bp)/98 (or perhaps as much as 0, if he can coordinate with Alice as described above). I suspect these choices are optimal.
+
+  Ok, so which task should Alice choose? If she knows Ap, Ar, Bp, and Br for all the possible tasks she might name, She will want to choose one with Ar + Ap > 0 if she can - worst case, Bob chooses 99 and she gets payout (Ar + Ap)/98. But she may want to choose one in which Br + Bp > 0 as well, to get payout Ar + Ap (after Bob chooses 2). If the positive reward task that maximizes Ar + Ap also has Br + Bp > 0, then great, choose that one. Else, if the task which maximizes Ar + Ap for those tasks in which Br + Bp > 0 is more than 1/98 that for which Br + Bp < 0, then she should choose that one. If all tasks have Ar + Ap < 0, then she should choose one (any one) for which Br + Bp < 0 as well, to get a payout of 0 (after Alice and Bob coordinate to avoid the task entirely). If she can't, then she chooses one which maximizes Ar + Ap to get a payout of Ar + Ap (after Bob chooses 2).
+
+  With these strategies, I would say:
+
+  A) They match with probability 0, 1/98, or 1, depending on the specifics of payouts.
+
+  B) They sum with probability 0, 1/98, or 1, depending of the specifics of payouts.
+#+end_quote
+:PROPERTIES:
+:Author: rineSample
+:Score: 12
+:DateUnix: 1477933205.0
+:END:
+
+*** I can't comment on the math, but I've heard of a similar game, called the same thing, where person 1 says "Odd are, do [x]" (where x is a thing that person 1 is daring person 2 to do), and person 2 says "1 in [y]", where y is any number, depending on how extreme x is. They then both say a number between 1 and y, and if they say the same number, then player 2 does x. I once saw a 1 in 2,000,000 happen, but that was only because they both guessed 1,000,000.
+:PROPERTIES:
+:Author: gbear605
+:Score: 4
+:DateUnix: 1477942378.0
+:END:
+
+
+*** If I were President of the World I would happily sign and approve any proposal that is preceded by a demonstration like that.
+:PROPERTIES:
+:Author: munchkiner
+:Score: 3
+:DateUnix: 1477939545.0
+:END:
+
+
+*** What happens if Bob picks 4 as k and then both pick 2? Unless odds literally means they must pick odd numbers only
+:PROPERTIES:
+:Author: Zephyr1011
+:Score: 2
+:DateUnix: 1477944400.0
+:END:
+
+**** I dunno, I would suggest maybe going from 3 to 99 then?
+:PROPERTIES:
+:Author: rineSample
+:Score: 1
+:DateUnix: 1477951186.0
+:END:
+
+
+** Somebody made a dating website for rationalists and I can't figure out how to use it! The instructions don't match what's actually showing up in the window, and I'm getting kind of frustrated with it. I tried using google chrome as well as Microsoft Edge (Internet Explorer). Had the same problem both times.
+
+Has somebody else been able to get it to work? It doesn't say anything about browser compatibility on the site.
+
+Thanks!
+
+[[https://www.reciprocity.io/]]
+:PROPERTIES:
+:Author: Sailor_Vulcan
+:Score: 2
+:DateUnix: 1478132469.0
+:END:
+
+
+** If anyone reads this, I'd like to know so I can gauge the worth of making posts a day late.
+
+There was some moderate drama last week on [[/r/n64]] when someone made a post attempting to show that Ocarina of Time was a terrible game. Their opinion was extremely dramatized, and received a lot of attention. Additionally, there was another post that attempted to say that they were being "objective", and their post was also clearly opinion (much more level-headed than the original, but still not 100% correct) it got me thinking anyway.
+
+How would you go about attempting to prove objectively, the qualities of a game? I know that with knowledge of basic proofs and discrete math, one can determine the truth or validity of most people's claims. I'm going to mull this over for a day or so and post developed thoughts on Friday, I think.
+
+For the interested, here are the posts:
+
+[[https://www.reddit.com/r/n64/comments/59nb36/i_hate_to_say_it_but_honestly_ocarina_of_time_is/][OOT is terrible]]
+
+[[https://www.reddit.com/r/n64/comments/5aif9k/in_response_to_the_ocarina_of_time_is_terrible/][Response: "Objectively" prove it is not terrible]]
+:PROPERTIES:
+:Author: Dwood15
+:Score: 2
+:DateUnix: 1478032716.0
+:END:
+
+*** Opinions are subjective. They cannot be wrong.
+
+However, with that said:
+
+- It's possible to have inconsistent opinions. For example, if I say that books with a prime number of pages are the greatest works of literature, then go on to say that /Catcher in the Rye/ (with 214 pages) is the greatest work of literature, clearly my opinions are inconsistent (or incompletely expressed).
+- It's possible to disagree with popular and/or critical consensus. For example, the Star Trek: Voyager episode "Threshold" might be my favorite episode of the series.
+- It's possible to misrepresent the views of others, or lie about them entirely. For example, I might say that /everyone/ loved "Threshold" -- but this isn't actually an opinion, it's a statement of fact (one which is incorrect).
+- It's possible to be wrong about factual matters, but hopefully we already knew this. Saying a game runs at 60 fps when it really runs at 30 fps is wrong. But it's not actually an opinion.
+
+You can list factual qualities of a creative work, like number of distinct colors used in a painting, Flesch-Kincaid reading level of a novel, frames per second of a videogame, etc. ... but while these qualities /might/ be predictors of whether the average person would find something good or bad, that's more a measure of subjective evaluation than a measure of objective goodness. In which case you might as well just look at the aggregate of customer reviews on Amazon/Metacritic/Steam, etc..
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 4
+:DateUnix: 1478062390.0
+:END:
+
+**** You got me thinking, and I'm utilizing your point here:
+
+#+begin_quote
+  You can list factual qualities of a creative work, like number of distinct colors used in a painting, Flesch-Kincaid reading level of a novel, frames per second of a videogame, etc.
+#+end_quote
+
+As the basis for my paper. I'm not here to objectively quantify whether or not they mean a game is good or bad, but give a means of identifying the objective qualities of a game. I've divided it into four categories: System Requirements, Technical Operation, Gameplay Attributes, and Story Attributes.
+
+Sys. Requirements refers to the technical specs required (OS, processor, hdd space, etc).
+
+Technical Operation refers to things such as Load screens, load times, User Interface, and Input Method.
+
+Gameplay Attributes refers to the qualities that make up things like RPGs, RTSes. This seems to be the most broad category, so I may divide it into multiple sections.
+
+Storyline Attributes referring to player choice, rationality of the story itself and its characters, how the story is told (audio or text, or environment) etc.
+
+Mind being a beta reader for me before I go public with it? I'm not planning on proposing a rating system or anything, just a means of evaluating a game's attributes objectively.
+:PROPERTIES:
+:Author: Dwood15
+:Score: 1
+:DateUnix: 1478159003.0
+:END:
+
+
+*** Objectivity for something like games seems to be to be a pipe dream. The existence of [[https://en.wikipedia.org/wiki/Bartle_taxonomy_of_player_types][different player archetypes]] means that you're not going to have a game that is everything to everybody, at all.
+
+Honestly, hours played is about the only objective metric off the top of my head that will matter, in the long run. So many other factors are just too nebulous to be able to compare them within social groups, let alone across the Internet.
+
+And you can't talk about critiquing OoT without including [[https://www.youtube.com/watch?v=XOC3vixnj_0][egoraptor's Sequelitis on the subject.]]
+:PROPERTIES:
+:Author: ketura
+:Score: 3
+:DateUnix: 1478056522.0
+:END:
+
+**** #+begin_quote
+  seems to be to be a pipe dream.
+#+end_quote
+
+I just don't think there have really been serious efforts at objectively quantifying attributes of a game due to the massive effort involved. For example, . I'm not talking about "is it a good game?" but rather "is it a bad game?"
+
+The limiting factor, seems to be the ability to quantify aspects of games and then statistically determine which sections of games most people enjoyed or didn't enjoy, then reducing or replacing the sections that are less enjoyable. For example, Sequelitis mentions that OoT has lots of waiting. This is something that can be quantified quite accurately. There are other, more abstract qualities of games [[https://arxiv.org/pdf/1203.1895v1.pdf][that can be quantified as well, such as NP-hardness]].
+:PROPERTIES:
+:Author: Dwood15
+:Score: 1
+:DateUnix: 1478060353.0
+:END:
+
+***** #+begin_quote
+  statistically determine which sections of games most people enjoyed or didn't enjoy, then reducing or replacing the sections that are less enjoyable.
+#+end_quote
+
+The problem lies in the different archetypes that I linked. There are some cases where different groups have diametrically opposed goals in a game, and this is not something that you can simply optimise away. And even if you could start to, /most/ games don't have the scope to be able to cater to all four quadrants.
+
+So long as you limited yourself to a particular experience, you might find success within your target /demographic/, but this adds plenty of clauses to the "is it a bad game" question.
+
+#+begin_quote
+  For example, Sequelitis mentions that OoT has lots of waiting. This is something that can be quantified quite accurately.
+#+end_quote
+
+Perhaps, but I doubt the results would be anywhere near universally applicable. Dark Souls also requires tons of waiting for the right moment to strike, but in this case it's an inherent part of the experience and not a downside.
+:PROPERTIES:
+:Author: ketura
+:Score: 1
+:DateUnix: 1478069734.0
+:END:
+
+****** #+begin_quote
+  this adds plenty of clauses to the "is it a bad game" question.
+#+end_quote
+
+Well, I guess I misspoke. "Is it a bad game", objectively means "is it playable?" For example, E.T. wasn't a bad game just because it played badly. It's a bad game because it was practically unplayable. Basically, a "bad game" means it's broken, unbeatable despite the fact that /it was not designed to be unbeatable./
+
+That said, "bad game" isn't the largest part of my thought process here. One can objectively quantify things like sprite resolution, base animation FPS, animation length, load times given consistent hardware as well as the number of times a loading screen is encountered.
+:PROPERTIES:
+:Author: Dwood15
+:Score: 1
+:DateUnix: 1478158424.0
+:END:
+
+******* Ohhhh, I see. So you're talking about basically setting up a robust automated test suite within games, which, while not commonly done, is totally doable. This would detect things like unbeatability and also detect where players are getting stuck on things, which is of course quite useful.
+:PROPERTIES:
+:Author: ketura
+:Score: 1
+:DateUnix: 1478219527.0
+:END:
+
+******** For the "Bad game" test, it could be done by a series of automated tests. The other items can be identified objectively accurately with research.
+:PROPERTIES:
+:Author: Dwood15
+:Score: 1
+:DateUnix: 1478222260.0
+:END:
+
+
+**** god, I hate his videos - I hate how he just declares that the way that he enjoys games are simply the correct way, and that his incompetence is the fault of game designers. Oh, you don't like being hit by things moving in the third dimension, maybe pay some attention to your surroundings, you know, the thing that you praised the same game for making you do less than thirty seconds ago
+:PROPERTIES:
+:Author: sephirothrr
+:Score: 1
+:DateUnix: 1478101991.0
+:END:
+
+***** When the design of the game is to force you to focus on a single thing in front of you if you want to fight it, which automatically puts the camera parallel to the ground, it's a pretty obnoxious design decision to permit things to swoop at you from the angles that you can no longer see. And aware of the surrounding terrain != able to track keese above your head /and/ swoopy blade things on the ground at the same time.
+
+Also, when he talked about being aware of your surroundings, he was specifically calling out a well-designed miniboss that had you fighting /just/ the one enemy, without all the BS of swoop-swoop, just you, it, and the room. It was brought up /because/ it was so rare.
+
+Yes, he sells his opinions as "the way things are", but it's pretty valuable and insightful feedback regardless.
+:PROPERTIES:
+:Author: ketura
+:Score: 1
+:DateUnix: 1478135110.0
+:END:
+
+
+** I've been enjoying Westworld, and for the most part also enjoying discussing it on [[/r/westworld]]. My question is for others who watch the show. For those familiar, I believe in the "two time periods" theory, that the scenes with William are happening in the past, mostly likely ~30 years earlier. There are a lot of others on reddit who agree, and apparently more who disagree. I'm not bothered by disagreement. That's fine. This is only one possible theory. Some will be right and some will be wrong. But it seems many of the detractors to this theory are also extremely annoyed by it and by it's persistence in the discussion. Every week they want nothing more than for the show to definitively disprove the idea, and they believe the theory comes from purely baseless speculation and wishful thinking. I disagree. I think there are numerous (~20) clues, "coincidences", and deceiving edits that are done intentionally to give the superficial impression of a single time period while dropping hints that it is two. Any specific clue or coincidence can be easily explained by a production mistake or just actual coincidence, but the shear number of them make it very, very unlikely IMO.
+
+What does rational think? Is there a solid basis for the two time periods theory or is it just confirmation bias?
+:PROPERTIES:
+:Author: HPMOR_fan
+:Score: 1
+:DateUnix: 1477971570.0
+:END:
+
+*** I think it's overly complicated. It reminds me of some other theories for other fictional universes that would give the work a "twist". For a long time there were diehard "Ron = Dumbledore" theorists before the final books of /Harry Potter/ had been written. Given that all that's really available for analysis is the text, and there's nothing that /explicitly/ conflicts with the theory, it's impossible to disprove. Any conflicting evidence complicates the theory, but can't kill it entirely, because to kill it would require explicit disconfirmation.
+
+There are a bunch of examples of not-outright-disconfirmation from the most recent episode which have been rationalized away in one way or another. What I dislike most is that the theory seems to rest on extremely deceptive editing on the part of the creators in order to allow the theory room for existence, which means that anyone who is ignorant of the theory (meaning most watchers) will cause them to be unsatisfied, annoyed, or confused if/when it's revealed. If you wanted to tell the story that the theory posits, this doesn't seem like the way that you would do it. (To give one specific example, [[#s][]]) Of course, there's probably some way to make this fit with the theory, but it will be both a complication and require the creators to deliberately break the grammar of television story-telling (rather than just abusing it).
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1477976461.0
+:END:
+
+**** Thanks for the reply. I agree that theories can be ridiculous, and that not all fiction needs to have twists. But I disagree that this is one such theory. It's not all that complicated actually. It just requires one or two tricks and everything else falls into place. One thing it certainly requires, though, as you mentioned, is "extremely deceptive editing." I can think of about 5 instances like the example you have. But I don't see why whether you "like" it, or whether you think it would be bad storytelling means the theory is invalid. I expect the casual watcher would be quite surprised by the revelation, but in a "holy shit" way, not a "that's stupid" way.
+
+Also, they give hints that the editing is not linear and there may be an unreliable narrator situation. She had a gun in the dresser, she looks in a mirror, the gun is gone. She has clearly been some of the places more than once (or is having visions that she was there) like the town where she talked to Lawrence's daughter.
+
+Also, I think someone who denies this theory should provide a valid explanation for the many coincidences. You have to believe that the milk can was a production mistake, and the company uses multiple logos at the same time, and it's coincidence that the only other time they show the William logo is in a flashback to the early years, and different people happen to be recruiting in Sweetwater, and Teddy happens to be gone when William is in Sweetwater, and the bounty hunter they hire happens to be dressed just like Teddy (Ford says Teddy's role is to keep Dolores in her loop - implying there is some history of her going off her loop), and Maeve happens to be out of view but Clementine is outside when William is there, even though the show added a line about Clementine running the brothel before Maeve, and even though we saw Maeve kill two robbers to protect her workers she doesn't even show up after Clementine was threatened, and Dolores is seen alone in the train car at the end of E5 because she is in a trance or something. There are a lot of "and"s there. William being in the past addresses all of these coincidences naturally, including even the storytelling ones. Why did the mention Clementine did the job before? It would have been enough just to say "give the job to Clementine." No viewer would have doubted that Clementine could do the job. Why add "she's done it before" unless it's a hint? The only thing you need to accept is the misleading editing.
+
+There really isn't any other "proof" against the theory that I can think of. With each episode we get more coincidences and production mistakes that the theory answers naturally, while the only new evidence against it is more examples of the same thing - intentionally deceptive editing.
+:PROPERTIES:
+:Author: HPMOR_fan
+:Score: 1
+:DateUnix: 1477982215.0
+:END:
+
+
+*** I tend to agree that some of it may be down to more than a coincidence, but I think this theory really breaks down for enough other reasons that I think the only conclusion is neither is quite right. For example the Hosts William seems to be exposed to don't match at all the descriptions the man in black gives for the Hosts of 30 years ago. If anything those statements seem like way more of an oversight that any of the "evidence" for two timeline theory if proved to be an accident.
+
+My running interpretation is that we aren't seeing two timelines or at a minimum the timelines aren't 30 years apart.
+:PROPERTIES:
+:Author: space_fountain
+:Score: 3
+:DateUnix: 1477971976.0
+:END:
+
+**** I agree the hosts don't seem to have changed much in 30 years. In fact they seem identical. I also agree this would be a bigger oversight than the milk can label and similar issues. As you mentioned one possibility is that the William time period is in the past but less than 30 years in the past.
+
+Is there a specific description from the MiB that really doesn't fit? We haven't seem William open any up yet (assuming William is MiB) so we don't know what's inside the hosts in William's time. The MiB said they changed to using flesh to save costs, not improve the experience, which implies the experience was good enough with mechanical hosts. It's also possible MiB is not William and he first came to the park several years before William did.
+
+There is still a lot unknown about the early timeline. They worked on robots for 3 years before the park opened. The robots passed the Turning Test (what exactly does that mean) within 1 year. Arnold died 34-35 years ago, but was this before the park opened, or how long after? Maybe the park was open for 10 years before Arnold died.
+
+Edit: In Ford's flashback we see a robot half-finished lying on a table (I think it's Hector). His face looks pretty realistic, as do the other robots in the flashback, so they don't all move well. This is at least several years before William comes.
+:PROPERTIES:
+:Author: HPMOR_fan
+:Score: 1
+:DateUnix: 1477975267.0
+:END:
+
+***** For example MiB mentions that in his time the Hosts would be given away by a handshake. William seems unsure if the first Host he meets is actually a host even after shaking his hand.
+:PROPERTIES:
+:Author: space_fountain
+:Score: 2
+:DateUnix: 1478018733.0
+:END:
+
+****** Does MiB say that that? I thought it was Ford. It was a reference to the original film which was how they could tell whether someone was real or android.
+:PROPERTIES:
+:Author: HPMOR_fan
+:Score: 2
+:DateUnix: 1478046313.0
+:END:
+
+******* You know what I'm not really sure now. I still think the evidence is pointing against the Will = MiB theories, but I'm not sure if I'm misremembering who said what.
+:PROPERTIES:
+:Author: space_fountain
+:Score: 2
+:DateUnix: 1478191370.0
+:END:

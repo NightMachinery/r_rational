@@ -1,0 +1,387 @@
+#+TITLE: [D] Friday Off-Topic Thread
+
+* [D] Friday Off-Topic Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 19
+:DateUnix: 1493391855.0
+:END:
+Welcome to the Friday Off-Topic Thread! Is there something that you want to talk about with [[/r/rational]], but which isn't rational fiction, or doesn't otherwise belong as a top-level post? This is the place to post it. The idea is that while reddit is a large place, with lots of special little niches, sometimes you just want to talk with a certain group of people about certain sorts of things that aren't related to why you're all here. It's totally understandable that you might want to talk about Japanese game shows with [[/r/rational]] instead of going over to [[/r/japanesegameshows]], but it's hopefully also understandable that this isn't really the place for that sort of thing.
+
+So do you want to talk about how your life has been going? Non-rational and/or non-fictional stuff you've been reading? The recent album from your favourite German pop singer? The politics of Southern India? The sexual preferences of the chairman of the Ukrainian soccer league? Different ways to plot meteorological data? The cost of living in Portugal? Corner cases for siteswap notation? All these things and more could possibly be found in the comments below!
+
+
+** The more I hear about Joseph Cambell's story circle structure the more I dislike it. It's more of a tautology than an insight. If the main character doesn't want to go on an adventure and nothing makes them do it then there's no story. Not all protagonists protest, so saying that some do and some don't isn't an insight.
+
+Second, not all protagonists change, particularly in older stories. Take any Greek myth, for example. Characters don't change. They either succeed and they're heroes or they anger the wrong god and are punished horribly forever.
+
+If you try hard enough you can brutally shoehorn any story into that structure but that doesn't mean it's insightful.
+
+I admit the reason I see it as annoying instead of false but benign is how pretentiously named the phases are.
+
+Then there's the other stuff he said like that all humor is derived from fear and he gave plausible reasoning but it seems difficult to impossible to test scientifically. At this point I'm just kitchen sinking so I'll stop.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 18
+:DateUnix: 1493400502.0
+:END:
+
+*** I hear you, man. Prediction-less models are so annoying.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 15
+:DateUnix: 1493401294.0
+:END:
+
+
+*** I haven't read Cambell's books, only heard about the theories themselves, but does Cambell actually say that all stories fit his structure, or just that it's A structure for framing stories?
+
+Because if he said that all stories follow it, like saying "all humor is derived from fear," that's overgeneralizing for sure, yeah.
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 10
+:DateUnix: 1493404550.0
+:END:
+
+**** Yes, Campbell says that, in really pretentious terms that I think you'd dislike. I do agree with a major part of the argument - that story structure is a base product of the human psyche, and that most stories will share many similarities due to emergent properties of the human mind. But if you read Campbell, you see him making broad blanket statements without qualifiers, backed up by (at best) broad interpretations of mythologies and (at worst) discredited Freudian psychology.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 17
+:DateUnix: 1493412645.0
+:END:
+
+***** Yeah, it's still a good model, just not the only one.
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 2
+:DateUnix: 1493445872.0
+:END:
+
+
+**** I don't agree with Cambell, but apparently the idea that comedy is a defense mechanism that allows us to enjoy seeing misery inflicted on people is a very popular theory.
+:PROPERTIES:
+:Author: trekie140
+:Score: 4
+:DateUnix: 1493415031.0
+:END:
+
+***** Popular, sure, but also very cherry-picking. Lots of comedy has nothing to do with slapstick or tragedy.
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 4
+:DateUnix: 1493445915.0
+:END:
+
+
+** Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+I continue my research into BDD (Behavior-driven development).  One of the neat things about it seems to be an emphasis on only adding details to a design as it's needed--something I've been absolutely horrible about, but can at least utilize going forward with XGEF's design.
+
+--------------
+
+While discussing things this past week, I actually stumbled across a pretty big flaw in the interactions between two systems, namely the 3D voxel setup and the abstract anatomy system.  
+
+The anatomy system is supposed to have as few details as possible: you define what body parts a Pokémon has, and on those body parts you might give them descriptive tags and occasionally a “slot” for another body part to be attached to, but that's pretty much it.  The engine then metaphorically arranges all the parts on the table, it starts with the part called Body, and then recursively attaches each part as it finds “slots” for them.  Any leftovers are just attached to the Body.  
+
+Such a system allows us to only define what is absolutely needed from a mechanical perspective: the game doesn't care that the legs might be shorter than the arms, and doesn't care what color anything is, and doesn't even care how things are particularly attached.  As far as he games concerned, units are just a blob of Anatomy, and the slot hierarchy only exists so that if I lose a Leg, a Foot is going to be lost in the process as well.
+
+Having actual 3D space blows chunks through this arrangement.  Now suddenly I might have a Charizard that is (let's say) ten feet tall.  Even if I assume it's cylindrical (as far as collisions etc are concerned), we have the problem of verticality: if a low kick is aimed at the lower voxels that compose Charizard, it shouldn't have any chance of hitting the head in the upper section, right?
+
+Yet for such an arrangement to work, we now have to define the size of each body part and where it takes up space, which was something the more elegant abstract system was trying to avoid in the first place!
+
+As I examine the problem, I think it's becoming clear that one or the other of these systems is going to have to give.  I like the roguelike, Dwarf Fortress esque abstract system of Anatomy, and I feel it permits the player to fill in the blanks (“let's see... I hit it in the arm and the head in the same hit, so...I aimed for the face and it tried to block and failed”).  At the same time, I also like the idea of actual 3D space and needing to account for the amount of space e.g. in a house before you try and pull out your Onix and demolish it just by releasing.  
+
+What are your thoughts?  Preferences between the two, or any clever way of reconciling the issue that I'm not seeing?
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  
+:PROPERTIES:
+:Author: ketura
+:Score: 11
+:DateUnix: 1493406306.0
+:END:
+
+*** 1) What is the user experience? 2) "Oni" by Bungie; Spore 3) Sunless Sea
+
+Limb/limb interactions are SUPER HARD. Weirdly, Oni did it super well way back in the day. Spore's probably the next example, ever, of that kind of thing.
+
+Sunless sea is a game where they tried their first concept at combat, built up much of the rest of the game (the real meat of the game, combat is just a side dish), and then had people try it. People didn't really like the combat system (which wasn't done at the time), but the devs said; Ah, well, let's try something new. And the new system was damn good.
+
+BDD is about making sure you're focusing on the thing you actually care about: the user's experience.
+
+What does this level of detail bring to user's experience? Why do you want it in the first place?
+
+From your perspective, will you get stuck trying to make it, and, will you get demoralized if you STOP trying to make it?
+:PROPERTIES:
+:Author: narfanator
+:Score: 4
+:DateUnix: 1493417500.0
+:END:
+
+**** #+begin_quote
+  Limb/limb interactions are SUPER HARD. Weirdly, Oni did it super well way back in the day. Spore's probably the next example, ever, of that kind of thing.
+
+  Sunless sea is a game where they tried their first concept at combat, built up much of the rest of the game (the real meat of the game, combat is just a side dish), and then had people try it. People didn't really like the combat system (which wasn't done at the time), but the devs said; Ah, well, let's try something new. And the new system was damn good.
+#+end_quote
+
+So I've heard of Oni and Spore, but not Sunless Sea, and I haven't played any of them. I might need to give them a look if they have a similar concept as well-done as you say.
+
+#+begin_quote
+  BDD is about making sure you're focusing on the thing you actually care about: the user's experience.
+
+  What does this level of detail bring to user's experience? Why do you want it in the first place?
+
+  From your perspective, will you get stuck trying to make it, and, will you get demoralized if you STOP trying to make it?
+#+end_quote
+
+So you might not have been asking for specific justification for these systems in particular, but I'm going to write out my thought process as an exercise.
+
+Anatomy has at least two core purposes, and probably other secondary ones that I'm forgetting. The first is a use as move prerequisites: we don't have move lists like in canon, and instead all moves have an Anatomy and Stat requirement (among other things). Thus rather than manually making sure that 500 different pokemon can learn Bite, we simply give those pokemon a Mouth and this automatically enables Bite (and any other mouth-based moves).
+
+This enforces our design decisions in a core, systematic manner, instead of having the onus be on us to manually keep a spreadsheet and ensure that everything that looks like it has a mouth can learn Bite. So it is /mostly/ a benefit to us as developers, but it's also meeting the vision of the gameplay in that it gives players a well-defined system to interact with: if they find that they have multiple pokemon with a Mouth, maybe investment in Bite and similar TMs is a good idea.
+
+Second, they govern move /usage/: if I break that Charizard's Mouth, it's not going to be able to use Bite on me anymore (or at a heavily reduced effectiveness, depending on the severity of the injury). This as a system is mostly for the player to use or work around: if they target the same area multiple times, perhaps they can sever or otherwise eliminate a crucial body part on their opponent. Likewise, if your Charizard's wings have been broken, wellp, you're not flying out of there, kid, so you'd better figure out what to do.
+
+--------------
+
+As for the other system, that of 3D voxels, it's probably the less justified of the two, but let's dig in:
+
+It goes without saying that the world will use /tiles/, regardless of the inclusion of a z-axis, so it's important to try and isolate what adding a third axis does, rather than lauding the benefits of a tile-based system.
+
+So it basically comes down to two things: limiting the movement of sufficiently large pokemon in an interesting way, and enabling flight and other interesting extreme vertical situations. Other considerations, while desirable, are more about aesthetic and not so much impacting gameplay, or they can translate to 2D just as well (such as eliminating TARDIS houses, or permitting digging/terrain modification)
+
+Forcing the player to consider the ceiling feels like it adds significantly to the game's strategy, however. Not only must the player pick their battlefields carefully if they have huge pokemon, but if they come across a giant while in a cave, they might be able to escape by finding sufficiently low corridors. If a very large pokemon is Godzilla'ing right down the middle of downtown, you could also get into a good position by getting on top of a building, permitting you to target its head, etc.
+
+Verticality also permits flying to have nuance, rather than just the binary "ground level/in the air" that canon had. I suppose in general, having verticality permits the concepts of caves, mountains, and cliffs, which don't have any real meaning if the world is flat. Yes, canon fakes it, but let's be real: if I have something called a mountain, I want to be able to climb to the top of it, trip, and fall off like the idiot I am and turn into a mushy paste at the bottom. Alternatively, if I'm prepared, I want to be able to scale a cliff face, or glide on the back of my pokemon down a steep ravine, and thus be rewarded for good preparation.
+
+--------------
+
+It might be possible to do this the way Dwarf Fortress did: start with a flat world, and slowly add vertical bits later once other, more core systems are in place. I very much don't want to call something a mountain that's not a mountain, but I also don't want to have to multiply the amount of data to be defined where it's not useful. Yeah, I think that will probably be the way to go: the Mountain/Flight update will have to be a thing in the future.
+
+Thanks for the tips! This has been quite helpful.
+:PROPERTIES:
+:Author: ketura
+:Score: 1
+:DateUnix: 1493481647.0
+:END:
+
+
+*** #+begin_quote
+  The anatomy system is supposed to have as few details as possible: you define what body parts a Pokémon has, and on those body parts you might give them descriptive tags and occasionally a “slot” for another body part to be attached to, but that's pretty much it.  The engine then metaphorically arranges all the parts on the table, it starts with the part called Body, and then recursively attaches each part as it finds “slots” for them. Any leftovers are just attached to the Body.  
+#+end_quote
+
+Specifically for Low Kick and other related low/high targets, you can have abstract body parts (i.e. Body.LowerBody and Body.UpperBody, with maybe Body.LowerBody.Leg1 etc.) to deal with that.
+
+I assume the 'only targets specific body parts' code would be on the technique, rather than part of the target's response to being hit, and you should also have access to information about the attacker and target's height. From there, you could calculate (still using Low Kick as an example) that if the user's height is >2x the target's height, it can hit anywhere, but if the size difference isn't that big, it will only hit parts of Body.LowerBody
+
+I'm not sure if this is the sort of thing you meant by 'clever way of reconciling the issue', but I hope so. I like the strengths of both systems, but if one had to be removed I would lean towards keeping the simpler representation.
+:PROPERTIES:
+:Author: waylandertheslayer
+:Score: 2
+:DateUnix: 1493418194.0
+:END:
+
+
+*** We could add a tag to body parts which are comparatively high and low on the owner's body. A Charizard's head would get the High tag, and it's legs would get the Low tag, and from there we could enforce that, for melee, you have to be a certain fraction of Charizard's height to hit body parts with the high tag, with another threshold for being able to hit body parts that aren't 'low'.
+
+For example, we could say that you need to be two thirds of Charizard's height to hit its head, and at least a fifth its height to hit its body. For a ten foot Charizard, that means you can hit its head when you're about seven feet tall or taller, and if you're less than two feet tall you can't even hit above its legs.
+
+Moves like Low Kick could use this same system, except instead of the user's normal height we input only a fraction of the user's height, like one tenth. So if we have one ten foot tall Charizard use Low Kick against another ten foot tall Charizard, the effective 1 foot tall strike can't hit anything other than the target Charizard's legs. Given a twenty foot tall Charizard, however, its Low Kick of effective height two feet would be tall enough to hit Charizard's body, but still not its head. And all this would take for the anatomy system are 'High' and 'Low' tags on the uppermost and lowermost body parts respectively.
+:PROPERTIES:
+:Author: InfernoVulpix
+:Score: 2
+:DateUnix: 1493436709.0
+:END:
+
+**** I've been considering something similar, but more generalized. Rather than using High, Middle, and Low, and then later finding a situation that required something in between, I figured we could have a range, such as legs being marked as "0.0-0.3", and the head as "0.8-1.0" and the neck of a Charizard as "0.6-0.9". Then the game would know that, given a height of 2 meters, this maps in Charizard's case to 4 tiles high, so the bottom two hexes would work if targeting the legs, the top two hexes could hit the neck, and only if you could hit the top hex would the head be a valid target.
+
+(in Bill's PC it wouldn't be hard to include presets such as High/Middle/Low that fill in thirds for convenience, tho.)
+
+The two unanswered questions I have for such an approach are A: is this really less work/more flexibile than just explicitly defining the body in more strict terms, and B: what do we do in cases where the unit is toppled, or like a bear and able to stand up or run on all fours?
+:PROPERTIES:
+:Author: ketura
+:Score: 2
+:DateUnix: 1493479156.0
+:END:
+
+
+*** I prefer anatomy over 3D space.
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 2
+:DateUnix: 1493441998.0
+:END:
+
+
+** If you're sent back in time a few years or decades, you can quickly make a name for yourself with accurate predictions.
+
+If you're sent back to the middle ages or earlier, you can dazzle the world with simple tech like gunpowder, printing press, stirrups etc.
+
+What if you're sent back just a few centuries though? I must admit my knowledge of history quickly goes hazy, and I couldn't recreate electricity or much chemistry from scratch.
+:PROPERTIES:
+:Author: Roxolan
+:Score: 9
+:DateUnix: 1493401870.0
+:END:
+
+*** How many centuries?
+
+Pasteurization is probably the big one, since it's easy to demonstrate and doesn't take much knowledge. That's 1864, so you can probably beat Pasteur to the punch. Germ theory of disease is probably another big one, but there you have to actually prove it, and good luck getting anyone to listen to you about it if you have a 21st century education and no accreditation (do you even know Latin?). You can also find cowpox (black spots on the udders of cows) and inject it in people as a crude smallpox vaccine, which would make a name for you (again, assuming that you can get permission and you're not just a mad scientist).
+
+There are other things that would help you a lot, but which you're probably not intimately familiar with unless you've done your "prepare to be sent back to any century" homework. The Hall-Heroult process of aluminum production and Bessemer process of steel production can make you a ton of money. Knowing how to produce a current and run it through quartz to make a precision timepiece would also make a ton of money. These all work better if you have some basic knowledge of engineering though.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 10
+:DateUnix: 1493413782.0
+:END:
+
+
+*** Steam-powered boats (plus paddle wheels and screw propellers), non-steam engines (Otto and maybe Stirling and turbine, plus fractional distillation of petroleum into artificial analogs of then-common "naphtha"), and basic flight mechanics (lift and maybe wing warping, not to mention stability/dihedral and proper control surfaces) all were invented/discovered between around 1925 and 1775, weren't they? Those aren't too hard to explain from memory.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 3
+:DateUnix: 1493403611.0
+:END:
+
+**** Most of those, same as electricity. I can kinda describe how they work from memory (and maybe you're better), but IIRC they all took quite a lot of experimenting to go from kooky idea to functional prototype. You need people who already trust you enough to commit the time and funds, even through initial failures.
+
+Petroleum distillation is a good idea though. Should be relatively easy to demonstrate.
+:PROPERTIES:
+:Author: Roxolan
+:Score: 6
+:DateUnix: 1493407792.0
+:END:
+
+***** #+begin_quote
+  they all took quite a lot of experimenting to go from kooky idea to functional prototype
+#+end_quote
+
+How are they any worse than the gunpowder that you already mentioned, though? Gunpowder requires very specific preparation and proportioning of the ingredients, IIRC.
+
+Remember also that Cayley, Lilienthal, Bell, and presumably zillions of other people already were actively researching flight mechanics in the time period, so their ears would be open to new ideas--especially ones that are easy to test in wind tunnels.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 1
+:DateUnix: 1493408945.0
+:END:
+
+****** True, gunpowder is the weakest of my exemples. Still, most any mix of the ingredients will produce a visible effect if thrown in a fire, improving the mix will show incremental progress, and it wouldn't be that hard to get to something with military applications (very scary firecrackers if nothing else).
+:PROPERTIES:
+:Author: Roxolan
+:Score: 1
+:DateUnix: 1493414870.0
+:END:
+
+
+** *Over the Hump, and Starting a Return to Normality*
+
+There are some downsides to being a data pack-rat, as well as the obvious up-sides.
+
+I'm in the process of moving to a new house, and the last month has pretty much been dedicated to that project - everything from a new set of floorboards being laid down to finding the best stores near the new place to buy my favourite beverage (grapefruit Perrier). The process is still ongoing, and I'm still going to be paying rent at the old place for some months to come; for example, even after getting rid of nearly all my mass-market paperback novels, there are still a /lot/ of books in the old family library that are still going to have to be shlepped over to the new one, and not a single member of my family has great strength or endurance.
+
+But most of the hard work and planning is done, and life is settling into a new normal: today, I hope and plan to apply for a new library card, do some banking, grab some income tax forms, and just maybe visit the nearby branch of a computer store to upgrade my laptop's RAM. My sleep schedule is still ridiculous, if I lose 50 pounds I'll still going to be overweight, asthma sucks... but a lot of the stresses from the old home are just plain gone. I am, as I see it, in about as good a mental state as I'm likely to be in the foreseeable future.
+
+Which means that, barring unexpectable crises, it's time for me to start writing again. My current plan: When I hit my new local public library today, I'm going to sit down for a while and start going over my partial draft of 'Extracted', to both refamiliarize myself with it and to start nudging any details I find that seem to need editing. And, by the time I've gone over what I've already written, to start finishing writing what I didn't get around to typing out the last time I worked on the piece.
+
+The main bit of uncertainty around this plan is that I have insufficient data to predict whether, how soon, and how severely I will go through my next bout of more-severe-than-everyday anhedonic depression. I'm hopeful that the release of stress from the old home will make such a bout less likely; but I'm also aware of the statistics that show that the act of moving to a new home adds its own form of stress. Barring low-probability black-swan events, my range of expected mid-term futures runs from going back to my previous levels of depression, all the way up to completing a novel and beginning the brand-new venture of learning about e-publishing.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 6
+:DateUnix: 1493619992.0
+:END:
+
+
+** I just watched The Road and the utter irrationality of the protagonist drove me nuts. I don't know what I was expecting exactly, but for me a story of a person making their way across a post apocalyptic landscape should contain some sign (any sign!) of intelligent decisions they're making about how to survive. I guess it was just totally the wrong film for that, but by the end I was fast forwarding just to see what happened (answer, not a lot) and shouting at the TV. I feel stupid now for not giving up earlier, but just wanted to share my frustration!
+:PROPERTIES:
+:Author: MonstrousBird
+:Score: 4
+:DateUnix: 1493421123.0
+:END:
+
+*** A lot of what McCarthy writes can be classified as softcore torture porn, and The Road definitely fits the description in my mind. Even if he did completely abandon most rules of grammar to get across the point of how broken society is, I don't think the story was worth the read.
+:PROPERTIES:
+:Author: HeroOfOldIron
+:Score: 3
+:DateUnix: 1493429443.0
+:END:
+
+
+** I believe you've expressed interest in reading Marked for Death at some point, [[/u/DaystarEld]] so I thought you'd be amused to know that in our efforts to avoid driving our +engine of ultimate destruction+ +existential threat+ +planar anomaly+ teenage character insane from hivemind-driven paranoia there was recently a discussion on looking for a psychologist; your name came up ;p
+:PROPERTIES:
+:Author: Cariyaga
+:Score: 4
+:DateUnix: 1493539127.0
+:END:
+
+*** Haha, that sounds like a good time, and reminds me of Twitch Plays Pokemon fanart/fanfic. I recently finished Naruto, so I'll be starting Marked for Death soon, but if there's anything I can help with I'd be happy to.
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 6
+:DateUnix: 1493568771.0
+:END:
+
+**** /screaming in Kagome/
+:PROPERTIES:
+:Author: faflec
+:Score: 3
+:DateUnix: 1493580632.0
+:END:
+
+
+** Is anyone here into photography? I recently got my first interchangeable lens camera (a used sony a6000 for ~$300 -- chosen for its light weight to shave some precious ounces off on backpacking trips) and have been having a blast experimenting with it. It seems like there's so much more that I can do now compared to the cameraphones and point-and-clicks I'd been using before. I mostly like taking photos for a few reasons -- 1) it forces me to think more explicitly about how something looks, which enhances my esthetic appreciation of that thing, 2) it's fun to produce pretty photos, both by taking them and in post, so it sort of becomes an outlet for artistic expression that I can share with others, and 3) to provide a record for future generations, grandkids, etc. I love seeing old photos of my mom and grandparents, and so wish to take advantage of the greater opportunities open to me in documenting my life, travels, etc.
+
+I'm also interested in expanding my capabilities. Have any distinct things helped fellow photography enthusiasts here improve? Beside just shooting more: I mean stuff like books, videos, etc. I made an [[https://www.instagram.com/phylogenik/][instagram account]] a little while back to post my photos, too, if anybody wouldn't mind offering a critique (most photos on there are from older, less fancy cameras, though).
+
+Speaking of IG, it seems to be largely filled with fake users who'll spam untold numbers of photos with generic comments ("great shot!" "wonderful capture!" "wow!!" "👌🔥👌🔥👌" etc.) in the (understandable) hopes of getting more exposure (though the follow-unfollow thing is a bit annoying). They're pretty easy to spot currently, given how basic their underlying instructions are, but given the expansion of e.g. machine learning technologies I reckon it won't be long until you start seeing ones with more sophisticated [[https://cloud.google.com/vision/][image recognition algorithms]], fancier chatting [[https://arxiv.org/abs/1603.06155][capabilities]], etc., even ones that can generate [[https://arxiv.org/pdf/1605.05396.pdf][their own images]] from randomly selected words and [[https://arxiv.org/pdf/1508.06576v1.pdf][artistically style]] them into something more pleasing. Hell, I'm half tempted to try coding something like that up myself, just for the experience, erosion-of-social-trust be damned (ethically it would best be pretty explicit as to its fakeness, though that would get it fast banned). I wonder how the advent of these new techs will change the social media landscape? Is the future just going to be thousands of bots chatting to each other ad nauseaum? Will we see a return to smaller social groups whose legitimacy can be verified in-person, as large media followings become increasingly meaningless?
+:PROPERTIES:
+:Author: captainNematode
+:Score: 3
+:DateUnix: 1493408138.0
+:END:
+
+*** Off-and-on. It sounds trite, but I like taking photos of light: fire, sunsets, etc. I fall out of photos because of the work involved in post; I like taking photos on my phone because I take only a few, and then post /one/, without any processing.
+
+A friend has gotten big into photography, and he's found other people to do guerilla shoots with. Find some photographer friends, pick a fun(ish) location, grab some people to stand in front the camera, play.
+:PROPERTIES:
+:Author: narfanator
+:Score: 2
+:DateUnix: 1493417895.0
+:END:
+
+
+*** [[https://www.instagram.com/p/BTcJXXUhqmh][This one's]] amazing! Can I ask what settings you used, in-city astro shots rarely come out this well.
+
+As for the bots, if it annoys you, have you considered posting no hashtags at all?
+:PROPERTIES:
+:Author: Magodo
+:Score: 2
+:DateUnix: 1493533845.0
+:END:
+
+**** Thanks! That shot was at ISO400, 15s, and f/2, shooting with a Rokinon 12mm on a Sony a6000 body (so crop sensor -- 18mm equivalent). Plus some post in Capture One. I had longer, brighter exposures, too, but at that point the brightness of the atmosphere was the same as that of the faint stars, and while in principle it might be possible to recover that marginal increase in brightness I wasn't able to finagle it easily. I can go up to 25-30 seconds before getting noticeable star trails, but I was also impatient waiting for the image to process so I decided to bump the iso instead.
+
+Here's another photo I took that night: [[https://i.imgur.com/WMUD5qg.png]]
+
+I was having trouble exporting from C1 -- it kept changing the image, making the stars dimmer, which it also did on the photo on IG -- so the above imgur link is to a screenshot lol.
+
+RE: bots -- they don't bother me, per se, at least when they're unobtrusive. The spam comments and follow-unfollows are minor inconveniences, and ultimately I want more people to see my pics, so spam comments might even help there (with how instagram chooses who to show your photos to). So with hashtags the bots serve as somewhere between a minor help and a minor necessary evil. Plus, given the IG landscape currently, popularity is pretty well detached from quality, so they just become another element in the broader game.
+:PROPERTIES:
+:Author: captainNematode
+:Score: 2
+:DateUnix: 1493570962.0
+:END:
+
+
+*** #+begin_quote
+  Is the future just going to be thousands of bots chatting to each other ad nauseaum?
+#+end_quote
+
+...[[https://xkcd.com/632/][relevant xkcd]]
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1493586786.0
+:END:

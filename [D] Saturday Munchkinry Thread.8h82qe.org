@@ -1,0 +1,237 @@
+#+TITLE: [D] Saturday Munchkinry Thread
+
+* [D] Saturday Munchkinry Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 9
+:DateUnix: 1525532804.0
+:END:
+Welcome to the Saturday Munchkinry and Problem Solving Thread! This thread is designed to be a place for us to abuse fictional powers and to solve fictional puzzles. Feel free to bounce ideas off each other and to let out your inner evil mastermind!
+
+Guidelines:
+
+- Ideally any power to be munchkined should have /consistent/ and /clearly defined/ rules. It may be original or may be from an already realised story.
+- The power to be munchkined can not be something "broken" like omniscience or absolute control over every living human.
+- Reverse Munchkin scenarios: we find ways to beat someone or something /powerful/.
+- We solve problems posed by other users. Use all your intelligence and creativity, and expect other users to do the same.
+
+Note: All top level comments must be problems to solve and/or powers to munchkin/reverse munchkin.
+
+Good Luck and Have Fun!
+
+
+** You've just discovered that, through some unknown process, your Maps app always knows /exactly/ how long it will take you to reach your destination; if you get a flat tire on the way, that delay will have been factored in ahead of time.
+
+However, there's a catch. Since discovering this, its accuracy has decreased slightly. It seems that it looks into an alternate reality where you don't know about its supernatural accuracy as a defense against the simplest "park at a rest stop so your arrival time spells out the lottery numbers" attacks.
+
+Is there a way to exploit this system even with the aforementioned limitation?
+:PROPERTIES:
+:Author: Nulono
+:Score: 6
+:DateUnix: 1525565017.0
+:END:
+
+*** I work in road safety so my question is, what does it show if you die en route? Assuming it says "never", I'd use it as a way to protect myself from the thing that is the [[https://www.aihw.gov.au/reports/life-expectancy-death/deaths-in-australia/contents/leading-causes-of-death][third most likely to kill me at my age]] (assuming I'm not pregnant, because apparently the #1 cause of death for pregnant people is /[[https://en.wikipedia.org/wiki/Murder_of_pregnant_women][murder]]/!?), by which I mean, obsessively use it for every single trip and cancel the trip if it shows me being dead.
+
+(For people not wanting to click the link, leading cause of death for people age 25-44 is suicide, followed by accidental poisoning and then traffic collisions; heart and liver disease make up #s 4 and 5--if you're aged between 15-24 traffic accidents is your #2 cause of death)
+
+I'm sure someone else has something much more munchkiny, but that was the first thing that came to my mind.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 6
+:DateUnix: 1525578221.0
+:END:
+
+**** Dying /en route/ throws up a NaN error. That's some nice out-of-the-box thinking.
+:PROPERTIES:
+:Author: Nulono
+:Score: 2
+:DateUnix: 1525579853.0
+:END:
+
+***** It's not so much out-of-the-box thinking as "my box looks very different to most other peoples' when it comes to road safety" :)
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 1
+:DateUnix: 1525580332.0
+:END:
+
+****** To exploit this more, you could also predict catastrophes and car accidents.
+
+Also I would sell the .apk after trying out if it works on other phones and with other people. After that I would try to contact the programmers and get the source code.
+:PROPERTIES:
+:Author: norax1
+:Score: 2
+:DateUnix: 1525607009.0
+:END:
+
+
+*** Construct a private travel route lined with traffic lights (which you precommit to obey). Have the traffic light controller cause the i-th light to stay red for 2^{i} minutes (or whatever the min resolution is) to encode some data as a binary sequence. For example, have the traffic light controller encode the current value of the NASDAQ index. Now your map app can give you that value at different times in the future. Your ignorant self need only drive the route and obey traffic lights.
+:PROPERTIES:
+:Author: pixelz
+:Score: 3
+:DateUnix: 1525629480.0
+:END:
+
+
+*** Assuming that the alternate reality it looks into is the same every time, then all you've got is a gps tracking what you would've done if you hadn't noticed Maps' precognitive capabilities. I don't see "Oh, I would've gone to the dentist a day earlier" as particularly useful.
+
+On the other hand, if it simply searches for a "nearby" alternate reality where you don't know about Maps' precognition (and does so anew each time), then you may be able to exploit this. For example, by locking your garage so it opens at a time that depends on the the winning lottery numbers (to be released tomorrow). If the "nearby" AU that Maps looks into is one where, eg. you suddenly and randomly forgot about Maps' precognition, then the original you would get accurate information about the winning lottery numbers by checking Maps. (Assuming that amnesia-you didn't break the window to get out or rammed through the door or something). Rinse and repeat until all desired numbers obtained.
+
+Alternately, hire a guy to sit in aforementioned garage, give him your phone, and get accurate results (until he catches on, but you only need to win the lottery once, then you can hire lots of interns to do this exactly once each). Of course, this only works if the phone searches for an AU where the person /using/ it doesn't know about its precognition, not if it searches for an AU where /nobody/ knows about its precognition.
+
+Once you are rich, use this to get the detailed long-term information on anything you care to know, up to and including more efficient ways to exploit Maps.
+:PROPERTIES:
+:Author: LaconicLizard
+:Score: 1
+:DateUnix: 1525577936.0
+:END:
+
+
+*** What if I leave myself a note?
+
+What if I give notaries A, B and C the following instructions, during which they are not to communicate beyond a single number per interaction: I give A numbers. At a predermined time, A transmits the last received number to B. When B receives a number n, he looks up the nth winning lottery number and transmits it to C. When C receives a number t, he tells me to wait t minutes.
+
+Tell A 1. Ask Maps for the time I'd take if I drive such that I'm at the rest stop at the predetermined time. Note the answer. Repeat with 2-6. Deduce lottery numbers. I should forget this scheme in each hypothetical world that splits off after a Maps query. I may need to give C some means to incentivize me. Do the notaries also forget?
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 1
+:DateUnix: 1525579030.0
+:END:
+
+**** The "copy" of you that's being measured wouldn't've left that note.
+:PROPERTIES:
+:Author: Nulono
+:Score: 1
+:DateUnix: 1525580159.0
+:END:
+
+***** Even if I leave the note before asking Maps? Will the inaccuracy be escalating because of all the effects the existence of the anomaly has on my life?
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 1
+:DateUnix: 1525587959.0
+:END:
+
+****** To an extent, yes. It's not going to throw up an error because ignorant!you decided not to go out to eat today, but if your knowledge has ripple effects that significantly change traffic patterns, that'll throw off its accuracy.
+:PROPERTIES:
+:Author: Nulono
+:Score: 1
+:DateUnix: 1525591320.0
+:END:
+
+
+** Your Power is flight (Think Superman, or the Martian Manhunter or Wonder Woman or any Lantern). You can fly lets say 50kmh. You can lift lets say 200kg additional stuff. Everything more will force you down. More weight means faster down. You have limited invulnerability towards damage from falling or flying into stuff.
+
+Your flightpower doesn't make you produce an opposite force. You can lift a closed container, while you are inside. You can fly on other planets and in space (but is hard to tell there, you still can change your speed only up to 50kmh.) And you can leave the planet with your own flight. (and an oxygen tank)
+
+So how would you use that power? And how would you use it to fight?
+
+Btw you live in a universe, with somewhat similar physical laws. (No faster than light Superman or Flash, no spontanious mass change) But there are other people with powers. If you saw it in a Comic it probably exists there in a weaker form. (Like near invulnerability, laser eyes/hands, regeneration that needs energy and mass, ) And normal humans are a little bit more resilent
+:PROPERTIES:
+:Author: norax1
+:Score: 2
+:DateUnix: 1525617672.0
+:END:
+
+*** Highest value activities are probably lifting mass to low Earth orbit, satellite repair, orbital construction.
+
+Best attack is probably ...
+
+[[https://en.m.wikipedia.org/wiki/Kinetic_bombardment]]
+
+From orbit, although you'll probably be a glorified ammo reloader of a satellite equipped with good optics for accuracy.
+:PROPERTIES:
+:Author: pixelz
+:Score: 3
+:DateUnix: 1525627782.0
+:END:
+
+**** Orbit is very far away, not just in altitude, but in delta-V. LEO is 160 km up, and 28 000 km/h sideways.
+:PROPERTIES:
+:Author: everything-narrative
+:Score: 3
+:DateUnix: 1525687221.0
+:END:
+
+
+**** Non-Mobile link: [[https://en.wikipedia.org/wiki/Kinetic_bombardment]]
+
+--------------
+
+^{HelperBot} ^{v1.1} ^{[[/r/HelperBot_]]} ^{I} ^{am} ^{a} ^{bot.} ^{Please} ^{message} ^{[[/u/swim1929]]} ^{with} ^{any} ^{feedback} ^{and/or} ^{hate.} ^{Counter:} ^{179042}
+:PROPERTIES:
+:Author: HelperBot_
+:Score: 1
+:DateUnix: 1525627785.0
+:END:
+
+
+**** Nice, just not sure if that is really the best thing for the flyer in this setting.
+
+Not sure if a teleporter wouldn't be more useful/cost efficient for NASA. (ISS is 400km high, so 8hrs flight time.)
+
+And I thought more of a fight between 2 superpowered people. (Or maybe a group)
+
+btw with more weight, you would be acceleration would be worse (still 50km/h limit to change of previous speed/velocity, cause screw physics).
+:PROPERTIES:
+:Author: norax1
+:Score: 1
+:DateUnix: 1525628511.0
+:END:
+
+***** Even with teleported competition, I think it is still a fairly high value activity because it isn't something that a tech equivalent can achieve. Many other flyer jobs can be performed adequately (or better) with a helicopter.
+
+For fighting, a good generic attack is simply lifting an enemy into the air and dropping them, preferably using a hook or net on a tether. Dropping enemies into prepared containment where appropriate. Otherwise, could be a good sniper (depending on equipment) or serve as generic mover of more effective friendlies.
+:PROPERTIES:
+:Author: pixelz
+:Score: 2
+:DateUnix: 1525636985.0
+:END:
+
+****** Well low earth orbit(LEO) starts at 160km so 3h flight (+3hrs back.) It all clearly depends on Tech level and other powers available.
+
+Sniper is always a good choice. (If guns is an option, and here yeah.) No matter if you have speed, strength, magic or no abilities. But I think flyer has a bad power for that, since snipers want to be behind cover and unseen. I guess he could land, shoot, fly away (50kmh is not bad) and repeat that. But if there are no guns, than sniper with bow and arrow is a real good option. (Fly just high enough to be out of range and shoot/drop arrow down.)
+
+The hook/net with a tether is a good idea. Nobody should expect [[https://en.wikipedia.org/wiki/The_Scorpion_and_the_Frog][people to act rational or in there own selfinterest]]. But a tether would keep most supers from retaliating. Also consider flying them/dropping them on high voltage lines. (they probably wouldn't get fried without being grounded, but they would have problems to leave) Maybe a automatic release for stuff over a weight limited would be smart. (So the flyer wouldn't get stucked. Also a way to have a cape, without being sucked into an engine.)
+
+With generic mover you meant flying around other people so they can hit where it hurts?
+
+I think 150kg of a pointy material at 50kmh would be quite painful. (and maybe more, if the flyer is okay with ramming the target) Mainly used horizontally, since flying up would make the flyer a target for any ranged enemies. All depending on acceleration.
+
+I'm not sure about the helicopter being better. But any jobs I can think of (maintenance and VIP transport) would probably not pay more than one day flying a satellite into LEO. (Except if they can send bigger satellites higher for less money.)
+:PROPERTIES:
+:Author: norax1
+:Score: 1
+:DateUnix: 1525644191.0
+:END:
+
+******* #+begin_quote
+  generic mover
+#+end_quote
+
+Yeah, just moving others around the battlefield - over obstacles, claim the high ground, rescue injured, etc.
+:PROPERTIES:
+:Author: pixelz
+:Score: 2
+:DateUnix: 1525645180.0
+:END:
+
+
+*** 50 kilometres an hour relative to what? If you start flying in a train, what happens? If the speed is then relative to the train, you could accelerate a spaceship by flinging 200kg weights against its front.
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 3
+:DateUnix: 1525686995.0
+:END:
+
+**** Hmm true you should be able to do that. Nice exploit.
+
+And yeah relative to your previous speed and velocity, so relative to the moving train/spaceship.
+
+Still would advice against throwing 200kg with 50kmh into a thing that keeps you alive (spaceship). Maybe with a custom made spaceship that could be possible. If I think about it, without/with less gravity opposing the flyer, he should be able to push the spaceship faster from the inside and than get pushed by the spaceship faster -_- not what I wanted
+:PROPERTIES:
+:Author: norax1
+:Score: 2
+:DateUnix: 1525691726.0
+:END:

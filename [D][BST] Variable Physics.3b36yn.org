@@ -1,0 +1,400 @@
+#+TITLE: [D][BST] Variable Physics
+
+* [D][BST] Variable Physics
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 15
+:DateUnix: 1435249609.0
+:END:
+The /Zones of Thought/ universe by Vernor Vinge (consisting of /A Fire Upon the Deep/ and /A Deepness in the Sky/) does something that I've only rarely seen in other places; it has physics that are different based on where you are in the universe. This is a fantastic conceit which I haven't seen enough of, so I decided to be the literature I wanted to see in the world and write a fantasy version of it (currently sitting at ~13K words which all take place in the crappy part of the world where magic doesn't work at all).
+
+The problem is in deciding how this /works/. The intended world is divided up into concentric circles, and as you move through them, magic becomes "more". So in the Starved Strand, everything is operating under mundane Earth-normal rules. In the Low Lands, it's low fantasy, where a magical sword is a rare and precious heirloom and a ring that turns you invisible is an artifact of incomparable power. In the High Lands, you get all the crazy stuff you'd expect from a game of D&D with high-level players; cheap and easy resurrection, instant teleportation, sentient squids, vampire enclaves, floating castles, etc. ([[http://www.reddit.com/r/worldbuilding/comments/g6w2i/converting_zones_of_thought_to_fantasy/][You can read a very old write up of it here.]])
+
+*So how is this implemented?* Are there certain ways to implement it so that it's more rational? (For example, is it better to have magic "fade" with distance or just stop completely at some boundary?) I think that /Zones of Thought/ gets away with a lot of handwaving, but since my story-so-far revolves around men studying the world, I'd like to have something more concrete, if possible.
+
+
+** One way to do it: Invert the "topology" idea, and instead of having "mana peaks" and "mana valleys", you've got an underlying topology that shapes the manaflow, and mana flows down. You've got a mana cycle, metaphysical weather, occasional droughts or floods, but in general, the "mountain ranges" are low-magic, the "lowlands" are fairly low-magic, but studded with areas of high magic and mana "rivers", and the "lakes" are the high-magic qutopias. The effects leak through in such a way that actual physical elevation doesn't make much difference... and sometimes, there are storms.
+:PROPERTIES:
+:Score: 7
+:DateUnix: 1435263756.0
+:END:
+
+
+** A variable-magic setting like you describe could easily result in fascinating story possibilities. While concentric circles give you a story-point in having an epicentre, I think overall it's more interesting to have a greater deal of irregularity. Something like a magical elevation map. You may have large countrysides that are relatively "flat" in terms of the effectiveness of magic, while other areas have innumerable strange and steep boundaries, making things rather treacherous.
+
+So a fade-type system would be better than a sharp cutoff, so long as the fade's steepness was also variable. There could easily be areas with a steep enough fade to be a cutoff for most purposes. You end up with both a fade and a cutoff available, depending on what works better for your story in a certain region.
+
+The development of civilization in such a setting could give interesting views on the incentives of living in one area versus another. In high-magic nations, magical healing for sickness would be available, and generally the standard of living would probably be much higher. On the other hand, in low-magic nations, the peasants wouldn't have to fear invading lich necromancers or marauding dragons, both of which would either fade or die if they tried to head into a region with magic levels too low to sustain them.
+
+It would also be difficult for a high and a low-magic nation to war with each other. A low-magic nation trying to launch an attack would find itself unable to breach magical defenses. A high-magic nation would need its military to be mainly geared towards combat with its more dangerous magical rivals, and would be inexperienced at fighting using only mundane means. A small high-magic zone within a larger low-magic region could become an unassailable fortress, while similarly a small low-magic zone within a high-magic region would be a risky place to venture. A high-magic nation might have other options though, such as massive magical cannons launching mundane projectiles into a low-magic area, or simply a higher population and army compared to low-magic kingdoms due to magical farming.
+
+Regarding magical items, at first glance the best way to handle things might be a unidirectional fade. Items brought to lower-magic areas compared to where they were created lose their power until returned to a higher-magic area. However lower-magic items do not rise in power when brought to high-magic regions. This way those rare few magic items in the low-magic regions can remain prized and valuable in their home regions.
+
+I mentioned the idea of highly-magical creatures like dragons finding it dangerous or lethal to head into lower-magic areas. In turn, perhaps humans might also find themselves requiring some minimum threshold of magical elevation to survive, with regions even they cannot safely enter due to a lack of the miniscule magic levels needed to sustain them. Similarly, there might be regions of such unusually high magic levels that magical storms or singularities could be found within.
+
+Why is there such magical variability? Many options exist. Perhaps there's some pervasive magical field like the earth's magnetic field, with strength varying due to deposits of a certain mineral. Perhaps there's an underlying "weave" of magical energies that things draw upon, but it is badly scarred in certain areas because of some ancient forgotten war. Perhaps the variances are influenced by connections to other parts of the local cosmology if D&D-like outer planes exist, with those connections either being natural, or intentionally opened and closed by inhabitants on either side. Perhaps the world is being simulated, magic is artificial, and the differences are arbitrarily set.
+
+I hope these ideas gets explored further by a good writer such as yourself, [[/u/alexanderwales]] =).
+:PROPERTIES:
+:Author: Alphanos
+:Score: 10
+:DateUnix: 1435253912.0
+:END:
+
+*** "Topology" is how I currently have it described; it's good that's an intuitive way of understanding it.
+
+#+begin_quote
+  “Now, imagine a cone on top of this circle, and the whole world laid out on top of the cone. We're way on the edge right now, close to the ground, but those people near to the center, they would be much higher than us, right? Like there's an imaginary mountain whose elevation we can't perceive.” Walkas was watching him, to make sure that he understood. The boy nodded slowly. “Well, the closer you are to the bottom of the cone --- the lower you are on the imaginary mountain --- the less magic works.”
+
+  Dannis mulled this over for a moment while Walkas used his stick to stir the stew. “Why?” he finally asked.
+
+  “Why what?”
+
+  “Why is there less magic as you get further away from the center?”
+
+  Walkas shrugged, but Elnor unfolded himself from the log he'd been sitting on and stood to look over the lines they had drawn in the dirt. “That is precisely what we are here to find out,” he said slowly.
+#+end_quote
+
+To take the topology metaphor further, there are irregularities in the general shape, divots and ridges, and occasionally avalanches when the borders shift and up-end whole ways of life. Right now, unless someone can give me a good reason not to, the center of the world will have something like twenty different magic systems and a few thousand magical races/creatures, and those will be less and less common as you move towards the outskirts. (I want the center to be this terrible, beautiful, confusing mess.)
+
+There are a ton of ways to model the changes. When I'm making a magic system, I tend to think of how I would implement it in computer programming. You could limit something like "mana", putting caps on refresh rates that get more severe as you move "down". You could limit something like magnitude, putting caps on magical effects as you move "down". You could remove abstraction layers and helper methods from casting, making it like the difference between programming in Assembly and programming in C#. You could add in precursors, so that a spell goes from being freely cast to taking a pinch of bat guano, and goes from taking a pinch of bat guano to taking the blood of a virginal bat. You can have magic require a literal (perhaps godly) connection to a "higher" place, like a lifeline that can be severed.
+
+I might end up going for a combination of these things. I like a messy sort of magic that's got its rules buried under many layers of clothing. It makes it more exciting when you finally see the bare flesh beneath.
+
+(Something that only just now occurs to me is that I can totally justify wizard towers as the logical building choice when you've located a magic "hot spot".)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 8
+:DateUnix: 1435257612.0
+:END:
+
+**** #+begin_quote
+  You could remove abstraction layers and helper methods from casting, making it like the difference between programming in Assembly and programming in C#.
+#+end_quote
+
+So instead of Zones of Thought, it's Zones of Meta? That'd be /weird/. Maybe the universe is dualist, and as you move further inwards, it becomes easier for the abstract layer to influence the reductionist layer.
+:PROPERTIES:
+:Author: FeepingCreature
+:Score: 5
+:DateUnix: 1435271444.0
+:END:
+
+***** #+begin_quote
+  Maybe the universe is dualist
+#+end_quote
+
+This is the case in [[https://en.wikipedia.org/wiki/Anathem][Anathem]].
+:PROPERTIES:
+:Author: jalapeno_dude
+:Score: 2
+:DateUnix: 1435280202.0
+:END:
+
+
+**** So the center of the cone is perhaps where magic was originally created or instantiated - at least in the local region, for certain large values of local? I wonder if it was deliberate, accidental, or the result of a runaway natural process (possibly artificially triggered or accelerated).
+
+Magical field strength topology isn't all that new as a subject; see Terry Pratchett's Unreal Estate near the Unseen University, or any fantasy series set after The Mage Wars (tm), although in those cases there tends to be a standing 'normal' strength magic field interspersed with areas of magic 'radiation' (metaphoric nuclear fallout), which have effects more chaotic than simple thaumoclines. There's also the trope of Underhill consisting of portal-connected areas, each of which has its own magical field of unrelated strength (and possibly other properties).
+
+Things which could give features to the simple conic magic field strength:
+
+- Geography. Mountains, seas, and rivers, and various kinds/concentrations of minerals and/or vegetation could have affected the initial formation or subsequent erosion/thaumoclimate.\\
+- The position of the moon, sun, and even stars at the time, if it was largely instantiated in a very short period.\\
+- Location of barriers and magical weapons dumps / facilities created by supermages or national teams of mages when the event occured (causing areas of lower/calmer or higher/chaotic effect respectively).\\
+- Natural leylines. Did they channel/deflect/absorb/attract the initial event? Have they boosted or drained nearby magic levels since? Were they actually themselves affected, moved, broken, enhanced, even created new?\\
+- Artificial leylines. Who knows, there may have been an ancient power grid of sorts. Was it affected when the conic field was imposed? Was it built /after/ the field was discovered, to take advantage of it and carry magic to low-field areas?\\
+- Internal field patterns. Is the underlying field completely bland and homogeneous? If so, was it always so? Does it currently, or did it ever have a regular texture (static or variable)? Does it have internal flows? Does it very subtly spiral inwards/outwards? Is is scalloped? Is its average cross-section a smooth line/curve from edge to center, or are there regular cliffs, peaks, valleys, and plateaus?
+:PROPERTIES:
+:Author: Geminii27
+:Score: 3
+:DateUnix: 1435325643.0
+:END:
+
+
+**** #+begin_quote
+  "Topology" is how I currently have it described; it's good that's an intuitive way of understanding it.
+#+end_quote
+
+I think you mean topo/graphy/. Topology is about stretching and pulling spaces without cutting them, as a branch of math.
+
+#+begin_quote
+  You could remove abstraction layers and helper methods from casting, making it like the difference between programming in Assembly and programming in C#.
+#+end_quote
+
+The /Young Wizards/ series always described certain universes as being closer to Timeheart than others, with spirit increasingly dominating matter the further in towards Timeheart you go.
+
+Actually, a setting that relies on simulated environments would have a really easy time reversing that idea: the further Abstractward you go, the more resources are spent on the simulation, and thus the more abstract the models out of which the simulation must be made to be computationally feasible. In direct contrast, the further Concreteward you go, eventually bottoming out in the real universe, the more things stop working in fundamentally mind-y, magical ways and start working only according to strict science and causality.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1435369812.0
+:END:
+
+
+** An element I thought was compelling in /A Fire Upon the Deep/ is that, if I recall correctly, this feature of the world ended up playing pretty heavily into the plot, and it was even hinted at that it was something set into place by an older civilization. That's a big motivation for me when reading science fiction/fantasy: that the secrets of the world are in principle discoverable or at least hinted at.
+:PROPERTIES:
+:Author: superliminaldude
+:Score: 5
+:DateUnix: 1435258526.0
+:END:
+
+*** I really liked that about /Zones/, and I'm sort of trying to do something similar. This high-level plot is that wizard-scientists from the "hub" of high magic have come down to the area where there's no magic in order to collect some data from a research station, and the general plot flow is that they're traveling to higher and higher levels with every chapter (and in that way, sort of inverting the plot of /A Fire Upon the Deep/). There are certainly a lot of things that you can do with the setting, but the focus on the actual Zones is part of what I liked about /Fire/.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1435333073.0
+:END:
+
+
+** There's a novel I've been struggling to recall the name of for the past ten minutes where the gimmick was that [[#s][spoiler]]. It was set on a huge tower where the highest parts had a very small value and all kinds of post-singularity stuff worked, as you moved down the tower the highest level of technology that worked was simpler and more primitive. Moving from one zone to another was painful but possible for biologicals, because they were "soft" and could handle slight shifts at the atomic level. Devices with small components physically broke or fused. Down on the plains the zones actually moved, like weather.
+
+So there's something to be said for having multiple boundaries. You could escape an avenging spirit by crossing out of a high magic zone, but now your flying carpet is just a rug and your seven league boots barely manage hundred yard steps.
+
+I wouldn't have wastes where life itself didn't work... just drop back to the level where you're in the mundane world with no magic. Maybe have other high lands, other mountains, where other kinds of magic hold sway.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 4
+:DateUnix: 1435252453.0
+:END:
+
+*** That sounds interesting; let me know if you can recall the name. I've seen quite a few places where physics changes from one "world" to another, or where physics changes over time, but physics changing based on location seems far more rare.
+
+One of the things that I really liked about /A Fire Upon the Deep/ was that it read as sort of a travelogue, and that's definitely a feeling that I wanted to replicate; go from one kingdom to the next, and all the sudden there are werewolves. Go further, and there are dragons flying through the sky.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1435253473.0
+:END:
+
+**** [[https://en.wikipedia.org/wiki/Terminal_World][Terminal World]]
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 3
+:DateUnix: 1435255542.0
+:END:
+
+***** Cool, thanks; added it to my list.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1435255765.0
+:END:
+
+
+***** ***** 
+      :PROPERTIES:
+      :CUSTOM_ID: section
+      :END:
+****** 
+       :PROPERTIES:
+       :CUSTOM_ID: section-1
+       :END:
+**** 
+     :PROPERTIES:
+     :CUSTOM_ID: section-2
+     :END:
+[[https://en.wikipedia.org/wiki/Terminal%20World][*Terminal World*]]: [[#sfw][]]
+
+--------------
+
+#+begin_quote
+  */Terminal World/* is a 2010 science fiction novel by Welsh author [[https://en.wikipedia.org/wiki/Alastair_Reynolds][Alastair Reynolds]] ([[https://en.wikipedia.org/wiki/Special:BookSources/9780575077188][ISBN 978-0-575-07718-8]]). It is a standalone novel set in the distant future, and it chronicles the journey of Quillon, a pathologist forced into exile. The [[https://en.wikipedia.org/wiki/Victor_Gollancz_Ltd][Gollancz]] hardcover edition of the book was published in March 2010 in the [[https://en.wikipedia.org/wiki/United_Kingdom][United Kingdom]]. The [[https://en.wikipedia.org/wiki/Ace_Books][Ace Books]] hardcover edition was published in June 2010 in the [[https://en.wikipedia.org/wiki/United_States][United States]].
+
+  * 
+    :PROPERTIES:
+    :CUSTOM_ID: section-3
+    :END:
+  [[https://i.imgur.com/qGOCXsG.jpg][*Image*]] [[https://en.wikipedia.org/wiki/File:Terminal_World_(Amazon).jpg][^{i}]]
+#+end_quote
+
+--------------
+
+^{Relevant:} [[https://en.wikipedia.org/wiki/E_(New_York_City_Subway_service)][^{E} ^{(New} ^{York} ^{City} ^{Subway} ^{service)}]] ^{|} [[https://en.wikipedia.org/wiki/T%C3%A4htivaeltaja_Award][^{Tähtivaeltaja} ^{Award}]] ^{|} [[https://en.wikipedia.org/wiki/Chumphon_Airport][^{Chumphon} ^{Airport}]]
+
+^{Parent} ^{commenter} ^{can} [[/message/compose?to=autowikibot&subject=AutoWikibot%20NSFW%20toggle&message=%2Btoggle-nsfw+csihgjq][^{toggle} ^{NSFW}]] ^{or[[#or][]]} [[/message/compose?to=autowikibot&subject=AutoWikibot%20Deletion&message=%2Bdelete+csihgjq][^{delete}]]^{.} ^{Will} ^{also} ^{delete} ^{on} ^{comment} ^{score} ^{of} ^{-1} ^{or} ^{less.} ^{|} [[/r/autowikibot/wiki/index][^{FAQs}]] ^{|} [[/r/autowikibot/comments/1x013o/for_moderators_switches_commands_and_css/][^{Mods}]] ^{|} [[/r/autowikibot/comments/1ux484/ask_wikibot/][^{Call} ^{Me}]]
+:PROPERTIES:
+:Author: autowikibot
+:Score: 1
+:DateUnix: 1435255583.0
+:END:
+
+
+*** #+begin_quote
+  I wouldn't have wastes where life itself didn't work... just drop back to the level where you're in the mundane world with no magic.
+#+end_quote
+
+In real life, life evolved naturalistically. In fact, in a universe where magic grants an advantage, anything that /basically/ functions non-magically actually has an advantage over fundamentally magical life-forms: it needs no mana source to keep living.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1435370306.0
+:END:
+
+
+** It'd be interesting to have reliability as an additional dimension. For example, Region A has moderate-power magic that's absolutely reliable, like mundane-physics conservation-of-momentum your-EMDrive-is-a-stupid-hoax reliable. Region B has higher-power magic that works unreliably but doesn't fail catastrophically, like if you try to enchant a sword with special properties, sometimes you use up the reagents to no effect, and sometimes it works (and maybe imbued properties are then reliable, or maybe not). And Region C has very powerful magic that can fail catastrophically. Which region is the most valuable? It's not clear. This is more interesting to me than a one-dimensional continuum.
+
+(Fire had this a little, where high tech in low zones would flake out and then fail, but not in the way I'm thinking.)
+
+As in the Zones, meta-powers would be extremely valuable. Artifacts or spells affecting power, reliability, or some other property could be used for all sorts of trickery. It would be especially interesting to bootstrap a magical zone, or have a self-propagating spell that can enter an ordinarily mundane area.
+
+The Ethshar series by Watt-Evans (of which I've read The Misenchanted Sword and The Unwilling Warlord, recommended by EY) features multiple sources of magic. At least one, warlocks, have a location dependency (major plot point in Warlord). Very much worth reading.
+:PROPERTIES:
+:Author: STL
+:Score: 3
+:DateUnix: 1435296987.0
+:END:
+
+
+** There's this Polish sci-fi book [[https://en.wikipedia.org/wiki/Gniazdo_%C5%9Bwiat%C3%B3w]]
+
+It had nested sets of world, each with different (but related) physic and social rules, quite innovative. It also had nested stories using different font to distinguish them. Unfortunately no English translation.
+:PROPERTIES:
+:Author: ajuc
+:Score: 2
+:DateUnix: 1435260941.0
+:END:
+
+
+** [[http://spacespy.thecomicseries.com/][The Accidental Space Spy]] has two zones seen where physics work differently: the Invisibility Zone, and the Reverse Gravity Zone. These have been munchkinned in-universe by evolution.
+:PROPERTIES:
+:Author: holomanga
+:Score: 2
+:DateUnix: 1435270712.0
+:END:
+
+
+** The only major issue that comes to my mind is migration. If the level of magic in a given area is stable through time, then why haven't people migrated towards higher level magic areas over the millennia?
+:PROPERTIES:
+:Author: Kerbal_NASA
+:Score: 2
+:DateUnix: 1435304410.0
+:END:
+
+*** My first (sort of brainstorming here) answers:
+
+- High levels of magic also mean more magical threats. If you want access to what magic can do, then you also have to deal with dragons, vampires, trolls, and the whole fantasy kitchen sink. If you stay in the low magic zones, you don't have to deal with dread necromancers. Magic is not all upside.
+- People /do/ migrate, and populations are higher in high magic areas, which tend to be more urban than in low magic areas because of the kinds of improvements that magic can bring to agriculture, infrastructure, healthcare, etc. This doesn't mean that the low magic areas are depopulated though.
+- Magic has a similar effect to industrialization; fertility rates fall. So while the low magic peoples might have to worry more about starvation, disease, etc., the high magic people just aren't having that many children, and the biggest driver of growth in the high magic areas is immigration from the low magic areas. (The question of why fertility rates are lower in industrialized countries is a complex one, but I think it would be reasonable to say that the reasons are mostly the same.)
+
+Probably some combination of all those. My preference is for complex answers to simple questions. :)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1435333883.0
+:END:
+
+**** Great explanations! One minor point I'd make is that the threats in point 1 would need to be more terrorizing as opposed to having a real significant impact on mortality rate. That plus distortions in the way news travels could be a significant deterrent. I say this because if it actually increased mortality rate significantly (particularly infant mortality rate), that factor would start to conflict with point 3, since, from my limited knowledge, fertility rates tend to over-compensate. Although, like you said, the reasons behind higher fertility rates are super complex.
+
+Just as an example, say New York had a 9/11 sized attack every 4 years. The mortality rate would remain roughly the same ([[http://www.nyc.gov/html/doh/downloads/pdf/vs/vs-population-and-mortality-report.pdf][~.1 pp and ~1-2% increase in mortality rate]]) so I /think/ point 3 would remain intact (though, again, like you said, very complex factors), but at the same time it would likely significantly discourage immigration to New York. Especially if instead of objective-ish nightly news relaying the info, its people in travel taverns shouting over each other about how "Everyone in New Bork was melted by airplanes!"
+
+Two other factors I thought of since I posted:
+
+- The job market (assuming a capitalistic-ish world economy). People born and raised in a non-magic area are going to be trained and spend their time developing non-magic skills. You go try to get the same job in a highly magic area, you'll probably find the job either doesn't exist or offers less pay (since magic equivalents reduce the demand for your skills). I think this is particularly true of segmented magic zones (as opposed to fading-in magic which would allow for small, gradual immigration over time).
+- Day-to-day life skills and concepts. Imagine transporting someone from thousands of years ago to a modern city. Ignoring the lack of English, if I told them "Here's 50 bucks, there's a supermarket three block down the street" it would likely be completely incomprehensible. They might not even have the concept of "3," nor how to safely cross a street, nor what money is, nor how to store the food, etc. And that's just survival. More advanced stuff like using the internet is difficult enough for some people born in this world as it is. This even applies both ways too, since I don't think I would fare too well living in a village thousands of years ago. I think its likely these skill and conceptual issues would apply moving from non-magic areas to magical ones. This, too, applies more strongly to segmented, non-fading areas making me think that perhaps that is a more rational setting.
+
+That plus, obviously, all the many factors in the real world that carry over just fine to this one.
+
+Ok I'm definitely on board the hype train for this! Can't wait to see what you write!
+:PROPERTIES:
+:Author: Kerbal_NASA
+:Score: 3
+:DateUnix: 1435351028.0
+:END:
+
+
+**** Random idea: since magic and religion often look so alike, various holy cities are in high-magic zones /despite/ this being inconvenient. There are open disputes over whether even /demonstrable magical effects/ really count as the kinds of metaphysical stuff needed to make the religious claims true.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1435370462.0
+:END:
+
+
+*** That's like asking why Golden Corral has anything other than popcorn shrimp.
+
+Enjoy your high magic world where immortal city-destroying liches are why you fear the night. I'm on a starship in secure space synthesizing new nanites.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1435754078.0
+:END:
+
+
+** #+begin_quote
+  So how is this implemented? Are there certain ways to implement it so that it's more rational?
+#+end_quote
+
+I once actually wanted to write a story that worked this way. The conceit was going to be that someone invents free-energy generators, and as the generators get increasingly powerful, the violations of physics get ever-more blatant (because once you've broken the laws of physics in one way, it's easier and easier to just find more ways to break them). In fact, eventually it would reach the point of programmable Reality Warping.
+
+The levels were going to run as follows:
+
+- Hard scifi, near-future setting.
+- Softer but still Earth-bound sci-fi
+- Urban fantasy
+- Low fantasy
+- Immensely powerful Tolkeinesque/mythic-grade high fantasy. Basically, I was imagining that by this time, the villain would have sufficient power to make the world something like the [[http://tolkiengateway.net/wiki/Spring_of_Arda][Spring of Arda]] by sheer force of reality-warping energy expenditure.
+- /Anime/
+
+Weirdness levels /above anime/ are reputed to exist, but without making them too weird to comprehend, it's hard to actually /use/ nontrivially super-anime weird settings /as settings/ without their devolving into, "It just works."
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1435369544.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1435258240.0
+:END:
+
+*** I think so, but I'm open to not having that be the case. Right now, I kind of think of it like:
+
+- If you have a magic sword, it's not going to work in a non-magical place. If it's been built well, it will shut itself down and then reactivate itself when back in a place with magic. If it's been built poorly, it will catastrophically fail.
+
+- You can use magic to make a better non-magical item. This provides some trade from high-magic places to low-magic (or no magic) places. The exchange would probably be for labor-intensive things that can't be accomplished through magic, in the same way that we outsource telephone support to India.
+
+(And to clarify, "magical sword" can mean a lot of things. Maybe it's only got the equivalent of a +1 bonus; lighter than it should be, well-balanced in a supernatural way that compensates for a lack of skill or makes it a superb fighting weapon for an experienced soldier. Or maybe it's a literally made of lasers, cuts through steel like butter, can be summoned in a handful of heartbeats, and deflects arrows and lightning bolts without conscious thought. Ideally, the underlying physics that govern the setting allow for both types to exist at different "levels", and the super awesome sword could in theory be built to degrade gracefully as the underlying reality changes.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1435258662.0
+:END:
+
+**** Since the region-locking was mentioned, there's a trope when magic is actually remnants of sufficiently advanced technology in a postapocalyptic world. In this interpretation, "levels of magic" can be an actual region-locking from the future (even now we have industrial equipment with GPS locks). Sufficiently advanced DRM is indistinguishable from variable physics?
+:PROPERTIES:
+:Author: daydev
+:Score: 3
+:DateUnix: 1435266705.0
+:END:
+
+***** Not sure that this setting is the place for it, but "DRM as magic system" just got added to my ideas scratch pad.
+
+Region-locking is fairly straightforward, but you could have limited-license spells that can only be used concurrently by a handful of people, or magic items that bind to specific people like a disc that you can't play on your friend's CD player. Demons with EULAs. Needs some narrative parallel though ...
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 7
+:DateUnix: 1435267066.0
+:END:
+
+
+** High-magic areas attacking low-magic areas would use something like a sphere of water magically compressed into nuclear plasma, hurled at supersonic speeds. As soon as it passed into an area incapable of maintaining the shield/compression spell...
+
+Also interesting: devices which could use a magical 'battery' to maintain a tiny volume of high-level magic when passing into lower-magic areas. Magical devices could thus last for a certain time before failing. Whether this might be seconds (useful for the water bombs) or months/years (useful for trade items and rechargeable tools) depends on the author. Likewise, items which /suppressed/ magic around or inside them to a certain degree, either to drain local magic or shield something from its effects.
+:PROPERTIES:
+:Author: Geminii27
+:Score: 1
+:DateUnix: 1435326201.0
+:END:
+
+
+** Piers Anthony's /Mode/ series.
+
+Roger Zelazny's /Amber/ series.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1435754010.0
+:END:
+
+
+** [[https://squid314.livejournal.com/336195.html][This]] doesn't seem to have been mentioned yet. Technology is limited depending on the region, in a topography-esque manner similar to what Alexander Wales and Alphanos described above, and the protagonist eventually discovers that magic follows a similar rule, but hadn't been discovered because nearly the entire world was a low-magic zone.
+:PROPERTIES:
+:Author: Quillwraith
+:Score: 1
+:DateUnix: 1436218937.0
+:END:

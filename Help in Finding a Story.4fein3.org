@@ -1,0 +1,121 @@
+#+TITLE: Help in Finding a Story
+
+* Help in Finding a Story
+:PROPERTIES:
+:Author: xamueljones
+:Score: 8
+:DateUnix: 1461019483.0
+:END:
+Does anyone remember a story from royalroadl.com that was posted a few times here? It was about a Virtual Reality where the main character is trying to develop nature affinity by living in the wilds as a bear beastman.
+
+I already tried asking people in the Off Topic Friday Thread, but nobody who responded knew. I couldn't find it by using the search bar in the top right corner of the subreddit and tried Googling for it. So now I'm asking the subreddit at large.
+
+The author of the story actually posted it here himself (I remember the name being masculine), and I think the main character is named Charlie, Chuck, or some other name starting with 'Ch'.
+
+Thanks!
+
+
+** Probably [[http://royalroadl.com/fiction/3670][Wanderlust]] by [[/u/Lunitan]]?
+
+The secret to finding it was querying every single instance of royalroadl in the comments of [[/r/rational]] with Google's BigQuery. Google searches through the text, not the links, and the naked link was never posted, so there wasn't any other way to find it.
+
+#+begin_example
+  SELECT
+    *
+  FROM
+    [fh-bigquery:reddit_comments.2015_10] a
+  WHERE
+    a.subreddit='rational'
+    AND a.body CONTAINS 'royalroadl'
+  LIMIT
+    1000
+#+end_example
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 10
+:DateUnix: 1461039674.0
+:END:
+
+*** This is the sort of meta-knowledge about search engines I'd like to learn more about.
+
+Do you know of any resources where I can learn more about this?
+:PROPERTIES:
+:Author: Kuratius
+:Score: 2
+:DateUnix: 1461099376.0
+:END:
+
+**** This is database stuff, not search engine stuff. All Reddit comments are scraped and stored in Google's BigQuery ([[https://cloud.google.com/bigquery/what-is-bigquery][What is BigQuery?]]), which is a cloud solution for extremely large datasets. You can see [[https://www.reddit.com/r/bigquery/comments/3cej2b/17_billion_reddit_comments_loaded_on_bigquery/][here]] for more information and some examples of the neat stuff you can do with it. (Seven months ago [[https://www.reddit.com/r/rational/comments/3kjt60/d_friday_offtopic_thread/cuxyvle][I queried up a list of everyone who had ever commented, along with some fun stats.]])
+
+If you want to do neat stuff like this, you need to learn SQL (Simple Query Language) which is super useful for lots of stuff related to programming and datasets. If you want to learn that, [[http://www.w3schools.com/sql/][w3schools has a pretty long tutorial with the ability to try it yourself]] and [[https://www.khanacademy.org/computing/computer-programming/sql][Khan Academy has an intro to SQL]], both are good places to gain more knowledge.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1461115702.0
+:END:
+
+***** So I can't use SQL queries for Google normally? That's a bit disappointing, albeit understandable.
+:PROPERTIES:
+:Author: Kuratius
+:Score: 1
+:DateUnix: 1461137104.0
+:END:
+
+
+*** That was it. Thanks!
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1461078098.0
+:END:
+
+
+** [[https://www.reddit.com/domain/royalroadl.com/][This will hopefully help narrow it down]]
+:PROPERTIES:
+:Author: wtfbbc
+:Score: 2
+:DateUnix: 1461033451.0
+:END:
+
+*** That's a good idea, but I have no guarentee it was posted to that subreddit. Either way, alexanderwales just found it so it's all good.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1461078169.0
+:END:
+
+**** That's a reddit-wide search of all royalroadl.com links submitted to any subreddit. I didn't realize it was posted in a comment 😅
+:PROPERTIES:
+:Author: wtfbbc
+:Score: 1
+:DateUnix: 1461083030.0
+:END:
+
+***** Oh! How do you do searching like that? I thought it was a subreddit like [[/r/royalroadl]] (which doesn't exist) or something like that.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1461088524.0
+:END:
+
+****** [[https://www.reddit.com/domain/royalroadl.com/]]
+
+Will show you all of the submissions to reddit for that domain.
+
+So for example, if I wanted to see all submissions to my website, I would just go to:
+
+[[https://www.reddit.com/domain/alexanderwales.com/]]
+
+It's not really a search, just a chronological list.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1461088654.0
+:END:
+
+******* I'll add that you can see the submitted from a domain by clicking on the little gray parenthetical link after the title -- for this thread, it's self.rational, which is boring, but try one at [[/r/news]] for a more interesting result.
+:PROPERTIES:
+:Author: wtfbbc
+:Score: 1
+:DateUnix: 1461095937.0
+:END:

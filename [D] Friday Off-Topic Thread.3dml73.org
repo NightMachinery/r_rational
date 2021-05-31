@@ -1,0 +1,1376 @@
+#+TITLE: [D] Friday Off-Topic Thread
+
+* [D] Friday Off-Topic Thread
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 17
+:DateUnix: 1437142951.0
+:END:
+Welcome to the Friday Off-Topic Thread! Is there something that you want to talk about with [[/r/rational]], but which isn't rational fiction, or doesn't otherwise belong as a top-level post? This is the place to post it. The idea is that while reddit is a large place, with lots of special little niches, sometimes you just want to talk with a certain group of people about certain sorts of things that aren't related to why you're all here. It's totally understandable that you might want to talk about Japanese game shows with [[/r/rational]] instead of going over to [[/r/japanesegameshows]], but it's hopefully also understandable that this isn't really the place for that sort of thing.
+
+So do you want to talk about how your life has been going? Non-rational and/or non-fictional stuff you've been reading? The recent album from your favourite German pop singer? The politics of Southern India? The sexual preferences of the chairman of the Ukrainian soccer league? Different ways to plot meteorological data? The cost of living in Portugal? Corner cases for siteswap notation? All these things and more could possibly be found in the comments below!
+
+
+** So I was thinking about how to punch a clean tunnel all the way through a neutron star, and the obvious solution is to use a really fast black hole. Any matter that goes inside the event horizon doesn't come back out, and if it's going more than 0.99c, I think that it won't have time for its gravity to greatly influence the surrounding material, ergo: Smooth perfect tunnel with minimal collateral damage.
+
+(Which immediately collapses, but whatever.)
+
+The problems are, I don't know how to account for extremely high jerk when calculating effects. And, very large objects moving very fast produce gravity waves, and I have no intuition for wave mechanics at all. I know that wavefronts can build by constructive interference, which might make nasty tidal effects further out than I want. I just don't know. I'm also not entirely clear on the effects of relativistic mass on a black hole's Schwarzschild radius, but kugelblitzes (black holes formed from energy density of light) suggest that the radius comes from relativistic mass, which includes kinetic energy.
+
+So my question is this: If a 1 * 10^{26} kg rest mass black hole moving at 0.99c went straight down through a skyscraper without directly hitting any supports, what would happen? I think that it would carve a bottomless pit two meters across, but I don't know if the building would be left standing, or how far away it would be safe to stand when a hole suddenly appears with a thunderclap for no obvious reason.
+
+Pretending gravity is instantaneous, you would only experience more than 150 Gs of acceleration as long as the black hole is within 6,000 km of you, and it would enter and leave that range in 1/25 of a second, which seems within human mechanical shock tolerance, I think. Especially since the force is applied smoothly over the entire body, rather than delivered through discrete external points of contact. But the /peak/ acceleration could be a few quadrillion Gs, which may limit survivability. Now, gravity isn't actually instantaneous, so the black hole is almost keeping pace with its own gravity, and you're not going to fall up towards it for most of its approach. Intuitively, its upward and downward accelerations should cancel in the end. so you might get hit with a huge upward hammer blow when it gets to you, then get pulled downward more softly over a longer time.
+
+It seems like it /should/ be possible for it to go fast enough that its gravity just doesn't have time to destroy you, even if it is momentarily putting everyone on the planet in a car crash. At worst, I'm pretty sure it won't destroy the Earth probably. If it doesn't work, is there any way to fix it?
+:PROPERTIES:
+:Author: Anakiri
+:Score: 12
+:DateUnix: 1437158349.0
+:END:
+
+*** I've got no idea the answer to your question, but I'm upvoting you in the hopes that you find one, and replying to let you know that this comment really made me laugh, because oh [[/r/rational]] what are you.
+
+#+begin_quote
+  the obvious solution is to use a really fast black hole
+#+end_quote
+
+If you ever hear someone say that, I advise that everyone turn and run in the opposite direction /really fast/
+:PROPERTIES:
+:Score: 9
+:DateUnix: 1437164741.0
+:END:
+
+**** [[https://33.media.tumblr.com/c390fb3d7e9d70e38e5266f11183b201/tumblr_mz5p23G92K1s5f9ado1_500.gif][THIS HAS NEVER BEEN MORE APPROPRIATE.]]
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1437241046.0
+:END:
+
+
+*** I tried doing the math, and I /think/ I got something that works. What I got is that the total impulse on an object X distance away from the path is ~1.6x as much as if the black hole had been sitting at its nearest point for as long as it takes to travel X distance.
+
+For example, if something was 1km away from the path, and the black hole is travelling at 1 * 10^{5} km/s, then you could model the effect on it as the same as it sitting at the nearest point for 1.6 * 10^{-5} seconds.
+
+[[https://docs.google.com/spreadsheets/d/1EgSuhJnARILsfba6ceqUmlDpKyoyRAlJomZbBDn0_UY/edit?usp=sharing][Here]] is the spreadsheet I used to calculate it. The first page is a proof of concept, the second page is the same thing, but better. I couldn't figure out how to do the actual calculus, so it's 2000 discrete points instead.
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 3
+:DateUnix: 1437198967.0
+:END:
+
+
+*** I suspect that a stream of smaller relativistic singularities would be safer. Or you could borrow Greg Bear's cosmic string.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1437600576.0
+:END:
+
+
+** I've been playing lots of three of Zachtronic's puzzle games recently, and they're really fun and excellent. They establish rules, then force you to exploit the rules to solve problems efficiently. They are very good at teaching ideas about logic and planning and optimization and so forth.
+
+The three games I've been playing are:
+
+Spacechem - based /extremely/ loosely on chemistry (more of a chemistry artistic motif then any real chemistry). Involves bonding and debonding atoms, fusing and fissioning atoms, to make inputs into desired outputs, using a system of relays, detectors, grab-and-drop plans, etc. Solution usually involves making a certain number of desired outputs from inputs.
+
+Infinifactory - Move blocks around to make and modify things in 3D, creating assembly lines of conveyors, pushers, welders, detectors, lasers, and all sorts of other tools. Set up an assembly line and watch it go.
+
+TIS 100 - The assembly language programming puzzle game you never knew you wanted. Using a grid of extremely simple computers with an accumulator and a ram storage for a single integer, write code to do things like detect edges, multiply, find min and max of sequences, etc.
+
+They all provide heaps of fun just trying to solve the puzzles at all, but then after that you can try to make your solution better - either faster, or using less resources and building blocks. They teach a lot of ideas about planning, programming, logic, and so forth, in the course of the action of the game.
+
+Infinifactory even has a hotkey to make looping gifs like [[http://i.imgur.com/UoEk9R4.gifv][this one I made of one of my solutions]]
+:PROPERTIES:
+:Author: Escapement
+:Score: 7
+:DateUnix: 1437158035.0
+:END:
+
+*** Haven't played the others, but Spacechem is really great fun. I, too, found optimizing my solutions to be the most enjoyable thing about it.
+:PROPERTIES:
+:Author: Kodix
+:Score: 1
+:DateUnix: 1437159932.0
+:END:
+
+
+** Are there any scenes from /Time Braid/ that particularly stood out to you?
+
+The one that has stuck in my mind the most is [[#s][this spoiler]].
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 5
+:DateUnix: 1437145835.0
+:END:
+
+*** The literally dehumanizing torture, brainwashing, and probably rape.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 6
+:DateUnix: 1437148638.0
+:END:
+
+**** Yeah, that part is why I dropped it the first time. What was even the author thinking?
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1437149911.0
+:END:
+
+***** I personally thought it was a realistic portrayal, given a sufficiently sadistic Sasuke. Don't get me wrong - it was difficult to read - but isn't that a testament to the effectiveness of the writing? Torture's not supposed to be comfortable.
+:PROPERTIES:
+:Author: Jace_MacLeod
+:Score: 6
+:DateUnix: 1437152374.0
+:END:
+
+****** I don't see the point of making Sasuke sadistic and torturing her if she's just going to be fine a few chapters later with no real lasting effects. I never read it all so it might become relevant like 200k words later, but I just thought it was pointless, edgy, and pointlessly edgy.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1437152610.0
+:END:
+
+******* It does become relevant later on. Sasuke's ability to brainwash people is what ultimately makes him such a dangerous villain. Probably a very major case YMMV; /Time Braid/ is *notoriously* polarizing.
+:PROPERTIES:
+:Author: Jace_MacLeod
+:Score: 6
+:DateUnix: 1437160976.0
+:END:
+
+
+******* Oh, you're talking about chapters 3 and 4? Something similar is a pretty decently-sized chunk of the plot starting Ch. 22.
+:PROPERTIES:
+:Author: Solonarv
+:Score: 2
+:DateUnix: 1437161262.0
+:END:
+
+
+***** A lot of people, male and female, have rape fantasies. Most don't choose to share them, though; I think this was simply a case of someone who chose to do so.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1437150538.0
+:END:
+
+****** Are you talking about Sasuke or the author? Because, as someone who's written torture scenes before but has no attraction to the concept, assuming that the author has rape fantasies from what they wrote is ... not ... rational? You're extrapolating badly from the evidence.
+
+It's kinda like when tumblr goes "When a white actor plays a racist character too well" with little sneaky-eyes emojis ... Like, hellooo, that's what acting is! And this is what writing is. Chafeel
+
+Maybe I'm a bit too drunk to convey myself correctly? I need friends
+:PROPERTIES:
+:Score: 8
+:DateUnix: 1437163829.0
+:END:
+
+******* I get what you mean. I've gotten a number of complaints-by-review about "my philosophy", even though the philosophy they're referring to is given through the eyes of someone marked in the story synopsis as a villain. Psychoanalysis of an author through their work is not generally a good idea.
+
+When I see rape and/or torture in fiction, I usually think that it's pointlessly edgy, hamfisted, etc. unless it's done with a really deft hand. I think those sorts of criticisms are much more appropriate to levy against a work.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 7
+:DateUnix: 1437164976.0
+:END:
+
+
+******* Perhaps I'm being unfair, but I don't feel my take is either unreasonable or irrational. Making Sasuke a sadistic torturer was a deliberate character choice, and a major change from canon. Making him use physical means was another choice; he's got the Mangekyou Sharingan, he can torture someone for three days in the span of a second, without doing any physical damage. It's been a long time since I read it, so perhaps I'm misremembering, but I recall significant sexual overtones to the torture scenes. The scenes were, on the whole, unnecessary--the curtain could easily have been drawn. The level of detail in the scenes was definitely unnecessary.
+
+Ergo, my suspicion that something else was going on.
+
+As to my opinion not being rational -- I started with a prior and adjusted based on evidence. In my post above I said "I think", not "it was", implying a probability. In what way was this not rational?
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 2
+:DateUnix: 1437171833.0
+:END:
+
+******** #+begin_quote
+  Making him use physical means was another choice; he's got the Mangekyou Sharingan, he can torture someone for three days in the span of a second, without doing any physical damage.
+#+end_quote
+
+[[https://www.fanfiction.net/s/5193644/22][Sakura had already shown herself able to break the Mangekyou's illusions by shifting to her aspect of light,]] so Sasuke couldn't risk using those to brainwash her. Even under extreme physical duress, she still managed to let one aspect of herself escape through her mindscape to warn Naruto, so I think Sasuke was justified in using such extreme measures. In any event, I myself never noticed any sexual connotations in the torture scenes, in any of my six read-throughs of the story.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 1
+:DateUnix: 1437440431.0
+:END:
+
+
+**** [[#s][Spoiler]] were impressive, true--I can vividly recall the parts where [[#s][spoiler]] and [[#s][spoiler]].
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 2
+:DateUnix: 1437149373.0
+:END:
+
+***** I'm talking about the part where [[#s][Sakura]]
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 2
+:DateUnix: 1437150463.0
+:END:
+
+****** Oh, you mean the entire concept of lasting mental subjugation. Yes, that's cool, too--I've often wished that there were a Sasori-focused story focusing on [[http://naruto.wikia.com/wiki/Memory-Concealing_Manipulative_Sand_Technique][such long-term brainwashing]].
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 1
+:DateUnix: 1437152526.0
+:END:
+
+******* Go read Greg Egan's Quarantine. It's got some great exploration of that sort of thing, but with a technological rather than magical bent.
+:PROPERTIES:
+:Author: Escapement
+:Score: 2
+:DateUnix: 1437156931.0
+:END:
+
+
+*** Probably the underage sex and rape. It, uh, turned me off from reading the rest of it.
+:PROPERTIES:
+:Author: blazinghand
+:Score: 2
+:DateUnix: 1437166804.0
+:END:
+
+
+** What is the rational thing for the eurozone, IMF, and Greece to do at this point?
+
+- Do the austerity measures specified by the recent deals have a chance of getting the Greek economy back on its feet and producing a surplus so that it can (eventually) pay back the debt? (Call this forward-looking.) Or are other nations just trying to 'punish' Greece for its past policy decisions? (Call this backward-looking.)
+
+- If both are not possible, is it more important to keep Greece in the eurozone or to recover the lender's money?
+:PROPERTIES:
+:Author: jgf1123
+:Score: 3
+:DateUnix: 1437149549.0
+:END:
+
+*** Grexit has been the best move for a long time, and a large haircut or default. The current policies /only make rational sense/ as punishments, and as making an example of Greece for the other Southern European nations. The Euro has broken European trade balances, but the North doesn't want to acknowledge that because it works to their benefit (and because the Germans believe running a trade surplus to be a matter of national virtue, and damn the accounting math that says their surplus /must/ be someone else's deficit).
+:PROPERTIES:
+:Score: 7
+:DateUnix: 1437158416.0
+:END:
+
+
+*** On the Greek side, I'd have executed a Grexit a long time ago. There's no advantage to staying in a monetary union that prevents a natural devaluation of currency (important for recovery in a bad economy), while simultaneously enforcing an insurmountable but undefaultable debt with little relief and punishing austerity. On the European side, I'd encourage Greece to stay in the union while offering considerable debt relief and minimal austerity. (Or just let Greece leave, if I didn't particularly care about it.)
+
+The problem is none of these parties are anything resembling rational actors. It's kind of impressive, actually. They're failing in ways that perfectly selfish agents wouldn't even /consider/, since perfectly selfish agents are at least rational enough not to act directly against their own self-interest. Greece in particular has been charting new ground in politco-economic failure. From [[http://www.vox.com/2015/7/13/8949925/greece-syriza][Vox:]]
+
+#+begin_quote
+  Greece had two awful choices: Stay in the eurozone and be crushed by fiscal and monetary polices set by the Germans, or leave the eurozone and be crushed by a financial crisis. [Syriza] managed, horribly, to combine both of the original two options into one political-economic disaster...
+
+  As O'Brien writes, “Syriza's strategy, insofar as there was one, couldn't have been much more of a failure.” If anything, that's too kind. Syriza's strategy, insofar as there was one, uncovered a method of failing that was much more complete and all-encompassing than anyone had thought possible at the start of the process.
+#+end_quote
+
+At this point, the only improvements I see for the short-term are a sudden change of heart by the Germans, or a Greek election putting a new party in power. Until then, it will probably be ongoing disaster as usual.
+:PROPERTIES:
+:Author: Jace_MacLeod
+:Score: 4
+:DateUnix: 1437176333.0
+:END:
+
+
+*** I think austerity is unlikely to benefit Greece's economy long-term, and indeed will deepen their recession. I think it's in Greece's best long-term interests to exit the euro, and it would have been even better for them had they done that earlier. Short term it would hurt them, and probably any politician of theirs who made that decision would be effectively ending their career, but they would stabilize eventually and get something approaching a stable economy. I think it's beneficial to the others on the Euro if Greece stays in. I don't know if the harm done to Greeks by it's staying is outweighed by the benefits to the others, such that from a utilitarian perspective I should urge Greece to stay in - I am not an economist or domain expert in these matters.
+:PROPERTIES:
+:Author: Escapement
+:Score: 3
+:DateUnix: 1437157132.0
+:END:
+
+
+*** #grexit
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 5
+:DateUnix: 1437149844.0
+:END:
+
+
+*** As a voice of disagreement, Greece leaving the Euro will probably not do any good for their economy. Default and staying in the Euro is much better than creating a drachma due to their [[http://www.tradingeconomics.com/greece/balance-of-trade][pretty large trade deficit]], if we're especially nice and suggest that the Drachma will devalue to say only 25% (rather than the 10% figure thrown around) imports will suddenly cost 16 billion Euros rather than the 4 billion they are paying now, and their exports will be worth 500 million.
+
+Obviously they are hoping that they will be extremely competitive and somehow either avoid that much devaluation (unlikely) or pay for it with more debt (who is going to lend exactly to a government not backed by Europe? They don't have a primary surplus big enough to cover the trade deficit).
+
+The best thing was in 2008/9 when it was clear what the crash was Europe bosses should've gotten around the table, decided which countries were going to default, what they were going to default on, and how much, then announced bond buying for countries to stop contagion and gotten on with it. Unfortunately the dragging out of this process has benefited no one.
+
+They can't really default any more so it's probably just going to be Europe financing their debts while they struggle to get back on their feet in austerity.
+:PROPERTIES:
+:Author: RMcD94
+:Score: 2
+:DateUnix: 1437163634.0
+:END:
+
+
+*** The Eurozone (and EU as a whole) is really beginning to look like a failed experiment. Germany should leave it to drown.
+
+[[#s][Edit to add:]]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437163638.0
+:END:
+
+**** I submit that Germany is in the EU for more than economic reasons. To quote /Yes, Minister/:
+
+#+begin_quote
+  Minister Hacker: Europe is a community of nations, dedicated towards one goal.
+
+  Sir Humphrey: Oh, ha ha ha.
+
+  Hacker: May we share the joke, Humphrey?
+
+  Sir Humphrey: Oh Minister, let's look at this objectively. It is a game played for national interests, and always was. Why do you suppose we went into it?
+
+  Hacker: To strengthen the brotherhood of free Western nations.
+
+  Sir Humphrey: Oh really. We went in to screw the French by splitting them off from the Germans.
+
+  Hacker: So why did the French go into it, then?
+
+  Sir Humphrey: Well, to protect their inefficient farmers from commercial competition.
+
+  Hacker: That certainly doesn't apply to the Germans.
+
+  Sir Humphrey: No, no. They went in to cleanse themselves of genocide and apply for readmission to the human race.
+#+end_quote
+:PROPERTIES:
+:Author: jgf1123
+:Score: 6
+:DateUnix: 1437164283.0
+:END:
+
+
+**** Huh, I dunno, for some reason I have the opposite impression. It seems like the EU is madly successful and just doesn't work great for not-rich nations to join. The free capital, trade, and labor flows across the borders of the European nations has generated an enormous amount of wealth for everyone involved. You get some issues for economically weak nations that need control of their own currency to deal with their poorly run government budgets, but even if you, say, let these countries default on their obligations and bumped down their credit ratings a ton, it still seems like the EU has made everyone way way better off than before. Whatever reasons countries had for getting involved, they've inadvertently made it possible to have much better european trade and labor mobility.
+
+Heck, if anything the problem is that the EU doesn't have enough centralization of authority. This is a discussion for another day but it seems like... the EU is like the best thing to happen in terms of wealth creation in the developed world in the past 30 years?
+:PROPERTIES:
+:Author: blazinghand
+:Score: 1
+:DateUnix: 1437166703.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 8
+:DateUnix: 1437146094.0
+:END:
+
+*** For me it's always had the opposite effect. Actually, I'd say it's probably the closest thing I've ever had as a committed atheist to a religious experience. To glimpse, if even a little, at the immense complexity and scope of the universe; to marvel at the underlying physical laws from which we emerge like ripples in a pond - it's not /exactly/ awe-inspiring, but it does generate an emotion very much like it.
+
+Now, from a certain perspective the relative tininess of human affairs might deprive it of meaning. After all, if we live in a universe which doesn't care for our existence, does anything really matter? Poppycock! True, /most/ of the universe doesn't care for our existence, being a non-entity incapable of thought. But we're part of the universe /too!/ And we clearly care. We have morality, even if it can only be applied to ourselves. We give each other purpose, in as much it's possible to have one. Indeed, the very concept of "purpose" is itself a human social construct! To quote HPMOR - there /is/ light in the world, and it is /us!/
+:PROPERTIES:
+:Author: Jace_MacLeod
+:Score: 8
+:DateUnix: 1437159899.0
+:END:
+
+**** So much this. This is basically how I see it. Sure we're small, but we're smart, and getting smarter all the time. We still might be able to really /win/ at reality, by whatever abstract measure of top level win conditions humanity might have. There's an awful lot of universe to explore and stick flags on.
+:PROPERTIES:
+:Author: Sagebrysh
+:Score: 2
+:DateUnix: 1437184454.0
+:END:
+
+
+**** #+begin_quote
+  Actually, I'd say it's probably the closest thing I've ever had as a committed atheist to a religious experience.
+#+end_quote
+
+Just putting this here: [[https://www.youtube.com/watch?v=r6w2M50_Xdk]]
+
+(Philhellenes' "Science saved my soul - from religion")
+:PROPERTIES:
+:Author: boomfarmer
+:Score: 2
+:DateUnix: 1437483087.0
+:END:
+
+
+*** Lovecraft suffered from extreme depression and suicidal tendencies, so it's not surprising that he would say something like that.
+
+I have a highly refined "shrug it off" ability that I use whenever things start to seem too meaningless. This wasn't really something that came naturally to me, but I worked to develop it over time. I think I'm a lot happier for that compartmentalization.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 11
+:DateUnix: 1437146517.0
+:END:
+
+**** Lovecraft absolutely had issues of all kinds and I think a lot of his ideas were sick / are now outdated. But this is one that I agree with and feel he expressed well.
+
+And I usually work to stay busy and active (haven't quite mastered compartmentalization to the degree you mention, but I'm working on it because I also feel it's the only long-term solution), I just worry that it's basically just masking the issue.
+:PROPERTIES:
+:Author: whywhisperwhy
+:Score: 2
+:DateUnix: 1437148639.0
+:END:
+
+
+*** Where you see things which don't care for you, I see */opportunity!/* I mean it would be fantastic if there were other intelligences or a universe which cares about us like a benevolent god, but [[/u/Kerbal_NSA]] put it perfectly:
+
+#+begin_quote
+  “When I see the vast cosmic expanse I know I am utterly dwarfed, a little speck to the side. And you know how that makes me feel? Powerful. Significant beyond description. For I have an incomprehensible amount of matter and energy before my eyes and its all for the taking. Every star, every planet, every molecule of interstellar gas will be ours to do with as we please. The entire universe is nothing but the clay we mould to our will.”
+#+end_quote
+
+When there's no competition, you are that more likely to *win*.
+
+Don't look for meaning, think about what you want and pursue it. I derive purpose and meaning from accomplishment and joy in striving to achieve my goals.
+
+But let's say that I'm silly for thinking that we can create our own purpose and meaning. I've had days (pretty rare though) where I thought that everything I've said above was stupid. However, I still believe that if I exist in a universe where humanity completely fails to survive and destroys itself in the next few years is inherently better than a universe where we never existed no matter how horrible life can get. It's /always/ better to have tried than to give up, y'know? It's one of the few absolute rules I follow in my daily life. To me, accepting your statements feels too much like giving up and that feels like true failure rather than just simply failing to reach my goals. If you try, failure's not completely certain, but to not even try makes it a 100% guarantee that you'll never get to do what you want.
+
+Hope my rambling helps!
+:PROPERTIES:
+:Author: xamueljones
+:Score: 6
+:DateUnix: 1437186957.0
+:END:
+
+**** [[/u/Kerbal_NSA]] was writing that in a story about a guy trying to become a paperclipper, but... yeah.
+
+<evil voice>You've learned well.</evil voice>
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1437240983.0
+:END:
+
+***** I can't tell, are you agreeing with me or are you mocking me in a really funny way? Cause I laughed at your response. Thumbs up!
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1437252999.0
+:END:
+
+****** The problem with that post is, I know how an /evil/ mentor or older worker in a field expresses, "You're really growing up into a fine example of what you're trying to be", but I have not the slightest idea how /good/ characters say that, because the good ones tend to be Mysterious Old Wizards, or to come down with Dead Aniki Syndrome before they can say it.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437255879.0
+:END:
+
+******* Eeeh....don't try to be fancy or /awesome/. Just say exactly "You're really growing up into a fine example of what you're trying to be" and if the junior respects or worships the senior mentor, then they'll be really happy to hear that from them.
+
+By the way, I may not look up to you as an actual mentor-figure, but I've talked you enough to respect your opinions and to always listen to any advice you have for me as someone further along in the computer science field.
+
+So the fact that you said that to me is a nice ego boost for me! Thanks!
+
+Who says there can't be a touching moment over the Internet?
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1437273633.0
+:END:
+
+******** #+begin_quote
+  By the way, I may not look up to you as an actual mentor-figure, but I've talked you enough to respect your opinions and to always listen to any advice you have for me as someone further along in the computer science field.
+#+end_quote
+
+Real people don't usually fit into archetypes. That's for the best. It's fine.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437273725.0
+:END:
+
+
+**** Issue is that when there is no competition there is no drive to grow either, as the last 4 decades of zero progress in our space race has proven.
+:PROPERTIES:
+:Author: elevul
+:Score: 1
+:DateUnix: 1437521911.0
+:END:
+
+***** #+begin_quote
+  when there is no competition there is no drive to grow either
+#+end_quote
+
+I wouldn't say that competition is required for growth, but rather is a catalyst. After all even with no competition, NASA is still sending probes out into space. In fact, we just recently sent a probe close enough to Pluto to get for the first time, detailed close-up photos of the dwarf planet.
+
+Also, which would you rather have, no competition or an alien civilization so advanced we can't compete against it?
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1437562187.0
+:END:
+
+****** An alien civilization advanced enough that humanity would have to work together to compete against.
+:PROPERTIES:
+:Author: elevul
+:Score: 1
+:DateUnix: 1437562323.0
+:END:
+
+******* Hmmm, interesting.
+
+/Marks [[/u/elevul]] down as a potential alien infiltrator/
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1437563520.0
+:END:
+
+******** :3
+:PROPERTIES:
+:Author: elevul
+:Score: 1
+:DateUnix: 1437567224.0
+:END:
+
+
+*** Excuse me, but I have work to do. Will try to respond in full shortly. In fact, I'm tempted to respond "in-character", except that no hold on I really am "Spiral" like that and don't just quote that show nonstop to sound cool. Because infinite loops of TTGL quotes aren't really cool, they're just /true/.
+
+The full, complete, polished king of all Anti-Nihilist Rants might even be a good thing to post to the IEET once I finally have site access.
+
+Suffice that you should start with the following things you've probably read before:
+
+- HPMoR's "light in the universe" shpiel
+- The Fun Theory Sequence
+- I'm sure CS Lewis said something about how people are eternal splendors deep down. I just can't fetch the quote at the moment.
+- TTGL quote that applies extra-strongly to living in a causal universe: "Love and spirit change the universe!" The only thing Leeron got wrong is that they do so /through our actions/.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1437149368.0
+:END:
+
+**** #+begin_quote
+  There are no ordinary people. You have never talked to a mere mortal. Nations, cultures, arts, civilizations - these are mortal, and their life is to ours as the life of a gnat. But it is immortals whom we joke with, work with, marry, snub and exploit - immortal horrors or everlasting splendors. This does not mean that we are to be perpetually solemn. We must play. But our merriment must be of that kind (and it is, in fact, the merriest kind) which exists between people who have, from the outset, taken each other seriously - no flippancy, no superiority, no presumption.
+#+end_quote
+
+~C.S. Lewis
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 10
+:DateUnix: 1437149715.0
+:END:
+
+***** THANK YOU!
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437149903.0
+:END:
+
+
+**** [deleted]
+:PROPERTIES:
+:Score: 6
+:DateUnix: 1437153271.0
+:END:
+
+***** Funnily enough, thats almost exactly the argument Immanuel Kant makes for human beings being moral objects.
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 3
+:DateUnix: 1437161109.0
+:END:
+
+****** I ought to read Kant I suppose.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437238365.0
+:END:
+
+******* Well, I dimly remember reading that particular excerpt in high school. It absolutely blew my mind; following its logic gave my an intellectual high I have since never experienced. Unfortunately I was not able to find it; I suspect my teacher at that time heavily condensed some sections.
+
+Be aware that reading Kant is far on the right side of difficulty in his primary texts. Secondary literature is heavily recommended if you value your time.
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 1
+:DateUnix: 1437252237.0
+:END:
+
+******** I've been looking for a challenge; I may as well dive straight into the tough stuff. If I can't grok it I'll grab some sweetened condensed Kant instead. :P
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437276278.0
+:END:
+
+
+*** Nihilism is easy to start, but hard to finish. As far as I'm concerned, the statement "life is meaningless" is itself meaningless - if you find yourself depressed by the lack of a fundamental meaning, that's your fault for assuming something that obviously doesn't exist ought to.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: 4
+:DateUnix: 1437150316.0
+:END:
+
+**** Yesss. It's a map/territory confusion, like so many other things. Once it's addressed (whether via a mighty dose of [[/r/stoicism]] or otherwise), the problem disappears.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437163583.0
+:END:
+
+
+*** Yep, that's human. Camus has a lot to say on the same topic: "One must imagine Sisyphus happy," etc. It's one of the reasons I'm really happy I discovered Stoicism: while before, I used to be filled with existential dread, now I've kinda ... accepted that there is no meaning in the universe? To say "I'm having an existential crisis over the meaning of life" is akin to saying "I'm having an existential crisis over the dissolution of NaCl in H2O." And that's okay, yknow. That's okay.
+
+I guess Stoicism has helped, but I don't know if I can solely credit the change to that particular philosophy. It helped, sure, but is it a direct side effect? I guess I don't know what did this to me. I'm just happy that I don't have to worry too much about the big questions anymore.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1437146869.0
+:END:
+
+**** Honestly, that may be the only real solution- and wanting existence to have meaning doesn't make it so, so accepting that does seem like the next logical step.
+:PROPERTIES:
+:Author: whywhisperwhy
+:Score: 1
+:DateUnix: 1437148826.0
+:END:
+
+***** Best of luck!
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437150139.0
+:END:
+
+
+*** I get high on science. The immensity of creation is actually really cool. This year has been a blast with Dawn and New Horizons.
+
+Life is empty and meaningless, so it's up to you to fill it with meaning.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1437149712.0
+:END:
+
+
+*** Let's start from the facts: the world is currently a very mixed bag, from the point of view of almost all humans. Yet, let's get the obvious [[http://wtf.animeblogger.net/?p=140][out of the way]]:
+
+#+begin_quote
+  The universe is a large place, and there's plenty of time to grow and explore it, and meet our many friends waiting among the stars.
+
+  We just need to use our lives, given to us by those that came before us, to create the right world for those that will follow us.
+#+end_quote
+
+I don't really understand how any of it could be called /meaningless/. What, after all, is this /meaning/ you ask for? Mostly, it's a two-way causal relationship between you and things that are emotionally relevant to you, things you care about.
+
+If you just suffer from a lack of ability to care about things, well, that's clinical depression. It's not the way the universe is. It's a map-territory confusion.
+
+Lovecraft was writing at the end of the "death of God" period in the humanities, before Dadaism, existentialism, and postmodernism really came into their own. However, I think we can today mount a much better reply to the "death of God" than they could:
+
+You observe that the universe doesn't contain a Christian, Zoroastrian, or Judeo-Islamic style of "god": an omnipotent and sometimes anthropomorphic creator-being with a desire to engage in social relations with humanity, the most common such relation being hierarchical rulership and worship. Except that the Christians and Jews think God /loves/ them, in a really neglectful, abusive, sadomasochastic way.
+
+Ok. There's no God. So /the job is open./ We "mortals" are the biggest, most powerful beings in the room. Except that we've all seen just how awesome a "mortal" can get when they acquire loads and loads of optimization ability:
+
+#+begin_quote
+  There are no ordinary people. You have never talked to a mere mortal. Nations, cultures, arts, civilizations - these are mortal, and their life is to ours as the life of a gnat. But it is immortals whom we joke with, work with, marry, snub and exploit - immortal horrors or everlasting splendors. This does not mean that we are to be perpetually solemn. We must play. But our merriment must be of that kind (and it is, in fact, the merriest kind) which exists between people who have, from the outset, taken each other seriously - no flippancy, no superiority, no presumption.
+#+end_quote
+
+So the question is not, "what does the universe intend for me?". It doesn't intend, so it doesn't intend anything. This doesn't make life meaningless, because meaning comes from relations, and "the universe" is just not the kind of thing that can engage in human-style social and emotional relations at all.
+
+The question is, "What sort of cosmic principle am I?" Which god, or whose angel, are you?
+
+That undoubtedly sounds frightening, and also religious, and therefore depressingly solemn. Who wants to live in a universe of never-ending cosmic duties? Of course, Duty is just another principle, and as a /final/ principle, before which /all else/ should be moved out of the way, it's just not very good, is it?
+
+[[http://www.thebaffler.com/salvos/whats-the-point-if-we-cant-have-fun][What's the point if we can't have fun?]]
+
+And what would the point be if you were a lone cosmic principle? "[H]oly boredom is good and sufficient reason for the invention of free will," said the God-Emperor Leto II! Luckily, you're not a /lone/ cosmic principle at all: you're surrounded by /other/ cosmic principles, /other people/, whether they're more or less realized as such.
+
+You ask for meaning in life? You're surrounded by it! The very fact that your universe runs on /causality/ makes it, inherently, a /participatory/ universe in which /you have your part to play/. "There are no ordinary people", and that means that you are inherently a unique and important thread in the tapestry of the world.
+
+You are a powerful, significant thing in the universe, so much so that the only thing even remotely capable of thwarting your power is /more of that same power/, as wielded (at the moment) by other beings of your exact kind. What is beyond your reach? Nothing! All the lights in the sky and all the time in the world are open to you, to all of us, to grasp and share.
+
+So why would you sit around moping that life is meaningless when you could be living it?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437256015.0
+:END:
+
+**** /nihilistic devil's advocate mode/
+
+... when I could be living it, yeah yeah, so what? I live life, and have lots of fun - nobody said that I'm "moping." But, ultimately, those are all just distractions from the purposelessness of it all. I'm a chemical reaction, and one day it will end. The ups, the downs - all for naught. "Unique and important" aren't criteria by themselves when the things that I'm important /to/ are themselves meaningless. So why not just end it today?
+
+Or that is to say - /why/ should I have fun?
+
+--------------
+
+I'm picking on your response because it's the most written-out, but this critique really applies to all the "Oh you're being silly! Science and yourself and etc all provide purpose and meaning! Go out there and live your life!" These are just distractions from the problem of absurdity, and don't come anywhere near to actually answering it. The "anti-Nihilist rant to end all anti-Nihilist rants" was (or should have been) Camus' /Sisyphus/, since it steel-manned the nihilist position, explored why it's not at all flawed, and then moved on to a solution (ie, the Stoicism of the final line). There's an awesome video about it [[https://www.youtube.com/watch?v=35s4-3T5dJY][here]].
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437269022.0
+:END:
+
+***** /Why/ is a feature of your cognition, not the universe. If you're /really/ so bothered by existential dilemmas, we can just wire your meaningfulness switches closed. Again: do not confuse the mapper with the territory, and thus do not ask the territory to display features of people.
+
+Or if you really want the territory to talk back so badly, we can make you a god-figure. Sure, idolatry, but you're the one making confused complaints about the universe.
+
+You can only address this problem by giving a coherent counterfactual. If you claim life is meaningless, /what would it take/ for life to be meaningful?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437271975.0
+:END:
+
+****** It seems we're talking past each other. Life has no meaning; this I understand. There is no meaning in the universe. It simply does not care about us, because it is incapable of caring. I'm not asking it to care, I'm just asking: What's the point of "living life and having fun," as you recommend? Why is that preferable to suicide?
+
+--------------
+
+I'm serious, watch that video, it's much better at explaining the PoV than i am
+
+Have you read Camus? I'm wondering how much knowledge of existentialism and absurdity you have, is all. I don'f want us to talk past each other indefinitely
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437273907.0
+:END:
+
+******* #+begin_quote
+  What's the point of "living life and having fun," as you recommend?
+#+end_quote
+
+But that's its own point. Recursive justification hits bottom somewhere. If it doesn't, your brain is malfunctioning by attempting to go into infinite recursion.
+
+#+begin_quote
+  Why is that preferable to suicide?
+#+end_quote
+
+/Because it's more fun than being dead./
+
+#+begin_quote
+  Have you read Camus? I'm wondering how much knowledge of existentialism and absurdity you have, is all. I don'f want us to talk past each other indefinitely
+#+end_quote
+
+I've heard of the concepts, but I disagree that life /can/, in principle, be meaningless, when you stop filtering "meaning" through Christianity. Besides which:
+
+#+begin_quote
+  It simply does not care about us, because it is incapable of caring.
+#+end_quote
+
+This is a strictly temporary state of affairs that, viewed in geological timescales and even human civilizational ones, will not last much longer. Already there are bits of the universe that care about humans: they're called humans (also our various companion-species, in some measure). And just wait until we start acquiring more knowledge and control of the material implementation of caring! Then you're gonna see something!
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437274433.0
+:END:
+
+******** Ah. Seems like we're working from different definitions. Glad we figured this out early on in the discussion, so we can part our ways peacefully. I really do recommend reading /The Myth of Sisyphus/ -- it's short, and it's extremely well-thought-out and overall valuable philosophy. I think you might find it interesting.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437274621.0
+:END:
+
+********* So... what the hell is it you're talking about?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437275570.0
+:END:
+
+********** I could pursue the chain that goes, "Well, do you find your current occupation (likely school) to be fun?" And then, if not, why are you doing it? And do you expect that outcome to be fun? And ad infinitum. But watching the video is much more succinct, and I have other things to do than to debate philosophy with people over the internet. :)
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437275821.0
+:END:
+
+*********** #+begin_quote
+  I could pursue the chain that goes, "Well, do you find your current occupation (likely school) to be fun?"
+#+end_quote
+
+Actually, I'm old enough to be done with school (until I inevitably sacrifice my soul to the PhD system), and while I don't find my current occupation /maximally/ fun, it certainly provides nonzero fun, sets me up for good life conditions outside of work, and provides a steady income that lets me save for the future, as well as helping me build connections and experience I can make use of later.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437275935.0
+:END:
+
+************ #+begin_quote
+  make use of later
+#+end_quote
+
+Make use of to do what?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437276756.0
+:END:
+
+************* /laughs maniacally/
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437312040.0
+:END:
+
+
+********* Like, Wiki explains it as:
+
+#+begin_quote
+  In the essay, Camus introduces his philosophy of the absurd: man's futile search for meaning, unity, and clarity in the face of an unintelligible world devoid of God and eternal truths or values.
+#+end_quote
+
+But... the search for meaning, unity, and clarity isn't futile, the world isn't unintelligible, and pretty much all the real truths and values in the world are, if not /eternal/, than still /cosmic/ in scale, well beyond what you can change by flipping a coin or picking out a different thing to have for breakfast. The only thing he's getting right here is the lack of the Christian concept of a God, and if that's really so damn desirable, well, go ahead and acquire enough power over the fundamentals of reality to /make/ one!
+
+Why bother complaining about absurdity when the world just isn't absurd?
+
+And if you're wondering why I bother replying to you, it's because while you seem to think that any clear thinker would find the world absurd, I don't, which means we've actually got a substantial disagreement to reach the bottom of. You can't make the issue go away by just labelling me as ignorant for failing to find the world absurd and meaningless.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437275748.0
+:END:
+
+********** Gah, I said I wouldn't continue, but I'll bite.
+
+#+begin_quote
+  the world isn't unintelligible
+#+end_quote
+
+There was a recent discussion about how Lovecraft's elder gods and eldritch horrors are a pretty good model for the incomprehensibility of the world. Big Data is a thing. Also, the problem of induction, and the limitedness of human experience, and the fact that we live in extremistan (per Nicholas Nassim Taleb's indomitable /Black Swan/). Even the mathematics we use to describe reality proves [[http://www.eleceng.adelaide.edu.au/personal/dabbott/publications/PIE_abbott2013.pdf][ineffective]] at describing the universe. If you're gonna say it's totally intelligible, you're gonna need some evidence to back dat ass up.
+
+Although, if I recall correctly, some of your comments from whenever "Meditations on Moloch" was last posted suggest that you find it naïve, which ... is a point of view I'd love a written-out explanation of. It's only tangentially related to the discussion at hand, but, if you have such an explanation posted somewhere, please lmu. Otherwise, I implore you to procure one and then put it somewhere findable. I'd be extremely interested in reading your thought processes in this regard.
+
+#+begin_quote
+  real truths and values
+#+end_quote
+
+refers to moral/ethical/philosophical truths and values, not values like "the speed of light." Just clarifying. That's probably obvious, and I'm sorry for maybe sounding condescending, but I want to spell it out, for posterity's sake. If you had that philosophical definition in mind all along, then I do implore you to explain what you mean cuz i can't even
+
+#+begin_quote
+  if that's really so damn desirable, well, go ahead and acquire enough power over the fundamentals of reality to make one!
+#+end_quote
+
+What's your timeframe on that? I'm extremely confident, and I think you'll agree, that it's not gonna happen within our lifetimes. Your saying things like this is what's making it /really difficult/ for me to take you seriously
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1437276726.0
+:END:
+
+
+** Everyone should read /The Prince/ by Machiavelli.
+
+Some choice quotes that feed the cynic in me;
+
+- love is preserved by the link of obligation which, owing to the baseness of men, is broken at every opportunity for their advantage; but fear preserves you by a dread of punishment which never fails.
+
+- Therefore it is unnecessary for a prince to have all the good qualities I have enumerated, but it is very necessary to appear to have them.
+
+- A prince, being compelled knowingly to adopt the beast, ought to choose the fox and the lion; It is necessary to be a fox to discover the snares and a lion to terrify the wolves.
+
+The book is also completely free on Amazon and Project Gutenberg.
+:PROPERTIES:
+:Author: Magodo
+:Score: 3
+:DateUnix: 1437152981.0
+:END:
+
+*** It's also satire and dedicated to the people that broke both of his arms.
+:PROPERTIES:
+:Author: Jon_Freebird
+:Score: 3
+:DateUnix: 1437156081.0
+:END:
+
+**** Nahh, that idea was really popular in the 18th and 19th centuries but now /The Prince/ is widely accepted as genuine political theory based on what Machiavelli lived through in 15th century Italia
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437164488.0
+:END:
+
+***** #+begin_quote
+  widely accepted
+#+end_quote
+
+Evidence?
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 4
+:DateUnix: 1437196427.0
+:END:
+
+****** My sophomore political theory class. I remember someone mentioning the Prince-is-satire argument in class, and the teacher laughed and asked if he'd been on Wikipedia lately.
+
+I can provide some supporting evidence, if you'd like. In his private letters, Machiavelli never mentions any satirical intent behind /The Prince/. While there is an apparent disparity with his love of republicanism in /The Discourses/, the times had changed: his beloved Republic had collapsed, and now a tyrant was returned to power. He's very clear in /The Prince/ that he's not arguing that tyranny is better than democracy, but being realistic -- seeing the world as it was, not as he wanted it to be -- and then describing good rules (ie, how to provide stability and prosperity) for tyrants, should one arise: as it did. During his exile, he was thinking about how the Medicis could /not/ fuck it up (since he was always thinking about political theory) and so he decided to write it down. It was a treatise driven by what he had seen in the conditions of 15th century Italy. Sure, it's covertly cynical in that he's working out the details of a system he personally disagrees with, but it's not satire.
+
+In any case, I think the burden of proof is on the satirists in this discussion. :)
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1437222711.0
+:END:
+
+******* The theory stated by my professor (30 years ago) was that /The Prince/ was Machiavelli's resume. As such, it bore a passing resemblance to the truth his (potential) employer believed, but also a good deal of flattery and sugar-coating.
+
+His /Discourses/ are more philosophical and not strictly focused on getting him a job.
+:PROPERTIES:
+:Author: TaoGaming
+:Score: 6
+:DateUnix: 1437230907.0
+:END:
+
+******** Yep, that's a compatible interpretation. Shame they didn't take him up on the offer.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1437236311.0
+:END:
+
+
+******* That's about as much evidence as I've heard for the other side, and it sounds more plausible.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1437253939.0
+:END:
+
+******** Sorry - which side sounds more plausible? Antecedents are a bitch
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437266737.0
+:END:
+
+********* That it isn't satire.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1437268205.0
+:END:
+
+********** Ok, cheers mate!
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437268611.0
+:END:
+
+
+** Does anyone know if there have been any studies on helping ADHD/ADD kids/adults be more focused when reading or studying by having them use a tablet or other back-lit device?
+
+I was talking to a woman this week who said she was never a big reader until she bought a tablet and tried the reading app, and was able to get her son to read in the same way. Both have ADHD, so I was curious if this is a known method already.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1437153440.0
+:END:
+
+*** none that i found but i think the "ooh shiny!" factor has something to do with this :P either that or the expectation training we receive daily in associating tablets/phones with constant stimulation and distractions that when you use it for practical purposes it sticks?
+:PROPERTIES:
+:Author: puesyomero
+:Score: 2
+:DateUnix: 1437166870.0
+:END:
+
+**** Well I know I've read about backlit screens stimulating the brain to a higher level than other media do. It was in an article on sleep deprivation. I feel like that higher level of stimulation has got to have something to do with it. I'd love to get some kind of Actual Science to back me up, but unfortunately I don't know anyone who does ADHD research.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1437238336.0
+:END:
+
+
+** If some ROB (Random Omnipotent Being) were to take this subreddit community, and anthropomorphize it into a human being, what would that being look and act like?
+
+If someone comes up with a really good description, I /might/ commission an art piece of this hypothetical [[/r/rational]] person.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 3
+:DateUnix: 1437189169.0
+:END:
+
+
+** How do you balance sleep and caffeine? I've noticed that the more caffeine I drink, the worse I sleep the next night (ie: drink a double espresso and a Coke one day, involuntarily wake up at 6:00 next day after only getting to sleep at 2:00). When I let up off the caffeine, I'm less able to make up for lack of sleep, but I get more in the first place.
+
+Currently I'm actually starting by throwing coffee out for a while and cutting back. But I had quite liked coffee.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1437144515.0
+:END:
+
+*** I used to go in 3-4 week cycles; no caffeine, 1 cup a day, still sleepy so I have a second cup, 2 cups a day, still sleepy, get 12 hours of sleep that night and go cold turkey, repeat.
+
+Now, I'm less able to do this, since kids dictate too much of my schedule.
+:PROPERTIES:
+:Author: davidmanheim
+:Score: 3
+:DateUnix: 1437145486.0
+:END:
+
+
+*** I'm ADHD and have been self-medicating with coffee my entire life. If I don't have at least 4 cups a day I can't focus on anything /and/ I have no energy. I don't have any problem sleeping - I'm a morning person, and rarely stay up past 10PM.
+
+The only time I've had that experience that people talk about where they can't sleep after having stimulants was when I went off coffee because I was taking ADHD medication (ritalin, focalin, adderal, I tried all three) and one time I had my Adderall dose calibrated too high and was actually getting a buzz off it.
+
+I went back to caffeine because I didn't feel they were doing any better a job. Also, I didn't like the side effects: particularly the one where I had to provide documentation that I was on a prescription stimulant after a drug test.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1437149598.0
+:END:
+
+**** #+begin_quote
+  I don't have any problem sleeping [with caffeine] - I'm a morning person, and rarely stay up past 10PM.
+#+end_quote
+
+/You lucky bastard./
+:PROPERTIES:
+:Author: Jace_MacLeod
+:Score: 3
+:DateUnix: 1437161251.0
+:END:
+
+***** ADHD is not without its upsides, even if it does give me the attention span of a weasel on a sugar high.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1437161609.0
+:END:
+
+
+*** This is something that I'm pretty terrible about. I sometimes kick the caffeine habit for a bit, but I always come back to it in times of need (for example, when there's a code release). But my sleep schedule is also a mess, so ¯\/(ツ)//¯
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1437145384.0
+:END:
+
+
+*** does it matter what time of the day you drink coffee? Occasionally caffeine messes up my sleep if I drink it too late, but not when I have it only in the morning.
+
+Personally, my tablet screen is messing up my sleep much more than coffee.
+:PROPERTIES:
+:Author: zdk
+:Score: 1
+:DateUnix: 1437147397.0
+:END:
+
+**** If you use your tablet mainly to read on, I'd get something with an e-ink display.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437153332.0
+:END:
+
+
+*** Simple, restrict caffeine consumption to a ritual and don't deviate from it. In my case, a half litre of black tea in the morning, and no caffeine whatsoever after 7am - anything else messes up my sleep cycle irreparably.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: 1
+:DateUnix: 1437149969.0
+:END:
+
+
+*** Personally, I only take in caffeine every other day in order to keep tolerance low and not screw sleep up for myself. It seems to work well enough. I don't feel listless on the days when I don't take it, but I do feel a boost of energy on the days where I do.
+:PROPERTIES:
+:Author: Kodix
+:Score: 1
+:DateUnix: 1437159697.0
+:END:
+
+
+*** I have a special alarm which slowly turns on a light thirty minutes before I wake up. I find that helps. It's an artificial sunrise. I have a few other technique to try and hack my body's like flux.
+
+An actual routine solves most my issues.
+
+I never drink caffeine after midday, and rarely much before that. No super size portions.
+:PROPERTIES:
+:Author: Nepene
+:Score: 1
+:DateUnix: 1437164892.0
+:END:
+
+
+*** I take a melatonin supplement in the evening if I find I am having difficulty falling asleep. I Also have a few rules I follow about how/when I sleep. At 11 pm, I stop playing any sort of high-brain-activity simulating video game. No watching TV either. I stick to reading and writing. At midnight, I get in bed. Then, I typically read for another half hour until I get sleepy. I try to read something slow-paced or dense that I need to read (currently: Romance of the Three Kingdoms) so that I don't get too excited and stay awake.
+
+I also don't drink caffeinated beverages after 4 pm. I do, however, have a coffee in the morning and a diet coke in the early afternoon.
+:PROPERTIES:
+:Author: blazinghand
+:Score: 1
+:DateUnix: 1437166991.0
+:END:
+
+
+** I need some math help.
+
+Imagine a sphere (actually an oblate spheroid). Imagine a few thousand points on it. These points can be defined by polar coordinates (which requires a pole, a polar axis, a radius, and an azimuth, the first two of which are constant). All these thousands of points would be derived from some formula. For a simple example, let's say the radius increases by the [[https://oeis.org/A000045][Fibonacci sequence]] while the azimuth increases by the [[https://oeis.org/A000040][sequence of primes]]. That would mean that our coordinates would be:
+
+- (0, 2°)
+- (1, 3°)
+- (1, 5°)
+- (2, 7°)
+- (3, 11°)
+
+And so on.
+
+So what I want is some mathematical way of generating polar coordinates such that a person looking at /only the marked locations on the sphere/ would be able to work backwards and discover my method of generation. They should be able to do this even if they have no idea that I'm using a system of polar coordinates, they have no idea where I'm placing my pole or polar axis, and they don't have any idea what number system I'm using. The "discovered" formula should exactly match my formula with no ambiguity. Ideally, the formula would create repeating coordinates after generating a few thousand locations.
+
+The problem is, I don't know exactly what properties the formula needs to have in order for this to be true. I'm totally fine with two solutions to the formula, but three or higher doesn't work for my purposes.
+
+(Background for the story this is for can be [[https://www.reddit.com/r/alexanderwales/comments/3daqgk/making_a_solvable_puzzle/][found here]], though it shouldn't be at all necessary.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1437149560.0
+:END:
+
+*** You want the generator for a series of polar coordinates over a planet that's easiest to PAC-learn? Because generalizing the rule from the examples is a statistical learning problem, so you have to avoid No Free Lunch situations by restricting the hypothesis class.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1437157984.0
+:END:
+
+**** I want a generator for a series of polar coordinates over a planet that is relatively difficult (but possible) for a human to divine when given a large sample size. I want that generator to confine itself to only a small handful of points. I also want that generator, when written out in the shortest possible form, to include a single location.
+
+So in the above example with the radial coordinate following the Fibonacci sequence and the axial coordinate following the sequence of primes, the shortest possible way of stating the generator includes a single location (which is the pole of the polar coordinate system).
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1437158656.0
+:END:
+
+***** Right, and basically, PAC-learning is about how hard this actually is. Ever played Zendo?
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1437158819.0
+:END:
+
+****** Having just read the rules for Zendo (and half a paper defining PAC-learnability, which I think we'll agree is probably not adequate) ...
+
+I think I understand what you're saying about the difficulties involved in making a rule that's unambiguous given the evidence. This is similar to the scene in HPMOR where Harry gives Hermione three numbers and asks her to find the pattern.
+
+So ... I still don't know where that leaves me. I don't know how to create a generator that restricts the hypothesis space properly. I can imagine simple rules, but don't know how to evaluate the ambiguity of those rules.
+
+What /is/ the most PAC-learnable sequence of 1,000 points on the surface of a sphere? What are some general (layman's) guidelines for making rules which are learnable given examples that fit those rules?
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1437162416.0
+:END:
+
+******* #+begin_quote
+  I think I understand what you're saying about the difficulties involved in making a rule that's unambiguous given the evidence. This is similar to the scene in HPMOR where Harry gives Hermione three numbers and asks her to find the pattern.
+#+end_quote
+
+Exactly!
+
+#+begin_quote
+  What is the most PAC-learnable sequence of 1,000 points on the surface of a sphere? What are some general (layman's) guidelines for making rules which are learnable given examples that fit those rules?
+#+end_quote
+
+Well, the problem is, as with Harry and Hermione (and my boss pulled this on the admin a few weeks ago), the rule is much easier to learn with /negative/ examples mixed in with the positive ones.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1437178273.0
+:END:
+
+
+*** For the sake of the story I don't think you need to generate a formula that can do this, just generate a recognizable pattern. Even if they don't know their world is a sphere, something like an Archimedean spiral would work.
+
+Actually, I would work out a Lissajous figure with a known length, and then pick a sequence of points that follows the figure and is a large relatively prime fraction of the length. Say the length is 3,000,000 kilometers, then make the first point 2,930,000 kilometers in, then the rest of the points are ((n/293)%300)/10,000 kilometers along the path. This sequence should repeat after 300 steps, as if there is a device orbiting the planet and firing a transport beam every so often.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1437150600.0
+:END:
+
+**** The problem with a Lissajous figure (unless I'm misunderstanding it) is that it doesn't give you an origin; I would /like/ for the climax of the story to be either a race towards (or adventure to) some specific place.
+
+Archimedean spiral gives that, but is a little bit too ... simple? I suppose I would have to think about what data was available to the hypothetical heroes.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1437152015.0
+:END:
+
+***** You could have the strength of the points vary along the path, so a larger area gets switched for points nearer the origin. You could have one point not associated with transfers but with some other effect, because it's so powerful there.
+
+One possibility, natural philosophers have noticed that the variety of species along the remote Rasselbock Valley is anomalously high, and that's because when the trigger happens there it's powerful enough it pulls in whole herds of alien animals. The protagonists notice it's on the path, but other similar areas don't show the same impact.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1437152577.0
+:END:
+
+
+*** I kinda recommend asking [[/r/math]]. It would be a fun sort of challenge
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1437168813.0
+:END:
+
+
+*** I'm confused. If the locations are on an oblate sphere, shouldn't the radius be more or less constant, or /decrease/ with the azimuth? Are the points strictly on the surface of the sphere?
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: 1
+:DateUnix: 1437150480.0
+:END:
+
+**** "radius" = "radial coordinate" = "distance from the pole"
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1437150992.0
+:END:
+
+***** #+begin_quote
+  Imagine a sphere (actually an oblate spheroid). Imagine a few thousand points on it.
+#+end_quote
+
+By definition, all points on a sphere should have the same radius in terms of polar coordinates where the centre of the coordinate system is the centre of the sphere.
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: 1
+:DateUnix: 1437151323.0
+:END:
+
+****** It was my understanding that in polar coordinates, the pole is always on the surface of the sphere, not in the center of it. Is that not true?
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1437151733.0
+:END:
+
+******* In spherical polar coordinates, the radius is (normally) the distance from the center of the sphere, not from a pole on the surface of the sphere.
+:PROPERTIES:
+:Author: Mawhrin-Skel
+:Score: 1
+:DateUnix: 1437152971.0
+:END:
+
+
+******* I may be confusing polar and spherical coordinate systems. To be clear, you're talking about "azimuth" as in longitude, and the "radius" in the sense of the great circle distance from the pole?
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: 0
+:DateUnix: 1437152888.0
+:END:
+
+******** Yeah, that seems to be the confusion. All points are on the surface of the sphere. The polar coordinates are in the form of ([great circle distance from pole],[degrees from polar axis]).
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1437154552.0
+:END:
+
+
+*** To clarify: Your protagonist only has (all?) generated points on his map but not the order the formula generated them? And does the formula only specify the location or also the mapping between points on the worlds?
+
+In general it sound like you want a [[https://en.wikipedia.org/wiki/Pseudorandom_number_generator][Pseudo Random Number Generator]].
+
+PRNGs have an attribute called a "period" which is the number of outputs after which they start to repeat.
+
+Candidates would be a [[https://en.wikipedia.org/wiki/Linear_congruential_generator][Linear Congruential Generator]]
+
+Or a [[https://en.wikipedia.org/wiki/Linear_feedback_shift_register][Linear Feedback Shift Register]]
+
+Both these generators are not cryptographically secure. Which means they deviate from perfect randomness. They generate patterns and with enough points can be broken.
+
+For the mapping a [[https://en.wikipedia.org/wiki/Perfect_hash_function][Perfect Hash Function]] could do the trick.
+
+Other thoughts would be a [[https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29][RSA encryption]]. No patterns but your protagonist would have to factor a large number to uncover the pattern. (Granted there would be less intermediate steps and the number would have to come directly from the gods/ancient civilization or something).
+
+Cryptography in general is full of interesting concepts for such stories. I'm currently writing on my master thesis for IT-Security. The topic is about secure pseudo random number generators in software.
+:PROPERTIES:
+:Author: DrunkenQuetzalcoatl
+:Score: 1
+:DateUnix: 1437153466.0
+:END:
+
+**** What I have right now, subject to change:
+
+- There are three worlds, A, B, and G.
+- Every =x= days, there is a transferal effect that swaps two chunks of space-time between two of the three different worlds (/A to B, B to G, or G to A/).
+- Each transferal in the sequence is between two different worlds. (/ex. if you see an A to B transfer, you know the next transfer two days later will be B to G/)
+- This transferal effect is centered on a different location each time.
+- After a period of =y= years, the locations repeat, but with different worlds (/ex. if the transferal effect was A to B, when it happens at the same location eight years later it will be from B to G, and eight years after that it will be G to A, and eight years after that it will be A to B again/)
+
+So ... the point where I need help is /after all of this is known/. The protagonist has a map of known transferal locations, along with the times that they happened. He knows the frequency of transferal (=x=) as well as the period of the pattern (=y=). In order to finish his map of /all/ transferal locations, he needs to find the pattern (alternately, he might have a map of all locations, but still wants to know what underlying mechanism decided on those instead of others).
+
+What I want is for the "key" to this pattern to be a location; once you've solved the generation method and can duplicate it, you should be left with a bunch of numbers and a place. You should be able to work backwards from the data in order to arrive at the algorithm (and therefore the location embedded in the formula).
+
+It's probable that what I want is a PRNG, but I don't know enough to know which kind I'd want. Ideally something solvable by hand and simple enough to be included as a description in prose.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1437158846.0
+:END:
+
+***** Okay so a Linear Congruential Generator (LCG) works like this:
+
+X(n+1) = a * X + b (mod m)
+
+So you have m which would be your period (y). Which is also the number of distinct teleport locations.
+
+Then you have the parameters for the LCG which are a and b. This could be your end location. (but a,b can not be chosen completely arbitrary).
+
+Then you start with a seed (any integer < m) and put it in the formula to get the next number.
+
+So the first location determines all locations. And you can start at any of the locations on the map to find all others.
+
+You can get x,y coordinates on a map out of the random numbers with x = X mod width and y = (int) (X / width)
+
+That should be generate a pattern given enough points. a and b are also determinable. Even unknown a,b and m is doable but harder.
+:PROPERTIES:
+:Author: DrunkenQuetzalcoatl
+:Score: 2
+:DateUnix: 1437162064.0
+:END:
+
+
+***** I don't think you want a PRNG --- their raison d'etre is that they are hard to unravel. That is knowing the output of a PRNG it should be /hard/ to determine what the precise formula is.
+:PROPERTIES:
+:Author: thesteamboat
+:Score: 1
+:DateUnix: 1437184878.0
+:END:
+
+****** Normal PRNG for simulations for example only need good statistical properties. Cryptographicaly secure PRNG need to be hard to reverse in addition (and are mostly slower as consequence).
+:PROPERTIES:
+:Author: DrunkenQuetzalcoatl
+:Score: 1
+:DateUnix: 1437360976.0
+:END:
+
+
+*** Valdemar did this with ripples, complete with the transfer effect you describe below. Have you read the mage storm trilogy? I can elaborate if you'd like, on a phone right now.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1437327859.0
+:END:
+
+**** I've never heard of it before; let me know more when you're at a keyboard? Looks like there's a whole ton of information on the series online, but I'm looking at the sorts of wikipedia pages that seem more geared to people who have already read them.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1437328832.0
+:END:
+
+***** Sure thing.
+
+In the Valdemar prehistory, two mages named Urtho and Ma'ar were fighting a big war. Near the end of this war, one of them comes up with a super weapon that will (IIRC) detonate the magic used to make magitek. Urtho manages to make it half-backfire, or something. These guys are both Urza-tier, so the resulting explosion leaves craters [[https://41.media.tumblr.com/tumblr_luzxz9GVxG1qa73dwo1_500.png][the size of countries]] (Urtho's is in the south) and sends out concentric shockwaves for months. The Pelagir Forest on the map? By the present day, that's the amount of land the hawkbrothers hadn't managed to cleanse yet.
+
+Thousands of years later, circular sections a few feet in diameter are being swapped over long distances. The group of people who are all about math and technology take the reported locations and determine that the places and times correspond to two interfering concentric /converging/ circles, one on each of the ancient fortress sites. They determine that the storms are increasing in strength, and they send an expedition to Urtho's tower (Ma'ars being under a lot of water) to try to stop the final strongest storm from killing a bunch of people, especially the Shin'a'in nomads who live in the plains in the crater around Urtho's tower (we learn in this book that their goddess told them to live there to guard the tower) and damaging the leyline system that concentrates magic.
+
+After concentrating some of the biggest names in the series in the tower, they find a way to save Hardorn, Valdemar, Karse, and Intel. (You will note that that's not a lot of terrain. Things got pretty bad elsewhere. The (evil, eastern) Empire, where they routinely used magic as a logistics element, was not a good place to be in the immediate aftermath.)
+
+Other notes: yes, the magic shockwaves travelled around the planet several times.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1437358562.0
+:END:
+
+****** Neat! Yes, I can definitely see the similarities; I'll think on whether that's a good thing or a bad thing.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1437359079.0
+:END:
+
+
+** I read Terry Pratchett's /The Reaper Man/ and while the wizarding sections were at best a distraction from Death it's still made it into my favorites. I also recently read /Man's Search For Meaning/, written by psychologist/therapist and *holocaust survivor* Victor Frankl. Interesting to read about the challenge of staying positive while suffering in a literal hell-on-earth.
+
+Those two books must form some sort of inoculation or antidote to existential stress. You'll be a happier person after reading them.
+:PROPERTIES:
+:Author: AmeteurOpinions
+:Score: 2
+:DateUnix: 1437161293.0
+:END:
+
+*** /Man's Search/ was my personal introduction to Stoicism, waaay back when. I should give it a reread; Frankl gives some really sage life advice. (Pun intended.)
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1437164811.0
+:END:
+
+
+** Anyone been playing path of exile recently?
+:PROPERTIES:
+:Author: windg0d
+:Score: 1
+:DateUnix: 1437161891.0
+:END:
+
+
+** I live in Palo Alto and am thinking of DMing another campaign of Dungeons and Dragons. It's set in my homebrew [[https://www.fanfiction.net/s/11386854/1/Story-and-Rules-of-Wyweria][campaign setting]] that I've used once before. If anyone's in the area and would be interested in playing, let me know. We use Pathfinder and currently have two players.
+
+The campaign will be set during the Age of Legends, a time during which many small kingdoms were ruled by individuals of great power. Every King was a powerful Monster or mage of some sort, someone who could establish absolute authority over a certain area. The last campaign was set in Avaria, the kingdom ruled by the magelord Avar. For the most part, Avar was a "good" magelord, who cared almost nothing for the day-to-day lives of the inhabitants of Avaria. If thieving or banditry ever got so out of hand it impacted his ability to collect taxes to spend on spell components, or prevented merchants from reaching him, he took a few moments out of his day to smite the criminals. He only really cared about territory and relative peace, but that's pretty good as Magelords go. ?
+
+The PCs were a mercenary group typically employed by merchants for protection. They had run-ins with other mercenary groups, with the government forces, with criminal organizations that were functionally indistinguishable from the government forces, and with Holy Orders who had inscrutable goals. None were as inscrutable as the Elves who had a completely foreign system of ethics and law.
+
+The adventures will mostly be run as linked one-shots-- episodes that your adventuring company works through. Ideally, at the end of each session, we've finished whatever short-term things have been opened up that session while advancing the overarching goals and plots of the player characters. I have a number of adventures and story hooks prepared, and of course there's also fun to be had generally exploring the environment, interacting with NPCs and each other, etc.
+
+Generally, missing any single session shouldn't leave you out of the loop or not make sense from a story perspective-- it'll be segmented into "jobs" that your company does, for profit or for personal reasons. The end of each sessions should mark the end of that particular job. If someone is present for one job but not another, it's entirely reasonable that that character was taking the week off, or busy working another job, for that session. This will prevent weirdness that comes from characters popping in and out of existence.
+
+This format tends to serve pretty well for the purposes. Typically the idea would be to meet on a weekend morning for a time of 3-4 hours, though depending on people's schedules we may change things. It has historically been difficult to find a time people can play for 3 hours regularly other than Sunday mornings or weekday evenings (and weekday evenings are very susceptible to schedule issues).
+
+In any case, let me know if you're interested and in the area!
+:PROPERTIES:
+:Author: blazinghand
+:Score: 1
+:DateUnix: 1437169675.0
+:END:

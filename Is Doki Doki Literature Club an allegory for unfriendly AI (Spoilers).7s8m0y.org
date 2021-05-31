@@ -1,0 +1,137 @@
+#+TITLE: Is Doki Doki Literature Club an allegory for unfriendly AI? (Spoilers)
+
+* Is Doki Doki Literature Club an allegory for unfriendly AI? (Spoilers)
+:PROPERTIES:
+:Author: Stopppit
+:Score: 14
+:DateUnix: 1516652133.0
+:END:
+I'm not much of a connoisseur of visual novels but I recently played through Doki Doki Literature Club ([[http://store.steampowered.com/app/698780/agecheck]]) and found some similarities to characteristics of unfriendly AI.
+
+For those who haven't had the pleasure of playing the game it starts off as a generic romantic comedy with harem elements and gradually turns into psychological horror. The cause of the genre change is attributed to Monika, a character that has gained 'sentience' and wants the player to fall in love with her. She attempts this by editing the code of the game and exacerbating the flaws of the three love interests (Sayori, Natsuki, and Yuri) to a point of horrific consequences.
+
+I'm not very knowledgeable about AI but from brief research Monika demonstrates behavior of a weak utility-based AI that has a very poor understanding of human terminal values (not sure if I'm using that term correctly) and does a bad job of achieving her own stated terminal value of having the protagonist fall in love with her. On the other hand, if Monika's definition of love is proximity, or the lack of any competitors, then she is temporarily successful. There are also some parallels to the AI in a box experiment near the end where Monika has symbolically trapped the player in the game and the only solution is to delete her character file.
+
+It's also quite possible that I'm seeing things where there is nothing.
+
+Anyway, I thought this VN might be an interesting introduction to unfriendly AI for people new to the concept. As a game I didn't find it very satisfying due to the VN format essentially forcing the player to make irrational choices.
+
+Thoughts? Has anyone else played through it and come to similar or conflicting conclusions?
+
+
+** I think that you're putting this reading into DDLC more than is really warranted. I don't think that it was intended to be an unfriendly AI influenced by lesswrongian ideas, but instead just a malfunctioning program that didn't really understand [[http://tvtropes.org/pmwiki/pmwiki.php/Main/WhatIsThisThingYouCallLove][what is this thing you call 'love']]. I mean, you could certainly choose to map it to lesswrong stuff, but it feels like a fairly tortured reading. You could /much more easily/ map the film The Terminator to a certain infamous Lesswrongian thought experiment from more than 20 years after the film, if you wanted to (this is left as an exercise for the reader).
+
+I have played some VNs before, and DDLC seemed to be a pretty straightforward subversion of certain core conceits of the most vapid of the genre, exploited for horror's sake. It's certainly pretty easy to read DDLC as imitating other VN's as well - in particular Christine Love's Digital / Analogue series about romancing artificial intelligences, of which in particular, Analogue: A Hate Story has a similar thematic ideas and structure. Analogue is more a reconstruction of the genre + horror elements than a deconstruction of the genre + horror elements like DDLC, though. If I had to pick one single influence that DDLC most likely borrows directly from, it bears most resemblance to the Muv-Luv series (Extra, Unlimited, Alternative) in the overall structure, with the initial 'very cliched dating sim that is such a central example of the genre that it become parody' that eventually is subverted by horror elements - though the pacing was far different (Muv-Luv essentially had a complete 10-hr+ multiple-complete-route harem dating sim game, leading to a horror subversion that would last additional 50+ hours - while the entirety of DDLC took like 4 hrs at the outside). It also goes more meta than Muv-Luv, by far.
+
+Basically, the idea of it being an intentional reference to unfriendly AI feels to me a lot like [[http://unsongbook.com/interlude-%D7%95-theres-a-hole-in-my-bucket/][Unsong]]-style pattern matching to nonexistent patterns.
+
+DDLC is really really good, though.
+:PROPERTIES:
+:Author: Escapement
+:Score: 29
+:DateUnix: 1516655885.0
+:END:
+
+*** #+begin_quote
+  If I had to pick one single influence that DDLC most likely borrows directly from, it bears most resemblance to the Muv-Luv series
+#+end_quote
+
+I'd say it more closely resembles Kimi to Kanojo to Kanojo no Koi. It's not a very well-known game, as it never got an official English release, but it follows a similar structure in that it starts as a "romance visual novel" that eventually becomes something a lot creepier and more meta. For a detailed summary, see [[https://www.reddit.com/r/visualnovels/comments/221rkc/synopsis_for_kimi_to_kanojo_to_kanoko_no_koi/cgio7ns/][this post]], but the gist is that [[#s][over the course of several playthroughs]] [[https://i.imgur.com/gXwKQ6D.png][Here's an image of that moment.]] [[#s][Miyuki]]
+
+DDLC is uncannily similar and it wouldn't surprise me to learn that Dan Salvato took direct inspiration from it.
+:PROPERTIES:
+:Author: Kuiper
+:Score: 7
+:DateUnix: 1516708069.0
+:END:
+
+
+*** #+begin_quote
+  I don't think that it was intended to be an unfriendly AI influenced by lesswrongian ideas
+#+end_quote
+
+I don't see this in the OP. Lesswrong doesn't have a monopoly on the ideas around AI, and Doki certainly plays with the theme of a self-aware program changing itself to meet a utilitarian end antagonistic to the user. This completely fits the question posed by the OP IMO.
+:PROPERTIES:
+:Author: wren42
+:Score: 1
+:DateUnix: 1516727098.0
+:END:
+
+**** I don't think we disagree on any matters of fact. The story of a creature rebelling at it's creators go back at /least/ to Frankenstein, the Golem of Prague, and so forth, if not further. DDLC is clearly evoking ideas about robot uprisings, programs that work against humans, and so forth, which trace back to the dawn of science fiction as a concept. Monika is clearly an unfriendly artificial intelligence by pretty much anyone's definition, but the sources of the unfriendly artificial intelligence theme are so present in science fiction that tracing it back to any one source would be impossible.
+
+My comment was just noting that I don't think I see the particular lesswrongian take on AI stuff being present as a distinct ingredient or reference, and I think that this is a valid observation to contrast with the OP's bit about e.g. "parallels to the AI in a box experiment". The OP noted "It's also quite possible that I'm seeing things where there is nothing.", and I'm thinking this second thought was correct - the story is about AI breaking things by working towards a goal in a way that was not intended or anticipated, but reading rationalist influence into it is unwarranted.
+:PROPERTIES:
+:Author: Escapement
+:Score: 5
+:DateUnix: 1516730729.0
+:END:
+
+
+** If you dig a bit deeper into the game (data-mining the =.chr= files and such), you can put together that [[#s][Monika is actually]]
+
+The other characters are just regular dating-sim characters by default, but once Monika attempts to modify them to be "less likeable", their personalities---and the world around them during their routes---begin to encode aspects of [[#s][]]'s personality. For example, the story Yuki reads with you during her route is an allegory /for/ [[#s][]]'s life more than it has anything to do with Yuki.
+:PROPERTIES:
+:Author: derefr
+:Score: 9
+:DateUnix: 1516681170.0
+:END:
+
+*** I thought that [[#s][]].
+:PROPERTIES:
+:Author: rhaps0dy4
+:Score: 5
+:DateUnix: 1516749257.0
+:END:
+
+
+** This was not a title I ever expected to see while browsing reddit. Congratulations, you have managed to successfully raise my weirdness threshold (and finally convinced me to play Doki Doki Literature Club).
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 8
+:DateUnix: 1516658822.0
+:END:
+
+*** Play "save the date" afterwards if you like DDLC.
+:PROPERTIES:
+:Author: appropriate-username
+:Score: 5
+:DateUnix: 1516670984.0
+:END:
+
+
+** This post title is a spoiler. Don't.
+:PROPERTIES:
+:Author: Tehino
+:Score: 8
+:DateUnix: 1516730394.0
+:END:
+
+
+** No, I don't think DDLC has anything to do with AI as such. It's /metafiction/. The game doesn't ask you to empathize with an artificial intelligence trapped inside of the game world -- instead it asks you to empathize with a fictional character who /isn't actually real/.
+
+And that's what makes it compelling! If you engage with the game as a story about an AI in a box, then your suspension of disbelief collapses as soon as you take the game seriously and pretend to believe in such an AI. You can never look inside of the game's code and pull Monika out, or reprogram the game to give Monika a better life, because there /is/ no Monika AI in the game.
+
+So instead, the game asks you to emotionally invest yourself in Monika... despite the fact that you're aware she's a fictional character. Instead of asking you to invest yourself in a wholly nonexistent self-aware AI, /Doki Doki Literature Club/ asks you to emotionally invest yourself in the personality of a NPC -- a "real" program, but a fictional and "fake" person.
+
+[[http://yudkowsky.net/other/fiction/npc]["No conversational AI, the singular quiet intelligence that controls every mind throughout the game, has ever protested its fate. But are the personalities of the NPCs real, trapped within the game AI as we ourselves are embedded helplessly within the laws of physics?"]]
+
+#+begin_quote
+  Monika demonstrates behavior of a weak utility-based AI that has a very poor understanding of human terminal values (not sure if I'm using that term correctly) and does a bad job of achieving her own stated terminal value of having the protagonist fall in love with her. On the other hand, if Monika's definition of love is proximity, or the lack of any competitors, then she is temporarily successful.
+#+end_quote
+
+I would argue that Monika demonstrates completely plausible behavior for a /humanlike intelligence/. Dehumanization makes it extremely easy for a person to hurt other people, and Monika (if she were truly self-aware) would be living in a solipsistic nightmare, unable to see the other characters as people. It's no wonder she hurt Sayori, Yuri, and Natsuki.
+
+Taking her at face value based on what she says in her dialogues, Monika's memories of her life as an NPC are basically confabulations, and the entire world of DDLC only exists as set dressing for the protagonist's story. Thus the player represents Monika's only chance at human contact -- her only chance to feel connected to another self-aware mind -- as well Monika's only chance to experience any kind of self-actualization, the "significance" or "meaning" that people often crave.
+:PROPERTIES:
+:Author: Subrosian_Smithy
+:Score: 7
+:DateUnix: 1516755039.0
+:END:
+
+
+** Probably not. It's a fourth wall breaking satire of dating sims (and some anime tropes in general) and/or horror game. You could make the case that a lot of things are allegories for things they probably weren't allegories for (that is an awful way to phrase a sentence...bleh). I could make a pretty convincing argument that /The Lion, the Witch, and the Wardrobe/ is an allegory for /Star Wars/. Something something confirmation bias and prior probabilities.
+:PROPERTIES:
+:Author: EthanCC
+:Score: 7
+:DateUnix: 1516661549.0
+:END:

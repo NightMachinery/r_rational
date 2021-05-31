@@ -1,0 +1,170 @@
+#+TITLE: Smart Wish Partial Solution: Minimize Regret
+
+* Smart Wish Partial Solution: Minimize Regret
+:PROPERTIES:
+:Author: TimTravel
+:Score: 4
+:DateUnix: 1431673457.0
+:END:
+Main idea: for almost any way a wish can go wrong, you will eventually regret it.
+
+Flaws / things that can go wrong:
+
+1. Your ability to determine whether you should regret the current state of affairs is impaired or altered
+
+2. Definition of regret is unclear
+
+3. You are ignorant of circumstances which would cause you to regret making the wish if you were aware of them
+
+4. Your ability to feel regret is diminished or deleted
+
+As long as the definition of regret is correct and you maintain the ability to feel regret normally and the ability to assess whether you should regret the outcome, then any negative consequence, including "I should have made a different wish", will be avoided.
+
+My intuition is that "regret" will be easier to define than "values" in the context of the wish "maximize my values".
+
+Thoughts?
+
+
+** I think #2 is the sharp end - not convinced that giving a formal definition of "Things I would regret" is a different order of complexity than "Things I value". May possibly be a subset, but it doesn't reduce the task by that much and still seems prone to the same problems - there's a great many things that you might find small reasons to regret but that don't actually matter in the face of executing your wish, and you need to specify exactly the order of priorities... which somewhat just reduces back to specifying all of your values.
+:PROPERTIES:
+:Author: noggin-scratcher
+:Score: 6
+:DateUnix: 1431682434.0
+:END:
+
+
+** Consider that logic applied to any decision. If your decisions are always made to minimize regret, what will they be like? I suspect they will be conservative and safety-oriented, rather than aggressive. This will minimize the chance of a negative outcome but strongly limit the positive outcomes. Of course you can factor that into the decision, and consider that you may regret having not taken any risks, but it will still color it: we are still human and not flawless engines of rationality.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 4
+:DateUnix: 1431686356.0
+:END:
+
+*** Very interesting! I think the advantage comes in when we say that there must be absolutely no regret, not just minimizing total regret. If you take excessively cautious actions you'll end up with less expected value and regret the decision to be overly cautious.
+
+Maybe minimize the maximum amount of regret felt across all time.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1431687409.0
+:END:
+
+**** I suspect "there must be absolutely no regret" requires solving the halting problem. So it's not actually a useful strategy in this Zone.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1431689076.0
+:END:
+
+***** Uh, there's a really easy way to minimise regret. Exterminate everything sentient before it can regret anything. Do so in such a way as to minimise the number of sentient beings that realise it's even happening. Hide the evidence.
+
+So yeah, not the best target.
+:PROPERTIES:
+:Author: Sceptically
+:Score: 1
+:DateUnix: 1431700032.0
+:END:
+
+****** The "peaceful as a graveyard" end-game.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 5
+:DateUnix: 1431701941.0
+:END:
+
+******* Indeed. Although it mostly only applies to minimising global regret rather than local regret, so perhaps (on actually reading the post more carefully) not so relevant. Oops.
+:PROPERTIES:
+:Author: Sceptically
+:Score: 2
+:DateUnix: 1431741839.0
+:END:
+
+
+****** Killed everyone everywhere. No regrets!
+:PROPERTIES:
+:Author: psychothumbs
+:Score: 2
+:DateUnix: 1432064994.0
+:END:
+
+
+** Malevolent, lazy, or benevolent genie?
+:PROPERTIES:
+:Author: narfanator
+:Score: 2
+:DateUnix: 1431674578.0
+:END:
+
+*** Malevolent. Benevolent genies are trivial and I don't know what a lazy genie is.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1431674694.0
+:END:
+
+**** Benevolent genie: you can say "I wish the best wish I could wish for", and it will work out.
+
+Lazy genie: basically a computer. Wishes very complicated and almost always end in disaster.
+
+Malevolent genie: if it's not utterly impotent, you're screwed. Avoid at all costs.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 2
+:DateUnix: 1431691785.0
+:END:
+
+***** Nope @ lazy - Anecdotally, the hippie manifestation experience is something like this:
+
+The universe wants you to be happy, but you have to tell it what that looks like, and it'll go the least out of its way to make that happen.
+
+In other words, it's a lazy genie (according to these experiences).
+
+What this really means is: How go the different genie types deal with the unspecified details? If you wish for wealth but not happiness, the malevolent genie picks those details to screw you (whole family dies! insurance payout!), the benevolent genie picks the details to give you what you really want (the wealth is your family!), and the lazy genie alters your life-path the least (career path opportunities arise!).
+
+Malevolent genies are the only ones that require programming, because they're the only ones you have to describe everything exactly or it fucks up. Lazy genies just maybe ask you to sacrifice things you weren't expecting; it's important to be abstract and/or vague. Benevolent genies, you want to specify the least. In the experiences of people who talk about manifestation, the universe is somewhere between a benevolent and lazy genie.
+:PROPERTIES:
+:Author: narfanator
+:Score: 2
+:DateUnix: 1431694639.0
+:END:
+
+****** (In the experiences of people with [[https://www.schneier.com/blog/archives/2008/03/the_security_mi_1.html][security mindset]], it's obviously a malevolent genie and the fact that somebody wanted you to think otherwise is /deeply/ suspicious.)
+:PROPERTIES:
+:Author: FeepingCreature
+:Score: 2
+:DateUnix: 1431767472.0
+:END:
+
+
+** Regret is indeed easier to define, but you still need to specify that you mean to minimize the regret of a counterfactual model of you as you are now, assuming that the counterfactual you is brought to full understanding of each counterfactual under consideration.
+
+But yeah, at that point it's not that hard. The hard bit is actually writing down a specification of this that doesn't assume you have a magic counterfactual you in a box.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1431707461.0
+:END:
+
+
+** Also, humans are changeable in what they regret - a person in a utopia might regret the loss of risk, depression might drive a person to regret their life, and someone might regret the simple loss of options because they're dissatisfied with what they chose.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1431710704.0
+:END:
+
+
+** Sorry, regret is no silver bullet and no wish is safe. See [[http://lesswrong.com/lw/ld/the_hidden_complexity_of_wishes/][this amazing article]] for details.
+:PROPERTIES:
+:Author: PlaneOfInfiniteCats
+:Score: 1
+:DateUnix: 1431890863.0
+:END:
+
+
+** First of all, you don't regret anything if you're dead or your mind is altered to not feel regret.
+
+Third, "regret" is a somewhat vague concept, and it's questionable how much it'd map onto someone's values. For example, I could see a person not regretting buying a lottery ticket, even though unbenownst to them it would've ended up giving them a million dollars. Minimizing regret minimizes sorrow, but it doesn't maximize happiness much.
+:PROPERTIES:
+:Author: RolandsVaria
+:Score: 1
+:DateUnix: 1431709419.0
+:END:

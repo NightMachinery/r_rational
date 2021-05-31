@@ -1,0 +1,143 @@
+#+TITLE: [D][Q][RT][HSF] What kinds of activies/jobs do you anticipate coming up as automation absorbs the workforce?
+
+* [D][Q][RT][HSF] What kinds of activies/jobs do you anticipate coming up as automation absorbs the workforce?
+:PROPERTIES:
+:Author: Nighzmarquls
+:Score: 2
+:DateUnix: 1454087039.0
+:END:
+So I'm writing some near future stuff for my current story. And one of the things I'm exploring is the social ramifications of wide spread automation of goods manufacture and automation of various discrete 'intelligence' tasks.
+
+The point of this exercise is GAI is not apparent yet but there is still plenty of social and economic shake ups and weirdness anyway.
+
+And I'm curious what kind of 'new' jobs people might have invented given automation tech of this degree.
+
+Some milestones that automation has reached in this world are as follows:
+
+- There are more or less unmanned 'factories' that can produce most goods people use scattered around the united states and perform just in time manufacture of ordered goods. In urban areas these factories/fabricators are more centralized/larger.
+
+- Goods can be effectively entirely personalized either by individual design or optimization algorithms towards a set of parameters such as price, materials, shape and use requirements. They can then be ordered and shipped.
+
+- Moving of goods, raw materials and people is transitioning to automation driven as a rule and human self directed transport as exception.
+
+- There are recreational driving parks where you can rent time in high performance 'manual' cars. Essentially things are going the way of the horse for manual autos.
+
+- Personal homes as good or better then low cost construction today can be assembled with no onsite human supervision. There is a high skill 'manager' position that can get better results but this is higher end. Sometimes safety inspections or other legal requirements need a human on site.
+
+- The mechanisms for producing entertainment on a personal level have developed to the point that an individual could produce a CGI feature film on par with pixar. But they have to play the role of a micromanaging director and if they are not a specialist their stuck with the same 'base actor' personalities as everyone else.
+
+- You can hire a computer to write a story but it's hard to get control just right and you run into the same KIND of micromanaging game as the director position for animated features.
+
+- Different countries and governments have different ways they have managed the problem of automation and not all countries have equal automation infrastructure/prevalence.
+
+
+** Machine learning whisperer. These systems /will/ include significant machine learning, and a lot of installations will develop their very own unique idiosyncrasies. Sometimes they'll get stuck in wacky local minima and you have to have someone come in who can figure out the configuration space for /your factory in particular/ and push it over to another potential well. Sometimes you'll have a neural net that found an improperly installed pressure gauge and has used it to build a tiny little recurrent loop, and you fixed the gauge and now everything is broken. And so on and so forth.
+
+#+begin_quote
+  Different countries and governments have different ways they have managed the problem of automation and not all countries have equal automation infrastructure/prevalence.
+#+end_quote
+
+This makes this job even more important. Interop is going to be a big job, especially if two systems are using incompatible architectures. Say that you're trying to get a store's logistical planner talking to a factory's, but the store's planner does backward chaining directly in the original state space, while the factory is doing evolutionary algorithms on SAT instances. Gluing these together is going to be /painful/, but someone is going to have to do it.
+:PROPERTIES:
+:Author: Vebeltast
+:Score: 10
+:DateUnix: 1454097889.0
+:END:
+
+*** That is an excellent point and one I completely get as simply trying to glue some fairly none 'dynamic' libraries is already a pain. Thanks for the perspective, I'd forgotten about how hard international standards are going to be on this kind of stuff when they have to deal with the equivalent of MACHINE CULTURE.
+
+Very juicy problem space.
+:PROPERTIES:
+:Author: Nighzmarquls
+:Score: 5
+:DateUnix: 1454104285.0
+:END:
+
+
+** *Forensic software archeologist.*
+
+Software already involves layers of virtualization, software virtual machines (like JVM or CIL), frameworks, and emulation of old frameworks... and sometimes literal processor emulation (eg, running Android apps with native ARM code on Intel Android tablets). In some cases replacing old control systems is done by building a software emulator for 30 year old hardware.
+
+This is only going to become a bigger deal in the future.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 9
+:DateUnix: 1454088477.0
+:END:
+
+*** Yeah, proper methods of not over abstracting is a pain point in my work and we are constantly trying to manage that particular kind of entropy where it's possible.
+:PROPERTIES:
+:Author: Nighzmarquls
+:Score: 3
+:DateUnix: 1454104332.0
+:END:
+
+
+** I think that, in the future, as the need for any particular job decreases, your time will be primarily valuable because you're /human/, and computers aren't. It's like the Analogue vs. Digital debate for synthesizers-- there's nothing inherently better about analogues, and they don't even sound better or different (compared to good simulations) but people just like the /idea/ of analogue.
+
+So the obvious consequences are twofold-- first, the wealthy will hire humans as status symbols, so as to show off. Second, in virtual reality, people will pay a premium for custom human-designed items, regardless of quality, because of the status associated with them.
+
+And on a somewhat related note, I also expect the popularization of human-only MMOs, where real people are hired to be the NPCs and enemies. So maybe you get hired to be "Dungeon boss Hlozgrog the fearsome" and get paid for beating down people who enter your domain. Of course, AI could do the same job better, in a way that's probably more entertaining for the player, but the players who pay to fight you will derive utility from the fact that they just beat a real human, rather than a computer program.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 6
+:DateUnix: 1454113969.0
+:END:
+
+
+** Borrowing one from Vernor Vinge:
+
+*Programmer-at-Arms*
+
+Especially as drones become more important in warfare, and jamming becomes a normal tactic, so they have to be able to operate autonomously.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 6
+:DateUnix: 1454106372.0
+:END:
+
+*** There is an enormous amount of military doctrine stuff i've thought about this. The short version:
+
+Humans are needed on the battlefield more as a kind of 'hearts and minds' gesture. Committing actual humans to the field means peace and 'diplomacy' is still on the table, or there is a demographic or group in the territory that you want to show friendly faces too.
+
+This leads somewhat sideways into the only real reason for a HUMANOID drone to be fielded, is as a kind of 'half-way to a human soldier' gesture.
+
+In addition the military version of the 'general purpose factories' is a wonder to behold being fully utilized, literally from moment to moment if not battle to battle an army can completely reconfigure it's capabilities, armaments, effective soldiers and munitions.
+
+To a lesser extent emergency response services and police forces ALSO have these capabilities but generally they are not as versatile or as free of 'restrictions'.
+
+But yeah, not only do you program drones during or prior to battle, you can fabricate custom drone swarms or loadouts or even have several kinds of drone/munition mission payloads on demand.
+
+The kind of things soldiers/officers do in this future is pretty extreme and cutting edge.
+
+And then there are diplomacy grunts for boots on the ground and photogenic peace offering shows of solidarity.
+:PROPERTIES:
+:Author: Nighzmarquls
+:Score: 3
+:DateUnix: 1454107353.0
+:END:
+
+
+** A lot of new government jobs to manually approve or disapprove ML/computer proposals. As result government could become even less efficient then now, because those new government workers would be less educated, less motivated and have ironclad job security. More police and security jobs with similar functions - watch screen and press button on prompt by computer to order an action, or ignore prompt. More lawyers (laweyring would become pure performance art on computer generating script before panel of jury). A lot more person-to-person, door-to-door marketing, again with performance act background and computer-generated scripts. 10-20% of population in prisons, as both crime and illegal immigration spike and laws become more and more convoluted for above mentioned reasons. Prison stays, arrests, searches become part of everyday life for most of people, like parking fine now. "Entertainment wars" - to escape rigid framework of society people take vacations in low-intensity civil wars which spark all around the globe, with tacit permission of bigger political powers.
+:PROPERTIES:
+:Author: serge_cell
+:Score: 3
+:DateUnix: 1454149787.0
+:END:
+
+
+** Well, hopefully the concept of a job goes the way of the dodo - because if we cling to it in the face of an economy that actually doesn't need labor, the only jobs that are going to be available is going to be either "Guillotine operator" or "Poor people shooter". Not a desirable outcome. If you mean what people will do with their lives once Marx has been proven very belatedly right? Read and love and play.
+:PROPERTIES:
+:Author: Izeinwinter
+:Score: 3
+:DateUnix: 1454798420.0
+:END:
+
+*** Oh yeah that is definitely the way that this world in my setting is going, there is an enormous percentage of people on 'automation welfare' which essentially is a pretty decent living. But the transition is incomplete so the world still has economic inequality via the 'employed' and the 'unemployable'.
+
+Different countries handle this differently.
+:PROPERTIES:
+:Author: Nighzmarquls
+:Score: 2
+:DateUnix: 1454798776.0
+:END:

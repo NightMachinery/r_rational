@@ -1,0 +1,209 @@
+#+TITLE: [D] Monday General Rationality Thread
+
+* [D] Monday General Rationality Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 14
+:DateUnix: 1542035147.0
+:END:
+Welcome to the Monday thread on general rationality topics! Do you really want to talk about something non-fictional, related to the real world? Have you:
+
+- Seen something interesting on [[/r/science]]?
+- Found a new way to get your shit even-more together?
+- Figured out how to become immortal?
+- Constructed artificial general intelligence?
+- Read a neat nonfiction book?
+- Munchkined your way into total control of your D&D campaign?
+
+
+** I'm really feeling like an idiot for asking such a stupid question, but can someone explain concept of power (physical) to me? I just don't get it, why don't they use newtons for engines and electricity instead of watts. Does the acceleration really depend on speed? I always thought car accelerates slower at high speed just because of friction, aerodynamics and imperfect transmission. I don't get what in car construction would make acceleration depend on speed. Aren't all speeds in the world relative? I would understand if it would only relate to cars, but energy seems like the universal concept - it's conservation of energy, not conservation of force - and I really don't understand why.
+
+Originally I didn't care until one day I wondered if engine of particular car could lift it off if I attach propeller to it (like a helicopter). For that I would need to know just one thing, how much newtons does that engine make, but somehow there's no info on it and it feels like I'm really missing the point.
+:PROPERTIES:
+:Author: Internal_Lie
+:Score: 3
+:DateUnix: 1542148042.0
+:END:
+
+*** Here's the ELI5 version.
+
+*Force* is the strength of a push or pull. Hold your hand in the air. It's being pulled towards the ground. The earth is applying a force to your hand. Now push your hand against a wall. You are applying force to the wall, and the wall is applying an equal and opposite force to your hand. Force is measured using /Newtons/.
+
+*Torque* is a special word for rotating force.
+
+*Energy* is found in hot things, moving things, loud noises, stretched springs, and boulders placed atop high mountains. A very important part of physics is that energy can be transformed between different types, and this transformation follows specific rules so that the total amount of energy remains the same. A ball can be dropped to transform height (gravitational potential energy) into speed (kinetic energy). Chemical bonds can be broken to produce heat, electricity can be turned into noise, all sorts of stuff. Energy is measured in /Joules/.
+
+(Calories are another measure of energy. A Calorie is 4184 Joules. If the nutrition box says that a cracker has 10 Calories, that means your body can digest it to get 41840 Joules of energy.)
+
+*Work* is a measurement of how much energy is transferred from one place to another, and is also measured in /Joules/.
+
+Here's an example. Let's say we have 1000 kilograms of bricks, and we need to lift them up 10 meters. Lifting the bricks adds energy to them. The formula for the amount of energy added by lifting something is (height lifted)*(force from gravity), and the force from gravity is 9.81 times the mass of the object. So to lift our bricks, we need to add about 98,100 Joules, or 23.45 Calories. Hey, that's only a few crackers worth of energy! I can lift those bricks!
+
+And I can, but I'd need a system of pulleys or a ramp or something like that. I'm not nearly /powerful/ enough to just pick up the bricks and throw them.
+
+*Power* is a measure of how quickly energy is transferred or moved around. A /Watt/ is a transfer of one Joule every second. When we build machines, we often want to know how much power they have. That is, we want to know how quickly they move energy around. /Horsepower/ is another unit of power. Just like the name suggests, it's approximately equal to to the power of an average horse: 735.5 watts.
+
+Next time you see a spare lightbulb, take a look at the label. It should tell you the wattage. A 60 Watt lightbulb transforms 60 joules of electricity into heat and light every second. Power companies often measure how much electricity you use in /watt-hours/, which is just another unit for energy. There are 3600 seconds in an hour, so a watt-hour is 3600 joules.
+
+Fun fact: 2000 Cal / 24 hours = 96.85 J/s. So a typical adult uses energy at about 100 watts on average. Electricity costs 14 cents per thousand watt hours where I live. So if humans could run on electricity, that would be 32.5 cents of energy per day. But that's average use, if you want to know how much your maximum power is, hop on a stationary exercise bike. Many models let you see the wattage of the energy you are burning.
+
+--------------
+
+Okay, now you should understand the physics terms. Let's apply this knowledge to answer your questions about engines.
+
+#+begin_quote
+  Why don't they use newtons for engines and electricity instead of watts?
+#+end_quote
+
+Because there isn't a specific force that engines exert. When doing physical work, there is a tradeoff between force and distance. You can apply a small force over a long distance or a big force over a small difference. Either method transfers the same amount of energy. To get a feel for this, walk to the nearest door and open it. Place your hand on the outside edge of the door, away from the hinge, and try moving the door back and forth. It should move very easily. Now place your hand near the hinge. (Be careful not to pinch yourself!) If you try moving the door from that position, you should notice that you need to push much harder to get the door to move. This is because when your hand is close to the hinge, it moves much less, but you are trying to transfer the same amount of energy, so more force must be applied.
+
+An engine converts chemical or electrical energy into rotating motion. The force is torque, and the analog to distance is the rpm of the shaft. Gears can be used to trade between these two. You can use gears to increase torque and slow down the rotation or speed up the rotation while sacrificing torque. [[https://www.youtube.com/watch?v=5q-BH-tvxEg][Here]] is an extreme example of gear reduction, where the final gear is completely motionless and has such high torque that it is locked in place.
+
+Because gears let us alter the force and speed from an engine, but this tradeoff is limited by the total power, it makes more sense to rate the engine on power rather than on the force applied when the engine is placed inside a particular machine.
+
+#+begin_quote
+  I wondered if engine of particular car could lift it off if I attach propeller to it (like a helicopter). For that I would need to know just one thing, how much newtons does that engine make
+#+end_quote
+
+Not quite. When a propeller spins, it transfers energy to the air. Some of this energy is turned into noise. Some into heat, some into little swirls of air. But to lift the machine of the ground, you need thrust. You need air to be pushed downwards so that the device is pushed upwards. The efficiency of this process depends on the design of the blades.
+
+So this is another example of how the /force/ exerted depends on the entire machine, and you can't just look at the engine by itself and meaningfully talk about how much force it creates.
+
+#+begin_quote
+  Okay, okay. But is my engine powerful enough to lift itself?
+#+end_quote
+
+Every engine is. You just need to figure out how to build the propellers
+
+Let's assume that your propeller setup is perfectly efficient and you are just hovering. Then Thrust = (P^{2} *4*ρ*A)^{1/3} ,where P is the power of your engine, ρ is the density of air, and A is the cross section of your propellers. You can see the derivation of this formula [[https://en.wikipedia.org/wiki/Thrust#Thrust_to_power][here.]]
+
+But notice that you can get more thrust by just making the cross-section bigger, and there's no theoretical upper limit to this. With huge rotors, you can apply very small amounts of force to a huge amount of air, and generate lots of thrust with very little power.
+
+[[https://www.youtube.com/watch?v=syJq10EQkog][Here]] you can see a video of a human-powered helicopter; the blades on this thing are absolutely massive. And [[https://youtu.be/emK-qIbuJ-k?t=156][here]] you can see an earlier attempt. Watch until the end and you'll see the thing shatter after falling only a few feet. The pilot is fine, but the helicopter is busted. So while there isn't a theoretical limit to blade size, you quickly run into the limits of material science. Sturdier blades also means heavier blades and more weight to lift.
+
+If you had a magically rigid and lightweight helicopter blade miles across, then you could lift yourself into the air with the motor from a children's toy.
+
+It may seem crazy, but quoth Archimedes: "Give me a place to stand and with a lever I will move the whole world."
+:PROPERTIES:
+:Author: bacontime
+:Score: 6
+:DateUnix: 1542194567.0
+:END:
+
+
+*** It's been awhile since I did physics, but I'll see what I can do.
+
+#+begin_quote
+  why don't they use newtons for engines and electricity instead of watts.
+#+end_quote
+
+According to [[https://www.traditionaloven.com/tutorials/power/convert-newton-metre-seconds-to-watts-w.html][this website]] I found by googling 'watts versus newtons',
+
+1 Watt = 1 Newton metre per second.
+
+This suggest that they do different things. Here's [[https://en.wikipedia.org/wiki/Watt#Distinction_between_watts_and_watt-hours][Wikipedia]] on the subject:
+
+#+begin_quote
+  The terms [[https://en.wikipedia.org/wiki/Power_(physics][power]]) and [[https://en.wikipedia.org/wiki/Energy][energy]] are frequently confused. *Power is the rate at which energy is generated* or consumed and hence is measured in units (e.g. watts) that represent energy /per unit time/.
+#+end_quote
+
+[emphasis mine]
+
+#+begin_quote
+  Does the acceleration really depend on speed?
+#+end_quote
+
+If a car can 'go from zero to 60 in 5 seconds' that's acceleration. Between physics/calculus you can tell how fast the car is going not only on the /fifth/ second, but also in between 0 and 5 seconds. (And how [[https://www.quora.com/A-car-starting-from-rest-accelerates-to-50-0-m-s-in-5-00-seconds-How-do-you-find-the-acceleration-and-the-distance-covered-by-the-car][far]] it drove.)
+:PROPERTIES:
+:Author: GeneralExtension
+:Score: 2
+:DateUnix: 1542154285.0
+:END:
+
+
+*** A newton is a unit of mass, equal to about a tenth of a kilogram (100g). Assume, for the moment, that you have a tomato that weighs one Newton, or just over 100g.
+
+To left that tomato by one metre would require one joule of energy.
+
+Now, watts are joules per second. An engine capable of one watt of power is able to provide enough energy to lift that tomato one metre in a second.
+
+--------------
+
++So, you have an engine that can produce P watts. Your engine weighs Q newtons.+
+
++Acceleration due to gravity is about 9.8m/s. So gravity is pulling your engine down at Q*9.8 watts. In order to be able to lift your engine, P must be greater than Q*9.8. (That's assuming no losses due to friction and other inefficiencies).+
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1542183657.0
+:END:
+
+**** #+begin_quote
+  A newton is a unit of mass, equal to about a tenth of a kilogram.
+#+end_quote
+
+No. A kilogram weighs about ten (9.8) Newtons on earth, but kilograms are mass, and Newtons are force. Weight is the force from gravity.
+
+If you go to the moon, your mass will be the same, but you will weigh much less.
+
+To get some intuition for the difference, play around with a medicine ball. Even if you keep the ball on the ground (so gravity doesn't come into play), it's very difficult to shove it around. This is because the mass of the ball resists acceleration. Now pick up the ball. Feel how it tries to escape from your hands and return to the earth. That's the weight.
+
+#+begin_quote
+  So, you have an engine that can produce P watts. Your engine weighs Q newtons.
+
+  Acceleration due to gravity is about 9.8m/s. So gravity is pulling your engine down at Q*9.8 watts. In order to be able to lift your engine, P must be greater than Q*9.8.
+#+end_quote
+
+Acceleration due to gravity is about 9.8m/s^{2.} Meters per second is velocity, which is a change in position over time. Meters per second /per second/ is acceleration, which is a change in velocity over time.
+
+Q is already the force from gravity. Q = (mass)⋅9.8m/s^{2} . You don't need to multiply in the acceleration again.
+
+Even if that were the correct formula for the pull of gravity, the units don't match up.
+
+In base units, 1 watt = 1 kg⋅m^{2} /s^{3} whereas Q⋅g is in units of kg⋅m^{2} /s^{4}
+
+And it should be intuitively clear that the force from gravity can't possibly be measured in watts. Watts are a measure of the rate of energy transfer. But even a motionless rock is being pulled on by gravity. If gravitational force were equivalent to energy transfer, then we wouldn't need to futz around with all this fossil fuel stuff; we could just harness motionless objects for free energy.
+
+See my comment above for the full explanation, but the surprising answer to OP's question is that any engine can theoretically lift itself if you can build a large enough propeller.
+:PROPERTIES:
+:Author: bacontime
+:Score: 2
+:DateUnix: 1542197287.0
+:END:
+
+***** #+begin_quote
+  Acceleration due to gravity is about 9.8m/s2. Meters per second is velocity, which is a change in position over time. Meters per second per second is acceleration, which is a change in velocity over time.
+#+end_quote
+
+[[/facehoof][]] Metres per second /squared/. You are perfectly correct. Thank you for pointing out my error.
+
+For some reason I was working gravitational acceleration (incorrectly) as metres per second, hence my error.
+
+[[/sp][]]
+
+#+begin_quote
+  but the surprising answer to OP's question is that any engine can theoretically lift itself if you can build a large enough propeller.
+#+end_quote
+
+[[/flutterkay][]] In all honesty, this /is/ surprising. (Even once I mentally add the point that the propeller would need to be weightless).
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1542199540.0
+:END:
+
+
+*** Power is energy output per second. So for example if you have a car, you need:
+
+- a certain force (or torque) to cause it to accelerate (and add something on top to overcome friction), which means
+
+- a certain amount of energy to make it accelerate of a certain amount (since accelerating means going faster, thus increasing its kinetic energy), which means
+
+- a certain amount of power to accelerate /in a certain time/.
+
+The energy required to send a car from 0 to 100 km/h is always the same, if the car weighs the same. But a car needs more power to output that energy in a shorter time - which is crucial to performance if, for example, you're racing.
+:PROPERTIES:
+:Author: SimoneNonvelodico
+:Score: 1
+:DateUnix: 1542401376.0
+:END:

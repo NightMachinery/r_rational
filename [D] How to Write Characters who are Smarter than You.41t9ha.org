@@ -1,0 +1,179 @@
+#+TITLE: [D] How to Write Characters who are Smarter than You
+
+* [D] How to Write Characters who are Smarter than You
+:PROPERTIES:
+:Author: TimTravel
+:Score: 27
+:DateUnix: 1453273897.0
+:END:
+People seem to think this is impossible but it's not.
+
+1. Your characters can think faster than you can. You can take as much time as you want to think about what they do. They do it in real time along their own fictional timeline.
+
+2. You can collaborate with co-authors to come up with ideas you can't come up with on your own.
+
+3. You can do the following tricky thing which doesn't fit well in a bullet point.
+
+Nobody knows an algorithm to efficiently factor uniformly random n-bit integers with high probability. However, there is an algorithm which will uniformly sample an n-bit integer along with its factorization. If I hand you a randomly selected billion bit integer there's a good chance you won't be able to factor it completely, but you can produce a series of uniformly and independently sampled billion bit integers along with their factorization.
+
+In other words, you can simulate a system in which someone can factor large integers even though you cannot factor large integers yourself.
+
+[[http://research.microsoft.com/en-us/um/people/adum/publications/2003-Generating_Random_Factored_Numbers,_Easily.pdf][Source with description of algorithm and proof of correctness.]] As the paper notes there is an earlier and faster algorithm which does the same thing but the version in that paper is much simpler.
+
+Similar tricks can let you do more advanced things. It's a main idea in zero-knowledge proofs: by interacting with someone who knows a secret you can learn only what they were proving. Anything you can learn by interacting with them you could have learned by simulating an interaction with them on your own.
+
+In conclusion, the claim that if you could write a character smarter than you are then you could be smarter by just pretending to be them is not true in the general case: you can simulate a system containing a smart character even if you don't know what they would do in the real world.
+
+
+** As an accredited smart person who knows other smart people, I strongly suggest not writing them like they were raised by a textbook, as many rational fics often seem to.
+
+Then again, I've had a girl tell me I was smart after about thirty seconds of what I thought was normal conversation, so what do I know?
+:PROPERTIES:
+:Author: TacticusThrowaway
+:Score: 16
+:DateUnix: 1453309723.0
+:END:
+
+*** Yes. The Hermione problem. Characters as reference works for ease of exposition.
+
+Certainly /part/ of being "smart" is having a lot of facts memorized, but the real spark of genius is in the ability to connect, transform, and systematize those facts quickly and effectively in a variety of situations.
+
+The difference between a character who knows things, and a character who discovers how things relate.
+:PROPERTIES:
+:Author: Sparkwitch
+:Score: 12
+:DateUnix: 1453314680.0
+:END:
+
+**** Rowling said that she'd never actually have Harry or Ron read Hogwarts: A History, because it was more useful for Hermione to exposit.
+
+That said, Hermione /is/ shown having problems relating to other people. And even when she recites information from books, she tends to rephrase it so it sounds less like said book. She clearly /understands/ the information she's telling her friends, and still manages to sound like, well, herself.
+:PROPERTIES:
+:Author: TacticusThrowaway
+:Score: 7
+:DateUnix: 1453315511.0
+:END:
+
+***** Oh absolutely. I'm not saying she's literally a walking textbook, but that her canon smarts are almost entirely "book smarts". Conveniently for Miss Granger, magic education as Rowling writes it is mostly a matter of memorization rather than finesse. She is precisely the kind of intelligent that she needs to be for her environment...
+
+...and that's a detriment to the environment.
+
+Problem solving in Harry Potter (and it is /far/ from the worse offender in this regard, especially in children's fiction), is mostly about knowing the right thing. Enter Hermione, right knower.
+:PROPERTIES:
+:Author: Sparkwitch
+:Score: 5
+:DateUnix: 1453318487.0
+:END:
+
+
+** That seems to be a really complicated way of saying "write the answer first and work backwards".
+:PROPERTIES:
+:Author: Anakiri
+:Score: 26
+:DateUnix: 1453278287.0
+:END:
+
+*** I'm saying something more statistically thorough. It's not obvious how to do this for 3-SAT.
+
+edit: I'm saying that it is possible to write a story in which a character can solve computational problems that the author cannot. A reader could verify statistically that the integers are chosen uniformly and deterministically that they are factored correctly. If necessary I'll implement the algorithm myself and post the output to pastebin but I think most people will believe me that it's possible.
+
+The reason I bring it up is because it's a counter-example to the claim that it's impossible to write a character who is smarter than the author.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 9
+:DateUnix: 1453280213.0
+:END:
+
+**** I'm really struggling to imagine a case where the statistical details matter, that an editor wouldn't tell you to scrap. Why is your character factoring more than three numbers onscreen? How does your advice generalize beyond math and formal logic problems in a way that is different from working backwards from a preselected solution?
+:PROPERTIES:
+:Author: Anakiri
+:Score: 10
+:DateUnix: 1453285474.0
+:END:
+
+***** I chose a clear well-defined example for simplicity. My point is that if you "cheat" then observant readers will notice.
+
+I will attempt more complicated example but it's hard to articulate. Suppose you have someone who's very good at rock paper scissors. If you just make them always throw the right one and come up with an explanation afterward why they thought it was right then you're probably cheating. No matter how much their explanations make sense they won't have predictive power, and even if they do you still might be cheating by selecting opponents who behave the way your smart character thinks they will.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1453342725.0
+:END:
+
+****** If the readers notice, then you're not cheating well enough. That's all your algorithm is. How do you have a character factor numbers? Multiply them out yourself. Okay, but how do you have a character factor any uniformly random number? Find a subset of your pre-factored numbers for which the statistics work out and only show that. (This is the gist of the algorithm you linked.) You have now cheated well enough that it is mathematically impossible to detect your cheating within the scope of your problem.
+
+Any explanation you give for the alleged factoring mechanism won't have predictive power beyond "it will work for the character". You don't actually have the mechanism, so you can't give it to the reader. You might be cheating by your choice of composite numbers. Which, in fact, you are. The only reason you can do a zero-knowledge proof of the existence of the factoring mechanism is because you, as the author, control both parties, and you can have the challenger just happen to pick numbers that you worked out earlier, and you're clever enough to make the challenger look random anyway.
+
+I don't see any difference between that and the rock-paper-scissors example. Any time you write someone doing something you can't do, you have to cheat somehow. Don't get caught.
+:PROPERTIES:
+:Author: Anakiri
+:Score: 1
+:DateUnix: 1453379776.0
+:END:
+
+
+**** As it's a rule of thumb, and not a mathematical proof or a physical law, it doesn't get invalidated by specific possible scenes that frankly wouldn't make for great reading.
+
+Edit: Although I believe the claim is that it's impossible to write a character greatly smarter than the author.
+:PROPERTIES:
+:Author: FuguofAnotherWorld
+:Score: 1
+:DateUnix: 1453295814.0
+:END:
+
+
+*** I.E., the Holmes trick.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1453290059.0
+:END:
+
+
+** Eliezer Yudkowsky has written [[http://yudkowsky.tumblr.com/writing][an excellent series of articles]] on this topic.
+:PROPERTIES:
+:Author: Roxolan
+:Score: 15
+:DateUnix: 1453289881.0
+:END:
+
+
+** I feel like I need to stress one important aspect of algorithm you cited: it generates <problem, answer> pairs, but it does not provide you any hints about how to come up with the solution.
+
+(The same idea applies to zero-knowledge proofs)
+
+That means you cannot write a genius character who factors large integers without using some sort of device like "in a flash of insight, she realized that the answer is 17*23. She checked her hunch and, indeed, it was correct".
+
+You need something much more sophisticated in order to be able to actually describe the /cognitive work/ necessary to come up with the solution, to /show/ the inside of smarted person's mind (as opposed to showing the results).
+:PROPERTIES:
+:Author: BT_Uytya
+:Score: 4
+:DateUnix: 1453354150.0
+:END:
+
+*** I basically agree. This is more of a proof of concept. If you can formulate a problem as an NP relation and use this trickery to come up with a witness then you can explain where the idea came from and it's possible you could even do it in a way that is "satisfying" but this doesn't do that.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1453354396.0
+:END:
+
+
+** Since as the author you control and know everything about the world -- information, chance, events, motivations, etc, -- of course you can write someone "smarter" than you are. Someone who can look at someone and "deduce" from the way they talk and their expression and available information that they are lying, or what they are hiding, or what they are thinking, or what a situations really is, etc.
+
+If you want you can handwave and explain this smart character's "smartness" using planted clues and stuff about biases and tells and stuff about human rationality and calculation and such. Or you could use radioactive waste or mutant spider bites. But the main thing is that for your "smart" character there aren't all the ambiguities and misinformation and mistakes and plain chance that characterize the real world when viewed (as much as we can) without human bias.
+
+As an author you can write a wonderful fable about intelligence and human understanding triumphing through perfect information that you as author provide (the believable flaws you /think/ you put in that perfect information and the characters understanding of it are actually wildly unrealistic and are only believable because as a human you and everyone lives in a fantasy land about how much we understand). In a realistic story even the smartest character would be wrong most of the time, and afraid to act because they know this much of the rest of the time, but that wouldn't be a very good story.
+:PROPERTIES:
+:Author: OrzBrain
+:Score: 2
+:DateUnix: 1453322512.0
+:END:
+
+
+** One way is to write them when they are sleep deprived, hungry, wounded, distracted, or emotionally overloaded, and you are none of those things.
+:PROPERTIES:
+:Author: DocFuture
+:Score: 2
+:DateUnix: 1453358007.0
+:END:

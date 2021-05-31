@@ -1,0 +1,273 @@
+#+TITLE: [META] Damage Report, Mother of Learning Edition: A Review of /r/rational's Predictions (SPOILERS)
+
+* [META] Damage Report, Mother of Learning Edition: A Review of /r/rational's Predictions (SPOILERS)
+:PROPERTIES:
+:Author: Makin-
+:Score: 91
+:DateUnix: 1582454256.0
+:END:
+Now that the dust has settled, it's time to face the fact we all suck at predicting web fiction, especially me.
+
+In 2019, [[/u/sparkc]] decided to make a [[https://www.reddit.com/r/rational/comments/aj0qtc/2019_fiction_predictions/][thread]] with a template for WTC, PGtE and MoL predictions. People would give a percentage on how confident they were.
+
+For example,
+
+/Mother of Learning will be completed during 2019: 30%/
+
+meant you thought there was a 70% chance of it being completed later, or that you were 30% confident on a 2019 completion.
+
+Now that MoL has indeed been completed during 2020, it's time to see how wrong we all were. And have rankings for fun.
+
+Here are the predictions with each final average percentage. Bolded means they were correct, so the percentage should be over 50%.
+
+- MoL will be completed during 2019 - /83%/
+- Red Robe is Veyers - 15%
+- *Red robe is Jornak* - /13%/
+- Red Robe is a Zach simulacrum - 28%
+- Red Robe is an aranea - 4.1%
+- Red Robe is a previously unnamed character - 23.4%
+- Red Robe is Fortov - 15.1%
+- *QLich will survive until the end* - 66%
+- *Silverlake will work with QLich and/or Red Robe* - 66%
+- The primordial will be released - 33%
+- *Zorian will use mind magic on Zach* - 74.2%
+- Zorian will date Taiven - 30%
+
+A problem with looking at the averaged data is that everyone had their own theory for who Red Robe was. Even though the average data shows people were right about Red Robe not being Veyers, the predictions were just uniformly spread and people were individually wrong.
+
+So let's look at rankings. I'll leave the actual statistical analysis to Slate Star Codex and just stick to "right" and "wrong" predictions based on over and under 50% chances.
+
+I'm giving people a point for each prediction they got right, no points for ones they got wrong, and removing one point for custom predictions they got wrong. Instead of giving six points for the red robe predictions which would inflate results, I'm only going to count if they got Jornak right. 50% counts as getting it wrong because it's basically saying you have no idea.
+
+- *sparkc: 6*
+- suyjuris: 5
+- OldIronEyes: 5
+- Hakurei06: 5 (3+2)
+- bpgbcg: 4
+- hallo_friendos: 4
+- quapmo: 3
+- Shemetz: 2
+- tjhance: 1
+- Calsem: 0
+- Makin-: 0 (2-2)
+- dbenc: ~-3 (all custom)
+
+Fun stats:
+
+- Not one recorded person actually thought Jornak would be Red Robe.
+- Only sparkc saw through nobody103's planning fallacy and guessed MoL wouldn't be finished in 2019.
+- Wrongest predictions include me giving 1% to Jornak, a couple people giving 99% to 2019, hallo_friendos giving 2% to Zach having mind magic used on him.
+
+The moral of the story is that I have too much free time. Looking forward to doing this with WTC too.
+
+
+** Thanks for doing the analysis.
+
+[[https://docs.google.com/spreadsheets/d/1YkxeAllnnf_8xlnePSdSIRsEX_H94uxEldLWNQzagvM/edit#gid=0][This]] is the google doc people placed there predictions in, in case anybody is interested.
+
+#+begin_quote
+  Only sparkc saw through nobody103's planning fallacy and guessed MoL wouldn't be finished in 2019.
+#+end_quote
+
+So, I was likely one of the few people who made a prediction on this that /wasn't/ aware at the time that nobody103 had publicly stated that there were only [insert a small number ~6] chapters left. I am pretty pessimistic of an author's ability to gauge how long is left in their stories (whether in terms of word count or time) but the aforementioned knowledge might still have moved my confidence in MoL finishing in 2019 from 30% to above 50%.
+:PROPERTIES:
+:Author: sparkc
+:Score: 23
+:DateUnix: 1582457886.0
+:END:
+
+
+** #+begin_quote
+  50% counts as getting it wrong because it's basically saying you have no idea.
+#+end_quote
+
+This makes sense for things with a binary outcome, but not for the identity of Red Robe. It's hard to assess what the correct prior should be, but anyone who assigned 40% or more credence to Jornak should definitely get credit for being right, since there were at least four credible options. Based on there being five possibilities that had a mean percentage assessed at 10% or higher, I'd say the prior was 20% and give anyone who said 30% or higher credit.
+
+Was the average you used 'mean percentage'? Geometric mean of the odds would be a better measure of the collective wisdom.
+:PROPERTIES:
+:Author: VorpalAuroch
+:Score: 20
+:DateUnix: 1582472786.0
+:END:
+
+*** I made a copy of the sheet and worked out the geometric-mean-of-odds probabilities for everything, and Brier scores. (EDIT: [[https://docs.google.com/spreadsheets/d/1ZEBfqqEnFa_TOFfNjrRhcE6Fozg6IxMuBYlcwlIX_L8/edit?usp=sharing][here it is]].)
+
+Things [[/r/rational][r/rational]] got very wrong:
+
+- MoL will finish in 2019; aggregated probability 92%, result "no".
+
+- Red Robe is Jornak; aggregated normalized probability 9.4%, result "yes". (Though since I aggregated it after normalizing, the probabilities here only sum to 54%. Will renormalize in the cleaning-up part.)
+
+Things [[/r/rational][r/rational]] got very right:
+
+- Red Robe was not an aranea; aggregated normalized probability 3%, result no. Only one person rated this more than 5% likely.
+
+- Zorian will use mind magic on Zach; aggregated probability 78%, result yes. This is actually understating it; only one person gave a probability lower than 70% and most said 80% or higher. But that one person, hallo_friendos, said *2%*, which was a huge enough outlier to bring this down from 86% to 78% single-handedly. (Whoever hallo is, they were massively overconfident and very poorly calibrated. Sorry, not sorry.)
+
+Other correct predictions: Aggregate probabilities were at least 2/3 in the correct direction for QI surviving, Silverlake working with QI and/or RR, Primordial not being released, and Zorian not dating Taiven.
+
+Basically, on all counts but RR and planning fallacy, [[/r/rational][r/rational]] was collectively correct with a moderate but appropriate degree of confidence. On RR, we were correct about it not being an aranea but incorrect otherwise.
+:PROPERTIES:
+:Author: VorpalAuroch
+:Score: 6
+:DateUnix: 1582481947.0
+:END:
+
+
+*** #+begin_quote
+  anyone who assigned 40% or more credence to Jornak should definitely get credit for being right
+#+end_quote
+
+Yeah, but no one did... 31% is the closest, from suyjuris. I guess I could count it as half a point?
+:PROPERTIES:
+:Author: Makin-
+:Score: 3
+:DateUnix: 1582476661.0
+:END:
+
+**** If you read the rest of the comment, you would see that 30% is the threshold I think makes the most sense, and give him a full point. Though actually, he assigned 161% probability in total so never mind.
+:PROPERTIES:
+:Author: VorpalAuroch
+:Score: 8
+:DateUnix: 1582476842.0
+:END:
+
+***** #+begin_quote
+  Though actually, he assigned 161% probability in total so never mind.
+#+end_quote
+
+Obviously his real theory was that several of them were the same person, and also red robe.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 3
+:DateUnix: 1582520900.0
+:END:
+
+****** I like it! This has now become my official position on that matter.
+:PROPERTIES:
+:Author: suyjuris
+:Score: 2
+:DateUnix: 1582535924.0
+:END:
+
+
+****** Or that more than one character spent some of their time running about wearing a red robe, perhaps as part of a conspiracy team.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1582533547.0
+:END:
+
+
+** Thanks for the analysis! Back then I was thinking that one could use standard machine learning loss functions to score the predictions, which I just did:
+
+#+begin_example
+     Name            All      All(adj) MoL      MoL(adj)
+   1 sparkc             12.08     9.97     6.14     4.03
+   2 Hakurei06          14.73    12.37     7.29     4.92
+   3 bpgbcg             14.41    13.54     7.42     6.55
+   4 RANDOM             16.64    14.27     9.01     6.64
+   5 tjhance            16.03    15.12     9.22     8.31
+   6 Shemetz            17.98    15.62    10.37     8.00
+   7 suyjuris           18.04    15.84    10.11     7.92
+   8 OldIronEyes        17.03    16.07     9.40     8.44
+   9 quapmo             17.78    16.47    10.40     9.09
+  10 Makin              18.52    17.06    11.95    10.48
+  11 Calsem             20.01    18.87    10.08     8.95
+  12 hallo_friendos     20.04    19.44    12.42    11.81
+     /r/rational        12.91    11.93     6.97     5.99
+#+end_example
+
+Overall, [[/u/sparkc]] is the clear winner, regardless of the details of scoring. Also, I added RANDOM, which just picks an outcome at random. (The metaphorical “monkey with a typewriter”.) So, congratulations to [[/u/Hakurei06]] and [[/u/bpgbcg]] as well, for being better than randomness.
+
+Details for the interested: This is using cross-entropy loss, so lower values are better. I used random guessing for predictions that have not been made. The MoL columns only include Mother of Learning related predictions. All predictions are based on binary classification (i.e. yes/no predictions), except for the (adj) scores, where the red robe predictions are multiclass classification (i.e. red robe is Veyers/Jornak/.../Fortov).
+
+EDIT: I should mention that I did this just now, so there may be bugs and the numbers might be all wrong.
+
+EDIT2: Added [[/r/rational]], which is the average of all predictions. Only second place!
+:PROPERTIES:
+:Author: suyjuris
+:Score: 13
+:DateUnix: 1582485646.0
+:END:
+
+*** real MVP in the comments as always
+:PROPERTIES:
+:Author: Makin-
+:Score: 1
+:DateUnix: 1582487126.0
+:END:
+
+
+** What's WTC?
+:PROPERTIES:
+:Author: Amargosamountain
+:Score: 7
+:DateUnix: 1582461881.0
+:END:
+
+*** Worth The Candle, a very good original rational webfiction about a teenage dungeon master who is transported into a miserable fantasy world of his own design.
+
+[[https://archiveofourown.org/works/11478249/chapters/25740126]]
+:PROPERTIES:
+:Author: AmeteurOpinions
+:Score: 13
+:DateUnix: 1582462499.0
+:END:
+
+
+** I really wanted red robe to be Fortov so Zorian will learn to be less judgemental of his brother in the real world seeing how even him can be a mage to be feared with.
+:PROPERTIES:
+:Author: 1000dollarsamonth
+:Score: 5
+:DateUnix: 1582503010.0
+:END:
+
+*** Yeah, Jornak just makes no narrative sense. We only met him once before that point, nobody really cared about him as a character.
+:PROPERTIES:
+:Author: Argenteus_CG
+:Score: 3
+:DateUnix: 1582513206.0
+:END:
+
+**** I do feel like there doesn't have to be as much narrative sense in "rational" stories though. Jornak didn't want to give himself presence in Zach of Zorian's points of views, so we didn't get to see much of him.
+:PROPERTIES:
+:Author: Copiz
+:Score: 2
+:DateUnix: 1582650794.0
+:END:
+
+***** I disagree; in rational fiction things can't happen JUST for narrative reasons, but there still needs to be a compelling narrative for the story to be at all satisfying.
+:PROPERTIES:
+:Author: Argenteus_CG
+:Score: 1
+:DateUnix: 1582657036.0
+:END:
+
+****** Yeah, I think there needs to be a balance of it. I agree that the Red Robe reveal didn't feel very satisfying - maybe it being a web serial I read over years made it worse.
+
+I think trying to make someone like Fortov Red Robe would have been kinda ridiculous, even though some people claim that would have been great for the narrative.
+:PROPERTIES:
+:Author: Copiz
+:Score: 5
+:DateUnix: 1582668206.0
+:END:
+
+******* The only sense in which I think it being Fortov would have been ridiculous is that it's somewhat contradicted by his predictable actions during loops we knew Red Robe was present, IMO. His incompetence is very little barrier IMO; the time loop is quite well suited to correcting a mere lack of skill, and Zorian certainly wasn't the borderline archmage we know and love today before the loop, and Zach was well-known as a total goofball.
+:PROPERTIES:
+:Author: Argenteus_CG
+:Score: 2
+:DateUnix: 1582668977.0
+:END:
+
+
+** You are not appropriately scoring the certainty.
+
+Being right about something you were 99% certain of is far more valuable than being right about something you were 51% certain of.
+
+(it's more complicated than that, but this single example should serve to illustrate that a divide exists)
+:PROPERTIES:
+:Author: sparr
+:Score: 3
+:DateUnix: 1582506578.0
+:END:

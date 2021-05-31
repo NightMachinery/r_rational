@@ -1,0 +1,82 @@
+#+TITLE: [RT][HSF] Artie
+
+* [[https://www.fictionpress.com/s/3223802/1/Artie][[RT][HSF] Artie]]
+:PROPERTIES:
+:Author: Coadie
+:Score: 14
+:DateUnix: 1423385947.0
+:END:
+
+** Came across the [[https://www.fanfiction.net/s/10755550/1/Harry-Potter-and-the-cryptographic-key][author's FanFiction split of HPMOR]] from a comment in that subreddit. I enjoyed it enough to follow his plug for his own WIP novel, Artie. Bit of a "Ready Player One" feel to it, and 12 chapters in I am hooked. Looking forward to the weekly updates.
+:PROPERTIES:
+:Author: Coadie
+:Score: 5
+:DateUnix: 1423386129.0
+:END:
+
+
+** Ok not bad so far. Some sentences are a bit complex and hard to follow, but it seems this trend drop as the story goes on.
+
+I wouldn't call this Hard Science Fiction yet, some of the technology is bit off, especially considering the whole domain and magic nonsense. I am on chapter 4 now, so that could all change. Cassandra and Cicero = maximum smugness. EDIT: and humor is pretty good too.
+:PROPERTIES:
+:Author: rationalidurr
+:Score: 2
+:DateUnix: 1423403962.0
+:END:
+
+*** Definitely tends towards hard science fiction! All will be explained :)
+:PROPERTIES:
+:Author: Coadie
+:Score: 2
+:DateUnix: 1423407660.0
+:END:
+
+
+** Chapter 9, and before I read further, just for fun, I wanna propose a nanobot design that can't foom: each nanobot is given a small radio receiver/transmitter as well as a unique ID. They implement a PRNG. (Super cheap.) The nanobot waits for instructions that match its ID, xors it with the PRNG, advances the PRNG, executes the instruction. Behavior is micromanaged by an external computer. To ease the task of this computer, many nanobots may be switched to the same ID, for instance if they're all doing the same task. Finally, when a sufficient level of replication is reached, each bot is flashed with its actual workload. Replication is only ever done under external command. Would this work? Or would the latency make it useless?
+
+(Note: you can cheat a bit by uploading larger program fragments. The key is that the computational capacity of the nanobot at any given point must not be sufficient to execute a complete replication sequence, or anywhere close to it. I also recommend not permitting backward jumps in autonomous code. Actually, that alone should suffice to make it safe, so it'd probably be a sensible part of any defense-in-depth. (THOUGH, everything that makes this system more efficient makes it more a risk. The strength of the original proposal is exactly the lack of autonomy.))
+
+How would this break?
+:PROPERTIES:
+:Author: FeepingCreature
+:Score: 1
+:DateUnix: 1423427205.0
+:END:
+
+*** n robots are required to replicate a robot. Sloppy code or garblked transmissions cause a set of n robots to create a second set of n robots and transcribe their instructions. This command is not rescinded or transmission error causes the new set of robots with instructions to replicate to have garbage IDs or no receivers. Viola you have grey goo lifeforms of cooperative sets of n nanobots making new sets of n nanobots. [[http://lesswrong.com/lw/kr/an_alien_god/][Evolution i.e. transcription errors]] will strip anything but survival away.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 1
+:DateUnix: 1423459263.0
+:END:
+
+**** Yeah the trick is you don't just stream the instruction code, you actually stream where and what to execute. If this is somehow recorded, all you get is nanobots "pantomiming" without reacting to their environment.
+:PROPERTIES:
+:Author: FeepingCreature
+:Score: 1
+:DateUnix: 1423478557.0
+:END:
+
+***** Disclaimer 1: Author of Artie. Disclaimer 2: Not a true nanobot expert, but I am a true engineer.
+
+The real robot in the case you are describing is a combination of the physical bot and the external computer streaming the program. You are only replicating part of the system. This does indeed make disaster less likely, but has scaling problems (streaming conditionals of significant complexity requires feedback, making sending the same instructions to multiple bots problematic). I presume nanobots would need pretty high speed response to external stimulae... and then you have to multiply the reasonably high bandwidth/workload by the the (exceedingly large) number of bots.
+
+And of course there is the standard problem that I haven't thought of yet but will be obvious in retrospect...
+:PROPERTIES:
+:Author: AndrewConway
+:Score: 2
+:DateUnix: 1423630726.0
+:END:
+
+****** Yeah the inefficiencies are almost the point. The idea is to use the nanobots as sort of external manipulators for the computer. And yeah, this needs serious low-latency high-bandwidth high-computation chops. The point is just to run faster than "individually place every atom with a big machine".
+
+#+begin_quote
+  And of course there is the standard problem that I haven't thought of yet but will be obvious in retrospect...
+#+end_quote
+
+Hah. Point.
+:PROPERTIES:
+:Author: FeepingCreature
+:Score: 1
+:DateUnix: 1423659596.0
+:END:

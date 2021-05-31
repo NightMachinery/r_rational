@@ -1,0 +1,587 @@
+#+TITLE: [BST] How would you optimize probability manipulation?
+
+* [BST] How would you optimize probability manipulation?
+:PROPERTIES:
+:Author: CFCrispyBacon
+:Score: 12
+:DateUnix: 1433270440.0
+:END:
+Say that you had the ability to magically manipulate probability. Rules are as follows:
+
+1) You can manipulate probability to result in whatever you would like. This takes place instantaneously (or as close as to make no difference), as soon as you will to do so. You can affect your surroundings, but not the world outside of roughly line of sight (no summoning meteors or an empty cab in the middle of NYC)
+
+2) You can calculate approximate relative odds by seeing or imagining the scenario. Casinos and the stock market are traps for people having this ability, among other things.
+
+3) Manipulating probability takes a physical toll in physical and mental exertion on an exponential scale. Making a 50% chance come out the way you want is trivial, anything over 20% requires a major expenditure of effort. Some users of this ability can reach 5 or 1% probability, but it risks serious injury or even death.
+
+Within those limitations, what could you do with this power? What further limitations might be necessary to make a compelling narrative with characters that have this ability?
+
+
+** In that case, sell your services to the people who need 100% and only have 99.9%
+
+Inspect space launch vehicles and satalites. Work on high end process control and measurement. Verify medical test accuracy on ceos and a list actors.
+:PROPERTIES:
+:Author: clawclawbite
+:Score: 15
+:DateUnix: 1433276221.0
+:END:
+
+*** Good one! Quality control would probably be a good way to go, and while a little suspicious, would be a lot easier to hide taking a regular salary then going to a casino.
+:PROPERTIES:
+:Author: CFCrispyBacon
+:Score: 5
+:DateUnix: 1433276374.0
+:END:
+
+
+** #+begin_quote
+  Manipulating probability takes a physical toll in physical and mental exertion on an exponential scale. Making a 50% chance come out the way you want is trivial, anything over 20% requires a major expenditure of effort. Some users of this ability can reach 5 or 1% probability, but it risks serious injury or even death.
+#+end_quote
+
+Given this, it seems like the best bet is to compound 50% chances. For example, the odds of a coin coming up heads are always ~50%, so I can do this as many times as I want in a row, even if the odds of flipping heads 50 times in a row are something like ~1/1,000,000,000,000,000.
+
+So going binary seems like the way to go, until this loophole gets closed.
+
+Simply seeing probabilities (without manipulating them) is almost more useful, because it would allow you a form of prescience. There probably needs to be some limitation on the time frame; if I'm looking at a television, can I see what the probabilities are for a poker game in the next room? Or better, the probability of an armed nuclear exchange, major terrorist attack, path of a hurricane, etc.?
+
+I don't necessarily think that you need to add in limitations to make for a compelling narrative; you just need a big enough threat.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 13
+:DateUnix: 1433272337.0
+:END:
+
+*** #+begin_quote
+  Given this, it seems like the best bet is to compound 50% chances. >For example, the odds of a coin coming up heads are always ~50%, >so I can do this as many times as I want in a row, even if the odds >of flipping heads 50 times in a row are something like >~1/1,000,000,000,000,000. Exactly. The limitation being that you would have to think about every single coin flip, or take the higher cost of doing all of them at once. Going binary is a good way to go about it, but you'd have to think about it each time you did.
+
+  Simply seeing probabilities (without manipulating them) is almost >more useful, because it would allow you a form of prescience. >There probably needs to be some limitation on the time frame; if >I'm looking at a television, can I see what the probabilities are for >a poker game in the next room? Or better, the probability of an >armed nuclear exchange, major terrorist attack, path of a >hurricane, etc.?
+#+end_quote
+
+I imagine it as having an imaginary actuary calculating odds for you in the back of your head based on the information you know. If someone asked you about a theoretical poker hand, you'd /just know/ how probable that condition would be. If someone is coming at you with a gun you'd know the chances of being shot, how likely it is to be hit somewhere important, your chances of survival if you get shot, etc. In brainstorming about a hurricane, you could theorize a probability by looking at recent weather patterns. The limitation is what you know about the situation-You can estimate the odds of a terrorist attack, but without insider knowledge of terrorist groups your estimate is likely to be inaccurate. You can predict the odds of a poker hand coming up, but you don't inherently know if the dealer is stacking the deck unless you can look at the cards or try to manipulate them and see how much energy it takes. You don't know if another probability manipulator is changing the probability of an outcome until you try to change it yourself and it takes more (or less) effort to do so.
+
+#+begin_quote
+  I don't necessarily think that you need to add in limitations to >make for a compelling narrative; you just need a big enough >threat.
+#+end_quote
+
+My thought is two sides in a conflict, both with the same power. I'd want it to have interesting uses of the power, but to heavily discourage being so blatant as to be easily discovered in the age of ubiquitous cameras and the Internet.
+:PROPERTIES:
+:Author: CFCrispyBacon
+:Score: 1
+:DateUnix: 1433273573.0
+:END:
+
+**** So, basically Dinah Alcott's power from Worm, only without the headaches.
+
+Hell, that alone is one of the best Thinker powers in that series...
+:PROPERTIES:
+:Author: JackStargazer
+:Score: 5
+:DateUnix: 1433335593.0
+:END:
+
+
+**** #+begin_quote
+  My thought is two sides in a conflict, both with the same power. I'd want it to have interesting uses of the power, but to heavily discourage being so blatant as to be easily discovered in the age of ubiquitous cameras and the Internet.
+#+end_quote
+
+You can always set it in a time before our current panopticon society; I've been idly writing a story about wizards getting up in a huff about the advent of the Betacam and what it means for their society. If there /is/ no internet, then you don't have to worry about it foiling your plots.
+
+#+begin_quote
+  actuary
+#+end_quote
+
+How smart is my imaginary actuary? Can he act like [[http://anydice.com/][AnyDice]] and calculate bell curves, or is it a matter of single outcomes? Does it have some social awareness, like, for example, telling me the odds that a woman would say yes to coming back to my place (even if my own personal understanding of women is virtually non-existent)?
+
+In the case that my actuary is working on faulty information, am I still penalized based on the "true" odds for manipulating probability? /(ex. Let's say that I'm playing poker, and the deck has secretly been swapped, so that there are only three aces. I have pocket aces, and a third ace comes up on the flop. My actuary says that the probability of the fourth ace on the river is ~1/50, but since the deck is missing the fourth ace, the actual odds are ~0. Alternately, let's say that one of my opponents is holding the fourth ace.)/
+
+Anyway, step one is to figure out exactly how the power works. Step two is to make gobs and gobs of money, probably by taking 50% bets repeatedly (betting all on red over and over again instead of all on 17). Step three is to use my new fortune to do more interesting things than getting rich; probably feeding myself with as much information as possible in pursuit of getting better and more accurate odds.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1433274495.0
+:END:
+
+***** I imagine the actuary as doing bell curves and individual outcomes, based on the user's intent. If your actuary is acting on faulty information, you are still penalized for the higher "actual" cost of what you tried to do. I imagine an upper limit of some kind when you try to do something far beyond your limit-trying to draw the fourth ace in your example would hit you like trying to secure a fairly low probability event. It would hurt you, do nothing, and let you know you failed.
+
+As for making money: Both sides in this conflict have certainly set up traps for any easy ways of making money. Excessive casino winnings, a series of short-term in the stock market or what have you beyond a certain point would probably attract attention and get you investigated (and attacked or killed).
+:PROPERTIES:
+:Author: CFCrispyBacon
+:Score: 1
+:DateUnix: 1433275557.0
+:END:
+
+
+*** Yeah, that 50% chance thing is basically a major loophole. Mathematically, single events of smaller probability can be split up into multiple events of much larger probability. The limitation is kind of arbitrary.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1433296038.0
+:END:
+
+
+*** Seeing probabilities is already a form of prescience. We call it "thinking".
+:PROPERTIES:
+:Score: 0
+:DateUnix: 1433277530.0
+:END:
+
+**** Yes, but this is done instantaneously, without making any mathematical errors, and taking into account information that you know but may not consciously iterate on.
+:PROPERTIES:
+:Author: codahighland
+:Score: 8
+:DateUnix: 1433278858.0
+:END:
+
+
+** Probability is an abstraction, arguably even at the tiniest subatomic level that we can measure. Odds make sense in our heads - they tell stories in a satisfying way - but there isn't really a chance that a particular thing will happen. In a very real way, either it /will/ happen or it /won't/. The concept of probability manipulation is as absurd as Superman picking up a whole car by lifting its bumper.
+
+It's one thing to change the wind or the speed of rotation and alter the result a coinflip. It's quite another to change the odds that a particular person knows your name, or that a particular product is available at a particular shop. In either of those cases even though you're /narratively/ changing the present, you're /physically/ changing the past.
+
+If changing the past is possible, then assume the character was born female. The odds that she would have been born female are roughly 50%, so it ought to be effortless to change. The male individual she changes into will be almost 100% likely to have lived an strikingly different life than she did.
+
+Alternately, the odds that she /was/ born female is 100%, because there she is... female. So it ought to be practically impossible to change.
+
+Which one is easy and which one is hard?
+
+This sounds like a freak case, but the same thing is true about relatively bland probabilities like "What are the odds that this closet has a broom in it?"
+
+Speaking of which, developing perfects odds - whether you're a book maker or a meteorologist - is a matter of collecting enormous amounts of data and crunching the numbers. A magic ability could theoretically be doing exactly that, Asimov's psychohistory writ small, and it's a very powerful ability all by itself.
+
+Even without manipulation knowing that the ability says 80% can help you know how to bet, but you'll still be betting wrong 20% of the time.
+:PROPERTIES:
+:Author: Sparkwitch
+:Score: 7
+:DateUnix: 1433284348.0
+:END:
+
+*** #+begin_quote
+  The concept of probability manipulation is as absurd as Superman picking up a whole car by lifting its bumper.
+#+end_quote
+
+Contact Telekinesis was a thing for a long time but I don't know if it's still canon.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1433418112.0
+:END:
+
+**** I also think that probability manipulation exactly as nonsensical as Superman's strength: The naive interpretation of it doesn't work, and it requires additional powers to function as intended: Contact Telekinesis for super strength, and History Rewriting for probability manipulation.
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 2
+:DateUnix: 1433472906.0
+:END:
+
+
+** I am having trouble understanding the mechanism by which this world works.
+
+You say that if someone shot you you could manipulate the probability so he would not hit you\the hit would not be fatal. but also that if you were playing poker and that one of the other people has an ace you manipulation of the probability that you would get an ace would be changed.
+
+But these dont make sense, i mean to demonstrate the point if you are told that a new employee is going to enter the door to your office you could in theory place the probability that who will enter your office will be a man at 50%, but that would be wrong, because the person was already hired before and actually the probability is 99.999999% that the person would still be the same person which was hired and you weren't aware of until now, so how could you manipulate the probability? In the same sense if there is a pack of cards in a theoretical situation the probability that you would get an ace is 4/52, but in reality while you don't know it yet the cards already have a certain order. unless the event is based on some quantum phenomena generally the world is fairly deterministic.
+
+And once you go through this any kind of decision you will take with the power will by definition by arbitrary.
+:PROPERTIES:
+:Author: IomKg
+:Score: 5
+:DateUnix: 1433282047.0
+:END:
+
+*** You're a slider traveling through a certain space of worlds bound by your own uncertainty.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 3
+:DateUnix: 1433295886.0
+:END:
+
+**** Then how would the poker situation fit? Also your approach would essentially make -anything- possible based on what -I- think is possible, so if for some reason i thought that the probability of me becoming an omnipotent god is 50% i could change it to 100%. Or more in the context of the story, it would mean the author gets to pick any probabilities he wants because "that's what the character thinks".
+:PROPERTIES:
+:Author: IomKg
+:Score: 5
+:DateUnix: 1433319319.0
+:END:
+
+
+** Can you inflate odds to something other than 100%? For example, could you convert a 1% chance to a 10% chance?
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 3
+:DateUnix: 1433275324.0
+:END:
+
+*** I imagine so, at a reduced cost accordingly. Some people using this would be more reckless, while others would go for as close to certainty as possible.
+:PROPERTIES:
+:Author: CFCrispyBacon
+:Score: 1
+:DateUnix: 1433275688.0
+:END:
+
+**** Yeah, so the average user CAN inflate tiny chances in a vastly beneficial way to themselves; they just need to be okay with it not guaranteeing success every time. Right?
+
+How much would you need to inflate your lottery odds to make purchasing a ticket a sound investment?
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 3
+:DateUnix: 1433275825.0
+:END:
+
+***** I imagine the cost to you being relative to the amount of change you want to do to the odds. Lowering the $1 million jackpot in powerball from 5,000,000:1 to something where you could have reasonable odds of winning would just kill you. You might be able to get a cabal of probabilimancers together to buy as many increased probability tickets as they can, but your cabal would probably have an easier time at a casino or the stock market, or for scratchoffs for quick petty cash.
+:PROPERTIES:
+:Author: CFCrispyBacon
+:Score: 1
+:DateUnix: 1433276229.0
+:END:
+
+
+** I'm, I'm guessing this is, this is working with a frequentist interpretation of probability? :s
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1433277278.0
+:END:
+
+*** Seems so. Admittedly, quantum measure seems to act irrevocably frequentist IRL, but I always wanted someone to make up this superpower /after/ learning statistical mechanics and explain how to use it to go full Maxwell's Demon and circumvent the increase of entropy.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1433277735.0
+:END:
+
+**** I'd be down with going full Maxwell's demon. Another post here suggests inducing or delaying radioactive decay for a dirty bomb, which seems doable given time. I could definitely see someone reversing entropy as a use of the power...if they could concentrate on moles of atoms interacting all at once, which seems either mechanically expensive, or requiring a LOT of imagination :).
+:PROPERTIES:
+:Author: CFCrispyBacon
+:Score: 2
+:DateUnix: 1433279295.0
+:END:
+
+
+*** Not sure? I want a system that is fairly intuitive for the caster to manipulate.
+:PROPERTIES:
+:Author: CFCrispyBacon
+:Score: 1
+:DateUnix: 1433277836.0
+:END:
+
+**** The frequentist interpretation of statistics states that probability is a statement about frequency, so "70% chance of rain" means "In 70% of days exactly like today, it rains the next day."
+
+The Bayesian interpretation of statistics (aka the LessWrong style, aka the style that more-or-less inspired the website that inspired HPMOR which inspired this subreddit) states that probability is a statement about uncertainty, so "70% chance of rain" means "It'll either rain tomorrow, or not; we're 70% certain that it will."
+
+It's a fine line, but it has applications and /causes a lot of people to yell at each other over the internet/.
+
+Umm, but anyway. Yeah. With a Bayesian interpretation, the idea of "probability manipulation" makes no sense, since probability is understood as a statement about the mind (the map), not reality (the territory). So, umm, anyway. Carry on. Interesting thread, etc.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1433282314.0
+:END:
+
+***** This sort of ability does lend itself naturally to a frequentist interpretation, but there's no fundamental reason you couldn't think of it in Bayesian terms: "Given that I use my power, I am 99% certain that the coin will come up heads."
+:PROPERTIES:
+:Author: BassoonHero
+:Score: 1
+:DateUnix: 1433301197.0
+:END:
+
+****** Well, in that case, the whole power is to manipulate your level of ignorance -- ie, nothing to do with the actual thing in question.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1433333954.0
+:END:
+
+
+**** Frequentism IS the intuitive interpretation.
+:PROPERTIES:
+:Author: codahighland
+:Score: 2
+:DateUnix: 1433278906.0
+:END:
+
+***** You have a spectacularly unique intuition
+:PROPERTIES:
+:Score: -1
+:DateUnix: 1433280759.0
+:END:
+
+****** I didn't mean it as a definitive thing. I meant, most people's understanding of statistics comes out looking something like frequentism. It IS, after all, fairly simple, and anyone who studied the simpler parts of statistics in middle school or high school will have been exposed to frequentist techniques.
+
+A frequentist interpretation says that if you were to try something 1000 times, and it happens 10 times out of that, then the event's probability is 1%. People likewise intuit that something with a 10% probability ought to happen once out of every ten trials.
+
+Enumerating the possible outcomes of an event, assigning a likelihood to each event based on your knowledge of how these kinds of events have played out in the past, and extrapolating forward from there is very much a frequentist line of reasoning. (Note that this is subtly distinct from the assignment of prior probabilities in Bayesian reasoning.)
+
+Keep in mind that most readers on this subreddit are going to have substantial exposure to Bayesian reasoning, so their intuitions are going to be tuned differently than the average person.
+:PROPERTIES:
+:Author: codahighland
+:Score: 3
+:DateUnix: 1433282941.0
+:END:
+
+
+** What about meta-application?
+
+You say
+
+#+begin_quote
+  it risks serious injury or even death
+#+end_quote
+
+Since it's a risk and not a certanty couldn't you manipulate the probability of the after-effects of the power itself?
+
+I would personally safeguard the system from that kind of abuse.
+:PROPERTIES:
+:Author: Zeikos
+:Score: 3
+:DateUnix: 1433277424.0
+:END:
+
+*** Yeah, no meta-application. I'd have it as the damage being a constant, but how much you hurt per application and how much your body can take is dependent on the individual's skill and power. Kind of like the Dresden Files mages, who have a variety of skill and power depending on training and raw ability, but all take backlash from casting.
+:PROPERTIES:
+:Author: CFCrispyBacon
+:Score: 2
+:DateUnix: 1433277772.0
+:END:
+
+**** Is there an hard limit or a person with enought knowledge and experiece can influence even quantum phenomena?
+
+I understand the limitation is on the percentange you go to influence but how many things you influence at the same time should matter too.
+
+Otherwise you could do something like this :
+
+Take a substance that has a really high chance to decay in a given time , accumulate it by manipulating his chance of decaying : you can freely produce dirty bombs.
+
+Or assassinate people via radiation poisoning that for non-altered probability would be completly harmless. By the same metric you would be able to shield yourself from radiation if you're in the most skilled cathegory. Only really fast decaying isotopes would be a problem.
+
+So i assume the limitation is not only in the probability altered but on the magnitue of how many things you alter too. Otherwise you could make the villans going nuclear-crazy , which is a possibility ;)
+:PROPERTIES:
+:Author: Zeikos
+:Score: 1
+:DateUnix: 1433278450.0
+:END:
+
+***** I imagine the number of things is a factor, with how many things are in a group depending on how many possible outcomes there are. For radioactive decay, the command would be "As many molecules as I can control have not decayed/have decayed". It's a binary outcome, but you're talking about moles of atoms, so the cost would become exponential to impossibility rather quick. I could see a nuclear isotope attack at a high level of use (entropy is probably easier to provoke then artificial order), but not making quick and easy dirty bombs. Also, this takes concentration and time, so a dirty bomb attack anywhere where the media would pay attention would get more heat on you then you're able to handle. It might be worth it...if you're desperate and have a lot of time on your hands.
+:PROPERTIES:
+:Author: CFCrispyBacon
+:Score: 1
+:DateUnix: 1433279086.0
+:END:
+
+
+** Learn how to do things really well (parkour, for example) and engage it at the last minute to turn "well, that's cool, but it's only a matter of time until you land on something that doesn't like to get landed on" into "I AM THE ROOFTOP GOD, THE CONCRETE MESSIAH, WITNESS ME!".
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1433298349.0
+:END:
+
+*** Exactly! Users of this power would practice parkour, gun fu, etc. quite regularly, as having a high base level of ability makes it less work to affect the outcome.
+:PROPERTIES:
+:Author: CFCrispyBacon
+:Score: 1
+:DateUnix: 1433339919.0
+:END:
+
+
+** You could go kinda meta with this and ask for a list of outcomes to affect in order to achieve some goal (eg. money without attracting attention or killing yourself). You generate this list by flipping coins to create a sequence of bits that you convert to text (which should have a 50% each flip).
+
+If you wanted to go a step further, you could ask for a list of outcomes to achieve your "best possible" (eg. CEV) world even if you don't know what it is. Though maybe it takes this a step too far if you can't visualize the outcome you want...
+:PROPERTIES:
+:Author: Running_Ostrich
+:Score: 3
+:DateUnix: 1433317177.0
+:END:
+
+*** I was thinking of doing something like this, but I'm not sure how that would work. As to the CEV world, again I would think that trying to visualize that all at once would be a little difficult.
+:PROPERTIES:
+:Author: CFCrispyBacon
+:Score: 1
+:DateUnix: 1433339764.0
+:END:
+
+
+** #+begin_quote
+  2) You can calculate approximate relative odds by seeing or imagining the scenario.
+#+end_quote
+
+How long does this take? If I have a binary tree of choices, can I imagine the probability of one being better than the other?
+
+"What is the probability that my life is improved by stepping left", etc?
+
+Since you can then manipulate those probabilities you can create a path to victory ala Contessa from Worm, find the step around you that will lead to your life improvement and also is above 50%, manipulate it to 100%, continue.
+
+Edit: Also this ability would strip me of my belief in determinism which would be sad, but on the other hand free will has slightly more grounds to stand on.
+:PROPERTIES:
+:Author: RMcD94
+:Score: 1
+:DateUnix: 1433273471.0
+:END:
+
+*** I imagine it as you can imagine the optimum outcome for a situation, in your immediate area (line of sight), with the information you know or can imply. For example, the output for stepping to the left would be "There is nothing that will change overmuch right now stepping left" or depending on the scenario "There is a 5% less chance of being shot by twisting yourself to fall to the left" or "If I step into traffic in front of this truck, there is a chance rapidly approaching certainty that I will be hit before I can react. The injuries are nearly certainty major, with a 45% chance to be fatal on collision. If I survive initially, I have a 60% chance for survival if I make it in the next hour.", etc.
+:PROPERTIES:
+:Author: CFCrispyBacon
+:Score: 1
+:DateUnix: 1433273965.0
+:END:
+
+**** Ah, so you can't predict the entire future, just immediate events.
+
+I imagine the immediate improvement chain of statistical abuse would likely have you snorting cocaine until you OD as your brain maximises dopamine or something.
+
+Best thing to do is set your self up in a way that you can make a large number of hugely impactful decisions in a short timespan, while making sure that the range of potential results aren't going to kick you in the face.
+
+Good thing is that you'll pretty much be the most charismatic person ever, "saying "X, Y, Z" will have a big chance to endear this person to you", then manipulate the chance. Also 45% chance to be fatal would mean it's really easy to manipulate it to 0% chance right as you're going from 55% chance you survive.
+:PROPERTIES:
+:Author: RMcD94
+:Score: 2
+:DateUnix: 1433274157.0
+:END:
+
+***** You'd be hugely charismatic, and even more so the better you know somebody-the odds for the average person vs. the odds for a specific individual with X personality traits who is in Y situation, for example. You'd be rather hard to kill in most ways, but not impossible-you are unlikely to die immediately from a single shot in a gunfight, but once you get shot your opponent can just keep shooting you as your odds decrease. You're unlikely to die outright in the truck scenario, but it's virtually impossible to escape serious injury, where you're rather helpless. You can heal ideally fast...for a human, if you can concentrate on it through the pain, any painkillers, etc.
+:PROPERTIES:
+:Author: CFCrispyBacon
+:Score: 1
+:DateUnix: 1433275165.0
+:END:
+
+****** #+begin_quote
+  , but not impossible-you are unlikely to die immediately from a single shot in a gunfight, but once you get shot your opponent can just keep shooting you as your odds decrease
+#+end_quote
+
+Better chances in faking being hit probably, or convincing them you're not worth shooting for whatever reason. Not immortal by any means but direct human death rather than say a nuke or AC130 is a lot easier to avoid.
+
+In the truck scenario, my question would be how reductionist can you make it?
+
+IF you manipulate death to 0%, can you say "what is chance of injury on this part of arm", 0%, then move along until everywhere is zero.
+
+Even if the odds of your whole arm being injured were 100%, of course, depending on how it works it might mean that by the time you get to your last section of arm it is 100% and so impossible to manipulate.
+:PROPERTIES:
+:Author: RMcD94
+:Score: 1
+:DateUnix: 1433276147.0
+:END:
+
+******* Exactly-you aren't immortal, but direct human death is hard enough to make a good story, and make things like gun battles an interesting conflict of magic and ability. You aren't Neo, but you can do a pretty damn good impression of Inspector Tequila, and even better the more you train.
+
+As to how reductionist you can make it, the biggest problem you run into there is time. How many small changes can you make before you need to take the big cost for the aggretate? How fast can you think? You can toss a bunch of coins in the air, and probably focus on each one fast enough to make them all individually turn heads. How many parts of your arm could you secure before you got hit by a truck?
+:PROPERTIES:
+:Author: CFCrispyBacon
+:Score: 1
+:DateUnix: 1433276788.0
+:END:
+
+
+** The first abuse I could think of would be to step-stone my way up to better power. The instant-probability power could help you to find what factors would actually influence your power's limits. You could then slowly nudge your odds of successfully circumventing those limits, one decision at a time like the left/right step idea [[/u/RMcD94]] uses.
+
+The power has to be prevented from working on itself and its own causes or else you can snowball your way into godhood fairly quickly.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1433280414.0
+:END:
+
+
+** Sorry for the wall of text, I toyed with similar magic system and thought a lot about it. In my system you could change probability distribution of any random variable prior to sampling it, and the energy cost was proportional to integral of the squared difference between the original and desired probability distribution over the domain of the variable.
+
+It is an elegant, general system, but the problem is - probabilities can be combined. It applies to your system as well, even more I think.
+
+You can add irrelevant clauses to the random variable you want to tinker with to make it easier. For example "I will win this game" may have probability of 0.01, but "I will win this game or I will toss a coin and it will be tails" will have probability of a little over 50%.
+
+So in your system I can do this to do ANYTHING for the cost of 2 trivial spells:
+
+1. make the probability of "I will win this game OR that coin toss will be Tails" = 100% (original probability a little over 50%)
+2. make the probability of "that coin toss will be Tails" = 0% (original probability = 50%)
+
+I could skip the gaming altogether, and just do "10 kg of gold will materialise on the floor" instead of winning a game. Or 10 kg of antimatter if I want big boom and not the money. Or "the drug for cancer will materialise on the floor" if I'm benevolent that day. What's the difference between (1-0.50000000001) and (1-0.5000000000000000000000001) after all.
+
+So yeah - it's OP.
+
+You can forbid compound random variables, but it's a gray area - a roll dice is compound random variable too if you think about it.
+
+You could also forbid casting 2 spells that manipulate the same random variable, but random variables in real world are rarely 100% independent, so you may find that changing that 1 coin toss in the past slightly changed probability of EVERYTHING after 1 year (see butterfly effect). So you basicaly made magic impossible for anybody because of that 1 small spell.
+
+May be good for story, now that I think about it :) Wizards would make sure they isolate the things the manipulate from outside world, and magic defence would be basicaly ensuring that the thing you want to defend from tinkering influences as many things in outside world as possible. But it's inevitable someone had destroyed magic in such universe long before the story even begins IMHO.
+
+I think the best way to deal with this is to make the magic energy cost work out the same no matter how many spells you cast to achieve the result - it should be "path invariant", so exponential cost won't work, it would need to be linear I think. But linear cost seems too cheap, stuff like "create arbitrary amount of matter custom tailored to your specification out of nowhere" would be at most 2 times more expansive than "change the result of a coin toss". I abandoned the project because of that.
+
+Now that I think about it - maybe relativity equations could be made to work here? There's some analogy with changing velocity to c requiring infinite energy, and changing probability by 1 should be the same. And I think in relativity the equations are path invariant? I'm not good with relativity.
+
+I like the "line of sight" limit - it makes it much less powerful, but still - it's OP as hell.
+
+Your system has also effortless future prediction, even non-line-of-sight, because of this trick: you can promise to yourself that you will put a ball in one box if Obama wins election, and in other if he loses. Both boxes are in line of sight. And then you will take that ball from one box or the other. After making such a promise you predict probability of taking ball from the first and the second ball after the elections - voila - you know who will win.
+
+In mine system you cannot predict probability, but you can try to change probability distribution "blind", and if you don't use enough mana - you will fail painfuly (the amount of pain proportional to the missing energy). So predicting future is possible, but painful and costs mana - you basicaly have to estimate the probability distribution by undershooting on purpose. And if you fail too much (more than 0.5) you go mad forever.
+:PROPERTIES:
+:Author: ajuc
+:Score: 1
+:DateUnix: 1433414794.0
+:END:
+
+*** My thought was that in combining clauses, you suffered all of them cumulatively-your chance at making gold appear out of thin air (effectively impossible) would also have to be paid if you tacked that on to changing a coin toss as well, or perhaps causally linking things that were not causally linked before is impossible (a coin toss does not affect the outcome of an election).
+
+The initial idea sounds elegant, but I'm not sure how to make it work. I might cheat and just declare that it only works on physical objects within sight of the mage, combining variables makes you pay the cost of the most unlikely variable in the equation at minimum, and that you can't materialize what wasn't there before, which might address your loopholes. Thoughts?
+:PROPERTIES:
+:Author: CFCrispyBacon
+:Score: 1
+:DateUnix: 1433447538.0
+:END:
+
+**** #+begin_quote
+  combining variables makes you pay the cost of the most unlikely variable in the equation at minimum
+#+end_quote
+
+variable X = something effectively impossible DOES NOT happen (prob. almost 1)
+
+variable Y = tossed coin lands tails (prob. 0.5)
+
+Spell 1. make the probability of X AND Y = 0 (originaly a little less than 0.5)
+
+Spell 2. make the probability of Y = 1 (originally 0.5)
+
+Profit :)
+
+I don't think you can make this non-OP. It's just too general. The best bet would be to design path-invariant way to calculate the cost of manipulations that works like relativity velocity change equations - the further you ultimately change the probability from original - the closer to infinity the energy cost gets. For changing the probability from 0 to 1 (or vice versa) the cost should be infinity no matter how you achieved that. But I've failed to design such equations (haven't spend much time on that).
+
+My first idea was equation like:
+
+#+begin_example
+    energy cost of changing prob A to B = - constant / 4*(a-b)*(1-a-b)
+#+end_example
+
+For changing 0.5 to 0 or 1 it would make the cost = constant.
+
+For changing 0 to 1 the cost would be +infinity.
+
+But it's not path invariant. For changing 0.5 to 0.75 and then 0.75 to 1 it would be 8/3 * constant.
+:PROPERTIES:
+:Author: ajuc
+:Score: 1
+:DateUnix: 1433449548.0
+:END:
+
+
+** #+begin_quote
+  2) You can calculate approximate relative odds by seeing or imagining the scenario. Casinos and the stock market are traps for people having this ability, among other things.
+#+end_quote
+
+This alone would be extremely useful even without probability manipulation.
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1433418055.0
+:END:
+
+
+** I think a lot of the loopholes can be fixed more elegantly by fixing the math rather than by adding exceptions. Simply define your unit of cost as how difficult it is to double the odds of something (1:1 -> 2:1 would have the same cost as 1:1000->1:500), and then let that difficulty stack naturally. Getting to 100% or 0% odds becomes impossible, which I think makes more sense, and you can no longer short circuit costs just by making them part of compound probabilities.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1433702367.0
+:END:
+
+
+** You could try to keep yourself blissfully ignorant of how unlikely some desirable events are. That way, it will cost less mana or whatever to manipulate their probabilities to near certainty.
+
+Probability is in the mind, after all.
+:PROPERTIES:
+:Author: sir_pirriplin
+:Score: -1
+:DateUnix: 1433282755.0
+:END:
+
+*** Not in the setting. And not in real life, either. You're abusing that meme.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 2
+:DateUnix: 1433296120.0
+:END:

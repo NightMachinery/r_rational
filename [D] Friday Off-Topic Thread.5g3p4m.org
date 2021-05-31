@@ -1,0 +1,771 @@
+#+TITLE: [D] Friday Off-Topic Thread
+
+* [D] Friday Off-Topic Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 18
+:DateUnix: 1480691083.0
+:END:
+Welcome to the Friday Off-Topic Thread! Is there something that you want to talk about with [[/r/rational]], but which isn't rational fiction, or doesn't otherwise belong as a top-level post? This is the place to post it. The idea is that while reddit is a large place, with lots of special little niches, sometimes you just want to talk with a certain group of people about certain sorts of things that aren't related to why you're all here. It's totally understandable that you might want to talk about Japanese game shows with [[/r/rational]] instead of going over to [[/r/japanesegameshows]], but it's hopefully also understandable that this isn't really the place for that sort of thing.
+
+So do you want to talk about how your life has been going? Non-rational and/or non-fictional stuff you've been reading? The recent album from your favourite German pop singer? The politics of Southern India? The sexual preferences of the chairman of the Ukrainian soccer league? Different ways to plot meteorological data? The cost of living in Portugal? Corner cases for siteswap notation? All these things and more could possibly be found in the comments below!
+
+
+** Weekly update on my rational pokemon game, including work on the data creation tool Bill's PC. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Hooo-ee.  I /feel/ like a lot of strides have been made this week; not sure if that is a false feeling or not.  Let's see...
+
+[[/u/Dwood15]] and [[/u/Xavion]] have both been very helpful lately with their efforts in architecting the monster engine and codifying the species JSON, respectively.  Both of these projects have forced us to take much more concrete looks at the designs of various systems.  
+
+In doing so, Bill's PC is now almost utterly obsolete--most of the stat definitions, names, and purposes have played musical chairs with one another, with tons of new additions and paradigm shifts.  For instance -- and I kind of assumed I would hit this eventually, curse you, foresight! -- types will almost certainly be data-driven and moddable.  Not just the numbers, but how many types, and what their names are, etc, will be part of the moddable data backbone, and so you will be free to whimsically add your beloved Fart type.
+
+Things in general, code-wise, have shifted to be super-moddable.  This was always the intent, but it's interesting seeing just how abstract everything has become.
+
+--------------
+
+The HP system was more or less finalized in design.  HP is now mostly equivalent to pain--or it's inverse, you might say, as HP goes down as Pain would go up, but conceptually they are exactly the same system.  When a pokemon is damaged, it loses HP in the affected limb, which leaves it open to a higher chance of injury.  Death occurs through the accumulation of certain injuries on certain appendages, and a slew of nonlethal but crippling injuries can bog you down as well.
+
+While identifying this system, I drew up a [[https://docs.google.com/document/d/1aT7Oa0F35Y_9rEJgEkE5pTwT7ckBR9nHA3wGdvINgTs/edit][Mock Battle sheet]] which shows the process of a Machop helpfully getting beaten to death.  This model is slightly incomplete; in particular it doesn't include Endurance as a factor, but it shows the general mechanics of how I see fights going.
+
+--------------
+
+A breakthrough was also made with the Initiative system, (which is getting relabeled, I think, but I'll refer to it as INIT for now).  Basically, we are now adding two variables to each move: a “compressible” and “incompressible” time factor.  As the names suggest, the compressible time can be reduced or eliminated through both proficiency with the move and, as we've decided, INIT; incompressible, however, can't be affected by stats and is the absolute minimum time it takes to perform the move.
+
+Solar Beam, for instance, (as it exists in canon) has a very large incompressible time factor and little to no compressible.  Fury Swipes, however, is the opposite, with perhaps only the smallest of incompressible time.  This means that a Slowpoke using Fury Swipes might only get one or so hits in per round, but Rattata will of course get quite a few more in.
+
+This (I think) helps alleviate the issues with the INIT system significantly, permitting those with a large INIT to get more done per round, without just completely, absolutely stonewalling somebody with less.  It's still a /huge advantage/, but more damage and application based, rather than simply “block until you run out of init, then hit you with free moves”.
+
+--------------
+
+One of the fiddly problems with the Elite Four was solved in a rather deft manner.  See, the problem was, how do we have a world where A: The Elite Four are the most powerful around, B: the Elite Four have enough power to drive a Stormbird away from civilization, C: the Elite Four want to kill the birds, but D: the Four don't have the firepower to do so, and yet E: the Four /plus/ the player are potentially enough to kill one or more of them.
+
+You see the problem?  Making them badass, willing to kill things, and yet not able to do so without help from the player is an extremely fine line to walk.  Well, instead we decided that the Four /can't/ drive off the Stormbirds: instead, they play cat-and-mouse.  The Four are among the only individuals daring, brave, quick, and powerful enough to run up to Zapdos, punch it in the face, lead it on a merry goose chase (away from civilization), and live to tell the tale.  As a day job.  It's a small change, but one that completely erased one of the lingering balance issues that plagued my mind.
+
+--------------
+
+OMG YOU GUIS.  There's a project on TVTropes called [[http://tvtropes.org/pmwiki/pmwiki.php/JustForFun/ThePokedexExtendedFanonEdition][The Pokedex: Extended Fanon Edition]] and it's /amazing/.  In-depth articles that try to portray knowledge about a species from a pseudoscientific and, more importantly, in-universe minimal-bullshit manner as possible.  It's mostly canon facing, but I've already decided we're using this as a base for the pokedex entries.  We'll have to modify them, of course, but this is like 80% of the work right there.  I'm excited.
+
+--------------
+
+I finally, finally, /finally/ got something to show for the movement stuff.  I got my grid library of choice working (it recently had a major version update which broke everything), and now I have hex grids spawning in Unity.  Yay!
+
+2D test grid:
+
+[[http://i.imgur.com/rXlbtQH.png]]
+
+3D test grid (this is what we will use eventually, but I am forgoing it while figuring out the movement system):
+
+[[http://i.imgur.com/7b7QPGs.png]]
+
+And a little Red on the 2D test grid, why not:
+
+[[http://i.imgur.com/urke1Zs.png]]
+
+Over this next weekend I hope to have the basics of movement down, but we'll see.
+
+--------------
+
+Last and least, we have decided to include pokemon faeces.  That's right, folks, poop for everyone.  It's likely not going to be anything huge--maybe you can use it while tracking something down, etc.  But after finding out that Dwarf Fortress doesn't have any, we just had to jump on the opportunity to be able to say “We've Got More Shit Than Dwarf Fortress.”
+
+Also, it leads a bit of credence to the proliferation of Ditto.  That's right folks: Ditto, at its core, is /really/...Mew/poo/.
+
+--------------
+
+Feel free to leave any comments or questions below. Also feel free to join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]] for brainstorming and discussion.  It's a great group, really, and I would highly recommend hanging out, even if you're not in it for this project itself.  There's tabletop groups, Dota 2 partying, and [[http://i.imgur.com/j3jRmMZ.png][puns]] like you wouldn't [[http://i.imgur.com/8cUkzoGl.jpg][believe]].  Come join us!
+:PROPERTIES:
+:Author: ketura
+:Score: 16
+:DateUnix: 1480694223.0
+:END:
+
+*** I can't believe I've been visiting TvTropes for something like 7 years and writing OoS for over 3 years and never knew about the TvTropes dex -_-
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 8
+:DateUnix: 1480714462.0
+:END:
+
+**** Man, and I thought /I/ felt like I missed the boat.
+:PROPERTIES:
+:Author: ketura
+:Score: 5
+:DateUnix: 1480715431.0
+:END:
+
+
+*** I just want to say that this is my favourite in a long series of fantastic updates, and while I don't have time to contribute I'm looking forward to playing the game :)
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 4
+:DateUnix: 1480714777.0
+:END:
+
+**** Glad to hear it! Things really do seem to be coalescing from an abstract design to a concrete product (or prototype, at least). With any luck, this won't stay as your favorite for long ;)
+:PROPERTIES:
+:Author: ketura
+:Score: 3
+:DateUnix: 1480715947.0
+:END:
+
+
+**** Is this code for, "Let me just add some feces to Dwarf Fortress while you work on finishing your game."?
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 1
+:DateUnix: 1480753762.0
+:END:
+
+***** ...I wouldn't put it quite like that.
+
+My current project is to set up some integration tests for the memory-hacking utility, so they can get out of alpha updates and their downstream stuff can be updated and then I can assemble it all again.
+
+Why does this need tests? Lua or Ruby scripts make calls against a C++ API generated by lisp and debuggers to modify the runtime memory of a game without an API at all. This has to be updated for every new version, and sometimes it's not quite right, and then the game crashes and people who don't save often are sad.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 1
+:DateUnix: 1480755903.0
+:END:
+
+
+*** As the other side of the HP debate, I have a bit of extra clarification on the HP system.
+
+Specifically, HP/Pain no longer represents /damage/. Mechanically, each body part will have a stat tracking HP/Pain, and will also have a list of injuries. Previously, injuries were considered semi-permanent damage, such as a broken bone or a severe burn, up to and including an amputation. In effect, they were damage that persisted no matter how long you rested afterwards, and needed specific treatment to fix. Now, on top of that, regular damage like bruises and cuts will be listed as injuries too, except these ones will be able to heal over hours or days like normal.
+
+In battle, taking a hit with, say, your leg, will raise pain in the leg and use the RNG to figure out how much of a bruise or equivalent injury to add. The pain will mean that if you use a kicking move, the amount of force you can put behind it is decreased, and the injuries make it so that abusing the leg by doing things like kicking with it or taking another hit cause more pain because of the preexisting injuries. At the same time, the more in pain a body part is, the more likely it is to sustain injuries from attacks, because the body part's already being stressed. The pain will recede over the course of a few turns, but the injuries you have will cap it at a minimum amount, something like a constant ache or, if it's bad, a persistent agony. If you don't get those few turns of breather, though, the pain becomes a vicious cycle that can easily render a body part useless.
+
+Terminology-wise, I tend to think pain works more smoothly conceptually, but mechanically it's all the same and ketura likes the familiarity of HP. So your body part's HP will drop when you get hit, regen to their cap over the course of a few turns, and injuries will limit the cap for that body part. Having low HP on a body part amplifies the HP loss and injury gain from new attacks, and the lower your HP is the less useful the body part is.
+:PROPERTIES:
+:Author: InfernoVulpix
+:Score: 3
+:DateUnix: 1480696619.0
+:END:
+
+
+*** Are you sure that you can use the TvTropes dex in your game? Just make sure that you are not doing some plagiarizing that people will get upset over. I doubt anyone would be able to call you out on it, but stealing a creative works that doesn't have explicit permission to be used is a dick move, so I'm just warning you of a potential mistake.
+
+Congrats on getting this far!
+:PROPERTIES:
+:Author: xamueljones
+:Score: 3
+:DateUnix: 1480727370.0
+:END:
+
+**** All TVTropes content is CC:BY/SA/NC. And as it turns out, people have already asked that very question in the companion thread and this doesn't change for this page. So yeah, should be good.
+
+Thanks!
+:PROPERTIES:
+:Author: ketura
+:Score: 3
+:DateUnix: 1480728146.0
+:END:
+
+
+** I am considering a plotline for a writing project at least two books in the future. Superhero genre, detective fiction, where the detective is a postcog, able to see the past in the area they are currently located in.
+
+There are clearly highly successful, but eventually run into a big problem. One of the crimes they are called on to investigate was performed by a precog.
+
+Precog vs postcog. Cat and mouse between people who can see each other across time. One critical aspect is that tie passes as a constant between them, meaning they can see and hear each other in real time. The crime was committed three days before the postcog first discovered the guilt of the precog, so the precog has three days in their time to silence the postcog, before the knowledge of their guilt leads to their becoming a fugitive.
+
+The precog knows that the postcog will be able to testify against them, and tries to kill the postcog before the trial date using traps of various types, from explosives to poisons.
+
+The postcog just has to stay alive long enough that the precog is taken into police custody.
+
+I already have lots of ideas, but this seems like something that might be of interest to [[/r/rational][r/rational]], so if you want to point out interesting scenarios, I'd love to hear them.
+:PROPERTIES:
+:Author: Farmerbob1
+:Score: 8
+:DateUnix: 1480707726.0
+:END:
+
+*** #+begin_quote
+  The precog knows that the postcog will be able to testify against them, and tries to kill the postcog before the trial date using traps of various types, from explosives to poisons.
+#+end_quote
+
+How does the postcog not die instantly (to, say, a gun)?
+
+Their power may be very useful in a police investigation, but seems to have limited defensive capabilities, while reliable precog is OP.
+:PROPERTIES:
+:Author: Roxolan
+:Score: 4
+:DateUnix: 1480720209.0
+:END:
+
+**** The postcog can follow the precog in realtime, and see what they were doing three days prior, and react to it.
+
+So, if the precog wants to set up an ambush for the postcog, they have to do it in a way that the postcog doesn't realize is a ambush.
+
+One critical part of this is that the two powers become entwined with one another after their first interaction at the crime scene. Neither of them can break free of the timeframe. The entwining limits both parties.
+:PROPERTIES:
+:Author: Farmerbob1
+:Score: 2
+:DateUnix: 1480723005.0
+:END:
+
+***** Here's the confusing part, if the precog can set up an ambush for the postcog and see that it's a failure, what stops them from changing the set up or undoing the ambush to take account for how the postcog survived?
+
+For example, precog walks to a room where he left his explosive devices hidden, secretly sets up the bomb for it to explode three days in the future while postcog is watching, and the postcog avoids it by noticing a clue and getting out of the room before it explodes. Precog notices that the postcog was in the room for five minutes before ducking out within ten seconds of the bomb exploding. So he resets the timer (in full view of the postcog) to make it explode about three minutes earlier. How can the postcog survive then?
+
+Basically, while you are giving the illusion that the postcog and precog are interacting directly, the precog can change his actions in advance once he learns of how the postcog acted during a certain timeframe. Or are you going with something like the future is set in stone once observed? Meaning if the precog sees something happen, it has to occur?
+:PROPERTIES:
+:Author: xamueljones
+:Score: 6
+:DateUnix: 1480726900.0
+:END:
+
+****** Hrm. Thank you for pointing out the fault so clearly. I think the only way to address it would be to somehow allow the present postcog to somehow communicate with the past postcog, or share a single mental state.
+
+This would allow the postcog to warn herself or simply be aware about what the precog was doing.
+
+In essence the entwining would allow the postcog some semblance of precognitive ability, but only of her own future self's actions.
+
+This would lead to the postcog knowing about ambushes due to warnings or direct observations by the future-self.
+
+However, the postcog is trying to follow the precog, to keep them in view... That means every ambush has the potential to force the postcog break the connection and allow the precog to set ambushes without oversight by the future postcog. which the postcog probably would not survive, for reasons mentioned above.
+
+The precog, if they are clever enough, can set a trap that the postcog doesn't fully understand, and the postcog cannot dally to figure it out, or they will lose track of the precog. The prior postcog, which is the target of the ambushes, has a little longer to figure out traps than the future postcog does.
+
+The precog has limitations. They do not want to become a known criminal, so their activities can't be seen by to many people, and they must create minimal forensic evidence. They cannot visit their home, job, family, or get in their car, use their own phone, etc, when the postcog is watching.
+
+If the postcog can identify the precog, the entire police department can be brought to bear. Even before that, though they are mundanes, they can certainly provide bodyguard support, looking for a disguised man setting in ambush.
+
+If the postcog is identified, especially if he starts killing and destroying lots of people and real estate, more powerful heroes or even vigilantes might also be brought in, some of which would be hard for an otherwise mundane precog to deal with if they learn who he is.
+
+I'll have to think about this for a while to see how viable it is, but if anyone sees more holes, I'd love to hear them.
+
+The important thing is, can the power entwining allow both the precog and postcog to act rationally and have the outcome be uncertain for the reader, without deus-ex?
+:PROPERTIES:
+:Author: Farmerbob1
+:Score: 1
+:DateUnix: 1480799369.0
+:END:
+
+
+***** Precog sits in an ambush spot with a gun. Postcog wanders in their respective powers' range. They notice each other.
+
+Precog knows exactly how postcog is going to try to dodge / flee / counterattack, and aims accordingly. Worst case scenario, if it turns out postcog brought a surprise ace-in-the-hole, precog just flees (while dodging unerringly) and tries again later.
+
+Meanwhile, postcog's power is doing jack shit. All it's showing is precog sitting on their ass for a few hours, which is no help at all to actually survive the ambush.
+
+e: at best postcog might stumble onto precog's trail before hitting the ambush point, IF they luck out on which direction they enter the ambush zone form. But that's easily countered (if nothing else, just by staying in the ambush spot for three days).
+:PROPERTIES:
+:Author: Roxolan
+:Score: 3
+:DateUnix: 1480727947.0
+:END:
+
+
+*** I think you've also missed the important point that /the precog can't have any actual limit on how far they can theoretically see into the future/.\\
+If you've read "...And I Show You How Deep The Rabbit Hole Goes" then it's immediately obvious that the precog can see their future actions /which are influenced by things they can see in the future that they currently can't/. Just write what you see in the future (in code so the postcog can't read it) then look at what you've written 3 days in the future. There's no real way to get around this without postulating that they are actually seeing a alternate reality where they lost their powers in the next second, however if you go that route then the precog is pretty impotent because the future where he lost his powers has very little resemblance to the /actual/ future.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 3
+:DateUnix: 1480747347.0
+:END:
+
+**** I may have a interesting workaround to this, posted below, in response to a prior response.
+:PROPERTIES:
+:Author: Farmerbob1
+:Score: 1
+:DateUnix: 1480799598.0
+:END:
+
+***** I don't see what you're talking about, I've read all the comments in your thread and i'm not seeing it.\\
+The closest thing to a solution I see is the comment about the postcog sharing consciousness with their past self. Because if you think about it you could alter the precogs powers to work the same way just over a different chunk of time.\\
+Basically both the cog's would have minds that extend across three days, with the only difference being which time period they are occupying. Damn I have no idea if that's what you intended but that's actually a brilliant solution. Their consciousness would view things as a point in which things become fixed, followed by a constantly shifting probability space.
+
+There was a short story like that I read where there's this humanoid creature that has precognition like that, it's not even sapient but by viewing time the way it does it's still extremely powerful.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 2
+:DateUnix: 1480841760.0
+:END:
+
+****** #+begin_quote
+  There was a short story like that I read where there's this humanoid creature that has precognition like that, it's not even sapient but by viewing time the way it does it's still extremely powerful.
+#+end_quote
+
+Could you tell me what story that's from? I'm now really interested in reading it. Thanks!
+:PROPERTIES:
+:Author: xamueljones
+:Score: 2
+:DateUnix: 1480929410.0
+:END:
+
+******* In the short story in question the entity looks like a man with a lion mane or something like that, it was in a thread about powerful non-sentient creatures or something. I tried a shit ton of keywords related to everything I could come up with about it on this subreddit as well as google generally.\\
+If it helps (it probably doesn't) the story felt kind of aesthetically old, like it might have been written in the 70's or earlier.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 1
+:DateUnix: 1480967508.0
+:END:
+
+******** Was it [[https://en.wikipedia.org/wiki/The_Golden_Man][The Golden Man]]?
+:PROPERTIES:
+:Author: xamueljones
+:Score: 2
+:DateUnix: 1481251474.0
+:END:
+
+********* Yes!! I didn't remember why I kept looking up golden as a keyword but thanks for finding it.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 1
+:DateUnix: 1481251611.0
+:END:
+
+
+******* It's [[http://sickmyduck.narod.ru/pkd082-0.html][The Golden Man]] by Philip K. Dick, I think.
+:PROPERTIES:
+:Author: Noumero
+:Score: 1
+:DateUnix: 1481284048.0
+:END:
+
+
+****** To be sure it will work, I'm going to have to think about it for an extended period of time, which is fine as I have a book to edit and another to write before this book is considered.
+
+The shared consciousness across time is where I am at this time, but the exact implementation is still up in the air.
+
+I'm considering merging their powers and giving each of them the same power set, but I have to make sure that works too. This would mean that the present enemy would be aware of the past actions as well, so there would be two people occupying the past AND the present, with the same powers, but each unfamiliar with the specific powers because their powers are an amalgam of the two different power sets.
+
+In order to force action and prevent too much thought and deliberation in the story, I'm thinking about introducing some sort of event horizon for time changes like you referenced. Something like Langoleirs (sp?), but I don't think you were referencing them.
+
+This train of thought has been sneaking up on me. I'll say, not entirely untruthfully, that I think that is what caused me to create some logical weirdness in my most recent prior post, where I differentiated present and past selves. Identical powers for each of them is probably the most elegant solution.
+
+More than thinking about it, I'm probably going to have to write a substantial synopsis and logic test it before I start writing the story.
+
+Since this is happening in the Reject Hero universe, both of their powers will require metabolic expense far beyond normal human to power the abilities, so today, while driving, I imagined scenarios where the two try to keep themselves fed while on the run, chasing each other around in the past as they each attempt to disable/kill/figure out the identity of the enemy in the present.
+
+I'm definitely writing this, now that I've spent time thinking about some of the fun I can have with it, beyond the time shenanigans, but at my current writing pace, that might take a very long time.
+:PROPERTIES:
+:Author: Farmerbob1
+:Score: 1
+:DateUnix: 1480875628.0
+:END:
+
+******* Yeah a you mentioned the characters would /basically/ have the same power. However because the three days their power covers only overlap in the "present" they would have an important asymmetry. Of course their would be no "present" they both agreed on; the postcog would see three days ago as the present and everything after that as shifting potentiality, whereas the precog would see the "present" as the present but also gets to see the future as probability space.
+
+Honestly the postcogs powers are significantly more powerful, because his fixed present is three days before the precog so he can change events the precog sees as fixed from his perspective (and when they're changed he'll think they were always the way the postcog made them).\\
+You might have to remedy this imbalance by giving some advantage to the precog, like being a crime lord with lots of resources who's also maybe slightly more clever and starts out with a better understanding of his power. This way you can start out with the precog winning because the postcog doesn't yet realize he can change the past not just observe it.\\
+Though actually the whole premise of being able to observe what's happening in a location in three days or what already happened would require a extra power the way things are set up. After all the way the powers are now you would only be able to see events that you were or will be present for potentially.
+
+Hmm thinking about it having the two people have a timeframe asymmetry is kind of difficult. After all from the perspective of the postcog the precog doesn't even have powers, since his consciousness only stretches over a period of time that will /always/ begin three days in the future. So yeah I guess it might not make sense unless their powers have a time period that overlaps somewhat.
+
+Also I think their are some interesting things to explore here. For one it would be weird (and fascinating) for people who had 'cog abilities, but would never get to use them from their perspective, since they only worked over a time period that was always going to start a few days (or maybe even a few seconds) in the future. Maybe 'cog abilities are actually super common, but they are usually locked away from most people by a unbridgeable time gap, this would be interesting because as a 'cog looked forwards from their present they might see a bunch of people suddenly getting powers that never would in the "real" future, Bonus Points if people do randomly get their cog powers and if at other times people lost theirs for no clear reason.\\
+A interesting background detail would be the fact that even for people without powers the present is still stretched over a 6 day period (assuming people with powers generally only stretch 3 days away from this timelines "present"). So as a result post cogs would see a world where because of overlap with precogs (though postcogs are precogs from their own perspective) the future is always known nearly a week in advance, though if the number of cog's is low then people might only know really significant future events, or whatever the information the precogs decided to bring back. Of course all of this would be constantly shifting as well from the postcogs perspective as it's not yet fixed from their perspective.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 2
+:DateUnix: 1480898745.0
+:END:
+
+******** Good stuff in here, but I don't trust myself to be logically consistent with some of the more interesting possibilities you present. At this point, I'm pretty much fixed on the two opponents mingling powers, and both of them operating in both the past and the present.
+
+It also occurred to me that this would never happen to an unfettered precog if they could properly account for a postcog's interference in the future. They would simply avoid the scenario entirely if they wanted to avoid discovery and conflict, unless it became absolutely critical for some reason or another to make an adjustment.
+
+One of the plot ideas I had for motive is that the precog is actively seeking out highly successful people with impractical success ratios in whatever business they are involved in, and killing them, because they fear the existence of other precogs, who might interfere with their life. This might touch on your idea of intermittent powers.
+:PROPERTIES:
+:Author: Farmerbob1
+:Score: 2
+:DateUnix: 1480937397.0
+:END:
+
+
+** For those of you who haven't played Dishonored 2 yet (and have the specs to run it), I heavily recommend it. While the game isn't really rational, more on that later, it features great story-telling in a way that will probably appeal to people who like rational fiction.
+
+Everything in the world of Dishonored 2 feels alive, makes sense, and reinforces the narratives of the game. Reading / watching / listening to its stories feels like playing a video game while reading a dozen very clever fanfictions deconstructing its universe.
+
+You have big picture stuff, people discussing recent events and backstory elements, and newspapers dropping hints about your next missions. But you also have little details that make everything alive, connected and consistent: an overseer in deep cover who booby-trapped his front door; in the middle of a bloodfly-infested building, a journal about a club of occultists who thought tripping on bloodfly venom was a great idea; a black market vendor who sells you weapons, whose shop you can break into to take all his stuff and his money (that one blew my mind); or guards who worry they're going to be replaced by the deadly killer robots the duke is buying.
+
+All these things make the world seem incredibly rich, and consistent. I'd still say it's not rational, because the protagonist basically deals with every single problem through either violence or creative violence; and while the villains are mostly compelling, they're all varying degrees of pure evil: the Crown Killer is a sadistic murderer, Jindosh is an arrogant scientist, Ashworth is a cruel witch, etc.
+
+Also, my only complaint about this game: the heart kind of sucks. In the first game, it was that mysterious, omniscient commentator who gave you another angle on the people who you met and killed; in this one, it spends most of its lines complaining or telling you about how every single person you meet is a sociopath who gave their uncle fake medicine or something (although I do like what it has to say about named characters).
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 7
+:DateUnix: 1480712288.0
+:END:
+
+
+** [[http://www.sjgames.com/gurps/][The Generic Universal RolePlaying System]] is having a GIGANTIC sale! [[http://forums.sjgames.com/showthread.php?t=147160][Get 40% off the price of /DRM-free/ GURPS PDFs until 2016-12-15.]] Take this chance to become acquainted with an exhaustively-researched and simulationist system that's /far/ more interesting than the wild abstraction of d20.
+
+Even if you never actually play a game of GURPS, the books are quite fascinating to read (e.g., [[http://www.sjgames.com/gurps/books/low-tech/][the Low-Tech series]]), and include [[http://www.sjgames.com/gurps/biblios.html][thorough bibliographies]] if you want to learn more about the topics covered.
+
+Some examples...\\
+- [[http://www.sjgames.com/gurps/books/Basic/][GURPS Basic Set]] (necessary to play): [[http://www.warehouse23.com/products/gurps-basic-set-characters-and-campaigns][+$55+ $33]]\\
+- [[http://www.sjgames.com/gurps/books/martialarts/][GURPS Martial Arts]] (dismember your enemies, slash open their veins, or overwhelm them with high-speed combos--with /realistic/ skill penalties!): [[http://www.warehouse23.com/products/SJG31-0105][+$28+ $17]]\\
+- [[http://www.sjgames.com/gurps/books/Vehicles/][GURPS Vehicles]] (design your own truck/tank/locomotive/autogyro//whatever!!/): [[http://www.warehouse23.com/products/SJG30-6505][+$15+ $9]]*\\
+- [[http://www.sjgames.com/gurps/books/thaumatology/][GURPS Thaumatology]] (create your own magic system!): [[http://www.warehouse23.com/products/SJG31-0107][+$30+ $18]]\\
+- [[http://www.sjgames.com/gurps/books/Space/][GURPS Space]] (procedurally generate alien species and entire solar systems!): [[http://www.warehouse23.com/products/SJG31-1002][+$25+ $15]]\\
+- [[http://www.sjgames.com/gurps/books/low-tech/][GURPS Low-Tech]] (learn about the development of civilization!): [[http://www.warehouse23.com/products/SJG31-0108][+$20+ $12]]\\
+- [[http://www.sjgames.com/gurps/books/ImperialRome/][GURPS Imperial Rome]] (learn about ancient Rome!): [[http://www.warehouse23.com/products/SJG30-6048][+$8+ $5]]*\\
+*Note: These two were written for GURPS Third Edition, while the current version of GURPS is Fourth Edition. However, they're still mostly compatible with Fourth Edition's mechanics.
+
+--------------
+
+Reminder: [[http://i.imgur.com/PtWmpiY.png][Equal-area projections are better than conformal projections.]] ([[http://np.reddit.com/r/paradoxplaza/comments/5f7yoi/does_it_bother_anyone_else_how_south_america_is/daik3al/?context=2][Source]])
+
+--------------
+
+Please be aware that [[https://en.wikipedia.org/wiki/Chernobyl_New_Safe_Confinement][the structure recently erected over the Chernobyl power plant]] should be called, not an [[https://en.wikipedia.org/wiki/Arch][/arch/]] (and /definitely/ not a [[https://en.wikipedia.org/wiki/Dome][/dome/]]), but a [[https://en.wikipedia.org/wiki/Vault_(architecture)][/vault/]]. The meanings of =arch= and =vault=, though they must inevitably overlap ([[https://en.wikipedia.org/wiki/Sorites_paradox][how far must an arch be extruded before it should be called a vault?]]), should be kept as separate as possible (presumably, based on the ratio of the volume enclosed by the 3D structure to the area enclosed by the 2D arc), in order to avoid ambiguity--and, in my opinion, the Chernobyl structure falls /firmly/ on the =vault= side of this blurry line. (See, e.g., [[https://upload.wikimedia.org/wikipedia/commons/e/ed/New_Safe_Confinement.jpg][this photograph]], which clearly shows how half of the structure comprises four linked /arches/--any one of which could stand on its own--that combine to form a /vault/.)
+
+--------------
+
+[[http://toakraka.neocities.org/2016-11-30/2016-11-30.html][Here]]'s a fun mini-[[https://allthetropes.org/wiki/After_Action_Report][AAR]] of my most recent campaign in /[[http://www.reddit.com/r/crusaderkings][Crusader Kings II]]/.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 4
+:DateUnix: 1480691525.0
+:END:
+
+*** Geography minor here - the problem is less about any particular map projection than the twin fact that many mapmakers these days don't know how to choose a projection, and most readers don't even know what a map projection is!
+
+For instance, the Mercator is great if you want to preserve angles, useful for navigation, but so bad for general use or political maps that many geographic societies have recommended that it's use be banned.
+
+Personally, I tend to use the Plate Caree if it must be rectangular, [[https://xkcd.com/977][a globe]] if at all possible - and the geostationary and orthographic projections make this surprisingly practical even without interactive stuff, or simply whatever projection the data comes in. But I tend to deal more in remote sensing and earth observation than political chloropleths, so take that with a grain of salt :)
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 3
+:DateUnix: 1480715585.0
+:END:
+
+**** [[http://imgs.xkcd.com/comics/map_projections.png][Image]]
+
+[[https://m.xkcd.com/977/][Mobile]]
+
+*Title:* Map Projections
+
+*Title-text:* What's that? You think I don't like the Peters map because I'm uncomfortable with having my cultural assumptions challenged? Are you sure you're not ... ::puts on sunglasses:: ... projecting?
+
+[[https://www.explainxkcd.com/wiki/index.php/977#Explanation][Comic Explanation]]
+
+*Stats:* This comic has been referenced 588 times, representing 0.4258% of referenced xkcds.
+
+--------------
+
+^{[[https://www.xkcd.com][xkcd.com]]} ^{|} ^{[[https://www.reddit.com/r/xkcd/][xkcd sub]]} ^{|} ^{[[https://www.reddit.com/r/xkcd_transcriber/][Problems/Bugs?]]} ^{|} ^{[[http://xkcdref.info/statistics/][Statistics]]} ^{|} ^{[[https://reddit.com/message/compose/?to=xkcd_transcriber&subject=ignore%20me&message=ignore%20me][Stop Replying]]} ^{|} ^{[[https://reddit.com/message/compose/?to=xkcd_transcriber&subject=delete&message=delete%20t1_dapqvwr][Delete]]}
+:PROPERTIES:
+:Author: xkcd_transcriber
+:Score: 2
+:DateUnix: 1480715590.0
+:END:
+
+
+*** While I am impressed by the sheer breadth of content and elegant design of GURPS, I personally prefer narrativist systems. FATE gives the players and GM much more freedom to tell the story they want to without worrying about mechanics or balance. [[https://fate-srd.com/][The core rules and supplements can be read for free here]], though my personal favorite is the Strange FATE system used in The Kerberos Club and Base Raiders since I like how it handles magic and superpowers. Now if only I could find someone else who wants to play...
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1480694155.0
+:END:
+
+**** GURPS is best viewed as a last resort system for GMing due to its overwhelming amount of mechanics.
+:PROPERTIES:
+:Author: rineSample
+:Score: 1
+:DateUnix: 1480843464.0
+:END:
+
+***** How do you figure that? Isn't GURPS's core mechanic still pretty much just "Take the character's skill-level, check for whatever modifiers apply in the situation and add them to the skill, roll 3d6, and compare"? Granted, you may want a few splatbooks' ref-tables to list the relevant modifiers for trying to use voodoo to protect against a psychic while in zero-g and being distracted by rabid weasels, but is there any other system that covers such a scenario in any simpler fashion?
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 2
+:DateUnix: 1480846041.0
+:END:
+
+
+** Remember how I praised the Flash tv show not long ago? I hereby restrict my complements to season one and parts of season two. I'm nearly caught up on season three and it seems to be going down the drain like Arrow did at roughly the same rate, for pretty much the same reasons, and it won't be coming back up. The characters keep making stupid decisions, the plot is contrived and drawn out, and the themes the story explores don't make any sense. What happened to such a fun, if cheesy, superhero series?
+
+The best I can figure is that the writers, for both Arrow and Flash, had a great season-long arc for the first year that also acted as a great framing device for episodic crimefighting. After that arc wrapped up, though, they didn't seem to know what to do with the story. The second season for both shows are padded out with bland one-off arcs and the Big Bad for the season fails to be as compelling. Then the third season comes around and the plot completely loses focus of what it's about yet still ends up being formulaic.
+
+I also want to blame the executives at CW for seemingly boxing the writers in. Tons of new characters kept getting introduced for the sake of it and shoehorned into the plot. I'm convinced Legends of Tomorrow was made to compensate for this by taking all the excess side characters away to a different story, but they also ended up taking compelling villains and side characters too. If Flash is so desperate for plot, why deny the show access to Captain Cold and, by extension, the Rouges? They're Flash's signature villains!
+:PROPERTIES:
+:Author: trekie140
+:Score: 6
+:DateUnix: 1480693392.0
+:END:
+
+*** I've watched one episode of Flash, and it was the one in season 2 where velocity 9 was introduced.
+
+What a shitshow. Why is Flash jumping across the broken bridge at the end when he knew he couldn't do that at the beginning a mere day earlier? Why was the V9 user able to break the bridge with resonance when she had no strength boosts? Why had they never bothered to use the precog guy on the hat before that moment? Why was V9 even /able/ to close and lock the power suppression chamber? Haven't they ever heard of operational security?
+
+It was just completely terrible!
+:PROPERTIES:
+:Author: Frommerman
+:Score: 2
+:DateUnix: 1480696394.0
+:END:
+
+**** Actually the precog did make sense at the time since they still didn't know how his powers worked, but everything else you said is accurate. The action was lazy, the plot was contrived, the characters made stupid mistakes, and the introduction of Velocity 9 ends up having very little impact on the overarching story. That basically sums up everything wrong with season two, though I assure you that the first one is good even if it's really cheesy.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1480697727.0
+:END:
+
+
+*** Writers may spend years on the first episode and developing a pitch for a show. Once you start the show, you have to operate in real time.
+:PROPERTIES:
+:Author: TaoGaming
+:Score: 2
+:DateUnix: 1480717701.0
+:END:
+
+
+*** I hear that a similar issue happened with Supernatural, tho I never really watched it myself. The original writers had 5 seasons of plot figured out, but when they hit that point it just...kept going.
+:PROPERTIES:
+:Author: ketura
+:Score: 1
+:DateUnix: 1480694577.0
+:END:
+
+**** Yeah, but Supernatural's main advantage is that it started off as a monster of the week series that gradually introduced an overarching plot. It still kept going after it should've ended, but the basic premise of brothers cruising the country hunting monsters is something you can keep going. The weekly villains in Flash and Arrow started off being tied into the season villain's plan, but then the next season's villain does the exact same thing for a completely different reason /and/ one-off villains show up anyway for no reason.
+
+There are plenty of big franchises that built themselves off of sticking to a formula, but that was because the formula itself was compelling and elegant in its simplicity. I actually think the shows would've benefited from switching to a villain of the week structure since it would give the writers more freedom. Superhero stories have always succeeded for the same reasons as sci-fi, they keep doing creative and interesting things with the characters and setting. Flash and Arrow, on the other hand, have been stuck in a rut that they won't get out of.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1480695957.0
+:END:
+
+
+** I've been doing some rereading of stories I read a long time ago, and I have to recommend [[https://www.amazon.com/dp/B003VIWNSU/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1][Skulduggery Pleasant]] for those who are craving something about Harry Dresden. It's like a Dresden-lite, but while it's similar in feel and tone, it's not a knock-off copy. The magic system's well-explained (at least the parts that our protagonist uses) and there are a lot of interesting characterization going on.
+
+I don't know if it's really worth recommending by itself because it's a story written about a Dresden-like character, but through the eyes of a sidekick. I had fun reading it, but I'm not sure if it was more because of how much it soothed my Dresden-itch or because of the book on it's own merits. I've only read the first book so far and for some reason only the first 3 books in a 9 book series have a Kindle edition for me to read.
+
+The [[http://www.goodreads.com/book/show/284440.Skulduggery_Pleasant][Goodreads reviews]] should help decide if you want to read it.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 4
+:DateUnix: 1480725608.0
+:END:
+
+*** Thanks I'll give it a look.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 1
+:DateUnix: 1480781393.0
+:END:
+
+
+** I'm having an un-rational moment, and despite knowing that, it's still affecting my behaviour.
+
+Earlier today, my newsfeed included the datum discussed [[https://www.reddit.com/r/PoliticalDiscussion/comments/5g7118/what_does_trumps_phone_conversation_with_the/][here]], of Trump having a phone call with the President of Taiwan; and the item discussed [[https://www.reddit.com/r/politics/comments/5g2yc4/the_law_that_could_allow_trump_to_shut_down_the/][here]], about Trump talking about 'shutting down' the Internet. And later, while listening to my music playlist of the Merry Wives of Windsor, one of the tunes that popped up was "Green Fields of France", one version of which can be heard [[https://www.youtube.com/watch?v=TFunhlWJiok][here]]. And I started wondering whether I was prepared for politics to go in an even more negative direction than I'd thought it might back during the American elections, faster than I thought it might.
+
+Specifically, I have the question stuck in my head: "Have I made the appropriate level of preparations, in case of significant military conflict within the year?". There are a variety of possibilities, from America's Congress passing laws that I find abhorrent, to China engaging in cyberwar against North American network infrastructure, to a minor US/Canadian dispute blowing up to the point Trump convinces some portion of the US military across the border to ensure the continued flow of "vital resources", to worse.
+
+Put another way - I've just finished figuring out what I would want to have done this month if, some time next year, many websites I find valuable become permanently deleted and unrecoverable (in spite of the Internet Archive's efforts). (Part of the answer: the program [[https://www.gnu.org/software/wget/manual/wget.html][wget]] and an [[https://store.mdisc.com/][archival Blu-Ray burner]].)
+
+The thing is, from inside my own head, I can't tell whether my thoughts have been doing this particular set of planning because I'm currently in the middle of one of my bouts of depression, or if it's actually a perfectly reasonable response to modern life and current events. So I'm looking for some external auditing, here where the sanity waterline is reasonably high:
+
+How crazy do I sound to you?
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 4
+:DateUnix: 1480754738.0
+:END:
+
+*** Only crazy in that you seem to be focusing on the apex of Mazlows hierarchy. I'm not sure if your allready prepped or just focusing on what seems important at the moment. Lets leave the question of if your concerns are valid aside for a second. If we see significant disruption, logistics are going to go first, and most analysis I've read have grocery stores in urban areas empty in well under 7 days.
+
+So how much food and water and electrical generating capacity do you have set aside?
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 4
+:DateUnix: 1480781980.0
+:END:
+
+**** #+begin_quote
+  So how much food and water and electrical generating capacity do you have set aside?
+#+end_quote
+
+Without revealing any particular details that I might one day wish I'd never shared: my physical library still has a set of Y2K prepping books next to the ones on camping, and I've long had my sets of plans in place for both hunkering down or bugging out. There are a few pieces of gear that I could wish for, like a [[http://www.canadiantire.ca/en/pdp/coleman-100-watt-12-volt-crystalline-panel-0112099p.html][100 watt solar panel]] and relevant accessories, or a decent ham radio base station and antenna instead of my handheld portable transceiver (VA3BOS at your service), but given that I'm on a fixed income and that Life Happens, I've never quite been able to scrape together the couple hundred bucks needed at any given time for either of those items.
+
+But hey, I've got a handheld computer with copies of Wikipedia and Wikivoyage and a few other things, a folding solar panel that just barely fits in an oversized coat pocket to power it, and a microfiber towel that fits in my other oversized coat pocket, so I Don't have to Panic, right? :)
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 2
+:DateUnix: 1480797231.0
+:END:
+
+***** I recommend investing some of your fun/hobby money in 50lb bags of rice or something similar and a lifestraw, which is rather expensive, but from what I've read pretty good as far as covering the basics. I keep these in my own hurricane supplies, but securing a supply of food and water are the starting points us pasty pale thinky types need if bad things happen.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 1
+:DateUnix: 1480811365.0
+:END:
+
+****** #+begin_quote
+  50lb bags of rice or something similar and a lifestraw
+#+end_quote
+
+I already have equivalents to those items. :)
+
+#+begin_quote
+  securing a supply of food and water are the starting points us pasty pale thinky types need if bad things happen.
+#+end_quote
+
+Let's go with "I have the basics down", and further plans are more to either increase the length of time I can survive without external support, or to improve my quality-of-life for the duration and for afterwards, or are backup plans in case my basic plans come crashing down around my ears. (An example of the latter - I live in a townhouse complex, and if any of three other households manage to burn their place down, mine will go with it, taking away nearly all of my planned resources. Which is just one reason for me to make one or more extra copies of any M-Discs I burn, to ask family members to tuck into a cupboard for me and forget about.)
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1480812650.0
+:END:
+
+******* Glad to hear it.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 1
+:DateUnix: 1480813800.0
+:END:
+
+
+*** As a point of interest: as of when I woke up, the votes were: [[http://lesswrong.com/r/discussion/lw/o69/open_thread_nov_28_dec_04_2016/diqb][LessWrong]], two votes for paranoid; [[https://www.reddit.com/r/rational/comments/5g3p4m/d_friday_offtopic_thread/daqck7b/][/r/rational]], two votes for not particularly crazy.
+
+Emotionally, I'm not feeling the particular "I'm going to hate myself in January 2018 if I haven't mailed copies of my archival Blu-Ray discs to certain members of my extended family stretching halfway across the continent by then, and the Net gets taken down" urgency that I did when I posted, but it still seems like a good idea to nudge my plans in the direction of being able to handle that particular scenario with minimal losses of what I find valuable.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 2
+:DateUnix: 1480797614.0
+:END:
+
+
+*** Eh, I wouldn't call it paranoid, but I don't think your fears are really founded. The Internet is mostly centralized around American infrastructures, but it still exists in the rest of the world, and back ups are a thing. The government has strong incentives to take down sites like The Pirate Bay or MEGA and haven't managed to do so definitively yet; Wikipedia is probably going to be fine.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 2
+:DateUnix: 1480803690.0
+:END:
+
+**** #+begin_quote
+  The government has strong incentives to take down sites like The Pirate Bay or MEGA and haven't managed to do so definitively yet
+#+end_quote
+
+I find this arguable. In this case, what you refer to as 'The government', I would reduce to 'That portion of the government under the influence of the lobbyists of the Movie And Film Industry Associations of America', which, while willing to throw its not-completely-insignificant weight around, can't leverage the weight of the whole American government. I'm thinking of scenarios such as 'It turns out China put secret backdoors into all sorts of hardware chips, and in a fit of self-righteous pique (which they think will play well to their red-state base), the war-monger side of the American Congress doesn't see any downsides to making a demand that everyone in the world shut down their supposedly Chinese-controlled hardware under threat that if they don't, they'll send the American military to shut it down'. As far as I can tell, several versions of just this one particular scenario don't obviously break the sociological law of every political actor having to act in what they perceive to be their own self-interest.
+
+However, I no longer trust my sense of calibration for the odds of large-scale politics, given that I was willing to go along with the predicted odds of 88% for Hillary winning the election, and didn't update nearly as much as I should have by the time of the election itself. And said lack of calibration puts a sharp limit on how rationally I can act as I decide how much effort to put into preparing for the more unpleasant scenarios.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 2
+:DateUnix: 1480809693.0
+:END:
+
+***** #+begin_quote
+  I no longer trust my sense of calibration for the odds of large-scale politics
+#+end_quote
+
+I'd like to point out that we update our beliefs based on our priors and likelihoods for difference scenarios. However, people were giving deliberately noisy data (or making other data noisy) which means that we couldn't get very accurate likelihoods on either candidate being president (too much contradicting evidence). This means that most people fell back onto their priors and supported whoever they would have supported before election or without any likelihoods to make a decision on, /or/ base their choice on one source of evidence aka whoever you got the 88% Hillary prediction from.
+
+TL;DR - Just because you had trouble with calibration for this election doesn't mean you are bad at calibration in general. The election would have been difficult for anyone.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1480987216.0
+:END:
+
+
+*** Less crazy than both of us wish I suspect.
+:PROPERTIES:
+:Author: Sagebrysh
+:Score: 2
+:DateUnix: 1480777856.0
+:END:
+
+
+** [[http://www.questionablecontent.net/view.php?comic=3362]]
+
+Officer /who/?
+
+(Note, I don't endorse or particularly enjoy this comic)
+:PROPERTIES:
+:Author: traverseda
+:Score: 3
+:DateUnix: 1480717374.0
+:END:
+
+*** #+begin_quote
+  I don't endorse or particularly enjoy this comic
+#+end_quote
+
+I read this comic for years until I came to the realization that I didn't enjoy it, and stopped.
+:PROPERTIES:
+:Author: GlueBoy
+:Score: 6
+:DateUnix: 1480725374.0
+:END:
+
+**** Lol same here
+:PROPERTIES:
+:Author: zarraha
+:Score: 2
+:DateUnix: 1480726980.0
+:END:
+
+
+**** Why let that stop you ;p
+:PROPERTIES:
+:Author: traverseda
+:Score: 2
+:DateUnix: 1480806640.0
+:END:
+
+
+*** The name doesn't seem to have anything to do with the plot. Why the reference?
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 1
+:DateUnix: 1480754808.0
+:END:
+
+**** It is a mystery.
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1480800974.0
+:END:
+
+
+**** Just a random cameo.
+:PROPERTIES:
+:Author: Anderkent
+:Score: 1
+:DateUnix: 1480885478.0
+:END:
+
+
+** I've been writing an autobiographical 21st century historical nonfiction serial novel, and was wondering if anybody might like to help beta read it? It's called Earthlings: People of the Dawn--Seeker's Quest. I've only written the first three "episodes" so far, but they're all kinda long.
+
+Thanks!
+:PROPERTIES:
+:Author: Sailor_Vulcan
+:Score: 2
+:DateUnix: 1480696296.0
+:END:
+
+*** If you want people to read it, can you provide a summary of the story? Also good luck writing it!
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1480725691.0
+:END:
+
+**** Well, it's kind of hard to summarize. But basically it's written with a future audience in mind, like, showing people of the future what life was like back in this time. It doesn't really have a strict main plot because the story is determined by events in real life. It's kinda like a journal, except in novel form.
+
+I call it 21st century historical nonfiction because it doesn't read like drama, but rather more like sci-fi/fantasy adventure. I suppose it's technically a drama but it doesn't fit with other works in that genre.
+:PROPERTIES:
+:Author: Sailor_Vulcan
+:Score: 1
+:DateUnix: 1480735567.0
+:END:
+
+
+** Are cheap [[https://www.youtube.com/watch?v=MQLDwY-LT_o][Orbital Ring Systems]] possible? I was reading [[http://orionsarm.com/fm_store/Paul%20Birch's%20Page.htm][Paul Birch's]] papers on the topic, and noticed he only bothered to consider really huge versions of the project. This seems to have spawned a myth that it would cost at least trillions of dollars for even a small one.
+
+Part of this is based on misinterpreting his paper (for example, the 31 trillion dollar figure mentioned in paper II is based on an inflated mass number since he quickly changes to a 1/1000th sized project for the next section, which would be launchable for 31 billion by the same math), but another issue is that he doesn't even consider smaller ones in the mass range of the ISS and other comparable space projects. The two scales he considers are 180 thousand ton and 180 million ton. Why not a 180 ton version?
+
+This strikes me as a big omission because ORS's have really fast minimal bootstrapping rates. Any business or government seriously trying to do it in real life would start with the smallest possible and work their way up to the desired scale by using it to launch the mass for successively larger versions.
+:PROPERTIES:
+:Author: lsparrish
+:Score: 2
+:DateUnix: 1480727145.0
+:END:

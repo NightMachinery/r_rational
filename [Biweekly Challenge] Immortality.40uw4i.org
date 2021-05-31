@@ -1,0 +1,540 @@
+#+TITLE: [Biweekly Challenge] Immortality
+
+* [Biweekly Challenge] Immortality
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 20
+:DateUnix: 1452729004.0
+:END:
+** Last Time
+   :PROPERTIES:
+   :CUSTOM_ID: last-time
+   :END:
+[[https://www.reddit.com/r/rational/comments/3yuejk/biweekly_challenge_paperclipper/?sort=confidence][Last time,]] the prompt was "Paperclipper". [[/u/ZeroNihilist]] is the winner with their story [[https://www.reddit.com/r/rational/comments/3yuejk/biweekly_challenge_paperclipper/cyj6t42][Satisfaction]], edging out a close field (close enough that reddit's imprecise vote totals made me refresh the page three times to be sure). Congratulations [[/u/ZeroNihilist]]! You are now tied with [[/u/Kishoto]] for most all-time wins!
+
+** This Time
+   :PROPERTIES:
+   :CUSTOM_ID: this-time
+   :END:
+the challenge will be "Immortality", one of the transhumanist goals and also one of those things that popular media tends to frown upon. It's a wide open field that ranges from Dorian Grey to the Fountain of Youth, emulated minds on fully redundant systems to angsty vampires. Remember, prompts are to inspire, not to limit.
+
+The winner will be decided *Wednesday, January 27th.* You have until then to post your reply and start accumulating upvotes. It is strongly suggested that you get your entry in as quickly as possible once this thread goes up; this is part of the reason that prompts are given in advance. Like reading? It's suggested that you come back to the thread after a few days have passed to see what's popped up. The reddit "save" button is handy for this.
+
+** Rules
+   :PROPERTIES:
+   :CUSTOM_ID: rules
+   :END:
+
+- 300 word minimum, no maximum. Post as a link to Google Docs, pastebin, Dropbox, etc. *This is mandatory.*
+
+- No plagiarism, but you're welcome to recycle and revamp your own ideas you've used in the past.
+
+- Think before you downvote.
+
+- Winner will be determined by "best" sorting.
+
+- Winner gets reddit gold, special winner flair, and bragging rights.
+
+- All top-level replies to this thread should be submissions. Non-submissions (including questions, comments, etc.) belong in the companion thread, and will be aggressively removed from here.
+
+- Top-level replies must be a link to Google Docs, a PDF, your personal website, etc. It is suggested that you include a word count and a title when you're linking to somewhere else.
+
+- In the interest of keeping the playing field level, please refrain from cross-posting to other places until after the winner has been decided.
+
+- No idea what rational fiction is? [[http://www.reddit.com/r/rational/wiki/index][Read the wiki!]]
+
+** Meta
+   :PROPERTIES:
+   :CUSTOM_ID: meta
+   :END:
+If you think you have a good prompt for a challenge, [[https://docs.google.com/spreadsheets/d/1B6HaZc8FYkr6l6Q4cwBc9_-Yq1g0f_HmdHK5L1tbEbA/edit?usp=sharing][add it to the list]] (remember that [[http://www.reddit.com/r/WritingPrompts/wiki/prompts?src=RECIPE][a good prompt is not a recipe]]). Also, if you want a quick index of past challenges, I've [[https://www.reddit.com/r/rational/wiki/weeklychallenge][posted them on the wiki]].
+
+** Next Time
+   :PROPERTIES:
+   :CUSTOM_ID: next-time
+   :END:
+Next time, by special request (and in honor of the new movie coming out) the challenge theme will be "Star Wars". It's your choice of Light Side or Dark Side, original trilogy or Old Republic era, Jabba or Jar-Jar. Please use spoiler tags appropriately, especially if you're using anything from the newest movie.
+
+*Next challenge's thread will go up on 1/27.* Please private message me with any questions or comments, as the beloved meta thread is now archived. [[https://www.reddit.com/r/rational/comments/40uy7j/challenge_companion_immortality/][The companion thread]] is also open for any discussion of other works or this week's theme.
+
+
+** [[http://eniteris.com/immortal][The Immortality of Anthony Weever]]
+
+2777 words
+:PROPERTIES:
+:Author: eniteris
+:Score: 28
+:DateUnix: 1452778395.0
+:END:
+
+*** #+begin_quote
+  "Thanks. I'll keep in touch."
+
+  I haven't seen him since.
+#+end_quote
+
+Dammit Anthony!
+:PROPERTIES:
+:Author: gabbalis
+:Score: 7
+:DateUnix: 1452972493.0
+:END:
+
+
+*** #+begin_quote
+  "Let me ask you a question. How many neurons are there in the human brain?"
+
+  "Uhh. Ten billion?"
+
+  "Close. Eighty-six billion, but let's round that to a hundred. Ten to the eleven. And how many different ways are there to network those neurons?"
+
+  My head began to spin. "I have no fucking idea. Wait, it's a graph problem, right? A hundred billion nodes, and each node can connect to any other. So for every pair of nodes, you have two possibilities, so it's...two to the power of a hundred billion choose two?"
+
+  "Yup. About two to the two-hundred ten. And that's what's stored on there."
+#+end_quote
+
+You've dropped an exponent somewhere. A hundred billion nodes, 10^{11}. Square that for the number of connections - so, 10^{22} connections. And each one can be on or off, so we need 10^{22} bits /to store a single brain/.
+
+Storing every possible and impossible brain is actually closer to 2^{10^{22}} bits.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 6
+:DateUnix: 1453941195.0
+:END:
+
+**** I've royally messed up my power rules. It's 2^{[10^{22}],} not (2^{10})^{22.}
+
+Actual calculations show you need 10^{20} yottabytes, or about a googlol^{4} bytes.
+
+Not like I was going into the implications of cheap memory storage anyways.
+:PROPERTIES:
+:Author: eniteris
+:Score: 6
+:DateUnix: 1453942401.0
+:END:
+
+***** That method goes completely overboard though. You're not going to have each neuron connect to 50 billion others.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 5
+:DateUnix: 1453950239.0
+:END:
+
+****** It's an upper bound. The size of the human brain is probably somewhere between a terabyte and a petabyte, depending on how you estimate it.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 2
+:DateUnix: 1454259677.0
+:END:
+
+******* #+begin_quote
+  It's an upper bound.
+#+end_quote
+
+So is Graham's number. That doesn't make it relevant when talking about the actual value.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 3
+:DateUnix: 1454269444.0
+:END:
+
+
+*** [[#s][Thoughts/Questions:]]
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 2
+:DateUnix: 1452982040.0
+:END:
+
+**** [[#s][Reply:]]
+
+[[#s][Neurons:]]
+
+[[#s][Passwords:]]
+
+[[#s][Other thoughts:]]
+:PROPERTIES:
+:Author: eniteris
+:Score: 3
+:DateUnix: 1452987096.0
+:END:
+
+***** (Each input synapse has its own strength, its own local receptor density, handling the 'weighting' of different inputs.)
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 2
+:DateUnix: 1453040521.0
+:END:
+
+
+***** The password concept is fundamentally flawed. If it is randomly generated, then there will be brains in the collection for every single outcome of the random generation, because it contains all brains that ever could be. If it is not randomly generated, at best it's a stand-in for life experience questions, and at worst, it's dummy information because of human's inability to be random.
+
+To specify one exact brain among all possible brains, you need exactly the information the brain contains. Passwords replace some of that information, but say little or nothing about the part you care about. (What is said is, for example, 'chose to memorise an x length password').
+:PROPERTIES:
+:Author: philip1201
+:Score: 2
+:DateUnix: 1454057353.0
+:END:
+
+****** It's not the best system; I've written a part that didn't make it in where it's a passphrase generated by mind (so it functions as a stand-in for life experience).
+
+Assuming that the "seed" of the brain's inability to be random is total life experience, the password that's generated serves as a shoe-in for multiple life events.
+:PROPERTIES:
+:Author: eniteris
+:Score: 1
+:DateUnix: 1454058348.0
+:END:
+
+
+** This is the Origin Story of the World's Most Normal Superhero: YOU.
+
+[[https://www.dropbox.com/s/2slwl064cbbpmx2/Twenty-Two%2C%20by%20Sailor_Vulcan.doc?dl=0][Twenty-Two]]
+
+1824 words
+
+I was inspired to write this after binge-reading "Strong Female Protagonist" for a few days. Enjoy!
+:PROPERTIES:
+:Author: Sailor_Vulcan
+:Score: 15
+:DateUnix: 1453140340.0
+:END:
+
+*** That last ending line got me. :'(
+:PROPERTIES:
+:Author: Kishoto
+:Score: 1
+:DateUnix: 1453168739.0
+:END:
+
+
+*** [[#s][]]
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 1
+:DateUnix: 1453269192.0
+:END:
+
+**** No. I wasn't thinking about that when I wrote this, only thought that someone might think of it, when I came up with the title. Is there a particular connection you're making here? Since you blacked out what you just said as if it was a spoiler alert. I looked up [[#s][spoiler?]], and I must not be seeing how it's a spoiler.
+:PROPERTIES:
+:Author: Sailor_Vulcan
+:Score: 1
+:DateUnix: 1453304888.0
+:END:
+
+***** [[#s][]]
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 1
+:DateUnix: 1453332851.0
+:END:
+
+****** Huh. The actual reason I chose it is that it's (presumably) [[#s][spoiler?]] I haven't seen the stats on that. Although it was kinda meant to be arbitrary.
+
+I thought the 25 thing was just an average? And isn't the average 25 for men and 24 for women or something? I'm fairly sure I remember learning that in a developmental psychology class in tenth grade, but it's been a long time.
+:PROPERTIES:
+:Author: Sailor_Vulcan
+:Score: 1
+:DateUnix: 1453383545.0
+:END:
+
+******* Yeah, it's an average.
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 1
+:DateUnix: 1453394943.0
+:END:
+
+
+** [[https://docs.google.com/document/d/19Ib-2cRTUJeMpQ2sLoSliCENTJg2s-e7lmXV3uCYVG0/edit?usp=sharing][Forget Me Not]]
+
+2687 words.
+:PROPERTIES:
+:Author: blasted0glass
+:Score: 7
+:DateUnix: 1453265948.0
+:END:
+
+*** [[#s][Great pacing; really well done.]]
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 3
+:DateUnix: 1453270043.0
+:END:
+
+**** As for the general means [[#s][]]
+:PROPERTIES:
+:Author: blasted0glass
+:Score: 2
+:DateUnix: 1453274096.0
+:END:
+
+***** I'll be curious to hear what you decide.
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 1
+:DateUnix: 1453333025.0
+:END:
+
+****** I reserve the right to change my mind later, and you might want to make up your own reasons because [[#s][(depressing spoiler)]]
+:PROPERTIES:
+:Author: blasted0glass
+:Score: 1
+:DateUnix: 1453915751.0
+:END:
+
+******* Never give up hope! Explore away!
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 2
+:DateUnix: 1453916173.0
+:END:
+
+
+*** Poignant!
+
+[[#s][Noticing confusion:]]
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 3
+:DateUnix: 1453892279.0
+:END:
+
+**** I'm glad you noticed. I like the idea of making it a rationalist exercise--can you think of the answer before I tell it to you? [[#s][hint]]
+
+As for your second question: [[#s][Animals]]
+
+Finally, to fully answer your first question and to elaborate on [[#s][mechanics:]]
+:PROPERTIES:
+:Author: blasted0glass
+:Score: 2
+:DateUnix: 1453915082.0
+:END:
+
+***** [[#s][]]
+
+[[#s][]]
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 2
+:DateUnix: 1453996579.0
+:END:
+
+****** [[#s][]]
+:PROPERTIES:
+:Author: blasted0glass
+:Score: 1
+:DateUnix: 1454054015.0
+:END:
+
+
+*** That was incredible.
+:PROPERTIES:
+:Author: Revisional_Sin
+:Score: 2
+:DateUnix: 1453405896.0
+:END:
+
+
+** [[https://docs.google.com/document/d/19_KhQjt95s6OTOxFxXc-bqNRTfFHZ810SqbT09jjq3Q/edit][Holes in Sheaves.]]
+
+2048 words.
+
+TW: suicide.
+:PROPERTIES:
+:Author: Calamitizer
+:Score: 12
+:DateUnix: 1452736856.0
+:END:
+
+*** This story confuses me a bit. I don't understand, how is our protagonist immortal? I get that he built some machine that would kill him rapidly. I just....don't really understand how his consciousness persisted. Scratch that, I understand very little. /Period/. Author, mind giving me an abbreviated, layman's version of what's going on? :P
+:PROPERTIES:
+:Author: Kishoto
+:Score: 2
+:DateUnix: 1452819189.0
+:END:
+
+**** Suppose you set up a device so that after a quantum event, there is a 1/2 chance of you being killed.
+
+In the multiple worlds interpretation, both (you being killed, and you not being killed) happen.
+
+Then (the living you) runs the experiment again. The dead you does nothing... he's dead. After this experiment, two of y'all (that's the correct plural form of "you" right?) have died (the death from the first experiment, and the death from the second experiment). Only one out of the three of y'all have lived (the one who survived the first and second experiment).
+
+It continues from there.... Each time you run the experiment, there is another universe where you die, and another universe where you live. This happens /regardless of how many times you run the experiment./ So, even if you run it 1000 times, and your "probability of surviving" is only 1/2^{1000} , you're still guaranteed to survive (as well as die a 1000 times in different universes).
+
+There will /always/ be someone who survives the experiment, and from their perspective, they're un-killable.
+
+It's like "The Prestige." Every time he makes a clone, he has an equal chance of being the drowning clone, or being the transported clone, but /there's always a transported clone who doesn't drown./ The transported clone /feels/ like they're invincible (or really lucky), but there was no other option. Their existence was inevitable.
+:PROPERTIES:
+:Author: electrace
+:Score: 5
+:DateUnix: 1452838972.0
+:END:
+
+
+**** [[https://en.wikipedia.org/wiki/Quantum_suicide_and_immortality][Here's]] a good page to read first. Let me know if you have any questions after that!
+:PROPERTIES:
+:Author: Calamitizer
+:Score: 1
+:DateUnix: 1452819901.0
+:END:
+
+***** So what's with the coma stuff? I kind of get that he will survive no matter what, but why do his deaths invariably lead to comas, and why doesn't his world retain awareness of him, if he's just living all the time? Or, better question, why does he?
+:PROPERTIES:
+:Author: Kishoto
+:Score: 1
+:DateUnix: 1452865058.0
+:END:
+
+****** Well, let me ask you to brainstorm some ways that one's subjective experience might exist after a suicide attempt. N.B. that isn't, strictly speaking, the same as /living/.
+
+By saying a coma is more likely that directly surviving the attempt, what I mean by that is that there are more universes in which our protagonist was in a coma (truly, literally, not a fauxma) than in which (s)he survives.
+
+Does that make any more sense?
+:PROPERTIES:
+:Author: Calamitizer
+:Score: 2
+:DateUnix: 1452871356.0
+:END:
+
+******* I see what you're getting at, I'm still at a loss as to how their memory of said events is preserved during these changes in perspective. As he said, the protagonist doesn't survive being shot by a shotgun on an overpass. Hence he "wakes up" in a coma world. I get how we are essentially world skipping. I just don't understand how our protagonist retains his memories, as that's a physical component of us.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 1
+:DateUnix: 1452886974.0
+:END:
+
+******** Ignore all quantum whatever and ignore many worlds for a moment, and let's talk about one totally mundane timeline. Imagine a universe in which the protagonist's life continues as it did before, say, they build the machine. Then at some point they get into a car crash, enter a coma, forget about the crash, and proceed to build an insane, delusional quantum killbox. They fantasize (within the coma) that they are immortal, the events of the story happen, suicide attempts are made and fail (within the coma), then eventually, after one of the attempts, they wake up. None of it really happened since the crash; they've been lying in a hospital bed. They retain their memories because why wouldn't they? After waking up from a coma, the internal events you experience might lose focus and become blurry, but it's implied that the narrator is losing their grip on reality and losing count of the number of breaks.
+
+Does it seem to you that this is a possible and self-consistent chain of events?
+
+If so, then in the logic of this story, that's sufficient for there to be a timeline in which it happens. That means waking up from a coma is one conceivable way to survive a suicide attempt, in the framework of quantum immortality.
+:PROPERTIES:
+:Author: Calamitizer
+:Score: 5
+:DateUnix: 1452888008.0
+:END:
+
+********* Until this comment, I didn't understand your story at all. It took me this long because this is the first time you've mentioned /dreaming/, which is the missing piece I needed. I had no idea why you thought comas were relevant to anything! (I still don't, actually. Why aren't normal dreams sufficient?)
+
+When I first read it, I interpreted it as though they attempted suicide resulting in brain damage that left them in a coma, such that when they recover... they still attempted suicide. And I had no idea what they were talking about with "wiping the slate clean", except that apparently it worked anyway? The train/car discrepancy just read like nonsense.
+
+This may be due to my own thoughts on quantum immortality. I think that brain damage is obviously the most likely outcome of most quantum-failed suicides. I never thought that in the story, that might not be true, which may not be your fault.
+:PROPERTIES:
+:Author: Anakiri
+:Score: 2
+:DateUnix: 1452891708.0
+:END:
+
+
+********* Alright. That refines my understanding even more. Of course, At this point, I question whether his internal narrative can be consistent enough to simulate the entire world like that, but, assuming quantum whatever, there HAS to be some world in which his coma based delusions matched exactly the events he experienced pre death number whatever. It's unlikely as all balls, but flipping the bird to probability is kinda the whole point of quantum Immortality.
+
+Conclusion: I get it now, a lot more. And this mofo (protag) is crazy as shit. Also, let's shed a tear for the many, many +drowned clones+ alternate versions of our /hero/.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 1
+:DateUnix: 1452888955.0
+:END:
+
+********** Glad to hear it! And yeah, fuck probability, I'm immortal is the sentiment of QI.
+:PROPERTIES:
+:Author: Calamitizer
+:Score: 1
+:DateUnix: 1452891979.0
+:END:
+
+
+********* 'If you're still alive, then you're alive in a reality where you didn't die'--in the coma version, the coma dream must match the protagonist's experiences up until that point, but why does the level above match your dreamed past to such a degree? Looking at it slightly differently, if you have a three-level state where you go into a coma in reality, you have a coma dream, and then within that you have a second coma-dream which mirrors reality, then why should the middle-layer coma dream mirror reality as well rather than being something completely different?
+
+From yet another direction--if it's a coma dream anyway, then given the unlikelihood of a suicide attempt actually freeing you from your coma, then why not 'you survived stabbing yourself because it's a coma dream, you're still dreaming, and the metal knife just bent like rubber in your dreamworld'? <thinking about the consistent propensity for death of the protagonist's loved one>
+
+(<contemplates Yudkowsky's 'The Finale of the Ultimate Meta Mega Crossover' (regarding breaking upwards) and Greg Egan's 'Permutation City' (minds persisting through random dust)>)
+
+(Without the coma break option, I note that the endeavour would be subjectively ended by unsurvivable things, similarly to natural lifespan if attempted a number of centuries before a bypass could be acquired... though who's to say whether some incredibly improbable universes out there have benevolent AIs spontaneously forming from random pair creation and rushing to save people's lives...)
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 1
+:DateUnix: 1452982893.0
+:END:
+
+
+*** Quantum is the worst form of immortality, and you didn't even explore aging.
+:PROPERTIES:
+:Author: Meneth32
+:Score: 1
+:DateUnix: 1452778859.0
+:END:
+
+
+*** I don't understand the significance of being in a coma in the context of quantum immortality. Waking up as someone else?
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: 1
+:DateUnix: 1452799145.0
+:END:
+
+**** The idea is that, if you perform a particularly grisly suicide attempt, it's less likely that you would survive "straightforwardly" and more like some other continuation occurs. There's this notion of the universe seemingly inventing "excuses" as to why you keep living.
+:PROPERTIES:
+:Author: Calamitizer
+:Score: 2
+:DateUnix: 1452843876.0
+:END:
+
+
+** [[http://pastebin.com/44M5Bh3d][Beautiful Oasis]]
+
+666 words
+:PROPERTIES:
+:Author: hoja_nasredin
+:Score: 3
+:DateUnix: 1453118153.0
+:END:
+
+
+** [[http://pastebin.com/S0aWmYsL][The Archive]]
+
+1248 words.
+:PROPERTIES:
+:Author: jkwrites
+:Score: 3
+:DateUnix: 1453584714.0
+:END:
+
+*** [[#s][]]
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 1
+:DateUnix: 1453589896.0
+:END:
+
+
+** [[http://pastebin.com/3CZaSi2w][The Formulator]]
+
+2098 words.
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 2
+:DateUnix: 1453640160.0
+:END:
+
+*** Is there a sequel? Or is[[#s][]]
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 1
+:DateUnix: 1453694936.0
+:END:
+
+**** [[#s][Non-sequal question:]]
+
+[[#s][Sequel question:]]
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 1
+:DateUnix: 1453701466.0
+:END:
+
+***** Thanks! I must say you rather piqued my interest as to their origin.
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 1
+:DateUnix: 1453749705.0
+:END:

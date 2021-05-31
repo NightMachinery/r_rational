@@ -1,0 +1,117 @@
+#+TITLE: Unsong Easter Egg Spoiler Log (Finally) Released!
+
+* [[https://unsongbook.com/tosefta/][Unsong Easter Egg Spoiler Log (Finally) Released!]]
+:PROPERTIES:
+:Author: istandleet
+:Score: 43
+:DateUnix: 1562161993.0
+:END:
+
+** [deleted]
+:PROPERTIES:
+:Score: 23
+:DateUnix: 1562164321.0
+:END:
+
+*** Since this is the spoiler thread, I'll point out this little bit of code lives about two-thirds down in this file:
+
+[[https://bakkot.github.io/SlateStarComments/ssc.js]]
+
+(For those who speak even less JavaScript than me: It goes through the HTML structure of the page, finds instances of either spelling in the text, then for each one it picks one spelling or the other half the time.)
+:PROPERTIES:
+:Author: fubo
+:Score: 17
+:DateUnix: 1562165316.0
+:END:
+
+**** That's fantastic.
+:PROPERTIES:
+:Author: SeekingImmortality
+:Score: 6
+:DateUnix: 1562170190.0
+:END:
+
+
+**** Specifically this chunk of code:
+
+#+begin_example
+  if(location.host==='unsongbook.com'){(function(){var n,walk=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,null,false);
+  while(n=walk.nextNode())
+      n.textContent=n.textContent.replace(/Berenst(a|e)in/g,function(m){
+          return Math.random()<.1?m:(Math.random()<.5?'Berenstain':'Berenstein');
+      }).replace(/BERENST(A|E)IN/g,function(m){
+          return Math.random()<.1?m:(Math.random()<.5?'BERENSTAIN':'BERENSTEIN');
+     });
+  }());}
+#+end_example
+
+which randomly picks between =BERENSTAIN= and =BERENSTEIN=
+:PROPERTIES:
+:Author: Crimethinker
+:Score: 3
+:DateUnix: 1562225895.0
+:END:
+
+***** Ha, but it only does it 1/10th of the time.
+
+Also it only detects Berenstain and BERENSTAIN, so you could get around this thing by using any other capitalization.
+:PROPERTIES:
+:Author: IICVX
+:Score: 1
+:DateUnix: 1562251846.0
+:END:
+
+****** If I'm reading correctly it is 10% stay the same
+:PROPERTIES:
+:Author: istandleet
+:Score: 1
+:DateUnix: 1562262759.0
+:END:
+
+
+*** I don't know if you're aware of this, but there's a fascinating conspiracy theory based on that - [[https://old.reddit.com/r/MandelaEffect/]]
+
+A bunch of people believe we crossed over to a parallel universe because their memories about stuff like Berenstain Bears don't match the reality.
+
+#+begin_quote
+  The Mandela Effect. The theory states that shared false memories are in fact glimpses into parallel worlds with different timelines and was named by writer and "paranormal consultant" Fiona Broome based on the fact that thousands of people apparently remember Nelson Mandela dying in prison in the '80s despite having been released from prison in 1990 and going on to become president of South Africa. Mandela didn't actually pass away until 2013.
+#+end_quote
+:PROPERTIES:
+:Author: lumenwrites
+:Score: 6
+:DateUnix: 1562181047.0
+:END:
+
+
+** #+begin_quote
+  After I published this chapter I got an email from a reader who lived in Palo Alto in a group house called Ithaca and who was really freaked out and wanted to know if I was writing about her. I had to convince her it was just a coincidence.
+#+end_quote
+
+lol
+:PROPERTIES:
+:Author: jimbarino
+:Score: 8
+:DateUnix: 1562195356.0
+:END:
+
+*** Her name ? Erica, of course.
+:PROPERTIES:
+:Author: JesradSeraph
+:Score: 1
+:DateUnix: 1562404179.0
+:END:
+
+**** "This is not a coincidence because nothing is ever a coincidence."
+:PROPERTIES:
+:Author: tender_steak
+:Score: 1
+:DateUnix: 1562987379.0
+:END:
+
+
+** The name of Magdebuena was probably supposed to be Maduegbuna, and is taken from [[http://www.babynology.com/nigerian_babynames.html][this great list]], which he [[http://slatestarscratchpad.tumblr.com/post/120974740041/very-strangely-translated-nigerian-baby-names][reblogged]] at some point.
+:PROPERTIES:
+:Author: Shemetz
+:Score: 3
+:DateUnix: 1562247849.0
+:END:

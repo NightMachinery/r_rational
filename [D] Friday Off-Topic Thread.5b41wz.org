@@ -1,0 +1,1904 @@
+#+TITLE: [D] Friday Off-Topic Thread
+
+* [D] Friday Off-Topic Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 17
+:DateUnix: 1478271878.0
+:END:
+Welcome to the Friday Off-Topic Thread! Is there something that you want to talk about with [[/r/rational]], but which isn't rational fiction, or doesn't otherwise belong as a top-level post? This is the place to post it. The idea is that while reddit is a large place, with lots of special little niches, sometimes you just want to talk with a certain group of people about certain sorts of things that aren't related to why you're all here. It's totally understandable that you might want to talk about Japanese game shows with [[/r/rational]] instead of going over to [[/r/japanesegameshows]], but it's hopefully also understandable that this isn't really the place for that sort of thing.
+
+So do you want to talk about how your life has been going? Non-rational and/or non-fictional stuff you've been reading? The recent album from your favourite German pop singer? The politics of Southern India? The sexual preferences of the chairman of the Ukrainian soccer league? Different ways to plot meteorological data? The cost of living in Portugal? Corner cases for siteswap notation? All these things and more could possibly be found in the comments below!
+
+
+** I was starting to plan out a (more) rational /Timeless/ fanfic, but kept getting hung up on how to model their version of time travel. So I went searching and found [[https://www.reddit.com/r/rational/comments/3f21i6/bst_ripple_effect_time_travel/?ref=search_posts][this post]] which sounded almost exactly like what I was thinking of ... only to realize that I was the one who had written it, and was asking for help with the same thing I'm struggling with now. :(
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 16
+:DateUnix: 1478273280.0
+:END:
+
+*** I only watched the pilot for Timeless and found it just okay. The underwhelming tv show I want to see rational fic for is The Librarians. That was a series that had a ton of imagination and occasional moments of brilliance, but could've been so much better. As is, it's just a goofier Warehouse 13 with less entertaining characters.
+:PROPERTIES:
+:Author: trekie140
+:Score: 2
+:DateUnix: 1478275778.0
+:END:
+
+**** I want to write a Timeless fanfic mostly because there's a lot of potential for existential dread, values dissonance, etc. You start with "the past is a foreign country" and then move toward "the present is a foreign country". I'm still figuring out what the punchlines would be though, and I would rather have a time travel model that makes /rational/ sense rather than just /intuitive/ sense.
+
+I agree that the show is mostly just okay, but I think that the supposed core mission of "preserve America" is a wonderful setup for a story that's about what America /is./ If the show grew some balls that might be what they would do, but I doubt that network television is the place for anything more than a whitewashing of history.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 5
+:DateUnix: 1478276614.0
+:END:
+
+***** That sounds like it could make for a very interesting story and philosophical conversations, particularly the question of self righteous altering of history. I think the way you could rationalize the time machines is by changing the relationship between the two machines so that they both leave and arrive at the some moment, and give the machines a 24 hour priming for launch that the heroes can detect. You'd have to rework the pilot to explain how the villains got the machine, but I think it'd work.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1478281924.0
+:END:
+
+
+*** Off-topic, but any words on the Glimwarden schedule? I do miss it, and havent seen any news as to what happened.
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 2
+:DateUnix: 1478333731.0
+:END:
+
+**** It'll be coming back after National Novel Writing Month is done. I just sort of got off rhythm, which makes it hard to get back on rhythm. I've never done gymnastics, but when they're doing their routine and screw up once, then they screw up again, and the mistakes keep piling up because they're a bit rattled, so then they have to stop and center themselves before starting up again. That's sort of what I'm trying to do here, because I got off my rhythm, which leads to words coming out slowly, frustration with the words coming out slowly, second-guessing what I've written because clearly if the words came out slowly the viscosity of the words is wrong, wanting to write other words about different things, etc.
+
+So I have the vast majority of the next chapter written, but it's going to be a while until I know that I can move forward at a decent clip, and will definitely be after /The Dark Wizard of Donkerk/ is done.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1478362195.0
+:END:
+
+***** Sweet news. Am excited for the fruits of Novembre!
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 2
+:DateUnix: 1478424395.0
+:END:
+
+
+*** 2020 called, [[/u/alexanderwales]] wants to know if you've solved that time travel problem yet.
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 1
+:DateUnix: 1478401691.0
+:END:
+
+
+** Weekly update on my rational pokemon game, including work on the data creation tool Bill's PC. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=drive_web][Handy discussion links and previous threads here]].
+
+--------------
+
+So I missed last week, as my phone committed hara-kiri and I'm still waiting for the replacement to head in. [[/u/InfernoVulpix]] covered the update at least.
+
+This week involved a lot of research into voxel systems and brushing up on my hex grid library of choice, which recently went through a major version change. The unity project for the hex map prototype technically exists, but there's nothing to show besides an empty scene. Reading up on how to create a voxel system based on hexes rather than cubes has taken more time than I anticipated; the ‘tons of literature' that I was lead to believe existed on the internet is more concerned with whitepaper algorithms and/or code dumps, where what I need is more a bird's eye overview. So oh well, guess it's down to reading code to learn again.
+
+I've actually also spent some time tinkering with a command-line prototype of the NPC conversation/opinion/notoriety system, which hasn't borne a whole lot of fruit yet but lets you define cities of variable numbers of people with randomized names and connections. We'll see how far this can get in isolation from any other systems.
+
+The majority of the /visible/ work I've done this week is on the feature roadmap. It was quite a mess previously, with sections but no real organization. [[https://docs.google.com/document/d/13e4bMBgsvshUBFShes2bG3RGXIzVYh16EPboqDTdpfA/edit?usp=drive_weband][It now has a bit more order to it]] has been fleshed out significantly more. Everything down to section 15 is effectively complete, with the rest still pending. Once the rest has been finished getting cleaned up, I'll have a better foundation to build the Software Requirements document on, as well as the Design Document 2.0.
+
+Some of the discussion highlights from [[https://docs.google.com/document/d/1-BBPJoGaMDwAsxP9lYNLyARKCGI9pZGLXf2x-IgWbfs/edit?usp=drive_web#heading=h.swbifc8jeyfw][this past week's Discord discussion]]:
+
+- We decided that vision will be handled in two parts: Perception will be a stat for all units that defines a small circle around the unit, maybe ~5 hexes or so on average. This will abstract out hearing, smell, and situational awareness, etc. A second Sight stat will determine how far the unit sees in front of it, with a cone extending in the direction the unit is facing. This naturally requires that we track which direction units are facing, which may or may not be an issue, especially with multiple heads. But it seems like a good starting point.
+
+- We put together the bare-bones design for a move association system, whereby an attack can be associated as a response to a particular incoming attack. This may or may not turn out to be too complicated.
+
+- We decided that trains probably aren't a thing if businesses built around teleportation of goods ever gained traction.
+
+- We divided TMs into TMs and HMs: TMs will now be strictly the pokedex simulation “training video” that teaches how to use an unknown move, while HMs are actual vials or syringes that contain the ability to add organs that the pokemon does not have by default. HMs will not be content gates, and while you would have a Flamethrower TM, it won't do you any good if you don't also have the Oil Gland HM.
+
+--------------
+
+Feel free to leave any comments or questions below! Also feel free to join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]] for brainstorming and discussion. It's a great group, really, and I would highly recommend hanging out, even if you're not in it for this project itself. There's tabletop groups, Dota 2 partying, and [[http://i.imgur.com/j3jRmMZ.png][puns]] like you wouldn't [[http://i.imgur.com/8cUkzoGl.jpg][believe]]. Come join us!
+:PROPERTIES:
+:Author: ketura
+:Score: 15
+:DateUnix: 1478274755.0
+:END:
+
+*** Does this mean that, in an inversion of canons, HMs are single-use and TMs have unlimited uses?
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 4
+:DateUnix: 1478284166.0
+:END:
+
+**** Ha, you know what, I hadn't thought of that, but that's exactly what it means. Funny how nature do dat.
+:PROPERTIES:
+:Author: ketura
+:Score: 4
+:DateUnix: 1478284332.0
+:END:
+
+
+** Man, this election is some fucked up shit.
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 22
+:DateUnix: 1478272502.0
+:END:
+
+*** Here are the latest odds from the bookmakers:
+
+*Clinton is the next president: 3/10 (short) odds, or ≤77% chance of Clinton being the next president.*
+
+*Trump is the next president: 5/2 (long) odds, or ≤28% chance of Trump being the next president*
+
+So, it's generally expected that Clinton is the next president, but it's totally plausible that Trump wins. Since this adds up to 105%+, you can tell they're shortening the odds to make a profit. These predictions are from a standing start, not contingent on anything in the future, and the odds change over time, etc. The bookies also give Sanders ≤2%, Biden ≤1%. I'll be interested to see how things turn out.
+
+I hope that Trump does not win, because I think he will likely not be a good president for a variety of reasons. In retrospect, I was too hard on Bush, McCain, and Romney. Although I disagreed with their policies, I never doubted they wanted to do the right thing and help America. They weren't the enemy, just the opposition. Trump, though... sheesh, man. You know, I don't think he'll as bad as people say on some things (like I don't think he'll actually use nukes) but I think it will still be a bad presidency. A lot of the president's job is like super boring shit like appointing people to run various government agencies and making sure the right hand knows what the left hand is doing and attending complicated annoying staff meetings all the time. I can't imagine Trump will have the patience to deal with this effectively, or the humility to appoint and listen to smart secretaries and staffers. If he wins, though, I hope he proves me wrong.
+
+I do notice that there is a strong sentiment on some parts of the internet against Hillary Clinton because she is a very Washington-insider, business-as-usual candidate. "Too moderate," complain the Democrats. "Too corrupt," complain the centrists. "Literally the Devil," complain the Republicans. They're not wrong. Well, she's not literally the Devil but this isn't the actual complaint the Republicans have. And I do see why some people complain about her. Nonetheless, I voted for her in the primary over Bernie Sanders, because I didn't like Sanders' policies and I don't think he'd do nearly as good a job. I also voted for her in the primaries in 2008. As far as I can tell, Clinton will be a fine president if she wins. She's smart, tenacious, wonkish, centrist, and ambitious. I'll be voting for her on Tuesday.
+
+Make sure to turn out and vote, everyone! If you are an American, it is your civic duty. As a citizen, you are entrusted with the power to cast a vote, and you have an obligation to exercise it.
+
+EDIT: fixed a typo in the odds
+:PROPERTIES:
+:Author: blazinghand
+:Score: 21
+:DateUnix: 1478294413.0
+:END:
+
+**** #+begin_quote
+  In retrospect, I was too hard on Bush, McCain, and Romney. Although I disagreed with their policies, I never doubted they wanted to do the right thing and help America. They weren't the enemy, just the opposition.
+#+end_quote
+
+Did we live through the same Bush administration? I can believe that he believed in what he did. That doesn't really change the fact that what he did was /atrocious/.
+
+I mean, he basically started out in office by passing a bunch of tax cuts I don't like, /scuttling the Kyoto Treaty after we'd already signed it/, encouraging consumerism as a response to the dot-com bubble collapse, and then /starting a bunch of aggressive wars and encouraging consumerism as a contribution to the war-effort while cutting more taxes during wartime/. While also doing a bunch of other stuff I don't like personally and passing /massive/ restrictions on civil liberties, including consolidating all internal security agencies (ie: what other countries rightly regard deeply corrupt agencies with totalitarian tendencies) into one big department (ie: one /big/ deeply corrupt agency with totalitarian tendencies /and no civil-liberties laws to stop them/).
+
+Like, Bush was the guy who told the librarians to start handing over people's /public-library borrowing records/ so his government could check for /terrorists/, by which he meant leftists.
+
+Bush was objectively really fucking bad. It was under Bush that I had to hold my breath so a random guy in a mosque in my area wouldn't be convicted in a weapons trafficking "sting" that was /clearly/ entrapment. Luckily, the local Civil Liberties Union actually had our acts together, and so the case /was/ eventually thrown out as entrapment. By which I mean, under Bush, the FBI entrapped rando Muslims into weapons trafficking so it would have "terrorists" to hunt.
+
+And as far as anyone knows, none of this shit was ever rolled back under Obama. Mind, I thought Romney was pretty damned evil, but just, you know, /bourgeois/ evil, without as much of the god-bothering imperialist mayhem that made the Bush years so /exciting/.
+
+#+begin_quote
+  Make sure to turn out and vote, everyone! If you are an American, it is your civic duty. As a citizen, you are entrusted with the power to cast a vote, and you have an obligation to exercise it.
+#+end_quote
+
+Your vote controls less than one bit of entropy.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1478316227.0
+:END:
+
+***** Some reasonable opinions! I don't feel like engaging about them here, but you seem well-informed and educated. I hope, if you are American, that you vote!
+
+About this last bit:
+
+#+begin_quote
+  Your vote controls less than one bit of entropy.
+#+end_quote
+
+This isn't what voting is about for me. As I said elsewhere:
+
+#+begin_quote
+  In terms of an individual vote affecting an outcome, voting doesn't matter. But, bear in mind what I said! I didn't say you should vote so you could change the election; I said to vote because it is your civic duty as an American. As a citizen, you're entrusted with the power to vote. You have an obligation as a citizen of this republic to exercise it. Not a legal requirement, but a civic duty. Not a self-interested reason, or a belief that a single vote would sway the outcome, but a duty. That's what it means to be a citizen in this republic, in my view. That's why I vote, that's why I encourage my friends and family to vote, and it's why I'm an election officer. I take great pride in this civic duty.
+#+end_quote
+
+If the only reason you would want to vote is uh, controlling bits of entropy (do you mean having an affect on election outcomes? I didn't understand this, but assume that's what you mean) then yeah, voting isn't a good idea. If you like fulfilling civic duty and feel good about that, and also believe that casting an informed vote is your civic duty, then voting is a great idea. This is how I feel, and why I vote, and I'd like to think that it's on the backs of people like me that our democratic system rests, which makes me feel even better about voting! It's pretty great actually.
+:PROPERTIES:
+:Author: blazinghand
+:Score: 1
+:DateUnix: 1478423961.0
+:END:
+
+
+***** #+begin_quote
+  Your vote controls less than one bit of entropy.
+#+end_quote
+
+Okay. But consider the huge budgets the US government controls. [[https://80000hours.org/2016/11/why-the-hour-you-spend-voting-is-the-most-socially-impactful-of-all/]]
+:PROPERTIES:
+:Author: rhaps0dy4
+:Score: 1
+:DateUnix: 1478556009.0
+:END:
+
+****** Ok, so to clarify: I am /not/ saying not to vote. That less than one bit is /still/ some finite amount of entropy you actually control. Damn well use it! What I more meant was: if you /really care/ about political outcomes, you need to be intervening /faaaaar/ upstream where it counts more.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1478563583.0
+:END:
+
+
+**** #+begin_quote
+  Although I disagreed with their policies, I never doubted they wanted to do the right thing and help America. They weren't the enemy, just the opposition. Trump, though... sheesh, man.
+#+end_quote
+
+This is now the 4th Presidential election I have paid close attention to. This is said every time, about every Republican candidate, to the point where it is now a cliche. It's possible you're an introspective unicorn (much more likely than average, given what I've seen of you, base modifier for membership in this community, etc). But there's something eyeroll worthy about watching people (who cried "Bushitler!", who declared the selection of Palin as VP the functional equivalent of /treason/, and who savaged Romney as a poor-murdering plutocrat extremist) suddenly realize that they have no room left to escalate their rhetoric against Trump.
+
+Disclosure: I am voting Johnson, but I think Trump's [evil * ability to enact evil] <<< Hillary's [evil * ability to enact evil].
+
+Counterpoint to your final note: In all but the smallest, most local elections, any individual vote is staggeringly unlikely to matter. I believe that the best justification for spending the time to do so is to enable the right to complain afterwards. If this is not an important factor to you personally, then remember to vote IFF there is nothing you could be doing with your time that would be more useful to anyone.
+:PROPERTIES:
+:Author: Iconochasm
+:Score: 5
+:DateUnix: 1478309163.0
+:END:
+
+***** Yeah, one of the things that make politics so hard is that everyone wants to be superlative at all time. The opposition candidate is never "not that bad, but clearly worse than my favorite candidate", they're THE WORST CANDIDATE EVER AND THE MOST CORRUPT AND THE MOST EVIL.
+
+When Trumps says something about vets who commit suicide because they think they're tough but they can't take it, it's not "a clumsy statement from a good sentiment", it's Trump being the worst person ever. When Hillary says she might impose a no-flight zone over Syria, OH NO SHE WILL SHOOT DOWN RUSSIAN PLANES AND START WORLD WAR III.
+
+This sucks because it creates an enormous amount of noise that make it really, really hard to find actual signals, and in particular it makes it way harder to spot /actual/ superlatively bad statements, like Trump saying he might shoot down Iraqi boats for taunting American warships (which sounds even worse in context).
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 5
+:DateUnix: 1478348339.0
+:END:
+
+
+***** I was definitely a big anti-fan of Bush, but I was a young man at the time. I liked McCain much better than Bush but didn't like his pick of VP and figured he was old enough it might matter. I actually liked Romney quite a bit, though I still gave him no small amount of shit for turning around on Obamacare's concepts. I thought he was better than McCain or Bush, since he was far more centrist, and certainly he was the smartest of the three. The reason I gave for voting for Obama in 2012 was twofold; one, Romney, although a reasonable guy, would still be beholden to the Republican party with which I disagree on many issues. The other reason is outlined [[http://ordinary-gentlemen.com/2012/11/02/four-more-years-with-head-held-high/][here]].
+
+So in my view I guess each new Republican nominee was better than the last, until Trump came along. I don't feel like I've been gradually saying each Republican is worst than the last, since it seems like the opposite is the case. I know there are whiners who always say "this is the worst Republican ever" but they're just not correct (except this time).
+
+About voting mattering, I agree with what you're saying. In terms of an individual vote affecting an outcome, voting doesn't matter. But, bear in mind what I said! I didn't say you should vote so you could change the election; I said to vote because it is your civic duty as an American. As a citizen, you're entrusted with the power to vote. You have an obligation as a citizen of this republic to exercise it. Not a legal requirement, but a civic duty. Not a self-interested reason, or a belief that a single vote would sway the outcome, but a duty. That's what it means to be a citizen in this republic, in my view. That's why I vote, that's why I encourage my friends and family to vote, and it's why I'm an election officer. I take great pride in this civic duty.
+:PROPERTIES:
+:Author: blazinghand
+:Score: 4
+:DateUnix: 1478310462.0
+:END:
+
+****** If you don't believe you're qualified to pick the person who runs the country, is it still your civic duty?
+
+Personally I think anyone who is truly undecided should just stay home rather than cast a vote without being fully committed to the decision.
+
+I'm not saying a person has to perfectly sure that they're making the right choice in a candidate (or on any other issue). But I don't think we should pressure people into voting if they don't have an understanding of the issues, or if they don't really have much preference even after understanding the issues.
+
+If you don't care or you're not sure, you really shouldn't be voting.
+:PROPERTIES:
+:Author: Fresh_C
+:Score: 6
+:DateUnix: 1478312223.0
+:END:
+
+******* Thank you! Everyone talks about this civic duty as if it's an inherent truth of democracy that everyone must vote. I think the system would probably run a lot smoother if there were some sort of lottery that chose a small portion of people, and then those people would do all of the research and look carefully and then vote, and everyone else stayed out of it. If you get chosen 1/100 of the time, but your vote carries 100 times as much weight (because only 1/100 of other people are voting) then on average you have the exact same amount of influence you do in the current system. We could do this for any fraction, so long as the number of voters is sufficiently large to avoid significant statistical noise.
+
+This wouldn't actually work, but the reason isn't because it's a bad system, but because people would refuse to accept it. Most people don't understand expected values and the idea of having a nonzero amount of actual value keeps people pacified even when things they don't like happen. The percentage system doesn't "feel" good or fair to the people who go their whole lives without being selected, even though in the current system your vote won't swing the election anyway.
+:PROPERTIES:
+:Author: zarraha
+:Score: 4
+:DateUnix: 1478319210.0
+:END:
+
+
+****** I can appreciate that sentiment. When not living up to my name, I'd encourage people who "hate 'em all" to write in themselves.
+:PROPERTIES:
+:Author: Iconochasm
+:Score: 1
+:DateUnix: 1478310860.0
+:END:
+
+
+**** I think a Trump presidency would result in fewer overseas civilians killed and much more turmoil domestically. The economy is going to crash regardless, but a Trump victory will trigger it immediately.
+:PROPERTIES:
+:Author: Polycephal_Lee
+:Score: 2
+:DateUnix: 1478300746.0
+:END:
+
+***** [[http://slatestarcodex.com/2016/10/01/he-kept-us-out-of-war/][Scott Alexander had a good post]] about Trump as interventionist, which sums up a lot of my thoughts on the matter.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 8
+:DateUnix: 1478301666.0
+:END:
+
+****** As much as I generally like SSC, that post is woefully inadequate in its criticism of Hillary. As Secretary of State, she presided over historically large arms deals to the very wahhabi Saudi Arabians - who are now using those weapons to kill innocent civilians in Yemen.
+
+Yes Trump may cause some destruction. But Hillary wants to shoot down Russian planes and has personally pushed for military intervention like in Libya. Also I don't think military coups like in Honduras should be ignored, but there's a big lack of information on the specifics there.
+:PROPERTIES:
+:Author: Polycephal_Lee
+:Score: 4
+:DateUnix: 1478303842.0
+:END:
+
+******* She's also kind of a China hawk.
+:PROPERTIES:
+:Author: chaosmosis
+:Score: 1
+:DateUnix: 1478323591.0
+:END:
+
+
+***** Assuming nothing too "out there" happens, I imagine Trump would be much less involved in our commitments and responsibilities overseas than Clinton would be, except for when he absolutely (rare, but it could happen) flips the heck out. If we leave aside his comments about surprise bombing civilian areas where we think ISIS leaders are (I don't think he'd actually do this) without letting people evacuate first, we can expect a significant drawdown in direct casualties from US shots fired overseas. So, leaving out the possible but unlikely "way worse than any possible policy" thing that Trump might do, I see how this could be less violent. And if that's all you measure, then this will be a great thing. I see why people might like this, and I respect that opinion.
+
+I'm an American exceptionalist and a believer in American hegemony. I think that international geopolitical stability, and the promotion of democratic interests and the possibility for liberal democracies everywhere, relies on the United States of America. We're the best democratic republic, and the biggest, and the richest, and so many other things. This is why I donate to the ACLU, rather than just say MIRI. The dangerous future of AI isn't just an unfriendly or poorly thought out AI running wild, it's an AI that does exactly what we want it to, and us wanting the wrong things. We are the bastion of stability and democracy in the world. My boy Barack Obama agrees:
+
+#+begin_quote
+  But the world must remember that it was not simply international institutions -- not just treaties and declarations -- that brought stability to a post-World War II world. Whatever mistakes we have made, the plain fact is this: The United States of America has helped underwrite global security for more than six decades with the blood of our citizens and the strength of our arms. The service and sacrifice of our men and women in uniform has promoted peace and prosperity from Germany to Korea, and enabled democracy to take hold in places like the Balkans.
+#+end_quote
+
+Yes, we kill people, both enemies and civilians, overseas. Yes, we have a huge, expensive military designed for interventions anywhere in the world--and we use it. A lot. We patrol the trade routes of our world's oceans, we back people on one side or another of various civil conflicts, and we invade countries, sometimes for the right reasons and with good outcomes, and sometimes with less good reasons and bad outcomes. We are a world power. In some ways, we are /the/ world power. Blood will be shed for us to enforce justice in the world, and to bring order to chaos.
+
+Jefferson once said, "What signify a few lives lost in a century or two? The tree of liberty must be refreshed from time to time with the blood of patriots and tyrants. It is it's natural manure." At the time, he was dismissing concerns about a rebellion that happened in the US, saying that we shouldn't worry if this happens from time to time. Though it is oft misused, the quotation itself isn't completely wrong in other contexts. I support military interventions and the US Navy patrolling the sealanes and promoting our interests around the world. I think, given what's happening in Europe and how tenuous republican democracy is in other places, we have an obligation to make sure the torch of democratic civilization keeps burning somewhere in the world.
+
+My full thoughts on this are a lot longer and more involved. So I guess I'm an American exceptionalist and an interventionist. But I do see why people think differently; most of my liberal friends disagree with me stridently on both these issues, and I don't think they're entirely wrong to do so. I think it's easy for people, especially young people, to discount just how valuable it is that our armed forces do what they do.
+:PROPERTIES:
+:Author: blazinghand
+:Score: 5
+:DateUnix: 1478302424.0
+:END:
+
+****** It seems like you probably understand the argument from non-hegemony, but it basically boils down to not bullying everyone else. I have a problem using physical force at all, it needs to be justified every time it is used. Doing it because it's convenient for billionaires in their quest of eternally-increasing balances does not seem justified to me.
+:PROPERTIES:
+:Author: Polycephal_Lee
+:Score: 4
+:DateUnix: 1478304105.0
+:END:
+
+******* That's a reasonable and self-consistent position, and I respect that.
+:PROPERTIES:
+:Author: blazinghand
+:Score: 7
+:DateUnix: 1478304365.0
+:END:
+
+
+****** #+begin_quote
+  (I don't think he'd actually do this)
+#+end_quote
+
+Why don't you think he would do these things?
+
+#+begin_quote
+  This is why I donate to the ACLU
+#+end_quote
+
+You donate to the American Civil Liberties Union to keep American imperialist military hegemony alive? This confuses me. The ACLU is, like, de facto the Commie Defense League.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1478316516.0
+:END:
+
+******* #+begin_quote
+  Why don't you think he would do these things?
+#+end_quote
+
+I mean, he /might/ do that stuff. But... I guess, if someone thinks for some reason that Trump and Clinton are comparable in any way, they wouldn't be swayed by me telling them that Trump actually has a chance to do these things. If someone thinks Trump is the more peaceful candidate, the only real way to approach them, assuming they're reasonably informed, is to point out that Trump has a long tail on foreign policy outcomes, and point out his other failings. I don't think it's really possible to change people's minds a lot in politics outside of unusual circumstances.
+
+#+begin_quote
+  You donate to the American Civil Liberties Union to keep American imperialist military hegemony alive? This confuses me. The ACLU is, like, de facto the Commie Defense League.
+#+end_quote
+
+I don't donate to the ACLU /in order/ to support the American military. Sorry if I came off that way; that must be a miscommunication on my part. Let me rephrase: I support the ACLU. Also, /separately/ from my ACLU donations, I believe that American military influence and interventions in the world should be active and has a good place in policy. The ACLU enforces my values and vision for the world domestically, and the military enforces my vision for the world abroad and in international waters. The ACLU is not actually an anti-military organization. They are against the militarization of police and surveillance of American citizens, and want better rights of free expression for soldiers, as well as good access for journalists to US warzones, but these are all different than actually being anti-war.
+
+The ACLU is not against the US underwriting global security, patrolling our sealanes, or bringing justice to foreign countries. They care a LOT about /how/ we do it, of course, but they're not against it. This is actually really good and I like this.
+:PROPERTIES:
+:Author: blazinghand
+:Score: 1
+:DateUnix: 1478424397.0
+:END:
+
+
+*** ahahahahahahahah /cries/
+:PROPERTIES:
+:Author: Cariyaga
+:Score: 7
+:DateUnix: 1478272875.0
+:END:
+
+
+*** Times like these remind me why I'm an absurdist.
+:PROPERTIES:
+:Author: That2009WeirdEmoKid
+:Score: 8
+:DateUnix: 1478276557.0
+:END:
+
+
+*** I feel like spamming EY's "Stop Voting for Nincompoops" everywhere. I voted early for the Green Party in a safe state. I kinda want the neo-Nazi killed or jailed, because that's what you do when you /actually seriously believe/ a major-party Presidential candidate is an actual Nazi. This actually gives me empathy for his supporters, who sound crazy but also seem to be the only ones /taking seriously/ the immense amount of evidence that their opponent is an influence-peddling criminal, that she conspired with the press corps to manipulate the primaries, and that the press has /volunteered themselves/ to act as her propaganda ministry in the generals.
+
+I hate white supremacy as much as any good leftist, but the way the Dems are speaking "against" it only reinforces the framing of white Americans as an ethnonationality whose material interests conflict with those of other ethnic groups in this country. So I can't speak the language of the mainstream and have to sound like a crazy commie in a park with a cardboard sign because I don't want to incite race war or feed fascism.
+
+The most popular Presidential candidate in the whole contest, my candidate - whose policy proposals are objectively moderate, tried-and-tested stuff meant to improve people's lives without risking radical change and whom people actually liked, trusted, and respected - was laughed out of the race five months ago as an unserious loon.
+
+In all seriousness, I feel like these are the situations that really do call for revolution. "The system" has now proven that it laughs in the face of the common citizen's needs, treats the interests and rituals of a narrow elite as moral gospel, and has no sanitary cordon against lunatic nincompoops. I actually wish it was just me being a crazy leftist at this point.
+
+I voted in the Presidential primaries and in the state and local primaries, for candidates who /won't/ bring about Fully Automated Luxury Communism or make everyone Sapient Pony Happy, but who /would/ and hopefully /can/ incrementally improve people's lives in ways the people understand, can cope with, and actively want for themselves. I've canvassed and phone-banked for the campaign I supported, and I'm doing more canvassing against a ballot measure I want defeated. My efforts were crushed by opponents who now want me in line behind them, except maybe on the ballot measures. The party who represent my beliefs about policy most closely are represented by batshit insane hippies.
+
+And the whole country or world could go down in flames because a narcissist realized he could appeal to identitarian fascist sentiments to catapult himself to the world's most influential single office. He has sowed utter discord and crashed through the institutional rot of this society and he still manages to be worse than the toxic fungus he's against. A perfect Ork Warboss.
+
+This election drives me to tears. I'm scared, I'm tired, and most of all, I'm scared and tired of feeling like the crazy person in the room because I point out how crazy it all is.
+
+This isn't sane or fair or noble, and I just want it to not have happened.
+:PROPERTIES:
+:Score: 15
+:DateUnix: 1478285571.0
+:END:
+
+**** The problem for me is that Stein has too many dumb antiscience positions, like nuclear energy and GMOs, and Johnson is, well, a libertarian. I don't really want either of them to be president. I don't really want Clinton to be president either, what with the frequent greasy-but-not-quite-criminal (Unless it is now? Who knows?) behavior.
+
+There is no Fully Automated Luxury Gay Space Communist Party, and even the actual transhumanist party didn't pony up the grand it takes to get on the ballot here.
+
+But my state is contested, so the choice that optimizes for distance between Nazis and the white house is unfortunately Clinton. I really don't want some Brexit crossed with Nader shit going down, especially with a fucked supreme court.
+
+Why the hell did nobody seem to notice he was a nazi when he launched his campaign promising racial cleansing?
+:PROPERTIES:
+:Author: buckykat
+:Score: 15
+:DateUnix: 1478296811.0
+:END:
+
+***** #+begin_quote
+  The problem for me is that Stein has too many dumb antiscience positions, like nuclear energy and GMOs, and Johnson is, well, a libertarian. I don't really want either of them to be president.
+#+end_quote
+
+Oh, I agree. Stein is nuts. I don't like her. I especially don't like Baraka: he's an Assad apologist.
+
+I voted for them mainly because, if a third-party gets over 5% on a Presidential ballot, they can run candidates for dog-catcher or State Assembly without going through a complicated bureaucratic maze -- they're just /on the ballot/ by declaring a candidate by a deadline. I deliberately wasted my Presidential vote in order to potentially buy opportunities to vote for better candidates down-ballot in future races, which we especially need in my state because we're the worst in the country for having contested (more than one candidate) state and local elections.
+
+And actually, since Johnson's higher in the polls than Stein, I perhaps should have voted for him. It depends how much I care about getting a third-party their dog-catcher candidacies /in principle/ and how much I care about doing so for a /left-wing/ party in specific.
+
+#+begin_quote
+  But my state is contested, so the choice that optimizes for distance between Nazis and the white house is unfortunately Clinton.
+#+end_quote
+
+Yep. Entirely true. Even my socialist organization said it really does come down to this. If you're in a contested state, go full Popular Front (or at least, Anti-Nincompoop Front), hold your nose, and support Clinton.
+
+#+begin_quote
+  Why the hell did nobody seem to notice he was a nazi when he launched his campaign promising racial cleansing?
+#+end_quote
+
+I mean... I KNOW RIGHT? But there seems to be a major set of deontological and virtue-theoretic assumptions built into the American political establishment: that if you follow the procedures and work within the system, you have a level of Rawlsian legitimacy, Godwin's Law applies as normal, and the actual content of your political stances basically doesn't matter at all.
+
+So I hope that if Donald Trump teaches the establishment one fucking thing, it is this: policies matter, outcomes matter, and the value of a procedure is just the information it integrates as input and the expected utility it generates as output.
+
+Because HE LAUNCHED HIS CAMPAIGN PROMISING MASS DEPORTATIONS. Not closed borders as a component of a sane, humane immigration policy, MASS DEPORTATIONS. And he comes as a culmination of a DECADES-LONG TREND in which his party have come to consider themselves the ONLY LEGITIMATE GOVERNING PARTY, and as he continued his campaign he asked WHY WE CAN'T JUST NUKE PEOPLE, and in the closing days of his campaign he has promised to ELIMINATE CLEAN ENERGY RESEARCH OF ALL KINDS.
+
+This has been batshit insane from the start, and I'm really tired of being the only guy in the room who believes his own eyes.
+:PROPERTIES:
+:Score: 7
+:DateUnix: 1478306956.0
+:END:
+
+****** #+begin_quote
+  So I hope that if Donald Trump teaches the establishment one fucking thing, it is this: policies matter, outcomes matter, and the value of a procedure is just the information it integrates as input and the expected utility it generates as output.
+#+end_quote
+
+But he's been successful. Won't it teach the opposite lesson, that policies don't matter, it's your tone's resonance and emotional appeal that garner support? Didn't Obama get elected on "Change!"?
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 1
+:DateUnix: 1478341074.0
+:END:
+
+******* #+begin_quote
+  But he's been successful.
+#+end_quote
+
+I meant /after/ he gets elected.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1478351271.0
+:END:
+
+
+***** #+begin_quote
+  Why the hell did nobody seem to notice he was a nazi when he launched his campaign promising racial cleansing?
+#+end_quote
+
+1. Because that's overblown, ignorant rhetoric that devalues the utility of "Nazi" as a negative signifier and draws /actual/ Nazism closer to the mainstream by associating it with a vastly wider but much less objectionable group.
+
+2. Because the people whose job it was to notice were actively helping him, both for their own ratings, and because he seemed like the ideal opponent for their preferred candidate.
+:PROPERTIES:
+:Author: Iconochasm
+:Score: 5
+:DateUnix: 1478309601.0
+:END:
+
+****** I don't agree, and don't use the word lightly. Note that I'm not calling his supporters nazis, even. There are some, but the vast majority of Trump supporters are not nazis at all, just scared.
+
+But when you have a facist calling for mass deportations and labelling religious minorities, you can't just cite Godwin and be done.
+:PROPERTIES:
+:Author: buckykat
+:Score: 5
+:DateUnix: 1478316995.0
+:END:
+
+******* You are definitely using that term (and fascist, for that matter) extremely lightly, or rather, like a sledgehammer. Nazism was a particular ideology that was a /wee bit/ more extreme than "We should enforce the immigration laws that are already on the books, and probably also watch out for that death cult".
+:PROPERTIES:
+:Author: Iconochasm
+:Score: 1
+:DateUnix: 1478399018.0
+:END:
+
+
+**** I'm a total outsider to US elections, and the little I've seen of it has been very contradictory (the whole "there are two hundred sides to every story" thing), so I really can't tell either way.
+
+But when you say your candidate is the best one with the best policies that will help everyday people, isn't that something that basically everyone thinks of their favorite candidates? Some people vote for candidates they don't like, but people who vote for candidates they like all think they're the most reasonable one, with the most sensible policies. For every Sanders/Clinton/etc partisan out there, there's a guy who thinks Trump is the best candidate and as a president he'll, I don't know, do great things for the common people somehow.
+
+Also, I'm mostly quoting a guy who I'm relentlessly stalking for insightful political comments here, but aren't candidates who make it past the primary much more likely to get targeted by smear campaigns and to have dirt dug up on them? There might have been similar shocking revelations about your favorite candidate had he passed the primaries.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 5
+:DateUnix: 1478296360.0
+:END:
+
+***** #+begin_quote
+  But when you say your candidate is the best one with the best policies that will help everyday people, isn't that something that basically everyone thinks of their favorite candidates?
+#+end_quote
+
+I'd call that a good test of whether you have a decently democratic system with a reasonably wide variety of candidates or parties. Unfortunately, [[http://www.pewresearch.org/fact-tank/2016/09/02/for-many-voters-its-not-which-presidential-candidate-theyre-for-but-which-theyre-against/][right now it's not actually true.]] Most voters right now are holding their noses.
+
+The test would apply more easily in the primaries, where we have a wider variety of candidates, but even there, it didn't /really/ happen. Most voters in the primaries were consciously and openly voting for a compromise between desired policies and ability to succeed in the "general" (ie: runoff) election.
+
+Now, I personally /disagree/ with my "side's" voters' estimation of who was a more viable candidate in the general election (ie: two-candidate runoff). Your test definitely applies within the primaries to the weighted mix of beliefs that mattered in the primaries.
+
+Which brings up that my objection to this electoral process is systemic: despite the fact that only the primaries were even a compromised version of a real election (by the test of whether your standard applies), only 9% of Americans actually supported the primary winners. So the "popular mandate" of our two "general election" (again: runoff) candidates is about 4.5% each. /That was how this all happened/: first you get 4.5% of the population to support you, and then you get 51% to hold their nose because you're better than that other jerk.
+
+#+begin_quote
+  aren't candidates who make it past the primary much more likely to get targeted by smear campaigns and to have dirt dug up on them? There might have been similar shocking revelations about your favorite candidate had he passed the primaries.
+#+end_quote
+
+Yes! Of course! That's /why/ it's important to run on more than personality. Every candidate is going to have smears thrown at them and dirt dug-up on them, and that's why they /need/ to be able to point to a clear policy platform (or party manifesto, as other countries would call it), a strong back-bench within their party infrastructure, and hopefully a popular movement behind them.
+
+The first and third items are things that Clinton doesn't seem to /want/, and the second is something she can't seem to /achieve/ (the Democratic Party has suffered a collapse of its state-and-local back-bench since about 2006). For all that she portrays herself as an expert political insider, /she actually stands a significant chance of losing to motherfucking Donald Trump/. For all that she portrayed herself in the primaries as better able to build a party, she's /been/ doing that for all these years, and her party's back-bench of lower-level office-holders has /collapsed/.
+
+Maybe she and they can fix that this Tuesday and take a Senate majority and a larger House minority. Maybe they'll be stuck with the Presidency against an adversarial Congress. Or maybe they'll lose everything.
+
+Not my problem.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1478308390.0
+:END:
+
+****** #+begin_quote
+  Yes! Of course! That's why it's important to run on more than personality. Every candidate is going to have smears thrown at them and dirt dug-up on them, and that's why they need to be able to point to a clear policy platform (or party manifesto, as other countries would call it), a strong back-bench within their party infrastructure, and hopefully a popular movement behind them.
+#+end_quote
+
+Wait, I was under the impression that Clinton had a strong policy platform except no one ever talked about it. What makes you think her policies are unclear?
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 2
+:DateUnix: 1478339610.0
+:END:
+
+******* The Democratic Party has a strong policy platform that Clinton herself has shown no sign of actually intending to carry out. She's changed her purported policies multiple times since the primaries and shows every sign of just trying to appeal to exactly as wide a coalition of voters as necessary (and no more than that).
+
+In short, we have very little actual /signal/ about Clinton's policies, beyond her own previous /actual actions/, which are... pretty damn bad, I would say.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1478351383.0
+:END:
+
+
+**** I would give you gold right now if I hadn't canceled my debit card a few hours ago. There are simply no better words to describe how completely awful this entire process has been.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 3
+:DateUnix: 1478288609.0
+:END:
+
+***** Solidarity and hugs. The Emperor protects.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1478290417.0
+:END:
+
+
+**** #+begin_quote
+  In all seriousness, I feel like these are the situations that really do call for revolution. "The system" has now proven that it laughs in the face of the common citizen's needs, treats the interests and rituals of a narrow elite as moral gospel, and has no sanitary cordon against lunatic nincompoops.
+#+end_quote
+
+Except for the fact that this is the 21st century, and the gap between those who are the most powerful and those who are the least powerful is much larger than it ever was before. If you rebelled against your ruler in feudal times, he would have you executed, but he wouldn't be able to nuke you. Also, artificial general intelligence will probably be invented in a few decades anyway, so there's really no point in rebelling at this point. I understand how upset you are, I would be too if I actually, you know, expected things to be better than this on some gut level. But ultimately you need to consider the decision in terms of consequentialism: will rebelling actually save more lives than not rebelling? If yes, then go ahead, but if not then it's a really bad idea.
+:PROPERTIES:
+:Author: Sailor_Vulcan
+:Score: 1
+:DateUnix: 1478309765.0
+:END:
+
+***** Ok, so I was gonna say that you've got a really good point and where I disagree it's because I honestly differ in view on the facts, but then you said:
+
+#+begin_quote
+  Also, artificial general intelligence will probably be invented in a few decades anyway, so there's really no point in rebelling at this point.
+#+end_quote
+
+This is insane. Sorry, but that's enough time for maybe a third of the world's population to replace itself, if we estimate "a few decades" to be 30-40 years. Even if we assume it's only 15-20 (inside edge, so to speak), /those are lives you're talking about/. Every point in the causal trajectory matters, not just the ones that come after some point or another! If you give me a magic guarantee that everything will be either just fine or totally annihilated 20 years from now, /everyone's remaining 20 years of normal life still matter!/
+
+I mean, if you sincerely think we should just be pouring all available efforts into FAI, fine, PM me and I'll send you a Google Doc to look over that is meant to help push that effort along from a direction that hasn't had too much work. That doc has taken too long to prepare and someone had actually said they were interested.
+
+And then you can help with my PhD application, too.
+
+But otherwise, the pre-AI-kills-us-all years matter and deserve real effort from all of us, since everything still adds up to dreadful normality at this point in history.
+
+#+begin_quote
+  I understand how upset you are, I would be too if I actually, you know, expected things to be better than this on some gut level.
+#+end_quote
+
+I expected, well, /lawful/ evil, and what I'm getting is a [[http://wh40k.lexicanum.com/wiki/Chaos][Chaos incursion.]] And Chaos is on the not-even-once list, right alongside hegemonizing swarms.
+
+#+begin_quote
+  But ultimately you need to consider the decision in terms of consequentialism: will rebelling actually save more lives than not rebelling? If yes, then go ahead, but if not then it's a really bad idea.
+#+end_quote
+
+The thing is, at this point, I genuinely believe the answer is yes.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1478311086.0
+:END:
+
+****** I didn't realize that that's enough time for a third of the population to replace itself. But still, the key question to ask is still whether more lives will be saved if you rebel compared to not rebelling. When answering that question it could be important to take other things into account like, "could this impede other efforts to save lives that very smart people are already undertaking," or "are there any other ways besides rebelling that could save more lives". Yes those last few decades before we get GAI still matter, but I would say there's a significantly higher probability that outright rebelling against a much bigger, stronger enemy like the /US government/ is only going to get a lot more people pointlessly killed compared to other methods of trying to save lives.
+
+Furthermore, even if you were to somehow miraculously succeed, a huge sudden shock to society like that could be very risky and have unforeseen repercussions and make things a lot less predictable for a lot of people. Yes, the US government for the most part doesn't seem to care very much about most of its citizens. But we could have far worse governments than that. I'm not sure how long it would take to build a better government in the unlikely event that you do succeed, but I would expect it to take a few decades rather than a few years, simply because just putting new people in power historically hasn't magically made things better. Even if smart, competent, and well-intentioned people could theoretically be put into power, the chances of that happening seem very slim.
+
+I suspect that if there was someone sufficiently competent at politics and with enough money and who was intelligent enough, they /might/ be able to get some of the most problematic parts of the US government replaced, or give them incentive to act more in the interest of the citizens, so that the world is less likely to get destroyed by crazy/irresponsible/ evil people in the US government (I.e. Trump) and so that more net lives are saved. Or maybe they could just entirely reform the government outright without rebelling. I don't know what is possible because I'm just a layperson with no legal or political expertise.
+
+Ultimately, the sort of endeavor you propose is not only extremely risky in terms of human lives compared to alternatives, but to make such an endeavor less risky would probably require years of study in the fields of law and political science, and military training too. Any less than that i expect would have a higher probability of failing and causing more net lives to be lost.
+
+But maybe I'm missing something here. Maybe if I consider your belief that rebelling will save more net lives than not rebelling for five minutes I will realize that you're right? But I have no idea where to begin to steelman your position that rebelling will save more net lives than not rebelling, because I lack the expertise. How would the world look different if rebelling was more likely to save more net lives compared to not rebelling? I don't know. Maybe there's some reason that rebelling would be a more feasible way to save a positive number of net lives than I expect? Ultimately, thinking about it for five minutes is a start, but it's not enough. Sometimes you actually need to have more knowledge.
+
+Show me the evidence that more net lives are likely to be saved if you do this than if you don't do this. And please don't use any more ad hominem arguments. I don't like it when people die any more than you do.
+
+This situation is upsetting to me too, but I'm not upset in the moment because there's no point in getting upset about it. When I said "I understand that you're upset about this" it was in the sense of being viscerally upset in the moment. And I'm not viscerally upset about this in the moment because getting myself worked up about it won't accomplish anything. I've gotten rather numb to politics at this point and I'm focusing my emotional energy on things that I am more likely to be able to do something about. If I thought too much about politics I would just get really angry and upset. So I've just been choosing not to think too much about politics in order to avoid getting that angry and upset because it's not productive. I'm still angry and upset in the general sense, I'm just choosing not to let myself feel it right now because it would interfere with my other goals to get that upset about this. I'm sorry if that wasn't clear.
+:PROPERTIES:
+:Author: Sailor_Vulcan
+:Score: 2
+:DateUnix: 1478337523.0
+:END:
+
+******* Actually sending aid to the Middle East and drastically increasing efforts towards halting global warming would in the long term result in more lives saved.
+
+Why is a complicated answer, which [[https://www.amazon.com/World-Very-Small-Place-Africa/dp/0765624842][this book]] will help you to understand. In brief, foreign aid is necessary because western enterprise has created economies of dependencies in the third world, so aid efforts are sabotaged and ignored in order to preserve revenue streams. An example would be bribes to foreign leaders to not develop their country, making it more profitable for the leader to continue their country's dependency than to invest in development. Oil is the most obvious and profitable dependency cycle. Others, more subtle and insidious you'll learn about in that book.
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 2
+:DateUnix: 1478342764.0
+:END:
+
+
+******* #+begin_quote
+  I would say there's a significantly higher probability that outright rebelling against a much bigger, stronger enemy like the US government is only going to get a lot more people pointlessly killed compared to other methods of trying to save lives.
+#+end_quote
+
+This assumes that the US government is doing a good job keeping people alive in the first place and isn't otherwise collapsing, which I don't really believe.
+
+#+begin_quote
+  Furthermore, even if you were to somehow miraculously succeed, a huge sudden shock to society like that could be very risky and have unforeseen repercussions and make things a lot less predictable for a lot of people.
+#+end_quote
+
+Again: you are assuming that everyone is privileged enough to live a stable, predictable life under the present regime. I don't think this is true.
+
+#+begin_quote
+  Ultimately, the sort of endeavor you propose is not only extremely risky in terms of human lives compared to alternatives, but to make such an endeavor less risky would probably require years of study in the fields of law and political science, and military training too. Any less than that i expect would have a higher probability of failing and causing more net lives to be lost.
+#+end_quote
+
+And I expect that the continued stagnancy of the US government, plus the effects of US imperialism outside its borders, plus the /staggering/ incompetence of the US government on domestic issues compared to /most of the rest of the civilized world/, make it "profitable" to actually mount a rebellion and either force the usgov to reform or replace it outright.
+
+My rough belief is: if we force the usgov to focus on putting down a domestic rebellion rather than gratuitous foreign slaughter, that's a gain, and if we force it to reform by picking some /incredibly low-hanging/ fruit of domestic policy for improved /not dying or living in horrible suffering for no good reason/ statistics, we win. We don't need to switch from neoliberal capitalism to fully automated gay space luxury communism tomorrow. We need the United States to stop lagging behind the norm and gratuitously killing people tomorrow, /but it refuses to do so unless we mount an actual rebellion/.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1478657748.0
+:END:
+
+******** #+begin_quote
+  This assumes that the US government is doing a good job keeping people alive in the first place and isn't otherwise collapsing, which I don't really believe.
+#+end_quote
+
+No, it's assuming that even more people will die than are dying already if there's a rebellion. Also, what exactly do you mean by "collapse" and what evidence do you have for it happening any time soon?
+
+#+begin_quote
+  Again: you are assuming that everyone is privileged enough to live a stable, predictable life under the present regime. I don't think this is true.
+#+end_quote
+
+No, I'm assuming that /even though/ the majority of people living in this country are not privileged enough to live a stable, predictable life under the present regime, that a rebellion could cause that number to increase. I'm also assuming that /organizations that save lives/ will be negatively impacted by the instability and unpredictability, not just organizations that cause people to die for no reason.
+
+#+begin_quote
+  And I expect that the continued stagnancy of the US government, plus the effects of US imperialism outside its borders, plus the staggering incompetence of the US government on domestic issues compared to most of the rest of the civilized world, make it "profitable" to actually mount a rebellion and either force the usgov to reform or replace it outright. My rough belief is: if we force the usgov to focus on putting down a domestic rebellion rather than gratuitous foreign slaughter, that's a gain, and if we force it to reform by picking some incredibly low-hanging fruit of domestic policy for improved not dying or living in horrible suffering for no good reason statistics, we win. We don't need to switch from neoliberal capitalism to fully automated gay space luxury communism tomorrow. We need the United States to stop lagging behind the norm and gratuitously killing people tomorrow, but it refuses to do so unless we mount an actual rebellion.
+#+end_quote
+
+And you conveniently skipped over the part where if you fail to overthrow the US government they just go right back to killing gratuitously abroad, only this time you'll have even more people dead in total because there would be people who died domestically too.
+
+Also, since the NSA can spy on you to find out any plans you try to share with people electronically, you likely can only communicate such plans to people in person. Even if there were some way to completely protect yourself from the NSA's spying, it would probably cost a lot of money, and purchases made with credit/debit cards are probably tracked by the government too. And I'm pretty sure cash withdrawals can also be tracked since banks also use electronic record keeping these days. And if you make a pure cash withdrawal large enough to buy state of the art equipment for avoiding cyber tracking by the government, I'm pretty sure that will make them suspicious of you. Good luck trying to grow your rebellion faster than it can be found and shut down when it only spreads by word of mouth, while the government has instant communication on /their side/ and you /don't/.
+
+Furthermore, what if the US govt decides to blame your rebellion on a foreign gov't rather than on domestic rebels? Could it be another Iraq?
+
+Or maybe someone in China or Russia or someone else that doesn't like the US decides to aid your rebellion, and some kind of twisted entanglement of alliances causes another country to aid the US gov't against the rebellion, and suddenly you have WWIII on your hands!
+
+Do you have any idea what might happen? Are you actually thinking about the probabilities of negative externalities and taking them into account, or are you just declaring that because the US government is causing more harm than good, that therefore it is /deontologically/ a good idea to overthrow them, regardless of the what the actual consequences are? There is such a thing as the cure being worse than the disease, you know.
+
+Don't forget that whatever you decide to do should be trying to maximize the number of lives saved. Do you need me to explain basic decision theory to you? Here's an example: if you're faced with a choice between act A (1% chance of saving 99 lives) and act not-A (99% chance of saving 70 lives) over a population of 100 lives, then you're more likely to save the most lives if you choose not-A.
+
+That is to say, even if the number of lives that could be saved by rebelling is theoretically higher then not rebelling; if the probability of that many of them being saved is sufficiently low for rebelling compared to not rebelling, then in practice it would be better to pick not rebelling, because then you are on average saving more lives.
+
+It still seems most likely to me that more people could be expected to die if you rebel than if you don't rebel. And you still have yet to show me any evidence to contradict this.
+
+Something else to keep in mind, is that the US probably has a lot of treaties that will be null and void if the US government no longer exists. So if you want to avoid dragging foreign powers into your mess, you will need to reform the US government without literally overthrowing it. If you take a boat and replace one part of that boat every year, eventually all the parts will be replaced, but it will still be known by the same name and will still be considered the same boat. And since the US government is unlikely to decide to reform itself, you will need to get people elected/appointed into positions of power who will be more sympathetic, or who might have something to gain for themselves from the reforms you want to implement. A sympathetic politician or group of sympathetic politicians could pretend to agree with current policies until they have amassed enough political power to unexpectedly legislate a bunch of reforms. Or maybe some sympathetic business people will be able to buy out a group of politicians and have them pass those reforms even if they wouldn't want to otherwise. And if there are literally no sufficiently skilled politicians or sufficiently wealthy business people who are sympathetic to your cause, have at least someone with diplomatic skills negotiate with them until they are.
+
+Don't break the law or kill people unless it's actually necessary to save more lives. If there's a relatively non-violent alternative to open armed rebellion which is more likely to succeed than open armed rebellion, it's better to go for that alternative instead.
+
+That being said, I've got no political or business expertise, so take my words with a grain of salt. Still, this seems to be the most obvious strategy for reforming the US government, which I thought of in about five minutes once I actually applied myself to the problem, which it only occurred to me to do after finding out that Trump got elected. :/
+
+If I can think of it, someone else who does have the expertise to carry it out definitely can. However, that might just be my total lack of expertise talking, and maybe there's some reason that such a plan is entirely unfeasible. But if that's the case they might even think of something better.
+
+I find it hard to believe that if you put a bunch of creative, politically-savvy people in a room together to work on this problem, that armed rebellion would be the only viable solution that they generate.
+
+And if it gets to the point where armed rebellion is the only option left, then we are all probably doomed in any case.
+:PROPERTIES:
+:Author: Sailor_Vulcan
+:Score: 1
+:DateUnix: 1478667427.0
+:END:
+
+
+*** It's an election between everything that's wrong with our political system, and everything that's wrong with our culture. There is no good outcome.
+:PROPERTIES:
+:Author: Polycephal_Lee
+:Score: 11
+:DateUnix: 1478281376.0
+:END:
+
+
+*** I lost track of the election drama after that debate when Trump said Hillary would be in jail if he were president.
+
+What has been happening since then that is atypically fucked up?
+:PROPERTIES:
+:Author: sir_pirriplin
+:Score: 5
+:DateUnix: 1478275303.0
+:END:
+
+**** Republicans first vowed that they would filibuster any candidate she put forward to fill Supreme Court vacancies, then vowed to try to impeach her the moment she takes office.
+:PROPERTIES:
+:Author: Aretii
+:Score: 9
+:DateUnix: 1478278994.0
+:END:
+
+***** Do people also vote for Congress this Tuesday, or is it just for President?
+
+Are Republicans trying to force an all-or-nothing situation? I suppose high-variance strategies can be good when all your options have low expected value.
+:PROPERTIES:
+:Author: sir_pirriplin
+:Score: 2
+:DateUnix: 1478281068.0
+:END:
+
+****** Even-numbered years are national elections. The lower house (House of Representatives, apportioned to the states based on population and coming from a specific electoral district) serve 2-year terms, and the upper house (Senate, each state gets 2, elected by the state at large) serve 6-year terms, no limits on either. So in Presidential election years (years evenly divisible by 4), Americans cast their vote for President, the Representative for their district, and between zero and one Senators depending on how the terms line up (I don't believe any states have synchronized Senate terms). Generally, however, only a few of the Congress seats are actually competitive in a given year.
+
+If I had to guess, Republicans are trying to make the best of a situation where Hillary gets elected by refusing to allow her to enact any of her agenda, thereby protecting themselves from primary challengers (members of the same party competing to be the party nominee for the seat) who might otherwise challenge their commitment to conservative principles, and don't expect to get punished for their obstructionism the next time the general election comes up because, as I mentioned, so few seats are actually competitive. This is basically a more extreme version of what they already did with Obama following the 2010 midterm elections.
+
+tl;dr: shit's fucked, yo
+:PROPERTIES:
+:Author: Aretii
+:Score: 8
+:DateUnix: 1478281824.0
+:END:
+
+******* Many Republican politicians are kinda trapped between a rock and a hard place when it comes to winning both primaries and general elections. Over the course of the past decade, basically, there has been a movement amongst some of the Republican electorate to be more aggressive about certain populist issues. This caused big changes, especially in the 2010 congressional election. Several of the blue dogs (conservative Democrats) were ousted in general elections, and many moderate Republicans were ousted in primary elections, and replaced with radical Tea Party Republicans.
+
+Many canny and capable moderate Republicans held on to their seats, by swinging just far enough to the right to undercut their Tea Party challengers, then coming back to the center for the general election enough to beat the moderate Democrat who runs against them (but not so much as to piss off their base). This is /not easy/. It also really constrains their ability to act like normal people while in office.
+
+Take, for example, my boy McCain. McCain /hates/ Trump. He really truly loathes Trump. And for good reason! McCain is a sane person and a career politician and has every reason to hate Trump. Trump also personally insulted McCain for being a PoW... etc etc. Well, in any case, you may remember that McCain endorsed Trump. Seems strange, right? McCain really does hate that guy! So why did he do it? He did this because he was facing a primary challenge from a populist rightist who was a total nutjob. After winning the primary, he waited for an opportune time to unendorse Trump. He has since went back to the middle and now has to win the general election. He probably will.
+
+In any case, not saying we shouldn't blame Republicans for intransigence if they actually follow through with it, but bear in mind that they all are trying to get re-elected, and not all of them have the political skills and war chest of McCain.
+:PROPERTIES:
+:Author: blazinghand
+:Score: 3
+:DateUnix: 1478298918.0
+:END:
+
+******** #+begin_quote
+  Many Republican politicians are kinda trapped between a rock and a hard place when it comes to winning both primaries and general elections. Over the course of the past decade, basically, there has been a movement amongst some of the Republican electorate to be more aggressive about certain populist issues. This caused big changes, especially in the 2010 congressional election. Several of the blue dogs (conservative Democrats) were ousted in general elections, and many moderate Republicans were ousted in primary elections, and replaced with radical Tea Party Republicans.
+#+end_quote
+
+You know, while I basically hate the Republican ideology root and branch, I can't help but congratulate the Tea Party guys on their organizing successes. However much it undermined the [[https://en.wikipedia.org/wiki/Sixth_Party_System][sixth party system]], they've understood how to make their "party" act like an actual, ideological /political party/ as the rest of the world understands the term.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1478317335.0
+:END:
+
+********* Which is not a good thing, given what we've seen these sort of ideologically consistent parties (more like parasites inside larger coalitions) do within the US system,and what they're promising to do.
+:PROPERTIES:
+:Author: Tsegen
+:Score: 2
+:DateUnix: 1478406364.0
+:END:
+
+********** Honestly, I blame that on "the US system". And not to be edgy, but because in the rest of the world, having an actual ideology (that is, beliefs about how society works and policies to make it better) isn't a dirty word. If we /actually/ stuck to the supposed American traditions of "just follow the Constitution, reach across those aisles, and for God's sakes don't have any ideologies" the country would never have actually industrialized.
+
+It's vital for both democracy and modernity in general that the public be able to actually express their changing needs and understandings.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1478432589.0
+:END:
+
+*********** Well, part of the problem is not just one group having opinions and ideology it's what happens when you have groups like the TP acting in lockstep regardless of the consequences. As the country becomes more and more polarized (and gerrymandered) local reps have less reason to compromise and, because of the split between executive and legislative branches you get more and more situations like the shutdown or the SCOTUS impasse.
+
+At a certain point though, given that the US system is here to stay, people have to work with what they have. There's a way to express your opinion and reach across the aisle to achieve things, Tea Party manicheanism just isn't the right way to work within the system.
+
+The last thing that's needed imo is a plurality of progressive voters wagging the dog in the Democratic coalition in this way as well.
+
+No one wants to hear that some measure of "politeness" and incremental change (cause they feel it's an argument for the status quo) has to be cultivated, but it's better than this alternative. As Obama said in his recent interview: you don't start from scratch. The US will not get another system, so having these groups act in the manner they're acting is dangerous.
+:PROPERTIES:
+:Author: Tsegen
+:Score: 2
+:DateUnix: 1478444766.0
+:END:
+
+************ #+begin_quote
+  As Obama said in his recent interview: you don't start from scratch. The US will not get another system, so having these groups act in the manner they're acting is dangerous.
+#+end_quote
+
+Why do Americans always seem to think that any attempt to change the system is equivalent to restarting civilization from cave-paintings on up?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1478446013.0
+:END:
+
+************* Pretty uncharitable.
+
+That's not what I said is it? Whoever said anything about /any/ reform ? I merely consider the chances of changing the base problems of this system (and the way groups like the TP interact with it)in a sweeping way to be low, especially in the short term.
+
+The split government is not going away. You're not getting a parliamentary system , you're likely not getting a change of the electoral/voting system without constitutional reform. The ways that groups leverage the system (the SCOTUS impasse and so on) are also deeply baked into the system
+
+Have you /seen/ the requirements for constitutional amendments? In an age where the US is getting more and more polarized (which is itself contributing to the problem)? The US can barely pass healthcare reform...
+:PROPERTIES:
+:Author: Tsegen
+:Score: 1
+:DateUnix: 1478446727.0
+:END:
+
+
+**** The most meaningful recent event, for my money, is the FBI publicly announcing less than two weeks before the election that it has re-opened the investigation into Clinton's use of a private email server during her time as Secretary of State. They say that evidence found in a previously unrelated case may be relevant, and they need to investigate further to determine whether anything has changed or not.
+
+Clinton naturally considers this a disgraceful attempt by the FBI to influence the election, and maintains that there is nothing to find. Those opposed to Clinton (disclaimer: including myself) point to the still ongoing, daily leaks of emails between her highest staff which, arguably, indicate her participation in outright bribery, on top of additional national security concerns. Clinton counters that these leaks are from a cyberattack orchestrated by Russian hackers, not to be trusted, and claims that Russia is /also/ disgracefully attempting to influence the election.
+
+Trump, meanwhile, is continuing his ongoing vendetta against his own foot. Candid audio was released in which he advocated that when you're rich, you can get away with sexual assault (Money line: "You can grab them by the pussy!"), which he dismisses as "locker room talk". Shortly thereafter, a number of women have emerged accusing him of raping them. I think that the worst "Trump says stupid, dangerous thing" is still older lines like him asking, "What's the point of having [nuclear weapons] if you can't use them?" or him refusing to commit to defending NATO ally nations unless they've paid their bills.
+:PROPERTIES:
+:Author: Anakiri
+:Score: 8
+:DateUnix: 1478286294.0
+:END:
+
+***** #+begin_quote
+  the still ongoing, daily leaks of emails between her highest staff which, arguably, indicate her participation in outright bribery, on top of additional national security concerns. Clinton counters that these leaks are from a cyberattack orchestrated by Russian hackers, not to be trusted
+#+end_quote
+
+What is the correct ("rational") way to deal with an information source that does not lie but only tells one side of the story?
+
+Like, even if they really were evil Russian hackers or whatever, you can't just refuse to do Bayesian updates because they are not lying (does Clinton deny that the mails are authentic?). But on the other hand we should expect the other side to have awful stuff in their emails as well (maybe more stuff like "You can grab them by the pussy!") and we don't hear about them because they were not hacked.
+:PROPERTIES:
+:Author: sir_pirriplin
+:Score: 7
+:DateUnix: 1478288981.0
+:END:
+
+****** Not only does Clinton's campaign not seriously deny that the leaks are authentic (sometimes they'll throw out a "they could be fake!" line to sow doubt, but they never seriously push the point), but WikiLeaks explicitly provides cryptographic evidence to verify their leaks.
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 4
+:DateUnix: 1478289223.0
+:END:
+
+******* They have every incentive no to comment on the leaks' authenticity. If the Clinton campaign confirmed the leaks as authentic, and Wikileaks managed to convincingly fake a very incriminating leak, then the Clinton campaign would be screwed. They would sound very weak: "We said the other leaks were authentic, but this one is fake, honest!"
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 5
+:DateUnix: 1478296890.0
+:END:
+
+
+****** The question isn't, "Is it worse than the other guy?" The question is, "Is it worse than what you expected?"
+
+If Trump's private communications were leaked and rape apologetics was as bad as it got, I'd actually think /better/ of him, because I expect worse.
+:PROPERTIES:
+:Author: Anakiri
+:Score: 4
+:DateUnix: 1478292534.0
+:END:
+
+******* Since the private communications were not leaked and I'm making stuff up, obviously what I expect to find are the things I expect to find. I can't /expect/ it to be worse than what I expected, otherwise I'd update in that direction /already/. That's what makes this whole wikileaks business so weird.
+
+That means /you/ should expect that his private communications, if leaked, would contain things that are worse than rape apologetics, right?
+:PROPERTIES:
+:Author: sir_pirriplin
+:Score: 1
+:DateUnix: 1478350030.0
+:END:
+
+******** Yes. You can't imagine that something being leaked would be worse than you'd expect. This makes sense, because imagining something isn't actually giving you any information. You can't update on an imagined (or predicted) event, only on actual events.
+:PROPERTIES:
+:Author: electrace
+:Score: 1
+:DateUnix: 1478365923.0
+:END:
+
+
+****** #+begin_quote
+  What is the correct ("rational") way to deal with an information source that does not lie but only tells one side of the story?
+#+end_quote
+
+Ow, that's a tough one.
+
+Ideally, you want to weigh their opinion against partisans of the "other side" of the story - preferably from people who are roughly as eloquent as your first source, otherwise you're introducing a bias. Most of the time, you'll end up more confused and mostly neutral, which is good because you should /not/ change your opinion after listening to a one-sided source anyway (or only change it slightly).
+
+As Yudkowsky pointed out, this method has a failure mode, especially when applied to politics: you might hear good-sounding arguments for the two sides, and never shift your opinion, even though one side's arguments are much more important/accurate/better than the other. Eg "this candidate will keep the corrupt systems that impoverishes you" vs "that candidate might start a nuclear war".
+
+I don't know any solution to this problem besides "be better informed". Like Professor Quirell said, only harsh experience teaches you that "Kill your problems immediately with a lot of death" is more important than "Avoid making powerful enemies when you don't have to". Otherwise they both sound very convincing.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 4
+:DateUnix: 1478297975.0
+:END:
+
+
+****** #+begin_quote
+  What is the correct ("rational") way to deal with an information source that does not lie but only tells one side of the story?
+#+end_quote
+
+You have to take the all of the information at once, and update based on what you would have expected based on certain situations.
+
+Let's say you figure there's a half chance that there is a car behind door number 1, and a half chance that it is something nearly worthless.
+
+Here are the rules:
+
+1) Door number 1 has one person in front of it. This person, the salesman, tries to get you to pick door number 1 no matter what (by convincing you its a car).
+
+2) They can not lie.
+
+3) They only get one statement to convince you.
+
+The salesman might tell you "Behind door number 1 is an object whose outer body is made mostly of metal."
+
+If this person wasn't a salesman, and was instead just someone spewing out random facts about what was behind the door, that should move your posterior above a half. Why? /Because you would expect someone spewing out random facts to say something that doesn't apply to a car if it wasn't a car."/
+
+But since it is a salesman, you should adjust /downward,/ not upward. Why? /Because you would expect a salesman to say something like "It's a car behind door number 1," if it really was a car./ The fact that they didn't is evidence /against/ it being a car.
+:PROPERTIES:
+:Author: electrace
+:Score: 4
+:DateUnix: 1478292263.0
+:END:
+
+******* I see. So we should expect that whatever the leaks makes us think of Hillary, that is the worst-case-scenario, because if there were something worse, Assange would shout /that/ from the rooftops.
+
+We still don't have an upper bound on how shitty Trump might be, though.
+:PROPERTIES:
+:Author: sir_pirriplin
+:Score: 3
+:DateUnix: 1478350227.0
+:END:
+
+
+******* And if the salesman hasn't seen behind the door himself?
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 1
+:DateUnix: 1478294774.0
+:END:
+
+******** Then he can't give you any information you don't have, so he's useless.
+:PROPERTIES:
+:Author: electrace
+:Score: 4
+:DateUnix: 1478295013.0
+:END:
+
+
+****** #+begin_quote
+  What is the correct ("rational") way to deal with an information source that does not lie but only tells one side of the story?
+#+end_quote
+
+Estimate the actual truth (what they /actually/ believe, as opposed to what they leak out), and update on that, while taking the released information as partial, imprecise evidence /about/ what they believe.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1478317791.0
+:END:
+
+******* That's more of a 'what you want to achieve' than a 'what you want to do' guideline.
+
+Estimating the intentions and beliefs of someone who is trying to shape their statements to push an agenda is probably going to give you more noise than signal.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 2
+:DateUnix: 1478349655.0
+:END:
+
+
+***** #+begin_quote
+  Clinton naturally considers this a disgraceful attempt by the FBI to influence the election, and maintains that there is nothing to find. Those opposed to Clinton (disclaimer: including myself) point to the still ongoing, daily leaks of emails between her highest staff which, arguably, indicate her participation in outright bribery, on top of additional national security concerns.
+#+end_quote
+
+Can't both these things be true? Or at least, from my understanding:
+
+- These actions within the FBI are actually being deliberately orchestrated by a bloc of Trump supporters.
+
+- They /are/ a disgraceful attempt to influence the election, insofar as state agencies are supposed to, you know, /not influence who bosses them around/, since that's what makes it democracy instead of a Soviet-style bureaucratic oligarchy.
+
+- Clinton also takes a metric fuck-ton of bribes, has turned corruption into a lifestyle, and has had the press in her fucking pocket since the primaries.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1478317692.0
+:END:
+
+
+***** #+begin_quote
+  Clinton counters that these leaks are from a cyberattack orchestrated by Russian hackers, not to be trusted, and claims that Russia is also disgracefully attempting to influence the election.
+#+end_quote
+
+Clinton started pushing this claim after various federal intelligence agencies all said that the Russians were behind the DNC hacks.
+
+#+begin_quote
+  daily leaks of emails between her highest staff which, arguably, indicate her participation in outright bribery, on top of additional national security concerns.
+#+end_quote
+
+The "daily" part is because Wikileaks is intentionally screwing around to generate the maximum media attention. I stopped paying attention to the email leaks after the first set of them only succeeded in revealing that Hillary is in fact running a competitive campaign and working with the DNC and media. Isn't that what a good campaign would be trying to do? (As opposed to Trumps failure to work with the RNC and his continuous fights with the media). Anyway is there anything actually substantial you can point in all these leaks [[/r/the_donald]] seems to upvote every little thing they can take out of context as damning evidence,
+
+#+begin_quote
+  older lines like him asking, "What's the point of having [nuclear weapons] if you can't use them?" or him refusing to commit to defending NATO ally nations unless they've paid their bills.
+#+end_quote
+
+I think Trump has buckled down on some of these points when pressed about them again. In light of the whole "Russia influencing the election" narrative, several of the stupid things he has said about foreign policy seem kind of damning.
+
+Anyway, Politics is the mind killer, so maybe Trump being so stupid and awful has made me look at Clinton overly positive, but I haven't seen anything really substantial in terms of the Hillary is totally corrupt narrative. I voted by mail already anyway so whatever.
+:PROPERTIES:
+:Author: scruiser
+:Score: 5
+:DateUnix: 1478297769.0
+:END:
+
+****** #+begin_quote
+  I stopped paying attention to the email leaks after the first set of them only succeeded in revealing that Hillary is in fact running a competitive campaign and working with the DNC and media. Isn't that what a good campaign would be trying to do?
+#+end_quote
+
+Look, if your idea of good campaigning is using connections with the press to bludgeon not only your dangerous outgroup opponents but ingroup opponents who get in the way of your personal ambitions and aren't playing the same game as you, you need to go to another country and take some lessons in how an honest democracy works.
+:PROPERTIES:
+:Score: 0
+:DateUnix: 1478317975.0
+:END:
+
+******* You putting words in his mouth.
+
+His point as I understand it is that he didn't see anything in the leaks implying unethical collusion with the media, not that unethical collusion with the media is totally okay.
+
+There's obviously a line between 'stay in contact with journalists and try to give them your best image' and 'encourage journalists to lie of bend the truth, or to hide information'. Is there anything in the mails that proves Clinton's campaign did the second and not just the first? (that's a genuine question, I'm don't know the answer)
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 3
+:DateUnix: 1478350256.0
+:END:
+
+******** #+begin_quote
+  His point as I understand it is that he didn't see anything in the leaks implying unethical collusion with the media
+#+end_quote
+
+Putting aside the word "unethical", my point is that what I've seen in the leaks is very explicit documentation of collusion with the media.
+
+#+begin_quote
+  Is there anything in the mails that proves Clinton's campaign did the second and not just the first? (that's a genuine question, I'm don't know the answer)
+#+end_quote
+
+I'll have to fish through some old conversations for the precise links, but yes, as far as I've seen, the actual behavior was more along the lines of, "Have the media write the stories we want them to write."
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1478351224.0
+:END:
+
+
+******** #+begin_quote
+  His point as I understand it is that he didn't see anything in the leaks implying unethical collusion with the media, not that unethical collusion with the media is totally okay.
+#+end_quote
+
+If I had to say exactly what I meant... I think the leaks indicated slightly unethical but not illegal behavior, and compared to Trump and the Republicans that support him, and the fact that Florida is a swing state, I am willing to vote Clinton (have voted as a matter of fact, thanks to mail-in ballots). If not for being in a swing state, the idea of voting third party so that a third-party can get 5% of the vote so we can break up the current system sounds pretty nice.
+:PROPERTIES:
+:Author: scruiser
+:Score: 1
+:DateUnix: 1478360544.0
+:END:
+
+
+*** I like the fact the the entire Moral Majority/Religious Right/Fundamentalist/Evangelicals have been shown as absolute hypocrites once and for all. I mean yeah before individually you could find lots of hypocrisy among any single Fundamentalist leader or sect, but Trump has given a single definitive example to mock all of them with.
+:PROPERTIES:
+:Author: scruiser
+:Score: 4
+:DateUnix: 1478298776.0
+:END:
+
+**** "People in political group X are all hypocrites" is a super awful thing that everyone says about everyone, and you really shouldn't ever say it. Even when talking about bad people. Especially when talking about bad people.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 6
+:DateUnix: 1478300139.0
+:END:
+
+***** I should probably amend my statement to the majority of the leaders of the Moral Majority/Religious Right/Fundamentalist/Evangelicals. I mean Jerry Falwell Jr. endorsed Trump but a group of liberty university students signed a statement against him. So not all the people, but the movement (as in the leaders and public faces) itself?
+
+#+begin_quote
+  shouldn't ever say it.
+#+end_quote
+
+Ever? I can understand how it is useless if you are trying to have a dialogue with those bad people, but if they absolutely refuse to compromise ever (as in they think filibustering Supreme Court Judges for 4 years is a good choice because they are so absolute in their moral convictions) and it weakens their position and pushes fence-sitters and undecideds away from them, then calling them out as hypocrites is useful.
+:PROPERTIES:
+:Author: scruiser
+:Score: 5
+:DateUnix: 1478305203.0
+:END:
+
+****** #+begin_quote
+  and it weakens their position and pushes fence-sitters and undecideds away from them
+#+end_quote
+
+...maybe they're trying to keep Trump out of office.
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 1
+:DateUnix: 1478401604.0
+:END:
+
+
+****** "Calling leaders hypocrites" is one thing (and I don't really like it either), but strong negative statements against a political movement as a whole (like "absolute hypocrites") are really bad. They ignore different perspectives (maybe all the leaders are bad in one respect but great in others or whatever), and invite tribal signaling, while making you feel good because you're casting down the outgroup. They're a mind-killer.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 1
+:DateUnix: 1478305786.0
+:END:
+
+******* #+begin_quote
+  invite tribal signaling, while making you feel good because you're casting down the outgroup.
+#+end_quote
+
+In terms of winning the culture wars, that sounds like a positive to me.
+
+#+begin_quote
+  They're a mind-killer.
+#+end_quote
+
+I'm aware of that, but I think it is worth it. I can understand trying to keep the discourse going in a direction that promotes pragmatic compromise and cooperation. The thing is there is no compromise or cooperation with the Evangelical Fundamentalist Biblical-literalist Christian mindset and thus there is no utility in trying to keep that door of compromise open. Their politics and religion have become tied together into one fractionally wrong mindset. Political compromise is sin, they are eager to elect politicians that will hold the world economy hostage over their agenda. They literally can't acknowledge scientific evidence that contradicts their faith or politics, whether it be evolution, Global warming, or simply social science's evaluation of their policies. They claim to be pro-life while cutting social safety nets for single mother and promoting abstinence only education. They get riled up over irrational fears about transgender people using public restrooms yet are willing to elect a man that brags about sexual assault.
+
+So yeah, the hedons I gets from beating them down in a reddit post is worth more than the expected value from the off chance they actually get something right or finally decide to compromise on an issue. If you want to down vote me for violating some rationalist ideal of evaluating every idea fairly and avoiding tribal signal, well so be it, but I think this is a group that deserves to be made fun of and we should be allowed to [[http://lesswrong.com/lw/3h/why_our_kind_cant_cooperate/][enjoy a tribal signal every now and then]].
+:PROPERTIES:
+:Author: scruiser
+:Score: 3
+:DateUnix: 1478309290.0
+:END:
+
+******** Why is this post being downvoted? Arguing in a constructive way for defecting in a Prisoner's Dilemma isn't against the rules of this subreddit, whether you agree with the reasoning or not. For that matter, why is /my/ post above being downvoted?
+
+Otherwise, I see your point. I don't know anything about American Churches, so this is a case of inside view vs outside view. As an outsider, I think that we are so heavily biased towards believing that the outgroup is closed off to reason and that trying to communicate with them is pointless, that we should just ignore that opinion at all time. You mentioned above how their leaders are awful but there are maybe university students who identify with their ideas and yet are open to reason, for instance.
+
+But really, the reason I'm arguing against tribe signaling is that I see it everywhere, and as someone who feels mostly tribe-neutral, it pisses me off. As in, I'm tired off seeing people take a dumb on Clinton/Trump/Sarkozy/Hollande/Yudkowsky/whoever and say that their opponents are moron who can't handle the truth. How am I supposed to make an opinion with that? Only listen to one side of the story and partake in the bashing of my new outgroup? Which is why I always argue [[http://slatestarcodex.com/2014/02/23/in-favor-of-niceness-community-and-civilization/][in favor of niceness, community and civilization]].
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 3
+:DateUnix: 1478339333.0
+:END:
+
+********* #+begin_quote
+  I don't know anything about American Churches, so this is a case of inside view vs outside view.
+#+end_quote
+
+Fair enough, I have kind of a personal bias in this case. I was raised Southern Baptist.
+
+- I was shown [[https://en.wikipedia.org/wiki/Kent_Hovind][Kent Hovind]] videos as a kid and told they were fact. Kent Hovind is a young earth creationist. He believes Evolution is a deliberate lie and the Earth is only 6,000-10,000 years old. His "theories" fail back-of-the-envelope calculations.
+
+- My High School (located in a suburban area of Florida), taught abstinence-only sex education. We were shown pictures of the effects of STDs, and we were told how having sex before major would ruin our ability to bond emotionally with our future spouse. One exercise they used was to give us pieces of tape and then stick the pieces of tape to each other and pull them apart, so that the pieces of tape eventually lost this stickiness. This was supposed to illustrate how pre-marital sex would affect us. There was no discussion of any forms of birth control. There was no discussion of how to get tested for STDs. There was no discussion of what consent means.
+
+- One of my Christian friends from Church in High School shunned another one of my friends upon learning that he was bisexual. My Christian's friend's parents encouraged his decision to shun my bisexual friend. These Christians were in most cases your stereotypical Southern Hospitality sort in terms of their behavior. They were willing to open up their home (their father was a lawyer and made lots of money so they had a big home) to lots of Church youth group events, they volunteered at the church, etc. My Mom tried convincing his Mom that shunning wasn't mature and wasn't Christian behavior, but instead of convincing her, instead his Mom convinced my Mom that their was probably something else wrong or perverted about my bisexual friend just because he was bisexual, and that her son was being justifiably cautious and prudent by avoiding my bisexual friend.
+
+I can give more examples of why this group is so bad. I can understand you wanting to take a neutral stance, particularly if you haven't been exposed to this cultural mindset before.
+
+#+begin_quote
+  American Churches
+#+end_quote
+
+This is a mistake. It isn't actually Americans churches in general. It is a specific subculture mostly found in the South, the so called "Bible-Belt". Hence why I used the terms "Evangelical", and "Fundamentalist" repeatedly. American Catholics, for example, will believe evolution is real, believe climate change is real, and may be Democrat or Republican, because they don't view things in terms of a single set of issues. Southern Baptists on the other hand will often make statements indicating that Catholics aren't real Christians, I've heard said at the pulpit of the Church I grew up in that Catholics are pagans (because of their worship of the Saints, which isn't true, but the idea was never corrected from the pulpit). Many non-evangelical denominations have found room for compromise and understanding on issues like gay marriage. So American Churches are not one thing. That said, I think many surveys indicate somewhere between 20% and 50% of Americans believe in young-earth creationism (evolution is a lie, the Earth is only 6,000-10,000 years old) so they do represent a plurality and a leading cultural force, which is thankfully dying off.
+
+#+begin_quote
+  You mentioned above how their leaders are awful but there are maybe university students who identify with their ideas and yet are open to reason, for instance.
+#+end_quote
+
+Yeah, fair enough. Even if not used as an argument for hypocrisy, I think Trump is a very good argument about keeping religion and politics separate. Also, the younger generation could potentially leave for less toxic forms of Christianity,
+
+#+begin_quote
+  Only listen to one side of the story and partake in the bashing of my new outgroup?
+#+end_quote
+
+Here is a [[http://www.patheos.com/blogs/rolltodisbelieve/][blog]] that I think gives regular really good summaries of different aspects of Fundamentalist Evangelical Christianity. [[https://en.wikipedia.org/wiki/Evangelicalism_in_the_United_States#Recurrent_themes][Wikipedia article]] for a more neutral starting place. [[https://en.wikipedia.org/wiki/Kent_Hovind][Kent Hovind]] a shining example of a Creationist "Scientist" (his PhD is from a diploma mill).
+
+#+begin_quote
+  one side of the story
+#+end_quote
+
+[[https://answersingenesis.org/][Here is answers in genesis, one of the clearer presentations of Creationism]]. They have like no peer-reviewed journal articles to back up any of their claims, but they have plenty of bible verses and their arguments may sound reasonable to someone with a 5th-graders or even a High Schooler's education in science, especially someone who doesn't understand their peer review and consensus building process behind the current scientific consensus.
+
+Here is [[https://www.thegospelcoalition.org/][the gospel coalition]], a set of blogs by fundamentalists. Spend any time browsing and you will find stuff that will disgust you... Oh look on the main page an [[https://blogs.thegospelcoalition.org/trevinwax/2016/11/02/whats-really-going-on-with-evangelicals-and-same-sex-marriage/][article]] about why compromise on Gay marriage is completely unacceptable! I didn't cherry pick their worst, I simply glanced at their main page. They have an [[https://www.thegospelcoalition.org/article/being-on-gods-side-a-dozen-recommendations-for-the-religious-right][article]] on their main page about why the Religious involvement in politics is still a good thing, but on the other hand the qualifications they give to this are pretty strongly against Trump and Trump supporters.
+
+#+begin_quote
+  Which is why I always argue
+#+end_quote
+
+If it is an absolute, I am not going to convince you. That said, for me, there is a threshold. People who argue against the dangers of strong AI, yeah the evidence isn't yet really clear and I can understand that they are arguing in good faith. Heck even MRAs still have good points mixed into the redpill that has claimed the movement. But for Fundamentalist Evangelicals, I claim from personal experience that the movement is too far gone.
+:PROPERTIES:
+:Author: scruiser
+:Score: 6
+:DateUnix: 1478359282.0
+:END:
+
+********** Fair enough.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 2
+:DateUnix: 1478362518.0
+:END:
+
+
+******** It's funny. You talk about a group being unwilling to compromise as your justification to be unwilling to compromise with them. Not only that, but you imply disdain for their unwillingness to compromise, and yet consider your own unwillingness without fault.
+
+Let me ask a question. What if you're wrong? Sure, narrow the scope of the group to be limited to people unable to compromise and you can say that they are unwilling to compromise, but when you merely talk about 'the other tribe', there's no /inherent/ quality that makes them unwilling to compromise. What if, now that you've dismissed them all as uncompromising, and thus refuse to entertain compromising with them, they say the same about you? If we go with what you say, they have every reason to say that our tribe wants their tribe scattered to the winds, and are unwilling to compromise. From that, what else can follow but meaningless hatred between the two tribes, if each tribe sees the other as not worth rational discourse with?
+
+Even if they deserve to be made fun of, however you'd quantify that, making fun of them isn't productive in any way, and is in fact counter to the idea of spreading rationality. The only good it does is make you feel superior on the same primal level they feel superior by retaliating to our closed-minded intolerance. That is, our closed-minded ignorance if we choose to attack and belittle them because it /feels good/.
+:PROPERTIES:
+:Author: InfernoVulpix
+:Score: 2
+:DateUnix: 1478323638.0
+:END:
+
+********* Your overall point is worth considering. On the other hand when you open up yourself to compromise repeatedly, but the other party shows complete unwillingness to do it, at some point you should come to expect them to be intransigent, surely? Or do you keep stepping on the same rake over and over forever?
+
+Tit-for-tat is sensible enough and that's what's going on here, I suspect. It's just that tit-for-tat against a defect-bot looks much like a defect-bot itself.
+:PROPERTIES:
+:Author: AugSphere
+:Score: 5
+:DateUnix: 1478381920.0
+:END:
+
+
+**** You could say the same thing about feminists supporting Hillary (and many on the right did when those feminists were supporting Bill). "I endorse this person as the best of our available options on consequentialist grounds" is not equivalent to "I unequivocally support everything about this person".
+:PROPERTIES:
+:Author: Iconochasm
+:Score: 3
+:DateUnix: 1478310230.0
+:END:
+
+***** False equivalency much? "consequentialist grounds". Fundamentalists don't acknowledge consequentialist moral reasoning in the first place, that's one of their problems (not that they don't use it justify themselves, they just retreat back to their moral absolutists stance whenever someone try's to push a pragmatic view I.e they'll vote Trump to get judges that will reverse Roe v Wade because baby lives are at stake, but they won't promote birth control and they will promote abstinence only education). Feminists as a group don't act like their leaders are supposed to be morale paragons. Fundamentalist Christians have nominally pushed the idea that their leaders should embody family values, only to back off if it whenever they get a politician they like (i.e. Reagan or Trump). So yeah Feminists aren't hypocrites for voting Hillary or even Bill because they don't try claiming an absolute moral mandate that they refuse to compromise on ever.
+:PROPERTIES:
+:Author: scruiser
+:Score: 3
+:DateUnix: 1478311279.0
+:END:
+
+
+*** I think I'll be OK with whichever way the election turns out, to be honest. A hillary win benefits me because I'm liberal, while a trump win will only result in one term, while temocrats sweep congress during the midterms.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 1
+:DateUnix: 1478273796.0
+:END:
+
+
+** Why must rationalist fiction be like a puzzle? Doesn't that shunt all rationalist stories into the mystery genre?
+
+Complications arise unexpectedly in life all the time. It seems arbitrarily restrictive to drop hints to the protagonist and readers where realistically there would be none.
+
+Let's leave aside the issue of foreshadowing being good writing, as that's a prescriptivist rule of writing which shouldn't have any bearing on the defining elements of a work of the rationalist subgenre.
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 9
+:DateUnix: 1478303848.0
+:END:
+
+*** There's a give and take. I appreciate the culmination of careful forshadowing, but I do also love when a story has some curveball hit the plot because sometimes shit just happens.
+:PROPERTIES:
+:Author: Iconochasm
+:Score: 8
+:DateUnix: 1478310686.0
+:END:
+
+
+*** I don't think rationalist fiction requires that /every/ fact or event in the story can be predicted, but the idea is that we don't hide everything from the reader- there is no 'magic moment' in the story that the character magically solves all of their issues in a way the reader couldn't have done, given the facts... There is a small difference, imo, but it's there.
+:PROPERTIES:
+:Author: Dwood15
+:Score: 7
+:DateUnix: 1478313517.0
+:END:
+
+**** I agree - a lack of deus ex machina and the story being a puzzle are very different things. I don't understand why the latter rather than the former is the sidebar's third defining element of rationalist fiction.
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 4
+:DateUnix: 1478313892.0
+:END:
+
+
+*** #+begin_quote
+  Under standard literary convention... the enemy wasn't supposed to look over what you'd done, sabotage the magic items you'd handed out, and then send out a troll rendered undetectable by some means the heroes couldn't figure out even after the fact, so that you might as well have not defended yourself at all. In a book, the point-of-view usually stayed on the main characters. Having the enemy just bypass all the protagonists' work, as a result of planning and actions taken out of literary sight, would be a diabolus ex machina, and dramatically unsatisfying.
+#+end_quote
+:PROPERTIES:
+:Author: traverseda
+:Score: 3
+:DateUnix: 1478323414.0
+:END:
+
+**** Again, I agree, but lack of ~ ex machinae is a different rule than the story must be a puzzle.
+
+Also, that's arguing for foreshadowing being good writing, which isn't what I'm disputing. I'm disputing the requirement that all rationalist stories be a puzzle, for it's overly restrictive if the intent is really, "The story does not utilize ~ ex machina plot devices."
+
+Take, for example, a story about elves. The protagonist is on a stroll through the forest contemplating how they might beat their political and social rival when they witness humans prospecting.
+
+If the protagonist was hyper-focused on their clan struggles, and you want to shock the reader as well as the protagonist, then one shouldn't foreshadow the humans' appearance. But that's not puzzle-like.
+
+For the above example, if the antagonist knows more magic than the protagonist, then of course they'll steal it. It's the author's job to find a way to make that satisfying. Adding a requirement that all works of the subgenre be puzzles is one author forcing their solution to the problem on all others. Better to have a subgenre-defining rule that reflects the intent than a rule that solves the main problem while introducing unnecessary restrictions and obstacles.
+
+I'm not sure what the full intent is, so I can't write that alternate rule myself. [[/u/EliezerYudkowsky]]'s writing on the subject is intertwined with writing advice. A rule that's also writing advice is prescriptivist and unnecessarily restrictive.
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 1
+:DateUnix: 1478326872.0
+:END:
+
+***** Actually, I was giving a counter-example. In HPMOR, that quote is exactly what happened.
+
+Black swan events happen all the time in ratfic. Wildbow was praised for rolling dice to decide which characters die.
+:PROPERTIES:
+:Author: traverseda
+:Score: 2
+:DateUnix: 1478368419.0
+:END:
+
+****** All the more reason to not have the rule state the story is like a puzzle.
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 2
+:DateUnix: 1478382961.0
+:END:
+
+******* They rule is that they can reach the same conclusion as the characters. Not that they be able to reach the correct conclusions.
+
+I feel like once you're a ways into the lesswrong stuff, that distinction is fairly obvious. No one who's looked in the methods of rationality would think that puzzles need to be formal logic, entirely solvable. They're always probabilistic.
+:PROPERTIES:
+:Author: traverseda
+:Score: 2
+:DateUnix: 1478400707.0
+:END:
+
+******** I wouldn't think of that as a puzzle, and I've read the lesswrong stuff. "Puzzle-like" is ambiguous wording that only obfuscates the rule's intent.
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 1
+:DateUnix: 1478409003.0
+:END:
+
+********* Fair enough.
+
+Do you have a proposal for a rule that communicates that intent more clearly?
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1478413918.0
+:END:
+
+********** Unfortunately not. I'm still not sure what the intent is. I understand more what it's likely to be, but not enough to give a concise rule. I'd like very much to think of one myself and put it to a vote; since I can't put my finger on the right wording, I'm trying to first convince people the rule needs clarifying, in the hopes that a solution arises.
+
+The best I have so far is from my reply to Walesy in this thread chain, "Characters do not pull information and resources out of thin air," which itself is also too vague.
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 1
+:DateUnix: 1478427210.0
+:END:
+
+
+*** I believe the intent of the rule is that protagonists don't solve conflicts using information or resources that aren't available to the reader, and a consequence of that is that the reader can solve the story prior to the solution being displayed in the text.
+
+If the protagonist is displaying heretofore unknown skills and/or equipment, that's not just bad storytelling, it's breaking the fundamental truth-seeking and thoughtfulness that's expected of rationalist fiction.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1478363413.0
+:END:
+
+**** #+begin_quote
+  I believe the intent of the rule is that protagonists don't solve conflicts using information or resources that aren't available to the reader[...]
+#+end_quote
+
+Right.
+
+#+begin_quote
+  ... and a consequence of that is that the reader can solve the story prior to the solution being displayed in the text.
+#+end_quote
+
+I disagree. Say a character has been established as an excellent diplomat, and there's a conflict with another nation. The obvious answer to the conflict is to send the diplomat and spend time showing how the diplomat solves the conflict.
+
+Told straight, the conflict arises, they send the diplomat to a diplomatic convention, and we watch them as they wield diplomacy to their faction's ends.
+
+Told as a puzzle, the diplomat explains the issues, describes the players (other diplomats) and what the diplomat thinks they want, and lays out what resources the diplomat has with which to bargain and deal.
+
+Both options embrace the fundamental truth-seeking and thoughtfulness that's expected of rationalist fiction; they just do it differently.
+
+--------------
+
+In the first scenario, if we have yet to see inside the mind of that diplomat, then there are things we reasonably won't know. The diplomat will probably give us an overview before they talk to someone as a review, but they might also go straight into dealing in diplomacy, gradually revealing to the reader their approach as they do it. The latter isn't a puzzle; the reader may be familiar with the resources of their faction and thus able to guess what incentives to deal the diplomat can offer, but has no way of knowing exactly how the diplomat will respond to novel information. Further, if the diplomat is given free reign to promise whatever they like, no matter how outrageous, then the reader won't be able to guess what the diplomat will say in a conversation unless it's something like:
+
+- "There's Duke Gaspard. He loves ponies."
+
+- Reader stops reading and thinks for a few minutes.
+
+- "'Hello, Duke Gaspard! We need you to ally with us for just a season-long campaign. Just monster-slaying. If you do, we promise to turn you into the largest pony to ever live - greater than even the moon to a cave-child's eye!'"
+
+Even then, I don't foresee a reader guessing that solution.
+
+If the story must be puzzle-like, then the author is forced to go with the second option, where "the diplomat explains the issues, describes the players (other diplomats) and what the diplomat thinks they want, and lays out what resources the diplomat has with which to bargain and deal."
+
+It's one solution, but it's not the only solution, and I don't understand why all works of rationalist fiction must abide by the stipulation that they must be puzzle-like, so long as resources or information aren't pulled out of thin air.
+
+--------------
+
+If someone is the ruler of an alternate universe's country, and a new conflict arises that inspires the ruler to ask, "Do we have people who specialize in this sort of thing?" and the answer is yes, then the reader wasn't aware of the information specifically but could still have deduced "delegate to specialists" as an honest means a ruler of a country would use to solve a novel conflict.
+
+Another example: a character is well connected. A new conflict comes to their attention. The character goes to a heretofore unmentioned contact in order to solve or seek help in solving the the conflict. A reader couldn't puzzle that out except in the broadest sense, but the character is still acting rationally according to their characterization.
+
+--------------
+
+Perhaps I'm quibbling. The distinction is fine, but I think it's important that a subgenre-defining rule be as specific and hew as closely to its intent as possible.
+
+I'm not sure if I'm being clear.
+
+Say the conflict is opening a mechanical apple by a student at magitech academy.
+
+*Puzzle:*
+
+- 1) Learn (components). 2) Think (how they fit together). 3) Apply (solutions).
+
+*Other approach I:*
+
+- 1) Think (about mechanical apples). 2) Learn and apply at the same time (e.g. ask the academy's resident klepto if they know anything about mechanical apples, then follow them to a thief's guild meeting hoping someone will open it for you).
+
+*Other approach II:*
+
+- 1) Think (about immediate solutions). 2) Apply (e.g. place a reward for the apple's opening and wait; offer to grade a Professor's homework for lower classes if they open it for you; run odd words in the speech of the person who gave you the apple through some cryptographic algorithms).
+
+*Other approach III:*
+
+- 1) Apply (solve it during the same interaction you receive it by noticing hints on the device itself, and relating each hint back to classes previously covered in the story; e.g. where Leaf in the Wind means freedom from gravity: "A leaf? Maybe..." He lightly tossed it straight up, and at the zenith of its arc, the leaf lit and opened a third of the apple.)
+
+Apologies for the lack of concision. Hopefully I've at least made my argument clear.
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 2
+:DateUnix: 1478367457.0
+:END:
+
+
+** Just built my first computer. Was really worried when I tried to turn it on and I didn't get a video signal, but after an hour of troubleshooting I discovered the problem was I hadn't been nearly forceful enough when installing the ram. Really gotta jam that stuff in there. Anyway, first post on my new desktop!
+:PROPERTIES:
+:Author: Turniper
+:Score: 8
+:DateUnix: 1478291711.0
+:END:
+
+*** Nice. Yeah, I always feel like I'm going to crack the motherboard in half with the force it takes.
+:PROPERTIES:
+:Author: ketura
+:Score: 3
+:DateUnix: 1478294408.0
+:END:
+
+
+*** Both socketing ram and the CPU can be quite nervewracking
+:PROPERTIES:
+:Author: Anderkent
+:Score: 3
+:DateUnix: 1478298180.0
+:END:
+
+**** I actually had a really easy time with the cpu, an i5 6600. No visible pins, the mobo had just the bar to secure it with, and I didn't even need too much force.
+:PROPERTIES:
+:Author: Turniper
+:Score: 1
+:DateUnix: 1478299384.0
+:END:
+
+
+*** Had that exact problem when building my first. Freaked out, took it to a shop. Felt very silly.
+:PROPERTIES:
+:Author: Aretii
+:Score: 2
+:DateUnix: 1478297118.0
+:END:
+
+
+*** Hey, congrats! Whatcha gonna do with the thing?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1478318132.0
+:END:
+
+
+*** Congrats!
+
+The first time I built a desktop it wouldn't boot for hours (the CPU has a separate power cable), and then the OS wouldn't install (so did the hard drive)!
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 1
+:DateUnix: 1478326527.0
+:END:
+
+
+** While these guys traditionally just talk about game design, I think this week's video from Extra Credits on the way characters psychologically confront the supernatural in horror stories is universally applicable and relevant to rational fiction within the horror genre.
+
+[[https://youtu.be/DsgHmwnAIV4]]
+:PROPERTIES:
+:Author: trekie140
+:Score: 8
+:DateUnix: 1478274140.0
+:END:
+
+*** As someone writing a rational horror, this was very interesting. I'm actually subscribed to them and I hadn't seen this video, so thanks for sharing it! Some of the stuff they mentioned was a bit basic for horror writers, but the difference between thinking you're going mad and the universe itself being a mad place was something I hadn't considered. It's kinda obvious in retrospect, but now that I'm aware of it, I think I can exploit better in my work.
+:PROPERTIES:
+:Author: That2009WeirdEmoKid
+:Score: 3
+:DateUnix: 1478275893.0
+:END:
+
+**** I think they're advice is more applicable to lovecraftian horror, where one of my favorite ideas it explores is that rationality is a fantasy. Not only is the world completely unlike what we reason it to be, but it actively defies reason in our attempt to understand and control it.
+:PROPERTIES:
+:Author: trekie140
+:Score: 2
+:DateUnix: 1478281154.0
+:END:
+
+***** My interpretation of Lovecraft was that humanity in particular was limited to functioning within a small subset of rationality/science, and that we simply weren't psychologically equipped to peer past the surface of our small pond. As opposed to something like the Tales of MU setting, where the universe intelligently, malevolently, and universally interferes with the experimental method.
+:PROPERTIES:
+:Author: Iconochasm
+:Score: 2
+:DateUnix: 1478310479.0
+:END:
+
+****** I think it's a bit of both.
+
+The laws of physics in our universe are uniform, but we can imagine a universe in which they varied from space to space. What we have more a difficult time imagining is a universe in which the laws of mathematics vary from place to place, and I think Lovecraft's universe would be such a place. There are still some aspects of rationality that might be able to translate over, but not many.
+
+Lovecraft's universe wasn't malevolent exactly, but it was viciously indifferent in a way that he anthropomorphically characterized as essentially malevolent. There's normal indifference, what we think indifference is, and then there's Lovecraftian indifference, when our luck runs out and the universe stops being so gentle and shows us that what we thought was a callous, perhaps slightly evil universe was actually incredibly merciful - though no longer.
+:PROPERTIES:
+:Author: chaosmosis
+:Score: 1
+:DateUnix: 1478415183.0
+:END:
+
+
+** I'm looking for some beta readers to give me critique and advice on a paper I'm writing. Looking specifically for things I can include or miss. In the paper I'm proposing a system for objectively quantifying aspects of games. The paper is not ready for public consumption, so I'm hoping for volunteers I can rely on.
+
+Note, I'm not trying to answer is "Is this objectively good?" but I am trying answer questions such as "Is this game playable the way it was designed to be played?" among other things, such as, "objectively, what is the average FPS of game X given Y specifications?"
+:PROPERTIES:
+:Author: Dwood15
+:Score: 5
+:DateUnix: 1478279622.0
+:END:
+
+*** I'd be happy to give it a look.
+:PROPERTIES:
+:Author: ketura
+:Score: 2
+:DateUnix: 1478282736.0
+:END:
+
+**** Whoops, was supposed to be a pm. Cat's out of the bag I guess...
+
+[[https://docs.google.com/document/d/18Al4C0N7JRm8Z9QsUc-1wgA08BnpUPxFZpFFDu1ppQU/edit?usp=sharing]]
+:PROPERTIES:
+:Author: Dwood15
+:Score: 1
+:DateUnix: 1478284236.0
+:END:
+
+***** Alright, I've finally got my thoughts together:
+
+- Use hyperlinks, not footnotes. Well, use footnotes if you like /as well/, but it's [Current Year]. Hyperlinks are convenient.
+
+- The connection between the posts that you mention and your premise is not clear.
+
+- The reference to the "game being called 'terrible'" sets your audience up to assume you /are/ talking about fun. You deflect this later, but you can do better by not bringing up the question in the first place: use the word "playability" instead, which describes what you're looking to accomplish a bit better.
+
+- Discussing motivation for a paper is fine, but don't just state "these things motivated me", instead spend some time walking the audience through your thought process, try and set up some of the thought connections that you had, and let the reader come to the conclusion you did by walking the same mental path.
+
+- I would not bother discussing multiplayer being outside of scope. If your methods are correct, they will scale just fine to the multiplayer experience, and drawing attention to what you're /not/ going to discuss before you've brought any meat to the table sabatoges your reader's interest. If you haven't already piqued their curiosity, but then draw attention to an interesting idea and then say "this. I won't talk about this", you leave your reader a bit confused about what you /will/ talk about.
+
+- It's a bit unclear if your methods are intended for use by game developers or game players. Even if they might be used by both, I would focus on how this benefits developers (as they are in fact the ones that would most use such a system).
+
+- The System Requirements section is a bit strange. The connection between having a system requirements list and the topic of this paper is not immediately clear. Walk the reader through why these are required. If this is instead an example of a possible application of the methods of this paper, instead move this section to the end as a proof of concept.
+
+- The System Requirements questions themselves are all over the place. 1 and 2 are the same question. I know one is about installation and one is about running, but I'm afraid when it comes down to brass tacks, if you can install it but can't run it /you haven't really installed it/. 3 seems to be a meta-consideration and does not help actually define a specific requirement so much as put an upper bound on all such requirements. 4 should be reworded to indicate you are looking for several levels of requirements. 5 and 6 seem oddly specific and their reason for inclusion is not super clear. 7 and 9 are related enough to be collapsed into one. All in all the reason the reader is answering these questions is left unclear.
+
+- What is the purpose of the Technical Operations section? I see questions that are common usability issues, but it's not clear if the reader should be coming up with these themselves, or if this is a list of metrics that is canonical, or what is going on. The jabs at buggy games is not really needed; you don't need to sit down and explain to developers that errors in their code is a Bad Thing. Oh, and FPS seems like a pretty damn important metric for such a list; having your game chug along at 5 FPS is a usability issue much worse than many of the nitpicky things being measured.
+
+- "Gameplay Attributes" is an unclear statement. You list /genres/ (and call them qualities), but I have no idea what this section is talking about.
+
+- Heck, I'm not quite sure what /any/ of these sections are here for. These are all things related to games, yes, and I understand that you have some sort of system for quantifying game metrics, but I've got a jigsaw puzzle with more holes than pieces here. Discuss methods and /then/ discuss differences in kind, if that's what this is trying to.
+
+- Story analysis seems completely orthagonal to the question of "is a game playable", but without an understanding of what's going on, it's hard to tell.
+
+- All in all, I know more about what this paper is trying to talk about based on what you've told me /outside/ of it than what you've told me /inside/ it. I don't have a chain of thought to follow, and outside of the existence of the premise I haven't walked away with any more information than what I started with. I understand this is obviously unfinished, but I'm not even sure what it's /trying/ to build.
+
+[[https://docs.google.com/document/d/1qM5AOL8l3rpky4z-4x4M8vQXgX5wB1c0JFwoU0UepG4/edit?usp=sharing][I modified a bit of the first few paragraphs here]]. This will hopefully give an example of what I mean by leading the reader's thought process.
+:PROPERTIES:
+:Author: ketura
+:Score: 2
+:DateUnix: 1478324551.0
+:END:
+
+
+** So an MLP fanfic called [[http://www.fimfiction.net/story/27429/Quantum-Castaways][Quantum Castaways]] just updated. I'm posting it here, because the latest chapter is blowing my mind. Evidently, the "Quantum" part of "Quantum Castaways" has do with with [[#s][Spoilers]] and the latest chapter has a shitload of diagrams about parabolic dishes and other assorted magibabble. This is perhaps the most ridiculously in-depth theorycrafting about MLP magic I've ever seen, and I'm seriously impressed.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 3
+:DateUnix: 1478290279.0
+:END:
+
+*** I just read it. I highly recommend it.
+:PROPERTIES:
+:Author: gbear605
+:Score: 1
+:DateUnix: 1478396310.0
+:END:
+
+**** Man, was I excited when it updated after /three years./
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 1
+:DateUnix: 1478404406.0
+:END:
+
+
+** If anyone's interested, the (anonymized) participation logs for [[https://np.reddit.com/r/rational/comments/425w1n/d_friday_offtopic_thread/cz7ssa8/]["Friendship"]] Six (containing over 1300 questions that were exchanged between February 2015 and June 2016 [though not their answers], as well as the numbers underlying the graphs shown in the comment linked above) are available [[https://www.dropbox.com/sh/vncl028gdoqc8ld/AAA4TZwrK7yDhifDVmzM6-Z9a?dl=0][here]]. (Having been converted from Google Sheets to .xlsx format, these files seem to be somewhat glitchy, as they caused my copy of Excel to crash several times while I was anonymizing them.)
+
+--------------
+
+It seems, by the way, that even Google isn't perfect in searching Reddit. In order to find the first link of the previous paragraph, I had to sift through [[https://www.reddit.com/r/rational/wiki/fridayofftopic][the list of Off-Topic threads]] /manually,/ because a search for =toakraka friendship spiel site:www.reddit.com/r/rational= turned up /literally nothing./ (Needless to say, Reddit's built-in search function didn't work, either.) Likewise, I had to check [[https://www.reddit.com/r/rational/wiki/mondaygeneralrationality][a zillion General Rationality threads]] in order to dig up [[https://np.reddit.com/r/rational/comments/48akta/d_monday_general_rationality_thread/d0ii4d6/?context=1][this favorite comment of mine]], because a search for =toakraka animator slave site:www.reddit.com/r/rational= didn't find it. Sigh... Well, I'm glad that [[http://i.imgur.com/LOThjpU.png][I came up with the idea to create and maintain those lists in the first place]].
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 4
+:DateUnix: 1478272523.0
+:END:
+
+*** I like Friend Six. Good sense of humor. They're the attractive female friend you met in high school, right?
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 2
+:DateUnix: 1478302181.0
+:END:
+
+**** /She/ is, yes.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 1
+:DateUnix: 1478302223.0
+:END:
+
+***** Haha, right. My apologies.
+
+She's a keeper.
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 1
+:DateUnix: 1478302298.0
+:END:
+
+****** [[http://i.imgur.com/GueMovg.png][>implying]]
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 1
+:DateUnix: 1478302992.0
+:END:
+
+******* That sucks. You're going to need to be more patient if you want to keep friends as they move through life in interesting directions.
+
+She's still a keeper.
+:PROPERTIES:
+:Author: TennisMaster2
+:Score: 1
+:DateUnix: 1478303256.0
+:END:
+
+
+*** Did you try searching reddit.com[[/u/toakraka]]?
+:PROPERTIES:
+:Author: ketura
+:Score: 1
+:DateUnix: 1478275133.0
+:END:
+
+**** That returns no results. I've seen it mentioned several times that the [[/u/me][u/me]] page allows you to access only your most recent 500 comments/submissions/upvotes/etc.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 2
+:DateUnix: 1478275718.0
+:END:
+
+***** Yeah, it's not great. And so far as I know, there's no way to export your entire comment history unless you want to run a BigQuery against the entire database of reddit comments. I get why they limit it, but it seems like one of those features that would be ripe for adding to reddit gold. (So far as I know, the user pages use dynamic parameters for generation, which means that Google wouldn't really help you anyway.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1478277418.0
+:END:
+
+
+** So, how can we found our own nation? What does a nation need, to consolidate enough power to matter?
+
+Let's think about the problem space for a bit, because I know I'm not prepared to even think about planning.
+
+- A place for people to live?
+
+  - What about a distributed republic? A "country" that owns no land?
+  - Boats?
+
+- Our own banks, and control over what kind of companies get investments? Who gets loans?
+
+  - I don't know if we can invest in companies that we like and be competitive. But my bank is offering free ipads with new accounts, so I suspect the efficient market hypothesis isn't in play and that they don't have the consumers best interest. If they have enough market power to be as inefficient as they are...
+
+- What are our countries key exports? I presume we're not growing grain ourselves, so we're going to need to buy some.
+- Etc, et al.
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1478315092.0
+:END:
+
+*** Have you checked out Sealand? [[https://en.wikipedia.org/wiki/Principality_of_Sealand]]
+
+I think the main criteria they're missing is: "people and other countries recognize it as a country"
+
+You can't have businesses go to your place to avoid taxes unless the countries in which they do business allow them to do so. You can't have embassies or diplomats unless other countries allow you to. You can't gather global support to help defend you against invasion unless the world perceives action against you as an actual invasion and decides to help.
+
+And it matters whether the people in the land you control perceive you as a government and obey your laws. If the whole world decided and agreed that North Korea isn't a real country, it would still keep doing what it's doing internally and not much would change (unless we decided to take action as a result of their new definition).
+
+Having things like farms, citizens, banks etc might shift public perception in your favor, but I think they're more of things that a country probably wants to have, rather than strict necessities.
+:PROPERTIES:
+:Author: zarraha
+:Score: 3
+:DateUnix: 1478319753.0
+:END:
+
+**** #+begin_quote
+  Have you checked out Sealand?
+#+end_quote
+
+At least give me the credit of assuming I've read the basic literature on the subject ;p
+
+--------------
+
+This is more or less why I'm asking this question, to figure out what we need.
+
+As to the why, that should be pretty obviously. The US isn't doing so well, and most of the people in the rationalist diaspora live in the US, excluding myself. How do we provide an alternative franchise? It's a question I think we should each think about for at least 5 minutes.
+
+What roles does the US fill, what are it's most useful facets, and how can we provide them ourselves without relying on the US?
+
+Ideally, once we've identified those roles, we'd take gradual steps towards creating an organization that fullfills them.
+
+I think embassies, passports, and recognition as a country /could/ be pretty low priority, depending on the strategy we use. A distributed republic, a seamount, A loose collection of social-media tools, a bank. None of those require recognition as a country.
+
+I have given some thought to identity services as a fundamental export, verification of some sort of digital "citizen". It would solve a lot of problems in smart contracts if you could rely on unique user votes.
+
+So let me phrase this question a bit differently. What essential services does the US (not the government, but the system) provide for you, and what are our options for bypassing them?
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1478323905.0
+:END:
+
+***** Roads, utilities, police/firemen/ambulances, legal recourse to crimes and civil suits (and deterrence), inspected food and drugs, quality assurance of purchased goods in general, army protecting from (or mostly just deterring) every other nation on Earth from just taking our stuff.
+:PROPERTIES:
+:Author: zarraha
+:Score: 1
+:DateUnix: 1478324232.0
+:END:
+
+****** #+begin_quote
+  utilities
+#+end_quote
+
+Alright, well that's a pretty simple one. We're getting a lot better at distributed utilities. We're not quite at the level where small-scale alternative energy can do everything we need to, but it's more then doable if you're frugal with using energy and can burn some sort of fuel for heat. For personal use if not industrial.
+
+I'm not going to bother even including that on the list, since there are already plenty of commercial, workable, less-convenient, options on the market.
+
+#+begin_quote
+  inspected food and drugs
+#+end_quote
+
+Everybody else uses the FDA, so I don't think it's a big problem if we use it as well. Of course being able to bypass it has some big advantages as well, right now it's enforced.
+
+#+begin_quote
+  police/firemen/ambulances
+#+end_quote
+
+That's a pretty big one. Any ideas?
+
+#+begin_quote
+  legal recourse to crimes
+#+end_quote
+
+I feel like there are policy options we could take that would provide some-recourse. Pretending that we're seasteaders, simply denying them access to resources like marinas and resupply points would be good recourse for financial crimes and the like. If we were a "bayesian-conspiracy" job site, likewise.
+
+If we're providing a legitimate service, then cutting them off from that service provides some manner of recourse.
+
+#+begin_quote
+  army protecting from (or mostly just deterring) every other nation on Earth from just taking our stuff.
+#+end_quote
+
+Duel citizinship, or even just us being a loose unrecognized coalition, does similar.
+
+I'm not positing that the US is going to collapse or anything, just that I know a lot of people who'd rather live somewhere saner.
+
+--------------
+
+But I feel like those are some of the least interesting problems you could have come up with. Here are some ones that I personally find more interesting, that you might have some ideas on.
+
+- Access to community (meeting new people, etc)
+
+- Postal Service
+
+- Face to Face meetings with the people who employ you
+
+- Civic centers that make it much easier to find gainful employment
+
+- Mortgages (for both properties and industrial equipment)
+
+- land equity
+
+Try suggesting some solutions, to some of the problems. We don't have to get it all, but there are some low-handing fruit there. Maybe start with postal service? What would we need to create to make a reasonable alternative to the postal service?
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1478325003.0
+:END:
+
+
+*** #+begin_quote
+  So, how can we found our own nation?
+#+end_quote
+
+Not to be too spiteful, but why should we? I always thought of a "nation" in the sense of a state as representing a "nation" in the sense of a self-consciously self-identified collective.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1478318193.0
+:END:
+
+**** #+begin_quote
+  in the sense of a self-consciously self-identified collective.
+#+end_quote
+
+Alright, how do we build one of those, that's more powerful/useful then the current one?
+
+(also, those two sentences seem pretty unrelated. I'm not sure how your particular definition of nation implies that we shouldn't? Or is it a non-sequiter? If so, it should probably be in a different paragraph.)
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1478323558.0
+:END:
+
+***** #+begin_quote
+  (also, those two sentences seem pretty unrelated. I'm not sure how your particular definition of nation implies that we shouldn't? Or is it a non-sequiter? If so, it should probably be in a different paragraph.)
+#+end_quote
+
+It's more that in nationalist theory, nations are considered organic, pre-theoretical entities that either actually exist or actually don't. /Creating/ a nation where one does /not/ previously exist usually involves becoming a dictator and welding people together through economic, cultural, linguistic, and educational integration (by force if necessary).
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1478351478.0
+:END:
+
+
+** *Is there an Interior Designer in the house?*
+
+Writing a story, I'm seeking a few quick architectural terms which an expert might use, maybe suggestions for changes to a home I've modelled in OpenSim. An initial set of virtual photos: [[http://www.datapacrat.com/OpenSim/]] .
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1478347424.0
+:END:
+
+
+** Good Youtube video on film transition techniques I just watched: [[https://www.youtube.com/watch?v=OAH0MoAv2CI&feature=youtu.be&t=2m]]. I feel like maybe this stuff could also be helpful to actual writers?
+:PROPERTIES:
+:Author: chaosmosis
+:Score: 1
+:DateUnix: 1478414432.0
+:END:

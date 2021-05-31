@@ -1,0 +1,692 @@
+#+TITLE: [RT][WIP] Worth the Candle, Ch 64 (In Which Juniper Stares at his Character Sheet, Again)
+
+* [[http://archiveofourown.org/works/11478249/chapters/29584449][[RT][WIP] Worth the Candle, Ch 64 (In Which Juniper Stares at his Character Sheet, Again)]]
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 133
+:DateUnix: 1512677720.0
+:END:
+
+** Knee jerk reaction to lobbing off skills and replacing them with things that he's not even sure of their function. Yep, that's not going to bite him in the ass or anything.
+
+Good read, looking forward to the next one!
+:PROPERTIES:
+:Author: MarkArrows
+:Score: 37
+:DateUnix: 1512687947.0
+:END:
+
+*** I thought the same! Cutting out Art seems like it will put a hard cap on Joons Skin Magic. But I think the biggest benefit is easy to overlook: Joon knows all his skills now. Knowing that Fire and Water Magic are on the list means he can focus on trying to unlock them now. And Analysis sounds like it could pair well with... Well, pretty much everything, assuming it helps him extrapolate from what he sees. Though, I was a little disappointed Joon never tried to toggle any skills to unlocked, or to look for what skills pair together, a la his blade skills.
+
+My big concern is that if Twin Soulling links Joons soul to his companions', then twinning with Val might have unexpected consequences for him, not just for her. Exciting!!
+:PROPERTIES:
+:Author: chicken_fried_steak
+:Score: 23
+:DateUnix: 1512690993.0
+:END:
+
+**** Good point about art. But I think all his other choices seem alright, although I did want to see steel magic. He honestly could have dropped gem magic, as he finds it difficult and unrewarding to improve. The two social skills he added seem like great choices, and I somewhat hope that he later drops an armor skill for another social or intelligence skill. Depending how tree magic works, he might want some magic that can create structures such as walls or bridges.
+:PROPERTIES:
+:Author: sicutumbo
+:Score: 9
+:DateUnix: 1512691447.0
+:END:
+
+***** The most teasing part is that, barring hard-coded caps, every skill can be leveled indefinitely to the point where Joon might be considered a new God of that domain. Steel magic seems dull at the average practitioner's level (creating steel) but it'd be interesting to see what true mastery looks like. Even more fun: what could a God of Livestock do?
+:PROPERTIES:
+:Author: nytelios
+:Score: 9
+:DateUnix: 1512696264.0
+:END:
+
+****** something something zeus fucking everything.
+:PROPERTIES:
+:Author: icesharkk
+:Score: 3
+:DateUnix: 1513051103.0
+:END:
+
+
+**** Art is a flat-out catastrophically-daft level mistake. It is not just skin magic, its maps, portraits, schematics. The ability to create high-fidelity representations of things on paper is extremely valuable, and he just destroyed his own facility to do that. 0 means "2 year old scrawls". Never mind the potential economic value of the upper reaches of the skill.
+:PROPERTIES:
+:Author: Izeinwinter
+:Score: 16
+:DateUnix: 1512696301.0
+:END:
+
+***** When it's not an actual active skill, it defaults to regular-human levels of skill. Joon reflected that he can use shields and armor fine enough even though he doesn't have a skill that makes him really good at them, and same with piloting. So his art skills will probably drop back to how he was at them when he first got here, but not 2-year old scrawls.
+
+In either case though, yeah, he's gonna have a hard time with skin magic from now on.
+:PROPERTIES:
+:Author: InfernoVulpix
+:Score: 21
+:DateUnix: 1512751024.0
+:END:
+
+
+** Although Twinned Souls obviously has a large visible presence within Essentialism, I would have expected to see some connection to the other companions with Loyalty as well. But I guess that would be within the value circles somewhere, perhaps? And I anticipate that +June+ Joon will get around the copy/paste problem with his ribs by copying Mary's ribs (or maybe Fenn's, if she's close enough to human).
+
+I'm bit confused as to why Deception kept him from leaving the interface if it never showed up as an error until now. I know diddly squat about coding, but I would have expected there to have been some kind of error message as soon as an illegal construction gestalt was created earlier in the story, either when he first obtained it, or as soon as it started leveling up. At that point it functionally should have been an activated piece of code, right? Is there a coding reason that it only caused an error once he opened the interface?
+
+Neat chapter, not quite sure what to think of everything in it, but looking forward to seeing where it goes!
+
+Edit: Reading too much of TGAB; this Juniper is Joon, not June :)
+:PROPERTIES:
+:Author: AurelianoTampa
+:Score: 14
+:DateUnix: 1512683031.0
+:END:
+
+*** #+begin_quote
+  I'm bit confused as to why Deception kept him from leaving the interface if it never showed up as an error until now.
+#+end_quote
+
+The key is the use of the word "deprecated" in the soul UI, in reference to excluded abilities.
+
+In software-engineering terms, a /deprecated/ API function is one that will still be provided for the time being, because existing software is still using it and the creator of the library/component doesn't want to break all that software by immediately removing the function---but where it is recommended that /new/ software should not use the function.
+
+Usually this is just a documentation thing: either the docs describing the API say to not use the function; or at most calling the API function produces a warning, but still works. The point is to allow developers of software that uses this library time to move away from the deprecated function, so that, once they eventually /do/, you can remove it for good.
+
+But, in environments like App Stores where binaries go through an automated verification step before being centrally released by the platform-owner, deprecation can actually mean something stronger: that while existing /published releases/ of the software on the platform may continue to rely on the deprecated API, newly-submitted-for-approval releases of the software won't be published by the platform-owner if they contain calls to the deprecated API.
+
+This is what happened here, I think: Joon tried to "publish" a revised version of his soul to the world-computer, and it rejected the new version as having since-deprecated functionality in it. His soul was fine up until that point, because it hadn't had to go through that submission process.
+
+Picture opening a Word 97 document in Word 2016. It "imports" when you first open it, and Microsoft's desire for backwards-compatibility will even ensure that all the old /deprecated/ Word 97 features continue to work. But if you go to save it, it'll ask whether you want to save it in Word 97 format, or in Word 2016 format. And if you save it in Word 2016 format, it'll strip out all the since-deprecated Word-97 data within the document.
+
+So let's say someone made Joon's character using a very old version of a "character-sheet editor", that exported files in a very old character-sheet format. They then used some low-level functionality to directly import this character-sheet into Aerb, bypassing both the kinds of checks that would be done if the character was newly created, and also the kinds of global modifications to /all/ characters/souls that would be done when a world-database version-migration (i.e. an exclusion) is applied to Aerb.
+:PROPERTIES:
+:Author: derefr
+:Score: 42
+:DateUnix: 1512697370.0
+:END:
+
+**** Thank you for the awesome explanation! I'm seriously impressed that cthulhuraejerpsen added this kind of detail to the story.
+:PROPERTIES:
+:Author: AurelianoTampa
+:Score: 8
+:DateUnix: 1512739456.0
+:END:
+
+
+**** I think that this is a great description, but for the last bit I'd like to comment that Exclusion currently appears to prevent further acquisition/ spread of an ability, but permits current users to retain that capability.
+
+So no migration occurs when an exclusion occurs- current souls are simply marked with the new limitation, and the addition of that skill is subsequently prevented if they later try to acquire it.
+
+Opinion?
+:PROPERTIES:
+:Author: munkeegutz
+:Score: 2
+:DateUnix: 1512904037.0
+:END:
+
+***** That's one possibility.
+
+I think the important thing to figure out, really, is what exclusion /zones/ do. I'll examine them through the lens of the nuclear-weapons exclusion zone, because that's a pretty vivid example. They're either:
+
+1. simple barriers that do a no-op rewrite on your soul, updating anything that passes through them to the latest rules (so you could create a nuclear weapon outside of the nuclear exclusion zone; you just can't take one from inside it to outside it, or vice-versa---and perhaps, if it erases knowledge of nuclear engineering as well, and all the engineers are currently inside, then this is "enough" to contain nuclear weapons. No telling how that interacts with teleportation or creation-domained artifacts, though!)
+
+2. an area where nothing happens, while everywhere outside the zone a version-migration is applied to souls, automatically updating them to the latest rules, but just the once (which /should/ mean that there can only be one exclusion zone at a time, because creating zone B would migrate everyone in zone A and thus make zone A into regular space---so that's obviously not true.)
+
+3. an area where souls /who were in that area when the zone was established/ are now permanently locked to a given rules version, but where this effect ceases to apply when they leave the zone. (This should mean that nuclear weapons could be transported outside of the nuclear zone... unless the weapons, or radioactive materiel itself, has a soul that can be rewritten. This should /also/ mean that each given zone still lets its member souls do /everything/ that you could do when the zone was first created, meaning that there are /multiple/ zones where nuclear weapons work. Which may or may not be true, depending on whether anyone has ever independently re-invented nuclear enrichment processes /et al/ outside of the nuclear exclusion zone.)
+
+4. a [[https://en.bitcoin.it/wiki/Softfork][soft fork]]. Imagine that Aerb's world-simulation runs on a computer cluster, sharded [in the database sense, not the MMO-game sense] by player location, such that when you move from one MMO "zone" to another---when you walk to a different area such that in a regular MMO you'd see a loading screen and spawn in afresh---your data could, transparent to all detection, be being passed off from one computation-node of the world-sim to another. Each computation-node would own a given set of zones---places---and would also own the set of souls of any/all "server-side NPCs" that were spawned by code embedded into those zones†. Now imagine that some nodes will disagree about what soul-updates obey the rules. When a character passes from one zone to another, and thus one /node/ to another, their soul is either copied across or stays in a separate central database; but either way, the new node will accept the character's soul without checking it for validity with its own local rules. Under this logic, an exclusion zone exists on /two/ levels. On a physical in-sim level, it's an auto-update-inducing barrier ala case 1, or a set of physical wards; but on an essentialist level, it's also a rewrite of the update validity rules on every node except one.
+
+I favour case 4, because it would imply the lowest-powered world, consistent with what has been described: one where excluding Foo /and then/ excluding Bar, ends up with people in the Foo zone who can do Foo but not Bar, /and/ people in the Bar zone who can do Bar but not Foo.
+
+It's also a fun little bit of worldbuilding if true: I would guess that it works like "the person doing the update can't update the node they're currently in"---maybe because of some sort of mutex held by the current node doing an update to the soul database or something. (I'm not sure why they couldn't just do the update twice from two different places, though. Maybe, similar to teleport key cooldown, there's an arbitrary game-level rule preventing the same ability from being re-adjucated more than once per hundred years?)
+
+† This is necessary for the soft-fork case to be capable of protecting the woman with shadow clones from having her shadow-clones get updated out of existence when they travel. If the shadow-clones are "pure NPCs"---just game-level scripts that run on each physics-frame, like the golem monsters in the prison---then they might /always/ be simulated by the same node that originally spawned them, to prevent exactly the case where they pass into another zone that has been updated to not have the relevant game-level code and thus wink out of existence at the zone border. Instead of passing the NPC between zones as happens with souled entities, [[https://en.wikipedia.org/wiki/Proxy_pattern#Remote_Proxy][remote proxy objects]] might be passed instead, where when zone X wants to know the current state of NPC Y#100156, it queries the proxy-object, which makes an RPC call back to zone Y to get the answer. This would also explain why there's one (the "original", souled-entity instance of the woman) who must stay in the exclusion zone.
+:PROPERTIES:
+:Author: derefr
+:Score: 4
+:DateUnix: 1512927518.0
+:END:
+
+
+*** For coding reasons, deception may have been something that should be blocked from being created in the first place, but the DM made it anyways. This error would go undetected until the error causing part became relevant, or it came under scrutiny from analysis software. Then the analysis software wouldn't allow the software to continue functioning in a bad state, and remain locked until the error is fixed.
+:PROPERTIES:
+:Author: sicutumbo
+:Score: 11
+:DateUnix: 1512683826.0
+:END:
+
+
+** Idle guess: exclusions are applied against souls, so Val is in principle capable of bypassing exclusions?
+:PROPERTIES:
+:Author: adgnatum
+:Score: 14
+:DateUnix: 1512717287.0
+:END:
+
+*** ooh. shiny. i like your logic.
+
+where would she retain the excluded data if not within her soul construct? Could joon use that to smuggle skill out of an exclusion?
+
+The database cluster explanation by [[/u/derefr]] is more apealing to the gamer in me but would prevent smuggling knowledge in that fashion as even though Val might retain it the underlying programming would not run or operate on a cluster that does have that fork of the code anymore.
+:PROPERTIES:
+:Author: icesharkk
+:Score: 3
+:DateUnix: 1513051509.0
+:END:
+
+**** I say "in principle" because I think the conventional understanding is that she cannot do /any magic/, so excluded magic is probably out. And lots of non-magic excluded things are better off excluded, really.
+
+I don't mean to claim that narratively speaking, there is a pressing obligation for this to happen. Might not. And Twinned Souls would probably close the hole, wouldn't it? So maybe the joke is that he tries not to get her loyalty /too high/?
+:PROPERTIES:
+:Author: adgnatum
+:Score: 3
+:DateUnix: 1513236595.0
+:END:
+
+***** Well, nukes aren't magic, so perhaps she might be able to construct those, depending on how "nuclear weapons" were excluded?
+:PROPERTIES:
+:Author: MINECRAFT_BIOLOGIST
+:Score: 2
+:DateUnix: 1513261065.0
+:END:
+
+
+** This new knowledge about souls makes me reconsider some of the assumptions about how souls and hells work in Aerb. Earth/American/christian mythology is that souls are tortured in hell. But in Aerb, where souls just hold data about a person and not the processes of consciousness, can a dead person really be tortured? I guess the demons can still plug a soul into a brain/ emulator or something and torture that.
+
+Also it would be interesting to see how those artificial fetus souls compare to Joons. And if Valencia can get an artificial soul if her soullessness proves to be too much of a vulnerability.
+:PROPERTIES:
+:Author: CopperZirconium
+:Score: 8
+:DateUnix: 1512714264.0
+:END:
+
+*** Joon is already in a brain emulator so either what's the difference or which level of hell is he already in?
+:PROPERTIES:
+:Author: icesharkk
+:Score: 2
+:DateUnix: 1513191322.0
+:END:
+
+
+** #+begin_quote
+  But for that, you would need access to the soul of another, either one whose body is compatible with your own
+#+end_quote
+
++Looks like Joon's about to chain quest and meet his doppelganger. Very convenient to have a soul boy hanging around on Aerb.+
+
+That decision to wholesale overhaul a chunk of his ur-skills was surprising, especially after he considered that the DM might have set his character up that way. And holy macaroni did he pass up on possibly the most cliche overpowered skill in the history of litrpg's (Appraisal) for /Debate/? Also, are the melee Bladebound-affiliated skills gestalt-able now?
+:PROPERTIES:
+:Author: nytelios
+:Score: 6
+:DateUnix: 1512695241.0
+:END:
+
+*** #+begin_quote
+  doppelganger
+#+end_quote
+
+My friend forgot what you're talking about. Could you please humor him?
+:PROPERTIES:
+:Author: adgnatum
+:Score: 9
+:DateUnix: 1512717366.0
+:END:
+
+**** I misremembered the chapter where Joon explored the TP key and confirmed he replaced the original owner of his current body. So he's inside the doppelgänger. Probably no other copy of himself in his doppeganger's old town.
+:PROPERTIES:
+:Author: nytelios
+:Score: 2
+:DateUnix: 1512747136.0
+:END:
+
+***** No, but if his bodies male family was still living there, their rib bones would almost certainly be compatible.
+:PROPERTIES:
+:Author: Bramble-Thorn
+:Score: 6
+:DateUnix: 1512758165.0
+:END:
+
+
+*** Ah, I'd totally forgot about his double!
+:PROPERTIES:
+:Author: jaghataikhan
+:Score: 3
+:DateUnix: 1512696478.0
+:END:
+
+
+*** He can just copy Amaryllis ribs, to whose soul he already have access.
+:PROPERTIES:
+:Author: serge_cell
+:Score: 3
+:DateUnix: 1512718474.0
+:END:
+
+**** Is she considered a compatible body though?
+:PROPERTIES:
+:Author: nytelios
+:Score: 3
+:DateUnix: 1512746853.0
+:END:
+
+***** I'd imagine the gender and size differences would say "no". He'd be better off with a random human male than a petite woman. Imagine him copying Amaryllis's ribs, he tries to heal, then dies because his ribs are constricting his heart and lungs.
+:PROPERTIES:
+:Author: sicutumbo
+:Score: 5
+:DateUnix: 1512752961.0
+:END:
+
+
+*** No, he picked up Analysis /and/ Debate. Also knowing how cthulhuraejepsen subverts the litrpg tropes, it'll probably turn out to be very unhelpful or mediocre.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 4
+:DateUnix: 1512700211.0
+:END:
+
+**** They're discrete skills.
+
+#+begin_quote
+  and then with two left I hesitated and hurriedly picked up Analysis and Debate, with little clue as to what they
+#+end_quote
+
+Even if Joon knew the skills would be subverted, I think Appraisal would be a better choice in a world where there's no high school debate club. And so far none of the skills have diverted from the denotation of the name.
+:PROPERTIES:
+:Author: nytelios
+:Score: 5
+:DateUnix: 1512703643.0
+:END:
+
+***** Surely 'debate' has incredible utility in any sort of negotiation or diplomacy?
+:PROPERTIES:
+:Author: CCC_037
+:Score: 5
+:DateUnix: 1512718566.0
+:END:
+
+****** Joon appears to be consciously (or unconsciously without weighing the possibility of party members dying) dropping some redundant skills and resources the party already had, e.g. Steel creation a la Fenn's glove, warding. Mary's the diplomatic face of the party and debate isn't very useful when the party's acting as one entity with one voice. And now that you mention it... I'm suspicious the DM isn't keen on diplomatic victories.
+:PROPERTIES:
+:Author: nytelios
+:Score: 7
+:DateUnix: 1512746821.0
+:END:
+
+******* [[/lunahmm][]] ...you do have a point. There is a bit of skill duplication there.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1512750619.0
+:END:
+
+******** For non-combat skills, redundancy is alright. Warding isn't needed because there isn't a ton to do with more warding since Grak is on the team, but debate doesn't have the same diminishing returns. There's plenty of stuff Joon has to argue for on his own.
+:PROPERTIES:
+:Author: sicutumbo
+:Score: 3
+:DateUnix: 1512753117.0
+:END:
+
+
+** #+begin_quote
+  I had an uncharacteristic yearning for Earth at that moment
+#+end_quote
+
+Sounds like he's behaving in a way he wouldn't expect-- could this "uncharacteristic" behavior be the consequence of various parts of his soul not being in alignment, evidence of tampering?
+
+Other thoughts:
+
+- Joon really needs to ask all three people --independently-- where and how long the touch was for, where they can't know the answer to each other. The question of exposure time is critical to figure out what level of impact Fallatehr could have had
+- Once the whole party is together (or perhaps right away since Amaryllis is around) he needs to peek at his own soul and make sure that the /really/ obvious stuff is not amiss -- the trust levels of Fallatehr for example
+- It is possible that Joons soul was read, but not modified, given the likely-short contact time. Perhaps to know values or see a snippet of past. Fallatehr could also have removed his bodies ability to feel physical contact at the knee (unlikely to be true or relevant, given the instant flailing)
+- Given Fallatehr being a mage, plus Grak being armed and on high alert, it is likely that Fallatehr isn't able to get the jump on Grak, and that the proposed story is correct. But Fallatehr got the jump on a prisons worth of people, so who knows.......
+- I agree with others that having all of {unarmored, medium armor, heavy armor, shields} is overkill -- he should probably just have the one that his current armor applies to, and perhaps unarmored.
+- I would want to know if I could re-assign stat points, undoing the mistake that was putting two directly into insight.
+- Is it possible to simply copy skills off another individual? Sure would be nice.
+- If I were him, I'd tell Amaryllis about the twinned souls thing ASAP, or it will be a huge trust issiue later.
+- Speaking of which, it would be nice to know if twinned souls can now be used for communication somehow -- if nothing else, by changing a small, irrelevant memory. On a related note, it is even more important to protect Joon from Fallatehr now, since Joon can likely change all of their souls if compromised
+- Sounds like a fantastic time to buy some books on magics and what they're capable of, as well as exclusions of course
+- if he could find ways around the gestalting exclusin (or others) by gaming the system, that's not a bad idea either. But I would be hesitant to risk running into bugs with the engine that controls my soul
+:PROPERTIES:
+:Author: munkeegutz
+:Score: 8
+:DateUnix: 1512717990.0
+:END:
+
+
+** So, Joon only gets to edit his skills every 100 of his levels, divided by his Essentialism score.
+
+The way I figure it, this probably generalizes as: as an Essentialist, Joon---with either a touch, or using Twinned-Souls links---gets to edit [/person/]'s skills every 100 of [/person/]'s levels, divided by Joon's Essentialism score.
+
+If that's true, then if Joon skipped any interesting parts of the skill tree just now, he can still hook everyone else up with those unlocks instead. In fact, the party can now work out whole-party builds made up of character-builds with complementary skills.
+:PROPERTIES:
+:Author: derefr
+:Score: 13
+:DateUnix: 1512697765.0
+:END:
+
+
+** My read on the situation:
+
+Fallatehr didn't explicitly attack Joon, but he set him up for failure. It was a fork strategy:
+
+If Joon really as great prodigy as he claim he would stack in his soul and would need Fallatehr help to exit, which could be exploited.
+
+If Joon not such a great prodigy and unable to enter soul on the first (few) try he need long time to learn and thus securing Fallatehr position as a teacher. That make him not afraid of Joon party betrayal in medium term and provide with space for more attempts to change situation in his favor.
+:PROPERTIES:
+:Author: serge_cell
+:Score: 7
+:DateUnix: 1512719338.0
+:END:
+
+
+** Wow, what an awesome chapter.
+
+Soul magic unlocks a bunch of interesting stuff.
+
+Valencia continues to be heartwarming.
+
+Did Juniper forget that Art is needed to make Skin Magic tattoos? Considering Art is capped at 6 with his current social stats he's unlikely to unlock more tattoos, but even the ones he currently had access to provide a bit of utility.
+:PROPERTIES:
+:Author: TheGuardianOne
+:Score: 6
+:DateUnix: 1512732322.0
+:END:
+
+
+** At a guess, skills not blue slashed are not subject to his accelerated learning but function like skills do for normal people, which means.. I am pretty sure the heavy and medium armor skills are nigh-total waste of slots. Shield and unarmored, perhaps not, it is likely possible to become a combat prodigy at making use of those in a way that it likely noticeably is not for the armor slots.
+
+.... He really should have toned down his value weighting of Leveling Up before making that many changes to his game interface - I think he overestimated the value of combat skills quite severely here.
+:PROPERTIES:
+:Author: Izeinwinter
+:Score: 12
+:DateUnix: 1512689493.0
+:END:
+
+*** For one, I really don't think he needs both Medium /and/ Heavy Armor skills. Unarmored is useful for when caught unawares, but there aren't that many situations he could be in where he'd be stuck with a mismatching armor type.
+:PROPERTIES:
+:Author: GeeJo
+:Score: 13
+:DateUnix: 1512695476.0
+:END:
+
+**** I felt the same way. Also, unless he gets some sort of magical shield, I'm unsure how efficient it will be to sacrifice two handed swings for a mundane shield, unless the skill gives him some type of defensive magic. He honestly could just learn how to use shields the mundane way to save himself a skill slot.
+
+Dropping gem magic would have been a good choice as well, since he seems to hate it. With fire magic, I don't think he needs a redundant ranged magic option.
+:PROPERTIES:
+:Author: sicutumbo
+:Score: 6
+:DateUnix: 1512695889.0
+:END:
+
+
+**** Definitely. You cannot wear two sets of armor at once. The only reason for both is if you have some armor that counts for both, and the effects of both skill would stack. Maybe he does not know what his armor counts as or wants to be able to switch, but biting the bullet would have been better.
+
+You cannot use 2 handed weapons with dual wielding when you only have 2 hands, so keep One Handed and Dual Weapon skill and drop 2 handed weapons if you have to.
+
+drop a couple redundant of the ranged weapon options for more skills. But craft skills be OP, yo! Dropping Alchemy seemed dumb
+
+Dropping Wards (unless you are intending to make a wand and add it back in ASAP as it becomes usable) is pants on head retarded. You have seen firsthand how useful and versatile it is. And you have a teacher on hand. The more wards, the merrier.
+
+Dropping gold Magic was probably smart, the call of gold makes it seem like a trap unless you have a way around that.
+:PROPERTIES:
+:Author: Bramble-Thorn
+:Score: 6
+:DateUnix: 1512757604.0
+:END:
+
+***** #+begin_quote
+  Dropping Wards (unless you are intending to make a wand and add it back in ASAP as it becomes usable) is pants on head retarded. You have seen firsthand how useful and versatile it is. And you have a teacher on hand. The more wards, the merrier.
+#+end_quote
+
+It takes a month just to craft the tools he'd need (and by my reading that's a hard limit, not something his level-up magic would let him breeze through). At the rate he's been progressing he could master every other magic on his list before he even got started on Wards.
+:PROPERTIES:
+:Author: RiOrius
+:Score: 2
+:DateUnix: 1512899919.0
+:END:
+
+
+**** The Virtues unlocked at rank 10 could be useful passives to have that might work while unarmored. Definitely worth investigating, especially since survivability is understandably his top priority.
+:PROPERTIES:
+:Author: RiOrius
+:Score: 1
+:DateUnix: 1512900413.0
+:END:
+
+
+** If we assume that any change of the soul parameters take considerable time to realize those values wouldn't be neural network weights, but neural network training labels, that is values wich neural network would output on proper input /after/ retraining.
+:PROPERTIES:
+:Author: serge_cell
+:Score: 8
+:DateUnix: 1512680392.0
+:END:
+
+*** Or it might just be that the soul doesn't update everything that frequently. From a programming perspective, it's a decent assumption to make. You have this massive data structure listing a huge number of attributes, but aside from memories none of them change that quickly. You certainly aren't losing limbs every other day, nor are you radically changing values.
+:PROPERTIES:
+:Author: sicutumbo
+:Score: 7
+:DateUnix: 1512684730.0
+:END:
+
+
+** I would have tried bringing up a Grandfather Clause Exception, or leaving while thinking about exiting /without/ saving. Something to get without having to change the save state of your soul.
+
+I've had a similar issue in forums where personal info I had left blank became required later. trying to use the exit at the bottom kept bringing up /Error - So & So is a required field/ But nothing stopped you from using the sidebar navigation to go to some other part of the site, or just closing the tab and reopening the site anyone other than the specific page with the blank required info section.
+
+And putzing around in his soul until Essentialism went from his then current skill level of 5 to the self trained soft cap of 20 would have dropped the timeout from 20 levels to 5 levels.
+
+Definitely want to find out about these Exclusions, and if they are known to other Soul Mages, or if he is getting more information than others due to the game layers. I like there being 256 Skills, brings back memories like FFIV having exactly 256 total different items in the game.
+
+Spirit might be what being inducted as a Druid by a Locus gets you. It depends on proximity to the note, and none of your attributes at all.
+
+Since he can do things without actually having levels in the skill (Learning Dwarven even though the skill has not leveled up, using Armor then that was never one of the 40) Does removing a skill actually make him bad at it by removing ability, or just remove the abnormal growth?
+
+Removing Gem Magic might have helped here, since he has trained in it, but does not really use it because of the requirements. Would be still be the equivalent of a Skill Level 20 Gems mage (since he already had trained to that level) but progression is now normal, or is he suddenly unable to use gem magic at all?
+:PROPERTIES:
+:Author: Bramble-Thorn
+:Score: 4
+:DateUnix: 1512756417.0
+:END:
+
+
+** Typos here, please.
+
+^{I will be offline for the next six or seven hours, so might take some time to make corrections, beyond my usual authorial laziness.}
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 3
+:DateUnix: 1512677739.0
+:END:
+
+*** #+begin_quote
+  The skill [Deception] informed me that it was a gestalt between Deception and Stealth
+#+end_quote
+
+Presumably not a gestalt with itself.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 6
+:DateUnix: 1512683949.0
+:END:
+
+**** Fixed, thank you.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 3
+:DateUnix: 1512706802.0
+:END:
+
+***** I'm still reading "The skill informed me that it was actually a gestalt between Deception and Stealth".
+
+Are you sure you've fixed it or that you didn't undo the fix by making another fix?
+
+Frankly can you tell us right here in this thread what the two component skills for Deception are supposed to be? This alone of all typos ever in this story is something we can't figure out for ourselves without author input.
+
+EDIT: I'm currently guessing it's a gestalt between Bluff and Stealth, or perhaps Lying and Stealth.
+:PROPERTIES:
+:Author: ArisKatsaris
+:Score: 7
+:DateUnix: 1512726317.0
+:END:
+
+****** [[/u/cthulhuraejepsen]], the Deception description still shows as unfixed ("gestalt between Deception and Stealth") to me. And it confused me significantly because it was such a major hinge point in the chapter.
+:PROPERTIES:
+:Author: EliezerYudkowsky
+:Score: 5
+:DateUnix: 1512855179.0
+:END:
+
+
+*** #+begin_quote
+  I wasn't even sure [at] what level the soul actually stored that information,
+#+end_quote
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 1
+:DateUnix: 1512679878.0
+:END:
+
+**** #+begin_quote
+  if you were building *efficient* data structures, you would be better off with just having a dif
+#+end_quote
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 1
+:DateUnix: 1512679912.0
+:END:
+
+***** She looked toward us, hesitant. *“Status?”* she called.
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 1
+:DateUnix: 1512679990.0
+:END:
+
+
+***** #+begin_quote
+  She looked toward us, hesitant. *“Status?”* she called.
+#+end_quote
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 1
+:DateUnix: 1512680051.0
+:END:
+
+****** #+begin_quote
+  “I'm sure that *you* understand our perspective on the matter.”
+#+end_quote
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 1
+:DateUnix: 1512680068.0
+:END:
+
+******* Fixed everything in this chain, thank you!
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 1
+:DateUnix: 1512706743.0
+:END:
+
+
+*** #+begin_quote
+  Satus?
+#+end_quote
+:PROPERTIES:
+:Author: PM_ME_OS_DESIGN
+:Score: 1
+:DateUnix: 1512693956.0
+:END:
+
+
+*** Essentialism showed that it +was+ had WIS/KNO
+
+effecient data structures
+
+“Satus?” she called.
+
+I'm sure that +your+ understand our perspective
+:PROPERTIES:
+:Author: nytelios
+:Score: 1
+:DateUnix: 1512695403.0
+:END:
+
+**** Fixed all those, thanks!
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 1
+:DateUnix: 1512706729.0
+:END:
+
+
+*** #+begin_quote
+  So started adding skills back
+#+end_quote
+
+So started -> So I started
+
+(or just "I started")
+:PROPERTIES:
+:Author: Kerbal_NASA
+:Score: 1
+:DateUnix: 1512701118.0
+:END:
+
+**** Fixed, thanks!
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 1
+:DateUnix: 1512706730.0
+:END:
+
+
+*** #+begin_quote
+  a handful of armor skills: Light Armor, Heavy Armor, Unarmored, and Shields
+#+end_quote
+
+but later we read
+
+#+begin_quote
+  Shields, Unarmored, Medium Armor, Heavy Armor
+#+end_quote
+
+So was that supposed to have been Light Armor or does Medium Armor also exist, and if so why wasn't it mentioned in the earlier set of armor skills?
+:PROPERTIES:
+:Author: ArisKatsaris
+:Score: 1
+:DateUnix: 1512740025.0
+:END:
+
+
+** Just caught up! Love this book, top-shelf pageturner.
+
+I assume this has been suggested before, but I think our Joon is in an afterlife of some sort. He's mentioned being suicidal a couple of times now - but it can't have been entirely Arthur-driven? Given that Earth and Tiff are bigger circles than him. Also, the way hells and souls work in Aerb feels like a hint that that's analogous to his situation.
+
+Also whew did he make some rash calls this chapter. He very nearly dropped romance in the name of a rushed min-max job. Jesus.
+
+Man is the DM punishing him hard for that glove rocket. I can only assume his gut was right, and fighting Aumann (yes, I got it. Au. Very clever) then and there and chopper out - but given the later showdown I'm not sure they could've won that. I wonder if there was a third way out he and I missed. If there was, the DM was a lot more subtle about it than "the fog is not quite as high as St Paul's".
+
+The narrative theory appears to only be half right. That's quite annoying.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1513175935.0
+:END:
+
+
+** This story just keeps getting better and better!
+:PROPERTIES:
+:Author: RationalityRules
+:Score: 4
+:DateUnix: 1512684227.0
+:END:
+
+
+** Now imagining the protagonist's ending if he had used up his possible skill changes (and had the maximum allowed skill number) prior to attempting log-out and getting the error; a pity there's no 'Cancel, leave without changes' option. Rather, curious that that applies when /leaving/, as I'd imagined that changes made would be applied in real time--actually, that he can make multiple changes and not have each one count to his total further suggests that changes are only saved/applied when he leaves. Again, unfortunate for him that there's no Apply/Cancel choice.
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 2
+:DateUnix: 1512880242.0
+:END:
+
+
+** Refreshed Reddit hoping for a new chapter, and wasn't disappointed!
+:PROPERTIES:
+:Author: knite
+:Score: 2
+:DateUnix: 1512684115.0
+:END:

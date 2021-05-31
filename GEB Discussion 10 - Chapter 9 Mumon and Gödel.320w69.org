@@ -1,0 +1,252 @@
+#+TITLE: GEB Discussion #10 - Chapter #9: Mumon and Gödel
+
+* GEB Discussion #10 - Chapter #9: Mumon and Gödel
+:PROPERTIES:
+:Author: xamueljones
+:Score: 12
+:DateUnix: 1428602778.0
+:END:
+*Gödel, Escher, Bach: An Eternal Golden Braid*
+
+This is a discussion of the themes and questions concerning the *Chapter 9: Mumon and Gödel* and its dialogue, *Prelude...*.
+
+*Zen*
+
+What is Zen? It seems to be the idea that our own perceptions limit our understanding of the world. As soon as we conceive of an idea about what we experience, we are hobbling our thoughts. For example, there is a painting [[http://en.wikipedia.org/wiki/The_Treachery_of_Images][/The Treachery of Images/]] where there is an image of a pipe with the French phrase “This is not a pipe.” underneath. The phrase is taken to mean that the painting is only the image of a pipe and not a physical pipe itself. It plays on how we tend to take references to an object to be the object itself. Zen is about confronting a similar idea where in our every-day lives, by perceiving the world we miss so many details and can't see connections between everything around us. To “step” out of the system of logic and structure thought, Zen attempts to dissolve the boundaries between the self and world. In addition, Buddha meditators experience [[http://en.wikipedia.org/wiki/Ego_death#Buddhism][Ego-Death]] where they lose their sense of the division between the self and the surrounding world.
+
+I have taken the time to write my understanding of what Zen is about, yet the ideal of Zen is that nothing can be wholly explained by words and no one can explain enlightenment directly to someone else. Is my explanation (or direct discussion of Zen) useless or worse, sabotaging other people's ability to understand?
+
+How is Zen beneficial or useful in any practical sense? Or more simply, how can “Un-Mode” help with the MIU-System?
+
+How is Zen related to Gödel's Theorem, Escher's paintings, and Bach's music?
+
+......
+
+*Gödel's Numbering and Theorem*
+
+Gödel's numbering is simply converting typographic strings into arithmetical statements. This shows that the formal system has an isomorphism in number theory. Then the strange-loop is completed when it turns out that arithmetical statements can talk about the original formal system. By showing that TNT statements can be converted into Number Theory statements which can be used to talk about TNT statements, we show that TNT encapsulates its own meta-language. This is why for any formal system strong enough to talk about arithmetical statements falls prey to Gödel's Theorem, because the formal system is strong enough to talk about itself, or encapsulates part of its own meta-language which like the record player, will illustrates its limitations. This limitation is best illustrated by the sentence G: “G is not a Theorem of TNT.” It's the same idea as the sentence, “This sentence is a lie.” except rewritten in mathematics. How can this idea relate to Zen?
+
+......
+
+*Dialogue*
+
+When this dialogue talks about [[http://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem][Fermat's Last Theorem]], it's very amusing about how it talks about being not discovered, when Andrew Wiles thought of the proof for it in 1994, 15 years after GEB was published in 1979.
+
+Funnily enough, when Achilles said that Tortoise discovered a counter-example it sounded as if Hofstadter made a terrible error. By why is Hofstadter saved when Achilles says “the value of n is the only positive integer which does not occur anywhere in the continued fraction for PI”? It's because all positive integers can be found on the decimal expansion of PI which has infinite length and means there is no possible value of n.
+
+In addition, when Achilles says that the sounds of Bach's original playing can be retrieved provided that there is a solution to Fermat's equation or a proof that no such solution exists, it's the same thing as (P V ~P) => Q. What does this imply?
+
+Finally the phenomena that Achilles talks about where the painting switches between concave and convex, and from one voice to the entire effect of all of the voices in the fugue is call [[http://en.wikipedia.org/wiki/Bistability][bistability]] or even [[http://en.wikipedia.org/wiki/Multistable_perception][Multistable Perception]]. How is this phenomenon prevalent in this dialogue?
+
+What does the phrase '[ATTACCA]' which appears at the end mean?
+
+Wikia Links:
+
+- [[http://godel-escher-bach.wikia.com/wiki/Chapter_9][Chapter 9]]
+
+- [[http://godel-escher-bach.wikia.com/wiki/Prelude...][Prelude...]]
+
+Coming up next on April 13th is Chapter X: Levels of Description, and Computer Systems.
+
+The discussion for the previous chapter is posted [[http://www.reddit.com/r/rational/comments/31nra2/geb_discussion_9_chapter_8_typographical_number/][here]].
+
+The discussion for the next chapter is posted [here]([[http://www.reddit.com/r/rational/comments/32l5ab/geb_discussion_11_chapter_10_levels_of/][www.reddit.com/r/rational/comments/32l5ab/geb_discussion_11_chapter_10_levels_of/]]).
+
+[[http://www.reddit.com/r/rational/comments/2yys1i/lets_start_the_read_through/][Official Schedule]].
+
+
+** Attacca is a musical term meaning to continue to the next movement without pausing. Maybe the next dialogue is a continuation of this one.
+
+Does the continued fraction for pi actually have every number? Just that it's infinite doesn't imply this, and we don't know much about the sequence.
+:PROPERTIES:
+:Author: redstonerodent
+:Score: 5
+:DateUnix: 1428614633.0
+:END:
+
+*** #+begin_quote
+  Attacca is a musical term meaning to continue to the next movement without pausing. Maybe the next dialogue is a continuation of this one.
+#+end_quote
+
+Bingo!
+
+#+begin_quote
+  Does the continued fraction for pi actually have every number? Just that it's infinite doesn't imply this, and we don't know much about the sequence.
+#+end_quote
+
+I think it's been proven that it has, but you're right, the fact that it's infinite isn't enough.
+
+Is it enough that it's infinite and non-repeating? I'm not sure
+:PROPERTIES:
+:Author: Thelonious_Cube
+:Score: 3
+:DateUnix: 1428621493.0
+:END:
+
+**** #+begin_quote
+  Is it enough that it's infinite and non-repeating?
+#+end_quote
+
+No, it could count up by even numbers, or go 1,2,1,1,2,1,1,1,2,....
+
+In fact, e=[2,1,2,1,1,4,1,1,6,1,1,8,...], which only has even numbers and 1.
+
+Looking at [[http://mathworld.wolfram.com/PiContinuedFraction.html][Wolfram Mathworld]], I don't see anything about pi having every number.
+:PROPERTIES:
+:Author: redstonerodent
+:Score: 1
+:DateUnix: 1428626577.0
+:END:
+
+***** Good counter-examples - I though that was too easy!
+
+#+begin_quote
+  I don't see anything about pi having every number.
+#+end_quote
+
+Yes, I'm now seeing several references to that being "widely believed, but so far unproven"
+
+[[http://mathworld.wolfram.com/NormalNumber.html]] seems to say it's true "subject to an unproven but reasonable hypothesis" though I may be misreading that
+:PROPERTIES:
+:Author: Thelonious_Cube
+:Score: 1
+:DateUnix: 1428627324.0
+:END:
+
+****** The bit about Normal Number is that if pi's a normal number then pi contains every possible integer. However, we don't actually know if pi is a normal number, even though it's considered very likely by mathematicians. I once did a statistical project where I checked the frequency of each of the ten digits for the first hundred thousand digits of pi and it turned out to be equal frequency for all ten.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1428631188.0
+:END:
+
+
+** #+begin_quote
+  What does the phrase '[ATTACCA]' which appears at the end mean?
+#+end_quote
+
+I asked that myself but the =TTortoise= at the end of the dialogue gives it away, the end of the dialogue has the capitalized chars *A*chilles - *TT*ortoise, and if you peek ahead to the =...Ant Fugue= dialog, it starts with *A*chilles -- *CC*rab -- *A*chilles -> ATTACCA. But there might be another level of meaning (this is geb right :))
+
+**** Chapter 9:
+     :PROPERTIES:
+     :CUSTOM_ID: chapter-9
+     :END:
+
+- the gödel numbering of the TNT system is done using /codons/ and is composed of four different digits, which is kind of like the DNA
+- G seems to be one of DRH favourite letters, it stands for:
+
+  1. Gödel's sentence (Introduction, p. 18 & Chapter 9, 271)
+  2. A set of natural numbers, the complement to F (Figure and Ground, p. 73)
+  3. Goblet G (Contracrostipunctus, p. 79)
+  4. Diagram G and Function G (Recursive Structures and Processes, p.135,137)
+
+**** Prelude...
+     :PROPERTIES:
+     :CUSTOM_ID: prelude...
+     :END:
+
+- to me it seemed almost like they talk about reading GEB, when on p. 280 /Anteater/ says:
+
+  #+begin_quote
+    /Anteater/: Have you ever noticed how in these pieces the prelude always sets the mood perfectly for the following fugue?
+  #+end_quote
+
+  Exchange /prelude/ =<=>= dialogue and /fugue/ =<=>= chapter and if you continue to read it seems like the all talk about the process of reading GEB ;)
+
+- I enjoyed Figure 56, another picture where you switch between two modes while looking at it is [[http://en.wikipedia.org/wiki/Spinning_Dancer][the spinning lady]].
+:PROPERTIES:
+:Author: markus1189
+:Score: 3
+:DateUnix: 1428611565.0
+:END:
+
+*** Thanks for the link to the spinning lady. It took a while to see how she could switch directions, but when she's facing the viewer (or when you can't see her breasts and ponytail), it becomes possible to 'switch' the directions she's rotating in. It helps by focusing only on the shadow of the legs at the bottom of the image to get the hang of mentally switching. I started seeing her switching directions every spin at the end.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 2
+:DateUnix: 1428630437.0
+:END:
+
+
+** My pointing finger is not the moon; what looks like and feels like a chair is never a chair. Your fingertips lie, and so do your thoughts.
+
+Have you stopped beating your significant other yet? What did your face look like a hundred years before your grandmother was born? Who is the current King of France? Answer me right now, without hesitation!
+
+[[http://www.reddit.com/r/zen/comments/18phyt/i_am_not_a_zen_student_my_position_on/c8h3kp3]]
+
+If you think about the story above, you will not reach enlightenment. If you don't think about it the story, you will also not reach enlightenment. If you don't even click the link, you will certainly not achieve enlightenment. I have thrown an axe at you: what are you doing as you dodge it? Why is System 1 always separate from System 2?
+:PROPERTIES:
+:Author: Newfur
+:Score: 3
+:DateUnix: 1428612605.0
+:END:
+
+*** EMPTY_COMMENT
+:PROPERTIES:
+:Author: xamueljones
+:Score: 3
+:DateUnix: 1428631417.0
+:END:
+
+
+** Here's the questions from the Wikia:
+
+1) On p. 266 DRH says that MUMON can be taken in at least two different ways. Can you think of more?
+
+2) Looking back, can you find another implicit meaning of the Contracrostipunctus? (p. 92)
+
+3) Find a Gödel-Numbering for the pq-System and "arithmetize" the rules. Is there a way to characterize pq-numbers in a simple way?
+
+4) Is Zen complete? Is it consistent?
+:PROPERTIES:
+:Author: xamueljones
+:Score: 2
+:DateUnix: 1428603340.0
+:END:
+
+
+** Can anyone explain to me why people think the state of being Zen is a good thing? What's the benefit?
+:PROPERTIES:
+:Author: xamueljones
+:Score: 2
+:DateUnix: 1428631477.0
+:END:
+
+*** Zen can afford one peace of mind. Its teachings are designed to "break" your attachment to rational thought. If you're like me, you've spent a good deal of your life unconsciously worshiping at the altar of Reason. The aim of Zen (as I see it) is to produce the realization that reason is just one of many available tools -- and there are aspects of life for which reason is not the best tool! Reason can be seen as a limiting force, because it causes you to disregard paradoxical statements and blatant contradictions. But these are no less a part of life. The Zen mindset is simply to see things as they are, without distorting them to fit our internal framework.
+:PROPERTIES:
+:Author: Astrus
+:Score: 3
+:DateUnix: 1428698415.0
+:END:
+
+**** Reflectively incoherent Reason is not the true Reason. That which gets at the truth /is/ epistemic rationality. That which achieves goals /is/ instrumental rationality.
+
+Winning is winning.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1428801153.0
+:END:
+
+
+*** It's taking the difference between map and territory to the next level. I find it incredibly reorienting. There's also some evidence that it has health benefits, iirc.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1428669227.0
+:END:
+
+
+*** Because they've never heard of things like probability or reflective self-examination? Because they think deepities are very insightful?
+
+Uhhhh I never really saw Zen as all that great. Edit: my friend from undergrad trolled me and there's no such thing as a philosophy of the Infinite Spiral. /siiiiigh/
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1428801353.0
+:END:
+
+
+** This was the chapter I had the second-most fun writing a post for with the very first post being the most fun.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1428603019.0
+:END:

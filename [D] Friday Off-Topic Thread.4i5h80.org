@@ -1,0 +1,382 @@
+#+TITLE: [D] Friday Off-Topic Thread
+
+* [D] Friday Off-Topic Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 22
+:DateUnix: 1462547088.0
+:END:
+Welcome to the Friday Off-Topic Thread! Is there something that you want to talk about with [[/r/rational]], but which isn't rational fiction, or doesn't otherwise belong as a top-level post? This is the place to post it. The idea is that while reddit is a large place, with lots of special little niches, sometimes you just want to talk with a certain group of people about certain sorts of things that aren't related to why you're all here. It's totally understandable that you might want to talk about Japanese game shows with [[/r/rational]] instead of going over to [[/r/japanesegameshows]], but it's hopefully also understandable that this isn't really the place for that sort of thing.
+
+So do you want to talk about how your life has been going? Non-rational and/or non-fictional stuff you've been reading? The recent album from your favourite German pop singer? The politics of Southern India? The sexual preferences of the chairman of the Ukrainian soccer league? Different ways to plot meteorological data? The cost of living in Portugal? Corner cases for siteswap notation? All these things and more could possibly be found in the comments below!
+
+
+** So I keep trying to come up with a cool thing I can build, and inspired by your advice from the [[https://www.reddit.com/r/rational/comments/4fyubf/d_friday_offtopic_thread/d2d4m2l][previous thread]], I have launched [[http://writingstreak.io/][Writing Streak]] - the tool to help people to practice their writing skills and develop a habit of writing regularly.
+
+It keeps track of daily word count, gives you writing prompts, has a github-like calendar representing the amount of words you have written each day, and all sorts of cool features to help you focus on writing. I think it's gonna be pretty great.
+
+It seems to be taking off, it did really well on HN and [[/r/scifi/]], and in the past 4 days gained 460 users, so that's awesome =)
+
+I hope you will find it useful!
+:PROPERTIES:
+:Author: raymestalez
+:Score: 21
+:DateUnix: 1462548059.0
+:END:
+
+*** Doesn't look like it jives with my workflow. I used git and write using my text editor.
+:PROPERTIES:
+:Author: hackerkiba
+:Score: 1
+:DateUnix: 1462553801.0
+:END:
+
+**** There are dozens of us!
+
+(Except in my office, where there are dozens of people using Microsoft Word and I'm just sitting here with LaTex/Git/Python and entirely different formatting problems...)
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 2
+:DateUnix: 1462604436.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 9
+:DateUnix: 1462660504.0
+:END:
+
+*** What are you tking? I've had a fair number o different antidepressants but never had body temperature raiss as a syptom
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1462686557.0
+:END:
+
+**** Sertraline. Everything works differently for different people.
+:PROPERTIES:
+:Author: FuguofAnotherWorld
+:Score: 2
+:DateUnix: 1462700540.0
+:END:
+
+
+*** That's great to hear! I'm really glad things're going well for you with that.
+:PROPERTIES:
+:Author: Cariyaga
+:Score: 3
+:DateUnix: 1462686944.0
+:END:
+
+
+** I'm hoping that someone with a little more technical knowledge than I have could help me.
+
+What I'd like to do is a video of what editing a novel looks like. Let's say that I had a 100K word novel and, in the course of editing, I make ten thousand changes to it. If I did each one of those changes as a git commit, I would have a catalog of how I got from a completely unedited novel to a completely edited novel, and I don't think it would be too hard to do an extremely fast-forwarded visualization of that (or at least, it would be hard to do but I can at least see the path I'd take to get to an end result). From there, I could make a heatmap of changes, do data visualization on /what/ was changed with parts-of-speech tagging, etc. And I could make a cool video that show every edit, scrolling up and down the work adding and deleting words at a rapid pace.
+
+I'm like 90% sure that git isn't the best way to do this, but I don't know what would be. Ideally the gathering of data wouldn't slow me down with the actual editing.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 7
+:DateUnix: 1462562883.0
+:END:
+
+*** [[https://www.youtube.com/watch?v=hNENiG7LAnc][Is this of any help?]] If so, a relevant Google search is "paper\thesis timelapse" (e.g. [[http://www.momentofgeekiness.com/2013/03/21/mog-weekend-project-paper-timelapse/][1,]] [[https://github.com/momentofgeekiness/paper2movie][2).]]
+:PROPERTIES:
+:Author: OutOfNiceUsernames
+:Score: 4
+:DateUnix: 1462564058.0
+:END:
+
+**** Yeah, that is helpful. It looks like the input for it is a git branch, which means that either they make a new commit for every minor change (doubtful) or just set up a separate script that makes a new commit for every save/change/interval or something.
+
+I suppose I could work with that. The important thing to me is figuring out how to capture the data, because that has to be done as editing is happening and can't be worked on after the fact.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1462564533.0
+:END:
+
+
+*** I've heard that google docs records all changes and that there's a way to timelapse your editing process.
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 3
+:DateUnix: 1462565829.0
+:END:
+
+**** Unfortunately, Google Docs isn't too great with large projects (like a novel). I had originally written /The Timewise Tales/ in Google Docs, but at around 40K words it started loading text more slowly, loading comments more slowly, and having trouble scrolling. I split it up into three parts, but it was a pain in the butt. (I've since moved to Scrivener.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 5
+:DateUnix: 1462566156.0
+:END:
+
+
+** From 4chan's "Literature" board, [[http://i.imgur.com/MiGJsV0.png][a nice explanation of how /Atlas Shrugged/ can be interesting even for people who don't like the espoused philosophy, and a vaguely-interesting discussion of objectivism that also touches on contracts for tit-for-tat "friendship"]]
+
+[[https://www.win.tue.nl/%7Evanwijk/myriahedral][Myriahedral map projections]] ([[https://www.win.tue.nl/%7Evanwijk/myriahedral/CAJ103.pdf][PDF version]], which includes [[http://i.imgur.com/sX1lFff.png][this beautiful graphic]]), the extreme endpoint of such items as the "interrupted sinusoidal"
+
+[[https://popehat.com/2016/05/03/marc-randazza-kosovo-deserves-digital-independence][An interesting article on recently-independent Kosovo's lack of "digital independence"]]
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 3
+:DateUnix: 1462553180.0
+:END:
+
+*** I think Ayn Rand is a terrible writer, completely separately from her terrible philosophy. It's very polemical and not motivated by character drive like the fiction we usually talk about here.
+
+For better and similar philosophy read Nietzsche, for better female written political fantasy read Ursula Le Guin. I don't see any reason to slog through her stuff when there is much better available.
+:PROPERTIES:
+:Author: Polycephal_Lee
+:Score: 13
+:DateUnix: 1462560745.0
+:END:
+
+**** I think that the widespread belief that Ayn Rand is a terrible writer is actually a direct result of her philosophy. In many cases, I suspect the accusers never actually read any of her books. For example, I've heard a lot of accusations of Mary Sueishness, and yet the protagonists of Atlas Shrugged do nothing but lose everything they care about, repeatedly, for the entire novel.
+
+Likewise, while it's true she gets really preachy about communism, so does Orwell in Animal Farm, and yet I never hear anyone bitching about that - because he was /right/. Communism was an absolute catastrophe.
+:PROPERTIES:
+:Author: UltraRedSpectrum
+:Score: 4
+:DateUnix: 1462577306.0
+:END:
+
+***** Ah, see I read /The Fountainhead/ with an open mind in college, since I was keen on this girl who had loaned it to me (it was her favorite book). I was all primed and ready to say a bunch of great things about it ... but I hated how it was written.
+
+[[#s][]]
+
+It's been about a decade since I read it, but that always struck me as one of the most hamfisted, unrealistic things I had ever read. And if you define a Mary Sue as someone who has no flaws and warps the fictitious world around them, then I think Roark definitely qualifies.
+
+(It didn't work out with the girl from college, and I never ended up reading /Atlas Shrugged/.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 12
+:DateUnix: 1462578766.0
+:END:
+
+****** I'm going to leave spoilers unmarked, here, because I actually don't know how to do them. Be advised.
+
+I think "warps the world around him" is putting it a bit strongly. Several people actively conspire against him, everyone hates him, he's (unfairly) critically panned, and he's pretty much a failure as an architect. He also has rather a lot of flaws, and his borderline insanity and complete social naivete destroys his life several times. While it's undeniable that Rand felt that forthright people with no ability to sell themselves or adapt to circumstances were /morally/ superior, her representation of how they tended to end up in real life was extremely reasonable.
+
+While the trial scene is admittedly surreal, his actual plan was more along the lines of borderline jury tampering than impassioned speeches to the soul. Roark chose a jury of the most bitter, angry, disillusioned people he could find, and the prosecution, used to lawyers trying to stock the jury with sympathetics, thought he was an idiot and let it go uncontested. In court, Roark argued that the government had violated his incredibly clear contract (which it had), but that the Soviet-style government's complete lack of respect for the law prevented him from seeking any sort of recourse (which it did). The jury, which again was stocked with the most pissed-off people available, acquitted him.
+
+The rest of the speech is just an author tract with little impact on the plot, much like what you'd see in HPMoR, and probably the result of Rand's habitual drug use.
+:PROPERTIES:
+:Author: UltraRedSpectrum
+:Score: 3
+:DateUnix: 1462581613.0
+:END:
+
+******* #+begin_quote
+  I think "warps the world around him" is putting it a bit strongly. Several people actively conspire against him, everyone hates him, he's (unfairly) critically panned, and he's pretty much a failure as an architect.
+#+end_quote
+
+To me that's part and parcel of being a Mary Sue. A new girl comes to Hogwarts and suddenly Hermione hates her because her intellectualism is being challenged, or Harry hates her because she's a better seeker ... sometimes (often, I'd say) other characters hate a Mary Sue because the Mary Sue is better than them, and this hatred only serves to highlight how awesome the Mary Sue is.
+
+That's how I felt about Roark. It's not that he was socially naive, it was that he refused to play the social games because he was this stoic, resolute, superior being. He got attacked and was hated by a lot of people, but I always got the sense that Rand was trying to show us how great he was, not trying to show us how he was flawed.
+
+But as I said, it's been a decade since I've read it.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 9
+:DateUnix: 1462587208.0
+:END:
+
+******** Sure, Hermione hates the Mary Sue, but this is generally immediately followed by the Mary Sue showing Hermione up all over Hogwarts. Roark scrapes by for a while, is briefly popular, and then winds up as a third-rate architect with a poor reputation and the architectural equivalent of a cult following.
+
+(I originally read the book for the essay contest, so I studied it pretty extensively - hence the high-fidelity memories).
+:PROPERTIES:
+:Author: UltraRedSpectrum
+:Score: 5
+:DateUnix: 1462589326.0
+:END:
+
+
+****** Having read each book at least twice (and maybe three times, though I'm not sure), I definitely prefer /Atlas Shrugged/ to /The Fountainhead/. If the protagonists are compared, Dagny Taggart is a lot more realistic-seeming than Howard Roark is--and the entire point of /Atlas Shrugged/ is that the Gary Stu is largely absent from the story.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 2
+:DateUnix: 1462588182.0
+:END:
+
+
+***** Orwell is not talking about communism only though, he's talking about censorship and authoritarianism. In [[http://home.iprimus.com.au/korob/Orwell.html][this unpublished preface to animal farm]], he stated that the Farm was a warning for then-Britain as well. He was demonizing Russia when Russia was an ally, somewhat different to Rand demonizing them when they were the enemy du jour.
+
+#+begin_quote
+  The servility with which the greater part of the English intelligentsia have swallowed and repeated Russian propaganda from 1941 onwards would be quite astounding if it were not that they have behaved similarly on several earlier occasions.
+#+end_quote
+
+I will admit to only making it about 150 pages through Atlas Shrugged. The rest of it might be great, as I've heard said of Proust, but I don't have the time or wherewithal to labor through it. To put it bluntly, I was bored, as is the case with a lot of fantasy, because there is so much work to do in understanding the world before you care about any of the characters. It winds up feeling like Tell instead of Show. (I put Tolkien in this same category, almost unreadably bland description after description, with black/white morality that is set in stone from the beginning.)
+
+I still haven't read Lathe of Heaven, and I'll probably finish all of Le Guin's catalog before I feel any need to wander back near Rand.
+:PROPERTIES:
+:Author: Polycephal_Lee
+:Score: 5
+:DateUnix: 1462585873.0
+:END:
+
+****** Are you sure we were reading the same book? Two choice quotes:
+
+#+begin_quote
+  Is it not crystal clear, then, comrades, that all the evils of this life of ours spring from the tyranny of human beings? Only get rid of Man, and the produce of our labour would be our own. Almost overnight we could become rich and free. What then must we do? Why, work night and day, body and soul, for the overthrow of the human race! That is my message to you, comrades: Rebellion!
+#+end_quote
+
+** 
+   :PROPERTIES:
+   :CUSTOM_ID: section
+   :END:
+
+#+begin_quote
+  All animals are equal, but some animals are more equal than others.
+#+end_quote
+
+To be clear, the book was a warning for Britain; but at the time, the fear that Britain would go communist was all too real. There were undertones about authoritarianism and censorship, but the book was /about/ Soviet-style communism.
+:PROPERTIES:
+:Author: UltraRedSpectrum
+:Score: 1
+:DateUnix: 1462586578.0
+:END:
+
+******* The book was /about/ Stalinism /on behalf of/ libertarian socialism. Orwell was writing in the WW2-era context in which laissez-faire capitalism was just plain discredited, and hadn't yet reinvigorated itself by taking credit for the successes of postwar Western social democracy.
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1462638339.0
+:END:
+
+
+***** I sometimes hear people bitch about Orwell being preachy, but they're invariably terrible people.
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 3
+:DateUnix: 1462578700.0
+:END:
+
+
+**** Have you actually read any of her fiction? It's all conflict as a result of opposing values.
+:PROPERTIES:
+:Author: Iconochasm
+:Score: 1
+:DateUnix: 1462569921.0
+:END:
+
+***** I'm not sure that's strictly true. Rand was generally of the opinion that intelligence and reason == good, while thoughtlessness and stupidity == evil. About three quarters of her villains are well-meaning but too stupid to do the right thing, while the other quarter are pure evil. I believe, though I can't really say for sure, that the latter were portrayals of Soviet leadership, and their lack of obvious motives comes from a bad case of Typical Mind Fallacy - Rand was completely unable to wrap her head around the Soviet leadership, and so her portrayal of them wound up as Ayn Rand-as-Stalin; an intellectual materialist inexplicably bent on destroying everything for no discernable reason. Ironically, I think Sauron-as-Stalin would've been a more accurate portrayal of conflicting values.
+:PROPERTIES:
+:Author: UltraRedSpectrum
+:Score: 6
+:DateUnix: 1462591238.0
+:END:
+
+
+*** #+begin_quote
+  From 4chan's "Literature" board, a nice explanation of how Atlas Shrugged can be interesting even for people who don't like the espoused philosophy, and a vaguely-interesting discussion of objectivism that also touches on contracts for tit-for-tat "friendship"
+#+end_quote
+
+I've often thought that even the people who hate Rand's ideas might like AS if they approach it as a fantasy novel. Most fantasy is 95% action, with some minor philosophical element exploring the nature or motive of the Evil Villain. AS flips that over, being mostly about the philosophy, with a few action scenes thrown in. I think I did that by accident, when I first undertook to reading it just to write a definitive smackdown, and ended up absolutely loving it. Think of it as, not "what if dragons were real?", but "what if capitalism were correct?"
+
+Also, any fan of Rand's would say that gifts between friends /are/ earned. They're earned by the virtues that make you like the person in the first place. It's funny to me how anti-materialist types always seem to have so much trouble grasping the notion of non-material trades.
+:PROPERTIES:
+:Author: Iconochasm
+:Score: 5
+:DateUnix: 1462559165.0
+:END:
+
+**** That's why I was disappointed in the movie adaptations. They were so interested in story fidelity, that they didn't bother to make good /films/.
+
+A gloriously Art Deco dieselpunk fairy tale about railroads, mysterious Nietzschean supermen, and madcap industrial espionage could be a lot of fun... and a popular (but /deeply/ abridged) movie would have gotten a lot more people to read the book than the bloated, preachy-to-the-choir ones did.
+:PROPERTIES:
+:Author: Sparkwitch
+:Score: 3
+:DateUnix: 1462561446.0
+:END:
+
+
+*** I find Rand most interesting as a social phenomenom, why has a work that i generally consideed by literary, philosophical and political commentators to be not very good had such massive impact? It has near singlehandedly led to the resurgence of libertrianism in the republican party and wider US culture.
+
+Part of me thinks its because very few people have much exposure to political philosophy, especially at a young age and in the form of fiction. If so, could other philosophies be similarly influential if they wrote fiction books rather than policy papers?
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1462687078.0
+:END:
+
+
+*** Also fun: [[http://the-toast.net/series/ayn-rand-rewrites/][/Ayn Rand Rewrites/ by Mallory Ortberg.]] In which Harry Potter, the crew of the /Serenity/, and a host of other much-loved protagonists find that they are, in fact, John Galt.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1462607412.0
+:END:
+
+
+** I've been trying to put my finger on the "Space battles aesthetic" - what he stories that come out of the spacebattles forum seem to have in common.
+
+There is an emphasis on practicalities and problem solving, lots of discussion of logistics, though without explicit maths, charcters are generally competent but bland, - On a meta level there is more of an idea of stories as experiments with consrained outcomes than of them eing creative exercises.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1462686511.0
+:END:
+
+
+** Just finished playing [[http://www.metacritic.com/game/pc/ori-and-the-blind-forest][Ori and the Blind Forest]], based on a recommendation (or discussion?) I've stumbled upon somewhere around here.
+
+Generally platformers like this frustrate me because the controls in them are usually awkward or poorly thought out. This one though I was enjoying even at difficult parts that in other games would make me [[http://imgur.com/W37TG][violently quit the game.]] The [[http://oriandtheblindforest.wikia.com/wiki/Skills][skills]] were a pleasure to use, the soundtrack and art style were beautiful, the map was interconnected all the way through in a way that reminded me of Dark Souls.
+
+And on a relevant note, are there any /books/ you'd associate with this game's flavour and mechanics of magic?
+:PROPERTIES:
+:Author: OutOfNiceUsernames
+:Score: 3
+:DateUnix: 1462565453.0
+:END:
+
+*** That trailer looks fucking gorgeous and made me realize what that thing I torrented a few weeks ago was.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1462571739.0
+:END:
+
+
+*** Also, holy shit, the game is beautiful, well-orchestrated and loads of fun. I'm loving the skill tree and the use of level-grinding to encourage exploration within the Metroidvania format.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1462638499.0
+:END:
+
+
+** I am planning to buy some new wine glasses. Ideally I would like standard bulb shaped glasses with stems. It would be best if they are machine washable. I have done some research on the internet and found conflicting advice about what the best way to purchase these is and where to get them. I am near some fairly fancy stores like Williams-Sonoma and also near some more economical stores like Costco. I usually prefer to buy my appliances and kitchenware Costco because it's pretty good stuff for the price. I was wondering if anyone here had some good advice on what stemware worked well for them.
+:PROPERTIES:
+:Author: blazinghand
+:Score: 3
+:DateUnix: 1462578318.0
+:END:
+
+*** My parents bought some from Ikea about 5 years ago and still have them.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 5
+:DateUnix: 1462585554.0
+:END:
+
+
+*** I bet you there's a subreddit or internet community out there with *strong views* on the best stemware.
+:PROPERTIES:
+:Author: FuguofAnotherWorld
+:Score: 5
+:DateUnix: 1462660023.0
+:END:
+
+
+** As someone who won money betting on the ending of HPMOR, I am curious what the community's thoughts are on making predictions about non-rational media. It is seemingly impossible, beyond a what-is-the-writer's-motivation meta-level. Which can be easily foiled by writers not choosing the most dramatically ideal ending, which seems to happen constantly.
+
+Notably: There is a television program currently airing entitled 'Quantico', which presents a hopelessly unrealistic view of a nonsense-based "crime-fighting" organization, which, in-universe, is called "the FBI". Aside from demonstrating perhaps the most dysfunctional hiring process known to man or beast in the main timeline, the flash-forward timeline is about a terrorist attack, and the trainees are the prime suspects (for a reason so massively dumb that it is almost dramatically unimpeachable -- given how flimsy the reason is, at some point you can't question it without outright telling the audience all the characters are morons for not double checking the premise of their investigation).
+
+Is it possible to predict such drama-schlock?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1462755793.0
+:END:
+
+*** It's important to note that I consider things like Detective Conan (I've only seen the early stuff, I assume it gets terrible?) to ride the line. Whether individual episode represent fair play mysteries is remarkably hard to guess. Some are so cryptically presented that, yes, while we saw the clues, there's no normal person that would be able to attach significance to most of them.
+
+Unless someone can stand up and say they were able to solve more than half of the Detective Conan mysteries.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1462756647.0
+:END:

@@ -1,0 +1,771 @@
+#+TITLE: [D] Friday Off-Topic Thread
+
+* [D] Friday Off-Topic Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 19
+:DateUnix: 1516374456.0
+:END:
+Welcome to the Friday Off-Topic Thread! Is there something that you want to talk about with [[/r/rational]], but which isn't rational fiction, or doesn't otherwise belong as a top-level post? This is the place to post it. The idea is that while reddit is a large place, with lots of special little niches, sometimes you just want to talk with a certain group of people about certain sorts of things that aren't related to why you're all here. It's totally understandable that you might want to talk about Japanese game shows with [[/r/rational]] instead of going over to [[/r/japanesegameshows]], but it's hopefully also understandable that this isn't really the place for that sort of thing.
+
+So do you want to talk about how your life has been going? Non-rational and/or non-fictional stuff you've been reading? The recent album from your favourite German pop singer? The politics of Southern India? The sexual preferences of the chairman of the Ukrainian soccer league? Different ways to plot meteorological data? The cost of living in Portugal? Corner cases for siteswap notation? All these things and more could possibly be found in the comments below!
+
+
+** Is there any good evidence for a relationship between mattress price and quality (of sleep, back health, longevity-of-mattress-construction, etc.)? In response to questions of what it's best not to skimp on*, people often respond that mattress quality doesn't diminish too much marginally with cost until you get to the ~$1k range. Is this actually the case? Personally, I've slept on two 12" queen memory foam mattresses the last ~5y (the first one we had to toss after a badbug infestation), each [[https://slickdeals.net/newsearch.php?src=SearchBarV2&q=mattress&mode=frontpage][costing around ~$150 new and shipped]], and they've been the comfiest mattresses I've ever slept on. Admittedly I've never consistently slept on $1k+ mattresses, but I have stayed in lots of hotels of varying price and quality, as well as at rich friends'/relatives' places (with fancy, multimillion $ homes and designer this and thats, etc. so I imagine they sprung for a fancy mattress), and also briefly tried the expensive mattresses at dept/furniture stores -- and I still find that I prefer my cheap mattress. Supposedly "[[http://freakonomics.com/podcast/mattress-store-bubble/][a bed with a retail price point of $1,000 probably costs about $250 to make]]", so are the cheaper online stores just operating under much narrow margins (with fewer e.g. advertising, real estate, storage, labor, etc. expenses)?
+
+This seems like a really straightforward (if expensive) experiment to carry out, so has anyone done it yet?
+
+*incidentally, people also say this about shoes, where I've also found it to not really be the case -- e.g. my dressier chippewa boots are comfier than my much more expensive, equivalently styled red wings, my AE strands are decidedly not comfy to wear for long periods of time, I've had ~$50 hiking shoes completely outperform $200 hiking shoes, etc. But shoes are much more personalized, so I think they're harder to compare.
+:PROPERTIES:
+:Author: phylogenik
+:Score: 13
+:DateUnix: 1516390253.0
+:END:
+
+*** Not especially useful, but somewhat interesting and tangentially relevant to the cost of the experiment: [[https://www.fastcompany.com/3065928/sleepopolis-casper-bloggers-lawsuits-underside-of-the-mattress-wars]]
+:PROPERTIES:
+:Author: ayrvin
+:Score: 1
+:DateUnix: 1516559374.0
+:END:
+
+
+** People might recall a few weeks ago I was talking about the application/interview process for what amounted for, well, my own job. I'm pleased to be able to announce that I've been identified as the "preferred candidate" which means that the people who weren't picked have a week to file a complaint and if they don't I get my own job!! Yay!!!
+
+Someone who congratulated me said "it must be a relief" and I think that's the best way to put it: if I hadn't got the job I'd made plans to leave the building and take a long walk to get my head together, have a long lunch, and leave early so I could mope the rest of the day. Getting the job just... feels like nothing though, the relief at the bad thing not happening.
+
+But ah well, at least I got to demonstrate to my Evil Boss in no uncertain terms that I am fucking amazing, have qualifications he probably had no idea about, and so on.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 9
+:DateUnix: 1516409697.0
+:END:
+
+
+** I'm looking to get back into learning code, and the first major project that I'd like to keep in mind (since "working toward a particular goal" is probably going to be more fruitful, and less scattered, than "just open a book") is building a random generator, preferably one that can work independently (rather than something that's embedded into a webpage).
+
+Does anyone have a programming language to suggest for building a random generator? Googling mostly turns up random /number/ generators, but I'm looking for something that can, at a bare minimum, pick something from a list of plots that I've already written out, when I want to write something but can't pick one.
+:PROPERTIES:
+:Author: callmesalticidae
+:Score: 6
+:DateUnix: 1516380893.0
+:END:
+
+*** Random number generators are actually a Big Deal in computing. Do you want an RNG or a pRNG? The former needs an outside entropy source like atmospheric noise or temperature fluctuations or something. The latter exists in software and gives random-ish results which are generally good enough if you're not doing anything cryptographic with them.
+
+#+begin_quote
+  Googling mostly turns up random number generators, but I'm looking for something that can, at a bare minimum, pick something from a list of plots that I've already written out, when I want to write something but can't pick one.
+#+end_quote
+
+Number your list. To a computer, everything is numbers.
+:PROPERTIES:
+:Author: buckykat
+:Score: 5
+:DateUnix: 1516381784.0
+:END:
+
+
+*** Basically every (serious) language can do what you want-- having a build-in random number generator is a pretty standard language feature. For example, in Java, you just
+
+#+begin_example
+  import Java.util.Random.*;
+#+end_example
+
+at the begining of your file, then later say
+
+#+begin_example
+  Random variable_name = new Random();
+#+end_example
+
+And generate, say, a random number from 3-25 using
+
+#+begin_example
+  int variable_name_2 = variable_name.nextInt(0, 21) + 3;
+#+end_example
+
+How did I know to do that? Every language has some sort of documentation, so I just looked up "java random" and went here: [[https://docs.oracle.com/javase/8/docs/api/java/util/Random.html]]
+
+How does that help with your program? Imagine if you had 25 pre-written plots in an array, but didn't want to choose any of the first three. Then you run this program to get an int, access the index of the array in question, and print its value out. Here's all the moving pieces in a short program:
+
+#+begin_example
+  import Java.util.Random.*;
+
+  String[] arr = {"plot 1", "plot 2", "plot 3"};
+
+  public static void main (String[] args) {
+  Random r = new Random();
+  int i = r.nextInt(arr.length - 1); //lets "arr" be an arbitrary length, and still pick the string properly
+  System.out.println(arr[i]);
+  }
+#+end_example
+
+which will print out, to console, either "plot 1", "plot 2", or "plot 3". (Unless I've made some dumb syntax mistake.)
+
+From there, I'm sure you can think of how to extend that-- generating multiple arrays, each of which contain a part of a plot, then picking them together and assembling them at random, for example.
+
+Now, I used Java for this example, but as I said, every serious language will have the ability to do this. Here's a short rundown:
+
+Compiled languages: (i.e., you write your code, you compile your code, then you run it from a binary.)
+
+Java -- good for beginners, usually taught in introductory CS courses. Has a massive, easy to use library of built-in functions. You'll want to download [[https://www.eclipse.org/ide/][eclipse]] to serve as your IDE (on windows). I don't know what mac and linux do. People complain that it's a bit slow and bloated, though, and is a little difficult to just have compiled program sitting around that you can run from wherever. Programs also tend to have a lot of filler or boilerplate that might get annoying.
+
+C/C++ -- While not the same language, people usually learn a bit of C before getting into C++. C++ is faster than java, and "more powerful" in the sense that it's a bit closer to the metal (you can do everything it can do with java, but it's a bit more difficult.) It's also significantly more difficult, however, and constantly seeing unexplainable "segfault" errors will get annoying fast. If you're on windows, you'd want to use [[https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiN28fm0-TYAhVK7FMKHZsACI4QFgguMAA&url=https%3A%2F%2Fwww.visualstudio.com%2F&usg=AOvVaw3oneBl4aXUx_gzRe4LtuAN][Visual Studio]] or [[https://code.visualstudio.com/][VS Code]]. I don't know what IDE's linux has, but personally I just write everything in a text editor (i.e., notepad) then compile with the command line utilities gcc (for C) and g++ (for C++)
+
+Scripting languages: (you write your code, and then can immediatelly run it. Code execution is singificantly slower than compiled languages, but you don't need to go through compilation)
+
+Python -- I don't actually know this language, but reportedly it's incredibly easy to use and read, has an expansive default library, and has a number of elegant features. Popular for introductory CS classes, as well as for "coding for engineers" classes. Downsides? I wouldn't know-- I've never tried it.
+
+Javascript -- Don't use javascript if you can help it. As far as languages go, it has a lot of bizarre features and intuitiveness. That being said, if you plan to run your code from a webpage, then you don't really have a choice, so suck it up, read the [[http://www.w3schools.com][www.w3schools.com]] tutorials (including the HTML and CSS tutorials) and get to it.
+
+PHP -- bad for the same reasons Javascript is. Necessary for the same reasons javascript is. If you want a simple web server serving your code, PHP is probably your best choice. Web servers can run other languages to, but PHP is specifically built for the purpose of being a backend language, so it's easiest for beginners for that purpose.
+
+Hopefully this helps!
+
+(Incidentally, I wrote the example in Java because I'm used to using it when my coding is timed. Don't take it as an endorsement of java.)
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 4
+:DateUnix: 1516386966.0
+:END:
+
+**** Great summary! I'll expand on two points:
+
+Python is my favourite language, and I'd strongly recommend it as a first language to learn - the syntax is straightforward and there are many good tutorials. /Think Python 2e/ (Green Tea press) is a very good introduction and entirely free, so no loss if it doesn't suit you.
+
+The only downsides of Python are that it's not suited to low-level tasks (eg hardware control, operating systems), and that distributing your code to non-programmers can be more complicated than in compiled languages (but it's possible!)
+
+Re JavaScript: if you want to write Web stuff, use Typescript instead - it's a language from Microsoft which is basically "JS, without the stuff that makes that awful" and compiles back to JS very easily. There are actually many languages that compile to JavaScript (or Web assembly now!), but few are widely use for Web development.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 3
+:DateUnix: 1516400494.0
+:END:
+
+***** #+begin_quote
+  Re JavaScript: if you want to write Web stuff, use Typescript instead - it's a language from Microsoft which is basically "JS, without the stuff that makes that awful" and compiles back to JS very easily. There are actually many languages that compile to JavaScript (or Web assembly now!), but few are widely use for Web development.
+#+end_quote
+
+I was personally thinking of recommending CoffeeScript, but then I figured having trying to teach a coding beginner a scripting language that /also/ has to be compiles is a bit overkill.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 2
+:DateUnix: 1516401422.0
+:END:
+
+
+**** I would heartily disagree about Javascript and PHP.
+
+Sinatra ([[http://sinatrarb.com/]]) is pretty much the simplest/easiest you can get for a web server. I think at this point everyone has microframeworks, but Sinatra remains my gold standard.
+
+Javascript is a different style of thinking (callbacks/promises) that takes a minute to get your head around, but is really cool when you get into it. It's a blessing and curse that you can pull the shenanigans that are possible in the language, since it allows for really inventive exploration, but results in a fair amount of fragmentation and crazy sauce (look up "transpiling").
+
+I'm working almost entirely with Python right now, and I'd say it's major downside is that it's very opinionated about the "correct" way to do things. The language itself fights you if you're not doing it the "right" way, but doesn't do a great job of explaining that "right way".
+:PROPERTIES:
+:Author: narfanator
+:Score: 2
+:DateUnix: 1516471930.0
+:END:
+
+
+*** There's like a billion different factors that go in deciding which programming language to use.
+
+It depends on what you want to do, how much experience you have, etc. I'm not sure what project you have in mind exactly. Do you want to do something in a window? On a Linux-style terminal? What are its inputs and its outputs? Do you want to generate the pseudo-randomness from a seed yourself, or just hook into some pre-defined "getRandomNumber()" function?
+
+Anyway, I'd probably recommend Python if you're starting out. It's one of the most beginner-friendly languages out there.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 3
+:DateUnix: 1516394828.0
+:END:
+
+
+*** Ruby is possibly the best language out there if you want to do stuff with strings, and it's consistently the only non-frustrating language I work with.
+
+For example, Python is explicitly designed to be correct; Ruby is explicitly designed to be enjoyable. You might think this is not all that important, but these attitudes underly the tooling, communities, and documentation styles. It's just easiest to /play/ in Ruby compared to every other language (IMO)... simply because that's such a core value to the language, and thus the community that grew from it.
+
+In terms of learning - Almost all programming tutorials are written for people who already think like a programmer, even if they don't yet know how to program. Ruby has the only two I've come across that aren't like that - _why's poignant guide, and the SonicPi tutorials.
+
+That all said, the second biggest factor in choosing a language is library support for what you want to be doing; for example, Python has Numpy, which makes machine learning programming really easy.
+:PROPERTIES:
+:Author: narfanator
+:Score: 3
+:DateUnix: 1516471479.0
+:END:
+
+
+*** Thank you all for your comments and advice. It's all been very helpful.
+
+[[/u/narfanator]] [[/u/couteaubleu]] [[/u/GaBeRockKing]] [[/u/PeridexisErrant]] [[/u/buckykat]]
+:PROPERTIES:
+:Author: callmesalticidae
+:Score: 1
+:DateUnix: 1517062697.0
+:END:
+
+
+** I have been thinking about utilitarianism and villainy, and am starting to think we need to pre-commit to a very irrational course of action even if we choose to be utilitarians.
+
+Let me explain the thought process: imagine a villain constructs a doomsday device, and threatens to activate it unless his/her selfish demands are met, which may include all kinds of things like money and slavery and rape and murder, but only affect a tiny fraction of the population.
+
+In the current world, this course of action is stupid. There's too many irrational people that will rebel even with the threat of doomsday. Even those that don't take up arms will still treat this as a moral dilemma and be unsure about whether to obey or rebel. So the villain will most likely just get him/herself killed.
+
+But what if utilitarians became the majority of the population? In this situation, the utilitarian thing to do seems to be obey. And not just obey, but help put down any rebels, deliver the slaves, carry out the murders, etc. etc. After all, the more rebels, the more likely it is that the villain will simply activate the device and kill everyone, which results in an absolute minimal utility that is irrecoverable, since everyone is dead. The relatively small number of sacrifices needed to appease the villain is insignificant in comparison. And whatever other actions and outcomes are possible, they aren't worth the risk of human extinction in pretty much every utilitarian system of utility calculation.
+
+Therefore, if utilitarianism ever becomes the dominant ethical system, every villain gains a perverse incentive to construct doomsday devices. After all, most of the population will jump to serve them, and even put down the crazies that try to rebel. This is terrible, because the more doomsday devices are built, the more likely one of them is to be activated (possibly by malfunction). Then we all die.
+
+So, as strange as it sounds, it seems that in order to avoid human extinction, we should pre-commit to the irrational act of rebelling against anyone who makes a doomsday device even if it risks killing us all.
+
+More generally, it seems that by the same logic, we should pre-commit to essentially defying any kind of utilitarianism-exploiting villainous threat. For example, if some villain creates a bomb that will kill X people and demands we kill or enslave some targets to prevent the bomb exploding, we should pre-commit to rebelling and attacking the villain anyway even if it kills the X people. Otherwise every villain gains perverse incentives to create all kinds of bombs and we end up with a lot more dead people.
+
+Does this thought process make sense? I have a number of bias concerning ethical systems, so I need a second opinion.
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 6
+:DateUnix: 1516422807.0
+:END:
+
+*** I think it would be short sighted of the population of utilitarians to obey the person holding the Doomsday device. It's similar to the logic of not negotiating with terrorists, which this basically is just on a different scale. If the terrorist is smart, they will make it so the cost to you of the thing you are to give up is less than the cost of losing whatever it is the terrorist is holding hostage. The child's safety is traded for a large but achievable amount of money, for example. From the parent's or a government's point of view, this should be an easy trade. Money for a parent is replaceable while the child isn't, and for a government letting a child die to a terrorist is such a huge negative that it's worth it. Under your analysis, this is the right solution, right?
+
+Well, IRL, this doesn't happen in a vacuum. Unless the parent has a strong incentive to keep the entire thing hidden, they will tell the police, and if the government gets involved then a lot of people will know about it. Capitulating to the demands in a hostage situation signals to every potential terrorist that this is a strategy that works, and pays off well since the government doesn't want to risk someone's life in such a public manner. So then everyone does it, and everything's terrible. IRL, you preempt this cycle by never giving in in the first place. Not only do you not agree to the demands, you meet every hostage situation with disproportionate, overwhelming force. You make it public knowledge that any attempted hostage situation has such a small chance of payout, such a huge chance of you ending up dead or in prison for life, that it never becomes a sensible option. The government even goes so far as to not even bother with communicating with the hostage taker in the first place, because a threat that you never hear can't be used against you. You make this reality by sharing it publically, and we call the phrase "We do not negotiate with terrorists."
+
+Where this doesn't apply fully is in your scenario, where the terrorist takes a city or state hostage with the threat of destruction. A single individual, or even a large crowd of individuals, is worth the sacrifice so that taking hostages does not become something that people expect to work. But losing a city or state is another thing entirely. And you're right, there isn't a good solution to this problem. Obeying the commands is the sensible option for the government and populace, even going so far as to force compliance from those who might rebel.
+
+However, what governments can do is try to never allow the situation to arrive in the first place. Nuclear weapons, just about the only practical way of taking a city hostage, are extremely heavily restricted. I haven't looked into this issue specifically, but I imagine that if a government credibly thought that you had a nuclear weapon, you wouldn't be greeted by a SWAT team, you'd be met with a missile. I do not feel like putting myself on a list just to confirm this.
+
+Luckily, nuclear weapons are so resource intensive to design and make that individuals and even most organizations can't afford to make them. Some countries did, however. To get an idea of what your scenario looks like played out in real life, research the Cold War and MAD.
+:PROPERTIES:
+:Author: sicutumbo
+:Score: 11
+:DateUnix: 1516429719.0
+:END:
+
+**** I'm not sure the comparison to hostage taking is the same for utilitarians though. When villains takes hostages, the comparison is between the well-being of the small group of hostages versus all the other people the villains could hurt if they go free, and the latter if often far larger. So from a utilitarian standpoint, it makes sense to rebel.
+
+But once it gets up to a city or global scale, the comparison is now between the world and a small bunch of targeted individuals. The utilitarian directive now points the other way to obey, because the villain is already threatening a maximal group of people and could hardly cause more harm by you obeying.
+
+However, based on the thought experiment in my first post, it seems that this is actually a suicidal course of action, as it gives all villains perverse incentives to create doomsday devices and inevitably one of them will trigger and kill us all. So it seems that the "we do not negotiate with terrorists" pre-commitment must be extended to these large-scale cases, even if it sounds irrational and un-utilitarian.
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 1
+:DateUnix: 1516435617.0
+:END:
+
+***** #+begin_quote
+  even if it sounds irrational and un-utilitarian.
+#+end_quote
+
+This is an important insight here. It doesn't matter if something /sounds/ irrational and un-utilitarian. If matters if something /is/ irrational and un-utilitarian.
+:PROPERTIES:
+:Author: gbear605
+:Score: 1
+:DateUnix: 1516459129.0
+:END:
+
+****** But how do we know whether something just sounds un-utilitarian as opposed to actually being un-utilitarian? It wasn't immediately obvious to me that rebelling was the utilitarian choice, and I highly doubt this is obvious to most (self-proclaimed) utilitarians either.
+
+If this is true, then this leads to a very dangerous situation where a large majority of the population could become misguided utilitarians who make utilitarian-sounding but not actually utilitarian choices, and once again villains gain perverse incentives to make doomsday devices.
+
+So is there something like a public list of official guidelines and pre-commitments for utilitarians to follow. A utilitarian bible of sorts, with commandments like "Thou shalt not negotiate with terrorists"?
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 1
+:DateUnix: 1516472095.0
+:END:
+
+
+*** This is a pretty standard Game Theory sequential game dilemma. In certain sequential games, there are cases where committing to an irrational decision would lead to an increased payoff as a deterrant. In such cases, there is a Nash Equilibrium where the player promises such an irrational decision but never has to follow through with it, but it is not a Subgame Perfect Equilibrium because such a promise cannot be followed through on. In such circumstances, we can say that an irrational player who can precommit would score higher than a purely rational player, assuming that their status as irrational is common knowledge.
+
+However, such idealized scenarios rarely if ever occur in real life. I think it is highly likely that any irrational tendencies which would score higher in a specific situation like this would score lower in similar situations with only a few details changed. Are we sure that rebellion will always lead to the device going off rather than succesfully disarming it and leading to a higher utility?
+
+Does the villain have some method of avoiding dying from his own doomsday device? Or does this necessitate him being irrational enough to follow through with his threat? Perhaps your policy of keeping around a population of irrational people willing to sacrifice themselves for credible threats would causes such villains to be possible. Maybe some or most villains make empty threats and we can rebel without risk of being annihilated because they are too rational to follow through. Even if these isn't always this case, if it's common knowledge that it's possible to safely rebel with high enough probability then it might be rational to rebel and we can have a detterant effect even without irrational policy.
+
+Maybe we do our best to study possible doomsday devices that can be made, control the supply and knowledge needed to make them, and rely on our own doomsday devices to point back at anyone who manages to get one anyway. That's what we're doing now and so far the world hasn't been nuked to death, and I don't think it will be in the near future.
+
+I don't think blindly rebelling increases global utility, otherwise we'd have invaded North Korea by now. Diplomacy and physical prevention seem much more productive given the much smaller chance of nuclear annihilation than some vague "motivation deterrance". I think everyone would still want nukes even if there were a 100% rebellion policy because rebellions have a smaller than 100% success rate and the nukes would still be useful in fighting them.
+:PROPERTIES:
+:Author: hh26
+:Score: 5
+:DateUnix: 1516426024.0
+:END:
+
+**** #+begin_quote
+  However, such idealized scenarios rarely if ever occur in real life. I think it is highly likely that any irrational tendencies which would score higher in a specific situation like this would score lower in similar situations with only a few details changed. Are we sure that rebellion will always lead to the device going off rather than succesfully disarming it and leading to a higher utility?
+#+end_quote
+
+Let's say your plan for dealing with a doomsday device threat is to rebel if it looks like you have a "high enough" chance of doing so successfully. That doesn't tell the villains "hey building doomsday devices is pointless!" It tells them "build doomsday devices in secret locations that will automatically trigger on your death or if they don't receive a certain signal only you know or any number of other security measures to ensure rebellions can't disarm the doomsday device." Which is even worse, because doomsday devices that automatically trigger on certain conditions are even more likely to accidentally trigger and end the world.
+
+Also, both you and [[/u/sicutumbo]] mentioned nukes as doomsday devices that didn't kill us all, but I'm not sure that that generalizes to other doomsday devices. There are various reasons why this may only apply to nukes. For one, nukes tend to only be owned by leaders of countries that are rich and powerful enough to have nukes, so the people that can launch nukes have a lot of lose by doing so. In contrast, there probably are doomsday devices that can be built by random civilians with the right skill sets but not a whole lot of wealth. For another, world leaders are screened in many ways before becoming world leaders. If you are a psycho villain willing to threaten the destruction of the world and actually follow through with it, odds are high that you get (assassinated/disowned by previous more sane king/not voted in) before becoming the leader of a country that has nukes. So it may just be that the world leaders so far have all been sufficiently good people (not wholly good, since there are dictators and war mongers and all other kinds of horrible people, but at least not villainous enough to actually destroy the world if they don't get what they want).
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 1
+:DateUnix: 1516435024.0
+:END:
+
+***** I don't think deterrance via rebellion is a feasible strategy to begin with. I'm not convinced that it's possible, and I'm also not convinced that it's worth the cost. Maybe it is possible and worth it, but these certainly aren't self-evident.
+
+First, we need to convince enough people to irrationally rebel even against threats even under threat of world destruction.
+
+Second, the doomsday devices must be worthless except via extortion (missiles which destroy cities but not the world have military value even if the opponent doesn't submit).
+
+Third, this rebellion committment must be common knowledge, so that every potential villain knows that their demands won't be obeyed. This one is probably the most difficult. How do you convince everyone in the world that you would rather let doomsday devices go off than give into a few demands unless this actually occurs several times to establish a pattern? Your precommitment has no value unless the opponent truly believes it.
+
+Fourth, the villain has to be irrational enough to be willing to set off a doomsday device (or have one that allows them to avoid its effects), but rational enough to acquire one, and to understand your precomittment. A truly irrational villain will make a doomsday device and threaten you with it anyway even if you've made it not be worth it, and then you're forced to rebel and then they set it off. A truly rational villain wouldn't be willing to blow themselves up, and will just go into politics and gain power that way.
+
+So while your policy may decrease the number of doomsday devices being made, it won't decrease to zero. Since it increases the conditional probability of a doomsday device being set off given that it was created to 100%, this is only worth it if the deterrance effect is incredibly strong. Given that all four of the above conditions have to occur for it to work, there will be a sufficiently high percent of cases where it doesn't work to tip the balance against this policy.
+:PROPERTIES:
+:Author: hh26
+:Score: 2
+:DateUnix: 1516471186.0
+:END:
+
+****** #+begin_quote
+  I don't think deterrance via rebellion is a feasible strategy to begin with. I'm not convinced that it's possible, and I'm also not convinced that it's worth the cost. Maybe it is possible and worth it, but these certainly aren't self-evident.
+#+end_quote
+
+To be honest, I'm not completely sure either, hence my request for a second opinion. The thought experiment does seem to suggest that the alternative is suicide though.
+
+#+begin_quote
+  A truly rational villain wouldn't be willing to blow themselves up, and will just go into politics and gain power that way.
+#+end_quote
+
+The problem is one of skillsets. If you are good at politics, then sure you can gain power via politics. But if you are good at building doomsday devices and bad at politics...
+
+Also, there is a problem with hoping that the villain is rational enough to not activate the doomsday device: randomization.
+
+Suppose a large chunk of the population's strategy is "rebel unless the villain displays that he is willing to activate the doomsday device". All the villain has to do is make the activation random: Every time he presses the button, there is a 10% chance that the device activates and kills everyone. Then it becomes rational for the villain to press the button whenever there's a rebellion: If he doesn't press it, the rebellion succeeds and he loses everything. If he presses it, 10% chance the device activates and he dies, losing everything. 90% chance the device doesn't activate, but the rebels see that he is willing to activate the device and so switch to obey.
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 1
+:DateUnix: 1516482011.0
+:END:
+
+
+*** I think something that may be relevant here is [[https://en.wikipedia.org/wiki/Rule_utilitarianism][Rule Utilitarianism]]. Basically it's the idea that the goal should not be to take each action based on maximizing utility but rather to come up with rules of life that if followed universally would maximize utility. It attempts to solve many of the problems with utilitarianism and at least accord to Wikipedia represents the dominate ethical theory among utilitarians.
+:PROPERTIES:
+:Author: space_fountain
+:Score: 5
+:DateUnix: 1516490409.0
+:END:
+
+
+*** People often think of utilitarianism in a weird way.
+
+Utilitarianism is, simply, do whatever produces the best result, where best is defined by how much happiness there is.
+
+So, given all your assumptions, it sounds like the utilitarian thing to do in those cases is to rebel, not to obey.
+:PROPERTIES:
+:Author: gbear605
+:Score: 2
+:DateUnix: 1516424350.0
+:END:
+
+**** Hm? Why is rebelling the utilitarian choice? Once the doomsday device is built, if you rebel there's nothing stopping the villain from just activating the device in spite. Even if you try to rebel secretly, there's a non-negligible chance of being detected in the planning stages or failing in the execution phase, at which point the villain activates the device in spite and again everyone dies.
+
+So if you rebel, there's a fair chance of everyone dying. Which seems like 0 happiness or negative infinity happiness depending on how you specifically calculate it.
+
+Whereas if you obey, most people carry on their lives as normal, just a small fraction of them become enslaved by the villain. So whether you are an average happiness type of utilitarian or a maximal happiness type of utilitarian, isn't obeying the rational choice once the device is built?
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 1
+:DateUnix: 1516425779.0
+:END:
+
+***** For exactly the reasons you describe in your original post: If you rebel once, there's a increased chance of doomsday but a decreased chance of a future person doing the same thing.
+
+Here's a basic mathematical model. To simplify things, I'll say that everyone dead or enslaved is 0 and the current state of the world is 1. Let's say rebelling is a 10% chance of everyone dead and not rebelling means that 1% of the world is enslaved.
+
+Your point is that rebelling means an expected utility of 0.9 while not rebelling means an expected utility of 0.99. However, since not rebelling means that this will happen again (and again and again), either people will rebel at some point, or everyone will eventually be enslaved. If people are going to rebel at some point, it's better if it happens before half the population is enslaved. If everyone is enslaved, it's just about as bad as doomsday, or at least definitely worse than a utility of 0.9. So, since we don't want people to be enslaved, the optimal thing to do is to fight against the villain immediately.
+
+Now, obviously thats simplified, but I suspect that the point would stand under a more complicated model.
+:PROPERTIES:
+:Author: gbear605
+:Score: 1
+:DateUnix: 1516458913.0
+:END:
+
+
+** [[https://www.youtube.com/watch?v=MFzDaBzBlL0][The Backwards Brain Bicycle]]
+:PROPERTIES:
+:Author: Magodo
+:Score: 6
+:DateUnix: 1516381182.0
+:END:
+
+*** I liked this video. The reminder that slight distractions easily break us out of "deliberate" courses of action, reverting us to the techniques we've trained the most, rings particularly true. (Is this because a deliberate substitute for our fast technique requires an overide signal by the prefrontal cortex, which is dropped when startled or otherwise stressed? Dunno.)
+
+--------------
+
+On the other hand... /8 months/ to learn how to ride the backwards bike, "20 minutes" to switch to the other control scheme?
+
+I have quite a bit of experience swapping control schemes around: I'm on my third keyboard layout, and in analog-in for games I've tried X axis inversion, Y axis inversion, 90 degree rotations, handedness changes, combinations of the above,... and those numbers just don't jive. (My experience is that a switch in one direction takes nearly as long as switching back, and about (20) 30-minute sessions to get high-score beating good with any given scheme)
+
+Having not tried it, I don't think this can be much more than a suspicion, but the timescales suggest that the backwards bike probably mostly requires learning new skills, with the suppression of existing ingrained fast responses playing a fairly minor role.
+
+Thinking about the physics of it, the backwards bike is dynamically unstable due to the influence of physical inertia and bits of fundamental physiology like the stretch reflex. IMO, this dynamic instability explains why it takes so long to learn to do it - and, perhaps, explains why riding the backwards bike is such a separate skill from riding a normal bike that you can "unlearn" it in 20 minutes. (The major competing hypothesis is probably "the guy just never got good at riding the backwards bike - I mean, just look at him; he's barely staying upright.")
+:PROPERTIES:
+:Author: BoilingLeadBath
+:Score: 4
+:DateUnix: 1516407342.0
+:END:
+
+
+*** For a moment there I was afraid he was irreversibly sabotaging his kid's bike riding skills. It turned out pretty easily reversible, but he didn't know that.
+:PROPERTIES:
+:Author: eternal-potato
+:Score: 3
+:DateUnix: 1516394038.0
+:END:
+
+
+*** I'm curious how well one can ride the backwards bike without using hands, if the balance is such that you can do it like you ride normal bikes without using hands.
+:PROPERTIES:
+:Author: ayrvin
+:Score: 2
+:DateUnix: 1516559779.0
+:END:
+
+
+** A shoutout to [[/u/DaystarEld]], who posts here regularly. I was reading posts about the Aziz Ansari situation in Change My View yesterday and had been feeling really uncomfortable. I was feeling like Ansari had behaved inappropriately, but I wasn't able to articulate properly what exactly was the problem; and it was getting me really down, as many comments seemed to express he did nothing out of line. Then i stumbled across [[https://www.reddit.com/r/changemyview/comments/7re6fh/cmv_the_aziz_situation_is_showing_a_double/][a post]] from our own resident Pokemon Professor which perfectly explained the issue and detailed step-by-step what Ansari did wrong. And the way he responded to the comments were really well done as well.
+
+Sadly the post was removed for (what feels to me like) a pretty lousy application of the sub's rules, but the comments and responses can still be found there. They did actually help me clarify my thoughts, and I really appreciated the effort he put into them.
+
+(Sorry if this is a bit controversial!)
+:PROPERTIES:
+:Author: AurelianoTampa
+:Score: 5
+:DateUnix: 1516393333.0
+:END:
+
+*** Thanks for the shoutout! You actually made me realize that it was removed: it was still showing up on my browser. Particularly frustrating since I kept referring people back to the OP in discussions :P
+
+I sent the mods a message and they said it was automod removed, and they'll review it manually soon.
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 3
+:DateUnix: 1516430651.0
+:END:
+
+
+*** I do not see a comment explaining why it was removed. How do you know what it was removed for?
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 1
+:DateUnix: 1516409992.0
+:END:
+
+**** There was none: I sent the mods a message and they said it was automod removed, and they'll review it manually soon. Hopefully it's back up by tomorrow :)
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 1
+:DateUnix: 1516430675.0
+:END:
+
+***** Super late here but it's still not back up; was interested in reading it actually because, as somewhat of a fan of Aziz Ansari, I found this recent debacle quite interesting and would be interested to hear your view on the situation.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 1
+:DateUnix: 1517104432.0
+:END:
+
+****** Yeah the mods still haven't adequately explained why it was removed, but I can still see it, so might as well just copy/paste here:
+
+(Quick note that this is not a post about rape. Aziz is not a rapist, by Grace's account. No rape occurred on the date. But it is still a post about sexual boundaries being ignored)
+
+(This is also not a post about the response from society and whether it's proportional. I don't think Aziz deserves to be lumped in with Weinstein and Spacey. I just want to focus on the ways it highlights poor understandings of consent and unfair expectations)
+
+Among the many arguments I've had and seen around this topic lately, one refrain I keep seeing is that Grace should have been more vocal and clear about her desires. There was even a front page video making fun of her being unclear, invoking things like "chakras" to communicate for her.
+
+I can't help but feel that these people didn't read the original article, because in it she very clearly states her preferences a number of times, whereas Aziz is the one who is ambiguous, or who says one thing and then does another.
+
+#+begin_quote
+  She said she remembers him asking again and again, “Where do you want me to fuck you?” while she was still seated on the countertop. She says she found the question tough to answer because she says she didn't want to fuck him at all... But he kept asking, so I said, ‘Next time.' And he goes, ‘Oh, you mean second date?' and I go, ‘Oh, yeah, sure,'"
+#+end_quote
+
+This is a clear "no" to anyone who understands basic English. "Next time" is not "now." "Next time" is not "tonight."
+
+Not to Aziz, apparently:
+
+#+begin_quote
+  and he goes, ‘Well, if I poured you another glass of wine now, would it count as our second date?'” He then poured her a glass and handed it to her."
+#+end_quote
+
+So here Aziz is using a "joke" to try to ignore her stated preference and get her to change her mind about being ready for sex that night. But it's an intentional move: if he had instead been clear about his desires, if he'd said "Well I'm just here for a hookup, I want full sex, that's what I'm going after tonight," then Grace might have just left. Most people would, so of course that kind of thing is rarely said on dates.
+
+Instead you get more poor communication... not from her, who is pretty clear that she doesn't want to be forced into anything:
+
+#+begin_quote
+  She excused herself to the bathroom soon after. Grace says she spent around five minutes in the bathroom, collecting herself in the mirror and splashing herself with water. Then she went back to Ansari. He asked her if she was okay. “I said I don't want to feel forced because then I'll hate you, and I'd rather not hate you,” she said.
+#+end_quote
+
+But from him, who says one thing:
+
+#+begin_quote
+  “He said, ‘Oh, of course, it's only fun if we're both having fun.' The response was technically very sweet and acknowledging the fact that I was very uncomfortable. Verbally, in that moment, he acknowledged that I needed to take it slow. Then he said, ‘Let's just chill over here on the couch.'”
+#+end_quote
+
+And then does another
+
+#+begin_quote
+  Ansari instructed her to turn around. “He sat back and pointed to his penis and motioned for me to go down on him. And I did.”
+#+end_quote
+
+Here's something important that again people don't seem to understand about consent:
+
+*If you give someone a blowjob, that doesn't mean you're okay with intercourse.*
+
+Yes, things can evolve organically, and often do, and that's totally fine. But when the other person *explicitly said no to intercourse for the night*, and explicitly said not to do things that make her feel forced, you should not do this:
+
+#+begin_quote
+  Halfway into the encounter, he led her from the couch to a different part of his apartment. He said he had to show her something. Then he brought her to a large mirror, bent her over and asked her again, “Where do you want me to fuck you? Do you want me to fuck you right here?” He rammed his penis against her ass while he said it, pantomiming intercourse."
+#+end_quote
+
+And again, she clearly says the N word:
+
+#+begin_quote
+  “After he bent me over is when I stood up and said *no*, I don't think I'm ready to do this, I really don't think I'm going to do this. And he said, ‘How about we just chill, but this time with our clothes on?'”
+#+end_quote
+
+This is the point people keep bringing up as him doing things right, as him stopping when being told to stop... completely ignoring, of course, that it's followed by:
+
+#+begin_quote
+  They got dressed, sat side by side on the couch they'd already “chilled” on, and he turned on an episode of Seinfeld... While the TV played in the background, he kissed her again, stuck his fingers down her throat again, and moved to undo her pants. She turned away."
+#+end_quote
+
+So again: he is using his words to /mislead/ her about his intentions, and /not/ honestly just telling her what he wants. Which is sex.
+
+So she says this:
+
+#+begin_quote
+  I remember saying, ‘You guys are all the same, you guys are all the fucking same.'”
+#+end_quote
+
+Which he /again/ ignored:
+
+#+begin_quote
+  Ansari asked her what she meant. When she turned to answer, she says he met her with “gross, forceful kisses.”
+#+end_quote
+
+Another clear sign that she wasn't happy that he deliberately ignored, trying to force her to be quiet with a kiss. And that's when she finally gets up and tries to leave, having to endure another two kisses from someone who should have recognized that she wasn't feeling it.
+
+So assuming you take the original article as mostly true (which is a whole separate discussion than arguing what happened based on it), the above seems pretty clear that she made her desires known, verbally.
+
+Now, we can all talk about when she should have left if that's important to reinforce too. I think she should have left when she got out of the bathroom and he asked her for another blowjob instead.
+
+But no matter how poorly you think she communicated her discomfort or how much you think she should have just left, accusing her of not being clear about what she wants (no sex and no feeling forced) does not get disqualified just because she was okay with oral sex. That's what consent /means./
+
+If he, on the other hand, is verbally saying one thing and physically doing another, and yet people who don't agree that he did wrong keep saying that /she/ is the one who didn't communicate clearly, there's clearly something wrong with the expectations we have of people on dates in society.
+
+This seems a clear double standard to me, but a lot of people are insisting that her communication was mixed (largely because she gave oral sex) while he, at worst, was just insensitive or awkward or worse, "not a mind reader."
+
+But that's ridiculous: she clearly stated her desires. And instead of responding honestly to them, he said one thing and did another. He acted like he cared what she wanted, when really he should have just been clear from the beginning that his goal is to pursue intercourse.
+
+Saying that you don't want intercourse but still giving oral sex is not unclear communication, to me.
+
+Saying that you understand your date's desires for taking things slow, desire not to have sex on the first date, desire not to feel forced, and then acting purely to still get sex, is unclear communication.
+
+But everyone on Aziz's side never seems to bring that up, and it seems ridiculous that she's the one being accused of not communicating clearly.
+
+CMV if you can, and thanks for your time.
+
+[Edit: A lot of people here do not seem to understand how consent works. Quick dating tip:
+
+/Ramming your cock against someone's ass and asking where they want you to fuck them is a proposition for sex the way jamming a cup of coffee against someone's lips and asking how much sugar they want is a proposition for coffee. Particularly if they already said no to coffee. Even if they are drinking tea instead./
+
+It is fine if you are in a relationship with them. It is not fine if you are on a first date and your date has already verbally said no to intercourse.
+
+People who do not understand this and keep conflating what Aziz did with "asking for sex" are missing the point and not actually aiming at anything that will change my view.]
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 1
+:DateUnix: 1517120387.0
+:END:
+
+******* I see what you're getting at. I've had a few discussions about this myself in the past few weeks. I'm mostly on Aziz' side, in that I think it was up to Grace to show her own agency by simply leaving, but I can also agree that (as you pointed out, if we accept her story as pretty much true) Aziz was being quite ignorant of what were very clear signals to pretty much anyone. I settled on a 70-30 weighting in favor of Aziz if we were going to attempt to quantify the responsibility/blame proportions, though that wasn't worked out with math. It's more of an estimation of my opinions.
+
+My main issue with the account is that, based on what Grace said, she gave off very clear signs of disinterest and Aziz Ansari simply steamrolled right past each and every one (I believe she gave at least four signals that, while not explicitly verbal, were very clear signs of disinterest/disgust) Based on the account given, it makes it seem as if she was uncomfortable from the start and only got more uncomfortable as things went, and made no effort to hide this discomfort, though she didn't exactly yell "NO!" in his face.
+
+What bothers me is, if her account is completely true, is that I can't see most guys who aren't explicit rapists going to that extent if a woman is being as disinterested as she claimed she was being. I feel that there was more willingness shown on her part that didn't really make it into the article considering the slant it was written with or that she simply refuses to acknowledge or even may not remember, since memories change over time, especially if there's associated trauma, i.e feeling like you were sexually assaulted. She says Aziz basically dogged her steps through his apartment for half an hour and repeatedly gave her unwanted kisses and "shoved his fingers down her throat". I can't really see any human being, no matter their fetish or sexual bent (outside of just, ya know, being a rapist) doing that if you're being as cold as she claimed she was being.
+
+Guys push for sex. It's not uncommon at all. It wouldn't surprise me at all if Aziz was the type to try to get into a one night stand with a girl. Plenty of guys are. But the way she depicted the encounter just felt off to me; it felt surreal. I couldn't see most men acting in the way she claimed he had (disclaimer: I don't know Aziz, other than his standups and personality online/TV so he could just be a giant douchebag. Very /very/ possible.) And, as many people harp on, the (from what we can tell) completely consensual blowjob. I feel like we can all agree that that was, at the very least, a very mixed signal to send.
+
+In a sexual encounter between two people that don't know each other very well, things can be weird and awkward. Neither side is completely sure what the other's into, what they want and how to best communicate their interests. Did she pull away because she's not into progressing past first base or did she pull away because she just wants you to slow down because she has nerves but is fine with things progressing? Was the way he asked where you wanted to fuck him being threatening or was it sexy? Were his repeated advances because he didn't care about you or because he figured you seemed receptive to changing your mind? Is she sucking on your fingers because it's an awkward sexual technique she's not experienced with and so she's going along with it, or because she's actually into it?
+
+These are all questions that both people probably ask themselves and don't voice. The reasons they don't voice it can vary wildly. For men, maybe they don't want to seem timid and meek(which, despite people's claims, is a valid position. They are scores of women that will tell you that they like their men to be aggressive, to "know what he wants", etc. And how that translates is probably different for each specific woman) For women, maybe they're intimidated by his power (be it social, physical, etc.) or maybe they want a second date and are afraid that not acquiescing pulls the plug on future connections of any sort, and so they go along with it thinking "This won't be so bad". And for some women, that's the case. It's not so bad. For others, it leads to them feeling violated and regretful.
+
+As I stated earlier, despite my being (mostly) on Aziz' side, I can easily agree that there is blame on both parties' ends. Sex is a complicated thing; it always has been and will continue to be (most likely) though the /way/ in which it is complicated will change. People are complicated too, and figuring another person out can be a lifetime of work, let alone trying to do it in a single night. The easiest solution is for people to be open and honest with their communication; that seems obvious. But there are barriers to that; barriers that have real effects in the real world. There were multiple reasons that both Aziz and Grace did what they did; some justifiable and some not.
+
+Ultimately, Grace remained in the bad part of that encounter by her own will for (from what I could tell by the writing) seemed to be at least an hour, if not longer. She had the agency to leave at any moment but chose not to for reasons that we can really only speculate at. But it's important to note that she did stay there of her own will; she kissed Aziz several times despite his relentless, unwanted advances and she did perform oral sex on him towards the end of the encounter.
+
+This does /not/ mean she should've fucked Aziz. This does not mean she didn't have the right to tell him "No." and this does not mean she didn't have the right to feel disgusted by his aggressive actions or regretful of the night in general.
+
+What this does mean is that she doesn't have the right to call it sexual assault, at least in my opinion. And she also shouldn't have gone to a magazine and attempted (I say attempted because opinions are mixed on whether or not Aziz actually assaulted her) to label him as a sexual assailant. Whether Aziz was a celebrity or not; that's something that has the potential to cause a lot of damage.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 1
+:DateUnix: 1517183168.0
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1516376870.0
+:END:
+
+*** I've heard some unsavory types share 5e pdfs online for free, I think you might even be able to get them with a google search! I just wanted to let you know they were out there, so you could avoid doing anything illegal.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 12
+:DateUnix: 1516409852.0
+:END:
+
+
+*** I'd check local bookstores-- I bought my 3.5 books back in high school used there. Obviously local bookstores aren't anywhere near as common, and 5E is newer than 3.5 was then, so you may not find anything.
+
+That said, if you don't find it I'd probably recommend you do the bad thing and torrent a PDF of the player's handbook. It's not functionally much different from you borrowing it from another member of the table, and it's inconvenient enough to have to use the PDF (especially if you're a casting class, while at the table), that if D&D ends up being something you play semi-regularly you'll still be pretty incentivized to purchase a copy when your financial situation improves.
+:PROPERTIES:
+:Author: Loiathal
+:Score: 6
+:DateUnix: 1516381350.0
+:END:
+
+
+*** Most of the DnD rules were released under an Open Game License, which (in short) means that the rules (but /not/ the published settings) can be freely reproduced by others.
+
+In other words, you can find the rules [[http://www.d20srd.org/index.htm][on a wiki at no cost]], if that's what you're interested in looking for.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 3
+:DateUnix: 1516381029.0
+:END:
+
+**** That's for 3.5-- has 5E been released the same way? I was under the impression they hadn't.
+:PROPERTIES:
+:Author: Loiathal
+:Score: 1
+:DateUnix: 1516381855.0
+:END:
+
+***** Not sure if it's the whole thing, but take a look [[http://5e.d20srd.org/][here]] for the 5e version.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 4
+:DateUnix: 1516382040.0
+:END:
+
+
+*** #bookz on under net. The pirate bay? Use 3.5 and just google pathfinder?
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1516979311.0
+:END:
+
+
+** I need a way of changing how I think. I've been working out and will be going to a therapist once Im covered under insurance again but I keep on falling back into the same self-defeating ruts of thought. I've tried reading LessWrong articles but I just can never force myself to finish them.
+:PROPERTIES:
+:Author: SkyTroupe
+:Score: 3
+:DateUnix: 1516462300.0
+:END:
+
+*** This is probably super simplified advice but a simple, easy way to at least start trying to break bad habits is the rubber band method (test? Experiment? Idk). Basically, wear a rubber band on your wrist. Every time you notice that you're venturing down a self defeating line of thought, immediately grab the rubber band, pull it far and release.
+
+Try your best to make it reactionary (as the more time you have to think about it, the more likely you'll be too afraid of the pain to do it)
+
+Eventually your body will (or I guess I should say may) start associating those patterns of thought with the pain of the rubber band snap and it'll be easier to avoid because you'll naturally shy away from those thoughts.
+
+Dsclaimer : this method is very simple.and basic, more for breaking a habit of eating chips after bedtime. It's no substitute for legitimate therapeutic assistance though it can serve as a supplement.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 2
+:DateUnix: 1516808043.0
+:END:
+
+**** I tried the say or yell "Stop!" Method with negative thoughts but it never panned out into anything good. Im uncomfortable with causing self harm because I almost did actual self harm a while back. Thank you for the suggestion though.
+:PROPERTIES:
+:Author: SkyTroupe
+:Score: 1
+:DateUnix: 1516818182.0
+:END:
+
+***** This is only based off my own personal experiences, but I've found that creating new habits, especially at the beginning of the day help me a lot. Something as simple as stretching first thing in the morning helped to wake me up, made me feel like I had already accomplished something, and had a tangible benefit.
+
+I also tend to respond well to broaching physical boundaries. What I mean by that is I have a hard time doing work in the same place I sleep or spend watching tv/playing games. I have an easier time working if I move go to a coffee shop or cross a significant boundary (door to the room, going outside, etc).
+:PROPERTIES:
+:Author: ianstlawrence
+:Score: 2
+:DateUnix: 1517545900.0
+:END:
+
+
+** So I was thinking of the litrpg genre and their divergence from actual mmorpgs. I immediately thought of how many people (male and female) play characters of the opposite sex. Have yall heard of anything in the genre addressing this?
+:PROPERTIES:
+:Author: Darth_Faggot
+:Score: 2
+:DateUnix: 1516506635.0
+:END:
+
+*** When I first read this, I thought of SAO (which I kinda hate) but also how often it seemed that when a large group of human beings are now in a "real" MMO they are made to look like their "real" forms.
+
+I was then curious about a story where this change doesn't occur. So not only do you have people presenting as different genders but you have lots of the population looking almost exactly identical to lots of the population.
+
+I wonder what kind of weird social, physical, and mental things people might go through to create distinct presentations from other people. If group work might, on average, be more amicable because your physical identity isn't as unique. Or if you might see a rise in psychosis due to a lack of individuality. Maybe a greater emphasis on tribes and using group identity to create distance between yourself and others?
+
+Seems really interesting. And I have realized I did nothing to answer your question. Sorry. But very interesting!
+:PROPERTIES:
+:Author: ianstlawrence
+:Score: 3
+:DateUnix: 1517545726.0
+:END:
+
+
+** What do you guys use as a RSS reader? I've recently found a few blogs I would like to follow without making my favorites tab a chore to go through. I used to use Google Reader, but we all know what happened with that...
+:PROPERTIES:
+:Author: Makin-
+:Score: 1
+:DateUnix: 1516374963.0
+:END:
+
+*** feedly.com
+:PROPERTIES:
+:Author: VirtueOrderDignity
+:Score: 5
+:DateUnix: 1516377016.0
+:END:
+
+
+*** I use The Old Reader, which is designed to look and act like Google Reader did. I follow several dozen feeds organized in many folders, and it works great.
+
+[[https://theoldreader.com]]
+:PROPERTIES:
+:Author: blazinghand
+:Score: 1
+:DateUnix: 1516385716.0
+:END:
+
+
+*** [[http://feeder.co/]]
+
+They have an iOS app, Android app, and Google Chrome extension. You can also use it from their website.
+:PROPERTIES:
+:Author: gbear605
+:Score: 1
+:DateUnix: 1516404691.0
+:END:
+
+
+*** I used to use feedly but left it because inoreader was better. So that'd be my recommendation, personally.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 1
+:DateUnix: 1516409885.0
+:END:
+
+
+*** Tiny Tiny RSS. A pain in the arse to set up, since it needs a whole web service stack, but it's the only one which was feature-rich enough to satisfy me (in particular it has proper regex filtering).
+:PROPERTIES:
+:Author: AugSphere
+:Score: 1
+:DateUnix: 1516455011.0
+:END:

@@ -1,0 +1,375 @@
+#+TITLE: [BST][Q][RST][HSF] Fact-checking some quantum math
+
+* [BST][Q][RST][HSF] Fact-checking some quantum math
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 8
+:DateUnix: 1410359123.0
+:END:
+I've just had an idea, which I'd like the protagonist of my story, "S.I.", to apply - or at least discuss to show off how much of a smarty-pants she is, if I can't actually use it directly. If you don't want to be spoiled about a possible future plot point in that story, then I suggest you stop reading here.
+
+:)
+
+Assuming the Multiple Worlds Interpretation of quantum theory is true, then buying lottery tickets can be looked at in an interesting way: it can be viewed as an individual funneling money from the timelines where the buyer loses to the timelines where the buyer wins. While there is a great degree of 'friction' in this funneling, it is the method that has, perhaps, the lowest barrier to entry: it only costs as much as a lottery ticket, and doesn't require significant education into abstruse financial instruments.
+
+While, on the whole, buying a lottery ticket may have a negative expected utility (due to that "friction"), there is at least one set of circumstances where making the purchase is warranted: if a disaster is forthcoming, which requires a certain minimal amount of wealth to survive. As a simplification, if the only future timelines in which you continue to live are ones in which you've won the lottery, then buying tickets increases the portion of timelines in which you live.
+
+Which brings us to the bit I've just now thought of: If you buy a lottery ticket, and /win/, then via Bayesian inference from the previous paragraphs, you have just collected evidence which suggests an increased likelihood that you are about to face a disaster which requires a great deal of resources to survive. (As you are unlikely to have ever experienced any timelines in which you did not survive such a disaster.)
+
+However, I'm not /quite/ sure that I've got all my inferential ducks lined up in a row there. So if anyone reading this could point out whether anything like the idea I'm trying to describe could be considered reasonably accurate, then I'd appreciate the heads-up. (I'm reasonably confident that it would be trivial to point out some error in the above paragraphs; you could say that I'm trying to figure out the details of the steelmanned version.)
+
+Also, would this variation of my earlier idea be worth throwing into an LW 'Open Discussion' thread?
+
+
+** I think you made a few mistakes in your Bayesian reasoning (dropping conditionals).
+
+You assume a scenario where you live if bought a winning ticket and there is a disaster P(L | T, D)=1 and you don't live if you didn't buy a winning ticket and there is a disaster P(L | ~T, D)=0.
+
+You then claim that the probability of a disaster given you bought a winning ticket is greater than the prior probability of disaster: P(D | T) > P(D).
+
+You can't get to this conclusion from there. If you know that you are living X years from now and have won the lottery, you will find that the probability of disaster in X years is unchanged, P(D | T,L) = P(D). However, knowing that you are living X years from now but have not won the lottery makes the probability of disaster less likely, P(D) > P(D | L) -- in fact P(D)=P(D|L)/P(T).
+
+In the absence of knowledge of whether you live through whatever occurs (either D or ~D), winning the lottery and a disaster occuring are independent so P(D|T) = P(D).
+
+Edit: You can draw this out in a Bayesian Network if it makes more sense:
+
+#+begin_example
+  +---+         +---+
+  | D |         | T |
+  +---+         +---+
+       \       /
+        \     /
+         +---+
+         | L |
+         +---+
+#+end_example
+:PROPERTIES:
+:Author: IX-103
+:Score: 9
+:DateUnix: 1410379666.0
+:END:
+
+*** I would give you more than one upvote if I could. :)
+
+I want to discuss the implications that quantum immortality has on P(L), but I'm afraid that I currently need either caffeine or sleep, and can't quite figure out how to formulate my question. Something about how quantum probability differs from Bayesian confidence, and that quantum immortality means that you can have a Bayesian near-certainty that you will continue living in /some/ future timelines... hopefully, I'll be able to either express myself better after some sleep, or I'll realize that my proto-question can't be turned into a proper one.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1410380417.0
+:END:
+
+**** Ok, so I've had some sleep so I'll give this a shot. DataPacRat feel free to try your hand at it too.
+
+If we take the strongest possible view of quantum immortality, then Pr(L) = 1. Then if the only way to survive the disaster is through winning the lottery i.e. Pr(L| ~T,D) = 0. [I'm going to use a Venn diagram here, cause it helps me think, there are definitely other ways to put this.] So we have three events/circles D(isaster), T(icket that wins), and L(ives). We know Pr(~L)=0 so fill in those spots, and we also know Pr(L∩D∩~T)=0 so fill that in. Now you can see that the only way a disaster can occur is if we buy a winning ticket, Pr(D|~T)=0. Now, so long as Pr(T)<1, buying a winning ticket increases the chances of the disaster.
+
+Pr(D|T) = Pr(T∩D)/Pr(T) = Pr(D)/Pr(T)
+
+If we relax our conditions (Pr(L)<1, and Pr(L|~T∩D)>0), so long as we head towards the "standard" independent case presented by IX-103 above we still get some information from T. (Where this could fall down is if winning increases your chance to die some other way like mugging etc.) I think. I'm also fairly certain this could be shown but probabilities are my weakest area of maths, so I'll stick to the simpler case.
+
+So in theory, taking the spherical cow approximation it works, it may not work as well with relaxed constraints but I think it still works.
+:PROPERTIES:
+:Author: duffmancd
+:Score: 2
+:DateUnix: 1410397394.0
+:END:
+
+***** /There/ is the reasoning I was trying to intuit out, in the spherical-cow approximation way. I was thinking less in terms of Venn circles than of a table of the possible scenarios, eg:
+
+A. Lives, NoTicket, NoDisaster
+
+B. Lives, Ticket, NoDisaster
+
++C. Lives, NoTicket, Disaster+
+
+D. Lives, Ticket, Disaster
+
+... but that's just a different mental model of the same thing in the end.
+
+(Now, all I have to do is work out the details of how to include the disaster-hinting lottery ticket in my story... :) )
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1410413266.0
+:END:
+
+****** Yep different mental model. I like Venn diagrams because in simple cases (<4 items) I can quickly see all the cases and how the probabilities add together. But everyone's mind works differently. For more than 3 I need to start binary counting to ensure I have all cases and it's less intuitive to me how probabilities are related to each other. But as I said, Pr is my least skilled section of maths.
+
+Anyway, glad it helped.
+:PROPERTIES:
+:Author: duffmancd
+:Score: 1
+:DateUnix: 1410415441.0
+:END:
+
+******* A comment on LessWrong is leading me to consider an alternative scenario: There are two ways to survive the disaster, either pleasantly by having enough money (via winning the lottery) or unpleasantly (such as by having to amputate most of your limbs to reduce your bodymass to have enough delta-vee). I'm currently trying to use Venn-like overlapping categories to see if I can figure out any "If X then Y" conclusions. The basic parameters of the setting seem to rule out all but five combinations (using ! to mean 'not'):
+
+WinLotto, !Disaster, !Amputee, Live: All Good
+
+WinLotto, Disaster, !Amputee, Live: Buy survival
+
+!WinLotto, !Disaster, !Amputee, Live: Nothing happens
+
+!WinLotto, Disaster, Amputee, Live: Unpleasant survival
+
+!WinLotto, Disaster, !Amputee, !Live: Dead.
+
+At this very moment, I'm trying to figure out what happens if quantum immortality means the 'dead' line doesn't exist...
+
+... But I'm as likely as not to miss some consequence of this. Anyone care to take a shot at how to set things up so that any Bayesian calculations on the matter have at least a shot at reflecting reality?
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1410464975.0
+:END:
+
+
+** The issue with the lottery ticket example is that the winning or losing quality of a ticket is not a quantum state. If you buy a losing ticket in one possible universe, then it will be losing in all posible universes. You'd need to find a way to vary which ticket you buy by universe, and gaurentee that at least one ticket you could possibly buy is actually a winning ticket, and I'm not sure either is generally possible.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1410360239.0
+:END:
+
+*** Would arranging for a source of quantum-random bits (ala present-day's random.org) to select the lottery ticket be a possible solution to this?
+
+Or, alternately, having a long enough time between the purchase of the ticket and the drawing of the numbers for enough "noise" to be generated that the numbers drawn /do/ vary across multiple worlds?
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 2
+:DateUnix: 1410360402.0
+:END:
+
+**** Yes, that could work IFF you could chose your ticket at all. I suppose some might, but I've personally never seen a lottery where you get more choice than the store you buy at and the time you buy. This could work in a game where you can pick correctly, such as in a [[http://en.wikipedia.org/wiki/Numbers_game][numbers game]], or the stock market.
+
+As far as noise, it seems rather tenuous. To quote Farnsworth; "Quantum physics means that anything can happen, at any time, for no reason...". It basically becomes a form of magic, and the math becomes too complicated to be meaningful, and it's just not interesting. Why not create an [[http://hitchhikers.wikia.com/wiki/Infinite_Improbability_Drive?useskin=oasis&cb=9685][infinite improbability drive]] at that point.
+
+Also, on the note of "is it worth it", it seems like it isn't, even in the many worlds scenario. Let's say you win the lotto in 1billionth of all possible universes, for a total of 50 million dollars, at a cost of 1 dollar per ticket. By your logic "you" won 50 million dolars across a billion average universes, but spent a total of 1 billion dollars across the same sample, creating a total debt of 950 million. That may not matter since each individual you only lost an average of 1 dollar, but the winnings matter even less by the same token, meaning it's not worth it.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1410365902.0
+:END:
+
+***** #+begin_quote
+  Also, on the note of "is it worth it", it seems like it isn't, even in the many worlds scenario. Let's say you win the lotto in 1billionth of all possible universes, for a total of 50 million dollars, at a cost of 1 dollar per ticket. By your logic "you" won 50 million dolars across a billion average universes, but spent a total of 1 billion dollars across the same sample, creating a total debt of 950 million. That may not matter since each individual you only lost an average of 1 dollar, but the winnings matter even less by the same token, meaning it's not worth it.
+#+end_quote
+
+Hypothetically, let's say you have special knowledge that at 5pm next Wednesday the evil future government is going to deactivate the cortical implants of the poorest 80% of the population, killing them all swiftly and painlessly. In that circumstance, there would be positive expected utility, because you wouldn't be alive if you lost. (The many-worlds thing doesn't even really factor into it.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 4
+:DateUnix: 1410366909.0
+:END:
+
+****** That makes sense. I can see now that OP was talking about that sort of odd scenario.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1410367751.0
+:END:
+
+
+****** Precisely. :)
+
+The many-worlds thing comes in at the /next/ step: If you /don't/ have any special knowledge about next Wednesday, could winning the lottery be taken as evidence that there /might/ be such a deactivation scenario in your near future?
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1410368378.0
+:END:
+
+******* I don't believe so. I'm sort of rubbish at quantum physics, but I have to imagine that all your many-worlds clones are living right alongside you up until they're not. So until the calamity occurs, your many-worlds spread looks just like it would if there's no calamity in the future.
+
+Of course, /after/ the calamity happens, if you only survived because you bought a lottery ticket the week before, you might be able to surmise that winning the ticket was the only thing that kept you alive, but I don't think that winning the ticket gives you much in the way of information about the future.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 6
+:DateUnix: 1410368776.0
+:END:
+
+******** It's that word 'much' in your last sentence that I'm focused on. Is it non-zero, providing even a smidgeon of evidence that could potentially be measured?
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1410368983.0
+:END:
+
+********* I'm not sure. My gut (intuitive) feeling is that it's actually zero, but as stated, I have only a layman's understand of quantum physics - I keep trying to read books about it, but never get all that far, in part because very little of it makes any intuitive sense.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1410373986.0
+:END:
+
+********** Do you have any thoughts on anywhere, or anyone, else I could ask, who might have more applicable domain knowledge?
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1410374329.0
+:END:
+
+*********** You could try pinging [[/u/eliezeryudkowsky]], who is very knowledgable on the subject. I've been trying to run through [[http://lesswrong.com/lw/r6/an_intuitive_explanation_of_quantum_mechanics/][An Intuitive Explanation of Quantum Mechanics]], but it hasn't been helping me as much as I think it should. You could also try hitting up the Less Wrong open discussion thread to get more input.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1410375212.0
+:END:
+
+************ This is slightly embarrassing, but as I'm still new to Reddit: how do you 'ping' someone?
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1410376149.0
+:END:
+
+************* To send a personal message, click their username, which will take you to their user page. On the righthand side will be a link that has an envelope and says "send message", which will let you send them a private message. (Ping is not the proper term for this on reddit - it's a PM - but I use "ping" to refer to any quick method of contact over the internet.)
+
+Also, if the user has reddit gold (and hasn't turned off this feature), mentioning their username, as I just did in my previous comment, will send them a message to their inbox. With that said, Yudkowsky is very busy, so it's possible that you won't get a response - depending on how soon you need to know a better answer, I'd suggest Less Wrong, or possibly somewhere like [[/r/AskPhysics]] or [[/r/askscience]], so long as you can rigidly define your question for them.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1410376445.0
+:END:
+
+
+***** ***** 
+      :PROPERTIES:
+      :CUSTOM_ID: section
+      :END:
+****** 
+       :PROPERTIES:
+       :CUSTOM_ID: section-1
+       :END:
+**** 
+     :PROPERTIES:
+     :CUSTOM_ID: section-2
+     :END:
+[[https://en.wikipedia.org/wiki/Numbers%20game][*Numbers game*]]: [[#sfw][]]
+
+--------------
+
+#+begin_quote
+  *Numbers game*, also known as a *numbers racket*, *policy racket*, *Italian lottery*, or *nigger pool*, is an illegal [[https://en.wikipedia.org/wiki/Lottery][lottery]] played mostly in poor neighborhoods in the [[https://en.wikipedia.org/wiki/United_States][United States]], wherein a bettor attempts to pick three digits to match those that will be randomly drawn the following day. In recent years, the "number" would be the last three digits of "the handle"---the amount race track bettors placed on race day at a major racetrack---published in racing journals and major newspapers in New York. A [[https://en.wikipedia.org/wiki/Gambler][gambler]] places a bet with a [[https://en.wikipedia.org/wiki/Bookmaker][bookie]] at a tavern or other semi-private place that acts as a betting parlor. A [[https://en.wikipedia.org/wiki/Courier][runner]] carries the money and betting slips between the betting parlors and the headquarters, called a numbers bank or policy bank. The name "policy" is from a similarity to cheap insurance, both seen as a gamble on the future.
+#+end_quote
+
+--------------
+
+^{Interesting:} [[https://en.wikipedia.org/wiki/Magic_Numbers_(game_show)][^{Magic} ^{Numbers} ^{(game} ^{show)}]] ^{|} [[https://en.wikipedia.org/wiki/Small-numbers_game][^{Small-numbers} ^{game}]] ^{|} [[https://en.wikipedia.org/wiki/Gambling][^{Gambling}]] ^{|} [[https://en.wikipedia.org/wiki/Ducci_sequence][^{Ducci} ^{sequence}]]
+
+^{Parent} ^{commenter} ^{can} [[http://www.np.reddit.com/message/compose?to=autowikibot&subject=AutoWikibot%20NSFW%20toggle&message=%2Btoggle-nsfw+ckeh7d4][^{toggle} ^{NSFW}]] ^{or[[#or][]]} [[http://www.np.reddit.com/message/compose?to=autowikibot&subject=AutoWikibot%20Deletion&message=%2Bdelete+ckeh7d4][^{delete}]]^{.} ^{Will} ^{also} ^{delete} ^{on} ^{comment} ^{score} ^{of} ^{-1} ^{or} ^{less.} ^{|} [[http://www.np.reddit.com/r/autowikibot/wiki/index][^{FAQs}]] ^{|} [[http://www.np.reddit.com/r/autowikibot/comments/1x013o/for_moderators_switches_commands_and_css/][^{Mods}]] ^{|} [[http://www.np.reddit.com/r/autowikibot/comments/1ux484/ask_wikibot/][^{Magic} ^{Words}]]
+:PROPERTIES:
+:Author: autowikibot
+:Score: 1
+:DateUnix: 1410365936.0
+:END:
+
+
+***** The lottery I'm most familiar with is a Canadian one, [[https://en.wikipedia.org/wiki/Lotto_6/49][Lotto 6/49]], in which every player is free to pick their numbers.
+
+Re stock market: Because getting into a situation where you can buy even a single share of a single stock requires more money and knowledge than buying a lottery ticket.
+
+As for the negative expected utility - yep, I agree with you, that in general, it's not worth it. (Though ) It requires extremely non-general, unusual circumstances, in which having a large amount of accumulated wealth is of a qualitative benefit rather than just a quantitative one, to make it potentially useful; which is why I brought in the survive-or-die scenario.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1410366565.0
+:END:
+
+****** If that's how that Canadian lotto works, then your generator would work.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1410367586.0
+:END:
+
+******* As an aside, the Lotto 6/49 has an average return somewhere around 45%; for every billion dollars you spend on tickets, you get back around half a billion, instead of merely the fifty million you suggested. It's still not a good investment for average utility, but the average utility is around ten times what you suggested, which may affect someone's intuition.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1410368742.0
+:END:
+
+
+***** The New York Lotto allows you to choose your numbers. However, the winning number is chosen after all tickets for that lottery have been sold. It's possible that they select whether or not to have a winner in a given week and then rig the selection to ensure there is a winner. I don't know. Three may be a regulatory body that would know.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1410397402.0
+:END:
+
+
+** Moving money from losing to winning selves: check, if the lottery is a quantum one. Anthropic reasoning, not check, I don't know an anthropic theory which works like that, there's no expectation that current events will have been selected to give you longer future times. Maybe under SIA, but not sure.
+:PROPERTIES:
+:Author: EliezerYudkowsky
+:Score: 4
+:DateUnix: 1410409438.0
+:END:
+
+*** Duffmancd has helpfully worked out the reasoning I was groping for in the post at [[https://www.reddit.com/r/rational/comments/2g09xh/bstqrsthsf_factchecking_some_quantum_math/ckex8ul]] , in which the existence of a winning ticket provides probably-weak but non-zero Bayesian evidence of a forthcoming disaster.
+
+I'm willing to take EY's implied word that of the two main anthropic theories, SSA is incompatible with the above. (He's EY, after all.) Does that then imply that the 'Disaster-Detecting Lottery Ticket' is an argument for SIA?
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 2
+:DateUnix: 1410413566.0
+:END:
+
+
+** Antropic reasoning cant give you information about the future - up until the point where the zombie vikings preform the bloodeagle on all of your selves that don't have the money to buy them off, both winners and loosers experience existence. In order for this strategy to work you need to see the disaster coming far enough in advance to play. Or you could pre-commit to playing the lottery every six months and not spending any winnings except in dire emergency for a period of six months.
+:PROPERTIES:
+:Author: Izeinwinter
+:Score: 3
+:DateUnix: 1410450116.0
+:END:
+
+*** I'm certainly a fan of using pre-commitment in order to achieve useful effects.
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 2
+:DateUnix: 1410461406.0
+:END:
+
+
+** This can be framed without requiring confusing QM or antropics:
+
+The possible futures in which you do win the lottery are very few. If there won't be a disaster, the ones where you don't dominate so much it's not a noticeable loss precomiting to do something stupid in case you do is no big loss. If there WILL be a disaster, the ones where you don't win the lottery are screwed no matter what they do, so precommiting to do something stupid in them dosn't matter and you can subtract them. Having done this, the remaining utility is all in the ones where you win.
+
+Therefore, you should preommit to act as if lottery-wining and impending disaster are correlated, regardless of if they actually are or not.
+
+Edit: Note that this doesn't say anything abut if "you" exist or should anticipate anything, only abut whether there's still something you care about in that universe. It works even if you are guaranteed to personally survive the disaster or sacrifice yourself to stop it, for example. It's a /fully general/ argument about observing something extremely unlikely meaning you should condition upon it mattering.
+:PROPERTIES:
+:Author: ArmokGoB
+:Score: 3
+:DateUnix: 1410475481.0
+:END:
+
+
+** Okay, so I have been thinking this through some more, and I have a few points.
+
+In order for this to make sense, the goal has to be for a small sub set of your future time lines to gain immunity from unforseen and certain classical (in the physics sense) dooms.
+
+Future problems you see coming will have more effective answers than a small chance of having a warchest available.
+
+Unlikely disasters - black swans and so on can be ignored for the simple reason that they just wont happen to most of your time lines, so you are already "Safe" from them.
+
+So what you are trying to protect yourself from here is the inevitable sledgehammer of an event which a: You don't see coming. b: is already in motion. c: Will kill you with significantly greater certainty than 999999/1000000 if not prepared for. - because if it is a less certain doom than this, then more of your future selves will survive via luck and cunning than via lottery-funded preparations, so no need to bother.
+
+Basically, what we are talking about here are things like yellowstone blowing, a radiation front from a cosmological event, or north korea releasing 9 pandemics on the day their top-secret vaccination program completes.
+
+There is one problem with just about every single one of this kind of scenario I can think of, and it is this: Cash or a fat bank account will do you no good whatsoever.
+
+You need.. a dooms-day shelter. Or to be on the other side of the planet. So in order for this to work, you need to not only play the lottery, you need to pre-commit to spending any jackpot in a completely insane way, rather than on cocaine, cars and charity.
+
+And it would be an insane way to spend winnings, mind! Because winning carries no information about whether there is in fact a doom inbound - the lottery isn't an oracle, it has no, and produces no information about why you decided to play.
+
+So in order for this to work, you need come up with something which is both a sensible doomsday shelter /and/ a not-ridiculous investment in order to make sure the winning subset carries through. Plan a geothermal power plant built with on-site living quarters?
+:PROPERTIES:
+:Author: Izeinwinter
+:Score: 3
+:DateUnix: 1410522840.0
+:END:
+
+
+** I think you have to include quantum immortality to get to your final point. I can't see how dying after buying a losing ticket should change the likelihood of winning/losing otherwise. But, if you literally cannot experience death, then more and more classically unlikely things should happen in order to prevent this (like winning the lottery so that you have enough money, or being the one person whose cryopreservation isn't knocked out by the asteroid that destroyed all other human life etc.) and in this case, unlikely things happening lends evidence that something dangerous is coming up. Looking back, your life becomes more like a story, Chekhov's gun becomes more and more true.
+
+But it's late and I can't think this all the way through, so there may be other problems.
+:PROPERTIES:
+:Author: duffmancd
+:Score: 2
+:DateUnix: 1410362538.0
+:END:

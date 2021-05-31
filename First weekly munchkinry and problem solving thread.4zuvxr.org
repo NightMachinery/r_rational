@@ -1,0 +1,425 @@
+#+TITLE: First weekly munchkinry and problem solving thread!
+
+* First weekly munchkinry and problem solving thread!
+:PROPERTIES:
+:Author: gods_fear_me
+:Score: 30
+:DateUnix: 1472314491.0
+:END:
+Let's do something simple for today! You have the power to perfectly fool someone into thinking that you are someone else. But only once and only for fifteen consecutive minutes before your power leaves you, forever. There is no upper limit on how many people the power can affect at once.
+
+What's the worse you can do?
+
+Or alternatively here is a challenge a character might face in a fictional world. This character, let's call them A. A has two doors before them. One leads to death and the other to riches. There is a guard before each door. One guard always lies and the other always tell the truth. A doesn't know which is which. What should A do?
+
+I apologize for the rather rushed challenges. I was supposed to prepare them beforehand but something came up. Sorry.
+
+Edit: I'm an idiot who forgot to specify the rules for the knight and knave puzzle. You only get two questions and you can't ask the following questions.
+
+If I asked you if the door you're guarding leads to where I want to go, would you say 'yes'?
+
+If I asked the other guy if the door he is guarding leads to where I want to go, what would he sat?
+
+
+** 1) I'd choose Jesus as my best option. 15 minutes is enough for a worldwide TV broadcast. From there I can undermine worldwide churches' leadership and basically deliver 'The Newest Testament', which describes unambiguosly the new commandments, forbids finding 'deeper meanings' as the false ones and has a mechanism of text integrity self verification (and meanings'). As for content, it establishes basic 'game theory' society interactions, instigates rationality, defines mechanism of "content updates" and builds a framework for switching from religion altogether later.
+:PROPERTIES:
+:Author: ShareDVI
+:Score: 30
+:DateUnix: 1472322196.0
+:END:
+
+*** I was just about to say that but you beat me to it. Though you might be able to do better claiming to be some super intelligent alien from some ill-defined higher plane or something like that.\\
+Picking a figure from a preexisting religion would basically confirm that religion and would likely stunt societies ideological development. Plus confirming a fundamentally unreasonable belief system would not do great things to people's rationality even with all the stuff you try to stick into the new new testament.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 17
+:DateUnix: 1472331896.0
+:END:
+
+**** Hmm, maybe can just admit to be the main figure in all the religions, promote ideological development as part of testament?
+:PROPERTIES:
+:Author: TwoxMachina
+:Score: 1
+:DateUnix: 1472380423.0
+:END:
+
+***** The thing is, not only would that still encourage a religious mindset, but it would require people do a lot of mental gymnastics, since there's no figure with common qualities all religions share.\\
+I don't know what happens to people if they're made to believe a obviously inconsistent proposition but it may not be good for their sanity.
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 1
+:DateUnix: 1472426321.0
+:END:
+
+
+*** "When I said 'created in God's image', I was talking about your mind. And I expect you to use it to the fullest extent. And not just blindly follow rules that don't have a solid and rational justification."
+:PROPERTIES:
+:Author: ansible
+:Score: 5
+:DateUnix: 1472349537.0
+:END:
+
+
+** Surely giving two questions to the knights and knaves puzzle makes it trivial? Ask a question like "Is 1-1=0?" and the response tells you which guard it is, then ask which door to go to.
+
+It's a moot point anyway, as you can ask: "If I asked you if I should go through your door, what would you say?" and the answer is always truthful
+:PROPERTIES:
+:Author: Zephyr1011
+:Score: 12
+:DateUnix: 1472327164.0
+:END:
+
+*** You know what, I fucked up. The next week I will make proper scenarios. Just ignore the knights and knaves puzzle for now.
+:PROPERTIES:
+:Author: gods_fear_me
+:Score: 3
+:DateUnix: 1472328091.0
+:END:
+
+
+** I'll post a challenge of my own here. It's an interesting computer science problem disguised as a logic problem. I'll post the answer late on Sunday or Monday morning.
+
+#+begin_quote
+  You are someone who works for a company who needs to find out how durable a new container actually is. But you're bored enough that for kicks and giggles, you're going to find out by throwing the containers out of the windows of 200-floor skyscraper you work in. If it survives the fall from the Nth floor and not from the N+1th floor, it's a good enough measure of it's durability for your company. Unfortunately, someone screwed up your order and you only got 2 containers instead of the 200 you needed and time is short.
+
+  You only have the two containers in your hands and you are standing in front of the 200 floor building. You want to know the highest possible floor the containers can handle falling from before breaking. But you need to minimize the number of tries you have to save on time before the very important meeting in 4 hours (it's going to be time-consuming going up and down stairs to retrieve the containers you're dropping out the windows).
+#+end_quote
+
+UPDATE: You don't know which floor the containers will break on, so while you can skip testing the first few bottom floors to save on time, it's a risk. So assume that the containers are equally likely to break on any floor.
+
+Also, I worded the problems slightly poorly. You want to minimize the number of tries since it's very stressful to worry if the containers will break or not. You prefer two tries throwing the containers from the 200th floor than three tries from the 1st floor. Going up and down the stairs is not a problem.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 6
+:DateUnix: 1472369057.0
+:END:
+
+*** Interesting.
+
+I can figure out the highest possible floor with 20 tests. Drop the first container out the 20th floor window, then the 20+19=39th floor, then the 20+19+18=57th floor, etc, until it breaks. When the first container breaks start testing the most recent interval. Start with the floor above the last floor the other container survived, work up, and you'll know for sure within 20 tests.
+
+For example, if the first container broke on the 20+19+18+17=74th floor, you've done four tests and you know it can survive up until the 57th floor. Test 58 to 73 (sixteen tests) and when the second container breaks, you are done and you know what floor it survived at maximum.
+
+This strategy doesn't necessarily save me from having to run up and down the stairs a lot. I'm not sure if it minimizes the total flights of stairs one has to cross.
+
+Actually, I know it doesn't: the 20th triangular number is 210, so you could save many flights of stairs by starting on floor 10 instead of floor 20 (then going up by 19 to 39, etc., until you get to 200 exactly). Even then, I'd expect the average number of flights of stairs crossed to be around 2000 (average number of tests is 10, average number of flights is 100, and you have to go both up and down), which means you'll be crossing a flight of stairs every 7.2 seconds. Really you should cross a flight every 5.34 seconds so that in the worst case you will still finish in time (20 tests, container breaks on floor 200, you have to cross 2670 flights of stairs). That's a rough workout for four hours.
+
+Ah well. Did I give the answer you were seeking for the riddle?
+:PROPERTIES:
+:Author: blasted0glass
+:Score: 7
+:DateUnix: 1472373304.0
+:END:
+
+**** Yeah, that's the rough outline of the correct answer. I need to double check the exact numbers which I don't have time for now, but you got the idea right with minimizing the number of tries. I worded the problem a little poorly and didn't mean for people to think they needed to minimize the number of flight stairs to travel rather than the number of tries. I updated the original post.
+
+Congratulations! Have an internet cookie!
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1472402911.0
+:END:
+
+***** Thank you! If only I had an (unbroken) internet container to put the cookie in and take it with me.
+:PROPERTIES:
+:Author: blasted0glass
+:Score: 1
+:DateUnix: 1472413087.0
+:END:
+
+
+*** An important point to use: Cycle your containers.
+
+Say, drop 1st container at 20th floor. Drop 2nd at higher floor before going down to grab both at once. Cuts your movement by half.
+
+EDIT: I'd say to attach a chain for quick retrieval, but will probably affect the results/
+:PROPERTIES:
+:Author: TwoxMachina
+:Score: 5
+:DateUnix: 1472380003.0
+:END:
+
+**** That's a great idea. Hopefully you have good eyesight and/or hearing, so you can tell if the first container broke without having to go down and look at it.
+:PROPERTIES:
+:Author: blasted0glass
+:Score: 1
+:DateUnix: 1472413425.0
+:END:
+
+
+*** We need to know an /exact/ breaking threshold at the end of an experiment.
+
+Therefore, if we only have 1 container, our only choice would be trying to throw the container from every window starting from first floor, incrementally.
+
+However, we have two containers.
+
+I have already shown that no optimization is possible for 1-container case. With two containers, once our first container breaks, we will be stuck with 1-container case. So, all optimization must be in use of first container.
+
+There is some floor number N that lies between upper bound (200) and lower bound (1) If we throw our container from i-th floor, either it doesn't break and we know N>=i (and can try throwing again), or it breaks and we know N<i (and have to resort to iterative testing with remaining one container)
+
+Now, we need some more clarifications.
+
+- Do we think that breaking threshold is equally probable on every floor?
+- Is time cost of floors proportional to floor number? (does throwing container from 30th floor take 3 times longer than throwing it from 10th floor?)
+
+We should try maximizing average reduction of range where N lies with first container, then do iterative tasting of entire range with second container. The specific algorithm for first container depends on the answers to questions above.
+:PROPERTIES:
+:Author: PlaneOfInfiniteCats
+:Score: 3
+:DateUnix: 1472374740.0
+:END:
+
+**** I added some information that answers your questions in my original post.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1472402706.0
+:END:
+
+
+*** How much time does it take to retrieve an undamaged container dropped from say, 100th floor?
+:PROPERTIES:
+:Author: gods_fear_me
+:Score: 2
+:DateUnix: 1472374835.0
+:END:
+
+
+** [[http://tvtropes.org/pmwiki/pmwiki.php/Main/KnightsAndKnaves]]
+:PROPERTIES:
+:Author: Jiro_T
+:Score: 5
+:DateUnix: 1472322885.0
+:END:
+
+
+** As for the obvious solution to the latter one, ask both guards 'If I asked the other guard which door holds the riches, what would he say?'. Then pick the other door.
+:PROPERTIES:
+:Author: Murska1FIN
+:Score: 3
+:DateUnix: 1472316856.0
+:END:
+
+*** As guards, both are theoretically meant to protect the riches. There are a lot of unrelated things either guard could say that are true or that are false which would protect the identity of what's behind which door.
+
+Capable security, even stuck with only one truth-telling and one lying guard, would make sure they're instructed not to answer questions.
+:PROPERTIES:
+:Author: Sparkwitch
+:Score: 3
+:DateUnix: 1472323586.0
+:END:
+
+**** Capable security would just have the door to the riches be beyond the door to certain death.
+:PROPERTIES:
+:Author: Murska1FIN
+:Score: 1
+:DateUnix: 1472340290.0
+:END:
+
+***** I'm pretty sure there would just be one door, the one leading to the riches, it would be reinforced, locked and guarded, the guards would attack anyone trying to open it if they didn't receive prior notice from whoever owns it and a one time use password.
+:PROPERTIES:
+:Author: Electric999999
+:Score: 3
+:DateUnix: 1472342963.0
+:END:
+
+
+** On the first, it's important what happens after the fifteen minutes is up.
+
+Does the belief disappear afterwards, or only your ability to continue influencing? If it lasts, then when people meet you again after your fifteen minutes, do they recognize you as the pretend person (only to be dissuaded as they get a chance to interact with you) or do they recognize you and not know why, do they recognize you as a giant fraud, or do they not recognize you at all?
+
+Does the power work over video or audio broadcasting channels... and (if so) does that broadcast then work as a believable fifteen minutes forever or does it immediately seem absurd afterwards?
+
+Also: Do you have to be a specific individual or can you be a generalized ideal: The Creator of the Universe, your most trusted friend, your own great-grandchild time traveling from the future?
+:PROPERTIES:
+:Author: Sparkwitch
+:Score: 3
+:DateUnix: 1472321647.0
+:END:
+
+*** Generally lasts but there are exceptions. You can't convince everyone forever that you are a giant fire breathing dragon unless you establish while using your power that said dragon has shapeshifting capabilities. Abusable I know but that's exactly what this thread is supposed to be, albeit things may get significantly less broken in the future.
+:PROPERTIES:
+:Author: gods_fear_me
+:Score: 3
+:DateUnix: 1472325391.0
+:END:
+
+
+** Does this power work over broadcasts and recordings?
+
+Can it be adaptive to the person such as "I am the person you respect most in the whole world?"
+
+There is a lot of possibilities if it's more flexible or adaptive
+:PROPERTIES:
+:Author: Nighzmarquls
+:Score: 3
+:DateUnix: 1472346850.0
+:END:
+
+*** Adaptive.
+:PROPERTIES:
+:Author: gods_fear_me
+:Score: 3
+:DateUnix: 1472359004.0
+:END:
+
+**** Then I think the most powerful thing I could say is "hello In this moment I am the one who will tell you the most important truth about yourself. You have always wanted to work together to make the world a better place. You have not always succeeded. You can't always know what will make the world better. But multiple points of view will help. Even ones you disagree with. Even ones you hate. After I am done talking I will not be able to yell you more truths about yourself. And will just be another person trying to work together to make things better" getting that broadcast to as many people as possible would be good. If it works in recordings using it as a viral meme tic contagion would be best otherwise I need to get myself broad cast to the majority of China or india.
+:PROPERTIES:
+:Author: Nighzmarquls
+:Score: 4
+:DateUnix: 1472401389.0
+:END:
+
+***** Recordings would still work. And I declare you the winner.
+:PROPERTIES:
+:Author: gods_fear_me
+:Score: 3
+:DateUnix: 1472401837.0
+:END:
+
+****** To be fair this particular question is the kind of thing I've been playing with for one of my stories so I kind of had a lot of cached brain work to pull on to bring to bat for this.
+:PROPERTIES:
+:Author: Nighzmarquls
+:Score: 3
+:DateUnix: 1472402211.0
+:END:
+
+
+** A more interesting variant of the knights and knaves puzzle I once heard runs as follows:
+
+There are three statues. You know that when asked a yes-no question, one responds truthfully, one lies, and one produces a random response (say based on some long ago recorded data). Unfortunately, they respond in a language that you do not speak, using the words Da or Ja. Given three questions, solve which statue is which (and ideally also what Da and Ja mean, though I do not remember if this is part of the problem).
+
+Silly tricks like asking non-yes-no questions (which only the random statue can respond to) or paradoxical questions (same) should probably not be required.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1472397825.0
+:END:
+
+
+** What's the worst you can do?
+
+Well there was no limitation you could only fool someone into thinking you're a real person, so presumably you could make them think you were Harry Potter or Superman or whoever, and there's no limitation that you need proximity, so can you just make everyone in the city you're in or whatever assume you're Obama or the like. Useful as you can only use it once so being able to indiscriminately use it on everyone prevents people being missed even if they miss the start of your message.
+
+So what's the worst you can do? Choose some super well known being that means the apocalypse is happening, or just fool people into that. For fifteen consecutive minutes everyone in the world think you are the nigh-omnipotent 15min mark herald of the apocalypse and that anyone alive then will be tortured for eternity or whatever. Now the catch is, if people don't know you exist wouldn't they not know the herald-you exists? Except you've fooled everyone so everyone believes you are them, by the nature of the character and the prompt everyone should know they exist.
+
+Note if the power is based off something like super social skills it's not as effective at all. As is that requires exploiting some vagueness but in theory it could result in most of the world killing themselves and as many others as possible within the 15mins, since they all now believe the world will end in fifteen minutes and eternal torturefest for the living. Abusing it to basically turn it into a limited power to make everyone on earth believe one thing for fifteen minutes is kinda cheating though.
+:PROPERTIES:
+:Author: xavion
+:Score: 2
+:DateUnix: 1472320725.0
+:END:
+
+
+** I would make people think my name is a list of instructions that describe how to easily and cheaply make a elixir of life (or something like that). I would then ask someone to write down my name for me.
+:PROPERTIES:
+:Author: masterax2000
+:Score: 2
+:DateUnix: 1472339925.0
+:END:
+
+
+** A gets infinite questions, so fuck the room. Determine which charachter tells the truth, and ask them everything from "does p=np" to "is there a god."
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 3
+:DateUnix: 1472316552.0
+:END:
+
+*** He can truthfully say 'I don't know'.
+:PROPERTIES:
+:Author: Murska1FIN
+:Score: 8
+:DateUnix: 1472316918.0
+:END:
+
+**** There's bound to be a way to phrase any question so the only possible answers are "yes" and "no."
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: -1
+:DateUnix: 1472318971.0
+:END:
+
+***** You can try, but it won't change the fact that they don't know.
+
+Your solution only works if you interpret "always tells the truth" as "tells the best possible objective answer given the question" instead of "tells the best possible answer given their own state of knowledge."
+
+After all, if you say that someone is truthful, you aren't calling them omniscient, you're saying they tell the truth as they see it.
+
+Also, you're mixing the challenges. I'm pretty sure that the infinite question challenge, and the 2 door challenge are separate.
+:PROPERTIES:
+:Author: electrace
+:Score: 10
+:DateUnix: 1472320440.0
+:END:
+
+****** Anything one of them says is the truth. If that guard can be compelled to answer something, what they say is the truth.
+
+There's always the nonresponse problem (the original question doesn't specify that they need to answer you) but if they can be compelled to talk...
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 0
+:DateUnix: 1472322586.0
+:END:
+
+******* Again, the "truth" as one normally means the term is "what the person believes to be the case," rather than "what is the case."
+:PROPERTIES:
+:Author: electrace
+:Score: 8
+:DateUnix: 1472337060.0
+:END:
+
+
+*** You win!
+:PROPERTIES:
+:Author: gods_fear_me
+:Score: 0
+:DateUnix: 1472324975.0
+:END:
+
+
+** I'll go with Q. Assuming I can find a sufficiently savvy person, the only way I could fool them is to actually have the powers of (but not be) Q. Before time runs out, I create something to permanently make myself Q.
+
+Naturally the above is a best case scenario, and more likely than not, I'll end up significantly weaker than Q.
+:PROPERTIES:
+:Author: Igigigif
+:Score: 1
+:DateUnix: 1472327418.0
+:END:
+
+*** I assumed the power is actually a mind control power. That would fool someone into thinking you are Q without giving you the powers of Q.
+:PROPERTIES:
+:Author: Jiro_T
+:Score: 3
+:DateUnix: 1472327505.0
+:END:
+
+**** Depending on how exactly I'm mind controlling people, this is still a good result. Assuming I don't fool people by making them ignore any inconsistencies, I can still contact an arbitrary number of people, generate information, and appear to be whoever I want.
+:PROPERTIES:
+:Author: Igigigif
+:Score: 1
+:DateUnix: 1472357631.0
+:END:
+
+
+** Since the power is adaptive you can make people believe that you are someone or something without you knowing what it is so that's insanely broken because you can convince anyone by chosing "someone that will convince this person to do x "so you have mind control ,a bit unpredictable but maybe you can be more concrete at specifying what you want to your power (I wonder what happens if you try something impossible ) . Also it occurs to me that maybe(depending on how your power detects what you want) you can use conditionals and use it as a one use computer with infinite processing power and who other people believe you are as ouput(maybe the power works like this but does't have infinite processing power but it has at least enought to adapt to a person and that level of mind reading isn't a trivial feat)
+:PROPERTIES:
+:Author: crivtox
+:Score: 1
+:DateUnix: 1472396625.0
+:END:
+
+
+** Omega (omnipotent, omniscient, super-intelligent, neutral morality) appears before you and informs you that he wishes to play a game.
+
+You are able to choose the game, however the definition of "game" cannot be cheesed. "Whoever fulfills my CEV first wins!" does not count.
+
+You can set a wager, however the wager is always balanced. If you wager fulfilment of your CEV, losing results in your Coherent Extrapolated Nightmare being fulfilled.
+
+He will play to win, using all of his abilities, but is not a sore loser and won't cheat.
+
+What do you do?
+:PROPERTIES:
+:Author: Revisional_Sin
+:Score: 1
+:DateUnix: 1472548203.0
+:END:
