@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 3
+:DateUnix: 1622386283.0
+:DateShort: 2021-May-30
+:END:
+
+#+BEGIN_QUOTE
+  In other words, one of the "this must be true or else we are irredeemably fucked anyway" assumptions the kids can probably make is that not even Crayak could make a platform that can be absolutely certain a given simulation is safe to run.
+#+END_QUOTE
+
+Unfortunately:
+
+- The halting problem means it's not /always/ possible to determine what a given program does, if that program can do an unlimited amount of computation.\\
+  *But* that doesn't apply if you say "well, computing for more than a billion years is suspicious as /heck/, I'll treat that as a virus".
+- The halting problem refers to all possible programs. "Programs we want to run", or "programs simulating people", may be enormously simpler to analyse.
+- The halting problem /does not/ rule out perfectly secure "sandboxes". If Crayak is simulating a program or person, /there need not be any way "out" of the simulation/.\\
+  (not even LARPing the malign universal prior, which is sad in this hypothetical but very good news IRL)
+
+TLDR, Crayak could in fact start running programs in an inescapable sandbox, and terminate them if they looked suspicious without needing ultracomputational powers.
