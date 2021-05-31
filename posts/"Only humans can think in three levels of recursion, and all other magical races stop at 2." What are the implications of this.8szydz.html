@@ -1,0 +1,1748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-05-31 Mon 05:33 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>"Only humans can think in three levels of recursion, and all other magical races stop at 2." What are the implications of this?</title>
+<meta name="author" content="Fereidoon" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">&ldquo;Only humans can think in three levels of recursion, and all other magical races stop at 2.&rdquo; What are the implications of this?</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org71689b6">1. &ldquo;Only humans can think in three levels of recursion, and all other magical races stop at 2.&rdquo; What are the implications of this?</a>
+<ul>
+<li><a href="#orgb1e4bbf">1.1. Forget about thinking about what <i>you</i> think. If you can&rsquo;t think about what <i>other people</i> think you think, then you can&rsquo;t be a very good liar. You can tell lies - try to get other people to think certain things - but you can&rsquo;t think about your lies, and adapt them based on what you think other people think. This will cripple your ability to engage in deception.</a>
+<ul>
+<li><a href="#org30291a5">1.1.1. In coming up with this argument you&rsquo;ve engaged in four levels of recursion. Right?</a></li>
+<li><a href="#orgdda91cd">1.1.2. #+begin<sub>quote</sub></a></li>
+<li><a href="#orga0ab738">1.1.3. This makes sense. Thanks for entertaining the scenario.</a></li>
+</ul>
+</li>
+<li><a href="#org8cedb96">1.2. This idea is inspired from a quote &ldquo;in practice, infinite recursions are at most three levels deep.&rdquo;</a>
+<ul>
+<li><a href="#orgf110782">1.2.1. Aaah, thanks. I like this explanation. So humans would be master liars, and no one else would no what was going on.</a></li>
+</ul>
+</li>
+<li><a href="#org787bc3d">1.3. This is not technically a computational limitation in cognition. Anything you can do with recursion you can do with iteration and some book-keeping. Ink and paper and Bob&rsquo;s your uncle.</a>
+<ul>
+<li><a href="#org107c926">1.3.1. Alright, but let&rsquo;s instate a fascist government and burn all the books. What does three levels of recursion actually allow you to do that you can&rsquo;t with just two? I cannot think of a single practical thing.</a></li>
+<li><a href="#orgdaa362a">1.3.2. You won&rsquo;t get very far in the game of political intrigue if you&rsquo;re breaking out the pen and paper for plots everyone else is doing in their head.</a></li>
+</ul>
+</li>
+<li><a href="#orgf2c9216">1.4. This topic is a black hole of contemplation. It&rsquo;s far too easy to just sit down and try to puzzle it out. It&rsquo;s fun thought, and potentially useful (for psychology especially).</a>
+<ul>
+<li><a href="#org5287bf6">1.4.1. Haha, I wasn&rsquo;t dissing the idea. I asked because it seemed interesting but I didn&rsquo;t know what exactly it meant. :)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org71689b6" class="outline-2">
+<h2 id="org71689b6"><span class="section-number-2">1</span> &ldquo;Only humans can think in three levels of recursion, and all other magical races stop at 2.&rdquo; What are the implications of this?</h2>
+<div class="outline-text-2" id="text-1">
+<blockquote>
+<p>
+Only humans can think in three levels of recursion, and all other magical races stop at 2.
+</p>
+</blockquote>
+
+<p>
+&#x2014;Eliezer Yudkowsky
+</p>
+
+<p>
+Okay, I think I get what this <i>is</i>. You can think about a car, and then think about how you thought about that car, and then think about how you thought about thinking about that car. But what actual implications would this have, aside from the obvious? This just seems really abstract, like something a competent programmer could use is some very specific function, but which is otherwise practically useless for everything except philosophy.
+</p>
+</div>
+
+
+<div id="outline-container-orgb1e4bbf" class="outline-3">
+<h3 id="orgb1e4bbf"><span class="section-number-3">1.1</span> Forget about thinking about what <i>you</i> think. If you can&rsquo;t think about what <i>other people</i> think you think, then you can&rsquo;t be a very good liar. You can tell lies - try to get other people to think certain things - but you can&rsquo;t think about your lies, and adapt them based on what you think other people think. This will cripple your ability to engage in deception.</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+But I think you&rsquo;re still one level down from what Mr. Yudkowsky meant. Thinking about cars is level zero, the object level. Thinking about how you thought about the car is recursing once, and thinking about that is recursing twice. So magical races actually can think about their lies, but only humans can go further. This means that while magical races can believably lie, only humans can believably lie about lying. Magical races can use spies and informants, but only humans can use double agents. Only humans can even think about the concept of double agents, without going cross-eyed and needing to work it out on paper.
+</p>
+
+<p>
+Also, only humans can realize that someone is trying to make them think that they are lying. Say, Alice saw a red car, but wants Bob to think that the car is blue. Any magical race can say &ldquo;The car is blue,&rdquo; and fill in details of the story, adjusting to the picture Bob has (2) of the picture Alice is trying to make for him (1) of the car (0). But if Alice is human, then she can avoid eye contact and fidget uncomfortably and mumble, &ldquo;The car is bl- I mean, <i>red</i>.&rdquo; Bob instantly thinks: Alice wants (2) Bob to think (1) that the car is red (0). She is lying badly, and the car is probably actually blue. Bob congratulates himself on piercing the deception. Alice wins, because humans can pretend to pretend.
+</p>
+<p>
+:Author: Anakiri
+:Score: 93
+:DateUnix: 1529663286.0
+</p>
+</div>
+
+<div id="outline-container-org30291a5" class="outline-4">
+<h4 id="org30291a5"><span class="section-number-4">1.1.1</span> In coming up with this argument you&rsquo;ve engaged in four levels of recursion. Right?</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+I don&rsquo;t buy it. There&rsquo;s only a couple of pieces of information you have to keep track of to map recursion into iteration here, and you can do that in your short term memory. You don&rsquo;t even need paper.
+</p>
+<p>
+:Author: ArgentStonecutter
+:Score: 26
+:DateUnix: 1529663687.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org5d9626a"></a>I can do it in my short term memory without needing paper because I&rsquo;m human. An elf would need paper to work through it, once they realized that there was more to the problem in the first place. And the elf <i>could</i> work through it, it just wouldn&rsquo;t be intuitive. As opposed to a human Bob, whose literal first instinct would be &ldquo;Either the car is blue, or Alice wants me to think the car is blue.&rdquo; If Alice is a known competent liar, then it might not even occur to human-Bob that Alice might be having an off day - the car is definitely not blue.<br />
+<div class="outline-text-5" id="text-1-1-1-1">
+<p>
+Humans can&rsquo;t actually get much deeper than that in practice, on an intuitive level. We tend to immediately get stuck in a loop of, &ldquo;But what if that&rsquo;s what she wanted me to think she thought I thought she thought? Damnit, get me some paper.&rdquo; At some point in recursion/iteration (you&rsquo;re right, there is no computational difference in this context), every higher level of abstraction is indistinguishable to you. It&rsquo;s entirely possible for different people/races to hit that point at different levels. That fact can have interesting worldbuilding implications.
+</p>
+
+<p>
+Not every elf will notice that the problem even requires further thought. Not every elf will care to give the problem more thought even if they recognize that the human is being all <i>human</i> about it, and would prefer to just ignore all information from humans. Not every elf will have the Nobel Prize winning insight to be able to work through the bizarre twisty nature of human minds even if they wanted to. Some will. It is very unlikely that this is a hard limit. But the difference can have interesting implications for interactions between random people on the street.
+</p>
+<p>
+:Author: Anakiri
+:Score: 39
+:DateUnix: 1529668309.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgf416660"></a>It&rsquo;s not that we <i>can&rsquo;t</i> go deeper intuitively, it&rsquo;s that it&rsquo;s impractical to go any deeper than a really good lie unless you can model the other person very well, since it&rsquo;s so easy to backfire. Simplest solution and all that. You&rsquo;re more likely to succeed with a good lie than with trying to convince someone you were trying to lie to them recursively.<br />
+<div class="outline-text-6" id="text-1-1-1-1-1">
+<p>
+We usually figure out lies through body language and context, if you can control those well enough to lie there&rsquo;s no reason to go any deeper.
+</p>
+
+<p>
+Say Alice is a good liar, Bob knows this. Alice seems to fumble in the lie, Bob knows she wouldn&rsquo;t do that. So the fumble must be intentional. Alice knows Bob knows she&rsquo;s a good liar, so he knows she wouldn&rsquo;t fumble except on purpose, so it can&rsquo;t be the obvious (that the car really is red and she&rsquo;s trying to convince him it&rsquo;s blue) since she knows he&rsquo;d see through that. At this point you enter a bunch of recursions where Bob is wondering how well she predicted how he interpreted what she did, and then decides to go one level above it&#x2026;unless she predicted <i>that</i>. Alice can&rsquo;t reasonably predict how Bob will think about this, so you basically just have it down to random chance.
+</p>
+
+<p>
+By fumbling the lie intentionally, Alice gave away that she was trying to lie about something. She would have better odds of succeeding by just lying since Bob wouldn&rsquo;t have suspected anything.
+</p>
+<p>
+:Author: EthanCC
+:Score: 7
+:DateUnix: 1529693602.0
+</p>
+</div>
+</li>
+
+
+<li><a id="orgca193f3"></a>If you only need a small amount of bookkeeping (&lt;5-9 items) you can do it without the paper once you jave learned the algorithm.<br />
+<div class="outline-text-6" id="text-1-1-1-1-2">
+<p>
+Algorithms are learnable. You don&rsquo;t need to be Einstein to understand Relativity. They can be written down. They are not subject to the Interdict. This one would be taught at Gringotts in &rsquo;Humans 101&rsquo;.
+</p>
+<p>
+:Author: ArgentStonecutter
+:Score: 9
+:DateUnix: 1529669176.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgf56b2ec"></a>Indeed. You could write an interesting story about what mental mechanisms non-humans have to use to adapt to this difference. But you seem to be admitting that non-humans would, in fact, require some learned non-intuitive mechanisms. What would Humans 101 teach goblins that they should watch out for?<br />
+<div class="outline-text-7" id="text-1-1-1-1-2-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="orgdb054a1"></a>Nothing is intuitive but the nipple. It&rsquo;s all learned.<br />
+<div class="outline-text-8" id="text-1-1-1-1-2-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="org957347f"></a>Okay, but suppose that while different races <i>can</i> learn anything, humans find it much, much easier to learn about thinking about thinking about thinking about things than goblins do. Regardless of whether that&rsquo;s how it works in the real world, suppose you&rsquo;re writing about a world where that is how it works. Most goblins can&rsquo;t get their heads around third level recursion before they&rsquo;re college age. It&rsquo;s your job to set up the curriculum for that class. What do you say, on the first day of class, to convince your goblin students that they should care about third level recursion and higher, instead of dropping it in favor of easier and more interesting classes like Microeconomic Effects of Promissory Notes in Eighth Century Ruritania II?<br />
+<div class="outline-text-9" id="text-1-1-1-1-2-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="orgddebc6c"></a>#+begin<sub>quote</sub><br />
+<div class="outline-text-10" id="text-1-1-1-1-2-1-1-1-1">
+<p>
+  Regardless of whether that&rsquo;s how it works in the real world, suppose you&rsquo;re writing about a world where that is how it works.
+#+end<sub>quote</sub>
+</p>
+
+<p>
+My point, which I&rsquo;m trying to close in on, is that the HPMoR world seems to be one where the Strong C-T hypothesis holds, so it&rsquo;s not actually consistent with the way that world works.
+</p>
+
+<p>
+If you want to read some rational stories set in a world where the strong C-T hypothesis is REALLY taken seriously, I suggest <i>Permutation City</i>, <i>Diaspora</i>, and <i>Schild&rsquo;s Ladder</i> by Greg Egan.
+</p>
+
+<p>
+Permutation City was about his first book, so the climactic arc is kind of forced and kind of breaks consistency, but the Copy society and Solipsist Nation are fascinating. Diaspora and Schild&rsquo;s Ladder are totally solid (and the latter has some existential fridge horror that&rsquo;s worth the trip).
+</p>
+
+<p>
+But assuming the counterfactual, that&rsquo;s easy: &ldquo;If you don&rsquo;t pass this course you can not work in any human-facing position in Gringotts.&rdquo;
+</p>
+<p>
+:Author: ArgentStonecutter
+:Score: 0
+:DateUnix: 1529671496.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgf81636d"></a>Ah&#x2026; You are aware that you are in <a href="file:///r/rational">file:///r/rational</a>, not <a href="file:///r/hpmor">file:///r/hpmor</a>, yes? Even the <a href="https://www.reddit.com/r/rational/comments/870yhg/bst_ways_to_make_mugglesmortals_interesting/dwa703i/">original statement</a> wasn&rsquo;t about HPMoR. It was just a hypothetical way that, in <i>any</i> story, an author could make a meaningful difference between humans and other magical races. In fact, the specific question that Mr. Yudkowsky was responding to is: &ldquo;What are the best old, wrong theories of mind/cognition/mental faculties that, if taken to be true for different magical beings, would make for the most interesting characters or civilizations?&rdquo;<br />
+<div class="outline-text-11" id="text-1-1-1-1-2-1-1-1-1-1">
+<p>
+OP&rsquo;s question in this thread is this: Why would failing the course prevent a goblin from working in Gringotts? What useful skills would it teach them? What problems would it help them avoid?
+</p>
+<p>
+:Author: Anakiri
+:Score: 12
+:DateUnix: 1529672770.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org8546f92"></a>#+begin<sub>quote</sub><br />
+<div class="outline-text-12" id="text-1-1-1-1-2-1-1-1-1-1-1">
+<p>
+  You are aware that you are in <a href="file:///r/rational">file:///r/rational</a>, not <a href="file:///r/hpmor">file:///r/hpmor</a>, yes?
+#+end<sub>quote</sub>
+</p>
+
+<p>
+Sure, and HPMoR is frequently discussed in both.
+</p>
+
+<blockquote>
+<p>
+Even the original statement wasn&rsquo;t about HPMoR.
+</p>
+</blockquote>
+
+<p>
+I missed that. It looked like it&rsquo;s a quote about HPMoR, and the OP didn&rsquo;t link to the original context. Sorry.
+</p>
+
+<p>
+OK, that&rsquo;s basically a fantasy application of &ldquo;humans are special&rdquo; (TVtropes link left out). There&rsquo;s no end of stories about the elves being incapable of lying or bound by their word or otherwise having artistically interesting cognitive defects, and humans taking advantage of that to win over them.
+</p>
+
+<p>
+Personally I would have picked <a href="https://www.amazon.com/Origin-Consciousness-Breakdown-Bicameral-Mind/dp/0618057072">bicameralism</a> as the defunct cognitive model. Bicameral elves would be REALLY interesting.
+</p>
+
+<p>
+So I&rsquo;ve pretty much covered the skill it would teach them, to keep track of previous statements and see if they are inconsistent&#x2026; for extended discussions, or where you find an inconsistency, you&rsquo;d have some kind of signal for a clerk to patch in and keep track of what you&rsquo;re hearing and make notes and prompt you to ask leading questions though a magical earphone&#x2026;
+</p>
+<p>
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1529673757.0
+</p>
+</div>
+</li>
+</ol>
+</li>
+
+
+<li><a id="orga77887c"></a>#+begin<sub>quote</sub><br />
+<div class="outline-text-11" id="text-1-1-1-1-2-1-1-1-1-2">
+<p>
+  Permutation City was about his first book, so the climactic arc is kind of forced and kind of breaks consistency
+#+end<sub>quote</sub>
+</p>
+
+<p>
+<a href="https://www.fanfiction.net/s/5389450/1/The-Finale-of-the-Ultimate-Meta-Mega-Crossover">You know, there is a fanfic&#x2026;</a>
+</p>
+<p>
+:Author: FeepingCreature
+:Score: 2
+:DateUnix: 1529686002.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orge7e2f4a"></a>Yeh, I read that one, mere ages ago.<br />
+<div class="outline-text-12" id="text-1-1-1-1-2-1-1-1-1-2-1">
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+
+
+<li><a id="orgd130987"></a>Maybe, but &ldquo;intuitive&rdquo; still has value as a qualifier; even though &ldquo;intuitive&rdquo; is subjective, there are still contexts (such as this discussion), where saying &ldquo;A is more intuitive than B&rdquo; conveys useful information.<br />
+<div class="outline-text-9" id="text-1-1-1-1-2-1-1-2">
+<p>
+Also re-using smart-sounding quotes without elaborating sucks.
+</p>
+<p>
+:Author: CouteauBleu
+:Score: 3
+:DateUnix: 1529719043.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org099bb54"></a>The point is that everything is learned and pretty much everything you say is intuitive is something someone still needed to have explained.<br />
+<div class="outline-text-10" id="text-1-1-1-1-2-1-1-2-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="orgd70ea68"></a>That&rsquo;s a narrow way to think about learning.<br />
+<div class="outline-text-11" id="text-1-1-1-1-2-1-1-2-1-1">
+<p>
+In practice, given a group of people X, you can find concepts that these people have an easier time understanding, because most people in group X already have experience dealing with similar concepts or have thinking patterns that adapt well to them. These concepts could reasonably be designated as &ldquo;intuitive&rdquo; or &ldquo;intuitive to group X&rdquo;.
+</p>
+
+<p>
+In the context of this thread, Anakiri is saying that humans would have an advantage over elves, because they&rsquo;d be able to create and spot complex multi-layered lies &ldquo;intuitively&rdquo; (as in, in the case of most humans, without needing to spend a lot of time/effort learning it), whereas elves would need to spend much more time training to keep up with human deceptions, and only long-trained elves could do it without a mental effort (the same way skilled mathematicians start internalizing complex math concepts on a gut level after a while).
+</p>
+
+<p>
+As an aside, I really don&rsquo;t like the &ldquo;Nothing but the nipple&rdquo; quote (especially when discussing UI) because it erases a lot of that nuance. In practice, people aren&rsquo;t Turing machines, and they deal with some concepts better than others. Saying &ldquo;but <i>really</i>, nothing is <i>actually</i> intuitive because everyone learns at some point&rdquo; is often pedantic, the same way epistemological nihilism (eg &ldquo;your point about ethics is invalid because morality is subjective anyway&rdquo;) is often pedantic.
+</p>
+<p>
+:Author: CouteauBleu
+:Score: 4
+:DateUnix: 1529757503.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgfef443a"></a>In reality, you generally need trained <i>humans</i> to detect double agents, otherwise they wouldn&rsquo;t be a thing. In reality, humans mostly can&rsquo;t detect simple single-layered lies, and have all kinds of weird deficits when you do simple stuff like repeating the same lie over and over again. They need actual training to deal with that.<br />
+<div class="outline-text-12" id="text-1-1-1-1-2-1-1-2-1-1-1">
+<p>
+How about a fantasy world where humans didn&rsquo;t have that problem, and the &ldquo;big lie&rdquo; didn&rsquo;t work on them?
+</p>
+
+<p>
+Or one where humans didn&rsquo;t need 50,000 years to develop the scientific method?
+</p>
+
+<p>
+One where humans are inherently rational?
+</p>
+<p>
+:Author: ArgentStonecutter
+:Score: 0
+:DateUnix: 1529758475.0
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+
+
+<li><a id="org729d235"></a>#+begin<sub>quote</sub><br />
+<div class="outline-text-6" id="text-1-1-1-1-3">
+<p>
+  If Alice is a known competent liar, then it might not even occur to human-Bob that Alice might be having an off day - the car is definitely not blue.
+#+end<sub>quote</sub>
+</p>
+
+<p>
+Unless that is just what Alice wants you to think.
+</p>
+<p>
+:Author: MrCogmor
+:Score: 2
+:DateUnix: 1529831353.0
+</p>
+</div>
+</li>
+</ol>
+</li>
+
+
+<li><a id="orgc2a892a"></a>You&rsquo;re thinking like a human. The premise is that only humans can keep track of those pieces of information.<br />
+<div class="outline-text-5" id="text-1-1-1-2">
+</div>
+
+<ol class="org-ol">
+<li><a id="orgb1acf76"></a>Keeping track of information you can&rsquo;t keep track of with just your brain is what writing is basically about. That&rsquo;s the whole point. You&rsquo;d have to make your non-humans inherently illiterate, and&#x2026; no, I can&rsquo;t imagine the kind of cognitive shortcomings that would result from this kind of limitation. It would make Binns seem normal.<br />
+<div class="outline-text-6" id="text-1-1-1-2-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="org2fd7a08"></a>I don&rsquo;t think you&rsquo;re understanding what&rsquo;s going on here. Yes, a nonhuman would be able to figure this out with pen and paper, but it seems the practical implications that matter are the ones in the moment. Bob could determine Alice wants Bob to think she&rsquo;s lying if he thought it through and wrote out the steps, but intuitively he wouldn&rsquo;t realize it. It would take him a long time and some clues to figure it out, if he ever did. The thing with making up nonexistent races with different thought processes is that you have to entertain that they think differently than we do. If that means functional illiteracy (which this doesn&rsquo;t), then so be it.<br />
+<div class="outline-text-7" id="text-1-1-1-2-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="org94a3a0e"></a>#+begin<sub>quote</sub><br />
+<div class="outline-text-8" id="text-1-1-1-2-1-1-1">
+<p>
+  Bob could determine Alice wants Bob to think she&rsquo;s lying if he thought it through and wrote out the steps, but intuitively he wouldn&rsquo;t realize it.
+#+end<sub>quote</sub>
+</p>
+
+<p>
+These are not distinct concepts.
+</p>
+
+<p>
+Humans can think about all kinds of things that are counter-intuitive. They can even win Nobel Prizes for it.
+</p>
+
+<blockquote>
+<p>
+It would take him a long time and some clues to figure it out, if he ever did.
+</p>
+</blockquote>
+
+<p>
+There are about a zillion and a half rational/rationalist/rationaloid stories where the hero goes &ldquo;wait a minute&rdquo; and sits down and draws game-theory diagrams to solve a problem, and nobody goes &ldquo;see, humans can&rsquo;t think about game theory&rdquo; because it was too much to keep track of without using a diagram and taking a long time.
+</p>
+<p>
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1529665892.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org76d5f7f"></a>You are misunderstanding it, I think. I don&rsquo;t think a rationalist Bob couldn&rsquo;t sit down a draw out everything that happened and figure out she wanted him to think she was lying. Uneducated peasant Bob probably would not though.<br />
+<div class="outline-text-9" id="text-1-1-1-2-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="orgaac6c9a"></a>Uneducated peasant Bob is functionally illiterate.<br />
+<div class="outline-text-10" id="text-1-1-1-2-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="org2cde83f"></a>Haha, you got me there. Alright, he knows how to write but isn&rsquo;t in any way a rationalist. No need to be too pedantic. :P<br />
+<div class="outline-text-11" id="text-1-1-1-2-1-1-1-1-1-1">
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+
+
+<li><a id="org4d6224c"></a>Do you understand the practical difference between seeing something immediately, while you&rsquo;re conversing, as in 2+2, and having to think about it, as in 14324 + 9812?<br />
+<div class="outline-text-9" id="text-1-1-1-2-1-1-1-2">
+</div>
+
+<ol class="org-ol">
+<li><a id="orgbf5efd0"></a>Sure, but that happens anyway, within members of the same species.<br />
+<div class="outline-text-10" id="text-1-1-1-2-1-1-1-2-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="orga65b9f0"></a>I do not understand what point you are making.<br />
+<div class="outline-text-11" id="text-1-1-1-2-1-1-1-2-1-1">
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+
+<div id="outline-container-orgdda91cd" class="outline-4">
+<h4 id="orgdda91cd"><span class="section-number-4">1.1.2</span> #+begin<sub>quote</sub></h4>
+<div class="outline-text-4" id="text-1-1-2">
+<p>
+  Magical races can use spies and informants, but only humans can use double agents. Only humans can even think about the concept of double agents, without going cross-eyed and needing to work it out on paper.
+#+end<sub>quote</sub>
+</p>
+
+<p>
+Triple agents, actually.
+</p>
+
+<p>
+0: Bob works as an intelligence analyst for the CIA.
+</p>
+
+<p>
+1: Bob is a mole recruited by Russia who got a placed as an intelligence analyst in the CIA.
+</p>
+
+<p>
+2: Bob is a double-agent, a mole recruited by Russia who notified the CIA and began working for them to relay false intelligence back to Russia.
+</p>
+
+<p>
+3: Bob is a triple-agent, a mole recruited by Russia who notified the CIA and pretended to begin working for them as an intelligence analyst in order to relay false intelligence back to Russia, but then became a defector for China and now relays Chinese deceptions about US intelligence to Russia, while getting paid by all three countries.
+</p>
+<p>
+:Author: Norseman2
+:Score: 4
+:DateUnix: 1529683241.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org10f8d53"></a>No, your examples go: agent, double agent, triple agent, quadruple agent. A Russian spy in CIA is already a double agent:<br />
+<div class="outline-text-5" id="text-1-1-2-1">
+<ul class="org-ul">
+<li>(agent, recursion 1) works for cause A;</li>
+
+<li>(double-agent, 2) pretends to work for cause A, works for cause B;</li>
+
+<li>(triple-agent, 3) pretends to pretend to work for cause A, pretends to work for cause B, works for cause A;</li>
+
+<li>(quadruple-agent, 4) pretends to pretend to pretend to work for cause A, pretends to pretend to work for cause B, pretends to work for cause A, works for cause B.</li>
+</ul>
+
+<p>
+Recursion here means the number of relations with a particular concept (&ldquo;cause&rdquo;). An agent has one relation [agent] → [cause]. A double-agent has two: [agent] → ← [cause], triple-agent has three: [agent] → ← → [cause], and so on. If you treat arrows as vectors and sum them, you would see that agents and triple-agents work for the cause, whereas a double-agent doesn&rsquo;t.
+</p>
+
+<p>
+Another way of looking at it is, an intelligence agent is expected to model/predict the behaviour of the agency&rsquo;s enemies, which is already recursion 1. Double-agent thinks at recursion 2, and triple-agent thinks at recursion 3.
+</p>
+
+<p>
+Humans aren&rsquo;t usually able to be quadruple-agents, which means non-humans wouldn&rsquo;t be able to be triple-agents, i. e. be fake defectors.
+</p>
+<p>
+:Author: Noumero
+:Score: 6
+:DateUnix: 1529690023.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org8d28ee6"></a>#+begin<sub>quote</sub><br />
+<div class="outline-text-6" id="text-1-1-2-1-1">
+<p>
+  A Russian spy in CIA is already a double agent.
+#+end<sub>quote</sub>
+</p>
+
+<p>
+No. A spy, or agent, is someone who betrays their home country by giving secret information to a foreign country. A <a href="https://en.wikipedia.org/wiki/Double_agent">double agent</a> is a spy who has reversed their allegiance back to their home country and is feeding false information to the foreign country. An intelligence analyst is a a desk jockey with a security clearance, and not a spy unless they happen to be abusing that security clearance.
+</p>
+<p>
+:Author: Norseman2
+:Score: 5
+:DateUnix: 1529694958.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org1fc7bb9"></a>Hmm. Yes, you&rsquo;re right, I misread this definition.<br />
+<div class="outline-text-7" id="text-1-1-2-1-1-1">
+<p>
+The terminology seems confusing, though. A spy visibly works for one organization, but in actuality works for another. From the perspective of the first organization, their agent/worker is betraying them to another party. Why wouldn&rsquo;t this agent be termed a double-agent?
+</p>
+
+<p>
+&#x2026; Because the definition of the term &ldquo;agent&rdquo; used by intelligence services is different from the definition of the term &ldquo;agent&rdquo; used by game theory, isn&rsquo;t it.
+</p>
+<p>
+:Author: Noumero
+:Score: 5
+:DateUnix: 1529696231.0
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+
+
+<li><a id="org7a795b8"></a>Even if they mostly work at the object level, a CIA intelligence analyst is expected to be able to figure out what Russia knows about things. I&rsquo;d say that you need at least one level of recursion to even be in the field with any success.<br />
+<div class="outline-text-5" id="text-1-1-2-2">
+</div>
+
+<ol class="org-ol">
+<li><a id="org6c0031a"></a>Sure, but should be looking at it from an outside point of view, not from the spy&rsquo;s point of view. At face value, Bob is an intelligence analyst as far as his coworkers are aware. His Russian recruiter goes a level or two deeper, knowing he&rsquo;s a mole and wondering if he has become a double agent. His American boss goes two or three steps deep, knowing he&rsquo;s a double agent and wondering if his loyalties actually still lie with his home country. His Chinese handler goes three or four steps deep, knowing he&rsquo;s a defected double-agent, and wondering if he&rsquo;s had opportunities to start collecting money from other countries as well.<br />
+<div class="outline-text-6" id="text-1-1-2-2-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="orgeab06f0"></a>Hmm&#x2026; Yes, that&rsquo;s fair. I believe you are correct that magical races likely could understand the concept of double agents. Though I suspect that only humans would be able to use them effectively in practice.<br />
+<div class="outline-text-7" id="text-1-1-2-2-1-1">
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+
+
+<li><a id="org7b55923"></a>HPMOR fandom is the only place I&rsquo;ve ever heard triple/quadruple agent used to refer to three or more separate influencing parties. In other contexts, I&rsquo;ve heard it used to refer to the same two parties repeatedly. I wonder if there are other terms to clarify this?<br />
+<div class="outline-text-5" id="text-1-1-2-3">
+</div>
+</li>
+</ol>
+</div>
+
+
+<div id="outline-container-orga0ab738" class="outline-4">
+<h4 id="orga0ab738"><span class="section-number-4">1.1.3</span> This makes sense. Thanks for entertaining the scenario.</h4>
+<div class="outline-text-4" id="text-1-1-3">
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org8cedb96" class="outline-3">
+<h3 id="org8cedb96"><span class="section-number-3">1.2</span> This idea is inspired from a quote &ldquo;in practice, infinite recursions are at most three levels deep.&rdquo;</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+The zero level is generic statements about the world around us such as &rsquo;the sky is blue&rsquo; and &rsquo;Alice is a nice woman&rsquo;.
+</p>
+
+<p>
+The first level is any statement/reflections about yourself which includes statements like &rsquo;I (Bob) am a nice guy&rsquo; or &rsquo;I (Bob) like Alice&rsquo;. A common question of the first level is &ldquo;What do I think of myself?&rdquo; or &ldquo;What do I think about other people?&rdquo;
+</p>
+
+<p>
+The second level is any statement about other people&rsquo;s conceptions about yourself or another person. For example, &rsquo;Alice thinks I&rsquo;m not so nice&rsquo; or &rsquo;Alice thinks Carl is nice&rsquo;. A common question of the second level is &ldquo;What does Alice think about me (Bob)?&rdquo; or &ldquo;What does Alice think about Carl?&rdquo;
+</p>
+
+<p>
+The third level is any statement/thought about another person&rsquo;s thoughts about what they think of someone else. For example, &ldquo;Alice thinks Bob believes Carl is rude&rsquo;, &lsquo;Bob thinks Alice thinks he is attracted to her&rsquo;, and &lsquo;Carl thinks Bob thinks Carl wants to date Alice&rsquo;. A common question of the third level is &rdquo;What does Alice think I (Bob) think about Alice?&ldquo;
+</p>
+
+<p>
+The first level is a model of your own mind. The second level requires you to have a model of other people&rsquo;s minds to reason about how they think about you. The third level is required to have models of how other people are modeling your thoughts.
+</p>
+
+<p>
+In this way, the magical races can reason about themselves and how other people think about the people around them. But without the third level, you can&rsquo;t know how other people think <i>you</i> think. The third level is required to lie or bluff convincingly. Without it, you can&rsquo;t model how other people will react to your lies.
+</p>
+<p>
+:Author: xamueljones
+:Score: 24
+:DateUnix: 1529694562.0
+</p>
+</div>
+
+<div id="outline-container-orgf110782" class="outline-4">
+<h4 id="orgf110782"><span class="section-number-4">1.2.1</span> Aaah, thanks. I like this explanation. So humans would be master liars, and no one else would no what was going on.</h4>
+<div class="outline-text-4" id="text-1-2-1">
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org787bc3d" class="outline-3">
+<h3 id="org787bc3d"><span class="section-number-3">1.3</span> This is not technically a computational limitation in cognition. Anything you can do with recursion you can do with iteration and some book-keeping. Ink and paper and Bob&rsquo;s your uncle.</h3>
+<div class="outline-text-3" id="text-1-3">
+</div>
+
+<div id="outline-container-org107c926" class="outline-4">
+<h4 id="org107c926"><span class="section-number-4">1.3.1</span> Alright, but let&rsquo;s instate a fascist government and burn all the books. What does three levels of recursion actually allow you to do that you can&rsquo;t with just two? I cannot think of a single practical thing.</h4>
+<div class="outline-text-4" id="text-1-3-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="org34f927f"></a>#+begin<sub>quote</sub><br />
+<div class="outline-text-5" id="text-1-3-1-1">
+<p>
+  Alright, but let&rsquo;s instate a fascist government and burn all the books.
+#+end<sub>quote</sub>
+</p>
+
+<p>
+Let&rsquo;s have a fascist government that drugs everyone, like in Brave New World&#x2026; burning all the books would also have a huge impact on <i>human</i> cognition. We&rsquo;re already using book-keeping to get around limitations in our own base computational structure. Literacy literally made us more intelligent.
+</p>
+
+<p>
+However you figure it, I think this was just EY coming up with something that sounded good.
+</p>
+<p>
+:Author: ArgentStonecutter
+:Score: 8
+:DateUnix: 1529659981.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgda58364"></a>I&rsquo;m having a hard time understanding what exactly you mean.<br />
+<div class="outline-text-6" id="text-1-3-1-1-1">
+<p>
+Alright, let&rsquo;s say that only humans are capable of sorting through three levels of recursion, even in text. Are you saying that in this scenario, there is no practical difference between human and nonhuman cognition?
+</p>
+<p>
+:Author: Lightwavers
+:Score: 3
+:DateUnix: 1529660893.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org9f399ae"></a>#+begin<sub>quote</sub><br />
+<div class="outline-text-7" id="text-1-3-1-1-1-1">
+<p>
+  I&rsquo;m having a hard time understanding what exactly you mean.
+#+end<sub>quote</sub>
+</p>
+
+<p>
+I&rsquo;m saying you can prove anything given a counterfactual. They&rsquo;d have to do more than burn all the books.
+</p>
+
+<p>
+<i>And</i> humans have limitations in our ability to perform computation&#x2026; to process information&#x2026; limitations in our cognition that <i>we</i> bypass by bookkeeping. This would literally change the kinds of things humans could think about as well.
+</p>
+
+<blockquote>
+<p>
+Alright, let&rsquo;s say that only humans are capable of sorting through three levels of recursion, even in text.
+</p>
+</blockquote>
+
+<p>
+Pretty sure that breaks both Turing Equivalence and the Church-Turing Hypothesis, and I don&rsquo;t think that&rsquo;s what EY intended given the rest of HPMoR.
+</p>
+<p>
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1529663262.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org4bd0a48"></a>Work with me here? Give everyone, human and nonhuman alike, paper and pen. Assume nonhuman entities as unable to comprehend more than two levels of recursion, no matter how it&rsquo;s written down. Ignore how impossible this is, just roll with it.<br />
+<div class="outline-text-8" id="text-1-3-1-1-1-1-1">
+<p>
+What are the practical differences?
+</p>
+<p>
+:Author: Lightwavers
+:Score: 6
+:DateUnix: 1529664600.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org3b4b972"></a>You don&rsquo;t have to comprehend recursion to simulate it. You aren&rsquo;t thinking in terms of recursion, you&rsquo;re thinking in terms of iteration.<br />
+<div class="outline-text-9" id="text-1-3-1-1-1-1-1-1">
+<p>
+What you&rsquo;re talking about is some kind of memory limitation that can&rsquo;t be bypassed by reading and writing information in external memory. This amounts to functional illiteracy. Even something like &ldquo;they can&rsquo;t recall more than two items they&rsquo;ve read&rdquo; wouldn&rsquo;t do it, because you could still build a Beowulf Cluster of Grendels. I&rsquo;m not sure that a being so limited would be able to pass as a human in casual conversation.
+</p>
+
+<p>
+So there&rsquo;s your answer.
+</p>
+<p>
+:Author: ArgentStonecutter
+:Score: 3
+:DateUnix: 1529664783.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgecab8e9"></a>I don&rsquo;t think you understand the difference between iteration and recursion. An iteration is a loop, a repetition, oftentimes with a variable changed each time. Recursion is taking a step back and calling a function within itself. So we take function thinking() and make it call function thinking() within itself, usually with something changed each iteration. An iteration is an important step in recursive functions, but while you need to iterate to recurse, iteration != recursion. Meanwhile, iterating function thinking() loops it continually. So you would be thinking about something, and then thinking about it again.<br />
+<div class="outline-text-10" id="text-1-3-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="orge509424"></a>#+begin<sub>quote</sub><br />
+<div class="outline-text-11" id="text-1-3-1-1-1-1-1-1-1-1">
+<p>
+  I don&rsquo;t think you understand the difference between iteration and recursion.
+#+end<sub>quote</sub>
+</p>
+
+<p>
+I have been a professional computer programmer for almost 40 years. I wrote my first compiler in 1979. I have implemented at least a dozen arithmetic expression parsers (an inherently recursive algorithm) in Fortran (a language that doesn&rsquo;t support recursion). I know the difference between iteration and recursion. Given indexable storage they are Turing-equivalent operations.
+</p>
+<p>
+:Author: ArgentStonecutter
+:Score: 5
+:DateUnix: 1529665451.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org989ccee"></a>Fact: iteration is basically looping.<br />
+<div class="outline-text-12" id="text-1-3-1-1-1-1-1-1-1-1-1">
+<p>
+Fact: recursion is a function that calls itself each iteration.
+</p>
+
+<p>
+Fact: you claim to know this.
+</p>
+
+<p>
+Fact: you also claim that being unable to intuitively understand recursion at three levels is equivalent to being functionally illiterate.
+</p>
+<p>
+:Author: Lightwavers
+:Score: 2
+:DateUnix: 1529665674.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org588a7c9"></a>#+begin<sub>quote</sub><br />
+<div class="outline-text-13" id="text-1-3-1-1-1-1-1-1-1-1-1-1">
+<p>
+Fact: iteration is basically looping.
+</p>
+
+<p>
+  Fact: recursion is a function that calls itself each iteration.
+#+end<sub>quote</sub>
+</p>
+
+<p>
+Iteration and recursion are both tools that can be used to implement a recursive algorithm. Therefore iteration with a simulated stack is equivalent to recursion. This is basic computational theory. This is literally what &ldquo;Turing equivalence&rdquo; means.
+</p>
+
+<blockquote>
+<p>
+Fact: you also claim that being unable to intuitively understand recursion at three levels is equivalent to being functionally illiterate.
+</p>
+</blockquote>
+
+<p>
+The claim that I made is &ldquo;being unable to understand recursion at three levels given bookkeeping tools requires being functionally illiterate&rdquo;. You believe that the noise-word &ldquo;intuitively&rdquo; changes the meaning of this sentence.
+</p>
+<p>
+:Author: ArgentStonecutter
+:Score: 9
+:DateUnix: 1529666911.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org1a325dc"></a>#+begin<sub>quote</sub><br />
+<div class="outline-text-14" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1">
+<p>
+  Iteration and recursion are both tools that can be used to implement a recursive algorithm.
+#+end<sub>quote</sub>
+</p>
+
+<p>
+But this is false, yes? Iteration is a necessary part of a working recursive algorithm, and recursion is a word that encompasses everything a recursive algorithm is. They are not at all the same, as you can, for example, iterate through a list without recursing.
+</p>
+
+<blockquote>
+<p>
+The claim that I made is &ldquo;being unable to understand recursion at three levels given bookkeeping tools requires being functionally illiterate&rdquo;.
+</p>
+</blockquote>
+
+<p>
+But the word &rsquo;intuitively&rsquo; <i>does</i> change the meaning of that sentence. If they are able to work it out in the end, but can&rsquo;t grasp it immediately, it puts an advantage on the person who can. Plus the one without intuition may not ever realize there was something to work out if they aren&rsquo;t that rational.
+</p>
+<p>
+:Author: Lightwavers
+:Score: 1
+:DateUnix: 1529667634.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org090d442"></a>No. Iteration with bookkeeping is turing-equivalent to recursion. You <i>can</i> implement a Pascal interpreter in Fortran.<br />
+<div class="outline-text-15" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1">
+<p>
+There are differences in how quickly people can think, regardless of artificial restrictions. Think of the difference between Goyle and Granger.
+</p>
+<p>
+:Author: ArgentStonecutter
+:Score: 3
+:DateUnix: 1529669491.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgc6bbaf2"></a>I feel like allowing that to be called iteration is kind of muddying the words. Recursion has a specific meaning, right, and when it&rsquo;s allowed to mean the exact same thing as iteration, it kind of adds unnecessary confusion.<br />
+<div class="outline-text-16" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1">
+<p>
+But that&rsquo;s off topic&#x2014;people have biases. Why can&rsquo;t reducing be level of recursion that humans can intuitively think in by one for a magical race be hypothetically considered? No need to reduce the speed of thought.
+</p>
+<p>
+:Author: Lightwavers
+:Score: 2
+:DateUnix: 1529670303.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org7370e93"></a>#+begin<sub>quote</sub><br />
+<div class="outline-text-17" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+<p>
+  I feel like allowing that to be called iteration is kind of muddying the words.
+#+end<sub>quote</sub>
+</p>
+
+<p>
+It&rsquo;s perfectly conventional computing theory. This kind of equivalence is actually kind of central to the whole structure of computing. No processor in the world implements &ldquo;recursion&rdquo; as a basic operation, they all put it together from iteration and bookkeeping.
+</p>
+
+<p>
+The point is that this oddly specific deficit is probably computationally impossible, and violates the Strong Church-Turing Hypothesis. Which I&rsquo;m pretty sure EY didn&rsquo;t intend. It was a throwaway line that sounds good, but it&rsquo;s not essential, and can be treated as a minor oops.
+</p>
+<p>
+:Author: ArgentStonecutter
+:Score: 7
+:DateUnix: 1529670830.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org03db869"></a>But fantasy breaks physics all the time. Just rolling with it, i think it&rsquo;s a pretty cool idea.<br />
+<div class="outline-text-18" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="org586a1e5"></a>Fantasy or not, you can&rsquo;t argue that the computational equivalence of iteration+bookkeeping to recursion is &ldquo;muddying the words&rdquo;.<br />
+<div class="outline-text-19" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="orgf603711"></a>Why not? In those very soecifics cases where it matters that deep down, they are both the same thing, then sure, point that out. But in all other cases, recursion and iteration both have specific definitions that do not mean the same thing.<br />
+<div class="outline-text-20" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="orgd0254fa"></a>Because minds are computational structures.<br />
+<div class="outline-text-21" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="org4104e95"></a>Right, but right now we&rsquo;re talking about definitions, so that&rsquo;s kind of a non sequitur.<br />
+<div class="outline-text-22" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="org34958a0"></a>We&rsquo;re talking about minds. Whatever. <a href="http://metamagician3000.blogspot.com/2009/09/interview-with-greg-egan.html">Let me leave you with a quote from Greg Egan</a>:<br />
+<div class="outline-text-23" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+<blockquote>
+<p>
+I believe that humans have already crossed a threshold that, in a certain sense, puts us on an equal footing with any other being who has mastered abstract reasoning. There&rsquo;s a notion in computing science of “Turing completeness”, which says that once a computer can perform a set of quite basic operations, it can be programmed to do absolutely any calculation that any other computer can do. Other computers might be faster, or have more memory, or have multiple processors running at the same time, but my 1988 Amiga 500 really could be programmed to do anything my 2008 iMac can do &#x2014; apart from responding to external events in real time &#x2014; if only I had the patience to sit and swap floppy disks all day long. I suspect that something broadly similar applies to minds and the class of things they can understand: other beings might think faster than us, or have easy access to a greater store of facts, but underlying both mental processes will be the same basic set of general-purpose tools. So if we ever did encounter those billion-year-old aliens, I&rsquo;m sure they&rsquo;d have plenty to tell us that we didn&rsquo;t yet know &#x2014; but given enough patience, and a very large notebook, I believe we&rsquo;d still be able to come to grips with whatever they had to say.
+</p>
+</blockquote>
+<p>
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1529709307.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org331451a"></a>Yes, that&rsquo;s true. However, to simplify things and be more accurate, how about we refer to the words recursion and iteration as they are dictionarily defined, rather than being technically correct but overly pedantic about it?<br />
+<div class="outline-text-24" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="orgf365573"></a>Because we are explicitly talking about technical limitations of computation. The actual technical meanings <i>are</i> the relevant ones.<br />
+<div class="outline-text-25" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="org0caa2bd"></a>We&rsquo;re talking the practical consequences of limited computation in a certain, hypothesized subset of a nonexistent population where nothing except the actual real world effects matter.<br />
+<div class="outline-text-26" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="org9a26e5e"></a>And I&rsquo;m saying they can still learn to perform that computation, regardless of the hypothetical deficit. This is not about the definitions. I&rsquo;m not changing the definitions, I&rsquo;m pointing out that the combination of capabilities they have is computationally equivalent.<br />
+<div class="outline-text-27" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="orgbf147f5"></a>Okay, yes but that&rsquo;s not the point. Sure, if they struggle long enough hey may be able to get it. But we&rsquo;re looking at the implications for a race that will not get it without practice and some working out.<br />
+<div class="outline-text-28" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="org466bbc9"></a>Recursion and Iteration are equivalent because they are both simply different ways of specifying loops. A computational process does not become a different computational process just because you different notation.<br />
+<div class="outline-text-29" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+<p>
+Recursion is mostly different from iteration because it has an implicit stack however a recursive algorithm can always be represented as an iterative program with an explicit stack. Likewise any iterative algorithm can always have its sequence of repetitions represented as a stack and made into a recursive program.
+</p>
+
+<p>
+If the people can&rsquo;t handle nested loops then they wouldn&rsquo;t be able to function because most actions like walking and eating are made up of actions which are made up of sub actions which are themselves made up of smaller sub actions.
+</p>
+<p>
+:Author: MrCogmor
+:Score: 2
+:DateUnix: 1529833322.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org2f28c15"></a>#+begin<sub>quote</sub><br />
+<div class="outline-text-30" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+<p>
+  Recursion and Iteration are equivalent because they are both simply different ways of specifying loops. A computational process does not become a different computational process just because you different notation.
+#+end<sub>quote</sub>
+</p>
+
+<p>
+I reject this premise, since I am going by the definition in the dictionary, which is what I specified. Recursion is a specific type of iteration, which is a base function.
+</p>
+<p>
+:Author: Lightwavers
+:Score: 1
+:DateUnix: 1529836497.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org09eb32e"></a>Then you are talking nonsense since there is no such thing as recursion that isn&rsquo;t functionally equivalent to simple iteration. I will give an example in pseudo code.<br />
+<div class="outline-text-31" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+<p>
+A simple transformation
+</p>
+
+<pre class="example" id="orga66aacb">
+   SumNumbersUpToN(n): // Recursive
+        if (n&gt;0) {
+             return n + SumNumbersUpToN(n-1) 
+        else {
+             return 0
+        }
+  }
+
+   SumNumbersUpToN(n) { // Iterative
+        sum=0
+        for each integer i in range(0,n) {
+               sum = sum + i
+       }
+       return sum
+  }
+</pre>
+<p>
+:Author: MrCogmor
+:Score: 3
+:DateUnix: 1529838021.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org62c56cf"></a>Saying it does not make it so.<br />
+<div class="outline-text-32" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+<blockquote>
+<p>
+Recursion occurs when a thing is defined in terms of itself or of its type. Recursion is used in a variety of disciplines ranging from linguistics to logic. The most common application of recursion is in mathematics and computer science, where <b>a function being defined is applied within its own definition.</b> While this apparently defines an infinite number of instances (function values), it is often done in such a way that no loop or infinite chain of references can occur.
+</p>
+</blockquote>
+<p>
+:Author: Lightwavers
+:Score: 1
+:DateUnix: 1529838349.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org20ce6e3"></a>I&rsquo;m aware of what recursion is and that doesn&rsquo;t contradict anything I posted.<br />
+<div class="outline-text-33" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="org74b4488"></a>The bolded part is what matters: I&rsquo;m talking recursion as in &ldquo;a function being defined is applied within its own definition.&rdquo; That&rsquo;s not iteration, which is simply looping.<br />
+<div class="outline-text-34" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="orgdc501ed"></a>Again that doesn&rsquo;t contradict anything I said. They are different ways of specifying a loop but any loop that can be specified in one can be specified in the other because they are computationally equivalent.<br />
+<div class="outline-text-35" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+<p>
+See <a href="https://en.wikipedia.org/wiki/Church%E2%80%93Turing_thesis">https://en.wikipedia.org/wiki/Church&#x2013;Turing<sub>thesis</sub></a>
+</p>
+<p>
+:Author: MrCogmor
+:Score: 2
+:DateUnix: 1529839599.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org62fc98e"></a>I feel like you are intentionally missing the point.<br />
+<div class="outline-text-36" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="org3ae6f98"></a>I feel like you are failing to grasp mine. The brain itself doesn&rsquo;t directly implement recursion. It uses a stochastic neural network which when given proper input can emulate recursion but isn&rsquo;t actually a recursive system. If elves can&rsquo;t directly recursion then they can model it fairly easily using iteration. This is actually what humans generally do. If they can&rsquo;t model procedures that could be implemented recursively then they can&rsquo;t model anything because you can implement any loop as nested recursion.<br />
+<div class="outline-text-37" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+<p>
+The basic way recursive functions are actually solved by humans and computers is iterative (though humans and compiler optimisations may actually skip the process in some process by using mathematical reasoning the answer must be a certain value) using a stack as I posted earlier.
+</p>
+
+<p>
+E.g Let&rsquo;s say have the definition
+</p>
+
+<pre class="example" id="org177a05e">
+  EvenOrOdd(n):
+
+      if n == 1: return odd
+
+
+      if n == 2:  return even
+
+      if EvenOrOdd(n−1) is odd {
+           return even
+      else
+           return odd
+</pre>
+
+<p>
+And you are calculating EvenOrOdd(5) using the above algorithm (without skipping).
+</p>
+
+<p>
+Your stack at start would be something like [
+</p>
+
+<p>
+EvenOrOdd(5) At (START)
+</p>
+
+<p>
+]
+</p>
+
+<p>
+Then you would get to part with if EvenOrOdd(n−1) is odd and that would go on the stack
+</p>
+
+<p>
+[
+</p>
+
+<p>
+EvenOrOdd(4) At (START)
+</p>
+
+<p>
+EvenOrOdd(5) At ( if EvenOrOdd(n−1) is odd {)
+</p>
+
+<p>
+]
+</p>
+
+<p>
+Again
+</p>
+
+<p>
+[
+</p>
+
+<p>
+EvenOrOdd(3) At (START)
+</p>
+
+<p>
+EvenOrOdd(4) At ( if EvenOrOdd(n−1) is odd {)
+</p>
+
+<p>
+EvenOrOdd(5) At ( if EvenOrOdd(n−1) is odd {)
+</p>
+
+<p>
+]
+</p>
+
+<p>
+Again except this time it is different
+</p>
+
+<p>
+[ EvenOrOdd(2) At (if n == 2: return even)
+</p>
+
+<p>
+EvenOrOdd(3) At ( if EvenOrOdd(n−1) is odd {)
+</p>
+
+<p>
+EvenOrOdd(4) At ( if EvenOrOdd(n−1) is odd {)
+</p>
+
+<p>
+EvenOrOdd(5) At ( if EvenOrOdd(n−1) is odd {)
+</p>
+
+<p>
+]
+</p>
+
+<p>
+There is a return value so
+</p>
+
+<p>
+[
+</p>
+
+<p>
+even
+</p>
+
+<p>
+EvenOrOdd(3) At ( if EvenOrOdd(n−1) is odd {)
+</p>
+
+<p>
+EvenOrOdd(4) At ( if EvenOrOdd(n−1) is odd {)
+</p>
+
+<p>
+EvenOrOdd(5) At ( if EvenOrOdd(n−1) is odd {)
+</p>
+
+<p>
+]
+</p>
+
+<p>
+The value of the function is sent back to the function that called it. That in turn calculates its new value
+</p>
+
+<p>
+[
+</p>
+
+<p>
+odd
+</p>
+
+<p>
+EvenOrOdd(4) At ( if EvenOrOdd(n−1) is odd {)
+</p>
+
+<p>
+EvenOrOdd(5) At ( if EvenOrOdd(n−1) is odd {)
+</p>
+
+<p>
+]
+</p>
+
+<p>
+again
+</p>
+
+<p>
+[
+</p>
+
+<p>
+even
+</p>
+
+<p>
+EvenOrOdd(5) At ( if EvenOrOdd(n−1) is odd {)
+</p>
+
+<p>
+]
+</p>
+
+<p>
+[
+</p>
+
+<p>
+odd
+</p>
+
+<p>
+]
+</p>
+
+<p>
+Your answer is odd
+</p>
+<p>
+:Author: MrCogmor
+:Score: 3
+:DateUnix: 1529848813.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgbc02c5a"></a>Again, I feel that you are missing the point. We are considering a fantasy scenario with nonhumans who may have different brain architecture.<br />
+<div class="outline-text-38" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="org8c5df42"></a>Different brain architecture doesn&rsquo;t matter. If it can use simple iteration then it can use it for recursive problems. If it can&rsquo;t use iteration then it can&rsquo;t really think.<br />
+<div class="outline-text-39" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="org33d92c4"></a>You seem to be either intentionally misunderstanding me or trolling. Using the definition of recursion I provided only, without also bringing iteration into the mix, ban three levels of it for a selected nonhuman race that is literally magical. It does not make sense. It does not have to make sense.<br />
+<div class="outline-text-40" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="org3c0dfa5"></a>A troll would not go to all this effort to explain themselves and would go after easier targets.<br />
+<div class="outline-text-41" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+<p>
+Things still have to make logical sense and specific enough to have a proper answer . E.p What if people were triangles? Is not a proper question.
+</p>
+
+<p>
+If you take the strictest reading where elves are simply not able to understand deeply nested loops expressed in mathematical notation then they will simply devise a different but equivalent notation using iteration to express the same mathematical truths. They could also get a human to develop an iterative algorithm for transforming nested recursive functions to their iterative equivalents.
+</p>
+<p>
+:Author: MrCogmor
+:Score: 3
+:DateUnix: 1529853331.0
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgdc98969"></a>This does not have to make sense. Give the magical genie Agore infinite power and give her the task of stopping elves from recursing three times using the definition I gave, without hindering their general intelligence. It&rsquo;s a very specific mental block that does not have to make sense.<br />
+<div class="outline-text-42" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="org55984eb"></a>I&rsquo;m no longer interested in this conversation<br />
+<div class="outline-text-43" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="orga6d0901"></a>Why were you in the first place lol<br />
+<div class="outline-text-44" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="orgc586be2"></a>I had free time and it was a decent way to revise my CS fundamentals.<br />
+<div class="outline-text-45" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="org2843018"></a>Ah, see I just wanted to entertain the notion without being constrained by reality. I getcha.<br />
+<div class="outline-text-46" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="org4feb5ff"></a>Poor bait.<br />
+<div class="outline-text-47" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="orgf00667d"></a>Eh?<br />
+<div class="outline-text-48" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+
+
+<li><a id="orge0dfb3a"></a>Everything we do just about we&rsquo;ve had to struggle to learn. Writing, for example.<br />
+<div class="outline-text-29" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+
+<ol class="org-ol">
+<li><a id="orgea8c2a2"></a>Not everything though. Take breathing.<br />
+<div class="outline-text-30" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1">
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+
+
+<li><a id="org11ca186"></a>The fiction would have to be very irrational - there would be certain lists of instructions that you wouldn&rsquo;t be able to give an elf, for example, even though each individual instruction would be easy to follow.<br />
+<div class="outline-text-19" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-2">
+</div>
+
+<ol class="org-ol">
+<li><a id="org6d32cb8"></a>Not in my opinion it wouldn&rsquo;t. It seems the only thing three levels of recursion is really useful for is lying, so that&rsquo;s really the only disadvantage they would have. And rational works definitely have concepts in them that break physics, such as actual magic in HPMOR. It&rsquo;s not too much of a stretch to imagine a race without one single ability that doesn&rsquo;t affect anything else. Because really, what are these certain instructions that you couldn&rsquo;t give an elf?<br />
+<div class="outline-text-20" id="text-1-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-2-1">
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+
+<div id="outline-container-orgdaa362a" class="outline-4">
+<h4 id="orgdaa362a"><span class="section-number-4">1.3.2</span> You won&rsquo;t get very far in the game of political intrigue if you&rsquo;re breaking out the pen and paper for plots everyone else is doing in their head.</h4>
+<div class="outline-text-4" id="text-1-3-2">
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgf2c9216" class="outline-3">
+<h3 id="orgf2c9216"><span class="section-number-3">1.4</span> This topic is a black hole of contemplation. It&rsquo;s far too easy to just sit down and try to puzzle it out. It&rsquo;s fun thought, and potentially useful (for psychology especially).</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+Let&rsquo;s assume the function that&rsquo;s recusing is (person) thinking.
+</p>
+
+<p>
+1: Me Thinking (Joe thinking) =&gt; I know how Joe thinks. I can predict his behaviors, generally.<br />
+Animals have it- wolves that know how to herd their prey away from the herd, cause they know how their prey will react.<br />
+Also metacognition (not for animals though, unless really basic)- I know I&rsquo;ll normally run away in panic after seeing hungry wolves, and that&rsquo;s bad (because an elf can protect me, but only if I am close to him). So I do things (breathing exercises?) to stop myself from panicking.
+</p>
+
+<p>
+2: Me Thinking(Joe thinking(me thinking)) =&gt; I know what Joe thinks about my behavior. I know what Joe&rsquo;s model of me. An Elf (Joe) may lure a pack of wolves into thinking he&rsquo;s defenseless, because he can fake vulnerable behavior.
+</p>
+
+<p>
+3: Me thinking (Joe thinking(me thinking(me thinking)) - I know how Joe models my meta-cognition.<br />
+Joe thinks I am aware of my panic attacks, but not of me getting distracted by background chatter.<br />
+So he tries to make me bet on finishing writing a letter before it gets completely dark, while purposefully saying random stuff. Except I know what he&rsquo;s trying to do, and got earplugs prepared before hand. Bet won, humanity wins!
+</p>
+
+<p>
+Thanks to being a level higher on recursion, I was able to out-intrigue a magical person.<br />
+Could Joe use pen and paper to think about this possibility? Sure. But he may not see the need (why bother?), not have the energy (it&rsquo;s like doing <i>calculus</i>), or not have pen or paper at hand.<br />
+Or, you know, he didn&rsquo;t attend Advanced Social Dynamics class at his school. Or he didn&rsquo;t deal with humans nearly enough to pick up on their advantage and counter it.<br />
+What I am trying to say is: a non-intuitive skill is harder to acquire and use properly; recursion is great for mind-games, and humans are naturally better than elves at it.
+</p>
+
+<p>
+There&rsquo;s also the implication that magical races may have other mental handicaps compared to us. As far as I know, there isn&rsquo;t a piece of brain responsible solely for recursion. This limitation may be a result of smaller working memory or worse imagination or something.
+</p>
+
+<p>
+So&#x2026; don&rsquo;t diss Eliezer&rsquo;s crazy ideas, Lightwavers- &ldquo;practically useless&rdquo; is not a phrase that exists for writers, especially of the fantasy genre.
+</p>
+<p>
+:Author: PurposefulZephyr
+:Score: 1
+:DateUnix: 1530136079.0
+</p>
+</div>
+
+<div id="outline-container-org5287bf6" class="outline-4">
+<h4 id="org5287bf6"><span class="section-number-4">1.4.1</span> Haha, I wasn&rsquo;t dissing the idea. I asked because it seemed interesting but I didn&rsquo;t know what exactly it meant. :)</h4>
+<div class="outline-text-4" id="text-1-4-1">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Fereidoon</p>
+<p class="date">Created: 2021-05-31 Mon 05:33</p>
+</div>
+</body>
+</html>
