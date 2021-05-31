@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: Radioterrill
+:Score: 5
+:DateUnix: 1620423010.0
+:DateShort: 2021-May-08
+:END:
+
+No problem, it's a good opportunity for me to refresh my memory of how it all works.
+
+You guess correctly, there's a couple of factors at play here.
+
+Firstly, there's only one way to measure in a given basis, so you can't change the measurement to bias it towards a particular result. If you measure in a different basis, the same problems apply.
+
+(Let's say you measure in the diagonal basis instead. Then the state changes to the diagonal measurement states, / or \. When your friend measures in the horizonal and vertical basis, there's still the same 50-50 odds of them measuring each result.)
+
+In addition to measurements, the other way of interacting with states is to transform them, such as with a rotation. This doesn't collapse them like a measurement does, and can be used to communicate.
+
+If you and your friend have access to the same state and agree that | = 1 and - = 0, you can measure the state to collapse it into one of those and then transform it with a rotation if it's not the one you want your friend to measure.
+
+However, transformations are local. That means that if you have separate entangled particles, you can transform yours all you like but it won't affect your friend's one, and so you can't use that to communicate.
+
+Say you've got an entangled state that can be either | - or - |, where you have the particle on the left and your friend has the particle on the right. If you apply a 90° rotation transform to your particle, that means that the entangled state becomes - - or | |. Your friend still gets the same results when they measure their particle, because their half of the state is unchanged. If you only rotate the particle if you measure |, the state ends up as - - or - |, and your friend still doesn't get any information out of it.
+
+Lastly, the talk of probability can make it sound similar to the problem of communicating over a noisy classical channel, but it's mathematically impossible to send any information with a single entangled pair so you can't do any better by using more of them - a million times zero is still zero.

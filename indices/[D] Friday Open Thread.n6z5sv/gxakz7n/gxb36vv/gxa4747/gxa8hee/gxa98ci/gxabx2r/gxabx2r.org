@@ -1,0 +1,34 @@
+:PROPERTIES:
+:Author: NoYouTryAnother
+:Score: 2
+:DateUnix: 1620403073.0
+:DateShort: 2021-May-07
+:END:
+
+So, I'm not familiar with Jaccard indices and don't know what you want them for, but here are a few thoughts.
+
+In mathematics, the way that 'relative' usually falls out is that you look at the object 'above' the relative part, or you 'quotient out' by the relative part. So, not knowing what category you're working in, a first thought would be to remove the elements of D from the remaining sets and calculate the Jaccard indices which result from that. This would be, perhaps, the 'category of sets' version of 'relative'.
+
+--------------
+
+But it seems this is more a 'probability measure' or ‘information theory' setting.
+
+So here's my primary suggestion: Sets generalize to functions, and (positive) functions generalize to (positive) measures. In statistics and adjacent, there are a number of ways to talk about how close two probability measures are, the primary one being the Kullback-Leibler Divergence and/or the Cross-Entropy. Why not renormalize these sets to instead be probability measures on the integers and consider how close P_C is to P_A and P_B, 'given' P_D? Here, obviously, you'll need to make more precise the sense in which P_D is meant to 'already contain' the information which P_C and P_A share - phrased that way, obviously entropy seems relevant.
+
+You could try looking at
+
+** H(A | D, C) versus H(B | D, C)
+   :PROPERTIES:
+   :CUSTOM_ID: ha-d-c-versus-hb-d-c
+   :END:
+to determine that, perhaps, C gives more information about B than it does A.
+
+Or, you could look at the mutual information between A and C conditioned on D, versus that between C and B conditioned on D:
+
+** I(A:C | D) vs. I(B:C | D)
+   :PROPERTIES:
+   :CUSTOM_ID: iac-d-vs.-ibc-d
+   :END:
+which ends up recovering the original idea of subtracting off the set D, but places it in a larger framework.
+
+Along those lines, this blogpost of Tao's may be helpful: [[https://terrytao.wordpress.com/2017/03/01/special-cases-of-shannon-entropy/]]

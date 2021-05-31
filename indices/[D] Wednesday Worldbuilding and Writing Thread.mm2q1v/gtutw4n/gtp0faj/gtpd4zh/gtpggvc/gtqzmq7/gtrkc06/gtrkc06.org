@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: Norseman2
+:Score: 8
+:DateUnix: 1617849795.0
+:DateShort: 2021-Apr-08
+:END:
+
+Agreed. I calculated it out of academic curiosity, and found that it would be equal to about one [[https://en.wikipedia.org/wiki/Banana_equivalent_dose][banana equivalent dose]].
+
+Let's say we're closing a 2m radius portal on a massive cast iron beam to cut it in half. An Fe-56 nucleus is about 10 fm in diameter, so the split would occur within a cylinder which is 2m in radius and 10 fm long, or about 1.25 * 10^{-8} mL in volume.
+
+Iron has a density of 7.874 g/cm^{3,} so we'd be dealing with 9.84 * 10^{-8} grams of iron which gets split. Iron has a molar mass of 55.845 g/mol, so this works out to about 0.141 * 10^{-9} moles of iron, or a total of about 8.49 * 10^{13} iron nuclei which get split.
+
+A common scenario would probably be that an Fe-56 nucleus gets split exactly in half, producing two Al-28 nuclei which end up at opposite sides. Al-28 has a half-life of 2.2 minutes and undergoes β^{−} decay, emitting an electron with 2.865 MeV of kinetic energy, plus a gamma ray with 1.782 MeV of energy [[[https://journals.aps.org/pr/abstract/10.1103/PhysRev.86.165][Ref]]], resulting in Si-28 which is stable. Assuming all 8.49 * 10^{13} iron nuclei undergo the same or comparable decay processes, the exposure for someone who hugs the cut edge for several minutes after the cut would likely be on the order of 1 * 10^{-5} J, or close to 1 * 10^{-7} Sv for a 100 kg person, which would be about one banana equivalent dose.

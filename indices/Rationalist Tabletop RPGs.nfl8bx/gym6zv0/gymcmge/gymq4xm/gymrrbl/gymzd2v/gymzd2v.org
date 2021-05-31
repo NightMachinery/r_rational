@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: silver7017
+:Score: 4
+:DateUnix: 1621384448.0
+:DateShort: 2021-May-19
+:END:
+
+I never got a chance to play old World of Darkness. by the time I was getting into White Wolf, they were all about the new World of Darkness and Exalted 2e, and that was all I could find in game stores. and then I did the old person thing and stopped picking up new systems.
+
+My program, in its current form, is nigh unusable. the isn't really anywhere I post where you can read about it, mainly because there isn't too much that I'd be able to show. right now the most interesting part about it is the idea behind it. if I ever decide to stop developing it entirely, I will release the code, but it is all in Common Lisp, so even most programmers would probably not bother with it as a starting point. I don't really do blogs, or really any form of social media, but if I ever do get it into usable form, I will almost certainly be posting it here.
+
+the original idea for it was actually based on an RPG that is designed for one-offs as a sort of party game rather than a serious RPG system. I can't remember the name of the game system, but the idea is that the GM learns this weird constructed magic language, and then the players cast their spells in real time by saying the words out loud. then, because most people aren't great with languages they have never seen before, things go horribly wrong and everyone laughs. I will probably release a version of my program when it can do at least that much. right now you can only enter your spells with a fiddly command line interface, and when you try to do anything with magic generally either nothing observable happens, you die instantly, or you die instantly and there is massive damage to the area around you. it's a neat idea, but the jury is still out on whether or not I will be able to make something fun out of it.
+
+regarding the once per group issue - my program actually generates the low level rules that govern each magic system, so it would be possible to generate a new one for each game. you could also reuse a system if you want the players to start a game as more experienced mages. in fact, this feature is one of the major things slowing down development, but I am not willing to simplify it because, as you have mentioned, it would mean you can really only run it for a given group one time.
+
+EDIT: found the RPG that I couldn't remember before: [[https://www.drivethrurpg.com/product/189606/Grimoire--Tales-of-Wizardry-and-Intrigue]]

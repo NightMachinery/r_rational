@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: 314kabinet
+:Score: 6
+:DateUnix: 1619398939.0
+:DateShort: 2021-Apr-26
+:END:
+
+Because if it's wide enough, it will be clipped on the left. For example, it can go from 400 to 1000 on the right side, but it can't go from 400 to -200 on the left, because you always go down by at least one hell. In this example we'd end up with a distribution that covers values from 1 to 1000, with a peak at 400. The average of such a distribution is necessarily above 400.
+
+Therefore, we can conclude that for it to work, it's impossible to jump more that 799 hells in one go.

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: 314kabinet
+:Score: 3
+:DateUnix: 1619397418.0
+:DateShort: 2021-Apr-26
+:END:
+
+That would make sense if the center of the bell curve was the same as the average value (i.e. if the bell curve is symmetrical). But it isn't, the distribution is clipped on the left (so the value is greater then 1), which makes the average value greater than 400, which means that it would take fewer than 22 jumps.
+
+It does check out though if the bell curve is tight enough (e.g. if the bell curve only covers values from 1 to 799, or from 395 to 405). This way nothing is cut off and it remains symmetrical.
