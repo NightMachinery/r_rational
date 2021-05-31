@@ -13,6 +13,16 @@ Github renders org headings as HTML headers, which doesn't work at all for these
 [[file:readme.org_imgs/20210531_054821_vKtPi3.png]]
 
 * Usage
+** [[https://sourcegraph.com/search?q=context:global+file:indices/.*.org+repo:%5Egithub%5C.com/NightMachinary/r_rational%24+&patternType=regexp][Online full-text search]] via Sourcegraph
+
+This search engine was optimized for searching code, so it is not too suitable for our purposes, but it's still much better than Reddit's own search.
+
+[[https://docs.sourcegraph.com/code_search/reference/queries][Here]] is Sourcegraph's query syntax. The important point is that it supports regular expressions and assumes the words are in the correct order, unless you use [[https://docs.sourcegraph.com/code_search/reference/queries#boolean-operators][boolean operators]] such as =japanese AND horror=.
+
+Note that the link above searches in the =indices= directory, where each file contains only a single comment. This is usually what you want . (It's only drawback being that it's tedious to find the comments around the found results.) To search per submission (instead of per comment), use this [[https://sourcegraph.com/search?q=context:global+file:posts/.*.org+repo:%5Egithub%5C.com/NightMachinary/r_rational%24+&patternType=regexp][link]], which searches the =posts= directory instead.
+
+[[file:readme.org_imgs/20210601_003236_9uj3rV.png]]
+
 ** Searching via =ugrep=
 
 Install [[https://github.com/Genivia/ugrep][GitHub - Genivia/ugrep: 🔍NEW ugrep v3.3: ultra fast grep with interactive que...]] by, e.g.,
@@ -30,7 +40,7 @@ ugc () {
 Now you can do:
 #+begin_example zsh
 git clone --recursive https://github.com/NightMachinary/r_rational
-cd r_rational
+cd r_rational/posts
 #+end_example
 #+begin_example zsh
 ugc 'japanese horror'
