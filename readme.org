@@ -61,7 +61,22 @@ function ugci {
 ugci 'japanese horror'
 #+end_example
 
+* FAQ
+** Reduce storage costs by deleting =indices=
+This directory saves each comment to a single file, which is very [[https://unix.stackexchange.com/questions/62049/why-are-text-files-4kb][inefficient]] on modern OSes with a block size of 4KB. If you don't use these files, deleting them will reduce the size of this repo by a lot (as of this writing, the =posts= directory is only 163MB). You can also delete the =.git= directory, but then you would lose access to =git= features such as pulling new updates.
+
+** Search excluding the authors' names
+The easiest way to achieve this is to delete the authors' names from the data using a search-and-replace tool such as [[https://github.com/ms-jpq/sad][ms-jpq/sad]]:
+
+#+begin_example zsh
+fd . | sad '\s*:author:.*' ''
+
+fd . | sad 'u/\S+' 'u/redacted'
+#+end_example
+
+
 * How was this repo made?
 This repo was created using this [[https://github.com/NightMachinary/.shells/tree/master/scripts/python/reddit][script]], which needs some refactoring to be decoupled from my environment.
 
 I plan to keep the repo up-to-date as new posts are added to the subreddit.
+
