@@ -1,0 +1,56 @@
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 12
+:DateUnix: 1478545760.0
+:DateShort: 2016-Nov-07
+:END:
+
+Hey everyone, been a crazy few weeks, but I finally had a chance to continue working on the [[https://www.reddit.com/r/rational/comments/56se39/d_monday_general_rationality_thread/d8m31oq/][AI game I talked about before.]]
+
+So far I've finished mapping out the turns as follows:
+
+There are 5 Phases in the game. In each phase, players take their turn round robin style (each player takes an action clockwise, repeatedly) until everyone has passed, and then the next Phase begins. If a player runs out of Action tokens, they are automatically skipped in later Phases.
+
+Players play with a screen that blocks some information from others, including how much money they have.
+
+*Phase 1: Funding*
+
+Every player collects funding from their research grants and resets their Action tokens, making them usable again. Any players that want to apply to new research grants are able to do so now at the cost of 1 Action. If two or more players try and apply to the same research grant, they must Test their machines to demonstrate their competence: the winner gets the card.
+
+Research grants are cards that give extra funds every turn as long as their conditions are being met. These conditions can be anything from "Gain 2 Funds per turn for 5 turns, then discard it. If you research User Modeling Level 2 by then, get an additional 5 funds." or "Get 10 funds. If you don't research Instrumental Convergence Level 1 by next turn, skip your Funding Phase."
+
+*Phase 2: Recruitment*
+
+Researchers equal to (n-1) are drawn from their deck and placed face up. Players bid on the researchers as a whole by picking up the amount of funds they are bidding in cupped hands to conceal the number, then revealing all at once.
+
+The player who bid the most gets first pick of the Researchers. The player who bid second gets second pick, and so on. Any player that did not bid gets to pay a Researcher's Minimum Bid cost to "rent" them for a turn. They are discarded at the beginning of the next Recruitment phase.
+
+Different researchers have different powers and benefits, but all give at least one extra Action point that can be used in some specific field, either Funding, Research, or Development.
+
+*Phase 3: Research*
+
+Players take turns using Action tokens and spending money to earn Research cards. Some Research cards are the "blueprints" for Components for their AI. Components are needed for AI to function, and increase Risk. Some are also used to generate funding through patenting or research grants.
+
+Other Research cards a Player might choose can improve their team's understanding of AI alignment in various ways which reduce Risk. These research cards tend to have levels, which can be upgraded during this phase as well for additional Action points and cost.
+
+The Research phase is also where espionage takes place. Once every player has passed, they may each secretly choose a different player they want to investigate. If two players investigate each other, both block each other from getting information. A player who doesn't investigate anyone automatically blocks anyone who investigates him. Successful investigations allow the investigating player to look behind their target's screen.
+
+*Phase 4: Development*
+
+Players use actions and funding to create Components if they have the required Research complete. Most Components are either core pieces to the AI construction, which increase Risk, or safety measures that reduces it, but some are ancillary technologies, like facial recognition software or motor-reflex control, which have commercial value and grant extra money or provide extra benefits.
+
+Deployment is also when most Sabotage cards might be used to throw wrenches in the other players' plans, either by messing with their research, getting their funding taken away, or feeding them false help in ways that look like real benefits until it's too late. Other Sabotage cards will be "instants" which can be used at other times, such as during the Recruitment or Funding phases.
+
+*Phase 5: Deployment*
+
+I'm still not sure if this should be its own phase or if anyone should be allowed to deploy their AI between phases. As I have it now, the opportunity to run your AI, either as a lab test or as a field test, comes now.
+
+Players take all the completed Component cards for their AI and shuffle them together, then play a game of "Blackjack" against themselves to bring risk out of the -%. The better your "AI deck" is from all the extra components and research you've done, the higher your chances of a positive outcome.
+
+If the players undershoot in a test, they gain a minor benefit. If they overshoot, the test is a bust and they get nothing. If they hit it exactly on, they gain a major benefit.
+
+If the players undershoot in a real deployment, they lose Action points on the next round. If they hit it dead on, they win or everyone wins, depending on what faction they are. If they overshoot, Everyone Loses, and the players refer to the chart described in [[https://www.reddit.com/r/rational/comments/55o2ah/d_monday_general_rationality_thread/d8ckiqu/?context=3][the first post]] about what might have gone wrong, depending on what components they're missing.
+
+This is just a basic overview of how the game would flow, and is will probably change drastically by the time the game is done. Any and all feedback welcome!
+
+[[https://www.reddit.com/r/rational/comments/5cwd7l/d_monday_general_rationality_thread/da07x4x/][Next post]]

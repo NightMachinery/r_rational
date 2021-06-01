@@ -1,0 +1,28 @@
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 2
+:DateUnix: 1429062230.0
+:DateShort: 2015-Apr-15
+:END:
+
+[[/twismug][]]An immediate use would be a security system where alarms are hooked to the button, and the signal alerts guards to step up patrols. There would be a mechanism to enforce a time delay (e.g. the button takes 20 minutes to unlock for manual use after a future signal is detected), during which time a breach would most likely be found. If the alarm is tripped, then the button isn't activated manually. If it isn't tripped, it is, but my current model says that would be exceedingly unlikely. Forcing activation A through two paths of least resistance, where 1 has greater resistance for a longer time than 2, possibly means that P(2|A) would be correspondingly greater than P(1|A), and we don't care about ~A.
+
+[[/twiright][]]The above security protocol rests on that assumption, which can of course be tested. (All other devices except those being used as experimental subjects are disabled) /An experiment could be run thus:/ A Burglar flips a coin and enters the area if the flip was heads. If they are not apprehended, they cross a sensor that activates the button. A Guard watches the light. If it does not activate, they do nothing. If it does, the Guard moves to the area and waits for the Burglar until the set delay is reached. They go back to the light and activate the button manually, with either a Burglar or no Burglar. Either way, breach is prevented or there was no breach to begin with (with a very small probability that the protocol failed).
+
+[[/twisad][]]Unless my model is wrong. This experiment can be simulated on a computer as well, under the same principles and under a much greater variation of parameters. This could be built (a USB-pluggable version of the device, and a software simulation of the experiment) in case the results of the physical experiment are confusing.
+
+[[/twismile][]]Another useful mechanism would be chaining signals. The signal could itself activate the button with a non-1 probability, although there would need to be more information than the one bit to tell how far in advance the signal is received.
+
+[[/twiponder][]]Some more ideas:
+
+- Spatial distance seems to have no detectable effect, but would inertial frame? A constant velocity difference, an varying velocity difference, and a gravitational gradient difference all have to be tested.
+
+- We have one device design, with fairly identical parameters, except our prototypes have a variation in the advance-time reception of a signal across the lot. This can wait until later, but the devices eventually need to be examined for physical differences, and designs need to be manufactured with intentional variations.
+
+- We need to see if the design can be separated into two different designs, one for sending and one for receiving.
+
+- This is probably again related to physical differences, but we need to determine if the signal is of a single consistency or if there's a spectrum of e.g. frequencies, time-distance, or other informative variations.
+
+- We need to find out if local patterned activations of the device (e.g. 4 random bits) remain coherent on reception.
+
+/Experiment:/ with button and light causally separated, record activations of the light and activations of the button (being pressed in a random stream of discrete bits). Examine the recordings for correlations. Do a similar experiment with activations of random duration.

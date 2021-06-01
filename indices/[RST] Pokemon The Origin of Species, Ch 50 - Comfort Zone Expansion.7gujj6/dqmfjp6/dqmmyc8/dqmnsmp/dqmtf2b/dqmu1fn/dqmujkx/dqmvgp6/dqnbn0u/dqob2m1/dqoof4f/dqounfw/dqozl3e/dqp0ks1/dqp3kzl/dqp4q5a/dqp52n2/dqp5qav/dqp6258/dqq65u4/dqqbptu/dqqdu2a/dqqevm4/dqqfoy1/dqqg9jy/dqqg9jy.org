@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: masasin
+:Score: 1
+:DateUnix: 1512360019.0
+:DateShort: 2017-Dec-04
+:END:
+
+That's fine. I wonder if interpolation is feasible, in that case? e.g., we're 30% confident that it's T1, so we send everyone who's supposed to respond to Tier 1 incidents, and 70% (100% - 30%) of the reserves designated to deal with Tier 2 incidents.
+
+If there are 5 people normally assigned for a T1, and 30 people for a T2, you'd end up sending 5 + (30 - 5) * 0.7 = 22.5, or 23 people. You still have seven people left who can deal with another T1.
+
+Or you could scale it differently. If you use the log of the difference, it might go up quickly the lower it is, so that by the time you get to 50% confident about T2, you have 95% manpower. Something like [[http://www.xdcam-user.com/wp-content/uploads/2011/05/s-log-sensor-log-curve.jpg][this image]], where the blue line represents the original interpolation, and the green line the log interpolation.

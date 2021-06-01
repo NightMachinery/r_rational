@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 2
+:DateUnix: 1493479156.0
+:DateShort: 2017-Apr-29
+:END:
+
+I've been considering something similar, but more generalized. Rather than using High, Middle, and Low, and then later finding a situation that required something in between, I figured we could have a range, such as legs being marked as "0.0-0.3", and the head as "0.8-1.0" and the neck of a Charizard as "0.6-0.9". Then the game would know that, given a height of 2 meters, this maps in Charizard's case to 4 tiles high, so the bottom two hexes would work if targeting the legs, the top two hexes could hit the neck, and only if you could hit the top hex would the head be a valid target.
+
+(in Bill's PC it wouldn't be hard to include presets such as High/Middle/Low that fill in thirds for convenience, tho.)
+
+The two unanswered questions I have for such an approach are A: is this really less work/more flexibile than just explicitly defining the body in more strict terms, and B: what do we do in cases where the unit is toppled, or like a bear and able to stand up or run on all fours?

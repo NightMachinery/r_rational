@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: Quetzhal
+:Score: 1
+:DateUnix: 1512371600.0
+:DateShort: 2017-Dec-04
+:END:
+
+To further elaborate on what the others said:
+
+A pointer is exactly what it says on the tin: it's an address that /points to/ a variable. In order to access what's inside the address - or rather, to access the variable itself - you /dereference/ the pointer. It's a very useful tool in programming, but comes with a set of problems:
+
+1) A given program only has access to certain parts of memory. If you dereference some part of memory that you don't have access to, the program crashes.
+
+2) You could potentially dereference some random accessible part of memory that was never initialized. This means that the "variable" you access will be whatever was in that part of the memory at the time, which is difficult to debug because you don't have any idea why you're getting weird numbers or letters.
+
+We solve this problem by using the null pointer, which typically has a value of 0. This is technically an address, but it's an address the program can't access, and is therefore guaranteed to cause a program crash if you try to access it. You can catch this by detecting the null pointer and aborting before even trying to dereference it, which helps you detect failure points in your code, failed memory allocation, and so on.
+
+If the pointer had been a valid (accessible) address, but the /variable/ was never initialized, it's completely up in the air what you'll get. In C, strings are null-terminated, which means you read characters byte by byte until you reach a byte with the value of 0. You'll get a string of nonsense or nothing at all, depending on where that 0 is.
+
+Disclaimer: I'm still a pretty new computer science student and my knowledge is limited to C. And assembly.

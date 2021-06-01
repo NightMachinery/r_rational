@@ -1,0 +1,209 @@
+#+TITLE: GEB Discussion #17 - Chapter 16: Self-Ref and Self-Rep
+
+* GEB Discussion #17 - Chapter 16: Self-Ref and Self-Rep
+:PROPERTIES:
+:Author: xamueljones
+:Score: 8
+:DateUnix: 1434926581.0
+:DateShort: 2015-Jun-22
+:END:
+*Gödel, Escher, Bach: An Eternal Golden Braid*
+
+This is a discussion of the themes and questions concerning the *Chapter 16: Self-Ref and Self-Rep* and its dialogue, *The Magnificrab, Indeed*.
+
+*Self-Reference and Self-Representation*
+
+This is one of the longest chapter in the book as Hofstadter delves into the numerous forms self-reference and self-representation can take as well as showing how they can apply to our very own biology.
+
+Hofstadter starts by talking about how easy self-reference is when using language, because language is about communication and once the idea of self-reference can be articulated, it is done.
+
+Talking about self-reference /is/ self-reference, especially with examples involving the phrase “this sentence”.
+
+However, due to the ease we experience when using self-referential examples, it is not immediately obvious th machinery or the mental processing we are using to understand the sentence. It requires:
+
+- The ability to understand which word is a reference or a non-reference. Is the word pointing to something else, or is it demonstrating/communicating a concrete idea.
+
+- The ability to understand where the reference words are pointing to.
+
+- The ability to handle the case when referential words point to itself.
+
+Hofstadter illustrates with his figures how all three abilities above are combined to understand self-referential sentences. To be sure of understanding this concept, try writing your own self-referential sentences. Bonus points if you don't explicitly refer to the sentence using the phrase “this sentence”.
+
+Now that we understand self-reference, how about self-representation where a sentence represents itself perfectly? This is impossible (unless the sentence is infinite in length) because no sentence can quote itself in its entirety even though it can quote any other sentences. The quine, “Yields falsehood when preceded by its quotation” yields falsehood when preceded by its quotation, only works because it refers to representing a shorter sentence in the quotation marks and not the double copy of itself. It is only a method of self-reference which avoids the phrase “this sentence”. It seems as if self-representation is more about producing a copy of itself rather than being its own self-reference (which is a very confusing concept).
+
+Hofstadter goes on to talk about how to create a quine through a [[https://en.wikipedia.org/wiki/Quine_%28computing%29][BlooP-like computer programs]]. This should be fairly intuitive since quines is like the idea of following instructions to write out the instructions themselves or following the following phrase ‘To read this sentence out loud, you must read the following phrase out loud “To read this sentence out loud, you must read the following phrase out loud”'.
+
+I apologize for any headaches one may encounter when dealing with quines.
+
+Hofstadter finally wraps up this section with replicating sentences/ideas/systems. For anything to be capable of self-representation (where it produces a copy of itself), it must be able to refer to itself for ‘instructions' on how to recreate itself.
+
+Before continuing on, try to come up with example of replication where self-reference is used.
+
+...
+
+*Biology*
+
+Hofstadter suggests that there may be /classes/ of self-representation where a machine or program can produce other machines/programs which will in turn produce the original version. This can get very complicated as you could have multiple stages of productions happening.
+
+Hence self-representation is used to illustrate how self-reference can occur in number theory with Gödelian numbers to represent numerical statements referring to itself and self-reference is used to illustrate how self-representation can occur in biology with DNA referring to itself to produce copies.
+
+When we peer into biology, the most striking thing to notice is how much like a computer program our DNA acts. Its bases (A,C, G, T) are like bytes in a computer system as the raw data recording the information of the system at the lowest possible level. Specific combinations of bases can be interpreted as enzymes to function as the most basic commands on other biological data which allows more complex enzymes which are sequences of simpler enzymes and so onto ever more complex enzyme-commands.
+
+As a result, DNA is very much like a computer program which functions based on inputted data and since the program is also made of data, the program can easily be given itself as a possible input. Hence DNA is its own program and input to create duplicate copies of itself.
+
+The main differences between computers and biology seems to be the fact that humans are careful to kept hardware separate from software so that no matter what computers a program is run on, the program will act the same on every possible computer. However with biology, the software, the brain, are specialized for the hardware, the body. Which is why one can't remove a human brain and place it into a wolf's body and expect the brain to be capable of handling the differences between species. Frankenstein's monster is also extremely difficult since brain transplants are still not possible even with modern medical technology.
+
+After an extended explanation on our biology, Hofstadter compares it to TNT and shows how the Central Dogma of Molecular Biology has a very strong isomorphism to the Central Dogma of Mathematical Logic. For example, proteins are meta-statements of TNT, DNA are TNT strings, and many other similarities with the most important one of all being the isomorphism between self-representation in biology to self-reference in TNT. Looking at the figure drawn by Hofstadter, self-representation is so similar to self-reference in the roles the two play that they seem like two different facets of the same concept of meta-statements.
+
+This brings us to the question of, what does the Gödel's Incompleteness Theorem map onto?
+
+Hofstadter uses the Contracrostipunctus to show the effect Gödel's Theorem has on biology. One can easily imagine a cell as a record player taking in DNA strands as records to be played. Therefore just like how the Perfect Phonograph can play any record, the Perfect Cell is one that can interpret and read any possible DNA sequence. According to Gödel's Incompleteness Theorem and the isomorphism between biology and TNT, there must be some sequence of bases which would result in destruction of the cell. One could immediately guess that certain genetic disorders, cancers, or viruses could be possible candidates for unreadable DNA, but this is pure speculation and has no actual research (known to me) to suggest this possibility.
+
+Viruses add another level of complexity to how cells read DNA, because not only does the cell need to carry out its normal, complicated process of replication, it also needs to know when its read a ‘bad' sequence of DNA or a virus. This expands into a larger problem of recognition since cells also use enzymes to communicate with each other and its like receiving multiple letters in the mail and recognizing who sent which letter. This apparently relates to [[https://en.wikipedia.org/wiki/Leon_Henkin][Henkin sentences in mathematical logic]].
+
+Henkin wrote a proof similar to Gödel's proof about how [[https://en.wikipedia.org/wiki/G%C3%B6del%27s_completeness_theorem][first-order logic is complete]] and consistent, except he only proved that such a [[https://en.wikipedia.org/wiki/Existence_theorem][proof must exist]]. The main advantage of his approach is that his is easier to follow and is similar to viruses being like the statement, “I Can Be Reproduced in Cells of Type X”. They both don't explain how to reach the result they detail, but rather that the result is certain to be possible.
+
+Hofstadter mentions how the above Henkin sentences are implicit types while Henkin sentences which do state at least part of the way to reaching the mentioned end result are explicit. Just like how Henkin demonstrates that a virus must be able to invade certain cells, Gödel demonstrates that all cells have a virus of some type which is guaranteed to ruin it
+
+There is a follow-up section on how the cells can have such fine control over high-level features such as instincts, temperament, and behavior which I will not be commenting because I would be doing you a very poor disservice to try explaining something I can't do more than parrot.
+
+When Hofstadter wonders at how Life could have ever got started at all, he doesn't know that RNA was the first replicator of since it can act both as the enzyme (readers) and as the protein (output). It was the first [[http://lesswrong.com/lw/w0/the_first_world_takeover/][instance of /directed/ replication]].
+
+I apologize for anyone who wished for me to explain the biology section, but all I can clarify is that Hofstadter is laboriously illustrating how biology uses self-representation and self-reference to enable cellular reproduction. His explanation is a very concise and good illustration of how DNA works with RNA and proteins to encode genetic information and to extract the information as necessary. If you wish to learn more about this fascinating topic, I recommend either reading some biology books. I will post any recommendations commenters make here:
+
+- 
+
+Here is a very good webpage on [[http://www.nada.kth.se/%7Ekai/lectures/geb.html][summarizing the chapter and dialogue]].
+
+......
+
+*Dialogue*
+
+Achilles and Tortoise start the dialogue by discussing Crab's intelligence and how he must be smarter than any other crab alive. To prove this point, Crab comes by with some mathematical results which someone sent him, thinking very highly of his intelligence as a mathematician. Najunamar sent Crab a letter proving several trivial results, or extremely simple version of the [[https://en.wikipedia.org/wiki/Four_color_theorem][Four-Color Theorem]], [[https://en.wikipedia.org/wiki/Goldbach%27s_conjecture][Goldbach's Conjecture]], and [[https://en.wikipedia.org/wiki/Fermat%27s_Last_Theorem][Fermat's Last Theorem]].
+
+Note that when [[https://en.wikipedia.org/wiki/1729_%28number%29][1729]] is mentioned, it's significant due to being the smallest number which is the sum of two cubed numbers in two different equations, 1^{3} + 12^{3} = 9^{3} + 10^{3.}
+
+Due to Najunamar's extremely unusual phrasing of the mathematical results convince the trio that no one could possibly have the imagination to make the results up and his intelligence can't be replicated by non-Oriental mathematicians. Achilles then mentions the [[https://en.wikipedia.org/wiki/Church%E2%80%93Turing_thesis][Church-Turing Thesis]] which relates to the equivalence of statements or ideas between multiple systems. This of course means that anything Najunamar can derive within his own designed system must also have an equivalent derivation in any other system of mathematics.
+
+The statements, in order of appearance, translate into:
+
+- No number is the successor of zero.
+
+- 13 is prime.
+
+- 3^{2} + 4^{2} = 5^{2.}
+
+- 14 is prime. Crab suggests changing it to “17 is prime”, “19 is prime”, or “14 is not prime”.
+
+- 17 is not prime.
+
+- This is simply a string which is not well formed. A statement in number theory by John Cage.
+
+- b^{2} = 2a^{2} only if a is 0.
+
+- 50 is the smallest number that can be written as a sum of two squares in two different ways. Note how this is similar to 1729 from before.
+
+- Every even integer greater than 2 can be expressed as the sum of two primes. Since this is Goldbach's Conjecture, Crab cannot say one way or another if it sounds ‘beautiful' or ‘ugly'.
+
+Every statement which is true, Crab finds a pleasing harmony in, while false theorems sound ‘disharmonious'. Gibberish statements, or non-well-formed strings, amusingly sound like music by John Cage.
+
+When Achilles says “You mean this is a big bluff?”, it seems to be implied that Crab and (maybe) Tortoise had be playing a joke on him.
+
+Wikia Links:
+
+- [[http://godel-escher-bach.wikia.com/wiki/Chapter_16][Chapter 16]]
+
+- [[http://godel-escher-bach.wikia.com/wiki/The_Magnificrab,_Indeed][The Magnificrab, Indeed]]
+
+Coming up next is Chapter XVII: Church, Turing, Tarski, and Others
+
+The discussion for the previous chapter is posted [[http://www.reddit.com/r/rational/comments/364gsj/geb_discussion_16_chapter_15_jumping_out_of_the/][here]].
+
+The discussion for the next chapter is posted here.
+
+[[http://www.reddit.com/r/rational/comments/2yys1i/lets_start_the_read_through/][Official Schedule]].
+
+
+** /facepalms/
+
+I accidentally typed 5 PM instead of 7 PM on my warning post. So as a very poor apology, I'm posting this 20 minutes early even though to you guys, it's an hour and 40 minutes late.
+
+This was also a very hard chapter to write about because I don't actually know enough about biology to write anything more than what Hofstadter says or how to summarize it properly.
+
+Also this was one of the longest chapter in the book which was the main reason for why I had so much trouble finishing this post. Well that and a brand-new full time job researching for the summer.
+
+I'll shoot for next Sunday to post the next chapter, but I'm not promising anything which is why there are no dates on the schedule for the remaining chapters.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1434926837.0
+:DateShort: 2015-Jun-22
+:END:
+
+*** u/deleted:
+#+begin_quote
+  Well that and a brand-new full time job researching for the summer.
+#+end_quote
+
+Wahoo! Congratulations!
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1435006219.0
+:DateShort: 2015-Jun-23
+:END:
+
+
+** u/deleted:
+#+begin_quote
+  According to Gödel's Incompleteness Theorem and the isomorphism between biology and TNT, there must be some sequence of bases which would result in destruction of the cell.
+#+end_quote
+
+Uhhhh... not really? I mean, in proof theory, attempting to evaluate a Goedel Statement doesn't make the proof system "explode and die", it just makes it enter an infinite loop from which it will never jump out. The normal way to get around this, particularly when you want to consider infinite loops we /want/, is to use [[http://blog.sigfpe.com/2007/07/data-and-codata.html][codata and corecursion]], in which we guarantee that an infinite sequence of steps will happen, but each one will generate a useful result in finite time.
+
+[[#s][]]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1435006199.0
+:DateShort: 2015-Jun-23
+:END:
+
+*** But in the context of a cell interpreting a 'Godelian' DNA sequence, isn't failure the same thing as destruction of the cell just like how the Phonograph break due to vibrations when playing a Godelian record?
+
+How can you have 'infinite loops' in the context of cells?
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1435016419.0
+:DateShort: 2015-Jun-23
+:END:
+
+**** u/deleted:
+#+begin_quote
+  How can you have 'infinite loops' in the context of cells?
+#+end_quote
+
+Homeostasis? The Krebs Cycle?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1435016505.0
+:DateShort: 2015-Jun-23
+:END:
+
+***** Oh....thanks for that. I don't know why I didn't think of them (not enough automatic familiarity?).
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1435017040.0
+:DateShort: 2015-Jun-23
+:END:
+
+
+** I found the start of the dialogue strange.
+
+On p. 549 the first speech of the crab seems kind of backwards (and it can be read forwards and backwards) and already talks about eating and being-stuffed although the tortoise did not yet ask about the teahouse at all.
+:PROPERTIES:
+:Author: markus1189
+:Score: 1
+:DateUnix: 1435301212.0
+:DateShort: 2015-Jun-26
+:END:

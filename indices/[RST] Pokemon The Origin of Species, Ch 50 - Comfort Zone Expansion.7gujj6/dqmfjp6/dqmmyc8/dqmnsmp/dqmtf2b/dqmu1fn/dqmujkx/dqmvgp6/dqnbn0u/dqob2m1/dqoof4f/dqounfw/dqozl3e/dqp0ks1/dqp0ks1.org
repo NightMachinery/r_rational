@@ -1,0 +1,28 @@
+:PROPERTIES:
+:Author: masasin
+:Score: 2
+:DateUnix: 1512288254.0
+:DateShort: 2017-Dec-03
+:END:
+
+#+begin_quote
+  I don't get why it should be independent of the % of Tyranitar events, whereas in the cancer example it is dependent on the actual cancer rate among the tested population.
+#+end_quote
+
+You're looking at the wrong thing. When you ask for P(T1 | R1), it's like you're asking what the probability of cancer is given that you had a positive test result. Except, in this case, you gave it outright. 79% of Tier 1 reports are actually Tier 1, in the cancer case would be 7.8% of positive test results are actually cancer patients.
+
+What you didn't give is the marginal probability, P(R1 | T1), which is the probability that a Tier 1 incident is reported as Tier 1. In cancer terms, you didn't give the probability that someone with cancer would get a positive test result, which was 80% in Yudkowsky's example.
+
+Normally, the 80% would hold no matter which percentage of women have cancer. But the way you phrased it, you know that 7.8% of people with positive test results have cancer. If 1% of women have cancer, 80% of cancer patients would get a positive result. If 99% of women have cancer, a much lower percentage would get a positive result, or the false positive would be higher. The effectiveness of the test (with pokemon, the proportion of Tier 1 cases which are reported as Tier 1) will have to change as the priors change in order to keep that 7.8%. That's why, if 7.8% is your given, that number will stay the same no matter which proportion of women have cancer.
+
+To fix /that/ (and here's where the complicated math comes in), you'd need to say that it's 7.8% of women with a positive test result actually having cancer /in a population where 1% has cancer/. That way, we know the likelihoods, and if that proportion changes to, say, 50:50, we can calculate the changed posteriors.
+
+But here's the thing. You would normally expect the effectiveness of the test, P(+ | cancer) to be the thing that does not change with the population. In pokemon terms, P(R1 | T1), the proportion of Tier 1 incidents reported as Tier 1, would not change with the frequency of severity. What you /would/ expect to change with the prior is P(cancer | +), that 7.8% with 1% cancer ratio. Or, with pokemon, P(T1 | R1), the probability that the report was correct.
+
+*tl;dr:* You gave the fraction of women with positive mammographies with breast cancer, and asked for it. It's dependent on cancer rates in the population if the test effectiveness is known, but that is not known here. If you provide the posterior as an invariant, the likelihoods would need to change in response to the priors, but the posterior does not change.
+
+#+begin_quote
+  I'm actually heading to CFAR on Monday, and will be there for about a week. I'm available Sunday evening though, if you are, from about 5PM EST till at least midnight.
+#+end_quote
+
+I'll see if I'm free. I'm staying with my family, and they might have events planned. Later is probably more likely. Perhaps after CFAR?

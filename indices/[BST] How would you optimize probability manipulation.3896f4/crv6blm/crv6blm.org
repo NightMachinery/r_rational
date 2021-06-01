@@ -1,0 +1,37 @@
+:PROPERTIES:
+:Author: ajuc
+:Score: 1
+:DateUnix: 1433414794.0
+:DateShort: 2015-Jun-04
+:END:
+
+Sorry for the wall of text, I toyed with similar magic system and thought a lot about it. In my system you could change probability distribution of any random variable prior to sampling it, and the energy cost was proportional to integral of the squared difference between the original and desired probability distribution over the domain of the variable.
+
+It is an elegant, general system, but the problem is - probabilities can be combined. It applies to your system as well, even more I think.
+
+You can add irrelevant clauses to the random variable you want to tinker with to make it easier. For example "I will win this game" may have probability of 0.01, but "I will win this game or I will toss a coin and it will be tails" will have probability of a little over 50%.
+
+So in your system I can do this to do ANYTHING for the cost of 2 trivial spells:
+
+1. make the probability of "I will win this game OR that coin toss will be Tails" = 100% (original probability a little over 50%)
+2. make the probability of "that coin toss will be Tails" = 0% (original probability = 50%)
+
+I could skip the gaming altogether, and just do "10 kg of gold will materialise on the floor" instead of winning a game. Or 10 kg of antimatter if I want big boom and not the money. Or "the drug for cancer will materialise on the floor" if I'm benevolent that day. What's the difference between (1-0.50000000001) and (1-0.5000000000000000000000001) after all.
+
+So yeah - it's OP.
+
+You can forbid compound random variables, but it's a gray area - a roll dice is compound random variable too if you think about it.
+
+You could also forbid casting 2 spells that manipulate the same random variable, but random variables in real world are rarely 100% independent, so you may find that changing that 1 coin toss in the past slightly changed probability of EVERYTHING after 1 year (see butterfly effect). So you basicaly made magic impossible for anybody because of that 1 small spell.
+
+May be good for story, now that I think about it :) Wizards would make sure they isolate the things the manipulate from outside world, and magic defence would be basicaly ensuring that the thing you want to defend from tinkering influences as many things in outside world as possible. But it's inevitable someone had destroyed magic in such universe long before the story even begins IMHO.
+
+I think the best way to deal with this is to make the magic energy cost work out the same no matter how many spells you cast to achieve the result - it should be "path invariant", so exponential cost won't work, it would need to be linear I think. But linear cost seems too cheap, stuff like "create arbitrary amount of matter custom tailored to your specification out of nowhere" would be at most 2 times more expansive than "change the result of a coin toss". I abandoned the project because of that.
+
+Now that I think about it - maybe relativity equations could be made to work here? There's some analogy with changing velocity to c requiring infinite energy, and changing probability by 1 should be the same. And I think in relativity the equations are path invariant? I'm not good with relativity.
+
+I like the "line of sight" limit - it makes it much less powerful, but still - it's OP as hell.
+
+Your system has also effortless future prediction, even non-line-of-sight, because of this trick: you can promise to yourself that you will put a ball in one box if Obama wins election, and in other if he loses. Both boxes are in line of sight. And then you will take that ball from one box or the other. After making such a promise you predict probability of taking ball from the first and the second ball after the elections - voila - you know who will win.
+
+In mine system you cannot predict probability, but you can try to change probability distribution "blind", and if you don't use enough mana - you will fail painfuly (the amount of pain proportional to the missing energy). So predicting future is possible, but painful and costs mana - you basicaly have to estimate the probability distribution by undershooting on purpose. And if you fail too much (more than 0.5) you go mad forever.

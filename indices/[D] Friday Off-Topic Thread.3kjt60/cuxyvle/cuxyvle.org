@@ -1,0 +1,23 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 7
+:DateUnix: 1441984029.0
+:DateShort: 2015-Sep-11
+:END:
+
+Fun fact: there are [[https://www.reddit.com/r/bigquery/comments/3cej2b/17_billion_reddit_comments_loaded_on_bigquery/][a few billion reddit comments loaded into BigQuery]], which allows for some mildly interesting data to be extracted. Here are the top ten commenters on [[/r/rational]] by Total Posts:
+
+| Author (with Markdown link)                 | TotalPosts | TotalScore | MaxScore                           | AvgScore |
+|---------------------------------------------+------------+------------+------------------------------------+----------|
+| [[/u/eaglejarl][eaglejarl]]                 | 2081       | 5055       | [[/comments/3bt5o2/_/csplni8][34]] | 2.43     |
+| [[/u/eaturbrainz][eaturbrainz]]             | 1880       | 4923       | [[/comments/2s6uf1/_/cnmq6ge][28]] | 2.62     |
+| [deleted]                                   | 1701       | 3332       | [[/comments/39xqpi/_/cs7fq15][57]] | 1.96     |
+| [[/u/alexanderwales][alexanderwales]]       | 1454       | 8237       | [[/comments/39dxi3/_/cs2l1ae][58]] | 5.67     |
+| [[/u/Transfuturist][Transfuturist]]         | 610        | 1554       | [[/comments/383w7f/_/crs2dlk][22]] | 2.55     |
+| [[/u/DaystarEld][DaystarEld]]               | 593        | 1496       | [[/comments/38y4vc/_/cryw1r7][23]] | 2.52     |
+| [[/u/Nepene][Nepene]]                       | 585        | 1336       | [[/comments/2ri0cz/_/cng5t1b][21]] | 2.28     |
+| [[/u/xamueljones][xamueljones]]             | 544        | 1513       | [[/comments/353kr3/_/cr0qjn1][29]] | 2.78     |
+| [[/u/ArgentStonecutter][ArgentStonecutter]] | 514        | 1439       | [[/comments/3a6ata/_/cs9or58][24]] | 2.80     |
+| [[/u/Farmerbob1][Farmerbob1]]               | 460        | 908        | [[/comments/3b0aqq/_/csl9x2p][27]] | 1.97     |
+
+... and here is [[https://docs.google.com/spreadsheets/d/1EwpYAPX9vzG-TyMDDO3tIYqEO21qsHcGvcVFS2EoA1M/edit?usp=sharing][a link to that data in Google Sheets for all 1756 users who have ever commented in this subreddit.]]

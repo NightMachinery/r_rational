@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1446776642.0
+:DateShort: 2015-Nov-06
+:END:
+
+#+begin_quote
+  On first access that needs to perform bitmap operations, as opposed to exporting it to (say) a video player app.
+#+end_quote
+
+On first access of the pixels attribute, which is more or less the same thing.
+
+#+begin_quote
+  And it's not a PNG, it's a capnproto structure that contains compressed bitplanes that can be copied directly into a PNG.
+#+end_quote
+
+The distinction is unclear to me.
+
+#+begin_quote
+  That's also a good time to run the garbage collector.
+#+end_quote
+
+That is the garbage collector? Or the end results thereof.
+
+#+begin_quote
+  You only need to convert the compressed arrays to pixel arrays if you're using an accessor that requires you to do operations on the array that require uncompressing it.
+#+end_quote
+
+I think we're both talking about pretty much the same thing here. Compressed data, accessors transform them into things like pixel arrays, decompressing as parts of the data are accessed.
+
+Of course specific memory management stuff is left to the particular accessors implementation.

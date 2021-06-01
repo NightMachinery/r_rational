@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: Iijil
+:Score: 2
+:DateUnix: 1512171615.0
+:DateShort: 2017-Dec-02
+:END:
+
+By considering 100 reports for T1 and 100 reports for T2 you are implicitly assuming that both reports are equally likely. Which can't be true given the actual event classifications and false report ratios provided. To properly combine them you'd need to adjust the report numbers to match the actual ratio between reports for T1 and T2.
+
+67 T1 reports to 33 T2 reports seems to fit the data from the lecture okay. I found those by solving the system of linear equations given by the false report rates and event classification rates. Out of 100 reports you get 53 T1s reported as T1, 11 T1 reported as T2, 14 T2 reported as T1 and 22 T2 reported as T2

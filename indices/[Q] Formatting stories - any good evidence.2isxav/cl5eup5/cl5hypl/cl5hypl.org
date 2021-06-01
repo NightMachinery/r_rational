@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1412924536.0
+:DateShort: 2014-Oct-10
+:END:
+
+#+begin_quote
+  I might hide the picture by default
+#+end_quote
+
+I find myself somewhat reluctant to require the reader to do anything but page-down through the text, and click on 'next page' links. I've used PICS to add content warnings that the picture contains artistic/tasteful nudity, so anyone who's set their browser to filter out such material won't see the image.
+
+#+begin_quote
+  please do use hyphens, em-, and en-dashes correctly.
+#+end_quote
+
+There seems to be a certain amount of disagreement about what 'correctly' means, but I think I've worked out a reasonable compromise for most instances. Hyphens for word-joining - and a thinspace, em-dash, thinspace combo for parenthetical dashes. At least in the first chapter, I don't think I found any instances of en-dashes. (And I'm using the ellipsis character instead of three periods, left and right curly quotes for speech, ordinary apostrophes inside words but curly apostrophes for quoted text.)
+
+#+begin_quote
+  writing in plaintext
+#+end_quote
+
+That's what I do, already. :) (A few decades of doing so is why I instinctively write italics like /this/.) I'm probably just going to manually convert to HTML - once I've worked out which HTML tags to actually /use/, it's not hard to rock my fingers back and forth through a set of search-and-replaces (such as greater-than followed by quotes into left double-quotes; space followed by quotes into left double-quotes; and the remaining double-quotes into right double-quotes), and it's something I can do while a distracting TV keeps me from doing any creative writing.
+
+(Not that I object to automation, either; but from what I've managed to read of pandoc's documentation so far, there doesn't seem to be an easy way to turn a text file containing ten chapters into ten HTML files based on the format I'm establishing in my 01-01.html test-file. With my current level of knowledge, it looks like it'll be easier to manually generate the HTML than learn whatever scripting language would be used to automate the conversion.)

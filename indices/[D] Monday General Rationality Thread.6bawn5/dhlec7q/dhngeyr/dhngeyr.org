@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: thekevjames
+:Score: 5
+:DateUnix: 1494976742.0
+:DateShort: 2017-May-17
+:END:
+
+tl;dr: careful about over-fitting results, here.
+
+I like the /idea/ of this test, but it seems to have a bit of a wide-net issue:
+
+#+begin_quote
+  Depression Severity: 0-4 none, 5-9 mild, 10-14 moderate, 15-19 moderately severe, 20-27 severe.
+#+end_quote
+
+Given questions such as "Trouble falling or staying asleep, or sleeping too much?" and "Feeling tired or having little energy?", this scale seems incredibly biased towards fitting everyone into the "depressed, if mildly" area.
+
+Reminds me a bit of WebMD; I love the idea, but if every test you take claims you might have cancer the entire project loses a lot of value.
+
+#+begin_quote
+  When screening for depression the Patient Health Questionnaire (PHQ-2) can be used first (it has a 97% sensitivity and a 67% specificity).[5]If this is positive, the PHQ-9 can then be used, which has 61% sensitivity and 94% specificity in adults.
+#+end_quote

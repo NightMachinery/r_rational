@@ -1,0 +1,34 @@
+:PROPERTIES:
+:Author: ben_oni
+:Score: 7
+:DateUnix: 1513359473.0
+:DateShort: 2017-Dec-15
+:END:
+
+#+begin_quote
+  Coming from learning C++ and some Java in college
+#+end_quote
+
+I'm so, so sorry. Your school has done you a disservice. Many schools are switching to using Python for their CS programs: Java isn't worth teaching (it is falling out of favor, and close enough to other C-like languages) and C++ is an "experts-only" language --- that is, familiarity is required, but you won't be able to learn enough of it in college to say you know it.
+
+Python is a good language, though. Personally, I get annoyed that it doesn't support tail-call optimization or multi-line lambda expressions, but those are minor issues. One EE I know has almost entirely abandoned Matlab in favor of Python --- all his co-workers have python distro's installed by default, so he doesn't need to jump through hoops to make something that works.
+
+#+begin_quote
+  the way of specifying which data structure to use through which braces you put is annoying
+#+end_quote
+
+Instant access to the fundamental types is incredibly useful. Other languages are picking up on this way of doing things. Take C# for instance:
+
+#+begin_example
+  new int[] {1,2,3,4,5}
+#+end_example
+
+It's the same as Python's (1,2,3,4,5), but more verbose (since Python has dynamic typing the array type doesn't make sense).
+
+#+begin_quote
+  I don't particularly like the dynamic typing
+#+end_quote
+
+Before judging dynamically typed systems too hashly, look into some languages with stronger typing systems than C++ and Java. Haskell, for instance (not very practical, but still worth spending the time to learn).
+
+In Python, what an object /is/ can be very fluid. You can take an instance of an object, add/remove fields, redefine operators on the fly, and keep working with it. None of that is good practice, but it means an /object/ is a peg that fits many different types of holes. Learning OOP from the perspective of C++/Java means you probably don't have the whole picture. Python takes a different approach, and ends up with a different set of benefits.

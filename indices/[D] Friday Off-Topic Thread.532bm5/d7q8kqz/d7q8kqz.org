@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 9
+:DateUnix: 1474088375.0
+:DateShort: 2016-Sep-17
+:END:
+
+Guess I may as well post weekly updates here, why not. For those just tuning in, my current project is to build a rational pokemon game. The idea is to A: gain experience in building complex, emergent systems, B: fix pokemon, and C: maybe try and codify what it means to have a truly rational game along the way. I have an essay I've doodled on that last point, and I'm going to try and post that before I break ground on the game proper. Let me know if you have insight on the matter.
+
+The current task is to finish building a tool that will allow a designer to create and customize pokemon, moves, types, and anything else that might benefit from being easily tweaked. I posted this in the discord server earlier this week:
+
+[[http://i.imgur.com/9aHAWv4.gif]]
+
+The graph system now totally works as intended. Four different stat growth curves can be selected, and comparison curves from select pokemon are displayed to help the designer get a feel for context. I have one more idea for this that will improve those comparisons, and then this feature should pretty much be done.
+
+I also added a button that will download a Bulbapedia article (specifically, [[http://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_base_stats_(Generation_VI-present)][this one here]]), parse it, and insert the requested pokemon into the tool. This will aid content creation significantly by breaking down the last major obstacle in the way of such a lazy content creator as myself.
+
+As an aside, I was flabbergasted to discover that Bulbapedia doesn't use Semantic MediaWiki or some equivilent plugin. That page I just linked is created /by hand/. This is astonishing to me; surely such a data-heavy wiki such as this would benefit immensely from being able to dynamically query tables instead of keeping glorified spreadsheets. If I cared less about this project I might have jumped ship and moved to fix that immediately, but alas. Only so many hours in the day.
+
+Not much time to work this weekend as the in-laws are in town, but I'm going to make a tentative goal to have one more functional gif for next week's thread. Any suggestions or ideas are more then welcome, and if anyone would like to literally beta test my tool, let me know. Windows-only, sorry (doesn't work in wine).

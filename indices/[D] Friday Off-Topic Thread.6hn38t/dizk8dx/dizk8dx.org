@@ -1,0 +1,44 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 11
+:DateUnix: 1497626726.0
+:DateShort: 2017-Jun-16
+:END:
+
+Weekly (ha!) update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Well, I have certainly been lax in working on this project over the last couple months.  Between struggling with the drive to do things right or not at all and other side projects absorbing my attention, I've gotten jack shit done on this project for far too long.
+
+My wake-up call came when I stumbled across [[https://watirmelon.blog/2015/02/02/iterative-vs-incremental-software-development/][this article]] which discusses the difference between Iterative and Incremental software development.  Incremental basically means “start out with the whole thing designed, and then make it piece by piece”, while iterative means “sketch the whole thing out, and then flesh everything out as it's needed”.
+
+The way that this was presented grabbed my attention.  At work, I'm fond of saying that “I'm an iterator, not an innovator”, which is to say, I can't actually do very well when told to make something out of the blue; I actually work a lot better if there's something that's at least kind of what we want (even if it's shitty) and I identify all the flaws and fix them.  Reading this article may well have me change this motto to “I'm an iterator, not an incrementer”, especially now that I've realized that I've been avoiding working on this project due to the development paradigm being at odds with my natural strengths.
+
+So, it's been high time that I set aside all the books and design documents and attempts to be seen as a “real” game designer and just Get Shit Done™.  To that end, I started development on XGEF in earnest this week, and I'll just do what I do best: wing it, and if that don't work, wing harder.
+
+--------------
+
+I started using unit tests for the first time on what I've done so far, and I have to say I quite like the paradigm.  It forces me to try and foresee as many problems as possible with the current block of code, and just seems to help focus my work in a way I quite like.
+
+For those of you who aren't familiar, unit tests are where you write a small function that tests to see if the given specific thing you are testing works:
+
+[[http://i.imgur.com/eBKtMcl.png]]
+
+For instance, I have a small system that crawls through a given directory and pulls all the filenames of all the files in that directory and subdirectories.  It has three modes: Blacklist extension, Whitelist extension, and no filter.  In the screenshot above, you can (kinda) make out that there are three unit tests that are associated with these modes.  For the blacklist check, it blacklists the *.cs extention, makes the system crawl a known directory, and then checks to see if it has any *.cs files in its list.  If it doesn't, then it's working fine; if it does, then something has gone horribly wrong.
+
+So the benefit is twofold: since these tests stick around for all eternity, in the event that I change my code later, these tests will inform me if I have broken something that used to work (and that I cared about enough to make a unit test for), and second, it turns out that this gamifies the /shit/ out of the process.  I'm not sure I've ever been so satisfied in a programming session as when I had a big ol' list of red failed tests turn to a row of green ones over the course of the night.
+
+--------------
+
+While I did spend a good portion of the last several weeks playing games, some of it was actually indirectly beneficial to this project.  I recently picked up Supreme Commander: Forged Alliance (Forever) and I have been quite enamored with its design.  My RTS experience has always been Starcraft, Warcraft, and Star Wars Battlegrounds (an Age of Empires reskin), but this just blows those games out of the water.  It doesn't force you to deal with a bunch of meaningless attention-sucking actions, and streamlines /everything/ to allow you to focus entirely on the strategy.  A breath of fresh air, as a long-time Starcraft player.
+
+But the real benefit has been in seeing how the mod scene works.  Fortunately, the community is still alive (and have even made a custom client/launcher that adds matchmaking, map repositories, IRC chat, and more), and it's largely due to the incredible flexibility of the game's modding capabilities.
+
+I actually spent a good while working on a control mod to include the handful of things that I missed from starcraft (such as A + click to attack-move, among other things), and it has completely validated some of the iffier parts of the mod design that have been floating around in my head for this project.  The game itself is made up of hundreds of Lua scripts, and when modding, you simply include a Lua script of the same name as the one who's functionality you want to change, and overwrite the bits you want to change.  
+
+It's elegant, it's flexible, and it allowed someone like me, who had never played the game and who had never actually looked at Lua, to add significant functionality within only hours of first exposure.  It has certainly been encouraging, and now I have a major example to work off of (read: iterate!).  
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

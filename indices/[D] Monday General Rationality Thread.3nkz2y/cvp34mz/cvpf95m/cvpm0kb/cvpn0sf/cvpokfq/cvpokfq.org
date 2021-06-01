@@ -1,0 +1,28 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 2
+:DateUnix: 1444099533.0
+:DateShort: 2015-Oct-06
+:END:
+
+#+begin_quote
+  but if we both modify layer 1, then there is and you need to merge those changes somehow.
+#+end_quote
+
+Only if you both do it at exactly the same time, where exactly is probably around 500ms. If that's happening, you'd see the other user editing your file in real time, like you do on google docs. If someone is overwriting the text as you write it, the problem is obvious.
+
+#+begin_quote
+  "you can both edit just one person gets access to this layer first"
+#+end_quote
+
+Works when it's obvious who's editing what (because it's realtime) and when the slices are small enough. Don't think layers, think individual pixels. If you're not both editing the same pixels at the same time then it should be fine.
+
+#+begin_quote
+  simultaneous editing of different parts of the same document/scene/file common
+#+end_quote
+
+Nope, not really common. Those examples are more to illustrate what it is then how I think it would be used. Imagine an augmented reality office, and you both want to interact with the same visualization. Or imagine you're a programmer, and you want to write tools to do voronoi simplification to a mesh, but don't want to write a plugin that's specific to only one CAD program.
+
+The unix way says "write programs that do one thing and one thing well". That's not how most modern software works. It's all monolithic. This could enable you to write software that only does one thing.
+
+It's more a different style of programming. One focused around microservices and task queues.

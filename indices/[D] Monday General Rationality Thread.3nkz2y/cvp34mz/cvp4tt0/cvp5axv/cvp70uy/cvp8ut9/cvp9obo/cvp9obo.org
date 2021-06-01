@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: trishume
+:Score: 2
+:DateUnix: 1444074945.0
+:DateShort: 2015-Oct-05
+:END:
+
+Capnproto is stronger than JSON because it uses pre-defined schemas but in such a way that you can add new things in a backwards compatible way. Which gives you stronger safety guarantees than JSON style but extensibility must be linear, which has upsides and downsides.

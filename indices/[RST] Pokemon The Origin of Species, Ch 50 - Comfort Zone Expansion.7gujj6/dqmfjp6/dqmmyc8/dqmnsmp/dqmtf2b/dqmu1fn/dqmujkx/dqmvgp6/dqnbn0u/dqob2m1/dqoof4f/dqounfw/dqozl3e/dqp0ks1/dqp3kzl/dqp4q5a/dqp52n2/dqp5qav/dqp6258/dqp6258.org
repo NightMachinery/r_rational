@@ -1,0 +1,38 @@
+:PROPERTIES:
+:Author: masasin
+:Score: 3
+:DateUnix: 1512303729.0
+:DateShort: 2017-Dec-03
+:END:
+
+[[/u/DaystarEld]], [[/u/daydev]]
+
+Sorry about that! I guess I wasn't paying attention in class. I calculated it for you!
+
+Assumptions:
+
+- P(T1) = 64%
+- P(T1 | R1) = 79%
+- P(T1 | R2) = 33%
+
+Result:
+
+- P(R1 | T1) = 83.2%
+- P(R1 | T2) = 39.4%
+
+Using this data, we can calculate the odds for Tyranitar.
+
+- P(T1) = 2/17; P(T2) = 15/17
+- P(R1 | T1) = 83.2%
+- P(R1 | T2) = 39.4%
+
+P(T1 | R1) = P(R1 | T1) * P(T1) / (P(R1 | T1) * P(T1) + P(R1 | T2) * P(T2)) P(T1 | R1) = 0.2197, or 22% probability that a Tyranitar attack reported as Tier 1 is actually Tier 1.
+
+You end up doing the same thing, but have that extra step of having to find P(R1 | T1) and P(R1 | T2) manually in the first place.
+
+edit: Please double check for accuracy. It's almost 6 am here with no sleep for me. Basically, write the equations for P(T1 | R1) and P(T1 | R2) and solve for the unknowns. The simultaneous equations if you want to solve them automatically:
+
+You're solving for P(R1 | T1) and P(R1 | T2). Remember that P(T2 | R1) = 1 - P(T1 | R1), and P(T2 | R2) = 1 - P(T1 | R2)
+
+1. P(T2 | R1) * *P(R1 | T1)* + P(T1 | R1) * P(T2) / P(T1) * *P(R1 | T2)* = 0
+2. (1 - P(T1 | R2)) * P(T1) * *P(R1 | T1)* - P(T1 | R2) * P(T2) * *P(R1 | T2)* = P(T1) - P(T1 | R2) * (P(T1) + P(T2))

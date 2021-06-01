@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: derefr
+:Score: 8
+:DateUnix: 1506728982.0
+:DateShort: 2017-Sep-30
+:END:
+
+I dunno, I think it's pretty plausible. Right now, the way we program competitive game AI mostly involves programming a "perfect" opponent (well, perfect to the best of our current abilities) that's effectively impossible to beat, and then actively handicapping it by causing it to intentionally make mistakes or fail to notice things at some probabilistic rate, until its output matches human skill levels. The challenge can be adjusted by adjusting this "thrown move" or "inattentiveness" rate. This is how variable-difficulty AI works in everything from fighting games to Go.
+
+Imagine that an em was constructed by starting with a similarly "perfect" [[https://en.wikipedia.org/wiki/General_game_playing][general game-playing]] AI template, as best as future-tech can make it; which was then "skinned" with the personality, preferences, and memories ripped from a human; and which was then handicapped in a similar manner until the average output of their thought process matched the level the game-world wanted. Instead of a human, the protagonist is basically a godlike tactician with a game-defined level of brain damage.

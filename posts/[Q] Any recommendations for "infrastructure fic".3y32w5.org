@@ -1,0 +1,312 @@
+#+TITLE: [Q] Any recommendations for "infrastructure fic"?
+
+* [Q] Any recommendations for "infrastructure fic"?
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 35
+:DateUnix: 1450967961.0
+:DateShort: 2015-Dec-24
+:END:
+[[/u/alexanderwales]]'s excellent recent [[https://www.fanfiction.net/s/11685932/1/Instruments-of-Destruction][Instruments of destruction]] (also [[https://www.reddit.com/r/rational/comments/3y0mu3/rt_instruments_of_destruction_a_star_wars/][here]]) reminded me of my own [[https://archiveofourown.org/works/3673335][Stargate Physics 101]] (also [[https://www.reddit.com/r/rational/comments/323qwe/dcsf_how_the_stargate_system_was_designed/][here]]).
+
+I'm interested in more examples of similar fiction: Behind the scenes looks at how features of existing canons came about. Especially if it has the same effect as these two of making people in some specific job go "Oh god this is too real" when they read a work of fiction about their job...
+
+This seems like a thing where instances would have appeared on [[/r/rational]]. Any recommendations?
+
+
+** Does Instruments of Destruction have any Force Awakens spoilers?
+:PROPERTIES:
+:Author: Uncaffeinated
+:Score: 6
+:DateUnix: 1450985538.0
+:DateShort: 2015-Dec-24
+:END:
+
+*** It's original trilogy only (plus some numbers for specifications pulled from the EU).
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 10
+:DateUnix: 1450988515.0
+:DateShort: 2015-Dec-24
+:END:
+
+
+*** No apparently.
+:PROPERTIES:
+:Author: bbrazil
+:Score: 5
+:DateUnix: 1450985619.0
+:DateShort: 2015-Dec-24
+:END:
+
+
+** The martian, and Seven Eves . . . maybe. I'll have to think about but that's all I have after five minutes.
+
+BTW thank you for stargate physics: I routinely recommend it to non-fanfictiony programmers as a way of explaining proper software testing and design.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 8
+:DateUnix: 1450971110.0
+:DateShort: 2015-Dec-24
+:END:
+
+*** Seveneves wasn't Infrastructure fic, it was really good Kerbal Space Program fan-fiction.
+
+Which I enjoyed, up to where the physics got literally impossible, and the sociology astronomically unlikely. But the first two thirds was good.
+
+Other stuff in the same vein you might enjoy: Heart of the Comet, and the Queendom of Sol trilogy, and The Wreck of the River of Stars.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 7
+:DateUnix: 1450972069.0
+:DateShort: 2015-Dec-24
+:END:
+
+**** Completely agree on seveneves, I think I picked it because it was a recent listen, you summed it up nicely. I did especially enjoy the heroic culture of astronauts being willing to die to do the impossible, though the nuclear power inaccuracies/sermonizing/strategic failures were fairly annoying, though the depiction of a fuel element failure was fairly on point. Beyond that, like you said KSP fanfiction.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 4
+:DateUnix: 1450972534.0
+:DateShort: 2015-Dec-24
+:END:
+
+***** Would you mind being more verbose on nuclear power inaccuracies? I've noticed some very weird choices (no additional fissionables sent up, depending on RTGs for much of the power consumption), but I missed any straight-up inaccuracies.
+:PROPERTIES:
+:Author: robryk
+:Score: 1
+:DateUnix: 1451173979.0
+:DateShort: 2015-Dec-27
+:END:
+
+****** Dumping a nuclear reactor when they don't have a source of fissionables.
+
+I'm unsure how accurate the snow reactor is, because it is a exotic heat cycle, that is to say not a pressurized water reactor, and because the fuel element failures produced what seemed unrealistically high amounts of contamination. I got the general "just say no to nuclear power" moralizing vibe. I qualified as an engineer on a S6G reactor, but I'm a civilian now, so I'm effectively NDA'd against math on the topic without doing a several hours wiki walk to define what is public knowledge.
+
+If I have time after April I'll do that wiki walk find the papers on the power turning characteristics, cladding material requirements, for comet reactors if there are ones and the orbital characteristics of comet ejecta and do the math. One thing is sure if that reactor failed the way it did, then it wasn't built under NR or NRC regulations.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 2
+:DateUnix: 1451233105.0
+:DateShort: 2015-Dec-27
+:END:
+
+******* Is there any way you could offer any advice to an amateur rat-fic authour who's included a nuclear reactor within their own story?
+
+(In the particular case I'm thinking of, the current write-up says it's fusion rather than fission, designed by an unknown but possibly weakly-superhuman artificial intelligence, fits inside a standard cargo container, provides 60 megawatts electric, uses about 7 milligrams of lithium per second at full power, and the troubleshooting section of the manual includes the phrase 'estimated crater radius'. I'm willing to tweak just about any of that to increase realism, if there's reason to.)
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1451243787.0
+:DateShort: 2015-Dec-27
+:END:
+
+******** How is the pressure and the mass of the litium within the reaction chamber maintained as 7mg/second is converted into Helium?
+
+What happens when pressure or temperature goes up, goes down? How quickly does this affect the rate of power production: i.e. how much margin is there between critical (stable normal power) and prompt critical (bombs and Chernobyl)
+
+What method converts heat to electricity? Nuclear reactors usually use a steam cycle which has a theoretical maximum efficiency of 60%]([[https://en.wikipedia.org/wiki/Rankine_cycle#Description]]) and a real efficiency of around 20% (i Think it's been a long time) followed by steam trurbines which have efficiencies in the 90-99.9% percent range. Thermal or photo voltaic is much lower efficiency with today's technology (though it'll be great for space travel if we can get a long life cell with good efficiency) so that means 60MW electric would be 300MWt (t -thermal) that's a little over half the thermal output of a Nimitz class aircraft carrier [[https://en.wikipedia.org/wiki/A4W_reactor][A4W reactor]] So pokling a hole in that reaction chamber would be very bad, and I think I rember his was a vehicular design, so I'd imagine you'd need a rod from god to break the containment.
+
+I have a hard time imagining anything with a "estimated crater radius" being allowed in society.
+
+The difference between your reactor and the A4W is the A4W physically can't go boom without someone basically re-designing, and then re-building it. I honestly can't imagine a reactor that can go boom without someone first disassembling it maliciously reassembling it ever being legal in North America because of the culture of design safety that has evolved due to the rational fear of designs that can go boom, and because basically that means you have a nuclear reactor that occasionally can be used as a nuclear weapon. I like the second amendment a lot, but I doubt society is ever going to trust you, I, or anyone, to own something that can be used as a nuclear weapon.
+
+I also imagine the reaction chamber after inital use would be prohibitively activated such that anyone maliciously taking it apart and altering it so it would could go boom couldn't do so without dying in the process and or assembling infrastructure that would make people ask pointed questions.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 2
+:DateUnix: 1451259069.0
+:DateShort: 2015-Dec-28
+:END:
+
+********* u/DataPacRat:
+#+begin_quote
+  How is the pressure and the mass of the litium within the reaction chamber maintained as 7mg/second is converted into Helium?
+#+end_quote
+
+In the current draft, the design uses inertial electrostatic confinement; basically, a souped-up fusor.
+
+#+begin_quote
+  What happens when pressure or temperature goes up, goes down? How quickly does this affect the rate of power production: i.e. how much margin is there between critical (stable normal power) and prompt critical (bombs and Chernobyl)
+#+end_quote
+
+I have insufficient knowledge to even try to answer that. Any suggestions you can offer are welcome.
+
+#+begin_quote
+  What method converts heat to electricity?
+#+end_quote
+
+Half the energy produced by the fusion is bremsstrahlung X-rays, captured in a lithium heat engine. The other half is highly charged Helium isotopes, decelerated by an electric field which results in an electron beam, which is run through a Rankine MHD. The notes I have list 360 MW thermal.
+
+#+begin_quote
+  I have a hard time imagining anything with a "estimated crater radius" being allowed in society.
+#+end_quote
+
+The story is set post-apocalypse, and the reactor's primary owner doesn't always advertise its existence or presence. (If it makes you feel better, my quick calculations based on a role-playing-game's build system imply a crater radius on the order of 15 yards. Again, I'm open to suggestions for revision, if you have a more realistic source.)
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 2
+:DateUnix: 1451264980.0
+:DateShort: 2015-Dec-28
+:END:
+
+********** Posting from mobile but regarding the blast radius I'd handwave a thermal to electrical efficiency to calculate thermal vs electric output then compare it to the wikipedia values for fuel air explosives then fat finger some % mediated by the process undergoing negative feedback (this would be part of a safe design the question is how fast it happens) but in a loss of containment my rather uneducated (on applied non exponential fusion process) perception is you a small sun escaping a magnetic bottle.
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 1
+:DateUnix: 1451266715.0
+:DateShort: 2015-Dec-28
+:END:
+
+
+**** For true fiction about infrastructure, try Kim Stanley Robinson's /Aurora/ or /Red Mars/. But they're not infrastructure fanfic, sadly.
+:PROPERTIES:
+:Author: boomfarmer
+:Score: 3
+:DateUnix: 1451011303.0
+:DateShort: 2015-Dec-25
+:END:
+
+***** Aurora screwed up both infrastructure and human interaction over and over again. It was awful. Wil McCarthy's "Queendom of Sol" series made the same point /so/ much better.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1451012007.0
+:DateShort: 2015-Dec-25
+:END:
+
+****** The human interaction was screwed up for in-universe reasons, though, and those reasons were because of infrastructure mistakes.
+:PROPERTIES:
+:Author: boomfarmer
+:Score: 1
+:DateUnix: 1451013111.0
+:DateShort: 2015-Dec-25
+:END:
+
+******* The screwed up human interactions didn't even make sense in-universe. Whatsername was supposed to be 'normal intelligence' in contrast to all the rest of her cohort, and yet they all suffered from selective amnesia. I mean, one plot point was that a significant fraction wanted to go on to another star, but it was stated right from the beginning that wasn't possible until they had the ability to build a launching laser. Which was suddenly 'remembered' a couple of chapters later. That's like a whodunnit where the suspect's alibi was that he was in Sydney while the murder was in Denver... and everyone forgot it for half the book.
+
+That they came up with a 'solution' is irrelevant ... the people arguing for going on /knew the problem/ and /didn't have the solution/.
+
+Then there's the whole physical impossibility of high levels of abiogenic free oxygen, which everyone ignored until it became a plot point.
+
+And the infrastructure problems were complete diabola-ex-machina. They didn't actually make sense.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1451043471.0
+:DateShort: 2015-Dec-25
+:END:
+
+
+*** The Martian isn't quite what I had in mind, although I agree it's excellent. I usually describe it as "A novel about logistics only not boring like that makes it sound". :-)
+
+I've not read SevenEves because I don't really like Neal Stephenson.
+
+And you're very welcome for Stargate Physics. It does seem to do a really unexpectedly good job of conveying how to do my job (although my job usually involves fewer genderqueer werewolves)
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 6
+:DateUnix: 1450974949.0
+:DateShort: 2015-Dec-24
+:END:
+
+**** The world doesn't have nearly enough genderqueer werewolves.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 9
+:DateUnix: 1450975530.0
+:DateShort: 2015-Dec-24
+:END:
+
+
+**** Do you work in software testing then?
+:PROPERTIES:
+:Author: Empiricist_or_not
+:Score: 2
+:DateUnix: 1451011195.0
+:DateShort: 2015-Dec-25
+:END:
+
+***** Kinda. I write [[http://hypothesis.readthedocs.org/][testing software]], and historically my job has involved a lot of being the go to person for "oh god everything is broken why is it broken?" in companies that don't have testing teams.
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 2
+:DateUnix: 1451031764.0
+:DateShort: 2015-Dec-25
+:END:
+
+
+** It's not a fic, but I'd like to strongly recommend [[http://www.goodreads.com/book/show/25635541-a-succession-of-bad-days][A Succession of Bad Days]] by Graydon Saunders.
+
+It's Infrastructure Fantasy. Thanks for giving me a new term.
+:PROPERTIES:
+:Author: FeepingCreature
+:Score: 3
+:DateUnix: 1451010970.0
+:DateShort: 2015-Dec-25
+:END:
+
+*** *cough*[[https://drive.google.com/file/d/0B4AoEIJqeFG5UG5od0JKTXlSNjQ/view?usp=sharing][.]]
+:PROPERTIES:
+:Author: traverseda
+:Score: 2
+:DateUnix: 1451032447.0
+:DateShort: 2015-Dec-25
+:END:
+
+
+*** I've started reading the first book (The March North). It's amazing, thanks for the rec!
+:PROPERTIES:
+:Author: Anderkent
+:Score: 2
+:DateUnix: 1451215506.0
+:DateShort: 2015-Dec-27
+:END:
+
+
+*** I'm giving these another try on the back of your recommendation.
+
+I'm finding The March North really hard to follow, and I'm not really sure why. It's very interesting, and it seems to be the sort of book I /should/ like, but for whatever reason I'm struggling to figure out what's going on.
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 1
+:DateUnix: 1451327662.0
+:DateShort: 2015-Dec-28
+:END:
+
+**** Yeah, the writing style is pretty ... distinctive. I don't think that changes significantly.
+:PROPERTIES:
+:Author: FeepingCreature
+:Score: 1
+:DateUnix: 1451328513.0
+:DateShort: 2015-Dec-28
+:END:
+
+
+** They aren't existing canons, but /The Traitor Baru Cormorant/ and /The Laundry Files/ both hit similar notes. If you want to read about vampires using a burndown chart or the Occult Secret Service doing paperclip audits, /The Laundry Files/ is the series for you. /The Traitor Baru Cormorant/ is largely about the intersection between people and economics.
+
+I've also heard that the Star Wars EU novel /Tarkin/ is largely about the construction of the first Death Star, but it's still in the mail, so I don't know whether that's true (or whether it's good).
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1451072218.0
+:DateShort: 2015-Dec-25
+:END:
+
+
+** It's in its own universe, but Superiority by Arthur C Clarke is a similarly lighthearted story about R&D and military inefficiency.
+
+[[http://www.mayofamily.com/RLM/txt_Clarke_Superiority.html]]
+:PROPERTIES:
+:Author: scarcegreengrass
+:Score: 2
+:DateUnix: 1451401956.0
+:DateShort: 2015-Dec-29
+:END:
+
+*** Well that was depressingly predictable.
+:PROPERTIES:
+:Author: FeepingCreature
+:Score: 1
+:DateUnix: 1451629324.0
+:DateShort: 2016-Jan-01
+:END:

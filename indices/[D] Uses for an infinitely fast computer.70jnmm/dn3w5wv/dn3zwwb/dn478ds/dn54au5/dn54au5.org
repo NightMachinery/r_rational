@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: scruiser
+:Score: 3
+:DateUnix: 1505683488.0
+:DateShort: 2017-Sep-18
+:END:
+
+...by definition it may give you the simplest model which accounts for the data points fed into it, true. That not going to help you when your algorithm gives you a perfect fit of all the data inputted into it, and then fails on the first bit of data outside your training set, assuming you actually come up with an implementation of Solomonoff induction. Of course, that is probably the stage you would actually run into problems, because stuff like setting the prior probability on the implementation of your computer program you are measuring the length of probably aren't as trivial as you are making them out to be. Brute forcing it with infinite computing power will probably help, but I'm not sure how much.
+
+In the example of Wikipedia articles... I'm not sure a model of the universe ran forward in time with the data exact specifications of Earth (all the random noise that went into the initial conditions of Earth and evolution) is actually simpler than a large text corpus contains all of Wikipedia in it. "Page not found" seems the most likely outcome.

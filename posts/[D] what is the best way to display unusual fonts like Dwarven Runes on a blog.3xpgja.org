@@ -1,0 +1,208 @@
+#+TITLE: [D] what is the best way to display unusual fonts like Dwarven Runes on a blog?
+
+* [D] what is the best way to display unusual fonts like Dwarven Runes on a blog?
+:PROPERTIES:
+:Author: notmy2ndopinion
+:Score: 0
+:DateUnix: 1450708665.0
+:DateShort: 2015-Dec-21
+:END:
+[removed]
+
+
+** Use characters that are compatible with Unicode. This will ensure that web browsers will be able to see them and ff.net will be able to display them (note that you probably want to test this to make sure ff.net /actually/ supports them). Using a font file just introduces complications that makes it difficult if not impossible to translate onto the web.
+
+[[https://en.wikipedia.org/wiki/Runic_(Unicode_block)][Here's the runic Unicode block.]]
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 5
+:DateUnix: 1450709850.0
+:DateShort: 2015-Dec-21
+:END:
+
+*** You will probably need to provide a web font for them, since this block is not included in common web fonts, or let people know they need to install [[https://en.wikipedia.org/wiki/Runic_%28Unicode_block%29#Fonts][one of these fonts]].
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 3
+:DateUnix: 1450710425.0
+:DateShort: 2015-Dec-21
+:END:
+
+**** Segoe UI comes installed on Windows 7 (and later) and supports runic Unicode.
+
+#+begin_quote
+  ᚠ ᚡ ᚢ ᚣ ᚤ ᚥ ᚦ ᚧ ᚨ ᚩ ᚪ ᚫ ᚬ ᚭ ᚮ ᚯ ᚰ ᚱ ᚲ ᚳ ᚴ ᚵ ᚶ ᚷ ᚸ ᚹ ᚺ ᚻ ᚼ ᚽ ᚾ ᚿ ᛀ ᛁ ᛂ ᛃ ᛄ ᛅ ᛆ ᛇ ᛈ ᛉ ᛊ ᛋ ᛌ ᛍ ᛎ ᛏ ᛐ ᛑ ᛒ ᛓ ᛔ ᛕ ᛖ ᛗ ᛘ ᛙ ᛚ ᛛ ᛜ ᛝ ᛞ ᛟ ᛠ ᛡ ᛢ ᛣ ᛤ ᛥ ᛦ ᛧ ᛨ ᛩ ᛪ ᛫ ᛬ ᛭ ᛮ ᛯ ᛰ
+#+end_quote
+
+That's the full runic alphabet (minus the eight variants) and didn't require any changes on my end to see. I think it might create problems with Mac though.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1450724360.0
+:DateShort: 2015-Dec-21
+:END:
+
+***** For what it's worth, I'm not seeing anything but a bunch of white boxes.
+:PROPERTIES:
+:Author: omgimpwned
+:Score: 4
+:DateUnix: 1450724600.0
+:DateShort: 2015-Dec-21
+:END:
+
+
+***** I am on a chromebook and those characters display properly for me.
+:PROPERTIES:
+:Author: HereticalRants
+:Score: 2
+:DateUnix: 1450732388.0
+:DateShort: 2015-Dec-22
+:END:
+
+
+***** Mac, Android, probably iOS and most Linux distros as well. You're basically locking out mobile completely.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1450729038.0
+:DateShort: 2015-Dec-21
+:END:
+
+****** u/Transfuturist:
+#+begin_quote
+  most Linux distros
+#+end_quote
+
+Works fine here.
+
+Why exactly doesn't everyone support Unicode yet?
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1450736008.0
+:DateShort: 2015-Dec-22
+:END:
+
+******* OK, how are you at Ogham or Cherokee or Shavian? There's dozens of obscure languages only found in CODE2000 or Junicode.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1450743040.0
+:DateShort: 2015-Dec-22
+:END:
+
+******** And? What are you saying is the difficulty? Open fonts?
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1450743540.0
+:DateShort: 2015-Dec-22
+:END:
+
+********* There's always gaps in the coverage. No platform covers all of Unicode by default.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1450743713.0
+:DateShort: 2015-Dec-22
+:END:
+
+********** What do you mean 'platform'? Unicode is a character encoding, the data looks the same here as it does anywhere else. If it isn't displaying, the problem is the fonts and layout system. No /font/ covers all of Unicode, but that's why you have different fonts for different codepoint regions. So what are you saying is the difficulty? Are the fonts available to open source not covering Unicode well? Are they not distributed widely? Do the text rendering systems not support Unicode broadly? Why are these things not already fixed?
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1450743847.0
+:DateShort: 2015-Dec-22
+:END:
+
+*********** u/ArgentStonecutter:
+#+begin_quote
+  What do you mean 'platform'?
+#+end_quote
+
+Windows, OSX, Android, iOS, etcetera.
+
+#+begin_quote
+  If it isn't displaying, the problem is the fonts and layout system.
+#+end_quote
+
+Yes, generally the fonts.
+
+#+begin_quote
+  No font covers all of Unicode, but that's why you have different fonts for different codepoint regions.
+#+end_quote
+
+Which I do, and I keep adding them as I discover gaps in the default distribution on my platform. But I doubt one percent of the user base of any platform does that. They just use what's shipped by default.
+
+#+begin_quote
+  Are they not distributed widely?
+#+end_quote
+
+They're not distributed /by default/.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1450744410.0
+:DateShort: 2015-Dec-22
+:END:
+
+************ u/Transfuturist:
+#+begin_quote
+  They're not distributed by /default./
+#+end_quote
+
+That only makes my question of why it's not already fixed even more stupefied. Are you certain that they aren't? Xubuntu apparently does, because I can't remember the last time I saw a broken character and I don't remember installing extra fonts.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1450744763.0
+:DateShort: 2015-Dec-22
+:END:
+
+************* u/ArgentStonecutter:
+#+begin_quote
+  Are you certain that they aren't?
+#+end_quote
+
+By observation, the default distribution of Mac OS X, Android, and iOS do not include the runic code pages in any of their fonts. Between iOS and Android that's basically /all/ mobile platforms (Blackberry and Windows have negligible market share).
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1450748541.0
+:DateShort: 2015-Dec-22
+:END:
+
+
+******** Dunno about Ogham, but the other two are fine on iOS 9, OS X 10.11, and Windows 10.
+:PROPERTIES:
+:Author: adiabatic
+:Score: 1
+:DateUnix: 1450770649.0
+:DateShort: 2015-Dec-22
+:END:
+
+
+***** I can see those fine on my iPhone (iOS 9) and Mac (OS X 10.11 El Capitan).
+:PROPERTIES:
+:Author: adiabatic
+:Score: 1
+:DateUnix: 1450770514.0
+:DateShort: 2015-Dec-22
+:END:
+
+
+*** Perfect. It doesn't display anything on my iPad which is my primary reader so I think I'll use the Runic unicode and make a graphic upload too.
+:PROPERTIES:
+:Author: notmy2ndopinion
+:Score: 1
+:DateUnix: 1450723947.0
+:DateShort: 2015-Dec-21
+:END:
+
+**** Is your iPad too old for iOS 9? It looks fine here.
+:PROPERTIES:
+:Author: adiabatic
+:Score: 1
+:DateUnix: 1450770724.0
+:DateShort: 2015-Dec-22
+:END:

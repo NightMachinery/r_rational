@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 5
+:DateUnix: 1458317625.0
+:DateShort: 2016-Mar-18
+:END:
+
+Here's a fun waste of time--a (probably horribly-inefficient) program to divide an arbitrary mass of pixels into districts of equal area, while minimizing the average distance from each district's center to that district's constituent pixels.
+
+Cool animations: [[http://i.imgur.com/p3lCOEn.gif][1]] [[http://i.imgur.com/d1h8qpD.gif][2]]\\
+- Explanation: Each color is a separate district, while each white circle represents the average distance from a district's [[https://en.wikipedia.org/wiki/Centroid][center]] to its constituent pixels.\\
+- Source image: [[http://i.imgur.com/EO9Y3pd.gif][A French Holy Roman Empire]] from /[[http://www.reddit.com/r/CrusaderKings][Crusader Kings 2]]/ (more info on that particular country [[http://np.reddit.com/r/paradoxplaza/comments/4anr5x][here]])\\
+Source of idea: [[http://bdistricting.com][1]] [[http://rangevoting.org/SplitLR.html][2]]\\
+- Context: [[https://en.wikipedia.org/wiki/Gerrymandering][Gerrymandering]]\\
+Code: [[http://pastebin.com/EmSqptUx][Pastebin]]\\
+- Language: [[https://processing.org/overview][Processing]] (a.k.a. "Baby's First Java")

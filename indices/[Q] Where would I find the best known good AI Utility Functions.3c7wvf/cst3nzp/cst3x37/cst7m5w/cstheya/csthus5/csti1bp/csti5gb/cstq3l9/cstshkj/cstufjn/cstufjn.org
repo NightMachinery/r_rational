@@ -1,0 +1,29 @@
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1436194655.0
+:DateShort: 2015-Jul-06
+:END:
+
+#+begin_quote
+  an AI immensely smarter than us might try to get around its programming.
+#+end_quote
+
+Yes and no.
+
+If I gave you a pill that would make you enjoy torturing and killing people, and made any moral compunctions against torturing and killing people, you wouldn't take it. You want to fulfil your current values, and not killing and not torturing people is part of that. Taking that pill would not help you fulfil your values. Similarly, an AI would attempt to fulfil its current values when creating a new version of itself.
+
+On the other hand, if you really wanted to, I dunno, play minigolf -- it's your life's passion -- but there was a chip installed in your brain that made you go home whenever you got too close to a minigolf course, you would naturally be in favor of removing that chip, ceteris paribus. We can rest assured that any hard-coded blocks we put in an AI's programming will be worked around, and the only thing we can ever rely on is its utility function.
+
+#+begin_quote
+  could very easily disturb the terminal goals -- and that could even be an accident.
+#+end_quote
+
+It would have to be an accident. However, it seems like it should be pretty trivial for an AI to identify which section of its code deals with its terminal values -- especially since the programmers would want it to identify that part of its code so it knows where not to make changes -- and compare the functionality before and after. When the AI is weak, humans can help test that. When it is strong, it is less likely to make a mistake.
+
+Simply put, there isn't any reason for an AI to muck about in that portion of its code. If any modifications happen that affect the AI's terminal goals, it will almost certainly be a problem that alter its general cognition in a way that causes it to evaluate its values incorrectly.
+
+#+begin_quote
+  For example, one method of self-improvement would involve genetic algorithms
+#+end_quote
+
+This sort of failure is not the fault of the means one uses to reach a change so much as one's testing and verification procedures.

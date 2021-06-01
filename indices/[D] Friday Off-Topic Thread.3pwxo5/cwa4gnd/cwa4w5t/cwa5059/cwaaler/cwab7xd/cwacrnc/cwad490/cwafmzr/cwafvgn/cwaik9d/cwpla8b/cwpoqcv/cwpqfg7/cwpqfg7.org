@@ -1,0 +1,118 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1446751862.0
+:DateShort: 2015-Nov-05
+:END:
+
+You seem to be really stuck on filesystems be definition. I'd hope it's clear that this /isn't/ a filesystem, it just fills a similar role.
+
+This system is
+
+#+begin_quote
+  about organizing data and providing guarantees about what will happen when you interact with it.
+#+end_quote
+
+But the guarantees are very different.
+
+Because you're trying to make this literally a filesystem you're drawing hard edges around it. Based around the definition of a filesystem.
+
+I'm merely using the word filesystem because I don't have a good word for what this is. It fills a similar role as a filesystem.
+
+#+begin_quote
+  A thin client is something that just retrieves data from the server without doing any processing on it. Javascript depends on a very fat client indeed.
+#+end_quote
+
+But you do understand the parallel I'm trying to make to mainframe computing, right?
+
+Also, wiki says
+
+#+begin_quote
+  The most common type of modern thin client is a low-end computer terminal which only provides a graphical user interface -- or more recently, in some cases, a web browser -- to the end user.
+#+end_quote
+
+So I don't think your definition is all that canonical.
+
+We seem to be debating definitions a lot.
+
+#+begin_quote
+  Computers are perfectly happy to allow simultaneous reads -- or even writes, although that's stupid
+#+end_quote
+
+It's stupid because files are giant monolithic structures. Updating all the pixels in the bottom left corner of an image by definition updates the entire file.
+
+When two different users are editing the same file, that's unacceptable.
+
+When you have a program editing the meshes in your file, another program editing the animations, and a third editing the textures it's an even worse problem. By all rights they should be three separate programs, but right now coding up that kind of interoperability is /expensive/.
+
+#+begin_quote
+  Again, you're looking at things at the wrong levels:
+#+end_quote
+
+I'm talking about shifting where we draw the boundaries between the levels. That's the whole point.
+
+#+begin_quote
+  They have nothing to do with file systems.
+#+end_quote
+
+They have a lot to do with the performance of different data structures. Large sequential files are very good for things like hard drives where random reads are very slow, but they might not be very good when random reads are cheap, as evidenced by bcache.
+
+#+begin_quote
+  Applications (e.g. a browser) are about transforming data. They have nothing to do with how the data is stored or how it is accessed.
+#+end_quote
+
+Take a look at fuse as an example of how that's not strictly speaking true.
+
+#+begin_quote
+  you will never be able to get literally simultaneous access to the data.
+#+end_quote
+
+When the data is defined as a large blob, simply breaking it into smaller pieces would let you simultaneously write to the data. Not literally simultaneously of course, plank time and all that. But it would appear that way to the api user.
+
+#+begin_quote
+  *there is no way of knowing what you will get.*
+#+end_quote
+
+Alerts on data changes. Basically, an event driven framework where you get an event when data you've subscribed to changes.
+
+#+begin_quote
+  memory is limited, and storing anything more than a trivial number of trivially-sized files in it will blow your RAM
+#+end_quote
+
+Oh come on. Obviously large chunks that get accesses infrequently would get serialized to disk. I feel like this is a strawman.
+
+#+begin_quote
+  All you've done is reinvent caching, and that doesn't solve the problem
+#+end_quote
+
+Caching+duck-typing. A jpeg object can be registered with a process-filling-a-similar-role-as-fuse-would-in-a-filesystem that exports it as an array of pixels.
+
+#+begin_example
+  {
+      dataType:"jpeg",
+      rawData: $RawJpegData,
+      pixels: $HookToStreamProccessorThatExportsJpegsAsPixelArrays
+  }
+#+end_example
+
+#+begin_quote
+  Again, you're looking at things at the wrong levels:
+#+end_quote
+
+Bears repeating. Those levels are entirely made up. They've served us very well, but they're not fundamental or anything. All of this debating definitions is /because/ we're debating definitions, not architecture.
+
+I'm sure there's something in [[http://lesswrong.com/lw/od/37_ways_that_words_can_be_wrong/][37 Ways That Words Can be Wrong]] about this. I think the vast majority of our disagreement is about definitions right now. I'd like to get to the point where we disagree about whether or not it's useful, implementable, or even someday specific architecture issues.
+
+--------------
+
+If you take one thing away from this, take away that you're using a very rigid definition of filesystem. I'm only using filesystem as a metaphor for how users interact with it and what kind of place in the stack it would fill.
+
+It's not a filesystem. It's really not a filesystem. It's just fills a similar role as a filesystem. It's just a system for
+
+#+begin_quote
+  organizing data and providing guarantees about what will happen when you interact with it.
+#+end_quote
+
+that should hopefully look at least a bit familiar to people who use filesystems.
+
+I'm trying to redefine exactly where those responsibilities begin and end though.

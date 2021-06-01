@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: Jello_Raptor
+:Score: 2
+:DateUnix: 1495479613.0
+:DateShort: 2017-May-22
+:END:
+
+The issue here is mostly precision of semantics and correctness of conversion. Many languages, especially older ones, don't have a precise formal semantics that tools can work with, or use system quirks that are incredibly difficult to model. Even then we're seeing some progress with formally verified compilers and the like.
+
+If you have correctness, then the problem becomes performance, and things like linear type systems can help with those when they start becoming more prevalent.

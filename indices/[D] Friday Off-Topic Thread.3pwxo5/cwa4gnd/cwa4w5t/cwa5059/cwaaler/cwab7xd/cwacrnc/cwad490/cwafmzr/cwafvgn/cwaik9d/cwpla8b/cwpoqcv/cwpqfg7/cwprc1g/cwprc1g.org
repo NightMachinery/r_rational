@@ -1,0 +1,30 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1446753093.0
+:DateShort: 2015-Nov-05
+:END:
+
+#+begin_quote
+  I'm only using filesystem as a metaphor for how users interact with it and what kind of place in the stack it would fill.
+#+end_quote
+
+You haven't previously /said/ that you weren't actually talking about file systems, or that you were only referencing them metaphorically. Since you were talking about filesystems, I assumed you were actually talking about...you know, /filesystems/.
+
+Since you're shifting the ground to something else, then I'm happy to discuss it with you.
+
+Let's set some ground rules: are we talking about how data is organized on a physical storage mechanism (i.e., a filesystem), or are we talking about how data is organized in RAM (a cache)?
+
+If all we're talking about is caching then sure, there's lots of ways to improve on "giant monolithic stream of bytes in RAM", and many of those ways already exist. If we're talking about organizing data on a physical media, then what sort of physical media? The vast majority of active data in the world is still stored on HDDs, so you really need your system to be performant on an HDD. If your new system is intended only to be run on SSDs or some other media, you need to specify that.
+
+#+begin_quote
+  When the data is defined as a large blob, simply breaking it into smaller pieces would let you simultaneously write to the data. Not literally simultaneously of course, plank time and all that. But it would appear that way to the api user.
+#+end_quote
+
+No, distributing the data in small chunks will not help. Sure, if you're storing your data in what is effectively a linked list then multiple people can access different chunks of it simultaneously as long as they don't need to care about the whole file. Reads vastly outnumber writes in most operations, though, and the structure you're talking about means that retrieving the entire file will be enormously slower, because you'll need to spin the platters multiple times. This is why disks actually have built-in systems for defragging themelves as they work.
+
+#+begin_quote
+  I'm talking about shifting where we draw the boundaries between the levels. That's the whole point.
+#+end_quote
+
+Okay, that sounds great. In practical terms, what does it mean? What does your new storage => manipulation stack look like?

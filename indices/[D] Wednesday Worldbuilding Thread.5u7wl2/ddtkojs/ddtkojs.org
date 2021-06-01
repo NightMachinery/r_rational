@@ -1,0 +1,30 @@
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 3
+:DateUnix: 1487258543.0
+:DateShort: 2017-Feb-16
+:END:
+
+I've been nailing down some of the rules for blood magic in my story. I'm trying to work out values, but they're heavily subject to tweaking if I discover degenerate strategies at this stage.
+
+Brief summary of the [[https://www.reddit.com/r/rational/comments/5rfy1z/d_wednesday_worldbuilding_thread/dd77qvk/][previous comment]]: in a society analogous to early Renaissance Europe, blood rapidly evaporates when exposed to the atmosphere. People on the verge of death by exsanguination sometimes become Blood Mages, compelled by instinct to drain a nearby victim of their blood (sometimes fatally, if blood types don't match). This magic is powered by, and acts upon, blood.
+
+In story I probably won't go into nearly this much detail, except where it is needed to explain why a strategy doesn't work or what research a character is doing. This is mostly for anybody like me who nerds out on hard numbers in magic systems, and to force me to explain it (the "How would I make somebody else understand my intent?" approach is useful for self-correction in general).
+
+You can find the spreadsheet I'm using to get a feel for the numbers [[https://docs.google.com/spreadsheets/d/1GzrhIsCxLpJRLpqELcD0id6LZoH4vvxTZ1p4xeMwUDk/edit?usp=sharing][here]].
+
+1.  The only blood that is subject to or affected by any of these is human blood. Red blood cells are what counts here, but other components will be involved if part of a mixture with red blood cells (i.e. pure plasma is not affected).
+2.  An adult human has about 5 litres of blood, and replenishes about 13 millilitres a day (apparently if you donate 450 mL of blood, it takes 4-6 weeks to replenish the red blood cells).
+3.  Blood magic costs blood from inside your body (uniformly). It doesn't have to be your blood, but you can't expressly target foreign blood. You also can't dilute blood to cheat on the costs; it counts based on red blood cells, which make up 45% +- 7% of blood in men and 42% +- 5% in women.
+4.  A Blood Mage (BM) can exert control upon blood inside their body or in direct contact with blood inside their body (contiguous haemokinesis). Outside the body, this requires a radius of about 1 millimetre per metre of length (i.e. if you want to affect something 10 metres away with a rope of blood, the whole rope needs a minimum radius of 10 mm, which would have a volume of 3.14 litres---about 2/3 of a human's blood capacity). This control costs blood at a rate I haven't decided upon.
+5.  Control resolution gets linearly worse with distance. Same ratio as above; you can't reliably affect an area smaller than 1 mm radius per metre distance from you, except to agglomerate it.
+6.  You /can/ directly affect an enemy's blood, assuming you have blood to blood contact (skin would count due to the proximity of capillaries) and you counter any blood they are spending on defence with your own expenditure. As you can imagine, this costs a lot to do at any non-trivial distance (due to the volume of "rope" required).
+7.  Blood exposed to the atmosphere evaporates quickly, at a rate of 1 centimetre per second per unit surface area. A 10 metre deep swimming pool of blood suddenly uncovered would evaporate in about 16.7 minutes, which would be pretty spectacular.
+8.  The above evaporation can be deferred---but not eliminated---by sacrificing 1 thousandth of the total debt per second. Debt accumulates, so if you keep deferring you'll end up needing to sacrifice a huge amount.
+9.  If you sacrifice a fraction of the needed amount then it suppresses a corresponding fraction of the evaporation. If the unsuppressed fraction is smaller than the maximum sacrifice rate, it makes up the difference from all of your blood regardless of exposure to the atmosphere ("your blood" refers to blood that you are actively controlling, preferentially outside the body). I haven't decided on the rate of this forced sacrifice. If you think that
+10. Note that it's possible to accumulate so much debt that you're pretty much guaranteed to die unless you get your hands on a lot of blood very quickly.
+11. Arbitrarily powerful healing is possible, but it's difficult to more beyond the instinctive BM ability to close external wounds and manipulate the circulatory system. You need knowledge (lacking in the setting) and familiarity (requires dedicated practice).
+12. BMs can sense blood up to a certain distance away, unless it is consciously shielded by another BM. That distance and the information gained from this sense can be increased by practice up to a point (say 100m away for now, and 99% of BMs won't reach even half that). The information starts vague ("I can sense something") and gradually becomes more specific. In rough order (subject to specific direction of training), you gain knowledge of direction, distance, quantity, spatial configuration, relative motion, composition, and blood type (see 13). This is pretty clearly broken as heck against non-BMs.
+13. Blood type sense is more synaesthetic than explicit. Something like sharp [A] vs. blunt [not A], rough [B] vs. smooth [not B], hard [+] vs. soft [not +]. Thus AB+ would be sharp, rough, and hard, while O- would be blunt, smooth, and soft.
+
+I'd be interested to know if (a) anybody read this poorly formatted wall of text, and (b) if you've got any ideas for how to exploit this. So far my best ideas are "Launch projectiles using your own blood" and "Levitation or at least slowfall".

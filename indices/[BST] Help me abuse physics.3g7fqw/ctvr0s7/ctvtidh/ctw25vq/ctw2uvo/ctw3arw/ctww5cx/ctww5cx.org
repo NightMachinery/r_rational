@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: General_Urist
+:Score: 1
+:DateUnix: 1439131160.0
+:DateShort: 2015-Aug-09
+:END:
+
+Your math is correct, but one thing that needs to be added:
+
+while the point at which speed=efficiency is the point where you begin to violate conservation of energy, the "break-even point", assuming you were accelerating purely using the drive from 0 m/s, is actually at speed=2Xefficiency.
+
+Here's a way to visualize it graphically. You have a vehicle, of mass /m/ with a reactionless drive of efficiency /E/, currently at rest. (v=0). You then apply constant power /P/ to the reactionless drive for an indefinite amount of time.
+
+While doing this, plot a graph (energy over time) of both the total energy consumed by the drive and the kinetic energy of the vehicle.
+
+The "energy consumed" graph will be linear (y=/P/x, where x is in seconds). However, as kinetic energy varies with the /square/ of speed, and speed is increasing at constant rate (assuming purely Newtonian physics), the "kinetic energy" graph will be quadratic. (I can't be bothered to shoehorn the full equation into Reddit formatting, sorry)
+
+at any time value, the derivative of the 1st line represents "energy in", while the derivative of the second line is "energy out". It is true that v=/E/ is the point where the graphs of the two derivatives intersect and efficiency exceeds 100%. However, at this point the "kinetic energy" graph is at only 1/2 the value of the "energy consumed" graph.
+
+The actual energy vs time graphs only intersect later on, when v=2/E/. *This is important if you actually want to build a legitimate perpetual-motion power-source and not just a science project.*

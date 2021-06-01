@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: redstonerodent
+:Score: 1
+:DateUnix: 1426798319.0
+:DateShort: 2015-Mar-20
+:END:
+
+If your formal system has the rule of inference "If x is a theorem and x->y is a theorem, then y is a theorem", you'll have to add more theorems. Achilles thinks "(x&(x->y))->y" should be a rule of inference, but the Tortoise instead includes each instantiation of it as an axiom. If he were willing to accept modus ponens, having as axioms A and B immediately proves the theorem Z.

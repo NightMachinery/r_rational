@@ -1,0 +1,42 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 1
+:DateUnix: 1506190068.0
+:DateShort: 2017-Sep-23
+:END:
+
+#+begin_quote
+  Have you had a look at package managers? If you're worrying about dependency checking and loading priorities, you're basically making a PM. Have you looked at pacman / npm / yarn / etc?
+#+end_quote
+
+I had not thought to do that. That's a good idea; maybe I'll poke around if I can find one with a license that I could copy from.
+
+#+begin_quote
+  One common PM feature that seems to be lacking from your design is optional dependencies.
+#+end_quote
+
+I had never heard of this before. After reading up on it, I can see why real world programs use it (maybe you support one of five database programs but only need one and who wants 4 redundant packages taking up space and bloating download times?), but I'm waffling on whether or not it would be useful for mods. Typically I imagine it would be individual classes that mods have optional dependencies for, such as a BetterPotions mod that doesn't care /how/ Potion is defined so long as it /is/. And if there's a whole bunch of those then, well, just mark the mod holding it as a dependency.
+
+I'm currently in the middle of implementing the code transforms via attribute tagging that I've been meaning to also do for a while, and I think this is actually a good fit for that: making a modification to Potion and then marking it as =Extension=, which is to say only load it if Potion has already been defined somewhere and any number of mods might have provided it.
+
+#+begin_quote
+  In addition to yak-shaving, it sounds like you're falling prey to YAGNI, that is, premature feature-creeping. Also, inner platform effect.
+#+end_quote
+
+I feel like this is almost inevitable with a modding framework. If, somehow, this gets popular, then the mod framework is going to be stuck in whatever form it was in when it went viral, else you strangle the golden goose. Look at minecraft--for years they've been claiming they were going to overhaul their modding engine, and for years it just hasn't happened, due in no small part to not wanting to break literally every mod. I can clearly see this as one of those crux moments that I'd look back and wish I'd spent a little more time perfecting it and, well, poof--wish granted.
+
+I also try to avoid inventing new concepts by looking at other successful modding frameworks and copying what works.
+
+#+begin_quote
+  Are you sure you're going to need all those rules? Direct dependencies I can get, irreconcilable conflicts I can sort of see (if you have a very popular mod, other modders might want to say they're incompatible with it), but priority loading seems a bit like over-engineering.
+
+  ...
+
+  Then again, maybe I'm plain wrong; how often is the "load before, load after" system useful in a Supreme Commander mod?
+#+end_quote
+
+In my limited experience modding supcom, it's common in some contexts and completely unused in others. For instance, if you're making a mod that introduces a new faction or other brand new content, you probably don't care much about the existence of other mods, as you point out. However, if you're writing a mod that overhauls, say, keybinding (as I did) or another system that everything has their fingers in, then you absolutely need to wait for other mods to get their content in before you can mutate it. In my case I had to alter the master dictionary of keybinding commands, and this meant waiting for certain mods to do /their/ mutations first so they wouldn't just overwrite my changes.
+
+Another use is modding mods; since everything is placed in the same master game file directory at the end of the process, it's possible to make tweaks to other people's mods without, y'know, forking them. "I adore this magic mod, but fireball is just flat out OP...now I've got MagicFixMod that alters the values of things in MagicMod", and this obviously must run afterwards, or it gets overwritten. This also enables the use of things like mod libraries that don't add any user content but provide APIs for modders to use to help ease certain tasks; you wait for it to get its hooks into everything and /then/ start doing your thing.
+
+Anyhoo, I don't claim to be immune to over-engineering (the stats system I particular is looking like it's going to be like 75% wasted) but the mod system /has/ to be done right the first time. I'm definitely aware of the problem, tho, and I try to combat it where it actually results in bloat.

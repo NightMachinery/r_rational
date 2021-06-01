@@ -1,0 +1,60 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 7
+:DateUnix: 1509128598.0
+:DateShort: 2017-Oct-27
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Another week with scant code progress. I recently had decided that I was going to attempt to go to bed by 11 PM each night (as opposed to 1:30-2 AM) and I think I'm discovering that I used 9-11 to unwind and 11-1ish to actually get stuff done.  This is a bit frustrating, as I don't /like/ not making progress, but on the other hand I /am/ somewhat concerned about the long-term ramifications of only getting 5-6 hours of sleep a night.  It's an annoying balance to find.
+
+Maybe I should try something like two weeks at 11, two weeks when I'm tired.  It's not the best system, but on the other hand it's not like I'm getting oodles of sleep regardless due to having a one-year-old.  Maybe I should just power through and re-evaluate once I'm at a point that sleeping in on Saturdays is an option again.
+
+--------------
+
+There was /one/ bit of development, although I was only partially involved.  Thanks to the efforts of [[/u/gbear605]], XGEF can now be built and thus developed using VS2017 on macOS.  (It could already be ran using mono on both macOS and linux, but I had never attempted to /build/ on anything other than Windows).  Kudos to him!  
+
+--------------
+
+Regardless of code progress, there was /oodles/ of design discussion, much of which came as a result of the responses to [[https://www.reddit.com/r/rational/comments/77mobw/d_friday_offtopic_thread/don7arq][last week's topic of pokeball internal capture mechanics]], which actually went on a lot longer than just Friday.  The current solution I'm leaning towards is detailed in that thread, but TL;DR humans should have a small Psychic typing (~10%) that unlike most Psychic types which have it manifest in a separate organ, have it interspersed throughout the white matter of the brain.  Thus, most Psychic types incur a weak penalty to their power when captured and thus exposed to the brief distortion energy of the portal tech, but humans instead have that minor scrambling effect applied to the brain, which, well, isn't good.  
+
+It's a bit handwavey (what isn't when it comes to pokemon) but as a system it can at least be interacted with and have its boundaries poked, which is my primary concern for something as fundamental as pokeballs.
+
+I also brought up in that thread the differences in the scientific tradition of the world, basically that it would nearly of necessity be based more on mad science than science: inventors, not theorists.  A more recent era of stability might permit science to grow and flourish, but before then it's more important that one figure out how to stop the 1000 rampaging monsters around you rather than figuring out the intricacies of /why/ the tools you're using to do this work.
+
+--------------
+
+The topic of individual pokemon resource use came up; I'll just quote myself on that one:
+
+#+begin_quote
+  We've actually taken a hybrid approach: having the resource available grants bonuses, but if the resource is unavailable then it is created ex nihilo at greater cost of the pokemon's endurance.  This means that Charizard has a bigger area of effect and burn chance on flamethrower if it has oil to spare, Blastoise is able to hydro pump practically indefinitely and at greater range if surrounded by water, and Venusaur is able to regularly replenish leech seeds/razor leaves if in sufficient sunlight.  However, all of them can still use those moves if they are out of oil/water/sunlight, they'll just tire out much faster and have comparatively weaker effects.  I think this is a necessary realism compromise due to both fun and tactical reasons, but it doesn't bother me too much.
+
+  I do draw the line at producing boulders out of thin air, however.  In general I'm okay with some moves only being practical when resources are available, such as Surf having such a maddeningly high endurance cost in the absence of water that it just isn't feasible for mere mortals.  This also grants a very simple signal for extremely powerful pokemon ("Shit!  Where did all that lava even /come/ from it didn't even break a /sweat/ oh /arceus/ we're all going to die aren't we").
+#+end_quote
+
+--------------
+
+The Trouble with Typing was breached once again, so types have been rearranged for, mmm, maybe the fourth or fifth time.  This time around the major insights that built upon the previous offensive/defensive typing split was that A: not all types have a meaningful offensive profile that is affected by the substance that the target is made of, and B: not all type defensive profiles can be reduced to a single archetype.  Ice pokemon, for instance, might be blubberous, or they might be literally made partially of ice; these will not both react to all incoming attacks in the same way and so are (or should be) two different defense profiles.
+
+[[https://i.imgur.com/M4vHoYx.png][Here is the current iteration of the typing chart]].  Note as usual that numbers are relative and not by any means final.  
+
+One thing to keep in mind while looking at this chart is that it's an attempt to communicate damage multipliers in cases where /all factors are otherwise equal/.  That means same stats, a solid hit that did not miss, and so on.  Many of the type interactions in canon are an attempt to abstract away dodge chance, damage application, and range, but we have stats and/or mechanics for all those things, so it is no longer necessary to keep them abstracted to a damage multiplier.  
+
+Basically, the type chart should, as much as possible, reduce down to “I performed a move of X type on a Normal type and then again on a Y type of equal stats, and this is the difference in pure, raw damage incurred”.  Many of the traditional justifications for type interactions (at least, the ones that make sense in the first place and aren't otherwise an abstraction of a non-damage concept) actually boil down to a special interaction with a /status/ applied by that type instead.  
+
+A Fire type, for instance, might not necessarily be hurt by a fire hose any more than an average pokemon would.  After all, the flames coming out of it aren't (too) magical, it's just for the most part ignited oil secreted from the skin.  It's still secreting the oil, putting it out doesn't /inherently/ affect it.  However, (we could claim), perhaps a Fire pokemon /does/ need to run at a higher temperature for the various chemical whatsits to work, so in the /aftermath/ of the water hit, it is going to burn fuel to shake off the temperature hit and get back up to high heat.  Described this way, it sounds more like the Fire pokemon is shaking off a Soaked status effect, rather than interacting with a Water attack directly.  
+
+This indicates to me that (at /least/) one more pass on this typing setup is going to need to be done to figure out what common statuses are inflicted, and ensure that damage multipliers are not taking those into account.  (The Fire/Water example, for instance, is not currently reflected accurately).  
+
+Oh, and one more slight tangent related to types: each percentage of a given defensive type (which we have been referring to as Substance to avoid conflating the two too much) is going to have stat bonuses/penalties associated with them, which will make up for much of the type interactions that might appear at first glance to be missing from this chart.  Steel Substance, for instance, would grant, say, 20 DEF + 2% DEF per percentage point of Steel that the pokemon's Substance is made of.  
+
+--------------
+
+Anyhoo.  Hopefully I can avoid playing Tooth and Tail too much this weekend and push forward on the Unit/Species definitions that are currently next on my to-do list. (That game is too damn good, I'd highly recommend it as it's on sale at the moment).  
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

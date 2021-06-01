@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1453422442.0
+:DateShort: 2016-Jan-22
+:END:
+
+I've tested with Firefox, Chrome, and IE on both Windows and Mac OSX 10.11, as well as Chrome for Android and iPhone and don't see anything wrong. My /best guess/ is that the actual CSS file isn't loading in right for you for some reason. You can tell whether you have the subreddit's custom styling by whether the title in the upper left corner of the page says "Rational" (the default) or "Rational Fiction" (what our CSS changes it to). I don't know what level the CSS would be failing to load at though. If you pop open the Developer Tools on Chrome and navigate to Sources you should be able to see the actual CSS file there under a.thumbs.redditmedia.com. But beyond that I have no idea.

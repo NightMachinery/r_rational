@@ -1,0 +1,72 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 2
+:DateUnix: 1473545486.0
+:DateShort: 2016-Sep-11
+:END:
+
+I'm definitely planning on adding BST as one of the graphs that one can look at while making a pokemon, but I like the idea of straight-up defining the BST, possibly even instead of the EXP curve.
+
+#+begin_quote
+  Evolutions should probably take longer, especially if you're extending the level cap or doing away with it altogether.
+#+end_quote
+
+Agreed. I actually have this idea in my head of treating evolutions the way that Fire Emblem treats class upgrades, so when a pokemon evolves it returns to level 1, but retains all the stats it had before it evolved as the new baseline. In Fire Emblem you could start upgrading at level 10, but you could instead wait until the cap at 20, and your characters that waited would of course have 10 level's worth of stats over the more impatient characters.
+
+This would result in a /de facto/ delay of most evolutions rather than an enforced one, but I kind of like using incentives rather than invisible walls. It may not be feasible, but either way evolutions will need to be more important of a milestone.
+
+#+begin_quote
+  Stones should be a held item on a pokemon for awhile before they evolve.
+#+end_quote
+
+My idea was actually dosages, so it requires X stones to get a Raichu but only Y for Jolteon, or something. If they're difficult to get, it could even be made more common of a method than canon, requiring the player to decide between evolving the one powerhouse that requires 20, or evolving several less powerful pokemon instead.
+
+#+begin_quote
+  I'd also add a level requirement to pokemon that normally only evolve by stones or trading, if level is meant to be at least somewhat correlated with age.
+#+end_quote
+
+Yes, trading evolutions will be done away with, and minimum level requirements only makes sense, regardless of the evolution method used. The tool currently just has the canon evolution types because I needed to put something in the box, but that will get revamped when the design's been hammered out some more.
+
+#+begin_quote
+  (Alternatively, just include age as a factor too, and have pokemon age faster through battle.)
+#+end_quote
+
+[[/u/UltraRedSpectrum]] mentioned having Metapod/Kakuna evolve through time and not leveling, and age is honestly probably the way to abstract that. I love the idea--having bug pokemon hit the "age" cap faster was my initial brainstorm concept, but the only problem I have with it is I abhor grinding, and this seems like the sort of thing that leads to that. Do I leave my game running so everyone ages? Is it based on steps instead?
+
+I think you're right in that leveling needs to somehow correlate with age, but I'm not sure what the answer is yet.
+
+#+begin_quote
+  Related, experience should be slowly gained passively while pokemon are outside their pokeballs, if there's the ability to travel in the overworld and have a pokemon out with you.
+#+end_quote
+
+Excellent idea.
+
+#+begin_quote
+  Pokemon should gain EV stats through training at a fairly significant rate, maybe only through training, in order to differentiate getting physically stronger through combat (which comes from EXP) and becoming a better fighter through discipline.
+#+end_quote
+
+This is the basic idea. In my head EVs are even the source of the majority of a pokemon's strength, dwarfing base stats and rivalling EXP gain. This is one of those things that I'll just have to fiddle with it as I go, as there's only so much a spreadsheet can help in designing this until I have a working prototype in my hands.
+
+#+begin_quote
+  Are pokemon in your world sapient? Not sure how much you're basing it off my story, but in either case, I headcanon Intelligence as an extra stat that affects things like training speed, amount of moves a pokemon can learn, and unruliness. If it's not too much effort, might be an interesting stat to add.
+#+end_quote
+
+Aha! I was trying to identify how I would differentiate the max number of moves between pokemon, and this is probably the way to go. I have an Experience stat already that is more of an IV than a base stat, but adding Intelligence (or perhaps Skill or something) as a stat isn't hard at all.
+
+Your fic is pretty much the template I'm going after for the world, with a generous helping of Game of Champions. Who knows how much of it will be ever implemented or brought up, but it's the underlying current.
+
+#+begin_quote
+  Environment should matter for which pokemon are able to be used. No fish pokemon on land. Only aquatic pokemon while underwater, if diving is in the game. Maybe some exceptions.
+#+end_quote
+
+[[http://i.imgur.com/ljXQ4Cc.jpg]]
+
+Actually, pretty much /every/ realism issue brought up in this album will be addressed in some way : [[http://imgur.com/a/KvwYY]]
+
+#+begin_quote
+  Size of pokemon. You can't summon a wailord for an indoor battle. You can summon a wailord in a big enough space and just have it be stationary during the battle, but all moves against it should automatically have 100% accuracy.
+#+end_quote
+
+Hell, I'm not even sure I'll ever implement Wailord just for the sheer amount of problems something that large brings to the table. But size will be something that is tracked and enforced; your pokemon will take up X number of hexes depending on its size, and if there's not enough hexes in an area to support your pokemon, your pokeball errors out and refuses to open.
+
+Thanks for the feedback and idea dump!

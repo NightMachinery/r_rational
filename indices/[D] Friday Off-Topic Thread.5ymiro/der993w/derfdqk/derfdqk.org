@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 5
+:DateUnix: 1489168249.0
+:DateShort: 2017-Mar-10
+:END:
+
+Also, I had a "holy shit" moment while working on the chunk loading/unloading. The gif (and the demo) makes it look like all sorts of chunks are coming in and out seemingly at random, but it /is/ following a pattern.
+
+See, I already have code in place that maps coordinates: if you try to request coordinate [1001, 1002] and the grid is only 100 x 100, then my code will automatically transpose your request to [1, 2]. This was in anticipation of getting wrapping working, but I didn't really have a use case for it.
+
+A day later, I'm getting the chunks to load and unload and it looks like it's just throwing up garbage and hoping it works, but after some experimentation I realized that it's loading the right chunks, they're just not in the right place! The loader is expecting such-and-such a coordinate off to the right, which my code dutifully translates to the left, which then gets loaded, a full phase out of position.
+
+Some pictures to illustrate:
+
+[[http://i.imgur.com/cfZAXvQ.png]]
+
+[[http://i.imgur.com/xi53M9h.png]]

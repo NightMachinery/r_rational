@@ -1,0 +1,34 @@
+:PROPERTIES:
+:Author: Sonderjye
+:Score: 2
+:DateUnix: 1520342119.0
+:DateShort: 2018-Mar-06
+:END:
+
+My analysis of the 4 cases and their metrics. Feel free to discard this, use it as inspiration, ask questions, or give feedback.
+
+Metrics:
+
+- Justice, J: Some cases are more just than others.
+- Network Punishment, NP: In either case someone will be derived parts of their social network or otherwise punished by their network.
+- Victim Damage, VD: In either case the victim will suffer personal damage and possibly trauma.
+- Offender Damage, OD: In some cases the offender will suffer.
+- Change in number of Frue Rapports, TR: In some cases we will expect the the number of people comming forward with similar experience to increase.
+- Change in number of False Reports, FR: In some cases we will expect an increase in false reports.
+
+--------------
+
+My scoring of the metric
+
+- Justice(J): BT>NF>0>BF>NT
+- Network Punishment(NP): BT=BF>NT>NF>0
+- Victim Damage(VD): NT>BT>BF>NF>0
+- Offender Damage(OD): BT>NF>BF=NT=0.
+- False Reports(FR): BF>BT>0>NT>NF
+- True Reports(TR): BT>BF>0>NF>NT
+
+--------------
+
+We could assume equal utility for all metrics, i.e. scoring each case in all metric by 1-4 and summing. However not all metrics are of equal importance, for instance Victim Damage is much more important than Offender Damage. Ideally a systematic approach would include guidelines as to how to choose relative importance by a numeric value, as done in Analytical Hierarchical Process.
+
+Another approach is a doing a holistic approach of multiplying the probability in on each of the 4 cases and making a holistic assessment of each's case desirability. This approach is vulnerable to the beforementioned biases and also suffers from probability insensitivity/prototyping.

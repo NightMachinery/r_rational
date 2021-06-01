@@ -1,0 +1,9 @@
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1466447851.0
+:DateShort: 2016-Jun-20
+:END:
+
+It actually sounds (for once) like probabilistic programming is right for you! I recommend Venture (which has horrific internals but allows powerful customization of inference strategies), Figaro (probabilistic programming in Scala with the ability to attach to JVM libraries), or monad-bayes (if you're a Haskell fanatic).
+
+[[http://probcomp.csail.mit.edu/venture/release-0.5/tutorial/][Here's a VentureScript tutorial to get you started.]]

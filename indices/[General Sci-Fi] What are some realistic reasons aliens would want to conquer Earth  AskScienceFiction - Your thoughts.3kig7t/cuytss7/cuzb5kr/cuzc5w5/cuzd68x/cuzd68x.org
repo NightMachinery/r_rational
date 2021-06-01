@@ -1,0 +1,41 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1442092918.0
+:DateShort: 2015-Sep-13
+:END:
+
+#+begin_quote
+  Your scenario assumes we have a monolithic black box, not something we can pull apart and analyze, pausing every half-second and running diagnostics, for example.
+#+end_quote
+
+It's not /my/ scenario, it's the standard Bostrom-Yudkowsky scenario. I don't really /believe/ that scenario, but that's a problem of "medical doctor watches medical drama and finds it unrealistic".
+
+#+begin_quote
+  First of all, lots of information needs to be integrated in the AI's knowledge base to be able to do much of anything, let alone anything obviously unFriendly, so I imagine it would take a period of ten minutes or so (with an internet connection or local info corpus) before it would be able to do anything truly dangerous, and by then it would have had the opportunity to be briefed by its human developers.
+#+end_quote
+
+I think you have quite a lot of symbol-grounding learning to do before 10 minutes' access to the internet becomes dangerous!
+
+#+begin_quote
+  I find it somewhat strange that MIRI hasn't looked into more technical solutions, tools, and protocols to increase safety of practical design and testing, on further consideration. I suppose that might be more of a near-AI problem...
+#+end_quote
+
+Steelmanning: they have very limited staff, and they are trying to address problems other researchers have no incentive to address, these being the /specific/ problems of self-improving Singularity machines. In the case that such designs are /totally/ impossible, which I consider unlikely, then their efforts will be completely wasted. The case that they didn't pay enough attention to more mainstream, "Near-AI"-flavored research, or to seemingly obscure but genuinely closely related fields of research, to extend and apply it to self-improving Singularity machines, is currently their most likely failure mode. Their next-most likely failure mode is one they're already aware of: build a self-improving Singularity machine that isn't /quite/ the Right Thing, with facepalmingly horrendous results on the level of, "He wondered why he'd been such an idiot, and then died."
+
+Also, their desired success mode is to /solve the technical problems and construct the Friendly self-improving Singularity machine first/. Given their belief in self-improving UFAI seemingly the instant someone manages "AGI", they think they're working on very hard problems against the clock. Remember, when they heard [[/u/EliezerYudkowsky]]'s brother had died, their reaction was, "We will have to work faster."
+
+I think that rushing against the clock to build a self-improving Singularity machine is probably going to lead to mistakes-made-in-haste, and so we should be "leisurely" enough to wait until all necessary technical results are damn well settled before trying anything of the sort. On the optimistic side, I also think that instead of the development of AI being "decades of failure, discontinuously followed by one rocketing success", it is going more like, "decades of failure, followed by decades of small but increasingly sophisticated successes that continuously grow to address incrementally larger problems, sprinkled with a few discontinuously important technical results on the Very Hard Problems (the kinds of things that everyone ignores because 'we all know it's impossible'), until eventually we look /backwards/ and retrospectively realize how far we've come by taking our minds off the sci-fi fun stuff and putting them towards solving real problems."
+
+Oh, and the Outside Context Problem that I actually consider somewhat likely is: self-improving Singularity machines are logically possible, but computationally so intractable that there is never any kind of Singularity or technological take-off whatsoever, because exponential improvement in anything beyond "low-hanging fruit" ends up requiring exponential resource inputs.
+
+#+begin_quote
+  Even in a neural-based design, the mind would probably be a network of NNs, which we could test in parts, both forwards and in reverse. That might even make it possible to find extreme and edge cases of its action selection processes, query closest text descriptions of its own networks and nodes (requiring strong reflection capabilities, however), all sorts of cool shit.
+#+end_quote
+
+Yes, though of course, [[http://arxiv.org/abs/1412.1897][deep neural networks are easily fooled]]. I was just trying to explain to someone this week how the discriminative/generative distinction in ML is actually very important for guaranteeing that our learning machines do what we really want.
+
+#+begin_quote
+  Man, I'm turning into an NN groupie. It would be so much cleaner if we had the same structural and fuzzy capabilities for source metaprogramming. It's not as though a proper adaptive metanetwork for NNs has been put together, either.
+#+end_quote
+
+Hey, the world needs its groupies. You do neural networks and I do probabilistic programming, and eventually something will actually work.

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Veedrac
+:Score: 2
+:DateUnix: 1483232005.0
+:DateShort: 2017-Jan-01
+:END:
+
+#+begin_quote
+  For sanity's sake, let's say you'll get at most a dozen simultaneous shadows at once
+#+end_quote
+
+Is this immutable? If I'm able to distill things down more, such that I only need to know a little about each shadow, would it be possible to use more? One particular idea would be to have the shadows all do /almost/ the same thing, but at slightly different offsets - I would then only care about the extremum of the union of the shadows, rather than each individually.

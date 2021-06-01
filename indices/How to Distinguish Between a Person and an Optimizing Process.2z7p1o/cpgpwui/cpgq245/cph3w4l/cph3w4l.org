@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 2
+:DateUnix: 1426548865.0
+:DateShort: 2015-Mar-17
+:END:
+
+This is somewhat complicated by a distinction in what constitutes an "optimisation process". [[/u/chaosmosis]] distinguishes local optimisers (eg evolution), but lumps more complex algorithms in with people.
+
+For example: assume a two-dimensional search space with too many points to sample them all, and an unknown utility function over the dimensions. Evolution would pick a random point, then sample adjacent cells and move to the maximal cell (then repeat). A person might systematically sample the space, then try to understand the function and then focus on sampling high-utility areas.
+
+A better dumb optimising algorithm (dumb as in, "I could write this" and "not domain-specific") would be to start sampling in a fractal pattern, and alternate a new fractal-point with local searches from points-above-mean according their proportional goodness.
+
+A /smart/ optimising algorithm would have a superhuman ability to reason about the underlying function, and look like a hyper-competent human (or one with inside information).

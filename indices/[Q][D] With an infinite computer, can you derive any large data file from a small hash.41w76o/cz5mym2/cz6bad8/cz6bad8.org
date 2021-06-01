@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: Sparkwitch
+:Score: 9
+:DateUnix: 1453365669.0
+:DateShort: 2016-Jan-21
+:END:
+
+An excellent lens through which to view the original question.
+
+This seems intimately related to [[https://en.wikipedia.org/wiki/Infinite_monkey_theorem][infinite monkeys]] and the [[https://en.wikipedia.org/wiki/The_Library_of_Babel][Library of Babel]]... but I want to focus on the [[https://en.wikipedia.org/wiki/Noisy-channel_coding_theorem][Shannon Limit]] on compression and error-correction.
+
+Keep the ratio the same: Instead of 2^{8} bits being used to encode 2^{33} bits (a binary gigabyte), one bit will be used to encode 2^{25} bits (4 binary megabytes) of information. Also, to continue to keep things simple, we'll assume this information is entirely extended ASCII (2^{3} bit) text printed at 2048 (2^{11)} characters per page.
+
+So one bit has to encode 2048 (2^{11} again) pages. For reference: At that character/page rate you could, in 2^{25} bits, hold the entire million word text of the Harry Potter series. Also any other coherent text of similar size... or, indeed, /every/ other coherent text of similar size. Approximately half of them will hash to 1, and the other half will hash to 0.
+
+So there's the Library of Babel from which you must cull your research. A few difficult-to-detect errors in literature like Harry Potter aren't going to make much of a difference: A different adjective here or there, some swapping of sentences, altered dialogue or description. It would be difficult for all but the most steadfast fan to even notice.
+
+Fishing out exactly the right version isn't easy, but it's hardly crucial.
+
+Let's assume, instead, that what's encoded is a set of tables from the back of the [[https://en.wikipedia.org/wiki/CRC_Handbook_of_Chemistry_and_Physics][Handbook of Chemistry and Physics]]. Maybe part of it is a list of elemental isotopes and their decay rates. An error in even a single character could be catastrophic... and it's not going to be obvious which numbers are wrong without repeating the original experiments that measured them.
+
+How many additional error-checking bits do you need for your single bit hash in order to assure that not one important number is wrong? Go check Shannon's formula. I'd guess no fewer than 2^{20} additional bits. If lossless compression is crucial, there aren't any shortcuts.

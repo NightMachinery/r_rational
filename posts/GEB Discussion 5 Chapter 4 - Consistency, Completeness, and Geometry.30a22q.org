@@ -1,0 +1,440 @@
+#+TITLE: GEB Discussion #5: Chapter 4 - Consistency, Completeness, and Geometry
+
+* GEB Discussion #5: Chapter 4 - Consistency, Completeness, and Geometry
+:PROPERTIES:
+:Author: xamueljones
+:Score: 12
+:DateUnix: 1427307631.0
+:DateShort: 2015-Mar-25
+:END:
+*Gödel, Escher, Bach: An Eternal Golden Braid*
+
+This is a discussion of the themes and questions concerning the *Chapter 4: Consistency, Completeness, and Geometry*, and its dialogue, *Little Harmonic Labyrinth*.
+
+*Isomorphisms*
+
+Hofstadter talks about the isomorphisms inherent in the previous dialogue. Yet he takes the time to apologize for using its definition in a way which doesn't always match the formal definition:
+
+#+begin_quote
+  Formally, an isomorphism is bijective morphism. Informally, an isomorphism is a map that preserves sets and relations among elements. “A is isomorphic to B” is written as A ≈ B.
+#+end_quote
+
+Why does his usage not match the formal definition? Is there a better way to define isomorphism as Hofstadter uses it?
+
+The record player is explained as having two isomorphisms simultaneously on two levels, with an explicit and implicit meaning. Do all isomorphisms have an explicit and implicit meaning(s)?
+
+People use an isomorphism to relate their web of knowledge and concepts into words and sentences. However, no two people think of the /exact/ same meaning for the same word. How can people still understand each other? Hint: Think back to the idea of explicit and implicit meaning. How do we handle the case when words such as ‘fire' and ‘lose' have multiple meanings?
+
+Are there any notable isomorphisms in the Contracrostipunctus that you noticed and want to share with the rest of us?
+
+.......
+
+*Geometry*
+
+Euclid's Geometry is based on the following five postulates.
+
+1. A straight line segment can be drawn joining any two points.
+
+2. Any straight line segment can be extended indefinitely in a straight line.
+
+3. Given any straight line segment, a circle can be drawn having the segment as radius and one endpoint as center.
+
+4. All right angles are congruent.
+
+5. If two lines are drawn which intersect a third in such a way that the sum of the inner angles on one side is less than two right angles, then the two lines inevitably must intersect each other on that side if extended far enough. This postulate is equivalent to what is known as the parallel postulate.
+
+Does the fact the fifth postulate can't be proven from the other four mean that the parallel postulate is a Gödelian statement? Actually the answer is no, because Euclidian geometry has been proven to be complete and consistent. The four postulate system was an example of an incomplete formal system where all of its axioms simply have not yet been discovered. However, [[http://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems][Gödel's Incompleteness Theorem]] states that if the system is powerful enough to state arithmetical truths (or contains a small part of number theory), then the system cannot have a finite number axioms making the system incomplete and unprovably inconsistent.
+
+The parallel postulate (or its negation) is a potential axiom which can be used to extend mathematical/formal systems. Other examples include the [[http://en.wikipedia.org/wiki/Continuum_hypothesis][Continuum Hypothesis]] and the [[http://en.wikipedia.org/wiki/Axiom_of_choice][Axiom of Choice]]. As quoted by [[/u/redstonerodent]] in the comments below:
+
+#+begin_quote
+  [[http://en.wikipedia.org/wiki/G%C3%B6del%27s_completeness_theorem#Relationship_to_the_compactness_theorem][Gödel's Completeness Theorem]] implies that for any statement that can't be proved or disproved within a system, there are models of the system satisfying and dissatisfying it.
+#+end_quote
+
+The three mentioned examples are ways that the system can be extended to included previously unprovable statements and relate to how Hofstadter talks about retaining consistency in his modified pq- system. For example in Euclidean geometry, a line is the same as our ordinary intuition of a straight line. In spherical geometry, straight lines plotted on the surface of a sphere must be reinterpreted into an arc (pilots plot the shortest distance on a map as an arc instead of a line, because the Earth is a sphere). There are no parallel lines, because all line-arcs are guaranteed to intersect at some point. In hyperbolic geometry, a line has multiple parallel lines curving away on a hyperbolic surface (think of a hyperbolic surface as similar to the surface of a Pringle chip). Hence the four-postulate geometry (absolute geometry) is embedded in all three types of geometry systems.
+
+However, the idea of extending formal systems with new axioms only works if the new system is guaranteed to be consistent. How can we know which axioms to assume? What axioms, when combined, will permit internally consistent worlds? If you know the answer, let me know and I will congratulate you on winning a Fields Medal.
+
+An interesting question is asked by some people:
+
+#+begin_quote
+  Pushing possible worlds aside, what logic does our universe obey? Consider if our universe obeys The Law of the Excluded Middle which states that either P or not-P must be true, there is no room between true and false. What does quantum mechanics say about the logic of the universe?
+#+end_quote
+
+......
+
+*Dialogue*
+
+1) On the first page the Tortoise says “This is my favorite ride. One seems to move so far and yet in reality one gets nowhere.” In what ways is this like recursion, fractals, and strange loops?
+
+2) When Hexachlorophene J. Goodfortune introduces himself, there are a lot of Random Capitalizations. Can you detect any patterns?
+
+3) Define “djinn”. Why is this important?
+
+4) Define “tonic”. Why is this important?
+
+5) What would it be like to live in a perfectly consistent world? How about an inconsistent one? What is our world like?
+
+6) What do you think happened to the Weasel who took the popping-potion in our reality? Why did Hofstadter choose a weasel? What connotations does the weasel have?
+
+7) Both in the Matrix and the Little Harmonic Labyrinth, blue and red are used as archetypal colors for chemical escapism. What is the deal?
+
+8) What is the “Tunnel of Love”? Why is it sinister?
+
+9) The Tortoise claims that once you're in one Escher drawing you can access them all. What does this have to do with the idea that in formal logic any well-formed formula is derivable from a contradiction?
+
+10) Why does the lamp have an “L” on it? What role does it end up serving in the story?
+
+11) Relate what happens with wishes and the genies to pushing and popping stacks in a computer program.
+
+12) How does the dialogue illustrate the object-language/meta-language divide?
+
+13) What is GOD? What is its gender?
+
+14) Why does each Meta-Genie perform its task “twice as quickly” as the Genie before it? Hint: how does this relate to Zeno's Paradox?
+
+15) Detail the “meta-agnostic” position.
+
+16) What did Achilles' Type-less wish do?
+
+17) Carry out the metaphor between the version of the Little Harmonic Labyrinth that Achilles and the Tortoise are listening to. What's wrong with it? How does it talk about itself?
+
+18) How is the Majotaur like Goodfortune? How is this like a strange loop?
+
+Sorry for the late posting. This took much longer than I expected to write. I thought this chapter would take as long as the previous chapters to write, but I didn't account for how much more information was included. Since this post was already so late by an hour and I don't understand the dialogue well enough to explain it, I copied the questions from [[/u/rspeer]]'s wikia links down below. Tomorrow after everyone has discussed the questions, I will edit this post to include answers and explanations.
+
+Wikia Links:
+
+- [[http://godel-escher-bach.wikia.com/wiki/Chapter_4][Chapter 4]]
+
+- [[http://godel-escher-bach.wikia.com/wiki/Little_Harmonic_Labyrinth][Little Harmonic Labyrinth]]
+
+Coming up next on March 27th is Chapter V: Recursive Structures and Processes.
+
+The discussion for the previous chapter is posted [[http://www.reddit.com/r/rational/comments/30144c/geb_discussion_4_chapter_3_figure_and_ground/][here]].
+
+The discussion for the next chapter is posted [[http://www.reddit.com/r/rational/comments/30iexp/geb_discussion_6_chapter_5_recursive_structures/][here]].
+
+[[http://www.reddit.com/r/rational/comments/2yys1i/lets_start_the_read_through/][Official Schedule]].
+
+EDIT: I made a minor mistake when trying to explain how the parallel postulate fits with Gödel's Theorems. Thanks should go to [[/u/redstonerodent]] for clarifying how the parallel postulate relates to Gödel's Incompleteness Theorem and Completeness Theorem.
+
+
+** It's in the next chapter, but the diagram on p. 129 is a nice visualization of the plot structure of the dialogue. You could perhaps call it a "plot plot". Jumps downward represent "pushing" a nested story onto the stack, and jumps upward represent "popping" into the surrounding reality.
+
+For the sake of discussion, I sloppily drew some more plot plots of nested stories that range from moderately popular to famous. Do you agree with the diagrams?
+
+(Potential spoilers of movies and books, except not really)
+
+[[http://imgur.com/a/3RalT]]
+:PROPERTIES:
+:Author: rspeer
+:Score: 3
+:DateUnix: 1427324880.0
+:DateShort: 2015-Mar-26
+:END:
+
+*** Yeah, I agree with the ones I know, except that I think Inception went down (and up again) four levels instead of three.
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 1
+:DateUnix: 1427425853.0
+:DateShort: 2015-Mar-27
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1427317018.0
+:DateShort: 2015-Mar-26
+:END:
+
+*** Thanks [[/u/rspeer]] for continuing the work on the wikia and thanks [[/u/xamueljones]] for preparing the discussion. Don't worry about being a little late, after all this is done in your free time.
+
+*Some thoughts:*
+
+- The book remembered me of [[https://en.wikipedia.org/wiki/Meta-circular_evaluator][Meta-circular evaluators]] which fit the self-reference theme.
+
+- On p. 96 at the end of the first paragraph, why is "a tortoise talking football an anomaly, of course"? This bugs me as above he talks about worlds with square circles, things that can be both green and not green etc. but dismisses this immediately.
+
+- In the dialog, why is it a Majotaur? Mino*r* vs Majo*r* <-> Minotaur vs Majotaur? I am note sure what the pun is about.
+
+--------------
+
+Dialog questions, I agree with most of what you say, some additional points:
+
+2) Like [[/u/rspeer]] this also starts to bug me. Why is it even Hexachlorophene? I looked up the chemical structure but besides the two 'OH' nothing struck me as solution.
+
+3) [[https://en.wikipedia.org/wiki/Jinn][Wikipedia]] also says:
+
+#+begin_quote
+  They are mentioned frequently in the Quran (the 72nd sura is titled Sūrat al-Jinn) and other Islamic texts and inhabit an unseen world called Djinnestan, *another universe beyond the known universe*.
+#+end_quote
+
+Might be relevant as well.
+
+4) Unfortunately I didn't read Alice in Wonderland, can you provide a little more context what you mean? It sounds interesting :)
+
+5) I agree with you that paradoxes would not be possible (not theorems), because consistency requires that they come out *true* which is not possible as in "this sentence is false".
+
+6) Weasels are always the clever/playful ones aren't they?
+
+7) No idea, but there has to be some connection.
+
+8) Unsolved mystery. With the gondola and the gondoljer I somehow thought of Venice, but I don't know if that makes sense in this context.
+
+9) /ex-falso quodlibet/?
+
+10) Can't think of more than you said, anyone else?
+
+11) One possible reation with assembly programming: If you call a procedure, you typically *push* arguments onto the stack, the procedure *pops* them and does something. When finished it *pushes* the result on the stack and returns to the callee, which can then *pop* the result from the stack.
+
+So Achilles calls the wish procedure by pushing it's argument (the wish) on the stack. The genie receives the wish and again pushes the wish on the stack and so on until finally GOD does something and pushes the result (answer) on the stack, which is popped from the meta^{n} genie until the result comes back to Achilles.
+
+(It's been a while since doing anything in assembly so you might want to take this with a grain of salt)
+
+12) I actually thought more about the relation between the different layers of stories. The current story told is the object-language and the outer layer above is the meta-layer for this one, which becomes explicit on p. 124 where the Tortoise speaks in the meta-language about the object-language (the current story).
+
+13) I am confused about the gender because on p. 111 in starts with: "*He* /rubs the Meta-Lamp/" and below the Meta-Genie it goes like this: "... /this Meta-Genie removes the wispy folds of/ *her* /robe.../". So the gender changes.
+
+14) I couldn't think of an explanation but your hint about infinite stuff in finite time and limits made it more clear, thanks!
+
+17) I think the overview section in the wikia explains it:
+
+#+begin_quote
+  The frame story, instead of finishing as expected, is left open, so the reader is left dangling without resolution. One nested story concerns modulation in music---particularly an organ piece which ends in the wrong key, leaving the listener dangling without resolution.
+#+end_quote
+
+18) I believe there must be a little more to the connection...
+:PROPERTIES:
+:Author: markus1189
+:Score: 2
+:DateUnix: 1427322254.0
+:DateShort: 2015-Mar-26
+:END:
+
+**** u/deleted:
+#+begin_quote
+  On p. 96 at the end of the first paragraph, why is "a tortoise talking football an anomaly, of course"? This bugs me as above he talks about worlds with square circles, things that can be both green and not green etc. but dismisses this immediately.
+#+end_quote
+
+It's a reference to Lewis Carroll's dialogue What the Tortoise Said to Achilles:
+
+#+begin_quote
+  "A tortoise playing football would be---" Achilles was beginning.
+
+  "---an anomaly, of course," the Tortoise hastily interrupted.
+#+end_quote
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1427388812.0
+:DateShort: 2015-Mar-26
+:END:
+
+***** Nice find!
+:PROPERTIES:
+:Author: markus1189
+:Score: 1
+:DateUnix: 1427392988.0
+:DateShort: 2015-Mar-26
+:END:
+
+
+*** 1. The song they are listening to ends with some resolution, but not the original resolution they wanted. The dialogue is similar; we have the resolution of Achilles and the Tortoise returning to the real world in the Tortoise's home. However, this only happened in the story they were reading. We have no resolution about the Tortoise being cooked in a stew, which was the original conflict.
+:PROPERTIES:
+:Author: redstonerodent
+:Score: 1
+:DateUnix: 1427337981.0
+:DateShort: 2015-Mar-26
+:END:
+
+
+*** 7.Blue represents calm or security, red, excitement or danger. The higher levels are so-called because they have the greatest consequences. The choice is yours, but to face your highest levels is to encounter the most real, and most rewarding, of your obstacles.
+
+8.The tunnel of love represents what happens when someone begins exploring a system not of their own creation, such as math, geometry, or GOB. If the author can't speak to you, as he wrote the system and left you to read it alone, then you may be in a predicament. You must hop quickly from being a passive to an active participant, and not enter into 'blind love' of the system for its own sake, for then your hope relies upon the silent gondola-guide eventually leading you out of that 'tunnel of love' again, so you can see clearly enough to return to the real world. If you never escape, then not only are you stuck in the illusion, but you also never "taste the tonic, [and] feel [the] deep sense of satisfaction" of learning what the system was there to teach you in the first place.
+
+I am probably in serious peril of this fate, myself, on a few different levels. I think I'm too trusting of 'gondola people', really, or too lazy to jump out and walk. And with all the man-made systems people can and do passively participate in, it's no wonder most people are still stuck in all kinds of false perceptions. We call them stereotypes, misunderstandings, false beliefs, addictions, etc. Sometimes we don't recognize we're in them. It's a big job, but important, to get ourselves and others out of them!
+
+Other notes:
+
+- The top-level Achilles and the Tortoise never have their story resolved back to the amusement park where they began, but rather are left in the clutches of the Tortoise-eater. This symbolizes a grim outlook on life, both that it's "not all fun and games", that you're gonna be eaten alive in somebody's pie-in-the-sky (someone fighting for their ideal at your expense?), particularly if you settle for a 'resolution in a subsidiary key' -- a happy ending but not the happiest. At least if the strange loop completes itself by an ending like in the Majotaur's Labyrinth, a 'bowl of popcorn' may appear! It's a rather whimsical metaphor, overall.
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 1
+:DateUnix: 1427373637.0
+:DateShort: 2015-Mar-26
+:END:
+
+**** That's an awesome solution for 8, thanks for sharing!
+:PROPERTIES:
+:Author: markus1189
+:Score: 1
+:DateUnix: 1427392901.0
+:DateShort: 2015-Mar-26
+:END:
+
+
+*** 5.If we lived in an inconsistent world, some things would be true and false at the same time, and not just because of wording. Like, Schrodenger's Cat could actually be both dead and alive. Instead, quantum physics puts it in a probabilistic state, with likelihood of being alive between 0(definitely false) and 1(definitely true). It resolves itself when the state is revealed, and our world thus remains consistent! Or that's how I would put it, with what little I know. Paradoxes kind of work the same way, as I mentioned [[http://www.reddit.com/r/rational/comments/2z8zm5/geb_discussion_1_introduction_a_musicological/cppqfs1][here]]: probability between true or false, unless forced to decide.
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 1
+:DateUnix: 1427374497.0
+:DateShort: 2015-Mar-26
+:END:
+
+
+*** On 13), the genders of each Meta^{n}-Genie alternate, so that GOD overall has no particular gender.
+
+On 6): So what kind of world would the Weasel end up in? Maybe we're to believe he popped out of "Little Harmonic Labyrinth" entirely, and somewhere in the real world is a weasel who was once an extremely minor character in GEB introduced to make a joke. Maybe he's posting on [[/r/popping]] right now.
+
+I wouldn't conclude in 12) that "one needs to go to an infinite level of meta-ness to answer anything". Any reasonable wish would be a normal wish or a meta-wish, with nothing infinite going on.
+
+The djinni seem to be designed to prevent paradoxes by being type-safe -- requiring wishes about wishes to be at a separate level is a lot like how set theory has to use a different word than "set" to describe a set of all sets. They would have been safe from paradoxes if they hadn't let Achilles get an exemption to their type system and make a Typeless Wish.
+
+On 5): I wouldn't be so quick to conclude that our /world/ has paradoxes in it that make it inconsistent. We don't know any way to formally describe the whole world, indeed. We can only describe small aspects of it with formal systems. When you encounter a paradox, it means that you applied a formal system in a way that it can't actually be applied. So I'm not sure it means anything for the world to be inconsistent, or to have paradoxes; it's our reasoning about it that may have paradoxes.
+
+Kind of nice that we can come up with formal systems that have something to do with reality, though. Maybe the question is asking us to envision a world where logical reasoning is completely useless.
+:PROPERTIES:
+:Author: rspeer
+:Score: 1
+:DateUnix: 1427444903.0
+:DateShort: 2015-Mar-27
+:END:
+
+
+** u/redstonerodent:
+#+begin_quote
+  Does the fact the fifth postulate can't be proven from the other four mean that the parallel postulate is a Gödelian statement? Actually the answer is no, because Gödelian statements are true statements which are unprovable from within the system. Since the postulate can be assumed to be true for Euclidean geometry and assumed to be false for spherical (also called elliptical) and hyperbolic geometry, it is not a Gödelian statement.
+#+end_quote
+
+[[http://en.wikipedia.org/wiki/G%C3%B6del%27s_completeness_theorem][Gödel's Completeness theorem]] implies that for any statement that can't be proved or disproved within a system, there are models of the system satisfying and dissatisfying it. You're making a distinction between "unprovable within a system" and "being true or false depending on the model," when there is no difference between these.
+:PROPERTIES:
+:Author: redstonerodent
+:Score: 3
+:DateUnix: 1427337540.0
+:DateShort: 2015-Mar-26
+:END:
+
+*** Thanks for clarifying! I expanded the section a little bit (as well as included a quote from you) to explain how the parallel postulate relates to the Completeness Theorem and why it doesn't relate to the Incompleteness Theorem.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 2
+:DateUnix: 1427348458.0
+:DateShort: 2015-Mar-26
+:END:
+
+
+** u/Ty-Guy9:
+#+begin_quote
+  The record player is explained as having two isomorphisms simultaneously on two levels, with an explicit and implicit meaning. Do all isomorphisms have an explicit and implicit meaning(s)?
+#+end_quote
+
+I want to say that isomorphisms are, by definition, connections between one system/level and another. If an object in one level has an implicit meaning, it means that that level is related to a higher level via isomorphism. The objects go by a name: 'symbols'. Words are symbols, statements are symbols, stories can be symbols (and when they are they're called parables or extended metaphors), and formal systems can be considered symbols as well.
+
+While Hofstader seems to like to consider symbol and interpretation as independent, I think it's important to determine which comes first. I suggest that interpretation comes first, as the motive for the rest: the usual pattern is that symbols are invented by some intelligent person(s), in order to describe something they know of in reality. Euclid, when he invented/formalized geometry, was trying to describe the 3D spatial world as he knew it. The pq- system was invented to represent some basic math, and, of course, to be an analogy for other systems. Record players were invented before records were made for them. If the symbols/systems were random or out of thin air, they could be assumed to be meaningless. They would be like searching for meanings in alphabet soup: you could try, but you'd be hard pressed to see anything coherent.
+
+Counterexamples?
+
+EDIT: My main proposition here should be stated as *systems and their interpretations come together, chronologically*, rather than that one comes before the other. You don't invent a record player without also inventing the record, nor vice versa.
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 2
+:DateUnix: 1427363086.0
+:DateShort: 2015-Mar-26
+:END:
+
+*** Maybe relevant:
+
+[[http://en.wikipedia.org/wiki/Intuitionism][Intuitionists]] think that mathematics is created, whereas [[http://en.wikipedia.org/wiki/Platonism][platonists]] think that mathematics is just the interpretation of the abstract objects found in nature. So this might either support your point or go against it.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1427386818.0
+:DateShort: 2015-Mar-26
+:END:
+
+**** Neat! While my philosophical background knowledge is limited on these theories, my perspective presented above is that there is precisely one reality, and that our understanding of it is both the origin and the purpose of our systems and symbols. I think platonism introduces a second reality, so that's different. Intuitionism looks probable; I might have to explore it further sometime.
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 1
+:DateUnix: 1427409596.0
+:DateShort: 2015-Mar-27
+:END:
+
+
+** Slightly relevant xkcd! [[https://xkcd.com/1086/]]
+
+Let's suppose that Black Hat's wishes are being answered by the djinns. Which levels would he have to wish at?
+
+- "That wishing on eyelashes worked": meta-wish
+- "A pony": wish
+- "Unlimited wishes": meta-wish
+- "Revocation of rules prohibiting unlimited wishes": meta-meta-wish
+- "A finite but arbitrarily large number of wishes": meta-wish
+- "The power to dictate the rules governing wishes": apparently his meta-meta-wish didn't get answered, so maybe he's trying to make a meta-meta-meta wish here. Or a Typeless Wish if he wants to change the rules about wish types also.
+- "Unlimited eyelashes": wish
+- "That wish-granting entities be required to...": definitely a Typeless Wish
+- ...
+- "A universe which is a replica of this one sans rules against meta-wishes": now that's jumping out of the system. Typeless Wish because this universe would need a copy of all the djinns.
+:PROPERTIES:
+:Author: rspeer
+:Score: 2
+:DateUnix: 1427445470.0
+:DateShort: 2015-Mar-27
+:END:
+
+*** [[http://imgs.xkcd.com/comics/eyelash_wish_log.png][Image]]
+
+*Title:* Eyelash Wish Log
+
+*Title-text:* Ooh, another one. Uh ... the ability to alter any coefficients of friction at will during sporting events.
+
+[[http://www.explainxkcd.com/wiki/index.php/1086#Explanation][Comic Explanation]]
+
+*Stats:* This comic has been referenced 38 times, representing 0.0661% of referenced xkcds.
+
+--------------
+
+^{[[http://www.xkcd.com][xkcd.com]]} ^{|} ^{[[http://www.reddit.com/r/xkcd/][xkcd sub]]} ^{|} ^{[[http://www.reddit.com/r/xkcd_transcriber/][Problems/Bugs?]]} ^{|} ^{[[http://xkcdref.info/statistics/][Statistics]]} ^{|} ^{[[http://reddit.com/message/compose/?to=xkcd_transcriber&subject=ignore%20me&message=ignore%20me][Stop Replying]]} ^{|} ^{[[http://reddit.com/message/compose/?to=xkcd_transcriber&subject=delete&message=delete%20t1_cpscfuq][Delete]]}
+:PROPERTIES:
+:Author: xkcd_transcriber
+:Score: 1
+:DateUnix: 1427445483.0
+:DateShort: 2015-Mar-27
+:END:
+
+
+** What do you think would happen if someone told Douglas Hofstadter about the Curry-Howard Isomorphism?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1427312339.0
+:DateShort: 2015-Mar-26
+:END:
+
+*** He has to know by now, right? But I noted on the Wikia that if he had known about it and its significance when he wrote GEB, he probably wouldn't have made that dismissive comment about type theory in the Introduction.
+
+Where do you see the Curry-Howard isomorphism applying in this reading? The part where Achilles makes a Typeless Wish?
+:PROPERTIES:
+:Author: rspeer
+:Score: 1
+:DateUnix: 1427314050.0
+:DateShort: 2015-Mar-26
+:END:
+
+**** I don't quite think it does, but the Isomorphism and causal modeling in probabilistic programming show that nontermination of a program/nonnormalization of a proof/inconsistency of logic, when viewed as a causal model, makes causality go in circles, which makes easy sense of why logical inconsistency corresponds to a lack of possible realities -- reality can't "make up its mind" on what to do in those situations.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1427317406.0
+:DateShort: 2015-Mar-26
+:END:
+
+
+** These are Justin Curry's questions, and I admit I don't know the answers to some of them.
+
+What /is/ the significance of HJG's Random Capitalizations? For that matter, what's the significance of his name? And why /is/ the Tunnel of Love so sinister?
+:PROPERTIES:
+:Author: rspeer
+:Score: 1
+:DateUnix: 1427314159.0
+:DateShort: 2015-Mar-26
+:END:

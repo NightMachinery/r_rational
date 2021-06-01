@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: Jello_Raptor
+:Score: 6
+:DateUnix: 1512273590.0
+:DateShort: 2017-Dec-03
+:END:
+
+Not exactly a typo but your definition of a null pointer error could be misread.
+
+#+begin_quote
+  the program tries to go look up *what* some variable is, and finds out that there's a null (empty) value *where that variable was supposed to be*.
+#+end_quote
+
+This would be more accurate as
+
+#+begin_quote
+  the program tries to go look up *where* some variable is, and finds out that there's a null (empty) value where *that variable's address* was supposed to be.
+#+end_quote
+
+Your original read as if the program did the lookup first and found a null where the pointer was pointing, rather than the pointer itself being null.

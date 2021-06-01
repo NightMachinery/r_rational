@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 1
+:DateUnix: 1411938960.0
+:DateShort: 2014-Sep-29
+:END:
+
+Yup, I had accounted for average damage in my calculations.
+
+I assumed that they had access to enough level 20 Wizards or Sorcerers that it isn't relevant anymore, so they're all casting it at caster level 20.
+
+Next, I calculated how many can fit in range (300' (60 squares) at caster level 20) using pi * r^{2,} which is 11310 people, rounded down to 10k for easy numbers. This can be increased to ~900k casters by making it a sphere (4/3 * pi * r^{3)} instead of a circle, but there's no need to go crazy (yet). This also assumes that casting past teammates is allowed.
+
+10d6 averages out to 35 damage, with no resistance blocking it out, so that's simple.
+
+Orb of Force is a ranged touch attack, which always succeeds on a natural 20, so 1/20 attacks will hit. Neklos' touch AC is likely in the 60's to 80's, so none will hit on a 19 or lower. There is no save and no SR, so there's no need to worry about that.
+
+The final damage calculation looks like this: 10k people * 35 damage per hit * 0.05 chance to hit = 17500 damage.
+
+A deity with 100d10 hit dice and a constitution score of 100 would have 5500 HP.
+
+Of course, readied actions, foresight, celerity, timestop and other things make this more of an academic exercise than practical advice, but it's a nice thought experiment.

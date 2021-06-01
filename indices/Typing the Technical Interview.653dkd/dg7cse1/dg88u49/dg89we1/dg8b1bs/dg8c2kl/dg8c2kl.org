@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: Veedrac
+:Score: 2
+:DateUnix: 1492122462.0
+:DateShort: 2017-Apr-14
+:END:
+
+This is the board given in the answer in the story:
+
+#+begin_example
+    0 1 2 3 4 5 6 7
+  0 · · ♛ · · · · ·
+  1 · · · · · ♛ · ·
+  2 · ♛ · · · · · ·
+  3 · · · · ♛ · · ·
+  4 ♛ · · · · · · ·
+  5 · · · ♛ · · · ·
+  6 · · · · · · * ·
+  7 · · · · · · · *
+#+end_example
+
+The final two queens cannot be placed on this board as the only two remaining places not under attack are those with asterisks, but they attack each other.

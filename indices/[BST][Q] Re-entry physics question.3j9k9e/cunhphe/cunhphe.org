@@ -1,0 +1,13 @@
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1441144343.0
+:DateShort: 2015-Sep-02
+:END:
+
+I believe the thing happening with temperature is a result of the ideal gas law -- you compress air in front of you, which increases the pressure, which means either more material or higher temperature. Obviously, to protect yourself from that, you need to keep the hot air away from you, which means having a good insulator around or just a large amount of ablative shielding. I don't have formulas or numbers on that.
+
+Forces -- you've got gravity and air resistance as the main things. (Unless you encounter orbital debris, in which case the normal force is going to make you sad.) We approximate Earth's gravity as causing acceleration of 9.8m/s^{2} , and you'll start out with about 6% less than that -- not enough to make a big difference.
+
+At 100km, you'll start encountering atmosphere. You'll be going about 1400m/s at that point. You will decelerate to 50-60m/s by the time you reach the ground. [[http://hypertextbook.com/facts/JianHuang.shtml]] has some measured velocities for humans in free fall at terminal velocity at particular altitudes; you can do linear interpolation to guess at the acceleration and forces between the measured points.
+
+You'll get turbulence from wind. It gets pretty strong in places. Turbulence is an injury magnet because of the jerk and jounce more than the acceleration.

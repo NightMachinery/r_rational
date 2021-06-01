@@ -1,0 +1,17 @@
+:PROPERTIES:
+:Author: Kerbal_NASA
+:Score: 2
+:DateUnix: 1445725734.0
+:DateShort: 2015-Oct-25
+:END:
+
+Edit: There are mistakes in this post, check below.
+
+Based on [[https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Solar_system_escape_velocity_vs_surface_temperature.svg/480px-Solar_system_escape_velocity_vs_surface_temperature.svg.png][this graph]] (from this [[https://en.wikipedia.org/wiki/Atmospheric_escape][wiki article]]) the escape velocity of the planet can be 6 km/s (assuming Earth-like temperatures), I'll assume that the density of the planet is the same as Earth's, and fiddling with the equations:\\
+sqrt(2*G*m/r) = 6km/s,\\
+m/((4/3)*pi*(r^{3} )) = Density of Earth,\\
+surface gravity = ((4*pi/3)*(Gravitational Constant)*r*(Density of Earth))
+
+results in surface gravity = 5.267 m/s^{2} or about 53.7% of Earth's surface gravity.
+
+And you can get it lower by assuming a higher planet density than Earth.

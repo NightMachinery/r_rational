@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Endovior
+:Score: 1
+:DateUnix: 1485376240.0
+:DateShort: 2017-Jan-26
+:END:
+
+On the contrary, there most certainly /is/ a selection effect, if the designers were sane. It's called error-correction failsafes; if a probe goes off-script, there's code present to prevent it from reproducing at all, probably by killing itself.
+
+You will want those failsafes to be quite robust, with a device of this sort; you are dealing with trillions of replications, so you'll want multiply-redundant systems such that you can handle wildly improbable combinations of errors.
+
+Implemented correctly, you have a system such that any deviation whatsoever from the approved codebase prevents the probe from reproducing. Thus, all mutations are immediately lethal, and you never get dangerous mutant strains outcompeting the parents. Thus, even if you get absurdly high error rates like 50%, all the error lines disappear immediately, because the design specs are such that you'd need something like a 20 sigma error to get an off-spec probe to reproduce in any way.

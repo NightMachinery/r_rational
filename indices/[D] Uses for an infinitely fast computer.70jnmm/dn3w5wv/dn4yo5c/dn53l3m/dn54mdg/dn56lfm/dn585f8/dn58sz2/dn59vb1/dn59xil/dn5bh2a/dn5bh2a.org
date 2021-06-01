@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: scruiser
+:Score: 1
+:DateUnix: 1505692402.0
+:DateShort: 2017-Sep-18
+:END:
+
+In response to your edit... in EYs example the program being inducted only has title and date as its input, the Wikipedia article is what it is being trained to match. So unless you think title and date are enough to derive a probable Wikipedia article, the program being induced needs extra information smuggled in somehow.
+
+Note that the program being inductively derived is different than the Solomonoff induction algorithm. The Solomonoff induction algorithm is responsible for find the minimum length program that given sets of possible input title/dates will generate the Wikipedia article outputs.

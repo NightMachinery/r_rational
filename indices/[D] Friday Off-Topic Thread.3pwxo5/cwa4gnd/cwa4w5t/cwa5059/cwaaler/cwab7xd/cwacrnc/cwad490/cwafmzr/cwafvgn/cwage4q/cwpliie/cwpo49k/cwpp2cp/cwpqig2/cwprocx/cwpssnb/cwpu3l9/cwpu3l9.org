@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1446756867.0
+:DateShort: 2015-Nov-06
+:END:
+
+#+begin_quote
+  You wouldn't EVER store edited bitmaps in JPEG format, though, because it's lossy.
+#+end_quote
+
+That's more of a reason to ban jpeg. We want to give users choice in as much as possible, which means not mandating that kind of thing.
+
+I'd also like to avoid writing "canonical" implementations of accessors. We want a bizarre of accessors, and that means that accessors have to more or less manage their own memory and support multiple languages. Making them simply a capnproto RPC call has a very simple elegance that's appealing.

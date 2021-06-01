@@ -1,0 +1,38 @@
+:PROPERTIES:
+:Author: narfanator
+:Score: 2
+:DateUnix: 1431501702.0
+:DateShort: 2015-May-13
+:END:
+
+This is fantastically abusable, but it will take me some time to figure out why...
+
+So one of the first tricky bits you're going to run into is the same as in programming - runes sound like they describe things exactly. In software, you then build up layers of abstraction - there's a great Djikstra quote on this: "The purpose of abstraction is not to be vague, but to create a new semantic level in which one can be absolutely precise"
+
+So, can you "build" "new" composite runes from the existing runes? That would make sense - like learning letters and words, you'd learn the core runes as well as known "formula" runes that do specific things, but are really just a collection of the basics that have been worked out.
+
+I also like to put programming like this: You describe an idea well enough that it is now happening. Sounds like Runes do something similar.
+
+One last thing on this note: Are runes turing-complete? That is, can you do computations with them? If you can't, and they're purely descriptive (the "where" part of a "select" query...) what are the specific action runes that are known?
+
+Now, onto some known exploits...
+
+There's a hell of a lot you can do with standing portals. I haven't yet thought up much to do with volumetric portals, but surface portals can get pretty fun.
+
+Side question there: What're topological limits to the portal surface / volumes? Can I make a klein bottle portal surface?
+
+All my currently known double-portal exploits work in the "infinite tube" orientation:
+
+|>>>>|
+
+If placed vertically, a dropped object will fall forever. This is a great fundemental experimenting apparatus, particularly if you add vacuum to remove air resistance and thus maximum velocity. (In the system I first explored portals in, we used this to discover that you could cast gravity shadows, gravity was absorbed like light, and there was a universal maximum velocity beyond which things degenerated into mana blobs. Wacky!)
+
+Vertical double portals is a classic, but here's a weirder use: If you anchor the portals to a pair of rocks, such that the rocks can go in the middle: |*..*| then you can "slide" the volume through space as if it was only the mass of the anchor rocks. Everything else gets scooped up on side and shows up out the other!
+
+You can also start doing some wacky experiments with pushing on yourself through a portal, and see what happens. Is the force transferred to the anchor objects?
+
+However, industrial use of portal magic get mundane and awesome - You basically get to replace your entire infrastructure with portals! Water mains are portals to the reservoir, sewage pipes are portals to the recycling / waste facilities...
+
+Given your setup, you could probably do Niven-style transportation pads - "Take people carrying X token to Y, and Z token to W" - although, what happens in a telefrag situation? (where the transportation effect would cause two objects to try to coexist)
+
+Hmm, hmm - Can I cut things by creating space inside of them? Can I fuse things by removing the space? Can I do a crazy fuzzy teleportation that lets me blend two things together, like that trick for pixel art to "create" more colors?

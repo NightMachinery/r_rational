@@ -1,0 +1,50 @@
+:PROPERTIES:
+:Author: heiligeEzel
+:Score: 7
+:DateUnix: 1417647408.0
+:DateShort: 2014-Dec-04
+:END:
+
+Alright then! This model is basically what is done in Hacking the Source of Magic, but fleshed out a little. To keep the model simple, I only allow one time jump rather than a maximum of 6 - which means there can never be more than two copies of the same person running around.
+
+These are obviously simplifications. The model /can/ be extended to a system allowing 6 jumps (and in a way that seems to cover all the time travel in HPMoR and FtP I can think of) but I still have to write half a chapter of FtP before Saturday, so I'm trying to keep it minimal. (This actually /is/ an interesting exercise in an algorithm writing challenge, and I fear I have a bit of a tendency to get carried away with that sort of thing. :P)
+
+THE MODEL: the entire universe is simulated by a deterministic "computer", running the following algorithm:
+
+- assume given: a simulation of the next 6 hours, for which we can query every state at every point in time;
+- assume moreover that this simulation is /stable/ with regards to time travel: (a) for every person who leaves from timepoint N to timepoint M, an exact copy appears at time M; (b) for every person and object who appears using time travel, there is a corresponding person leaving;
+- now simulate either one further second, or until the next person attempts to time-travel, whichever comes sooner;
+- if nobody tried to time-travel, we have a stable simulation for the next 6 hours and 1 second; execute 1 second in reality and continue from start with the remaining 6 hours;
+- if someone did try to time-travel, say at 0.31 seconds into our new simulation, call them THE TRAVELLER
+- now, for every person and object in the entire simulation who time-travels (including THE TRAVELLER): save their state at the moment of travelling, and the exact time they should arrive;
+- make a separate simulation of the next 6 hours plus 0.31 seconds, following standard physical rules, except that you magically insert a copy of the time-travelling person at the moment they were travelling to;
+- test whether the simulation is stable with regards to time travel;
+- if so, execute 0.31 seconds in reality, and continue from the start with the remaining 6 hours simulation you have
+- if not, find a stable simulation to prevent THE TRAVELLER from messing things up, using one of the following three techniques: (a) have them give themselves a warning (e.g. NO or DON'T MESS WITH TIME), (b) if a fails, find a minimal interference which severely hurts them (aside from the laws of physics and magic, the simulation can introduce "temporal magic" to achieve nasty effects), (c) if a and b both fail, prevent the travel simply by having temporal magic flare and break their Time-Turner (possibly killing THE TRAVELLER in the process, if we want to be nasty);
+- we now definitely have a stable simulation for 6 hours + 0.31 seconds; execute 0.31 seconds in reality, and continue from the start with the remaining 6 hours simulation you have
+
+EXAMPLE: At 10pm, Harry goes back in time 2 hours to study in his trunk.
+
+- somewhere around 4pm, the computer has calculated what's going to happen in the next 6 hours and detects that Harry wants to travel back in time; nobody else happens to be time-travelling in that 6-hour window
+- the computer saves "Harry Potter <complete data>, 8pm, has traveled 1 time for a total of 2 hours"
+- the computer makes a new simulation, copying the original one until 8pm, then introduces a copy of the Harry Potter from 10pm there
+- there are now two Harrys in the separate simulation: the original one, and the copy; the computer simulates the remaining 2 hours where they conveniently don't run into each other
+- at 10pm, the original Harry has had exactly the same experience he had before, so also decides to go back in time; consequently, the simulation is stable and is adopted as the real one
+
+EXAMPLE (situation b): at 3pm, Quirrell plots burning the orphanage, but he will only do so if Harry survives. He consequently sends a note to Marielle "at 6:01pm, use that device I gave you, which detects whether Harry Potter is alive, then go back in time three hours and send me a YES note if he did; if he didn't, or you get a message from yourself saying NO, just send yourself a NO note, and don't bother sending me anything". He decides that if he does not get a note, he will not attack the orphanage, but if he receives a YES, he will.
+
+- somewhere around 11am, the computer has calculated that Quirrell has sent his instructions, but never got anything back, since the time travel is not yet part of the simulation; thus, the simulation so far has Quirrell not burning the orphanage, and Harry remaining quite alive
+- finally, shortly after noon, the computer has calculated what's going to happen and detects that Marielle will use the device; since so far in the simulation, Quirrell has not burned the ophanage, and there is no message from her past self, she is going to detect that Harry is still alive
+- the computer consequently saves "Marielle Dutant <complete data>, 3:01pm, has traveled 1 time for a total of 2 hours, and is carrying a note saying YES <complete data>"
+- the computer makes a new simulation, branching away at 3:01, where Marielle arrives and sends Quirrell the YES-note; in this new simulation, the orphanage gets burned
+
+Now there are two possibilities:
+
+- in the rest of the simulation, Harry pulls another stunt and survives; then, the original Marielle still pulls YES at 6:01pm, so the simulation is stable and therefore becomes reality
+
+Or:
+
+- in the rest of the simulation, Harry dies; then, the original Marielle pulls NO at 6:01pm. This means that the simulation is unstable, because the Marielle who arrives at 3:01pm is /not/ an exact copy of the Marielle who leaves at 6:01pm. Thus, the computer tries to avoid the time travel
+- a stable solution is found by making Marielle send herself a NO note, which means nothing is sent to Quirrell regardless of what the Harry-checking-device says; the orphanage is not burned, and Harry survives
+
+Edit: this model is /very/ restrictive: a person who has gone back in time is not allowed to interact with a person who is going to go back in time afterwards at all (including themselves). An obvious improvement is to allow one extra "stabilisation loop": if we find that the new simulation is not stable, then rather than immediately trying to stabilise it using a "DO NOT MESS WITH TIME" we can simply save all occurrences of people who go back in time again, and make another simulation where /those/ people get introduced at the right time. This should allow for self-interactions (and, if extended further, for going back multiple times).

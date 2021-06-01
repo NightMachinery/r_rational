@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: trishume
+:Score: 1
+:DateUnix: 1445625606.0
+:DateShort: 2015-Oct-23
+:END:
+
+It sounds to me like you are talking about a database, either a document database or a relational one. The thing is those solve lots of problems but you can't just give people access to your database because of security. You need some kind of server to stop everyone from getting all the data.
+
+You might respond that a generic security backend database server should exist, but it does, it is called "Parse" now owned by Facebook.
+
+I think you might be looking at the right problems but the wrong solutions here.

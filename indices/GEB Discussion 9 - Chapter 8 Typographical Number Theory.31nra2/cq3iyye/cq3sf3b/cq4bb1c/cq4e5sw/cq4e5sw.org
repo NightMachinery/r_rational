@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: rspeer
+:Score: 3
+:DateUnix: 1428431918.0
+:DateShort: 2015-Apr-07
+:END:
+
+Hmm, okay, thanks for looking this up. I'll start trying to translate and see what I think.
+
+This seems quite wrong to me, actually. Either I'm overlooking some key expression that makes everything come together or this is just number theory salad. This gets at why I feel GEB so desperately needs a solid reader's guide, because half the stuff you can Google about it is wrong.
+
+In particular:
+
+The clause involving a, b, and c seems to be defining things that are "either 10 or a certain multiple of 100", which sounds like it's just hiding the compositeness problem a couple of layers deep.
+
+I don't believe the quantifiers. We can pick /any/ b? What about one that makes the antecedent of the implication false, so that the clause is trivially true?
+
+What about the ¬∃f:(d=10⋅f))⊃(d=1)) clause? Is this clause even satisfiable? I believe it to be equivalent to "∀f:((d != 1) ∧ (d = 10⋅f))", which seems to claim that "d is 10 times every f (and also it's not 1)", which is just nonsense.
+
+So I'd abbreviate this expression as (a=1) ∨ (TRUE ∧ FALSE), and abbreviate it again as "a = 1", not "a is a power of 10".
+
+I'm pondering something involving modular arithmetic instead.

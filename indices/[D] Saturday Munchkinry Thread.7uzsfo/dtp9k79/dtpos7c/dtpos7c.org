@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: ben_oni
+:Score: 5
+:DateUnix: 1517732465.0
+:DateShort: 2018-Feb-04
+:END:
+
+Step one, increase the time messages can be sent back.
+
+1. Think of a yes-or-no question you want answered. Something to which the answer will be available in an hour or so.
+
+2. Prepare two different things to eat, say Hot Tamales and Sour Patch Kids. Hot means "yes", Sour means "no". Commit to eating one as soon as you taste it (less than five seconds later) /or/ as soon as you have the answer to the question from part 1.
+
+If your careful, you might be able to send messages back up to 12 hours. And once you have an answer to one question, you can immediately commit to another question, allowing you to get any number of answers from 12 hours in the future in a very short time.
+
+--------------
+
+Suppose we are searching for some very large number that satisfies some condition. We'll write it out in binary. We'll use flavored lollipops this time.
+
+Every five seconds, we'll write out one of the digits of the number.
+
+- (/Acceptance/) If we taste Hot, write a '1', if we taste Sour, write a '0'.
+- * In either case, check the previous digit. '0': eat Sour; '1': eat Hot. (Ignore this for the first digit.)
+- (/Rejection/) If we don't taste anything, check the previous digit. '0': eat Hot; '1': eat Sour. Write a '0'.
+
+When we've finished writing out the number see if it satisfies the condition. If yes, check the last digit: if it's '0', eat Sour, if '1' eat Hot. If the number does not match the condition, eat nothing.
+
+We now have an efficient method of cracking encryption, passwords, etc.
+
+--------------
+
+So, world domination? Brute force math and science problems? Develop immortality? Be your own UFAI!

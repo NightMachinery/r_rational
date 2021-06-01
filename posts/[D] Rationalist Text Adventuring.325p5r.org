@@ -1,0 +1,112 @@
+#+TITLE: [D] Rationalist Text Adventuring
+
+* [D] Rationalist Text Adventuring
+:PROPERTIES:
+:Author: abramdemski
+:Score: 25
+:DateUnix: 1428696708.0
+:DateShort: 2015-Apr-11
+:END:
+I imagine many people are familiar with the work of [[http://cassandraxia.com/][Cassandra Xia]]. If not, check her out! She has two games teaching rationality skills and more in progress. [[http://cassandraxia.com/projs/advbiases/][Adventures in Cognitive Biases]] teaches a few skills with little widgets, and [[http://cassandraxia.com/projs/raccoon/][The Raccoon Princess and the Fox Prince]] is a parable of Bayesian updating, unreliability of eye-witness testimony, & avoiding base-rate neglect.
+
+There are also other people trying to make rationalist games, such as [[http://lesswrong.com/lw/lad/bayes_academy_development_report_1/][Kaj Sotala]]. Here's an old [[http://lesswrong.com/lw/dhn/rationality_games_apps_brainstorming/][brainstorming thread]] about it on lesswrong.
+
+Cassandra's games are largely story text with a little interactivity, and pictures to make it feel more interesting. /Adventures in Biases/ has several widgets which are used to teach the concepts, but /Raccoon Princess/ is really just text with a few branching choices you click on.
+
+Suppose you want to make something like this, but you're not much of a programmer, or you /are/ much of a programmer but you're lazy and want to get to the fun part of writing a story.
+
+Two tools exist for writing this kind of game: [[http://twinery.org/][Twine]] and [[http://www.inklestudios.com/inklewriter/][Inklewriter]]. Both let you ease into the processes of interactive storytelling by /mostly/ just writing a story, with choose-your-own-adventure style interactivity. You write a series of passages, set up links between the passages, and readers navigate the story by clicking on the choices they wish to make.
+
+Inklewriter has a more polished interface which will be more friendly if you want to just sit down and /write/. It's got a very friendly [[https://writer.inklestudios.com/][tutorial]] written in inklewriter itself, along with [[http://www.inklestudios.com/inklewriter/getting-started/][documentation]] to get you started.
+
+Twine also lets you jump right in and write. I found it a little less friendly in terms of documentation/tutorials, but it also appears to allow more hacking if you want to make a really sophisticated game. Both Twine and Inklewriter have scripting languages to add logic to your text (so that different things happen if you picked up an item earlier in the game, for example); in Twine, however, you can also use HTML, CSS, and Javascript to customize the game.
+
+Inklewriter games have a nice look to them, but they all look exactly the same. Twine games tend to be ugly (imho!), but the appearance is customizable, so you can do a lot more with it.
+
+Here's a [[http://lambdamaphone.blogspot.com/2015/02/using-twine-for-games-research-part-ii.html][basic RPG setup in Twine]].
+
+I think it would be really cool if there was more rationalist text-adventure out there. Using stories to illustrate [[http://en.wikipedia.org/wiki/List_of_cognitive_biases][biases]], ideas from the [[http://wiki.lesswrong.com/wiki/Rationality_materials][sequences]] or principles from statistics, logic, and science is already something this community has an interest in, so, I thought I'd plug the idea here.
+
+
+** Just in case anyone gets confused:
+
+Twine and Inklewriter are both great tools for branching & non-linear storytelling, like Choose Your Own Adventures, or the broader genre of "gamebooks".
+
+To many, "Text Adventure" refers to the genre of games such as Zork and Colossal Cave Adventure. ("You are standing in a long hall. Exits are north, south, and Dennis.") These days it's also often called "Interactive Fiction", as such games are more story-focused than their precursors. If you're looking to make games of that sort, "Inform" is a popular engine.
+:PROPERTIES:
+:Author: ancientcampus
+:Score: 9
+:DateUnix: 1428712330.0
+:DateShort: 2015-Apr-11
+:END:
+
+*** Ren'Py is also a good, free program for making Choose Your Own Adventure type stories, and I'm told it's easy to learn to use. A lot of popular Visual Novels were written using it.
+:PROPERTIES:
+:Author: Timewinders
+:Score: 3
+:DateUnix: 1428721551.0
+:DateShort: 2015-Apr-11
+:END:
+
+**** The only disadvantage I can think of is that it's Python, which means no web support. It looks great if you don't mind that though.
+:PROPERTIES:
+:Author: Uncaffeinated
+:Score: 2
+:DateUnix: 1428730876.0
+:DateShort: 2015-Apr-11
+:END:
+
+***** True. For longer stories, though, I prefer being able to download it, save my progress, scroll back to previous lines, and have a soundtrack to listen to.
+:PROPERTIES:
+:Author: Timewinders
+:Score: 1
+:DateUnix: 1428766863.0
+:DateShort: 2015-Apr-11
+:END:
+
+****** You can do all that on the web too.
+
+Last year I reimplemented KS in Javascript minus the visuals, complete with music and sound playing, a savefile system, progress tracking, etc. And it's all client side so you can run it from files if you want. I didn't implement scrolling back to previous lines, but that's because it didn't seem necessary and complicates the engine, not because it's impossible.
+:PROPERTIES:
+:Author: Uncaffeinated
+:Score: 2
+:DateUnix: 1428768692.0
+:DateShort: 2015-Apr-11
+:END:
+
+******* Huh, that's pretty interesting. Can I get a link? It's not that I thought it was technically impossible, I was just comparing it to the other tools OP listed.
+:PROPERTIES:
+:Author: Timewinders
+:Score: 2
+:DateUnix: 1428769605.0
+:DateShort: 2015-Apr-11
+:END:
+
+
+*** Good point.
+
+There are also tools for making those, although I have not looked into them much...
+
+[[http://textadventures.co.uk/quest]]
+
+[[http://www.adrift.co/cgi/adrift.cgi]]
+
+[[http://www.tads.org/tads.htm]]
+
+[[http://inform7.com/learn/]]
+:PROPERTIES:
+:Author: abramdemski
+:Score: 3
+:DateUnix: 1428715206.0
+:DateShort: 2015-Apr-11
+:END:
+
+**** I don't know if rational roguelikes could be a thing, but here is a tool:
+
+[[http://ondras.github.io/rot.js/hp/]]
+:PROPERTIES:
+:Author: abramdemski
+:Score: 1
+:DateUnix: 1430693256.0
+:DateShort: 2015-May-04
+:END:

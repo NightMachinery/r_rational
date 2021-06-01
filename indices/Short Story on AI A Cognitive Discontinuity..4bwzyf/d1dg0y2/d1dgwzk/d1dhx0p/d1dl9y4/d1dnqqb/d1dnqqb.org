@@ -1,0 +1,17 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1458951479.0
+:DateShort: 2016-Mar-26
+:END:
+
+#+begin_quote
+  At what point is it no longer a "fad"?
+#+end_quote
+
+At the point where we stop just trying to optimize hyperparameters and achieve good test-set performance and set out to explain why it works.
+
+#+begin_quote
+  Most people opposed to deep learning (or neural nets in general) seem to me to be statisticians personally offended that the best performing models don't have as proven and obvious a mathematical grounding as they would like.
+#+end_quote
+
+I'm not so much offended that it works well as I am offended that very few people are trying to explain why it works. Normally I wouldn't invoke the Principle of Sufficient Reason, but "gradient descent in deep convolutional neural nets is great at learning functions" doesn't seem to me like a brute fact. It ought to have an explanation, and that explanation would help us generalize the success to many ML techniques. But people don't look for that explanation, they just say, "Deep neural nets are /smart/."

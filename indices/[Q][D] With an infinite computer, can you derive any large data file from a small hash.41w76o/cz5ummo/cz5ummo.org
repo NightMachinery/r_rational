@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: SpeakKindly
+:Score: 5
+:DateUnix: 1453333429.0
+:DateShort: 2016-Jan-21
+:END:
+
+Entropy rate of the English language is about one bit per character. This tells you the lowest size to which you can compress your research if the test for correctness is "seems vaguely coherent written in English". Think of what randomly generated research papers look like (e.g, [[http://thatsmathematics.com/mathgen/]]), or maybe Markov chain English sentences.
+
+Now, if you can write a test that distinguishes /correct/ research from /incorrect/ research, you can do better than this. But this should be hard. The question to ask is "is it possible to write a nonsense research generator that passes all these tests?" If the answer is yes, then most of the possible 1-gigabyte files corresponding to your 256-bit integer will be nonsense research than legitimate research, because there's a lot more nonsense research.
+
+I think the most plausible actual method would be to use the 256-bit integer to encode successful research paths. Say you memorize 64 050 022 778 895 360 168 845 298 619 307 079 864 103 618 688 689 436 920 572 106 993 648 082 329 355. This could mean "Think of the problem you're trying to solve. Spend five minutes listing the 9 likeliest possibilities. The correct one turned out to be #6 in alphabetical order. Next, think of 9 logical further questions to ask. The most promising one is #4 in alphabetical order. Next, think of 9 possible answers. It turns out (#0) none of them are correct. So think of 9 more..."
+
+(In general, this doesn't uniquely give you a research path, because your answers won't be perfectly consistent. In a time loop, we can achieve this. Just go to your favorite brilliant scientist and ask them to follow this algorithm. Assuming the scientist is not looping, they will list the same 10 possibilities each time. Spend the first 10 digits of your number on a lottery ticket to convince the brilliant scientist. Using someone else in this way is even better, because the brilliant scientist's brain is probably your best source of a really good compression algorithm for brilliant research, and this method lets us access it easily.)

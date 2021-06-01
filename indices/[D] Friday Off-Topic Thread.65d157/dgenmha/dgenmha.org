@@ -1,0 +1,44 @@
+:PROPERTIES:
+:Author: Kylinger
+:Score: 3
+:DateUnix: 1492487368.0
+:DateShort: 2017-Apr-18
+:END:
+
+I recently read [[https://fivethirtyeight.com/features/dissecting-trumps-most-rabid-online-following/][an article by 538 dissecting the_donald]], and in it the author uses a tool called "subreddit algebra", which allows you to "quantify how similar in essence one subreddit is to another", as well as remove overlapping subreddits to find what is most similar to that subsection.
+
+Here's the top 5 of [[/r/rational][r/rational]] on it's own.
+
+| Similarity Rank | Subreddit Name | Similarity Score  | Link                                       |
+|-----------------+----------------+-------------------+--------------------------------------------|
+| 1               | HPMOR          | 0.851678159480642 | [[http://www.reddit.com/r/HPMOR]]          |
+| 2               | Parahumans     | 0.759114717999807 | [[http://www.reddit.com/r/Parahumans]]     |
+| 3               | slatestarcodex | 0.703682977611835 | [[http://www.reddit.com/r/slatestarcodex]] |
+| 4               | badmathematics | 0.649494576684113 | [[http://www.reddit.com/r/badmathematics]] |
+| 5               | haskell        | 0.622410843878538 | [[http://www.reddit.com/r/haskell]]        |
+
+Here's [[/r/rational][r/rational]] - [[/r/fanfiction][r/fanfiction]]
+
+| Similarity Rank | Subreddit Name | Similarity Score  | Link                                   |
+|-----------------+----------------+-------------------+----------------------------------------|
+| 1               | HPMOR          | 0.389261906926621 | [[http://www.reddit.com/r/HPMOR]]      |
+| 2               | askscience     | 0.354243523206952 | [[http://www.reddit.com/r/askscience]] |
+| 3               | compsci        | 0.329397204744363 | [[http://www.reddit.com/r/compsci]]    |
+| 4               | Physics        | 0.325573932834288 | [[http://www.reddit.com/r/Physics]]    |
+| 5               | Python         | 0.322841702611167 | [[http://www.reddit.com/r/Python]]     |
+
+So without fanfiction, what's left is super STEM leaning. (And HPMOR)
+
+And [[/r/rational][r/rational]] - [[/r/slatestarcodex][r/slatestarcodex]]
+
+| Similarity Rank | Subreddit Name | Similarity Score  | Link                                       |
+|-----------------+----------------+-------------------+--------------------------------------------|
+| 1               | Parahumans     | 0.268512545916993 | [[http://www.reddit.com/r/Parahumans]]     |
+| 2               | HPMOR          | 0.26020922171739  | [[http://www.reddit.com/r/HPMOR]]          |
+| 3               | Pathfinder_RPG | 0.247157570716291 | [[http://www.reddit.com/r/Pathfinder_RPG]] |
+| 4               | WritingPrompts | 0.230485299821982 | [[http://www.reddit.com/r/WritingPrompts]] |
+| 5               | MyOwnLab       | 0.227464608230555 | [[http://www.reddit.com/r/MyOwnLab]]       |
+
+And the opposite, without politics/philosophy we're pretty much all fiction. It's impressive how well this tool matches my intuition of the various subsections of the sub. A final note, it's also interesting what you get when you do [[/r/rational][r/rational]] - [[/r/hpmor][r/hpmor]], since that was pretty much the birthplace of the sub. If you take that out, you get pretty nonsense results of super tiny subs.
+
+You can find the tool [[https://trevor.shinyapps.io/subalgebra/][here]].

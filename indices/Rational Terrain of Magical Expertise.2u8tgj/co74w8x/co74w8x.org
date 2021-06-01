@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: therearetoomanydaves
+:Score: 1
+:DateUnix: 1422743662.0
+:DateShort: 2015-Feb-01
+:END:
+
+First, a disclaimer: Haven't read TOME.
+
+Second, a lot depends on how people interface with the VR environment. One method would be sorta-like high-resolution MRI, where the game inteface reads (and possibly writes) state to/from the player's brain. This would let the player 'feel' pain, but there wouldn't be any physical consequences. (Maybe the interface could be used to control the player's body, zombie-style). In this model it may be possible to "lock" people into the game. See James P Hogan's "Giants" series.
+
+Third, how are characters represented in the game? If as a set of values, (strength, intel, mana, persuasiveness, etc) operated on by a generic character-interface program running natively on the game system then this "forbidden power" might be a sort of debug interface that can be enabled by the right combination of certain values, or the result of a value being set to an illegal value and the "player interpreter" jumping into an unexpected part of the code when it uses the value.
+
+If, instead, it's a program of some type running inside a virtual machine (VM) that makes game actions and senses available to the player, then a proper virus infection is possible, but its effect is limited to what the VM-to-gameworld interface allows. The VM sandboxing might have a bug that the virus exploits, but normal player programs doesn't.

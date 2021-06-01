@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 1
+:DateUnix: 1506768378.0
+:DateShort: 2017-Sep-30
+:END:
+
+#+begin_quote
+  An efficient, practical SAT solver is clearly powerful.
+#+end_quote
+
+You're going to need to be more specific here. That could include anything from a heuristic algorithm that only solves some "practical" SAT problems quickly (which is typically not considered an AI) to an Oracle AI that decides to solve difficult SAT problems by tearing up the Earth for computer parts so it can have more computing power.
+
+#+begin_quote
+  do you believe that it is impossible to create one without self-improvement?
+#+end_quote
+
+The walls are a lot higher without self-improvement. Now that I have had some time to mull over your previous idea:
+
+#+begin_quote
+  it seems that the far safer way to do it is to build oracle AIs, and simply ask them questions that allow you to better design the next generation of oracle AIs.
+#+end_quote
+
+I found some problems: do we understand the designs we are given? I imagine the idea is to keep iteratively asking each generation of Oracle AI to give a design the next generation, and having humans look over the designs and implementing the next generation without any further involvement from the old generation.
+
+Presumably, each design is going to involve a hefty chunk of code that human will have to sift through to determine what it is doing. But if superintelligent AI is the goal, at some point those designs will be too "intelligent" for human-level intelligence to understand. At which point we would either be stuck and unable to implement the next generation, or we would be implementing the next generation blindly without understanding what it does. In the latter case, that would be more or less equivalent to just letting the AI self-improve.

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: vallar57
+:Score: 3
+:DateUnix: 1470122272.0
+:DateShort: 2016-Aug-02
+:END:
+
+I was recently rereading the whole fic, and I think I found a pretty big mistake in Red's paper on Spinaraks.
+
+While looking for correllation with Night Shade attack strength, Red checked a multitude of parameters, such as weight, "other" and other. However, he didn't seem to make [[https://en.wikipedia.org/wiki/Multiple_comparisons_problem][multiple comparisons correction]]. The more parameters you check for correllation, the bigger is the chance that you'll find your correllation simply by chance. The most common multiple comparison correction is [[https://en.wikipedia.org/wiki/Bonferroni_correction][Bonferroni correction]], which is simply dividing statistical significance level by the number of comparisons you make. So, if Red tested, say, 10 parameters, he would have needed to squeack by not with 0.05, but with 0.005... which he promptly failed, since he got p-value of 0.048.

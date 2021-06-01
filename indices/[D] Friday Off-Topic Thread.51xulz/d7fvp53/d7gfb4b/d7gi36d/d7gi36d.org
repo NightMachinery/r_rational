@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 5
+:DateUnix: 1473474092.0
+:DateShort: 2016-Sep-10
+:END:
+
+I was initially planning on just supporting DF raw files straight out, but I really don't think the game is enhanced by simulating muscle and fat layers...not this game, anyway. The attribute system is pretty much pulled straight from there, though.
+
+The anatomy system has two reasons to exist: first, it cuts down on needing to list every move on every pokemon, or needing to list every pokemon on every move. I can simply give moves anatomical requirements, like "any pokemon with a Tail with an ATK stat can learn Iron Tail", or "any pokemon with at least two Grasp or four Grapple limbs can learn Pin". This reinforces the rationality aspect and reduces workload simultaneously.
+
+Second, it allows some moves to be used to target specific body parts at a hit disadvantage. Do I aim at the body for damage and a higher hit chance? Or do I aim for the wings and try to ground him? Imagine a fight between a Blastoise with one cannon out of commission against an Umbreon with a broken leg. Situations like this create dilemmas and force hard choices, and it's honestly the real reason I introduced it; other reasons just fell into place as I went.
+
+It should also be mentioned that most of this will be hidden by default from the player...until a more advanced pokedex is acquired with a readout of the pokemon in question /and/ an accurate move is learned by your team, you might not even encounter the system at all. Complexity, yes, but as a reward as the player digs deeper.
+
+I hadn't thought of that particular Metapod/Kakuna change, but I'll throw it in the list! Makes sense to me. I have tons of small ideas like that, such as enforcing the shellder/slowpoke evolution requirement, adopting the pokeball capture method from Origin of Species, pokemon not listening to you based on their temperament and your training skill rather than just level, pokedexes being used in battle for triage and individual scanning, evolutionary stones requiring sustained doses to encourage a more powerful evolution, etc etc etc etc. The first link in my OP is to a discussion and a document with most of the big changes and some of the smaller ones I'd like. The aim truly is to make a rational game that happens to be set in the pokemon world, rather than a pokemon game that happens to be rational.

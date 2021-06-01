@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: Rhamni
+:Score: 2
+:DateUnix: 1458413105.0
+:DateShort: 2016-Mar-19
+:END:
+
+#+begin_quote
+  When you say "rename", do you mean you gave it the same name as the old version?
+#+end_quote
+
+Yes.
+
+On a refreshed page, it displays one error: Uncaught TypeError: Cannot read property 'innerHTML' of null
+
+Clicking any purchase button gives the error: Uncaught ReferenceError: points is not defined. Clicking on the join faction buttons does not produce an error and works normally. It seems to be limited to buying stuff (including handicaps).
+
+The last version of the original script file still works, and I can copypaste stuff from your version to it, so it shouldn't be an issue.

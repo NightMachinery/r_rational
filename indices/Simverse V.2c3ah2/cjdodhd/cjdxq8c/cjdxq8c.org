@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: krakonfour
+:Score: 1
+:DateUnix: 1406900272.0
+:DateShort: 2014-Aug-01
+:END:
+
+You're not just modifying the shell code, but hoping that the core code will be overwritten. This requires a serious lapse in attention from the verification tool. As you cannot predict or test whether to verification tool is 'looking' or not, you'll just have to repeat multiple times for you to hit the correct time.
+
+The problem with a ship jumping back and forth just relaying information, is that it cannot be faster than the rendering cycles. If the enemy is also swapping at the same frequency, then you have gained nothing, or worse, your 'messenger' ship will reveal the position of the big computer, and it will fall under attack, in which case it will be forces between spending rendering cycles handling kinetics or moving itself out of danger...

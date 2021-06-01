@@ -1,0 +1,59 @@
+:PROPERTIES:
+:Author: OutOfNiceUsernames
+:Score: 1
+:DateUnix: 1466953500.0
+:DateShort: 2016-Jun-26
+:END:
+
+Your spoiler misused a =/s= instead of a =#s= (should've copied it from this sub's sidebar), though it still works as a hover-tooltip text.
+
+#+begin_quote
+  How do I spoiler stuff anyway?
+#+end_quote
+
+Two main ways of doing that on reddit, one of which you've already used (HTML link mouseover text, could be unreadable for mobile users). The other format depends on the subreddit's custom CSS --- for instance [[/r/rational/]]'s syntax is =[spoiler text](#s "spoiler content")= (so it works as both a CSS style spoiler and as a fallback HTML spoiler) and [[/r/HPfanfiction/]]'s is =[spoiler content](/spoiler)= --- and in my opinion is worse because it doesn't work for those readers that have the custom subreddit style disabled.
+
+Compare:
+
+#+begin_quote
+  [[/s][Re WMDs and environment:]]
+#+end_quote
+
+- should work as HTML mouseover
+
+** 
+   :PROPERTIES:
+   :CUSTOM_ID: section
+   :END:
+
+#+begin_quote
+  [[#s][Re WMDs and environment:]]
+#+end_quote
+
+- should work as both CSS style (on this sub) and as a HTML mouseover if the custom-CSS is disabled
+
+** 
+   :PROPERTIES:
+   :CUSTOM_ID: section-1
+   :END:
+
+#+begin_quote
+  [[#s][]]
+#+end_quote
+
+- should work only if the custom-CSS is enabled on this sub
+
+** 
+   :PROPERTIES:
+   :CUSTOM_ID: section-2
+   :END:
+
+#+begin_quote
+  [[/spoiler][There is a reason why ... the war ended.]]
+#+end_quote
+
+- should not work here, and should work on [[/r/HPfanfiction/]] only if custom-CSS is enabled on their sub.
+
+--------------
+
+Your discussion with [[/u/Nthrown]] also reminded me of another problem: some characters --- especially some fukas and questing knights --- were rather intestinguishable from each other because there wasn't much character development for them (they were too bland), because they were being showcased too rarely, or both.

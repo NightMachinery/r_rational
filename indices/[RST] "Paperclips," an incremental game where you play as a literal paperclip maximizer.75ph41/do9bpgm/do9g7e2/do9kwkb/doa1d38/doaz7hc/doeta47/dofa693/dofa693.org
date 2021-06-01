@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 5
+:DateUnix: 1508117312.0
+:DateShort: 2017-Oct-16
+:END:
+
+No, the Javascript halted when it got to 'Math.log10(d)', because [[https://stackoverflow.com/questions/28296928/why-does-math-log10-work-on-some-systems-but-return-undefined-on-others][IE11 couldn't handle it]] (was running Universal Paperclips in a separate browser from the normal browser used). Defining Math.log10 as described in the above 'Second edit' fixed the issue (had to be done once for each session).

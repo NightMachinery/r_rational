@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: EliezerYudkowsky
+:Score: 17
+:DateUnix: 1437507038.0
+:DateShort: 2015-Jul-22
+:END:
+
+If Hutter's not talking about tiling agents / Vingean reflection, then I'm not sure what he could have originally said to the reporter, but my guess is he's talking about that, unless Hutter considers Schmidhuber's paper on Godel machines to qualify as a proof of that (I sure wouldn't call that "a mathematical theory proves that...")
+
+So far as I know, what has been shown so far is that, given some generous assumptions, a certain kind of expected utility agent will approve creating another agent with the same utility function.
+
+Mathematical proofs should always follow with necessity from their stated assumptions, with no additional assumptions being required. What if Omega is watching you and threatening to destroy everything you care for unless you add one tiny codicil to your utility function about there existing at least one paperclip? Well, actually in this case you should ignore Omega because no-blackmail equilibrium. But suppose Omega is offering you a trillion galaxies' worth of resources if you modify your utility function to consider the preservation of at least one paperclip to be a terminal value; in that case, you should modify yourself accordingly.
+
+Since math is about conclusions which follow with necessity from premises, any theorem you prove about agents building similar agents or stably self-modifying should include an assumption which says that the above doesn't happen. In our most recent work this appears under the rubric of what we've been calling the "no-Newcomb condition" (not sure if we have anything published on this). Nothing like that is explicitly stated in Schmidhuber's Godel-machines paper, so if Hutter thinks a real theorem could have been proven there showing tiling stability, that would be a mistake. It's plausible that Hutter was referring to MIRI's tiling-agents work, though.
+
+But ultimately, you can't judge any scientist by what a reporter says they said. There's no way of knowing what the scientist really said, or tried to say, or repeatedly rephrased until the reporter got something they wanted, etcetera.
+
+Don't know of a better starting point than [[https://intelligence.org/files/TilingAgentsDraft.pdf]]

@@ -1,0 +1,36 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1444103420.0
+:DateShort: 2015-Oct-06
+:END:
+
+#+begin_quote
+  ballooning storage requirements
+#+end_quote
+
+Compression and binary formats are a problem. The solutions is a combination of a FUSE equivalent and union filesystems allowing you to combine views of data together. Store an image as a png, access it like a byte array.
+
+#+begin_quote
+  slower usage times
+#+end_quote
+
+Latency? Yeah, it's a problem with network transparency. But most of what people do is web dev which is insanely high latency anyway. I'd gladly trade some latency for an OS that's better suited for massively parallel computing tasks. As long as it's good at caching things in ram seek times don't matter much to me.
+
+#+begin_quote
+  without losing some information.
+#+end_quote
+
+That's essentially because they;re statically typed. Imagine an approach like python, where it's ducked typed. Alright, bad metaphor, I admit.
+
+In json, objects/dicts/hashmaps can have any number of attributes/keys. Extra metadata doesn't hurt anything. It only becomes a problem when you have to deserialize files in a very specific way. Generic serializes deal fine with extra data.
+
+Furthermore, exposing the data structure should at least make people converge on a reasonable standard a little bit.
+
+#+begin_quote
+  seems to be very little benefit.
+#+end_quote
+
+The benefit mostly comes from having an ecosystem of tools that you can chain together. ls isn't very useful, and neither is cat. But when you get enough of these tools you get a much more powerful system.
+
+It's a bit ideological I admit, but I think it's potentially a lot more powerful, eventually. Plus it should encourage a steady learning curve from neophyte to programmer, something every OS should do. You should learn to do more and more complex tasks just by using a good OS.

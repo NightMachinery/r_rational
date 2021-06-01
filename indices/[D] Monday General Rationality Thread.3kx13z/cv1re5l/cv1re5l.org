@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: TimTravel
+:Score: 8
+:DateUnix: 1442275756.0
+:DateShort: 2015-Sep-15
+:END:
+
+Since TrueCrypt stopped being developed I haven't been able to find an open source encryption program that will encrypt my entire hard disk including the system drive. Closed source is a deal breaker because I don't trust closed source encryption programs, and I want to encrypt my entire hard disk instead of just sensitive information because it is not the case that I trust every single program I install not to store mysterious data in weird places on my system.
+
+The main reason encryption is important to me is that there is a lot of legal precedent in US law based on that which is typical, so the more it becomes typical for people to use hard drive encryption, VPNs, and so on, the more existing laws will protect privacy of data. I realize that it's more or less hopeless but it's better than nothing. Encryption software and VPNs are both fast enough that the cost to me is insignificant.
+
+TrueCrypt used to do it, but they stopped developing it. CipherShed and VeraCrypt seem to be the main successors, and VeraCrypt seems to be developing faster. Unfortunately, neither can encrypt the main drive on my laptop because I have a GUID partition table instead of a MBR partition table and that's not supported for reasons I don't understand.

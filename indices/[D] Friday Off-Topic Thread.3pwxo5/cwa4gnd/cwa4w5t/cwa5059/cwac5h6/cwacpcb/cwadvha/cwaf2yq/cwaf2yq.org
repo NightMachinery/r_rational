@@ -1,0 +1,50 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1445630003.0
+:DateShort: 2015-Oct-23
+:END:
+
+#+begin_quote
+  I also challenge your accusations against indices.
+#+end_quote
+
+I'm not saying indexes are stupid, I'm saying that they serve a very different purpose and a very different use case.
+
+#+begin_quote
+  search at the speed of grep
+#+end_quote
+
+I meant it exactly as you took it. It would be slower then indexes. You seem to have presumed that I meant the exact opposite of what I said, and that what I was saying was /stupid/.
+
+Are you familiar with the concept of [[http://wiki.lesswrong.com/wiki/Steel_man][steel manning]] your opponents arguments?
+
+#+begin_quote
+  I don't think your explanations capture it.
+#+end_quote
+
+True. That's part of why I'm trying to explain it. But a bit of the benefit of the doubt could go a long way.
+
+Picture a system. An api if you'd like. You access it like a standard data structure in your language.
+
+In python, you could go
+
+#+begin_example
+  textures = ds['home']['trishume']['3Dfile']['textures']
+#+end_example
+
+and get an iterator containing all of the textures for a 3D model, as byte arrays.
+
+User can still treat it almost exactly the same, but developers aren't forced to reinvent file structures all the time. They just treat it as data. You know there's a FUSE filesystem for treating a remote wiki like a bunch of text files?
+
+This doesn't have to replace a conventional filesystem. Users should be able to interact with it more or less as if it was a conventional filesystem though.
+
+Developers on the other hand, see a collection of data structures, just like if they'd made them themselves.
+
+Maybe you want to add some experimental texture layers to your 3D file. Something that most 3D editors have no idea what to do with. You don't have to put them into the "textures" key/attribute. You could put them under a different key in the 3Dfile hashmap/associative-array/dict.
+
+This means that multiple different programs can all use the same "file" to store their data.
+
+Obviously there are a lot of technical challenges, but as an api, as a way of accessing data and interacting with other programs, doesn't it sound pleasant? More or less like sharing a json file between you.
+
+Now there's more implementation details that would make it genuinely better then just a json file, but I want to make sure there's nothing to contentious in that bit first.

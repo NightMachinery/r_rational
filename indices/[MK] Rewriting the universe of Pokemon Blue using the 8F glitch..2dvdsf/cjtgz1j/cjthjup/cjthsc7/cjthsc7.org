@@ -1,0 +1,9 @@
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1408362694.0
+:DateShort: 2014-Aug-18
+:END:
+
+The way these work is by exploiting a glitch (or series of them) that can write an arbitrary number to an arbitrary address, and can change the program counter. If you write a series of numbers to a block of addresses, then move the program counter the the beginning of said block, the console will execute whatever assembly is stored in said block. Hence, arbitrary code.
+
+It's not really a hack since someone trapped inside the vanilla game would have access to this ability.

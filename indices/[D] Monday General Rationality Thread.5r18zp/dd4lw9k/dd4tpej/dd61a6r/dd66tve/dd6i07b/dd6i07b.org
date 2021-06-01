@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: Marthinwurer
+:Score: 1
+:DateUnix: 1485929751.0
+:DateShort: 2017-Feb-01
+:END:
+
+Thanks for the reply! I've been looking at the source code for Hansen; I guess I just need to look harder for the ocean model in there. To me, the codebase looks like a mess, but that's probably the Fortran melting my brain. And the 50 lines of global variable declarations, and the 7000 line file declaring constants. But hey, it supposedly works, even though I can't get it to compile.
+
+The terrain will be randomly generated initially, and I'll figure out a sea level and process that heightmap until it's in a format that would work. I think I'll stick with earth's atmospheric and solar conditions because I don't know enough about that. I need to work more with spherical grids, and convert my erosion model to use them.
+
+My goal is to port a "good enough" model to C, and then parallelize it with OpenCL. I've already got an erosion model working on a random fractal heightmap, and that's doing 1024*1024 grids in ~250ms per frame while poorly parallelized on my laptop, so I think I'll be able to do a low resolution GCM fine, especially if I can get most of the computations working on the GPU. My desktop is very beefy, so I'm sure it will be able to handle what I need. If not, I've always wanted to build a cluster. :D
+
+I haven't thought much about file formats. I'll look into NetCDF.
+
+I hadn't really thought too much about the initial convergence. How have GCMs done this historically? (Or do you even have the background to answer that?) An idea just off the top of my head would be to compute the variance in some quality (velocity, temperature, precipitation, etc) and figure out when the multi-year rolling average starts to settle down. That or just try the good ol' guess and check method.
+
+Thanks for the help, I really appreciate it!

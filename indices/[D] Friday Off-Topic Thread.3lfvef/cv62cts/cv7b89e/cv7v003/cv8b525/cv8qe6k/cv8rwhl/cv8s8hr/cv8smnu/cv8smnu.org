@@ -1,0 +1,15 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1442818032.0
+:DateShort: 2015-Sep-21
+:END:
+
+Picture the scenario in which your agent is /you/, and you're rewriting yourself.
+
+Plainly, being human, you don't have a /perfect/ algorithm for picking actions. We know that fine and well.
+
+So how do we pick out a /better/ algorithm? Well, first, we need to specify what we mean by /better/: what sort of problem the action-selection algorithm solves. Since we're designing a mind/person, that problem and that algorithm are necessarily cognitive: they involve specifying resource constraints on training data, compute-time, and memory-space as inputs to the algorithm.
+
+If you've seen the No Free Lunch Theorem before, you'll know that we can't actually select a single (finitely computable) algorithm that performs optimally on /all/ problems in /all/ environments, so it's actually quite vital to know what problem we're solving, in what sort of environment, to pick a good algorithm.
+
+Now, to translate, a "normative-ethical view" or "normative code of ethics" is just the algorithm you endorse as /bindingly correct/, such that when you do something other than what that algorithm says, for example because you're drunk, /your actually-selected action was wrong and the algorithm is right/.

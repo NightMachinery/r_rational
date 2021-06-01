@@ -1,0 +1,42 @@
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 2
+:DateUnix: 1512170334.0
+:DateShort: 2017-Dec-02
+:END:
+
+#+begin_quote
+  If you know P(T1 | R1) (how often reports of Tier 1 are actually Tier 1) and P(T1|R2) (how often reports of Tier 2 are actually Tier 1), you still need to know the individual frequencies of R1 and R2.
+#+end_quote
+
+I'm not sure I follow why you need to know the frequencies. Isn't it enough to know what % of them are accurate, regardless of how frequently each one is reported?
+
+The point of this section:
+
+#+begin_quote
+  100 Events reported as Tier 1
+
+  79 are actually Tier 1
+
+  21 are actually Tier 2
+
+  100 Events reported as Tier 2
+
+  67 are tier 2
+
+  33 are Tier 1
+#+end_quote
+
+Is to essentially give that information as a hypothetical, since they don't have the actual frequencies of T1 vs T2 reports. Since their goal is to just figure out, as you say, whether /this specific/ T1 report is in fact accurate, I'm a little confused as to why it's necessary to know how often T1 reports occur at all, rather than just how often they're accurate.
+
+This:
+
+#+begin_quote
+  P(T1 | R1) = 0.79
+
+  P(T1 | R2) = 0.33
+
+  P(T1) would then be equal to 79% + 33% = 112%.
+#+end_quote
+
+Seems to be answering how frequent T1 is compared to T2 for /general pokemon reports,/ but we already have that answer for Tyranitar reports: 12%.

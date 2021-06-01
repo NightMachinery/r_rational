@@ -1,0 +1,299 @@
+#+TITLE: Updating HPMOR to be more scientific
+
+* Updating HPMOR to be more scientific
+:PROPERTIES:
+:Author: Sailor_Vulcan
+:Score: 12
+:DateUnix: 1426447410.0
+:DateShort: 2015-Mar-15
+:END:
+[[http://www.reddit.com/r/HPMOR/comments/2z48vy/for_the_record_up_quarks_arent_the_problem/cpfsnkl]]
+
+#+begin_quote
+  Yeah. I just read those reviews, and I have to admit, even drunk, it has a LOT of very valid points. It really makes much of HPMOR really disappointing in retrospect. Not only wrong science, but a lack of science at crucial points in the story. I'm not certain of it, but maybe the problem could be what the reviewer mentioned, that HPMOR only has one author with no formal education and a busy schedule. It is still quite a surprisingly good story in spite of that. I don't think the premise of RationalScientist!Harry had been explored much prior to HPMOR, and it is a premise that really deserves further exploration. Since EY is probably going to be too busy for it, I think I'm going to at some point start the collaborative project of making an updated version of HPMOR with more science and better science, and a more curious protagonist. It will probably require multiple writers and beta-readers from multiple scientific disciplines. And since the protagonist will be more curious, the story will involve a lot more exploration of the magical world, and therefore more side-plots and "filler" chapters. Some of the original writing from HPMOR will probably stay the same, but I doubt all of it will. This might end up being another alternate universe that spans all seven years at Hogwarts and maybe a little beyond that too. I am going to make another post to see who's interested in helping me with this.
+#+end_quote
+
+I might not participate in such a project myself until I have a little more college-level science education under my belt, but I think it would be a good idea to start planning for it and finding people who are willing to work on the project.
+
+Who's interested in this?
+
+
+** u/lfghikl:
+#+begin_quote
+  It will probably require multiple writers and beta-readers from multiple scientific disciplines. And since the protagonist will be more curious, the story will involve a lot more exploration of the magical world, and therefore more side-plots and "filler" chapters.
+#+end_quote
+
+More exploration of the magical world requires that there's a good explanation of what's going to be observed in the first place. "Just add more science to it" doesn't work for a fictional setting, you actually have to come up with the answers as well.
+
+With "multiple writers and beta-readers from multiple scientific disciplines" you'll just get a bunch of bored undergrads with too much time on their hands arguing for their pet theories. I expect the result to be an incoherent mess.
+:PROPERTIES:
+:Author: lfghikl
+:Score: 11
+:DateUnix: 1426463938.0
+:DateShort: 2015-Mar-16
+:END:
+
+*** u/deleted:
+#+begin_quote
+  With "multiple writers and beta-readers from multiple scientific disciplines" you'll just get a bunch of bored undergrads with too much time on their hands arguing for their pet theories. I expect the result to be an incoherent mess.
+#+end_quote
+
+This would at least rule out the scientific mistakes made by people who didn't even take relevant subjects at the undergrad level. Or, God help you, you could ask your bored undergrads to do a literature review in preparation for becoming bored grad-students.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1426496237.0
+:DateShort: 2015-Mar-16
+:END:
+
+
+** [[https://www.reddit.com/r/HPMOR/comments/2z3sz0/hpmor_full_review_su3su2u1/][This]] is the most relevant, thorough critique I can find of MoR, and it certainly touches on this. (There are lots of other awesome [[/r/rational]] authors - looking at you, [[/u/alexanderwales]] [[/u/DayStarEld]] [[/u/writingathing]] - who have offered their own criticism, too.)
+
+In any case, I'd certainly be on board for this. Though I think the best way would be going forward with a genius.com-style annotation of MoR, as was proposed in some [[/r/hpmor]] thread^{I^{can^{no^{longer^{find}.}}}} If that was done, we'd be able to highlight and point out all the deficits and lacking areas, then propose, discuss, and implement fixes.
+
+Ofc, I love MoR and [[/u/EliezerYudkowsky]], but it's a first draft, and it shows.
+:PROPERTIES:
+:Score: 11
+:DateUnix: 1426448269.0
+:DateShort: 2015-Mar-15
+:END:
+
+
+** I have been working on writing the mechanics behind time travel set in a universe which only allows Stable Time Loops drawing on my computer science knowledge. So far, my story is written as a series of experiments to illustrate the important points and the best exploits with no plot involved.
+
+It's not very far along, but if there ever is a scientific!HPMOR, I'll have something to contribute. With a little modification, I could rewrite the protagonist to be Harry instead.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 3
+:DateUnix: 1426469288.0
+:DateShort: 2015-Mar-16
+:END:
+
+*** u/deleted:
+#+begin_quote
+  I have been working on writing the mechanics behind time travel set in a universe which only allows Stable Time Loops drawing on my computer science knowledge. So far, my story is written as a series of experiments to illustrate the important points and the best exploits with no plot involved.
+#+end_quote
+
+Ooh. Is it dataflow analysis?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1426496311.0
+:DateShort: 2015-Mar-16
+:END:
+
+**** A little bit. I'm not actually at the point where I would incorporate that type of knowledge into the story. I'm currently at the stage where some preliminary testing is being done as I flesh out the rules behind my time traveling mechanics. But I do intend to get to the point where actual computer science knowledge like dataflow analysis (what little of it I actually know) and some randomness mixed with probability theory, instead of all the Turing Machines people use in sci-fi (we never even see the /really/ interesting non-deterministic variant!).
+
+I've been thinking about how Time Loops can be used as steps in an algorithm with the Stable Loop as the final step in the algorithm, like Harry tested his prime-factoring algorithm in HPMOR.
+
+But what if that idea could be extended to make each loop execute an algorithm to allow a program of multiple algorithms to be executed over several Time Loops (in a sequential manner since according to my 'rules' timelines aren't stimulated in parallel). This (probably dumb) nascent idea was inspired by [[https://www.fanfiction.net/s/9658524/1/Branches-on-the-Tree-of-Time][Branches on the Tree of Time]] in how multiple timelines could influence other timelines.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1426498254.0
+:DateShort: 2015-Mar-16
+:END:
+
+***** u/deleted:
+#+begin_quote
+  I've been thinking about how Time Loops can be used as steps in an algorithm with the Stable Loop as the final step in the algorithm, like Harry tested his prime-factoring algorithm in HPMOR.
+#+end_quote
+
+Hence my mention of dataflow analysis: fixed-point algorithms seem like the right way to compute a stable time loop.
+
+#+begin_quote
+  some randomness mixed with probability theory, instead of all the Turing Machines people use in sci-fi (we never even see the really interesting non-deterministic variant!).
+#+end_quote
+
+Oooh, probabilistic programming/stochastic computation. Have you been reading my mind?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1426499504.0
+:DateShort: 2015-Mar-16
+:END:
+
+****** /blink, blink/
+
+Oops. I thought dataflow analysis was about sorting and modeling large amounts of data which I was going use to illustrate the power of the time loop (if it weren't for information constraints I'm inserting to keep from smart people from abusing this ability). I need more sleep...zzz
+
+Looking at the wiki article, it sounds like fixed-point algorithms is exactly what I was looking for when I checked through my computer science textbooks. Thanks! I think I haven't learned too much about it yet, because it's covered in the /upcoming/ Algorithms course (time travel would be so useful right now!).
+
+#+begin_quote
+  Have you been reading my mind?
+#+end_quote
+
+Not really, it's just happens to be the obvious thing to talk about when my time travel mechanic works by squeezing probability mass from unstable time loops into more stable loops as its method of selection. I'm actually debating how it would 'know' which loop to squeeze the probability of occurring into. I'm slightly worried that I won't know enough about stochastic computation to do this justice.
+
+Forget boring discussion of free will vs determinism! Just figure out how to munchkin your foreknowledge anyway!
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1426500677.0
+:DateShort: 2015-Mar-16
+:END:
+
+******* u/deleted:
+#+begin_quote
+  Looking at the wiki article, it sounds like fixed-point algorithms is exactly what I was looking for when I checked through my computer science textbooks. Thanks! I think I haven't learned too much about it yet, because it's covered in the upcoming Algorithms course (time travel would be so useful right now!).
+#+end_quote
+
+Oh. You're still an undergrad?
+
+#+begin_quote
+  I'm slightly worried that I won't know enough about stochastic computation to do this justice.
+#+end_quote
+
+Look up probabilistic Turing machines and probabilistic lambda calculus to get an idea of what's going on.
+
+#+begin_quote
+  Forget boring discussion of free will vs determinism! Just figure out how to munchkin your foreknowledge anyway!
+#+end_quote
+
+/eh-hem/
+
+[[https://www.youtube.com/watch?v=CaZgFHuG23U]["We don't care about time or space or multidimensional whatevers! Force your way down the path you choose to take, and do it all yourself! That's the way TEAM-DAI-GURREN ROLLS!"]]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1426504730.0
+:DateShort: 2015-Mar-16
+:END:
+
+
+** General proposal: in a "rational" story, there should be an obvious Science Ball. It should be clear who is holding the Science Ball. When a character is holding the Science Ball, they are required to be quoting accurate, or at least at-the-time accurate, real-world knowledge from whatever discipline they are talking about, or the author is subject to critique. Likewise, when the character is /not/ holding the Science Ball, they can fuck up every bit as badly as any other layperson.
+:PROPERTIES:
+:Score: 6
+:DateUnix: 1426491461.0
+:DateShort: 2015-Mar-16
+:END:
+
+*** I guess HPMOR's character with the Science Ball is Hermione. Because she's always is the one to be quoting directly from scientific articles and no one seems to have noticed her messing up any important scientific knowledge.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1426496741.0
+:DateShort: 2015-Mar-16
+:END:
+
+**** She's the one who's usually actually accurate. Unfortunately, the story sidelines her, portrays Harry as holding the Science Ball, spends a bunch of time on action sequences mixed with the Transhumanism Ball, then /kills off the character who had actually spoken correct science because she studied/, and then does an entire arc of "Wow, look how /dumb/ Harry was!", and then uses only-semi-accurate scientific speculation to go "Wow, look how powerful a trained rationalist like Harry is even when cornered!", and then ends promptly with the magic of friendship.
+
+So overall, the Science Ball was not the main MacGuffin of the Science Potter Story, and this is a neat summary of my frustrations with the story.
+:PROPERTIES:
+:Score: 7
+:DateUnix: 1426496983.0
+:DateShort: 2015-Mar-16
+:END:
+
+
+** That one is forgetting that Harry has just read a couple of books. He has no formal scientific education whatsoever. It's not surprising he doesn't know that much.
+:PROPERTIES:
+:Author: kaukamieli
+:Score: 3
+:DateUnix: 1426452780.0
+:DateShort: 2015-Mar-16
+:END:
+
+*** HPMOR still aspires to be rational though, and Harry is very much an over the top rational aspiring character. Giving an excuse like that seems a lot like trying to have it go both ways, letting Harry be in many ways smarter than anyone around him, while at the same time excusing any shortcomings on his part by saying that he's still just a kid.
+
+If HPMOR is trying to be rational story, then there are still many ways to think of how it could be improved. That goal, in and of itself, is not undesirable or not worth aspiring towards.
+:PROPERTIES:
+:Author: RolandsVaria
+:Score: 3
+:DateUnix: 1426454318.0
+:DateShort: 2015-Mar-16
+:END:
+
+**** u/KharakIsBurning:
+#+begin_quote
+  Giving an excuse like that seems a lot like trying to have it go both ways, letting Harry be in many ways smarter than anyone around him, while at the same time excusing any shortcomings on his part by saying that he's still just a kid.
+#+end_quote
+
+yes?
+:PROPERTIES:
+:Author: KharakIsBurning
+:Score: 7
+:DateUnix: 1426454369.0
+:DateShort: 2015-Mar-16
+:END:
+
+***** My point is, if the story is going to glorify Harry's good sense whenever he does something particularly intelligent, then ideally it would do as much as it can to take apart his flaws rather than simply excusing them. Which isn't to say HPMOR makes Harry seem perfect, just that Harry still has a long way to go, and exploring the areas in which he still comes up short has merit.
+:PROPERTIES:
+:Author: RolandsVaria
+:Score: 2
+:DateUnix: 1426455086.0
+:DateShort: 2015-Mar-16
+:END:
+
+****** I mean, did you read the last arc? Pretty much every chapter is "QV did something evil, hahahaha. And Harry Potter felt very bad because he was stupid." Even the last chapter is "Oh wow I am still very stupid."
+
+The idea of "Harry still has a long way to go, and exploring the areas in which he still comes up short has merit" is ever present throughout the book. "Tsuyoku Naritai!" might as well be on of Harry's slogans.
+:PROPERTIES:
+:Author: KharakIsBurning
+:Score: 9
+:DateUnix: 1426459324.0
+:DateShort: 2015-Mar-16
+:END:
+
+******* Yes, and I took the opening of these thread to mean that people want to take that further. Which doesn't seem like a bad idea.
+:PROPERTIES:
+:Author: RolandsVaria
+:Score: 1
+:DateUnix: 1426459692.0
+:DateShort: 2015-Mar-16
+:END:
+
+******** I could see a metafanfic called "Harry Potter and Mediations on Err" being successful. It involves Hermione reading, learning, and then going up to Harry and saying, "You're stupid af" and then the two engaging in meaningful debate.
+:PROPERTIES:
+:Author: KharakIsBurning
+:Score: 3
+:DateUnix: 1426461717.0
+:DateShort: 2015-Mar-16
+:END:
+
+
+**** Yes, he is smarter, and a lot of that is because he is secretly as old as Voldemort.
+:PROPERTIES:
+:Author: kaukamieli
+:Score: 1
+:DateUnix: 1426492977.0
+:DateShort: 2015-Mar-16
+:END:
+
+
+** I'm kind of interested, but I do not know how much I could assist. I have a law degree, so mainly I'd want to tackle chapter 97 where Harry handwaves away the complexities of the legal system. The more simple you make a legal system, the more interpretation you will require from judges and government. Famously, you could make the penal code a lot less complex by replacing it with the rule 'do not bad things'. Doesn't make it clearer for the general population though.
+
+Small societies have a tendency to have simple rules, since everyone knows each other and all business is intertwined with personal relations. It's not until societies become larger, that people desire more laws and regulation. Of course, that's normal societies. Don't know how it works in a wizarding world where about 90% of the population is employed by the government.
+
+Ooh, blood dept would also be fun to work out. The rule could be formally introduced in Rita's fake article in the beginning, so that Lucius falls under it but not the other death eaters.
+:PROPERTIES:
+:Author: WriterBen01
+:Score: 1
+:DateUnix: 1426527097.0
+:DateShort: 2015-Mar-16
+:END:
+
+
+** I think it's higher priority to improve the */actual science/* bits (exactitude and pedagogy) than to invent more precise rules of magic for him to find.
+:PROPERTIES:
+:Author: Jules-LT
+:Score: 1
+:DateUnix: 1426530215.0
+:DateShort: 2015-Mar-16
+:END:
+
+
+** HPMOR, but longer? lolol
+:PROPERTIES:
+:Author: chaosmosis
+:Score: 0
+:DateUnix: 1426460757.0
+:DateShort: 2015-Mar-16
+:END:
+
+
+** I dunno, the whole transfiguration thing just reeks of the "no limits fallacy" that pops up all the time in whowouldwin type debates. There should be limits on the magic system but its basis is bibbity bobbity boo and not subject to Sanderson's Laws or any system whatsoever so the speculation should be treated as fun. Really the funnest parts were the bits about things like wingardium leviosa. The assumption that up quarks would be transfigured at maximal density is fun but pretty dumb. Everything else has transfigured over at room temperature and stable at standard air pressures. The majority of Iron in the universe sits molten at the core of stars but if you transfigure something into iron it is solid and room temperature.
+
+SO anyway, I defy you to fit that square peg into that round hole. The source material had no aspirations to follow any rules so you're facing an uphill battle.
+:PROPERTIES:
+:Author: Jarnagua
+:Score: 0
+:DateUnix: 1426524329.0
+:DateShort: 2015-Mar-16
+:END:

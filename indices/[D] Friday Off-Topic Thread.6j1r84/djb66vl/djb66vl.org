@@ -1,0 +1,42 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 10
+:DateUnix: 1498245594.0
+:DateShort: 2017-Jun-23
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Pretty decent progress this past week.  I'm in the middle of writing XGEF, which, contrary to some people's expectations, is not going to be all that big. It basically handles setting up a very bare-bones framework around which an engine can be built, while also providing a few systems related to managing mods. In particular, it will handle the system that takes a set of mods, compares it to the code that it's modifying, and then performs any alterations that need to happen before compiling them.
+
+I had thought that this last bit was going to take loads of work, but as it turns out Microsoft has actually done a good job with a library called Roslyn.  Roslyn is the compilation engine that Visual Studio itself uses to compile C# code (as well as Visual Basic, but who's counting).  Since it itself was written using C# and then subsequently open-sourced, it means that those of us looking to compile C# code on the fly have an extremely powerful tool at our fingertips.
+
+It's not just compiling, but it also handles code analysis, which for us is really the important part.  I need to be able to look at the actual symbols that the code represents, and not just the text of the code itself. For instance, here is a symbol graph that Roslyn generated based on the entry point of my test program:
+
+[[http://i.imgur.com/GadZbhR.png]]
+
+The blue nodes are /symbols/, which is to say, the /actual/ constructs that I'm worried about manipulating.  The green nodes are the actual code that was typed (read them all left to right to see what the program that was analyzed was), and the grey and white are things like whitespace and other chaff that, while important for actually reading the code, does not affect its meaning.
+
+This system is /powerful/.  Manipulating only nodes, I could, for instance, load up a mod in Roslyn, search for a blue class node, grab its name, look for that same class name node in the core game symbols, and then just copy-paste. Boom, moddability.
+
+(Granted there's more to it to make the system intuitive, but I was /not/ expecting to have this level of progress after like a week's worth of work.)
+
+--------------
+
+While discussing this progress on the Discord server, we had a bit of discussion over the minimalistic bare minimum version of a standard Pokemon game.  What I mean by this is, what is the absolute least number of mechanics that one could include to have a simple game still contain the core gameplay loop of Pokemon?
+
+I can't remember where I first came across this concept (probably Extra Credits), but I remember the example they gave of the original Super Mario.  You pull Mario down to the barest of bones and what do you have left that's still fundamentally Mario gameplay?  A block that can move right, jump, and a pit in the ground to jump over.  That's pretty much it--all the rest (lives, score, time limit, goombas, mushrooms) is simply building off of that corest of mechanics.  
+
+The conclusion I came to for “what's the most theoretically minimalistic version of Pokemon” was basically a never-ending string of battles, my argument being that the overworld is really just an excuse to get you from one battle to another.  Pokeballs, however, are still included in this pared-down version, as the game is essentially not just about fighting, but about building a team that fights.  It almost looks like an even more sparse version of Safari Zone: Your options are Fight or Capture, and the game is over when all your current team have been Fight'd to death.
+
+Why bring this up?  Well, we've been trying to hash out where the line needs to be drawn between hidden, compiled, inaccessible game system logic, and exposed, open, freely end-user-changeable moddable files.  This exercise was an effort to try and define that line, but I don't think it works: Combat and Team-building are certainly core, but neither one is a single all-encompassing system to have a fence built around it, and there are other concepts that are just as crucial that ought not to be meddled with.
+
+In the end, I'm betting that most systems will be more-or-less hybrid: some bits that can't change to ensure the stability of the game as a whole, and then some parameters or configurations that are freely moddable (you can't remove or change the fundamental concept of a Stat, but you can change ATK or DEF or add a new MAGIC stat if you so choose).  However, it will be important to ensure that everything that should be in the walled garden, is.  For every system that we permit to be potentially modified, it increases the complexity of the system as a whole, and introduces what is essentially a random element to the game's structure.  
+
+So with that, I leave you with a question:  what is /essential/ about Pokemon to you?  What parts could you absolutely not part with if you still wanted to call something a Pokemon game?  On the flip side, what concepts could you absolutely do without?  Any input would greatly help our efforts to map out this territory.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

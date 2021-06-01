@@ -1,0 +1,40 @@
+:PROPERTIES:
+:Author: Iijil
+:Score: 3
+:DateUnix: 1512216977.0
+:DateShort: 2017-Dec-02
+:END:
+
+[[/u/daydev][u/daydev]] has it essentially right.
+
+First we have a flip in the direction of the conditions. To change that around we need the ratio of reports.
+
+Second we apply the test to some different group, where we have some reason to believe the accuracy of the test will stay the same. The difference between that group and the original group is in the prior.
+
+Last we use Bayes to flip the conditional direction again, because that is the actually useful direction to use.
+
+The best analogy for the cancer situation I can construct is this:
+
+#+begin_quote
+  1% of women at age forty who participate in routine screening have breast cancer. 2% of women at age sixty who participate in routine screening have breast cancer.
+
+  8% of women at age forty who get positive mammographies turn out to actually have breastcancer. 0.2% of women at age forty who test negative turn out to still have breast cancer.
+
+  We think the test will have the same accuracy for both age groups.
+
+  A woman at age sixty had a positive mammography in a routine screening. What is the probability that she actually has breast cancer?
+#+end_quote
+
+To answer that question we first find the accuracy of the test by only looking at the age 40 group. There we have: P(c)=1%, P(c|+)=8%, P(c|-)=0.2%. We are looking for P(+|c) and P(+|no c).
+
+I'm not sure if there are better ways to go about this, but the best approach I know is to first figure out P(+). We know that P(c)=P(c|+)P(+)+P(c|-)P(-) and P(-)=1-P(+). We solve for P(+)=(P(c)-P(c|-))/(P(c|+)-P(c|-)) and get about 10.256%. Once we have that we can use it to flip the direction of the conditions by using it as the prior in a Bayes calculation. We get P(+|c)=82% and p(+|no c)=9.5%.
+
+This is the point in the calculation where the example in your edit starts out. We know the accuracy of the test, the prior probability of the age group we want to apply it to and now want to figure out the actual chance of having cancer once we test positive.
+
+Since we assume the accuracy between age groups stays the same we can now just use the calculated accuracy with the known prior chance of having cancer for the age sixty group to apply Bayes again. We have P(c)=2%, P(+|c)=82% and P(+|no c)=9.5% so we get P(c|+)=15%.
+
+Soooo, the difference, where we need to know the ratio between reports of Tier 1 and Tier 2 is in the step both of your examples skip over, where we turn the initial conditional direction around. The ratio between incoming reports is important, not their actual number.
+
+There may or may not be clever mathematical ways to get the result without calculating the ratio in between, but I don't know of them.
+
+There is no mathematical reason that keeping the accuracy of the reports the same between general Pokémon and Tyranitar is the correct thing to do. That part is taken from additional reasoning about the world.

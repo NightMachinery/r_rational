@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: zarraha
+:Score: 2
+:DateUnix: 1478455580.0
+:DateShort: 2016-Nov-06
+:END:
+
+Even if it's not obvious that "exactly constant" is the correct solution, it should be pretty clear that your betting amounts should scale upwards as your total money does, and downwards as it drops, so that you never end up betting everything you have. My initial strategy was a vague "let's throw in $5 to be safe and then adjust as necessary" which starts at 20%, but I would probably bet $5 the first few rounds and only update it to be proportional again every few bets.

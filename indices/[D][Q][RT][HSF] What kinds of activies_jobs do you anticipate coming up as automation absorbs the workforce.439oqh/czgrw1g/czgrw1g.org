@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: Vebeltast
+:Score: 10
+:DateUnix: 1454097889.0
+:DateShort: 2016-Jan-29
+:END:
+
+Machine learning whisperer. These systems /will/ include significant machine learning, and a lot of installations will develop their very own unique idiosyncrasies. Sometimes they'll get stuck in wacky local minima and you have to have someone come in who can figure out the configuration space for /your factory in particular/ and push it over to another potential well. Sometimes you'll have a neural net that found an improperly installed pressure gauge and has used it to build a tiny little recurrent loop, and you fixed the gauge and now everything is broken. And so on and so forth.
+
+#+begin_quote
+  Different countries and governments have different ways they have managed the problem of automation and not all countries have equal automation infrastructure/prevalence.
+#+end_quote
+
+This makes this job even more important. Interop is going to be a big job, especially if two systems are using incompatible architectures. Say that you're trying to get a store's logistical planner talking to a factory's, but the store's planner does backward chaining directly in the original state space, while the factory is doing evolutionary algorithms on SAT instances. Gluing these together is going to be /painful/, but someone is going to have to do it.

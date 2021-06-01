@@ -1,0 +1,47 @@
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1434431046.0
+:DateShort: 2015-Jun-16
+:END:
+
+#+begin_quote
+  It was pretty terrible because his core argument was that it would take 174 years to disassemble Mercury using the entire output of the sun at 1/3 efficiency.
+#+end_quote
+
+It will take an average of 4MJ to move 1kg of material from Mercury throughout the project (8MJ to start, gradually going down to nothing when we are left with the final 1kg chunk). If we assumed we started with the entire solar output dedicated to the project at 100% efficiency, we need about 10^{30} J. We get that in 10,000 seconds, about three hours. At 1/3 energy collection efficiency and 1/10 mining efficiency, as the article assumes, we still finish in 300,000 seconds -- a little over three days.
+
+#+begin_quote
+  Anyone else have a similar story to share, and/or want to check my math in the WP article?
+#+end_quote
+
+The problem isn't so much with how long it takes to pay off. It's with the time it takes to dismantle a planet.
+
+[[http://qntm.org/destroy][The definitive guide to destroying planets]] suggests using a large number of mass drivers expelling matter at 11km/s. We only need to hit 4km/s, fortunately, since Mercury is small. That's 8MJ to move one kilogram of Mercury (or iron or silicates) into solar orbit.
+
+That number will go down as we expel more of Mercury off Mercury, of course. We have 3.3×10^{23} kg of Mercury to move.
+
+We're starting with a 1km square of solar generators capturing 1/3 of incoming solar energy, and that's positioned within spitting distance of Mercury -- we'll say it's in a polar orbit around Mercury, oriented for constant exposure to the sun. Mercury is about 7×10^{7} km from the sun. 4×pi×r^{2} gives the surface area of a sphere at that distance -- 6^{16} square kilometers, give or take, and we're drawing power from one of them. The sun's total output is 3.8×10^{26} W. That leaves us with ~10^{9} W.
+
+Since we require 10^{29} J to launch 5% of Mercury into orbit, our dinky solar array lets us launch 1/10^{20} of our payload into orbit per second. It'll take 10^{20} seconds to move that entire slice of the planet. That's 10^{13} years. (Give or take. I'm doing order of magnitude here, people.) Not so great.
+
+But, all is not lost! In the first month, we launched about half a kilogram per second. We're assuming everything is roughly as dense as iron at 10g/cm^{3} , and let's say a solar array is 1cm thick. To build a 1m array we'll need 1,000 cm^{3} or 10kg. That's 200 seconds of mass driver output, which means we get 18 square meters of solar generator every hour, or 400 per day. Or to put it another way, our 1km solar panel takes 10^{7} kg of material, which is about 2×10^{7} seconds, which is about eight months at the starting rate. The third array comes at the one year mark; the fourth comes at 15 months; the fifth at 17.5 months; the sixth at 19.5 months...by two years you've got the fourteenth array well under way. In ten years, we're around five million. Once we reach twenty million, we can produce one per second -- just 4,000 days into the project. And at nineteen years, we're extracting a million tonnes of material for 100,000 new solar arrays.
+
+A million tonnes per second is a lot, possibly more than we could manage. But is it good enough? According to the guide:
+
+#+begin_quote
+  At a million tonnes of mass driven out of the Earth's gravity well per second, this would take 189,000,000 years.
+#+end_quote
+
+Mercury is 5% the mass of Earth. I'm not holding my breath.
+
+But what if our mass drivers are perfection itself? Well, we probably don't want to add many more solar arrays near Mercury's orbit. It'll start interfering with Earth's incoming solar radiation, but the losses have been deemed acceptable. We're getting 3.3 gigawatts per, and we're making 100,000 per second. Every three and a half minutes, we increase extraction rates by one per second. We're roughly doubling every year. We need to reach 1×10^{23} kg in one year, and then we'll be less than a year from completion.
+
+At nineteen years, we got 10^{9} kg/s, or 10^{16} kg/year. We'll get to 10^{23} kg around 42 years into the project. We'll finish the project after 43 years.
+
+It's actually a bit better than that. About 35 years in, we'll have excavated a large enough portion of the planet that the energy costs for extracting more will go down measurably.
+
+#+begin_quote
+  In fact, we could conceivably get going on the project in about 25 to 50 years, with completion of the first phase requiring only a few decades.
+#+end_quote
+
+Sure, assuming magic technology. But the article says 90% of the energy goes to things other than moving matter -- mining it, maintaining the mass drivers, that sort of thing. So it works out to several centuries, and that still requires magic mass drivers and magic energy transfer systems. Also, this gets us a Dyson's sphere at Mercury's orbit, whereas we need one at ~1.1AU.

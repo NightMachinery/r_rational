@@ -3,8 +3,9 @@
 * Human goals in fiction and reality, and the goals of a strong AI.
 :PROPERTIES:
 :Author: OrzBrain
-:Score: 9
+:Score: 10
 :DateUnix: 1478973341.0
+:DateShort: 2016-Nov-12
 :END:
 Eliezer Yudkowsky has written extensively on how all kinds of perfectly reasonable sounding goals become horrible, horrible absurdities when fulfilled by an AI of sufficient intelligence (power, which is equivalent to intelligence, as intelligence is equivalent to power -- I am defining power as the capability to shape the world to your will, and that is also what intelligence is). What he has little remarked on is that all /individual/ human goals become horrible, horrible absurdities when fulfilled with sufficient intelligence (or power). He has written that we need to come up with a system of coherent goals to give any strong AI, or it will surely destroy us.
 
@@ -39,11 +40,13 @@ We must understand human goals and how they work before we can safely build a su
 
 ** You should read a whole lot more psychology and cognitive science before spouting off about what goals are and how our goals work.
 :PROPERTIES:
-:Score: 20
+:Score: 18
 :DateUnix: 1479000095.0
+:DateShort: 2016-Nov-13
 :END:
 
-*** #+begin_quote
+*** u/DerSaidin:
+#+begin_quote
   What are human goals? I don't know, and I don't think anyone else knows either, but I will now proceed to guess wildly and most likely wrongly based my incomplete knowledge of psychology.
 #+end_quote
 
@@ -52,24 +55,28 @@ Seems like responsible spouting off to me.
 Would you like to contribute a TL;DR-sized summary of key stuff he got wrong?
 :PROPERTIES:
 :Author: DerSaidin
-:Score: 16
+:Score: 15
 :DateUnix: 1479029579.0
+:DateShort: 2016-Nov-13
 :END:
 
 **** I mean, on the one hand, fair enough. On the other hand, an embodied Bayesian reinforcement learner with multiple reinforcement modalities isn't really gonna have "goals". "Goal-directedness" is going to be the mode of behavior such an agent engages when it optimizes expected reward with no reward prediction error. Saying that it /has/ a utility function is incorrect, even though given sufficient knowledge of its cognitive structure we should be able to construct or induce one for it.
 :PROPERTIES:
-:Score: 7
+:Score: 6
 :DateUnix: 1479059921.0
+:DateShort: 2016-Nov-13
 :END:
 
 
 **** [deleted]
 :PROPERTIES:
-:Score: 3
+:Score: 4
 :DateUnix: 1479061104.0
+:DateShort: 2016-Nov-13
 :END:
 
-***** #+begin_quote
+***** u/deleted:
+#+begin_quote
   The main issue is that pleasure/pain is as useful a distinction as good/bad or "things people are motivated to do"/"things people are motivated to avoid". It adds no information and merely gives labels to the binary you already decided you wanted to investigate.
 #+end_quote
 
@@ -79,6 +86,7 @@ And then we need to figure out how the brain combines those signals into a repre
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1479089083.0
+:DateShort: 2016-Nov-14
 :END:
 
 ****** What about all the motivators that have nothing to do with pleasure or pain?
@@ -92,9 +100,11 @@ To be fair, you are coming at this from a direction of looking at a "rational ac
 :Author: freshhawk
 :Score: 2
 :DateUnix: 1479092518.0
+:DateShort: 2016-Nov-14
 :END:
 
-******* #+begin_quote
+******* u/deleted:
+#+begin_quote
   Now you might as well just use the term "utility" because that's what you're talking about, and that's the word people who think similarly to you use.
 #+end_quote
 
@@ -124,9 +134,11 @@ Try building a brain and see how far you get with that ;-). Heuristics-and-biase
 :PROPERTIES:
 :Score: 2
 :DateUnix: 1479098809.0
+:DateShort: 2016-Nov-14
 :END:
 
-******** #+begin_quote
+******** u/freshhawk:
+#+begin_quote
   Try building a brain and see how far you get with that ;-). Heuristics-and-biases models are currently disfavored because there's just too damn many of them. How do you even program (from the AI/ML perspective) or predict (from the cognitive-scientific perspective) which heuristic or bias to apply in which situation?
 #+end_quote
 
@@ -143,9 +155,11 @@ tldr; In terms of the estimate of the complexity of the project I tend to side w
 :Author: freshhawk
 :Score: 1
 :DateUnix: 1479103509.0
+:DateShort: 2016-Nov-14
 :END:
 
-********* #+begin_quote
+********* u/deleted:
+#+begin_quote
   But in terms of understanding how our brains work ... how hard it would be for our primitive selves to replicate doesn't tell me anything about the likelihood of it being true.
 #+end_quote
 
@@ -189,6 +203,7 @@ Yep. I'm just saying that the neuroscientists and cognitive scientists are actua
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1479104298.0
+:DateShort: 2016-Nov-14
 :END:
 
 
@@ -197,16 +212,19 @@ Yep. I'm just saying that the neuroscientists and cognitive scientists are actua
 :Author: MrCogmor
 :Score: 1
 :DateUnix: 1479209676.0
+:DateShort: 2016-Nov-15
 :END:
 
 **** Oh hey, yes, definitely!
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1479212709.0
+:DateShort: 2016-Nov-15
 :END:
 
 
-** #+begin_quote
+** u/Fredlage:
+#+begin_quote
   (Only for some reason he called goals "utility functions." Beats me why.)
 #+end_quote
 
@@ -215,9 +233,11 @@ Not his invention: [[https://en.m.wikipedia.org/wiki/Utility]]
 :Author: Fredlage
 :Score: 8
 :DateUnix: 1478983329.0
+:DateShort: 2016-Nov-13
 :END:
 
-*** #+begin_quote
+*** u/OrzBrain:
+#+begin_quote
   Not his invention: [[https://en.m.wikipedia.org/wiki/Utility]]
 #+end_quote
 
@@ -228,9 +248,11 @@ I was also considering the difference in meaning between "power" and "intelligen
 :Author: OrzBrain
 :Score: 1
 :DateUnix: 1478985581.0
+:DateShort: 2016-Nov-13
 :END:
 
-**** #+begin_quote
+**** u/Roxolan:
+#+begin_quote
   But why use it in place of the word "goal"? As far as I can tell they mean the same thing.
 #+end_quote
 
@@ -241,28 +263,33 @@ If you have a formally-defined utility function, a prediction algorithm, and som
 :Author: Roxolan
 :Score: 11
 :DateUnix: 1478988886.0
+:DateShort: 2016-Nov-13
 :END:
 
 ***** Oh. Okay, thanks. I guess I was at least unconsciously mistaking it for sesquipedalianism in the service of signaling. I'll just go ahead and delete that.
 :PROPERTIES:
 :Author: OrzBrain
-:Score: 9
+:Score: 8
 :DateUnix: 1478992649.0
+:DateShort: 2016-Nov-13
 :END:
 
-****** #+begin_quote
+****** u/TK17Studios:
+#+begin_quote
   sesquipedalianism in the service of signaling
 #+end_quote
 
 HAH
 :PROPERTIES:
 :Author: TK17Studios
-:Score: 10
+:Score: 11
 :DateUnix: 1478994255.0
+:DateShort: 2016-Nov-13
 :END:
 
 
-***** #+begin_quote
+***** u/deleted:
+#+begin_quote
   If you have a formally-defined utility function, a prediction algorithm, and some input, you always know exactly what to do at all times: whatever your prediction algorithm says will maximize your utility function.
 #+end_quote
 
@@ -270,6 +297,7 @@ Yes, but that's just how /any/ normative reasoning model works: the algorithm ca
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1479000032.0
+:DateShort: 2016-Nov-13
 :END:
 
 ****** Yes, but "utility function" gets the idea across quickly, and allows for an easy transition into Game Theory.
@@ -277,10 +305,12 @@ Yes, but that's just how /any/ normative reasoning model works: the algorithm ca
 :Author: electrace
 :Score: 3
 :DateUnix: 1479014447.0
+:DateShort: 2016-Nov-13
 :END:
 
 
-**** #+begin_quote
+**** u/freshhawk:
+#+begin_quote
   But why use it in place of the word "goal"? As far as I can tell they mean the same thing
 #+end_quote
 
@@ -289,4 +319,5 @@ Goal implies conscious deliberation and choice, whereas utility is also useful f
 :Author: freshhawk
 :Score: 3
 :DateUnix: 1479061307.0
+:DateShort: 2016-Nov-13
 :END:

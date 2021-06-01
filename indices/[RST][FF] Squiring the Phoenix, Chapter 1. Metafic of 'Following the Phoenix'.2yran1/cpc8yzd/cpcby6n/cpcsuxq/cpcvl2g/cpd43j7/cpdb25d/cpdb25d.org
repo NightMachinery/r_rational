@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 2
+:DateUnix: 1426216208.0
+:DateShort: 2015-Mar-13
+:END:
+
+I think you're probably going to want a graph database instead of a relational one. You can model DAGs in an RDBMS, but it's easier just to use one designed for the purpose.

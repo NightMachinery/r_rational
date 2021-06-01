@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: codahighland
+:Score: 3
+:DateUnix: 1433867835.0
+:DateShort: 2015-Jun-09
+:END:
+
+I realized I used the distance from the asteroid to the sun instead of the distance from the asteroid to Earth, and I used Earth gravity without paying attention to distance, when I should have been using solar gravity and the inverse square law. *facepalm* On the bright side, that doesn't affect the lower bound energy requirements (only how long it would take for the asteroid to smash into the planet) and it only reduces the upper bound by less than an order of magnitude at best. (The nice thing about these crazy Fermi estimates is that you can be wrong and still be right.)
+
+Though if you want to talk about finding a better orbit to start from, we could consider perhaps one of the Hungaria family of asteroids. The nearest one of those has an orbital velocity of around 21 km/s. This brings that 8x10^{6} N down to ~7x10^{6} N, so I imagine that we're still going to need at least 10^{12} J. Unfortunately, the initial velocity and the distance from Earth just don't have nearly as much impact on the energy requirements as the mass you're trying to push around.

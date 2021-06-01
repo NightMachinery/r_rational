@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 1
+:DateUnix: 1449893230.0
+:DateShort: 2015-Dec-12
+:END:
+
+One way to go about this is to assign a measure to the number of squares and rectangles contained in a shape, then see how the measures develop as you follow a sequence of shapes that approaches the infinite plane.
+
+For example, in a 2cm x 2cm square, there would be 2cm x 2cm of squares of size 0, 1cm x 1cm of squares with side length one, and thus (imagine a pyramid with a 2cm x 2cm base and a height of 2 cm) 8/3 cm^{3.} In the same 2cm x 2cm square, there would be 1cm x 2cm of rectangles of size 1cm x 0, 1cm x 1cm of size 1cm x 1cm, etc., for a total of, umm, I think 4 cm^{4,} which must be at least correct in the dimensionality: There is a whole extra degree of freedom!
+
+In a sequence of simple shapes, say squares of diverging size, the rectangles would always outnumber the squares, but an interesting question might be whether there is some sequence of shapes approaching the infinite plane where the number of squares and rectangles remains equal, by being fractally perforated in all the right places. (The squares of course cannot outnumber the rectangles, as any square is a rectangle.)

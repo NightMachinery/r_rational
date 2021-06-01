@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: InfernoVulpix
+:Score: 2
+:DateUnix: 1474927496.0
+:DateShort: 2016-Sep-27
+:END:
+
+Regarding the paging through evolutions, I think I'll maintain that a simple combination to move one up in the list of Pokemon and to move down in the list of Pokemon would be sufficient. Pokemon in evolution lines that aren't next to each other are relatively rare, and having a simple button like that would mean I could go look at other nearby Pokemon with just a few keystrokes.
+
+Which isn't to say that there isn't reason to move between evolutions specifically. If the evolution tab had links to each of the Pokemon defined there I could go from Poliwhirl to Politoed in one click just fine (though I have no idea how difficult/easy that would be), and if a keyboard shortcut is to be used, the branch-evolution problem could be solved by having the 'forwards' button cycle through evolutions (as in, Poliwag --> Poliwhirl --> Poliwrath --> Politoed --> Poliwag) and the 'backwards button go in reverse order. Though again, I'm not sure if that would be as easy to implement as it sounds, with the way evolution information is stored in the program.
+
+And if my intuition was right about Resistance, I guess I'll have to update the stats for Machamp. Also another question about them: if a Pokemon takes 150% damage from, say, Fire, and has a Weakness stat of 400 for a modifier of 50% less damage, is the resulting effective damage taken 100%, a flat reduction, or 125%, or removing 50% of the effect the weakness has on the Pokemon? The second one sounds more intuitive and is what I've been going with, but I'm well aware that it could be the opposite, and I've inadvertently turned Machamp's very slight weakness against Bug types moves into a major resistance against Bug type moves.
+
+Edit: the .dex file should be updated by now.

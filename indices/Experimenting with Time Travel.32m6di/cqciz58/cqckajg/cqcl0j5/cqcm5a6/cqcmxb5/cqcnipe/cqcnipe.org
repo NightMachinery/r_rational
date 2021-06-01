@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: xamueljones
+:Score: 3
+:DateUnix: 1429060576.0
+:DateShort: 2015-Apr-15
+:END:
+
+Wow! Yeah this is very similar to what I was thinking of.
+
+However, the bit about your RNG would mean that the device would rarely activate. For instance, if you have the RNG picking a new number every second, then the RNG will be expected to get 50 once for every hundred trials. Therefore, the device will statistically activate once for every hundred seconds. So yeah, you aren't going to necessarily guarantee a certain event happening if the light flashes since the light can just not flash at all, but it can be used to 'check' for only successful attempts.
+
+I know you understand this, but I'm mostly typing this up to better explain the downfalls for anyone else reading this.

@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 2
+:DateUnix: 1506141183.0
+:DateShort: 2017-Sep-23
+:END:
+
+#+begin_quote
+  The majority of the time was spent implementing the priority system that I've had rolling around in the back of my head for some time.
+#+end_quote
+
+Have you had a look at package managers? If you're worrying about dependency checking and loading priorities, you're basically making a PM. Have you looked at pacman / npm / yarn / etc?
+
+One common PM feature that seems to be lacking from your design is optional dependencies.
+
+#+begin_quote
+  but getting all these rules to play nice was a bit tricky.
+#+end_quote
+
+In addition to yak-shaving, it sounds like you're falling prey to YAGNI, that is, premature feature-creeping. Also, [[https://en.wikipedia.org/wiki/Inner-platform_effect][inner platform effect]].
+
+Are you sure you're going to need all those rules? Direct dependencies I can get, irreconcilable conflicts I can sort of see (if you have a very popular mod, other modders might want to say they're incompatible with it), but priority loading seems a bit like over-engineering.
+
+Most modders aren't aware of other mods except the most popular, and their own. If 10 mods try to modify the same gameplay mechanic, it's unlikely that each of then 10 will know about the other 9, and specify each of them as incompatible, or specify a coherent loading order.
+
+Then again, maybe I'm plain wrong; how often is the "load before, load after" system useful in a Supreme Commander mod?

@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: derefr
+:Score: 2
+:DateUnix: 1427418186.0
+:DateShort: 2015-Mar-27
+:END:
+
+#+begin_quote
+  We could make all subscriptions cost, and try to hunt down the authors and hand them money, but I have the feeling that Wildbow wouldn't like that.
+#+end_quote
+
+On the upside, this is the Soundcloud model (take users' money for something the author isn't even aware is happening, then try to get the money to the author), and, surprisingly, it worked out for them.
+
+On the downside, this is also, somewhat, the GetSatisfaction model: pretend to be an official channel for the author to communicate with people (that the author isn't even aware of), let users form opinions of it based on the author's continued lack of engagement, and hold the ability to actually engage with the users hostage until the author signs up for your platform (potentially investing time or even money.) GetSatisfaction got their brand heavily tainted by the negative reactions to this "canonical-source spoofing" effect.
+
+I would suggest something slightly different, and more in line with the Google Books model: take online works and try to figure out their effective licensing. If the license is permissive (e.g. an explicit CC-BY-SA), you can "syndicate" their work for them on your platform wholesale. Otherwise, just do 99% of the work---scrape their data, chew it up into Chapter model-instances, stick their work's logo in the corner---to set up their work, but put the result in a "private" or "pending" mode where only users with the URL can browse it. Then send them an email that:
+
+1. asks them /permission/ to republish their work; and
+
+2. contains a (one-time-token) link which drops them into the management dashboard of their constructed, pending work, creating a temporary user in the process that they can then register to retain the work.
+
+Effectively, if the author reads the email and clicks the link, they should be one big fixed-top-banner "Publish" button-press away from enabling the channel. Or they could delete it all and you'd never bother them again.
+
+You might also want to figure out a way to get the kind of authors you want to target signed up for some sort of drip email campaign that teaches them stuff about self-publishing, and eventually says "and you get all that complex stuff handled for you if you just sign up for [service]." The emails would have to be valuable in-and-of-themselves, of course---teaching things like how to properly batch your updates into consumables so users anticipate them rather than thinking "eh, I'll read it later", etc.
+
+ETA: Also, maybe give users a way to see that a pending work exists in some sort of "[potentially] upcoming works" list, and like/upvote that work in the list. That way, when the author hits the dashboard, they'll get a numerical representation of the interest of people on the platform in consuming their work through the platform.

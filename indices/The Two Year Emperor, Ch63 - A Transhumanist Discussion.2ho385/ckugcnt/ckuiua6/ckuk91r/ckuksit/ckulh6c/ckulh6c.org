@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: pareus
+:Score: 3
+:DateUnix: 1411897246.0
+:DateShort: 2014-Sep-28
+:END:
+
+Readied actions explicitly occur before their trigger. So I would read that scenario as:
+
+1. Casters ready an action "Shoot Neklos as soon as he appears."
+2. Casters readied actions go off (trying to cast whatever).
+3. Neklos appears (triggering Casters readied actions).
+4. Neklos' uses his standard from celerity (casting Time Stop)\\
+   4(a). Now in a 5 round Time Stop, Neklos does whatever he wants (including more time stops) until he returns to normal time and..
+5. Neklos takes an immediate action to cast Celerity (triggering an "as if readied" action)
+6. Neklos is now dazed
+
+Since the casters spells actually try to go off before Neklos appears, their readied actions would fail. They cannot cast a spell at a target that is not actually present (unless they were aiming at his square with an aoe or casting a spell that didnt require a target).
+
+Neklos then appears. He decides to immediate action celerity, but only /after/ he uses the standard action celerity will grant him to cast Time Stop. When he exits his Time Stop, his casting of celerity will finish and he spends a round afterwards dazed.
+
+Stupid, but RAW.
+
+If the caster's readied an action for whenever Neklos acted like a giant evil windbag, that would guarantee that it will go off and with a valid target in sight.
+
+An immediate definitely trumps a readied action, as it can explicitly interrupt other actions. Thinking more on it, I am inclined to agree that if you are triggering a readied action with an immediate then:
+
+(a) your immediate (ie your trigger) would go off before the other readied action
+
+(b) your readied action would go off before your immediate action
+
+and so (c) Your readied would come before your opponent's

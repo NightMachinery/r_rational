@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 17
+:DateUnix: 1451941591.0
+:DateShort: 2016-Jan-05
+:END:
+
+Check out [[http://i.imgur.com/KezAIUF.gifv][this image]] (from the front page). I would assume that the design was made by projecting two line images against each other. The only real constraint on doing this with any two images is that height has to be equal. Since it's a wire sculpture, you also have some constraints like having all the wires connect to each other, because wire can't float.
+
+If you wanted to, and you had three images that fit within certain width/height constraints, you could add another image that's visible by rotating your view perpendicular to giraffe and elephant views. This is how Douglas Hofstadter created the wooden cube that's on the cover of Gödel, Escher, Bach, which he calls a trip-let (triple letter). If you want a visual example, [[http://i.imgur.com/XPuDKzG.png][here's one I made with the letters A, W, E]] using [[http://www.wamungo.com/PrintModel/Detail/Trip-let-blocks-like-in-GEB-530613ba89702816c05ed772][this script]].
+
+I'm trying to identify the properties of a set of glyphs such that you can combine any three glyphs (including duplicates) and have the proper projections from only three viewing angles (technically six, since you can project in either direction), as well as no additional projections of any other glyphs in the set. For example, a filled circle fails that test, because you could make a sphere, which projects a circle from the three perpendicular angles, but also from all other angles as well. /Making/ a set of glyphs like that is easy, but figuring out the general principle is hard. The above script allows for easy testing (since it can be modified for any polygon, not just the alphabet) and I already have the set of glyphs that I need, but I thought that the problem was interesting and I still don't really have the general rules figured out.
+
+(In my case I'm extruding through a base object of a cube, which means that all glyphs have to touch all four edges of a square, which makes things simpler.)

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1460954788.0
+:DateShort: 2016-Apr-18
+:END:
+
+Recently read about [[http://hackaday.com/2015/01/13/cheap-diy-microscope-sees-individual-atoms/][this]] [[https://dberard.com/home-built-stm/vibration-isolation/][project]], a scanning tunneling microscope which lets you resolve individual atoms with everyday electronics. The most complicated part is stabilizing the device against vibrations, which he does with a system of springs and magnets.
+
+The scanner works by pointing a piece of wire at different points at sub-nanometer resolution and seeing how much current flows. The pointing device is a piece of atomically sharp (broken-edged) tungsten wire hooked up to a cheap piezoelectric disk that has been cut into 4 sections using an X-Acto knife. The needle gets moved around, in precise increments, as voltage is applied to the piezo sections.
+
+I had no idea this kind of precision was possible with such cheap parts. Given that the needle could also function as a printer or etcher, this has made me update in the direction of it being possible to construct a relatively simple desktop-size fabricator for relatively high tech computer circuitry. That would make it likely that a small scale, fully self replicating system could be created (and that this is achievable by someone in a basement, with the requisite understanding, not necessarily a high tech lab).

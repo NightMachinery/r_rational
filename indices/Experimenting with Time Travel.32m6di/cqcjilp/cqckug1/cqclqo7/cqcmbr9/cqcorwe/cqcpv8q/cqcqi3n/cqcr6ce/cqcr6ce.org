@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1429066995.0
+:DateShort: 2015-Apr-15
+:END:
+
+Okay, I think I'm not modeling the behavior well enough on a graph due to my poor math knowledge. I wanted it to be a slow drop-off near to the minimum range with a faster drop-off as time went by, but with no hard limit as to the maximum range.
+
+For the graph, the x-axis is meant to chart the possible ranges from 0 secs to two hours for the time delay between light flash and button press. The y-axis is the frequency of observed time delays with a few milliseconds having the highest frequency and two hours having a frequency of one as the (currently observed) maximum range. Does this make sense?

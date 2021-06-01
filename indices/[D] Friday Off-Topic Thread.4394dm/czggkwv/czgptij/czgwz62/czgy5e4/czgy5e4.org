@@ -1,0 +1,7 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1454106935.0
+:DateShort: 2016-Jan-30
+:END:
+
+Mac and Linux both support POSIX and similar gaming libraries, so you can usually port between them easily. WinAPI + DirectX games are much harder to port to POSIX et al. If you plan for portability, it's easy (for industrially realistic values of "easy"), but you have to estimate if it's worth your while.

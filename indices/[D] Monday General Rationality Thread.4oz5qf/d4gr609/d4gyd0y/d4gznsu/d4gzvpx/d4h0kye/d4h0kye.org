@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: captainNematode
+:Score: 1
+:DateUnix: 1466450725.0
+:DateShort: 2016-Jun-20
+:END:
+
+I used HMC for the little preliminary stuff that I did, which IIRC is much more efficient than Gibbs Sampling when you have lotsa parameters, though perhaps more when you have thousands rather than the scores (or maybe 100ish at most) that I had. But for a proper multivariate analysis I think I'd be using a ton more. But maybe not so many more?
+
+Even so, my chains sampled pretty slowly (and I was initially going to do Gaussian process regression, but gave it up when that ran slower still).
+
+Also, I think RevBayes is a probabilistic (graphical) programming language, but I've just gotten started on the tutorials there (and will be attending a week-long workshop on it in July). But from what my collaborators have told me, it should be really customizable.

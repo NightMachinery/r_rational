@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 2
+:DateUnix: 1512645893.0
+:DateShort: 2017-Dec-07
+:END:
+
+#+begin_quote
+  You seem to be equating computing power used to positions searched. The reason AlphaZero searches so few positions is because it uses boatloads of processing power elsewhere (in the NN calculations).
+#+end_quote
+
+Yes, this is the /entire point/. The majority of AlphaZero's processing power is used to carry out the neural network's calculations, /not/ search. Giving Stockfish additional processing power, on the other hand, will go /exclusively/ toward speeding up search. What will end up happening is that you'll get a match between a "smart" evaluator, and a "dumb" evaluator that's really fast at evaluating things--or, in other words, exactly the match we already saw, except the "dumb" evaluator will be even faster. Given the diminishing returns with search depth, the result is unlikely to be very different from what we saw here.
+
+Or, to put it another way, do you demand that chess engines be reduced to evaluating only 1-2 positions per second when they play against humans, purely because humans are only able to evaluate at that speed? Of course not; the very notion is ridiculous--and yet that's the exact type of semantic leap you're attempting to pull here.

@@ -1,0 +1,29 @@
+:PROPERTIES:
+:Author: bayen
+:Score: 5
+:DateUnix: 1473740121.0
+:DateShort: 2016-Sep-13
+:END:
+
+#+begin_quote
+  The criterion as-is needs at least one amendment. Currently, an agent deciding by this criterion will not hesitate to create arbitrarily many lives with negative utility, to increase the utility of the people who are alive just a little.
+
+  ...
+
+  A possible rule for this would be: when playing as Green, find the Green-best outcome such that no purple life has a negative welfare. Subtract that from the absolute Green-best outcome. The difference is the maximum price, in negative purple-welfare, that you are able to pay. All choices outside of the budget are outlawed for Green.
+#+end_quote
+
+I don't think the add-on rule quite works. Consider these three options:
+
+1. Green 1000\\
+   Purple -1
+
+2. Green 1001\\
+   Purple -1000
+
+3. Green 0\\
+   Purple 0
+
+Green's absolute best is #2, where green has 1001. Its best option with no negative purple is #3, where green has 0. Therefore it has a budget of -1001 to inflict on purple, and it is free to choose #2.
+
+This seems pretty bad, though ... green is only better off by +1 by switching from #1 to #2, but it imposes a cost of -999 on purple to do so!

@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: TimeLoopedPowerGamer
+:Score: 3
+:DateUnix: 1428132442.0
+:DateShort: 2015-Apr-04
+:END:
+
+#+begin_quote
+  Since anybody can mine, there can't possibly be any limitations on that kind of thing.
+#+end_quote
+
+That is what mining is. Being connected to the peer network to authenticate user transactions. In between doing that, miners churn on hard problems that are publicly agreed on by their peering software, trying to make new blockchains based on artificial difficulty settings to represent the act of confirming user transactions. This encourage people to make their servers do real user transactions as fast as possible, and to leave their servers online.
+
+They aren't curing cancer or something with these blockchain work proof problems, just doing the computer equivalent of reps at the gym. Bigger and faster systems do more, faster, completing more reps overall, with each completed set (sort of) being like a lotto ticket for the next bitcoin prize.
+
+By design, new blockchains require "proof" in the form of lots of busywork being done publicly. Servers therefore need to be connected to get awarded a bitcoin for solving the problems at all, and also to get any transaction fees for real user transactions handled.
+
+#+begin_quote
+  As I understand it, the pre-set rate is controlled by increasing the difficulty of mining. If you had a supercomputer from the future that could come up with the next bitcoin at the press of a button, that would walk all over any attempts at keeping the process gradual.
+#+end_quote
+
+Sort of. It is a peering system with artificial difficulty inserted by agreement between all major miners using the same software with the same settings. [[http://en.wikipedia.org/wiki/Bitcoin#Mining][Mining rates are intentionally kept constant]]:
+
+#+begin_quote
+  The bitcoin system adjusts the difficulty target number every 2016 blocks so that the average time the entire network needs to find a nonce always remains about ten minutes.
+#+end_quote
+
+So you couldn't make it disgorge bitcoins faster than once every ten minutes or so. And you'd be doing nothing but busy work the rest of the time. Of course, there would be about zero chance of anyone else getting a coin, but that still isn't amazing, financially speaking. Most bitcoins have already been mined, and it would be easy to force you out by all the other miners updating to a version of the software that explicitly or implicitly excludes your system or negates your advantage.
+
+There has been a lot of talk about someone like the US federal government trying something similar, specifically to spy on people or run other man in the middle tricks. Bitcoin advocates have been working on ways to beat someone doing just this, and they think they've got it solved. I don't know the latest details, but I give them the benefit of the doubt on that.
+
+Mining bitcoins isn't a future tech get rich quick scheme, and it certainly isn't done in secret. Someone would notice if all the majors stopped getting awarded their expected bitcoin returns and Russian goons would quickly track down who was doing it and kill their mother...boards.

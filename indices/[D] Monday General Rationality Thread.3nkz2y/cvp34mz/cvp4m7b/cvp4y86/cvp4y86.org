@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 4
+:DateUnix: 1444067923.0
+:DateShort: 2015-Oct-05
+:END:
+
+There's no particular reason you couldn't run this, and this-enabled apps along side traditional stuff. Just like a bunch of apps have their own sqlite database for storing stuff.
+
+It doesn't have to run at the kernel level, so it can be just another database service.
+
+--------------
+
+Don't target windows users, target people who like cool technology.
+
+So that's the hacker/programmer contingent. Rethinkdb is doing a bunch of similar stuff with their change feeds, this is like that to the extreme.
+
+One of the big advantages to this approach would be that it would make creating collaborative software much easier. Coupled with a /good/ scene graph, it would be an excellent platform for emerging vr/ar stuff.
+
+Other then that, it could be a great platform for creating collaborative web apps like google docs.
+
+In short, it's just another service, like dbus or postgres.

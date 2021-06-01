@@ -1,0 +1,29 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1445031615.0
+:DateShort: 2015-Oct-17
+:END:
+
+With due respect to [[/u/mrweiner]], the [[http://www.smbc-comics.com/?id=2779][nurbling method]] of measuring complexity is a terrible one.
+
+There /are/ ways of measuring propositional density, which seems to correlate well with information density. You'd want to pull in a parts-of-speech tagger instead of a word bank, and do some exception handling, then figure out a way to cut down on (or at least measure) redundancy.
+
+The idea is that a sentence like:
+
+#+begin_quote
+  The quick brown dog jumps over the lazy fox.
+#+end_quote
+
+Is giving us /lots/ of information which we could break down into:
+
+#+begin_quote
+  The dog jumps over the fox.\\
+  The dog was brown.\\
+  The dog was quick.\\
+  The fox was lazy.
+#+end_quote
+
+So that sentence has (at least) four propositions in it -- four discrete pieces of information. The problem with using "nurble" is that it reduces the sentence "The dog was brown" to "nurble dog nurble nurble" which doesn't preserve information.
+
+I'm on board with computationally measuring propositional density ([[http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2423207/][as this paper suggests]]) but don't know that it would actually be a /useful/ metric rather than an /interesting/ metric.

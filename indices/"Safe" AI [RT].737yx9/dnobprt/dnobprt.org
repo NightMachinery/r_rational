@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: TheConstipatedPepsi
+:Score: 1
+:DateUnix: 1506697106.0
+:DateShort: 2017-Sep-29
+:END:
+
+This doesn't work, to create a question-answering machine you still need a value function to maximize, that's inherent to all modern definitions of an "AI" agent. A question answering machine is an agent whose action space is limited to something like text output on a screen, it still needs a value function to decide what a "good" answer actually is, something like maximizing the expected satisfaction of the humans reading its answer. The problem is that any agent which takes actions in the world must have a (possibly implicit) value function inside it, at which point all the old problems come back: the oracle can output as an answer the blueprints to a machine which we build, which then goes on to affect the world in ways which maximize its value functions, etc.

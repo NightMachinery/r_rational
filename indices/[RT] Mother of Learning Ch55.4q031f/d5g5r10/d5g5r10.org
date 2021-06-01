@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: thrawnca
+:Score: 3
+:DateUnix: 1468797222.0
+:DateShort: 2016-Jul-18
+:END:
+
+I was contemplating the behavior of the Guardian, and how convenient it was, and I had a Fridge Brilliance realisation.
+
+The Guardian is currently operating outside its designed parameters, due to the presence of multiple recognisable Controller markers; yet rather than crashing, or wiping the protagonists, or randomly persisting a different Controller each time, it helpfully /added/ Zorian to the awareness of the loop. And when RR left, instead of erasing everything as he expected, the Guardian recognised the remaining presence of Controllers and kept the loop running.
+
+At first, this seemed suspiciously convenient for the story. Why would the Guardian's broken behavior, like Zorian's broken marker, be conveniently broken in a helpful way? First rule of rational fiction in the sidebar, "Nothing happens solely because the plot requires it." But then I realised something. /Of course/ the failure mode in this case was to loop both Controllers, because /it was designed to handle multiple markers all along/! One Controller and an arbitrary number of lesser markers.
+
+It's probably doing something like this:
+
+INSERT INTO gate VALUES ( SELECT soul FROM copy_world WHERE marker IS NOT NULL ); TRUNCATE copy_world;
+
+Ie grab everyone who has a valid marker, of either kind. Of course, only one Controller is supposed to exist, but this logic would continue to work for multiple Controllers.
+
+And then it would do the check that caused the loop to persist after RR left:
+
+if (SELECT COUNT(*) FROM gate WHERE marker == 'Controller') > 0: create_copy_world()
+
+There are still indications that the Guardian retains a direct reference to the original Controller soul, for the purpose of activating contingencies, because it treats Zach differently to Zorian. So the 'has the Controller left?' check /could/ have been implemented differently. But doing it this way is quite reasonable too.
+
+Alternatively, if (as Kael once suggested) the difference is purely because Zorian's marker is broken - ie the loop ought to be resetting when Zorian dies - and if, as chapter 55 indicated, the Guardian doesn't seem to know anything about who is who beyond what marker they carry, then the abovementioned 'controller has left' check, which keeps the loop alive when one Controller has left and another remained, is perhaps the most logical implementation.

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: TimTravel
+:Score: 2
+:DateUnix: 1416199140.0
+:DateShort: 2014-Nov-17
+:END:
+
+Yes, superlinear just means anything that's eventually faster than every linear function.
+
+My point is that exponentially-fast is probably a lot more than you want. The way you were phrasing things it made it sound a bit like you were saying exponentially-fast is the same as superlinearly-fast.
+
+edit: Technically even O(n lg lg lg lg n) is superlinear, and technically O(2^{n^{1/2^{100}}} ) is exponential, but in general exponential functions increase way faster for even moderately high values. They're guaranteed to do it eventually but they usually do it quickly.
+
+A good mental heuristic: is the increase in a given year proportional to how long it's been since it started, or is it proportional to the current output? That's the main difference if you get into the calculus of it.

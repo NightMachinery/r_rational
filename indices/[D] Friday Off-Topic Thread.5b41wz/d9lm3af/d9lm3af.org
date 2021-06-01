@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 15
+:DateUnix: 1478274755.0
+:DateShort: 2016-Nov-04
+:END:
+
+Weekly update on my rational pokemon game, including work on the data creation tool Bill's PC. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=drive_web][Handy discussion links and previous threads here]].
+
+--------------
+
+So I missed last week, as my phone committed hara-kiri and I'm still waiting for the replacement to head in. [[/u/InfernoVulpix]] covered the update at least.
+
+This week involved a lot of research into voxel systems and brushing up on my hex grid library of choice, which recently went through a major version change. The unity project for the hex map prototype technically exists, but there's nothing to show besides an empty scene. Reading up on how to create a voxel system based on hexes rather than cubes has taken more time than I anticipated; the ‘tons of literature' that I was lead to believe existed on the internet is more concerned with whitepaper algorithms and/or code dumps, where what I need is more a bird's eye overview. So oh well, guess it's down to reading code to learn again.
+
+I've actually also spent some time tinkering with a command-line prototype of the NPC conversation/opinion/notoriety system, which hasn't borne a whole lot of fruit yet but lets you define cities of variable numbers of people with randomized names and connections. We'll see how far this can get in isolation from any other systems.
+
+The majority of the /visible/ work I've done this week is on the feature roadmap. It was quite a mess previously, with sections but no real organization. [[https://docs.google.com/document/d/13e4bMBgsvshUBFShes2bG3RGXIzVYh16EPboqDTdpfA/edit?usp=drive_weband][It now has a bit more order to it]] has been fleshed out significantly more. Everything down to section 15 is effectively complete, with the rest still pending. Once the rest has been finished getting cleaned up, I'll have a better foundation to build the Software Requirements document on, as well as the Design Document 2.0.
+
+Some of the discussion highlights from [[https://docs.google.com/document/d/1-BBPJoGaMDwAsxP9lYNLyARKCGI9pZGLXf2x-IgWbfs/edit?usp=drive_web#heading=h.swbifc8jeyfw][this past week's Discord discussion]]:
+
+- We decided that vision will be handled in two parts: Perception will be a stat for all units that defines a small circle around the unit, maybe ~5 hexes or so on average. This will abstract out hearing, smell, and situational awareness, etc. A second Sight stat will determine how far the unit sees in front of it, with a cone extending in the direction the unit is facing. This naturally requires that we track which direction units are facing, which may or may not be an issue, especially with multiple heads. But it seems like a good starting point.
+
+- We put together the bare-bones design for a move association system, whereby an attack can be associated as a response to a particular incoming attack. This may or may not turn out to be too complicated.
+
+- We decided that trains probably aren't a thing if businesses built around teleportation of goods ever gained traction.
+
+- We divided TMs into TMs and HMs: TMs will now be strictly the pokedex simulation “training video” that teaches how to use an unknown move, while HMs are actual vials or syringes that contain the ability to add organs that the pokemon does not have by default. HMs will not be content gates, and while you would have a Flamethrower TM, it won't do you any good if you don't also have the Oil Gland HM.
+
+--------------
+
+Feel free to leave any comments or questions below! Also feel free to join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]] for brainstorming and discussion. It's a great group, really, and I would highly recommend hanging out, even if you're not in it for this project itself. There's tabletop groups, Dota 2 partying, and [[http://i.imgur.com/j3jRmMZ.png][puns]] like you wouldn't [[http://i.imgur.com/8cUkzoGl.jpg][believe]]. Come join us!

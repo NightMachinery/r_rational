@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Althaine
+:Score: 1
+:DateUnix: 1412090627.0
+:DateShort: 2014-Sep-30
+:END:
+
+I actually have a program working for [[http://forums.spacebattles.com/threads/the-last-angel.244209/][/The Last Angel/]] and it shouldn't be too hard to adapt it. I'll send you an EPUB copy for /Seventh Horcrux/ sometime within the next 24 hours.
+
+There isn't going to be a simple way to do it in general - too much variation in how posts and chapter links are formatted. There's also the issue that the Spacebattles forum software doesn't use paragraphs <p> like any sane HTML should, but just breaks <br> (this matters if you want to switch between different indents and paragraph spacings). To fix that I'm using an algorithm I wrote years ago (to fix the same problem from FiMFiction) which I predict breaking at any moment.
+
+I won't distribute the code as it would take a fair amount of maintenance to get working, but if there are any particular stories you want (e.g. a lot of the Worm fanfics) I can work on getting those as well.

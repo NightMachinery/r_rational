@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: eternal-potato
+:Score: 2
+:DateUnix: 1502911506.0
+:DateShort: 2017-Aug-16
+:END:
+
+Why not just use actual [[https://en.m.wikipedia.org/wiki/Power_(physics)][power]]? I.e. kinetic energy imparted per unit time. When acceleration is constant:
+
+#+begin_example
+  telekinetic_power = power
+      = kinetic_energy_imparted / application_time
+      = affected_mass * velocity_change^2 / 2 / application_time = affected_mass * velocity_change^2 / application_time / 2
+      = affected_mass * (applied_acceleration * application_time)^2 / application_time / 2 = affected_mass * applied_acceleration^2 * application_time / 2
+      = affected_mass * (applied_force / affected_mass)^2 * application_time / 2 = applied_force^2 * application_time / affected_mass / 2
+#+end_example
+
+With balance between apllied_force/applied_acceleration and application_time at the user's discretion.
+
+This, however still allows allows the user to go at full power indefinitely, so you might also want to limit total energy expenditure, possibly via explicit time limit, or energy reservoir size and it's refill rate (which is also power), or vague 'mental fatigue' if you want narrative flexibility.

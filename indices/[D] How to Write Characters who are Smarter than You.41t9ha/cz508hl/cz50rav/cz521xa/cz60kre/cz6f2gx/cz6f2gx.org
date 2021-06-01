@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Anakiri
+:Score: 1
+:DateUnix: 1453379776.0
+:DateShort: 2016-Jan-21
+:END:
+
+If the readers notice, then you're not cheating well enough. That's all your algorithm is. How do you have a character factor numbers? Multiply them out yourself. Okay, but how do you have a character factor any uniformly random number? Find a subset of your pre-factored numbers for which the statistics work out and only show that. (This is the gist of the algorithm you linked.) You have now cheated well enough that it is mathematically impossible to detect your cheating within the scope of your problem.
+
+Any explanation you give for the alleged factoring mechanism won't have predictive power beyond "it will work for the character". You don't actually have the mechanism, so you can't give it to the reader. You might be cheating by your choice of composite numbers. Which, in fact, you are. The only reason you can do a zero-knowledge proof of the existence of the factoring mechanism is because you, as the author, control both parties, and you can have the challenger just happen to pick numbers that you worked out earlier, and you're clever enough to make the challenger look random anyway.
+
+I don't see any difference between that and the rock-paper-scissors example. Any time you write someone doing something you can't do, you have to cheat somehow. Don't get caught.

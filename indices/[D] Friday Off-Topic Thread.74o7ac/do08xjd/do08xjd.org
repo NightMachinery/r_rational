@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 9
+:DateUnix: 1507319798.0
+:DateShort: 2017-Oct-06
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Work continues on the attribute tag code transformations.  At the moment, [Override], [Extend], [RequiresMod()], [AppendFunction], and [PrependFunction] all work, although the last two are probably going to get reworked once I have figured out how I want [EncloseFunction] to work (I'll redefine those two in terms of Enclose, possibly).  
+
+[Override] is pretty straightforward: mark any member (class, function, field, etc) with it and it will search previously-loaded mods for the same member, delete it, and put your version in its place.  This is a bit heavy-handed of a solution, but sometimes the original is no longer pertinent (in the case of a complete overhaul mod) or it has a bug or something in the very middle, that you can't fix just by capturing and changing the output.
+
+[Extend] is only permitted on container-like members, or members that contains other members (class, interface, struct, and enum).  It allows you to add additional members without affecting any existing ones--perfect if you need to add a variable to a class and ensure it always sticks around.  
+
+[RequiresMod()] does exactly what it says on the tin--if the given mod is not loaded, then the tagged member is deleted.  This can also be provided an optional parameter to reverse the behavior, so it is only deleted if a mod /does/ exist.  =[RequiresMod("aae6b5e3-33a9-4356-96ee-d9d80187c211", Exists:false)]= is the full usage (set Exists to true or omit it for the default behavior).  The merits of this are pretty self-explanatory: it gives mod makers more fine-grained tools to control how they manipulate the game's ecosystem contingent on the existence of  other mods.
+
+[AppendFunction] and [PrependFunction], as the names suggest can only be applied to functions (and constructors, finalizers, and operator overloads, tho the latter is useless as will be clear in a moment).  Tagging your function with [AppendFunction] will find the older version of the same function and slap your code at the end, while [PrependFunction] will put it at the start.  In the case of =void=-returning functions, this is all fine and dandy, but it does lead to some interesting hurdles for functions that, by design, return a value.  Since the last line on such a function is going to be =return x;= or some variant, attaching more code to the end of this is a bit useless (and since operators always return a value, well, they're /guaranteed/ to be useless for this). Because of this, these two tags will usually be in the “well I'll try it first cuz it's convenient, but I won't hold my breath” sort of tool. If they don't work, [EncloseFunction] can be used or, if the nuclear option is required, just copy-paste into an [Override] and add the changes there.
+
+[EncloseFunction] is used in a few cases: where either the modder must add code both before and after a function, or the modder wants to repeatedly invoke the original function's code, or the modder wants to append code after a function has returned a value.  In this case the way it works is the original function is copied, made private, and renamed.  Any instances of a particular static method call (probably =CodeAnalysis.EnclosedFunction()= or something like that) are then replaced with references to the renamed old function.  (This static function will have a generic return type and overloads for up to, say, 10 arguments, so it should be capable of standing in for just about anything while still having compile-time enforcement.)  Thus, a modder will be able to more-or-less easily hook into an existing function and wear its skin for all to see, while keeping the original alive to dance in its basement.
+
+(that analogy wasn't quite so morbid when I started writing it.)
+
+Anyway, it's possible that [AppendFunction] will need to be re-implemented as a straightforward case of [EncloseFunction], or perhaps have it work as it currently does if the function returns =void= and as [EncloseFunction] when it returns anything else.
+
+Once [EncloseFunction] is done I'll put aside the attributes for now (there's a few for generating and registering for events that I've designed and I'm going want later, but the EventSystem isn't even made yet so the point is a bit moot).  After that I'll finally be in a place to put the finishing touches on the StatSystem, which will then be put to use defining Species and Unit, and then combat will officially begin.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: masasin
+:Score: 1
+:DateUnix: 1512347476.0
+:DateShort: 2017-Dec-04
+:END:
+
+Yep. You gave us P(T1 | R1), which does not depend on P(T1). If you had P(R1 | T1) instead, you'd need P(T1) to get P(T1 | R1), and you'd use that as your starting probability, P(T1)_2, for the second stage. And then you can repeat as much as you want.

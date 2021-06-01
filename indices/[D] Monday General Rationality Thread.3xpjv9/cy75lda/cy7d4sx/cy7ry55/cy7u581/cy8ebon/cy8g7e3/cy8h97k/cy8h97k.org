@@ -1,0 +1,27 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1450835425.0
+:DateShort: 2015-Dec-23
+:END:
+
+#+begin_quote
+  Re approximation: There are some problems where approximation is useful and some where it isn't. Generally, any problem inspired directly by the real world (routing your trucks, optimizing manufacturing processes, etc.) is a problem where approximations are useful. By contrast, more abstract problems, such as anything from cryptography tend to require an exact solution, where approximations are useless.
+
+  There also seems to be a conservation of hardness thing. A randomly generated SAT instance is usually easy, but if you take a hard problem, say factorization, and convert it into a SAT, the resulting SAT instance is also intractable. There aren't any free lunches.
+#+end_quote
+
+Well yes, of course.
+
+#+begin_quote
+  To the extent that "increasing intelligence", whatever that means, increases the ability to solve hard problems, then increasing intelligence is at least as hard as every problem which it enables a solution of. Complexity results just don't allow loopholes like that.
+#+end_quote
+
+I do agree. I just also think that most problems related to the physical world, the ones that decide whether or not intelligence has real-world uses in killing all humans, are mostly problems were increasingly good characterizations (eg: acquiring better scientific theories) and approximations (possibly through specialized methods like building custom ASICs) can be helpful.
+
+If we put this in pseudo-military terms, I don't expect a "war" against a UFAI to be "insta-win" for the AI "because FOOM", but I expect that humanity (lacking its own thoroughly Friendly and operator-controlled AIs) will start about even but suffer a steadily growing disadvantage.
+
+#+begin_quote
+  (You can still do stuff like increase clock speed, since that's just engineering, but you'll quickly run into physical limits there)
+#+end_quote
+
+When you're worried about the /relative/ capability of a dangerous agent to /gain advantage/ over other agents, "just engineering" is all the enemy needs. A real-life UFAI doesn't need any access to Platonic truths or computational superpowers to do very real damage, nor does a real-life operator-controlled AI or FAI need any such things to do its own, more helpful, job competently.

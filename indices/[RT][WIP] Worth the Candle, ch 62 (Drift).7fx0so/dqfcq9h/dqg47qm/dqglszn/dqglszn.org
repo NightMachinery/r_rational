@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: Quetzhal
+:Score: 12
+:DateUnix: 1511887757.0
+:DateShort: 2017-Nov-28
+:END:
+
+I don't know about that. There's a few ways you could potentially get a null pointer, at least in C:
+
+1) You left your pointer uninitialized, in which case it could be a null pointer or any other random number. You might get a null pointer, but you might also get some random person on the other side of the continent.
+
+2) You tried to allocate memory to store the name, and the memory allocation failed. This is kind of a really weird possibility, because if you're at the point where you can't store a simple string of bytes, there should be a lot of other problems with the simulation.
+
+3) You actually set your pointer as a null pointer.
+
+I actually think 3) is most likely in his instance. If souls themselves are pointers, then the lack of one is arguably a null pointer. The system tried to access the 'soul' pointer and retrieved 0, then tripped the null pointer exception.

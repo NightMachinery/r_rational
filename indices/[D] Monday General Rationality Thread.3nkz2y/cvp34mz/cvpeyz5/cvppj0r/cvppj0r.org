@@ -1,0 +1,40 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1444101098.0
+:DateShort: 2015-Oct-06
+:END:
+
+#+begin_quote
+  it just dawned on me that you probably simultaneous as in multiple people on one file,
+#+end_quote
+
+Yeah, that's what I meant. Although not just users, but rather clients. Take a look at [[https://github.com/verse/verse/wiki/Overview][this]] as an example. Fill disclosure, I wrote that wiki page then kind of abandoned it.
+
+#+begin_quote
+  The vast majority of what I do as a web programmer and author is pipeable, as is the work of most email handling, archive handling, web spidering, and a lot of other stuff.
+#+end_quote
+
+Sure, we devs have tools that devs can interact with well. That's because they're optimized for the dev market. But a /good/ operating system should have a steady learning curve from neophyte to programmer. That means tools like gimp and blender need to be easier to hook together, like cli tools and pipes.
+
+#+begin_quote
+  Objects are a decent programming abstraction, but they aren't well aligned with the needs of data storage.
+#+end_quote
+
+I'd say that file systems are object oriented already, each file is an object, they're just statically typed ;p
+
+Filesystems take up basically no resources at all. We can afford to spend a bit more on journaling/defragmentation these days. I don't think performance would be a big issue, at least on performance as far as file storage and defragmentation algorithms go.
+
+#+begin_quote
+  The reason Unix was so successful is that it designed a very minimal set of operations that could be performed on the data -- basically just CRUD -- and left the sophisticated actions (the code) to programs.
+#+end_quote
+
+That would still be true, we're just shifting what a file is a bit, and making them network transparent (think plan9). You could still have a "file" just be a container for bytes, but we've extended those simple actions a bit to allow hashmaps, lists, strings, ints, and a few others.
+
+I think block files are very leaky abstractions. They're abstractions for a data structure, but you treat them as a completely unique case instead of just treating them like another data structure. Well, data structure in a high level language like python or javascript.
+
+#+begin_quote
+  Things I would like to see in that:
+#+end_quote
+
+Very interesting approach. I'm definitely going to be thinking about that.

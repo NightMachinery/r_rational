@@ -5,6 +5,7 @@
 :Author: Veedrac
 :Score: 43
 :DateUnix: 1505590440.0
+:DateShort: 2017-Sep-17
 :END:
 
 ** Excellent. /Doctor Strangelove/, for the computer apocalypse. Frightening to contemplate, and far too plausible for comfort. The only solace is that Wikipedia tells us that [[#s][]] has never been found in the wild, but then, how would you know?
@@ -12,15 +13,17 @@
 [[#s][I was disappointed that]]
 :PROPERTIES:
 :Author: ben_oni
-:Score: 10
+:Score: 8
 :DateUnix: 1505600859.0
+:DateShort: 2017-Sep-17
 :END:
 
 *** I'm disappointed that they didn't jump into checking the processors, there are overlaps on "undocumented" instructions between intell and amd that sound like cia bullshit, maybe just maybe they should have checked if any of the code runs differently on emulators to the real hardware that is not a known bug or intentional gap in documentation
 :PROPERTIES:
 :Author: monkyyy0
-:Score: 4
+:Score: 5
 :DateUnix: 1505602436.0
+:DateShort: 2017-Sep-17
 :END:
 
 
@@ -29,6 +32,7 @@
 :Author: Veedrac
 :Score: 3
 :DateUnix: 1505602699.0
+:DateShort: 2017-Sep-17
 :END:
 
 
@@ -36,6 +40,7 @@
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1505612003.0
+:DateShort: 2017-Sep-17
 :END:
 
 
@@ -44,14 +49,16 @@
 :Author: ajuc
 :Score: 1
 :DateUnix: 1505723418.0
+:DateShort: 2017-Sep-18
 :END:
 
 
 ** [[http://wiki.c2.com/?TheKenThompsonHack][Ken Thompson Hack]]
 :PROPERTIES:
 :Author: eternal-potato
-:Score: 7
+:Score: 6
 :DateUnix: 1505616714.0
+:DateShort: 2017-Sep-17
 :END:
 
 *** It is possible to probabilistically circumvent at KTH, by layering interpreters.
@@ -65,6 +72,7 @@ Small compilers contain simple KTH's, so layer your interpreters to get clean bi
 :Author: everything-narrative
 :Score: 2
 :DateUnix: 1505676007.0
+:DateShort: 2017-Sep-17
 :END:
 
 **** [[https://github.com/mame/quine-relay][Here you have a quine which goes through 100 languages.]] Where is your god now? :)
@@ -72,6 +80,7 @@ Small compilers contain simple KTH's, so layer your interpreters to get clean bi
 :Author: elkablo
 :Score: 2
 :DateUnix: 1505827555.0
+:DateShort: 2017-Sep-19
 :END:
 
 ***** *Exercise 1.1.1.1a:* Implement Ken Thompson Hack C compiler which uses only static code analysis. Design it to detect whenever it is used to compile a Python interpreter, and insert into the Python interpreter a backdoor which detects when the Python interpreter in question is used to run a C compiler, and then insert a KTH of these same specifications into that C compiler. (200 points)
@@ -85,6 +94,7 @@ My point is: I can write my Python interpreter in obfuscated C, and your compile
 :Author: everything-narrative
 :Score: 2
 :DateUnix: 1505828592.0
+:DateShort: 2017-Sep-19
 :END:
 
 
@@ -93,4 +103,5 @@ My point is: I can write my Python interpreter in obfuscated C, and your compile
 :Author: naderc
 :Score: 1
 :DateUnix: 1505620483.0
+:DateShort: 2017-Sep-17
 :END:

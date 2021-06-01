@@ -1,0 +1,48 @@
+:PROPERTIES:
+:Author: Anakiri
+:Score: 17
+:DateUnix: 1445023579.0
+:DateShort: 2015-Oct-16
+:END:
+
+You want [[https://en.wikipedia.org/wiki/Rapidity][rapidity]], the inverse hyperbolic tangent of a fraction of the speed of light, with the symbol φ. You can convert between it and velocity/c with one button on a decent calculator. It's approximately logarithmic, so your rapidity is pretty close to your number of nines.
+
+- φ = 0.01; v = tanh(0.01) = 0.01c
+- φ = 0.5; v = tanh(0.5) = 0.46c
+- φ = 1; v = 0.76c
+- φ = 1.5; v = 0.91c
+- φ = 2; v = 0.96c
+- φ = 5; v = 0.9999c
+- φ = 10; v = 0.999999996c
+
+It has the useful property that you can add with it, like you want.
+
+- v1 = 0.5c
+
+- v2 = v1 + v1
+
+- v2 = (0.5 + 0.5) / (1 + (0.5*0.5)) c
+
+- v2 = 0.8c
+
+- v1 = 0.5c
+
+- φ1 = arctanh(0.5) = 0.55
+
+- φ2 = φ1 + φ1
+
+- φ2 = 0.55 + 0.55 = 1.10
+
+- v2 = tanh(1.10) = 0.8c
+
+Rapidity has another fun property: The hyperbolic cosine of your rapidity is your lorentz factor for length contraction and time dilation. So, by using rapidity, you can calculate the lorentz factor for any velocity by pressing two buttons on your calculator.
+
+- v = 0.6c
+
+- γ = 1/sqrt(1 - 0.6^{2}) = 1.25
+
+- v = 0.6c
+
+- φ = arctanh(0.6) = 0.693
+
+- γ = cosh(0.693) = 1.25

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1500171037.0
+:DateShort: 2017-Jul-16
+:END:
+
+Syntax Error.
+
+Linden Scripting Language is event-driven, not object-oriented, and it's heavily sandboxed. There's no visibility into the lower layers, nor is there a mechanism to even detect a dataserver() event from an external user script, let alone intercept it.

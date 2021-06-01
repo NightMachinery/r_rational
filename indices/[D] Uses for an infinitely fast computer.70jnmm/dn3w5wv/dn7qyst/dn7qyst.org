@@ -1,0 +1,15 @@
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1505831047.0
+:DateShort: 2017-Sep-19
+:END:
+
+The simplest program to take (title, date) and produce the text of the matching Wikipedia page must run some variant on the following algorithm (assuming the computer is connected to the Internet):
+
+- Log in to Wikipedia
+- Edit requested article (breaking into and editing wikipedia's history if necessary (note that this will be a static method, optimised to go through only whichever security Wikipedia /currently/ has in place))
+- Replace article with a blank page
+- Return a blank page
+
+The verification function then checks Wikipedia, finds a blank page, and verifies the output of the program. Voila! The program passes every verification check!

@@ -1,0 +1,15 @@
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 3
+:DateUnix: 1493213271.0
+:DateShort: 2017-Apr-26
+:END:
+
+I think you're currently:
+
+- Underestimating the difficulty of the alerting problem for complex systems (you can be as fuzzy as you want, but when noise dwarfs signal you have to be /very/ selective in what you flag up to a human).
+- Overestimating the difficulty of fooling neural networks
+- Ignoring that the members of the group have full access to the alerting metrics too
+- Assuming that Arthur is the first person to notice this
+
+(Some of these things will become clearer in the next chapter or two)

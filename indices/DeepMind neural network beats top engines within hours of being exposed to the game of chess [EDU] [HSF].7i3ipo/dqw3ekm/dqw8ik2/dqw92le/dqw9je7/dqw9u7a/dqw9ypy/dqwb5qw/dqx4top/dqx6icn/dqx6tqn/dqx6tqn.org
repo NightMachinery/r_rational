@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 1
+:DateUnix: 1512684180.0
+:DateShort: 2017-Dec-08
+:END:
+
+Good point. Still, given that Stockfish was actually being run on a 64-core computer, not a Raspberry Pi, it seems to me that this distinction is less relevant than it might otherwise be. Or, to cash things out in terms of an empirical prediction: I doubt that Stockfish running on, say, 128 or 256 cores would observe significantly better performance against AlphaZero than it did on 64 cores; the differences in understanding we saw in the sample games seem to me to be of a qualitative rather than quantitative nature.
+
+*EDIT:* As far as "comparable hardware" goes, as I said, the comparison is made difficult by the fact that TPUs are optimized for different tasks than CPUs. The only /objective/ metric for comparison I can think of would be energy consumption, but as we don't have figures for the energy consumption of TPUs, this isn't really possible for us to speculate about at the moment.

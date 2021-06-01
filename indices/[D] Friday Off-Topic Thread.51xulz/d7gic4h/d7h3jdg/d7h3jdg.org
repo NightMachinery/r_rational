@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: captainNematode
+:Score: 2
+:DateUnix: 1473526083.0
+:DateShort: 2016-Sep-10
+:END:
+
+There are five common ways to solve AB = C for C: element by element (i.e. Cik = Σj Aij*Bjk -- fuckin' reddit markup...), column by column (i.e. the columns of C are linear combinations of the columns in A), row by row, breaking the matrices into individual rows and columns and then summing, and breaking the original matrices into blocks and multiplying them to solve for blocks in C. Personally, I tend to think of it in terms of the second, since in my work that's had the most application so far. Check out the first twenty minutes of Gilbert Strang's [[https://www.youtube.com/watch?v=FX4C-JpTFgY][Lecture 3]] for an explanation.
+
+As for retaining the information, you just gotta apply it often enough for it to become second nature. I'd recommend watching Gilbert's [[https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8][whole intro-to-linear-algebra lecture series]] -- I found it really easy to follow and a great way to build intuitions about the theory behind linear algebra (it's not super rigorous, though). You can get more course materials [[http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/][here]]. I've also heard [[http://codingthematrix.com/][Klein's Coding the Matrix]] is good for practical application, but I haven't made my way through those materials yet.

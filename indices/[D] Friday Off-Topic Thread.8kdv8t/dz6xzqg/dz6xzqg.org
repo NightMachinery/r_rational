@@ -1,0 +1,77 @@
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 5
+:DateUnix: 1526660058.0
+:DateShort: 2018-May-18
+:END:
+
+In browsing 4chan's /tg/ ("Traditional Games") board, I saw [[https://i.imgur.com/wyGyqsE.png][an exchange]] that strongly reminded me of this subreddit:
+
+#+begin_quote
+
+  #+begin_quote
+
+    #+begin_quote
+      [A /very/ long list of the accomplishments of [[https://www.goodreads.com/series/40419][Honor Harrington]]]
+    #+end_quote
+
+    sounds like a competent, complex, multi-faceted persona with a lot of history and the strength of will to endure whatever is thrown at [her].
+
+    in other words, a protagonist.
+  #+end_quote
+
+  Protagonists are shit. If protagonists have to be [Mary S]ues, then fuck it, stop writing stories with protagonists. Better no stories than bad stories.
+#+end_quote
+
+--------------
+
+#+begin_quote
+  ***** [[https://en.wikipedia.org/wiki/Romanization_of_Arabic][Romanization of Arabic]]
+        :PROPERTIES:
+        :CUSTOM_ID: romanization-of-arabic
+        :END:
+  ****** Method
+         :PROPERTIES:
+         :CUSTOM_ID: method
+         :END:
+  Romanization is often termed "transliteration", but this is not technically correct.^{[citation needed]} /Transliteration/ is the direct representation of foreign /letters/ using Latin symbols, while most systems for romanizing Arabic are actually /transcription/ systems, which represent the sound of the language. As an example, the above rendering /munāẓaratu l-ḥurūfi l-ʻarabīyah/ of the Arabic: مناظرة الحروف العربية‎ is a transcription, indicating the pronunciation; an example transliteration would be /mnaẓrḧ alḥrwf alʻrbyḧ/.
+#+end_quote
+
+=Osama= or =Usama=? =Moqtada= or =Muqtada=? Ugh.
+
+--------------
+
+In browsing 4chan's /biz/ (nominally "Business and Finance", but actually mostly cryptocurrency) board, I stumbled across [[https://github.com/holochain/holochain-proto/wiki/FAQ][an interesting twist on distributed consensus]] (bold emphasis added):
+
+#+begin_quote
+  ***** How is Holochain different from Blockchain?
+        :PROPERTIES:
+        :CUSTOM_ID: how-is-holochain-different-from-blockchain
+        :END:
+
+  #+begin_quote
+    [tl;dr:] Holochain and blockchain are built for fundamentally different use cases. Blockchain is relatively good for systems where it's absolutely necessary to maintain global consensus. Holochain is much better than blockchain at anything that requires less than universal consensus (most things): It's faster, more efficient, more scalable, adaptable, and extendable.
+  #+end_quote
+#+end_quote
+
+ 
+
+#+begin_quote
+  Instead of trying to manage global consensus for every change to a huge blockchain ledger, every participant has [its] own signed hash chain (countersigned for transactions involving others). After [information] is signed to local chains, it is shared to a DHT[,] where every node runs the same validation rules ([just as] blockchain nodes all run the same validation rules. If someone breaks those rules, the DHT rejects [that person's] data---[his] chain has forked away from the holochain.
+#+end_quote
+
+ 
+
+#+begin_quote
+  ****** /Holo/graphic storage
+         :PROPERTIES:
+         :CUSTOM_ID: holographic-storage
+         :END:
+  Every node has a resilient sample of the whole. Like cutting a hologram, if you were to cut a Holochain network in half (make it so half the nodes were isolated from the other half), you would have two whole, functioning systems, not two partial, broken systems.
+
+  This seems to be the strategy used to create resilience in natural systems. For example, where is your DNA stored? Every cell carries its own copy, with different functions expressed based on the role of that cell.
+
+  *Where is the English language stored? Every speaker carries it. People have different areas of expertise, or exposure to different slang or specialized vocabularies. Nobody has a complete copy, nor is anyone's version exactly the same as anyone else, If you disappeared half of the English speakers, it would not degrade the language much.*
+
+  If you keep cutting a hologram smaller and smaller[,] eventually the image degrades enough to stop being recognizable, and[,] depending on the resiliency rules for DHT neighborhoods, holochains would likely share a similar fate[---a]lthough, if the process of killing off the nodes was not instantaneous, the network may be able to keep reshuffling data per redundancy requirements to keep it alive.
+#+end_quote

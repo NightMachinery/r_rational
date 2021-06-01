@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 10
+:DateUnix: 1461039674.0
+:DateShort: 2016-Apr-19
+:END:
+
+Probably [[http://royalroadl.com/fiction/3670][Wanderlust]] by [[/u/Lunitan]]?
+
+The secret to finding it was querying every single instance of royalroadl in the comments of [[/r/rational]] with Google's BigQuery. Google searches through the text, not the links, and the naked link was never posted, so there wasn't any other way to find it.
+
+#+begin_example
+  SELECT
+    *
+  FROM
+    [fh-bigquery:reddit_comments.2015_10] a
+  WHERE
+    a.subreddit='rational'
+    AND a.body CONTAINS 'royalroadl'
+  LIMIT
+    1000
+#+end_example

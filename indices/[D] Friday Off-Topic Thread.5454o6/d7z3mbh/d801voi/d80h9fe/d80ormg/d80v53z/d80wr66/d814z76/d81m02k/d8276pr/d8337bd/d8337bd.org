@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: InfernoVulpix
+:Score: 2
+:DateUnix: 1474919898.0
+:DateShort: 2016-Sep-26
+:END:
+
+I decided today to go through Machop's evolution line and try to get a sense of how Pokemon strength should change as they evolve. I think the Machop -> Machoke evolution is fairly representative, and the Machoke -> Machamp evolution is above average, and all in all Machamp is near the upper end of how I think strong regular Pokemon should be. I put the three of them into [[https://www.dropbox.com/s/a2xtquqwg86ybza/Pokedex_2016-09-26.dex?dl=0][a single .dex file]] alongside what's already there.
+
+I have two pieces of feedback about the interface, as well. The first is that I often find myself looking at the wrong stat box for the stat name. As in, the text for Defense is closer to the box for Attack than its own box since the 'Defense' text is left-aligned. I think if the text were right-aligned, or the boxes were put to the left of the text, I would mistake which stat corresponds with which number less often.
+
+The second feedback is that I'm doing a lot of flipping between Pokemon tabs to get comparisons for the stat I'm looking at. Since a lot of this is inside the evolution line, if I had a keyboard shortcut to quickly switch to adjacent Pokemon I would find myself making a lot of use of it. In lieu of that, actual tabs brought up and discarded like a browser would serve a similar purpose, though I'd imagine that would be harder to implement.
+
+And just one clarification: when I set Machamp's Resistance stat to 450, that means he takes a further 25% less damage from moves he already resists, right? Intuition tells me that if a high Weakness stat takes more damage, a higher Resistance stat should take less damage, even if they cover different things, but the documentation leads me to believe both stats affect damage taken in the same way.

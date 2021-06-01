@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: Prankster42
+:Score: 1
+:DateUnix: 1392557455.0
+:DateShort: 2014-Feb-16
+:END:
+
+I somewhat disagree with the wording here. If you say something like "Quirrel wanted to confuse his enemies, so he did this very complicated thing", and then go on tho specify exactly what the complicated thing is, you get a complexity penalty.
+
+The complexity penalty is a tool for thinking in a more Bayesian way, without actually applying the formal math. Like you said, we need evidence for the involvement of specific people, e.i we can't just postulate some big machine with no evidence, but we also need evidence for each part of the complicated plan to be like we said it was. We should say "Quirrel wanted to confuse his enemies, so he did /a/ very complicated thing", making sure that our hypothesis space covers all the moves he could take to confuse his enemies, not just the one hypothesis for one particular complicated thing.
+
+The reason we employ this tool is not only to to avoid crackpot theories involving entirely new players on the field, but also to avoid believing a particular narrative. Humans tend to believe things on plausibility rather than probability, which has been demonstrated over and over in the heuristics and biases research, where it is called the conjunction fallacy (I think I might be taking a leap here, if you want I can dig up references for this claim).
+
+We need to work hard to avoid the conjunction fallacy in every step of reasoning we take, because leaping to conclusions based on plausible sounding stories is what our hardware is best at. Every time you bring in a specification of a very complex thing rather than just some complex thing, you lose some probability but gain some plausibility as seen by humans. To prevent facilitating this bias, we continue to cry complexity penalty if we notice it.

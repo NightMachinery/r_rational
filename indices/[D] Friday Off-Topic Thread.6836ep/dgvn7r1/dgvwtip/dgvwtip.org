@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: waylandertheslayer
+:Score: 2
+:DateUnix: 1493418194.0
+:DateShort: 2017-Apr-29
+:END:
+
+#+begin_quote
+  The anatomy system is supposed to have as few details as possible: you define what body parts a Pokémon has, and on those body parts you might give them descriptive tags and occasionally a “slot” for another body part to be attached to, but that's pretty much it.  The engine then metaphorically arranges all the parts on the table, it starts with the part called Body, and then recursively attaches each part as it finds “slots” for them. Any leftovers are just attached to the Body.  
+#+end_quote
+
+Specifically for Low Kick and other related low/high targets, you can have abstract body parts (i.e. Body.LowerBody and Body.UpperBody, with maybe Body.LowerBody.Leg1 etc.) to deal with that.
+
+I assume the 'only targets specific body parts' code would be on the technique, rather than part of the target's response to being hit, and you should also have access to information about the attacker and target's height. From there, you could calculate (still using Low Kick as an example) that if the user's height is >2x the target's height, it can hit anywhere, but if the size difference isn't that big, it will only hit parts of Body.LowerBody
+
+I'm not sure if this is the sort of thing you meant by 'clever way of reconciling the issue', but I hope so. I like the strengths of both systems, but if one had to be removed I would lean towards keeping the simpler representation.

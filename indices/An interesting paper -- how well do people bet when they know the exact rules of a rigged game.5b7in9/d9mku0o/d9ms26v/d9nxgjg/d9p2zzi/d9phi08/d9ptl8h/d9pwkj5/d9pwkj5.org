@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: AugSphere
+:Score: 2
+:DateUnix: 1478544683.0
+:DateShort: 2016-Nov-07
+:END:
+
+Since we're on the subject, can you think of a decent method that would utilise the whole posterior for determining the amount to bet, if the bias isn't known and has to be determined as the results of tosses are observed?
+
+Clearly betting using only the mean (estimated with a rule of succession, for example) ignores the very pertinent information about how much information the person has about the bias of the coin (the relative entropy from prior to posterior). I've been playing around trying to explicitly optimise expected gains with the beta distribution, but haven't managed to obtain a closed form expression yet.
+
+EDIT: I mean, it's pretty easy if you resort to Monte Carlo, but I was hoping I'd be able to get a concrete expression, since the situation is so simple.

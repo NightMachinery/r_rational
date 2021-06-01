@@ -1,0 +1,27 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 3
+:DateUnix: 1445635520.0
+:DateShort: 2015-Oct-24
+:END:
+
+#+begin_quote
+  I suspect a lot of those problems have gone away, like being locked into a single OS.
+#+end_quote
+
+Are you saying that modern programs are not locked into a single OS? They are; if it looks like they aren't, that's because either (a) the authors release work-alike versions for different OSes or (b) they run on an emulation layer (e.g. JVM) which comes in work-alike versions for different OSes. Try copying the 'find' binary (or the 'MS Word' binary, or etc) over to a Windows/Mac/different flavor of Unix machine and see how well it runs.
+
+As to getting away from file trees....
+
+Back in 2004, Apple released Spotlight, a search engine built into their Finder (file manager). The point was to get rid of the file system. "File systems should be a database!" they trumpeted. "From now on, you don't need to find where a file is, you just search for it!" they cried.
+
+11 years later, OSX still runs on a filesystem and no one gives a damn about using Spotlight as their primary file management system.
+
+The tree-based file systems are universal because they /work/. Every program in existence uses them, and no existing program would understand your new system. Before trying to invent something new, ask yourself:
+
+1. Exactly what is the problem I'm trying to solve? What is the precise pain-point in file systems?
+2. Why has no one else identified this pain-point and fixed it already?
+3. Once I fix this pain-point, will my new system capture all the advantages of file systems /and/ fail to introduce new pain-points?
+4. How will I convince the rest of the word that my system is so superior that every program needs to switch to using it?\\
+
+Note that you can't just write an interface layer that lets your new system map to an underlying filesystem. If you did, you'd still be working with all the limitations of the underlying filesystem

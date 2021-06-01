@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: Magnap
+:Score: 2
+:DateUnix: 1478553853.0
+:DateShort: 2016-Nov-08
+:END:
+
+Defining the posterior =Pr(p|h,t) = BetaPDF(h+1,t+1)= (the probability =p= of heads given the numbers =h= and =t= of heads and tails; please excuse my informal notation), we can combine this with the Kelly criterion for even-money bets (which I'm assuming this is, though I haven't read the paper) =f = 2p-1= (where =f= is the fraction you should bet) allows us to get the expected value of =f=: =E[f] = \int_{p=0}^1 (2p-1)*Pr(p|h,t) dp= (hope you don't mind a bit of LaTeX). When reassured that yes, =t= and =h= are indeed positive, Mathematica helpfully gives this as =(h-t)/(2+h+t)=, and indeed =\lim_{n\to\infty} (0.6n-0.4n)/(2+0.6n+0.4n) = 0.2= which is in agreement with the Kelly criterion.
+
+EDIT: rephrased last sentence

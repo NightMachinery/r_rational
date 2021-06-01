@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: nevinera
+:Score: 3
+:DateUnix: 1427666163.0
+:DateShort: 2015-Mar-30
+:END:
+
+2 seconds? O.O
+
+What are you hosting on? Even if you're exaggerating, it sounds like you might not have stuff set up optimally - the rails stack with no caching on a 10$ digital ocean box ought to be able to respond in something like 150-300 ms.
+
+I'll get you something tonight though on =users#ratings=.
+
+edit: oh, heroku. That makes a bit more sense. I don't see any webserver gems installed - are you using webrick in production? [[https://devcenter.heroku.com/articles/ruby-default-web-server]] recommends =puma= (I usually use =thin=, but =puma= didn't exist when I made that decision).
+
+edit2: I'd guess that rails is serving your static assets too then. That's especially a problem with webrick, since even pure-io like serving static files is a blocking request in webrick. Assuming I'm guessing right about your stack, that is.

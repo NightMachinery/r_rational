@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 5
+:DateUnix: 1455320060.0
+:DateShort: 2016-Feb-13
+:END:
+
+Trying to move off of Dropbox and onto local portable storage leaves me bewildered that there is no good cross-platform filesystem. [[https://en.wikipedia.org/wiki/Comparison_of_file_systems#OS_support][Windows and Mac OS X support a tiny fraction of what Linux supports out of the box,]] and overlapping cuts that down to just FAT ([[http://unix.stackexchange.com/a/44224][UDF on Windows is fragile]], NTFS-3g is not on OS X by default and it's fucking /freezing Thunar/). FAT doesn't allow distinguishing Posix permissions, so either literally everything on the partition is executable (with a /hard binary patch/ to udisks2d!) or /only files with Windows executable extensions. On LINUX./
+
+I AM FUCKING PISSED.
+
+Is there an actual solution? Has no one invented some sort of ext permissions-mapping file that allows you to mount FAT through an ext pipe? Why are the proprietary platform devs so psychotically NIH that they can't stand to provide access to /literally anything else?/
+
+Platform market share is a goddamn nightmare. If everyone used Linux, there would be no problems in Linux left to say that everyone shouldn't use Linux.
+
+EDIT: I have decided to keep FAT and its stunted permissions (not that I had much of a choice). I can live with long stacks of green filenames.

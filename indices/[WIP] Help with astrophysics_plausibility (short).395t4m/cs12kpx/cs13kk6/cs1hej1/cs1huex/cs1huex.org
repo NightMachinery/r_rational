@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1433913849.0
+:DateShort: 2015-Jun-10
+:END:
+
+#+begin_quote
+  code may not be modified and released by the same person
+#+end_quote
+
+Maybe I've just been working at shitty places, but every large company that I've contracted with has had /terrible/ security. Like, they do code reviews, but there's no mechanism in place to ensure that the commits you put in are the same ones as were in your review. No one is checking the hashes. Half the time, people will sign off on the code review with only a cursory glance. In places where they actually do follow the "code cannot be modified and released by the same person" rule, usually the person doing the release is far from an expert on what the code actually contains. The number of vectors of attack once you're on the inside are almost too numerous to name. And these aren't small companies, where I would expect security to be terrible, but Fortune 500. That's me looking at these systems as a contractor; if someone on the inside had been designing the policies and procedures from the word go, it would be a whole lot easier to simply introduce the flaws that you want to exploit.
+
+(I actually thought that a single person subverting years of hard work in an instant was one of the more plausible bits.)

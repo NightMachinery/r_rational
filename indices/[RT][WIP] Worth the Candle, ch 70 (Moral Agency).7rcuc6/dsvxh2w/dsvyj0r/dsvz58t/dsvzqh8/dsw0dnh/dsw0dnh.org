@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 1
+:DateUnix: 1516312185.0
+:DateShort: 2018-Jan-19
+:END:
+
+I assume that you are running a model of what you expect to happen. That model is a neural network that takes as input <present state of world, my action> and gives as output <expected outcome for selected parameters>. It only contains a finite number of network nodes, it is not by any means a complete simulation of the world, just an approximation that generalizes a situation and tells you what it thinks is the result.
+
+You run as big a model as you can afford computing power for.
+
+So you are simply choosing the min(outcome_list[]). You're looking for the least bad option. That means that if it involves killing 100 test subjects, that is factored in to your "badness" calculation.
+
+So in a scenario where the response says the min() says to do that, it /is/ the right thing to do. Assuming an unbiased model that takes into account all data you have the computing power and memory for, etc, it's rational to do the best thing available.

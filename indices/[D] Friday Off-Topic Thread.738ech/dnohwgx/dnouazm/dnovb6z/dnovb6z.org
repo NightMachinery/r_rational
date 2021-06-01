@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 5
+:DateUnix: 1506718168.0
+:DateShort: 2017-Sep-30
+:END:
+
+The hot ranking is:
+
+#+begin_example
+  Log(abs(Upvotes-Downvotes)) + (age/45000)
+#+end_example
+
+In other words, there's a decreasing impact from each additional upvote, and then "hotness" is also decreasing over time. A new post will beat an old post, all else being equal, but a sufficiently upvoted post can stay ahead of newer posts for quite a while.
+
+Timing is important partly because the "age" factor is one that you can never beat, only stay ahead of for a bit. I think the general rule is that you should actually post /ahead/ of peak hours by a certain margin depending on subreddit, in order to be one of the things that's on the top when peak hours roll around, which will likely get you the additional votes to stay ahead of age. (Same logic for website design and picking what to put "above the fold", because a lot of people will just stop by to look at that and nothing else.)
+
+From recollection, the timing differs somewhat for text and image posts, but 8am or 9am Central (UTC -6) is a good starting place. This is why all the threads on [[/r/rational]] are set up to automatically post around that time; it maximizes how long the posts will stay on top. (Of course, once everyone knows this, then the ideal strategy changes in order to avoid competition.)
+
+Edit: You can see all the python code [[https://github.com/reddit/reddit/blob/master/r2/r2/lib/db/_sorts.pyx][here]], though reddit code is no longer maintained open source, and the actual code they use might have diverged (though I doubt it). Also, shout out to [[/r/TheoryOfReddit]].

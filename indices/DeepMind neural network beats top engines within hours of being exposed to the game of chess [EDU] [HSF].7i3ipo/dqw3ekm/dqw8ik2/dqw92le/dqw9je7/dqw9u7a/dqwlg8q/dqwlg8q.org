@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Ilverin
+:Score: 3
+:DateUnix: 1512662348.0
+:DateShort: 2017-Dec-07
+:END:
+
+Just a note that processing power is slightly more complicated. Google's tensor processing unit uses something similar to minifloat (8-bit float) so FLOPs aren't the same as with normal hardware. Personally my favorite comparison is with total hardware cost when comparing 2 different kinds of data type.
+
+Unfortunately we don't know how much Google TPUs costs. According to [[http://www.cdrinfo.com/Sections/News/Details.aspx?NewsId=62788]] AlphaZero only ran on 4 TPUs (less than 1 TPU pod). According to this comment this is less power consumption than Stockfish: [[https://www.reddit.com/r/chess/comments/7i8419/cb_article_on_alphazero_suggests_alphazero_is/dqxbimp/]]
+
+Datatype used in tensor flow (not learning part, the performing part): [[https://www.tensorflow.org/performance/quantization]]

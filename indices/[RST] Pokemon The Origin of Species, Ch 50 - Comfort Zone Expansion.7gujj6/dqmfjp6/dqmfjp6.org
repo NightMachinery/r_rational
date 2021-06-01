@@ -1,0 +1,44 @@
+:PROPERTIES:
+:Author: masasin
+:Score: 2
+:DateUnix: 1512156169.0
+:DateShort: 2017-Dec-01
+:END:
+
+I'm stuck and/or confused.
+
+The terminology I use is:
+
+T1, T2 = Actually Tier 1/2 R1, R2 = Reported Tier 1/2
+
+I get this part:
+
+| Givens                     | P(T1) | P(T2) |
+|----------------------------+-------+-------|
+| Prior (an attack occurred) | 0.12  | 0.88  |
+| R1                         | 0.79  | 0.21  |
+| R2                         | 0.33  | 0.67  |
+
+What we're looking for is P(T1 | R1), the probability that a Tier 1 Report is actually a Tier 1.
+
+What Leaf tries to find is the probability of Tier 1 being reported accurately, which, to me, would be P(R1 | T1) / P(T1). We don't know P(R1 | T1), so we have to use Bayes's rule:
+
+P(R1 | T1) = P(T1 | R1) * P(R1) / P(T1)
+
+But we don't know P(R1) either.
+
+What Leaf instead does is calculate the percentage of Tier 1 reports that actually represent Tier 1, which we can do:
+
+P(R1 | T1) / P(R1) = P(T1 | R1) * P(R1) / (P(T1) * P(R1))
+
+which cancels out to P(T1 | R1) / P(T1).
+
+However, she calculates P(T1) as:
+
+P(T1) = P(T1 | R1) + P(T1 | R2)
+
+instead of:
+
+P(T1) = P(T1 | R1) * P(R1) + P(T1 | R2) * P(R2)
+
+And this got me completely stuck. Help?

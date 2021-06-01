@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 4
+:DateUnix: 1489154916.0
+:DateShort: 2017-Mar-10
+:END:
+
+Just spent a week tracking down a memory corruption problem that was due to a missing reference count call in some code I imported last year.
+
+Hopefully they don't have to deal with manual memory management in this future history.

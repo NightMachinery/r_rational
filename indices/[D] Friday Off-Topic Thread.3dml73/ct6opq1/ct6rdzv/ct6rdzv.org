@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: DrunkenQuetzalcoatl
+:Score: 1
+:DateUnix: 1437153466.0
+:DateShort: 2015-Jul-17
+:END:
+
+To clarify: Your protagonist only has (all?) generated points on his map but not the order the formula generated them? And does the formula only specify the location or also the mapping between points on the worlds?
+
+In general it sound like you want a [[https://en.wikipedia.org/wiki/Pseudorandom_number_generator][Pseudo Random Number Generator]].
+
+PRNGs have an attribute called a "period" which is the number of outputs after which they start to repeat.
+
+Candidates would be a [[https://en.wikipedia.org/wiki/Linear_congruential_generator][Linear Congruential Generator]]
+
+Or a [[https://en.wikipedia.org/wiki/Linear_feedback_shift_register][Linear Feedback Shift Register]]
+
+Both these generators are not cryptographically secure. Which means they deviate from perfect randomness. They generate patterns and with enough points can be broken.
+
+For the mapping a [[https://en.wikipedia.org/wiki/Perfect_hash_function][Perfect Hash Function]] could do the trick.
+
+Other thoughts would be a [[https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29][RSA encryption]]. No patterns but your protagonist would have to factor a large number to uncover the pattern. (Granted there would be less intermediate steps and the number would have to come directly from the gods/ancient civilization or something).
+
+Cryptography in general is full of interesting concepts for such stories. I'm currently writing on my master thesis for IT-Security. The topic is about secure pseudo random number generators in software.

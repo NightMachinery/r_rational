@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: Muyyd
+:Score: 0
+:DateUnix: 1435456710.0
+:DateShort: 2015-Jun-28
+:END:
+
+Suppose a person get knocked by a car. Car leaves. Five witnesses report that a car was: white, black, pink, red, yellow. Forensics found on a knocked persons clothes pink paint (pp).
+
+We have now:
+
+P(w), P(b), P(p), P(r), P(y) - priors
+
+P(pp|w), P(pp|b), P(pp|p), P(pp|r), P(pp|b) - likelihoods.
+
+Now, if i have onle two priors (P(w) and P(p)), i will calculate likelihood ratios P(pp|w)/P(pp|p). But how can i calculate likelihood ratios for five hypotheses?

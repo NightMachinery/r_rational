@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 5
+:DateUnix: 1450709850.0
+:DateShort: 2015-Dec-21
+:END:
+
+Use characters that are compatible with Unicode. This will ensure that web browsers will be able to see them and ff.net will be able to display them (note that you probably want to test this to make sure ff.net /actually/ supports them). Using a font file just introduces complications that makes it difficult if not impossible to translate onto the web.
+
+[[https://en.wikipedia.org/wiki/Runic_(Unicode_block)][Here's the runic Unicode block.]]

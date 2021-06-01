@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: gwern
+:Score: 2
+:DateUnix: 1488945565.0
+:DateShort: 2017-Mar-08
+:END:
+
+#+begin_quote
+  If only I could use this to somehow figure out the version where bias is not known and has to be estimated.
+#+end_quote
+
+Oh, that's not that hard. That is, it's easy to write down the code to solve it, since it's just adding a beta/binomial, but it's efficiently computing it which is harder: [[https://www.gwern.net/Coin-flip#unknown-coin-flip-probability]]
+
+I also have versions for when the max cap on wealth ($250) is unknown and when the total number of rounds (300) are unknown, but I'm not at all sure they're right. Combining all 3 would only be a little tedious, but I haven't bothered since it would be so computationally demanding.
+
+One thing I'm trying is I've coded up an implementation of the Kelly coinflip game for OpenAI's Gym suite of environments/games, so it should be easy to apply deep RL to it in the future. Something like A3C should be able to handle the version with all 3 unknown with close to optimal performance.

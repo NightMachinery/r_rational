@@ -1,0 +1,40 @@
+:PROPERTIES:
+:Author: LieGroupE8
+:Score: 1
+:DateUnix: 1516563655.0
+:DateShort: 2018-Jan-21
+:END:
+
+* Large number challenge winners and commentary
+  :PROPERTIES:
+  :CUSTOM_ID: large-number-challenge-winners-and-commentary
+  :END:
+At a glance, I think size order goes as follows.
+
+I'm pretty sure [[/u/Seth000]] is the winner with their iterated TREE functions.
+
+Runner up is [[/u/currough]] with their binary tree of Ackermann functions of Graham's number. Iterated TREE beats iterated Ackermann, because [[https://en.wikipedia.org/wiki/Kruskal%27s_tree_theorem][according to Wikipedia]], the growth rate is much higher than Ackermann in the [[https://en.wikipedia.org/wiki/Fast-growing_hierarchy][fast-growing hierarchy]].
+
+Then we have [[/u/bbrazil]] with xkcd's classic A(G,G).
+
+Fourth place is [[/u/Gurkenglas]] with Conway's chained arrow notation 9->9->9->9. I don't have good intuition about chained arrow notation, but I think this is smaller than A(G,G)? If they had written 9>9>9>9>9 instead, that actually might haved pushed this to second or third place...maybe?
+
+Fifth place is [[/u/TheJungleDragon]] with 9kkkkkkkk9, using Knuth's up-arrow notation, which is immense but unfortunately utterly destroyed by the higher-up answers.
+
+Sixth place is [[/u/ulyssessword]] with chained exponents. Chained exponents might have worked well if I had restricted answers to only the basic operations, but unfortunately they don't hold a candle to hyperoperators. It's hard to write a large number if you've never seen hyperoperators before, so good effort.
+
+* Commentary
+  :PROPERTIES:
+  :CUSTOM_ID: commentary
+  :END:
+The best strategy in this game, I think, is something similar to what [[/u/GaBeRockKing]] suggests. You want to use prefix/polish notation to write something like ttttttttt9 for your number, and to cram as much recursion into your explanation as possible while still having it be interpretable to the reader. For example, someone could write:
+
+*Number:* qqqqqqqqq9 [10 chars]
+
+*Explanation:* [[#s][spoiler tag because without it weird formatting stuff happens?]]
+
+Where [[https://en.wikipedia.org/wiki/Friedman%27s_SSCG_function][Friedman's SSCG function]] grows faster than TREE, and the explanation adds several levels of recursion on top of that. Using chained arrow notation might allow even faster recursion, but the tradeoff is that every concept you import must be defined in the explanation with more characters. Better still might be trying to import the formalism of the fast-growing hierarchy and add things to it, but I'm not sure how to do that succintly.
+
+Bringing in Turing machines like [[/u/xavion]] tried to do risks non-computability and ill-definedness. If we had allowed noncomputable functions, then the [[https://en.wikipedia.org/wiki/Busy_beaver#The_busy_beaver_function_%CE%A3][Busy Beaver function]] beats the hell out of any possible computable function anyone could have ever devised, because in some sense BB(n) is the maximum number expressable by any halting n-state Turing machine. Just pick an n where you are pretty sure that an n-state Turing machine has enough complexity to encode the concepts being used in this competition. Then do a whole bunch of recursion by defining BB^{k} (n) to be the maximum number definable by an n-state turing machine that can make oracle calls to BB^{k-1}, and so on.
+
+Kudos to [[/u/ShiranaiWakaranai]] for trying to munchkin the rules. But it's hard to munchkin rules with a judge who models the intent of the rules (The "spirit of the law") rather than the literal rules.

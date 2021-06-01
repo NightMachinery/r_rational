@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: suyjuris
+:Score: 3
+:DateUnix: 1453332898.0
+:DateShort: 2016-Jan-21
+:END:
+
+After running the spell check, the data is in a certain form (it conforms to to rules of the spellchecker). Let's simplify, and describe this form as 'lowercase words delimited by space'. (Adding extra complexity like punctuation would not increase the information density by much.) What percentage of all possible data of length n is in this form? First, eliminate all data that contains illegal characters, so (26 / 256)^{n} of data. Then, the data is a sequence of words, lets check whether each word is valid. As for every 5 + 1 characters there are only ~8887 valid words, this reduces by 8887 / 26^{6} per six characters, pow(8887 / 26^{6,} 1/6) = 17.5% per character. Together you get 1.8% per character, which is equivalent to multiplying the information length with 8 / log2(256 * 1.8%) = 3.7
+
+You're right; I did not consider that the total percentage scales with message length.

@@ -1,0 +1,17 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1472620234.0
+:DateShort: 2016-Aug-31
+:END:
+
+#+begin_quote
+  My real passion is in a Bayesian-styled probability generator/calculator for differential diagnoses based on signs, symptoms, and testing
+#+end_quote
+
+Part of me wonders whether paying someone to make a professional version of something like this would be worthwhile from an EA perspective. Unfortunately, I doubt it. It's hard to guess at, but I think you may be right that interest in this sort of thing could be minimal. As things are, I already do similar kinds of estimates for problems I've had by hand when I have the data to.
+
+Also, there's a long section from Sarah Constantin's blog on this topic:
+
+"Back when I was trying to build a Bayes net model for automated medical diagnosis, I thought it would be relatively simple. The medical literature is full of journal articles of the form “A increases/decreases the risk of B by X%.” A might be a treatment that reduces incidence of disease B; A might be a risk factor for disease B; A might be a disease that sometimes causes symptom B; etc. So, think of a graph, where A and B are nodes and X is the weight between them. Have researchers read a bunch of papers and add the corresponding nodes to the graph; then, when you have a patient with some known risk factors, symptoms, and diseases, just fill in the known values and propagate the probabilities throughout the graph to get the patient's posterior probability of having various diseases.
+
+This is pretty computationally impractical at large scales, but that wasn't the main problem. The problem was deciding what a node is. Do you have a node for “heart attack”? Well, one study says a certain risk factor increases the risk of having a heart attack before 50, while another says that a different risk factor increases the lifetime number of heart attacks. Does this mean we need two nodes? How would we represent the relationship between them? Probably having early heart attacks and having lots of heart attacks are correlated, but we aren't likely to be able to find a paper that quantifies that correlation. On the other hand, if we fuse the two nodes into one, then the strengths of the risk factors will be incommensurate. There's a difficult judgment call inherent in just deciding what the primary “objects” of our model of the world are."

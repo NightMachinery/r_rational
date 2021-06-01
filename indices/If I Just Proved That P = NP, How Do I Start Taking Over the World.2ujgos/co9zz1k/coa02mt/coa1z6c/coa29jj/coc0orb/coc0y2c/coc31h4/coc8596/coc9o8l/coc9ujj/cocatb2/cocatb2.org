@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: khafra
+:Score: 2
+:DateUnix: 1423164716.0
+:DateShort: 2015-Feb-05
+:END:
+
+#+begin_quote
+  If I have an Amazon box, and Amazon has a Paypal box, then I can get Amazon to "sign" that I'm really connected to Paypal. That's what I meant by WOT.
+#+end_quote
+
+This is, indeed, a broad overview of the way a WOT works. The hidden complexity under the words "sign" and "I," though, is what requires asymmetric crypto.
+
+For Alice to endorse Bob's identity, Bob has to /have/ a public identity--some way to say "I am Bob" in such a way that Mallory cannot also say "I am Bob." The only way I know of to do that is with a [[http://en.wikipedia.org/wiki/Trapdoor_function][trapdoor function]]. P=NP implies that true trapdoor functions do not exist.

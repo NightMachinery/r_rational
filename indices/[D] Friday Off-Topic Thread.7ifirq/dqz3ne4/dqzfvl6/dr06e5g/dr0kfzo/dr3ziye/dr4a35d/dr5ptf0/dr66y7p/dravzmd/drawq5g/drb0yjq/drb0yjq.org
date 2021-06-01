@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: narfanator
+:Score: 2
+:DateUnix: 1513370402.0
+:DateShort: 2017-Dec-16
+:END:
+
+Right! So, do you mean for training, or do you mean for forward prop? Because I'm actually thinking of M random numbers, where M is a) a hyperparameter I manually(*) tune and b) not one.
+
+B is the complicated one, since the idea is that this becomes a component in a larger system: this component learns to generate working code, then the larger system learns to make this component produce complex / interesting sound; then that in turn becomes part of a larger system to generate sound given a style. I figure that that cannot be done if you're just mapping the real numbers to code, you need to have something more complex. Could be totally wrong tho.
+
+- Meh. I'm an engineer. I'll find a way to automate. (That's likely where I'd want to use genetic algo's, cuz biomimicry).

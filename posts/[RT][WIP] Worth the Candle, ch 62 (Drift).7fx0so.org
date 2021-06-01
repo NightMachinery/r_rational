@@ -3,22 +3,25 @@
 * [[http://archiveofourown.org/works/11478249/chapters/29330487][[RT][WIP] Worth the Candle, ch 62 (Drift)]]
 :PROPERTIES:
 :Author: cthulhuraejepsen
-:Score: 108
+:Score: 107
 :DateUnix: 1511805574.0
+:DateShort: 2017-Nov-27
 :END:
 
 ** Wow. [Null pointer exception], if it's not simply a joke, is the first exposed vulnerability in the game layer. With time and experimentation, could be a way to escalate user privileges from there.
 :PROPERTIES:
 :Author: narfanator
-:Score: 35
+:Score: 32
 :DateUnix: 1511820986.0
+:DateShort: 2017-Nov-28
 :END:
 
 *** I'd say the intelligence overflow from MEN-upping probably counts as exposure, too, in that it laid bare the upper meta-level for a moment. Even if the failure was handled gracefully by the system.
 :PROPERTIES:
 :Author: GeeJo
-:Score: 27
+:Score: 26
 :DateUnix: 1511825219.0
+:DateShort: 2017-Nov-28
 :END:
 
 
@@ -29,8 +32,9 @@
 Edit: When checking about whether any name was mentioned, I was reminded that Amaryllis is not going to be happy about him choosing to save her, perhaps mollifiable by the Companion status revelation.
 :PROPERTIES:
 :Author: MultipartiteMind
-:Score: 12
+:Score: 11
 :DateUnix: 1511857707.0
+:DateShort: 2017-Nov-28
 :END:
 
 **** I don't know about that. There's a few ways you could potentially get a null pointer, at least in C:
@@ -44,8 +48,9 @@ Edit: When checking about whether any name was mentioned, I was reminded that Am
 I actually think 3) is most likely in his instance. If souls themselves are pointers, then the lack of one is arguably a null pointer. The system tried to access the 'soul' pointer and retrieved 0, then tripped the null pointer exception.
 :PROPERTIES:
 :Author: Quetzhal
-:Score: 13
+:Score: 12
 :DateUnix: 1511887757.0
+:DateShort: 2017-Nov-28
 :END:
 
 
@@ -54,6 +59,7 @@ I actually think 3) is most likely in his instance. If souls themselves are poin
 :Author: entropizer
 :Score: 8
 :DateUnix: 1511825046.0
+:DateShort: 2017-Nov-28
 :END:
 
 
@@ -62,14 +68,16 @@ I actually think 3) is most likely in his instance. If souls themselves are poin
 :Author: serge_cell
 :Score: 1
 :DateUnix: 1511968029.0
+:DateShort: 2017-Nov-29
 :END:
 
 
 ** Has anyone mentioned that "Fallatehr" is an anagram for "All Father"?
 :PROPERTIES:
 :Author: wnoise
-:Score: 22
+:Score: 24
 :DateUnix: 1511859260.0
+:DateShort: 2017-Nov-28
 :END:
 
 *** Also for "Earth Fall", "Alert Half" and "A Fart Hell".
@@ -77,37 +85,43 @@ I actually think 3) is most likely in his instance. If souls themselves are poin
 :Author: eternal-potato
 :Score: 22
 :DateUnix: 1511899531.0
+:DateShort: 2017-Nov-28
 :END:
 
-**** #+begin_quote
+**** u/jaghataikhan:
+#+begin_quote
   9000 hells - last anagram is all but confirmed to be plot relevant :D
 #+end_quote
 :PROPERTIES:
 :Author: jaghataikhan
-:Score: 4
+:Score: 5
 :DateUnix: 1511993062.0
+:DateShort: 2017-Nov-30
 :END:
 
 
 **** TINACBNIEAC.
 :PROPERTIES:
 :Author: Tetrikitty
-:Score: 4
+:Score: 3
 :DateUnix: 1511995807.0
+:DateShort: 2017-Nov-30
 :END:
 
 
 ** [deleted]
 :PROPERTIES:
-:Score: 15
+:Score: 14
 :DateUnix: 1511814835.0
+:DateShort: 2017-Nov-28
 :END:
 
 *** She was mentioned as one of the non-elf people they met in the gymnasium full of Fallatehr's "associates". I don't think there's any other reference to her.
 :PROPERTIES:
 :Author: Kerbal_NASA
-:Score: 9
+:Score: 8
 :DateUnix: 1511865426.0
+:DateShort: 2017-Nov-28
 :END:
 
 
@@ -116,14 +130,16 @@ I actually think 3) is most likely in his instance. If souls themselves are poin
 :Author: rafaelhr
 :Score: 3
 :DateUnix: 1511825561.0
+:DateShort: 2017-Nov-28
 :END:
 
 
 ** I loved the null pointer exception
 :PROPERTIES:
 :Author: kraryal
-:Score: 27
+:Score: 29
 :DateUnix: 1511811185.0
+:DateShort: 2017-Nov-27
 :END:
 
 *** There's a possibility that by increasing his loyalty level with the nonanima Juniper will raise his loyalty level with every other entity that lacks a soul/is a null pointer. Which may or may not be powerful and useful.
@@ -131,11 +147,13 @@ I actually think 3) is most likely in his instance. If souls themselves are poin
 Also, this means that souls act as pointers for the computer system that runs reality, which is very interesting and makes soul magic sound really powerful. I'm beginning to think that soul magic will end up just being computer programming.
 :PROPERTIES:
 :Author: FudgeOff
-:Score: 30
+:Score: 32
 :DateUnix: 1511812936.0
+:DateShort: 2017-Nov-27
 :END:
 
-**** #+begin_quote
+**** u/narfanator:
+#+begin_quote
   raise his loyalty level with every other entity that lacks a soul/is a null pointer
 #+end_quote
 
@@ -146,8 +164,9 @@ Unlikely. It's not the value of the pointer that matters*, it's the values at th
 If we're presuming that this is an actual error in the game layer, and not a joke/reference, then this would imply that loyalty is NOT a property of whatever object type the pointer is for; but that where the companion title/name comes from /is/. Which is interesting. It also implies that the game layer will catch exceptions and handle them gracefully, instead of crashing. Also interesting.
 :PROPERTIES:
 :Author: narfanator
-:Score: 18
+:Score: 22
 :DateUnix: 1511821431.0
+:DateShort: 2017-Nov-28
 :END:
 
 ***** The fact that accessing null causes NPE means that it's probably a managed memory language, and pointer arthimethic is right out.
@@ -155,6 +174,7 @@ If we're presuming that this is an actual error in the game layer, and not a jok
 :Author: ajuc
 :Score: 2
 :DateUnix: 1512132749.0
+:DateShort: 2017-Dec-01
 :END:
 
 
@@ -163,18 +183,21 @@ If we're presuming that this is an actual error in the game layer, and not a jok
 :Author: kraryal
 :Score: 7
 :DateUnix: 1511816872.0
+:DateShort: 2017-Nov-28
 :END:
 
 
-**** #+begin_quote
+**** u/Noumero:
+#+begin_quote
   I'm beginning to think that soul magic will end up just being computer programming.
 #+end_quote
 
 Well, [[https://www.reddit.com/r/rational/comments/72iul3/rtwip_worth_the_candle_chapter_40_in_which_the/dnj3brm/?context=3][I'll take that compromise option]].
 :PROPERTIES:
 :Author: Noumero
-:Score: 4
+:Score: 5
 :DateUnix: 1511817807.0
+:DateShort: 2017-Nov-28
 :END:
 
 
@@ -183,6 +206,7 @@ Well, [[https://www.reddit.com/r/rational/comments/72iul3/rtwip_worth_the_candle
 :Author: derefr
 :Score: 1
 :DateUnix: 1512087813.0
+:DateShort: 2017-Dec-01
 :END:
 
 
@@ -191,48 +215,55 @@ Well, [[https://www.reddit.com/r/rational/comments/72iul3/rtwip_worth_the_candle
 :Author: ajuc
 :Score: 1
 :DateUnix: 1512132567.0
+:DateShort: 2017-Dec-01
 :END:
 
 
-** #+begin_quote
+** u/SvalbardCaretaker:
+#+begin_quote
   “She's innocent,” I said. “Shit,” Fenn swore. “She's fucking Joon-bait.”
 #+end_quote
 
 Muahahaha
 :PROPERTIES:
 :Author: SvalbardCaretaker
-:Score: 30
+:Score: 32
 :DateUnix: 1511827767.0
+:DateShort: 2017-Nov-28
 :END:
 
 
 ** Interesting. Maybe you can temporary stuff any soul into nonanima, so she would be immediately useful.
 :PROPERTIES:
 :Author: valeskas
-:Score: 11
+:Score: 13
 :DateUnix: 1511812357.0
+:DateShort: 2017-Nov-27
 :END:
 
 *** I was wondering if they could stuff Solace in her, maybe for healing or druid-specific knowledge.
 :PROPERTIES:
 :Author: sharikak54
-:Score: 24
+:Score: 23
 :DateUnix: 1511820993.0
+:DateShort: 2017-Nov-28
 :END:
 
 
 *** I think that would be counterproductive and just "kill" the nonanima, replacing her with someone else. Getting her original soul would help her, but not sure beyond that.
 :PROPERTIES:
 :Author: Makin-
-:Score: 3
+:Score: 5
 :DateUnix: 1511816224.0
+:DateShort: 2017-Nov-28
 :END:
 
 **** That is the sort of thing where one should ask the handy expert, not wonder.
 :PROPERTIES:
 :Author: Izeinwinter
-:Score: 15
+:Score: 16
 :DateUnix: 1511825904.0
+:DateShort: 2017-Nov-28
 :END:
 
 
@@ -243,24 +274,27 @@ Muahahaha
 Other things soul-magic is very likely to be useful for. Fallatehr edited fear out of himself. The fact that this is possible implies that self-directed soul magic can render Joon zen about the whole leveling process - That is, just straight up carve it out of himself as a value, making his attitude one of "it happens, it happens". That is very good news, because Experience-point addict Joon is not a story line I want to see.
 :PROPERTIES:
 :Author: Izeinwinter
-:Score: 11
+:Score: 10
 :DateUnix: 1511874863.0
+:DateShort: 2017-Nov-28
 :END:
 
 
 ** So the system can glitch. This is good news on the "avoiding the narrative" front.
 :PROPERTIES:
 :Author: TempAccountIgnorePls
-:Score: 10
+:Score: 9
 :DateUnix: 1511813919.0
+:DateShort: 2017-Nov-27
 :END:
 
 
 ** I wonder why the chapter title is "Drift"? Value drift, maybe?
 :PROPERTIES:
 :Author: dalitt
-:Score: 6
+:Score: 7
 :DateUnix: 1511824999.0
+:DateShort: 2017-Nov-28
 :END:
 
 *** Drift from the paths predicted by the game layer?
@@ -268,17 +302,20 @@ Other things soul-magic is very likely to be useful for. Fallatehr edited fear o
 :Author: All_in_bad_taste
 :Score: 3
 :DateUnix: 1511827739.0
+:DateShort: 2017-Nov-28
 :END:
 
 
 ** Typos here, please.
 :PROPERTIES:
 :Author: cthulhuraejepsen
-:Score: 3
+:Score: 2
 :DateUnix: 1511806044.0
+:DateShort: 2017-Nov-27
 :END:
 
-*** #+begin_quote
+*** u/HomotoWat:
+#+begin_quote
   her scarlet-colored eyed
 #+end_quote
 
@@ -287,25 +324,29 @@ should be "her scarlet-colored eyes"
 :Author: HomotoWat
 :Score: 3
 :DateUnix: 1511808413.0
+:DateShort: 2017-Nov-27
 :END:
 
 **** Since scarlet is in fact only a colour, should it not just be "her scarlet eyes"? I wouldn't expect to see someone write "her blue-coloured eyes" either.
 :PROPERTIES:
 :Author: kraryal
-:Score: 8
+:Score: 9
 :DateUnix: 1511810240.0
+:DateShort: 2017-Nov-27
 :END:
 
 
 **** Fixed, thank you. (Also, removed "colored", as it's cleaner that way.)
 :PROPERTIES:
 :Author: cthulhuraejepsen
-:Score: 4
+:Score: 3
 :DateUnix: 1511833337.0
+:DateShort: 2017-Nov-28
 :END:
 
 
-*** #+begin_quote
+*** u/Kerbal_NASA:
+#+begin_quote
   I will remain imprisoned with a fewer resources
 #+end_quote
 
@@ -334,10 +375,12 @@ Maybe if I was reading it all at once it'd feel more natural, but I think it mig
 :Author: Kerbal_NASA
 :Score: 3
 :DateUnix: 1511836229.0
+:DateShort: 2017-Nov-28
 :END:
 
 
-*** #+begin_quote
+*** u/GeeJo:
+#+begin_quote
   Rolling was none to fun in armor
 #+end_quote
 
@@ -346,6 +389,7 @@ None too fun
 :Author: GeeJo
 :Score: 1
 :DateUnix: 1511825238.0
+:DateShort: 2017-Nov-28
 :END:
 
 **** Fixed, thanks!
@@ -353,10 +397,12 @@ None too fun
 :Author: cthulhuraejepsen
 :Score: 1
 :DateUnix: 1511833353.0
+:DateShort: 2017-Nov-28
 :END:
 
 
-*** #+begin_quote
+*** u/SvalbardCaretaker:
+#+begin_quote
   trying my best to have my stomach churned by what I was doing.
 #+end_quote
 
@@ -365,6 +411,7 @@ NOT having it churned
 :Author: SvalbardCaretaker
 :Score: 1
 :DateUnix: 1511827798.0
+:DateShort: 2017-Nov-28
 :END:
 
 **** Fixed, thank you.
@@ -372,10 +419,12 @@ NOT having it churned
 :Author: cthulhuraejepsen
 :Score: 1
 :DateUnix: 1511833360.0
+:DateShort: 2017-Nov-28
 :END:
 
 
-**** #+begin_quote
+**** u/SvalbardCaretaker:
+#+begin_quote
   It was spectacular, under the light of Celestar and the multicolored stars.
 #+end_quote
 
@@ -384,6 +433,7 @@ Remove the comma
 :Author: SvalbardCaretaker
 :Score: 0
 :DateUnix: 1511827831.0
+:DateShort: 2017-Nov-28
 :END:
 
 ***** Fixed, grudgingly, because it's one of those cases where I like a comma splice; I think the people that are averse to "commas as pauses" are /really/ averse to commas as pauses, so I try to eliminate them when I realize I've used one for effect (though not always).
@@ -391,13 +441,15 @@ Remove the comma
 :Author: cthulhuraejepsen
 :Score: 2
 :DateUnix: 1511833793.0
+:DateShort: 2017-Nov-28
 :END:
 
 ****** I am a native german speaker, we put them EVERYWHERE. Do what you want ;-)
 :PROPERTIES:
 :Author: SvalbardCaretaker
-:Score: 3
+:Score: 4
 :DateUnix: 1511860678.0
+:DateShort: 2017-Nov-28
 :END:
 
 
@@ -418,6 +470,7 @@ I will remain imprisoned with +a+ fewer resources
 :Author: nytelios
 :Score: 1
 :DateUnix: 1512012922.0
+:DateShort: 2017-Nov-30
 :END:
 
 **** Fixed all those, thanks!
@@ -425,10 +478,12 @@ I will remain imprisoned with +a+ fewer resources
 :Author: cthulhuraejepsen
 :Score: 1
 :DateUnix: 1512243812.0
+:DateShort: 2017-Dec-02
 :END:
 
 
-** #+begin_quote
+** u/TheGuardianOne:
+#+begin_quote
   “They're prone to demonic possession; without a soul, it's easy to enter the body. She won't have any magic that ties to the soul, which means most of them.”
 
   “We're talking about demonic possession here?” I'd asked.
@@ -439,6 +494,7 @@ This confused me a bit. Was Mary originally saying "she's prone to possession", 
 :Author: TheGuardianOne
 :Score: 1
 :DateUnix: 1512043827.0
+:DateShort: 2017-Nov-30
 :END:
 
 *** I thought Joon was asking a rhetorical question. Like: "for real? demonic possession?"
@@ -446,6 +502,7 @@ This confused me a bit. Was Mary originally saying "she's prone to possession", 
 :Author: nytelios
 :Score: 2
 :DateUnix: 1512254648.0
+:DateShort: 2017-Dec-03
 :END:
 
 **** I will affirm that as the intended reading, but it could probably be cleared up and reworded a bit.
@@ -453,4 +510,5 @@ This confused me a bit. Was Mary originally saying "she's prone to possession", 
 :Author: cthulhuraejepsen
 :Score: 1
 :DateUnix: 1512284637.0
+:DateShort: 2017-Dec-03
 :END:

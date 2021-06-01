@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: Dwood15
+:Score: 1
+:DateUnix: 1484771892.0
+:DateShort: 2017-Jan-19
+:END:
+
+#+begin_quote
+  then the second should score more.
+#+end_quote
+
+And that's the issue, in SethBling's code, the function has a harsh penalty for taking time. The first will almost always be a higher fitness in his code.
+
+#+begin_quote
+  small advantages like that would have little impact compared to legitimate progress.
+#+end_quote
+
+The fitness function does not account for that in the original code, and I struggled to create a fitness function to account for that myself. Part of why I left the code behind.
+
+#+begin_quote
+  lines through the map that indicate progress
+#+end_quote
+
+Right, that's a potential option, but there is a way to dynamically tell if a direction is the correct one in general. It however, does not define the exact correct path.
+
+You should run SethBling's code on the first of level 2 in Super Mario World, as your understanding here would be greatly increased on what I'm talking about.

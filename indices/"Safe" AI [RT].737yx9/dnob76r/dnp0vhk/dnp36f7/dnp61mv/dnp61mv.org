@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1506732596.0
+:DateShort: 2017-Sep-30
+:END:
+
+Can I taboo the word "goal" when asking you to define "motive"?
+
+But I think that you aren't using the word "goal" consistently here. On the one hand you are using it as an objective function in an optimization procedure (or perhaps as part of the objective function) when talking about neural nets. Note that here we are finding an input (in this case the neural net) that optimizes a function (the fraction of inputs that it classifies correctly).
+
+Then you seem to be talking about a heuristic position evaluation when talking about alpha-go.
+
+Then you are talking about a high level understanding of what the program does, and equating this with the program trying to /optimize/ this.
+
+I mean suppose that I take a typical machine learning problem of trying to classify some objects given a bunch of training data. I can first run an optimization procedure to find a classifier that does well on the training data and then run it on the unknown data. What is the goal here? I can talk about the algorithm of having a goal of producing a classifier that does well on the training data (an explicit optimization problem), and I can talk about it as trying to correctly classify the new data (a high level description of the purpose of the algorithm). But, on the one hand, these aren't remotely the same thing, and on the other hand, no algorithm of this form is going to destroy the world by itself no matter how good your optimization procedure is.

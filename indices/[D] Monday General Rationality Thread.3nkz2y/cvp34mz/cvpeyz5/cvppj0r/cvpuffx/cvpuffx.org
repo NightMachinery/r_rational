@@ -1,0 +1,38 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1444112521.0
+:DateShort: 2015-Oct-06
+:END:
+
+#+begin_quote
+  Sure, we devs have tools that devs can interact with well. That's because they're optimized for the dev market. But a good operating system should have a steady learning curve from neophyte to programmer.
+#+end_quote
+
+No argument from me, but I don't see how it's relevant to the concept of file systems...?
+
+#+begin_quote
+  That means tools like gimp and blender need to be easier to hook together, like cli tools and pipes.
+#+end_quote
+
+GIMP and blender may be hard to hook together, but those are program failings, not OS or file system failings.
+
+#+begin_quote
+  I'd say that file systems are object oriented already, each file is an object, they're just statically typed ;p
+#+end_quote
+
+File systems lack both encapsulation and inheritance; they don't really match any meaningful definition of "object oriented".
+
+#+begin_quote
+  That would still be true, we're just shifting what a file is a bit, and making them network transparent (think plan9). You could still have a "file" just be a container for bytes, but we've extended those simple actions a bit to allow hashmaps, lists, strings, ints, and a few others
+#+end_quote
+
+If I were putting this into my "function block" design, I would say that:
+
+- Files are containers for bits
+- Ring 0 contains functions for reading, writing, and deleting those bits
+- Additional blocks can be used to change how a file is typed.
+
+Example of that last: chain a "read as ZIP" block into the Ring 0 "read" function and when you read the file it will be interpreted as an archive of type ZIP. Chain a "decrypt/encrypt" block on and you're treating it as an encrypted ZIP file. Swap the "as zip" block for a "as JPEG" block and suddenly it will be treated as a picture, although most likely it wouldn't be a meaningful picture, since a file is unlikely to work both as a human-recognizable image and as a zip file.
+
+I'm being rather blithe about the above. I'm not entirely sure what it would mean to say "write this as though it were a zip file", in a way that makes it transparent to outside writers. It should work for reading, though.

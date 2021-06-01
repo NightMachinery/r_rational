@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1443460514.0
+:DateShort: 2015-Sep-28
+:END:
+
+I have a few guesses that explain that scene:
+
+- Knowledge has some importance. There's a check that happens prior to spells being cast which tries to determine whether you know what you're doing.
+
+  #+begin_quote
+    If you gave Hermione completely incorrect information about what a spell was supposed to do, it would stop working.
+
+    If you didn't tell her at all what the spell was supposed to do, it would stop working.
+
+    If she knew in very vague terms what the spell was supposed to do, or she was only partially wrong, then the spell would work as originally described in the book, not the way she'd been told it should.
+  #+end_quote
+
+  So you can't cast a spell if you are /completely/ ignorant of what it does. The Interdict of Merlin would also probably be some internal check there.
+
+- There are clusters of similar spells with similar names, like how we might name functions =TestFunction1()=, =TestFunction2()=, etc. if we were particularly lazy programmers. So if you say /Oogely Boogely/ with the "wrong" vowel duration, you're actually casting a different spell within the same spell cluster.
+
+- Alternately, vowel duration and other things like that might be a parameter that's fed into the spell itself and used to determine some of what it does, but isn't the full specification. If you say /Oogely Boogely/ with different vowel lengths, it's the difference between =OogelyBoogely(3,1,1)= and =OogelyBoogely(3,1,2)=, which hits some internal logic that changes the outcome.
+
+It's hard to know without being able to do science to confirm or deny any of this though.

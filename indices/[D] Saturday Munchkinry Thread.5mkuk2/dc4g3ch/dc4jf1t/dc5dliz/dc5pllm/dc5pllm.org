@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 1
+:DateUnix: 1483889487.0
+:DateShort: 2017-Jan-08
+:END:
+
+No, it merely needs that there aren't many remaining breakthroughs needed along the shortest possible route.
+
+By chaos theory (whose effects I would finally be able to measure!), my mere different initial brain states in each loop are enough to diverge what happens each year.
+
+Like, I betcha within the first few minutes some high frequency trading traffic is handled differently by some router that uses a hardware rng to decide which packets to handle first for fairness, which impacts stock prices, which impacts everything on a somewhat slower scale. The relevant diverger (though it need not be exactly one) is the /fastest/ one, of course, so any example I give is just going to be an upper bound.
+
+Research doesn't work with science points on a progress bar. It's closer to a bunch of dice that are thrown each day, where every 1 doesn't get rerolled, and once some number of 1s is reached the tech goes through, and the quantities are mostly unknown beforehand.
+
+I'll do some very cheaty and inaccurate math by assuming that that AI researcher's survey on when AGI is likely describes an accurate distribution, and also that that distribution is normal, and use that to calculate the expected number of times I can go through 2016. [[http://aiimpacts.org/ai-timeline-surveys/][/looks up the data/]]
+
+10% chance in the 2020s, 50% chance between 2035 and 2050. 50% is the median of the distribution, but since it's normal that's also the mean. 10% is [[https://en.wikipedia.org/wiki/Standard_deviation][1.28]] standard deviations from that. 1.28 standard deviations is (2035-2029=)6 to (2050-20[[https://en.wikipedia.org/wiki/20s][20]]=) 30 years. 2016 is ((2035-2017)/6=)3*1.28=3.84 to ((2050-2016)/30)~=1.13*1.28~=1.45 standard deviations from the mean. 2017 is 3.63 to 1.41. The probability that it happens up to 2016/2017 [[http://sampson.byu.edu/courses/z2p2z-calculator.html][is]] 0.0062% to 7.35% for 2016, 0.0142% to 7.93% for 2017. The expected number of playthroughs of 2016 is (1/(0.000142-0.000062)=)12500 - (1/(0.0793-0.0735)=)172.
+
+You have some unknown number between 2 and 150 lifetimes according to this estimate. Try to push in the right direction.

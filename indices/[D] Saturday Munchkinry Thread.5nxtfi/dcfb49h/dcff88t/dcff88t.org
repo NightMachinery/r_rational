@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Running_Ostrich
+:Score: 3
+:DateUnix: 1484425225.0
+:DateShort: 2017-Jan-14
+:END:
+
+An issue with this is that there will be many invertible functions that can map between your input and outputs; how you pick which function is generated will determine the power level of this ability.
+
+Eg. Imagine this generates a function if you can conceptualize it. You want a function that will help you pick stocks. Then create a function that takes in a buy and sell date, a stock identifier and a boolean. The function produces the same results and flips the boolean if and only if the stock exists and its price increases in that interval. Your function is one-to-one and it should be easy enough to generate a sample for it.
+
+On the other hand, if you just get a random invertible function that matches your input and output, your power is pretty useless.

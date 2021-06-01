@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: thrawnca
+:Score: 6
+:DateUnix: 1490748901.0
+:DateShort: 2017-Mar-29
+:END:
+
+I'm very familiar with regular expressions. I'm also tracking my changes using Git, with my baseline being an ePub that I generated using [[http://ficsave.xyz]] and unpacked. On the master branch I'm just doing proofreading, but then I merge it into my 'airline' branch where I also do language substitution.
+
+Unfortunately, I've only added line breaks after paragraphs, so there are a lot of conflicts; in hindsight, I should have inserted line breaks after every full stop. But anyway, I have a shell script to re-pack the ePub, and then I can use Calibre to convert it to Mobi (for my Kindle), PDF (for family), RTF (although non-ASCII characters seem to have problems), etc.

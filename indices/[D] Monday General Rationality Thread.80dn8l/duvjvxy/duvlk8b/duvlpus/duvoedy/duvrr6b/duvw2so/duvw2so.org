@@ -1,0 +1,28 @@
+:PROPERTIES:
+:Author: 1337_w0n
+:Score: 1
+:DateUnix: 1519697878.0
+:DateShort: 2018-Feb-27
+:END:
+
+Alright, let me reduce this to base logic, then.
+
+Let q(x)="X is both male and of marital age." Let M(x)="X is married."
+
+BACHELOR(x)=q(x) ^ ~M(x) (by definition)
+
+So, a married Bachelor would be:
+
+BACHELOR(x) ^ M(x)=q(x) ^ [M(x) ^ ~M(x)]
+
+Through logical simplification, we find that BACHELOR(x) ^ M(x) implies [M(x) ^ ~M(x)].
+
+We know that for all p, p ^ ~p=F. So,
+
+BACHELOR(x) ^ M(x) implies F.
+
+Modus tolens, BACHELOR(x) ^ M(x)=F for all X.
+
+Therefore, there does not exist a married Bachelor.
+
+Therefore, any argument to the contrary is flawed.

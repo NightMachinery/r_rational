@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: vi_fi
+:Score: 3
+:DateUnix: 1520794247.0
+:DateShort: 2018-Mar-11
+:END:
+
+#+begin_quote
+  a car moving at 200kph and hitting the portal would essentially crash into itself
+#+end_quote
+
+Disclaimer: I haven't thought about this for more than a minute, but what my physics knowledge would suggest is the following:
+
+- The car's mechanical state is described by a partial equation (as is usual for these sorts of problems). We have an initial condition (velocity = 200 km/h).
+
+- As the car impacts the portal, the problem's boundary condition changes (velocity = 100 km/h at the boundary). AFAIK, this change impacts the entire car -- basically, the deformation travels at the speed of sound (which, in cars, is about 6 km/s^{1} ). The effects are similar in some regards to what happens if we drive a car into a wall -- it crumples up, which we can observe even outside the portal.
+
+- What's really fun though is what happens when the car is running at more than 6 km/s (= 21600 km/h). Now the deformation is slower than the car itself. It does not propagate quickly enough, and as a result, we do not see any sign of the impact outside the portal. To our eyes, the car passes through unharmed, though on the other side, it comes out in what I would imagine to be an absurdly deformed state (basically, the difference between a solid and a liquid is academic at those deformation speeds). This will probably also be pretty loud, as the car passes through its own sound barrier. However, the sound will only be heard on the other side of the portal, if at all -- maybe the velocity restriction suppresses the sound.
+
+I wonder where all of that momentum and kinetic energy ends up...
+
+--------------
+
+^{1} Assuming a car made of steel.

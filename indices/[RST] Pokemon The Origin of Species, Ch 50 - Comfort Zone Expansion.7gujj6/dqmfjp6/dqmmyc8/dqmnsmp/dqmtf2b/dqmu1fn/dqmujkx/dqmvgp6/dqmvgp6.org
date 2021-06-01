@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: masasin
+:Score: 2
+:DateUnix: 1512172759.0
+:DateShort: 2017-Dec-02
+:END:
+
+#+begin_quote
+  If you don't know how often T1 occurs
+#+end_quote
+
+^ Should have been "If you don't care how often T1 occurs" (i.e., if you ignore T1)
+
+You're right. The 12% (T1) /is/ your prior, but you're not using it when you're calculating P(R), which is dependent on P(T1) and P(T2). By T1 I mean specifically the Tyranitar Tier 1 events.
+
+No matter which way you look at it, unless you take the straight P(T1 | R1) = 0.79 (which is the likelihood), you have to use P(T1). It's unavoidable.
+
+Now, if you had actually meant the 0.79 to be P(R1 | T1) (the percentage of Tier 1 incidents reported as Tier 1) rather than P(T1 | R1) (the percentage of Tier 1 reports that are actually Tier 1 incidents), everything goes much more smoothly, and it's a simple step to get P(T1 | R1) after that.

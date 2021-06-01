@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: Sonderjye
+:Score: 2
+:DateUnix: 1520338630.0
+:DateShort: 2018-Mar-06
+:END:
+
+Suppose that you host tea parties for Blues and Greens. In this world, drinking Purple tea is considered an act only done between individuals who share mutual attraction and Indigo tea is the same but on a much more higher level.
+
+Greens, unfortunately, sometimes get Blues to drink tea they didn't want. You know from world wide statistics that A% of Blues have been tricked into drinking Indigo tea by Greens and that the rate of false official reports to the authorities are B%.
+
+A Blue tells you that a Green have made them drink Purple tea. Not quite as bad as Indigo tea but related for most intends and purposes. Further this isn't an official report and you don't know whether the Blue is lying or telling the truth.
+
+You have two actions. Either you believe the Blue which means banning the Green from future tea parties, or you distrust the Blue which means that the Blue will eventually leave due to feeling unsafe if True or the Blue stays and recieves negative retaliation from the community.
+
+Suppose you are conserned that your judgement is biased, both towards siding with your own colour and towards siding with whoever you like the most, and you want to create a systematic approach. Either as a final judgement or as an anchoring point.
+
+What systematic approaches might work? Which percentage of false positives/true negatives would you accept if any?
+
+Additional thoughts:
+
+We have 4 possible cases[2(Believe or Not)*2(True or False)]: BT,BF,NT,NF
+
+If we have a single metric and we assumed the statistics for Indigo tea transfered to Purple tea this would be easy, as we would just calculate the expected metric of each choice. Unfortunately there are several consequences of each 4 cases[see comment below].

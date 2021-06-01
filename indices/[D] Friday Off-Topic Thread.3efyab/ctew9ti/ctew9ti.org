@@ -1,0 +1,7 @@
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1437764574.0
+:DateShort: 2015-Jul-24
+:END:
+
+I've been pondering how to approximate a mesh for collision detection by packing it full of ellipsoids. I had a uniform sphere packing algorithm working decently, which placed spheres at grid points that were inside the mesh and then ran a few iterations colliding them with each other and the mesh boundaries to get a tight packing. However for thin objects you have to use way too many tiny spheres, and allowing variably oriented and sized ellipsoids could vastly reduce the particle count. I'm really not sure how to structure that optimization problem though.

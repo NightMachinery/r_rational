@@ -1,0 +1,34 @@
+:PROPERTIES:
+:Author: FishNetwork
+:Score: 5
+:DateUnix: 1489269363.0
+:DateShort: 2017-Mar-12
+:END:
+
+Can you expand a little on the challenge?
+
+Some journalists have PGP public-keys on their [[https://www.theguardian.com/profile/julianborger][author bio pages]]. You can use [[https://sela.io/pgp/][online tools]] to create an encrypted message from that.
+
+Drop the output into Pastebin, and you just need to give the other guy a super short link.
+
+Even if you're spotted passing the other guy the link, the opposition won't be able to read it.
+
+--------------
+
+If you want to get really fancy about it, put your disk data into the [[https://veracrypt.codeplex.com/wikipage?title=Hidden%20Volume][Hidden volume]] of a VeraCrypt file.
+
+Fill the public volume with something plausible, but not super-illegal. Like, make up a story about how your defense contractor boss is giving kickbacks to the government guys so he can embezzle money.
+
+Then, your PGP-encrypted message is:
+
+#+begin_quote
+  The details about the embezzlement story I mentioned are here: [[https://dropbox.com/public/abcdef]] The password is the name of that song we both liked. Lower case. No punctuation.
+#+end_quote
+
+Then, when talking to the journalist, you give him the link, a song, and a second password that unlocks the hidden volume.
+
+That setup should be extremely secure.
+
+To get any actual content, the counter-intelligence guys would need to compel the journalist to give up the link AND his private PGP key AND disclose the song you'd talked about.
+
+Even then, they'd only see the fake story you guys made up.

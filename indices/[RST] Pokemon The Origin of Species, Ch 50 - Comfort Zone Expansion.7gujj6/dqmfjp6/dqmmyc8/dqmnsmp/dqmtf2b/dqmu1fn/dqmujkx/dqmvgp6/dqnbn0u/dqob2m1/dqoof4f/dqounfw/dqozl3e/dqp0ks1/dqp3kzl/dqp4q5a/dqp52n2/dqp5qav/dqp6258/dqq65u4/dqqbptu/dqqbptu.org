@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: masasin
+:Score: 2
+:DateUnix: 1512354786.0
+:DateShort: 2017-Dec-04
+:END:
+
+Look at [[https://www.reddit.com/r/rational/comments/7gujj6/rst_pokemon_the_origin_of_species_ch_50_comfort/dqpamaj/?context=3][this]] reply by [[/u/Iijil]]. He fixed my derivation, and had the brilliant idea of finding P(R1) first.
+
+Let's work through it step by step:
+
+1. P(T1) = P(T1 | R1) * P(R1) + P(T1 | R2) * (1 - P(R1))
+
+   Solve for P(R1)
+
+2. P(R1) = (P(T1) - P(T1 | R2)) / (P(T1 | R1) - P(T1 | R2)) = (0.64 - 0.33) / (0.79 - 0.33) = 0.6739
+
+   Now, we solve for P(R1 | T1) and P(R1 | T2)
+
+3. P(R1 | T1) = P(T1 | R1) * P(R1) / P(T1) = 0.79 * 0.6739 / 0.64 = 0.8319
+
+   P(R1 | T2) = P(T2 | R1) * P(R1) / P(T2) = 0.21 * 0.6739 / 0.36 = 0.3931
+
+   Now, we solve for Tyranitar (first report).
+
+4. P(T1 | R1) = P(R1 | T1) * P(T1) / (P(R1 | T1) * P(T1) + P(R1 | T2) * P(T2)) = 0.8319 * (2/17) / (0.8319 * (2/17) + 0.3931 * (15/17)) = 0.22
+
+edit:
+
+What we just did here, though, doesn't have much to do with Bayesian reasoning apart from the fact that it uses Bayes's rule. It's just algebra for the most part.
+
+For the story, I recommend that you use the 79% as P(R1 | T1) instead of P(T1 | R1), and treat it as given and constant. If you want to make it such that they do perform updates, you can give them a sequence of R1 and R2 and have them adjust their probabilities accordingly, which is what we did in the last part of [[https://www.reddit.com/r/rational/comments/7gujj6/rst_pokemon_the_origin_of_species_ch_50_comfort/dqp4h7c/][this]] comment. And this is, as you'd said earlier, the essence that you wanted to get across. A few bits of evidence don't do much on their own. Sure, you update your beliefs (up to 25% instead of 12%), but you don't change your behaviour. You still respond as if it's a T2 (if it's binary) or interpolate. The more evidence you get, though, the higher your belief (98%, in the last case) that it is just a T1 incident, and respond appropriately.

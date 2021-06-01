@@ -1,0 +1,36 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 9
+:DateUnix: 1487951990.0
+:DateShort: 2017-Feb-24
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+My two weeks are up: I said I would work on an initiative prototype, and an initiative prototype I have, but it's in that unfortunate mid-crunch state that I feel all of my time-limited game projects land in.  After having several nights where I wasn't available to actually code anything, last night I finally got the core system working--you can decide the number, species, and type of AI for what units you want to include, which turn system you want to use, and then start actually mocking a few turns using the different turn managers.
+
+And that was done by around 1:30 AM last night.  I /do/ like to give myself some breathing room, after all.
+
+But what's missing unfortunately are the turn systems themselves: I have all the boilerplate needed, but I'm going to need a few more hours to actually get them in place.  So, if you'd like to see a turn system prototype with only a few threads of actual turn definitions, you can [[https://drive.google.com/drive/folders/0B0LYycfi-K18dDFPX1lQaXhuTVE?usp=sharing][download the applicable build here]].  I have 32 and 64 bit builds for Windows, and universal builds for Linux and Mac in that folder.  I probably should have zipped them, but those are the sorts of decisions one makes in the wee hours of the morning.
+
+What /is/ in the build are the Alternating and the first bits of the Simultaneous turn orders, so try those ones out.  Later today, and possibly for a few hours tomorrow, I'm going to finish hashing out the different systems, and then throw together some templates for a few different speed pokemon and moves, so stay tuned.
+
+--------------
+
+However, I can't spend /too/ much time on it, as we've got the results for the next two-week prototype, and I'm going to go with the Voxel Engine.  The actual number of votes on [[/r/PokemonRenegade]] were actually split evenly between Voxel and Procedural Generation, but the number of people that came forward and were vocal on the Discord server in favor of Voxel were essentially unanimous in their opinions, so that's where we'll go.
+
+This is actually going to be a dual-purpose prototype: I'm going to fumble about with making a /very/ simple, raw, inefficient voxel system (adapted to use hexes), but I'm /also/ going to be using the opportunity to try out [[http://xenko.com/features/][Xenko]], an alternative to Unity that came on my radar several months ago, but I was helpfully reminded of this week.  It seems to check all the boxes that would make it that much more comfortable to use, with the only real downside being it doesn't have a Mac build process yet.  Still, it wouldn't be /too/ difficult to be better than Unity, so I'll give it a shot.
+
+Unity (or Xenko) are only being used for the front-end of the game, so it won't be too difficult to use one or the other without impeding game progress /too/ much, but let me know if you have any suggestions on that front, or if a lack of Mac support is make-or-break for you.
+
+(I know what you're thinking: this guy couldn't even get a simple /turn system/ working in two weeks, the hell does he think he can do with a /voxel engine/ in an /unknown editor/.  I gladly acknowledge the irony and accept the challenge; got to stretch to make it anywhere.)
+
+--------------
+
+This week we discussed breeding in some depth, and I'm looking for ideas on how one might be able to tie the mechanic to others in the game.  /My/ idea was to have a sort of Lamarckian evolution concept, where a unit's EVs would influence the strength of the offspring, permitting both combat and breeding to go hand in hand, but there's some pushback on this.  What do you think of the idea?  Can you think of any alternative mechanical interactions that we could give breeding to make it more intertwined with the other systems of the game?
+
+----  
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

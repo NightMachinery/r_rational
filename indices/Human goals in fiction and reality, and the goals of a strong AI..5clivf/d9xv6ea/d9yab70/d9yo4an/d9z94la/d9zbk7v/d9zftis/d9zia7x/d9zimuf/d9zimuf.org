@@ -1,0 +1,47 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1479104298.0
+:DateShort: 2016-Nov-14
+:END:
+
+#+begin_quote
+  But in terms of understanding how our brains work ... how hard it would be for our primitive selves to replicate doesn't tell me anything about the likelihood of it being true.
+#+end_quote
+
+You just implicitly banned yourself from having plausibility opinions on /anything/ by stating that your mind is just too primitive and broken to do it! What the heck, dude?
+
+#+begin_quote
+  Every time we learn a new way to manipulate people, new ridiculous biases and perceptual illusions, it's striking just how much more shallow our abilities are compared to how it feels they are.
+#+end_quote
+
+Why can't perceptual illusions, just to pick that example, be /precisely/ Bayes-optimal responses to highly unusual stimuli whose actual causes are given very little weight in our empirically-induced hyperpriors? The No Free Lunch Theorem says that no method of reasoning can recover the ground truth /all the time/.
+
+#+begin_quote
+  Same with vision, hearing, memory. All turn out to be much less effective than we feel they are, and our brain just papers over the massive holes and confabulates as much as necessary, while hiding this from the conscious mind and giving us a completely misplaced certainty.
+#+end_quote
+
+Again, you're really not accounting for how most of this brain machinery didn't evolve to /do/ verbatim recording or symbolic computation. It evolved to do probability density estimation where precise information was available about extremely large hypothesis spaces.
+
+#+begin_quote
+  It's not a neural network. It's a whole bunch of them, overlapping, there are very specialized areas of the brain that do very specialized things. That likely function completely differently at a "software" level (for lack of a better metaphor) because they evolved at a completely different time in our evolution.
+#+end_quote
+
+The idea I linked you to is that it isn't actually a "neural network" in the ANN sense at all. It's a relatively small, simple piece of natively probabilistic predictive hardware called a "cortical microcircuit", tiled over and over again in vast circuits and hierarchies to form the various cortices which then serve to each probabilistically model some aspect of the incoming and outgoing signals.
+
+#+begin_quote
+  I like the quote quite a bit, especially the recognition of the importance of embodied cognition, but anyone who feels that the approach is to build a brain instead of building one of the huge number of specialized subsystems seems very optimistic to me.
+#+end_quote
+
+The quote was from a cognitive scientist and philosopher of mind, whose work is based on recent neuroscience. No AI hype there. In fact, the general reason that explicitly probabilistic approach /isn't applied/ to AI/ML is because probabilistic inference has a vastly higher computational difficulty than just doing stochastic gradient descent with huge data-centers. And yet it's the most probable thing for our real brains to be made of.
+
+#+begin_quote
+  And this is with me thinking that humans brains are far less capable than we generally consider them, even that is going to be much more difficult than generally expected. Certainly more than what this round of optimistic AI researchers are promising (just like last time).
+#+end_quote
+
+I do think human brains have lots of failure modes. I just take a somewhat grimmer point of view: Bayes-optimal reasoning, with many modeling assumptions that are genuinely helpful for the real world, has a lot of failure modes when strong prior knowledge isn't built in to restrict the ability of insane hypotheses to rise to high probability.
+
+#+begin_quote
+  tldr; In terms of the estimate of the complexity of the project I tend to side with the neuroscientists rather than the AI researchers. Even though I write software for a living and feel like I'm disparaging "my side" :)
+#+end_quote
+
+Yep. I'm just saying that the neuroscientists and cognitive scientists are actually more sanguine, but less obsessed with GPUs and hype, than the AI people right now.

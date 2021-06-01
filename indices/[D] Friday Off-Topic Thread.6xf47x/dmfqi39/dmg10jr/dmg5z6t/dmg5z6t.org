@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 3
+:DateUnix: 1504311254.0
+:DateShort: 2017-Sep-02
+:END:
+
+This was horribly frustrating for me as well, believe you me (tho I guess I discovered t4 as a result, so we'll call it a wash). Basically, in c# generics are as strongly typed as possible, and since there's no constraint that you can put on T to indicate "this is a primitive numeric", you can't do things like add two Ts together, or perform any math at all within the Stat<T> class, or even so much as cast to other numeric types or other Stat<T>s, since the compiler has no way of knowing at compile time that T will always have those functions.
+
+I /could/ have just left it at Stat<T>, but I didn't like the idea of all stat math needing to operate on MyStat.Value instead of just MyStat. I wanted the implicit casting where it made sense, and I also wanted to overload the mathematical operators, but since I can't do math on a T, well...the only other option was a hard coded IntStat etc.
+
+(Or wrappers, but that just pushes the exact same issue one level deeper in the abstraction.)
+
+Fortunately since it's all generated from a single code template, I don't have to /maintain/ 11 different instances of this freakshow class, merely the one metaprogram.

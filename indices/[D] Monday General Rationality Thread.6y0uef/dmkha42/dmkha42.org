@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 3
+:DateUnix: 1504566770.0
+:DateShort: 2017-Sep-05
+:END:
+
+I have created a probability wrapper object for sympy.
+
+[[https://gist.github.com/traverseda/2c3056aede8b01a9d40c11d6b916774f]]
+
+You can use it to do things like =p(0.9)+p("1/3")=. Which will produce 0.9333 or =4203359652212463/4503599627370496=, depending on what you're using it for. No floating point errors here. It's a simple little thing, but pretty handy.
+
+I would love to at some point be able to automatically produce graphs like [[https://en.wikipedia.org/wiki/Energy_in_the_United_States#/media/File:LLNLUSEnergy2012.png][this]]. But that's a long ways off.

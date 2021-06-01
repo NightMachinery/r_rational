@@ -1,0 +1,50 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1446749539.0
+:DateShort: 2015-Nov-05
+:END:
+
+#+begin_quote
+  The precise pain point is that they're optimized for one user/process accessing a file at once.
+#+end_quote
+
+Please explain why you think this. It seems to be the crux of your issue, and I've already explained why it's not the case.
+
+Also, please define what definition of "simultaneous" you mean. In order for multiple users / multiple processes to be accessing a particular chunk of data at a time, do they have to pull it in the same Planck time? The same nanosecond? The same millisecond?
+
+#+begin_quote
+  I'd argue that that's the pain point the modern web is trying to address.
+#+end_quote
+
+File systems and the web operate at completely different levels of abstraction. The web is completely irrelevant when you're talking about files.
+
+#+begin_quote
+  They do this by implementing a domain-specific thin-client language (javascript) and scene graph (html/css).
+#+end_quote
+
+First of all, Javascript is the exact opposite of a thin-client language. A thin client is something that just retrieves data from the server without doing any processing on it. Javascript depends on a very fat client indeed.
+
+Second, Javascript and HTML/CSS have nothing to do with files or filesystems. They are a particular way of representing / presenting data, but they don't have anything to do with how that data is stored or how it's retrieved from storage.
+
+The fundamental misunderstanding here is that file systems are /not/ "optimized for single-process access", and I don't understand why you think they are. A file system is about /organizing/ data and providing guarantees about what will happen when you interact with it. Computers are perfectly happy to allow simultaneous reads -- or even writes, although that's stupid -- against the same file, so long as "simultaneous" is allowed to wave away the limitations of the underlying hardware.
+
+Here's the issues that might be making you think file systems are intended for "single process" access:
+
+- Hard disks: there is only one read/write head pointed at a given spot at a time, so no matter /what/ magic you come up with, you will never be able to get literally simultaneous access to the data.
+- Writing data is *always* a blocking operation if you want consistency. It doesn't matter if the data is on an HDD, an SSD, in memory, or stored in the beating wings of magical fairies. If you are reading data at the same time I am writing it *there is no way of knowing what you will get*.
+
+"File systems" are a collection of APIs intended to talk to the disk and provide certain guarantees about what the disk will do. For example, the file system offers a write lock which says "hey, I'm changing this data, don't look at it for a second." In general, write locks are optional and a program can feel free to ignore them if it wants to screw up its information.
+
+Again, you're looking at things at the wrong levels:
+
+- Hard disks (and SSDs, etc) are about /recording/ information. They have physical limits which cannot be worked around no matter what sort of magic you come up with. They have nothing to do with file systems.
+- File systems are about /organizing/ data. They provide an API for the underlying storage system, and that API has some (generally optional) methods that can be used to maintain consistency, but there is nothing about that system that inherently relates to single/multiple access to the disk.
+- Applications (e.g. a browser) are about transforming data. They have nothing to do with how the data is stored or how it is accessed.
+- "The web" isn't a thing at all, it's a fuzzy and generic term for a collection of things. TCP/IP is a set of protocols designed to let multiple applications talk to each other by guaranteeing how data will be exchanged over a wire. HTTP is a higher-level protocol that guarantees how data will be exchanged at the semantic level. HTML is about how to structure data to imply meaning. CSS is about how to present data based on its meaning. Javascript is about how to manipulate that structure and presentation. /None of these things relate in any way to file systems./
+
+#+begin_quote
+  There's no reason you couldn't throw binary/text files into this data structure. And of course we're not talking about building kernel modules yet, this data structure would be living on a filesystem.
+#+end_quote
+
+If it's living on a filesystem it has the same limitations as a filesystem. All you've done is reinvent caching, and that doesn't solve the problem. Also, there's an excellent reason that you can't "throw binary/text files into this data structure": memory is limited, and storing anything more than a trivial number of trivially-sized files in it will blow your RAM, at which point you're swapping to cache all the time, which means you're thrashing the disk in order to do anything at all, which means your special data structure is /slower/ than a properly organized system that stores data on the disk when not immediately needed.

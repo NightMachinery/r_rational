@@ -1,0 +1,737 @@
+#+TITLE: [D] Wednesday Worldbuilding Thread
+
+* [D] Wednesday Worldbuilding Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 8
+:DateUnix: 1499872017.0
+:DateShort: 2017-Jul-12
+:END:
+Welcome to the Wednesday thread for worldbuilding discussions!
+
+[[/r/rational]] is focussed on rational and rationalist fiction, so we don't usually allow discussion of scenarios or worldbuilding unless there's finished chapters involved (see the sidebar). It /is/ pretty fun to cut loose with a likeminded community though, so this is our regular chance to:
+
+- Plan out a new story
+- Discuss how to escape a supervillian lair... or build a perfect prison
+- Poke holes in a popular setting (without writing fanfic)
+- Test your idea of how to rational-ify /Alice in Wonderland/
+
+Or generally work through the problems of a fictional world.
+
+^{Non-fiction should probably go in the Friday Off-topic thread, or Monday General Rationality}
+
+
+** I have been trying to write about a researcher investigating a device that may induce time travel, but I ran into a tricky question. Assume that when traveling back in time either you create a new timeline as if it is a fork in the timeline where the previous and current timeline both exist or that you overwrite the old timeline with a different one. One allows for an infinite number of timelines and the other only allows for one timeline.
+
+My problem is that both methods of time travel seem as if they look identical from the perspective of the time traveler and I can't think of a test for the researcher to figure out which type of time travel is actually occurring.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 12
+:DateUnix: 1499879291.0
+:DateShort: 2017-Jul-12
+:END:
+
+*** Can the researcher send things back in time without going himself? If so the single timeline model will only show him things coming from the future but never going to the past.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 12
+:DateUnix: 1499892288.0
+:DateShort: 2017-Jul-13
+:END:
+
+**** Wow that's brilliant and is exactly what I needed! But now I'm curious, what if the ability only allows himself to time-travel and he can't send anything else back in time? Is it still possible to differentiate between the two possibilities?
+:PROPERTIES:
+:Author: xamueljones
+:Score: 6
+:DateUnix: 1499895473.0
+:DateShort: 2017-Jul-13
+:END:
+
+***** Can he travel freely?
+
+What if he travels back to point X, then travels back to point Y (which is 30 seconds before X), then waits?
+
+In the single-timeline model, after waiting 30 seconds, he should see his subjectively-past self appear.
+
+#+begin_example
+  ----Y----X---->
+#+end_example
+
+In the timeline-splitting model, when he travels back to point Y, he'll create a new timeline, in which trip 1 never happened. So after waiting, he won't see himself appear (because point X was on the old timeline).
+
+#+begin_example
+  ---Y-----X-----> (original timeline)
+       \     \
+         \    ----> (created by trip 1)
+           -----------> (created by trip 2)
+#+end_example
+
+*EDIT:* Ah, nevermind, I misunderstood the premise. Sounds like in the single-timeline model, going back to any point causes all events after that point to cease to exist - so when the traveler went back to point Y, there would no longer be a point X.
+:PROPERTIES:
+:Author: tonytwostep
+:Score: 2
+:DateUnix: 1499915044.0
+:DateShort: 2017-Jul-13
+:END:
+
+
+***** I'm not sure if [[/u/alexanderwales][u/alexanderwales]]' idea would let figure it out it for certain. A timeline where no object was sent to the past is still possible in multiple-timelines model; you could see it if you draw a graph. It would matter in a /probabilistic/ sense, I suppose: if there's 100 acts of time-travel in all, then the probability of finding yourself in a timeline indistinguishable from the overwritten_model!timeline is 1%. The more cases of objects coming from the future you see, the less probable multiple-timelines hypothesis becomes, but you can never be /certain/ it's wrong.
+
+#+begin_quote
+  what if the ability only allows himself to time-travel and he can't send anything else back in time? Is it still possible to differentiate between the two possibilities?
+#+end_quote
+
+I don't think so. In multiple-timelines model, you would always find yourself in that 1/[number of acts of time-travel] timeline that is indistinguishable from overwritten one.
+:PROPERTIES:
+:Author: Noumero
+:Score: 1
+:DateUnix: 1499900022.0
+:DateShort: 2017-Jul-13
+:END:
+
+****** u/alexanderwales:
+#+begin_quote
+  A timeline where no object was sent to the past is still possible in multiple-timelines model; you could see it if you draw a graph.
+#+end_quote
+
+This statement is ambiguous to me.
+
+Assuming that our multiple timelines model can be accurately drawn using a binary tree, then there will always be a timeline in which things have only disappeared into the subjective past, never come from the subjective future. However, this only serves to confirm to our hypothetical researcher that he's in the multiple timeline model (unless he's not confident that he actually has a time machine, in which case he might think that he's merely destroying the objects put into the machine). If the researcher can hop into the machine, he can confirm for himself that objects are not destroyed, though this is obviously dangerous.
+
+There also necessarily exists a timeline where things have arrived from the subjective future but have never been sent to the subjective past ... but if the researcher has a time machine and exists in such a universe, then it's as simple as using the time machine once to prove the single timeline model (thereby creating a new universe which will contain a researcher who has never sent anything to the past, but that's the other guy's problem).
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1499907339.0
+:DateShort: 2017-Jul-13
+:END:
+
+******* u/Noumero:
+#+begin_quote
+  thereby creating a new universe which will contain a researcher who has never sent anything to the past, but that's the other guy's problem
+#+end_quote
+
+Yes, that was my point. Hm, I suppose I overestimated the importance of convincing all timeline-selves of the correct model of time-travel.
+:PROPERTIES:
+:Author: Noumero
+:Score: 1
+:DateUnix: 1499939652.0
+:DateShort: 2017-Jul-13
+:END:
+
+
+**** Incidentally, I also came to the converse conclusion on one occasion - that is, that the multiple timeline model will only show you things going to the past, and only very rarely things coming from the future. This was sort of my solution to the "where are all the time travelers" problem - that traveling back in time only creates an infinitesimal probability of your appearance there; essentially 0 for someone at that time, but obviously 1 for you, if you understand what I'm saying. It's as if there are essentially infinity duplicates of the moment in time where you /don't/ appear in your time machine, and using your time machine to travel back to that moment only creates /one/ moment in time where you /do/. This incidentally means that if you witness the appearance of a time traveler, you have been present at a statistically miraculous event.
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 2
+:DateUnix: 1499916582.0
+:DateShort: 2017-Jul-13
+:END:
+
+
+**** But, in the single-timeline model, as soon as he sends anything to the past, he destroys his entire time line - including himself. Why would he ever attempt such a potentially lethal test?
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1499914773.0
+:DateShort: 2017-Jul-13
+:END:
+
+***** Because there's still a timeline where he exists? His theory of personhood holds that he wouldn't actually die, his "pattern" would only lose an inconsequential handful of hours/minutes?
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 4
+:DateUnix: 1499915503.0
+:DateShort: 2017-Jul-13
+:END:
+
+****** Hmmm. If he's sending it back to after his own birth, then yes, that makes sense - and that's all he needs to do for his test. But in the single-timeline model, any timeline in which he initiates time travel is instantly destroyed. How does he test his machine without destroying all timelines?
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1499916215.0
+:DateShort: 2017-Jul-13
+:END:
+
+
+** So, one of my vampires (William) identifies as catholic - not super devout, of course, since as a vampire he does the whole "murdering people to eat" thing, and he believes a whole bunch of megalomanical stuff in general (e.g. divine right of kings). He believes on some level that his vampire body is an animated soulless corpse, and his soul is already in heaven enjoying paradise because he was a good, faithful person in life (he hopes). So to him, his current life is "hedonism" in its purest form, so to speak.
+
+Keeping aside that Christianity has changed a lot since the dark ages when he was born, I'm trying to work out whether vampires would have their own catholic church equivalent, or whether they'd attend the human institutions. The idea of vampires having their own catholic church, when My Vampires went through a population bottleneck of ~800 vampires around the year 1650, seems a bit silly. Plus, jesus and all that did come to save /humanity/, not vampire-anity. Then again: if William is a religious vampire, there are surely others, and there might be priests who were turned since the bottle neck, or turned priests who survived it (then AGAIN, [[/u/ccc_037]] had the wonderful idea that the bottleneck might have been /caused/ by a religious vampire, and that vampire distaste for religious iconography is because they associate that with the Catastrophe that killed 90+% of vampires rather than because it has any power over them, so in that case William's religiosity might be a closely guarded secret...)
+
+Anyway, I'm not really sure if this was appropriate to post in a worldbuilding thread, but I have been thinking about it the past few days and I find these threads really useful for forcing me to articulate my ideas/thoughts and for brainstorming in general. So call this "Wednesday Worldbuilding with Brainstorming Posts from [[/u/MagicWeasel]] Thread" if you like... ;)
+
+--------------
+
+Background on why I'm asking this:
+
+I never expected William's religion to come into it - it was just something I kept in the background. But my husband was doing some beta-reading and we got into discussions about how the story doesn't show the /personality/ of my characters as much as my IRL descriptions of the motivations for things, so I showed him some dumb drabbles I wrote to get plot bunnies out, and he thought that those little moments of character/etc that I thought were silly really humanised the characters. For example, he enjoyed a real half-assed "attending confession" scene I wrote for William where he just listed a bunch of sins he'd committed.
+
+In light of the above I decided I wanted to try putting a short little "interlude" in between each "real" chapter, and these interludes would contain just kind of one-shot or out of left field things, maybe half a page. And the confession scene made a lot of sense at the beginning of the story - it's a romance, and while you get the love interest (Red)'s impressions about how he feels about the whole thing, you don't get much of William's point of view. For Reasons, William wouldn't really have anyone he could talk to, but going to confession would totally work. It kind of makes sense that a vampire would go talk to a human about things they needed privacy for, because they have ways to keep them from spilling secrets to even other vampires.
+
+Of course, no longer being catholic myself, I have faint memories of what confession was like 12 years ago, but I don't seem to think that there's any reason that the confession scene can't include the priest giving the confessor "counselling"/"advice"/etc, i.e. having a sort of conversation with them.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 5
+:DateUnix: 1499900925.0
+:DateShort: 2017-Jul-13
+:END:
+
+*** What would it mean for them to have their own Catholic church? They wouldn't have a pope, right? Where would their authority derive from? Would they be the equivalent of a separate faith that follows Catholic traditions, similar to Anglicans?
+
+If the Catholic Church knows about the vampires, it might make sense for them to appoint one as a ... well, my knowledge of Catholic org charts fails me, but one vampire appointed as the spiritual leaders of the other vampires, answerable to a higher authority in the Church?
+
+I think the most realistic option, aside from vampires just using Catholic services and pretending that they're keeping the faith (similar to Easter and Christmas Catholics), would be to have like-minded vampires that are attempting to maintain their culture having Catholic-/ish/ services similar to [[https://en.wikipedia.org/wiki/Lay_ecclesial_ministry][lay ecclesial ministry]]. So you've got someone who isn't ordained doing church services, basically.
+
+(Note: I am not currently and have never been a member of the Catholic Church, apologies for any of this that's just flat out wrong.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 5
+:DateUnix: 1499915980.0
+:DateShort: 2017-Jul-13
+:END:
+
+**** I am a Catholic; I haven't made a great study of Catholic history, but perhaps I can help out a little here.
+
+#+begin_quote
+  They wouldn't have a pope, right?
+#+end_quote
+
+The Catholic church has only one Pope. It's very much an individual role. If there's a vampire pope, then they're a separate but (presumably) related Church.
+
+Under the Pope comes the Cardinals. They're also the ones who elect the new Pope, and form his advisors. Then there are the Archbishops. Each Archbishop is responsible for a particular area - these are quite large areas. Then there are the Bishops; these are generally responsible for smaller areas. Then there are Priests - one or two working in a given church. Then there are the Deacons, who can act to assist the Priest in certain ways.
+
+The Catholic Church does keep records, and would eventually notice if a given priest, bishop, or other member of the clergy seemed to hang around for a few centuries or so. But a member of the congregation who moves every twenty or thirty years could probably quietly attend a succession of churches without drawing major attention.
+
+That might well have worked, too, right up until the [[https://en.wikipedia.org/wiki/Second_Vatican_Council][Second Vatican Council]]. See, the Second Vatican Council made a few important changes - such as no longer doing the Mass /entirely/ in Latin, but rather doing it in a language familiar to the congregation (so that people understand what's going on), and removing the rules about abstaining from meat on all Fridays.
+
+Some people... objected to this. And [[https://en.wikipedia.org/wiki/Traditionalist_Catholic][still object to this day]]. A vampire would, I imagine, /most likely/ be a traditionalist of some sort; in extreme cases, perhaps even a sedevacantist (one who believes that the Second Vatican Council was outright heresy and that no-one who accepts said teachings can be a valid Pope).
+:PROPERTIES:
+:Author: CCC_037
+:Score: 3
+:DateUnix: 1499936065.0
+:DateShort: 2017-Jul-13
+:END:
+
+
+**** Thanks for the comment! You've given me a lot to ponder.
+
+#+begin_quote
+  Would they be the equivalent of a separate faith that follows Catholic traditions, similar to Anglicans?
+#+end_quote
+
+It would be more, "each individual vampire has their own separate faith that follows X traditions, where X is a combination of the specific faith they grew up with (at any point in history) and what they have decided they liked / didn't like during the periodical "reboots" that religions have" - so the idea of the vampires having a catholic church, or William /being/ catholic in any meaningful sense, is kind of stupid.
+
+This is why I said William "identifies as" catholic - no doubt /he/ thinks that he's the /right sort of catholic/, whatever that means to him, and that having church services in the local language rather than latin or whatever are aberrations to the True Faith, but they're as close as he's going to get and he's /so special/ and /so wonderful/ that The One True God will understand he had to do the best he could.
+
+#+begin_quote
+  If the Catholic Church knows about the vampires
+#+end_quote
+
+I'm not opposed to this on principle (though it could get pretty Da Vinci Code if there's secret vampire infiltration of the catholic church), but in my mind William is essentially brainwashing individual priests to secrecy whenever he feels the urge to "confess", so it does not require the church to know.
+
+#+begin_quote
+  I think the most realistic option, aside from vampires just using Catholic services and pretending that they're keeping the faith (similar to Easter and Christmas Catholics)
+#+end_quote
+
+This is William for sure: confession when he needs to talk about something that he feels vulnerable about without having to risk it being used against him someday, church services when he's bored / interested / looking for prey / feeling like it's been a while
+
+#+begin_quote
+  like-minded vampires that are attempting to maintain their culture having Catholic-ish services similar to lay ecclesial ministry
+#+end_quote
+
+OOOOooo. I like /this/ very much. It could definitely be something that William was doing before the Catastrophe, as there'd be a decent number of Catholic-during-the-dark-ages vampires living that he'd have the appropriate cultural connections to. Then the Catastrophe happens and he loses most of his friends, and such lay ministry may have become quite taboo depending on the exact nature of the Catastrophe (I am not really interested in telling the story of the Catastrophe or anything else "historical" in my setting: I was barely interested in telling the origin story of William and Red's romance because I thought writing a story set in the 1940s would be too boring, but it turned out to be actually really interesting).
+
+It provides some context for perhaps some of William's closest pre-Catastrophe friends and their values, and moreover ways they might have previously come into conflict with others, and that's awesome. It's hard when your main character is 1500 years old to try to figure out how he filled the time, and I'm slowly patching things together.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 1
+:DateUnix: 1499919147.0
+:DateShort: 2017-Jul-13
+:END:
+
+
+*** If he believes his mortal soul is already in Heaven, then why is he still going to confession?
+:PROPERTIES:
+:Author: CCC_037
+:Score: 3
+:DateUnix: 1499914525.0
+:DateShort: 2017-Jul-13
+:END:
+
+**** The potential that he's wrong, habit, tradition (all the above require confession to have been part of catholic traditions c 600 CE, so maybe not), desire to support the church somehow, guilt (catholics are MASTERS of that one), coping mechanism for not being able to trust other vampires (can't trust priests either, but ghoul them to you as a one-time action and you can swear them to secrecy and other vampires can't "overwrite" it, so it's the same thing).
+
+Why specifically priests and confession I don't know; the sort of scene I had in mind could just as well be served by William going to a bar and chatting with one of the locals.
+
+Then again (more thinking aloud): he doesn't view humans as equals (well, yet), whereas at least priests have (theoretically) divine support, which means they're better than mere humans. That could well go a way to explaining it.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1499918510.0
+:DateShort: 2017-Jul-13
+:END:
+
+***** If he thought he could be wrong, he'd tone down the killing a lot. Habit andtradition would have worn off in the past few centuries. Desire to support the Church would be better expressed financially (confession isn't William supporting the Church, it's the Church supporting William). Guilt only matters if he thinks he might be wrong.
+
+#+begin_quote
+  coping mechanism for not being able to trust other vampires (can't trust priests either, but ghoul them to you as a one-time action and you can swear them to secrecy and other vampires can't "overwrite" it, so it's the same thing).
+#+end_quote
+
+This seems... possible. (Instead of ghouling the priest, he could simply be intending to kill the priest once he's done - dead men tell no tales, after all).
+
+#+begin_quote
+  Why specifically priests and confession I don't know; the sort of scene I had in mind could just as well be served by William going to a bar and chatting with one of the locals.
+#+end_quote
+
+It might even work better as a chat in a bar... with some poor schmuck who hasn't realised yet that he's the vampire's next victim.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 5
+:DateUnix: 1499920476.0
+:DateShort: 2017-Jul-13
+:END:
+
+****** u/MagicWeasel:
+#+begin_quote
+  It might even work better as a chat in a bar... with some poor schmuck who hasn't realised yet that he's the vampire's next victim.
+#+end_quote
+
+I think I might be sold on that one... Would be quite fun to write up!
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1499920564.0
+:DateShort: 2017-Jul-13
+:END:
+
+
+** I am writing a litRPG similar to "The Gamer" or "Sword Art Online". Assuming that my intent is to add Skinner box elements to the work and otherwise integrate videogame/tabletop reward mechanisms, as well as extending the power fantasy as far as possible, what should my handcrafted RPG mechanics look like?
+
+(I'm deliberately not including all the things that I've thought of in order to not adversely affect discussion, hope that's okay.)
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 3
+:DateUnix: 1499893071.0
+:DateShort: 2017-Jul-13
+:END:
+
+*** How many options even exist for granting experience points?\\
+- Based on actual training/learning (see /[[http://www.sjgames.com/gurps/books/backtoschool/][GURPS Social Engineering: Back to School]]/)\\
+- Based on actions taken (see /[[http://en.uesp.net/wiki/Oblivion:Increasing_Skills][The Elder Scrolls IV: Oblivion]]/)\\
+- Based on the difficulty of a successful task (e.g., the combat-relevant skills and attributes of a monster defeated in combat, or the cooking-relevant skills and attributes of a master cook defeated in a soufflé-making contest)\\
+- Based on the overall value of a defeated monster (e.g., if you defeat a monster whose stats would take 1000 XP to accumulate, you get 1% of that total, or 10 XP, for defeating that monster, whether in combat or outside combat)
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 3
+:DateUnix: 1499895790.0
+:DateShort: 2017-Jul-13
+:END:
+
+**** I'm having a little bit of trouble with "actions taken", since that feels like it encompasses everything that a character could do. I'm guessing given the example you mean that it comes with a concept of "skill xp"? e.g. you do a thing and get better at that thing you just did?
+
+But you also say xp awarded for completing a task, and "task" is a concept that's so large it could mean almost anything.
+
+Others which I think don't fall entirely within what you've outlined:
+
+- Roleplay xp
+- Decision-based xp (the first /Bioshock/ awarded variable xp depending on if you chose to do the "moral" thing or not)
+- Reputation-based xp (e.g. you gain xp on the basis of how much certain people like you)
+- Interval-based xp (e.g. you gain 10 xp/hour)
+- Acquisition-based xp (e.g. there are xp crystals which can be bought/sold/stolen)
+- Story-based xp (e.g. you gain xp for advancing the plot, even if that is on tangential to tasks being accomplished)
+
+Of course, to some extent it depends on what you mean by "xp", and there are lots of /other/ reward mechanisms fed to players in the form of feats, boons, achievements, etc.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 2
+:DateUnix: 1499911299.0
+:DateShort: 2017-Jul-13
+:END:
+
+***** u/GaBeRockKing:
+#+begin_quote
+  I'm guessing given the example you mean that it comes with a concept of "skill xp"
+#+end_quote
+
+This is my personal opinion, but please avoid having different XP categories for individual skills. One of the biggest mistakes I see LitRPGs make is to give their characters a massive list of skills with their own independent values that as a reader I'm somehow expected to interpret. The actual video game mechanics are almost always aesthetic; From a rational perspective, I never see them used in a particularly clever way, so they should probably be kept to a minimal style as much as possible.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 2
+:DateUnix: 1499918382.0
+:DateShort: 2017-Jul-13
+:END:
+
+****** So something like "*One-handed weapons increased to 23!*" does nothing for you?
+
+I think in terms of actual writing the mechanics stay mostly in the background, but with occasional flashes of a character sheet, and transcriptions of in-game logging to mark advancement and work some of that Skinner boxing on the reader of the story.
+
+Plus using achievements/afflictions/boons as a method of conveying story truths, adding drama, or adding comedy (e.g. the main character agrees to shepard a wizard across the wastes and an ominous achievement "Deal with the Devil ..." pops up).
+
+... and then there are mechanics like faction reputations, NPC favor, base-building, companions, etc. to consider, which are part of the complete reward system package, though I'm not sure how to deal with that.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 2
+:DateUnix: 1499920360.0
+:DateShort: 2017-Jul-13
+:END:
+
+******* u/GaBeRockKing:
+#+begin_quote
+  So something like "One-handed weapons increased to 23!" does nothing for you?
+#+end_quote
+
+Nope. Now, Iunderstand that for some people, it /does/, but there's a balance to be found between "basically not a litrpg" and "hundreds of skills whose points don't matter anyways."
+
+Personally speaking, I think everything beyond overall level and a list of special abilities is overkill, but I tolerate up to level+mp/hp+strength/charisma/intelligence/wisdom/dexterity+skill list. But I honestly just don't see the point of skill levels-- either the character is or isn't able to perform an action, and I find it more elegant to simply have the outcome be determined by experience/practice without going into arbitrarily defined skill points anyways.
+
+That being said, I don't have any problems with notifications, providing they're done in a stylistically interesting way (instead of just infodumping in lieu of actually writing stuff out.)
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 2
+:DateUnix: 1499927393.0
+:DateShort: 2017-Jul-13
+:END:
+
+******** I like them... occasionally. I dont want to see ever skill rank, I dont want to know that mid fight your character recieved his 500th skill rank in jumping. But I also love when you hear someone bragging about how good they are, and you can go and find the MC's skill level to put it in perspective.
+
+So, want a huge character sheet? Go for it, but put it out of the way, and make it IN ADDITION to the story, not required reading.
+
+Good uses for a skill rank: Comparing between enemies, so you know how outclassed someone is. (Frequently Ive seen it mean "Bouncer over there is 200 levels above me, im not picking a fight) a source of a goal/tension. (I can almost do X, I just need to leave and train more) Pacing. (This PVP area is resricted to levels 55+ with at least 3 combat skills at level 100)
+:PROPERTIES:
+:Author: Rouninscholar
+:Score: 2
+:DateUnix: 1499984538.0
+:DateShort: 2017-Jul-14
+:END:
+
+
+******* A LitRPG I enjoy is [[http://blastron01.tumblr.com/kumoko-contents][I'm A Spider, So What?]], and it has this kind of system, where there are /tons/ of skills and they're all tracked. These days, every time kumoko calls up her status it's a giant list of skills and I have a hard time evaluating things because there's no coherent order. That's a matter of logistics, though, and if you can organize the skills properly it shouldn't matter how many there are.
+
+As for the skinner box levelups, I am one of those people whose reward system ticks on from hearing the likes of "*One-handed weapons increased to 23!*". Obsessively rattling it off mid-battle would suffocate the action (though is perfect for lulls in battle or in small doses), and hearing every single levelup would bog things down anyways, but using the levelups to give a sense of reward or to help show progress (/"X reached level 7" oh, and by the way I've been practicing my X skill today/) is useful and validating. At early stages, when you only have a handful of skills, by all means report every levelup, it's significant, but once you have dozens of skills you only need to invoke them intermittently.
+:PROPERTIES:
+:Author: InfernoVulpix
+:Score: 2
+:DateUnix: 1500010492.0
+:DateShort: 2017-Jul-14
+:END:
+
+
+***** u/ToaKraka:
+#+begin_quote
+  Roleplay xp
+
+  Decision-based xp
+
+  Story-based xp
+#+end_quote
+
+I dislike these. They have nothing to do with the skills or attributes of the character---so why should they grant experience points toward those skills and attributes? In my opinion, if they're considered at all, they should contribute only to "personality experience points" that can be spent /only/ on personality traits and /only/ on traits that match the roleplaying or decisions (e.g., if you start a game with several 100% Paragon decisions, you can't suddenly switch to 100% Renegade later, because you've already locked in Paragon-aligned personality traits---but you can regress to 50% Paragon decisions in an attempt to remove those Paragon personality traits).
+
+#+begin_quote
+  Reputation-based xp
+#+end_quote
+
+I don't even understand how that term makes any sense. If you're talking about characters or factions in which you can slowly build up trust, it doesn't make any sense to call that trust meter "experience points", because it can drop precipitously at the drop of a hat when you betray those characters or factions. If you're talking about a general "fame" statistic, I have the same opinion: The number goes up in fits and starts whenever you do something major, and gradually declines as people forget about you and think about other things, while "experience points" typically rise almost 100% of the time and fall only extremely rarely (when forced to do so by level-draining monsters or resurrection).
+
+#+begin_quote
+  Interval-based xp
+#+end_quote
+
+[[http://knowyourmeme.com/memes/costanza-jpg-george-costanza-reaction-face][/Literally/ leveling up for doing nothing??]] It might be tolerable in a survival game in which constant conflict (with wild animals, zombies, starvation, etc.) is a basic assumption---but, outside that genre, the concept is worth nothing but a laugh.
+
+#+begin_quote
+  Acquisition-based xp
+#+end_quote
+
+It seems redundant when a character already can steal some gold to pay for training.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 1
+:DateUnix: 1499940129.0
+:DateShort: 2017-Jul-13
+:END:
+
+****** u/cthulhuraejepsen:
+#+begin_quote
+  They have nothing to do with the skills or attributes of the character---so why should they grant experience points toward those skills and attributes?
+#+end_quote
+
+You're bringing in some outside values, namely that the game systems should be simulationist, i.e. the rules are a map with the world as the territory. I understand that as a principle of design, since it's basically a cousin of skeuomorphism, but I think it's overly constraining. Moreover, I'm not trying to make game rules that create a game which resembles the real world, or even game rules intended to hook in a player, I'm trying to make game rules that hijack the reader's pleasure centers as efficiently as possible. I don't even need to worry about suspension of disbelief, because the reader is meant to be fully aware that these are mechanics - anything that reinforces that its a game rather than real life is a feature, not a bug.
+
+Game designers include things like roleplay xp for two basic reasons. First, they want to push players in certain directions. Part of the worry is that players will only ever do what's most efficient to make the numbers go up, which doesn't always tend to be what's most fun for the players. Giving them xp as an incentive will get players moving in preferred directions so there aren't bitter forum posts about how "the most efficient thing to do is just slog through the grind". Second, game designers include things like story xp in order to add an extra dopamine hit when the play is already having fun; it's icing on top of the cake. You're playing the game, you get into character, you invest yourself in the story, and not only is that rewarding on your own, but you get an extra reward on top of it!
+
+#+begin_quote
+  Interval-based xp
+#+end_quote
+
+I guess I would point out that one of the most common houserules for D&D is to have players simply level up every two or three sessions regardless of what gets accomplished, and one of the most common mechanics in MMOs is having an equivalent of "rest xp". Also, EVE Online has real-time skill training which follows almost exactly the outlined interval model; this design decision was made for a number of reasons, but I think the two most important are A) it means that you don't need a huge investment of time in doing things you don't want to do and B) you have to learn to work with what you have.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 2
+:DateUnix: 1499968018.0
+:DateShort: 2017-Jul-13
+:END:
+
+******* u/ToaKraka:
+#+begin_quote
+  I'm not trying to make game rules that create a game which resembles the real world, or even game rules intended to hook in a player, I'm trying to make game rules that hijack the reader's pleasure centers as efficiently as possible. I don't even need to worry about suspension of disbelief, because the reader is meant to be fully aware that these are mechanics - anything that reinforces that its a game rather than real life is a feature, not a bug.
+#+end_quote
+
+Mechanics that are based on nothing but "balance" can be viewed with confusion and anger by players who consider the developers to be acting merely on baseless whim and fancy, and who expect mechanics to have at least /some/ basis that they can understand. That basis may be real life, or it may be the fictional literature on which the game is patterned---but it /definitely/ can't be anything as esoteric as Skinner boxes and game theory.
+
+As long as some territory exists---as long as the game isn't a jumble of numbers totally divorced from everything else---players expect the game to be a representation of it with at least /some/ faithfulness. Even in a game as abstract as /Tetris/, some versions have gravity affect blocks that aren't connected to the walls (called the "Cascade" mechanic, IIRC), while others do not.
+
+#+begin_quote
+  Giving them xp as an incentive will get players moving in preferred directions so there aren't bitter forum posts about how "the most efficient thing to do is just slog through the grind".
+#+end_quote
+
+...and, in turn, will prompt bitter forum posts complaining about a lack of player freedom and an excess of nonsensical railroading and undeserved rewards. The question is: Which opinion has more adherents among the players?
+
+#+begin_quote
+  You're playing the game, you get into character, you invest yourself in the story, and not only is that rewarding on your own, but you get an extra reward on top of it!
+#+end_quote
+
+"Oh, look. The developers /actually/ are /screenwriters/, and I'm their protagonist. Now that I've gone through the predetermined motions, I get a pat on the head for being an obedient little Tom Cruise. Yay." How many players want to be /real boys/ instead of /puppets/, though?
+
+#+begin_quote
+  I guess I would point out[...]
+#+end_quote
+
+Well, I'm not well-versed in any arguments for universal basic income.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 1
+:DateUnix: 1499975243.0
+:DateShort: 2017-Jul-14
+:END:
+
+******** u/cthulhuraejepsen:
+#+begin_quote
+  ...and, in turn, will prompt bitter forum posts complaining about a lack of player freedom and an excess of nonsensical railroading and undeserved rewards. The question is: Which opinion has more adherents among the players?
+
+  "Oh, look. The developers actually are screenwriters, and I'm their protagonist. Now that I've gone through the predetermined motions, I get a pat on the head for being an obedient little Tom Cruise. Yay." How many players want to be real boys instead of puppets, though?
+#+end_quote
+
+I think you're bringing MMO sensibilities to this, rather than tabletop ones. In D&D you can have a DM that can make judgement calls on roleplaying and story, rewarding you for immersing yourself or in doing things that are narratively neat. I've seen xp given out for a player writing a drinking song, or for two players arguing the tenets of their respective religions. This is unplanned by the DM, but can still be rewarded by them. Similarly, I've /given out/ xp for players subverting plans entirely by siding with the person I thought was going to be their enemy, since that can be a good pivot within the narrative that makes them feel rewarded for thinking outside the box.
+
+The only reason that this isn't often done in computer games is because it's a very difficult problem and making stories that have lots of options doesn't tend to be financially sound. In other words, it's largely an economic or technologic problem, rather than a game design problem.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 3
+:DateUnix: 1499983032.0
+:DateShort: 2017-Jul-14
+:END:
+
+********* u/ToaKraka:
+#+begin_quote
+  I think you're bringing MMO sensibilities to this, rather than tabletop ones.
+#+end_quote
+
+/You're/ the one who said:
+
+#+begin_quote
+  I am writing a litRPG similar to "The Gamer" or "Sword Art Online".
+#+end_quote
+
+I'm not well-acquainted with /The Gamer/, but /Sword Art Online/ definitely is an MMO, as is the standard RoyalRoadL litRPG game world.
+
+You also said:
+
+#+begin_quote
+  Giving them xp as an incentive will get players moving in preferred directions so there aren't bitter forum posts about how "the most efficient thing to do is just slog through the grind".
+#+end_quote
+
+This passage brings to mind an MMO, not a tabletop RPG. And isn't a litRPG world literally nothing but an MMO anyway? What does GM-/DMing have to do with a litRPG story?
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 1
+:DateUnix: 1499985019.0
+:DateShort: 2017-Jul-14
+:END:
+
+
+*** Generic XP from killing monsters does not exist, There is /only/ skill XP from performing difficult actions.
+
+Whenever you perform an action, the game calculates a "base XP" based on how difficult it was to do in that situation. After that, it /subtracts/ your skill level from the base, and grants you that amount of XP to increase your skill. The requirements for each level also change, increasing by 10% exponentially each time, while the effects gains are constant.
+
+As an example, hitting a training dummy with a short sword is worth 2 XP and it takes 1000 XP to reach level 1 in Short Swords. You will level up after 500 hits. Once you are level 1, hitting the dummy is worth (2 base - 1 level =) 1 XP, and you need 1100 more XP to level, needing 1100 hits. When you are level 2, you can't learn anything from training dummies anymore.
+
+--------------
+
+Every time you level up a skill, you gain four benefits: Universal bonus, Category bonus, Synergies, and Base bonus.
+
+Universal bonus is the same for every skill, a simple increase of +1 HP, and +1 monster aggro. This can act as a stand-in for player level in some ways, but it isn't very accurate.
+
+The category bonuses are different between each set of skills: All combat skills give +1 strength, all spellcasting gives +1 magic, all crafting gives +1 dex, etc. The links to specific stats are the real way skills are categorized, for example, a farmer might have lvl 5 Combat:(Shovel) from digging their field and lvl 10 Crafting:(plants) from gardening.
+
+The synergies make having one skill improve the second. For example, each level of blunt weapons increases your damage with swords by 3%. This is to encourage munchkinry (because early levels are /much/ easier to get) and diverse skill sets.
+
+The last is the base bonus. This is a simple +10% (or whatever) to the effectiveness of the skill. It is bigger than the synergy bonuses, but exponential increases in skill leveling time mean that it may be more efficient to level a synergistic skill instead.
+
+--------------
+
+There are two more parts: Skill tricks, and Skill techniques.
+
+Skill tricks are specific pieces of knowledge that can be used across different skills, in different ways. They are unlocked by specific trainers, by performing specific feats, or by simply raising a skill to high enough level. On their own, skill tricks do nothing, instead unlocking some techniques in combination with other requirements. For example, the skill trick "Power Attack" unlocks the skill techniques "Cleave" (with Axe lvl 15), "Sweep" (with staff lvl 10) and "Pound" (with Hammer lvl 20).
+
+Skill techniques are spells, combat tricks, and the like. They are unlocked by knowing one (or more) skill tricks, and other requirements.
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 3
+:DateUnix: 1499896514.0
+:DateShort: 2017-Jul-13
+:END:
+
+**** I like a lot of this, and will probably include a fair amount of it. Skill synergies as a way of buffing a skill that's primary to the character build will probably work out well, since there comes a point where you've capped out what a skill can do (for the sake of narrative if nothing else).
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 1
+:DateUnix: 1499970348.0
+:DateShort: 2017-Jul-13
+:END:
+
+
+*** u/GaBeRockKing:
+#+begin_quote
+  as well as extending the power fantasy as far as possible
+#+end_quote
+
+Games vary pretty wildly in terms of how much of a power fantasy they are. On one extreme, you have single player RPGs that are explicitly designed in such a way that every single encounter is somehow beatable, and if you spend the time to overlevel yourself, you can trivialize everything but endgame encounters. As an example of this, Pokemon is set up so that nearly every single opponent can be easily beaten through regular play, without a single party wipe. On the other extreme, you have competitive multiplayer FPS or dogfighting games where, in a 1v1, all your gear will be the same, so with even a minor skill differential, a superior opponent will win (almost) every single time. For example, CS:GO.
+
+Somewhere in the middle lie MMOs. The vast majority of any player's time is spent killing AI specifically designed to be beatable (by a level appropriate party.) PVP encounters can still happen, but they can be optimized for by having above-average gear, and only targeting players that you know you can beat. Thus, every encounter is still "beatable", contributing to the power fantasy.
+
+So, abstracted, your game mechanics should:\\
+* Have individual mobs be unquestionably worse than the player character (or than the player character + their party). This establishes the "power" of the player character. * Have the primarly, credible threat to player characters be large groups of enemies (such as a boss + adds, or massive swarms of minions.) This allows you to show the player character plausibly struggling, but, as the obvious underdog, still makes even their barest, hardest won-victories still "badass." * Allow the player character to get into fights with multiple, lower level players for the same reason as above. * Allow for the player character to only engage other individual /similarly leveled/ player characters when the player has reason to suspect that they'd win the fight
+
+That last point is particularly important, because it allows you to keep the power fantasy going without explicitly making your character a god-tier mary sue. You can have arbitrarily high amounts of players more powerful than the PC, but so long as the player can decide to simply not fight them, the power fantasy keeps going.
+
+To provide an example from personal experience, I used to play an MMO called [[https://www.planetside2.com/home]["Planetside 2"]]. Now, planetside 2 differs from nearly every other MMO in that it's actually an MMOFPS. There /are/ equipment differences, but at the infantry level they mostly just give you a slight edge. So you're on a level playing field with all ~600 enemy players, and there aren't any AI to farm. And the thing is, I'm only a fairly middling FPS player.
+
+But the other thing about planetside 2 is that it allows you to pull vehicles. More specifically, I constantly used something called an "ESF", a helicopter/fighter jet equivalent. Now, those things were considerably less versatile than infantry, and considerably less powerful than other, heavier vehicles, but their primary advantage was pure manueverability. Except against other ESFs, I was the person who got to choose when a fight started, and if I realized it wasn't winnable, when it ended. It didn't matter than I couldn't (usually) engage tanks, and infantry inside buildings were untouchable, because when I /did/ get into a 1v1, I tended to win.
+
+And I'm willing to bet that sort of 1v1 dominance will be what resonates with readers looking for wish fulfillment. Because in FPS games, or MOBAs, it's every player's fantasy to "carry" the rest of their team to victory, contributing the preponderance of damage, or kills, or objective time, or whatever metric is used by the game. /Real/ MMOs don't allow this by design-- their intention is to exploit the social aspect of the MMO to keep players coming back, and to do that they need to provide reasons for many people to come together at once. Even for planetside 2, where individuals could three or four times their weight in less experienced players, large groups were absolutely required to have any significant affect on the macro scale. Because if you were worth three players, the enemy could always just send four.
+
+But LitRPG isn't required to do that. Look at the sucess of SAO, where kirito can solo a /boss/. Even the comparatively more balanced Log Horizon places significant value on individual prowess in the sense that the more diplomatic and player-interaction-focused parts of the storyline tends to revolve direcly around the actions of the main character.
+
+So the *TL;DR* is that, to provide for the power fantasy as best as possible, the game should have mechanisms to usually allow the player be virtually guaranteed to win any 1v1s they get into (monster or player), and if the player needs to lose or almost-lose it should be against multiple opponents.
+
+Oh, and one more thing: this neatly dovetails into the "Skinner Box" elements. If you give the best XP bonuses and rewards for PVP combat, you get into a nice little core gameplay loot of grinding mobs to get to the point where you can PVP so you can grind mobs better so you can PVP better... etc.
+
+For example, a mechanic where both players wager an item they have on the outcome of a duel. They lose their item regardless of whether they win or lose, but the winner of the duel gets a randomized loot box of semi-random value based on the value to their /enemy's/ wagered item, times some multiplier. So players have a reason to duel instead of trade, and players have a reason to duel often.
+
+This would also keep the game economy in check, as dueling, on average, destroys value (2x items of value n turned into an item of value m such that m is usually smaller than 2n)
+
+But regardless of what you do, make sure there's /some/ sort of randomized element. If the items you get from a boss are pre-set, maybe there's an additional "quality" variable than gets randomized on drop, so two otherwise-identical drops still differ in power, so you have to farm a bunch of copies to get a really good one.
+
+Anyways, good luck.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 2
+:DateUnix: 1499918117.0
+:DateShort: 2017-Jul-13
+:END:
+
+**** u/ulyssessword:
+#+begin_quote
+  For example, a mechanic where both players wager an item they have on the outcome of a duel. They lose their item regardless of whether they win or lose, but the winner of the duel gets a randomized loot box of semi-random value based on the value to their enemy's wagered item, times some multiplier. So players have a reason to duel instead of trade, and players have a reason to duel often.
+
+  This would also keep the game economy in check, as dueling, on average, destroys value (2x items of value n turned into an item of value m such that m is usually smaller than 2n)
+#+end_quote
+
+I would exploit this /so hard/.
+
+Duel a friend, with their 10k gold "Sword of Awesome" against your rusty iron dagger. Defeat them (with their cooperation), and get a 11k gold "Helmet of Amazing". Repeat with your helmet against their rusty dagger, to get 12.1k gold "Breastplate of Badass" etc.
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 1
+:DateUnix: 1500011096.0
+:DateShort: 2017-Jul-14
+:END:
+
+***** u/GaBeRockKing:
+#+begin_quote
+  I would exploit this so hard.
+
+  Duel a friend, with their 10k gold "Sword of Awesome" against your rusty iron dagger. Defeat them (with their cooperation), and get a 11k gold "Helmet of Amazing". Repeat with your helmet against their rusty dagger, to get 12.1k gold "Breastplate of Badass" etc.
+#+end_quote
+
+I should note that the multiplier wouldn't be /positive/ in every case. For example, you could get a randomly chosen multiplier from the set {0.5, 0.7, 0.9, 1, 1.11, 1.43, 2} so, on average, you get back the value of your enemy's weapon, but lose whatever you used for buy in. I can still see it being used to mulligan items you don't really care for, for a nominal fee, but that's still results in some pretty skinner box gameplay.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 1
+:DateUnix: 1500072943.0
+:DateShort: 2017-Jul-15
+:END:
+
+
+*** To give my own thoughts, partly to have them down somewhere:
+
+I think having rewards along as many different channels as possible it probably preferable, so long as the reader doesn't lose track of what those channels are.
+
+- Level (and increments to level, i.e. experience points)
+- Abilities (base numerical attributes)
+- Skills (domain-specific abilities)
+- Equipment (in various slots)
+- Fame
+- Reputation with factions
+- Ranks in organizations
+- Friendships
+- Companions
+- Skills known
+- Spells known (and spells per day)
+- Feats (and levels to feats)
+- Titles
+- Real estate
+- Achievements
+
+You can also mix and match a lot of these. Equipment is a reward mechanism, but you can have equipment for your equipment (in the form of sockets), feat equivalents (permanent enchantment), reputation levels (representing a closer bond with the item), etc. Similarly, you can gate various reward tracks to each other, so you need to be a certain level to have certain skills, and higher levels in skills unlock abilities, and certain abilities in combination create new abilities, etc.
+
+As for what to actually include in the game-within-the-novel, partly that depends on length. My general idea is that in terms of an author using reward mechanisms against the reader, you go slow and add things into the mix gradually as the reward response starts tapering off. As in, the protagonist gets their first companion right about when there's enough familiarity with the equipment/skill side of things that it's no longer fresh.
+
+[[/u/daystareld]], you're not writing a proper litRPG, but you are writing literature with translated game elements in it. I'd assume that you've thought about power progression within Origin of Species a bit and how power is doled out; I'm curious as to your thoughts on pacing that. That is, Red, Blue, and Green occasionally get new pokemon, and their pokemon get new moves or evolve, and this is presumably in accordance with some kind of scheme for pacing the novel?
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 1
+:DateUnix: 1499982244.0
+:DateShort: 2017-Jul-14
+:END:
+
+**** For my story, most fights are formulated at the outline stage as "Insert battle scene here, with X as the desired outcome," and then the particulars of the battles are thought up and written more or less in the moment. Insofar as planning out power curves goes, there are general trends I want each character to follow for their own stories and to keep up with the major combat related plot points as a whole, but in terms of individual aspects of power, the main motivation is really just not wanting any two fights to be the same, and so varying things by adding new pokemon, moves, or strategies to the mix whenever possible or necessary. Does that make sense?
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 2
+:DateUnix: 1500005222.0
+:DateShort: 2017-Jul-14
+:END:
+
+***** Yup, that makes sense, thanks.
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 1
+:DateUnix: 1500009687.0
+:DateShort: 2017-Jul-14
+:END:
+
+
+** What would be the implications of a relatively widely available machine giving you access to a virtual environment that would allow for time compression, i.e. for every hour objective time, 2-4 hours virtual time would pass?
+
+While the factor of compression is important, obviously, it's a factor that may be variable between virtual environment. How would that impact society?
+
+I'm wondering since I've been reading a lot of litRPG these last few weeks, and time compression is a common staple of the genre. Yet I've not seen this part really explored. You have these MMORPGs where players play many hours subjective while only a few objective pass. While that is nice to have for a game, and it makes sense from a narrative perspective, there are so many implications for this outside of games.
+
+For instance I could see economic pressures for head-only jobs to spend their time in virtual environments to make use of the time compression, so they accomplish more work per objective time. On the other hand, if mental fatigue is affected, this may also translate to an inverse effect, shorter work objective hours for those with head only jobs, since you can only do constant 24 virtual hour shifts pushing virtual paper for so long before you get burned out, despite working /only/ 8 hours objective.
+
+On the other hand you could have physical labor workers being encouraged to spend their free time in time compression to relax and, uhm, ‘decompress' better, so to speak.
+
+On the gripping hand, what if time compressed sleep is just as reviving as regular sleep? There's be a huge incentive to research and develop this capability.
+
+And on the vestigial hand, what if the brain was able to experience only so many waking hours, and the time compression would effectively decrease the awake/asleep-ratio of people?
+
+I'm obviously not listing every case, but what do you think would happen in a world with such a technology, how it would develop?
+
+Incidentally, I kept the time compression intentionally relatively small, since this wasn't meant to be a hyberbaric time chamber or anything like that, but somewhat remotely congruent with current science.
+:PROPERTIES:
+:Author: Laborbuch
+:Score: 1
+:DateUnix: 1500106834.0
+:DateShort: 2017-Jul-15
+:END:

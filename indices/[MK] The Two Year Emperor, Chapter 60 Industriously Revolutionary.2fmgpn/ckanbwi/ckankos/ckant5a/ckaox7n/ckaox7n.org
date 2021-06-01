@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: Zephyr1011
+:Score: 2
+:DateUnix: 1410004377.0
+:DateShort: 2014-Sep-06
+:END:
+
+Your figure for the FBRs is a bit off. You are using calculus, which assumes that the production is continuous, when it is discrete. The actual formula is n(n-1)(n-2)/6 at round n, assuming that it starts with 1 GGG at round 0 and nothing else

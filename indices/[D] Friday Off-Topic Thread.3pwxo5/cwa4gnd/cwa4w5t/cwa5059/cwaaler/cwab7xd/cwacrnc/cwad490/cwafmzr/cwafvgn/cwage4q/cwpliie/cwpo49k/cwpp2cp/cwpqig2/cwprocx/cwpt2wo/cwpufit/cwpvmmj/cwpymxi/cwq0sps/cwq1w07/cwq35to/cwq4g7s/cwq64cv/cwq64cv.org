@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1446775482.0
+:DateShort: 2015-Nov-06
+:END:
+
+One point: what I've been reacting to is the 'push file parsing down a layer'. All of the problems that were previously discussed about caching, diffs, etc, still apply.
+
+The main problem you're going to run into is that most category killers are proprietary. MS word, MS Excel, Photoshop, etc. Those companies have an active disincentive to let you take the job of file parsing from them. It prevents them from extending their formats, and lets other people compete with them more easily.
+
+What you probably need is a pluggable parser engine where vendors contribute their file spec and the engine can read the spec and generate the appropriate parser. Then other people would contribute meta-parsers that, under the hood, select which parser to use in order to translate between the formats.
+
+In theory, if the interoperability were good enough and your engine really could support translating between versions, then companies might be glad to use your engine instead of having to do the legacy support themselves. They'd then have to write their programs to be fault-tolerant of missing data, and your engine would need to know how to remap data to be as minimally fault-causing as possible.

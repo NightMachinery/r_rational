@@ -1,0 +1,52 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 17
+:DateUnix: 1504292194.0
+:DateShort: 2017-Sep-01
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Hoo boy.  It feels like a crap ton of coding work was done this week, even though some of it turned out to be burned up on designs that didn't work out, but such is life.
+
+Last week, I was in the middle of getting stats to a working point, and I think at this point the building blocks are conclusively finished, barring bugfixes and potential optimizations.  There is a Stat object for each numeric type in C# (ByteStat, IntStat, FloatStat and so on), and all of them can be used with each other and the primitive numeric types in calculations.
+
+For instance, if I instantiate an IntStat x, I can manipulate it by doing
+
+   x += 10;
+
+instead of doing
+
+   x.Set(x.Value + 10);
+
+This is definitely worth the effort that it took to get the code templates right.  Oh, and final count resulted in three code templates, one each for the stats, tests, and benchmarks.  The stat template is 228 lines and expands to 11,623 lines (roughly 1,000 lines per stat); the benchmark is a modest 110 lines that unfolds to 1,858, and the tests template is 142 lines that balloons to 16,929 lines.  
+
+Unit testing is actually a very legitimate application of the code templates.  Usually my patience wears pretty thin in writing repetitive tests that cover ever more edge cases, but in cases like this where there's a systematic, repetitive test space?  I can brute force it!  Within the tests are a function for each combination of every stat, primitive, and mathematical operator.  FloatStat_Add_Float, FloatStat_Add_FloatStat, FloatStat_Add_Int, FloatStat_Add_IntStat, and so on, resulting in 1,936 tests spanning all of the possible applications of this code.  And it's useful!  As I tweaked and refactored things over the weekend, I frequently broke huge swathes of tests with small changes; it was useful to see both the scope of the damage (“hmm, 250 tests are failing, and they're all related to X”), but also the validation that they /all/ pass again once I fix the bug.  
+
+The benchmarks were intended for use mostly to compare the performance of these base numeric stats and what I was calling a HybridStat, which was essentially a fixed-point long integer.  [[https://docs.google.com/spreadsheets/d/1ptSlwYGYw6vecrw3PEFks0pDf1Vkhv8Yy8ZbsDJcKyU/edit?usp=sharing][The results are listed here]], showing somewhere around a 150x slowdown when using the stat objects in math compared to just using the primitive they are based on.  Considering that this boils down to performing 6.25 million math operations in a second as opposed to 2 billion, I think it's acceptable, especially since most uses of the operators are going to be mostly one-offs done during modded move calculations, which is going to be dwarfed by other aspects of moves.
+
+Anyway, the HybridStat was eventually pointed out to me to be more trouble than it's worth.  Essentially, rather than doing so much work having a long act like a float without the associated floating point errors that come along with it (and still act like an integer while still including even division), it was pointed out that we can abandon the assumption of “1 move use = 1 EV” and bump that up to “1 move use = 1000 EVs” and it essentially fixes the problem.  Considering that it's mostly a behind-the-scenes change, I think it's acceptable.
+
+([[http://i.imgur.com/a75oeKS.png][But I had had]] so much [[http://i.imgur.com/lB356fs.png][success optimizing it!]] A shame.)
+
+--------------
+
+With stats in place, I started working on Species/Creature/Unit, which are more associated with Renegade than they are XGEF, so it's been the first real use of the System/Mod split.  As a result, I've had to start fleshing out the JSON serializer (a tool that converts in-code objects to JSON and back) and figure out exactly how assets are loaded.  
+
+Currently I'm leaning towards a two-sided approach when it comes to requesting assets.  First, various Loaders are instantiated at the start of the game that report on what files are available (a DiskLoader checks the physical disk for files in the right place, a NetworkLoader calls a website API and gets a list of files, etc etc).  These registered files are then translated to a purely relative virtual file structure index: for instance, a system might request information on the Charizard species by requesting “core/units/Charizard.pkmn”, while another might ask for “core/items/potion.item”.  
+
+Mods and game code doesn't have to worry about the fact that Charizard is located at C:/Documents and Settings/ketura/Documents/test/Renegade/data/core/units/Charizard.pkmn, nor does it have to worry about Potion being at [[http://www.pokefan.com/RenegadeFilesMirror/CoolItemMod?request=core%2Fitems%2Fpotion.item.json&version=1.2]] . All they do is request the simple relative file, and then the AssetIndex looks up what loader registered the file and tells it to cough it up.  
+
+So that's one side.  The other is permitting Loaders to register entire empty folders, which can allow for arbitrary “file” data.  For instance, perhaps someone decides to make an infinite world mod (Renegade will be fixed-size).  They can have a MapLoader register the “core/map” folder entirely, so when some system requests information on “core/map/x10y32z40.chunk”, the MapLoader is asked to “load” this file, which in reality is actually generating the chunk on the fly.
+
+Between these two applications, I think that everything asset-related will be covered. We'll see how it goes over the next week or so.
+
+--------------
+
+Oh, and I've fixed an oversight:  The XGEF repository was still private, [[https://bitbucket.org/ketura/xgef/overview][which I have now fixed]].  Feel free to poke around it if you're technically inclined, just be aware that I occasionally commit broken code (as I did last night) and that organization frequently changes on a whim.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

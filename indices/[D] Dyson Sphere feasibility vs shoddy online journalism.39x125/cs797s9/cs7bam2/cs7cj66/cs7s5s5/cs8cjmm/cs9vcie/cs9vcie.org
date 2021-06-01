@@ -1,0 +1,44 @@
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1434568355.0
+:DateShort: 2015-Jun-17
+:END:
+
+#+begin_quote
+  I agree with most of your comment, and would invite you to contribute to the wikibooks I have been working on
+#+end_quote
+
+I may take you up on that. However, it occurs to me that my tendency is sometimes more towards original ideas, and/or novel uses for old ones, and original research is something that Wikipedia prohibits (I'm actually skating a thin line with the edits to Dvorsky's page, NOR-wise), while Wikibooks also apparently [[https://en.wikibooks.org/wiki/Wikibooks:What_is_Wikibooks#Wikibooks_is_not_a_mirror_or_a_text_repository][frowns on it]]. So Wikiversity might be a better place to publish/republish certain of these concepts at first. In theory, one could get more eyes on the subject for peer review in this manner (although it looks like WV isn't especially widely known/used).
+
+#+begin_quote
+  I was part of a "Solar Power Satellite built from Lunar materials" study sponsored by the Space Studies Institute.
+#+end_quote
+
+Cool! Any chance that's online anywhere with your name credited? I couldn't find it by googling that title. It would strengthen the [[https://en.wikipedia.org/wiki/User:Lsparrish/Dani_Eder][case]] for giving you a [[https://en.wikipedia.org/wiki/Dani_Eder][Wikipedia bio]], if you're interested in that.
+
+#+begin_quote
+  We found that 98% of the satellite mass could be made from the Moon, with the remainder from Earth. That assumed a mature space manufacturing capability, which would be consistent with the scale of producing many large power satellites.
+#+end_quote
+
+This sounds plausible to me. Was there any kind of critical peer review that would potentially refute the numbers? Also, what components did the remaining 2% consist of -- printed semiconductor electronics? At some scale, a fab/cleanroom constructed in orbit (a gravity balloon filled with a thin atmosphere of argon, for example) might be less expensive, not necessarily so much due to launch considerations as the expense of running such facilities on earth vs space.
+
+#+begin_quote
+  The study was done around 1986, so it did not consider modern robotics and automation, and did not consider asteroid resources. Back then only ~ 100 Near Earth Asteroids were known, vs 12,714 today. Statistically, the much larger population means more of them are in easy orbits. Also, ion/plasma electric propulsion was much less developed than today, and solar panels to power them were much less efficient. Since asteroid types have different compositions than the Moon, you have more opportunities to get what you need.
+#+end_quote
+
+I wonder how many NEAs really would make good long-term colonies / save on delta-vee relative to the Moon? I could see [3753 Cruithne](en.wikipedia.org/wiki/3753_Cruithne) (with the kind of linear track based deceleration tech I mentioned and/or ion propulsion, since it is not cheap to get to from earth using rocket fuel) being of interest due to the 1-year orbit it has. Humans living there would be assured of a yearly time when they can communicate in real time with loved ones on earth. It might also serve as an acceptable launchpad for Mercury-targeting missions (or any inner planet really).
+
+The main limitation I'm seeing is that (as I understand it) most of the so-called NEAs are eccentric sun-orbiters, not circularized earth-orbiters, so you will generally have a variable distance from earth which complicates teleoperation. For simple tasks, automation should be adequate, and automation could become good enough to manage remotely as well, but the initial targets should probably be something simpler. That's the main argument for the Moon and/or other earth-orbiting objects (although the video game tech might actually be enough to work around this given how predictable the environment should be).
+
+We could take manageable-sized chunks into a lunar or earth orbit, or circularize the orbits of existing smaller meteors. The bottlenecks there would be rocketry for the tugs and fuel (although fuel can be pretty cheap in this context once there's a way to mine a carbonaceous asteroid for water).
+
+Then there are the [[https://en.wikibooks.org/wiki/Space_Transport_and_Engineering_Methods/Guns_and_Accelerators][various kinds]] [[https://en.wikibooks.org/wiki/Space_Transport_and_Engineering_Methods/Guns_and_Accelerators2][of guns]] which can be mounted on asteroids regardless of where they are -- Stuart Armstrong mentioned mass drivers, which most space nuts know about, but [[http://settlement.arc.nasa.gov/Nowicki/SPBI1SI.HTM][according to Keith Lofstrom]] these aren't necessarily the cheapest (and probably can't work at all on earth) due to scaling barriers. I'm partial to light gas guns powered by LH2 + solar heating.
+
+Whatever style of gun, I'd suggest that since tension is easier to engineer for than compression, in a high scale application the chunk in the process of being launched would be moved to the far end and accelerated towards the main body. It would then either dodge around at the last instant, or pass through a tunnel (which it could keep accelerating through). Lots of asteroids are big enough that the gun could be /just/ a tunnel.
+
+#+begin_quote
+  Early bootstrapping is a different situation than mature space industry. The question is how to get from one to the other. I assume you start with the easiest products: bulk radiation shielding for habitats, carbon and water from chondrite-type asteroids. That can be reformed to hydrocarbons & oxygen, which makes good high-thrust propellant for landing on the Moon. Water and oxygen are also needed for life support. Metallic-type asteroids can provide feed stock for any number of mechanical and pressure vessel parts. From this level you gradually increase the range of products and percentage manufactured locally.
+#+end_quote
+
+Good points all around, an given that the oxygen and water requirements can be met in space without, human settlement does make some sense. However, if it turns out to be relatively simple to make high-decel tracks/tethers like I'm thinking, all-robotic seeding of sites that are selected for a low communications delay from earth might be the cheapest option at the lowest viable scale. It also opens the prospect of using high-accel launchers to get the seed equipment off of earth to begin with (although they aren't mutually exclusive).

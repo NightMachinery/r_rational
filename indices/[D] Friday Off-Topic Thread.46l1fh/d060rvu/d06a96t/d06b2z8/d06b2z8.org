@@ -1,0 +1,30 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 2
+:DateUnix: 1455915298.0
+:DateShort: 2016-Feb-20
+:END:
+
+There are a bunch of different approaches, and they're all generally highly dependent on what javascript you're using.
+
+If you were using react.js it would be easy, but that comes with a whole bunch of other stuff.
+
+I don't think it's really feasible to make one that isn't coded for a specific website.
+
+My general approach (using django and jquery, both pretty boring choices) is this.
+
+--------------
+
+Have two templates. One renders the entire page, another renders /just/ the content in the list.
+
+Check for a querystring that says something like "justTheList=True" (or a better named variable).
+
+If the request asks for just the list, return just the html for list with none of your other website stuff. No menu or anything.
+
+When a user scrolls to near the end of a page, request the next page using jquery. But request just the list. Insert that list into the end of your list div.
+
+--------------
+
+Does that make sense? It's one approach out of many. I could give more specific advice if I knew more specifics, like what language you're using.
+
+This one is "hacky" but it tends to be pretty cheap and quick to implement on top of your normal pagination.

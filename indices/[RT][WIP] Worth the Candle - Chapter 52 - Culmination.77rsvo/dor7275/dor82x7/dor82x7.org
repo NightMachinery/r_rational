@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 4
+:DateUnix: 1508732669.0
+:DateShort: 2017-Oct-23
+:END:
+
+Well ... currently, your best option is to just check every once in a while, which is kind of a pain in the ass. A story-specific RSS feed is on the AO3 timeline, but it doesn't seem like it's very close.
+
+Alternately, you could set up an HTML page change detection on [[https://archiveofourown.org/works/11478249/navigate][the table of contents]] using something like [[https://www.changedetection.com/][changedetection.com]], which I can't vouch for.
+
+(It would be possible to set up a manually edited/updated RSS feed if I had somewhere convenient to host it, but that would be a pain in the neck for me. Less of a pain in the neck, but more of a timesink, would be to automatically shoot story update e-mails to a bot that would then update an RSS file ... which is a hackey solution and would still take time I didn't want to devote to it.)
+
+So basically, sorry, there isn't a good way.

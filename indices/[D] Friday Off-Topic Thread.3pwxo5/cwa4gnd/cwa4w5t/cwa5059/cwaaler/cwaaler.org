@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 4
+:DateUnix: 1445623314.0
+:DateShort: 2015-Oct-23
+:END:
+
+#+begin_quote
+  I think filesystems are the problems, because they're inherently single process.
+#+end_quote
+
+What? There's a miscommunication here somewhere, because file systems are demonstrably not single-process. Every OS in the world these days is multi-process, and they are all perfectly capable of accessing the filesystem at the same time.
+
+If you mean that /hard disks/ are inherently single process, since the read/write head can only be in one position at a time, sure. That's nothing to do with the file system, though.
+
+#+begin_quote
+  We need a filesystem alternative that syncs across the network and that multiple programs/people can use at once.
+#+end_quote
+
+Again, multiple programs/people can already use a filesystem simultaneously. As to one that syncs across the network, those exist. cf Dropbox and [[http://fuse.sourceforge.net/sshfs.html]]
+
+Maybe the problem here is one of terms. When I say "file system", I'm using it in the classic Unix sense. Everything is a file, files are identified by inodes, there are directories which are really just special files, there's a path structure through the file tree, etc. What are you using it to mean?

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: EliezerYudkowsky
+:Score: 3
+:DateUnix: 1517688476.0
+:DateShort: 2018-Feb-03
+:END:
+
+Calibration charts are useful and commonly used. If you want a single number, compare your actual Bayes score (log probability assigned to correct answer, aka cross-entropy, a common loss function) with the entropy of your prediction (which is its expected Bayes score). If your score is much less than the expected score, then your predictions are overconfident.

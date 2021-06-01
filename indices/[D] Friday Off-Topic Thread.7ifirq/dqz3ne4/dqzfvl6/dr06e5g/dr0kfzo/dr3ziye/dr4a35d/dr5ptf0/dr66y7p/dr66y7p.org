@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1513136782.0
+:DateShort: 2017-Dec-13
+:END:
+
+Directly linking M outputs to ASCII characters is going to give you garbage.
+
+Look at the outputs as probability distributions. If you want to build a neural network to recognise pictures of birds, you would have one output, representing the probability that the image described by the inputs is a bird. If you want a neural network to predict which is the best of four pieces to move in a game of ludo, you would have an output for each piece, with each output representing the probability that a given piece is the best choice to move next.
+
+When you think in terms of each output being a guess at a probability, it should be easy to see how a neural network that's only 50% certain is going to end up mapping to garbage ASCII characters. You need to find some way to describe your neural network's output as a series of M probability estimates (instead of M arbitrary real numbers).

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 7
+:DateUnix: 1478389223.0
+:DateShort: 2016-Nov-06
+:END:
+
+You have a box with a switch on top. An indicator light turns red if the switch is in one position, and blue if the switch is in the other position.
+
+On the side of the box are several dials, a button, and an LED screen. The dials allow you to define an exact amount of time - anywhere from one second to one year - and the LED screen displays the /probability that the switch will be in the red position at that point in the future/. This is similar to Dinah's power in Worm, but with a very limited type of question you can ask and an unlimited number of uses available.
+
+The device requires power to operate, and if the power is interrupted between now and the future, /that future will count as 0.5 red futures and 0.5 blue futures/. For example, if there are proportionally one futures where the device is switched to red, two futures where the device is switched to blue, and two futures where the device's power is interrupted, the device will read .4000, because the depowered futures are split between the red and blue futures. /Depowering the device adds noise to the signal and pushes the probabilities it gives closer to .5000./
+
+So what do you do with it?

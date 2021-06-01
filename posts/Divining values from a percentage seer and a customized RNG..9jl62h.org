@@ -3,7 +3,7 @@
 * Divining values from a percentage seer and a customized RNG.
 :PROPERTIES:
 :Author: jakeb89
-:Score: 13
+:Score: 12
 :DateUnix: 1538122866.0
 :DateShort: 2018-Sep-28
 :END:
@@ -173,7 +173,7 @@ The better way to do it would have n buckets and an n-arity partition search. A 
 You'd have to experiment with the error rate, but you could probably get a very large n, and at each iteration you're sure you didn't make a mistake - if you accidentally round to the wrong bucket, when you ask the question it'd say it only has a 0.0000001% chance of being correct because none of the possible outputs contain the phone number unless you get bitflips.
 :PROPERTIES:
 :Author: sickening_sprawl
-:Score: 6
+:Score: 5
 :DateUnix: 1538167685.0
 :DateShort: 2018-Sep-29
 :END:
@@ -213,7 +213,7 @@ The trick is that you must specify ranges, rather than specifying equality. If I
 ** There is a ~0.01% chance of a power outage or distraction, so the /proper/ random number corresponding to the phone is 14.242574%, not 14.234215%.
 :PROPERTIES:
 :Author: ulyssessword
-:Score: 3
+:Score: 4
 :DateUnix: 1538152951.0
 :DateShort: 2018-Sep-28
 :END:

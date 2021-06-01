@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: captainNematode
+:Score: 3
+:DateUnix: 1464728344.0
+:DateShort: 2016-Jun-01
+:END:
+
+Eh, I'd say probability is in the model (or the mind, maybe), not the world. The "true" state of affairs is already determined (well, maybe barring some interpretations of QM, or something). You can pick whatever priors you want (or hyperpriors, or hyperhyperpriors, etc.) and go with them for either your model or your mind, including assigning all the probability density to the value "2" when evaluating 1+1. Otherwise, though, you just arbitrarily designate priors (well, you can use the posteriors from earlier analyses, but eventually the turtles have to stop stacking) -- they're not out there in the world for you to discover (hence why they're priors). As for /knowing/, the epistemologists have been arguing that one for ages (and I think you can get more fundamental than 1+1; think stuff like the laws of thought, /A/ = /A/, ¬(A∧¬A), etc.).
+
+If standard deviations permit disagreement, can I fall back to the classic playground "if there are no absolute truths, what about this statement"? As in, you can assign probabilities to probabilities, and if you say a /p/ of 0 is impossible, you've effectively assigned a probability of 0 to 0. Consider, for example, trying to determine the fairness of a coin. You'd use a binomial (or Bernoulli) likelihood, and in a Bayesian framework have to assign a prior to its parameter, /p/. Typically you'd define this on an interval between 0 and 1 using whatever distribution you fancy (uniform, beta, etc.). Values outside this interval would then receive zero probability density. You could use a prior distribution that's defined on all the reals if you wanted (and depending on what it is, it might work out ok in practice; a normal centered on .5 with low sd), but that'd be silly.

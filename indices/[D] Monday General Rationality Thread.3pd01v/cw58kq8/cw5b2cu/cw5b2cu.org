@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 7
+:DateUnix: 1445273266.0
+:DateShort: 2015-Oct-19
+:END:
+
+Sounds like you're looking for the [[https://en.wikipedia.org/wiki/Nash_equilibrium][Nash Equilibrium]] of the game. In your example - where you get 2 points for winning as rock, and the game is still zero-sum - the Nash equilibrium is where both players use a random strategy which plays 25% rock, 50% paper, 25% scissors.
+
+The Nash Equilibrium gives the strategy where neither player has any incentive to change, /as long as the other player doesn't change either/. There is usually some element of randomness, but not always. There may be more than one Equilibrium, such as in the [[https://en.wikipedia.org/wiki/Stag_hunt][Stag Hunt]].
+
+Oh, and in the [[https://en.wikipedia.org/wiki/Prisoner's_dilemma][Prisoner's Dilemma]], the Nash Equilibrium is defect-defect, even though cooperate-cooperate is better for both players. This is one way in which classic game theory fails to model the real world. But that sort of problem doesn't happen in zero-sum games (where the players are strictly opponents, with no incentive to cooperate with one another).

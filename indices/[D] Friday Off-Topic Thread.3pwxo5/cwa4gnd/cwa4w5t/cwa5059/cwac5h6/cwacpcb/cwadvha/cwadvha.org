@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: trishume
+:Score: 1
+:DateUnix: 1445628182.0
+:DateShort: 2015-Oct-23
+:END:
+
+#+begin_quote
+  Or, to put it another way, right now a filesystem is a tree data structure where all of the leaf nodes are binary blobs. Why binary blobs instead of a more nuanced data structure?
+#+end_quote
+
+What do those binary blobs contain? Nuanced data structures. All data structures on computers are binary blobs plus some schema/type. All your files are already data structures.
+
+I also challenge your accusations against indices. Indices provide a valuable service necessary for most sizeable data sets. You mention "search at the speed of grep" but indices are much faster than grep, especially on larger data sets. If you have a whole bunch of users/posts/whatever's you need a way to avoid a linear search.
+
+You might have a great idea here but I don't think your explanations capture it.

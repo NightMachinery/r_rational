@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: Grand_Strategy
+:Score: 2
+:DateUnix: 1502899093.0
+:DateShort: 2017-Aug-16
+:END:
+
+Earth acceleration is 9.8 you could round it up to 10 for slightly easier calculation. If object is so heavy that you can't lift it with acceleration faster than 10m/s2 then you can't lift it.
+
+So easiest way to do it is do your a = F/m and for objects with a <10 you can't lift them at all.
+
+This could simplify a lot of things. If you have one character with know F you can just created quick excel document and you can just add a mass of any object character tries to move and see if it is more or less than 10.
+
+Things will change in situation like under water or moving object horizontally rather than up and down. But should give you some basics from which you can start.

@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: el-seed
+:Score: 3
+:DateUnix: 1427406226.0
+:DateShort: 2015-Mar-27
+:END:
+
+You're the creator of RationalReads? Cool, nice work!
+
+So, for this to work, I think it's important to notify people of new updates without much delay. That rules out crowdsourcing, no matter how we encourage people. The next option would be to pay mechanical turk to do it.
+
+But I'm more programmer than anything else, so I'm leaning towards scraping the books' websites or RSS feeds. Most books I've found are either blogs, plain websites, or a publishing platform of some kind. I should be able to write one scraper /per type/, and re-use it for multiple books. For example, the same one can handle all 3 of wildbow's books. I can write another for anything on fanfiction.
+
+I'll probably have these run every 5 minutes, and maybe make myself a little list of things that changed so I can check for errors once in a while.
+
+Not to worry any potential authors: I'm not planning on scraping the sites /content/, just scanning for new entries and linking to them.

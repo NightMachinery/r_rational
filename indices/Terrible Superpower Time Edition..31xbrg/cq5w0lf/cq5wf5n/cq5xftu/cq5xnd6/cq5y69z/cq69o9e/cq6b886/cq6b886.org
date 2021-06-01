@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: blazinghand
+:Score: 1
+:DateUnix: 1428562574.0
+:DateShort: 2015-Apr-09
+:END:
+
+Easier said than done, since designing and building chips probably involves a ton of testing and waiting for chemical reactions to happen or something.
+
+More importantly the max rate of 1,000 Hz is based off of the max polling rate of the USB standard. You'd need to find a standard port that polls faster. Thunderbolt might, or maybe you could find a mouse that somehow plugs directly into a PCIe slot or comes with its own custom expansion card that does the same.
+
+Older motherboards used to have Serial or Parallel ports on their backpanels, which might have a faster polling rate.

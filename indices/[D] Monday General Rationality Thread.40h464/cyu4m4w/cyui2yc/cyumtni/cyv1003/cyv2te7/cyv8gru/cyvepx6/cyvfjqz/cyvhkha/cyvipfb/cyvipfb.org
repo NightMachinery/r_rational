@@ -1,0 +1,51 @@
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1452620277.0
+:DateShort: 2016-Jan-12
+:END:
+
+#+begin_quote
+  nostalgebraist does have a point with using diachronous Bayes without having a well-defined distribution...
+#+end_quote
+
+Yeah, that tends to be what worries me. Like, I'm mostly on-board with using Bayes methods, including diachronic ones most of the time, as long as we've actually got a well-defined distribution we can compute with (numerically or via sampling), and are pulling the prior from somewhere sensible (empirical frequencies, complexity priors, whatever). But that doesn't seem to be how a lot of "Bayesians" - in nostalgebraist's sense of talking about people who treat probability as this colloquial, model-free thing - think about it.
+
+For instance, Jaynes explicitly said that all you /really/ need is a set of disjoint propositions that add to unity, and you've got a viable discrete distribution to which you /should/, normatively, apply Bayesian reasoning. Oh, and he advocated uniform priors for sets of propositions like those, as well as complexity priors and maximum-entropy methods for real numerical inference problems.
+
+But if you asked me, "Hey, what's your subjective probability that $CANDIDATE will win the upcoming election, as opposed to $CANDIDATE losing", I'd have only two propositions, but I still couldn't give you a distribution that describes my actual beliefs, or even a well-behaved number. I just don't have conscious access to the mental causal models outputting my expectations on the matter, and can't draw enough samples from them to use sampling-based posterior estimation either.
+
+From /that/ perspective, "Bayesianism" (in Jaynes' sense) seems like a normative theory of walking for six-legged creatures being applied to two-legged ones.
+
+#+begin_quote
+  With the statistics of recent studies I've read, mostly about transgender brain anatomy, compared to (p < 0.01) and (p < 0.05), what's the recommended Bayes-ist alternative?
+#+end_quote
+
+It depends what sort of parameters you're trying to infer?
+
+#+begin_quote
+  The likelihood ratios of the update, or some such?
+#+end_quote
+
+IIRC, that's called the "Bayes factor" and it is pretty common to use, yeah.
+
+#+begin_quote
+  Isn't p a likelihood bound (of the inverse)?
+#+end_quote
+
+Yeah, a p-value is supposed to numerically measure the likelihood of the null hypothesis.
+
+#+begin_quote
+  What on earth prior distribution would you even be using for that? Would you have a direct distribution of trans etiology theories? Or are you just pulling a number out of your ass for the odds of "gender indicator":"gonad indicator":"no indicator"? Stuff like this, you could just assign yourself a 10-200:10-10:remainder prior and be bigoted until the cows come home? I just don't know. It seems like an explication of consensus in probability distributions would be best, assuming you can even compute the complexity priors.
+#+end_quote
+
+From what I've read (which has only managed to be a little), you would /probably/ try to use an easy-to-shape "typical prior" like a beta distribution (it's probably something else for the discrete case), and "shape" it (tune the prior's hyperparameters by hand) to represent approximately what you think the research consensus in your field is.
+
+The nice thing about discrete distributions is that you /can/ just book computer time for a weekend to calculate the sums behind each diachronic Bayes-update and get a numerical posterior.
+
+But if we're talking about something like "odds of gender indicator to gonad indicator" or something, that sounds kinda like a Bernoulli/binomial sort of thing. I guess?
+
+#+begin_quote
+  It seems like an explication of consensus in probability distributions would be best, assuming you can even compute the complexity priors.
+#+end_quote
+
+Luckily, /lots/ of priors in Bayesian statistics are complexity priors, rather than /just/ the Solomonoff Measure being /the/ complexity prior. As was said on Three-Toed Sloth, even a frequentist will admit that prior distributions are a good and popular way to regularize complex models.

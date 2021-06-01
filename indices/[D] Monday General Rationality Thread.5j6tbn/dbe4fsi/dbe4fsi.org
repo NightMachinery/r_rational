@@ -1,0 +1,36 @@
+:PROPERTIES:
+:Author: Dwood15
+:Score: 12
+:DateUnix: 1482176424.0
+:DateShort: 2016-Dec-19
+:END:
+
+Weekly Monday Update
+
+In an effort to have no more zero weeks (see: zero days), I am now making a post in the Monday general rationality threads to catalog goings-on in my life and efforts. From what I've discussed with those on the Discord channel, the post will be great. To that end, if you enjoy these posts or I don't make one one week, please pester me. It means I'm depressed or I don't feel like anyone enjoys my posts, and seeing that someone cares will make a big difference should I not post.
+
+If anything I mention here seems interesting to discuss, let me know, and I can go into more detail.
+
+--------------
+
+Approximately a year ago, I had the opportunity to take a programming class which encouraged a semester-long project and at the end we had to demonstrate the project to someone in the industry. I wanted to do image processing, and so, using a Raspberry Pi, a NoIR camera, and the OpenCV library, was able to track a bright red object across my room with inch-degree accuracy at about 12 fps because I wanted higher resolution more than framerate. I figured out networking and got the pi to network with Unreal Engine on my PC, mapping a 3D-in-game object to the Raspberry Pi's camera space. I took, made a demo video, and sent it to Oculus' developer outreach. Apparently they enjoyed what I had and now I have a free pair of Oculus Touch Controllers and an Oculus Rift. Received a B on the project though, lol.
+
+At any rate, I am about 20% of the way through actually making the game, and hit a major snag dealing with some of Unreal Engine's subsystems, so the project was put on hold while I recuperated from major losses this last semester. If someone has ideas for a filter which removes all visible light but allows IR light through, I would love to know. Couldn't find anything that would attach to the camera for less than 15 bucks.
+
+--------------
+
+*Pokemon*
+
+*Renegade Engine*
+
+I talked last week about making !Pokemon separate from the game engine. As of today it is official. No class or method from here on out will directly reference Pokemon except for data generation, and most references to Nintendo's IP will be removed from the actual engine code. This will allow us to distance the engine from Pokemon, and will promote good design in that the game can be differentiated from the Engine. Here on out the Engine will be referred to as the *Renegade* engine. It also allows us to have fun with the naming schemes of various people's mods or games made with the engine, "Renegade Monster Hunter" "Monster Rancher: Renegades", so on and so forth for people's fan games or custom fantasy games. The discussion on the actual name of the game is still heated. I have preemptively registered "[[/r/PokemonRenegades]]", however. :P
+
+Anything Pokemon related will be separate from the engine, giving us the ability to make a more generic monster battling system. This will be the true test of our ability- allowing someone to make a Pokemon-style game or do a Final Fantasy Tactics style game without having to touch much, if any, engine code. All throughout, I will be keeping that in mind.
+
+*Persistence* One thing that we want to do is to be able to "fake" a crowd, but at the same time we want to be able to give each person a home location, as well as anything else. This is where our priority system comes in. A player for example, may be in a town, and try to converse with some non-important individual from a crowd. Prior to this moment, the game hadn't given that ai a name, or relationships or anything. The ai will instantly give that character a name, an address, and random opinions/bits of knowledge right then and there. That specific character will now has a name, address, and some generated factoids assigned from the hive mind. After some arbitrary amount of time not interacting with the player, that ai will be re-entered into the hive mind, potentially be completely forgotten by the player, but the newly-generated name and base information will still exist, just in case.
+
+My guess is that we'll use some kind of database style container system for most AI information unless they enter the high-interaction/high priority queue.
+
+--------------
+
+*Other* After some discussion, I have also come up with a fun story concept regarding a pokemon fanfiction. I don't want to talk too much about it, as it's only going to be a short (5-10 chapter max) story, and easily spoilerable but look forward to hearing about a new pokemon fanfiction from me around January-February.

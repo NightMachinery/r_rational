@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1427993935.0
+:DateShort: 2015-Apr-02
+:END:
+
+There's no reason that your physical pony (or any other object, but lets use a pony for an example) in the optimalverse has to be rotated by iteratively approximating the rotation of the voxel model step by step until its smeared into an semi-liquid blur by repeated smoothing operations, or broken up into a jagged moire by accumulated aliasing. The model of the pony that's projected into the voxel world can be simply recomputed from its parameters each physics step.

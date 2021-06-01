@@ -1,0 +1,7 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1461694182.0
+:DateShort: 2016-Apr-26
+:END:
+
+Well, right now I'm not doing anything with neural nets, so I don't actually have to use a neural-net learning framework. Haskell has type-safety, which makes transforming data between different representations easier. It also provides a slightly nicer way to do generic probabilistic programming without custom inference procedures. It's also faster, and has deterministic PRNG state (reproducibility of results is important for stochastic stuff).

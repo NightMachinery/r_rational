@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 2
+:DateUnix: 1506706746.0
+:DateShort: 2017-Sep-29
+:END:
+
+Fine. Granted. These are /technically/ optimizers. But only if you take the word "optimizer" to mean something so general that literally every deterministic algorithm is an optimizer that optimizes the function "return the output of this algorithm". I claim that these things are not useful to think about as optimizers. In particular, although the first of my examples is technically an optimizer, I don't see how it would produce the problem that you mention where "the oracle can output as an answer the blueprints to a machine which we build, which then goes on to affect the world in ways which maximize its value functions". This algorithm never returns blueprints. It also answers yes/no.
+
+Now even with the proof-searcher you might have worries about misuse, but they are of the suicide by genie variety. You could ask it a bunch of questions whose answers imply the design for a machine that optimizes X and then build that machine and destroy the world. This AI isn't safe, but at least it is not malicious.

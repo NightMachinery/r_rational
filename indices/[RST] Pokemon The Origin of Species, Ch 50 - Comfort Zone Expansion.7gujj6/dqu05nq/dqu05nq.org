@@ -1,0 +1,86 @@
+:PROPERTIES:
+:Author: masasin
+:Score: 4
+:DateUnix: 1512527113.0
+:DateShort: 2017-Dec-06
+:END:
+
+[[/u/DaystarEld]], [[/u/daydev]], [[/u/Iijil]]
+
+I just remembered that we could have used the odds ratios instead of all the complicated math.
+
+- prior odds * relative likelihoods = posterior odds
+- relative likelihoods = posterior odds / prior odds
+
+We know that:
+
+- Posterior odds of R1 are 79:21
+- Prior odds (T1:T2) are 64:36 So the relative likelihoods (R1 | T1:T2) are 79/64:21/36
+
+We can use that directly in the next step, where the prior odds are 2:15.
+
+#+begin_example
+    79 :  21
+  ÷ 64 :  36
+  ×  2 :  15
+  ----------
+    79 : 280
+#+end_example
+
+So P(T1 | R1) = 79/(79+280) = 22.01%.
+
+Doing it for R2:
+
+#+begin_example
+       33 :     67
+  ÷    64 :     36
+  ×     2 :     15
+  ----------------
+    33/32 : 335/12 
+#+end_example
+
+So P(T1 | R2) = (33/32)/(33/32+335/12) = 3.56%.
+
+Would you prefer something like this? Maybe when Leaf is showing Red the right way to do it, since he's already trying to use odds instead of probabilities. It wouldn't take too much longer, and maybe in fact be shorter.
+
+*edit:*
+
+That way, you'd also easily be able to see how the odds change every time you get a certain kind of report.
+
+The relative likelihood of R1 | T1:T2 is 2.116071429:1, and O(R2 | T1:T2) is 1:3.609427609. Call them 2.116:1 and 1:3.609.
+
+Let's say it's Tyranitar again, and we receive six R1 and two R2. The order doesn't matter.
+
+#+begin_example
+  2     : 15
+  2.116 :  1
+  2.116 :  1
+  2.116 :  1
+  2.116 :  1
+  2.116 :  1
+  2.116 :  1
+  1     :  3.609
+  1     :  3.609
+#+end_example
+
+If you want to shorten it, it's 2 * 2.116^{6} : 15 * 3.609^{2} . The posterior odds are 179.525 : 195.373, so P(T1|6 R1 and 2 R2) = 47.89%. (It would have been 76.83% with just one R2, and 92.3% with none.)
+
+*edit 2:* log likelihoods
+
+Because you add likelihoods instead of multiply, and you have a single number, the Rangers would probably use this method in real life. 1 deciban is 0.1 log10 likelihood. 1 dban is also a deciBel (dB).
+
+Log likelihood of T1 is log(2/15) = -0.875 = -0.875 ban = -8.75 dB Log likelihood of R1 is log(2.116) = 3.26 dB (You can also find this by log(79/21) - log(64/36).) Log likelihood of R2 is log(1/3.609) = -5.57 dB
+
+When you get 6 R1 and 2 R2, you add 6 L(R1) and 2 L(R2) to L(T1). You end up with -0.33 dB. (10^{-0.033} / (10^{-0.033} + 1) = 0.48, which we had before.)
+
+#+begin_example
+  dB: evidence strength (Using Kass and Raftery)
+  0 to 5: weak evidence
+  5 to 14: positive evidence
+  14 to 22: strong evidence
+  22+: very strong evidence
+#+end_example
+
+So, -0.33 dB is weak evidence for T2. We'd need 7 reports of R1 with no R2 to have strong evidence, but we can consider it moderate evidence after just 5 R1 0 R2. On the other hand, if we got a single R2, we would already have strong evidence. Another two, and we'd get to very strong evidence.
+
+Bonus: People don't tend to see differences in probability until that difference is about a deciban (e.g., 50 to 55.7%, or 99% to 99.2%).

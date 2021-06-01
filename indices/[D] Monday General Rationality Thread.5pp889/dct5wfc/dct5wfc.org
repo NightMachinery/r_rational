@@ -1,0 +1,36 @@
+:PROPERTIES:
+:Author: Dwood15
+:Score: 4
+:DateUnix: 1485202002.0
+:DateShort: 2017-Jan-23
+:END:
+
+** Weekly Monday Update
+   :PROPERTIES:
+   :CUSTOM_ID: weekly-monday-update
+   :END:
+** /Pokemon Story - Perspectives/
+   :PROPERTIES:
+   :CUSTOM_ID: pokemon-story---perspectives
+   :END:
+For my Pokemon story, I've had some great input from people online on structuring my story. [[/u/InfernoVulpix]], [[/u/DaystarEld]], and [[/u/AlexanderWales]], and a few others whom I don't know their reddit names, have been invaluable to me. Anyway, here's some rambling on the story.
+
+I realized that up to now, I've written the story entirely in 3rd-person limited. It seems easier to write, and it allows me to take a modestly dispassionate voice in the story. My target audience for the writing is going to be the YA when it comes to plotline and diction. Throughout the story, occasionally sections of it will be from the 3rd-person perspective of individuals not my MC, and once in a while, a chapter or section may be First person. The trick will be to handle the perspective changes without being jarring to the readers.
+
+As of this post there are ~6 pages of prose, ~4k words, ~15 pages of worldbuilding, and a LOT in my head I write down as I remember.
+
+** /Machine Learning//AI/
+   :PROPERTIES:
+   :CUSTOM_ID: machine-learningai
+   :END:
+Let's talk MarI/O a bit, and Neural Networks. This is my claim which I am not backing up with any evidence whatsoever: Creation of GAI will be from some advance form of the Artificial Neural Network. What is a Neural Network, and how do they work? This is a high-level overview intended to help you understand one facet of them and how they work. If I miss any key terms, feel free to comment and let me know.
+
+One thing which is really cool, is how Neural Networks are able to be run on GPU's. Have you ever wondered why GPU's are better than Processors at running them? This is because GPU's have two advantages in particular: floating point calculation and Matrix math. GPU's can calculate floating point numbers in matrices very, very fast, and so running and training a NN is much faster on the GPU, because ANN's use Matrices and floating points.
+
+Neurons are either active, or inactive. Firing or not firing. This is influenced by something I call its Activation Level- what internal value (usually a float) must the Neuron be in order to fire. An empty ANN may fill in all neurons with .5's, and set the activation level to .75.
+
+At its base form, a Neuron has two ways of interfacing with the network as a whole: Inputs, and Outputs. Let's say we have 3 neurons, A, B, and C. Connected like so: A->B->C. If A is firing, then it sends that signal to B. Often, there is also a "Bias" which B has on A's connection, which can dampen or amplify the power of A, so if B doesn't care about A's input, it won't fire because of it. If B fires, then it sends it to C, which C then biases B's input similarly.
+
+Any neuron can connect with any other neuron, and sometimes they're even divided into " Discreet Layers" That's what Deep Neural Networks means- they have different types of Layers, given various biases a researcher believes will help with making the Neural Network better for their purposes. Additionally, Recurrent means that a neural Network can also loop back onto itself, so using our A-B-C example, you might get something like: B->B.
+
+Anyway, have fun. This is a semi-continuation (from last week)[[[https://www.reddit.com/r/rational/comments/5ob9ox/d_monday_general_rationality_thread/dcj4eo4/]]]

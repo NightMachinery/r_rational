@@ -1,0 +1,15 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1419619285.0
+:DateShort: 2014-Dec-26
+:END:
+
+I believe that an intended use-case is something like this:
+
+- Gather up a thousand different user profiles.
+- Run them through this program.
+- Find correlations between these models and another data set (say, those users favorite movies - you should have both if you scraped from Facebook).
+- Use those correlations to build a recommendation engine.
+
+For a single user (or a single book), I doubt it's of much use, but assuming that its results have any validity, it would be useful for grouping similar people.

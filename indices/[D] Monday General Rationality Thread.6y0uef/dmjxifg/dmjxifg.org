@@ -1,0 +1,42 @@
+:PROPERTIES:
+:Author: Noumero
+:Score: 15
+:DateUnix: 1504542162.0
+:DateShort: 2017-Sep-04
+:END:
+
+As [[https://www.reddit.com/r/rational/comments/6cnsm4/d_monday_general_rationality_thread/dhwgugo/][the self-appointed Court Statistician of this subreddit]], I took it upon myself to analyse the results of [[https://www.reddit.com/r/rational/comments/6jqdij/meta_can_the_weekly_discussion_threads_be/][this little experiment]]. (tl;dr: default comment sorting for Friday Off-Topic threads was set to "new", to test whether this would encourage more discussion.) Ten weeks have passed since it began.
+
+First, *raw data: ([[https://www.dropbox.com/s/eubepzi972n8qgk/Weekly%20Thread%20Statistics%20%20UPDATED%2004.09.2017.ods?dl=0][.odt]], [[https://www.dropbox.com/s/yyga0cnl0cao8gy/Weekly%20Thread%20Statistics%20%20UPDATED%2004.09.2017.xls?dl=0][.xls]])*. Includes an updated version of the upvotes/comments/top-level comments statistics for all weekly threads.
+
+As you can see in the bottom part of this table, I calculated the average numbers for upvotes, total comments and top-level comments for the ten last Friday threads, which used the new setting (period: 30.06.17 --- 01.09.17), and the same for the ten threads before the switch (21.04.17 --- 23.06.17). I then compared the average numbers for the ten last threads to total averages, and to the averages of the ten before-switch threads.
+
+Results: compared to before-switch, there's a significant (12-14%) increase in the number of comments and top-level comments, and an increase in upvotes (7.6%). Compared to total-average, there's an insignificant increase in top-level comments and upvotes (2-3%), and a significant increase in upvotes (6.7%).
+
+There's noise, of course: was the new setting responsible for some of it, or is it the natural result of the subreddit's growth?
+
+In an attempt to get rid of the noise, I compared ten threads from before-switch (21.04.17 --- 23.06.17) to ten threads prior to /that/ (10.02.17 --- 14.04.17). The numbers were lower: no more than 3.5% variance, which suggested that either 10 threads from before-switch were abnormally low on numbers, or that the new setting was in fact helpful. Were the (21.04.17 - 23.06.17) Friday threads abnormally low on numbers compared to the rest of the subreddit? Why yes, they were: -9.82% in Friday comments compared to +6.73% in total comments.
+
+Does this mean that Friday Off-Topic threads are in a decline, only stopped by the new setting default, or that the before-switch ten are abnormally low?
+
+Comparing the increase in upvotes in newest vs. total between Friday and Across All Threads, we could also see a rough correlation here. Which means that the upvotes increase was, most likely, unrelated to the new default sorting.
+
+*Conclusion:* the usefulness of the new default sorting does not seem to be evident, but large amounts of statistical noise prevent me from forming any more certain conclusions. ^{(We need a better statistician.)}
+
+--------------
+
+That said, let's analyse data for other threads.
+
+- Across every weekly thread, the decrease from totals could be attributed to branching: old threads such as Monday General Rationality previously included discussions that now were moved to Wednesday Worldbuilding, and so on.
+
+- Monday General Rationality: significant decrease in comments compared to totals, no change in upvotes. Compared to 10 old threads, slight decrease in comments and upvotes, significant increase in top-level comments.
+
+- Wednesday Worldbuilding: very significant decrease in comments and top-level comments, both compared to totals (21%, 30%) and 10 old threads (25%, 15%). It does not correlate with Across All numbers for the relevant time periods.
+
+- Sunday Munchkinery: significant decrease in top-level comments (~16%), both compared to total averages and ten old threads. Slight decrease in comments (3-7%), not correlated with Across All numbers.
+
+- Across All: mostly positive numbers, with 12.64% increase in upvotes compared to total averages in 70 last threads, 6.71% increase in comments and 3.08% in top-level comments.
+
+Well, what we worked out? Wednesday Worldbuilding appears to be in a decline, and I don't think it could be attributed to branching.
+
+*Edit:* Additionally, [[https://docs.google.com/spreadsheets/d/1Z5LlgZ2y1Yr_u-f8iCK4RMZQBSGaA3uwMJxdQgfs3io/edit?usp=sharing][here]] is an interesting "BigData" statistics gathered using Google's BigQuery service and [[https://www.reddit.com/r/bigquery/comments/3cej2b/17_billion_reddit_comments_loaded_on_bigquery/ct3za0t/][this]] query. Includes information for all posters on [[/r/rational][r/rational]], ranked by the total number of posts left by them on the subreddit.

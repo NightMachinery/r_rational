@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: derefr
+:Score: 2
+:DateUnix: 1424246464.0
+:DateShort: 2015-Feb-18
+:END:
+
+One reason: even if you believe you have a secure password-hashing algorithm (or magic mirror), you still want to rate-limit people's login attempts, because having a bunch of side-channel (timing, etc.) data about attempts available is how you figure out a workable attack on the "spell" used in the first place.
+
+Another reason: if Dumbledore put the thing in the Great Hall (or even in his office) somebody would probably eventually just knock it over and break it. Seven preparatory challenges seems about right to instil a certain level of /respect/ about the mirror---they might try to get the artifact from it, or steal it, or break it on purpose, but they wouldn't ignore it as a random piece of shiny glass.

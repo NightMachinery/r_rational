@@ -1,0 +1,23 @@
+:PROPERTIES:
+:Author: PlaneOfInfiniteCats
+:Score: 3
+:DateUnix: 1472374740.0
+:DateShort: 2016-Aug-28
+:END:
+
+We need to know an /exact/ breaking threshold at the end of an experiment.
+
+Therefore, if we only have 1 container, our only choice would be trying to throw the container from every window starting from first floor, incrementally.
+
+However, we have two containers.
+
+I have already shown that no optimization is possible for 1-container case. With two containers, once our first container breaks, we will be stuck with 1-container case. So, all optimization must be in use of first container.
+
+There is some floor number N that lies between upper bound (200) and lower bound (1) If we throw our container from i-th floor, either it doesn't break and we know N>=i (and can try throwing again), or it breaks and we know N<i (and have to resort to iterative testing with remaining one container)
+
+Now, we need some more clarifications.
+
+- Do we think that breaking threshold is equally probable on every floor?
+- Is time cost of floors proportional to floor number? (does throwing container from 30th floor take 3 times longer than throwing it from 10th floor?)
+
+We should try maximizing average reduction of range where N lies with first container, then do iterative tasting of entire range with second container. The specific algorithm for first container depends on the answers to questions above.

@@ -1,0 +1,34 @@
+:PROPERTIES:
+:Author: rhaps0dy4
+:Score: 1
+:DateUnix: 1473836825.0
+:DateShort: 2016-Sep-14
+:END:
+
+Utilititarianism has its problems, but: What would you use as a moral-decision-making tool, if not utilitarianism?
+
+I'll explain: we want a tool that, given any set of outcomes and the current situation, it can choose the morally best outcome from the set. Such tool should also be transitive and complete, to avoid inconsistencies or situations when deciding is impossible. If we take all current situations and all outcomes and run it through the function, recording which outcomes are not-worse than which outcomes, we'll be able to order the set of all outcomes. Which is the same as mapping outcomes to integers, if they can be enumerated, or reals, if they cannot.
+
+(I am regretfully not a mathematician, this might be wrong. Educate me if that's the case :)
+
+Thus, you need utilitarism. How you compute this function mapping real world outcomes (or, as I proposed, current-state--outcome pairs) to reals/integers is a really important question and one that is wide open. And as [[/u/zarraha]] said, this gaping hole in knowledge makes people question the validity of utility or its realism. Which is very reasonable but, if not utility, what can we use?
+
+I'll engage with your concerns now.
+
+#+begin_quote
+  doesn't actually recommend any particular action in any particular situation
+#+end_quote
+
+It does! Just take the action that will maximise your utility, in as long a run as your discount factor demands. Calculating these things explicitly is pretty infeasible currently, but human brain "rewards" are exactly utility as evolved to guide you. Although your culturally, personally, learned utility function may not completely line up with the function you have instinctively.
+
+#+begin_quote
+  Instead, I put forward that utilitarianism is best used as something akin to a negotiation and political analysis tool. You can't convince someone else to act just because "it's the right thing to do" unless you and they hold the same idea of what "the right thing to do" is. Instead, you appeal to their own self-interest.
+#+end_quote
+
+Utilitarianism doesn't magically solve the problem of conflicting values (aka conflicting utility functions) though. That's solved by the skill of the negotiators in finding common ground.
+
+#+begin_quote
+  So then, when it comes to politics, or similarly large-scale endeavors where any single person is unlikely to affect the path of a nation-state or company or whatever, utilitarianism is the best policy to push, because it makes the group happier on average. Therefore, convincing a group of people to appoint someone who'll act in a utilitarian fashion works because they are, probabilistically speaking, likely to benefit.
+#+end_quote
+
+Yet utilitarianism as a policy is useless alone. It needs to be coupled with an utility function or, more feasibly, with a set of values the policy cares about. In that case, the groups benefit from government by someone who has their same values. So different subgroups have all the incentives to fight to put a different agent in power, sparking competition à là Moloch.

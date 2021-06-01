@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1429911775.0
+:DateShort: 2015-Apr-25
+:END:
+
+Maybe this will help.
+
+When a program is fed itself as input, the input-version of the program doesn't need its own input at the same time. All programs are data and all programs take data as input. Therefore all programs can take itself as input (even if most programs would reject it because it's not a valid string to run). So when HALT(OPP,OPP) is run, it doesn't matter if the second OPP doesn't have any input. HALT simply asks if OPP can take a description of itself and halt or loop forever on that description. Hofstadter explains that it works due to Godelian numbering which does similar things with number theory.

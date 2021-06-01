@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1399038524.0
+:DateShort: 2014-May-02
+:END:
+
+It's a CSS thing. I'm not sure that you can have both special flair and custom flair - [[/r/worldbuilding]] only has special flair. In my mind, there would be a little 16x16 pixel image next to the user's name, which would be followed by whichever text flair they wanted. That you can do by having a special CSS class for the flair. Give me a bit and I can experiment with implementing a mix on one of my test subreddits to see what works best - it might be that the only real way to do it is to grant a flair that the user can later override with plain text, assuming you can't "double flair".
+
+Edit: There's a tutorial [[http://www.reddit.com/r/csshelp/comments/m59kf/user_flair_tutorial_7_easy_steps_to_enable/][here]]. Basically, you'd let the users pick their own text but you'd hand-assign special flair via CSS. I will have to test to see whether this works as expected, but that's my solution right now.

@@ -1,0 +1,27 @@
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 6
+:DateUnix: 1498971821.0
+:DateShort: 2017-Jul-02
+:END:
+
+#+begin_quote
+  Each of these answers only means its literal meaning, so no "answer 'yes' for 1, 'don't count on it for 2', etc.".
+#+end_quote
+
+Hmmmmmm... I'm pretty sure you can ask convoluted questions to make the 8-ball have at least 10 different meaningful answers even if they all mean their literal meanings. All you need to do is to include self-reference.
+
+This is because a standard 8-ball has 10 distinct ways of saying yes. So call them "Yes1", "Yes2", "Yes3," ..., "Yes10". Let Q be an important question that has 10 possible answers labeled 1, 2, 3, ..., 10.
+
+Now ask: Magic 8-Ball! Tell me if the following boolean expression is true!
+
+- (Q = 1 AND 8-Ball answers "Yes 1") OR
+- (Q = 2 AND 8-Ball answers "Yes 2") OR
+- (Q = 3 AND 8-Ball answers "Yes 3") OR
+- ...
+- (Q = 10 AND 8-Ball answers "Yes 10") OR
+- OR 8-Ball answers "No".
+
+Now if Q = X, for some X in [1..10], the 8-Ball has to answer "Yes X". Why? Because if the 8-Ball answers "No", then the boolean expression would be true, meaning the 8-ball isn't honest. If the 8-Ball answers "Yes Y" for some Y not equal to X, then the boolean expression would be false, meaning the 8-ball isn't honest. So the only way for the 8-Ball to be honest is to answer "Yes X".
+
+Hehehe.

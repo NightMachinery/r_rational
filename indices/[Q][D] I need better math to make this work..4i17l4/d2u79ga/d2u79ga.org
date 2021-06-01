@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 2
+:DateUnix: 1462476853.0
+:DateShort: 2016-May-06
+:END:
+
+The chance of getting 12 sixes from 12 dice is =(1/6)^12 = 1/(6^12) ~= 4.6e-10=, i.e. 0.000000046%.
+
+The chance of doing so 10 times in a row is =(1/6^12)^10 = 1/(6^120) ~= 4.2e-94=, which is an absolutely minuscule number.
+
+The odds of achieving this from 1 quadrillion independent sequences of 10 rolls of 12 dice (because the maths is easier for independent trials) is =1 - (1 - 1/(6^120))^1e15 ~= 4.2e-79=, which is also incredibly unlikely.
+
+For reference, if every atom on the planet (~1.33e50) attempted that once a millisecond since the universe began (~4.3e20) there would still only be a ~0.0000024% chance that it would ever have occured.
+
+The big problem is that you're effectively looking for a sequence of 120 rolls with 1/6 probability each, and there are:
+
+#+begin_example
+  2388636399360109977557402041718133080829429159844757507642063199359529632522467783435119230976
+#+end_example
+
+possible outcomes, of which only one is correct.
+
+To make the numbers work out, you'd need a total of around 18 dice rolls required for success (e.g. 2 rolls of 9 dice, 6 rolls of 3 dice, 1 roll of 18 dice) from 1 quadrillion trials. That gives a 99.995% chance of observing at least one success.

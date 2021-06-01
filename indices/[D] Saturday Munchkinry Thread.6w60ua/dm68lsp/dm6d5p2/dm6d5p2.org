@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: GemOfEvan
+:Score: 13
+:DateUnix: 1503799769.0
+:DateShort: 2017-Aug-27
+:END:
+
+Create a language based on some NP problem. Translate that language back to English and get your answer in linear time.
+
+For example, let's create a language that will allow us to find the prime factorization of a number in linear time.
+
+Our language is pretty much like English except for one particular rule. If we want to say a list of prime numbers, like "two, two, three, five", we instead say "foobar" followed by their product. For example, "two, two, three, five" in our language is "foobar sixty".
+
+Since this language is pretty much just English with an extra rule, we can teach it to most educated English speakers. This extra rule makes it more complicated to speak the language, but theoretically, anyone with an understanding of the rule and some time can understand our "foobar" phrases.
+
+Now, we want to find the prime factorization of 16,407,349.
+
+First, we say "foobar sixteen million four hundred and seven thousand three hundred and forty-nine" and then translate it and find out it's actually "seven, twenty-three, one hundred and one, one thousand and nine" in English.
+
+So, we have just found out that the prime factorization of 16,407,349 is 7 * 23 * 101 * 1009.
+
+We can similarly do this for other problems where it is theoretically possible for a human to translate in an arbitrary amount of time.

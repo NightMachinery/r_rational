@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1466227995.0
+:DateShort: 2016-Jun-18
+:END:
+
+Thanks for doing this math! I'm going to use those plots when I redraw the map with proper contours. On the other hand, drat, someone actually did the math.
+
+#+begin_quote
+  Sander's calculations about gliminance are a bit confusing, and it's not clear whether "safe" is gliminance 1 or what the gliminance is 1 mile away from an outer lantern, in the direction opposite the central lantern (gliminance 1.18).
+#+end_quote
+
+Sander admits that his math was wrong. His chain of logic had been:
+
+1. The far border is 1 mile.
+2. Gliminance at the border is let's-call-it 1.
+3. Lanterns therefore project gliminance 1 to 1 mile.
+
+But he realizes that this isn't right, because if each lantern projected field strength 1 at 1 mile, then the 1 mile border would have a field strength of higher than 1. Field strength for an /individual/ lantern must be less than 1 at 1 mile, if 1 mile defines the current border.
+
+He gets interrupted by Philip before he can start doing a recalculation, partly because I'm not sure how you'd go about doing that calculation without access to /at least/ a pencil and paper.
+
+If you'd like to help me out with some math, you could work backwards and figure out what an individual lantern projects to, if a hexagon of lanterns two miles apart projects to one mile at the far end. (Ideally, this gives a somewhat inefficient solution that still saturates liveable area, as otherwise I will probably have to do some revision to my stated numbers.)

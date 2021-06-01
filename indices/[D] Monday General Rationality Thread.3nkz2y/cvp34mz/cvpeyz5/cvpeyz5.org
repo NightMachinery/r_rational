@@ -1,0 +1,44 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 3
+:DateUnix: 1444083061.0
+:DateShort: 2015-Oct-06
+:END:
+
+#+begin_quote
+  You can't simultaneously edit files.
+#+end_quote
+
+Depends on your definition of "simultaneously". I can have multiple files open in my browser and freely switch between them to make edits. If I'm making identical edits to a number of files (eg, adding some text at the bottom), then my editor can easily loop over all the files, applying my edits to them. From my perspective it's simultaneous. What exactly is your use case here?
+
+(EDIT: it just dawned on me that you probably simultaneous as in multiple people on one file, not multiple files by one person. If so, merge methods exist -- google docs proves that this is doable.)
+
+#+begin_quote
+  Sure, back when programs were pipe-able it worked great.
+#+end_quote
+
+You've got some typical-man bias going on here. The vast majority of what I do as a web programmer and author is pipeable, as is the work of most email handling, archive handling, web spidering, and a lot of other stuff.
+
+#+begin_quote
+  I propose a solution where, essentially, a state synchronized data tree replaces the file system. You subscribe to objects, and are alerted whenever they change.
+#+end_quote
+
+By "state synchronized", you're talking about what the Unity game engine does, right? The way it stores the entire state of the world in deltas?
+
+#+begin_quote
+  You subscribe to objects, and are alerted whenever they change.
+#+end_quote
+
+I'd caution against making the file system object based. Objects are a decent programming abstraction, but they aren't well aligned with the needs of data storage. Objects are about expressing functionality with self-contained state -- code enforcing access to a chunk of data. Programs are about actions expressed in code, so this makes sense. File systems, on the other hand, are about data first and function second. The reason Unix was so successful is that it designed a very minimal set of operations that could be performed on the data -- basically just CRUD -- and left the sophisticated actions (the code) to programs.
+
+I think [[/r/trishume]] is on a good track here -- define some minimal CRUD operations for accessing data, and then have the rest defined as separate function . Things I would like to see in that:
+
+- All data handling is managed by function blocks
+- There are basic blocks defined by the system (Ring 0)
+- Users can install new function blocks
+- Function blocks (including the Ring 0 set) are ACL'd to manage security
+- Data is transactionally managed on the Ring 0 level
+
+If you want observer/responder mechanics, just set up the "subscribe" block and point it at the piece of data you want. If you want your system to be state-synchronized, chain a "snapshot" block to the Ring 0 functions. If you want full drive encryption, chain (de|en)crypt blocks to your Ring 0 functions. And so on.
+
+The beauty of this is that you can have an encrypted drive segment for privacy, I can have a non-encrypted segment for speed, and neither of us has to think about it -- we both see the same system interface, yours just works differently because at one point you told it to.

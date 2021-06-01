@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: blazinghand
+:Score: 2
+:DateUnix: 1442276482.0
+:DateShort: 2015-Sep-15
+:END:
+
+Windows 10 has a built-in file backup utility that I use. Although it's proprietary, it's not more proprietary than Windows 10 is.
+
+I'm also aware of an open-source backup utility called Attic runs using Python, but I'm not sure it would actually work on Windows. ([[https://github.com/jborg/attic][Github Link]]). I'm assuming it makes system calls that are linux-specific, but maybe you could fork it and change those calls, or add a fix?
+
+EDIT: ah, yeah it's definitely linux-only. okay, so it looks like it [[https://github.com/jborg/attic/blob/master/attic/platform.py][checks your platform]] and then [[https://github.com/jborg/attic/blob/master/attic/platform_linux.pyx][does platform-specific stuff]] so if you can just rewrite a few of the files to be windows-compatible you're good to go. Probably shouldn't take too much time, but I bet there's a better solution.

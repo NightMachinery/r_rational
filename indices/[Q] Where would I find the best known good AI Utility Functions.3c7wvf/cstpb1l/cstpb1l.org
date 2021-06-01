@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: justanotherlaw
+:Score: 2
+:DateUnix: 1436181607.0
+:DateShort: 2015-Jul-06
+:END:
+
+Like most people on the thread have said, there are no known "good" utility functions, and it seems extremely unlikely that we can hand code a "good" utility function without messing it up. It's at least as hard to code a utility function as it is to manually code into a computer the distinguishing feature of pictures that contain cats, that is to say, it is basically impossible.
+
+Most serious proposals seem to involve the AI learning a utility function from humans; the canonical one is Yudkowsky's Coherent Extrapolated Volition. Drawing on the cat example, we can get systems to recognize cat images through learning algorithms. The main problems in FAI research right now seem to be A) how to make an AI that actually coherently executes the goals it has, even if through self-modification, B) how to make an AI that's able to learn human values even through all the incoherent choices we make, and C) how to make an AI that is willing to cooperate with its human operators when they try to change its utility function (for example, to fix a mistake).

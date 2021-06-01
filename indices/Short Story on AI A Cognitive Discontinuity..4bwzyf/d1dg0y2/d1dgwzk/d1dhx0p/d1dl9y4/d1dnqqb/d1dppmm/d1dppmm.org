@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1458955093.0
+:DateShort: 2016-Mar-26
+:END:
+
+Eh, it works empirically. The final arbiter is reality and all that.
+
+Why do you suspect a multi-information approach will work better then a NN approach?
+
+Intuitively (and keeping in mind that I don't really do the maths), I'd expect RNN's to work better. An RNN is a turing machine, and a turing machine could match your mystery function perfectly. Or rather, somewhere out there in RNN space is an RNN that does fit your function perfectly.
+
+Where as most statistical techniques I've seen seem like they're a lot more likely to produce a low kolmogorov complexity function. Somewhere out there is a function that approximates your real function perfectly, but statistical techniques are weighted to return functions with a low kolmogorov complexity.
+
+RNNs don't constrain the search space like that, although backpropogation or gradient descent might for all I know.
+
+A multi-information approach may be able to better deal with the dependence of that data then more traditional statistics, but it would still be starting from a linear equation and adding data, starting with a low kolmogorov complexity and adding more modifiers.
+
+Also I don't really get how it's different from non-naive bayesian inference. Both seem very computationally expensive.

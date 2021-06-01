@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: rspeer
+:Score: 1
+:DateUnix: 1426879706.0
+:DateShort: 2015-Mar-20
+:END:
+
+#+begin_quote
+  About the chapter in general: - the pq-system is only isomorphic to addition with natural numbers not including 0, right? There is no way to map 1 + 0 = 1 from numbers with addition to the pq-system as -pq- because this is not a theorem of the system. Maybe it's just nitpicking or due to the fact that positive numbers does not (always) include 0?
+#+end_quote
+
+Positive integers shouldn't ever include 0. Non-negative integers do include 0. The mathematically debated term is "natural numbers", which can refer to positive integers or non-negative integers depending on what field you're in, where you learned the term, and personal whim.
+
+You're right that =-pq-= is not a theorem. However, I'd argue that, due to a loophole in Hofstadter's wording, =p-q-= /is/ a theorem, and in fact an axiom. Hofstadter clearly didn't mean it that way -- he later refers to =-p-q--= as the simplest axiom, and he intends for the system to be commutative (if 0 + 1 = 1, then 1 + 0 = 1). But can you see why I think this loophole exists?

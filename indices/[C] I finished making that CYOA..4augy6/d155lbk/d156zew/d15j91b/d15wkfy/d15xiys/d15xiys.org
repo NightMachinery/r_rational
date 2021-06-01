@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 3
+:DateUnix: 1458414812.0
+:DateShort: 2016-Mar-19
+:END:
+
+Oh, I know what the problem is, I think. Pretty stupid of me, honestly.
+
+The way I defined the initial point value was to reference the =#counter= div rather than hardcoding it, but the script loads before the counter is defined.
+
+You should be able to fix it by changing the line:
+
+#+begin_example
+  points = parseInt(document.getElementById("counter").innerHTML);
+#+end_example
+
+to:
+
+#+begin_example
+  points = 100;
+#+end_example
+
+Or whatever you want the value to start at. I updated the pastebin with it.

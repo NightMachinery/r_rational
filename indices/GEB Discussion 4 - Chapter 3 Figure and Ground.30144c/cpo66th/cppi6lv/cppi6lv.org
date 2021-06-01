@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 2
+:DateUnix: 1427230828.0
+:DateShort: 2015-Mar-25
+:END:
+
+#+begin_quote
+  ...we can just create a record that it will fail to recognize and therefore play it and consequently break.
+#+end_quote
+
+While it is possible, (and at first I was also convinced it was provable,) I now believe it cannot be proven, from what we were given, that there exists such a record. Here's what's wrong with the steps that brought us to that idea:
+
+- First, we learned that reading a record could break the player, which in real life is quite absurd, but we accept it as part of the analogy. Note that there probably isn't a record that can break any player, as that would be doubly absurd.
+
+- Second, we can safely assume that no matter what (normal) player was manufactured, Tortoise could look up its specs and create a record that would break it. But we cannot assume that this indicates that the set of all records is infinite. It may just be that the set of all players is finite! A trivial example of such a relationship is that of rock-paper-scissors. If the player spec says rock, you look it up and say paper. Then the more expensive player says scissors, so you look it up and say rock.
+
+If the two sets are both finite, and there is no record that breaks every player, it follows that it is possible to analyze them completely to know how to change your player to be one that isn't broken by the record put upon it. :)
+
+As for Gödel's Incompleteness Theorem, the proof relies on being able to represent your theorems within the system, and we probably can't represent a record in the data of a record: sounds aren't great at describing physical objects. I'm guessing that's why the author (through Tortoise) didn't go any further with the discussion.

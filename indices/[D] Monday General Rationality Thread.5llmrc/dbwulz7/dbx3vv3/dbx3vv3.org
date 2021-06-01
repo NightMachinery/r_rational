@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: MereInterest
+:Score: 13
+:DateUnix: 1483395554.0
+:DateShort: 2017-Jan-03
+:END:
+
+I think that this can be explained mostly by people having very poor Bayesian priors. My mental model of humans is that they use Bayesian reasoning, with roundoff errors. In general, this works fairly well. It fails when somebody has a prior probability that is very close to either 0 or 1.
+
+When the belief is close to 0 or 1, evidence can be observed, yet be insufficient to change the Bayesian prior, due to the roundoff errors. For example, consider a belief A, with a prior of 10%, stored in 10% increments. An event B occurs, which is weak evidence for belief, bringing the posterior probability up to 15%. However, since the probability is stored in units of 10%, this rounds back to 10%, having no change.
+
+In general, the lower the prior probability, the stronger the evidence must be in order to cause any change at all to occur. In order to have a change of =post - prior > epsilon/2=, where =prior= and =post= are the prior and posterior probabilities, and =epsilon= is the size of the unit being used, then the strength of the evidence in order to cause any change in belief is as follows.
+
+#+begin_example
+  P(A|B) / P(A) > 1 + epsilon/(2*prior)
+#+end_example
+
+So, when somebody says that they want to see "evidence", they are stating that they want to see evidence that is strong enough to change their belief. If somebody has an unusually extreme prior, then the amount of evidence needed becomes increasingly high.
+
+I'll fully admit that I do this, too. For example, my prior for "Homeopathic medicine works better than placebo." is low enough that hearing the anecdotal evidence of friends and family has no effect.
+
+This is also why summaries can be useful, even if a person has heard each constituent piece of information before. A series of 10 events can each be discounted, one at a time. Taken together, however, there is enough of a change to overcome the roundoff error, and cause a change in belief.

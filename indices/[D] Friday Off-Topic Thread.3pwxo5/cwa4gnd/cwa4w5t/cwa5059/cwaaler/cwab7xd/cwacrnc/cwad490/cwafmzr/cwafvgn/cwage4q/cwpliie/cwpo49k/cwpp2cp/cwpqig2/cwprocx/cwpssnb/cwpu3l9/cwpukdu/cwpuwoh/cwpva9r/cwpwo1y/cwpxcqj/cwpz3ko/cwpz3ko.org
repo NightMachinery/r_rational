@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1446764051.0
+:DateShort: 2015-Nov-06
+:END:
+
+Only inefficient when you're saving or reading from the jpeg though, as presumably the pixels accessor would cache the pixels array and write into it asynchronously, as a background task.
+
+It would be up to the pixels accessor to decide when to write back into the rawData accessor/attribute.
+
+RawData as symlinks into a real filesystem are the other obvious answer, although it requires you to run a filesystem in parallel. Not something I want to make an absolute /requirement/, but they'll be doing that anyway.
+
+I don't really see how it's less efficient then a syscall to read from disk though. Aside from that it takes place in userspace and adds an extra jump. With capnproto's rpc, that would basically be almost identical to memory mapping a file, wouldn't it?

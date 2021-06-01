@@ -1,0 +1,27 @@
+:PROPERTIES:
+:Author: masasin
+:Score: 2
+:DateUnix: 1512164263.0
+:DateShort: 2017-Dec-02
+:END:
+
+If you know P(T1 | R1) (how often reports of Tier 1 are actually Tier 1) and P(T1|R2) (how often reports of Tier 2 are actually Tier 1), you still need to know the individual frequencies of R1 and R2.
+
+As an extreme example, imagine there were ten thousand attacks. 9900 (99%) were reported as Tier 1, and 100 (1%) were reported as Tier 2. Using the percentages from this chapter, you'd end up with 79% of Tier 1 reports actually being Tier 1 (7821), 21% of Tier 1 reports actually being Tier 2 (2079), 33% of Tier 2 reports actually being Tier 1 (33), and 67% of Tier 2 reports being Tier 2 (67).
+
+In total, you have ten thousand attacks, 7854 (78.54%) of which were Tier 1, and 2146 (21.46%) of which were Tier 2.
+
+If you want to calculate it without P(R1) and P(R2) (99% and 1% respectively, in this example), you would end up with:
+
+- P(T1 | R1) = 0.79
+- P(T1 | R2) = 0.33
+
+P(T1) would then be equal to 79% + 33% = 112%. If you use the rate at which R1 and R2 occurs, you'd have:
+
+P(T1) = 0.79 * 0.99 + 0.33 * 0.01 = 0.7854, or 7854 out of 10000, which is exactly what we had.
+
+--------------
+
+edit:
+
+What Leaf and Red were looking for was P(T1 | R1), which is the probability that a Tier 1 attack occured, given a report of a Tier 1 attack. In this toy example, it would be 79%. But you do not have R1 and R2.

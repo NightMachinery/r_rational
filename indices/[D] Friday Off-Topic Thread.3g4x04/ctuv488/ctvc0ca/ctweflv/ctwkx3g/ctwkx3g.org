@@ -1,0 +1,31 @@
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1439094161.0
+:DateShort: 2015-Aug-09
+:END:
+
+#+begin_quote
+  The neurons in another body are no different than the neurons on the other side of your head.
+#+end_quote
+
+No.
+
+Your bandwidth is on the order of gigabytes per second (DDR2 is rated > 8GB/s) with latencies on the order of a dozen nanoseconds. Bandwidth between nodes is on the order of a few megabytes per second if they're in the same room and has standard latencies on the order of milliseconds.
+
+Nodes are mobile. That's a large part of their utility. You can be pretty damn certain that one processor on a given node can communicate with another processor. You can be pretty damn certain that you'll have a node out of contact with the others for an hour a week. This, by the way, is why you can't just install Amoeba on each node and pretend you're still operating on a single node -- not only will you have a physical body dropping limp whenever it's out of network connectivity, you'll also have processes running on all the other node expecting that that dropped node will perform operations and report back results in a timely manner, and they will be disappointed.
+
+#+begin_quote
+  I might whimsically imagine a hive where memories and thoughts are shared with the BitTorrent protocol.
+#+end_quote
+
+No.
+
+BitTorrent shares large pieces of static data. That's what it's intended for. That's what it's okayish at. Specifically, it's for sharing data between untrusted clients in a way that limits the amount of bandwidth dedicated to clients that are not donating bandwidth in turn. Here, you trust each client and know what code is running on them, and you want a protocol for low-latency communication with small amounts of data per message. If you used BitTorrent anyway, you /also/ need another protocol to share new torrent files between nodes many times per second.
+
+Once you're doing that, you may as well send the files thoughts themselves rather than torrent files to distribute the thought data.
+
+BitTorrent is the worst protocol you could choose to share thoughts between nodes.
+
+This also /strongly/ conflicts with your idea of treating processing power in other nodes as if it were processing power on the local node. First of all, it's a huge collection of layers of indirection, and that means it's outrageously slow. Then there's the problem that bittorrent itself is absurdly slow compared to the direct node-to-node synchronization you get in systems like Amoeba.
+
+You clearly haven't thought about how people would actually use multiple bodies, and you have no experience or coursework on distributed systems. Please think more and either study or gain more experience before suggesting how to create distributed systems.

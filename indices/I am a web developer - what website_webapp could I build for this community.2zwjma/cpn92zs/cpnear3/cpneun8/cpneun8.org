@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1427067284.0
+:DateShort: 2015-Mar-23
+:END:
+
+Google Ngram viewer already outputs that ngram as percent of the corpus. I'm not really clear on what you mean by a captcha-like service, but the actual logic for evaluating ngrams shouldn't be too much more difficult than:
+
+#+begin_example
+  percentChange = ngramTodayValue / ngramPastValue
+  if (percentChange > threshold)
+      flag
+#+end_example
+
+The hard part is getting those values into the system - the evaluation shouldn't be terribly problematic.

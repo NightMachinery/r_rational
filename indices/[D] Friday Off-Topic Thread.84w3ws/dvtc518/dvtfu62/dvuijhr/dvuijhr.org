@@ -1,0 +1,100 @@
+:PROPERTIES:
+:Author: suyjuris
+:Score: 1
+:DateUnix: 1521296666.0
+:DateShort: 2018-Mar-17
+:END:
+
+Also feedback on that article:
+
+#+begin_quote
+  A major source of complexity in a program is “state”---basically, what a program has to keep track of as it moves forward through time.
+#+end_quote
+
+This is misleading. While the opinion of state being a major source of complexity is generally accepted, this usually refers to /global/ state, that is state modified by many different procedures in non-obvious ways. You definition of state includes local variables and parameters, which are usually not considered harmful.
+
+#+begin_quote
+  Here, we'll be comparing three specific paradigms: imperative, functional, and object-oriented.
+#+end_quote
+
+Again, misleading. These are not exclusive, which is not clear from reading the article.
+
+#+begin_quote
+  Imperative programs often change the state of the program on each line, assigning new variables and referring to or changing old ones.
+#+end_quote
+
+Obviously they do. If an instruction did not change state, then it did nothing. That is what programs do, they change states. Even when writing in a declarative language, your statements are changing the state of your computer. This is a poor description of imperative programming, and, to be honest, causes me to question your understanding of the underlying material.
+
+#+begin_quote
+  Though intuitive for solving small problems, imperative programs quickly become unmanageable as they become larger.
+#+end_quote
+
+First, imperative programming includes what you describe as functional and object-oriented programming for the most part. (Note that Python is a purely imperative language!) So this sentence does not really make sense in the context of this article. Even if you were just referring to procedural programming (which would contradict your earlier description) this statement is in stark contrast to reality---many of the world's most complicated pieces of software are written in C, even if there are a multitude of options available. (Do you think NASA is launching spacecraft with Haskell? That the Linux kernel was written in Prolog? That your browser is a giant SQL query?)
+
+#+begin_quote
+  A goal of functional programming is predictability [...]
+#+end_quote
+
+You are referring to determinism.
+
+#+begin_quote
+  Object-oriented programming deals with state by designating certain functions that operate specifically on that state. Objects in object-oriented programming are a combination of state, or data, with functions that work specifically on that data. Rather than isolate state from the rest of the program,, the object-oriented approach allows only certain parts of the program to operate on certain pieces of data.
+#+end_quote
+
+Close, but this description is missing the central piece: Objects have an abstraction boundary between them, i.e. they encapsulate state. So OOO does actually try to “isolate state from the rest of the program”. (And, in my opinion, fails miserably, but that is neither here nor there.)
+
+#+begin_quote
+  First, our code is pretty messy. The script does a bunch of things, and we don't know which part of the script is dedicated to which functionality.
+#+end_quote
+
+I noticed that you did not add any comments in this example, whereas the other two feature quite a lot of them. That does not seem like a fair comparison. In fact, I would be very glad to find code like this in any of my projects, it is straightforward, simple, short, and does not hide any surprises.
+
+#+begin_quote
+  Second, it's not easily reusable. If we try to do another analysis, we'll be changing variables or copy and pasting code, which violates the programming principle of DRY---don't repeat yourself.
+#+end_quote
+
+So make a function out of it. (One.) This code is perfectly reusable. Accurately determining in advance which functionality would be best split off into a function is extremely difficult and needs a lot of programming experience. So I would advise beginners to not do this, and instead consider the problem lazily, i.e. factor code out into a function at the time when you actually need the functionality twice. At that point, you have the context to consider which parts need to be generalised and which can stay fixed.
+
+Maybe you are objecting to the fact that you need to change the code a bit to make it into a function, i.e. it is not already a function. If this is the case, then please consider what the actual cost is, in terms of time and effort. (Almost none, making simple syntactical changes to the code is basically free, we are not chiselling our source into stone tablets after all.)
+
+#+begin_quote
+  Third, if we need to change the program, there are many parts that are dependent on other parts, which means that one change is likely to require a bunch of other changes to accommodate it.
+#+end_quote
+
+Sorry, but I cannot think of a single change that would be more difficult to implement in this example than in the others. (And some for which the opposite holds.) In case you are making a statement about real-world code, that would be quite controversial, to say the least.
+
+#+begin_quote
+  A Functional Solution
+#+end_quote
+
+Just a small reminder that this code is still imperative. In fact, it is even procedural.
+
+#+begin_quote
+  These functions don't make assumptions about what string or list of words will be processed, so they can easily be reused.
+#+end_quote
+
+Yeah, no. In the real world, there is no such thing as a function that does not make assumptions, but rather a lot of functions with undocumented assumptions. If you split up a single function into more than one, you introduce more surface area for bugs to appear. It is well known that untested code usually does not work---and if your program is using a set of functions only in a certain way, likely that way is the only one that is going to work. Additionally, you introduce more things you have to worry about, because you are still /trying/ to keep these functions general.
+
+This problem is noticeable even in your simple toy problem, where your refactoring introduced a new bug: =words_matching_first_character= does not work when presented with a list containing the empty word. No “assumptions about what string or list of words will be processed”? Hardly.
+
+So, to get back to my earlier point, do not split things into functions unless you need to. Especially for beginners---it is hard enough already to consider what the current program is doing, without having to try to imagine all the possible things that might happen in future iterations of the program.
+
+#+begin_quote
+  An Object-Oriented Solution
+#+end_quote
+
+This is obviously the worst one of your three examples, it is difficult to even comprehend what is going on (relatively speaking, of course). Part of it is the example itself: =StringProcessor.clean= does not use =self.string=, which is kind of weird. Also, looking at your source, it is /twice/ as long as the original one.
+
+Do you really think this code is reusable, readable, or maintainable? It introduces two new classes, two superfluous functions, two fields (i.e. global state), and that is on top of the four additional functions added in the functional example. I do not think it is at all responsible to show this to people you want to teach about programming, at least not without a big (flashing, red) warning /not/ to do this.
+
+Oh, and you got it essentially right in the beginning:
+
+#+begin_quote
+  Programs with great complexity, with many moving parts and interdependent components, seem initially impressive. However, the ability to translate a real-world problem into a simple or elegant solution requires deep understanding. When writing code, therefore, we might say, “If I had more time, I would have written a simpler program.”
+#+end_quote
+
+Which one of your examples is the simplest?
+
+Whenever one introduces another layer of abstraction, be it by splitting things of into a function or by encapsulating them in an object, the total complexity of your system increases. It is as simple as that. Not only is all the functionality still there, but now there is an abstraction, which also adds complexity. Good abstractions allow you to ignore the things underneath for a time, and that is the trade-off: You trade additional complexity for the ability to keep only part of it in your mind at one time.
+
+From reading your article I do not get the impression that this concept is something you have a good grasp on. Programming well is about choosing the right trade-offs and being aware of them, and blindly adhering to simplistic principles (such as DRY) is not going to work.

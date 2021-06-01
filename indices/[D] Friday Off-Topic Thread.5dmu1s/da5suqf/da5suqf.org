@@ -1,0 +1,54 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 18
+:DateUnix: 1479486455.0
+:DateShort: 2016-Nov-18
+:END:
+
+Weekly update on my rational pokemon game, including work on the data creation tool Bill's PC. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+So I finally got around to getting a simple hex grid spawning in Unity!  Whoo-hoo I guess.  This has been long overdue, but things have kept cropping up to steal my spare time.  
+
+On the design front, the final blow to the leveling system was dealt this week.  It's been a bit of a difficult holdover from the canon pokemon design, trying to fit the rigid level 1-100 concept into the other systems that were more free-form and built around diminishing returns rather than hard caps.  
+
+In canon Pokemon, every creature had three different numbers that fed into any particular stat: the /base stat/, the /intrinsic value (IV)/ (generated at creature creation as basically a randomizer), and the /effort value (EV)/ (stats earned directly through battle).  Base stats were defined at the species level, so all Rattata have a base Attack (ATK) of 56, for instance.
+
+When a pokemon leveled up, it would receive 1/50th of its Base Stat as a reward.  This meant that at level 50, a Rattata would have base 56 ATK, and at level 100 it would have 112.  
+
+How frequently it leveled up was determined by its Growth Formula, which had several different archetypes that varied the amount of XP required per each level.  This meant that your Beedrill would hit level 100 while your Dragonite was still level 60, given the same XP.
+
+And then of course, what moves a pokemon learned and when it evolved was determined by a straight level requirement: Rattata always leans Bite at level 10 and evolves to Raticate (starting) at level 20.  
+
+I /think/ those were all the major ways that Level tied into the various mechanics (it also modified damage dealt and how much XP was earned, but those are more minor details).  Each of them has slowly been replaced with other mechanics, with stat growth being the last to fall this week.  So, here's what each of these concepts has been replaced with:
+
+- Moves, as mentioned a few weeks ago, are tied to Aspect mastery and anatomy/stat requirements, which makes the move learnable whenever the prerequisites are fulfilled rather than at arbitrary times
+
+- Growth curves have been shifted over to instead impact EV growth, which has taken a larger proportion of the stat impact (see below)
+
+- Base Stats have been redefined as “how many stats are awarded on EV growth”.  So rather than being awarded in increments each level, you now receive points equal to your Base_ATK for every 100 ATK EVs earned
+
+- Evolution has been shifted to a system similar to Moves, with more specific requirements than just level, which is detailed below.
+
+All of these mean that the final nails have been put into the coffin that is the leveling system.  RIP levelups, we hardly knew thee.
+
+--------------
+
+Evolution, as mentioned, has been made slightly more free-form.  To level up, certain stat requirements need to be met (an Abra with 3 INT just isn't going to cut it as a Kadabra), as well as a certain amount of evolutionary “dust” needs to be procured.  
+
+What we've decided is that the pokemon world is inundated with some sort of catalyst that triggers evolution--it floats in the air, it's embedded in living tissue, and it's produced and metabolized by pokemon themselves.  So breathing in the dust in the air, consuming fallen pokemon, or pushing the body are all things that will increase the amount of evolutionary dust in the pokemon, and bring it one step closer to metamorphosis.  
+
+Because we're cheeky, we've decided this dust should be called Evolutionary Xenos Particulates, or EXP for short.  
+
+But where this system gets /interesting/ is that Silph Co has found a way -- whether through synthesis or.../extraction/ -- to produce a concentrated version of EXP, which has different flavors depending on where or how it was produced.  
+
+In short, evolutionary stones.
+
+A pokemon can thus be fed EXP stones to accelerate their evolutionary timetables -- at a great opportunity cost.  You see, when a pokemon evolves, any EVs it has accumulated in a lower form get “baked in” to the base stats after evolving.  If you are patient and spend time developing your pokemon, those one-time stat gains from EV baking can be enormous--but if you're /not/ patient, well, all Silph Co affiliates have /very/ competitive prices on an alternative.    
+
+TL;DR the last remnants of the old experience grind have been swept away.  Rather than worrying about arbitrary level gates, the player is now expected to be concerned with sick gainz instead.
+
+--------------
+
+Feel free to leave any comments or questions below. Also feel free to join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]] for brainstorming and discussion.  It's a great group, really, and I would highly recommend hanging out, even if you're not in it for this project itself.  There's tabletop groups, Dota 2 partying, and [[http://i.imgur.com/j3jRmMZ.png][puns]] like you wouldn't [[http://i.imgur.com/8cUkzoGl.jpg][believe]].  Come join us!

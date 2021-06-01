@@ -3,8 +3,9 @@
 * DeepMind neural network beats top engines within hours of being exposed to the game of chess [EDU] [HSF]
 :PROPERTIES:
 :Author: LeifCarrotson
-:Score: 50
+:Score: 48
 :DateUnix: 1512616180.0
+:DateShort: 2017-Dec-07
 :END:
 [removed]
 
@@ -14,6 +15,7 @@
 :Author: Flag_Red
 :Score: 20
 :DateUnix: 1512629755.0
+:DateShort: 2017-Dec-07
 :END:
 
 *** There were graphs for that in the paper. Yes, at very short turn lengths, Stockfish performed better. However, 1 minute was enough time for AlphaZero to win convincingly, and that's not long for chess.
@@ -23,6 +25,7 @@ I also didn't see any indication that Stockfish was particularly underpowered; w
 :Author: thrawnca
 :Score: 12
 :DateUnix: 1512642127.0
+:DateShort: 2017-Dec-07
 :END:
 
 **** AlphaZero played on 4 TPUs. Stockfish's played on 64CPU cores, they don't say what model processor but I'll assume a modern high end processor.
@@ -32,8 +35,9 @@ I also didn't see any indication that Stockfish was particularly underpowered; w
 Edit: And this doesn't even go into how badly configured Stockfish was. A 1GB hash is nothing for 64 cores of processing power. You're looking at more like 25GB normally. Meanwhile, IIRC AlphaZero had 250GB of memory to use.
 :PROPERTIES:
 :Author: Flag_Red
-:Score: 7
+:Score: 5
 :DateUnix: 1512643606.0
+:DateShort: 2017-Dec-07
 :END:
 
 ***** Tensor processing units are application-specific integrated circuits, and as such are not directly comparable to CPUs. You're attempting to draw a comparison between apples and oranges. Moreover, even if we accept that Stockfish was at a hardware "disadvantage", the absolute number of positions searched per second was still far higher for Stockfish (70 million positions per second) than for AlphaZero (80 thousand). Clearly search speed isn't the bottleneck here, so trying to draw all the focus to the hardware is a red herring in and of itself.
@@ -53,6 +57,7 @@ is a context-dependent statement that may or may not be true. Stockfish with 1 c
 :Author: 696e6372656469626c65
 :Score: 12
 :DateUnix: 1512644827.0
+:DateShort: 2017-Dec-07
 :END:
 
 ****** You seem to be equating computing power used to positions searched. The reason AlphaZero searches so few positions is because it uses boatloads of processing power elsewhere (in the NN calculations).
@@ -64,6 +69,7 @@ Neural networks are great and all (I'm an AI researcher, I build them all the ti
 :Author: Flag_Red
 :Score: 10
 :DateUnix: 1512645583.0
+:DateShort: 2017-Dec-07
 :END:
 
 ******* Just a note that processing power is slightly more complicated. Google's tensor processing unit uses something similar to minifloat (8-bit float) so FLOPs aren't the same as with normal hardware. Personally my favorite comparison is with total hardware cost when comparing 2 different kinds of data type.
@@ -75,10 +81,12 @@ Datatype used in tensor flow (not learning part, the performing part): [[https:/
 :Author: Ilverin
 :Score: 3
 :DateUnix: 1512662348.0
+:DateShort: 2017-Dec-07
 :END:
 
 
-******* #+begin_quote
+******* u/696e6372656469626c65:
+#+begin_quote
   You seem to be equating computing power used to positions searched. The reason AlphaZero searches so few positions is because it uses boatloads of processing power elsewhere (in the NN calculations).
 #+end_quote
 
@@ -87,8 +95,9 @@ Yes, this is the /entire point/. The majority of AlphaZero's processing power is
 Or, to put it another way, do you demand that chess engines be reduced to evaluating only 1-2 positions per second when they play against humans, purely because humans are only able to evaluate at that speed? Of course not; the very notion is ridiculous--and yet that's the exact type of semantic leap you're attempting to pull here.
 :PROPERTIES:
 :Author: 696e6372656469626c65
-:Score: 1
+:Score: 2
 :DateUnix: 1512645893.0
+:DateShort: 2017-Dec-07
 :END:
 
 ******** When you compare a chess engine to /anything/, you have to specify how much processing power you're giving it. Note that processing power /is not/ positions evaluated per second. Your scenario at the end shows that.
@@ -100,6 +109,7 @@ Note, at the same time, you can't evaluate whether a human or an engine is bette
 :Author: Flag_Red
 :Score: 7
 :DateUnix: 1512648577.0
+:DateShort: 2017-Dec-07
 :END:
 
 ********* i guess the question is whether Stockfish would outperform AlphaZero using the BETTER hardware. You've claimed AlphaZero wouldn't work well on weaker hardware, but would stockfish scale up sufficiently to compete, or is the algorithm not capable of utilizing the additional processing effectively?
@@ -109,8 +119,9 @@ If the answer is that Stockfish would win on worse hardware and Alphago would wi
 Personally I'd say we should compare the two operating under the /most favorable conditions for their algorithm/, rather than /the same hardware./ The latter isn't necessarily as pure a test as it sounds. If one algorithm makes very good use of RAM and one is better at leveraging GPU or something, they should both just get hardware optimized for thier respective strengths.
 :PROPERTIES:
 :Author: wren42
-:Score: 3
+:Score: 4
 :DateUnix: 1512663147.0
+:DateShort: 2017-Dec-07
 :END:
 
 ********** [[https://www.reddit.com/r/rational/comments/7i3ipo/deepmind_neural_network_beats_top_engines_within/dqwnfa1/][They did analyse how well each scales with hardware]], so you can make this projection even if you consider the current comparison unbalanced.
@@ -118,6 +129,7 @@ Personally I'd say we should compare the two operating under the /most favorable
 :Author: Veedrac
 :Score: 2
 :DateUnix: 1512684095.0
+:DateShort: 2017-Dec-08
 :END:
 
 
@@ -126,10 +138,12 @@ Personally I'd say we should compare the two operating under the /most favorable
 :Author: ImNotGaySoStopAsking
 :Score: 3
 :DateUnix: 1512651393.0
+:DateShort: 2017-Dec-07
 :END:
 
 
-********* #+begin_quote
+********* u/696e6372656469626c65:
+#+begin_quote
   I'll give you an example. Say we're comparing two other engines, Komodo and Houdini. When we compare them, we give them the same hardware and say "whoever wins the most games is better".
 #+end_quote
 
@@ -144,9 +158,11 @@ And then you publish the games, without worrying particularly much about whether
 :Author: 696e6372656469626c65
 :Score: 0
 :DateUnix: 1512681744.0
+:DateShort: 2017-Dec-08
 :END:
 
-********** #+begin_quote
+********** u/Veedrac:
+#+begin_quote
   /You do exactly what they ended up actually doing/: you give Stockfish strong-enough hardware that its absolute speed advantage--in terms of nodes searched per second--is far greater than AlphaZero's
 #+end_quote
 
@@ -157,6 +173,7 @@ I agree that the hardware shouldn't be /equal/, though, and that forcing AlphaZe
 :Author: Veedrac
 :Score: 3
 :DateUnix: 1512683808.0
+:DateShort: 2017-Dec-08
 :END:
 
 *********** Good point. Still, given that Stockfish was actually being run on a 64-core computer, not a Raspberry Pi, it seems to me that this distinction is less relevant than it might otherwise be. Or, to cash things out in terms of an empirical prediction: I doubt that Stockfish running on, say, 128 or 256 cores would observe significantly better performance against AlphaZero than it did on 64 cores; the differences in understanding we saw in the sample games seem to me to be of a qualitative rather than quantitative nature.
@@ -166,9 +183,11 @@ I agree that the hardware shouldn't be /equal/, though, and that forcing AlphaZe
 :Author: 696e6372656469626c65
 :Score: 1
 :DateUnix: 1512684180.0
+:DateShort: 2017-Dec-08
 :END:
 
-************ #+begin_quote
+************ u/Veedrac:
+#+begin_quote
   we don't have figures for the energy consumption of TPUs
 #+end_quote
 
@@ -185,6 +204,7 @@ See also [[https://arxiv.org/pdf/1704.04760.pdf]] for a much more in-depth view 
 :Author: Veedrac
 :Score: 1
 :DateUnix: 1512741712.0
+:DateShort: 2017-Dec-08
 :END:
 
 
@@ -193,13 +213,15 @@ See also [[https://arxiv.org/pdf/1704.04760.pdf]] for a much more in-depth view 
 :Author: Rouninscholar
 :Score: 1
 :DateUnix: 1512658942.0
+:DateShort: 2017-Dec-07
 :END:
 
 ******* I'm confused by what you wrote, are you saying that draws don't happen in competitive play in chess? Because that's clearly not true
 :PROPERTIES:
 :Author: Mablun
-:Score: 6
+:Score: 5
 :DateUnix: 1512665055.0
+:DateShort: 2017-Dec-07
 :END:
 
 ******** Honestly, was misinformed. Went and did some research and you are right. My apologies.
@@ -207,6 +229,7 @@ See also [[https://arxiv.org/pdf/1704.04760.pdf]] for a much more in-depth view 
 :Author: Rouninscholar
 :Score: 6
 :DateUnix: 1512665269.0
+:DateShort: 2017-Dec-07
 :END:
 
 ********* Just so other people don't have to go and do the research, in high level play around 50% of chess games are draws.
@@ -214,6 +237,7 @@ See also [[https://arxiv.org/pdf/1704.04760.pdf]] for a much more in-depth view 
 :Author: Mablun
 :Score: 2
 :DateUnix: 1512668415.0
+:DateShort: 2017-Dec-07
 :END:
 
 
@@ -226,10 +250,12 @@ E: Second generation TPUs can do float. I don't know how fast.
 :Author: Veedrac
 :Score: 3
 :DateUnix: 1512665691.0
+:DateShort: 2017-Dec-07
 :END:
 
 
-*** #+begin_quote
+*** u/Veedrac:
+#+begin_quote
   [[https://i.imgur.com/JQQXl9J.png]]
 
   Figure 2: Scalability of AlphaZero with thinking time, measured on an Elo scale. *a* Performance of AlphaZero and Stockfish in chess, plotted against thinking time per move.
@@ -242,20 +268,23 @@ I am not sure how hash tables come into this, but I believe making it larger wou
 In other words, AlphaZero is intrinsically stronger in the limit of feasible computation.
 :PROPERTIES:
 :Author: Veedrac
-:Score: 5
+:Score: 6
 :DateUnix: 1512664244.0
+:DateShort: 2017-Dec-07
 :END:
 
 
-*** #+begin_quote
+*** u/696e6372656469626c65:
+#+begin_quote
   would definitely put the game in Stockfish's favour.
 #+end_quote
 
 I do wish people would be less eager to make sweeping claims like this with no evidence whatsoever to back them up.
 :PROPERTIES:
 :Author: 696e6372656469626c65
-:Score: 5
+:Score: 4
 :DateUnix: 1512643151.0
+:DateShort: 2017-Dec-07
 :END:
 
 
@@ -266,6 +295,7 @@ Looking forward to seeing how this pans out.
 :Author: veruchai
 :Score: 3
 :DateUnix: 1512663797.0
+:DateShort: 2017-Dec-07
 :END:
 
 
@@ -276,27 +306,31 @@ I would bet money that fairly low elo human networks using the same minmax tree 
 :Author: monkyyy0
 :Score: 5
 :DateUnix: 1512625741.0
+:DateShort: 2017-Dec-07
 :END:
 
 *** False. AlphaGo Lee playing at zero depth played at an extremely strong level, I forget what exactly.
 :PROPERTIES:
 :Author: EliezerYudkowsky
-:Score: 17
+:Score: 18
 :DateUnix: 1512626511.0
+:DateShort: 2017-Dec-07
 :END:
 
 **** If your talking about the expert move prediction that's not quite my criticism; knowing the top 5 best moves is not the same as picking the best of them because of something that can happen 5 moves from now.
 :PROPERTIES:
 :Author: monkyyy0
-:Score: 5
+:Score: 4
 :DateUnix: 1512628845.0
+:DateShort: 2017-Dec-07
 :END:
 
 ***** If you iterate enough times, the distinction between the two becomes quite narrow.
 :PROPERTIES:
 :Author: thrawnca
-:Score: 8
+:Score: 7
 :DateUnix: 1512642231.0
+:DateShort: 2017-Dec-07
 :END:
 
 ****** I disagree.
@@ -310,9 +344,11 @@ The minmax algorithm is recursive and a natural part of turn based games
 :Author: monkyyy0
 :Score: 0
 :DateUnix: 1512671931.0
+:DateShort: 2017-Dec-07
 :END:
 
-******* #+begin_quote
+******* u/thrawnca:
+#+begin_quote
   it's going to be very wrong about what 1000 is.
 #+end_quote
 
@@ -321,6 +357,7 @@ I don't see how this analogy applies. Maybe if AlphaZero played only partial gam
 :Author: thrawnca
 :Score: 2
 :DateUnix: 1512673701.0
+:DateShort: 2017-Dec-07
 :END:
 
 ******** With exponential games and processing time and size of the net
@@ -332,9 +369,11 @@ They used a min max trees for a reason; don't buy the hype, you can't solve all 
 :Author: monkyyy0
 :Score: 1
 :DateUnix: 1512675065.0
+:DateShort: 2017-Dec-07
 :END:
 
-********* #+begin_quote
+********* u/thrawnca:
+#+begin_quote
   you can't solve all problem by adding numbers together; you need access to loops and real conditionals
 #+end_quote
 
@@ -351,9 +390,11 @@ Again, this is a false equivalence. Iiuc you're basically saying that if you pla
 :Author: thrawnca
 :Score: 1
 :DateUnix: 1512682935.0
+:DateShort: 2017-Dec-08
 :END:
 
-********** #+begin_quote
+********** u/monkyyy0:
+#+begin_quote
   First, what is your source for your assertion?
 #+end_quote
 
@@ -408,9 +449,11 @@ I feel only number 3 needs any defence. Its not proven, but I'd love to hear a s
 :Author: monkyyy0
 :Score: 1
 :DateUnix: 1512688910.0
+:DateShort: 2017-Dec-08
 :END:
 
-*********** #+begin_quote
+*********** u/thrawnca:
+#+begin_quote
   There is also ackermann function if you want an impossible problem.
 #+end_quote
 
@@ -433,9 +476,11 @@ The stated limitation of min-max trees was inability to adapt to challenges outs
 :Author: thrawnca
 :Score: 1
 :DateUnix: 1512690383.0
+:DateShort: 2017-Dec-08
 :END:
 
-************ #+begin_quote
+************ u/monkyyy0:
+#+begin_quote
 
   #+begin_quote
     There is also ackermann function if you want an impossible problem.
@@ -463,10 +508,12 @@ That's not a limitation of min-max trees; they are a perfect solution; their lim
 :Author: monkyyy0
 :Score: 1
 :DateUnix: 1512691608.0
+:DateShort: 2017-Dec-08
 :END:
 
 
-*********** #+begin_quote
+*********** u/Veedrac:
+#+begin_quote
   Alpha go is not a neural net, its a neural net with a minmax tree heart.
 #+end_quote
 
@@ -477,6 +524,7 @@ This is all a silly argument, though. You can just look at the multiple data poi
 :Author: Veedrac
 :Score: 1
 :DateUnix: 1512742539.0
+:DateShort: 2017-Dec-08
 :END:
 
 
@@ -484,6 +532,7 @@ This is all a silly argument, though. You can just look at the multiple data poi
 :PROPERTIES:
 :Score: 3
 :DateUnix: 1512643938.0
+:DateShort: 2017-Dec-07
 :END:
 
 
@@ -492,6 +541,7 @@ This is all a silly argument, though. You can just look at the multiple data poi
 :Author: Veedrac
 :Score: 1
 :DateUnix: 1512684303.0
+:DateShort: 2017-Dec-08
 :END:
 
 ***** I believe EY was talking about AlphaGo's playing strength, not AlphaZero.
@@ -499,6 +549,7 @@ This is all a silly argument, though. You can just look at the multiple data poi
 :Author: 696e6372656469626c65
 :Score: 1
 :DateUnix: 1512685425.0
+:DateShort: 2017-Dec-08
 :END:
 
 ****** Yes, I was stating an additional point.
@@ -506,6 +557,7 @@ This is all a silly argument, though. You can just look at the multiple data poi
 :Author: Veedrac
 :Score: 1
 :DateUnix: 1512685987.0
+:DateShort: 2017-Dec-08
 :END:
 
 
@@ -514,6 +566,7 @@ This is all a silly argument, though. You can just look at the multiple data poi
 :Author: serge_cell
 :Score: 2
 :DateUnix: 1512631685.0
+:DateShort: 2017-Dec-07
 :END:
 
 
@@ -522,4 +575,5 @@ This is all a silly argument, though. You can just look at the multiple data poi
 :Author: rationalidurr
 :Score: 0
 :DateUnix: 1512707861.0
+:DateShort: 2017-Dec-08
 :END:

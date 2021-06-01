@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: Threedoge
+:Score: 1
+:DateUnix: 1405689273.0
+:DateShort: 2014-Jul-18
+:END:
+
+Ya, you could return to semi-normal computing methods for memory storage, but it would still be complex as hell. You'd have to set up a clock of sorts, and some kind of error handling in case one thread is taking up all the memory, or has removed resources that another tread needed. I would need to sit down and just run theoretical tests on what kind of situations you'd come across, but ya there should be plenty of ways for you to create memory that would work with multi-threading.

@@ -1,0 +1,779 @@
+#+TITLE: [D] Friday Off-Topic Thread
+
+* [D] Friday Off-Topic Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 16
+:DateUnix: 1501254439.0
+:DateShort: 2017-Jul-28
+:END:
+Welcome to the Friday Off-Topic Thread! Is there something that you want to talk about with [[/r/rational]], but which isn't rational fiction, or doesn't otherwise belong as a top-level post? This is the place to post it. The idea is that while reddit is a large place, with lots of special little niches, sometimes you just want to talk with a certain group of people about certain sorts of things that aren't related to why you're all here. It's totally understandable that you might want to talk about Japanese game shows with [[/r/rational]] instead of going over to [[/r/japanesegameshows]], but it's hopefully also understandable that this isn't really the place for that sort of thing.
+
+So do you want to talk about how your life has been going? Non-rational and/or non-fictional stuff you've been reading? The recent album from your favourite German pop singer? The politics of Southern India? The sexual preferences of the chairman of the Ukrainian soccer league? Different ways to plot meteorological data? The cost of living in Portugal? Corner cases for siteswap notation? All these things and more could possibly be found in the comments below!
+
+
+** I've been linking this everywhere, so figured I might as well do it here too:
+
+[[http://ncase.me/trust/]]
+
+I highly recommend everyone play through it. Only takes a few minutes and helps teach the value of communication and non-zero-sum interactions in building positive relationships.
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 14
+:DateUnix: 1501314304.0
+:DateShort: 2017-Jul-29
+:END:
+
+*** I just saw this for the first time two days ago! It's a really good illustration of game theory's practical applicability.
+:PROPERTIES:
+:Author: MistahTimn
+:Score: 2
+:DateUnix: 1501365537.0
+:DateShort: 2017-Jul-30
+:END:
+
+
+** I've been mentally tossing around an idea for time travel mechanics for a while now. I was thinking about how you almost inherently need to severely limit how time travel works in order to create a meaningful plot. After all, how many Doctor Who episodes wouldn't have happened if the Doctor just hopped into the TARDIS at the first sign of trouble and went back to fix the problem before it happened?
+
+The system I'm thinking of limits time travel by separating the world into two types of objects: time-flexible and time-inflexible. When a person travels back in time, they create a separate timeline diverging from the original timeline, with whatever change the time machine creates. The main difference is that when the alternate timeline reaches the point in time it started, it collapses back into the original timeline. From the perspective of the main timeline, every time-inflexible object stays the same, but all time-flexible objects /update/ to where they were in the alternate timeline when it collapsed.
+
+For example, if at 12:35 I go back in time to 12:25, grab a time-flexible pencil and write a note on time-flexible paper then put the pencil in a different room, then after ten minutes at 12:35 the timeline collapses and, from the main timeline's perspective, the pencil instantaneously teleported to another room and the paper now has a note written on it.
+
+This system limits time travel by keeping everything in terms of a main timeline. Every jump through time always returns to the main timeline as a simple list of changes, so you don't have to worry about things like causality loops and you aren't at risk of ending up in complicated scenarios that would confuse most readers. Depending on how you want to do things, you could allow nested time-edits but the system is much simpler with only one layer.
+
+When a time-edit collapses and all the time-flexible objects update, the way I see things working is they'd outright swap space with whatever they were in. So if I dropped the pencil in the fish tank, when the time-edit collapses the spot on my desk where the pencil was would be replaced by an amount of water in the shape of the pencil. Naturally, this could be used as an assassination technique; knowing where someone is when the time-edit starts lets you put an object where their head will be and when the time-edit collapses their head is now separated from their body.
+
+Being time-flexible would be tied to the atoms in question and not the object 'as a whole'. If I snapped the pencil in half, put one half in the fish tank and the other in a different room, the main timeline would update with half a pencil in the other room, half a pencil in the fish tank, and the spot where the pencil was on my desk would be replaced half with air and half with water.
+
+Another interesting facet of this kind of time travel is that it produces scenarios where people act in extraordinary ways. Assuming it's simple enough to find out whether you're in a time-edit or not, many people would consider such drastic things as sacrificing themselves or other reckless behaviour if it helps stop time-flexible objects from being abused. You might literally nuke the white house with the president in it just so that the enemy can't put time-flexible objects in the oval office to assassinate the president in the main timeline. Mechanics like these would lend themselves to characters willing to 'make the hard choices' and would also present an opportunity to discuss the ethics of, say, torturing someone for information in a time-edit.
+
+Your actions in a time-edit will very likely not go unnoticed. Any organization in on the secret worth its salt would ensure that when they discover they're in a time-edit, they notice and start taking notes. If finding out that you're in a time-edit is simple, that means that most organizations in the know will catalogue /every/ time-edit, even if they don't know what happened in it. How much each organization knows of course depends on how much information they have access to, but if you make big flashy moves like nuking the white house, people will take notice even in the main timeline.
+
+Of course, a time travel mechanic isn't a story, but I think this sort of thing is an interesting way to incorporate time travel into a story without risking losing the readers or spiraling into causality loops and paradoxes. It leads to interesting moments where a person's incentive structures completely flip around because they're in a time-edit now and the gloves just came off, and it gives the time traveler foreknowledge, which is one of the things that makes time travel stories unique, but also prevents time travel being the answer to every single problem ever.
+:PROPERTIES:
+:Author: InfernoVulpix
+:Score: 9
+:DateUnix: 1501269926.0
+:DateShort: 2017-Jul-28
+:END:
+
+*** What defines whether an object is time-flexible or time-inflexible? I like the idea of trying to rationalize a time travel mechanic that /does/ allow for timeline-modification, but my worry is that the categorization for -flexible/-inflexible objects would be arbitrary based on story needs. In that case, it would be little different from Doctor Who, which has "fixed points in time" (typically the go-to answer for your question of "why doesn't the Doctor just avoid the whole problem in the first place").
+
+Maybe "time-flexible" objects are solely objects that were sent back in time by the machine? So initially, your example time-traveler goes back to 12:25, makes a bunch of changes, but at 12:35 the timeline reverts back to the original - the only differences being where he's standing (any substances in that space he now fills are swapped, as you described) and the knowledge he gained during that alternate timeline. So maybe initially he starts using it just as a way to gather information, or run simulations, then he realizes he can essentially teleport (with some planning)...then he realizes that if he brings an object back /with/ him, he can leave it in a place in the alternate timeline that affects the main timeline (like your example of leaving an object where someone's head will be in the main timeline).
+
+A system like that has some nice benefits from a writing standpoint:
+
+- It uses hard rules that the reader can rely on
+- It allows for a natural development and progression, as (a) the protag figures out better uses for the machine, and (b) as the consequences of those uses begin to catch up to him
+- It's already limited, but further limitations can prevent the ability from running too wild (ex: machine only can go back in time X minutes, its size limits how much it can bring back, it needs Y minutes to recharge, etc)
+:PROPERTIES:
+:Author: tonytwostep
+:Score: 5
+:DateUnix: 1501285849.0
+:DateShort: 2017-Jul-29
+:END:
+
+**** That problem, of arbitrary 'this is time-flexible because it's convenient' things, hadn't really come up for me, though I guess I forgot to note that whenever I've thought about what objects are time-flexible, I've been thinking about it as a process that people intentionally use to make objects time-flexible. Something like an alien tech machine or a magic wand or whatever fits the context, just that it's intentionally used and is the primary source of time-flexible objects. (Personally, magic sounds the best if you want an everyman to happen across this, but other explanations would work too).
+
+To some extent, there will still be some element of 'it's time-flexible because it's convenient for the author', but the author would then have to trace it back through to 'why did someone make this particular thing time-flexible?'. Also, I feel like letting people easily identify time-flexible objects could benefit the story. Perhaps while in a time-edit, time-flexible objects have a kind of glow? That would also neatly resolve the question of how people would tell that they're in a time-edit.
+
+I'm also not sure what to think about time-flexible people. In a world where a lot of different groups are using time-edits, a time-flexible person has to personally live through all of them. It's a radically different experience than living in the main timeline and sending copies of yourself back in time (or copies of your brainstate to your past self, whichever) to hopefully change the present. It also doesn't bring /too/ much to the story because time-flexible notes can already bring information from yourself in the time-edit back to the main you. Being time-flexible yourself streamlines the process but doesn't open many doors.
+:PROPERTIES:
+:Author: InfernoVulpix
+:Score: 1
+:DateUnix: 1501290457.0
+:DateShort: 2017-Jul-29
+:END:
+
+
+*** I was with you up until the space swapping of the substances. It seems unnecessarily symmetrical. Instead, why don't you insert some effect based on obscure, proven, theoretical, hypothetical, or otherwise (creatively) interesting effect? I think you'd get much more mileage out of something like that storywise. It could be something explicitly negative (predictable) but it could be more.
+:PROPERTIES:
+:Author: PL_TOC
+:Score: 2
+:DateUnix: 1501277290.0
+:DateShort: 2017-Jul-29
+:END:
+
+**** I was mainly thinking of it as the simplest way to handle what happens if the location an object updates to intersects something else. The common sense answer is either that it doesn't go at all or that its destination is altered slightly until it doesn't intersect anything, and it occurred to me that a full swap would be simpler overall and lead to fewer edge cases.
+
+You're right, though, there are other ways to handle it. I doubt it would be possible to just 'sum up' the atoms without leading to catastrophic consequences (I don't know what double atomic density does but it doesn't sound good), but the space left behind by the time-flexible objects don't have to be filled with the destination. It doesn't have to be filled with anything at all, you could just leave a vacuum behind, or some exotic substance connected to the nature of time-flexibility.
+:PROPERTIES:
+:Author: InfernoVulpix
+:Score: 1
+:DateUnix: 1501278387.0
+:DateShort: 2017-Jul-29
+:END:
+
+***** Excellent points. I imagine there's a fair amount of interesting stuff you could do with the time inflexible objects as well. Like an entire security industry around having premises built out of such materials in order to thwart time travelers from interfering with what occurs inside, be it business or something else.
+:PROPERTIES:
+:Author: PL_TOC
+:Score: 1
+:DateUnix: 1501298415.0
+:DateShort: 2017-Jul-29
+:END:
+
+
+*** You could find out whether you're in a time-edit by trying and failing to initiate a time-edit.
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 1
+:DateUnix: 1501300988.0
+:DateShort: 2017-Jul-29
+:END:
+
+
+** I decided I was in need of some more optimism in my life so I checked out Gurren Lagann. 5 episodes in, I'm starting to wonder if I'm missing something. Don't get me wrong, the show has been perfectly fine so far and I'm enjoying the action well enough, it just hasn't been as good as I hoped and there wasn't much to indicate it's going to get better.
+
+I really have no right to complain after having slogged my way through the original Dragon Ball, and my worries here aren't anywhere near the existential crises I've had in the past over how much I like a tv show. I just want to know if and when the series becomes something /more/ because I'm worried I'll get bored with it if it doesn't.
+
+--------------
+
+I recently discovered [[https://www.youtube.com/user/OatsStudios][Oats Studios]], which has some of the best looking short films on YouTube I've ever seen. I couldn't find clear info on what they're trying to do with Volume 1 that didn't involve me giving them money, so I'll just recommend their Lovecraftian horror stuff for your viewing pleasure.
+
+[[https://www.youtube.com/watch?v=pKWB-MVJ4sQ][Zygote]] has a great body horror monster and the most coherent story, but my favorite is [[https://www.youtube.com/watch?v=Tm0V24IEHao][Firebase]] for the fantastic imagery and sense of cosmic horror it instills. People also seem to like [[https://www.youtube.com/watch?v=VjQ2t_yNHQs][Rakka]], but I found the post-apocalyptic alien invasion to be uninspired even if the lizardmen covered in nanotech look pretty cool.
+
+--------------
+
+I found myself surprisingly enjoying the almost two-hour YouTube video [[https://youtu.be/LkoGBOs5ecM][Sherlock is Garbage and Here's Why]]. The guy clearly never liked the show in the first place and I think he gives a little too much credit to the original books, but he really hits the nail on the head for what Steven Moffat's weaknesses are as a writer while figuring out what led the series down the path of disappointment for its fans. I don't agree with everything he says, but he makes some good points that were worth seeing.
+
+I didn't think that the show emphasizing Sherlock's characterization at the expense of the plot was a problem at first, both because I liked his character and figured the mysteries had always been [[http://tvtropes.org/pmwiki/pmwiki.php/Main/CluelessMystery][Clueless]] anyway, but it definitely became a serious issue as time went on. I actually loved season 3 and liked The Lying Detective in season 4, but I can definitely see how that writing led to the characters becoming poorly-written crazy people with magic plot powers.
+:PROPERTIES:
+:Author: trekie140
+:Score: 8
+:DateUnix: 1501271300.0
+:DateShort: 2017-Jul-29
+:END:
+
+*** u/deleted:
+#+begin_quote
+  I decided I was in need of some more optimism in my life so I checked out Gurren Lagann. 5 episodes in, I'm starting to wonder if I'm missing something. Don't get me wrong, the show has been perfectly fine so far and I'm enjoying the action well enough, it just hasn't been as good as I hoped and there wasn't much to indicate it's going to get better.
+#+end_quote
+
+/Gurren Lagann/ basically has four parts, of roughly 6-7 episodes each.
+
+- Part 1: where you are. The weakest part of the whole show.
+
+- Part 2: starts at episode 9, IIRC. Dramatic and emotional. Goes up to Episode 16.
+
+- Part 3: starts at ep 17, goes until roughly 21 or something. More "people drama", very Gundam-esque.
+
+- Part 4: 22 or something, goes until the end. The famousest, awesomest part. Ends with epic hotblooded speeches summing up the themes of the show, so you know what you just watched.
+
+If you don't like Parts (2) and (4), /then/ you don't like /Gurren Lagann/. I can't explain why without spoiling the show.
+
+Actually, fuck it, spoiler for a hotblooded speech. I love writing this one out.
+
+[[#s][Tengen Toppa Gurren Lagann, /All the Lights in the Sky are Stars/]]
+
+My basic motivation is to be able to spout stuff this epic /in real life/ and have it /actually be meaningful/.
+:PROPERTIES:
+:Score: 9
+:DateUnix: 1501272469.0
+:DateShort: 2017-Jul-29
+:END:
+
+**** I made it to episode 10 today, you were completely right. This show has suddenly become quite emotionally arresting and I can't wait to see where it goes next.
+:PROPERTIES:
+:Author: trekie140
+:Score: 3
+:DateUnix: 1501304799.0
+:DateShort: 2017-Jul-29
+:END:
+
+
+*** u/Tsegen:
+#+begin_quote
+  I recently discovered Oats Studios, which has some of the best looking short films on YouTube I've ever seen. I couldn't find clear info on what they're trying to do with Volume 1 that didn't involve me giving them money, so I'll just recommend their Lovecraftian horror stuff for your viewing pleasure.
+#+end_quote
+
+Honestly, even if you do give them money it's unclear what they'll do, and Blomkamp has admitted as much.
+
+Unsustainable models are a real concern.
+:PROPERTIES:
+:Author: Tsegen
+:Score: 3
+:DateUnix: 1501313007.0
+:DateShort: 2017-Jul-29
+:END:
+
+
+*** Other optimistic media, if you're interested, include the games The World Ends With You and Undertale, as well as Avatar: The Last Airbender.
+:PROPERTIES:
+:Author: Cariyaga
+:Score: 3
+:DateUnix: 1501340427.0
+:DateShort: 2017-Jul-29
+:END:
+
+**** I've heard of The World Ends With You, but I've yet to start a JRPG that I wanted to finish so I'm not sure if I enjoy the genre. Avatar is wonderful and I'm currently reading a [[https://www.reddit.com/r/rational/comments/6ffjma/monthly_recommendation_thread/dijbsfe][slice of life fanfic]] for it that makes me feel happy.
+
+Undertale is a weird case for me in that I got emotionally invested enough in the neutral ending to make me want to make things right in a pacifist run, but I didn't find the game fun enough to want to go through the journey there all over again.
+
+I know there's more to the story that I'll discover on a second playthrough and I know I wouldn't have been as effected by the parts of the story I was if the gameplay was any different, but I just didn't have much fun waiting for the parts I found interesting.
+:PROPERTIES:
+:Author: trekie140
+:Score: 3
+:DateUnix: 1501341404.0
+:DateShort: 2017-Jul-29
+:END:
+
+***** There's a save-editting tool for Undertale if you'd like to skip toward the end of a pacifist run [[https://crumblingstatue.github.io/FloweysTimeMachine/][here]]. You can skip around rooms and talk to people even if you don't want to do fights, that way, too. Once you've finished it there's loads of fanworks to get through, too. Tons of quality remixes, fanart, and fanfics.
+
+TWEWY isn't a traditional JRPG -- it doesn't really follow many of the tropes of it. It's more like an ARPG, though it's /set/ in Japan.
+
+I'm not sure how much you'd like it (or if you've seen it already), but the literal only movie I've watched in the past several years is Zootopia and it's pretty darned great.
+
+I would suggest Earthbound and Mother 3 were it not for the injunction against JRPGs. Other than those...
+
+My Hero Academia and Mob Psycho are great insofar as anime goes. I would thoroughly recommend One Punch Man as well, but it doesn't really fit the theming. Kickass music, though!
+:PROPERTIES:
+:Author: Cariyaga
+:Score: 1
+:DateUnix: 1501341914.0
+:DateShort: 2017-Jul-29
+:END:
+
+****** One Punch Man and Mob Psycho 100 are on my list to watch, I'm already a fan of My Hero Academia, and I freaking love Zootopia. I will look into TWEWY some more, though. In the same vein as HeroAca and Avatar, I recommend the web series RWBY.
+:PROPERTIES:
+:Author: trekie140
+:Score: 2
+:DateUnix: 1501350295.0
+:DateShort: 2017-Jul-29
+:END:
+
+******* I'll check that out!
+
+If and when you finish Undertale, there's plenty of stuff I can recommend for it -- actually, you could probably watch up to the point you were at in the musical (yes, there's a musical) [[https://www.youtube.com/watch?v=99g8k_LAhi0&list=PLU-TFjG0qugDOnndeSWGpQ_BTmzEBlK09][here]] -- just don't read the comments or skip ahead. The end of the neutral run is at "An Ending", though I'll note that there are a couple pacifist-exclusive sections in it you may want to be aware of.
+:PROPERTIES:
+:Author: Cariyaga
+:Score: 1
+:DateUnix: 1501351104.0
+:DateShort: 2017-Jul-29
+:END:
+
+
+*** Was exactly where you were with Gurren Lagann with the same thoughts. I slogged through the first few, and think I was actually on episode 8 when I stopped, called my step brother (who kept insisting I watch it) and said "I don't get it, it's a decent anime but nothing special, a bit cliche honestly." He asked what episode I was on, I told him, and he was like "Okay, watch one more episode."
+
+So I did, and finished the anime within a couple days.
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 3
+:DateUnix: 1501305401.0
+:DateShort: 2017-Jul-29
+:END:
+
+**** [[#s][]]
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1501450448.0
+:DateShort: 2017-Jul-31
+:END:
+
+
+** Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+No code progress this week.  Flew out to see the the in-laws on Friday, wasn't back until Tuesday, and (of course) caught a cold or something and so was down Wednesday and I'm just now getting back on my feet.  On top of that, we applied for a new apartment which, if we're accepted, will result in us moving within the next month, so I'm likely to have my time eaten up here shortly.
+
+--------------
+
+This last week the discussion of terrain came up again, and after going over it again I think that the vast majority of natural terrain can be boiled down into three major classes, dubbed Stone, Dirt, and Ice.  Besides the class, Temperature and Water Saturation will be tracked separately, and these values will decide the current behavior of the terrain.
+
+For instance, the Dirt class encompasses a sliding scale of sand -> earth -> mud -> swamp, and the current Water Saturation of the tile determines which it behaves as. Increasing the temperature of the tile would incrementally decrease the water amount.  Such a setup permits water attacks and fire/electric attacks to interact with the terrain in a systematic fashion: hydro pump the ground around your opponent to turn it into a mire, before pulling out a flying type to safely harass them from afar.  Fire blast the swamp enough and it's reduced to (glassed?) sand.  It's a bit simplistic with how it actually works in real life, but it has the right feel, I think.
+
+The other two classes are basically stone -> lava and water -> snow -> ice.  The  more I think on it, the more it seems like this is just a special case of a more generalized, abstract system, but this is probably good enough design work for now.  At the beginning I imagine there won't be any terrain affecting at all--this would be hacked in later as certain moves destroying or creating blocks, and even later adding in all the nuanced terrain control.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  
+:PROPERTIES:
+:Author: ketura
+:Score: 9
+:DateUnix: 1501262126.0
+:DateShort: 2017-Jul-28
+:END:
+
+*** How would you handle indoor environments? Because although most battles would probably take place in an outdoor place (especially regulated ones) ambushes, ghost pokemon in buildings, etc. may lead to a wooden floor, concrete floor, and so on.
+:PROPERTIES:
+:Author: TheJungleDragon
+:Score: 3
+:DateUnix: 1501326338.0
+:DateShort: 2017-Jul-29
+:END:
+
+**** Oh, there will certainly be more than just these three terrain types, this will just cover most of them. Concrete would probably just be a skin of stone (same properties, different appearance), while wood is indeed unique enough to be its own (mostly due to the flammability). Wood actually came up as something that will need to exist with trees, both when they're standing and knocked down. No doubt there will be others, such as glass, and a myriad of skins just because.
+
+While discussing this on Discord I realized that a more sophisticated means of handling transitions between terrain types will eventually be needed, but that's probably in optional mod territory. Still, the voxel system demands that we reduce the amount of information needed to define a tile as much as humanly possible, which was how we came to trying to reduce terrain types to fundamental groups in the first place.
+:PROPERTIES:
+:Author: ketura
+:Score: 2
+:DateUnix: 1501344727.0
+:DateShort: 2017-Jul-29
+:END:
+
+
+** Story Prompt/Idea:
+
+The setting is the near future where most things are pretty similar to now, but full-brain emulation is now possible and there is a lot more storage space and processing power in our computers by a few orders of magnitude and all the associated technologies implied by such a shift.
+
+Our protagonist is a not-so-smart guy, fairly average, but he's interested in the implications of the new full-brain emulations that was just revealed to the world and he's a very strong believer in the patternist theory of mind. He believes without any doubt that an emulation of him is the same person as him and he would like to have some version of him to live forever aka immortality.
+
+So he decides to do something fairly reckless and immoral. To ensure there are multiple versions of him being simulated in the present or future, he decides to rent a sufficient amount of storage space to pirate himself and to make copies of his mind publicly available online to anyone to download for free. Anyone can download a simulation of his mind and do whatever they like to it. However getting his simulated mind to do work for them will require making an agreement of some type with the mind itself since it's not as if the mind will be coming downloaded with any insurances, agreements, or warranties.
+
+Question #1: What would you do with the possibility of full-brain emulations to leverage your way into a position of power and/or immortality?
+
+Question #2: How do you think people would react, (ab)use, or interact with a free copy of a human mind?
+
+Question #3: Do you think there is any chance of his wishes of immortality succeeding with this gimmick?
+:PROPERTIES:
+:Author: xamueljones
+:Score: 8
+:DateUnix: 1501269452.0
+:DateShort: 2017-Jul-28
+:END:
+
+*** You should talk to [[/u/datapacrat][u/datapacrat]], he already has explored that exact idea.
+:PROPERTIES:
+:Author: CreationBlues
+:Score: 2
+:DateUnix: 1501291576.0
+:DateShort: 2017-Jul-29
+:END:
+
+**** For anyone interested, the story-like object I first used to explore this idea was the [[https://docs.google.com/document/d/1nRSRWbAqtC48rPv5NG6kzggL3HXSJ1O93jFn3fgu0Rs/edit][FAQ on LoadBear's Instrument of Precommitment]], previously discussed in this subreddit [[https://www.reddit.com/r/rational/comments/34ao2r/wiphsfth_faq_on_loadbears_instrument_of/][here]].
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 3
+:DateUnix: 1501351568.0
+:DateShort: 2017-Jul-29
+:END:
+
+
+**** I already know about his story.
+
+I'm mainly curious to see if anyone would come up with a different idea for what would happen to a hypothetical emulation.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 2
+:DateUnix: 1501305063.0
+:DateShort: 2017-Jul-29
+:END:
+
+
+*** I can see it backfiring horribly, but working in a sense. Mainly because mad scientists would see "Oh hey, it's Ted the Generic Guy". /Downloads to dummy robot, starts experimenting/. He would go down in history as an immortal lab rat.
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 1
+:DateUnix: 1501287087.0
+:DateShort: 2017-Jul-29
+:END:
+
+
+** I'm about to board a sailing ship (Blue Clipper) in Halifax, Canada, and sail to Let Havre, France. If you do not hear from me in September, we probably suffered a horrible accident and all died.
+
+(Probably not. Sailing is one of the safest hobbies around)
+
+Still, cant help being really excited and somewhat nervous. Mostly because my usual packing strategy - take what's on hand and buy whatever I'm missing at the destination - is really not well suited for the ocean.
+
+AMA
+:PROPERTIES:
+:Author: Anderkent
+:Score: 12
+:DateUnix: 1501266512.0
+:DateShort: 2017-Jul-28
+:END:
+
+*** You need any special qualifications for that gig? Like a sailing license? Or hands-on learning experience?
+
+How'd you get that gig?
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 3
+:DateUnix: 1501281537.0
+:DateShort: 2017-Jul-29
+:END:
+
+**** It's not a gig in that I'm paying for the trip, they're not paying me :p generally for the basic crew there are no particular requirements - for the bigger ships you just sign up with their agent, like [[http://www.maybe-sailing.com]] or windseeker.org.
+
+For the permanent crew, the officers that take care of the trainees and who are actually getting paid, there are some qualifications required but the exact ones will depend on the ship. They need to be legally allowed to command a ship in any case.
+:PROPERTIES:
+:Author: Anderkent
+:Score: 3
+:DateUnix: 1501316627.0
+:DateShort: 2017-Jul-29
+:END:
+
+
+** *I posted the below comment last week but I was two days late to the thread (an eternity in reddit time) so I decided to repost it to get a wider range of feedback.*
+
+So, some of you probably noticed the Erogamer story posted here recently and in a comment thread prior. I started reading it and stopped because I lost interest in it (though I may pick it back up). I want to discuss something that occurs in the story, so *spoilers and NSFW content ahead*.
+
+I've put a link a bit further down, but here's the context you need to interpret that link if you haven't read that story: [[#s][]]
+
+[[https://docs.google.com/document/d/1EvxfLESwTN6E6_Jgw1qB9rGeKQZZ-DO4zZ5t2ZTcQwE/edit?usp=sharing][Here's the ensuing discussion/self reflection. It takes place in chapter 1.6, /Morning After/, of the story.]]
+
+It's a ~950 word section, a quick read. Just wanted to know what some of your thoughts were on this piece and what it says about explicit/implicit consent and the psychology of people, as I'm assuming it's fairly atypical for someone to have a neurological need to be raped.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 6
+:DateUnix: 1501257009.0
+:DateShort: 2017-Jul-28
+:END:
+
+*** You might be interested in reading [[http://opalcp12.wikispaces.com/file/view/Rape+Fantasies.pdf][Rape Fantasies]] [bootleg PDF] by Margaret Atwood, a short story on the subject. Or [[https://www.psychologytoday.com/blog/all-about-sex/201508/why-do-women-have-rape-fantasies][this article]] from Psychology Today that goes into some actual social science.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 6
+:DateUnix: 1501262174.0
+:DateShort: 2017-Jul-28
+:END:
+
+**** (Psychology Today does not generally have a great rep for science.)
+:PROPERTIES:
+:Author: EliezerYudkowsky
+:Score: 2
+:DateUnix: 1501352547.0
+:DateShort: 2017-Jul-29
+:END:
+
+
+*** I think rape fantasies of some kind are a fairly common kink, but the desire to act on them and especially the need not to 'cheat' by giving ANY form of consent is a lot less so - most non-erogamers are very well aware of the dangers that could bring and are much happier if they have, say, shared the idea of their fantasy with a trusted partner first. Also rape, even vaguely consensual 'rape' is unlikely to be what someone wants sexually in the real world if only because you can't give someone feedback on what you like at all.
+:PROPERTIES:
+:Author: MonstrousBird
+:Score: 1
+:DateUnix: 1501328971.0
+:DateShort: 2017-Jul-29
+:END:
+
+
+** Hotels and flights for CrossingsCon were /finally/ booked this week, as well as for our vacation after that! I'm also finally kinda on-track with GRE studying every day, emailing prospective PIs, and otherwise getting on-track for my PhD applications this autumn.
+
+Also, in terms of imagery, how creepy would it be if you looked at a human face, and it was sort of suddenly part-human, part-shark? Like, not gills or gray skin or anthropomorphized. The same face, but suddenly with [[http://images.entertainment.ie/images_content/rectangle/620x372/SHARK2012112145705.jpg][beady black eyes and a disjointed, gaping jaw full of sharp teeth]], but still otherwise human and able to /talk/? The goal here is to warp an actual face into conveying pure, all-consuming, I'm-going-to-kill-you-just-because-you're-there /death/.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1501264502.0
+:DateShort: 2017-Jul-28
+:END:
+
+*** [[http://dh666.deviantart.com/art/Shark-Face-210464737][This one]] somehow manages to look adorable and sad, like it just wants some friends.
+:PROPERTIES:
+:Author: Iconochasm
+:Score: 4
+:DateUnix: 1501266762.0
+:DateShort: 2017-Jul-28
+:END:
+
+**** I see where you're going. It also looks /smack in the middle/ of the Uncanny Valley, which is a lot of what I'm going for. I think if you took away the downward-sloping forehead and eyebrow ridges, made it less emotive in a human way, it would have exactly the level of creepy I want.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1501268341.0
+:DateShort: 2017-Jul-28
+:END:
+
+
+** What sort of reference materials do the members of the [[/r/rational]] community use in their writing processes? I just recently picked up a copy of the Brewer's Dictionary of Phrase and Fable and it has been /awesome/ in terms of general utility.
+:PROPERTIES:
+:Author: MistahTimn
+:Score: 4
+:DateUnix: 1501275706.0
+:DateShort: 2017-Jul-29
+:END:
+
+*** That's a really good question. I feel like I need a reference book to hit cultural common points with people, because otherwise I'll just put in things I know about but that aren't clear to a mass audience.
+
+Like, who can tell what a /dybbuk/ is without googling?
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1501276818.0
+:DateShort: 2017-Jul-29
+:END:
+
+**** u/ToaKraka:
+#+begin_quote
+  Like, who can tell what a /dybbuk/ is without googling?
+#+end_quote
+
+[[/r/eulalia][r/eulalia]]
+
+Jokes aside, hyperlinked endnotes (each opening in its own new tab) would be useful.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 3
+:DateUnix: 1501278227.0
+:DateShort: 2017-Jul-29
+:END:
+
+***** Ok, Redwall and Yiddish speakers.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1501278401.0
+:DateShort: 2017-Jul-29
+:END:
+
+****** No, the joke was that =dibbun= (=child in Redwall Abbey=) sounds vaguely like =dybbuk=. There aren't actually any (runs Google search) ghosts capable of malicious acts of possession in /Redwall/ canon (though I think there have been a few beneficent ghosts).
+
+(Also, I think I may have run across this word previously in a children's book in which the protagonists were half-genie, or something similar.)
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 3
+:DateUnix: 1501278577.0
+:DateShort: 2017-Jul-29
+:END:
+
+
+***** *Here's a sneak peek of [[/r/eulalia]] using the [[https://np.reddit.com/r/eulalia/top/?sort=top&t=year][top posts]] of the year!*
+
+#1: [[https://np.reddit.com/r/trendingsubreddits/comments/56l8xp/trending_subreddits_for_20161009_reulalia/][/r/eulalia is trending!]] | [[https://np.reddit.com/r/eulalia/comments/56lapd/reulalia_is_trending/][4 comments]]\\
+#2: [[https://i.reddituploads.com/d1f67d9a3cf44c36836871ce16160415?fit=max&h=1536&w=1536&s=c7573e888dd45f667119109c671ecea7][Martin the Warrior (Digital)]] | [[https://np.reddit.com/r/eulalia/comments/5h29ad/martin_the_warrior_digital/][6 comments]]\\
+#3: [[https://i.reddituploads.com/6be75e4044024be8be43ec75f7b36460?fit=max&h=1536&w=1536&s=c12332f6a6a289ca4738b63e19cc34fa][$15 at Goodwill - Score!]] | [[https://np.reddit.com/r/eulalia/comments/6062xv/15_at_goodwill_score/][18 comments]]
+
+--------------
+
+^{^{I'm}} ^{^{a}} ^{^{bot,}} ^{^{beep}} ^{^{boop}} ^{^{|}} ^{^{Downvote}} ^{^{to}} ^{^{remove}} ^{^{|}} [[https://www.reddit.com/message/compose/?to=sneakpeekbot][^{^{Contact}} ^{^{me}}]] ^{^{|}} [[https://np.reddit.com/r/sneakpeekbot/][^{^{Info}}]] ^{^{|}} [[https://np.reddit.com/r/sneakpeekbot/comments/6l7i0m/blacklist/][^{^{Opt-out}}]]
+:PROPERTIES:
+:Author: sneakpeekbot
+:Score: 2
+:DateUnix: 1501278236.0
+:DateShort: 2017-Jul-29
+:END:
+
+
+**** Cultural common points, and commonalities in storytelling and mythology are two things I'm really interested in! It's incredible the similarities in folktales that cultures came up with to explain natural phenomenon. I think it's important to identify those commonalities in storytelling as a way of making our stories more appealing without watering things down.
+:PROPERTIES:
+:Author: MistahTimn
+:Score: 2
+:DateUnix: 1501283230.0
+:DateShort: 2017-Jul-29
+:END:
+
+
+** Is there any good takes on Game of Thrones? I started a couple of fics but they got nowhere.
+
+Is there some underliing reason for why it si so hard to write a fic for it?
+:PROPERTIES:
+:Author: hoja_nasredin
+:Score: 3
+:DateUnix: 1501322536.0
+:DateShort: 2017-Jul-29
+:END:
+
+*** There are a couple of reasons that writing a fic for it is harder than writing a fic for, say, Saved by the Bell:
+
+1. There are a ton of characters and a ton of plotlines, which means that you either have to address all of them (which is a ton of work) or just drop some of them immediately (which feels unsatisfying).
+2. The series is renowned for its good characterization, good prose, and complex plotting. All those things take both time and a skilled author, and if you ditch them your imitation will be rather pale.
+3. There are some series that have a good core idea and bad execution, or a good premise that lots of plots can naturally spring from. I would argue that Game of Thrones is a /fairly generic setting/ which makes it not as amenable to fanfic.
+
+I was watching a video by [[/u/hbomberguy]] the other day and he briefly talked about "memeification" of games; I think there's something similar that happens with fanfic. /Harry Potter/ isn't the franchise with the most fanfics just because millions of teenagers grew up with it, it's also because it's very ficcable. /Game of Thrones/ is ... not.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 9
+:DateUnix: 1501336939.0
+:DateShort: 2017-Jul-29
+:END:
+
+**** Yeah, those are the three points that came to me when I read this question (I couldn't articulate them quite that well).
+
+I'd also add that -4- ASoIF partly relies on one-shot "tricks" that play with the audience's expectations regarding Fantasy tropes. The Book 1 execution, the Red Wedding, the "For the Watch" mutiny, Tyrion's trial by combat, etc. Those are all based on placing a character in a "place" that is usually safe-ish by Fantasy standards, and then pulling the rug from under them. Of course they're a lot harder to pull off in fanfics (or in later books/seasons, for that matter) because the audience starts to expect them.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 7
+:DateUnix: 1501357078.0
+:DateShort: 2017-Jul-30
+:END:
+
+
+** So I finished F.E.A.R. and... meh. The graphics are okay (especially for a 10-yo game), although the environments start to blend in after a while (there's a /lot/ of gray). The IA is interesting and the fights are engaging, but they also become more and more repetitive as the game advances, mostly because they become less about exploiting terrain and weapons to flank enemies and more about using the slow-mo to headshot everyone before they have time to react. The horror segments get old really fast, and the story is really bland and boring.
+
+Besides the actual plot (unethical creepy experiments on little girl which turned her into an unstoppable ghost), the main problem is that the story feels detached from your actions. The main character is mute, which means the other characters kind of talk around him HL2-style, and also means that you can't share any of the valuable intel you might get during you visions or after talking to Fettel.
+
+Also all of the NPCs you meet do something really stupid, get captured, and/or die within 10 minutes of you meeting them, so it's hard to get engaged.
+
+I'd love to play other games that exploit the general combat system (small squads of smart enemies with powerful weapons and lot of movement abilities), but the sequels abandoned all the distinctive gameplay elements and most of the aesthetic and only kept the generic creepy little girl, the generic cannibal bad guy and the generic evil corporation, so that's a dud.
+
+Though I guess I could get back to playing Superhot, since the gameplay is kinda similar.
+
+EDIT: Also, reading papers and conferences about FEAR's AI is interesting... it does confirm that the AI is roughly as smart as I thought it was. The bulk of the of the perceived intelligence comes from 3 factors:
+
+- Actual intelligent placement. The AI (usually) is smart enough to know when it needs to move to a different cover.
+
+- Just like the Half Life soldiers, they have enough health and good reflexes that you actually perceive them as a threat.
+
+- They speak a lot to signal awareness of their environment. "Grenade!", "He killed all my squad", or "I see a flashlight!".
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 3
+:DateUnix: 1501331483.0
+:DateShort: 2017-Jul-29
+:END:
+
+*** u/orthernLight:
+#+begin_quote
+  EDIT: Also, reading papers and conferences about FEAR's AI is interesting... it does confirm that the AI is roughly as smart as I thought it was. The bulk of the of the perceived intelligence comes from 3 factors:
+
+  Actual intelligent placement. The AI (usually) is smart enough to know when it needs to move to a different cover.
+
+  Just like the Half Life soldiers, they have enough health and good reflexes that you actually perceive them as a threat.
+
+  They speak a lot to signal awareness of their environment. "Grenade!", "He killed all my squad", or "I see a flashlight!".
+#+end_quote
+
+I'm not a very experienced gamer, but I liked the early levels of Jedi Outcast for about the same reason (though it generally gets a whole lot easier later on).
+:PROPERTIES:
+:Author: orthernLight
+:Score: 1
+:DateUnix: 1501368737.0
+:DateShort: 2017-Jul-30
+:END:
+
+
+** Let's see if we can start an MMA thread:
+
+Cormier made weight without a towel this time! I am so excited. As someone on [[/r/MMA]] said, I just know there's an obstacle cause of coke, pregnant women, and dick pills for JJ to run through and potentially ruin things still somehow.
+
+I'm also excited to see Demian Maia finally get a title shot. I am just a huge fan of the jits.
+
+Anyway, my heart says DC but my head says JJ.
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 2
+:DateUnix: 1501318554.0
+:DateShort: 2017-Jul-29
+:END:
+
+
+** [[https://youtu.be/poGuzDTll2g][/Family Guy/ on Superintelligence]] and [[https://youtu.be/6ofnDdi-vfw][Sketch Comedy about the history of computing]]
+:PROPERTIES:
+:Author: TheUtilitaria
+:Score: 2
+:DateUnix: 1501403804.0
+:DateShort: 2017-Jul-30
+:END:
+
+
+** How do you guys view [[/u/thishasnotgonewell]] 's work? Is it rational enough? Also I keep wanting to watch another anime but all the protags turn stupid after a few episodes. What is a good rational anime or tv series? I would prefer one with magic.
+:PROPERTIES:
+:Author: I_Hump_Rainbowz
+:Score: 2
+:DateUnix: 1501428937.0
+:DateShort: 2017-Jul-30
+:END:
+
+*** Finding rational anime is hard man (although I'd like to hear some you've watched that's considered rational!)
+
+I don't know exactly what you've seen but I'll throw out some commonly cited ones that are at least /smart/, if not completely rational:
+
+Log Horizon (Characters trapped in MMORPG world, smarter, more group focused SAO)
+
+Death Note (Smart enough to be fun)
+
+Code Geass (Somewhat smart but in the oft-derided sherlock holmes way where protag makes massive, complicated leaps out of miniscule data)
+
+Can't think of anymore off the top of my head, though I'm sure there is more out there.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 1
+:DateUnix: 1501817104.0
+:DateShort: 2017-Aug-04
+:END:
+
+
+** I recently got a laptop bag (the well-reviewed Timbuk2 Command), and was very disappointed.
+
+The bag I'm using now doesn't fit a laptop, hence the attempt to upgrade, but it has this small outside pocket that I keep my keys, metro card etc. in. Very convenient. The biggest problem with the new one is that it doesn't have that.
+
+Well, it kinda does, that's why I picked it, but it opens on the side, so you have to turn your hand at a weird angle to take anything out.
+
+Which is not so convenient. Also, it's larger than I need, and kinda bulky even when empty.
+
+Basically, what I'm looking for: Large enough for 13” laptop. Beyond that, smaller is generally better, since I want to carry it around pretty much all the time. Convenient outside pocket with zipper Sturdy, since I use it a lot and don't... like buying new things
+
+Any recommendations?
+:PROPERTIES:
+:Author: orthernLight
+:Score: 1
+:DateUnix: 1501378774.0
+:DateShort: 2017-Jul-30
+:END:
+
+*** Sorry, can't really make any recommendations beyond a nice messenger bag or backpack with a laptop pocket in general. I got a laptop recently and just decided to go with a much smaller machine :-/.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1501450156.0
+:DateShort: 2017-Jul-31
+:END:
+
+
+** I just finished /The Marvelous Land of Oz/, the sequel to /The Wonderful Wizard of Oz/. This rather puts the idea of a rational Oz fanfic into a rather different light, what with the Powder of Life, Wishing pills, and a truth-detector good enough to detect lies of omition. Oh, and the transhumanism and the character who develops anxiety over mortality. And of course, no one, with the possible exception of Glinda, is all that rational, because I'm not sure it was ever supposed to make sense.
+
+I also started rereading [[http://takeflight.rovang.org][Power Rangers: Take Flight]], partly with the hope that I could recommend it as a rational fan adaptation of a Super Sentai series. It tries, but it takes a quarter of the series before anyone becomes sufficiently motivated to not just accept the monster-of-the-week status quo. Oh, and there's an episode about Philosophical Zombies.
+
+I feel like it at least has an excuse for the battle-on-foot --- battle-with-mechs formula, but it isn't especially clear about it. Doesn't make up for some of the ... weird... decisions that come about when random civilians get advanced military hardware.
+:PROPERTIES:
+:Author: cae_jones
+:Score: 1
+:DateUnix: 1501388714.0
+:DateShort: 2017-Jul-30
+:END:
+
+
+** Reminder: Even Big Yud is a /[[https://www.fanfiction.net/s/5193644][Time Braid]]/ fanboy!
+
+[[https://www.fanfiction.net/r/5193644/31/1/][His review on the story's final chapter]] ([[http://archive.is/OY9yA][archive]]) (search for =Less Wrong=):
+
+#+begin_quote
+  ...this is almost exactly to [[https://www.fanfiction.net/s/3929411][Chuunin Exam Day]] what [[http://www.hpmor.com][Methods of Rationality]] is to [[https://www.fanfiction.net/s/4240771][Partially Kissed Hero]].
+
+  Well done, well said, and well ended.
+#+end_quote
+
+I wonder whether he's read it more than once.
+
+(No, I /still/ haven't gotten around to making an edited version of the story, despite my own /six/ readthroughs of it...)
+
+--------------
+
+My [[http://i.imgur.com/iwguBrW.jpg][funny image]] from [[http://np.reddit.com/r/rational/comments/6oohm8/d_friday_offtopic_thread/dkjuase][last week]] has borne [[https://boards.4chan.org/soc/thread/25483291][some fruit]] on the Chan.
+
+(Are there any graphology mavens among us?)
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 1
+:DateUnix: 1501257856.0
+:DateShort: 2017-Jul-28
+:END:
+
+*** How do you feel about the authors other works? Namely the Daniel Black and Perilous Waif series?
+:PROPERTIES:
+:Author: GlueBoy
+:Score: 1
+:DateUnix: 1501259229.0
+:DateShort: 2017-Jul-28
+:END:
+
+**** I very vaguely remember disliking /Fimbulwinter/ and giving up on it after just a few chapters, several years ago. I don't recall looking into any distinct series written by ShaperV.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 2
+:DateUnix: 1501259397.0
+:DateShort: 2017-Jul-28
+:END:
+
+***** I hated filbunwinter too, but Perilous Waif was great. Strongly recommend trying it even if Daniel black wasn't for you.
+:PROPERTIES:
+:Author: Anderkent
+:Score: 3
+:DateUnix: 1501266331.0
+:DateShort: 2017-Jul-28
+:END:
+
+
+**** I can't say much about Daniel Black books, but Perilous Waif was a very enjoyable read, if a bit too short. It has fairly solid worldbuilding so far, and it's pretty action-packed. Maybe not the most rational read, but I consumed it all in under a week, and was very disappointed that it ended so soon.
+
+I think there was a post here by Eliezer who recommended it, describing it as "a transhumanist fairytale", and that's spot on. The only other story I've read with similar amounts of transhumanist themes explored sufficiently from "widespread usage" point of view is To The Stars, the sci-fi Madoka fic. I also can recommend it, if you can deal with an unfinished story with glacially slow update schedule. As a nice bonus, it also is much longer, especially if you consider its planned length.
+:PROPERTIES:
+:Author: kna_rus
+:Score: 2
+:DateUnix: 1501280243.0
+:DateShort: 2017-Jul-29
+:END:

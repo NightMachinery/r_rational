@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: Amonwilde
+:Score: 1
+:DateUnix: 1521262610.0
+:DateShort: 2018-Mar-17
+:END:
+
+I agree with your assessment of object-oriented programming as overused, though I'm mainly a functional programmer and I try not to be too partisan when I'm teaching.
+
+If you're operating at a high enough level of abstraction, then, yes, object-oriented programming just seems like a weird application of closures. But paradigms are not really about the computer, they're about the programmer. That is, they're more about culture and general approaches to problems. OO is different not because classes and objects are special, but because when you're thinking in OO, you'll try to solve problems a certain way.
+
+There's more to functional programming than avoiding cache invalidation. I'd recommend Rich Hickey's talk on complexity in the technical sense, as in not entangling one part of a system with another.
+
+[[https://www.infoq.com/presentations/Simple-Made-Easy]]
+
+Regarding not defining state, that's more or less by design. Honestly this article is already pretty borderline for the audience of that blog, which is targeted at digital humanities people who don't tend to have much in the way of CS concerns. But sometimes you have to made compromises and turn up the temperature gradually so the frog doesn't (apocryphally) jump out of the pot.
+
+Thanks for the feedback. I agree with you in general, but wouldn't do anything differently given this audience and what I know about teaching programming. I could be persuaded by some arguments about pedagogy, i.e. experiences teaching programming to people and what they did or didn't get in what order.

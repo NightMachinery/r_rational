@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: blasted0glass
+:Score: 7
+:DateUnix: 1472373304.0
+:DateShort: 2016-Aug-28
+:END:
+
+Interesting.
+
+I can figure out the highest possible floor with 20 tests. Drop the first container out the 20th floor window, then the 20+19=39th floor, then the 20+19+18=57th floor, etc, until it breaks. When the first container breaks start testing the most recent interval. Start with the floor above the last floor the other container survived, work up, and you'll know for sure within 20 tests.
+
+For example, if the first container broke on the 20+19+18+17=74th floor, you've done four tests and you know it can survive up until the 57th floor. Test 58 to 73 (sixteen tests) and when the second container breaks, you are done and you know what floor it survived at maximum.
+
+This strategy doesn't necessarily save me from having to run up and down the stairs a lot. I'm not sure if it minimizes the total flights of stairs one has to cross.
+
+Actually, I know it doesn't: the 20th triangular number is 210, so you could save many flights of stairs by starting on floor 10 instead of floor 20 (then going up by 19 to 39, etc., until you get to 200 exactly). Even then, I'd expect the average number of flights of stairs crossed to be around 2000 (average number of tests is 10, average number of flights is 100, and you have to go both up and down), which means you'll be crossing a flight of stairs every 7.2 seconds. Really you should cross a flight every 5.34 seconds so that in the worst case you will still finish in time (20 tests, container breaks on floor 200, you have to cross 2670 flights of stairs). That's a rough workout for four hours.
+
+Ah well. Did I give the answer you were seeking for the riddle?

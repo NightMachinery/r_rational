@@ -1,0 +1,41 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 3
+:DateUnix: 1495852728.0
+:DateShort: 2017-May-27
+:END:
+
+I can't find any decent information on motherboards for that CPU architecture, and CPU-Z registers components on the motherboard but not the motherboard's model number/manufacturer itself, so I'll have to make some guesses.
+
+Alright, so judging by the CPU, this is a system roughly five years old, right? Based entirely on this, I /think/ the motherboard won't have any problems. Your old AMD HD 7570 uses the same PCI-E x16 that any modern card would use, so it will physically plug in, at least. The fact that the CPU is working with that PCIe interface means that it will work as well. So that's two out of the four major concerns.
+
+The remaining two potential issues are size and power draw.
+
+For size, [[https://images10.newegg.com/NeweggImage/ProductImageCompressAll1280/A4GH_131305274018370460jxIw42qd0Q.jpg?w=660&h=500][this is an image of a Radeon HD 7570]], probably a decent approximation of what you have inside your box. Note that it's low profile; the back doesn't hang much over the actual physical cartridge slot (the yellow bit on the bottom), and the card's height is well lower than the height of the backplate. [[https://images10.newegg.com/NeweggImage/ProductImageCompressAll1280/A4GH_131305274007901256TPWHnHwGCr.jpg?w=660&h=500][Here is the front view]], or the part that you actually plug your monitor into. Note that it's one slot wide, just enough room for a row of ports.
+
+[[http://gpuboss.com/img/gpus/-9223372036849444355/27d8ee24c1a6a08cad7e837c395b55b8-400-256][Here's an image of a stock GTX 770]], which is more or less like the one [[/u/adad64]] brought up (the different manufacturers all have different fan designs, etc, but the basic size will be about the same). First thing to note is that it fills the entire height of the slot, but it also hangs over the actual plug itself for several inches. Long card is looooong. It's hard to tell exactly how far the card hangs over, but these sorts of cards are usually around a foot long, which as you can see in the image, is more than twice as long as your current card.
+
+[[https://images10.newegg.com/NeweggImage/ProductImageCompressAll1280/14-125-614-07.jpg?w=660&h=500][And here's the front]]. Notice that it takes up /two/ slots horizontally. You don't actually need to have a second physical PCI port, but there has to at least be an empty space to mount it in, and if there does happen to be a PCI port in that spot, you can't plug anything into it.
+
+The only way to know if this will fit in your case is by cracking it open and trying to gauge it. This is really a toss-up, as I have no idea what kind of case you have, but it's possible that your case isn't long enough--and there's a chance that some component on the motherboard will stick up in the wrong place, which would prevent a long card from fitting (modern motherboards work around the issue, but cards didn't always used to be this long, and the placement of RAM modules in particular used to be an issue once upon a time).
+
+The last issue is power. Once again, I wasn't able to glean what exact power supply you have, so we'll have to make some guesswork. I found some recommendations online from when the HD 7570 was still current, and there were reports that power supplies of 250-300 watts would work, so there's our low end. If your power supply is that low, it absolutely will not work for this card (the 770 pulls that much /by itself/, leaving nothing for the rest of your system). Recommendations I'm finding online for the 770 suggest a wattage of at least 500-600 W.
+
+Besides the actual power rating, tho, the power supply has to have the right cables to go into it--your current card is low-power enough that it can pull all the power it needs from the PCIe port, but that is not the case for more modern cards. [[http://www.pcgameshardware.de/screenshots/811x455/2013/05/Nvidia_Geforce_GTX_770_Reference_Design_06.JPG][As you can see in this image]], there are a pair of power plugs in the top-right corner of the card (the lego-looking square plugs). One is a six-pin, the other an eight-pin. If your power supply does not contain those plugs tucked away unused somewhere, you won't be able to hook into this card, even if it does somehow grant enough power.
+
+So, to recap: motherboard: probably fine. CPU: fine. PSU: probably insufficient. Space: inconclusive.
+
+If you do decide to upgrade, here's what you need to find out:
+
+- how much room you have in your case to physically fit a card into
+- does your current power supply suffice, or what will you replace /that/ with if it's not.
+
+You mentioned considering waiting to upgrade. That's perfectly reasonable, but it should be noted that (assuming it fits), there's also little problem in getting the video card and power supply now and using them in your new computer when the time comes.
+
+If you do end up buying a power supply to go with the new video card, you'll need [[https://www.newegg.com/Product/Product.aspx?item=N82E16817139200][something like this]]. If you click on the Specifications tab, it will list everything relevant that you might need to know. In particular the wattage (this one is 650W), but also the efficiency ("80 PLUS BRONZE Certified" means that at maximum load, the PSU is at least 80% efficient) and the actual plugs that are included (at the bottom under "Features", it lists "2x PCIe Connector", which is what you'd need. Higher up it lists "2 x 6+2-Pin", which is to say it has two plugs that are arranged in such a way that they can be either 6 or 8 pins if you need them, so one would be used as a 6 pin and the other as the full 8).
+
+Anyway. Sorry for the wall of text, hopefully it was clear enough. Do let me know if you have any other questions.
+
+--------------
+
+EDIT: if you can find the make/model of your motherboard and your power supply, I can narrow things down further, but this is probably at least enough info (I hope) for you to make a decently informed decision otherwise.

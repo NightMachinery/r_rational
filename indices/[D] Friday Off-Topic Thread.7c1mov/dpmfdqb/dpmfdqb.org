@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 4
+:DateUnix: 1510326715.0
+:DateShort: 2017-Nov-10
+:END:
+
+Increasingly weekly update on [[https://docs.google.com/document/d/1vIWf3Nqudgh18j4RK8bm4zOTSKUFl6l9Igvdg1adzGE/edit][The Tesseract Engine]], my ongoing game engine project.
+
+--------------
+
+Last week, I decided I would use the Minetest engine as a base for my own voxel engine. A bit of context I didn't provide then, was that I'd already tried to this exact thing one year ago, and quickly abandoned it on the grounds of the Minetest engine code being a nightmare to read.
+
+The reasoning of me-minus-a-week was that he had become way better at reading code and refactoring projects than me-minus-a-year, after spending an internship doing mostly that, so he'd have an easier time. Well, after spending a few days immersed in Minetest code, I'd say both my "past-me"s were right: I've gotten better at reading code and /my god/ the Minetest code is messy and unreadable. I think I can use it as a source of inspiration, but it will still be faster to do my thing from the ground up.
+
+For those of you who have a limited understanding of programming (which I'm guessing is roughly 0 people), what I mean by messy code is mostly "code that isn't properly compartmentalized". So the part which deals with update the player's movement also deals with a bit of drawing the UI, a bit of updating the sounds depending on their position, a bit of updating the displayed position of the pickaxe you're holding, etc.
+
+The problem with working with messy code (especially for refactoring) is that it's way harder to think about it. If a piece of code only deals with a single concept, then you only need to think about that concept when writing the code. If a piece of code deals with 12 concepts... you get the idea. Any modification you make is more likely to have consequences you didn't foresee, to break in ways you might not even detect until you've forgotten you even rewrote that code, etc.
+
+Minetest is a particularly bad offender; it's an open source project, which means everyone can and does propose modifications to the code, which obviously makes having a coherent vision harder; the project creator mostly left years ago, which means no centralized decision-making, and the code is littered with "// Note to self: maybe this feature is deprecated?" type of comments.
+
+--------------
+
+Anyway, refactoring Minetest is out. I guess what that leaves me with is "Make my own project from the ground up", which kind of feels like a step back.
+
+Last week I was worrying about my lack of progress, I said I was bike-shedding, and now my plan is "do the same as before except with more planning, and using this failed thing as an inspiration". Hurraaaaay.
+
+Seriously, though, I'm weirdly not worried about this. I've opened a text editor, compiled some things, got into the "What does this code do and what should it do?" mentality, which is closer to coding than I was before.
+
+I feel like I've progressed in some abstract way that's invisible everywhere except in my head, but it's still concrete progress. Seeing how someone else does the thing, even if I don't like their approach, gives me inspiration and ideas on how to do the thing.
+
+I guess I should probably make a plan of what I intend to get done before next week, but I have no idea what I can or will do except "Have a plan". Well, I'm confident anyway. Mostly.

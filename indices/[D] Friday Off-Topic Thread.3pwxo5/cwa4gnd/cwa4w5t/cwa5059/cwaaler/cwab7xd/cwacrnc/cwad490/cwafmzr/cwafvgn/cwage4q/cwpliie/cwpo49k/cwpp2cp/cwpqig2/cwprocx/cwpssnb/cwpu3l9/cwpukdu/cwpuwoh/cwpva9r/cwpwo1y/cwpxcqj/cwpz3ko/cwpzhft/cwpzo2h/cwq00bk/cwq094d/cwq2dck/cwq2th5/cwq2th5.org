@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1446770105.0
+:DateShort: 2015-Nov-06
+:END:
+
+We do still need to save to disk at some point, and we might as well save in a known compressed format. Probably not jpeg though.
+
+The alternative is using generic compression and just compressing the pixel array?
+
+In that case you can just store the pixel array without any fancy accessor.
+
+That would be a lot better for a lot of use cases I'm sure, but imagine trying to do that to a video? Sometimes specialized compression is needed.
+
+I'd like this to at least start off being somewhat compatible with actual filesystems. The rawData attribute might by a symlink-equivalent to a real file sometimes.
+
+I want to support the most flexibility, and part of that is accessors for things like jpegs, although hopefully mostly pngs.
+
+If the issue is the specific case of jpegs, that jpegs are lossy, then I don't disagree. Jpeg is a terrible format, and people should use png.
+
+It was probably a poor example. Just pretend I've been saying png if that's the problem.

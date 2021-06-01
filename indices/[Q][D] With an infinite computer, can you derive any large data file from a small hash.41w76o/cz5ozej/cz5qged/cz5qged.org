@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 6
+:DateUnix: 1453327281.0
+:DateShort: 2016-Jan-21
+:END:
+
+#+begin_quote
+  Making your rules better does not help, doubling their accuracy gets you one extra bit, but you probably had to make the rules at least one bit longer to achieve the improvement. You have to remember the rules, too, so no compressing was done.
+#+end_quote
+
+I mostly agree with you, but there are a whole lot of easy rules that are easy to remember but /greatly/ reduce the possibility space.
+
+Like for example, "run spell check". There are [[http://wordfinder.yourdictionary.com/letter-words/5][8,887 5-letter words]] but [[http://www.wolframalpha.com/input/?i=26%5E5][11,881,376 possible combinations of five letters]], which means even that simple check reduces the space by 99.93%. In reality, this check is going to work even better than that, because it's going to knock out all data that's missing spaces between words, all data that's got numbers in the middle of a word, all data that's got upper case letters in the wrong place, etc. Same thing applies to "run grammar check".
+
+But that still won't knock out enough of the random data to make much of a difference.

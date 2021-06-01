@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: roystgnr
+:Score: 2
+:DateUnix: 1451781230.0
+:DateShort: 2016-Jan-03
+:END:
+
+Sorry; I originally accidentally pasted a link to [[https://en.wikipedia.org/wiki/Shannon%E2%80%93Hartley_theorem]] when I meant to link to [[https://en.wikipedia.org/wiki/Noisy-channel_coding_theorem]] - I thought I edited that pretty fast, but you must have read it faster.
+
+The channel capacity of a binary channel with 60% accuracy has to be dismal, something like 3% of the bit rate, but you can get arbitrarily close to that: for any epsilon error probability tolerance, you can choose a code with a large enough block size and get ~3% of each block as correct data with sub-epsilon probability of failure.

@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508136325.0
+:DateShort: 2017-Oct-16
+:END:
+
+I can't really guess why your setup isn't making paperclips from a screenshot where you've sold everything and have no factories. It would be easier if you showed me the setup that should be making clips but isn't.
+
+I would recommend bringing up the developer console (F12) and typing in:
+
+memory -= 20;
+
+press enter, and then
+
+processors += 20;
+
+See if that gets you around your processor bug. I don't think the displayed number of processors changes until you buy one with the actual button, but you should see your max ops fall and the rate of ops gain increase.

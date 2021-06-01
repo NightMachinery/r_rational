@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: cae_jones
+:Score: 1
+:DateUnix: 1445285676.0
+:DateShort: 2015-Oct-19
+:END:
+
+As to the question of designing the AI, a super-naive and inefficient implementation (aka the first thing that came to mind) would be keeping track of the scores of each play, finding the smallest ratio among them, then filling an array with that many instances of each choice, and choosing from the array with a pseudorandom number.
+
+I wouldn't recommend it if you're aiming for optimal. It's just the first thing that came to mind. It also gets messy if you play sufficiently many rounds that the ratios don't reduce well (5:8:7 is icky enough).

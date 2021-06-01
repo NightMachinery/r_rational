@@ -1,0 +1,11 @@
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1444176291.0
+:DateShort: 2015-Oct-07
+:END:
+
+Indeed, I agree. But if you do the calculations, you should still find it quite difficult to obtain answers which are even moderately long.
+
+For example: suppose an answer has 50 characters (i.e., about ten words). There are 26 letters in the English language plus space, which leads to 27^{50} possibilities. Each question can cut down the space by a factor of 2 at most, so you will need at least log_2(27^{50)} questions; dividing this by, say, 7 questions a day, you get about 34 days.
+
+You can probably do much better by making use of the redundancy of the English language, whose entropy is not that high, though your ability to use various error-correcting codes for this purpose is extremely limited by the fact that you need to fit the questions on an 8.5x11" piece of paper in 12 point font.

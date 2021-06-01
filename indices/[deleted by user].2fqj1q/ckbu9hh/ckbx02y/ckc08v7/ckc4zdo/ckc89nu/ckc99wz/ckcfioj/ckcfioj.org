@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: duffmancd
+:Score: 3
+:DateUnix: 1410183403.0
+:DateShort: 2014-Sep-08
+:END:
+
+Physics Student here. As I understand it Energy is not a dimension in the (nonmathematical) usual sense of the word. It is a dimension of phase space but that's a bit different.
+
+Edit: replace "field" with variable or parameter below. I'm not the best at ELI5
+
+A dimension is the map on which physics is built. We can define the state of the universe by defining the value of various fields at each point. (A point being a unique combination of values of each "dimension"). Let's use the toy universe of a 2D plane with a single field, let's call it temperature for something intuitable, changing through time. If we define the temperature for each (x,y,t) point we have complete knowledge of the universe. Now let's try using T as a dimension. There is not necessarily going to be a unique time or even any time for each (x,y) point and Temperature combination. I.e. the point (0,0) may never reach 1000C and may fluctuate through 0C several times. Before, each (x,y,t) had one temperature, now each (x,y,T) may have no t, one t or many times. I hope this simple example shows why some things are called dimensions and others aren't. Of course things become more complicated with spacetime, complex and tensor fields etc. but the basic difference remains.
+
+On the other hand if we talk about phase space the entire universe is represented by a point (or line if you separate out time as special) in a multidimensional space. In fact usually infinite-dimensional space. In this case for each point in our original space the Temperature is a dimension, to use the above example. I.e. you have the T(0,0,0) dimension and the T(0.001,0,0) dimension and the T(0,3.1415,42) dimension and the ... But this is a slightly different sense of the word.
+
+So in a universe with 0 physical dimensions you have one point, so just one value of whatever fields exist in it (And they have to be scalar or rank-0 tensor fields as directions don't exist). But, you can still store infinite data in it (keep in mind there are different infinities so you couldn't store the value of a real N-D field in an ordinal (1,2,3...) value. But you can store a real/complex N-dimensional field in one real number.)

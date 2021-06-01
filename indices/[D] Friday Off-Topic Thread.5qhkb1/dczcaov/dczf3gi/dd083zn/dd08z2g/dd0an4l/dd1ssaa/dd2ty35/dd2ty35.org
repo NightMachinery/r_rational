@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 3
+:DateUnix: 1485737869.0
+:DateShort: 2017-Jan-30
+:END:
+
+#+begin_quote
+  This analogy is known to break down in at least two ways. The first is that mathematical models do not correspond to physical reality; the actions a computer can execute are distinct from its mathematical model by the vagaries of its implementation. This reduces it to a physical model which is, as far as we can observe, far more complicated than basic logic gates.
+#+end_quote
+
+First off, I should note that this has no bearing on my main point. Second of all, I actually /pointed it out in my original comment/:
+
+#+begin_quote
+  (Well, at least from a computational perspective. Physically, of course, most computer chips use currents and circuits to represent the 0's and 1's--but that's a matter of representation. When we consider the computer program /as a mathematical object/, the bits are fundamental.)
+#+end_quote
+
+I'll reiterate what I said then: the fact that physical computers in the real world are implemented using real-world physics (duh!) does not change the fact that any mathematical model of a computer holds bits as fundamental.
+
+#+begin_quote
+  Secondly, there is no rule against having mathematical models which include complex fundamental actions. Oracle machines are one good example. These can implement arbitrarily complex, uncomputable actions that are explicitly not decomposable.
+
+  One flaw in your thinking largely arises from the confusion of fundamental behaviours with simple behaviours, which turns the argument into a thinly veiled circular one. In essence you seem to suppose that because each fundamental truth is self-descriptive, they must all be equally self descriptive. This need not be true, as an oracle machine demonstrates.
+#+end_quote
+
+You are confusing a formal system with its model. It is certainly possible to define into existence mathematical objects which are uncomputable. For instance, Chaitin's constant is explicitly uncomputable, and yet we have no difficulty talking about it. However, this simply passes the buck down a level: even if you want to posit the existence of uncomputable things, those things still must be /well-defined/. To talk about any mathematical object at /all/, you must have a computable, finite description which is capable of uniquely specifying that object out of all other possible objects--and this is true regardless of whether the object itself is uncomputable.
+
+Your mistaken assumption was that I required all objects be /computable/; this is not the case. What I /do/ require, however, is that all objects be /describable/. Certain models of hypercomputation involving oracle machines, for instance, are well-defined, if uncomputable. If you walked up to me and said, "Let's talk about Zeno machines!", I'd happily acquiesce. However, if you walked up to me and said, "Let's talk about this arbitrary mathematical object that does a bunch of things in an extremely complicated manner which I can't describe to you because there's no computable description," I'd simply give you a funny look--because at that point, you're not /referring/ to anything with your words.
+
+It's possible (conceivable) that consciousness is uncomputable. If so, however, its description must /still/ be simple in the Komolgorov sense. Crying "But, uncomputability!" doesn't solve the problem at all. You still have to provide me with a well-defined mathematical function which behaves like consciousness--and /that/, in turn, means decomposing it into something that is decidedly /not/ conscious.
+
+(Incidentally, I should note that I find the notion that consciousness is uncomputable extremely implausible--but that's irrelevant to my main point here, which is that even if I were to grant that consciousness /was/ uncomputable, that still wouldn't change the fact that it cannot be fundamental.)

@@ -1,0 +1,52 @@
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 3
+:DateUnix: 1488170919.0
+:DateShort: 2017-Feb-27
+:END:
+
+The formatting in your comment is really wonky, so I can't really tell what the expressions you're working with are meant to represent. In any case, let me try expanding your original number a bit more slowly:
+
+#+begin_example
+  (10^68)^(10^68)^(10^68)
+#+end_example
+
+Now, I'm going to place a set of dollar signs around the part of the expression that we're going to expand first, like so:
+
+#+begin_example
+  (10^68)^$(10^68)^(10^68)$
+#+end_example
+
+Let a = 10, b = 68, and c = 10^{68} . Then we have:
+
+#+begin_example
+  (10^68)^((a^b)^c) = (10^68)^(a^(b*c))
+#+end_example
+
+Replacing the variables with their actual values once more, we get:
+
+#+begin_example
+  (10^68)^(a^(b * c)) = (10^68)^(10^(68*10^68))
+#+end_example
+
+Now, let a = 10 and b = 68 again. This time, however, we'll let c equal the entire rightmost part of the expression (indicated with dollar signs):
+
+#+begin_example
+  (10^68)^$(10^(68*10^68))$
+#+end_example
+
+Performing the replacement:
+
+#+begin_example
+  (a^b)^c = a^(b*c)
+#+end_example
+
+Putting the numbers back in:
+
+#+begin_example
+  a^(b*c) = 10^(68*10^(68*10^68))
+#+end_example
+
+And so we have a final expansion of 10^{68 * 10^(68 * 10^{68}}).
+
+Let me know if any part of that didn't make sense.

@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: derefr
+:Score: 1
+:DateUnix: 1507840751.0
+:DateShort: 2017-Oct-13
+:END:
+
+I didn't mean to imply that adults weren't "just working from a wider set of experience."
+
+My understanding is that the human brain isn't all that special as an ML model; it just has lots and lots of opportunity for online training, training that even includes continuous error-deltas (current sense data, vs. predicted state of the world given previous sense data + motor commands) rather than binary pass-fail distinctions.
+
+Humans (again, AFAIK) pass through the "stages of learning" simply due to the magnitudes of the training they've done.
+
+If you know some Comp Sci, consider a B+-tree: when a node in a tree gets enough children, it will split, turning itself into a parent for two children and distributing its previous children between those. In an abstract tree, those new child nodes made to hold the redistributed grandchildren are usually just determined by something like sorting order. But in a conceptual-hierarchy "tree", such child nodes---even if created simply due to the strain of holding onto so many child examples of something---might distinguish those examples into more refined categories, and thus serve, when axonally excited, as the qualia for new concepts, making that higher-level concept accessible.
+
+In such a model of the brain, the only way to build your conceptual hierarchy "higher"---to move to a later Piaget stage---is by observing enough slightly-different examples of things to build a higher and higher abstraction hierarchy. My belief is just that this requires raw sense data---living day-to-day life for years---rather than "hard thinking." You can't accelerate it, it's all amount of the amount of raw training data fed in. So, as you live and age, it just gradually happens.

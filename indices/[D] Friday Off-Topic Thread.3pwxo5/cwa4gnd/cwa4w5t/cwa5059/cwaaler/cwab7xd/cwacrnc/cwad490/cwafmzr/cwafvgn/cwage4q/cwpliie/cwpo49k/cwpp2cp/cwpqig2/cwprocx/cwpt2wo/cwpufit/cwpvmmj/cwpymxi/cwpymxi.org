@@ -1,0 +1,76 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1446763336.0
+:DateShort: 2015-Nov-06
+:END:
+
+#+begin_quote
+  You started off talking about filesystems, then you shifted to caching, now you're talking about microservices. Pick one.
+#+end_quote
+
+Microservices are an example of a non-graphics use for this. You mentioned that you thought I had a background in graphics, and that I should think about it from other perspectives, so I brought up an example related to scientific computing.
+
+I think the context was /pretty/ clear there. English is a high context language, and it's like you're parsing smaller context blocks then I'm used to.
+
+#+begin_quote
+  Stop giving random incoherent examples and tell us what the exact problem is that you're trying to solve.
+#+end_quote
+
+That's a /bad/ way of dealing with system architecture. A better question would be "What does the api look like, and would it let people develop things significantly faster?".
+
+Have you heard the term "Path of least resistance lead me on" or "local maxima"?
+
+The answer to "how do I deal with data" isn't "build a filesystem", it's "move the tape to this point and read the contents into memory".
+
+It's easy to solve specific problems, it's a lot harder to build api's and architectures that people can use.
+
+A big part of it is politics, like what kind of workflow does it work well with, and what architectures work well with.
+
+There isn't one particular problem that I'm trying to solve, there's a set of use-cases that I think would be much better served by this. Use cases that I think are going to be more important going forward.
+
+On top of that, this question is obviously a trap.
+
+I give one of the uses cases, and you give a quick hack like using inotify or a one-off RPC daemon to solve it. But the point isn't any one use case, it's about creating an environment that's good for distributed tasks and small programs that do one with well.
+
+#+begin_quote
+  But, okay, presumably you're using it as a metaphor for 'large application that does something significant' versus 'lots of trivial little Legos that can be bolted together to do significant things.' Congrats, you have reinvented the *nix approach.
+#+end_quote
+
+I believe that I started talking about this by [[https://www.reddit.com/r/rational/comments/3nkz2y/d_monday_general_rationality_thread/cvp34mz][saying]] /to you/ that
+
+#+begin_quote
+  I'm a big proponent of the unix way, but I think it falls apart these days, for a number of reasons.
+#+end_quote
+
+So yeah, this is highly related to the unix way. But applying it to be able to work with more complicated data structures and arrangements.
+
+#+begin_quote
+  I was really going more for "people who know what they're talking about think that what you're talking about is incoherent and/or wrong",
+#+end_quote
+
+[[http://lesswrong.com/lw/lx/argument_screens_off_authority/]]
+
+I do very much appreciate feedback. But we've mostly debated definitions here. That's useful for helping me to communicate better, definitely.
+
+I meant it as "Obviously I'm not using good terminology" with a hint of "you have rigid definitions gained by working years in the industry, I'm probably not using them right".
+
+Maybe this is an issue of the size of your context blocks? And I mean that in the least insulting way possible. Being pissed of could easily cause you to choose the least charitable context for my statements.
+
+It wasn't meant as an insult originally.
+
+#+begin_quote
+  First, it's bazaar.
+#+end_quote
+
+In most contexts, I'd be thankful for the correction. But intent matters and I think that's probably just petty. Obvious there's some hostility here, and there was before as well. That's part of why I waited a few weeks before bringing this up again.
+
+I'm not sure what to do about that. I tried to put you at ease with all the compliments, and repeatedly stating that I drew inspiration from your block system. I've admitted culpability and a failure to communicate.
+
+I've subtly tried to show you that part of the misunderstanding may be on your end, and correct it, without being too upfront and insulting about it.
+
+I don't think I can really communicate this with all the meta-communication going on. I don't know if you're willfully misunderstanding me, but I know you're not giving my arguments the benefit of the doubt.
+
+Anyway, I'm pretty pissed off right now. I'll pick this up again in a week or two if you have no objections. I'll hopefully have written a bit more solid of a description.
+
+I'd appreciate your feedback on that whenever it gets released. Give it some proof-reading, keep it good and connected to reality, try to keep it low-context and coherent.

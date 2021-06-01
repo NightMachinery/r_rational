@@ -1,0 +1,34 @@
+:PROPERTIES:
+:Author: recursiveAI
+:Score: 1
+:DateUnix: 1426902674.0
+:DateShort: 2015-Mar-21
+:END:
+
+Make their /transcription/ mechanism capable of only N copies. Details:
+
+From standard theory of Von Neumann self-replicators, your nano bots can be algebraically represented as:
+
+a + b + c + f(a + b + c) where
+
+- a = the part that constructs (a+b+c) from string f(a + b +c) and incidentally consumes string f(a + b +c) i.e. translator
+
+- b = the part that makes two copies of string f(a + b + c) i.e. transcriptor
+
+- c = control mechanism that first activates (b), and then activates (a), and then joins together the newly minted (a + b +c) to f(a + b +c)
+
+This is your basic gray goo scenario, assuming we conveniently solve constraints like energy sources, etc.
+
+Now, to make it safe, here's the twist :
+
+- Instead of designing (b) as a copier, we simply design it as cutter.
+
+- Then we replace the string f(a + b + c), with a much longer repeating super-string f(a+b+c) + f(a+b+c) + f(a+b+c) +... N times.
+
+- (a) is suitably tweaked to consume /only/ one f(a+b+c) and ignore the repeating bits, when it constructs the child bot.
+
+- (c) now joins together the child bot and what's left of the super-string
+
+That's it. Only the /most recent/ child bot with the super-string is capable of replicating and it inherits the super-string shortened by f(a+b+c), until it runs out of string. Since the much simpler (b) is now incapable of makes copies, there is no more information available to replicate. Note that at the nano-level what we call a string is really a string of molecules. The line between software and hardware is blurred. There is no danger of the software accidentally mutating into a viable horror, in this scenario.
+
+Edit: Cleaned up for clarity. Also, one downside(?) is that population growth is no longer exponential and is /much/ slower.

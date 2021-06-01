@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1446755675.0
+:DateShort: 2015-Nov-06
+:END:
+
+#+begin_quote
+  diffs for any highly compressed/globally compressed format are unlikely to be smaller than the original.
+#+end_quote
+
+In theory they could be. "Start at byte 0xDEADBEEF, change the next 27 bytes to <foo>"
+
+In practice, it's doubtful it would work. Even if it did, you'd have many of the same issues that you run into with backups and VCSes -- lose your base, you're hosed. Lose one change, you're hosed. Applying all the changes takes time. Base + changes takes substantially more storage than base. Probably more issues that I'm not thinking of offhand.
+
+[[/u/traverseda]], comments?

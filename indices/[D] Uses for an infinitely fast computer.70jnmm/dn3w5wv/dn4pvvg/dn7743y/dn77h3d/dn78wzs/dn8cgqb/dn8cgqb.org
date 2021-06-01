@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: sparr
+:Score: 1
+:DateUnix: 1505854055.0
+:DateShort: 2017-Sep-20
+:END:
+
+#+begin_quote
+  Browser-as-simulator is not a security risk.
+#+end_quote
+
+Consider, for a moment, a program running in that simulator that is intelligent enough to recognize the unexpected effects of a buffer overflow and then take advantage of them. Any exploit that exists in your javascript (or whatever) engine is an exploit that can be /fully/ utilized by a smart enough agent running within the engine.

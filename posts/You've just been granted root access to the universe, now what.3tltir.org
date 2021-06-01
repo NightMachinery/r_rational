@@ -5,6 +5,7 @@
 :Author: Rationalfideism
 :Score: 13
 :DateUnix: 1448049311.0
+:DateShort: 2015-Nov-20
 :END:
 Taking this seriously, as in it happens tomorrow to you. No limitations. What changes do you actually make and what values are you basing your decisions off of? Do you tell people? To what extent do you share your power with others or involve them in decisions regarding it's use?
 
@@ -16,11 +17,13 @@ Edit2/ Really everyone? The minute you're handed near definitive proof that our 
 ** I accidentally destroy everything. Fast. Probably immediately. What sort of half-assed omnipotence put /me/ in charge of physics?
 :PROPERTIES:
 :Author: Sparkwitch
-:Score: 33
+:Score: 37
 :DateUnix: 1448055350.0
+:DateShort: 2015-Nov-21
 :END:
 
-*** #+begin_quote
+*** u/Chronophilia:
+#+begin_quote
   /"Hold my beer and watch this!"/\\
   -Omega
 #+end_quote
@@ -28,12 +31,14 @@ Edit2/ Really everyone? The minute you're handed near definitive proof that our 
 :Author: Chronophilia
 :Score: 27
 :DateUnix: 1448063309.0
+:DateShort: 2015-Nov-21
 :END:
 
 **** This may be the best comment I've seen on reddit.
 :PROPERTIES:
 :Score: 2
 :DateUnix: 1448144720.0
+:DateShort: 2015-Nov-22
 :END:
 
 
@@ -44,14 +49,16 @@ I would probably attempt to reverse entropy, and end up wrecking physics irrepar
 :Author: High_king_of_Numenor
 :Score: 1
 :DateUnix: 1448431358.0
+:DateShort: 2015-Nov-25
 :END:
 
 
 ** Save current state to nonvolitile storage and set up a cron job to restore that state. If I make changes later, and like them, i can kill the cron job, and update saved state.
 :PROPERTIES:
 :Author: clawclawbite
-:Score: 25
+:Score: 26
 :DateUnix: 1448054320.0
+:DateShort: 2015-Nov-21
 :END:
 
 *** If something goes Horribly Wrong™ and you're incapacitated beyond being able to reverse your changes, and then the cron job restores the universe to exactly the state recorded, what prevents the fresh instance of you from proceeding with exactly the same plan and making exactly the same mistake again?
@@ -61,8 +68,9 @@ You need some kind of persistent information; an ability to signal to yourself t
 In fact there's a sense where "restoring from backup" then having the universe go through the same steps "again" isn't actually a separate thing from the first time through; it's exactly the same set of states with no distinguishing variable out of place, calling them /different/ is aphysical nonsense. So, arguably, that cron job ends the universe instead of saving it.
 :PROPERTIES:
 :Author: noggin-scratcher
-:Score: 19
+:Score: 21
 :DateUnix: 1448054855.0
+:DateShort: 2015-Nov-21
 :END:
 
 **** Journal perhaps? Or a changelog; record what you're doing and have it sync up periodically with the copy. It itself would only be low capcity binary, so contaminants being released would be low. You could reasonably figure out what went wrong, or atleast what not to do reading it. Eventually, you'll hit an optimal path.
@@ -70,6 +78,7 @@ In fact there's a sense where "restoring from backup" then having the universe g
 :Author: eshade94
 :Score: 9
 :DateUnix: 1448064018.0
+:DateShort: 2015-Nov-21
 :END:
 
 ***** Seems like a vulnerability vector for potentially dangerous things to escape via.
@@ -77,6 +86,7 @@ In fact there's a sense where "restoring from backup" then having the universe g
 :Author: nicholaslaux
 :Score: 2
 :DateUnix: 1448111882.0
+:DateShort: 2015-Nov-21
 :END:
 
 ****** If the bandwidth is low enough?
@@ -84,6 +94,7 @@ In fact there's a sense where "restoring from backup" then having the universe g
 :Author: ArgentStonecutter
 :Score: 2
 :DateUnix: 1448274150.0
+:DateShort: 2015-Nov-23
 :END:
 
 
@@ -92,6 +103,7 @@ In fact there's a sense where "restoring from backup" then having the universe g
 :Author: clawclawbite
 :Score: 3
 :DateUnix: 1448056048.0
+:DateShort: 2015-Nov-21
 :END:
 
 ***** Probably the simplest, safest, and most foolproof way of preventing an endless reload loop would be to have the persistent data be just a plain counter for the number of load cycles that have been done. That way the restored version of you will have at least /some/ slightly different inputs for each cycle and be able to make some different decisions on that basis without worrying about those decisions being prejudiced by whatever might have killed the universe last time around.
@@ -99,8 +111,9 @@ In fact there's a sense where "restoring from backup" then having the universe g
 If I wake up and see the counter registering "2" I'm going to respond very differently than if I wake up and see the counter registering "1,002,592".
 :PROPERTIES:
 :Author: FaceDeer
-:Score: 13
+:Score: 12
 :DateUnix: 1448065347.0
+:DateShort: 2015-Nov-21
 :END:
 
 ****** I would write down a list of everything I wanted to try, in order. 1, 2, 3, etc.---/before/ looking at the counter for cycles.
@@ -110,8 +123,9 @@ Because what happens if my instinct for 2 is virtually the same as 10? Or 60 and
 At least this way, I'd have some hope of seeing, oh, it's already on loop four. 1-3 must have some problems there.
 :PROPERTIES:
 :Author: HeirToGallifrey
-:Score: 13
+:Score: 14
 :DateUnix: 1448067886.0
+:DateShort: 2015-Nov-21
 :END:
 
 ******* I think it's an unlikely risk, since the checklist will effectively already be present in your mind anyway. It's not a problem if your instincts for responding to loops 60 and 90 are basically the same as long as by the time you hit loop 1000 that causes you to try something a little different. Loops are "free", after all. There's absolutely no cost to repeating the same loop a million times as long as you break out of it on loop 1000001.
@@ -119,6 +133,7 @@ At least this way, I'd have some hope of seeing, oh, it's already on loop four. 
 :Author: FaceDeer
 :Score: 6
 :DateUnix: 1448068624.0
+:DateShort: 2015-Nov-21
 :END:
 
 ******** There are finite amount of plans finite mind can come up with. So, starting from some very huge number, response always will be the same and you go into infinite loop. HeirToGallifrey's idea is useful, and some kind of additional comments in backup is even more useful.
@@ -126,6 +141,7 @@ At least this way, I'd have some hope of seeing, oh, it's already on loop four. 
 :Author: Dead_Atheist
 :Score: 3
 :DateUnix: 1448113032.0
+:DateShort: 2015-Nov-21
 :END:
 
 ********* That doesn't make the mind any less finite, though. Unless your first act after backing up is to somehow make your mind "infinite" no amount of additional comments are going to change that.
@@ -137,6 +153,7 @@ Heck, given an infinite amount of loops, that "integer" will eventually grow to 
 :Author: FaceDeer
 :Score: 1
 :DateUnix: 1448125170.0
+:DateShort: 2015-Nov-21
 :END:
 
 ********** I was thinking about this situation:
@@ -150,6 +167,7 @@ If you decide to go with instincts, there are a lot of space for mistakes. Cost 
 :Author: Dead_Atheist
 :Score: 1
 :DateUnix: 1448155964.0
+:DateShort: 2015-Nov-22
 :END:
 
 *********** Not so, IMO, for a number of reasons.
@@ -167,6 +185,7 @@ I think you're just not accounting for the fact that I've got /infinite tries/ a
 :Author: FaceDeer
 :Score: 1
 :DateUnix: 1448159691.0
+:DateShort: 2015-Nov-22
 :END:
 
 ************ 1)It looks like you think that we write list after we see counter. So probably you missed what the point of list is.
@@ -194,6 +213,7 @@ If you have same good idea pseudo-randomizer(not intuition), that use counter as
 :Author: Dead_Atheist
 :Score: 1
 :DateUnix: 1448192957.0
+:DateShort: 2015-Nov-22
 :END:
 
 ************* I was assuming that the save point is the very first thing you do once you've got this power. That maximizes the range of options for what you can do afterward. I'm not sure what the point of not looking at the counter after loading the save is - if you're trying to be deterministic you should have done that stuff before making the save point, that's the only way to be sure.
@@ -207,9 +227,11 @@ I'm actually starting to have trouble figuring out what you think is wrong, here
 :Author: FaceDeer
 :Score: 1
 :DateUnix: 1448213471.0
+:DateShort: 2015-Nov-22
 :END:
 
-************** #+begin_quote
+************** u/Dead_Atheist:
+#+begin_quote
   I'm actually starting to have trouble figuring out what you think is wrong
 #+end_quote
 
@@ -220,6 +242,7 @@ It looks like I just can't speak English good enough to convey what I was trying
 :Author: Dead_Atheist
 :Score: 1
 :DateUnix: 1448215510.0
+:DateShort: 2015-Nov-22
 :END:
 
 *************** The "backup of last resort" is meant as a failsafe against exactly that sort of thing. If at some point you think to yourself "hey, let's just give the Wheel of Physics a spin and see what happens" you at least get another chance after everything goes blooie (assuming you didn't make another backup right before trying something stupid like that).
@@ -229,6 +252,7 @@ I suspect the problem is English itself. It was never designed with these sorts 
 :Author: FaceDeer
 :Score: 1
 :DateUnix: 1448215870.0
+:DateShort: 2015-Nov-22
 :END:
 
 
@@ -245,8 +269,9 @@ Can you reliably reverse engineer your own thought patterns for all those attemp
 Maybe many of those versions of you /did/ find the solution, only they just couldn't bring themselves to do it. Maybe they reasoned that some other you will do it, once the counter gets too large for their excuses to fly. Maybe 1,002,592 is that threshold, and it all comes down to you. Are you ready to die for what is right, or are you going to put it off for just one more lifetime?
 :PROPERTIES:
 :Author: ZeroNihilist
-:Score: 9
+:Score: 8
 :DateUnix: 1448091996.0
+:DateShort: 2015-Nov-21
 :END:
 
 ******* Your brain is not the only source of solutions.
@@ -256,6 +281,7 @@ Open wikipedia, use the counter as a seed for a random number generator to find 
 :Author: ArgentStonecutter
 :Score: 3
 :DateUnix: 1448274432.0
+:DateShort: 2015-Nov-23
 :END:
 
 
@@ -264,10 +290,12 @@ Open wikipedia, use the counter as a seed for a random number generator to find 
 :Author: OutOfNiceUsernames
 :Score: 1
 :DateUnix: 1448076898.0
+:DateShort: 2015-Nov-21
 :END:
 
 
-**** #+begin_quote
+**** u/DCarrier:
+#+begin_quote
   If something goes Horribly Wrong™ and you're incapacitated beyond being able to reverse your changes, and then the cron job restores the universe to exactly the state recorded, what prevents the fresh instance of you from proceeding with exactly the same plan and making exactly the same mistake again?
 #+end_quote
 
@@ -276,6 +304,7 @@ I can't help but think of the Endless Eight from The Melancholy of Haruhi Suzumi
 :Author: DCarrier
 :Score: 3
 :DateUnix: 1448070481.0
+:DateShort: 2015-Nov-21
 :END:
 
 
@@ -284,6 +313,7 @@ I can't help but think of the Endless Eight from The Melancholy of Haruhi Suzumi
 :Author: protagnostic
 :Score: 1
 :DateUnix: 1448305309.0
+:DateShort: 2015-Nov-23
 :END:
 
 
@@ -302,6 +332,7 @@ It's like running a particularly sensitive *nix build. Just don't do anything in
 :Author: Arizth
 :Score: 1
 :DateUnix: 1448311852.0
+:DateShort: 2015-Nov-24
 :END:
 
 
@@ -309,6 +340,7 @@ It's like running a particularly sensitive *nix build. Just don't do anything in
 :PROPERTIES:
 :Score: 5
 :DateUnix: 1448054868.0
+:DateShort: 2015-Nov-21
 :END:
 
 
@@ -317,13 +349,15 @@ It's like running a particularly sensitive *nix build. Just don't do anything in
 :Author: Rationalfideism
 :Score: 3
 :DateUnix: 1448064764.0
+:DateShort: 2015-Nov-21
 :END:
 
 **** No they don't, they cease to think the moment the simulation is reset.
 :PROPERTIES:
 :Author: FaceDeer
-:Score: 6
+:Score: 7
 :DateUnix: 1448065400.0
+:DateShort: 2015-Nov-21
 :END:
 
 ***** I mean they think that up until the moment you reset them. So do people when you kill them. What's the difference?
@@ -331,6 +365,7 @@ It's like running a particularly sensitive *nix build. Just don't do anything in
 :Author: Rationalfideism
 :Score: 3
 :DateUnix: 1448068350.0
+:DateShort: 2015-Nov-21
 :END:
 
 ****** I wouldn't /tell/ them I'm about to reset the universe. What would be the point of that? It'll happen instantaneously, they won't see it coming.
@@ -338,6 +373,7 @@ It's like running a particularly sensitive *nix build. Just don't do anything in
 :Author: FaceDeer
 :Score: 2
 :DateUnix: 1448068705.0
+:DateShort: 2015-Nov-21
 :END:
 
 ******* "I didn't tell them I was about to kill them. It was instantaneous, they didn't see it coming." - FaceDeer
@@ -347,6 +383,7 @@ I mean they think it about all the mistakes you're making that cause you to rese
 :Author: Rationalfideism
 :Score: 3
 :DateUnix: 1448072780.0
+:DateShort: 2015-Nov-21
 :END:
 
 ******** Ah, I see. Well, I'd be trying hard /not/ to make mistakes like that, so hopefully that won't happen often. And hopefully root access will let me correct most of them without a full reset, too.
@@ -356,14 +393,16 @@ And if all else fails, people wouldn't know they're /my/ mistakes. I have no int
 :Author: FaceDeer
 :Score: 3
 :DateUnix: 1448073795.0
+:DateShort: 2015-Nov-21
 :END:
 
 
 ** Post to [[/r/rational]] and ask for advice. Probably as a hypothetical.
 :PROPERTIES:
 :Author: trifith
-:Score: 29
+:Score: 33
 :DateUnix: 1448050649.0
+:DateShort: 2015-Nov-20
 :END:
 
 *** Be sure to throw in a line to take it seriously, otherwise you might get some troll answers.
@@ -371,14 +410,16 @@ And if all else fails, people wouldn't know they're /my/ mistakes. I have no int
 :Author: Lugnut1206
 :Score: 16
 :DateUnix: 1448050988.0
+:DateShort: 2015-Nov-20
 :END:
 
 
 *** If pressed, would you tell them the truth that it's real?
 :PROPERTIES:
 :Author: Rationalfideism
-:Score: 6
+:Score: 8
 :DateUnix: 1448053281.0
+:DateShort: 2015-Nov-21
 :END:
 
 **** Why yes, of course. And I would also immediately grant similar powers to the people who give me advice
@@ -386,8 +427,9 @@ And if all else fails, people wouldn't know they're /my/ mistakes. I have no int
 /crosses fingers/
 :PROPERTIES:
 :Author: TBestIG
-:Score: 24
+:Score: 21
 :DateUnix: 1448054296.0
+:DateShort: 2015-Nov-21
 :END:
 
 ***** No, I would only grant similar powers to people who were giving the advice to be /very careful/ about who you grant similar powers to. Because clearly such people are safer to give power to than just any old person with ideas.
@@ -397,6 +439,7 @@ And if all else fails, people wouldn't know they're /my/ mistakes. I have no int
 :Author: FaceDeer
 :Score: 15
 :DateUnix: 1448065515.0
+:DateShort: 2015-Nov-21
 :END:
 
 ****** Ah, but wouldn't a more reasonable request be more likely to be fulfilled, as it is safer to fulfill? So only those people who do not request the power, but only information of the power's existence, will have their request granted.
@@ -404,8 +447,9 @@ And if all else fails, people wouldn't know they're /my/ mistakes. I have no int
 /breaks fingers/
 :PROPERTIES:
 :Author: Transfuturist
-:Score: 4
+:Score: 5
 :DateUnix: 1448077878.0
+:DateShort: 2015-Nov-21
 :END:
 
 
@@ -416,6 +460,7 @@ And if all else fails, people wouldn't know they're /my/ mistakes. I have no int
 :Author: Transfuturist
 :Score: 7
 :DateUnix: 1448053654.0
+:DateShort: 2015-Nov-21
 :END:
 
 
@@ -458,8 +503,9 @@ And if all else fails, people wouldn't know they're /my/ mistakes. I have no int
 18- profit
 :PROPERTIES:
 :Author: 1101560
-:Score: 13
+:Score: 15
 :DateUnix: 1448056914.0
+:DateShort: 2015-Nov-21
 :END:
 
 
@@ -472,11 +518,13 @@ Then with their expertise I would do whatever I needed to do to save all sapient
 If the interface is too difficult, I might just ignore the power because whoever gave it to me is probably just trying to mess with me anyways and almost certainly doesn't care whether the universe continues existing if it chose me to have root access.
 :PROPERTIES:
 :Author: Sailor_Vulcan
-:Score: 5
+:Score: 7
 :DateUnix: 1448067092.0
+:DateShort: 2015-Nov-21
 :END:
 
-*** #+begin_quote
+*** u/eaglejarl:
+#+begin_quote
   create backup copies of everyone who ever died and bring them back to life.
 #+end_quote
 
@@ -487,25 +535,30 @@ This is actually a question that interests me a lot -- if we gain the ability to
 :Author: eaglejarl
 :Score: 3
 :DateUnix: 1448088253.0
+:DateShort: 2015-Nov-21
 :END:
 
 **** I want all of them back. Hitler killed millions. This makes a loss of dozens of millions of life years. Even if we could only resurrect Hitler and nobody else, the payment for taking multimillion years of life should be multimillion years of community service, not eternal oblivion. Man, talk about the easy way out. But, since we can also resurrect each of his victims, killing someone has just lost nearly all of its moral weight. Now he faces only the economic cost of resurrecting his victims, which if we're omnipotent is zero, and the moral cost of teleporting people into the future against their consent. And because we're omnipotent, we can move every atom in the universe such that the universe is shaped like one where those people never died, effectively time traveling backwards to put everyone where they go. We'll also award him a medal of some kind. He did, after all, kill Hitler.
 :PROPERTIES:
-:Score: 13
+:Score: 14
 :DateUnix: 1448131177.0
+:DateShort: 2015-Nov-21
 :END:
 
 
-** #+begin_example
+** u/space_fountain:
+#+begin_example
   ls
 #+end_example
 :PROPERTIES:
 :Author: space_fountain
-:Score: 7
+:Score: 4
 :DateUnix: 1448135381.0
+:DateShort: 2015-Nov-21
 :END:
 
-*** #+begin_example
+*** u/Transfuturist:
+#+begin_example
   bin    dev         initrd.img.old  libx32      opt   sbin  usr
   boot   etc         lib             lost+found  proc  srv   var
   cdrom  home        lib32           media       root  sys   vmlinuz
@@ -515,9 +568,11 @@ This is actually a question that interests me a lot -- if we gain the ability to
 :Author: Transfuturist
 :Score: 6
 :DateUnix: 1448139900.0
+:DateShort: 2015-Nov-22
 :END:
 
-**** #+begin_example
+**** u/space_fountain:
+#+begin_example
   man man
 #+end_example
 
@@ -538,9 +593,11 @@ or
 :Author: space_fountain
 :Score: 5
 :DateUnix: 1448163144.0
+:DateShort: 2015-Nov-22
 :END:
 
-***** #+begin_quote
+***** u/Transfuturist:
+#+begin_quote
   ls /home
 #+end_quote
 
@@ -555,10 +612,12 @@ or
 :Author: Transfuturist
 :Score: 5
 :DateUnix: 1448164781.0
+:DateShort: 2015-Nov-22
 :END:
 
 
-*** #+begin_example
+*** u/ajuc:
+#+begin_example
   Out of memory: Kill process 2954 (physicd) score 183 or sacrifice child
   Killed process 2954 (physicd) total-vm:38767500PB, anon-rss:785644PB, file-rss:0kB
 #+end_example
@@ -566,6 +625,7 @@ or
 :Author: ajuc
 :Score: 2
 :DateUnix: 1448264107.0
+:DateShort: 2015-Nov-23
 :END:
 
 
@@ -574,8 +634,9 @@ or
 Step 2. Find some very smart and trustworthy people and demonstrate that I can turn into a cat (or whatever) to convince them to help me figure out steps 3 through N.
 :PROPERTIES:
 :Author: ArgentStonecutter
-:Score: 11
+:Score: 10
 :DateUnix: 1448049861.0
+:DateShort: 2015-Nov-20
 :END:
 
 *** Who do you start out with and how do you determine trustworthiness? Remember, you're all powerful. It's a good answer and all but steps 3 through n are really what I mean by asking the question.
@@ -583,6 +644,7 @@ Step 2. Find some very smart and trustworthy people and demonstrate that I can t
 :Author: Rationalfideism
 :Score: 2
 :DateUnix: 1448053089.0
+:DateShort: 2015-Nov-21
 :END:
 
 **** That depends on what having root on the universe means.
@@ -596,8 +658,9 @@ Who? I guess I'll start with people with high Erdös-Bacon-Sabbath scores. And C
 ^{*} ^{What} ^{do} ^{you} ^{expect} ^{asking} ^{a} ^{sysadmin?}
 :PROPERTIES:
 :Author: ArgentStonecutter
-:Score: 6
+:Score: 8
 :DateUnix: 1448056041.0
+:DateShort: 2015-Nov-21
 :END:
 
 
@@ -612,16 +675,18 @@ Step 4: Optimization
 Step 5: Resume Time
 :PROPERTIES:
 :Author: TimTravel
-:Score: 6
+:Score: 5
 :DateUnix: 1448067188.0
+:DateShort: 2015-Nov-21
 :END:
 
 
 ** Upgrade my intelligence to the point where I can handle a universe of data. No point in making a decision with only minimal knowledge of the likely results.
 :PROPERTIES:
 :Author: Geminii27
-:Score: 5
+:Score: 4
 :DateUnix: 1448125202.0
+:DateShort: 2015-Nov-21
 :END:
 
 *** With root access and a mind and the ability to encompass all data within your mind wouldn't it be the case that your mind is the substrate that the universe is running in? Or at the very least by comprehending the whole you are simulating another copy of the universe?
@@ -629,21 +694,24 @@ Step 5: Resume Time
 :Author: Spychex
 :Score: 1
 :DateUnix: 1461571631.0
+:DateShort: 2016-Apr-25
 :END:
 
 
 ** I calculate and execute my CEV. First approximation: Everyone gets the option to emigrate at will to their own realm of omnipotence, the material plane is unaffected except for the initial announcement and people disappearing. Whether two realms can communicate is managed on a friends/ignore list basis, depending on the outcome of the race between AI-Box offense and defense. Emigrants can agree to binding contracts.
 :PROPERTIES:
 :Author: Gurkenglas
-:Score: 5
+:Score: 4
 :DateUnix: 1448055964.0
+:DateShort: 2015-Nov-21
 :END:
 
 *** You mean to Equestria?
 :PROPERTIES:
 :Author: Sailor_Vulcan
-:Score: 3
+:Score: 5
 :DateUnix: 1448065083.0
+:DateShort: 2015-Nov-21
 :END:
 
 **** I would certainly hope that's an option. Along with nerfed versions where you don't actually have to be a brony.
@@ -651,6 +719,7 @@ Step 5: Resume Time
 :Author: ArgentStonecutter
 :Score: 1
 :DateUnix: 1448145840.0
+:DateShort: 2015-Nov-22
 :END:
 
 
@@ -659,6 +728,7 @@ Step 5: Resume Time
 :Author: Rationalfideism
 :Score: 1
 :DateUnix: 1448075527.0
+:DateShort: 2015-Nov-21
 :END:
 
 **** Yup.
@@ -666,6 +736,7 @@ Step 5: Resume Time
 :Author: Gurkenglas
 :Score: 1
 :DateUnix: 1448075744.0
+:DateShort: 2015-Nov-21
 :END:
 
 
@@ -680,6 +751,7 @@ Also, publish the universe's documentation on Github, after carefully searching 
 :Author: cae_jones
 :Score: 4
 :DateUnix: 1448059303.0
+:DateShort: 2015-Nov-21
 :END:
 
 *** I was hoping to see this answer. The universe is a huge project, step one should absolutely be to read every bit of documentation and commenting.\\
@@ -688,10 +760,12 @@ You just know there's going to be some ridiculous cludge code somewhere that has
 :Author: IllusoryIntelligence
 :Score: 3
 :DateUnix: 1448106189.0
+:DateShort: 2015-Nov-21
 :END:
 
 
-** #+begin_quote
+** u/FuguofAnotherWorld:
+#+begin_quote
   Edit/ To everyone suggesting setting up a system of backups, resets or simulations to test out ideas, aren't you effectively creating, causing suffering for and killing people each time you do it?
 #+end_quote
 
@@ -700,6 +774,7 @@ Well yeah, but it's still far, far, /far/ better than fucking up and not being a
 :Author: FuguofAnotherWorld
 :Score: 4
 :DateUnix: 1448073700.0
+:DateShort: 2015-Nov-21
 :END:
 
 *** Is it? You've just deleted a universe worth of sentients. You'd have to REALLY mess things up for it to be worth killing a universe worth of sentients to start over
@@ -707,6 +782,7 @@ Well yeah, but it's still far, far, /far/ better than fucking up and not being a
 :Author: Rationalfideism
 :Score: 1
 :DateUnix: 1448081655.0
+:DateShort: 2015-Nov-21
 :END:
 
 **** You may be underestimating how easy it would be to fuck up that hard. All you need to do is mess with basically anything to do with any of the forces and you've probably doomed most beings that exist, or at least really screwed their ecosystem.
@@ -716,6 +792,7 @@ Consider the alternative, where you fuck up and doom innumerable species leading
 :Author: FuguofAnotherWorld
 :Score: 2
 :DateUnix: 1448111341.0
+:DateShort: 2015-Nov-21
 :END:
 
 
@@ -724,6 +801,7 @@ Consider the alternative, where you fuck up and doom innumerable species leading
 :Author: EliezerYudkowsky
 :Score: 5
 :DateUnix: 1448083698.0
+:DateShort: 2015-Nov-21
 :END:
 
 *** Let's say you can have any interface you like and you have as much trust in it as you can get by it passing every test you throw at it. It doesn't do abstract requests like maximize happiness though. It re-orders matter you have as much as control as a programmer does over his program but with an easy ui. In other words, the interface itself isn't smart.
@@ -731,9 +809,11 @@ Consider the alternative, where you fuck up and doom innumerable species leading
 :Author: Rationalfideism
 :Score: 2
 :DateUnix: 1448085099.0
+:DateShort: 2015-Nov-21
 :END:
 
-**** #+begin_quote
+**** u/ArgentStonecutter:
+#+begin_quote
   It re-orders matter you have as much as control as a programmer does over his program but with an easy ui. In other words, the interface itself isn't smart.
 #+end_quote
 
@@ -752,6 +832,7 @@ Edit: If this universe was created by someone who wasn't literally insane, this 
 :Author: ArgentStonecutter
 :Score: 3
 :DateUnix: 1448143959.0
+:DateShort: 2015-Nov-22
 :END:
 
 
@@ -760,6 +841,7 @@ Edit: If this universe was created by someone who wasn't literally insane, this 
 :Author: Rationalfideism
 :Score: 2
 :DateUnix: 1448087907.0
+:DateShort: 2015-Nov-21
 :END:
 
 
@@ -776,6 +858,7 @@ Resulting plan of action is automatically followed.
 :Author: ArmokGoB
 :Score: 3
 :DateUnix: 1448061279.0
+:DateShort: 2015-Nov-21
 :END:
 
 
@@ -790,6 +873,7 @@ Most of the simulations can be done without people. And when I do cause sufferin
 :Author: DCarrier
 :Score: 3
 :DateUnix: 1448070708.0
+:DateShort: 2015-Nov-21
 :END:
 
 *** If the purpose of your simulations is to optimize happiness/reduce suffering what good will it's data be If the simulations don't include humans? And I may have equivicated causing with letting happen there, but it's effectively the same thing. And if you were to create a complete simulation then whatever amount of suffering were talking about, you've roughly doubled it plus it minus depending on whether the changes you're experimenting with end up increasing or decreasing it.
@@ -797,9 +881,11 @@ Most of the simulations can be done without people. And when I do cause sufferin
 :Author: Rationalfideism
 :Score: 1
 :DateUnix: 1448073476.0
+:DateShort: 2015-Nov-21
 :END:
 
-**** #+begin_quote
+**** u/DCarrier:
+#+begin_quote
   If the purpose of your simulations is to optimize happiness/reduce suffering what good will it's data be If the simulations don't include humans?
 #+end_quote
 
@@ -808,6 +894,7 @@ I'm thinking less to prevent things like the Soviet Union and more to prevent th
 :Author: DCarrier
 :Score: 1
 :DateUnix: 1448073769.0
+:DateShort: 2015-Nov-21
 :END:
 
 ***** That's sounds like a reasonable place to start. The question still remains about the ethics of simulation restarts once you add people though. I wonder how far you could really get without them.
@@ -815,6 +902,7 @@ I'm thinking less to prevent things like the Soviet Union and more to prevent th
 :Author: Rationalfideism
 :Score: 1
 :DateUnix: 1448081326.0
+:DateShort: 2015-Nov-21
 :END:
 
 ****** At some point, you're going to have to test teleportation on people, but once you do that you can teleport them between universes, so simulation restarts won't be a problem.
@@ -822,6 +910,7 @@ I'm thinking less to prevent things like the Soviet Union and more to prevent th
 :Author: DCarrier
 :Score: 1
 :DateUnix: 1448081654.0
+:DateShort: 2015-Nov-21
 :END:
 
 ******* Hmmmm... That sort of defeats the purpose of your simulations though... Interesting thought
@@ -829,6 +918,7 @@ I'm thinking less to prevent things like the Soviet Union and more to prevent th
 :Author: Rationalfideism
 :Score: 1
 :DateUnix: 1448082935.0
+:DateShort: 2015-Nov-21
 :END:
 
 ******** I can save them all and load them when I have the hang of things.
@@ -836,6 +926,7 @@ I'm thinking less to prevent things like the Soviet Union and more to prevent th
 :Author: DCarrier
 :Score: 1
 :DateUnix: 1448085081.0
+:DateShort: 2015-Nov-21
 :END:
 
 
@@ -852,17 +943,20 @@ I'm thinking less to prevent things like the Soviet Union and more to prevent th
 :Author: Transfuturist
 :Score: 2
 :DateUnix: 1448052837.0
+:DateShort: 2015-Nov-21
 :END:
 
-*** #+begin_quote
+*** u/ArgentStonecutter:
+#+begin_quote
   Then I would start producing unbreakable negentropy devices to replace turbines in power plant generators.
 #+end_quote
 
 As someone pointed out to me, be damned careful, it's really easy to set the universe on fire doing this.
 :PROPERTIES:
 :Author: ArgentStonecutter
-:Score: 6
+:Score: 5
 :DateUnix: 1448057839.0
+:DateShort: 2015-Nov-21
 :END:
 
 **** Maybe the world, but not the universe.
@@ -872,6 +966,7 @@ Dump waste heat off the ecliptic in EM and you'll be fine. Even if you eventuall
 :Author: Transfuturist
 :Score: 2
 :DateUnix: 1448059641.0
+:DateShort: 2015-Nov-21
 :END:
 
 ***** When creating a state where entropy is reversed, you have to be careful that there is no possible mechanism for the state to propogate. Otherwise it will, and you end up with the local entropy reversal spreading through the entire universe.
@@ -881,9 +976,11 @@ And "no possible mechanism" does not mean "really unlikely".
 :Author: ArgentStonecutter
 :Score: 5
 :DateUnix: 1448060606.0
+:DateShort: 2015-Nov-21
 :END:
 
-****** #+begin_quote
+****** u/Transfuturist:
+#+begin_quote
   When creating a state where entropy is reversed
 #+end_quote
 
@@ -898,9 +995,11 @@ by [[/u/Rationalfideism]] I would consider it trivial to implement (given a prop
 :Author: Transfuturist
 :Score: 2
 :DateUnix: 1448140314.0
+:DateShort: 2015-Nov-22
 :END:
 
-******* #+begin_quote
+******* u/ArgentStonecutter:
+#+begin_quote
   I would consider it trivial to implement
 #+end_quote
 
@@ -917,9 +1016,11 @@ After 40 years of programming I would assume that ANYTHING I did was full of mal
 :Author: ArgentStonecutter
 :Score: 3
 :DateUnix: 1448143066.0
+:DateShort: 2015-Nov-22
 :END:
 
-******** #+begin_quote
+******** u/Transfuturist:
+#+begin_quote
   you can have any interface you like and you have as much trust in it as you can get by it passing every test you throw at it
 #+end_quote
 
@@ -930,6 +1031,7 @@ The gremlins do swarm, though.
 :Author: Transfuturist
 :Score: 1
 :DateUnix: 1448146169.0
+:DateShort: 2015-Nov-22
 :END:
 
 
@@ -940,6 +1042,7 @@ Save states, memory bubbles. Win. Everybody lives!
 :Author: nerdguy1138
 :Score: 1
 :DateUnix: 1448253346.0
+:DateShort: 2015-Nov-23
 :END:
 
 ***** Why would you expect it to be DWIM?
@@ -947,10 +1050,12 @@ Save states, memory bubbles. Win. Everybody lives!
 :Author: ArgentStonecutter
 :Score: 1
 :DateUnix: 1448276785.0
+:DateShort: 2015-Nov-23
 :END:
 
 
-*** #+begin_quote
+*** u/ArgentStonecutter:
+#+begin_quote
   now I want to read or write a story about someone who doesn't.
 #+end_quote
 
@@ -959,10 +1064,12 @@ Save states, memory bubbles. Win. Everybody lives!
 :Author: ArgentStonecutter
 :Score: 3
 :DateUnix: 1448145493.0
+:DateShort: 2015-Nov-22
 :END:
 
 
-** #+begin_quote
+** u/MrCogmor:
+#+begin_quote
   Edit2/ Really everyone? The minute you're handed near definitive proof that our reality is a simulation you want to create alternate throw away realities to experiment on without consideration for the people you're creating?
 #+end_quote
 
@@ -973,6 +1080,7 @@ It is the same thing as the issue of whether transporters kill and copy a person
 :Author: MrCogmor
 :Score: 2
 :DateUnix: 1448097890.0
+:DateShort: 2015-Nov-21
 :END:
 
 
@@ -981,6 +1089,7 @@ It is the same thing as the issue of whether transporters kill and copy a person
 :Author: Baronet_Picklenose
 :Score: 2
 :DateUnix: 1448158740.0
+:DateShort: 2015-Nov-22
 :END:
 
 
@@ -989,6 +1098,7 @@ It is the same thing as the issue of whether transporters kill and copy a person
 :Author: Calamitizer
 :Score: 1
 :DateUnix: 1448054224.0
+:DateShort: 2015-Nov-21
 :END:
 
 
@@ -996,6 +1106,7 @@ It is the same thing as the issue of whether transporters kill and copy a person
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1448056968.0
+:DateShort: 2015-Nov-21
 :END:
 
 
@@ -1008,10 +1119,12 @@ After that, start looking through stuff to figure out how things actually work. 
 :Author: Murska1FIN
 :Score: 1
 :DateUnix: 1448057969.0
+:DateShort: 2015-Nov-21
 :END:
 
 
-** #+begin_example
+** u/Zenmaster13:
+#+begin_example
   cd /
   sudo rm -rf *
 #+end_example
@@ -1019,6 +1132,7 @@ After that, start looking through stuff to figure out how things actually work. 
 :Author: Zenmaster13
 :Score: 1
 :DateUnix: 1448062026.0
+:DateShort: 2015-Nov-21
 :END:
 
 *** Never thought I'd say this, but...
@@ -1026,8 +1140,9 @@ After that, start looking through stuff to figure out how things actually work. 
 Thank god the universe runs on Windows.
 :PROPERTIES:
 :Author: eaglejarl
-:Score: 6
+:Score: 7
 :DateUnix: 1448088342.0
+:DateShort: 2015-Nov-21
 :END:
 
 
@@ -1036,6 +1151,7 @@ Thank god the universe runs on Windows.
 :Author: traverseda
 :Score: 1
 :DateUnix: 1448125754.0
+:DateShort: 2015-Nov-21
 :END:
 
 
@@ -1044,6 +1160,7 @@ Thank god the universe runs on Windows.
 :Author: Polycephal_Lee
 :Score: 1
 :DateUnix: 1448063047.0
+:DateShort: 2015-Nov-21
 :END:
 
 
@@ -1056,6 +1173,7 @@ Thank god the universe runs on Windows.
 :Author: jldew
 :Score: 1
 :DateUnix: 1448088525.0
+:DateShort: 2015-Nov-21
 :END:
 
 
@@ -1064,6 +1182,7 @@ Thank god the universe runs on Windows.
 :Author: darkflagrance
 :Score: 1
 :DateUnix: 1448097519.0
+:DateShort: 2015-Nov-21
 :END:
 
 
@@ -1096,9 +1215,11 @@ Create and implement a magic system focusing on runes and geometric diagrams in 
 :Author: MrCogmor
 :Score: 1
 :DateUnix: 1448103731.0
+:DateShort: 2015-Nov-21
 :END:
 
-*** #+begin_quote
+*** u/ArgentStonecutter:
+#+begin_quote
   I'm thinking of something like a VR version of Second Life with a Infinite expanse of procedural generated terrain similar to mine-craft and giving individuals a limited amount of reality warping power that recharges over time.
 #+end_quote
 
@@ -1109,6 +1230,7 @@ Discover that's what happened to me.
 :Author: ArgentStonecutter
 :Score: 1
 :DateUnix: 1448145273.0
+:DateShort: 2015-Nov-22
 :END:
 
 **** You can't have the afterlife do it for everyone because then you will get the fundamentalists continually making and raising other fundamentalists. It would also likely lead to strange reactions from Buddhists and is much harder to reason about. If you create any infinitely dividing world system then it will result in the most stable patterns repeating themselves endlessly and those patterns are unlikely to be what I consider optimal.
@@ -1118,9 +1240,11 @@ Furthermore any approach they use is something I could devise through other mean
 :Author: MrCogmor
 :Score: 1
 :DateUnix: 1448151442.0
+:DateShort: 2015-Nov-22
 :END:
 
-***** #+begin_quote
+***** u/ArgentStonecutter:
+#+begin_quote
   You can't have the afterlife do it for everyone because then you will get the fundamentalists continually making and raising other fundamentalists.
 #+end_quote
 
@@ -1129,6 +1253,7 @@ Fundamentalists wouldn't get the "handling it well" cachet, so they wouldn't get
 :Author: ArgentStonecutter
 :Score: 1
 :DateUnix: 1448153025.0
+:DateShort: 2015-Nov-22
 :END:
 
 ****** Then you have a very exclusive afterlife. What do you do with everyone else, do you just let them cease or create more custom worlds?
@@ -1136,6 +1261,7 @@ Fundamentalists wouldn't get the "handling it well" cachet, so they wouldn't get
 :Author: MrCogmor
 :Score: 1
 :DateUnix: 1448160658.0
+:DateShort: 2015-Nov-22
 :END:
 
 ******* Everyone gets their own shard. If they want to interact with other shards, they have to earn it.
@@ -1143,6 +1269,7 @@ Fundamentalists wouldn't get the "handling it well" cachet, so they wouldn't get
 :Author: ArgentStonecutter
 :Score: 1
 :DateUnix: 1448195786.0
+:DateShort: 2015-Nov-22
 :END:
 
 
@@ -1167,6 +1294,7 @@ Fundamentalists wouldn't get the "handling it well" cachet, so they wouldn't get
 :Author: OrzBrain
 :Score: 1
 :DateUnix: 1448138974.0
+:DateShort: 2015-Nov-22
 :END:
 
 *** Incorrubtibility and invicibility run a high risk of turning you into a statue. I'd prefer respawning or regeneration to a preprogrammed backup state if you encounter catastrophic damage.
@@ -1176,6 +1304,7 @@ Simplest way to handle the time travel protocol would probably be the creation o
 :Author: MrCogmor
 :Score: 1
 :DateUnix: 1448151782.0
+:DateShort: 2015-Nov-22
 :END:
 
 
@@ -1186,6 +1315,7 @@ If that's NOT viable, then... I suppose start reading manpages. If reconfiguring
 :Author: protagnostic
 :Score: 1
 :DateUnix: 1448305451.0
+:DateShort: 2015-Nov-23
 :END:
 
 
@@ -1194,6 +1324,7 @@ If that's NOT viable, then... I suppose start reading manpages. If reconfiguring
 :Author: nagelwithlox
 :Score: 1
 :DateUnix: 1448333747.0
+:DateShort: 2015-Nov-24
 :END:
 
 
@@ -1210,6 +1341,7 @@ I believe that will solve most of the biggest problems, then I tweak and solve m
 :Author: raymestalez
 :Score: 1
 :DateUnix: 1448366152.0
+:DateShort: 2015-Nov-24
 :END:
 
 
@@ -1218,6 +1350,7 @@ I believe that will solve most of the biggest problems, then I tweak and solve m
 :Author: chorpler
 :Score: 1
 :DateUnix: 1448930338.0
+:DateShort: 2015-Dec-01
 :END:
 
 
@@ -1230,6 +1363,7 @@ That's happiness maximum right there.
 :Author: RMcD94
 :Score: 0
 :DateUnix: 1448055021.0
+:DateShort: 2015-Nov-21
 :END:
 
 *** Do you give people a choice?
@@ -1237,6 +1371,7 @@ That's happiness maximum right there.
 :Author: Rationalfideism
 :Score: 1
 :DateUnix: 1448058123.0
+:DateShort: 2015-Nov-21
 :END:
 
 **** People are probably an inefficient way of experiencing bliss so no I don't give them a choice.
@@ -1244,12 +1379,14 @@ That's happiness maximum right there.
 :Author: RMcD94
 :Score: 1
 :DateUnix: 1448058876.0
+:DateShort: 2015-Nov-21
 :END:
 
 ***** [deleted]
 :PROPERTIES:
 :Score: 8
 :DateUnix: 1448073816.0
+:DateShort: 2015-Nov-21
 :END:
 
 ****** With any starting axioms you maximise to something
@@ -1257,6 +1394,7 @@ That's happiness maximum right there.
 :Author: RMcD94
 :Score: 1
 :DateUnix: 1448634144.0
+:DateShort: 2015-Nov-27
 :END:
 
 ******* Well that's the bit where I say that you could maximise to something less horrifying.
@@ -1268,6 +1406,7 @@ Then you say that no-one has a complete understanding of the human utility funct
 :Author: FuguofAnotherWorld
 :Score: 2
 :DateUnix: 1448640734.0
+:DateShort: 2015-Nov-27
 :END:
 
 ******** I don't agree with the conclusion of your second sentence and though you predicted my response to the first line it isn't the same one to the third. Knowing human utility is not relevant everyone given this power will maximise their own utility as we likely have a small value for other humans maximising their utility is natural.
@@ -1279,6 +1418,7 @@ Plus there's no such thing as multiple axis, everything can be reduced. When you
 :Author: RMcD94
 :Score: 0
 :DateUnix: 1448641464.0
+:DateShort: 2015-Nov-27
 :END:
 
 ********* It might be natural to have a small value for maximising the utility of other humans, but that doesn't make it optimal or universal, or else there would be less grand gestures to help others. For example, when the creator of the polio vaccine chose to make it cheap instead of charging money, leading to what is essentially the eradication of polio in the modern day. I like to think that this idea of trying to care more than one's emotions and such normally allows is fairly common among rationalists and people in this sub.
@@ -1288,6 +1428,7 @@ I dispute that a bliss coma is inevitable so long as safeguards, save points and
 :Author: FuguofAnotherWorld
 :Score: 2
 :DateUnix: 1448642485.0
+:DateShort: 2015-Nov-27
 :END:
 
 ********** By small I merely meant that it exists.
@@ -1303,6 +1444,7 @@ All utility functions of physical beings are reduced to chemicals. Unless you're
 :Author: RMcD94
 :Score: 1
 :DateUnix: 1448643285.0
+:DateShort: 2015-Nov-27
 :END:
 
 *********** Let's make this completely clear before I go any further, are you or are you not arguing in favour of wireheading?
@@ -1310,6 +1452,7 @@ All utility functions of physical beings are reduced to chemicals. Unless you're
 :Author: FuguofAnotherWorld
 :Score: 1
 :DateUnix: 1448645655.0
+:DateShort: 2015-Nov-27
 :END:
 
 ************ I think the universe on wireheading is the optimal value, that doesn't mean individuals should wirehead, it means if you can choose the universe the best one in terms of morality is the one where everyone literally cannot be happier any other universe.
@@ -1319,6 +1462,7 @@ And, I believe that all instances of power over the brain lead to wireheading ov
 :Author: RMcD94
 :Score: 1
 :DateUnix: 1448646471.0
+:DateShort: 2015-Nov-27
 :END:
 
 ************* I believe that processes that can be compressed to a register counting up are no different than the simpler process. Wireheading is literal destruction of the mind, it is suicide. Pleasure is an evolutionary hack, and if we are able to rewrite our brains to entirely remove a valence-maximizing hotspot, which I believe we eventually will be, we should do that /as soon as humanly possible/ to prevent as many wireheads as possible. Otherwise there will be a collective of nothing but registers counting upwards. Remove Wirehead. REMOVE WIREHEAD.
@@ -1326,6 +1470,7 @@ And, I believe that all instances of power over the brain lead to wireheading ov
 :Author: Transfuturist
 :Score: 1
 :DateUnix: 1448650091.0
+:DateShort: 2015-Nov-27
 :END:
 
 ************** The brain needs something to operate... morals are derived from chemicals that make you feel good when you do keep moral.
@@ -1333,6 +1478,7 @@ And, I believe that all instances of power over the brain lead to wireheading ov
 :Author: RMcD94
 :Score: 0
 :DateUnix: 1448655060.0
+:DateShort: 2015-Nov-27
 :END:
 
 *************** You are removing morality entirely. Morality does not calculate bliss efficiently. All you are doing is stimulating the pleasure centers. The rest of the brain has nothing to do with anything involved here.
@@ -1340,6 +1486,7 @@ And, I believe that all instances of power over the brain lead to wireheading ov
 :Author: Transfuturist
 :Score: 1
 :DateUnix: 1448670639.0
+:DateShort: 2015-Nov-28
 :END:
 
 
@@ -1356,9 +1503,11 @@ I am confident that given a few hundred years humanity will create new schools o
 :Author: FuguofAnotherWorld
 :Score: 1
 :DateUnix: 1448654608.0
+:DateShort: 2015-Nov-27
 :END:
 
-************** #+begin_quote
+************** u/RMcD94:
+#+begin_quote
   It's just a brain in a jar feeling good about itself. Say you have a car with a speed dial. To me, wireheading is removing everything but the dashboard and then turning the speed dial as high as it can go. Sure, according to the dial things are great but it largely misses the point of what cars are for.
 #+end_quote
 
@@ -1379,6 +1528,7 @@ Except that's not true. Humans are chemical reactions, they can easily be optimi
 :Author: RMcD94
 :Score: 0
 :DateUnix: 1448656046.0
+:DateShort: 2015-Nov-27
 :END:
 
 *************** I think you think that you are telling me new facts here, but it is not so. These are all things that I knew already, and upon learning all of them I still decided that wireheading was sub-optimal compared to other options. Calling humans chemical reactions does not necessarily mean that this particular series of reactions you are arguing for would be best compared to the chemical reactions for (for example) a person living the most fulfilling life that it is possible for them to live or one of many other options.
@@ -1386,9 +1536,11 @@ Except that's not true. Humans are chemical reactions, they can easily be optimi
 :Author: FuguofAnotherWorld
 :Score: 2
 :DateUnix: 1448658882.0
+:DateShort: 2015-Nov-28
 :END:
 
-**************** #+begin_quote
+**************** u/RMcD94:
+#+begin_quote
   Calling humans chemical reactions does not necessarily mean that this particular series of reactions you are arguing for would be best compared to the chemical reactions for (for example) a person living the most fulfilling life that it is possible for them to live or one of many other options.
 #+end_quote
 
@@ -1397,6 +1549,7 @@ But the definition of the word fulfilling is based of off that chemical make up,
 :Author: RMcD94
 :Score: 0
 :DateUnix: 1448659038.0
+:DateShort: 2015-Nov-28
 :END:
 
 ***************** Well yeah, or a computer running a program that is identical to that brain. That's not a point of contention here. What is is that you're saying that brain should be sitting there with all its happiness bars artificially shot into the infinities while thinking about nothing and I'm saying that brain should think that it is experiencing the best life ever while possibly having its sadness and such turned down.
@@ -1404,10 +1557,12 @@ But the definition of the word fulfilling is based of off that chemical make up,
 :Author: FuguofAnotherWorld
 :Score: 1
 :DateUnix: 1448659671.0
+:DateShort: 2015-Nov-28
 :END:
 
 
-***************** #+begin_quote
+***************** u/Transfuturist:
+#+begin_quote
   But the definition of the word fulfilling is based of off that chemical make up, so the most fulfilling life is achieved by direct manipulation of the brain in every single case.
 #+end_quote
 
@@ -1416,10 +1571,12 @@ That does not actually follow. I repeat, get your head tuned. Maybe rotate your 
 :Author: Transfuturist
 :Score: 1
 :DateUnix: 1448684133.0
+:DateShort: 2015-Nov-28
 :END:
 
 
-*************** #+begin_quote
+*************** u/Transfuturist:
+#+begin_quote
   You only value those things because of the chemicals in your brain. This is just a failure to see what is actually behind the axioms you use to support your moral system.
 #+end_quote
 
@@ -1436,6 +1593,7 @@ I understand and accept materialism, and there is nothing about it that enforces
 :Author: Transfuturist
 :Score: 1
 :DateUnix: 1448684037.0
+:DateShort: 2015-Nov-28
 :END:
 
 
@@ -1446,6 +1604,7 @@ I understand and accept materialism, and there is nothing about it that enforces
 :Author: Transfuturist
 :Score: 3
 :DateUnix: 1448139782.0
+:DateShort: 2015-Nov-22
 :END:
 
 ****** What's wrong with discussion?
@@ -1453,6 +1612,7 @@ I understand and accept materialism, and there is nothing about it that enforces
 :Author: RMcD94
 :Score: 1
 :DateUnix: 1448634110.0
+:DateShort: 2015-Nov-27
 :END:
 
 ******* Our terminal goals are inherently opposed, and I consider any human who endorses the sort of terminal goals you are endorsing to be literally damaged in some way, emotionally or psychologically. Upvoting is not discussion. Upvoting is /approving of what you said./
@@ -1460,6 +1620,7 @@ I understand and accept materialism, and there is nothing about it that enforces
 :Author: Transfuturist
 :Score: 1
 :DateUnix: 1448649689.0
+:DateShort: 2015-Nov-27
 :END:
 
 ******** Upvoting is certainly not agreement...
@@ -1473,9 +1634,11 @@ Also I can't possibly believe you have read lesswrong if your response to any so
 :Author: RMcD94
 :Score: 0
 :DateUnix: 1448653347.0
+:DateShort: 2015-Nov-27
 :END:
 
-********* #+begin_quote
+********* u/Transfuturist:
+#+begin_quote
   Upvoting is certainly not agreement...
 #+end_quote
 
@@ -1490,6 +1653,7 @@ It is /not/ a /point!/ It is a fundamental denial of everything reasonable to my
 :Author: Transfuturist
 :Score: 1
 :DateUnix: 1448670201.0
+:DateShort: 2015-Nov-28
 :END:
 
 
@@ -1497,6 +1661,7 @@ It is /not/ a /point!/ It is a fundamental denial of everything reasonable to my
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1448295612.0
+:DateShort: 2015-Nov-23
 :END:
 
 ****** Indeed
@@ -1504,4 +1669,5 @@ It is /not/ a /point!/ It is a fundamental denial of everything reasonable to my
 :Author: RMcD94
 :Score: 1
 :DateUnix: 1448299407.0
+:DateShort: 2015-Nov-23
 :END:

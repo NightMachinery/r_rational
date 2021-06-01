@@ -1,0 +1,36 @@
+:PROPERTIES:
+:Author: ben_oni
+:Score: 2
+:DateUnix: 1510718846.0
+:DateShort: 2017-Nov-15
+:END:
+
+#+begin_quote
+  no less than the International Monetary Fund have called for economic inequality to be significantly reduced
+#+end_quote
+
+People, by which I mean various prominent groups, have been calling for this since... well, the whole of the 20th century, at the very least. [[https://www.goodreads.com/book/show/5544.Surely_You_re_Joking_Mr_Feynman_][Richard Feynman]] described his time among these fools. I call them fools because they think and say foolish things.
+
+#+begin_quote
+  certain kinds of stochastic systems
+#+end_quote
+
+This is what really goads me. That you think you can use terms like "stochastic" without knowing what they mean and hope I don't either. I do. I really do. If you want to talk about Wiener processes and Markov chains we can do that.
+
+#+begin_quote
+  controlled from the outside
+#+end_quote
+
+Ditto with controls theory.
+
+--------------
+
+So, instead of doing [[https://www.goodreads.com/book/show/17250961-oathbringer][what I was planning]] tonight, I decided to give your [[http://www.decisionsciencenews.com/2017/06/19/counterintuitive-problem-everyone-room-keeps-giving-dollars-random-others-youll-never-guess-happens-next/][little game]] a try.
+
+What struck me is that the article says "several PhDs" were confounded. I'm not sure you understand why, so I'll explain. When each "bucket" in the simulation has a dollar, the expected change in each bucket is 0 for that iteration. If there are any empty buckets, the expected change for the other ones goes down (becomes negative), because there are fewer buckets with a chance to distribute to them. So, from a naive perspective, we expect them to tend toward a fairly even distribution.
+
+This is absolutely wrong. We should expect a certain inequality, and we should expect that the "inequality curve" will remain fairly constant over time. In terms of equality, what we expect is that over time each bucket will spend about the same amount of time holding more money than any other bucket. [[https://docs.google.com/spreadsheets/d/1U_pnC3dM6MKEWFmRKUBwNZnjpmHg05_oOSWnkG4I3TQ/edit?usp=sharing][So I ran the simulation for you.]]
+
+Unfortunately, the spreadsheet doesn't include my code. But what we find is that while there is a difference among buckets, over time it evens out /very/ well. I ran the simulation under the same rules: 45 buckets, 45 units in each bucket to begin. I ran it for 50 million iterations, and recorded on each iteration which bucket held the most money. Since we don't actually care about individual buckets, I simply sorted the results, so we can see what the distribution looks like.
+
+So that article? It is appears to be selling you a false conclusion. The correct conclusion is that inequality is a natural result of these systems, but that the rich don't stay rich just because. Given time, /in this scenario/, each actor will play each role in the distribution, something the article only mentions in the addendum.

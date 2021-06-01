@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 2
+:DateUnix: 1506709953.0
+:DateShort: 2017-Sep-29
+:END:
+
+That's not quite the distinction that I was trying to make. I mean all deterministic algorithms just implement the policy that you programmed them with, even if that policy involves steps to evaluate the effectiveness of other, simpler policies.
+
+The way I see it talking about optimizers is a good way to model some AIs. The basic problem is that you would like to be able to model the AIs output, but unfortunately, since it is computationally more complicated than you are, you can't fully predict what it will do. So you try to come up with properties that (at least approximately) hold for its outputs.
+
+You might model alpha-go as playing go optimally. This is almost certainly false, but it at least gives reasonably accurate predictions. If you want to figure out what alpha-go does in a given position, the best you could hope to do is to find the best move and guess that.
+
+You might model a paperclip AI as a paperclip-maximizer. It is really unlikely that this fixed program will actually do the globally optimal things the maximize the expected number of paperclips, but if you can figure out the kinds of things that might be optimal, this will at least give you some idea of what that AI will do.
+
+The AI I mentioned is most usefully modeled as determining whether statements are provable (with short proofs) (in fact as I stated it, this exactly describes its behavior). This allows you to predict useful properties of its behavior. Saying that it maximizes the indicator function of the output of the screen always being the correct answer to the question asked, while true, is basically an equivalent model and just a much more cumbersome way of saying the same thing.

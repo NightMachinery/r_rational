@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: BT_Uytya
+:Score: 5
+:DateUnix: 1391112394.0
+:DateShort: 2014-Jan-30
+:END:
+
+This seems like a very neat hack with a convincing justification.
+
+However, I should note two limitations. First, it doesn't work if I care only about number, not details.
+
+Second, you are mistaken here:
+
+#+begin_quote
+  X people are at least as complicated as X * K-complexity(one person).
+#+end_quote
+
+What if I care about perfect copies of one person? What about X perfect copies of one person, but each with some unique experience? Unique experiences are very simple to create: take a planet, take a future brilliant writer and tell him "/write about hobbits/" *or* "/write about spaceships/", run simulation for 10 years, done (yeah, K-complexity is enormous, but it is very easy to scale; bonus points for running simulation for 1000 years and using all descendants of this writer). There are many ways to create X people without having to describe each one of them.

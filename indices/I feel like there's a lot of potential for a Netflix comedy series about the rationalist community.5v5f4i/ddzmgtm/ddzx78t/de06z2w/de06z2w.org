@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: zarraha
+:Score: 7
+:DateUnix: 1487646071.0
+:DateShort: 2017-Feb-21
+:END:
+
+I can't say for certain since this is my first time hearing of meta-priors, but as a mathematician, my intuition says this should by simplifiable. If you take a probability distribution of meta-priors over all possible priors (example, I think there's a 50% chance my prior should be 10% and a 50% chance it should be 20%) You should be able to simplify it into just a single prior (There is a 100% chance that my prior should be 15%). I'm not sure if this simplification commutes with Bayesian updating, but it should give decent approximations. For more complicated meta-priors you'd need to to a more complicated linear combination, but my point is that meta-priors are no longer necessary to model since a model with them can be reduced to a single prior with 100% meta prior.
+
+Now if we go up a level, or two, or infinity, I suppose you should have meta-meta priors over your meta-priors. And meta-meta-meta-priors, ad ininitum, but I think that we should be able to inductively resolve this and get an infinite sum/product that converges to a single prior.
+
+So if your meta-prior for a 100% prior is only 60%, you should just say that your prior is like 80% or whatever you get as an average after accounting for your other meta-priors.

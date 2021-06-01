@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: SvalbardCaretaker
+:Score: 6
+:DateUnix: 1609035092.0
+:DateShort: 2020-Dec-27
+:END:
+
+[[https://berthub.eu/articles/posts/reverse-engineering-source-code-of-the-biontech-pfizer-vaccine/]]
+
+A look at the optimisation techniques that went into that vaccine. Seems surprisingly easy this way! Example: mRNA ends on a sequence of As (AAA...) which degrades the more often its transcribed. And you want it to be transcribed often for high immune respone, so you just put more As at the end - about 100 of them ended up in the vaccine sequence.

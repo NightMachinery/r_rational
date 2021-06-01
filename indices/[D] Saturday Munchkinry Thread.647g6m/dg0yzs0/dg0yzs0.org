@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 3
+:DateUnix: 1491722825.0
+:DateShort: 2017-Apr-09
+:END:
+
+Not /exactly/ a munchkinry problem, but I figured this was the most appropriate place to put this:
+
+You have a randomly-generated sequence of 8 bits, and you are allowed to flip one of the bits before sending the sequence to a friend. You want to somehow use this to send him a number between 1 and 8 inclusive, but here's the catch: your friend does not know what the original sequence was. (If he /did/, all you would have to do is flip the bit whose index corresponds to the number you wanted to send, making the problem trivial.) The /only/ information he will have available is the sequence you send him; he does not know which bit you flipped, or even whether you chose to flip a bit at all.
+
+You can confer with your friend beforehand, but afterward, you are not allowed to communicate with him at all, apart from sending him the modified (or unmodified) bit sequence. Given these constraints, is it possible for you to communicate the number to him? If not, is there at least some way for him to guess the number with greater than 1/8 (12.5%) accuracy?

@@ -1,0 +1,63 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1461426510.0
+:DateShort: 2016-Apr-23
+:END:
+
+#+begin_quote
+  I hate to break your heart, but it wasn't a conference.
+#+end_quote
+
+</3
+
+#+begin_quote
+  I dropped my computer science major, because I had very little enjoyment of higher level computer science classes and I was in danger of ruining my GPA through too many Cs from CS courses.
+#+end_quote
+
+Fair enough. A lot of the more involved CS theory gets written up more on the "AI" side of the research literature than the cog-sci side.
+
+#+begin_quote
+  Ironically, I've learned so much more about how to code statistical models, data analysis, shell scripting, and actually useful coding techniques from BCS classes than I ever did for CS classes.
+#+end_quote
+
+How much do you know about version control yet ;-)?
+
+Also, "BCS" = "Brain and Cognitive Sciences"? Your institution also calls it that?
+
+#+begin_quote
+  I think it's because BCS requires actually using what you learn while CS is all about the theory and learning "clever" techniques over what will actually solve the stinking problem!
+#+end_quote
+
+CS in the sense of algorithms can indeed often be about finding or knowing a "cleverer" way to solve a slightly more specialized problem, when there already exists a general solution to the general-case problem.
+
+However, let me speak on my field's behalf: /sometimes/ you get a "hard" problem like formula unification where the worst-case complexity is PSPACE-complete but the expected case is linear-time. /Often/ however, you get stuff like NP-complete problems, or even just stuff like sorting, where handling a slightly more specialized case, dragging in a little more "prior knowledge", makes the problem substantially easier to solve, and the special cases are more applicable to the real world than the general case.
+
+For instance, we usually don't want exactly optimal solutions to the Traveling Salesman Problem or other NP-complete problems, so once we character what sorts of approximations are acceptable or what sorts of hard problem instances we don't expect to see, we can often go from "this will take longer than the remaining lifespan of the Solar System" to "run it over the weekend and slope off".
+
+I mention this because it gets extra important when doing machine learning or computational cognitive science: /those/ problems end up being NP-complete or PSPACE-complete for optimal discrete solutions /most of the time/, so knowing what sorts of approximations work well and what special-cases can be solved exactly is how we make those sciences work at all.
+
+#+begin_quote
+  At least I've done two Independent Study Projects by now, worked in a lab for the second summer now, and I am required to write 3 scientific research style papers by the end of this semester!! At least I have professors who are willing to proof-read them and show me how to do better.
+#+end_quote
+
+WAHOO! Way to go! Are you publishing any of these someday?
+
+#+begin_quote
+  It was an event where every undergrad who is doing Independent Study research presents their results through a poster. I think it's called the Poster Session of the Undergrad Research Expo?
+#+end_quote
+
+Oh hey one of those, ok.
+
+#+begin_quote
+  In conclusion, subjects derive their confidence mostly from self-estimates of current ability and almost not at all from prior experiences with the task which is fairly counter-intuitive. I concluded that it may be due to how low-level the task was and since the subjects saw the image flashing by so quickly, they may be coming up with an answer and their estimate of how likely their answer is to be true before they can mentally compare to previous trials
+#+end_quote
+
+Hmm. Can you connect any of this to predictive coding accounts of [[http://www.nature.com/neuro/journal/v18/n10/abs/nn.4105.html][percepts]] or [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3848896/][self-modeling]]?
+
+(I damn well can't. As my neurosci friend on Facebook complains: neuroscientists seem to love using Greek letters and differential equations where computationalists in neurosci or cog-sci would have just written down some programming-style symbology, since actual neurons /aren't/ perfectly continuous.)
+
+#+begin_quote
+  If you want to know more, I can send a copy of the poster. It looked amazing and very professional quality (so happy my friend was willing to help with the graphics!).
+#+end_quote
+
+Cool, send it over!

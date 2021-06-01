@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 3
+:DateUnix: 1414636272.0
+:DateShort: 2014-Oct-30
+:END:
+
+That is certainly a setting. Let me try my hand at clarifying the rules.
+
+1. All programs must return only 1 bit.
+
+2. The more bits long a program is, the longer it takes to run (screaming through a labyrinth).
+
+3. Programs will take the same amount of time to run if they are the same physical length, no matter what that program actually does.
+
+Those are really the only rules.
+
+--------------
+
+A kolmogorov complexity solver is probably one of the most valuable tools. I'm not confident in that working though.
+
+That's admittedly a pretty long term goal, since it requires multiple bits. Of course you should be able to acquire each bit in parallel. Can I get ~800 000 grad students?
+
+I'd want to eventually implement the kolmogorov program on real hardware.
+
+--------------
+
+Ooh!
+
+Are tunnels one way only? Try to keep all the data bits at the very end of your journey/program. Trace your steps back. That way you can rerun a program, and only pay for the bits that have changed. Once you have a well mapped program, you retrace your steps and simply tell it to find a different bit. Run multi-bit programs a lot easier. Like just a massive amount easier.
+
+You can just follow the path that points at a particular bit.

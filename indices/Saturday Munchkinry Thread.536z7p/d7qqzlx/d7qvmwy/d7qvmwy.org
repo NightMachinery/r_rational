@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: xamueljones
+:Score: 9
+:DateUnix: 1474141076.0
+:DateShort: 2016-Sep-18
+:END:
+
+Ooo! I love this sort of question! Here's a list of important things to keep in mind:
+
+So the only information I get is whether or not I currently dealing with a load or unloaded save state. This is a horribly broken power if I was allowed multiple save slots so I'll assume that I only have one 'save' at a time (if I saved an hour ago and then save now, I'll only have the latest save of 'now').
+
+If I could keep a running tally of how many times I have repeated a day, that massively increases the effect of my power. So what I do is write down '1' and make my first save. When I reset, I'll have the knowledge that I made a reset, but not why. So I then write down '2' and make a new save slot 30 seconds later. When I reset again, I write down '3' and save again with a small time delay. This allows me to keep a running tally so I can learn how many times I repeated something. Otherwise if I keep resetting from the same point in time, I won't know how many times I have repeated the same day. NEVER reset more than once from the exact same point in time.
+
+Okay, now that I have the ability to count my time loops, I can start using my power by taking a list of options of things I want to do and I tie each option to a particular loop number. If I reset after option 1/Loop 1, then that means something bad happened with the first loop. This way I iterate through different events until I hit something I like and don't want to lose the memories of. If I reach the end of the list and there were 60 different choices, then I have gone through 60 loops and with 30 seconds per reset, I have spent only half an hour just testing out all of the options. I can easily use this power to rapidly speed through large lists such as combination locks, different experiments, or anything that we only need a single bit of information on. You don't need randomness, just following a predetermined list will provide enough changes loop to loop.
+
+Ideally, you want to keep a 'save' ready well in advance of life-threatening accidents. So keep a 'save' ready and resave every third day (or some arbitrary span of time). If you suddenly reset without knowing why, start changing what you do randomly (roll dice or flip coins when making choices). The moment you know (or think you know) what is causing your reset and have the chance/time to make a difference, decide on some condition to determine success or survival, save immediately, and reset ONLY when you don't meet this condition. This way every time you reset, you know for sure that the condition has not been met. If you keep a running tally of how many loops has occurred, then you can know in advance something is seriously wrong if the loop number reach a ridiculously high number.
+
+You should never rely on randomness to make enough variation from loop to loop. Otherwise if done poorly, there won't be enough variation loop to loop.
+
+If you want to test whether or not something is random and different loop to loop, then what you do is roll a dice and decide to only loop if you don't get a six or have reached 100 loops. If you reach Loop #100 without rolling a six, then you probably rolled the dice the exact same way getting a four on every loop. If you get a six roughly in the first ten loops, then it's statistically normal and dice rolls can be treated independent of each other loop to loop. If you only get the six at Loop #50 or #75, then it likely means that there are some randomness causing variations between loops, but it's at a lower level than it should be or events are statistically likely to repeat loop to loop, but have a chance to vary and turn out different.
+
+Now another interesting aspect to this power is if you have two or more people with the same power and the only person who has knowledge of whether or not a loop has occurred is the person who resets first. It would require [[https://en.wikipedia.org/wiki/Vector_clock][vector clocks]] to keep track of the current loop numbers!
+
+Wow! I wrote a lot more than I was expecting. You know what, I think I'm going to play around with this idea and write about it for NaNoWriMo.
+
+I'm going to have to think if it's possible to solve the halting oracle problem with this power.

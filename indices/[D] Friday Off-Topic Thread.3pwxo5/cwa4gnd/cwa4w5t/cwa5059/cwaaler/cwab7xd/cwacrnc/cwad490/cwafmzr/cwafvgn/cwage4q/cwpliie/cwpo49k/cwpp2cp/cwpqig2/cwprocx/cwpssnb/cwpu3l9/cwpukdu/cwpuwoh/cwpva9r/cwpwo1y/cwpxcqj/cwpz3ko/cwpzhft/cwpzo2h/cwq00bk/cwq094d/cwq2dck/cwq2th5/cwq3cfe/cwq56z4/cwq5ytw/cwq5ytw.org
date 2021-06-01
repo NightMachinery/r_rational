@@ -1,0 +1,60 @@
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1446775241.0
+:DateShort: 2015-Nov-06
+:END:
+
+#+begin_quote
+  That could start being a scary amount of data, fast. For most data, it's ideal. But for giant pixel arrays compression is probably necessary.
+#+end_quote
+
+Garbage collection.
+
+#+begin_quote
+  Accessors that compress and uncompress to provide a pixel array, or to save to disk?
+#+end_quote
+
+If you access a pixel array once, you're probably going to access it again pretty soon, so you leave it uncompressed until you need the memory.
+
+#+begin_quote
+  or to save to disk?
+#+end_quote
+
+capnproto is kind of defined as "in memory structures and disk structures are the same, saving to disk is a write operation".
+
+#+begin_quote
+  I don't think we could even store an entire video as pixel arrays
+#+end_quote
+
+Why would you do that? You only need to convert the compressed arrays to pixel arrays if you're using an accessor that requires you to do operations on the array that require uncompressing it.
+
+#+begin_quote
+  We'd only convert from the png to the pixel array on first access,
+#+end_quote
+
+On first access that needs to perform bitmap operations, as opposed to exporting it to (say) a video player app.
+
+#+begin_quote
+  after that it would be cached.
+#+end_quote
+
+That's what I said.
+
+#+begin_quote
+  We'd only serialize the pixel array back into a png
+#+end_quote
+
+Unless you modified the array, you just throw it away. And it's not a PNG, it's a capnproto structure that contains compressed bitplanes that can be copied directly into a PNG.
+
+#+begin_quote
+  when there isn't much load on the CPU
+#+end_quote
+
+That's a good time to run the garbage collector.
+
+#+begin_quote
+  or when the accessor is closing down to free memory
+#+end_quote
+
+That's also a good time to run the garbage collector.

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: gwillen
+:Score: 2
+:DateUnix: 1496462681.0
+:DateShort: 2017-Jun-03
+:END:
+
+I think something from the pdfjam package may work for you:
+
+[[http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam]]
+
+In particular there's a tool called pdfjam-pocketmod, which "converts 8 pages from a single PDF file into a pocket-sized booklet". That's for a fancy layout where you can just fold the page directly into a booklet I think -- if you just want to shrink pages so you can cut them out, pdfnup is a tool for grouping every N PDF pages into one (read the name as "pdf-N-up".)

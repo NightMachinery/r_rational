@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: nicholaslaux
+:Score: 2
+:DateUnix: 1444083539.0
+:DateShort: 2015-Oct-06
+:END:
+
+#+begin_quote
+  You can't simultaneously edit files
+#+end_quote
+
+This heavily is dependent upon the file type you're talking about. Images and videos are two specific types of files that do not play well with simultaneous editing, in large part because most formats are proprietary (psd quickly comes to mind since you mentioned layers and filters, and I assume most video formats are the same way) and/or don't easily lend themselves to easy merge functions.
+
+However, a much more common example of a file that users are likely to want to simultaneously modify would be a spreadsheet or a text document.
+
+In both of these cases, there are existing and obvious merge methods which are easily shown/applied. Additionally, the few formats of these files that exist are either public/open source, or have merge methods built in to their proprietary software.
+
+It's possible that I simply don't understand your issue due to not working in an industry that uses the types of files you're talking about much (I'm a programmer myself), but between tools like Dropbox and its competitors, git and similar services, and various relational databases, I don't see a large motivation for a generalized solution to this issue, and the specifics mentioned seem more to lead me to a specialized solution. Nothing about this tells me that a psd merge tool is likely to have more than superficial similarities with a blender file merge. Additionally, I don't forsee a great number of people wanting to handle merge issues in either of those formats external to their respective programs, or else there would be more competitors to modifying files of that format (rather than competing tools simply utilizing their own proprietary file formats).

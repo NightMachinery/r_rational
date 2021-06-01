@@ -1,0 +1,9 @@
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1426775641.0
+:DateShort: 2015-Mar-19
+:END:
+
+Technically speaking, third-order logic /can/ be written down completely inside second-order logic (as [[/u/xamueljones]] notes). However, in [[http://www.cs.ucsb.edu/%7Ebenh/290C_W15/papers/Calculus%20of%20Inductive%20Constructions.pdf][dependent type theory]] we generally find it useful to have an infinite hierarchy of universes available precisely for the sake of making statements that /appear/ self-referential, or "impredicative".
+
+Of course, non-homotopy type theories are mostly constructive, meaning that they simply don't allow us to state undecidable/unprovable propositions as "believed" theorems: once we "go intuitionistic" and require all propositions to be proved in order to be believed (possibly via exhibiting some trivial data object, as with "proving" the "proposition" =Nat= by exhibiting the natural number 1), we can get a well-behaved logic with an infinite hierarchy of universes and no paradoxes. We just refuse to believe the Law of the Excluded Middle (=forall P. P \/ ~P=) when we can't actually exhibit a finite-time decision-procedure for the proposition =P= in question.

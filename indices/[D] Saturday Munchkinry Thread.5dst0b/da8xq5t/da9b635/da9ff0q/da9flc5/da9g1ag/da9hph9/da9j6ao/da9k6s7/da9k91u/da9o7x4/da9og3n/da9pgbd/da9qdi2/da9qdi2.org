@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: Rhamni
+:Score: 3
+:DateUnix: 1479749269.0
+:DateShort: 2016-Nov-21
+:END:
+
+Hm. That's interesting. The way I want to rule it is that nothing indicates Alice will press at 59:55 until, at 59:55, she sees that it's time to press.
+
+Except, now we've made a special exception curtailing Bob's power, because he no longer gets five seconds' warning when something important happens. And of course, if he does get the warning he is going to press at 59:50, and it cascades all the way down to both pressing at 00:00.
+
+I'm gonna have to plug this hole. Thanks for exposing it.
+
+I suppose... the simplest fix might be to have the power fail to detect anything caused because of the same power in the future. That way seers can still be surprised by other seers when new information pops up, but we avoid information leak from far in the future.

@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: ben_oni
+:Score: 3
+:DateUnix: 1510635021.0
+:DateShort: 2017-Nov-14
+:END:
+
+I recommend a [[https://en.wikipedia.org/wiki/Quicksort][quicksort]] algorithm. You'll need a bit of a work area to hold multiple stacks, or be able to use stickies in the stack to serve as bookmarks (dividing different sub-stacks). An accordion folder (as mentioned by [[/u/ulyssessword][u/ulyssessword]]) would work best.
+
+1. Take a stack of papers. Quickly guess what number would divide the group in two (greater and lesser). It doesn't matter if your guess is off, but try to get something near the median. Flipping through the stack real quick should give you a good idea what number to use.
+
+2. Next, separate the stack into two more stacks, greater, and lesser (or equal). Use the smaller stack, and repeat from step 1. This should give you a series of stacks from larger (and high numbered) so smaller (and lower numbered).
+
+3. Keep going until you have a stack you can quickly sort by hand (maybe 10 pages?). Once done, set this stack upside-down in the "sorted" pile. Move onto the next stack (which should be about twice the size), and repeat from step 1.
+
+Note that depending on what you are sorting, there are probably more efficient ways to do it. I often find myself sorting things by integer that /also/ have secondary attributes that are easier and faster to compare. I use a dictionary sort in these cases (grouping by gross secondary attributes, and then doing a quicksort on each group.)

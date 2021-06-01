@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 3
+:DateUnix: 1485913857.0
+:DateShort: 2017-Feb-01
+:END:
+
+Hansen's GCMII would be a good choice then - it already includes ocean currents and basic sea ice simulation :)
+
+Things to consider:
+
+- It's designed for Earth. You'll need to generate and feed in alternative parameters for terrain and bathymetry, atmospheric composition, solar radiation, etc. Nonspherical settings are right out.
+
+- What programming language are you using for this? What file formats? (If you haven't chosen yet, Python is good for this kind of sim and NetCDF is the best gridded file format)
+
+- It will take quite a long model run to converge from best-guess initial conditions to a stable state. How will you tell when this has happened? Do you even care? Do you have the compute resources? Consider running a lower-resolution or lower-dimensional model to refine the initial conditions - but also check that this actually helps (GCMs are often intuitive)

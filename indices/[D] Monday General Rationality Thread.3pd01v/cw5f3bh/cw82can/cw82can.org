@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: itaibn0
+:Score: 1
+:DateUnix: 1445460669.0
+:DateShort: 2015-Oct-22
+:END:
+
+I believe if you try to define such a concept you will get something essentially equivalent to ordinary Kolmogorov complexity, or even more trivial if you define it badly.
+
+For instance, consider this concept: A (m,p) description of a string s consists of an m-bit description of a probabilistic Turing machine M which has a probability p of outputting s. Given M we can calculate the list of all possible outputs of M in decreasing order of likelihood. Every entry appearing before s must have a probability of appearing which is at least p, which means there can be at most 1/p such entries. Then describing M as well as the place of s in this list requires around m+log(1/p) bits, which means that we can bound above the Kolmogorov complexity of s by around m+log(1/p).
+
+In the other direction, we can consider a universal Turing machine whose first m bits of input are hardcoded into it and the rest are generated randomly. Using machine of this form we can generate a (m,p) description for any string with Kolmogorov complexity slightly less than m+log(1/p).

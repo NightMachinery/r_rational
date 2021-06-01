@@ -1,0 +1,36 @@
+:PROPERTIES:
+:Author: krakonfour
+:Score: 2
+:DateUnix: 1406576208.0
+:DateShort: 2014-Jul-29
+:END:
+
+There are two frames of reference nestled inside one another:
+
+The first is Earth. All sectors have the center of the Earth as the 0:0:0:T reference, with T being the base universal time.
+
+The second frame of reference is the center of your own realtime zone. You position relative to the sector you are located in is measured from a 0=:0=:0=:T= coordinate that the observer represents.
+
+When you swap two sectors, you will be using coordinates calculated from Earth. If you swap two sectors, including yourself, the positions of the elements contained are maintained relative to your realtime zone's center.
+
+The swap itself is done instantaneously. Time won't move while the simulator is waiting for the next rendering cycle, with the information modified by a hack, to be implemented. If you managed to observe an extremely faraway object without extending your realtime zone to cover it, it would be moving in stopmotion.
+
+What this means is that, while calculating a swap, you just have to make sure that /you/, spaceship and all, are contained within the sector you are trying to swap between two rendering cycles.
+
+For example, imagine we are outside the Milky Way. Sector sizes are a few lightyears across, and the rendering cycles are several months long. You would be hard pressed to find yourself on the edge of the sector by the time the next cycle is rendered.
+
+Next example: You are inside the smallest sector your spaceship can fit inside, barely 400,000km from Earth. Rendering cycles are spaced by delays on the order of 0.0001 seconds. If the sector cube is 52x52x52m and your spaceship is 50x50x50m, you would be fine as long as your velocity relative to the sector you are in doesn't exceed 20km/s. If it does, the edges of your ship will be sheared off down to the subatomic level and left behind.
+
+But that's the tightrope-walk solution. The easy solution is to choose two sectors within your realtime zone (you can theoretically read the coordinates of all the sectors inside your realtime zone simultaneously), which can easily exceed 10,000km in a closely rendered area near Earth, and time the swap to occur the moment you enter one of them.
+
+You can, as mentioned in a previous simverse post, swap millions of lightyears and back if you already know the coordinates of your destination, and there is an observer at the destination keeping your target sector 'ready' by forcing to render.
+
+If you swap to random coordinate, most of the time, nothing happens. If we take all the sectors in the universe, and swap with one of the them at random, you are most likely to hit:
+
+-Fail because the target was an empty, unrendered sector. This is due to the sheer volume of space and the number of cubes that entails.
+
+-Fail and reset, because you tried to swap with one of the billions upon billions of microscopic sectors that compose Earth, and that are closely monitored.
+
+Direct hacks are limited in military utility, only their association with dangerous objects and phenomenons make them dangerous.
+
+You cannot modify the contents of a sector. You cannot delete sectors. If you force a reset, it doesn't make your opponent 'repeat his actions' because he forgot the past. No, he is contained in a realtime zone that continues rendering while the sector around him is being frozen then reset (no memory loss or subjective time travel), and on top of that, the sector is rendered until it reaches the current timestamp. Phenominally, it looks like the reset sector is 'refreshed' and simulated at accelerated speed while the rest of the universe waits for it to catch up.

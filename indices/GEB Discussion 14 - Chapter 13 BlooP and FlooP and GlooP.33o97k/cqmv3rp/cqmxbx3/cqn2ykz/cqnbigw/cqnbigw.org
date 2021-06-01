@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: OffColorCommentary
+:Score: 2
+:DateUnix: 1429893264.0
+:DateShort: 2015-Apr-24
+:END:
+
+The OPP in the second argument of HALT isn't run; it's just used as input into the first OPP. The first OPP runs HALT(OPP, OPP) (same as the original command) and contradicts it.

@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1434589420.0
+:DateShort: 2015-Jun-18
+:END:
+
+#+begin_quote
+  I am incredibly unsure about your statement that this would be easier to make than a space elevator. All we need for a space elevator is a few more breakthroughs in materials science, launch a satellite with the elevator inside, and unwrap it at the counterweight point. Skyhook touches ground, tie the anchor, there you go.
+#+end_quote
+
+I actually think I underestimated how simple to implement the mass stream is, but a different approach (bootstrapping from something simpler) is needed if you want to avoid invoking the dyson sphere as a precursor.
+
+First, you could get it started with a long steel wire in LEO that wraps around the world. For reference, a 1 mm^{2} wire that's 40,000km with density 10 g/cm^{3} is 400 tons (roughly the mass of the ISS). This is 8 Falcon Heavy launches, so it costs $360 million to get that much wire up there. This eventually becomes the mass stream, but at the start it's just scaffolding.
+
+Once you have the wire in place, you can increase its diameter by vacuum deposition of metal from any source (asteroid, lunar, launched), thus growing it to the desired g. It can spin a little faster than orbital speed, but this creates tension. It can't handle much tension safely until it gets to a point where it can resist micrometeor damage. So you would probably want to build it into a ribbon before doing anything else. You would do this by setting up robots that work their way along the length and use a piece of heated metal to deposit layer after layer of material. These could go slower than the cable, as long as they are light enough to use it for support.
+
+This system could be somewhat self-bootstrapping, because you can use it as a track to brake along to get materials to orbital velocity. However, it's not the easiest kind of track of this kind to build, as you could simply take any orbiting mass (say the ISS itself) and attach a trailing cable to it. You need a few hundred km of distance for human compatible acceleration, but bulk materials like we need for bootstrapping purposes can be accelerated much faster, which allows even shorter cables. In either case, you are exploiting [[http://hyperphysics.phy-astr.gsu.edu/hbase/electric/farlaw.html][Lenz Law]] to create magnetic friction.
+
+The advantage of the huge circular track for this context is that it has effectively infinite length, so you can accelerate as slowly as you need and avoid stresses that might require large tensile strength to deal with. The problem is that you need to oppose gravity the whole time, albeit at a diminishing rate. So a 5 hour acceleration time would mean expending a considerable amount of fuel to keep craft from exerting downward acceleration on the wire. But there might be good workarounds to that (say use a jet + tether that lifts out of the atmosphere as it goes faster).
+
+In any case, it becomes essentially the same as your idea at the point when you construct a housing around the mass stream (supported by its momentum) that goes at a slower rate, and eventually slow that down to stationary with respect to the the earth. The mass stream needs to be accelerated proportionately to the weight it is supporting so it ends up going at superorbital velocities. The stationary ring can be used for elevators to stationary points on the earth, and you can walk around on it, live on it, etc. Neither the stationary ring nor the superorbital mass stream ring is under much tension at any point, as long as you keep the forces balanced and uniformly distributed.

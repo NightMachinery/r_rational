@@ -1,0 +1,13 @@
+:PROPERTIES:
+:Score: 0
+:DateUnix: 1436238638.0
+:DateShort: 2015-Jul-07
+:END:
+
+#+begin_quote
+  It's a difficult problem to identify a cost function that will achieve what you want.
+#+end_quote
+
+Which is why, short of "solving FAI forever", the safest thing to do is to find ways to programming existing and upcoming machine-learning models, especially agent-y ones, in ways that just don't involve optimizing an objective function over the environment in the first place.
+
+It helps that robotics and ML professionals /do/ notice this is a problem: interesting, nontrivial advances are often about not only finding the right learning and control algorithms and the right hypothesis classes, but finding an objective function that actually serves a nontrivial goal well without inducing other obviously-stupid behaviors. One of the major reasons /general/, domain-agnostic learning is actually very difficult to do is that in non-Bayesian ML, "learning = stochastic optimization of the objective function", and so without an objective function (that might force you into annoying non-solutions), how the hell do you learn?

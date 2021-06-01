@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: Veedrac
+:Score: 1
+:DateUnix: 1524062890.0
+:DateShort: 2018-Apr-18
+:END:
+
+The aim is to produce a stronger chess engine (that seems more human), not to reproduce the paper, right? So doesn't it seem strange not to train LCZero with an endgame tablebase? AlphaZero style approaches have fairly evident weaknesses so it seems like you're giving up quite a lot of strength in order to be more "pure", plus an endgame tablebase is strictly less biased by virtue of being perfect.

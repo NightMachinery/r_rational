@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 2
+:DateUnix: 1465221989.0
+:DateShort: 2016-Jun-06
+:END:
+
+I didn't understand the math, but beside that, I'm not sure I understood the underlying reasoning either.
+
+The example they give is "A robot can choose between working inside which has a low payoff, or working outside, which has a high payoff unless it rains, in which case we may need to interrupt it. We don't want it to take that fact into account, so we need to change the structure of the program so that the robot always forgets it's been turned off". Unless I misunderstood the example (for instance, maybe they want the robot to take the rain into account, but not the switching off?), extracting the turn off from the robot's utility function is counter-productive, because it will encourage the robot to always go outside, instead of considering "going outside" as the high-risk, high-reward task it is.

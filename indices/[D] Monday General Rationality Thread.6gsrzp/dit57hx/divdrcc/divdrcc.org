@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: ben_oni
+:Score: 2
+:DateUnix: 1497402046.0
+:DateShort: 2017-Jun-14
+:END:
+
+This sounds like an issue that crops up in programming with some frequency. Equality.
+
+We start with some object, call it X. As long as we pass references of X around from place to place, all references refer to the same X, and are equal. We can even call X by the name Y if we wanted, and X = Y would still hold. You would continue to be you.
+
+But sometimes references are not sufficient. Sometimes we need to make a deep-copy of X. Now, Y, which is a deep copy of X, is equal to X in a structural sense, but not in a referential (shallow) sense. That is, references to X are not equal to references to Y, even though the data is identical.
+
+If X and Y are deep copies, and allowed to evolve, that is, the structure or data of one or both changes, then X and Y are no longer equal in any sense (so long as they aren't changing synchronously).
+
+But what if after creating Y as a deep copy of X, we immediately remove all references to X and zero out the memory location of X. X is gone, destroyed. Does the expression X = Y mean anything anymore? Since all references to X are gone, you can't even pose the question. For a programmer, it doesn't matter: we can rename Y to X and continue on as though nothing had happened. If you want X back, you can just copy Y, after all. Since they never exist simultaneously, and no information is lost, it doesn't matter whether Y is a deep or shallow copy of X.
+
+This happens behind the scenes all the time inside computers; The system needs to run a garbage collection pass, moves some objects from one section of memory to another (for defragmentation purposes), and updates the object handles. The executing program never even knows anything happened.
+
+Teleportation of this sort is nothing more than moving data in exactly this sort of way. I know you "think" you are unique, but computation is also data. So go ahead, get in the teleporter, you'll be fine. Unless you think you have a soul that is intrinsically linked to your particular collection of atoms? Or do you think the universe would be better off with two of you?

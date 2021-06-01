@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 10
+:DateUnix: 1448910657.0
+:DateShort: 2015-Nov-30
+:END:
+
+Over Thanksgiving I DMed a Hogwarts themed D&D game. As part of the Ravenclaw section, the players were tasked with playing a game against a ghostly opponent, with the catch being that they had no idea what the rules of the game were and could only gain knowledge through watching the opponent's moves or testing the result of some action.
+
+I've also lately been getting into programming web games, mostly because it's something that I can do while watching television, which is difficult for me to do with writing. There are games like [[https://en.wikipedia.org/wiki/Zendo_(game)][Zendo]] with hidden rules, or games like [[https://en.wikipedia.org/wiki/Mastermind_(board_game)][Mastermind]] with hidden information, both of which are inspirations for a game that has rule-finding as a core element. I guess my problem with Zendo is that it's /only/ inductive reasoning with the end goal being to find the rule. Once the rule is found, the game starts over and the player doesn't do anything with it. What I want (and what I'm trying to prototype towards) is a game where finding the rules is a means to some end. There are certainly a lot of games that do that, from Dark Souls to bullet hell shooters, but rule-learning tends to be a relatively small part of it in comparison to executing a plan with those rules in mind.
+
+The larger problem is generating rules /procedurally/ in such a way that the rules can be tested and figured out /and/ still be entertaining, which would probably involve too much work.
+
+(The game I used for D&D was a variant on [[https://en.wikipedia.org/wiki/Ludus_latrunculorum][latrunculi]], which is sufficiently obscure that none of the players knew what it was, while also being close enough to traditional board game grammar that they wouldn't be completely lost. I've done this before with a different group using Nine Men's Morris, though I don't think that's usable now that the Assassin's Creed games have increased exposure to it.)

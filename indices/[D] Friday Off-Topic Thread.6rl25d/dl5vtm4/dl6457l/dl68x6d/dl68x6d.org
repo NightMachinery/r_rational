@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 6
+:DateUnix: 1501876563.0
+:DateShort: 2017-Aug-05
+:END:
+
+So one of XGEF's functions is to prioritize mods, which is to say it decides the pecking order and then applies their changes one after the other accordingly. For the moment I'll assume we're just talking about image files (code has more nuance to it).
+
+So each mod has within it a mod_info file that lists some things: mods that this mod is incompatible with, mods that this mod needs to load before, mods that this mod needs to load after, and mods that this mod needs as prerequisite. Using this info, XGEF can make a preliminary ordering of mods based on absolute need (and if there's contradictory info, abort and call out the mods in question). Once the "needs" are dealt with, XGEF then looks in mod_info again and looks for the requested priority, which is a scale from 1 to 5. Mods are divided into the five different priority groups, preserving the needs hierarchy from earlier, and then at this point if there are any ties it's simply resolved alphabetically. XGEF now has all the mods in a numbered priority list.
+
+XGEF can then start loading all mods into the file structure one at a time from lowest priority to highest. We start with the lowest to ensure that if a higher priority mod changes the same file, then its changes will be the ones that win out. A readout is saved of these steps, so if mod makers are trying to figure out why files aren't being overwritten, they can find out what higher priority mod is pushing them aside.
+
+This is sufficient for binary files (such as images), but code can actually stand to be a bit more flexible. If two or more mods change the same system-defining file, XGEF can boot up Roslyn and perform a similar process with finer-grained tools. Lower-priority mods make their additions and modifications, and higher-priority mods then have their additions and modifications incorporated, with their changes having the final say. This can still lead to interesting failure states, but so long as modders keep to their own namespaces the issues should be minimal.
+
+In reality, being able to mod systems directly should only truly be needed as a last resort. There is an event system planned that will allow nearly any code event to be registered to, and once that is in place the only big system mods should be for overhauls and adding event generation to functions that we neglected to add it to.
+
+A good amount of this only works because we've decided that most mods will be incorporated during world generation, not on an ad-hoc basis. I'm still toying with the idea of permitting ad-hoc mods so long as they restrict themselves to certain classes of changes (such as UI), but by and large this should only be a process that needs to be done once per world, and then it's done for the duration of that world.

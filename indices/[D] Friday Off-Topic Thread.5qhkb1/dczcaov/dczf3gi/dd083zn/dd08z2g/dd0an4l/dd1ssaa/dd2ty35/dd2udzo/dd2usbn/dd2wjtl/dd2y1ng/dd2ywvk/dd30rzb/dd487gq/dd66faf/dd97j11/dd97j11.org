@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: Veedrac
+:Score: 2
+:DateUnix: 1486074694.0
+:DateShort: 2017-Feb-03
+:END:
+
+#+begin_quote
+  (Sorry for the delayed response. Real life intervened yesterday, alas.)
+#+end_quote
+
+You tease.
+
+#+begin_quote
+  So to describe a mathematical object in my schema, all you would need is (a) a universal Turing machine, (b) the formal system the object exists in, and (c) a specification of the object itself within that system.
+#+end_quote
+
+Apologies for not being clear here, but I'm asking about (b) and (c), not (a).
+
+The problem here is that Komolgorov complexity isn't an intrinsic measure of the complexity of a physical thing, as much as a measure of the complexity of /computation/. But descriptions aren't themselves computations. Descriptions are relations between concepts you know, which in this case are the symbols the Turing Machine (or equivalent abstraction) produces, and the concepts being described in terms of them, which in this case are the mathematical objects.
+
+Thus if the language-in-translation was chosen to be that way, the Komolgorov complexity of any described axiom in any formal system with a finite number of axioms /could/ be 1. This is true /regardless/ of the complexity of the system from a mechanical standpoint. All of the meaning can be hidden in translation! This ruins the deductive power of this argument.

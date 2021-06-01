@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: krakonfour
+:Score: 1
+:DateUnix: 1406072775.0
+:DateShort: 2014-Jul-23
+:END:
+
+Well, look at it this way:
+
+Imagine we are in a sector where the simulation's attention window is 0.03 seconds.
+
+Now imagine we have a spaceship with a poor onboard computer struggles to complete a swap in 0.03 seconds. There are three steps to a swap: reading, calculating and running. The first and second step are outside of the computer's control: they will always take 0.02 second.
+
+Now the spaceship decides to use an external computer that can do the calculation part 10 times faster: 0.001 seconds.
+
+The swap now takes 0.01+0.001+0.01: 0.021 seconds, right?
+
+No. You need to send information to the external computer, then receive it back. Information travels at lightspeed. In 0.009 seconds, light travels 2700km, so the external computer must be within 1350km. That's basically dragging it along with you. Furthermore, there is delay involved in sending the information to the transmitter, and reading the information received. Each millisecond delay forces the external computer to be 300km closer... in space, you're practically dragging the computer along with you.
+
+On top of all that....
+
+The way swap work is that the hack is only implemented at the END of a rendering cycle. That means that even if you complete steps 1 and 2 as quickly as possible, you will be stuk loading for step 3 to happen. There is no point in 'going' faster' with such a hard limitation.
+
+I'll talk more about how ships use these hacks and how they influecnce their design later.
+
+PS: A bigger computer requires more energy and cooling, which basically means its a second spaceship in this setting.

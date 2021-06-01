@@ -1,0 +1,11 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1444691856.0
+:DateShort: 2015-Oct-13
+:END:
+
+#+begin_quote
+  There's a 3D plugin for matplotlib
+#+end_quote
+
+Yep, found that. Also turns out the Seaborn library built on top of matplotlib, which the package I'm working on already uses in one example, can do [[http://web.stanford.edu/%7Emwaskom/software/seaborn/examples/joint_kde.html#joint-kde][/very/ pretty kernel density estimates of bivariate distributions]] from sample datasets, in barely any lines of code.

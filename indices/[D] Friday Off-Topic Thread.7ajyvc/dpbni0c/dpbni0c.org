@@ -1,0 +1,42 @@
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 7
+:DateUnix: 1509769328.0
+:DateShort: 2017-Nov-04
+:END:
+
+Kind-of-weekly update on [[https://docs.google.com/document/d/1vIWf3Nqudgh18j4RK8bm4zOTSKUFl6l9Igvdg1adzGE/edit][The Tesseract Engine]], my ongoing game engine project.
+
+--------------
+
+I haven't done much since the last two weeks. The most important thing I did was try to decide which engine to use.
+
+A lot of people have recommended Unity to me in the past, but I really don't see it. I've worked with Unity several times, and I'm working with Unity now, and so far my take-away is that Unity handles a lot of thing a beginner would have trouble with and probably get wrong on their first try, but it doesn't actually help you /make a game/ that much.
+
+Like, game-making is 99% playtesting things, fine-tuning, and finding new intricate little laws of game design that nobody tells you about like "You need to give some ease-in to this character's movement or it's not going to feel natural" or "You need your character to have a little animation when the player does X to have a proper game feel", while I feel Unity focuses on more surface aspects (realistic physics and rendering, state machines), and sometimes it baggage even feels detrimental.
+
+Anyway, my point is, Unity is out. While I'd like to eventually make the engine from the ground up (both for fun and because I legit think I can do better), it's probably a really terrible idea right now. I recently re-read [[https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/][an old software article on the subject]], which basically said "If you already had an existing structure, use it. If it has flaws, fix them. You shouldn't create a new structure from the ground up, it's just going to have different flaws".
+
+I think the article addresses the exact mistake in my thinking: I was imagining that starting over from a "clean state" would be better somehow; but the only reason I thought that was because I can't visualize all the challenges ahead of me, all the new design errors I'll make as I wear out, etc.
+
+With that in mind, I've decided I will make a fork of the Minetest engine, and enhance it incrementally until I get the result I want. Minetest is what inspired this project in the first place. It's open source, it's C++, and it's a base I can use to see my changed in real time instead of imagining them in the future.
+
+Editing an existing codebase has its difficulties. I need to understand what the hell I'm reading before I can make significant changes like adding features or reworking systems (changes like "Add line of text here" or "Change the player jump height are relatively easy"). Last time I had a look at the Minetest codebase, it felt too humonguous for me to parse, and I quickly gave up. I don't know how much I've grown as a programmer since, but I feel that "Keep reading the codebase until I understand it" is an area where I've become both braver and more efficient.
+
+--------------
+
+I'm afraid that I'm bike-shedding right now, and that I've already spent way too much time planning this game.
+
+The common advice for novice game designers is "Don't mother making too many plans, start as soon as you can". But this isn't really my thing. Maybe it's a sign that I should focus even more on starting sooner, but I don't think this is it. For one, I legitimately think I'm a better planner than average, especially regarding gamedev.
+
+But the main thing is, I've burned out on a lot of projects, and I'm just aware of how many ways it can go wrong. I feel like I can't move forward if I don't have a mental model of where I am, roughly where I will be, and how things are going to click together.
+
+I guess the only solution here is to suck it up, accept that I'll never know if I'm doing too much planning or not enough planning, move forward and hope it gets better.
+
+(thanks to [[/u/TK17Studios][u/TK17Studios]] for reminding me to post these, by the way; the encouragement helps)
+
+--------------
+
+I think I'm one small step away from getting into the pleasant "code-test-code-test-code-it-works!-code-test-code-test" loop where I'm the most productive, and it's having a list of milestones. I need to take a good look at Minetest and the Minetest codebase, see what I think I can do better (using the metrics I've already decided on), and order it by how fast I can do it and how rewarding it will be.
+
+I'm hoping that will be done by the end of the week-end.

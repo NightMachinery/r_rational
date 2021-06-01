@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1453410363.0
+:DateShort: 2016-Jan-22
+:END:
+
+[[/r/rational]] uses the former, not the latter. [[https://a.thumbs.redditmedia.com/kOKWm1CTiAFbcTeoLUAWzhE5zst556_kcBjVp4c5uq8.css][You can see our CSS here.]]
+
+#+begin_example
+  a[href="#s"]{display:inline-block;background:black;color:white;padding:0px 0px 0px 10px}a[href="#s"]:hover{color:#8F8F8F}a[href="#s"]::after{content:attr(title);background:black;color:black;visibility:visible}a[href="#s"]:hover::after,a[href="#s"]:active::after{color:white}
+#+end_example
+
+Based on our revision history, it's been that way since two years ago. So ... I'm not sure what it is that you're seeing. I'll try to test it on my wife's iPhone when I get home to see if I can diagnose the problem.

@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: i_dont_know
+:Score: 3
+:DateUnix: 1412914078.0
+:DateShort: 2014-Oct-10
+:END:
+
+Dark blue text on a black background (your chapter titles) is generally inadvisable. When I'm reading a story, I tend to prefer dark text on a lighter background, but there are plenty of scripts that will allow people to have the option.
+
+I'm glad that you don't have the nude furry picture at the top of the page. I might hide the picture by default and have a "click here to see NSFW picture" where the picture should go in the text, and have some javascript show the picture.
+
+For typography, /please do/ use hyphens, em-, and en-dashes correctly. If you use a hyphen where an em-dash should be, on first read-through I will often read it as a hyphenated word, and it will take me a moment to realize that there should be a break in the sentence---confusing!
+
+[[http://alistapart.com/article/emen/#section5][Here's a good reference on the different types of dashes]]
+
+I prefer to write in pandoc-styled markdown, then use the cross-platform, free, and absolutely amazing [[http://johnmacfarlane.net/pandoc/][pandoc]] utility to convert to [[http://johnmacfarlane.net/pandoc/README.html][practically any format under the sun]], including html and epub. Pandoc even supports custom templates for all of its output file formats!
+
+When using pandoc, I use the =-S= (uppercase S) or =--smart= flags (they're the same) which:
+
+#+begin_quote
+  Produce typographically correct output, converting straight quotes to curly quotes, --- to em-dashes, -- to en-dashes, and ... to ellipses.
+#+end_quote
+
+Writing in markdown means writing in plaintext, which means that I am not tied to a proprietary or closed-source application. It's safer even than ODF in that I expect computers will still be able to read the same =.txt= file 10 years from now, with no loss of fidelity! I can also manage my story through source control such as git, out of which I get versions and (free) backups through github if I want them.
+
+Anyway, that's my advice---thanks for writing!

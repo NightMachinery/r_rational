@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: ben_oni
+:Score: 5
+:DateUnix: 1513364888.0
+:DateShort: 2017-Dec-15
+:END:
+
+#+begin_quote
+  I actually rather like C++ when I can get things working. It's not an easy language, but I think it's good at teaching how the computer works at a lower level, where Python seems to hide it. For learning computer science over learning programming, I don't think it's a bad choice, and it makes languages after that easier to understand.
+#+end_quote
+
+That's an argument for learning/teaching */C/*, not C++.
+
+As far as learning /computational/ science goes, simpler languages are better. Maybe Scheme, or Python. I recommend /[[https://mitpress.mit.edu/sicp/full-text/book/book.html][Structure and Interpretation of Computer Programs]]/.
+
+#+begin_quote
+  when I can get things working
+#+end_quote
+
+... that's the problem. Students should be learning theory, not struggling against the language. With C++, a simple const violation can lead to a cryptic compile-time error twenty lines long that no one can read. I'm of the opinion that first-year students need to be seeing results instead of errors, in order to get positive reinforcement.

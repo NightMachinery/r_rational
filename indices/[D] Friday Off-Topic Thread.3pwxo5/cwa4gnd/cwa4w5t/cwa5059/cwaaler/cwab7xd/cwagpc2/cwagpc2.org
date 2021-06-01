@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1445632521.0
+:DateShort: 2015-Oct-24
+:END:
+
+#+begin_quote
+  Sorry, rather files are practically limited to a single process.
+#+end_quote
+
+Only for write. For read, as many processes as you like can use them.
+
+No matter what system you come up with, updating data will /always/ be a one-at-a-time action if you want consistency. If you don't care about consistency then sure, go nuts. You'll end up with last-write-stomps race conditions, though.

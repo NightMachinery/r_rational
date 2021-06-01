@@ -1,0 +1,53 @@
+:PROPERTIES:
+:Author: tilkau
+:Score: 2
+:DateUnix: 1409995885.0
+:DateShort: 2014-Sep-06
+:END:
+
+I think triangular numbers may be relevant here. I don't know much about Wolfram Alpha, but here it is in Python, in the most simple, easy to understand way I could write it:
+
+#+begin_example
+  ggg = 1
+  gg = 0
+  g = 0
+  fbr = 0
+  maxturns = 100
+  graph = []
+  for turn in range(maxturns):
+      for i3 in range(ggg):
+          gg += 1
+      for i2 in range(gg):
+          g += 1
+      for i1 in range(g):
+          fbr += 1
+      graph.append(fbr)
+#+end_example
+
+Obviously, this only runs for 100 turns (ending in 171700 FBRs on the final turn). If I were making a larger graph I would probably use something more efficient, like this:
+
+#+begin_example
+  ggg = 1
+  gg = 0
+  g = 0
+  fbr = 0
+  maxturns = 10000
+  graph = []
+  for turn in range(maxturns):
+      gg += ggg
+      g += gg
+      fbr += g
+      graph.append(fbr)
+#+end_example
+
+After 10000 rounds, 166716670000 FBRs have been produced; in the 10000th round alone, 50005000 FBRs have been produced (naturally, the number of G's is the same as this.. The number of GG's is 10000; the reason for this should also be obvious.)
+
+Very quick graph of FBR production, turns is X axis:
+
+[[http://i.imgur.com/I9prTfQ.png]]
+
+It looks like you could fit this to a polynomial and be able to put it into WA that way.
+
+I ignored the googolplex limit because I calculated that I couldn't possibly run into it until I'd run my algorithm for a googolplex rounds.
+
+Soooo... maybe those GGGs are a tad overspecced.

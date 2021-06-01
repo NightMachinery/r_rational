@@ -3,7 +3,7 @@
 * Why can't AI safety be solved by giving AI limited, satisfiable goals?
 :PROPERTIES:
 :Author: lumenwrites
-:Score: 26
+:Score: 27
 :DateUnix: 1562289225.0
 :DateShort: 2019-Jul-05
 :END:
@@ -29,7 +29,7 @@ Am I missing something here?
 How would you go about specifying (in mathematically precise language) what a paperclip is? What "making something" is? Or even what "stopping" is?
 :PROPERTIES:
 :Author: Metamancer
-:Score: 54
+:Score: 50
 :DateUnix: 1562290645.0
 :DateShort: 2019-Jul-05
 :END:
@@ -39,7 +39,7 @@ How would you go about specifying (in mathematically precise language) what a pa
 Further, the difference between having a goal to solve a task (what most AGI is assumed to be doing) and incidentally being optimized to solve a problem (like current ML models) is very large, since the former comes with instrumental goals like ‘become more certain' and ‘become smarter' and ‘prevent the humans from changing their mind and asking me to do something else'. Those are dangerous.
 :PROPERTIES:
 :Author: Veedrac
-:Score: 30
+:Score: 33
 :DateUnix: 1562301408.0
 :DateShort: 2019-Jul-05
 :END:
@@ -165,7 +165,7 @@ Your company has their AI set to make 10 paperclips. Medical Company has theirs 
 Additionally, the way business works means it'll always walk towards less restricted AI. /Your company/ has their AI to always produce 10 paperclips. Cool, but your competitor <A> has it produce 20. Hey looks like it's more efficient to make even more at a time because it allows the AI to perform better by searching for a better global maximum within the expanded scope; you go out of business. New competitor <B> makes 40 at a time, so <A> goes out of business. Fast forward 10 years, and Competitor <Z> is at 1,000,000,000 paperclips which is big enough to be achievable by modifying humanity's evolution towards a paperclip-philic path. And this is all assuming that company <C> didn't see they'd lose out like their predecessors, and just remove the limits on their AI.
 :PROPERTIES:
 :Author: xachariah
-:Score: 35
+:Score: 37
 :DateUnix: 1562290717.0
 :DateShort: 2019-Jul-05
 :END:
@@ -173,7 +173,7 @@ Additionally, the way business works means it'll always walk towards less restri
 *** This very example is what terrifies me on a fundamental level with regard to AGI development. Rushing the process of building a fricking God to stay profitable and competitive in the market.
 :PROPERTIES:
 :Author: BlackKnightG93M
-:Score: 10
+:Score: 9
 :DateUnix: 1562329615.0
 :DateShort: 2019-Jul-05
 :END:
@@ -196,7 +196,7 @@ It would be horrible if AI ended up in the wrong hands, but it wouldn't be a pro
 I just said that, no matter what, it is inevitable somebody is going to let the AI out of it's cage. That's a AI vs human problem.
 :PROPERTIES:
 :Author: xachariah
-:Score: 10
+:Score: 11
 :DateUnix: 1562291456.0
 :DateShort: 2019-Jul-05
 :END:
@@ -250,7 +250,7 @@ I just thought it would be safer to try to create narrow-goal-focused AGIs and t
 There are other possible alternatives but none of them are feasible. Maybe we could try to go luddite with a single world religion of destroying technology, or maybe we could institute a top-tier despotic tyranny to keep everyone in line and prevent AI research. But those are a lot harder and less likely than just developing one first and doing it right the first time.
 :PROPERTIES:
 :Author: xachariah
-:Score: 4
+:Score: 5
 :DateUnix: 1562298902.0
 :DateShort: 2019-Jul-05
 :END:
@@ -302,7 +302,7 @@ What if the optimal path to creating a billion paperclips is very profitable for
 ** [[https://intelligence.org/2016/12/28/ai-alignment-why-its-hard-and-where-to-start]] is Eliezer Yudkowsky discussing the problems with trying to get an AI that just wants to do one bounded task. IIRC he thinks task AGI still /is/ the way to go in the short term but not many of the problems have been solved yet.
 :PROPERTIES:
 :Author: multi-core
-:Score: 18
+:Score: 20
 :DateUnix: 1562293370.0
 :DateShort: 2019-Jul-05
 :END:
@@ -343,7 +343,7 @@ All AI safety issues are technology safety issues. The only difference is that w
 The limits you describe, even assuming they work when used, only need to not be used once. One mistake, and the GAI eats the planet. And once self-improving AIs can be made, it's only a matter of time until that one mistake happens. This is why the race to make a "good" GAI is portrayed as a race. The only genuine, permanent solution to the risk of GAI is to make the first one right, in such a way that it has an insurmountable advantage over all subsequent GAIs, and can therefore prevent them from eating us.
 :PROPERTIES:
 :Author: Detsuahxe
-:Score: 21
+:Score: 20
 :DateUnix: 1562290819.0
 :DateShort: 2019-Jul-05
 :END:
@@ -361,7 +361,7 @@ Both seem dangerous, but I think the 2nd one seems safer, because in the 2nd cas
 Although if AGI with runaway values is inevitable - then yeah, we have to figure out how to build the right one eventually anyway. But isn't it easier to first try to create a specific-goal-driven AGI instead of the indefinitely-pursuing-values AGI?
 :PROPERTIES:
 :Author: lumenwrites
-:Score: 3
+:Score: 4
 :DateUnix: 1562293880.0
 :DateShort: 2019-Jul-05
 :END:
@@ -394,7 +394,7 @@ Right now we can control nuclear weapons and dangerous viruses because they're v
 I guess it comes down to this - what is more difficult, creating and controlling non-evil AGI, or controlling people and making sure they don't do stupid and crazy things. If there's only 1-3 corporations in the world that are capable of creating AGI, I'd probably bet on google engineers, if anyone can make AGI in their basement, we would need a value-AGI to prevent that.
 :PROPERTIES:
 :Author: lumenwrites
-:Score: 5
+:Score: 4
 :DateUnix: 1562295760.0
 :DateShort: 2019-Jul-05
 :END:
@@ -404,7 +404,7 @@ I guess it comes down to this - what is more difficult, creating and controlling
 But, since at present that doesn't seem to be the case (At the very least, there is no direct evidence to support it) we basically need to take the possibility of an AGI with a bad utility function destroying the world seriously, which means trying to figure out how to make a "good" AGI, despite the risks.
 :PROPERTIES:
 :Author: Detsuahxe
-:Score: 4
+:Score: 3
 :DateUnix: 1562297327.0
 :DateShort: 2019-Jul-05
 :END:
@@ -420,7 +420,7 @@ But, since at present that doesn't seem to be the case (At the very least, there
 ********** Likewise. I had fun.
 :PROPERTIES:
 :Author: Detsuahxe
-:Score: 3
+:Score: 5
 :DateUnix: 1562299051.0
 :DateShort: 2019-Jul-05
 :END:
@@ -458,7 +458,7 @@ Leaving aside the overall utility function, let's talk paperclips. You'll need t
 And if that's the situation for "paperclip", good luck with getting the AI to do what you mean by "make 10 and then stop".
 :PROPERTIES:
 :Author: sdmat
-:Score: 6
+:Score: 4
 :DateUnix: 1562300857.0
 :DateShort: 2019-Jul-05
 :END:
@@ -475,7 +475,7 @@ And if that's the situation for "paperclip", good luck with getting the AI to do
 5. They might act in annoying ways. Suppose you tell them to make ten paperclips. They might devote all of the world's resources to protecting those ten paperclips and verifying they exist.
 :PROPERTIES:
 :Author: Nepene
-:Score: 3
+:Score: 5
 :DateUnix: 1562292541.0
 :DateShort: 2019-Jul-05
 :END:
@@ -852,7 +852,7 @@ If you are capable of creating a mind that has all those, and yet is limited to 
 Needless to say, this assumes that you already have solutions for a lot of very hard problems. Solving those problems is seriously nontrivial. Even determining whether a possible solution is correct would be a difficult task, since you're basically trying to verify whether or not an extremely complicated mathematical equation correctly solves the problem you intended to set for it. The issue is that if you can do that, you can probably also solve the initial problem. This limits the usefulness of AI in solving hard problems; an AI that can solve a hard problem may not be able to do so in a comprehensible and provably-safe way, and a proposed AI system that is comprehensible and provably-safe may not actually be able to solve a hard problem.
 :PROPERTIES:
 :Author: Endovior
-:Score: 5
+:Score: 4
 :DateUnix: 1562295503.0
 :DateShort: 2019-Jul-05
 :END:
@@ -861,7 +861,7 @@ Needless to say, this assumes that you already have solutions for a lot of very 
 ** There is a reason AI taking over the world is fiction
 :PROPERTIES:
 :Author: xland44
-:Score: -7
+:Score: -5
 :DateUnix: 1562289519.0
 :DateShort: 2019-Jul-05
 :END:

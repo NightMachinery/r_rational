@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: phylogenik
+:Score: 1
+:DateUnix: 1519449685.0
+:DateShort: 2018-Feb-24
+:END:
+
+Ah it would take a while to describe it in full but I think the Bayesian regression, Gaussian likelihood(/residuals), Gaussian measurement error (or whatever, gamma distributed measurement error, doesn't really matter), prior-on-variance-that-assigns-nonzero-density-to-zero model encapsulates my question well. As that variance goes to zero the univariate normal pdf becomes the Dirac delta, which when all sampled observations are on your mean gives you a likelihood of +inf. The set of all points over which this holds has, I think, measure zero. You can circumvent this by excluding 0 in the prior but you'd still get arbitrarily large likelihoods with the bog-standard normal pdf. I'll try to work out a case where I can exploit conjugacy tomorrow and see if that sheds any light.

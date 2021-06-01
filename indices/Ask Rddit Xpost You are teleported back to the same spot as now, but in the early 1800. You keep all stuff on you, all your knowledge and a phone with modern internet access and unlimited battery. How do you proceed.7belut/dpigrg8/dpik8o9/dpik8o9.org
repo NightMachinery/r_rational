@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: ben_oni
+:Score: 1
+:DateUnix: 1510128047.0
+:DateShort: 2017-Nov-08
+:END:
+
+#+begin_quote
+  most web connection authentication uses some sort of time synchronization protocol
+#+end_quote
+
+No, not really. TCP/IP and HTTP do pretty much all of it. The only HTTP header a client must provide is /Host/. The server will generally reply with a /Date/ header, but that's hardly a deal-breaker. TCP, on the other hand, is more concerned with sequencing, and IP only cares about source and destination.

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: sparr
+:Score: 1
+:DateUnix: 1506025148.0
+:DateShort: 2017-Sep-21
+:END:
+
+It's going to break the program by running a function with unexpected input, resulting in (just one example) a buffer overflow, and the output value in the cell being some random info from memory rather than the expected calculation.

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1441745085.0
+:DateShort: 2015-Sep-09
+:END:
+
+I've played around with it a fair bit over on [[/r/3Dprinting]], we get a lot of spam. I've also looked at it's code a very small amount.
+
+It's pretty procedural in what it can do, and doesn't have any recursion or way to store state.
+
+So pretty sure. It's not so much that there's features that make it not turing-complete, more that it lacks any mechanism for establishing loops and passing data around.
+
+The regexes you embed into it might be a bit closer, but evidence suggests that they're not, and they definitely aren't from a practical point of view.

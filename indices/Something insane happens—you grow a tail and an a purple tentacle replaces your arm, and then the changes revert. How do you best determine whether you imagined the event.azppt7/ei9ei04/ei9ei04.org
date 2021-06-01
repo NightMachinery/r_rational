@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: hexane360
+:Score: 7
+:DateUnix: 1552285150.0
+:DateShort: 2019-Mar-11
+:END:
+
+Let's use Bayes' theorem:
+
+P(happened given experienced) = P(experienced given happened)*P(happened)/P(experienced)
+
+We can assume we'd always experience it if it happened, so that probability is one. It reduces down to P(happened)/P(experienced). Using P(experienced) = P(happened) + P(hallucinated), it simplifies to 1/(1+P(hallucinated)/P(happened)). So if our prior is that the probability of hallucination is zero (and probability of happening is nonzero), then the probability approaches 1. However, if (I assume like most of us), the prior probability of hallucination is much larger than the prior probability of happening, the probability approachs 0. For example, if hallucinations are 10x more likely than happening, it's a 9.1% chance a given experience is genuine.

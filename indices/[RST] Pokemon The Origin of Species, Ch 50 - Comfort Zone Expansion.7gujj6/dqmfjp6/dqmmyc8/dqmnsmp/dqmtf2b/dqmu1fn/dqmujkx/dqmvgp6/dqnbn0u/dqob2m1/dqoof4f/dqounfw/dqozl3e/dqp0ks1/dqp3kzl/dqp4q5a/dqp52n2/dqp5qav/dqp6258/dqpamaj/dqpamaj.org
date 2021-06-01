@@ -1,0 +1,23 @@
+:PROPERTIES:
+:Author: Iijil
+:Score: 2
+:DateUnix: 1512313020.0
+:DateShort: 2017-Dec-03
+:END:
+
+I think the first equation should have a - instead of the +. In the second we can use P(T1)+P(T2) = 1.
+
+Corrected:
+
+1. P(T2 | R1) * P(T1) * *P(R1 | T1)* - P(T1 | R1) * P(T2) * *P(R1 | T2)* = 0
+2. (1 - P(T1 | R2)) * P(T1) * *P(R1 | T1)* - P(T1 | R2) * P(T2) * *P(R1 | T2)* = P(T1) - P(T1 | R2)
+
+Although I think it is easier to calculate P(R1) explicitly in an additional step. By doing that we can solve three equations, one after the other instead of solving a system of two equations simultaneously.
+
+We get P(R1) from P(T1) = P(T1 | R1) * *P(R1)* + P(T1 | R2) * (1 - *P(R1)*), where it is the only unknown. After we have that we use P(R1 | T1) = P(T1 | R1) * P(R1) / P(T1) and P(R1 | T2) = P(T2 | R1) * P(R1) / P(T2)
+
+For the purposes of the story it is probably clearer and more instructional if P(R1 | T1) and P(R1 | T2) are known from the lecture.
+
+edit: For the actual numbers, I get P(R1 | T2) = 39.3% Probably a rounding difference of some kind, but rounding more accurately I get .39311594...
+
+The rest of the numbers stays the same (excluding differences that are rounded away).

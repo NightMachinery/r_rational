@@ -1,0 +1,25 @@
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1505951767.0
+:DateShort: 2017-Sep-21
+:END:
+
+I'm not familiar with XGEF, what is it?
+
+My own experience with ECS haven't gone that well, Unity does a good job of it but designing a similar system from the ground up is difficult unless you make concessions somewhere.
+
+The best usages of ECS I've had so far is where each system is forced to have it's own thread. This enforces a certain amount of separation and consistent API between systems on how they interact with each other. It tends to improve how multi-threaded your architecture is which is a huge win on modern systems.
+
+I have very little game development experience, but a whole lot of engine development experience, so my =SoundSystem=, =GraphicsSystem= and =PhysicsSystem= components are solid but it all falls apart once you start adding flexibility, customization and the support for adding new dynamic systems that other systems were not programmed with hardcoded awareness of.
+
+There's also a bit of a trade off between API usability, performance and complexity, a good example is how do you tell your graphics system that something needs to be drawn?
+
+You might say =graphicsSystem->draw(object->graphicsComponent)= but what does that do?
+
+Drawing an object can be a complex multipass operation, how can you encode all of that complexity into just a =GraphicsComponent= structure?
+
+How does the graphics system gather everything it needs for some shader pass and then execute it? The optimal approach is something deferred, you don't want to context switch every time the framebuffer, GPU program or model changes.
+
+Even for something like the typical depth prepass. If something needs to show up with a shadow, the graphicsSystem might need to multiplex a single API call into multiple. Which means it needs to defer, but deferring the depth pass can have a latency (and therefor performance) impact.
+
+What about custom graphics effects or shader passes that require the results of another earlier custom shader pass? At this point you need to create a DAG and determine the proper ordering of passes and it's a whole cluster fuck unless you've kept everything very neat.

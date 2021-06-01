@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: selementar
+:Score: 2
+:DateUnix: 1494754137.0
+:DateShort: 2017-May-14
+:END:
+
+#+begin_quote
+  absolutely maddening to work with unassisted, but fortunately they don't ever work with it unassisted
+#+end_quote
+
+Curious case about the languages available to us:
+
+Lots of work is done in C transparently, i.e. one /almost/ never has to go to the level it compiles into (machine codes, represented as assembly code). Then there're interpreted languages / VMs, and one almost never has to go to the C/CPP-representation under them. And recently some made translated languages on top of both ([[http://cython.org/][1]]) ([[http://coffeescript.org/][2]]), but didn't entirely manage to organize toolsets for the transparency, i.e. if something goes slightly wrong, there is still a need to go into the underlying representation.
+
+The lesson is here is not clear, but it slightly suggests that making a translated language is cheap, but making a toolset to avoid dealing with stuff it is translated into is hard and expensive.
+
+And then there's the point of actually /spreading the learning/ of a language, and of how best to use it; a notable example in scripted languages is perl as compared to python: in a way, perl could be used about as conveniently as python is (with a little less sugar), but it did not nudge toward those practices, and lots of perl code thus became write-only code.

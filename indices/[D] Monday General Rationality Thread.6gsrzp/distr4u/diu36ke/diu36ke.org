@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: CCC_037
+:Score: 2
+:DateUnix: 1497341291.0
+:DateShort: 2017-Jun-13
+:END:
+
+There are more optimisations possible. First of all, you only need to simulate any individual brain for a single clock cycle. (Why? Well, after that clock cycle, it's still a viable mind - which will turn up somewhere else in your simulation). You /could/ run an algorithm that will eventually run all possible brains with all possible inputs - and thus, over the millenia, simulate every possible human life (exception: you'd have some maximal brain complexity for the simulation). However, this has two problems: first of all, you are also simulating every possible form of torture (an ethical problem) and secondly, you are simulating an unreasonably large amount of data (a computing problem). Fortunately, these two problems can be solved; if you're a superintelligent AI, you can presumably calculate in advance how 'good' a given mindstate will be (for some metric of 'good' which rewards happiness and prevents torture), and then simulate mindstates from the most 'good' on down, perhaps to some arbitrary limit.
+
+As far as the simulated mindstates go, they will simply live - from an external viewpoint, in a staggeringly nonlinear temporal fashion, this mind existing for one instant /now/ and another instant ten years in the future followed by an instant that had been simulated twenty centuries in the past, but they won't notice that - they will simply live, believing themselves to be, well, wherever their simulated senses say they will be. In times of torture, pain, or other things decided to be 'Bad' by the simulation, they will simply... not exist, coming smoothly back into existence once the simulation again declares them sufficiently 'good'.

@@ -1,0 +1,36 @@
+:PROPERTIES:
+:Author: throwawayIWGWPC
+:Score: 1
+:DateUnix: 1487131738.0
+:DateShort: 2017-Feb-15
+:END:
+
+#+begin_quote
+  there's no denying that is possible to check, right?
+#+end_quote
+
+Strangely enough, that assumption may be incorrect. From a programming perspective, there's a stark difference between checking that something exists versus counting how many of something there are, then checking if the number is valid.
+
+Checking for existence:
+
+#+begin_example
+  if zorian["isController"]:
+    giveAccessTo(zorian)
+#+end_example
+
+Checking for existence, counting, and comparing if the number is acceptable:
+
+#+begin_example
+  controllerCounter = 0
+  if zorian["isController"]:
+    controllerCounter += 1
+
+  if controllerCounter == 1:
+    giveAccessTo(zorian)
+  else:
+    freakOut()
+#+end_example
+
+If the Maker did not expect the possibility of multiple controllers, then, as strange as it sounds, there's no reason to believe the Gate has a way of dealing with that issue.
+
+It really makes one appreciate the inner workings of the mind and our ability to deal with unforeseen problems on the fly. Simple control algorithms can only do precisely what they are told to do, so dealing even simple departures from the norm require foresight and tailored error handling subroutines.

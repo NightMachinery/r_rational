@@ -1,0 +1,54 @@
+:PROPERTIES:
+:Author: forrestib
+:Score: 1
+:DateUnix: 1427778278.0
+:DateShort: 2015-Mar-31
+:END:
+
+I've been working through some math relating to the warp factors and the amount of energy warp travel takes. A rather efficient matter/antimatter reactor provided with 4 grams of antimatter is capable of producing 3*10^{14} joules of energy. If we say that this is the maximum output per second of a starship reactor, that needs to be approximately the energy required to travel at warp 10, which is standard top speed.
+
+I came up with the following equation to approximate energy usage per second for different warp factors. X is the warp factor achieved. The equation output is the energy needed measured in 1*10^{13} joules.
+
+((cos X ^ sin X)+2)X
+
+If you graph it, you'll see there are dips, where warp travel becomes much more efficient. Normally the energy required simply increases. But at these points it decreases dramatically. The first of these is warp 6.9, which requires only 6.9/10^{13} joules. In contrast, warp 6.4 and warp 7.2 both require 14.9/10^{13} joules. The next dip is at warp 7.9, and then finally at 8.9. The next after that is at warp 13, but to get there you would have to pass warp 12, which requires 35.6*10^{13} joules, significantly beyond the output of the reactor.
+
+What this means is that the vast majority of space travel would happen at warp 8.9. But then that begs the question of exactly how fast warp 8.9 is. For that, I made a second equation.
+
+We know the Milky Way galaxy has an approximate radius of 50,000 light years. It can be accepted that the Alpha Quadrant would measure across at approximately that same figure. Voyager, which was stranded a grand maximum of 100,000 light years from where it started, would have taken several decades to get home. They presumably were moving in a straight line towards earth at a near-constant rate of warp 8.9, which as previously determined is the maximum energy efficient warp speed.
+
+If the warp factor is X, and the output of the following equation is a multiple of the speed of light, then warp 8.9 is 1849 times the speed of light, which would have taken Voyager 54 years to get back to earth.
+
+X^{X^(1/sqrt(6})+1)
+
+If you graph that, warp 6.9 is 483.5 times lightspeed, warp 7.9 is 965.5 times lightspeed, and warp 13 would be 19,413.4 times lightspeed. Another interesting thing to note is that warp 0.9 and below are actually slower than their non-warp counterparts. Which somewhat explains why they have impulse engines as well. Not sure how sub-lightspeed warp could be exploited from a worldbuilding viewpoint. Maybe y'all could help with that.
+
+Here's a small table of noteworthy warp factors, the lightspeed multiple they represent, and the energy output required to maintain them.
+
+0 = 0 = 0
+
+warp 1 = c = 2.5*10^{13}
+
+warp 2 = 5c = 3.3*10^{13}
+
+warp 3 = 16.7c = 7*10^{13}
+
+warp 4 = 46c = 1.2*10^{14}
+
+warp 5 = 111.5c = 1.5*10^{14}
+
+warp 6 = 248c = 1.7*10^{14}
+
+warp 7 = 519c = 7.6*10^{13}
+
+warp 8 = 1032c = 1.6*10^{14}
+
+warp 9 = 1969c = 1.1*10^{14}
+
+warp 10 = 3631c = 2.9*10^{14}
+
+warp 11 = 6504c = 3.3*10^{14}
+
+warp 12 = 11361c = 3.5*10^{14}
+
+warp 13 = 19413c = 1.3*10^{14}

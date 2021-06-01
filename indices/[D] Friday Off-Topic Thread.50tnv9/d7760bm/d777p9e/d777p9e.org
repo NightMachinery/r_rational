@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 3
+:DateUnix: 1472847512.0
+:DateShort: 2016-Sep-03
+:END:
+
+I just slapped [[https://docs.google.com/spreadsheets/d/11al0Ly97GydAySG9YQ2D9oKD9MyL95zw79FoLNKZyC8/edit?usp=sharing][this]] together in a few minutes, I'm not sure what features you're looking for.
+
+In short, I took the UN population estimates for 2020-2100, and assumed that people are awake for 0.66 of each day. For Ems, I assumed that they start at 1000 population and 3x speed, and double in population and increase in speed by 20% every five years. (These numbers are easy to alter). Lastly, you add together (people * people time rate + Ems * Em time rate) and divide a billion by that to get how long a billion person-years takes.

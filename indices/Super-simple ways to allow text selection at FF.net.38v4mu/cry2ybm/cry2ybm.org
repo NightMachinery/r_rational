@@ -1,0 +1,7 @@
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1433644205.0
+:DateShort: 2015-Jun-07
+:END:
+
+If you're on chrome, or any other browser that lets you do this, right click and choose "inspect element". On the console that opens up ctrl-F for "-webkit-user-select". It will be set to "none". Change it to anything else, and it will let you select text.

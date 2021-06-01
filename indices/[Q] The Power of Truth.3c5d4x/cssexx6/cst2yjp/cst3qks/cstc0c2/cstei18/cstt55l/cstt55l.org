@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1436192177.0
+:DateShort: 2015-Jul-06
+:END:
+
+"This statement is false" actually is a statement of =P ^ ~P=. It uses a binding to itself: =P: ~P=, and because each statement is equivalent to itself in conjunction with an assertion of its own truth: =P: ~P= -> =P': P' ^ ~P'=. That this statement is false, however, can't actually be resolved in (first-order?) logic. Godel's First Incompleteness Theorem is a formalization of the liar's paradox in formal systems at least as strong as Robinson Arithmetic. It relies on the fact that the Godel sentence is false and that the system the sentence is written in can't prove that it's false, to prove that the system is necessarily either incomplete or contradictory.

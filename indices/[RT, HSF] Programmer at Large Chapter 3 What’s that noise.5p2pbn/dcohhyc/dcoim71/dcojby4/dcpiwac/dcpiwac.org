@@ -1,0 +1,23 @@
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 2
+:DateUnix: 1484989550.0
+:DateShort: 2017-Jan-21
+:END:
+
+OK, so informally the following is the design in my head for how things work in terms of trade fleet data organisation. It doubtless has major flaws, and exists more as a model for me to think about this than it does an actual design:
+
+- Everything is abstraction layer upon abstraction layer upon abstraction layer. Often there are multiple competing abstraction layers and an additional abstraction layer on top of them to paper over the differences.
+- There is a multiply redundant distributed content addressable object store threaded throughout the ship. In fact there are probably several of them with entirely independent lineages just to be sure. Can be thought of informally as a bunch of files named by hashes with replication to multiple servers, but it's probaly smarter than that.
+- There are a variety of naming systems on top of that, but there is probably one primary distributed hash table that has a bunch of canonical names that point into the CAS. Think DNS, but probably non-hierarchical. There is some complicated permissions model for how it gets updated.
+- There are also a bunch of indexing systems which are effectively very smart search engines for things in the CAS.
+- Separately, each process is localized to a server with its own disk space and may ask for private on disk "files" which are growable buffers with a fixed maximum size. Each gets a UUID of some sort associated with it. It chooses how these persist across process restarts (the default is that it is wiped each time). It may share these buffers with other processes running on the same machine through some sort of object capability model. Depending on its permissions it /may/ be able to read and write data to the central storage.
+- All code and associated data lives in the CAS, including the incremental states. Dependencies are identified by hash (there is no versioning per se - everything is pinned, but there are a number of pointers that suggest things like "this code supplants that code"). Deployment consists of saying "Run the process description associated with this hash on the servers matching this query".
+
+Designing file systems and data organisation isn't really my forte, so I'm sure one or more of these assumptions is hopelessly naive.
+
+But it doesn't necessarily matter because the following are the /actual/ rules for technical design of trade fleet software:
+
+- Any problem we could currently imagine solving with time and brute force has been solved with time and brute force to a degree that looks magical to us. e.g. search Just Works to a truly ridiculous level of DWIM.
+- Any problem we would require a really deep theoretical breakthrough to solve has not been solved and may be unsolvable. e.g. canonically P!=NP in this universe and cracking a sufficiently large 21st century SSL key would still be non-trivial to impossible.
+- trade fleet opinions about what constitutes good design are not necessarily /correct/ compared to ours, merely different and optimized for a very specific environment. e.g. For all I know hierarchical file systems really are some pinnacle of good design.

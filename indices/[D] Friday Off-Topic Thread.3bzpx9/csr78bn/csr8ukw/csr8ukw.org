@@ -1,0 +1,11 @@
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1435949776.0
+:DateShort: 2015-Jul-03
+:END:
+
+Jaynes does a "probability of a probability" deal(chapter 18, PT:TLoS), but IIRC it was mostly about storing beliefs in a machine without storing the entire inference chain that produced them.
+
+The first example he gives is that although you'd assign 1/2 probability to "this coin will come up heads" and "there is life on mars" absent other information, we have other information that tells us that we should change our beliefs much more drastically upon discovering a martian microbe than upon observing a heads result from a coin toss.
+
+You could do it with a modal logic too. Suppose you don't know the bias of a coin, but you are aware that coins are usually close to fair. Then you believe that you should believe the bias of the coin is around 50%, but you also believe you might be correct in believing it is strongly biased.

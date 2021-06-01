@@ -1,0 +1,13 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1435006199.0
+:DateShort: 2015-Jun-23
+:END:
+
+#+begin_quote
+  According to Gödel's Incompleteness Theorem and the isomorphism between biology and TNT, there must be some sequence of bases which would result in destruction of the cell.
+#+end_quote
+
+Uhhhh... not really? I mean, in proof theory, attempting to evaluate a Goedel Statement doesn't make the proof system "explode and die", it just makes it enter an infinite loop from which it will never jump out. The normal way to get around this, particularly when you want to consider infinite loops we /want/, is to use [[http://blog.sigfpe.com/2007/07/data-and-codata.html][codata and corecursion]], in which we guarantee that an infinite sequence of steps will happen, but each one will generate a useful result in finite time.
+
+[[#s][]]

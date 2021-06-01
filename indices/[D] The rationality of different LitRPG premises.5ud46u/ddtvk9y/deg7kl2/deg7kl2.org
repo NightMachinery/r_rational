@@ -1,0 +1,30 @@
+:PROPERTIES:
+:Author: derefr
+:Score: 1
+:DateUnix: 1488523656.0
+:DateShort: 2017-Mar-03
+:END:
+
+#+begin_quote
+  This is to the point where he could sneak in tech that can be used to kill people, as well as make major changes to the game itself (e.g. disabling certain UI functions, like logging out).
+#+end_quote
+
+Miyamoto got to dictate hardware features of the SNES in order to enable mechanics in SMW. SAO served pretty much the same "flagship launch title" role for the NervGear that SMW did for the SNES, so I could see the game-designer character saying "we need to be able to manipulate people's neurotransmitter levels in order to enable [game experience X]" and the hardware team just giving the software control over that, without stopping to consider that the software could e.g. jack the cortisol signal up to be equivalent to VX nerve gas exposure.
+
+#+begin_quote
+  Moreover, SAO itself doesn't play like a just-launched MMO, and certainly not like the first one on a new device.
+#+end_quote
+
+Maybe it's "a new game" in the sense that it's a reused /game engine/, with its rendering backend newly ported over to VR (like is being done to FFXV presently), and populated with new but not mechanically-novel content (/ala/ Megaman 2-through-5.)
+
+#+begin_quote
+  code review
+#+end_quote
+
+Code review only works for code /checked into/ version control. If the "logout lock" logic was embedded in, say, an SQL stored procedure on the production database, where its matching migration was untouched, you'd never find it in code review/QA. Or, more insidiously (yet sadly, more common), if a large part of the game was built in the form of a [[https://en.wikipedia.org/wiki/Business_rules_engine][business rules engine]], the rules loaded into it would be rendered pretty much opaque to the developers---production business-rules engines are basically "write-only."
+
+#+begin_quote
+  Also, where are all the people from the company that decided to play their own product on launch day?
+#+end_quote
+
+I agree this part seems off. The only way I can make sense of it is to imagine that nobody even knew they /were/ making an MMO, other than the designer. There was some Manhattan Project level shit going on. Like in [[https://en.wikipedia.org/wiki/Cube_(film)][/Cube/]].

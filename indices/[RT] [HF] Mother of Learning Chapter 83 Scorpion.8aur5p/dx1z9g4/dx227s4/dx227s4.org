@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: throwawayIWGWPC
+:Score: 9
+:DateUnix: 1523252578.0
+:DateShort: 2018-Apr-09
+:END:
+
+I also think of the magic (in any system honestly) as programming. While I think your theory has merit, I don't think it's the most stable way to program the loop mechanism.
+
+In my mind, the Sovereign Gate keeps a template of every soul it needs to recreate every loop. At the end of every (while!) loop, the Gate grabs all souls marked as controllers, then goes through each soul in its template and recreates it---unless the soul has a "soulkill" marker on it. If that's the case, then it doesn't matter what happens to non-controller souls in the loop because those souls are always trashed at the end of the month anyhow. This method is more stable because you're treating most of your soul data immutable in the form of a template. (Think of data safety as described in the Haskell language.)
+
+But yeah the Sovereign Gate program could work the way you mentioned. The Gate could inspect every soul in the loop, see if it has a "please replicate" marker, and only in that case make the replica. If QI destroyed his soul and thus destroyed that "please replicate" marker, then his soul detonation was a really good move. However, that would mean that certain types of soul mangling done within the loop would affect the souls in the next loop, which I feel the designers of the Gate would have wanted to avoid.

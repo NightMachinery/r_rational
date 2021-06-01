@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: OffColorCommentary
+:Score: 1
+:DateUnix: 1429890990.0
+:DateShort: 2015-Apr-24
+:END:
+
+I've noticed that the vast majority of programs I've written could be done using only bounded loops. (Most of the exceptions deal with input streams). I've been toying with a design for a programming language where all functions are limited to bounded loops unless you explicitly declare the function as turing-complete. I expect this will allow for some new compiler optimizations (or larger chunks of code amenable to old ones).

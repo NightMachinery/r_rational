@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 7
+:DateUnix: 1473598983.0
+:DateShort: 2016-Sep-11
+:END:
+
+You have "perfect" memory in a universe where memory manipulation exists. How do you maximise your defence against that threat given that you don't know the exact mechanics of the manipulation?
+
+To clarify, "perfect" memory means:
+
+1.  All data you receive from your various senses (the five major ones and all the minor ones, e.g. proprioception, thermoception, nociception) is encoded as a memory.
+2.  Memories can be retrieved in their original level of detail if required.
+3.  Memories are never lost naturally.
+4.  Memories never decay naturally.
+5.  There is no storage limit.
+6.  There is a robust retrieval system akin to the normal human functionality (e.g. "details of person matching this face", "elements of the periodic table", "events in my life that had this smell", "muscle contractions required to perform this manoeuvre").
+7.  Retrieval can be fuzzy (i.e. "reminds me of..." instead of "is exactly like"), since requiring exact matches would be crippling.
+8.  This retrieval is virtually instantaneous and complete, but actually analysing the memories takes as long as it would for a normal human (i.e. retrieve is O(1), process is O(n)).
+9.  Memories of accessing memories are encoded, but the content of the memories so accessed is directly linked to the original (i.e. if you forget X, your memories of remembering X will not tell you X).
+10. Your inner monologue and non-memory visualisations are independently encoded, but they work exactly as a normal human's would.
+11.
+
+If it helps, you can think of it as your brain interfacing with an infinite-capacity, instantaneous database. =INSERT= to add memories (automatic), or =SELECT= to retrieve them (automatic and manual).
+
+The memory manipulation may be "dumb", deleting or altering random memories, or it may be "smart", targeting specific memories.
+
+In the latter case, the way it targets memories would mirror the way you might access them (see point 6). Going with the database metaphor, it would be like issuing a =DELETE= or =UPDATE= query.
+
+So they could delete all your memories of your name and all memories of you saying, hearing, writing, reading, and thinking your name. Each of these would constitute a separate query, so it would be the responsibility of the manipulator to come up with all possibilities to delete.
+
+Given that absurd wall of text, what's your strategy?

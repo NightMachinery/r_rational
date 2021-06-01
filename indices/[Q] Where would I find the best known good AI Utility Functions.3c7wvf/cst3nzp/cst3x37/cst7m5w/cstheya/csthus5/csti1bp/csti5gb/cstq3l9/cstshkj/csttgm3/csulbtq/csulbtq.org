@@ -1,0 +1,15 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1436239161.0
+:DateShort: 2015-Jul-07
+:END:
+
+#+begin_quote
+  Hell, linear programming is smarter than genetic algorithms in many cases!
+#+end_quote
+
+Can confirm. I did some work with automated scheduling using simulated annealing and mixed integer programming. Simulated annealing gave you a steaming pile of crud, but at least it got through the straightforward parts reasonably fast. Mixed integer programming often failed to give you a result, and it took a fair bit of effort to determine why, but when it gave you something, it gave you a schedule that you could just use.
+
+We still used the simulated annealing system because we didn't want to pay tens of thousands of dollars for CPLEX, and few people wanted to go through the effort to make exactly correct restrictions on how their staff could be scheduled, especially since they were going to get a few new attendings next quarter, each with their own novel preferences. But the simulated annealing solution was pretty cruddy sometimes, and we ended up having to write special code to fix up some of its most common stupid mistakes. Like when it tried scheduling a person on two different floors at the same time.
+
+Anyway, I guess I'm not adding anything here, but it might be an amusing anecdote.

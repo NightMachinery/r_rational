@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: AndrewConway
+:Score: 2
+:DateUnix: 1423630726.0
+:DateShort: 2015-Feb-11
+:END:
+
+Disclaimer 1: Author of Artie. Disclaimer 2: Not a true nanobot expert, but I am a true engineer.
+
+The real robot in the case you are describing is a combination of the physical bot and the external computer streaming the program. You are only replicating part of the system. This does indeed make disaster less likely, but has scaling problems (streaming conditionals of significant complexity requires feedback, making sending the same instructions to multiple bots problematic). I presume nanobots would need pretty high speed response to external stimulae... and then you have to multiply the reasonably high bandwidth/workload by the the (exceedingly large) number of bots.
+
+And of course there is the standard problem that I haven't thought of yet but will be obvious in retrospect...

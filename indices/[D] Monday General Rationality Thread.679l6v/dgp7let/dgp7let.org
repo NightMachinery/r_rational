@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 9
+:DateUnix: 1493067197.0
+:DateShort: 2017-Apr-25
+:END:
+
+Epistemic rationality/Game Theory(?) question:
+
+How do you go about maximizing the chances of having the highest score in a gambling competition with a certain number of people? Note that this isn't the same as maximizing your /expected score/ (a 100% chance of 100 points may be worse than a 1% chance of 110 points and a 99% chance of 50 points), and also assume that you can't directly affect your competitors.
+
+I started thinking about this when looking at March Madness bracket pools. The format I looked at gave 1 point for each correctly-predicted winner in the first round, 2 points for the second round, and so on until you get 64 points for correctly predicting the champion (total of 388 points available). Everyone paid in $1, and the person with the highest point total after the final took home the pot.
+
+If there are only two or three people in the pool, it makes sense to just pick the strategy with the highest expected score, and hope that nobody gets lucky. If there are hundreds (or thousands) of people, then someone else will probably get lucky and beat your score, so you need something high-variance.
+
+For a given number of people, what's the best strategy if you have to make all of your bets at the start? How does it change if you choose each round as it comes up?
+
+For a second example, I went to a Vegas-themed wedding a while ago. You were given 100 gambling chips and there were roulette, blackjack, etc. tables scattered around. The winner (of a little trinket) was the person with the most chips at the end of the night. Obviously, the chip-maximizing strategy is to never gamble, but that's not the chance-of-winning maximizing strategy.

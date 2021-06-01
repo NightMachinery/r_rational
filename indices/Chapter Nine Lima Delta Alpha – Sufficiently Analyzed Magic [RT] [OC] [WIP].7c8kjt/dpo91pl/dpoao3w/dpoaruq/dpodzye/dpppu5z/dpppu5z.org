@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 2
+:DateUnix: 1510508708.0
+:DateShort: 2017-Nov-12
+:END:
+
+It's because you included "www" at the beginning. Your site doesn't have a "www" sub domain. My browser automatically stripped that out, and I think most of them do these days, but clearly some don't.

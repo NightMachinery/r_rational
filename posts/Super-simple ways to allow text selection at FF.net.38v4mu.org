@@ -1,0 +1,153 @@
+#+TITLE: Super-simple ways to allow text selection at FF.net
+
+* Super-simple ways to allow text selection at FF.net
+:PROPERTIES:
+:Author: ancientcampus
+:Score: 25
+:DateUnix: 1433643662.0
+:DateShort: 2015-Jun-07
+:END:
+2 simple methods, take your pick:
+
+Method 1) simply change the url from "[[http://www.fanfiction.net/...][www.fanfiction.net/...]]" to "m.fanfiction.net/...". You're done.
+
+Method 2) [[https://alanhogan.com/code/text-selection-bookmarklet][Go here]], then drag the button marked "Allow Text Selection" to your bookmarsk bar. When you're looking at a story on fanfiction.net, click the bookmark - voila, you can select text. Advantage to this method is it preserves the Made-For-PC-Screen formatting.
+
+EDIT: Method 3) Install the Chrome extension "[[https://chrome.google.com/webstore/detail/selectable-for-fanfiction/jcidlhgdoojamkbpmhbpgldmajnobefd][Selectable]]", or "[[https://addons.mozilla.org/en-US/firefox/addon/righttoclick/][RightToClick]]" for Firefox. Thank you PeridexisErrant for this method.
+
+(I know this isn't the normal discussion topic for this sub, but I've seen it discussed here several times, and this demographic's big on life hacks, so I decided to share.)
+
+
+** I've been meaning to copy over everything I have on ff.net and get it into Scrivener so that I can make "canonical" copies for distribution/mirroring. I'll keep this in mind. I can understand the impetus for prohibiting copy+paste on stories, but it's one of the more asinine qualities of the site.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 11
+:DateUnix: 1433645190.0
+:DateShort: 2015-Jun-07
+:END:
+
+
+** If you really want to download the stories for your own personal reading pleasure, try [[http://www.ficsave.com/][FicSave]], [[http://www.fanfictiondownloader.net/][FanFictionDownloader]], or even [[http://calibre-ebook.com/][Calibre]].
+
+[[https://m.fanfiction.net/][m.fanfiction.net]] is best when you want to be able to edit/modify your copy of the story directly.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 6
+:DateUnix: 1433646306.0
+:DateShort: 2015-Jun-07
+:END:
+
+*** Fanfic-downloader now called fanficfare, installable with pip in python.
+:PROPERTIES:
+:Author: nerdguy1138
+:Score: 2
+:DateUnix: 1433889523.0
+:DateShort: 2015-Jun-10
+:END:
+
+
+** I have NoScript installed so I just marked the domain as untrusted (I use the "insecure" unobtrusive trust-by-default mode and then blacklist domains that use unfriendly Javascript). The website works fine with Javascript completely disabled, with only a few quirks such as the chapter dropdown not working.
+:PROPERTIES:
+:Author: throwaway234f32423df
+:Score: 5
+:DateUnix: 1433662226.0
+:DateShort: 2015-Jun-07
+:END:
+
+*** This is what I use, I temporarily enable scripts when I have to log in, but keep them disabled otherwise.
+:PROPERTIES:
+:Author: qbsmd
+:Score: 3
+:DateUnix: 1433689625.0
+:DateShort: 2015-Jun-07
+:END:
+
+
+** If you're on chrome, or any other browser that lets you do this, right click and choose "inspect element". On the console that opens up ctrl-F for "-webkit-user-select". It will be set to "none". Change it to anything else, and it will let you select text.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1433644205.0
+:DateShort: 2015-Jun-07
+:END:
+
+*** Alternatively, you can press Ctrl-U and just copy the base HTML.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 3
+:DateUnix: 1433653854.0
+:DateShort: 2015-Jun-07
+:END:
+
+**** You'd lose the formatting and character escapes (&amp; signs all over the place), but that's easy enough to fix by hand.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 4
+:DateUnix: 1433655768.0
+:DateShort: 2015-Jun-07
+:END:
+
+***** I've never had that problem in any of the stories I've copied--see [[https://www.reddit.com/r/rational/comments/38v4mu/supersimple_ways_to_allow_text_selection_at_ffnet/cry6p8n][this comment.]]
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 2
+:DateUnix: 1433655854.0
+:DateShort: 2015-Jun-07
+:END:
+
+****** Oh, I misunderstood what you were going for. Yes, copying the raw HTML into another HTML document works fine - I misread it as copying raw HTML into a text document, which would be readable but annoying.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 3
+:DateUnix: 1433659757.0
+:DateShort: 2015-Jun-07
+:END:
+
+
+*** On Firefox this will be -moz-user-select instead.
+:PROPERTIES:
+:Author: Nyubis
+:Score: 1
+:DateUnix: 1433661197.0
+:DateShort: 2015-Jun-07
+:END:
+
+
+** On Chrome, you can just hit Ctrl-U and copy the base HTML into Notepad++, then manually edit out the extra stuff at the top and bottom.
+
+Alternatively, you can write a simple program to download every chapter in a story sequentially and clean up the formatting at the same time.
+
+Once I've got the HTML files, I use (a rather old version of) [[https://github.com/user-none/Sigil][Sigil]] to compile them into a .epub file; [[http://i.imgur.com/EDLfFRG.png][I've got literally hundreds of files on my computer, phone, and Nook.]]
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 5
+:DateUnix: 1433653430.0
+:DateShort: 2015-Jun-07
+:END:
+
+
+** With Chrome: [[https://chrome.google.com/webstore/detail/selectable-for-fanfiction/jcidlhgdoojamkbpmhbpgldmajnobefd][Selectable extension]]. Similar extensions exist for Firefox.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 2
+:DateUnix: 1433658456.0
+:DateShort: 2015-Jun-07
+:END:
+
+*** Oh, now THIS one's a gem. Thanks for sharing! I hope you don't mind if I edit this into the OP.
+:PROPERTIES:
+:Author: ancientcampus
+:Score: 1
+:DateUnix: 1433710794.0
+:DateShort: 2015-Jun-08
+:END:
+
+
+** With a userscript or userstyle extension this can be done easily. I use [[https://greasyfork.org/scripts/3337-fanfiction-tools][Fanfiction Tools]] with TamperMonkey, which does a number of things including text selection, loading every chapter in one page, color hinting for things like update frequency, word to chapter ratio, and some other things I'm probably forgetting.
+
+Not super-simple, though. It's a five-minute solution, the benefits of which I've been reaping ever since.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1433806906.0
+:DateShort: 2015-Jun-09
+:END:

@@ -1,0 +1,36 @@
+:PROPERTIES:
+:Author: gwern
+:Score: 1
+:DateUnix: 1484794584.0
+:DateShort: 2017-Jan-19
+:END:
+
+[[https://twitter.com/ArthurB/status/801549580076650496][Arthur B]] provides the dynamic programming/decision tree algorithm for estimating the value of a particular bankroll and number of bets assuming optimal play, if we are curious how much $25/300 bets at these rules (particularly the '$250 max' rule) is worth:
+
+#+begin_quote
+  =V(w,b) = max([0.6*V(min(w+x,250),b-1)+0.4*V(w-x,b-1) for x in 0..w])= for the value of having wealth /w/ and /b/ bets left.
+#+end_quote
+
+My try in R:
+
+#+begin_example
+  V <- function(w,b) { 
+      f <- function(x) { 0.6*V(min(w+x,250),b-1) + 0.4*V(w-x,b-1)}
+      returns <- if (b>0) { sapply(seq(0, w), f); } else { w; }
+      max(returns) }
+  V(10, 1)
+
+  ## requires too long to evaluate unless we use memoization/dynamic programming
+  # devtools::install_github("hadley/memoise")
+  library(memoise)
+  mV <- memoise(V)
+
+  ## expected value of optimal betting for # of bets from 0 to 300 (rough maximum possible according to paper) starting with $25
+  sapply(0:300, function(b) { v <- mV(25, b); print(v); v })
+  # [1] 25
+  # [1] 30
+  # [1] 36
+  # [1] 43.2
+  # [1] 45.36
+  # ...
+#+end_example

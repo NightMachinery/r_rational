@@ -1,0 +1,25 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1450199516.0
+:DateShort: 2015-Dec-15
+:END:
+
+I need a quick math sanity check.
+
+I have a hyperdimensional glorp emitter that emits in four dimensions. I place this somewhere on a flat plane and then walk away from it. I pull out my emissions tester and it tests at a 0.5 glorps. From this, I can infer a circle around the transmitter with a radius equal to my distance from it. Inside the circle, the emissions tester will read at /more/ than 0.5 glorps, while outside the circle it will read at /less/ than 0.5 glorps.
+
+Let's say that I want to increase the size of that two-dimensional circle. If the glorp emitter were merely three-dimensional, doubling the area of the circle would be as simple as doubling the power of my glorp emitter. The intensity is given by 1/r^{2} and the area is given by πr^{2} which means that they're both proportional. A circle with an area of 4 will have a minimum intensity of half that of a circle with an area of 2.
+
+However, my glorp transmitter /is/ hyperdimensional and while the area of a circle is proportional to the square of the radius, the intensity of a hyperdimensional emission follows the inverse-*cube* law. If you want to double the size of the glorp circle, you don't just double the power of the emitter, you multiply it by 282.84%.
+
+So first, I want to make sure that all of that is correct.
+
+Second, I got that specific number at the end from entering numbers into some formulas in excel, so that I would have a chart of the relationship between intensity, area, and radius, but I'm a little unclear on why that's the case from a mathematical standpoint. The relationships I keep coming up with don't seem like they properly explain it.
+
+Formulas:
+
+1. The surface area of a hypersphere is given by 2π^{2} * r^{3} where r is the radius.
+2. Emissions that are four dimensional rather than three dimensional therefore follow an inverse cube law instead of an inverse square law. This is given by 1/d^{3} where d is the distance.
+3. The area of a circle is given by A=πr^{2} where r is the radius.
+4. The radius of a circle, given the area, is √(A/π).

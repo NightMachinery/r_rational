@@ -1,0 +1,36 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 2
+:DateUnix: 1478324551.0
+:DateShort: 2016-Nov-05
+:END:
+
+Alright, I've finally got my thoughts together:
+
+- Use hyperlinks, not footnotes. Well, use footnotes if you like /as well/, but it's [Current Year]. Hyperlinks are convenient.
+
+- The connection between the posts that you mention and your premise is not clear.
+
+- The reference to the "game being called 'terrible'" sets your audience up to assume you /are/ talking about fun. You deflect this later, but you can do better by not bringing up the question in the first place: use the word "playability" instead, which describes what you're looking to accomplish a bit better.
+
+- Discussing motivation for a paper is fine, but don't just state "these things motivated me", instead spend some time walking the audience through your thought process, try and set up some of the thought connections that you had, and let the reader come to the conclusion you did by walking the same mental path.
+
+- I would not bother discussing multiplayer being outside of scope. If your methods are correct, they will scale just fine to the multiplayer experience, and drawing attention to what you're /not/ going to discuss before you've brought any meat to the table sabatoges your reader's interest. If you haven't already piqued their curiosity, but then draw attention to an interesting idea and then say "this. I won't talk about this", you leave your reader a bit confused about what you /will/ talk about.
+
+- It's a bit unclear if your methods are intended for use by game developers or game players. Even if they might be used by both, I would focus on how this benefits developers (as they are in fact the ones that would most use such a system).
+
+- The System Requirements section is a bit strange. The connection between having a system requirements list and the topic of this paper is not immediately clear. Walk the reader through why these are required. If this is instead an example of a possible application of the methods of this paper, instead move this section to the end as a proof of concept.
+
+- The System Requirements questions themselves are all over the place. 1 and 2 are the same question. I know one is about installation and one is about running, but I'm afraid when it comes down to brass tacks, if you can install it but can't run it /you haven't really installed it/. 3 seems to be a meta-consideration and does not help actually define a specific requirement so much as put an upper bound on all such requirements. 4 should be reworded to indicate you are looking for several levels of requirements. 5 and 6 seem oddly specific and their reason for inclusion is not super clear. 7 and 9 are related enough to be collapsed into one. All in all the reason the reader is answering these questions is left unclear.
+
+- What is the purpose of the Technical Operations section? I see questions that are common usability issues, but it's not clear if the reader should be coming up with these themselves, or if this is a list of metrics that is canonical, or what is going on. The jabs at buggy games is not really needed; you don't need to sit down and explain to developers that errors in their code is a Bad Thing. Oh, and FPS seems like a pretty damn important metric for such a list; having your game chug along at 5 FPS is a usability issue much worse than many of the nitpicky things being measured.
+
+- "Gameplay Attributes" is an unclear statement. You list /genres/ (and call them qualities), but I have no idea what this section is talking about.
+
+- Heck, I'm not quite sure what /any/ of these sections are here for. These are all things related to games, yes, and I understand that you have some sort of system for quantifying game metrics, but I've got a jigsaw puzzle with more holes than pieces here. Discuss methods and /then/ discuss differences in kind, if that's what this is trying to.
+
+- Story analysis seems completely orthagonal to the question of "is a game playable", but without an understanding of what's going on, it's hard to tell.
+
+- All in all, I know more about what this paper is trying to talk about based on what you've told me /outside/ of it than what you've told me /inside/ it. I don't have a chain of thought to follow, and outside of the existence of the premise I haven't walked away with any more information than what I started with. I understand this is obviously unfinished, but I'm not even sure what it's /trying/ to build.
+
+[[https://docs.google.com/document/d/1qM5AOL8l3rpky4z-4x4M8vQXgX5wB1c0JFwoU0UepG4/edit?usp=sharing][I modified a bit of the first few paragraphs here]]. This will hopefully give an example of what I mean by leading the reader's thought process.

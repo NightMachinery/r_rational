@@ -1,0 +1,44 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 14
+:DateUnix: 1487348445.0
+:DateShort: 2017-Feb-17
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][rational game]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Wellp, it's official.  Pokemon Renegade was the overwhelming preference, both here on [[/r/rational]] and in Discord, and after weighing everything in the balance, I think that's the name we'll go with.  I have created [[/r/PokemonRenegade]] and staffed it with some familiar faces as modders, tho it's still a bit rough around the edges.  It is currently private and may well stay that way for the duration of the project, but if you wish for access simply PM me.  I will be mirroring these weekly updates there, but will continue to post in the off topic thread in [[/r/rational]] for the foreseeable future.
+
+--------------
+
+Work on the initiative (turn order) system continues.  I have a simple turn setup that waits for all involved actors to finish their turn before starting a new round, and it's easy enough to make different turn logic.  With this system, I will quickly build five different turn orders, and a client that allows you to experiment with each of them:
+
+1.  Alternating: the most naive approach.  Actor A takes their full turn, and then Actor B, etc.  Speed will be used to determine initial turn order.  Most card games follow this approach.
+
+2.  Hybrid: the canon Pokemon game approach.  Everyone simultaneously has a planning phase, and then an Execution phase where each turn is resolved sequentially, with the order based on the Speed of the individual actors.  Each turn is a single action.
+
+3.  Nethack: the turn system used by Nethack (duh).  Speed determines how frequently you take your turn: at the extreme end, a Scyther would take its turn 16 times before a sleepy Slowpoke takes one.  Each turn is a single action.
+
+4.  Simultaneous: the system I want to get working.  All actors have a simultaneous planning phase, and then all actors execute their plans at once.  How long each action takes is based on the actor's Speed, so a faster actor can cram more actions into their planned round than slower actors.
+
+5.  Real-time: basically remove the idea of rounds and have each action take a certain number of ticks, and then play it back in extreme slow-mo, giving the player plenty of time to pause as needed and adjust their action choices.  Might not make it into the prototype due to its UI complexity.
+
+I believe I'm on track to have a simple utility for people to play around with come next week.  It won't be pretty, but it should work.  And, as it's in Unity, I should be able to make a build for all you Mac and Linux users, too.
+
+--------------
+
+Between the discussions in Discord and the votes placed in last week's off topic thread, we've got the second prototype topic narrowed down to the top three choices:
+
+1.  Voxel engine
+
+2.  Spawner/breeding system
+
+3.  Procedural map generation
+
+In the [[/r/PokemonRenegade]] subreddit, I've set up a contest-mode thread for voting for these three options, which will decide which fortnight prototype I begin next Friday.  Please request access to the subreddit and vote there, but if you're /really/ opposed to the idea, I will also count comments (not votes on comments!) in this thread as well.
+
+----  
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

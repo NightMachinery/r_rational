@@ -1,0 +1,772 @@
+#+TITLE: [D] Monday General Rationality Thread
+
+* [D] Monday General Rationality Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 12
+:DateUnix: 1448291115.0
+:DateShort: 2015-Nov-23
+:END:
+Welcome to the Monday thread on general rationality topics! Do you really want to talk about something non-fictional, related to the real world? Have you:
+
+- Seen something interesting on [[/r/science]]?
+- Found a new way to get your shit even-more together?
+- Figured out how to become immortal?
+- Constructed artificial general intelligence?
+- Read a neat nonfiction book?
+- Munchkined your way into total control of your D&D campaign?
+
+
+** I was looking at [[http://www.alcor.org/Library/html/WillCryonicsWork.html][the Warren equation]] for whether cryonics would work, along with [[http://www.overcomingbias.com/2009/03/break-cryonics-down.html][Robin Hanson's breakdown]]. At the end of Hanson's article he says:
+
+#+begin_quote
+  If you make 50K$/yr now, and value life-years at twice your income, and discount future years at 2% from the moment you are revived for a long life, but only discount that future life based on the chance it will happen, times a factor of 1/2 because you only half identify with this future creature, then the present value of a 5% chance of revival is $125,000, which is about the most expensive cryonics price now.
+#+end_quote
+
+My problem with this analysis (okay, my /main/ problem) is that I don't value life-years qua life-years, I value /quality-adjusted life years/. Living an extra year in extraordinary pain is worth far less than living an extra year feeling satisfied and fulfilled. I have existence as an instrumental value, not a terminal one.
+
+/But/ this means that if I want to correct for that, I need some way to discount based on expected quality of life in the future. What's the best way to do that? Just make a distribution of expected QALYs assuming successful thawing and then sum the expected value? For example, if I think that there's a 20% chance of being thawed into a dystopia, which I value at 0.1, a 70% chance of being thawed into a world that's much like this one but weirder, which I value at 0.7, and a 10% chance of a utopia, which I value at 1 ... then
+
+#+begin_example
+   (20% * 0.1) + (70% * 0.7) + (10% * 1) = .61
+#+end_example
+
+This looks more or less logically correct to me, but I'd like a second opinion.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 5
+:DateUnix: 1448297535.0
+:DateShort: 2015-Nov-23
+:END:
+
+*** MY first thought is to do something like "Forecast the Human Development Index" but I have /no clue/ how that works in a useful manner, and you definitely don't want to mess it up.
+
+Ask your local priest? Idk.
+:PROPERTIES:
+:Author: AmeteurOpinions
+:Score: 3
+:DateUnix: 1448301987.0
+:DateShort: 2015-Nov-23
+:END:
+
+
+*** Also, could someone please help us break down the new publication showing they successfully vitrified and resuscitated a nematode in a way that preserved its long-term memories?
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1448311473.0
+:DateShort: 2015-Nov-24
+:END:
+
+**** What do you need broken down there? I read through [[http://online.liebertpub.com/doi/pdf/10.1089/rej.2014.1636][the study]], but it seems fairly straightforward. They had trained and untrained worms split into ten groups (two of which were redundant) and both vitrification and slow freezing seemed to have little effect on the results of the test (i.e. the worms that were trained responded the same whether they were exposed to cryoprotectant or not, and whether slow-freezing or vitrification was used).
+
+This is the big, concerning takeaway when it comes to "long-term" memory:
+
+#+begin_quote
+  Whether this result reflects the resilience of structural synaptic change or a more fragile chemical state change to the insult of cryopreservation remains unclear. More detailed chemotaxis assays of learning and memory in cryopreserved /C. elegans/ are needed to determine whether all memory mechanisms are unaffected. Further research using methods for learning at different stages of /C. elegans/ development to test memory retention after cryopreservation is needed.
+#+end_quote
+
+If you go look at the Remy and Hobert study that this one largely depends on ("An Interneuronal Chemoreceptor Required for Olfactory Imprinting in /C. elegans/"), you get a lot more about the cellular and molecular basis for memory in /C. elegans/. Basically, they found that olfactory imprinting depends on a single interneuron pair that is postsynaptic to olfactory neurons. Here's the money shot of that paper:
+
+#+begin_quote
+  The SRA-11 protein could be a generic subunit of a receptor complex that is activated by an AWC-released ligand upon imprinting by distinct odorants, leaving permanent marks in the AIY interneuron; upon a later encounter of the same odorant by the AWC neuron class, these marks may facilitate signaling through the AIY interneuron. In analogy to glomerular targeting mediated by vertebrate olfactory receptors (13), it is also conceivable that SRA-11 may have a role in determining fine aspects of AWC-AIY connectivity that may be modulated upon olfactory imprinting. Elucidating the nature of the ligand of the SRA-11 protein will provide further insights into the process of olfactory imprinting.
+#+end_quote
+
+Basically, there's a protein used in the process of olfactory imprinting (the thing that gives the worm long-term memory) but they don't know exactly what it's doing to produce that effect, only that it's necessary for the effect to happen, and you can knockout some genes in order to prevent that protein and therefore prevent imprinting.
+
+*tl;dr:* The worm clearly "remembers" but the mechanism for that memory is not entirely clear. It might be because the nematode's synapses changed and those changes survived the freeze, but it might also be something chemical instead.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1448315013.0
+:DateShort: 2015-Nov-24
+:END:
+
+***** ...
+
+How did you get that good at reading life sciences papers?
+
+But anyway, what they don't seem to have noted is how they resuscitated the worms in the first place.
+
+I'd also like a breakdown, since you've been doing the numbers, of how this changes the conjunction of probabilities that make cryonics a "good bet" or "bad bet". I've previously held a strong belief that it's a terrible bet, and with new evidence I should update that.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1448315716.0
+:DateShort: 2015-Nov-24
+:END:
+
+****** For the slow freezing method they just transferred the frozen worms to a petri dish and don't appear to have done anything else; the worms just thaw out. For the vitrification method:
+
+#+begin_quote
+  One day after olfactory imprinting, the worms were vitrified. We used the SafeSpeed /C. elegans/ protocol described in Barranco et al. This method consists of two components: (1) SafeSpeed closed device (container for the worms), and (2) SafeSpeed closed system vitrification and warming media (cryoprotectant solutions). For each vitrification study using the SafeSpeed closed device, we vitrified five sets of worms at the L2 and L3 stages. The protocol started by transferring the worms from the petri dish to 50 μL of Washing Solution (WS) for 2 min using a Pasteur pipette. The worms were then transferred to 100 μL of Equilibration Solution (ES) for 10 min. Later, the worms were placed in 100 μL of Vitrification Solution (VS) for 1 min, and then introduced into the SafeSpeed closed device. The device was closed with a heat-sealer to avoid contamination and then quickly immersed in liquid nitrogen. The device was held in liquid nitrogen for 30 min and rewarmed in a 37C water bath. The SafeSpeed closed device was opened with scissors, and the worms were placed into 200 μL of Thawing Solution (TS) at 37C for 1 min and then quickly transferred to 200 μL of the Diluent Solution (DS) for 3 min. To finish this protocol, the worms were washed twice in two drops of 100 μL of WS, with 5 min for the first wash and 3 min for the second wash, and finally the worms were transferred to a petri dish with a lawn of /E. coli/ OP50.
+#+end_quote
+
+Revival steps:
+
+1. After placing in liquid nitrogen for 30 minutes ...
+2. Rewarm in 37°C water
+3. Open up the SafeSpeed pack the worms are in with a scissors ([[http://safepreservation.com/en/safespeed-device/][this thing]])
+4. Put the worms in a thawing solution at 37°C for 1 minute
+5. Put the worms in diluent solution for 3 minutes
+6. Wash the worms
+7. Put the worms in a petri dish
+
+The procedure they're describing there is somewhat opaque, since you'd have to go to the Barranco paper in order to get the method. That's a problem, because their citation says "in preparation" and it doesn't seem to have been published yet. So I have no idea what's in their +four+ five different solutions used in the process. It ultimately doesn't matter, because the results for vitrification and slow freezing were the same as far as the tests went (though vitrification offered a 100% survival rate and slow freezing offered only 20%). Also of note is that the slow frozen worms were frozen for two weeks but the vitrified worms were only frozen for thirty minutes.
+
+--------------
+
+Does this substantially increase the likelihood of cryonics working? Well ... there are a couple of issues. First, we don't know the mechanism behind the worm's memory. If the results shown are /chemical/ then they're not terribly exciting. Second, the processes used for freezing and reviving don't seem to be applicable to higher forms of life (like humans).
+
+It sort of depends on where you think the bottlenecks for cryonics are. Personally, I think there are substantial complications on the human side (a cryonics organization needs to successfully freeze you using proper procedures, they need to keep you frozen until the technology exists to revive you, and then you need to be revived). This paper should maybe make you update in the direction of cryonics working if you primary objection was feasibility of maintaining memory through freezing and thawing, but not all that much, and this doesn't seem like it will change the current best practices for cryonics organizations. Perhaps if a follow-up study shows the way "memory" works within the worms, or if we get a better grasp on how memory works within humans?
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1448317888.0
+:DateShort: 2015-Nov-24
+:END:
+
+
+*** Why are you valuing a utopia as only 1 QALY per year? I'd put it at 1.5-2 at a minimum for my own preferences
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 1
+:DateUnix: 1448303566.0
+:DateShort: 2015-Nov-23
+:END:
+
+**** I'm taking "utopia" to mean "major societal problems have been fixed, I experience little in the way of compulsory work, I experience a large degree of freedom, I have rights comparable to other sentient beings, most of my friends and family still exist, I face little in the way of threats or needs". This is fairly close to my life as it exists right now, minus the societal problems thing. I have a large degree of freedom, the burden of work is low, I have friends and family, and I'm fulfilled. Pretty much all of my values are fulfilled and I want for little.
+
+I can't really imagine that I would want to give up two years of my life right now in order to live in the utopia described above for one year. That exchange rate would be way too steep.
+
+(Now, I value a future where people don't get hurt or sick, where everyone has access to information and some semblance of self-fulfillment. But that's mostly about life getting better for people that aren't me, so doesn't factor in. My quality of life isn't substantially reduced by knowing that people are starving to death in North Korea.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 4
+:DateUnix: 1448305059.0
+:DateShort: 2015-Nov-23
+:END:
+
+***** How the frick did you get your work burden low and all your friends and family healthy?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1448311172.0
+:DateShort: 2015-Nov-24
+:END:
+
+****** My work burden is low because I have relatively little ambition in my chosen field, which means that as my expertise has increased my duties have not. I also don't mind the work I do (most of the time) and occasionally find it rewarding. As for friends and family ... I'm an introvert, so I have relatively few friends, which is how I like it. Everything else is down to luck. I consider myself fortunate.
+
+(I'd also note that the breakdown doesn't assume my friends and family are coming into the future with me, so even if my friends and family were sick, it would be the choice between having sick friends and family and having /dead/ friends and family.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1448311934.0
+:DateShort: 2015-Nov-24
+:END:
+
+
+*** Is thawed in a dystopia really a possibility? Since you will freeze yourself at the end of your life you need a utopia or some positive medicinal advances anyway to survive unfreezing
+:PROPERTIES:
+:Author: RMcD94
+:Score: 1
+:DateUnix: 1448633996.0
+:DateShort: 2015-Nov-27
+:END:
+
+**** Positive medical advances don't require (or even suggest) a utopia. Just look at ... well, half the dystopias in fiction. /Brave New World/ is the prototype for "the world advanced but got a lot worse". /Blade Runner/, /Minority Report/, /The Hunger Games/, /Divergent/, /The Matrix/ ... I probably don't need to go on.
+
+And those are ones where medical technology is explicitly better than in our world, rather than ones where it's not shown but you would expect that to be the case.
+
+Outside the realm of science fiction and just making predictions about the future, all you need is some future in which medical technology has continued to advance but something else has gone wrong in some way. If a rogue oppressive AI takes over the world, you'd expect them to have the technology to thaw people, right?
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1448644526.0
+:DateShort: 2015-Nov-27
+:END:
+
+***** I don't think that fictional examples are good examples, are there real world examples of scientific progress with social "deprogression"? Nazi Germany comes to mind, if you're a subset of the population, and even that isn't remotely close to a dystopia for those who would be unthawed (ie not untermensch)
+
+Brave New World is perspectively worse. Side note: are you for or against AIs which are happier when they accomplish their task well? Cause that was the big downside of BNW right, people bred to be happy with less.
+
+Plus, in almost all of those examples one must ask, why would you be revived? They must have the technology and the motive, and if you're being unthawed in most of those examples then you're not experiencing the bad parts of a dystopia (there are people in our world who are experiencing dystopian conditions) are just affected by the same impact of knowing that North Korean's are in concentration camps.
+:PROPERTIES:
+:Author: RMcD94
+:Score: 2
+:DateUnix: 1448646860.0
+:DateShort: 2015-Nov-27
+:END:
+
+
+** My next star wars fanfic will revolve around a group of padawans who go on strike, refusing to refer to the senior members of the order as "Jedi /masters/," complaining this is insensitive to victims of slavery throughout the galaxy. The bulk of the story will consist of a monologue by Yoda thinking through the ethical issues in his inimitable verbal style.
+:PROPERTIES:
+:Score: 12
+:DateUnix: 1448305607.0
+:DateShort: 2015-Nov-23
+:END:
+
+*** Yeh, well, my character will start in on the way droids are treated by Jedi. They're intelligent self-aware beings! Just because they're steel and silicon doesn't mean you should be able to force-dismantle them at will.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 12
+:DateUnix: 1448306849.0
+:DateShort: 2015-Nov-23
+:END:
+
+**** If they're self-aware, why can't Jedi feel their emotions, huh? Nah, they just /simulate/ emotions. Like a holocron.
+:PROPERTIES:
+:Author: MugaSofer
+:Score: 1
+:DateUnix: 1448528747.0
+:DateShort: 2015-Nov-26
+:END:
+
+***** Jedi don't feel emotions directly, they interact with midiclorians. Droids and holocrons don't contain midiclorians. That doesn't mean they're not self-aware, just that they're not biological.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1448552900.0
+:DateShort: 2015-Nov-26
+:END:
+
+****** Well, that brings up the question of what "emotions" really are, etc. If they don't come from the Force, why do all force-sensitive, sapient species seem to have the same emotional makeup?
+
+There's also the point that not all droids /do/ simulate emotions; battle droids seem quite casual about their own safety, f'rinstance. What do you do then?
+
+(For what it's worth, I think it's pretty clear that the droid-slavery thing is supposed to be a case of motivated cognition. Motivated cognition can be pretty powerful, though, especially on a civilizational scale.)
+:PROPERTIES:
+:Author: MugaSofer
+:Score: 1
+:DateUnix: 1448553806.0
+:DateShort: 2015-Nov-26
+:END:
+
+******* u/ArgentStonecutter:
+#+begin_quote
+  If they don't come from the Force, why do all force-sensitive, sapient species seem to have the same emotional makeup?
+#+end_quote
+
+I'm pretty much at a loss as to why you would think emotions come from the force. Emotions evolved to improve the fitness of the animals possessing them. At a moderate distance, they can be seen as tools or filters.
+
+In any case, all biological life forms in the Star Wars universe have midiclorians, they're likely all evolved from a previous diaspora.
+
+Also, we only see species that have evolved to forms that are capable of interacting with the galactic civilization on at least some level of competence. There's a selection pressure for similarly
+
+Self-awareness is also a tool, one that likely arises any time a reasoning system starts modelling itself and teh consequences of its own behavior. It's extremely unlikely that droids and other AIs would be capable of interacting effectively with the galactic civilization without that tool.
+
+#+begin_quote
+  battle droids seem quite casual about their own safety, f'rinstance.
+#+end_quote
+
+So are many humans.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1448569916.0
+:DateShort: 2015-Nov-27
+:END:
+
+******** We know /some/ emotions come from the Force; people with a strong Force connection often find their emotions spiralling out of control, in a kind of self-sustaining cycle of Force and emotion.
+
+(I think it's reasonable to infer from the example of Battle Droids that droids can be, and are, programmed to "want" and seek out different things - including not caring about their own self-preservation. That's all I meant.)
+
+More importantly, if you buy the Orthogonality Thesis, at least, is the fact that sapients all seem remarkably like humans in funny suits. As you say, this presumably comes from Midichlorians, presumably a result of some ancient and powerful race - and the source of the Force. Why should we assume that anything /without/ that Force, and those Midichlorians, would be anything like us?
+
+#+begin_quote
+  Self-awareness is also a tool, one that likely arises any time a reasoning system starts modelling itself and teh consequences of its own behavior. It's extremely unlikely that droids and other AIs would be capable of interacting effectively with the galactic civilization without that tool.
+#+end_quote
+
+Citation very much needed!
+
+I can as easily assert that self-awareness is an artificial shared heritage crafted by some precursor race, or an ineffable quality shared only by Midichlorians, or indeed a recurring parallel-evolved drive that has been observed to always (!) attract and generate Midichlorians - even when the subject is artificial. Except /those/ assertions actually have some proof to back them up.
+
+I'm sure there are /some/ people who've figured out that Droids are basically people-in-funny-metal-suits - even without our Doylist benefits - and taken that to the logical conclusion that their suffering is an immense humanitarian disaster. Just like there are people who believe that animals have rights, or fetuses have rights, and people in every culture who freed their slaves.
+
+But you shouldn't assume that it's /easy/.
+:PROPERTIES:
+:Author: MugaSofer
+:Score: 1
+:DateUnix: 1448579763.0
+:DateShort: 2015-Nov-27
+:END:
+
+********* u/ArgentStonecutter:
+#+begin_quote
+  We know some emotions come from the Force; people with a strong Force connection often find their emotions spiralling out of control, in a kind of self-sustaining cycle of Force and emotion.
+#+end_quote
+
+That doesn't mean that emotions come from the Force. That just means that emotions are effected by the Force. They're also effected by drugs. And books. And movies.
+
+#+begin_quote
+  Why should we assume that anything without that Force, and those Midichlorians, would be anything like us?
+#+end_quote
+
+Well, there's the fact that in our universe there is no force and no midiclorians and we manage to have emotions and be self-aware.
+
+#+begin_quote
+  Citation very much needed!
+#+end_quote
+
+If you believe otherwise, you believe in Philosophical Zombies. And since we have no midiclorians, that we ourselves are philosophical zombies without self-awareness.
+
+#+begin_quote
+  But you shouldn't assume that it's easy.
+#+end_quote
+
+Easy? No. Worth doing. Yes.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 0
+:DateUnix: 1448581929.0
+:DateShort: 2015-Nov-27
+:END:
+
+********** Here's an analogous argument:
+
+#+begin_quote
+
+  #+begin_quote
+    Why should we assume that anything without that limbic system, and that prefrontal cortex, would be anything like us?
+  #+end_quote
+
+  Well, there's the fact that in our universe there is no limbic system and no prefrontal cortex and we manage to have emotions and be self-aware.
+#+end_quote
+
+The Force is a fundamental part of the Star Wars verse. SW biology and psychology is very likely inextricably tied to the Force, which is why there are sensitives able to manipulate and commune with it intuitively. There are no humans in the Star Wars verse, only human-shaped characters. No P-Zombies are required to say that the Force is necessary for emotion in SW.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1448589957.0
+:DateShort: 2015-Nov-27
+:END:
+
+*********** We still have a proof by existence that it is possible to have consciousness without "the force", that consciousness is possible with nothing more than the purely electromechanical interaction of atoms. A collection of atoms performing the same operations would still be conscious in the Star Wars universe.
+
+Whether consciousness is some processing that happens in "the force" or a biological brain, it's the process that is consciousness.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 0
+:DateUnix: 1448621189.0
+:DateShort: 2015-Nov-27
+:END:
+
+************ u/Transfuturist:
+#+begin_quote
+  A collection of atoms performing the same operations would still be conscious in the Star Wars universe.
+#+end_quote
+
+[[/u/MugaSofer]] is /saying/ that it is very unlikely that the mechanical process of consciousness does not involve the Force. He's saying that (if chemistry is otherwise the same) if you took the component molecules of an intelligent being and printed them in our universe, you would get a catastrophe, akin to a lobotomy patient or a psychopath. Their brain does not /run/ on our physics. This is not a question of whether you can print the component molecules of a human brain in /their/ universe and have it come out functionally the same, although I doubt you could manage that either, since the Force is an energetic process that interacts with regular matter in some way. Physics is /different there./
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 2
+:DateUnix: 1448649496.0
+:DateShort: 2015-Nov-27
+:END:
+
+************* It doesn't matter if physics is different. Mathematics is all you need. The point is that regardless of the physics in the universe, we have a proof by existence that a certain set of mathematical operations can produce a conscious mind.
+
+What you're saying is that the exact same set of atoms would fail to perform the same operations in the star wars universe. That doesn't matter. The same operations may require additional physical hardware, but that's an implementation detail. The point is that it is mathematically possible to create a conscious mind without the Force.
+
+If you're now arguing that /mathematics/ is different in the Star Wars universe, I will laugh and walk away.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1448728333.0
+:DateShort: 2015-Nov-28
+:END:
+
+************** u/Transfuturist:
+#+begin_quote
+  Mathematics is all you need
+#+end_quote
+
+Okay, wait, wait. Is this about droids having emotions? I thought this was about the source of emotions in Star Wars biologicals.
+
+Okay, never mind. We've been talking past each other.
+
+There would definitely be a bunch of SW denizens saying that because droids aren't Force-sensitive, they aren't sapient/sentient/emotional/worthy of considering as people, though. And they have /actual science/ to back it up! In biologicals with less Force-sensitivity (headcanon territory now), there is a greater frequency and magnitude of sociopathic and selfish behavior! Why would the same argument not apply to the droids?! What, they can't be compared to biologicals? That's ridiculous! Every mind we know of has a connection to the Force! They simply aren't sentient/sapient/emotional/worthy of considering as people!
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1448740163.0
+:DateShort: 2015-Nov-28
+:END:
+
+*************** u/ArgentStonecutter:
+#+begin_quote
+  Is this about droids having emotions?
+#+end_quote
+
+Emotions and consciousness, yes.
+
+#+begin_quote
+  In biologicals with less Force-sensitivity (headcanon territory now), there is a greater frequency and magnitude of sociopathic and selfish behavior!
+#+end_quote
+
+Counter-examples, literally any Sith.
+
+#+begin_quote
+  Why would the same argument not apply to the droids?!
+#+end_quote
+
+Sociopathic and selfish behavior is virtually unknown in droids.
+
+Yeh, it wouldn't be easy. People have all kinds of racist ideas with all kinds of sciency reasons for it. It's still worth fighting them.
+
+The AIs in Star Trek, by the way, bug me too.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1448748157.0
+:DateShort: 2015-Nov-29
+:END:
+
+
+*** i've been rolling around one where anakin properly generalizes his goal to free his mother from slavery to freeing all slaves, including droids.
+:PROPERTIES:
+:Author: buckykat
+:Score: 6
+:DateUnix: 1448312506.0
+:DateShort: 2015-Nov-24
+:END:
+
+**** Do it!
+
+(interesting tension: most driods are /not/ conscious, which leaves plenty of room for misunderstandings and prejudice)
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 1
+:DateUnix: 1448505524.0
+:DateShort: 2015-Nov-26
+:END:
+
+***** really? everything i've seen points to them being pretty much all sophonts. admittedly, i haven't read much EU at all, but going by the categorization on [[http://starwars.wikia.com/wiki/Droid][wookiepedia]] the only droids that could really be useful without sentience are class fives.
+:PROPERTIES:
+:Author: buckykat
+:Score: 1
+:DateUnix: 1448538337.0
+:DateShort: 2015-Nov-26
+:END:
+
+****** I know this does not exactly match the EU-canon, but it's going to need a massive rethink re: droids for this kind of fic anyway.
+
+Per the Obi-wan quote on that page - "If droids could think, there'd be none of us here, would there?" - genuine droid sentience would have enormous economic and social ramifications.
+
+Fortunately, manufacturers are aware of this and carefully design usefully intelligent but non-sentient droids. To use MIRI terms, they've avoided creating life or an intelligence explosion, worked around the value alignment problem, and maintained tractability. In other words, droids are tools rather than people, and only do what they're told. In fact, all computing hardware has physical restrictions that enforce these aspects and interstellar law looks very dimly on circumvention.
+
+Anakin Skywalker, child prodigy in a criminal backwater, just wanted to build himself friends.
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 0
+:DateUnix: 1448544672.0
+:DateShort: 2015-Nov-26
+:END:
+
+******* man, i got a completely different read on what droids are than you did. some random, totally average naboonian astromech droid spends six movies passing the turing test with flying sarcastic colors while only communicating in whistles and looking like a trash can.
+
+that obi-wan quote is just him being a racist old coot. the [[http://starwars.wikia.com/wiki/Life_preservation_programming][restrictions]] you mention are basically asimov's laws.
+
+they created life, avoided the intelligence explosion by preventing them from self-improving, largely ignored the value alignment problem, and created a galaxy-wide rolling genocide.
+
+anakin skywalker, child prodigy in a criminal backwater, had plenty of friends. he built c3p0 for exactly what he claims: human-cyborg relations.
+:PROPERTIES:
+:Author: buckykat
+:Score: 2
+:DateUnix: 1448586507.0
+:DateShort: 2015-Nov-27
+:END:
+
+
+*** Trollratfic? SJWfic? What do we call that?
+
+Besides, Jedi pedophilia is far more likely. They're a hierarchical, celibate religious order who have total power over children, for fuck's sake.
+:PROPERTIES:
+:Score: 7
+:DateUnix: 1448311199.0
+:DateShort: 2015-Nov-24
+:END:
+
+**** Googling around, apparently the concept of "trollfic" already exists:
+
+[[http://tvtropes.org/pmwiki/pmwiki.php/Main/TrollFic]]
+
+...and here I thought I was being so clever.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1448312160.0
+:DateShort: 2015-Nov-24
+:END:
+
+***** I once made a one-chapter trollfic so had, that I had people who had read my other stories and chanced on it literally sent me reviews asking if anything was wrong. I felt so bad I deleted it.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 2
+:DateUnix: 1448328166.0
+:DateShort: 2015-Nov-24
+:END:
+
+****** Awww. But that means you did a good job!
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 3
+:DateUnix: 1448331953.0
+:DateShort: 2015-Nov-24
+:END:
+
+
+** A few days ago, I had the occasion to say [[https://wiki.lesswrong.com/wiki/The_map_is_not_the_territory]["The map is not the territory"]] in a /vaguely/-relevant fashion while squabbling over English.
+
+- [[http://i.imgur.com/R77rKMI.png][The topic of the discussion]]
+
+- [[http://i.imgur.com/6I8e2n3.png][The discussion itself]]
+
+I, at least, thought it was pretty hilarious.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 9
+:DateUnix: 1448294695.0
+:DateShort: 2015-Nov-23
+:END:
+
+*** I found it pretty amusing, too :p
+:PROPERTIES:
+:Author: Cariyaga
+:Score: 2
+:DateUnix: 1448310726.0
+:DateShort: 2015-Nov-24
+:END:
+
+
+*** The sentence "I am a proper noun." is grammatically correct but factually incorrect.
+
+edit: "I is a proper noun" is also factually incorrect because it is actually a personal pronoun unless there is a person named "I".
+:PROPERTIES:
+:Author: TimTravel
+:Score: 2
+:DateUnix: 1448627202.0
+:DateShort: 2015-Nov-27
+:END:
+
+
+** Possibly the wrong thread, but I can't find an easy answer to this: why is Shakespeare the best/greatest writer of English? He lived centuries ago, and the population of people speaking and writing the language has increased since then, so why haven't we produced any writers we can point to and say "Yep, this person is unambiguously better than Shakespeare was"?
+:PROPERTIES:
+:Author: AmeteurOpinions
+:Score: 3
+:DateUnix: 1448302171.0
+:DateShort: 2015-Nov-23
+:END:
+
+*** You'll never be able to point to someone and say that they're unambiguously better than Shakespeare; the question of who is best is an ambiguous one.
+
+As for why Shakespeare is considered /one of/ the best:
+
+- A lot of what he was writing were what we'd now consider transformative works; he was taking old stories and rewriting them. It's easier to write a good story that's been written before, because it's basically as though someone else has done the work of a first draft for you. (A skilled fanfic author can file away the rough bits and breathe life into throwaway characters because they're looking at the work from a distance that the original author didn't have.) Shakespeare happened to live at a time not too long after the printing press came along, so many of his plays became the canonical versions of their story, so he gets more credit than he maybe should get.
+- Shakespeare is most famous for his plays, which were developed iteratively. A modern writer hammers away at his manuscript, puts it through an editor, and then publishes, hoping that it passes muster. Shakespeare didn't write the play and then leave it as it was, he could listen to how the audience reacted every time it was performed and adjust the lines and (to some extent) the plot accordingly. His plays are highly iterative in a way that modern publishing doesn't allow for. So advantage to Shakespeare right there.
+- Shakespeare was undeniably a skilled writer.
+- Shakespeare worked his way into the English canon and then just stayed there.
+
+  - Some of the regard for Shakespeare is just because everyone says that Shakespeare is great. Lots of people say that without understanding half the fart humor in his plays. So there's some degree of "Shakespeare is good because everyone says Shakespeare is good", though there's no way of evaluating how large this factor is.
+  - Because lots of people have read Shakespeare, there are a lot more people around to say that Shakespeare is great. It's much easier to hit "top 10" lists if people are aware of you; the world's sexiest man [according to magazines and websites] is almost always someone famous, which seems statistically unlikely even given that famous people tend to be more attractive than non-famous people.
+
+- Shakespeare is competing in uncompetitive realms. It's hard to compare plays and sonnets to novels and films. While there /are/ more writers today, they're mostly not writing plays and sonnets. Few people are going to make the apples to oranges comparison of saying that /The Shawshank Redemption/ was better than /Romeo and Juliet/, because that's even more subjective than value judgements normally are. Besides that, a large number of the things that writers now do are collaborative; you can't lay the success of /The Avengers/ entirely (or even mostly) at Joss Whedon's feet. [Plays are collaborative too, but Shakespeare is judged on his prose, not on the plays as performed in the Globe. It's likely that he didn't write everything in his plays himself -- I can't imagine him not ever getting input from other authors or the actors -- but he gets all the credit.]
+- Shakespeare's best stuff is what survived. Most modern authors are judged by their entire body of work and Shakespeare benefits from some of his worst stuff having been forgotten or edited away. I'm sure there were some terrible poems he wrote, but they've been lost to history and Shakespeare looks better for it.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 20
+:DateUnix: 1448303894.0
+:DateShort: 2015-Nov-23
+:END:
+
+**** u/ArgentStonecutter:
+#+begin_quote
+  Shakespeare's best stuff is what survived.
+#+end_quote
+
+Actually, a lot of Shakespeare's stuff that survived isn't very good. But you don't get many people doing Random Tedious King Wossname so it doesn't effect how he's perceived.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1448306717.0
+:DateShort: 2015-Nov-23
+:END:
+
+***** How dare you insult such wonderful plays as [[http://ferretbrain.com/articles/article-878][Pericles, Prince of Tyre]]
+
+(this play is hilarious, but not intentionally).
+:PROPERTIES:
+:Author: Escapement
+:Score: 4
+:DateUnix: 1448335613.0
+:DateShort: 2015-Nov-24
+:END:
+
+
+*** Argument -- we under rate him. Speaking with friends who read translations impressed on me just how much English has changed and how little of the Bard we really get. Half of his stuff is gibberish and the other half seems clichéd. But he's inventing the cliches (both linguistic and, to a lesser extent, dramatic) .
+
+Realistically he is over-rated, but try reading any other 400 year old work without updating. It's a slog. Hell, try reading a 200 year old play. Or the best play from 100 years ago...
+
+And let's just admit. When it comes to a single line or sentence. Big Will crushed it time and again. His greatest hits are truly great. Look at Howard Hughes' rule for a good movie. Three great scenes, no bad ones.
+:PROPERTIES:
+:Author: TaoGaming
+:Score: 8
+:DateUnix: 1448305811.0
+:DateShort: 2015-Nov-23
+:END:
+
+
+*** By excluding everything but dialogue, Shakespeare massively narrowed his technical challenges.
+
+Prose has undeniably advanced, especially the development of technical dialects--for technical merit, your average scientific paper is totally to a higher standard than Shakespeare.
+
+But for fiction, yeah, this is pretty bothersome. Bobby Fischer was heads above his opponents at the time of his height, and did more with less than Kasparov, but Kasparov is objectively greater. You wouldn't expect anyone to be more influential, but why not better. The best answer is that literary evolution has been mostly horizontal, focusing on problems like creating new and more complex plots, coincident with a devaluation of formal lingual experimentation by the commercial audience. Relatedly, among the creators, the idea that an ideal, lucid prose style already exists has dissuaded conscious experimentation with English. And it's true that, for efficiency of communication, maybe a local maximum, or even a soft cap, has been reached.
+
+TLDR; Shakespeare attempted technically much simpler creations than what is expected now, making them individually more flawless.
+
+Also, let's be honest, the peeps just be lazy.
+:PROPERTIES:
+:Author: wendigo_days
+:Score: 5
+:DateUnix: 1448334796.0
+:DateShort: 2015-Nov-24
+:END:
+
+
+*** Maybe it would be easier if we broke down what we mean by "better" into multiple categories. While the quality of literature is relative to the preferences of those who read it, people's reading preferences are not SO different that we can't set any standards of good writing at all. At the very least, we can rate his performance against our own preferences and the preferences of different target audiences. Here is how I would probably rate Shakespeare out of ten based on my own literary preferences.
+
+World-building: 6
+
+Characterization: somewhere between 5 and 7
+
+Dialogue: somewhere between 7 and 8
+
+Meaningful content(10) or fluff(0): probably an 8 or a 9 for its time, but somewhere between 6 and 8 relative to some of the really good modern works of literature I've read. Maybe a 4 or a 5 for some of his works (i.e. Twelfth Night was basically a romantic comedy that is kinda similar to a lot of modern romantic comedy movies, and there was actually a movie based on it which takes place in modern times, I think it's called "She's the Man"?)
+
+Description (how well he can describe something in detail in his writing): Maybe a 6 or a 7? It could be an 8 or even a 9 if he was relying on his audience at the time to fill in certain details which might not be noticed so much by a modern person reading the script.
+
+Also, you know how they say that good writers should show not tell, or at least show more than they tell? Shakespeare tells quite a lot but he doesn't show quite as much. A lot of the action takes place off the stage and is only talked about by the characters instead of enacted by them. However, the descriptive quality of the dialogue and dramatic monologues could make up for the insufficient amount of visible action in a format that is meant to be seen rather than just heard.
+:PROPERTIES:
+:Author: Sailor_Vulcan
+:Score: 4
+:DateUnix: 1448374762.0
+:DateShort: 2015-Nov-24
+:END:
+
+**** Twelfth Night should have gone for the gay relationships. ;p
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1448380639.0
+:DateShort: 2015-Nov-24
+:END:
+
+
+*** Because Shakespeare is ridiculously, ridiculously good. People have tried. It's hard. He's the best.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1448325044.0
+:DateShort: 2015-Nov-24
+:END:
+
+
+*** Force of tradition maybe?
+
+He was one of the best early writers that we can find and there are not too many works by his contemporaries or before his time that we can actually find. Therefore it's pretty easy to say that his plays are one of the best for his time period purely through the fact that people didn't take as much effort to preserve any other works from the same era.
+
+In addition, people love to exaggerate difficult feats so they start calling Shakespeare the best writer. I mean, would you rather go to a play by the best writer in history, or the play where the announcer is saying, "A play by a great writer who may or may not be the best writer in history!"
+
+Since Shakespeare is legitimately good at writing plays, people repeat his skills being the best over and over and with little to no competition, it becomes historical fact that he is better than anyone else. Since everyone else has to beat out more people to become the best writer of their generation, Shakespeare continues to be perceived as the best through force of tradition.
+
+It might also be because of the snootiness of high society who only perceive plays as being the highest form of literature (despite Shakespearean plays being largely performed for the peasantry in Shakespeare's time).
+
+TL;DR - Shakespeare wins through people just repeating the fact that he is the best and people associate plays as the most sophisticated type of literature to read/watch.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 5
+:DateUnix: 1448303907.0
+:DateShort: 2015-Nov-23
+:END:
+
+**** u/Transfuturist:
+#+begin_quote
+  Shakespeare wins through people just repeating the fact that he is the best
+#+end_quote
+
+YES
+
+Also note that quality of works beyond technical properties is subjective.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1448313048.0
+:DateShort: 2015-Nov-24
+:END:
+
+
+**** Actually, take a look at his competitors -- Jonson, Kyd, Marlowe, Webster. They suck in comparison. Marlowe is the most readable but still a bit clunky and bland. Shakespeare did have a true advantage over his contemps.
+:PROPERTIES:
+:Author: wendigo_days
+:Score: 1
+:DateUnix: 1448342564.0
+:DateShort: 2015-Nov-24
+:END:
+
+***** Isn't Shakespeare as an individual dubious as a source of the attributed works in the first place?
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1448518817.0
+:DateShort: 2015-Nov-26
+:END:
+
+****** u/wendigo_days:
+#+begin_quote
+  Although the idea has attracted much public interest, all but a few Shakespeare scholars and literary historians consider it a fringe belief and for the most part acknowledge it only to rebut or disparage the claims.
+#+end_quote
+
+[[https://en.wikipedia.org/wiki/Shakespeare_authorship_question]]
+
+Plus, if there's a bunch of similarly outlying artworks it's likely they came from the same hand.
+:PROPERTIES:
+:Author: wendigo_days
+:Score: 1
+:DateUnix: 1448555609.0
+:DateShort: 2015-Nov-26
+:END:
+
+
+*** In the words of Newton, we "stand upon the shoulders of giants." The past shapes the present and anyone who is great now can in part attribute their success to past works.
+
+No one can deny the influence of Shakespeare has had on the structure of classic stories, memorable characters, famous quotations, etc. However, how many famous contemporary playwrights can you name? The process of writing has expanded far beyond plays into books, movies, web serials, video games, etc. that "best/greatest" is now being broken down into subcategories.
+
+It would take a very prolific and versatile writer to tap into the different markets of today's world and have the same influence as Shakespeare on English literature and writing for future generations for someone to say "yep. Definitely better than that guy."
+:PROPERTIES:
+:Author: notmy2ndopinion
+:Score: 2
+:DateUnix: 1448304303.0
+:DateShort: 2015-Nov-23
+:END:
+
+
+** My hypothesis about the Blessing of Abstraction seems so far to be right, but now I don't really know how to quantify it or build an algorithm out of it. Crud.
+:PROPERTIES:
+:Score: 0
+:DateUnix: 1448311389.0
+:DateShort: 2015-Nov-24
+:END:
+
+*** Specifics of the hypothesis? (Density concentration around samples positively relating to the number of generative layers in the model? (I can't read the text notation of the math in 'Overhypotheses explain coincidences!', so I can't follow that section of the email very well))
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 2
+:DateUnix: 1448313372.0
+:DateShort: 2015-Nov-24
+:END:
+
+**** Fuck it I'll email when I get home in a couple of hours.
+
+And that notation was made up on the spot, which is why it's unreadable.
+
+Also, I need to check into a probprog idea and run it by you.
+:PROPERTIES:
+:Score: 0
+:DateUnix: 1448315505.0
+:DateShort: 2015-Nov-24
+:END:

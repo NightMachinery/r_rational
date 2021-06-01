@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: itisike
+:Score: 2
+:DateUnix: 1423170687.0
+:DateShort: 2015-Feb-06
+:END:
+
+If Alice and Bob share a box, then Bob can prove to Alice who he is, and Bob and consumer should be able to generate a random single-use pad through Alice. The problem with this is that Alice has access to the message, while now (before P=NP is proven) she only has access to perform an MITM (and even that can only be done once if Bob's key is stored). This is basically what [[http://blog.computationalcomplexity.org/2010/08/cryptography-if-p-np.html]] says, which is sufficient to show your point here is wrong.
+
+However, that problem I mentioned? Something along the lines of Bob and consumer each generating their own random pad, which Alice shares. Then they can securely communicate with each other through Alice (by sending all messages to Alice), and they /might/ be able to use that to generate a random pad which Alice doesn't share. I'm still thinking on that one. May be totally off.

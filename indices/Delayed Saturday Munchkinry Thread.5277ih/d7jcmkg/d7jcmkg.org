@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: FishNetwork
+:Score: 2
+:DateUnix: 1473671535.0
+:DateShort: 2016-Sep-12
+:END:
+
+You can create pairs of magically-linked forcefields. The 'magic' of the fields is that they will always maintain their relative positions.
+
+Their initial positions are up to you, but the fields must start parallel to each other
+
+--------------
+
+The idea is that you can apply force at a distance.
+
+For instance, it's possible to build a magic staircase. One field acts as a step while its partner lies on the ground. They move together, so they'll compress the ground just as if you were standing on it directly.
+
+If I designed them right, the fields should be mostly compatible with physics. Since they're always parallel to each other, they should conserve momentum. And they shouldn't break conservation of energy, either.

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1439078901.0
+:DateShort: 2015-Aug-09
+:END:
+
+With git, you're storing structured data and your merge/rebase algorithm treats it as unstructured data. Of /course/ you see tons of problems, even with pure additions that can in theory work in arbitrary order. You'd have to be outrageously stupid to try to use git to store memories for this exact reason.
+
+You use a graph database for your raw data. You can synchronize that much easier. If you have cached calculated values on top of the raw data, after synchronization, you have to recalculate anything that depends on anything that changed, but that's also true of adding memories as you experience them.

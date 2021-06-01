@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1442091101.0
+:DateShort: 2015-Sep-13
+:END:
+
+#+begin_quote
+  because it would never condition on new information about the human operators' intentions
+#+end_quote
+
+That seems to me like it depends entirely on the design of the AI. First of all, lots of information needs to be integrated in the AI's knowledge base to be able to do much of anything, let alone anything obviously unFriendly, so I imagine it would take a period of ten minutes or so (with an internet connection or local info corpus) before it would be able to do anything truly dangerous, and by then it would have had the opportunity to be briefed by its human developers. That does speak to properties of desirable protocols in AI development. Sandboxing, blocking out human interaction, etc.
+
+It's not necessarily possible to do something like blocking out human interaction for observation, though. The sort of safe AI properties we've been looking at involve indirect normativity and value learning from human observation, which doesn't help in the case of a dissembler. Sandboxing and internal analysis seems almost compulsory in that situation. Your scenario assumes we have a monolithic black box, not something we can pull apart and analyze, pausing every half-second and running diagnostics, for example. Rate-limiting on self-modifications, separating changing parameters from changing structure (and where parameters affect structure, consider a metric of variance from design/scope of change applied to each parameter). I find it somewhat strange that MIRI hasn't looked into more technical solutions, tools, and protocols to increase safety of practical design and testing, on further consideration. I suppose that might be more of a near-AI problem...
+
+Even in a neural-based design, the mind would probably be a network of NNs, which we could test in parts, both forwards and in reverse. That might even make it possible to find extreme and edge cases of its action selection processes, query closest text descriptions of its own networks and nodes (requiring strong reflection capabilities, however), all sorts of cool shit.
+
+Man, I'm turning into an NN groupie. It would be so much cleaner if we had the same structural and fuzzy capabilities for source metaprogramming. It's not as though a proper adaptive metanetwork for NNs has been put together, either.

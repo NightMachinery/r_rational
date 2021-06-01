@@ -1,0 +1,48 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 1
+:DateUnix: 1493481647.0
+:DateShort: 2017-Apr-29
+:END:
+
+#+begin_quote
+  Limb/limb interactions are SUPER HARD. Weirdly, Oni did it super well way back in the day. Spore's probably the next example, ever, of that kind of thing.
+
+  Sunless sea is a game where they tried their first concept at combat, built up much of the rest of the game (the real meat of the game, combat is just a side dish), and then had people try it. People didn't really like the combat system (which wasn't done at the time), but the devs said; Ah, well, let's try something new. And the new system was damn good.
+#+end_quote
+
+So I've heard of Oni and Spore, but not Sunless Sea, and I haven't played any of them. I might need to give them a look if they have a similar concept as well-done as you say.
+
+#+begin_quote
+  BDD is about making sure you're focusing on the thing you actually care about: the user's experience.
+
+  What does this level of detail bring to user's experience? Why do you want it in the first place?
+
+  From your perspective, will you get stuck trying to make it, and, will you get demoralized if you STOP trying to make it?
+#+end_quote
+
+So you might not have been asking for specific justification for these systems in particular, but I'm going to write out my thought process as an exercise.
+
+Anatomy has at least two core purposes, and probably other secondary ones that I'm forgetting. The first is a use as move prerequisites: we don't have move lists like in canon, and instead all moves have an Anatomy and Stat requirement (among other things). Thus rather than manually making sure that 500 different pokemon can learn Bite, we simply give those pokemon a Mouth and this automatically enables Bite (and any other mouth-based moves).
+
+This enforces our design decisions in a core, systematic manner, instead of having the onus be on us to manually keep a spreadsheet and ensure that everything that looks like it has a mouth can learn Bite. So it is /mostly/ a benefit to us as developers, but it's also meeting the vision of the gameplay in that it gives players a well-defined system to interact with: if they find that they have multiple pokemon with a Mouth, maybe investment in Bite and similar TMs is a good idea.
+
+Second, they govern move /usage/: if I break that Charizard's Mouth, it's not going to be able to use Bite on me anymore (or at a heavily reduced effectiveness, depending on the severity of the injury). This as a system is mostly for the player to use or work around: if they target the same area multiple times, perhaps they can sever or otherwise eliminate a crucial body part on their opponent. Likewise, if your Charizard's wings have been broken, wellp, you're not flying out of there, kid, so you'd better figure out what to do.
+
+--------------
+
+As for the other system, that of 3D voxels, it's probably the less justified of the two, but let's dig in:
+
+It goes without saying that the world will use /tiles/, regardless of the inclusion of a z-axis, so it's important to try and isolate what adding a third axis does, rather than lauding the benefits of a tile-based system.
+
+So it basically comes down to two things: limiting the movement of sufficiently large pokemon in an interesting way, and enabling flight and other interesting extreme vertical situations. Other considerations, while desirable, are more about aesthetic and not so much impacting gameplay, or they can translate to 2D just as well (such as eliminating TARDIS houses, or permitting digging/terrain modification)
+
+Forcing the player to consider the ceiling feels like it adds significantly to the game's strategy, however. Not only must the player pick their battlefields carefully if they have huge pokemon, but if they come across a giant while in a cave, they might be able to escape by finding sufficiently low corridors. If a very large pokemon is Godzilla'ing right down the middle of downtown, you could also get into a good position by getting on top of a building, permitting you to target its head, etc.
+
+Verticality also permits flying to have nuance, rather than just the binary "ground level/in the air" that canon had. I suppose in general, having verticality permits the concepts of caves, mountains, and cliffs, which don't have any real meaning if the world is flat. Yes, canon fakes it, but let's be real: if I have something called a mountain, I want to be able to climb to the top of it, trip, and fall off like the idiot I am and turn into a mushy paste at the bottom. Alternatively, if I'm prepared, I want to be able to scale a cliff face, or glide on the back of my pokemon down a steep ravine, and thus be rewarded for good preparation.
+
+--------------
+
+It might be possible to do this the way Dwarf Fortress did: start with a flat world, and slowly add vertical bits later once other, more core systems are in place. I very much don't want to call something a mountain that's not a mountain, but I also don't want to have to multiply the amount of data to be defined where it's not useful. Yeah, I think that will probably be the way to go: the Mountain/Flight update will have to be a thing in the future.
+
+Thanks for the tips! This has been quite helpful.

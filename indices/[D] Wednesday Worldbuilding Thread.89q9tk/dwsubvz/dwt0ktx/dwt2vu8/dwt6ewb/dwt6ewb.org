@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: jedijinnora
+:Score: 3
+:DateUnix: 1522869206.0
+:DateShort: 2018-Apr-04
+:END:
+
+#+begin_quote
+  If I say that the exploits are possible without 'do not mess with time' issues, how do you think it would play out?
+#+end_quote
+
+Poorly.
+
+Most of modern cryptography is rendered null, and thus every device not protected by an air gap is likely compromised. The process of identifying, adapting, and distributing systems that might still be secure (one-time pads, Carter-Wegman) would take ages, and the damage done by bad actors in the meantime will be excessive.
+
+It's even worse from a physical security perspective - with basic time travel you can arrange to have a signal sent from the future which tells you that your objective was successful and not act unless you recieve said signal. If you can also precommit resources towards retroactively undoing false-positives, this guarantees either your success or that your opponents have interfered via time travel of their own. Warfare and counterterrorism now become even more of a game of cat and mouse. With a full-on loop, you can extract detailed information on how your plan failed and iterate again. Weird things may happen like the authorities waiting seven hours to arrest perpetrators so the 'guaranteed success' described here does not work.
+
+You probably have to wait at least six hours in isolation before any kind of standardized testing to ensure you didn't get the answers from the future. Ditto for giving witness at any kind of trial so you can't prep for unexpected questions. Changing anything security-related definitely takes seven hours minimum.
+
+On the positive side of things, computationally-expensive but fully specifiable problems are now solved as soon as someone sets up a vaild loop. Protein-folding, searching for gene sequences, finding large primes, computer chip design, searching through interesting datasets, etc.
+
+There are some interesting alert systems you can set in place for unexpected deaths - if someone is in a car accident, automatically send the name and cause of death back six hours. If the system receives a given name, send it back six hours later even if nothing happened in your time line. People who pay attention to this service should in theory never die due to sudden accidents (assuming you have an easy way to avoid whatever happened). Now in addition to 'sick days' at work you have 'death days', where you stay home because otherwise you'd get in a fatal traffic accident. If done right, deaths due to car/train/plane accidents, surgery, heart attack, drowning, and more can all be avoided.
+
+Edit Addendum:
+
+You can also get the results of any six-hour course of action before or without actually going through with it. Thus, persons wishing to avoid counterfactual kidnapping and interrogation must set up a time loop of their own that is fail-deadly to interference. This will not necessarily prevent said counterfactual kidnapping and interrogation, but it /will/ alert you if it happens. Sort of like a cell phone fail-safe 'text 1 if you're okay' except it's 'if you are recieving this message, you will not be kidnapped in the next 6 hours'.

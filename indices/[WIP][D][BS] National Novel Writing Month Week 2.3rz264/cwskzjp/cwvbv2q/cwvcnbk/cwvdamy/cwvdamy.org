@@ -1,0 +1,43 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 2
+:DateUnix: 1447169322.0
+:DateShort: 2015-Nov-10
+:END:
+
+You have python? I don't really know how scrivener works, but something like this might work.
+
+#+begin_example
+  """
+  Template.html needs to have {body} somewhere in it. 
+  {body} gets replaced with content from scrivener
+  """
+
+  #Define all the file paths
+  template = open("tempalate.html", "r+").read()
+  scriv = open("compiledScriv.html", "r+").read()
+  output = open("out.html", "w+")
+
+  #We'll use markdown to generate a table of contents.
+  #This means that headers need to look like #ChapterTitle
+  #Markdown will convert those to <h1> tags, and ##ChapterTitle into <h2> tags
+
+  #Configure our markdown to use the "table of contents" plugin, and run it over the "scriv" text
+  import markdown
+
+  scriv = markdown.markdown(scriv, extensions=["markdown.extensions.tables","markdown.extensions.smart_strong","https://pythonhosted.org/Markdown/extensions/toc.html","markdown.extensions.footnotes"]
+
+  #Put the newly markdowned text into our template.
+
+  formattedText = template.format(body=scriv)
+  output.write(formattedText)
+#+end_example
+
+This will wrap your scriv html in another html file called "template" and run it through a markdown parser which will pass any existing html through, but will apply markdown formatting like footnotes and headers. It will also generate a table of contents based on markdown headers.
+
+#headers like this
+
+* headers like this
+  :PROPERTIES:
+  :CUSTOM_ID: headers-like-this
+  :END:

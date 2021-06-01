@@ -1,0 +1,17 @@
+:PROPERTIES:
+:Author: OffColorCommentary
+:Score: 2
+:DateUnix: 1426634796.0
+:DateShort: 2015-Mar-18
+:END:
+
+This is only true of gradient ascent optimizers and similar. There are plenty of non-person optimization processes capable of sudden change. All of the ones we generally deal with in AI are smarter than gradient ascent, but there also exist stupid ones:
+
+#+begin_example
+  State best = random(StateSpace)
+  while (?) // However long we're allowed to execute
+      State proposed = random(StateSpace)
+      if (u(proposed) > u(best))
+          best = proposed
+  return best;
+#+end_example

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:Author: jalapeno_dude
+:Score: 20
+:DateUnix: 1405298732.0
+:DateShort: 2014-Jul-14
+:END:
+
+I really didn't like the implementation of the belief graphs. Two huge problems, IMO:
+
+1. They were symmetric in linear space, when a lot of the time I'd prefer to distribute probability mass symmetrically in log space. (Example: one question was "how many gallons of milk does a cow produce per week). My rough guess was "the order of magnitude is around 100", i.e. between 10 and 1000 (or maybe a little tighter, but the point is that it was symmetric in log space).
+2. An inability to make flat belief graphs. When I don't know the answer, I want to admit my ignorance by submitting a flat prior, but this isn't possible here. (E.g. if I want the median of my guess to be 200, the minimum and maximum can only extend to 135-265).
+
+The two things together were especially frustrating, and forced me to give much more confident answers than I actually wanted to, which seems to entirely defeat the point of the exercise. So I gave up pretty quickly.

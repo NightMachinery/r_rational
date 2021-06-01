@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1446765869.0
+:DateShort: 2015-Nov-06
+:END:
+
+It should save the jpeg after a while of inactivity, I think. We want to be able to free up the memory it's using if it hasn't been accessed in a while.
+
+And of course there would be a lot of different accessors for different data types, and probably a simple python-function accessor system for things like data validation, where speed isn't super important.

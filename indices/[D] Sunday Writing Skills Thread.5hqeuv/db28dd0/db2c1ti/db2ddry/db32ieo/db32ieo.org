@@ -1,0 +1,28 @@
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1481513993.0
+:DateShort: 2016-Dec-12
+:END:
+
+#+begin_quote
+  PDF files
+#+end_quote
+
+Oddly, GURPS is one of the only sources I still enjoy getting PDF files of, as opposed to non-fixed-text Epubs or the like.
+
+#+begin_quote
+  Javascript ... dynamic margins
+#+end_quote
+
+Actually, you don't even need Javascript, or even CSS, just a bit of HTML. For example, in my page for [[http://www.datapacrat.com/weirdtopia/index.html][Weirdtopia]], I try to keep the line-lengths be roughly a certain number of characters wide, but still adapt to a wide variety of window sizes with this HTML:
+
+#+begin_example
+  <div align="center" style="margin-left:auto;margin-right:auto;max-width: 33em;">
+  <table align="center" width="100%" border="0"><tr><td>
+  ... (actual text)
+  </td></tr></table>
+  </div>
+#+end_example
+
+(I do a couple of other formatting things there, if you want to take a look at the story's HTML source code.)

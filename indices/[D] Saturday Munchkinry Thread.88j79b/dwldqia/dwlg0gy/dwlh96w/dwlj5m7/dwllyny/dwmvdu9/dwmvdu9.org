@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Veedrac
+:Score: 2
+:DateUnix: 1522603448.0
+:DateShort: 2018-Apr-01
+:END:
+
+[[/u/blasted0glass]]'s approach works even in situations where you don't have an after-the-fact way of finding out the answer, such as when guessing passwords. All you need to do is a recursive search.
+
+Here's another way of doing it that you might find less objectionable. Break each part down into a stream that you can easily reason about. Let's go with a binary stream. First test {0}. If you get deja vu, choose 1, else choose 0 (call this x). Then continue, and test {x0}. If you get deja vu, choose 1, else choose 0. Then continue with {xy0}, etc. You can get around the fact that the early numbers won't be triggering deja vu by prefixing them with some random string.
+
+If you get to the end, try the value. If it fails, jump back to just before the most recent zero.

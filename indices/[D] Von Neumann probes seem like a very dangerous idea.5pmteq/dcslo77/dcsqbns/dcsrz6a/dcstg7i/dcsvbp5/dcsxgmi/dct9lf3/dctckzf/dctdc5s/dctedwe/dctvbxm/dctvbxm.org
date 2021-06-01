@@ -1,0 +1,44 @@
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 4
+:DateUnix: 1485232564.0
+:DateShort: 2017-Jan-24
+:END:
+
+#+begin_quote
+  Or it flips just one bit. That one bit is the bit in charge of doing the comparison between the different blueprints. Now its always true.
+#+end_quote
+
+There is no such thing as a bit that is "in charge of" anything.
+
+#+begin_quote
+  Or the antennae is taken out so now it doesn't stop other probes from landing on that planet.
+#+end_quote
+
+Not sure what this means. What antennae? What planet? There seem to be a lot of unspoken assumptions in this sentence.
+
+#+begin_quote
+  Or a micrometeorite pierces the internal machinery and the signal from the "don't produce more probes" section is cut off.
+#+end_quote
+
+What "don't produce more probes" section? What signal? You are assuming a great number of things about this hypothetical self-replication process which are not even close to necessary. For instance, what if the replication process physically required all four probes in order to occur? In that case, damage to any one of the four probes would make replication impossible.
+
+#+begin_quote
+  Or you have a flood of radiation in space from a cosmic event that hits all of the data storage devices at the same time. They all have 25% of their data corrupted but not the same 25%. How much do you trust the integrity of its safety mechanisms now?
+#+end_quote
+
+You'd be surprised at how possible it is to reconstruct a message using multiple partially-corrupted copies. There's actually an information-theoretic criterion which allows us to calculate the mutual information between the copies (and thereby the probability with which the resulting reconstruction matches the original message), but I'm not feeling up to running the numbers right now. However, if the number of redundant copies you have isn't enough to ensure a satisfactorily high probability of success, all you have to do /add more/. Come on. This isn't hard stuff.
+
+#+begin_quote
+  Or you have a noisy area of space that overpowers whatever signalling device your probes are using so they keep thinking a solar system is empty when instead its already will with a bunch of other probes.
+#+end_quote
+
+Unless your probes are in close orbit around a neutron star or some such, they will not encounter such a region of space. Also, more assumptions about how the probes will work! What if they periodically approach each other to exchange information instead? What if the probes are capable of modulating the signals they send to compensate for noise? What if there are multiple channels of communication for redundancy's sake?
+
+#+begin_quote
+  Its not just a trillion. Its a trillion probes, each with a ~2500 year lifespan flying through space dust, radiation bursts, and magnetic fields. Data integrity is only ONE of your concerns. You also need to make sure its ability to produce new probes isn't compromised, its communication isn't compromised, its processing of communication isn't compromised, etc. Oh and this all pretends as if you were able to perfectly code this probe when you sent it out. If you perfectly preserve code that has a deadly error in it then we are equally as screwed as if the code had been perfectly modified to contain this deadly error.
+#+end_quote
+
+Why do you need to make sure the ability to produce new probes isn't compromised? As long as there are other probes out there that are still capable of replication, things are completely fine even if one or two (or even several thousand) probes get damaged to the point of being unable to replicate. As for communication... well, I already addressed that above. And the possibility of a coding error is /always present/, so I hardly see a reason to single out von Neumann probes in particular, except insofar as the stakes are unusually high--which actually provides a greater incentive to get it right. (One sees an interesting analogy with FAI here.)
+
+Look, I'd recommend sitting down and actually working out how an error-correction system for self-replicating probes might /work/ before making (incorrect) claims about ways in which such a system can fail. None of the concerns you raised are anywhere close to being general enough to count as legitimate issues, seeing as it took me about fifteen minutes in total to come up with either a refutation of your point or a workaround. /Anyone/ could have come up with those--including yourself. There's a worrying trend I see online, wherein people seem more and more content to simply point out (what they think is) an object-level criticism, without immediately going one level higher and asking themselves, "Well, before I post this complaint, how can it plausibly be addressed?" This is a habit of thought that, ideally, should be the /default/, and it's something that is completely lacking in your comments.

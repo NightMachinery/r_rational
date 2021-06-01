@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 1
+:DateUnix: 1479850273.0
+:DateShort: 2016-Nov-23
+:END:
+
+Unfortunately, I'm pretty sure that doesn't work. Whatever probability penalty you appeal to, it has to scale /as fast or faster than the size of the number itself/, e.g. your penalty has to penalize someone who says "a million people" /a thousand times more/ than it penalizes someone who says "a thousand people". In the case of your proposed resolution, that's obviously false--if I wanted to mug you, I'm not literally /a thousand times more likely/ to say "a million" than "a thousand". (And what if I added an extra up-arrow and said "3↑↑↑↑3" instead of "3↑↑↑3"? Am I literally ~3↑↑↑↑3 times more likely to say the former than I am to say the latter? What if I said I would torture Graham's number of people instead? How likely is /that/?)
+
+In short, no matter how much evidence the statement that "a faker benefits more from using a large number... than using a small number" provides, it's simply /not enough/ to cancel out utilities from numbers that huge. You can't use a probability penalty like that to cancel out the expected utility because I can always just say bigger and bigger numbers and thereby outpace your penalty. The only way around this dilemma (that I can see) is to use a penalty that /scales with the number itself/, and the leverage penalty is the only one I've heard of that does that.

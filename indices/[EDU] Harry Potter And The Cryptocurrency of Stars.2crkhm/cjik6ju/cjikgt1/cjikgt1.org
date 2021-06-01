@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: patio11
+:Score: 1
+:DateUnix: 1407339540.0
+:DateShort: 2014-Aug-06
+:END:
+
+I wrote the article, and I'm technically correct, which is the best form of correct. Notice, on the API documentation for Order Create, the issuer parameter.
+
+[[https://www.stellar.org/api/#api-offercreate]]
+
+Or the API documentation for "amounts" in general:
+
+[[https://www.stellar.org/api/#api-amount]]
+
+This is distinct from the code path for /sending/ money as opposed to making markets in money -- on that one, you don't specify whose GBP you want to have sent, it will pick one acceptable to the sendee (if possible -- when not possible, your software should ideally recover for you, like Harry's wand does).

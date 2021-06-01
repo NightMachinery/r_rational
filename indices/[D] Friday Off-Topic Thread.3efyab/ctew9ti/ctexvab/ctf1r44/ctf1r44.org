@@ -1,0 +1,11 @@
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1437772824.0
+:DateShort: 2015-Jul-25
+:END:
+
+I'm actually using my own real time physics engine (based on positional dynamics, I can go into more details if anyone is curious).
+
+Inflating ellipsoids is an interesting iterative approach, but the trick would be adjusting the orientations. Ideally as it inflated each ellipsoid would rotate to fit the space. That might just mean implementing full rigid collision resolution during the packing process so that resolving against the faces can apply a torque.
+
+The other tricky thing is choosing good seed locations... it's probably best if these ellipsoids grow at the same time and collide with each other as they grow so you end up with a roughly uniform packing. Consider the following test case: a board that is 2m x 0.5m x 0.1m. I would consider an ideal packing to have an 8x2 rectangular packing of mentos shapes all slightly overlapping each other, but if I grow one ellipsoid at a time I will likely end up with a big one occupying the whole board and then a couple tiny ones in the corners.

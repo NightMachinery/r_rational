@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: themenniss
+:Score: 2
+:DateUnix: 1410004022.0
+:DateShort: 2014-Sep-06
+:END:
+
+<3 Graham's number. For the mathematics nerds, you may want to check out the [[http://forums.xkcd.com/viewtopic.php?t=7469][my number is bigger]] thread on the xkcd forums. g64 is suitably overkill (its already large enough that doubling it doesn't make much difference), but Ack(Ack(g64, g64), Ack(g64, g64))...
+
+Or y'know,
+
+#+begin_example
+  define h(1) = g64  [Ack(Ack(g64, g64), Ack(g64, g64)) up arrows] g64;
+  h(n) = h(n-1) [Ack(Ack(h(n-1), h(n-1)), Ack(h(n-1), h(n-1))) up arrows] h(n-1);
+  earring.setExperience(h(g64));
+#+end_example

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: zarraha
+:Score: 3
+:DateUnix: 1483416011.0
+:DateShort: 2017-Jan-03
+:END:
+
+This is very well thought out. As usual most models break down near the extreme cases. I think the biggest change I would make here is that the rounding increment isn't constant but probably has some tapering near the edges. Otherwise there would be a smallest nonzero belief. Which, maybe there is because people can't truly comprehend massively larger or massively small things. But people can distinguish between 1% and 0.1% better than they can distinguish between 51% and 50.1%
+
+Also, the thing about summaries is interesting. Since you have a finite amount of processing power then perhaps it is in fact rational to file away weak evidence and not worry about attempting to finely tune your probabilities until you accumulate enough of it to actually make a significant difference.

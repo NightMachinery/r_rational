@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1417035927.0
+:DateShort: 2014-Nov-27
+:END:
+
+Spoiler tags are implemented in a rather hackish way by corrupting a link (specifically, taking what would be the alt text and putting it after the link text, with no actual link destination). In this case, it's the difference between:
+
+#+begin_example
+  [](/s "")
+#+end_example
+
+And:
+
+#+begin_example
+  [](#s "")
+#+end_example
+
+The spoiler tag CSS is /also/ inconsistent across subreddits, which means that in some cases the other method of doing the spoiler is correct. Reddit at one point said they they were going to make a sitewide version of spoiler tags built into the Markdown, but I think they scrapped it once they realized how many different ways that subs used spoiler tags, and how much it would break existing discussion.

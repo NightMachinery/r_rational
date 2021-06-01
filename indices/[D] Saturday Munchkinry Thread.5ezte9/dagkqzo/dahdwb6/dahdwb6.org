@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 2
+:DateUnix: 1480234717.0
+:DateShort: 2016-Nov-27
+:END:
+
+I don't know whether it's considered kosher to respond to your own prompt, but I had an idea about how this could go and wanted to share.
+
+First, establish limits on time compression. Since input and output is bounded by human hearing (for the purposes of this, human hearing is in the range 20 Hz to 20 kHz), you get limits on communication at high or low compression factors.
+
+In terms of human-human communication, you're probably limited to a compression factor of less than 5. Even though the frequencies will still be within human hearing range at that point, a 5× compression makes it way too fast even for exaggeratedly slow speech.
+
+However, you aren't limited solely to human-human communication. You can probably get your hands on a microphone able to pick up the 20 Hz to 20 kHz range, and you can use a computer to slow down the speech enough to be intelligible. You can also do the reverse. This means that you could use a computer as an intermediary in a conversation even at relatively high compression (up to about 50×, depending on your vocal range, though if your simulation can work out how to make artificial speech sounds it could work up to 1,000×).
+
+You may run into hardware limits, which you'd probably have to determine experimentally. Assume that your maximum is only 100×, which is still incredibly fast (a year every 3.65 days, plus no need to sleep or eat). At such a rate of compression, the device consumes 100 kW of power, which would pretty quickly become noticeable---an average house uses around 6,000 kWh a month, where this device alone would use 72,000 kWh at that speed.
+
+Of course, when compressed you'd find that your simulation would go insane pretty quickly. You'd need to facilitate entertainment for it. Why not set the computer up to respond to commands from the simulation? Given a hard-drive full of audiobooks, music, podcasts, radio broadcasts, etc. you could let your simulation entertain themselves with vocal instructions.
+
+Then you could set up the computer to push the compression buttons (within preset safe limits). Run out of books to read? Pause the simulation (with hourly automatic unpauses, to prevent accidental permanent pausing) until the physical you can provide some more. Need to do something IO-bounded, like talk to a human or use the internet? Slow yourself down.
+
+In the long-term, your simulated self may even be able to design a body for themselves. At a high rate of compression, the lack of vision may be able to be circumvented, especially with self-navigating technology. Whether you let them have this body is another matter; you might feel squeamish even giving them access to the internet.

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: Predictablicious
+:Score: 2
+:DateUnix: 1454723634.0
+:DateShort: 2016-Feb-06
+:END:
+
+Utility maximizing models deal with values not goals, the AI figures out the goals that maximize its values. So you would give it a chess playing value (e.g. it will figure out goals that maximize the amount of chess it plays). Adding a willingness to be turned off as a value is difficult, even assuming we could state it as a value we need a way to totally order values.
+
+In this model values are stated as utility functions, i.e. functions from the state of the world to real numbers, where a bigger number is better. The AI tries to figure out goals that change the state of the world from W to W' such that utility(W) < utility(W').
+
+So we could state its utility of being outside the box is 0 and inside the box is maximized by how much chess it plays. Eventually this AI would figure out that moving everything inside the box would give it more resources to maximize its utility function (it also satisfies the "don't leave the box" value) and the world ends up being moved to inside the box.
+
+This failure mode is nontrivial because the AI would exploit whatever loopholes it can to maximize its utility as it's literally stated. For example, it could never leave the box but transform everything outside the box in computronium and use it to outsource all of its computing needs to outside while its "identify kernel" never leaves the box.

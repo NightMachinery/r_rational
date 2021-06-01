@@ -1,0 +1,477 @@
+#+TITLE: GEB Discussion #4 - Chapter #3: Figure and Ground
+
+* GEB Discussion #4 - Chapter #3: Figure and Ground
+:PROPERTIES:
+:Author: xamueljones
+:Score: 20
+:DateUnix: 1427130770.0
+:DateShort: 2015-Mar-23
+:END:
+*Gödel, Escher, Bach: An Eternal Golden Braid*
+
+This is a discussion of the themes and questions concerning the *Chapter 3: Figure and Ground*, and its dialogue, *Contracrostipunctus*.
+
+*Figure and Ground*
+
+The idea of figure and ground is a very intuitive one. We usually pay attention to the 'figure' in our daily lives. But there are also occasions where we can only see, or understand, something by its 'ground'.
+
+Examples:
+
+1) Teachers check who is not present in their classes by seeing who is present.
+
+2) When walking through a crowded space, we see the paths in the empty space we can walk through as the ground.
+
+3) Theorems which are not in the MUI-system. While it is impossible to know all non-MUI theorems in a finite amount of time, we do know that they exist. For example, all strings with more than one M, strings with no M, and strings with one M which is not the first symbol in the string.
+
+Are there other examples of figure and ground in real life?
+
+......
+
+*Recursively Enumerable Sets*
+
+“There exist recursively enumerable sets which are not recursive.”
+
+This is a slightly confusing sentence, because it uses the word recursive twice in a way that is different from the popular definition of recursive. Recursively enumerable (in computer science) means that the set can be produced by an algorithm (or a finite decision procedure). But if the set is also recursive, then it means that the complement (opposite) of the set can also be produced by an algorithm. Such sets are called co-recursively enumerable. What the above quote is saying that there are sets which are recursively enumerable, but not co-recursively enumerable.
+
+The sequence of numbers given in the book was:
+
+1 3 7 12 18 26 35 45 56 69...
+
+The numbers which are not in the sequence are:
+
+_2_4 5 6_8 9 10 11_13 14 15 16 17_19 20...
+
+Note that the difference between the numbers in the first sequence comes out as:
+
+3 -- 1 = 2, 7 -- 3 = 4, 12 -- 7 = 5, 18 -- 12 = 6, 26 -- 18 = 8, ...
+
+This is exactly the same as the second sequence.
+
+Is this sequence of numbers recursively enumerable or co-recursively enumerable?
+
+......
+
+*Contracrostipunctus*
+
+In this dialogue, Crab and Tortoise both take on the roles of famous mathematicians with Crab as David Hilbert and Tortoise as Kurt Gödel. Hilbert thought all mathematical problems were solvable and that it was possible to prove that mathematics is consistent and complete (in the system, there is no contradiction and all true theorems can be proven and derived from the initial axioms). However as we know, Gödel proved in 1931, that:
+
+1. Any consistent formal theory capable of producing arithmetical truths cannot be both consistent and complete.
+
+2. Any formal theory containing the truths of arithmetic and truths about provability has a statement of its own consistency if and only if the theory is inconsistent.
+
+As a result, Hilbert's dream was proven impossible. Back to the dialogue, Crab's idea of finding a Perfect Phonograph is the same as proving mathematics consistent and complete. Low-fidelity phonographs can be viewed as simple formal systems like the pq- system which are insufficiently powerful enough to be able to express 'arithmetical truths'. Any sufficiently powerful phonograph will have music it cannot possibly play, or in other words it will permit “unprovable theorems”.
+
+Therefore, if Godel's Incompleteness Theorem applies to the record players, then why or why not will the Record Player Omega work?
+
+The first letters of each response by Achilles and Tortoise in the dialogue spell out “*H*ofstadter's *C*ontracrostipunctus *A*crostically *B*ackwards *S*pells ‘*J*. S. Bach' ”.
+
+Note that the first letters in the above phrase spell out J S BACH backwards!
+
+Wikia Links:
+
+- [[http://godel-escher-bach.wikia.com/wiki/Chapter_3][Chapter 3]]
+
+- [[http://godel-escher-bach.wikia.com/wiki/Contracrostipunctus][Contracrostipunctus]]
+
+Coming up next on March 25th is Chapter IV: Consistency, Completeness, and Geometry.
+
+The discussion for the previous chapter is posted [[http://www.reddit.com/r/rational/comments/2zpwl4/geb_discussion_3_chapter_2_meaning_and_form_in/][here]].
+
+The discussion for the next chapter is posted [[http://www.reddit.com/r/rational/comments/30a22q/geb_discussion_5_chapter_4_consistency/][here]].
+
+[[http://www.reddit.com/r/rational/comments/2yys1i/lets_start_the_read_through/][Official Schedule]].
+
+
+** About the sequence:
+
+The sequence should be co-recursively enumerable because as shown above there is an algorithm to find the next number in the sequence (figure) as well as the next number that is not in the figure (ground).
+
+--------------
+
+About the record players:
+
+If the Record Player Omega checks if the sound would break it we can just create a record that it will fail to recognize and therefore play it and consequently break. Due to Gödel's Incompleteness Theorem we know it won't be able to determine for *all* records if the sound will break the record player.\\
+Right?
+
+--------------
+
+I found the part about the goblet amusing because it shows that even the tortoise which has fun to destroy the crab's search for the perfect record player fails to apply the same reasoning for his own belief, namely finding the perfect goblet that has no flaw. Does Hofstadter want to show that it is in the human nature to search for perfection even if it is in most cases not possible to find it?
+
+--------------
+
+Some notes:
+
+- took me a moment to find the hidden words in the figure-figure on p. 69
+- [[/u/rspeer]] has some nice material in the wiki about the music referred to in the dialog (thanks for putting it together!)
+:PROPERTIES:
+:Author: markus1189
+:Score: 5
+:DateUnix: 1427134382.0
+:DateShort: 2015-Mar-23
+:END:
+
+*** [deleted]
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1427154238.0
+:DateShort: 2015-Mar-24
+:END:
+
+**** Interesting thoughts. I did not get how the checking systems lead back in a strange loop, can you explain a little more?
+:PROPERTIES:
+:Author: markus1189
+:Score: 1
+:DateUnix: 1427189412.0
+:DateShort: 2015-Mar-24
+:END:
+
+
+*** u/Ty-Guy9:
+#+begin_quote
+  ...we can just create a record that it will fail to recognize and therefore play it and consequently break.
+#+end_quote
+
+While it is possible, (and at first I was also convinced it was provable,) I now believe it cannot be proven, from what we were given, that there exists such a record. Here's what's wrong with the steps that brought us to that idea:
+
+- First, we learned that reading a record could break the player, which in real life is quite absurd, but we accept it as part of the analogy. Note that there probably isn't a record that can break any player, as that would be doubly absurd.
+
+- Second, we can safely assume that no matter what (normal) player was manufactured, Tortoise could look up its specs and create a record that would break it. But we cannot assume that this indicates that the set of all records is infinite. It may just be that the set of all players is finite! A trivial example of such a relationship is that of rock-paper-scissors. If the player spec says rock, you look it up and say paper. Then the more expensive player says scissors, so you look it up and say rock.
+
+If the two sets are both finite, and there is no record that breaks every player, it follows that it is possible to analyze them completely to know how to change your player to be one that isn't broken by the record put upon it. :)
+
+As for Gödel's Incompleteness Theorem, the proof relies on being able to represent your theorems within the system, and we probably can't represent a record in the data of a record: sounds aren't great at describing physical objects. I'm guessing that's why the author (through Tortoise) didn't go any further with the discussion.
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 2
+:DateUnix: 1427230828.0
+:DateShort: 2015-Mar-25
+:END:
+
+
+*** u/Ty-Guy9:
+#+begin_quote
+  Does Hofstadter want to show that it is in the human nature to search for perfection even if it is in most cases not possible to find it?
+#+end_quote
+
+On a related note, I'm in the middle of replaying "Socrates Jones: Pro Philosopher", and the final 'moral' is related to the quest for perfection you've mentioned, in the context of moral philosophy. [[/s][Hover for Spoiler]]
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 2
+:DateUnix: 1427240572.0
+:DateShort: 2015-Mar-25
+:END:
+
+
+** That dialogue was the most meta thing I've ever read.
+
+[[https://xkcd.com/917/][Relevant]]
+:PROPERTIES:
+:Author: redstonerodent
+:Score: 5
+:DateUnix: 1427140467.0
+:DateShort: 2015-Mar-24
+:END:
+
+*** That's where I first learned about the META joke I posted [[http://www.reddit.com/r/rational/comments/2zhouc/geb_discussion_2_chapter_1_the_mupuzzle/cpj677t][here]]. I forgot it came from xkcd though, since it's been a couple of years since I last saw it.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 4
+:DateUnix: 1427141626.0
+:DateShort: 2015-Mar-24
+:END:
+
+
+** ＨＥＨ ＨＥＨ， ＡＩＲ ＯＮ Ｇ－ＳＴＲＩＮＧ．
+
+Now that that's out of the way, I'm mostly interested here in the likely and clear isomorphism between record players and formal systems of proof. If it exists, naturally Omega will fall like the rest.
+
+As for interesting figure and ground in real life, here's a much messier example: if you play Go, you have likely encountered a situation in which a move makes the status of a group wildly different than it previously had been. In some sense this is a sharp exchange between figure and ground. In the same vein would be Necker cubes, and those figure/ground illusions. In some sense this is a rarely spoken-of cognitive skill - being able to turn your mind inside-out.
+:PROPERTIES:
+:Author: Newfur
+:Score: 3
+:DateUnix: 1427145653.0
+:DateShort: 2015-Mar-24
+:END:
+
+*** Interesting. I don't think I'd see the black and white territory of a Go board as figure and ground -- I'd see them as a figure and an opposing figure, kind of like the black and white trees on p. 71, and the ground is the contested (or conceded to be neutral) space between them.
+
+But maybe that's what you're saying. If you're playing black, you have to simultaneously consider outcomes where a region is eventually black, and where it's eventually not-black.
+:PROPERTIES:
+:Author: rspeer
+:Score: 2
+:DateUnix: 1427152979.0
+:DateShort: 2015-Mar-24
+:END:
+
+**** Oh no, I mean in the space of whether a group is living or dead, say. A series of moves can very suddenly change that.
+:PROPERTIES:
+:Author: Newfur
+:Score: 3
+:DateUnix: 1427156771.0
+:DateShort: 2015-Mar-24
+:END:
+
+***** Sure, I can see that analogy.
+
+Still fits pretty well into the p. 71 diagram, I'd say. A group of yours that's dead isn't just ground, it's going to become part of the other player's figure.
+
+Black and white are both spreading out their living groups like the trees of theorems and their negations. The points outside them are uncertain, and may or may not become living -- it's up to black or white to prove that the points are theirs.
+:PROPERTIES:
+:Author: rspeer
+:Score: 1
+:DateUnix: 1427172311.0
+:DateShort: 2015-Mar-24
+:END:
+
+
+** I find this grouping of chapters and dialogues kind of strange. Each dialogue usually introduces concepts that are going to be in the /following/ chapter, so we've been off-cycle with the dialogues from the start.
+
+On the other hand, it seems like it's been working out fine, giving time to discuss the introduced concepts informally before discussing them more formally in the following thread. Is this intentional?
+:PROPERTIES:
+:Author: rspeer
+:Score: 3
+:DateUnix: 1427152345.0
+:DateShort: 2015-Mar-24
+:END:
+
+*** [deleted]
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1427154650.0
+:DateShort: 2015-Mar-24
+:END:
+
+**** I do love how the dialogues give you a break from the formalism. I was just reading about teaching, and how every teacher needs a sense of humor to break up the seriousness. I would also substitute: a sense of fun, a time for a break or a rest, and a 'ground'. The dialogues provide the ground for the formalism of the body of the chapters, otherwise they might feel as crowded as some of Escher's recursively tiled paintings.
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 2
+:DateUnix: 1427231516.0
+:DateShort: 2015-Mar-25
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1427155348.0
+:DateShort: 2015-Mar-24
+:END:
+
+*** There's the one Hofstadter is leading to: the set of theorems of any sufficiently powerful mathematical system.
+
+You can enumerate all theorems by applying all possible rules methodically. (It will take an extremely long time to get to any theorem in particular, but you have forever.) You can't enumerate all non-theorems.
+:PROPERTIES:
+:Author: rspeer
+:Score: 3
+:DateUnix: 1427169144.0
+:DateShort: 2015-Mar-24
+:END:
+
+**** Yeah, not even my checking each prospective non-theorem against the set of theorems, because when the set of theorems doesn't form a natural hierarchy you can't guarantee that it will take a finite time (for any given prospective non-theorem) to go through all the theorems which might be relevant. Hope that makes sense.
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 2
+:DateUnix: 1427232371.0
+:DateShort: 2015-Mar-25
+:END:
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1427156272.0
+:DateShort: 2015-Mar-24
+:END:
+
+*** [[http://imgs.xkcd.com/comics/form.png][Image]]
+
+*Title:* Form
+
+*Title-text:* 'This space intentionally left blank' is less immediately provocative but more Hofstadterially confusing.
+
+[[http://www.explainxkcd.com/wiki/index.php/608#Explanation][Comic Explanation]]
+
+*Stats:* This comic has been referenced 8 times, representing 0.0140% of referenced xkcds.
+
+--------------
+
+[[http://imgs.xkcd.com/comics/godel_escher_kurthalsey.jpg][Image]]
+
+*Title:* Godel, Escher, Kurt Halsey
+
+*Title-text:* I love the idea here, though of course it's not a great-quality drawing or scan.
+
+[[http://www.explainxkcd.com/wiki/index.php/24#Explanation][Comic Explanation]]
+
+*Stats:* This comic has been referenced 1 time, representing 0.0018% of referenced xkcds.
+
+--------------
+
+[[http://imgs.xkcd.com/comics/two_mirrors.png][Image]]
+
+*Title:* Two Mirrors
+
+*Title-text:* If you actually do this, what really happens is Douglas Hofstadter appears and talks to you for eight hours about strange loops.
+
+[[http://www.explainxkcd.com/wiki/index.php/555#Explanation][Comic Explanation]]
+
+*Stats:* This comic has been referenced 19 times, representing 0.0334% of referenced xkcds.
+
+--------------
+
+[[http://imgs.xkcd.com/comics/hofstadter.png][Image]]
+
+*Title:* Hofstadter
+
+*Title-text:* "This is the reference implementation of the self-referential joke."
+
+[[http://www.explainxkcd.com/wiki/index.php/917#Explanation][Comic Explanation]]
+
+*Stats:* This comic has been referenced 419 times, representing 0.7356% of referenced xkcds.
+
+--------------
+
+^{[[http://www.xkcd.com][xkcd.com]]} ^{|} ^{[[http://www.reddit.com/r/xkcd/][xkcd sub]]} ^{|} ^{[[http://www.reddit.com/r/xkcd_transcriber/][Problems/Bugs?]]} ^{|} ^{[[http://xkcdref.info/statistics/][Statistics]]} ^{|} ^{[[http://reddit.com/message/compose/?to=xkcd_transcriber&subject=ignore%20me&message=ignore%20me][Stop Replying]]} ^{|} ^{[[http://reddit.com/message/compose/?to=xkcd_transcriber&subject=delete&message=delete%20t1_cpok39x][Delete]]}
+:PROPERTIES:
+:Author: xkcd_transcriber
+:Score: 1
+:DateUnix: 1427156287.0
+:DateShort: 2015-Mar-24
+:END:
+
+
+** There's a short story, "[[http://en.wikipedia.org/wiki/The_Riddle_of_the_Universe_and_Its_Solution][The Riddle of the Universe and its Solution]]" by Christopher Cherniak, based on the premise that there is a Godel sentence for the human brain. The story appears in /The Mind's I/, a compilation of philosophy edited by Douglas Hofstadter and Daniel Dennett.
+
+In the story, the human brain's Godel sentence has a similar effect to Tortoise's records -- it's an abstract concept that anyone who thinks about it falls into a permanent coma.
+
+(We haven't defined what a Godel sentence is yet, aside from briefly in the introduction, so I'll summarize that it's a particular statement in a mathematical system that is true but unprovable, or false but provable, thus providing an example of why the system is either incomplete or inconsistent.)
+
+Do you think that Godel's theorem applies to the human brain? So far we believe that we can think our way out of any paradox we encounter, but if the brain can be modeled mathematically, that would suggest there are thoughts that the human brain cannot think. (Or, in Cherniak's more drastic premise, we /can/ think them, but destroy ourselves in doing so.)
+:PROPERTIES:
+:Author: rspeer
+:Score: 1
+:DateUnix: 1427173774.0
+:DateShort: 2015-Mar-24
+:END:
+
+*** ***** 
+      :PROPERTIES:
+      :CUSTOM_ID: section
+      :END:
+****** 
+       :PROPERTIES:
+       :CUSTOM_ID: section-1
+       :END:
+**** 
+     :PROPERTIES:
+     :CUSTOM_ID: section-2
+     :END:
+[[https://en.wikipedia.org/wiki/The%20Riddle%20of%20the%20Universe%20and%20Its%20Solution][*The Riddle of the Universe and Its Solution*]]: [[#sfw][]]
+
+--------------
+
+#+begin_quote
+  */The Riddle of the Universe and Its Solution/* is a [[https://en.wikipedia.org/wiki/Short_story][short story]] written by [[https://en.wikipedia.org/wiki/Christopher_Cherniak][Christopher Cherniak]] appearing in the 1981 book /[[https://en.wikipedia.org/wiki/The_Mind%27s_I][The Mind's I]]/. It describes a [[https://en.wikipedia.org/wiki/Research][research]] project in [[https://en.wikipedia.org/wiki/Computer_science][computer science]] which includes content that produces [[https://en.wikipedia.org/wiki/Catatonia][catatonia]] in anyone who views it. The material is harmful only if comprehended by its victim---in some cases there is an [[https://en.wikipedia.org/wiki/Incubation_period][incubation period]] before an exposed subject reaches the fatal conclusion. Often, the last thing said by such individuals before slipping irrevocably into a [[https://en.wikipedia.org/wiki/Coma][coma]] is "Aha!"
+#+end_quote
+
+--------------
+
+^{Interesting:} [[https://en.wikipedia.org/wiki/Christopher_Cherniak][^{Christopher} ^{Cherniak}]] ^{|} [[https://en.wikipedia.org/wiki/David_Langford][^{David} ^{Langford}]] ^{|} [[https://en.wikipedia.org/wiki/The_Mind%27s_I][^{The} ^{Mind's} ^{I}]] ^{|} [[https://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker%27s_Guide_to_the_Galaxy][^{Phrases} ^{from} ^{The} ^{Hitchhiker's} ^{Guide} ^{to} ^{the} ^{Galaxy}]]
+
+^{Parent} ^{commenter} ^{can} [[/message/compose?to=autowikibot&subject=AutoWikibot%20NSFW%20toggle&message=%2Btoggle-nsfw+cpothmg][^{toggle} ^{NSFW}]] ^{or[[#or][]]} [[/message/compose?to=autowikibot&subject=AutoWikibot%20Deletion&message=%2Bdelete+cpothmg][^{delete}]]^{.} ^{Will} ^{also} ^{delete} ^{on} ^{comment} ^{score} ^{of} ^{-1} ^{or} ^{less.} ^{|} [[http://www.np.reddit.com/r/autowikibot/wiki/index][^{FAQs}]] ^{|} [[http://www.np.reddit.com/r/autowikibot/comments/1x013o/for_moderators_switches_commands_and_css/][^{Mods}]] ^{|} [[http://www.np.reddit.com/r/autowikibot/comments/1ux484/ask_wikibot/][^{Magic} ^{Words}]]
+:PROPERTIES:
+:Author: autowikibot
+:Score: 1
+:DateUnix: 1427173822.0
+:DateShort: 2015-Mar-24
+:END:
+
+
+*** I think Goedel's Theorem doesn't apply to the human mind, or in fact, to any inductive reasoner. We just don't reason from a fixed axiom set and have a sense of truth separate from truth, so we seem able to do Turing's ordinal logics.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1427229706.0
+:DateShort: 2015-Mar-25
+:END:
+
+**** I'm confused by "inductive" in that context, and by "Turing's ordinal logics". Hopefully that's just me. Everything else I get -- 'we aren't fundamentally doing "formal logic" in our minds' seems to be what you're saying.
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 1
+:DateUnix: 1427277844.0
+:DateShort: 2015-Mar-25
+:END:
+
+***** You've got the gist, but Google is your friend regarding Turing's PhD thesis on ordinal logics and Feferman's paper on the completeness of those.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1427279033.0
+:DateShort: 2015-Mar-25
+:END:
+
+
+*** Interesting. So if the human brain can be encoded finitely, then it is both finite and, by Gödel's Incompleteness Theorem, cannot comprehend an infinite reality.
+
+On the other hand, if our intuition is correct that we can think ourselves out of any paradox, i.e., that we could comprehend our (intuitively infinite) reality, given infinite time to do so, then it follows that either the brain itself is infinite, or our thinking/consciousness is not all contained within the brain.
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 1
+:DateUnix: 1427234036.0
+:DateShort: 2015-Mar-25
+:END:
+
+
+** It's really frustrating not being able to get a Kindle copy, so I'm stuck not reading the same book as everyone else. /Plato's Camera/ just isn't fun or cool the way GEB is.
+
+Yes, I've been left alone long enough to get earnest and start trying to participate in group activities. Tsuntsun reserves exhausted. Please send help.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1427230409.0
+:DateShort: 2015-Mar-25
+:END:
+
+*** I'm confused by your references. What are "tsustsun reserves"? All I can think of is that it's a memetic mutation of 'tsundere', but I don't see how it could have changed.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1427245415.0
+:DateShort: 2015-Mar-25
+:END:
+
+**** "Tsundere" indeed has two halves:
+
+"Tsuntsun" -- basically, a "bristled" or "spiny" attitude of feigned anger or uncaring. "Idiot! It's not like I care!" is the characteristic tsuntsun line.
+
+"Deredere" -- almost literally means "sweet", in the personal sense. The underlying attachment to others over which the anger is being feigned. "But... thanks anyway" is the deredere line that comes after the tsuntsun line above.
+
+In combination, think of a tsundere as someone whose attitude towards varies across the warm emotions: sometimes caring and sweet, sometimes enraged, never actually as detached as the character claims to be in affectation. The post indicated that I'm running short on ability to act tsuntsun towards people as I often do.
+
+So yeah.
+
+(Stupid girlfriend, pointing out that I fit a cliched character type! At least I haven't dyed my hair and crossed the line from "bookish" to "pony princess"! </exemplifying one's tropes>)
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1427262695.0
+:DateShort: 2015-Mar-25
+:END:
+
+
+*** u/Ty-Guy9:
+#+begin_quote
+  not reading the same book as everyone else
+#+end_quote
+
+Do you mean you're reading the PDF version with the flaws all through it? That's what I'm reading. My mental autocorrect is almost subconscious at this point, in all but the more dramatic cases. I recommend perseverance. But then, I'm also someone who really doesn't mind watching widescreen movies on a regular screen.
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 1
+:DateUnix: 1427250538.0
+:DateShort: 2015-Mar-25
+:END:
+
+**** I mean that I've got a .djvu somewhere, but because it's on my computer I can't keep up.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1427262902.0
+:DateShort: 2015-Mar-25
+:END:

@@ -1,0 +1,46 @@
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 2
+:DateUnix: 1508561714.0
+:DateShort: 2017-Oct-21
+:END:
+
+Second weekly-ish update on [[https://docs.google.com/document/d/1vIWf3Nqudgh18j4RK8bm4zOTSKUFl6l9Igvdg1adzGE][The Tesseract Engine]], my ongoing game engine project.
+
+--------------
+
+EDIT: The GDD is now officially complete... um, complete-ish. I still have to add illustrations.
+
+EDIT: Done.
+
+The [[https://docs.google.com/document/d/1t32OHPtbsFtlOi70zNL5RrwwPbuZhkBHfZbRScFcrhg][almost-final version of the Game Design Document]] is out. I need to either complete two sections or leave them unfinished, do some proof-reading, and add some screenshot and images, but I will not otherwise modify this document for at least a month after today.
+
+It's a very long document (roughly 50 pages) that goes into a great amount of details on the engine, the editor, what dynamics I want to encourage, what I need to research, and which features I want to have. It went through something like four drafts, and took month for me to write, and have written almost no code so far.
+
+Now, that is by itself a very, very worrying sign. The standard way to approach a game project is to smart small. You're not supposed to spend months planning, you're supposed to make minimalist, flexible plans and make a prototype as soon as you can to test your idea. The world of game development is full of enthusiastic people full of dreams who spend six months detailing variations of their great ideas, then 3 weeks realizing their ideas are actually terrible and only work on paper.
+
+Given that I know that, there are three reasons I spent a lot of time planning anyway:
+
+- I honestly think I'm way better at planning than the average amateur game designer. I have worked on software projects and games before, both successes and failures; I think I have a fairly good instinct for differentiating "good idea on paper" vs "good idea in practice". Part of the reason I took so long to design this thing is that I wrote a lot of plans which, on second examination, didn't feel like they were actually going to help me implement the thing.
+
+- The classic trap when writing a GDD is to write features, when what you should do is write objectives and dynamics. You make decisions like "and then character X will have a +5 sword, and the sword will be able to do Y", even though you're not able to visualize the impact these decisions will have. The GDD I wrote has considerations like "I want the user to feel X", or "I want the user to be able to do X in context Y" or "I want to avoid trap X that I've seen other projects fall into", which I think are actually useful to write down in advance.
+
+- I need it for motivation. When I begin a project, I have enough motivation to power through difficulties; when the project is close to completion, I can motivate myself by thinking of finishing what I've started. The biggest motivation drain is when I'm in the middle of a project, I've worked on it for 4 days/weeks/months, and I don't feel any closer to my objective. At this point, I think having a framework of thoughts and a project philosophy already written will be a life safer, because it will give me milestones and a sense of progression. It easier to feel the progress I'm making if I feel like I have a global view of what the project is about.
+
+That being said, I'm still worried I spent too much time planning, which is why I'm officially stopping today. For the near future, I'll be doing as much implementing as I can.
+
+In that spirit, I won't be making a long list of milestones and deadlines. I have one milestone ([[https://docs.google.com/document/d/18fdaeiuhH3kNYXS8nM29aAbvC0AFzyr15oJMIGIVlwU][described here]]) with no deadline, and once it's done I'll make another.
+
+Next step: Have a game engine where the Player can walk around, jump around, add and remove blocks.
+
+--------------
+
+This is a bit of a false start, since I was supposed to update this week.
+
+I'm still uncertain about how to this. I want to set up these regular updates to force myself to work on the project regularly, to make it into an habit I have, but honestly, I've never had much success with commitment mechanism. I think I'm going to sort of compromise and commit to updating every week, but if I haven't worked on the project I'll just talk about whatever comes to mind instead; the idea being that I never really forget about the project enough that it's hard to get back into it.
+
+Anyway, I'm going to commit to several people I know, friends, colleagues, and on several subreddits to update. We'll see how long it lasts.
+
+--------------
+
+I welcome all questions, criticisms, and absolutely any feedback you have. Despite (or because of) the amount of planning I've done, I'm going into this pretty much blind, so I'll take whatever advice I can get.

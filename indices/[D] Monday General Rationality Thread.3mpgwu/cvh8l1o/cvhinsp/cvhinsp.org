@@ -1,0 +1,11 @@
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1443485653.0
+:DateShort: 2015-Sep-29
+:END:
+
+#+begin_quote
+  Do any of you know of a practical, online, and iterative Bayesian calculator that is easy to use? There are calculators and apps that function partially to demonstrate Bayes' theorem, but they aren't actually helpful in successive multiple calculations that utilize the posterior probability as a new prior probability for a new LR(-)/(+).
+#+end_quote
+
+Well, do you have discrete probability mass functions, or conjugate families of probability density functions? Because otherwise, you're into the wide, wide realm of computational Bayes methods, which are fucking difficult.

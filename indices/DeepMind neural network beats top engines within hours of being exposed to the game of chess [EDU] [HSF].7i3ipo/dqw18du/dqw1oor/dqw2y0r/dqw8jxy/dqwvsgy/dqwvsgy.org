@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: monkyyy0
+:Score: 0
+:DateUnix: 1512671931.0
+:DateShort: 2017-Dec-07
+:END:
+
+I disagree.
+
+If you train a (forward fed)neural net on trying to predict the outcome of factorial on training data for 1-100; its going to be very wrong about what 1000 is.
+
+Its a naturally recursive problem while the forward fed part of it means it can't use loops.
+
+The minmax algorithm is recursive and a natural part of turn based games

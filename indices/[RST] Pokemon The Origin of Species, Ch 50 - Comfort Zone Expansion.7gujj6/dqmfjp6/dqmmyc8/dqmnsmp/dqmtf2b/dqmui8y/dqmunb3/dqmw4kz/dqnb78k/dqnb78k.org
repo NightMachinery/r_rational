@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 2
+:DateUnix: 1512194744.0
+:DateShort: 2017-Dec-02
+:END:
+
+Ok, I see how a different amount of Tier 1 reports changes the outcome. Can you walk me through what makes this situation different from the cancer one?
+
+Instead of this:
+
+#+begin_quote
+  1% of women at age forty who participate in routine screening have breast cancer. 80% of women with breast cancer will get positive mammographies. 9.6% of women without breast cancer will also get positive mammographies. A woman in this age group had a positive mammography in a routine screening. What is the probability that she actually has breast cancer?
+#+end_quote
+
+I have this:
+
+#+begin_quote
+  12% of reported Tyranitar events are Tier 1. 71% of Tier 1 events will be reported as Tier 1. 24% of Tier 2 events will also be reported as Tier 1. A Tyranitar has been reported as Tier 1. What is the probability that it is actually Tier 1?
+#+end_quote
+
+Neither mentions the amount of actual women who get tested, so why does it matter for the second one? Is it because in the story example there's a completely separate test (Tier 2 reports) that can give a false positive, whereas in the cancer example the same test will either give the false negatives or the false positives?
+
+Edit:
+
+Or is it because of the age group thing? Am I essentially saying:
+
+#+begin_quote
+  1% of women at age forty who participate in routine screening have breast cancer. 80% of women with breast cancer will get positive mammographies. 9.6% of women without breast cancer will also get positive mammographies. A woman *not in this age group* had a positive mammography in a routine screening. What is the probability that she actually has breast cancer?
+#+end_quote
+
+By mixing non-Tyranitar-specific "Tests" while the prior is based specifically on Tyranitar?

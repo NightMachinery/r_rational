@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: Ristridin1
+:Score: 1
+:DateUnix: 1512926691.0
+:DateShort: 2017-Dec-10
+:END:
+
+I just saw the new version, and there's still something odd. Namely, as far as I can see, the total probability of a Tyranitar Tier 1 event can not possibly be 2/17 with the given conditional probabilities.
+
+I'll write T1 for Tier 1 event, TT1 for Tyranitar Tier 1 event, R1 for Tier 1 report, TR1 for a Tyranitar event reported as Tier 1 (and likewise T2, TT2, R2, TR2).
+
+Here's the argument: You know P(TT1) = P(TT1 | TR1)*P(TR1) + P(TT1 | TR2)*P(TR2). Assume P(TT1 | TR1) = P(T1 | R1) = 0.79 and P(TT1 | TR2) = P(T1 | R2) = 0.33 (this is where things will go wrong). We have P(TR1) = 1-P(TR2). We find P(TT1) = 0.79 X + 0.33 (1-X) = 0.33 + 0.46X. Since X is between 0 and 1, at least 33% of all Tyranitar events should be Tier 1, which is larger than 2/17. Actually, I didn't need to do this computation at all: If 33% of reported Tier 2 events are Tier 1 and 79% of reported Tier 1 events are Tier 1, then at least 33% and at most 79% of all events are Tier 1.
+
+The reason for different notation for Tier 1 and Tyranitar Tier 1 should now be clear. In the chapter, Leaf starts with P(T1) = 0.64 and then moves on to P(T1) = 2/17. The latter should be P(TT1) = 2/17.
+
+Of course, there's a reasonable argument to be made that P(TT1|TR1) does not equal P(T1 | R1) = 0.79 etc. But in that case, your results from the calculation of P(R1|T1) etc. can not be used to say anything about P(TR1 | TT1).

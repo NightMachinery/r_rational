@@ -1,0 +1,46 @@
+:PROPERTIES:
+:Author: throwawayIWGWPC
+:Score: 2
+:DateUnix: 1427524548.0
+:DateShort: 2015-Mar-28
+:END:
+
+*TL;DR:*
+
+DS9 likely vastly overestimated the amount of data required to store an individual, even when including the amount of information needed to store brain patterns at the quantum level.
+
+A device the size of a cell phone can hold about a hundred-thousand times more data than the entire human race has created (including books, images, and video) if said device had the information density of DNA.
+
+--------------
+
+I just read that the human body, excluding the non-human microbes within each person, contains 150 trillion GB of information as DNA. And mass-wise, DNA is a negligible portion of the body.
+
+Here's an approximate calculation using DNA's information density. Hopefully, I make no errors! ([[http://en.wikipedia.org/wiki/Yottabyte][I double-checked with Wikipedia. I'm not far off, so I think I did things correctly.]])
+
+Data per human in GB: 10^{14} GB
+
+Mass of DNA per person: 10 g
+
+Information Density: 10^{13} GB g^{-1}
+
+To do the calculation, let's assume a futuristic replicator storage device is about the size of a cell phone, which has a volume of about 10^{2} cm^{3}. We'll also need to identify a plausible material so we can use its density. Since DNA is organic material, it probably contains a lot of carbon, so I'll use the density of graphite, which is carbon in its standard state at room temperature.
+
+Graphite's density is about 10^{0} g cm^{-3} at room temperature.
+
+The storage of a cell phone sized device with DNA-like information density and graphite-like physical density:
+
+= (Information Density) (Physical Density) (Volume of Object)
+
+= (10^{13} GB g^{-1}) (10^{0} g cm^{-3}) (10^{2} cm^{3})
+
+= 10^{15} GB per cellphone
+
+= 10^{24} B, or a yottabyte of information
+
+For comparison, it's estimated that humans have created about 10^{19} B of information, including all books and digital media, which could all fit in a billion times over inside of this cell phone-sized, DNA-like device.
+
+Data per Human in bytes: [[http://bitesizebio.com/8378/how-much-information-is-stored-in-the-human-genome/]]
+
+Data per Human by mass: [[http://www.quora.com/What-is-the-total-mass-of-DNA-in-the-average-65kg-human-body]]
+
+Estimation of All Information in bytes: [[http://www.lesk.com/mlesk/ksg97/ksg.html]]

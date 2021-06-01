@@ -1,0 +1,45 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1446758999.0
+:DateShort: 2015-Nov-06
+:END:
+
+#+begin_quote
+  Sure, it tells me you're set in your ways, and your brain is all calcified and gross ;p
+#+end_quote
+
+I was really going more for "people who know what they're talking about think that what /you're/ talking about is incoherent and/or wrong", but sure, we can go with 'calcified and gross'.
+
+#+begin_quote
+  Admittedly that's predicated on a microservice architecture being a good idea. Personally, I think it's really powerful. You know about the cathedral and the bizarre? It brings bizarre style development to projects that used to have to be cathedral for practical reasons.
+#+end_quote
+
+First, it's /bazaar/. Second, [[http://www.catb.org/esr/writings/cathedral-bazaar/cathedral-bazaar/index.html#catbmain][The Cathedral and the Bazaar]] is not related to what you're talking about. It talks about how projects are organized. But, okay, presumably you're using it as a metaphor for 'large application that does something significant' versus 'lots of trivial little Legos that can be bolted together to do significant things.' Congrats, you have reinvented the *nix approach.
+
+#+begin_quote
+  #+begin_example
+    Clarify whether you're talking about caching or physical storage. 
+    You're floating between the two levels and handwaving a lot of the challenges
+  #+end_example
+
+  You don't need to have the entire thing planned out in advanced. It's important to have a system that is flexible enough to handle an evolving workload. But premature optimization is harmful.
+#+end_quote
+
+The hell you don't. Sure, your specification can evolve as you go, but you haven't even settled on a specific topic. You started off talking about filesystems, then you shifted to caching, now you're talking about microservices. Pick one.
+
+Stop giving random incoherent examples and tell us what the exact problem is that you're trying to solve. If that problem is just "I want to let multiple people write to the same data object at the same time", then great. That's a trivial problem and easy to solve.
+
+#+begin_quote
+  I don't think that context switching is going to eat too much,
+#+end_quote
+
+Many very smart OS developers would disagree with you.
+
+#+begin_quote
+  especially since capnproto is going to have shared memory rpc stuff.
+#+end_quote
+
+'Shared memory RPC' is a contradiction. The definition of RPC is 'causing code to execute in a separate memory space.'
+
+I really can't tell if you're just trolling at this point. Unless you can actually clarify what your problem is that you want fixed, I'm going to assume you are.

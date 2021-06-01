@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: trishume
+:Score: 1
+:DateUnix: 1448909936.0
+:DateShort: 2015-Nov-30
+:END:
+
+Indeed, but I'm not sure I could safely let it talk to me in any way, code is close enough to prose. At that point it is basically the AI box problem with the additional constraint that any arguments from the AI must be valid Agda. I'm pretty sure I could precommit to not be corrupted, but not sure enough to actually try.
+
+You couldn't just type check the code it gave and not read it because without reading it and fully trying to understand it you don't know if it is proving what it claims to prove.
+
+Also what if the proof is enormous? What if it finds a bug in your proof interpreter?

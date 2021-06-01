@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: eternal-potato
+:Score: 1
+:DateUnix: 1501361208.0
+:DateShort: 2017-Jul-30
+:END:
+
+If so, store all keys at a single secure storage location (SL). Secure teleportation stations (TS) send authenticated requests there for a TK via 'free' inorganic teleports, and can receive the TK if the requests is deemed sufficiently important, or a rejection response via the same free teleport. If the TK is received it is used to transport the client to the the TS they want to go to, where the spent TK is sent back to SL to recharge via the same free teleport.
+
+At no point TK is under control of a malicious client, so it cannot be stolen unless the TSs involved are compromised.
+
+SL controls all the keys at all times (the time TK spends on the trip described above is negligible), and so the problem reduces to prioritizing requests.
+
+For the general case I'd suggest an auction-like system where bids for a TK are made by sending money (for private clients) or an authentication token with reason for request (for government officials or special services). Limit each auction round by maximum time after a recharged TK becomes available and maximum number of bids, and whenever either limit is hit send the TK to the winner's TS, and send back money and authentication tokens of all other bidders.
+
+The protocol can be augmented with queries to SL for current state of the key pool and current round so that clients can chose their bids more intelligently.
+
+SL can keep some keys reserved for government use, or employ any number of other complicated special case rules.

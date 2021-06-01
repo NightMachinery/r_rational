@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: derefr
+:Score: 1
+:DateUnix: 1507839919.0
+:DateShort: 2017-Oct-12
+:END:
+
+Did you not notice that I actually used the words "transfer learning" in my post? :P
+
+#+begin_quote
+  If the parallel is purely conceptual---for example, going from Street Fighter to Puzzle Fighter to Puzzle Strike---then it's unlikely children will have any *transfer learning* to apply
+#+end_quote
+
+The AIs we have, like human children, can build conceptual hierarchies that can be cut off at the leaves and then quickly re-trained to do something else, just like going from a /Mario/ game to a /Sonic/ game (e.g. they will learn how to jump around obstacles, and then they will re-apply that on the new game.)
+
+We /don't/ have models that can go from /Puzzle Fighter/ to /Puzzle Strike/, because they share no low-level operations in common---they're different genres of game (one is turn-based and involves buying chips; the other involves reflex-based movement of blocks) which are only analogous under a general /high-level/ understanding of how the game's rules translate into game-theoretic reward matrices and the like.
+
+Children don't /think/ about things like game-theoretic reward matrices. You could teach them to, sure, but you'd just be teaching them how to apply a single formalism by rote (like New Math attempted when teaching children set theory in the 1970s), rather than giving them a /principle/ they could apply.
+
+Children, according to Piaget, just don't have the hardware to derive a general formal-operational principle (game theory) from a set of examples (games.)
+
+This might, of course, be a simple matter of scale. Our ML models have orders of magnitude less training data applied to them than the average human has had experiential sense-data applied to it over even a ten-year lifetime. Our existing models may be capable of transfer learning on the level of inventing game theory, if given 100x or 1000x more data to chew. Children's brains aren't all /that/ different from adult brains (other than a bit of synaptic pruning, but that occurs long after the formal operational stage), so indeed it can just be that they're lacking the required experience. But my understanding is that, to get that (dense, sense-data-with-error-signals) experience, they'd have to actually live the extra time. There's no shortcut available in the form of thinking harder about the sense data one already had available, or watching someone else's life pass by in VR, or whatever else; unless they're /testing predictions/ and receiving sense data /with correlated error signals/, they're just getting the sort of sparse training that current AI models get, rather than the sort of uniquely-good training data humans get.

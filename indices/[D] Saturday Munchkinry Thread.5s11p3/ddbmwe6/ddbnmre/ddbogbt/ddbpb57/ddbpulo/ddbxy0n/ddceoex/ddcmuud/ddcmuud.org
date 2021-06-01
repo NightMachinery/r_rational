@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: captainNematode
+:Score: 2
+:DateUnix: 1486274248.0
+:DateShort: 2017-Feb-05
+:END:
+
+Just to clarify really quickly, I didn't mean that the encrypted packages would be files titled secretEncryptedMagicInformation.txt or whatever and think there would be plenty of ways to get info out sneakily. For example, I just converted the text of Terry Pratchett's book [[https://en.wikipedia.org/wiki/Maskerade][/Maskerade/]] into binary, which I used to construct the [[https://en.wikipedia.org/wiki/Binary_image][binary image]] seen [[https://i.imgur.com/BbjhRoM.png][here]]. I then took a square from a poster from the [[https://en.wikipedia.org/wiki/Masquerade_(2012_film)][2012 Korean film /Masquerade/]] (seen [[https://i.imgur.com/IqAry1T.jpg][here]]) and overlaid the former with 5% opacity on top of the latter to produce [[https://i.imgur.com/SXIIxl9.jpg][this image]]. It would be pretty trivial, I think, to return the first image from the second and third (I exported as PNG, a lossless format), and should be just as trivial to use 1% opacity or less (I went with 5% for the change to be noticeable to the naked eye, but not otherwise distinctive -- it just looks a bit grainier). And then returning the original binary string and converting it back into English from /that/ image is a task for the first couple months of an intro to programming class (as in I recall doing something similar to learn image I/O basics).
+
+Of course, the text of the Pratchett book was not at all encrypted, but it easily could be made to be. And then it would /really/ just look like extra noise.
+
+So, with your popularity, you could have a few hundred thousand people around the world download a bunch of images, some of which are duplicates of each other with occasionally very subtle graininess (hiding the actual info in one image and the cypher in another, say). Then, announce in some public, widely accessible place that you've hidden a secret binary message in your images, and that you can find the key in those two images of a lock you posted a week ago (one is pretty grainy, you say with a wink ;]). That info is short and easy to disseminate, and you'll already have a bajillion copies of your demasqueradement floating around. Hell, offer a decent cash prize to really motivate people. You can do this with the "scavenger hunt cover story" to get people primed first, or just go straight for disseminating secret magic knowledge.
+
+And I spent all of 10 minutes thinking about how to do this and then doing it -- I'm sure someone with actual training in cryptography, information security, etc. would be able to come up with something much more sophisticated.

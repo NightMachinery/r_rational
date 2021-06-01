@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 0
+:DateUnix: 1512681744.0
+:DateShort: 2017-Dec-08
+:END:
+
+#+begin_quote
+  I'll give you an example. Say we're comparing two other engines, Komodo and Houdini. When we compare them, we give them the same hardware and say "whoever wins the most games is better".
+#+end_quote
+
+What you're missing is that /the only reason this sort of hardware comparison is even possible is because Komodo and Houdini have the same architecture/. Yes, there are differences in implementation (which is what leads to the difference in strength between the two), but both use alpha-beta search with null-move pruning, both use classical, hand-written evaluation functions, etc. In short, matches between traditional chess engines suffer from none of the "apples-and-oranges" issues I described earlier, because traditional chess engines are all actually /extremely similar/ to each other.
+
+AlphaZero, on the other hand, operates using a tremendously different architectural paradigm--one that requires it to use a /different kind of processor/. As [[/u/Veedrac]] pointed out [[https://www.reddit.com/r/rational/comments/7i3ipo/deepmind_neural_network_beats_top_engines_within/dqwp0to/][below]], TPUs are /not/ simply "CPUs, except faster" as you seem to be making them out to be; it's more complicated than that. So at risk of sounding like a broken record, /you are still trying to compare apples and oranges/, and the Komodo-Houdini comparison you brought up doesn't address this at all, really.
+
+So, with all that having been said, what do you do if you're DeepMind and you find yourself in a situation where you'd /like/ to be able to compare your NN-based design against a top engine, but there's no real way to procure "equalized" hardware? You do /exactly what they ended up actually doing/: you give Stockfish strong-enough hardware that its absolute speed advantage--in terms of nodes searched per second--is far greater than AlphaZero's, in order to demonstrate that AlphaZero's competitive advantage does /not/ come from superior search. You do /not/ artificially handicap your NN-based design by forcing it to play using normal CPUs that don't efficiently perform the TensorFlow operations necessary to run the neural network, all because Stockfish happens to be using CPUs and you want to be "fair". (Likewise, you don't handicap /Stockfish/ by forcing it to play on your proprietary TPUs, which don't natively support many of the operations /it/ uses.)
+
+And then you publish the games, without worrying particularly much about whether this particular version of Stockfish was "fast enough", because you've /already successfully demonstrated what you've set out to demonstrate/: that a NN-based approach is capable of yielding significantly better results than a classical engine, /even when said classical engine is evaluating many, many more positions per second/. That's all there is to it.

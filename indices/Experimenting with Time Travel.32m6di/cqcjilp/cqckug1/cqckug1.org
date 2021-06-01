@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1429055884.0
+:DateShort: 2015-Apr-15
+:END:
+
+The following cases occur:
+
+1) if no one is observing the device, then the light flashes right before the button is pressed. The duration of time in between light and button is constant and at a few milliseconds (basically just enough time for a human observer to notice the light clearly flashing before the button is pressed, and not so close to think they are simultaneous events).
+
+2) If someone is observing, then the time frame becomes far more inconsistent. One flash may occur minutes before the button being pressed even as a second flash is occurring immediately before the button is being pressed. If the observer is promising to not interfere in any possible case, then case #1 occurs instead.
+
+The maximum range is two hours and the minimum range is the same as case #1 with a few milliseconds. Statistically the minimum range occurs the most often with a drop-off to the maximum range. +The graph from the maximum to minimum vs the frequency looks like a reversed logarithmic shape. Google "ln(C-x)" for the general shape (C is any constant).+ I made an error in my conceptualization of the graph and should have said [[http://en.wikipedia.org/wiki/Logistic_function#Logistic_differential_equation][logistic functions]].
+
+The maximum of two hours is not a hard limit, but rather a 'soft' limit. It looks like the signal can be sent further, but two hours is the limit observed so far in your experiment.

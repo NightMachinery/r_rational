@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: Veedrac
+:Score: 6
+:DateUnix: 1512664244.0
+:DateShort: 2017-Dec-07
+:END:
+
+#+begin_quote
+  [[https://i.imgur.com/JQQXl9J.png]]
+
+  Figure 2: Scalability of AlphaZero with thinking time, measured on an Elo scale. *a* Performance of AlphaZero and Stockfish in chess, plotted against thinking time per move.
+#+end_quote
+
+As you can see, the asymptotes are different. Since the x-axis is a log plot, a constant factor difference in hardware throughput corresponds to a horizontal translation. You can see that you would presumably need a translation of much greater than 100x (about 2/3 the width of the graph) for Stockfish to catch up in this range, and because the asymptotes are different this would not hold for long.
+
+I am not sure how hash tables come into this, but I believe making it larger would only act as a small linear speed improvement, so the above analysis holds.
+
+In other words, AlphaZero is intrinsically stronger in the limit of feasible computation.

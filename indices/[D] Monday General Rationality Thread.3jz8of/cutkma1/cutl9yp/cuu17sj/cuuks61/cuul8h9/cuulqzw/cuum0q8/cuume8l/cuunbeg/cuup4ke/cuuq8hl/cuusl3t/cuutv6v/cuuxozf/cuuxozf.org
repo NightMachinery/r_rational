@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1441751238.0
+:DateShort: 2015-Sep-09
+:END:
+
+AutoMod used to be able to reply to its own comments (as a natural function of what it does) so I was thinking that if you could either enable that or work your way around it, it might be possible to feed the output back into the input in order to get some recursion going. Because it can read the input of every comment with regex rules, you could set up eight simple instructions similar to what brainfuck has. The only issue after that is having it act on data, which I think you might be able to do via regex somehow.
+
+(So I still don't know whether it's Turing-complete, but your comment got me thinking of how you might be able to use AutoMod in unintended ways.)

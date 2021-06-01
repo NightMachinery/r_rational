@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 2
+:DateUnix: 1476560956.0
+:DateShort: 2016-Oct-15
+:END:
+
+I'd say the problem is that the 'life' attribute of an entity, and the whole damage system surrounding that entity, is a product of the surrounding gameplay and can't necessarily be translated to a different gameplay without reworking it from the ground up.
+
+For instance, let's consider /Heroes of the Storm/ and /Overwatch/. Let's say you want to import all the characters from /Overwatch/ into /Heroes/. It obviously won't be as simple as running their files through some sort of converter, since the two games have different gameplays, but let's ignore that. Let's assume that every character has a file listing all their attacks/movement speed/other characteristics as key-number pairs. That file would be worthless for the transition, and would have to be entirely rewritten for the /Heroes/ version of the character, because a MOBA (I mean, uh, Hero Brawler... nah, just kidding) has characteristics very different from a FPS.
+
+In a FPS, not all move speeds has to be equal; a character can walk faster, making them more agile and better able to dodge as part of their intended gameplay. In a MOBA, higher movement speed barely helps dodging since most attacks are auto-aimed or have a wide hitbox, but helps you escape auto-attack range, among other things, which have completely different implications. Or consider a character like Bastion, whose core mechanic is having enough damage output to completely flatten any hero, no matter how resistant, in a matter of seconds at most. Such a hero would be completely broken in a MOBA, where killing an enemy hero is a big deal, so his damage output would have to be revised.
+
+In other words, there is no simple way to convert the statistics of a game's character into another game with a different gameplay. /Overwatch/ vs /Heroes/ is probably one of the strongest case, since both games have a gameplay that's both similar enough to be compared and completely incompatible, but it works for closer games too. You can't compare the damage output of a /Modern Warfare/ gun to a /Quake/ gun, because once was designed for a gameplay where regenerating all your life never takes more than three seconds, and the other was designed for healthpacks.
+
+That's not to say you can't mix things and have a fun, balanced gameplay. /Overwatch/ gives you characters with Quake-like gameplay (Pharah, Junkrat) and then Soldier 76. But doing so require tinkering, and I don't think the amount of work needed is going to be reduced by having a super-generic health system abstraction.

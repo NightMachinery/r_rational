@@ -1,0 +1,19 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 2
+:DateUnix: 1434108602.0
+:DateShort: 2015-Jun-12
+:END:
+
+#+begin_example
+    (let (overwrite override)
+      (call/cc 
+        (lambda (say)   
+          (cond
+            (meme? (say (overwrite it)))
+            (else (say it))))))
+#+end_example
+
+The name and purpose of the overarching lambda is left as an exercise for the reader.
+
+(EDIT: formatting)

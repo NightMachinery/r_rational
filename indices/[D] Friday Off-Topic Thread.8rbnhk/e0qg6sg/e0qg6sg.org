@@ -1,0 +1,42 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 12
+:DateUnix: 1529090821.0
+:DateShort: 2018-Jun-15
+:END:
+
++Weekly+ +Monthly+ Ocassional update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Nothing much to report code-wise; the networking plows forward but it's a bit of library-gluing and I've only just figured out the best way to organize that aspect of it.  Plus my wife's family flew in, so evenings are probably going to be unproductive for the next few days.
+
+However, over the last couple of weeks we finally cracked the problem of how to shape the world, in a manner that is mostly intuitive to use and doesn't require wonky camera code or projections or any weird shit like that.
+
+As a refresher, unlike most voxel-based worlds, this one is going to be bounded and wrap back on itself, to put an absolute cap on the total world size, permit us to optimize accordingly, and also permit free movement without invisible walls. The fallback option has always been to have a world shaped like a torus--you move far enough to the right and you teleport to the left, and you move far enough up and you teleport to the bottom.  However, it's always seemed like having a more sphere-like setup, where you can go over actual poles, would be more appealing, and so we set out to find a world shape that supports this.
+
+As most hex grid aficionados will tell you, you cannot /actually/ have a sphere while using hexes; the math just doesn't work out.  At best what you can do is have something like a soccer ball--make /most/ of the world a hex grid, and then have 12 pentagons spread somewhere throughout the globe.  This requires special attention for those pentagons, as they represent design and strategic problems that would have to be solved, which I didn't particularly want to deal with.
+
+So what about a cylinder?  It's got most of what I'm after; I don't care about extreme northern/southern regions being actually smaller than the equator, it's got a clear polar region, and the left/right wrapping works as expected.  It seemed like it would be an easy fit.
+
+...but it wasn't, not at first.  World traversal doesn't /actually/ move the player around, all it does is pick which chunk of tiles to load as the player hits the edge of what currently exists, [[http://i.imgur.com/r7zSRLB.gifv][as shown in this earlier prototype]].  So I struggled and argued and [[https://cdn.discordapp.com/attachments/230041937984487424/453406183554809866/fullmap.png][tried to come up with a way to smoothly map a cylinder's tube to its cap]], but it just wouldn't fit.
+
+We eventually stumbled our way over to the conclusion that the cap would have to be completely separated from the rest of the cylinder tube.  Deciding on a good way to do so that was A: 1:1 reversible (if you turned around and went back you wouldn't find yourself in a different place), B: wasn't grossly proportioned compared to the rest of the world was a bit difficult, however.  I liked the idea of the world transitioning the player to another plane when going too far north or south (probably covered up by generous wooshy snowy wind effects), but still couldn't find a solution sufficiently elegant enough.
+
+I even [[https://cdn.discordapp.com/attachments/230041937984487424/454103810630221825/JPEG_20180606_210617.jpg][spent time cutting out physical paper grids]] in an attempt to wrap my head around the problem, but it wasn't until a combination of mucking about with tiles in Blender and [[/u/Xavion]] repeating a comment that I had dismissed earlier that the solution finally presented itself:
+
+[[https://cdn.discordapp.com/attachments/230041937984487424/454892941887012866/unknown.png]]
+
+The image above shows the cap in purple and the top-most row of hexes rotated on their side in grey.  Basically, constrain Chunk_Width * World_Width to be divisible by 6, and then you can have a 1:1 tile mapping using a hexagon-shaped cap.  It's even easy to do design-wise: just ensure that chunk widths are always themselves divisible by 6 and you're good to go. When you cross the invisible border, you get teleported to the cap that matches the hex you were just standing on, but other than that brief transition it's as intuitive to use as normal movement.  
+
+Having this model finally let me realize why all attempts at a single, continuous, flat mapping of a cylinder would never work, too.  Here is the same cap “unwrapped” from the perspective of the tube:
+
+[[https://cdn.discordapp.com/attachments/230041937984487424/454900109767868437/unknown.png]]
+
+The red hex is the center of the cap, and as you can see is duplicated six times with wildly different X coordinates (from the perspective of the tube).  The cyan hexes are also duplicates of one another, meaning that the proper shape was never going to really work without teleportation of some sort or another.
+
+I'm pleased that this was finally figured out, in a way that's not /terribly/ inconvenient to code or to play.  I'm not sure I've ever played a game that used a true cylinder for the world space (Civ doesn't count; it lops off the two caps), but it seems like it should work well enough.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!

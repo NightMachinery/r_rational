@@ -1,0 +1,42 @@
+:PROPERTIES:
+:Author: TheConstipatedPepsi
+:Score: 1
+:DateUnix: 1501349307.0
+:DateShort: 2017-Jul-29
+:END:
+
+#+begin_quote
+  I guess we perceive different things there, and I'm curious to know where you're coming from. From my background and based on my experience, it looks like they basically want to build "AI" into all their products, by which they largely mean supervised statistical learning with deep convnets. In order to do so, they continually overhype the achievements of supervised deep convnets, and more so for unsupervised and reinforcement learning.
+#+end_quote
+
+While it is true that they want to build narrow AI into all their products, which at this point is really just deep convnets or RNNs, I don't think that they need to overhype unsupervised learning and RL to do that. Most of the exciting (imo) research is in GANs and deep RL, which don't have that many lucrative applications right now. Deepmind's mission statement is "1.Solve Intelligence 2. Solve Everything else", this is really a company focused on building general Intelligence. When I hear people like Eric Schmidt and Zuckerberg talk about AI, I really think that they believe in its long-term potential, not just in the immediate applications.
+
+#+begin_quote
+  Have they said so?
+#+end_quote
+
+The only reference I can think of is this [[https://www.youtube.com/watch?v=h0962biiZa4&t][video]] in which a bunch of influential people are asked (in the first 3 minutes) whether they would want super-AI to exist at some point. That's not quite equivalent to wanting to build it, so I should probably say that I think everyone /ought/ to want to build a safe super-AI.
+
+#+begin_quote
+  I don't hear all of civilization saying they want to build a super-AI to solve their problems.
+#+end_quote
+
+Fair enough, but that's probably because civilisation is stupid.
+
+#+begin_quote
+  Or they'd find it a cheaper use of resources to solve their problems the old-fashioned way, as even a superintelligence eventually must.
+#+end_quote
+
+I disagree with this, a super-AI would undoubtedly be more resource-efficient than humanity
+
+#+begin_quote
+  I might. Have we got numbers?
+#+end_quote
+
+The most prominent researcher I'm thinking of is Yann LeCun, who takes concerns about social inequality caused by AI seriously, but is not convinced by super-AI worries. The only semi-relevant survey I found was [[http://www.nickbostrom.com/papers/survey.pdf][this]] one, look at section 3.4 on the predicted impacts of human-level AI, a substantial portion of people think human-level AI will have a very good impact.
+
+#+begin_quote
+  I think we may have a difference of view here. I think there's actually a fairly large gap between the simplest possible "general" intelligence (in the sense of being able to learn any task, given human-scale amounts of data and CPU power, and a cost function specifying the task), the simplest naturally "world-optimizing" general intelligence, and the simplest self-improving world-optimizing general intelligence.
+#+end_quote
+
+I kind of agree with the distinction between the first and second, but not with the one between the second and third. Given that you have an AI which can optimise the world, it should also trivially be able to optimise its source code, given that it is part of the world, just imagine a humanoid robot taking actions in the world, one of those actions is to sit at a desk looking at its own source code and doing AI research. I actually think that self-improving AI in some sense will appear long before we have any kind of general AI, there's a relatively small step between something like [[https://arxiv.org/abs/1611.02779v2][this]] and an RL algorithm capable of modifying its own internals.

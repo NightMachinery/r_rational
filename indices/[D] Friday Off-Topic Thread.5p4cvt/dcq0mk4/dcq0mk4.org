@@ -1,0 +1,28 @@
+:PROPERTIES:
+:Author: xavion
+:Score: 3
+:DateUnix: 1485025134.0
+:DateShort: 2017-Jan-21
+:END:
+
+This is a bit late, but still trying. A rational pokemon update, or a question rather. One of the questions currently being faced is how to design the modder facing side of body part stat weighting. To elaborate, every body a pokemon has is going to be linked to different stats in different amounts, taking out a leg might harm their Movement a lot more than their Strength for example, and attacking the eyes would harm their ability to see but not do too much to their HP.
+
+The question is how to represent these, there are currently two major ideas.
+
+--------------
+
+The first, represent them as adjustments of batches. You would represent a weighting of having more HP than normal as HP+ for example, or HP- for less HP than normal.
+
+For the hard numbers, say you have a batch size of 3. Then HP+ would represent two batches (6), HP++ would represent three batches (9), HP+++ four batches (12)and so on. HP- would represent one less than a batch (2), HP-- two less than a batch (1), HP--- three less than a full batch (0) and so on. Exact numbers would obviously vary with the batch size. So if for example you had two HP- and one HP+ the HP- would each get 20% of the HP attributed to those body parts and the HP+ would get 60% of the HP.
+
+--------------
+
+The second idea is to represent weighting via numbers. You would represent a weighting of having more HP than normal as a high such as HP:10 maybe, while a low number such as HP:2 would represent much less HP.
+
+For the hard numbers, a HP:2 would represent two weight, a HP:10 would represent ten weight, a HP:1000 one thousand weight and so on. So if for example you had two HP:3 and one HP:6 the HP:3 would each get 25% of the HP and the HP6 would get 50% attributed to it.
+
+--------------
+
+The question is, which system do you think would work better? Why? What do you think of both? Is there something else you think might work better? Well, that's more than one question really.
+
+And as always, come join in [[https://discord.gg/dJRsE6Z][the Discord]] if it sounds interesting, always up for discussion on it, although it's shifted a bit more towards implementation design than game design of late.

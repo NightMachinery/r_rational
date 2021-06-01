@@ -1,0 +1,39 @@
+:PROPERTIES:
+:Author: AugSphere
+:Score: 2
+:DateUnix: 1448541035.0
+:DateShort: 2015-Nov-26
+:END:
+
+We'll probably want to budget chakra inside the game-mechanics stuff.
+
+A simple system that comes to mind is to use dice to represent chakra. So let's say a character has 5 chakra dice and decides to give his taijutsu some additional juice. Suppose he's facing a pretty tough opponent and normally he would have about 20% chance of successful taijutsu engagement (for example one of the players rolls a d100 and has to beat 80). If the players decide that he's enhancing his fighting using chakra, then we'd allow someone to roll additional dice. Then we could take the higher roll of two as a final result. That pushes the probability of success to 36%. If players want to dump even more effort into it, then we allow them to roll one more dice and again take the highest roll. This pushes it to 49%, and so on.
+
+We could make techniques cost some flat start-up amount, like, for example, 4 dice to cast shadow clone jutsu (creating just one clone), and give additional effects for more dice, like a second clone for 3 more dice.
+
+This system has an advantage of being really simple, but the disadvantage that the effects of additional dice are not diminishing, but rather exponentially increasing. So picking one high-risk, high-reward gambit and dumping all the chakra dice into it will be the optimal strategy. Not sure how representative that is of typical Naruto combat.
+
+EDIT:
+
+#+begin_quote
+  He's my favorite Team Anko character, since I made him intelligent and non-pedo. Not so keen on the canon idiot, though.
+#+end_quote
+
+No-one is really keen on the canon idiot. The rational ones are simply fabulous.
+
+EDIT2: Well, the dice don't actually stack exponentially, the pmf just changes from linear to quadratic and so on. The actual success probabilities go as
+
+| Dice | Success probability |
+|------+---------------------|
+| 1    | 0.2                 |
+| 2    | 0.36                |
+| 3    | 0.488               |
+| 4    | 0.5904              |
+| 5    | 0.6723              |
+| 6    | 0.7379              |
+| 7    | 0.7903              |
+| 8    | 0.8322              |
+| 9    | 0.8658              |
+| 10   | 0.8926              |
+
+Which is more or less reasonable as far as diminishing returns go. So, turns out that the simple system is actually pretty good.

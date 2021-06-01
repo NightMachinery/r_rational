@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 2
+:DateUnix: 1491723537.0
+:DateShort: 2017-Apr-09
+:END:
+
+Mm, that's a fair assessment, I'd say.
+
+Do note, however, that if you want to work out a communication schema using the Death Note, you can send much more information by leveraging the /time/ of death instead of (or in addition to) the cause of death. The Death Note has a 23-day window of operation, and exhibits no limits on precision. Even if the recipient can only measure time of death to the nearest minute, that still gives you log_2(33120) ~= 15 bits of information per death, and if we assume that the time of death can measured to the nearest second, that yields an additional ~5 bits, giving you a total of 20 bits per death.

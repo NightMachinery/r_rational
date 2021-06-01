@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1446806990.0
+:DateShort: 2015-Nov-06
+:END:
+
+#+begin_quote
+  On first access of the pixels attribute, which is more or less the same thing.
+#+end_quote
+
+Depends. If the access is simply a copy, and the target is a compatibly compressed structure (eg, for export), there's no reason to do anything but a byte copy.
+
+#+begin_quote
+  The distinction is unclear to me.
+#+end_quote
+
+A PNG is not a capnproto structure. Capnproto is not just "we have a hierarchical structure and accessors". It's also a data format that can be imported/exported purely by reading/writing, and mapped directly to memory and used in-situ.

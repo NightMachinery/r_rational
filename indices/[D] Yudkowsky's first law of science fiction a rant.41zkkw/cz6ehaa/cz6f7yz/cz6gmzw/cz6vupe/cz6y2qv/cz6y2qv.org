@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1453409471.0
+:DateShort: 2016-Jan-22
+:END:
+
+#+begin_example
+  [text](#s "spoiler text")
+#+end_example
+
+This works fine on mobile. It puts a black bar over the text and, when you click / highlight, you can read it. It's the new version,
+
+#+begin_example
+   [text](/s "spoiler text") 
+#+end_example
+
+that doesn't work; it puts the text into a tooltip that doesn't work on iPhone.

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: DRMacIver
+:Score: 1
+:DateUnix: 1485693408.0
+:DateShort: 2017-Jan-29
+:END:
+
+The deployment system shipboard is /very/ cautious. Shutdown doesn't just mean "turn all of these things off" it means "over time gradually shut down an increasingly large fraction of these", and the deployment system has a lot of safeguards in it for rolling back to a known good state and screaming for a human to come take look if something goes wrong.
+
+It's not perfect, but it requires a relatively strong shove to actually break things purely by changing the system - the real risk case is when something unexpected happens, and that's a risk both before and after a change (but what counts as "something unexpected" can vary).
+
+We probably /will/ be seeing bugs masked by bugs masked by bugs, but if changing the system through a standard procedure can result in a cascading failure then that is itself a bug.

@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: Anakiri
+:Score: 1
+:DateUnix: 1477952673.0
+:DateShort: 2016-Nov-01
+:END:
+
+I understand what you're saying, I just think that that's not how brains work. I don't know how to write an efficient program that does what you're describing, and I don't know how to make a neural net that does it at all. I contend rather that only a small portion of active memory is actually rendered for virtual experience, and that all the extra unrendered data is /necessary/ for real-time visual processing, because remembering is not a free action.
+
+If we had to remember other views of something we're picturing, rather than just mentally rotating it with a rotation transformation, I'd expect that to introduce a huge number of bugs. I'd expect you to have tip-of-the-tongue problems where you just /can't rotate something,/ because the view you want is momentarily unavailable. In reality, I suspect that misremembering things results in the object becoming less distinct from bad angles, but you can still rotate it - which is what I'd expect if you were just transforming corrupt model-space shape data into screen-space.
+
+If the brain has to look up how something would look from a different angle, that would also make it a lot harder to mentally rotate objects you've never seen before. You'd need some completely separate mechanism for generating novel view angles... and then you'd need to not use that mechanism for most imagined images, in favor of some giant catalog of every possible angle? Is there any reason to believe that people imagine new shapes differently than familiar ones?
+
+#+begin_quote
+  See that makes no sense to me, because while they are on paper, your brain looking at them still renders them in 3D so there shouldn't be any reason you ought to rotate them in this scenario.
+#+end_quote
+
+Feel free to test your predictions with [[http://sharpbrains.com/blog/2010/09/28/test-your-mental-rotation-skills/][these]] and other puzzles. All three of them took me longer than one second, despite having an omniscient view of them. Relative orientation alone was enough to slow me down.

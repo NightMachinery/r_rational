@@ -1,0 +1,34 @@
+:PROPERTIES:
+:Author: ajuc
+:Score: 1
+:DateUnix: 1433449548.0
+:DateShort: 2015-Jun-05
+:END:
+
+#+begin_quote
+  combining variables makes you pay the cost of the most unlikely variable in the equation at minimum
+#+end_quote
+
+variable X = something effectively impossible DOES NOT happen (prob. almost 1)
+
+variable Y = tossed coin lands tails (prob. 0.5)
+
+Spell 1. make the probability of X AND Y = 0 (originaly a little less than 0.5)
+
+Spell 2. make the probability of Y = 1 (originally 0.5)
+
+Profit :)
+
+I don't think you can make this non-OP. It's just too general. The best bet would be to design path-invariant way to calculate the cost of manipulations that works like relativity velocity change equations - the further you ultimately change the probability from original - the closer to infinity the energy cost gets. For changing the probability from 0 to 1 (or vice versa) the cost should be infinity no matter how you achieved that. But I've failed to design such equations (haven't spend much time on that).
+
+My first idea was equation like:
+
+#+begin_example
+    energy cost of changing prob A to B = - constant / 4*(a-b)*(1-a-b)
+#+end_example
+
+For changing 0.5 to 0 or 1 it would make the cost = constant.
+
+For changing 0 to 1 the cost would be +infinity.
+
+But it's not path invariant. For changing 0.5 to 0.75 and then 0.75 to 1 it would be 8/3 * constant.

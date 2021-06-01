@@ -1,0 +1,118 @@
+:PROPERTIES:
+:Author: markus1189
+:Score: 1
+:DateUnix: 1428046922.0
+:DateShort: 2015-Apr-03
+:END:
+
+About the Crab Canon:
+
+1) What about the
+
+#+begin_example
+                    *
+                   * *
+                    *
+                    *
+                    *
+                    *
+                    *
+                   * *
+                  * - *
+                 * --- *
+              * --- * --- *
+           * --- * --- * --- *
+        * --- * --- * --- * --- *
+     * --- * --- * --- * --- * --- *
+  * --- * --- * --- * --- * --- * --- *
+#+end_example
+
+and
+
+#+begin_example
+  * --- * --- * --- * --- * --- * --- *
+     * --- * --- * --- * --- * --- *
+        * --- * --- * --- * --- *
+           * --- * --- * --- *
+              * --- * --- *
+                 * --- *
+                  * - *
+                   * *
+                    *
+                    *
+                    *
+                    *
+                    *
+                   * *
+                    *
+#+end_example
+
+at the start and end? The obvious part is one is the flip of the other but maybe there's more to it? Almost looks like a spinner when joined.
+
+2) There is this interesting part on p.200 before "(Suddenly, the Crab...)":
+
+#+begin_quote
+  /Achilles/: Fiddle. It makes a big difference, you know.
+
+  /Tortoise/: Oh, well it's all the same to me
+#+end_quote
+
+Because on p. 62 at the top it is *implied* (this is the dialog before figure and ground) that the *tortoise* said:
+
+#+begin_quote
+  /Tortoise/: Fiddle. It makes a big difference, you know.
+#+end_quote
+
+and actuall written:
+
+#+begin_quote
+  /Achilles/: Oh, well it's all the same to me
+#+end_quote
+
+So it's the same discussion but with flipped roles.
+
+--------------
+
+Questions:
+
+1) Indeed, why does he?
+
+2) I'd say *no* because =P∧~P= was only an example from Prudence, in general the view is that we have to prove all theorems
+
+3) ??? (not sure what I'm supposed to do here)
+
+4) I don't think it technically *has* to remain out of the system, if I get what DRH wants to say is that it is better to keep your *core* as limited as possible and we can derive the second rule from the first one:
+
+#+begin_example
+  (1) [               push
+  (2)   <~x∨~y>       premise      
+  (3)   ~~<~x∨~y>     double tilde
+  (4)   ~<~~x∧~~y>    de morgan's rule
+  (5)   ~<x∧y>        double tilde
+  (6) ]               fantasy rule
+  (7) <~x∨~y>⊃~<x∧y>
+#+end_example
+
+and the other way around we also get =~<x∧y>⊃<~x∨~y>=, but to actually *prove* it we would have to define what /interchangeable/ means, however we could extend the Propositional Calculus with ↔ with the intended meaning "interchangeable" and add the rule:
+
+EQUIVALENCE: If =<x⊃y>= is a theorem and =<y⊃x>= is a theorem then =<x ↔ y>= is a theorem. x and y are said to be interchangeable and you can replace x with y in a theorem if =<x ↔ y>=.
+
+5) For =<P⊃<Qv~Q>>=:
+
+*Koan*: If you say a word then I will cut off your heads or I will not cut off your heads
+
+*Derivation*:
+
+#+begin_example
+  (1) [            push
+  (2)   P          premise
+  (3)   [          push
+  (4)     ~Q       premise
+  (5)   ]          pop
+  (6)   <~Q⊃~Q>    fantasy
+  (7)   <Qv~Q>     switcheroo
+  (8) ]            pop
+  (9) <P⊃<Qv~Q>>
+#+end_example
+
+6) It is both complete and consistent, for more ask your proof-source of trust ;)

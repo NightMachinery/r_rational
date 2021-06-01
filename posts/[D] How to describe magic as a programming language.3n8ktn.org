@@ -3,8 +3,9 @@
 * [D] How to describe magic as a programming language?
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 29
+:Score: 31
 :DateUnix: 1443800620.0
+:DateShort: 2015-Oct-02
 :END:
 I've been looking at some of my writing projects lately, thinking about actually finishing them, and there are three that have magic systems that work in pretty similar ways; they all have analogs to computer programming (though they're meant to explore different aspects).
 
@@ -23,8 +24,9 @@ Edit: If you want to see a first draft of one of the three, [[https://www.reddit
 
 ** [deleted]
 :PROPERTIES:
-:Score: 13
+:Score: 16
 :DateUnix: 1443832695.0
+:DateShort: 2015-Oct-03
 :END:
 
 *** One of the things I really love about your fiction is that the story often seems to be saying to the reader, "Hey, you're smart, figure it out". I suppose I'll think more about omitting exposition or making the internals of the magic system relevant.
@@ -32,6 +34,7 @@ Edit: If you want to see a first draft of one of the three, [[https://www.reddit
 :Author: alexanderwales
 :Score: 2
 :DateUnix: 1443837184.0
+:DateShort: 2015-Oct-03
 :END:
 
 
@@ -40,6 +43,7 @@ Edit: If you want to see a first draft of one of the three, [[https://www.reddit
 :Author: notmy2ndopinion
 :Score: 2
 :DateUnix: 1443841164.0
+:DateShort: 2015-Oct-03
 :END:
 
 
@@ -56,6 +60,7 @@ One of the fictional setups I'm considering has magical races where each magical
 :Author: EliezerYudkowsky
 :Score: 24
 :DateUnix: 1443827470.0
+:DateShort: 2015-Oct-03
 :END:
 
 *** I can imagine a series where magic /does/ run on a cellular automaton or other formalism, but it's the beginning of the Enlightenment and the scientific method has just been invented. Until now, sorcerors have used magic by sheer trial and error, and now they are actually getting to understand the structure. The main characters would be in the position of doing all that research from the ground up; given a short time frame on the book, this could fit within the author's ability to imagine.
@@ -63,8 +68,9 @@ One of the fictional setups I'm considering has magical races where each magical
 Ideally this would be handled something like the /1632/ universe, where Flint set up the rules and then opened it to other authors so that the history would feel real. He keeps control over the broad strokes of things (e.g. there's a master list of uptimers and you're not allowed to make up more), but individual authors can go off in their own direction.
 :PROPERTIES:
 :Author: eaglejarl
-:Score: 10
+:Score: 9
 :DateUnix: 1443830349.0
+:DateShort: 2015-Oct-03
 :END:
 
 
@@ -83,11 +89,13 @@ Then when someone thinks, "Oh, logically they would be able to do =x=!", either 
 (Of the three stories I have in draft mode right now, /Robot, Vampire, Wizard/ uses 2,4,6, /The Four Methods/ uses 2,3,5,6, and /The Gift and the Burden/ uses 3,4,7.)
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 14
+:Score: 18
 :DateUnix: 1443830424.0
+:DateShort: 2015-Oct-03
 :END:
 
-**** #+begin_quote
+**** u/MugaSofer:
+#+begin_quote
   Set the work of fiction prior to institutionalized research.
 #+end_quote
 
@@ -98,8 +106,9 @@ I suspect the only reason we're not more impressed with the kind of stuff pre-sc
 Assuming magic is old, of course.
 :PROPERTIES:
 :Author: MugaSofer
-:Score: 6
+:Score: 8
 :DateUnix: 1443923617.0
+:DateShort: 2015-Oct-04
 :END:
 
 
@@ -113,23 +122,26 @@ Assuming magic is old, of course.
 etc.
 :PROPERTIES:
 :Author: Salaris
-:Score: 7
+:Score: 6
 :DateUnix: 1443837036.0
+:DateShort: 2015-Oct-03
 :END:
 
 
 ** Seems to me that the system you've described is less computer programming and more just stacking metamagic modifiers on top of the base fireball spell. Take fireball and add a new position and velocity. Or apply maximized empowered time-dilated to the fireball.
 :PROPERTIES:
 :Author: notgreat
-:Score: 10
+:Score: 9
 :DateUnix: 1443801125.0
+:DateShort: 2015-Oct-02
 :END:
 
 *** Well, the /other/ part of the problem is figuring out which features to include in a hypothetical programming magic system, which I think depends on what sort of story you want. Conditionals? Probably yes. Math operations? Also probably yes. Loops? Maybe, but seems broken if you can do =while(true){ThrowFireball()}= so would need some limits. User defined data types? Interfaces? Global variables?
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 10
+:Score: 7
 :DateUnix: 1443803322.0
+:DateShort: 2015-Oct-02
 :END:
 
 **** Wiz Zumwalt demonstrates the problems with having a while(true){...} in a spell in [[http://wayback.archive.org/web/20100102041439/http://baen.com/library/0671878468/0671878468.htm][Chapter 9]].
@@ -137,18 +149,21 @@ etc.
 :Author: ArgentStonecutter
 :Score: 8
 :DateUnix: 1443811216.0
+:DateShort: 2015-Oct-02
 :END:
 
 
-**** #+begin_quote
+**** u/gbear605:
+#+begin_quote
   while(true){ThrowFireball()}
 #+end_quote
 
 As long as ThrowFireball() takes some kind of mana from the "programmer," there's no problem with this: the person dies.
 :PROPERTIES:
 :Author: gbear605
-:Score: 8
+:Score: 7
 :DateUnix: 1443824086.0
+:DateShort: 2015-Oct-03
 :END:
 
 ***** Limitations on magic systems are one of those things that you can calibrate in a lot of different ways. Mana is one of the most well-worn. The system I'm using for /The Four Methods/ setting (described in a link in the OP) uses something similar; depending on which school of magic you're using, you're getting poisoned, getting weakened, losing memories, or going insane. That's standard "magic has a cost" stuff.
@@ -156,8 +171,9 @@ As long as ThrowFireball() takes some kind of mana from the "programmer," there'
 But you can also add in things like "there's an =x= per minute chance for an IllegalThreadStateException to be thrown, causing a fatal caster error", or something like that.
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 2
+:Score: 6
 :DateUnix: 1443829356.0
+:DateShort: 2015-Oct-03
 :END:
 
 ****** Easily handled! :P
@@ -173,6 +189,7 @@ But you can also add in things like "there's an =x= per minute chance for an Ill
 :Author: Anderkent
 :Score: 5
 :DateUnix: 1443891764.0
+:DateShort: 2015-Oct-03
 :END:
 
 
@@ -181,6 +198,7 @@ But you can also add in things like "there's an =x= per minute chance for an Ill
 :Author: gbear605
 :Score: 3
 :DateUnix: 1443831863.0
+:DateShort: 2015-Oct-03
 :END:
 
 
@@ -189,18 +207,21 @@ But you can also add in things like "there's an =x= per minute chance for an Ill
 :Author: rineSample
 :Score: 8
 :DateUnix: 1443810710.0
+:DateShort: 2015-Oct-02
 :END:
 
 
-**** #+begin_quote
+**** u/MugaSofer:
+#+begin_quote
   Loops? Maybe, but seems broken if you can do while(true){ThrowFireball()} so would need some limits.
 #+end_quote
 
 If spirits become bored easily, that would be a good excuse for memory and run-time limitations on spells. Of course, then you lose the potential for /Sorcerer's Apprentice/-style runaway spell accidents ...
 :PROPERTIES:
 :Author: MugaSofer
-:Score: 6
+:Score: 5
 :DateUnix: 1443815464.0
+:DateShort: 2015-Oct-02
 :END:
 
 
@@ -209,6 +230,7 @@ If spirits become bored easily, that would be a good excuse for memory and run-t
 :Author: Anderkent
 :Score: 5
 :DateUnix: 1443891816.0
+:DateShort: 2015-Oct-03
 :END:
 
 
@@ -219,6 +241,7 @@ Global variables don't work because FTL. What you want is more signal-based, may
 :Author: FeepingCreature
 :Score: 3
 :DateUnix: 1443823429.0
+:DateShort: 2015-Oct-03
 :END:
 
 
@@ -227,6 +250,7 @@ Global variables don't work because FTL. What you want is more signal-based, may
 :Author: AugSphere
 :Score: 2
 :DateUnix: 1443875351.0
+:DateShort: 2015-Oct-03
 :END:
 
 
@@ -235,21 +259,24 @@ Global variables don't work because FTL. What you want is more signal-based, may
 badguy locate self locate vector-difference normalize half-power fireball activate
 :PROPERTIES:
 :Author: ArgentStonecutter
-:Score: 8
+:Score: 7
 :DateUnix: 1443807091.0
+:DateShort: 2015-Oct-02
 :END:
 
 *** I do really like the idea of seemingly-incomprehensible strings of syllables that a diligent reader could decode into a description of what the spell is doing. ("/Abracadabra-mancychwynhafalsefyllfadefnyddiwracunfilltiriuncyfeiriad!/" is just /Abracadabra/ with some instructions translated to Welsh and appended to the end.)
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 5
+:Score: 7
 :DateUnix: 1443807616.0
+:DateShort: 2015-Oct-02
 :END:
 
 **** Point-free style in Haskell would work well for this also.
 :PROPERTIES:
-:Score: 6
+:Score: 7
 :DateUnix: 1443810252.0
+:DateShort: 2015-Oct-02
 :END:
 
 ***** I do not see how [[https://en.wikipedia.org/wiki/Tacit_programming]] would make this work well. Not defining the function's arguments doesn't really make a better syllable-pronunciation? Since you're only invoking functions anyways.
@@ -259,6 +286,7 @@ I side with ArgentStonecutter, a stack-based low-level language would be rad for
 :Author: rhaps0dy4
 :Score: 2
 :DateUnix: 1443823657.0
+:DateShort: 2015-Oct-03
 :END:
 
 ****** To write a magical fantasy novel based on Urbit you need to first be Phillip K. Dick.
@@ -268,18 +296,21 @@ For two completely unrelated reasons.
 :Author: ArgentStonecutter
 :Score: 1
 :DateUnix: 1443911378.0
+:DateShort: 2015-Oct-04
 :END:
 
 
-**** #+begin_quote
+**** u/KarlitoHomes:
+#+begin_quote
   I do really like the idea of seemingly-incomprehensible strings of syllables that a diligent reader could decode into a description of what the spell is doing.
 #+end_quote
 
 [[http://qntm.org/ra][Ra]] has something similar to this.
 :PROPERTIES:
 :Author: KarlitoHomes
-:Score: 5
+:Score: 6
 :DateUnix: 1443818240.0
+:DateShort: 2015-Oct-03
 :END:
 
 ***** Really? A few of the words have given meanings, but I thought most of the language was gibberish.
@@ -287,13 +318,15 @@ For two completely unrelated reasons.
 :Author: Chronophilia
 :Score: 2
 :DateUnix: 1443820034.0
+:DateShort: 2015-Oct-03
 :END:
 
 ****** [[http://qntm.org/spells][See this appendix]]. I think a lot of it can be decoded, but there are surprisingly few examples within the text.
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 9
+:Score: 6
 :DateUnix: 1443820305.0
+:DateShort: 2015-Oct-03
 :END:
 
 
@@ -302,6 +335,7 @@ For two completely unrelated reasons.
 :Author: ArgentStonecutter
 :Score: 2
 :DateUnix: 1443808980.0
+:DateShort: 2015-Oct-02
 :END:
 
 
@@ -314,21 +348,24 @@ The weird not-quite-list-oriented not-quite JavaScript syntax and semantics, and
 :Author: ArgentStonecutter
 :Score: 2
 :DateUnix: 1443911862.0
+:DateShort: 2015-Oct-04
 :END:
 
 
 ** I think you should show them actually writing a spell. They might write out something like "ThrowFireball(new Point(User.Position+5280), DirectionEnum.TrueNorth)", then assemble it to "Abracadabra-mancychwynhafalsefyllfa defnyddiwracunfilltiriuncyfeiriad!", and then take that and make a name for it if they want to cast it multiple times.
 :PROPERTIES:
 :Author: DCarrier
-:Score: 8
+:Score: 9
 :DateUnix: 1443808944.0
+:DateShort: 2015-Oct-02
 :END:
 
 *** That's a good idea. From a narrative-building perspective, I could do an [[http://tvtropes.org/pmwiki/pmwiki.php/Main/ActionPrologue][Action Prologue]] with someone having to hastily construct a spell for some specific purpose which coincidentally gives the bare bones of exposition on how the magic works. (Though I've seen better authors than I am have trouble doing this right, so maybe not.)
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 7
+:Score: 6
 :DateUnix: 1443809502.0
+:DateShort: 2015-Oct-02
 :END:
 
 
@@ -337,8 +374,9 @@ The weird not-quite-list-oriented not-quite JavaScript syntax and semantics, and
 This is a pretty good read on how a programmer could munchkin the hell out of a magic system. The whole series is worth reading. Each book builds well on the previous ones, the fantasy world has a credible economy and politics, and fucking up the magical economy has real consequences... and not just on the humans.
 :PROPERTIES:
 :Author: ArgentStonecutter
-:Score: 7
+:Score: 8
 :DateUnix: 1443805867.0
+:DateShort: 2015-Oct-02
 :END:
 
 *** I found links to the first two books on the internet archive ([[http://wayback.archive.org/web/20100102041439/http://baen.com/library/0671878468/0671878468.htm][here]] and [[http://wayback.archive.org/web/20100102041341/http://baen.com/library/0671698567/0671698567.htm][here]]), but I don't know how to get the rest of the series. Do I have to buy it or something?
@@ -348,6 +386,7 @@ The main character didn't start munchkining the magic system until the end of th
 :Author: DCarrier
 :Score: 3
 :DateUnix: 1443808813.0
+:DateShort: 2015-Oct-02
 :END:
 
 **** Well, he starts hacking it in Chapter 9. Maybe 3/4 of the way in?
@@ -357,6 +396,7 @@ The main character didn't start munchkining the magic system until the end of th
 :Author: ArgentStonecutter
 :Score: 2
 :DateUnix: 1443809358.0
+:DateShort: 2015-Oct-02
 :END:
 
 
@@ -371,8 +411,9 @@ It would be conceivable for a wizard to learn something completely new by simply
 Hrm. That could lead to an interesting whodunnit mystery, with a murdered researcher plotline.
 :PROPERTIES:
 :Author: Farmerbob1
-:Score: 6
+:Score: 5
 :DateUnix: 1443831575.0
+:DateShort: 2015-Oct-03
 :END:
 
 
@@ -383,8 +424,9 @@ Go a level lower than that. There's got to be some kind of magical language some
 What's the lowest level? What's the /physical/ mechanism for magic, the equivalent of the science that makes computers run?
 :PROPERTIES:
 :Author: LiteralHeadCannon
-:Score: 7
+:Score: 8
 :DateUnix: 1443801444.0
+:DateShort: 2015-Oct-02
 :END:
 
 *** I don't tend to find lowest levels fun. You could do it all in assembly, or you could build the logic into the transistors yourself, but if you don't have to do that why would you want to? Efficiency, I guess?
@@ -396,6 +438,7 @@ But at the very lowest levels, it's about as irrelevant to spellcasting as atomi
 :Author: alexanderwales
 :Score: 4
 :DateUnix: 1443803350.0
+:DateShort: 2015-Oct-02
 :END:
 
 **** I don't bring up the lower levels because I think they're inherently interesting. I bring them up because I think they inherently create a higher understanding of what's actually happening on the higher levels. If you forget that the lower levels exist, then your mental image of what's going on is pretty much never correct.
@@ -403,6 +446,7 @@ But at the very lowest levels, it's about as irrelevant to spellcasting as atomi
 :Author: LiteralHeadCannon
 :Score: 4
 :DateUnix: 1443803629.0
+:DateShort: 2015-Oct-02
 :END:
 
 
@@ -431,16 +475,18 @@ And then just continue the story as normal, perhaps with the protagonists giving
 Oh, also, if I was a wizard I'd make the programming language at least somewhat like English. Even if I had to write a new compiler for it. It's just common sense.
 :PROPERTIES:
 :Author: MugaSofer
-:Score: 4
+:Score: 5
 :DateUnix: 1443815188.0
+:DateShort: 2015-Oct-02
 :END:
 
 
 ** You could have a way to set sort of 'hot keys' for individual spells, so if you didn't want to spend 2 minutes chanting to get a complex effect, instead you can meditate/study/write out the spell and key it to a shorter phoneme. Make your "Abracadabra-mancychwynhafalsefyllfa defnyddiwracunfilltiriuncyfeiriad!" and map it to "yn hyn llosgi."
 :PROPERTIES:
 :Author: diraniola
-:Score: 5
+:Score: 4
 :DateUnix: 1443816512.0
+:DateShort: 2015-Oct-02
 :END:
 
 
@@ -451,6 +497,7 @@ If you want to show rather than tell, perhaps an equivalent to shaping exercises
 :Author: nicholaslaux
 :Score: 3
 :DateUnix: 1443802639.0
+:DateShort: 2015-Oct-02
 :END:
 
 
@@ -462,9 +509,11 @@ If you want to show rather than tell, perhaps an equivalent to shaping exercises
 :PROPERTIES:
 :Score: 3
 :DateUnix: 1443815961.0
+:DateShort: 2015-Oct-02
 :END:
 
-*** #+begin_quote
+*** u/alexanderwales:
+#+begin_quote
   The thing is, I think the sexiness isn't in the fact that the wizard is using a programming language, but exactly what it means to be using a programming language at all.
 #+end_quote
 
@@ -473,6 +522,7 @@ Yup, this is something that I'm trying to keep in mind. It's the joy of going fr
 :Author: alexanderwales
 :Score: 3
 :DateUnix: 1443817250.0
+:DateShort: 2015-Oct-02
 :END:
 
 
@@ -481,6 +531,7 @@ Yup, this is something that I'm trying to keep in mind. It's the joy of going fr
 :Author: captainNematode
 :Score: 3
 :DateUnix: 1443913187.0
+:DateShort: 2015-Oct-04
 :END:
 
 
@@ -489,6 +540,7 @@ Yup, this is something that I'm trying to keep in mind. It's the joy of going fr
 :Author: Transfuturist
 :Score: 2
 :DateUnix: 1443815678.0
+:DateShort: 2015-Oct-02
 :END:
 
 
@@ -497,6 +549,7 @@ Yup, this is something that I'm trying to keep in mind. It's the joy of going fr
 :Author: cartazio
 :Score: 2
 :DateUnix: 1443837072.0
+:DateShort: 2015-Oct-03
 :END:
 
 
@@ -505,6 +558,7 @@ Yup, this is something that I'm trying to keep in mind. It's the joy of going fr
 :Author: ShareDVI
 :Score: 2
 :DateUnix: 1443864682.0
+:DateShort: 2015-Oct-03
 :END:
 
 *** Details?
@@ -512,6 +566,7 @@ Yup, this is something that I'm trying to keep in mind. It's the joy of going fr
 :Author: TimTravel
 :Score: 1
 :DateUnix: 1443926427.0
+:DateShort: 2015-Oct-04
 :END:
 
 **** I am still thinking it through.
@@ -529,6 +584,7 @@ Yeah, and I thought of it before I read Rick Cook. (But after Yasinsky's "Nick" 
 :Author: ShareDVI
 :Score: 1
 :DateUnix: 1443977503.0
+:DateShort: 2015-Oct-04
 :END:
 
 
@@ -537,6 +593,7 @@ Yeah, and I thought of it before I read Rick Cook. (But after Yasinsky's "Nick" 
 :Author: zachary123212
 :Score: 2
 :DateUnix: 1443908778.0
+:DateShort: 2015-Oct-04
 :END:
 
 *** Monads are pretty magical already... ;)
@@ -544,6 +601,7 @@ Yeah, and I thought of it before I read Rick Cook. (But after Yasinsky's "Nick" 
 :Author: TimTravel
 :Score: 2
 :DateUnix: 1443926473.0
+:DateShort: 2015-Oct-04
 :END:
 
 
@@ -558,10 +616,12 @@ So, it's not programming, but it is a general system that builds spells from fir
 :Author: TheWalruss
 :Score: 2
 :DateUnix: 1443934650.0
+:DateShort: 2015-Oct-04
 :END:
 
 
-** #+begin_quote
+** u/sir_pirriplin:
+#+begin_quote
   A large part of my difficulty here is that I don't know how much the average person with no knowledge of computer programming would be able to make the connections.
 #+end_quote
 
@@ -574,14 +634,16 @@ Watching him experiment with his "stack modus captchalogue" allows the reader to
 :Author: sir_pirriplin
 :Score: 2
 :DateUnix: 1444015054.0
+:DateShort: 2015-Oct-05
 :END:
 
 
 ** see, "The Irregular at Magic High".
 :PROPERTIES:
 :Author: thedarkone47
-:Score: 4
+:Score: 3
 :DateUnix: 1443809813.0
+:DateShort: 2015-Oct-02
 :END:
 
 
@@ -590,6 +652,7 @@ Watching him experiment with his "stack modus captchalogue" allows the reader to
 :Author: Chronophilia
 :Score: 1
 :DateUnix: 1443821350.0
+:DateShort: 2015-Oct-03
 :END:
 
 
@@ -597,6 +660,7 @@ Watching him experiment with his "stack modus captchalogue" allows the reader to
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1443833453.0
+:DateShort: 2015-Oct-03
 :END:
 
 *** You're probably thinking of the [[https://en.wikipedia.org/wiki/Rick_Cook#Wizardry_series][Wizardry series by Rick Cook]]; it's been mentioned elsewhere in the threads...
@@ -604,6 +668,7 @@ Watching him experiment with his "stack modus captchalogue" allows the reader to
 :Author: aldonius
 :Score: 1
 :DateUnix: 1443880152.0
+:DateShort: 2015-Oct-03
 :END:
 
 
@@ -612,6 +677,7 @@ Watching him experiment with his "stack modus captchalogue" allows the reader to
 :Author: notmy2ndopinion
 :Score: 1
 :DateUnix: 1443840420.0
+:DateShort: 2015-Oct-03
 :END:
 
 
@@ -622,6 +688,7 @@ Note it takes surprisingly little basic computational power to build a Turing ma
 :Author: TimTravel
 :Score: 1
 :DateUnix: 1443926336.0
+:DateShort: 2015-Oct-04
 :END:
 
 
@@ -652,6 +719,7 @@ I'd make spells and lessons centered around real beginner program guides.
 :Author: Nepene
 :Score: 1
 :DateUnix: 1443967258.0
+:DateShort: 2015-Oct-04
 :END:
 
 
@@ -668,4 +736,5 @@ And call off spells with whitespace, indents, and brackets.
 :Author: clawclawbite
 :Score: 1
 :DateUnix: 1443981346.0
+:DateShort: 2015-Oct-04
 :END:

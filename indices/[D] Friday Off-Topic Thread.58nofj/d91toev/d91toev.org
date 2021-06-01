@@ -1,0 +1,36 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 12
+:DateUnix: 1477062574.0
+:DateShort: 2016-Oct-21
+:END:
+
+Weekly update on my rational pokemon game, including work on the data creation tool Bill's PC. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+This week was a lot of preparation work.  I have not yet pulled together the project to start prototyping the grid system, but I needed to get some of the ground work laid down for the game in general, so I don't feel particularly bad.  Need a good foundation to build off of, after all.
+
+First off, I spent the weekend categorizing the Discord chat logs.  For those of you still too shy to pull the trigger, we'd love to have you [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]], where we spend our time brainstorming and +carefully thinking through the mechanics+ arguing over Giovanni's bakery (seriously).  
+
+But the learning curve of such a dedicated channel can be a bit unnerving, I can imagine. I do [[https://drive.google.com/folderview?id=0B0LYycfi-K18Z21BeDZXVWVpOFE][record the chat log]] every night, but this clocks in at about 40k lines of chat and is a /lot/ of stuff to sift through just to get a bit of context. To help aid that a little bit (and to produce a reference for my own use), I have put together a [[https://docs.google.com/document/d/1-BBPJoGaMDwAsxP9lYNLyARKCGI9pZGLXf2x-IgWbfs/edit#heading=h.80njbegesyuj][Table of Contents]] for the channel as a whole.  This is updated every night (or every other night) with the latest and greatest, and has the major on-topic discussions from every day clearly marked. Browse through it at your leisure, and take a look at the discussion topics that interest you.  
+
+Nevertheless even if you /don't/ put in the time to read that massive novel of a log, we don't mind answering questions, so come on in anyway! The more the merrier.  The community has been invaluable in helping me shape the vision for this game, and I can't thank them enough.
+
+--------------
+
+Part of the reason I started the log categorization project was so that I could produce a /formal/ design document to replace the schizophrenic one in the link at the top of this post.  This is greatly served by having the reference handy, and over the next couple of weeks I will try and get that put together.
+
+I also pulled my old, dry, dusty book on software engineering for game developers off the shelf, and while skimming it again was reminded at how much of a boon having a concrete to-do list really is, so the game proper also needs a Software Requirements document.
+
+The idea is to take the [[https://docs.google.com/document/d/13e4bMBgsvshUBFShes2bG3RGXIzVYh16EPboqDTdpfA/edit][roughly 450 features in the informal feature request document]] and cut them up into bite-sized chunks. [[https://docs.google.com/document/d/1hCan6A4qIUYbEt0nTRpDhDfTDCJc_D1aUm2wpc4jdRk/edit][This in-progress document is started here]], and so far has about a dozen systems inflated into ~90 specific software requirements.
+
+Some of those informal features are actually story ideas or worldbuilding, but even after filtering those out, this is a /shit ton/.  There is no getting around that fact.  I don't doubt that it will eventually resolve into somewhere around ~2000 specific requirements.  
+
+As I create this massive list, though, I will pare it down somewhat to be more sane.  I'm a maniac but I'm not /crazy/. After it's complete, I will sit down and group those requirements into related “stripes”, and then order those stripes into a roadmap that makes sense.  Each stripe will represent a coherent system, and, if done properly, will stand alone from an interaction and fun perspective.  This list will also pull double duty as a git branch outline and a unit test list, or at least the starting point of one.  
+
+--------------
+
+The above lists and documents will be an ongoing project.  I aim to have them in a more-or-less complete state around the new year.  This weekend I will start the grid/movement system prototype in Unity3D proper, which will be the first of several small system prototypes that will aid me in the design and formalization of the actual requirements for this thing.  
+
+If you have anything you'd like to add, or any help you'd like to offer, throw us a comment down below or join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]! I really do take people's opinions into account, and more of this design has been impacted through discussion than I think people realize.  

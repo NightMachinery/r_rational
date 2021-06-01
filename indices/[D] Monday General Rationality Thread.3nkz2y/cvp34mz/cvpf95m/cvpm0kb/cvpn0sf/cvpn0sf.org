@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: nicholaslaux
+:Score: 3
+:DateUnix: 1444096950.0
+:DateShort: 2015-Oct-06
+:END:
+
+So you effectively explode the file format away from a single file and into a file structure, the individual components of which need to be merged, but if you aren't working on the same components in the structure then they can auto merge, right?
+
+So if I modify layer 1 and you modify layer 2, there's no collisions, but if we both modify layer 1, then there is and you need to merge those changes somehow.
+
+Inherently, you're allowing for modification of the same document simultaneously (otherwise you could just sync via any of the existing solutions and just say "don't edit at the same time" or lock the file down while someone else is editing it). So you ultimately still need to determine some sort of merge process for whatever components might collide or else you're simply pushing the problem to a lower level and saying "you can both edit just one person gets access to this layer first" rather than "whoever gets to the file as a whole gets access and the others must wait".
+
+(Also, having never worked with photoshop, blender, or anything similar in anything other than a personal hobby capacity, is simultaneous editing of different parts of the same document/scene/file common? It's possibly just my lack of knowledge on how these tools are being used in real world scenarios that is preventing me from understanding the full scope of the problem and this solution.)

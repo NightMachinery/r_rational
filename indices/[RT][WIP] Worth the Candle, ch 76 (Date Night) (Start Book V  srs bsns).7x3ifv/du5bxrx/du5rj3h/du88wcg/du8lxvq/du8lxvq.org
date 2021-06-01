@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 3
+:DateUnix: 1518624742.0
+:DateShort: 2018-Feb-14
+:END:
+
+The biggest problem with Smith/IRV is that once you're within the Smith Set, you're still doing IRV, and all you've done is cut out the worst possible cases. That leaves the problems of:
+
+- Favorite Betrayal: sometimes a strategic vote would have you ranking your first choice lower than first rank
+- Participation: sometimes it's better for your preferences to not cast a vote
+- Later no harm/help: if a candidate X is ranked 1st, then changing the ranks of the 2nd and lower candidates sometimes harms/helps candidate X (which it ideally shouldn't)
+
+/But/ because you do the Smith set pruning, this kind of strategic voting becomes much harder to do, and I think that tends to minimize these problems (given that you don't actually know how the voting is going to shake out, everyone should vote honestly rather than strategically).
+
+Of course, the bigger problem is that it's complicated and not super-intuitive, and selling a change in voting system to the electorate is hard enough even if what you're proposing is simple.

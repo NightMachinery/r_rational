@@ -1,0 +1,9 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1432066870.0
+:DateShort: 2015-May-20
+:END:
+
+=._*= files are invisible on Mac. They're used for file metadata. They (almost certainly) /do/ exist in your directories, but you won't be able to see them unless you enable a "show hidden files" option or use whatever the Apple version of an =ls= command is. (See [[http://apple.stackexchange.com/questions/136248/disable-storage-of-invisible-files-on-my-cfs-or-smb-network-storage][this post]] on stackexchange.)
+
+The big problem is that these files will show up first alphabetically, and if you have no idea that this is a Mac-to-Windows thing, you'll just be clicking on the =._*= files and wondering why they'll giving you nonsense. But yes, it's an easy problem to solve.

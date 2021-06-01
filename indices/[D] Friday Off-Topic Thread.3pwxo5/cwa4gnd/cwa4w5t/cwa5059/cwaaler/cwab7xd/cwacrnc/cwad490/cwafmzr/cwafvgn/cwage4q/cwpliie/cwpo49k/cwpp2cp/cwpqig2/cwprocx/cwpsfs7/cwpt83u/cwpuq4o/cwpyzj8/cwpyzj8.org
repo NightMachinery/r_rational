@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 2
+:DateUnix: 1446763881.0
+:DateShort: 2015-Nov-06
+:END:
+
+If your compression includes a checksum (e.g. zip, gzip), diffing one bit breaks it and forces you to read the entire file, recalculate the new checksum, and update a particular data block...which stops you from having multiple editing. And then do that again next time anyone else applies a diff.
+
+You can transmit your diffs separate from the base state, of course, but that doesn't get around the fact that your diff needs to include a new checksum each time in order to have a valid file. Woefully inefficient computationally for savings on bandwidth.
+
+In retrospect I should have thought of the above before saying [[https://www.reddit.com/r/rational/comments/3pwxo5/d_friday_offtopic_thread/cwpt83u][that diffs could even theoretically]] be useful on compressed data.

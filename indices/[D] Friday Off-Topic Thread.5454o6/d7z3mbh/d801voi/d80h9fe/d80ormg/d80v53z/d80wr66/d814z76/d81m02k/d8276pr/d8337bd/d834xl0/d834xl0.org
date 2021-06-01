@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 2
+:DateUnix: 1474922061.0
+:DateShort: 2016-Sep-27
+:END:
+
+Excellent! What I can see (reading the raw dex file on my phone) looks good, but I'll have to evaluate it more closely once I'm home to open it and poke around.
+
+#+begin_quote
+  I have two pieces of feedback about the interface, as well. The first is that I often find myself looking at the wrong stat box for the stat name.
+#+end_quote
+
+Yeah, I can totally see that being a problem. Hmm. Tonight I'll experiment with adding a muted border around the label + box, and see if that helps alleviate this.
+
+#+begin_quote
+  The second feedback is that I'm doing a lot of flipping between Pokemon tabs to get comparisons for the stat I'm looking at. Since a lot of this is inside the evolution line, if I had a keyboard shortcut to quickly switch to adjacent Pokemon I would find myself making a lot of use of it. In lieu of that, actual tabs brought up and discarded like a browser would serve a similar purpose, though I'd imagine that would be harder to implement.
+#+end_quote
+
+The browser tabs idea would require a complete overhaul, you're right, so let's see if we can't alleviate this somewhat elsewhere.
+
+The key combination is a good idea. I'm thinking ctrl+E to switch to the evolved form, ctrl+D to go "down" an evolution? Obviously it would just fail if there's a branching evolution...maybe a way to select the "current focus" evolution. Then maybe ctrl+up or down arrow to cycle through the drop-down or something. Thoughts?
+
+#+begin_quote
+  And just one clarification: when I set Machamp's Resistance stat to 450, that means he takes a further 25% less damage from moves he already resists, right? Intuition tells me that if a high Weakness stat takes more damage, a higher Resistance stat should take less damage, even if they cover different things, but the documentation leads me to believe both stats affect damage taken in the same way.
+#+end_quote
+
+No, your intuition is correct: higher RES = less damage, higher WEAK = more damage. I'll clarify the documentation.
+
+Thanks so much for the feedback! The changes I've mentioned shouldn't take long, so I think I should have another build for you later tonight.
+
+EDIT: updated the documentation. Should be more clear now.

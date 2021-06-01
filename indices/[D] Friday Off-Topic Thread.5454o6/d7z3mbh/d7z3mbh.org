@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 11
+:DateUnix: 1474651320.0
+:DateShort: 2016-Sep-23
+:END:
+
+Weekly update on my rational pokemon game, which for now is work on the data creation tool:
+
+Iterations continued on the graph. The gif I have this week is kind of boring but shows off a neat feature: the example pokemon graphs are no longer hard-coded. The user can define how many they would like to show based on performance and readability issues:
+
+[[http://i.imgur.com/6NmFMmb.gif]]
+
+It's not shown, but you can also define the minimum gap between curves to prevent overlap. Currently the pool of example pokemon is still hard-coded, but I have plans to spin this off into a config file.
+
+I added a settings tab for all the fiddly bits that I was hard-coding into things, including some options to disable animations for the graph to improve performance if needed.
+
+The Bulbapedia download was improved; you can now indicate a range to download (rather than all 721), with options to overwrite or integrate if you already have some pokemon defined locally.
+
+It occured to me that I'm going to need a way to determine how many tiles a pokemon takes up. I think I'm going to add a setting for each pokemon that indicates whether size increase is more influenced by height (onix) or weight (snorlax), with a % modifier for each. Height and weight growth may need to be added as well.
+
+Goals this week are to produce some documentation with pictures so people who can't run it can see what it looks like, add the stuff I speculated about above, and otherwise get the species tab finished so I can actually work on moves.

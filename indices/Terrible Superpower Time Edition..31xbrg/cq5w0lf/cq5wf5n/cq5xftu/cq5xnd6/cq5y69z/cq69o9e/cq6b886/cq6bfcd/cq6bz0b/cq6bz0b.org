@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: blazinghand
+:Score: 1
+:DateUnix: 1428565379.0
+:DateShort: 2015-Apr-09
+:END:
+
+i think "wiring it directly into the computer" is probably beyond the scope of my knowledge, but from what I know, making it so inputs interact well and quickly with the computer is a question of a bunch of different standards and architectures interacting and is fairly complicated. It's possible polling faster than 1000Hz is trivial using current standards and the lack of literature mostly has to do with the fact that nobody currently chars (heh) about typing that quickly.
+
+I'm sure this is possible, just expect it to be a ton of work and expect to spend a ton of time reading sheets on i/o standards
+
+In any case, point is that actual computer speed isn't the issue, it's things like bus speed for certain things (or I guess i/o speed for the hdd if you're using that instead of an ssd) or polling rate for peripherals and monitors that's the problem

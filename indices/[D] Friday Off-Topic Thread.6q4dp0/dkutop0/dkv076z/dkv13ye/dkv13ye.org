@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: InfernoVulpix
+:Score: 1
+:DateUnix: 1501278387.0
+:DateShort: 2017-Jul-29
+:END:
+
+I was mainly thinking of it as the simplest way to handle what happens if the location an object updates to intersects something else. The common sense answer is either that it doesn't go at all or that its destination is altered slightly until it doesn't intersect anything, and it occurred to me that a full swap would be simpler overall and lead to fewer edge cases.
+
+You're right, though, there are other ways to handle it. I doubt it would be possible to just 'sum up' the atoms without leading to catastrophic consequences (I don't know what double atomic density does but it doesn't sound good), but the space left behind by the time-flexible objects don't have to be filled with the destination. It doesn't have to be filled with anything at all, you could just leave a vacuum behind, or some exotic substance connected to the nature of time-flexibility.

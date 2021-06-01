@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1446774003.0
+:DateShort: 2015-Nov-06
+:END:
+
+#+begin_quote
+  The in-memory format is the on-disk format.
+#+end_quote
+
+That could start being a scary amount of data, fast. For most data, it's ideal. But for giant pixel arrays compression is probably necessary.
+
+#+begin_quote
+  You define the accessors to compress and uncompress the bitmap, or even parts of the bitmap, as needed. The compressed and uncompressed versions of the bitmap are all part of the capnproto data structure,
+#+end_quote
+
+How is that different from the other way around? Accessors that compress and uncompress to provide a pixel array, or to save to disk?
+
+I'm imagining the pixel accessor locking the rawData attribute, if that helps. You've convinced me that trying to send patches of serialize frequently is bad.
+
+This keeps the implementation pretty simple, because the compressed data is the only bit that gets saved to disk. I don't think we could even store an entire video as pixel arrays in the amount of drive we've got, so that at least would need more complicated serialization.
+
+We'd only convert from the png to the pixel array on first access, after that it would be cached. We'd only serialize the pixel array back into a png when there isn't much load on the CPU, or when the accessor is closing down to free memory.

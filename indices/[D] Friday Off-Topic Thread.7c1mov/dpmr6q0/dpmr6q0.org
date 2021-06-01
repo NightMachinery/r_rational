@@ -1,0 +1,28 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 9
+:DateUnix: 1510339230.0
+:DateShort: 2017-Nov-10
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Many thanks for the responses to last week's whinefest, both here and on Discord.  After considering the problem for a bit, I've decided to set combat aside for a little bit and work on revamping the Bill's PC tool that was prematurely started at the beginning of this project.  Many of the issues with working on a combat system involve the sheer number of immaterial prerequisites that exist, and so hopefully by switching gears I'll both rekindle some motivation while addressing those concerns somewhat.
+
+Bill's PC (for those just tuning in) was [[https://imgur.com/a/pUlOy][an app for composing Pokemon JSON files]].  At the time that it was dropped, it could save and load type definitions, species definitions, and move definitions, as well as do fancy things like mass import from Bulbapedia and do a fancy [[https://i.imgur.com/uKh8uv8.png][graph stat compare]] to help visualize the differences between authored pokemon.
+
+I was actually quite happy with the way it turned out, and it would have continued to be the canonical JSON authoring tool I used if not for a fatal blunder: I had not realized at the time that WPF is an absolutely Windows-only framework, considered too complicated to be worth porting to other systems via mono and their ilk.  This was a surprise to me, and was unacceptable; I myself don't care to use Linux or Mac, but I also don't care to restrict the users of these programs, not when it's reasonably easy for me to build things in a cross-platform manner.
+
+With that major lesson in mind, I got it into my head to make the new version of Bill's PC web-based, which would solve some problems while bringing in a host of new ones, the first and foremost being that I don't know hardly anything about coding for the web.  (I've maintained API endpoint servers before in ASP.NET where the fact that it's a web server is basically a minor, incidental detail, but that's practically tangential.)  I'm fairly confident that I can pick it up, based mostly on the fact that I previously picked up Lua and SupCom modding over the course of a week, but that might still turn out to be horribly arrogant of me, so I guess we'll see.
+
+My starting point was “write a mostly client-based web app in javascript” and thus began a slog of blog posts and wiki diving trying to find what the best framework to do this in would be.  (I'm not interested in reinventing the wheel and building everything from scratch, why do it when the javascript community can do even that for me?  :V)  I mostly want an out-of-the-box framework that will tame the web somewhat for me without requiring oodles of frontend-specific experience.
+
+Finding posts appealing to my background has been surprisingly hard.  Most everything has been either for frontend gurus and so using jargon that is way over my head at this point, or targeting Babby's First Programming Language and thus a waste of my time.  I eventually gave up and just took a stab at choosing a framework based on vague gut-level feelings, which landed on me experimenting with Ember.js.  So far it seems to be alright, from the perspective of someone with nothing else on the web to compare it to, so barring any last-minute revelations or advice, I'll probably end up sticking with it sheerly through momentum.
+
+That said, any advice?  Framework, library, or tutorial recommendations?  Angular, Vue, and Backbone all came up in my searches, and I will probably look at them if ember doesn't work out (in roughly that order of precedence), but I'm really just stabbing at shadows, here.  Feel free to help me change my mind.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

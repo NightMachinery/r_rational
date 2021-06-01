@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 3
+:DateUnix: 1445541756.0
+:DateShort: 2015-Oct-22
+:END:
+
+I've started reading Austraeoh, and at least in the beginning, the writing is awful. The prose is 80% purple, and the conjunctions of phrases and clauses are done in the most nonsensical ways.
+
+I'm still reading it, though. The series is currently 2,382,826 words long; SS&E /has/ to have gotten better in that time. If they haven't, well, that's one hypothesis completely obliterated. Although, if only non-purple wordcount (u) decreases your purple ratio (y)...
+
+Let's say every 1,000 non-purple words decreases your purpleness percentage by 0.1%, a ratio of -1/1000. Every non-purple word shifts purpleness down by 0.0001%, making dy/du = -1/1000000. x is the number of total words, and x and u are related by the equation u = x - yx, the total (x) less the purple wordcount (yx).
+
+Since we want dy/dx, change in purpleness given a change in total wordcount, we can use the chain rule to get dy/dx = dy/du · du/dx, and since we have u(x, y), we can take the partial derivative with respect to x and obtain du/dx = 1 - y. dy/dx = -1/1000000 · (1 - y) = (y - 1)/1000000.
+
+Plugging this in to W|A (with y(0) = 0.8 purpleness) (can you tell I gave up on the math?), we get a solution of y(x) = 1 - 0.2e^{x/1000000}. This equation gives us a wordcount-to-zero-purpleness of 1,609,437 words. We can then integrate from 0 to 1609437 to get a total purple wordcount of 809438, which, when divided by the series total wordcount, gives us a to-date average purpleness ratio of 0.3396.
+
+If we change dy/du to reflect a decrease of 0.1% purpleness every 10,000 words, a more conservative estimate, we obtain a total purple wordcount of about 1,844,690 over the entire current run of the story, yet to reach zero purple. This gives us a much more likely to-date average purpleness ratio of 0.7742.
+
+Whether it's good or bad, 2.4 million words is impressive, to say the least.

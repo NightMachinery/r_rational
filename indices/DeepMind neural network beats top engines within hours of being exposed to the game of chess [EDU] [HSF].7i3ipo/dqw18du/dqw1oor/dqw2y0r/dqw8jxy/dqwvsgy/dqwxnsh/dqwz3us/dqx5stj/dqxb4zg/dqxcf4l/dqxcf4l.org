@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: thrawnca
+:Score: 1
+:DateUnix: 1512690383.0
+:DateShort: 2017-Dec-08
+:END:
+
+#+begin_quote
+  There is also ackermann function if you want an impossible problem.
+#+end_quote
+
+Predicting every legal chess move is impossible for today's computers, too, but apparently neural nets can still do a good job of calculating a strategy. If there is a real-world problem involving the Ackermann function, perhaps a similar approach would likewise produce a reasonable (if theoretically non-optimal) solution? Would need a concrete example to evaluate this.
+
+#+begin_quote
+  ..... Are you perhaps confused on what a forward feed neural net is? It by definition doesn't have loops; the adding numbers together is what a neural net does.
+#+end_quote
+
+My point was that you demand loops and conditionals, while discounting "adding numbers together" - but what you demand is in fact one form of adding numbers together.
+
+#+begin_quote
+  Neural nets can't solve factorial because that lack recursion
+#+end_quote
+
+Completely /solving/ the chess game is not necessary to win. The point is, this approach produced a more general engine capable of significantly /better/ strategy than previous specialised engines, in multiple games. The fact that it's not mathematically complete doesn't really detract from that, since a complete solution basically requires brute forcing the entire search space and isn't possible in 2017.
+
+The stated limitation of min-max trees was inability to adapt to challenges outside their training space, but AlphaZero convincingly defeated opponents that it hadn't trained against.

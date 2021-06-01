@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Prezombie
+:Score: 1
+:DateUnix: 1427940461.0
+:DateShort: 2015-Apr-02
+:END:
+
+#+begin_quote
+  How could it? You can't rotate something while keeping it aligned with a grid.
+#+end_quote
+
+You're thinking in a Euclidean framework. the whole point of that chapter was that the system's framework wasn't Euclidean, and had no reason that it had to be. It's not a large stretch to consider a model being designed in pure voxel space, then transformed and rotated by stretching and shrinking the grid itself. The Physics engine likely even has a "compressibility" stat applied to each atom to simulate how hard/soft something is.

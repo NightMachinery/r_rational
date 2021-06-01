@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: Vermora
+:Score: 3
+:DateUnix: 1421358218.0
+:DateShort: 2015-Jan-16
+:END:
+
+With regards to what the teleporter can take with them, one could use the following rules to make it more well defined as opposed to intuitive. The more I thought about this, the rules I had to add, but I can't see anything obviously broken at the moment.
+
+1) The teleportation works on whole, entire objects. Either an object is teleported with you or it is not. Liquids and gasses are considered to be collections of an innumerable number of teeny tiny particles.
+
+2) The item must either be in contact with skin, or in contact with another solid item of adequate size that is itself teleporting.
+
+If 'solid item' is too vague, we could define it more explicitly as a continuous object requiring a certain amount of force to break at any point. A very thin rope with a weak spot might then be counted as two ropes.
+
+Similarly, two discrete, touching objects would be considered the same object if it took more than a certain amount of force to separate them. **
+
+The adequate size rule above has two purposes. Items must be of sufficiently small size rules to stop everything in the same building / on the same planet from being teleported as well. Although rule 3 actually makes this redundant.
+
+Items must be of sufficiently large size, to stop all gas / liquid / sand particles close to you from forcefully being teleported as well. This is important.*
+
+*This doesn't stop really small items from being teleported. Sand/liquid/gas in contact with you or with another large item would be teleported. But Gas particles that are only touching other gas particles being teleported, wont be teleported. So you don't take a whole room full of air with you.
+
+3) Objects that extend more than a certain distance away from the skin / centre of mass of the teleporter are not taken. Meaning that only solid objects that exist entirely within a certain volume (possibly a sphere) relative to the teleporter are displaced.
+
+4) Any substance contained entirely within a container being teleported, is teleported as well. A container could be defined as a closed continuous surface not allowing particles of a certain size to pass through. This allows liquids and gases in containers to be teleported. Any solids of sufficient size in a container would have been teleported anyway as a consequence of the first three rules.
+
+These rules should work if the teleporter has no control over their teleportation. The 'carrying' rule seems to arbitrary to make rigorous. The above rules should let you take another person if they are touching you and sufficiently close.
+
+** This rule has the consequence that heavy items touching the ground wont be taken, as they are touching the ground and the force between them causes the item and the ground to be considered as the same object. If they can be lifted for just a moment (and all other rules are satisified) it would be possible to take them.
+
+If we let the teleporter choose what to take, we can relax some of the above rules and just let the teleporter what to take. Although this may affect the efficiency of the teleporter, if they are consciously having to think about everything they want to take in order to avoid being naked at their destination.

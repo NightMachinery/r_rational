@@ -1,0 +1,40 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1446772804.0
+:DateShort: 2015-Nov-06
+:END:
+
+#+begin_quote
+  There we go, that's what I was looking for.
+#+end_quote
+
+Glad to hear it. The idea needed to get kicked around a bunch. [[https://traverseda.wordpress.com/2014/01/13/creating-a-new-web-stack-for-collaboratation-and-dynamic-content/][This]] was the first draft. As you can see, it's shit.
+
+#+begin_quote
+  Like I said, I don't know that it's practical, but it would be shiny if it were.
+#+end_quote
+
+That's where I'm at.
+
+#+begin_quote
+  people invented this shiny new thing called XML and everyone was trumpeting it as the future
+#+end_quote
+
+I think part of that is a cultural issue. There's a lot less code sharing in the xml world. I imagine that most attribute types will have a standard library as a reference, maintained by whatever open source project adopts it.
+
+Having a repository of attribute types and validators for them could go a long way. Policy/standards as code.
+
+I don't have a better system for using it with old programs than what you've mentioned.
+
+#+begin_quote
+  but the interface layer would likely impose a speed penalty that would make it unpopular.
+#+end_quote
+
+That's the other big question. I don't think it /has/ to be slow, but I don't like relying on technology getting better. SSD's are a huge improvement in random read speeds, if they weren't getting more and more common I'd be a lot more hesitant to spend any real time on this.
+
+The performance profile should be different, because it's equivalent to a memory mapped file more then a read. You don't have so many random reads.
+
+The basic tree of hashmapped objects could be stored as a btree like in btrfs.
+
+I /think/ it's doable at speed. There aren't an algorithms that shouldn't be scalable. It's just a very hard problem that would require a bunch of people. Profiling would be important.

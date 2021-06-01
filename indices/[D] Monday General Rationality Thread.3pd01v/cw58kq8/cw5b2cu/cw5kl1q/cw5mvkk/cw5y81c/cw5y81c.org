@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: electrace
+:Score: 2
+:DateUnix: 1445308717.0
+:DateShort: 2015-Oct-20
+:END:
+
+#+begin_quote
+  The Prisoner's Dilemma demonstrates how players can get a better outcome by following a non-equilibrium strategy, so the Nash equilibrium isn't a useful guide to playing the game.
+#+end_quote
+
+Unless you can control both players (in which case it isn't a real prisoner's dilemma ), it's a fantastic guide for playing the game.
+
+You aren't looking for the best payoff for both players, only the player that you have control over. Since you can't control the other person, defect is the better strategy in both cases.
+
+If you /do/ have control over both players, the options become CC, CD, DC, DD, in which case, of course, you would choose CC.
+
+#+begin_quote
+  "Both players always defect" is still a Nash equilibrium for the iterated prisoner's dilemma - neither player gains from using a different strategy as long as the other one keeps playing all-defect
+#+end_quote
+
+For an infinitely repeated game, technically yes, it's an equilibrium, but it's a pretty stupid one. Playing tit-for-tat has the potential for an incredible long-term return, at the risk of only one game's lost points.
+
+#+begin_quote
+  I'm fairly sure "both players cooperate on the first game and play tit-for-tat thereafter" is not a Nash equilibrium - at the very least, you can improve on that strategy by suddenly defecting in the very last game.
+#+end_quote
+
+Which is why I specified that it was an infinite game I was talking about. There is no last game.
+
+In finite games, as you say, you can defect in the last round. Knowing that you opponent will defect in the last round, you have no incentive to cooperate in the second to last round, which leads you opponent to defect in the third to last round... which eventually leads to you both defecting in the first round. Backward induction sucks...
+
+There are ways to get around this (which normally involve changing aspects of the game, but traditionally, all finite games of prisoner's dilemma with rational players and perfect information have a NE of always defect.

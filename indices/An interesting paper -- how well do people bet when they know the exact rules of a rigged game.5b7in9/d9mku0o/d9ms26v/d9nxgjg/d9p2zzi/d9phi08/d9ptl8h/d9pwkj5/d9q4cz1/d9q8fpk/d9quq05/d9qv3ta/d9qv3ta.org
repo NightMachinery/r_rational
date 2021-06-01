@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: AugSphere
+:Score: 2
+:DateUnix: 1478596996.0
+:DateShort: 2016-Nov-08
+:END:
+
+I've been observing the betting outcomes of bots with this strategy and vast majority of them tends to lose money during first ~20 bets, which can't really be optimal, I feel. You could do better by simply not betting.
+
+The thing about Kelly criterion is that you start with the expected multiplier for profit =(1+x)^(N*p)*(1-x)^(N*(1-p))= and optimise that over x. The logarithm is useful for simplifying the expression, due to the fact that it's monotonic and doesn't move the extrema, but turns powers into products. If we want to derive optimal bets using a whole posterior, then we'd have to first figure out the expected multiplier by taking the integral =P(p|h,t)*(1+x)^(N*p)*(1-x)^(N*(1-p)) dp= and only then we could try and optimise the result, I think. Which isn't a trivial calculation even with a Beta distribution.
+
+Sure, the fact that simple Kelly strategy with Bayesian posterior mean converges to using Kelly criterion with the true bias is fairly obvious, unless the prior is insane, but I have a feeling there must be some strategy that does better.
+
+I think I'm gonna go write a bot that samples from the posterior and calculates the optimal bet for maximum expected gain using the sample. I'll post the results when I'm done.
+
+EDIT: Well, this turned out to be a little bit more complicated than anticipated. May be a while till I'm done.

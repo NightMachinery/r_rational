@@ -1,0 +1,52 @@
+:PROPERTIES:
+:Author: xamueljones
+:Score: 2
+:DateUnix: 1429846551.0
+:DateShort: 2015-Apr-24
+:END:
+
+Continuation of the post:
+
+The thesis proves that the three classes are all equivalent which is important because they contain all known [[http://en.wikipedia.org/wiki/Computable_function][Computable Functions]] and any other model of computation can be shown to be the same as one or more of the above classes. Furthermore they /demonstrate/ that the classes are the same as our informal notion of computability. The thesis cannot be formally proven because it's showing that the classes are the same as our informal notion of computability which is equating an informal notion with a formal notion. Since the informal notion of computability doesn't have a formal definition, their equivalence can't be proven. To be fair though, some people do use the thesis itself as a formal definition of computation. Another reason is that we can't check all possible models of computation for their equivalence to the Turing machine (only ones we can do on current computers). One such model where the thesis fails is if we have a machine which can somehow take an infinite number of steps in finite time, now we can solve the halting problem by asking if the program looped forever or not afterwards.
+
+In this sense, the thesis is a scientific hypothesis that asserts all possible computation can be done by a Turing machine. If a machine can be built to preform computation that no Turing machine can ever do, then we have shown the thesis to be false. If we could show that [[http://xkcd.com/505/][the laws of physics can be computable by a Turing machine]] (xkcd comic), then that's one way to prove all computable functions can be computed by a Turing machine.
+
+......
+
+*Dialogue*
+
+The sentence:
+
+#+begin_quote
+  Yields falsehood when preceded by its quotation! Yields falsehood when preceded by its quotation!
+#+end_quote
+
+is a quine which is very similar to the idea of a strange loop which was discussed in the earlier [[http://www.reddit.com/r/rational/comments/2z8zm5/geb_discussion_1_introduction_a_musicological/][discussion of the introductory chapter]]. [[http://en.wikipedia.org/wiki/Quine_%28computing%29][Quines]] are mainly defined in computing as a computer program which produces itself. Here's an example in pseudocode:
+
+#+begin_quote
+  Program Quine- Print twice: Program Quine- Print twice:
+#+end_quote
+
+If you make a call such as ‘Run Quine', the program, Quine, will run a command to print everything after the colon twice. This outputs the program, Quine. Note that I didn't include any such command Run as part of the program to make writing the pseudocode simpler, but it can be done. For any programmers reading, I strongly recommend trying to write your own quine. Hacking the computer to find the file with the source code of the hacking file itself is not acceptable since the code wouldn't *look* like a quine. An empty source file is also too easy of a solution since that's simply making no code the same as no output (I don't want trivial solutions).
+
+For non-programmers in the audience, try thinking of sentences or questions which either refer to itself or is its own answer. Play around with the commenting system such as:
+
+#+begin_quote
+  What question is this comment asking?
+#+end_quote
+
+Can you think of a quine which is not in text form? (Hint: what does reproduction have to do with anything?)
+
+Wikia Links:
+
+- [[http://godel-escher-bach.wikia.com/wiki/Chapter_13][Chapter 13]]
+
+- [[http://godel-escher-bach.wikia.com/wiki/Air_on_G%27s_String][Air on G's String]]
+
+Coming up next on April 27th is Chapter XIV: On Formally Undecidable Propositions of TNT and Related Systems.
+
+The discussion for the previous chapter is posted [[https://www.reddit.com/r/rational/comments/33dmiu/geb_discussion_13_chapter_12_minds_and_thoughts/][here]].
+
+The discussion for the next chapter is posted [[http://www.reddit.com/r/rational/comments/35mjwy/geb_discussion_15_chapter_14_on_formally/][here]].
+
+[[http://www.reddit.com/r/rational/comments/2yys1i/lets_start_the_read_through/][Official Schedule]].

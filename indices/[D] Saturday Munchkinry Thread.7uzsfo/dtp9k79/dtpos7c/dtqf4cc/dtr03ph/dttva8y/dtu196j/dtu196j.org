@@ -1,0 +1,28 @@
+:PROPERTIES:
+:Author: ben_oni
+:Score: 1
+:DateUnix: 1517942017.0
+:DateShort: 2018-Feb-06
+:END:
+
+#+begin_quote
+  Maybe I should go to sleep and read it again after and it will make more sense.
+#+end_quote
+
+I'm not sure it makes sense to me, honestly. I could easily have made a mistake in the setup. However, while I'm not sure I've stumbled onto a correct solution, I do know that one exists.
+
+The key point is that I'm attempting a tree-branching search of the solution space. Despite what [[/u/Gurkenglas][u/Gurkenglas]] says, this is meant to be exponential, not linear. Every time we could receive a signal from the future (every five seconds), we can branch the timeline: maybe into two, maybe three or more; it will depend on how many different signals we could receive.
+
+The second point is that the nodes on the tree are ordered. And in this sense, [[/u/Gurkenglas][u/Gurkenglas]] is correct: we're doing a linear search of the endpoints, to find the first solution that works, after which we halt and don't search the remaining nodes.
+
+#+begin_quote
+  Also you are going to get immediately compromised by a future ai/civilization passing messages down the line.
+#+end_quote
+
+No, I'm controlling which timelines get created. I'm not searching an infinite set of consistent timelines, I'm creating a finite set of different timelines.
+
+#+begin_quote
+  And if I'm not mistaken most versions of you won't get the correct answer right?
+#+end_quote
+
+I think what happens is that there is a large, but finite, number of timelines where I get the wrong answer, and an infinite number of timelines where I get the correct answer. I think.

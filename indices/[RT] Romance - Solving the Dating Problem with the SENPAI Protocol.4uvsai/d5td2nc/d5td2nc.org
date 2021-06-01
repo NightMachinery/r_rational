@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 15
+:DateUnix: 1469646634.0
+:DateShort: 2016-Jul-27
+:END:
+
+Oh hey, this is my field!
+
+The problem SENPAI is trying to solve is an elaboration on [[https://en.wikipedia.org/wiki/Oblivious_transfer][oblivious transfer]] - actually, come to think of it, what this paper calls Aaronson's Protocol is the RSA implementation of oblivious transfer.
+
+This is all a part of secure multi-party computing - cryptographic approaches for doing calculations on inputs that need to stay secret. It's a fairly new field, and there's some interesting results coming out of it. This paper explains how to calculate A AND B - that's a simple logic gate, and if you take the output of one gate as the input of the next, you can do more complicated things like [[https://eprint.iacr.org/2009/614.pdf][AES encryption]].

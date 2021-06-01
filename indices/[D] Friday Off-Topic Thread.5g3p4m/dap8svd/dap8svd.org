@@ -1,0 +1,70 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 16
+:DateUnix: 1480694223.0
+:DateShort: 2016-Dec-02
+:END:
+
+Weekly update on my rational pokemon game, including work on the data creation tool Bill's PC. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Hooo-ee.  I /feel/ like a lot of strides have been made this week; not sure if that is a false feeling or not.  Let's see...
+
+[[/u/Dwood15]] and [[/u/Xavion]] have both been very helpful lately with their efforts in architecting the monster engine and codifying the species JSON, respectively.  Both of these projects have forced us to take much more concrete looks at the designs of various systems.  
+
+In doing so, Bill's PC is now almost utterly obsolete--most of the stat definitions, names, and purposes have played musical chairs with one another, with tons of new additions and paradigm shifts.  For instance -- and I kind of assumed I would hit this eventually, curse you, foresight! -- types will almost certainly be data-driven and moddable.  Not just the numbers, but how many types, and what their names are, etc, will be part of the moddable data backbone, and so you will be free to whimsically add your beloved Fart type.
+
+Things in general, code-wise, have shifted to be super-moddable.  This was always the intent, but it's interesting seeing just how abstract everything has become.
+
+--------------
+
+The HP system was more or less finalized in design.  HP is now mostly equivalent to pain--or it's inverse, you might say, as HP goes down as Pain would go up, but conceptually they are exactly the same system.  When a pokemon is damaged, it loses HP in the affected limb, which leaves it open to a higher chance of injury.  Death occurs through the accumulation of certain injuries on certain appendages, and a slew of nonlethal but crippling injuries can bog you down as well.
+
+While identifying this system, I drew up a [[https://docs.google.com/document/d/1aT7Oa0F35Y_9rEJgEkE5pTwT7ckBR9nHA3wGdvINgTs/edit][Mock Battle sheet]] which shows the process of a Machop helpfully getting beaten to death.  This model is slightly incomplete; in particular it doesn't include Endurance as a factor, but it shows the general mechanics of how I see fights going.
+
+--------------
+
+A breakthrough was also made with the Initiative system, (which is getting relabeled, I think, but I'll refer to it as INIT for now).  Basically, we are now adding two variables to each move: a “compressible” and “incompressible” time factor.  As the names suggest, the compressible time can be reduced or eliminated through both proficiency with the move and, as we've decided, INIT; incompressible, however, can't be affected by stats and is the absolute minimum time it takes to perform the move.
+
+Solar Beam, for instance, (as it exists in canon) has a very large incompressible time factor and little to no compressible.  Fury Swipes, however, is the opposite, with perhaps only the smallest of incompressible time.  This means that a Slowpoke using Fury Swipes might only get one or so hits in per round, but Rattata will of course get quite a few more in.
+
+This (I think) helps alleviate the issues with the INIT system significantly, permitting those with a large INIT to get more done per round, without just completely, absolutely stonewalling somebody with less.  It's still a /huge advantage/, but more damage and application based, rather than simply “block until you run out of init, then hit you with free moves”.
+
+--------------
+
+One of the fiddly problems with the Elite Four was solved in a rather deft manner.  See, the problem was, how do we have a world where A: The Elite Four are the most powerful around, B: the Elite Four have enough power to drive a Stormbird away from civilization, C: the Elite Four want to kill the birds, but D: the Four don't have the firepower to do so, and yet E: the Four /plus/ the player are potentially enough to kill one or more of them.
+
+You see the problem?  Making them badass, willing to kill things, and yet not able to do so without help from the player is an extremely fine line to walk.  Well, instead we decided that the Four /can't/ drive off the Stormbirds: instead, they play cat-and-mouse.  The Four are among the only individuals daring, brave, quick, and powerful enough to run up to Zapdos, punch it in the face, lead it on a merry goose chase (away from civilization), and live to tell the tale.  As a day job.  It's a small change, but one that completely erased one of the lingering balance issues that plagued my mind.
+
+--------------
+
+OMG YOU GUIS.  There's a project on TVTropes called [[http://tvtropes.org/pmwiki/pmwiki.php/JustForFun/ThePokedexExtendedFanonEdition][The Pokedex: Extended Fanon Edition]] and it's /amazing/.  In-depth articles that try to portray knowledge about a species from a pseudoscientific and, more importantly, in-universe minimal-bullshit manner as possible.  It's mostly canon facing, but I've already decided we're using this as a base for the pokedex entries.  We'll have to modify them, of course, but this is like 80% of the work right there.  I'm excited.
+
+--------------
+
+I finally, finally, /finally/ got something to show for the movement stuff.  I got my grid library of choice working (it recently had a major version update which broke everything), and now I have hex grids spawning in Unity.  Yay!
+
+2D test grid:
+
+[[http://i.imgur.com/rXlbtQH.png]]
+
+3D test grid (this is what we will use eventually, but I am forgoing it while figuring out the movement system):
+
+[[http://i.imgur.com/7b7QPGs.png]]
+
+And a little Red on the 2D test grid, why not:
+
+[[http://i.imgur.com/urke1Zs.png]]
+
+Over this next weekend I hope to have the basics of movement down, but we'll see.
+
+--------------
+
+Last and least, we have decided to include pokemon faeces.  That's right, folks, poop for everyone.  It's likely not going to be anything huge--maybe you can use it while tracking something down, etc.  But after finding out that Dwarf Fortress doesn't have any, we just had to jump on the opportunity to be able to say “We've Got More Shit Than Dwarf Fortress.”
+
+Also, it leads a bit of credence to the proliferation of Ditto.  That's right folks: Ditto, at its core, is /really/...Mew/poo/.
+
+--------------
+
+Feel free to leave any comments or questions below. Also feel free to join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]] for brainstorming and discussion.  It's a great group, really, and I would highly recommend hanging out, even if you're not in it for this project itself.  There's tabletop groups, Dota 2 partying, and [[http://i.imgur.com/j3jRmMZ.png][puns]] like you wouldn't [[http://i.imgur.com/8cUkzoGl.jpg][believe]].  Come join us!

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 2
+:DateUnix: 1439599656.0
+:DateShort: 2015-Aug-15
+:END:
+
+The idea is to represent an executable string of bytes - ie a computer program - with binary input. /How/ this output is executed doesn't matter much - as x86 assembly, Python bytecode, source to be compiled against the (language) VM... so long as the effect is good, we just want the shortest string that gives that effect. Assembly language is likely to be suboptimal, since it's not concise - hence a high level language like Python or Haskell.
+
+You can use this trick as a binary search for a string representing /any desired information/ for that matter, or even "the string whose production would yield the greatest net utility". Or "the Turing machine of length X that takes longest to halt". True oracles are OP!

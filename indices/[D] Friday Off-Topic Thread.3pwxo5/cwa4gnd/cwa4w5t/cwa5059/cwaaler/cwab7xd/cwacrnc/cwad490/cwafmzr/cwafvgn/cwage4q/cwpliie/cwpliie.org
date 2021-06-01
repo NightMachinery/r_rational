@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1446745086.0
+:DateShort: 2015-Nov-05
+:END:
+
+#+begin_quote
+  There's lots of systems like that running in userspace. They're more or less impenetrable to third party platforms, you end up with lock-in to a specific language or even application framework within a language instead of to an OS, which is hardly an improvement.
+#+end_quote
+
+I really like capnproto. We'll see if that can address some of those problems.
+
+#+begin_quote
+  Why would you put your stream file content inside this virtual file system instead of the underlying stream file that's already there?
+#+end_quote
+
+There are costs to splitting things between two different api's. Mostly just to unify the address space honestly. But it would also let you register a callback to a file changing, like a nicer interface to inotify.
+
+It would also let you use an equivalent to fuse filesystems. Something that would take a jpeg and translate it to a byte array, as an example.

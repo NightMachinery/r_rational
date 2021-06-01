@@ -1,0 +1,64 @@
+:PROPERTIES:
+:Author: throwawayIWGWPC
+:Score: 1
+:DateUnix: 1487078432.0
+:DateShort: 2017-Feb-14
+:END:
+
+#+begin_quote
+  and imo, if the Creator is at a good enough lvl with soul magic to overwrite souls, he's capable of identifying souls
+#+end_quote
+
+I disagree with this. From the perspective of programming, overwriting data couldn't be simpler. I'll use Python for the sake of simplicity:
+
+#+begin_example
+  # The state of pre-loop Zach.
+  zach = {pre-loop data}
+
+  # Overwrite with new Zach.
+  zach = {post-loop data}
+#+end_example
+
+Marking data as having or not having a tag is also very simple:
+
+#+begin_example
+  # Give Zorian the marker.
+  zorian["isController"] = True
+
+  # Zorian pings Sovereign Gate.
+  if zorian["isController"]:
+    giveAccessTo(zorian)
+#+end_example
+
+However, identification of a complex piece of data can be a very involved process. Often times you have to store an entire copy of the data in question, so you'd have to basically have a template Zach lying around to check against anyone claiming to be Zach. And then to perform that check, you'd have to take /every aspect/ of your Zach template and check it against /every aspect/ of the person claiming to be Zach, one aspect at a time, until either a discrepancy is reached or you've checked the entirety of the Zach template against the person who claims to be Zach.
+
+#+begin_example
+  # Make template.
+  zachTemplate = zach
+
+  # Compare each in Zach...
+  for eachX in zachTemplate:
+
+    # ...against each in Zorian.
+    for eachY in zorian:
+
+      if eachX == eachY:
+        sameSoul = True
+      else:
+        sameSoul = False
+
+  if sameSoul:
+    giveAccessTo(zorian)
+#+end_example
+
+It's eight lines of code compared to two lines of code in the previous example. However, considering how much information is stored in a soul, those eight lines of code represent innumerable checks as each aspect of a soul is checked against each aspect of the template. Compare that with a tag that can be examined with a single check!
+
+And then, even the above algorithm wouldn't be appropriate to check a soul's identity because Zach's soul is supposed to change and develop over the course of the loop. So instead, the developer of the Sovereign Gate would have to think very hard about what aspects of a person's soul are unique and immutable.
+
+If the soul has an immutable ID number, then the check is easy, but soul ID numbers are unlikely. Souls were created by sentient beings, and recognition of a unique individual is not very difficult for sentient beings. You said earlier that we can easily recognize a person even if they've aged, so there's no reason for the gods to have stamped every soul with an ID number. However, how do you teach a programmed spell to repeat that trick? It takes sophisticated software to identify a person. Can you articulate clearly what makes so-and-so unique in a way that a program can easily check?
+
+This kind of recognition is a major difficulty in computer science and has been in the works for decades---and you're asking a spell to do this in a world where magic can change so many aspects of a person's identity.
+
+Even in philosophy, these are serious and complex questions without easy answers: What makes you who you are? Is the person you are now the same person who existed a second ago or a month ago or ten years ago? In philosophy, a well-supported and popular answer to that last question is, "No, past you and present you are not the same person. You are two people who are similar, share many properties, but are different in important ways."
+
+Compare that rabbit hole with the straightforward process of attaching a marker to a person's soul. And in Mother of Learning, there are many instances where a ward needs to identify whether someone is friend or foe, and this is always done by attaching a marker to the person, either as a physical object or as a mark on the soul, which is much easier than grappling with the complex topic of the Philosophy of Self.

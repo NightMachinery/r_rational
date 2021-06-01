@@ -1,0 +1,34 @@
+:PROPERTIES:
+:Author: lsparrish
+:Score: 1
+:DateUnix: 1434478121.0
+:DateShort: 2015-Jun-16
+:END:
+
+Cost to move Mercury's mass from 0.3 to 1.0 au is about 40km/s, so since velocity scales on a square law we are looking at 100 times the energy relative to merely disassembling it. 400 hours at 1/3 solar output (since Knapp waved away the 90% penalty that Dvorsky included) or 4000 hours at 1/3 with an additional 10% penalty (say from transmission costs or low-efficiency rockets). Since it can wait til after the sphere is complete in the ~0.3 range, I don't think the penalty needs to factor into the replication rate.
+
+#+begin_quote
+  4×pi×r^{2} gives the surface area of a sphere at that distance -- 6^{16} square kilometers
+#+end_quote
+
+[[https://www.google.com/search?q=4pi+x+%28%287%C3%97%2810%5E7%29%29%5E2%29][4pi x ((7×(10^{7} ) )^{2} ) = 6.1575216 x 10^{16}]].
+
+#+begin_quote
+  That leaves us with ~10^{9} W.
+#+end_quote
+
+That's about right, so I guess the above is a typo. But 3.8/6.1 is about 6, so you'd round up to ~10^{10} W/km^{2.} It's [[https://www.google.com/search?q=solar%20irradiance%20mercury][about 9]] in reality anyway.
+
+#+begin_quote
+  To build a 1m array we'll need 1,000 cm3 or 10kg.
+#+end_quote
+
+At this areal density, we end up with it costing 10000 tons (aka 10M kg or 10Gg, 10^{7} kg) per square kilometer. Each of those is getting around ~10 kW or 10^{4} W per square meter so times a million is 10^{10} W before we do any fudging for losses. With 1/3 x 1/10th, we end up with 3% of the power or 3 x 10^{8.} Given the 8MJ/kg cost to start 80TJ (call it ~100TJ) to launch a 1km^{2} chunk. That's ~10^{14} J, whereas and we are getting 3 x 10^{8} W/km^{2.} So we need 300000 seconds to double our mass in solar panels. That's about three days, suggesting that we could double twice per week.
+
+#+begin_quote
+  That's 200 seconds of mass driver output, which means we get 18 square meters of solar generator every hour, or 400 per day. Or to put it another way, our 1km solar panel takes 10^{7} kg of material, which is about 2×10^{7} seconds, which is about eight months at the starting rate.
+#+end_quote
+
+A hypothetical 200 second doubling time per square meter, which is what we would have if energy was the only bottleneck (it won't be in reality, but setting that aside) would would reach the target area of the whole sphere ~2^{75} m^{2} in about 1500 seconds, a 4 hour period of time. It could then finish disassembling Mercury over the next few hours, and start moving stuff out to 1.0 AU over the course of about six months.
+
+ETA: [[https://www.youtube.com/watch?v=zQTfuI-9jIo][Stuart Armstrong]] assumes the panels will take ten years to place, which is the main bottleneck in his model. I'm rather doubtful that this would be at all necessary, but he did give the disclaimer that it was a very conservative model, and it is the model Dvorsky stuck with.

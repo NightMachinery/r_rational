@@ -1,0 +1,30 @@
+:PROPERTIES:
+:Author: derefr
+:Score: 1
+:DateUnix: 1509992330.0
+:DateShort: 2017-Nov-06
+:END:
+
+In my experience as a programmer, "just write software" /is/ a magic wand to solve combinatoric explosion of requirements---because, with half-finished software in hand, the requirements-specifiers are forced to realize that to get the project done, the requirements have to be reformulated to stop being combinatoric. ;)
+
+In other words: formalizing a system forces you to discover (or invent!) unifying principles to its elements, in order to be able to ever finish in time.
+
+Look at any fighting game with a ton of characters that come from different universes, and you'll find that their powers have been unified into a rather few underlying physics-effects. The Smash Bros. series, for example: every power (and every stage-effect or item-effect) can be specified as:
+
+- a set of animations that have partial invulnerability hitboxes (usually where the weapon is)
+- one or more collision-objects that impart force when collision is detected with them, connected to the generator
+- zero or more forces applied on /each/ collision: momentum-imparting force (a.k.a. "knockback"), shield-breaking force, direct acceleration force (wind, grapples, "gravitational pulses"), etc.
+- zero or more un-interruptable animations, imparted on /first/ collision, not stackable: tripping, sleep, etc.
+- zero or more continuous-force effects, imparted on first collision, not stackable: actual gravitational force (bunny ears), time-dilational force (Timer items, Bayonetta's counter, etc.), reversed-controls effect, etc.
+- zero or more whole-stage continuous effects: darkness, shifted camera window, inverted display, etc.
+- zero or more temporary "zones" on the stage that will continuously spawn effect-colliders (of one of the above types) "at" a character's position, at a given rate, as long as a character remains within the zone.
+
+--------------
+
+But in the process, you're right:
+
+#+begin_quote
+  then there would be endless edge cases to deal with
+#+end_quote
+
+When building such a physics engine, the default answers to edge-case interactions are usually pretty dumb. You can add simple arithmetic interactions to "smooth out" the interactions, so that they at least e.g. let both rules /apply/ instead of just having one override another. But this is frequently unsatisfying. A lot of the later-stage development of such an engine comes from replacing these simple interaction-formulae with more complex effects that only happen for a given edge-case, one at a time. The less time the developers have, the fewer of these complex interactions make it into the final engine. And that might be a deal-breaker, if interesting interactions are the whole point. :)

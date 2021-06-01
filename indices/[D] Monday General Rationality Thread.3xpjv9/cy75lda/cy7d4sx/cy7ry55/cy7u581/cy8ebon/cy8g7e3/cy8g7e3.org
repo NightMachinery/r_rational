@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: Uncaffeinated
+:Score: 1
+:DateUnix: 1450833561.0
+:DateShort: 2015-Dec-23
+:END:
+
+The fact that it is PAC learnable is more of a mathematical curiosity than anything, since all it's really saying is that given a distribution of terminating programs, you can estimate a time bound below which most of them will terminate.
+
+Re approximation: There are some problems where approximation is useful and some where it isn't. Generally, any problem inspired directly by the real world (routing your trucks, optimizing manufacturing processes, etc.) is a problem where approximations are useful. By contrast, more abstract problems, such as anything from cryptography tend to require an exact solution, where approximations are useless.
+
+There also seems to be a conservation of hardness thing. A randomly generated SAT instance is usually easy, but if you take a hard problem, say factorization, and convert it into a SAT, the resulting SAT instance is also intractable. There aren't any free lunches.
+
+To the extent that "increasing intelligence", whatever that means, increases the ability to solve hard problems, then increasing intelligence is at least as hard as every problem which it enables a solution of. Complexity results just don't allow loopholes like that. (You can still do stuff like increase clock speed, since that's just engineering, but you'll quickly run into physical limits there)

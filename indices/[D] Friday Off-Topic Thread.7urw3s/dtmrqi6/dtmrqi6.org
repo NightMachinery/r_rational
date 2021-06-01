@@ -1,0 +1,56 @@
+:PROPERTIES:
+:Author: phylogenik
+:Score: 6
+:DateUnix: 1517589941.0
+:DateShort: 2018-Feb-02
+:END:
+
+Are there any well-accepted ways of comparing estimated probabilities of a discrete state (e.g. A/P or 0/1 for binary parameters, 0/1/2 for ternary, etc.) to the true value of that discrete parameter? Specifically, one of my current projects is a simulation study and one of its components is trying to determine how different degrees of model misspecification might bias my retrieval of the values of a set of discrete parameters in the true, data-generating model. I have samples from the joint posterior that give me probabilities for the presence or absence of the discrete param, e.g. under --
+
+*/Misspecification condition 1/*:
+
+Replicate 1:
+
+| Estimated Probability of State '1' | True State |
+|------------------------------------+------------|
+| 0.11                               | 0          |
+| 0.20                               | 0          |
+| 0.37                               | 1          |
+| 0.38                               | 0          |
+| 0.43                               | 0          |
+| ...                                |            |
+| 0.85                               | 1          |
+| 0.96                               | 1          |
+| 0.99                               | 1          |
+
+Replicate 2:
+
+| Estimated Probability of State '1' | True State |
+|------------------------------------+------------|
+| 0.07                               | 0          |
+| 0.09                               | 0          |
+| ...                                |            |
+
+Replicate 3:
+
+...
+
+Replicate 100:
+
+...
+
+*/Misspecification condition 2/*:
+
+...
+
+*/Misspecification condition 3/*:
+
+...
+
+*/Misspec.../*
+
+(technically, one might think of there being hundreds of millions of discrete parameters in the model I'm working with -- a major focal parameter is the topology of a tree, which for a strictly bifurcating tree with n tips results in 2^{n-1} possible bipartitions. The approximated probability almost all of these will be 0, since after considerable thinning I only collected like 20k samples per analysis lol, and even then ESS is less that that)
+
+For eyeballing purposes, my first thought was to bin the probabilities, find the average probability of the samples in each bin, count up the proportion of times the corresponding parameter is truly 1 in the data generating model for each misspecification condition, and then make a scatter plot of the results, but I don't have enough replicates to give me good bins at, say, a 0.01 resolution, so I'd need something like 0.1 sized bins. Alternatively, I can imagine doing some sort of dodgy weighted averaging to fabricate points at tiny intervals, and then I'm sure there's something to do with summing the distances of the estimated probabilities to the true values. Besides eyeballing I could fit a binomial regression to the "raw data", but then I don't have any good intuitions for how to interpret parameter estimates under the usual link functions... but then could I just not use one, since my predictors are probabilities themselves, constrained to [0,1]? Although my "observations" wouldn't actually be independent, and I don't have a way to model that nonindependence... IDK, but I /would/ prefer to not reinvent any square wheels. Any thoughts? This seems like a really basic thing to do but some cursory google-fu is failing me, and I know some people here like to ask their inner hearts what it feels the probability of some discrete event occurring in the following year is and then see how well they did at the year's end for self-calibration purposes or whatever, which is the same sort of problem (I'm sure this pops up in stuff like weather forecasting, too, where you try to predict whether it will or will not rain in a given location on a given day).
+
+edit: ahhhh hmmmm hold up, I think I found an answer [[https://en.wikipedia.org/wiki/Scoring_rule]], e.g. [[https://en.wikipedia.org/wiki/Brier_score]], although that one obviously wouldn't work because 1/N ≈ 0

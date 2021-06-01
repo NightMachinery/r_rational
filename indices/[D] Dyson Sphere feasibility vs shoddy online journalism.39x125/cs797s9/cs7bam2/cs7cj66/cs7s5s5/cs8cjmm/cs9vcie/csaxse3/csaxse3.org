@@ -1,0 +1,44 @@
+:PROPERTIES:
+:Author: danielravennest
+:Score: 2
+:DateUnix: 1434650039.0
+:DateShort: 2015-Jun-18
+:END:
+
+#+begin_quote
+  original research is something that Wikipedia prohibits
+#+end_quote
+
+I treat the two wikibooks I am working on as engineering textbooks. So I see no problem including worked-out examples to show how to design something. If something is truly new, then yes, go publish it somewhere and link back to it in the wikibook.
+
+#+begin_quote
+  Cool! Any chance that's online anywhere with your name credited?
+#+end_quote
+
+I don't know if it's online, but our study report was published in the journal /Space Power/ v. 6, no. 1, 1986, as a special issue. (Pergamon Press, ISSN 0883-6272). I'm listed as a contributor (Dani Eder).
+
+#+begin_quote
+  Also, what components did the remaining 2% consist of -- printed semiconductor electronics?
+#+end_quote
+
+If I remember right, it was mainly rare elements not found on the Moon, or difficult to make parts. Semiconductors are a poor candidate to make in space, not because of vacuum or clean room conditions, which are easy to make in space, but the very tight mechanical and thermal tolerances for the optics and masks. You need to expose the various layers for a chip in exactly the same places, hundreds of times per wafer. You aren't allowed any thermal expansion or contraction, vibration, etc. So while the chips are small, the lithography machines are massive, complicated, and very accurate. Only a couple of places in the world make them, and they would not take kindly to being launched on a rocket. Until you need millions of chips in space, simply launching finished ones is less mass than even one lithography machine.
+
+Now, power electronics, in particular solar cells, don't require nanometer tolerances, and are quite reasonable to make in space. Silicon is usually the second most common element in space rocks, and that's the most popular solar cell material.
+
+#+begin_quote
+  I wonder how many NEAs really would make good long-term colonies / save on delta-vee relative to the Moon?
+#+end_quote
+
+It depends on what technology you have for landing on the Moon. Today you need chemical rockets, because you need high thrust to land without crashing. Electric propulsion is roughly 10 times as fuel-efficient (10x higher exhaust velocity), so you can apply more delta-V for the same velocity change. In fuel terms, 90% of Near Earth Asteroids are easier to reach than the Moon. A secondary factor is that the Moon itself can provide a gravity assist of 1-2 km/s in both directions when trying to reach a NEA, but not when you try to land on it.
+
+If you build an efficient way to get mass off the Moon, and to deliver crew and cargo to the surface, the numbers change a whole lot. In that case, NEA's primary advantages are their different composition, high in carbon, water, and reduced metals, that the Lunar surface is short on. What I expect then is a colony in free-orbit, to get full time sunlight, with both lunar and asteroidal raw material supply.
+
+#+begin_quote
+  The bottlenecks there would be rocketry for the tugs and fuel (although fuel can be pretty cheap in this context once there's a way to mine a carbonaceous asteroid for water).
+#+end_quote
+
+Plasma thrusters like the VASIMR are not choosy about propellant, as long as your microwave heater is tuned to the particular material. Oxygen will work, and that's the most common element in most rocks. For hauling asteroids back to the Moon's vicinity, you consume ~ 2% of the returned mass in propellant for the next trip, so it is self-sustaining.
+
+Near Earth Asteroids don't have water as water or ice, they are too close to the Sun to hold on to it. What they have is "hydrated minerals" where the H and O are chemically bound. Most of it can be extracted by simple heating to 200-400C. A solar still to extract and condense water is easy to do in space. Reducing mineral oxides to their constituent elements requires lots higher temperatures, but those temperatures are lower in a vacuum than at Earth pressures (lower vapor pressure for the evolved Oxygen, mostly)
+
+I see the early colonies being in the Earth-Moon vicinity, then extending to other orbits using sequential bootstrapping. You emplace a starter habitat and production kit on a particular asteroid, then forage around it (in delta-V terms) for other resources. Eventually you can produce a new habitat and starter kit, and use an electric tug to move it to another asteroid farther out.

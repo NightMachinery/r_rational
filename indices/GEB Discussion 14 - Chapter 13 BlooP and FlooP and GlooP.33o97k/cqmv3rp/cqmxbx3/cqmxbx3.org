@@ -1,0 +1,37 @@
+:PROPERTIES:
+:Author: xamueljones
+:Score: 3
+:DateUnix: 1429856416.0
+:DateShort: 2015-Apr-24
+:END:
+
+Sorry, but I have never heard of any proofs of the Halting Problem which wasn't a contradiction proof. All contradiction proofs I have ever read work by the following two steps:
+
+- Assuming there is a program which takes a machine M and input w to output 'ACCEPT', if M halts on w, or 'REJECT' if M loops forever on w.
+- If such a program exists, it is always possible to write a new program which immediately leads to a contradiction. The new program will be perfectly valid in every way except for it's usage of the first program. Hence no program exists that can decide if M halts or not on w in finite time.
+
+There's multiple ways to do step two, but they tend to boil down to constructing some metaHALT program which somehow asks if a new given program will halt when given itself as the input. This is fine. But what happens when you feed this metaHALT program to itself?
+
+......
+
+*Review of Proof*
+
+HALT(M, w) - solves the halting problem of whether or not M halts given w, in finite time.
+
+OPP(X) - asks if X halts when given input X <=> HALT(X, X). OPP(X) outputs accept if HALT(X, X) rejects. OPP(X) will loop forever if HALT(X, X) accepts.
+
+OPP(OPP) - asks if OPP halts when given input OPP <=> HALT(OPP, OPP)
+
+No matter what HALT(OPP, OPP) says, accept or reject, OPP by definition does the opposite. This will lead to a contradiction as shown below.
+
+- If HALT(X, X) outputs accept or that X halts in finite time (whether or not X accepts or rejects input X is ignored), then according to OPP(X), OPP loops forever.
+
+- But if HALT(OPP, OPP) outputs accept or that *OPP halts* in finite time (whether or not OPP accepts or rejects input OPP is ignored), then according to OPP(OPP), *OPP loops forever*. Contradiction!
+
+- If HALT(X, X) outputs reject or that X loops forever, then according to OPP(X), OPP halts given input X.
+
+- But if HALT(OPP, OPP) outputs reject or that *OPP loops forever* given input OPP, then according to OPP(OPP), *OPP halts* given input OPP. Contradiction!
+
+In both cases, it's a contradiction that OPP is saying that it's looping forever /and/ halting for the same input.
+
+I hope this helps, because I have never heard of any proof that wasn't similar to this one in structure.

@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1445626414.0
+:DateShort: 2015-Oct-23
+:END:
+
+Databases are pretty slow, because they're indexed. This has a lot in common with a document database (particularity rethinkDB) but it's not. You couldn't put any type of socket in a document database, as an example (Although I've seen at least one guy try to stream video over rethink).
+
+Why aren't we using databases instead of filesystems? Part of it is that they tend to have fixed schema, or just be too slow because they focus on fast indexing.
+
+A lot of apps store sqlite in a file system, wouldn't the reverse be better? Storing binary blobs in a database?
+
+Well no, because databases aren't optimized for that.
+
+Imagine search at the speed of grep, but data structures similar to a document store.
+
+Or, to put it another way, right now a filesystem is a tree data structure where all of the leaf nodes are binary blobs. Why binary blobs instead of a more nuanced data structure?
+
+#+begin_quote
+  You need some kind of server to stop everyone from getting all the data.
+#+end_quote
+
+A permission system. Like unix, or any file system. Postgres is working on per-row security. It's not really relevant.

@@ -1,0 +1,25 @@
+:PROPERTIES:
+:Author: Hidden-50
+:Score: 7
+:DateUnix: 1563300097.0
+:DateShort: 2019-Jul-16
+:END:
+
+I'm starting /Getting the Hang of Thursdays/ right now, from your description it sounds interesting (:
+
+The sidebar and white theme of the page seem a bit annoying; if anyone else wants to change this, feel free to make an empty userstyle for the page and insert this:
+
+#+begin_example
+  body, #wrapper {
+      background: #000;
+  }
+
+  .widget-area {
+      display: none;
+  }
+
+  #content {
+      margin: 0px;
+      color: #888;
+  }
+#+end_example

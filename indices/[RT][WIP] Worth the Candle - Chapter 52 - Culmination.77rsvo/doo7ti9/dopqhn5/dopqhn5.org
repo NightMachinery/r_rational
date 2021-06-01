@@ -1,0 +1,69 @@
+:PROPERTIES:
+:Author: renegadeduck
+:Score: 4
+:DateUnix: 1508658954.0
+:DateShort: 2017-Oct-22
+:END:
+
+Is inline CSS okay? The HTML guide you linked seems to imply that it's allowed, but then the example seems to show that it doesn't work.
+
+The FAQ isn't clear about this at all.
+
+It looks like the .mobi format is based on HTML 3.2, and it has very limited table support. On the other hand... it's hard to tell.
+
+I'm guessing the short answer to this is just, “No, inline CSS doesn't work.”
+
+--------------
+
+I'm going to edit this as I think about this more.
+
+--------------
+
+It's not just the styling. Tables have to be pretty tiny before they work well in an ebook. Even reading on my computer the tables are pretty much illegible in epub or mobi format.
+
+You could turn it into a list, though that's awkward in its own way:
+
+*** 5 -- PHY -- Physical: Your body and physical existence in the world. Governing stat for all physical skills and the three physical abilities.
+    :PROPERTIES:
+    :CUSTOM_ID: phy-physical-your-body-and-physical-existence-in-the-world.-governing-stat-for-all-physical-skills-and-the-three-physical-abilities.
+    :END:
+***** 4 -- POW -- Power: How much force you can exert. Used to break down doors, bend rebar, or shove someone out of the way.
+      :PROPERTIES:
+      :CUSTOM_ID: pow-power-how-much-force-you-can-exert.-used-to-break-down-doors-bend-rebar-or-shove-someone-out-of-the-way.
+      :END:
+
+- 1 -- Unarmed Combat
+- 3 -- One-handed Weapons
+- 
+
+- 1 -- Improvised Weapons
+
+***** 4 -- SPD -- Speed: How fast you move. Used to juggle knives, race over rooftops, or do cartwheels.
+      :PROPERTIES:
+      :CUSTOM_ID: spd-speed-how-fast-you-move.-used-to-juggle-knives-race-over-rooftops-or-do-cartwheels.
+      :END:
+
+- 
+
+- 0 -- Dual Wield
+- 5 -- Pistols
+- 
+
+--------------
+
+Do you really need all of that information? Could you cut out the tooltip information?
+
+--------------
+
+Maybe you could keep the table, but arrange the skills vertically?
+
+| force    | a        | table                   |
+|----------+----------+-------------------------|
+| 5 -- PHY | 4 -- POW | 1 -- Unarmed Combat     |
+|          |          | 3 -- One-handed Weapons |
+|          |          |                         |
+|          |          | 1 -- Improvised Weapons |
+|          | 4 -- SPD |                         |
+|          |          | 0 -- Dual Wield         |
+|          |          | 5 -- Pistols            |
+|          |          |                         |

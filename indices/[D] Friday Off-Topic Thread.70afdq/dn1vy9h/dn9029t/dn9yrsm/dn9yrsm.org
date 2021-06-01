@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 2
+:DateUnix: 1505937953.0
+:DateShort: 2017-Sep-21
+:END:
+
+So System, as I've designed it, is at least 80% the same as the system in a [[https://en.m.wikipedia.org/wiki/Entity%E2%80%93component%E2%80%9%20system][entity-component-system paradigm]]. Systems do two major things: one, they define particular kinds of entity or component (thus the WorldSystem defines a Map, probably a Tile and maybe even a TilePosition component for units to use) and two, they are called each frame and perform actions on their classes of entity and component. Anything outside of those two things is (probably) passed over to another system, as a way of saying "hey, our entities did something that affects your entities, deal with it".
+
+It helps that the majority of my experience is with Unity, which pretty exclusively uses E-C-S, so I'm used to the separation of concerns that it enforces. It does require a certain amount of discipline, but that's entirely what XGEF is for: to force the developer to build in a particular way. /I'll/ have to make sure my habits are good, but the hope is that by so doing any downstream users (myself included) can then lean on my work in the form of XGEF.
+
+Plus, it's important to have Systems to help structure mods. In that way they're a lot like namespaces, giving clearly marked regions for containing certain kinds of content. Not everyone will follow the signposts, but those that do will find sensible standards waiting for them (or so we hope).
+
+I'll grant you that my one-sentence summaries are kind of vague. Part of that is the burden of knowledge starting to rear its ugly head (we've iterated on every aspect of the design enough that it's difficult for me to remember the most recent conclusion, usually), and part of it is leaving some things open ended so I don't feel like I've painted myself into a corner with a rigid unfeeling design. But hey, that's why I'm working on it now--get it some concrete foundation and start sorting those vague ambiguities out. [[https://docs.google.com/document/d/1SlYaK6vZ0OmkQsuVOMCIOMb6nPIU9I1vKMTFMEL0Wk8/edit?usp=drivesdk][We know /what/ we want to include]] and we've got it probably about 75% of the way sorted; I'll patch the rest as we go.

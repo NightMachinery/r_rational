@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: Prezombie
+:Score: 3
+:DateUnix: 1393506272.0
+:DateShort: 2014-Feb-27
+:END:
+
+Sure, it's fairly obvious that the design of the walls is part of the mystery, but the setup has the potential for a very interesting mathematical puzzle if you prune the setting down to platonic ideals.
+
+The titans could behave with simple laws. At fixed intervals, titans can break the wall in one place, essentially deleting one line segment from a simple graph. They attack whichever outer wall protects the most land, or a random one from all the options with equal results. They don't plan multiple attacks out, they won't attack a spot to open up a wall for the next attack which would be decisive. Corners where three or more walls touch would be considered as unbreachable.
+
+If you idealize the situation to Territory = population, the "score" of the map would be the total territory-years it promises, adding together the total remaining area each iteration, divided by the total length of all the walls.
+
+The number of distinct territories has to be finite, so no fractals.
+
+a circle results in a score of ( pi * r^{2} )/(2 pi r), or simply pi/2pi if r is 1. which is obviously 0.5.
+
+A circle with a single wall across the center would have an area-time of (1.5 pi r^{2)} and a wall length of (2 pi r)+2r. (1.5 pi r^{2)/[(2} pi r)+2r] is about [[https://www.wolframalpha.com/input/?i=%281.5+pi+%29%2F%5B%282+pi%29%2B2%5D][]]
+
+Does adding more radial walls converge the score or diverge it?

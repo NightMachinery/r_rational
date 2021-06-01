@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: suyjuris
+:Score: 4
+:DateUnix: 1449922577.0
+:DateShort: 2015-Dec-12
+:END:
+
+I have just read the rules, my comments are purely theoretical.
+
+The rules text could be more structured, such that information is presented in order of dependency and significance. For example, the attack tables and the list of mysteries could be at the end. Also headers would help. The tables are not sufficient to look up the attacks, one has to refer to the text.
+
+I have also not figured out the board. The rules make it seem like an undirected graph with a limit on the degree. Even if you reduce it to a hexagonal grid, the amount of bookkeeping is immense -- for each space one needs to remember whether it is over- or underwater and the turn it was created in case of the former. Using hexagonal pieces of cardbord would solve the former, the latter requires an immense amount of dice. Or, you take a big sheet of paper and write the board down, which reduces readability and is cumbersome.
+
+The underwater mechanic is interesting, but maybe it would better work with /elevation/ instead of the turn number. Instead of assigning the turn number as the 'height' of a space, which does imply the necessity of synchronizing the amount of water levels generated and the amount of space generated linearly to the turn number (meaning that the players have to constantly raise the water level for the mechanic to matter), just give each space an elevation. Each space with an elevation of zero is underwater and each underwater space has an elevation of zero, space with an elevation grater zero are overwater. The earth mystery can raise or lower the elevation of a square by one, the sea mystery lowers all elevations by one.
+
+There are five types of pieces (effectively three, infantry is mentioned but not described), each with four types of elements. Makes sixteen types of pieces. Representing those is problematic. Most of the pieces have only a local sphere of influence (which is good, as it reduces the explosion of possibilities), although the knight can teleport. The interactions between the pieces are complex (most of the rules text deals with explaining them), and the number of pieces is probably one per turn, limited only by board size and fighting the opponent. The board is infinite. That means that allowing the players strong aggressive plays is imperative.
+
+The element types of the pieces are mostly a combat stat (except the mystic). Even ignoring that remembering the interactions is difficult as their are no underlying principles mentioned, the fact that the elements are freely chosen by the players and do not change the way the pieces act fundamentally, you have Rock-Paper-Scissors balancing. Sure, the nash equilibrium is not as trivial, but for games you always want a strategic thinking type of problem solving, not a number crunching one.
+
+The main problem I see is complexity. Both the board and the pieces are too complex for people to fit comfortably in their head, having both does not improve the situation. Implementing the game on a PC would make bookkeeping less tedious, but visualising the information and an intuitive understanding of the mechanics is still a problem. If the players cannot comprehend the situation and think through all interactions of /one/ turn, they will just stop thinking strategically or at all. Strategy is only possible when one has a solid grasp of the board state.
+
+I would advise to either make the board a square grid (even better with a specified size), and then think about removing the elements or making them more interesting. The latter still has many pieces (16 pieces, means 136 interactions), this can be alleviated by coming up with general rules to describe many pieces or interactions at once, or using flavor to make them easier to remember.
+
+Or, keep the board and replace the pieces by the simplest version that allows the game to be non-trivial (Earth Mystic, Sea Mystic, plus X and maybe plus Y).
+
+Also, play it if you haven't and write how to into the rules. It is easier to understand rules if one can visualize them.

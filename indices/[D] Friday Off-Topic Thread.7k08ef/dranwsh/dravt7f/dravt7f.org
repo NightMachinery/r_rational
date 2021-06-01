@@ -1,0 +1,19 @@
+:PROPERTIES:
+:Author: Veedrac
+:Score: 2
+:DateUnix: 1513365049.0
+:DateShort: 2017-Dec-15
+:END:
+
+#+begin_quote
+  put parenthesis around your data to use a list, curly braces to make a dictionary, and I think square brackets to make a tuple?
+#+end_quote
+
+#+begin_example
+  a_tuple = 1, 2, 3
+  a_list = [1, 2, 3]
+  a_set = {1, 2, 3}
+  a_dict = {1: 1, 2: 2, 3: 3}
+#+end_example
+
+Parentheses, =(= and =)=, are only relevant for /empty/ tuples, aka. =()=. The expression =(1, 2, 3)= is just a parenthesized tuple, just as =([1, 2, 3])= is a parenthesized list.

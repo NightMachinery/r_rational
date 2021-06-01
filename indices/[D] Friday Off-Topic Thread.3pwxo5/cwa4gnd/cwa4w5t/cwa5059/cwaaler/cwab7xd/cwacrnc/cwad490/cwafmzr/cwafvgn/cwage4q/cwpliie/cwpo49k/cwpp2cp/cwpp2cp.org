@@ -1,0 +1,36 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1446749994.0
+:DateShort: 2015-Nov-05
+:END:
+
+#+begin_quote
+  now it sounds more like you're talking about [...]
+#+end_quote
+
+Well hopefully I'm not just going to be implementing a shittier version of something that already exists.
+
+You've worked with JSON, right? Imagine that instead of files you just had a single giant JSON tree. It's not actually a JSON tree, you don't need to worry about loading the whole thing into memory or anything.
+
+"files" are not different from the metadata. In fact, if you're implementing files as big chunks of binary or acii you're probably using it wrong.
+
+For example, a blend file might look something like this
+
+#+begin_example
+  {
+      "datatype":"blendfile",
+      "textures":[
+          {"datatype":"jpeg","rawData": $bitstream, "pixels": $HookForFuse-like-translator},
+          {...},#More textures
+          {...},
+      ],
+      "meshes":[
+          ...
+      ]
+  }
+#+end_example
+
+Files are objects like jpegs, which are objects like pixels, and so on. There's no underlying byte chunk. Except there is, thanks to the fuse-like system, which works a lot like python's duck typing.
+
+The jpeg is stored on disk as a jpeg, because file compression is important. Another script provides the attribute "pixels" which lets you access the compressed data as if it were an array of pixels.

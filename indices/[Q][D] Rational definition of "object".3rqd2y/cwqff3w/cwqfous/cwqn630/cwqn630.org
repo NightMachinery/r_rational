@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: cae_jones
+:Score: 2
+:DateUnix: 1446819689.0
+:DateShort: 2015-Nov-06
+:END:
+
+#+begin_quote
+  Liquids really do need to be covered somehow. They're just too common.
+#+end_quote
+
+I ran into the same issue when trying to understand the workings of a hypothetical space-compression tech (Crystals of Holding, basically). Mostly because I needed them to not break and start eating everything, but I also need them to be capable of holding air and other fluids.
+
+I went with the "can an arbitrarily thin sheet wrap around it?" rule for solid objects, so they can't just rip things apart. Since I needed other rules (some shouldn't be capable of holding people, but others should), this comes down to some sort of programmable threshold/scan/etc.
+
+Maybe the object-wrapping sheet behaves like a fluid with arbitrary surface tension, (which also ignores gravity somehow), such that it can wrap water but not penetrate it? This would imply it could penetrate fluids without water-like properties (air, maybe oils, maybe water if the tension is sufficiently broken or irrelevant)? This seems flawed--water wouldn't have much surface tension cupped in your hand, especially on the bottom?--but it might help, if you need a universal solution?
+
+If you could put an adjustable threshold of sorts on your magic--at level x it can only hold solid objects, at x+1 water, at x+5 air, at x-3 objects have to be especially hard, etc--that could avoid weird definition issues, but would introduce more complexity that needs patching (under what circumstances does the threshold change? Can a sufficiently clever/determined mage find ways to use an arbitrary threshold to achieve partial transfiguration, or to turn air into cheese?). Alternatively, you could just find the threshold that permits water with a defined surface, but nothing looser (which means that spells would not be able to cross the boundary between water and air, unless the effect manifests without crossing the space between the caster and the target).

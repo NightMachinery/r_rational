@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1446761421.0
+:DateShort: 2015-Nov-06
+:END:
+
+Computationally inefficient. The whole point to the format is you can memory map it in, read it in, share it, whatever... and it's already a structure you can directly address in place. Putting a big binary blob like a JPEG in the middle nullifies the whole point of using it.

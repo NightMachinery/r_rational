@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 2
+:DateUnix: 1521258193.0
+:DateShort: 2018-Mar-17
+:END:
+
+Some feedback on the article:
+
+- You're not really explaining what state is, or how different languages treat them. Personally, I think functional programming has as much or more "state" than imperative programming; the difference is it has less incoherent / fragmented state, because functional programming makes cache invalidation easier.
+
+- Imperative programming isn't opposed to functional programming, it's opposed to declarative programming. Imperative programming can have subroutines, so the part about it being more prone to code duplication doesn't really apply.
+
+(also, I'd argue than object-orientation is less of a paradigm and more of a way to structure both functional and imperative programming, and that it's extremely overused, but that's a personal opinion)

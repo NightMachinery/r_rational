@@ -1,0 +1,74 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1446755465.0
+:DateShort: 2015-Nov-06
+:END:
+
+#+begin_quote
+  You haven't previously said that you weren't actually talking about file systems, or that you were only referencing them metaphorically.
+#+end_quote
+
+I think I've said "filesystem like data structure" and "pseudo file system" a few times, but I definitely take responsibility for that failure to communicate.
+
+#+begin_quote
+  Since you're shifting the ground to something else, then I'm happy to discuss it with you.
+#+end_quote
+
+Glad to hear it. As I mentioned, your feedback has already been pretty invaluable.
+
+#+begin_quote
+  Let's set some ground rules: are we talking about how data is organized on a physical storage mechanism (i.e., a filesystem), or are we talking about how data is organized in RAM (a cache)
+#+end_quote
+
+There isn't that much of a functional difference, except deciding when you switch between one and another. All filesystems (on linux) cache to ram. We want to follow a similar model. Grow as large as possible, but give up memory instantly. Objects that are saved to disk and be dumped instantly.
+
+#+begin_quote
+  The vast majority of active data in the world is still stored on HDDs, so you really need your system to be performant on an HDD.
+#+end_quote
+
+HDD's with an SSD cache seams like a pretty reasonable target. It also seems like by far the best option for computers these days.
+
+#+begin_quote
+  and the structure you're talking about means that retrieving the entire file will be enormously slower, because you'll need to spin the platters multiple times.
+#+end_quote
+
+This is the meat of the issue. Well a big part of it at least. Obviously we need to store data that's accessed together, well, together. The big problem is that we'd be splitting up the hash map that constitutes our "index" across a bunch of inodes. Multiple hops to get to the actual data we're aiming for.
+
+It's a lot less of an issue on SSD's, which have a more or less flat random read rate.
+
+But even presuming that we are targeting hdd's and their propensity towards sequential read, I still think it's probably something that /could/ be optimized. Just that we'd probably get worse results then if we targeted SSD's only. And by the time I actually write any significant chunks of this we should all be on SSD's and rabidly anticipating whatever is next.
+
+#+begin_quote
+  No, distributing the data in small chunks will not help.
+#+end_quote
+
+Not necessarily distributing. Just presenting. We can still store the data more or less sequentially.
+
+Anyway, optimizing of HDD's. Obviously in JSON a dictionary/hashmap/key-value is, well, a hashmap. But I see no reason why you couldn't represent them in a b+ tree like btrfs.
+
+It's definitely a hard technical problem, but I don't think I'm using any datastructures that are inherently slow, in the big-O notation sense of the word. The hashmap-tree could be a b+ tree if it needed to be, and be stored however btrfs stores its b+ trees.
+
+--------------
+
+#+begin_quote
+  I'm talking about shifting where we draw the boundaries between the levels. That's the whole point.
+#+end_quote
+
+Well, as an example, in the simplest case
+
+from thisThing import dataTree as dt
+
+def redrawTexture(texture): pass #Logic for redrawing textures when they change
+
+#+begin_example
+  textures = dt['home']['trishume']['3Dfile']['textures']
+  textures.onChange(redrawTexture)
+
+  currentImage = textures[0].pixels
+
+  print(type(currentImage))
+  >>> <class 'PixelAccess'>
+#+end_example
+
+When you edit the currentImage object, it lazily sync with the master server.

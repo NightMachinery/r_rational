@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: atomic_cheese
+:Score: 2
+:DateUnix: 1435432097.0
+:DateShort: 2015-Jun-27
+:END:
+
+You could also go with the hacky solution and either replace "../data" with "data" in the code, or just put the singularity-0.30c folder in a subdir and run =ln -s data ../data=.

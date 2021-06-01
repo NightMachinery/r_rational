@@ -1,0 +1,19 @@
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 3
+:DateUnix: 1445630863.0
+:DateShort: 2015-Oct-23
+:END:
+
+#+begin_quote
+  Interesting. I haven't heard of that. Any google-able word?
+#+end_quote
+
+- [[https://en.wikipedia.org/wiki/Virtual_Storage_Access_Method]]
+- [[https://en.wikipedia.org/wiki/Record_Management_Services]]
+
+UNIX "stream of bytes" won out because you can implement these on top of a stream of bytes. Once file and file range locking was available for stream files, there was no point to having the operating system enforce VSAM or RMS. And a huge advantage to not having the OS implement it, in that you can implement stream files anywhere and so if your program used them it wasn't locked in to any single OS.
+
+I remember giving up and making an interpreter I was working on run as a subroutine from a FORTRAN main so I could get access to the infernally complex RMS API using callbacks to the Fortran OTS, because it was literally too much work to map the platform-independent file API into RMS calls in assembly.
+
+For a similar reason everyone but Apple has largely abandoned structured files on OS X except for metadata (like Quarantine info) that can be destroyed without losing file content, and nobody seems to have ever done anything much interesting with the structured file capbilities in NTFS.

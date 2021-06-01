@@ -1,0 +1,11 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1505767026.0
+:DateShort: 2017-Sep-19
+:END:
+
+Does its output buffer where things wait before going to the modem have a finite memory capacity?
+
+I can't fully justify it, but I have some intuitions about a machine with unlimited CPU power and strictly finite memory capacity being of limited usefulness.
+
+[[http://www.inf.ed.ac.uk/teaching/courses/inf2a/slides/2011_inf2a_L29_slides.pdf][Aha-ish]]. If you have an output buffer of 2^{10} 32-bit words, then you only have 2^{15} possible output configurations. You can run your Infiniputer for a brute-force search of those configurations, provided that /on the character's end of things/, the correctness and usefulness of the computation's result is [[https://en.wikipedia.org/wiki/NP_(complexity)][efficiently checkable]], or he has an efficiently checkable /proof/ that the stopping criterion for the brute-force search is correct.

@@ -1,0 +1,17 @@
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 5
+:DateUnix: 1481149119.0
+:DateShort: 2016-Dec-08
+:END:
+
+#+begin_quote
+  A computer can serve as alarms or watchdog processes.
+#+end_quote
+
+I like the idea of a C++ like compiler that reads your magic language and outputs a list of errors/warnings if you screwed something up.
+
+#+begin_example
+  warning line23.col8:  Amount of virgin blood is inconsistent with spell casting time ...
+  note line12.col8:     ... Required from this point
+#+end_example

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 3
+:DateUnix: 1437198967.0
+:DateShort: 2015-Jul-18
+:END:
+
+I tried doing the math, and I /think/ I got something that works. What I got is that the total impulse on an object X distance away from the path is ~1.6x as much as if the black hole had been sitting at its nearest point for as long as it takes to travel X distance.
+
+For example, if something was 1km away from the path, and the black hole is travelling at 1 * 10^{5} km/s, then you could model the effect on it as the same as it sitting at the nearest point for 1.6 * 10^{-5} seconds.
+
+[[https://docs.google.com/spreadsheets/d/1EgSuhJnARILsfba6ceqUmlDpKyoyRAlJomZbBDn0_UY/edit?usp=sharing][Here]] is the spreadsheet I used to calculate it. The first page is a proof of concept, the second page is the same thing, but better. I couldn't figure out how to do the actual calculus, so it's 2000 discrete points instead.

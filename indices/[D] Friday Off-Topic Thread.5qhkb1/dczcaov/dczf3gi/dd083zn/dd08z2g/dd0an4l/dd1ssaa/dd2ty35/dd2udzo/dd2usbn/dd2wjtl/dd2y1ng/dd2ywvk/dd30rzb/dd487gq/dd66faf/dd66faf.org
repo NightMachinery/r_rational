@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 2
+:DateUnix: 1485913374.0
+:DateShort: 2017-Feb-01
+:END:
+
+(Sorry for the delayed response. Real life intervened yesterday, alas.)
+
+#+begin_quote
+  I'm not so much interested in the choice of computational model as I'm interested in how you're using said computational model to describe mathematical objects. The language in the translation, in effect. This model hides a lot about what complexity is.
+
+  The same question follows on to your comment on "the set of all describable mathematical objects", which is a meaningless set until you give me a language that can describe mathematical objects.
+#+end_quote
+
+Any describable mathematical object must exist in the context of some formal system. For any formal system with a finite number of axioms, there exists a Turing machine capable of computing any mathematical object describable by that system. Additionally, /universal Turing machines/ exist and are capable of simulating the behavior of any other Turing machine, given the right input. So to describe a mathematical object in my schema, all you would need is (a) a universal Turing machine, (b) the formal system the object exists in, and (c) a specification of the object itself within that system. It doesn't really matter which universal Turing machine you choose (which was the point of my last comment), but if I had to specify /one/, I'd probably go with whichever one happens to give the lowest average complexity for the set of universal objects.
+
+As for the discussion of consciousness, I think I'm going to need to think about this a little bit more. There's still a niggling part of me that isn't satisfied with "statistical implausibility", but I haven't yet reached the stage where I can express the reason for that feeling in words. So I think I'll leave that particular thread dangling, at least for now.

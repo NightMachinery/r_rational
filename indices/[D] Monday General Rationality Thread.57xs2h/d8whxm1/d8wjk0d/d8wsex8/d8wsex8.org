@@ -1,0 +1,13 @@
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1476763283.0
+:DateShort: 2016-Oct-18
+:END:
+
+#+begin_quote
+  Thanks for posting about Active Inference, btw. I'm reading the articles now and intend to try my hand at crafting a simple AI as soon as I understand the theory sufficiently well.
+#+end_quote
+
+I'd like to warn you away from destroying the world with AI, but actually I've mostly found that this particular piece of theory is /very/ hard to implement effectively. I thought that turning Bayesian inference into an optimization problem and then adding action to it would be /helpful/, but as it turns out, you need a generative model of the environment to form the target distribution from which divergences are taken in active-inference. So you can't just tack action onto a deep variational autoencoder.
+
+EDIT: Or actually, maybe that's /exactly/ what those are for. I really should try it properly.

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:Score: 8
+:DateUnix: 1414663348.0
+:DateShort: 2014-Oct-30
+:END:
+
+FUCK. This is one of those times I /really/ wish I'd done my reading on super-Turing computation models.
+
+Basically, there's a hierarchy of Halting levels, for each one, you are subject to the Halting Problem at your own level, but can decide the Halting Problem for all levels below your own using your Oracle.
+
+At level 1, you can already bypass all the known computability problems in AI, which should render you all powerful/made of paperclips very quickly, but unless you've programmed it /right/ you won't get anything useful out of that. You /can/ compute all possible probability distributions, though.
+
+You didn't specify, by the way, how long it takes the tunnels to yield an answer in the halting or nonhalting cases: many problems are already Turing-decidable but have such complexity that we consider the relevant algorithms intractable for practical usage. Tractability is the key to using R'lyeh's Oracles.

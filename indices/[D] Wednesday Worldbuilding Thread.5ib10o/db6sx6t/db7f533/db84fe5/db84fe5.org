@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 2
+:DateUnix: 1481806471.0
+:DateShort: 2016-Dec-15
+:END:
+
+I'm assuming that a lot of detail on neural function is stored in the form of standard libraries, nearly identical for each neuron; and that the ten megabytes of data per neuron is already compressed, and is expanded at need into RAM during processing, without having to expand the entire set of data at the same time. For example, for most of the time, the CPU only needs to check the axons' and dendrites' lengths, directions, and a few small electrical parameters; and the long-term behaviour of the neuron (which is what most of the ten megabytes involves) only has to be updated once every second, or even less often.
+
+Though if anyone reading this actually knows anything abut NeuroML, I'd appreciate improved descriptions on how this might work. :)

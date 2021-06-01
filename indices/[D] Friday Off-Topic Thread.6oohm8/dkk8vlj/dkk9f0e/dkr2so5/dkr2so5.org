@@ -1,0 +1,28 @@
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 2
+:DateUnix: 1501087492.0
+:DateShort: 2017-Jul-26
+:END:
+
+#+begin_quote
+  I have half of an idea for a roguelike heist game with good AI. The enemies would have overarching goals instead of simple combat algorithms.
+
+  A guard that finds you in a room would be perfectly happy to stand in the doorway and call for backup because they would just uselessly die if they fought you alone.
+#+end_quote
+
+Bit of a late reply, but:
+
+No, that isn't what I was describing. The problem isn't about making an AI that is more likely to win, has semi-realistic self-preservation, or tries to outmaneuver the player. All those are relatively easy.
+
+What I'd like to see is an AI that consistently nails that "Clever girl..." moment where you realize you've been outsmarted. Having a NPC hang back and shout "I need backup!" doesn't really do that, especially after you hear it for the 100th time.
+
+It can be achieved with scripted sequences (the 'soldiers shoot through the air duct' setpiece in Half-Life), but I'd like to see a game that does it dynamically.
+
+Ideally, I'd like such a game to nail the following factors for the enemy AI:
+
+- I can see exactly which sequences of actions from the enemy lead to the current situation. If the mooks surrounded the building I was in, but I couldn't see any of them and have no idea how they got there, they could as well have teleported. I won't think they were smart.
+
+- I can visualize which chain of decisions lead to these actions, and which information informed these decisions. If shoot an enemy, then retreat to a hidden position A, then move to a hidden position B, I don't want the enemy to throw a grenade at position B unless I can visualize how they knew I was there (for instance, A and B are the only hiding spots in the room, and they already checked A).
+
+- The default state if I don't move or do something smart is that I lose. If I can stand in a doorway with a shotgun and pick off anyone who tries to come, or use my time-slowing power to headshot all the enemies who tried to ambush me, then I won't feel like their intelligence matters.

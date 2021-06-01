@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 1
+:DateUnix: 1505688977.0
+:DateShort: 2017-Sep-18
+:END:
+
+I mean, you don't actually have to specify any of that. Just compute every single Everett branch at once. Wikipedia will be somewhere in one of those branches, and our infinitely fast computer will have no issue finding it. Such a program actually has the advantage of being /simpler/ than a program to compute a particular Everett branch (in terms of source code length, not memory consumption), since it simply keeps track of the evolution of the quantum state of the universe, without having to specify any branch in particular.
+
+--------------
+
+*EDIT*: There is the issue of making that work with Solomonoff induction, but we can modify our inductor so that it searches for /anything/ in the output of a program that matches the input it was given, as opposed to finding a program whose entire output must be identical.

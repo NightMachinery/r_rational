@@ -1,0 +1,15 @@
+:PROPERTIES:
+:Author: throwawayIWGWPC
+:Score: 1
+:DateUnix: 1499757023.0
+:DateShort: 2017-Jul-11
+:END:
+
+I think both methods are pretty valid:
+
+1. Terminate if the controller leaves.
+2. Terminate if the gate no longer senses a marker inside.
+
+Both conditions imply the controller is done with the loop. If the creators never anticipated multiple controllers and if the second condition was used, then we'd get the current situation.
+
+Also, what if the gate simply was not built to sense whether the controller enters or leaves the loop, but rather is built to monitor the health of the marker. We know the loop resets if the gate senses the controller is killed or if the marker experiences damage. I can see it making sense that if RR has a marker and leaves, the gate might not sense anything wrong because it's still sensing a healthy marker inside the gate---the marker belonging to Zach.

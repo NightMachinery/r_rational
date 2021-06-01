@@ -1,0 +1,36 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 10
+:DateUnix: 1486138368.0
+:DateShort: 2017-Feb-03
+:END:
+
+Weekly update on my rational pokemon game, including work on the data creation tool Bill's PC. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Still plugging away (ugh, I promised I wouldn't say that!).  [[https://docs.google.com/document/d/1SlYaK6vZ0OmkQsuVOMCIOMb6nPIU9I1vKMTFMEL0Wk8/edit?usp=sharing][The current feature document is coming along nicely]], but it's still got some major systems missing and plenty of information to be filled in. My goal is to make a concerted effort to get this sucker at least 90% completed by the end of the weekend.  Wish me luck.
+
+--------------
+
+This week saw some discussion that has made some last-minute changes to a few of the systems we'd previously designed.  First is the evolution system, which is now a generic class upgrade system, which takes a unit of one species and moves it to another, with enough leeway to ignore certain stats when overwriting with the new species info (such as, for instance, a kill count, or earned EVs).  
+
+This actually permits us to roll the finecky transform and mindswapping concepts into this system; transform will now just be a class upgrade that reverts itself after a period of time.  Stats will no longer have to be split along mind/body/whathaveyou, or at least not at a /systemic/ level.  
+
+It's funny how this sort of thing comes about; someone had brought up the idea of a DnD mod that utilized multiclass features, and looking at it from that standpoint was what made all of this click into place, replacing a rather unnecessarily complex system with something elegant.  You never know what angle inspiration will come from.
+
+--------------
+
+In addition to the above, we are now knee-deep in a red-hot debate over how exactly to organize the Aspect system.  For those of you just tuning in, Aspects are essentially sub-types; applications of a particular power in a particular way that allows moves to be organized into move families of related tactics, applications, or mentalities.  
+
+Psychic has the clearest need for Aspects; there are moves that encompass Teleportation, Telekinesis, Telepathy, Barriers, and psychic Blasts.  All of these are enabled by being a Psychic, but it would make sense that, if I had two Alakazam, one specializes in producing Barriers while another is a Teleportation demon.  Using moves of a particular aspect trains an EV in that Aspect, which then makes learning moves that are similar that much easier.
+
+Previously, [[https://docs.google.com/document/d/1wOK33rveJVSFhKKg3TtAeDjYRZexI4sYhcfaujmsUJU/edit?usp=sharing][Aspects were organized on a per-type basis]], meaning that you'd have your Fire Aspects and your Water Aspects and if you ever had a second type of move or an HM injected (adding a new type), then you would essentially start from scratch--your stats would of course be the same, but scaling off a new Aspect and Type that was now EV of 0.
+
+Currently, the channel seems to be leaning towards instead using a [[https://docs.google.com/spreadsheets/d/1AvQVkN5tP-9zYiix3kXweSdSf_OytgB9fRTN3IZnKtw/edit?usp=sharing][more generic Aspect organization]], with maybe ten or so Aspects that encompass things such as Energy Manipulation or Matter Manipulation or what have you. Using Fire Spin as a Charizard would exercise your Energy Manipulation Aspect, and if later you had Thunderbolt injected, while you would initially start at a disadvantage due to the brand new type, eventually all of the EVs you had invested into Energy Manipulation would apply to the new shiny Thunderbolt.  This Thunderbolt would thus be stronger than if your Charizard had instead been a pure physical fighter.
+
+I myself am still a little apprehensive about this, but I can see some of its advantages.  We'll see how it ends up.
+
+--------------
+
+Feel free to leave any comments or questions below. Also feel free to join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]] for brainstorming and discussion.  It's a great group, really, and I would highly recommend hanging out, even if you're not in it for this project itself.  There's tabletop groups, Dota 2 partying, and [[http://i.imgur.com/j3jRmMZ.png][puns]] like you wouldn't [[http://i.imgur.com/8cUkzoGl.jpg][believe]].  Come join us!

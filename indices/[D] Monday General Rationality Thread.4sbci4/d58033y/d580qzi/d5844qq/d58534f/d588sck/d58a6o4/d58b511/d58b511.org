@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 3
+:DateUnix: 1468268137.0
+:DateShort: 2016-Jul-12
+:END:
+
+Using a faster heuristic isn't the same as changing utility function. Full evaluation of your utility function may even be impossible, or at least extremely intensive, so picking a representative heuristic is the most likely way to implement it.
+
+If you were deciding whether to adopt a new heuristic, you'd want to compare it to your "pure" utility function instead of your current heuristic (and do so as accurately as is feasible), otherwise you would risk goal drift (which would obviously reduce optimality from the perspective of the initial function).

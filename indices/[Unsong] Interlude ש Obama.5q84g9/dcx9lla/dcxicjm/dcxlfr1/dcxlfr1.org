@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 2
+:DateUnix: 1485441062.0
+:DateShort: 2017-Jan-26
+:END:
+
+If each party has exactly 50% chance of winning each election, then 1 in 4 randomly chosen subsets of 3 should be all the same party (8 possible combinations, 2 of which are matching).
+
+However, it's happened only twice for the Democrats, with Andrew Jackson (2 elections) and Martin Van Buren (1 election), then later with Franklin D. Roosevelt (4 elections).
+
+I don't think the Democrats of the 1830s actually bear much resemblance to the modern ones (I seem to recall the Democrats were actually the conservative party back then), but even if they did it would be very different to the Republican situation.
+
+FDR is also a special case, since he was likely elected because of his personality (and the term limits came in because of his popularity) and not transferrable to Democrats in general.
+
+In fact, since Pierce/Buchanan in the 1850s, the only two consecutive Democrat Presidents are ones who took over after a death in office.
+
+By contrast, the Republicans have had 4 elections (Grant×2, Hayes, Garfield), 3 elections (McKinley, Theodore Roosevelt, Taft), another 3 (Harding, Coolidge, Hoover), and one more 3 (Reagan×2, H.W. Bush).
+
+So not only have the Republicans had multiple relatively recent runs of consecutive election wins, they've also had far more consecutive wins with different candidates.
+
+Note that this means there are 8 total "runs of 3" Democrats or Republicans (a run of 4 elections is 2 distinct "runs of 3" by this metric), whereas there have been 47 elections since Andrew Jackson (including his terms).
+
+We would expect to see 12 "runs of 3" if the election results were 50/50 and totally independent, so it's slightly more likely that there's a bias towards changing party affiliations, especially changing from Democrat to Republican. You could model this as a Markov chain if you wanted to work out what the actual probabilities were, I suppose.

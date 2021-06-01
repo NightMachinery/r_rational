@@ -1,0 +1,46 @@
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 3
+:DateUnix: 1491770127.0
+:DateShort: 2017-Apr-10
+:END:
+
+I see. So with the bit sets:
+
+#+begin_example
+  A := {1, 2, 3, 6}
+  B := {0, 1, 5, 6}
+  C := {3, 4, 5, 6}
+#+end_example
+
+Your flip table is:
+
+#+begin_example
+  A => 2
+  B => 0
+  C => 4
+  AB => 1
+  AC => 3
+  BC => 5
+  ABC => 6
+#+end_example
+
+Very neat solution. Although you could come up with a set that's easier to memorise:
+
+#+begin_example
+  A := {0, 3, 4, 6}
+  B := {1, 3, 5, 6}
+  C := {2, 4, 5, 6}
+#+end_example
+
+Which gives the table:
+
+#+begin_example
+  A => 0
+  B => 1
+  C => 2
+  AB => 3
+  AC => 4
+  BC => 5
+  ABC => 6
+#+end_example

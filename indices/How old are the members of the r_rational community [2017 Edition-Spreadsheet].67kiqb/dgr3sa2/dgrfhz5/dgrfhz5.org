@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: MagicWeasel
+:Score: 1
+:DateUnix: 1493180359.0
+:DateShort: 2017-Apr-26
+:END:
+
+#+begin_quote
+  excel wizards
+#+end_quote
+
+I'm an excel hack, and I basically use my very limited skill to make excel work for me. What I'd do is I'd count each unique response to the checkbox questions and then manually copy them over. So if seven people chose A,C,D,E, you'd just increment each of them once. Depending on how many unique sets of preferences there are this might save you time.
+
+It's ugly and you can probably do something computationally that would be far superior, but that's my quick and dirty hack, just fingers crossed there aren't 300+ unique choices.
+
+--------------
+
+* Actually, really easy hack:
+  :PROPERTIES:
+  :CUSTOM_ID: actually-really-easy-hack
+  :END:
+Just find and replace the string with the comma in it with an abbreviated form with no comma. Then you can use comma as a delimiter. Easy!

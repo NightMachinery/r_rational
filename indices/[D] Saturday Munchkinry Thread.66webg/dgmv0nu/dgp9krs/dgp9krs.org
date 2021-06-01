@@ -1,0 +1,28 @@
+:PROPERTIES:
+:Author: Fillyosopher
+:Score: 3
+:DateUnix: 1493069531.0
+:DateShort: 2017-Apr-25
+:END:
+
+This question was rather open ended, so I hope you'll excuse a diverse response.
+
+Problems: * Equipment stocking * Communication/Coordination * Avoid detection over time
+
+--------------
+
+Communication Solution: Block-range Wifi Hub/email box that is dropped off and picked up 3 days later. GPS coordinates are given to one hunter, they hide it nearby, other members access via phone while in the area for daily messages. Multi-factor authentication for users (login information + /see below/). Communications role switches based on random computer algorithm, next three locations are given ahead of time (to allow downtime and require 3 compromised operatives to ruin the system). Each hunter has their own hub which they update if they are on the next three. Hunter deaths are reported to the hub to allow rerolls. Upside: hunters never have to meet in person, information system segemented, distributed, asynchronus. Downside: even two GPS tracked hunters will give away current location, no method to verify information after it's in the system.
+
+If no hub shows up for the full 9 days at all 3 locations, the entire system is assumed compromised and must be rebuilt from the ground up out of city.
+
+Equipment Stocking: Using the above system, equipment can be distributed among members, rather than centralized. Since the HQ was only listed as a equipment storage, this dispells the need for one. New equipment would be added to the system via drop locations choosen randomly by the GPS algorithm, as would equipment transfers between members. Other than personal notes and initial "New Equipment Availible" communications, there is no central list of who has what equipment. Hunters must remember who has what they need, or request it of the group. Upside: distributed equipment means no HQ weakness. Downside: Every death could also be a lost of equipment, a system breach can propogate bad equipment.
+
+System Compromise/Long Term Viability: This distributed system is vulnerable at creation time, but barely at all afterward. Destroying a Hub or killing a hunter has minimal effect. The biggest difficulty will be in deciding the authentication factors in such a way that one is individual specific (so that basic social hacking fails) and another that is destroyed on capture (so that interrogation doesn't work). Since magical means are off the table, biometrics (fingerprint) for the first. The second is very difficult, but something like an encryption key USB that is easy to destroy and has a switched mode that requires a button be pressed every 20 minutes or else it wipes itself could serve.
+
+Additionally every hunter has altered login information that, on entry to the system, lists them as captured. They are encouraged to give this information under interrogation. On entry, other hunters are informed of their capture as well as a pre-recorded message (which might include their equipment storage location for retrieval).
+
+--------------
+
+The main weakness of the system described above is that it only takes one very talkative hunter to be interrogated and the vampires can introduce a mole + bad equipment into the system. It's likely the first few captures wouldn't result in a working USB key, but once the vampires knew what to look for it would be possible. If the anti-capture authentication could be strengthened, I'd suspect this type of distributed network to be secure for years.
+
+Secondary weakness is that satellite surveillance of a known dropbox and known members can lead to all hunters eventually being tagged as members due to repeatedly showing up at the correct coordinates (similar to what would happen if they staked out an HQ, but delayed). I don't know much about anti-satellite protections. This could be partially solved by having "cells" centered around a single Hub, with multiple hubs running at once in the city, and using Hub to Hub communication for updating other cells so that members of two different cells never have to meet in person. Downside is communication between cells would be very slow.

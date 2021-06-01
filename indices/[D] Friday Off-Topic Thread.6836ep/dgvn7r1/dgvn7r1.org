@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 12
+:DateUnix: 1493406306.0
+:DateShort: 2017-Apr-28
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+I continue my research into BDD (Behavior-driven development).  One of the neat things about it seems to be an emphasis on only adding details to a design as it's needed--something I've been absolutely horrible about, but can at least utilize going forward with XGEF's design.
+
+--------------
+
+While discussing things this past week, I actually stumbled across a pretty big flaw in the interactions between two systems, namely the 3D voxel setup and the abstract anatomy system.  
+
+The anatomy system is supposed to have as few details as possible: you define what body parts a Pokémon has, and on those body parts you might give them descriptive tags and occasionally a “slot” for another body part to be attached to, but that's pretty much it.  The engine then metaphorically arranges all the parts on the table, it starts with the part called Body, and then recursively attaches each part as it finds “slots” for them.  Any leftovers are just attached to the Body.  
+
+Such a system allows us to only define what is absolutely needed from a mechanical perspective: the game doesn't care that the legs might be shorter than the arms, and doesn't care what color anything is, and doesn't even care how things are particularly attached.  As far as he games concerned, units are just a blob of Anatomy, and the slot hierarchy only exists so that if I lose a Leg, a Foot is going to be lost in the process as well.
+
+Having actual 3D space blows chunks through this arrangement.  Now suddenly I might have a Charizard that is (let's say) ten feet tall.  Even if I assume it's cylindrical (as far as collisions etc are concerned), we have the problem of verticality: if a low kick is aimed at the lower voxels that compose Charizard, it shouldn't have any chance of hitting the head in the upper section, right?
+
+Yet for such an arrangement to work, we now have to define the size of each body part and where it takes up space, which was something the more elegant abstract system was trying to avoid in the first place!
+
+As I examine the problem, I think it's becoming clear that one or the other of these systems is going to have to give.  I like the roguelike, Dwarf Fortress esque abstract system of Anatomy, and I feel it permits the player to fill in the blanks (“let's see... I hit it in the arm and the head in the same hit, so...I aimed for the face and it tried to block and failed”).  At the same time, I also like the idea of actual 3D space and needing to account for the amount of space e.g. in a house before you try and pull out your Onix and demolish it just by releasing.  
+
+What are your thoughts?  Preferences between the two, or any clever way of reconciling the issue that I'm not seeing?
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: AugSphere
+:Score: 2
+:DateUnix: 1478622891.0
+:DateShort: 2016-Nov-08
+:END:
+
+Welp, according to [[http://www.columbia.edu/%7Eww2040/PortfolioChoice96.pdf][this paper]] (third section) betting using Kelly criterion with the Bayesian posterior mean is "optimal".
+
+I'm still confused about the precise technical meaning of "optimal" here, since the strategy is outperformed by not betting anything for the first 50 bets and then starting to bet.
+
+[[https://plot.ly/%7EAugSphere/5/][Here's]] the mean log-money for 500 simulated "optimal" bots. [[https://plot.ly/%7EAugSphere/7/][Here]] is for bots that don't bet anything for first 50 flips.
+
+EDIT: The situation is the same if I measure performance by simple average money of bots, rather than the average of logarithm.

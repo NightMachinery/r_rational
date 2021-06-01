@@ -1,0 +1,31 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1448945710.0
+:DateShort: 2015-Dec-01
+:END:
+
+#+begin_quote
+  At that point it is basically the AI box problem with the additional constraint that any arguments from the AI must be valid Agda.
+#+end_quote
+
+Must be valid Agda proofs of P=NP or P != NP. You can even demand the variables be one-letter long and randomly ordered, so as to prohibit the creation of encoded freeform texts.
+
+#+begin_quote
+  You couldn't just type check the code it gave and not read it because without reading it and fully trying to understand it you don't know if it is proving what it claims to prove.
+#+end_quote
+
+That's completely incorrect: /by the nature of a proof assistant/, type-checking /is/ proof-checking. If the code type-checks, the theorem is proved, otherwise, it is not.
+
+#+begin_quote
+  Also what if the proof is enormous?
+#+end_quote
+
+So what? Mathematicians have dealt with multi-hundred-page proofs before.
+
+#+begin_quote
+  What if it finds a bug in your proof interpreter?
+#+end_quote
+
+Bugs in proof-assistants happen, but are exceedingly rare, especially now that we're moving towards formally verified proof assistants proved correct in stronger proof assistants. Besides which, if you take very basic security precautions (ie: run the proof checker in userspace inside an encrypted, networkless VM on a (physically) networkless workstation with its operating system freshly installed, use tapes, floppies, or optical disks to move data), then even finding a bug in the proof-checker doesn't actually /get/ the AI anything. Besides which, then you can just demand /two/ proof scripts for /two/ different proof assistants, and let the conjunction law of probability shrink the likelihood of the proofs involving /ex falso quodlibet/ for you.
+
+This is not /that/ difficult a problem, since you've constrained the AI to output things that can't do anything but what you've prespecified and explicitly requested, and you're only looking for a few bits of information. You can even make it write to a formally-verified filesystem on top of a formally-verified operating system, if you please.

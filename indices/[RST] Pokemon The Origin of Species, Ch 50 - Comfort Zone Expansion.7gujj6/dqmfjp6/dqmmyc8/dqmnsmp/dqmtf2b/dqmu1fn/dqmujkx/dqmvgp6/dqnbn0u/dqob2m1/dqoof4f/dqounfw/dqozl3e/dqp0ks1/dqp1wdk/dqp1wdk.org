@@ -1,0 +1,42 @@
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 2
+:DateUnix: 1512291642.0
+:DateShort: 2017-Dec-03
+:END:
+
+Let me try writing out my chain of thought in case there's something simple in it you can point to that would make me recognize how stupid I'm being :)
+
+So for this:
+
+#+begin_quote
+  When you ask for P(T1 | R1), it's like you're asking what the probability of cancer is given that you had a positive test result. Except, in this case, you gave it outright. 79% of Tier 1 reports are actually Tier 1, in the cancer case would be 7.8% of positive test results are actually cancer patients.
+#+end_quote
+
+The question being asked is "How accurate is this test at identifying those with cancer," whereas this:
+
+#+begin_quote
+  What you didn't give is the marginal probability, P(R1 | T1), which is the probability that a Tier 1 incident is reported as Tier 1. In cancer terms, you didn't give the probability that someone with cancer would get a positive test result, which was 80% in Yudkowsky's example.
+#+end_quote
+
+Is asking "How likely is it that someone with cancer will have their cancer properly identified by the test?"
+
+I think I understand that these are two separate things, even if I keep confusing them.
+
+What keeps bothering me is the idea that the Tyranitar ratio is immaterial to how accurate any given test result is, or rather how accurate this particular Tier 1 report is, given that the chance of Tier 1 Tyranitar is very low.
+
+Like, in my head, the fact that T1 Tyranitar are really rare should make the chance that a T1 report is accurate lower because the assumption I have is that people are not well calibrated at determining individual pokemon's threat levels: the 79% accurate Tier 1 reports doesn't mean, in my head, that all events with any given pokemon have the same chance of being accurate. It's an average of ALL reports, where with, say, geodudes, the report accuracy is very high because it's more obvious when it's a T1 vs a T2, but with other pokemon like combee people have a hard time recognizing Tier 2 events, so a lot of their Tier 1 reports are actually Tier 2 events, dragging down the accuracy of general pokemon Tier 1 reports.
+
+So to me, since those false Tier 1 combee reports make up a larger portion of the 21% of Tier 2 events reported as T1, using the 79% accuracy for a T1 combee report would be misleading. A more accurate rate would be the % of Combee Tier 1 reports of actual Tier 1 events, but if not everyone knows that, they just have the 79% to go off of.
+
+And since they're using that more general report statistic, it feels misleading for some pokemon. Some pokemon's individual Tier 1 report accuracy will be closer to that 79% average. Some will be farther. To determine the actual accuracy rate of THIS reported T1 event, it seems like the ratio of Tyranitar T1 vs T2 should actually matter. Like, Tier 1 Tyranitar events are just so rare that this report is inherently less believable, even if most T1 reports are accurate, because most is not all, and so we're a little less confident in this T1 report being accurate than we would be if it's a pokemon with an even amount of T1 and T2 events.
+
+But... as I'm writing this out, now, it feels like I'm recognizing that maybe that's not true, and that what matters isn't how many Tyranitar Tier 1 events there were, like you say, but what the 17 Tyranitar reports were, and how accurate, and then if you have /that/ you can us the ratio of Tyranitar events to determine the actual accuracy of Tyranitar Tier 1 reports, which is the more precise answer to the question of how likely this particular Tyranitar Tier 1 report is to be accurate.
+
+But if you /don't have that information,/ is there really nothing connecting ratio of Tyranitar events to overall accuracy of the Tier 1 reports? If you don't /know/ that Tyranitar reports are less accurate, and all you know is that there were only 2 Tier 1 Tyranitar events in the past 10 years, doesn't that make it an inherently unlikely event that should lower your likelihood to believe its occurrence?
+
+I mean on one hand I get that if there's something super rare but very easy to identify /if you know what you're looking for/, someone saying they've identified it shouldn't be taken less seriously just because it's rare. But... shit, I mean if someone claims to see a satellite, there's still a higher chance they're wrong than if they claim to see a plane, right? I don't know what % of identified satellites are actual satellites compared to how many satellites get properly identified, but a lot of people don't even know what satellites look like, so their rarity seems intrinsically tied to them being less likely to be properly identified than airplanes, which are seen all the time...
+
+I think I'm rambling at this point and just demonstrating how much I don't get this, since clearly I'm wrong :P But maybe that can help identify where I'm wrong and why. In any case I really appreciate your help, and talking it out after CFAR sounds good.
+
+That said, I'd love to get the chapter fixed before then, so if it's not too much to ask and you have a fairly simple alternative scenario/set of variables for them to demonstrate Bayes' theorem with instead, I'd happily just use that and seek to understand it later.

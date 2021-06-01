@@ -1,0 +1,17 @@
+:PROPERTIES:
+:Author: qznc
+:Score: 1
+:DateUnix: 1425389335.0
+:DateShort: 2015-Mar-03
+:END:
+
+For CSS I would suggest something like this:
+
+#+begin_example
+  .postbody .content {
+      max-width: 30em;
+      text-rendering: optimizeLegibility;
+      font-size: 16px;
+      line-height: 1.4em;
+  }
+#+end_example

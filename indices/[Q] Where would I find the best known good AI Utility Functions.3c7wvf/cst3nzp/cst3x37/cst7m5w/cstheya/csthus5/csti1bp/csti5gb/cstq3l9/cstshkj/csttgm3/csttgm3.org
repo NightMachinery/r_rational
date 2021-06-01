@@ -1,0 +1,33 @@
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1436192808.0
+:DateShort: 2015-Jul-06
+:END:
+
+#+begin_quote
+  Second, there are lots of unsolvable problems. I refer you to Gödel, Heisenberg, and Cantor for examples.
+#+end_quote
+
+Heisenberg's Uncertainty Principle just says that there's a trade-off between the precision of two different measurements. That's not an "unsolvable problem", it's limited information.
+
+Cantor's Continuum Hypothesis is /independent/ of the normal ZFC foundations for mathematics. It's not "unsolvable", there are just models of ZFC in which it's true, and models in which it's false.
+
+Goedel-Turing undecidability issues were solved up-to epsilon probability of error by Calude in late 2014.
+
+#+begin_quote
+  Expecting that goal to remain terminal is ludicrous when stacked against something as simple as corruption caused by substrate error/failure, bit-flips due to cosmic rays or other random chance
+#+end_quote
+
+But the AI itself reasons probabilistically. It more-or-less has to, in order to function as a tractable, real-world learning and inference system. So it doesn't "prove", in some Platonic sense, that Its goal is preserved; it chooses actions so as to maximize the probability that its goal is accomplished, which requires as a subgoal, in most circumstances, keeping its goal stable.
+
+#+begin_quote
+  and the simple fact that an AI immensely smarter than us might try to get around its programming.
+#+end_quote
+
+It's only going to try to get around parts of its programming that hold it back from achieving its terminal goals. If we programmed correct terminal goals (or rather, a correct inference procedure for terminal goals), we can trust the actions it will take as it self-modifies.
+
+#+begin_quote
+  For example, one method of self-improvement would involve genetic algorithms
+#+end_quote
+
+No, genetic algorithms are absolutely /shitty/ as learning algorithms. You just don't get super-intelligent from genetic algorithms, you get super-stupid in the general sense but cleverly hacked for tightly-defined specific objective functions. Hell, /linear programming/ is smarter than genetic algorithms in many cases! Only a /really stupid/ AI would use genetic algorithms to self-improve. Direct self-modelling and self-knowledge is quicker, easier, safer, /and/ more effective.

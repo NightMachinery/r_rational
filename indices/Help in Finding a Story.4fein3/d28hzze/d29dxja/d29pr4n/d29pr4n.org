@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1461115702.0
+:DateShort: 2016-Apr-20
+:END:
+
+This is database stuff, not search engine stuff. All Reddit comments are scraped and stored in Google's BigQuery ([[https://cloud.google.com/bigquery/what-is-bigquery][What is BigQuery?]]), which is a cloud solution for extremely large datasets. You can see [[https://www.reddit.com/r/bigquery/comments/3cej2b/17_billion_reddit_comments_loaded_on_bigquery/][here]] for more information and some examples of the neat stuff you can do with it. (Seven months ago [[https://www.reddit.com/r/rational/comments/3kjt60/d_friday_offtopic_thread/cuxyvle][I queried up a list of everyone who had ever commented, along with some fun stats.]])
+
+If you want to do neat stuff like this, you need to learn SQL (Simple Query Language) which is super useful for lots of stuff related to programming and datasets. If you want to learn that, [[http://www.w3schools.com/sql/][w3schools has a pretty long tutorial with the ability to try it yourself]] and [[https://www.khanacademy.org/computing/computer-programming/sql][Khan Academy has an intro to SQL]], both are good places to gain more knowledge.

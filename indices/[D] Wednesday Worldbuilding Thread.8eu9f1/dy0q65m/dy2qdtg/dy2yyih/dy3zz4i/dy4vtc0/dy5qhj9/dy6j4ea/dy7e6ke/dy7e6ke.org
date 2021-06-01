@@ -1,0 +1,29 @@
+:PROPERTIES:
+:Author: ceegheim
+:Score: 2
+:DateUnix: 1525082903.0
+:DateShort: 2018-Apr-30
+:END:
+
+#+begin_quote
+  For instance it could instantly solve all version of the halting problem for itself.
+#+end_quote
+
+Suppose you have a magical super-duper computer. Because it is super-duper it definitely can run python. And because it is a vakusdrake computer, it can solve the halting problem for its own programs. Let's call this the vakusdrake-analyzer: It takes a program (python function) and tells us, always and in finite time, whether the program halts. All the super-super-hyper-magic is in the vakusdrake-module. What does it do on the following:
+
+#+begin_example
+  def barber_of_seville():
+      if vakusdrake.analyze(barber_of_seville).halts():
+           while true:
+                pass
+      else:
+          return
+#+end_example
+
+Now suppose that barber_of_seville() returns (instead of running forever). Then the vakusdrake-analyzer tells us this fact, and barber_of_seville() loops forever. Suppose barber_of_seville() runs forever (instead of returning). Then the vakusdrake-analyzer tells us this fact, in finite time, and we return. The barber of seville must shave himself, and he must not (and giving him more shaving supplies does not help him in this conundrum).
+
+Hence, infinite computing power does not allow you to implement the vakusdrake-analyzer: Saying "assume a vakusdrake-analyzer" is just like "assume 2+2=5", that is, useful only for showing that, in fact, two plus two does not make five.
+
+You can of course assume a computer that tells, instantly, whether an ordinary (Turing) program terminates. That's one step up in the hierarchy. There is theory about the ordinal hierarchy of the power of these various machines. And your hypercomputer must sit somewhere.
+
+In more fancy words: Undecidablity of the halting problem relativizes.

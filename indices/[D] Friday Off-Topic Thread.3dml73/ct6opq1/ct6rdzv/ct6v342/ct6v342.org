@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1437158846.0
+:DateShort: 2015-Jul-17
+:END:
+
+What I have right now, subject to change:
+
+- There are three worlds, A, B, and G.
+- Every =x= days, there is a transferal effect that swaps two chunks of space-time between two of the three different worlds (/A to B, B to G, or G to A/).
+- Each transferal in the sequence is between two different worlds. (/ex. if you see an A to B transfer, you know the next transfer two days later will be B to G/)
+- This transferal effect is centered on a different location each time.
+- After a period of =y= years, the locations repeat, but with different worlds (/ex. if the transferal effect was A to B, when it happens at the same location eight years later it will be from B to G, and eight years after that it will be G to A, and eight years after that it will be A to B again/)
+
+So ... the point where I need help is /after all of this is known/. The protagonist has a map of known transferal locations, along with the times that they happened. He knows the frequency of transferal (=x=) as well as the period of the pattern (=y=). In order to finish his map of /all/ transferal locations, he needs to find the pattern (alternately, he might have a map of all locations, but still wants to know what underlying mechanism decided on those instead of others).
+
+What I want is for the "key" to this pattern to be a location; once you've solved the generation method and can duplicate it, you should be left with a bunch of numbers and a place. You should be able to work backwards from the data in order to arrive at the algorithm (and therefore the location embedded in the formula).
+
+It's probable that what I want is a PRNG, but I don't know enough to know which kind I'd want. Ideally something solvable by hand and simple enough to be included as a description in prose.

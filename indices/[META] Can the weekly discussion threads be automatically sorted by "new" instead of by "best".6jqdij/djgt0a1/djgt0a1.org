@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1498576736.0
+:DateShort: 2017-Jun-27
+:END:
+
+We can try it. I personally think that loses one of the primary benefits of reddit as opposed to other platforms; you get to see the best stuff first and then stop reading when quality dips. The code for getting Automod to do it, it is as follows (this is mostly for my benefit):
+
+#+begin_example
+  author: Automoderator
+  title: ["[D] Friday Off-Topic Thread"]
+  set_suggested_sort: new
+#+end_example
+
+A better solution might be to turn suggested sort to new at a certain point (e.g. number of comments, time passed), but Automod can't do that because it only looks at every post once.
+
+*I will manually switch the Friday Off-Topic thread over to suggested sort: new this coming Friday* and we'll see whether it makes any difference in discussion, and how many people complain about it.
+
+(We don't usually get more than 20 top level comments on any of our weekly threads, usually quite a bit less, so I am skeptical of any change in behavior, but we try things because we get new data.)

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1485004477.0
+:DateShort: 2017-Jan-21
+:END:
+
+I'm familiar with the idea of a tagged filesystem, but in my opinion that's only a small part.
+
+What if more then one process wants to access a data object at once? A good 'file system' should handle locking and merge-conflicts, as an example. That's going to end up being pretty necessary for big distributed piles-of-daemons like the ones in this story.
+
+Tagging FS are a very small improvement over our existing options, I think.

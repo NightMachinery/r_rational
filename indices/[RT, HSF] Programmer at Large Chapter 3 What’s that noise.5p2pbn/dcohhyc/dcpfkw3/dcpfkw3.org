@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: sparr
+:Score: 1
+:DateUnix: 1484980976.0
+:DateShort: 2017-Jan-21
+:END:
+
+#+begin_quote
+  I would love to hear some thoughts about better ways to organize things then file systems.
+#+end_quote
+
+Without getting away from the idea of a "file", we we already have better organizational systems for files that don't involve nested folders. There are photo organizers and music organizers and email clients that don't use nested folders but instead use labels/tags and provide ways to filter and view and search based on that metadata. Consider the two fictional folder paths /programs/Autocad/configuration and /programs/Word/configuration. There is no real reason that there are two separate file system entries for "configuration". "program" and some sort of classified-tag for the name and "configuration" could be three separate tags applied to each of the files.
+
+This can be extended to the /contents/ of files as well. Given the appropriate background data store, every row/line/entry/item in a file could be its own entry, and they could all have tags just like files had in the previous paragraph. Consider a bunch of documents that contain a font size. Asking for every document with a particular font size /could/ be the same operation as asking for every document "in" a particular "folder", as could asking for just the line(s) from the document(s) where the font size is specified. In very very very stupid terms, imagine if every text file on your hard drive was concatenated into one big file, with every line having the original filename prepended to it. You could extract a single whole "file" from this with grep, just as fast as you could do any other grep operation that got some data from many "files".

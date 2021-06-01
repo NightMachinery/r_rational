@@ -1,0 +1,9 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1439075817.0
+:DateShort: 2015-Aug-09
+:END:
+
+For memories, you essentially just append a record to your memory stream and append association links from concepts to the new memories. Factual knowledge should be about as easy. So merge or rebase, doesn't much matter.
+
+If you want to ensure that your personality can change and that nodes don't end up with divergent personalities, you need a process that yields the same results in each node. You can do that with a non-deterministic, non-repeatable algorithm with master election, or you can do it with a deterministic, repeatable, node-independent algorithm (left as an exercise to the reader) in a more distributed fashion.

@@ -1,0 +1,38 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1446753554.0
+:DateShort: 2015-Nov-05
+:END:
+
+#+begin_quote
+  but I think you ought to look at resource forks.
+#+end_quote
+
+Definitely. It's very much on my list. I find all the old operating system stuff fascinating. Haven't found any really good books on the subject though...
+
+#+begin_quote
+  I really do grok this stuff.
+#+end_quote
+
+That's very obvious. If there's an issues here I blame it on my failure to communicate. I have noticed that more experienced people tend to take longer to grasp what I'm trying to do.
+
+#+begin_quote
+  You might import it like that and treat the jpeg as an opaque lump of data, but once you start working on it you'd be better off breaking it up into a more general "image" object, with the individual bitmap chunks left in JPEG format until you start writing to them
+
+  Otherwise your "pixels" accessor is going to be re-doing a shitload of work over and over again.
+#+end_quote
+
+I presume it would handle caching itself. It would probably overwrite the jpeg entirely.
+
+Abstractions are always leaky, and pushing a pixel stream over a network could get pretty bad. Pushing jpeg diffs though? Potentially a lot easier.
+
+In this case, you'd add a "diffedJpeg" accessor, which would store the last N changes, apply your changes to that, and bring it up to speed.
+
+The pixels array would be based on the diffedJpeg, not the rawData. Ideally that means you'd be able to move the pixels accessor to the client machine and not send giant pixel arrays.
+
+By basing everything off of capnproto based accessors we can hopefully get a lot more flexibility for weird edge cases like this. It should be pretty fast two, with capnproto's shared memory RPC. However fast a cpu takes to context switch, plus however long it takes the accessor to actually run. Accessors can be written in pretty much any language, and optimized for speed as needed.
+
+[[/u/eaglejarl]]'s idea of a function block based filesystem taking advantage of capnproto's high speed RPC combined with duck typing should be a pretty powerful and simple model that can be expanded as needed.
+
+Of course it means that every accessor is responsible for their own garbage collecting... Which is a bit concerning.

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1436881390.0
+:DateShort: 2015-Jul-14
+:END:
+
+"According to density" means that the "probability" here is a normed measure of some space, not a degree of information or a normed measure over the outcomes of a random experiment. What's actually being shown is that /under the condition that =U(x)= does actually halt/, it belongs to a set of computations whose measure is at most 1/s. If it does not belong to that set, then it doesn't ever halt.
+
+We /can't/ actually determine whether it belongs to that 1/s-measure set or not -- that's deterministically solving the Halting Problem. However, since the halts-in-longer-than-=m= set has measure 1/s, with the total measure being /normed/, we can treat 1/s as a probability, and reason that the corresponding probability of nonhalting is s-1/s.

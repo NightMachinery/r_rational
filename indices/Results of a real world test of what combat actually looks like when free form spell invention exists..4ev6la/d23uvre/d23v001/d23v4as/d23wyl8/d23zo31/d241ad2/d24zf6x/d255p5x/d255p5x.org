@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: Execute13
+:Score: 1
+:DateUnix: 1460810129.0
+:DateShort: 2016-Apr-16
+:END:
+
+Minecraft doesn't quite work that way. Blocks don't move according to physics. You can generate a block 32 metres away from yourself and then cast something at it, sure, but there's no way to make moving solid targets.
+
+With a bit of effort though, you might be able to make a projectile spell that generates a block 32 metres behind its target, then destroys the original target. Then you'd be able to march a solid target through the air toward your opponent. The problem is that at engagement ranges, it'll take four or five spell casts to get to your opponent. A common method of flight lets the user travel at 8m/s. Projectile spells travel at 32m/s. At an engagement range of 128m, four projectile spells will need casting for the last to affect a sphere by the opponent, and will travel 32, 64, 96, and 128 metres respectively. Thus the total travel time is 10 seconds, in which the opponent can dodge by 2.5 blast radii.

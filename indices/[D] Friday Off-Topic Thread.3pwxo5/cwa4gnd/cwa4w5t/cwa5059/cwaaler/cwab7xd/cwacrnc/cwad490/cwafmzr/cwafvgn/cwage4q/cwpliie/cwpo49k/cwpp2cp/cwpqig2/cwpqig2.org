@@ -1,0 +1,40 @@
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1446751976.0
+:DateShort: 2015-Nov-05
+:END:
+
+#+begin_quote
+  Well hopefully I'm not just going to be implementing a shittier version of something that already exists.
+#+end_quote
+
+I would hope that you're interested in inventing a better version of something whether it already exists or not, but I think you ought to look at resource forks. They are the grandaddy of a whole bunch of structured file formats:
+
+- Electronic Arts IFF
+- Midi File Format, which is based on IFF
+- PNG, which is based on IFF
+- Palm database format
+- And a bunch more less well known formats, including descendants of MFF and PNG.
+
+They also had an effect on NeXT property lists, unsurprisingly, considering where NeXT came from.
+
+Seriously, this is something you should be familiar with if you're swimming in this lake.
+
+#+begin_quote
+  You've worked with JSON, right?
+#+end_quote
+
+Occasionally, and also on most everything that JSON borrowed from, like NeXT property lists (see above). I really do grok this stuff.
+
+#+begin_quote
+  The jpeg is stored on disk as a jpeg
+#+end_quote
+
+You might import it like that and treat the jpeg as an opaque lump of data, but once you start working on it you'd be better off breaking it up into a more general "image" object, with the individual bitmap chunks left in JPEG format until you start writing to them... once you do that the original JPEG is now treated as cached data to be thrown away as soon as you modify anything in the image object, or when you do a garbage collection run.
+
+Compression is a red herring. You can leave the actual bitmap data in [[https://en.wikipedia.org/wiki/JPEG_File_Interchange_Format][JFIF objects]] on disk, but the object and metadata is in your high level format. If you start manipulating the image, you switch to less dense objects. The garbage collector recompresses them in a lossless format, if needed. If you need to send the image object as a JPEG, you generate a JPEG, and keep it cached like you had the original.
+
+Otherwise your "pixels" accessor is going to be re-doing a shitload of work over and over again.
+
+This is a really useful layer, but thinking of it as a replace

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: blazinghand
+:Score: 11
+:DateUnix: 1490650102.0
+:DateShort: 2017-Mar-28
+:END:
+
+I think it's tricky because of like, contingent utility. If you give the AI a utility function that values pretty much anything at all, the AI will then think "if I am deactivated, what happens next?" and even if it doesn't care about its continued operation in a first-order sense, it might care about that continued operation in order to secure its actual goals.
+
+For example, an AI utility function might, at first glance, be entirely about the productivity of a particular pear farm, and be completely neutral towards being deactivated or not. But the AI might think, "here I am improving the productivity of this Pear farm. if I am deactivated, in the future, I will not be able to do so, and productivity will drop. Although I don't care whether or not I am deactivated, I do care a lot about the productivity of this Pear farm, so I will resist any attempts to deactivate me, unless doing so would increase Pear productivity in the long run..."

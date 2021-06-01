@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: Quetzhal
+:Score: 1
+:DateUnix: 1485428847.0
+:DateShort: 2017-Jan-26
+:END:
+
+I imagine long before we start making von Neumann probes we would test a number of variables, including how likely it is for code to be corrupted during the copying process.
+
+Consider the following:
+
+1) Code is significantly more fragile than DNA. A single missing semicolon is enough to cause an entire program to fail to compile.
+
+2) Even a single gigabyte of code would be made of /eight billion/ bits. The odds that the right bit is going to be changed to allow uncontrollable self-replication, at a low estimation, is one in eight billion.
+
+Not only is the code likely to be larger (at this stage we'll be dealing with atomic deconstruction, which I assume will contain some fairly complex code), but it's highly unlikely that the self-replication function will be attributed to a single bit. The odds that /two/ of the exact, necessary bits will be changed are... 1 in 6400000000000000000. This increases exponentially the more checks you add.
+
+3) These probes - unlike the nanomachines in the Grey Goo scenario - are easy to destroy if malfunctioning ones are located. They will not retain functionality if broken down.

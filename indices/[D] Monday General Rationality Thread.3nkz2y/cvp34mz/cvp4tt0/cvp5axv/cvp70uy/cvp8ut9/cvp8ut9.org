@@ -1,0 +1,31 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 2
+:DateUnix: 1444073751.0
+:DateShort: 2015-Oct-05
+:END:
+
+#+begin_quote
+  capnproto
+#+end_quote
+
+Very cool. Thanks for sharing. I'll have to look into it more in depth. I'm afraid I was going to serialize using rpyc's brine protocol, and fall back to json. This looks cool.
+
+I think even standard json is statically typed. It really does depend on what language is reading the data, be it json or whatever. Unless you're suggesting that a schema enforces particular types? I was imagining you'd be able to add random attributes to an "object", or random keys to a hashmap/dict.
+
+You have an stl, and you can add arbitrary metadata.
+
+#+begin_example
+  stl:{
+      vertexes:[ ... ],
+      faces:[ ... ], #Standard stl stuff
+      authors:[ ... ] #not part of standard stl spec, metadata that only some programs know how to use
+  },
+  png:{
+      ...
+  }
+#+end_example
+
+Which implies duck typing at least, I think? If we want different programs to be able to work on the same data, we need to be flexible in what attributes exist.
+
+Low level types definitely need to be static, but I think the types built on top of that need flexibility. Most programs would completely ignore the author field, so it's not true static typing. I mean, it's not really duck-typing either because these aren't functions, they're attributes/keys. Describing programming concepts is hard, but I think we're on a pretty similar page.

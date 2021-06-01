@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: duffmancd
+:Score: 2
+:DateUnix: 1410397394.0
+:DateShort: 2014-Sep-11
+:END:
+
+Ok, so I've had some sleep so I'll give this a shot. DataPacRat feel free to try your hand at it too.
+
+If we take the strongest possible view of quantum immortality, then Pr(L) = 1. Then if the only way to survive the disaster is through winning the lottery i.e. Pr(L| ~T,D) = 0. [I'm going to use a Venn diagram here, cause it helps me think, there are definitely other ways to put this.] So we have three events/circles D(isaster), T(icket that wins), and L(ives). We know Pr(~L)=0 so fill in those spots, and we also know Pr(L∩D∩~T)=0 so fill that in. Now you can see that the only way a disaster can occur is if we buy a winning ticket, Pr(D|~T)=0. Now, so long as Pr(T)<1, buying a winning ticket increases the chances of the disaster.
+
+Pr(D|T) = Pr(T∩D)/Pr(T) = Pr(D)/Pr(T)
+
+If we relax our conditions (Pr(L)<1, and Pr(L|~T∩D)>0), so long as we head towards the "standard" independent case presented by IX-103 above we still get some information from T. (Where this could fall down is if winning increases your chance to die some other way like mugging etc.) I think. I'm also fairly certain this could be shown but probabilities are my weakest area of maths, so I'll stick to the simpler case.
+
+So in theory, taking the spherical cow approximation it works, it may not work as well with relaxed constraints but I think it still works.

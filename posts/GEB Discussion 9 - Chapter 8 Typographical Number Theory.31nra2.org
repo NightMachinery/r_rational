@@ -1,0 +1,327 @@
+#+TITLE: GEB Discussion #9 - Chapter #8: Typographical Number Theory
+
+* GEB Discussion #9 - Chapter #8: Typographical Number Theory
+:PROPERTIES:
+:Author: xamueljones
+:Score: 11
+:DateUnix: 1428347438.0
+:DateShort: 2015-Apr-06
+:END:
+*Gödel, Escher, Bach: An Eternal Golden Braid*
+
+This is a discussion of the themes and questions concerning the *Chapter 8: Typographical Number Theory* and its dialogue, *A Mu Offering*.
+
+*Translation Exercises*
+
+To simplify the typing for this chapter, the qualifier for “There Exists” will be € and “For All” will be V.
+
+This chapter is a surprisingly simple one conceptually despite the complex formal system being introduced. All Hofstadter is doing is explaining how the system works and it's worth taking the time to do his exercises to increase your familiarity with TNT for the upcoming chapters. All I can provide is my own answers to some of the translations.
+
+**** 1) TNT to N
+     :PROPERTIES:
+     :CUSTOM_ID: tnt-to-n
+     :END:
+
+- =~∀c:∃b:(SSO • b)=c= =<=>= It is not true that for all numbers =c= such that there exists some number =b= that 2 times =b= equals =c=. =<=>=Not every number is even. *True!*
+
+- =∀c:~∃b:(SSO • b)=c= =<=>= For all numbers =c=, there doesn't exist some number =b= such that 2 times =b= equals =c=. =<=>=Every number can't be divided by 2. *False!*
+
+- =∀c:∃b:~~~(SSO • b)=c= =<=>= For all numbers =c= such that for some number =b=, it is not true that 2 cannot be multiplied by =b= to not equal =c=. (Triple negative) =<=>= For each number, there is a number which it can't be the double of. *True!*
+
+- =~∃b:∀c:(SSO • b)=c= =<=>= There doesn't exist some number =b= such that for all numbers =c= that 2 times =b= equals =c=. =<=>= All numbers are not the double of one number. *True!*
+
+- ∃b:~∀c:(SSO • b)=c =<=>= There exists some number =b= such that not for all numbers =c= that 2 times =b= equals =c=. =<=>= There is a number =b= that exists such that not every possible number =c= satisfies =2*b=c=. *True!*
+
+- =∃b:∀c:~(SSO • b)=c= =<=>= There exists some number =b= such that for all numbers =c= that 2 times =b= doesn't equals =c=. =<=>= There is a number when doubled, is not a number. *False!*
+
+**** 2) N to TNT
+     :PROPERTIES:
+     :CUSTOM_ID: n-to-tnt
+     :END:
+
+- All natural numbers are equal to 4. =<=>= =∀a:(SSSSO=a)=
+
+- There is no natural number which equals its own square. =<=>= =~∃a:(a • a)=a= (Note that zero is a counter-example)
+
+- Different natural numbers have different successors. =<=>= =∀a: ∀b:~(a=b) => ~(Sa=Sb)=
+
+- If 1 equals 0, then every number is odd. =<=>= =(0=S0) ∀a:()=
+
+- b is a power of 2. =<=>= =∀x:∃y:(SSx • y = b) => ∃z:(SS0 • z=SSx))= =<=>= If =x * y = b= and =x ≠ 1=, then =x= is a multiple of 2 which makes every divisor of =b= a multiple of 2 as well.
+
+......
+
+*Rules of Formation*
+
+- 0 is a numeral
+
+- A numeral preceded by S is also a numeral
+
+- Axiom 1: =∀a:~Sa=0= =<=>= For all numbers, it's successor is not zero. =<=>= There is no number where zero is its successor, or there is no negative numbers.
+
+- Axiom 2: =∀a:(a+0)=a= =<=>= For all numbers, adding zero doesn't change the number.
+
+- Axiom 3: =∀a: ∀b:(a+Sb)=S(a+b)= =<=>= For all numbers a and for all numbers b, a plus the successor of b equals the successor of a plus b. (Commutability) =<=>= (a + (b + 1)) = (1 + (a + b))
+
+- Axiom 4: =∀a:(a • 0)=0= =<=>= For all numbers, multiplying by zero equals zero.
+
+- Axiom 5: =∀a: ∀b:(a • Sb)=((a • b)+a)= =<=>= For all numbers =a= and for all numbers =b=, =a= times the successor of =b= equals =a= times =b= plus =a=. (Distributivity) =<=>= (a • (b + 1)) = ((a • b) + a)
+
+......
+
+*The Five Peano Postulates*
+
+Djinn is “natural number”, genie is “zero”, and meta is “successor”.
+
+1. Genie is a djinn. =<=>= Zero is a natural number.
+
+2. Every djinn has a meta (which is also a djinn). =<=>= Every natural number has a successor (which is also a natural number).
+
+3. Genie is not the meta of any djinn. =<=>= Zero is not the successor of any natural number.
+
+4. Different djinns have different metas. =<=>= Different natural numbers have different successors.
+
+5. If Genie has X, and each djinn relays X to its meta, then all djinns get X. =<=>= If zero has X, and each natural number relays X to its successor, then all natural numbers get X.
+
+......
+
+*Dialogue*
+
+This dialogue may be very confusing due to the fact that three significant subjects are being intertwined, molecular biology, detecting theoremhood, and Zen. Tortoise's and Achilles' entire discussion of the ritual of converting koans into strings is a thinly veiled explanation of how DNA is converted into folded proteins.
+
+The [[http://en.wikipedia.org/wiki/Central_dogma_of_molecular_biology][Central Dogma]] of biology is DNA => RNA => Protein which can be mapped onto Koan => Strings => Meaning/Buddha nature or not Buddha nature which can be mapped onto TNT well-formed string => Exact Translation in English => Meaning.
+
+When Achilles says that he likes to go against the arrows, it's the same idea as asking if a certain mathematical fact can be expressed in TNT. It's easy if it can't be turned into a well-formed string but if it does, then we have to find out if it's a theorem without knowing how it can be derived from the axioms.
+
+In addition, the pair of strings where the only difference was the knot is the same idea as two theorems where one is a negation of the other and since having both theorems be true would mean a contradiction, then only one theorem/string can have Buddha nature.
+
+Finally the string talking about the Great Tortue seems to be talking about itself. This implies that TNT may have the ability to talk about itself and is powerful enough for Gödel's Theorem to apply, where it can prove its own consistency. However, it turns out that the string is talking about its own negation (when there is an extra knot), what does this imply?
+
+EDIT: Thanks goes to [[/u/markus1189]] for providing a better way of formatting everything in the post. Things should be easier to read now.
+
+Wikia Links:
+
+- [[http://godel-escher-bach.wikia.com/wiki/Chapter_8][Chapter 8]]
+
+- [[http://godel-escher-bach.wikia.com/wiki/A_Mu_Offering][A MU Offering]]
+
+Coming up next on April 9th is Chapter IX: Mumon and Gödel.
+
+The discussion for the previous chapter is posted [[http://www.reddit.com/r/rational/comments/317qqd/geb_discussion_8_chapter_7_the_propositional/][here]].
+
+The discussion for the next chapter is posted [[http://www.reddit.com/r/rational/comments/320w69/geb_discussion_10_chapter_9_mumon_and_g%C3%B6del/][here]].
+
+[[http://www.reddit.com/r/rational/comments/2yys1i/lets_start_the_read_through/][Official Schedule]].
+
+
+** u/daydev:
+#+begin_quote
+  There is no natural number which equals its own square. <=> ~∀a:(a • a)=a (Note that zero is a counter-example)
+#+end_quote
+
+I think it should be
+
+#+begin_example
+   ∀a:~(a • a)=a
+#+end_example
+
+or
+
+#+begin_example
+   ~∃a:(a • a)=a
+#+end_example
+
+I believe, your version is saying 'not all natural numbers equal their own squares' which is factually true, but does not correspond to the sentence.
+:PROPERTIES:
+:Author: daydev
+:Score: 3
+:DateUnix: 1428384532.0
+:DateShort: 2015-Apr-07
+:END:
+
+*** Thanks! I included your TNT statement.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1428407657.0
+:DateShort: 2015-Apr-07
+:END:
+
+
+** * [[/u/xamueljones]]:
+  :PROPERTIES:
+  :CUSTOM_ID: uxamueljones
+  :END:
+
+- I think you're doing great :), I appreciate the work you invest to keep this going. A *minor* nitpick is that sometimes the post is a little hard to read on reddit due to missing formatting.
+
+- I think you forgot something there: =If 1 equals 0, then every number is odd. <=> (0=S0) Va:()= :)
+
+* Chapter 8
+  :PROPERTIES:
+  :CUSTOM_ID: chapter-8
+  :END:
+
+- on p. 220 the illegal shortcut is that the =transitivity= rule is used for *formulas* while the rule says that the variables on both side of === must be *terms*. The right derivation is
+
+  #+begin_example
+    (1) ∀a:(a+0)=a  axiom 2
+    (2) (a+0)=a     specification
+    (3) a=(a+0)     symmetry
+    (4) a=a         transitivity (lines 2,3)
+    (5) ∀a:a=a      generalization
+  #+end_example
+
+* Dialog
+  :PROPERTIES:
+  :CUSTOM_ID: dialog
+  :END:
+
+- As foreseen by xamueljones, I found the dialog rather hard to read
+- When Jõshũ unasked the question via MU this triggered some associations for me to the part in the /little harmonic labyrinth/ dialog (p. 115) when Achilles "unwishes" the wish.
+:PROPERTIES:
+:Author: markus1189
+:Score: 2
+:DateUnix: 1428353573.0
+:DateShort: 2015-Apr-07
+:END:
+
+
+** You can write "b is a power of 2" a bit more concisely: ∀x:∃y:(SSx • y = b) => ∃z:(SS0 • z=SSx))
+
+In the dialogue, I thought DNA => RNA => Protein mapped to Koan => Phonetic Symbols => Folded String and Meaning => English Sentence => TNT String. The phonetic symbols are simplified diagrams of the RNA bases, and the string is then folded according to the sequence, much like a protein. Achilles calls strings that sound like koans well-formed strings, just like strings that look like theorems in TNT.
+
+Two knots cancel each other... just like two nots.
+:PROPERTIES:
+:Author: redstonerodent
+:Score: 2
+:DateUnix: 1428363300.0
+:DateShort: 2015-Apr-07
+:END:
+
+*** I took my time to work through your "b is a power of 2" translation to be sure it was right and I now (on the following day) agree it's a better version than mine. Thanks for the correction!
+:PROPERTIES:
+:Author: xamueljones
+:Score: 3
+:DateUnix: 1428407974.0
+:DateShort: 2015-Apr-07
+:END:
+
+
+*** Over on [[/r/geb]], we've been stumped by the challenge of expressing "/b/ is a power of 10" in TNT. And Hofstadter supplies an appropriate warning there.
+
+Prime powers let you make simple statements about all factors of /b/, and these statements just don't work on composite powers. Does anyone have any idea of how to start?
+:PROPERTIES:
+:Author: rspeer
+:Score: 2
+:DateUnix: 1428380202.0
+:DateShort: 2015-Apr-07
+:END:
+
+**** A quick googling found [[#s][this]]
+
+I'm not yet sure whether it works, or how you would come up with that.
+:PROPERTIES:
+:Author: redstonerodent
+:Score: 1
+:DateUnix: 1428427652.0
+:DateShort: 2015-Apr-07
+:END:
+
+***** Hmm, okay, thanks for looking this up. I'll start trying to translate and see what I think.
+
+This seems quite wrong to me, actually. Either I'm overlooking some key expression that makes everything come together or this is just number theory salad. This gets at why I feel GEB so desperately needs a solid reader's guide, because half the stuff you can Google about it is wrong.
+
+In particular:
+
+The clause involving a, b, and c seems to be defining things that are "either 10 or a certain multiple of 100", which sounds like it's just hiding the compositeness problem a couple of layers deep.
+
+I don't believe the quantifiers. We can pick /any/ b? What about one that makes the antecedent of the implication false, so that the clause is trivially true?
+
+What about the ¬∃f:(d=10⋅f))⊃(d=1)) clause? Is this clause even satisfiable? I believe it to be equivalent to "∀f:((d != 1) ∧ (d = 10⋅f))", which seems to claim that "d is 10 times every f (and also it's not 1)", which is just nonsense.
+
+So I'd abbreviate this expression as (a=1) ∨ (TRUE ∧ FALSE), and abbreviate it again as "a = 1", not "a is a power of 10".
+
+I'm pondering something involving modular arithmetic instead.
+:PROPERTIES:
+:Author: rspeer
+:Score: 3
+:DateUnix: 1428431918.0
+:DateShort: 2015-Apr-07
+:END:
+
+****** Okay, wow. I was probably not going to come up from my own knowledge of number theory.
+
+[[http://math.stackexchange.com/questions/312891/how-is-exponentiation-defined-in-peano-arithmetic]] seems like it outlines the approach, although translating it into TNT will still take some effort.
+
+We already have to use a trick of Godel's, to use numbers to represent encoded values with more structure than numbers. Perhaps this means I should wait for tomorrow's discussion.
+:PROPERTIES:
+:Author: rspeer
+:Score: 3
+:DateUnix: 1428435925.0
+:DateShort: 2015-Apr-08
+:END:
+
+
+** By this point we are about half way through with GEB. Can anyone give their opinion on how I'm doing and what I can do to improve? Thanks!
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1428349783.0
+:DateShort: 2015-Apr-07
+:END:
+
+
+** This is my favourite chapter of GEB.
+
+So, any ideas about "b is a power of 10"?
+
+I have heard that [[/spoiler][Chinese remainder theorem]] should be used
+:PROPERTIES:
+:Author: ShareDVI
+:Score: 1
+:DateUnix: 1428391497.0
+:DateShort: 2015-Apr-07
+:END:
+
+*** Here's an [[http://www.quora.com/How-is-power-of-10-represented-in-Hofstadters-Typographical-Number-Theory][answer]] where someone tries explaining very simply without the Chinese Remainder Theorem, a direct [[http://echochamber.me/viewtopic.php?f=17&t=13203#p312945][answer]] (with a lot of variables), and an [[https://sbseminar.wordpress.com/2009/12/07/the-technical-part-of-godels-proof/][answer]] which I think is talking about applying Gödel's Theorem to a restricted language of numbers.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1428409079.0
+:DateShort: 2015-Apr-07
+:END:
+
+
+** Just because I want to show off...
+
+[[#s][b is a power of 10]]
+:PROPERTIES:
+:Author: itaibn0
+:Score: 1
+:DateUnix: 1428462535.0
+:DateShort: 2015-Apr-08
+:END:
+
+
+** Just remembered another point, leaving this here as a memo.
+
+--------------
+
+I am sure there is some hidden message in the MU Offering dialogue when on p. 237 it says:
+
+#+begin_quote
+  /Achilles/: Do you suppose that "Enlightenment 'Yond Enlightenment" stands for "EYE"
+
+  /Tortoise/: In my opinion, it's rather doubtful that it stands for you, Achilles. More likely, it stands for "Meta-Enlightenment" -- "ME" that is.
+
+  /Achilles/: For you? Why would it stand for you? [...]
+#+end_quote
+
+The tortoise understands "EYE" as "I" and Achilles thinks the "ME" is a "me" as if the tortoise is referencing itself.
+:PROPERTIES:
+:Author: markus1189
+:Score: 1
+:DateUnix: 1428567286.0
+:DateShort: 2015-Apr-09
+:END:

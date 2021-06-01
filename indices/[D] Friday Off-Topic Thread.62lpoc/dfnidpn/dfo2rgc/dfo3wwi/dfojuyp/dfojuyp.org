@@ -1,0 +1,21 @@
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1491021107.0
+:DateShort: 2017-Apr-01
+:END:
+
+#+begin_quote
+  It really reminds me of this occasion a few years ago when I saw a monkey in a zoo hit the uncanny valley by using its hands in a very human way; it invoked an "oh shit, that's basically analogous to us, this is well on the path to intelligence" feeling. The difference being that monkeys aren't getting vastly better at dexterous use of opposable thumbs every year, while AI is getting vastly better at cognition every year.
+#+end_quote
+
+Woah, that /is/ a good analogy.
+
+#+begin_quote
+  I'm not stupid enough to think that this program as it stands could acquire any type of real intelligence, but I do think that it's a lot closer to human intelligence than it is to the best software and hardware of thirty years ago. Based on things like "processing power derived from number of neurons" it's easy to fall into the trap of saying that this program is dumber than a single ant, or something like that. But I don't think that's the case; it seems to contain some of the critical insights that get you intelligence. If the intelligence explosion of the future is analogized to the appearance of the human species, then these RNN programs are, like, early mammals.
+#+end_quote
+
+That's a pretty good way to put it, with one caveat. The excellent results you see these days are almost all for /supervised/ learning: we supply a training set in which the "correct answer" has been marked, and we then optimize the parameters of the RNN so as to minimize its prediction error over this training set. The RNN thus acts as a sort of continuous circuit which represents some function. We then hope that the function the RNN has come to represent after optimization is a good approximation of the imagined Platonic "reality function" which actually maps data to correct answers.
+
+To relieve your worry, [[https://arxiv.org/abs/1604.00289v1][here's an arxiv article from a major lab contrasting today's neural-network-based AI with current models of human cognition.]]
+
+To re-encourage your worry, [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4915327/][here's an article giving a unified theory of cognition.]]

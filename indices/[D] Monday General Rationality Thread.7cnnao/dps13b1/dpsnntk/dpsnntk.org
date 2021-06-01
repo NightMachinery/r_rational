@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 7
+:DateUnix: 1510644284.0
+:DateShort: 2017-Nov-14
+:END:
+
+I'm curious why people are suggesting sorting algorithms. We live in a 3-dimensional world, not stuck using computer registers, so we can do something far better than just write/stack operations. Not to mention human read operations are ridiculously fast compared to our write (move) operations, so you really want an algorithm where you can do tons of reads but as little writes (moves) as possible.
+
+With that in mind, I prefer just having one diagonal "stack": starting with your pile of 500 papers, take whichever one you can take fastest and put it on the floor. Take another, put it next to the one on the floor. Repeatedly take another paper from the pile, and compare its integer to the papers on the floor. This will quickly let you find the right position it should be placed in. Place it such that it is directly on top of the paper with the immediately smaller integer, shifted slightly so both their integers are visible, and directly below the paper with the immediately larger integer, again shifted slightly so that both their integers are visible. The trick here is that since all (or most if you have less space) integers of the currently sorted papers are always visible and clearly ordered, you can read them all very quickly without moving them, saving you lots of time. If the integers are written in a small corner of the paper, which is usually the case for exam papers, this method doesn't even take up that much space.

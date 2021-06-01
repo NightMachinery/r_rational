@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 2
+:DateUnix: 1431695478.0
+:DateShort: 2015-May-15
+:END:
+
+What's the conversion rate? Would an amulet whose function is to recharge other amulets get the drawback of receiving any remaining cooldown on the recharged amulet, or more, or less?
+
+For example I could imagine the following interactions:
+
+- Recharging a once-ever amulet renders the recharger inert
+
+- Recharging a once-per-person amulet makes any future amulets recharged by this recharger unable to be used by the people given another chance at the recharged amulet
+
+- Recharging a twice-ever amulet with one charge used permanently halves the power of this recharger, making it unable to recharge once-ever or once-per-person amulets, but, for instance, restoring an unmodified number of charges to all amulets described in these cases where the maximum number of charges was doubled. Example:
+
+  #+begin_example
+     fresh recharger -> ((5/6)->(6/6)) -> ((0/2)->(1/2)) -> ((1/3)->(2/3)) -> inert recharger
+  #+end_example
+
+Edit: Hmm, up to this point it can be modelled as having a mana pool per person that can be temporarily or permanently reduced. Can someone throw some more example amulets at this recharger to see what drawback the recharger would accumulate?
+
+(Yes, of course requesting all this makes it even worse, but I'm asking whether not specifying the above would produce an amulet with balancing roughly in line with this, to see whether equivalent exchange applies to meta-amulets.)
+
+By the way, I'm interested in joining. Is this online?

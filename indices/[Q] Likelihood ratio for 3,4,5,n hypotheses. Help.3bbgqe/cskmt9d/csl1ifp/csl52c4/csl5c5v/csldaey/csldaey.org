@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1435496938.0
+:DateShort: 2015-Jun-28
+:END:
+
+Possibly; it might provide at least a framework.
+
+For any given question, such as P(pp), the sum of all the hypotheses (such as P(pp|w), P(pp|b), P(pp|p), etc) adds up to 1; that's the total 'probability mass'. That mass gets divvied out amongst the possibilities. When there's just two hypotheses, then it's easy, since all the probability mass that's not in one hypothesis is in the other. With more than two, it's a little harder, since the total probability if P(w) is false is P(b) + P(p) + etc.
+
+If you gain a piece of evidence which increases P(p), then, by necessity, that probability mass has to be taken from all the other hypotheses. Depending on a few details, then it can be feasible to run a straight Bayesian update on P(p), and then "renormalize" all the other hypotheses to shrink them to fit in the remaining amount of probability mass.
+
+Does that sound like it makes sense?

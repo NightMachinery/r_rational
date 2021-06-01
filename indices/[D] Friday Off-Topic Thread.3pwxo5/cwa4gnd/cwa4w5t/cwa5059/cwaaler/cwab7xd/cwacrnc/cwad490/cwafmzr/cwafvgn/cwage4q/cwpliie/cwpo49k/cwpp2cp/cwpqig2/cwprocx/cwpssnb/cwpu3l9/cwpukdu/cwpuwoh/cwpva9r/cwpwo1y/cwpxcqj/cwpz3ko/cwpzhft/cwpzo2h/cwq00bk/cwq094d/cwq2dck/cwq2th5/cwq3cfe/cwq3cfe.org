@@ -1,0 +1,30 @@
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1446770987.0
+:DateShort: 2015-Nov-06
+:END:
+
+#+begin_quote
+  We do still need to save to disk at some point
+#+end_quote
+
+Which, if you're using capnproto, is a simple write operation. Or if you're using a mapped file you let the pager do it. Or close the file. The in-memory format /is/ the on-disk format.
+
+#+begin_quote
+  The alternative is using generic compression and just compressing the pixel array?
+#+end_quote
+
+You define the accessors to compress and uncompress the bitmap, or even parts of the bitmap, as needed. The compressed and uncompressed versions of the bitmap are all part of the capnproto data structure, allocated dynamically when needed and released by the garbage collector.
+
+#+begin_quote
+  I'd like this to at least start off being somewhat compatible with actual filesystems.
+#+end_quote
+
+It already is.
+
+#+begin_quote
+  It was probably a poor example. Just pretend I've been saying png if that's the problem.
+#+end_quote
+
+PNG is a batter match for capnproto, but you would still only use it as an import or export mechanism. The in-action image would be in capnproto objects. Individual bitplanes would be compressed using a PNG-compatible compressor like DEFLATE by the garbage collector.

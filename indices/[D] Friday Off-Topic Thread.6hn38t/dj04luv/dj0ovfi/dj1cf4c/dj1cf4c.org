@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: orthernLight
+:Score: 4
+:DateUnix: 1497726871.0
+:DateShort: 2017-Jun-17
+:END:
+
+#+begin_quote
+  Using this online Regex dictionary I looked up the number of words which match the patterns ^{[^{mn]/m[^{mn]}/n[^{mn]*$/}}} and /^{[^{mn]/n[^{mn]}/m[^{mn]*$/}}} (i.e. m before n vs n before m, where the word has exactly one of each).
+#+end_quote
+
+That's pretty handy - I was going to try using NLTK, but this is much easier.
+
+I notice that the same phenomenon seems to occur with p and t, the unvoiced stops with the same places of articulation, with 3468 results for
+
+#+begin_example
+  /^[^pt]*p[^pt]*t[^pt]*$/
+#+end_example
+
+versus 1081 for
+
+#+begin_example
+  /^[^pt]*t[^pt]*p[^pt]*$/
+#+end_example
+
+b and d show the same trend. So it's not just nasal consonants.

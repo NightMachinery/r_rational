@@ -1,0 +1,244 @@
+#+TITLE: I am a web developer - what website/webapp could I build for this community?
+
+* I am a web developer - what website/webapp could I build for this community?
+:PROPERTIES:
+:Author: raymestalez
+:Score: 18
+:DateUnix: 1427033071.0
+:DateShort: 2015-Mar-22
+:END:
+Hey everyone!
+
+I'm learning web development and getting pretty competent at it, and as one of my projects I would like to build something for this community, because I think it would be cool and fun.
+
+So I'm wondering - is there any website/webapp that you would like to exist? Something that could be useful for rationalist readers or writers? Or maybe you have some problem that could be solvable with an app? If anyone has any cool ideas that you want me to build - please share =)
+
+P.S.
+
+If anyone offers some cool idea that I will end up building - I will pay a lot of attention to your suggestions and build features that you want to be there, so you essentially can get a custom-built, free, open-source app for yourself that does whatever you want =)
+
+
+** This is sort of pie-in-the-sky, but what I've really been wanting for a long time is an anachronism checker.
+
+Here's my basic use case:
+
+1. User enters in a chunk of text (likely a chapter of 5k-10k words)
+2. User enters a year (for example, "1900")
+3. User clicks "Check me!"
+4. Program highlights suspect words, phrases, etc.
+
+How this would work on the backend is that it would interface with something like [[https://books.google.com/ngrams][Google n-gram viewer]] or [[http://weblm.research.microsoft.com/][Microsoft N-gram Service]], run a check against every unigram, bigram, trigram, etc. to find its frequency in that year, then compare that against its frequency in the current year. If a certain threshold is exceeded, the n-gram is highlighted.
+
+So in our use-case example, the phrase "Albert Einstein" would be highlighted if you selected the year "1900" because Einstein was a complete unknown then.
+
+As a bonus, it's a very short step from doing /that/ to having a webapp that can help highlight Americanisms in works which are set in British worlds.
+
+(There are a few ways to do things like this - mostly hacking spellcheck libraries - but all of them need setup and manual processes that are a pain in the ass.)
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 25
+:DateUnix: 1427056821.0
+:DateShort: 2015-Mar-23
+:END:
+
+*** That would be The Best Thing Ever.
+
+Actually, "Best Thing Ever" would be that, plus the program suggests alternatives.
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 5
+:DateUnix: 1427057474.0
+:DateShort: 2015-Mar-23
+:END:
+
+
+*** Also, [[http://maryrobinettekowal.com/journal/how-i-beat-pat-rothfuss-at-being-pat-rothfuss/][specific people]].
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 6
+:DateUnix: 1427060082.0
+:DateShort: 2015-Mar-23
+:END:
+
+**** Mary Robinette Kowal was actually how I was first introduced to the concept of automated anachronism checking. She [[http://maryrobinettekowal.com/journal/the-jane-austen-word-list/][scraped a list of all the words in Austen's novels]], then fed that into her text editor as a spellcheck dictionary, which then highlighted [[http://maryrobinettekowal.com/journal/words-i-couldnt-use-in-glamour-in-glass/][words that Austen didn't use]]. But this method is sort of clunky, and not easy to generalize.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 8
+:DateUnix: 1427128359.0
+:DateShort: 2015-Mar-23
+:END:
+
+***** Good lord. If you actually make such a thing, please let me know.
+:PROPERTIES:
+:Author: MaryRobinette
+:Score: 3
+:DateUnix: 1427144300.0
+:DateShort: 2015-Mar-24
+:END:
+
+
+*** This would be phenomenally useful. A huge help and an incredible time saver. Also, accuracy.
+:PROPERTIES:
+:Author: brandalizing
+:Score: 4
+:DateUnix: 1427125540.0
+:DateShort: 2015-Mar-23
+:END:
+
+
+*** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1427160141.0
+:DateShort: 2015-Mar-24
+:END:
+
+**** If you do, let me know!
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1427160366.0
+:DateShort: 2015-Mar-24
+:END:
+
+***** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1427296352.0
+:DateShort: 2015-Mar-25
+:END:
+
+****** An n-gram can be a unigram (one word), bigram (two words), trigram (three words), etc.
+
+"The" is a unigram. When you see it at 10%, that percent is the occurrence as a percent of /all unigrams/. So if the graph shows "the" at 10% in 1990, that means that if you were to slice every book on record (/edit: for 1990/) into unigrams, and put those unigrams in a hat, your odds of drawing the word "the" from the hat would be 10%. If you added together the percents for /all unigrams/, you would have 100%.
+
+Same goes for bigrams. If you divide up the entire corpus into bigrams, how many of those are "Albert Einstein" or "loosey goosey" or "wild card"? (For an example of how this works, the sentence "Albert Einstein was smart" would get divided into three bigrams: "Albert Einstein", "Einstein was", "was smart")
+
+This tends to be a bit better than just counting whether an indexed book has that word, because otherwise an entire book about Einstein would be counted the same as a single reference. Given the sheer size of the corpus, mostly you get smoothish lines.
+
+[[https://books.google.com/ngrams/info][Check out their About page for more information.]]
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1427297193.0
+:DateShort: 2015-Mar-25
+:END:
+
+******* [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1428071886.0
+:DateShort: 2015-Apr-03
+:END:
+
+
+*** Wouldn't it be easier to use some sort of captcha like service (as the backend); I feel like coding that would be a nightmare since even Albert Einstein was still around then you'd have to start doing percentage or something weird like that.
+:PROPERTIES:
+:Author: RMcD94
+:Score: 0
+:DateUnix: 1427066239.0
+:DateShort: 2015-Mar-23
+:END:
+
+**** Google Ngram viewer already outputs that ngram as percent of the corpus. I'm not really clear on what you mean by a captcha-like service, but the actual logic for evaluating ngrams shouldn't be too much more difficult than:
+
+#+begin_example
+  percentChange = ngramTodayValue / ngramPastValue
+  if (percentChange > threshold)
+      flag
+#+end_example
+
+The hard part is getting those values into the system - the evaluation shouldn't be terribly problematic.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1427067284.0
+:DateShort: 2015-Mar-23
+:END:
+
+
+** first let me describe a "real life action tracking" system. this system allows the user to create one-time or time-recurring goals, or constantly on habits. when users notice they are doing a habit, or complete a goal, they manually tell the system.
+
+ok, now take literally any easily-copied free-to-play web game designed to get you addicted to it, then get you needing to pay for premium currency. (candy crush, anyone?)
+
+now, instead of charging for premium currency, reward or deduct it for actions via the tracking system already described. you just built a powerful self-guided training tool.
+
+to my knowledge, the only thing that comes close to this is habitrpg, but it has issues which make it less effective than it could be. for example, it's also free-to-play monetized, which lets you pay real money to bypass having to complete goals, which is a bad thing to train into people, and hurts its training effectiveness (do you want your users to be addicted to completing goals, or paying you?)
+:PROPERTIES:
+:Author: paladinneph
+:Score: 8
+:DateUnix: 1427036375.0
+:DateShort: 2015-Mar-22
+:END:
+
+
+** Hm. If you know who set up the Rational Reads website, perhaps you get add the ability to edit entries after they've been entered. This'd be especially useful for editing tags like "dead fic" or "updating slowly."
+
+[[http://rationalreads.com/#/]]
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 4
+:DateUnix: 1427048379.0
+:DateShort: 2015-Mar-22
+:END:
+
+*** The Rational Reads Github [[https://github.com/Amit-P-Amin/RationalReads][page]], for those looking to add to it or see its progress.
+:PROPERTIES:
+:Author: mns2
+:Score: 4
+:DateUnix: 1427053913.0
+:DateShort: 2015-Mar-23
+:END:
+
+**** Ooh! Thank you.
+
+I didn't know that this existed. Thank you.
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 3
+:DateUnix: 1427054509.0
+:DateShort: 2015-Mar-23
+:END:
+
+
+*** [deleted]
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1427069615.0
+:DateShort: 2015-Mar-23
+:END:
+
+**** Ah. Thank you for letting me know that.
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 1
+:DateUnix: 1427070102.0
+:DateShort: 2015-Mar-23
+:END:
+
+
+** Out of curiosity, what tools do you use?
+:PROPERTIES:
+:Author: traverseda
+:Score: 3
+:DateUnix: 1427048052.0
+:DateShort: 2015-Mar-22
+:END:
+
+*** Django, Node.js, MongoDB, Express.js, Ember, MongoDB, EaselJS, Bootstrap.
+
+Digital Ocean for hosting.
+:PROPERTIES:
+:Author: raymestalez
+:Score: 2
+:DateUnix: 1427112909.0
+:DateShort: 2015-Mar-23
+:END:
+
+**** How are you finding node? I'm generally a lot less heavy on the front end JS type stuff, so I'm interested.
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1427118138.0
+:DateShort: 2015-Mar-23
+:END:

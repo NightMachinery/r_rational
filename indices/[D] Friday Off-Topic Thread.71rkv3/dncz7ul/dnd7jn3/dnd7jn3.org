@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: eternal-potato
+:Score: 2
+:DateUnix: 1506105501.0
+:DateShort: 2017-Sep-22
+:END:
+
+#+begin_quote
+  If anyone has any insight as to how to maintain two separate branches, letting them merge into one another while keeping at least one branch-2-only commit on that branch and only on that branch, I'd much appreciate your wisdom. At the moment I'm manually merging things and I just know there's got to be a more painless way to do it.
+#+end_quote
+
+Have a =common= branch that contains all version-agnostic commits, and branches =v6= and =v7=, with commits specific to corresponding versions. Whenever making a version-specific change, commit to corresponding version branch. Whenever making version-agnostic change, commit to =common=, then merge it into each version-specific branch. If you are careful, no conflicts should be introduced (beyond the initial setup), thus allowing automatic merge.

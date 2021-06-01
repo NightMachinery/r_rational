@@ -1,0 +1,56 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 12
+:DateUnix: 1484325480.0
+:DateShort: 2017-Jan-13
+:END:
+
+Weekly update on my rational pokemon game, including work on the data creation tool Bill's PC. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+WELL, it's been a few weeks.  This would be unnecessarily long if I were to list out all of my excuses, so in brief: after Christmas I traveled out-of-state to visit the wife's family, then got stomach flu, then had to recover from both while getting back into the groove at work.  There's no real excuse for breaking the combo last week (and the week before, iirc), but here I am.
+
+Actually, come to think of it, one of the more relevant big distractions I had the last few weeks was the organization of a Pokemon Tabletop United group on the [[/r/rational]] Discord server, which had both it's pros and cons.  Several of us drew up characters and even had a few mock battles, and I have to say, it was very encouraging to see pokemon beating each other up on a grid work so well.  I have unfortunately had to drop participation with it, as I think I only really have the time to spare for /one/ pokemon-related time sink, more's the pity.
+
+--------------
+
+As part of the work on that group, I drew up some designs for biomes, since that work could be used in both projects.  I eventually decided that spawn areas will basically be determined by precipitation, temperature, and tags (such as types of plant, stone, other environmental factors, etc), with each tag increasing or decreasing the chance that a pokemon will spawn in that area. Map makers will then be able to decide what each biome has (precipitation, temperature, fauna, and maybe some forced species), and world generation will have a few iterations of having each species “decide” whether the map-defined biomes “fit” the pokemon's generation criteria.  
+
+That was the bottom-up approach, which I will continue to iterate on as the game's design progresses.  For the tabletop, such fidelity was of course not needed, so instead I threw together a top-down approach of simply listing pokemon in biomes I thought fit (with lots of help from the #poketop channel).  [[https://docs.google.com/document/d/1yC4l6iLl_DtWFAZ5rfCp8xPdc6edZK7uRM2d9dM0dYI/edit?usp=sharing][That list of the first ~3 generations throughout ~10 biomes is here.]]  I will likely be using this as a starting set of guidelines in the future.
+
+--------------
+
+That aside, my current focus is still to get the feature list completely consolidated.  There are somewhere in the neighborhood of 800 individual features listed in the current feature document, and this is being pulled apart and sorted.  Progress is slower than anticipated, but it's necessary work and I feel the project will get nowhere without it.
+
+The current plan is to divide every feature into subfeatures, try and break those subfeatures down further into four broad-strokes categories, and then number the resulting list, sort them into a feature roadmap, and then treat this as a monolithic to-do list.  
+
+The four categories are as follows:
+
+- Systems
+
+- Entities
+
+- Mods
+
+- Content
+
+An /Entity/ is a C# Interface and a handful of variables which define a template for a specific /type/ of object.  Basic functionality will no doubt be included, but this is intended to be the most abstract definition of an object class possible. To illustrate: Equipment is an Entity, a type of object that is designed to be used and manipulated by characters in the game.  An Equipment object has a name, a bundle of stats, and some basic functions such as Activate() and CanActivate().  
+
+Entities in general will be the major limiters of scope for the engine: since these are not loaded dynamically, they will act as anchors, limiting the ultimate reach of any modded content.
+
+A /Mod/ (or /Module/, in this case) is a block of functionality that is attached to Entities.  If Equipment is an Entity, then WearableEquipment is a mod: it offers extensions to the Equipment object, allowing content to be created that “knows” how to be worn, including interfaces for checking if you're wearing more than one pair of socks or what have you.  Mods can run the gamut from abstract (such as WearableEquipment) to more concrete (a Pokeball mod that adds capturing, scanning, and withdrawing code to any piece of equipment that implements it).  
+
+As the name suggests, Mods can be customized by the user.  Due to this system, much of the functionality that would normally be completely locked away within the engine will be exposed.  I imagine a certain set of mods being defined as “core” and included with the game, but everything from typing interactions to society simulation to weather to anatomy to aspects of the combat system being a mod (or more accurately, a cluster of related mods) that can be swapped out as needed.  Mods are written in C# and are loaded at run-time and compiled.
+
+/Content/ is a JSON text file describing a game object.  This JSON will list the mods that the object hooks into and defines all of the variables used by the Mod and Entity. An Ultra Ball JSON, for instance, might declare it is a Pokeball and a ThrowableEquipment, define values for Durability, Weight Limit, Weight, and ReleaseSpeed, and probably references to an Ultra Ball sprite or two.  By itself, it does nothing; it is purely data that is read and manipulated by other processes.
+
+Which brings us to /Systems/, which tie it all together.  The EquipmentSystem, at startup, reads all Content files that define themselves as Equipment, instantiates the appropriate Entities, and loads the appropriate Mods that get attached to the Entities.  It then enforces the rules that uniquely define Equipment in general, while also managing the various Equipment mods as necessary.  
+
+I'm still working through the ramifications of how multiple Systems will interact with one another, but so far I think this is a solid enough organization.  It's a bit of work drilling down this far into abstract design; I won't deny it rankles a bit knowing that I would have a prototype already working if I didn't care to make it moddable to this extent, but I feel it's a necessary experiment.  This organization, if it works, is a pattern that I will take with me to other projects, and I'd like for it to succeed.  
+
+For now, tho, it's definitely a bit of a pain to take a system as simple as, say, elemental typing, and stripping it down and twisting it to fit within this four-layer paradigm.
+
+--------------
+
+Feel free to leave any comments or questions below. Also feel free to join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]] for brainstorming and discussion.  It's a great group, really, and I would highly recommend hanging out, even if you're not in it for this project itself.  There's tabletop groups, Dota 2 partying, and [[http://i.imgur.com/j3jRmMZ.png][puns]] like you wouldn't [[http://i.imgur.com/8cUkzoGl.jpg][believe]].  Come join us!

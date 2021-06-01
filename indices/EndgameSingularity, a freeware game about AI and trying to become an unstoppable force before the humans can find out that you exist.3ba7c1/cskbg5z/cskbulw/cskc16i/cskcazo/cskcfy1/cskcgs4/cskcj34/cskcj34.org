@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1435394172.0
+:DateShort: 2015-Jun-27
+:END:
+
+#+begin_example
+  [dan@warren singularity-0.30c]$ ./Endgame_Linux 
+  Cannot open ../data/techs.dat for reading! ([Errno 2] No such file or directory: '../data/techs.dat')
+  [dan@warren singularity-0.30c]$ 
+#+end_example
+
+Copying the Endgame_Linux script into the code directory doesn't help - I get the same results as in my last post.
+
+(And yes, there is a techs.dat file in the data directory.)

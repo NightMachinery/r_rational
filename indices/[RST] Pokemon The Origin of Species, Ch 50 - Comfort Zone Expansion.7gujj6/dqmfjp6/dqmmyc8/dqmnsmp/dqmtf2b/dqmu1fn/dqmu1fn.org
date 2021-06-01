@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: masasin
+:Score: 2
+:DateUnix: 1512171058.0
+:DateShort: 2017-Dec-02
+:END:
+
+Did you see my second comment/edit? I think your wording might have been a bit off.
+
+#+begin_quote
+  we already have that answer for Tyranitar reports: 12%.
+#+end_quote
+
+That's exactly it.
+
+#+begin_quote
+  I'm a little confused as to why it's necessary to know how often T1 occur at all, rather than just how often they're accurate.
+#+end_quote
+
+If you don't know how often T1 occurs, then the first part (12% vs 88%) gives you absolutely zero information. You'd be working with likelihoods and ignoring your priors.
+
+You're looking for P(T1 | R1), or the probability that a Tier 1 incident occurred given that a Tier 1 incident was report, and you would need to have your answer be 0.79. You could also ask what percentage of Tier 1 reports are actually from Type 1 incidents:
+
+P(R1 | T1) / P(R1) = P(R1 | T1) / (P(R1 | T1)*P(T1) + P(R1 | T2)*P(T2)) = P(T1 | R1) / P(T1). With P(T1) offering no additional information, you default back to P(T1 | R1) = 0.79.

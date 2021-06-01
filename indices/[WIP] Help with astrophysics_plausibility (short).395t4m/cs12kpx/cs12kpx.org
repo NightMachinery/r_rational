@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: DCarrier
+:Score: 3
+:DateUnix: 1433886343.0
+:DateShort: 2015-Jun-10
+:END:
+
+I don't know much about astrophysics, but the cryptography seems odd. You don't make the key change. You use the key to send out encrypted messages that change. Just salt your messages by adding random characters at the end, and nobody will be able to tell which key you're using.
+
+Although for something like this, that wouldn't work too well either. They might not be able to tell which key you're using just looking at the ones embedded onto your computer beforehand, but if they bug then entire process of decrypting it, which they will, they can see what key you're using.
+
+You'd need an encryption scheme that you can do in your head. That pretty much limits you to a one-time pad. Someone has memorized 100,000 digits of pi, so it's definitely possible.
+
+How is this supposed to work long-term? Do they just keep giving in to Clark's demands until he dies and postpone the end of the world for a few decades? Does Clark give them a code to stop the whole thing when he thinks he's going to die soon, and then get killed? Does he make Sisyphus randomly decide to start acting on its own, so the longer he's emperor the less likely it is the Earth will get destroyed, but nobody knows if it's been long enough?
+
+I can understand not being able to stop the asteroid the first time, but if Sisyphus is only doing minor course corrections, the asteroid would still have to pass near Earth when it misses, which means that it will be easy to send a rocket in parallel that reaches it on the far side of the orbit. Is Clark hoping that people won't be able to hide the rocket from him?

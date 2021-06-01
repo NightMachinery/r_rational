@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 3
+:DateUnix: 1441116844.0
+:DateShort: 2015-Sep-01
+:END:
+
+To elaborate, consider the following data compression scheme. To simplify things, let's pretend we're compressing strings of decimal digits... the same logic generalizes to ASCII, BAUDOT, Hollerith code, EBCDIC, or Radix-50.
+
+To compress: replace each sequence of characters with the tuple {n,X}, where n is the number of characters encoded, and X is the location of the start of the sequence in the decimal expansion of pi.
+
+Is there any value n for which this would not make the message longer? I don't have a proof here, but it seems that larger values of n would have increasingly worse expansions. Even leaving the "n" out of the "encoded text" wouldn't help much.

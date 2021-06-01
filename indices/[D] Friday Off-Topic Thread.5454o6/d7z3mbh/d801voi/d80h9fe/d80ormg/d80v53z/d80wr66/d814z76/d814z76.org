@@ -1,0 +1,76 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 2
+:DateUnix: 1474794818.0
+:DateShort: 2016-Sep-25
+:END:
+
+#+begin_quote
+  it certainly seems like I should give the completely new stats (constitution, resistance, temperament) a good deal of thought before trying to decide how stat spreads should look for various Pokemon.
+#+end_quote
+
+I realized after seeing this that I didn't point out the definitions I already had for all the stats and anatomy; sorry about that! I've [[https://docs.google.com/document/d/1Co3cS6p_5h6HGs3tzjbJRRbUFd-vI2njVGjYyz8jwE4/#][overhauled the documentation]] for Bill's PC, and in the Base Stats section there is a list of explanations for what each stat represents.
+
+#+begin_quote
+  A couple quick questions, though. In the Anatomy section, I see things like HP and HP+ for the stats of each body part. Should I conclude that if a stat is present the functioning of the body part affects the stat itself, and that a + assigns extra significance?
+#+end_quote
+
+Spot on. Damage to the listed body part will essentially temporarily subtract the proper proportion of the stat. I also added a section explaining this to the documentation.
+
+#+begin_quote
+  Also, I'm lacking a bit of perspective about the stat values. Mewtwo's better stats are well above 500 and his lesser stats are well below 500, so is 500 meant to be above average but not exceptionally powerful, as in, what a decent Pokemon like, say, Scyther, could be at with its physical attack?
+#+end_quote
+
+All the stats from HP to Weight (read row by row) are 0-based, which is to say they start at 0 and scale up to 999. All the rest of the stats are 500-based, where they start at 500 and go either up or down; this is for stats that have a meaningful definition of "negative". For instance, a pokemon with ACC less than 500 is somewhat of a klutz that misses more often than usual.
+
+Mewtwo should be treated as about as good as mortals can get; while some pokemon might beat him on one stat or another, no one should have anywhere close to as good a stat total as he does. This may mean we need to buff him; I'm floundering as much as you are as far as context goes.
+
+See the Base Stat section I mentioned above, as some of the stats (such as SPD) have specific meanings; in SPD's case 20 SPD is equal to 1 tile moved per turn, or about 1 m/s. 120 SPD is thus 6 tiles per turn, which is actually pretty slow, but I was worried about turning this superpowerful end-game character into a bullshit teleports-behind-you sort of boss. It might end up needing to be necessary to buff his speed, but I also had the SSBM version of Mewtwo in mind as well. The other super-low stats have similar hard-coded meanings (except Loyalty, which makes sense once you know what it's for).
+
+#+begin_quote
+  And, just to see if I understand it right, Intelligence deals with the Pokemon's ability to understand complex orders,
+#+end_quote
+
+Not quite. Actually a modifier of experienced gained and a factor in determining max number of moves. I have toyed with the idea of messing with "complex orders", but I'm not so certain how that would play out in an ostensibly turn-based game.
+
+#+begin_quote
+  Constitution deals with the Pokemon's internal stability, or how good their body is at keeping them healthy
+#+end_quote
+
+Pretty much: it's a modifier to how effective status effects are against it.
+
+#+begin_quote
+  Accuracy and Evasion are just modifiers on hit chance, Initiative is what speed used to be (priority and turn order, etc.) while Speed is now movement speed, Critical is a modifier on critical hit rate,
+#+end_quote
+
+All spot on.
+
+#+begin_quote
+  Respect is the Pokemon's opinion of trainers as a general rule, Loyalty is the Pokemon's willingness to follow orders
+#+end_quote
+
+The player character will himself have stats, two of which are Leadership and Compassion. Leadership is a measure of how inspiring you are to your pokemon and modifies EV gain, damage output, and initiative. Compassion is a measure of how connected you are to your pokemon, and modifies stat growth, move training, and healing amounts. Respect and Loyalty are tied to these two; a pokemon with high Respect won't listen to you unless you have a matching Leadership, and same for Loyalty and Compassion.
+
+(To borrow from OoS: Blue's Shiftry has a high Respect and trash Loyalty, where Red's Pichu is low Respect high Loyalty. Pichu would cower in fear if Red's Leadership were too much higher than his Compassion, but Shifty won't even consider doing anything but decapitate Blue until he's shown his Leadership off.)
+
+Now that I think about this, I may need to change these two to be 500-based, so a pokemon with "negative" Loyalty is actually annoyed by a high Compassion stat on you, and vice versa. The intention was that Mewtwo's low Loyalty meant he didn't give two shits if you were luvvy-duvvy, he only cared if you could beat him and inspire him with your badassery.
+
+#+begin_quote
+  Temperament is a modifier on the behaviour of the Pokemon
+#+end_quote
+
+Yup, specifically on the overworld, though I might find another use for the stat in other situations. 0 = flees in wild panic, 500 = zen, 999 = aggressively goes bananas on you.
+
+#+begin_quote
+  is Weakness about keeping external effects (like cold) from having an affect on it, as is it inverse, where more Weakness makes it easier to affect?
+#+end_quote
+
+Weakness and Resistance are just straight modifiers to the type weaknesses/resistances. A Charizard with a high RES stat takes even /less/ damage from a Grass-type move, while a Charizard with a high WEAK stat can't even get rained on without dying. The initial idea was to actually allow custom type definitions per-species, but that was waaay too much, so I compromised with this.
+
+Though I like your idea of using it for environmental stuff, too. I hadn't really thought about external weather, but wouldn't it be funny if you had to be careful where you used Rain Dance cuz now you have to trudge through mud for two days...
+
+#+begin_quote
+  As for the interface itself, it looks pretty solid for having everything I need to pay attention to laid out in efficient organization...I think I'll take a stab at making a stat spread for one of the Pokemon after I've given the stats a little more thought and hear back from you. This looks interesting.
+#+end_quote
+
+Glad to hear it! Do let me know if you have any complaints or suggestions. Be sure to check out the Bulbapedia mass import; I gave it its own section in the documentation, as it speeds up, well, mass imports pretty damn well. Just note that importing from the canon stats is an inaccurate science; especially since so many canon pokemon will need to be adjusted to let their badass side truly shine.

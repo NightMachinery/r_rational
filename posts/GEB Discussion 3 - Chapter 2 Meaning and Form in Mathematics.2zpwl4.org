@@ -1,0 +1,582 @@
+#+TITLE: GEB Discussion #3 - Chapter #2: Meaning and Form in Mathematics
+
+* GEB Discussion #3 - Chapter #2: Meaning and Form in Mathematics
+:PROPERTIES:
+:Author: xamueljones
+:Score: 13
+:DateUnix: 1426872113.0
+:DateShort: 2015-Mar-20
+:END:
+*Gödel, Escher, Bach: An Eternal Golden Braid*
+
+This is a discussion of the themes and questions concerning the *Chapter 2: Meaning and Form in Mathematics*, and its dialogue, *Sonata for Unaccompanied Achilles*.
+
+*Formal Systems*
+
+How is the pq- system isomorphic to addition? Can we say that all laws of addition are preserved?
+
+- Law of Commutativity: a + b = b + a
+
+- Law of Associativity: (a + b) + c = a + (b + c)
+
+- Law of Distributivity: a × (b + c) = a × b + a × c
+
+We notice immediately that Distributivity doesn't hold, because there is no multiplication operation in the pq- system. Why can't we extend the system like we do with the addition to multiplication. Why isn't this ability part of the isomorphism?
+
+......
+
+*Isomorphism*
+
+Isomorphisms are only perceived when two systems seem to have the same /meaning/. Yet the meaning of the two systems don't appear subjective (or something wholly in our mind), but rather as if they reflect an inherent property of an underlying, deeper system containing the two simpler systems.
+
+Is meaning subjective or objective (or some mixture of both)?
+
+How does this idea relate to the earlier chapters of 'Strange Loops' and intelligence's ability to 'jump' out of a system?
+
+It appears to be part of our ability to understand the world as an abstract system when we use language and when we think abstractly. Remember, the map is not the territory!
+
+If we think of an isomorphism from one system to a second system, and then think of another isomorphism from the second to a third system, would the first system be isomorphic to the third system? Wouldn't there be problems where details are lost in translation like when translating a passage from one language to a second and then to a third language?
+
+In mathematics, how does isomorphism relate to the [[http://projectwordsworth.com/the-paradox-of-the-proof/][notion of a proof]] especially when proofs are a social construct?
+
+......
+
+*Dialogue*
+
+1) What was Tortoise doing that caused Achilles to twist his neck?
+
+2) What was Tortoise's ingenious but degenerate solution to the HE puzzle?
+
+3) What was Tortoise's second solution to the HE puzzle?
+
+4) What is the solution to the ADAC puzzle?
+
+5) What is the concept of 'figure and ground'? How does it appear in Escher's artwork and in the dialogue? Who is the 'figure' and who is the 'ground'? How can we relate the 'figure and ground' concept to the answer to both puzzles?
+
+Wikia links:
+
+- [[http://godel-escher-bach.wikia.com/wiki/Chapter_2][Chapter 2]]
+
+- [[http://godel-escher-bach.wikia.com/wiki/Sonata_for_Unaccompanied_Achilles][Sonata for Unaccompanied Achilles]]
+
+Coming up next on March 23th is Chapter III: Figure and Ground.
+
+The discussion for the previous chapter is posted [[http://www.reddit.com/r/rational/comments/2zhouc/geb_discussion_2_chapter_1_the_mupuzzle/][here]].
+
+The discussion for the next chapter is posted [[http://www.reddit.com/r/rational/comments/30144c/geb_discussion_4_chapter_3_figure_and_ground/][here]].
+
+[[http://www.reddit.com/r/rational/comments/2yys1i/lets_start_the_read_through/][Official Schedule]].
+
+P.S. Sorry if this post is a little rushed. I didn't have much time to think of more engaging explanations of the ideas in the chapter, and defaulted to using multiple questions to get your brains thinking.
+
+
+** [deleted]
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1426929784.0
+:DateShort: 2015-Mar-21
+:END:
+
+*** u/deleted:
+#+begin_quote
+  An isomorphism is not just a statement that two objects have the same meaning. It is a way of transferring information between two objects, without losing information.
+#+end_quote
+
+This is how it was described in GEB so OP got it a bit wrong. Both of the objects convey the same minimum amount of information needed for the isomorphism.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1426955671.0
+:DateShort: 2015-Mar-21
+:END:
+
+
+** The /pq/ system is isomorphic to the additive Semigroup defined in Peano's original definition of Peano Arithmetic.
+
+If we were to include the distributive law, it would necessitate exhibiting a Ring isomorphism. Since the /pq/ system is not a Ring, such a notion is absurd.
+
+Proof of isomorphism using informal Homotopy Type Theory to follow.
+
+It is so, because Peano's original definition is:
+
+#+begin_example
+  Nat : Type
+  1 : Nat
+  S : Nat → Nat
+  ind_Nat :
+      (P : Nat → Type) →
+      P 1 →
+      ( (n : Nat) → P n → P (S n) ) →
+      (n : Nat) → P n
+
+  _+_ : Nat → Nat → Nat
+  1 + n :≡ S n
+  S n + m :≡ S (n + m)
+#+end_example
+
+from which =unit_addition : (n : Nat) → 1 + n = S n= follows trivially.
+
+(With associativity, commutativity, and other properties of addition in this type-theoretic example, left as an exercise to the reader.)
+
+Going by the definition of /pq/ in GEB:
+
+#+begin_example
+  dash : Type
+  - : dash
+  ind_dash : (P : dash → Type) → P - → (d : dash) → P d
+
+  string : Type → Type
+  empty_string : (A : Type) → string A
+  cons_string : (A : Type) → A → string A → string A 
+  ind_string :
+      (A : Type) →
+      (P : string A → Type) →
+      P (empty_string A) →
+      ( (a : A) → (l : string A) → P l → P (cons_string a l) ) →
+      ( (l : string A) → P l )
+
+
+  _++_ : (A : Type) → string A → string A → string A
+  empty_string ++ l :≡ l
+  cons_string a l ++ k :≡ cons_string a (l ++ k)
+
+  dashes : Type
+  dashes :≡ string dash
+
+  pq : Type
+  _p_q_ :
+      (x : dashes) → (y : dashes) → (z : dashes) →
+      (x = empty_string dash → 0) →
+      (y = empty_string dash → 0) →
+      (z = x ++ y) →
+      pq
+#+end_example
+
+And then all we have to do is exhibit:
+
+#+begin_example
+  iso : Nat ≅ (d : dashes) × (d = empty_string → 0)
+  iso :≡ (Nat_to_dashes, dashes_to_Nat
+
+  Nat_to_dashes : Nat → (d : dashes) × (d = empty_string → 0)
+  Nat_to_dashes 1 :≡ cons_string - empty_string
+  Nat_to_dashes (S n) :≡ cons_string - (Nat_to_dashes n)
+
+  dashes_to_Nat : (d : dashes) × (d = empty_string → 0) → Nat
+  dashes_to_Nat (cons_string - empty_string) :≡ 1
+  dashes_to_Nat (cons_string - l) :≡ S (dashes_to_Nat l)
+#+end_example
+
+which by univalence gives us =Nat = (d : dashes) × (dashes = empty_string → 0)=
+
+And then restructuring =_+_= as a relation:
+
+#+begin_example
+  add_rel : Nat → Nat → Nat → Type
+  add_rel n m o :≡ n + m = o
+#+end_example
+
+which can be proven equal to =_p_q_= by functional extension.
+
+QED.
+:PROPERTIES:
+:Author: mhd-hbd
+:Score: 4
+:DateUnix: 1426943844.0
+:DateShort: 2015-Mar-21
+:END:
+
+
+** u/deleted:
+#+begin_quote
+  P.S. Sorry if this post is a little rushed.
+#+end_quote
+
+That's how it begins, the awaited dropping off into oblivion ;)
+
+But seriously, good job on these introductions, they are more than appreciated!
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1426876308.0
+:DateShort: 2015-Mar-20
+:END:
+
+
+** about the dialogue questions:
+
+5) not yet a good idea
+
+[[#s][1)]]
+
+[[#s][2)]]
+
+[[#s][3)]]
+
+4) no clue, I am not sure if the hint about the snail has something to do with it, any tips for me without giving it away?
+
+--------------
+
+About the chapter in general: - the pq-system is only isomorphic to addition with natural numbers *not including* 0, right? There is no way to map
+
+#+begin_example
+  1 + 0 = 1
+#+end_example
+
+from numbers with addition to the pq-system as
+
+#+begin_example
+  -pq-
+#+end_example
+
+because this is not a theorem of the system. Maybe it's just nitpicking or due to the fact that positive numbers does not (always) include 0?
+
+--------------
+
+And aside: What I always found astonishing about /isomorphisms/ is that if you have one from A to B and then discover one from B to C you can also go from A to C (transitivity) and therefore get insights about a (probably) totally unrelated domain!
+:PROPERTIES:
+:Author: markus1189
+:Score: 2
+:DateUnix: 1426875364.0
+:DateShort: 2015-Mar-20
+:END:
+
+*** Um, I'm confused by your answer to #1:
+
+#+begin_quote
+  1) not yet a good idea
+#+end_quote
+
+Also the answer to the ADAC puzzle [[#s][is]].
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1426877262.0
+:DateShort: 2015-Mar-20
+:END:
+
+**** oh well 1) was related to the last part about how figure and ground can be related to both puzzles ;)
+
+Ouch the answer to the ADAC puzle is rather easy I didn't even check that...
+:PROPERTIES:
+:Author: markus1189
+:Score: 1
+:DateUnix: 1426877604.0
+:DateShort: 2015-Mar-20
+:END:
+
+***** Okay, I shuffled around the order of the questions.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1426878150.0
+:DateShort: 2015-Mar-20
+:END:
+
+****** Okay another stab at 1 (now 5): In the dialogue achilles can be seen as the /figure/, because we know what he says, the tortoise is the /ground/ because it is left out and can be "filled in" by deducing it from what achilles says
+
+[[#s][EDIT:]]
+:PROPERTIES:
+:Author: markus1189
+:Score: 1
+:DateUnix: 1426879137.0
+:DateShort: 2015-Mar-20
+:END:
+
+
+*** u/rspeer:
+#+begin_quote
+  About the chapter in general: - the pq-system is only isomorphic to addition with natural numbers not including 0, right? There is no way to map 1 + 0 = 1 from numbers with addition to the pq-system as -pq- because this is not a theorem of the system. Maybe it's just nitpicking or due to the fact that positive numbers does not (always) include 0?
+#+end_quote
+
+Positive integers shouldn't ever include 0. Non-negative integers do include 0. The mathematically debated term is "natural numbers", which can refer to positive integers or non-negative integers depending on what field you're in, where you learned the term, and personal whim.
+
+You're right that =-pq-= is not a theorem. However, I'd argue that, due to a loophole in Hofstadter's wording, =p-q-= /is/ a theorem, and in fact an axiom. Hofstadter clearly didn't mean it that way -- he later refers to =-p-q--= as the simplest axiom, and he intends for the system to be commutative (if 0 + 1 = 1, then 1 + 0 = 1). But can you see why I think this loophole exists?
+:PROPERTIES:
+:Author: rspeer
+:Score: 1
+:DateUnix: 1426879706.0
+:DateShort: 2015-Mar-20
+:END:
+
+**** I guess because on page 47 (for me) where the definition is stated, /x/ can also be nothing, so
+
+#+begin_example
+  xp-qx-
+#+end_example
+
+with x = '' is
+
+#+begin_example
+  p-q-
+#+end_example
+
+the only requirement for x is it is "composed of hyphens only" which is trivially true if it is empty.
+:PROPERTIES:
+:Author: markus1189
+:Score: 2
+:DateUnix: 1426880842.0
+:DateShort: 2015-Mar-20
+:END:
+
+***** Yep. We should treat the schema as if it said "composed of /one or more/ hyphens only", so that other claims in the chapter make sense.
+
+BTW, p. 47 for you is p. 47 for everyone. There have only been two editions of the book, and Hofstadter made sure their page numbers are the same.
+:PROPERTIES:
+:Author: rspeer
+:Score: 1
+:DateUnix: 1426883176.0
+:DateShort: 2015-Mar-20
+:END:
+
+
+*** u/deleted:
+#+begin_quote
+  And aside: What I always found astonishing about isomorphisms is that if you have one from A to B and then discover one from B to C you can also go from A to C (transitivity) and therefore get insights about a (probably) totally unrelated domain!
+#+end_quote
+
+Uhhhhh but that's just the transitive property of equivalence relations?
+
+(And then I wasted hours on end reading about the Univalence Axiom /again/. I need to stop nerd-sniping myself.)
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1426886767.0
+:DateShort: 2015-Mar-21
+:END:
+
+
+** Wikia links:
+
+- [[http://godel-escher-bach.wikia.com/wiki/Chapter_2][Chapter 2]]
+- [[http://godel-escher-bach.wikia.com/wiki/Sonata_for_Unaccompanied_Achilles][Sonata for Unaccompanied Achilles]]
+
+xamueljones, any interest in including these in your posts? While the Wikia is far from complete, I'm trying to make sure that each page has reasonable content in advance of the [[/r/rational]] reading schedule. It's a good motivation to get the pages started.
+:PROPERTIES:
+:Author: rspeer
+:Score: 2
+:DateUnix: 1426879571.0
+:DateShort: 2015-Mar-20
+:END:
+
+*** Okay, I'll do that from now on.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1426881606.0
+:DateShort: 2015-Mar-20
+:END:
+
+
+** I may have an insight into this quote, and I'm wondering if anyone shares the opinion.
+
+#+begin_quote
+  If we were to delve into Euclid's proof more and more carefully, we would see that it is composed of many, many small-almost infinitesimal steps. If all those steps were written out line after line, the proof would appear incredibly complicated. To our minds it is clearest when several steps are telescoped together, to form one single sentence. If we tried to look at the proof in slow motion, we would begin to discern individual frames. In other words, the dissection can go only so far, and then we hit the "atomic" nature of reasoning processes. A proof can be broken down into a series of tiny but discontinuous jumps which seem to flow smoothly when perceived from a higher vantage point.
+#+end_quote
+
+Does anyone beside me have an intuition that this idea of a "ground-level" for proofs is incorrect? That there will always be another breakdown into deeper assumptions?
+
+See, I remember once getting a sense that if one looked closely enough at any proof, one should be able to break each logical step down into further and further levels of detail, drawing out assumption after assumption. It would not be like what the tortoise said to Achilles, in which he repeated the same single trick forever, but would be non-repeating (in the same sense that irrational numbers would be non-repeating if their digits formed a tree instead of a sequence).
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 2
+:DateUnix: 1426918309.0
+:DateShort: 2015-Mar-21
+:END:
+
+*** So, on the one hand, you can go down a lot of levels. On MetaMath, one site that collects mathematical proofs that are fully broken down into axioms, you can find [[http://us.metamath.org/mpegif/2p2e4.html][a proof that 2+2=4]] that can be expanded into more basic steps up to 150 levels deep.
+
+But it's got to be a finite number of steps in the end. Eventually you reach your axioms and your basic rules of inference, whatever you choose them to be. You could choose some other rules that put you farther away from the thing you want to prove, but there must still be a finite number of steps. So at some point you hit the "atoms" of your proof, or else you don't actually have a proof.
+
+And we choose to agree on the purpose of the system, so that we can't be trolled by the Tortoise. MetaMath and similar systems, for example, make a distinction between "(2 + 2) = 4" and "⊢ (2 + 2) = 4". The first is a proposition to be manipulated by the rules, the second is an actual result that we believe, and when we firmly distinguish these, the Tortoise's paradox doesn't trip us up.
+:PROPERTIES:
+:Author: rspeer
+:Score: 2
+:DateUnix: 1426921376.0
+:DateShort: 2015-Mar-21
+:END:
+
+**** Well, the point of defining a system of axioms and rules of inference is that it's somehow isometric to reality. If I must explain in the terms of formalism, then what I am suggesting is that there exists a system, isometric to reality, but still piecewise logical to the human mind, with rules of inference that just go down forever! Hence, you'll never find the axioms, just more theorems that your proof is built on. The proof would still be a proof in that every step would be follow properly from the theorems before, but it would also be infinite. When you 'looked closely enough,' you'd see all the little steps that made up the bigger patterns, as though the whole thing were a fractal!
+
+I'm getting it back now... let's take an example:
+
+Proof of (A + A->B) -> B:
+
+1. Assume A
+
+2. Assume A->B
+
+3. B (modus ponens)
+
+Now, you've only made one logical step, and you've hit your axiom of modus ponens. But if you believe my idea that there's always another layer underneath, then to reveal it you just ask questions like, "why should modus ponens convert previous steps into next steps?" or "why are we allowed to assume 'A' or 'A->B'"?
+
+And the answers would seem to be on a more abstract level, but that's kind of the point, isn't it? The answers aren't found in the system, because you're already reaching below (aka above) the system's axioms! If you want, you can redefine the system (which the fixed-system mathematicians wouldn't like very much) to convert some of these meta-logical arguments into axioms, and then you won't have to leave your new system at all! That is, you won't have to unless you question the axioms again.
+
+Thanks to rspeer's reply keeping me thinking, I can now describe my hypothesis more formally: If you have a proof P, with k inference-rule-based steps of a finite system S, then by questioning each step you can find /at least/ k new /logical/ steps that the proof /logically/ relies upon. You can then define a new system, S', which includes the logic behind those steps, in which a new proof, P', with the same conclusion can be constructed using k*2 steps. By induction it is clear that any proof can be extended indefinitely.
+
+You can also reverse the process to reduce steps, toward the limit of 1. That's a pattern our minds naturally use, and sometimes abuse, to learn new tricks to do math quickly. It's how many people do multiplication of two 1-digit numbers in one step. Just memorize the times table!
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 1
+:DateUnix: 1426927263.0
+:DateShort: 2015-Mar-21
+:END:
+
+***** Okay, so every time I prove something with a finite number of steps where I apply the basic rules of a system, you'll give me a different system where I have to justify those rules themselves.
+
+Sure, you can do that, I guess, and I can't say you'd be wrong. But you're just being the Tortoise in /What the Tortoise Said to Achilles/. At some point you'll run out of systems that would explain anything new. From that point on, you /are/ repeating the same trick forever, putting infinite roadblocks in the way of concluding things, like the Tortoise is.
+:PROPERTIES:
+:Author: rspeer
+:Score: 2
+:DateUnix: 1426954802.0
+:DateShort: 2015-Mar-21
+:END:
+
+****** Thank you for your responses! I give it to you, I don't know yet how to prove that each new level contains further information. Perhaps if we followed my hypothetical proof, we would would end up doing an N+1 type deal like the Tortoise. We might get caught in a loop; infinite repetitions do tend to happen in fractals. And maybe we could find our way out of each loop in the same way we did with the Tortoise, but it is uncertain enough that it's a question mark on my above proof-style hypothesis.
+
+And now that my intuition is aware of the uncertainty, I need to ask you about this:
+
+#+begin_quote
+  At some point you'll run out of systems that would explain anything new.
+#+end_quote
+
+How certain are /you/ of this? Extrapolation is, by itself, inconclusive. Can you provide a logical foundation (meta not intended) for this claim that we "will" run out of new explanations for things, or is it just your intuition?
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 1
+:DateUnix: 1427008348.0
+:DateShort: 2015-Mar-22
+:END:
+
+******* You're right, it's just my intuition. It's possible that there is an infinite sequence of foundations of math, each explaining more than the last.
+
+But I don't see why there would be, and I certainly don't see how you'd construct such a sequence, or what math you could even use to construct it if no math is fundamental enough.
+
+So I'm disagreeing with performing induction over a sequence that may not exist.
+:PROPERTIES:
+:Author: rspeer
+:Score: 1
+:DateUnix: 1427049924.0
+:DateShort: 2015-Mar-22
+:END:
+
+
+*** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1426931092.0
+:DateShort: 2015-Mar-21
+:END:
+
+**** First of all, thanks for the response. I'm glad to hear anything/everything that seems to others relevant; I usually learn something new when they share it. Also, I'm pretty new to [[/r/rational][r/rational]], so it's a huge boost just to know that people are taking the time to read and consider my comments.
+
+Secondly, thought it may seem strange at first, it's useful to have people going in both directions: down into details as well as up toward new proofs. Your reasoning, yagsuomynona, is quite correct for why going up is useful -- it saves time in proofs that are, if done right, just as valid.
+
+The consequence of going down, of asking for the reasons behind each axiom of your system is, ideally, new information:
+
+- You trusted your axioms before, but now you have more reasons to give for why you continue to trust them. There was a potential before, however great your prior confidence in them, that the axioms you were relying upon were imprecise/inaccurate. By questioning them you now have either a stronger confidence in their correctness, or (more exciting) you have uncovered an error that you can correct. The average integrity of your system has increased through your study and synthesis of its subfoundational principles.
+
+- Your axioms seemed distinct from one another before, but now that you know why they should be so, you discover ways they are interconnected. As you discover that new layer below, you may even realize that your original set of axioms was an incomplete set, that there were other axioms at that level which you could have been using before, and now that you incorporate them they shed light on previously difficult-to-prove theories, which broadens the whole of your system.
+
+Take as an example the discovery of the particles which atoms are composed of. We had a bunch of "axioms" about how different kinds of atoms worked: hydrogen explodes, gold doesn't rust, etc. Perhaps we even grouped the atoms into meaningful categories based on their observed properties. Maybe we even started forming some kind of periodic table just from those categorizations. But when we realized that different numbers of protons made things into different elements, and how electrons were responsible for creating those molecular bonds, everything changed. We then knew /why/ the periodic table made sense, we started looking for (or creating) the missing elements, and we now had "proof" of what the resultant elements be when we /split the atoms/!
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 1
+:DateUnix: 1427005582.0
+:DateShort: 2015-Mar-22
+:END:
+
+
+** I liked this chapter more than the last few. It really clarified in my mind how symbol manipulation works. And talking about the dichotomy of ideal numbers and the real world was insigthful. Some questions that reading this chapter inspired in my mind:
+
+How is meaning first created in the minds of people? How does meaning first come about? Like is said in the text:
+
+#+begin_quote
+  However, reality and the formal systems are independent. Nobody need be aware that there is a isomorphism between the two.
+#+end_quote
+
+It is necessary for you to first form an interpretation /before/ you can compare that interpretation to different kind of constructs and create meaning that way. How do you create that first interpretation without prior knowledge? The whole process sounds like pulling yourself up by your bootstraps. Evolutionarily it is surely useful to recognize similarities between different objects. Are isomorphisms what actually create the phenomenon of consciousness in the first place?
+
+#+begin_quote
+  Can all of reality be turned into a formal system? In a very broad sense, the answer might appear to be yes.
+#+end_quote
+
+This reminded me of Max Tegmark's pet hypothesis that every formal system or mathematical structure is a new reality. I actually don't like that approach very much, it sounds too much like pot philosophy.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1426947260.0
+:DateShort: 2015-Mar-21
+:END:
+
+*** u/Ty-Guy9:
+#+begin_quote
+  How is meaning first created in the minds of people? How does meaning first come about?
+#+end_quote
+
+First, and I may be misinterpreting, but you seem to hold a belief that reality has meaning. How firmly do you hold this belief?
+
+Second, scientific laws and theorems are descriptions of how reality works; they do not claim to offer guidance on reality's meaning. For example, the observation that genetically fit individuals do better, via natural selection and such, at perpetuating their numbers, is a description of what goes on in nature. You can make predictions based on this description, but does that also give meaning to what is happening?
+
+Third, I recommend a brief introspection: Become aware of the existence of, and form of, meaning in your own mind. Do you /feel/ that reality has meaning? How about your surroundings, your actions. Does your life have meaning? Do you have an idea of what it is that it means?
+
+EDIT: These are important questions to be asking/answering, but the answers are sometimes controversial and polarizing. [[http://www.reddit.com/message/compose/?to=Ty-Guy9][PM me]] if you are interested in starting a discussion!
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 2
+:DateUnix: 1427015702.0
+:DateShort: 2015-Mar-22
+:END:
+
+**** Sorry that I took my time in answering, but these are some difficult questions. What makes it especially difficult is that the concept of meaning is vague and hard to wrap my head around. In my original post I was talking about meaning as similar to the concept of isomorphism, but you seem to talk about the more philosophical kind of concept of meaning. But here are some preliminary answers:
+
+#+begin_quote
+  First, and I may be misinterpreting, but you seem to hold a belief that reality has meaning. How firmly do you hold this belief?
+#+end_quote
+
+I've sometimes identified as a nihilist, but yes, I kinda believe in objective meaning, because I also believe in an objective morality in a weird way. Obviously there aren't any 'meaning' tags on things. If there's meaning, it's centered around the process of consciousness, the creation of illusion of meaning in consciousness. I don't think any sentient creature in pain can claim that the pain she is experiencing at the time is meaningless. Pain has evolved because it tells about something /real/, so it's usually isomorphic to a damage in tissue.
+
+I like Eliezer Yudkowsky's metaethics sequence, here's one quote in it that's particularly good:
+
+#+begin_quote
+  [What is the answer to the question: what should I do? The answer, according to EY, is a huge blob of computation.] I would say, by the way, that the huge blob of a computation is not just my present terminal values (which I don't really have---I am not a consistent expected utility maximizer); the huge blob of a computation includes the specification of those moral arguments, those justifications, that would sway me if I heard them. So that I can regard my present values, as an approximation to the ideal morality that I would have if I heard all the arguments, to whatever extent such an extrapolation is coherent.
+#+end_quote
+
+The concept of coherent extrapolated volition is relevant. I was thinking about whether or not this meaning or morality would exist if people didn't exist, and came to the conclusion that yes, adding suffering to the world would still be a bad thing.
+
+These were some interesting questions, and I don't feel I've comprehensively answered them. It's really hard to write down what I have in my head as answers to these questions, especially when English is not my native language. I have to think about it more, and think about how I'd put it in words. I must try harder, and I will add more on a later date.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1427155053.0
+:DateShort: 2015-Mar-24
+:END:
+
+***** u/Ty-Guy9:
+#+begin_quote
+  In my original post I was talking about meaning as similar to the concept of isomorphism, but you seem to talk about the more philosophical kind of concept of meaning.
+#+end_quote
+
+I suppose I /was/ going on a more complete isomorphism between 'meaning(~isomorphism)' and 'meaning(philosophy)' -- I took them to mean the same thing. (How's my meta?) Perhaps they manifest more as 'nearly the same idea', the way the author is defining/connecting them.
+
+#+begin_quote
+  The concept of coherent extrapolated volition is relevant. I was thinking about whether or not this meaning or morality would exist if people didn't exist, and came to the conclusion that yes, adding suffering to the world would still be a bad thing.
+#+end_quote
+
+I haven't read that sequence yet, but coherent extrapolated volition ~= what you expect you should do in any given situation, based on your current values? And yes, suffering does seem to be a bad thing, if you gain nothing from having it. Which strikes me as highly relevant: it's morally obviousness comes from intuition more than from rationale.
+
+#+begin_quote
+  These were some interesting questions, and I don't feel I've comprehensively answered them... I will add more on a later date.
+#+end_quote
+
+Then I look forward to reading it! Also, your English is excellent; what's your native tongue?
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 1
+:DateUnix: 1427165244.0
+:DateShort: 2015-Mar-24
+:END:
+
+
+** I'm simply going to say as someone who's read the book multiple times that the two puzzles have a subtle relation to each other.
+:PROPERTIES:
+:Author: Newfur
+:Score: 1
+:DateUnix: 1427144919.0
+:DateShort: 2015-Mar-24
+:END:

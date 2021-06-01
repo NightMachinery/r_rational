@@ -1,0 +1,39 @@
+:PROPERTIES:
+:Author: electrace
+:Score: 2
+:DateUnix: 1445359226.0
+:DateShort: 2015-Oct-20
+:END:
+
+Ok, so for *symmetric zero sum games*, the expected value of any strategy must be 0 at Nash Equilibria points. Why? Because if you were earning a negative expected return, you could always copy the other player's strategy. And if you're both players are playing the same strategy, (while they sum to 0), then they must both be 0.
+
+So, all you really have to do is take rock, paper, and scissors, and find the strategy that will make it sum to 0 through a system of equations.
+
+Rock: Against paper, -1, against rock, 0, against scissors, 2
+
+0 = -1P + 0R + 2S
+
+Paper: Against paper, 0, against rock, 1, against scissors, -1
+
+0 = 0P + 1R - 1S
+
+Scissors: Against paper, 1, against rock, -2, against scissors, 0
+
+0 = 1P - 2R + 0S
+
+And the final equation, P + R + S = 1 (All percentages sum to 100%), which can be rewritten as...\\
+P = 1 - R - S
+
+From the Rock equation... 0 = -1(1 - R - S) + 0R + 2S = -1 + R + 3S
+
+1 = R + 3S
+
+From the Paper equation... 0 = 0(1 - R - S) + 1R -1S = R - S
+
+S = R
+
+(from 1 = R + 3S, and S = R), 1 = R + 3R = 4R ----> *R = .25* ----> *S = .25*
+
+And finally (from P + R + S = 1), P + .25 + .25 = 1 ----> *P = .5*
+
+If you can do that in your head, I salute you.

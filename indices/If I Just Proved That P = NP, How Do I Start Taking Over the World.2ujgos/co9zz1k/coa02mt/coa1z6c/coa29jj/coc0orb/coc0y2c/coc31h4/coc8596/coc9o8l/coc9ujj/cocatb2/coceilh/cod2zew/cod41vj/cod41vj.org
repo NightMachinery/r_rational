@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: itisike
+:Score: 2
+:DateUnix: 1423236541.0
+:DateShort: 2015-Feb-06
+:END:
+
+#+begin_quote
+  For Alice to endorse Bob's identity, Bob has to have a public identity--some way to say "I am Bob" in such a way that Mallory cannot also say "I am Bob." The only way I know of to do that is with a trapdoor function . P=NP implies that true trapdoor functions do not exist.
+#+end_quote
+
+My point here was that the middleman can auth both users.
+
+Anyway, I did some more research on my proposal above, and apparently it's [[https://crypto.stackexchange.com/questions/22783/can-you-exchange-a-shared-key-without-any-hardness-assumptions][not possible with only one middleman to communicate without the middleman having access]].
+
+However, you /can/ do it with multiple middlemen, which could be different CAs. In our world, we already trust CAs not to mitm us. In my model, you could share an otp with someone you don't already have one with, by using middlemen who you do share otps with, and only someone with access to /all/ of the middlemens' otps can read your message.
+
+See [[https://crypto.stackexchange.com/questions/22783/can-you-exchange-a-shared-key-without-any-hardness-assumptions#comment52841_22783][this comment of mine]].
+
+That seems like a plausible way to communicate after P=NP.
+
+Also, there's no need to use quantum; you just have random data shared from each CA. Quantum added security would only be if you set up new channels, but we want to work with legacy internet.

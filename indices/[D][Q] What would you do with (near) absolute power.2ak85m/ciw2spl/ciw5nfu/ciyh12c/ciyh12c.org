@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: Anakiri
+:Score: 1
+:DateUnix: 1405464408.0
+:DateShort: 2014-Jul-16
+:END:
+
+On point 3... that's really problematic once I start applying kinetic energy to myself. The problem is, I am always at rest in my own reference frame, 0 m/s, 0 joules kinetic energy. The equation for classical, non-relativistic kinetic energy K is K = mv^{2}/2, which we can reverse to v = sqrt(2K/m). I'm applying some power P per unit time t, so the equation I'm using is v = sqrt(2Pt/m). For simplicity, let's do everything in arbitrary units; I weigh 1 mass-unit, I'm applying a power of 1 power-unit. I have no idea what units time and velocity are in, but it doesn't matter. In these units, my velocity is v = sqrt(2t). After 1 time-unit, my velocity is sqrt(2) units, ~1.4, measured from my original rest frame.
+
+But I'm not in my original rest frame. In my reference frame, I'm always at rest. I was at rest when I was halfway through accelerating. Let's run those numbers again... At time 0.5, my velocity is 1. In my new reference frame, I do that again, for another 1 velocity. An inertial observer sees both those velocities stacking, for a final velocity of 2 units.
+
+Uh-oh.
+
+You can see the problem if you look at the shape of the graph of my speed, the simple sideways parabola. I will always see myself as getting that first tiny 1/n slice n times in 1 time-unit, and the first infinitesimal slice is /vertical/. An outside observer will see my velocity go to infinity in an instant. In practice, my time step probably can't actually get infinitesimal, so I won't get to infinity, and relativity will limit me to the speed of light. But I'll get really close, instantly.
+
+Whereupon I will slam into the environment with near-infinite relative energy. Kaboom.

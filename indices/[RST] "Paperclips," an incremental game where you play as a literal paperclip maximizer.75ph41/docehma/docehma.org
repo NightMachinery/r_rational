@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: zian
+:Score: 2
+:DateUnix: 1507952719.0
+:DateShort: 2017-Oct-14
+:END:
+
+In case anyone is wondering why the "processors" count doesn't go up....the website assumes that the "log10" function is implemented in your browser.
+
+[[http://kangax.github.io/compat-table/es6/#test-Math.log10]] says that the function is not present in IE11.

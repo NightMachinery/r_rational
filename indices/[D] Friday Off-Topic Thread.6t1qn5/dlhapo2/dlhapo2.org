@@ -1,0 +1,82 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 15
+:DateUnix: 1502468271.0
+:DateShort: 2017-Aug-11
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+As promised, there is no code work progress. We've just gotten two out of the three rooms packed for our move, and fortunately the last one is mostly empty. Tomorrow will be fun with getting the truck, consolidating boxes, and taking apart things that need taking apart.
+
+In the meantime, tho, we've been discussing a concept which may or may not make it into the game, but I feel ought to be explored, if for no other reason than to ensure that we don't shoot ourselves in the foot and make it impossible to implement down the line. The concept is what I've been calling “move crafting”.
+
+The idea goes like this: if Blaine, fire specialist extraordinaire, is handed a brand new charmander, then due to his long experience and expertise, he ought to be able to start teaching the newcomer Flamethrower, even though it has never seen the move demonstrated before. It wouldn't be as /easy/ as demonstration, and there would be a decent rate of failure, but after a few days, Blaine ought to be able to have his new charmander spitting out a rudimentary fire no problem.
+
+If Blaine is able to teach it a move that exists in the world and is defined in the game files, what would stop him from inventing a move wholesale and teaching that to his charmander? As far as the charmander is concerned, the problem is the same: it sees no difference between a move that exists that it has never seen before and a move that doesn't exist that it has never seen before.
+
+Thus the idea of letting the player modify or completely invent entirely new moves. This requires moves to be defined in a rather modular manner and encourages us to stop thinking of them as bundles of numeric stats and more of a nebulous object that has slots filled with metaphorical components.
+
+I actually started with the concept of Eve Online's ship fitting, where each ship has a limited number of high, medium, low, and rig slots, which number is defined by the ship. Each ship also has a limited amount of CPU and Power that is consumed by the modules that the player inserts. Different slot types have different roles, and some ships simply can't accept certain modules of one class or another.
+
+The same basic idea can be applied to move definition, I think. After iterating on the design for a while (and deciding I sadly I could not find a way to incorporate Firefall's imo brilliant color system), this is what I've got:
+
+Basically, moves are defined in three groups of component: Requirements, Application, and Modifiers.
+
+Requirements include things like anatomy restrictions, typing restrictions, EV gates, and so forth. Each requirement increases the potential power output multiplier of a move, while each requirement /type/ increases the difficulty multiplier of the move.
+
+Application defines the broad strokes of how the move interacts with the world. Think of these as utility slots, things that crucially change the move beyond just being a damage amount. Targeting modes indicate how the user triggers the move (difficulty is increased sharply for each targeting mode beyond the first). Effects that can be thought of as particles are defined, such as a gob of fire that deals X damage, lasts for Y seconds, and has Z% chance to burn. Effect streams are like particle systems, in that they fire off the Effects in a given manner, such as Flamethrower being a simple constant stream of flame Effects.
+
+Modifiers are the finishing touches that differentiate a move from the templates that have so far been referenced. Depending on what components have been defined in the Requirements and Applications, a certain number of free Modifier slots are opened up. Modifiers can be added without restriction, but those which do not have a free slot will engender steep penalties, including difficulty, endurance, and accuracy costs. In addition to OnUse, OnHit, and OnCrit effects, flat bonuses can be applied as modifiers (such as +damage or -end).
+
+As an example, here is a rough draft for how such a system would describe Flamethrower:
+
+#+begin_example
+  Requirements:
+  [Fire Type: 10%]
+  [Anatomy: oil gland x1]
+  [Fire EV: 500]
+  [SPATK: 100]
+  [Cost: END:50]
+  [Cost: FAT:10]
+
+  Application:
+  [TargetMode: Unit]
+  [TargetMode: Tile] 
+  [InstanceTrigger: ProjectileStream 
+      [Instance count: 50]
+      [Instance rate: 10.0]
+  ]
+  [EffectInstance:
+      [Type: Flame] 
+      [Duration: 3.0]
+      [Speed: 2.0]
+      [Damage: 5]
+  ]
+
+  Modifiers:
+  [ResourceSub Oil:10]
+  [ResourceBonus damage:2.0 speed:2.0]
+  [OnCrit: +25% burn chance]
+  [StatScale: FireEV, +damage 0.1, +speed 0.1, +burn 0.1]
+  [StatScale: SPATK, +damage 0.05, +acc 0.05]
+  [MoveScale: -ResourceSub 0.001, -fat 0.01, +acc 0.01]
+#+end_example
+
+This describes a move that requires an oil gland and can optionally be powered by oil from said gland, which reduces the effective endurance cost while doubling effectiveness in some areas. For each Fire EV that the unit has, the move will have more damage, more speed, and more burn chance, while for each Flamethrower EV the move will use less oil, generate less fatigue, and be more accurate.
+
+Modders (and developers) would define moves this way with no restrictions on numbers and being able to override things like the total difficulty that is calculated from what components have been selected.
+
+In-game, on the other hand, an aspiring move-theorycrafter would only be able to choose components from a limited set, and those too only of moves that the trainer has studied and understands well. Thus a trainer might be able to take the Flamethrower projectile stream with an inverted speed, apply the particle lifetime and speed of Ember, and alter the resource consumption to match Consume, and boom: they are the proud inventor of a newly minted Fire Fart move.
+
+Players would have to spend time teaching and studying specific moves to expand their component library, and perhaps spend time trying to interact with well-known scholars in the field for juicy tidbits. Move creation itself would be balanced more or less automatically, with higher power moves requiring more endurance use, having higher difficulty rates, lower accuracy, and other negative aspects that move design would have to effectively work around. I would not want this to be a mandatory skill, nor one that turns into a sort of meta-programming, but I think it might turn out to be a potential solution to many problems, and a potential dedicated career path in itself.
+
+Thoughts?
+
+We'll return next week with hopefully some actual game progress, but don't hold your breath too hard. I will after all be wiped from the new move, so we'll see what happens.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit. If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!

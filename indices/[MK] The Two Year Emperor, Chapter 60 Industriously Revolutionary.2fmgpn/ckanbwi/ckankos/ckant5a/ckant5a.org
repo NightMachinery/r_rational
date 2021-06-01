@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: JT_Macguffin
+:Score: 2
+:DateUnix: 1409997434.0
+:DateShort: 2014-Sep-06
+:END:
+
+Indeed, the number of Gs exactly follows the [[http://en.wikipedia.org/wiki/Triangular_number][triangular number sequence]], which can be calculated with the polynomial 1/2x^{2} + x/2. Since the rate FBR increases per round is just the number of Gs, we now know the derivative.
+
+Simply take the integral and you get 1/6x^{3} + 1/4x^{2,} where x is the number of FBRs. (Of course, this assumes infinite space, which constrains the actual numbers of a bit. Stupid reality screwing up math.)
+
+Anyway, here's the [[http://www.wolframalpha.com/input/?i=%28x%5E3%29%2F6+%2B+%28x%5E2%29%2F2+at+x+%3D+100][Wolfman Alpha graph]], at x = 100. It matches your calculation.

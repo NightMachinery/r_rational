@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: jaspercb
+:Score: 3
+:DateUnix: 1491763373.0
+:DateShort: 2017-Apr-09
+:END:
+
+100% strategy (I think) using only 7 bits:
+
+Number the bits being sent from 0 to 7. Ignore bit 7, leaving us with 7 bits. Encode the number you with to transmit in the parity of the following bit sets: {1, 2, 3, 6}, {0, 1, 5, 6}, {3, 4, 5, 6}. [1,0,0]=>1, [1,0,1]=>5, and so on. [0,0,0] maps to 8, because we don't ever want to output 0. Take your random number, run it through the above encoding, and xor it with the target number. to figure out which sets you need to change the parity of. Then just find the bit that appears only in those sets and change it. So if we have 7 [1,1,1] and want 5 [1,0,1], flip the bit that only appears in set #2, which is bit number 3.
+
+On the other end, your friend just takes the 7 bits you sent him and converts it to a number between 1 and 8, as described above.

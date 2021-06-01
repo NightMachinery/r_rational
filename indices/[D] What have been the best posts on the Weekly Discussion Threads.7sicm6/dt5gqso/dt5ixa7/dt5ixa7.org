@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1516769595.0
+:DateShort: 2018-Jan-24
+:END:
+
+There's no official support for it, but it wouldn't be too hard to build a scraper that would do 99% of the work for you, especially since [[https://www.reddit.com/r/rational/wiki/index][the wiki]] contains lists of all the weekly threads (helpfully put there by [[/u/toakraka]]). All you would need to do is iterate through the links, then extract all the comments from each. This is more work than I'm willing to do, especially since my programming is rather rusty, but shouldn't take more than an hour or two of time. [[https://pastebin.com/j1QxzKiR][This python script]] was the one I used back in 2011 to scrape my user history, but I'm pretty sure you would be able to find a better base to work from with a little effort.

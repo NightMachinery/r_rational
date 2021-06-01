@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: orthernLight
+:Score: 2
+:DateUnix: 1497901709.0
+:DateShort: 2017-Jun-20
+:END:
+
+Well, you can exclude words with
+
+#+begin_example
+  /n[aeiouy]*m/
+#+end_example
+
+or
+
+#+begin_example
+  /m[aeiouy]*n/ 
+#+end_example
+
+That is, where the n and m don't have a consonant between them. (If I got the regex right, anyway). I get 1381 results for M before N, 910 results for n first. So there's still a pretty clear trend.
+
+On another part of the question, 23.7% of words in the dictionary contain an M, and 43.7 percent contain an N. If the were uncorrelated, we'd expect 10.3 percent to have both.
+
+Looking at the dictionary, I found that 9% have both M and N, so they actually /don't/ occur together more often then chance, though when they do, M does tend to be first.

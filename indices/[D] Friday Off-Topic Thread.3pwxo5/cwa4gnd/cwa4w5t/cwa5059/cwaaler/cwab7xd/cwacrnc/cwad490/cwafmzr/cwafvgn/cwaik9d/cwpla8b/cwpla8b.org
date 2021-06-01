@@ -1,0 +1,36 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1446744765.0
+:DateShort: 2015-Nov-05
+:END:
+
+I was getting a bit pissed of at my inability to communicate, so I took a break, then life got in the way. But I want to at least address these before I talk about it again.
+
+- Exactly what is the problem I'm trying to solve? What is the precise pain-point in file systems?
+
+The precise pain point is that they're optimized for one user/process accessing a file at once. I'd argue that that's the pain point the modern web is trying to address.
+
+It started as a way to let multiple users access text documents (gopher) and now it's clumsily trying to let multiple users get write access to the same resource. They do this by implementing a domain-specific thin-client language (javascript) and scene graph (html/css).
+
+- Why has no one else identified this pain-point and fixed it already?
+
+Well they have, it's just that thanks to it being a very slowly evolving project no-one can see the real problem underneath. Single user/process files. I think that the web stack is brittle, and we're going to need to do better if we want an AR/VR os that functions reasonably at all. Of course that's getting a fair bit ahead of ourselves. It'll happen when it happens.
+
+- Once I fix this pain-point, will my new system capture all the advantages of file systems and fail to introduce new pain-points?
+
+Potentially. There's no reason you couldn't throw binary/text files into this data structure. And of course we're not talking about building kernel modules yet, this data structure would be living on a filesystem.
+
+Speed is the big problem. As you say, filesystems are optimized for hard drives. But take a look at bcache as an example. Faster read speeds then storing your files on the ssd directly.
+
+I suspect that filesystems are optimized for tape storage at least a bit. Things where sequential reads are super cheap comparatively.
+
+The other big problem is the api. There are definitely going to be a higher frequency of race-condition bugs with it as I envision it now. We want to at least make those as visible to the api user as possible, and ideally figure out a way to reduce them.
+
+- How will I convince the rest of the word that my system is so superior that every program needs to switch to using it?
+
+Not every programs needs to use it. I think it can show it's worth as an IPC mechanism. If it turns out to be better then more and more programs will use it.
+
+--------------
+
+Thanks for that idea about the pipe-stream function call filesystem by the way. I think that combined with duck-typing it's going to be really powerful and an important part of this system.

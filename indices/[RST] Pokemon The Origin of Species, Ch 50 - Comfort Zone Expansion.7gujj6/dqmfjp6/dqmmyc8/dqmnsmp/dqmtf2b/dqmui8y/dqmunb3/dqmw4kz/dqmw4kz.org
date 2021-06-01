@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: Iijil
+:Score: 2
+:DateUnix: 1512173569.0
+:DateShort: 2017-Dec-02
+:END:
+
+Well, it matters because choosing different ratios of reports to consider you get different result.
+
+#+begin_quote
+  200 Events reported as Tier 1
+
+  158 are actually Tier 1
+
+  42 are actually Tier 2
+
+  100 Events reported as Tier 2
+
+  67 are Tier 2
+
+  33 are Tier 1
+#+end_quote
+
+would combine with the logic from the chapter to
+
+#+begin_quote
+  Chance of Tier 1 being reported accurately = 158 / (158 + 33) = .83
+#+end_quote
+
+If there is a difference depending on the ratio the ratio matters. To figure out which we should use we can work out the full report/actual square that fits the given probabilities. As it turns out using the actual ratio between reports gives the correct result.
+
+In the cancer analogy this is like only knowing the prior probability of having cancer and the probability of having cancer given the different test results and trying to work out the accuracy of the test from that. To do so we do need to consider the ratio of positive/negative answers in some manner.

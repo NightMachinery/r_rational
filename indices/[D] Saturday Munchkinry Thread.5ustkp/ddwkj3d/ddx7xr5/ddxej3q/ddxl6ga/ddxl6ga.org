@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 1
+:DateUnix: 1487491652.0
+:DateShort: 2017-Feb-19
+:END:
+
+#+begin_quote
+  with which size unit you use doesn't do anything
+#+end_quote
+
+I can't see how that would be possible.
+
+For each physical law you can invert, there is a set of inputs at which inverting it does nothing (i.e x = x^{-1,} ignoring units).
+
+In my first example, that is 1 N and 1 kg resulting in 1 m/s^{2} both before and after inversion. Assuming that that was the set-point, changing it to 1 N and 2 kg would be 0.5 m/s^{2} before and 2 m/s^{2} after, and more importantly, changing it to 1 N and 0.001 kg would be 1000 m/s^{2} before and 0.001 m/s^{2} after.
+
+In my second example, the set point is 1 N and 1 g resulting in 1 km/s^{2} both before and after inversion. Assuming that that was the set-point, changing it to 1 N and 2 g would be 0.5 km/s^{2} before and 2 km/s^{2} after, and more importantly, changing it to 1 N and 1000 g would be 0.001 km/s^{2} before and 1000 km/s^{2} after.
+
+The first and last examples are identical before inverting ( 1000g = 1 kg, 0.001 km/s^{2} = 1 m/s^{2)} but wildly different after the magic is applied.

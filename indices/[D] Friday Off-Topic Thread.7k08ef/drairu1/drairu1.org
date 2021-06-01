@@ -1,0 +1,73 @@
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 17
+:DateUnix: 1513351816.0
+:DateShort: 2017-Dec-15
+:END:
+
+Today I've spend the entire day researching ISP logistics and their impact on net neutrality, mostly to be able to rant about it. I'm super proud of that rant, so here is the relevant parts:
+
+--------------
+
+#+begin_quote
+  Can you elaborate on the second paragraph? I feel it's a strawman to say "Using your argument, [exaggeration], which seems absurd".
+#+end_quote
+
+It's basically the essence of the libertarianism debate, which is always tricky to navigate. The first three "levels" of debate are usually more or less:
+
+- Level 1: Companies want to make more money. If we don't keep them in check, they'll provide lousier services / charge more for their services.
+
+- Level 2: But then wouldn't all companies have an incentive to make everything as expensive as possible, since they want lots of money? Why isn't everything in the world just expensive enough that we can barely buy it without going broke, but not any cheaper? Clearly, since cheap things exist, it means the invisible hand of the market is keeping prices down.
+
+- Level 3: Okay, yes, in practice companies compete with each other, but only when they have to. Sometimes they also collude, or they independently provide lousy quality on metrics the average consumer doesn't know about when buying.
+
+Your answer to my post is closer to level 3, your original post closer to level 1, which is the point I was more or less making.
+
+#+begin_quote
+  However, I'd add that they're already colluding, merging, and organizing with a mutually vested interest in making the above sort of thing a reality. You can't pit one against another in the free market. They have no reason to fight when they can cooperate to screw the rest of us.
+
+  I'd very much disagree that it's the answer, as you suggest, to focus on breaking up the companies or ensuring competition. Would it be good if it happened? Yes. But in my view, that's a herculean task
+#+end_quote
+
+I don't know how things are going in Canada, but in France, this is roughly what happened.
+
+We had three companies sharing a monopoly after the sector was privatized (Orange, SFR, Bouygues); then Free arrived, drove all the prices down, and [[https://en.wikipedia.org/wiki/Free_%28ISP%29#Profitability][made a buttload of money in the process]]. I think the cheapest offer is currently SFR Red at 20€/month for 200Mb/s down. The ISPs are now in a brutal deathmatch to see who can cover the country in three layers of optical fibers first (ok, not really, but [[http://advanced-television.com/2017/07/14/altice-sfr-to-fibre-france-without-public-money/][kinda]]).
+
+And, honestly I'm not sure how we got there. Part of it is a lot of public investment in infrastructure (the one thing France does right), and aggressive local-loop unbundling which means we have like a billion different (mostly regional) LECs. Part of it is Xavier Niel (Free's CEO) being a crazily aggressive businessman. But from where I'm standing, healthy competition between ISPs really isn't a decades-away utopia.
+
+#+begin_quote
+
+  - We've seen them throttle netflix and youtube both in the past gouging a company in the process (see first link there), and they tested the waters again recently
+#+end_quote
+
+I think this is one area where the "We must defend ourselves from ISPs" mentality is actually harmful.
+
+I see a lot of people arguing "We need neutrality, that means everyone has the same service for the same price!". This is a bad net neutrality definition, because it's a [[https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/][leaky abstraction]] of the infrastructure the internet is built on. This is also not [[https://publicpolicy.googleblog.com/2008/12/net-neutrality-and-benefits-of-caching.html][the definition Google uses]].
+
+I think the basic concept is intuitive: different services have different costs. You can't send a 40kg package for the same price as a postcard, because transporting the package is more expensive. Internet consumers don't really see that, because once you've paid people to dig up the trenches and lay the cables needed to download your kitten video, actually sending the video is basically free (which is why all non-mobile internet subscriptions nowadays are mostly unlimited; you're not costing your ISP anything by downloading 2GB more, the cost is in recouping previous investments).
+
+On the other hand, while consumers don't need to be aware of the logistics of transporting data, it's a vital concern for ISPs and big content providers. If Youtube sent their data directly from their three-per-continent datacenters using the same methods as your average blog / small scale commercial website, they'd be overloading both their datacenters and the ISPs [[https://www.netmanias.com/en/post/blog/6068/google-google-global-cache-hls-iptv-ott-video-streaming-youtube/do-google-global-caches-ggcs-serve-youtube-live-traffic-as-well-or-not][every time they needed to send 3Mb/s of data to a million users at the same time]].
+
+The simplest way to solve that problem is to redirect the users to a [[https://en.wikipedia.org/wiki/Content_delivery_network][CDN]], that is, a fleet of smaller datacenters spread throughout the target area, which are each sent a cache of the relevant data. However, you're still sending huge amounts of the same data over and over again between the master server, the ISPs and the cache servers; that's not an issue for most sites, but Youtube and Netflix and co need to optimize that stuff aggressively, or else incur non-trivial costs and load times.
+
+So what they do is cut the middleman and directly pay ISPs to host their CDNs closer to the metal. These are called [[http://whiteafrican.com/2008/07/04/google-kenya-and-the-google-global-cache/][Google Global Cache]] and... [[https://openconnect.netflix.com/en/][Netflix Open Connect]], I think?
+
+Anyway, that was a long explanation, but I have two points:
+
+- Issues between major content providers and ISPs are extremely complex; beyond "these guys are trying to racket these other guys". Major content providers [[https://ispspeedindex.netflix.com/][have power over ISPs]] too, [[https://arstechnica.com/information-technology/2014/12/netflix-accused-of-creating-fast-lanes-at-the-expense-of-competitors/][and don't always use it responsibly]]. People assume that any slowdown is malicious (eg: [[https://www.macrumors.com/2017/07/21/verizon-throttling-netflix-traffic/][the link you sent me]]) even when it could plausibly be a technical problem because of non-updated protocols or something.
+
+- /Nobody/ is talking about this stuff. People and media are competing to see who can sound most outraged repeating each other's arguments, but nobody is interested in the logistics behind ISPs. This is like if mail delivery companies were caught colluding with some restaurants / furniture stores / whatever over their concurrent, then everyone started screaming THIS IS OUTRAGEOUS EVERY MAIL SHOULD COST THE SAME. There is a real problem, but it's complicated, and people are pushing this complexity away by turning this into /us vs them/.
+
+Now, to be clear, I'm not denying that throttling is bad, and I'm not denying it happens on a large scale (I'm not seeing undeniable evidence one way or another).
+
+But I'm skeptical that legislation can have much of an impact for net neutrality. You can't make a law that says ISPs can't sell faster connection privileges, because then we couldn't have Youtube in 720p at peak hour without crashing the network. And I'm guessing that "You can sell different speeds to different companies, but not in a way that stifles concurrence" is blurrier, harder to make into coherent laws, and harder to enforce.
+
+The Google employee I linked defined Net Neutrality as "Broadband providers can engage in activities like colocation and caching, so long as they do so on a non-discriminatory basis."; eg, you can pay more for better speeds, but every content provider has to be offered the same prices (and presumably, companies can make a business of buying ISP cache space in bulk to redistribute it to smaller companies). I think this the ideal realistic outcome, and I don't think this can be achieved through regulation. Which is why encouraging competition is /the/ answer.
+
+--------------
+
+tl;dr: Internet is complicated. Netflix has to rent special server space to ISPs else it wouldn't be able to function; this is not an injustice, it's a logistic fact. Laws are good but concurrence is better. I'm sick to death of seeing people repeat each other's arguments and post the same parody "internet packages" image from 15 years ago. Internet in France is great.
+
+Also, Xavier Niel is awesome. I really wish I'd gone for 42 instead of Epitech :(
+
+EDIT: Crap, does that register as US Politics? I didn't even think about it, I was mostly going after the logistics / technical parts. I guess it's probably okay as long as I only talk about the economic aspects and not the "The President did X" aspects.

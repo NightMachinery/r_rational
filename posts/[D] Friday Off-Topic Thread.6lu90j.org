@@ -1,0 +1,1327 @@
+#+TITLE: [D] Friday Off-Topic Thread
+
+* [D] Friday Off-Topic Thread
+:PROPERTIES:
+:Author: AutoModerator
+:Score: 22
+:DateUnix: 1499440037.0
+:DateShort: 2017-Jul-07
+:END:
+Welcome to the Friday Off-Topic Thread! Is there something that you want to talk about with [[/r/rational]], but which isn't rational fiction, or doesn't otherwise belong as a top-level post? This is the place to post it. The idea is that while reddit is a large place, with lots of special little niches, sometimes you just want to talk with a certain group of people about certain sorts of things that aren't related to why you're all here. It's totally understandable that you might want to talk about Japanese game shows with [[/r/rational]] instead of going over to [[/r/japanesegameshows]], but it's hopefully also understandable that this isn't really the place for that sort of thing.
+
+So do you want to talk about how your life has been going? Non-rational and/or non-fictional stuff you've been reading? The recent album from your favourite German pop singer? The politics of Southern India? The sexual preferences of the chairman of the Ukrainian soccer league? Different ways to plot meteorological data? The cost of living in Portugal? Corner cases for siteswap notation? All these things and more could possibly be found in the comments below!
+
+
+** You know what? I feel real good about my life right now.
+
+My last ditch effort did pay off. I've met with the teacher overseeing our project, and it looks like it's going to make it past the documentation stage. The people who kept telling me they would have much more time to work later, while I stopped myself many times from yelling at them, do have time to work now, and are very motivated.
+
+Also I saw people being nice and helpful to each other in the street, made faces at a kid in the RER A (a Parisian metro line), some girls said nice things to me at a restaurant, and there's plenty of negentropy left in the universe.
+
+So, you know. Sometimes being rational works, and life doesn't suck. Tonight is "Couteaubleu is happy and motivated" night!
+
+Edit from a few months later: actually, the project tanked at the documentation stage because nobody else put any work in it, and now I'm pursuing it alone :(
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 23
+:DateUnix: 1499463671.0
+:DateShort: 2017-Jul-08
+:END:
+
+*** u/Frommerman:
+#+begin_quote
+  there's plenty of negentropy left in the universe
+#+end_quote
+
+That's just what they WANT you to believe!
+:PROPERTIES:
+:Author: Frommerman
+:Score: 6
+:DateUnix: 1499464986.0
+:DateShort: 2017-Jul-08
+:END:
+
+**** [[http://www.nickbostrom.com/astronomical/waste.html][relevant first section]]
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1499465295.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+*** Good job! It is good to hear that sometimes people have spontaneous upturns in their life!
+
+If we go by Eliezer's definition, you are at least rational insofar as you are winning!
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1499464654.0
+:DateShort: 2017-Jul-08
+:END:
+
+**** (to be pedantic, that's an oversimplification; according to EZ's definition, you are rational as long as you do things that you can reasonably expect to make you win)
+
+Thanks!
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 10
+:DateUnix: 1499465200.0
+:DateShort: 2017-Jul-08
+:END:
+
+***** Part of the reason I like this sub is that I appreciate pedantic corrections.
+:PROPERTIES:
+:Score: 13
+:DateUnix: 1499465375.0
+:DateShort: 2017-Jul-08
+:END:
+
+****** ... I feel dirty.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 8
+:DateUnix: 1499465823.0
+:DateShort: 2017-Jul-08
+:END:
+
+******* Well that edit imbues a rather different tone. I hope I haven't inadvertently offended you.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1499466336.0
+:DateShort: 2017-Jul-08
+:END:
+
+******** Too late. I'm going to need +∞ showers now.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 2
+:DateUnix: 1499501086.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+******* It is rather unfortunate and unusual, but I don't know any other way.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1499465978.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+*** Woot woot! Congrats on the project, and enjoy your weekend!
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1499530207.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+** Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Actual coding work stalled a bit this week, mostly because I kept getting distracted by the Games Done Quick event.  The Pokemon HeartGold run was complete bullshit, btw; the guy like gave up halfway through and loaded a pre-made save /that had some pokemon that he hadn't caught yet/.  Like, if you need to call it, then call it, but saying “just kidding, I've made a bunch of mistakes this run and I'm going to cheat so I can hit my target” is just...so bad.  
+
+Anyway, minirant over.  While there's no progress to report, there are a couple of mechanics that I'd like to discuss, both having to do with Time.
+
+--------------
+
+First is the concept of simultaneous turns.  Basically, I want this game to have all the advantages of turn-based gameplay, that is being able to take one's time and think things through, without having to deal with asymmetric bull like first-move advantage all the time.  Removing a turn order does introduce some interesting problems of its own, such as needing to resolve who wins if two characters try to occupy the same space at the same time or representing different speeds in a fun and intuitive manner, but the particular brand of controlled chaos that it introduces is, in my opinion, second to none.
+
+Simultaneous turns as a mechanic was first introduced to me when I was gifted a board game called Robo Rally by my in-laws, which completely caught me off guard with its unique approach to movement.  Basically, each player is dealt 10 movement cards, which have instructions such as Move 2 Forward, Turn Right, Move 1 Backwards, etc, and then they must plan out 5 rounds of movement.  Each individual round is resolved as simultaneously as possible, with conflicts being resolved by each card having a different priority rating.
+
+Nothing is so sweet as zigging when your opponent expects you to zag, followed by watching their best laid plans crumble to pieces as they bump their robot repeatedly against an unplanned wall.
+
+I later prototyped a small top-down tank video game with my own physical board and cards, this time introducing a time cost to different actions.  This opened up the strategic opportunities substantially. I also discovered some natural balancing factors: area of effect moves became bread and butter, while single-tile weapons could afford to be devastating since it was so hard to anticipate where exactly your opponent was going to be.
+
+I very much enjoy the fact that this concept gets all the benefits of RNG without actually needing to resort to a dice roll.  Things are so chaotic with everyone and their mother trying to think One Level Higher Than Everyone Else, but unlike RNG, if you manage to hit, it's usually because you /did/ think One Level Higher and got rewarded for it.  You're not managing random risk, you're anticipating and plotting within a fiendishly complicated machine.
+
+The one downside to this mechanic in meatspace is that it takes sooo much effort and bookkeeping to keep everything straight.  This makes actually playing these games somewhat of a pain, but it didn't bother me too much: I knew that this is one aspect that (should) be entirely eliminated when making the jump to computer-controlled games.
+
+Fortunately, it turns out I'm not the first one to try and apply simultaneous turns to a video game.  I very fortunately found a thread somewhere on Reddit discussing the concept, and people mentioned a few games which just happened to be part of the Summer Sale.  Frozen Synapse is the only one on that list I've played so far, but it has validated my anticipations substantially.  
+
+Frozen Synapse has you controlling soldier-drones in a top-down fogless map.  Each round is 5 seconds (or so) of real time, and you have as much time as you like to plan out your movements, spiced up with things like ducking, aiming, focusing/ignoring targets, and different weapons.  The system permits you to play and replay your currently planned turn over and over, letting you see if you can really get in range of that enemy, or if you can really get to cover in time, or if you can line up a shot just right.  However, since your opponent's pieces don't move, there's all sorts of unknown variables.  Will they go left or right? Are they going to fire a rocket to demolish my cover?  Is that sniper mid-move or is he halfway through lining up his shot?  
+
+In short, it's glorious, everything that I was hoping that such a high potential mechanic could bring to the table.  I will almost certainly be using this system, and not the backup Nethack-lite asymmetric turn system.
+
+--------------
+
+Anyway, this ties in to the other time-related mechanic that I've been waffling on, and that's time-skipping.  As you might surmise from the above, I very much lean to the tactical side in strategy games, and it is one of my highest priorities to ensure that the round-by-round combat and movement is engaging and interesting.  This, however, comes into conflict somewhat with the goal of having a world that's cohesive and makes sense: do we want ten year olds (or sixteen year olds, or twenty year olds) to be able to go out, make their impact on the world, and topple a stable world order in just over a week?  It would be remarkably tedious if a tactical game expected you to grind out skills in essentially real time before letting you take on the highest tier of government, but there's something to be said about suspension of disbelief as well.
+
+Our answer to this had been a sort of half-baked concept of controlled time skips.  The idea would be that you could direct your character to go spend a year in the wilderness, setting parameters for what sort of things to train and so on, and then the simulation would run, stopping only right before something major happening (such as a high-level encounter, or an injury, or whatnot).  
+
+This tidily solves the problem of ten-year-old protagonists, but it introduces a host of other issues.  Is playing the game “by hand” now cheapened?  If I can essentially skip forward a few decades with minimal preparation, isn't that what everyone is just always going to do?  Will the game be impossible to play without skipping?  Is it possible to even have the same world cater to skipped and non-skipped playstyles? Not to mention if we ever try to handle multiplayer (which I probably will not), then this entire mechanic probably goes out the window.
+
+Of all the mechanics that I've discussed here and on Discord, this is probably the most shakey.  The more I think about it, the more that I think it might be okay to use the standard handwave and not track time passing too closely, but that also feels a bit like a cop-out.  Even if I did accept that the 50-year-scale is acceptable to disregard, I think that there might be merit in the concept on a smaller scale.  Imagine only grinding enough cash or whatever for a month's worth of supplies, and then saying “wander this area until you find a Clefairy or three weeks have passed.”.  Your automated avatar is certainly not going to do as well as you would as it bumps around and looks for things, but it could absolutely decimate the need to grind, which in my opinion is a four-letter-word. On the other hand, perhaps this cheapens the game and makes finding a Clefairy into either a stupendously hard meta-grind or a super-easy checklist item.  
+
+I dunno.  I'm going to experiment with this system once other prerequisites are in place, but I'm pretty much 50/50 on whether or not it will work.  I don't want to shoehorn two games into one, but I also want to have the player able to interact with a sensible world.  If push comes to shove, I'll cut it, but we'll see what happens.
+
+What are your thoughts?  I realize that both of these systems are described in a pretty vague manner, but that's mostly because that's all we've got: they depend so much on how other systems will eventually work that it's difficult to exactly plan out.  Let me know down below or on Discord.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  
+:PROPERTIES:
+:Author: ketura
+:Score: 14
+:DateUnix: 1499446120.0
+:DateShort: 2017-Jul-07
+:END:
+
+*** An alternative to time skips would be changing the way time scales. It's assumed we do this already for time of day: the world plays out in real time, but we don't want each day to take 24 hours of real time to play through. So we have one real second correspond to one in-game minute so that a day will take 24 minutes instead of 24 hours.
+
+This introduces some handwaving, because a battle that takes a minute to resolve takes up an hour of the day, or from another perspective a plant will grow a full hour's worth of growth every minute, but it's comparatively smooth and has worked out well in many games.
+
+We can do the same thing for days and years, though. A full game still takes 50 years, but years are made up of fewer days. At real scale, 50 years takes (24 min/day)(365 days/year)(50 years) = 438,000 minutes, or 7,300 hours of play per game, which is /far/ too long. If you shift things so that each year only takes 30 days, then a full 50 years takes (24 min/day)(30 days/year)(50 years) = 36,000 minutes, or 600 hours. That's still far too much, so we'd have to break out massive time compression and conflate a year with a week.
+
+When one week corresponds to one year, a full game takes (24 min/day)(7 days/year)(50 years) = 8400 minutes, or 140 hours. That's still a /lot/ of time for a single game, even if you'll skip past a third of it from sleep, but it's something we can work with. We can also introduce timeskips in a more limited fashion, such as an old master taking you under his wing for a few years (we'll probably be doing this anyways, it's just a fun idea in general), and think of other mechanics that sap days or year-weeks from you at a time. There's still going to be the need to smooth things over (like your plants growing a year's worth of growth in a week, or that week-long holiday stretching a whole year), but that's par for the course.
+
+If we want to preserve seasons, though, we can expand a year to be 8 days (and also remove the concept of weeks in the process) and designate each season as taking two days. 50 years of 8 day years is 160 hours before sleep and additional timeskips, for reference (in fact, each day longer a year is extends playtime by about 20 hours). Alternatively, we could retain week-long years and decouple seasons from years. We'd have to handwave away celestial motion but we could make each season take up four weeks (and by extension, 4 years) and this would allow us to calibrate how long we want each season to 'feel' without affecting the play time.
+:PROPERTIES:
+:Author: InfernoVulpix
+:Score: 7
+:DateUnix: 1499449152.0
+:DateShort: 2017-Jul-07
+:END:
+
+
+*** u/CouteauBleu:
+#+begin_quote
+  such as needing to resolve who wins if two characters try to occupy the same space at the same time
+#+end_quote
+
+Oh oh! Like in Diplomacy!
+
+#+begin_quote
+  Things are so chaotic with everyone and their mother trying to think One Level Higher Than Everyone Else, but unlike RNG, if you manage to hit, it's usually because you did think One Level Higher and got rewarded for it.
+#+end_quote
+
+Of course, RNG does have its advantages (forces you to consider risk vs reward), and the drawbacks can be compensated by diluting it, and having a lot of opportunities to come back from a bad RNG, or making matches short enough that losing one isn't a big deal.
+
+#+begin_quote
+  Is playing the game “by hand” now cheapened? If I can essentially skip forward a few decades with minimal preparation, isn't that what everyone is just always going to do?
+#+end_quote
+
+I'd recommend making the "wilderness trips" into something that needs to be bought with actual gameplay. For instance, maybe you need regular shots of 'vaccine' to survive, otherwise you'd get sick. So regular gameplay gets you enough money to buy the shots (or even better, the shots are way too expensive for you, so you need to complete quests to get them); when you have enough, you plan your trip to the wilderness.
+
+#+begin_quote
+  On the other hand, perhaps this cheapens the game and makes finding a Clefairy into either a stupendously hard meta-grind or a super-easy checklist item.
+#+end_quote
+
+I think there shouldn't be much overlap between the pokemons you can find during time-skips, and the pokemons you can find during gameplay. Like, maybe the gameplay areas only have weak/common pokemons, and the 'deep wilderness' timeskip areas have rarer, more powerful pokemons?
+
+I dunno. Either way, you should probably start with establishing what you want the gameplay loop to be for finding pokemons. Like, what should it be about? To be specific, what would you ideally want the player to spend their time doing between two pokemon fights?
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 5
+:DateUnix: 1499465055.0
+:DateShort: 2017-Jul-08
+:END:
+
+**** Ha, I was in the middle of typing a reply and then got distracted by reading up on Diplomacy. I'd never heard of it, but its history was quite interesting.
+
+#+begin_quote
+  Of course, RNG does have its advantages (forces you to consider risk vs reward), and the drawbacks can be compensated by diluting it, and having a lot of opportunities to come back from a bad RNG, or making matches short enough that losing one isn't a big deal.
+#+end_quote
+
+Right. It just seems inelegant that the solution to the downsides of a mechanic is to, well, use less of the mechanic. Anything that pulls gameplay outcome away from luck and towards a system that can be learned and abused is a win in my book.
+
+#+begin_quote
+  I'd recommend making the "wilderness trips" into something that needs to be bought with actual gameplay. For instance, maybe you need regular shots of 'vaccine' to survive, otherwise you'd get sick. So regular gameplay gets you enough money to buy the shots (or even better, the shots are way too expensive for you, so you need to complete quests to get them); when you have enough, you plan your trip to the wilderness.
+#+end_quote
+
+Yeah, at the very least you would need food and vitamins, and maybe medical supplies so that the skip isn't interrupted by a bad bruise. Having what is essentially a timeskip currency is a good train of thought, however. I don't know that it needs to be something like a specialized medicine (else why isn't the player using it during normal gameplay as well?) but there might be a good way to justify it.
+
+#+begin_quote
+  I think there shouldn't be much overlap between the pokemons you can find during time-skips, and the pokemons you can find during gameplay. Like, maybe the gameplay areas only have weak/common pokemons, and the 'deep wilderness' timeskip areas have rarer, more powerful pokemons?
+#+end_quote
+
+Hmm. One of the things that makes time-skipping hard to swallow is that it looks like an optional feature that lets you skip the core gameplay with tradeoffs, but everything it seems to touch makes it more of a crucial, core system. Having some pokemon that you could never find by wandering normally is an example of this. If I feel the need to avoid normal gameplay to grind for a component I want to play the normal gameplay better with, it seems like something somewhere is missing the point.
+
+#+begin_quote
+  Either way, you should probably start with establishing what you want the gameplay loop to be for finding pokemons. Like, what should it be about? To be specific, what would you ideally want the player to spend their time doing between two pokemon fights?
+#+end_quote
+
+So my goal is to make it so that the entire rest of the game is built around making you want to go and put yourself in those pokemon fights. The standard, default goal is to become Champion, so naturally players who want that will be fighting for the sake of fighting, and I won't be able to stop them from just grinding as fast as they can to the top. Other mechanics however can be more shrewd. Maybe there's rare item components that are only in area X that you're trying to search for. Maybe it's a Ranger quest to find some lost trainers to improve your standing with the Ranger organization. Maybe you're trying to map out some areas, because there are some pagodas that are rumored to be arranged in a triangle and some treasure is in the center. Maybe there's a rare (or a specific individual) pokemon that you're trying to track to return to the owner or integrate into your team. Or maybe you're doing any or all of the above just to get cash for ${thing that costs too much money}.
+
+Timeskipping as a mechanic probably shouldn't help with hardly any of these (mapmaking being maybe an exception). If it's included, I think that it ought to perform two functions: make you slightly stronger without working for it, and advance time forward, for better or for worse.
+:PROPERTIES:
+:Author: ketura
+:Score: 3
+:DateUnix: 1499482521.0
+:DateShort: 2017-Jul-08
+:END:
+
+***** u/CouteauBleu:
+#+begin_quote
+  So my goal is to make it so that the entire rest of the game is built around making you want to go and put yourself in those pokemon fights.
+#+end_quote
+
+Okay, this is a little abstract, but I'm not sure that's how a good gameplay loop works. The way I understand it, a gameplay loop is something like "Player has X, Player wants X+1, there are obstacles between X and X+1, Player needs to do A to beat these obstacles and get X+1".
+
+There are gameplay loops on multiple levels. In most games, there are at least 2 or 3: the main combat gameplay loop (have enemy -> fight enemy -> enemy is beaten), the immediate quest (we need to blow up this anti-aircraft gun so our helicopter can land with reinforcements!) and the central quest (we need to defeat the main bad guy that finding allies / learning his weakness / traveling to Mordor / building the Crucible).
+
+My point being, once the 'fight pokemons' gameplay loop is abstracted away to Win/Lose (+XP, resources spent during a fight, etc), you need to figure out what the rest of the game is about, either top down or bottom up, and what are the other loops. What does the player accomplish by beating Pokemons? The idea is, every loop is based on the loops under it for progression, and the loop above it for meaning / necessity.
+
+I'm not saying you should start writing quests; I'm saying that before you start to write quests, you should figure out what you want from them.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 3
+:DateUnix: 1499502745.0
+:DateShort: 2017-Jul-08
+:END:
+
+****** So I think this is just a matter of perspective: as a designer, my focus is on making the core gameplay loop (the combat) focused, intuitive, and fun. Once I have done this, I create reasons for the player to go from battle to battle, which is really just the grout between the tiles as far as I'm concerned. From the /player's/ perspective, it might look like it's the other way around: they want to become Champion, which means beating Gyms, which means getting that wild Charmander to round out their team, which means fighting through hordes of hostiles while searching the proper area. But that's not how I've built the game (nor what I've focused the design on), that's just how it's interacted with. If I build a house, the first thing they see is the front door, but that's certainly not the first thing that I built or designed.
+
+Bungie referred to the core gameplay loop of Halo as the "thirty seconds of fun". The game was at its best when you were given weapons and a group of guys to fight, maybe in a novel arrangement or composition or on interesting terrain, but when it came down to it, each well-designed encounter was probably going to produce thirty seconds of fun. The trick was then to chain as many thirty-seconds together as possible, and designing a level was just arranging opportunities for those chains, and a story was just an excuse to piece levels together.
+
+Basically what I'm saying is that story, motives, etc are force multipliers, /not/ the actual meat of the game. Nethack is still played decades later, as is Mario, and it's not because saving the princess or retrieving the amulet of Yednor is in any way compelling or the reason players keep coming back. if I can make the moment-to-moment fights interesting and compelling enough, I won't even /need/ that other stuff...but I'm probably not that good, so it will need it regardless.
+:PROPERTIES:
+:Author: ketura
+:Score: 3
+:DateUnix: 1499528267.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+*** One thing that might help with the time thing is skipping ahead when you're traveling. Are you going through the Viridian Forest? Well, that's a two-week trip, minus any breaks that you take to explore (and you could, conceivably, do the trip in real time, but that'd take a heck of a long time). Assuming that you are traveling a fair amount, and that travel times are long enough that they will eventually stack up to a meaningful amount, then this might be a workable balance.
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 3
+:DateUnix: 1499601436.0
+:DateShort: 2017-Jul-09
+:END:
+
+**** So we actually discussed a similar class of solution in Discord the other day, the idea that some actions take more or less time than the default. For instance, if we compress each day to 5 IRL minutes long, but then make it so battles take very little objective time by making time move slowly during turns, then we've done something similar to what you propose, if in reverse.
+
+I'm not sure that there's a silver bullet, and we've been discussing just decoupling days, seasons, and years so they don't have the same relationships with one another that we do in our world (e.g. 10-15 days to a year, 30 days to a season) and then remove dialog references to all of them but one (e.g NPCs only measure things in seasons when noting the passage of time. It's rough; a day/night cycle just does not play well with years passing while letting people play without this being a full time job.
+:PROPERTIES:
+:Author: ketura
+:Score: 2
+:DateUnix: 1499605075.0
+:DateShort: 2017-Jul-09
+:END:
+
+
+** I'm halfway through watching /Your Lie in April/ for the first time and am frustrated with myself over it. Like /Your Name/, it's a story that despite its flaws I have gotten completely invested in the emotional journey it's taking me on thanks to stellar direction and production values, only to feel weirdly dissatisfied when it ends. I'm literally getting /the feels/ every 10 minutes and no matter how much I loved it in the moment, every episode leaves me feeling upset when it's over.
+
+I think it's because the show is all about intangible feelings. The characters feel things they don't understand and act on them anyway, which is the whole point. Love doesn't need to be logical in order for it to be real and worth embracing, so this show celebrates the raw feelings within us all. That's a great theme to explore, but I don't like it because I find the idea that emotions aren't controlled by logic uncomfortable because I'm autistic. I've spent my whole life working to understand emotions in myself and others, so I'm prejudiced against stories that contradict that impulse.
+
+I hate the idea that I could ever feel love for someone without knowing why, but I think it's stupid it bothers me so much I allow it to ruin stories for me that I otherwise love. I've gotten so good at understanding emotions, particularly in art, that romance anime manage to resonate with me in the way everyone told me they would, yet whenever it's over I always feel angry at it. This also happened to a lesser extent with /Toradora/ while /Yuri on Ice/ was only saved by the characters expressing themselves through ice skating.
+
+So where am I going with overanalyzing my psychology based upon my arbitrary opinions on the niche genres of romance and anime? I have no idea. I don't know how I can let go of what's keeping me from completely falling in love with these stories and I'm certainly not willing to go the other direction and decide I don't actually like them. They do click with me and I do enjoy watching them, but I never feel satisfied when they're over. I have the dumbest first world problem here and I'm ranting about it to you guys because it don't like the paradox I'm in and want some advice on how to resolve it instead of just moving on.
+
+EDIT: I binged the rest of the show today and the finale gave me absolutely everything I wanted without any disappointment. It was sad, but a life-affirming kind of sadness that helps you recognize all the beautiful things in life worth being happy about. The episodes leading up to it had the same problem as I did before, but I'm definitely happy I watched this show and got as much out of it as I did. Other anime have hit me harder with the characters and themes, but it's still an easy recommendation for /the feels/.
+:PROPERTIES:
+:Author: trekie140
+:Score: 11
+:DateUnix: 1499447573.0
+:DateShort: 2017-Jul-07
+:END:
+
+*** While I am skirting closer to the edge of the anime community, I have only seen ever seen /Your Name/ of the series you mentioned.
+
+I would guess that this class of problems is common among the [[/r/rational]] community. I often cringe when consuming otherwise enjoyable media and everyone is fundamentally uncurious about themselves and the world. It seems like the majority of writers prefer vague emotional explanations because it saves both time and effort on their parts, or perhaps it appeals to certain people.
+
+For the record, the part of /Psycho/ I enjoy the most is the psychological monologue at the end. In other words, I relate. I, however, have no advice.
+:PROPERTIES:
+:Score: 6
+:DateUnix: 1499448908.0
+:DateShort: 2017-Jul-07
+:END:
+
+**** I used to only like rational fiction because I could only understand stories through logic, but as my emotional intelligence has improved I have found that I do like stories that appeal to me through emotion. Even if they can be dumb or nonsensical, they still have artistic value and have enriched my life by being in it. I prefer when they're more rational, of course, but that's just a bonus on top of my emotional satisfaction.
+
+So I don't think it's the lack of rationality that's frustrating me. I think it's just that I have a deeply engrained /need/ to understand emotions so a story that treats them as intangible and celebrates that as part of human nature is simultaneously incredibly beautiful and intrinsically uncomfortable. I should just be able to chalk it up to a "journey before destination" style of story, but I haven't been able to change how I feel.
+:PROPERTIES:
+:Author: trekie140
+:Score: 5
+:DateUnix: 1499450393.0
+:DateShort: 2017-Jul-07
+:END:
+
+***** It is good that you have found a greater connection to emotional stories. Frankly a good deal of my relations to meatspace humans is filtered by novels, which despite its inherent problems has worked out surprisingly well so far.
+
+To cite a positive example, have you read Alicorn's Luminosity Sequence? (Recommendation also goes to her /Twilight/ fanfiction of the same name). It is pretty popular here so I would be surprised if you hadn't, but it provides both tools and examples of interesting emotional insight.
+:PROPERTIES:
+:Score: 6
+:DateUnix: 1499451179.0
+:DateShort: 2017-Jul-07
+:END:
+
+****** I am also a person who tries to live and learn vicariously through fiction since I don't interact with people as much as I would like. That's probably why I care so much about how I feel towards it and what that says about me. Thankfully, I still have people in my life that I'm very happy to have in it and I cherish my time with them.
+
+A while back I read the first few pages of Luminosity on a whim and then put it down to find something else to read. I know I definitely didn't give it enough of a chance and have no right to complain after I had watched the first Twilight film, but it didn't catch my interest right away because Bella didn't immediately click with me.
+
+Right now I'm reading the Avatar AU fanfic /What I Learned at SRU/ [[https://www.reddit.com/r/rational/comments/6ffjma/monthly_recommendation_thread/dijbsfe][(full recommendation here)]] because I find slice of life relaxing and life-affirming, though I personally think it qualifies as rational fiction thanks to how intelligent and introspective the characters are.
+:PROPERTIES:
+:Author: trekie140
+:Score: 3
+:DateUnix: 1499456576.0
+:DateShort: 2017-Jul-08
+:END:
+
+******* Strangely I have never gotten around to seeing Avatar or its sequel, despite frequent recommendations from all corners.
+
+The one thing I really enjoy about slice of life is that it divides said counterfactual universe into digestible portions of roughly homogeneous length, rather than letting it run continuously until its heat death, like the factual universe.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1499465180.0
+:DateShort: 2017-Jul-08
+:END:
+
+******** I think SRU would still be enjoyable if you hadn't seen Avatar, though you definitely should check it out, I just think it helps if you're already invested in these characters and their chemistry with each other. I don't /love/ The Last Airbender as much as most fans seem to and I think Legend of Korra was only just okay at its best moments, but I highly recommend the first series for similar reasons as Harry Potter.
+
+There are flaws that a critical eye will catch and the writing isn't as emotionally deep as it could be, but it's still a world you love to dive into with extremely likable characters on a fun adventure. It's not super unique, but it's relatable to a broad audience and easily consumable. As animated shows go, it doesn't hold a candle to Young Justice or Fullmetal Alchemist: Brotherhood, but it still holds a special place in my heart.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1499475107.0
+:DateShort: 2017-Jul-08
+:END:
+
+********* Thank you for your recommendations!
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1499478573.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+******** Apparently Alicorn's /Luminosity/ and /Luminosity sequences/ are two different things and I had never heard of the latter. I've spent most of my life learning to be introspective out of necessity and a drive to become a fuller human being, so I'm not sure I'll have much to learn from it.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1499484419.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+****** Would you happen to have a link to that sequence? Googling it yields a number of results, I'm not entirely sure which it is.
+:PROPERTIES:
+:Author: LupoCani
+:Score: 1
+:DateUnix: 1499457547.0
+:DateShort: 2017-Jul-08
+:END:
+
+******* [[http://lesswrong.com/lw/1xh/living_luminously/]]
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1499457757.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+**** A little unrelated but your post has made me realize something (about the uncuriosity).
+
+I think that many (maybe most?) people really are fundamentally uncurious about themselves and the world, and until right now it always baffled me.
+
+I think a lot of people who don't see themselves as 'smart' have kind of given up on thinking they're going to be able to understand things, so they don't try. I've had a lot of experiences that support this idea, but I didn't mentally put it together that way until now.
+:PROPERTIES:
+:Author: Galap
+:Score: 1
+:DateUnix: 1499757125.0
+:DateShort: 2017-Jul-11
+:END:
+
+
+*** Disclaimer: I've never fully watched the show. I've seen episode 1-2 and my friend has given me a cliff notes of the rest of the series. My major problem with it (and the main reason I don't think I'll ever watch it despite how goddamn /beautiful/ the animation is) is I find the female protagonist's (the violin player) plan unbearably stupid.
+
+[[#s][]]
+
+Again though, massive props for the animation. A very beautifully animated anime.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 5
+:DateUnix: 1499603794.0
+:DateShort: 2017-Jul-09
+:END:
+
+
+*** /Your Lie in April/ resonated with me; I grew up learning a musical instrument as well, which lead to similar conflicts as in the story.
+
+My most major complaint is that the love interest is a [[http://tvtropes.org/pmwiki/pmwiki.php/Main/ManicPixieDreamGirl][manic pixie dream girl]] (TVTropes), so the story beats are all fairly predictable.
+
+The characters in the story are all overwhelmed by emotion, but they're children; they're allowed to be. The story is about growing up, feeling things, childhoods (that are supposed to reflect the norm? something that people wish to be? I have no idea).
+
+I guess you have to train yourself at understanding the feeling of love without rationalising why you would feel it yourself. Or you can try to get over the initial reaction of "these people are stupid for blindly falling in love" and chalk it under suspension of disbelief, and view the rest of the story with that prior.
+
+I mean, the Force? Really? That gives plot-convenient powers when necessary?
+:PROPERTIES:
+:Author: eniteris
+:Score: 3
+:DateUnix: 1499484460.0
+:DateShort: 2017-Jul-08
+:END:
+
+**** It's never been a problem for me when the story focuses on the relationship after they've already fallen in love, such as the webcomic /Love and Capes/ and I would argue /Yuri on Ice/ qualifies as well even if the context is completely different. /Toradora/ is one of the few examples where I did buy into a budding romance, but there are plenty of shows with romantic subplots where I was satisfied by the arc.
+
+At the minimum, I usually feel happy for the characters when they get together the same way I would be happy for a friend and have frequently rooted for couples to get together when I think they'd be good for each other. It's just when romance is the main focus that I can't be certain whether it'll resonate with me, especially since I have only seen a handful of romances due to worries over whether I'll enjoy them.
+
+The manic pixie dream girl trope doesn't bother me in this show because Kaori almost seems like a reconstruction of it. She only acted that way due to the circumstances she was in, her erratic persona was just as prone to being "tyrannical" or even somewhat self-destructive, she turns out to be internally conflicted over what she's doing, and the ending completely recontextualizes her purpose in the narrative while still holding true to the trope's nature as a force of change upon the characters.
+
+This show may not have clicked with me as well as it did for you, but it's still a damn well made show that delivers on what it promises with a few surprises along the way. Other anime have resonated with me better: the struggle to find self confidence in /Yuri on Ice/, the fight against self-loathing and its interactions with loved ones in /The Boy and the Beast/, the difficulty of becoming a fuller person in /Gargantia on the Verderous Planet/, and the importance of holding onto hope in the face of despair in /Madoka Magica/, but /Your Lie in April/ still deserves the attention and acclaim it has received.
+
+As for characters I've personally related to, that's pretty rare since I'm an analytical introvert who wants to be a intuitive extrovert. It's hard to find a analogue to being born without any understanding of emotions or socialization, getting called a genius by everyone but feeling like I'm struggling to live up to my own standards, battling episodes of depression and anxiety that lead to self sabotage, and desperately searching for this thing called "passion" that everyone else seems to have but I have no idea what I want so I just keep doing what others tell me.
+
+If you've seen anything that tackles ideas like that, especially that last one, let me know. I've found kindred spirits in characters like Ender, Data, and [[https://www.reddit.com/r/PaulsWPAccount/comments/3q223j/index/][the protagonist of this harrowing story]] while making do with what I can in characters like Kousei Arima. It'd be great to find more, though it's hard since they aren't easily relatable and it's difficult to portray their feelings so people aren't clamoring for them.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1499489376.0
+:DateShort: 2017-Jul-08
+:END:
+
+***** u/zx321:
+#+begin_quote
+  It's hard to find a analogue to being born without any understanding of emotions or socialization, getting called a genius by everyone but feeling like I'm struggling to live up to my own standards, battling episodes of depression and anxiety that lead to self sabotage, and desperately searching for this thing called "passion"
+#+end_quote
+
+You might want to check out Sangatsu no Lion.
+:PROPERTIES:
+:Author: zx321
+:Score: 1
+:DateUnix: 1499492117.0
+:DateShort: 2017-Jul-08
+:END:
+
+****** I finally looked into Lion and it looks great, but the one thing I'm worried about is that I will end up envying Rei just because he at least has shogi. Regardless of how much shogi is tied to his self-loathing, it at least gives him something to do that he can financially support himself with.
+
+I don't think I'm over the depression I was going through back in college, but my primary concern right now is finding a job and that's been going nowhere. Rei at least has a marketable skill he can, in theory, build a fulfilling life around. I don't even have that because no one wants to hire me.
+
+I have a B.S. in Physics and B.A. in Math, but no experience or drive to succeed that I can express in an interview. I can't move away for a job because I'm not ready to live independently and I'm afraid of writing a cover letter because talking myself up makes me anxious and I might get rejected anyway.
+:PROPERTIES:
+:Author: trekie140
+:Score: 2
+:DateUnix: 1501433341.0
+:DateShort: 2017-Jul-30
+:END:
+
+
+****** I'm a heathen who only watches dubs, so is the manga any good? I've heard it's a bit different.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1499567622.0
+:DateShort: 2017-Jul-09
+:END:
+
+******* u/Kishoto:
+#+begin_quote
+  I'm a heathen who only watches dubs
+#+end_quote
+
+Heretic!
+:PROPERTIES:
+:Author: Kishoto
+:Score: 2
+:DateUnix: 1499604197.0
+:DateShort: 2017-Jul-09
+:END:
+
+******** I'm worried that my tunnel vision will result in me looking at the subtitles instead of the actual animation. The only film I've ever watched with subtitles was the Korean thriller I Saw The Devil, which ended up working out because the dialogue was slow, sounded similar to when I read a novel, and no one ever spoke when something visually interesting was happening. I have no idea what anime would also be like that while being better than the manga.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1499609107.0
+:DateShort: 2017-Jul-09
+:END:
+
+********* I had the same sort of concerns when I first started watching anime. I only used to watch dubs on Cartoon Network and such as a kid. Subs are pretty easy to get used to. The way it usually works is you read the line on the screen and then watch the action knowing what they are saying. Like you'll read the line in half a second and the next five seconds will be them verbalizing the line you've read and internalized.
+
+Action scenes are usually just yelling or short phrases. So there's little concern there of getting lost in the subs and missing action. It's definitely something you would need to get used to but it's a very easy skill to pick up and it will open up your anime viewing options immensely. Not to mention (in my personal opinion) Japanese voice acting is usually better. The voices often really fit their roles, with a few noted exceptions (Japanese Goku, for example, is an old lady that sounds like a child. Not the coolest thing when he's unleashing devastation!)
+:PROPERTIES:
+:Author: Kishoto
+:Score: 2
+:DateUnix: 1499622307.0
+:DateShort: 2017-Jul-09
+:END:
+
+********** I had that same experience with Rurouni Kenshin, my favorite manga which I checked out the anime for. I found the dialogue in the dub to be annoyingly slow and it seemed a bit off, so I tried it with subtitles instead. The writing flowed better and was closer to the manga, but I found it extremely distracting that Kenshin was voiced by a woman.
+
+The best dubs I've seen are Fullmetal Alchemist: Brotherhood, Cowboy Bebop, Steins;Gate, Gargantia on the Verderous Planet, and Miss Kobayashi's Dragon Maid.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1499658634.0
+:DateShort: 2017-Jul-10
+:END:
+
+*********** Yu Yu Hakusho is a bit older but it was one of the better dubs I've heard. DBZ's dub is also superior, at least for Goku's voice.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 1
+:DateUnix: 1499708377.0
+:DateShort: 2017-Jul-10
+:END:
+
+
+******* Unfortunately I haven't read the manga so it's hard to say. I'd encourage you to check out the first episode at least if you can tolerate subs at all, I think it's worth watching even on its own.
+:PROPERTIES:
+:Author: zx321
+:Score: 1
+:DateUnix: 1499574830.0
+:DateShort: 2017-Jul-09
+:END:
+
+
+***** I think the current cultural conception of passion is extremely flawed; it encourages you to wander blindly until you find your passion, even if it takes you forever, or your passion doesn't exist.
+
+I find it better to take something that you are interested or enjoy, and make it your passion. Set yourself a goal that will take a lifetime to complete, and precommit to achieving it. It gives direction. It's not "I love this and I want to do it forever". It's "This seems interesting. Let's get it done."
+
+See also: [[https://www.poetryfoundation.org/poems/44272/the-road-not-taken][The Road Not Taken]], especially the middle two stanzas. Tending towards Nihilism, but not quite there yet.
+:PROPERTIES:
+:Author: eniteris
+:Score: 1
+:DateUnix: 1499492415.0
+:DateShort: 2017-Jul-08
+:END:
+
+****** u/trekie140:
+#+begin_quote
+  I find it better to take something that you are interested or enjoy, and make it your passion.
+#+end_quote
+
+Now if only I knew what work I enjoyed doing. I know what I'm good at, math and physics, but I don't know if I like doing them.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1499567724.0
+:DateShort: 2017-Jul-09
+:END:
+
+******* Do you know what you enjoy doing? (And whether any of them are career able?)
+
+Other recommendations include Camus and Sartre, especially the Myth of Sisyphus and Sartre's Radical Freedom. Both claim that we must be happy in the situations that we find ourselves in. Slightly dangerous, as it breeds complacency.
+:PROPERTIES:
+:Author: eniteris
+:Score: 1
+:DateUnix: 1499568751.0
+:DateShort: 2017-Jul-09
+:END:
+
+******** I enjoy my hobbies, but the main purpose of those is to alleviate boredom so none of them can be turned into a career without becoming an artist or art critic, which is work I do not believe I would enjoy doing. I don't feel a drive to do anything besides support and improve myself, but I'm progressing so slowly that I'm extremely tempted to be lazy. I only want a job because I want money.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1499609610.0
+:DateShort: 2017-Jul-09
+:END:
+
+
+******* Don't do something you're passionate about. Bourgeois "passion" is a lie, most of the time. Do something you can at least partially enjoy, which at least partly interests you, and which you consider /necessary/. Do something you think the world needs more of.
+
+Love is for people, not wage-labor.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1499649725.0
+:DateShort: 2017-Jul-10
+:END:
+
+******** I would like to do work that makes the world a better place, but my opportunities are limited. I'm not psychologically ready to move out of my childhood home, have no work experience in the field I have a degree in and need a monthly salary of at least $2000 in order to support myself.
+
+That's why I've narrowed my ambition to just doing work that will make me money and even that is proving difficult to find. Temp agencies and employment counselors like it when you have a specific profession in mind and are willing to move to where the work is.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1499659141.0
+:DateShort: 2017-Jul-10
+:END:
+
+********* What field do you have a degree in?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1499688487.0
+:DateShort: 2017-Jul-10
+:END:
+
+********** I have a BS in Physics and a BA in Mathematics. I've been looking for work as an engineer, but there aren't a lot of entry-level positions for someone with no work experience. Everyone has suggested teaching, but I don't want to be a teacher.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1499696063.0
+:DateShort: 2017-Jul-10
+:END:
+
+*********** Well, an engineer was supposed to get an engineering degree and do a co-op while in school.
+
+Dang. Huh. What /does/ one do with a pure physics and math double-degree?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1499696242.0
+:DateShort: 2017-Jul-10
+:END:
+
+************ I don't know, I've just been trawling job boards for anything that has "physics" in its description. There are only a handful that I'm qualified for and I haven't gotten any callbacks from them yet. All the professions with "scientist" in their title require a master's degree or above.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1499697407.0
+:DateShort: 2017-Jul-10
+:END:
+
+************* u/deleted:
+#+begin_quote
+  All the professions with "scientist" in their title require a master's degree or above.
+#+end_quote
+
+And when you have that degree, trust me, they're going to want it in the specific subfield they use, or preferably a PhD in that subfield.
+
+Source: have been in exactly that situation.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1499699189.0
+:DateShort: 2017-Jul-10
+:END:
+
+************** One of the reasons I didn't go to grad school is that I couldn't pick a field I wanted to go into because I don't know what work I enjoy doing. So far, I've only gotten callbacks from jobs that I would've qualified for if I'd never gone to college. I don't know what I'm supposed to do at this point besides keep trawling the job boards and hope I finally get lucky.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1499699594.0
+:DateShort: 2017-Jul-10
+:END:
+
+*************** Yeah, this sounds like a pretty shitty situation. Sorry the job market these days requires you to /want/ a specific field of work when you /need/ a job.
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1499708499.0
+:DateShort: 2017-Jul-10
+:END:
+
+**************** Just today I managed to get an appointment with a job counselor at the Department of Rehabilitation, who work with people who have disabilities like my autism. So things are looking up a bit.
+:PROPERTIES:
+:Author: trekie140
+:Score: 1
+:DateUnix: 1499725848.0
+:DateShort: 2017-Jul-11
+:END:
+
+
+** Reddit allows users to use HTML character codes, if you weren't aware. =&mdash;= becomes ---, =&sect;= becomes §, etc.
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 5
+:DateUnix: 1499461656.0
+:DateShort: 2017-Jul-08
+:END:
+
+*** Yay. .  .   . I wonder if it's just bad escaping.
+:PROPERTIES:
+:Author: Anderkent
+:Score: 3
+:DateUnix: 1499468332.0
+:DateShort: 2017-Jul-08
+:END:
+
+**** It's a design feature of the format reddit uses, [[https://daringfireball.net/projects/markdown/syntax#autoescape][Markdown]]. Unfortunately, it's not implemented particularly well in a lot of apps.
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 3
+:DateUnix: 1499487420.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+** My only thing to say this week is that I got to the part of /Forty Milleniums of Cultivation/ with real plot. Kinda.
+
+And yeah, that was the Supreme Emperor with the 20 Primary Sects, wasn't it? Each led by the Supreme Emperor's own soul-clone, uh-huh. And then the leader of them gets corrupted by Tenebrum d+a+emons and turns against the Emperor, huh?
+
+That was hilarious and I was highlighting every single bit of it in my Kindle.
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1499456798.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+** I am in the process of preparing my very lazy Harry Potter cosplay outfit for Nineworlds, which consists of an academic gown (with blue edging, natch), a silly hat a wand and a time turner, but can anyone here think of how I can make it HPMoR specific?
+:PROPERTIES:
+:Author: MonstrousBird
+:Score: 5
+:DateUnix: 1499469729.0
+:DateShort: 2017-Jul-08
+:END:
+
+*** Chaos Army patch.
+
+Ring with oversized jewel. (When I did my Quirrel cosplay, I had a ring glued to my forehead stone-in.)
+
+On a side-note, I didn't know about Nineworlds; hey, a geeky con right there in my city, maybe I'll-
+
+#+begin_quote
+  one-day ticket: £50
+#+end_quote
+
+never mind.
+:PROPERTIES:
+:Author: Roxolan
+:Score: 14
+:DateUnix: 1499470644.0
+:DateShort: 2017-Jul-08
+:END:
+
+**** The jewel is tiny, so as to minimize upkeep.
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 3
+:DateUnix: 1499477991.0
+:DateShort: 2017-Jul-08
+:END:
+
+***** Tradeoff between canonicity and visibility.
+:PROPERTIES:
+:Author: Roxolan
+:Score: 4
+:DateUnix: 1499479575.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+*** Constantly walk around snapping your fingers, complain about how none of this makes the least bit of sense, and mess with things far larger than you which you really have no business messing with but you will anyway because that's just how arrogant you are.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 10
+:DateUnix: 1499470060.0
+:DateShort: 2017-Jul-08
+:END:
+
+**** [deleted]
+:PROPERTIES:
+:Score: 19
+:DateUnix: 1499470392.0
+:DateShort: 2017-Jul-08
+:END:
+
+***** With a picture of a snitch and a crossed-out red circle around it?
+
+Hmm. Would be nice on a t-shirt.
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 7
+:DateUnix: 1499500543.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+*** Make a sword of gryffindor prop that says "Nihil Supernum"
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1499511706.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+** Hypothetical question: Let's say a large block of powder cocaine fell out of the sky into your hands. Nobody knows you have it, nobody will come looking for it or you.
+
+Do you sell it on something like Silkroad, rationalizing that the bad done to society by a single block of drugs will be less bad than whatever good you can accomplish with the money? Do you turn it over to the police? Something else?
+
+Personally, I think I would sell it. I value my personal comfort quite highly, and a single block of cocaine isn't going to change all that much about the international drug market. Anyone who was buying on whatever site I wound up using would have just wound up buying from someone else who is probably far less scrupulous than me. I can understand why someone would choose not to, of course. Destroying the drugs immediately would minimize personal risk, turning it over to the police might yield some kind of legitimate reward (while carrying risk in transport to the police station). It's an interesting question, which is why I'm asking it.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 4
+:DateUnix: 1499451916.0
+:DateShort: 2017-Jul-07
+:END:
+
+*** [deleted]
+:PROPERTIES:
+:Score: 20
+:DateUnix: 1499454355.0
+:DateShort: 2017-Jul-07
+:END:
+
+**** Honestly, I'd be concerned about taking it into the police because they're gonna ask, "How the fuck did you get a two kilo block of coke, guy?"
+:PROPERTIES:
+:Score: 8
+:DateUnix: 1499456466.0
+:DateShort: 2017-Jul-08
+:END:
+
+***** It fell off a truck.
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1499458030.0
+:DateShort: 2017-Jul-08
+:END:
+
+****** A car? How fast was that motorcycle going to drop something like this? We really ought to do something about all these scooters.
+:PROPERTIES:
+:Author: ketura
+:Score: 7
+:DateUnix: 1499462813.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+**** Is everyone involved taking a 50% cut o_O?
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 3
+:DateUnix: 1499467804.0
+:DateShort: 2017-Jul-08
+:END:
+
+***** That's the joke :D
+:PROPERTIES:
+:Author: rhaps0dy4
+:Score: 1
+:DateUnix: 1499507202.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+*** A large block of powder cocaine fell out of the sky into your hands. Momentum is conserved, and your hands are promptly crushed into a fine paste, splattered across the ground. Nobody is around to hear the loud crash. Nobody calls an ambulance. If you even survive the initial impact, you just slowly bleed to death, trapped under the large block of cocaine.
+
+Moral of the story: Don't try to catch things falling out of the sky.
+
+So instead, let's say that you simply discover a large block of powder cocaine, innocuously sitting in the middle of a forest. In this case, since your fingerprints are thankfully not on the block of cocaine, the best way to minimize personal risk is to simply ignore the block of cocaine. And also never go into forests in the first place, as forests are dangerous.
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 17
+:DateUnix: 1499467702.0
+:DateShort: 2017-Jul-08
+:END:
+
+**** And don't go to saunas 'cuz they're crawling with piranhas?
+:PROPERTIES:
+:Author: Frommerman
+:Score: 6
+:DateUnix: 1499467793.0
+:DateShort: 2017-Jul-08
+:END:
+
+***** YOLO
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 3
+:DateUnix: 1499469259.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+*** I'd probably get rid of it. Cocaine seems to be on the "more dangerous than it's worth" side of drugs, and who knows what addictions I might be feeding with it. Besides, what "good" am I rationalizing myself into? Probably goes to rent and a new computer. Is that worth making the problem bigger, even if only by a relatively small amount?
+:PROPERTIES:
+:Author: ketura
+:Score: 12
+:DateUnix: 1499454306.0
+:DateShort: 2017-Jul-07
+:END:
+
+**** If you are running your finances in such a way that a windfall goes to paying the rent, /you are doing it wrong/. Rent should be paid from regular income. Windfalls are invested.
+:PROPERTIES:
+:Author: King_of_Men
+:Score: 5
+:DateUnix: 1499495294.0
+:DateShort: 2017-Jul-08
+:END:
+
+***** Hmm, that actually makes sense. I spent a long time living paycheck to paycheck, and since having graduated from that, I haven't really changed my habits much. Good advice.
+:PROPERTIES:
+:Author: ketura
+:Score: 3
+:DateUnix: 1499548337.0
+:DateShort: 2017-Jul-09
+:END:
+
+
+**** That's a nice way of thinking about it but, based on how large the drug market is already, all you'd be doing is driving the price of cocaine in a certain, minute direction. There's more than enough cocaine in most places that your block won't make the difference in some junkie getting their hit.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 1
+:DateUnix: 1499546874.0
+:DateShort: 2017-Jul-09
+:END:
+
+***** The problem being bigger than I am is no excuse to contributing to it.
+:PROPERTIES:
+:Author: ketura
+:Score: 5
+:DateUnix: 1499548596.0
+:DateShort: 2017-Jul-09
+:END:
+
+
+*** I don't want to find out how cops treat people who claim to have magically found hard drugs. I don't want to find out how drug-buyers roll, either.
+
+I throw the block into the river.
+:PROPERTIES:
+:Score: 9
+:DateUnix: 1499456496.0
+:DateShort: 2017-Jul-08
+:END:
+
+**** Selling in person is obviously a terrible idea, which is why I suggested an online marketplace where you're protected by encryption. Sending drugs via the mail is supposed to be hilariously easy.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 5
+:DateUnix: 1499458411.0
+:DateShort: 2017-Jul-08
+:END:
+
+***** u/Roxolan:
+#+begin_quote
+  Sending drugs via the mail is supposed to be hilariously easy.
+#+end_quote
+
+So I have heard. But I don't know for personal experience. Worst case scenarios include dying or going to prison (which is close enough).
+
+I don't think I'd immediately throw it in the river because those best-case scenario tho. But I'd do a fair bit of research first, and I'd feel ok if my conclusion is to pick the river plan
+:PROPERTIES:
+:Author: Roxolan
+:Score: 2
+:DateUnix: 1499470140.0
+:DateShort: 2017-Jul-08
+:END:
+
+****** I haven't done my research either, to be fair, and I definitely would if a situation this bizarre ever happened.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 1
+:DateUnix: 1499470409.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+****** I have seen it done second-hand a few times. It really is hilariously easy. You think UPS runs chem sniffers over every package they get? You think you couldn't, with a bit of forethought, cover a 5kg brick in enough obfuscation to defeat any plausible detection method? If you think about it for 5 minutes, you could probably think of even more safeguards.
+:PROPERTIES:
+:Author: Iconochasm
+:Score: 1
+:DateUnix: 1499484658.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+**** Wow, that's the single most evil thing I've ever read in this sub, and I'm including all kinds of evil munchkin ideas for world domination in the saturday threads.
+
+Think of all the people who live downstream from where you threw in the *large* block of cocaine. Anyone ingesting the water from the river on a regular basis is now going to ingest your cocaine without knowing it. Depending on the specific river, you could get tons of innocent victims unknowingly overdosing on cocaine or becoming addicted to cocaine just because they drank tap water or washed their faces/hands/food in a river or ate fish caught from a river. Especially if that river feeds into a reservoir.
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 7
+:DateUnix: 1499466529.0
+:DateShort: 2017-Jul-08
+:END:
+
+***** I thiiink you underestimate how much water moves through a river. A usual dose of cocaine is [[https://drugs-forum.com/threads/what-is-the-dose-for-pure-cocaine.91797/][50-150mg]]. A 2kg brick of cocaine is [[http://boards.straightdope.com/sdmb/showthread.php?t=298784]['the size of a small phonebook']], so say a 'large' block is 5kg. People drink about [[http://www.naturalhydrationcouncil.org.uk/hydration-facts/faqs-on-hydration/][2.5 litres of water a day]], so to ingest a standard 'dose' every day this 5kg would have to be dissolved in at most 2.5l * 50 mg / 5 kg = 2.5 * 1e5 = 250000 litres of water.
+
+Moderate rivers have discharge of about [[https://en.wikipedia.org/wiki/Bug_River][100m^{3/s}]] = 1e5 l / s = 144 million liters a day. A 5kg block of cocaine will just disappear in one. A very small river will have discharge of [[https://pl.wikipedia.org/wiki/S%C5%82upia_(rzeka)][15.5 m^{3} /s]] (warning - polish), i.e. ~22 million liters a day. Still more than enough to make this a non-issue.
+
+Edit: also, I'm pretty sure I'm on a list now.
+:PROPERTIES:
+:Author: Anderkent
+:Score: 21
+:DateUnix: 1499467920.0
+:DateShort: 2017-Jul-08
+:END:
+
+****** Eh, I once looked up street prices of every illegal substance I knew of to figure out how much a Magic card would have to be worth to be worth more than its weight in those substances.
+
+For cocaine, it's $142. I own a few cards worth more than that.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 6
+:DateUnix: 1499470259.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+****** Huh. Good to know lol. I must confess I had absolutely no idea how much cocaine was needed to turn someone into a drug addict, just that it probably wasn't a good idea to dump drugs into a water supply. XD
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 2
+:DateUnix: 1499480363.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+***** You're certainly underestimating the volume of water at any given time in a river. Unless the block in question is the size of a large car or truck (even then, doubtful) it wouldn't have any noticeable effect.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 5
+:DateUnix: 1499546728.0
+:DateShort: 2017-Jul-09
+:END:
+
+
+***** Oh, also, by the way, I think I recognize your username phrase from anime. What's it mean?
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1499469578.0
+:DateShort: 2017-Jul-08
+:END:
+
+****** Loosely translated: "Shiranai" means "Don't know". "Wakaranai" means "Don't Understand".
+
+So I intended my username to mean "I don't know anything, and I don't understand anything."
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 3
+:DateUnix: 1499482009.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+****** Shiranai means "X entity or entities does not / will not know" while wakaranai means "X entity or entities does not / will not understand". It is a little more complicated than that, but that is the jist. I am unaware of any special idiomatic meaning of those words in combination.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1499472641.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+***** u/Roxolan:
+#+begin_quote
+  and I'm including all kinds of evil munchkin ideas for world domination in the saturday threads.
+#+end_quote
+
+I haven't kept up with those threads, but /seriously/? What kind of meek munchkins do we have here if they can't fuck up on that large a scale when handed out all kinds of weird magic?
+:PROPERTIES:
+:Author: Roxolan
+:Score: 3
+:DateUnix: 1499470251.0
+:DateShort: 2017-Jul-08
+:END:
+
+****** The most "evil" munchkin ideas tend to be just world destruction or dominating the world by killing anyone who disagrees.
+
+That's not really as evil as secretly dumping drugs into a city's water supply and hence turning all the citizens into drug addicts, which was what I read about recently [[#s][in]] and the memory stuck lol.
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 3
+:DateUnix: 1499480533.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+***** Wow. I feel really bad now. Any safer way to dispose of it? I was gonna burn it, but if you burn cocaine you just get high.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1499467046.0
+:DateShort: 2017-Jul-08
+:END:
+
+****** I don't think you should feel bad - [[https://www.reddit.com/r/rational/comments/6lu90j/d_friday_offtopic_thread/djxalqv/?utm_content=permalink&utm_medium=front&utm_source=reddit&utm_name=rational][see sibling]]
+:PROPERTIES:
+:Author: Anderkent
+:Score: 3
+:DateUnix: 1499468173.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+**** Send an anonymous report, then, which includes a location.
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1499625450.0
+:DateShort: 2017-Jul-09
+:END:
+
+
+*** u/CouteauBleu:
+#+begin_quote
+  Personally, I think I would sell it. I value my personal comfort quite highly, and a single block of cocaine isn't going to change all that much about the international drug market. Anyone who was buying on whatever site I wound up using would have just wound up buying from someone else who is probably far less scrupulous than me.
+#+end_quote
+
+Isn't that what every single dealer thinks? "It's not bad because there worse people out there doing it too, why should they get all the money?"
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 10
+:DateUnix: 1499463188.0
+:DateShort: 2017-Jul-08
+:END:
+
+**** I suppose it could go that way, but it's not like I would be looking for a supplier. That way lies sudden, violent death.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 2
+:DateUnix: 1499464895.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+*** To be honest, the logistics of this are still much more risky than you'd think even if the cocaine is completely untraceable. Selling that much coke (You didn't give exact numbers but I'll take large block to mean size of a suitcase, which could be like 15 bricks, which is 15 kg. Prices vary but on the low end, that's $375,000) in one large drop is /hard/. Even utilizing dark net resources (which are risky in and of themselves), you'd be hard pressed to find someone who's trying to buy that much cocaine from an unknown seller. They'd probably think you were a cop. In that case? I'd just leave it alone or report it to the cops. I definitely wouldn't carry it with me.
+
+If we took out the real world logistics of fencing that much cocaine, I would probably sell it. In a perfect world, I'd like to turn it into the cops for a reward. Even if it's 1/10 of the street price, I would be happy. But that's not really how it works. I think the most you'd get for that is a hearty handshake.
+
+I also don't really care for the good vs bad rationalization of it. As discussed, the drug world is huge as it is. A block isn't much relatively speaking. And it's not as if the coke heads that end up using this block would be unable to procure coke elsewhere.
+
+TL;DR: Fencing it is too hard and risky. Would sell if I had a guaranteed safe way to. In a perfect world, would call cops for smaller but still sizable reward.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 3
+:DateUnix: 1499546627.0
+:DateShort: 2017-Jul-09
+:END:
+
+**** I mean, you could also sell in smaller batches to individual buyers. That's probably safer to do in the long run, even, as having a few hundred dollars show up occasionally is far harder to trace than a sudden lump sum.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 2
+:DateUnix: 1499548405.0
+:DateShort: 2017-Jul-09
+:END:
+
+***** At this point you are literally a drug dealer.
+:PROPERTIES:
+:Author: UltraRedSpectrum
+:Score: 4
+:DateUnix: 1499552210.0
+:DateShort: 2017-Jul-09
+:END:
+
+****** That is 100% true.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 2
+:DateUnix: 1499553073.0
+:DateShort: 2017-Jul-09
+:END:
+
+
+***** It's a lot more dangerous actually. Because you now have dozens of unattached people who know you deal drugs/have drugs to deal. All it takes is for one of them to get caught and the police to say "Give up your dealer and you don't need to go to jail." Or for someone to direct another dealer to rob you.
+:PROPERTIES:
+:Author: Kishoto
+:Score: 3
+:DateUnix: 1499554853.0
+:DateShort: 2017-Jul-09
+:END:
+
+
+*** Why take for granted that there is any 'bad done to society' by you selling?
+:PROPERTIES:
+:Author: Anderkent
+:Score: 2
+:DateUnix: 1499452735.0
+:DateShort: 2017-Jul-07
+:END:
+
+**** As opposed to not giving someone access to potentially lethal drugs. Some unknown percent of the time, selling results in one or more people getting hurt. Of course, the people seeking the drugs would have found some anyway, which is why I don't find that good enough to refuse to sell, but some people care more than me about the direct effects of their actions rather than the probabilistic effects.
+:PROPERTIES:
+:Author: Frommerman
+:Score: 1
+:DateUnix: 1499453710.0
+:DateShort: 2017-Jul-07
+:END:
+
+
+** [[https://youtu.be/jbDSEpIZat8][Game Maker's Toolkit is running a game jam next week]]. I'm planning on entering (probably while trying to prototype something relevant to Renegade), and at least one other person on the [[/r/rational]] Discord is running with their group.
+
+I would be happy to take any stragglers who want some experience making a game, and I would also be happy to offer advice if you're looking to start your own group or run solo. If you've never made games but would like to, this is a great opportunity to get your feet wet. I would however advise settling on a game engine now and spending a few days getting caught up on it; it won't do to try and design and make a game in 48 hours when you've never actually touched the engine before. I can recommend Unity as a great general-purpose engine for this sort of thing, but there are myriad other options depending on your goals.
+:PROPERTIES:
+:Author: ketura
+:Score: 3
+:DateUnix: 1499448488.0
+:DateShort: 2017-Jul-07
+:END:
+
+*** [deleted]
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1499483600.0
+:DateShort: 2017-Jul-08
+:END:
+
+**** We will be using C# with the Unity3D engine. You should probably take at least a glance at those before this Friday (I don't know any good tutorials off the top of my head, sadly). If nothing else we'll ensure you get a look at the process, but once I know what we're working on I'll try and make sure there's something to do at your level. What time zone are you in?
+:PROPERTIES:
+:Author: ketura
+:Score: 1
+:DateUnix: 1499491228.0
+:DateShort: 2017-Jul-08
+:END:
+
+***** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1499516306.0
+:DateShort: 2017-Jul-08
+:END:
+
+****** Cool. We're still not sure which time zone we're gonna submit to, but either way it's probably going to be starting evening-to-late-night US time on Friday.
+
+I've created a private channel on the [[/r/rational]] discord and gave AgentOfDimir permissions to view it, but it's possible that was a temp user that won't persist when you next log in. [[https://discord.gg/u4KgdE3][Next time you hop on]] just shoot me a PM and I'll get you added.
+:PROPERTIES:
+:Author: ketura
+:Score: 1
+:DateUnix: 1499634489.0
+:DateShort: 2017-Jul-10
+:END:
+
+
+*** u/CouteauBleu:
+#+begin_quote
+  I would be happy to take any stragglers who want some experience making a game,
+#+end_quote
+
+Mh, tempting. Does it take people from all over the world? (there might be some problems with the time zones too) I absolutely hated the last Game Jam I was in (GGJ - Theme: Rituals), but I kinda want to find out how much experience / wisdom / humility I've learned in the months of school since.
+
+Also, I keep hearing about the Renegade project and I never really talked to you, so that could be cool too.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 2
+:DateUnix: 1499463429.0
+:DateShort: 2017-Jul-08
+:END:
+
+**** [[https://itch.io/jam/gmtk-jam][The jam's FAQ]] is (I'm told intentionally) sort of vague, but worldwide is implied, I think. Mark Brown is himself in the UK, and I'm not, so there's that at least. Since they're not starting at a universal time, I think the intent is for local groups, but piss on that.
+
+One of the guys that might run with me is in Australia (and I'm in the US) so it's a situation we'll have to figure out regardless. It's probably against the spirit of the thing to take advantage of the wide time frame, so I would think we would need to sit down and pick a 48 hour time frame, and some of us will just not have it be 6PM-6PM local time.
+
+I'd love to have you! These jams are always nicer in groups, I think. Just let me know; I'm entering regardless, but if there's more people in the group, I'll allocate more of my time over the weekend to it.
+:PROPERTIES:
+:Author: ketura
+:Score: 1
+:DateUnix: 1499464826.0
+:DateShort: 2017-Jul-08
+:END:
+
+***** K. I'll let you know by next Thursday.
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 3
+:DateUnix: 1499465259.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+** Oh! Is anyone else going to CrossingsCon 2017 in August? I still have a week or so to figure my shit out as to whether I'm going and how to go.
+
+It's this universe's /only/ (known) Young Wizards convention, so if you miss out, you might have to cross the paracosm or wait until next year to get another one!
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1499457119.0
+:DateShort: 2017-Jul-08
+:END:
+
+*** While Cali is /closer/ to Australia than is the Big Apple, it's still not /close enough/ for me to drop in :(
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 4
+:DateUnix: 1499557337.0
+:DateShort: 2017-Jul-09
+:END:
+
+
+*** I'm currently deeply annoyed because I bought interim 2 two weeks ago, didn't realize the download link was good for only three days, neglected to download it, and now they aren't responding to my emails to their support address.
+:PROPERTIES:
+:Author: Aretii
+:Score: 3
+:DateUnix: 1499484168.0
+:DateShort: 2017-Jul-08
+:END:
+
+**** They respond eventually. That's how I got my copy of /The Big Meow/.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1499489150.0
+:DateShort: 2017-Jul-08
+:END:
+
+
+** [[https://www.youtube.com/watch?v=XEKNNKc1YZU][This]] reminded me of you, [[/u/eaglejarl]]
+:PROPERTIES:
+:Author: Cariyaga
+:Score: 2
+:DateUnix: 1499468360.0
+:DateShort: 2017-Jul-08
+:END:

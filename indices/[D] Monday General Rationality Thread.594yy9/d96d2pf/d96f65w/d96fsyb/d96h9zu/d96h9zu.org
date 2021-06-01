@@ -1,0 +1,28 @@
+:PROPERTIES:
+:Author: electrace
+:Score: 3
+:DateUnix: 1477360498.0
+:DateShort: 2016-Oct-25
+:END:
+
+#+begin_quote
+  Interpretation #2: "It's likelier than not" means "Pr(A)>0", because "it" refers to Pr(A) and "not" refers to the hypothetical concept of a Pr(A)=0.
+#+end_quote
+
+I'm not getting that. "It" doesn't refer to "P(A)", it refers to "A" itself. It has to because Pr(Pr(A)) doesn't make any sense.
+
+The only way to get that interpretation is to interpret "not" as "some impossible thing", which seems like a stretch, because it means the whole phrase is "It's likelier than (not anything that is possible)" instead of the much more intuitive phrase, "It's likelier than (not it)."
+
+#+begin_quote
+  It occurs to me that there's a third interpretation which explains the common usage:
+#+end_quote
+
+The common usage, in my opinion, is covered by the first interpretation. I've never had any trouble communicating with this phrase. But then again, maybe I'm receiving a different signal than they are sending?
+
+#+begin_quote
+  Interpretation #3: "It's likelier than not" means "Pr(A)>T", where T is the threshold of probability past which things are worth considering. "It" refers to Pr(A) and "not" is short for "not likely", ie, T.
+#+end_quote
+
+But "not" wouldn't be short for "not likely," it would be short for "an event with the lowest probability worth considering," or to use the word, "not any event with a probability worth considering." This also seems like a stretch to me...
+
+If it was just short for "an event that is not likely," then it would reduce to... Pr(A) > Pr(B) and Pr(B) < .5, which would mean that, at least Pr(A) >= .5

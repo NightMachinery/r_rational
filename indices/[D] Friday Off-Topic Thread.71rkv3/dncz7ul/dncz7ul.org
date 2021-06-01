@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 5
+:DateUnix: 1506096773.0
+:DateShort: 2017-Sep-22
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+This week was a bit of [[http://sethgodin.typepad.com/seths_blog/2005/03/dont_shave_that.html][yak shaving]], but I feel like that's par for the course at this point.  In an effort to get Systems up and running, I was taking a look at the ModLoader which ultimately reads, prioritizes, and compiles said Systems.  I knew it was in a sort of hacked-together state, and I'm still not 100% happy with it yet, but it's certainly much more robust than it was a week ago.  
+
+The majority of the time was spent implementing the priority system that I've had rolling around in the back of my head for some time.  Basically, mods have 4 different ways of declaring up front how they interact with other mods: you can declare another mod as a dependency (X will not load without Y present), you can declare another mod an irreconcilable conflict (X will not load if Y /is/ present), you can declare that you must load before another mod, and you can declare that you must load after another mod.  In isolation this is all pretty straightforward, but getting all these rules to play nice was a bit tricky.  
+
+(if this sounds familiar, it might be because you're familiar with Supreme Commander's modding system, which I cribbed it from.)
+
+Surprisingly (to me anyway) the load before/load after part actually took the most amount of effort to get right.  It boiled down to [[https://i.imgur.com/vF3QFbY.png][constructing a graph]] and then implementing various algorithms I stole from the internet to /topologically sort/ it (that is, to take the messy diagram and turn it into a straightforward priority list).  I wasn't able to find a graph library for C# that had been updated since 2011, which seemed a bit surprising, so I had to roll my own.  I started by implementing [[https://en.wikipedia.org/wiki/Topological_sorting#Algorithms][Kahn's Algorithm]], which worked perfectly until I introduced a circular reference (A loads before B loads before C loads before A).  At that point it throws up its hands and returns a half-assed result, which was obviously unsatisfactory.
+
+I then moved on to a [[https://en.wikipedia.org/wiki/Topological_sorting#Depth-first_search][Depth-First Search]], which handled the circular reference no problem.  However, after getting it to work, I realized that I would like to know if there /was/ a cycle in the graph, or at least more information than knowing that Kahn's blew up on it.  At that point I found [[https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm][Tarjan's Algorithm]], which would not only tell me exactly what nodes are looping if there is a circular reference, but as a /side effect/ would topologically sort the graph!  It's a pretty neat little algorithm.  
+
+Anyway, so equipped with these tools I got all the priority rules working together properly.  After [[/u/Xavion]] helped me find what should have been very obvious errors, I then set up a bunch of unit tests for the ModLoader.  I may have brought it up before, but [[https://i.imgur.com/QNpPL7m.png][there's nothing quite like a row of freshly green unit tests]].  
+
+So yeah, a lot of good work finished, but the Systems themselves still remain to be implemented.  I've got some more unit tests I'd like to write now that I'm in that mode, but then I'll get back to more game-relevant stuff.
+
+Oh, I also spent a good amount of time trying to figure out how to set up the git repository to work well with two different versions of Visual Studio (one 2017, one 2015).  My workplace has requested we not install 2017 at all, and 2015 doesn't support C#7.0, which leads to some interesting incompatibilities. I'm not willing to reduce my target version just for that, but at the same time I've had a lot of downtime and I'd like to take advantage of it.  
+
+If anyone has any insight as to how to [[https://bitbucket.org/ketura/xgef/commits/all][maintain two separate branches]], letting them merge into one another while keeping at least one branch-2-only commit on that branch and only on that branch, I'd much appreciate your wisdom.  At the moment I'm manually merging things and I just know there's got to be a more painless way to do it.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

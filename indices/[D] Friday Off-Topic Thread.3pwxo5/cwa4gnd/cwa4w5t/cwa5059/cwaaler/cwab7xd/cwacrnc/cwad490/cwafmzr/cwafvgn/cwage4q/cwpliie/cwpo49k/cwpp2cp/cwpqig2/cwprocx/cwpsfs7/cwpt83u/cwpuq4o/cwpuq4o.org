@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1446757740.0
+:DateShort: 2015-Nov-06
+:END:
+
+I don't think data is nearly that highly compressed in most cases. The changes might be trivial for something the size of a jpeg, but imagine a movie. Surely sending the diffs for a single frame, or a few frames, would be a lot cheaper then resending the entire movie?
+
+Let's say you add subtitles, as pixels, not text, because you're a jerk. How many data block do you really think that's going to touch, even with compression?
+
+I don't imagine that the compression algorithms are so efficient that you'd be touching /every/ block.
+
+Should be pretty easy to test though.

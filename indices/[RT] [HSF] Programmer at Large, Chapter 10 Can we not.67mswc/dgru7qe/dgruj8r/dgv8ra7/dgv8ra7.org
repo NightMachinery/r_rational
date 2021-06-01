@@ -1,0 +1,17 @@
+:PROPERTIES:
+:Author: noggin-scratcher
+:Score: 1
+:DateUnix: 1493390446.0
+:DateShort: 2017-Apr-28
+:END:
+
+#+begin_quote
+
+  - Overestimating the difficulty of fooling neural networks
+#+end_quote
+
+I seem to recall an article about how a neural network classifier can be seen as drawing a boundary through a many-dimensional space (as many dimensions as it has inputs).
+
+It went on to say that, contrary to hopes/expectations, those boundaries being so complex and convoluted meant that there would be a great deal of points that were very close to the boundary on at least one out of the many possible choices of axis, so a fairly minor movement along that axis could move you from one side of the boundary to the other.
+
+So fooling such a classifier into a mistake would be a matter of picking the right input to change slightly, so as to twitch its analysis across the boundary, which was suggested to be more or less /always/ possible, at least if the classifier is sufficiently complex to be useful.

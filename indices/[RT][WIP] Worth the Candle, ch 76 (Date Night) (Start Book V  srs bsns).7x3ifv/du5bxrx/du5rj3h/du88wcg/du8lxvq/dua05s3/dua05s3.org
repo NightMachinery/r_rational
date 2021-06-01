@@ -1,0 +1,68 @@
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 2
+:DateUnix: 1518681013.0
+:DateShort: 2018-Feb-15
+:END:
+
+Eep. Thank you for the summary! *thinking about how those instances can arise*
+
+(...cases where your primary candidate would be consolidated to a secondary candidate, but the secondary candidate wouldn't be consolidated to the primary candidate, so support for the primary candidate which doesn't succeed risks dooming the secondary candidate?)
+
+--------------
+
+A runoff question: I assume there are the same problems with this (and maybe more), but what is this approach (in the paragraph below) called (and/or equivalent to)?
+
+For three candidates, obtain the Smith set. If the Smith set is perfectly balanced, then a tie-breaker is needed. If the Smith set is not perfectly balanced, then represent the set as a perfectly-balanced layer plus extra. Remove the perfectly-balanced layer. As there are only three candidates, there is only one pattern/direction for a perfectly-balanced layer, not counting a mirror-image as different.
+
+#+begin_example
+  Example:
+  A>B>C 5
+  B>C>A 4
+  C>A>B 4
+  |
+  A>B 9/13
+  C>A 8/13
+  B>C 9/13
+
+  Remove 8 iterations of A>B, B>C, C>A (the underlying balanced cycle).
+
+  Remaining relationships:  A>B (1), B>C (1).  A is the sole occupant of the new Smith set.
+
+  [Second edit:]
+  Maybe more meaningful to list all relationships and remove both the cycle and the countercycle in one step.
+  A>B>C 5
+  B>C>A 4
+  C>A>B 4
+  |
+  A>B 9/13
+  A<B 4/13
+  A>C 5/13
+  A<C 8/13
+  B>C 9/13
+  B<C 4/13
+  Remove 4 {A<B, B<C, C<A}; remove 8 {A>B, B>C, C>A}.
+  A>B 1
+  A>C 1
+  B>C 1
+  (C drops out of the new Smith set, B drops out of the new Smith set, A sole occupant of new Smith set.)
+  [/Second edit]
+#+end_example
+
+(What is this called or logically equivalent to? I assume so, but is it subject to the same IRV problems described? When applied to more-candidate cases, would more-candidate cases have multiple 'balanced cycles' that could be taken out, and would taking out different balanced cycles give different outcomes..?)
+
+(...A>B, B>C, C>D, D>A... and then what to do about A</=/>C and B</=/>D... or if two cycles go through the same link in a single top cycle: A>B; B>C, C>A; B>D, D>A... How meaningfully to define 'balanced', and what to use for test cases to observe outcomes...)
+
+[Edit: One could declare removal to be carried out for only end-to-end loops without branches (which pass through all candidates), but to do so is to proclaim other patterns /un/balanced, in which case a conclusion should be drawable even when all in a Smith set. (Is a mirror-image (diamond-shaped) top cycle with two triangular cycles both going through a shared link in fact doable with voter rankings..?)]
+
+--------------
+
+(Inertia: Indeed. We can think of this in terms of 'If we had one chance in future to try to at-last do it /right/, with a new civilisation set up on Mars say, what would we do?'.)
+
+--------------
+
+Third edit: ...for four candidates, there are 12 possible rankings for a given voter... for X number of voters, wanting to calculate the number of (and ideally produce in a program) the possible rankings produced... can't use combinations directly, because not trying to pick 5 distinct rankings for 5 voters, trying to pick any 5 rankings for 5 voters, but to not have order matter. 1-3-1-1-1 must not be counted as a distinct state compared to 3-1-1-1-1. Needing something that spits out '78' (1/12 + 1/11 + ... + 1*1) for two voters, not 144 or 131, or something that spits out '3' instead of '4' for the number of outcomes when two coins are tossed at the same time... something that for three coins will give (zero heads, one head, two head, three heads) = 4. I knew this! I knew this..! I knew this, and I have no idea what it is!
+
+For twelve rankings, each has a number of voters... X/0/0/0/0/0/0/0/0/0/0/0, X-1/1/0/0/0/0/0/0/0/0/0/0, X-1/0/1/0/0/0/0/0/0/0/0/0 ... 0/0/0/0/0/0/0/0/0/0/0/X, but what is the formula..!? Ahhhhh!
+
+Fourth edit: Ah! Wikipedia 'Combinations' page, subset 'Number of combinations with repetition'!

@@ -5,6 +5,7 @@
 :Author: AutoModerator
 :Score: 15
 :DateUnix: 1510585598.0
+:DateShort: 2017-Nov-13
 :END:
 Welcome to the Monday thread on general rationality topics! Do you really want to talk about something non-fictional, related to the real world? Have you:
 
@@ -25,8 +26,9 @@ To address this, I've also tried sorting smaller stacks, and then combining the 
 I'm not particularly confident in the efficiency of either method, and would really like to hear any ideas you all have.
 :PROPERTIES:
 :Author: electrace
-:Score: 9
+:Score: 8
 :DateUnix: 1510615521.0
+:DateShort: 2017-Nov-14
 :END:
 
 *** Ooh, sorting algorithms!
@@ -74,6 +76,7 @@ Is two the best number? Almost all algorithms compare /two/ numbers at a time, b
 :Author: ulyssessword
 :Score: 10
 :DateUnix: 1510618061.0
+:DateShort: 2017-Nov-14
 :END:
 
 **** Radix sort is probably the least prone to human error of the methods given, and never requires more than 19 stacks. Which should be doable on any desk.
@@ -81,10 +84,12 @@ Is two the best number? Almost all algorithms compare /two/ numbers at a time, b
 :Author: Izeinwinter
 :Score: 2
 :DateUnix: 1510769095.0
+:DateShort: 2017-Nov-15
 :END:
 
 
-*** #+begin_quote
+*** u/phylogenik:
+#+begin_quote
   due to space constraints
 #+end_quote
 
@@ -101,8 +106,9 @@ You can also try the methods suggested in these threads:
 [[https://stackoverflow.com/questions/9741231/best-algorithm-to-sort-exams]]
 :PROPERTIES:
 :Author: phylogenik
-:Score: 6
+:Score: 7
 :DateUnix: 1510616565.0
+:DateShort: 2017-Nov-14
 :END:
 
 
@@ -111,11 +117,13 @@ You can also try the methods suggested in these threads:
 With that in mind, I prefer just having one diagonal "stack": starting with your pile of 500 papers, take whichever one you can take fastest and put it on the floor. Take another, put it next to the one on the floor. Repeatedly take another paper from the pile, and compare its integer to the papers on the floor. This will quickly let you find the right position it should be placed in. Place it such that it is directly on top of the paper with the immediately smaller integer, shifted slightly so both their integers are visible, and directly below the paper with the immediately larger integer, again shifted slightly so that both their integers are visible. The trick here is that since all (or most if you have less space) integers of the currently sorted papers are always visible and clearly ordered, you can read them all very quickly without moving them, saving you lots of time. If the integers are written in a small corner of the paper, which is usually the case for exam papers, this method doesn't even take up that much space.
 :PROPERTIES:
 :Author: ShiranaiWakaranai
-:Score: 6
+:Score: 7
 :DateUnix: 1510644284.0
+:DateShort: 2017-Nov-14
 :END:
 
-**** #+begin_quote
+**** u/ulyssessword:
+#+begin_quote
   I'm curious why people are suggesting sorting algorithms.
 #+end_quote
 
@@ -124,6 +132,7 @@ You're recommending insertion sort, and giving a specific efficient implementati
 :Author: ulyssessword
 :Score: 11
 :DateUnix: 1510678519.0
+:DateShort: 2017-Nov-14
 :END:
 
 
@@ -138,8 +147,9 @@ So with 500 pages, you're on the right track with putting them into groups of 10
 Now, there might be a space constraint issue, what with you needing to have a maximum of 9+9=18 stacks on the table, plus one in your hands, but luckily for the greater group of 9 stacks you can have them overlapped when your messing with the smaller group, and if you overlap horizontal-vertical-horizontal-vertical you can put 9 stacks in the place of two.
 :PROPERTIES:
 :Author: GaBeRockKing
-:Score: 5
+:Score: 4
 :DateUnix: 1510688493.0
+:DateShort: 2017-Nov-14
 :END:
 
 
@@ -156,6 +166,7 @@ Note that depending on what you are sorting, there are probably more efficient w
 :Author: ben_oni
 :Score: 3
 :DateUnix: 1510635021.0
+:DateShort: 2017-Nov-14
 :END:
 
 
@@ -168,8 +179,9 @@ I think people almost never factor in how disruptive the things they're munchkin
 Does anyone ever get this sense or is it seen as a cost of doing business when you munchkin in thought experiments.
 :PROPERTIES:
 :Author: Tsegen
-:Score: 9
+:Score: 6
 :DateUnix: 1510676075.0
+:DateShort: 2017-Nov-14
 :END:
 
 *** I think there's an implicit assumption of "this is the best case scenario", that the shipping company or whatever is the optimal method that you would strive to accomplish. I don't know how opening intercontinental shipping company works, and I also don't want to spend however many dozens or hundreds of hours it would take to learn all of the relevant business and political details before I make my reddit post.
@@ -179,9 +191,11 @@ We sort of abstract away the details and say "this is what I'd like to do" with 
 :Author: zarraha
 :Score: 3
 :DateUnix: 1510685948.0
+:DateShort: 2017-Nov-14
 :END:
 
-**** #+begin_quote
+**** u/Tsegen:
+#+begin_quote
   I think there's an implicit assumption of "this is the best case scenario", that the shipping company or whatever is the optimal method that you would strive to accomplish.
 #+end_quote
 
@@ -200,6 +214,7 @@ That plan doesn't actually work rationally within the world as we know it is my 
 :Author: Tsegen
 :Score: 1
 :DateUnix: 1510904524.0
+:DateShort: 2017-Nov-17
 :END:
 
 
@@ -224,9 +239,11 @@ I guess rather than exploring extreme power fantasies, I'm much more interested 
 :Author: tonytwostep
 :Score: 2
 :DateUnix: 1510773064.0
+:DateShort: 2017-Nov-15
 :END:
 
-**** #+begin_quote
+**** u/Tsegen:
+#+begin_quote
   Even step #1 has a crazy amount of issues attached, as if a foreigner can easily wander around a third world country, offering money to anyone willing to say a phrase
 #+end_quote
 
@@ -239,9 +256,11 @@ But that still doesn't excuse some of the more optimistic "rational" munchkins.
 :Author: Tsegen
 :Score: 2
 :DateUnix: 1510773593.0
+:DateShort: 2017-Nov-15
 :END:
 
-***** #+begin_quote
+***** u/tonytwostep:
+#+begin_quote
   ...that's definitely the easiest part :P
 #+end_quote
 
@@ -252,6 +271,7 @@ But fair point, maybe it would be possible (unlike some of the later points).
 :Author: tonytwostep
 :Score: 1
 :DateUnix: 1510775551.0
+:DateShort: 2017-Nov-15
 :END:
 
 ****** Given westerners routinely get away with literally poisoning people in africa with insane snake oil like MMS (despite the fact it causes /immediate/ nausea) I would figure that getting people to give your their breath seems by far the most plausible part of that plan.
@@ -259,6 +279,7 @@ But fair point, maybe it would be possible (unlike some of the later points).
 :Author: vakusdrake
 :Score: 2
 :DateUnix: 1510851162.0
+:DateShort: 2017-Nov-16
 :END:
 
 
@@ -269,6 +290,7 @@ Though of course if you can open portals, using that for shipping is among the l
 :Author: vakusdrake
 :Score: 1
 :DateUnix: 1510851360.0
+:DateShort: 2017-Nov-16
 :END:
 
 **** I mean...you are kinda making my point.
@@ -282,6 +304,7 @@ Is this what you want? Can you handle this? No one seems to factor all this stuf
 :Author: Tsegen
 :Score: 1
 :DateUnix: 1510904268.0
+:DateShort: 2017-Nov-17
 :END:
 
 ***** Yeah I mean I did say other aspects of the power are way more useful than using it for shipping, but the fact you're going to end up absurdly famous doesn't really eliminate any of the possibilities there or with other applications.
@@ -291,6 +314,7 @@ I think you're forgetting that people leave out the degree to which you will be 
 :Author: vakusdrake
 :Score: 1
 :DateUnix: 1510907161.0
+:DateShort: 2017-Nov-17
 :END:
 
 ****** You're thinking of "Famous" as "singer-songwriter" famous (i.e. no one really cares and you have no real power). And not "famous" as "guy who invented the atom bomb" or "rogue state" famous.
@@ -300,6 +324,7 @@ The idea that this is something to be brushed aside while you make money is just
 :Author: Tsegen
 :Score: 1
 :DateUnix: 1510907378.0
+:DateShort: 2017-Nov-17
 :END:
 
 ******* See I think you're overestimating the degree to which having that level of attention on you, necessarily impacts the general overview of whether you can still do the things you were initially planning with these plans.
@@ -309,6 +334,7 @@ For instance if anything should you want to use your portals to get things into 
 :Author: vakusdrake
 :Score: 1
 :DateUnix: 1510908605.0
+:DateShort: 2017-Nov-17
 :END:
 
 
@@ -321,6 +347,7 @@ Besides, it's just a game in the end- if you wish your players to play on hard m
 :Author: PurposefulZephyr
 :Score: 1
 :DateUnix: 1510874904.0
+:DateShort: 2017-Nov-17
 :END:
 
 
@@ -335,6 +362,7 @@ The reason I'm paid more is because my education makes me eligible for a positio
 :Author: trekie140
 :Score: 5
 :DateUnix: 1510626617.0
+:DateShort: 2017-Nov-14
 :END:
 
 *** People get upset about this topic because it's an /egalitarian/ social more. For example, my D&D group has in the past had jobs ranging from "part-time cashier" to "high level defense industry IT consultant". Flat out comparing salaries would have seemed /horribly/ douchey. Now, that's a social group, rather than a collection of employees, but there's a similar dynamic at play. When you tell the "blue collar laborers" that you make more than them in spite of being less qualified for the actual job you're actually doing, it's going to come off as offensively pretentious and unfair. What, they have to wipe your ass while you learn the job and you get paid more anyway because you're just magically /superior/? Even aside from potential discontent with the boss, you're inviting discontent with /you/, which adds an extra burden to the boss, because they're the one that has to deal with the hit to morale.
@@ -344,8 +372,9 @@ The American refusal to discuss pay may make salary and wage negotiations more f
 As for what to do about it... find a new job? The only real alternative is to /rock the shit/ out of your current position such that if/when you do get promoted up to your level of education, the response from the "lowly" blue collar people is "Yeah, alright, that makes sense." A high level of empathy for your coworkers would help, but you'd need to avoid coming off as pretentious like the plague.
 :PROPERTIES:
 :Author: Iconochasm
-:Score: 9
+:Score: 12
 :DateUnix: 1510628666.0
+:DateShort: 2017-Nov-14
 :END:
 
 **** Well, I don't treat my salary as a signifier of my status in the workplace and I don't see why anyone I'm friends with would hold it against me when I don't decide how much I get paid. I'm autistic and don't understand social norms, so I tell everyone I meet to be brutally honest with me so misunderstandings can be avoided and mistakes can be rectified. I never told my salary to anyone who didn't ask me first and they never called me out for being rude.
@@ -353,9 +382,11 @@ As for what to do about it... find a new job? The only real alternative is to /r
 :Author: trekie140
 :Score: 3
 :DateUnix: 1510665665.0
+:DateShort: 2017-Nov-14
 :END:
 
-***** #+begin_quote
+***** u/Iconochasm:
+#+begin_quote
   I'm autistic and don't understand social norms, so I tell everyone I meet to be brutally honest with me so misunderstandings can be avoided and mistakes can be rectified.
 #+end_quote
 
@@ -364,8 +395,9 @@ I'm /not/ autistic, but I am very blunt and literal minded, and in my experience
 If you're just answering honestly when people ask you, then my concerns in the previous post are greatly lessened. Much lower chance of a social backlash against you. In this scenario, you're biggest worry is probably that your boss will decide you're socially retarded in a career-limiting way. If your eventual position is more technical than leadership, this may not be much of a concern. In that case I'd advise telling your boss, regarding the request to avoid the topic, something like "Well, I'll try, and I can avoid bringing it up, but I'm not really comfortable lying to people."
 :PROPERTIES:
 :Author: Iconochasm
-:Score: 4
+:Score: 2
 :DateUnix: 1510674305.0
+:DateShort: 2017-Nov-14
 :END:
 
 ****** That was basically what I ended up telling him. Thanks.
@@ -373,10 +405,12 @@ If you're just answering honestly when people ask you, then my concerns in the p
 :Author: trekie140
 :Score: 1
 :DateUnix: 1510695689.0
+:DateShort: 2017-Nov-15
 :END:
 
 
-*** #+begin_quote
+*** u/deleted:
+#+begin_quote
   Today, my boss told me that he knew I had been telling coworkers my salary and politely, yet sternly, stated that I should change the subject whenever someone brings it up so he doesn't have to explain to them why I get paid more than them even though they've worked here longer.
 #+end_quote
 
@@ -388,8 +422,9 @@ Well, /yeah/. Your boss is telling you not to do things that put /him/ at a disa
 
 Shut the hell up, and then quietly unionize with the other blue-collar laborers. "Will eventually be trained for" is an excuse: your boss is paying you more right now, which means he probably makes enough profit off you /right now/ to be paying the other guys more. Fight with them.
 :PROPERTIES:
-:Score: 4
+:Score: 3
 :DateUnix: 1510631144.0
+:DateShort: 2017-Nov-14
 :END:
 
 **** I don't really have anything to add, but I feel like I ought to voice my support so that eaturbrainz doesn't possibly come off a lone kook in the wilderness.
@@ -397,6 +432,7 @@ Shut the hell up, and then quietly unionize with the other blue-collar laborers.
 :Author: callmesalticidae
 :Score: 4
 :DateUnix: 1510632886.0
+:DateShort: 2017-Nov-14
 :END:
 
 ***** But he is a lone kook in the wilderness.
@@ -404,14 +440,16 @@ Shut the hell up, and then quietly unionize with the other blue-collar laborers.
 :Author: ben_oni
 :Score: 3
 :DateUnix: 1510635984.0
+:DateShort: 2017-Nov-14
 :END:
 
 ****** That's my job ^_^!
 
 Of course, there are whole subreddits full of people who'll tell you to unionize your workplace, but /around here/, definitely lone kook in the wilderness.
 :PROPERTIES:
-:Score: 4
+:Score: 5
 :DateUnix: 1510661587.0
+:DateShort: 2017-Nov-14
 :END:
 
 ******* The problem is that this is [[/r/rational][r/rational]], where we often focus on finding optimal solutions, so expressing such sentiments really is weird.
@@ -419,11 +457,13 @@ Of course, there are whole subreddits full of people who'll tell you to unionize
 The problem is that unionization is a local optima from which it becomes very difficult to deviate. And in the long run, the outcomes of unionization are very sub-optimal for everyone.
 :PROPERTIES:
 :Author: ben_oni
-:Score: 4
+:Score: 3
 :DateUnix: 1510679038.0
+:DateShort: 2017-Nov-14
 :END:
 
-******** #+begin_quote
+******** u/deleted:
+#+begin_quote
   And in the long run, the outcomes of unionization are very sub-optimal for everyone.
 #+end_quote
 
@@ -431,6 +471,7 @@ How so?
 :PROPERTIES:
 :Score: 3
 :DateUnix: 1510681588.0
+:DateShort: 2017-Nov-14
 :END:
 
 ********* Are you familiar with the collapse of the american automobile industry? It's a fascinating story.
@@ -440,9 +481,11 @@ You might also look into the american public school system for further examples.
 :Author: ben_oni
 :Score: 2
 :DateUnix: 1510689370.0
+:DateShort: 2017-Nov-14
 :END:
 
-********** #+begin_quote
+********** u/deleted:
+#+begin_quote
   Are you familiar with the collapse of the american automobile industry? It's a fascinating story.
 #+end_quote
 
@@ -452,11 +495,13 @@ I of course agree that unions aren't a global optimum of worker-representation. 
 
 Today's class relations are an "inadequacy" in Eliezer's sense.
 :PROPERTIES:
-:Score: 5
+:Score: 4
 :DateUnix: 1510690464.0
+:DateShort: 2017-Nov-14
 :END:
 
-*********** #+begin_quote
+*********** u/ben_oni:
+#+begin_quote
   I thought that was caused by a refusal to install technological, engineering, and quality upgrades to compete with the Japanese imports, which then got "taken out" on the unions.
 #+end_quote
 
@@ -471,9 +516,11 @@ This is socialist language that doesn't relate to reality.
 :Author: ben_oni
 :Score: 3
 :DateUnix: 1510691450.0
+:DateShort: 2017-Nov-15
 :END:
 
-************ #+begin_quote
+************ u/deleted:
+#+begin_quote
   Another part is the inability of american manufacturers to modernize the factories without violating the agreements with the unions.
 #+end_quote
 
@@ -487,9 +534,11 @@ At least from our point of view, it certainly draws a map. If you want to say it
 :PROPERTIES:
 :Score: 2
 :DateUnix: 1510693546.0
+:DateShort: 2017-Nov-15
 :END:
 
-************* #+begin_quote
+************* u/ben_oni:
+#+begin_quote
 
   #+begin_quote
     This is socialist language that doesn't relate to reality.
@@ -513,9 +562,11 @@ Did I say earlier that there's no real distinction between the classes? I lied. 
 :Author: ben_oni
 :Score: 3
 :DateUnix: 1510701978.0
+:DateShort: 2017-Nov-15
 :END:
 
-************** #+begin_quote
+************** u/deleted:
+#+begin_quote
   The problem is with class and class distinctions. We speak of upper-middle-lower classes because it's easy and convenient for the sake of demographics. Without ignoring the fact that people who have more money live differently than those who have little money, we can do away with that language.
 #+end_quote
 
@@ -571,12 +622,14 @@ You don't apologize for the Second Law of Thermodynamics, so don't apologize for
 :PROPERTIES:
 :Score: 3
 :DateUnix: 1510704118.0
+:DateShort: 2017-Nov-15
 :END:
 
 *************** [removed]
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1510706157.0
+:DateShort: 2017-Nov-15
 :END:
 
 **************** You're getting one personal-level reply that engages, and one mod reply. Both will use direct quotations.
@@ -615,9 +668,11 @@ It's a mathematical observation about /certain kinds of stochastic systems/, wit
 :PROPERTIES:
 :Score: 2
 :DateUnix: 1510712351.0
+:DateShort: 2017-Nov-15
 :END:
 
-***************** #+begin_quote
+***************** u/ben_oni:
+#+begin_quote
   no less than the International Monetary Fund have called for economic inequality to be significantly reduced
 #+end_quote
 
@@ -650,6 +705,7 @@ So that article? It is appears to be selling you a false conclusion. The correct
 :Author: ben_oni
 :Score: 2
 :DateUnix: 1510718846.0
+:DateShort: 2017-Nov-15
 :END:
 
 
@@ -677,6 +733,7 @@ Other mods, opinion? We don't have an official scale of offenses or punishments,
 :PROPERTIES:
 :Score: 2
 :DateUnix: 1510712572.0
+:DateShort: 2017-Nov-15
 :END:
 
 ***************** I think that this is a continued pattern of behavior from this user, not to the level of flagrancy that I would necessarily consider ban-worthy, but which still leaves a bad taste in my mouth. It's things [[https://www.reddit.com/r/rational/comments/7a0suv/eliezer_yudkowsky_is_writing_a_new_book/dp7fj1d/?context=3][like this]]:
@@ -705,6 +762,7 @@ These are mean-spirited snark and would be prime examples if I wanted to point o
 :Author: alexanderwales
 :Score: 3
 :DateUnix: 1510730420.0
+:DateShort: 2017-Nov-15
 :END:
 
 ****************** I appreciate the slack, and thank you pointing out the pattern. I have little patience for (what I believe to be) stupidity. I'll try to keep the... mean-spirted-ness... in check. That said, I'll probably continue to direct snark toward LessWrong, as it is such a uniquely worthy target (and a group rather than an individual).
@@ -712,6 +770,7 @@ These are mean-spirited snark and would be prime examples if I wanted to point o
 :Author: ben_oni
 :Score: 1
 :DateUnix: 1510769955.0
+:DateShort: 2017-Nov-15
 :END:
 
 
@@ -723,9 +782,11 @@ These are mean-spirited snark and would be prime examples if I wanted to point o
 :Author: PeridexisErrant
 :Score: 2
 :DateUnix: 1510715603.0
+:DateShort: 2017-Nov-15
 :END:
 
-****************** #+begin_quote
+****************** u/deleted:
+#+begin_quote
   Threatening personal violence would usually be a perma-ban; that's a site-wide rule as well as [[/r/rational]]. [[/u/eaturbrainz]] doesn't mind so much though, so take a day off and please keep to polite discussion of the topic in future.
 #+end_quote
 
@@ -733,6 +794,7 @@ IMHO, there was no /real/ threat, no "I'm gonna dox you and come to your house".
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1510749962.0
+:DateShort: 2017-Nov-15
 :END:
 
 ******************* Yeah, over-reaction on my part - I've been out of patience lately.
@@ -742,9 +804,11 @@ It's not an excuse, but Australia just voted >60% for marriage equality, and now
 :Author: PeridexisErrant
 :Score: 1
 :DateUnix: 1510751993.0
+:DateShort: 2017-Nov-15
 :END:
 
-******************** #+begin_quote
+******************** u/deleted:
+#+begin_quote
   It's not an excuse, but Australia just voted >60% for marriage equality, and now all the right-wing Christians in parliament are trying to write exemptions to discrimination law into the legislation. And unironically talking about how we need to protect the rights and freedoms of minorities (ie, of old white hetro men, to discriminate). The parties have been great, but the context kinda sucks.
 #+end_quote
 
@@ -752,6 +816,7 @@ Welcome to the Anglosphere, unfortunately.
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1510753963.0
+:DateShort: 2017-Nov-15
 :END:
 
 ********************* On the upside, our ongoing constitutional crisis* is entirely peaceful and about the worst outcome imaginable is we go to an early election (or choke on the popcorn!). In short: our constitution makes any dual citizen ineligible to sit in parliament (unless you take "all reasonable steps" and can't renounce, so eg being born in Iran isn't a permanent bar). Abreviated timeline:
@@ -779,12 +844,14 @@ On the other hand, peaceful transfer of power is guaranteed and we don't have th
 :Author: PeridexisErrant
 :Score: 1
 :DateUnix: 1510755401.0
+:DateShort: 2017-Nov-15
 :END:
 
 ********************** Aren't those mostly dual citizens with... New Zealand?
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1510757525.0
+:DateShort: 2017-Nov-15
 :END:
 
 *********************** And Britain, and Canada, and India - all allies, and none of which had separate citizenship to Australia at the time when our constitution was written.
@@ -794,12 +861,14 @@ But time change! If you take the precedent from 1990ish and apply a black-letter
 :Author: PeridexisErrant
 :Score: 1
 :DateUnix: 1510757853.0
+:DateShort: 2017-Nov-15
 :END:
 
 ************************ Yeah, definitely sounds like a good time to make some popcorn.
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1510758698.0
+:DateShort: 2017-Nov-15
 :END:
 
 
@@ -810,6 +879,7 @@ Being an originalist myself, I have short shrift for anyone who wants to reinter
 :Author: ben_oni
 :Score: 1
 :DateUnix: 1510771306.0
+:DateShort: 2017-Nov-15
 :END:
 
 ************************* The operation of the clause /has/ changed substantially:
@@ -827,6 +897,7 @@ And there's no excuse for ignorance - [[https://1.bp.blogspot.com/-KGVm4hRKIZY/V
 :Author: PeridexisErrant
 :Score: 1
 :DateUnix: 1510784713.0
+:DateShort: 2017-Nov-16
 :END:
 
 ************************** Well, we all hate politicians, so it's nice to see them get what they've got coming. It's not a very rational hatred, of course, since there doesn't seem to be a reasonable alternative (at least for now). Here in the States we're trying this experiment where we put a non-politician in charge -- it's not going so well.
@@ -834,10 +905,12 @@ And there's no excuse for ignorance - [[https://1.bp.blogspot.com/-KGVm4hRKIZY/V
 :Author: ben_oni
 :Score: 1
 :DateUnix: 1510787333.0
+:DateShort: 2017-Nov-16
 :END:
 
 
-******************** #+begin_quote
+******************** u/ben_oni:
+#+begin_quote
   talking about how we need to protect the rights and freedoms of minorities
 #+end_quote
 
@@ -846,6 +919,7 @@ I don't know the particulars, but if this were in the States, I would guess this
 :Author: ben_oni
 :Score: 1
 :DateUnix: 1510770454.0
+:DateShort: 2017-Nov-15
 :END:
 
 
@@ -854,12 +928,14 @@ I don't know the particulars, but if this were in the States, I would guess this
 :Author: ben_oni
 :Score: 1
 :DateUnix: 1510714319.0
+:DateShort: 2017-Nov-15
 :END:
 
 ****************** Well, uh, thanks.
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1510749980.0
+:DateShort: 2017-Nov-15
 :END:
 
 
@@ -868,6 +944,7 @@ I don't know the particulars, but if this were in the States, I would guess this
 :Author: trekie140
 :Score: 2
 :DateUnix: 1510666116.0
+:DateShort: 2017-Nov-14
 :END:
 
 ***** You seriously need to be meeting with the other workers /where the boss doesn't know about it/. Otherwise you are probably risking your job.
@@ -876,6 +953,7 @@ But wow, a temp agency? All the more reason to unionize: those things are fuckin
 :PROPERTIES:
 :Score: 5
 :DateUnix: 1510666602.0
+:DateShort: 2017-Nov-14
 :END:
 
 
@@ -886,14 +964,16 @@ By the way, your boss may have been stern, but he wasn't polite. There's not muc
 :Author: muns4colleg
 :Score: 1
 :DateUnix: 1510804668.0
+:DateShort: 2017-Nov-16
 :END:
 
 
 ** I recently read this interesting article on ancient methods of multiplication of large numbers: [[https://mathwithicecream.tumblr.com/post/167402359658/ancient-egyptian-multiplication][(link)]]. The idea of doubling one side and halving the others, then adding back the remainder at the end when you accidentally generated a remainder with the halving, is pretty clever. This, along with [[https://www.scientificamerican.com/article/parents-corner-polish-han/][Polish Hand Math]] is the kind of math thing that's pretty interesting to learn. Taking principles of mathematics and using them to generate a tool that operates on those principles and so can be used for calculation, is fun. In a more modern format, we see mechanical analog computers like the [[https://en.wikipedia.org/wiki/Slide_rule#Basic_concepts][Slide Ruler]]. Cool stuff!
 :PROPERTIES:
 :Author: blazinghand
-:Score: 4
+:Score: 5
 :DateUnix: 1510605025.0
+:DateShort: 2017-Nov-14
 :END:
 
 
@@ -932,6 +1012,7 @@ I don't think the gov't optimal at allocating and distributing materials in acco
 :Author: phylogenik
 :Score: 3
 :DateUnix: 1510596945.0
+:DateShort: 2017-Nov-13
 :END:
 
 *** *Veg*n Cat Food*
@@ -947,8 +1028,9 @@ Anyway, I've hung out with a lot of small animal vets and it sounds like the con
 [disclaimer: I don't have a cat and if I did, I'd probably feed it some AAFCO approved Cow-based commercial diet, as I do my roughly cat-sized dog, in the interests of time, cost, and convenience]
 :PROPERTIES:
 :Author: phylogenik
-:Score: 4
+:Score: 5
 :DateUnix: 1510597819.0
+:DateShort: 2017-Nov-13
 :END:
 
 **** As a regular reader of [[/r/vegan]], the cat food threads there are insane. People act as though it's completely different for a cat to eat meat than for a human to eat meat because ~OBLIGATE CARNIVORES~ like you were saying. I think vegans are so terrified of people thinking they are cat-murderers that they don't think rationally about this. I remember posting in [[/r/vegan]] saying "meat is not some magic substance, it is made of atoms like anything else. There's no reason we can't make vegan cat food that meets all their nutrient requirements even if that requires making lab meat".
@@ -964,9 +1046,11 @@ The way I look at it personally is a pet eating meat based food would be "respon
 :Author: MagicWeasel
 :Score: 2
 :DateUnix: 1510612714.0
+:DateShort: 2017-Nov-14
 :END:
 
-***** #+begin_quote
+***** u/callmesalticidae:
+#+begin_quote
   I remember posting in [[/r/vegan]] saying "meat is not some magic substance, it is made of atoms like anything else. There's no reason we can't make vegan cat food that meets all their nutrient requirements even if that requires making lab meat".
 #+end_quote
 
@@ -983,9 +1067,11 @@ I love arguments that sound totally off-the-wall and yet...make total sense when
 :Author: callmesalticidae
 :Score: 3
 :DateUnix: 1510699227.0
+:DateShort: 2017-Nov-15
 :END:
 
-****** #+begin_quote
+****** u/MagicWeasel:
+#+begin_quote
   I love arguments that sound totally off-the-wall and yet...make total sense when you stop to think about them.
 #+end_quote
 
@@ -994,6 +1080,7 @@ The facebook group "sounds like something brian tomasik would be against but ok"
 :Author: MagicWeasel
 :Score: 2
 :DateUnix: 1510705058.0
+:DateShort: 2017-Nov-15
 :END:
 
 ******* I love Brian Tomasik!
@@ -1001,10 +1088,12 @@ The facebook group "sounds like something brian tomasik would be against but ok"
 :Author: callmesalticidae
 :Score: 3
 :DateUnix: 1510707336.0
+:DateShort: 2017-Nov-15
 :END:
 
 
-***** #+begin_quote
+***** u/phylogenik:
+#+begin_quote
   we probably don't know every single vitamin, amino acid, or fatty acid a cat would need to live a long and comfortable life
 #+end_quote
 
@@ -1017,6 +1106,7 @@ In terms of direct impact when I back-of-the-envelope my (~10 lb) dog's diet I'l
 :Author: phylogenik
 :Score: 1
 :DateUnix: 1510615561.0
+:DateShort: 2017-Nov-14
 :END:
 
 ****** I totally agree with you on the cat food studies. I guess there's only so much money going towards cat nutrition and the people interested in cat nutrition just aren't interested in studying vegan cat food.
@@ -1036,9 +1126,11 @@ Our dog is a greyhound so she's also a good way of reducing the stigma associate
 :Author: MagicWeasel
 :Score: 2
 :DateUnix: 1510618885.0
+:DateShort: 2017-Nov-14
 :END:
 
-******* #+begin_quote
+******* u/phylogenik:
+#+begin_quote
   This is just so patently false I don't even know what to think. Even if you assume that they invariably end up with urine crystals, a year of living happily before being put down due to urine crystals vs being put down right away... it boggles the mind.
 #+end_quote
 
@@ -1049,10 +1141,12 @@ Our dog's an Italian Greyhound, [[https://i.imgur.com/lVpWyZT.jpg][actually]]. D
 :Author: phylogenik
 :Score: 1
 :DateUnix: 1510619893.0
+:DateShort: 2017-Nov-14
 :END:
 
 
-*** #+begin_quote
+*** u/ulyssessword:
+#+begin_quote
   Temporarily Fireproofing Houses
 #+end_quote
 
@@ -1063,6 +1157,7 @@ Wildfires are roughly that temperature, and burn for more than one hour, and hou
 :Author: ulyssessword
 :Score: 2
 :DateUnix: 1510612571.0
+:DateShort: 2017-Nov-14
 :END:
 
 **** Good point! A tarp might stop stray embers from getting through to the underlying house, but if ambient temperatures are hot enough the house may spontaneously without direct exposure to flames or burning materials. The tarp would probably provide only negligible insulation in that case.
@@ -1072,10 +1167,12 @@ Is there an intermediate case where it can make a difference, though? The wildfi
 :Author: phylogenik
 :Score: 2
 :DateUnix: 1510614387.0
+:DateShort: 2017-Nov-14
 :END:
 
 
-*** #+begin_quote
+*** u/ArgentStonecutter:
+#+begin_quote
   Temporarily Fireproofing Houses
 #+end_quote
 
@@ -1088,6 +1185,7 @@ The most common and occasionally effective /temporary/ fireproofing is just soak
 :Author: ArgentStonecutter
 :Score: 1
 :DateUnix: 1510598071.0
+:DateShort: 2017-Nov-13
 :END:
 
 **** Is there reason to suspect fireproof materials would degrade if stored in a cool, dry place?
@@ -1101,9 +1199,11 @@ Soaking does sound effective but also especially temporary, since I imagine hous
 :Author: phylogenik
 :Score: 1
 :DateUnix: 1510598587.0
+:DateShort: 2017-Nov-13
 :END:
 
-***** #+begin_quote
+***** u/ArgentStonecutter:
+#+begin_quote
   Is there reason to suspect fireproof materials would degrade if stored in a cool, dry place?
 #+end_quote
 
@@ -1112,10 +1212,12 @@ Bulky materials tend to get stored in garage or attic. And the first link you ga
 :Author: ArgentStonecutter
 :Score: 1
 :DateUnix: 1510600345.0
+:DateShort: 2017-Nov-13
 :END:
 
 
-*** #+begin_quote
+*** u/Norseman2:
+#+begin_quote
   *Temporarily Fireproofing Houses*
 #+end_quote
 
@@ -1126,9 +1228,11 @@ If you want your home to be unscathed in a wildfire, you need to build it out of
 :Author: Norseman2
 :Score: 1
 :DateUnix: 1510615166.0
+:DateShort: 2017-Nov-14
 :END:
 
-**** #+begin_quote
+**** u/phylogenik:
+#+begin_quote
   When you hear of a wildfire on the way, you should still get out as soon as you can, don't get stuck in a traffic jam. Just because your house won't burn down doesn't mean you'll definitely be able to tolerate the heat, or that you'll still be able to breathe the air when a wildfire passes through your area.
 #+end_quote
 
@@ -1143,18 +1247,21 @@ Are there any intermediate cases where this is the case? How close to the oven s
 :Author: phylogenik
 :Score: 1
 :DateUnix: 1510616063.0
+:DateShort: 2017-Nov-14
 :END:
 
 
-*** #+begin_quote
+*** u/ben_oni:
+#+begin_quote
   *Sexual Consent*
 #+end_quote
 
 Are you trying to figure out if someone wants to have sex with you? Based on what you've written, the answer is "no", they most certainly don't. You're obviously a total nerd who will never get laid. #tongueincheek
 :PROPERTIES:
 :Author: ben_oni
-:Score: -3
+:Score: -4
 :DateUnix: 1510644057.0
+:DateShort: 2017-Nov-14
 :END:
 
 
@@ -1169,6 +1276,7 @@ Wish me luck - even with a fully-oxygenated brain, I'm going to need it. :)
 :Author: DataPacRat
 :Score: 3
 :DateUnix: 1510681049.0
+:DateShort: 2017-Nov-14
 :END:
 
 
@@ -1177,6 +1285,7 @@ Wish me luck - even with a fully-oxygenated brain, I'm going to need it. :)
 :Author: appropriate-username
 :Score: 1
 :DateUnix: 1510594050.0
+:DateShort: 2017-Nov-13
 :END:
 
 *** You could work your way through the [[https://en.wikipedia.org/wiki/List_of_cognitive_biases][list of cognitive biases]].
@@ -1186,6 +1295,7 @@ As you're reading through the list, it would probably be a good idea to consider
 :Author: Norseman2
 :Score: 2
 :DateUnix: 1510613899.0
+:DateShort: 2017-Nov-14
 :END:
 
 **** Thanks :)
@@ -1193,6 +1303,7 @@ As you're reading through the list, it would probably be a good idea to consider
 :Author: appropriate-username
 :Score: 2
 :DateUnix: 1514439685.0
+:DateShort: 2017-Dec-28
 :END:
 
 
@@ -1200,6 +1311,7 @@ As you're reading through the list, it would probably be a good idea to consider
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1510695427.0
+:DateShort: 2017-Nov-15
 :END:
 
 *** I've tried watching the [[https://www.youtube.com/watch?v=nM3rTU927io&list=PL8626D1DED5B1C405][free lectures]] at Yale. The professor is good at using examples and making the students play games to better understand the concepts. Trying watching at a faster speed if it starts slogging along. Hope this helps!
@@ -1207,10 +1319,12 @@ As you're reading through the list, it would probably be a good idea to consider
 :Author: RationalityRules
 :Score: 1
 :DateUnix: 1510711661.0
+:DateShort: 2017-Nov-15
 :END:
 
 **** Thanks!
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1510932379.0
+:DateShort: 2017-Nov-17
 :END:

@@ -3,8 +3,9 @@
 * [[http://www.sidhantgodiwala.com/blog/2014/12/11/building-a-fanfiction-recommender-ii/][Fanfiction Recommender using Collaborative Filtering]]
 :PROPERTIES:
 :Author: grinnbearit
-:Score: 16
+:Score: 15
 :DateUnix: 1418322771.0
+:DateShort: 2014-Dec-11
 :END:
 
 ** I've often wondered why ff.net doesn't do this themselves. They already make the list of favorite stories public for every user, so it doesn't seem like too much work to code something up that would do a better job at recommendation than what's available on the site now (which is basically crap at finding good stuff).
@@ -12,22 +13,25 @@
 I'll be interested to see what the author recommender turns up.
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 4
+:Score: 3
 :DateUnix: 1418326781.0
+:DateShort: 2014-Dec-11
 :END:
 
 *** This strikes me as computationally expensive.
 :PROPERTIES:
 :Author: Empiricist_or_not
-:Score: 6
+:Score: 3
 :DateUnix: 1418327725.0
+:DateShort: 2014-Dec-11
 :END:
 
 **** Netflix and Goodreads both do it. It should be far simpler for ff.net because it's just a simple "favorite" binary instead of seven choices like Netflix, or six like Goodreads (though Goodreads has a multilevel system that's a bit more complex). I closely followed a lot of the discussion that surrounded the Netflix Prize, and it really isn't /that/ expensive depending on which methods you use (and there are a ton of ways to get around any expensive parts).
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 6
+:Score: 4
 :DateUnix: 1418329476.0
+:DateShort: 2014-Dec-11
 :END:
 
 ***** For that matter, I think I should mention that Goodreads does allow fanfiction to be listed. The only conditions are:
@@ -43,6 +47,7 @@ I'm actually a Librarian over there, so if anyone has favourite fanfics they'd l
 :Author: FaceDeer
 :Score: 3
 :DateUnix: 1418356040.0
+:DateShort: 2014-Dec-12
 :END:
 
 ****** One of my favorite authors over there is [[https://www.fanfiction.net/u/3092366/ebfiddler][ebfiddler]] who does some really good Firefly fiction. She has 12 stories which together constitute a "book length" work, but they are 12 different URLs. The first half-dozen are about 12-20,000 words, then they start getting longer, going from 50k to 80k.
@@ -54,6 +59,7 @@ How would / could these be listed on GoodReads?
 :Author: eaglejarl
 :Score: 1
 :DateUnix: 1418360358.0
+:DateShort: 2014-Dec-12
 :END:
 
 ******* Personally, I'd say that the stories are "eh, close enough" to book length and just put them all in, and then link them together into a series.
@@ -63,6 +69,7 @@ I happen to have a system already set up to do this sort of thing quickly, so he
 :Author: FaceDeer
 :Score: 2
 :DateUnix: 1418364209.0
+:DateShort: 2014-Dec-12
 :END:
 
 
@@ -71,6 +78,7 @@ I happen to have a system already set up to do this sort of thing quickly, so he
 :Author: somnicule
 :Score: 1
 :DateUnix: 1418358456.0
+:DateShort: 2014-Dec-12
 :END:
 
 
@@ -79,6 +87,7 @@ I happen to have a system already set up to do this sort of thing quickly, so he
 :Author: eaglejarl
 :Score: 3
 :DateUnix: 1418342038.0
+:DateShort: 2014-Dec-12
 :END:
 
 **** Right?! Man, that site sucks. We're stuck in some dumb coordination game where everyone has to use ffn because everyone uses ffn.
@@ -87,6 +96,7 @@ WE MUST ALL ACT AS ONE, MEMBERS OF /R/RATIONAL!
 :PROPERTIES:
 :Score: 2
 :DateUnix: 1418342261.0
+:DateShort: 2014-Dec-12
 :END:
 
 ***** Ok, here is a feature I would like FFN to add: the ability to link to a specific review.
@@ -108,15 +118,18 @@ Personally, I find this creepifying.
 :Author: eaglejarl
 :Score: 3
 :DateUnix: 1418363631.0
+:DateShort: 2014-Dec-12
 :END:
 
 ****** Yeah...he's going to kill you. Well, if you disappear from the sub for a few weeks we'll have a lead, at least.
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1418397153.0
+:DateShort: 2014-Dec-12
 :END:
 
-******* #+begin_quote
+******* u/eaglejarl:
+#+begin_quote
   Yeah...he's going to kill you.
 #+end_quote
 
@@ -127,6 +140,7 @@ I have a very low prior on him killing me. I still find it creepy.
 :Author: eaglejarl
 :Score: 2
 :DateUnix: 1418399875.0
+:DateShort: 2014-Dec-12
 :END:
 
 
@@ -135,10 +149,12 @@ I have a very low prior on him killing me. I still find it creepy.
 :Author: Rhamni
 :Score: 2
 :DateUnix: 1418350654.0
+:DateShort: 2014-Dec-12
 :END:
 
 
-***** #+begin_quote
+***** u/deleted:
+#+begin_quote
   Right?! Man, that site sucks. We're stuck in some dumb coordination game where everyone has to use ffn because everyone uses ffn.
 #+end_quote
 
@@ -148,6 +164,7 @@ There is a site with /much/ better features: its own editor /and/ Google Docs in
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1418558821.0
+:DateShort: 2014-Dec-14
 :END:
 
 
@@ -156,6 +173,7 @@ There is a site with /much/ better features: its own editor /and/ Google Docs in
 :Author: RMcD94
 :Score: 1
 :DateUnix: 1418341816.0
+:DateShort: 2014-Dec-12
 :END:
 
 *** There's no way to tell which people are subscribed to a subreddit. You can scrape for people who have set their flair, or scrape for people who have ever made a comment or post, but there's no way that I know of to see all the lurkers, who far outnumber the commenters. This sub, for example, has nearly 2,000 subscribers but the highest number of comments we've had on a single post is in the low +double+ triple digits (and most of that is the same handful of people talking with each other).
@@ -165,6 +183,7 @@ See [[http://www.reddit.com/r/TheoryOfReddit/comments/1uk9uc/tribes_of_reddit_an
 :Author: alexanderwales
 :Score: 1
 :DateUnix: 1418407357.0
+:DateShort: 2014-Dec-12
 :END:
 
 **** I know what you mean. I was a lurker on this subreddit for a while mostly for the interesting links to other sites and I couldn't care less about the comments.
@@ -174,4 +193,5 @@ But I kept seeing comments that I wanted to say something in response to, and I 
 :Author: xamueljones
 :Score: 1
 :DateUnix: 1418409068.0
+:DateShort: 2014-Dec-12
 :END:

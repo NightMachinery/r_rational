@@ -1,0 +1,173 @@
+#+TITLE: Rational Reads v1.2
+
+* Rational Reads v1.2
+:PROPERTIES:
+:Score: 34
+:DateUnix: 1427583899.0
+:DateShort: 2015-Mar-29
+:END:
+[deleted]
+
+
+** The feature I would /most/ like to have is the ability to see the top-rated stories by either (a) any specific user or (b) all users that gave 5 stars to a particular story.
+
+The purpose is content discovery - right now, we can look through an overall list by rating or by comment-count, and those are the only ways we have to find content we haven't read yet. With either of these features, I can start with a story I really like and produce a list of other stories that are at least worth looking into.
+
+(a) is easier to implement, but (b) preserves more privacy. If you think you'd like feature (a), I'd be happy to pull-request it, I'm a rails dev too. Just don't want to waste the effort if it doesn't fit your plan for the site :-)
+:PROPERTIES:
+:Author: nevinera
+:Score: 9
+:DateUnix: 1427590668.0
+:DateShort: 2015-Mar-29
+:END:
+
+*** [deleted]
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1427594639.0
+:DateShort: 2015-Mar-29
+:END:
+
+**** Oh, the recommendations engine is definitely better than nothing! The problem with that type of approach is that it collapses all of preference-space into a single dimension, which means that exploring subspaces of your own preferences (well-written naruto fanfiction for example) is not greatly aided. There are several such stories in the first few pages of my recommendations (and possibly that's all there are at the moment), but a system like this one allows one to continue exploring the preference graph in arbitrary directions, instead of getting a single list necessarily weighted heavily towards the types of fiction I've already found /good/ examples of :-)
+
+I'll get you a pr tonight, hopefully.
+:PROPERTIES:
+:Author: nevinera
+:Score: 3
+:DateUnix: 1427631084.0
+:DateShort: 2015-Mar-29
+:END:
+
+
+**** Sorry, I didn't realize until I started coding that the app is largely a backbone application. If you didn't mind having a server-generated user profile page I'll still get that built, but it wouldn't match the rest of the application's approach.
+
+I've had too many bad experiences trying to untangle backbone apps - no two people seem to use it the same way :-\
+:PROPERTIES:
+:Author: nevinera
+:Score: 1
+:DateUnix: 1427642607.0
+:DateShort: 2015-Mar-29
+:END:
+
+***** [deleted]
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1427659326.0
+:DateShort: 2015-Mar-30
+:END:
+
+****** 2 seconds? O.O
+
+What are you hosting on? Even if you're exaggerating, it sounds like you might not have stuff set up optimally - the rails stack with no caching on a 10$ digital ocean box ought to be able to respond in something like 150-300 ms.
+
+I'll get you something tonight though on =users#ratings=.
+
+edit: oh, heroku. That makes a bit more sense. I don't see any webserver gems installed - are you using webrick in production? [[https://devcenter.heroku.com/articles/ruby-default-web-server]] recommends =puma= (I usually use =thin=, but =puma= didn't exist when I made that decision).
+
+edit2: I'd guess that rails is serving your static assets too then. That's especially a problem with webrick, since even pure-io like serving static files is a blocking request in webrick. Assuming I'm guessing right about your stack, that is.
+:PROPERTIES:
+:Author: nevinera
+:Score: 3
+:DateUnix: 1427666163.0
+:DateShort: 2015-Mar-30
+:END:
+
+
+** This is awesome, thanks for making it.
+:PROPERTIES:
+:Author: faul_sname
+:Score: 2
+:DateUnix: 1427617505.0
+:DateShort: 2015-Mar-29
+:END:
+
+
+** Priors for bayesian ratings need tweaking in my opinion. Currently five out of top ten stories have less than four ratings. Perhaps something along the lines of (1, 2.5, 3.(3), 2.5, 1) for parameters will work better?
+:PROPERTIES:
+:Author: AugSphere
+:Score: 2
+:DateUnix: 1427618548.0
+:DateShort: 2015-Mar-29
+:END:
+
+*** [deleted]
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1427658258.0
+:DateShort: 2015-Mar-30
+:END:
+
+**** In this kind of situation I'm always tempted to supplement absolute ratings with quantiles. Even if 98% of works have ratings between 4.5 and 5, the statement "x% of works have ratings lower than this work" still conveys useful information. The difference between 95% and 80% is a lot more vivid than the one between 4.8 and 4.5 stars.
+
+Every time a see a rating system in which all the action is in the upper end of the scale, I just itch to improve it somehow.
+:PROPERTIES:
+:Author: AugSphere
+:Score: 3
+:DateUnix: 1427665409.0
+:DateShort: 2015-Mar-30
+:END:
+
+
+** Requested features:
+
+*Rating analysis tool*\\
+A feature that lets you see the average rating you give works, other users average ratings and the *meta cough* average average rating. Maybe even a bayesian estimate of your average rating based on the average average rating.\\
+Purpose: This feature would allow users to see if they actually use the whole scale from 1 to 5 when you rate, or if you give just about everything a 5, which seams to be the case right now.
+
+*Consistency of design*\\
+Have a horizontal line between each of the works in the "Highest Rating" list. This is the case with all the other lists.\\
+Purpose: It's a nice touch
+
+*Completion*\\
+Instead of being a set of tags, this attribute should be chosen with a drop down menu when added.\\
+Purpose: The states Complete, Dead, Updates Slowly and Updates Quickly are all exclusive to one another. Plus this feature would be easier to use as the current system is sort of boged down due to all the other tags.
+
+*Editable works*\\
+What happens if a work dies? Or if you have a better description of it? Or if some one disagrees with the tags the work has? Well, I recon some sort of voting system should be in order for the first two. Regarding the tags it makes sense to let anyone add their own tags and then pick out the top N tags a la last.fm.\\
+Purpose: Cause it'll get messy otherwise, given time.
+
+*Advanced search options*\\
+By author. By date (started and last updated). By length. By rating (average and bayesian). All this should really be integrated with the Browse option. Look at Anime News Network for a good example.\\
+Purpose: Well maybe the data base isn't that big right now but in three years time we'll have twice the amount of works written just by people in this sub. Advanced search is the browsers delight.
+
+*User added tags*\\
+Pros: Because you undoubtedly missed something important about rat!fic. Cons: There would be tons of different ways to describe the same thing. Text normalizing could help here.
+
+*Adjectives to go with the ratings* Like "Virtually perfect", "Mediocre", "Decent" and "Lousy".\\
+Purpose: Anything to make people stop rating everything a 5 or 4. Srs, this way I'll get very bad info about what's good. Right now it's probably better to just look at the number of ratings than the average or the bayesian estimate.
+
+*Maybe a "Home" button?*\\
+On the top bar, with the same function as the logo.\\
+Purpose: Seams like a rather common redundancy, but maybe not really necessary.
+:PROPERTIES:
+:Author: Tehino
+:Score: 2
+:DateUnix: 1427758232.0
+:DateShort: 2015-Mar-31
+:END:
+
+*** [deleted]
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1427783685.0
+:DateShort: 2015-Mar-31
+:END:
+
+**** Perhaps a feature that lets users signal that a Mod should edit a work? Similar to flagging something for inappropriate content, but for outdated or incorrect content instead.
+:PROPERTIES:
+:Author: Tehino
+:Score: 1
+:DateUnix: 1427784892.0
+:DateShort: 2015-Mar-31
+:END:
+
+
+** One of the features I would like is something similar to reddit's hot comments/topics thing. When searching for fanfics on fanfiction.net, I often find myself sorting by updates, because sorting by reviews means I'll be seeing the same fics for the first fifteen pages.
+
+Basically, what I'm asking is a sorting method that's a combination of update (and/or publish) date, number of reviews, and rating.
+:PROPERTIES:
+:Author: Cariyaga
+:Score: 1
+:DateUnix: 1427610224.0
+:DateShort: 2015-Mar-29
+:END:

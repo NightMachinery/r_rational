@@ -1,0 +1,13 @@
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 2
+:DateUnix: 1455903608.0
+:DateShort: 2016-Feb-19
+:END:
+
+I assume that downloading a copy of every story on FanFiction.net would be as simple as the following process:\\
+1. Check each "Chapter 1" link, of the form =https://www.fanfiction.net/s/########= (starting at story 1)\\
+2. For each working "Chapter 1" link, check every corresponding chapter link, of the form =https://www.fanfiction.net/s/########/####= (starting at chapter 2), until you get a "Chapter Not Found" page\\
+3. Continue until you reach the chosen endpoint
+
+If you look at [[https://www.fanfiction.net/j/0/0/0/][the "Just In" section]], the most-recently-published stories have ID numbers approaching twelve million. That averages out to around twenty stories per second over the course of seven days--but many of those stories would be deleted or have only a few chapters, and FanFiction.net would presumably lift whatever automatic IP-blocking procedures it has if it knew that it was about to be deleted.

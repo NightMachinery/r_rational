@@ -1,0 +1,19 @@
+:PROPERTIES:
+:Author: boomfarmer
+:Score: 3
+:DateUnix: 1432679682.0
+:DateShort: 2015-May-27
+:END:
+
+If you open dev tools, search for the equivalent of =-webkit-user-select: none;= and remove it, you'll be able to select text and copy it again. It's just some silly CSS.
+
+The reason that disabling JavaScript allows you to copy is because that inline style is added via Javascript that checks for a cookie. It's in combo.js:
+
+#+begin_example
+  a.css("-webkit-touch-callout","none");
+  a.css("-webkit-user-select","none");
+  a.css("-khtml-user-select","none");
+  a.css("-moz-user-select","none");
+  a.css("-ms-user-select","none");
+  a.css("user-select","none");
+#+end_example

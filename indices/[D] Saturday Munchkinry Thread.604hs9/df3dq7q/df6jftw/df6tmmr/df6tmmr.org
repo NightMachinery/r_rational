@@ -1,0 +1,44 @@
+:PROPERTIES:
+:Author: Noumero
+:Score: 2
+:DateUnix: 1490044290.0
+:DateShort: 2017-Mar-21
+:END:
+
+Well, given the real implications of this power...
+
+Suppose I have a button that adds to the world 500 utilons with 50% probability, and -500 utilons with 50% probability. I look at your device, see /let's say/ '1', then press the button. If it adds utilons, I send '1', then press it again. If it doesn't, I send '0', killing the timeline. Repeat ad nauseam. The only timeline that survives is the one where the button always added utility.
+
+Now that I wrote it, it's pretty clearly a generalized version of your example with answering an Evil Overlord's questions.
+
+Looking at it from another angle... Going full Utility Monster?
+
+Let's suppose our world has value X. I can increase it by an amount Y, if only I had a Novikov-Consistent time-travel device. I use your device, get '1', try doing my thing.
+
+If I fail, I send '0' and terminate the timeline, thereby killing everyone in it and doing an X amount of evil.
+
+If I win, I send '1'; the value of our world is now X+Y. To right my wrongs, I precommit to always 'send back' the bits I 'receive', then use your device to copy this timeline [div(X/Y)+1] times, which 'outweights' me killing an X value timeline.
+
+What a good person I am.
+
+*Edit:* Wait, actually, no, a correction. If X>0, you should just start copying the timeline indefinitely, not bothering with the utility-increasing, and if X<0, you should continue 'adding Y', i.e. treating the device as a time machine and increasing the utility, until X>0, then start copying.
+
+--------------
+
+^{Note: this conjecture does not reflect my actual views on morality. In the event of finding yourself in a similar situation, do not follow the strategy described above before discussing it with at least three qualified philosophers.}
+
+--------------
+
+It could be used as a tool of blackmail, too. 'I will erase this timeline unless you do X'. Would only work on the ones who don't get No-Blackmail Equilibrium, of course.
+
+#+begin_quote
+  Do you think my power could be refashioned as a future diary?
+#+end_quote
+
+No, I don't see a way to propely transfer your device onto my rules.
+
+Let's assume you activate it. It simulates a future where it feeds you '1', up to a point where you attempt to 'send back' a bit: if you choose '1', it feeds you '1' in reality; if you choose '0', it terminates the simulation and tries again with '0'. If you-from-the-simulation sends '0' back, it shows '0'; if your simulation sends '1', it... Does what? Neither feeding you '0' nor feeding you '1' creates an appearance of a stable time loop, so it glitches. It can't kill you, after all, and my Diaries don't simulate Diaries (i.e., no recursive simulations), which doesn't allow for branching timelines.
+
+On using it, you could precommit to send '1', '0', or 'the opposite of what I received' making it either feed you the corresponding bit, or glitch, which could be used as a... remote control, or some sort of messenger. Similar to LiteralHeadCannon's example with printing the bit.
+
+And you obviously could precommit to send '1' if X, '0' if Y, and send 'the opposite of what you received' if Z, and getting messages from the future.

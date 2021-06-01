@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1448315013.0
+:DateShort: 2015-Nov-24
+:END:
+
+What do you need broken down there? I read through [[http://online.liebertpub.com/doi/pdf/10.1089/rej.2014.1636][the study]], but it seems fairly straightforward. They had trained and untrained worms split into ten groups (two of which were redundant) and both vitrification and slow freezing seemed to have little effect on the results of the test (i.e. the worms that were trained responded the same whether they were exposed to cryoprotectant or not, and whether slow-freezing or vitrification was used).
+
+This is the big, concerning takeaway when it comes to "long-term" memory:
+
+#+begin_quote
+  Whether this result reflects the resilience of structural synaptic change or a more fragile chemical state change to the insult of cryopreservation remains unclear. More detailed chemotaxis assays of learning and memory in cryopreserved /C. elegans/ are needed to determine whether all memory mechanisms are unaffected. Further research using methods for learning at different stages of /C. elegans/ development to test memory retention after cryopreservation is needed.
+#+end_quote
+
+If you go look at the Remy and Hobert study that this one largely depends on ("An Interneuronal Chemoreceptor Required for Olfactory Imprinting in /C. elegans/"), you get a lot more about the cellular and molecular basis for memory in /C. elegans/. Basically, they found that olfactory imprinting depends on a single interneuron pair that is postsynaptic to olfactory neurons. Here's the money shot of that paper:
+
+#+begin_quote
+  The SRA-11 protein could be a generic subunit of a receptor complex that is activated by an AWC-released ligand upon imprinting by distinct odorants, leaving permanent marks in the AIY interneuron; upon a later encounter of the same odorant by the AWC neuron class, these marks may facilitate signaling through the AIY interneuron. In analogy to glomerular targeting mediated by vertebrate olfactory receptors (13), it is also conceivable that SRA-11 may have a role in determining fine aspects of AWC-AIY connectivity that may be modulated upon olfactory imprinting. Elucidating the nature of the ligand of the SRA-11 protein will provide further insights into the process of olfactory imprinting.
+#+end_quote
+
+Basically, there's a protein used in the process of olfactory imprinting (the thing that gives the worm long-term memory) but they don't know exactly what it's doing to produce that effect, only that it's necessary for the effect to happen, and you can knockout some genes in order to prevent that protein and therefore prevent imprinting.
+
+*tl;dr:* The worm clearly "remembers" but the mechanism for that memory is not entirely clear. It might be because the nematode's synapses changed and those changes survived the freeze, but it might also be something chemical instead.

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: FeepingCreature
+:Score: 2
+:DateUnix: 1386115673.0
+:DateShort: 2013-Dec-04
+:END:
+
+I made a site for this! [[http://feephome.no-ip.org/%7Efeep/m.rss_proxy.cgi][link]] source [[https://gist.github.com/7780150][rss_proxy.cgi]] (user interface) [[https://gist.github.com/7780157][rss_proxy.d]] (actual updater). (If there's exploits, please tell me instead of abusing them!)
+
+About the AbortException thing, for some reason trying to load from ff.net used to run into an error at the end, so I just went for "grab all the data we can and hope it's enough". :shrug:

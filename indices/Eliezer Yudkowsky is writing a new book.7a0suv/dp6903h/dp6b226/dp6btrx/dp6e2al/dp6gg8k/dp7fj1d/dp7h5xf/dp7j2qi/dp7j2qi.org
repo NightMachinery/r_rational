@@ -1,0 +1,42 @@
+:PROPERTIES:
+:Author: ben_oni
+:Score: 1
+:DateUnix: 1509571308.0
+:DateShort: 2017-Nov-02
+:END:
+
+#+begin_quote
+  the better AI gets, the faster we can develop chips, which will counteract the fact the low hanging fruit has gotten picked.
+#+end_quote
+
+This is the epitome of magical thinking.
+
+#+begin_quote
+  We are /exponentially/ closer
+#+end_quote
+
+"Exponentially" is not a unit of measurement. How much closer? Which technical hurdles have been crossed? Saying "computers are faster today" doesn't solve any of the problems. All the models saying it can't be done /already/ account for faster computers in the future. If you have some articles about the low-fidelity, low-speed brain simulations, I would be curious to see them.
+
+#+begin_quote
+  my calculation assumed moore's law would keep on its pace, but I deliberately choose a slower chip than necessary
+#+end_quote
+
+These two things do not offset one another. The base of the exponent and the scalar in front of it are not equivalent parts of the calculation. Given an equation: ke^{rt,} the k and r terms have completely different impacts on the behavior of the function.
+
+#+begin_quote
+  GPUs are what need to be looked at
+#+end_quote
+
+Do you actually know how GPUs work? Yes, they perform computations in parallel. Do you know how the bus works? How the different computational cores access VRAM in order to operate on input data? GPUs work best when computations can be linearized. Very much like performing graphical operations. And very unlike when emulating non-linear systems like a brain.
+
+#+begin_quote
+  just using a shit-ton of CPUs
+#+end_quote
+
+Nice. How many? How much heat will this kick off? How much cooling will be needed? How much space will it take up? How much latency can we expect between different cores? Again, this is more magical thinking.
+
+#+begin_quote
+  "Nowhere close" doesn't mean much when compared to exponential growth
+#+end_quote
+
+"Nowhere close" means the technical hurdles haven't been crossed. It means that the theoretical limits, as we currently understand them, prohibit this. It doesn't mean I've forgotten about Moore's law. It means that Moore's "law" isn't magic.

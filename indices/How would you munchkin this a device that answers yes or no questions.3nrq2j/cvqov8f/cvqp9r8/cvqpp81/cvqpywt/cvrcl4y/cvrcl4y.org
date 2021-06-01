@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: TheAtomicOption
+:Score: 1
+:DateUnix: 1444231796.0
+:DateShort: 2015-Oct-07
+:END:
+
+There are some ways to speed this up. First you could adopt an Uberman sleeping pattern to ask the full 12 questions per day without going crazy (assuming it can't be automated by printer+scanner)
+
+Second you could arrange the alphabet in order of first letter frequency [[https://en.wikipedia.org/wiki/Letter_frequency]["TASHWIOBM..."]] as a first optimization, and then develop a system that predicts the most frequent next character (including space). ~50% of words start with the first 6 of those letters so you could also ask if the letter is in the first six of the alphabet arranged like that etc. This should be able to shorten the time it takes to get full answers significantly.

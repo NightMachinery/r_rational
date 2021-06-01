@@ -1,0 +1,42 @@
+:PROPERTIES:
+:Author: ILL_BE_WATCHING_YOU
+:Score: 3
+:DateUnix: 1475978914.0
+:DateShort: 2016-Oct-09
+:END:
+
+#+begin_quote
+  it's a random number generator
+#+end_quote
+
+I respectfully disagree. Although it may appear that way from the perspective of the user at first, in actuality I tried to write it so that you'd be able to make "quantum" decisions.
+
+Let's have an example. Suppose you're trapped in a villain's lair, and he wants to ask you 50 consecutive yes or no questions. If you answer any of them wrong, he'll kill you, but if you get them all right, he'll let you go free.
+
+Now let's say that you come up with a plan. You decide that, if you get a 1 from the future, you'll guess yes, and if you get a 0 from the future, you'll guess no. If you get a question right, you'll send back the same bit, but if you get the question wrong, then you might as well try to send back the opposite bit and force a paradox, since you have nothing to lose in such a situation anyway.
+
+If this power was just a random number generator, then your chances of winning would be 1 in 2^{50} . So let's see how this plays out.
+
+*Your perspective:*
+
+He asks his first question. The latest number you've received from your power is a 1. You decide to "refresh" the bit by sending a 1 back in time and waiting for a new bit...
+
+*In reality:*
+
+/The timeline splits. In Timeline A, the new bit given is a 1. In Timeline B, it is a 0. In Timeline A, you guess yes. In Timeline B, you guess no./
+
+/As it turns out, yes was the correct answer. In Timeline B, the villain declares that you have answered incorrectly, and that he will kill you. In a desperate gamble, you attempt to send back a 1. Timeline B collapses, leaving only Timeline A./
+
+/In Timeline A, the villain declares that you answered his first question correctly, and that it is time for you to move on to question #2. You send back a 1./
+
+*Your perspective:*
+
+You get a 1, so you answer yes. You get it right, so you send back a 1 and proceed to the next question.
+
+*/REPEAT UNTIL YOU ARE FREE./*
+
+As you can see, by using this ability in this manner, you are able to survive an arbitrary number of questions with ease, despite the increasingly diminishing probability of doing so. Of course, in reality, 50 versions of you got a question wrong, and 50 timelines collapsed as a result, but from the perspectives of both the villain asking the questions and the version of you that succeeds, you were apparently able to pull the correct answers from out of nowhere with 100% accuracy.
+
+If this power /was/ equivalent to a random number generator, this would not be the case. You would simply have a 1 in 2^{50} chance of surviving.
+
+Here's a [[https://en.wikipedia.org/wiki/Quantum_suicide_and_immortality#Thought_experiment][relevant thought experiment.]]

@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: krakonfour
+:Score: 2
+:DateUnix: 1406919023.0
+:DateShort: 2014-Aug-01
+:END:
+
+You are right, the point is not to be faster, but to be able to do more with each cycle. If I have so much more calculating power than you, I can swap two cubes at once, or, if I don't have that much, I can spend more time outwitting your automated random swap program, analyze probabilities and predict your next move with greater accuracy.
+
+But, as you can see, being simply faster is not that much of an advanatge. You are either overwhelmingly faster (two cube swaps for each of yours) or wasting your calculation capacity. The best probability analysis can't beat human strategy, and no AI can help a dumb pilot win the battle.
+
+Coordinates tend to stay the same if nothing changes. A spaceship entering a sector will always modify the coordinates of not only that sector, but also of the sectors surrounding it. Each swap generates a realtime zone... but the realtime zone doesn't simply appear and dissapear. It expands at lightspeed from the moment of 'appearance', expands to maximum size, then is only maintained if the observer is still in the original position.
+
+While travelling, you leave behind a series of bubbles that expand, then burst and dissapear. They mess up the local coordinates, but make you easy to track.
+
+If the target ally is sitting still in lunar orbit, you'll have to wait about 0.33 seconds, or 33,333 cycles, for the coordinates to stabilize. In deep space, you'll have to wait the default 1-day-cycle. However, the smallest error in the coordinate swap can leave you 50-87m distant from your destination in the first case, but 10000-17000km distant from your target in the second case.
+
+If you send an unmanned ship so far away, it will enter un-rendered space and become untouchable by hacks, swaps or whatever. A manned ship swapping will have to have at least two observers, one of which stays behind to stabilize the realtime zone, for an inter-galactic swap to be possible. Furthermore, the fleet waiting for the messenger to arrive must be perfectly still, which is no easy feat. After the first ship swaps, the coordinates at destination will be messed up by the arrival of a new observer in a separate sector. They must swap all at once, which risks a reset and nothing happening.

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: jkwrites
+:Score: 3
+:DateUnix: 1463410467.0
+:DateShort: 2016-May-16
+:END:
+
+The way I do it is to =wget= whole pages from fictionpress, run them through [[http://www.html-tidy.org/][=tidy=]] to generate valid XHTML, and then use =xmllint --xpath= to extract the contents. Then comes a couple dozen =sed= commands to change HTML tags to LaTeX code, and to make subtle style improvements - scene breaks as fleurons, smart quotes, hyphenation for MoL-specific names [=s/Kirithishli/Kiri\\-thi\\-shli/g;=]...
+
+After that's done, we've got each chapter as a file in LaTeX format in a subridectory. Now I include all of them into main source file, which describes the title, author and attribution, as well as page size, fonts and so on. Then I generate final PDF using =pdflatex=.
+
+After another round of =sed= which makes e-book specific changes, I convert back into HTML using =latexml=, and then into EPUB with Calibre's command-line =ebook-convert=, which then gets converted into MOBI using Amazon's official [[http://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000765211][=kindlegen=]].
+
+I don't want to share the code publicly right now, because, as you can see, it's a complicated process, and the code is quite ugly.

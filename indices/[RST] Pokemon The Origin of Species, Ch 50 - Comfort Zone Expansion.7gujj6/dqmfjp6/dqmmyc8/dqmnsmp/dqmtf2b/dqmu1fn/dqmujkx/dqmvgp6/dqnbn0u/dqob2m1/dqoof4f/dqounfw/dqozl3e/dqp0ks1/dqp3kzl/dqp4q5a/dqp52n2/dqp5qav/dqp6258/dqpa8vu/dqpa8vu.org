@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: daydev
+:Score: 2
+:DateUnix: 1512312415.0
+:DateShort: 2017-Dec-03
+:END:
+
+This right here looks like what [[/u/DaystarEld]] intended, to make it one step removed from the trivial application of the Bayes rule. Although inside here there's an implicit assumption that P(R1 | T1) & P(R1 | T2) is constant across all Pokemon which seems questionable, as discussed elsewhere some Pokemon may be more or less scary. I think we would need P(R1) & P(R2) for Tyranitar to adjust for that? And since we don't, this calculation is the best we can do with the available data.
+
+UPD: I'm also not too sure how conducive it is for the educational purpose to complicate the introduction of the Bayes Rule with extra steps. But on the other hand it would be quite unbelievable if Red failed to just plug numbers into the Bayes formula.

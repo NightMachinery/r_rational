@@ -5,6 +5,7 @@
 :Author: alexanderwales
 :Score: 5
 :DateUnix: 1438192842.0
+:DateShort: 2015-Jul-29
 :END:
 Is there any way to make this work? I've been trying to make sense of it, and just can't come up with a model that's really functional in all but the most cursory sense.
 
@@ -34,6 +35,7 @@ I can't quite explain it properly, but it's real and it works. Somehow.
 :Author: Meneth32
 :Score: 8
 :DateUnix: 1438204799.0
+:DateShort: 2015-Jul-30
 :END:
 
 *** I think you mean a real time-strategy game.
@@ -41,6 +43,7 @@ I can't quite explain it properly, but it's real and it works. Somehow.
 :Author: DCarrier
 :Score: 9
 :DateUnix: 1438216153.0
+:DateShort: 2015-Jul-30
 :END:
 
 
@@ -49,6 +52,7 @@ I can't quite explain it properly, but it's real and it works. Somehow.
 :Author: alexanderwales
 :Score: 3
 :DateUnix: 1438204886.0
+:DateShort: 2015-Jul-30
 :END:
 
 
@@ -57,6 +61,7 @@ I can't quite explain it properly, but it's real and it works. Somehow.
 :Author: Junkle
 :Score: 3
 :DateUnix: 1438280196.0
+:DateShort: 2015-Jul-30
 :END:
 
 
@@ -67,21 +72,24 @@ For example, you'd think that the ability to permanently duplicate units via a p
 :Author: Chronophilia
 :Score: 2
 :DateUnix: 1438274383.0
+:DateShort: 2015-Jul-30
 :END:
 
 
 ** For clarity, this is the method of time travel that the first Back to the Future movie /sort of/ used. Marty McFly went back in time from 1985 to 1955, messed things up, and had only a limited windows in which to set things right. He had a picture with him where his older brother disappeared (as the ripple passed ~1963 when Dave was born), then his older sister disappeared (as the ripple passed ~1966 when Linda was born), then Marty himself begins to disappear (born in ~1968). This makes */no goddamned sense/* when you think about it, because the photograph itself was taken somewhere around 1985. Are we supposed to believe that the ripple hit 1963, disappeared Dave, then erased him from all photographs (while keeping the photograph intact)? Why does Marty still remember his brother then? Why don't the positions of people in the photograph change? It's a huge cheat that you don't really notice the first time you see the movie, but is there a way of fixing the general model so you don't have to cheat?
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 5
+:Score: 4
 :DateUnix: 1438195360.0
+:DateShort: 2015-Jul-29
 :END:
 
 *** I was going to say "that sounds like Back to the Future" and came back to post that... and well, yes, there's all kinds of problems, like the probability of Marty (or any of his siblings for that matter) being born in the third timeline is basically zero due to the butterfly effect on sperm cells...
 :PROPERTIES:
 :Author: ArgentStonecutter
-:Score: 3
+:Score: 5
 :DateUnix: 1438196649.0
+:DateShort: 2015-Jul-29
 :END:
 
 
@@ -122,12 +130,14 @@ Oh, and the other problem is the grandfather paradox inherent to a one timeline 
 :Author: ZeroNihilist
 :Score: 3
 :DateUnix: 1438241586.0
+:DateShort: 2015-Jul-30
 :END:
 
 **** If a time traveller were to fall in the middle of the ocean and promptly drowned moments before the creator of the KT barrier arrived, would they cause vast ripple effects? Or would the much more significant event "wash out" their influence?
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1438357069.0
+:DateShort: 2015-Jul-31
 :END:
 
 ***** What would matter is the magnitude of the change effected (basically the difference between the future given X and the future given not X).
@@ -137,10 +147,12 @@ In this case, would them drowning like this cause a significant divergence from 
 :Author: ZeroNihilist
 :Score: 1
 :DateUnix: 1438360607.0
+:DateShort: 2015-Jul-31
 :END:
 
 
-** #+begin_example
+** u/Chronophilia:
+#+begin_example
   $ git branch master
   $ git merge almanac-1955
   CONFLICT (content): Merge conflict in people/martymcfly37125.eml
@@ -156,8 +168,9 @@ I think that's the best way of understanding Marty Mcfly's situation. The timeli
 As for what the rules of timeline-merging are or why it happens at all, I couldn't possibly comment.
 :PROPERTIES:
 :Author: Chronophilia
-:Score: 4
+:Score: 3
 :DateUnix: 1438273110.0
+:DateShort: 2015-Jul-30
 :END:
 
 *** Well, merge conflict sounds about right. God's a newbie git user.
@@ -165,6 +178,7 @@ As for what the rules of timeline-merging are or why it happens at all, I couldn
 :Author: Transfuturist
 :Score: 3
 :DateUnix: 1438316044.0
+:DateShort: 2015-Jul-31
 :END:
 
 
@@ -189,6 +203,7 @@ Now build a rational story out of it! Since I provided the rules, you won't be a
 :Author: Gurkenglas
 :Score: 2
 :DateUnix: 1438198638.0
+:DateShort: 2015-Jul-30
 :END:
 
 
@@ -197,6 +212,7 @@ Now build a rational story out of it! Since I provided the rules, you won't be a
 :Author: jalapeno_dude
 :Score: 2
 :DateUnix: 1438209774.0
+:DateShort: 2015-Jul-30
 :END:
 
 *** Yup, I've checked those out (and that's my go-to when I have a thought about time travel). The analysis of BTTF unfortunately doesn't cover the actual mechanical issues involved with the ripple effect; it uses the same sort of vague wording that the movie itself uses. This isn't a bad way to analyze it, but ... it's not quite what I want.
@@ -204,6 +220,7 @@ Now build a rational story out of it! Since I provided the rules, you won't be a
 :Author: alexanderwales
 :Score: 1
 :DateUnix: 1438214836.0
+:DateShort: 2015-Jul-30
 :END:
 
 
@@ -218,4 +235,5 @@ Applied to a time travel scenario, assuming the existence of a metatime, a chang
 :Author: eniteris
 :Score: 1
 :DateUnix: 1438197036.0
+:DateShort: 2015-Jul-29
 :END:

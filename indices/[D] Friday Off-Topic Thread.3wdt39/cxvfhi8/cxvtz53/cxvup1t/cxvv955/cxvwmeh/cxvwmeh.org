@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1449876346.0
+:DateShort: 2015-Dec-12
+:END:
+
+Well, the problem is that it's /not/ constant directional force, it's constant /power/. But you're right that the result isn't terribly sensible (though still interesting enough that I'll have to keep it in mind).
+
+I guess I'll do the thing I didn't want to do and add in another variable in order to convert power into force, the only question is what the right one is. If the resulting force is equal to watts divided by 1m/s then every watt provides 1 Newton of force. I'll have to run some numbers.
+
+Edit: If it's watts divided by 0.6km/s, then the thrust equivalent of 60W is 0.1N. That means that you'd need 100 grams of hava in order to levitate an apple.

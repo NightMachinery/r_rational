@@ -1,0 +1,42 @@
+:PROPERTIES:
+:Author: xamueljones
+:Score: 2
+:DateUnix: 1429846562.0
+:DateShort: 2015-Apr-24
+:END:
+
+This is the one about formal definitions of the functions used in BlooP.
+
+All BlooP functions are composed of the following functions:
+
+- Constant Function -- always returns a constant, or the same answer for all possible inputs. Takes no input. A() = C.
+
+- Successor Function -- returns the successor of the input. Takes only one input. B(n) = n + 1
+
+- Projection function -- runs a function on every one of its inputs sequentially. Takes n inputs and returns n results of preforming the function on the i-th argument. C(1, 2, 3, 4) = B(1), B(2), B(3), B(4) = 2, 3, 4, 5.
+
+Then we have operations to combine functions:
+
+- adding any two natural numbers
+
+- multiplying any two natural numbers
+
+- determining if two numbers are equal
+
+- determining the larger (smaller) of two numbers
+
+The above list makes more sense when you realize that (most) functions have a numerical output.
+
+Finally, you can write functions to control the structure of your programs to combine other functions directly.
+
+- Composition Function -- Two functions can be combined where f(g(x)) = h(x). This is extended for a function which takes k inputs and there are k functions which takes m inputs.
+
+Ex. h(x1, x2, ... , xm) = f(g1(x1, x2, ... , xm), g2(x1, x2, ... , xm), ... , gk(x1, x2, ... , xm))
+
+- Primitive recursion -- Given two functions where one has n inputs and the other one has n+2 inputs, a new function can be made with n+1 inputs.
+
+Ex. h(0, x1, x2, ... , xn) = f(x1, x2, ... , xn) and h(S(y), x1, x2, ... , xn) = g(y, h(y, x1, x2, ... , xn), x1, x2, ... , xn) where S can be any function with one input.
+
+These two functions are what allow you to make looping programs.
+
+Hopefully the above explanation helps in explain how the concept of BlooP or primitive recursive functions work.

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: suyjuris
+:Score: 1
+:DateUnix: 1453822248.0
+:DateShort: 2016-Jan-26
+:END:
+
+You could choose old words for new concepts (e.g. an acyclic undirected graph is called forest), the meaning can be inferred from context. Of course, that only works as long as the amount of concepts you need is smaller than the amount of builtin concepts (~words) of the language, however there is always the possibility of using multiple words for one concept. As there are infinite possible combinations of words is it quite unlikely that you would run out. The amount of bits needed to encode the concepts would grow, but that is only natural - you are trying to encode more information after all. (The fact that the representation doesn't grow if you use old words is only an artifact of using an imperfect compression method.)

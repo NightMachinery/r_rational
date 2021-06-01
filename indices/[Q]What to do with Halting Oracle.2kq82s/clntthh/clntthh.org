@@ -1,0 +1,17 @@
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1414636067.0
+:DateShort: 2014-Oct-30
+:END:
+
+So there are two general formalizations of a halting oracle. One takes a Turing machine and determines if it halts with no input. The other takes a Turing machine and an input, and determines if that Turing machine halts on that input. They are both equally powerful, and you can convert between them trivially. When it matters, I'm going to talk as if this is the latter -- Turing machine plus input.
+
+This isn't actually very useful unless your problem can be solved or at least cut down reasonably well with one bit of information. You're not going to use this as a way to route deliveries (traveling salesman problem) because you've got thousands of routes to choose from.
+
+You also need to be able to express your problem as a Turing machine, and a relatively short one at that. No curing cancer with this power. (Well, maybe, but it would take a lot of time to come up with the right Turing machine, and then it would take even longer to walk it with the requisite inputs.)
+
+What you'll end up doing is creating a Turing machine that creates a solution to your problem, then halts if its input is a prefix of that solution. Encode the solution in binary and now you can solve any problem in O(log output size) runs. Of course, if you can do some intermediate processing, you might be able to cut down on the search space even more. For instance, if you're trying to get a protein out of it, you might determine that there are only three amino acids that can follow the portion of the protein you've decoded so far, which means you can spend one or two attempts to determine which one follows rather than four to five.
+
+In general, this would encourage (to some degree) optimizing algorithms for complex problems to minimize the length of the generated Turing machine rather than algorithmic efficiency.
+
+If you want a mouth-watering variant, have the maze vomit viscera on you at the end, where the viscera represents the final state of the Turing machine and contents of the tape.

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 21
+:DateUnix: 1519880104.0
+:DateShort: 2018-Mar-01
+:END:
+
+Traditionally, the '.bak' naming process is used because that makes the file unreadable to programs, systems, or code that might be trying to access it. This is especially important when you have somewhat unpolished scripts that go into a folder and, for example, upload all the PDFs to a server somewhere, or attempt to read in a text file. It's really helpful to prevent user error as well, because a .bak file can't be naively opened by double-clicking.

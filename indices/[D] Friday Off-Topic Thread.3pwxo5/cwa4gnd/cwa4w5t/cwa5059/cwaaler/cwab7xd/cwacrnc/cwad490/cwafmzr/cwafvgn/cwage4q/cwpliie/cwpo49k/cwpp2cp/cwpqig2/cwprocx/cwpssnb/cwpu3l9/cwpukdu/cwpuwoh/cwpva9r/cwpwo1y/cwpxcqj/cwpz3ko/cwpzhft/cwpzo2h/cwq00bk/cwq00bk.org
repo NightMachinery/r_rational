@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1446765476.0
+:DateShort: 2015-Nov-06
+:END:
+
+Which should be a very thin wrapper that, except for the very first time, just does some quick checks to make sure any cached stream or compressed formats are still valid and drops straight through to regular canproto objects.

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 2
+:DateUnix: 1485773168.0
+:DateShort: 2017-Jan-30
+:END:
+
+That's a good point. With that alteration it functions as a hill-climbing algorithm.
+
+Even then not every desirable outcome will be reachable. Ones where destroying A or B individually is harmful but A and B is beneficial would never be asked (though I don't know whether they would even exist), likewise if the order mattered (e.g. D(B) > D(A) >> D(A+B)) it's possible we could end up with a suboptimal outcome.
+
+However, your amendment guarantees that the outcome is always better than what it was before any changes were made, which is crucial.

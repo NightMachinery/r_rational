@@ -1,0 +1,34 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1446770679.0
+:DateShort: 2015-Nov-06
+:END:
+
+#+begin_quote
+  [excellent problem statement and proposed solution]
+#+end_quote
+
+There we go, that's what I was looking for.
+
+#+begin_quote
+  I could also have led with this being a better IPC system for creating things like google docs and the like, but I think this is the stronger case.
+#+end_quote
+
+You could also have led with /this/. :P
+
+Okay, this is an interesting idea. I'm not sure it's /practical/, but it's interesting. It would make a lot of things easier, as you point out. On the other hand, there's some pretty major problems with implementing it, the most obvious of which is that all programs need to understand your field labels in the same way. You'll need something like a W3C standards doc to define what is stored under each name, and you'll end up with some browser-wars problems -- Photoshop will write data in the 'alpha_channel' attribute, Othershop in 'AlphaChannel', and Yetothershop in 'transparency', at which point they can't talk to one another.
+
+Once you get your attribute names standardized, you need to standardize your field data. If the 'body_text' attribute of the file is full of ASCII but my editor is looking for EBCDIC then they can't share data even though they are both looking in the same part of the same file. (For a more realistic example, try 'big endian' and 'little endian'.)
+
+I'm dubious about the practicality of getting around these issues -- a while ago, people invented this shiny new thing called XML and everyone was trumpeting it as the future: "yes! Self-describing data! Now everything can talk to everything else!" That didn't really work out.
+
+Let's assume we can get around that, somehow, at least for certain kinds of files. If it proved useful then maybe it would spread and other apps would come onboard the new system, delegating their file access to your new system. For data types where it made sense (e.g. text) you could maintain the data as diffs so that you only need to transmit diffs, as you've been asking for. That can't (usefully) be a standard feature for all attributes, though.
+
+No existing program will be able to take advantage of your new file parser, so you'll need a way to deal with that...I'm a bit stuck. I guess you can write a proxy that accesses your advanced file in the background while presenting as the ancestral file type, but then you give up the multiple simultaneous edits and meta-data based computation that you're trying to capture. Still, it would let you get the system in place and a few applications could be created to take advantage of the new version. Maybe eventually it would become mainstream, but the interface layer would likely impose a speed penalty that would make it unpopular.
+
+Like I said, I don't know that it's practical, but it would be shiny if it were.
+
+--------------
+
+EDIT: Realized that I'd been writing about it as though it were a new file /type/, when actually it's a separate parser library / OS API. Fixed.

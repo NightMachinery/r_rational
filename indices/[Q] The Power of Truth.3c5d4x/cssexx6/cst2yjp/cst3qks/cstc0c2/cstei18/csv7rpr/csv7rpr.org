@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: gabbalis
+:Score: 1
+:DateUnix: 1436292010.0
+:DateShort: 2015-Jul-07
+:END:
+
+"Colorless green dreams sleep furiously" in first order logic could be something like:
+
+∀x: (isColorless(x) ∧ isGreen(x) ∧ isDream(x) ) → ( isSleeping(x) ∧ isEnraged(x) )
+
+(Maybe the original statement means to say they sometimes sleep furiously or that only some colorless green dreams and not all of them behave this way, or maybe furiously was meant to mean intensely. These other interpretations have different truth values but do in fact still have them. If anything the problem is that the statement is ambiguous. Regardless lets assume that my logic reflects the intent of the statement for now.)
+
+This logical statement is true because nothing can be both colorless and green, meaning the left-hand side of the implication is always false, and (false → anything) is true.

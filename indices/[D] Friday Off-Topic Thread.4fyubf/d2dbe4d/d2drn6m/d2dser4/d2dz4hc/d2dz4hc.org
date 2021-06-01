@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 2
+:DateUnix: 1461386072.0
+:DateShort: 2016-Apr-23
+:END:
+
+That depends on how unique you want to make the items. [[http://te4.org/][Tales of Maj'Eyal]] (It's not quite a diablo-like game, but close enough for this discussion) has a good spread of items including unique ones, but I don't think that you could procedurally generate interesting unique items.
+
+The item tiers are:
+
+1. Basic items (white): No magic powers. These only show up rarely, and are mostly complete junk.
+2. Ego items (green, blue, or purple): These have one or two sets of powers. An example of a lesser power would be a sword that deals +5 fire damage. An example of a greater power would be a sword that deals 10 fire damage in a radius-1 explosion, increases your speed by 5%, and gives you 12% fire resistance. Green items have one or two lesser egos, blue ones have one greater ego (and maybe a lesser one) and purple ones have two greater egos. Good purple items are useful through the end of the game.
+3. Rare items (salmon): These have one ego effect (as above), as well as additional procedurally generated powers that follow a theme (like "fire" or "toughness"). These are mostly useful for getting specific effects on equipment slots that don't usually have them, such as your boots giving you +5 poison damage for your attacks. They only drop from rare enemies, who are generated with character classes.
+4. Randarts (orange): These have three ego effects, as well as approximately double the procedurally generated powers that rare items have. They are very good, but (mostly) only drop from bosses.
+5. True Artifacts (yellow): individually coded legendary items. These can have effects seen nowhere else in the game, including activated powers (eg. your archer now has access to the /Sleep/ spell), damage conversion (Any damage that you would deal is converted to a different type instead: your sword would cause Acid damage, your Fireball would cause Acid damage, and poisoning someone would cause Acid damage), getting healed from certain damage types (in addition to being damaged), swords that get bonus damage from your magic power instead of your strength, semi-sentient weapons that can act independently of you, improvements to your skills/spells, and more.
+
+Allowing careless generation of Artifacts would necessitate extreme caution with every other aspect of the game, or else relatively bland effects on everything. The alternative is allowing positive feedback loops, effects greater than 100% or less than 0%, or other game-breaking abilities.

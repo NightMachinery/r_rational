@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: xamueljones
+:Score: 6
+:DateUnix: 1472369057.0
+:DateShort: 2016-Aug-28
+:END:
+
+I'll post a challenge of my own here. It's an interesting computer science problem disguised as a logic problem. I'll post the answer late on Sunday or Monday morning.
+
+#+begin_quote
+  You are someone who works for a company who needs to find out how durable a new container actually is. But you're bored enough that for kicks and giggles, you're going to find out by throwing the containers out of the windows of 200-floor skyscraper you work in. If it survives the fall from the Nth floor and not from the N+1th floor, it's a good enough measure of it's durability for your company. Unfortunately, someone screwed up your order and you only got 2 containers instead of the 200 you needed and time is short.
+
+  You only have the two containers in your hands and you are standing in front of the 200 floor building. You want to know the highest possible floor the containers can handle falling from before breaking. But you need to minimize the number of tries you have to save on time before the very important meeting in 4 hours (it's going to be time-consuming going up and down stairs to retrieve the containers you're dropping out the windows).
+#+end_quote
+
+UPDATE: You don't know which floor the containers will break on, so while you can skip testing the first few bottom floors to save on time, it's a risk. So assume that the containers are equally likely to break on any floor.
+
+Also, I worded the problems slightly poorly. You want to minimize the number of tries since it's very stressful to worry if the containers will break or not. You prefer two tries throwing the containers from the 200th floor than three tries from the 1st floor. Going up and down the stairs is not a problem.

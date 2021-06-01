@@ -1,0 +1,19 @@
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1446846558.0
+:DateShort: 2015-Nov-07
+:END:
+
+I've been working my way through introduction to computational Bayes methods and it got to the bit about Markov chains and started expanding all the damn terms instead of just saying that:
+
+- For a finite-state, discrete-transition Markov chain, the state distribution is a vector with an l1-norm of 1.
+
+- Likewise, the transition matrix of conditional state-to-state transition probabilities is just an assignment of conditional distributions to each source and destination state.
+
+- Therefore, we can use inner-products to multiply these vectors and matrices just like any /other/ vectors and matrices. It's all /just another fucking Hilbert space/.
+
+- Therefore, when we generalize to infinite states or continuous transitions, everything /continues/ to obey the generalized Hilbert-space laws.
+
+- Therefore, probability distributions can be treated as vectors in a Hilbert-space /in general/, with the caveat that we have to keep them l1-normed to 1, so we need to modify the normal vector-addition operation to accommodate the actual Sum Law of probability -- but the generalized addition laws should still hold, as should category-theoretic treatments of products and coproducts!
+
+My undergrad probability and CS theory prof did teach Markov chains in full, but he never did zoom out and generalize to the full Hilbert-space or categorical perspectives.

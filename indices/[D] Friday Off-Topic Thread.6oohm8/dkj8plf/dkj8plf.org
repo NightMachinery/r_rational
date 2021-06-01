@@ -1,0 +1,54 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 12
+:DateUnix: 1500662924.0
+:DateShort: 2017-Jul-21
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Well.  This last weekend was an exercise in /insufficient pessimism/, for a few different reasons.  Obviously as a game jam we didn't quite get everything in that we wanted (but so close!  Another hour would have let me get in all the audio, an hour beyond that and we would have gotten distinct enemy models, an hour or two beyond /that/ and I'd have more than just one enemy implemented...), but more than that I also overestimated my ability to manage time /and/ build a game /and/ dole out tasks to the members of our team with less Unity experience.  I suppose there was no winning move as far as that was concerned, since I turned out to be the only one familiar with Unity in the final team, which meant I had to either sacrifice development time or teaching time, and, well, the Show Must Go On.
+
+But it goes a smidgen further than that.  Mark Brown (of Game Maker's Toolkit and runner of the jam) streamed the first few hours of his judging efforts, and he decided to do them all alphabetically.  This was convenient enough, as our entry was named Anti / Matter, so I sat down and started listening during my commute.  As he inched forward from AG to AM, I tried to get a handle on my expectations and kill the daydreaming: no, it wasn't going to get called out as a paragon of game design, no, he wasn't going to see the whole of our design past the implementation, no, no, no.  
+
+I attempted to steel my expectations and assume the worst.  Well, the /worst/ worst would be that the game crashes on stream or fails to run in the first place, but I was fairly confident that wouldn't happen.  The next worst then would probably have him playing it mostly in silence for a minute or two before giving it the judgement that so many of the terrible entries had so far received: “Good...good try.  It is a game jam after all.”  /That/ was probably the worst case; he's far too nice a guy to actually call it out for poor design.
+
+So he finished up his efforts on “Ant Game” (one of the ones he couldn't get to run) and moved right to... “Aqua Assault”.  No.  NO.  
+
+I was apparently /insufficiently imaginative/.  After rushing on the jam discord, I was met with an obnoxious reality: apparently there was a subtle step I had missed, and our game, while uploaded, was not entered into the jam
+
+/So/.  I have a renewed appreciation for being /sufficiently pessimistic/.
+
+Regardless, the jam itself was a blast.  [[/u/Xavion]], [[/u/AgentofDmir]], and [[/u/dwood15]] were the other jammers in the team, and they did wonderfully.  The theme was [[https://www.youtube.com/watch?v=i5C1Uj7jJCg][this video]], which had to do with the Dual-Purpose Design of an obscure game called Downwell.  Thus, we had to try and build a game where every element had two purposes.  I think we did okay on that front.
+
+The game is here: [[https://ketura.itch.io/anti-matter][Anti/Matter]].  There are builds for windows, mac, and linux (albeit the linux one is completely untested).  On that page is also a youtube link to some background music which I recommend playing while playing, as we didn't have time to include audio.
+
+I'd be happy to hear any critique you might have for it.  I'm 70% certain that if you have a technical or balance quibble, we've already encountered it, but I'd still like to hear what you have to say, especially if it pertains to the feel or the accessibility.  
+
+--------------
+
+Besides the game jam, which took a day or so to recover from, my family hired some painters to come out today, which means I spent the other days this week emptying the relevant rooms.  Tonight I'm also flying out to Utah to go visit in-laws, so the next few days aren't looking hot for productivity either, but such is life.  On the other hand, the last time I was out there, with the help of my brother-in-law I hammered out the general requirements for how biomes will work, so you never know.
+
+In the meantime, we've taken the concept of tiered difficulty and given the most apparent associated mechanic a pair of names: ‘Threat' and ‘Danger'.  If you don't recall tiered difficulty, it is summarized thusly:
+
+#+begin_quote
+  What this means from a mechanical perspective is that [hideously strong] creatures will respond proportionally to you as a threat: if you just walk by them, you won't get hit by a Hyper Beam that deals 999,999 damage to you and the entire countryside in a four mile radius, but they /might/ lazily swing their tail that deals 99 damage and puts the fear of Arceus into you.  The moment you start to challenge this preconception of weakness, however (probably by hitting back), the kid gloves come off and you'd better be prepared.  
+#+end_quote
+
+Danger is a formalization of this end result in a manner that should hopefully mean that units apply that logic to all other units, and not just as a special case for the player. Basically, every unit will evaluate all other units (that it can sense in range) and give each one a Threat rating.  This rating will vary based on what species the other unit is, whether it's a member of its own herd, the personality of the evaluating unit, and so on.  Once all other units are evaluated, all ratings are tallied into an aggregate Danger rating, which will vary somewhat based on the stats of that pokemon.  
+
+How a pokemon reacts to a high Danger is going to vary depending on stats: timid ones will tend to run and aggressive ones will tend to attack.  In addition, INT will play a large role in determining how a unit sorts the individual Threats of those around it: a stupid pokemon is going to disproportionately be wary of closer units, and will effectively treat each other unit as if it had the aggregate Danger rating, instead of evaluating individuals differently.
+
+For example, a low INT high Aggressiveness Tauros is surrounded by a few dozen members of its herd, which leaves it more or less calm  A lone Houndoom wanders nearby, which is immediately labeled as a medium Threat by all involved.  The moment it attempts to attack a calf, however, the Threat rating skyrockets, and the Tauros (and the adult members of its herd) stampede towards it, catching up and goring it where it stands. This brings the herd near to where a Hypno and a human are standing, and they are immediately charged.  After almost reaching them, the two disappear, and the Tauros herd stampedes only a bit further.  With no other targets in range, they slowly calm down, and a half hour later they've forgotten the entire incident.
+
+A timid, high INT Abra is able to rank the importance of each of the disparate group of five approaching intruders. If it were evolved and a little stronger, it would need to take them out in the following order: Charizard, Wartortle, Pidgeotto, Human, and then Pichu, prioritizing further depending on how the battle goes.  As it is, however, the Threat of each of them (except the Pichu) are higher than the Abra's timidness will allow, and it teleports away.
+
+A middling INT, carefree, high-level Snorlax enjoys a good nap, oblivious to its surroundings.  At some point a kid gets too close and it waves a paw as if shooing a fly, and the kid is knocked on his ass.  A few minutes pass and a horrible screeching sound comes from the kid, and the Snorlax grimaces, rolling over in an attempt to avoid the sound, which squashes a nearby grove of saplings.  The noise stops a moment later, but before the Snorlax can relax, a Machoke clobbers it in the back of the head.  Its eyes spring wide open and, a growl on its lips, it stands up to face the aggravating nuisance.
+
+So as I see it, Danger will be a tracked stat (similar to how hunger and emotion is tracked), but if possible how a unit /reacts/ to Danger/Threat is going to be evaluated based on its other stats.  I /think/ that we have enough other stats to be able to derive the reaction, but worst comes to worse we add a “Danger Threshold” stat or something similar explicitly.  It should also go without saying that a unit's total power affects how much it evaluates others as a threat, which is the basis of how it allows the player to avoid cheap deaths via tiered difficulty.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

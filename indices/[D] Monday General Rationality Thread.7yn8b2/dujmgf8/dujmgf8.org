@@ -1,0 +1,46 @@
+:PROPERTIES:
+:Author: crivtox
+:Score: 3
+:DateUnix: 1519139827.0
+:DateShort: 2018-Feb-20
+:END:
+
+I guess I'l, put part 1 here , and continue in the next thread , that way I can prevent myself from overediting this and procrastinating , and people still sees it.
+
+*The dangers of exploiting time loops ,and optimization proceses (or how to avoid reward hacking the universe) part 1.*
+
+In this subredit a recurring idea in the munchkinism tread is using certain powers to create optimizations proceses and get that they want , often a time loop ,either some process that repeats itself until some condition the or any kind of stable time loop that obeys Novikov self-consistency principle(winch has a lot of extra complications that I'm not going to talk munch about).
+
+For multiple reasons that I wont discuss here(I originally did but the post was becoming absurdly long) humans in general are horribly bad at modeling optimization proceses that aren't human-like(one can become better at it by studying evolution and programming but its still difficult ) and unless you know that you have really good intuitions about this you should assume that you are biased to the optimistic side .
+
+And since I see a lot of optimism in the plans there(though i guess assuming the most favorable conditions is in the spirit of the saturday munchkinism thread, but let me have fun overanalicing things) and that I was having fun thinking about it ,I'm going to try to analyze those situations(and especially time loops) , try to outline some heuristics to know when your clever idea would doom us all(or just kill/reward hack you) and see what security measures would be usefull(apart from solving ai alignment which is necessary in a lot of cases as I'll explain later, though this is probably not feasible in most scenarios ,so needs to solve AI alignment here mostly means do not try). disclaimer( I actually wrote this last year ,but since the year started I have been procrastinating on a lot of things , and not feeling a lot of motivation to work on my personal projects, so I hadn't finished it If this is incomplete its because I precomited to sending it today )
+
+So first what is an optimization process. An optimization process is some process that explores diferent conbinations of variables to maximice some other variable. So what are the features of a optimization process?.
+
+#+begin_example
+  1. What it is optimizing for:
+#+end_example
+
+The exact thing begin optimized , and how this differs from what you want , ( borrowing terms from eliezer's last book the adequacy of the optimization process) is something very important , especially since humans tend to commit a lot of errors in this and asume that whats being optimized is what they want instead of what they actually are using to as a proxy for that. We don't know, even on principle , how to formally specify from simple rules a system that will get us complex things like human values , this is actually a big part of what ai safety is about, and actually an unsolved problem.
+
+#+begin_example
+  2. What it is optimizing
+#+end_example
+
+We can think about the combinations of things the optimization process can affect as a space ([[https://www.youtube.com/watch?v=q6iqI2GIllI][relevant robert miles video]]) .
+
+Here we are interested in the size of that space , and what things it contains , we can't completely evaluate the kind of spaces we want to use it on ourselves , since if we could we wouldn't need the optimization process. So we will have to reason in abstract about the system and all the posible things it can affect , (more on that later).
+
+This becomes more important the more optimization pressure we put in the system , meaning how much the optimization process searches the space , and how efficiently. When talking about that we are referring to the third factor.
+
+#+begin_example
+  3.How it optimizes it.
+#+end_example
+
+A space can be searched in multiple ways , randomly , gradient descent ,hill climbing or something more weird and complicated.
+
+Situations like some kinds of time loops only have two possible values for any point of the space , 0 or maximum value , and stop after finding a point whith different value.
+
+So in sumary an optimization process is something that searches an space in some way to maximize some variable , or in some cases jut find some that fits some condition(though this last thing is streching the definition a bit ). Now lets see how most people usually fail when consciously or unconsciously considering this 3 questions about their system and how can we try do better.
+
+Feel free to leave feedback or ask questions even if I hadnt answered them in this part yet ,it will help me order my ideas to continue.

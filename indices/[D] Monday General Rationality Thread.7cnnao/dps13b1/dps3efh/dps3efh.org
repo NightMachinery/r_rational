@@ -1,0 +1,48 @@
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 10
+:DateUnix: 1510618061.0
+:DateShort: 2017-Nov-14
+:END:
+
+Ooh, sorting algorithms!
+
+#+begin_quote
+  Then I take one sheet of paper at a time and place it into the correct position (relative to the others I've already picked out).
+#+end_quote
+
+[[https://en.wikipedia.org/wiki/Insertion_sort][Insertion Sort]]
+
+#+begin_quote
+  To address this, I've also tried sorting smaller stacks, and then combining the stacks. By that I mean, I take 50 of the papers, sort them, put that stack aside, do the same for the other 50 papers, and then pick the one with smaller integer from both piles until I've combined the two stacks of 50 papers into 100 sorted papers.
+#+end_quote
+
+[[https://en.wikipedia.org/wiki/Merge_sort][Merge Sort]]
+
+#+begin_quote
+  I'm not particularly confident in the efficiency of either method, and would really like to hear any ideas you all have.
+#+end_quote
+
+[[https://en.wikipedia.org/wiki/Radix_sort][Radix Sort]]:
+
+Sort into 0-99, 100-199, 200-299, 300-399, 400-499 piles. Next, sort each pile into X00-X09, X10-X19, X20-X29, etc. Sort those piles of 10 pages into the proper order, then combine them with the other sorted piles.
+
+--------------
+
+EDIT: things to keep in mind:
+
+How fast is determining the content of an item? (a printed number on a corner is faster than written name in the middle)
+
+How fast is moving an item? (single sheets are easier than stapled, as you don't have to avoid putting an item in the middle of another one)
+
+How many arbitrary buckets can you hold in your mind at the same time? How many on your table?
+
+Can you change from a tabletop to an [[https://www.amazon.com/Expanding-Expandable-organizer-Multicolour-Blinyang/dp/B0754K6GHQ/ref=pd_sim_229_3?_encoding=UTF8&pd_rd_i=B0754K6GHQ&pd_rd_r=Q1F98THMN6CZWDQ31XQ2&pd_rd_w=rU8Hs&pd_rd_wg=r7sR0&psc=1&refRID=Q1F98THMN6CZWDQ31XQ2][accordion folder]] to get more buckets?
+
+Do you have more people that can parallelize it with you? Is the overhead worth it?
+
+--------------
+
+More things:
+
+Is two the best number? Almost all algorithms compare /two/ numbers at a time, but choosing the best of four takes less than double the time of choosing the best of two for a human. Similarly, Merge Sort and Quicksort have you split things in /half/ and combine /two/ things back together, but that seems less than twice as fast as doing the same for four things at once.

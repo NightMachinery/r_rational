@@ -1,0 +1,48 @@
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 1
+:DateUnix: 1512289405.0
+:DateShort: 2017-Dec-03
+:END:
+
+Weekly update on [[https://docs.google.com/document/d/1vIWf3Nqudgh18j4RK8bm4zOTSKUFl6l9Igvdg1adzGE/edit][The Tesseract Engine]], my ongoing game engine project.
+
+--------------
+
+Finally!
+
+After weeks of writing theory, wondering about how I should shape my data structures, which engine I should use, after hours of tracking down mysterious bugs (seriously, fuck Ogre3d) I finally have my first visible boilerplate project. It's very small, it can only display pre-determined cubes (and very inefficiently), but it's there. I posted a screenshot on [[https://docs.google.com/document/d/1vIWf3Nqudgh18j4RK8bm4zOTSKUFl6l9Igvdg1adzGE/edit][the project's Google Doc page]].
+
+Of course, it feels very gratifying and very relieving to finally have something concrete-ish, but it's very minor in the grand scheme of things. Next stop: being able to interact with things.
+
+--------------
+
+My final choice of engine for the moment is SFML + Ogre3D.
+
+SFML is /the/ beginner level graphic library. It is easily the easiest library to use in the /world/; both in terms of "easy to install", "easy to make a first program on", and "easy to make advanced programs on". It's probably one of the most recommended graphics library out there, especially in France.
+
+Ogre3D is... not beginner level. It's a very old 3D graphics library, with an immense codebase and a labyrinthine documentation. It's specialized in 3D graphics, but it has a lot of add-ons for additional functionalities.
+
+I considered many 3D libraries, and chose Ogre3d on the grounds that it's very old yet still updated, very well-maintained, with a large and active community. I'm... starting to regret that choice. More on that later.
+
+SFML is specialized in 2D graphics, but it also provides all the necessary utilities for opening a window and reading its events in a portable applications. I mostly use it because I've familiar with its event system, and I don't really like Ogre's event utilities.
+
+I'll stick to these tools until the project is developed enough that I have an idea what I need (but small enough that refactoring isn't too much of a pain in the ass).
+
+--------------
+
+Let's talk about "immediate mode" interfaces, and "retained mode" interfaces.*
+
+A retained mode API asks you what you'd like to display at the beginning of the program. You say "Alright, I'd like to display a window here, and a button in the window, and text next to the button", etc. You usually don't know how the API stores this data, or what operations it performs on it, just that at the end of the day it does display the button. The API is usually also responsible for updating its internal data and reacting to events; if you want something to happen when a button is pressed, you have to tell the API "by the way, remember to do X when the button is pressed" when building your window.
+
+By contrast, an immediate mode API asks you what you want to display every single frame of the program. You say "I want to display a window and a button and text; oh and since I'm detecting that the mouse cursor is on the button, the button should be of this color".
+
+I've been thinking about these concepts for a while, but I only discovered their name this week, in [[https://www.youtube.com/watch?v=Z1qyvQsjK5Y][a video dating from 200]]. I'm trying to find documentation on the subject (and find the time to read it, too), because these concepts are extremely relevant to what I'm trying to do.
+
+I'll probably talk more about this later, but I love immediate mode and I hate retained mode. Immediate mode gives you a control over the application and... I'm not sure how to put it, a responsibility over which operations are performed, that makes theorizing about your application's states and debugging much easier.
+
+Which is why I'm pretty annoyed with Ogre3d right now, which is a full retained-mode API.
+
+--------------
+
+A huge thanks to [[/u/TK17Studios][u/TK17Studios]] for reminding me to post these updates. Every encouragement helps! Also, I've done my first weekly reunion on the project with my French friend.

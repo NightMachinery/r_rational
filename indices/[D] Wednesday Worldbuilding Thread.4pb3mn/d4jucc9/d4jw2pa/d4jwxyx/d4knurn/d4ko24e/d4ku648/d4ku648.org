@@ -1,0 +1,28 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 9
+:DateUnix: 1466693736.0
+:DateShort: 2016-Jun-23
+:END:
+
+There's not really a law of physics that you can add (that I know of). The chess analogy is flawed, because in chess players can't get into illegal game states through completely legal moves.
+
+How I deal with it in /Timewise Tales/ is "slippage", so that if you try to do something like that, you end up failing because you'll come in "off course" in either time or space. This explains nothing about how timelines get chosen, but it is a handy device for preventing characters from paradox.
+
+--------------
+
+This part is probably not of much interest to you, so I've separated it.
+
+#+begin_quote
+  You could also generate a game of chess by having each player take turns making a random legal move. Is there some simple way you could bias the probabilities such that this random chess game has a similar sort of distribution to the "generate all possible games and then choose among them" model?
+#+end_quote
+
+Well, we need a better analogy. Let's say we add in another few rules to chess:
+
+1. On your turn, you can bring in a duplicate of any piece at any position that doesn't already contain a piece. This replaces your normal turn.
+2. On your turn, you can remove any of your pieces from the game. This replaces your normal turn.
+3. At the end of the game, all pieces put into play by rule 1 must be accounted for as pieces removed by rule 2, and vice versa.
+
+So you can see that in a lot of cases, we're going to end up with illegal games (via rule 3) through a series of perfectly legal moves. With this new game of temporal chess we're playing, you can't actually know whether your game is legal or not until the end of the game, not unless both players are ignoring the extra rules. (I've actually tried playing chess with these rules, and it's a complete clusterfuck that ends in illegal games pretty much all the time.)
+
+*If you adopt these new rules and try to make a game /randomly/, the vast majority of games are going to end up illegal, even though the individual moves are legal.* This is the problem that you're facing and the reason that randomly generating legal moves in sequence doesn't work as an analogy.

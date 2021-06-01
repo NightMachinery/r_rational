@@ -1,0 +1,39 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1450830239.0
+:DateShort: 2015-Dec-23
+:END:
+
+Oh, /lovely/, I've always hoped someone would raise the /realistic/ objections!
+
+#+begin_quote
+  The other issue is that it flies in the face of all evidence and theory. Theoretical Computer Science gives us a lot of examples where there are hard limits on self improving processes. But FOOM advocates just ignore that and assume that all the problems that matter in real life are actually easy ones where complexity arguments don't apply, somehow.
+#+end_quote
+
+I think this is a problem of communication between the theoretical computer scientists (huh, do I count as that?), and the computer-science undergrads, and the general public.
+
+As I recall about NP-completeness for instance, there are many NP-complete problems in which, if an Oracle of some sort gives you 1/3 of the solution, the rest is poly-time computable from that third. Many NP-complete or NP-hard problems can be /approximately/ answered in tractable time. "Best" answers to many questions are intractable, but merely "good" answers are actually pretty easy.
+
+(For example, the non-convex optimization involved in modern deep learning is NP, but /as it turns out/, most local minima in deep learning loss functions tend to be very near each-other, so we don't actually care which one we get, and stochastic gradient descent unto a local minimum is basically linear-time in the number of samples we learn from.)
+
+The thing is, if you just read through the above, you now know more about computational trade-offs than average, because for some reason we tend not to tell undergrads about those "approximation" thingies.
+
+This is /important/, since [[http://danroy.org/papers/FreRoyTen-Turing.pdf][thinking is quite probably conditional simulation]] and [[http://web.mit.edu/pbatt/www/publications/HamrBattTene11CogSci33.pdf][coarse stochastic approximations to true theories can still yield very useful results]].
+
+We then get the nasty question of: well, what if your "AI" has a good theory of how to trade-off resources like time and memory for empirical accuracy and precision of its models? Perhaps a [[http://rspa.royalsocietypublishing.org/content/469/2153/20120683][theory of decision-making with information-processing costs]], cast in terms of the physics that apply to living minds?
+
+In those cases, you certainly can't get some nigh-magical FOOM. But you very likely /can/ get something that is considerably more worrisome because it requires actual expertise to understand and can't be explained neatly to laypeople. Long story short, we often only /care/ about aspects of a problem which /can/ be answered tractably, and we /definitely/ care about tractability when it's a choice between losing a /little/ precision versus /gajillions of years/ of compute-time, and we should assume that halfway-reasonable AIs can carry about the same consideration of trade-offs as us.
+
+#+begin_quote
+  if you want to be pedantic, you could substitute something like the Halting Problem, which people often implicitly assume AIs can solve.
+#+end_quote
+
+[[http://www.ics.uci.edu/%7Erickl/publications/1996-icml.pdf][The halting problem is actually PAC-learnable]], though very difficult.
+
+#+begin_quote
+  There's also this weird obsession with simulations, without any real consideration of the complexity involved. My favorite was the story about a computer that could simulate the entire universe, including iteself with perfect accuracy in faster than real time. But pretty much any time simulations comes up, there's a lot of wooly thinking.
+#+end_quote
+
+Yeah, that's based on Omohundro's "Basic AI Drives" paper, which, at least on the front of, "AIs will want to replace X with a simulation of X", isn't very good. If your AI cares about X in the first place, and X already exists, then it's almost definitely cheaper to obtain information about X by /actually observing it/ than by trying to find principles that allow you to cheaply simulate it with high accuracy (for instance, many sophisticated chemical processes).
+
+So that one's actually wooly thinking and not just lies-to-laypeople.

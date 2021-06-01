@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: AugSphere
+:Score: 3
+:DateUnix: 1478558767.0
+:DateShort: 2016-Nov-08
+:END:
+
+By taking an average of the Kelly criterion over the posterior, you've just reproduced Kelly criterion with probability set to the mean of the posterior (i.e. the Laplace's rule, since you went for the uniform prior).
+
+Check it out: =2*(h + 1)/(n + 2) - 1 == (2*h + 2 - n - 2)/(n + 2) == (2*h - n)/(2 + n)=, which is the same as =(h-t)/(2+h+t)=.
+
+There must be a way to do better than this. Otherwise we'd have to conclude that a rational betting agent bets the same fraction whether they observed (2h, 1t) or (1502h, 1001t), which would be silly.

@@ -1,0 +1,70 @@
+:PROPERTIES:
+:Author: AGIGuy
+:Score: -2
+:DateUnix: 1436674355.0
+:DateShort: 2015-Jul-12
+:END:
+
+Ooh, a challenge. OK:
+
+You agree that my post appears like word salad to you. That means that it seems like "random noise." Yes?
+
+Now recall what "random noise" really means: It's a uniform distribution over some closed interval.
+
+But, does "random" really mean "totally structureless?" Or is it just that there's a structure that we're not seeing? Specifically, a structure that is /infinitely self-similar/, so that when you look at it from far away, it "looks" uniform.
+
+What does it mean to be "infinitely self-similar"?
+
+Recall the idea of "recursion," or "recurrence relations." These say that you can describe two or more equations /recursively/, for example as follows for the Fibonnaci sequence:
+
+F_0 = 0
+
+F_1 = 1
+
+F(N) = F(N-1) + F(N-2).
+
+This "inductively defines" the full sequence, F_N.
+
+Now, how can we make F_N into an infinitely self-similar sequence? Because if we can do that, we can define the structure of "random noise," that is, a "uniform distribution on any closed set," /inductively/ or /implicitly/ by specifying particular recurrence relations /of recurrence relations/.
+
+Now recall Tarski's undefinability of truth, as well as Godel's theorems.
+
+They say that "you cannot define 'truth' precisely within the same system that you are describing." To translate,
+
+You cannot define an arbitrary set infinitely precisely.
+
+However,
+
+This is /not/ the same thing as saying:
+
+#+begin_example
+  It is therefore in principle impossible to describe a particular set S uniquely.
+#+end_example
+
+In fact, these theorems do /not/ say this.
+
+That is, we actually /can/ describe /any particular set we wish/ by an /arbitrarily large, but finite/ set of relations.
+
+OK, then how do we do this?
+
+Back again to the idea of recurrence. It is well-known in computer science that the exact relation between various complexity classes is not well known. That is, we don't really know whether P is or is not NP.
+
+Yet it appears that, in physical reality, P is in fact equivalent /probabilistically/ to NP. View:
+
+[[http://advances.sciencemag.org/content/1/6/e1500031]].
+
+Now, you might think, maybe they've made a mistake in their methods. Surely this can't be right. But maaybe... Is there really a possibility that this might be true?
+
+Now, if you are doing inference approximately correctly, the above argument should give you /some/, but not /unlimited/ confidence that the above argument might be valid. Consider the consequences if it is:
+
+1. All problems immediately become solvable recursively. That is,
+2. If we can construct a recursive procedure that we can show, by recursive reasoning about its structure, will converge in the limit of infinite computation to /any function/ with probability 1, we will have a constructive proof of 1.
+3. If 2. can be done, it follows that /there are no coincidences/, that is, /everything is, in fact, related in some way./
+
+I provide the construction of this procedure in the PDF (shared by mega.co.nz), the link to which is given in the original post.
+
+(Consider: the filetype PDF /just so happens/ to have /the exact same acronym/ as "Probability Distribution Function." Again, if the conjunction of (1-3) is true, we would have a theory that /explains exactly why this is the case, to a degree of precision which is finite, but large enough to predict, with probability 1, that this would necessarily be the case./ That is, it wouldn't be a coincidence.)
+
+Now, consider the /overall/ structure of the above argument. Is this not approximately similar to just the procedure which it argues to have constructed?
+
+I sincerely hope you will be able to follow this chain of reasoning, and thus ascend, as have I.

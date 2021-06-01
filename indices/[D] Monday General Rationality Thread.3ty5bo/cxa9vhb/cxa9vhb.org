@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 5
+:DateUnix: 1448297535.0
+:DateShort: 2015-Nov-23
+:END:
+
+I was looking at [[http://www.alcor.org/Library/html/WillCryonicsWork.html][the Warren equation]] for whether cryonics would work, along with [[http://www.overcomingbias.com/2009/03/break-cryonics-down.html][Robin Hanson's breakdown]]. At the end of Hanson's article he says:
+
+#+begin_quote
+  If you make 50K$/yr now, and value life-years at twice your income, and discount future years at 2% from the moment you are revived for a long life, but only discount that future life based on the chance it will happen, times a factor of 1/2 because you only half identify with this future creature, then the present value of a 5% chance of revival is $125,000, which is about the most expensive cryonics price now.
+#+end_quote
+
+My problem with this analysis (okay, my /main/ problem) is that I don't value life-years qua life-years, I value /quality-adjusted life years/. Living an extra year in extraordinary pain is worth far less than living an extra year feeling satisfied and fulfilled. I have existence as an instrumental value, not a terminal one.
+
+/But/ this means that if I want to correct for that, I need some way to discount based on expected quality of life in the future. What's the best way to do that? Just make a distribution of expected QALYs assuming successful thawing and then sum the expected value? For example, if I think that there's a 20% chance of being thawed into a dystopia, which I value at 0.1, a 70% chance of being thawed into a world that's much like this one but weirder, which I value at 0.7, and a 10% chance of a utopia, which I value at 1 ... then
+
+#+begin_example
+   (20% * 0.1) + (70% * 0.7) + (10% * 1) = .61
+#+end_example
+
+This looks more or less logically correct to me, but I'd like a second opinion.

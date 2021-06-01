@@ -1,0 +1,117 @@
+:PROPERTIES:
+:Author: masasin
+:Score: 2
+:DateUnix: 1512299168.0
+:DateShort: 2017-Dec-03
+:END:
+
+#+begin_quote
+  The question being asked is "How accurate is this test at identifying those with cancer," whereas this:
+#+end_quote
+
+That's exactly why I avoided using the word "accurate." First, some terminology:
+
+Assume R1 is positive, and R2 is negative. Similarly, T1 is positive, T2 is negative. TP, FP, FN, TN are True Positive, False Positive, False Negative, and True Negative, respectively.
+
+|    | T1 | T2 |
+|----+----+----|
+| R1 | TP | FP |
+| R2 | FN | TN |
+
+- Sensitivity (aka recall or True Positive Rate) = TP / (TP + FN) (# true positive (R1 ∩ T1) / # T1) = P(R1 | T1)
+
+- Specificity = TN / (TN + FP) (# true negative (R2 ∩ T2) / # T2) = P(R2 | T2)
+
+- Precision (aka Positive Predictive Value, or PPV) = TP / (TP + FP) = P(T1 | R1)
+
+- Accuracy = (TN + TP) / (TN + TP + FN + FP) (# correct / # total)
+
+  Accuracy is also the sensitivity * prevalence + specificity * (1 - prevalence).
+
+What the first question was asking for is the /precision/ of the test, not the accuracy. Also, note that it uses the actual number of occurrences, and not the probabilities of it happening. That is, you /need/ the priors if you only have the probabilities.
+
+What the second question was asking for is the sensitivity of the test.
+
+[[https://en.wikipedia.org/wiki/Confusion_matrix][Here]] is Wikipedia with more details.
+
+Anyway, that is why I stuck to P(A | B), which is the probability that A is true assuming B is true. If you can use P(A | B) in your next reply, it'll be much easier to parse and it will cause less confusion. (And, it will make you think of what you're checking for, and what it's relying on, which will help sort things into the right bin.
+
+--------------
+
+#+begin_quote
+  What keeps bothering me is the idea that the Tyranitar ratio is immaterial to how accurate any given test result is, or rather how accurate this particular Tier 1 report is, given that the chance of Tier 1 Tyranitar is very low.
+#+end_quote
+
+In the example that's currently in the chapter, you gave the PPV for the Tyranitar incidents, and asked for it back. If you gave the PPV for all incidents, and did not intend it to be constant across all types of incidents, things become /much/ more complicated.
+
+#+begin_quote
+  Like, in my head [...] with an even amount of T1 and T2 events.
+#+end_quote
+
+Aha. This is where things get interesting. What you say about accuracy changing by pokemon does make sense, intuitively. Now, how do you apply that to individual threats?
+
+First things first. Let's assume that the 79% is the average sensitivity, P(R1 | T1), across all pokemon. Different pokemon have different priors. How do the pokemon affect the sensitivity?
+
+- Let's use geodude as something that is perfectly average. It rampages as T1 60% of the time, and T2 40% of the time. P(R1 | T1) in this case is 79%, and P(R1 | T2) is 33%.
+- Combee, on the other hand, are cute, so despite their T1:T2 being 30:70, people think it's more innocent than it really is, and almost everyone reports it as R1. P(R1 | T1) is 90%, but P(R1 | T2) is much higher, at 80%.
+- Diglett create earthquakes, which are a primal fear. Their T1:T2 is 90:10, but people are scared, so P(R1 | T1) is 30%, and P(R1 | T2) is 10%.
+
+Looking just at this data, you'd expect that, when T1 occurs less often, people report it as T1 more often. Which obviously should not be generalized.
+
+- Tyranitar has a T1:T2 of 12:88, but they're bigger, and scarier, so you might have P(R1 | T1) = 5%, and P(R1 | T2) = 5%.
+
+You wouldn't be able to estimate that kind of stuff just by looking at their T1:T2. In fact, I'm not sure it correlates much, unless the reports on the news raise its danger level in the collective consciousness. That didn't happen with Combee, though, even among trainers, so I'm not sure how valid that idea is. Also, how does it vary by region? Are people in mountainous areas more prone to reporting blizzards as Tier 1 than near the coast? Or are people who were the "cool kids" in class and watched certain shows more prone to recklessness? The best course of action would probably be to use the 79% as default, unless better information exists. Which it would for pokemon with lots of incidents, and then you try and drill down further to get to the location and cultural effects.
+
+Or, if you have extra sources of information, the Rangers can perform a PCA (principal component analysis) and figure out that, I don't know, height and speed is negatively correlated with sensitivity (the taller or faster a pokemon is, the lower P(R1 | T1) becomes), while psychic ability is positively correlated (e.g., if psychic pokemon calm both people and pokemon down, so almost all rampages are T1 and are reported as such). Or, build a neural network and fill it up, which does all that work for you automatically. Then, when you have a new pokemon where the data is lacking, you can use that neural network to figure out the likely sensitivity and specificity for it, and you can use that.
+
+#+begin_quote
+  But if you don't have that information, is there really nothing connecting ratio of Tyranitar events to overall accuracy of the Tier 1 reports? If you don't know that Tyranitar reports are less accurate, and all you know is that there were only 2 Tier 1 Tyranitar events in the past 10 years, doesn't that make it an inherently unlikely event that should lower your likelihood to believe its occurrence?
+#+end_quote
+
+Even assuming a constant 79% sensitivity derived from all incident types, not adjusted for anything, but considering the prior, as well as a 67% specificity, you end up with a 25% likelihood that a Tyranitar T1 actually occurred, so you should (probably correctly) mount a T2 response. In cases like Diglett where almost all incidents are T1, you would find out that both P(T1 | R1) and P(T1 | R2) are very, very high and you'd mount a T1 response regardless of what kind of report you received.
+
+#+begin_quote
+  Like, Tier 1 Tyranitar events are just so rare that this report is more likely to be a glitch, even if most T1 reports are accurate, because most is not all, and so we're a little less confident in this T1 report being accurate than we would be if it's a pokemon with an even amount of T1 and T2 events.
+#+end_quote
+
+That's exactly what's borne out with the calculations even with the 79% sensitivity. It's generally self-correcting, so you don't need to worry about that. If you do have better numbers, then you'd obviously use them, but it will not usually change your response.
+
+Also, don't forget. In a big emergency, you will get multiple reports. After every report, you can use the posterior as a prior and update on that. They probably aren't independent, so it's not a simple Bayesian calculation, but you can probably work out ahead of time how correlated multiple reports from the same area etc are, and factor that in. The point is, if you see 20 R1 and just 2 R2, even for something as big and scary (albeit slow-moving) as Tyranitar that has a high P(T2), you have overwhelming odds in /favour/ of it being that rare T1.
+
+#+begin_quote
+  I mean on one hand I get that if there's something super rare but very easy to identify, someone saying they've identified it shouldn't be taken less seriously just because it's rare.
+#+end_quote
+
+It /should/ be taken less seriously specifically because it's rare. But it shouldn't be dismissed out of hand. You have a default starting probability of 12%. With one report, it got nudged upwards to 25%. Still unlikely, but you can breathe slightly easier. Another R1 comes in.
+
+P(T1 | R1) = P(R1 | T1) * P(T1) / (P(R1 | T1) * P(T1) + P(R1 | T2) * P(T2)) = 44% (I'm just building off from the rounded 25%, not anything exact.)
+
+Suddenly, and R2 comes in.
+
+P(T1 | R2) = P(R2 | T1) * P(T1) / (P(R2 | T1) * P(T1) + P(R2 | T2) * P(T2)) = 20%.
+
+That single R2 at this stage down the probability of it being a T1 almost as much as the two R1 raised it (24% vs 32%). Earlier on, it would have taken P(T1) from 12% to 4%. (The final probability after two R1 and 1 R2 would still end up at 20% - the order of operations doesn't matter.)
+
+Another R1 comes in. You're at 37%. Another. You're at 58% now. You're more cautious. It seems likely that it's T1, but we aren't quite sure yet. (Look up [[https://en.wikipedia.org/wiki/Bayes_factor][Bayes Factor]] to see how sure you are. While this not exactly it, in a case like this, you can do 58:42, which is ~1.3, barely worth mentioning.)
+
+Another R1 comes in. You're at 77% now. That's 3.34, and now we have substantial (or positive) evidence.
+
+Two more and you're at 95% confidence. Three, at 98%. You can probably say at either that you have strong evidence that It's a Tier 1 incident.
+
+#+begin_quote
+  but if someone claims to see a satellite, there's still a higher chance they're wrong than if they claim to see a plane, right?
+#+end_quote
+
+It depends. What time were they looking? In which direction? Where were they? Do planes normally fly in the area? If you ask some random person of the population, and they were at night, and there are plenty of planes in the sky, and they don't know that satellites don't tend to blink (I think I saw a tumbling satellite once!), then I'd grant you that there's a high probability that they're wrong. If you let them know that satellites are steady lights moving in a straight line, or showed them a couple of examples before you asked them to report, I doubt they'd get it wrong. And if you'd asked me, I can differentiate between them, can tell you the orbit and altitude, and could possibly tell you the type of satellite or plane it is: I'd be unlikely to be wrong on either.
+
+#+begin_quote
+  talking it out after CFAR sounds good.
+#+end_quote
+
+You could show this thread to the experts there. I'd love feedback too, in case I have it completely wrong.
+
+#+begin_quote
+  That said, I'd love to get the chapter fixed before then, so if it's not too much to ask and you have a fairly simple alternative scenario/set of variables for them to demonstrate Bayes' theorem with instead, I'd happily just use that and seek to understand it later.
+#+end_quote
+
+I think that changing P(T1 | R1) being the given to P(R1 | T1) should be enough, and doing the calculations like you'd done it in the previous post.

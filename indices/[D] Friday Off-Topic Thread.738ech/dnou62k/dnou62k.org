@@ -1,0 +1,64 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 10
+:DateUnix: 1506716869.0
+:DateShort: 2017-Sep-29
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+I got the itch to keep working on compiler-related modding stuff, so I kept working on that. The basic idea is to replicate the dynamic parts of Supreme Commander's modding engine while staying firmly within compiler-enforced object-oriented land.
+
+In SupCom, you could mod the core game files (and other mods) by simply indicating that your mod was to load later than the mods in question, and then provide a script that overwrote the particular functions (or classes or variables) that you wanted. The way that this was handled meant that each mod that touched that function would be evaluated in turn: first the core version would be loaded and its version of function =Foo= evaluated, and then ModA would load and perform its modification to =Foo=, all the way down to ModZ that would have the final say on what =Foo= looked like. For something like functions, this whole process was more or less pointless, since the function wasn't actually /used/ until some code later referenced it, so the last version was all that mattered.
+
+In other cases, however, this process turned out to be surprisingly valuable. For instance, a dictionary variable that saves something such as keybindings could be affected by multiple mods during this process. Core would run and populate it with all the base game keybinds, and then ModA could load and add one or two keys, and then ModB would load and add a few more, and so on and so forth. This could be problematic if mods didn't play nice, and this particular case of a keybinding library would probably be better served by a concept such as a registry, but it was so /fascinating/, watching the Rube Goldberg-like cascading of modifications to a particular object.
+
+There was one more feature that I felt was super useful, and that was how function hooks were handled. Hooking into a function is basically a polite way of saying you hijacked it, with the entity calling the function none the wiser that you have usurped authority. In SupCom, since Lua is a dynamic scripting language, you could save the entire function pointer of a function to a variable, then redefine that function, calling the saved original as needed. Like so:
+
+#+begin_example
+  local sneakylocalcopy = ImportantFunction
+
+  function ImportantFunction()
+
+  #I can perform my own code here
+
+      sneakylocalcopy () #calling the original version of the function
+
+      # and here I can do even more of my own stuff
+
+  end
+#+end_example
+
+This was /so powerful/. Yes, you could easily destabilize the game by hooking the wrong functions, but it was /so nice/ to be able to inject code wherever you needed to, if you needed to. I wanted to duplicate this functionality within C#, in XGEF.
+
+The means by which I will do this is to have a series of [Attributes] that functions or classes can be tagged with. As a preprocessing step, XGEF analyzes any given script, finds the attributes that are important to it, and then transforms the code accordingly.
+
+If we have a function Foo in some other mod (or in the core game) that we want to slap a few extra lines on, it can be done like so:
+
+#+begin_example
+  [Append]
+
+  public void Foo()
+
+  {
+
+      DoSomethingSpecial();
+
+  }
+#+end_example
+
+And that's it. XGEF sees the =[Append]= tag, looks up the original version of =Foo()=, copies the whole of it into the file, and then ensures that the modder's latest addition is included. Successive uses of Append can be used by multiple mods, letting everyone get their grubby fingers where they need to.
+
+(As an aside, I'm well aware that probably about 80% of the problems that /could/ be solved this way /shouldn't/ be. XGEF will have extensive support for registries and event handling, which more elegantly solves problems that most of what this code transformation can, but at the end of the day there are some problems that require you to reach down into the pit of the game's source code and tear it apart with your own bare hands. I intend this to be an option to those who need it.)
+
+The total number of tags that I want to include is around 10, ranging from =[Overwrite]= to =[Extend]= to a small number of tags that deal with making event generation boilerplate easy.
+
+So anyway, I spent the better part of this week working on really making Roslyn flex its muscles and getting comfortable analyzing code files. I ended up spending the last two or so days writing an intermediary set of classes, since it turns out that Roslyn can actually be unwieldy for some of the things I need it to do. But as of right now, I have a means of analyzing a C# file, turning it into my intermediary =ScriptFile=, and regenerating the original source file. Now that I have this, I can use it to regenerate the original slightly differently, which is all I really need for the code transformation to work.
+
+This next week I plan on implementing the remaining attributes (one and a half are done already, mostly done before ScriptFile was written). Once those are done (or at least Overwrite and Extend), I can finally collapse the call stack and get back to writing the core mod in the way I wanted to two weeks ago.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit. If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!

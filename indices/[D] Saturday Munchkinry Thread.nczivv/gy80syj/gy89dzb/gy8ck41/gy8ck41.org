@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: fish312
+:Score: 9
+:DateUnix: 1621097640.0
+:DateShort: 2021-May-15
+:END:
+
+#+begin_quote
+  you would very quickly run out of unique "addresses" for information...a number far larger than 32 bytes can differentiate
+#+end_quote
+
+It's much worse actually. Assuming uniform distribution, the [[https://en.wikipedia.org/wiki/Birthday_problem][birthday problem]] means that utilizing just 6% of the address space brings the risk of collision to over 50%. Using 8% of the space brings the risk of collision to 70%, and a mere 14% will bring collision probability to 97%.
+
+#+begin_quote
+  If, somehow, the 32 bytes are differentiated by intent
+#+end_quote
+
+Then it's not really a checksum anymore, since in a checksum any same input always results in the same output. Intent is so arbitrary that that you might as well call it reading data from a magical cloud, wish for any wikipedia article and just get it.
+
+Honestly this just boils down to a big [[https://en.wikipedia.org/wiki/Rainbow_table][rainbow table]] lookup that's unconstrained by space.

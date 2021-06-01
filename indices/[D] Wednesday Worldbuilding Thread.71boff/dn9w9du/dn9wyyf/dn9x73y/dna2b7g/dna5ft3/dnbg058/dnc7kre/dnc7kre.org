@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 2
+:DateUnix: 1506048506.0
+:DateShort: 2017-Sep-22
+:END:
+
+Thinking some about what /kind/ of math might work for this. The obvious easy to check hard to solve problem would be something like factoring or something, which unfortunately is too boring to really have the kind of variety you are looking for.
+
+Looking at solutions to Diophantine equations, might be a little better, but the interesting stuff there is generally pretty hard to do in your head.
+
+Perhaps the best idea I could come up with was integration. Improper integrals are straightforward to check (just differentiate), and less straightforward to derive. Unfortunately, most functions won't have a nice improper integral, and the classes that always have them, also generally have algorithms for computing them that are not much worse than the algorithms for checking. Also, this has the advantage that if you want similar problems whose answers are hard to check, you can use definite integrals.

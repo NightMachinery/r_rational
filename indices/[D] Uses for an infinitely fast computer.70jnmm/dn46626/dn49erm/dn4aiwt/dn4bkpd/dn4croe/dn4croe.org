@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: crivtox
+:Score: 1
+:DateUnix: 1505648148.0
+:DateShort: 2017-Sep-17
+:END:
+
+Well but Im not sure what kind of materials will create things that count as people if you try all the possible combinations of them.
+
+About the getting what you want part it becomes more and more difficult as the complexity of what you want increases, most of the constraints are things you wouldn't even think of because are obius to you , maybe what you want a motor to do is simple enough to specify it almost completly(remeber that you cant just find one you want between all the possible variations, you have to constrain the serach a lot to almost exactly what you want , there i an absurd amount of possible things that you want).
+
+Also even the mottor is really complex , you want something that ouputs a torque in a way that can be connected to something else , in a constant rate , and that can be repairable easily , and that wont break in a harmfull way etc..
+
+Im not saying its not viable and really usefull if it works , it wouldn't be easy and you would have to check very carefully how it woks before building it.
+
+For example you have to clearly define what output is because otherwise you will get a mess of rotating things that you can't connect to anything.
+
+Also maybe your simulation of how the materials behave could be wrong in some way and it could end up not working in real life , or not working outside certain specific conditions. So in summary you would have to do a lot of tests to check if the engine really works because the computer doesn't know what you want and the things it generates will mostly fail in crazy ways that you dint expect and no sane engineer would do because things like ensuring that the engine doesn't stop working(or explodes) if ambient humidity increases or that you can turn it off , are obius requirements to them, like all the other things I cant even think of now but that I would unconsciously take into account if I had to design an engine(not that I would know how , I'm just a cs student ).

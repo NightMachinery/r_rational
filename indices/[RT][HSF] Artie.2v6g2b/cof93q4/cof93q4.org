@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: FeepingCreature
+:Score: 1
+:DateUnix: 1423427205.0
+:DateShort: 2015-Feb-08
+:END:
+
+Chapter 9, and before I read further, just for fun, I wanna propose a nanobot design that can't foom: each nanobot is given a small radio receiver/transmitter as well as a unique ID. They implement a PRNG. (Super cheap.) The nanobot waits for instructions that match its ID, xors it with the PRNG, advances the PRNG, executes the instruction. Behavior is micromanaged by an external computer. To ease the task of this computer, many nanobots may be switched to the same ID, for instance if they're all doing the same task. Finally, when a sufficient level of replication is reached, each bot is flashed with its actual workload. Replication is only ever done under external command. Would this work? Or would the latency make it useless?
+
+(Note: you can cheat a bit by uploading larger program fragments. The key is that the computational capacity of the nanobot at any given point must not be sufficient to execute a complete replication sequence, or anywhere close to it. I also recommend not permitting backward jumps in autonomous code. Actually, that alone should suffice to make it safe, so it'd probably be a sensible part of any defense-in-depth. (THOUGH, everything that makes this system more efficient makes it more a risk. The strength of the original proposal is exactly the lack of autonomy.))
+
+How would this break?

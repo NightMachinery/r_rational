@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: FaceDeer
+:Score: 12
+:DateUnix: 1448065347.0
+:DateShort: 2015-Nov-21
+:END:
+
+Probably the simplest, safest, and most foolproof way of preventing an endless reload loop would be to have the persistent data be just a plain counter for the number of load cycles that have been done. That way the restored version of you will have at least /some/ slightly different inputs for each cycle and be able to make some different decisions on that basis without worrying about those decisions being prejudiced by whatever might have killed the universe last time around.
+
+If I wake up and see the counter registering "2" I'm going to respond very differently than if I wake up and see the counter registering "1,002,592".

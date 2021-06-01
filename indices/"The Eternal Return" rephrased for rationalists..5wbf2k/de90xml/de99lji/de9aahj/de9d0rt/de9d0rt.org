@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 4
+:DateUnix: 1488162135.0
+:DateShort: 2017-Feb-27
+:END:
+
+(a^{b)^{c}} = a^{b*c}
+
+So, that means that what we really have is 10^{68 * 10^(68 * 10^{68}}). Let's round up 68 to 10^{2} , just to make things easier:
+
+10^{68 * 10^(68 * 10^{68}}) < 10^{10^{2} * 10^(10^{2} * 10^{68}}) = 10^{10^{2} * 10^{10^{70}}} = 10^{10^{2+10^{70}}} ≈ 10^{10^{10^{70}}}
+
+So, we now have two numbers which are much easier to compare: 10^{10^{10^{70}}} and 10^{10^{10^{10^{2.08}}}} ≈ 10^{10^{10^{120}}} . As 70 < 120, the second number is clearly larger than the first (and by a rather large amount as well).
+
+Basically, the main takeaway here is that when dealing with towers of exponents (a.k.a. "power-towers"), increasing the value of the /highest/ exponent in the tower has a /far/ greater effect than increasing any of the lower exponents (or the base). And, as a corollary of this: taller towers are usually bigger than shorter ones, regardless of the values of the lower exponents (or the base).
+
+*EDIT:* Also, I agree--Reddit formatting is a /bitch/ when it comes to carets.

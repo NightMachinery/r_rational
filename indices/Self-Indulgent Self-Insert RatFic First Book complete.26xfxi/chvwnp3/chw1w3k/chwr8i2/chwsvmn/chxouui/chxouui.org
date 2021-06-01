@@ -1,0 +1,21 @@
+:PROPERTIES:
+:Author: ArmokGoB
+:Score: 2
+:DateUnix: 1401759099.0
+:DateShort: 2014-Jun-03
+:END:
+
+I don't mean doing tons of formatting on the text itself, just choosing decent font and colors and margins and such. The way most browsers interpret plain text without it is awful. Maybe even making it simply look /like/ typewriter would fit. if you send me the HTML source I'll see if I can throw together something extremely basic, although it will probably still look like shit, at least it'll be readable.
+
+edit: just something as simple as this in the <head> will make it a lot more interesting than NOTHIGN:
+
+#+begin_example
+  <style>
+  body{
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    background-color: #445;
+    color: #fff;
+    padding: 40px
+  }
+  </style>
+#+end_example

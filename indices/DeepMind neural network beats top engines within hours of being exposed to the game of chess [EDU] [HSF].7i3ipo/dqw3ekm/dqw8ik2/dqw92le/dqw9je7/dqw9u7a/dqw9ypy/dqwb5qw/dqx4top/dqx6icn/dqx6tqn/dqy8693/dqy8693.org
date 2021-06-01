@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: Veedrac
+:Score: 1
+:DateUnix: 1512741712.0
+:DateShort: 2017-Dec-08
+:END:
+
+#+begin_quote
+  we don't have figures for the energy consumption of TPUs
+#+end_quote
+
+We know a bunch of this stuff for first-gen TPUs.
+
+#+begin_quote
+  The TPU die area is less than half that of the Haswell eighteen core CPU and Nvidia's Tesla K80 GPUs (the preferred solutions at the time), which yields a much lower rating of 75W, compared to 145W and 150W, respectively. Idle power consumption is higher than a GPU, but lower than a CPU.
+#+end_quote
+
+- [[http://www.tomshardware.com/news/tpu-v2-google-machine-learning,35370.html]]
+
+See also [[https://arxiv.org/pdf/1704.04760.pdf]] for a much more in-depth view of that older chip; I haven't read it all. I suspect that, unless they have radically modified their goals with the second generation chip, AlphaZero had a comparable thermal envelope to Stockfish.

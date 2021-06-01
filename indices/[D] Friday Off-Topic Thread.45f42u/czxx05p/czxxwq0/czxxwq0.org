@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: blazinghand
+:Score: 6
+:DateUnix: 1455321623.0
+:DateShort: 2016-Feb-13
+:END:
+
+There are some software solutions that let you read, write, mount ext4 partitions on windows machines. In terms of a shared backup between multiple computers, you may be best off doing some kind of network backup. I've had success with a linux box acting as an FTP server sitting on the network. This won't give you the ability to back up when you're away from home (unless you have a static IP or something) but should be pretty straightforward. It won't be as functional as dropbox but all your docs will be saved. Some people use NAS for this, but I'm not familiar with it so I do not.

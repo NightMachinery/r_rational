@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: lehyde
+:Score: 4
+:DateUnix: 1414957290.0
+:DateShort: 2014-Nov-02
+:END:
+
+#+begin_quote
+  If there's a nonuniform curvature of space in absence of matter would that violate conservation of momentum?
+#+end_quote
+
+It would certainly lead to the violation of /classical/ momentum.
+
+A simpler example: consider some volume of space with a non-uniform electric potential. For example between to charged plates in [[http://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Capacitor_schematic_with_dielectric.svg/931px-Capacitor_schematic_with_dielectric.svg.png][a capacitor]]. Now you put there a charged particle. Because of the [[https://sites.google.com/site/demijeremy/ElectricPotential-inducecurrent-tota.jpg][non-uniformity of the potential]], it will start to move, seemingly on its own. So it seems conservation of momentum is violated. This is not surprising because the electric potential broke translational symmetry. *But* the /laws/ that govern this potential and its interaction with matter /are/ the same everywhere. So, according to Noether's Theorem, there must be a conserved quantity somewhere. And indeed, it turns out an electric field [[http://physics.stackexchange.com/questions/7218/how-can-there-be-net-linear-momentum-in-a-static-electromagnetic-field-not-prop/7228#7228][carries momentum]], so that the /total momentum/ (charged particle + electric field) is conserved.
+
+I think one can also define quantities in General Relativity (that reduce to the usual momentum in sufficiently flat space) that are conserved in even highly curved space. Though [[http://math.ucr.edu/home/baez/physics/Relativity/GR/energy_gr.html][it's difficult]] because General Relativity is really complicated.

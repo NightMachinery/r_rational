@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1446755093.0
+:DateShort: 2015-Nov-05
+:END:
+
+#+begin_quote
+  Ideally that means you'd be able to move the pixels accessor to the client machine and not send giant pixel arrays.
+#+end_quote
+
+There would only be giant pixel arrays if you were editing them, and you'd compress them before sending them. You wouldn't EVER store edited bitmaps in JPEG format, though, because it's lossy.

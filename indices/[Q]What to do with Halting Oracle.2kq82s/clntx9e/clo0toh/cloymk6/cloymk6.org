@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: duffmancd
+:Score: 2
+:DateUnix: 1414735472.0
+:DateShort: 2014-Oct-31
+:END:
+
+More than this you can start mapping out the space. You can leave an item with the shortest path to that room (LLRLLRR etc.) And have a database somewhere with mappings. You can use this to reduce any query you want to run. (If I'm understanding this right, if LRLR leads back to the entrance then LRLR at any point leads back to the room you were at. Or is this just an artifact of the simplified example on Wikipedia?)

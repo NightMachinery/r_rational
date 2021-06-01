@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: markus1189
+:Score: 3
+:DateUnix: 1426618907.0
+:DateShort: 2015-Mar-17
+:END:
+
+Computer scientist here. I found the self-referencing part very interesting, one thing that immediately came to my mind was Haskell (programming language, [[/r/haskell]]). By using lazy evaluation, we can make use of self-referencing in some quite neat ways.
+
+One thing I learned recently about are Allison's Queues (good explanation here: [[http://www.melding-monads.com/files/CorecQueues.pdf][link]]). They can be used to implement breadth-first traversal without explicitly mutating e.g. a queue by creating a self referential queue. In the paper linked above on p. 5 (figure 3) there is a trace of the evaluation, note how *queue* is defined:
+
+#+begin_example
+  queue = tree : explore 1 queue
+#+end_example
+
+This might be a little into the deep end for non computer scientist but I found it might be interesting.

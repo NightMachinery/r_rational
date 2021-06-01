@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1445293417.0
+:DateShort: 2015-Oct-20
+:END:
+
+Further thought: extending =K(x)= to probabilistic machines is trivial and dumb, because the shortest program for /any/ =n=-bit string is =(take n . repeat) flip= (Haskell notation), or in Church:
+
+#+begin_example
+  (define (all-possible-strings n)
+    (if (= 0 n) () (cons (flip) (all-possible-strings (1- n)))))
+#+end_example
+
+Also, separating the structural bits from the random bits in a string's representation is incomputable, which is why we don't actually use Kolmogorov structural information to do "algorithmic statistics" in the real world. We can of course approximate the division by adding up the bits used for deterministic program code and then the bits of Shannon entropy in the primitive random procedures from which we sample /in the shortest trace generating the string/, but then we still need to define some neat way to talk about the trade-off /between/ those two sets of bits.
+
+So on third or fourth thought, /actually/, when we use /that/ definition, we've actually got a useful concept, I think. A long string with a lot of structure can be more shortly described by a short deterministic program with very few coin flips than just by an enumeration of all strings via a whole shit-ton of coin flips. The /shortest trace/ part was important, as the use of random sampling puts us closer to linear-logic type semantics in which we can't treat =flip= as only one bit but instead as one bit per call.

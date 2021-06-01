@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: TheWalruss
+:Score: 2
+:DateUnix: 1443934650.0
+:DateShort: 2015-Oct-04
+:END:
+
+I've developed a magic system where the spell effects are defined by a phrase, which is a sequence of magical characters. Each consonant codes a linear combination of possible spell effects (heat/cold, electric charge, momentum change, psychic effects, etc etc), and each vowel is a scalar value. The end result is the linear combination of the spell effects multiplied by the scalars.
+
+This effect is loaded into the aether. Where, and how much, is decided by the wizard's pose. Put fingertips together and flap your elbows, and you'll be throwing iceballs or fireballs or whatever. Spread the fingertips and it'll be a blizzard or firestorm instead.
+
+So, it's not programming, but it is a general system that builds spells from first principles. If you take careful notes and understand linear algebra, you'll be able to create any arbitrary effect combination, and then it's just a matter of developing a set of useful poses to get those effects to where you want it.
+
+[[https://redd.it/3j38ok][Link to MagicBuilding post about the system]].

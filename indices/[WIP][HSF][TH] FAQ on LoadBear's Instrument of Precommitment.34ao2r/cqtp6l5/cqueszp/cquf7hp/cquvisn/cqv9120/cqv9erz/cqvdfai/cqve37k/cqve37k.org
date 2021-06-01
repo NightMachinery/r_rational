@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: BadGoyWithAGun
+:Score: 1
+:DateUnix: 1430512553.0
+:DateShort: 2015-May-02
+:END:
+
+I don't know much about how the brain works, but I'm currently training a deep belief network for visual face recognition and reconstruction tasks. Most learning algorithms can easily be modified so that only a small subset of its ~25GB parameter space has to be accessed simultaneously - small enough to fit into the 2GB of memory on my graphics card. It's when you switch from learning to trying to do work with it that you need access to all the parameters of the model as fast as possible, but even that can be somewhat organised in layers. As I understand it, the brain doesn't have a hard switch between learning stuff and doing stuff, so the same general principle may apply.

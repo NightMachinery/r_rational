@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: zarraha
+:Score: 3
+:DateUnix: 1477835869.0
+:DateShort: 2016-Oct-30
+:END:
+
+I think log is fair in terms of complexity. You've succesfully shielded it against complexity-munchkinry, but not against size munchkinry. Again, making large but simple objects can be worth massive amounts of money simply as raw materials. People will never actually make a computer, they'd just make a huge block of gold, or something inherently valuable like printer ink, sell it, then just buy a computer.
+
+Maybe a combination would be appropriate, like the time cost is m * log(p), where m is mass (up to some constant, like 30 minutes per kilogram or 1 hour per kilogram or 2 hours per kilogram) and p is the number of parts.
+
+It's certainly more complicated than log(p). But the exact times aren't important for the munchkinry thread, what's important is how it generally behaves: m * log(p) grows linearly with m, and diminishingly with p.
+
+Even then this will still incentivize creating blocks of pure valuable resources rather than anything genuinely complex. It might be more interesting if people had this power in an environment where they didn't have access to a global economy, such as a medieval (possibly fantasy) world, a place with no humans where they have to survive against the environment, or just have all humankind as their enemy so they refuse to trade. Or they fail if anyone finds out about the power so they have to be careful about selling too much of something they can't reasonably explain

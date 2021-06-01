@@ -1,0 +1,17 @@
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 1
+:DateUnix: 1425626329.0
+:DateShort: 2015-Mar-06
+:END:
+
+So it's the above, but with the controller being an algorithm of the form
+
+#+begin_example
+  Backpack is checked -> Collapse to "All was not put in";
+  X, which could have been put in, has:
+    been taken out -> Collapse to "X was put in";
+    its original location observed -> Collapse to Y;
+#+end_example
+
+, where Y is determined by some further algorithm or controller which was never covered that you're aware of.

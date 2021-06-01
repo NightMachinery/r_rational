@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: ShareDVI
+:Score: 1
+:DateUnix: 1443977503.0
+:DateShort: 2015-Oct-04
+:END:
+
+I am still thinking it through.
+
+The idea is, there are magical "atoms" (the perfect name would be "monads", but that's already taken in fuctional programming), - those are a basic reality interaction in one space-point And then you create spells using 2 lambda-calculus operations (application and abstraction) and apply them to atoms to create spell themselves.
+
+Long time ago, you needed to recite the whole source code for the spell to work. Now all spells you create are stored in the repo. When you create a spell, the code is stored somewhere and you get a name - convenient to pronounce string, which is a checksum of the code and is used to invoke it.
+
+Also, there are pretty good standard library and development tools.
+
+To limit destruction potential, ancient mages have created sandbox - world-wide network of spells, which kill all the spells outside the allowed radius, refilling itself with their power.
+
+Yeah, and I thought of it before I read Rick Cook. (But after Yasinsky's "Nick" series with the same premise, Russian, unfortunately)

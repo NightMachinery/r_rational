@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 6
+:DateUnix: 1506796143.0
+:DateShort: 2017-Sep-30
+:END:
+
+Check the 10000th bit for whether it has been set. If yes, read the first 10 KB as ASCII text and follow instructions. If no, spend a week designing a strategy, turn it into 10 KB of ASCII, find out how many bits of it I've already written into the table, and write the next bit.
+
+I expect that the strategy I would end up with after the first week would take into account the following:
+
+- Tactics like above allow arbitrary communication out of a loop iteration.
+- Experiments on the laptop are in order. Can table contents be queried other than one bit at a time without influencing the world other than through query outputs? How large/infinite is the table adress space?
+- Breaking the laptop turns the loop infinite. Checking the 10^{ludicroust} bit early in each iteration prevents this, but might stop other strategies from working past that mark.
+- Every second that has not been exactly replicated in a previous iteration is one in which some idiot might hook up a random number generator to a CPU and spawn an AGI that takes over the loop. Try not to bring about exponential amounts of original time.
+- As always, the endgame is to bring about an FAI. Contact everyone who has a potato code and organize a Mother of Learning.

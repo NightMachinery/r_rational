@@ -1,0 +1,34 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 3
+:DateUnix: 1476479159.0
+:DateShort: 2016-Oct-15
+:END:
+
+#+begin_quote
+  The github page says it's intended to be used as a real engine. How good is the API?
+#+end_quote
+
+Horrible, it's pre-alpha quality. (edited the readme to reflect this)
+
+#+begin_quote
+  in various genres that aren't usually associated with Minecraft
+#+end_quote
+
+That mirrors my thoughts on the rewrite pretty closely.
+
+It's going to be a lot more primitive then minetest, but hopefully it will be more extensible.
+
+The basic boxel-map object is hopefully going to be usable in things like roguelikes, or other tile games. I'm going to include a 3D renderer, but not minecraft (or any gameplay) like functionality. The 3D view will mostly be for prototyping things, or extending things.
+
+So expect less high-level primitives to start with. For example, there's not going to be an easy-to-use "inventory bar" created by me, I'm going to focus on API stuff first.
+
+--------------
+
+But I am thinking about including a generic "RPG" world. That would include rules for character/world/item interaction, but not anything about user-input.
+
+You can make all kinds of different games using re-usable rules like in GURPS. In GURPS, you can throw a classic superhuman-fighter from a d&d like setting and have him fight beside someone from transhuman space. Although typically transhuman-space characters are a lot more powerful, alongside the superhero settings.
+
+If you base all your mobs on GURPS attributes, you can take, say, spaceship-mobs and throw them into a completely different genre. Sure, you'd have to re-do the movement AI most likely, but basic compatibility between objects/mobs/items between games sounds nice, if it can be made to work.
+
+The question is, can it be made to work?

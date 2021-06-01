@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 2
+:DateUnix: 1468475490.0
+:DateShort: 2016-Jul-14
+:END:
+
+You're right that A is the more realistic, but the line gets a bit hard to identify for some types. What's the "resource" for plant pokemon? One surely exists; one runs out of leech seeds eventually. Is it soil? Sun? It seems easiest to abstract it away into the Endurance stat as a combined "physical energy" and "physical resources" sort of stat, with perhaps just a few exceptions for easily designed terrain such as water pools or lava flows or whatnot.
+
+A good compromise would then be to do something like B but internally tracking the gained endurance as "temporary water" or "temporary fire" or whatever. It would only be used if the pokemon utilized the correct type of move in lieu of normal Endurance usage, and maybe at the end of battle any excess is dumped into the base Endurance pool, to avoid the weird physical bit you pointed out but still representing a rejuvenation.
+
+For this very sort of compromise I prefer these kind of systems to be moderated by a computer; tracking that sort of thing would get very annoying very quickly in a tabletop, and crunching all the numbers starts to wear on you.
+
+Thanks for your feedback, and I'm glad you liked it! I'll no doubt be in touch with you if anything ends up getting made. I reinstalled Unity last night, so we'll see if I'm up for it, but don't hold your breath.

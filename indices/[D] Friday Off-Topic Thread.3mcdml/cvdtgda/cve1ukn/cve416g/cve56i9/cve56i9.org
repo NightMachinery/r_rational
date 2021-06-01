@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: electrace
+:Score: 6
+:DateUnix: 1443212675.0
+:DateShort: 2015-Sep-25
+:END:
+
+#+begin_quote
+  (IMDB allows you to sort episodes by user rating ; I agree that variance between episodes is not that high, but it does exist.)
+#+end_quote
+
+Ok, just did some statistics, the variance is 0.2677 of a point.
+
+If you remove the top 10 and bottom 10 data points, variance falls to a measly 0.0082 of a point.
+
+Even if statistically relevant, (and the non-independent nature of voting makes that unlikely) I doubt that anyone would be able to do pattern matching to determine what makes an episode more highly rated.

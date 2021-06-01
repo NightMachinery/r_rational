@@ -1,0 +1,48 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 18
+:DateUnix: 1501862868.0
+:DateShort: 2017-Aug-04
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Alright, buckle in, folks, we've hit a major milestone.
+
+I've been working on the engine framework for the game for...probably a couple months now. I hemmed and hawed about the design, and after discovering Roslyn I claimed that what I thought would take months would instead take weeks. In spite of my track record with such predictions, I would like to announce in no uncertain terms /mission fucking accomplished/.
+
+XGEF, or the eXtensible Game Engine Framework, now officially works. Like, I had code that worked before, but it was all organizational stuff and reading files from directories. Kid stuff. As of right now I have a framework that, if followed, forces any game written using it to be trivially moddable.
+
+It works like this: XGEF is built around the concept of a System as the most fundamental class of code. A System is intended to represent a cluster of related functions that could conceivably run on its own thread (but is not forced to). For example, you would have a WorldGenerationSystem, an AudioSystem, a WorldSocietySystem, or a CombatSystem. Systems are built in two halves, a CoreSystem and a ModdedSystem. The CoreSystem is built by the game developer, and enshrines code that is not meant to be messed with, things without which the System (and thus the game) could not function. Any extra logic that has to do more with the game's design and balance is thus offloaded into the ModdedSystem, which is just a text code file that sits on the hard drive and is distributed with the game.
+
+XGEF knows how to find these ModdedSystem code files, consolidate them, compile them, and integrate them with the original game, with the code itself none the wiser. /It's so cool/.
+
+Exactly how much of the system's code is divided between the Core and Modded halves of a System is up to the developer. A developer might decide to make a System mostly Core, and only put, say, some settings that can be changed in the Modded half (such as with a rendering system). Or perhaps it's the opposite, such as an AI module: the Core basically only exists to run whatever is in the Mod, where all the various play logic can be offloaded. All told I think most Systems will sit between these two extremes, such as a terrain generator that has all the different world generation steps contained inviolate within the Core, but what actually happens in each step is (mostly) the domain of the Modded half.
+
+This setup would be sufficient (if tedious) to support modding in a bare-bones fashion on its own: anything the player wants to change, they simply open up the ModdedSystem code files in the game folder and alter the code to their heart's content. However, this does not allow for collaboration between modders the way that moddable titles are traditionally expected to do, so XGEF has to take it a bit further and also handle individual mod prioritization and consolidation.
+
+A mod from the perspective of XGEF is basically a separate folder that contains a mirror image of the game's folder structure. Anything that is contained within these folders is considered to be a new version of the file, and when the game starts up, XGEF will go through the mod folders and copy those files over, overwriting the originals (virtually). In the case of code files, it will actually be powerful enough (due to Roslyn) to do some analysis and perform /selective/ copying. This means that adding functionality to an existing System, or overwriting only one function within it, is perfectly doable.
+
+In the future, XGEF will actually take it one step further again and will be capable of performing code transformation. By tagging code with certain attributes, XGEF will know to insert blocks of code that are otherwise tedious to type, in particular with relation to event handling.
+
+But enough talk! [[https://drive.google.com/file/d/0B0LYycfi-K18aXkySmJkMnRLYXc/view?usp=sharing][Here is a link to the current XGEF build]], which includes a very simple sample game structure. Simply extract the contents of the zip file to a location of your choice. If you run the *.exe (after extraction), the XGEF mod loader runs, loads the compiled CoreTestSystem that I the developer wrote, finds its other half the ModTestSystem on your hard drive, compiles it, and hooks everything up. My CoreTestSystem then calls the TestMessage function within your ModTestSystem, and you can see the result in your console window.
+
+There is a core folder where the ModdedSystems would go, and a mods folder where any mod overwrites would go. The two are set up the way they would be for a real game--you'll note that the code in core/engine/test/ModTestSystem.cs is different from and has been overwritten by the code in mods/testmod/engine/test/ModTestSystem.cs.
+
+This is written using C#, but it should also work using Mono, and has been tested to run on both MacOS and Linux (simply run it with “mono xgef_test.exe”).
+
+EDIT: due to the gracious bug report from an anonymous PM, I've found an upper bound to the mono version that this will work with. 4.2.1 will NOT work, and I suspect it has something to do with the .NET version that it supported. The oldest build that I was able to get my hands on was 4.6.2, which ran as well as 5.0.1 (most recent release). So as of right now, 4.6.2 is the "officially" oldest supported mono release. (I suspect that 4.4.0 with the .NET 4.5 -> 4.6.1 jump is actually the crucial barrier, but until I am able to confirm that, 4.6.2 is as far back as I will support.)
+
+If you have code experience, please give modding the code file a shot and try to break it. The whole thing /works/ but it is not yet /robust/, and getting some usage info from how people /expect/ it to work is almost more important than even seeing if/how it works on various systems.
+
+--------------
+
+This marks a major turning point in development. With XGEF tentatively in place and the design of Renegade having been working on for almost exactly a year, it's time to give both a trial by fire and start work on the game proper.
+
+But! I'm moving to a new apartment, so it won't start this week. I probably won't update next Friday, but you can expect a new update on the 18th, which will be the first update cataloguing the /development/ and not just /design/ of Pokemon: Renegade.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit. If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!

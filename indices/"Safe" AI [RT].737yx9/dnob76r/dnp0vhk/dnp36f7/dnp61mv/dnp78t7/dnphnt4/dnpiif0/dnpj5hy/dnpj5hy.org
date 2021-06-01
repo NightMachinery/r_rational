@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: Daneels_Soul
+:Score: 1
+:DateUnix: 1506756384.0
+:DateShort: 2017-Sep-30
+:END:
+
+Well basically a SAT solver is just a very generic formulation of mathematically formulated optimization problems. What if you had an algorithm that given any formally stated optimization problem could find the best solution?
+
+But I think that your error is here:
+
+#+begin_quote
+  But it will also be exploring all possible avenues for optimizing that goal that are available to it, unless we have explicitly coded it not to pursue those possibilities, or it has reasons to believe that they will impede its main goal(s).
+#+end_quote
+
+On the contrary, I think that algorithms generally do not explore all avenues available to them unless you explicitly tell them to. Even the most optimized, self-improving version of alpha-go isn't going to blackmail its opponent or try to rearrange the world so that trillions of human slaves will be constantly losing games of go to it every second. It doesn't even have a model of the outside universe, all it does is search for really good go moves.

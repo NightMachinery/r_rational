@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: Veedrac
+:Score: 3
+:DateUnix: 1493126738.0
+:DateShort: 2017-Apr-25
+:END:
+
+Assume there's a Nash Equilibrium where everyone is using the same deterministic strategy. This isn't likely to be the case, but let's assume it regardless. Assume that there are =k= competitors.
+
+Since everyone's strategy has the same probability distribution, the winner will tend to be someone who gets a score in the top =1/k= of their probability distribution. If you do so, you are likely to win, and if you do not, you are likely to lose.
+
+Ergo, for well-behaved probability distributions, you should expect the ideal strategy to be similar (but not necessarily identical) to the strategy that maximises the expected score from the top =1/k= of your probability distribution. How to do that depends a lot on the game being played.
+
+For example, in a game where you make an arbitrary number of gambles with payoff =[-2, 1]= from a starting pool of =100=, and there are 100 players, your ideal strategy is likely to look similar to choosing a value =k= such that if you always bet when your pool is below =k=, then there's a 1% chance that you reach =k= and a 99% chance that you go broke. In this example, =k= is between =109= and =110=.

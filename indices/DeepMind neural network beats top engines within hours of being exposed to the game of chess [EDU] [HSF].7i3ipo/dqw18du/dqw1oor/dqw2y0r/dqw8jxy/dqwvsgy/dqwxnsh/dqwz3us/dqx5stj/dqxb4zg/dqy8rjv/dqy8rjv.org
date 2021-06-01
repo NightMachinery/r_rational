@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: Veedrac
+:Score: 1
+:DateUnix: 1512742539.0
+:DateShort: 2017-Dec-08
+:END:
+
+#+begin_quote
+  Alpha go is not a neural net, its a neural net with a minmax tree heart.
+#+end_quote
+
+None of the Alpha* line use minimax. They use monte-carlo.
+
+This is all a silly argument, though. You can just look at the multiple data points of how strong a player AlphaGo or AlphaZero are when you limit search depth to zero. There's no advantage in trying to guess the data when it's available.

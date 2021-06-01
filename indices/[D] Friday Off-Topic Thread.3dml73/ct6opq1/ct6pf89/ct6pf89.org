@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1437150600.0
+:DateShort: 2015-Jul-17
+:END:
+
+For the sake of the story I don't think you need to generate a formula that can do this, just generate a recognizable pattern. Even if they don't know their world is a sphere, something like an Archimedean spiral would work.
+
+Actually, I would work out a Lissajous figure with a known length, and then pick a sequence of points that follows the figure and is a large relatively prime fraction of the length. Say the length is 3,000,000 kilometers, then make the first point 2,930,000 kilometers in, then the rest of the points are ((n/293)%300)/10,000 kilometers along the path. This sequence should repeat after 300 steps, as if there is a device orbiting the planet and firing a transport beam every so often.

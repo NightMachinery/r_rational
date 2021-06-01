@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 1
+:DateUnix: 1481148672.0
+:DateShort: 2016-Dec-08
+:END:
+
+How expensive is your magic system? One of the most important parts of performant-but-cheap hardware design is caching. You have an expensive but really fast system that handles your most frequent/important operations, and several layers of slower, cheaper systems that store and treat the data for less frequent operations.
+
+For instance, if your magic system is capable of sending a message instantly, but only by writing in arcane ink on sacred parchment, you're going to want to use you computer for most communications, and your sacred parchment for extremely important communications for which radios or phone lines (or whatever they used to transmit binary data in the 70s) aren't adequate.

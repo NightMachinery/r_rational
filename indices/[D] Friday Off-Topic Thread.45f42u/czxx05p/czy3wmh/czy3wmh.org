@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Vebeltast
+:Score: 1
+:DateUnix: 1455332920.0
+:DateShort: 2016-Feb-13
+:END:
+
+The industry solution to cross-platform data is to host all the data on a server and less people access it using something like NFS. This actually works very well, /if/ you can guarantee that you can maintain connectivity to your server. Which is basically already demanded by corporate VPNs, so no loss there. In many situations this option has significant extra value for security reasons. You may be able to simulate this by, I don't know, carrying around a Raspberry Pi? Not a great solution.
+
+However, you can do this without the server using virtualization. Many virtualization offerings can pass [[https://www.virtualbox.org/manual/ch09.html#idp46730497510000][partitions]] and [[https://www.howtoforge.com/virtualbox-2-how-to-pass-through-usb-devices-to-guests-on-an-ubuntu-8.10-host][usb devices]] directly through to the guest OS, allowing it to handle the filesystem. This is a relatively lightweight solution for me, since I almost always have at least a headless linux VM around just so I have it if I want to do some quick scripting, but it may not work for you, especially if you can't manage to get a virtualization system running. I think that virtualbox can do both of these and there are ways to get portable virtualboxes. One key realization is that you actually don't need the /same/ VM everywhere; rather, you just need /a/ VM everywhere, and they can be completely different as long as they can take your USB drive or disk partition and run linux.
+
+Another solution, if you want a startup idea that'd be /way/ too hard for the few million dollars you'd make before the NSA acquihired you: combine both of these ideas with the idea of the [[http://www.digitaltrends.com/computing/best-stick-pcs/][stick computer]], but run the entire thing over Thunderbolt instead of HDMI. Run a tiny linux box, provide an NFS share, Thunderbolt means firstly that your NFS share is fast, but secondly and far more importantly that you can do [[https://media.blackhat.com/us-13/US-13-Sevinsky-Funderbolt-Adventures-in-Thunderbolt-DMA-Attacks-Slides.pdf][DMA attacks]] to get sufficiently low-level HDD access that you can hand it off to the linux box so it can provide it over NFS. This is an awful idea but seems absolutely hilarious.

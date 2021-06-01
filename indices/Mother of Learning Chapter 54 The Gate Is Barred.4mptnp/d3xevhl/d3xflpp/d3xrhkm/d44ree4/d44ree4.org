@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: ricree
+:Score: 2
+:DateUnix: 1465642321.0
+:DateShort: 2016-Jun-11
+:END:
+
+Best guess is that the "leave loop" invokes the normal "end current loop" routine to clean up the pocket universe. That part includes a check for controllers, and sets up a new restart if the controller is still there.

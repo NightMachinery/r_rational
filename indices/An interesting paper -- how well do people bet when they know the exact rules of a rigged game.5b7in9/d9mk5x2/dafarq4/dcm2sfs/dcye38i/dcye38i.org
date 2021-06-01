@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: gwern
+:Score: 2
+:DateUnix: 1485473352.0
+:DateShort: 2017-Jan-27
+:END:
+
+We've expanded the analysis considerably: [[https://www.gwern.net/Coin-flip]]
+
+Fast implementations in R and Haskell, both decision-tree and formula-based, scalable to 2000+ bets (after which the expected value stops increasing), simulation comparison, multi-threaded C version which evaluates the tree differently & runs in 10s etc. The OP KC strategy is actually inefficient by ~$6, but this is because 300 bets is overkill so the inefficiency of the KC doesn't show up so much - at lower bet amounts, KC can forfeit up to $36 compared to perfect play (about 30% of possible winnings at /b/=23).

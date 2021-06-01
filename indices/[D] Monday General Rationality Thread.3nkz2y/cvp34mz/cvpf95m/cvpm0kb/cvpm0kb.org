@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 2
+:DateUnix: 1444095246.0
+:DateShort: 2015-Oct-06
+:END:
+
+#+begin_quote
+  to handle merge issues
+#+end_quote
+
+The idea is that by keeping data-structures up to date, you minimize merge conflicts. Where there are merge conflicts, they should mostly be due to simultaneous user edits, which is up to the user to resolve.
+
+It's important to note that it's /not/ a flat file, where you have to merge things. It's a data structure. Instead of merge issues, you get collisions or race conditions when two clients/users edit something at the same time.

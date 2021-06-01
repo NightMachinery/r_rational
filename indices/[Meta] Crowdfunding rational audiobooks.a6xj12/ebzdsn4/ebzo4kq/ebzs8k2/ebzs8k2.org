@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: tehdog
+:Score: 6
+:DateUnix: 1545072623.0
+:DateShort: 2018-Dec-17
+:END:
+
+Not yet. Google has an API, but it doesn't include their latest research (no speaking style stuff afaik). So far, no one has been able to reproduce the quality of Google's results (they don't publish their code on this and noone has their dataset). There is a open source implementation by some guy on github + nvidia ([[https://github.com/NVIDIA/tacotron2][this]] + [[https://github.com/NVIDIA/nv-wavenet][this]]). You can hear the quality of those models [[https://nv-adlr.github.io/WaveGlow][here]]. I've managed to make that run on my local machine, and it works just as well the above examples.
+
+What's still missing from the above implementation afaik is (a) a better pretrained model (/should/ be possible to train using commercial audiobooks instead of the LibreVox dataset) and (b) the style inference engine from text (so emphasis and pauses sound more natural).

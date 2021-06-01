@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: ArmokGoB
+:Score: 1
+:DateUnix: 1622418357.0
+:DateShort: 2021-May-31
+:END:
+
+So do the obvious brute force approach and keep it modular so if it does become popular you can replace it with something better later?
+
+If I faced this problem I'd probably just be really lazy and just randomly select points, find the closests other point to each, push away from it, and iterate until it stabilizes. Then run this whole algorithm 1000 times and pick the set that ended up with the best score.

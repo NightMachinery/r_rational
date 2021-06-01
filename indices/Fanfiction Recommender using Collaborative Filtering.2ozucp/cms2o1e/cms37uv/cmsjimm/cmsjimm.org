@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: somnicule
+:Score: 1
+:DateUnix: 1418358456.0
+:DateShort: 2014-Dec-12
+:END:
+
+It is if naively done, but for item-based collaborative filtering it doesn't matter much if it takes ages to update all the Jaccard indices. A user can still get relevant recommendations based on how much reader overlap there is between their favourite stories and other stories, which updates immediately if they follow more stories.

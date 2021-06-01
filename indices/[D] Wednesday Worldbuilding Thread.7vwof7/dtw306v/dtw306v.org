@@ -1,0 +1,35 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1518030870.0
+:DateShort: 2018-Feb-07
+:END:
+
+I've started cobbling together a new setting, mostly as stress relief from a different thing I've been writing. I did the slightly unwise thing of writing something that wasn't very story-like first, and then trying to work out the rules that would enable it.
+
+The setting is a battle school that favors one-on-one melee battles between students, with the occasional team battle or special match thrown in for flavor. To that end, I want:
+
+- No permanent death/injury on the arena floor (but available elsewhere)
+- A magical combat system that produces a healthy metagame
+- Unique weapons and armor
+- Meditations on class, privilege, and politics
+
+I'll probably be posting to these threads over the next few weeks, so that I can try to flesh this out more; this is intended to be a side project, not a deep, no-holds-barred sprint of work.
+
+Further, I'll be taking some of [[/u/ultraredspectrum]]'s thoughts on how battles, summarized from conversation on Discord:
+
+- The "rules" of the fight must be known to the reader, not in the sense of what rules they're operating under, but in the sense of "player A wins if he can stall" or "player B wins with his big finisher or not at all" or "player C loses if his opponent figures out his trick".
+- Each fight should be different from the last in some way, because repeated fights with the same opponents, circumstances, and strategies are uninteresting.
+- Each character is linked in some way to their strategy/power, so that each fight is about characters in some way, rather than merely being a fight.
+
+The "healthy metagame" aspect is probably the hardest thing, which means that it should come first; it's not at all hard to make rules that people would be forced to fight by, but it /is/ hard to make rules that create a chaotic and shifting set of strategies used by individual actors with no stable equilibrium.
+
+Rock-Paper-Scissors is probably one of the easiest unstable equilibria, so that's where my mind first went. A simple, melee-combat oriented example would be that speed beats power, power beats defense, and defense beats speed, which would be trivial to create a magic system for, but also only results in three possible matchups. Something like Rock-Paper-Scissors-Lizard-Spock offers more matchups, but I find that (and variants) a little lacking.
+
+What I'm toying with right now is the idea of having two RPS cycles that can work for or against each other. Each person would have two attributes, picked from two different pools, and each matchup would be dictated by the major and minor cycle. For example, if Power>Defense>Speed>Power, and Plant>Earth>Fire>Plant, then you could have nine different different configurations (PowerPlant, EarthSpeed, etc.) and 45 different matchups, which would break down in different ways:
+
+- Synced cycles are curbstomps: because it's a win on both the major and minor cycle, victory is almost trivial (e.g. PowerPlant >> DefenseEarth).
+- Half cycles favor one participant, more if it's a major cycle, less if it's a minor one (e.g. PowerPlant > DefensePlant, PowerPlant >= PowerEarth).
+- Counter cycles are essentially toss-ups, determined by skill or gear, rather than the selection (e.g. PowerPlant = DefenseFire).
+
+This needs fleshing out, since the PDS/PEF cycles are placeholders, but I think the bones might be solid enough to build off of, especially since each character can have their own techniques within each configuration, their own personal preferences, possibly some unique abilities, and some complexity with weapons and armor. What's needed most in terms of fleshing out is determining how/when people can change their configuration, ideally in such a way that allows for some mindgames and game theory within the structure of the battle school.

@@ -1,0 +1,23 @@
+:PROPERTIES:
+:Author: sparr
+:Score: 1
+:DateUnix: 1506041162.0
+:DateShort: 2017-Sep-22
+:END:
+
+#+begin_quote
+
+  #+begin_quote
+    buffer overflow
+  #+end_quote
+
+  In Excel? There is no dynamic memory allocation.
+#+end_quote
+
+Say what?
+
+First, an absolutely trivial example. Simply putting any value in any cell can and often will result in some dynamic memory allocation.
+
+Second, a more obvious trivial example. A1 contains ==REPT("foo",B1)=. Put a big number in B1. See that long string of "foofoofoo" in A1? Where do you think that's being stored in memory, if not in a dynamically allocated buffer?
+
+But that's just the tip of the iceberg. Consider a TRANSPOSE that uses other cells to define its extents. That would allow moving arbitrarily large amounts of an existing sheet into new maybe-previously-empty space. And Excel is, of course, optimized; it doesn't waste memory to represent large sections of empty space. All those cells you just produced data in have to be stored somewhere, and that somewhere is dynamically allocated.

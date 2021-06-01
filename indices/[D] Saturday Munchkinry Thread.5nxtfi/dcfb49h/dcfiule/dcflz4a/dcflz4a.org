@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: RegexRationalist
+:Score: 1
+:DateUnix: 1484434262.0
+:DateShort: 2017-Jan-15
+:END:
+
+I'm interpreting that as you put (0,1) as "1" and (1,2) as "2" and then putting (1,2) back in to see what the input is: my immediate thought was that it would produce (2,3) [rule: +1, +1], but then it could just as easily output (2,4) [rule: +1,*2]. So this would be an insufficiently constrained input. If it has to make a choice then it does not produce a mapping.
+
+Natural language would work for something like a caesar cipher, or perhaps if the words/letters corresponded to audio of someone talking

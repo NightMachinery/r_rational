@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: currough
+:Score: 3
+:DateUnix: 1479025263.0
+:DateShort: 2016-Nov-13
+:END:
+
+Well, assuming that I haven't built a reputation for running a /very/ dangerous laboratory (who am I kidding - this is the 1900s, labor is still cheap), I'd hire N+1 assistants, where N is the length of the shortest word in the book (estimated by me by looking at the outlines of words I can see. The ith assistant gets grilles in which exactly all of the glyphs occurring at positions which are i (modulo N+1). Therefore I know that no one assistant will be able to put together an entire word. See, my original use of RNGs was based on the premise that 'meaning' was the smallest unit of information from the book that could be dangerous - thus, since 'word' is my new threshold of danger, I just have to be careful to never let any assistant read an entire word - and you don't need randomness for that.
+
+I have this set of assistants proceed page-by page. When they have finished one page, I transcribe it in its entirety by hand. These notes are then 'mine' in case of mishap, i.e. my assistants succumbing to the desire to actually read the book. If mishap occurs, then I'll notice that suddenly, for some j, I'm not receiving the jth page for me to transcribe from, and can hire new assistants accordingly.
+
+I've established that partial portions of the text aren't dangerous once copied, but just to be safe I'd do something like flip seven coins each time I receive a set of pages, and if they are all heads, burn the pages and make a note in my copy of the book that I'm not going to transcribe them. Although nothing in your description thus far has stated such, I can't rule out the possibility that once the entire book is assembled, it will suddenly gain the dangerous properties of the original.

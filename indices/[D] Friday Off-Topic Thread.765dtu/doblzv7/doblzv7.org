@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 9
+:DateUnix: 1507916268.0
+:DateShort: 2017-Oct-13
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Short update this week.  It's been a busy week at work as we're rolling out the newest version of our product this Sunday, so the vast majority of my available time during the day has been dedicated to that, while my nights have been spent recovering by playing games or vegging.  
+
+Still, there's been a sliiiight amount of progress:
+
+[[https://i.imgur.com/UkrDtMI.gifv]]
+
+At the moment this is mostly separate from XGEF, and that is the first major revision on the to-do list, to get it to have the same functionality while pulling all the information (what species to allow, etc) from XGEF. This requires a fair amount of code to be written yet for it to work; the UnitSystem needs to be in place to define what a Unit is, something like a CombatSystem needs to actually resolve the fight, etc.
+
+Some time ago I put together a list of which pokemon to first represent, and I attempted to make sure that a wide range of types and archetypes were represented. [[https://docs.google.com/spreadsheets/d/1rYG4i_YitDGfOjquUFOxdI3Egt9DjsThsKiThXKnJ4g/edit?usp=sharing][You can view that list here]].  I'll be starting with a Charizard and a Rattata and getting the various systems in place before moving on with this, but every time I add something new it will be from this list.   Anything I missed?
+
+(If the types look off or totally wrong, note that types in Renegade are slightly different from canon; the biggest difference that's likely to throw people off is that Ground is being treated as a “tough Normal”, like a Beast type.  The actual earthy power moves are being moved into Rock.  At least, that was the design when this list was formulated, tho it has shifted even from there. At any rate, all figures are temporary ass-pulls, so don't take them as gospel /just/ yet.)
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

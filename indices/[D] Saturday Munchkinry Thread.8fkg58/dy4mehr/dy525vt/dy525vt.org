@@ -1,0 +1,21 @@
+:PROPERTIES:
+:Author: MereInterest
+:Score: 8
+:DateUnix: 1524962646.0
+:DateShort: 2018-Apr-29
+:END:
+
+With this machine, you can break any cryptographic challenge. For example, here's how you would exploit bitcoin.
+
+The size of the nonce for bitcoin is 32 bits. Find an appropriate nonce, and you get a mining reward. Now, everybody else is doing this by brute force. Test a nonce, and if it fails, increment and try again. With this time travel device, you could solve the problem much quicker.
+
+- Get a bitcoin miner whose nonce can be manually specified.
+- "If the first bit in the nonce is set to 1, will the program terminate sooner than it would have had the first bit been set to 0?"
+- Set the first bit according to the answer given.
+- "If the second bit in the nonce is set to 1, will the program terminate sooner than it would have had the second bit been set to 0?"
+- Set the second bit according to the answer given.
+- Repeat.
+
+On average, there is a new block found every 10 minutes. So long as you can repeat this process in under 10 minutes, you'll win, on average. Each time you win, you get 12.5 bitcoins, or about $125,000. Do it 8 times, and you have your million dollars.
+
+Heck, if the querying to the device could be automated, the bigger problem would be making sure that you don't leave it running and crash the bitcoin economy. Bitcoin is based on the idea that no one entity could perform the majority of the mining. With this time travel device, you could easily outperform the rest of the miners combined. If this fact became known, bitcoin would immediately lose all value.

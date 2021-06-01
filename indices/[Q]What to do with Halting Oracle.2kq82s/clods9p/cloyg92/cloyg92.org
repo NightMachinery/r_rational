@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: duffmancd
+:Score: 2
+:DateUnix: 1414734827.0
+:DateShort: 2014-Oct-31
+:END:
+
+If I understand this correctly (and I'm just reading up on Cayley sets so I might not be), each chamber is a member of the chthulu group. This group has the generating operators L and R, (and also L^{-1} and R^{-1).} The first chamber is identified with the null set, and then every other chamber can be reached by some combination of turning left or right. You can also reach each chamber by going backwards along a left hand or right hand tunnel.
+
+(This is the bit I'm not sure about) Because these are the Generators of th group, each chamber can /only/ be reached by an L, R, L^{-1} and R^{-1} tunnel. Each chamber has four tunnels connected to it (except for the starting chamber presumably which has a ladder say to enter the labyrinth). A chamber that leads to the entrance chamber by a left hand turn is L^{-1.} Any chamber. And in fact, they are the same chamber, representing the same item of the chthulu set.
+
+So if you go LRLRL and that leads to the entrance chamber, and if you go LLLL and that leads to the entrance chamber, then LRLR and LLL also lead to the same chamber (as does going backwards along L^{-1,} or LLLLLRLR etc.)
+
+Can someone with more experience check this. I've studied undergraduate maths, but not Cayley groups or similar.

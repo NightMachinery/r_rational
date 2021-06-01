@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 4
+:DateUnix: 1439591371.0
+:DateShort: 2015-Aug-15
+:END:
+
+#+begin_quote
+  I'd like to know how those were calculated.
+#+end_quote
+
+It's pretty simple: On each tick, a random blob is chosen, and that blob attempts to expand into every tile that borders it. If a tile is already occupied, the chance of a blob's winning the battle over that tile is directly proportional to that blob's size--if a 100-tile blob fights a 200-tile blob in a tile, the 100-tile blob's chance of winning the tile is 1 in 3.
+
+#+begin_quote
+  Also, shapes besides diamonds?
+#+end_quote
+
+But a hexagonal grid is just /such/ a pain to code...

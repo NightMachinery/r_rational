@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: ben_oni
+:Score: 1
+:DateUnix: 1507368396.0
+:DateShort: 2017-Oct-07
+:END:
+
+#+begin_quote
+  Not being reversible isn't part of the definition of computing. There's a reason it's called reversible computing.
+#+end_quote
+
+Interesting. I'm familiar with the [[https://en.wikipedia.org/wiki/Von_Neumann-Landauer_limit][von Neumann-Landauer limit]]. And although I'm still trying to wrap my mind around the rest of this, I can safely say it won't work in the way you think.
+
+The way arbitrary amounts of computation can be extracted from such a system depends upon stretching out the duration of the process. By stretching out the simulation over ever longer periods of time, you ensure that it will be disrupted before completion.
+
+As I understand it, you are proposing that some device randomly coalesces that generates a (reversible) simulation of an entity over some subjective time, creating the illusion of consciousness. Since the amount of energy available becomes vanishingly small over time, the device must use arbitrarily small amounts of energy to perform the simulation. I would expect that the amount of energy available (from random fluctuations) shrinks faster than the computation can be performed.
+
+Of course, this ignores the fact that real things in this universe (like a brain) are not deterministic, and so not reversible. A reversible simulator (some kind of quantum computer) would have to retain all the probability functions throughout the simulation. I suspect this would be equivalent not to simulation, but to a description of a proposed simulation.

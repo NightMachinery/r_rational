@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: Putnam3145
+:Score: 25
+:DateUnix: 1481890753.0
+:DateShort: 2016-Dec-16
+:END:
+
+#+begin_quote
+  because cats, like dwarves, have fully fleshed out metabolism, and their blood alcohol / drunkenness can be calculated
+#+end_quote
+
+No, it's just an "inebriation" counter that increments based on alcohol consumed. No actual metabolism or blood alcohol simulation is done.
+
+It /is/ based on body size and dwarves do have some resistance to inebriation, but neither of these actually have to do with blood (the [SIZE_DILUTES] token in the inebriation syndrome makes size matter; the [SYNDROME_DILUTION_FACTOR:INEBRIATION:150] token in the dwarf creature raws makes dwarves require 1.5x the alcohol as any other creature of their size to become as drunk).
+
+I would really prefer if people make stuff up less with Dwarf Fortress. I know it's real tempting to extrapolate information as it is in reality, but it's actually simpler under the hood in many ways than might seem.

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1414693389.0
+:DateShort: 2014-Oct-30
+:END:
+
+Finite proofs are expressible as text. You can enumerate over all finite strings and in finite time determine whether each one encodes a valid proof of the desired theorem. Empty string, 0, 1, 00, 01, 10, 11, 000, ...
+
+In order to be a valid oracle for the halting problem it must halt in finite time. It's nothing special to make it run in time proportional to how long the TM runs: we can do that in the real world. That's not an oracle for the halting problem because it will never give you an answer if it doesn't halt.

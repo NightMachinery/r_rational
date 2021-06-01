@@ -3,8 +3,9 @@
 * [WIP] Help with astrophysics/plausibility? (short)
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 12
+:Score: 11
 :DateUnix: 1433857213.0
+:DateShort: 2015-Jun-09
 :END:
 I know just enough about physics and space exploration that I could impress someone who knew nothing, which means enough that I would exasperate someone knowledgeable on those subjects.
 
@@ -35,8 +36,9 @@ This security feature also gives everyone enormous incentive to care deeply abou
 And as for the initial dramatic reveal, since it seemed the company wasn't doing anything that sounded too dangerous to begin with, the betrayal seems way more unexpected, which makes Clark appear to be that much more of an unstoppable evil genius.
 :PROPERTIES:
 :Author: Kerbal_NASA
-:Score: 5
+:Score: 6
 :DateUnix: 1433891269.0
+:DateShort: 2015-Jun-10
 :END:
 
 *** Thanks for the advice.
@@ -46,6 +48,7 @@ Isn't there a question of credibility? What's to stop Clark from simply sending 
 :Author: alexanderwales
 :Score: 4
 :DateUnix: 1433901224.0
+:DateShort: 2015-Jun-10
 :END:
 
 **** Well they presumably have a record of the git commits that they didn't look over carefully enough the first time, so no trust involved. There could even be some dramatic scenes of people trying to verify whether the code would actually work/if there are exploitable mistakes.
@@ -57,8 +60,9 @@ I actually have a fair few things more to add now that I know you're interested,
 (also I looove all your work!!! >Insert unashamed squuuuueeeeeees<)
 :PROPERTIES:
 :Author: Kerbal_NASA
-:Score: 5
+:Score: 7
 :DateUnix: 1433902548.0
+:DateShort: 2015-Jun-10
 :END:
 
 
@@ -81,6 +85,7 @@ Now compare this to the energy to get an asteroid to collide with Earth. Its 0. 
 :Author: Kerbal_NASA
 :Score: 6
 :DateUnix: 1433912100.0
+:DateShort: 2015-Jun-10
 :END:
 
 **** I've been trying to work out what this means in terms of story; what changes to the text-as-it-exists need to be made in order to make the science more accurate while keeping the structure of the story the same (there's a problem, there's some setup, there's a reveal, there's a speech).
@@ -90,6 +95,7 @@ I'm not sure that I'm there yet, but this is very helpful. I'm /almost/ tempted 
 :Author: alexanderwales
 :Score: 3
 :DateUnix: 1433995556.0
+:DateShort: 2015-Jun-11
 :END:
 
 ***** To me it doesn't seem like there needs to be too much of a change. I'll break it down based on the structure you mentioned:
@@ -104,16 +110,18 @@ Also, yeah, abstracting the details is, of course, a totally valid strategy.
 And I'm eager to answer any questions you have. As long as I get to answer them in a ramble of excruciating detail, of course :p
 :PROPERTIES:
 :Author: Kerbal_NASA
-:Score: 3
+:Score: 4
 :DateUnix: 1434001085.0
+:DateShort: 2015-Jun-11
 :END:
 
 
 ** 10^{15} kg seems like a fairly ludicrous number to de-orbit from the asteroid belt to Earth (where the hell does the energy come from?), but given that conceit, the story is pretty cool.
 :PROPERTIES:
 :Author: Transfuturist
-:Score: 5
+:Score: 7
 :DateUnix: 1433859334.0
+:DateShort: 2015-Jun-09
 :END:
 
 *** I only picked that number because that's (roughly) the size of the Chicxulub asteroid. If that can be adjusted downward to be a bit more reasonable and still give an extinction level event, I'll do it. The question of where the energy comes from is also a head-scratcher, and a place where I'm out of my depth. My vague thought is that if you found an asteroid with an irregular orbit you might have less work to do, and if the plan is to give it nudges every once in a while at the moment of highest impact ... maybe?
@@ -121,6 +129,7 @@ And I'm eager to answer any questions you have. As long as I get to answer them 
 :Author: alexanderwales
 :Score: 2
 :DateUnix: 1433859886.0
+:DateShort: 2015-Jun-09
 :END:
 
 **** Well, 10^{11} kg would still be an extinction-level event -- this is the order of magnitude of the size of 1999 FN53, an asteroid with a diameter of approximately 680 meters, which passed within 6 million miles of Earth last month.
@@ -136,6 +145,7 @@ Sounds reasonable until you realize that each Tsar Bomba weighs 27,000kg.
 :Author: codahighland
 :Score: 6
 :DateUnix: 1433864947.0
+:DateShort: 2015-Jun-09
 :END:
 
 ***** Note: This is assuming we're just pushing the thrust directly towards the Sun, which would give it a spiral decaying orbit until it smashes into us. There will be assistance from gravity, but I don't want to do the calculus on the specifics. However, we can get another useful figure to get another bound.
@@ -149,8 +159,9 @@ How much energy would it take to zero out the orbital velocity? Well, 25000 m/s 
 So that means the amount of energy required is somewhere between 10^{13} and 10^{18} J.
 :PROPERTIES:
 :Author: codahighland
-:Score: 3
+:Score: 6
 :DateUnix: 1433866864.0
+:DateShort: 2015-Jun-09
 :END:
 
 ****** The idea of stopping the asteroid is a good one, because what we really want to do is something like a [[http://en.wikipedia.org/wiki/Hohmann_transfer_orbit][Hohmann transfer orbit]], which is something like "slow it down so it drops from its higher-energy orbit to our lower-energy orbit." But unfortunately you're missing a very important puzzle piece: delta-v. Rocket engines don't actually output energy (or at least that's not a super useful way to think about them), they consume free energy and output momentum (almost all of the energy goes into accelerating the rocket fuel [the fuel goes way faster, and energy goes like velocity squared], but the momentum has to be split equally and oppositely). This point of view explains, for example, why we have to consume energy to slow down an asteroid with rockets, rather than being able to capture that energy like regenerative braking on an electric car.
@@ -171,8 +182,9 @@ And also, yeah -\\
 EDIT: Okay, thought of how to bring costs down and make everything work. /Evvvvvverythinnnnnng/. Well, some things. The trick is to use lower exhaust speed, which saves on energy at the cost of reaction mass. So what you do is you build a nuclear powered cannon that literally mines up rocks (okay, still needs futuristic automation) from the asteroid and flings them out into space at only a few thousand miles per hour (say, 1 kilometer per second). If the asteroid is moving at 25000 km/s, you only have to launch, well, basically all of it in order to bring the last remaining little fragment to earth's orbit. The energy requirements can be handled by a single nuclear reactor, which only has to output ~10 megawatts for a few decades. Sure, you only get a tiny, tiny portion of your initial asteroid, and could have much better spent that time using a somewhat bigger cannon to chuck rocks from earth into space, but it's the moral victory that counts.
 :PROPERTIES:
 :Author: Charlie___
-:Score: 5
+:Score: 6
 :DateUnix: 1433897756.0
+:DateShort: 2015-Jun-10
 :END:
 
 ******* Yeah, I'm no astrophysicist. I was working mostly from some basic equations and dimensional analysis, assuming 100% efficiency, and forgetting about Newton's third law. Of course, I KNEW I was being exceptionally simplistic, so I figured I wasn't any more accurate than "approximately the right order of magnitude, give or take a couple", but it's an idea of just how big of a rock we're dealing with. :P
@@ -180,6 +192,7 @@ EDIT: Okay, thought of how to bring costs down and make everything work. /Evvvvv
 :Author: codahighland
 :Score: 1
 :DateUnix: 1433910711.0
+:DateShort: 2015-Jun-10
 :END:
 
 
@@ -188,10 +201,12 @@ EDIT: Okay, thought of how to bring costs down and make everything work. /Evvvvv
 :Author: Sagebrysh
 :Score: 1
 :DateUnix: 1433919264.0
+:DateShort: 2015-Jun-10
 :END:
 
 
-****** #+begin_quote
+****** u/alexanderwales:
+#+begin_quote
   10^{13} J
 #+end_quote
 
@@ -200,6 +215,7 @@ So with really favorable assumptions, that's not actually that absurd. Neat.
 :Author: alexanderwales
 :Score: 1
 :DateUnix: 1433867082.0
+:DateShort: 2015-Jun-09
 :END:
 
 ******* I redid my math on the time to collision and I was off by over an order of magnitude. It's not 56 hours to collision. Disregarding the influence of the Earth's own gravitational field, it's 75 days for the above asteroid, or 56 days for the improved asteroid we discussed elsewhere. It'll hit at around 100 km/s for the first one, or around 50 km/s for the second one. (Adding the Earth's gravitational field requires a numeric method to approximate the solution -- darn three-body problem! -- so I can't just plug formulas into WolframAlpha.)
@@ -213,6 +229,7 @@ If we say that our 10^{11} kg asteroid has an orbital velocity of 21 km/s as we 
 :Author: codahighland
 :Score: 2
 :DateUnix: 1433873423.0
+:DateShort: 2015-Jun-09
 :END:
 
 
@@ -223,6 +240,7 @@ I'll update the asteroid size.
 :Author: alexanderwales
 :Score: 1
 :DateUnix: 1433866910.0
+:DateShort: 2015-Jun-09
 :END:
 
 ****** I realized I used the distance from the asteroid to the sun instead of the distance from the asteroid to Earth, and I used Earth gravity without paying attention to distance, when I should have been using solar gravity and the inverse square law. *facepalm* On the bright side, that doesn't affect the lower bound energy requirements (only how long it would take for the asteroid to smash into the planet) and it only reduces the upper bound by less than an order of magnitude at best. (The nice thing about these crazy Fermi estimates is that you can be wrong and still be right.)
@@ -232,6 +250,7 @@ Though if you want to talk about finding a better orbit to start from, we could 
 :Author: codahighland
 :Score: 3
 :DateUnix: 1433867835.0
+:DateShort: 2015-Jun-09
 :END:
 
 
@@ -240,6 +259,7 @@ Though if you want to talk about finding a better orbit to start from, we could 
 :Author: codahighland
 :Score: 1
 :DateUnix: 1433867136.0
+:DateShort: 2015-Jun-09
 :END:
 
 
@@ -254,6 +274,7 @@ What about propulsion using nuclear weapons strapped to the asteroid? Then he co
 :Author: Nepene
 :Score: 6
 :DateUnix: 1433875350.0
+:DateShort: 2015-Jun-09
 :END:
 
 *** Decades to Earth is a total guess on my part; I didn't do any math on it. I might change that around to be some lower number of years.
@@ -263,6 +284,7 @@ I am doubtful that nuclear weapons would be considered a good propulsion method 
 :Author: alexanderwales
 :Score: 3
 :DateUnix: 1433875900.0
+:DateShort: 2015-Jun-09
 :END:
 
 **** [[http://en.wikipedia.org/wiki/Nuclear_pulse_propulsion]]
@@ -270,14 +292,16 @@ I am doubtful that nuclear weapons would be considered a good propulsion method 
 Nuclear pulse propulsion has long been a seriously considered method of moving a ship. It would shorten the timelines a lot and allow you to make it more believable that nothing could be done to stop them.
 :PROPERTIES:
 :Author: Nepene
-:Score: 6
+:Score: 5
 :DateUnix: 1433876315.0
+:DateShort: 2015-Jun-09
 :END:
 
 ***** [deleted]
 :PROPERTIES:
 :Score: 2
 :DateUnix: 1433884166.0
+:DateShort: 2015-Jun-10
 :END:
 
 ****** Their company would probably have some government oversight, and the nukes would probably be set to not allow detonation within some predetermined range of earth.
@@ -285,6 +309,7 @@ Nuclear pulse propulsion has long been a seriously considered method of moving a
 :Author: Nepene
 :Score: 1
 :DateUnix: 1433892125.0
+:DateShort: 2015-Jun-10
 :END:
 
 
@@ -323,6 +348,7 @@ Nuclear pulse propulsion has long been a seriously considered method of moving a
 :Author: autowikibot
 :Score: 1
 :DateUnix: 1433876358.0
+:DateShort: 2015-Jun-09
 :END:
 
 
@@ -339,6 +365,7 @@ I can understand not being able to stop the asteroid the first time, but if Sisy
 :Author: DCarrier
 :Score: 3
 :DateUnix: 1433886343.0
+:DateShort: 2015-Jun-10
 :END:
 
 *** If I can get some help then:
@@ -358,6 +385,7 @@ How do you set up the crypto?
 :Author: alexanderwales
 :Score: 2
 :DateUnix: 1433888005.0
+:DateShort: 2015-Jun-10
 :END:
 
 **** Dead man's switch in your computer that activates on detection on any intrusion/transmission of data packets to anywhere but sisyphus and instantly sends kill orders. That computer is used only to send messages to sisyphus(encrypted with desired one time pad). Additionally, have Sisyphus automatically lock down unless it receives a packet every X minutes to prevent people from disassembling computer. All packet transmissions are sent through this computer only. All other computers sending packets after the time of this story will cause dead man's switch to activate(Clark left today as a window where that didn't happen for hubristic purposes). Any communication with the outside world happens through another computer. The protected computer is linked only to Sisyphus(Not sure precisely how...does Sisyphus have its own comsats?)
@@ -365,6 +393,7 @@ How do you set up the crypto?
 :Author: avret
 :Score: 1
 :DateUnix: 1433889124.0
+:DateShort: 2015-Jun-10
 :END:
 
 ***** The words/antiwords solution should work for disabling the enemy's ability to access, or, hell, alternatively, just pick an one time pad on the order of 10^{high-X} char to hash everything.
@@ -372,6 +401,7 @@ How do you set up the crypto?
 :Author: avret
 :Score: 1
 :DateUnix: 1433889302.0
+:DateShort: 2015-Jun-10
 :END:
 
 
@@ -379,6 +409,7 @@ How do you set up the crypto?
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1433922830.0
+:DateShort: 2015-Jun-10
 :END:
 
 ****** If disassembling the computer took more than X min sisyphus locks down.
@@ -386,6 +417,7 @@ How do you set up the crypto?
 :Author: avret
 :Score: 1
 :DateUnix: 1433959049.0
+:DateShort: 2015-Jun-10
 :END:
 
 
@@ -404,6 +436,7 @@ Edit: One strategy that Earth might use. Threaten to torture Clark unless he giv
 :Author: DCarrier
 :Score: 1
 :DateUnix: 1433889709.0
+:DateShort: 2015-Jun-10
 :END:
 
 ***** It would seem like the way you deal with the intrusions onto your computer is to have the computer be linked to nothing but sisyphus.
@@ -411,6 +444,7 @@ Edit: One strategy that Earth might use. Threaten to torture Clark unless he giv
 :Author: avret
 :Score: 1
 :DateUnix: 1433890381.0
+:DateShort: 2015-Jun-10
 :END:
 
 ****** This isn't just about them hacking it through the internet. They can break into your house while you're asleep, disassemble your computer, and replace some of the components.
@@ -418,6 +452,7 @@ Edit: One strategy that Earth might use. Threaten to torture Clark unless he giv
 :Author: DCarrier
 :Score: 2
 :DateUnix: 1433897062.0
+:DateShort: 2015-Jun-10
 :END:
 
 ******* in my comment I deal with that
@@ -425,6 +460,7 @@ Edit: One strategy that Earth might use. Threaten to torture Clark unless he giv
 :Author: avret
 :Score: 1
 :DateUnix: 1433898333.0
+:DateShort: 2015-Jun-10
 :END:
 
 
@@ -432,6 +468,7 @@ Edit: One strategy that Earth might use. Threaten to torture Clark unless he giv
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1433922585.0
+:DateShort: 2015-Jun-10
 :END:
 
 ****** Drive encryption is more to keep people from reading what's on your laptop after they've stolen it. It's not going to work as well if they steal the laptop, copy it, install a keylogger, give it back to you, and wait for you to type in the password.
@@ -439,12 +476,14 @@ Edit: One strategy that Earth might use. Threaten to torture Clark unless he giv
 :Author: DCarrier
 :Score: 1
 :DateUnix: 1433923701.0
+:DateShort: 2015-Jun-10
 :END:
 
 ******* [deleted]
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1433924707.0
+:DateShort: 2015-Jun-10
 :END:
 
 ******** The fist time you type it in, the keylogger will record the password and your security is gone.
@@ -452,6 +491,7 @@ Edit: One strategy that Earth might use. Threaten to torture Clark unless he giv
 :Author: DCarrier
 :Score: 1
 :DateUnix: 1433925452.0
+:DateShort: 2015-Jun-10
 :END:
 
 
@@ -459,9 +499,11 @@ Edit: One strategy that Earth might use. Threaten to torture Clark unless he giv
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1433912763.0
+:DateShort: 2015-Jun-10
 :END:
 
-***** #+begin_quote
+***** u/alexanderwales:
+#+begin_quote
   code may not be modified and released by the same person
 #+end_quote
 
@@ -472,6 +514,7 @@ Maybe I've just been working at shitty places, but every large company that I've
 :Author: alexanderwales
 :Score: 1
 :DateUnix: 1433913849.0
+:DateShort: 2015-Jun-10
 :END:
 
 
@@ -481,6 +524,7 @@ You know, I wonder what Clark would do if everyone involved refused to tell anyo
 :PROPERTIES:
 :Score: 3
 :DateUnix: 1433887001.0
+:DateShort: 2015-Jun-10
 :END:
 
 
@@ -488,6 +532,7 @@ You know, I wonder what Clark would do if everyone involved refused to tell anyo
 :PROPERTIES:
 :Score: 3
 :DateUnix: 1433913979.0
+:DateShort: 2015-Jun-10
 :END:
 
 *** Not only that, they could torture him for years on end to verify his answers are consistent. People tend to underestimate torture.
@@ -495,6 +540,7 @@ You know, I wonder what Clark would do if everyone involved refused to tell anyo
 :Author: IomKg
 :Score: 1
 :DateUnix: 1433926582.0
+:DateShort: 2015-Jun-10
 :END:
 
 
@@ -507,6 +553,7 @@ Problem a) getting in more than one slingshot from either of those would take re
 :Author: Synonimus
 :Score: 2
 :DateUnix: 1433865043.0
+:DateShort: 2015-Jun-09
 :END:
 
 *** Mind you that particular asteroid is overkill. See my other comment, but 1999 FN53 is 680m diameter (that is, less than 1/3 the diameter -- less than 1/27 the volume), and an asteroid of that size with HALF the estimated density of (6178) 1986 DA (and therefore less than 1/54 the mass) would still be enough to wipe out all life on the planet.
@@ -514,6 +561,7 @@ Problem a) getting in more than one slingshot from either of those would take re
 :Author: codahighland
 :Score: 3
 :DateUnix: 1433865282.0
+:DateShort: 2015-Jun-09
 :END:
 
 
@@ -524,6 +572,7 @@ The energy required is a bigger concern.
 :Author: alexanderwales
 :Score: 2
 :DateUnix: 1433866033.0
+:DateShort: 2015-Jun-09
 :END:
 
 **** Earth's L3, L4, or L5 Lagrange points would be useful. It just takes a little bit of extra thrust and a lot of patience to navigate to those -- once you're not in Earth orbit anymore, you can just coast along in your own solar orbit until the asteroid catches up with you. Then you just break off pieces and chuck them back to Earth (likewise coasting along a solar orbit), and catch them from a processing station in high Earth orbit.
@@ -531,8 +580,9 @@ The energy required is a bigger concern.
 Lunar Lagrange points are also options but I'm not certain we want something that massive in THAT close of an orbit to Earth.
 :PROPERTIES:
 :Author: codahighland
-:Score: 4
+:Score: 5
 :DateUnix: 1433866992.0
+:DateShort: 2015-Jun-09
 :END:
 
 ***** Lunar lagrange points are close, but they are [[https://what-if.xkcd.com/58/][very far away in speed]] (and, even more safely, angular momentum) :P
@@ -540,6 +590,7 @@ Lunar Lagrange points are also options but I'm not certain we want something tha
 :Author: Charlie___
 :Score: 1
 :DateUnix: 1433899274.0
+:DateShort: 2015-Jun-10
 :END:
 
 ****** I was more wondering what the gravitational effects might be on the Earth-Moon system rather than just "oh yeah, that's close enough that it might hit us". Yeah, I know the moon's mass is like the square of our asteroid's mass, but I haven't yet speculated about stuff like tidal effects.
@@ -547,6 +598,7 @@ Lunar Lagrange points are also options but I'm not certain we want something tha
 :Author: codahighland
 :Score: 1
 :DateUnix: 1433910849.0
+:DateShort: 2015-Jun-10
 :END:
 
 
@@ -556,6 +608,7 @@ Unfortunately for the God Emporer, this is equivalent to a stream cipher, and we
 :PROPERTIES:
 :Score: 2
 :DateUnix: 1434176364.0
+:DateShort: 2015-Jun-13
 :END:
 
 
@@ -563,6 +616,7 @@ Unfortunately for the God Emporer, this is equivalent to a stream cipher, and we
 :PROPERTIES:
 :Score: 2
 :DateUnix: 1433871324.0
+:DateShort: 2015-Jun-09
 :END:
 
 *** Wait, yeah. If it's going to take a few decades to get to them, can't they just arrest the guy and launch another mission to divert the asteroid's course? It's not really even a threat... Hell, they could send up second Sisyphus to destroy and salvage Sisyphus and bring the asteroid back to Earth as originally planned.
@@ -570,6 +624,7 @@ Unfortunately for the God Emporer, this is equivalent to a stream cipher, and we
 :Author: Transfuturist
 :Score: 3
 :DateUnix: 1433873801.0
+:DateShort: 2015-Jun-09
 :END:
 
 **** Is this something that could be solved by assuming the right asteroid orbit? That is, could you have narrow enough launch windows that delta-v is too prohibitive outside of certain times, and have the impact be timed so that it comes prior to the next launch window?
@@ -581,6 +636,7 @@ The solution might have to be lowering the travel time to Earth, but that makes 
 :Author: alexanderwales
 :Score: 3
 :DateUnix: 1433874653.0
+:DateShort: 2015-Jun-09
 :END:
 
 
@@ -588,6 +644,7 @@ The solution might have to be lowering the travel time to Earth, but that makes 
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1433883511.0
+:DateShort: 2015-Jun-10
 :END:
 
 ***** I don't think that sort of replacement could be done with sufficient confidence remotely and autonomously without the original having been specifically designed that way.
@@ -595,6 +652,7 @@ The solution might have to be lowering the travel time to Earth, but that makes 
 :Author: Transfuturist
 :Score: 1
 :DateUnix: 1433914556.0
+:DateShort: 2015-Jun-10
 :END:
 
 
@@ -602,6 +660,7 @@ The solution might have to be lowering the travel time to Earth, but that makes 
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1433858684.0
+:DateShort: 2015-Jun-09
 :END:
 
 
@@ -609,6 +668,7 @@ The solution might have to be lowering the travel time to Earth, but that makes 
 :PROPERTIES:
 :Score: 1
 :DateUnix: 1433870942.0
+:DateShort: 2015-Jun-09
 :END:
 
 *** It would actually be "another orbital period's time", but I couldn't immediately think of a non-clunky way of saying that. I'll change it.
@@ -620,6 +680,7 @@ The solution might have to be lowering the travel time to Earth, but that makes 
 :Author: alexanderwales
 :Score: 3
 :DateUnix: 1433871217.0
+:DateShort: 2015-Jun-09
 :END:
 
 **** "another year's time" sounds better...
@@ -627,6 +688,7 @@ The solution might have to be lowering the travel time to Earth, but that makes 
 :Author: Transfuturist
 :Score: 1
 :DateUnix: 1433873664.0
+:DateShort: 2015-Jun-09
 :END:
 
 
@@ -637,6 +699,7 @@ Or probably more accurately, that Clark had set a dead man's switch on Sisyphus;
 :Author: codahighland
 :Score: 1
 :DateUnix: 1433873727.0
+:DateShort: 2015-Jun-09
 :END:
 
 
@@ -647,6 +710,7 @@ Long story short - because rockets spend most of their energy in kinetic energy 
 :Author: Charlie___
 :Score: 1
 :DateUnix: 1433897843.0
+:DateShort: 2015-Jun-10
 :END:
 
 
@@ -657,4 +721,5 @@ Long story short - because rockets spend most of their energy in kinetic energy 
 :Author: recursiveAI
 :Score: 1
 :DateUnix: 1434145967.0
+:DateShort: 2015-Jun-13
 :END:

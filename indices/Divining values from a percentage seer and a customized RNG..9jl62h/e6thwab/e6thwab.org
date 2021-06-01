@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: sickening_sprawl
+:Score: 5
+:DateUnix: 1538167685.0
+:DateShort: 2018-Sep-29
+:END:
+
+#+begin_quote
+  In the fanfic "Finding the Path", a fanfiction of Worm, that seer is given a computer which generates a random number, in which all possible random numbers have a preset and different chance. It also has the ability to do a lookup on that chance to determine which random number has it. Using this tool, the seer can ask a question such as "What is the chance that the killer's phone number will appear on this device when I press the button?" When the power responds "14.234215%", the seer can press the button, see /a/ number show up (doesn't matter what it actually says), then look up "14.234215%" to find out that only "6278199231" has that percentage chance of being shown. The seer then can conclude that the killer's phone number is 627-819-9231.
+#+end_quote
+
+The problem with this is that your answer doesn't /actually/ have that many bits of precision. There is always a non-zero chance that your mouse will fail, your electricity will cut out, a cosmic ray will flip a bit, the earth will explode, etc, and so if you're depending on the nth bit of the result to signal information you're going to be wrong.
+
+With your example, there are 9,999,999,999 valid phone numbers just in the US. You'd have to split a percentile into that many unique buckets, but your answer always has some epsilon of uncertainty which is more and more significant with the number of buckets you have.
+
+The better way to do it would have n buckets and an n-arity partition search. A phone number is only ~34 bits of entropy, and you can use your scheme to narrow into a lot more than 2 buckets each step. (1,2) has a 1% chance, (2,3) has a 2% chance, etc., then ask for the probability of the phone number being greater than the first element of the random number pair times a billion and less than the second number times a billion. Round the probability to the nearest chance, and you know it's within the range. Repeat with (1.1,1.2) etc. until you're narrowed down.
+
+You'd have to experiment with the error rate, but you could probably get a very large n, and at each iteration you're sure you didn't make a mistake - if you accidentally round to the wrong bucket, when you ask the question it'd say it only has a 0.0000001% chance of being correct because none of the possible outputs contain the phone number unless you get bitflips.

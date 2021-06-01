@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: Threedoge
+:Score: 1
+:DateUnix: 1405645607.0
+:DateShort: 2014-Jul-18
+:END:
+
+Okay, that was really bad wording on my part. Let me just build a framework here, and try not to get you more confused.
+
+In order for a spell to determine an information based value it must be able to have a way to calculate by moving matter around.
+
+Lets take your purposed question of determining if the number of primes between 1 and 10^{10^{10^{100}}} is even or odd. To determine if a number is prime or not you would have to set up a spell to move particles around to say if a number is prime or not.
+
+So lets say it wants to calculate if seven is prime or not. I would move 7 particles into one specified area. Next it will remove particles in lots of 1 to 7. For example for 2 it would remove two particles at a time until it can't remove two particles at a time.
+
+If for every number of lots the calculation area is not empty then it will add a particle to the group of particles that total the number of primes found.
+
+Once done it will find if the number of remaining particles is even or odd, and move your stone in one direction or another.

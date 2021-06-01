@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: masasin
+:Score: 2
+:DateUnix: 1512299919.0
+:DateShort: 2017-Dec-03
+:END:
+
+The way he was calculating it before was wrong, but you could do it the way you're saying. I did it earlier by brute force, though you could probably solve a system of equations for that, since you have the prevalence terms in separate parts of the denominator.
+
+That being said, if you know P(T1 | R1) for a given population, you probably already know P(R1 | T1). And to calculate P(R1 | T1) from P(T1 | R1) in the first place, you'd need P(T1) and P(T2) of that population, which [[/u/DaystarEld]] did not give us.
+
+For the narrative's sake, I'd say setting P(T1 | R1) as P(R1 | T1) and asking for P(T1 | R1) as he did is probably the way to go.
+
+I also just made [[https://www.reddit.com/r/rational/comments/7gujj6/rst_pokemon_the_origin_of_species_ch_50_comfort/dqp4h7c/][this reply]] addressing the idea of P(R1 | T1) not changing as P(T1) and P(T2) change.
+
+Anyway, I should be sleeping now. It's 4:18 local time.

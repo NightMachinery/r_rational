@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: darvistad
+:Score: 1
+:DateUnix: 1426833758.0
+:DateShort: 2015-Mar-20
+:END:
+
+Design the nanites to emit and respond to signals as follows:
+
+1. Nanites continuously emit a short-ranged signal permitting other nanites to replicate. Unless they receive this signal from a sufficiently large number of neighbors, nanites self-destruct. This means that single nanites can't be blown to new locations by the wind and start new colonies outside of your control. It also makes it harder to get a new colony up and running outside of controlled conditions.
+
+2. At random, a small fraction of nanites will emit signals that are picked up and transmitted as a wave across the colony. Transmitting these signals requires energy that could be used for replication, slowing growth. The signals are designed so that they can pass through layers of nanites, but rapidly drop off in power as they do so. Receiving a weakened signal primes the nanites to cannibalize their neighbors in the direction of the signal's source, and receiving a full strength version of the signal cancels this command. If a nanite only detects the weakened form of the signal, this indicates that one of its neighbors one layer up has failed to transmit, causing it to be cannibalized. The more nanites are in a colony, the more of these signals are being transmitted, causing the replication rate to drop and policing of non-transmitting mutants to increase.
+
+3. This is the most important one. When nanites shut down as programmed, they emit a signal that overwrites nearby nanites' code with these three laws. This serves as a counter to any sort of mutations that could eventually produce a less restrained replicator. From a selfish gene perspective, the nanites' code has as much to gain by having its host die and transmit its programming to its neighbors as it does by causing the nanite to reproduce cancerously. Additionally, while it would take multiple rounds of mutation and selection to create grey goo, it would take only one round of this suicide signaling to return the nanites to factory settings. Nanites that emit the initial signals in rule 2 shut down, so there are always some obediently suicidal nanites in every colony making sure these directives are continuously reinforced for the colony as a whole.

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: buckykat
+:Score: 4
+:DateUnix: 1516381784.0
+:DateShort: 2018-Jan-19
+:END:
+
+Random number generators are actually a Big Deal in computing. Do you want an RNG or a pRNG? The former needs an outside entropy source like atmospheric noise or temperature fluctuations or something. The latter exists in software and gives random-ish results which are generally good enough if you're not doing anything cryptographic with them.
+
+#+begin_quote
+  Googling mostly turns up random number generators, but I'm looking for something that can, at a bare minimum, pick something from a list of plots that I've already written out, when I want to write something but can't pick one.
+#+end_quote
+
+Number your list. To a computer, everything is numbers.

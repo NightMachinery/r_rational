@@ -1,0 +1,17 @@
+:PROPERTIES:
+:Author: varselpalm
+:Score: 2
+:DateUnix: 1437624720.0
+:DateShort: 2015-Jul-23
+:END:
+
+That's an interesting puzzle. I think it's quite likely impossible, but I have one I have one plausible looking setup which I haven't properly disproved so I guess I'll post it anyway.
+
+Given objects with masses 1, 2 and 3 (these masses in particular might not be right, but that's the ordering, and the hypothesis is that there's some values that would):
+
+1. Start in the state: 1------32
+2. Launch object 2 away from 1, and lock 2 once you're in the state: 1-----3---2
+3. Gravity will eventually turn this into (you can extract some energy here as well): 1--------32
+4. Then unlock 2, and extract the energy from it falling to 132 which looks like it should be less than the energy to reset it to 1------32 plus the delta between what you use in the launch and what you can recover in step 3.
+
+It should be relatively easy to prove whether that works and whether it's possible at all with gravity by actually doing the math, which I might do eventually but don't feel like right now.

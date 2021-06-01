@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: UltraRedSpectrum
+:Score: 1
+:DateUnix: 1473552775.0
+:DateShort: 2016-Sep-11
+:END:
+
+#+begin_quote
+  [[/u/UltraRedSpectrum]] mentioned having Metapod/Kakuna evolve through time and not leveling, and age is honestly probably the way to abstract that. I love the idea--having bug pokemon hit the "age" cap faster was my initial brainstorm concept, but the only problem I have with it is I abhor grinding, and this seems like the sort of thing that leads to that. Do I leave my game running so everyone ages? Is it based on steps instead? I think you're right in that leveling needs to somehow correlate with age, but I'm not sure what the answer is yet.
+#+end_quote
+
+Avoiding grinding is definitely a tricky issue, and while there are a few ways around it, none of them are foolproof. Two ideas come to mind:
+
+1) Take careful measure of how many units of time (either minutes or steps, I'd go with steps) it takes until you want the player to have a Butterfree, and at what time they're likely to catch a Caterpie, and plan the evolution accordingly. For example, since we're only doing the first gym, we might test how long it takes a normal player to get to Pewter, and try to make it so that, if a player catches the first Caterpie they run into, it'll evolve into a Butterfree by the time they're facing the gym. In an alternate universe in which we were doing two gyms, we might have it evolve into Metapod by Pewter and Butterfree some time before Cerulean, since Butterfree are pretty bad against Rock-types anyway. Obviously you'd want to create a bunch of different options and test, test, test to see which one felt best.
+
+2) Treat time as a resource in your game design. This requires a huge departure from the original Pokemon games and is therefore very impractical, but I feel it's in line with the pie-in-the-sky "Witchermon" you said you weren't going to do, so I figured I might as well bring it up as a theoretical exercise. In this case, you make the game very difficult and put the player under a great deal of pressure. Any Ice Pick Lodge game is a good example of this. The idea is that the player will feel as though, by having the Caterpie in their party, they aren't grinding steps so much as multitasking as part of a grand strategy. You'd also combine it with some of what I described in 1). There's obviously a lot more to it than that, but this post is getting a bit long as-is.
+
+The issue with both is that the whole thing gets more effective the more immersive the game is, and immersion really isn't in the cards at the moment. I'd say that if you implement aging, you should implement age-based evolution, but otherwise just stick with levels. As always, I'm in favor of launching 1.0 ASAP so you can test everything, and saving any extra bells and whistles for 1.1+.

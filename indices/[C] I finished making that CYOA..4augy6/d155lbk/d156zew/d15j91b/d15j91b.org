@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 3
+:DateUnix: 1458379033.0
+:DateShort: 2016-Mar-19
+:END:
+
+When you say "rename", do you mean you gave it the same name as the old version?
+
+If not, you may need to change the line in the HTML that includes the script. Currently it is:
+
+#+begin_example
+  <script src="script.js" type="text/javascript"></script>
+#+end_example
+
+You would need to change "script.js" to whatever the new filename is in your google drive directory.
+
+If it's not a naming thing, I may have made a serious mistake somewhere. Can you open up the [[http://webmasters.stackexchange.com/questions/8525/how-to-open-the-javascript-console-in-different-browsers][developer console]] and see if there are any errors?

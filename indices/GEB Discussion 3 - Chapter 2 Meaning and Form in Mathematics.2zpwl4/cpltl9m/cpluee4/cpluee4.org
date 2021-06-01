@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: rspeer
+:Score: 2
+:DateUnix: 1426921376.0
+:DateShort: 2015-Mar-21
+:END:
+
+So, on the one hand, you can go down a lot of levels. On MetaMath, one site that collects mathematical proofs that are fully broken down into axioms, you can find [[http://us.metamath.org/mpegif/2p2e4.html][a proof that 2+2=4]] that can be expanded into more basic steps up to 150 levels deep.
+
+But it's got to be a finite number of steps in the end. Eventually you reach your axioms and your basic rules of inference, whatever you choose them to be. You could choose some other rules that put you farther away from the thing you want to prove, but there must still be a finite number of steps. So at some point you hit the "atoms" of your proof, or else you don't actually have a proof.
+
+And we choose to agree on the purpose of the system, so that we can't be trolled by the Tortoise. MetaMath and similar systems, for example, make a distinction between "(2 + 2) = 4" and "⊢ (2 + 2) = 4". The first is a proposition to be manipulated by the rules, the second is an actual result that we believe, and when we firmly distinguish these, the Tortoise's paradox doesn't trip us up.

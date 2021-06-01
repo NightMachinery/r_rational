@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1453406415.0
+:DateShort: 2016-Jan-21
+:END:
+
+Mobile web is still in beta.
+
+Spoiler tags are implemented through custom CSS, because reddit doesn't have sitewide spoiler functionality. The mobile site doesn't load the custom CSS, so it breaks all subreddit-level spoiler functionality.
+
+If you have an app, most of them don't load in custom CSS either, but they have special static rules that allow spoiler tags in the most common formats like ours, which is =[text](#s "spoiler text")=. I know this is how redditisfun does it and I assume that's how other apps do it as well.
+
+According to [[/u/akahotcheetos]], this is a [[https://www.reddit.com/r/mobileweb/comments/39nv1r/support_for_spoiler_tags/cs7awsb]["high priority"]] but that was seven months ago. There are still apparently people working on the mobile site, since admins like [[/u/schwers]] and [[/u/nr4madas]] still post in [[/r/mobileweb]], but they haven't fixed something that breaks basic functionality for discussion and requires a ten line change to their CSS without any redeployment, something that's already implemented by all their mobile competitors.
+
+So yes, I think it's fair to see this as just giving you the finger. Unfortunately, there's no much that we can do on our end.

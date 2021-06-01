@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1429158349.0
+:DateShort: 2015-Apr-16
+:END:
+
+I didn't understand your multiple machines rules--when I press a button on any of them any single one of them might flash, but only one? Or any number? If multiple machines might flash, will they flash at the same time?
+
+I want to generate a multi-bit channel, but since I don't really get your rules I'll just throw some spaghetti at the wall:
+
+I'm defining a term: the Clearing Time (CT) is the amount of time I need to wait between experiments to be confident that they are not interfering with one another.
+
+- I have four devices and a machine that can press all of them at exactly the same time. I press it at 1pm on Sunday. What happens?
+- If they flash at different times, then I run the same experiment again after CT. Do the same boxes flash at the same time diffs?
+- Wait CT, have my robot push the buttons with a slight time delay between them? Based on the results, can I predict what combination of time delays the robot used?
+
+If so, we have a multi-bit channel and can, with enough machines, send arbitrary amounts of data back. Readout may be slow since the flashes might be distributed over hours or days, but it's a lot better than one bit.

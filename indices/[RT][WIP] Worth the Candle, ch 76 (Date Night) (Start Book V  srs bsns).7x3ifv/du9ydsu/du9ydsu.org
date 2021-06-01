@@ -1,0 +1,27 @@
+:PROPERTIES:
+:Author: adgnatum
+:Score: 7
+:DateUnix: 1518677383.0
+:DateShort: 2018-Feb-15
+:END:
+
+#+begin_quote
+  but if we had enough of the Dorises, we could essentially use them as hold variables
+#+end_quote
+
+/Technically/, you only need two (hey, constant space complexity!) and you can make your plan significantly less* insane.
+
+- Copy ally's soul onto a Doris.
+- Copy (a distinct) Doris appearance onto ally.
+- Heal ally to Doris appearance.
+- Copy ally soul back onto ally. (*Do not* heal them.)
+
+When you're done you should make sure to copy the template Doris back onto the hold Doris. Good practice.
+
+Pros: If anything goes awry after this point, conventional healing resolves it. Juniper is not particularly required. There will be questions, but ...
+
+Cons: Forgo healing while disguised[[https://wiki.teamfortress.com/wiki/Disguise#Gameplay_while_disguised][.]]
+
+*Professional programmer. Closed course. Do not try this at home, +soul+ school, or work.
+
+That means-- /Juniper, NO./

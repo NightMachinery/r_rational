@@ -1,0 +1,30 @@
+:PROPERTIES:
+:Author: eternal-potato
+:Score: 2
+:DateUnix: 1506110531.0
+:DateShort: 2017-Sep-22
+:END:
+
+#+begin_quote
+  Hmm, so have three branches. Let's say the agnostic one is master and then A and B. So I initially branch B off of master, commit any B-specific code to B, and then in the future whenever I code anything I make sure to commit it to master? Unless of course it's something B-specific again, in which case I try and get the B-specific stuff into a commit on B, and then all the rest on master.
+#+end_quote
+
+Right.
+
+#+begin_quote
+  Which branch am I checked into for this? I had thought that simply checking out a different branch would be where I put my commits, but are you saying I could have B checked out and still commit to master from it?
+#+end_quote
+
+I don't think you can commit to branches other than the currently checked out one, but you don't need to, you can just check out the required branch and commit there. Yes, that would require you to either plan your commits upfront (a useful thing to do anyhow), or split out and move portions of uncommitted changes to a different branch.
+
+I.e after coding on =master=, either select what stays there,-
+
+=git add -p  && git commit && git stash=
+
+-or select what gets moved to =B=-
+
+=git stash -p && git add && git commit=.
+
+Then in either case:
+
+=git checkout B && git merge master && git stash pop && git add && git commit=

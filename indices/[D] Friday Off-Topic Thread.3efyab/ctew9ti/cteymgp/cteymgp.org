@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Charlie___
+:Score: 2
+:DateUnix: 1437768102.0
+:DateShort: 2015-Jul-25
+:END:
+
+Bearing in mind that I know nothing about the subject...
+
+How about inflating shapes? Start with a sphere of some minimum size in a random valid location. When your shape isn't in contact with anything, increase its radius. When it's in contact with things only on one half of the sphere (in practice, things that are almost opposite may be a problem, so one-third or one-quarter might be better), inflate it by moving it away from the contacts as you increase the radius (the farther apart the contact points are, the more you have to move). When you can't grow as a sphere any more, find the average plane that the points of contact lie in and try to grow as an ellipsoid with long axis normal to that plane.
+
+There are some interesting problems with this approach, but I bet someone else has worked out a good implementation.

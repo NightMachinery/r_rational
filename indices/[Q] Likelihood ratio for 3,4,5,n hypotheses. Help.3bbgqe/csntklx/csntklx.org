@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: SpeakKindly
+:Score: 3
+:DateUnix: 1435689610.0
+:DateShort: 2015-Jun-30
+:END:
+
+You can have ratios of more than two things: for example, 2, 4, and 6 are in a 1:2:3 ratio.
+
+You probably want to know the ratio P(w|pp) : P(b|pp) : P(p|pp) : P(r|pp) : P(y|pp), which is the likelihood ratio of the car being white to the car being black to the car being pink to the car being red to the car being yellow, given the forensics result.
+
+Since P(w|pp) = P(pp|w) P(w) / P(pp) by Bayes's law, this ratio is the prior ratio, P(w):P(b):P(p):P(r):P(y), multiplied by P(pp|w):P(pp|b):P(pp|p):P(pp|r):P(pp|y).
+
+Let's say that all witnesses are equally credible, and all colors equally likely, except black cars occur twice as often. Then the prior ratio is 1:2:1:1:1. Next, let's say all cars are equally likely to leave pink paint, except pink cars do it with five times the probability. Then we multiply by 1:1:5:1:1, to get 1:2:5:1:1. This means if the hypotheses are exhaustive, the probability that the car is pink is 5/(1+2+5+1+1) = 1/2.

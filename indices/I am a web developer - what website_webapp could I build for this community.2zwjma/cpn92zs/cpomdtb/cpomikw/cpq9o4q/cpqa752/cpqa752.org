@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1427297193.0
+:DateShort: 2015-Mar-25
+:END:
+
+An n-gram can be a unigram (one word), bigram (two words), trigram (three words), etc.
+
+"The" is a unigram. When you see it at 10%, that percent is the occurrence as a percent of /all unigrams/. So if the graph shows "the" at 10% in 1990, that means that if you were to slice every book on record (/edit: for 1990/) into unigrams, and put those unigrams in a hat, your odds of drawing the word "the" from the hat would be 10%. If you added together the percents for /all unigrams/, you would have 100%.
+
+Same goes for bigrams. If you divide up the entire corpus into bigrams, how many of those are "Albert Einstein" or "loosey goosey" or "wild card"? (For an example of how this works, the sentence "Albert Einstein was smart" would get divided into three bigrams: "Albert Einstein", "Einstein was", "was smart")
+
+This tends to be a bit better than just counting whether an indexed book has that word, because otherwise an entire book about Einstein would be counted the same as a single reference. Given the sheer size of the corpus, mostly you get smoothish lines.
+
+[[https://books.google.com/ngrams/info][Check out their About page for more information.]]

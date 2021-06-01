@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: LucidityWaver
+:Score: 5
+:DateUnix: 1507533928.0
+:DateShort: 2017-Oct-09
+:END:
+
+#+begin_quote
+  won't be any code that says "don't recreate the Controller's soul any more".
+#+end_quote
+
+By that same token, there isn't any code to say 'start using the template instead.' However, there probably is code to prevent the loop from crashing entirely if the expected controller's soul is not found to move into the next iteration. Even if that would trigger loop shut-down, the shut-down would be prevented by the check for an active marker in the loop (Zach).

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1441989047.0
+:DateShort: 2015-Sep-11
+:END:
+
+Nope, this dataset just naively takes whatever score is provided by the reddit API. They're not inaccurate to the same degree, because reddit doesn't fuzz the same on all comments; fuzzing increases as absolute score increases. (The dataset is ~2 billion comments, so I imagine scraping it many times over in order to guess at "true" score would have been wildly impractical.) Though I suppose you could ask [[/u/stuck_in_the_matrix]] for clarification; he's the one making the datasets and has a huge amount of knowledge about the reddit API.

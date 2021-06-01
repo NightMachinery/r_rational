@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: SoylentRox
+:Score: 2
+:DateUnix: 1516316748.0
+:DateShort: 2018-Jan-19
+:END:
+
+First, when you design an AI, you do need to explore. You need a second, meta-algorithm that rewards your agent for exploring, but also computes the cost of exploration, and chooses rewards proportional to the gain.
+
+That is, if you just always pick the best outcome based on your current data, you'll rapidly get stuck on local maxima.
+
+So exploring in a sense is just a way to maximize longer term rewards, which your agent should be designed for. It's still trying to maximize terminal values, it's just willing to pay a short term cost.
+
+It still is rational to make sacrifices.
+
+Second, one critical fact you're missing is that you don't know any of these things, but it is not correct thinking to use hindsight. If you're playing a card game, a game where you have played long enough to derive the exact rules, you cannot rationally change your strategy that is optimal if suddenly you hit a streak of aces. Unless the streak is so long to indicate to you that the rules of the game have changed. It's hindsight thinking to say "well you're getting tons of aces <in the game blackjack>, you need to hit more often".
+
+Similarly, if you fail to take extreme measures to save a patient who is terminal, and they live anyway, it doesn't mean it wasn't the right choice to try extreme measures. I do actually agree that you can limit your sacrifices to people who are highly likely to die anyway, and you can freeze their brains after, reducing the loss. I'm just giving an example of how "evil" actions can result in greater gain towards "good" morality.

@@ -1,0 +1,15 @@
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1438986820.0
+:DateShort: 2015-Aug-08
+:END:
+
+You need to synchronize state between each node. This is an interesting problem, and the design you choose affects so much about the experience.
+
+The most obvious way is to have one consciousness running and controlling many physical nodes at once. This brings up many issues very quickly. Do you distribute the consciousness across the physical nodes? If not, you guarantee that the nodes can't operate independently; if one of them gets in a car that enters a tunnel, you lose control of it. If so, you find yourself splitting often, and you have to implement some way of merging back together later.
+
+An efficient and relatively fault-tolerant way to go is to fork your consciousness into each node. Then, periodically, you assimilate the new memories and personality changes from each node in an elected master (in the distributed computing sense, not a political sense), produce a new version of your personality and memories, and distribute that to each node. But how long does that take? And can your nodes continue functioning (accruing new memories and personality changes) during this process?
+
+You could have a dedicated master and a series of clones. The clones go out, do specific tasks, then return to the master and submit their new memories to it. Then they reset to the master's current state and accept new orders. This workflow and organizational change means you don't care about personality changes from the clones, which in turn means you /can't/ care about personality changes -- you always want to use the master to go on dates or watch /Grave of the Fireflies/.
+
+You could have a series of independent nodes from the same base sharing memories. Since they are independent, they can have diverging personalities based on which memories they lived locally and the order in which they acquire each others' memories. This is the mechanism used by Pandora in CeruleanSlane's Atonement.

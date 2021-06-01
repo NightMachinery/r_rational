@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1486426792.0
+:DateShort: 2017-Feb-07
+:END:
+
+Oh, the =>= was just to show that he was quoting you. That's not necessary at all. You meant "quotation operator" as in =>= but I meant it as in ="=. What I /think/ happened is that you used the wrong sort of quotation marks: =“= instead of ="= (since your comment prior to editing showed a link of =#s%20%E2%80%9= and =%E2%80%9= is the HTML encoding for =“=).
+
+I guess I can test that:
+
+[[#s%20%E2%80%9Ctest%22][curly quote test]]
+
+[[#s][normal quote test]]
+
+Markdown handles the two differently, as you can hopefully see. [[http://i.imgur.com/9z1Ctgl.png][(here's what it looks like on my end)]]

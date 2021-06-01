@@ -3,22 +3,25 @@
 * [[http://www.drmaciver.com/2017/05/programmer-at-large-does-that-work/][[RT] [HSF] Programmer at Large, Chapter 11: Does that work?]]
 :PROPERTIES:
 :Author: DRMacIver
-:Score: 32
+:Score: 35
 :DateUnix: 1494679707.0
+:DateShort: 2017-May-13
 :END:
 
 ** I like this world a lot, and I'm enjoying the small slice-of-life vignettes, but after 11 chapters I'm starting to get a little antsy for conflict. I'm hoping that either Kimiko's non-centrality or the game theory simulations turn into larger problems soonish.
 :PROPERTIES:
 :Author: arenavanera
-:Score: 7
+:Score: 8
 :DateUnix: 1494727868.0
+:DateShort: 2017-May-14
 :END:
 
 *** We'll explore the problems, but it's mostly going to continue to be low-conflict slice of life, sorry.
 :PROPERTIES:
 :Author: DRMacIver
-:Score: 9
+:Score: 7
 :DateUnix: 1494750296.0
+:DateShort: 2017-May-14
 :END:
 
 
@@ -31,9 +34,11 @@ But it really seems like 90% of their job is just thinking, which seems to be a 
 :Author: failed_novelty
 :Score: 7
 :DateUnix: 1494707469.0
+:DateShort: 2017-May-14
 :END:
 
-*** #+begin_quote
+*** u/DRMacIver:
+#+begin_quote
   I'm very curious about what their 'modern' programming languages look like.
 #+end_quote
 
@@ -48,11 +53,13 @@ It would be absolutely maddening to work with unassisted, but fortunately they d
 This too can be yours for the low low price of 10,000 years of toolchain development. ;-)
 :PROPERTIES:
 :Author: DRMacIver
-:Score: 5
+:Score: 6
 :DateUnix: 1494750605.0
+:DateShort: 2017-May-14
 :END:
 
-**** #+begin_quote
+**** u/selementar:
+#+begin_quote
   absolutely maddening to work with unassisted, but fortunately they don't ever work with it unassisted
 #+end_quote
 
@@ -67,6 +74,7 @@ And then there's the point of actually /spreading the learning/ of a language, a
 :Author: selementar
 :Score: 2
 :DateUnix: 1494754137.0
+:DateShort: 2017-May-14
 :END:
 
 ***** The issue here is mostly precision of semantics and correctness of conversion. Many languages, especially older ones, don't have a precise formal semantics that tools can work with, or use system quirks that are incredibly difficult to model. Even then we're seeing some progress with formally verified compilers and the like.
@@ -76,39 +84,45 @@ If you have correctness, then the problem becomes performance, and things like l
 :Author: Jello_Raptor
 :Score: 2
 :DateUnix: 1495479613.0
+:DateShort: 2017-May-22
 :END:
 
 
 ** Why are PTYs a memetics hazard? Just because explaining them take a lot of explanation time for little to no benefit?
 :PROPERTIES:
 :Author: nicholaslaux
-:Score: 5
+:Score: 6
 :DateUnix: 1494692289.0
+:DateShort: 2017-May-13
 :END:
 
 *** I'm guessing this is related to tvtropes/Wikipedia tab explosion.
 :PROPERTIES:
 :Author: sparr
-:Score: 8
+:Score: 7
 :DateUnix: 1494698643.0
+:DateShort: 2017-May-13
 :END:
 
 **** My guess is this is it, since learning that PTY stands for "pseudoteletype" begs the question "what is a teletype" and you pretty much inevitably wind up learning the history of early time-sharing systems, the rise of glass TTYs, the history of terminal emulation and the properties of PTY devices as they are exposed through and used by POSIX-compliant systems ("What's POSIX?" asks Arthur and the can of worms goes on.) It's all interesting history and useful for modern programmers using POSIX systems, but would probably eat up the rest of Arthur's afternoon without getting them closer to solving their problem.
 :PROPERTIES:
 :Author: gryfft
-:Score: 14
+:Score: 13
 :DateUnix: 1494702279.0
+:DateShort: 2017-May-13
 :END:
 
-***** #+begin_quote
+***** u/PeridexisErrant:
+#+begin_quote
   modern programmers using POSIX systems
 #+end_quote
 
 The juxtaposition of /modern/ and /POSIX/ would probably eat the reminder of Arthur's voyage, never mind an afternoon.
 :PROPERTIES:
 :Author: PeridexisErrant
-:Score: 3
+:Score: 4
 :DateUnix: 1494740429.0
+:DateShort: 2017-May-14
 :END:
 
 ****** Hey, the standards are still useful! For example, there're a few reasons some distros [[https://wiki.ubuntu.com/DashAsBinSh][switched *from* =bash= as the default /bin/sh]] to an "arbitrary fast /POSIX-compliant shell/".
@@ -120,6 +134,7 @@ Sorry for the formatting overload.
 :Author: selementar
 :Score: 3
 :DateUnix: 1494754355.0
+:DateShort: 2017-May-14
 :END:
 
 ******* For /me/, yes. For /Arthur/... maybe not.
@@ -127,6 +142,7 @@ Sorry for the formatting overload.
 :Author: PeridexisErrant
 :Score: 3
 :DateUnix: 1494755623.0
+:DateShort: 2017-May-14
 :END:
 
 ******** Which is why I stipulated "modern," which I intended to mean the 21st century (that was probably unclear.)
@@ -134,6 +150,7 @@ Sorry for the formatting overload.
 :Author: gryfft
 :Score: 3
 :DateUnix: 1494767777.0
+:DateShort: 2017-May-14
 :END:
 
 
@@ -142,6 +159,7 @@ Sorry for the formatting overload.
 :Author: sparr
 :Score: 2
 :DateUnix: 1494891526.0
+:DateShort: 2017-May-16
 :END:
 
 
@@ -150,6 +168,7 @@ Sorry for the formatting overload.
 :Author: nerdguy1138
 :Score: 3
 :DateUnix: 1494704753.0
+:DateShort: 2017-May-14
 :END:
 
 
@@ -158,15 +177,18 @@ Sorry for the formatting overload.
 :Author: Gurkenglas
 :Score: 7
 :DateUnix: 1494688079.0
+:DateShort: 2017-May-13
 :END:
 
-*** #+begin_quote
+*** u/over_who:
+#+begin_quote
   It's unlikely that a random one of 114 interesting things will be the culprit, so /they/ should look at others before expending political capital on checking this one
 #+end_quote
 :PROPERTIES:
 :Author: over_who
-:Score: 7
+:Score: 6
 :DateUnix: 1494688328.0
+:DateShort: 2017-May-13
 :END:
 
 
@@ -175,6 +197,7 @@ Sorry for the formatting overload.
 :Author: MoralRelativity
 :Score: 2
 :DateUnix: 1494745044.0
+:DateShort: 2017-May-14
 :END:
 
 *** Its go with all the bullshit that c# has
@@ -182,6 +205,7 @@ Sorry for the formatting overload.
 :Author: monkyyy0
 :Score: 2
 :DateUnix: 1494984549.0
+:DateShort: 2017-May-17
 :END:
 
 
@@ -190,8 +214,9 @@ Sorry for the formatting overload.
 "everyone is autistic and a gendersnowflake" != "rational fiction"
 :PROPERTIES:
 :Author: BadGoyWithAGun
-:Score: 4
+:Score: 3
 :DateUnix: 1494715840.0
+:DateShort: 2017-May-14
 :END:
 
 *** Errrr... Only the main character is autistic -- the others are significantly more well-adjusted.
@@ -201,6 +226,7 @@ As for the gendersnowflake... it seems like a pretty natural progression of cult
 :Author: heiligeEzel
 :Score: 1
 :DateUnix: 1495004656.0
+:DateShort: 2017-May-17
 :END:
 
 
@@ -209,6 +235,7 @@ As for the gendersnowflake... it seems like a pretty natural progression of cult
 :Author: sephirothrr
 :Score: 1
 :DateUnix: 1494731327.0
+:DateShort: 2017-May-14
 :END:
 
 
@@ -219,9 +246,11 @@ But a general practice for such code is to rewrite it.
 :Author: selementar
 :Score: 1
 :DateUnix: 1494754874.0
+:DateShort: 2017-May-14
 :END:
 
-*** #+begin_quote
+*** u/GopherAtl:
+#+begin_quote
   But a general practice for such code is to rewrite it.
 #+end_quote
 
@@ -232,4 +261,5 @@ Even in contemporary reality, programmers who maintain legacy enterprise softwar
 :Author: GopherAtl
 :Score: 1
 :DateUnix: 1495551473.0
+:DateShort: 2017-May-23
 :END:

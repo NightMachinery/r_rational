@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 1
+:DateUnix: 1485947864.0
+:DateShort: 2017-Feb-01
+:END:
+
+Sounds like a solid plan to me!
+
+Remember that GCMII is 3D and has some fractional-cell features - it may be substantially slower than your erosion model. However you should be fine with an overnight run on a desktop; I was mostly concerned about interactive use.
+
+It's your choice of course, but using C would make me worry that substantial changes will be harder than they need to be. Scientific Python is very fast too, as most of the work happens in C or Fortran libraries (eg Numpy) and tools like Dask and Xarray make out-of-memory or cluster-level data work a cinch.
+
+Since you can't try to replicate historical observations or other models, the usual technique is to wait until long-term averages stabilise. Eg 'seasonal mean $variable for 30-60 years'. Plus, yeah, guess - you can probably assume that gross ocean temperatures will be similar to Earth for similar solar conditions for instance and just set the whole deep ocean to ~4C to start with, or air temp to a depth of ~200m. But this turns into earth systems science pretty quickly!
+
+And I must admit that I've had similar ideas (mostly simulating exoplanets for scifi stories) for a while, and I'm tempted to port/update the model myself :)

@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: FeepingCreature
+:Score: 5
+:DateUnix: 1493213467.0
+:DateShort: 2017-Apr-26
+:END:
+
+#+begin_quote
+  Ignoring that the members of the group have full access to the alerting metrics too
+#+end_quote
+
+It's not that I'm ignoring this, it's that /whoever designed their system/ was ignoring this. (Or, presumably, the entire thing is just a tool of social oppression, but I'm willing to be charitable enough to not immediately conclude this.)
+
+With a fuzzy, graded system, possibly discretized with random triggers, it /won't matter/ that people have access to the metrics, because there's no threshold to avoid.
+
+This whole thing seems like it was designed by very old school programmers, who think in terms of discrete, deterministic events and flags. This /barely/ ¹ works for an unthinking adversary like a ship engine; it fundamentally /does not/ work for a human society for exactly the reason you describe.
+
+Istm the system you want is not an alert system, but a priority queue of concerns. That solves both the spam issue and the threshold problem.
+
+¹If you take action whenever a threshold is crossed, you're gonna end up with systems that barely avoid butting up against the threshold in normal operation. (Because otherwise you'd take action and fix it.) That is not a good place to be /even for machines/.

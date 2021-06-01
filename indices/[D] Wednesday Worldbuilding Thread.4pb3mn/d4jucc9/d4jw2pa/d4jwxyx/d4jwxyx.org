@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 3
+:DateUnix: 1466629068.0
+:DateShort: 2016-Jun-23
+:END:
+
+But there's more to it than that. Single timelines still have a notion of probability.
+
+Taking your chess example, you generate all possible game logs and then remove the ones containing illegal moves. Then the "real" timeline is chosen in some way from the remaining possibilities. Is it chosen in an evenly-distributed random manner? Or could there be some bias involved, for example to favour games that end quickly?
+
+You could also generate a game of chess by having each player take turns making a random legal move. Is there some simple way you could bias the probabilities such that this random chess game has a similar sort of distribution to the "generate all possible games and then choose among them" model?

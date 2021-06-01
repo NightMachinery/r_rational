@@ -1,0 +1,38 @@
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 1
+:DateUnix: 1509569379.0
+:DateShort: 2017-Nov-02
+:END:
+
+#+begin_quote
+  ... right! Because computers don't need anything to run. They can be made arbitrarily small, run arbitrarily fast, give off no waste heat, and don't require electricity. Let's see... use the waste heat to power a small steam generator, and use the electricity from that to power the computer! Genius!
+#+end_quote
+
+They don't need to be /arbitrarily/ small or fast or efficient. They just need to be /more/ small or fast or efficient. And in the long term, that's going to be trivial. Sure, moore's law isn't going to keep up its pace forever, but we're far from the absolute limits of physics, and the better AI gets, the faster we can develop chips, which will counteract the fact the low hanging fruit has gotten picked.
+
+#+begin_quote
+  Humans are basically the opposite of all those.
+#+end_quote
+
+Hardly. Humans are plenty expensive over a lifetime in terms of both energy and material costs. Just running a brain in a vat would be more efficient than running an entire human, and at the very minimum there are individual parts of the brain that can be virtualized. We sort of already do this, in fact, with computers standing in for functions like arithmetic and map reading.
+
+#+begin_quote
+  Scifi writers have been talking about emulated minds for generations. We're a little closer than we once were, but not significantly.
+#+end_quote
+
+This is just false. We are /exponentially/ closer, by the nature of Moore's law. Emulating a roundworm is difficult because of the medical and technical aspects of virtualizing a roundworm, and virtualizing humans will be difficult for the same reasons, but in terms of pure computational power we've made utterly massive strides since even the start of the decade. And the thing is, we're already actively working towards solving those issues-- in 2013, Obama was already talking about mapping the entirety of the human brain. We've already have some low-fidelity, low-speed simulations of portions of the brain.
+
+The technology isn't here yet, and the technology won't be here in the next decade, but by the 2030's it'll start to be looking cautiously possible, and I remember doing a calculation based on the processing power of the i7-4790k and moore's law predicting that the absolute lower bound of computing power equivalent to the human brain being affordable for your average joe would happen, by the latest, 2070. Sure, my calculation assumed moore's law would keep on its pace, but I deliberately choose a slower chip than necessary-- the i7-4790k was a few years old as of the time I did my calculation, and compared to contemporary GPUs (which, with their massively parallel architecture are much better for simulating brains than single-digit threadcount CPUs) really quite slow for the purpose of simulating minds.
+
+#+begin_quote
+  It is, in fact, beyond the theoretical limits of CPU design.
+#+end_quote
+
+So the fact that it's beyond the limits of CPU design is a nonstarter. GPUs are what need to be looked at. Plus, GPUs escape one of the big design constraints on CPUs (that it's been more and more difficult to raise single-core performance by increasing clock speed due to heat issues) by just using a shit-ton of CPUs.
+
+#+begin_quote
+  Computers are nowhere close to being able to do this.
+#+end_quote
+
+tl;dr "Nowhere close" doesn't mean much when compared to exponential growth.

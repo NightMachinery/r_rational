@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: TheWalruss
+:Score: 3
+:DateUnix: 1463068766.0
+:DateShort: 2016-May-12
+:END:
+
+You just put it on a ring that spins horizontally on a vertical axle and you put a generator on the axle and you are good to go.
+
+edit:
+
+I figured I might as well explain why this works and at the same time see how feasible such a powerplant might be.
+
+Kinetic energy of a moving object is proportional to the mass of the object times the square of the velocity. At rest, your hypothetical MiHsC free-energy generator would consume 60 million joules to reach 0.015 m/s of velocity, assuming it's literally the spacecraft you proposed, taped to a stick that's attached to an electric generator. That takes exactly one second. Anyway, after one second, the MiHsC free-energy generator is carrying 200,000 * 0.015^{2} or 45 joules of kinetic energy. Shit, pretty lousy return for 60 million joule input!
+
+The next second, it would take another 60 million joules to accelerate a further 0.015 m/s, to reach 0.3 m/s. It now carries 180 joules. That's not twice as much as after one second, but four times! The next second, it reaches 0.045 m/s and carries 405 joules, which is 9 times as much as after the first second. That's increasing quadratically. Meanwhile, the total energy cost has been 60 million, 120 million, and 180 million joules, which is a linear increase.
+
+At some point, there's a break-even point, and you can extract (through the electric generator) as much energy as is being added to the system through the reactionless acceleration. At this point, you have a perpetual-motion device as you could deactivate the power plant and power the drive by its own acceleration. Let it go a little further, and you'll be extracting more energy than is required to run the MiHsC free-energy generator, meaning you can keep it running and make use of the additional energy.
+
+My back-of-the-envelope calculations show it would take about a year to spin up to this speed, which is about 15000 m/s, assuming some losses to friction and so on. That's Mach 15, so very very fast, but far from relativistic. So far, we've only considered the most naive construction: In "reality", you would skip the whole nuclear powerplant issue and just start it spinning with the electric generator, which is also a motor. You would also run a power line to the MiHsC free-energy generator, since it's needed anyway in order to run off of its own generated electric power. Then the thing could start supplying net power after only a few hours of spin-up, and would not require anything near 60MW to get started. Anyway, at this point, the faster it spins, the more extra MW it can produce. Larger wheels produce lower G-forces and allow faster speeds and greater output. If we're assuming 50% power loss through friction and whatever, a wheel going Mach 16 would generate 6MW and a wheel going Mach 17 generates 12MW, and it just goes up (quadratically) from there.

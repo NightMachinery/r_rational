@@ -1,0 +1,25 @@
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 6
+:DateUnix: 1478374319.0
+:DateShort: 2016-Nov-05
+:END:
+
+Assume there are two individuals breeding, with power levels X and Y where X ≤ Y. Their most recent shared ancestor is R generations back.
+
+If I understand the rules correctly, there are only two possible outcomes for the child's power, Z:
+
+- R ≤ X → Z = R
+- R > X → Z = X + 1
+
+In other words, the power can grow by at most 1 over the weakest parent as their limiting ancestor will be only 1 generation more distant.
+
+This means that, effectively, the only people that matter for your breeding potential are your N most recent generations of ancestry. If two breeding candidates share an ancestor N + 1 generations back, who cares? Still, in that N generations each parent has 2^{N-1} ancestors that could limit their offspring (so 2^{N} total unique individuals needed).
+
+The most interesting implication here in a societal sense is that only people of equal power can create offspring more powerful than they. If Mum is T-8 and Dad is T-7, their children can be, at best, T-8 (i.e. the same as Mum).
+
+This would seem to encourage a caste system for reproduction. Low power partners devalue offspring, so if you stigmatise them marrying "outside their kind" then their children will be more likely to be more powerful, which in turns increases the chances of replenishing the numbers in the upper levels (which take a really long time to refill if depopulated).
+
+Since the biggest limiting factor to your nation's power is going to be the highest power individuals, you'd want to focus on making them. Indirect methods are going to run into a simple numbers problem; the aforementioned exponential ancestors requirement means that two random T-12s (or whatever high tier) are quite unlikely to be able to produce a T-13. Breeding programs to create needed diverse lines would be crucial (e.g. if person A has exactly half the kingdom's people, try to create person B with the other half).
+
+With that in mind, I'd create a Ministry of Ancestry to provide free ancestry checking for all citizens and to offer money to citizens who wished to be assigned spouses to fill in the gaps (the money offered would be scale with their power somehow, as you'd want a pliable 9 more than a 3).

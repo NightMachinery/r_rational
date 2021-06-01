@@ -1,0 +1,21 @@
+:PROPERTIES:
+:Author: DataPacRat
+:Score: 1
+:DateUnix: 1435431901.0
+:DateShort: 2015-Jun-27
+:END:
+
+Haven't tried yet, will try now... no soap. :
+
+#+begin_example
+  [dan@warren singularity-0.30c]$ python2.7 ./singularity.py 
+  Cannot open ../data/techs.dat for reading! ([Errno 2] No such file or directory: '../data/techs.dat')
+  [dan@warren singularity-0.30c]$ python3.4 ./singularity.py 
+  Traceback (most recent call last):
+    File "./singularity.py", line 1, in <module>
+      import code.singularity
+    File "/home/dan/Downloads/singularity-0.30c/code/singularity.py", line 54
+      except Exception, reason:
+                      ^
+  SyntaxError: invalid syntax
+#+end_example

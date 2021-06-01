@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: redstonerodent
+:Score: 3
+:DateUnix: 1466255604.0
+:DateShort: 2016-Jun-18
+:END:
+
+I'll assume that the edge farthest from the center lantern is 1 mile from the outer lantern (the edges aren't constant distance from outer lanterns). That means the target gliminance is 1.77, instead of 1.
+
+With only one lantern, you get 0.95 mile radius, and an area of 2.82, down from 3.14.
+
+With 7 lanterns: previously the farthest edge was 3.06 from the center; now it's 3. The safe area is now 24.38 (instead of 24.99). It looks like [[http://i.imgur.com/bcJ8vwg.png][this]] ([[http://i.imgur.com/2lKI98b.png][previous version]]). Overall, increasing the target gliminance has a similar effect to spacing the lanterns more and scaling everything down.
+
+I think it would be reasonable for characters in the story to not have done these calculations, and be working primarily on the approximation that lanterns protect a circle around them with radius 1 mile. Then the city would be 7 tangent circles, plus the gaps in between them, possibly plus something on the outside where circles meet.

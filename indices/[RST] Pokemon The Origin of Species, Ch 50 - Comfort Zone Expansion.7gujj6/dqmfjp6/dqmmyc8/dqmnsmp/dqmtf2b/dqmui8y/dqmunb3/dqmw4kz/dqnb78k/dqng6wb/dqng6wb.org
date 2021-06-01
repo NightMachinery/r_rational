@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: daydev
+:Score: 3
+:DateUnix: 1512206258.0
+:DateShort: 2017-Dec-02
+:END:
+
+#+begin_quote
+  I have this:
+
+  #+begin_example
+    12% of reported Tyranitar events are Tier 1. 71% of Tier 1 events will be reported as Tier 1. 24% of Tier 2 events will also be reported as Tier 1. A Tyranitar has been reported as Tier 1. What is the probability that it is actually Tier 1?
+  #+end_example
+#+end_quote
+
+As I understand, if we have this, it's no different. What is contested is how we get these probabilities from the other reverse ones. The medical test analogy for what we get in the story would be if it was formulated something like this:
+
+#+begin_quote
+  1% of women at age forty who participate in routine screening have breast cancer. 80% of women who get positive mammographies actually have breast cancer. 9.6% of women who get negative mammographies also have breast cancer. A woman in this age group had a positive mammography in a routine screening. What is the probability that she actually has breast cancer?
+#+end_quote
+
+Using the methodology in the story, we would divide 80 / (80 + 9.6) and get 89.3% to plug into the Bayes formula. As I understand, it's contested, and it seems intuitively right, that this methodology is wrong, and we can't just divide 80 / (80 + 9.6), we need to consider how many positive and negative results there was in total.

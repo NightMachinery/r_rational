@@ -1,0 +1,23 @@
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1418310590.0
+:DateShort: 2014-Dec-11
+:END:
+
+#+begin_quote
+  Deepmind is really impressive, but I would still expect them to have a lot of work to do to get to human level AGI.
+#+end_quote
+
+Because you have AGI loooong before you have /human-level/ AGI. Neural Turing Machines can learn functions of specified complexity (that is, the complexity is a parameter of the learning model, over which the hypothesis space is indexed) from input and output examples /already/. The question is how you make these highly general learning models /efficient/, both computationally and in terms of (as I noted elsewhere) sample complexity, and then how you specify the tasks you actually want them to perform, and then coupling the solutions to those problems into "agents" that actually run autonomously or semi-autonomously to perform tasks without human interference.
+
+In my view, something like what MIRI wants to do is a very advanced task /within/ a larger, more general field. "Build an FAI" is more advanced than "build a paperclipper", but a paperclipper isn't actually the stupidest sort of AGI you can build. The stupidest sort of AGI you can build /won't even/ engage in generalized world-optimization. The "general" part is the set of learnable hypotheses being "all Turing-computable functions" or "all Turing-semicomputable environments".
+
+Turning those very general learning models into world-optimizing autonomous decision agents is actually a distinct task from simply making algorithms that can learn very general functions or environments.
+
+You might say that this doesn't sound like AGI very much. /That's my point/: in order to /actually build/ fully general reasoning machines, we have to be able to /dissolve/ "AGI agent" just like anything else. And it turns out that once we dissolve it, we find that it's mostly easier /not/ to build autonomous world-optimizers than to build them -- you just leave out the part that maximizes a utility function over world-states and replace it with a fairly normal algorithm of the stimuli-reaction mold.
+
+#+begin_quote
+  So just tell me why you think DeepMind or MIRI will succeed by 2030-2040. Also, it might be helpful in future discussions if we differentiate how much biological inspiration to artificial neural networks means they are no longer de novo AGI.
+#+end_quote
+
+Artificial neural networks are, in my books, /always/ de novo AGI. They're not realistic models of the actual brain in their current form -- but they are /useful/.

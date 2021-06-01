@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1445624231.0
+:DateShort: 2015-Oct-23
+:END:
+
+Thanks for continuing to pick this apart
+
+#+begin_quote
+  because file systems are demonstrably not single-process.
+#+end_quote
+
+Sorry, rather /files/ are practically limited to a single process. Although inotify comes a fair way towards making that fixable.
+
+Does that make the rest make sense?
+
+#+begin_quote
+  When I say "file system", I'm using it in the classic Unix sense. [...] What are you using it to mean?
+#+end_quote
+
+I mean that I think unix-style filesystems are problematic. Basically, it's a tree data structure where every leaf node is a binary blob. This makes having more then one program interact with a file/blob at a time very annoying.
+
+But yes, we could probably hack a better solution onto the existing structure. Maybe some kind of shared-memory mmap based thing. But I'd prefer it if we didn't insist that all leaf nodes were binary blobs to begin with.

@@ -1,0 +1,64 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 4
+:DateUnix: 1474746820.0
+:DateShort: 2016-Sep-24
+:END:
+
+So a while back I put together a design document and have had a few different discussions about it here on [[/r/rational]]; I've put links to them all [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][in this document here]] if you want a truly in-depth answer to that question.
+
+I have an essay I've been poking at that details what I think a "rational game" is, and I need to get around to finishing and posting it, but the 30-second version is, I think it has a lot to do with A: being internally consistent, and B: permitting the player to make rational decisions due to rules being based on point A.
+
+There are quite a few aspects of the game that have to be changed. To be honest, this is more "a rational game in a pokemon setting" rather than "a pokemon game tweaked to be more rational". The below are a list of points that have been designed so far.
+
+TL;DR pokemon is a mess, and just about everything has to follow the intended spirit rather than lift the exact system.
+
+- Types completely revamped. Shoehorned weaknesses removed; Poison for instance (currently) has nothing that is super-effective against it, because why is a poisonous creature weaker to something that a normal creature would not be weak to? Additional weaknesses/resistances modified to make more sense; Fire is /less/ effective against Steel than it is against Rock, and Poison is super-effective against Psychic (since someone who relies on mental concentration has a hard time doing so while vomiting), etc.
+
+- Type weaknesses/resistances changed to a percentage system rather than the 2x/1x/0.5x system of canon. Poison does 400% damage to Psychic, 10% damage to Steel.
+
+- Pokemon and moves can now have multiple types and arbitrary percentages of types (Charizard is currently designed as 10% Normal, 50% Fire, 20% Dragon, 20% Flying).
+
+- Flying type is for all intents and purposes Normal type when it comes to damage, and an accuracy modifier otherwise. Flying types can fly about the battlefield, with their % Flying type influencing how fast they change from ground mode to flying mode. While in the air, Flying-type moves have a bonus accuracy and all non-Flying moves have a decreased accuracy against the flyer. All Normal and Fighting moves are considered Flying-type for pokemon that are in the air.
+
+- Types have a new Affinity system that affects how easy it is to learn moves. a 100% Fighting type pokemon has a Strong affinity to learning Fighting and Normal moves, no modifier to learning Steel, Rock, or Ground moves, a Disadvantage to learning Poison, Bug, Fire, Water, Grass, Electric, Ice, or Dragon moves, and a Weak affinity to learning Ghost, Psychic, Dark, or Fairy moves.
+
+- Combat takes place on a hex grid, with positioning a major factor in battling.
+
+- Base stats now range from 1 to 1000 (this is less a realism change and more a quality-of-life change for the designer). IVs are a one-time modification to the base stats at creature creation, defined as a % spread. For instance, if a pokemon species has base 100 ATK and a spread of 20%, any individual might have an ATK generated between 90 and 110. The % spread is configurable per stat, per species, so a pokemon might have 50% spread on DEF and 18% spread on SPD.
+
+- Sexual Dimorphism is also a thing. For each species, a multiplier can be set for either gender against all stats. For instance, males might have 10% more ATK on average, while females have 10% more SPD. Gender is also treated as an IV, which means that a particular individual may express features closer or further away from their own gender's stereotype.
+
+- Endurance (END) is the biggest stat change, though nearly a dozen other attributes have been added to be tracked (and improved) as stats (details in the design document linked above). Endurance represents the long-term physical exhaustion of your pokemon, and is only improved through rest or a pokemon center. Items such as Elixer or Ether will temporarily "heal" endurance, but at the cost of increased endurance usage, so you cannot battle constantly forever.
+
+- EVs as a system are now basically a measure of how often that particular stat or move have been used. As a move's EV increases, the overall effectiveness is increased, which might mean different things for different moves. Stat EVs are gained all over the place; any time ATK is used in any calculation, the pokemon gains one (or more) ATK EVs.
+
+- Each pokemon's anatomy is defined similarly to Dwarf Fortress' RAW files. Every major appendage or body part is represented. Stats are "enclosed" within body parts; a Leg might have SPD, END, EVA, and ATK associated with it, and injury to that body part will effectively serve as a temporary reduction in that stat for that pokemon.
+
+- Moves by default have anatomical restrictions. To learn Bite, the creature must simply have a Mouth. To Fly, the pokemon must have one or more Wings or some other body part with the Flight attribute. This can be worked around somewhat by the use of TMs.
+
+- Anatomy can be targeted. At the cost of an accuracy penalty, your pokemon can target specific parts of their opponent in an effort to cripple it. Severely damaging all Wings or Flight-tagged body parts, for instance, will ground a Flying pokemon. Damaging a Blastoise's cannons will severely dampen its ability to use water attacks. Breaking a Rapidash's leg will equalize its SPD advantage. Etc etc.
+
+- Accuracy in general is getting overhauled to more closely resemble XCOM (though not /quite/ as ridiculous). If a pokemon is moving, it should be hard to hit unless you have spent time training that exact scenario.
+
+- The trainer (you) will also have stats affecting your ability to heal, train, instruct, and inspire your pokemon, and even affecting things like how accurately you throw pokeballs. The capture system will be lifted wholesale from Origin of Species, so actually hitting your target will be the important thing.
+
+- Permadeath will probably be a thing. It will be flexible and fair, but if you fail to get to your pokemon in time after it has been sufficiently grievously wounded, it will die. Or, perhaps, if there's nothing substantial left to retrieve to your pokeball....
+
+- All pokemon will be redesigned to match how dangerous they should /actually/ be, using the stats from canon only as a starting point. Onix will not be a pushover.
+
+- The world will be more dangerous in general. If you're not prepared to take on a fully-sized Onix, that's a serious risk you take in going into Mt. Moon.
+
+- Areas in general will have more optional sections to them; maybe you just run through Veridian following the roads as fast as you can, or maybe you delve into them more thoroughly. There will always be increased risk in doing so.
+
+- The world will have large swaths of it procedurally generated. Cities will almost always be the same, but each time the world is created the routes will be randomized somewhat. You are in fact playing a brand-new trainer, and thus should have no idea what precisely a new area holds.
+
+- Gyms can be tackled in any order. Gating will be restricted to an absolute minimum, so the player can take whatever risks he or she deems necessary.
+
+- Battling will occur in the same space as the overworld, so routes will be much longer to compensate.
+
+- Pokemon will travel as individuals, families, packs, or herds as fits the species. Nests may be found. Individuals can be tracked through the overworld, so catching a particular pokemon you've previously weakened is a distinct possibility, and perhaps the norm.
+
+And, finally, it should be noted that the VAST MAJORITY of the above will not be entirely or perfectly portrayed to the player. These are the systems that will work behind the scenes, but the player will only have limited ability to gather specific information on their pokemon or their world outside of the use of a more advanced pokedex, which will have its role greatly increased. Though it will (probably) be superficially similar to a normal pokemon game, it will play more like a roguelike.
+
+Anyway, sorry for the novel-length "summary". If you have any suggestions or questions, be sure to let me know; this project has already been greatly improved by the input of people such as [[/u/DayStarEld]] and [[/u/ultraredspectrum]], and I'm happy to hear any comments you might have.

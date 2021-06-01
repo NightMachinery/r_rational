@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: AugSphere
+:Score: 4
+:DateUnix: 1478524556.0
+:DateShort: 2016-Nov-07
+:END:
+
+As far as optimal betting goes, requiring an 0.05 significance level with 80% power is way too risk-averse, isn't it?
+
+Simply estimating the bias using the Laplace's rule of succession and plugging that into the Kelly criterion would be a decent alternative. You don't /have/ to require large amounts of evidence for the bias before you're ready to bet on the outcomes.

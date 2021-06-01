@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: Veedrac
+:Score: 3
+:DateUnix: 1512683808.0
+:DateShort: 2017-Dec-08
+:END:
+
+#+begin_quote
+  /You do exactly what they ended up actually doing/: you give Stockfish strong-enough hardware that its absolute speed advantage--in terms of nodes searched per second--is far greater than AlphaZero's
+#+end_quote
+
+Not sure I agree; AlphaZero evaluates fewer moves because it uses a different algorithm, not because of a hardware deficit. They are still expected to use comparable hardware to some degree; clearly Stockfish on a Raspberry Pi is far weaker than on a 64 core monster, but it'll probably still outpace AlphaZero on a moves-evaluated basis.
+
+I agree that the hardware shouldn't be /equal/, though, and that forcing AlphaZero to use a CPU would be silly.

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 4
+:DateUnix: 1452572578.0
+:DateShort: 2016-Jan-12
+:END:
+
+The power consumption (I think), switching time, and read/write/cache speed of physical memory is one of the biggest bottlenecks for performance. [[http://www.agner.org/optimize/blog/read.php?i=417][See Agner's blog.]]
+
+I don't think stagnation is a good idea, our coding style and tools will be maladapted to correct the imbalance where we should be trying to improve everything at roughly the same speed. Luckily the low-hanging fruit of transistor density is drying up, which will allow everything else to catch up.

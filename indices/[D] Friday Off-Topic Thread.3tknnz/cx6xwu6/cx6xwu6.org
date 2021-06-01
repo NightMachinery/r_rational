@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 3
+:DateUnix: 1448033015.0
+:DateShort: 2015-Nov-20
+:END:
+
+I'm looking for some people to collaborate on groupware. I want a self-hosted alternative to google products, with the ability to do custom branding.
+
+Everyone involved would have root on the server.
+
+There's a lot of work involved in getting tools to co-operate, so it makes sense for some hackery types to collaborate.
+
+Things I'd like to see
+
+- Centralized single-sign-on. This would most likely take the form of a django app, authenticating against PAM (local unix accounts) and things like facebook, github, whatever. Using python social auth. It would provide an oauth authentication endpoint for other services we run. We could just set up LDAP, a lot of things support it, but I hope this will provide more flexibility.
+
+- Rocket chat, as an IRC bouncer and a way to talk to clients.
+
+- seafile, as a dropbox alternative.
+
+- Email, using mailur.
+
+- Web hosting, for any clients or blogs. Using nginx.
+
+- Git hosting, probably just using ssh.
+
+--------------
+
+There's a lot of sysadmin stuff, and it's my hope it could be divided amongst a few people who do this kind of thing. Basically, run it as a shared unix enviroment for some tech professionals who want self-hosted solutions.
+
+Anyone interested?

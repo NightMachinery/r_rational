@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: hypervelocityvomit
+:Score: 2
+:DateUnix: 1438451740.0
+:DateShort: 2015-Aug-01
+:END:
+
+/That/ thing can be caused by two factors: -
+
+1) The RNG is crappy (some of those are still around) and produces too many values near the end(s).\\
+13 /tails/ in a row are 1 in 8192, but failing 13 95% chances is 1 in 81 920 000 000 000 000.\\
+Even 8 failures at 90% are 1:100 000 000.
+
+2) The game doesn't tell you the real chances. For example, if you rolled a failure, the actual chances are lowered for the next roll. (In many cases, the opposite is tried; after a failure, the cances are improved, and lowered after a success.) Another possibility, the RNG is "pre-rolled" and you tend to get the same result in a row. Some are actually saved somewhere; reloading after a failure will always reproduce the failure unless you try something different. Anti-save-scumming.
+
+I remember /Fallout/, where a "95%" chance was below 90%; in that case, the RNG was crappy; a 5% chance returned way too many /successes/, either.

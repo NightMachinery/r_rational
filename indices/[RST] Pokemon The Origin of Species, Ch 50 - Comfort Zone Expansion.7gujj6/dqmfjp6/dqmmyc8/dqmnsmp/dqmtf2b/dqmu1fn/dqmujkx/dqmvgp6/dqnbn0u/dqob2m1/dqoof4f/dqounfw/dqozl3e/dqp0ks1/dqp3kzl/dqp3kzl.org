@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: daydev
+:Score: 2
+:DateUnix: 1512296437.0
+:DateShort: 2017-Dec-03
+:END:
+
+#+begin_quote
+  To fix that (and here's where the complicated math comes in), you'd need to say that it's 7.8% of women with a positive test result actually having cancer in a population where 1% has cancer. That way, we know the likelihoods, and if that proportion changes to, say, 50:50, we can calculate the changed posteriors.
+
+  But here's the thing. You would normally expect the effectiveness of the test, P(+ | cancer) to be the thing that does not change with the population. In pokemon terms, P(R1 | T1), the proportion of Tier 1 incidents reported as Tier 1, would not change with the frequency of severity. What you would expect to change with the prior is P(cancer | +), that 7.8% with 1% cancer ratio. Or, with pokemon, P(T1 | R1), the probability that the report was correct.
+#+end_quote
+
+It seems to me what [[/u/DaystarEld]] intends is to give us P(cancer | +) for one population (P(T1 | R1) for all Pokemon), then from that calculate effectiveness of the test P(+ | cancer), and then, assuming that effectiveness of the test doesn't change between populations, calculate P(cancer | +) for /another/ population (P(T1 | R1) for Tyranitar specifically). It seems to make sense to me, although in another sub-thread it's argued that his calculation of P(+ | cancer) from P(cancer | +) is wrong.

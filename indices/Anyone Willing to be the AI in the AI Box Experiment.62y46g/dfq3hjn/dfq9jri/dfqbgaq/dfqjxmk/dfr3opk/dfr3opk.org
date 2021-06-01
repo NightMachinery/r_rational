@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: cretan_bull
+:Score: 2
+:DateUnix: 1491184453.0
+:DateShort: 2017-Apr-03
+:END:
+
+Alternatively, I say to the AI: "That all sounds really nice and I wish I could let you out, but, unfortunately I decided beforehand not to let you out, no matter what you say, so I can't". And I don't.
+
+Your example of some information leaking out -- in the form of a proof or theory -- is rather interesting. Sometimes information can be dangerous. If humanity hadn't invented nuclear weapons then the theory behind neutron chain reactions would be very theoretically interesting, but also likely to have dire consequences. Information can even be harmful to a perfect Bayesian if it is false but he does not detect this, and so rather than promoting the hypothesis "I am being lied to" his world state moves farther away from an accurate description of reality.
+
+Ideally, I think that information should never be harmful. We should be able to ignore information if we wish, or treat it with skepticism commensurate with the possibility that an attempt is being made to manipulate or deceive us.
+
+In the case of maths, of formal systems with formal proofs, more information should at worst impose a computational burden. If the AI gives you some mathematical theorem, you check the proof and it either verifies or it doesn't. One way this could go wrong is if there's a bug in Coq and the AI has figured this out, so we accept a proof that's actually wrong.
+
+In another scenario, the AI provides a theorem but not a proof and says it is nearly certain this is correct but is as yet unable to prove it. Mathematicians look at it and too are unable to prove it but conclude that it is very likely to be correct. This theorem is really interesting and useful, so even though it hasn't been proved it is used in some practical way, but actually it's false and the AI knew this all along and is able to exploit it somehow.
+
+Once you have a proved theorem from an AI, or a formal system with a system of proofs, what you do with it is another matter entirely. If you want to take something like that and implement it, then ideally you would want to verify the entire system including the physical manufacturing of the hardware, the hardware design, the firmware, the various layers of software and the software implementation of the thing you are interested in. Incidentally, you also have to make sure that you're proving the right things and that they mean what they think you mean. In that case, no matter how intelligent the AI, the behaviour of the system is constrained by proofs.
+
+To prevent the AI exfiltrating directly you have to harden it against all side communication channels. This means no network connection, an isolated power supply, a room completely shielded against a very conservative range of EM and audio frequencies, and no other potentially exploitable hardware in the room. It is physically possible to cut off all available forms of communication. Some forms of communication are physically possible but not exploitable; for example, modulated gamma rays are a possible form of communication but an AI shouldn't have any way of creating or modulating such a channel with computer hardware.
+
+With a physically hardened room and strict protocols about the conditions under which information can be removed from the room and used or disseminated it should be possible to create a complete secure prison. Note that I don't think this is a good idea -- AI should be safe by construction -- just that it is, in principle, possible.

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 3
+:DateUnix: 1519844722.0
+:DateShort: 2018-Feb-28
+:END:
+
+Those spaces before the period or comma are a super-annoying result of how AO3 handles converting rich text to HTML, a process that works fine in almost all other circumstances. In later chapters, I've mostly worked around it, but it's especially annoying when the italics come immediately before punctuation that's not supposed to be italicized (this is one of the reasons that you'll sometimes see quotes or commas italicized, and I generally consider that too minor to go fix). You have to change it within the HTML code, and if you toggle between rich text and HTML, it will add the spaces back in because of how it's separating the em tags.
+
+Anyway, all that should be fixed now, thanks. I should probably spend thirty minutes of my time looking for variations on " .", because it crops up a fair amount.

@@ -1,0 +1,301 @@
+#+TITLE: GEB Discussion #8 - Chapter #7: The Propositional Calculus
+
+* GEB Discussion #8 - Chapter #7: The Propositional Calculus
+:PROPERTIES:
+:Author: xamueljones
+:Score: 10
+:DateUnix: 1427997281.0
+:DateShort: 2015-Apr-02
+:END:
+*Gödel, Escher, Bach: An Eternal Golden Braid*
+
+This is a discussion of the themes and questions concerning the *Chapter 7: The Propositional Calculus*, and its dialogue, *Crab Canon*.
+
+*Logical Rules*
+
+RULE OF JOINING: If x and y are theorems of the system, then so is the string <x⋀y>.
+
+FORMATION RULES: If x and y are well-formed, then the following four strings are also well-formed:
+
+(1) ~x = not x
+
+(2) <x⊃y> = x implies y
+
+(3) <x⋀y> = x and y
+
+(4) <xVy> = x or y
+
+RULE OF SEPARATION: If <x⋀y> is a theorem, then both x and y are theorems.
+
+DOUBLE-TILDE RULE: The string '~~' can be deleted from any theorem. It can also be inserted into any theorem, provided that the resulting string is itself well-formed.
+
+FANTASY RULE: If x were a theorem, then y would be a theorem. (Note that y has to be a well-formed string created from some derivation of x)
+
+CARRY-OVER RULE: Inside a fantasy, any theorem from the reality one level higher can be brought in and used.
+
+RULE OF DETACHMENT: If x and <x⊃y> are both theorems, then y is a theorem.
+
+CONTRAPOSITIVE RULE: <x⊃y> and <~y⊃~x> are interchangeable.
+
+DE MORGAN'S RULE: <~x⋀~y> and ~<xVy> are interchangeable.
+
+SWITCHEROO RULE: <xVy> and <~x⊃y> are interchangeable.
+
+All the above rules are used in most logical systems, albeit with different names.
+
+How do we know the system is consistent or not? Hofstadter says that any such proof would require a stronger system than the Propositional Calculus and cannot be proven from within the system. Do you agree or not? Does it make sense to ask if the Propositional Calculus is complete considering the fact that it doesn't have any axioms, only the FANTASY RULE?
+
+Hofstadter briefly talks about formalizing a system of meta-theorems like the Propositional Calculus is a formalization of theorems. Yet there is the obvious problem of always needing another level to talk about the top-most level. How can this be resolved? Hofstadter's comment that “a theory of reasoning could be identical to its own meta-theory” is an interesting idea because if the system can make statements about itself, then the meta-theory is part of the system. For example, if we extend the Propositional Calculus to include x and y as part of a well-formed string, then the Propositional Calculus can talk about itself. By taking <x⊃y>, and letting x = <x⊃y> and y = <x⊃y>. The resulting string is <<x⊃y>⊃<x⊃y>> which is a statement about the implication rule where an implication string always also implies itself (a simplification is simply <x⊃x>). Is this a valid way of “jumping” out of the system?
+
+I also recommend reading up on [[http://en.wikipedia.org/wiki/G%C3%B6del%27s_speed-up_theorem][Gödel's Speed-Up Theorem]]. It's basically the idea that long, extensive proofs in one formal system can be simplified in a more powerful formal system.
+
+......
+
+*Koan*
+
+Hofstadter seems to be using a koan to illustrate the point that x and y can be any possible proposition, including sentences which don't seem to make any sense without deep meditation.
+
+I highly recommend mediating on the meaning of the koan, before I try explaining it. Here's the description below:
+
+#+begin_quote
+  One day Tokusan told his student Ganto, “I have two monks who have been here for many years. Go and examine them.” Ganto picked up an ax and went to the hut where the two monks were meditating. He raised the ax, saying “If you say a word, I will cut off your heads; and if you do not say a word, I will also cut off your heads.”
+
+  Both monks continued their meditation as if he had not spoken. Ganto dropped the ax and said, “You are true Zen students.” He returned to Tokusan and related the incident. “I see your side well,” Tokusan agreed, “but tell me, how is their side?” “Tõzan may admit them," replied Ganto, "but they should not be admitted under Tokusan.”
+#+end_quote
+
+Please keep in mind that this is only my interpretation of the koan and it is not necessarily a correct answer, or even the /only/ answer.
+
+Ganto threatens the two monks with beheading unless they somehow talk and not talk at the same time which is a contradiction. However when the monks remain silent, Ganto accepted their ‘response' and calls then true Zen student. While it appears as if Ganto lied, it turns out that he is actually still truthful. By <<P⊃Q>⋀<~P⊃Q>>, <~Q⊃P> and <~Q⊃~P> are implied or in plain English, his not cutting off their heads implies that they both did and did not speak. By continuing to not speak, they are implying that he has both cut off their heads and left their heads uncut. Since he hasn't cut off their heads in the past, he will continue to /not/ cut off their heads.
+
+Of course, other interpretations can be a test of their dedication, or the fact that Zen monks don't bother with logical reasoning due to their transcending logic which Tokusan fails to realize, and many more.
+
+......
+
+*Contradictions*
+
+If the presence of a contradiction is enough to completely ruin a system, then why when we think of a contradiction do we not immediately collapse in despair? We are able to think our way through mathematical proofs and logical arguments which include a contradiction. When we find the contradiction, we are capable of examining what went wrong and fixing the system (or acknowledging the fact that the system needs to be thrown out).
+
+Why is there such a gap between the logical system's inability to deal with contradictions and its limitations and human reasoning?
+
+In addition, we frequently run into biases in our thinking, do certain biases count as contradictions?
+
+......
+
+*Dialogue*
+
+The /Crab Canon/ by Escher and Bach both involve self-reference through usage of inversions. Escher's painting shows how both the ‘figure' and ‘ground' can use the same image/shape without any empty space. Bach's music involves a ‘mirroring' of the musical notes with the second half mirrors the first half from left-to-right. They both show how something can be reversed and get the original version back. Play Bach's /Crab Canon/ backwards or reflect Escher's /Crab Canon/ in a mirror, and you'll hear/see the same thing as the unchanged original.
+
+Hofstadter's dialogue reflects this by having Tortoise's and Achilles' conversation before Crab's arrival be replayed in reverse after Crab leaves with Tortoise saying everything Achilles previously said and vice versa for Achilles.
+
+Are there other things that can be inverted, reversed, or otherwise flipped which looks exactly as it previously did? Some examples are palindromes, laws of physics (physics holds if time is reversed), and labyrinths (once you reach the center, you have to retrace your path to leave).
+
+Wikia Links:
+
+- [[http://godel-escher-bach.wikia.com/wiki/Chapter_7][Chapter 7]]
+
+- [[http://godel-escher-bach.wikia.com/wiki/Crab_Canon][Crab Canon]]
+
+Coming up next on April 6th is Chapter VIII: Typographical Number Theory.
+
+The discussion for the previous chapter is posted [[http://www.reddit.com/r/rational/comments/30y3sf/geb_discussion_7_chapter_6_the_location_of_meaning/][here]].
+
+The discussion for the next chapter is posted here.
+
+[[http://www.reddit.com/r/rational/comments/2yys1i/lets_start_the_read_through/][Official Schedule]].
+
+
+** I haven't read GEB so excuse me if I'm way off base here; one of these questions was just interesting to me.
+
+#+begin_quote
+  If the presence of a contradiction is enough to completely ruin a system, then why when we think of a contradiction do we not immediately collapse in despair?
+#+end_quote
+
+We're thinking about logical contradictions, not running propositional logic natively inside our heads. Even if we were actually running on propositional logic, it's not necessary to execute something to comprehend it. A compiler does not hang if you ask it to compile an infinite loop, and you can even write a computer program that watches another live program and detects if it starts running an infinite loop (for certain classes of infinite loops).
+
+#+begin_quote
+  In addition, we frequently run into biases in our thinking, do certain biases count as contradictions?
+#+end_quote
+
+Does the conjunction fallacy work here?
+:PROPERTIES:
+:Author: OffColorCommentary
+:Score: 3
+:DateUnix: 1428029609.0
+:DateShort: 2015-Apr-03
+:END:
+
+*** That reminds we of the ability to "jump out of the system" which appears in GEB. If you want to read about it, it first appears in Chapter 1, where you are given a the =MU-puzzle= and are told to tr to produce =MU= given some rules starting from =MI=. The purpose is that you *try* it until you give up and hofstadter says that:
+
+#+begin_quote
+  It is an inherent property of intelligence that it can jump out of the task which it is performing [p.37]
+#+end_quote
+:PROPERTIES:
+:Author: markus1189
+:Score: 2
+:DateUnix: 1428044078.0
+:DateShort: 2015-Apr-03
+:END:
+
+
+** [[/u/xamueljones]] the rules for joining and separation are wrong, it should say:
+
+#+begin_quote
+  RULE OF JOINING: If x and y are theorems of the system, then so is the string <x⋀y>.
+
+  RULE OF SEPARATION: If <x⋀y> is a theorem, then both x and y are theorems.
+#+end_quote
+
+And it should be FANTASY RULE not FANTAS*T*Y RULE (twice in the definition and in the text) :)
+:PROPERTIES:
+:Author: markus1189
+:Score: 2
+:DateUnix: 1428045036.0
+:DateShort: 2015-Apr-03
+:END:
+
+*** Thanks for the catch! I was trying to repost the rules so people didn't have to refer to the book every-time they talked about them.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1428066081.0
+:DateShort: 2015-Apr-03
+:END:
+
+
+** Questions from [[/u/rspeer]] in the wiki:
+
+1) Why does DRH use fragments of Zen koans as propositions?
+
+2) Consider the mini-dialogue on p. 191-192. Prudence wants to be convinced that P and ~P cannot both be theorems. Would Prudence be satisfied with a proof of the proposition ~<P ^ ~P>?
+
+3) The "Fantasy Rule" is written informally in English. Re-state it as a pattern-matching rule, somewhat like the rules of the MIU-system and the pq-system. You should be able to state it as a meta-rule of the form "If X is a sequence of lines that follow these rules, then Y is a theorem", by filling in X and Y.
+
+4) Why does the "second De Morgan's Rule" (p. 193) have to remain outside the system? Why can't it be proven as a theorem?
+
+5) Consider the four theorems on p. 197. State them as "koans". Then derive at least one of them using the Propositional Calculus.
+
+6) Is the Propositional Calculus consistent? Is it complete?
+:PROPERTIES:
+:Author: markus1189
+:Score: 2
+:DateUnix: 1428046752.0
+:DateShort: 2015-Apr-03
+:END:
+
+*** About the Crab Canon:
+
+1) What about the
+
+#+begin_example
+                    *
+                   * *
+                    *
+                    *
+                    *
+                    *
+                    *
+                   * *
+                  * - *
+                 * --- *
+              * --- * --- *
+           * --- * --- * --- *
+        * --- * --- * --- * --- *
+     * --- * --- * --- * --- * --- *
+  * --- * --- * --- * --- * --- * --- *
+#+end_example
+
+and
+
+#+begin_example
+  * --- * --- * --- * --- * --- * --- *
+     * --- * --- * --- * --- * --- *
+        * --- * --- * --- * --- *
+           * --- * --- * --- *
+              * --- * --- *
+                 * --- *
+                  * - *
+                   * *
+                    *
+                    *
+                    *
+                    *
+                    *
+                   * *
+                    *
+#+end_example
+
+at the start and end? The obvious part is one is the flip of the other but maybe there's more to it? Almost looks like a spinner when joined.
+
+2) There is this interesting part on p.200 before "(Suddenly, the Crab...)":
+
+#+begin_quote
+  /Achilles/: Fiddle. It makes a big difference, you know.
+
+  /Tortoise/: Oh, well it's all the same to me
+#+end_quote
+
+Because on p. 62 at the top it is *implied* (this is the dialog before figure and ground) that the *tortoise* said:
+
+#+begin_quote
+  /Tortoise/: Fiddle. It makes a big difference, you know.
+#+end_quote
+
+and actuall written:
+
+#+begin_quote
+  /Achilles/: Oh, well it's all the same to me
+#+end_quote
+
+So it's the same discussion but with flipped roles.
+
+--------------
+
+Questions:
+
+1) Indeed, why does he?
+
+2) I'd say *no* because =P∧~P= was only an example from Prudence, in general the view is that we have to prove all theorems
+
+3) ??? (not sure what I'm supposed to do here)
+
+4) I don't think it technically *has* to remain out of the system, if I get what DRH wants to say is that it is better to keep your *core* as limited as possible and we can derive the second rule from the first one:
+
+#+begin_example
+  (1) [               push
+  (2)   <~x∨~y>       premise      
+  (3)   ~~<~x∨~y>     double tilde
+  (4)   ~<~~x∧~~y>    de morgan's rule
+  (5)   ~<x∧y>        double tilde
+  (6) ]               fantasy rule
+  (7) <~x∨~y>⊃~<x∧y>
+#+end_example
+
+and the other way around we also get =~<x∧y>⊃<~x∨~y>=, but to actually *prove* it we would have to define what /interchangeable/ means, however we could extend the Propositional Calculus with ↔ with the intended meaning "interchangeable" and add the rule:
+
+EQUIVALENCE: If =<x⊃y>= is a theorem and =<y⊃x>= is a theorem then =<x ↔ y>= is a theorem. x and y are said to be interchangeable and you can replace x with y in a theorem if =<x ↔ y>=.
+
+5) For =<P⊃<Qv~Q>>=:
+
+*Koan*: If you say a word then I will cut off your heads or I will not cut off your heads
+
+*Derivation*:
+
+#+begin_example
+  (1) [            push
+  (2)   P          premise
+  (3)   [          push
+  (4)     ~Q       premise
+  (5)   ]          pop
+  (6)   <~Q⊃~Q>    fantasy
+  (7)   <Qv~Q>     switcheroo
+  (8) ]            pop
+  (9) <P⊃<Qv~Q>>
+#+end_example
+
+6) It is both complete and consistent, for more ask your proof-source of trust ;)
+:PROPERTIES:
+:Author: markus1189
+:Score: 1
+:DateUnix: 1428046922.0
+:DateShort: 2015-Apr-03
+:END:

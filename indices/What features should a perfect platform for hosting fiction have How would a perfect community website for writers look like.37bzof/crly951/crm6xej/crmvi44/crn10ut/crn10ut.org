@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: passcod
+:Score: 1
+:DateUnix: 1432767462.0
+:DateShort: 2015-May-28
+:END:
+
+Agree with [[/u/alexanderwales]] --- github is just not made for this. Using /git/ as a backend would be good, being able to /clone/ or /export/ (to Github, Bitbucket, whatever) the underlying repo would be great, but using Github directly is going to add more friction than benefits.
+
+Plus, how would you handle the private side of things? An author writes drafts and shares them with select betas, proofreaders, etc, /before/ publishing... having it all on a public Github repo would make it all public, that's a no-go. Having some of it in a private repo and some of it in a public repo would cost a lot, and splitting up the repos is going to be clunky.
+
+If you just use git as a backend instead, there's also various features of /git/ that are not used in GitHub that could be useful, such as the "Signed-off-by" lines, and the difference between "author" and "commiter". Not sure about the exact semantics you could apply there, but for example for corrections, you could have a random community member "author" a correction, then a beta or more reputed proof-reader "signs off" on the correction, and finally the author "commits" the change.

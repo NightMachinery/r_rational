@@ -1,0 +1,15 @@
+:PROPERTIES:
+:Score: 9
+:DateUnix: 1430712552.0
+:DateShort: 2015-May-04
+:END:
+
+Solution: The water and electricity are generated from the bottom level.
+
+Since time runs increasingly faster as you go down, this isn't a problem; the total resources consumed from the bottom up follows a geometric progression, in terms of the resources consumed at the bottom level.
+
+Example: If time one level up is 9/10ths slower than at the current level, and the bottom level consumes 1 unit of resources, the total amount of resources consumed is [[http://www.wolframalpha.com/input/?i=sum+0+to+infinity+%289%2F10%29%5En][10 units.]]
+
+Yes, there are infinite levels, and yet there is a bottom level. But no matter how deep you go, you can never get there!
+
+Edit: I can spell gud.

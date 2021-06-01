@@ -1,0 +1,28 @@
+:PROPERTIES:
+:Author: FreeGiraffeRides
+:Score: 2
+:DateUnix: 1433775131.0
+:DateShort: 2015-Jun-08
+:END:
+
+Let's try it (hopefully someone will correct this calculation if they spot an error):
+
+If the portals are relatively close to earth, then gravitational potential energy is u = mgh
+
+The mass of a slice of water is dm = πR² dh D, where D is the density of water. The portals in the game are about a meter in radius.
+
+Since every slice is teleported to the top of the column, H is constant, and we integrate du = dm g H to get:
+
+u = πR² D g H²
+
+The time it takes for a slice at the top to reach the bottom is t = √(2H/g), so the power is:
+
+P = u/t
+
+= (π/√2)R² D (gH)^{3/2}
+
+If we could put a portal at the height of Mount Everest, and the other at sea level, and pour a column of water between them, the power output would be around 57,000 megawatts. Hydroelectric turbines are very efficient, ~80-95%, so most of this power would be available.
+
+In comparison, the Hoover dam is 2,000 MW, and a typical coal plant is about 600 MW. The entire world's energy consumption is around 18,000,000 MW. So our Everest-height hydroelectric portal is much more than a single power plant, but much less than would be required to power the entire world.
+
+The International Space Station is at a height of 400 km, so if we could put a portal on a geosynchronous orbit at that height, and ignore all the problems associated with a killer torrent of vaporizing space-water, the portal would produce about 17,000,000 MW, or just about exactly enough to power all of human civilization.

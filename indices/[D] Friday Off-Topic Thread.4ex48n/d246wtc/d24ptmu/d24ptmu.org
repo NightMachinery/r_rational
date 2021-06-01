@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 3
+:DateUnix: 1460767507.0
+:DateShort: 2016-Apr-16
+:END:
+
+You can play this mod without being spoiled, so if you've for example played Thaumcraft by the Thaumonomicon only, [[http://psi.vazkii.us/]].
+
+You assemble tiles onto a 2D grid of 5x5-9x9 squares, which stand for "position of the caster" or "add these two vectors" or "raycast this position and this vector to the next solid block", or "this value", or "add this vector, maximized in its length at this constant, to the velocity of this entity", or "lightning strikes at this position", where pronouns always refer to values produced by one of your choice of the four adjacent tiles. Materials used in the construction of your wand limit grid size, complexity ('number of tiles that aren't constants or "this value"') and potency (sum of constants used in tiles that have direct effect on the world, weighted by tile type - manacost also works like this, but uses a different weighting). The tutorial unlocks tiles and raises your mana pool+regen up to a cap at the end of the tutorial.
+
+Spells reach up to 32 blocks from their point of origin, which you can choose in the crafting of the spell to be you, where a projectile hits something, where a gravity'd thrown "grenade" is after a few seconds, where within 32 blocks you had placed a "detonator charge", or where within a few blocks you place a spell circle. Spell circles repeat a spell 20 times across a few seconds (and theres a tile that counts the current iteration) (15x mana cost). You don't regen unless you haven't cast for a few seconds, except that spells you made to be channelling allow regen after a few seconds of channelling ("repeatedly casting") (iteration tile works here too).
+
+One tile does "pause spell execution for this constant time" (and another lets you "treat this number smaller than this constant as constant"), and the only conditional does "stop spell execution iff this number is 0" - have fun with the lazy evaluation order of tiles.

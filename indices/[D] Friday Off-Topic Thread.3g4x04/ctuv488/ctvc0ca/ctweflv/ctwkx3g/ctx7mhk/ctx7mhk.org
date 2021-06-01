@@ -1,0 +1,41 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1439152710.0
+:DateShort: 2015-Aug-10
+:END:
+
+#+begin_quote
+  Your bandwidth is on the order of gigabytes per second (DDR2 is rated > 8GB/s) with latencies on the order of a dozen nanoseconds. Bandwidth between nodes is on the order of a few megabytes per second if they're in the same room and has standard latencies on the order of milliseconds.
+#+end_quote
+
+The biggest problem with my post was that it was three times as long before chromium shat itself and I had to reboot my entire system. One artifact of this was that my explanations were half-assed because I didn't have the patience to write the whole thing back out, let alone the ability.
+
+My analogy between neurons in different nodes was a hyperbolic statement. I didn't mean there were /no/ differences, and it was fallacious my me to exaggerate. What I wanted to illustrate was that there wasn't a filter between nodes. That the system was more like a big brain than a bunch of brains connected together. Information would travel in small packages, rather than large ones. The latter is how I imagined your system, so correct me if I misread some specifics.
+
+#+begin_quote
+  Nodes are mobile. That's a large part of their utility. You can be pretty damn certain that one processor on a given node can communicate with another processor. You can be pretty damn certain that you'll have a node out of contact with the others for an hour a week. This, by the way, is why you can't just install Amoeba on each node and pretend you're still operating on a single node -- not only will you have a physical body dropping limp whenever it's out of network connectivity, you'll also have processes running on all the other node expecting that that dropped node will perform operations and report back results in a timely manner, and they will be disappointed.
+#+end_quote
+
+I was making analogy with amoeba, not saying my system was "amoeba on brains". Assuming hive-brains are pretty similar to humans brains, then one brain is sufficient to control one body, two brains enough to control two. Think about how elephant brains are bigger than humans, but we seem more intelligent (obviously, to work, there needs to be left over processing ability that isn't needed to keep the body from falling apart).
+
+If one node falls out of range, then it's not going to go limp. At least, it won't if the designer wasn't dumb enough to make outsourcing low level calculations a possibility. The network would for high-level abstract thoughts like "should I take over the world", not low-level stuff like "should this muscle twitch? should l up my heart rate?".
+
+Furthermore, you might be forgetting that nodes don't take random walks. The network should have a practical understanding of what it's range is, and what the latencies are, in the same way your brain has a practical understanding of how strong your arm muscles are. If a node's about to take a long walk off the short pier, it can just tell the other nodes such, and they'll stop sending most instructions and messages. I'm imagining something like "hey guys, I'm about to go to the other end of town".
+
+#+begin_quote
+  BitTorrent shares large pieces of static data. That's what it's intended for. That's what it's okayish at. Specifically, it's for sharing data between untrusted clients in a way that limits the amount of bandwidth dedicated to clients that are not donating bandwidth in turn. Here, you trust each client and know what code is running on them, and you want a protocol for low-latency communication with small amounts of data per message. If you used BitTorrent anyway, you also need another protocol to share new torrent files between nodes many times per second.
+#+end_quote
+
+Sorry mang. I thought the 'whimsical' part made it clear I wasn't taking to seriously, and didn't thing anyone else would or should. I added it because I thought it was a neat thought. And partially because I wanted to know why it wouldn't work.
+
+#+begin_quote
+  You clearly haven't thought about how people would actually use multiple bodies, and you have no experience or coursework on distributed systems. Please think more and either study or gain more experience before suggesting how to create distributed systems.
+#+end_quote
+
+Again, this post was originally three times longer and thus a lot more clear.
+
+But I'll point to my excessive usage of weasel word qualifiers like "I think" to demonstrate that not only that I didn't think I put enough thought into it, but also didn't have enough confidence in what I had to say to think the statement was well-formed without being qualified by "I think". Also, the last clause of my post clearly says I that I was just posting what I thought a hive-mind would look like. Not formal, not rigorous, just a straight braindump of my vision of a hive-mind.
+
+And I really think you're taking my post too seriously. It was 789 characters long. If I had been making a well-informed post, it would have been longer. If I had been making an actual attempt at specifying a distributed system, it would have been longer.
+
+I feel like I have to say I'm not defending my ignorance, I'm just saying I'm not well-informed and not pretending to be. The purpose of my post was to possibly give some inspiration to anyone who happened upon it, not tell anyone how anything should be done (read the last sentence of my post).

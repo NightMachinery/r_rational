@@ -1,0 +1,33 @@
+:PROPERTIES:
+:Author: redstonerodent
+:Score: 3
+:DateUnix: 1426734993.0
+:DateShort: 2015-Mar-19
+:END:
+
+Alright, here's my proof that any string that starts with *M* and has not a multiple of 3 *I*s is a theorem:
+
+Let S be a string beginning with *M* that has i *I*s and u *U*s, and i is not a multiple of 3.
+
+Clearly 3u+i is not a multiple of 3. Thus there are nonnegative k, a such that 3u+i+3k=2^{a}.
+
+The following sequence of rule applications, beginning with *MI* creates S:
+
+- Perform Rule 2 a times to form *MI*^{2^{a}} (*M* followed by 2^{a} *I*s).
+- If k is odd, perform Rule 1 to form *MI*^{2^{a}}*U*
+- Perform Rule 3 k times to the last 3k *I*s, forming *MI*^{3u+i}*U*^{k[+1]}. The number of *U*s is even.
+- Perform Rule 4 k[+1]/2 times to form *MI*^{3u+i}
+- Perform Rule 3 u times to create *U*s in the appropriate places, forming S.
+
+I proved earlier that no theorem has a multiple of 3 *I*s, and clearly every theorem begins with *M*. I have now shown that any string satisfying these properties is a theorem.
+
+Therefore the following python is a decision procedure for the MIU system, assuming the string S only contains *M*, *I*, and *U*:
+
+#+begin_example
+  if S[0] != 'M': return False
+  elif S.count('I') % 3 == 0: return False
+  elif S.count('M') > 1: return False
+  else return True
+#+end_example
+
+Edit: Added a line as [[/u/Hazlzz]] suggested.

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: daydev
+:Score: 2
+:DateUnix: 1512144538.0
+:DateShort: 2017-Dec-01
+:END:
+
+It seems to me that there's a slight but important difference between the medical test example and this one. The false positive for medical test supposes that out of 100 people who don't have it, 10 will test positive. This example gives it the other way around, out of 100 positive results, 79 actually have it, this seems like the actual answer. It's possible I don't understand Bayes well enough, but it seems to me it should be written the other way around "Tier 1 incidents are reported as Tier 2 21% of the time".
+
+UPD: Don't mind me, I'm just stupid, I didn't realize the report percentages were for all Pokemon incidents, not just Tyranitar incidents.

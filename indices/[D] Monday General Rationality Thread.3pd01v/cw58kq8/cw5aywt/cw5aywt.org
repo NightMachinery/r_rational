@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: Escapement
+:Score: 2
+:DateUnix: 1445273126.0
+:DateShort: 2015-Oct-19
+:END:
+
+This seem like the sort of situation that would evolve a Nash Equilibrium, with a mixed solution. For an example of one method of calculating Nash Equilibria that is pretty general, I found [[http://www.mathworks.com/matlabcentral/fileexchange/27837-n-person-game/content/npg/npg.m][this matlab script]] which requires only [[http://www.mathworks.com/matlabcentral/fileexchange/27837-n-person-game/content/npg/gamer.m][this function]]. This works for any n-person game where you can explicitly define payoffs for each combination of strategies.
+
++The nash equilibrium for a RPS game where rock wins 2 points and other wins are 1 point, I /think/ works out to choosing Rock 20% of the time and each of the others 40% of the time - but I am not an expert on this sort of thing.+ edit: see comment below
+
+Scholarly reference: [[http://www.pnas.org/content/36/1/48.full]]
+
+Lesswrong stuff: [[http://lesswrong.com/lw/dc7/nash_equilibria_and_schelling_points/]]

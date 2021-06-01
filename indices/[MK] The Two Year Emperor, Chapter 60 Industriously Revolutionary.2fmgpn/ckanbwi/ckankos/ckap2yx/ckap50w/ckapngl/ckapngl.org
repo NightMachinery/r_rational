@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: Zephyr1011
+:Score: 1
+:DateUnix: 1410007988.0
+:DateShort: 2014-Sep-06
+:END:
+
+In which case, I retract my earlier solution. If you start with 1 G^{r,} at round n you end up with (1, nC1, (n+1)C2, (n+2)C3, ..., (n+r-1)Cr).
+
+So, starting with a G^{3,} you get n(n+1)(n+2)/6 at round n. So, after an hour, you would have 36180200 FBRs

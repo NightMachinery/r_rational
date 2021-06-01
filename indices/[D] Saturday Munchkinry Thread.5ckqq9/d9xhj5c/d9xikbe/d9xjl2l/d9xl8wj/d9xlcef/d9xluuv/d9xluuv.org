@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: space_fountain
+:Score: 7
+:DateUnix: 1478985750.0
+:DateShort: 2016-Nov-13
+:END:
+
+I think for this to actually work you'd need to quantify things. For example, you don't mention how expensive an operation the time stop is. Unless it's quite expensive the way to go might to be using a very paired down computer inside the time stop that doesn't require much power, but because it can run until it's batteries or capacitors run out it's better. Basically here the thing of importance is watt per floating point opp.
+
+On the other hand if you up the expensive of doing a time stop other trade offs start to come into play. Assuming the expensive varies based on the internal time stop time not external you have to optimize power use with the amount of time it will take.
+
+If we want to only apply this tech to a small part of computer you'd start with the RAM in a modern machine at least. Getting ram to respond in a similar time frame to cache would be huge.
+
+Fundamentally once you've answered these questions the question resolves to basically what can you do with X flops per second. If X is close to what we currently have than the example is exactly what we currently do with computers. If it's much higher than we can do things like solve NP hard problems for non trivial sized inputs.

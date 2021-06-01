@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: autowikibot
+:Score: 2
+:DateUnix: 1409398519.0
+:DateShort: 2014-Aug-30
+:END:
+
+***** 
+      :PROPERTIES:
+      :CUSTOM_ID: section
+      :END:
+****** 
+       :PROPERTIES:
+       :CUSTOM_ID: section-1
+       :END:
+**** 
+     :PROPERTIES:
+     :CUSTOM_ID: section-2
+     :END:
+Section 4. [[https://en.wikipedia.org/wiki/Maze_solving_algorithm#Tr.C3.A9maux.27s_algorithm][*Trémaux's algorithm*]] of article [[https://en.wikipedia.org/wiki/Maze%20solving%20algorithm][*Maze solving algorithm*]]: [[#sfw][]]
+
+--------------
+
+#+begin_quote
+  Trémaux's algorithm, invented by [[https://en.wikipedia.org/wiki/Charles_Pierre_Tr%C3%A9maux][Charles Pierre Trémaux]], is an efficient method to find the way out of a maze that requires drawing lines on the floor to mark a path, and is guaranteed to work for all mazes that have well-defined passages. A path is either unvisited, marked once or marked twice. Every time a direction is chosen it is marked by drawing a line on the floor (from junction to junction). In the beginning a random direction is chosen (if there is more than one). On arriving at a junction that has not been visited before (no other marks), pick a random direction (and mark the path). When arriving at a marked junction and if your current path is marked only once then turn around and walk back (and mark the path a second time). If this is not the case, pick the direction with the fewest marks (and mark it, as always).. When you finally reach the solution, paths marked exactly once will indicate a direct way back to the start. If there is no exit, this method will take you back to the start where all paths are marked twice. In this case each path is walked down exactly twice, once in each direction. The resulting [[https://en.wikipedia.org/wiki/Glossary_of_graph_theory#Walks][walk]] is called a bidirectional double-tracing.
+#+end_quote
+
+--------------
+
+^{Interesting:} [[https://en.wikipedia.org/wiki/Maze][^{Maze}]] ^{|} [[https://en.wikipedia.org/wiki/Right-hand_rule][^{Right-hand} ^{rule}]] ^{|} [[https://en.wikipedia.org/wiki/Harvey_Wallbanger][^{Harvey} ^{Wallbanger}]] ^{|} [[https://en.wikipedia.org/wiki/Maze_generation_algorithm][^{Maze} ^{generation} ^{algorithm}]]
+
+^{Parent} ^{commenter} ^{can} [[http://www.np.reddit.com/message/compose?to=autowikibot&subject=AutoWikibot%20NSFW%20toggle&message=%2Btoggle-nsfw+ck4jvnc][^{toggle} ^{NSFW}]] ^{or[[#or][]]} [[http://www.np.reddit.com/message/compose?to=autowikibot&subject=AutoWikibot%20Deletion&message=%2Bdelete+ck4jvnc][^{delete}]]^{.} ^{Will} ^{also} ^{delete} ^{on} ^{comment} ^{score} ^{of} ^{-1} ^{or} ^{less.} ^{|} [[http://www.np.reddit.com/r/autowikibot/wiki/index][^{FAQs}]] ^{|} [[http://www.np.reddit.com/r/autowikibot/comments/1x013o/for_moderators_switches_commands_and_css/][^{Mods}]] ^{|} [[http://www.np.reddit.com/r/autowikibot/comments/1ux484/ask_wikibot/][^{Magic} ^{Words}]]

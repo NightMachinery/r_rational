@@ -1,0 +1,30 @@
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 4
+:DateUnix: 1386250769.0
+:DateShort: 2013-Dec-05
+:END:
+
+As of this post, I think you can get [[/r/HPMOR]]'s behaviour by replacing
+
+#+begin_example
+  a[href="#s"] {
+      visibility: hidden;
+      display: inline-block
+  }
+#+end_example
+
+with
+
+#+begin_example
+  a[href="#s"] {
+      display: inline-block;
+      background: black;
+      color: white;
+      padding: 0px 0px 0px 10px;
+  }
+
+  a[href="#s"]:hover {
+      color: #8F8F8F;
+  }
+#+end_example

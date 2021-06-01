@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: serge_cell
+:Score: 1
+:DateUnix: 1426625396.0
+:DateShort: 2015-Mar-18
+:END:
+
+Necessary (but not sufficient) property of person is internal representation of itself. That is if we have some input 'In' most of learning work like producing representation of In : Rep(state)*In and optimize some min by state Cost(Rep(state) * In, state) .
+
+Person have internal representation of itself RCost(repitself, state) and minimize min by (state,repitself) RCost(Rep(state) * In ,repitself, state) + ||Cost(Rep(state) * oldIn, state) - RCost(Rep(state) * oldIn ,rep, state)|| and use it as initial state for optimization Cost(Rep(state) * In, state)
+
+Just joking :))

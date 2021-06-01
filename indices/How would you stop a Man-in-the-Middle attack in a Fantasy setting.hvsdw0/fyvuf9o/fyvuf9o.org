@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: Norseman2
+:Score: 7
+:DateUnix: 1595434170.0
+:DateShort: 2020-Jul-22
+:END:
+
+I haven't read The Wandering Inn, though it looks interesting. As for this particular question, there's a few key approaches that could've been used to prevent this from becoming a problem.
+
+To start with, it sounds like they may have neglected penetration testing. Having a reasonably competent spellcaster try to interfere with their communication system (among other security measures) may have helped to prepare them for the level of disruption they could face in an attack. Obviously, this doesn't help against immensely-capable assailants who manage pull off completely unimagined attacks, but for attacks which are at least conceivable, it could help immensely. If they had done penetration testing and this threat was raised as a possibility, they might have been able to plan for workarounds, like alternative communication methods, two-factor authentication options, and no-communications backup plans.
+
+Another potential issue is the lack of dedicated communications specialists. Commanders have enough on their plates already, so even if there was a two-factor authentication protocol, they'd be tempted to rush and ignore it. A dedicated communications specialist whose one job is to follow proper communication protocol with a variety of available communication methods will be much more likely to achieve secure and reliable communications.
+
+In an alternate scenario, this could've played out with five (?) signallers checking in with each other signaller on 15-minute intervals. They'd initiate the contact with two-factor authentication, giving a memorized code that they always use, plus a code read from a sheet of random codes which is generated and distributed daily for each signaller pair, and the other signaller would reply likewise. The code sheets would include a sequential list of the 15-minute interval codes, plus an additional sequence of codes to be used for sending any actual messages. With the contact times spread out, this would mean authenticated communication is happening at least every 3-4 minutes, so any wall that goes dark would, by protocol, be discovered by the others within that time frame. Alternate communication measures might include signal fires, smoke signals, messenger riders, signal drums and horns, semaphore, heliostats, homing pigeons, and various magical means. All of these would need to be shut down to actually disable communications, which would be quite difficult for any attacker who isn't already able to overwhelm the defenses with ease.
+
+Even if such a complete communications failure were possible, it would nonetheless alert all of the walls of the issue within 3-4 minutes, resulting in each wall independently executing their backup plans. In this case, it doesn't sound like there are any inner defenses they could fall back to, but that would be preferred approach during a blackout - bring all forces close together so that there's no longer a need for long-distance communication. Force concentration is rarely a bad choice, at least as long as the enemy isn't heavy on area-of-effect attacks, although hopefully the defenses would mitigate those sorts of attacks.

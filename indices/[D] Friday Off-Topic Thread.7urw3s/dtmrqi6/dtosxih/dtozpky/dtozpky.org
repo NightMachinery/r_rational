@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: phylogenik
+:Score: 1
+:DateUnix: 1517696681.0
+:DateShort: 2018-Feb-04
+:END:
+
+Thank you for the response! :]
+
+#+begin_quote
+  Calibration charts are useful and commonly used.
+#+end_quote
+
+In a method similar to how you would normally evaluate calibration in standard classification problems, e.g. [[http://scikit-learn.org/stable/auto_examples/calibration/plot_compare_calibration.html][here]] or my "eyeballing" example above? I can think of other ways to construct them in my case besides straight binning, e.g. try and fit a function across (0,1) for the true presents and absents (above some cutoff, since most bipartitions never appear in my sample from the joint posterior, so approximate posterior probabilities of improbably nodes aren't meaningful) and then just take the ratio of the height of the present function over the sum of their heights for each probability, though that sounds sorta hacky.
+
+#+begin_quote
+  If you want a single number, compare your actual Bayes score (log probability assigned to correct answer, aka cross-entropy, a common loss function) with the entropy of your prediction (which is its expected Bayes score).
+#+end_quote
+
+Ah, I vaguely remember this from an old bayesian stats book, though even then a lot of the information theory stuff was not very rigorously presented.
+
+I think an issue (here and for any sort of calibration curve) would be accommodating non-independence between each binary parameter, since there'll be a lot of overlap between the sets that comprise each bipartition (and in truth there's only a single discrete parameter with a vast statespace, rather than a billion or however many binary ones -- there are (2n-5)!! distinct topologies a strictly bifurcating tree with n tips can take, so e.g. 100 tips means 1.7E182ish alternatives).
+
+In fact, I'm pretty sure the simulated data are sufficiently uninformative and the data-generating tree's topology sufficiently improbable that the latter never actually appears in my sample (so p ≈ 0 for the correct answer lol), and I don't think it would be proper to just find the product of probabilities of the "true" set of bipartitions. And then even if I could do that, I think I'd need to set some ad hoc cutoff below which I deem estimated probabilities meaningless.
+
+Ideally there'd be some sort of comparable tree-specific measure I could use but afaik nobody has developed one yet (although I've not really familiar with the information theory stuff people do in my field, [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5066063/pdf/syw042.pdf][e.g.]], so maybe they've worked something out.

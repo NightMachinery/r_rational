@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 2
+:DateUnix: 1452934661.0
+:DateShort: 2016-Jan-16
+:END:
+
+I've been on the "idle fantasizing" stage of making a game like this for quite a while now, and I might start something for the Seven Day Roguelike challenge starting in March. The core ideas I had were (some will probably be cut):
+
+Simultaneous turns, with glorified rock-paper-scissors style combat.
+
+Enemies value different goals: delaying you, surviving, escaping, maximizing damage to you, minimizing damage to themselves, etc.
+
+Separation of the true state of the game and the player's knowledge. If your sword does 5-15 damage and you hit an enemy with 100 HP, it will display (85-95) HP, not the exact value. If you get a critical hit and deal 30 damage, it will /still/ display (85-95) HP, despite it truly being 70 HP.
+
+Illusions. The enemies know about the existence of illusion spells, which can limit their effectiveness. For example, if you cast "all opponents are invisible to each other" then they might each think that you cast "teleport all enemies except one away" instead. Also, vice versa. If you teleport everyone else away, then the one remaining enemy might think they're just unseen, and expect backup when attacking you. Enemies can do this as well.
+
+Mind control. Pretty simple, you swap out their AI for a different, less useful one. Make their tanks cower in fear, and their archers charge you head on. Usable by the player only.
+
+Reputation/memory. If you are wearing glowy robes and carrying a staff, they will expect you to cast spells. If you are wearing armor and holding a mace, they will expect you to fight physically. If you previously chose "rock" 90% of the time in combat, they will expect you to choose "rock".

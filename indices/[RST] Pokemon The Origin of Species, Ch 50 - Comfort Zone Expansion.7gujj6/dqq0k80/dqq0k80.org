@@ -1,0 +1,30 @@
+:PROPERTIES:
+:Author: Ristridin1
+:Score: 2
+:DateUnix: 1512341730.0
+:DateShort: 2017-Dec-04
+:END:
+
+Just adding another reason why the math in the current chapter doesn't work (didn't quite know where to put it in the ongoing thread):
+
+#+begin_quote
+  100 Events reported as Tier 1
+
+  79 are actually Tier 1
+
+  21 are actually Tier 2
+
+  100 Events reported as Tier 2
+
+  67 are actually Tier 2
+
+  33 are actually Tier 1
+#+end_quote
+
+If you used the above data, out of 200 reports, 79+33 = 112 would be Tier 1, while 88 would be Tier 2. This clearly doesn't match the actual 2:15 ratio of Tier 1: Tier 2.
+
+Here's another flaw that I just noticed (apologies if it was already pointed out). You are using the 79% and 67% incorrectly in the above argument. The 79% accuracy says that *out of 100 actual Tier 1 events, 79 will be reported as Tier 1* (more technically, P(Tier 1 reported given there is an actual Tier 1 event) = 0.79). On the other hand, in the above data, the claim is that *out of 100 reported Tier 1 events, 79 were actually Tier 1* (or P(actual Tier 1 given that Tier 1 is reported) = 0.79). These are *not* the same things.
+
+On an aside, this gives a way to switch the chapter around (and possibly preserve Red's flaw). Instead of mentioning actual Tier 1 and Tier 2 events, mention there were 6 Tier 1 reports and 11 Tier 2 reports, and then try to figure out how many were actual Tier 1. Using flawed reasoning (flipping the conditional probabilities), Red can imagine that 6/0.79 reports were actual Tier 1 reported correctly, while 11/0.33 were actual Tier 2 reported incorrectly. This gives 4.74 + 3.63 = 8.37 of Tier 1, or 8.37 out of 17 events as Tier 1 (about 49.2%).
+
+In actuality, there were X actual Tier 1 events and 17-X actual Tier 2 events. This would give 0.79/X + (17-X)/0.33 reported Tier 1 events, or simplified: 5.61 + 0.46X reported Tier 1 events. Since there were 6 reported Tier 1 events, X should be 39/46, or about 1 actual Tier 1 event.

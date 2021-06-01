@@ -1,0 +1,62 @@
+#+TITLE: [Challenge Companion] Moore's Law
+
+* [Challenge Companion] Moore's Law
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 4
+:DateUnix: 1500603638.0
+:DateShort: 2017-Jul-21
+:END:
+*tl;dr: This is the companion thread for the [[https://www.reddit.com/r/rational/comments/6okl44/biweekly_challenge_moores_law/][biweekly challenge]], put recommendations, ideas, discussion, resources, etc. in this thread.*
+
+
+** [[http://www.antipope.org/charlie/blog-static/2012/08/how-low-power-can-you-go.html][How low (power) can you go?]] - Charles Stross on Moore's law from a power-consumption perspective => possibilities for ubiquitous computation and sensing.
+
+I was actually re-reading this earlier today before I saw the challenge :)
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 2
+:DateUnix: 1500624075.0
+:DateShort: 2017-Jul-21
+:END:
+
+
+** I've heard that Moore's Law is slowing down; how much truth is there in this? Are we really hitting a wall, or are we just in the lead-up to a new technology that gets things improving fast again?
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 1
+:DateUnix: 1500650734.0
+:DateShort: 2017-Jul-21
+:END:
+
+*** It's really hard to say, because whether or not Moore's Law is holding is of incredible importance to the people who make these chips, and to the people who are stakeholders in those companies. There are IIRC four major companies that fight this propaganda battle year after year where they'll declare Moore's Law to be slowing down or dead in order to provide spin as far as their product offerings go.
+
+So far as I know, there's no lead-up to a new technology at the moment, which means that there's at least two generations below 10nm that will use technologies and materials that are very similar to what's used now.
+
+The [[https://www.semiconductors.org/main/2015_international_technology_roadmap_for_semiconductors_itrs/][last ITRS report]] was from 2015 and contains the most unbaised information, but it's two years out of date now.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 5
+:DateUnix: 1500677411.0
+:DateShort: 2017-Jul-22
+:END:
+
+
+*** If I recall correctly, we are hitting a wall, in a sense. We can still keep making chips smaller and smaller, but heat is now a major problem because making chips smaller makes them denser, and denser = more heat in less space. You can use liquid cooling, but that only goes so far.
+
+There is a new technology though, sort of. The idea is to just give up on making super computers, and instead just use computer networks. So instead of having one super powerful computer do whatever you need to do, you figure out how to distribute the workload to a bunch of weaker computers. With enough weak computers working together, this can actually be much faster. That's why a lot of the computers you see nowadays come with GPU (which is kinda like a bunch of tiny computers in your monitor), and multiple cores (which is kinda like a bunch of computers inside your computer).
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 3
+:DateUnix: 1500787350.0
+:DateShort: 2017-Jul-23
+:END:
+
+
+*** Moore´s law is going to die to Moores other principle "And the factory that makes them will cost twice as much". High-end chip-foundries are getting really obnoxiously expensive to build. There are couple of doublings left before it reaches the point where they just cant be financed without waiting a few decades for the world to get sufficiently richer.. but not all that many. Which will probably result in a lot of effort into better chip design (because you can make a new mask without building a new factory easily enough. ) and then after that a focus on more efficient programming.
+:PROPERTIES:
+:Author: Izeinwinter
+:Score: 3
+:DateUnix: 1500809968.0
+:DateShort: 2017-Jul-23
+:END:

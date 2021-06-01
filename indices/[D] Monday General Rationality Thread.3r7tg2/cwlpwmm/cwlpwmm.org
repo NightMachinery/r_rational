@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1446482116.0
+:DateShort: 2015-Nov-02
+:END:
+
+I've been trying to figure out whether there's a game theory approach to Cutthroat Kitchen. Basically, it works like this:
+
+- Four chefs compete.
+- There are three rounds of cooking.
+- One chef is eliminated at the end of each round.
+- Chefs are given $25,000 at the start of the competition with which to bid on sabotages against each other.
+- At the end of the game, you walk away with only the money you have remaining (and only if you're the last one standing).
+
+No one wants to spend the money they've been given, because that's money that they don't get at the end of the competition (and money they can't spend on future sabotages). No one wants to get the sabotage, because that lowers the chance of moving on to the next round (or winning).
+
+Basically, this adds in a few extra wrinkles to the game theory approach to open ascending-bid auctions. /There/ I believe the equilibrium strategy is to set a price you're willing to pay and then don't go past that, unless it's an iterative auction in which case there's a strategy of "bidding up" your opponents so you can more easily win future auctions. In Cutthroat Kitchen, the primary wrinkle is that if you lose the auction, you're less likely to make it to future rounds but more likely to win future auctions.
+
+I've been trying to figure out whether there's a particular strategy that you'd pursue if you found yourself facing down three of your clones, or a strategy that you could quickly convince the other three of prior to the start of the show.

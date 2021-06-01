@@ -1,0 +1,48 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 9
+:DateUnix: 1489161506.0
+:DateShort: 2017-Mar-10
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+So the deadline for the voxel prototype is up! [[https://drive.google.com/drive/folders/0B0LYycfi-K18eXdXS3NWd0pTQnc?usp=sharing][Here is a folder with various zip files to download]].  There are builds for Windows, Mac, and Linux, in x86 and x64 builds whenever possible.  If you download it, please let me know below if it ran and how it ran, on what OS.  I only really have a Windows 10 machine, so getting a feel for how things run on other setups is valuable info to have, if only so I have a heads up for issues.
+
+In the demo, use ESDF to move your cylinder avatar around (because screw WASD).  I would not advise running in fullscreen mode, as I didn't actually hook up any way to exit the program, so stick to windowed mode.
+
+For those of you too lazy to download anything, here's a gif showing everything you're missing:
+
+[[http://i.imgur.com/5P3SqCa.gifv]]
+
+That gif pretty much shows all of it, lol.  Each color is a separate chunk, and as you can see in the upper half, chunks are dynamically being loaded and unloaded as you move around.  Having a restricted camera angle that doesn't include the horizon /really/ helps keep everything manageable.  
+
+--------------
+
+The intent was to get as far as setting up a wrapping map, but that didn't happen in the two weeks I gave myself.  The game will have a game world shaped roughly like a cylinder: if you go east or west, you'll wrap as one might expect, and then if you go north or south, eventually you'll hit a special zone that will permit you to take a shortcut to the other side of the world, while preserving the mirrored nature of such a layout.
+
+Here's an image illustrating what I mean:
+
+[[http://i.imgur.com/Gzyqr9C.png]]
+
+The black outline represents the actual map.  Going past the east/west borders will spawn chunks that are just referring to data within the main map.  Going past the north pole boundary will flip the world; from that point on, traveling up will mean heading south, and everything will be laid out the way one would expect. If you travel past the south pole (or go back over the north pole), things will again reverse to the original view.
+
+At least, that's the goal.  I didn't actually get to the point to see if it will be technically feasible; if it turns out to be too big a headache, I'll just go with a torus-shaped world, where crossing the northern border will plop you at the bottom of the map, like old final fantasy games.
+
+----  
+
+This prototype month has been quite enlightening.  Plenty of important design decisions were made, but most importantly I discovered how /not/ to try and keep the motivation train going.  I will not /ever/ in the future place two deadlines back-to-back like this.  Having one after the other left me zero flexibility and more than once the stress simply piled up, resulting in me playing Dota for six hours as a coping mechanism. This is the direct cause of why I didn't attain my goals for this voxel demo, as I spent the first week stressing out before I reeled in my aim.
+
+It was also an important lesson in scoping (again): trying to make a meaningful voxel prototype, /and/ explore a brand new game engine (Xenko) /and/ clean up the previous prototype was a foolish pipe-dream.  I should have done one, then the other, and not tried to do it all at once.
+
+I /did/, however, enjoy having /some/ sort of deadline, and I also enjoyed letting the community vote on what to work on.  I doubt that things will be so open-ended to just let people pick what they want me to work on, but when forks in the road come up, I'll try and give y'all a chance to chime in.
+
+--------------
+
+Visual Studio 2017 has been released, which was what I was waiting on to begin the project proper.  However, given how close both of the prototypes are to /actually/ being complete, I'm going to spend another week getting them both to the point of, y'know, containing the thing they were designed to explore.  So next week, I'll have two shiny new builds, one for each prototype, hopefully able to be freely configured so I can ask your opinion on the way certain things feel.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

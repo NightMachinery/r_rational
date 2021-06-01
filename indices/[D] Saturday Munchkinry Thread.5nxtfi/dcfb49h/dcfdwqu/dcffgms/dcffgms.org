@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: Running_Ostrich
+:Score: 1
+:DateUnix: 1484425563.0
+:DateShort: 2017-Jan-14
+:END:
+
+Just fyi, to your first idea, rainbow tables for reverse-hashing passwords are already a thing and have a straightfoward defense - for each password, randomly generate a string and add it to the password before hashing. Then store the string in plaintext along with the hashed password. [[https://en.wikipedia.org/wiki/Rainbow_table#Defense_against_rainbow_tables]]

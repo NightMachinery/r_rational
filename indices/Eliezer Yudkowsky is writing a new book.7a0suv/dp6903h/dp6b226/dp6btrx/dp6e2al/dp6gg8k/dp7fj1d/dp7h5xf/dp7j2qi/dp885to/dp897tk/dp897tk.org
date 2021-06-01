@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: ben_oni
+:Score: 3
+:DateUnix: 1509604016.0
+:DateShort: 2017-Nov-02
+:END:
+
+#+begin_quote
+  The human brain is a 1 to 1 emulation of the human brain. The sounds tautological (and it is) but I very much doubt meat brains are the more efficient possible computing substrate.
+#+end_quote
+
+That's fair, but it's not the whole story.
+
+#+begin_quote
+  Maybe the brain is somehow a near-ideal substrate,
+#+end_quote
+
+It /is/ an ideal substrate. It is the only system capable of perfectly emulating a brain at full speed.
+
+Maybe that's a cop-out, too, but you need the other half in order to keep this sort of argument in balance. And to be fair, emulating a brain doesn't mean emulating all the chemical processes in detail. They can probably be simplified with no noticeable impact in performance.
+
+I'm not arguing that a person can't be emulated in hardware. I'm not even arguing that it can't be done at full-speed. But to think it can be done at full speed on general purpose computing hardware? That's ludicrous. You'll need specialized hardware, specially prepared for the intense multi-tasking operations that are called for. Brains of metal and stone.
+
+Some back-of-the-envelope calculations: 2^{47} synapses, with an update period of 1ms. Call it 2^{50} updates per second. Each update requires multiple calculations. Let's call it 2^{52} flops. This would require around a hundred thousand modern CPUs just to perform the calculations. And we don't have the means with today's technology to handle the shared cache between those processors.
+
+Oh, and my timeframe for an AI-induced technological revolution? I don't think it will happen. I doubt very much that AGI is more than a failed dream.

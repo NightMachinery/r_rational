@@ -1,0 +1,52 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 14
+:DateUnix: 1499446120.0
+:DateShort: 2017-Jul-07
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Actual coding work stalled a bit this week, mostly because I kept getting distracted by the Games Done Quick event.  The Pokemon HeartGold run was complete bullshit, btw; the guy like gave up halfway through and loaded a pre-made save /that had some pokemon that he hadn't caught yet/.  Like, if you need to call it, then call it, but saying “just kidding, I've made a bunch of mistakes this run and I'm going to cheat so I can hit my target” is just...so bad.  
+
+Anyway, minirant over.  While there's no progress to report, there are a couple of mechanics that I'd like to discuss, both having to do with Time.
+
+--------------
+
+First is the concept of simultaneous turns.  Basically, I want this game to have all the advantages of turn-based gameplay, that is being able to take one's time and think things through, without having to deal with asymmetric bull like first-move advantage all the time.  Removing a turn order does introduce some interesting problems of its own, such as needing to resolve who wins if two characters try to occupy the same space at the same time or representing different speeds in a fun and intuitive manner, but the particular brand of controlled chaos that it introduces is, in my opinion, second to none.
+
+Simultaneous turns as a mechanic was first introduced to me when I was gifted a board game called Robo Rally by my in-laws, which completely caught me off guard with its unique approach to movement.  Basically, each player is dealt 10 movement cards, which have instructions such as Move 2 Forward, Turn Right, Move 1 Backwards, etc, and then they must plan out 5 rounds of movement.  Each individual round is resolved as simultaneously as possible, with conflicts being resolved by each card having a different priority rating.
+
+Nothing is so sweet as zigging when your opponent expects you to zag, followed by watching their best laid plans crumble to pieces as they bump their robot repeatedly against an unplanned wall.
+
+I later prototyped a small top-down tank video game with my own physical board and cards, this time introducing a time cost to different actions.  This opened up the strategic opportunities substantially. I also discovered some natural balancing factors: area of effect moves became bread and butter, while single-tile weapons could afford to be devastating since it was so hard to anticipate where exactly your opponent was going to be.
+
+I very much enjoy the fact that this concept gets all the benefits of RNG without actually needing to resort to a dice roll.  Things are so chaotic with everyone and their mother trying to think One Level Higher Than Everyone Else, but unlike RNG, if you manage to hit, it's usually because you /did/ think One Level Higher and got rewarded for it.  You're not managing random risk, you're anticipating and plotting within a fiendishly complicated machine.
+
+The one downside to this mechanic in meatspace is that it takes sooo much effort and bookkeeping to keep everything straight.  This makes actually playing these games somewhat of a pain, but it didn't bother me too much: I knew that this is one aspect that (should) be entirely eliminated when making the jump to computer-controlled games.
+
+Fortunately, it turns out I'm not the first one to try and apply simultaneous turns to a video game.  I very fortunately found a thread somewhere on Reddit discussing the concept, and people mentioned a few games which just happened to be part of the Summer Sale.  Frozen Synapse is the only one on that list I've played so far, but it has validated my anticipations substantially.  
+
+Frozen Synapse has you controlling soldier-drones in a top-down fogless map.  Each round is 5 seconds (or so) of real time, and you have as much time as you like to plan out your movements, spiced up with things like ducking, aiming, focusing/ignoring targets, and different weapons.  The system permits you to play and replay your currently planned turn over and over, letting you see if you can really get in range of that enemy, or if you can really get to cover in time, or if you can line up a shot just right.  However, since your opponent's pieces don't move, there's all sorts of unknown variables.  Will they go left or right? Are they going to fire a rocket to demolish my cover?  Is that sniper mid-move or is he halfway through lining up his shot?  
+
+In short, it's glorious, everything that I was hoping that such a high potential mechanic could bring to the table.  I will almost certainly be using this system, and not the backup Nethack-lite asymmetric turn system.
+
+--------------
+
+Anyway, this ties in to the other time-related mechanic that I've been waffling on, and that's time-skipping.  As you might surmise from the above, I very much lean to the tactical side in strategy games, and it is one of my highest priorities to ensure that the round-by-round combat and movement is engaging and interesting.  This, however, comes into conflict somewhat with the goal of having a world that's cohesive and makes sense: do we want ten year olds (or sixteen year olds, or twenty year olds) to be able to go out, make their impact on the world, and topple a stable world order in just over a week?  It would be remarkably tedious if a tactical game expected you to grind out skills in essentially real time before letting you take on the highest tier of government, but there's something to be said about suspension of disbelief as well.
+
+Our answer to this had been a sort of half-baked concept of controlled time skips.  The idea would be that you could direct your character to go spend a year in the wilderness, setting parameters for what sort of things to train and so on, and then the simulation would run, stopping only right before something major happening (such as a high-level encounter, or an injury, or whatnot).  
+
+This tidily solves the problem of ten-year-old protagonists, but it introduces a host of other issues.  Is playing the game “by hand” now cheapened?  If I can essentially skip forward a few decades with minimal preparation, isn't that what everyone is just always going to do?  Will the game be impossible to play without skipping?  Is it possible to even have the same world cater to skipped and non-skipped playstyles? Not to mention if we ever try to handle multiplayer (which I probably will not), then this entire mechanic probably goes out the window.
+
+Of all the mechanics that I've discussed here and on Discord, this is probably the most shakey.  The more I think about it, the more that I think it might be okay to use the standard handwave and not track time passing too closely, but that also feels a bit like a cop-out.  Even if I did accept that the 50-year-scale is acceptable to disregard, I think that there might be merit in the concept on a smaller scale.  Imagine only grinding enough cash or whatever for a month's worth of supplies, and then saying “wander this area until you find a Clefairy or three weeks have passed.”.  Your automated avatar is certainly not going to do as well as you would as it bumps around and looks for things, but it could absolutely decimate the need to grind, which in my opinion is a four-letter-word. On the other hand, perhaps this cheapens the game and makes finding a Clefairy into either a stupendously hard meta-grind or a super-easy checklist item.  
+
+I dunno.  I'm going to experiment with this system once other prerequisites are in place, but I'm pretty much 50/50 on whether or not it will work.  I don't want to shoehorn two games into one, but I also want to have the player able to interact with a sensible world.  If push comes to shove, I'll cut it, but we'll see what happens.
+
+What are your thoughts?  I realize that both of these systems are described in a pretty vague manner, but that's mostly because that's all we've got: they depend so much on how other systems will eventually work that it's difficult to exactly plan out.  Let me know down below or on Discord.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

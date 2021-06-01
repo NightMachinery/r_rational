@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: DCarrier
+:Score: 1
+:DateUnix: 1433889709.0
+:DateShort: 2015-Jun-10
+:END:
+
+The problem isn't so much that they might have the best supercomputers working against me as that they might have the computer I am currently using working against me. Suppose I work out the course corrections on my computer and then type in the key, encrypt them, and send them on my way. Except instead of encrypting /my/ course corrections, it just replaces them with course corrections someone else made, and I have no way to tell because it's not like I can just read the cyphertext.
+
+I could take a random sequence a//n// and say the a//n//th bit of the nth message must be a one. They could send in their own course correction, and they'll have a 50% chance of getting it right, but if they're wrong, they're all doomed. The only way they can be sure they made the right bit a one is if they send my exact message. And to make sure they don't notice which bit I worry about when I send the message, I can basically send the message as two strings it xors together, so I have control over every bit.
+
+There's another problem though. I don't want the world to end if I mess up. I can make it so I get three tries, but then even if I have to do a new number each time random guessing will get the right answer 7/8ths of the time. So I modify that original part so there's more than one key bit. I could also have a set of bits where giving all of them particular values sets off the dead man's switch. Giving the code for this is indistinguishable from giving the real code, so the real code can't be tortured out of me. And I'll also send that code if I suspect people are working on building another rocket to stop Sisyphus.
+
+Also, I make it Sisyphus has a chance of randomly deciding to accept all messages, so that the world probably won't end if I die of old age but everyone still has incentive to make me live as long as possible.
+
+I don't think there's anything standard that will work with this. There's not a lot in cryptography about things you can do in your head. This is just me being creative. Someone else might be creative and come up with a better answer.
+
+Edit: One strategy that Earth might use. Threaten to torture Clark unless he gives the correct code. We'll know if it's right several months before the asteroid hits. I imagine Clark wouldn't want to spend those months being waterboarded.

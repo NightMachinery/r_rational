@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 3
+:DateUnix: 1437766979.0
+:DateShort: 2015-Jul-25
+:END:
+
+I suspect that sphere packing isn't the right approach for that problem.
+
+But perhaps you could have a stage where your spheres grow? Throw some spheres in, grow them until they're filling the space. Obviously your grow them on each axis independently.
+
+Then pack in more spheres. Repeat. You probably actually want to be using capsuleShape if you're using bullet.
+
+I'd be inclined towards trying to segment the mesh into convex-hull-able shapes, generally.

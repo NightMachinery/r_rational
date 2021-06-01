@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1446748691.0
+:DateShort: 2015-Nov-05
+:END:
+
+OK, now it sounds more like you're talking about the Apple resource fork (which is a single byte stream with a standardized internal structure) more than the Apple file system (which was a structured file system with complex file metadata) or BeFS (which had complex metadata similar to the Apple resource fork at the file system level).
+
+The Apple resource fork did provide a certain amount of application framework independence, but only because every application framework on the Mac had to provide an API for handling resource forks.
+
+Outside the Apple or Be environment, it really didn't matter that Be files had their complex metadata implemented in the kernel and Apple files were implemented in user space on top of streams. Which became enough of an issue for Apple once they forklifted it on top of UNIX that they basically gave up on metadata as an essential part of the file altogether... whether implemented as resource forks or HFS+ metadata.
+
+#+begin_quote
+  Something that would take a jpeg and translate it to a byte array, as an example.
+#+end_quote
+
+A JPEG /is/ a byte array. Do you mean "something that would take an image object and turn it into a byte array"?

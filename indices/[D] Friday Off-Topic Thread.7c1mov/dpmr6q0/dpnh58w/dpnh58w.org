@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 1
+:DateUnix: 1510371239.0
+:DateShort: 2017-Nov-11
+:END:
+
+I've worked a lot in Vue the last few months, and I'm pretty fond of it. I've only glanced at the other frameworks, but I feel like Vue is the most "declarative" of them; in that most of your code describes what you want to get, not how you want to get it.
+
+The Vue.js approach to say "I want to have one version of this tag for each element of this array" (a scenario that comes up pretty often) is to add a v-for attribute to your tag; the React.js approach involves string concatenation.
+
+That said, I would probably recommend React.js over any other framework, because I think it's the one most likely to be maintained on the long term.

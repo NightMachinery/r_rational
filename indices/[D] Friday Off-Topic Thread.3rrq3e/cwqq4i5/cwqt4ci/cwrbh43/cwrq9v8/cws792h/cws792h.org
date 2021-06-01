@@ -1,0 +1,30 @@
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1446933673.0
+:DateShort: 2015-Nov-08
+:END:
+
+I can answer 4 and 5 immediately. My answers are mostly based on creating mathematical models, and as such my answers can only apply to descendants of your questions where my assumptions are resolved one way or another. I will try to obtain multiple formulations of your questions in which the various answers you propose are true.
+
+Anthropics is about uncertainty of identity; that is, which observer you are, and what observers it is possible to be (I believe that accounting for anthropics in a causal epistemology can also solve Newcomblike problems, but that is only an intuition for now). To some extent, 'objective' questions can only be finally resolved after all observer-reducing events have come to pass.
+
+#+begin_quote
+  If I create a copy of myself and then one of me is instantly killed, do I have a 100% chance of ending up as the copy - as if I just teleported a foot to the left? Or is that just survivorship bias, and I had a 50-50 chance of dying?
+#+end_quote
+
+*4)* Creating a copy of yourself and 'instantly' killing one of you (I'm assuming the original, for 'ideal teleportation') is a simultaneous addition and subtraction. There is no point at which there are two observers, so post facto there is a chance of 1 that you are the copy, otherwise there is no 'you' to observe. There is also a chance of 1 that the original will die.
+
+If you are put in a box, and teleported into an identical box in an identical pose, and you don't know when the teleportation takes place (and you don't know how long you will be in the box, but know that the teleportation will take place before you are taken out), you may assume at any one point in time in the box that there is a .5 chance that you are the original, and a .5 chance that you are the copy. Because you don't gain any information of when the teleportation takes place other than at the instants when you're put in and taken out, you can only assume in the entire interval of time within the box that you are the original with .5 probability. Cool, huh?
+
+#+begin_quote
+  If I create two copies of me, give one a red ball and one a blue, and split the "blue ball" copy into two ... do I have a 2/3rds chance of receiving the blue ball, subjectively, or 1/2 chance? (Modified Sleeping Beauty problem.) Or do I have some kind of 50%-now-but-66%-later probability that varies over time?
+#+end_quote
+
+*5)* First of all, remove the original observer, because otherwise it's a trick question. :P We'll instead say the original observer is split into two, as happens with the blue receiver. Second, you're measuring the probability of /receiving a blue ball,/ which happens before the second split in your question, so the probability at the instant of reception is .5. However, once you observe receiving the blue ball (and you don't know when the second split occurs, &c, &c) you no longer know which observer you are, other than an instance of the original blue receiver.
+
+If you want the .66... probability, then you have to restrict observation of which color is received until after the second split. The observer is put under (becoming a non-observer), and split into two. Each one is assigned a color that will be inherited by their copies. The blue-assigned non-observer is split in two. At this point, they are woken up and given the ball of their assigned color. With full knowledge of this process, they should expect that the ball they /will/ receive will be blue with .66... probability. This is also true if they are given the ball before the second split but they don't observe which color it is.
+
+Anthropics is wacky and fun. I have to get to your first three questions later, though. I might post them to the sub, as a link or as text, because I'd probably have to write disproportionately more than this.
+
+*EDIT:* After reading a little more about anthropics, and rediscovering SSA vs. SIA, SIA seems obviously correct. /Of course/ the Sleeping Beauty problem is going to have a 2/3-1/3 split; /you're sampling one side of a .5 probability branch twice./ SSA is about questioning the weights of those observers/samples, and generally involves (meta)physics, frequentism, or whether observers identify themselves with each other in their utility function. I'm not sure why Armstrong seems to think that anthropic probabilities are "not enough," as his anthropic decision theory seems to be using SIA perfectly consistently. I believe the question of SIA vs. SSA may be dissolved.

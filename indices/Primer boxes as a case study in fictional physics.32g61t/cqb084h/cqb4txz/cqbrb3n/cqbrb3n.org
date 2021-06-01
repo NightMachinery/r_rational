@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: DCarrier
+:Score: 2
+:DateUnix: 1428994960.0
+:DateShort: 2015-Apr-14
+:END:
+
+#+begin_quote
+  Ordinarily you'd have a 2^{-100} chance of succeeding, but with a time machine you can raise that to near certainty, by doing an exhaustive search (using a 100-digit binary number as a counter) and then looping the right answer.
+#+end_quote
+
+That only works if there's a less than 2^{-100} chance of failure. Otherwise, your system will fail before reaching the correct answer.

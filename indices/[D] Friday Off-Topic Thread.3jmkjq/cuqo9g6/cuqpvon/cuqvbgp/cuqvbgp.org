@@ -1,0 +1,23 @@
+:PROPERTIES:
+:Author: Reasonableviking
+:Score: 1
+:DateUnix: 1441400348.0
+:DateShort: 2015-Sep-05
+:END:
+
+I could probably make a decanter of endless water (character has the item creation feat for it) however I suspect that even at full output the energy produced would be a lot more expensive than flaming skeletons from Animate Dead. In pathfinder a [[http://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/c-d/decanter-of-endless-water][Decanter of Endless Water]] can output at most 5 gallons per second in a stream, the decanter would cost me slightly more than 4500gp to build.
+
+Wikipedia tells me that the power from an overshot wheel can be calculated thus:
+
+Power in Watts = 4 × Q × H × C (x V?)
+
+#+begin_example
+  Q = Weight of water (volume per sec x capacity of the buckets)
+  V = Velocity of the stream in meters per second
+  H = Head, or height difference of water between the lip of the flume (head race) and the tailrace
+  C = Efficiency Constant 
+#+end_example
+
+Q = 19Kg (5 gallons is about 19 litres) V = 6 m/s (the stream is described as being 20 feet long) H = 4 m (lets make the thing pretty big, but not massive) C = 1 (I'm just gonna assume 1 here since wikipedia tells me that's alright)
+
+P = 456W or 1824W depending on the formula. or P = 2008W for an undershot wheel assuming square foot paddles and 6m/s stream

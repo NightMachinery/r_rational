@@ -1,0 +1,60 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 13
+:DateUnix: 1481300799.0
+:DateShort: 2016-Dec-09
+:END:
+
+Weekly update on my rational pokemon game, including work on the data creation tool Bill's PC. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Lots more discussion this week, but less code.  I'm going to set aside the two or three prototypes that are in various states of disrepair and drill down on the design documents.  I wanted to have them done by the new year, which is still a reasonable goal but not if I'm juggling other things at once.  Got to get the border of the jigsaw puzzle done, so to speak, so I know where we stand, before we start filling in arbitrary spots that might not even fit within the whole thing.
+
+--------------
+
+Spent a lot of time futzing about with a crafting system (which was when I realized the docs should be finished first), which owes a lot to the more abstract tool-property system that [[/u/Nighzmarquls]] is designing for his game.  The basic idea is that the player will eventually be able to craft/research their own pokeballs--rather than always buying the same five or six preset balls, different properties can be prioritized (such as lock speed, weight, damage resistance), limited only by one's engineering skills, materials, and ingenuity.
+
+What I would /like/ is some element of randomized hidden information, similar to the ring/wand/scroll system in Nethack, [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit][which I praised in my rational games document for permitting the existence of a metagame within a single player title]].  If a pokeball is made up of, say, ten different components, and on each run through we give them randomized technobabble names and have them affect different stats, would this permit the same amount of Science as Nethack?  Perhaps, but then it raises questions of how the player is able to finely tune a particular component without even knowing its purpose.
+
+There's /something/ there, but for now I'm going to just pencil in “crafting/research system” and worry about the details later.  It's not a /central/ system in the game, but it would be nice to permit the player a bit of customizing freedom.
+
+--------------
+
+A lot of words were typed concerning Ditto's ability to transform.  As it turns out, there are a handful of related potential powers--one of the Legendaries supposedly in canon has the power to force mindswaps between two individuals, and on top of that the Jirachi wish system could be used to transform the player into a pokemon, if they decide to make such an ill-advised course of action.  All together this tells me that we need some sort of engine-supported means of having one creature basically “wear” the body of another.  
+
+(This would be no problem at all if transformations were always /permanent/.  In that case you just copy the stats over and you're done--but if we want to be able to preserve and /revert/ to a “true” form, then it demands we organize our code a certain way).  
+
+As part of the ramifications of this system, all stats are going to have a factor determining how much of that stat resides in the Body and how much of it resides in the Mind.  Height, for instance, is 100/0 Body/Mind, while Defense is 80/20 and Accuracy is 50/50.
+
+--------------
+
+As a tangent to the discussion on transformation, the subject of Mega evolutions again came up (since it can use the system), with about five different major ways of handling it:
+
+1. just like canon, temporary, fleeting, and spammable
+
+2. super boost, wears out the pokemon and they die
+
+3. super boost, puts them in a coma afterwards, need to recup for a couple weeks and are unusable during this period (thanks to [[/u/DaystarEld]])
+
+4. mix of 2 + 3: wears them out and kills them if they don't receive medical attention
+
+5. a permanent 4th evolution
+
+In the end, I think that option 4 has the best mix of options.  Mega evolutions are therefore exposure to a super-evolution stone, basically, which causes the pokemon to mutate to unbelievably high power levels.  This will eventually kill the pokemon in question, with the time frame available being inversely proportional to how much they use their newfound power.  However, players who first obtain a matching super-everstone will have the ability to completely revert the changes, which leaves the pokemon comatose--but alive.
+
+In a nod to the canon lip-service about powerful bond (which they had no problem ignoring, but still), we could also say that mega evolutions permanently subtract some of the rapport that you've built up with your pokemon--so if you try using it on a brand-new pokemon, you'll find yourself with an absolutely uncontrollable beast, but even anything but the strongest of bonds will result in a rampage of some sort.
+
+--------------
+
+Some other miscellaneous conclusions we came to:
+
+- Types will likely come associated with certain stats.  It might surprise you to find that Onix only has 15 DEF, but because of his 50/30/20 Rock/Ground/Normal typing, it ends up getting a bonus, say 200 DEF on top of its completely type-agnostic base stats.  This is a shift, but allows for things like alternate typing and breeding a type in or out of a bloodline, with appropriate effects.
+
+- From the beginning we've followed the Origin of Species governmental division, with Leaders being essentially the military commander of a city with a separate Mayor who leads politically.  We have, however, decided to merge the two, with the understanding that a Leader typically keeps the old cabinet and administration.  This permits the player the ability to take over a town if they so wish, without needing to build in a weaksauce paperwork simulator as a counterpart to being Leader.
+
+- Names of some stats have been shifted around: Initiative is no more; SPD now represents how frequently/effectively a pokemon takes their turn, MOV represents how much movement a pokemon has available, and moves are in general being renamed to Actions or something similar.
+
+--------------
+
+Feel free to leave any comments or questions below. Also feel free to join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]] for brainstorming and discussion.  It's a great group, really, and I would highly recommend hanging out, even if you're not in it for this project itself.  There's tabletop groups, Dota 2 partying, and [[http://i.imgur.com/j3jRmMZ.png][puns]] like you wouldn't [[http://i.imgur.com/8cUkzoGl.jpg][believe]].  Come join us!

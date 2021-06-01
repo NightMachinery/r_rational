@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: Pwrong
+:Score: 2
+:DateUnix: 1469235519.0
+:DateShort: 2016-Jul-23
+:END:
+
+The symmetries I'm talking about are space translational symmetry, rotational symmetry, and time translational symmetry. The laws of physics are invariant with respect to translations and rotations. If you do a physics experiment in empty space, then you do the same experiment 10 metres to the left, rotated clockwise, and a week later, you should get the same results.
+
+#+begin_quote
+  can't you designate an origin You can designate an origin if you like, and you can then point in a direction and say "that's the x axis", and so on. But I could do the same thing in a completely different way and there's no way to say that one of us is "correct". That's what I mean by the axes and scale not being "absolute". Of course that doesn't mean that designating an origin isn't still useful.
+#+end_quote
+
+In Euclidean space, we have what's called a "metric", which is basically just the Pythagorean theorem: sqrt(x^{2} + y^{2} + z^{2).} After you choose your axes and I choose my axes, we can define the distance between two points using Pythagoras. Even though we have completely different axes, we will agree on the distance between two points.
+
+Minkowski spacetime has a different metric: sqrt(x^{2} + y^{2} + z^{2} - c t^{2).} This gives us a "spacetime distance" between two events. Even if we have different coordinate systems and reference frames, we will always agree on the spacetime distance between two events. The fact that c t^{2} has a /minus/ sign instead of a plus sign is what makes time different from space in a fundamental way.
+
+A manifold is something like a curve or a surface, or a higher dimensional surface. The basic rule is that the closer you look at it, the more it looks like a line or a plane (or higher dimensional equivalent). A submanifold is just a subset of a manifold that is also a manifold.

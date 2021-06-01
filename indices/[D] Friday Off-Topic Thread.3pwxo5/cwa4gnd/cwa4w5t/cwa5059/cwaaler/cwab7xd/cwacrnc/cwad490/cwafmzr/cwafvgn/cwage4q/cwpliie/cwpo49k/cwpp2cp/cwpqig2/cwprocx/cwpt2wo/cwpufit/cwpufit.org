@@ -1,0 +1,58 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1446757328.0
+:DateShort: 2015-Nov-06
+:END:
+
+#+begin_quote
+  That should probably tell you something.
+#+end_quote
+
+Sure, it tells me you're set in your ways, and your brain is all calcified and gross ;p
+
+#+begin_quote
+  You're pretty clearly coming from a gaming / graphics programming background
+#+end_quote
+
+I'm a web dev. With a bit of scientific computing on the side. Haven't ever touched a game engine, outside of maybe some pixel blitting with pygame.
+
+I'm focusing on those examples because I think they're a lot easier to grasp upfront, but here's another example.
+
+I want to make a feed reader that uses naive bayes and possibly some other techniques to sort through all kinds of data, and tag it, and rank it based on those tags.
+
+I don't just want rss feeds though. I also want emails, and I want to be able to write ranking rules based on more complicated data like reddit votes. A certain amount of webs craping would be involved, obviously.
+
+My ideal architecture for that is microservices. I write a script that fetches all my emails, put it in a crontab, and it saves them with their associated metadata (I want things that have the email tag to be a much higher priority, as an example).
+
+As soon as an email comes down, it needs to go through a stream. Ideally a stream of microservices process. They run the machine learning and the like on it.
+
+Now there are obvious changes I could make that would make this work conventionally. I could drop the microservices part entirely, kill the need for rpc.
+
+I could make some complicated system using inotify, although it would be limited to linux. It could run into locking issues, where one microservice wants to save data to one attribute, and another to a completely different, but they can't because it's a monolithic sequence.
+
+But what I really want is a nice simple system to register a callback on data change, and not have to worry about write locks. I want to be able to access a shared memory data structure, get updates when data has changes,
+
+Admittedly that's predicated on a microservice architecture being a good idea. Personally, I think it's really powerful. You know about the cathedral and the bizarre? It brings bizarre style development to projects that used to /have/ to be cathedral for practical reasons.
+
+#+begin_quote
+  Clarify whether you're talking about caching or physical storage. You're floating between the two levels and handwaving a lot of the challenges
+#+end_quote
+
+You don't need to have the /entire/ thing planned out in advanced. It's important to have a system that is flexible enough to handle an evolving workload. But premature optimization is harmful.
+
+Make no mistake, the ultimate goal is to have something that scales to the size of a filesystem, but there's no way I'm going to be able to do that without profiling.
+
+Those /are/ hard problems, but they don't need to be solved for this to still be useful as an IPC mechanism for microservices.
+
+As for floating between two different levels, it's worth noting that there aren't hard liens between them. Linux caches the hell out of it's files system. Writes happen asynchronously in every modern filesystem, the data gets cached in ram for a while before it gets saved, and things like bcache make filesystem faster then a pure ssd alone, but putting things that are likely to be randomly read on the SSD, but storing sequentially accessed data else ware.
+
+The two are so related I feel it would be absurd to consider them on their own.
+
+#+begin_quote
+  I was completely spitballing when I talked about the function block based filesystem. Before you run with that idea, put some serious thought into it, because I came up with it and I suspect it's full of crap once it has to interact with the real world.
+#+end_quote
+
+Don't worry, it's not quite what I'm doing, just inspiration. What I'm doing is ducktyping based on a similar system.
+
+I don't think that context switching is going to eat too much, especially since capnproto is going to have shared memory rpc stuff.

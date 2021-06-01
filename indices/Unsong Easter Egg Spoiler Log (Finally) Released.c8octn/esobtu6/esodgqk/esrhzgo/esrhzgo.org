@@ -1,0 +1,21 @@
+:PROPERTIES:
+:Author: Crimethinker
+:Score: 3
+:DateUnix: 1562225895.0
+:DateShort: 2019-Jul-04
+:END:
+
+Specifically this chunk of code:
+
+#+begin_example
+  if(location.host==='unsongbook.com'){(function(){var n,walk=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,null,false);
+  while(n=walk.nextNode())
+      n.textContent=n.textContent.replace(/Berenst(a|e)in/g,function(m){
+          return Math.random()<.1?m:(Math.random()<.5?'Berenstain':'Berenstein');
+      }).replace(/BERENST(A|E)IN/g,function(m){
+          return Math.random()<.1?m:(Math.random()<.5?'BERENSTAIN':'BERENSTEIN');
+     });
+  }());}
+#+end_example
+
+which randomly picks between =BERENSTAIN= and =BERENSTEIN=

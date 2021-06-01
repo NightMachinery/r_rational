@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 0
+:DateUnix: 1445280905.0
+:DateShort: 2015-Oct-19
+:END:
+
+Merely analyzing the frequency with which the opponent plays each move is an ugly hack, and not the best one; one might imagine a strategy that also analyzes how the opponent's behavior changes over time, or more explicitly use human psychology. Plugging solomonoff induction into bayesian updating and outputting the best guess at each turn (in other words, using AIXI) captures all these strategies and more.
+
+Granted, the hundred moves may not be enough time to deduce human game-theoretic psychology from scratch, but asymptotically it should waste only constant turns on finding the correct strategy.

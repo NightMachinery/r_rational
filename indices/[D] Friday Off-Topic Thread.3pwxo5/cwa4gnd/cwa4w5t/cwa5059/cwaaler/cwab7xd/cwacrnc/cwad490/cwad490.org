@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 1
+:DateUnix: 1445627034.0
+:DateShort: 2015-Oct-23
+:END:
+
+#+begin_quote
+  interpreted as various structures won out, with support added even on platforms that started out using structured objects.
+#+end_quote
+
+Interesting. I haven't heard of that. Any google-able word?
+
+I think that flexible typing is pretty important here. Programs should be very open about what they accept. If all I wanted was a simple binary protocol, I could do that damn easily today. Take capnproto, serialize to a file.
+
+You know about duck-typing in python? An object is an iterator (thing that can be treated as a list) if it has the right methods for a list. I'm imagining a similar level of flexibility in your data structures.
+
+A 3D scene is composed of some textures, some vector arrays, some metadata.

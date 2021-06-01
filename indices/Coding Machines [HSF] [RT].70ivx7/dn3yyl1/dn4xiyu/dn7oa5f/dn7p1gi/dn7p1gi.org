@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: everything-narrative
+:Score: 2
+:DateUnix: 1505828592.0
+:DateShort: 2017-Sep-19
+:END:
+
+*Exercise 1.1.1.1a:* Implement Ken Thompson Hack C compiler which uses only static code analysis. Design it to detect whenever it is used to compile a Python interpreter, and insert into the Python interpreter a backdoor which detects when the Python interpreter in question is used to run a C compiler, and then insert a KTH of these same specifications into that C compiler. (200 points)
+
+Alternately, prove that this is generally impossible due to Rice's theorem. (10 points)
+
+--------------
+
+My point is: I can write my Python interpreter in obfuscated C, and your compiler hack will be dead in the water. Quining is sort of the opposite of KTH'ing through layered interpreters.

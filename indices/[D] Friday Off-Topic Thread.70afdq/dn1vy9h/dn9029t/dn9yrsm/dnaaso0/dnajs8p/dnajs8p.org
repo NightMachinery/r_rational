@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 2
+:DateUnix: 1505962981.0
+:DateShort: 2017-Sep-21
+:END:
+
+So it's funny you bring up creating a DAG, as that's actually exactly what I've spent the last two days tinkering with: letting mods announce what order they need to come in in relation to other mods while still resulting in something resembling sanity.
+
+If one /were/ to be crazy enough to try and apply E-C-S to a graphics system, it would have to be something like a list of Renderers that are passed the screen buffer in a particular order. Each one would take a look at its own internal list of applicable entities (a particle system, or billboard, or 3D model, or sprite, or shader or whatever, one type per Renderer) and apply them to the buffer when asked. Systems which have to apply work to the buffer at multiple stages would simply register multiple places in line at different points.
+
+However, I'm with you: I don't think Graphics or whatnot can be efficiently subdivided like that. Its performance is very much based around sharing the same data wherever possible, and that's impeded by needing to split it up like that. At most I could see a GraphicsSystem owning the types of entities I mentioned, and then a single system would be responsible for and know how to draw a ParticleEffect, Model, Sprite, etc (which is how it works). It certainly wouldn't play very well with additional rendering systems that were unknown at compile time.
+
+Regardless, I'm more interested in the design pattern as it pertains to a flexible, moddable game design.
+
+XGEF is short for eXtensible Game Engine Framework, and it's the modding framework that I'm building to power Renegade (and to hopefully be generalized enough to work for other titles once I'm done). Crucially, it's not an engine but designed to work with one; in this case Renegade will likely end up interfacing with Unity or Xenko but since what XGEF does isn't that close to the metal, it shouldn't matter what you build it with. This means that it doesn't need to apply the pattern to bare-metal systems such as Physics, Graphics, or Audio or whatnot, as the game will need to provide the glue that holds XGEF and the engine together.
+
+It's for that reason that I think E-C-S is a good fit. Mods, in general, are more concerned with the content and/or design of a game, not the nuts and bolts, so this is where the flexibility can go nuts. At the end of the day a renderer is just eating matrices and shitting pixels, what does it care how many abstract levels of systems or components funneled into the resulting matrix array?
+
+As part of the design of XGEF, the number and type of Systems are known at compile time. The game using XGEF determines which Systems exist, and mods can then add or modify the Components, but not change the actual number of Systems in place. This puts a hard boundary on what the developer is willing to allow to be modded, while at the same time offering ample room within that sandbox to play in. Ideally, there will even be a small library of Systems that a developer can pick between, permitting fine-tuning of the basic game logic in broad strokes, but that's far down the road.

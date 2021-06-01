@@ -1,0 +1,66 @@
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 13
+:DateUnix: 1475518067.0
+:DateShort: 2016-Oct-03
+:END:
+
+Okay, so I had an idea while writing my last chapter to design an AI board game that explores and demonstrates the real existential dangers present in AGI development. I've designed a couple board games before, enjoy the work, and think if it ever actually gets finished and published, it might actually do some good in the world by informing people. So I'm going to hash out my thoughts on the game as I try to develop it week by week.
+
+*Format and Win Conditions*
+
+Option one is to have everyone compete against each other (each player represents a research team from a different country trying to win the race for AGI) with the potential for One Player Wins, Everyone Wins, and Nobody Wins outcomes. Nobody Wins would, of course, be the most common. In this format, information on how other players are developing would be limited, and there would be ways to sabotage each others' research and focus on different kinds of AI for easier or harder victories (someone going for a Sovereign AI might more chances for a Nobody Wins outcome, but a much more powerful late game, while someone going for an Oracle AI could give early advantages but have their major challenges endloaded).
+
+Option two is to have everyone work together on the same research team in a co-op format, where either Everyone Wins or Everyone Loses. Think Pandemic, with each player making decisions to solve problems with the AI's development. There would be different scenarios and difficulties to reflect what kind of AI they're trying to make, and there would be an external pressure to limit their time to develop it. Depending on the scenario chosen by the players, these external pressures could include a competing AI lab with non-virtuous values that needs to be beaten to the punch, or a countdown clock that represents the time remaining before some other external force ends civilization, like an incoming massive meteor strike that we need to kickstart the singularity to save ourselves from, or maybe nuclear winter has occurred and the remaining scientists are holed up in a bunker trying to save the dying planet through singularity before their resources run out.
+
+*Gameplay*
+
+The way I'm envisioning the game now, there are three major channels of activity: Funding, Research, and Development.
+
+Funding are the actions you need to take to do Research and Development. My preference would be to avoid money proxies like Monopoly has and just use tokens that each symbolize some arbitrary amount of money/time, but if they need to be tweaked for balance and realism reasons that's fine. The point is that this resource would be gathered and spent to limit player actions and cause them to prioritize optimal value moves.
+
+Development are the “offensive” actions, where you try and move up the tech tree and ultimately complete your AGI. A visual representation of this might be used, where different cards representing different Components of an AGI that are used to ultimately piece together a final prototype. These cards would be upgradable and can have stacking bonuses to help develop further and faster, but the more you have the higher your Risk would be.
+
+Research are the “defensive” actions, where you discover things that minimize Risks. These would be things like writing papers on alignment, or developing strategies to avoid letting an Oracle AGI out of the box, or safety procedures and policies to guard against user manipulation or moral hazard. If the game is PvP, then Research would also include finding out how far along the other players are in developing their own AI.
+
+The game ends when an AGI is activated, either because a player thinks they're in a good enough position relative to the other players to win, or in co-op the players are about to run out of time. Hopefully they have also been able to test their prototype, but every time they use their AGI, whether as a prototype or in its final activation, Risk is assessed to see if it's successful... and if it's not, Everyone Loses.
+
+*What is Risk?*
+
+Risk is the major source of danger in the game. It's represented by a %, and each aspect of an AGI will have a higher base Risk to overcome before hitting the big red GO button to turn it on. There will be a minimum necessary amount of features that an AGI needs to be ready even to test, and each type will start with a base Risk.
+
+For example, let's look at a basic, bare bones Oracle AGI. It would need to be made up of five Components:
+
+Data Analysis
+
+Deep Learning
+
+Prediction
+
+Language Processing
+
+Incentives
+
+Once each of them is Researched and then Developed, you could, potentially, hit GO and see if it does what you hope. However, its Risk in that crude a form would be very high: 85%. (A crude Genie might have a Risk of 92% and a Sovereign a Risk of 99%) In most circumstances, activating it so prematurely would be a very poor decision.
+
+Activating a Prototype of it would be much safer, but not win you the game. Risk in a test would be reduced by something like 1/3, and if successful, might grant you further insights into future R&D, represented by more Resource tokens to spend.
+
+But let's say you take the time to R&D an extra aspect: Modeling, or its ability to Do What I Mean.
+
+The DWIM Heirarchy has 6 levels: at its bottom, there's zero ability to understand human intentions. But if you program it to have up to the third level, Do What You Know I Understand, it would reduce Risk by 6%. If you upgraded its Modeling to the fifth level, Do What I Don't Know I Mean, it would reduce Risk by 12%.
+
+At the top level of DWIM is Coherent Extrapolated Volition, which would not be able to be researched on its own. You would need to first develop or upgrade its Modeling Component to level 5, then successfully run it in a Test. Only then could you upgrade its Modeling to its final tier, which would not only reduce risk by 15%, but also give other bonuses to your future R&D, and even your victory condition.
+
+However, you could have developed CEV and still lose your Risk roll, probably because one of the other Components hasn't been properly developed, or you didn't take the time to properly R&D how to deal with Moral Hazard, or figure out the Selfish Bastards problem. Which leads us to...
+
+*Theming*
+
+Ultimately, this game should tell a story, either of a group of AI developers, or a bunch of different groups, trying to save the world or dominate it through AGI, and failing in any number of ways.
+
+I have a mental image of a flowchart drawn out on the back of the box, or in a foldout separate from the rule sheet, which describes exactly what went wrong if you failed your Risk roll. Taking into account the type of AGI you developed, what Components it had, and what Components it was missing, it would pinpoint you to one of a few dozen potential failure modes, from “Good job, now everyone's a paperclip” to “Bob snuck in an extra line of code while no one was looking, and now he's God-Emperor.”
+
+I tend to hate elements of chance in board games, but think Risk is an important factor in this one. The idea I want to communicate is that this is an inherently risky endeavor that has to be treated with as much diligence and care as you can afford to take, and that rushing into it or being pressured to do it too early could be Game Over for everyone. If you screw up bad enough, no second chances, no learning from past mistakes.
+
+That's pretty much it, for now. I'm going to be breaking out the old excel spreadsheet and start doing what I love, which is figuring out what each piece and action do and then start balancing them. In the meantime, I'm interested to know what you guys think, overall... and especially interested if you work in the AI field or have researched it, and can give some suggestions of what the game should include, even down to individual Components. I don't know enough about the field to feel confident in getting everything right, so any feedback in that regard, no matter how basic it might seem, would be appreciated.
+
+[[https://www.reddit.com/r/rational/comments/56se39/d_monday_general_rationality_thread/d8m31oq/][Next post]]

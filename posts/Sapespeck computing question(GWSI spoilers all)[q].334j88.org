@@ -1,0 +1,145 @@
+#+TITLE: Sapespeck computing question(GWSI spoilers all)[q]
+
+* Sapespeck computing question(GWSI spoilers all)[q]
+:PROPERTIES:
+:Author: avret
+:Score: 3
+:DateUnix: 1429451753.0
+:DateShort: 2015-Apr-19
+:END:
+How precisely does sapespeck computing work? It seems that with the specifications of the sapespeck spell all you should be able to create is an [[http://lesswrong.com/lw/l9/artificial_addition/][artificial adder]].
+
+
+** You can construct an adder by taking many artificial adders that work only on the numbers between 1 and 10, and then hooking them together by having them mumble to each other. That's how calculators work, only their artificial adders only work on binary digits.
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 2
+:DateUnix: 1429460544.0
+:DateShort: 2015-Apr-19
+:END:
+
+*** When computers add, they look up a 2x2 table of answers for (1/0) plus (1/0). When we add in base 10, we look up a 10x10 table of (1/2/3/4/5/6/7/8/9/0) plus (1/2/3/4/5/6/7/8/9/0).
+
+In the story, their problem was they didn't have a base system. All of their numbers had unique names, making their table infinitely large.
+:PROPERTIES:
+:Author: scooterboo2
+:Score: 2
+:DateUnix: 1429473759.0
+:DateShort: 2015-Apr-20
+:END:
+
+**** Number names can be constructed from numbers represented in a base system. With Sapespeck, it might be as easy as accurately explaining how the construction goes.
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 1
+:DateUnix: 1429479917.0
+:DateShort: 2015-Apr-20
+:END:
+
+
+** Remember that it 'whispers' other things before producing a result, so it can basically run a function, then do something else with the output of that function. I'd guess that there's an input translation section (converts English words for numbers into something more consistent), then there's a base-ten single-digit adder, finally a section to announce the final output. And the chapter mentioned 'code-words' or something, so I'm guessing it uses words other than parseltongue zero through nine in order to not confuse which function outputs connect to which function inputs.
+:PROPERTIES:
+:Author: qbsmd
+:Score: 2
+:DateUnix: 1429492355.0
+:DateShort: 2015-Apr-20
+:END:
+
+*** Author here confirming that this is correct. Various other techniques that assist in /Sapespeck/ computing:
+
+- You can manipulate the volume of the output, to distinguish between "things you want the user to hear" and "internal signals"
+- You can put a lot of specks very close together into a "clump", and have a clump elsewhere distinguish incoming signals on the basis of what clump they come from. The base-ten single-digit adders form clumps, for example.
+- /Sapespeck Maxima/ allows you to easily rewrite specks - even rewriting multiple specks at a time - without individually deleting and recreating each speck involved. Sometimes it might even be easier to make a bunch of blank specks with /Sapespeck/ before actually making them into a functioning system with /Sapespeck Maxima/, because once you've gotten the hang of the latter, it's just much easier.
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 2
+:DateUnix: 1429506396.0
+:DateShort: 2015-Apr-20
+:END:
+
+**** Thanks--Does sapespeck take in all sound data or just parseltongue?
+:PROPERTIES:
+:Author: avret
+:Score: 1
+:DateUnix: 1429524314.0
+:DateShort: 2015-Apr-20
+:END:
+
+***** All sound and visual data - and it's surprisingly good at interpreting it, too; in the story I provide the example that it can't comprehend "when you see a Slytherin" but it can comprehend "when you see a robe with green trim" - but YOU try to program a computer to detect even the latter.
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 1
+:DateUnix: 1429542557.0
+:DateShort: 2015-Apr-20
+:END:
+
+****** Can it project sound of sufficient volume to produce pressure waves?
+:PROPERTIES:
+:Author: avret
+:Score: 1
+:DateUnix: 1429555523.0
+:DateShort: 2015-Apr-20
+:END:
+
+******* Yes, which proves instrumental in creating machines usable by non-Parselmouths, though Ginny doesn't get that far until sometime between the main story and the epilogue.
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 2
+:DateUnix: 1429556609.0
+:DateShort: 2015-Apr-20
+:END:
+
+******** Welp, that's instant bulletproof armor. And, actually, since pressure waves refract light, that could mean magic-proofing.
+:PROPERTIES:
+:Author: avret
+:Score: 1
+:DateUnix: 1429557011.0
+:DateShort: 2015-Apr-20
+:END:
+
+
+** Haven't read GWSI, but this sounds like a more limited version of Wiz Zumwalt's "magical forth interpreter" in Rick Cook's /Wiz Biz/ series, am I right?
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1429551696.0
+:DateShort: 2015-Apr-20
+:END:
+
+*** Not quite. The computing system is based on the /Sapespeck/ spell, which creates a speck at a location of the caster's choice. When a certain condition (determined on casting) is fulfilled, the speck emits sound in Parseltongue.
+
+Conditions are based on audio-visual input at human-level scales. It can do some processing; "if a Slytherin passes" doesn't work, but "if you see robes with green trim" does.
+
+Specks can react to other specks' outputs.
+
+Non-parselmouths can only (as far as is known) make specks output white noise.
+
+The author explains more in a reply to the comment below yours, which you've probably already read.
+:PROPERTIES:
+:Author: Solonarv
+:Score: 1
+:DateUnix: 1429741349.0
+:DateShort: 2015-Apr-23
+:END:
+
+**** Oh, it's a nerfed Magic Mouth.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1429746773.0
+:DateShort: 2015-Apr-23
+:END:
+
+
+*** u/eaglejarl:
+#+begin_quote
+  Wiz Biz
+#+end_quote
+
+Man, I loved that series when I was younger. The first one was definitely the strongest, but what a blast.
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1429775733.0
+:DateShort: 2015-Apr-23
+:END:

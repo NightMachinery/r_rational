@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: bbrazil
+:Score: 4
+:DateUnix: 1428793359.0
+:DateShort: 2015-Apr-12
+:END:
+
+That does make it tricker.
+
+One improvement on my idea is that what you've really got is a ternary rather than binary system, so you can go a bit faster and only take ~40 questions to get out 64 bits. The basic approach is to ask if the nth tenary digit adjusted by an appropriate random distribution is greater than some value. You'd want the distribution to result in a value greater with a chance of >90% if the digit was 0 etc.

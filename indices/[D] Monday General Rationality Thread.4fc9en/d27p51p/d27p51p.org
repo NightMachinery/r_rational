@@ -1,0 +1,11 @@
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1460998306.0
+:DateShort: 2016-Apr-18
+:END:
+
+The average total-correlation-explained gain from conditioning [[https://probmods.org/hierarchical-models.html][the third model given here]] on the sample data they specify is 2.6545447488 bits.
+
+Now to try to re-code their fourth model, and do my own graph showing the TC of the conditioned-on data, the total-correlation-explained by the model, and the mean-squared-error and variance of the prototype from the ground truth. That should expose something interesting about how TC helps abstract learning proceed.
+
+Then other things.

@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: ceegheim
+:Score: 1
+:DateUnix: 1523371779.0
+:DateShort: 2018-Apr-10
+:END:
+
+Not so sure. I think the only conflict between ZZ and QI is that Eldemar is hellbent on maintaining a state of cold war with QI, and QI has no moral restraints on stomping Eldemar into the ground, including civil population, if given the opportunity (which is provided by Sudomir's wraith-bombs). ZZ actually don't care about the war, otherwise than not wanting Eldemar invaded.
+
+So yes, cooperation is unstable, but not catastrophically. Once QI's option of successfull invasion is removed, QI has no more interest in backstabbing ZZ and vice versa. On the other hand, QI views ZZ as interesting, and ZZ need an endgame for immortality post loop; lichdom doesn't seem so bad.
+
+The real problem is that, within the loop, QI will tend to backstab ZZ if given an opportunity to reliably ensure that ZZ fail at 1.
+
+So, let me give an example how they could ensure cooperation:
+
+QI has several pretty good signature schemes prepared. The cooperation scheme works by QI signing (MACing) a message to himself, and ZZ transmitting this message across the timeloop. This message contains the terms of the treaty. No public key crypto is needed, because QI will have a secret book of symmetric keys prepared (possibly in his own mind!), from before the time-loop.
+
+A treaty can also contain hidden terms / information, using Merkle hash trees:
+
+Each valid signed message by QI is an offer of treaty. Post time-loop, ZZ can choose which message to relay, so QI needs to be very careful when signing. Trade can happen, e.g. by ZZ showing QI where the imperial ring is (for his collection), and then signing (as part of a complex treaty including conditionals) "We agreed that ZZ will show me where the ring is. The description of the location has hash xyzxyz; I personally verified the correctness of this information. Regards, QI." Then, post-loop, ZZ can trade specific morsels of info with QI, which QI has already verified in-loop.
+
+ZZ and QI can also transmit information in an initially trustless fashion in the following way:
+
+QI encrypts his message to self, and signs it. Then, ZZ encrypt this message, and incorporate it into the treaty. QI learns nothing from this; ZZ learn nothing from this; but if future QI and ZZ reach a higher level of trust, then this information has been preserved (and future QI can reveal it to ZZ, or future ZZ can reveal it to QI, with the revealing party learning nothing about the message).
+
+Such information exchanges can be used fruitfully to search for an optimal cooperative solution: A way that ensures QI's peace treaty without damaging Eldemar. Once such a solution is found, if it exists, there is no conflict anymore. Hypothetical example: The fourth in line of succession of Eldemar is amenable to a peace treaty, if QI follows the correct negotiation strategy. Without the time-loop there is no way QI could figure this out; with the time-loop he can try out high-risk high-reward strategies like assassinating parts of the Eldemar leadership and offering a lot of concessions, until he finds a reliable-in-retrospect solution.
+
+I understand why QI choose to bomb ZZ instead of negotiating; he was acting under time-pressure and with incomplete information, and probably optimally for his knowledge. I think it is a pity that ZZ did not think about attempting such a negotiation.
+
+Now I want an omake of a serious QI/ZZ negotiation ;)
+
+Also, such a meta-fic would fit perfectly into the lesswrong/rational-verse: It is reminiscent of simulator negotiating with an opaque simulatee, some of whose goals are known. Of course the negotiations / protocol-design would become simpler if public key crypto was available, but we cannot assume this.

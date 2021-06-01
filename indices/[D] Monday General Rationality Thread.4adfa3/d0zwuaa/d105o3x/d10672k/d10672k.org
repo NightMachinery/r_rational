@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Vebeltast
+:Score: 9
+:DateUnix: 1458009244.0
+:DateShort: 2016-Mar-15
+:END:
+
+#+begin_quote
+  LoL has around 10^{30} possible states after champion select... at the moment when network latency makes the game nondeterministic.
+#+end_quote
+
+Except that a lot of that state space has a nice clean gradient and a bunch of the rest can be handled with integer programming. I wouldn't be too surprised if the only really hard parts of LoL to learn would be strategic movement and tactical focus. Ability sequencing can be handled by adapting tree search. Builds and items roughly the same, though the evaluation function would be kind of ugly and you might want to steal some chunking from GAs. There's also the fact that LoL players are /way/ further from optimality than Go players. I wouldn't be entirely surprised to find that a well-trained LoL bot could seriously mess up a human player just by being able to catch every single last hit and deny, for example.

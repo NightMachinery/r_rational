@@ -3,8 +3,9 @@
 * An interesting paper -- how well do people bet when they know the exact rules of a rigged game?
 :PROPERTIES:
 :Author: TaoGaming
-:Score: 47
+:Score: 44
 :DateUnix: 1478308786.0
+:DateShort: 2016-Nov-05
 :END:
 The exact title is "Rational Decision-Making Under Uncertainty: Observed Betting Patterns on a Biased Coin" by Haghani and Dewey.
 
@@ -30,9 +31,11 @@ And "always bet heads" is obvious to anyone who knows anything about probability
 :Author: zarraha
 :Score: 12
 :DateUnix: 1478322406.0
+:DateShort: 2016-Nov-05
 :END:
 
-*** #+begin_quote
+*** u/GeeJo:
+#+begin_quote
   I think you can bet as quickly as you can type in what your bet is
 #+end_quote
 
@@ -45,6 +48,7 @@ From the paper:
 :Author: GeeJo
 :Score: 9
 :DateUnix: 1478348773.0
+:DateShort: 2016-Nov-05
 :END:
 
 
@@ -53,6 +57,7 @@ From the paper:
 :Author: sparr
 :Score: 6
 :DateUnix: 1478428890.0
+:DateShort: 2016-Nov-06
 :END:
 
 **** Always betting a constant proportion is the optimal strategy; what the proportion should be is determined by your risk appetite. (assuming a reasonably linear utility:dollars at the relevant scale)
@@ -60,6 +65,7 @@ From the paper:
 :Author: PeridexisErrant
 :Score: 3
 :DateUnix: 1478486637.0
+:DateShort: 2016-Nov-07
 :END:
 
 
@@ -68,6 +74,7 @@ From the paper:
 :Author: zarraha
 :Score: 2
 :DateUnix: 1478455580.0
+:DateShort: 2016-Nov-06
 :END:
 
 
@@ -82,6 +89,7 @@ I agree that the exact optimal strategy would not be betting a fixed % each roun
 :Author: gwern
 :Score: 1
 :DateUnix: 1480097525.0
+:DateShort: 2016-Nov-25
 :END:
 
 **** [[https://twitter.com/ArthurB/status/801549580076650496][Arthur B]] provides the dynamic programming/decision tree algorithm for estimating the value of a particular bankroll and number of bets assuming optimal play, if we are curious how much $25/300 bets at these rules (particularly the '$250 max' rule) is worth:
@@ -117,6 +125,7 @@ My try in R:
 :Author: gwern
 :Score: 1
 :DateUnix: 1484794584.0
+:DateShort: 2017-Jan-19
 :END:
 
 ***** We've expanded the analysis considerably: [[https://www.gwern.net/Coin-flip]]
@@ -126,6 +135,7 @@ Fast implementations in R and Haskell, both decision-tree and formula-based, sca
 :Author: gwern
 :Score: 2
 :DateUnix: 1485473352.0
+:DateShort: 2017-Jan-27
 :END:
 
 ****** Very nice. Checking a three month old thread paid off.
@@ -135,9 +145,11 @@ If only I could use this to somehow figure out the version where bias is not kno
 :Author: AugSphere
 :Score: 1
 :DateUnix: 1486469964.0
+:DateShort: 2017-Feb-07
 :END:
 
-******* #+begin_quote
+******* u/gwern:
+#+begin_quote
   If only I could use this to somehow figure out the version where bias is not known and has to be estimated.
 #+end_quote
 
@@ -150,6 +162,7 @@ One thing I'm trying is I've coded up an implementation of the Kelly coinflip ga
 :Author: gwern
 :Score: 2
 :DateUnix: 1488945565.0
+:DateShort: 2017-Mar-08
 :END:
 
 ******** Good work! Hadn't had the time to get into it myself, but was still curious about how well optimal agents could do without prior knowledge of true bias. Even if it's not very efficient, it's still nice to have a proper solution.
@@ -157,6 +170,7 @@ One thing I'm trying is I've coded up an implementation of the Kelly coinflip ga
 :Author: AugSphere
 :Score: 1
 :DateUnix: 1488973310.0
+:DateShort: 2017-Mar-08
 :END:
 
 
@@ -169,8 +183,9 @@ If you want to give it a shot yourself, without spoiling the ideal strategy, her
 edit: The app doesn't seem to be working, so I suppose this link wasn't too helpful
 :PROPERTIES:
 :Author: Khaos1125
-:Score: 5
+:Score: 6
 :DateUnix: 1478326805.0
+:DateShort: 2016-Nov-05
 :END:
 
 *** I wrote a quick JS version since this seems to be down. I replaced the 4 second wait time with the bet limit it was intended to enforce, but otherwise I imagine it should be roughly the same.
@@ -178,12 +193,14 @@ edit: The app doesn't seem to be working, so I suppose this link wasn't too help
 [[https://jsfiddle.net/vur0hmt7/]]
 :PROPERTIES:
 :Author: Veedrac
-:Score: 3
+:Score: 4
 :DateUnix: 1478478645.0
+:DateShort: 2016-Nov-07
 :END:
 
 
-*** #+begin_quote
+*** u/appropriate-username:
+#+begin_quote
   The app doesn't seem to be working
 #+end_quote
 
@@ -192,6 +209,7 @@ edit: The app doesn't seem to be working, so I suppose this link wasn't too help
 :Author: appropriate-username
 :Score: 1
 :DateUnix: 1478369204.0
+:DateShort: 2016-Nov-05
 :END:
 
 **** Crashed after registration for me
@@ -199,6 +217,7 @@ edit: The app doesn't seem to be working, so I suppose this link wasn't too help
 :Author: Anderkent
 :Score: 1
 :DateUnix: 1478372640.0
+:DateShort: 2016-Nov-05
 :END:
 
 ***** Ohh yeah same, I didn't try to register before.
@@ -206,6 +225,7 @@ edit: The app doesn't seem to be working, so I suppose this link wasn't too help
 :Author: appropriate-username
 :Score: 1
 :DateUnix: 1478376773.0
+:DateShort: 2016-Nov-05
 :END:
 
 
@@ -214,6 +234,7 @@ edit: The app doesn't seem to be working, so I suppose this link wasn't too help
 :Author: kenkopin
 :Score: 1
 :DateUnix: 1480629217.0
+:DateShort: 2016-Dec-02
 :END:
 
 
@@ -222,8 +243,9 @@ edit: The app doesn't seem to be working, so I suppose this link wasn't too help
 My strategy would be to bet a single cent every time until time runs out, or I noticed the results moving away from 60% heads. Either I'll statistically walk away with a small amount of winnings, or I'll catch on to trickery and stop playing before I lose more. Sure, this isn't optimal for the goal of maximizing winnings, but you can't play optimally if you can't trust the RNG.
 :PROPERTIES:
 :Author: Psychobeans
-:Score: 8
+:Score: 9
 :DateUnix: 1478323885.0
+:DateShort: 2016-Nov-05
 :END:
 
 *** There's a significant opportunity cost to this strategy. You're playing with house money and your maximum possible loss is $25. If the expected value of the experiment is greater than $50 then you are losing money by not taking them at their word and playing aggressively.
@@ -231,8 +253,9 @@ My strategy would be to bet a single cent every time until time runs out, or I n
 Put differently: you're playing with house money and cannot possibly walk out the door with less money than you had when you walked in. Why would you /not/ assume that they're telling the truth and play to win? Or, alternatively, just take the $25 and leave immediately without making a single bet? What are you trying to achieve with your strategy?
 :PROPERTIES:
 :Author: eaglejarl
-:Score: 11
+:Score: 13
 :DateUnix: 1478434849.0
+:DateShort: 2016-Nov-06
 :END:
 
 **** If it was house money then I misunderstood. I was under the impression that it was my money. I wouldn't bet at all if it was house money, and take the $25.
@@ -240,6 +263,7 @@ Put differently: you're playing with house money and cannot possibly walk out th
 :Author: Psychobeans
 :Score: 2
 :DateUnix: 1478480084.0
+:DateShort: 2016-Nov-07
 :END:
 
 ***** OP says "you are offered a stake of $25". The paper says that they gave out the money.
@@ -249,9 +273,11 @@ You realize that you're saying you would give up $225 that you are statistically
 :Author: eaglejarl
 :Score: 3
 :DateUnix: 1478491627.0
+:DateShort: 2016-Nov-07
 :END:
 
-****** #+begin_quote
+****** u/Psychobeans:
+#+begin_quote
   OP says "you are offered a stake of $25". The paper says that they gave out the money.
 #+end_quote
 
@@ -270,9 +296,11 @@ Distrust of a game is a valid reason to decide not to play.
 :Author: Psychobeans
 :Score: 5
 :DateUnix: 1478494970.0
+:DateShort: 2016-Nov-07
 :END:
 
-******* #+begin_quote
+******* u/Bowbreaker:
+#+begin_quote
   I am saying that I would rather walk away with a guaranteed small payout than risk it.
 #+end_quote
 
@@ -281,6 +309,7 @@ So what you're saying is you would never make an investment in which the payout 
 :Author: Bowbreaker
 :Score: 2
 :DateUnix: 1478565581.0
+:DateShort: 2016-Nov-08
 :END:
 
 ******** You are taking it out of the context of participating in an experiment.
@@ -288,6 +317,7 @@ So what you're saying is you would never make an investment in which the payout 
 :Author: Psychobeans
 :Score: 2
 :DateUnix: 1478568526.0
+:DateShort: 2016-Nov-08
 :END:
 
 ********* So because you participate in an experiment your expectations of getting cheated are much much higher than real life? Why is that? Are scientists conducting an experiment, in your experience, less trustworthy than average?
@@ -295,6 +325,7 @@ So what you're saying is you would never make an investment in which the payout 
 :Author: Bowbreaker
 :Score: 2
 :DateUnix: 1478568714.0
+:DateShort: 2016-Nov-08
 :END:
 
 ********** From my post above:
@@ -306,6 +337,7 @@ So what you're saying is you would never make an investment in which the payout 
 :Author: Psychobeans
 :Score: 2
 :DateUnix: 1478569121.0
+:DateShort: 2016-Nov-08
 :END:
 
 
@@ -314,9 +346,11 @@ So what you're saying is you would never make an investment in which the payout 
 :Author: Psychobeans
 :Score: 2
 :DateUnix: 1478569550.0
+:DateShort: 2016-Nov-08
 :END:
 
-*********** #+begin_quote
+*********** u/Bowbreaker:
+#+begin_quote
   I, currently, have no information on the frequency of trickery experiments versus non-trickery experiments.
 #+end_quote
 
@@ -325,6 +359,7 @@ If you have no information, why assume a 100% trickery instead of investing a bi
 :Author: Bowbreaker
 :Score: 2
 :DateUnix: 1478569960.0
+:DateShort: 2016-Nov-08
 :END:
 
 ************ I feel this comes down to personal thoughts about gambling. I, myself, have a dislike for it.
@@ -332,6 +367,7 @@ If you have no information, why assume a 100% trickery instead of investing a bi
 :Author: Psychobeans
 :Score: 1
 :DateUnix: 1478570365.0
+:DateShort: 2016-Nov-08
 :END:
 
 ************* My dislike for real life gambling is that usually it is either is dumb (designed in a way that the bank has better odds than you) or it is smart but unethical (you know the odds are in your favor and the guy you plan to gain from effectively doesn't or is to ignorant to know why this matters) or is pointless (50% odds). But whenever these things don't apply I don't see how there's a problem.
@@ -343,6 +379,7 @@ Do you know where your dislike for gambling stems from, assuming it isn't a fina
 :Author: Bowbreaker
 :Score: 2
 :DateUnix: 1478679146.0
+:DateShort: 2016-Nov-09
 :END:
 
 
@@ -359,6 +396,7 @@ Don't criticize psychobeans for refusing to gamble. It's a very good life strate
 :Author: LeifCarrotson
 :Score: 1
 :DateUnix: 1479825370.0
+:DateShort: 2016-Nov-22
 :END:
 
 
@@ -369,13 +407,15 @@ EDIT: In case the point I was trying to make with this wasn't clear: proving dec
 :Author: Magnap
 :Score: 12
 :DateUnix: 1478348971.0
+:DateShort: 2016-Nov-05
 :END:
 
 **** They had time to make 300 flips. 200 to make sure it's rigged and then 100 to play for max profit would still do better than most of the players did.
 :PROPERTIES:
 :Author: sparr
-:Score: 4
+:Score: 3
 :DateUnix: 1478428961.0
+:DateShort: 2016-Nov-06
 :END:
 
 
@@ -384,6 +424,7 @@ EDIT: In case the point I was trying to make with this wasn't clear: proving dec
 :Author: Lugnut1206
 :Score: 1
 :DateUnix: 1478418127.0
+:DateShort: 2016-Nov-06
 :END:
 
 ***** To be honest, I just used [[http://powerandsamplesize.com/Calculators/Other/1-Sample-Binomial][this power calculator]]. But here's what I could've done (note that this is a slightly different calculation, as I'm finding the n needed to have 80% power to detect the bias as greater than or equal to no bias (50% heads) given that it's 60% heads, and the calculator used the power to detect the bias as different from no bias, i.e. I'm doing this for a 1-tailed test):
@@ -396,6 +437,7 @@ Sorry if this post is long and rambling, I started writing it as my ADHD meds we
 :Author: Magnap
 :Score: 3
 :DateUnix: 1478488853.0
+:DateShort: 2016-Nov-07
 :END:
 
 ****** As far as optimal betting goes, requiring an 0.05 significance level with 80% power is way too risk-averse, isn't it?
@@ -405,13 +447,15 @@ Simply estimating the bias using the Laplace's rule of succession and plugging t
 :Author: AugSphere
 :Score: 4
 :DateUnix: 1478524556.0
+:DateShort: 2016-Nov-07
 :END:
 
 ******* Sure, that'd work. My goal was just to underscore how much work would be needed to execute "My strategy would be to bet a single cent every time until time runs out, or I noticed the results moving away from 60% heads", if you want to actually notice the results moving away from 60% heads.
 :PROPERTIES:
 :Author: Magnap
-:Score: 3
+:Score: 4
 :DateUnix: 1478541192.0
+:DateShort: 2016-Nov-07
 :END:
 
 ******** Since we're on the subject, can you think of a decent method that would utilise the whole posterior for determining the amount to bet, if the bias isn't known and has to be determined as the results of tosses are observed?
@@ -423,6 +467,7 @@ EDIT: I mean, it's pretty easy if you resort to Monte Carlo, but I was hoping I'
 :Author: AugSphere
 :Score: 2
 :DateUnix: 1478544683.0
+:DateShort: 2016-Nov-07
 :END:
 
 ********* Defining the posterior =Pr(p|h,t) = BetaPDF(h+1,t+1)= (the probability =p= of heads given the numbers =h= and =t= of heads and tails; please excuse my informal notation), we can combine this with the Kelly criterion for even-money bets (which I'm assuming this is, though I haven't read the paper) =f = 2p-1= (where =f= is the fraction you should bet) allows us to get the expected value of =f=: =E[f] = \int_{p=0}^1 (2p-1)*Pr(p|h,t) dp= (hope you don't mind a bit of LaTeX). When reassured that yes, =t= and =h= are indeed positive, Mathematica helpfully gives this as =(h-t)/(2+h+t)=, and indeed =\lim_{n\to\infty} (0.6n-0.4n)/(2+0.6n+0.4n) = 0.2= which is in agreement with the Kelly criterion.
@@ -432,6 +477,7 @@ EDIT: rephrased last sentence
 :Author: Magnap
 :Score: 2
 :DateUnix: 1478553853.0
+:DateShort: 2016-Nov-08
 :END:
 
 ********** By taking an average of the Kelly criterion over the posterior, you've just reproduced Kelly criterion with probability set to the mean of the posterior (i.e. the Laplace's rule, since you went for the uniform prior).
@@ -443,6 +489,7 @@ There must be a way to do better than this. Otherwise we'd have to conclude that
 :Author: AugSphere
 :Score: 3
 :DateUnix: 1478558767.0
+:DateShort: 2016-Nov-08
 :END:
 
 *********** But this would correspond to being risk-neutral, no? Same way that a risk-neutral agent couldn't choose between paying a bill and having 10% chance of paying 10x the bill. So if you've seen (2h,1t), you have a good bit of your probability volume outside of, say, [50%,70%], and where the <50% probabilities drag your expected payoff down, the >70% probabilities increase it, in fact more than enough to make up for the risk of the coin being biased against you. The Kelly strategy is optimal /in the long run/ for known bias, and similarly, this strategy /converges/ to Kelly as the bias becomes more certain, i.e. as we bet more. As such I claim it's optimal (maximizes expected utility) in the long run for a risk-neutral agent with logarithmic utility.
@@ -450,6 +497,7 @@ There must be a way to do better than this. Otherwise we'd have to conclude that
 :Author: Magnap
 :Score: 2
 :DateUnix: 1478595698.0
+:DateShort: 2016-Nov-08
 :END:
 
 ************ I've been observing the betting outcomes of bots with this strategy and vast majority of them tends to lose money during first ~20 bets, which can't really be optimal, I feel. You could do better by simply not betting.
@@ -465,6 +513,7 @@ EDIT: Well, this turned out to be a little bit more complicated than anticipated
 :Author: AugSphere
 :Score: 2
 :DateUnix: 1478596996.0
+:DateShort: 2016-Nov-08
 :END:
 
 
@@ -479,6 +528,7 @@ EDIT: The situation is the same if I measure performance by simple average money
 :Author: AugSphere
 :Score: 2
 :DateUnix: 1478622891.0
+:DateShort: 2016-Nov-08
 :END:
 
 ************* Maybe trying to look at determining the optimal number of flips to wait before betting would give a clue? Just throwing it out there because I don't know how to approach that.
@@ -486,6 +536,7 @@ EDIT: The situation is the same if I measure performance by simple average money
 :Author: Magnap
 :Score: 2
 :DateUnix: 1478627450.0
+:DateShort: 2016-Nov-08
 :END:
 
 
@@ -494,8 +545,9 @@ EDIT: The situation is the same if I measure performance by simple average money
 (No such rule or reason holds among cognitive psychologists generally, unfortunately.)
 :PROPERTIES:
 :Author: EliezerYudkowsky
-:Score: 12
+:Score: 11
 :DateUnix: 1478376091.0
+:DateShort: 2016-Nov-05
 :END:
 
 **** Ah, but how do you know that it's not a cognitive psychology experiment masquerading as an economics experiment?
@@ -503,6 +555,7 @@ EDIT: The situation is the same if I measure performance by simple average money
 :Author: brocht
 :Score: 16
 :DateUnix: 1478455640.0
+:DateShort: 2016-Nov-06
 :END:
 
 ***** Ask them a basic question about economics?
@@ -510,6 +563,7 @@ EDIT: The situation is the same if I measure performance by simple average money
 :Author: PeridexisErrant
 :Score: 4
 :DateUnix: 1478486698.0
+:DateShort: 2016-Nov-07
 :END:
 
 
@@ -518,8 +572,9 @@ EDIT: The situation is the same if I measure performance by simple average money
 My betting strategy before reading the guide would have been 50% of my pool each bet. After reading their explanation I can see that my instinct is too high lol.
 :PROPERTIES:
 :Author: Dragonheart91
-:Score: 4
+:Score: 3
 :DateUnix: 1478331005.0
+:DateShort: 2016-Nov-05
 :END:
 
 **** The problem with the possibility of deception is it might not activate the deception until you start making "real" bets.
@@ -527,6 +582,7 @@ My betting strategy before reading the guide would have been 50% of my pool each
 :Author: Psychobeans
 :Score: 7
 :DateUnix: 1478333106.0
+:DateShort: 2016-Nov-05
 :END:
 
 ***** That seems like a stretch to me. Only a very small fraction of people would thoroughly check for a deception.
@@ -534,6 +590,7 @@ My betting strategy before reading the guide would have been 50% of my pool each
 :Author: Dragonheart91
 :Score: 1
 :DateUnix: 1478336704.0
+:DateShort: 2016-Nov-05
 :END:
 
 ****** I feel the suspicion is justified when I'm offered a gambling deal where they insist the odds are in my favor. I guess I'm in that small fraction.
@@ -543,6 +600,7 @@ Quick edit: If the RNG was done via dice or some other traditional method, I'd f
 :Author: Psychobeans
 :Score: 5
 :DateUnix: 1478337104.0
+:DateShort: 2016-Nov-05
 :END:
 
 ******* But loaded dice are trivial to make. I mean it's slightly harder then just lying about the odds...but the reputational risk of out right committing fraud is more then either.
@@ -552,6 +610,7 @@ Also what the hell would be their motivation? They aren't going to be making a p
 :Author: nolrai
 :Score: 1
 :DateUnix: 1478547617.0
+:DateShort: 2016-Nov-07
 :END:
 
 
@@ -560,6 +619,7 @@ Also what the hell would be their motivation? They aren't going to be making a p
 :Author: CouteauBleu
 :Score: 7
 :DateUnix: 1478340401.0
+:DateShort: 2016-Nov-05
 :END:
 
 
@@ -569,6 +629,7 @@ EDIT: Not noticing this was half a month old is what I get for browsing reddit w
 :PROPERTIES:
 :Score: 2
 :DateUnix: 1479815734.0
+:DateShort: 2016-Nov-22
 :END:
 
 
@@ -579,6 +640,7 @@ Interesting affiliation for one of the authors - [[https://en.wikipedia.org/wiki
 :Author: gwern
 :Score: 2
 :DateUnix: 1480096594.0
+:DateShort: 2016-Nov-25
 :END:
 
 
@@ -589,6 +651,7 @@ I started to say "why would you take this bet unless you could choose heads?" Th
 :Author: eaglejarl
 :Score: 1
 :DateUnix: 1478347454.0
+:DateShort: 2016-Nov-05
 :END:
 
 *** you can choose heads
@@ -596,4 +659,5 @@ I started to say "why would you take this bet unless you could choose heads?" Th
 :Author: sparr
 :Score: 1
 :DateUnix: 1478429035.0
+:DateShort: 2016-Nov-06
 :END:

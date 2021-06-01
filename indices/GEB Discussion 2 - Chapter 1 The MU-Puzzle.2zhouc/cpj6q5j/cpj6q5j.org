@@ -1,0 +1,31 @@
+:PROPERTIES:
+:Author: redstonerodent
+:Score: 11
+:DateUnix: 1426712677.0
+:DateShort: 2015-Mar-19
+:END:
+
+Claim: In the MIU system, no theorem has multiple of 3 'I's.
+
+Denote the number of steps taken to derive a theorem as the /rank/ of the theorem.
+
+Proof (induction on rank):
+
+Base case: rank 0. The only axiom is 'MI' which has not a multiple of 3 'I's.
+
+Suppose no theorem of rank k has a multiple of 3 'I's. Notice how applying the rules to each of these theorems changes the number if 'I's:
+
+- Rule I: no change
+- Rule II: double
+- Rule III: decrease by 3
+- Rule IV: no change.
+
+Doubling or decreasing by 3 any non-multiple of 3 doesn't make a multiple of 3, so no theorem of rank k+1 has a multiple of three 'I's. By induction, no theorem of any rank, and thus no theorem, has a multiple of 3 'I's.
+
+This means 'MU' isn't a theorem. I'm pretty sure "starting with 'M' and not having a multiple of 3 'I's" is a sufficient and necessary condition on theorems, but I haven't worked through the details of the sufficience proof.
+
+*Edit:* I proved this; see my response to [[/u/Hazlzz]]'s comment below.
+
+In response to (b):
+
+The Turtle is taken on more and more axioms, without any way to build theorems from them. This is why a formal system needs inference rules; otherwise you have no theorems other than the axioms, and the formal system is trivial.

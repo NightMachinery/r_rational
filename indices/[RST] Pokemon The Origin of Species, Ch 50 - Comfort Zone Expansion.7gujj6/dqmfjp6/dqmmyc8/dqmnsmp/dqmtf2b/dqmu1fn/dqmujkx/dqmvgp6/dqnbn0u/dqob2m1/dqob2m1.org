@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: masasin
+:Score: 2
+:DateUnix: 1512253494.0
+:DateShort: 2017-Dec-03
+:END:
+
+Nope. Do you want to meet on Hangouts or Skype or something? It may be easier to explain.
+
+I'll avoid using terms like accuracy for now, and use the "standard" notation. I was talking about Tyranitar events being T1 or T2, but that does not matter in the larger scheme of things. If general attacks are 60:40, then you have P(T1) and P(T2) as 0.6 and 0.4 respectively, and you just adjust your calculations accordingly.
+
+The issue is that you have P(T1 | R1), the percentage of Tier 1 reports that are actually Tier 1. This was actually what you were looking for though (how to respond if you get a Tier 1 report), and would have been the answer. It is independent of the percentage of incidents that are Tier 1.
+
+In your case, P(T1 | R1) was 79%. That is, if you receive a Tier 1 report, it is actually Tier 1 79% of the time. Where P(T1) and P(T2) come in is the percentage of time where you receive a Tier 1 report, P(R1). If almost all incidents are Tier 2, you'd expect to almost never see Tier 1 reports (say, 1% of the time). When you do, 79% would actually be Tier 1 events (say, 0.79% of the time are T1 given R1).
+
+P(R1) = P(R1 | T1) * P(T1) + P(R1 | T2) * P(T2)
+
+If you had wanted to do a fancy Bayesian calculation, you could say that the 79% refers not to P(T1 | R1) (the percentage of Tier 1 reports that are actually Tier 1 incidents), but to P(R1 | T1) (the percentage of Tier 1 incidents that are reported as Tier 1). In this case, P(T1) /does/ matter if you want to figure out how to respond.
+
+Given P(R1 | T1), you would need to find P(T1 | R1) (what is the probability that a given Tier 1 report is actually Tier 1?). Using Bayes's rule, you have:
+
+P(T1 | R1) = P(R1 | T1) * P(T1) / P(R1)
+
+We know that P(T1) is 2/17 (almost 0.12) for Tyranitar. Different pokemon would have different probabilities, and that would be /important/ to the result.
+
+P(R1) = P(R1 | T1) * P(T1) + P(R1 | T2) * P(T2) = 0.79 * 0.12 + 0.33 * 0.88 = 0.3841 using the exact values for P(T1) and P(T2).
+
+Remember that here, P(R1 | T2) (the 33%) is the probability that a Tier 2 incident is reported as T1.
+
+So you end up with P(T1 | R1) = P(R1 | T1) * P(T1) / P(R1) = 0.79 * 0.12 / 0.3841 = 0.242. That is, in the case of Tyranitar attacks, if you receive a Tier 1 report, there's just a 24.2% chance that the incident is actually Tier 1.
+
+Does that help?

@@ -1,0 +1,23 @@
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1458962801.0
+:DateShort: 2016-Mar-26
+:END:
+
+#+begin_quote
+  Eh, it works empirically. The final arbiter is reality and all that.
+#+end_quote
+
+Yes, but /why/ do they work empirically?
+
+#+begin_quote
+  Why do you suspect a multi-information approach will work better then a NN approach?
+#+end_quote
+
+Uhhhh... that's not exactly an apples-to-apples comparison. I more expect that multi-information is a useful statistical principle for explaining why /deep/ and /convolutional/ neural nets, in particular, learn as well as they do on the problems where they do. We know that they learn hierarchies of filters, we've seen in Bayes methods that hierarchical models seem to work "blessedly" well, and I think multi-information is a way of quantifying "how much" a dataset "says" to a hierarchical model of some kind (Bayes, generative, discriminative, neural, whatever).
+
+The interesting thing about deep and convolutional neural networks is not merely "they work". We already knew, long before Alexnet, that a sufficiently large fully-connected net could learn /any/ function, even with /just one/ hidden layer. The interesting thing about them is that adding additional layers scales up the number of parameters to be estimated (via gradient-descent) linearly, but the difficulty of learning and generalizing in that model subsequently /fails/ to scale up exponentially. Something about "deep" and "hierarchical" models /counteracts the Curse of Dimensionality/.
+
+If we consider multi-information in its presentation as "correlation explanation", [[http://arxiv.org/pdf/1410.7404v2.pdf][it turns out]] that learning a hierarchical representation from data only ever requires a constant number of samples (because we can build the multi-information estimators from marginal probabilities that are easy to estimate with few samples). This would then appear to be how a "deep" or "hierarchical" model can fight the Curse of Dimensionality: you only ever need a constant number of samples to have enough multi-information (intuitively, we could talk of "enough multi-likelihood", perhaps) to narrow your search for latent representations.
+
+We would thus have a principle by which to unify deep neural networks and hierarchical Bayes methods, while also explaining why [[http://arxiv.org/abs/1603.05691][deep models /need/ to be deep]], why deep models /don't/ overfit as we'd normally /expect/ to happen when we grow the parameter space linearly, and potentially part of why real brains have such an easy time with the vast dimensionality of their sensoria.

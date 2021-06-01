@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: RegexRationalist
+:Score: 1
+:DateUnix: 1484419573.0
+:DateShort: 2017-Jan-14
+:END:
+
+(After writing and thinking about it I am pretty sure this is insufficiently defined. Even if it is sufficiently defined, the example I use throughout doesn't work, and I'm unsure it could actually be used anywhere interesting. I feel like with some modification it could be really interesting, but as is I'm not sure. Posting anyway to get feedback)
+
+The ability to map and transform any datastream to any other datastream given an two examples which form such a transformation. A datastream here means any computer file.
+
+This mapping for datastreams is [[https://en.wikipedia.org/wiki/Inverse_function][invertible]], so you can take the second datastream and get the original one out.
+
+That is to say, you can take a 3D animation of an eye that moves exactly as does a video of an eye looking around, generate a mapping between them, change the 3D animation, and then use the mapping to make the video match the 3D animation's movements.
+
+If you try to apply the mapping using the wrong kinds of datastreams, there is no output. (e.g. Plug the wrong 3D model, or maybe audio data in, no output.) Try to generate a mapping with eye movements that don't match the video, and no mapping is generated. There needs to be exactly one possible mapping.
+
+To actually use the power, you take the two datastreams, and put them on a specific flash drive. The datastreams must be labeled "1" and "2".
+
+On the flash drive is a file "mapping" which contains the last mapping made, and "output" which contains the last applied output.
+
+The flash drive has two buttons: "make map" which generates a mapping between 1 and 2, and "map" which applies the mapping of 1 to 2, and puts it in the file "output".
+
+Example output: You put 1 and 2 on the flashdrive where 1 is your 3D animation of an eye that matches the video and 2 is your video. You press "make map". You replace 1 with the new eye movement 3D animation. You press "map" and "output" is your new video with the eye movements changed to match the 3D animation.
+
+(After writing this I realized a couple issues: The eye example doesn't work for a real eye- you'd actually need to also model the eyelids because they aren't static, but instead have small movements, and also deal with light variations.
+
+And if you have to do that stuff then you can't really do anything interesting- This comes down to a more fundamental problem where you have to generate an example for which you can already produce a 1:1 mapping. And if you don't have the 1:1 mapping, too much is left up for interpretation in giving it weird datastreams.
+
+This drastically undercuts my original idea of being able to generate mappings between arbitrary data.
+
+So the eye example works only if it is video of the very 3D modeled eye you're moving around, in which case you're skipping the video animation rendering step and not much else of interest)

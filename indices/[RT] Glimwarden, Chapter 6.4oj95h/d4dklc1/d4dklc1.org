@@ -1,0 +1,38 @@
+:PROPERTIES:
+:Author: redstonerodent
+:Score: 9
+:DateUnix: 1466198363.0
+:DateShort: 2016-Jun-18
+:END:
+
+Since we know some details about the output and arrangement of lanterns, I did some analysis of different layouts.
+
+The gliminance at a location from a lantern is proportional to 1/d^{3}, where d is the distance. Gliminances from multiple lanterns simply add. I normalized such that the gliminance from a lantern one mile away is 1. I assumed that the anywhere with gliminance at least 1 is considered safe. Sander's calculations about gliminance are a bit confusing, and it's not clear whether "safe" is gliminance 1 or what the gliminance is 1 mile away from an outer lantern, in the direction opposite the central lantern (gliminance 1.18). I also assumed that all lanterns have the same gliminance output, and there aren't any terrain objects that get in the way.
+
+I assumed lanterns are arranged in a triangular grid, so each lantern has up to 6 neighbors, with adjacent lanterns 2 miles apart. I assumed lanterns are built around the central lantern in a circle, and the eight lantern in adject to two existing lanterns.
+
+All distances are in miles, and areas in square miles.
+
+[[http://imgur.com/a/kJj5w][Here]]'s an imgur album of plots of gliminance and safe regions for different arrangements of laterns.
+
+Here's the amount of safe area for each number of lanterns:
+
+#+begin_example
+  lanterns | area with gliminance > 1
+         1   3.14  = pi
+         2   6.95  = 2.21 pi
+         3   10.78 = 3.43 pi
+         4   14.58 = 4.64 pi
+         5   18.38 = 5.85 pi
+         6   22.22 = 7.07 pi
+         7   25.83 = 8.22 pi
+         8   28.99 = 9.22 pi
+#+end_example
+
+In units of pi square miles, the first lantern adds 1 to the safe area, each of the next 6 lanterns add 1.2, and the 8th lantern only adds 1 again. I haven't checked, but I think lanterns after the 8th also add about 1. So the most efficent city size is 7 lanterns; after that, it's better to start a new city than to keep adding lanterns. It's more efficient for Light's Hollow to create a new city ~10 miles away than to add another lantern. (This might not be true if my assumptions about lantern spacing and target gliminance were wrong.)
+
+It's possible to have the lanterns more spread out, and still be safe. They can be about 1.25 times more spread out before holes appear in between the lanterns, and 1.35 times more spread out before the safe regions aren't connected. But spreading out the lanterns doesn't always add more safe area; the safe area is maximized at about 1.30 times the spread, with an area of 32.7695.
+
+It's possible there are other, more efficient arrangements of lanterns. The triangular grid is nice, and almost certainly the most efficient arrangement for very large cities, but maybe something like four lanterns in a squares gets you more area per lantern.
+
+I can do more analysis if people want to see more, or I can share my (very messy) Mathematica notebook.

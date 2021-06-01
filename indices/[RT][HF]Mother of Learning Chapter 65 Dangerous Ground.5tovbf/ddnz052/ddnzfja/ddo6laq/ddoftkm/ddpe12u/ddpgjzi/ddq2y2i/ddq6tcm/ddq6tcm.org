@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: thrawnca
+:Score: 2
+:DateUnix: 1487070348.0
+:DateShort: 2017-Feb-14
+:END:
+
+Yeah, in the unexpected case where multiple Controllers actually occur, I think having the loop continue is probably a better course of action than collapsing it when the first one leaves. It's a less destructive failure mode.

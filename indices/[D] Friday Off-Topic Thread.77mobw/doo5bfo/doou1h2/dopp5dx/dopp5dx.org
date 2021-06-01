@@ -1,0 +1,90 @@
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 1
+:DateUnix: 1508655285.0
+:DateShort: 2017-Oct-22
+:END:
+
+#+begin_quote
+  The first section of your GDD deals with the main menu? The main menu is a means of interacting with your game, and does not help define it.
+#+end_quote
+
+Actually, it does help define it: it means that this is an engine to create "games", not "levels". Like, it signals that the goal is to create standalone experiences. But yeah, I should probably communicate this without using a shitty chapter structure.
+
+#+begin_quote
+  This entire section is vastly more impactful than its position would suggest. THIS should be on the first page, not buried under UX, of all things.
+
+  This section should also be at the beginning.
+#+end_quote
+
+I agree. Actually, your notes me realize that I've structured the document (and in a way, my thinking process) wrong: I've started with the parts that you see first, instead of starting with the /important/ parts.
+
+Which actually gives me a better idea of where to go next and how to prototype: I should look for the features I'm really excited about, the ones I want to test, and look for the fastest way to implement them.
+
+#+begin_quote
+  if you are only including a feature because otherwise your entire game is an exact clone of another, then you need to re-evaluate WHY you're doing this.
+#+end_quote
+
+My reasoning is "Once people play my game for 5 minutes, they'll realize it's pretty different from Minecraft". But I have to get them to play it first, through marketing and trailers and word-of-mouth.
+
+The thing is, I intend to make an engine that looks a lot like Minecraft (because it's familiar and it does a bunch of things right), but that is very different in terms of dynamics and possibilities. Hence why I need game modes and features that leverage "conceptually different" into "visibly different".
+
+#+begin_quote
+  I get the sense that you are trying to counter the use of voxel as a buzzword/genre and not as a technical term.
+#+end_quote
+
+I'm not super familiar with the technologies involved, but my understanding was that voxel rendering was a completely different rendering technique from polygon-based rendering; and that a given voxel only had a position, a size and a color, with no texture? Correct me if I'm wrong.
+
+#+begin_quote
+  All blocks /must have these properties/ or all blocks /must support having these properties/?
+#+end_quote
+
+All blocks must have them.
+
+#+begin_quote
+  This is a bit of a dangerous and inflexible philosophy. There are so many cases in the game industry of a glitch or a bug becoming the ultimate killer feature; don't precommit to denying yourself the use of these happy accidents.
+#+end_quote
+
+I don't... think that's a good design philosophy. I mean, if I do find a killer feature on accident, I'm not going to discard it, but otherwise I need an easy-to-control physic system. I'm not going to make a system more likely to have bugs because I hope happy accidents will happen.
+
+#+begin_quote
+  pray tell how ragdolls are responsible for enabling non-lethality.
+#+end_quote
+
+Maybe not ragdolls, but having enemies leave a body behind. A stealth game with non-lethal options looks weird if the enemy you "tranquilized" disintegrates.
+
+#+begin_quote
+  the only system that will fit all three of these constraints is the null set. If you want it to be simple to understand and use by content creators, then your code is going to be complicated.
+#+end_quote
+
+I don't follow. I mean, I'm familiar with the idea of design trade-offs, but in that case wouldn't making the system easier to predict also make it easier to code? A system with few inputs and few "behaviors" will be easier to read than Unreal Engine's physics module.
+
+#+begin_quote
+  should this not be decided by the map creator? What's the point of such an arbitrary distinction?
+#+end_quote
+
+Simplicity. The fewer customization possibilities a creator has, the easier it is for her to wrap her head around those possibilities (which is why Super Mario Maker is easier to understand than Unity).
+
+I mean, in practice, it's way more complicated than that, I'm trying to optimize for maximum "creation possibilities per effort spent learning the tools".
+
+#+begin_quote
+  Not going to happen, as the path of least resistance is always going to be "Minecraft except X"
+#+end_quote
+
+Good point. I sort of agree, but "always" is a bit strong. Basically, my goal is to make "Minecraft except X" /not/ the path of least resistance, or at least not by a wide margin.
+
+#+begin_quote
+  This has been tried. HTML/CSS is shit, and far too broad for a UI that should have a common design language.
+#+end_quote
+
+That's interesting. Can you tell me more? What has been tried, and what would you recommend for ingame menus?
+
+#+begin_quote
+  You say this for every damn section. Stop saying it and just say what you *have* designed.
+
+  The self-deprecation has no place in what should be a description of a game that does not yet exist.
+#+end_quote
+
+I agree that I'm not writing this optimally, but I do need to write it somehow. Basically, this document is not just a list of ideas I have, it's a list of priorities and things I need to research / conceptualize better. If I write "I'm not sure how to do X", then 3 months later when I start working on X, I know that I need more research.
+
+That said, yeah, there are probably better ways to formulate it. Overall I'm trying to list the leads I have, to give direction to future research, and the general metrics I need to optimize. Suggestions welcome.

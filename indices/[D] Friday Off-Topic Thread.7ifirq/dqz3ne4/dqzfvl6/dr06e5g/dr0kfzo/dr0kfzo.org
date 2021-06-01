@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1512861512.0
+:DateShort: 2017-Dec-10
+:END:
+
+Hmmmm.
+
+Okay. First thing you need to know about neural networks - you need to have a couple of hundred matched input/output sets, that is, data that you know that /this/ input requires /that/ output. Trying to use a neural network to generate /random/ modifications is not going to work well.
+
+On the other hand, if you really want to evaluate random modifications, you might have better luck looking into genetic algorithms. There, you just need some sort of fitness measure for your output (where a more fit output scores a higher number) - which can probably be modelled as how close your code results come to some ideal result.

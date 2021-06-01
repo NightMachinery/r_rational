@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: nicholaslaux
+:Score: 1
+:DateUnix: 1444102318.0
+:DateShort: 2015-Oct-06
+:END:
+
+#+begin_quote
+  if the data types are consistent
+#+end_quote
+
+You've hit the nail on the head there. With most of the types of data you're describing, they really aren't. If you're talking about a standard such as png/jpg, then sure, you have tools like imgmagick, but for the most part even those are primarily used in very specific situations, where you have one particular operation that you want to do many times to many things. If anyone is going to be doing it manually, they're going to load up photoshop or paint.net or any of the other tools available.
+
+However, for more complex documents, data isn't standardized, with each program having its own proprietary format, which may or may not even convert cleanly into another format without losing some information.
+
+Realistically, it mostly just seems like what you're describing will result in ballooning storage requirements, slower usage times, or both, for what seems to be very little benefit.

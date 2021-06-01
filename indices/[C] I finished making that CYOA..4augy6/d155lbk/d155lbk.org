@@ -1,0 +1,81 @@
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 3
+:DateUnix: 1458345184.0
+:DateShort: 2016-Mar-19
+:END:
+
+The summary is buggy, it seems. Since the gen_summary function throws an error, here's the raw text in the =#summary= p tag:
+
+#+begin_example
+  Lightning 5|Water 2|Air 1|Earth 1|Fire 3|Charisma 0|2|Air 1|Earth 1|Fire 3|WhiteSovereigns 2|Charisma 0|2|Air 1|Earth 1|Fire 3|WhiteSovereigns 2|Charisma 0|2|Air 1|Earth 1|Fire 3|WhiteSovereigns 2|Charisma 0|complic_tbl2 4|Leadership 2|Aura 1|complic_tbl1 0|Pain 1|Pathology 0|Liar 0|BlackSpy 0|BlackSpy 0|BlackSpy 0|BlackSpy 0|BlackSpy 0|BlackSpy 0|BlackSpy 0|
+#+end_example
+
+Things to note:
+
+1. There're two isolated =2|=s sitting in there.
+2. There's a lot of repeated elements (most obvious with all the =BlackSpy 0|=s at the end).
+
+My suspicion for number 2 is that it has something to do with choosing Black Spy and then selecting another Placement. Doing so deselects Black Spy (even though Black Spy is compatible with the other Placements), but may not trigger the refund function.
+
+I have no idea what's causing =2|=s , or why the elements that aren't Black Spy were being repeated.
+
+I did come up with a very simple way to reproduce the problem:
+
+1. Refresh the page.
+2. Choose to serve either the black or white hand.
+3. Choose "spy" as your placement.
+4. Now choose one of the other placements.
+
+After those steps, if you open the console and find the =#summary= p tag, you should see something like:
+
+#+begin_quote
+  WhiteSpy 0BlackPlacements 2|
+#+end_quote
+
+Note how it's missing the =|= that should be between 0 and BlackPlacements.
+
+Looking up the code for generating the summary started me down a rabbit hole. One thing led to another and I basically rewrote all the code. It satisfied my desire to tinker with other people's code (it's heavily commented, in case you want to see what I did).
+
+I only did some cursory testing, but it looks like it completely solved the bug. Among other things, I changed it so that you don't need to make as many refund calls.
+
+For example, in the =#BlackSide= button you have the following refund calls (I added the line breaks for clarity):
+
+#+begin_example
+  refund('WhiteSovereigns',4);
+  refund('WhiteSovereigns',3);
+  refund('WhiteSovereigns',2);
+  refund('WhiteSovereigns',1);
+  refund('WhiteSovereigns',0);
+  refund('WhitePlacements',4);
+  refund('WhitePlacements',3);
+  refund('WhitePlacements',2);
+  refund('WhitePlacements',1);
+  refund('WhitePlacements',0);
+  refund('WhitePlacements',5);
+  refund('BlackSpy',0);
+  refund('WhiteAllies',0);
+  refund('WhiteAllies',1);
+  refund('WhiteAllies',2);
+  refund('WhiteAllies',3);
+  refund('WhiteAllies',4);
+  refund('WhiteOnly',0);
+  refund('WhiteOnly',1);
+  refund('WhiteOnly',2)
+#+end_example
+
+With the change I made, all you need to do is:
+
+#+begin_example
+  refund('WhiteSovereigns');
+  refund('WhitePlacements');
+  refund('BlackSpy');
+  refund('WhiteAllies');
+  refund('WhiteOnly')
+#+end_example
+
+Basically, you can replace all your separate refund calls with just one for each category.
+
+Feel free to ask me if you have any questions or if I've screwed up in some way. I'd be happy to keep working on this when I wake up tomorrow.
+
+You can find my rewritten code [[http://pastebin.com/BXvUUknT][at this pastebin]]. You should be able to just copy and paste in the javascript file (the HTML will work fine with no changes). Remember to make a copy of your current file if you do want to replace it with this one.

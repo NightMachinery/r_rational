@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: Ty-Guy9
+:Score: 1
+:DateUnix: 1426927263.0
+:DateShort: 2015-Mar-21
+:END:
+
+Well, the point of defining a system of axioms and rules of inference is that it's somehow isometric to reality. If I must explain in the terms of formalism, then what I am suggesting is that there exists a system, isometric to reality, but still piecewise logical to the human mind, with rules of inference that just go down forever! Hence, you'll never find the axioms, just more theorems that your proof is built on. The proof would still be a proof in that every step would be follow properly from the theorems before, but it would also be infinite. When you 'looked closely enough,' you'd see all the little steps that made up the bigger patterns, as though the whole thing were a fractal!
+
+I'm getting it back now... let's take an example:
+
+Proof of (A + A->B) -> B:
+
+1. Assume A
+
+2. Assume A->B
+
+3. B (modus ponens)
+
+Now, you've only made one logical step, and you've hit your axiom of modus ponens. But if you believe my idea that there's always another layer underneath, then to reveal it you just ask questions like, "why should modus ponens convert previous steps into next steps?" or "why are we allowed to assume 'A' or 'A->B'"?
+
+And the answers would seem to be on a more abstract level, but that's kind of the point, isn't it? The answers aren't found in the system, because you're already reaching below (aka above) the system's axioms! If you want, you can redefine the system (which the fixed-system mathematicians wouldn't like very much) to convert some of these meta-logical arguments into axioms, and then you won't have to leave your new system at all! That is, you won't have to unless you question the axioms again.
+
+Thanks to rspeer's reply keeping me thinking, I can now describe my hypothesis more formally: If you have a proof P, with k inference-rule-based steps of a finite system S, then by questioning each step you can find /at least/ k new /logical/ steps that the proof /logically/ relies upon. You can then define a new system, S', which includes the logic behind those steps, in which a new proof, P', with the same conclusion can be constructed using k*2 steps. By induction it is clear that any proof can be extended indefinitely.
+
+You can also reverse the process to reduce steps, toward the limit of 1. That's a pattern our minds naturally use, and sometimes abuse, to learn new tricks to do math quickly. It's how many people do multiplication of two 1-digit numbers in one step. Just memorize the times table!

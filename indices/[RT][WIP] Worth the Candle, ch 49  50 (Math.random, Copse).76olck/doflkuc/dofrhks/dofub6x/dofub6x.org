@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: cthulhuraejepsen
+:Score: 6
+:DateUnix: 1508157080.0
+:DateShort: 2017-Oct-16
+:END:
+
+Fixed all those, I think. "Complete the exclusion" is correct, for reasons that will be explained later.
+
+#+begin_quote
+  By the way: the level-up notices really draw attention due to being in bold. My eyes are always drawn to them, resulting in a minor spoiler. For instance I saw "<important person> defeated!" before reading the battle scene. Can you think of a way to fix that? Perhaps spoiler tags (though that wouldn't work well on mobile)?
+#+end_quote
+
+I don't know that there's a solution to this that I like. It would be pretty easy to alter the custom CSS to implement spoiler tags, but that moves the story away from being format-agnostic (because of mobile users), and ideally I'd be moving /more/ in the direction of having it be readable no matter how it's getting served to you.

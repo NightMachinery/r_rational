@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 1
+:DateUnix: 1506108942.0
+:DateShort: 2017-Sep-22
+:END:
+
+Hmm, so have three branches. Let's say the agnostic one is master and then A and B. So I initially branch B off of master, commit any B-specific code to B, and then in the future whenever I code anything I make sure to commit it to master? Unless of course it's something B-specific again, in which case I try and get the B-specific stuff into a commit on B, and then all the rest on master. Which branch am I checked into for this? I had thought that simply checking out a different branch would be where I put my commits, but are you saying I could have B checked out and still commit to master from it?

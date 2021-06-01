@@ -1,0 +1,134 @@
+#+TITLE: [EDU] Numberphile: Winning at Rock Paper Scissors
+
+* [[http://www.youtube.com/watch?v=rudzYPHuewc][[EDU] Numberphile: Winning at Rock Paper Scissors]]
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1422309493.0
+:DateShort: 2015-Jan-27
+:END:
+
+** Literally rationality: "How to win."
+
+So it boils down to:
+
+- Level 1 Winner Strategy: Repeat winning move.
+
+- Level 1 Loser Strategy: Switch to the move not used in previous (losing) round -- ie, if you lost via paper-rock, play scissors.
+
+- Level 2 Winner Strategy: Copy your opponent's losing move.
+
+- Level 2 Loser Strategy: Copy your opponent's winning move.
+
+- Level 3 Winner Strategy: Level 1 Loser Strategy
+
+And so on. By this reasoning, the Level 6 Winner Strategy is the same as the Level 1 Winner Strategy; I don't know what that says.
+
+Frustratingly, the video gave no tips on how to recover from a draw, which is the outcome in 33% of all theoretic matches (though, I suspect, that percentage is much higher in practice).
+
+Funnily enough, I wrote a clickbait-style guide to RPS years ago; it's still on Pastebin [[https://pastebin.com/xmT2zi7S][here]]. I'm not sure how well it holds up to the strategy in the video, since it's less of a strategy and more of a collection of stray observations on human behavior.
+:PROPERTIES:
+:Score: 6
+:DateUnix: 1422309980.0
+:DateShort: 2015-Jan-27
+:END:
+
+*** I /think/ the video is saying that no strategy can ever dominate against all other potential strategies. So while Level 3 Winner Strategy beats Level Two and Level Two beats Level One, it doesn't mean that Level Three beats Level One. There's no guarantee of transitivity.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1422334349.0
+:DateShort: 2015-Jan-27
+:END:
+
+**** u/deleted:
+#+begin_quote
+  So while <a> beats <b> and <b> beats <c>, it doesn't mean that <a> beats <c>.
+#+end_quote
+
+So ... you're saying ... kinda like Rock Paper Scissors ...
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1422365640.0
+:DateShort: 2015-Jan-27
+:END:
+
+***** So, now you go one level deeper. You use a Level 1/2/3 metastrategy to determine which strategy to use to beat their strategy.
+:PROPERTIES:
+:Author: holomanga
+:Score: 3
+:DateUnix: 1422388378.0
+:DateShort: 2015-Jan-27
+:END:
+
+
+***** Pretty much.
+
+Also I don't really trust Numberphile to get their facts straight after a few videos that were poorly research and inaccurate in multiple ways. Granted they have a number of good math videos, but I kept noticing some severe errors in their videos.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1422367600.0
+:DateShort: 2015-Jan-27
+:END:
+
+
+*** Yeah, it's an interesting video and normally I enjoy Numberphile, but not discussing what the paper revealed was the best choice for a "Draw" situation really limits its usefulness, assuming the paper even addressed it. Thanks for posting it though :)
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 1
+:DateUnix: 1422335651.0
+:DateShort: 2015-Jan-27
+:END:
+
+
+** How would one modify this to include Lizard and Spock?
+:PROPERTIES:
+:Author: Darth_Hobbes
+:Score: 2
+:DateUnix: 1422333531.0
+:DateShort: 2015-Jan-27
+:END:
+
+
+** Whenever I've played, since I was in my teens, I always chose one and just stuck with it. Most people simply do not believe you will continue to use the exact same thing every time. They start expecting you to choose something different. Say I choose rock, and keep choosing rock, every time. I win some, I lose some, but after only a few throws, my opponent starts feeling more strongly that I'm going to stop throwing rock, and throw either of the others, so they start choosing either rock or scissors a lot more, and avoiding paper. As they start choosing those two options, my win percentage goes up.
+
+This has worked for me every time I've played a bunch of throws. It also drives people nuts. It's hilarious.
+:PROPERTIES:
+:Author: Farmerbob1
+:Score: 2
+:DateUnix: 1422345993.0
+:DateShort: 2015-Jan-27
+:END:
+
+*** What's really fun is telling them up front you always throw rock, and watching them agonize over whether or not to believe you /before you even start playing/
+:PROPERTIES:
+:Author: Chosen_Pun
+:Score: 5
+:DateUnix: 1422416844.0
+:DateShort: 2015-Jan-28
+:END:
+
+
+** How about a [[http://media-cache-ec0.pinimg.com/736x/cc/07/95/cc07950eea27a2852baacf8e2a46a33d.jpg][infographic]].
+:PROPERTIES:
+:Author: qznc
+:Score: 1
+:DateUnix: 1422358730.0
+:DateShort: 2015-Jan-27
+:END:
+
+*** Ooo, that looks like a really nice poster to hang up in my room.
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1422367742.0
+:DateShort: 2015-Jan-27
+:END:
+
+**** I did not look for the resolution. There might be a higher-resolution version floating around. Google image search for "rock paper scissors infographic".
+:PROPERTIES:
+:Author: qznc
+:Score: 1
+:DateUnix: 1422369350.0
+:DateShort: 2015-Jan-27
+:END:

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: Magnap
+:Score: 2
+:DateUnix: 1478595698.0
+:DateShort: 2016-Nov-08
+:END:
+
+But this would correspond to being risk-neutral, no? Same way that a risk-neutral agent couldn't choose between paying a bill and having 10% chance of paying 10x the bill. So if you've seen (2h,1t), you have a good bit of your probability volume outside of, say, [50%,70%], and where the <50% probabilities drag your expected payoff down, the >70% probabilities increase it, in fact more than enough to make up for the risk of the coin being biased against you. The Kelly strategy is optimal /in the long run/ for known bias, and similarly, this strategy /converges/ to Kelly as the bias becomes more certain, i.e. as we bet more. As such I claim it's optimal (maximizes expected utility) in the long run for a risk-neutral agent with logarithmic utility.

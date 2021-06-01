@@ -1,0 +1,320 @@
+#+TITLE: Which movies get artificial intelligence right as graded by a group of AI experts
+
+* [[http://news.sciencemag.org/2015/07/which-movies-get-artificial-intelligence-right][Which movies get artificial intelligence right as graded by a group of AI experts]]
+:PROPERTIES:
+:Score: 11
+:DateUnix: 1437487425.0
+:DateShort: 2015-Jul-21
+:END:
+
+** u/alexanderwales:
+#+begin_quote
+  All the experts are quick to point out that robots do not change their programming, and the notion that they could spontaneously develop new agendas is pure fiction. Hutter says the underlying goals programmed into the machine are “static.” “There are mathematical theories that prove a perfectly rational goal-achieving agent has no motivation to change its own goals.”
+#+end_quote
+
+I doubt I have the background to understand the math, but I'd be curious to at least have a peek at it (and I would assume that someone here knows what he's referring to).
+
+I also think that somewhat undersells the "new agenda" angle. The worry isn't that they'd develop a new agenda, but rather that an old agenda would get re-contextualized. For example, if my agenda were to sell as much lemonade as possible, I might change my grand strategy such that I'm doing things which seem totally unrelated to actually selling lemonade (like starting a junta).
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 24
+:DateUnix: 1437490814.0
+:DateShort: 2015-Jul-21
+:END:
+
+*** If Hutter's not talking about tiling agents / Vingean reflection, then I'm not sure what he could have originally said to the reporter, but my guess is he's talking about that, unless Hutter considers Schmidhuber's paper on Godel machines to qualify as a proof of that (I sure wouldn't call that "a mathematical theory proves that...")
+
+So far as I know, what has been shown so far is that, given some generous assumptions, a certain kind of expected utility agent will approve creating another agent with the same utility function.
+
+Mathematical proofs should always follow with necessity from their stated assumptions, with no additional assumptions being required. What if Omega is watching you and threatening to destroy everything you care for unless you add one tiny codicil to your utility function about there existing at least one paperclip? Well, actually in this case you should ignore Omega because no-blackmail equilibrium. But suppose Omega is offering you a trillion galaxies' worth of resources if you modify your utility function to consider the preservation of at least one paperclip to be a terminal value; in that case, you should modify yourself accordingly.
+
+Since math is about conclusions which follow with necessity from premises, any theorem you prove about agents building similar agents or stably self-modifying should include an assumption which says that the above doesn't happen. In our most recent work this appears under the rubric of what we've been calling the "no-Newcomb condition" (not sure if we have anything published on this). Nothing like that is explicitly stated in Schmidhuber's Godel-machines paper, so if Hutter thinks a real theorem could have been proven there showing tiling stability, that would be a mistake. It's plausible that Hutter was referring to MIRI's tiling-agents work, though.
+
+But ultimately, you can't judge any scientist by what a reporter says they said. There's no way of knowing what the scientist really said, or tried to say, or repeatedly rephrased until the reporter got something they wanted, etcetera.
+
+Don't know of a better starting point than [[https://intelligence.org/files/TilingAgentsDraft.pdf]]
+:PROPERTIES:
+:Author: EliezerYudkowsky
+:Score: 17
+:DateUnix: 1437507038.0
+:DateShort: 2015-Jul-22
+:END:
+
+**** Very interesting, thanks!
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 3
+:DateUnix: 1437507505.0
+:DateShort: 2015-Jul-22
+:END:
+
+
+**** [deleted]
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1437568835.0
+:DateShort: 2015-Jul-22
+:END:
+
+***** Only if Omega knows something you don't causing the self-modifications to have unexpected consequences and you're also not suspicious that Omega knows something you don't.
+:PROPERTIES:
+:Author: EliezerYudkowsky
+:Score: 3
+:DateUnix: 1437591760.0
+:DateShort: 2015-Jul-22
+:END:
+
+
+***** Since "Omega" in this case is rough speech for "an agent so powerful he might as well be God", it's questionable to what degree you /could/ fight Omega, except by not being in the same universe as him.
+
+One would hope that "do not roll down unhealthy incentive gradients" would be induced as a normal part of causal learning rather than having to be built into special-case social reasoning or decision-making code, but that presupposes a powerful causal induction capability operating over hierarchies of feature- and role-governed concepts. Or, in other words, intelligence.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1437587920.0
+:DateShort: 2015-Jul-22
+:END:
+
+
+*** I would also be interested in the maths.
+
+I can come up with a non-mathematical line of reasoning that works:
+
+1. The AI is perfectly rational.
+2. The AI has an initial goal, G.
+3. Since the AI is perfectly rational, every action it takes maximises expected progress towards G.
+4. If the AI were to change to goal F, then every action it takes would maximise expected progress towards F.
+5. Since, from 3, the actions it takes are already optimal with respect to G:
+
+   1. The decision-making for F must be identical to that of G (i.e. F is functionally equivalent to G).
+   2. At least some of the decision-making for F must progress towards G less (i.e. F is a sub-optimal choice of goal for a G-optimiser).
+
+6. Therefore a perfectly rational AI would never change goal.
+
+But as you said, you don't need to change your goal to change your approach to achieving that goal.
+
+If I were tasked with maximising human happiness I might start by lowering poverty or other "good" things, until I learned enough neurology to figure out I could turn humans into perpetually happy vegetables.
+
+To an observer unaware of my true goal, I would appear to have changed my goal.
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 7
+:DateUnix: 1437493761.0
+:DateShort: 2015-Jul-21
+:END:
+
+**** Actually modifying your goal might be desirable sometimes, too. You might do it if you're dealing with an enemy who can read your source code, or one who has access to things like truth serum and hypnosis that mean your mind can't be treated as a black box.
+
+In your example, if the AI is /not/ perfectly rational (and no minds currently in existence are perfectly rational), then optimising for F might actually be a better way of achieving G than optimising for G.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 8
+:DateUnix: 1437496222.0
+:DateShort: 2015-Jul-21
+:END:
+
+***** [deleted]
+:PROPERTIES:
+:Score: -1
+:DateUnix: 1437513859.0
+:DateShort: 2015-Jul-22
+:END:
+
+****** A fundamental goal is the very definition of good, at least for the mind in question. If a goal could be changed based on "good" or "bad" then the true goal has something to do with the concepts of good and bad.
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 9
+:DateUnix: 1437515533.0
+:DateShort: 2015-Jul-22
+:END:
+
+******* [deleted]
+:PROPERTIES:
+:Score: -1
+:DateUnix: 1437523469.0
+:DateShort: 2015-Jul-22
+:END:
+
+******** u/ulyssessword:
+#+begin_quote
+  Our morality lives in a black box.
+#+end_quote
+
+That's where the requirement for a /perfectly rational/ agent comes in. They don't have black boxes.
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 1
+:DateUnix: 1437524062.0
+:DateShort: 2015-Jul-22
+:END:
+
+
+****** Possibly! As I said in another comment, we won't be able to have rigorous arguments without a solid definition of what a "goal" even is.
+
+If you can change goals because you realise that your old goal was bad, then perhaps your real goal was "be good" all along. And you've just come to a different understanding of what that means.
+
+Or perhaps you've met people and travelled the world and broadened your perspective and the experience has changed you in some ineffable way. You can't pinpoint the moment when your alignment shifted, but you know that your old ambitions seem repugnant now.
+
+I don't know. Stuff is complicated.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 1
+:DateUnix: 1437520359.0
+:DateShort: 2015-Jul-22
+:END:
+
+
+**** This logic is valid if the goal of the AI is utterly independent of what happens to it in reality. However, this is not necessarily the case. If someone agrees to help the AI achieve G in return for its goal changing to F, then it may be rational for the AI to change its goal to F, assuming the other party can verify whether their source code was truly changed
+:PROPERTIES:
+:Author: Zephyr1011
+:Score: 2
+:DateUnix: 1437587237.0
+:DateShort: 2015-Jul-22
+:END:
+
+***** This could indeed be the case.
+
+Presumably such an AI would need to model its decision-making if it did change goal to determine whether such a move were warranted.
+
+If F was opposed to G, it might not agree to shift goals (since its future self would be working against its current self) unless the expected magnitude of assistance was very high.
+
+Even if F was neutral to G, it might not shift just because it could expect to do more work on its own.
+
+There's also the additional issue of goals which are theoretically unlimited (e.g. "maximise paperclips" not being limited to human usage or indeed even our galaxy). Unless the expected assistance was also indefinite then it would almost certainly not be worth switching.
+
+But besides those possibilities, a rational agent could definitely be motivated to switch goals (it just would have no internal motivation to do so).
+
+Theoretically if you were sufficiently competent to satisfy the AI you could complete G (and sufficiently trustworthy that it believes you), you could get it to switch to a diametrically opposed goal by going through an intermediary (e.g. "If you switch to a paperclip maximiser I will maximise human happiness. Now, if you switch to a genocide simulator I will maximise paperclips.").
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 1
+:DateUnix: 1437594841.0
+:DateShort: 2015-Jul-23
+:END:
+
+
+*** It's interesting, isn't it? MIRI wrote a whole paper (google "tiling agents") trying to prove that self-modifying without changing one's goals is possible at all. I'd like to hear more from these "experts" who think it's the default behaviour.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 6
+:DateUnix: 1437495898.0
+:DateShort: 2015-Jul-21
+:END:
+
+**** I dunno, Stuart Russell was among the experts mentioned and he's one of the biggest names in the field of AI.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1437496451.0
+:DateShort: 2015-Jul-21
+:END:
+
+***** That particular quote is from Marcus Hutter. He also seems like someone who knows what he's talking about; I suspect his opinion has been oversimplified for the purpose of reviewing a Hollywood movie. Without a rigorous definition of what an agent's "goal" is, it's meaningless to say "agents can never change goals", or "agents should never change goals" or "agents will never change goals in real-world situations".
+
+Also his book is now on my wishlist.
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 6
+:DateUnix: 1437496969.0
+:DateShort: 2015-Jul-21
+:END:
+
+
+*** u/E-o_o-3:
+#+begin_quote
+  “There are mathematical theories that prove a perfectly rational goal-achieving agent has no motivation to change its own goals.
+#+end_quote
+
+1) it's /probably/ impossible for the AI to be perfectly rational, in the first place. Better-than-human does not mean "perfect".
+
+2) There could be extrinsic motivations ("Change your programming now, or I'll kill you"). Anytime reality interacts /directly/ with the contents of the "brain", there may be an incentive to change the programming.
+
+3) In practice, an improving AI is necessarily self-modifying, so if we stop referencing "goals" and start looking at actual actions, it /will/ change various stuff inside itself that result in different actions from before.
+:PROPERTIES:
+:Author: E-o_o-3
+:Score: 3
+:DateUnix: 1437579271.0
+:DateShort: 2015-Jul-22
+:END:
+
+**** It's outright impossible to achieve "perfect" rationality in the sense of having a completed infinity of empirical data and computing power. Rationality, for a software agent, is necessarily resource-bounded, and "about" how well the agent behaves in the limits of increasing or decreasing resources.
+
+Otherwise you end up with weird paradox theorems, like in mathematical logic :-P.
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1437588111.0
+:DateShort: 2015-Jul-22
+:END:
+
+***** That "sense" of rationality is more like "omniscience", I think.
+
+#+begin_quote
+  completed infinity of empirical data
+#+end_quote
+
+No...just responses which are "correct" as per the agent's preferences in response to /new/ empirical data. You can have a perfectly rational agent that knows nothing about the universe it is in.
+
+#+begin_quote
+  completed infinity of computing power
+#+end_quote
+
+I'm a lot more sympathetic to this definition of rational, but in practice: You don't need to be able to solve all possible optimization problems to be perfectly rational, though - you only only to solve /your/ optimization problem.
+
+So long as all choices you are faced with happen to be within the bounds of your bounded rationality, you are perfectly rational for all practical intents and purposes.
+
+--------------
+
+In practice, I agree - it's /seems pretty likely/ that the optimization problem of "maximize human values, given this universe"... or even the problem of "maximize paperclips, given this universe" for an agent with any reasonable freedom of choice requires infinite computing power to perfectly solve. But I have to say /probably/ because I don't know for sure (and in fact I /can't/ know for sure, since the true laws of the universe can't be discovered with certainty)
+:PROPERTIES:
+:Author: E-o_o-3
+:Score: 2
+:DateUnix: 1437680939.0
+:DateShort: 2015-Jul-24
+:END:
+
+
+** The author seems to be jumping between what "robots" (thinking apparently about actual industrial robots) can do, and what artificial intelligences (potentially conscious ones) can do. I kind of get the impression that the author doesn't actually understand the issues here, he asked a bunch of different AI researchers about their opinions of different movies following different scripts, and just glued it together.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 16
+:DateUnix: 1437491663.0
+:DateShort: 2015-Jul-21
+:END:
+
+*** That's how journalism usually works, yes.
+:PROPERTIES:
+:Author: Arandur
+:Score: 17
+:DateUnix: 1437492181.0
+:DateShort: 2015-Jul-21
+:END:
+
+
+** Some good criticism here, although I have some quibbles.
+
+First of all, the idea that an AI couldn't modify it's own programming. Obviously, there isn't any technical reason an AI couldn't do this- with access to a copy of its source code and a compiler, it could create a modified version of itself. So I have to assume that the researchers' objection is philosophical- all of a mind's decisions are intended to promote its fundamental values and directives, so it wouldn't have any motivation for deciding to change them.
+
+I don't think that's the case, however. Say you had an intelligent AI with the singular motivation of convincing a researcher to say the word "pineapple" once. Suppose the researcher told the AI that he would say the word if the AI were to modify its motivation in some way. I think it would be rational for the AI to do so.
+
+Say you were offered immortality in exchange for marginally decreasing the pleasure you receive from looking at sunsets. Even though enjoying sunsets is apparently an instinctive response, and the degree to which you do so constitutes a part of your identity (as opposed to being a means to some other end), I think that would be a reasonable trade.
+
+In reality, we arguably do choose to modify our values and motivations- if only temporarily- every time we drink alcohol or get high. In a broader sense, whenever we choose to experience anything novel, we do so knowing that it could have permanent effects on our personality and disposition.
+
+I'd say that a conscious being- AI or human- might choose to alter what it values if it thinks that the act of doing so would promote those values to a greater degree than continuing to value them.
+
+Also, I'd be very curious to know why the researchers think that the digitization of human minds is impossible. I mean, I'm sure it would be much more resource-intensive than a similarly sentient AI, since you'd have to emulate a lot of biology. And, unless we could figure out a way to scan objects with an incredible amount of detail, it might be a lot more difficult to produce than an AI. But, surely, simulating any physical process is at least theoretically possible.
+:PROPERTIES:
+:Author: artifex0
+:Score: 9
+:DateUnix: 1437496999.0
+:DateShort: 2015-Jul-21
+:END:
+
+
+** I'm somewhat surprised that the article so readily dismisses uploading. If nothing else, it seems like something that shouldn't be too difficult (think Manhattan Project, not undergrad in their mom's basement) to brute-force a biophyisical/-chemical simulation given sufficient computing power (which I'm relatively sure we don't have: wikipedia says supercomputers get up to a few petaflops, and [[http://www.scientificamerican.com/blog/post.cfm?id=computers-have-a-lot-to-learn-from-2009-03-10][this]] says a human brain's power is on the order of 40 petaflops)
+
+[[http://www.openworm.org/][They]]'re doing just that to /C. elegans/ *right now*, and there's no reason to believe there is a difference between nematode and human neurons that makes the latter impossible /in principle/ to simulate the same way.
+:PROPERTIES:
+:Author: Solonarv
+:Score: 3
+:DateUnix: 1437697109.0
+:DateShort: 2015-Jul-24
+:END:

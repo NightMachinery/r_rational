@@ -1,0 +1,28 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 4
+:DateUnix: 1561395276.0
+:DateShort: 2019-Jun-24
+:END:
+
+The "keyring" identification method is security through obscurity, mostly, and not recommended for general use. It's /slightly/ better than just having memorized passphrases, because it's general, and new challenges can be produced using it, and it's easy to remember, but it's far from proof against adversaries, especially those that might be able to extract memories, compromise individuals, or hundreds of other exotic attacks available through magic. It /can/ help to trip up people using other methods though.
+
+The "keyring" appears three times in the text, with the last one truncated:
+
+- Call: Rhodonite
+- Response: Apricot
+- Response: Mourning
+
+Later:
+
+- Call: Dolomite
+- Response: Oak
+- Response: Excitement
+
+Later (not finished):
+
+- Call: Granite
+
+From this, you can probably figure out the requirements and how to generate your own call and response chains (note: if the first two are dolomite and oak, the third could be glum or excitement, but not listless or pleased). The only thing that this really does is to serve as proof that /either/ it's your ally /or/ the enemy has knowledge of the protocol, which is about as good as you could ask for unless you have computing capabilities, in which case you could do a public/private key thing.
+
+In a world where you have mind-readers, doppelgangers, spells that can completely and totally turn a person to the other side, and all kinds of other stuff, it's my belief that you're never going to have a protocol that helps too much, except that it provides weak proof against certain forms of attack.

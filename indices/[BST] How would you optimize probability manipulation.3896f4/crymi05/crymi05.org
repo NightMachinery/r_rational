@@ -1,0 +1,7 @@
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1433702367.0
+:DateShort: 2015-Jun-07
+:END:
+
+I think a lot of the loopholes can be fixed more elegantly by fixing the math rather than by adding exceptions. Simply define your unit of cost as how difficult it is to double the odds of something (1:1 -> 2:1 would have the same cost as 1:1000->1:500), and then let that difficulty stack naturally. Getting to 100% or 0% odds becomes impossible, which I think makes more sense, and you can no longer short circuit costs just by making them part of compound probabilities.

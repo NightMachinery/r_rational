@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: derefr
+:Score: 0
+:DateUnix: 1392970963.0
+:DateShort: 2014-Feb-21
+:END:
+
+An analogue to this question:
+
+Say that you have an unidentified blob of encrypted data, or /ciphertext/. You want to decrypt it by brute-force. This means that you likely need to figure out a key of some sort (i.e., an input to an algorithm)... but you also need to figure out the algorithm itself. (And any decent algorithm will give the ciphertext almost uniform entropy, so you won't be able to identify the algorithm from any statistical properties of the ciphertext.)
+
+Now, what percentage of your brute-force computational resources should you dedicate to the hypothesis that the defender used a /common/ algorithm... versus an /obscure/ (or even /unknown/) one?
+
+Your answer will be positively correlated to your belief that your attacker is /practical/, and thus uses "the best tool for the job" (e.g. a currently-considered-secure algorithm with many hardened implementations)--and negatively correlated to your believe that they're the kind of people who would rely on /security by obscurity./

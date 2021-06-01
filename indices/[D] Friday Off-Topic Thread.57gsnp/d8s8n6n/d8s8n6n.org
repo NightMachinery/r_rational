@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 4
+:DateUnix: 1476476653.0
+:DateShort: 2016-Oct-14
+:END:
+
+So I'm working on a generic boxel engine in python (think dwarf-fortress or minecraft). The original is by far the most popular project I've ever put on github ([[https://github.com/traverseda/pyCraft][pycraft]]), and I'm doing a complete rewrite.
+
+I'm using python's new async features, which I hope will make the whole thing a lot more practical then normal python game engine stuff. So far this has led to the immediate improvement of being able to run a python terminal alongside the render loop, although it still freezes if you tell the terminal to sleep for too long. I'll see about getting it working multi-process.
+
+Not sure what direction to take it in beyond that though.

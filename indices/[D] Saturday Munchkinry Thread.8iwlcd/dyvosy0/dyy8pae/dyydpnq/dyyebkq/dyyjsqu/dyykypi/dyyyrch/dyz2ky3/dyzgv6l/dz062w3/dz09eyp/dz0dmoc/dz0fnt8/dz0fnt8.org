@@ -1,0 +1,27 @@
+:PROPERTIES:
+:Author: norax1
+:Score: 2
+:DateUnix: 1526387807.0
+:DateShort: 2018-May-15
+:END:
+
+#+begin_quote
+  but earlier you suggested that two forcefields would randomly fail together maybe once a week
+#+end_quote
+
+I think I should clarify the probabilities.
+
+The probabilities are so that if you have 82 million houses (number of houses in USA) relying on one forcefield and has a second one as redundancy. Once a week one house of the 82 million would collapse because both forcefield fail at the same time. So basically one forcefield has a chance of 1:9000 of failure over a week because of random collapse. (Not counting stuff like defective devices and/or misuse)
+
+Now that I calculated it, it seems a little low. Since after 20 years 89% of forcefields wouldn't have collapsed. If we say the time frame is a day, we would have only 44% of forcefields never collapsing in 20 years.
+
+| 1house/86mil/timeframe | after 1 year | 5      | 10     | 20     | 30     |
+|------------------------+--------------+--------+--------+--------+--------|
+| day                    | 96.02%       | 81.64% | 66.65% | 44.43% | 29.61% |
+| week                   | 99.42%       | 97.15% | 94.38% | 89.08% | 84.08  |
+
+(That is the probability of 1 Forcefield still standing without collapsing. Keep in mind, they still collapse at random. Turning them off and on doesn't help.)
+
+I still need to calculate the probability correct. Since the forcefield would be down for ~5min and it only matters if the other forcefield collapses in that time.
+
+So I would still risk it for pots, pans and similar stuff, but not for my house or car. And I guess there is a higher chance for a lifeboat to have a leak, than for a forcefield to collapse.

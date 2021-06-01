@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1513048524.0
+:DateShort: 2017-Dec-12
+:END:
+
+You could probably train a neural network using a fitness function with a bit of twiddling, yes. But what the genetic algorithm does during training is precisely exploring the possible inputs and outputs of a black box with an aim of maximising the fitness function.
+
+If you're going to insist on using a NN, though, there are a few immediate questions you need to answer.
+
+- Will the system require internal memory and a series of outputs over time, or can a given set of outputs be found only from the inputs?
+- What are the inputs to the network (a series of real numbers representing noisy data)?
+- What outputs should the network provide (a series of real numbers generally constrained to be between zero and one)?

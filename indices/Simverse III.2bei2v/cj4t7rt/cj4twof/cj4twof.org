@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: krakonfour
+:Score: 1
+:DateUnix: 1406063356.0
+:DateShort: 2014-Jul-23
+:END:
+
+Two reasons why that wouldn't work, before I get to the subject of further hacks in Simverse IV:
+
+-The simulator has limited resources available. While it can handle a hack from a single ship, it would be difficult to accommodate 3 million new realtime zones to fully render, much less the googol^{googol} that follows. You'll crash the simulation in literally a fraction of a second.
+
+-To duplicate 2^{3,000,0000} entities, you're going to have to find 2^{3,000,000} rendered sectors. I mentioned that an 'empty swap' doesn't work.

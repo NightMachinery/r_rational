@@ -1,0 +1,34 @@
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 3
+:DateUnix: 1506224236.0
+:DateShort: 2017-Sep-24
+:END:
+
+#+begin_quote
+  I can clearly see this as one of those crux moments that I'd look back and wish I'd spent a little more time perfecting it and, well, poof--wish granted.
+#+end_quote
+
+Did... you quote HP:MoR? Either way, I don't think that's a good mindset, especially in game dev. There's a thousands different ways to fail and look back and go "if only", and you can't guess in advance which will hit you. You can regret over-engineering as easily as under-planning.
+
+#+begin_quote
+  If, somehow, this gets popular, then the mod framework is going to be stuck in whatever form it was in when it went viral, else you strangle the golden goose.
+#+end_quote
+
+Meh. API change is not /that/ hard; especially when you're adding features to the API; it's not like future modders would go "Oh no, I designed my mod before the new optional dependency system was added, now it's /useless/!".
+
+#+begin_quote
+  However, if you're writing a mod that overhauls, say, keybinding (as I did) or another system that everything has their fingers in, then you absolutely need to wait for other mods to get their content in before you can mutate it
+#+end_quote
+
+I'm... not sure how that would work? If you need the keybinding mod to be loaded before anything else, how do you make it happen? It not like you can tell your keybinding mod "load before this other mod" for every single mod that will ever exist. You can have a flag like "load_before_everything_else", but then you run into problems when several mods use that flag and have to be ordered (we had to design a system like that for an extensible HTTP server in my school last year).
+
+(and yeah, ordering arbitrary mods is a pain in the ass)
+
+#+begin_quote
+  I also try to avoid inventing new concepts by looking at other successful modding frameworks and copying what works.
+
+  I'm definitely aware of the problem, tho, and I try to combat it where it actually results in bloat.
+#+end_quote
+
+Fair enough.

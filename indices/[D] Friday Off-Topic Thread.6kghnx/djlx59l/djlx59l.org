@@ -1,0 +1,56 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 12
+:DateUnix: 1498839114.0
+:DateShort: 2017-Jun-30
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Progress continues.  Most of the discussion this past week has been concerned with the exact boundaries around the modding of the game.  What parts do we expose, what parts do we prohibit?  In the end, we came up with three major possible areas that a user might try to mod, with different levels of support:
+
+- *Content Modding*.  This is adding new pokemon, items, stats, types, dialog, NPCs, anything that can reasonably be held in a JSON text file or multimedia file.  Due to the nature of the game, I suspect (and hope) that this will be the vast majority of modding effort.  Interpretation is rigid: if your text file is malformed, it simply won't be loaded until you fix it.  Wonky custom objects might destroy the /balance/ of the game, but not it's /stability/.
+
+- *System Modding*.  This is actually where the majority of the code that /we/ are working on is going to go.  Some systems will have their innards entirely in non-changeable code, but others (such as the society simulator) will have nearly all of their code in scripts that the ambitious modder can modify.  Being as this system is designed first and foremost for us, it will be flexible and power, but with great power comes great amounts of rope to hang yourself on: code that is written in scripts will be compiled and verified, but if you do something stupid you could very well bring the game down with you.  
+
+- *Core Modding*.  This term is borrowed from Minecraft, and is a catch-all term indicating any sort of player modding that changes *.dll's or other code that we have determined Should Not Be Touched.  We absolutely will not support such modding (after all, who does?) and anything that modders do in this realm will be on their own heads.
+
+--------------
+
+I read a [[http://www.shamusyoung.com/twentysidedtale/?p=28081][very interesting series of blog posts here]] that detailed one man's thoughts on the highs and lows of each Elder Scrolls game, from Arena to Skyrim.  I learned quite a bit, and found the insight fascinating.
+
+In particular, there was one quote that stood out for me in relation to this project:
+
+#+begin_quote
+  The game that sat back and watched while a crab effortlessly murdered me at level 1 was happy to watch while I meted out the same treatment to its final boss. You gotta respect that.
+
+  Morrowind was the first Elder Scrolls game to give the player this feeling of constant, objective progress.
+
+  It was also the last.
+#+end_quote
+
+This sense of brutal fairness, of letting the player be slaughtered and in turn letting the player slaughter based on abuse of the same systematic mechanics, is very much the kind of thing I'm aiming for.
+
+Discussion about TES had me thinking in particular of that four-letter-word /level scaling/.  If you're not familiar, Oblivion and Skyrim are well-known for introducing a feature (or a bug depending on your point of view) where you can go practically anywhere because the monsters level up with you.  If you're level 10 you fight level 10 baddies, if you're level 100 you fight level 100, regardless of where you are.  This certainly allows freedom of movement, but it can also sabotage feelings of progression if done poorly.  After all, if you go through the early game sections again, you'll find that the rats have scaled with you and still take 2-3 hits, in spite of the fact that you're wielding weapons used to slay gods and demons.
+
+Nonetheless the feature exists because of a very real problem: if hideously overleveled creatures wander the countryside, there is eventually a point where you come across a creature so powerful that you don't even have a chance to run: you just get one-shot, and really, where's the fun in that?  It might be forgivable in a game like Dark Souls, but in a game like this that aims to include permadeath?  Not so much.
+
+And so we imagined the red-headed stepchild of level scaling, which for now I'm referring to as /tiered difficulty/.  If you come across a creature that is hideously strong and able to put you and your entire team in a crater just by blinking, then it stands to reason that you are an ant and it won't even care about you in the slightest.  
+
+What this means from a mechanical perspective is that creatures will respond proportionally to you as a threat: if you just walk by them, you won't get hit by a Hyper Beam that deals 999,999 damage to you and the entire countryside in a four mile radius, but they /might/ lazily swing their tail that deals 99 damage and puts the fear of Arceus into you.  The moment you start to challenge this preconception of weakness, however (probably by hitting back), the kid gloves come off and you'd better be prepared.  
+
+This concept I think manages to marry the mechanics of permadeath and brutal fairness, without turning the game into Save Scumming Simulator 5000 or reducing the feeling of progress.  You still have to step lightly around that mountain of an Onix, but later you very well might be able to come back and show it who's boss.  
+
+--------------
+
+Oh, and we also came to the conclusion over the last couple of weeks that we probably /can/ include aging, so long as we permit maximum lifespan to be a function of EV total: if you're training a lot, your creature's lifespan increases to fit.  We had wanted to include the concept, but felt it would be entirely unfun to have your 30-year-old top-tier Rattata fall over dead of old age, and this lets us have our cake and eat it, too.
+
+Plus, Legendaries have been redefined to simply be creatures who have min-maxed the /shit/ out of this mechanic.  
+
+Related to this is the problem of including systematic time-skips, but I'll leave that for next week.  This post has gotten long enough as it is.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

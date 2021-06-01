@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 4
+:DateUnix: 1460679866.0
+:DateShort: 2016-Apr-15
+:END:
+
+I was going to link to this: [[http://slatestarcodex.com/2015/06/02/and-i-show-you-how-deep-the-rabbit-hole-goes/]]
+
+But that 300 seconds per day thing limits your options.
+
+That being said, it's still possible to do a binary search with three hundred seconds-- if it takes you 10 seconds to perform an action and another 5 to write down the results and later results based on that action (ie. you querying 15 seconds ahead recursively), you can go down 20 iterations, and 2^{20} is 1048576 actions to search through for an optimum answer.
+
+Obviously the number of iterations you can go through for each answer depends on the time necessary to do an action, but that's easily enough for some stock trading.
+
+This is assuming you can change the future based on what you see, though.

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: FaceDeer
+:Score: 1
+:DateUnix: 1448213471.0
+:DateShort: 2015-Nov-22
+:END:
+
+I was assuming that the save point is the very first thing you do once you've got this power. That maximizes the range of options for what you can do afterward. I'm not sure what the point of not looking at the counter after loading the save is - if you're trying to be deterministic you should have done that stuff before making the save point, that's the only way to be sure.
+
+The universe most likely /isn't/ deterministic. There are plenty of quantum events that "just happen", with no specific prior cause, and they can be trivially magnified to macroscopic scale. A Geiger counter is the classic example, each of the ticks it makes is the result of a single atom undergoing radioactive decay and those decays are uncaused quantum events. You can use the time delay between ticks as a source of true randomness. Frankly, the integer counter is just a suspenders-and-belt safety precaution to account for the possibility that everything we know is wrong (which it might be given that there's such a thing as "root access" to begin with, that's certainly not something current science predicts). It's a guaranteed source of non-determinism as far as any particular run-through of the universe is concerned.
+
+I won't do the same thing for 1087520371 as I will for Graham's number because I can grasp the first number at a glance whereas the second one would take me some time to figure out the magnitude of. That alone introduces a difference that will butterfly bigger over time. Especially considering that the counter would need some sort of unusual interface to represent numbers that large, as it's larger than can be displayed with all the atoms in the universe. Frankly, once I got to that point I'd probably just say "screw it, I'm using this integer to determine the state of each planck volume in the universe directly" and just turn the whole universe into a random fuzz. Which probably triggers an immediate reset due to it being a total mess, but every once in a while a viable universe will result and we'll see something new.
+
+I'm actually starting to have trouble figuring out what you think is wrong, here. Yes, minds are finite. The entire /observable universe/ only has a finite number of configurations it can be in, so given infinite time even in a non-deterministic setting you're going to have an infinite number of "repeats" happen. What's wrong with that? As long as all possible outcomes are tried /eventually/ it doesn't seem like a problem to me, which is what that counter is there for.

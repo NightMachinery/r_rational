@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: throwawayIWGWPC
+:Score: 10
+:DateUnix: 1483322045.0
+:DateShort: 2017-Jan-02
+:END:
+
+CMOS asks for the ellipsis to be separated by spaces because the pre-formatted ellipsis glyph may show up as another character depending on platform. They prefer writers to use . . ., then an editor can do a search-replace on the document, replacing all . . . with three periods surrounded by two non-breaking spaces.
+
+In reality, this is not considered the best way to make an ellipse by many typographers, who believe that an ellipse should be three dots separated by /thinspaces/. To not have spaces makes it feel to scrunched together, but it doesn't look as crazily wide as . . . either.
+
+#+begin_quote
+  For manuscripts, inserting an ellipsis character is a workable method, but it is not our preferred method. It is easy enough for a publisher to search for this unique character and replace it with the recommended three periods plus two nonbreaking spaces (. . .). But in addition to this extra step, there is also the potential for character-mapping problems (the ellipsis could appear as some other character) across software platforms---an added inconvenience. So type three spaced dots, like this . . . or, at the end of a grammatical sentence, like this. . . . If you know how, use two nonbreaking spaces to keep the three dots---or the last three of four---from breaking across a line.
+#+end_quote

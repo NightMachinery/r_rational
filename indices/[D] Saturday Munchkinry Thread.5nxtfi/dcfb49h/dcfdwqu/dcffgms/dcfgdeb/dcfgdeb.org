@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 2
+:DateUnix: 1484426833.0
+:DateShort: 2017-Jan-15
+:END:
+
+That's only a computationally-expensive defense, which is not an issue here.
+
+Input 1 is ThisIsAPasswordSaltasdfasdfasfdasdfasdfasdfasdf, 123123123123123123123123, and input 2 is P@SSWORD.
+
+There are (relatively) easy ways to go from a hash to a short password (like P@SSWORD or hunter2), but the same methods don't work on long, unique ones (like P@SSWORDThisIsAPasswordSaltasdfasdfasfdasdfasdfasdfasdf, or hunter2ThisIsAPasswordSaltqwerqwerqwerqwerqwerqwerqwer.)
+
+If you have two out the the three of the hash, the salt, and the password (and sufficient processing ability), you can figure out the third one eventually, though it may take longer than the life of the universe running on all computers humanity has ever built. Luckily, the magic flash drive is magic.

@@ -1,0 +1,549 @@
+#+TITLE: The Golden Coin
+
+* The Golden Coin
+:PROPERTIES:
+:Author: forrestib
+:Score: 0
+:DateUnix: 1428382328.0
+:DateShort: 2015-Apr-07
+:END:
+You are given a magical golden coin. This coin has a range of 3 meters, within which probability functions exactly as the people inside the range would expect it to.
+
+Let's expand on this idea a bit. The probability of a given event occurring within the range of the coin is the average of the probabilities of said event occurring as provided by the expectations of the people within the range. The natural most probable outcome counts as a single additional person towards this calculation.
+
+If three people are within range, and one of them assigns a 100% probability to a house of cards falling down in the next minute, and the two others assign 50% probability, and the actual chance is 100%, there will be a 75% chance of the cards dropping in the next minute.
+
+The coin can only influence events within the three meter range. It also can only influence probability, not physics. Even if you find someone who's willing to believe 100% that you're a god the coin won't make you 33% god, because it can't.
+
+The question is this: How do you utilize the coin once you acquire it? Do you go to Vegas and hire a hypnotist to brainwash you into winning slot machines 6 times out of 10?
+
+
+** u/TeslaWasRobbed:
+#+begin_quote
+  You are given an item which cannot change reality, except in very specific ways which I will determine in an ad hoc fashion in order to disqualify attempts at "becomus godus" scenarios.
+#+end_quote
+:PROPERTIES:
+:Author: TeslaWasRobbed
+:Score: 12
+:DateUnix: 1428417906.0
+:DateShort: 2015-Apr-07
+:END:
+
+
+** What /doesn't/ the coin know, that it has probabilities that you call the actual chance?
+
+For example, let's say that I have a coin-flipping program on my computer run by a pseudorandom number generator (like a lot of computer programs are). When I look at the screen and click the button, I predict a 50% chance of heads and a 50% chance of tails. When a competent computer programmer looks at the code and current state of the computer, they can have (theoretically) 100% confidence of the outcome.
+
+Me (50% heads), the programmer (0% heads), and the coin (???) are next to the computer. What is the true probability?
+
+Or perhaps a better example: Someone flips a coin onto a table, sees that it landed on heads, then covers it with his hand. I open my eyes and predict a 50% chance that it will be heads when he takes his hand away, he predicts a 100% chance, and the coin (presumably) predicts a 100% chance of heads. Would that make a 83% chance of it still being heads when he takes his hand away?
+
+Edit to add: Who gets to ask the questions? In my last example "what will be facing up when he takes his hand away?" returns different behavior than "will the coin flip itself while under his hand?"
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 6
+:DateUnix: 1428383913.0
+:DateShort: 2015-Apr-07
+:END:
+
+*** For the purposes of the actual chance, the coin is omniscient. There would be a 0% chance on the computer test because there's no real chance of the computer changing its algorithm without being told to. The coin can't rewrite the computer any more than it can rewrite reality. The coin on the table would always be heads because the coin is already objectively on heads with nothing that could reasonably change that. Only probability is influenced, not possibility.
+:PROPERTIES:
+:Author: forrestib
+:Score: -1
+:DateUnix: 1428385389.0
+:DateShort: 2015-Apr-07
+:END:
+
+**** It seems like this is just infinitely passing the buck. It can't change the outcome of a coin on the table (it is already heads or tails), but I can't see how it could change the outcome of a coin in the air (it already has a certain momentum, position, etc.) without rewriting reality. The same reasoning goes for a coin before someone flips it. Their neurons, muscles, and all the rest are already in certain positions, which will 100% result in the same outcome given the same inputs.
+
+The coin /needs/ to rewrite reality in order to do anything.
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 14
+:DateUnix: 1428385943.0
+:DateShort: 2015-Apr-07
+:END:
+
+***** Yeah, this is the immediate problem. Saying that the coin can't change physics means that it can't change probability.
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 13
+:DateUnix: 1428386195.0
+:DateShort: 2015-Apr-07
+:END:
+
+****** I actually think that rewriting reality is the smaller issue.
+
+What if someone's probabilities are not only wrong, but /incoherent/? For example, there's a basket with 10 red, 10 white, and 10 green balls in it. When asked, someone thinks there's a 50% chance he will grab a red ball (either it happens or it doesn't), a 50% chance he will grab a white ball (...) and a 50% chance he will grab a green ball (...).
+
+The same idea works with a lot of biases, such as rating the likelihood of something being "shiny and red" as more probable than "red" (whether or not it is shiny).
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 4
+:DateUnix: 1428386968.0
+:DateShort: 2015-Apr-07
+:END:
+
+
+****** That's, like... your opinion, man!
+
+/passes bong/
+:PROPERTIES:
+:Author: forrestib
+:Score: -5
+:DateUnix: 1428387296.0
+:DateShort: 2015-Apr-07
+:END:
+
+
+***** I've never given much credit to a deterministic universe. This hypothetical works off of the assumption that true randomness exists on some level. If you're unwilling to work within those bounds I suggest you go find another thread where your existential beliefs don't defeat the entire intended purpose of debate.
+:PROPERTIES:
+:Author: forrestib
+:Score: -5
+:DateUnix: 1428387114.0
+:DateShort: 2015-Apr-07
+:END:
+
+****** Dude. This is [[/r/rational]]. Of course people are gonna have roughly LessWrong ideas about probability here. What did you expect?
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1428410755.0
+:DateShort: 2015-Apr-07
+:END:
+
+******* I expected that people would realize that the premise relied on the existence of true randomness and be capable of figuring out from context that they should attempt to answer it accordingly. If you post a hypothetical about angels coming to earth and rivers of blood you can determine from context that part of the premise is a biblical universe, regardless of your own beliefs. Therefore when someone comments asking what technology the sufficiently advanced aliens are using to turn the rivers to blood it's perfectly reasonable for the poster to correct you with the intended setup of the situation, that was assumed to be something that the very intelligent target audience could figure out on their own.
+:PROPERTIES:
+:Author: forrestib
+:Score: -3
+:DateUnix: 1428436989.0
+:DateShort: 2015-Apr-08
+:END:
+
+
+****** Of course true randomness exists. But probability is actually about information. There is only a finite amount of True Randomness (ie: quantum information) involved in any particular "random" event (ie: event for which you possess less than total information).
+:PROPERTIES:
+:Score: 6
+:DateUnix: 1428423489.0
+:DateShort: 2015-Apr-07
+:END:
+
+******* The true randomness is all the coin affects. It doesn't reshape reality based off of lack of information. It only influences things that could actually end in several different ways, depending on factors that not even the universe itself can predict.
+:PROPERTIES:
+:Author: forrestib
+:Score: 1
+:DateUnix: 1428437148.0
+:DateShort: 2015-Apr-08
+:END:
+
+******** Oh, so it only influences quantum probabilities/quantum information. Problem is, that's already more-or-less arbitrary reality warping, due to all /physically coherent/ outcomes having some quantum probability, no matter how goddamn tiny.
+
+Which means, actually, that we can use the coin to try to investigate what /is/ physically coherent, and thus what the true laws of physics are.
+:PROPERTIES:
+:Score: 3
+:DateUnix: 1428445537.0
+:DateShort: 2015-Apr-08
+:END:
+
+
+****** Fair enough, true randomness exists.
+
+How does the coin deal with probabilities that are not only wrong, but incoherent as well? I can't remember the name, but there's a bias where adding details to a description makes people see it as more plausible than simpler descriptions that strictly contain them. (eg. people rate "finding a shiny red ball" as more likely than "finding a red ball" (whether it is shiny or not) and also more likely than "finding a ball" (no matter the color, or if it is shiny))
+
+What if someone gives a mutually exclusive set of results >100% probability, or a fully comprehensive set <100% probability?
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 2
+:DateUnix: 1428387767.0
+:DateShort: 2015-Apr-07
+:END:
+
+******* When you try to flip the coin the coin's maker will randomly appear, swipe the coin out of the air and say, "DON'T MESS WITH PROBABILITY."
+:PROPERTIES:
+:Author: Sailor_Vulcan
+:Score: 2
+:DateUnix: 1428459634.0
+:DateShort: 2015-Apr-08
+:END:
+
+
+******* I suppose it would skew the results as much as it could towards the perception without breaking something. If someone believes finding a shiny red ball to be more likely than finding any color ball then the majority of balls they find will be red, and a majority of those will be shiny. If they believe there's impossibly a 50% chance each for red, green and white balls as you mentioned earlier it would have to settle for 33% each, being the same ratio and most probably what they intended anyway.
+:PROPERTIES:
+:Author: forrestib
+:Score: 1
+:DateUnix: 1428388223.0
+:DateShort: 2015-Apr-07
+:END:
+
+
+**** Assuming that whether the house of cards falls down is deterministic, aren't you already rewriting reality?
+:PROPERTIES:
+:Author: kd0ocr
+:Score: 2
+:DateUnix: 1428386704.0
+:DateShort: 2015-Apr-07
+:END:
+
+***** It's not deterministic.
+:PROPERTIES:
+:Author: forrestib
+:Score: -4
+:DateUnix: 1428387151.0
+:DateShort: 2015-Apr-07
+:END:
+
+****** Isn't it, though?
+:PROPERTIES:
+:Author: kd0ocr
+:Score: 5
+:DateUnix: 1428387385.0
+:DateShort: 2015-Apr-07
+:END:
+
+******* For the purposes of the hypothetical, no it isn't.
+:PROPERTIES:
+:Author: forrestib
+:Score: -2
+:DateUnix: 1428387843.0
+:DateShort: 2015-Apr-07
+:END:
+
+
+** How could it possibly alter the outcome of physical events with its magic without altering physics?
+
+Also, how do you define the "actual" chance? As ulyssessword pointed out probabilities are not properties of things, but rather states of partial information about things (I'm paraphrasing [[http://lesswrong.com/lw/oj/probability_is_in_the_mind/][Yudkowsky]] here).
+:PROPERTIES:
+:Author: BSaito
+:Score: 3
+:DateUnix: 1428385554.0
+:DateShort: 2015-Apr-07
+:END:
+
+*** If you look any meaningful distance into the future there are actually divergent possible timelines, even given identical starting conditions. If you are about to flip a coin any number of things can influence the final binary output, wind pressure, muscle tension, etc. The many worlds model of quantum physics states that all these possibilities happen in branching alternate realities adjacent to and equally real as our own. The Golden Coin simply forces you along a certain path among these branches to achieve the expected result.
+:PROPERTIES:
+:Author: forrestib
+:Score: -2
+:DateUnix: 1428386722.0
+:DateShort: 2015-Apr-07
+:END:
+
+**** In other words, the golden coin is causing the wave function of the universe to selectively collapse i.e. behave in a way contrary to the predictions of our current understanding of physics. You can't get around the fact that this coin will be altering the laws of physics.
+:PROPERTIES:
+:Author: AmyWarlock
+:Score: 4
+:DateUnix: 1428391295.0
+:DateShort: 2015-Apr-07
+:END:
+
+***** I don't believe in a deterministic universe. The hypothetical was built around the assumption that true randomness exists. The coin doesn't have to rewrite reality if true randomness exists, which for the sake the hypothetical it does.
+:PROPERTIES:
+:Author: forrestib
+:Score: -4
+:DateUnix: 1428392838.0
+:DateShort: 2015-Apr-07
+:END:
+
+****** u/JackStargazer:
+#+begin_quote
+  I don't believe in a deterministic universe.
+#+end_quote
+
+You can keep saying this, but it doesn't change the fact that many of the hypotheticals you are giving are situations not where something is truly random (which might happen in a quantum superposition collapse scenario ala Schrodinger's Cat) but simply a situation where people have insufficient information.
+
+Let me give you an example. I stand outside your 3 meter bubble. We do 400 consecutive experiments with a house of cards. To control, we run a seminar before hand which convinces people that the house is 33% likely to collapse in each situation. In each example, the coin is on the table and the person (only one in range) is told to stand in front of the table.
+
+I then use a 3.1 meter pole or similar to push over the table.
+
+This happens every time. But it happens in a closed room, and the person is not allowed to communicate with any other test subjects.
+
+This experiment I have laid out is deterministic. My stick will make the house (and the table) collapse 100% of the time unless I take a heart attack.
+
+But the only person there in range of the coin thinks it is 33% of the time, and the coin changes the 'possibility' to be that much. Does that mean my heart randomly shuts down, as it could at any moment with varying low possibility? If it does, then it is picking futures with such low probability (while still being physically possible) that it effectively is changing reality, and is therefore useful.
+
+If it doesn't, then it doesn't really work for anything useful, because studying it to examine the true probability, or forcing it to modify a known quantity makes it fail. So it's useless.
+
+Also my stick example works in /every/ case of non-quantum phenomena, because the 3.1m stick is a sufficient knowledge of physics and the area around the coin to accurately model its path.
+
+Even if you believe the universe is not deterministic, specific physical events are absolutely provably deterministic.
+
+Shit always falls here at 9.1m/s^{2} , and an estimate that relied on something happening otherwise would either be 100% likely to fail even if the person watching it believed otherwise, or necessarily modifying the laws of reality.
+
+Anything else relies on a woo misinterpretation of what is meant by 'observer' in quantum mechanics.
+:PROPERTIES:
+:Author: JackStargazer
+:Score: 2
+:DateUnix: 1428427116.0
+:DateShort: 2015-Apr-07
+:END:
+
+******* The coin only influences events that can in fact occur with numerous potential outputs. The table would always fall because even if you did have a chance at a heart attack, you would be outside its range. If you were inside the range then you would have an 11% chance of failing to flip the table, due to either heart attack or any number of other truly random things.
+:PROPERTIES:
+:Author: forrestib
+:Score: 2
+:DateUnix: 1428437671.0
+:DateShort: 2015-Apr-08
+:END:
+
+
+** No, you become a three-meter-radius God.
+
+Can you make appear a lamp with Genie?
+
+Can you feed an RNG into an assembler file to do very stupid experiments trying to make an FAI?
+
+Can you make more coins?
+
+Can you start warping space around the coin to include more and more of the universe in its 3-meter-radius?
+
+Is there some sanity rule that prevents all the gazillion probabilistic events that nobody talks about from blowing up the universe in the way you'd expect when you start messing around with the ones and zeros in the universe simulators's RAM?
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 2
+:DateUnix: 1428382930.0
+:DateShort: 2015-Apr-07
+:END:
+
+*** I already said it can't change physics. It only affects the probability of events within a 3 meter range. It can't even levitate objects, let alone warp space.
+:PROPERTIES:
+:Author: forrestib
+:Score: -2
+:DateUnix: 1428384902.0
+:DateShort: 2015-Apr-07
+:END:
+
+**** But none of that is physically impossible. It's just really unlikely. Quantum physics giving something a probability of zero has probability zero.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 3
+:DateUnix: 1428385536.0
+:DateShort: 2015-Apr-07
+:END:
+
+***** I'm going to ignore the fact that you're completely subverting the intended purpose of the hypothetical. Let's just assume for a minute that you're right, and the laws of physics are thrown out the window completely.
+
+You still can't do any of that because you'd have to have enough people within a three meter radius convinced that you could do that, including yourself, as to offset the actual chance in the average. Even if you tell someone you're a god and they believe you 30%, you know the chance is 0% and so does the universe, so the final odds of you being a god would be only one in ten.
+
+Anyway, people tend to doubt the probability of things that they view as physically impossible. Good luck trying to find someone who honestly believes that there's a 30% chance of you being a real world god, even when you can't show any power to back up the claim.
+:PROPERTIES:
+:Author: forrestib
+:Score: -3
+:DateUnix: 1428386374.0
+:DateShort: 2015-Apr-07
+:END:
+
+****** You could try convincing a child. A lot of children believe in Santa Claus. Also, it's the coin that's magic, not you, so you don't have to stand in the three-meter radius.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 3
+:DateUnix: 1428386825.0
+:DateShort: 2015-Apr-07
+:END:
+
+******* If you want the coin to turn you into a god (assuming the rules of the hypothetical don't matter and it can in fact do so) you need to be within range of it. Although, actually, screw it, we're already breaking the rules so why not just let it rewrite its own maximum distance only so that it can do the thing that it can't possibly do and instantly make the topic obsolete.
+:PROPERTIES:
+:Author: forrestib
+:Score: -1
+:DateUnix: 1428387747.0
+:DateShort: 2015-Apr-07
+:END:
+
+******** It can't make you a god because that really is physically impossible. Particles can randomly arrange themselves in any manner, but no arrangement qualifies as a god. However, it's still possible for those particles to arrange themselves to your will. That's what I'm suggesting happens.
+:PROPERTIES:
+:Author: DCarrier
+:Score: 5
+:DateUnix: 1428389464.0
+:DateShort: 2015-Apr-07
+:END:
+
+********* My point stands. If you choose to subvert the given rules of the hypothetical then, sure, there's no reason it can't do anything you might want it to. If you're changing the rules you don't even have to find some clever trick because it can just be an omnipotent wish granting device from the start.
+:PROPERTIES:
+:Author: forrestib
+:Score: -2
+:DateUnix: 1428390045.0
+:DateShort: 2015-Apr-07
+:END:
+
+********** The rules aren't clear. What is your distinction between unlikely and physically impossible?
+:PROPERTIES:
+:Author: DCarrier
+:Score: 3
+:DateUnix: 1428391976.0
+:DateShort: 2015-Apr-07
+:END:
+
+*********** I thought it was clear. I don't know. Never mind. I guess you win, if that's what you want. I don't care enough to argue with you anymore. I'm done.
+:PROPERTIES:
+:Author: forrestib
+:Score: -4
+:DateUnix: 1428393676.0
+:DateShort: 2015-Apr-07
+:END:
+
+************ This isn't about winning at all. No one was arguing with you. Even when they tried to accept the hypothetical they genuinely could not come up with any coherent answers that fit your premise exactly as you wrote it.
+
+Not every disagreement is a conflict. But if you want to treat a normal, civil discussion like a game that can be won or lost, then go ahead and ragequit.
+:PROPERTIES:
+:Author: Sailor_Vulcan
+:Score: 3
+:DateUnix: 1428460606.0
+:DateShort: 2015-Apr-08
+:END:
+
+************* I make it a point to leave conversations before they turn uncivil. I have anger issues that occasionally flare up and I was starting to have trouble managing them. In other words, I quit because I didn't want to reach the point of rage. Because when I get angry I sometimes get dizzy and go temporarily blind. That's why I ended it while it was still largely a debate and not yet an argument, because I didn't want it to get to that point.
+:PROPERTIES:
+:Author: forrestib
+:Score: 1
+:DateUnix: 1428462417.0
+:DateShort: 2015-Apr-08
+:END:
+
+
+** I assume you are trying to say that the coin can only alter the probability of plausible outcomes, not add additional outcomes that are implausible.
+
+In other words, if you go to a casino, you aren't going to be able to use the coin to make tarot cards show up in a standard deck, but despite altering physics, your coin can make different cards appear in different orders to give you good hands.
+
+It stands to reason that you are going to need an irrational person to work with you to have any benefit. A rational person will probably not be very useful, unless they are legitimately ignorant about the events you are trying to influence. It's somewhat likely that a rational person will puzzle out more realistic odds than an irrational person though, making them less useful.
+
+This generates a situation where it's most rational to work with an irrational person.
+
+Recruit a gambling addict and start buying high dollar scratchoff lottery tickets. Gambling addicts are gambling addicts because they think they can win. The more they win with you, the more they think they will win. With scratch off cards, even if you know the odds, the gambler doesn't. Not really. So you know the chance is somewhere around zero, the reality is somewhere around zero, but in the gambler's mind, it's much, much higher than that. Average of zero + zero + ludicrous probability = ludicrous probability.
+
+EDIT - After you prove to yourself that the coin works, the odds of winning would jump significantly, because your expectation of winning would go up.
+
+ANOTHER EDIT - You can reinforce your gambling partner's dependence on you by simply letting them see what happens when you (and your coin) walk away from them. YOU know this will work. Once they see that their chances of winning drop when you aren't there, they will lock into you as their luck. That's when you go to Vegas and sit at high dollar slots. Be nice though, set them up a trust fund after you both have enough to retire, because they are never going to stop after you do this to them. You're probably going to have to fake your own death or something to get them to leave you alone.
+:PROPERTIES:
+:Author: Farmerbob1
+:Score: 2
+:DateUnix: 1428407698.0
+:DateShort: 2015-Apr-07
+:END:
+
+
+** Write a computer program that accepts text input and outputs random text data, ala "Infinite Monkeys on a typewriter"
+
+Use hypnotist to convince me that the program is actually a specific type of mechanical genie, which can output instructions for how to build or do anything I ask of it by request.
+
+Ask for next week's lotto numbers, than how to get big returns on the stock market, to get a large monetary base.
+
+Then get- Anything really. Cold Fusion plans? Done. Protein folding problem? Solved.
+
+Complete laws of physics? Eat your heart out, Einstein.
+:PROPERTIES:
+:Author: fljared
+:Score: 2
+:DateUnix: 1428449105.0
+:DateShort: 2015-Apr-08
+:END:
+
+
+** Walk up to people, convince them I can do magic, and get them to expect me to have a chance to create a solid gold block on my next trick. Do this to enough people that it works. Become rich
+:PROPERTIES:
+:Author: Stop_Sign
+:Score: 1
+:DateUnix: 1428431445.0
+:DateShort: 2015-Apr-07
+:END:
+
+*** Also, knowing it'll work after seeing it work means after the first time you can expect it to work, which improves your odds.
+:PROPERTIES:
+:Author: Stop_Sign
+:Score: 1
+:DateUnix: 1428431590.0
+:DateShort: 2015-Apr-07
+:END:
+
+
+*** I think you would be short-circuited by the fact that simply creating a piece of gold out of nothing isn't a violation of probabilities or a re-ordering of existing reality in some potentially plausible way. It's a blatant assault on physics. I may be misunderstanding the OP though.
+:PROPERTIES:
+:Author: Farmerbob1
+:Score: 1
+:DateUnix: 1428436270.0
+:DateShort: 2015-Apr-08
+:END:
+
+
+*** You can't do that because the coin can only influence the chances of different possible events occurring. Unless you set up over a man hole and there just so happens to be a gold mine underneath, a gold block appearing is a strict impossibility that can't be replicated through any series of unlikely events.
+:PROPERTIES:
+:Author: forrestib
+:Score: 1
+:DateUnix: 1428438172.0
+:DateShort: 2015-Apr-08
+:END:
+
+
+** That's what Dilbert was using!
+
+[[http://dilbert.com/strip/1998-01-13]] [[http://dilbert.com/strip/1998-01-14]]
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1428524383.0
+:DateShort: 2015-Apr-09
+:END:
+
+
+** Step one: Abuse metacognition.
+
+#+begin_quote
+  I know the coin is magic. This means I can truthfully expect it to perform probability manipulation to my advantage in every situation.
+#+end_quote
+
+Step two: Abuse metaamplification.
+
+#+begin_quote
+  I can demonstrate the magic coin to James Randi. This gives me a million dollars, but more importantly abruptly surrounds me with people who increasingly and self-reinforcingly believe in the coin's power. As it becomes more potent thanks to their beliefs, its effect reaches higher into the improbable.
+#+end_quote
+
+Step three: Ascent to godhood.
+
+#+begin_quote
+  I have an increasing cult of belief and personality based first on demonstrable evidence and secondly on the increasing likelihood of people joining and accepting that the coin is magic. Soon though, the coin is doing more work than the evidence itself is, though they reinforce. It becomes blatantly obvious the coin can restructure reality at the quantum level according to my will. And indeed, as the limit approaches 100% asymptotically, I find my power waxing without limit. Sure it's not LIKELY that every particle in three meter range would spontaneously tunnel and rearrange themselves into self-replicating Superintelligent AI bits friendly to me... but that's what the coin's for. I send the nanites out in an expanding shell at near lightspeed. I can now position particles arbitrarily within my light cone without a need to concretely imagine the finished pattern. Hell, I don't actually need the coin anymore at this point. But I'm sure as hell not letting anyone else have it.
+#+end_quote
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1428894505.0
+:DateShort: 2015-Apr-13
+:END:
+
+
+** Oh man. Time to find a Cold Fusion startup and give them a machine that actually works.
+:PROPERTIES:
+:Author: Rhamni
+:Score: 0
+:DateUnix: 1428415614.0
+:DateShort: 2015-Apr-07
+:END:
+
+*** You can only build the one machine though. And even if you have seven people crammed into the range of the coin, there's still that 12% chance that it doesn't work.
+:PROPERTIES:
+:Author: forrestib
+:Score: 2
+:DateUnix: 1428438345.0
+:DateShort: 2015-Apr-08
+:END:
+
+**** First things first, either I'll stand outside the field, or my belief that their belief will guarantee success will help guarantee success.
+
+Second... yeah. There will only be one, I guess. But it will make an incredible amount of money, which I can then use to move on to other projects. And the more confident I grow that my plans are good and will succeed, the more it will become a positive feedback loop.
+:PROPERTIES:
+:Author: Rhamni
+:Score: 1
+:DateUnix: 1428438916.0
+:DateShort: 2015-Apr-08
+:END:
+
+
+** As the others have mentioned, it mostly depends on what exactly you can influence and how. For example, if you blindly throw a bunch of cards and have them rearrange themselves into a stack as shown here: [[http://www.gunnerkrigg.com/comics/00000383.jpg]] ? Or would each card falling down count as a different incident and have to succeed separately?
+
+If you write a program that actually just spews out pseudo-random gibberish at the press of a button, but manage to convince someone that the dummy interface lets you input an account name and the output will be the password corresponding to the account, would the program give you actual passwords?
+
+How about influencing things that are outside the 3m range? If you throw a dice and expect it land on a 6, but dice rolls far away, will the coin work? The dice got all its velocity and such within the circle after all, so it could work. Similarly, if you play in a casino in Vegas which is more than 3m across, how much does the coin work then? How about lottery tickets? If you get a ticket, will that ticket have a higher chance to be the right one?
+
+In any case, I'd learn a single neat trick, or cheat at a game, to convince someone that I can do certain things. Then I'd use that to convince them that I have learned, for example, to always roll the number I want on a dice. Once a few of these things are set up, I will expand to ever more difficult and unlikely events. Then
+
+The 3m radius can be used to convince people outside the radius of what you can do without their scepticism influencing the result.
+:PROPERTIES:
+:Author: torac
+:Score: 0
+:DateUnix: 1428413622.0
+:DateShort: 2015-Apr-07
+:END:

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: suyjuris
+:Score: 2
+:DateUnix: 1526671625.0
+:DateShort: 2018-May-18
+:END:
+
+You could normalise the comment score via some measure of popularity (e.g. sum of all comment scores in thread + sum of votes on post). It's impossible to get rid of all confounding factors, but also unnecessary. There is so little data that any statistics would be quite noisy. Which does not mean it wouldn't be interesting to look at the results, of course, just that it is of no use worrying about details. Maybe grouping them in some fashion (by author being the obvious one) is better. One could use that to bias the probabilities. Which does not feel very satisfactory.
+
+So perhaps statistics could be relegated to a preprocessing role: Select the TopN of stories and throw them into one big thread, then use that data to refine.
+
+Note: Edited due to UPS (unscheduled premature submission)

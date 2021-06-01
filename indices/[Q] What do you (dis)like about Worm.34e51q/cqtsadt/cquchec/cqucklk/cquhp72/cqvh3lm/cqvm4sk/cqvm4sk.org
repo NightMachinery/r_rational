@@ -1,0 +1,69 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 3
+:DateUnix: 1430528183.0
+:DateShort: 2015-May-02
+:END:
+
+#+begin_quote
+  He could release it as a series of full-length novels
+#+end_quote
+
+Short version:
+
+It's not in his best interest. This is going to be a giant wall o'text, but the tl;dr is: given how Amazon has structured their payments, he will make way more money if he sells it as novellas where each novella ends on a cliffhanger and has a line at the bottom saying "Story continues in the next book, 'Worm part 4007a'!"
+
+Long version:
+
+Here's what I've learned about publishing ebooks on Amazon from having done it:
+
+Standard price on Amazon for a novella (~15k normally) is $3 USD (well, $2.99). Standard price for a novel (~80k words) is about $7 ($6.99), plus or minus $1.
+
+There's something called "Kindle Select"; it's an opt-in thing that puts your book into the Kindle Unlimited / Kindle Online Lending Library program. If an author has opted-in to have his book in KS, then a reader with a KU subscription can either buy the book for the indicated price or borrow it for free. (There are some restrictions on KU, but they don't matter for our purposes.) For simplicity I'm just going to call this "opting in to KU", since the distinction between KS and KU is moot.
+
+The amount of money you make for a borrow is a little complicated. Every month Amazon sets aside a pot of money; this month it's currently $3mm, and last month I believe it was the same but they added $6mm at the last minute to make $9mm. At the end of the month they take the total amount of money (M) in the pot and divide it by the total number of borrows (B) to find a number P that is how much you'll get paid for a borrow. (M / B = P) Last month P was $1.34. So, if you got 100 borrows total over the course of the month, you'll get paid $134. Notice that P is completely unpredictable for the author and is also completely under Amazon's control.
+
+The last trick here is that *you only get paid for a borrow if the user reads the first 10%*. That's extremely important.
+
+The amount of money you make from a sale also isn't simple. There are two royalty levels you can sign up for: 35% and 70%. 35% is the default; you can only get 70% if you opt-in to KU and therefore allow your books to be borrowed for a price P which, again, is completely unpredictable and completely in Amazon's control. (There's also some restrictions on the 70% but they aren't relevant here.)
+
+If you are in the 70% club you don't pay the delivery charge. If you are in the 35% club, you pay a delivery charge of $0.15/M when someone buys your book. A normal cover image would be 2-3M unless you take some effort to shrink it down, in which case you can get text+image down to about 0.5 - 1M.
+
+[EDIT: I don't know what I was thinking, but I wrote the above backwards. Th 70% club pays the delivery costs, the 35% club does not. I've corrected everything from here on.]
+
+Here are the scenarios:
+
+Not in KU, therefore you get no borrows and you only get 35% royalties:
+
+- 80k novel, $7, 35% royalties, no delivery charge. On a sale you make: 7 * 0.35 = $2.45
+- 15k novella, $3, 35% royalties, no delivery charge. On a sale you make: 3 * 0.35 = $1.05
+
+In KU, so you get 70% royalties, you get borrows, and you pay the delivery charge:
+
+- 80k novel, $7, 70% royalties, 1M file means $0.15 delivery charge. On a sale you make: 7 * 0.70 - 0.15 = $4.75
+- 15k novella, $3, 70% royalties, 1M file means $0.15 delivery charge. On a sale you make: 3 * 0.70 - $0.15 = $1.95
+- Borrow: ??, but let's say it remains at $1.34 (that's been relatively consistent for a few months)
+
+Not everyone has a KU account, so obviously you make the same number of sales from non-KU people regardless of whether you're in it or not. People who are in KU are probably there because they read a lot and don't want to spend a ton of money, so they are more likely to borrow than to buy. Clearly, you lose sales on this group but you get borrows from them instead. This is important: you are much less likely to sell to a KU user. They are much more likely to borrow if they can or pass if they can't. (They are also voracious readers, so they are more likely to borrow you for that reason than a non-KU person is to buy you.)
+
+Okay, having a NOVEL in KU means:
+
+- Sales to people who are not KU get you $2.30 more than you would have gotten if you weren't in KU.
+- For people who /are/ in KU, you make money that you wouldn't have made otherwise off the borrows.
+
+Having a NOVELLA in KU means
+
+- Sales to people who are not KU get you $0.90 more than you would have gotten if you weren't in KU.
+- For people who /are/ in KU, you make money that you wouldn't have made otherwise off the borrows.
+
+It is strictly better for an average author to be in KU. The only people for whom it maybe doesn't make sense are the very top-ranked authors with so much star appeal that even KU users will buy their stuff.
+
+Finally, if you put up a novel (again, 80k words), then you *only get paid for borrows* if the user reads 8,000 words -- about 24 pages by Amazon's estimation. If you put up a novella (15k words) up, then you get paid if they read 1,500 words (about 4 pages). If the user gets tired of the book or distracted from it and doesn't hit the 10% part, you don't get paid, so you want that 10% to be as small as possible.
+
+With all that setup taken care of:
+
+If you have a novel (80k words) you can sell it for $7 or you can break it into 5 installments of ~15k each and sell each installment for $3. Either way you want to be in KU. Worm is /already/ written in installments and (I think) has a cliffhanger at the end of each installment, so doing the novella route is easy.
+
+Most people that I've seen around who have started Worm have either finished it or at least read to the ~30-50% mark. Let's be conservative and say that someone who gets tired of it will stop after 10%, meaning 167,000 words. That's 2 novels or 11 novellas. Two novels nets you $9.50 in sales, 11 novellas nets you $21.45. You will also make more money on the borrows if your format is novellas, because the users are much more likely to hit the 10% mark in their reading.
+
+So, yes, if you break a novel into novellas, you make a ton more money given how Amazon has structured their payments.

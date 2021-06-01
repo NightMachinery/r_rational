@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: Charlie___
+:Score: 3
+:DateUnix: 1440296179.0
+:DateShort: 2015-Aug-23
+:END:
+
+#+begin_quote
+  What would this mean in practical terms? If a straightened thread is stuck in a fire, or if only part of it is stuck in a fire, what's going to happen?
+#+end_quote
+
+Well, it's going to be a very good insulator (though not quite perfect). You should be able to put one end anywhere you like, and have the other end still be safe to hold. As for whether it would burn - well, it absorbs light, so it should still undergo chemical reactions - they're basically the same thing :P
+
+#+begin_quote
+  Can you unpack that for me? It sounds interesting, but I don't understand it.
+#+end_quote
+
+In classical thermodynamics, every degree of freedom is equally important (insert disclaimer about quadratic potentials you don't need to understand). Imagine a tiny ball sitting at the bottom of a teaspoon. Along the long direction of the spoon, the ball can roll farther because the slope is gentler. Along the short direction of the spoon it can't roll as far. But the ball will roll equally /high/ along both directions - all degrees of freedom will store the same amount of energy. In quantum mechanics, this is not necessarily true.
+
+Imagine a water molecule as three balls, connected by two springs (the springs being electromagnetism). You can store energy in the motion of the water molecule, or its rotation, but you can also store energy in the vibration of the springs. If the water molecule was classical, rather than quantum mechanical, we'd therefore expect 9 degrees of freedom.
+
+But in the real world, at room temperature, water molecules actually do not vibrate! (Well, much.) This is because in quantum mechanics, states can be discrete. They can have energy gaps in between them. And if the energy gap is big relative to the average thermal energy per degree of freedom, that state can be "frozen out."
+
+All of which is to say, if you take a piece of string and you confine it in a strong enough potential, you can make it behave like it's a perfectly rigid single body. This is this minimally magic approach, and so it's the first thing one might try to test. And you can test it because if you heat it up enough, or shine on light with a short enough wavelength, you can access those states that were previously frozen out. The fact that the string doesn't change in color when straightened implies that visible light is sufficient to do this - the energy gap for small electronic excitations is less than 1 eV.

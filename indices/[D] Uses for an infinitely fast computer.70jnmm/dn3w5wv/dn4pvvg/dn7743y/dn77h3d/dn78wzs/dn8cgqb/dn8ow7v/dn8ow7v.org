@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: ben_oni
+:Score: 2
+:DateUnix: 1505869130.0
+:DateShort: 2017-Sep-20
+:END:
+
+#+begin_quote
+  intelligent enough to recognize the unexpected effects of a buffer overflow
+#+end_quote
+
+Oh really. Yes, a computational system can have a flaw. A flaw is not the same as an exploitable security risk. The first time the flaw is encountered, the whole system enters an uncertain state, the most likely result being termination. That's the /first/ time. In order to leverage such a flaw, an intelligent actor would need to examine the effects multiple times. Which is impossible. Or at least so far outside the realm of the plausible as makes no difference. You might as well consider the odds that a cosmic ray will strike the computer and somehow let an AI out of its box.
+
+Consider that hackers (and I use the term informally) generally need some time with the source code, core dumps, and a replication environment before they're able to turn a known flaw into an exploit. Your proposed simulated agent cannot even guess at what flaws might exist, let alone develop exploits for them.

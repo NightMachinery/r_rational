@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1443911862.0
+:DateShort: 2015-Oct-04
+:END:
+
+Third option that came to me re-reading that Forth fragment. Base it on an Linden Scripting Language with extra primitives for effects that Linden Lab would consider dangerous. Don't actually reveal this in the story of course.
+
+Then you can actually test parts of spells out in Second Life. Just have it do llSay(0, llObjectName(spellTarget)+" is turned into a cat") instead of calling llPolymorph(spellTarget, POLYMORPH_TYPE_CAT).
+
+The weird not-quite-list-oriented not-quite JavaScript syntax and semantics, and the 16k limit of classical LSO, are actually good ways to limit spell power.

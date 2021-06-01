@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 6
+:DateUnix: 1492517253.0
+:DateShort: 2017-Apr-18
+:END:
+
+There are three issues with your timing:
+
+1. It's possible to distribute calculations across multiple computers.
+2. Graphics cards have significantly more operations per second (11.3 teraflops for an NVIDIA GTX 1080 Ti, ~257 times faster than an i77-4790k) for parallelisable functions, and lots of machine learning algorithms are suitable.
+3. The human brain doesn't really work like a computer. Its "real" computational power is almost certainly at least a factor of 100 smaller than 1 exaflops.
+
+As an example (a slightly misleading one) of point 3, a human can generally perform under 1 floating point operation a second (maybe up to 10 flops for a savant, but even that would be virtually impossible).
+
+The brain simply hasn't had long enough to evolve optimal calculation processes. A $2 calculator can outperform every human alive when performing complex operations, and a desktop PC can probably beat out every human combined with room to spare.
+
+The difficulty with artificial intelligences is that they don't have the built-in processing faculties that a human brain does (so vision, for example, requires us to come up with the algorithms anew). This is also their strength, because they can potentially do it far more efficiently.
+
+Consider that if humans truly have 1 exaflops of computational power, the world's total artificial computational power (hard to find a figure, but probably under 1,000 exaflops) ought to be exceeded by a small town. So why use computers at all, if a single human is smarter than ~100,000 high-end GPUs?
+
+I contend that computers, especially supercomputers, are more than fast enough to exceed apparent human intelligence already. We're just trying to catch up on evolution, which has relentlessly optimised for a problem space that computers are naive to.

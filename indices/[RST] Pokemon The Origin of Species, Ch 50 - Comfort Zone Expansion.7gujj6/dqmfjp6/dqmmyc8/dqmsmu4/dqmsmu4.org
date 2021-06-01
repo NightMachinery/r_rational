@@ -1,0 +1,62 @@
+:PROPERTIES:
+:Author: masasin
+:Score: 2
+:DateUnix: 1512169443.0
+:DateShort: 2017-Dec-02
+:END:
+
+I just did a brute force search. I tested it first using the default values for Yudkowsky's original medical test.
+
+Yudkowsky's test:
+
+- P(Cancer) = 0.01; P(Healthy) = 0.99
+- P(Cancer | +) = 0.0776; P(Cancer | -) = 0.0022
+
+If you brute force for P(+ | Cancer) and P(+ | Healthy), stepping at 0.001 (0.1%) and considering it a match if there's a difference of less than 0.01%, you end up with the following:
+
+| P(+ given Cancer) | P(+ given Healthy) |
+|-------------------+--------------------|
+| 0.799             | 0.096              |
+| 0.800             | 0.096              |
+| 0.807             | 0.097              |
+| 0.808             | 0.097              |
+| 0.809             | 0.097              |
+
+The "real" answer was 0.8 and 0.096, respectively (the second row).
+
+--------------
+
+Trying to solve your problem, I found no matches even if I increased the tolerance to a whole percent. If we give a tolerance of 10%, you do find solutions when:
+
+- P(R1 | T1) >= 0.876
+- P(R1 | T2) >= 0.945
+
+This gives you P(T1 | R1) of 0.11 to 0.12, and P(T1 | R2) of anywhere between 0.2-ish to 0.5-ish.
+
+In other words, if 21% of Tier 1 reports are wrong, and 33% of Tier 2 reports are wrong, you need:
+
+- 87.5%+ of Tier 1 threats are accurately reported as Tier 1 (definitely plausible), AND
+- 94.5% + of Tier 2 threats are incorrectly reported as Tier 1 (very strange)
+
+However, if you do assume that these conditions hold, then a Tyranitar rampage reported as Tier 1 would actually be Tier 1 around, say, 12% of the time.
+
+If you know what values you'd like for P(R1 | T1) and P(R2 | T2) for all kinds of attacks (e.g., 60% of Tier 1 threats are reported as Tier 1, but 80% of Tier 2 threats are reported as Tier 2), you can calculate the posterior probability of a report having gotten it right using forward Bayes.
+
+For example, assuming a constant 60/80, no matter the kind of threat:
+
+- If 50% of threats are Tier 1 and 50% Tier 2, a Tier 1 report would be accurate 75% of the time, and a Tier 2 report would be accurate 67% of the time.
+- If, like Tyranitar, 11.8% are Tier 1 and 88.2% are Tier 2, a Tier 1 report is actually Tier 1 only 28.57% of the time, and a Tier 2 would be accurate 93.75% of the time.
+- If, like Digglett, say 90% of incidents are Tier 1, a Tier 1 report is correct 96.4% of the time, while a Tier 2 report is accurate only 18.18% of the time.
+
+--------------
+
+edit:
+
+If you want to use 0.79 and 0.67 as the likelihoods (instead of 79% of Tier 1 reports actually being Tier 1, you have 79% of Tier 1 incidents being reported as Tier 1), with Tyranitar, you end up with:
+
+- P(T1 | R1) = 0.242
+- P(T2 | R1) = 0.758
+- P(T1 | R2) = 0.040
+- P(T2 | R2) = 0.960
+
+In other words, a report of Tier 1 knowing that it is Tyranitar would just have a 24.2% chance of actually being Tier 1. Therefore, you should consider it a Tier 2, or mount a /tiered/ response (if you normally send 5 rangers to Tier 1, and 30 rangers to Tier 2, you should send 5 * 0.242 + 30 * 0.758 = 24 rangers if you have a Tier 1 report, and 5 * 0.04 + 30 * 0.96 = 29 rangers if you have a Tier 2 report).

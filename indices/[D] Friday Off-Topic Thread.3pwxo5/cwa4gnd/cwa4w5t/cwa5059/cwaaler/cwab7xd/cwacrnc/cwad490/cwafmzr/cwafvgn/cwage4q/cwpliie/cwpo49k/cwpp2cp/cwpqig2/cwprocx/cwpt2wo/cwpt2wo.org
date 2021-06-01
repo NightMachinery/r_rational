@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1446755476.0
+:DateShort: 2015-Nov-06
+:END:
+
+#+begin_quote
+  I have noticed that more experienced people tend to take longer to grasp what I'm trying to do.
+#+end_quote
+
+That should probably tell you something.
+
+What /exactly/ are you trying to do? It's still not clear to me. The only concrete item I'm getting is that different clients should be able to update the same data object (e.g. JPEG) at the same time.
+
+Some suggestions for you:
+
+- You're pretty clearly coming from a gaming / graphics programming background. Make sure you think about how your new system will manage other kinds of data -- for example, text files, database files, and encrypted files.
+- Come up with a word other than 'filesystem' for what you're talking about. You've stated that 'filesystem' is only a metaphor, and it's confusing the issue.
+- Clarify whether you're talking about caching or physical storage. You're floating between the two levels and handwaving a lot of the challenges, and you can't do that if you want to produce something meaningful.
+
+Also, for the record -- I was completely spitballing when I talked about the function block based filesystem. Before you run with that idea, put some serious thought into it, because I came up with it and I suspect it's full of crap once it has to interact with the real world.

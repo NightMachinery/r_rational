@@ -1,0 +1,13 @@
+:PROPERTIES:
+:Author: Magnap
+:Score: 3
+:DateUnix: 1478488853.0
+:DateShort: 2016-Nov-07
+:END:
+
+To be honest, I just used [[http://powerandsamplesize.com/Calculators/Other/1-Sample-Binomial][this power calculator]]. But here's what I could've done (note that this is a slightly different calculation, as I'm finding the n needed to have 80% power to detect the bias as greater than or equal to no bias (50% heads) given that it's 60% heads, and the calculator used the power to detect the bias as different from no bias, i.e. I'm doing this for a 1-tailed test):
+
+I'm doing my calculations in Haskell, which makes things like looping until I find suitable parameters really easy. First I define, for the binomial distribution, the CDF (cumulative distribution function), which for a given k, n, and p, tells me the probability of a coin which lands heads with probability p landing heads k or less times out of n. 1-CDF(k,n,p) is of course the probability of it landing heads more than k times out of n. Then, I make a function (though you can do this by hand), which, for a given n, will keep trying larger and larger values of k until the probability of getting more than k heads in n trials with an unbiased coin (1 - CDF(k,n,0.5)) is less than 0.05. In other words, this function gives me the critical value (which from here on I'll call c), and yes, this is a very lazy way of doing it. I then use this critical value to define a power function for a given p and n, which is simply 1-CDF(c,n,p). I could then make a function to try larger and larger numbers for n until my power function reaches greater than 0.8 with p=0.6 (the probability of heads for the coin, not the p-value), but I wrote this code with no thought given to performance, so it was faster to just try some realistic numbers myself, and then search my way to the lowest integer n where the power was >0.8. In this case, that's 158. I can't share my code, as I just wrote it in GHCi (a read-evaluate-print loop), so it was gone the moment I closed my terminal, but if you really want me to, I can reconstruct it.\\
+The gist of what I did: find n and k such that 1-CDF(k,n,0.5)<0.05 and CDF(k,n,0.6) > 0.8
+
+Sorry if this post is long and rambling, I started writing it as my ADHD meds were wearing off, then got distracted, then came back to it, then got distracted again etc. several times. I hope it was helpful in any way.

@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: Roneitis
+:Score: 6
+:DateUnix: 1536830694.0
+:DateShort: 2018-Sep-13
+:END:
+
+AN: Alright, this is gonna suck, so I'm going to implement some notation. Balance (X || Y) refers to some sort of a balancing point between X & Y, and Excess(X||Y) refers to either X or Y.
+
+What exactly does second-order balance imply? Is it A: varying where the Balance(order || chaos) should lie? Or B: balancing(having a balance of order and chaos || having just one of order and chaos).
+
+I could see A maybe being already implicit in first order balancing. Does balancing refer to [I]: finding an exact middle, or [II]: weighing one up and the other down to find some sort of an optimum for the exact scenario.
+
+[II] would seem to imply to /me/ that B is actually a subset of A, with the cases of first order excess (or Excess(Order || Chaos)) really just being cases where the balance point (which could be considered a real number between 0 and 1) just lies at one extreme end: 0 or 1 (or if you really care, 0.9999999998, which is functionally identical).
+
+[I] however, seems to justify the necessity of any higher order levels of balancing, with each level of meta increasing the total number of cases and levels of granularity WRT possible cases on the level of order and chaos by a factor of two. However, this would means that Balance(Order || Chaos) = 0.5, Excess(Order || Chaos) = 1 or 0 and, this is where I start to break down: Balance(Balance(Order || Chaos) || Excess (Order||Chaos)) = 0.75 or 0.25.
+
+Fuck me I'm a little bit in knots aren't I?

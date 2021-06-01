@@ -1,0 +1,30 @@
+:PROPERTIES:
+:Author: phylogenik
+:Score: 2
+:DateUnix: 1511591045.0
+:DateShort: 2017-Nov-25
+:END:
+
+#+begin_quote
+  I probably should have explained that with more detail: The models like that weren't deliberately designed to be random. The one mentioned in the video was designed to model weather they discovered that changing whether you rounded at the 5th decimal or 6th (or something like that) would totally change things.
+#+end_quote
+
+ah, but they're afaik not even unintentionally random -- they're still very much deterministic, just really sensitive to where you start them. Kick em off in the same place and they'll go to the same spot every time. Though I think you can approximate a chaotic process with a stochastic process, and you can also propagate your initial uncertainty through the model to get some distribution of outcomes at the end. But that's perhaps a different sort of probability than that of stochasticity.
+
+#+begin_quote
+  however I wouldn't expect a vastly more complicated one to be less sensitive to initial conditions since that's not generally the trend in chaos theory
+#+end_quote
+
+eh, I don't see this really. As mentioned some dead simple models can exhibit chaotic behavior, some really complex models do not, and in the end it seems like plenty of real world processes are rife with negative feedback and drawn to particular optima. But I'm not that familiar with chaos theory so if it's the general trend are there examples (like, you some somehow increase the # of parameters in some particular model in some unbiased way and it gets more chaotic?).
+
+#+begin_quote
+  However it's not like you can deny that some aspects of human behavior can't be predicted with near certainty beforehand since everything is running on slightly noisy hardware.
+#+end_quote
+
+Well, in plenty of cases the noise is self-correcting -- e.g. a leaf falls on me and slows me down, but then I speed up slightly to compensate.
+
+#+begin_quote
+  Though I also frequently use a quantum random number generator to make those decisions.
+#+end_quote
+
+Aha! So you'd be a quick avenue for divergence in my original question if we live in that sort of stochastic universe! Though it does say "The hardware is constantly generating random bits at a rate of 5.7Gbits/s. Currently, the rate at which the live bits are streamed is being limited by the bandwidth of the internet connection." so draws from that site are still pretty deterministic at especially small time-scales.

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: codahighland
+:Score: 2
+:DateUnix: 1433873423.0
+:DateShort: 2015-Jun-09
+:END:
+
+I redid my math on the time to collision and I was off by over an order of magnitude. It's not 56 hours to collision. Disregarding the influence of the Earth's own gravitational field, it's 75 days for the above asteroid, or 56 days for the improved asteroid we discussed elsewhere. It'll hit at around 100 km/s for the first one, or around 50 km/s for the second one. (Adding the Earth's gravitational field requires a numeric method to approximate the solution -- darn three-body problem! -- so I can't just plug formulas into WolframAlpha.)
+
+Doesn't change the amount of energy needed to reduce it to 0 m/s velocity parallel to the Earth's orbit -- though I WILL point out that this assumes you've done so instantaneously. Since changing the velocity at all will also modify the radius of your orbit, it occurs to me that this gives me another approximation.
+
+If we say that our 10^{11} kg asteroid has an orbital velocity of 21 km/s as we have assumed before, the formula for a circular orbit says that its orbit is about 2 AU away. (This is larger than the number I was working with previously. This implies that the Hungaria-family asteroid I was working with is smaller than 10^{11} kg. It's still smaller than the center of the asteroid belt.) To put that same asteroid in orbit at 1 AU, its velocity would need to be 30 km/s relative to the sun. This means we need a delta-V of 9000 m/s -- that is, we'd need to modify its momentum by 9.0x10^{14} newton-seconds. Over ten years, that's about 2.8x10^{6} N continuously applied. This requires a thruster that can put out 12.6 GW -- we've improved our power needs by a factor of about 2.5, but not by a full order of magnitude. Likewise, we've improved our energy needs by...
+
+... well dang. I screwed up my math earlier, because I just got 4x10^{18} J. Zeroing the orbital velocity as discussed earlier would need 6x10^{19} J of energy.

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: gwern
+:Score: 1
+:DateUnix: 1480097525.0
+:DateShort: 2016-Nov-25
+:END:
+
+Kelly wouldn't be perfectly optimal either, technically. Since they cap the payout per bet at $250 and this is a finite-horizon problem (stops after 300 bets), this eliminates most of the future growth that a KC algorithm is counting on (note the part where they estimate that without the cap, a player could walk away with millions of dollars within 300 flips).
+
+#+begin_quote
+  With a capped payout (the game we actually offered) a simple (but not strictly optimal) strategy would incorporate an estimate of the maximum payout. If the subject rightly assumed we wouldn't be offering a cap of more than $1,000 per player, then a reasonable heuristic would be to bet a constant proportion of one's bank using a fraction less than the Kelly criterion, and if and when the cap is discovered, reducing the betting fraction further depending on betting time remaining to glide in safely to the maximum payout. For example, betting 10% or 15% of one's account may have been a sound starting strategy.
+#+end_quote
+
+I agree that the exact optimal strategy would not be betting a fixed % each round, but change over time roughly as they suggest. One would have to construct a decision tree to figure out exactly how much should be bet at each round depending on the current bankroll.

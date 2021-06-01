@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1434634000.0
+:DateShort: 2015-Jun-18
+:END:
+
+Reddit "hot" sorting has a time component (rank decay over time); reddit "top" sorting does not (/edit: though it's got much of the same implicit bias as best sorting, see below/); reddit "best" sorting has an implicit one, not an explicit one (in favor of posting early).
+
+"Top" is just total upvotes minutes total downvotes, which means there's a strong incentive to post first. But it also means that a post that 60% of people liked can beat a post that 100% of people liked, just because the one that 100% of people liked was posted a bit later. We do want people to post early, but we don't want to give strict penalties for posting a bit late.
+
+"Best" sorting uses a confidence interval. A comment with 3 ups and 1 downs is sorted lower than a comment with 6 ups and 2 downs, because we can be more confident that the latter comment actually is liked by 75% of people. There's some complicated math to figure it out, but it's explained in [[http://www.evanmiller.org/how-not-to-sort-by-average-rating.html][this article]], or you can look at the direct implementation in [[https://github.com/reddit/reddit/blob/master/r2/r2/lib/db/_sorts.pyx][reddit's sorts.py file on git]]. The implicit time component of "best" sorting is that if two comments have equal percent ranking, the one with higher confidence is going to be sorted higher, so there's still an incentive to get your comment posted first.
+
+Hopefully that makes sense.
+
+(You can't actually sort comments by "hot" ranking, only posts.)

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: CCC_037
+:Score: 1
+:DateUnix: 1513385823.0
+:DateShort: 2017-Dec-16
+:END:
+
+I meant for forward propagation. Because, neural networks with no inputs always produce the exact same outputs - so if you have no inputs, your network is only going to end up producing a single output. I have no idea what you should be using for that input, just that there should be one or more of them. Your input(s) can certainly be a request for a certain style.
+
+Using some random hyperparameter might work, I guess... or, at least, it is theoretically capable of giving more than a single program in output. But this problem still seems to me like something that would be /significantly/ better suited to genetic algorithms.

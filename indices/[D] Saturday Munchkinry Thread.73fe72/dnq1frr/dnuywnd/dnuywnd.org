@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: Silver_Swift
+:Score: 1
+:DateUnix: 1507057230.0
+:DateShort: 2017-Oct-03
+:END:
+
+Provided that the computer has infinite memory and infinitely fast access to that memory we can use this to cheat in much better ways than a regular groundhog day loop. Each iteration, follow the following algorithm:
+
+1. Find the index of every bit in the memory that is set to 1 as well as the fist index that does not appear in the table.
+
+2. Convert each of those indices to text by taking the binary value of that index and treating it as the binary context of a text file.
+
+3. Send the text file corresponding to the final index to a bunch of AI researchers and ask them if it contributes some new insight into creating friendly AI.
+
+4. Scan the remaining text files in reverse chronological order, looking for messages of the type: "Please skip index <n>". If you find any, discard the text files corresponding to those messages.
+
+5. Read any non-discarded messages in chronological order, followed by the message corresponding to the final index.
+
+6. If steps 2-5 take more then a week time, end the loop. Otherwise take the rest of the week off (but do read the replies of the researchers from step 3a as they come in).
+
+7. At the end of the loop, if you felt that the new text file contributed something new to our knowledge of FAI (yours or that of the researchers) or it indicated good indices to skip set the bit to 1, otherwise set it to 0.
+
+This does not guarantee that we end up with a working FAI at the end of the loop, but it should provide a significant amount of new insights and it is significantly less risky than my original plan of treating the index as a python script and running it.
+
+Edit: In addition, it is probably wise to first use [[/u/Gurkenglas]]'s suggestion to take a week to revise the above algorithm. Then you could also agree with yourself on some kind of signal for an emergency revision of the algorithm (eg. Three consecutive 1s means ignore everything before this point and read the next 10KB of bits for instructions on what to do next).

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: --MCMC--
+:Score: 1
+:DateUnix: 1622475266.0
+:DateShort: 2021-May-31
+:END:
+
+I'm not sure how an exhaustive approach to optimization would be modular vs. using a more clever algorithm, but the problem with any sort of grid approximation here is the curse of dimensionality. If I want to add, say, n = 5 colors to an existing palette of s colors, and use a relatively coarse grid of 1/10ths, that gives me a (5*3)^{10} search space, where each point would require computing pairwise distances between sets of size (n+s-1) and (s). I constrain hues to be strictly increasing in (0,2pi) to make the problem identifiable, which reduces the space somewhat, but it's still way too big for any sort of brute force approach!
+
+Otherwise, taking the minimum of a buncha local minima is a strategy to find a global minimum, but it's also inefficient (the goal here is to have the function execute in a few seconds for typical problems) and also suffers from curse of dimensionality concerns (there may be a /lot/ of local minima, and so a thousand random initializations may still not hit the global minimum with even a handful of colors.

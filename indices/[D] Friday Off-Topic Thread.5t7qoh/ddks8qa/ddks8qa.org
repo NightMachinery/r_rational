@@ -1,0 +1,74 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 19
+:DateUnix: 1486742048.0
+:DateShort: 2017-Feb-10
+:END:
+
+Weekly update on my rational pokemon game as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+IT IS FINISHED.
+
+Or at least, moderately complete.
+
+BEHOLD: [[https://docs.google.com/document/d/1SlYaK6vZ0OmkQsuVOMCIOMb6nPIU9I1vKMTFMEL0Wk8/edit?usp=sharing][The canonical Feature Roadmap for the Rational Pokemon game project]].
+
+(So much for getting it done by the new year.  I didn't even get it done in time for the /Chinese/ new year.  Oh well.  Something something Planning Fallacy.)
+
+This document covers broad-strokes design for the engine, broad-strokes design for the various mechanics that have been discussed here and elsewhere, and individual feature definitions.  It's a bit hard to count up, but if you remove the parts about the engine and account for headers and fluff...there's somewhere between 800 and 1000 individual features, ranging from grounded and super specific to pie-in-the-sky.  
+
+If you're just tuning in and find yourself drooling over the idea of a “rational pokemon game”, skip forward to section 4 (page 16) and peruse at your leisure.  That's right, this sucker's /massive/; no doubt part of its 50-page length is due to spacious formatting, but still: this is no unambitious project.  They told us to shoot for the moon and we flipped ‘em the bird as we shot straight for Polaris, leaving behind only faint echoes of “smell ya later!”
+
+This list is going to continue to have details hashed out here and there, but should mostly be the same from here on out.  The systems and features listed are roughly in order of implementation and impact, from most fundamental to most broad. We will be filling in our Trello board shortly with each of these items, and they'll be ranked roughly in this order.
+
+Exciting times!  Along with this, there are two things that I could use from you (yes, you!).  See below for input that we could really use more eyes on.
+
+--------------
+
+We have finally mostly settled on names for things (and it's about time).  The engine, unless anyone suggests a better name before I put the repository together, will be the /Extensible Game Engine Framework (XGEF)/.  It fits the boringness of what it does, while also still feeling at least moderately satisfying to say.  
+
+The game itself is down to two contenders, depending on what people here today think: either /TRAINER SIMULATOR/ or /POKEMON RENEGADE/.  There are pros and cons to both, and I think I would be fine with either one, but at this point it's down to what we think the average joe reacts to better.  
+
+So leave a comment!  Tell us which you prefer, or if you hate them both, or if you have some better option we completely failed to imagine.  The repository is getting named relatively soon, and I'd like it to be the title we ride the wave with all the way to project completion.
+
+(Also, it's probably about time to get a subreddit going, and that's a name that can't change, so depending on what happens today, I'll get a new one registered.)
+
+--------------
+
+So, as what might seem a completely unrelated piece of news: Microsoft has announced they will be releasing Visual Studio 2017 on March 7th. Rather than set up a solution/project now and then import it and fiddle with it a month from now, I'm going to formally start work on the above listing right around then.  
+
+But what about in the meantime?  Well, there are a couple of prototypes that need to be made, so I've decided to set up a bit of a vote, to gauge interest, find out what people want to see, and help decide what to spend my time on.
+
+The first two weeks will be spent on hammering out the initiative system--this is the system that determines how turn order and duration are decided, as well as what limitations on actions per turn are in place.  It really should have been done ages ago, but here we are.  
+
+The /second/ two weeks, however, are up in the air.  Below are the potential candidates:
+
+1. Procedural map generation
+
+2. NPC opinion system
+
+3. Voxel system
+
+4. NPC Dialog
+
+5. Spawning/breeding system
+
+6. These are stupid, something else (specify)
+
+Depending on votes tallied from this thread and next week's, I will spend two weeks coming up with something to show, and something to download and tinker around with related to the above.  It's likely to not be mind-numbingly awesome (two weeks of free time is only so much), but I will get /something/ out related to whatever the voice of the people decides on.
+
+So vote!  Put a comment below, and let me know what you would like to see.  While you're at it, give me your opinion on the names that we proposed above as well.
+
+--------------
+
+Bright times ahead.  The design portion of this project is drawing to a close, and with it, I'm struck with how much has gotten done.  This isn't to pat my own back; this would not have been possible without your tolerance of my posts here, and the help of those of you who have leapt out from the shadows to help, whether it be helping to discuss things, pointing out flaws in the design, helping out directly with new ideas, or just plain being supportive.
+
+In particular, I would like to call out [[/u/InfernoVulpix]], [[/u/Xavion]], and [[/u/Dwood13]] for their input and energy.  This project would have died a long time ago, were it not for their enthusiasm and unending hole-poking into my design.  
+
+I also need to give a shout-out to [[/u/DaystarEld]] for his excellent Origin of Species, which was really the kicking-off point of the whole thing.  Your writing is excellent and your contributions to this community cannot be understated.
+
+----  
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

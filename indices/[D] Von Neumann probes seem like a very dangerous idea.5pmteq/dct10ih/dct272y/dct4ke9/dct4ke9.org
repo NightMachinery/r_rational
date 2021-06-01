@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: xamueljones
+:Score: 4
+:DateUnix: 1485200573.0
+:DateShort: 2017-Jan-23
+:END:
+
+Yes that's correct, but what I'm debating about is how easily such an error can occur. If we build in redundancies and self-correcting mechanisms, errors become very unlikely.
+
+However, let's say there are so many probes that even unlikely errors do appear. The code can be structured in such a way that there needs to be multiple steps to permit the creation of more probes. If the odds of an error for each step is 1%, then just by requiring 6 separate steps to allow for unlimited replication the odds drop below 1 trillion.
+
+Evolution doesn't rely only on errors/mutations. It needs /useful/ mutations that can appear with only a small change.

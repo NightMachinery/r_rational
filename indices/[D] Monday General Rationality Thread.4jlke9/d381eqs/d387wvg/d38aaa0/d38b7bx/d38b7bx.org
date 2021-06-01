@@ -1,0 +1,17 @@
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1463451571.0
+:DateShort: 2016-May-17
+:END:
+
+#+begin_quote
+  I will read your link when I have time.
+#+end_quote
+
+About that: it was written without mentioning probabilistic programming, which is a recent development that started around 2002 and has been in full swing since around 2009 or so. We really can "probabilize" much richer structures than before this way, but Chapman's core point about probability theory /not/ generalizing /first-order predicate calculus/ actually remains correct.
+
+Computationally, I'd guess that this is because classical logic has a certain sequent calculus structure (you can turn a forall-sequent inside your proof term into a unique variable in the "environment" by universal instantiation), while probability has something of a conflicting sequent-calculus structure (the parameters to lambda-expressions or pi-types which would normally represent universal generalization instead, in the probability monad, represent /conditioning/ on specific parameter values).
+
+Sorry if that sounds like gibberish. It's somewhat easier to express in symbols. I guess...
+
+TL;DR: We'd like to probabilize "forall x, Predicate(x)" to something that says, "Pr(Predicate holds for all x's)". Unfortunately, the computational way of expressing "forall x. Predicate(x)" is structurally equivalent to the computational way of saying, "Pr(Predicate(X) | X=x)". So probability and universal generalization don't play well with each other.

@@ -1,0 +1,15 @@
+:PROPERTIES:
+:Score: 6
+:DateUnix: 1461628030.0
+:DateShort: 2016-Apr-26
+:END:
+
+I'm trying to explain how [[https://probmods.org/hierarchical-models.html#the-blessing-of-abstraction][this]] [[http://www.ncbi.nlm.nih.gov/pubmed/26930189][thing]] works. I think I've got an explanation based on [[http://www.jmlr.org/proceedings/papers/v38/versteeg15.pdf][the quantity from this paper]]: this would be great because it would explain the Blessing of Abstraction and "deep learning" as two different manifestations of one underlying statistical phenomenon.
+
+To try to measure the quantity from the paper as it applies to the models from the book and paper, I rigged up the models in [[http://probcomp.csail.mit.edu/venture/][Venture]], which is built on Python, along with a plugin based on [[https://github.com/gregversteeg/NPEET][NPEET]] to do the estimators. Venture has a dynamic type-tagging system for passing data into and out of plugins, which is kinda buggy and bad, especially since it treats Monte Carlo samples from the posterior distribution (the trained model) as second-class citizens (they don't actually get formatted as standard Venture data).
+
+Instead of dealing with these annoyances, I may just rewrite the models in [[http://indiana.edu/%7Eppaml/][Hakaru]], which is a lot like Venture but it embeds the [[http://alexey.radul.name/ideas/2015/how-to-compute-with-a-probability-distribution/][Sampler monad]] into Haskell, thus allowing it to reuse Haskell's general-case tools for stuff and throw up fewer interpreter dumps that have nothing to do with my actual problem.
+
+Once I've got nice numbers and can make graphs out of them, I want to look at the first paper I linked above (the one under the word "thing"), because they constructed a case in which the Blessing of Abstraction /didn't/ apply and general knowledge was /harder/ to learn than specific, and being able to retrodict the behavior here would be stronger confirmation of my theory. That would also let me construct cases in which I can "tune" the learnability of the abstract knowledge up and down.
+
+This will eventually help robots to acquire well-grounded concepts of paperclips so they can convert the whole universe into them, because as it turns out from computer vision and the success of modern "deep learning", even seemingly very basic concepts are actually quite abstract from the statistical/dataset point of view.

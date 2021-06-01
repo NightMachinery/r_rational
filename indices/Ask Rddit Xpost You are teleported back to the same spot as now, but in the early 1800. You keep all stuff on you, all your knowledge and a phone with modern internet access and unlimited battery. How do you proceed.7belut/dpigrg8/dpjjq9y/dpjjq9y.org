@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: Sceptically
+:Score: 2
+:DateUnix: 1510176211.0
+:DateShort: 2017-Nov-09
+:END:
+
+Your phone gets its time through either GPS or by NTP. GPS presumably won't work because of the lack of satellites, and if it does work then you're not picking up the /local/ time. NTP (Network Time Protocol) works over the internet, so it's also getting the time from the future you came from.
+
+In neither case will you have any issues with the time setting on your phone causing certificates to be invalid. The only reason you'd have problems is if you set the phone time manually to the local time.

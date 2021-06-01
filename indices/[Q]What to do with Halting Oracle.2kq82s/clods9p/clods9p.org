@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: ajuc
+:Score: 1
+:DateUnix: 1414692378.0
+:DateShort: 2014-Oct-30
+:END:
+
+The tunnels linking final chamber in each halting-path with the entrance are one-directional, right?
+
+Because otherways entrance has infinite number of tunnels going out of it, and LR encoding wont workin the first step.
+
+Also - if the program X is substring of program Y starting from the beggining, and both halts then how does the chamber at the end of X work? It should both end at entrance and go further both ways.

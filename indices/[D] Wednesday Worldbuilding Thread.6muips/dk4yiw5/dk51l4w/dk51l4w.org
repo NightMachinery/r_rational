@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 3
+:DateUnix: 1499896514.0
+:DateShort: 2017-Jul-13
+:END:
+
+Generic XP from killing monsters does not exist, There is /only/ skill XP from performing difficult actions.
+
+Whenever you perform an action, the game calculates a "base XP" based on how difficult it was to do in that situation. After that, it /subtracts/ your skill level from the base, and grants you that amount of XP to increase your skill. The requirements for each level also change, increasing by 10% exponentially each time, while the effects gains are constant.
+
+As an example, hitting a training dummy with a short sword is worth 2 XP and it takes 1000 XP to reach level 1 in Short Swords. You will level up after 500 hits. Once you are level 1, hitting the dummy is worth (2 base - 1 level =) 1 XP, and you need 1100 more XP to level, needing 1100 hits. When you are level 2, you can't learn anything from training dummies anymore.
+
+--------------
+
+Every time you level up a skill, you gain four benefits: Universal bonus, Category bonus, Synergies, and Base bonus.
+
+Universal bonus is the same for every skill, a simple increase of +1 HP, and +1 monster aggro. This can act as a stand-in for player level in some ways, but it isn't very accurate.
+
+The category bonuses are different between each set of skills: All combat skills give +1 strength, all spellcasting gives +1 magic, all crafting gives +1 dex, etc. The links to specific stats are the real way skills are categorized, for example, a farmer might have lvl 5 Combat:(Shovel) from digging their field and lvl 10 Crafting:(plants) from gardening.
+
+The synergies make having one skill improve the second. For example, each level of blunt weapons increases your damage with swords by 3%. This is to encourage munchkinry (because early levels are /much/ easier to get) and diverse skill sets.
+
+The last is the base bonus. This is a simple +10% (or whatever) to the effectiveness of the skill. It is bigger than the synergy bonuses, but exponential increases in skill leveling time mean that it may be more efficient to level a synergistic skill instead.
+
+--------------
+
+There are two more parts: Skill tricks, and Skill techniques.
+
+Skill tricks are specific pieces of knowledge that can be used across different skills, in different ways. They are unlocked by specific trainers, by performing specific feats, or by simply raising a skill to high enough level. On their own, skill tricks do nothing, instead unlocking some techniques in combination with other requirements. For example, the skill trick "Power Attack" unlocks the skill techniques "Cleave" (with Axe lvl 15), "Sweep" (with staff lvl 10) and "Pound" (with Hammer lvl 20).
+
+Skill techniques are spells, combat tricks, and the like. They are unlocked by knowing one (or more) skill tricks, and other requirements.

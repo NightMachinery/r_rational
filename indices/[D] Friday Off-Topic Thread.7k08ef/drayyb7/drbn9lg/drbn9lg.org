@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 2
+:DateUnix: 1513399612.0
+:DateShort: 2017-Dec-16
+:END:
+
+Have you tried looking into Immediate Mode GUIs? =Semantic= looks nice, but it also looks very Retained Mode, which accounts for a lot of "How the hell do you go from this code to that result?" types of problems.
+
+On the other hand, Retained Mode GUIs are the norm, and Immediate Modes are harder to find. The one I know about is =dear_imgui=, but it's intended more for debugging than actual game menus (and the workflow isn't even that easy to grok).

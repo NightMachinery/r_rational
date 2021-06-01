@@ -1,0 +1,31 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 2
+:DateUnix: 1444076458.0
+:DateShort: 2015-Oct-05
+:END:
+
+Hm, that counts as strong typing, definitely.
+
+I like capnproto's obvious speed, but coming from a duck typing language that is a bit of a turnoff. Makes it a lot easier to treat it like a file system.
+
+For example, I was imagining the following
+
+#+begin_example
+  #Python!
+  stateTree['home']['traverseda']['.vimrc'].subscribe(callback=reloadvimrc)
+#+end_example
+
+capnproto is definitely going to be faster. Just so much faster.
+
+It's not as good over a network, because it's not a state synchronization protocol, and isn't "diffing" to decide what data to send. We want to only send changes to data that clients are subscribed to, so it works well over the network...
+
+That's something I suspect could be implement for canpnproto though. It also provides an RPC mechanism, which is nice.
+
+I think that in order to be reasonably network transparent, we might need to abandon speed anyway. You'd going do be dealing with ~120ms pings at the worst end, so that's already out of the bag.
+
+Limiting the scope to /just/ a state synchronized data store might be better, because it sets expectations. This isn't suitable for real time anything, you need to do stuff in parallel and distributed as much as possible.
+
+At that point instead of and RPC mechanism, we have a distributed task queue, and the results get stored in the state synchronized task queue like everything else, where they then call a callback function on the client's that are subscribed to it.
+
+Not convinced of capnproto for this, but I'd like to be. The speed is /very/ appealing.

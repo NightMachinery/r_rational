@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: Anakiri
+:Score: 9
+:DateUnix: 1473470353.0
+:DateShort: 2016-Sep-10
+:END:
+
+The games already do what you are trying to do. You're just not looking in the right place.
+
+Canon uses linear stat growth with level, but /level/ growth is not linear with experience. Additionally, when the game actually uses those stats, it multiplies the attack stat by level /again/. Holding everything else equal, damage goes by level squared. The level growth rate is therefore very important.
+
+Check out [[http://bulbapedia.bulbagarden.net/wiki/Experience][the graphs for that]]. Most Bug Pokémon are Erratic and most Dragons are Slow. When they both have 600,000 experience, the Bug will peak at level 100 while the Dragon is back at level 78. Now, an average Bug has a base attack of 90 and an average Dragon has a base attack of 118, so when they're at the same level, the Dragon is stronger. But since Bugs level faster and level counts double, it can overpower Dragons of equal experience until it peaks while the Dragon still has room to grow.
+
+(Also, while some RPGs give you less EXP the higher your level, Pokémon does not. Two Pokémon going through the same battles will gain identical EXP, even if their levels are different. Except in Generation V. But that change didn't stick.)
+
+In practice, a Slow average Dragon will level faster than an Erratic average Bug up to level 37 because the official curves are terrible, then the Bug will get to level 38 with 549 fewer total EXP. Even after that, the Bug's stats will never be higher than the Dragon's with the same amount of experience, even with its higher level. But, since level gets counted twice, the Bug will start doing more damage than the Dragon around 250,000 EXP, when the Bug is level 67 and the Dragon is level 58, in the late game. The Dragon will finally overtake it at level 88 with 851,840 EXP, while the Bug has been stuck at level 100 since 600,000 EXP.
+
+Since canon has these really weird crossover points that most people won't ever see in casual play, it certainly makes sense to tweak the curves. But I think you're not giving the original design enough credit. I discovered all of this the last time I tried to mess with the formulas to make something more sensible and diverse, only to find out it was already done.

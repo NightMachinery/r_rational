@@ -1,0 +1,88 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1518625796.0
+:DateShort: 2018-Feb-14
+:END:
+
+Still idly developing [[https://www.reddit.com/r/rational/comments/7vwof7/d_wednesday_worldbuilding_thread/dtw306v/][battle school thing from last time]]. I think I've hammered together the beginnings of a rule system that might produce something like a metagame, drafted using mostly undefined game mechanical terms that are mostly just quantifiers for abstract things:
+
+** Base rules
+   :PROPERTIES:
+   :CUSTOM_ID: base-rules
+   :END:
+Choose three, no more than one each group\\
+Choosing two from a group is possible, but requires a five second vulnerable switch time, and is rare\\
+Choosing three from a group is pretty much unheard of and considered non-strategic\\
+Unless stated otherwise, overloads cost 10 MP\\
+Normal MP per person is something like 100
+
+** Intake
+   :PROPERTIES:
+   :CUSTOM_ID: intake
+   :END:
+(normal is 1 MP per 30sec, forgoing intake means hoping for an early win before running dry)
+
+1. Plains (gain 1 MP/sec)\\
+   Overload: 10 MP/sec for 4sec, then none for 1 minute
+2. Aspirate (gain 1 MP per 5 MP spent by you or someone else)\\
+   Overload: gain 5 MP per 5 MP spent for 6sec, then none for 1 minute
+3. Travel (gain 1 MP per 5 ft moved, no more than 1 MP per square until 1 minute has passed)\\
+   Overload: gain from out to 15 ft
+
+** Viewpoint
+   :PROPERTIES:
+   :CUSTOM_ID: viewpoint
+   :END:
+(most often forgone, as you can't have all four)
+
+1. Compass (see everything, read opponent choices after 30sec, -2 ATN)\\
+   Overload: Flash editic memory from sensorium, then nothing for 1 minute
+2. Closed Eye (intuition, all rolls +1d4)\\
+   Overload: a single, surefire hit or defense, then nothing for 1 minute
+3. Backbone (all abilities x1.1)\\
+   Overload: all abilities x2, then nothing for 1 minute
+
+** Defense
+   :PROPERTIES:
+   :CUSTOM_ID: defense
+   :END:
+(in addition to armor, forgone in pure dodge/deflect strategies, or sometimes pure aggression)
+
+1. Anvil (skintight shield, -MP for each hit you take regardless of power) (Block)\\
+   Overload: perfect defense at no MP cost for 10sec, then nothing for 1 minute
+2. Rhombus (spinnable prism shield, -MP for each hit, --MP for direct orthogonal-to-plane hits, -2 ATN for best use) (Deflect)\\
+   Overload: more angles and finer (easier) control for 10sec, then nothing for 1 minute
+3. Wedge (repels along a specific pre-selected axis, +deflect, +dodge, less effective with each probing hit until axis is found, then only constrains attacks) (Dodge)\\
+   Overload: more extreme effect (including moving things and people) for 10sec, then nothing
+
+** Offense
+   :PROPERTIES:
+   :CUSTOM_ID: offense
+   :END:
+(varies the most, least often forgone, some token MP cost per attack)
+
+1. Bodkin (increases MP loss when doing shield strikes)\\
+   Overload: singular strike that can completely knock out a shield, then unusable for a minute
+2. Needlepoint (+1d5 to attack rolls)\\
+   Overload: +1d10 to attack rolls, then nothing for 1 minute
+3. Maniac (reduced interval between attacks, reduced exertion from many fast attacks, -1d4 to attack rolls)\\
+   Overload: barrage of attacks w/ -1d10 to attack rolls, then nothing for 1 minute
+4. Juggernaut (+5 to damage if used with heavy weapon, -MP per use)\\
+   Overload: attack that bypasses all shields, then nothing for 1 minute
+
+** Swords
+   :PROPERTIES:
+   :CUSTOM_ID: swords
+   :END:
+Sword for every option, can fuel up to 60 MP into that option, or up to 10 MP at less favorable rates into others (so long as you selected them)\\
+Can only recharge sword if you have that option chosen
+
+"Off" swords complement a non-chosen locus (more options, until sword runs out)\\
+"On" swords complement a chosen locus (easier recharge of sword, greater depths)
+
+--------------
+
+I think that with metagame considerations, varied arenas, non-magical differences in fighters, and possibly some further elaboration or "deeper secrets" this would be enough to carry a 90,000 word novel that was only halfway about the fights.
+
+I'm most curious to see what people think the metagame (or possible metagames) might look like.

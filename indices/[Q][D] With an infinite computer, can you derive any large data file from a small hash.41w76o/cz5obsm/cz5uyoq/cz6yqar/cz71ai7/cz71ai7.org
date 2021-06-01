@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: SpeakKindly
+:Score: 1
+:DateUnix: 1453413973.0
+:DateShort: 2016-Jan-22
+:END:
+
+Well, we can dig out our asymptotic estimates of the size of these effects. The number of primes less than n is around n/log(n); thus, if we know that x is prime, instead of writing it down in log(x) bits as we usually would, we can use merely log(x/log(x)) = log(x) - log(log(x)) bits, saving log(log(x)) bits on each prime.
+
+But your encoding method also needs to separate the encoded prime factors you write down somehow. The typical n has around log(log(n)) prime factors; we need roughly this many bits to specify how many prime factors n has and how large they are (when writing down "this is the k-th prime number", you need to know how many bits you need to write down k). This happens to magically more or less exactly compensate for our earlier savings. Some numbers will become shorter; some longer.
+
+I did not do this computation yesterday, because your method will not work on general principles. There are 1024 times as many 1000000-bit integers as there are 999990-bit integers. Thus, if you apply any compression algorithm of your choice on a random 1000000-bit integer, you have a less than 0.1% chance of getting a 999990-bit result and saving so much as 10 bits. If your compression algorithm actually compresses some 1000000-bit integers to 999990-bit integers, though, then not all 999990-bit integers can be given 999990-bit results, so some of those will have to be "compressed" to longer sequences. Some numbers will become shorter; some longer.
+
+Lossless compression algorithms work by exploiting properties of the input. A randomly chosen text in English has lots of properties to exploit, so a text file can be compressed by a lot. A randomly chosen integer has no properties whatsoever to exploit, so a randomly chosen integer cannot be compressed.

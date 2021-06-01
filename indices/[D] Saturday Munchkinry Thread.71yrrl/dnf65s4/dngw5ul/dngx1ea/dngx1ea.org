@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: Gurkenglas
+:Score: 1
+:DateUnix: 1506309392.0
+:DateShort: 2017-Sep-25
+:END:
+
+That's not quite what I meant: Half of the days, at the start of the day, receive stock info from a simulation that ran for one day. Half of all simulations, at the start of their day, themselves receive stock info from a recursive simulation of that same day. This means that information from a 10th of January never gets passed back to a 1st of January. There is, on average, one simulation-day for each real-day.

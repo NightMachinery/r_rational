@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: Amonwilde
+:Score: 1
+:DateUnix: 1521308860.0
+:DateShort: 2018-Mar-17
+:END:
+
+Whoops. Might have responded a little differently if I had noted that.
+
+I think one basic problem of communication here is that I'm talking about paradigms as styles of programming rather than descriptions of the programming. You don't sit down and write some declarative code, or describe yourself as a declarative programmer. You can sit down and say, "I'm going to use recursion for this, because it's more functional," in the sense that it fits a functional style of programming. Same with object-oriented programming.
+
+I originally wrote the article with the functional part using filter and taking some closures. But then I was like, this isn't really helpful for the people I'm writing for. But then I was left with basically talking up subroutines, which, as you say, aren't really functional, they're just imperative. I mean, as written, they're functional in the sense that they take arguments and return a value, but that's a pretty trivial version of functional programming. So the functional section is like 10% of the way toward introducing functional programming.
+
+In terms of your criticism of the object-oriented solution....yeah, it's a lot of code, and it's complex, both in the sense that it's relatively hard to understand and in the sense that it connects things together that should not be connected. (At least in my mind.) However, this is how object-oriented code is, for good or ill, generally written. For my audence, libraries like Scrapy and NLTK use this kind of idiom all over the place. It's very common in Python. And, actually, it's not really a terrible thing, at least for Python specifically. That's because, if you've used a library like Scrapy or NLTK, you'll find that the API it exposes makes for pretty readable code. The NLTK internals look like crap, but code written with NLTK is pretty all right. And, in fact, while the code for the objects is pretty ugly, though par for the course with Python OO programming, the actual code using those objects is highly semantic and readable, which are prized in Python programming. Stuff like tokens.length() is pretty easy to comprehend.
+
+Anyway, I still think you're looking at this stuff a bit narrowly. But thanks for the feedback.

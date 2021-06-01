@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 2
+:DateUnix: 1526182803.0
+:DateShort: 2018-May-13
+:END:
+
+Thank you very much! I think making the decrease exponential rather than linear resolves it!
+
+Modelling (simplified) with 8 people and an extra day; near-end point, two people and one day to go, at end of day would have two people on half-capacity, both dead; one dies, have one person running on double-capacity, after day then running on full-capacity, after another day then running on half-capacity. Two days earlier, back to 8 people running on full capacity. All live, all straight die. To get the first extra day, four have to die. To get the next extra day, two have to die. ...Yes, that's it. In a situation where the available resources is (effectively!) halved in unit time T, every postponement of The End by 1T requires halving your current population. Convenient-if-unlikely if the two characters were the last surviving members of any civilisation--though, ah yes, especially with the priority level and Fermi's paradox probable/plausible that only that one planet existed.
+
+Let time T be three weeks; (log(7,000,000,000)/log(2))*3/52 = ~1.887. Let T be 3-6 weeks to get a maximum instead of a minimum; from that, from all the dying off humanity did in the early non-critical stages, The End would have been ultimately pushed back by less than four years. *happiness*

@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: TimTravel
+:Score: 1
+:DateUnix: 1443926336.0
+:DateShort: 2015-Oct-04
+:END:
+
+Make it mana / node-based. Nodes can transfer mana to other nodes or spend it themselves to have small effects. Individual node size is up to the author based on the setting. Make a small well-defined set of atomic commands nodes can carry out. Add a few basic computation-based commands, finite state per node, and then you've got a Turing machine cooking. You can do while(true) fireball(enemy); but it'll fizzle once the spell runs out of mana.
+
+Note it takes surprisingly little basic computational power to build a Turing machine, ignoring the difficulty of coming up with an infinite tape. I can give some suggestions / details if you want. I'm pretty good with theoretical compsci.

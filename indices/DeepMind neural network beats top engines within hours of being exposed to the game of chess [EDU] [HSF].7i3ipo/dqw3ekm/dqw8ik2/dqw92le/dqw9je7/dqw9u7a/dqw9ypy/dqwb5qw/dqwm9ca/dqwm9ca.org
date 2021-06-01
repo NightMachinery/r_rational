@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: wren42
+:Score: 4
+:DateUnix: 1512663147.0
+:DateShort: 2017-Dec-07
+:END:
+
+i guess the question is whether Stockfish would outperform AlphaZero using the BETTER hardware. You've claimed AlphaZero wouldn't work well on weaker hardware, but would stockfish scale up sufficiently to compete, or is the algorithm not capable of utilizing the additional processing effectively?
+
+If the answer is that Stockfish would win on worse hardware and Alphago would win on better hardware, then your scenario suggesting we just put them on the same box and see who wins breaks down. The selection of the turf decides the outcome, like a gladiator contest with a merman fighting a centaur.
+
+Personally I'd say we should compare the two operating under the /most favorable conditions for their algorithm/, rather than /the same hardware./ The latter isn't necessarily as pure a test as it sounds. If one algorithm makes very good use of RAM and one is better at leveraging GPU or something, they should both just get hardware optimized for thier respective strengths.

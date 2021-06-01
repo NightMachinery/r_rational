@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: Veedrac
+:Score: 2
+:DateUnix: 1457193690.0
+:DateShort: 2016-Mar-05
+:END:
+
+Consider a super-Turing machine defined to be a normal Turing machine augmented with this extra one-cycle computation:
+
+- Read the tape as the description for a program in some encoding. Replace the tape with 1 if the program described halts and 0 otherwise. Then halt.
+
+Call the computability class of this machine H.
+
+Consider also the /weakest/ possible oracle machine who's computability class includes H. Call this H+.
+
+It seems to me that a decision problem:
+
+#+begin_quote
+  Does the given input describe a Turing machine that does /not/ halt?
+#+end_quote
+
+Is not computable in H but is computable in H+. Proving the former claim seems nontrivial, but proving the later consists only of taking the oracle machine for the inverse problem (aka. the halting problem) and replacing its halt state with one that first inverses the output.

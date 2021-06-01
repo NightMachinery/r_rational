@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: zarraha
+:Score: 1
+:DateUnix: 1484768666.0
+:DateShort: 2017-Jan-18
+:END:
+
+I disagree with some of your criticisms, particularly the ones about the fitness function. I think time is a valuable constraint since it prevents AI from sitting around and wasting time doing nothing. I agree that in some levels there are times when you need to go up or down or even left, but that's ultimately in service of eventually getting further to the right. If one AI blindly goes right and dies and the other takes its time and survives longer and gets further, then the second should score more. But if both paths are valid and both survive and get to the same final distance then the one who took the faster path should score more. Time should be worth fewer points than distance, but still be a measurable part of it.
+
+Additionally, I don't think things like getting further into a pit is much of an issue. I haven't actually looked into or run the code myself, but as long as your breeding system is robust enough and has a decently large population, small advantages like that would have little impact compared to legitimate progress.
+
+One possible solution to these issues (which only really occur in more complicated maps) would be to create lines through the map that indicate progress and have the fitness function measure how far along the line the AI got. So in normal circumstances it would just go right, but in levels where you have to go up a certain platform before resuming travel to the right, the line would bend upwards and reward AI who got higher up along it. Or something like that. You'd have to manually make a separate line for each level, but it'd make the fitness function more accurate for measuring progress in complicated levels.

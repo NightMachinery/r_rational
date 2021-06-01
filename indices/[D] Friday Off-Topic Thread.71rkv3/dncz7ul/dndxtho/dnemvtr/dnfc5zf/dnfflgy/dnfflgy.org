@@ -1,0 +1,47 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 3
+:DateUnix: 1506230293.0
+:DateShort: 2017-Sep-24
+:END:
+
+#+begin_quote
+  Did... you quote HP:MoR?
+#+end_quote
+
+:D
+
+#+begin_quote
+  Either way, I don't think that's a good mindset, especially in game dev. There's a thousands different ways to fail and look back and go "if only", and you can't guess in advance which will hit you. You can regret over-engineering as easily as under-planning.
+#+end_quote
+
+I'm well familiar with the pitfalls, both in amateur and professional contexts. In this case, there's yet another axis here, and that's the fact that due to the subject matter we might run into, shall we say, IP concerns. In such a hypothetical event, I would love to have my project built in a way that would allow for a clean division between XGEF and other core code that I've worked on; removing any problematic content would be as easy and straightforward as uninstalling a mod. In this case, the robust modding framework will probably be the only thing I walk away from this project with, so yes, there's a ton of work going into theoreticals that might not (probably will not) impact Renegade itself.
+
+In a lot of ways I'm not building Renegade, I'm building the ecosystem that would permit something like Renegade to exist.
+
+#+begin_quote
+  Meh. API change is not that hard; especially when you're adding features to the API; it's not like future modders would go "Oh no, I designed my mod before the new optional dependency system was added, now it's useless!".
+#+end_quote
+
+Alright, fair enough, but for those mods to exist at all as anything more elegant than DLL hacking, I need to be able to compile scripts, and to compile scripts in a manner even approaching sanity I need to be able to deterministically define what order they are compiled (and evaluated) in.
+
+#+begin_quote
+  I'm... not sure how that would work? If you need the keybinding mod to be loaded before anything else, how do you make it happen? It not like you can tell your keybinding mod "load before this other mod" for every single mod that will ever exist. You can have a flag like "load_before_everything_else", but then you run into problems when several mods use that flag and have to be ordered (we had to design a system like that for an extensible HTTP server in my school last year).
+
+  (and yeah, ordering arbitrary mods is a pain in the ass)
+#+end_quote
+
+So it occurs to me that I haven't actually laid out the full priority process here (it's been beaten to death in Discord instead). Each mod also declares a requested priority from 1-5 (which no doubt will result in everyone and their mother requesting the highest priority, which I am hoping to alleviate somewhat feebly by not putting the priority listing in the mod info template by default). The actual full process is as follows:
+
+- Load a list of all mods and their associated information
+- Unload all mods that have any of their Conflicts loaded
+- Translate all LoadAfters into LoadBefores
+- Arrange all mods into a directed graph based on the LoadBefore connections
+- Topologically sort the graph using Tarjan's algorithm
+- Cut up the graph into strongly-connected regions (also done by Tarjan's), with each region being all mods that reference each other in a LoadBefore (or LoadAfter)
+- Sort regions by the highest priority of any individual mod within the region (ties defer to the order that Tarjan's originally gave them)
+- Unload any mods that now have their Dependencies missing.\\
+
+It never came up here, but I had planned on tiebreakers beyond these steps coming down to sorting the mod names alphabetically. Have to draw the line somewhere.
+
+Anyway. I mostly agree with your sentiment against over-engineering, but for the mod system in particular, there's a number of complexities that conspire to the current direction. Plus I have /momentum/, momentum that I've never had before with a small but regular following and more than a year's design work behind me. Yeah, I'm aiming high, no arguments there, but I also haven't added anything (except maybe the aforementioned stats) that I didn't immediately put into use in the next step of the pipeline.

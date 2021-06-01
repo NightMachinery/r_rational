@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: tilkau
+:Score: 1
+:DateUnix: 1409996566.0
+:DateShort: 2014-Sep-06
+:END:
+
+Good point. So you're saying you just end up with a fixed volume that will always be filled with FBRs? Take some away and more generate?
+
+I don't know what the relevant limits are. Or D&D at all, really (aside from what I've learnt through 2YE).
+
+I believe my algorithm works as stated assuming that the FBRs are continuously distributed away from the production area, and creation either has enough space and works, or doesn't and fails. At some point production overtakes distribution, at which point the number of FBRs/GGGs/GGs/Gs stays constant. You can simply clip the graph at that point.

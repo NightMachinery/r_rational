@@ -1,0 +1,95 @@
+:PROPERTIES:
+:Author: mhd-hbd
+:Score: 4
+:DateUnix: 1426943844.0
+:DateShort: 2015-Mar-21
+:END:
+
+The /pq/ system is isomorphic to the additive Semigroup defined in Peano's original definition of Peano Arithmetic.
+
+If we were to include the distributive law, it would necessitate exhibiting a Ring isomorphism. Since the /pq/ system is not a Ring, such a notion is absurd.
+
+Proof of isomorphism using informal Homotopy Type Theory to follow.
+
+It is so, because Peano's original definition is:
+
+#+begin_example
+  Nat : Type
+  1 : Nat
+  S : Nat → Nat
+  ind_Nat :
+      (P : Nat → Type) →
+      P 1 →
+      ( (n : Nat) → P n → P (S n) ) →
+      (n : Nat) → P n
+
+  _+_ : Nat → Nat → Nat
+  1 + n :≡ S n
+  S n + m :≡ S (n + m)
+#+end_example
+
+from which =unit_addition : (n : Nat) → 1 + n = S n= follows trivially.
+
+(With associativity, commutativity, and other properties of addition in this type-theoretic example, left as an exercise to the reader.)
+
+Going by the definition of /pq/ in GEB:
+
+#+begin_example
+  dash : Type
+  - : dash
+  ind_dash : (P : dash → Type) → P - → (d : dash) → P d
+
+  string : Type → Type
+  empty_string : (A : Type) → string A
+  cons_string : (A : Type) → A → string A → string A 
+  ind_string :
+      (A : Type) →
+      (P : string A → Type) →
+      P (empty_string A) →
+      ( (a : A) → (l : string A) → P l → P (cons_string a l) ) →
+      ( (l : string A) → P l )
+
+
+  _++_ : (A : Type) → string A → string A → string A
+  empty_string ++ l :≡ l
+  cons_string a l ++ k :≡ cons_string a (l ++ k)
+
+  dashes : Type
+  dashes :≡ string dash
+
+  pq : Type
+  _p_q_ :
+      (x : dashes) → (y : dashes) → (z : dashes) →
+      (x = empty_string dash → 0) →
+      (y = empty_string dash → 0) →
+      (z = x ++ y) →
+      pq
+#+end_example
+
+And then all we have to do is exhibit:
+
+#+begin_example
+  iso : Nat ≅ (d : dashes) × (d = empty_string → 0)
+  iso :≡ (Nat_to_dashes, dashes_to_Nat
+
+  Nat_to_dashes : Nat → (d : dashes) × (d = empty_string → 0)
+  Nat_to_dashes 1 :≡ cons_string - empty_string
+  Nat_to_dashes (S n) :≡ cons_string - (Nat_to_dashes n)
+
+  dashes_to_Nat : (d : dashes) × (d = empty_string → 0) → Nat
+  dashes_to_Nat (cons_string - empty_string) :≡ 1
+  dashes_to_Nat (cons_string - l) :≡ S (dashes_to_Nat l)
+#+end_example
+
+which by univalence gives us =Nat = (d : dashes) × (dashes = empty_string → 0)=
+
+And then restructuring =_+_= as a relation:
+
+#+begin_example
+  add_rel : Nat → Nat → Nat → Type
+  add_rel n m o :≡ n + m = o
+#+end_example
+
+which can be proven equal to =_p_q_= by functional extension.
+
+QED.

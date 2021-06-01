@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: electrace
+:Score: 8
+:DateUnix: 1510615521.0
+:DateShort: 2017-Nov-14
+:END:
+
+I've been tasked with sorting about 500 papers that are basically in random order. Each paper has an integer on it. Keeping in mind that I am not a computer, what's the best way to sort them?
+
+It's essentially impossible to do this to all 500 papers at the same time due to space constraints. So currently, I group them by their integer into groups of 100 (1-100, 101-200, etc). Then I take one sheet of paper at a time and place it into the correct position (relative to the others I've already picked out). The problem is that after I get about 10-15 pages into the correct order, searching through the stack (and holding the stack) gets harder and harder.
+
+To address this, I've also tried sorting smaller stacks, and then combining the stacks. By that I mean, I take 50 of the papers, sort them, put that stack aside, do the same for the other 50 papers, and then pick the one with smaller integer from both piles until I've combined the two stacks of 50 papers into 100 sorted papers.
+
+I'm not particularly confident in the efficiency of either method, and would really like to hear any ideas you all have.

@@ -1,0 +1,41 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1430035735.0
+:DateShort: 2015-Apr-26
+:END:
+
+#+begin_quote
+  What incentive does Alice1.0 have in sending the lotto numbers back in time if she knows it will never directly benefit Alice1.0?
+#+end_quote
+
+This is a game theory question.
+
+Let's say that you and I run competing businesses. You run Singleton Industries, which has the following policy:
+
+#+begin_quote
+  Never send anything backwards in time, unless there's need for a roundabout way of destroying an object, which will almost never be the case.
+#+end_quote
+
+I run Plurality United, which has the following policy:
+
+#+begin_quote
+  Always send as much information back in time as feasible. Just reams and reams of it. If we ever get information from the future, send that back to the past too. Set aside a certain budget for this, and keep doing it even if there's no benefit.
+#+end_quote
+
+Singleton Industries beats Plurality United in Timeline 1.0. Plurality United beasts Singleton Industries in /every other timeline/. By having their stated policy, Plurality United ensures that it is almost certainly going to end up in a timeline where it receives help from the future. By having this policy (and importantly, following through with it even if they /don't/ receive help from the future) Plurality United can act on trends that haven't happened yet, they can complete month-long design processes overnight and with practically zero cost, and they never have to issue a recall because they can get defect reports before the product is on the assembly line.
+
+Maybe you stick to your guns and say "No, I'm never going to send anything back to my past self, because that's not /me/ and /I/ don't have any benefit". But it seems to me like the vast majority of the time, you're going to wind up missing out.
+
+#+begin_quote
+  Additionally, if all instances of time travel creates a new branch on a tree, then every single instance of time travel creates a new branch were ONLY one "receiving object from the future" event can occur.
+#+end_quote
+
+In a binary tree (which is the best representation of this), branches can have branches. So yes, Alice makes 1.1 and Bob makes 1.2, but you can have multiple receptions. For example:
+
+- 1.0 - Alice sends lotto numbers backwards in time.
+- 1.1.0 - Alice gets lotto numbers. Alice sends money backwards in time, but to a point /after/ she received the lotto numbers.
+- 1.1.1.0 - Alice gets lotto numbers. Alice gets money. Alice sends money backwards in time, but to a point /after/ she received the money.
+- 1.1.1.1 - Alice gets lotto numbers. Alice gets money. Alice gets money again. Alice sends money backwards in time, but to a point /after/ she received the second batch of money.
+
+Every period there is a branching point, but from Alice 1.1.1.1's perspective, she's been the beneficiary of three distinct "receiving object from the future" events.

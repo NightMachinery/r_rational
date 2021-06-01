@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: DrunkenQuetzalcoatl
+:Score: 2
+:DateUnix: 1437162064.0
+:DateShort: 2015-Jul-18
+:END:
+
+Okay so a Linear Congruential Generator (LCG) works like this:
+
+X(n+1) = a * X + b (mod m)
+
+So you have m which would be your period (y). Which is also the number of distinct teleport locations.
+
+Then you have the parameters for the LCG which are a and b. This could be your end location. (but a,b can not be chosen completely arbitrary).
+
+Then you start with a seed (any integer < m) and put it in the formula to get the next number.
+
+So the first location determines all locations. And you can start at any of the locations on the map to find all others.
+
+You can get x,y coordinates on a map out of the random numbers with x = X mod width and y = (int) (X / width)
+
+That should be generate a pattern given enough points. a and b are also determinable. Even unknown a,b and m is doable but harder.

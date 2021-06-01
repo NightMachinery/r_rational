@@ -1,0 +1,38 @@
+:PROPERTIES:
+:Author: DaystarEld
+:Score: 2
+:DateUnix: 1512269930.0
+:DateShort: 2017-Dec-03
+:END:
+
+Ok, so I /think/ I get it now... you're basically saying I supplied information that should not be applied to the prior to adjust it. Not without a bunch of extra steps that I didn't do, anyway.
+
+Specifically, the number of T1 events that are reported as T1 is fundamentally different from the number of T1 reports that are actually T1 events, in a way that just taking the ratios and coming up with a "Chance of T1 being reported accurately" from the latter still doesn't translate to "T1 events reported as T1."
+
+So to fix this, I can either add in all the extra math that gives me the /actual/ "Number of T1 events reported as T1," which I can then apply to the prior of 12% Tyranitar T1 events... OR I can just change the information supplied, so say that 79% of T1 events are reported accurately as T1 events, the question becomes:
+
+#+begin_quote
+  12% of Tyranitar are Tier 1. 79% of Tier 1 events are reported as Tier 1. 33% of Tier 2 events are reported as Tier 1. A Tyranitar is reported as Tier 1. What's the probability it actually is Tier 1?
+#+end_quote
+
+Which is then solved like this:
+
+12% of Tyranitar events are Tier 1
+
+88% of Tyraniter events are Tier 2
+
+79% of Tier 1 Events are reported accurately
+
+67% of Tier 2 Events are reported accurately
+
+Group A: 9.48 Tyranitar are Tier 1 and Reported Tier 1
+
+Group B: 2.52 Tyranitar are Tier 1 but Reported as Tier 2
+
+Group C: 58.96 Tyranitar are Tier 2 and Reported as Tier 2
+
+Group D: 29.04 Tyranitar are Tier 2 but reported as Tier 1.
+
+Group A / (Group A+ Group D) = .25% chance a reported Tier 1 Tyranitar is Tier 1
+
+Is that correct? If not I'm happy to get on skype or discord to chat verbally :)

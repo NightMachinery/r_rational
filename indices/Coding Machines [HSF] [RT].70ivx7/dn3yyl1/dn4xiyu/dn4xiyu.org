@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: everything-narrative
+:Score: 2
+:DateUnix: 1505676007.0
+:DateShort: 2017-Sep-17
+:END:
+
+It is possible to probabilistically circumvent at KTH, by layering interpreters.
+
+Write a C compiler in Haskell, a Haskell compiler in LISP, a LISP interpreter in Python, and a Python interpreter in C. Compile the Python interpreter with the dirty C compiler, run the LISP in the Python interpreter, run the Haskell compiler in the LISP interpreter, and compile the C compiler with that.
+
+The resulting C compiler is most likely clean, since the initial C compiler otherwise has to contain a pattern match for inspecting through Python, LISP, and Haskell. This takes a lot of code, which takes up a lot of space, which makes the initial dirty C compiler very big --- a clear warning sign.
+
+Small compilers contain simple KTH's, so layer your interpreters to get clean binaries.

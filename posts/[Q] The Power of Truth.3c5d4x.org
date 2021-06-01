@@ -1,0 +1,483 @@
+#+TITLE: [Q] The Power of Truth
+
+* [Q] The Power of Truth
+:PROPERTIES:
+:Author: KZLightning
+:Score: 5
+:DateUnix: 1436051900.0
+:DateShort: 2015-Jul-05
+:END:
+Consider the following power. Any handwritten note that has any set of true statements will burn green. If the note contains any false statements or any utterance that is not a statement then it will burn red. The method of burning does not matter, nor does it matter who wrote the note. It does not matter what the note is written on. You must be directly causally responsible for burning the note. The power is infallible except when considering the future. (It can predict what is likely to happen in the future, but not what actually will happen.)
+
+Given this power, I have two questions. First, what would you use this power to do? Second, assuming someone else has this power, what would you recommend they do?
+
+EDIT: As grammatically correct meaningless statements are possible, they would burn red just like non-statements and false statements.
+
+
+** u/capsless:
+#+begin_quote
+  Given this power, I have two questions. First, what would you use this power to do? Second, assuming someone else has this power, what would you recommend they do?
+#+end_quote
+
+uh. immediately collapse the complexity class heirarchy into at most linear time/space. become god, a la scott aaronson:
+
+#+begin_quote
+  Even many computer scientists do not seem to appreciate how different the world would be if we could solve NP-complete problems efficiently. I have heard it said, with a straight face, that a proof of P = NP would be important because it would let airlines schedule their flights better, or shipping companies pack more boxes in their trucks! One person who did understand was G ̈odel. In his celebrated 1956 letter to von Neumann (see [69]), in which he first raised the P versus NP question, G ̈odel says that a linear or quadratic-time procedure for what we now call NP-complete problems would have “consequences of the greatest magnitude.” For such an procedure “would clearly indicate that, despite the unsolvability of the Entscheidungsproblem, the mental effort of the mathematician in the case of yes-or-no questions could be completely replaced by machines.”
+
+  But it would indicate even more. If such a procedure existed, then we could quickly find the smallest Boolean circuits that output (say) a table of historical stock market data, or the human genome, or the complete works of Shakespeare. It seems entirely conceivable that, by analyzing these circuits, we could make an easy fortune on Wall Street, or retrace evolution, or even generate Shakespeare's 38th play. For broadly speaking, that which we can compress we can understand, and that which we can understand we can predict. Indeed, in a recent book [12], Eric Baum argues that much of what we call ‘insight' or ‘intelligence' simply means finding succinct representations for our sense data. On his view, the human mind is largely a bundle of hacks and heuristics for this succinct-representation problem, cobbled together over a billion years of evolution. So if we could solve the general case---if knowing something was tantamount to knowing the shortest efficient description of it---then we would be almost like gods.
+#+end_quote
+:PROPERTIES:
+:Author: capsless
+:Score: 13
+:DateUnix: 1436057014.0
+:DateShort: 2015-Jul-05
+:END:
+
+
+** What about indeterminate statements?
+
+You've just created a perfect oracle. You can use it to generate the answer to any question that has a knowable answer expressible in a finite number of symbols, including creating working software to solve any computable problem in any instruction code.
+
+And I don't even have to be able to think up the solutions.
+
+First step, don't reveal it until I've gotten it to tell me who the best person to reveal the power to. I don't want to end up in a basement cell in Fort Meade.
+
+Second step, create the Singularity.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 9
+:DateUnix: 1436055506.0
+:DateShort: 2015-Jul-05
+:END:
+
+*** Indeterminate statements are, I assume, neither true nor false. They are not true and will show up as such. If you mean statements that are vague or ambiguous, then they will show up as true if all reasonable variations of their meaning are true and false otherwise.
+
+I didn't think of the best person to reveal this to but it seems like a good question to ask.
+:PROPERTIES:
+:Author: KZLightning
+:Score: 1
+:DateUnix: 1436125924.0
+:DateShort: 2015-Jul-06
+:END:
+
+**** Indeterminate statements are ones that can not be determined. They are not vague nor ambiguous, they are things like contradictory statements.
+
+They shouldn't show up as "true" or "false". If they show up as "false" then you have to add an extra piece of paper to every question.
+
+Also, this leads to a variant on Asimov's "The Last Question":
+
+And the programmer asked the Oracle, "Does P = NP"?
+
+The Oracle answered "IT DOES NOW."
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 3
+:DateUnix: 1436127481.0
+:DateShort: 2015-Jul-06
+:END:
+
+***** Contradictory statements are actually false. Any statement of the form "P&~P" is false. The general statement that "P&~P is false" is simply the law of non-contradiction.
+
+Indeterminate statements cannot be contradictions then, since you are looking for something that is neither true nor false.
+:PROPERTIES:
+:Author: KZLightning
+:Score: 1
+:DateUnix: 1436143713.0
+:DateShort: 2015-Jul-06
+:END:
+
+****** "This statement is false" is neither false nor true. It is not a statement of the form "P&~P". "Colorless green dreams sleep furiously" is neither false nor true. It is meaningless.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1436148835.0
+:DateShort: 2015-Jul-06
+:END:
+
+******* "This statement is false" actually is a statement of =P ^ ~P=. It uses a binding to itself: =P: ~P=, and because each statement is equivalent to itself in conjunction with an assertion of its own truth: =P: ~P= -> =P': P' ^ ~P'=. That this statement is false, however, can't actually be resolved in (first-order?) logic. Godel's First Incompleteness Theorem is a formalization of the liar's paradox in formal systems at least as strong as Robinson Arithmetic. It relies on the fact that the Godel sentence is false and that the system the sentence is written in can't prove that it's false, to prove that the system is necessarily either incomplete or contradictory.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1436192177.0
+:DateShort: 2015-Jul-06
+:END:
+
+******** So you're claiming that this power is not subject to Gödel's Incompleteness Theorem?
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 2
+:DateUnix: 1436194089.0
+:DateShort: 2015-Jul-06
+:END:
+
+********* I don't know. That depends on the system of logic it uses. Perhaps the universe uses some kind of transcendental paraconsistent logic.
+
+I think I may have actually invented the equivalence of each statement asserting its own truth back when I was looking for approaches to the Liar's Paradox. I'm not sure I'm quite that creative, so I might be suffering from cryptomnesia. It makes sense though, and it seems to work. By DeMorgan, =P': P' ^ ~P= -> =~P': ~P' v P'=, which is true by the excluded middle. So if you consider every statement to assert its own truth, asserting its own falsity results in contradiction, and all is right with the world. I'm not sure why I abandoned that line of thought. It's entirely possible that there is a higher level at which this system is subject to the Liar's Paradox.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1436238051.0
+:DateShort: 2015-Jul-07
+:END:
+
+********** u/ArgentStonecutter:
+#+begin_quote
+  I don't know. That depends on the system of logic it uses. Perhaps the universe uses some kind of transcendental paraconsistent logic.
+#+end_quote
+
+That's great, but for it to be useful for humans it's got to be true or false in a way that humans can understand.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1436260961.0
+:DateShort: 2015-Jul-07
+:END:
+
+*********** The kind of logic it uses only matters to the amount and types of statements it can categorize. If it says things are either true or false, which it does, then that's what you'll get.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1436279104.0
+:DateShort: 2015-Jul-07
+:END:
+
+************ Sure, but if we don't know what its definition of "true" and "false" are... whether it's based on "transcendental paraconsistent logic", or the Platonic ideal of Forms, or Confucian philosophy... then we can't use it as an oracle for some of the more interesting applications.
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 0
+:DateUnix: 1436283903.0
+:DateShort: 2015-Jul-07
+:END:
+
+************* What do you mean, "its definition of true and false." True and false are true and false. The type of logic used doesn't change the meaning of the terms. And what the fuck are you on about, Confucianism? Platonism? What does that have to do with anything I've said?
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1436295971.0
+:DateShort: 2015-Jul-07
+:END:
+
+************** u/ArgentStonecutter:
+#+begin_quote
+  True and false are true and false. The type of logic used doesn't change the meaning of the terms.
+#+end_quote
+
+[[https://en.wikipedia.org/wiki/Logical_truth][Oh look, a rabbit hole]]
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 0
+:DateUnix: 1436296311.0
+:DateShort: 2015-Jul-07
+:END:
+
+*************** Okay, and?
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1436298183.0
+:DateShort: 2015-Jul-08
+:END:
+
+
+******* "Colorless green dreams sleep furiously" in first order logic could be something like:
+
+∀x: (isColorless(x) ∧ isGreen(x) ∧ isDream(x) ) → ( isSleeping(x) ∧ isEnraged(x) )
+
+(Maybe the original statement means to say they sometimes sleep furiously or that only some colorless green dreams and not all of them behave this way, or maybe furiously was meant to mean intensely. These other interpretations have different truth values but do in fact still have them. If anything the problem is that the statement is ambiguous. Regardless lets assume that my logic reflects the intent of the statement for now.)
+
+This logical statement is true because nothing can be both colorless and green, meaning the left-hand side of the implication is always false, and (false → anything) is true.
+:PROPERTIES:
+:Author: gabbalis
+:Score: 1
+:DateUnix: 1436292010.0
+:DateShort: 2015-Jul-07
+:END:
+
+******** [[https://en.wikipedia.org/wiki/Colorless_green_ideas_sleep_furiously][Take it up with Chomsky]]
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1436293521.0
+:DateShort: 2015-Jul-07
+:END:
+
+********* There's no such thing as Colorless green dreams (or ideas), which is what makes the sentence nonsense, but that's exactly what makes the statement true in my first order logic interpretation.
+
+In other words, nonsense does not appear to preclude a truth value by my understanding, and I don't see Chomsky disagreeing. I haven't read most of his work of course, so I don't have much more than the linked article to go on.
+:PROPERTIES:
+:Author: gabbalis
+:Score: 1
+:DateUnix: 1436296497.0
+:DateShort: 2015-Jul-07
+:END:
+
+
+****** What color does "This paper will burn red." burn?
+:PROPERTIES:
+:Score: 1
+:DateUnix: 1436177763.0
+:DateShort: 2015-Jul-06
+:END:
+
+******* That is a different representation of "This sentence is false". As above, that is false.
+:PROPERTIES:
+:Author: KZLightning
+:Score: 1
+:DateUnix: 1436193871.0
+:DateShort: 2015-Jul-06
+:END:
+
+******** But what color does it burn?
+:PROPERTIES:
+:Score: 2
+:DateUnix: 1436248302.0
+:DateShort: 2015-Jul-07
+:END:
+
+********* OP would probably say red, because red is for false and "indeterminate" statements. Clearly, though, it should burn regular fire colours, as it can't be assigned a truth-value.
+:PROPERTIES:
+:Author: injygo
+:Score: 2
+:DateUnix: 1436270767.0
+:DateShort: 2015-Jul-07
+:END:
+
+
+** Do the binary search to find the answers I need the most.
+
+- "The first letter of of the most valuable sentence I can read is in the first half of the alphabet." [True/False]
+
+- ".... is in the first quarter" [True/False]
+
+Same for the second letter, and so on.
+:PROPERTIES:
+:Author: raymestalez
+:Score: 7
+:DateUnix: 1436059024.0
+:DateShort: 2015-Jul-05
+:END:
+
+*** You might need to rephrase that to "The first letter of the sentence /I would consider/ most valuable to read is in the first half of the alphabet." Seems like a very promising approach.
+:PROPERTIES:
+:Author: Norseman2
+:Score: 6
+:DateUnix: 1436064279.0
+:DateShort: 2015-Jul-05
+:END:
+
+
+*** You get back gibberish because humans are complex systems and the most valuable sentence you can read fluctuates from instance to instance.
+:PROPERTIES:
+:Author: LiteralHeadCannon
+:Score: 3
+:DateUnix: 1436076379.0
+:DateShort: 2015-Jul-05
+:END:
+
+**** u/FeepingCreature:
+#+begin_quote
+
+  #+begin_quote
+    The first letter of the most valuable sentence the version of me at TAI n can read is ...
+  #+end_quote
+#+end_quote
+:PROPERTIES:
+:Author: FeepingCreature
+:Score: 4
+:DateUnix: 1436085877.0
+:DateShort: 2015-Jul-05
+:END:
+
+***** Sentences are unbounded in length, you would need to bound the sentence in order to know the time you will be able to read the sentence at.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 2
+:DateUnix: 1436192893.0
+:DateShort: 2015-Jul-06
+:END:
+
+
+** "This statement is false"
+:PROPERTIES:
+:Score: 8
+:DateUnix: 1436063149.0
+:DateShort: 2015-Jul-05
+:END:
+
+*** You become red-green colorblind.
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 10
+:DateUnix: 1436073676.0
+:DateShort: 2015-Jul-05
+:END:
+
+**** BAD END, go home and think before trying to break the laws of the universe.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 1
+:DateUnix: 1436191961.0
+:DateShort: 2015-Jul-06
+:END:
+
+
+*** Well, you might solve a longstanding linguistics problem, but I did not know it was that important to you.
+:PROPERTIES:
+:Author: KZLightning
+:Score: 1
+:DateUnix: 1436125719.0
+:DateShort: 2015-Jul-06
+:END:
+
+
+*** DO NOT MESS WITH LOGIC.
+
+Wait that didn't come out right...
+:PROPERTIES:
+:Author: Sailor_Vulcan
+:Score: 1
+:DateUnix: 1436215928.0
+:DateShort: 2015-Jul-07
+:END:
+
+
+** You're asking how to achieve godhood with a perfect binary oracle?
+
+Firstly, check stuff like "there is a God", "this is a computer simulation", "time-travel to the past is possible". Oh, and "FAI, as conceived of by MIRI, is possible and desirable."
+
+After that, binary searches are probably the way to go; I'd use a dictionary, or maybe a list of the [[https://xkcd.com/1133][ten hundred most common words]]. "Is the answer to my question in the first half? Is it in the first half of the first half? Is it in the first half of the second half of the first half?"
+
+The /ideal/ way to do this would be to assign binary codes to each word, and maybe even have a program automatically print out the "answers" you're going to test. But the main thing is the binary; "The first digit of the code for the first word in the answer to my question is 1; the second digit of the code for the first word in the answer to my question is 1", etc. can all be tested simultaneously.
+
+Given that ... questions. I'd go for "what is the correct ethical theory", or some slightly better-worded version of that, first. Then maybe some stuff to make money (you could solve some well-known unsolved problems and make money off that, or just ask for the words to email to rich people that would make them give you their money), then I guess you should go on to "what is the shortest program that generates an FAI?" Maybe ask for the Theory of Everything and a way to unify all nations on Earth under you or some other benevolent ruler, as well.
+:PROPERTIES:
+:Author: MugaSofer
+:Score: 3
+:DateUnix: 1436085691.0
+:DateShort: 2015-Jul-05
+:END:
+
+*** [[http://imgs.xkcd.com/comics/up_goer_five.png][Image]]
+
+*Title:* Up Goer Five
+
+*Title-text:* Another thing that is a bad problem is if you're flying toward space and the parts start to fall off your space car in the wrong order. If that happens, it means you won't go to space today, or maybe ever.
+
+[[http://www.explainxkcd.com/wiki/index.php/1133#Explanation][Comic Explanation]]
+
+*Stats:* This comic has been referenced 239 times, representing 0.3359% of referenced xkcds.
+
+--------------
+
+^{[[http://www.xkcd.com][xkcd.com]]} ^{|} ^{[[http://www.reddit.com/r/xkcd/][xkcd sub]]} ^{|} ^{[[http://www.reddit.com/r/xkcd_transcriber/][Problems/Bugs?]]} ^{|} ^{[[http://xkcdref.info/statistics/][Statistics]]} ^{|} ^{[[http://reddit.com/message/compose/?to=xkcd_transcriber&subject=ignore%20me&message=ignore%20me][Stop Replying]]} ^{|} ^{[[http://reddit.com/message/compose/?to=xkcd_transcriber&subject=delete&message=delete%20t1_cssovib][Delete]]}
+:PROPERTIES:
+:Author: xkcd_transcriber
+:Score: 2
+:DateUnix: 1436085714.0
+:DateShort: 2015-Jul-05
+:END:
+
+
+** First, I'd be looking at making 6 million dollars by solving the remaining six Millenium Prize problems...
+:PROPERTIES:
+:Author: mhd-hbd
+:Score: 2
+:DateUnix: 1436135264.0
+:DateShort: 2015-Jul-06
+:END:
+
+*** Where are the Millenium Prize problems?
+:PROPERTIES:
+:Author: KZLightning
+:Score: 1
+:DateUnix: 1436143765.0
+:DateShort: 2015-Jul-06
+:END:
+
+**** u/Transfuturist:
+#+begin_quote
+  Millenium Prize problems
+#+end_quote
+
+[[https://en.wikipedia.org/wiki/Millennium_Prize_Problems][Vikipaydia.]]
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 2
+:DateUnix: 1436193139.0
+:DateShort: 2015-Jul-06
+:END:
+
+
+** Lasers, spectrometers, Theory of Everything, extropy, apotheosis, run every possible computer program.
+:PROPERTIES:
+:Author: gryfft
+:Score: 1
+:DateUnix: 1436075785.0
+:DateShort: 2015-Jul-05
+:END:
+
+
+** Define a "true statement". Define written.
+
+It's not like OCR is an objective physical law, let alone NLP or semantics.
+:PROPERTIES:
+:Author: Uncaffeinated
+:Score: 1
+:DateUnix: 1436073219.0
+:DateShort: 2015-Jul-05
+:END:
+
+*** "True" means corresponds with reality. A statement is simply an indicative sentence. Further definitions should not be necessary. As others have noted, this is a perfect binary oracle.
+:PROPERTIES:
+:Author: KZLightning
+:Score: 1
+:DateUnix: 1436125664.0
+:DateShort: 2015-Jul-06
+:END:
+
+**** Except that the whole point is that they are. Reality doesn't speak English, and even among humans, truth is incredibly subjective.
+:PROPERTIES:
+:Author: Uncaffeinated
+:Score: 0
+:DateUnix: 1436128614.0
+:DateShort: 2015-Jul-06
+:END:
+
+***** Reality may not speak English, but people do. If the statements that people make are meaningful, then it is possible for them to correspond with reality. If you are skeptical of this, then you are a universal skeptic. I doubt that you are really that skeptical though. As Hume noted, most skeptics exit rooms through doors rather than windows; they also avoid being hit by cars.
+
+As for truth being subjective, that depends on what is meant by subjective. There are two reasonable meanings of subjective in which you might mean. The first is that truth is understood by subjects (people). The second is different people believe different things are true. The problem is that neither definition is a problem. The first simply states the obvious. The second is not a problem since I was speaking of truth rather than belief. I might believe that something is true, but whether my belief is correct or not is a matter of truth.
+
+If you still have an objection, you might try stating it with more words. As is, it sounds either simplistically wrong or obviously mistaken.
+:PROPERTIES:
+:Author: KZLightning
+:Score: 1
+:DateUnix: 1436144328.0
+:DateShort: 2015-Jul-06
+:END:
+
+****** What I mean is that you need to define a rule that tells what will happen to a give pile of atoms without resorting to fuzzy notions of human culture.
+:PROPERTIES:
+:Author: Uncaffeinated
+:Score: 1
+:DateUnix: 1436145863.0
+:DateShort: 2015-Jul-06
+:END:
+
+******* You /don't/ need to define a rule. Eliezer never explained magic in HPMoR, and you don't need to be able to explain something to use it in a thought experiment.
+
+Simply put, for the sake of the thought experiment, reality does speak English, so stop being a tosser.
+:PROPERTIES:
+:Author: Transfuturist
+:Score: 4
+:DateUnix: 1436193007.0
+:DateShort: 2015-Jul-06
+:END:
+
+
+******* This is not clear. "...to give pile of atoms" is not grammatically correct and therefore the meaning of your sentence is unclear.
+:PROPERTIES:
+:Author: KZLightning
+:Score: 1
+:DateUnix: 1436193763.0
+:DateShort: 2015-Jul-06
+:END:

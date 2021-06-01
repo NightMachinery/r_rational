@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 4
+:DateUnix: 1486142725.0
+:DateShort: 2017-Feb-03
+:END:
+
+A cool (though obvious) pattern in map projections that I only just noticed...\\
+- Meridians and parallels are evenly-spaced: Simple compromise (equirectangular, azimuthal equidistant)\\
+- Parallel spacing is compressed (i.e., meridians are shortened) near the edge of the map: Equal-area (Lambert equal-area azimuthal, Lambert equal-area azimuthal)\\
+- Meridian spacing is compressed (i.e., parallels are shortened) near the edge of the map: Equal-area (sinusoidal, Werner)\\
+- Parallel spacing is expanded (i.e., meridians are extended) near the edge of the map: Conformal (Mercator, stereographic)
+
+(I would include links, but I'm on my phone and forgot to prepare a Google Doc for copying and pasting beforehand, so I'll just tell you to look them up on [[http://www.progonos.com/furuti/MapProj/Normal/TOC/cartTOC.html][this very fun site]].)
+
+--------------
+
+I was thinking about map projections because my next pointless programming project involves the extension of my previous Delaunay-triangulation-/Voronoi-diagram-/relative-neighborhood-graph-drawing program(s) from planes and toruses to spheres. On the other hand, however, I'm also involved in a just-started campaign of /[[http://www.reddit.com/r/crusaderkings][Crusader Kings 2]]/. Deciding which activity is more worth my effort isn't too difficult: The CK2 campaign provides /both/ enormous amounts of fun (both in the playing and in the summarizing) /and/ a non-negligible sum of prestige (when I disseminate the summary), while the fun and prestige that can be gained from writing /yet another/ network-drawing program and /maybe/ bothering to post an explanation and demonstration somewhere (even if it incorporates several map projections) is significantly more limited.

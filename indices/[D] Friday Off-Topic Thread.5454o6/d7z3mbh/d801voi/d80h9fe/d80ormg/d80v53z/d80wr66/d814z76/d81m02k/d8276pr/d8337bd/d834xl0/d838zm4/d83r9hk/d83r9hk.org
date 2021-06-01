@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 1
+:DateUnix: 1474952721.0
+:DateShort: 2016-Sep-27
+:END:
+
+Alright, [[https://dl.dropboxusercontent.com/u/6516469/Bills%20PC/Bills_PC_Release_2016-09-26.zip][newest build is up]]. It contains your machop line changes, as well as a border around the various text boxes and the new key bindings. Ctrl+E to go up one evolution (the first evolution if multiple are there, I haven't done any fancy logic yet), Ctrl+D to go down, and Ctrl+Up/Ctrl+Down to step up or down the main species dropdown.
+
+I had to include the separate up/down/e/d because the combobox can be sorted alphabetically, in which case simply cycling once doesn't guarantee hitting the next evolution.
+
+I haven't yet modified the documentation with these changes, but I"ll be sure to do so shortly. Let me know your opinion of the changes.
+
+EDIT: a good number of us have started to congregate in our own channel on the Discord server; feel free to join us in #pokengineering!

@@ -1,0 +1,15 @@
+:PROPERTIES:
+:Author: vakusdrake
+:Score: 1
+:DateUnix: 1525117165.0
+:DateShort: 2018-May-01
+:END:
+
+#+begin_quote
+  Now suppose that barber_of_seville() returns (instead of running forever). Then the vakusdrake-analyzer tells us this fact, and barber_of_seville() loops forever. Suppose barber_of_seville() runs forever (instead of returning). Then the vakusdrake-analyzer tells us this fact, in finite time, and we return. The barber of seville must shave himself, and he must not (and giving him more shaving supplies does not help him in this conundrum).\\
+  Hence, infinite computing power does not allow you to implement the vakusdrake-analyzer: Saying "assume a vakusdrake-analyzer" is just like "assume 2+2=5", that is, useful only for showing that, in fact, two plus two does not make five.
+#+end_quote
+
+I'm not really sure what the point you're making is. I was saying that because it can operate at infinite speed any program which halts for the computer /eventually/ will halt instantly.
+
+If you're saying that there are some hypercomputer functions which no mathematically/logically coherent computer can run then I'm fine with excluding those. However the idea is that any computer which /is/ logically coherent is bundled into the system which you could technically consider to be an infinite number of computers bundled together by a shared interface.

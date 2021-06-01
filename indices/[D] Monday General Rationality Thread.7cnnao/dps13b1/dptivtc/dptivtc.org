@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 4
+:DateUnix: 1510688493.0
+:DateShort: 2017-Nov-14
+:END:
+
+So from my time playing yugioh, the fastest way to sort large stacks of paper is to exploit the following facts:
+
+- that it's trivially easy to read paper, and therefore that it's trivially easy to sort very small stacks of paper(<~12 sheets or so)
+- that combining stacks of paper is O(1)
+- holding a stack of paper, taking a page off the top, then assigning it to a sub-stack is also very fast, provided you have small number of easily recognizable sub-stacks.
+
+So with 500 pages, you're on the right track with putting them into groups of 100, but you shouldn't be immediately sorting them, because size ~50 stacks are still too much of a pain in the ass. Instead, for each size ~50 group, you repeat the previous step, but for groups of 10, leaving you with 10 groups of 1-10 pages. At 5-10 pages, you can typically glance through the mini-stack and immediately figure out ordering, so you sort each group of ~5 pages in near-optimal time, leaving you with 10 stacks of 1-10 pages Then you can recombine these stacks in order, which will go pretty quickly, leaving you with a sorted size ~50 stack. Then you repeat the process for your other size ~50 stacks, leaving you with 10 size ~50 stacks, and then you repeat the stack recombine operation, leaving you with a sorted 500 pages.
+
+Now, there might be a space constraint issue, what with you needing to have a maximum of 9+9=18 stacks on the table, plus one in your hands, but luckily for the greater group of 9 stacks you can have them overlapped when your messing with the smaller group, and if you overlap horizontal-vertical-horizontal-vertical you can put 9 stacks in the place of two.

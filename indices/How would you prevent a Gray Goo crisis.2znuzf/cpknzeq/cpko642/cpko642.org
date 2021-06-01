@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: Turniper
+:Score: 7
+:DateUnix: 1426822993.0
+:DateShort: 2015-Mar-20
+:END:
+
+This is a good start, but just looking at the problem from a standard software security perspective, there are several more obvious holes. You would need to include a mechanism to prevent the modification of the command set, such as building the commands into the hardware itself. Additionally, whatever mechanism is used to prevent self modification needs to be robust or intrinsic enough that one nano-bot cannot be easily modified by hand to modify others to circumvent this restriction. On top of that, there would need to be some sort of major precautions against reverse engineering.
+
+Basically, all safeguards need to be implemented at such an absurdly low level that it would literally be easier to create gray goo from scratch than it would be to use your nanobots as a starting point. Honestly though, the best solution is avoid self-replicating machines. Factory setups avoid this whole risk, and it's not like we've ever felt the need to build self-replicating devices on a macro-scale. Factory modules are easier from both an engineering and a security standpoint.

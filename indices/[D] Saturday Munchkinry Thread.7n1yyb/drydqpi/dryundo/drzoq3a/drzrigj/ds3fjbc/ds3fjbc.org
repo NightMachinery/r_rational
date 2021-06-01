@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 2
+:DateUnix: 1514925250.0
+:DateShort: 2018-Jan-03
+:END:
+
+Normal people can't do this. Stock tickers are delayed by at least 15 minutes, so if you need something with sub-5-minute accuracy you'll need to be working for an exchange/brokerage/etc. Even then you're not going to be able to pull it off, since high frequency traders have software that monitors the market and shapes prices in real time -- when they see you starting to buy a big position they'll jump ahead of you in the order queue and the price will be higher by the time your order goes through. Read the book "Flash Boys" for more on this -- it's fascinating and also infuriating.

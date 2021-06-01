@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 1
+:DateUnix: 1508960569.0
+:DateShort: 2017-Oct-25
+:END:
+
+To recoup the clips you need to research space exploration, you have to disassemble everything except your battery towers. But it's weird that you have no processors or memory. That seems borked to me--perhaps it's a bug related to the new Xavier research from the latest patch? Someone else mentioned having the same problem. Try going into the console (F12) and typing
+
+memory += 120;
+
+processors += 120;
+
+and see if you start generating ops again.

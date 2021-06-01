@@ -1,0 +1,58 @@
+:PROPERTIES:
+:Author: monkyyy0
+:Score: 1
+:DateUnix: 1512688910.0
+:DateShort: 2017-Dec-08
+:END:
+
+#+begin_quote
+  First, what is your source for your assertion?
+#+end_quote
+
+Common sense, if you wish to disprove me, please point me towards a way to program fractional without loops or recursion of some kind.
+
+There is also ackermann function if you want an impossible problem.
+
+#+begin_quote
+  Second, computers implement loops and conditionals by...adding numbers together.
+#+end_quote
+
+..... Are you perhaps confused on what a forward feed neural net is?
+
+It by definition doesn't have loops; the adding numbers together is what a neural net does.
+
+#+begin_quote
+  Iiuc you're basically saying that if you play a game that wasn't among the hundreds of thousands used for practice, then AlphaGo will perform poorly
+#+end_quote
+
+No I'm not; consider minesweeper being proven to be np-hard, that does not mean a lower complexity is unable to beat easier games. You could probably make a linear time able to beat 99% of games. It's the last percent that matters on defining its true complexity.
+
+Being able to predict 20 moves in advance is a grand master skill in chess; but being able to avoid stupid mistakes should be possible with straight addition(add up the value of each piece, and calculate how many are "at risk" for example, take the action that maximizes this heuristic)
+
+Lazy heuristics can get you quite far; but its the minmax trees that compete with grandmasters of any system.
+
+#+begin_quote
+  As evidenced by its performance against new opponents.
+#+end_quote
+
+Alpha go is not a neural net, its a neural net with a minmax tree heart.
+
+You can't point at its success in a way that separates it from the min max tree
+
+--------------
+
+#+begin_quote
+  this is a false equivalence.
+#+end_quote
+
+Which part?
+
+1. Neural nets can't solve factorial because that lack recursion
+
+2. Min max trees are naturally recursive, like factorial
+
+3. min max tree's are necessary part of turn based games solutions that reach high levels
+
+4. alpha go is a neural net with a minmaxer; while clever isn't actual proof for the delusional hype around neural nets.
+
+I feel only number 3 needs any defence. Its not proven, but I'd love to hear a single counterexample of any turn based game ai that works very well without a minmax tree

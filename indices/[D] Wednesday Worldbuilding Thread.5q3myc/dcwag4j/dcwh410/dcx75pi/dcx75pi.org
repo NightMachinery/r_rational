@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: Norseman2
+:Score: 4
+:DateUnix: 1485408372.0
+:DateShort: 2017-Jan-26
+:END:
+
+I decided to do the math on this, and it seems like you're right. I was skeptical because the Stefan-Boltzmann law states that the total radiant energy emitted by an object is proportional to its absolute temperature raised to the fourth power. This means that even when you're radiating 10x as much energy because of time acceleration, an object at 300°K (room temperature) will still emit 1,000x less energy than an object at around 3,000°K (like a halogen lamp or incandescent light) which is outside of the zone. Of course, once that hits the edge of the zone, frequency shifting will make that 1/100th.
+
+People will emit about 13% more total radiant energy than room temperature objects around them. Wien's law states the wavelength of the peak of their emissions would be about 9.5 μm. Once that hits the edge of the zone, that would change to 0.95 μm, or near-infrared (instead of long wavelength infrared). This is close to the same peak as you'd see with objects at 3000°K outside the zone (see this [[https://en.wikipedia.org/wiki/File:Black_body.svg][graph]]), but the curve would probably be quite a bit flatter. The peak would be in the about the same frequency range as a halogen lamp, although much of the light would be spread out through a wider range of (mostly non-visible) frequencies. The flatness is likely to make the color appear whiter than you'd expect from a 3000°K light source, but dimmer as well. I haven't calculated this, so bear that in mind when reading my estimation of luminance in the following paragraph.
+
+Since every object in the zone would be about 1/100th as bright as staring into an incandescent filament, and humans would be about 1/88th as bright, the [[https://en.wikipedia.org/wiki/Orders_of_magnitude_(luminance][luminance]]) of objects inside the zone (seen from outside) would be in the ballpark of a [[https://en.wikipedia.org/wiki/Sodium-vapor_lamp][low-pressure sodium vapor lamp]]. That probably wouldn't be so bright that it's painful to look at, but definitely bright enough that you'd be dealing with a decent amount of glare when trying to look at anything inside the zone. The brightness would be temperature-dependent, so humans and other warm objects would obviously have somewhat visible contrast from their surroundings. Objects in the zone would probably stand out due to being somewhat cooler and thus somewhat darker than the ground.
+
+One big problem is that any typical light sources from inside the zone will be hazardous to you on the outside. All visible light (380-740 nm) will be shifted to the extreme ultraviolet range (now 40-74 nm within the range which is 10-124 nm), and the total power output of such sources would be amplified by a factor of 100 for objects and people outside of the zone. A strong LED flashlight or laser pointer could become quite dangerous.

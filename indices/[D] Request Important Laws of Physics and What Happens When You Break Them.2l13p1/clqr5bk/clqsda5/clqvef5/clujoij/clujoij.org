@@ -1,0 +1,23 @@
+:PROPERTIES:
+:Author: Chronophilia
+:Score: 2
+:DateUnix: 1415262780.0
+:DateShort: 2014-Nov-06
+:END:
+
+I disagree. Newtonian universes still have multiple inertial frames of reference. You have the frame where I'm currently stationary, the frame where the Earth's core is currently stationary, the frame where the Sun's core is currently stationary, etc.
+
+The difference is that the coordinate transform which turns one frame into another is very simple:
+
+x' = x + vt\\
+t' = t
+
+while in special relativity, the equivalent transformation is:
+
+x' = γ(x + vt)\\
+t' = γ(t + vx/c^{2})\\
+where γ = (1-v^{2}/c^{2})^{1/2}
+
+(And yes, taking the limit of the second transformation as c goes to infinity will give the first transformation. I checked.)
+
+You're definitely right that, in Newton's world, time passes at the same rate in all frames. No more twin paradox.

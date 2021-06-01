@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: xamueljones
+:Score: 1
+:DateUnix: 1474495331.0
+:DateShort: 2016-Sep-22
+:END:
+
+Hmm....I think there's a slight misunderstanding about how the probability is being distributed between timelines.
+
+Understand that there ARE timelines where the protagonist gets a message immediately after she has sent the previous message. But there are also timelines where she doesn't and only receives the message the next day. You are seeing points in time such as 2 am and wondering why there are no messages if there's a possible self-consistent timeline that can send a message to 2 am. However if a message appears at 2 am, it invalidates all other timelines where there were NO messages sent at 2 am. If a timeline with a message sent at 8 am has a higher probability than a timeline with a message sent at 2 am, then there will be no messages sent at 2 am, even if it could be a self-consistent timeline.
+
+I see the sequence of messages as a wave where the peak is a point in time where a message is being sent/received and a trough is a point in time where no messages are being sent/received.
+
+Back to the spam messaging example. If the protagonist is likely to get annoyed and stop sending repeat messages to her past self, then she is decreasing the number of timelines with spam messages. Now there are fewer timelines with repeat messages which are consistent, and lowers the overall probability of receiving repeat messages even though there are some consistent timelines left.
+
+I know I'm changing the wording of my explanation here, because before I was talking about each timeline having an individual probability value separate from each other. But I've been doing some thinking and reworking how probability is distributed between timelines. It makes intuitive sense to me that timelines could be reinforcing or destructively interfering with each other so that timelines which are very similar to each other and all are self-consistent are more likely overall than compared to consistent timelines which are very similar to many inconsistent timelines.

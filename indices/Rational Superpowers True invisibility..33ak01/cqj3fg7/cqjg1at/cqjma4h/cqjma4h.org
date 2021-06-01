@@ -1,0 +1,39 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 2
+:DateUnix: 1429625136.0
+:DateShort: 2015-Apr-21
+:END:
+
+Let me preface this by saying that I have no idea. To wikipedia!
+
+There are two conditions that happen together - hypercapnia (too much CO2) and hypoxia (too little O2). [[http://en.wikipedia.org/wiki/Breathing][Concentrations when we inhale]]:
+
+#+begin_quote
+
+  - 78.04% nitrogen
+  - 21% oxygen
+  - 0.96% argon
+#+end_quote
+
+And when we exhale:
+
+#+begin_quote
+
+  - 78.04% nitrogen
+  - 13.6% - 16% Oxygen
+  - 4% - 5.3% Carbon dioxide
+  - 1% Argon and other gases
+#+end_quote
+
+So after breathing through all of your air, which takes six hours if you're in a two meter sphere, the air will have the exhalation composition (a decent naive assumption). The [[http://en.wikipedia.org/wiki/Hypercapnia][hypercapnia]] page has a handy table which shows tolerance for carbon dioxide - depending on what your carbon dioxide output is, you're either one week or one hour from being dead (probably on the low end given that you're continuing to add more carbon dioxide with every breath). Now, the question is just how bad being at 13%-16% oxygen is for you. Wikipedia didn't have a table for that, but [[http://www.airproducts.com/%7E/media/Files/PDF/company/safetygram-17.pdf][this PDF did]]:
+
+| Oxygen concentration(% vol) | Health effects of persons at rest                                                                                                                                                                  |
+|-----------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 19                          | Some adverse physiological effects occur, but they may not be noticeable.                                                                                                                          |
+| 15--19                      | Impaired thinking and attention. Increased pulse and breathing rate. Reduced coordination. Decreased ability to work strenuously. Reduced physical and intellectual performance without awareness. |
+| 12--15                      | Poor judgment. Faulty coordination. Abnormal fatigue upon exertion. Emotional upset.                                                                                                               |
+| 10--12                      | Very poor judgment and coordination. Impaired respiration that may cause permanent heart damage. Possibility of fainting within a few minutes without warning. Nausea and vomiting.                |
+| <10                         | Inability to move. Fainting almost immediate. Loss of consciousness. Convulsions. Death.                                                                                                           |
+
+Based on those two tables, it seems like the lack of oxygen would get to you first. But it's not a sure thing. If anyone can find an authoritative answer to the question, I would like to see it.

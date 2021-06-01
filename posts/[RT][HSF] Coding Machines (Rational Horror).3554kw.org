@@ -2,8 +2,9 @@
 
 * [[http://www.teamten.com/lawrence/writings/coding-machines/][[RT][HSF] Coding Machines (Rational Horror)]]
 :PROPERTIES:
-:Score: 27
+:Score: 25
 :DateUnix: 1430973339.0
+:DateShort: 2015-May-07
 :END:
 
 ** For the record, this attack is well known in programmer circles as the [[http://c2.com/cgi/wiki?TheKenThompsonHack][Ken Thompson hack]].
@@ -29,8 +30,9 @@ You know, this is already possible! Google around, some people did it on a lark.
 In summary: good story by somebody who sounds like they independently rediscovered an attack that has been known for decades. Props to the author! But the virus that can evade a team of dedicated hobbyists with logic probes has (probably) yet to be written.
 :PROPERTIES:
 :Author: FeepingCreature
-:Score: 12
+:Score: 11
 :DateUnix: 1430997337.0
+:DateShort: 2015-May-07
 :END:
 
 *** Could you elaborate a little more on why you think this sort of virus could be discovered, if it's encoded on the base level? Seems like theoretically they would be able to falsify any results to tests you could make
@@ -38,6 +40,7 @@ In summary: good story by somebody who sounds like they independently rediscover
 :Author: whywhisperwhy
 :Score: 1
 :DateUnix: 1431012361.0
+:DateShort: 2015-May-07
 :END:
 
 **** You can always build a cpu and testing equipment from first principles, write all software on it by hand, and store it in a faraday cage in a vacuum chamber until it's needed to test another piece of equipment or software. It's not like the thing can infect soldering irons and analogue oscilloscopes.
@@ -45,6 +48,7 @@ In summary: good story by somebody who sounds like they independently rediscover
 :Author: BadGoyWithAGun
 :Score: 6
 :DateUnix: 1431014116.0
+:DateShort: 2015-May-07
 :END:
 
 ***** BRB, embedding malicious code in the laws of physics.
@@ -52,6 +56,7 @@ In summary: good story by somebody who sounds like they independently rediscover
 :Author: Chronophilia
 :Score: 3
 :DateUnix: 1431036843.0
+:DateShort: 2015-May-08
 :END:
 
 ****** In that case our reality would obviously be a simulation, so we just need to break out and fire up the debugger.
@@ -59,6 +64,7 @@ In summary: good story by somebody who sounds like they independently rediscover
 :Author: BadGoyWithAGun
 :Score: 2
 :DateUnix: 1431037000.0
+:DateShort: 2015-May-08
 :END:
 
 ******* Seen on the Internet long ago:
@@ -68,6 +74,7 @@ In summary: good story by somebody who sounds like they independently rediscover
 :Author: eaglejarl
 :Score: 2
 :DateUnix: 1431352477.0
+:DateShort: 2015-May-11
 :END:
 
 
@@ -76,6 +83,7 @@ In summary: good story by somebody who sounds like they independently rediscover
 :Author: Solonarv
 :Score: 2
 :DateUnix: 1431183210.0
+:DateShort: 2015-May-09
 :END:
 
 
@@ -84,6 +92,7 @@ In summary: good story by somebody who sounds like they independently rediscover
 :Author: nerdguy1138
 :Score: 1
 :DateUnix: 1431052561.0
+:DateShort: 2015-May-08
 :END:
 
 ****** Depending on your resources. If you need something that's x86 compatible, you better have the resources of a gigantic megacorporation, because you'd have to design it yourself, but if you just need something that can be targeted by a C compiler, you can get away with the simplest possible 8-bit CPU, you could even take something like a Z80 or a 6502 that pre-dates the infection and implement it. I have absolutely no idea what it would take to do the entire fabrication process without involving any software or whether it could reasonably be done. If not, you couldn't make it as an integrated circuit, you'd just have to solder individual transistors together. Per [[https://en.wikipedia.org/wiki/Transistor_count][transistor count]], that means around 10000 for an 8-bit CPU, or around 5 million for an x86-compatible one.
@@ -91,6 +100,7 @@ In summary: good story by somebody who sounds like they independently rediscover
 :Author: BadGoyWithAGun
 :Score: 0
 :DateUnix: 1431057059.0
+:DateShort: 2015-May-08
 :END:
 
 ******* ***** 
@@ -128,6 +138,7 @@ In summary: good story by somebody who sounds like they independently rediscover
 :Author: autowikibot
 :Score: 1
 :DateUnix: 1431057097.0
+:DateShort: 2015-May-08
 :END:
 
 
@@ -136,6 +147,7 @@ In summary: good story by somebody who sounds like they independently rediscover
 :Author: protagnostic
 :Score: 1
 :DateUnix: 1431056101.0
+:DateShort: 2015-May-08
 :END:
 
 
@@ -144,6 +156,7 @@ In summary: good story by somebody who sounds like they independently rediscover
 :Author: Transfuturist
 :Score: 3
 :DateUnix: 1431022506.0
+:DateShort: 2015-May-07
 :END:
 
 *** The switch was a fantastic moment, it really emphasised how deep the rabbit hole.
@@ -151,6 +164,7 @@ In summary: good story by somebody who sounds like they independently rediscover
 :Author: IllusoryIntelligence
 :Score: 1
 :DateUnix: 1431503866.0
+:DateShort: 2015-May-13
 :END:
 
 
@@ -159,6 +173,7 @@ In summary: good story by somebody who sounds like they independently rediscover
 :Author: protagnostic
 :Score: 3
 :DateUnix: 1431055736.0
+:DateShort: 2015-May-08
 :END:
 
 
@@ -167,6 +182,7 @@ In summary: good story by somebody who sounds like they independently rediscover
 :Author: Transfuturist
 :Score: 2
 :DateUnix: 1431021527.0
+:DateShort: 2015-May-07
 :END:
 
 
@@ -177,6 +193,7 @@ Maybe not yet, but in five or six iterations, we'll see.
 :Author: Chronophilia
 :Score: 2
 :DateUnix: 1431026833.0
+:DateShort: 2015-May-07
 :END:
 
 
@@ -185,19 +202,22 @@ Maybe not yet, but in five or six iterations, we'll see.
 That said - as a Python user with no compsci training, the thought of having to rebuild everything from assembly by hand is totally and rationally horrifying.
 :PROPERTIES:
 :Author: PeridexisErrant
-:Score: 3
+:Score: 2
 :DateUnix: 1431005078.0
+:DateShort: 2015-May-07
 :END:
 
-*** #+begin_quote
+*** u/Roxolan:
+#+begin_quote
   The ridicule is unrealistic. Surely people on Slashdot would have heard of the Ken Thompson hack.
 #+end_quote
 
 Yeah, I was expecting them to find out that all those mocking posts were written by suspiciously chatbot-like accounts...
 :PROPERTIES:
 :Author: Roxolan
-:Score: 8
+:Score: 6
 :DateUnix: 1431009980.0
+:DateShort: 2015-May-07
 :END:
 
 **** Maybe the chatbot-like accounts only lasted the first couple of times, and by the point of the story those, too, have become more advanced.
@@ -205,21 +225,24 @@ Yeah, I was expecting them to find out that all those mocking posts were written
 Half of Slashdot's active community is actually just sophisticated programs talking back and forth to each other in order to maintain a tight illusion of humanity. After all, if 100 /really well-written/ posts attack yours, and don't seem to have much other history, then you might be suspicious. But what if each of them has a history going back years? Then you assume that they're human.
 :PROPERTIES:
 :Author: callmebrotherg
-:Score: 4
+:Score: 3
 :DateUnix: 1431018460.0
+:DateShort: 2015-May-07
 :END:
 
 ***** The comment history is stored on databases, too. The bots may have been there for years... but were they there for years /yesterday/?
 :PROPERTIES:
 :Author: Chronophilia
-:Score: 9
+:Score: 7
 :DateUnix: 1431026948.0
+:DateShort: 2015-May-07
 :END:
 
 ****** I just so happened to be reading /Soul Music/ and came across this quote. Ahh, what a lovely coincidence.
 :PROPERTIES:
 :Score: 2
 :DateUnix: 1431654156.0
+:DateShort: 2015-May-15
 :END:
 
 
@@ -232,6 +255,7 @@ Also, all of the mods are bots. Did someone mention knowing one of them IRL? Tha
 :Author: callmebrotherg
 :Score: 1
 :DateUnix: 1431033829.0
+:DateShort: 2015-May-08
 :END:
 
 ******* Everyone on the internet is a bot apart from you.
@@ -241,6 +265,7 @@ Also, all of the mods are bots. Did someone mention knowing one of them IRL? Tha
 :Author: MadScientist14159
 :Score: 2
 :DateUnix: 1431258998.0
+:DateShort: 2015-May-10
 :END:
 
 
@@ -249,10 +274,12 @@ Also, all of the mods are bots. Did someone mention knowing one of them IRL? Tha
 :Author: FeepingCreature
 :Score: 2
 :DateUnix: 1431006889.0
+:DateShort: 2015-May-07
 :END:
 
 
-*** #+begin_quote
+*** u/alexanderwales:
+#+begin_quote
   That said - as a Python user with no compsci training, the thought of having to rebuild everything from assembly by hand is totally and rationally horrifying.
 #+end_quote
 
@@ -261,6 +288,7 @@ Hell, having to go into the compiler is horrifying to me, and I have five years 
 :Author: alexanderwales
 :Score: 2
 :DateUnix: 1431007831.0
+:DateShort: 2015-May-07
 :END:
 
 
@@ -269,4 +297,5 @@ Hell, having to go into the compiler is horrifying to me, and I have five years 
 :Author: Charlie___
 :Score: 1
 :DateUnix: 1430982558.0
+:DateShort: 2015-May-07
 :END:

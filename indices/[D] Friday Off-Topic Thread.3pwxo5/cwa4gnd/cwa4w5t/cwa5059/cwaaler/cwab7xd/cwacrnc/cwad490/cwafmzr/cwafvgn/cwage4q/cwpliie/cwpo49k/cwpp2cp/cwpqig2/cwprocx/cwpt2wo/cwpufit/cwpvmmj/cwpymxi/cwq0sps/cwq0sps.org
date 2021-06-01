@@ -1,0 +1,30 @@
+:PROPERTIES:
+:Author: eaglejarl
+:Score: 1
+:DateUnix: 1446766746.0
+:DateShort: 2015-Nov-06
+:END:
+
+#+begin_quote
+  I'd appreciate your feedback on that whenever it gets released. Give it some proof-reading, keep it good and connected to reality, try to keep it low-context and coherent.
+#+end_quote
+
+This is exactly what I'm trying to do, but I'm having trouble doing it because I can't tell what you're trying to accomplish.
+
+Maybe an example will help. Let's imagine that we're back in the day and I'm trying to sell you on the idea of the Unix filesystem.
+
+--------------
+
+Right now, every media has its own proprietary way of writing data -- every tape drive has one set of calls, every HDD has another, and so on. Because they have to be so aware of the low-level details, it's hard to let programs talk to one another. Let's create a new system that standardizes the way we read and write data to any media -- HDD, tape, whatever.
+
+I say that all data should be stored as /files/, where a file is just a stream of bytes. Applications can assign meaning to the bytes -- that's not our problem. We just want to store them and let people retrieve them in standard, interoperable ways.
+
+Everything on the OS is a file -- directories are files with a particular structure, devices are represented by files, and so on. I haven't completely thought this through, so we'll probably need to do something funky with device files, but that's the basic idea.
+
+--------------
+
+Boom, I've stated a problem and proposed a solution. You can tell me why what I'm proposing is impossible / incomplete / brilliant / stupid / already exists.
+
+I've asked several times what the problem is that you're trying to solve, and I don't think you've clearly stated it anywhere -- you've provided a lot of examples of things you want to do, but you haven't stated the actual /problem/. You started off saying that "filesystems are optimized for single process use", and then you started talking about storing all data as in-memory highly fragmented JSON-like structures with diffs, and then you moved on to microservices. Those are details, you need to talk about what your actual goal is.
+
+Give me a clear problem statement and I'd enjoy talking about it with you, but I haven't seen that yet.

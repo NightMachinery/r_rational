@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: khafra
+:Score: 1
+:DateUnix: 1423147309.0
+:DateShort: 2015-Feb-05
+:END:
+
+#+begin_quote
+  And I think even a non-constructive version should not be released. Most companies would immediately switch to using codes that you can't break
+#+end_quote
+
+I think you're thinking of an efficient factorization algorithm, such as would be provided by a quantum computer that could handle a useful number of qubits. Cryptographers like Daniel J. Bernstein have been working on post-quantum cryptography for years.
+
+But factorization is not NP-hard. A polynomial time (with a reasonably low constant factor) algorithm for solving NP-hard problems would break all /possible/ crypto with keys smaller than the message, not just existing crypto.
+
+Things would break in opposite directions: The expense of painstakingly finding heuristics for optimization problems in fields like logistics, IC design, and protein folding would be gone. However, needing physically isolated equipment for electronic transactions would make large-scale cooperation much more difficult.
+
+You might end up with something like large numbers of small guilds, in a relatively high-tech society with even more income disparity than today's. Or whatever else, there's too many butterflies for me to really predict.

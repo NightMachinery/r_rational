@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Veedrac
+:Score: 3
+:DateUnix: 1512665691.0
+:DateShort: 2017-Dec-07
+:END:
+
+The two were playing under roughly similar thermal envelopes, which is effectively the important measure for potentially-commodity hardware. That a TPU does more TOPS (/not/ TFLOPS; it doesn't do float) is simply a trade in hardware design; a CPU handles inhomogeneous control flow and complex instruction, whereas a TPU is specialised for purpose. That the TPUs were more expensive is mostly a product of their low production volume.
+
+Stockfish could no more run fast on AlphaZero's hardware than AlphaZero could run fast on Stockfish's.
+
+E: Second generation TPUs can do float. I don't know how fast.

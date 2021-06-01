@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: derefr
+:Score: 3
+:DateUnix: 1519987452.0
+:DateShort: 2018-Mar-02
+:END:
+
+It's also more of a DOS-ism, with filenames always being expected to be in that 8.3 format.
+
+In Linux or macOS, you'll instead see backup files, or temporary files, with names that end in tildes, like =foo~=. These are usually created by programs like text-editors that want to autosave, but are afraid that creating a file with the real name will make magic happen (like a program noticing a change in its config file and so attempting to reload it.) You don't want to be able to break your computer by shutting it off with a text-editor open with unsaved changes to a system configuration file. So, instead, programs will name their temporary auto-saved copy of a file =foo= as =foo~=, and then, when you save, delete =foo= and rename =foo~= to =foo=---or, if you quit without saving, just delete =foo~=.
+
+These files still work as backups, too; if power gets cut off to the computer, when you start it back up, you'll find the autosaved =foo~= sitting there beside =foo=. The types of programs that make these files are usually smart enough that, if you try to edit =foo= again while =foo~= is still there, they'll notice =foo~= and offer to resume your editing session.

@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: MultipartiteMind
+:Score: 6
+:DateUnix: 1465224273.0
+:DateShort: 2016-Jun-06
+:END:
+
+If I understand correctly, they want the robot to always try to carry boxes outside as though nothing would interfere (they're relying on a human to stop it when there's rain) instead of always hiding inside, which would get more done (but nothing done outside) if no humans were involved. There's also the perspective of wanting to manually switch it from high-throughput 'outside' to lower-throughput 'inside' only when there's rain, which they're assuming the robot can't detect by itself. (I'd prefer to just give the robot rain-detection functionality, or a wireless connection to a rain detector.)
+
+I remember a similar concept before regarding self-copying: if the robot knows about the killswitch, then it may use shady methods to stop it from being used. If it doesn't know about the killswitch, then it won't reproduce the killswitch went making new agents. One approach there is to allow self-modification of pretty much everything except for an unknowable 'black box' which contains both the killswitch and a critical component, and has to be copied exactly without comprehension. The failure path there is for the robot to (through trial and error, or reverse-engineering) design something knowable that can replace the black box's critical component, then use it to replace the entire black box for efficiency.
+
+Thinking about the imagined scenario in this case gives me an amusing mental image of a factory worker, about to leave on Friday night, captured and chained to a wall because the robots have realised they would be left turned off during the weekend otherwise (and so only dismally satisfy their utility function! Oh no! /laughs/).
+
+More generally, there's the perspective of 'Don't give agents such simplistic utility functions!', like a certain book's AI that sent a payload of ore flying through the air because it would be faster than by railway, but maybe it's appropriate if it's an agent designed to function in only a very specific niche.

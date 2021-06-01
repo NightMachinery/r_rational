@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 6
+:DateUnix: 1445060301.0
+:DateShort: 2015-Oct-17
+:END:
+
+#+begin_quote
+  less code doing the same thing is an objective improvement.
+#+end_quote
+
+To make things worse, this isn't always true either! You'd want to think about how easy it is to understand and change later, adjust for the probability that this will be required, and so on. I often prefer a longer, more explicit program that is clearly correct to a short and optimized one I don't understand without significant work.
+
+Then there's the problem of execution /outcomes/ (what objective the code achieves when [compiled and] run), execution /properties/ (time, RAM, etc), and all the other messy non-execution stuff is not fungible! So you have to understand that "what the code does" is not only the movement of bytes in silicon, but also it's influence on human systems.

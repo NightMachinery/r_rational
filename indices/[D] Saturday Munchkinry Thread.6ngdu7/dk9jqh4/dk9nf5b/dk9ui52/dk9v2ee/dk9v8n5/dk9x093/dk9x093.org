@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: ArgentStonecutter
+:Score: 1
+:DateUnix: 1500167304.0
+:DateShort: 2017-Jul-16
+:END:
+
+sensor(integer detected) { while(detected--) if(llDetectedAge(detected) >= 21) llTeleportAgentHome(llDetectedKey(detected)); }
+
+Edit: that should actually be some calculation using llRequestAgentData(llDetectedKey(detected), DATA_BORN) and handled in the dataserver() event... but you get the idea. You can script adult-free zones.

@@ -1,0 +1,28 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 1
+:DateUnix: 1434642244.0
+:DateShort: 2015-Jun-18
+:END:
+
+#+begin_quote
+  It'd be awkward if someone had a higher liked ratio but lost because more people has read/voted on the other one.
+#+end_quote
+
+Other way around. Winner is determined by "best" ranking (the default for reddit), which is partially determined by ratio. "Top" ranking is just raw upvotes minus downvotes.
+
+So in the case that "top" and "best" show a different post at the top (they currently don't), the winner will be the one with the higher liked ratio (after confidence is taken into account).
+
+Edit: Because I'm afraid this isn't clear, let's say there are three posts:
+
+- Post A has 1,000 upvotes, 900 downvotes, for 100 total.
+- Post B has 100 upvotes, 1 downvote, for 99 total.
+- Post C has 1 upvote, 0 downvotes, for 1 total.
+
+*Top ranking:* A, B, C
+
+*Best (confidence) ranking:* B, C, A
+
+*Average (upvotes/downvotes) ranking:* C, B, A
+
+Reddit doesn't have strict average ranking implemented, because as you can see, it sort of sucks.

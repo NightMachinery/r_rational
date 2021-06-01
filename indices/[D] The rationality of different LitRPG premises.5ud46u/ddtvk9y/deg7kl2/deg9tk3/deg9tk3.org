@@ -1,0 +1,36 @@
+:PROPERTIES:
+:Author: Salaris
+:Score: 1
+:DateUnix: 1488529058.0
+:DateShort: 2017-Mar-03
+:END:
+
+#+begin_quote
+  Miyamoto got to dictate hardware features of the SNES in order to enable mechanics in SMW. SAO served pretty much the same "flagship launch title" role for the NervGear that SMW did for the SNES, so I could see the game-designer character saying "we need to be able to manipulate people's neurotransmitter levels in order to enable [game experience X]" and the hardware team just giving the software control over that, without stopping to consider that the software could e.g. jack the cortisol signal up to be equivalent to VX nerve gas exposure.
+#+end_quote
+
+Good point about old school Japanese systems having more input from people like Miyamoto. That's not something I was thinking about; there could be more of a cultural distinction there. That being said, anything that interfaces directly with the brain is going to come under a /lot/ of scrutiny. I have a hard time believing that would have gotten though to the point of SAO's launch with literally no one noticing and calling it out, especially since SAO isn't supposed to be the first item on the device (it's just the first MMO).
+
+Even if somehow it got through devs and QA, which I doubt, I still expect that users would have cracked open the hardware and figured out the potential applications fast. There are videos with people [[https://youtu.be/zfZx_jthHM4][Opening up an Occulus Rift]] and analyzing the content, for example.
+
+#+begin_quote
+  Maybe it's "a new game" in the sense that it's a reused game engine, with its rendering backend newly ported over to VR (like is being done to FFXV presently), and populated with new but not mechanically-novel content (ala Megaman 2-through-5.)
+#+end_quote
+
+Ports to other platforms still are going to have bugs, though. And even companies that have existing hardware capable of handling MMO servers often have terrible launch stability; see the [[http://www.pcmag.com/article2/0,2817,2404481,00.asp][launch of Diablo 3]], for example. Blizzard has some of the most stable servers and the best teams for "always online" games in the business, but even they have problems. Even the first few /expansions/ for WoW had serious problems at launch.
+
+#+begin_quote
+  Code review only works for code checked into version control. If the "logout lock" logic was embedded in, say, an SQL stored procedure on the production database, where its matching migration was untouched, you'd never find it in code review/QA. Or, more insidiously (yet sadly, more common), if a large part of the game was built in the form of a business rules engine, the rules loaded into it would be rendered pretty much opaque to the developers---production business-rules engines are basically "write-only."
+#+end_quote
+
+I admit that I'm a game designer, not an engineer; your degree of familiarity with this may be greater than mine. Even if /somehow/ he managed to get malicious code into the game without going through source control, though, some other programmer could probably still hotfix that stuff back out. Obviously some things are trickier to hotfix than others, but they had literally /years/ to solve that problem - and "no logout" seems like a pretty simple flag to flip.
+
+#+begin_quote
+  I agree this part seems off. The only way I can make sense of it is to imagine that nobody even knew they were making an MMO, other than the designer. There was some Manhattan Project level shit going on. Like in Cube.
+#+end_quote
+
+Hah! I'm amused by the cube comparison. But seriously, this game had a beta phase that was publicly known, even if /somehow/ they pulled that kind of deal you'd expect the developers to find out at that point.
+
+Besides that, ALO appears to have been in production at around the same time (and on the same engine), so I doubt there was any real conspiracy to keep the devs from knowing it's a MMO. =)
+
+Frankly, I think most of this is just a manifestation of the author not having experience working in the industry. Many LitRPGs have similar issues.

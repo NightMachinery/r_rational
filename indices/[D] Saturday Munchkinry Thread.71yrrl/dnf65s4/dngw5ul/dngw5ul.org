@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: zarraha
+:Score: 1
+:DateUnix: 1506308071.0
+:DateShort: 2017-Sep-25
+:END:
+
+In order for the simulation to be computable and not get caught in an endless loop, I'm assuming the simulation is run based on a future where it hasn't reported any results this day so that it doesn't have to base it's predictions off its own predictions.
+
+If the stocks are revealed to the whole world, then I don't immediately see any way to profit from it directly it as an individual, since everyone else has the same stock information as you. I'd expect stocks which are predicted to change would immediately change to those same values since the market would know ahead of time what they'll be worth tomorrow.
+
+If you had enough resources, or had society as a whole come together, you could create a bunch of dummy companies with stocks that can be used to send messages in binary. The companies or ordered, and stocks are only available to be bought/sold between select individuals, who sell one stock each day for either 1 cent or 2 cents depending on whether the digit the stock corresponds to should be a 0 or 1.
+
+Now you can send messages back in time, but they only have a (1/2)^{n} chance of being received where n is the number of days to send them back. You could precommit to doing a number of expensive trials or experiments tomorrow if you don't receive a message today, and then signal back which ones worked or didn't. There is a 50% chance you actually have to pay for them, but a 50% chance you'll know the results without having to pay, so it doubles your efficiency. You could also leave open ended message slots to signal back things about natural disasters, accidents that occur to individual people, etc.
