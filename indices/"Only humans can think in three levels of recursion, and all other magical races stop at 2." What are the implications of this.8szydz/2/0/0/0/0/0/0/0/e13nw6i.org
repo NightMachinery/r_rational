@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: Lightwavers
+:Score: 4
+:DateUnix: 1529665255.0
+:DateShort: 2018-Jun-22
+:END:
+
+I don't think you understand the difference between iteration and recursion. An iteration is a loop, a repetition, oftentimes with a variable changed each time. Recursion is taking a step back and calling a function within itself. So we take function thinking() and make it call function thinking() within itself, usually with something changed each iteration. An iteration is an important step in recursive functions, but while you need to iterate to recurse, iteration != recursion. Meanwhile, iterating function thinking() loops it continually. So you would be thinking about something, and then thinking about it again.

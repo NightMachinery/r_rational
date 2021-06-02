@@ -3,7 +3,7 @@
 * [[https://suricrasia.online/unfiction/basilisk/]["Basilisk Collection" - A Fictional Wikipedia Article About Cryptography]]
 :PROPERTIES:
 :Author: blacklemon67
-:Score: 53
+:Score: 56
 :DateUnix: 1613416109.0
 :DateShort: 2021-Feb-15
 :END:
@@ -13,7 +13,7 @@
 Also, speaking as a cryptographer: hash functions being broken is generally surprising, but not the sort of thing that shatters your view of the field. Hash functions in general are usually not based on hard computational assumptions in the way RSA depends on factoring.
 :PROPERTIES:
 :Author: JohnKeel
-:Score: 23
+:Score: 22
 :DateUnix: 1613425388.0
 :DateShort: 2021-Feb-16
 :END:
@@ -54,7 +54,7 @@ Also, speaking as a cryptographer: hash functions being broken is generally surp
 **** There are a bunch of heuristics used when creating hash functions, most of which boil down to “we're pretty sure this defeats a known method of attacking hash functions.” In today's commonly-used hashes (the ones that are practical to use), they're also accepted as probably secure because a lot of skilled cryptanalysts have failed to show weaknesses, rather than because of formal proofs.
 :PROPERTIES:
 :Author: JohnKeel
-:Score: 7
+:Score: 6
 :DateUnix: 1613570560.0
 :DateShort: 2021-Feb-17
 :END:
@@ -93,7 +93,7 @@ If someone was able to generate long partial inversions easily on a modern hash 
 **** Author here. A collection of partial hash inversions described in the story would only prove that doubled SHA-256 is broken, it wouldn't really say much about other hash functions. JohnKeel is right to say that hash functions aren't based on mathematically hard problems like RSA is, and there have been countless hash functions that have been broken from careful mathematical analysis. I won't to go into detail of why I wrote it this way; I want to preserve the "mystery box" of this situation.
 :PROPERTIES:
 :Author: blacklemon67
-:Score: 6
+:Score: 5
 :DateUnix: 1613535294.0
 :DateShort: 2021-Feb-17
 :END:

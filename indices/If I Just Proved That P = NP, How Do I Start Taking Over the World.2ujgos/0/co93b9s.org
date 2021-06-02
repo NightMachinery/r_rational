@@ -1,0 +1,7 @@
+:PROPERTIES:
+:Score: 10
+:DateUnix: 1422911353.0
+:DateShort: 2015-Feb-03
+:END:
+
+You aren't really guaranteed anything practically useful just from P=NP. Suppose you find an algorithm to (efficiently) transform any NP-Complete problem into a problem that can be solved with time complexity O(n^{3|||3}), but which cannot be optimized further. That algorithm is squarely in P, and you have just proved P=NP. But good luck actually getting anything done with that.

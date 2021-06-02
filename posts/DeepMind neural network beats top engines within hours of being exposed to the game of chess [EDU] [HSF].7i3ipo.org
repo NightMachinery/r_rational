@@ -3,7 +3,7 @@
 * DeepMind neural network beats top engines within hours of being exposed to the game of chess [EDU] [HSF]
 :PROPERTIES:
 :Author: LeifCarrotson
-:Score: 48
+:Score: 50
 :DateUnix: 1512616180.0
 :DateShort: 2017-Dec-07
 :END:
@@ -13,7 +13,7 @@
 ** It should be noted that the DeepMind AI was playing on vastly superior hardware than stock fish and at its ideal time control. Evening out the processing power available to the AIs or shortening the time control would definitely put the game in Stockfish's favour.
 :PROPERTIES:
 :Author: Flag_Red
-:Score: 20
+:Score: 21
 :DateUnix: 1512629755.0
 :DateShort: 2017-Dec-07
 :END:
@@ -23,7 +23,7 @@
 I also didn't see any indication that Stockfish was particularly underpowered; what's your source for that? Would Stockfish have been capable of properly utilising the type of hardware that powered AlphaZero? Because if not, then that's an important finding in itself, just as GPUs have replaced CPUs for cryptography.
 :PROPERTIES:
 :Author: thrawnca
-:Score: 12
+:Score: 10
 :DateUnix: 1512642127.0
 :DateShort: 2017-Dec-07
 :END:
@@ -35,7 +35,7 @@ I also didn't see any indication that Stockfish was particularly underpowered; w
 Edit: And this doesn't even go into how badly configured Stockfish was. A 1GB hash is nothing for 64 cores of processing power. You're looking at more like 25GB normally. Meanwhile, IIRC AlphaZero had 250GB of memory to use.
 :PROPERTIES:
 :Author: Flag_Red
-:Score: 5
+:Score: 7
 :DateUnix: 1512643606.0
 :DateShort: 2017-Dec-07
 :END:
@@ -55,7 +55,7 @@ Moreover, /even if everything you said were true/, this still does not validate 
 is a context-dependent statement that may or may not be true. Stockfish with 1 core playing against Stockfish with 90 cores is indeed, as you say, a "stomp", but computational power faces diminishing returns in playing strength. Stockfish with 100 cores, for instance, would draw most of its games against Stockfish with 9000 cores.
 :PROPERTIES:
 :Author: 696e6372656469626c65
-:Score: 12
+:Score: 11
 :DateUnix: 1512644827.0
 :DateShort: 2017-Dec-07
 :END:
@@ -67,7 +67,7 @@ A very simple way to even out the computational power they have is by putting th
 Neural networks are great and all (I'm an AI researcher, I build them all the time) but they only became viable recently because of the abundance of processing power available now. The fact remains that they require far more processing power than any other classification or regression algorithm used today.
 :PROPERTIES:
 :Author: Flag_Red
-:Score: 10
+:Score: 11
 :DateUnix: 1512645583.0
 :DateShort: 2017-Dec-07
 :END:
@@ -95,7 +95,7 @@ Yes, this is the /entire point/. The majority of AlphaZero's processing power is
 Or, to put it another way, do you demand that chess engines be reduced to evaluating only 1-2 positions per second when they play against humans, purely because humans are only able to evaluate at that speed? Of course not; the very notion is ridiculous--and yet that's the exact type of semantic leap you're attempting to pull here.
 :PROPERTIES:
 :Author: 696e6372656469626c65
-:Score: 2
+:Score: 1
 :DateUnix: 1512645893.0
 :DateShort: 2017-Dec-07
 :END:
@@ -107,7 +107,7 @@ I'll give you an example. Say we're comparing two other engines, Komodo and Houd
 Note, at the same time, you can't evaluate whether a human or an engine is better. This is because an engine without a computer to run on doesn't even play chess. You need to evaluate whether a human or an engine with a specified amount of hardware is better.
 :PROPERTIES:
 :Author: Flag_Red
-:Score: 7
+:Score: 8
 :DateUnix: 1512648577.0
 :DateShort: 2017-Dec-07
 :END:
@@ -136,7 +136,7 @@ Personally I'd say we should compare the two operating under the /most favorable
 ********* What are you guys talking about? I don't understand any of this
 :PROPERTIES:
 :Author: ImNotGaySoStopAsking
-:Score: 3
+:Score: 2
 :DateUnix: 1512651393.0
 :DateShort: 2017-Dec-07
 :END:
@@ -268,7 +268,7 @@ I am not sure how hash tables come into this, but I believe making it larger wou
 In other words, AlphaZero is intrinsically stronger in the limit of feasible computation.
 :PROPERTIES:
 :Author: Veedrac
-:Score: 6
+:Score: 5
 :DateUnix: 1512664244.0
 :DateShort: 2017-Dec-07
 :END:
@@ -282,7 +282,7 @@ In other words, AlphaZero is intrinsically stronger in the limit of feasible com
 I do wish people would be less eager to make sweeping claims like this with no evidence whatsoever to back them up.
 :PROPERTIES:
 :Author: 696e6372656469626c65
-:Score: 4
+:Score: 5
 :DateUnix: 1512643151.0
 :DateShort: 2017-Dec-07
 :END:
@@ -304,7 +304,7 @@ Looking forward to seeing how this pans out.
 I would bet money that fairly low elo human networks using the same minmax tree systems would still beat it. Given that is against the hype that experiment wouldn't happen, but eh. What you going to do.
 :PROPERTIES:
 :Author: monkyyy0
-:Score: 5
+:Score: 3
 :DateUnix: 1512625741.0
 :DateShort: 2017-Dec-07
 :END:
@@ -312,7 +312,7 @@ I would bet money that fairly low elo human networks using the same minmax tree 
 *** False. AlphaGo Lee playing at zero depth played at an extremely strong level, I forget what exactly.
 :PROPERTIES:
 :Author: EliezerYudkowsky
-:Score: 18
+:Score: 17
 :DateUnix: 1512626511.0
 :DateShort: 2017-Dec-07
 :END:
@@ -320,7 +320,7 @@ I would bet money that fairly low elo human networks using the same minmax tree 
 **** If your talking about the expert move prediction that's not quite my criticism; knowing the top 5 best moves is not the same as picking the best of them because of something that can happen 5 moves from now.
 :PROPERTIES:
 :Author: monkyyy0
-:Score: 4
+:Score: 5
 :DateUnix: 1512628845.0
 :DateShort: 2017-Dec-07
 :END:
@@ -328,7 +328,7 @@ I would bet money that fairly low elo human networks using the same minmax tree 
 ***** If you iterate enough times, the distinction between the two becomes quite narrow.
 :PROPERTIES:
 :Author: thrawnca
-:Score: 7
+:Score: 8
 :DateUnix: 1512642231.0
 :DateShort: 2017-Dec-07
 :END:

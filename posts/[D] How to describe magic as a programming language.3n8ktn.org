@@ -3,7 +3,7 @@
 * [D] How to describe magic as a programming language?
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 31
+:Score: 28
 :DateUnix: 1443800620.0
 :DateShort: 2015-Oct-02
 :END:
@@ -24,7 +24,7 @@ Edit: If you want to see a first draft of one of the three, [[https://www.reddit
 
 ** [deleted]
 :PROPERTIES:
-:Score: 16
+:Score: 15
 :DateUnix: 1443832695.0
 :DateShort: 2015-Oct-03
 :END:
@@ -58,7 +58,7 @@ Mistborn's magic is more suited to Fair Play Insight puzzles, because we know th
 One of the fictional setups I'm considering has magical races where each magical species can produce a small set of effects operating according to strict explicit rules. In this setup, there are no half-breeds. There are no ways to produce new magical species. There's a finite list of magical effects, and a human reader can know all of the rules governing them. We can call this "Mistbornlike magic." It doesn't require that magic be mechanical or mundane in its effects - some of the magic can revolve around thought and emotion. What it requires is that the library of magical effects be short enough for humans to read.
 :PROPERTIES:
 :Author: EliezerYudkowsky
-:Score: 24
+:Score: 25
 :DateUnix: 1443827470.0
 :DateShort: 2015-Oct-03
 :END:
@@ -68,7 +68,7 @@ One of the fictional setups I'm considering has magical races where each magical
 Ideally this would be handled something like the /1632/ universe, where Flint set up the rules and then opened it to other authors so that the history would feel real. He keeps control over the broad strokes of things (e.g. there's a master list of uptimers and you're not allowed to make up more), but individual authors can go off in their own direction.
 :PROPERTIES:
 :Author: eaglejarl
-:Score: 9
+:Score: 10
 :DateUnix: 1443830349.0
 :DateShort: 2015-Oct-03
 :END:
@@ -89,7 +89,7 @@ Then when someone thinks, "Oh, logically they would be able to do =x=!", either 
 (Of the three stories I have in draft mode right now, /Robot, Vampire, Wizard/ uses 2,4,6, /The Four Methods/ uses 2,3,5,6, and /The Gift and the Burden/ uses 3,4,7.)
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 18
+:Score: 17
 :DateUnix: 1443830424.0
 :DateShort: 2015-Oct-03
 :END:
@@ -106,7 +106,7 @@ I suspect the only reason we're not more impressed with the kind of stuff pre-sc
 Assuming magic is old, of course.
 :PROPERTIES:
 :Author: MugaSofer
-:Score: 8
+:Score: 6
 :DateUnix: 1443923617.0
 :DateShort: 2015-Oct-04
 :END:
@@ -122,7 +122,7 @@ Assuming magic is old, of course.
 etc.
 :PROPERTIES:
 :Author: Salaris
-:Score: 6
+:Score: 4
 :DateUnix: 1443837036.0
 :DateShort: 2015-Oct-03
 :END:
@@ -139,7 +139,7 @@ etc.
 *** Well, the /other/ part of the problem is figuring out which features to include in a hypothetical programming magic system, which I think depends on what sort of story you want. Conditionals? Probably yes. Math operations? Also probably yes. Loops? Maybe, but seems broken if you can do =while(true){ThrowFireball()}= so would need some limits. User defined data types? Interfaces? Global variables?
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 7
+:Score: 9
 :DateUnix: 1443803322.0
 :DateShort: 2015-Oct-02
 :END:
@@ -147,7 +147,7 @@ etc.
 **** Wiz Zumwalt demonstrates the problems with having a while(true){...} in a spell in [[http://wayback.archive.org/web/20100102041439/http://baen.com/library/0671878468/0671878468.htm][Chapter 9]].
 :PROPERTIES:
 :Author: ArgentStonecutter
-:Score: 8
+:Score: 7
 :DateUnix: 1443811216.0
 :DateShort: 2015-Oct-02
 :END:
@@ -161,7 +161,7 @@ etc.
 As long as ThrowFireball() takes some kind of mana from the "programmer," there's no problem with this: the person dies.
 :PROPERTIES:
 :Author: gbear605
-:Score: 7
+:Score: 9
 :DateUnix: 1443824086.0
 :DateShort: 2015-Oct-03
 :END:
@@ -171,7 +171,7 @@ As long as ThrowFireball() takes some kind of mana from the "programmer," there'
 But you can also add in things like "there's an =x= per minute chance for an IllegalThreadStateException to be thrown, causing a fatal caster error", or something like that.
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 6
+:Score: 5
 :DateUnix: 1443829356.0
 :DateShort: 2015-Oct-03
 :END:
@@ -205,7 +205,7 @@ But you can also add in things like "there's an =x= per minute chance for an Ill
 **** If you found a way to quantify physical pain, it would be /exceedingly/ easy to make a "return all damage upon the attacker tenfold" spell.
 :PROPERTIES:
 :Author: rineSample
-:Score: 8
+:Score: 6
 :DateUnix: 1443810710.0
 :DateShort: 2015-Oct-02
 :END:
@@ -228,7 +228,7 @@ If spirits become bored easily, that would be a good excuse for memory and run-t
 **** There's a very great chance that any explicit magic system will be turing complete (see [[http://www.gwern.net/Turing-complete][www.gwern.net/Turing-complete]] for examples of unintended turing-completedness), so even if there's no 'explicit' loop mechanism you can implement your own.
 :PROPERTIES:
 :Author: Anderkent
-:Score: 5
+:Score: 6
 :DateUnix: 1443891816.0
 :DateShort: 2015-Oct-03
 :END:
@@ -259,7 +259,7 @@ Global variables don't work because FTL. What you want is more signal-based, may
 badguy locate self locate vector-difference normalize half-power fireball activate
 :PROPERTIES:
 :Author: ArgentStonecutter
-:Score: 7
+:Score: 9
 :DateUnix: 1443807091.0
 :DateShort: 2015-Oct-02
 :END:
@@ -308,7 +308,7 @@ For two completely unrelated reasons.
 [[http://qntm.org/ra][Ra]] has something similar to this.
 :PROPERTIES:
 :Author: KarlitoHomes
-:Score: 6
+:Score: 5
 :DateUnix: 1443818240.0
 :DateShort: 2015-Oct-03
 :END:
@@ -324,7 +324,7 @@ For two completely unrelated reasons.
 ****** [[http://qntm.org/spells][See this appendix]]. I think a lot of it can be decoded, but there are surprisingly few examples within the text.
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 6
+:Score: 7
 :DateUnix: 1443820305.0
 :DateShort: 2015-Oct-03
 :END:
@@ -355,7 +355,7 @@ The weird not-quite-list-oriented not-quite JavaScript syntax and semantics, and
 ** I think you should show them actually writing a spell. They might write out something like "ThrowFireball(new Point(User.Position+5280), DirectionEnum.TrueNorth)", then assemble it to "Abracadabra-mancychwynhafalsefyllfa defnyddiwracunfilltiriuncyfeiriad!", and then take that and make a name for it if they want to cast it multiple times.
 :PROPERTIES:
 :Author: DCarrier
-:Score: 9
+:Score: 7
 :DateUnix: 1443808944.0
 :DateShort: 2015-Oct-02
 :END:
@@ -363,7 +363,7 @@ The weird not-quite-list-oriented not-quite JavaScript syntax and semantics, and
 *** That's a good idea. From a narrative-building perspective, I could do an [[http://tvtropes.org/pmwiki/pmwiki.php/Main/ActionPrologue][Action Prologue]] with someone having to hastily construct a spell for some specific purpose which coincidentally gives the bare bones of exposition on how the magic works. (Though I've seen better authors than I am have trouble doing this right, so maybe not.)
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 6
+:Score: 7
 :DateUnix: 1443809502.0
 :DateShort: 2015-Oct-02
 :END:
@@ -374,7 +374,7 @@ The weird not-quite-list-oriented not-quite JavaScript syntax and semantics, and
 This is a pretty good read on how a programmer could munchkin the hell out of a magic system. The whole series is worth reading. Each book builds well on the previous ones, the fantasy world has a credible economy and politics, and fucking up the magical economy has real consequences... and not just on the humans.
 :PROPERTIES:
 :Author: ArgentStonecutter
-:Score: 8
+:Score: 6
 :DateUnix: 1443805867.0
 :DateShort: 2015-Oct-02
 :END:
@@ -424,7 +424,7 @@ Go a level lower than that. There's got to be some kind of magical language some
 What's the lowest level? What's the /physical/ mechanism for magic, the equivalent of the science that makes computers run?
 :PROPERTIES:
 :Author: LiteralHeadCannon
-:Score: 8
+:Score: 7
 :DateUnix: 1443801444.0
 :DateShort: 2015-Oct-02
 :END:
@@ -436,7 +436,7 @@ I tend to find lowest levels even /less/ fun in magic systems, both because ther
 But at the very lowest levels, it's about as irrelevant to spellcasting as atomic physics is to warfare, until someone invents a nuke. And then your story is about nukes, which is fine if you want a story about nukes, but not great if you want it to be about anything else.
 :PROPERTIES:
 :Author: alexanderwales
-:Score: 4
+:Score: 3
 :DateUnix: 1443803350.0
 :DateShort: 2015-Oct-02
 :END:
@@ -444,7 +444,7 @@ But at the very lowest levels, it's about as irrelevant to spellcasting as atomi
 **** I don't bring up the lower levels because I think they're inherently interesting. I bring them up because I think they inherently create a higher understanding of what's actually happening on the higher levels. If you forget that the lower levels exist, then your mental image of what's going on is pretty much never correct.
 :PROPERTIES:
 :Author: LiteralHeadCannon
-:Score: 4
+:Score: 3
 :DateUnix: 1443803629.0
 :DateShort: 2015-Oct-02
 :END:
@@ -475,7 +475,7 @@ And then just continue the story as normal, perhaps with the protagonists giving
 Oh, also, if I was a wizard I'd make the programming language at least somewhat like English. Even if I had to write a new compiler for it. It's just common sense.
 :PROPERTIES:
 :Author: MugaSofer
-:Score: 5
+:Score: 4
 :DateUnix: 1443815188.0
 :DateShort: 2015-Oct-02
 :END:
@@ -641,7 +641,7 @@ Watching him experiment with his "stack modus captchalogue" allows the reader to
 ** see, "The Irregular at Magic High".
 :PROPERTIES:
 :Author: thedarkone47
-:Score: 3
+:Score: 4
 :DateUnix: 1443809813.0
 :DateShort: 2015-Oct-02
 :END:

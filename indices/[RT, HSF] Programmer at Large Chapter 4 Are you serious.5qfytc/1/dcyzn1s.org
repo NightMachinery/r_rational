@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 4
+:DateUnix: 1485509500.0
+:DateShort: 2017-Jan-27
+:END:
+
+[[https://github.com/akashic-os/akashic-core]] for what amount to my doodles for an "os" with some interesting properties. Our discussion on how logging works inspired me to work a bit more on it.
+
+Written in python.
+
+It uses a json-store called rethinkdb, which has one really interesting property, that you can subscribe to a query, and get an object when it changes, or any document in it changes. That makes a lot of things a lot easier, like remote-procedure calls, log monitoring, etc.
+
+There's a lot of work that needs to be done before it's usable for anything. Right now the only thing that really works is "rq", an editor that converts the data into a more pleasant format (yaml). Right now it only support vim for the actual editor component.
+
+I've been working on helper classes. Like akashic.db.ExitHandler which is a class that will add a heartbeat to every object you put in it, and delete any object you put it it from the database on clean-ish (not -9) exit.
+
+My next big project is a tagged file system layer using fuse, and patching pythons logging to support arbitrary data so it can use more complicated errors.
+
+After that is an RPC system, which I can use as part of an init system, which I can use to run things like dead-object cleanup daemons. Probably extending python-hug.
+
+After that is daemons, like something that generates thumbnails for any file that matches a certain query.

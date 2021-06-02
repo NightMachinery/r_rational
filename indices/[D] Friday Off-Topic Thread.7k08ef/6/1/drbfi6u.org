@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: PeridexisErrant
+:Score: 3
+:DateUnix: 1513388352.0
+:DateShort: 2017-Dec-16
+:END:
+
+#+begin_quote
+  Note: I started less than a week ago.
+#+end_quote
+
+Excellent, you can start with good habits!
+
+For an opinionated guide that explains good defaults for every decision you might need to make, check out [[http://docs.python-guide.org/en/latest/][/The Hitchhiker's Guide to Python/]].
+
+#+begin_quote
+  If there was some way to make Python statically typed, but change nothing else, that would be nice.
+#+end_quote
+
+If you're after a 'compiler has my back' feeling in Python, check out the [[http://flake8.pycqa.org/en/latest/][Flake8]] linter and use [[https://mypy.readthedocs.io/en/latest/][Mypy]] to check your type annotations - with Python 3.6 for the nicest annotation syntax and =typing= module.

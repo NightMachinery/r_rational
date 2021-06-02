@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: derefr
+:Score: 7
+:DateUnix: 1509655509.0
+:DateShort: 2017-Nov-03
+:END:
+
+Those factors combined sound like the solution lies not in picking a simpler system (though that could /sidestep/ the problems), but rather in moving (at least for battles) from a pen-and-paper system to a computerized simulation. I.e., build a (simple, probably non-graphical) game engine to do the game's math for you.
+
+This would then let you test rules-balance by 1. coming up with various scenarios that "should" be balanced, 2. programming them into the engine, 3. playing them out numerous times, and 4. calculating win ratios; and then adjusting the rules until the win-ratios for things that "should" be balanced are actually balanced.
+
+(Of course, this is a lot easier if you also throw in an AI player that can automate step 3, but that's a much larger can of worms than just a turn-based knockback-and-wounds tracker.)

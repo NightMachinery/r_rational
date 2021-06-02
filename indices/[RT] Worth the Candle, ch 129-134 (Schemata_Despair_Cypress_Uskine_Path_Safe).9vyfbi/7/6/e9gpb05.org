@@ -1,0 +1,47 @@
+:PROPERTIES:
+:Author: ZaneDubya
+:Score: 9
+:DateUnix: 1541909406.0
+:DateShort: 2018-Nov-11
+:END:
+
+Caveat: I have never worked on ciphers before and am fumbling in the dark. If I have made any incorrect assumptions, please correct me!
+
+If this is a rotating cipher, we would expect to see some patterns in the difference between the letters. I've calculated the difference between the encoded character value (where 'A' is 0 and 'Z' is 26 for both the encoded and decoded text, ignoring the fact that there are only 25 letters seen in the encoded text), the delta between subsequent differences, and the delta of the delta between subsequence differences. I see no patterns there, but maybe your eyes will see something I missed:
+
+#+begin_example
+  dutIfmsnesFaicpp -> theDungeonMaster:
+  Encoded:     3   20   19    8    5   12   18   13    4   18    5    0    8    2   15   15
+  Decoded:    19    7    4    3   20   13    6    4   14   13   12    0   18   19    4   17
+  Diff:       16   13   11   21   15    1   14   17   10   21    7    0   10   17   15    2
+  DiffDelta:       23   24   10   20   12   13    3   19   11   12   19   10    7   24   13
+  D3:                    1   12   10   18    1   16   16   18    1    7   17   23   17   15
+
+  neueikkfripp -> illadvisedly:
+  Encoded:    13    4   20    4    8   10   10    5   17    8   15   15
+  Decoded:     8   11   11    0    3   21    8   18    4    3   11   24
+  Diff:       21    7   17   22   21   11   24   13   13   21   22    9
+  DiffDelta:       12   10    5   25   16   13   15    0    8    1   13
+  D3:                   24   21   20   17   23    2   11    8   19   12
+
+  YitipporukVowe -> youneedhimhesa:
+  Encoded:    24    8   19    8   15   15   14   17   20   10   21   14   22    4
+  Decoded:    24   14   20   13    4    4    3    7    8   12    7    4   18    0
+  Diff:        0    6    1    5   15   15   15   16   14    2   12   16   22   22
+  DiffDelta:        6   21    4   10    0    0    1   24   14   10    4    6    0
+  D3:                   15    9    6   16    0    1   23   16   22   20    2   20
+
+  Ynrr -> your:
+  Encoded:    24   13   17   17
+  Decoded:    24   14   20   17
+  Diff:        0    1    3    0
+  DiffDelta:        1    2   23
+  D3:                    1   21
+
+  Yit -> you:
+  Encoded:    24    8   19
+  Decoded:    24   14   20
+  Diff:        0    6    1
+  DiffDelta:        6   21
+  D3:                   15
+#+end_example

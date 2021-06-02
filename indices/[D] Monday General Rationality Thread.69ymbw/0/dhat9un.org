@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: lsparrish
+:Score: 17
+:DateUnix: 1494276003.0
+:DateShort: 2017-May-09
+:END:
+
+Just a quick plug for my favorite space elevator concept. An [[https://en.wikipedia.org/wiki/Orbital_ring][Orbital Ring]] is a type of space elevator that we could build today, needing only the strength of (non-tapered) Kevlar to work, although stronger materials are better. This would be unthinkable for the geosynchronous tether idea that everyone is familiar with, which is over 10 times as long.
+
+It generally isn't a single tether, but generally at least two tethers on each side of the world (or one plus a dummy weight) and works better if there are more tethers. If there are just two, the mass of the ring goes around in a shape that looks like a football (but still very nearly circular). It remains in free fall most of the way, and accelerates slightly towards the earth when it reaches the deflection point, which is what keeps the tether up.
+
+So the ring itself would possibly just be discontinuous mass -- bolts of short lengths of wire, buckshot, or perhaps longer lengths of something like braided aluminum -- not necessarily a cable, as the diagram at wikipedia depicts. It is just ballast, so it isn't really a structure in the classical sense (although you can consider it part of the "dynamic structure" that holds up the tethers).
+
+Birch's papers: [[http://www.orionsarm.com/fm_store/OrbitalRings-I.pdf][#1]], [[http://www.orionsarm.com/fm_store/OrbitalRings-II.pdf][#2]], [[http://www.orionsarm.com/fm_store/OrbitalRings-III.pdf][#3]]
+
+It is an example of [[/Space_Transport_and_Engineering_Methods/Structural_Methods#7._Super-Orbital_Mass_Stream][Super-Orbital Mass Stream]], which the [[http://launchloop.com/][Launch Loop]] is another example. Launch Loop can be considered a partial orbital ring system, or what Birch would call a PORS. A high acceleration PORS or Launch Loop could potentially be used to get enough materials to orbit to create whatever the minimum viable ORS happens to be. Other possible approaches would be light gas guns and mass drivers. Once you have a full ORS, you can use it to get people to orbit via tether.
+
+Wikipedia quotes a nominal cost of 31 trillion, but this is based on a pretty clear misreading of the paper (i.e. it would be a non-bootstrapped cost which the author was trying to show to be impractical in order to demonstrate better methods). According to paper #2, a likely starter ring would be 180,000 tons, 1/1000th of the one quoted at 31 trillion, so it would be 31 billion in consistent numbers. He doesn't go into why this would be the most minimal, but assuming it is, the cost would more likely be around 400 billion dollars to launch at today's rates, because his assumption was heavy lift (which is cheaper). Using a Launch Loop or other cheaper method to get the materials up there would cut this down substantially.
+
+It could also be possible to use an even smaller starter ring, if the self doubling rate can be preserved (around 8 hours, enough to go to 1000x the original mass in 80 hours if you make use of it right away). Smaller rings possibly wouldn't support as heavy of tethers, and might need payloads delivered to the upper atmosphere. Without a tether to the ground, some other method of adding velocity to the ring is needed, such as interaction with the magnetosphere, ion drives, or interaction with the atmosphere. For reference, it's 40 million meters around the earth at that height, so it would be 40 tons if you keep the mass to 1 gram per meter (which would give you about a kilogram payload assuming consistent numbers to the 180,000 ton example).
+
+Note that, as with Launch Loop, payloads actually reach orbit by "riding" the mass stream, gaining momentum by interacting magnetically with it. It's fairly similar in concept to a maglev train.

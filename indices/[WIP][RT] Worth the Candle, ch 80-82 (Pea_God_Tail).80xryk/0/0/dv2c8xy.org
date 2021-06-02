@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: derefr
+:Score: 9
+:DateUnix: 1519986470.0
+:DateShort: 2018-Mar-02
+:END:
+
+#+begin_quote
+  word count isn't terribly hard to inflate
+#+end_quote
+
+Have you considered calculating the Shannon entropy of your writing?
+
+I've recommended this approach for calculating programming productivity metrics before, but never thought to apply it to prose until now. But I think it might work!
+
+A proper measure of Shannon entropy for prose would involve, I think, converting your words into word-pairs, and then generating a big table of word-pair frequencies in the English language and using it as a Huffman prefix table. Not the most approachable metric.
+
+But a pretty easy heuristic to /estimate/ Shannon entropy, is just dump your text into a raw plaintext file, compress that file with any random compression algorithm (say, gzip), and then take the size in bytes of the compressed file as your entropy. Since the theoretic "perfect" compression finds the Minimum Message Length of a plaintext---and current generic compression algorithms are about 95% of the way to "perfect" for text---these algorithms serve as a viable estimate of text's informational entropy.
+
+For the most conservative estimate of productivity, make sure to compress all your earlier chapters together with the newest one, and then measure the marginal difference in compressed byte-size with and without the newest chapter added. That way, you can't cheat by being redundant /between/ chapters, either. Flashbacks would compress to nothing!
+
+I'd be excited to know whether this works for you, if you're willing to give "marginal compressed bytes per day" a try as a metric.

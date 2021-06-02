@@ -1,0 +1,19 @@
+:PROPERTIES:
+:Score: 13
+:DateUnix: 1463456727.0
+:DateShort: 2016-May-17
+:END:
+
+#+begin_quote
+  I've always had a nagging suspicion that for mathematical statements it is incoherent to talk about the probability of them being true, because either it is logically impossible for them to be true or it is logically impossible for them to be false. Is that related?
+#+end_quote
+
+Oh boy, here we go to actually a related but quite different topic. This is some of the stuff that MIRI studies full-time, so I hereby summon [[/u/Transfuturist]], who might have spare time and be willing to explain stuff, and [[/u/EliezerYudkowsky]], who actually wrote those papers and thus probably possesses the best understanding of what's going on here.
+
+"Logical uncertainty" is indeed the attempt to extend normal Bayesian reasoning to purely mathematical statements, and do so coherently. It's related to, but different from, "probabilistic logic". As I understand the papers:
+
+- "Probabilistic logic" is about proof systems which reason about the probability that a certain statement is /true/, defined as a probability measure over models (as in model-theory, Eliezer's subject) of the original axiomatic system. In such a logic, a statement like, "Pr(A) = 0.3" says, very roughly, "30% of the models of my underlying axiom system satisfy the statement A". It can also be a way of reasoning about systems which replace impossible (read: computationally non-finite) reasoning problems (like Loebian reasoning) with some amount of randomness (thus closing infinite loops)... kinda.
+
+- "Logical uncertainty" is about how to use probability to reason well in the absence of the computational power necessary to definitively solve a problem. The standard question to consider is, "What's the trillionth-and-first digit of the geometric constant pi?" Since we can write down very small formulas expressing the full, infinite sequence of digits of pi, the trillionth-and-first is obviously a completely fixed, well-defined thing. In fact, we have some information about what sort of thing: it belongs to the set or type of base-10 digits (or whatever base we use). However, we don't have a /proof/ that all digits occur equally often in pi, so we can't say we've /proven/ Pr(trillionth-and-first-digit of pi = 3) = 0.1. Instead, we try to extend our normal probabilistic-empirical reasoning to the mathematical realm, and formalize a sense in which we can say, "Even without proof, we've /observed/ all the digits with /seemingly roughly/ equal frequency in pi, and 10% per digit is the prior distribution involving the /least/ prior knowledge and the /greatest/ prior uncertainty, so that should be our distribution /until/ we obtain a full computational trace of a pi-digits program run to its trillionth-and-first iteration."
+
+By now we've gone well away from my own field of clear and consistent study, so I'm a lot less clear on what I'm saying.

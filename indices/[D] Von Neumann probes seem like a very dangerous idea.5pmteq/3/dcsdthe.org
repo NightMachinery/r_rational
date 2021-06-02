@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: callmebrotherg
+:Score: 7
+:DateUnix: 1485155669.0
+:DateShort: 2017-Jan-23
+:END:
+
+worst case, you send in a pair of Quality Assurance bots with every probe; the QA are tasked with analyzing each bot (both new and old) and destroying anything that falls outside of acceptable parameters. It is possible that the probe could go haywire, and even possible that one of the QA bots could fall outside of acceptable parameters, but incredibly unlikely* that both QA bots would do so at the same time.
+
+*I'm sure that somebody could do the math, if not now then once we actually have the programming written up. If the odds aren't low enough, then just add more QA bots.

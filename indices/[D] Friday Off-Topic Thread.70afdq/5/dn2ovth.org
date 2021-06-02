@@ -1,0 +1,46 @@
+:PROPERTIES:
+:Author: Dwood15
+:Score: 7
+:DateUnix: 1505538615.0
+:DateShort: 2017-Sep-16
+:END:
+
+Man, I'm always late to these things.
+
+Anyway, about a year ago, I discovered there was a homebrew community for the NES, SNES, Playstation 1, Dreamcast, etc.
+
+Remarkably, there is very little information on Nintendo 64 Homebrew.
+
+Being a complete nerd, and wanting to rectify that, I went and created a new subreddit, called [[/r/N64Homebrew]], in the same vein as [[/r/consolehomebrew]], and began scouring about the internet for development information on the N64.
+
+Surely /someone/ has a C library which builds N64 Roms?
+
+Turns out?
+
+/No recently updated tools build to be able to initialize 3D on the N64./ This means that libdragon can do sprite, audio, controller interface, activate the rumble pak, and so much other stuff. But nope, no 3D.
+
+So, what did I do?
+
+Kept scouring.
+
+The original n64 sdk is still around! It comes with 16-bit compiled GCC built for MS-DOS. Now I was cooking! I had working tools, but I was having problems getting them to install properly... After some major googling, I found the right user referenced on multiple n64 fan sites, contacted them, and they gave me the last keys I needed to get the system running.
+
+See [[https://www.reddit.com/r/N64Homebrew/comments/4d5het/it_works_how_to_build_your_own_rom_using_the/][this sticky]] on installing and getting set up with your own working build.
+
+Now, we're good to go. But I'm still tied to versions of Windows less than Vista!
+
+Nintendo was using GCC, but the SDK /doesn't actually include GCC's full source code/, like the GNU license required. I contacted the original company which produced the toolchain, but they were silent. I checked the version of GCC - "ca 1997, is V. 2.7.2, release 1.2"
+
+That version of GCC was (iirc) one of the last versions ever built to run on a Windows Machine directly. How hard could it be to get it to build?
+
+I made a post here:
+
+[[https://www.reddit.com/r/gcc/comments/57vqbc/looking_for_some_help_working_with_legacy_gcc/]]
+
+And got some help.
+
+Only problem is that the person who helped me get it to compile (and they did get it to work on Windows 10 64 bit...) deleted all of their comments and deleted their account.
+
+So here I am, with a working copy of GCC from 1997 running on my Win 10 machine, and the person who helped me get it to work, is gone, and all their comments deleted.
+
+I'm honestly not sure if trying to recreate the person's effort is worth it at this point.

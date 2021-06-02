@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: fish312
+:Score: 5
+:DateUnix: 1622304439.0
+:DateShort: 2021-May-29
+:END:
+
+I think I found a loophole that makes the 1-2 bits per few seconds a lot more useful than the other two minutes/hours options.
+
+Lets suppose 1 bit takes /n/ seconds, and 128 bits takes /n/ hours. So the hours long ritual will grant 128x more bits of information, but takes 3600x more time as compared to the quick hand gestures.
+
+Consider that there are no length limitations on the /question being asked/ itself, any problem of arbitrary length complexity can be broken down into predicates and then perform a binary search.
+
+So for example, if you need to pick a 1 number out of 10000, you need 14 bits, (2^{14} = 16384), you could ask a rapid series of 1 or 2 bit questions over the course of a few seconds each, breaking up your search in a binary fashion (e.g. is number between 1 and 5000, is number between 2500 and 5000 and so on), and since the total cost will scale linearly (even with the 4x cooldown multiplier) you will rapidly outperform the hours long ritual (not to mention being far simpler and less tedious to cast) in terms of bits of information obtainable.

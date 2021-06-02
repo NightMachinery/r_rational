@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 5
+:DateUnix: 1438965230.0
+:DateShort: 2015-Aug-07
+:END:
+
+Reddit does have fuzzing in place, but it ramps up as you increase in votes. So if you see a comment with a score of 2, it probably actually is 2. You can test this by reloading a page a few times; high scores will jump all over the place (even on comments that are months old) while low scores will stay constant. Shout-out to [[/r/TheoryOfReddit]].
+
+However, there's another factor in play, which is that reddit is hosted on multiple servers, which aren't always in agreement with each other. This introduces some additional fuzziness that's not intended.
+
+(Mostly, I think people should just not sweat downvotes. The only ones I really dislike are the ones that are given to me for my own content posted in my own personal subreddit, mostly because I know that can't be anything but someone just downvoting out of spite.)

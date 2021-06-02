@@ -3,7 +3,7 @@
 * Divining values from a percentage seer and a customized RNG.
 :PROPERTIES:
 :Author: jakeb89
-:Score: 12
+:Score: 13
 :DateUnix: 1538122866.0
 :DateShort: 2018-Sep-28
 :END:
@@ -40,7 +40,7 @@ After looking at the current number, dial it. (Odds are you'll get a wrong numbe
 The killer can easily fool such a power, if he knows that this trick is being used. He merely needs to have two phones. If the number for Phone A has a 0.003% chance of turning up in your RNG, and the number for Phone B has a 0.001% chance of turning up, then the odds of a successful number turning up are 0.004% - but the single number that turns up at 0.004% probability is the wrong number. (Note that, if your machine returns every possible telephone number, then any individual one will have very low odds).
 :PROPERTIES:
 :Author: CCC_037
-:Score: 10
+:Score: 9
 :DateUnix: 1538127382.0
 :DateShort: 2018-Sep-28
 :END:
@@ -173,7 +173,7 @@ The better way to do it would have n buckets and an n-arity partition search. A 
 You'd have to experiment with the error rate, but you could probably get a very large n, and at each iteration you're sure you didn't make a mistake - if you accidentally round to the wrong bucket, when you ask the question it'd say it only has a 0.0000001% chance of being correct because none of the possible outputs contain the phone number unless you get bitflips.
 :PROPERTIES:
 :Author: sickening_sprawl
-:Score: 5
+:Score: 8
 :DateUnix: 1538167685.0
 :DateShort: 2018-Sep-29
 :END:
@@ -213,7 +213,7 @@ The trick is that you must specify ranges, rather than specifying equality. If I
 ** There is a ~0.01% chance of a power outage or distraction, so the /proper/ random number corresponding to the phone is 14.242574%, not 14.234215%.
 :PROPERTIES:
 :Author: ulyssessword
-:Score: 4
+:Score: 3
 :DateUnix: 1538152951.0
 :DateShort: 2018-Sep-28
 :END:

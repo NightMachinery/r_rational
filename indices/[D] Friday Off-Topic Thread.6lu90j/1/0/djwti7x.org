@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: InfernoVulpix
+:Score: 8
+:DateUnix: 1499449152.0
+:DateShort: 2017-Jul-07
+:END:
+
+An alternative to time skips would be changing the way time scales. It's assumed we do this already for time of day: the world plays out in real time, but we don't want each day to take 24 hours of real time to play through. So we have one real second correspond to one in-game minute so that a day will take 24 minutes instead of 24 hours.
+
+This introduces some handwaving, because a battle that takes a minute to resolve takes up an hour of the day, or from another perspective a plant will grow a full hour's worth of growth every minute, but it's comparatively smooth and has worked out well in many games.
+
+We can do the same thing for days and years, though. A full game still takes 50 years, but years are made up of fewer days. At real scale, 50 years takes (24 min/day)(365 days/year)(50 years) = 438,000 minutes, or 7,300 hours of play per game, which is /far/ too long. If you shift things so that each year only takes 30 days, then a full 50 years takes (24 min/day)(30 days/year)(50 years) = 36,000 minutes, or 600 hours. That's still far too much, so we'd have to break out massive time compression and conflate a year with a week.
+
+When one week corresponds to one year, a full game takes (24 min/day)(7 days/year)(50 years) = 8400 minutes, or 140 hours. That's still a /lot/ of time for a single game, even if you'll skip past a third of it from sleep, but it's something we can work with. We can also introduce timeskips in a more limited fashion, such as an old master taking you under his wing for a few years (we'll probably be doing this anyways, it's just a fun idea in general), and think of other mechanics that sap days or year-weeks from you at a time. There's still going to be the need to smooth things over (like your plants growing a year's worth of growth in a week, or that week-long holiday stretching a whole year), but that's par for the course.
+
+If we want to preserve seasons, though, we can expand a year to be 8 days (and also remove the concept of weeks in the process) and designate each season as taking two days. 50 years of 8 day years is 160 hours before sleep and additional timeskips, for reference (in fact, each day longer a year is extends playtime by about 20 hours). Alternatively, we could retain week-long years and decouple seasons from years. We'd have to handwave away celestial motion but we could make each season take up four weeks (and by extension, 4 years) and this would allow us to calibrate how long we want each season to 'feel' without affecting the play time.

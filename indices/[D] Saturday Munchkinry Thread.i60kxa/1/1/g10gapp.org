@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: chillanous
+:Score: 6
+:DateUnix: 1597080192.0
+:DateShort: 2020-Aug-10
+:END:
+
+To prevent abuse of force concentration, just set a max pressure that the golem's clay can tolerate. This way doesn't limit the possible manipulations, but does prevent it from becoming a de facto gun or sword edge.
+
+By doing this, you are essentially defining a hardness as well--the max force per unit area that the golem's body can withstand prior to deformation. Google says the average hardness of packed clay /in the ground , subsoil, for construction purposes/ is about 2-3N/mm^{2} (300-450 psi). This means that forming the golem's armor into a spear and stabbing, say, an armored man would see the spear crumble until its cross section is wide enough to bear the pressure on it. So if the golem swings with 10 kN (about twice as strong as a pro boxer) and hardness is 3N/mm^{2} (let's change that to 300N/cm^{2} to simplify) the spear would crumble until it had a cross section of 10000/300= 33.3 cm^{2} (about 10cm diameter). You can adjust the hardness of the clay to make the golem more or less able to concentrate force.
+
+This ignores elastic and plastic deformation of the clay, which would get into spring constants and young's modulus and probably way more than you want to do.
+
+You can get around all of this by making the golem use rock or metal for the pointy bits--it still won't be able to fire them like a gun. Or, more accurately, it can only accelerate bits of itself at a maximum of 450 psi; for a shotput, that's about 3 times as strong as an olympic athlete (note that the shotput throw is an inefficient use of muscles-- the olympic thrower puts out about 350N with a winning throw, while a pro boxer puts out about 5000 with a punch). If that's comparably strong to the rest of what the golem can do, nbd, otherwise adjust that max psi until its strength is reasonable.

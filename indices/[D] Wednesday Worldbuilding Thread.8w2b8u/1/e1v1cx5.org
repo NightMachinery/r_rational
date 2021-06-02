@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: jaspercb
+:Score: 5
+:DateUnix: 1530833982.0
+:DateShort: 2018-Jul-06
+:END:
+
+Let's build and exploit an exclusion zone!
+
+Somewhere in Generic Medieval Fantasy Land there is a sphere of diameter 1 km within which it's pretty cheap (the equivalent of $30/square foot) to make a permanent two-way portal that allows travel from one region of the sphere to another. When created, portals are immediately adjacent, and must then be moved/translated/rotated to their final destination with a bit of effort. Portals cannot move through other portals. A portal can be freely toggled on and off a few times a second, and this can be used as an infinitely sharp cutting edge.
+
+My mental model of how this goes is roughly "this is an area of vast potential economic productivity and it immediately spawns a heavily militarized walled city/manufacturing center to exploit it"
+
+Some obvious points
+
+- The exclusion zone gives you a fixed amount of volume to work wit, so you probably won't see many spectacular displays of open space represent huge wastes
+- Portals let you break gravitational potential energy in half, so "build a waterwheel that generates arbitrary cheap power" is an obvious step, possibly using superdense fluids because of volume concerns (mercury is good for this, I think?).
+- You can build deathtraps by packing a room with 1cm-spaced vertical portals that are noncontiguous - e.g. a fly who attempts to move from "the ground" to "the ceiling" will hit every intermediate point but not in ascending order. If a group of humans are in this room and the portals are deactivated, they probably do not survive their sudden non-contiguousness.
+- You can tile the outside of the sphere in portals that let you redirect/ignore/no-sell incoming attacks
+- You can do neat tricks with redirecting the force of an explosion in a single direction with an array of small portals surrounding the initial explosion.
+
+Some less obvious points
+
+- What is this city really comparatively good at, other than "cutting hard-to-cut things" and "having a short commute"?
+- What does an efficient transportation network look like? I'm imagining a densely connected array of small hexagonal rooms, each of which has six portals to other hexagonal rooms or exits. There's some balancing to be done here between increasing max-flow and minimizing travel distance, but I've come up with a bitstring-based addressing system that gives approximately exponential number-of-reachable-places as a function of distance. Can we do better? Is this obviously wrong?
+- What would being a civilian in this city look like?

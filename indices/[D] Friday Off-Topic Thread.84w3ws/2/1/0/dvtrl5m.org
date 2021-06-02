@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: CouteauBleu
+:Score: 5
+:DateUnix: 1521248720.0
+:DateShort: 2018-Mar-17
+:END:
+
+Mh... First off, what medium do your calculations span? Are they all on one computer, or are you trying to keep a state consistent between multiple networked computers? If the second... yeah, good luck.
+
+Otherwise, have you looked into CPU cache optimization? If you have tens thousands of objects that need to interact, then you start needing to either optimize your cache lines or offload work on the GPU.

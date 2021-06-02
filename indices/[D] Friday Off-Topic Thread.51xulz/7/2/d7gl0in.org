@@ -1,0 +1,92 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 6
+:DateUnix: 1473479617.0
+:DateShort: 2016-Sep-10
+:END:
+
+Easy: if you're doing graphical programming, consult the documentation for the library you're using, and if you're not, change majors.
+
+(Snark aside, I hate that anyone is even /taught/ these concepts. If you're not going to practically need them, there's absolutely no reason to waste everyone's time and effort trying to abstractly understand something that is done with the press of a button anyway.)
+
+After a brief refresher on that wikipedia page, it's something like this:
+
+You have Matrix A and Matrix B. A has the same number of columns as B has rows, else multiplication is not possible. Let's assume we're using a similar matrix set to that wikipedia link, so A is
+
+#+begin_quote
+  ([a, b, c]
+
+  [x, y, z])
+#+end_quote
+
+while B is
+
+#+begin_quote
+  ([e, u]
+
+  [f, v]
+
+  [g, w])
+#+end_quote
+
+STEP 1: Start by taking the top row of A. Rotate it clockwise:
+
+#+begin_quote
+  [a,
+
+  b,
+
+  c]
+#+end_quote
+
+STEP 2: Move it to overlap the first column of B:
+
+#+begin_quote
+  [ae,
+
+  bf,
+
+  cg]
+#+end_quote
+
+STEP 3: Multiply the numbers that overlap, and then add these products together. This sum is the first number of your product matrix:
+
+#+begin_quote
+  ([ae + bf + cg,
+#+end_quote
+
+STEP 4: Scoot the rotated A row to the right and repeat steps 2 and 3, multiplying each scalar and then summing the products. Repeat until B is out of columns (which ours is). Our product matrix now has its first row:
+
+#+begin_quote
+  ([ae + bf + cg, au + bv + cw]
+#+end_quote
+
+STEP 5: We now return to the next (and final) row of A and repeat steps 1-4 with the new row, rotating the row clockwise:
+
+#+begin_quote
+  [x,
+
+  y,
+
+  z]
+#+end_quote
+
+And lining it up with the first column of B:
+
+#+begin_quote
+  [xe,
+
+  yf,
+
+  zg]
+#+end_quote
+
+and so on. Our final matrix is thus:
+
+#+begin_quote
+  ([ae + bf + cg, au + bv + cw]
+
+  [xe + yf + zg, xu + yv + zw])
+#+end_quote
+
+TL;DR I hate the American education system.

@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: narfanator
+:Score: 20
+:DateUnix: 1511821431.0
+:DateShort: 2017-Nov-28
+:END:
+
+#+begin_quote
+  raise his loyalty level with every other entity that lacks a soul/is a null pointer
+#+end_quote
+
+Unlikely. It's not the value of the pointer that matters*, it's the values at the address to which they point. So it could matter what's at the null memory address, or near it, in the case of pointer arithmetic; this is (AFAIK) part of how common security attacks can work.
+
+- Outside of pointer arithmetic, etc.
+
+If we're presuming that this is an actual error in the game layer, and not a joke/reference, then this would imply that loyalty is NOT a property of whatever object type the pointer is for; but that where the companion title/name comes from /is/. Which is interesting. It also implies that the game layer will catch exceptions and handle them gracefully, instead of crashing. Also interesting.

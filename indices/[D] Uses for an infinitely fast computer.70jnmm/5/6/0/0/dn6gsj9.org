@@ -1,0 +1,17 @@
+:PROPERTIES:
+:Score: 4
+:DateUnix: 1505760183.0
+:DateShort: 2017-Sep-18
+:END:
+
+Ok, I want this experiment /done/ now: someone is going to go and do program learning over a grammar of explicitly corecursive programs. This will be fair, because after all, a Solomonoff Inductor only allows its Turing machines to take a finite number of steps before They will not have anything that calculates =K(x)=, but we will nonetheless /actually observe/ what sorts of "pathological" behaviors crop up in the "simplest" programs.
+
+...
+
+On second reading of the definition of Solomonoff Induction, no, this is an absolutely useless thought-experiment. Solomonoff Inductors allow their hypotheses =M_k= to do arbitrarily large amounts of computation before actually predicting anything, rather than imposing a limit on computation steps the way an ordinary dovetailing construction does?
+
+Well then that's the most useless thing for talking about AI I've ever heard of. We're running א_1 prefix-free Turing machines =M_k= for ω steps each, and then retrospectively checking their output tapes to see if those tapes have a prefix matching the data =D=? Then we add up the probability =P(D)= and divide the priors of the passing machines by that?
+
+[[https://dl.acm.org/citation.cfm?id=2610247][Why do we take this to be a suitable model of anything?]] I mean, sure, that officially puts Hutter and Schmidhuber into, "take them out behind the chemical sheds and shoot them" territory, but... it /cannot/ be how intelligence works, period. It's not logically coherent as a way to model inductive inference or agency.
+
+EDIT: For anyone wondering why I'm yelling at the guy, [[http://math.ucr.edu/home/baez/nimbios/nimbios_wolpert.pdf][it genuinely looks like Solomonoff Induction and AIXI are /really/ bad models of intelligence, when you factor in the scaling of physical resources to computational resources]].

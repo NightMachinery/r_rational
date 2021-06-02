@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: JohnKeel
+:Score: 6
+:DateUnix: 1613570560.0
+:DateShort: 2021-Feb-17
+:END:
+
+There are a bunch of heuristics used when creating hash functions, most of which boil down to “we're pretty sure this defeats a known method of attacking hash functions.” In today's commonly-used hashes (the ones that are practical to use), they're also accepted as probably secure because a lot of skilled cryptanalysts have failed to show weaknesses, rather than because of formal proofs.

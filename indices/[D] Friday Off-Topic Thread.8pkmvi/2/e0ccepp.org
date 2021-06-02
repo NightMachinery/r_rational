@@ -1,0 +1,48 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 11
+:DateUnix: 1528483490.0
+:DateShort: 2018-Jun-08
+:END:
+
++Weekly+ +Monthly+ Ocassional update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Well.  Well well well.  It's been a while since I've posted anything.  I stayed in my cave doing nothing much of note for several months, in spite of feeble attempts to get something worthy of an update post up on here, which fizzled pretty hard.  However, the moment that it started getting 70 degrees outside, I suddenly found my motivation back with a vengeance, which makes me wonder if I'm affected by seasonal affective disorder or something adjacent to it.
+
+I have to say, it's /nice/ coming home and working on stuff for hours on end again.
+
+I'm probably not going to pretend to attempt to keep a weekly update schedule, and just stick to posting interesting things as they come up.  Most of the design has at one point or another come up in these updates, and besides minor course adjustments as new people come into the Discord channel and spark new variants on old arguments, it would get a bit repetitive to keep bringing them up here.
+
+--------------
+
+In the first couple of weeks after my sanity returned I pulled out a machete and dove into the XGEF code, which had been left last in a state of minor disrepair.  
+
+(As a reminder, XGEF is the modding framework that I've built for the Renegade game itself to be built around.  The name is short for eXtensible Game Engine Framework, and is basically just a modding library. One of the core tenants of this game's design is the ability for me to walk away from the project at any time (in spite of the fact that I have managed to keep from abandoning it for nearly two years now) and have it still be in a state that can be maintained, even by those unable to take over the codebase.)
+
+But so after fixing some long-standing bugs, biting the bullet and rearranging some core organization that I shied away from last time I worked on it, and finishing up the remains of the last TODO list I had made for it, I got XGEF running again.
+
+(DON'T EVER leave a codebase in a state that doesn't compile.  You never know when you're going to take a 9 month break and have to decipher stuff that you were /sure/ was only going to take a night's hacking to fix.)
+
+With XGEF fixed up, I began to take a look at the server/client setup that it will utilize.  While I don't particularly care to figure out how to make Renegade a viable multiplayer option, I don't want to unnecessarily hinder anyone who feels the desire to mod it in.  A more relevant requirement, however, is that I want to support multiple clients, as in, different programs that Renegade could be ran in. This requires completely separating the game's logic from its presentation, which is good practice /anyway/, and just gives me an excuse to enforce it.
+
+I [[https://cdn.discordapp.com/attachments/230041937984487424/444606832837787649/unknown.png][drew up some pretty diagrams]] trying to work out how exactly I wanted the division to work and spent some time reading [[https://gafferongames.com/categories/building-a-game-network-protocol][the /excellent/ “building a game network protocol”]] and other blog posts series over on gafferongames (I can highly recommend both of the major sequences on that site; they've been invaluable for wrapping my head around the mechanics of real-time game networking).  
+
+This eventually lead me to a model where the client attempts to connect to a server at a known address and, if successful, immediately requests the current networking mod to be downloaded and reconnected with.  If no server responds, then the client spins one up and tries again. All inputs from the player are mapped to actions which the server can respond to/correct/veto as needed.
+
+Eventually I got a simple demo together that has the client moving a character around a command-line hex grid.  The server only cares from a logical perspective about which hex a given unit is occupying, but always moving diagonally or zig-zagging or whatnot in a real-time movement would be a colossal pain for the player.  Thus, the client can permit slightly freer movement using the familiar WASD, only updating the server when the player crosses hex boundaries:
+
+[[https://cdn.discordapp.com/attachments/230041937984487424/453401451465539606/command_line_grid.gif]]
+
+In the above gif, the user controls the X via WASD in the client.  The server's record of the player's position is marked with the dot, showing that logically it doesn't care about any sub-hex quality of life movement.  It also controls the wrapping--when the player attempts to move to a hex that doesn't exist, the server corrects the movement and pushes the player to the opposite end of the map.
+
+My current task is to take the existing prototype and rewrite it to use actual networking now--the gif above shows the setup with fake networking.  This will be a function of XGEF itself, so it's back into the framework to find a good way to divide the organization up.
+
+--------------
+
+I'll try and make these updates more frequent, which is to say, I'll try and have things to actually show off.  
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!

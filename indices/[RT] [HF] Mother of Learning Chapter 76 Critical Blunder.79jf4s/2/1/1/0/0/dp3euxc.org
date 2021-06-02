@@ -1,0 +1,40 @@
+:PROPERTIES:
+:Author: Xtraordinaire
+:Score: 7
+:DateUnix: 1509373429.0
+:DateShort: 2017-Oct-30
+:END:
+
+#+begin_quote
+  it's designed to be removed
+#+end_quote
+
+er... no.
+
+You are kinda forgetting that the gate recreates the whole world from the template /including creating new souls/. That's why the limitation was placed in the first place, these new souls are eventually destroyed. According to the guardian killing off one month deviation from the original is not considered morally wrong. I don't agree personally, but that's what the story says and we gotta roll with it. That's the whole reason this 6 month-limitation exists in the first place. Cheating it with something as /trivial/ as simply overwriting is uncharacteristic of the guardian.
+
+With that in mind, here's what the loop does:
+
+#+begin_example
+  take a snapshot of the world
+  take the controller's soul out of their real body
+  while the controller is inside:
+      recreate the physical world
+      populate the bodies with new souls that are not marked 'soul kill' # soul eject is a better term
+      insert controller's real soul into their body
+      iterate temporary markers
+      insert passengers' souls into their bodies
+      try:
+         run a month
+      except:
+         something goes really wrong with the controller's soul or some primordial shit shows up
+      finally:
+         pluck the controller's soul out of their in-loop body
+         if a passenger's marker has more time scheduled: 
+            pluck the passenger's soul out of their in-loop body
+         collapse current iteration # every soul not taken out is destroyed
+#+end_example
+
+This means we never remove temporary markers, we only apply them. Instead we just discard expired passengers just like we discard any regular one-monthers
+
+Besides, it's just basic security. You do not mess with your Master branch! You only apply small patches to it. Should something go /really/ wrong with the gate, worst case scenario the real controller does not return and becomes a meat puppet.

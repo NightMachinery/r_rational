@@ -1,0 +1,21 @@
+:PROPERTIES:
+:Author: rhaps0dy4
+:Score: 8
+:DateUnix: 1465253851.0
+:DateShort: 2016-Jun-07
+:END:
+
+This is what I understand so far:
+
+- They define a criteria for which a policy (roughly, the action the agent will take in each state) is "safe", that is, it does not think that killswitch will be pressed
+
+  - They prove that the optimal policy when there are no interruptions always fits this criterion
+  - That the optimal policy accounting for interruptions does not /necessarily/ fill this criterion
+
+- They design agents based on current RL algorithms (Sarsa, DeepMind's Atari player's algorithm is basically a neural network tacked on to Sarsa) and on hypothetical superintelligences (some variation of AIXI)
+
+  - They prove that these agents only consider policies that fill the criterion (am unsure, didn't read yet)
+
+So now you have a maximiser that will /not necessarily/ impede the function of the button. If, say, it needs to demolish the building the button is in to put computronium, it still will. But it will not attempt to prevent humans from pressing the button, because it assumes the button will never be pressed again.
+
+It's not enough, but it's a good step.

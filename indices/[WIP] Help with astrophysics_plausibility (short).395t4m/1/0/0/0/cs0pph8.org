@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: codahighland
+:Score: 5
+:DateUnix: 1433866864.0
+:DateShort: 2015-Jun-09
+:END:
+
+Note: This is assuming we're just pushing the thrust directly towards the Sun, which would give it a spiral decaying orbit until it smashes into us. There will be assistance from gravity, but I don't want to do the calculus on the specifics. However, we can get another useful figure to get another bound.
+
+Asteroids average around 25 km/s orbital velocity. If we reduce that velocity to zero, then gravity will drag the asteroid directly toward the sun. From there it'd only take around 56 hours to come smashing into the planet at a final velocity of around two million meters per second.
+
+Gravity assists are scary, aren't they.
+
+How much energy would it take to zero out the orbital velocity? Well, 25000 m/s * 10^{11} kg = 2.5x10^{15} newton-seconds. If we wanted to zero the orbital velocity over 10 years, that would require about 8x10^{6} newtons of force. The asteroid would travel about 8.7x10^{12} meters in that time (that is, approximately 3.5 times its original orbit circumference), which is on the order of 10^{13} joules of energy.
+
+So that means the amount of energy required is somewhere between 10^{13} and 10^{18} J.

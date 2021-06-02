@@ -1,8 +1,0 @@
-:PROPERTIES:
-:Author: throwawayIWGWPC
-:Score: 5
-:DateUnix: 1507539246.0
-:DateShort: 2017-Oct-09
-:END:
-
-I agree. I think it's more likely the determines whether to restart solely based on the controller's presence instead of terminating once the exit procedure occurs. After all, once the loop is created, it costs nothing (or a relatively trivial amount) to let it continue running.

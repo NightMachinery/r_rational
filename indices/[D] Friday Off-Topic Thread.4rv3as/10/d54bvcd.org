@@ -1,0 +1,34 @@
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 9
+:DateUnix: 1467990868.0
+:DateShort: 2016-Jul-08
+:END:
+
+[[http://i.imgur.com/retdUge.png][The Yudkowskys profess a dislike for singular =they=!!]]
+
+("But only /Mrs./ Yudkowsky actually said such a thing /outright./ Couldn't /Mr./ Yudkowsky have had reasons for giving a like to this post /other/ than disliking singular =they=--e.g., merely expressing appreciation for his spouse's /creativity,/ without having an opinion on whether or not this /particular/ product of that creativity is /worthwhile?"/ Yes, yes... [makes resigned face])
+
+--------------
+
+It's kind of interesting to note that, despite the rise of [[https://en.wikipedia.org/wiki/HTML][HTML]] (in [[https://en.wikipedia.org/wiki/EPUB][EPUB]] packaging) and the decline of [[https://en.wikipedia.org/wiki/Portable_Document_Format][PDF]] in electronic books, many tabletop role-playing games are sticking with PDF. Why should this be?
+
+Compare the following screenshots...\\
+- [[http://i.imgur.com/gJKUacH.png][First]], a page from the PDF version of the *ludicrously*-awesome (seriously--check out [[http://www.sjgames.com/gurps/books/low-tech/bibliography.html][the bibliography]]!) book /[[http://www.sjgames.com/gurps/books/low-tech][GURPS Low-Tech]]/;\\
+- [[http://i.imgur.com/FGeKwUx.png][Second]], an excerpt of the same book, manually converted to HTML (including some [[https://en.wikipedia.org/wiki/Cascading_Style_Sheets][CSS]] tweaks--read the code [[http://pastebin.com/6NsHKN9S][here]]) and displayed in [[https://en.wikipedia.org/wiki/Google_Chrome][Google Chrome]];\\
+- [[http://i.imgur.com/OOY3ieT.png][Third]], the same HTML file, displayed in Google Chrome at a different window width; and\\
+- [[http://i.imgur.com/AWsA4cs.png][Fourth]], the same HTML file, converted to EPUB in [[https://github.com/Sigil-Ebook/Sigil][Sigil]] and displayed in [[https://sourceforge.net/projects/crengine][Cool Reader]].
+
+Note that Cool Reader doesn't display the [[http://www.graphics.com/article-old/creating-boxouts-and-sidebars-css][+sidebar+ boxout]] as a boxout. Actually, Sigil recognizes that e-reading applications can't read the boxout's =float:right;= style, and just removes it in the conversion. If I try to open the HTML file directly in Cool Reader, it just crashes the program, even though Cool Reader normally is able to open HTML files! (It /does/ work properly in [[https://calibre-ebook.com][Calibre]]'s EPUB converter and viewer--but Calibre is /library-management/ software, not /reading/ software, and doesn't even have any mobile versions.) Tabletop RPGs can't abandon PDF for EPUB until mobile e-reading programs are as good as mobile Internet browsers (and mobile PDF readers) at displaying content more complex than a single column of text and images. (Obviously, distributing an RPG book as an HTML file, with any illustrations provided as individual image files in an accompanying folder, would /technically/ work--but it also would be a horribly cumbersome solution. "PDF" stands for "/Portable/ Document Format"!)
+
+(Note: I took the fourth screenshot above before realizing that my versions of Sigil and Cool Reader were outdated by more than a year. However, after I updated them and tried again, the results were exactly the same--right down to Cool Reader's crashing when I attempted to open the HTML file!)
+
+[[https://forum.rpg.net/showthread.php?756319][A relevant 2015 discussion on the RPG.net forums]]
+
+--------------
+
+And, on the topic of sidebars and boxouts in RPG sourcebooks, it occurs to me that they're a very interesting innovation.
+
+In [[http://i.imgur.com/FGeKwUx.png][the example passage that I used above]], there are exactly six heading levels, from =<h1><em>GURPS Low-Tech</em></h1>= and =<h2>Chapter 2: Core Technologies</h2>= to =<h5>Glass</h5>= and =<h6>Core Formation (TL1)</h6>=. HTML allows a maximum of six heading levels, so this probably was a conscious choice on the part of the editors. However, where should "Race for Porcelain" go? It obviously needs to fit under =<h5>High-Fired Ceramics</h5>=--but, at the same time, it isn't quite as narrow in scope as the =<h6>...</h6>= headings underneath =<h5>Glass</h5>=. So, it gets an =<h5>...</h5>= heading /in a boxout/--effectively, a heading /at level 5.5/--underneath =<h5>High-Fired Ceramics</h5>=! It's a neat little solution. Note that it's a branching path: After reading about ceramics in general, you can take a temporary detour down the dead-end right side of the page to learn about porcelain, or you can advance to the next topic in series on the left side of the page!
+
+The /ex post facto/ determination of where a boxout was meant by the original author to go in the structure of the book can be tricky, however. Note that the font style of =High-Fired Ceramics= in [[http://i.imgur.com/gJKUacH.png][the screenshot of the original PDF]] actually seems to be a hybrid of =<h4>...</h4>= (not in the screenshot: large, bold, and all-caps) and =<h5>...</h5>=--/not/ a hybrid of =<h5>...</h5>= and =<h6>...</h6>=. On the other hand, though, it's very obvious from the text that this boxout is much more relevant to the narrower "High-Fired Ceramics" section than to the wider "Stone and Earth" section. The verdict: The editors at Steve Jackson Games failed to provide a consistent progression of weight in laying down the stylistic guidelines for their headings. Tut, tut!

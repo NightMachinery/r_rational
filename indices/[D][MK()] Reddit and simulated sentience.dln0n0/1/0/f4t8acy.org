@@ -1,0 +1,36 @@
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 3
+:DateUnix: 1571785231.0
+:DateShort: 2019-Oct-23
+:END:
+
+#+begin_quote
+  Once, when I was wondering what life after death would be like,...So what's the point?
+#+end_quote
+
+You might be interested in the idea of the [[https://en.wikipedia.org/wiki/Boltzmann_brain][Boltzmann brain]]. What I'm talking about differs because metaintelligences, as I've defined them, can be pointed out and understood (or at least, that's what I'm trying to do in this thread) by ordinary intelligences. I've constructed the definition of metaintelligences so they're guaranteed to exist, so whether or not they exist isn't a disprovable hypothesis. Instead, this thread is an experiment to see if they can be useful, even if only in a theoretical, [[https://en.wikipedia.org/wiki/Galactic_algorithm][galactic algorithm]] sense.
+
+#+begin_quote
+  Also I though just occured to me. Right now You (if you decide to comment of this) and Me are interacting on the internet. Does each pair of interaction from it's own metasentience? In that case is their a metasentience for every possible user interaction on reddit that is separate from the whole.
+#+end_quote
+
+So as per the previous paragraph, yes and no. I can frame pretty much anything involving 2+ intelligences as a metaintelligence, but at least from this conversation, there's nothing I can point out as being a well-defined metaintelligence. I guess I could say that us, plus anyone willing to downvote/upvote this pair of posts, serve as a metaintelligence for coming up with a estimate of how likely my OP is true, but that's not really generalizable.
+
+#+begin_quote
+  This is kinda how I feel about your idea. Unless there is some mechanism by which a metasentience is differentiable from just a bunch of regular sentiences interacting in the physical world then it wouldn't matter. I wouldn't care if the reddit sentience were to cease outside of the emotions I would feel about a website I use going down.
+#+end_quote
+
+Metaintelligences are differentiable from their substrate because they affect and are affected by the outside world. I could use a sentiment analysis program to find out how common people acting like the "NOT" gates in the OP are, and that would give me information about how much reddit's karma system rewards contrarians.
+
+Here's an example about how a metaintelligence could be useful. A program can post an article on a website as an ad to a user, without making it available outside that link, where that article represents a 0 if it's meant to be transmitted as-is by the first user, or 1 if it's meant to be disagreed with. (In reality, it would likely represent some value on a gradient, but I'm keeping things simple.) That first user then performs a transformation. 0 is fail to transmit the article, 1 is transmit the article with disagreement, 2 is transmitting the article (with implicit or explicit agrement) . That is to say, the first user has a function a->f ^{2} (a) *: A={0,1} -> B^{1} ={0,1,2}.
+
+Another user sees the post (if it exists) on the user's page and decides whether to repost it. Other users, in turn, do their own transformations, as user N performs transformation b->f^{N} (b):B^{N-1} -> B^{N.}
+
+For any given chain of N users, a metaintelligence has performed a linear transformation from A to B^{N} . What transformation did this metaintelligence do? Well, that depends on the chain of users selected. You can select a metaintelligence that finds the echo chambers user 1 belongs to by feeding in a bunch of 0 articles and selecting the chains that result in 2s, or a metaintelligence that determines which articles that cause arguments by feeding in articles and choosing the chains that either go 0->... or 1->1->1->1->... because those are the chains where articles are either boring or controversial.
+
+With the examples above, metaintelligences can come up with novel, useful information with the participation but without the awareness of the substrate they run on. Sort of like parasitic memes, really, where they leech brainpower to propagate themselves
+
+Of course, any of the examples I've given so far can be thought of in other ways; there's plenty of work done in the fields social science, economics, psychology, and marketing to determine how to best exploit the users of a platform or members of an organization. The reason why I'm insisting on viewing this from the perspective of "metaintelligence" is because +it's an interesting thought experiment I had to distract from a boring day of work+ recontextualizing things this way lets us look at group behavior in a kind of [[https://en.wikipedia.org/wiki/Foundation_series][Asimovian]] lens, as it exploits the predictability of human beings in aggregate, as opposed to individual unpredictability.
+
+*I'm using superscripts because as far as I know markdown won't let me do subscripts.

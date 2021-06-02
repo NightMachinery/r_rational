@@ -1,0 +1,54 @@
+:PROPERTIES:
+:Author: somerandomguy2008
+:Score: 8
+:DateUnix: 1473484638.0
+:DateShort: 2016-Sep-10
+:END:
+
+Disclaimer: I didn't know how to do matrix multiplication prior to answering this question. I thought it might help to hear how someone who doesn't grok linear algebra would remember the algorithm.
+
+Personally, I found the first page of [[http://www.embedded.com/electronics-blogs/programmer-s-toolbox/4007495/Why-multiply-matrices-][this]] to be a fairly intuitive explanation.
+
+Basically, it takes a look at one use for matrices - representing linear equations in a way that clearly separates the different components of the equation (coefficients, unknowns and constants in this case). It then asks one simple question - how do you turn the matrix representation of the linear equations back into a more standard form? Matrix multiplication.
+
+Do this:
+
+1) Make up three linear equations, each using the same three unknowns, and line them up in three rows.
+
+#+begin_example
+  2x + 3y + 4z = 100
+  3x + 4y + 5z = 126
+  4x + 5y + 6z = 152
+#+end_example
+
+2) Go ahead and ignore the right half of the equation - it's not important for remembering how to do this.
+
+#+begin_example
+  2x + 3y + 4z
+  3x + 4y + 5z
+  4x + 5y + 6z
+#+end_example
+
+3) Convert this into two matrices (coefficients in one, unknowns in the other).
+
+#+begin_example
+  [2 3 4][x]
+  [3 4 5][y]
+  [4 5 6][z]
+#+end_example
+
+4) Ask yourself - how can you revert from step 3 back to 2? Answering this question reinvents matrix multiplication.
+
+#+begin_example
+  [2x + 3y + 4z]
+  [3x + 4y + 5z]
+  [4x + 5y + 6z]
+#+end_example
+
+5) If you have more columns in your second matrix (step three only has one column), just remember to multiply one column at a time.
+
+#+begin_example
+  [2 3 4][x a]   [2x+3y+4z 2a+3b+4c]
+  [3 4 5][y b] = [3x+4y+5z 3a+4b+5c]
+  [4 5 6][z c]   [4x+5y+6z 4a+5b+6c]
+#+end_example

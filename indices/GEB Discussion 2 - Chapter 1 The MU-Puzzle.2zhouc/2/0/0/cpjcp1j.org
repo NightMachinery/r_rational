@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: rspeer
+:Score: 4
+:DateUnix: 1426722987.0
+:DateShort: 2015-Mar-19
+:END:
+
+I don't think your claim about repeated levels of meta-reasoning is true.
+
+For one thing, category theorists, type theorists, and so on, need to allow for an arbitrary number of levels of meta-reasoning, or else some statements become unstateable.
+
+In category theory, you can't make a claim about "all categories" without encountering [[http://en.wikipedia.org/wiki/Russell%27s_paradox][Russell's paradox]]. You have to create a category of "all small categories", that is, categories that are 'normal' and don't get all meta about category theory. The category of all small categories cannot be a small category, so call it a 2-category.
+
+If you wanted to make a claim about the category of all 2-categories, you'd need that to be a 3-category. And so on. 3-categories are not the same as 2-categories.
+
+There might be particular propositional systems where third-order logic is the same as second-order logic -- this is about where I run out of mathematical background -- but I'd want you to at least show me an example of such a system.

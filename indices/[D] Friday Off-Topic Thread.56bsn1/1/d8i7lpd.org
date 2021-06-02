@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 10
+:DateUnix: 1475864962.0
+:DateShort: 2016-Oct-07
+:END:
+
+Weekly update on my rational pokemon game, which for now is work on the data creation tool Bill's PC ([[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][previous threads here]]):
+
+This last week has resulted in a lot of designs being hammered out.  The new Obedience/Attitude stats replace the old Respect/Loyalty system, which has been moved to the individual pokemon (and not their species definition.)
+
+[[https://docs.google.com/document/d/13e4bMBgsvshUBFShes2bG3RGXIzVYh16EPboqDTdpfA/edit?usp=sharing][A grand list of features has been started]].  This will later be reorganized into a roadmap, but for now it lists all the things we'd /like/ to see in the game, to help me understand how each system needs to be built.
+
+Work has begun in earnest on the Move Making tab.  As part of this, [[https://docs.google.com/spreadsheets/d/1sPZPDEohBhm8y4gbdfGHPv5T1yF7rXnxAzNDpTuLqWA/edit#gid=0][a spreadsheet was put together]] for figuring out what moves from canon can be used in their current state.  This spreadsheet unfortunately does not differentiate between moves whose mechanics will be used and moves which merely have a good name that will be reassigned, but this is the first draft.
+
+A lot of the types were shifted around as a result of this:
+
+- Dragon has been redefined as a damage type to represent /raw energy manipulation/ and as an archetype to represent /rage/. Hyper beam is more than likely a Dragon-type move for both reasons.
+
+- Fairy has been given a purpose: it is a type that has to do with /Light/, both in the use of optical illusions and photonic blasts.  Dark types are not immune to these illusions as they do not affect the mind.
+
+- Bug has been salvaged and redesigned as a damage type that centers around /infestation/.  Parasect spreads a rapidly-growing fungus while Beedrill injects Weedle larva, both of which deal Bug-type damage as they atonomously consume the target inside-out.
+
+- Ground has found itself more or less gutted. The majority of its signature moves are either earthquakes (Earthquake, Magnitude, Fissure), not related to the ground at all (Bone Club, Bonemerang) or actually found to be more rock-type.  The type itself looks like it's going to be more of a defensive, ferocious, bulky Beast type, with the various true earthbending moves moved to Psychic as a subset of telekinesis.  As a result, the more 'pure' ground-types (Diglett, etc) will probably be given partial Psychic typing and a high affinity for those moves.
+
+Fighting is also currently under debate.  It seems to me there is no /fundamental/ reason that something would be hurt by Karate Chop significantly more than it would by Double Slap, so my current idea is to roll most physical Fighting moves into Normal, with Ki-based and Aura moves staying as the true manifestation of Fighting.  I am recieving backlash on this, though, so we're still working it out.
+
+If you'd like to chime in for the debate, feel free to list your feelings here or [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]].
+
+We also had a certain amount of brainstorming for a name for the project, which IMO was mostly fruitless.  I personally like the "Pokemon Renegade" suggestion the most, but even that seems a bit off somewhat.
+
+This week I aim to finish hooking up the move tab, get a solid release build out, and continue hashing out the type debate.  Once the move tab is working nicely, Bill's PC will be in a good enough state to be able to start working on the game itself, though I will need to come back to add things such as map support, quests, NPC editing, and so forth.

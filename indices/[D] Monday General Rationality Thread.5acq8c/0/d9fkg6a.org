@@ -1,0 +1,50 @@
+:PROPERTIES:
+:Author: rineSample
+:Score: 13
+:DateUnix: 1477933205.0
+:DateShort: 2016-Oct-31
+:END:
+
+*/Happy Halloween!/*
+
+I just wanted to share this with y'all since I figure y'all would appreciate it. Recently I asked one of my professors this question:
+
+#+begin_quote
+  My friends and I heard of an interesting game called Odds, a revised version of "truth or dare" that works like this:
+
+  Some guy dares you to do something. You give a number for how little you want to do something, from 2 to 99. Both people countdown from 3, and the darer (the guy who is daring a challenge) and the dare-ee (the guy being dared and issuing the number) each say numbers smaller than the original number.
+
+  If the numbers match, the dare-ee has to do whatever they assigned odds to, and if they sum, the darer has to do it. So for example if Alice dares Bob to drink some shots or something, Bob gives a number from 2 to 99 (let's say he says 53). Then they countdown from 3.
+
+  If they both say 22, then Bob has to drink the shots. If both numbers sum to 53 (if Bob says 22 and Alice says 31) then Alice has to do it instead. My questions to you are,
+
+  A) What are the odds that they sum, and
+
+  B) What are the odds that they match?
+#+end_quote
+
+He replied:
+
+#+begin_quote
+  Of course, the answer to A and B is "It depends on what strategies Alice and Bob use". But what is an optimal strategy?
+
+  I will assume if Alice performs the task, she receives a penalty Ap (for some Ap < 0) and if Bob does, she receives reward Ar (for some Ar > 0). Similarly, Bob has penalty and reward Bp < 0 and Br > 0. I will further assume that these values are known to both players, and that each player is acting to maximize the expected payout.
+
+  What happens if the numbers both sum and match? I'm assuming that if the numbers both sum and match, both Alice and Bob perform the task, and receive both the penalty and reward.
+
+  Suppose Bob has already chosen the first number k. Alice may use some mixed strategy, choosing number 1 with probability a1, 2 with probability a2, and so on, with a1+a2+...+a(k-1) = 1. Similarly, Bob chooses numbers with probability b1, b2, and so on. Alice's expected payout is SUM_x (ax * ((Ap * b(k-x)) + (Ar * bx))). Bob's expected payout is SUM_x (bx * ((Bp * ax) + (Br * a(k-x)))). (That is, sum over all choices of number, the probability that number is chosen, times the expected payout of that choice, which is the penalty times the probability that the opponent chose the corresponding penalty number, plus the reward times the probability that the opponent chose the corresponding reward number.)
+
+  One obvious Nash equilibrium is for each player to choose each number with probability 1/(k-1). (This is a Nash equilibrium, since no matter what strategy the opponent uses, the expected payouts are the same - SUM_x (ax * ((Ap * (1/(k-1))) + (Ar * (1/(k-1))))) = (Ap+Ar) (1/(k-1)) for Alice (and similar for Bob).
+
+  There may be other equilibria - Suppose Ar + Ap > 0 and Br + Bp > 0 and k is even. Then there is a Nash equilibrium in which Alice and Bob both choose k/2. Suppose Ar + Ap < 0 and Br + Bp < 0 and k >= 5. Then there is a Nash equilibrium in which Alice chooses 1 with probability 1/2 and (k-1) with probability 1/2. Bob chooses 2 with probability 1/2 and (k-2) with probability 1/2. Each has an expected payout of 0. This is a Nash equilibrium - If Alice chooses 2 or (k-2) with nonzero probability, then the expected penalty will be larger than the expected reward, so the expected payout will be negative. (We can do something similar if k=3, Alice chooses 1 or 3, and Bob always chooses 2.) So in certain situations there is scope for Alice and Bob to coordinate.
+
+  Which number k should Bob choose? If Br + Bp > 0, he can choose 2 to get a payout of Br + Bp, and if Br + Bp < 0, he can choose 99 to get an expected payout of (Br + Bp)/98 (or perhaps as much as 0, if he can coordinate with Alice as described above). I suspect these choices are optimal.
+
+  Ok, so which task should Alice choose? If she knows Ap, Ar, Bp, and Br for all the possible tasks she might name, She will want to choose one with Ar + Ap > 0 if she can - worst case, Bob chooses 99 and she gets payout (Ar + Ap)/98. But she may want to choose one in which Br + Bp > 0 as well, to get payout Ar + Ap (after Bob chooses 2). If the positive reward task that maximizes Ar + Ap also has Br + Bp > 0, then great, choose that one. Else, if the task which maximizes Ar + Ap for those tasks in which Br + Bp > 0 is more than 1/98 that for which Br + Bp < 0, then she should choose that one. If all tasks have Ar + Ap < 0, then she should choose one (any one) for which Br + Bp < 0 as well, to get a payout of 0 (after Alice and Bob coordinate to avoid the task entirely). If she can't, then she chooses one which maximizes Ar + Ap to get a payout of Ar + Ap (after Bob chooses 2).
+
+  With these strategies, I would say:
+
+  A) They match with probability 0, 1/98, or 1, depending on the specifics of payouts.
+
+  B) They sum with probability 0, 1/98, or 1, depending of the specifics of payouts.
+#+end_quote

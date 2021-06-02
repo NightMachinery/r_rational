@@ -1,0 +1,27 @@
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 6
+:DateUnix: 1437493761.0
+:DateShort: 2015-Jul-21
+:END:
+
+I would also be interested in the maths.
+
+I can come up with a non-mathematical line of reasoning that works:
+
+1. The AI is perfectly rational.
+2. The AI has an initial goal, G.
+3. Since the AI is perfectly rational, every action it takes maximises expected progress towards G.
+4. If the AI were to change to goal F, then every action it takes would maximise expected progress towards F.
+5. Since, from 3, the actions it takes are already optimal with respect to G:
+
+   1. The decision-making for F must be identical to that of G (i.e. F is functionally equivalent to G).
+   2. At least some of the decision-making for F must progress towards G less (i.e. F is a sub-optimal choice of goal for a G-optimiser).
+
+6. Therefore a perfectly rational AI would never change goal.
+
+But as you said, you don't need to change your goal to change your approach to achieving that goal.
+
+If I were tasked with maximising human happiness I might start by lowering poverty or other "good" things, until I learned enough neurology to figure out I could turn humans into perpetually happy vegetables.
+
+To an observer unaware of my true goal, I would appear to have changed my goal.

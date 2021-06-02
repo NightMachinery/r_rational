@@ -1,0 +1,64 @@
+:PROPERTIES:
+:Author: GaBeRockKing
+:Score: 4
+:DateUnix: 1516386966.0
+:DateShort: 2018-Jan-19
+:END:
+
+Basically every (serious) language can do what you want-- having a build-in random number generator is a pretty standard language feature. For example, in Java, you just
+
+#+begin_example
+  import Java.util.Random.*;
+#+end_example
+
+at the begining of your file, then later say
+
+#+begin_example
+  Random variable_name = new Random();
+#+end_example
+
+And generate, say, a random number from 3-25 using
+
+#+begin_example
+  int variable_name_2 = variable_name.nextInt(0, 21) + 3;
+#+end_example
+
+How did I know to do that? Every language has some sort of documentation, so I just looked up "java random" and went here: [[https://docs.oracle.com/javase/8/docs/api/java/util/Random.html]]
+
+How does that help with your program? Imagine if you had 25 pre-written plots in an array, but didn't want to choose any of the first three. Then you run this program to get an int, access the index of the array in question, and print its value out. Here's all the moving pieces in a short program:
+
+#+begin_example
+  import Java.util.Random.*;
+
+  String[] arr = {"plot 1", "plot 2", "plot 3"};
+
+  public static void main (String[] args) {
+  Random r = new Random();
+  int i = r.nextInt(arr.length - 1); //lets "arr" be an arbitrary length, and still pick the string properly
+  System.out.println(arr[i]);
+  }
+#+end_example
+
+which will print out, to console, either "plot 1", "plot 2", or "plot 3". (Unless I've made some dumb syntax mistake.)
+
+From there, I'm sure you can think of how to extend that-- generating multiple arrays, each of which contain a part of a plot, then picking them together and assembling them at random, for example.
+
+Now, I used Java for this example, but as I said, every serious language will have the ability to do this. Here's a short rundown:
+
+Compiled languages: (i.e., you write your code, you compile your code, then you run it from a binary.)
+
+Java -- good for beginners, usually taught in introductory CS courses. Has a massive, easy to use library of built-in functions. You'll want to download [[https://www.eclipse.org/ide/][eclipse]] to serve as your IDE (on windows). I don't know what mac and linux do. People complain that it's a bit slow and bloated, though, and is a little difficult to just have compiled program sitting around that you can run from wherever. Programs also tend to have a lot of filler or boilerplate that might get annoying.
+
+C/C++ -- While not the same language, people usually learn a bit of C before getting into C++. C++ is faster than java, and "more powerful" in the sense that it's a bit closer to the metal (you can do everything it can do with java, but it's a bit more difficult.) It's also significantly more difficult, however, and constantly seeing unexplainable "segfault" errors will get annoying fast. If you're on windows, you'd want to use [[https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiN28fm0-TYAhVK7FMKHZsACI4QFgguMAA&url=https%3A%2F%2Fwww.visualstudio.com%2F&usg=AOvVaw3oneBl4aXUx_gzRe4LtuAN][Visual Studio]] or [[https://code.visualstudio.com/][VS Code]]. I don't know what IDE's linux has, but personally I just write everything in a text editor (i.e., notepad) then compile with the command line utilities gcc (for C) and g++ (for C++)
+
+Scripting languages: (you write your code, and then can immediatelly run it. Code execution is singificantly slower than compiled languages, but you don't need to go through compilation)
+
+Python -- I don't actually know this language, but reportedly it's incredibly easy to use and read, has an expansive default library, and has a number of elegant features. Popular for introductory CS classes, as well as for "coding for engineers" classes. Downsides? I wouldn't know-- I've never tried it.
+
+Javascript -- Don't use javascript if you can help it. As far as languages go, it has a lot of bizarre features and intuitiveness. That being said, if you plan to run your code from a webpage, then you don't really have a choice, so suck it up, read the [[http://www.w3schools.com][www.w3schools.com]] tutorials (including the HTML and CSS tutorials) and get to it.
+
+PHP -- bad for the same reasons Javascript is. Necessary for the same reasons javascript is. If you want a simple web server serving your code, PHP is probably your best choice. Web servers can run other languages to, but PHP is specifically built for the purpose of being a backend language, so it's easiest for beginners for that purpose.
+
+Hopefully this helps!
+
+(Incidentally, I wrote the example in Java because I'm used to using it when my coding is timed. Don't take it as an endorsement of java.)

@@ -1,0 +1,17 @@
+:PROPERTIES:
+:Score: 10
+:DateUnix: 1471016800.0
+:DateShort: 2016-Aug-12
+:END:
+
+Cognitive science problems:
+
+- My new learning rule underperforms Naive Bayes in small dimensionalities
+
+- But it also systematically overperforms human classification in small dimensionalities.
+
+- But it keeps gaining performance as you add dimensionality (at least on this classification), at least up to somewhere around 20-50 features depending on how "structured" the category is, while Naive Bayes loses performance as dimensionality increases even at d in (0, 15).
+
+So it's incredibly interesting from the point of view of dealing with dimensionality, but still just not that good a model of the human subjects from the other paper.
+
+Welp, time to bullshit and make sure to submit to a more theory-focused venue.

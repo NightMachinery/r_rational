@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: capsless
+:Score: 15
+:DateUnix: 1436057014.0
+:DateShort: 2015-Jul-05
+:END:
+
+#+begin_quote
+  Given this power, I have two questions. First, what would you use this power to do? Second, assuming someone else has this power, what would you recommend they do?
+#+end_quote
+
+uh. immediately collapse the complexity class heirarchy into at most linear time/space. become god, a la scott aaronson:
+
+#+begin_quote
+  Even many computer scientists do not seem to appreciate how different the world would be if we could solve NP-complete problems efficiently. I have heard it said, with a straight face, that a proof of P = NP would be important because it would let airlines schedule their flights better, or shipping companies pack more boxes in their trucks! One person who did understand was G ̈odel. In his celebrated 1956 letter to von Neumann (see [69]), in which he first raised the P versus NP question, G ̈odel says that a linear or quadratic-time procedure for what we now call NP-complete problems would have “consequences of the greatest magnitude.” For such an procedure “would clearly indicate that, despite the unsolvability of the Entscheidungsproblem, the mental effort of the mathematician in the case of yes-or-no questions could be completely replaced by machines.”
+
+  But it would indicate even more. If such a procedure existed, then we could quickly find the smallest Boolean circuits that output (say) a table of historical stock market data, or the human genome, or the complete works of Shakespeare. It seems entirely conceivable that, by analyzing these circuits, we could make an easy fortune on Wall Street, or retrace evolution, or even generate Shakespeare's 38th play. For broadly speaking, that which we can compress we can understand, and that which we can understand we can predict. Indeed, in a recent book [12], Eric Baum argues that much of what we call ‘insight' or ‘intelligence' simply means finding succinct representations for our sense data. On his view, the human mind is largely a bundle of hacks and heuristics for this succinct-representation problem, cobbled together over a billion years of evolution. So if we could solve the general case---if knowing something was tantamount to knowing the shortest efficient description of it---then we would be almost like gods.
+#+end_quote

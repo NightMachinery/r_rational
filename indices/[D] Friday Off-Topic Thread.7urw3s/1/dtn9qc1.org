@@ -1,0 +1,60 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 10
+:DateUnix: 1517606492.0
+:DateShort: 2018-Feb-03
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Little progress on the app this week, but some interesting design concepts were discussed as pertains to formulating a sense of progression and difficulty ramping.
+
+On the [[/r/rational]] Discord server, we occasionally run a Minecraft server when the mood strikes us. This most recent time (which is still running, details in the #minecraft_server channel if you want to hop on) I ended up running the server as I had the itch to play.  It's been a few years since I last did this, and I absolutely adored some of the mods in the Billionaire pack that we ended up using.  Tinker's Construct in particular appeals to me; I quite enjoy the concept of building a smeltery and the fine-tuned control you get over building the individual pieces of your tools and weapons (much better than vanilla's enchantment system, by far).
+
+However, after building a large smeltery and constructing all the patterns and moulds necessary for any item I might want to build, and then forging a fine set of bows, arrows, swords, and pickaxes, I was struck with the feeling that my ability to equip myself absolutely dwarfed any ability that the world had to challenge me.  I went out and slaughtered mod-boosted zombies and skeletons by the dozens, with pretty much no risk to me at all.  I brought this up with some of the more experienced Minecraft players on the server, and the answer was basically “well, go find some challenge.  Some of the mods let us summon bosses.”
+
+This strikes me as inherently...plastic.  Fake.  I was suddenly pulled out of the game's immersion and reminded that I was essentially in a theme park, going from attraction to attraction, meeting some small standard of competence before being ushered onto the next ride.  Nothing was ever going to ambush me, there were no threats looming over my head that I needed to prepare for, and so long as I stayed in our vetted and protected areas (or wasn't a complete idiot if I /did/ leave), I was never going to die again.
+
+While mulling over the problem, I was reminded again of my appraisal of Terraria when I first played it: “Minecraft as it /should/ have been, but in 2D”.  Terraria has most of the same strengths as Minecraft: very deep creative control, exploration, ability to automate survival strategies, social multiplayer, mod support.  However, there's one thing that it absolutely nails that Minecraft just doesn't grok: a sense of /tension/ or /motivated progress/.
+
+I decided to see if I could find out what exactly Terraria did to give me this impression, and it turns out there's a surprisingly simple formula that the game appears to follow.  
+
+First, Terraria's gameplay is divided into discrete eras, connected by what I'll call /transitions/.  Each era is characterized by different monster spawns, random events, loot, NPCs, and other factors which overall define how difficult it is.  When first entering a new era, the difficulty spikes proportional to how bad your old equipment is suited to the new situations, but slowly over time as the player gathers better equipment and gets more experience the same old monsters simply don't stand a chance anymore. The difficulty curve looks something like this for each era:
+
+[[https://i.imgur.com/1KoER42.png]]
+
+Once the player has entered the tail there at the end, they can begin stockpiling resources and preparing to enter the next era, which is explicitly triggered via a transition, usually a boss fight at a fixed location or other set of manually-triggered circumstances.  In general, this is more or less the same as what Minecraft does, except that Minecrafts “eras” tend to be different dimensions (the Nether, the End, etc).  
+
+Where Terraria differs is in what I'll call /milestones/, which are for the most part non-consensual.  Once you enter an era, you have a small grace period to get your act together and take on that era's milestones, but if you take too long they will start spawning at regular intervals and kicking your trash in until you finally deal with them.  Bosses are the most common kind of milestone, but there are also events such as invasions that require you to defend your base from waves of difficult enemies.  
+
+These milestones transform the difficulty curve to look something more like this:
+
+[[https://i.imgur.com/kzXb4bF.png]]
+
+Considering that the underlying curve is still at your own pace, the fact that the milestones could drop at any moment (or it appears that way) lends a sense of urgency to what would otherwise lead to the meandering sort of pace that I don't like about Minecraft.  
+
+There are two further caveats that Terraria adds on.  First, the very first transition is intentionally designed to be accidentally triggerable (unlike all the others that absolutely require deliberate action), meaning that an uninformed player is likely to be dunked into a difficulty spike without warning, which creates a sort of paranoia that the designers take advantage of without further explicitly repeating.  Second, the very last difficulty era has an “endgame” of epic proportions, which requires not one, not two, but six bosses to be fought consecutively, which at once offers a good challenge, a satisfying conclusion, and plenty of replayable opportunities to get ridiculous end-game loot.  
+
+The entire game's difficulty curve thus looks something similar to this:
+
+[[https://i.imgur.com/O9mvtCJ.png]]
+
+The milestones that you cannot avoid confronting help keep the tension constant, even as the overall difficulty of the day-to-day activity goes down.  At the same time, a certain amount of player agency is preserved, as the world-changing era transitions are more or less under your control.  
+
+--------------
+
+So what does this have to do with Renegade?  Well, while I'm not against people faffing about and finding their own way in the sandbox, I definitely want there to be some core tension that gives meaning to a player's mastery (or lack of mastery) of the world and its rules.  There's a balance to be struck between being brutally unforgiving and full-open empty sandbox, and I think that aiming to modulate the difficulty and engagement to match the above graph is the way to do it.
+
+Unlike Terraria, there are autonomous factors at play, a world that progresses, and occasionally some actual plot.  As such,I don't think that having a single unified progression path is the way to go for Renegade.  Instead, I'm going to attempt to have multiple such paths that follow the pattern, with consequences both good and bad for passing each transition, especially as pertains to affecting other paths.
+
+My current (extremely) rough draft for some path ideas is here:  [[https://docs.google.com/spreadsheets/d/1bPBbrM9XRPto1UYcwrCNrwo3EWC-yt7Bje-LTMa0Bic/edit?usp=sharing]]
+
+The championship circuit (i.e. collect badges) path is the most straightforward to translate, which simply involves adding challengers, rivals, and the public eye on you the more badges you obtain.  Others are more difficult to design for (and thus all the holes in the document), but all in all I think that this is a useful tool for plotting out some escalating stakes and difficulty/tension beats.  
+
+Thoughts or comments on this concept would be most appreciated.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

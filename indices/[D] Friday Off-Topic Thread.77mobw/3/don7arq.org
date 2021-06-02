@@ -1,0 +1,34 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 5
+:DateUnix: 1508518492.0
+:DateShort: 2017-Oct-20
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+So I had zero time to work on either Renegade or XGEF this week.  As briefly mentioned last week, my work deployed a new version of our product on Sunday, and it wasn't until Sunday night that it was pointed out to me that this basically meant I had had no weekend. Saturday had a few hours of me remoting into work and getting backups squared away, as well as shopping around for and testing a camcorder last-minute so I could record the process to document later.  Sunday was the early-morning deployment itself, which was about 5ish hours or so, but all of this meant that I was left without sufficient unwinding time to recover from the previous week (which was more stressful than average due to needing to prepare for a deployment with only scraps of documentation).
+
+Anyhoo, I hope to get that time this weekend and hopefully claw my way back up the work/home balance scale.  On that note, however, due to my changing duties at work, I'm probably not going to have much downtime to design or code at work like I have been--or rather, that time now has legitimate work-y things for me to instead channel that energy into, which means that I need to transition from having essentially worked on Renegade part-time back to it being a regular old side project.  It was nice while it lasted, tho; I got XGEF about 80% of where it needs to be, with most of the trickiest things addressed, so that's good at least.
+
+--------------
+
+So we had a bit of a discussion about sapience/sentience vs intelligence, which mostly came about due to taking a look at the pokeball question again.  In the beginning, we essentially took Origin of Species' stance, which is to say that anyone over a certain intelligence level (or brain density or whatever) comes out of a pokeball comatose or braindead, so naturally it's illegal to capture humans and safeguards are put into balls to prevent human capture as per national and international law.  
+
+The /reason/ for this occurring has been a bit of a thorn in the side of the lore for some time; I seem to recall that [[/u/DaystarEld]] even just sort of handwaves it as a necessary limitation without a real justification.  I'm inclined to agree with that approach, but over time we've accumulated additional lore for the pokeballs that has made the intelligence thing more and more unsupported.  Specifically, we sort of decided (and apologies if this is actually aping your lore, Daystar; it all runs together and I couldn't possibly identify the original source of all of these ideas at this point) that pokeball technology came about after studying Ghost types and their phasing and interdimensional travel.  
+
+(Ghosts are themselves following the original Gengar concept of a creature slowly pushing itself into our dimension.  We figure they're distortion-born pokemon that are essentially Chaos/Warp demons out to wreck shit for no good reason.)
+
+The father of the pokeball tech found that by isolating the organ that triggers the phasing from a Ghost and hitting it with enough power, one could open small portals into other dimensions that follow other physical laws.  The vast majority of dimensions explored are just facets of the Distortion world (and thus highly dangerous and not very useful on net, considering that it's basically like a portal to Hell, demons and all), but someone somewhere figured out a way into a dimension that seems to have properties that we associate with pokeballs: all but halted time passing, non-euclidian geometry, etc.  After a lot of iteration (facilitated by the apricorn tree growing outside, which doesn't really have any super special properties but is a /very/ convenient source of sturdy, hollow spheres), the pokeball was born.
+
+Now, this explanation (such as it is) doesn't do much for avoiding the intelligence threshold handwave, short of pushing the question further away a bit.  We could say something about the chaotic distortion energy field that every captured object has to pass through, and higher complexity minds just can't handle it, yadda yadda, but it's still pretty much just an arbitrary decision due to not wanting to let the player being able to capture humans (or rather, not being able to /enslave/ humans; I actually have no problem with people getting black market balls and using them to inflict mental retardation on enemies as a particularly heinous means of tying up loose ends.  Funny what feels acceptable and what doesn't).
+
+Anyway, so all of this lead to exposing the inelegance of having this effect tied to an INT threshold.  INT so far affects things like the number of moves that one can easily keep in mind at once, the speed with which one learns moves, a general small boost to skill gain in general, and as a modifier to how a pokemon reacts to certain stimuli.  Some of this seems to overlap with the whole “the more of this you have, the more likely a pokeball zaps it out of you” thing, but some of it doesn't, and so it was proposed that an additional mental stat be added, that of Sapience (SAP).  It would usually (probably) correlate with INT, but there would be room to allow them to deviate, such as, for instance, a particularly dumb Growlithe (low INT, medium SAP).  With this addition, SAP would affect speed of training a move to associate with a command, number of commands known, and act as a modifier to loyalty-affecting actions (higher SAP means tending to its wounds counts more for a loyalty increase).
+
+It still doesn't address the inherent hand-waviness of the arbitrary pokeball threshold, however, and in absence of that I'm not even sure I'd entertain the idea on its own.  I'd love to hear any ideas on the subject, either pertaining to the INT/SAP split or to addressing the core “can capture pokemon just fine but can't capture humans without devastating results”.  I /would/ like to avoid “pokemon are magic” at all costs, so fair warning, but I'd love to otherwise consider any thoughts y'all might have.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

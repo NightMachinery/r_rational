@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: Gaboncio
+:Score: 7
+:DateUnix: 1484349114.0
+:DateShort: 2017-Jan-14
+:END:
+
+We have to make a couple of assumptions about our alien neighbors, but I think I can make some convincing arguments for you with the data we have. Let's think about what variables change eclipse rates in a system.
+
+Really, what sets the eclipse rate is the size of the planet's satellite and its host star on its sky, and as you said the alignment of the orbital planes. Those are approximately (for small sky-sizes) set by the ratio of each object's distance and radius. We can look at this distribution pretty easily for exoplanets, thanks to the great, open-source approach of the exoplanets community about their data. Sadly, we haven't really discovered any exomoons, and I doubt we will for a long time, so we'll have to settle for data from our own solar system.
+
+Exoplanets.org can plot the distribution for the ratio of orbital distance to stellar radius. For Earth that number is 215, and according to the data they have, only 0.8% of known exoplanets have values between 181 and 220. Already we can tell Earth is pretty rare, and we still haven't thought about the other two factors.
+
+I managed to find data for the [[http://www.ianridpath.com/moons.htm][16 largest moons in the solar system]], including orbital inclinations! By eye, it looks like most moons have a pretty good chance of blocking out the Sun at Earth, and we can see that they mostly orbit around their hosts equators, which is a nice property. But, we have to remember that these are the largest 16 out of over 150 moons in our system. That means that somewhere between 10% and 5% of moons are eclipse-able, depending on what the actual distributions are. So, let's check!
+
+Assuming these distributions are independent, we can just multiply our probabilities: 0.008 x 0.01 = 0.00008 or 0.008% of exoplanets will have Earth-like eclipses, /if/ the satellite distribution in other planetary systems looks the same as it does here. It probably doesn't, and we omitted the fact that /most/ large moons in the solar system are not around terrestrial planets, so that number will probably be lower in practice.
+
+Thanks for a great question!

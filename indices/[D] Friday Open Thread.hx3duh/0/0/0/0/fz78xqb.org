@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 10
+:DateUnix: 1595689182.0
+:DateShort: 2020-Jul-25
+:END:
+
+I don't personally believe that this is true. Some of the problems will be fixed with larger context windows, or with a better corpus, but some of the problems are fundamental to the approach. Part of the reason for looking at where GPT-3 is at is because it will help you predict the deficiencies that GPT-4 will have, some of which are simply a result of the approach used to build it. Especially with being able to compare GPT-2 and GPT-3, we can see areas where it hasn't shown almost any improvement, and which we would expect there to be not much improvement in scaling up.
+
+The question of cherry-picking is a crucial one and can't be swept away, because if the AI answers a true/false question right only half the time (no better than chance), then cherry-picking can make it seem like it's /far/ more capable than it actually is. That's why the first thing I look at when someone posts GPT-3 samples is how much pruning and cherry-picking they've done: it does fundamentally matter, and just because it's able to do it once doesn't mean that this is a feature of the system that will be (or can be) amplified by changes to the model. It only /might/.
+
+I do think that there are use cases for it, and ways or places that it will save labor. But as an approach, there are deficiencies that won't be solved simply through a better corpus, fine-tuning, or scaling up. Instead, they'll need to be solved by marrying it to a different approach entirely.
+
+Edit: In [[https://arxiv.org/abs/2005.14165][the paper]] there's a whole section on limitations, I'm partly basing my thoughts on that, and my own observations about where GPT-3 has not represented a substantial improvement on GPT-2, and where I don't expect GPT-4 to substantially improve either.

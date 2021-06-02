@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Polycephal_Lee
+:Score: 5
+:DateUnix: 1444264011.0
+:DateShort: 2015-Oct-08
+:END:
+
+Very interesting concept. In the cryptocurrency community there is a thing called [[https://en.bitcoin.it/wiki/Proof_of_burn][Proof of Burn]] where you prove that you've spent coins to unspendable addresses. This shows a monetary commitment without actually paying anyone specifically.
+
+More broadly, smart contracts can achieve this precommitment function extremely generally, such as "send one dollar to bob that is only spendable on bread." Scripts enforce the spendability of the token inside the network. [[https://www.ethereum.org/][Ethereum]] is an attempt at a Turing complete scripting language for smart contracts.
+
+My favorite example of a dead man's switch precommitment in fiction is in Snow Crash where [[#s][spoiler]].

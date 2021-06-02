@@ -1,8 +1,0 @@
-:PROPERTIES:
-:Author: DCarrier
-:Score: 6
-:DateUnix: 1427319475.0
-:DateShort: 2015-Mar-26
-:END:
-
-I'd remove warp factor entirely. That is an utterly bizarre way to measure speed. Just use SI-prefixes. 10 Mc is exactly ten times 1 Mc. Warp 10 is apparently about 26 times Warp 9. How is that helpful? You could use Warp Factor x = 10^{x,} but that's still not going to give you more than an order of magnitude estimate for how long a trip could take. Realistically, you'd also have to talk about log distance and log time, so you know the log time is the log distance minus the log speed, and then you have to work out how long that is.

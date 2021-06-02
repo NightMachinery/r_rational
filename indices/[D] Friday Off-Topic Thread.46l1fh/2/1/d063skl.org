@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 10
+:DateUnix: 1455905130.0
+:DateShort: 2016-Feb-19
+:END:
+
+It would be easy to build an automated scraper, the only question is whether you'd get hit with a rate limiter or whether it's too much data.
+
+There are 12 million stories on ff.net. My somewhat pessimistic guess is 10,000 average words per story. Average length of a word is 5 characters, but we'll add two characters for punctuation and formatting. That's 840,000,000,000 characters. If we're encoding at 1 character per byte, that's 840GB. If you had Google Fiber, you could do that in about two hours. (But I'd really doubt that ff.net would allow you to hit their website in excess of 12 million times in two hours or that you'd get as good of speed on their end.) This also doesn't include reviews, but I don't know how worth saving those are.
+
+Edit: Sending a request with Postman shows a response time that hovers around 170ms. If we're doing 12 million requests, that's 23.61 days, which won't work, but we're actually doing /more/ than that, because we need a request for every chapter, not for every story. You could save time by doing requests in parallel though.

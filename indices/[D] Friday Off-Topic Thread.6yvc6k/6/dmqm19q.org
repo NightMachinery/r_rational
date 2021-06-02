@@ -1,0 +1,56 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 8
+:DateUnix: 1504892000.0
+:DateShort: 2017-Sep-08
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+So first, a riddle:
+
+#+begin_quote
+  ketura-Last Monday at 1:50 AM
+
+  And I've got the whole day off tomorrow, and on top of that my wife is taking my son to go visit grandma
+
+  so a whole day to code with no interruptions
+
+  and all this dratted dll shit is finally taken care of
+
+  so I expect to get at least a /little/ done
+#+end_quote
+
+Can the viewers at home guess what happened next?
+
+A. Got a little done on Labor Day
+
+B. Got a lot done on Labor Day
+
+C. Got a serious case of the shits on Labor Day and spent two days weeping and staring listlessly at the computer screen
+
+If you guessed A) or B), no cookie for you! It just goes to show that I am such an /amateur/ pessimist. I really can't help but tempt fate.
+
+Fortunately (as odd a statement this is) the entire week was not Labor Day, so I did get stuff done, just not the huge leap I was aiming for.
+
+Over the weekend I cleaned house on the code and got it resembling more of a respectable repository than the polished trash heap it was. This involved extracting all of the compiler-specific code into its own project, which was done at first as a means of tracking down an obscure bug but in retrospect was actually a good move for encapsulation--if, in the far distant future, one wanted to support using different implementations of a C# compiler or even compiling different languages, then having all the relevant code hidden behind an interface is the first step to that. I don't think I'll need that, but it's nice to have a solid, well-built design nonetheless.
+
+I managed to standardize the naming schemes, finally cleared up all the warnings that I was shoving under the rug as I developed, and even found the root cause of the obscure bug from earlier (it was causing the entire project to recompile every time I ran it--regardless of whether or not anything changed. Made debugging a pain in the /ass/).
+
+As the cherry on top to this spring cleaning, I also formally adopted a software license. After mulling over the question for a few days and discussing it with [[/u/PeridexisErrant]], I decided to fling (most of) the received advice to the wind and go with Apache 2.0. So, all the files are now marked with the appropriate notice, a long-form license is included, and while I was at it I added a readme and some notes for when I next have to wrestle with reorganizing references (this summary downplays it, but it took a /lot/ of work to get the stupid library references to play nice with being yanked up and repositioned wherever I felt like).
+
+--------------
+
+I spent a lot of time grumbling about switching the stats over to use =dynamic= (as suggested by [[/u/DrunkenQuetzalcoatl]] last week). At first I had rejected it out of hand, especially once I had come to the conclusion that using dynamic could result in, say, two units of the same species both having an ATK stat that was different numeric types. I had all but convinced myself that this would be too unwieldy while serializing (not to mention I was loathe to throw out the work I had made into the current “solution”), but eventually I realized that I could simply use a private =dynamic= value, and re-wire the =Value= field to read (and cast) that field.
+
+All the overloaded math operators use the dynamic =RawValue=, while other classes can only access or set the strongly-typed =Value=. It seems to work pretty flawlessly, actually, and I'm pretty sure that this will be reasonably ironclad once I've got the tests and benchmarks rewritten to accommodate the new status quo. Thanks again for the suggestion, potato.
+
+--------------
+
+So I guess this week's TL;DR is “buncha technobabble and very little else”. I'm still a little salty about losing my Monday; I was ready to knock out the asset serializer, which is the first step to loading/saving unit data. Guess that'll be the first thing I tackle this weekend instead.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit. If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!

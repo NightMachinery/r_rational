@@ -1,0 +1,14 @@
+:PROPERTIES:
+:Author: everything-narrative
+:Score: 5
+:DateUnix: 1505605075.0
+:DateShort: 2017-Sep-17
+:END:
+
+The point about the minimal combinator calculus is that in the story I am planning (no, it's not for Si Vis Pacem,) there is a baud limit on the interface with the Infiniputer, meaning, yes, theoretically you could back-end it to e.g. Haskell, but a more efficient idea is to encode a decompression algorithm, feed it a compressed haskell interpreter, then feed it compressed haskell programs.
+
+I know every theoretically brute-forceable problem is fair game, question is: which ones?
+
+An expression in normal form is one that has no applicable reduction rules: in SK-calculus the expression =S K K= is normal-form because the =S= combinator requires 3 arguments to reduce anything, and it only has two. Expressions without normal form are, as you correctly deduce, ‘non-terminating.'
+
+An example of a non-terminating expression is: =S (S K K) (S K K) (S (S K K) (S K K))=

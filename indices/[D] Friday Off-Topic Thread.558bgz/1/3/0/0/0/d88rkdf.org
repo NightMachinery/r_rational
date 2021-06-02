@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: Omnibuser
+:Score: 5
+:DateUnix: 1475267301.0
+:DateShort: 2016-Sep-30
+:END:
+
+I don't think that's quite the same thing. Ruby doesn't really have operators. + is just a method that's defined on some classes and not others. Not only can I define a + method on my own classes, I can change that method in standard classes... For example change the Integer + method so that instead of adding numbers it converts them to strings and concatenates them. To do this I don't need to alter the Ruby core files, I can easily just reopen the Integer class in my own code and override whatever I want. It's called monkeypatching in the Ruby community.

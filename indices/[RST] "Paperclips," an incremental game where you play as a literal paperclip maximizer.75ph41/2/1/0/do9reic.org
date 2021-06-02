@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: CeruleanTresses
+:Score: 19
+:DateUnix: 1507824857.0
+:DateShort: 2017-Oct-12
+:END:
+
+Press F12 to bring up the developer console. Click the "console" tab. Type this into the console:
+
+processors -= 1;
+
+and press Enter. This essentially "sells" a processor. The number of processors shown on your screen won't update unless you buy another one, but you should be able to put a point into Memory. (If you want the number of processors shown to be accurate, you can sell 2 instead and then buy one processor and one memory.)
+
+As long as you don't have more than 33 processors, you should be able to proceed with the game. It doesn't sound like you're at the stage yet where the too-many-processors softlock occurs, so your game must have slowed down for another reason.
+
+If you ever want to reset it for real, I've never done this myself but apparently if you spam quantum computing until you hit like -10k ops, you get the option to reset. Or you could just clear your cookies.

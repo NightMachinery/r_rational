@@ -1,0 +1,52 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 9
+:DateUnix: 1490367944.0
+:DateShort: 2017-Mar-24
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+So I have to apologize for not updating last week. Deadlines, while great for productivity, are not so great when the total time I have available is so small and thus extremely susceptible to setbacks.  I think I'm going to shift more to communicating my what my next task /is/, and not committing to a specific time for completion.  
+
+In addition, I'm going to start working on a 3 weeks on, 1 week off schedule (which is more a formalization of the status quo anyway), so as to introduce a pressure valve.  This past week will count as my week off, so the next three weeks will be on.
+
+--------------
+
+In spite of calling this last week my week off, I did get quite a bit done when I had not committed myself to /needing/ to get anything done.
+
+First, I managed to get chunks to understand how far they are from the player, which will of course be necessary for dynamically allocating simulation time to chunks which are further away:
+
+[[http://i.imgur.com/vyTICYJ.gifv]]
+
+In the above image, you can see that those chunks follow the strictest definition of “distance”; because of the way that corners work on a rhombus made out of hexes, it results in some rather wonky topography where the jagged corners exist because of the corner technically being covered.  It's unintuitive and I later overrode this to be a bit more intuitive, but it's only one of many strange behaviors that one gets when one doesn't use square grids.
+
+Chunks now load from a pool based on a few different limits: I can say that chunks can only be loaded within a certain distance of the player, and I can also determine a total chunk limit.  Both of these numbers are enforced and can be changed dynamically at runtime:
+
+[[http://i.imgur.com/xdJkZzA.gifv]]
+
+Both of these gifs show a traditional wrapping setup, where the entities that cross over a boundary automatically teleport to the applicable spot on the opposite side. As shown, this does result in an invisible barrier that would have to be worked around (usually done by locking the camera so it doesn't show the barrier).  However, it also requires that all entities that exist on the wrapped portion of the map be represented with a certain amount of “ghosting”, something like this:
+
+[[https://cdn.tutsplus.com/gamedev/uploads/2014/03/tutsplus-ghosts.png]]
+
+Having so many copies of entities seems to me that it will produce a ton of headaches in the long run, simulation-wise.  Instead, I opted to change everything over to operate the way I had originally designed, where the player can move anywhere at all and they are never teleported, and the map itself handles the logic of deciding which chunk to load beneath the player's feet.  
+
+This /does/ mean that the game has to have a maximum distance that one can go.  If I travel to the right and never stop, the world will cycle and wrap beneath me, but my X position goes to 100, then 1000, then 10,000, and on and on until we start to hit issues with floating point precision.  If any of you are familiar with the Far Lands in old Minecraft builds, this was a similar issue that they ran into: eventually, the part of your position before the decimal is so large that there is no data left to represent the portion after the decimal, and so you can only move in increments larger than a block or more.  
+
+However, since this actual position limit for a single-precision floating point decimal would be somewhere around 8-10 million, I'm confident that this limitation won't be an issue in practice.  After all, when the player saves and loads the game, I can push all entities to sit within the wrapped coordinates of the original map no problem, effectively invisibly resetting the coordinates every load.  So one would have to somehow traverse 5000 km (3106 miles) /in a single play session/ to break this limit.  
+
+Anyway, enough theory.  Once I got the infinite positioning stuff working, I threw together some quick and dirty block creation/destruction code, and now the actual wrapping effect is evident:
+
+[[http://i.imgur.com/r7zSRLB.gifv]]
+
+(You might notice that the colors pop; my tile coloring code only triggers when the chunk boundaries are crossed, so you end up with all sorts of interesting weirdnesses that I haven't bothered to fix yet.)
+
+And there we have it!  A fully-functioning, wrapping voxel world.  It's currently using the standard Torus wrapping.  I have one final addition to make, that of making it operate more like a sphere (well, a cylinder), and then I'll be satisfied that I've explored the finicky parts of the voxel design.
+
+I have actually [[https://drive.google.com/open?id=0B0LYycfi-K18Xy1kUl9EeS1sVXM][thrown a build together here]], for Windows, Linux, and Mac.  Controls are ESDF to move, left mouse button to create a block, right mouse button to delete a block. I still would not recommend full screen (I keep forgetting to add ESC to exit).  
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

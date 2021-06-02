@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: DCarrier
+:Score: 17
+:DateUnix: 1463330436.0
+:DateShort: 2016-May-15
+:END:
+
+I don't know how you guys feel about reposting comments onto the reddit part, but I figured out how to "solve" their physics last time and I wanted to post it somewhere other than five comments from the bottom.
+
+Instead of actually isolating each letter, all you need to do is come up with reactions that produce extra of each letter, and use them together. For example, if you want to make a cat, you use (crab -> bar + c) + (bead -> bed + a) + (tart -> tar + t) = crab + bead + tart -> bar + bed + tar + cat.
+
+This can be further improved upon. In this case, you'd need to put the bar, bed, and tar into the nanofab afterwards to get another crab, bead and tart. Consider the e-producing reaction axe -> ax + e. Since ax is a synonym for axe, you can just keep using it, and get as much e as you want.
+
+Unfortunately, you probably won't find synonyms that nice for every letter. You can use combinations to get letters, but that would seem to be too difficult.
+
+Then I realized you just need matrices. For each pair of synonyms, you make one row in the matrix by subtracting the letters of one from the other. For example, axe = ax gives (0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0). Couch = sofa gives (-1,0,2,0,0,-1,0,1,0,0,0,0,0,0,0,0,0,0,-1,0,1,0,0,0,0,0). Hopefully, you get an invertible matrix. If it isn't invertible, just remove the linearly dependant synonyms and find some more. Once you have the matrix, just invert it.
+
+Now each row represents a reaction that takes a certain set of objects, and produces those same objects plus a letter. You can produce capsules for each letter so that you can stick them together to produce whatever it is you need. Alternately, you can make a vector representing the number of each letter in whatever you want to produce, multiply the matrix by that, and use the given reactions to produce that object.
+
+To stop the world from ending, couldn't he just have used the reaction sound + grin -> ground + sin? There doesn't seem to be anything forcing the reaction to go in a particular direction.

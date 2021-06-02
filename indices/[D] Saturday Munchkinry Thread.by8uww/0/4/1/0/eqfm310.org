@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: ShiranaiWakaranai
+:Score: 3
+:DateUnix: 1560022945.0
+:DateShort: 2019-Jun-09
+:END:
+
+Well, whether this method is feasible depends on how quickly you can send queries, and whether you can send multiple in parallel, or do other kinds of queries like "tell me which of the 1mm3 cubes in this volume of space have high ink content".
+
+The main idea is to do binary search on the house to find any kind of paper, then binary search parts of the paper to determine where the inked volumes are and are not. Since the snapshot has 1 nanometer resolution, this is way more than enough to determine exactly which parts of the paper have ink and which do not, effectively letting you create a picture of the paper and read it.

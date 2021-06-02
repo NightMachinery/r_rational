@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: Psychobeans
+:Score: 4
+:DateUnix: 1444175822.0
+:DateShort: 2015-Oct-07
+:END:
+
+I can cut the number of brute force questions required with a binary search. "Is the first letter of the answer to "X" in the first half of the English alphabet?"
+
+I could cut even more by asking "Is the first vowel of the first word of the answer to "X" in the first half of the English alphabet?". Once I have the vowels of each word, figuring out the full answer should be easy, and I can narrow it down with more questions and end with "Does "Y" answer "X"?" to check my work. Sure, it will take a few days, but I don't need to ask it for literally every letter.

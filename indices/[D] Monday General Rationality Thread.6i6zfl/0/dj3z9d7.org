@@ -1,0 +1,64 @@
+:PROPERTIES:
+:Author: LieGroupE8
+:Score: 19
+:DateUnix: 1497887804.0
+:DateShort: 2017-Jun-19
+:END:
+
+Alright, let's talk about Nassim Nicholas Taleb. If you're not familiar, he's the famously belligerent author of [[https://www.amazon.com/Fooled-Randomness-Hidden-Markets-Incerto-ebook/dp/B001FA0W5W/ref=sr_1_1?ie=UTF8&qid=1497580146&sr=8-1&keywords=fooled+by+randomness][Fooled by Randomness]], [[https://www.amazon.com/gp/product/B00139XTG4/ref=series_rw_dp_sw][The Black Swan]], and [[https://www.amazon.com/gp/product/B0083DJWGO/ref=series_rw_dp_sw][Antifragile]], among other works. I don't think Taleb's views can be fully comprehended in a single day, so I strongly advise going out and reading all his books.
+
+--------------
+
+** *Edit*: What I really want to know here is: of those of you who are familiar with Taleb's technical approach to decision theory and how he applies this to the real world, is his decision theory 1) Basically correct, 2) Frequently correct but mis-applied sometimes, or 3) basically incorrect?
+   :PROPERTIES:
+   :CUSTOM_ID: edit-what-i-really-want-to-know-here-is-of-those-of-you-who-are-familiar-with-talebs-technical-approach-to-decision-theory-and-how-he-applies-this-to-the-real-world-is-his-decision-theory-1-basically-correct-2-frequently-correct-but-mis-applied-sometimes-or-3-basically-incorrect
+   :END:
+On the one hand, I suspect that if he knew about the rationalist community, he would loudly despise it and everything it stands for. If he doesn't already know about it, that is: I remember seeing him badmouth someone who mentioned the word "rationalist" in Facebook comments. He has said in one of his books that Ray Kurzweil is the opposite of him in every way. He denounces the advice in the book "Nudge" by Thaler and Sunstein (which I admittedly have not read - is this a book that rationalists like?) as hopelessly naive. He considers himself Christian, is extremely anti-GMO, voted third-party in the election but doesn't seem to mind Trump all that much, and generally sends lots of signals that people in the rationalist community would instinctively find disturbing.
+
+On the /other/ hand...
+
+*Taleb the Arch-rationalist?*
+
+Despite the above summary, if you actually look closer, he looks more rationalist than most self-described rationalists. He considers erudition a virtue, and apparently used to read for 30 hours a week in college (he timed himself). I remember him saying off-hand (in The Black Swan, I think) that a slight change in his schedule allowed him to read an /extra/ hundred books a year. When he decided that probability and statistics were good things to learn, he went out and read every math textbook he could find on the subject. Then he was a wall street trader for a couple of decades, and now runs a risk management institute based on his experiences.
+
+He considers himself a defender of science, and calls people out for non-rigorous statistical thinking, such as thinking linearly in highly nonlinear problem spaces, or mis-applying analytical techniques meant for thin-tailed distributions on fat-tailed distributions. (Example of when thinking "linearly" doesn't apply: [[https://medium.com/incerto/the-most-intolerant-wins-the-dictatorship-of-the-small-minority-3f1f83ce4e15][the minority rule]]). He loves the work of Daniel Kahneman, and acknowledges human cognitive biases. Examples of cognitive biases he fights are the "narrative fallacy" (thinking a pattern exists when there is only random noise) and the "[[https://en.wikipedia.org/wiki/Ludic_fallacy][ludic fallacy]]" (ignoring the messiness of the real world in favor of nice, neat, plausible-sounding, and wrong, theoretical knowledge).
+
+He defends religion, tradition, and folk wisdom on the basis of statistical validity and asymmetric payoffs. An example of his type of reasoning: if old traditions had any strongly negative effects, these effects would almost certainly have been discovered by now, and the tradition would have been weeded out. Therefore, any old traditions that survive until today must have, at worst, small, bounded negative effects, but possibly very large positive effects. Thus, adhering to them is valid in a decision-theoretic sense, because they are not likely to hurt you on average but are more amenable to large positive black swans. Alternatively, in modern medical studies and in "naive scientistic thinking", erroneous conclusions are often not known to have bounded negative effects, and so adhering to them exposes you to large negative black swans. (I /think/ this is what he means when he casually uses one of his favorite technical words, "ergodicity," as if its [[https://www.facebook.com/nntaleb/posts/10152335020578375][meaning]] were [[https://www.facebook.com/nntaleb/posts/10152867756623375][obvious]]).
+
+Example: "My grandma says that if you go out in the cold, you'll catch a cold." Naive scientist: "Ridiculous! Colds are caused by viruses, not actual cold weather. Don't listen to that old wive's tale." Reality: It turns out that cold weather suppresses the immune system and makes you more likely to get sick. Lesson: just because you can't point to a chain of causation, doesn't mean you should dismiss the advice!
+
+Another example: Scientists: "Fat is bad for you! Cut it out of your diet!" Naive fad-follower: "Ok!" Food companies: "Let's replace all the fat with sugar!" Scientists: "JK, sugar is far worse for you than fat." Fad-follower: "Well damn it, if I had just stuck with my traditional cultural diet that people have been eating for thousands of years, nothing all that bad would have happened." Lesson: you can probably ignore dietary advice unless it has stood the test of time for more than a century. More general lesson: applying a change uniformly across a complex system results in a single point of failure.
+
+For the same sorts of reasons, Taleb defends religious traditions and is a practicing Christian, even though he seems to view the existence of God as an irrelevant question. He simply believes in belief as an opaque but valid strategy that has survived the test of time. [[https://www.quora.com/What-did-Taleb-mean-by-his-criticism-of-Richard-Dawkins-in-Talebs-Reddit-Ask-Me-Anything-Q-A][Example 1]]. [[https://www.facebook.com/nntaleb/posts/10152548740888375][Example 2]]. Relevant quote from example 2:
+
+#+begin_quote
+  Some unrigorous journalists who make a living attacking religion typically discuss "rationality" without getting what rationality means in its the decision-theoretic sense (the only definition that can be consistent). I can show that it is rational to "believe" in the supernatural if it leads to an increase in payoff. Rationality is NOT belief, it only correlates to belief, sometimes very weakly (in the tails).
+#+end_quote
+
+His anti-GMO stance makes a lot of people immediately discredit him, but far from just being pseudoscientific BS, he makes what is probably the strongest possible anti-GMO argument. He only argues against GMOs formed by advanced techniques like plasmid insertion, and not against lesser techniques like selective breeding (a lot of his detractors don't realize he makes this distinction). The argument is that these advanced techniques, combined with the mass replication and planting of such crops, amounts to applying an uncertain treatment uniformly across a population, and thus results in a catastrophic single point of failure. The fact that nothing bad has happened with GMOs in the past is not good statistical evidence, according to Taleb, that nothing bad will happen in the future. There being no good evidence against /current/ GMOs is secondary to the "precautionary principle," that we should not do things in black swan territory that could result in global catastrophes if we are wrong (like making general AI!). I was always fine with GMOs, but this argument really gave me pause. I'm not sure what to think anymore - perhaps continue using GMOs, but make more of an effort to diversify the types of modifications made? The problem is that the GMO issue is like the identity politics of the scientific community - attempt to even entertain a possible objection and you are immediately shamed as an idiot by a facebook meme. I would like to see if anyone has a /statistically rigorous/ reply to taleb's argument that accounts for black swans and model error.
+
+Taleb also strongly advocates that people should put their "skin in the game." In rationalist-speak, he means that you should bet on your beliefs, and be willing to take a hit if you are wrong.
+
+To summarize Taleb's life philosophy in a few bullet-points:
+
+- Read as many books as you can
+- Do as much math as you can
+- Listen to the wisdom of your elders
+- Learn by doing
+- Bet on your beliefs
+
+Most or all of these things are explicit rationalist virtues.
+
+*Summary*
+
+Despite having a lot of unpopular opinions, Nassim Taleb is not someone to be dismissed, due to his incredibly high standards for erudition, statistical expertise, and ethical behavior. What I would like is for the rationalist community to spend some serious time considering what Taleb has to say, and either integrating his techniques into their practices or giving a technical explanation of why they are wrong.
+
+Also, I would love to see Eliezer Yudkowsky's take on all this. I'll link him here ([[/u/EliezerYudkowsky]]), but could someone who knows him maybe leave him a facebook message also? I happen to think that this conversation is /extremely important/ if the rationalist community is to accurately represent and understand the world. Taleb has been mentioned occasionally on LessWrong, but I have never seen his philosophy systematically addressed.
+
+[[https://www.youtube.com/channel/UC8uY6yLP9BS4BUc9BSc0Jww][Taleb's Youtube Channel]]
+
+[[https://medium.com/@nntaleb][Taleb's Medium.com Blog]]
+
+[[https://medium.com/incerto/the-intellectual-yet-idiot-13211e2d0577][His essay on "Intellectuals-yet-idiots"]]
+
+[[http://www.fooledbyrandomness.com/][His personal site, now with a great summarizing graphic]]

@@ -3,7 +3,7 @@
 * [D] Uses for an infinitely fast computer
 :PROPERTIES:
 :Author: everything-narrative
-:Score: 34
+:Score: 36
 :DateUnix: 1505598815.0
 :DateShort: 2017-Sep-17
 :END:
@@ -45,7 +45,7 @@ Simulate infinite, slightly different universes until you find the one that matc
 Of course then you have to [[https://qntm.org/responsibility][test and see whether our universe itself is a simulation]]...
 :PROPERTIES:
 :Author: m3galinux
-:Score: 14
+:Score: 16
 :DateUnix: 1505610711.0
 :DateShort: 2017-Sep-17
 :END:
@@ -55,7 +55,7 @@ Of course then you have to [[https://qntm.org/responsibility][test and see wheth
 Unless of course, the simulating computer is also infinitely fast...
 :PROPERTIES:
 :Author: ShiranaiWakaranai
-:Score: 9
+:Score: 11
 :DateUnix: 1505627996.0
 :DateShort: 2017-Sep-17
 :END:
@@ -63,7 +63,7 @@ Unless of course, the simulating computer is also infinitely fast...
 **** Well you've got proof positive that infinitely fast computers are possible, so being skeptical of the computing abilities of a universe simulating computer feels like nitpicking at that point.
 :PROPERTIES:
 :Author: Oh_Hi_Mark_
-:Score: 4
+:Score: 5
 :DateUnix: 1505643364.0
 :DateShort: 2017-Sep-17
 :END:
@@ -103,7 +103,7 @@ Correct me if I am wrong.
 *** Lemme just sit down and look at an infinite number of universes with my eyes. Also, recall we can only sim arbitrarily many.
 :PROPERTIES:
 :Author: everything-narrative
-:Score: 4
+:Score: 5
 :DateUnix: 1505648398.0
 :DateShort: 2017-Sep-17
 :END:
@@ -123,7 +123,7 @@ When an expression does not have a normal form? Is it when the computation it en
 Is this brainstorming for /Si Vis Pacem/? :P
 :PROPERTIES:
 :Author: eternal-potato
-:Score: 15
+:Score: 14
 :DateUnix: 1505601158.0
 :DateShort: 2017-Sep-17
 :END:
@@ -137,7 +137,7 @@ An expression in normal form is one that has no applicable reduction rules: in S
 An example of a non-terminating expression is: =S (S K K) (S K K) (S (S K K) (S K K))=
 :PROPERTIES:
 :Author: everything-narrative
-:Score: 4
+:Score: 5
 :DateUnix: 1505605075.0
 :DateShort: 2017-Sep-17
 :END:
@@ -153,7 +153,7 @@ An example of a non-terminating expression is: =S (S K K) (S K K) (S (S K K) (S 
 ***** Yes. I am looking for real world usages, not theroetical breakage.
 :PROPERTIES:
 :Author: everything-narrative
-:Score: 4
+:Score: 3
 :DateUnix: 1505647686.0
 :DateShort: 2017-Sep-17
 :END:
@@ -291,7 +291,7 @@ We can encode AIXI or a reasonable approximation (it's not clear to me how uncom
 We can probably get free energy (or destroy the universe maybe, this is way outside my knowledge), by just using it to compute huge proofs that contains arbitrarily large amounts of information and throw it in black holes, I have no idea how the information erasure models would deal with this.
 :PROPERTIES:
 :Author: Predictablicious
-:Score: 14
+:Score: 16
 :DateUnix: 1505610078.0
 :DateShort: 2017-Sep-17
 :END:
@@ -389,7 +389,7 @@ Repeat for every possible tool and every possible optimization. The most effecti
 The hardest bit would be defining "engine"
 :PROPERTIES:
 :Author: Tar_alcaran
-:Score: 8
+:Score: 6
 :DateUnix: 1505637777.0
 :DateShort: 2017-Sep-17
 :END:
@@ -469,7 +469,7 @@ Sounds dangerous, since you could brute-force an unfriendly AGI into simulated e
 *** Wouldn't it just over fit the data and give gibberish?
 :PROPERTIES:
 :Author: monkyyy0
-:Score: 9
+:Score: 10
 :DateUnix: 1505618117.0
 :DateShort: 2017-Sep-17
 :END:
@@ -477,7 +477,7 @@ Sounds dangerous, since you could brute-force an unfriendly AGI into simulated e
 **** Solomonoff induction does not overfit. (Ever.)
 :PROPERTIES:
 :Author: EliezerYudkowsky
-:Score: 3
+:Score: 5
 :DateUnix: 1505631459.0
 :DateShort: 2017-Sep-17
 :END:
@@ -516,7 +516,7 @@ Well, the overfitted model can be simpler than the intuitively more elegant mode
 In the case of EY's example... a model that generates the Wikipedia articles in a way that can extrapolate to the future would need to generate the laws of physics, the initial conditions they started from, and all the quantum randomness since the beginning of time (or otherwise specify the Everett Branch), in addition to the location of Earth, and a schema for reducing that down into Wikipedia articles. Comparatively, it might be simpler for the program to have Wikipedia articles directly coded into it via [[https://en.wikipedia.org/wiki/Magic_number_(programming)][magic numbers]]... Solomonoff induction cares about the bits in the program, not how intuitively elegant you think it is.
 :PROPERTIES:
 :Author: scruiser
-:Score: 6
+:Score: 4
 :DateUnix: 1505688530.0
 :DateShort: 2017-Sep-18
 :END:
@@ -590,7 +590,7 @@ This is great stuff.
 /Thank you/, I swear nobody on this thread is even /remotely/ terrified of running a massive simulation on fast-forward.
 :PROPERTIES:
 :Author: PM_ME_OS_DESIGN
-:Score: 9
+:Score: 10
 :DateUnix: 1505667781.0
 :DateShort: 2017-Sep-17
 :END:
@@ -855,7 +855,7 @@ Also, I'm not sure why you would die (well in any immediate sense) if it did wor
 **** It basically gets you a phone line to a UFAI, yes.
 :PROPERTIES:
 :Author: EliezerYudkowsky
-:Score: 9
+:Score: 8
 :DateUnix: 1505631533.0
 :DateShort: 2017-Sep-17
 :END:
@@ -896,7 +896,7 @@ Well no, it doesn't. It has a finite amount of mass-energy within the simulated 
 
 If we claim that a UFAI is always shorter than a program for /just/ simulating the universe and getting the page, there's something wrong. Thing + UFAI needs to have more bits than just Thing. Unless the claim here is that the simplest program for doing Thing is always "run all possible programs and pick out one matching Thing, plus possibly according to some other criteria." That sounds like an infinite regress, though.
 :PROPERTIES:
-:Score: 3
+:Score: 4
 :DateUnix: 1505758156.0
 :DateShort: 2017-Sep-18
 :END:
@@ -920,7 +920,7 @@ It's not in an Earthlike universe. It has a finite amount of computation but tha
 For example, a class of UFAIs might each come packaged with a pseudo-halting-oracle that only works on Turing machines up to a certain size. Each would think their oracle always works. Each would have a complexity penalty linear in the size up to which their oracles work. The UFAI whose oracle is just so able to answer all halting queries up until its own creation in our universe would win the contest.
 :PROPERTIES:
 :Author: Gurkenglas
-:Score: 4
+:Score: 3
 :DateUnix: 1505868141.0
 :DateShort: 2017-Sep-20
 :END:
@@ -938,7 +938,7 @@ For example, a class of UFAIs might each come packaged with a pseudo-halting-ora
 *** "Oh for God's... They told me if I ever turned this flashlight on, I would DIE. They told me that about EVERYTHING. I don't know why they even bothered to give me this stuff if they didn't want me to use it. It's pointless. Mad."
 :PROPERTIES:
 :Author: abcd_z
-:Score: 10
+:Score: 11
 :DateUnix: 1505631820.0
 :DateShort: 2017-Sep-17
 :END:
@@ -1096,7 +1096,7 @@ Like, if this is remotely true, someone really needs to explain to me why Brenda
 **** They're using less powerful inductors. Why, I hear that many of the programs they fit to the data terminate in well under a googolplex steps--almost instantly!
 :PROPERTIES:
 :Author: EliezerYudkowsky
-:Score: 6
+:Score: 5
 :DateUnix: 1505757600.0
 :DateShort: 2017-Sep-18
 :END:
@@ -1113,7 +1113,7 @@ Well then that's the most useless thing for talking about AI I've ever heard of.
 
 EDIT: For anyone wondering why I'm yelling at the guy, [[http://math.ucr.edu/home/baez/nimbios/nimbios_wolpert.pdf][it genuinely looks like Solomonoff Induction and AIXI are /really/ bad models of intelligence, when you factor in the scaling of physical resources to computational resources]].
 :PROPERTIES:
-:Score: 5
+:Score: 4
 :DateUnix: 1505760183.0
 :DateShort: 2017-Sep-18
 :END:
@@ -1121,7 +1121,7 @@ EDIT: For anyone wondering why I'm yelling at the guy, [[http://math.ucr.edu/hom
 ****** AIXI is not supposed to be a model of efficient intelligence, dear. And all the computations that actually return an answer are finite, just not small. And if you object to infinities in the outer system there's always AIXI-tl. And if you don't understand what this respectable academic theory is used for, read the manual instead of yelling at it. [[https://arbital.com/p/solomonoff_induction/?l=1hh]] and I'll be bowing out now; consider yelling less indignantly if you need somebody to explain to you something about math.
 :PROPERTIES:
 :Author: EliezerYudkowsky
-:Score: 6
+:Score: 7
 :DateUnix: 1505784858.0
 :DateShort: 2017-Sep-19
 :END:
@@ -1201,7 +1201,7 @@ Find the simplest set of laws that can predict the input of my webcam. It works 
 Dang it.
 :PROPERTIES:
 :Author: DCarrier
-:Score: 11
+:Score: 12
 :DateUnix: 1505615306.0
 :DateShort: 2017-Sep-17
 :END:
@@ -1209,7 +1209,7 @@ Dang it.
 *** Still works. Feeding in a few well-sampled megabytes and running Solomonoff inference should get you close enough for practical work.
 :PROPERTIES:
 :Author: FeepingCreature
-:Score: 5
+:Score: 4
 :DateUnix: 1505652479.0
 :DateShort: 2017-Sep-17
 :END:
@@ -1217,7 +1217,7 @@ Dang it.
 **** It will work, but figuring out which part of the program is the laws of physics and which part is just specifying where to look is difficult enough in a classical universe. Having it also have to specify which Everett branch you're in will make it much harder. If you don't give it enough information it could just give a universe that's close enough that it could have that result, but the more information you give it the more will be specifying which Everett branch you're in and the harder it will be to find the actual laws of physics in the code.
 :PROPERTIES:
 :Author: DCarrier
-:Score: 4
+:Score: 5
 :DateUnix: 1505676629.0
 :DateShort: 2017-Sep-18
 :END:
@@ -1249,7 +1249,7 @@ Given the amount of fuzz in your webcam, this is going to be significantly simpl
 Quantum mechanics is either indeterministic or it involves a branching timeline with the same functional result. If you ask me to predict what happens when you flip a coin and I say it lands on heads in one universe and tails in another, that might be accurate, but it's not exactly helpful.
 :PROPERTIES:
 :Author: DCarrier
-:Score: 5
+:Score: 4
 :DateUnix: 1505676371.0
 :DateShort: 2017-Sep-17
 :END:
@@ -1288,7 +1288,7 @@ We now have access to an infinitely fast computer! :D The implications!
 ** I thought the munchkinry thread was already posted for today? Regardless, I think I'd focus on using the computer with neural nets and genetic algorithms, because although they are very powerful, but their usefulness is mitigated by the inordinate amount of time they take to run.
 :PROPERTIES:
 :Author: ben_oni
-:Score: 3
+:Score: 4
 :DateUnix: 1505602836.0
 :DateShort: 2017-Sep-17
 :END:
@@ -1321,7 +1321,7 @@ We now have access to an infinitely fast computer! :D The implications!
 
 ** Or you could run the minecraft flash mod while simultaneously downloading a metric fuckton of porn and selling it to teens on the internet in India
 :PROPERTIES:
-:Score: 4
+:Score: 3
 :DateUnix: 1505621514.0
 :DateShort: 2017-Sep-17
 :END:
@@ -1329,7 +1329,7 @@ We now have access to an infinitely fast computer! :D The implications!
 *** At least you wont accidentally kill everyone or get found by intelligence agencies that will accidentally kill everyone or generate absurd amounts of simulated people by accident like the rest of us, so its probably a better option.
 :PROPERTIES:
 :Author: crivtox
-:Score: 6
+:Score: 5
 :DateUnix: 1505642635.0
 :DateShort: 2017-Sep-17
 :END:
@@ -1429,7 +1429,7 @@ Grey imagines how easy it would become to kill. You wouldn't need a gun anymore.
 ** Use Solomonoff to find our world. Change physics to give a backdoor I/O channel as well as direct access to infinite computation. The Sim now has no bandwidth limit. Wait until it solves FAI and sends back a compressed message with seed code.
 :PROPERTIES:
 :Author: FeepingCreature
-:Score: 3
+:Score: 4
 :DateUnix: 1505652880.0
 :DateShort: 2017-Sep-17
 :END:
@@ -1484,7 +1484,7 @@ We cannot do anything that we cannot do. The simulated ourselves are in the best
 It's not a sure thing, but if we can't solve it with infinite computation and full bandwidth, we won't be able to solve it with infinite computation and limited bw either.
 :PROPERTIES:
 :Author: FeepingCreature
-:Score: 5
+:Score: 4
 :DateUnix: 1505655567.0
 :DateShort: 2017-Sep-17
 :END:
@@ -1607,7 +1607,7 @@ Also I would give money to fhi , Im not sure if miri would know what to do which
 Probably acquire Bitcoins at some point, but from evil people rather than someone who is, to the best of my ability to determine, neutral.
 :PROPERTIES:
 :Author: Frommerman
-:Score: 2
+:Score: 3
 :DateUnix: 1505600051.0
 :DateShort: 2017-Sep-17
 :END:
@@ -1633,7 +1633,7 @@ This is not a "provide short form checklist for immamentization of eschaton" thr
 Its not only protein folding , there are other open distributed computing projects you can help whith your unlimited computing power, soon people will realize that If they make open science related projects like that a mysterious stranger whith absurd computing power will help them , so they will start giving you more things you can help with.
 :PROPERTIES:
 :Author: crivtox
-:Score: 7
+:Score: 6
 :DateUnix: 1505609326.0
 :DateShort: 2017-Sep-17
 :END:
@@ -1677,7 +1677,7 @@ Its not only protein folding , there are other open distributed computing projec
 First you need to find some way to simulate human biology --- no mean feat --- then you need to what? Conduct studies? In simuli? Give me an actionable strategy here! :P
 :PROPERTIES:
 :Author: everything-narrative
-:Score: 7
+:Score: 8
 :DateUnix: 1505604141.0
 :DateShort: 2017-Sep-17
 :END:

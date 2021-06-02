@@ -1,0 +1,54 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 13
+:DateUnix: 1533921122.0
+:DateShort: 2018-Aug-10
+:END:
+
+Occasionally Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Long time no update!  But unlike the last few gaps of communication, this is not due to lack of work being done but lack of things that I felt were meaningful to present here.  As you might imagine after an intro like that, I've now hit a milestone that merits presentation, so here we go.
+
+Last time I commented I [[https://cdn.discordapp.com/attachments/230041937984487424/453401451465539606/command_line_grid.gif][posted this gif]], which is of a prototype I wrote that roughly showcases how I want the movement logic to feel: smooth and intuitive using WASD, in spite of adhering to a quantized hex model. This prototype was originally set up to explore separating logic between a client and server, but did so in a manner that's faking it, really.  
+
+[[https://cdn.discordapp.com/attachments/230041937984487424/477357351557660682/client_server.gif][Here is what that prototype looks like now]]
+
+As you can see, the logic is now /actually/ divided out in two completely separate executables that communicate with one another over the network (this recording was done on my local machine, but it has actually been tested going cross-continent over the internet).  The vast majority of the work done over the past two months was in either A: reorganizing XGEF's structure as the abstract became more concrete, or B: fleshing out the networking and event systems which are now the backbone of the client/server divide.
+
+--------------
+
+The networking part of the code is implemented as a set of wrappers for the C# port of the Netcode.IO library, which is built from [[https://gafferongames.com/categories/building-a-game-network-protocol][this truly enlightening blog post series]] about building a UDP game network protocol.  If you're interested at all in the nitty-gritty details related to networking programming, I can /highly/ recommend this series, as well as [[https://gafferongames.com/categories/networked-physics][this series on networked physics]] by the same author (this second series in particular is more visual, with easy-to-understand gifs and should be accessible to even non-technical readers).  
+
+[[https://github.com/KillaMaaki/Netcode.IO.NET][Netcode.IO.NET is here]].  I also utilized a compatible library called [[https://github.com/KillaMaaki/ReliableNetcode.NET][ReliableNetcode.NET]] which takes the UDP-based networking of Netcode.IO and adds support for optional guaranteed packet ordering and other such benefits.  
+
+--------------
+
+#+begin_quote
+  But wait, I thought I remembered you saying this wasn't going to be multiplayer!
+#+end_quote
+
+Well remembered!  It won't be. However there's significant benefit to enforcing the separation between input/presentation/rendering (client) and world simulation/logic (server) from an organizational standpoint, which was always my primary motivation behind this particular set of goals.  This simply enforces that division and makes it literally impossible to mess up that design pattern.
+
+(But, yes, now any future modders who might want to do a multiplayer overhaul will find that undertaking merely herculean, rather than outright impossible as it would have been otherwise.)
+
+#+begin_quote
+  Then if this is going to be single-player, isn't that inefficient to be sending all sorts of network traffic between two separate local programs?
+#+end_quote
+
+All the major operating systems are actually smart enough to recognize a network instruction that binds to the localhost address (127.0.0.1, or the network equivalent of saying “myself”) and automatically intercept it and transform it to use pipes instead, which are the standard means of communicating between local programs anyway.  
+
+So rather than muck about with that myself, I'll stick to using a context that I'm more familiar with and let the OS worry about the low-level implementation.  Plus, this permits behavior such as hosting the simulation on a beefier computer and connecting to it using the client out-of-the-box (as well as opening the door to an eventual multiplayer overhaul, as mentioned).
+
+--------------
+
+There's still a lot of polish to be done to these systems, and in particular I'm not pleased with the current unit test coverage (tho there's only so much to be done for that; by splitting the logic so completely it actually forces tests to cross the line from unit tests to integration tests, and those are slightly more complex).  
+
+However, all the groundwork is now laid for me to actually start working on the combat system, so maybe here by the end of the year I'll actually have something that's even recognizably game-like, gasp.  
+
+Took me long enough.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!

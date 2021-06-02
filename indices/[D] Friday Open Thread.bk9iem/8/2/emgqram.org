@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: red_adair
+:Score: 1
+:DateUnix: 1556944791.0
+:DateShort: 2019-May-04
+:END:
+
+Not Firefox's problem; the signatures on many extensions depend upon certificates where the intermediary certificate between the signing cert and the trust root has expired: [[https://bugzilla.mozilla.org/show_bug.cgi?id=1548973]]

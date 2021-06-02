@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: codahighland
+:Score: 5
+:DateUnix: 1433864947.0
+:DateShort: 2015-Jun-09
+:END:
+
+Well, 10^{11} kg would still be an extinction-level event -- this is the order of magnitude of the size of 1999 FN53, an asteroid with a diameter of approximately 680 meters, which passed within 6 million miles of Earth last month.
+
+Now, doing some EXTREMELY rough estimates... The asteroid belt is roughly 4x10^{8} km away. If we assume that our asteroid has zero tangential velocity relative to its orbit (reasonable: it IS, of course, in orbit) and we want it to hit Earth in 10 years... well, y = ax^{2} + bx + c. We define b to be 0, c to be 4x10^{11} meters, y to be 0 (that is, collision with Earth), and x to be 10 years, so the necessary acceleration (considering gravitational acceleration to be negligible) is roughly 4x10^{-6} m/s^{2.} F=ma, so that means it'd need to be exerting a constant force of 4x10^{6} N. That much force, exerted over a distance of 4x10^{11} meters, requires on the order of 10^{18} joules of energy.
+
+If we go for nuclear pulse propulsion, that requires detonating 12 optimized Tsar Bombas (that is, the version the Russians chose NOT to build) behind the asteroid -- one bomb every 300 days.
+
+Sounds reasonable until you realize that each Tsar Bomba weighs 27,000kg.
+
+(If you wanted to go for constant thrust instead of individual impulses, you'd need a 32GW thruster.)

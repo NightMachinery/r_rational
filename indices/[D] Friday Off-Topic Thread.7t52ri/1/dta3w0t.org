@@ -1,0 +1,68 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 9
+:DateUnix: 1516987676.0
+:DateShort: 2018-Jan-26
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Hoo boy, it's been a while.  If you can believe it, three weeks ago I actually missed this weekly update because, well, I got so far into the zone of actually working on Bill's PC that it slipped my mind to update. Honest to Arceus.  This /last/ week I had a more reasonable excuse, as I came down with bronchitis on Wednesday, didn't actually get it diagnosed until Friday, and couldn't even muster the energy to so much as play games until like Tuesday of this week.  As of today I'm probably back to 95% health, so I can finally get back to working on it proper.
+
+But!  There was a reasonable amount of progress during that time, so there /are/ things to report.  First and foremost, I found a decent hosting solution in github pages, so I no longer have to be hosting on my personal box just to let others see.  For the foreseeable future, this will be the canonical location of the latest version of Bill's PC 2:
+
+[[https://ketura.github.io/bills-pc-2/]]
+
+There's a handful of kinks to work out; css errors are producing 404s for some reason and not all the code is being ran as I expect it to, but this will do nicely.  
+
+First thing to note is that the types grid on the first tab is entirely generated; you can add a new type using the provided widgets to add both a new column and a new row automatically.  When I swing back around to work on the Types tab I'll re-enable cell editing, which is only now feasible because of design work done for the Species tab.
+
+Speaking of, the Species tab has the various sections sketched out, but the real work is mostly invisible.  If you put any values into the forms under Lore and press the Save button at the top, the values /should/ persist through reload...but it's persnickety.  Sometimes it works, sometimes it fails, and I /think/ it has to do with scripts being loaded in the wrong order.  Require.js is /supposed/ to take care of that, but I'm finding that failure or success depends on runtime order, which is non-deterministic for some reason.  It's mostly a visual bug anyway, the data is stored properly in local storage no problem.  I'm sure I'll get it eventually.
+
+At any rate, this shows at least the direction I'm trying to take it in.  No server state, all local data so that it can be ran either remotely (like this) or ran from one's local box with no issues.  Once I have the data loading figured out I'll be adding json import/export and then standardizing this functionality for all tabs, and then I get the joy of actually laying out all the [[https://imgur.com/a/pUlOy][dozens upon dozens of form controls]] and re-creating the graph functionality, etc.  That will honestly be fun; I quite enjoy making useful, usable little tools, and this is about as pure a representation of that as possible.
+
+--------------
+
+The weekend before I got sick, I ran what I call a [[https://docs.google.com/spreadsheets/d/1bQA6Pg2bi6mBQ788nsQ2dQvSKLibeU745gbGhWvHeQQ/edit#gid=0][rival mode run]] of Pokemon Black with my brother.  Rival mode is basically a race where two people play through a canon pokemon game, stopping to fight after each gym and the champion fight. The winner of each battle then gets to choose a reward from the spreadsheet linked above, and play continues.  
+
+(It was actually pointed out to us that it might actually be more interesting to give the /loser/ rewards and make it so the first to 5 victories wins, regardless of whether it's the first five gyms or not.  This is actually a very intriguing ruleset and we'll be using it next time, I think.)
+
+My brother went for more of an early game stomp, only spreading XP among three different pokemon at first, while I tried to get to a reasonable six-unit team as early as possible.  The result is pretty clear in the wins marked in the spreadsheet; I was destroyed early on (some of the fights had me losing six pokemon to literally one (damn sawk -_-)) but started to claw back some dignity in the mid game.  Once I had a decent amount of move coverage and my horrible, horrible EV luck stopped giving me pokemon with MULTIPLE 0 EV stats, I started doing better.  Interestingly, except the final battle, it was very seldom a tense back and forth; one or the other of us usually completely shut out the other, which I would not have expected.
+
+Still, I lost the final battle pretty handily, so I'm 0 for 2 against my brother in these runs.  I /did/ win the what-if match that involved pumping the pokemon to level 100, maxing IVs, manually allocating EVs, any legal moves, but that's to be expected since I have a much broader game knowledge than he does due to this project; I just can't bring it to bear on a blind playthrough.  Oh well.
+
+ketura's final team:    
+
+Emboar / Zweilous / Reshiram / Gurdurr / Krookodile / Sigilyph
+
+Asshat2's team:    
+
+Serperior / Sawk / Druddigon / Ho-Oh / Chandelure / Reshiram
+
+--------------
+
+This was the first time either of us had played gen V.  I was not impressed with the transition to 3D for the most part; the designers got far too much of a hard on making you sit on tracks while you are expected to oooh and aaah as you zip around pixelated 3D areas.  I was also not impressed that they decided this meant that every gorram gym had to be a set piece, especially when most of the “puzzles” amounted to holding left or up for a while until you stopped zipping around the screen.  
+
+(I /did/ enjoy that items could now be hidden ‘in plain sight' as it were, with the perspective of the scenery usually hiding items that were right next to you.  This was the only good impact of 3D that I identified.)
+
+The handholding was a joke.  I honestly thought it was a ballsey move to make the very first gym a direct counter to your starter, but then they snatched any goodwill they had made from that decision by /handing/ you an overlevelled direct counter.  So stupid.  
+
+I didn't like the linearity of the map; you go in one direction in one giant circle, never deviating, never backtracking, never really finding a reason to return. They force you to fly back to one of the early towns near the end as if reminding you that the world is in fact open, but then you fly right back and continue onwards.  
+
+I thought Team Plasma was a horrible waste of an actual decent concept.  A pokemon PETA that knocks over pokemon centers and frees whatever they capture into the wild could have been a /great/ villain, but instead it's 100% stocked with wannabe thugs that want to take your pokemon for their own rather than for misguided ‘greater good' intentions, and then the guy at the top knows he's running a scam anyway, so the whole team apparently has not a single person who actually believes the team's stated purpose.  What a farce.
+
+In general I felt like the story and the game mechanics did not mesh well.  Villains were constantly (like, on at least four concrete separate occasions), allowed to walk away because of bullshit reasons like “they would cause to much trouble”.  Bitch, with what, their weakass weasels and cats?  I could have taken on the entire team in one single, unending gauntlet by the time I was past like the fifth gym.  You can't tell me that a gym leader is incapable of knocking even more heads than me.
+
+Yes, yes, I know, I know, it's targeting ten year olds (for some ungodly reason; get your shit together Nintendo, your Red/Blue generation is in its 30s and, I promise you, has far more disposable income than they did when they were ten), but more and more as I slowly work my way through the generations I feel like there's a disconnect between the setting, the mechanics, and the story.  Writing for pokemon games has always been terrible, but with the shift to high-stakes The World Is In Danger type storylines it's become more and more highlighted just /how/ bad it is.  
+
+I can forgive bad writing (I'm not really a writer myself; stones and glass houses and all that), but I can't forgive writing that is directly at odds with a game's mechanics.  Nintendo is usually very good at making the two mesh; they decide /what/ mechanics they want, /then/ they go come up with bullshit story excuses to justify them, with triforces and goombas and whatever they happen to be smoking that day.  Gamefreak don't seem to have ever gotten this memo, however, and the disconnect between the two [[https://s3.amazonaws.com/AZComics/comic342.png][just gets worse and worse with each passing generation]].
+
+--------------
+
+Guess I'll have to shut up and go make a game that enforces a connection between the mechanics and the world :thinking:
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

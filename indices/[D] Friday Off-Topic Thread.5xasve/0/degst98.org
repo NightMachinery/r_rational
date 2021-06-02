@@ -1,0 +1,46 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 13
+:DateUnix: 1488562890.0
+:DateShort: 2017-Mar-03
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+So I don't have anything to show this week.  A combination of factors led to me getting practically nothing done until last night, where I at least got a chunk object able to spawn hexes in a rhombus shape.
+
+In Unity, sadly.  I think due to my late start, I'm not going to be able to give Xenko a reasonable look, and so I'll leave that for later.  Word is they're releasing in April.
+
+My truncated goals for the voxel prototype are as follows:
+
+- voxels are saved and loaded
+
+- voxels are organized into chunks of a variable size
+
+- chunks are organized into a cylindrical shape, so that the map wraps both horizontally and vertically
+
+And that's it.  Assuming I don't have another progress-less week ahead of me, this ought to be reasonably achievable.
+
+--------------
+
+We had a lot of debate in the #pokengineering channel about types.  
+
+I'm starting to get pushback over having typing be mutually exclusive, i.e. all of your typing has to add up to 100%.  The issue being brought up is, if a 100% Fire type pokemon is the absolute pinnacle of Fire potential, then it's impossible to have full potential for more than one type.
+
+That's a feature, not a bug, says I.
+
+Still, I can see where it might be an issue in some cases, such as Moltres having a smaller and smaller Flying affinity the more Fire we give it.  One would think, at first glance, that giving Moltres 40% Flying and 60% Fire should be good enough, but then we have creatures like Slugma.  If Slugma is 80% Fire due to pretty much just being a lump of sapient lava, does this make sense?  I would indeed expect Slugma to be hurt by a Water move more than Moltres would be, but that would /also/ mean that Slugma's offensive prowess at fire moves is potentially much higher than Moltres' due to the way that one's typing affects STAB.
+
+The system that was proposed to me involved removing the cap and permitting all types to go up to 100%, so Moltres might be 100% Fire 50% Flying, while Slugma would be 80% Fire.  However, I don't like the ramifications that this would have on things such as breeding or HM type manipulation: if you make yourself more Ice, you won't have to exchange some other typing for it.  I prefer the simple 100% total cap, which makes it so any advantage you gain in one area /automatically/ reduces advantage from some other area, without needing to police it constantly.
+
+So if that's off the table, then there must be some other way to address this issue.  After arguing about it for a few days, it was brought up that having typing be both an offensive and a defensive system is perhaps doing too many things.  We haven't fully identified what effect this will have, but we'll probably end up dividing Type into something like Offensive Typing and Defensive Typing.  
+
+Charizard, for instance, would defensively be something like 40% Dragon, 30% Flying, 20% Fire, 10% Normal, while offensively being 40% Fire, 30% Flying, 20% Dragon, 10% Normal.  After all, you'd have to hit it in the mouth or the tail to actually get reasonable mileage out of your Water damage, but it's also a /literal fire-breathing dragon/, so it's got a bit more punch than might be initially obvious.
+
+We're still working through the ramifications of this, so if you have anything to say, please speak up!
+
+----  
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

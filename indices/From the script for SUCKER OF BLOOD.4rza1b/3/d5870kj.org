@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: lvwolb
+:Score: 2
+:DateUnix: 1468262664.0
+:DateShort: 2016-Jul-11
+:END:
+
+I dunno. The way the proposed gene drive for mosquito extinction works makes me very uncomfortable, on a technical level.
+
+The problem is that the proposed approach behaves like a "endo-virus" with two ways of propagation: (1) Transmission along germ line. Simple, all kinds of virii do this. (2) Cross-chromosomal infection: One chromosome is infected (from the father), and then infects the other one. The proposed payload is basically "become male during embryogenesis", which will drive the target mosquito to extinction.
+
+Why is this scary? Because we put in all the required mechanisms for infections to occur, minus a protein shell for the virus. Hence, "endo-virus". The cross-chromosomal infection is the "gene-drive" thing, and it is a pretty universal construction that can easily evolve to carry a different payload, or infect a different species. The different payload is just a copy-paste away, as well as the different target site for other species. The latter thing is the amazing property of CRISPR, as opposed to usual gene-binding proteins.
+
+Now, no protein shell for the virus is built in, so in principle no other insect should become infected. But this appears to be a really flimsy wall against catastrophe: killing off some vital pollinator? More apocalyptic, but also more unlikely: The novel way of virus design beeing picked up by evolution.
+
+To repeat: The proposed attack does NOT need extremely rare horizontal gene transfer to occur to infect a different species. Instead, it only needs the different species to take up genetic material floating around; the machinery for building this into the chromosome is shipped along the proposed attack.
+
+How would a "safe" gene-drive (A) look like that does not release the innovation of CRISPR-based virii into the wild?
+
+(1) A parent with one or two versions of (A) produces a toxin and a corresponding anti-toxin. (2) Gametes (unfertilized eggs or sperm) that carry (A) produce the anti-toxin and survive to be fertilized / fertilize. (3) Gametes without (A) do not produce the anti-toxin and get killed by the toxin produced by the parent.
+
+Since the "bad" gametes get killed and recycled quickly, the fitness load is pretty limited.
+
+This is entirely sufficient as a gene-drive, no scary novel Rube-Goldberg way of virus transmission needed.

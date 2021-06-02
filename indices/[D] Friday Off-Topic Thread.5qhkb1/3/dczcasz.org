@@ -1,0 +1,46 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 11
+:DateUnix: 1485533669.0
+:DateShort: 2017-Jan-27
+:END:
+
+Weekly update on my rational pokemon game, including work on the data creation tool Bill's PC. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Skipped last week intentionally, tho perhaps I shouldn't've.  At any rate, nothing visible got done, and I didn't want to post “still pluggin away!” with nothing else to show.
+
+The design for how all of this is supposed to work with mods is starting to come together.  The real breakthrough was in sitting down and making a mock file directory that contains placeholders for all the various mods and systems involved.  It's really helped me to figure out exactly how the different systems need to be divided, both from one another and along the system/mod spectrum.
+
+[[https://docs.google.com/document/d/1SlYaK6vZ0OmkQsuVOMCIOMb6nPIU9I1vKMTFMEL0Wk8/edit?usp=sharing][The current feature document is located here]]. It's still woefully incomplete, but things are starting to come together, and I can see the light at the end of the tunnel.
+
+The document is organized into five levels: Engine, Mod System, Mechanic, Balance, and Lore.  This is a rough priority system, as well as a “you must be /this/ technical to make suggestions” hierarchy.  Anything pokemon-related is to be constrained to the bottom two levels: Lore is largely going to be the realm of text-based content (quests, dialog, fluff) and “story bible”, while Balance are the specific values given to the Mechanics to give them a particular look and feel.  Mechanics, for instance,  will define that types of things exist that can affect one another differently based on nothing but type, but Balance will call some of those things Fire, Water, and Grass and give them the shape we know and love.
+
+Once I'm convinced I haven't missed any major systems, I'll go through the old feature document(s) line by line and sort them all somewhere in this document (mostly under Balance). Then I stick them all in a spreadsheet, clarify and sort a bit based on priority, and I've got myself a master to-do list! Fun times.
+
+As suggested above, I'm not convinced that I've got every single system listed here that's going to need to exist.  If you are familiar with this project, (and especially if you aren't), I'd much appreciate it if you could give this document a look-over and yell at me for missing something so trivial and obvious as X, so I can add it post-haste.
+
+--------------
+
+The question of special vs physical was brought up again this week, as these things do, and I think I've happened upon a solution that finally makes the puzzle pieces fit.
+
+ATK is one's physical prowess and is basically STR, while DEF is one's physical durability (these haven't changed).  SPATK is one's focus and finesse in controlling the elements (or mental powers), and SPDEF is the ability to resist the non-damage aspects of special attacks, so basically a CON save.
+
+All moves have stats that they scale off of, stats that resist the damage, and an optional set of status effects that have a % chance of being applied.  With this tweak, "special" moves will be those with a significant chance or the primary intended effect of applying status effects of all kinds.  This demands the creation of additional status effects, such as a "waterlogged" effect for special water attacks (something that decreases temperature, reduces speed/evasion, makes more susceptible to electric attacks).  
+
+Moves will not naively be purely physical or purely special; this division wouldn't even necessarily exist in code and would be more a sort of design guideline that has no mechanical enforcement.  Each of these variables would be tweaked per move (although I expect 80% of them would be exactly what you would expect from canon).  
+
+Some examples: Alakazam could use Telekinesis to throw a boulder at its opponent; this would scale off of SPATK and be resisted by DEF. Charizard uses flamethrower; this scales off of SPATK and is resisted by DEF, but the chance to burn (significantly higher than in canon) is resisted by SPDEF.  Gengar uses Dream Eater; this scales off of SPATK and is resisted by SPDEF.  Hitmonchan uses DYNAMICPUNCH; it scales off of ATK and is resisted by DEF, but the chance of confusion is resisted by SPDEF.  Magmar uses Fire Punch; it scales partially (60%) off of ATK and partially (40%) off of SPATK, and is resisted by DEF, but the chance to burn is resisted by SPDEF.  
+
+Status effects in general will be more flexible, in particular with the ability to stack some effects over and over.  Sleep, paralysis, and waterlogged are some statuses that can stack, having heavier and heavier effects on the user until a limit is hit.  SPDEF will likely be involved in partially resisting these stacked effects in addition to a binary "evasion" of simpler effects.
+
+Naturally with these changes, there's no need for a separate CON stat anymore.
+
+--------------
+
+I've received the recommendation to play through Pokemon Mystery Dungeon, so I'm going to give it a shot this weekend.  Any advice or recommendations?
+
+--------------
+
+Feel free to leave any comments or questions below. Also feel free to join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]] for brainstorming and discussion.  It's a great group, really, and I would highly recommend hanging out, even if you're not in it for this project itself.  There's tabletop groups, Dota 2 partying, and [[http://i.imgur.com/j3jRmMZ.png][puns]] like you wouldn't [[http://i.imgur.com/8cUkzoGl.jpg][believe]].  Come join us!

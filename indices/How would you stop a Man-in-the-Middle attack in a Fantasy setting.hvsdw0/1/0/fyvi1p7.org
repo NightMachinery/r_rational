@@ -1,0 +1,26 @@
+:PROPERTIES:
+:Author: lecupra
+:Score: 21
+:DateUnix: 1595427940.0
+:DateShort: 2020-Jul-22
+:END:
+
+#+begin_quote
+  “Commander Cirille. Report in. Night code is Invinctel-Surreptitious---”
+
+  “Bastion-General! We're under attack! Er---Code Viridian-Adamantium-Salazsar-Terrium!”
+
+  The Drake shouted into the stone. She heard nothing from the other side for a second.
+
+  “Bastion-General, the spell is widespread and there are Demons on the walls. Unknown number; they had suborned command of undead forces and---”
+
+  “---this is Commander Cirille. Code Viridian-Adamantium-Salazsar-Terrium. Nothing of note to report, Bastion-General.”
+
+  Cirille heard her voice, coming from the speaking stone. The Drake froze.
+#+end_quote
+
+It sounds like rather than a hijack, Silvenia is muting the victim response, then transmitting her own illusion. So as long as she knows the code to give (by listening to the victim's intended response) she wins. More authentication codes might help in that her replacement transmission might need to be delayed enough (waiting for the victim to say them) to be suspicious--assuming she can't multi-task and begin her replacement transmission before the victim is finished (and keep them from hearing it).
+
+I think the easiest approach is the authentication code needs to be tied to the message in some way. For example, you have separate authentication codes for all-quiet / routine-combat / emergency which would warn the receiver if the content of the message doesn't match up with the meaning of the code. Still vulnerable in more subtle cases, but at least you couldn't hide an all-out attack.
+
+Ideally, you'd want to luck out an have an earther with cryptographic experience. Given that the only computers in the world are a handful of laptops and smartphones even a trivial encryption or MAC algorithm (for example, an enigma machine should be possible) would be safe for a while.

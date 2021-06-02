@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 10
+:DateUnix: 1478393445.0
+:DateShort: 2016-Nov-06
+:END:
+
+*Step one: Make money.* I break out my spreadsheet and divide the next week up into blocks of bits. I can define each number of the Minnesota Powerball with 7 bits, which means I can get the whole 6 number sequence with 42 bits. Powerball drawings happen every week; the next one is in four days, on November 9th.
+
+I decide that 10:01am-10:05am on November 10th will be reserved for the first bit, then 10:06am-10:11am for the second bit, etc. Red for 0, blue for 1. All told it will take me about three and a half hours of switch flipping to enter the digits when the time comes. Obviously /tonight/ I use the machine to read the digits, and assuming that all probabilities are >90% I buy a ticket.
+
+This /should/ allow me to go straight to my "what to do if I win the powerball" routine, which takes care of seed money. (I haven't done the research for it, but if necessary I go to a state where I can redeem the lottery money anonymously, or at least in a way that's not going to be public information.)
+
+*Step two: Automate and secure the machine.* I get a little robot arm to toggle the switch for me based on a text file that I feed it. That takes care of inputting information to my past self. Outputting information to my present self is a little more complicated, but probably still doable; I just need a camera set up to read the screen and a robot hand to turn the dial (this is assuming that I don't want to take apart the machine at all). Anything to avoid manually reading in and deciphering the binary.
+
+Before any of that, I use my seed money to move the machine to a secure location and get it hooked up to multiple redundant power sources. This should be the only time the machine ever loses power. I'm on the fence about hiring armed guards; ideally I just leave the machine running and transmitting encrypted data back to me and not attract attention to myself.
+
+*Step three: Probe the future.* I need to know how divergent possible futures are. To that end, I guess I dial in times and see how high probabilities are; do they eventually merge towards 50% as uncertainty washes out certainty? If so, how quickly? After I've determined how "stable" the future is, I try to take some direct readings. SMS is 160 7-bit characters, which my automated system can (hopefully) read in and out in a few hours time assuming my chosen time fidelity is 1 minute blocks (probably overcautious). I precommit to sending the same SMS to myself iff I strongly believe that it applies; this allows me to feed myself arbitrary messages.
+
+*Step four: Research/steal.* Depending on how muddy the future gets and how quickly, I can set up self-reinforcing loops that almost always give me the same information. I can devote blocks of time to sending research papers back to myself, allowing me to invest in science in one future and then just harvest the data in the other futures. I can also /probably/ break encryption and/or passwords with a "send password back if it worked, else randomize bits sent" commitment scheme, which should result in me in the present getting more information from futures that got sent the password, depending on how exactly that works.

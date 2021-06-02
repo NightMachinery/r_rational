@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: ZeroNihilist
+:Score: 7
+:DateUnix: 1458034939.0
+:DateShort: 2016-Mar-15
+:END:
+
+On the topic of scripts, there's a cheat for DotA 2 that made the front page recently.
+
+Essentially, the animation state (walking, attacking, casting ability 1, casting ability 2, etc.) of every character is represented in memory. One such animation state is "performing critical attack", which is a separate state from "performing non-critical attack".
+
+Note that there is an item which grants a chance to perform critical attacks, but only heroes with a native critical ability have a separate animation state.
+
+One hero, Phantom Assassin, has a particularly potent critical ability. Her ultimate at max level gives her a 15% chance to deal 450% damage.
+
+The script guarantees criticals by monitoring the relevant piece of memory and cancelling the attack if it detects the "perform non-critical attack" animation state. This means that it will rapidly cycle the random number generator until a critical occurs.
+
+For a human this would be impossible to perform in practice. Phantom Assassin's attacks in less than 0.1 seconds with her buff active, even without any items that increase her attack speed, and even the lowest human reaction time is above that threshold.
+
+But a well-optimised bot could get a massive advantage from taking advantage of this and many similar things.
+
+DotA also uses pseudo-random generation for many random numbers. Essentially, it biases the random variable according to how many failures precede the test. The values are calculated to have the same mean probability, but become linearly more likely after each failure.
+
+Again, a bot could take advantage of this behaviour, for example to "pre-charge" a critical by waiting until N consecutive non-criticals have occurred to maximise the expected probability of getting at least one critical in the next K attacks (and likewise for dodges, blocks, bashes, etc.).

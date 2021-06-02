@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: Flag_Red
+:Score: 11
+:DateUnix: 1512645583.0
+:DateShort: 2017-Dec-07
+:END:
+
+You seem to be equating computing power used to positions searched. The reason AlphaZero searches so few positions is because it uses boatloads of processing power elsewhere (in the NN calculations).
+
+A very simple way to even out the computational power they have is by putting them on the same hardware, just like we do in every major computer chess tournament. Put AlphaZero on a 64 cores of the same CPU given to Stockfish and you'll see that reducing an engine's processing power to 1/90th of what it was severely hinders the engine's performance.
+
+Neural networks are great and all (I'm an AI researcher, I build them all the time) but they only became viable recently because of the abundance of processing power available now. The fact remains that they require far more processing power than any other classification or regression algorithm used today.

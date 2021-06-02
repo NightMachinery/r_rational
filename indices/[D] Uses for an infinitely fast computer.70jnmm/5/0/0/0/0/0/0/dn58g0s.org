@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: scruiser
+:Score: 4
+:DateUnix: 1505688530.0
+:DateShort: 2017-Sep-18
+:END:
+
+No you had it right it would over-fit. Except it wouldn't be gibberish per se...
+
+#+begin_quote
+  overfitting violates Occam's Razor by accruing complexity from noise and not favoring simplicity to a sufficient degree
+#+end_quote
+
+Well, the overfitted model can be simpler than the intuitively more elegant model...
+
+In the case of EY's example... a model that generates the Wikipedia articles in a way that can extrapolate to the future would need to generate the laws of physics, the initial conditions they started from, and all the quantum randomness since the beginning of time (or otherwise specify the Everett Branch), in addition to the location of Earth, and a schema for reducing that down into Wikipedia articles. Comparatively, it might be simpler for the program to have Wikipedia articles directly coded into it via [[https://en.wikipedia.org/wiki/Magic_number_(programming)][magic numbers]]... Solomonoff induction cares about the bits in the program, not how intuitively elegant you think it is.

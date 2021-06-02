@@ -1,0 +1,31 @@
+:PROPERTIES:
+:Author: throwawayIWGWPC
+:Score: 9
+:DateUnix: 1507534672.0
+:DateShort: 2017-Oct-09
+:END:
+
+#+begin_quote
+  So there won't be any code that says "don't recreate the Controller's soul any more".
+
+  Zorian's soul is presumably not being duplicated simply because the Gate logic says [. . .]
+#+end_quote
+
+Why not? That seems quite possible:
+
+1. If one month has passed, gather any souls into the Gate.
+
+   - The Gate gathers multiple souls because the controller can temporarily mark individuals.
+
+2. Destroy the loop.
+3. If there are marked souls remaining with a controller marker, check if there is enough energy to recreate the loop.
+4. If there isn't enough energy, then shut down the gate.
+5. If there is enough energy, then recreate a new loop.
+
+Maybe the creators of the Gate didn't anticipate there being three controller-marked souls, so they simply did not put in a "Validate there is only one controller-marked soul" clause.
+
+Or maybe the creators anticipated that shenanigans may occur. Maybe they realized that a significantly skilled soul mage might be able to, theoretically at least, make their soul resemble the controller's soul and the Gate would not be able to tell the difference.
+
+Maybe the creators couldn't figure out how to make the Gate identify one soul from another hollistically, but it was relatively trivial to put a marker on the controller's soul and key the Gate to that marker. It's analagous to how it's much easier to make a computer read a barcode than it is to teach a computer to identify an item by shape, color, texture, etc. waved in an arbitrary orientation in front of the computer's camera.
+
+Unable to solve the problem, they decided that they'd ensure the Gate would, if it still had the energy, absolutely not collapse if a controller was still inside.

@@ -1,0 +1,40 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 9
+:DateUnix: 1518192075.0
+:DateShort: 2018-Feb-09
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+[[https://ketura.github.io/bills-pc-2/index.html][This past week made some decent progress on the Types tab]]. Originally I had thought that it would be best for it to just be a table with the various types in it ([[https://docs.google.com/spreadsheets/d/1RerFWXp3NNGZjFcUBTl2u94z-8Sr-SZ0_utpYfNIlZ8/edit#gid=140263346][such as the one in the current draft of the type interactions]]), and you would modify the data in the cells directly. But then I remembered that Affinities are a thing that exist. And then I remembered that defensive subtypes will need a place, and stat modifiers, and type-based abilities, and, and....so I've moved away from the grid as the centerpiece.
+
+Instead (as you can kinda see in the link above), I've gone back more or less [[https://i.imgur.com/F7DEmHp.png][to the design that existed in the first version of Bill's PC]], by putting type generation and customization in its own section. I'm keeping the grid tho, even if it's read-only at the bottom.
+
+Add a type simply by typing its name in the box and hitting space or enter, select a type by clicking on it, sort the list as needed using the arrow keys, delete it by using the Delete button, and rename it using the “Change Name” box. Github has this thing where it likes to 404 my css, so apologies for the scattered look of the layout at the moment. And before you ask why there's both a delete button and x's on the individual tags, well, the css hides the x's, as it's too easy to accidentally delete a tag when you meant to select it, so I had to provide a less error-prone option.
+
+Next goal is to hook up the Notes text box and Offensive/Defensive profile buttons to save their info into the type, get that saving into the local storage, and then work on letting you actually modify the damage multipliers. I might just end up using the table instead of making it read only, but if I can't get it to play nice I'll just generate a separate row (above the “add subtypes” box) and leave the table read-only. After that, it's attaching affinities, abilities, and stats to individual types and/or subtypes, which doesn't have a gui designed yet so I'll have to wing it.
+
+After that, I'm probably going to hook up the Console tab so that reasonable log output can be shown to the user, which is going to require me to find a decent logging library and rework my current code to use it, as well as set up the Settings and Help tabs so they're at least ready to have things added to them as needed. Then Stats (since it will have to be in place for stats on types to mean anything), and then I'll move on to tackling the behemoth that is the Species tab. Seriously, that one's monstrous; for all the work I've put in the Types tab (for the second time), the Species tab dwarfs it pretty hard.
+
+--------------
+
+Lots of design discussion this week, mostly around Types (naturally), but also explaining high-level concepts to newcomers, which I always enjoy doing. Lets me dust out the ol' noggin and make sure everything's still remembered.
+
+One thing that came up once again is the concept of multi-host evolution, which is to say things like Diglett -> Dugtrio. Personally I like the idea that you physically need three separate Diglett all trained up (or not) before you can have a full Dugtrio. There are other examples of this, including Magneton, Slowbro, and supposedly Mantine and Shelmet/Karrablast, tho those last ones seem a bit out there to me.
+
+The requirement for multiple species to work with this system is particularly niggly, especially in cases where you might encounter them as opponents on an enemy trainer's team. Whatever solution we come up with would need to be manually induced but at the same time not able to delay evolution indefinitely; a pokemon's EVs are at least partially ‘baked in' to its evolved form's base stats upon evolution, and EXP and everstones have been altered to ensure that no pokemon can be delayed indefinitely to produce an arbitrarily powerful evolution. So too we can't permit for Superdiglett to become Superdugtrio.
+
+For Dugtrio and Magneton, I think we've found a decent solution. We'll say that Magnemite evolves just like any other pokemon--once it hits a threshold of EXP and EVs, it enters a metamorphosis stage lasting a variable amount of time, which climaxes with the white glowy bit that we all know and love. However, the freshly-minted Magneton numbers is quite singular, and begins to seek out other Magneton to perform a one-time bonding with almost immediately.
+
+Mechanically, we'll say that like a third of the new Magneton's EVs, rather than going into base stats will go into a temporary bonding resource that can be used to initiate a bonding with other single Magneton. This bonding resource will deplete over time, until a sad point when the Magneton is cursed to be solo for the rest of its days. If a freshly-evolved Magneton were to find others of its ilk nearby, also freshly-evolved, then with a high bonding resource available, they might be able to form a group of four--or five. But most often it takes time to find other suitable mates, with only enough bonding resource to accommodate three individuals, and in some sad cases only one other individual can be mated with for life.
+
+This permits us to have our cake and eat it too, in a number of ways. I rather quite like it, but it doesn't translate perfectly to the inter-species examples: we can't wait for Shellder to evolve to Cloyster before it can bond with a Slowbro (or I suppose we could, but the change in size and shape might be a big much; it was already a bit of a stretch), since besides the logistics the whole /point/ is that shellder and slowpoke induce the evolution together.
+
+I'm not sure how to solve this just yet, but I'm sure we'll get it. Thoughts and comments are of course welcome on the matter.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit. If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!

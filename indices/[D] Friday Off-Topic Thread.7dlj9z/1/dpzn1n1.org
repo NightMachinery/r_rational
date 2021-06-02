@@ -1,0 +1,52 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 13
+:DateUnix: 1510974995.0
+:DateShort: 2017-Nov-18
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+Aw shit I forgot about the update today lol. This last week I've had to work late nearly every day to make up for lost time last week, and on Sunday we're deploying a new version of the product again, so it's been a busy time getting that ready.
+
+--------------
+
+I finally realized this past week one of the major reasons that javascript hasn't clicked with me yet, and that's due to me expecting frameworks to be mostly self-contained ecosystems. I mean, if I pick Unity or Unreal to build a game with, I have a rigid foundation to build on, full of tools, archives, and asset stores. I don't have to go outside those resources much once I've picked an engine, and I was expecting the framework decision to be much the same. Now that I realize that a framework in javascript is basically just a /blueprint/ of a foundation, I think I'll start meshing a bit better.
+
+On that note, I'm probably going to end up using [[https://semantic-ui.com/][Semantic UI]] along with Ember, since Semantic has Ember bindings and otherwise seems to be fairly complete. Besides UI, I don't /think/ there's any major library I'll need for Bill's PC, but who knows.
+
+--------------
+
+I have in the past mentioned Nethack's system of mechanic randomization, whereby the very building-blocks of the game are partially randomized, rather than just dungeon layout and loot tables. For each ring, wand, and scroll, there are a variety of appearances, and what those appearances are linked to is randomized with each world.
+
+Thus, getting a Tin Wand this run might be a Wand of Lightning or a Wand of Wishing or a Wand of Death and you have no idea which it might be, as you only know it's made of Tin. Much of the early portion of the game thus requires a very scientific approach to loot; even if you've got the wiki memorized you have to experiment to figure out what it is you've stumbled across. If you cast your wand at the floor, you might receive the message "the bugs on the floor stop moving". Is it a wand of sleeping? A wand of death? A wand of hold monster? You really don't know, but it narrows it down considerably without straight up giving you the answer.
+
+There's also secondary considerations: a Tin Wand will be resistant to heat but an Oak Wand will burn up if applied to fire and a Glass Wand will shatter if you fall too hard. Thus even in cases where you have found all the answers and identified all the wands, you /still/ have to play differently; where one run might have a Wand of Death made of iron and safe to bring against a dragon, in another it's made of wood and you might lose it before getting to cast it.
+
+I say this because this is probably one of the most rational game mechanics in existence, where even knowing what all the possible wands /are/ doesn't straight-up let you win right away, and even in cases where you've done your Science and figured it all out, you /still/ have to alter your playstyle to react to the Way The World Works (This Time).
+
+I've been on the lookout for possible ways of including similar mechanics, and previously I thought it was going to be restricted to, say, pokeball crafting and the randomization of what parts do and what they're made of. However, I think I've stumbled upon another aspect of the game that could benefit from a selective, experimentation-friendly randomization mechanic.
+
+When players create their characters, they can choose to be Psychic, Dark, or Aura users, or just plain vanilla baseline human (which is at least a bit psychic, but that's besides the point). Each separate power path is a bit different: Psychics are a well-known phenomena, and getting teachers to train oneself is common and socially accepted. They are moderately powerful if slightly uncommon. Potential Aura users are actually extremely common, but due to the guru-in-the-wilderness style of training are not frequently utilizing their powers, and knowledge about it isn't disseminated very well. Darks are fairly rare; not unheard of, but not so common as to be a unique "protected status" or well-studied. As far as most people are aware, it's an entirely passive powerset, mostly limited to psychic-immunity, with a side of YOU'RE STEALING MY SOUL accusations. However, unbeknownst to the general public, if one can figure out how to actually train their Dark powers, then Dark humans are every bit of capable of using Dark moves as Psychics can use Psychic moves. The trick is getting over that initial hump.
+
+The question came up of how to handle this. Dark EVs would go up whenever Dark was utilized, so letting a Psychic attempt to scan you would make that EV go up, but it would lead to fairly unremarkable gameplay to essentially randomly get a message "Congratulations! You've been passively scanned by your 4,559th Abra and have now unlocked Sucker Punch!" There ought to be something else that the player can do between "hang out in Saffron a lot" and "Win Agatha's trust and get her to train you."
+
+(Oh, did I mention that? Spoilers, I guess.)
+
+The idea is to have certain otherwise unrelated tasks be applied to training the various powersets. For instance, perhaps upon earning Agatha's trust she grants you the secret of unlocking your first active Dark powers: "Alright, I'll tell you...you must HIT a MAREEP at DUSK. Yes, this is the one ancient Dark legend that turned out to be true! It may seem strange now, but rest assured, it is the beginning of the path I myself walked!"
+
+An ACTION would be paired with an OBJECT and a particular CONDITION. These actions would presumably be things that would be beneficial to grind anyway...punching sheep as in the above example would in fact increase your ATK stat and would thus mean that playing as a Dark human this run would /also/ lend itself to playing as a bruiser, since you're going to have to punch things anyway until you've got more useful skills to utilize.
+
+However, due to the sheer number of combinations (even just 5 actions, objects, and conditions would be 125 different combinations) you're probably not going to stumble upon a winning combination accidentally, and even if you did, it might not be the one out of the three powersets that you chose.
+
+This is where things are a bit murky. I kind of want there to be something like journal entries or tombstone engravings or what have you, some sort of information that you can track down to get you one piece of the puzzle. "This old book says that an ancient Dark warlord's last words were...PIDGEOT EGG. Huh. Wonder if he had gone loony." Suddenly, such information would narrow down the number of combinations to 25 in our example, which is more doable.
+
+This does risk being a bit too gamey and random--impossible to guess if you don't have any pieces, incredibly easy if you stumble across one or two early. I think the formula could be improved by having the information imparted to the player be ways of eliminating answers rather than straight-up confirming: "My grandfather, Dark as he was, was peculiar. He always insisted we be thoughtful of what TERRAIN we were on. An odd golduck, that man." Thus the player learns that the secret dark training regime doesn't have to do with time of day, or apparel, but maybe has to do with standing in a river or glade or cave: narrows it down without giving away the answer.
+
+Anyway. The idea will need refining, but I'm excited to see if this information-gathering mechanic can be coaxed into a general-purpose Science mechanic that could be applied to more than just power training. As usual, any thoughts or comments are more than welcome.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit. If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!

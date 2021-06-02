@@ -1,0 +1,29 @@
+:PROPERTIES:
+:Author: IX-103
+:Score: 10
+:DateUnix: 1410379666.0
+:DateShort: 2014-Sep-11
+:END:
+
+I think you made a few mistakes in your Bayesian reasoning (dropping conditionals).
+
+You assume a scenario where you live if bought a winning ticket and there is a disaster P(L | T, D)=1 and you don't live if you didn't buy a winning ticket and there is a disaster P(L | ~T, D)=0.
+
+You then claim that the probability of a disaster given you bought a winning ticket is greater than the prior probability of disaster: P(D | T) > P(D).
+
+You can't get to this conclusion from there. If you know that you are living X years from now and have won the lottery, you will find that the probability of disaster in X years is unchanged, P(D | T,L) = P(D). However, knowing that you are living X years from now but have not won the lottery makes the probability of disaster less likely, P(D) > P(D | L) -- in fact P(D)=P(D|L)/P(T).
+
+In the absence of knowledge of whether you live through whatever occurs (either D or ~D), winning the lottery and a disaster occuring are independent so P(D|T) = P(D).
+
+Edit: You can draw this out in a Bayesian Network if it makes more sense:
+
+#+begin_example
+  +---+         +---+
+  | D |         | T |
+  +---+         +---+
+       \       /
+        \     /
+         +---+
+         | L |
+         +---+
+#+end_example

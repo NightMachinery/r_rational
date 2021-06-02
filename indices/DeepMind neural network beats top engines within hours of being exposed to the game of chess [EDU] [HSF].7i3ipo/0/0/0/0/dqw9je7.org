@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: 696e6372656469626c65
+:Score: 11
+:DateUnix: 1512644827.0
+:DateShort: 2017-Dec-07
+:END:
+
+Tensor processing units are application-specific integrated circuits, and as such are not directly comparable to CPUs. You're attempting to draw a comparison between apples and oranges. Moreover, even if we accept that Stockfish was at a hardware "disadvantage", the absolute number of positions searched per second was still far higher for Stockfish (70 million positions per second) than for AlphaZero (80 thousand). Clearly search speed isn't the bottleneck here, so trying to draw all the focus to the hardware is a red herring in and of itself.
+
+As far as low hash size goes, you have a point there, but since hash tables are mainly used to speed up search by cutting subtrees off of the main search tree, it hardly makes much of a difference since, as I already pointed out, Stockfish already had a tremendous advantage in terms of search speed. After pointing out that SF's hash was abnormally small, however, you again go astray by attempting to compare the SF's 1GB /hash/ to AlphaZero's 250GB /memory/, which it could have been using for anything. Apples and oranges.
+
+Moreover, /even if everything you said were true/, this still does not validate your initial statement that "evening out the processing power" (whatever that actually /means/, considering that the number of FLOPs per second isn't a good measurement when comparing general-purpose CPUs to ASICs) would "definitely put the game in Stockfish's favour". You have no evidence in favor of that or any other conclusion; the best you could say is that it /might/ favor Stockfish more. (Though personally I'd bet against that as well.)
+
+*EDIT*: Moreover, this
+
+#+begin_quote
+  For reference, Stockfish playing against itself with 1/90th of the processing power is a stomp.
+#+end_quote
+
+is a context-dependent statement that may or may not be true. Stockfish with 1 core playing against Stockfish with 90 cores is indeed, as you say, a "stomp", but computational power faces diminishing returns in playing strength. Stockfish with 100 cores, for instance, would draw most of its games against Stockfish with 9000 cores.

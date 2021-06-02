@@ -1,0 +1,18 @@
+:PROPERTIES:
+:Author: LupoCani
+:Score: 13
+:DateUnix: 1509527692.0
+:DateShort: 2017-Nov-01
+:END:
+
+#+begin_quote
+  ¯_(ツ)_/¯
+#+end_quote
+
+You have to write =¯\\\_(ツ)_/¯= for it to show as ¯\_(ツ)_/¯. The first backslash escapes the second backslash, making it visible, and the third backslash escapes the underscores, which would otherwise just create italics around the face part:
+
+| Input          | Output     |
+|----------------+------------|
+| =¯\_(ツ)_/¯=   | ¯_(ツ)_/¯  |
+| =¯\\_(ツ)_/¯=  | ¯\/(ツ)//¯ |
+| =¯\\\_(ツ)_/¯= | ¯\_(ツ)_/¯ |

@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 7
+:DateUnix: 1501262126.0
+:DateShort: 2017-Jul-28
+:END:
+
+Weekly update on the [[https://docs.google.com/document/d/11QAh61C8gsL-5KbdIy5zx3IN6bv_E9UkHjwMLVQ7LHg/edit?usp=sharing][hopefully rational]] roguelike [[https://www.youtube.com/watch?v=kbyTOAlhRHk][immersive sim]] Pokemon Renegade, as well as the associated engine and tools. [[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][Handy discussion links and previous threads here]].
+
+--------------
+
+No code progress this week.  Flew out to see the the in-laws on Friday, wasn't back until Tuesday, and (of course) caught a cold or something and so was down Wednesday and I'm just now getting back on my feet.  On top of that, we applied for a new apartment which, if we're accepted, will result in us moving within the next month, so I'm likely to have my time eaten up here shortly.
+
+--------------
+
+This last week the discussion of terrain came up again, and after going over it again I think that the vast majority of natural terrain can be boiled down into three major classes, dubbed Stone, Dirt, and Ice.  Besides the class, Temperature and Water Saturation will be tracked separately, and these values will decide the current behavior of the terrain.
+
+For instance, the Dirt class encompasses a sliding scale of sand -> earth -> mud -> swamp, and the current Water Saturation of the tile determines which it behaves as. Increasing the temperature of the tile would incrementally decrease the water amount.  Such a setup permits water attacks and fire/electric attacks to interact with the terrain in a systematic fashion: hydro pump the ground around your opponent to turn it into a mire, before pulling out a flying type to safely harass them from afar.  Fire blast the swamp enough and it's reduced to (glassed?) sand.  It's a bit simplistic with how it actually works in real life, but it has the right feel, I think.
+
+The other two classes are basically stone -> lava and water -> snow -> ice.  The  more I think on it, the more it seems like this is just a special case of a more generalized, abstract system, but this is probably good enough design work for now.  At the beginning I imagine there won't be any terrain affecting at all--this would be hacked in later as certain moves destroying or creating blocks, and even later adding in all the nuanced terrain control.
+
+--------------
+
+If you would like to help contribute, or if you have a question or idea that isn't suited to comment or PM, then feel free to request access to the [[/r/PokemonRenegade]] subreddit.  If you'd prefer real-time interaction, join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]]!  

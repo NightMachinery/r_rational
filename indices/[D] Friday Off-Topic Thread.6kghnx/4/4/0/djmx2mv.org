@@ -1,0 +1,16 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 7
+:DateUnix: 1498885504.0
+:DateShort: 2017-Jul-01
+:END:
+
+#+begin_quote
+  The hardest thing to pull off will be level generation
+#+end_quote
+
+heh, actually, I think the information system we have planned will be the hardest: we want information (usually related to the player's exploits, but can come from other sources as well) to spread naturally. If there's no witnesses, then no one knows you did something...but if someone sees you and tells their friend, or their Team Rocket bosses, or the media, or the police, then information begins to spread at a pace proportional to the importance of the act. You might have a reputation in one town that is completely different in another, because you acted like an asshole in the first and a saint in the second. Simulating "society" as a sort of meta-NPC is what I anticipate being the hardest thing to get right, partially because I don't have a good game to ape off of, so it's all going to be mostly-uncharted territory, but also because it's just going to plain be fiendishly technically complicated.
+
+But to address your actual point: the worlds are only going to be partially procedurally generated. The current plan is to have a mapmaking application that permits mapmakers to paint the broad strokes of how they want the map to look like, and mark which areas they want the world gen to handle. Thus, someone might lay out Kanto the way it is in the games, going as far as maybe designing the towns down to the building, but when they get to Veridian Forest, maybe they lay down a road and mark the rest as "procgen Forest". Maps will therefore have the important setpieces designed by human hands, and only let procgen do its thing on areas that don't have to be as structured.
+
+I want the terrain procgen to be powerful enough that someone could say "I just need a road that somehow connects these points" and the rest be filled in with wilderness of the appropriate type, but other than that, I prefer to let humans do what humans do well, and let the computer do what the computer does well. Plus I like where this allows experienced players to have a general familiarity with the map, while still needing to stay on their toes for the mostly-novel wilderness.

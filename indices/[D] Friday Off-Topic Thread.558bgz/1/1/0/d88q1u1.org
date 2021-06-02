@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: Omnibuser
+:Score: 5
+:DateUnix: 1475265225.0
+:DateShort: 2016-Sep-30
+:END:
+
+Yeah, I have a built in delay of 1.5 seconds between each page request on a particular domain, with a database backed queue to ensure that delay is respected even when there are concurrent users. Hopefully that's long enough.

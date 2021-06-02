@@ -1,0 +1,20 @@
+:PROPERTIES:
+:Author: DrunkenQuetzalcoatl
+:Score: 5
+:DateUnix: 1504312868.0
+:DateShort: 2017-Sep-02
+:END:
+
+#+begin_example
+  class Stats {
+      public dynamic value;
+      public Stats(dynamic value) {
+          this.value = value;
+      }
+      public static Stats operator +(Stats a, dynamic b) {
+          return new Stats(a.value + b);
+      }
+  }
+#+end_example
+
+You lose compile time checks for the operators of course. I don't know if that is acceptable for your projects needs.

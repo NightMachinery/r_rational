@@ -1,0 +1,33 @@
+:PROPERTIES:
+:Author: electrace
+:Score: 11
+:DateUnix: 1463430068.0
+:DateShort: 2016-May-17
+:END:
+
+The dominant strategy is to press rest.
+
+Classic game theory assumes sociopaths actors. They wouldn't care about saving someone else. Pressing rest is the only scenario that has an payoff that includes not dying, so it dominates pressing rescue.
+
+Yes, both defect bots and cooperate bots would die, but that has nothing to do with a dominant strategy.
+
+--------------
+
+If they aren't sociopathic, and care about the other person living, then the payoff would be functionally the same as the following matrix (assuming that they care more about themselves than the other person).
+
+| P1 / P2 | Rescue | Rest  |
+|---------+--------+-------|
+| Rest    | (3,2)  | (0,0) |
+| Rescue  | (0,0)  | (2,3) |
+
+(Note how Rescue and Rest are reversed for the other player)
+
+This is /functionally/ the same as [[https://en.wikipedia.org/wiki/Battle_of_the_sexes_(game_theory)][battle of the sexes]] (it doesn't matter that Rescue and Rest are reversed). The best strategy in battle of the sexes is to lock in your answer (of Rest) before your opponent. In effect, forcing them to choose between killing you, or saving you, since that person's death is already assured.
+
+If you can't communicate that you've pressed the button, you could both agree to randomize (which only lets you live 25% of the time).
+
+(Edit: It occurs to me that a better strategy is for one person to randomize, and then the other person to pick the opposite, assuming it could be enforced. This leads to you living 50% of the time)
+
+If you can't communicate at all, (or can't enforce an agreement) then randomize based on payoffs to find the Nash equilibrium (I don't feel like doing the math, but I'm pretty sure that it would end up with you living less than 50% (and maybe even less than 25%) of the time).
+
+If you can't even randomize, then the game collapses into a game where both of you end up dead, regardless of your decision.

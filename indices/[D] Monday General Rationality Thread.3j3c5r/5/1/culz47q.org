@@ -1,0 +1,34 @@
+:PROPERTIES:
+:Author: traverseda
+:Score: 3
+:DateUnix: 1441039434.0
+:DateShort: 2015-Aug-31
+:END:
+
+- What's your favorite language? Why?
+
+Python. I like the whole "One obvious way to do it" thing, and generally think clearly communicating your intent is one of the most important things. Second only to being able to easily use other peoples code :p
+
+- What programming culture do you follow? Old school unix hacker, Enterprise Java, Mongo/node?
+
+I use linux and vim generally. Not exactly a culture in and of itself. I'd like to follow oldschool unix, but flat text files make increasingly less sense.
+
+- What's your day job?
+
+I develop web programs for a company called brave new world. Don't generally get to work in interesting projects, but it pays the bills.
+
+- What technology/paradigm/design-pattern are you excited about?
+
+Lately I think rethinkDB is pretty great. Being able to subscribe to changes in a database query is pretty powerful. Makes it easy to implement all kinds of stuff, like distributed task queues.
+
+Generally I've been increasingly attracted to a microservices style system. It more closely matches the unix ideal of "do one thing well". Rethink makes that a lot easier to implement.
+
+As I mentioned before, I think flat files are bad. What I really want is a very /fast/ json document psuedo-filesystem. No advanced queries, but it would tell you when something has changed. In an ideal world this filesystem would be fast enough to represent things like audio streams. Obviously I don't have the C skills to implement such a system.
+
+Then, similar to GNU/hurd, we'd use userspace filesystems (json systems?) to do things like represent compressed images as vectors of data. Multiple image editors could edit the same image at once, multiple text tools could work on the same text data at once, etc. Think the unix convention of text-streams and single-use programs, but for complicated data.
+
+- Any cool personal projects?
+
+I'd like to use python nltk/rethinkdb/urwid to make a CLI feed parser that uses machine learning (probably naive bayes) to tag feeds, then add scores based on freshness and percentage score certainty. You're 90% percent sure this item should be tagged spam, and spam gets a score of negative 1000, so add -900 to its score. It might still be positive it has enough good tags, but it will probably be pretty far down the list.
+
+Different queries would let me focus on different types of content.

@@ -1,0 +1,46 @@
+:PROPERTIES:
+:Author: ketura
+:Score: 18
+:DateUnix: 1476458631.0
+:DateShort: 2016-Oct-14
+:END:
+
+Weekly update on my rational pokemon game, which for now is work on the data creation tool Bill's PC ([[https://docs.google.com/document/d/1EUSMDHdRdbvQJii5uoSezbjtvJpxdF6Da8zqvuW42bg/edit?usp=sharing][previous threads here]]):
+
+--------------
+
+The initial setup for the Move tab is all but complete.  A handful of things remain to add to the GUI, and then it's just a matter of hooking it up properly.  I said I was going to do that part this week, but due to needing to redesign so much of the move properties it just wasn't ever in a solid enough state for me to formally complete it.
+
+--------------
+
+This is mostly due to the creation of what I call the Aspect system.  Previously I expressed the desire to divide moves into Moves and “techniques”, and the Aspect system is the culmination of this idea.  Aspects can be thought of as sub-types: different schools of application of the usage of a particular type.  
+
+For example, Psychic is divided into Telekinesis, Teleportation, Telepathy, Focus, and Shielding.  The three Ts are self-explanatory, while Shielding is things like Barrier and Focus is the use of psychic energy blasts. Each Aspect will have its own EV which is trained by using moves of that Aspect.  So, to train Focus I can spam Confusion over and over.
+
+But what's the point?  Well, through use of this system I hope to make defining move lists a thing of the past.  A move like Psybeam might be designated thusly:
+
+#+begin_quote
+  Psybeam: Requires Brain.  Requires INT > 100 AND SPATK > 60.  Requires Psychic Typing >10%. Requires Focus > 200
+#+end_quote
+
+So to learn Psybeam, a pokemon has to meet all of the above requirements, and it can then be taught the move.  This can either be done by Move Tutor, TM, or by telling your pokemon to “Experiment”, a mode of training that has a % chance of learning a new move based on what moves the pokemon has witnessed and their eligibility.  A new Kadabra that has never heard of Psybeam might not ever discover it through Experimentation, but one that has seen Psybeam used dozens of times by friends or foes has a good chance of figuring it out!
+
+Some moves can be approached by multiple types.  Thunder Punch, for instance, would look something like this:
+
+#+begin_quote
+  Thunder Punch: Requires Arm OR Grasp tag. Requires ATK >80 AND SPATK > 40. Requires Martial > 50. Requires Chi + Discharge > 400.
+#+end_quote
+
+So a pokemon could learn this move either by training the fighting Chi Aspect to 400, or the electric Discharge Aspect to 400, or by mixing some of each if it can.  Some type combinations are common enough to have their own dual-type Aspect, such as Mud being Rock/Water or Terrakinesis being Rock/Psychic, with their own tech tree to match.
+
+This system is very exciting to me, as it will force move sets to be /systematic/ in a way that canon pokemon is not.  Access to a move is going to be based on meeting the raw requirements and not something as arbitrary as species.  This is going to result in a lot of emergent gameplay that will no doubt result in surprises for veterans of the series. It will also remove the burden of the designer needing to manually add each move to each pokemon, which is important considering that I plan for there to be many more available moves than in canon.
+
+[[https://docs.google.com/spreadsheets/d/1YfTAk95UdTEtOVFmMl42spmsg3Trn2TRsnqNkFj721c/edit?usp=sharing][The Aspects in their current form can be viewed here]].
+
+--------------
+
+While working on these systems this week, I came to the conclusion that I am starting to get diminishing returns on prototypeless design.  So, I will be spending this next week cleaning up Bill's PC, scrubbing up the documentation, and otherwise getting it into a solid state for the future--as by this time next week I will have begun setting up the game itself.  Bill's PC is not complete, but for now it grants us enough capabilities to be able to start working on some bare-metal coding.
+
+--------------
+
+Feel free to leave any comments or questions below! Also feel free to join us [[https://discord.gg/sM99CF3][on the #pokengineering channel of the /r/rational Discord server]] for brainstorming and discussion.  It's a great group, really, and I would highly recommend hanging out, even if you're not in it for this project itself.  There's tabletop groups, Dota 2 partying, and [[http://i.imgur.com/j3jRmMZ.png][puns]] like you wouldn't [[http://i.imgur.com/8cUkzoGl.jpg][believe]].  Come join us!

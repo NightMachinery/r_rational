@@ -1,0 +1,22 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 7
+:DateUnix: 1530978361.0
+:DateShort: 2018-Jul-07
+:END:
+
+Mostly posting here to see whether I've missed a trick. Possible mild spoilers for /Worth the Candle/.
+
+You're sitting in a room with a text terminal in front of you. Text typed into the terminal goes into the next room, where your friend is (and vice versa for their own terminal). The terminal is insecure, and in fact, presumed compromised, such that whatever is transmitted between rooms is captured, whatever appears on the screen might be from your friend or a third party, and whatever you type might be changed en route, if the message isn't denied by the third party entirely.
+
+You need to communicate with your friend without the third party knowing what's communicated. Luckily, the third party that's compromised the system has some incentive to keep you talking to each other, so won't just shut down communication between the two of you, even if you begin transmitting data that it doesn't understand (probably, anyway).
+
+There are two types of information to transmit. The first is information that you're comfortable with the third party knowing, the second is information that you're /not/ comfortable with the third party knowing. *How do you talk to your friend?*
+
+- You and your friend have a pre-arranged authentication system in place, but it won't work in this scenario, because the third party can allow authentication to take place, then proceed as normal with capturing and manipulating the information.
+- You and your friend both previously memorized a fairly substantial table of information, where each number X is associated with either a 0, 1, or 2. The third party has no knowledge of this table, but the table length is limited, and there are obvious risks associated with re-using numbers.
+- You and your friend know each other fairly well, and have a shared history to draw on if you need more information.
+
+I've been looking at [[https://security.stackexchange.com/questions/45963/diffie-hellman-key-exchange-in-plain-english][Diffie-Helman key exchange]] but I'm not quite sure how that would work in practical terms for two people who don't have access to a computer.
+
+(Note that the pre-existing authentication system /can/ be used to transmit bits, because you can say to your friend "fail the next part of the authentication for 1, pass it for 0", and whatever your friend says, the third party won't know if you're going to interpret it as 1 or 0. But the table is probably more effective.)

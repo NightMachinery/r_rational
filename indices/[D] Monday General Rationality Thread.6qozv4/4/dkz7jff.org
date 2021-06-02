@@ -1,0 +1,24 @@
+:PROPERTIES:
+:Author: ulyssessword
+:Score: 4
+:DateUnix: 1501527668.0
+:DateShort: 2017-Jul-31
+:END:
+
+I've been thinking about the algorithms that people use in everyday life, and I think I've found two interesting examples:
+
+*Pathfinding while walking*
+
+When you are walking from a source to a destination, how do you decide which path to take? One interesting thing I saw was on street corners with split right-turn lanes like [[http://imgur.com/6vBYZ7J][this]], almost all people will follow the red/green arrows I drew, and use the marked crosswalk when leaving the intersection, but simply travel straight when entering it.
+
+I suspect that this is because we see things like "the sidewalk" and "the start of the crosswalk" as /points/ instead of areas or lines. When you are leaving the crosswalk, the fastest route to reach the sidewalk is to turn 45 degrees and follow the marked path. When you are entering the crosswalk, the fastest path is to travel straight, without going out of your way.
+
+I haven't put much more thought into this, and wouldn't suggest changing your (or anyone else's) behavior based on it, but I found it interesting nonetheless.
+
+*Passing and lead distance on highways*
+
+When you pass someone, you have to merge back in front of them afterwards. How do you decide /when/ to pull back in front of the vehicle you just passed? I think that most people go until they are in front of the passed vehicle, wait a number of seconds (so that their higher speed opens up a gap), then change lanes. I thought of this when I went on a roadtrip this summer, and found that people were cutting in front of me /way/ closer on divided highways with no pressure to get out of the passing lane than on two lane ones where there might be pressure from oncoming traffic. It was the difference between a ~0.75 second gap and a >1.5 second gap, on average.
+
+--------------
+
+Any thoughts on those two, or other examples you've seen?

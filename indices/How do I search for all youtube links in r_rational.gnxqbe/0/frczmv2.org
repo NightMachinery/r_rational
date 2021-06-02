@@ -1,0 +1,19 @@
+:PROPERTIES:
+:Author: Veedrac
+:Score: 13
+:DateUnix: 1590081159.0
+:DateShort: 2020-May-21
+:END:
+
+If it's important enough to put in the effort, sign up to the Google Cloud Platform free tier, and run
+
+#+begin_example
+  SELECT *
+  FROM `fh-bigquery.reddit_comments.2019*`
+  WHERE subreddit = 'rational'
+  AND body LIKE '%youtube.%';
+#+end_example
+
+Note that you might also need to search for the shortened =youtu.be=.
+
+Unlike most forms of searching, this is fairly exhaustive, but comes with no sort of ranking and requires exact search terms. It's also missing some more recent data.

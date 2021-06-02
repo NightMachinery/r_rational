@@ -1,0 +1,32 @@
+:PROPERTIES:
+:Author: booljayj
+:Score: 7
+:DateUnix: 1463278953.0
+:DateShort: 2016-May-15
+:END:
+
+I like this, but I see a number of issues with it.
+
+*A) What constitutes a /property/?*
+
+The original post indicated that blood and red clay share the property of /color/, which in this case is red. However, the reason they are both red is the presence of iron oxides, so you could also say that they share the property of /oxidized/.
+
+If you started with a chunk of copper and added blood and red clay, would the result be a layer of green patina? If the shared property was indeed red, would the result be red copper, or would it be some other substance which is similar to copper but red in color?
+
+*B) What happens if you add completely dissimilar ingredients?*
+
+The only method for determining the property to apply is whichever property is shared by the inputs. What happens if the system is given a number of different inputs that share /no/ similarity? Presumably, the system would try to find some abstract property that is shared, but at what point does that property become "things that share no similarity"? I'm not seeing a good way of handling this case.
+
+*C) How does the system choose its output?*
+
+Some people have already mentioned that when you're trying to make metal, there's no consideration given to the /type/ of metal. Do I get iron or tin? Is it whichever metal most closely matches the desired shininess and malleability? Will it produce some kind of complex alloy in an attempt to match the inputs as closely as possible?
+
+The system also seems fundamentally not commutative. If I add the /shiny/ property first and then the /malleable/ property, the /malleable/ will be affected by whatever the material turns into after the /shiny/ is applied. Switching them around should result in a different output.
+
+#+begin_example
+  ((rock + $malleable) + $shiny) = ?
+  (clay + $shiny) = porcelain
+
+  ((rock + $shiny) + $malleable) = ?
+  (hematite + $malleable) = iron
+#+end_example

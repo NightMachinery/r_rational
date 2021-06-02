@@ -1,0 +1,10 @@
+:PROPERTIES:
+:Author: suyjuris
+:Score: 6
+:DateUnix: 1453325343.0
+:DateShort: 2016-Jan-21
+:END:
+
+As noted, information cannot be compressed indefinitely. You are trying to recover the information you lose by only memorizing a hash with the check that a random file represents valid research data, and these two need to compensate each other. If you manage to formulate rules that correctly identify only 1% of random data as possible research, and only 1 / 2^{256} ≈ 8.6 * 10^{-78} of files have the correct hash, then you narrow it down to 0.01 * 8.6 * 10^{-78} ≈ 8.6 * 10^{-80,} or one in 1.2 * 10^{79.} There are 2^{512} ≈ 1.3 * 10^{154} files with a length of 512 bits (!), that means that after applying your trick there are 1.2*10^{75} still left, which is a bit to much to manually account for. Making your rules better does not help, doubling their accuracy gets you one extra bit, but you probably had to make the rules at least one bit longer to achieve the improvement. You have to remember the rules, too, so no compressing was done.
+
+/However/, if you somehow manage to get hold of an arbitrarily fast computer and would want to compress information, your best bet may be to choose a turing-complete representation of the data, like (almost) any programming language. Then simply buteforce all possible programs until you find the shortest. (Tip for time-travelers: Choose [[https://en.wikipedia.org/wiki/Shakespeare_Programming_Language][SPL]] to easily hide your valuable research from that pesky Time Police!) Also, automated proof verification is a thing, consider briefly solving all theoretical problems (by iterating over all proofs and checking them). Additionally try simulating all possible laws of physics and output the ones where the observed universe has the highest probability, this may very well solve physics (and by extension everything else).

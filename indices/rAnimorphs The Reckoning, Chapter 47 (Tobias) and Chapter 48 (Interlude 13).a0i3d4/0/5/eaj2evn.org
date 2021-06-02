@@ -1,0 +1,8 @@
+:PROPERTIES:
+:Author: alexanderwales
+:Score: 6
+:DateUnix: 1543268207.0
+:DateShort: 2018-Nov-27
+:END:
+
+I'm guessing that you're using reddit's new editor, which automatically puts in the extra linebreak on return; your comment has double linebreaks, which makes all of the numbers on the numbered list be 1 (since they're interpreted as separate lists each of length 1). If you take out the extra carriage return, the numbers will be accurate.

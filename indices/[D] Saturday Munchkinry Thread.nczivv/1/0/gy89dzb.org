@@ -1,0 +1,12 @@
+:PROPERTIES:
+:Author: RadicalTurnip
+:Score: 6
+:DateUnix: 1621096131.0
+:DateShort: 2021-May-15
+:END:
+
+I mean, if everyone is using this as an information sharing mechanism, you would very quickly run out of unique "addresses" for information. Sure, for two given pieces of information that are different, they will almost certainly have a different checksum, but that doesn't mean that any given info will have a different checksums from /anything else/ at all. Consider every book ever written + every essay ever written + every song ever written + every movie ever written + every program/webpage ever written and you will find a number far larger than 32 bytes can differentiate. Much less if you include every revision of these items.
+
+If you were careful, you could perhaps do something like the Dewey decimal system for media, then, since it can be arbitrarily large, store all subcategories of media in a single 32-byte hash. If something can only be stored once and never rewritten, you'll have to be very careful what you store so that you don't run out.
+
+If, somehow, the 32 bytes are differentiated by intent (and you really can store any number of unique things in just 32-bytes, even if there are duplicates) then I would imagine "internet" companies would have monthly limits of 32 bytes downloads. I doubt we would have moved past dial-up speeds, but encryption would probably be even more important, since it's too useful to not use for military or corporate secrets.

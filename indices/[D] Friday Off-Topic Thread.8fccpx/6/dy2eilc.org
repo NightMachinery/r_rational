@@ -1,0 +1,19 @@
+:PROPERTIES:
+:Author: ToaKraka
+:Score: 3
+:DateUnix: 1524845196.0
+:DateShort: 2018-Apr-27
+:END:
+
+[[https://www.youtube.com/user/XxCONMYSTROxX/videos][ConMystro]] (or xXCONMYSTROXx, as he used to call himself) was my favorite YouTuber, years ago. I watched his skillful online gameplay of the /Naruto (Shippuden) Ultimate Ninja Storm/ series (mostly, games 2.5, 3, and 3.5) with the utmost voracity. Eventually, he abandoned those "spectacle fighters" in favor of other games, and I promptly unsubscribed from his channel. Still, I retained many fond memories of the amazing teamwork that the in-game characters exhibited under his skillful direction.
+
+Years later:
+
+#+begin_example
+  "youtube-dl 2018-04-16.exe" https://www.youtube.com/user/XxCONMYSTROxX/videos ^
+  --match-title "(Naruto|Storm)" --ffmpeg-location "E:\Tools\ffmpeg\ffmpeg 3.4.1\bin\ffmpeg.exe" ^
+  --no-check-certificate --write-description --merge-output-format mkv --recode-video mkv 
+  pause
+#+end_example
+
+100 gi__bytes of beautiful action (in oversaturated, 720p, 30-fps video)---/all mine!/

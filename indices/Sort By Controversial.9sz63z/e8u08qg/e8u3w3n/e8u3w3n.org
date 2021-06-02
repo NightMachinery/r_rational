@@ -1,8 +1,0 @@
-:PROPERTIES:
-:Author: serge_cell
-:Score: 5
-:DateUnix: 1541053975.0
-:DateShort: 2018-Nov-01
-:END:
-
-Generative networks are /very/ different from classification network. They usually have discriminator loss architecture unlike classification nets. Anyway "run network in reverse" don't even have precise meaning - there several different things which could be dubbed like that - decoder arch, backpropagating gradient into source etc.

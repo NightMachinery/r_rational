@@ -1,0 +1,15 @@
+:PROPERTIES:
+:Score: 5
+:DateUnix: 1463455440.0
+:DateShort: 2016-May-17
+:END:
+
+Uhhhhh...
+
+So, if you've just got a finite number of objects you're talking about (like chess-pieces on a table), then you don't need the "for all" and "there exist" quantifiers to talk about them. And indeed, in that case, the problem of how to combine probability and logic goes away: you have a finite Boolean algebra, and probability works for those just fine. *TL;DR: If you're interpreting this the way I think you are, you're correct. Finite cases are just fine, but passing to infinite cases causes difficulty in choosing the right formalism.*
+
+On the other side, mathematical formulas with /infinite/ numbers of quantifiers at the front aren't things we usually deal with. When dealing with finite numbers of (potentially) alternating quantifiers, we already run into trouble /just/ trying to find out if the statement is true or false: the computational complexity of the proof procedure can grow exponentially (very common) or become infinite (the statement can be unprovable within our current system of axioms). Trying to probabilize that just runs into the trouble that is the field of probabilistic logic right now.
+
+The place where the two unify again is in hypothetical reasoning, "Given A and B, I can prove C." In logical notation, we could call this, =A & B -> C=. In programming, we'd write it (equivalently) as, =A -> B -> C=. In probability theory, we'd write it as, "Pr(C | A, B)".
+
+The difference is that in classical logic, proving a "given A and B, we can show C" statement for nonspecific A and B /generalizes/ to "for all A and B, we can show C", whereas in probability the same underlying structure gets read out as, "Given /any particular/ A=a and B=b, we model C as having the probability Pr(C | A=a,B=b)."
