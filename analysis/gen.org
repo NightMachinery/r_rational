@@ -1,0 +1,23 @@
+#+TITLE: analysis
+#+PROPERTY: header-args:bsh.dash :var orgFile=(buffer-file-name)
+
+* links by frequency
+** generate the files (needs [[https://github.com/NightMachinary/.shells][night.sh]] installed)
+#+begin_src bsh.dash :results verbatim :exports both :wrap results
+cd "${orgFile:h:h}" @RET
+
+local o=./analysis/links-by-frequency.txt
+
+rget "$nightUrlRegex" ./posts/ | prefixer --skip-empty | by-freq --reverse > "$o" @RET
+
+{ cat "$o" | awkn 2 |ghead -n 3000 | inargsf fnrep unt "fnsuper \"\$@\" ; ec \$'\n' " re unt > "${o:r}.org" ; notif "finished org-links-by-freq $(retcode 2>&1)" } &|
+# @todo rewrite this into links2org, and use para
+#+end_src
+
+#+RESULTS:
+#+begin_results
+#+end_results
+
+** [[./links-by-frequency.txt]]
+
+** [[./links-by-frequency.org]]
