@@ -6,12 +6,7 @@
 #+begin_src bsh.dash :results verbatim :exports both :wrap results
 cd "${orgFile:h:h}" @RET
 
-local o=./analysis/links-by-frequency.txt
-
-rget "$nightUrlRegex" ./posts/ | prefixer --skip-empty | by-freq --reverse > "$o" @RET
-
-{ cat "$o" | awkn 2 |ghead -n 3000 | inargsf fnrep unt "fnsuper \"\$@\" ; ec \$'\n' " re unt > "${o:r}.org" ; notif "finished org-links-by-freq $(retcode 2>&1)" } &|
-# @todo rewrite this into links2org, and use para
+links2org-dir ./posts/ ./analysis/links-by-frequency.txt
 #+end_src
 
 #+RESULTS:
